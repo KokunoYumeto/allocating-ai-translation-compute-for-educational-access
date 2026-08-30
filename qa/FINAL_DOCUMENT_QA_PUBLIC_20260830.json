@@ -1,0 +1,36 @@
+{
+  "schema": "standalone-ai-compute-access-final-document-qa/1.0.0",
+  "generated_date": "2026-08-30",
+  "status": "PASS",
+  "artifacts": {
+    "markdown": {
+      "path": "paper/PAPER.md",
+      "bytes": 236976,
+      "sha256": "3215FB1A8609DFFE71655786008B40BF0BF69639EF7A1758166280ECF001BA57"
+    },
+    "docx": {
+      "path": "paper/PAPER.docx",
+      "bytes": 443454,
+      "sha256": "2C1E1D91AD8358E25CE1888B79DB62CD4D807EC0A39240F4FF6ED0912818DD19"
+    },
+    "pdf": {
+      "path": "paper/PAPER.pdf",
+      "bytes": 2242126,
+      "pages": 109,
+      "sha256": "EE0BC862CDEE5DBE96813CE0E697F1EE2E1CDC61BEE0B6DD2C9231780DAA764F"
+    }
+  },
+  "checks": {
+    "source_roundtrip": "PASS: 546 of 546 semantic source units recovered in the DOCX; 233 escaped double-pipe sequences reconciled; zero first mismatch",
+    "document_structure": "PASS: 10 sections, 25 tables, one image with alt text, valid numbering and heading hierarchy",
+    "render": "PASS: 109 of 109 sequential page PNGs, zero blank candidates, zero sparse candidates, zero undecodable pages",
+    "all_page_visual_review": "PASS: every rendered page inspected in labeled contact sheets; dense and transition pages inspected individually; no overlap, clipping, truncation, broken table, orphaned heading, blank page, or stale figure found",
+    "figure": "PASS: Bahasa Indonesia appears at portfolio position 1 and the caption states the 134-way conservative tie",
+    "pdf_mechanical": "PASS: strict PDF parse, embedded Unicode-mapped fonts, no encryption, forms, widgets, annotations, JavaScript, embedded files, open actions, contentless pages, raster blanks, or suspicious placeholder/tool tokens",
+    "content_validation": "PASS: 53 of 53 deterministic content, count, crosswalk, accounting, and privacy checks"
+  },
+  "non_blocking_notes": [
+    "The PDF is not linearized.",
+    "The DOCX application statistics are not used as evidentiary word or page counts."
+  ]
+}

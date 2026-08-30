@@ -1,0 +1,28 @@
+sensitivity_or_objective,implementation_status,implemented_definition_or_gap,evidence_artifact,recommended_reconciliation
+gross_demographic_ceiling,implemented,population_base / base gross tokens,portfolio_linguistic_candidates.csv,Retain as a ceiling; do not call harmed-population reach.
+conservative_marginal_floor,implemented_degenerate,marginal_access_low / high gross tokens; all 133 are zero,build_final_portfolio.py; portfolio_linguistic_candidates.csv,"Retain the [1,133] tie and exclude it from admission."
+base_neutral_sensitivity,implemented_scenario_not_observation,marginal_access_base_sensitivity / base gross tokens,natural_language_scores_v3.csv; build_final_portfolio.py,Keep the sensitivity label in every public table.
+optimistic_sensitivity,implemented_scenario_not_observation,marginal_access_high / low gross tokens,natural_language_scores_v3.csv; build_final_portfolio.py,Keep as one admission lane.
+scarcity_adjusted_sensitivity,implemented_proxy_view,scarcity_adjusted_access_base / base gross tokens,natural_language_scores_v3.csv; build_final_portfolio.py,Retain proxy caveat; indexed presence is not usable curriculum.
+tie_aware_rank_intervals,implemented,competition intervals over emitted three-decimal metrics,build_final_portfolio.py,Document emitted-precision basis.
+three_lane_round_robin,implemented,base → optimistic → scarcity,build_final_portfolio.py,Retain exact ordering and deterministic tie-breaks.
+depleted_lane_behavior,implemented_but_underdocumented,skip depleted lane; remaining lanes continue,build_final_portfolio.py,Add explicit durable-method language and lane counts.
+dynamic_selected_portfolio_nonoverlap,unimplemented,no fractional U recomputation after admission,build_final_portfolio.py,Narrow current claim; add only if overlapping cardinal edges are later allowed.
+shared_core_union_gate,implemented_fail_closed,"requires complete joins, token dominance, and both upstream controls",build_interlanguage_package_scores.py; build_final_portfolio.py,Retain zero-package result until upstream authorization changes.
+shared_core_reuse_low_base_high,implemented_unobserved_sensitivity,additional output fractions 0.20/0.50/0.80,interlanguage_compute_reuse_assumptions.csv,Do not label savings empirical; seek category-resolved production ledgers.
+constructed_bridge_cross_language_reach,implemented_conservative_zero,zero without exact target/task evidence,build_interlanguage_package_scores.py,Retain zero; no family-population multiplication.
+profile_resolution_and_D0_gate,implemented,13 recoveries; 3 blockers; 2 D0 exclusions,build_final_portfolio.py,Retain source-audited overrides and full-output compute multiplier.
+negative_controls,implemented,4 richly served controls excluded,build_final_portfolio.py,Retain outside recommendations.
+equity_efficiency,unimplemented,no numeric equity field or rank,absent from selector outputs,Remove published-view claim or implement sourced weights and deterministic tests.
+prestige_efficiency,unimplemented,no numeric prestige field or rank,absent from selector outputs,Keep descriptive until sourced operational definition exists.
+vitality_endangerment_admission_lane,unimplemented,no vitality score or lane,absent from selector outputs,Do not describe as a generated portfolio; retain contextual discussion.
+feasibility_risk_objective,unimplemented_numeric,metadata informs eligibility/context only,ai_language_support.csv; profile gates,Do not imply a weighted feasibility/risk score.
+accessibility_cardinal_gain,unimplemented_by_design,separate backlog; every edge rank_ready=false,accessibility_priority_backlog.csv,"Retain as horizontal safeguard, not a linguistic Top-100 slot."
+one_at_a_time_factor_sensitivity,unimplemented,no perturbation grid output,absent from scripts and tables,Remove claim; add deterministic perturbation table only if needed.
+monte_carlo_uncertainty,unimplemented,no stochastic model,absent from scripts and tables,Do not imply probabilistic confidence intervals.
+fresh_output_equivalent_efficiency,unimplemented,no category definition or output,compute tables,Remove claim until a versioned equivalence rule exists.
+cache_write_tokens,unimplemented_no_observation,8 observation fields blank; no scenario column,compute_observations.csv; compute_scenarios.csv,"Remove affirmative separation claim; report not observed, not zero."
+openstax_next_allocation,implemented,named MV-1/SB-1 choice and D2/D3 compute,TOP_100.csv; portfolio_compute_scenarios.csv,Retain as separately costed second stage.
+learning_adjusted_benefit,unimplemented,access only; no deployment effect model,MODEL_SPEC.md; PAPER.md,"Keep outside ranking unless intervention, exposure, and effect evidence are specified."
+non_api_program_cost,excluded_not_zero,no labor/delivery/infrastructure ledger,compute tables,State exclusions explicitly in grant scenarios; never call API equivalent an all-in budget.
+

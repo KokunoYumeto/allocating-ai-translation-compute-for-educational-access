@@ -1,0 +1,60 @@
+# Final content validation
+
+- Checks: 53
+- Passed: 53
+- Failed: 0
+- PAPER.md SHA-256: `3215FB1A8609DFFE71655786008B40BF0BF69639EF7A1758166280ECF001BA57`
+
+- PASS: population_observation_rows - rows=475
+- PASS: source_record_rows - rows=81
+- PASS: distinct_authority_labels - labels=58
+- PASS: candidate_rows - rows=210
+- PASS: exact_natural_profile_interventions - base_scores=106 expansion_scores=37 total=143
+- PASS: eligible_cardinal_rows - rows=134
+- PASS: top10_rows - rows=10
+- PASS: top100_rows - rows=100
+- PASS: top100_unique_positions - unique=100
+- PASS: needs_assignments - rows=100 nonempty=100
+- PASS: top10_order - Bahasa Indonesia | Bangladesh Bangla | Telugu | Indian Bengali | Vietnamese | Marathi | Indian Tamil | Western Punjabi | Javanese | Gujarati
+- PASS: crosswalk_rows - rows=100
+- PASS: crosswalk_exact_profile - {'exact_profile_match': 16, 'no_exact_relation_in_current_matrix': 79, 'exact_language_script_and_target_country_cell': 4, 'hypothesis_only_language_script_match_territory_unresolved': 1}
+- PASS: crosswalk_named_country - {'exact_profile_match': 16, 'no_exact_relation_in_current_matrix': 79, 'exact_language_script_and_target_country_cell': 4, 'hypothesis_only_language_script_match_territory_unresolved': 1}
+- PASS: crosswalk_hypothesis - {'exact_profile_match': 16, 'no_exact_relation_in_current_matrix': 79, 'exact_language_script_and_target_country_cell': 4, 'hypothesis_only_language_script_match_territory_unresolved': 1}
+- PASS: crosswalk_unmapped - {'exact_profile_match': 16, 'no_exact_relation_in_current_matrix': 79, 'exact_language_script_and_target_country_cell': 4, 'hypothesis_only_language_script_match_territory_unresolved': 1}
+- PASS: cross_language_reach_zero - all 100 credits equal zero
+- PASS: interlanguage_rankability_false - all 100 flags false
+- PASS: compute_root_total - 83638632771
+- PASS: compute_input_partition - gross = cached + fresh + cache-write
+- PASS: compute_total_identity - total = gross input + output
+- PASS: reasoning_subset - True
+- PASS: closure_contains_roots - The closure total is an inclusive superset of the 33-root subtotal. It may be compared with that subtotal to describe descendant amplification, but it must not be added to the root subtotal because that would count all 33 roots twice.
+- PASS: closure_total - 10253232856362
+- PASS: paper_contains:475 population observations and 81 r - 475 population observations and 81 registered source records from 58 distinct authority labels
+- PASS: paper_contains:Bahasa Indonesia, Bangladesh Bangla, - Bahasa Indonesia, Bangladesh Bangla, Telugu, Indian Bengali, Vietnamese
+- PASS: paper_contains:83,638,632,771 - 83,638,632,771
+- PASS: paper_contains:10,253,232,856,362 - 10,253,232,856,362
+- PASS: paper_contains:88,493,496 - 88,493,496
+- PASS: paper_contains:19,745 measured teaching-package pag - 19,745 measured teaching-package pages
+- PASS: paper_contains:20,763 selected-corpus working pages - 20,763 selected-corpus working pages
+- PASS: paper_contains:27,705-page documented rendered univ - 27,705-page documented rendered universe
+- PASS: paper_contains:722/722 - 722/722
+- PASS: paper_contains:Top-100 exact-profile crosswalk - Top-100 exact-profile crosswalk
+- PASS: paper_contains:16 exact-profile matches - 16 exact-profile matches
+- PASS: paper_contains:four exact language/script plus name - four exact language/script plus named-country matches
+- PASS: paper_contains:79 unmapped rows - 79 unmapped rows
+- PASS: paper_contains:OpenAI Codex gpt-5.6-sol, Ultra - OpenAI Codex gpt-5.6-sol, Ultra
+- PASS: paper_forbidden:absolute_windows_profile - hits=0
+- PASS: paper_forbidden:absolute_unix_profile - hits=0
+- PASS: paper_forbidden:private_codex_path - hits=0
+- PASS: paper_forbidden:stale_openlogic_321 - hits=0
+- PASS: paper_forbidden:stale_indonesian_remainder - hits=0
+- PASS: paper_forbidden:old_unaudited_top100 - hits=0
+- PASS: paper_forbidden:tool_citation_token - hits=0
+- PASS: paper_forbidden:placeholder - hits=0
+- PASS: paper_forbidden:replacement_character - hits=0
+- PASS: public_privacy:PAPER.md - bytes=236976 sha256=3215FB1A8609DFFE71655786008B40BF0BF69639EF7A1758166280ECF001BA57
+- PASS: public_privacy:population_source_register_public.csv - bytes=63578 sha256=FE3AA4257E8FA8CC742DBA53FEF5414174975C93D6D4C262E034FFD2FDF3E4DF
+- PASS: public_privacy:INDONESIAN_PROGRAM_COMPUTE_AND_PAGE_RECONCILIATION_PUBLIC_20260830.md - bytes=4635 sha256=9472BE4077C60AF35C37B6615719B51425C1F555022F9DB55A96F6EF50B1A458
+- PASS: public_privacy:compute_token_audit_33_roots_20260830.json - bytes=6620 sha256=1DAFEAC9EB161204DF470D247811F4E29415EE8AB3A297E412DBDD619CC0911C
+- PASS: public_privacy:TOP100_INTERLANGUAGE_CROSSWALK_METHOD_20260830.md - bytes=3982 sha256=BF59C23B002F8ED7ECE9FDEC16CE624BED28D27ACA44044A5642404C48354AE8
+- PASS: public_privacy:TOP100_INTERLANGUAGE_CROSSWALK_VALIDATION_RECEIPT_20260830.md - bytes=2489 sha256=1D8F4E0EE5F531D39059C86074A5A3334094FAF6BD15C3415B483D6F14311BDD

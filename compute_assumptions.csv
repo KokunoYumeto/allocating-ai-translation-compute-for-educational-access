@@ -1,0 +1,13 @@
+parameter,unit,low,base,high,empirical_status,notes
+model_input_per_source_alpha_token,ratio,1.25,1.60,2.00,scenario_assumption,"Tokenizer and language-dependent; separate from cached prefix."
+target_output_per_source_alpha_token,ratio,1.00,1.50,2.50,scenario_assumption,"Allows expansion in target language and markup."
+fresh_unit_instruction_context,tokens_per_unit,300,800,2000,scenario_assumption,"Uncached unit-specific prompt and context."
+stable_cached_prefix,tokens_per_unit,1000,3000,8000,scenario_assumption,"Versioned instruction terminology notation and QA prefix."
+critique_passes,count_times_coverage,"1 x 25%","1 x 100%","2 x 100%",scenario_assumption,"Independent model critique coverage."
+critique_output,target_fraction,0.12,0.20,0.30,scenario_assumption,"Per covered pass."
+correction_rewrite_coverage,target_fraction,0.10,0.35,0.75,scenario_assumption,"Share receiving a full correction or rewrite."
+build_qa_input,tokens,100000,600000,2500000,scenario_assumption,"Build logs diagnostics extraction and render descriptions returned to the model."
+build_qa_output,tokens,20000,80000,300000,scenario_assumption,"Model responses to build and QA evidence."
+retry_recovery,multiplier,0.05,0.15,0.40,scenario_assumption,"Applied after other categories."
+source_alpha_tokens,tokens,367220,367220,367220,measured,"Current 722-unit source closure; alternative older tokenizer is 444479."
+editable_units,count,722,722,722,measured,"Unit sizes are not equal: median 417 mean 508.61 p90 1026 p95 1269 max 2795."

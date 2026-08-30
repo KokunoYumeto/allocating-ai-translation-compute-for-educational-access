@@ -1,0 +1,9 @@
+derivative_id,name,workload_increment_low,workload_increment_base,workload_increment_high,scope,access_gain_axis,notes
+AX-HTML,Semantic HTML with accessible math,0.10,0.15,0.20,"structured headings tables language metadata MathML","screen reader and responsive low-bandwidth access","Primary accessibility derivative."
+AX-PDF,Tagged searchable screen and print PDFs,0.05,0.075,0.10,"pagination bookmarks reading order embedded fonts and black-and-white print","print and screen-reader fallback","Maintain separate screen and print profiles where necessary."
+AX-OFFLINE,Offline HTML EPUB or SCORM package,0.05,0.085,0.12,"portable local assets and LMS delivery","low-connectivity and institutional distribution","Avoid remote runtime dependencies."
+AX-FIG-LOGIC,Logic figure remediation,0.05,0.085,0.12,"alternative text long descriptions and non-colour-only encoding","nonvisual formal-reasoning access","Use for diagrams tables and proof trees."
+AX-FIG-MATH,Mathematics figure remediation,0.10,0.15,0.20,"graphs geometry and coordinate figures","nonvisual quantitative access","Requires structured data or long descriptions."
+AX-FIG-SCI,Science figure remediation,0.25,0.35,0.45,"dense diagrams microscopy reaction structures and scientific figures","nonvisual science access","Largest figure-accessibility burden."
+AX-AUDIO,Audio or TTS-ready formula narration,0.25,0.35,0.45,"deterministic formula chemistry and diagram narration","audio and nonvisual access","Separate derivative with explicit reading conventions."
+AX-PLAIN,Plain-language companion,0.35,0.475,0.60,"definitions summaries and worked-example scaffolding","cognitive and second-language accessibility","Must remain aligned to and distinct from the source-faithful edition."

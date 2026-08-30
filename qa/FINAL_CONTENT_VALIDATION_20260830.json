@@ -1,0 +1,280 @@
+{
+  "schema": "standalone-ai-compute-access-final-content-validation/1.0.0",
+  "generated_utc": "2026-08-30T11:05:40.180299+00:00",
+  "paper": {
+    "bytes": 236976,
+    "sha256": "3215FB1A8609DFFE71655786008B40BF0BF69639EF7A1758166280ECF001BA57"
+  },
+  "checks": [
+    {
+      "name": "population_observation_rows",
+      "passed": true,
+      "detail": "rows=475"
+    },
+    {
+      "name": "source_record_rows",
+      "passed": true,
+      "detail": "rows=81"
+    },
+    {
+      "name": "distinct_authority_labels",
+      "passed": true,
+      "detail": "labels=58"
+    },
+    {
+      "name": "candidate_rows",
+      "passed": true,
+      "detail": "rows=210"
+    },
+    {
+      "name": "exact_natural_profile_interventions",
+      "passed": true,
+      "detail": "base_scores=106 expansion_scores=37 total=143"
+    },
+    {
+      "name": "eligible_cardinal_rows",
+      "passed": true,
+      "detail": "rows=134"
+    },
+    {
+      "name": "top10_rows",
+      "passed": true,
+      "detail": "rows=10"
+    },
+    {
+      "name": "top100_rows",
+      "passed": true,
+      "detail": "rows=100"
+    },
+    {
+      "name": "top100_unique_positions",
+      "passed": true,
+      "detail": "unique=100"
+    },
+    {
+      "name": "needs_assignments",
+      "passed": true,
+      "detail": "rows=100 nonempty=100"
+    },
+    {
+      "name": "top10_order",
+      "passed": true,
+      "detail": "Bahasa Indonesia | Bangladesh Bangla | Telugu | Indian Bengali | Vietnamese | Marathi | Indian Tamil | Western Punjabi | Javanese | Gujarati"
+    },
+    {
+      "name": "crosswalk_rows",
+      "passed": true,
+      "detail": "rows=100"
+    },
+    {
+      "name": "crosswalk_exact_profile",
+      "passed": true,
+      "detail": "{'exact_profile_match': 16, 'no_exact_relation_in_current_matrix': 79, 'exact_language_script_and_target_country_cell': 4, 'hypothesis_only_language_script_match_territory_unresolved': 1}"
+    },
+    {
+      "name": "crosswalk_named_country",
+      "passed": true,
+      "detail": "{'exact_profile_match': 16, 'no_exact_relation_in_current_matrix': 79, 'exact_language_script_and_target_country_cell': 4, 'hypothesis_only_language_script_match_territory_unresolved': 1}"
+    },
+    {
+      "name": "crosswalk_hypothesis",
+      "passed": true,
+      "detail": "{'exact_profile_match': 16, 'no_exact_relation_in_current_matrix': 79, 'exact_language_script_and_target_country_cell': 4, 'hypothesis_only_language_script_match_territory_unresolved': 1}"
+    },
+    {
+      "name": "crosswalk_unmapped",
+      "passed": true,
+      "detail": "{'exact_profile_match': 16, 'no_exact_relation_in_current_matrix': 79, 'exact_language_script_and_target_country_cell': 4, 'hypothesis_only_language_script_match_territory_unresolved': 1}"
+    },
+    {
+      "name": "cross_language_reach_zero",
+      "passed": true,
+      "detail": "all 100 credits equal zero"
+    },
+    {
+      "name": "interlanguage_rankability_false",
+      "passed": true,
+      "detail": "all 100 flags false"
+    },
+    {
+      "name": "compute_root_total",
+      "passed": true,
+      "detail": "83638632771"
+    },
+    {
+      "name": "compute_input_partition",
+      "passed": true,
+      "detail": "gross = cached + fresh + cache-write"
+    },
+    {
+      "name": "compute_total_identity",
+      "passed": true,
+      "detail": "total = gross input + output"
+    },
+    {
+      "name": "reasoning_subset",
+      "passed": true,
+      "detail": "True"
+    },
+    {
+      "name": "closure_contains_roots",
+      "passed": true,
+      "detail": "The closure total is an inclusive superset of the 33-root subtotal. It may be compared with that subtotal to describe descendant amplification, but it must not be added to the root subtotal because that would count all 33 roots twice."
+    },
+    {
+      "name": "closure_total",
+      "passed": true,
+      "detail": "10253232856362"
+    },
+    {
+      "name": "paper_contains:475 population observations and 81 r",
+      "passed": true,
+      "detail": "475 population observations and 81 registered source records from 58 distinct authority labels"
+    },
+    {
+      "name": "paper_contains:Bahasa Indonesia, Bangladesh Bangla,",
+      "passed": true,
+      "detail": "Bahasa Indonesia, Bangladesh Bangla, Telugu, Indian Bengali, Vietnamese"
+    },
+    {
+      "name": "paper_contains:83,638,632,771",
+      "passed": true,
+      "detail": "83,638,632,771"
+    },
+    {
+      "name": "paper_contains:10,253,232,856,362",
+      "passed": true,
+      "detail": "10,253,232,856,362"
+    },
+    {
+      "name": "paper_contains:88,493,496",
+      "passed": true,
+      "detail": "88,493,496"
+    },
+    {
+      "name": "paper_contains:19,745 measured teaching-package pag",
+      "passed": true,
+      "detail": "19,745 measured teaching-package pages"
+    },
+    {
+      "name": "paper_contains:20,763 selected-corpus working pages",
+      "passed": true,
+      "detail": "20,763 selected-corpus working pages"
+    },
+    {
+      "name": "paper_contains:27,705-page documented rendered univ",
+      "passed": true,
+      "detail": "27,705-page documented rendered universe"
+    },
+    {
+      "name": "paper_contains:722/722",
+      "passed": true,
+      "detail": "722/722"
+    },
+    {
+      "name": "paper_contains:Top-100 exact-profile crosswalk",
+      "passed": true,
+      "detail": "Top-100 exact-profile crosswalk"
+    },
+    {
+      "name": "paper_contains:16 exact-profile matches",
+      "passed": true,
+      "detail": "16 exact-profile matches"
+    },
+    {
+      "name": "paper_contains:four exact language/script plus name",
+      "passed": true,
+      "detail": "four exact language/script plus named-country matches"
+    },
+    {
+      "name": "paper_contains:79 unmapped rows",
+      "passed": true,
+      "detail": "79 unmapped rows"
+    },
+    {
+      "name": "paper_contains:OpenAI Codex gpt-5.6-sol, Ultra",
+      "passed": true,
+      "detail": "OpenAI Codex gpt-5.6-sol, Ultra"
+    },
+    {
+      "name": "paper_forbidden:absolute_windows_profile",
+      "passed": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "paper_forbidden:absolute_unix_profile",
+      "passed": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "paper_forbidden:private_codex_path",
+      "passed": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "paper_forbidden:stale_openlogic_321",
+      "passed": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "paper_forbidden:stale_indonesian_remainder",
+      "passed": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "paper_forbidden:old_unaudited_top100",
+      "passed": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "paper_forbidden:tool_citation_token",
+      "passed": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "paper_forbidden:placeholder",
+      "passed": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "paper_forbidden:replacement_character",
+      "passed": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "public_privacy:PAPER.md",
+      "passed": true,
+      "detail": "bytes=236976 sha256=3215FB1A8609DFFE71655786008B40BF0BF69639EF7A1758166280ECF001BA57"
+    },
+    {
+      "name": "public_privacy:population_source_register_public.csv",
+      "passed": true,
+      "detail": "bytes=63578 sha256=FE3AA4257E8FA8CC742DBA53FEF5414174975C93D6D4C262E034FFD2FDF3E4DF"
+    },
+    {
+      "name": "public_privacy:INDONESIAN_PROGRAM_COMPUTE_AND_PAGE_RECONCILIATION_PUBLIC_20260830.md",
+      "passed": true,
+      "detail": "bytes=4635 sha256=9472BE4077C60AF35C37B6615719B51425C1F555022F9DB55A96F6EF50B1A458"
+    },
+    {
+      "name": "public_privacy:compute_token_audit_33_roots_20260830.json",
+      "passed": true,
+      "detail": "bytes=6620 sha256=1DAFEAC9EB161204DF470D247811F4E29415EE8AB3A297E412DBDD619CC0911C"
+    },
+    {
+      "name": "public_privacy:TOP100_INTERLANGUAGE_CROSSWALK_METHOD_20260830.md",
+      "passed": true,
+      "detail": "bytes=3982 sha256=BF59C23B002F8ED7ECE9FDEC16CE624BED28D27ACA44044A5642404C48354AE8"
+    },
+    {
+      "name": "public_privacy:TOP100_INTERLANGUAGE_CROSSWALK_VALIDATION_RECEIPT_20260830.md",
+      "passed": true,
+      "detail": "bytes=2489 sha256=1D8F4E0EE5F531D39059C86074A5A3334094FAF6BD15C3415B483D6F14311BDD"
+    }
+  ],
+  "summary": {
+    "total": 53,
+    "passed": 53,
+    "failed": 0
+  }
+}

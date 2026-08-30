@@ -1,0 +1,1420 @@
+{
+  "schema": "final-paper-audit-machine-check-v1",
+  "root_relative": ".",
+  "input_inventory": {
+    "PAPER.md": {
+      "bytes": 186340,
+      "sha256": "FFBF91F3B19E3DF1966E71608DCF96356FF467E7F6C4D545ED3F16F41CF59749"
+    },
+    "MODEL_SPEC.md": {
+      "bytes": 8522,
+      "sha256": "0D7254C61152DCB1207AA2AA0EEC1DDF2599EFB23631C9C2B6276005BB4C96ED"
+    },
+    "RANKING_METHOD.md": {
+      "bytes": 3375,
+      "sha256": "AB7FB1ECBC1728CB649C024AE3A49542166726CF73628117B2735EA8F01381BC"
+    },
+    "FACTOR_POLICY.md": {
+      "bytes": 9754,
+      "sha256": "36724C1D3071A2578FEA5C0015233627952210085CC05C39EC6E236732BC60A9"
+    },
+    "TOP_10.csv": {
+      "bytes": 12498,
+      "sha256": "C6519943F525881633603D28E43C0F32090ABEA2F560BDE5B117C755C95C4060"
+    },
+    "TOP_100.csv": {
+      "bytes": 117831,
+      "sha256": "C2AE2043DA6A136055C439B39533CCAB3B568E27BC90E5B9B2B8A538C00867AE"
+    },
+    "interlanguage_package_scores.csv": {
+      "bytes": 88114,
+      "sha256": "5B943C3CDF2C2454F21ADD46B8897F1F61CFE32F06CA81E1561378D8C855BAE2"
+    },
+    "GRANT_COMPUTE_SCENARIOS_LOW_BASE_HIGH.csv": {
+      "bytes": 9074,
+      "sha256": "5EC3B6277A7D0CADC9FA26D62E5B13F0926752640255C93B62AB409C2ADE02C8"
+    },
+    "SHARED_CORE_ARCHITECTURE_LOW_BASE_HIGH.csv": {
+      "bytes": 4270,
+      "sha256": "C54F4497C0236F80071198E30BFEB3913A520245EEBE885D17626F911930B64F"
+    },
+    "IMPLEMENTED_VS_UNIMPLEMENTED_SENSITIVITY_MATRIX.csv": {
+      "bytes": 4912,
+      "sha256": "9573E4FD72DD03E1827F1D7EEB5F1EE8FC42172B03BBF68423DEEE62975E13D1"
+    },
+    "CACHE_WRITE_FIELD_AUDIT.csv": {
+      "bytes": 373,
+      "sha256": "08E9B72C85A6A4767398E1F7D834F6FE2ACA4942B446165FF86D2FFD602BC84E"
+    },
+    "population_observations_master.csv": {
+      "bytes": 386495,
+      "sha256": "2BD6D9F73D746C5FEF18D05CECC7E397DA2A9DD4C38EA33EEE15A1BBC75D5BD9"
+    },
+    "population_source_register_master.csv": {
+      "bytes": 69063,
+      "sha256": "B3FFF7785829ABF868FD0A05D8D883F5AE83AD44B0CCEFAA4898FA0F3E3E184F"
+    },
+    "candidate_interventions_master.csv": {
+      "bytes": 122251,
+      "sha256": "DA89EBE46700D21820579774B75C39D79C224C2FF62676C3243CA16D13DCBC21"
+    },
+    "natural_language_scores_v3.csv": {
+      "bytes": 137228,
+      "sha256": "02BAB54BC4714854003265F2A42BCC87BC400C99650DA90764192BC00A87BD4B"
+    },
+    "candidate_expansion_scores.csv": {
+      "bytes": 50444,
+      "sha256": "B97383E20E9FAD2791BD4883082CF3985C66F08158670A466B9D82597BD43291"
+    },
+    "staging/interlanguage_bundle_model/interlanguage_intervention_matrix.csv": {
+      "bytes": 84768,
+      "sha256": "F3F9BA46524BBF4754E2F12CFEC2AD5D6A24377B786C8BFE1AF3EE6AD819889F"
+    },
+    "staging/interlanguage_bundle_model/interlanguage_population_links.csv": {
+      "bytes": 49082,
+      "sha256": "8743D37ACB11EC2942EB3BE07AC9C4F884FD07DA8FCFF320E89B6775EC5A6DEB"
+    },
+    "accessibility_priority_backlog.csv": {
+      "bytes": 12375,
+      "sha256": "3FCD6060C48A44618B157CC503839921E0DEA443A16ACF06B51E1C3D8D21B46F"
+    },
+    "curriculum_units.csv": {
+      "bytes": 7074,
+      "sha256": "0F7A958D7C19F989A1C95F673456B3667ED23F41B64208100EA1CB5C3360E204"
+    },
+    "curriculum_portfolios.csv": {
+      "bytes": 3404,
+      "sha256": "2E4CC460C4CB343A092C5A8A4C11EC09EEF091A93807D983B74E258A698B5049"
+    },
+    "openstax_workload_measurements.csv": {
+      "bytes": 26411,
+      "sha256": "ECF9E83428CFCBA41600AE070F970A9685E2C5F7E6E2F2045C07B1DB319A86A2"
+    },
+    "portfolio_compute_scenarios.csv": {
+      "bytes": 18067,
+      "sha256": "6FCFBE82135F0671BF30F03FE1F404FF8E9E9C054992A4445AA8ACA0016A4961"
+    },
+    "portfolio_linguistic_candidates.csv": {
+      "bytes": 163766,
+      "sha256": "BB1EB6688E0FA1EA7E902C46BCDC4EA55C8ED83F4334A5AE97F0E9BA83BC58B0"
+    },
+    "table2_exact_gross_ceilings.csv": {
+      "bytes": 96933,
+      "sha256": "CD69361AF639D04358FC9F32404318B323288B22032B848EE80970B4CE9C0BE0"
+    },
+    "table3_marginal_access_sensitivity_ranges.csv": {
+      "bytes": 124382,
+      "sha256": "B70A1757A4C59EFC8116FC3F84D9381B32028C5C327BD1D13ACC34EDB4213A5A"
+    },
+    "table4_top10.csv": {
+      "bytes": 10654,
+      "sha256": "83EC161E33544E613102600D9CF485DE6CBE95C915CA2655E50B18A37D90CDD3"
+    },
+    "table5_top100_grouped_lanes.csv": {
+      "bytes": 5353,
+      "sha256": "8783AA41290C39A35FB6E6CFABA9D324288B84D1F8BFD1505384C1D736FA1197"
+    },
+    "table5_top100_members.csv": {
+      "bytes": 23973,
+      "sha256": "910D4CDC9BA17D5BB79703B572721682B113A93FA51AA938FCA55F777933438F"
+    },
+    "table6a_architecture_sensitivity_noncardinal.csv": {
+      "bytes": 10163,
+      "sha256": "A6A5A9B26F82F91B82CC5EB5E759F1065C745D64277E181E2C60890E5D804CD0"
+    },
+    "table6_package_exclusions_noncardinal.csv": {
+      "bytes": 13407,
+      "sha256": "40D2BF237CC9FED66CD20FBA0C71ABEB6DCFCB32C6422DF6885858CA1A2AC282"
+    },
+    "table7_curriculum_allocation_summary.csv": {
+      "bytes": 3559,
+      "sha256": "6E8EBEC66370237CB550018FD4BD4A5AF6D5A1CF10BA717A4E5B7203AFD816A1"
+    },
+    "table8_negative_controls_and_exclusions.csv": {
+      "bytes": 5584,
+      "sha256": "B7CC8F6DCA3BFE006FA1104E6E6B6ED8849D72B67D23E76178EE76C2A61AAFC5"
+    },
+    "appendix_a_existing_work_reconciliation.csv": {
+      "bytes": 113976,
+      "sha256": "0679AA3B81557E4CFBFAD6F8C84EEFC6D4898D13CE576B5C15B0D5808DA6CFE8"
+    },
+    "appendix_a_state_definitions.csv": {
+      "bytes": 1941,
+      "sha256": "5D004A6E179D5E2E72EA52F29B69A935A994BA44AF99241BB9B52DFCBDFB6E6D"
+    },
+    "appendix_b_global_gap_map.csv": {
+      "bytes": 256403,
+      "sha256": "2EBB1EACE0BDBFBF4BE7BCF7F294AE2F19D9C6B35870DD40C99DDCF4302CF46F"
+    },
+    "appendix_b_regional_gap_summary.csv": {
+      "bytes": 5270,
+      "sha256": "CD7F065D0DE48232C660E8D1142FC9D30CC41FEE0458FA10E959DC8F8E0C852C"
+    },
+    "appendix_b_source_measure_confidence.csv": {
+      "bytes": 24254,
+      "sha256": "B65706929BCEFAC1F5528155D8BAC492020233FA27B133920BD46FB7385A9703"
+    },
+    "appendix_c_accessibility_safeguards.csv": {
+      "bytes": 14626,
+      "sha256": "87575CD943D6D76FBAC866A9D1CB4A9BEC1B5AB8EF5B6B6C2131282256FC71F9"
+    },
+    "appendix_d_adaptation_depths.csv": {
+      "bytes": 1187,
+      "sha256": "B68432987FBBC4766C3C755A6A0CABEED6857CE0E6F8A5C79CEE951520A02337"
+    },
+    "appendix_d_curriculum_portfolios.csv": {
+      "bytes": 3367,
+      "sha256": "0F9A52DAC0A943309B5F0306EF6B17DA5B15CAF160C4EA64A313B7F3A26EC576"
+    },
+    "appendix_d_top100_curriculum_mapping.csv": {
+      "bytes": 47197,
+      "sha256": "C6E088B66CAF7C332284F1733BCB9F895F53C1A82E5D1AFEDD2F4FA9B52DD371"
+    },
+    "appendix_e_unresolved_profiles_and_d0.csv": {
+      "bytes": 5026,
+      "sha256": "5B542465C2AF03CD9CAA6127E2E45024EC4A944FAAEE6738275F76C6C8AB306A"
+    },
+    "appendix_f_interlanguage_matrix_summary.csv": {
+      "bytes": 19470,
+      "sha256": "B5E48C2928F7D8B85152DF721A9DEC588ED3FF130D63D04689DBCDB9724E6158"
+    },
+    "appendix_f_matrix_scope_counts.csv": {
+      "bytes": 751,
+      "sha256": "451B9C1A4917949170252114437773C73E0BF2A79417C285C205B7A47555F6E9"
+    },
+    "source_id_reference_crosswalk.csv": {
+      "bytes": 100111,
+      "sha256": "81173631459A66D413B067407D0C34C899FF64654E4C2B6C254F05F8EB64ECB2"
+    },
+    "corpus_method_reference_crosswalk.csv": {
+      "bytes": 31848,
+      "sha256": "698B907E2323B3A96E90EC8099EE1B2C1C471EEFBAD4B8FC106CEAFD4D2CE2A9"
+    }
+  },
+  "checks": [
+    {
+      "name": "all expected inputs present",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "headline row counts",
+      "passed": true,
+      "detail": {
+        "top10": 10,
+        "top100": 100,
+        "full": 133
+      }
+    },
+    {
+      "name": "Table 1 inventory counts match source files",
+      "passed": true,
+      "detail": {
+        "population_observations_master.csv": 474,
+        "population_source_register_master.csv": 80,
+        "candidate_interventions_master.csv": 209,
+        "natural_language_scores_v3.csv": 105,
+        "candidate_expansion_scores.csv": 37,
+        "staging/interlanguage_bundle_model/interlanguage_intervention_matrix.csv": 104,
+        "staging/interlanguage_bundle_model/interlanguage_population_links.csv": 113,
+        "accessibility_priority_backlog.csv": 11,
+        "curriculum_units.csv": 29,
+        "curriculum_portfolios.csv": 13,
+        "openstax_workload_measurements.csv": 94,
+        "portfolio_compute_scenarios.csv": 60
+      }
+    },
+    {
+      "name": "Top 10 exact names and order",
+      "passed": true,
+      "detail": [
+        "Indian Bengali",
+        "Bangladesh Bangla",
+        "Telugu",
+        "Marathi",
+        "Vietnamese",
+        "Javanese",
+        "Indian Tamil",
+        "Western Punjabi",
+        "Gujarati",
+        "Kannada"
+      ]
+    },
+    {
+      "name": "Top 10 rows equal Top 100 prefix",
+      "passed": true,
+      "detail": "full-row equality"
+    },
+    {
+      "name": "Top 100 positions contiguous",
+      "passed": true,
+      "detail": "1..100"
+    },
+    {
+      "name": "Top 100 intervention IDs unique",
+      "passed": true,
+      "detail": 100
+    },
+    {
+      "name": "Top 100 only natural-language rows",
+      "passed": true,
+      "detail": [
+        "natural_language_edition"
+      ]
+    },
+    {
+      "name": "Top 100 exactly 100 named outputs",
+      "passed": true,
+      "detail": 100
+    },
+    {
+      "name": "Top 100 lane counts",
+      "passed": true,
+      "detail": {
+        "base": 40,
+        "optimistic": 40,
+        "scarcity": 20
+      }
+    },
+    {
+      "name": "full 133 lane counts",
+      "passed": true,
+      "detail": {
+        "base": 57,
+        "optimistic": 56,
+        "scarcity": 20
+      }
+    },
+    {
+      "name": "conservative floor is all-zero [1,133] tie",
+      "passed": true,
+      "detail": {
+        "zero": true,
+        "ties": true
+      }
+    },
+    {
+      "name": "Top 100 gross-token sums",
+      "passed": true,
+      "detail": {
+        "low": 91273700,
+        "base": 407304900,
+        "high": 1866457100
+      }
+    },
+    {
+      "name": "all 133 output equivalents",
+      "passed": true,
+      "detail": 136
+    },
+    {
+      "name": "grant scenario cardinal/output/token values",
+      "passed": true,
+      "detail": {
+        "pilot_top10_fr2_d3|low": [
+          10,
+          10,
+          9127370
+        ],
+        "pilot_top10_fr2_d3|base": [
+          10,
+          10,
+          40730490
+        ],
+        "pilot_top10_fr2_d3|high": [
+          10,
+          10,
+          186645710
+        ],
+        "headline_top100_fr2_d3|low": [
+          100,
+          100,
+          91273700
+        ],
+        "headline_top100_fr2_d3|base": [
+          100,
+          100,
+          407304900
+        ],
+        "headline_top100_fr2_d3|high": [
+          100,
+          100,
+          1866457100
+        ],
+        "headline_top100_fr2_plus_next_openstax|low": [
+          100,
+          200,
+          261305136
+        ],
+        "headline_top100_fr2_plus_next_openstax|base": [
+          100,
+          200,
+          1032460624
+        ],
+        "headline_top100_fr2_plus_next_openstax|high": [
+          100,
+          200,
+          4406632528
+        ],
+        "all_eligible_133_fr2_d3|low": [
+          133,
+          136,
+          124132232
+        ],
+        "all_eligible_133_fr2_d3|base": [
+          133,
+          136,
+          553934664
+        ],
+        "all_eligible_133_fr2_d3|high": [
+          133,
+          136,
+          2538381656
+        ]
+      }
+    },
+    {
+      "name": "grant cache-write values remain blank and disclosed",
+      "passed": true,
+      "detail": {
+        "not_observed_not_assumed_not_zero": 12
+      }
+    },
+    {
+      "name": "shared-core architectures remain noncardinal",
+      "passed": true,
+      "detail": {
+        "IL-HU": 3,
+        "IL-NGUNI": 3,
+        "IL-PUNJABI": 3,
+        "IL-SOTHO": 3
+      }
+    },
+    {
+      "name": "package score table has no cardinally rankable package",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Top 100 contains no interlanguage/package ID",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "curriculum mapping rows/positions",
+      "passed": true,
+      "detail": {
+        "rows": 100,
+        "min": 1,
+        "max": 100
+      }
+    },
+    {
+      "name": "every first product is FR-2/D3",
+      "passed": true,
+      "detail": {
+        "FR-2|D3": 100
+      }
+    },
+    {
+      "name": "next-product allocation 36/44/20",
+      "passed": true,
+      "detail": {
+        "SB-1|D3": 20,
+        "MV-1|D3": 44,
+        "MV-1|D2": 36
+      }
+    },
+    {
+      "name": "FR-2 portfolio preferred depth and source tokens",
+      "passed": true,
+      "detail": {
+        "depth": "D3",
+        "tokens": "120083"
+      }
+    },
+    {
+      "name": "curriculum mapping agrees rowwise with Top 100",
+      "passed": true,
+      "detail": "IDs, first-product tokens, next product, and next depth"
+    },
+    {
+      "name": "global gap map has exact 133 positions",
+      "passed": true,
+      "detail": {
+        "rows": 133,
+        "range": [
+          1,
+          133
+        ]
+      }
+    },
+    {
+      "name": "global gap map identifies 100 Top 100 rows",
+      "passed": true,
+      "detail": 100
+    },
+    {
+      "name": "global regional record counts",
+      "passed": true,
+      "detail": {
+        "full": {
+          "Asia": 57,
+          "Africa": 24,
+          "Oceania": 12,
+          "Europe": 5,
+          "Americas": 35
+        },
+        "top100": {
+          "Asia": 57,
+          "Africa": 24,
+          "Oceania": 2,
+          "Europe": 5,
+          "Americas": 12
+        }
+      }
+    },
+    {
+      "name": "accessibility safeguards remain unselected and noncardinal",
+      "passed": true,
+      "detail": {
+        "rows": 11
+      }
+    },
+    {
+      "name": "unresolved/D0 register is bounded to five",
+      "passed": true,
+      "detail": {
+        "D0_profile_population_mismatch": 2,
+        "unresolved_localized_output_profile": 3
+      }
+    },
+    {
+      "name": "interlanguage register remains nonrankable",
+      "passed": true,
+      "detail": {
+        "rows": 15,
+        "rankable_true": 0
+      }
+    },
+    {
+      "name": "existing-work register reconciliation states",
+      "passed": true,
+      "detail": {
+        "missing": 189,
+        "researched": 2,
+        "partial": 18
+      }
+    },
+    {
+      "name": "source-ID crosswalk is exact",
+      "passed": true,
+      "detail": {
+        "used": 54,
+        "crosswalk": 54,
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "name": "source witness status is 51 PASS plus 3 disclosed absences",
+      "passed": true,
+      "detail": {
+        "statuses": {
+          "PASS": 51,
+          "NO_WITNESS_REGISTERED": 3
+        },
+        "no_witness": [
+          "PM-S005",
+          "PM-S014",
+          "PM-S016"
+        ]
+      }
+    },
+    {
+      "name": "corpus/method crosswalk all hash-verified",
+      "passed": true,
+      "detail": {
+        "rows": 21,
+        "hash": {
+          "PASS": 21
+        },
+        "bytes": {
+          "PASS": 21
+        }
+      }
+    },
+    {
+      "name": "sensitivity matrix explicitly separates implemented/unimplemented",
+      "passed": true,
+      "detail": {
+        "implemented": 6,
+        "implemented_degenerate": 1,
+        "implemented_scenario_not_observation": 2,
+        "implemented_proxy_view": 1,
+        "implemented_but_underdocumented": 1,
+        "unimplemented": 8,
+        "implemented_fail_closed": 1,
+        "implemented_unobserved_sensitivity": 1,
+        "implemented_conservative_zero": 1,
+        "unimplemented_numeric": 1,
+        "unimplemented_by_design": 1,
+        "unimplemented_no_observation": 1,
+        "excluded_not_zero": 1
+      }
+    },
+    {
+      "name": "Table 2 machine rows are the full candidate set in descending gross-ceiling order",
+      "passed": true,
+      "detail": {
+        "rows": 133,
+        "first10": [
+          "Bangladesh Bangla",
+          "Indian Bengali",
+          "Vietnamese",
+          "Western Punjabi",
+          "Marathi",
+          "Telugu",
+          "Indian Tamil",
+          "Javanese",
+          "Thai",
+          "Gujarati"
+        ]
+      }
+    },
+    {
+      "name": "Table 3 machine rows agree with full portfolio order and sensitivities",
+      "passed": true,
+      "detail": {
+        "rows": 133
+      }
+    },
+    {
+      "name": "Table 4 machine rows agree with Top 10",
+      "passed": true,
+      "detail": {
+        "rows": 10
+      }
+    },
+    {
+      "name": "Table 5 member rows agree with Top 100",
+      "passed": true,
+      "detail": {
+        "rows": 100
+      }
+    },
+    {
+      "name": "Table 5 category counts and compute reconcile",
+      "passed": true,
+      "detail": {
+        "high_reach_underserved": {
+          "interventions": 34,
+          "base_tokens": 138483666
+        },
+        "regional_depth": {
+          "interventions": 49,
+          "base_tokens": 199579401
+        },
+        "small_population_prestige_domain_screen": {
+          "interventions": 17,
+          "base_tokens": 69241833
+        }
+      }
+    },
+    {
+      "name": "Table 6A agrees with the four base shared-core sensitivities",
+      "passed": true,
+      "detail": {
+        "rows": 4,
+        "ids": [
+          "IL-HU",
+          "IL-NGUNI",
+          "IL-PUNJABI",
+          "IL-SOTHO"
+        ]
+      }
+    },
+    {
+      "name": "Table 6B exclusions are eleven nonselected package proposals",
+      "passed": true,
+      "detail": {
+        "rows": 11,
+        "ids": [
+          "IL-AR",
+          "IL-BCMS",
+          "IL-GERM",
+          "IL-IDMS",
+          "IL-ISV",
+          "IL-MANDING",
+          "IL-PDT",
+          "IL-ROM",
+          "IL-SCAND",
+          "IL-SQUECHUA",
+          "IL-TURKIC"
+        ]
+      }
+    },
+    {
+      "name": "Table 7 curriculum totals reconcile to mapping",
+      "passed": true,
+      "detail": {
+        "FR2_FAIL_CLOSED_NATURAL_EDITIONS": 100,
+        "MV-1_D2_NATURAL": 36,
+        "MV-1_D3_NATURAL": 44,
+        "SB-1_D3_NATURAL": 20
+      }
+    },
+    {
+      "name": "Table 8 contains four controls plus five distinct exclusions",
+      "passed": true,
+      "detail": {
+        "not_recommendation_eligible": 2,
+        "richly_served_negative_control": 4,
+        "unresolved_localized_output_profile": 3
+      }
+    },
+    {
+      "name": "printed Table 2 equals machine Top-10 gross ceilings",
+      "passed": true,
+      "detail": {
+        "printed_rows": 10
+      }
+    },
+    {
+      "name": "printed Table 3 equals machine Top-10 access sensitivities",
+      "passed": true,
+      "detail": {
+        "printed_rows": 10
+      }
+    },
+    {
+      "name": "printed Table 4 equals machine Top 10",
+      "passed": true,
+      "detail": {
+        "printed_rows": 10
+      }
+    },
+    {
+      "name": "printed Table 5 equals machine category summary",
+      "passed": true,
+      "detail": {
+        "printed_rows": 3
+      }
+    },
+    {
+      "name": "printed Table 6A equals machine architecture rows",
+      "passed": true,
+      "detail": {
+        "printed_rows": 4
+      }
+    },
+    {
+      "name": "printed Table 6B equals machine low/base/high architecture rows",
+      "passed": true,
+      "detail": {
+        "printed_rows": 12
+      }
+    },
+    {
+      "name": "printed Table 7 equals machine next-allocation summary",
+      "passed": true,
+      "detail": {
+        "printed_rows": 3
+      }
+    },
+    {
+      "name": "printed Table 8 equals machine negative-control rows",
+      "passed": true,
+      "detail": {
+        "printed_rows": 4
+      }
+    },
+    {
+      "name": "printed Table 9 equals grant scenario machine file",
+      "passed": true,
+      "detail": {
+        "printed_rows": 12
+      }
+    },
+    {
+      "name": "Appendix A embedded hashes match live artifacts",
+      "passed": true,
+      "detail": {
+        "rows": 31,
+        "errors": []
+      }
+    },
+    {
+      "name": "Appendix I preserves all 54 exact APA drafts and source notes",
+      "passed": true,
+      "detail": {
+        "missing_apa": [],
+        "missing_notes": []
+      }
+    },
+    {
+      "name": "every main reference family has an in-text citation",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "main reference blocks are alphabetized by lead author/title",
+      "passed": true,
+      "detail": [
+        "angrist",
+        "angrist",
+        "bergmanis",
+        "blasi",
+        "clinton",
+        "colvard",
+        "crawfurd",
+        "crosswalktoearlierlocalmarginalintelligibilityresearch",
+        "departmentofbasiceducation",
+        "departmentofbasiceducation",
+        "departmentofbasiceducation",
+        "dhaliwal",
+        "dinu",
+        "duquenne",
+        "glewwe",
+        "globaleducationevidenceadvisorypanel",
+        "grimaldi",
+        "hilton",
+        "kantharuban",
+        "kreutzer",
+        "laitin",
+        "marginalintelligibilityopportunityheuristicforopenlogic",
+        "mcewan",
+        "merunka",
+        "nakamura",
+        "nllbteam",
+        "numberofbot",
+        "officeoftheregistrargeneralcensuscommissioner",
+        "openai",
+        "openalex",
+        "openlogicproject",
+        "openstax",
+        "openstax",
+        "openstax",
+        "openstax",
+        "openstax",
+        "openstax",
+        "openstax",
+        "openstax",
+        "piper",
+        "piper",
+        "robinson",
+        "sabarwal",
+        "taylor",
+        "unesco",
+        "unicodeconsortiumcldrtechnicalcommittee",
+        "unicodeconsortiumcldrtechnicalcommittee",
+        "unicodeconsortiumcldrtechnicalcommittee",
+        "unicodeconsortiumcldrtechnicalcommittee",
+        "unicodeconsortiumcldrtechnicalcommittee",
+        "walter",
+        "worldbank",
+        "worldbank",
+        "worldwidewebconsortium",
+        "worldwidewebconsortium",
+        "wthreecmathworkinggroup",
+        "zbib"
+      ]
+    },
+    {
+      "name": "Markdown heading hierarchy has no downward jumps",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no patch/conflict markers",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "balanced fenced-code delimiters",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "Markdown tables have constant field counts",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "manuscript omits local account/person identifier",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Table 1 labels the 104-row mixed intervention matrix accurately",
+      "passed": true,
+      "detail": {
+        "mislabel_lines": [],
+        "verified_scope_counts": {
+          "all": 104,
+          "interlanguage": 80,
+          "accessibility": 24
+        }
+      }
+    },
+    {
+      "name": "MODEL_SPEC cache-write schema statement matches the grant table",
+      "passed": true,
+      "detail": {
+        "inconsistent_lines": [],
+        "grant_has_cache_write_column": true,
+        "grant_nonblank_values": 0
+      }
+    }
+  ],
+  "pass_count": 64,
+  "fail_count": 0,
+  "failed_checks": [],
+  "heading_outline": [
+    [
+      1,
+      1,
+      "Allocating AI Translation Compute for Marginal Educational Access"
+    ],
+    [
+      3,
+      2,
+      "A global language, interlanguage, accessibility, and open-curriculum portfolio model"
+    ],
+    [
+      8,
+      2,
+      "Abstract"
+    ],
+    [
+      48,
+      2,
+      "1. Introduction"
+    ],
+    [
+      95,
+      2,
+      "2. Research questions"
+    ],
+    [
+      117,
+      2,
+      "3. Conceptual framework"
+    ],
+    [
+      119,
+      3,
+      "3.1 Access is not learning, but it is a necessary input"
+    ],
+    [
+      153,
+      3,
+      "3.2 Three quantities that must not be conflated"
+    ],
+    [
+      169,
+      3,
+      "3.3 Interlanguage mechanisms"
+    ],
+    [
+      193,
+      2,
+      "4. Evidence from education, OER, AI, and accessibility"
+    ],
+    [
+      195,
+      3,
+      "4.1 Familiar-language instruction can help, with heterogeneous effects"
+    ],
+    [
+      228,
+      3,
+      "4.2 Complete instructional packages outperform file production"
+    ],
+    [
+      251,
+      3,
+      "4.3 Open licensing creates option value, not an automatic learning effect"
+    ],
+    [
+      269,
+      3,
+      "4.4 Model coverage is not source-faithful specialist translation"
+    ],
+    [
+      288,
+      3,
+      "4.5 Accessibility and low bandwidth are separate marginal-access axes"
+    ],
+    [
+      304,
+      2,
+      "5. Data"
+    ],
+    [
+      306,
+      3,
+      "5.1 Population observations"
+    ],
+    [
+      347,
+      3,
+      "5.2 Existing local editions and work in progress"
+    ],
+    [
+      362,
+      3,
+      "5.3 Curriculum denominators"
+    ],
+    [
+      383,
+      3,
+      "5.4 Scarcity, digital context, and model support"
+    ],
+    [
+      394,
+      2,
+      "6. Methods"
+    ],
+    [
+      396,
+      3,
+      "6.1 Exact intervention edge construction"
+    ],
+    [
+      410,
+      3,
+      "6.2 Factor assignment"
+    ],
+    [
+      434,
+      3,
+      "6.3 Compute scenarios"
+    ],
+    [
+      462,
+      3,
+      "6.4 Portfolio selection and double counting"
+    ],
+    [
+      487,
+      3,
+      "6.5 Interlanguage compute comparison"
+    ],
+    [
+      502,
+      2,
+      "7. Results"
+    ],
+    [
+      504,
+      3,
+      "7.1 Which populations are most affected?"
+    ],
+    [
+      559,
+      3,
+      "7.2 Top 10 interventions"
+    ],
+    [
+      582,
+      3,
+      "7.3 Top 100 portfolio"
+    ],
+    [
+      598,
+      3,
+      "7.4 Interlanguage and shared-core comparisons"
+    ],
+    [
+      660,
+      3,
+      "7.5 OpenStax and Open Logic curriculum allocation"
+    ],
+    [
+      678,
+      3,
+      "7.6 Sensitivity and negative controls"
+    ],
+    [
+      718,
+      2,
+      "8. Grant and implementation program"
+    ],
+    [
+      771,
+      2,
+      "9. Limitations"
+    ],
+    [
+      801,
+      2,
+      "10. Conclusion"
+    ],
+    [
+      845,
+      2,
+      "References"
+    ],
+    [
+      1092,
+      1,
+      "Appendix A. Reproducibility and computational provenance"
+    ],
+    [
+      1132,
+      1,
+      "Appendix B. Full ordered Top 100"
+    ],
+    [
+      1244,
+      1,
+      "Appendix C. Ordered accessibility safeguard portfolio"
+    ],
+    [
+      1262,
+      1,
+      "Appendix D. Existing-work reconciliation and deficit effect"
+    ],
+    [
+      1264,
+      2,
+      "D1. Exact current local baselines"
+    ],
+    [
+      1284,
+      2,
+      "D2. Candidate-register reconciliation states"
+    ],
+    [
+      1303,
+      1,
+      "Appendix E. Global regional, source, measure, and confidence gap map"
+    ],
+    [
+      1331,
+      1,
+      "Appendix F. Curriculum portfolios, adaptation depths, and Top-100 mapping"
+    ],
+    [
+      1333,
+      2,
+      "F1. Exact curriculum portfolios"
+    ],
+    [
+      1351,
+      2,
+      "F2. Exact adaptation depths"
+    ],
+    [
+      1361,
+      2,
+      "F3. Full Top100 target-by-curriculum mapping"
+    ],
+    [
+      1468,
+      1,
+      "Appendix G. Unresolved output profiles and D0 exclusions"
+    ],
+    [
+      1480,
+      1,
+      "Appendix H. Interlanguage overlap matrix summary"
+    ],
+    [
+      1505,
+      1,
+      "Appendix I. Table-source authorities and source notes"
+    ],
+    [
+      1509,
+      2,
+      "Population and count authorities"
+    ],
+    [
+      1511,
+      3,
+      "AFG-S008"
+    ],
+    [
+      1519,
+      3,
+      "AFG-S009"
+    ],
+    [
+      1527,
+      3,
+      "AFG-S011"
+    ],
+    [
+      1535,
+      3,
+      "ALG-S007"
+    ],
+    [
+      1543,
+      3,
+      "ALG-S008"
+    ],
+    [
+      1551,
+      3,
+      "ALG-S009"
+    ],
+    [
+      1559,
+      3,
+      "ALG-S011"
+    ],
+    [
+      1567,
+      3,
+      "ALG-S014"
+    ],
+    [
+      1575,
+      3,
+      "ALG-S018"
+    ],
+    [
+      1583,
+      3,
+      "ASSEC-S006"
+    ],
+    [
+      1591,
+      3,
+      "ASSEC-S007"
+    ],
+    [
+      1599,
+      3,
+      "ASSEC-S008"
+    ],
+    [
+      1607,
+      3,
+      "ASSEC-S018"
+    ],
+    [
+      1615,
+      3,
+      "GRG-S001"
+    ],
+    [
+      1623,
+      3,
+      "GRG-S002"
+    ],
+    [
+      1631,
+      3,
+      "GRG-S003"
+    ],
+    [
+      1639,
+      3,
+      "GRG-S004"
+    ],
+    [
+      1647,
+      3,
+      "GRG-S005"
+    ],
+    [
+      1655,
+      3,
+      "GRG-S006"
+    ],
+    [
+      1663,
+      3,
+      "PM-S001"
+    ],
+    [
+      1671,
+      3,
+      "PM-S003"
+    ],
+    [
+      1679,
+      3,
+      "PM-S004"
+    ],
+    [
+      1687,
+      3,
+      "PM-S005"
+    ],
+    [
+      1697,
+      3,
+      "PM-S007"
+    ],
+    [
+      1705,
+      3,
+      "PM-S011"
+    ],
+    [
+      1713,
+      3,
+      "PM-S013"
+    ],
+    [
+      1721,
+      3,
+      "PM-S014"
+    ],
+    [
+      1731,
+      3,
+      "PM-S016"
+    ],
+    [
+      1741,
+      3,
+      "PM-S020"
+    ],
+    [
+      1749,
+      3,
+      "TH-S001"
+    ],
+    [
+      1757,
+      3,
+      "ZA-S001"
+    ],
+    [
+      1765,
+      2,
+      "Profile and orthography authorities"
+    ],
+    [
+      1767,
+      3,
+      "S-ACS"
+    ],
+    [
+      1775,
+      3,
+      "S-APW"
+    ],
+    [
+      1783,
+      3,
+      "S-CH-GU"
+    ],
+    [
+      1791,
+      3,
+      "S-CH-MP"
+    ],
+    [
+      1799,
+      3,
+      "S-CHO-MS"
+    ],
+    [
+      1807,
+      3,
+      "S-CHO-OK"
+    ],
+    [
+      1815,
+      3,
+      "S-DAKOTA-DIO"
+    ],
+    [
+      1823,
+      3,
+      "S-DAKOTA-SWC"
+    ],
+    [
+      1831,
+      3,
+      "S-GARIFUNA-ALPH"
+    ],
+    [
+      1839,
+      3,
+      "S-GARIFUNA-HN"
+    ],
+    [
+      1847,
+      3,
+      "S-HOPI"
+    ],
+    [
+      1855,
+      3,
+      "S-IANA"
+    ],
+    [
+      1863,
+      3,
+      "S-INUPIAQ"
+    ],
+    [
+      1871,
+      3,
+      "S-INUPIAQ-NS"
+    ],
+    [
+      1879,
+      3,
+      "S-LKT"
+    ],
+    [
+      1887,
+      3,
+      "S-ODAWA-DICT"
+    ],
+    [
+      1895,
+      3,
+      "S-ODAWA-TRIBAL"
+    ],
+    [
+      1903,
+      3,
+      "S-OJ"
+    ],
+    [
+      1911,
+      3,
+      "S-PAP-AW"
+    ],
+    [
+      1919,
+      3,
+      "S-PAP-CW"
+    ],
+    [
+      1927,
+      3,
+      "S-PAP-FACT"
+    ],
+    [
+      1935,
+      3,
+      "S-PDC"
+    ],
+    [
+      1943,
+      3,
+      "S-YIVO"
+    ]
+  ],
+  "unsupported_method_term_locations_for_manual_review": {
+    "monte_carlo": [],
+    "dynamic_residual": [],
+    "fresh_output_equivalent": [],
+    "equity_efficiency": [],
+    "prestige_efficiency": []
+  },
+  "known_textual_inconsistency_locations": {
+    "MODEL_SPEC_scenario_tables_no_cache_write_column": []
+  }
+}
