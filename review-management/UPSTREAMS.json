@@ -1,0 +1,1654 @@
+{
+  "schema": "language-allocation-upstream-baseline-v1",
+  "baseline_date": "2026-08-31",
+  "compiled_at_utc": "2026-08-31T13:25:16.5514446Z",
+  "default_branch_query_returned_at_utc": "2026-08-31T13:19:00.3596293Z",
+  "purpose": "Dated upstream monitoring baseline for one continuing translation-review branch; not an automatic worker source migration",
+  "mode": {
+    "remote_operations": "read-only authenticated GitHub REST/GraphQL plus public GitLab API",
+    "bulk_downloads": false,
+    "worker_inputs_changed": false,
+    "new_source_or_license_audit": false,
+    "atomic_snapshot": false
+  },
+  "prior_baseline_date": "2026-08-30",
+  "repositories": [
+    {
+      "id": "allocation",
+      "repository": "KokunoYumeto/allocating-ai-translation-compute-for-educational-access",
+      "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access",
+      "materials": [
+        "allocation-research"
+      ],
+      "affected_language_ranks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "975a3435f611792ef30a0908e0ba54b23a0e229a",
+      "head_committed_at_utc": "2026-08-30T21:06:32Z",
+      "head_summary": "Add readable HTML paper surface",
+      "prior_pin": "2c9c129c3e693bec5a0e387c76b1c270fccf399c",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": false,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/allocating-ai-translation-compute-for-educational-access/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "v1.0.0",
+        "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access/releases/tag/v1.0.0",
+        "published_at_utc": "2026-08-30T11:12:59Z",
+        "prerelease": false,
+        "target_commitish": "main",
+        "observed_asset_count": 6,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "Allocating_AI_Translation_Compute_for_Marginal_Educational_Access_20260830_reproducibility.zip",
+            "bytes": 2304273,
+            "digest": "sha256:126ffd89826326288274149acd5628876b645e4b195370db257cb0ed5ac16e8e",
+            "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access/releases/download/v1.0.0/Allocating_AI_Translation_Compute_for_Marginal_Educational_Access_20260830_reproducibility.zip",
+            "updated_at_utc": "2026-08-30T11:12:59Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "MANIFEST.sha256",
+            "bytes": 12569,
+            "digest": "sha256:572f86641b3b86981d204a584d8ed3db0844b7d83f27fa5de4b4f4b450673885",
+            "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access/releases/download/v1.0.0/MANIFEST.sha256",
+            "updated_at_utc": "2026-08-30T11:12:59Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "PACKAGE_VALIDATION.json",
+            "bytes": 780,
+            "digest": "sha256:19eb5a8fb7c82347555b9c3915d6370e4477278738213f63f41bcff6320c027b",
+            "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access/releases/download/v1.0.0/PACKAGE_VALIDATION.json",
+            "updated_at_utc": "2026-08-30T11:12:59Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "PAPER.docx",
+            "bytes": 443454,
+            "digest": "sha256:2c1e1d91ad8358e25ce1888b79db62cd4d807ec0a39240f4ff6ed0912818dd19",
+            "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access/releases/download/v1.0.0/PAPER.docx",
+            "updated_at_utc": "2026-08-30T11:12:59Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "PAPER.md",
+            "bytes": 236976,
+            "digest": "sha256:3215fb1a8609dffe71655786008b40bf0bf69639ef7a1758166280ecf001ba57",
+            "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access/releases/download/v1.0.0/PAPER.md",
+            "updated_at_utc": "2026-08-30T11:12:59Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "PAPER.pdf",
+            "bytes": 2242126,
+            "digest": "sha256:ee0bc862cdee5dbe96813ce0e697f1ee2e1cdc61bee0b6dd2c9231780daa764f",
+            "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access/releases/download/v1.0.0/PAPER.pdf",
+            "updated_at_utc": "2026-08-30T11:12:59Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      },
+      "already_known_handoff_base": "975a3435f611792ef30a0908e0ba54b23a0e229a"
+    },
+    {
+      "id": "catalog",
+      "repository": "KokunoYumeto/program-matematika-indonesia",
+      "url": "https://github.com/KokunoYumeto/program-matematika-indonesia",
+      "materials": [
+        "program-catalog",
+        "AX-1",
+        "AX-2",
+        "AX-3",
+        "MV-1",
+        "SB-1"
+      ],
+      "affected_language_ranks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "c9e4599866af2593799403c4a8ee6d616dbf5605",
+      "head_committed_at_utc": "2026-08-31T12:41:57Z",
+      "head_summary": "Fix capsule fallback, evidence truth and public course routes",
+      "prior_pin": "2f0e52280791854f904475e5f92392f52745ea24",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": false,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/program-matematika-indonesia/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "v0.62.13",
+        "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/tag/v0.62.13",
+        "published_at_utc": "2026-08-31T11:31:58Z",
+        "prerelease": false,
+        "target_commitish": "4ab6eb6b270dc0a32512dad3f998653c336d8492",
+        "observed_asset_count": 100,
+        "asset_inventory_scope": "selected source, adapter, capsule and release-manifest assets",
+        "assets": [
+          {
+            "name": "course-capsule-v1.schema.json",
+            "bytes": 15237,
+            "digest": "sha256:b7ad18aa3ab047b4b3b8771a86389e438d9e1676227f2488c3392e954181dab2",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/course-capsule-v1.schema.json",
+            "updated_at_utc": "2026-08-31T11:29:57Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "course-capsules-v1.jsonl",
+            "bytes": 226934,
+            "digest": "sha256:2c885781e9b69de6afdc2cbfe8e7d95d26ba97f0ffe571a12b4ec1ead575d6d1",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/course-capsules-v1.jsonl",
+            "updated_at_utc": "2026-08-31T11:29:58Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "interlanguage-math-backend-v1.schema.json",
+            "bytes": 126423,
+            "digest": "sha256:3de8d107b1c75db0f8d60c42ef7e3488bc3fcc93f72e955def71a771475cf2b2",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/interlanguage-math-backend-v1.schema.json",
+            "updated_at_utc": "2026-08-31T11:30:05Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "learner-delivery-v1.json",
+            "bytes": 58625,
+            "digest": "sha256:d647dc786628a52008997df758e79d6b40f0f2d37e6eebf415533d94a519971c",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/learner-delivery-v1.json",
+            "updated_at_utc": "2026-08-31T11:30:07Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "learner-delivery-v1.schema.json",
+            "bytes": 6075,
+            "digest": "sha256:0b81f0407236dfe63098b4e120c9e234b5758b6f6bc1df6f40d7c976db7ec7b2",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/learner-delivery-v1.schema.json",
+            "updated_at_utc": "2026-08-31T11:30:08Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "MODULAR_BACKEND_METHOD_AND_FINDINGS_V1.md",
+            "bytes": 32070,
+            "digest": "sha256:c30745104ae42a0f29aa3399bb4ef3415c413dba241b1ac494525759214e5536",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/MODULAR_BACKEND_METHOD_AND_FINDINGS_V1.md",
+            "updated_at_utc": "2026-08-31T11:29:52Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "program-matematika-indonesia-backend-v2.3.1-a00-o001-assessment-adapter-v0.1.0.zip",
+            "bytes": 8634922,
+            "digest": "sha256:43e122a96cf2878764ff53148c9d2d247ccb0b661b563ae6c5f04f4cd000098b",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/program-matematika-indonesia-backend-v2.3.1-a00-o001-assessment-adapter-v0.1.0.zip",
+            "updated_at_utc": "2026-08-31T11:30:26Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "program-matematika-indonesia-backend-v2.3.1-b10-adapter-v0.2.0.zip",
+            "bytes": 656874,
+            "digest": "sha256:c9a2f8a0307ec6fa6c5f3b03168760f0d8ed5a67e069b5afb592f905e12096b6",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/program-matematika-indonesia-backend-v2.3.1-b10-adapter-v0.2.0.zip",
+            "updated_at_utc": "2026-08-31T11:30:26Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "program-matematika-indonesia-course-capsule-v1.zip",
+            "bytes": 1171405,
+            "digest": "sha256:6c5333f46b2b565b16f77405affc5ae538ec41b2acfdfcf5b7a5c332bd9da7e4",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/program-matematika-indonesia-course-capsule-v1.zip",
+            "updated_at_utc": "2026-08-31T11:30:46Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "program-matematika-indonesia-source-v0.62.13.zip",
+            "bytes": 346471427,
+            "digest": "sha256:f4e20b66d773177908d704559600c2695a6a066678537357c345c07d5a837365",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/program-matematika-indonesia-source-v0.62.13.zip",
+            "updated_at_utc": "2026-08-31T11:31:54Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "RELEASE_CHECKSUMS_v0.62.13.sha256",
+            "bytes": 11152,
+            "digest": "sha256:5bc0f0e419bb25084b8a28bbd82da327823b99ca097e52ff452f44134ead2ab8",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/RELEASE_CHECKSUMS_v0.62.13.sha256",
+            "updated_at_utc": "2026-08-31T11:29:52Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "RELEASE_NOTES_v0.62.13.md",
+            "bytes": 2137,
+            "digest": "sha256:91838ebb976060fd2e0ceea260806d5120e6986e3dd8466d77af6aa33a1f076f",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/RELEASE_NOTES_v0.62.13.md",
+            "updated_at_utc": "2026-08-31T11:29:53Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "v23-adapter-index-v1.json",
+            "bytes": 11370,
+            "digest": "sha256:31e45fc3a852b1d1b7742ac66d5d919aa1d229feff408913951018451f755381",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/v23-adapter-index-v1.json",
+            "updated_at_utc": "2026-08-31T11:31:55Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "v23-adapter-index-v1.schema.json",
+            "bytes": 4933,
+            "digest": "sha256:c84b160115f6b8e45e7b466899e4081fac02947df93934bcd50e6dedc3559fa7",
+            "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/releases/download/v0.62.13/v23-adapter-index-v1.schema.json",
+            "updated_at_utc": "2026-08-31T11:31:56Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A00",
+      "repository": "KokunoYumeto/openstax-prealgebra-2e-id-ID",
+      "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID",
+      "materials": [
+        "A00"
+      ],
+      "affected_language_ranks": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        10
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "3de9207f56f8b5c57c017abf973fb04e00d740f1",
+      "head_committed_at_utc": "2026-08-23T17:03:46Z",
+      "head_summary": "OpenStax Prealgebra 2e id-ID v0.2.7 source checkpoint",
+      "prior_pin": "3de9207f56f8b5c57c017abf973fb04e00d740f1",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/openstax-prealgebra-2e-id-ID/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "prealgebra-2e-id-ID-v0.2.7",
+        "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID/releases/tag/prealgebra-2e-id-ID-v0.2.7",
+        "published_at_utc": "2026-08-23T17:08:56Z",
+        "prerelease": false,
+        "target_commitish": "main",
+        "observed_asset_count": 7,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "prealgebra-2e-id-ID-v0.2.7-backend-core.zip",
+            "bytes": 114297095,
+            "digest": "sha256:a871a98b23bdec2dad4390e0bb40299739721d6e7967e2563f7c447a9f288d51",
+            "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID/releases/download/prealgebra-2e-id-ID-v0.2.7/prealgebra-2e-id-ID-v0.2.7-backend-core.zip",
+            "updated_at_utc": "2026-08-23T17:08:55Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "prealgebra-2e-id-ID-v0.2.7-backend-sqlite.zip",
+            "bytes": 108152730,
+            "digest": "sha256:ebf3c409fef29f76167dd3a1438317a040caafc7a4a73fc98452b90f5db5bcae",
+            "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID/releases/download/prealgebra-2e-id-ID-v0.2.7/prealgebra-2e-id-ID-v0.2.7-backend-sqlite.zip",
+            "updated_at_utc": "2026-08-23T17:08:56Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "prealgebra-2e-id-ID-v0.2.7-reader-html.zip",
+            "bytes": 60238313,
+            "digest": "sha256:da7b65488ee854b22e8e1d2161477b9a3c6e2e0c2e64ec9026cde0753a20e6d9",
+            "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID/releases/download/prealgebra-2e-id-ID-v0.2.7/prealgebra-2e-id-ID-v0.2.7-reader-html.zip",
+            "updated_at_utc": "2026-08-23T17:08:46Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "prealgebra-2e-id-ID-v0.2.7-reader.pdf",
+            "bytes": 47364408,
+            "digest": "sha256:de15139df141d2cde509adb5f37bae04341253a87800a352104f2ccc98ee03fb",
+            "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID/releases/download/prealgebra-2e-id-ID-v0.2.7/prealgebra-2e-id-ID-v0.2.7-reader.pdf",
+            "updated_at_utc": "2026-08-23T17:08:42Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "prealgebra-2e-id-ID-v0.2.7-release-manifest.json",
+            "bytes": 3082,
+            "digest": "sha256:7f5ca07be141ad06fd1a60d435c9c03aa0258fb106d24cecbb8a8208d8def9ef",
+            "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID/releases/download/prealgebra-2e-id-ID-v0.2.7/prealgebra-2e-id-ID-v0.2.7-release-manifest.json",
+            "updated_at_utc": "2026-08-23T17:08:16Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "prealgebra-2e-id-ID-v0.2.7-source.zip",
+            "bytes": 79438504,
+            "digest": "sha256:ec622c4b0be5693a798453ee6d1a6ae21cdf978f26852253b5cbb5d88a484fee",
+            "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID/releases/download/prealgebra-2e-id-ID-v0.2.7/prealgebra-2e-id-ID-v0.2.7-source.zip",
+            "updated_at_utc": "2026-08-23T17:08:33Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "bytes": 660,
+            "digest": "sha256:6251a8a3cfca0f46d5510365dea078c804db485101c8cba10468a82b9a86dbbb",
+            "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID/releases/download/prealgebra-2e-id-ID-v0.2.7/SHA256SUMS.txt",
+            "updated_at_utc": "2026-08-23T17:08:34Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A10",
+      "repository": "KokunoYumeto/openstax-elementary-algebra-2e-id",
+      "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id",
+      "materials": [
+        "A10"
+      ],
+      "affected_language_ranks": [
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "11754719d8eab8de63d5340ad35824e8be8d99e4",
+      "head_committed_at_utc": "2026-08-29T23:59:46Z",
+      "head_summary": "Update PUBLICATION.json for v1.0.2",
+      "prior_pin": "11754719d8eab8de63d5340ad35824e8be8d99e4",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/openstax-elementary-algebra-2e-id/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "v1.0.2",
+        "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/tag/v1.0.2",
+        "published_at_utc": "2026-08-30T00:00:18Z",
+        "prerelease": false,
+        "target_commitish": "main",
+        "observed_asset_count": 8,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "00-elementary-algebra-2e-bahasa-indonesia-EA2-C0082-reader-build-manifest.json",
+            "bytes": 2493724,
+            "digest": "sha256:2ed213f215e310103f016510ee3214d043ea74c8627709bd59b0694cbd141d7e",
+            "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/00-elementary-algebra-2e-bahasa-indonesia-EA2-C0082-reader-build-manifest.json",
+            "updated_at_utc": "2026-08-30T00:00:15Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "00-elementary-algebra-2e-bahasa-indonesia-EA2-C0082-reader.pdf",
+            "bytes": 86295022,
+            "digest": "sha256:5986c4b2da3a7e2838f92497224d251ec273ac27020e06b2d165d0d27e0334a4",
+            "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/00-elementary-algebra-2e-bahasa-indonesia-EA2-C0082-reader.pdf",
+            "updated_at_utc": "2026-08-29T23:59:59Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "EA2-C0082-reader-QA-final.json",
+            "bytes": 4252,
+            "digest": "sha256:9b58f3b6619ce24033a6f317f061841ff7d05f8ce7a95dc28275ec95a9a5016b",
+            "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/EA2-C0082-reader-QA-final.json",
+            "updated_at_utc": "2026-08-30T00:00:15Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "elementary-algebra-2e-id-ID-1.0.2-backend-core.zip",
+            "bytes": 110275708,
+            "digest": "sha256:9c801d606de5f87bd4ed640dbf81b05f2bbcb1e216b2d82385f1e7d0a6313f9d",
+            "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/elementary-algebra-2e-id-ID-1.0.2-backend-core.zip",
+            "updated_at_utc": "2026-08-30T00:00:14Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "elementary-algebra-2e-id-ID-1.0.2-release-manifest.json",
+            "bytes": 26975,
+            "digest": "sha256:55c2e9af12877969729c9224b1264cd644fd21fb8b9d8ec9bdcdac8a0bc59295",
+            "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/elementary-algebra-2e-id-ID-1.0.2-release-manifest.json",
+            "updated_at_utc": "2026-08-30T00:00:16Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "elementary-algebra-2e-id-ID-1.0.2-source.zip",
+            "bytes": 6397865,
+            "digest": "sha256:6f04e88387e8d4e6e710dddcebb8d41e952a315231d7e203d62170c6ad9f3456",
+            "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/elementary-algebra-2e-id-ID-1.0.2-source.zip",
+            "updated_at_utc": "2026-08-30T00:00:01Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "LICENSE.txt",
+            "bytes": 21442,
+            "digest": "sha256:ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+            "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/LICENSE.txt",
+            "updated_at_utc": "2026-08-30T00:00:00Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "bytes": 799,
+            "digest": "sha256:5f4abce9a019ea01dd5fb5fa0f4aa61e478cc1699c166fa28dd1596bbe510d8d",
+            "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/SHA256SUMS.txt",
+            "updated_at_utc": "2026-08-30T00:00:17Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A20",
+      "repository": "KokunoYumeto/openstax-intermediate-algebra-2e-id",
+      "url": "https://github.com/KokunoYumeto/openstax-intermediate-algebra-2e-id",
+      "materials": [
+        "A20"
+      ],
+      "affected_language_ranks": [
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "b293e167477c8fe2e8885c6f6d79d12cbb2e0e89",
+      "head_committed_at_utc": "2026-08-23T01:23:58Z",
+      "head_summary": "Publish v0.1.3-wip: SHA256SUMS.txt",
+      "prior_pin": "b293e167477c8fe2e8885c6f6d79d12cbb2e0e89",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/openstax-intermediate-algebra-2e-id/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "v0.3.0-wip",
+        "url": "https://github.com/KokunoYumeto/openstax-intermediate-algebra-2e-id/releases/tag/v0.3.0-wip",
+        "published_at_utc": "2026-08-28T09:37:48Z",
+        "prerelease": true,
+        "target_commitish": "main",
+        "observed_asset_count": 6,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "LICENSE.txt",
+            "bytes": 23324,
+            "digest": "sha256:12f4da8bb2fb5f7a4ae529e03c02e8de48ee8a33c642b75c5ed2f1f9d0323943",
+            "url": "https://github.com/KokunoYumeto/openstax-intermediate-algebra-2e-id/releases/download/v0.3.0-wip/LICENSE.txt",
+            "updated_at_utc": "2026-08-28T09:37:46Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-editable-source.zip",
+            "bytes": 106658915,
+            "digest": "sha256:a9c53c328be944e12b707d5cb16e289755eff0c603d1652bfca13dd572e780d7",
+            "url": "https://github.com/KokunoYumeto/openstax-intermediate-algebra-2e-id/releases/download/v0.3.0-wip/openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-editable-source.zip",
+            "updated_at_utc": "2026-08-28T09:37:32Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-modular-backend-with-id-ID-overlays.zip",
+            "bytes": 43861979,
+            "digest": "sha256:615898f1b7fd78d5830ddc3d6f4cd8cdbf8a6c067e3c52e31a43a60240772266",
+            "url": "https://github.com/KokunoYumeto/openstax-intermediate-algebra-2e-id/releases/download/v0.3.0-wip/openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-modular-backend-with-id-ID-overlays.zip",
+            "updated_at_utc": "2026-08-28T09:37:45Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-reader.pdf",
+            "bytes": 322097366,
+            "digest": "sha256:125ae767ca5a0d6412401f4f30e6fb39133dcde3bc9fbddfb14ccbf3ddcf1f7b",
+            "url": "https://github.com/KokunoYumeto/openstax-intermediate-algebra-2e-id/releases/download/v0.3.0-wip/openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-reader.pdf",
+            "updated_at_utc": "2026-08-28T09:37:11Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-release-manifest.json",
+            "bytes": 527524,
+            "digest": "sha256:52f4fee5326e8c8138b7ebf6dda54eed431a76d5db0303d7ed973d397ad95294",
+            "url": "https://github.com/KokunoYumeto/openstax-intermediate-algebra-2e-id/releases/download/v0.3.0-wip/openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-release-manifest.json",
+            "updated_at_utc": "2026-08-28T09:37:46Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "bytes": 631,
+            "digest": "sha256:08d5088bd222964033c67a99e4e81776ebb10bfef8ee08c924febf479206059f",
+            "url": "https://github.com/KokunoYumeto/openstax-intermediate-algebra-2e-id/releases/download/v0.3.0-wip/SHA256SUMS.txt",
+            "updated_at_utc": "2026-08-28T09:37:47Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A30",
+      "repository": "KokunoYumeto/openstax-precalculus-2e-id",
+      "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id",
+      "materials": [
+        "A30"
+      ],
+      "affected_language_ranks": [
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "a16de3097f773ee880c75989773776c16cd77868",
+      "head_committed_at_utc": "2026-08-31T03:01:18Z",
+      "head_summary": "Update SHA256SUMS.txt for reader checkpoint",
+      "prior_pin": "3209a5a2dea18c2fc527c5ea41b7dd2195076e40",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": false,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/openstax-precalculus-2e-id/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "v0.1.0-alpha.67-reader.1",
+        "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/releases/tag/v0.1.0-alpha.67-reader.1",
+        "published_at_utc": "2026-08-31T03:01:19Z",
+        "prerelease": true,
+        "target_commitish": "main",
+        "observed_asset_count": 7,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "LICENSE.txt",
+            "bytes": 1722,
+            "digest": "sha256:643136a7e960af864c63515cae2d405731a79a202a4c3681d56a422bb9b4ac2c",
+            "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/releases/download/v0.1.0-alpha.67-reader.1/LICENSE.txt",
+            "updated_at_utc": "2026-08-31T03:02:36Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "OpenStax-Precalculus-2e-id-ID-0.1.0-alpha.67-reader.pdf",
+            "bytes": 208753713,
+            "digest": "sha256:afbf64d4acd37e70cc1d468fcb6b79ee10fd6ff367b9fa79a9862fb5ec7c2dff",
+            "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/releases/download/v0.1.0-alpha.67-reader.1/OpenStax-Precalculus-2e-id-ID-0.1.0-alpha.67-reader.pdf",
+            "updated_at_utc": "2026-08-31T03:02:03Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "precalculus-2e-id-ID-0.1.0-alpha.67-reader.1-backend-core.zip",
+            "bytes": 75074717,
+            "digest": "sha256:d109ee3a1fac0868f000fd86a4f3aea4d77f414f4697f9ca7c2855c5b13e4e4f",
+            "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/releases/download/v0.1.0-alpha.67-reader.1/precalculus-2e-id-ID-0.1.0-alpha.67-reader.1-backend-core.zip",
+            "updated_at_utc": "2026-08-31T03:02:35Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "precalculus-2e-id-ID-0.1.0-alpha.67-reader.1-manifest.json",
+            "bytes": 3588,
+            "digest": "sha256:8cd9c092e509afc6980d9025ea70b7674124da64ab75cdde54712673e0b08ce1",
+            "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/releases/download/v0.1.0-alpha.67-reader.1/precalculus-2e-id-ID-0.1.0-alpha.67-reader.1-manifest.json",
+            "updated_at_utc": "2026-08-31T03:02:37Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "precalculus-2e-id-ID-0.1.0-alpha.67-reader.1-source-core.zip",
+            "bytes": 74521202,
+            "digest": "sha256:0ed4c1997c0347ed17fa0ebf36f90a2f7eb321ead608b86285076e9f32334845",
+            "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/releases/download/v0.1.0-alpha.67-reader.1/precalculus-2e-id-ID-0.1.0-alpha.67-reader.1-source-core.zip",
+            "updated_at_utc": "2026-08-31T03:02:20Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "README.txt",
+            "bytes": 1352,
+            "digest": "sha256:fbee01941f9c28c77c5e44e310f007987ef83590cbf6e2b9db0bd4dfd5e42e19",
+            "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/releases/download/v0.1.0-alpha.67-reader.1/README.txt",
+            "updated_at_utc": "2026-08-31T03:02:36Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "bytes": 657,
+            "digest": "sha256:d35f959a5dc9a5e14ede63aa3fb11805c561cd1eb8eb9b4ee7fe535bab081ce5",
+            "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/releases/download/v0.1.0-alpha.67-reader.1/SHA256SUMS.txt",
+            "updated_at_utc": "2026-08-31T03:02:38Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      },
+      "owner_release_claim": {
+        "translated_modules": 67,
+        "total_modules": 87,
+        "complete_edition": false,
+        "contiguous_through": "m49436",
+        "next_module": "m49437",
+        "canonical_english_commit": "789b54099106b071d1d32bfcee454fed72eb4768",
+        "manifest_url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/blob/a16de3097f773ee880c75989773776c16cd77868/RELEASE_MANIFEST.json",
+        "verification": "owner manifest and GitHub API sizes/digests agree; archive bytes not checked in this baseline"
+      }
+    },
+    {
+      "id": "B10",
+      "repository": "KokunoYumeto/discrete-mathematics-open-introduction-id",
+      "url": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id",
+      "materials": [
+        "B10"
+      ],
+      "affected_language_ranks": [
+        3,
+        6,
+        8
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "head_committed_at_utc": "2026-08-22T20:03:44Z",
+      "head_summary": "docs: record translation model provenance",
+      "prior_pin": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/discrete-mathematics-open-introduction-id/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "backend-v1",
+        "url": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id/releases/tag/backend-v1",
+        "published_at_utc": "2026-08-20T22:08:56Z",
+        "prerelease": false,
+        "target_commitish": "b1f46a7db6dc24710f01f8c33759e5135da46f11",
+        "observed_asset_count": 3,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "DMD_ID_MODULAR_BACKEND_V1.zip",
+            "bytes": 58457037,
+            "digest": "sha256:0392c353b7bd3f69fd93c1e6ff82ddc53f44f2683a2febf421de63068cb637ef",
+            "url": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id/releases/download/backend-v1/DMD_ID_MODULAR_BACKEND_V1.zip",
+            "updated_at_utc": "2026-08-20T22:08:39Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "release_receipt.json",
+            "bytes": 865,
+            "digest": "sha256:e9db2114d6b5ea660fd35dc9d823ead696c20e36d7153bbc8004fb3f8b689bbb",
+            "url": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id/releases/download/backend-v1/release_receipt.json",
+            "updated_at_utc": "2026-08-20T22:08:53Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "SHA256SUMS",
+            "bytes": 183,
+            "digest": "sha256:b9b989774c7d1649ff3ae7010b1c3e08443c5aaf815ef6a4979c8dd552880b29",
+            "url": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id/releases/download/backend-v1/SHA256SUMS",
+            "updated_at_utc": "2026-08-20T22:08:54Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B20",
+      "repository": "KokunoYumeto/clp1-differential-calculus-id",
+      "url": "https://github.com/KokunoYumeto/clp1-differential-calculus-id",
+      "materials": [
+        "B20"
+      ],
+      "affected_language_ranks": [
+        5,
+        6
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "59aaa2a6145eecd67680752c28ad4be7e43eff5e",
+      "head_committed_at_utc": "2026-08-18T19:40:00Z",
+      "head_summary": "Open the Indonesian PDFs in the centered reader preview",
+      "prior_pin": "59aaa2a6145eecd67680752c28ad4be7e43eff5e",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/clp1-differential-calculus-id/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "v2026.08.14.1",
+        "url": "https://github.com/KokunoYumeto/clp1-differential-calculus-id/releases/tag/v2026.08.14.1",
+        "published_at_utc": "2026-08-14T19:34:23Z",
+        "prerelease": false,
+        "target_commitish": "main",
+        "observed_asset_count": 6,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "00_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_BUKU_TEKS.pdf",
+            "bytes": 4997608,
+            "digest": "sha256:e0466ca75b793aed64e2c356014233d9e85072b077a3b2d3344926835c408ec2",
+            "url": "https://github.com/KokunoYumeto/clp1-differential-calculus-id/releases/download/v2026.08.14.1/00_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_BUKU_TEKS.pdf",
+            "updated_at_utc": "2026-08-14T19:34:22Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "01_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_SOAL_DAN_PENYELESAIAN.pdf",
+            "bytes": 3263082,
+            "digest": "sha256:911b2a0e3a9de6eccb9dd93042fa697e8f02e4bb1ecdacec86ade68744245021",
+            "url": "https://github.com/KokunoYumeto/clp1-differential-calculus-id/releases/download/v2026.08.14.1/01_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_SOAL_DAN_PENYELESAIAN.pdf",
+            "updated_at_utc": "2026-08-14T19:34:22Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "02_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_SUMBER_EDITABLE.zip",
+            "bytes": 18387769,
+            "digest": "sha256:c61976a35837a92b5278eba21b52802cee5396278ca86b87258e7cd62ae8e7e0",
+            "url": "https://github.com/KokunoYumeto/clp1-differential-calculus-id/releases/download/v2026.08.14.1/02_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_SUMBER_EDITABLE.zip",
+            "updated_at_utc": "2026-08-14T19:34:23Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "03_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_BUKTI_DAN_PROVENANCE.zip",
+            "bytes": 3695262,
+            "digest": "sha256:ba4ab74f770afe83266fb57beb77fc551735368f2f3b4a1d9b5d5c821eb19a42",
+            "url": "https://github.com/KokunoYumeto/clp1-differential-calculus-id/releases/download/v2026.08.14.1/03_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_BUKTI_DAN_PROVENANCE.zip",
+            "updated_at_utc": "2026-08-14T19:34:21Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "04_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_SHA256SUMS.txt",
+            "bytes": 737,
+            "digest": "sha256:8a535ef3a96a048e80d661247389f7379e8881a50da06c4e19c3c8410a21460e",
+            "url": "https://github.com/KokunoYumeto/clp1-differential-calculus-id/releases/download/v2026.08.14.1/04_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_SHA256SUMS.txt",
+            "updated_at_utc": "2026-08-14T19:34:20Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "05_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_RELEASE_MANIFEST.json",
+            "bytes": 1342,
+            "digest": "sha256:9c31bbf3f76b3e3905eef1add42afb823b5de4f6de8bea8a912db6ffab63c895",
+            "url": "https://github.com/KokunoYumeto/clp1-differential-calculus-id/releases/download/v2026.08.14.1/05_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_RELEASE_MANIFEST.json",
+            "updated_at_utc": "2026-08-14T19:34:21Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B40",
+      "repository": "KokunoYumeto/hefferon-linear-algebra-id",
+      "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id",
+      "materials": [
+        "B40"
+      ],
+      "affected_language_ranks": [
+        5,
+        6,
+        8
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "e84ce2956a7304830c42eba70106f940fefee7c4",
+      "head_committed_at_utc": "2026-08-23T17:00:57Z",
+      "head_summary": "Rilis v2026.08.22: edisi lengkap id-ID",
+      "prior_pin": "e84ce2956a7304830c42eba70106f940fefee7c4",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/hefferon-linear-algebra-id/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "v2026.08.22",
+        "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/tag/v2026.08.22",
+        "published_at_utc": "2026-08-23T17:03:29Z",
+        "prerelease": false,
+        "target_commitish": "e84ce2956a7304830c42eba70106f940fefee7c4",
+        "observed_asset_count": 9,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "01_HEFFERON_LINEAR_ALGEBRA_ID_TEXTBOOK_2026.08.22.pdf",
+            "bytes": 8984459,
+            "digest": "sha256:0462ddc8ffcc901efbc81205f79a249ae716e838a6ec32eda033444a90b8755e",
+            "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/download/v2026.08.22/01_HEFFERON_LINEAR_ALGEBRA_ID_TEXTBOOK_2026.08.22.pdf",
+            "updated_at_utc": "2026-08-23T17:01:53Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "02_HEFFERON_LINEAR_ALGEBRA_ID_WORKED_ANSWERS_2026.08.22.pdf",
+            "bytes": 2672266,
+            "digest": "sha256:61f8a344cade529249d4f165bb62bce17579b6a4408b11634999e9f73ec9c01b",
+            "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/download/v2026.08.22/02_HEFFERON_LINEAR_ALGEBRA_ID_WORKED_ANSWERS_2026.08.22.pdf",
+            "updated_at_utc": "2026-08-23T17:01:55Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "03_HEFFERON_LINEAR_ALGEBRA_ID_SAGE_LAB_2026.08.22.pdf",
+            "bytes": 13164259,
+            "digest": "sha256:adb78966020355a90442c7ae68c734f1fd6b44b5d935a3f75e531ea666eeee4a",
+            "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/download/v2026.08.22/03_HEFFERON_LINEAR_ALGEBRA_ID_SAGE_LAB_2026.08.22.pdf",
+            "updated_at_utc": "2026-08-23T17:01:58Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "HEFFERON_LINEAR_ALGEBRA_ID_EDITABLE_SOURCE_2026.08.22.zip",
+            "bytes": 117074300,
+            "digest": "sha256:33f679be85fe1af6eb97e7d203a8389fd51beced9d41facc453e6162ad90a2c1",
+            "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/download/v2026.08.22/HEFFERON_LINEAR_ALGEBRA_ID_EDITABLE_SOURCE_2026.08.22.zip",
+            "updated_at_utc": "2026-08-23T17:02:14Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "HEFFERON_LINEAR_ALGEBRA_ID_MODULAR_BACKEND_2026.08.22.zip",
+            "bytes": 6118023,
+            "digest": "sha256:e3d66b5d19c79bb10243ac552f16165da897d40615467696452e3a64d0b92df2",
+            "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/download/v2026.08.22/HEFFERON_LINEAR_ALGEBRA_ID_MODULAR_BACKEND_2026.08.22.zip",
+            "updated_at_utc": "2026-08-23T17:02:33Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "HEFFERON_LINEAR_ALGEBRA_ID_PROVENANCE_QA_2026.08.22.zip",
+            "bytes": 17025794,
+            "digest": "sha256:b76e7eeff732661691e33e07735022aaef7b825dfee3e7c6565aa6697cfc1ada",
+            "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/download/v2026.08.22/HEFFERON_LINEAR_ALGEBRA_ID_PROVENANCE_QA_2026.08.22.zip",
+            "updated_at_utc": "2026-08-23T17:02:37Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "README_RELEASE_2026.08.22.md",
+            "bytes": 2075,
+            "digest": "sha256:b35010b03ce4d37ff4f8f8d6d699c49e19df32366ac26eae10c2ca23480a51fe",
+            "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/download/v2026.08.22/README_RELEASE_2026.08.22.md",
+            "updated_at_utc": "2026-08-23T17:02:41Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "release-manifest.json",
+            "bytes": 5665,
+            "digest": "sha256:e1e9f1cec122d6a29d0dd90d507b0447d5c047b8720e8f62f59722657af80dde",
+            "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/download/v2026.08.22/release-manifest.json",
+            "updated_at_utc": "2026-08-23T17:02:42Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "SHA256SUMS",
+            "bytes": 919,
+            "digest": "sha256:09bcdfe11272dea3b8916e59ef9dece50c666f68b5c00468795bfe8e568bfc8c",
+            "url": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id/releases/download/v2026.08.22/SHA256SUMS",
+            "updated_at_utc": "2026-08-23T17:02:43Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B60",
+      "repository": "KokunoYumeto/clp4-vector-calculus-id",
+      "url": "https://github.com/KokunoYumeto/clp4-vector-calculus-id",
+      "materials": [
+        "B60"
+      ],
+      "affected_language_ranks": [
+        5
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "3abfd2deb01e8ea005da8450ac3a2228410468d9",
+      "head_committed_at_utc": "2026-08-26T04:17:44Z",
+      "head_summary": "Publish complete Indonesian CLP-4 edition",
+      "prior_pin": "3abfd2deb01e8ea005da8450ac3a2228410468d9",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/clp4-vector-calculus-id/commits/main",
+      "releases_check": "no releases returned",
+      "latest_published_release": null,
+      "embedded_source": {
+        "name": "CLP-4-Kalkulus-Vektor-Bahasa-Indonesia-sumber-backend.zip",
+        "bytes": 35496581,
+        "git_blob_sha1": "6600b9aa6c49a9fcedb51c309737dd32118af9e1",
+        "url": "https://github.com/KokunoYumeto/clp4-vector-calculus-id/blob/3abfd2deb01e8ea005da8450ac3a2228410468d9/CLP-4-Kalkulus-Vektor-Bahasa-Indonesia-sumber-backend.zip",
+        "sha256": "3f58f4762b1b638a051afc3c1f66c2bd9ae87a5ef3e445902abe2a8235f64b95",
+        "sha256_authority": "https://github.com/KokunoYumeto/clp4-vector-calculus-id/blob/3abfd2deb01e8ea005da8450ac3a2228410468d9/CHECKSUMS.sha256",
+        "matches_prior_language_lock": true,
+        "bytes_downloaded": false
+      }
+    },
+    {
+      "id": "B80",
+      "repository": "KokunoYumeto/mathematical-computing-reproducible-experiments-id",
+      "url": "https://github.com/KokunoYumeto/mathematical-computing-reproducible-experiments-id",
+      "materials": [
+        "B80"
+      ],
+      "affected_language_ranks": [
+        5
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "403e93a6d8bdadbcd42385981bbe4b39577ca069",
+      "head_committed_at_utc": "2026-08-22T20:05:00Z",
+      "head_summary": "Harden terminal publication controls",
+      "prior_pin": "403e93a6d8bdadbcd42385981bbe4b39577ca069",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/mathematical-computing-reproducible-experiments-id/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "v2026.08.22.1",
+        "url": "https://github.com/KokunoYumeto/mathematical-computing-reproducible-experiments-id/releases/tag/v2026.08.22.1",
+        "published_at_utc": "2026-08-22T19:04:24Z",
+        "prerelease": false,
+        "target_commitish": "main",
+        "observed_asset_count": 5,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "index.html",
+            "bytes": 37570,
+            "digest": "sha256:5fb26b6316c5fd807760ca4f6c4e060f8d4ef95779eb04e3029c84c82e92c85a",
+            "url": "https://github.com/KokunoYumeto/mathematical-computing-reproducible-experiments-id/releases/download/v2026.08.22.1/index.html",
+            "updated_at_utc": "2026-08-22T19:04:23Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "Komputasi-Matematis-dan-Eksperimen-yang-Dapat-Direproduksi.epub",
+            "bytes": 291212,
+            "digest": "sha256:8e9e35dd54be8524a8b7752df0a7285749db4c80fc5a10271eb841c01c0c748d",
+            "url": "https://github.com/KokunoYumeto/mathematical-computing-reproducible-experiments-id/releases/download/v2026.08.22.1/Komputasi-Matematis-dan-Eksperimen-yang-Dapat-Direproduksi.epub",
+            "updated_at_utc": "2026-08-22T19:04:24Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "Komputasi-Matematis-dan-Eksperimen-yang-Dapat-Direproduksi.pdf",
+            "bytes": 754845,
+            "digest": "sha256:f9d3df201c03107be3a3e6f61dd6798485cf20bc35ae14f2911ab212789b5038",
+            "url": "https://github.com/KokunoYumeto/mathematical-computing-reproducible-experiments-id/releases/download/v2026.08.22.1/Komputasi-Matematis-dan-Eksperimen-yang-Dapat-Direproduksi.pdf",
+            "updated_at_utc": "2026-08-22T19:04:24Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "O002_B80_ID_EDITABLE_SOURCE_2026-08-22-1.zip",
+            "bytes": 316923,
+            "digest": "sha256:a9dcdc18481b3dc88beee3006d46f1b8187815623534df523bbc70e3e011b9f9",
+            "url": "https://github.com/KokunoYumeto/mathematical-computing-reproducible-experiments-id/releases/download/v2026.08.22.1/O002_B80_ID_EDITABLE_SOURCE_2026-08-22-1.zip",
+            "updated_at_utc": "2026-08-22T19:04:24Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "O002_B80_ID_OFFLINE_READER_2026-08-22-1.zip",
+            "bytes": 1613660,
+            "digest": "sha256:c3b97c057ed6751ddb2067d4be8ef96a7256e1c9bd25075601f46071eb2dfff9",
+            "url": "https://github.com/KokunoYumeto/mathematical-computing-reproducible-experiments-id/releases/download/v2026.08.22.1/O002_B80_ID_OFFLINE_READER_2026-08-22-1.zip",
+            "updated_at_utc": "2026-08-22T19:04:24Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OpenLogic",
+      "repository": "KokunoYumeto/OpenLogic-id",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-id",
+      "materials": [
+        "dispatch-supplemental-OpenLogic"
+      ],
+      "affected_language_ranks": [],
+      "default_branch": "main",
+      "default_branch_commit": "07b25e1329a95a0ace266533f32f3671c2cef95e",
+      "head_committed_at_utc": "2026-08-18T19:40:00Z",
+      "head_summary": "Open the Indonesian reader in the centered PDF preview",
+      "prior_pin": null,
+      "prior_pin_date": null,
+      "head_matches_prior_pin": null,
+      "head_evidence": "https://api.github.com/repos/KokunoYumeto/OpenLogic-id/commits/main",
+      "releases_check": "latest published/prerelease from first 3 release entries; draft entries excluded",
+      "latest_published_release": {
+        "tag": "id-olp-0722-20260814",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-id/releases/tag/id-olp-0722-20260814",
+        "published_at_utc": "2026-08-14T11:20:42Z",
+        "prerelease": false,
+        "target_commitish": "main",
+        "observed_asset_count": 4,
+        "asset_inventory_scope": "all assets returned for this release",
+        "assets": [
+          {
+            "name": "00_OPENLOGIC_id_COMPLETE_LINKED_READER_OLP-0722.pdf",
+            "bytes": 5593664,
+            "digest": "sha256:bf538d5e1994a7a7600703c9d24616696f77e43e9312fb51078095ff0c963c0a",
+            "url": "https://github.com/KokunoYumeto/OpenLogic-id/releases/download/id-olp-0722-20260814/00_OPENLOGIC_id_COMPLETE_LINKED_READER_OLP-0722.pdf",
+            "updated_at_utc": "2026-08-14T11:20:42Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "01_OPENLOGIC_id_EDITABLE_SOURCES_OLP-0722.zip",
+            "bytes": 1580716,
+            "digest": "sha256:492fd7369de367e2e748b0cbac8ba9a4c8c624f2a756a8943de445b9650283ed",
+            "url": "https://github.com/KokunoYumeto/OpenLogic-id/releases/download/id-olp-0722-20260814/01_OPENLOGIC_id_EDITABLE_SOURCES_OLP-0722.zip",
+            "updated_at_utc": "2026-08-14T11:20:41Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "02_OPENLOGIC_id_EVIDENCE_AND_PROVENANCE_OLP-0722.zip",
+            "bytes": 2000807,
+            "digest": "sha256:273f790b9ddfaade9a6388c0d8cbd8b89006fca8f8c0da89cb2b5afcf1ae9441",
+            "url": "https://github.com/KokunoYumeto/OpenLogic-id/releases/download/id-olp-0722-20260814/02_OPENLOGIC_id_EVIDENCE_AND_PROVENANCE_OLP-0722.zip",
+            "updated_at_utc": "2026-08-14T11:20:41Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          },
+          {
+            "name": "03_OPENLOGIC_id_SHA256_MANIFEST_OLP-0722.txt",
+            "bytes": 401,
+            "digest": "sha256:d5b2f18fb24fd5469dafcb9ab91717b04a62d0fb437a68984b2c94ac254e9c60",
+            "url": "https://github.com/KokunoYumeto/OpenLogic-id/releases/download/id-olp-0722-20260814/03_OPENLOGIC_id_SHA256_MANIFEST_OLP-0722.txt",
+            "updated_at_utc": "2026-08-14T11:20:41Z",
+            "digest_authority": "GitHub release API; no asset-byte download or rehash in this baseline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A00_A10_A20_en",
+      "repository": "openstax/osbooks-prealgebra-bundle",
+      "url": "https://github.com/openstax/osbooks-prealgebra-bundle",
+      "materials": [
+        "A00",
+        "A10",
+        "A20"
+      ],
+      "affected_language_ranks": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "38cae454e644abf9f0a623e876994553881597c9",
+      "head_committed_at_utc": "2026-06-29T23:52:34Z",
+      "head_summary": "errata 29593",
+      "prior_pin": "38cae454e644abf9f0a623e876994553881597c9",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/openstax/osbooks-prealgebra-bundle/commits/main",
+      "releases_check": "not queried in bounded canonical-source baseline",
+      "latest_published_release": null
+    },
+    {
+      "id": "A30_en",
+      "repository": "openstax/osbooks-college-algebra-bundle",
+      "url": "https://github.com/openstax/osbooks-college-algebra-bundle",
+      "materials": [
+        "A30"
+      ],
+      "affected_language_ranks": [
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "789b54099106b071d1d32bfcee454fed72eb4768",
+      "head_committed_at_utc": "2026-06-12T23:59:58Z",
+      "head_summary": "errata 28950",
+      "prior_pin": "789b54099106b071d1d32bfcee454fed72eb4768",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/openstax/osbooks-college-algebra-bundle/commits/main",
+      "releases_check": "not queried in bounded canonical-source baseline",
+      "latest_published_release": null
+    },
+    {
+      "id": "B10_en",
+      "repository": "oscarlevin/discrete-book",
+      "url": "https://github.com/oscarlevin/discrete-book",
+      "materials": [
+        "B10"
+      ],
+      "affected_language_ranks": [
+        3,
+        6,
+        8
+      ],
+      "default_branch": "main",
+      "default_branch_commit": "730e5e3b96094148818603041222df6f3d1d96ba",
+      "head_committed_at_utc": "2026-08-08T17:19:43Z",
+      "head_summary": "fix heading levels for investigate",
+      "prior_pin": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": false,
+      "head_evidence": "https://api.github.com/repos/oscarlevin/discrete-book/commits/main",
+      "releases_check": "not queried in bounded canonical-source baseline",
+      "latest_published_release": null,
+      "interpretation": "Default main diverges from the pinned canonical witness; comparison commits predate the prior baseline date. This is not evidence of a new post-baseline upstream change or authorization to replace the pinned edition."
+    },
+    {
+      "id": "B20_en",
+      "repository": "arechnitzer/CLP1",
+      "url": "https://github.com/arechnitzer/CLP1",
+      "materials": [
+        "B20"
+      ],
+      "affected_language_ranks": [
+        5,
+        6
+      ],
+      "default_branch": "master",
+      "default_branch_commit": "9f0295936d395bec68dab7915057135a2c7f0414",
+      "head_committed_at_utc": "2024-08-15T20:46:24Z",
+      "head_summary": "Merge pull request #37 from arechnitzer/dep_fixes",
+      "prior_pin": "9f0295936d395bec68dab7915057135a2c7f0414",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/arechnitzer/CLP1/commits/master",
+      "releases_check": "not queried in bounded canonical-source baseline",
+      "latest_published_release": null
+    },
+    {
+      "id": "B60_en",
+      "repository": "arechnitzer/CLP4",
+      "url": "https://github.com/arechnitzer/CLP4",
+      "materials": [
+        "B60"
+      ],
+      "affected_language_ranks": [
+        5
+      ],
+      "default_branch": "master",
+      "default_branch_commit": "6743bab1648c442c4efdf06f4b05be1bfc83db72",
+      "head_committed_at_utc": "2024-08-15T20:52:49Z",
+      "head_summary": "Merge pull request #38 from arechnitzer/remde",
+      "prior_pin": "6743bab1648c442c4efdf06f4b05be1bfc83db72",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://api.github.com/repos/arechnitzer/CLP4/commits/master",
+      "releases_check": "not queried in bounded canonical-source baseline",
+      "latest_published_release": null
+    },
+    {
+      "id": "B40_en",
+      "repository": "jim.hefferon/linear-algebra",
+      "url": "https://gitlab.com/jim.hefferon/linear-algebra",
+      "materials": [
+        "B40"
+      ],
+      "affected_language_ranks": [
+        5,
+        6,
+        8
+      ],
+      "default_branch": "master",
+      "default_branch_commit": "df2262e089a02651c127f1dd12649c4622ee1383",
+      "head_committed_at_utc": "2022-11-07T18:07:05Z",
+      "head_summary": "fit cover for Amazon",
+      "prior_pin": "df2262e089a02651c127f1dd12649c4622ee1383",
+      "prior_pin_date": "2026-08-30",
+      "head_matches_prior_pin": true,
+      "head_evidence": "https://gitlab.com/api/v4/projects/jim.hefferon%2Flinear-algebra/repository/commits/master",
+      "releases_check": "not queried in bounded canonical-source baseline"
+    }
+  ],
+  "prior_source_asset_checks": [
+    {
+      "id": "A00",
+      "tag": "prealgebra-2e-id-ID-v0.2.7",
+      "name": "prealgebra-2e-id-ID-v0.2.7-source.zip",
+      "prior_bytes": 79438504,
+      "prior_sha256": "ec622c4b0be5693a798453ee6d1a6ae21cdf978f26852253b5cbb5d88a484fee",
+      "current_api_bytes": 79438504,
+      "current_api_digest": "sha256:ec622c4b0be5693a798453ee6d1a6ae21cdf978f26852253b5cbb5d88a484fee",
+      "matches_prior_size_and_digest": true,
+      "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID/releases/download/prealgebra-2e-id-ID-v0.2.7/prealgebra-2e-id-ID-v0.2.7-source.zip",
+      "asset_bytes_reverified": false
+    },
+    {
+      "id": "A10",
+      "tag": "v1.0.2",
+      "name": "elementary-algebra-2e-id-ID-1.0.2-source.zip",
+      "prior_bytes": 6397865,
+      "prior_sha256": "6f04e88387e8d4e6e710dddcebb8d41e952a315231d7e203d62170c6ad9f3456",
+      "current_api_bytes": 6397865,
+      "current_api_digest": "sha256:6f04e88387e8d4e6e710dddcebb8d41e952a315231d7e203d62170c6ad9f3456",
+      "matches_prior_size_and_digest": true,
+      "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/elementary-algebra-2e-id-ID-1.0.2-source.zip",
+      "asset_bytes_reverified": false
+    },
+    {
+      "id": "A20",
+      "tag": "v0.3.0-wip",
+      "name": "openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-editable-source.zip",
+      "prior_bytes": 106658915,
+      "prior_sha256": "a9c53c328be944e12b707d5cb16e289755eff0c603d1652bfca13dd572e780d7",
+      "current_api_bytes": 106658915,
+      "current_api_digest": "sha256:a9c53c328be944e12b707d5cb16e289755eff0c603d1652bfca13dd572e780d7",
+      "matches_prior_size_and_digest": true,
+      "url": "https://github.com/KokunoYumeto/openstax-intermediate-algebra-2e-id/releases/download/v0.3.0-wip/openstax-intermediate-algebra-2e-id-ID-0.3.0-wip-editable-source.zip",
+      "asset_bytes_reverified": false
+    },
+    {
+      "id": "A30",
+      "tag": "v0.1.0-alpha.58-reader.1",
+      "name": "precalculus-2e-id-ID-0.1.0-alpha.58-reader.1-source-core.zip",
+      "prior_bytes": 69355910,
+      "prior_sha256": "9f8ba5e44bd4d4794c559de85a5449f3b4bd279d153801b94f3d39a471f5a0ca",
+      "current_api_bytes": 69355910,
+      "current_api_digest": "sha256:9f8ba5e44bd4d4794c559de85a5449f3b4bd279d153801b94f3d39a471f5a0ca",
+      "matches_prior_size_and_digest": true,
+      "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/releases/download/v0.1.0-alpha.58-reader.1/precalculus-2e-id-ID-0.1.0-alpha.58-reader.1-source-core.zip",
+      "asset_bytes_reverified": false
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "allocation",
+      "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access/compare/2c9c129c3e693bec5a0e387c76b1c270fccf399c...975a3435f611792ef30a0908e0ba54b23a0e229a",
+      "status": "ahead",
+      "ahead_by": 1,
+      "behind_by": 0,
+      "total_commits": 1,
+      "returned_changed_file_count": 1,
+      "changed_file_list_may_be_truncated": false,
+      "commits": [
+        {
+          "sha": "975a3435f611792ef30a0908e0ba54b23a0e229a",
+          "committed_at_utc": "2026-08-30T21:06:32Z",
+          "summary": "Add readable HTML paper surface"
+        }
+      ],
+      "selected_changed_paths": [
+        "index.html"
+      ]
+    },
+    {
+      "id": "catalog",
+      "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/compare/2f0e52280791854f904475e5f92392f52745ea24...c9e4599866af2593799403c4a8ee6d616dbf5605",
+      "status": "ahead",
+      "ahead_by": 17,
+      "behind_by": 0,
+      "total_commits": 17,
+      "returned_changed_file_count": 194,
+      "changed_file_list_may_be_truncated": false,
+      "commits": [
+        {
+          "sha": "61c5e3326c2990b330b6e173a230fe3f5d0b5c8a",
+          "committed_at_utc": "2026-08-30T20:18:11Z",
+          "summary": "Publish v0.62.11 D110 release provenance"
+        },
+        {
+          "sha": "ec576caa27e08a0442ea6abac5be036e79b9a768",
+          "committed_at_utc": "2026-08-30T22:33:49Z",
+          "summary": "Publish modular backend method and learner capsule"
+        },
+        {
+          "sha": "590f25ebf033038425b8b84564bc81dd620edb38",
+          "committed_at_utc": "2026-08-30T22:38:12Z",
+          "summary": "Record D20 public source readback and release builder"
+        },
+        {
+          "sha": "04c3eda3143e9891680da39b0d1028a58fb142bd",
+          "committed_at_utc": "2026-08-30T22:54:40Z",
+          "summary": "Record v0.62.12 GitHub public readback"
+        },
+        {
+          "sha": "15d37eea2f84ea7c4e856e81af0c4411828713b4",
+          "committed_at_utc": "2026-08-30T23:10:52Z",
+          "summary": "Record v0.62.12 Zenodo method capsule release"
+        },
+        {
+          "sha": "eac2871285544675533ce06b6f369f21f1cc0b0b",
+          "committed_at_utc": "2026-08-31T01:40:31Z",
+          "summary": "Integrate completed Lebl family into curriculum backend"
+        },
+        {
+          "sha": "6f21a2251d281bd99c9bb4963e5e210329626eab",
+          "committed_at_utc": "2026-08-31T10:38:39Z",
+          "summary": "Integrate modular backend and learner hub for v0.62.13"
+        },
+        {
+          "sha": "9718abd18f381b712e74d0673c71c4a4c66946ea",
+          "committed_at_utc": "2026-08-31T10:41:20Z",
+          "summary": "Fix anonymous predecessor content negotiation"
+        },
+        {
+          "sha": "368486d193d09872e1e49a15699df438fe31efb8",
+          "committed_at_utc": "2026-08-31T10:44:46Z",
+          "summary": "Track A00 learner assessment schema mirrors"
+        },
+        {
+          "sha": "23e15038112d3a9cd3b1102dc0b6bb747824b730",
+          "committed_at_utc": "2026-08-31T10:46:23Z",
+          "summary": "Validate composed JSON schemas in release inputs"
+        },
+        {
+          "sha": "ed273e06aafc8db850ef9e82cce1d97e95f8e6ae",
+          "committed_at_utc": "2026-08-31T10:49:04Z",
+          "summary": "Validate source archive modes portably"
+        },
+        {
+          "sha": "a5ad4789acd4e2a68b7bcb6c93733b4099bd0075",
+          "committed_at_utc": "2026-08-31T10:51:11Z",
+          "summary": "Distinguish bearer code from credential material"
+        },
+        {
+          "sha": "864e579a8f5ed46ea6cd5f37b97cf88a26399f39",
+          "committed_at_utc": "2026-08-31T10:53:20Z",
+          "summary": "Avoid privacy scanner self-matches"
+        },
+        {
+          "sha": "d04490e7dce880a5ad88cc50497b86d380f7fde2",
+          "committed_at_utc": "2026-08-31T10:57:54Z",
+          "summary": "Validate Git source archives across platforms"
+        },
+        {
+          "sha": "8e03fe1f193ecfbe7ee26b670b62e732dd66481f",
+          "committed_at_utc": "2026-08-31T11:20:39Z",
+          "summary": "Fix resumable GitHub draft validation"
+        },
+        {
+          "sha": "4ab6eb6b270dc0a32512dad3f998653c336d8492",
+          "committed_at_utc": "2026-08-31T11:27:07Z",
+          "summary": "Fix empty GitHub asset inventory checks"
+        },
+        {
+          "sha": "c9e4599866af2593799403c4a8ee6d616dbf5605",
+          "committed_at_utc": "2026-08-31T12:41:57Z",
+          "summary": "Fix capsule fallback, evidence truth and public course routes"
+        }
+      ],
+      "selected_changed_paths": [
+        "MODULAR_BACKEND_METHOD_AND_FINDINGS_V1.md",
+        "backend/authority/learner-delivery-overrides-v1.json",
+        "backend/authority/learner-delivery-v1.json",
+        "backend/authority/v23-adapter-index-v1.json",
+        "backend/course-capsule-v1/POST_RELEASE_CORRECTIONS_20260831.md",
+        "backend/course-capsule-v1/README.md",
+        "backend/v2.3/extensions/a00-o001-assessments-v0.1.0/assessment-capability-v0.1.0.json",
+        "backend/v2.3/extensions/a00-o001-assessments-v0.1.0/schema/assessment-capability-manifest-v0.1.schema.json",
+        "backend/v2.3/schema/assessment-capability-manifest-v0.1.schema.json",
+        "docs/data/course-capsule-v1/README.md",
+        "docs/data/learner-delivery-v1.json",
+        "docs/data/v23-adapter-index-v1.json",
+        "docs/learner-delivery.js",
+        "docs/schema/v1/learner-delivery-v1.schema.json",
+        "docs/schema/v1/v23-adapter-index-v1.schema.json",
+        "schemas/v1/learner-delivery-v1.schema.json",
+        "schemas/v1/v23-adapter-index-v1.schema.json",
+        "scripts/build-learner-delivery-v1.mjs"
+      ]
+    },
+    {
+      "id": "A30",
+      "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/compare/3209a5a2dea18c2fc527c5ea41b7dd2195076e40...a16de3097f773ee880c75989773776c16cd77868",
+      "status": "ahead",
+      "ahead_by": 4,
+      "behind_by": 0,
+      "total_commits": 4,
+      "returned_changed_file_count": 4,
+      "changed_file_list_may_be_truncated": false,
+      "commits": [
+        {
+          "sha": "5bc72fa714273da573830b966f8c9f39ed29c171",
+          "committed_at_utc": "2026-08-31T03:01:14Z",
+          "summary": "Update README.md for reader checkpoint"
+        },
+        {
+          "sha": "0378ded75f5b98aa46e9a05dac90561558ca82eb",
+          "committed_at_utc": "2026-08-31T03:01:15Z",
+          "summary": "Update LICENSE.txt for reader checkpoint"
+        },
+        {
+          "sha": "4ac6fc8f0921aff1ca0665c3b562e509e10d7c26",
+          "committed_at_utc": "2026-08-31T03:01:16Z",
+          "summary": "Update RELEASE_MANIFEST.json for reader checkpoint"
+        },
+        {
+          "sha": "a16de3097f773ee880c75989773776c16cd77868",
+          "committed_at_utc": "2026-08-31T03:01:18Z",
+          "summary": "Update SHA256SUMS.txt for reader checkpoint"
+        }
+      ],
+      "selected_changed_paths": [
+        "LICENSE.txt",
+        "README.md",
+        "RELEASE_MANIFEST.json",
+        "SHA256SUMS.txt"
+      ]
+    },
+    {
+      "id": "B10_en",
+      "url": "https://github.com/oscarlevin/discrete-book/compare/82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799...730e5e3b96094148818603041222df6f3d1d96ba",
+      "status": "diverged",
+      "ahead_by": 23,
+      "behind_by": 1,
+      "total_commits": 23,
+      "returned_changed_file_count": 300,
+      "changed_file_list_may_be_truncated": true,
+      "commits": [
+        {
+          "sha": "dc19a39559d676809eca947a11a29f00c314422f",
+          "committed_at_utc": "2025-09-05T13:18:55Z",
+          "summary": "Clarify quantifier rule; rebuild"
+        },
+        {
+          "sha": "ff8f23c8873ecc19b3f0f33f5e295bc76cd993df",
+          "committed_at_utc": "2025-09-09T21:28:18Z",
+          "summary": "fix webwork problem"
+        },
+        {
+          "sha": "5c08a696a3cf334af22a451569ceb4ea7ea6cc51",
+          "committed_at_utc": "2025-09-15T19:51:16Z",
+          "summary": "regenerate webwork to address double labeling bug"
+        },
+        {
+          "sha": "8ec4b1cf09ab19a51380058e6cb6a53f836250c2",
+          "committed_at_utc": "2025-09-17T01:19:41Z",
+          "summary": "regenerate webwork to address double labeling bug - more titles"
+        },
+        {
+          "sha": "1221b74cc14326d4f5425ef3f3d1d4f5a784b785",
+          "committed_at_utc": "2025-09-22T16:36:45Z",
+          "summary": "typo in rq for sec_gt-paths"
+        },
+        {
+          "sha": "5b206a4f97687126e1ca6e456e64990cb807ac02",
+          "committed_at_utc": "2025-10-07T14:24:52Z",
+          "summary": "fix ww problem"
+        },
+        {
+          "sha": "debe4291f82e0a3433d9bdb98d8e6ec38283fa51",
+          "committed_at_utc": "2025-10-07T14:24:59Z",
+          "summary": "Merge branch 'main' of https://github.com/oscarlevin/discrete-book"
+        },
+        {
+          "sha": "899dc1e18278a94d0c5e9af893402b89043ae394",
+          "committed_at_utc": "2025-10-08T01:51:08Z",
+          "summary": "regenerate webwork"
+        },
+        {
+          "sha": "5527fb30f16e93361b6d6f2d6d123314bdf4c613",
+          "committed_at_utc": "2025-10-13T06:03:23Z",
+          "summary": "Update sec_gt-relations.ptx"
+        },
+        {
+          "sha": "ba62c315f410467912c60b8e53d19723161b6f6d",
+          "committed_at_utc": "2025-10-26T00:06:59Z",
+          "summary": "Fix typo"
+        },
+        {
+          "sha": "fd62d6e3dec1cb7be4ababf18d34ca17e7367ab2",
+          "committed_at_utc": "2026-01-28T15:41:43Z",
+          "summary": "fix webwork problem"
+        },
+        {
+          "sha": "20d17dda0628e4c6848548b604a0bce8167a8265",
+          "committed_at_utc": "2026-01-28T15:41:48Z",
+          "summary": "Merge branch 'main' of https://github.com/oscarlevin/discrete-book"
+        },
+        {
+          "sha": "1d99ca0e5adabb7c5466d8ead342e15303d3ceb3",
+          "committed_at_utc": "2026-01-28T22:20:36Z",
+          "summary": "fix webwork problem"
+        },
+        {
+          "sha": "2cd511cb64f65d80707ef69109f2113acdfd7b2d",
+          "committed_at_utc": "2026-01-29T19:45:19Z",
+          "summary": "update webwork"
+        },
+        {
+          "sha": "e83a712bc66425ae9679d06498f7bff31c4f9dd2",
+          "committed_at_utc": "2026-02-06T14:20:06Z",
+          "summary": "Typo fix in graph coloring exercise"
+        },
+        {
+          "sha": "3528d28d624f4ab8f581f08e2402f93d772333a3",
+          "committed_at_utc": "2026-02-06T14:25:52Z",
+          "summary": "Fix preface typo: change 3rd Edition to 4th Edition"
+        },
+        {
+          "sha": "d5b52aba0573353960a5f60d911be62c34728355",
+          "committed_at_utc": "2026-02-06T14:25:52Z",
+          "summary": "Update source/frontmatter.ptx"
+        },
+        {
+          "sha": "4465a0e8b638395a1c74b45bbf09532cbfffa58b",
+          "committed_at_utc": "2026-02-06T14:25:52Z",
+          "summary": "Update source/frontmatter.ptx"
+        },
+        {
+          "sha": "0e7e7e7a153fbaec463ce8b252dc35d48c646ff2",
+          "committed_at_utc": "2026-02-06T15:17:54Z",
+          "summary": "fix webwork problems"
+        },
+        {
+          "sha": "120852ca730452006257c74b8dc04eeaf2ed0b0a",
+          "committed_at_utc": "2026-02-20T15:13:13Z",
+          "summary": "fix webwork problems"
+        },
+        {
+          "sha": "3a7345749f5b687435711c0a7896f5b194ac64dd",
+          "committed_at_utc": "2026-02-20T15:17:42Z",
+          "summary": "fix webwork problems"
+        },
+        {
+          "sha": "27cd60ff6a6ef83f9da01697b4bb0230c82bbaa5",
+          "committed_at_utc": "2026-03-26T00:42:55Z",
+          "summary": "Fix typo"
+        },
+        {
+          "sha": "730e5e3b96094148818603041222df6f3d1d96ba",
+          "committed_at_utc": "2026-08-08T17:19:43Z",
+          "summary": "fix heading levels for investigate"
+        }
+      ],
+      "selected_changed_paths": []
+    }
+  ],
+  "research_activity": {
+    "repository": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access",
+    "branches": [
+      {
+        "name": "codex/language-allocation-handoff-2026-08-31",
+        "sha": "bb400fc7e85165ceb2c517cb2ac5ca651981a492",
+        "committed_at_utc": "2026-08-31T00:52:28Z"
+      },
+      {
+        "name": "main",
+        "sha": "975a3435f611792ef30a0908e0ba54b23a0e229a",
+        "committed_at_utc": "2026-08-30T21:06:32Z"
+      }
+    ],
+    "branch_page_has_more": false,
+    "pull_requests": [],
+    "issue_count": 0,
+    "issues": [],
+    "pull_request_page_has_more": false,
+    "issue_page_has_more": false,
+    "limits": {
+      "branches": 100,
+      "pull_requests": 30,
+      "issues": 30
+    },
+    "interpretation": "Only index.html was added after the initial research pin; paper/data source files were unchanged in the default-branch comparison. No newer default-branch commit beyond the already known handoff base, and no issues or pull requests observed. The coordinator handoff branch is not a research-priority update."
+  },
+  "source_update_decisions": [
+    {
+      "id": "A30-67",
+      "status": "candidate update; not adopted by workers",
+      "owner": "A30-consuming language owners",
+      "affected_language_ranks": [
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "action": "Compare the nine newly covered modules and selected existing witnesses before choosing a release migration; retain original pin and provenance until an explicit per-language decision."
+    },
+    {
+      "id": "A00-assessment-adapter",
+      "status": "new central capability observed; owner claims not replayed",
+      "owner": "coordinator and A00-consuming language owners",
+      "affected_language_ranks": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        10
+      ],
+      "action": "Evaluate module+native_id assessment bindings and explicit solution-gap records for diagnostics/companions; do not copy missing solutions or replace course-native sources."
+    },
+    {
+      "id": "catalog-post-release",
+      "status": "live source is newer than published v0.62.13 snapshot",
+      "owner": "coordinator",
+      "action": "Use commit c9e4599866af2593799403c4a8ee6d616dbf5605 for current method/capsule correction references; do not claim published source archive at 4ab6eb6b270dc0a32512dad3f998653c336d8492 contains these corrections."
+    },
+    {
+      "id": "B10-canonical-divergence",
+      "status": "historical pin difference newly recorded in this monitor",
+      "owner": "B10-consuming language owners",
+      "affected_language_ranks": [
+        3,
+        6,
+        8
+      ],
+      "action": "Keep selected canonical edition pinned. Inspect only relevant source corrections when translating affected units; do not blindly rebase to default main."
+    }
+  ],
+  "limitations": [
+    "Release lists were bounded to the first three entries for Indonesian repositories; drafts were excluded and no unpublished draft metadata is included.",
+    "Source/backend assets are identified from API digests or pinned publisher checksum text, not bulk-downloaded, extracted or rehashed here.",
+    "Canonical English repositories were checked by default-branch commit; their release feeds were not exhaustively inventoried.",
+    "The B10 English compare response reached the 300-file API limit; full changed-file coverage is not claimed.",
+    "AX and MV/SB assignments remain catalog/crosswalk responsibilities; this baseline does not invent separate upstream repository mappings.",
+    "Method and capability counts are producer-reported facts from selected committed text/JSON, not independently rerun backend or learning-quality validations.",
+    "No worker adoption, browser route validation, mathematical source audit or full remote-state completeness is implied."
+  ],
+  "rate_limits": {
+    "graphql_observation": {
+      "remaining": 4974,
+      "reset_at_utc": "2026-08-31T13:27:52Z",
+      "query_cost": 1
+    },
+    "later_rate_limit_endpoint": {
+      "core_remaining": 5000,
+      "graphql_remaining": 5000
+    },
+    "interpretation": "No rate-limit error observed. Endpoint counters differed between requests; retained as observations, not assumed cumulative request accounting."
+  },
+  "evidence_documents": [
+    {
+      "id": "A30-manifest",
+      "url": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id/blob/a16de3097f773ee880c75989773776c16cd77868/RELEASE_MANIFEST.json"
+    },
+    {
+      "id": "catalog-method",
+      "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/blob/c9e4599866af2593799403c4a8ee6d616dbf5605/MODULAR_BACKEND_METHOD_AND_FINDINGS_V1.md"
+    },
+    {
+      "id": "catalog-post-release",
+      "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/blob/c9e4599866af2593799403c4a8ee6d616dbf5605/backend/course-capsule-v1/POST_RELEASE_CORRECTIONS_20260831.md"
+    },
+    {
+      "id": "A00-assessment-capability",
+      "url": "https://github.com/KokunoYumeto/program-matematika-indonesia/blob/c9e4599866af2593799403c4a8ee6d616dbf5605/backend/v2.3/extensions/a00-o001-assessments-v0.1.0/assessment-capability-v0.1.0.json"
+    }
+  ]
+}

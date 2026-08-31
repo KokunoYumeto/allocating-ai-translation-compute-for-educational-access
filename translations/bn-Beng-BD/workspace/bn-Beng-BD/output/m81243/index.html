@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="bn-Beng-BD"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>শূন্যসহ স্বাভাবিক সংখ্যার পরিচয়</title><style>
+@font-face{font-family:"Noto Sans Bengali";src:url("../../assets/NumeracyBangla.ttf") format("truetype");font-display:swap}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6f5f0;color:#172e35;font:20px/1.8 "Noto Sans Bengali","Nirmala UI",sans-serif}
+main{max-width:960px;margin:auto;background:white;padding:2rem 3rem}header{border-bottom:4px solid #226e65;padding-bottom:1rem}h1{font-size:2rem;line-height:1.5}h2{font-size:1.5rem;border-top:2px solid #b4cfc9;padding-top:1rem;margin-top:2rem}h3{font-size:1.15rem;color:#215b53;margin:1.4rem 0 .7rem}p{margin:.65rem 0}li{margin:.8rem 0}a{color:#125448;text-underline-offset:.2em}a:focus{outline:3px solid #bc6900}table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{border:1px solid #698481;padding:.5rem;text-align:left}th{background:#edf5f2}caption{text-align:left;font-weight:bold}.notice,aside{background:#f0f5f3;border-left:4px solid #426d64;padding:.8rem 1rem;margin:1.2rem 0}.kicker,.source-label{font-size:.85rem;color:#405655}.media-description{display:block;border:1px dashed #698481;padding:.6rem;margin:1rem 0}.numberline{word-spacing:.35em;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}math{font-size:1em}figure{margin:1rem 0}dfn{font-style:normal;font-weight:bold}.skip{display:block;padding:.5rem}footer{border-top:2px solid #698481;margin-top:3rem;padding-top:1rem;font-size:.85rem;overflow-wrap:anywhere}nav ul{padding-left:1.5rem}nav li{margin:.2rem 0}
+@media(max-width:600px){body{font-size:18px}main{padding:1rem}th,td{padding:.3rem}h1{font-size:1.65rem}}
+@media print{@page{size:A4;margin:18mm}body{background:white;font-size:12pt;color:black}main{padding:0;max-width:none}.skip{display:none}h1,h2,h3{break-after:avoid}tr,figure{break-inside:avoid}a{color:black}section{orphans:3;widows:3}}
+
+.circled{list-style:none}dd{margin-bottom:1rem}</style></head><body><main><header><p>bn-Beng-BD · A00 · m81243 · পূর্ণ খসড়া</p><h1>শূন্যসহ স্বাভাবিক সংখ্যার পরিচয়</h1><nav aria-label="অনুবাদ ও সহায়িকা"><a href="#bd-m81243-objectives">শেখার লক্ষ্য</a> · <a href="#bd-m81243-glossary">শব্দার্থ</a> · <a href="../U02E/index.html#bd-u02e-answers">অনুশীলনের সব পূর্ণ উত্তর</a></nav></header><aside><p>এটি সম্পূর্ণ উৎস-মডিউলের বিশ্বস্ত অনুবাদের খসড়া, শিশুবান্ধব সংক্ষিপ্ত পাঠ নয়। উৎসের সংখ্যা, একক, গঠন, সব অনুশীলন এবং দেওয়া সমাধান রাখা হয়েছে। সব 58টি শেষের অনুশীলনের অতিরিক্ত পূর্ণ উত্তর আলাদা সহায়িকায় আছে। পুরোনো জনসংখ্যা ও আপেক্ষিক সময় উৎসের প্রেক্ষাপট; বর্তমান তথ্য নয়।</p><p>পাঠের সহজ রূপ ও নির্দেশনামূলক উদাহরণের বাড়তি ব্যাখ্যা: <a href="../u01-number-sense.html">U01</a>, <a href="../U02A/index.html">U02A</a>, <a href="../U02B/index.html">U02B</a>, <a href="../U02C/index.html">U02C</a>, <a href="../U02D/index.html">U02D</a>। বাংলাদেশের শিক্ষকের পর্যালোচনা এবং এই পূর্ণ মডিউলের চাক্ষুষ/PDF যাচাই এখনও বাকি।</p></aside><section id="bd-m81243-objectives"><h2>শেখার লক্ষ্য</h2><p id="para-00001">এই অংশ শেষে তুমি পারবে:</p>
+<ul id="list-00001">
+<li>স্বাভাবিক সংখ্যা ও শূন্যসহ স্বাভাবিক সংখ্যা চিনতে</li>
+<li>মডেলের সাহায্যে শূন্যসহ স্বাভাবিক সংখ্যা দেখাতে</li>
+<li>একটি অঙ্কের স্থান ও স্থানীয় মান চিনতে</li>
+<li>স্থানীয় মান ব্যবহার করে শূন্যসহ স্বাভাবিক সংখ্যা কথায় লিখতে</li>
+<li>স্থানীয় মান ব্যবহার করে শূন্যসহ স্বাভাবিক সংখ্যা অঙ্কে লিখতে</li>
+<li>শূন্যসহ স্বাভাবিক সংখ্যার আসন্ন মান নির্ণয় করতে</li>
+</ul></section><section id="fs-id1830385"><h3>স্বাভাবিক সংখ্যা ও শূন্যসহ স্বাভাবিক সংখ্যা চিনি</h3><p id="fs-id2325869">বীজগণিত শেখা অনেকটা ভাষা শেখার মতো। প্রথমে কিছু মৌলিক শব্দ শিখি। তারপর ধীরে ধীরে আরও শব্দ যোগ করি। শব্দগুলো সহজ মনে না হওয়া পর্যন্ত নিয়মিত অনুশীলন করা দরকার। যত বেশি ব্যবহার করি, শব্দগুলো তত পরিচিত হয়ে ওঠে।</p>
+<p id="fs-id2269442">বীজগণিতে কথা ও ধারণা প্রকাশ করতে সংখ্যা ও প্রতীক ব্যবহার করা হয়। প্রথমে সংখ্যা দেখি। বস্তু গুনতে আমরা যেসব সংখ্যা ব্যবহার করি, সেগুলোই বীজগণিতের সবচেয়ে মৌলিক সংখ্যা: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mo>…</mo></mrow></math> ইত্যাদি। এগুলোর নাম <dfn id="term-00001">স্বাভাবিক সংখ্যা</dfn>। ‘…’ চিহ্নটির নাম ত্রিবিন্দু। এর অর্থ ‘ইত্যাদি’, অর্থাৎ ধারাটি শেষ না হয়ে চলতে থাকে। গণনার এই সংখ্যাগুলোকে স্বাভাবিক সংখ্যা বলা হয়।</p>
+<aside id="fs-id2631065">
+<h3>স্বাভাবিক সংখ্যা</h3>
+<p id="fs-id1565524">স্বাভাবিক সংখ্যার শুরু <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> থেকে। এরপর সংখ্যা চলতে থাকে।</p>
+<div id="fs-id1601874" class="unnumbered"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mtext>5…</mtext></mrow></math></div></aside>
+<p id="fs-id2741297">স্বাভাবিক সংখ্যা ও শূন্যসহ স্বাভাবিক সংখ্যা দেখানো যায় একটি <dfn id="term-00002">সংখ্যারেখায়</dfn>। উদাহরণ দেখো <a href="#CNX_BMath_Figure_01_01_001">চিত্র 001</a>.</p>
+<figure id="CNX_BMath_Figure_01_01_001"><span id="fs-id2316516" class="media-description">চিত্রের বর্ণনা: সমান ব্যবধানে 0 থেকে 6 পর্যন্ত সংখ্যারেখা। প্রতি ধাপে 1 করে বাড়ে। ডানমুখী তিরে ‘বড়’ এবং বামমুখী তিরে ‘ছোট’ লেখা আছে।</span>
+
+<figcaption>সংখ্যারেখায় বাম থেকে ডানে গেলে সংখ্যা বাড়ে। ডান থেকে বামে গেলে সংখ্যা কমে।</figcaption></figure><p id="fs-id1410425">যে বিন্দুতে লেখা আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math>, সেই বিন্দুটিকে বলা হয় <dfn id="term-00003">মূলবিন্দু</dfn>। সমান ব্যবধানে বিন্দু বসানো আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math>-এর ডানে। বিন্দুগুলোতে স্বাভাবিক সংখ্যা লেখা আছে। কোনো বিন্দুর সঙ্গে যে সংখ্যাটি যুক্ত থাকে, সেটি ওই বিন্দুর <dfn id="term-00004">স্থানাঙ্ক</dfn>।</p>
+<p id="fs-id1383646">শূন্যের আবিষ্কার গণিতের ইতিহাসে একটি বড় অগ্রগতি। স্বাভাবিক সংখ্যার সঙ্গে শূন্য যোগ করে যে সংখ্যার সমষ্টি পাওয়া যায়, তার নাম <dfn id="term-00005">শূন্যসহ স্বাভাবিক সংখ্যা</dfn>.</p>
+<aside id="fs-id2606982">
+<h3>শূন্যসহ স্বাভাবিক সংখ্যা</h3>
+<p id="fs-id1516323">শূন্য ও স্বাভাবিক সংখ্যাগুলো একসঙ্গে নিলে শূন্যসহ স্বাভাবিক সংখ্যার সমষ্টি গঠিত হয়।</p>
+<div id="fs-id2260967" class="unnumbered"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mtext>5…</mtext></mrow></math></div></aside>
+<p id="fs-id1904853">প্রথম কয়েকটি সংখ্যা লেখার সময় আমরা থেমেছি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math>-এ। এখানে লেখা হয়েছে কিছু <dfn class="no-emphasis" id="term-00006">স্বাভাবিক সংখ্যা</dfn> এবং <dfn class="no-emphasis" id="term-00007">শূন্যসহ স্বাভাবিক সংখ্যা</dfn>। ধারাটি বোঝাতে দরকার হলে আমরা আরও সংখ্যা লিখতে পারতাম।</p>
+<div id="fs-id1262372">
+<div id="fs-id1398237"><p class="source-label">উৎসের কাজ: fs-id1398237</p><div id="fs-id3413579">
+<p id="fs-id1393222">নিচের সংখ্যাগুলোর মধ্যে কোনগুলো <span class="token">ⓐ</span> স্বাভাবিক সংখ্যা? <span class="token">ⓑ</span> শূন্যসহ স্বাভাবিক সংখ্যা?</p><p id="fs-id1269630"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mn>3</mn><mo>,</mo><mn>5.2</mn><mo>,</mo><mn>15</mn><mo>,</mo><mn>105</mn></mrow></math></p>
+</div>
+<div id="fs-id2564359">
+<h3>সমাধান</h3>
+<ul id="fs-id2198081" class="circled"><li><span class="token">ⓐ</span> স্বাভাবিক সংখ্যার প্রথমটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo></mrow></math> তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> স্বাভাবিক সংখ্যা নয়। কিন্তু <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>,</mo><mn>15</mn><mo>,</mo><mspace width="0.2em"></mspace><mtext>এবং</mtext><mspace width="0.2em"></mspace><mn>105</mn></mrow></math> সবগুলোই স্বাভাবিক সংখ্যা।</li>
+<li><span class="token">ⓑ</span> শূন্যসহ স্বাভাবিক সংখ্যার মধ্যে থাকে স্বাভাবিক সংখ্যাগুলো ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>.</mo></mrow></math> এখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>15</mn><mo>,</mo><mspace width="0.2em"></mspace><mtext>এবং</mtext><mspace width="0.2em"></mspace><mn>105</mn></mrow></math> শূন্যসহ স্বাভাবিক সংখ্যা।</li></ul><p id="fs-id1952631">এখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5.2</mn></mrow></math> স্বাভাবিক সংখ্যাও নয়, শূন্যসহ স্বাভাবিক সংখ্যাও নয়। এই সংখ্যাগুলো নিয়ে পরে আলোচনা করব।</p>
+</div>
+</div></div>
+<aside id="fs-id2698269" class="try">
+<div id="fs-id3298473"><p class="source-label">উৎসের কাজ: fs-id3298473</p><div id="fs-id2210740">
+<p id="fs-id1587799">নিচের সংখ্যাগুলোর মধ্যে কোনগুলো <span class="token">ⓐ</span> স্বাভাবিক সংখ্যা এবং <span class="token">ⓑ</span> শূন্যসহ স্বাভাবিক সংখ্যা?</p><p id="fs-id1363233"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>,</mo><mn>2</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>11.8</mn><mo>,</mo><mn>241</mn><mo>,</mo><mn>376</mn></mrow></math></p>
+</div>
+<div id="fs-id2775154">
+<ul id="fs-id2425678"><li><span class="token">ⓐ</span> 2, 9, 241, 376</li>
+<li><span class="token">ⓑ</span> 0, 2, 9, 241, 376</li></ul></div>
+</div></aside>
+<aside id="fs-id1906330" class="try">
+<div id="fs-id1786026"><p class="source-label">উৎসের কাজ: fs-id1786026</p><div id="fs-id2812320">
+<p id="fs-id1409646">নিচের সংখ্যাগুলোর মধ্যে কোনগুলো <span class="token">ⓐ</span> স্বাভাবিক সংখ্যা এবং <span class="token">ⓑ</span> শূন্যসহ স্বাভাবিক সংখ্যা?</p><p id="fs-id2840506"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mn>7</mn><mo>,</mo><mn>8.8</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>201</mn></mrow></math></p>
+</div>
+<div id="fs-id1415724">
+<ul id="fs-id1960220"><li><span class="token">ⓐ</span> 7, 13, 201</li>
+<li><span class="token">ⓑ</span> 0, 7, 13, 201</li></ul></div>
+</div></aside>
+</section><section id="fs-id2340048"><h3>দল সাজিয়ে শূন্যসহ স্বাভাবিক সংখ্যা দেখাই</h3><p id="fs-id1862565">আমাদের সংখ্যা লেখার পদ্ধতির নাম <dfn id="term-00008">স্থানীয় মানভিত্তিক পদ্ধতি</dfn>। কারণ, কোনো সংখ্যায় একটি অঙ্কের মান নির্ভর করে অঙ্কটি কোন স্থানে আছে তার ওপর। উদাহরণ হিসেবে দুটি সংখ্যা দেখি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>537</mn></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>735</mn><mo>.</mo></mrow></math> একই অঙ্ক ব্যবহার করা হলেও সংখ্যা দুটির মান আলাদা। কারণ, ভিন্ন স্থানে আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>.</mo></mrow></math></p><p id="fs-id1461000">টাকা-পয়সা দিয়ে স্থানীয় মান বোঝা যায়। ধরা যাক, একটি মানিব্যাগে তিনটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$100</mtext></mrow></math>-এর নোট, সাতটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$10</mtext></mrow></math>-এর নোট এবং চারটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$1</mtext></mrow></math>-এর নোট আছে। পরিমাণগুলো দেখানো হয়েছে <a href="#CNX_BMath_Figure_01_01_002">চিত্র 002</a>। মানিব্যাগে মোট কত ডলার আছে?</p>
+<figure id="CNX_BMath_Figure_01_01_002"><span id="fs-id1302206" class="media-description">চিত্রের বর্ণনা: মার্কিন ডলারের তিন দল নোট। বাম থেকে: $100-এর 3টি নোট, 3 × $100 = $300; $10-এর 7টি নোট, 7 × $10 = $70; $1-এর 4টি নোট, 4 × $1 = $4।</span>
+</figure><p id="fs-id2243766">প্রতিটি ধরনের নোটের মোট মান বের করো। তারপর মানগুলো যোগ করো। মানিব্যাগে আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$374</mtext><mo>.</mo></mrow></math></p>
+<span id="fs-id2438560" class="media-description">চিত্রের বর্ণনা: ছবিতে $300 + $70 + $4 এবং নিচে $374। $300-এর 3, $70-এর 7 ও $4-এর 4 লাল রঙে আছে। তির দিয়ে ওই অঙ্কগুলোকে $374-এর 3, 7 ও 4-এর সঙ্গে যথাক্রমে যুক্ত করা হয়েছে।</span>
+<p id="fs-id865961">স্থানীয় মান বোঝাতে দশভিত্তিক ব্লকও ব্যবহার করা যায়। দেখো <a href="#CNX_BMath_Figure_01_01_004">চিত্র 004</a>। ব্লক দিয়ে শতক, দশক ও একক দেখানো যায়। লক্ষ করো, দশকের একটি দণ্ডে আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math>টি একক। শতকের একটি বর্গে আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math>টি দশক, অর্থাৎ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn></mrow></math>টি একক।</p>
+<figure id="CNX_BMath_Figure_01_01_004"><span id="fs-id2294051" class="media-description">চিত্রের বর্ণনা: তিনটি মডেল: একটি ছোট ব্লকের মান 1; 10টি ব্লকের একটি দণ্ডের মান 10; দৈর্ঘ্য ও প্রস্থে 10টি করে ব্লক নিয়ে তৈরি একটি বর্গের মান 100।</span>
+</figure><p id="fs-id2860981"><a href="#CNX_BMath_Figure_01_01_005">চিত্র 005</a>-এ দেখানো হয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>138</mn></mrow></math> সংখ্যাটি। ব্যবহার করা হয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক।</p>
+<figure id="CNX_BMath_Figure_01_01_005"><span id="fs-id1823977" class="media-description">চিত্রের বর্ণনা: 1টি শতকের বর্গ: 10 সারিতে প্রতি সারিতে 10টি ব্লক। 3টি দশকের দণ্ড: প্রতিটিতে 10টি ব্লক। সঙ্গে 8টি আলাদা এককের ব্লক।</span>
+
+<figcaption>স্থানীয় মানের সাহায্যে আমরা দেখাই সংখ্যাটির মান: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>138</mn><mo>.</mo></mrow></math></figcaption></figure><span id="fs-id2387933" class="media-description">চিত্রের বর্ণনা: ছবিতে 100 + 30 + 8 এবং নিচে 138। 100-এর 1, 30-এর 3 ও 8 লাল রঙে আছে। তির দিয়ে ওই অঙ্কগুলোকে 138-এর 1, 3 ও 8-এর সঙ্গে যথাক্রমে যুক্ত করা হয়েছে।</span>
+<table id="fs-id1714120" class="unnumbered"><caption>স্থানীয় মানের ছক</caption><thead><tr><th scope="col">অঙ্ক</th><th scope="col">স্থান</th><th scope="col">দলের সংখ্যা</th><th scope="col">প্রতি দলের মান</th><th scope="col">মোট মান</th></tr></thead><tbody><tr><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td><td>শতক</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn></mrow><mspace width="1em"></mspace></math></td></tr><tr><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td><td>দশক</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>30</mn></mrow><mspace width="1em"></mspace></math></td></tr><tr><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math></td><td>একক</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mspace width="0.5em"></mspace><mn>8</mn></mrow><mspace width="1em"></mspace></math></td></tr><tr><td></td><td></td><td></td><td></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>যোগফল = </mtext><mn>138</mn></mrow><mspace width="1em"></mspace></math></td></tr></tbody></table><div id="fs-id2222880">
+<div id="fs-id2908692"><p class="source-label">উৎসের কাজ: fs-id2908692</p><div id="fs-id2206322">
+<p id="fs-id2939641">স্থানীয় মানের সাহায্যে সংখ্যাটির মান বের করো। মডেলে ব্যবহার করা হয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক।</p>
+<span id="fs-id2482064" class="media-description">চিত্রের বর্ণনা: প্রতিটিতে 100টি ব্লক আছে এমন 2টি শতকের বর্গ, 10টি ব্লকের 1টি দশকের দণ্ড এবং 5টি আলাদা এককের ব্লক।</span>
+</div>
+<div id="fs-id1806167">
+<h3>সমাধান</h3>
+<p id="fs-id1249764">আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math>টি শতকের বর্গ। এগুলোর মোট মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>200</mn><mo>.</mo></mrow></math></p>
+<p id="fs-id1348273">আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math>টি দশকের দণ্ড। এর মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mo>.</mo></mrow></math></p>
+<p id="fs-id3302675">আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math>টি এককের ব্লক। এগুলোর মোট মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>.</mo></mrow></math><br/>
+<span id="fs-id2164193" class="media-description">চিত্রের বর্ণনা: ছবিতে 200 + 10 + 5 এবং নিচে 215। 200-এর 2, 10-এর 1 ও 5 লাল রঙে আছে। তির দিয়ে ওই অঙ্কগুলোকে 215-এর 2, 1 ও 5-এর সঙ্গে যথাক্রমে যুক্ত করা হয়েছে।</span></p>
+<table id="fs-id1785447" class="unnumbered"><caption>স্থানীয় মানের ছক</caption><thead><tr><th scope="col">অঙ্ক</th><th scope="col">স্থান</th><th scope="col">দলের সংখ্যা</th><th scope="col">প্রতি দলের মান</th><th scope="col">মোট মান</th></tr></thead><tbody><tr><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></td><td>শতক</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>200</mn></mrow><mspace width="1em"></mspace></math></td></tr><tr><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td><td>দশক</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow><mspace width="1em"></mspace></math></td></tr><tr><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math></td><td>একক</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mspace width="0.5em"></mspace><mn>5</mn></mrow><mspace width="1em"></mspace></math></td></tr><tr><td></td><td></td><td></td><td></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>215</mn></mrow><mspace width="1em"></mspace></math></td></tr></tbody></table><p id="fs-id1381620">এখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক দিয়ে দেখানো সংখ্যাটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>215</mn><mo>.</mo></mrow></math></p>
+</div>
+</div></div>
+<aside id="fs-id835824" class="try">
+<div id="fs-id1227376"><p class="source-label">উৎসের কাজ: fs-id1227376</p><div id="fs-id2652455">
+<p id="fs-id2784412">স্থানীয় মানের সাহায্যে সংখ্যাটির মান বের করো। মডেলে ব্যবহার করা হয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক।</p>
+<span id="fs-id4224006" class="media-description">চিত্রের বর্ণনা: 1টি শতকের বর্গে 100টি ব্লক, 7টি দশকের দণ্ডের প্রতিটিতে 10টি ব্লক এবং 6টি আলাদা এককের ব্লক।</span>
+</div>
+<div id="fs-id2609767">
+<p id="fs-id2851234">176</p>
+</div>
+</div></aside>
+<aside id="fs-id2269666" class="try">
+<div id="fs-id1983295"><p class="source-label">উৎসের কাজ: fs-id1983295</p><div id="fs-id1728004">
+<p id="fs-id2111126">স্থানীয় মানের সাহায্যে সংখ্যাটির মান বের করো। মডেলে ব্যবহার করা হয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক।</p>
+<span id="fs-id1841537" class="media-description">চিত্রের বর্ণনা: 2টি শতকের বর্গের প্রতিটিতে 100টি ব্লক, 3টি দশকের দণ্ডের প্রতিটিতে 10টি ব্লক এবং 7টি আলাদা এককের ব্লক।</span>
+</div>
+<div id="fs-id2136425">
+<p id="fs-id1829429">237</p>
+</div>
+</div></aside><aside id="eip-id1168898089706" class="manipulative-math">‘হাতে-কলমে গণিত: সংখ্যারেখা, অংশ 1’ কাজটি করলে স্বাভাবিক সংখ্যা ও শূন্যসহ স্বাভাবিক সংখ্যা আরও ভালোভাবে বুঝতে পারবে।</aside>
+</section><section id="fs-id1883656">
+<h3>অঙ্কের স্থানীয় মান নির্ণয় করি</h3>
+<p id="fs-id1795155">টাকা-পয়সা ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক দেখে আমরা বুঝেছি, সংখ্যার প্রতিটি স্থানের মান আলাদা। এই তথ্য একসঙ্গে দেখাতে স্থানীয় মানের ছক কাজে লাগে। এখানে তিনটি করে স্থান নিয়ে একেকটি দল গঠন করা হয়। এই <dfn class="no-emphasis" id="term-00009">তিন ঘরের দলগুলো</dfn> হলো <em>একক, হাজার, মিলিয়ন, বিলিয়ন, ট্রিলিয়ন</em> ইত্যাদি। সংখ্যা লেখার সময় কমা দিয়ে এই দলগুলো আলাদা করা হয়।</p><p id="fs-id2825467">যেমন <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লকে দশকের দণ্ডের মান এককের ব্লকের মানের দশ গুণ এবং শতকের বর্গের মান দশকের দণ্ডের মানের দশ গুণ, তেমনি স্থানীয় মানের ছকে প্রতিটি স্থানের মান তার ঠিক ডান পাশের স্থানের মানের দশ গুণ।</p>
+<p id="fs-id1408851"><a href="#CNX_BMath_Figure_01_01_011">চিত্র 011</a>-এ দেখানো হয়েছে কীভাবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5,278,194</mn></mrow></math> সংখ্যাটিকে স্থানীয় মানের ছকে লেখা যায়।</p>
+<figure id="CNX_BMath_Figure_01_01_011"><span id="fs-id1339846" class="media-description">চিত্রের বর্ণনা: স্থানীয় মানের ছকে 15টি কলাম। প্রতি তিনটি কলাম নিয়ে বাম থেকে ট্রিলিয়ন, বিলিয়ন, মিলিয়ন, হাজার ও এককের দল। প্রতিটি দলে বাম থেকে শত, দশ ও এক গুণের স্থান রয়েছে। যেমন হাজারের দলে শত হাজার, দশ হাজার ও হাজার; এককের দলে শতক, দশক ও একক। অঙ্কের সারিতে প্রথম 8টি ঘর ফাঁকা। নবম ঘর থেকে 5, 2, 7, 8, 1, 9, 4 বসানো হয়েছে। এতে 5,278,194 দেখানো হয়েছে।</span>
+</figure><ul id="fs-id930962">
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> অঙ্কটি মিলিয়নের স্থানে আছে। এর স্থানীয় মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5,000,000</mn><mo>.</mo></mrow></math></li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> অঙ্কটি শত হাজারের স্থানে আছে। এর স্থানীয় মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>200,000</mn><mo>.</mo></mrow></math></li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn></mrow></math> অঙ্কটি দশ হাজারের স্থানে আছে। এর স্থানীয় মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>70,000</mn><mo>.</mo></mrow></math></li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math> অঙ্কটি হাজারের স্থানে আছে। এর স্থানীয় মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8,000</mn><mo>.</mo></mrow></math></li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> অঙ্কটি শতকের স্থানে আছে। এর স্থানীয় মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn><mo>.</mo></mrow></math></li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math> অঙ্কটি দশকের স্থানে আছে। এর স্থানীয় মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>90</mn><mo>.</mo></mrow></math></li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math> অঙ্কটি এককের স্থানে আছে। এর স্থানীয় মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>.</mo></mrow></math></li>
+</ul>
+<div id="fs-id1891091">
+<div id="fs-id1256900"><p class="source-label">উৎসের কাজ: fs-id1256900</p><div id="fs-id1581177">
+<p id="fs-id1738612">সংখ্যাটি দেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>63,407,218</mn><mo>;</mo></mrow></math> নিচের প্রতিটি অঙ্ক কোন স্থানে আছে, নির্ণয় করো:</p>
+<ol id="fs-id2218367" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math></li><li> <span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></li><li> <span class="token">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> </li><li><span class="token">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math> </li><li><span class="token">ⓔ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></li></ol></div>
+<div id="fs-id2851093">
+<h3>সমাধান</h3>
+<p id="fs-id2281077">ডান দিক থেকে শুরু করে সংখ্যাটিকে স্থানীয় মানের ছকে লেখো।<br/>
+<span id="fs-id2297687" class="media-description">চিত্রের বর্ণনা: স্থানীয় মানের ছকে 15টি কলাম, প্রতি তিনটি কলাম নিয়ে একটি দল। বাম থেকে দলগুলো ট্রিলিয়ন, বিলিয়ন, মিলিয়ন, হাজার ও একক। প্রতিটি দলে শত, দশ ও এক গুণের স্থান রয়েছে। অঙ্কের সারিতে প্রথম 7টি ঘর ফাঁকা। অষ্টম ঘর থেকে 6, 3, 4, 0, 7, 2, 1, 8 বসানো হয়েছে। অর্থাৎ দশ মিলিয়নের ঘরে 6, মিলিয়নের ঘরে 3, শত হাজারের ঘরে 4, দশ হাজারের ঘরে 0, হাজারের ঘরে 7, শতকের ঘরে 2, দশকের ঘরে 1 ও এককের ঘরে 8। সংখ্যাটি 63,407,218।</span></p>
+<ul id="eip-id1168898159450"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math> অঙ্কটি হাজারের স্থানে আছে।</li>
+<li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> অঙ্কটি দশ হাজারের স্থানে আছে।</li>
+<li><span class="token">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> অঙ্কটি দশকের স্থানে আছে।</li>
+<li><span class="token">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math> অঙ্কটি দশ মিলিয়নের স্থানে আছে।</li>
+<li><span class="token">ⓔ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math> অঙ্কটি মিলিয়নের স্থানে আছে।</li>
+</ul></div>
+</div></div>
+<aside id="fs-id2310429" class="try"><div id="fs-id1573052"><p class="source-label">উৎসের কাজ: fs-id1573052</p><div id="fs-id1607674">
+<p id="fs-id1816164">সংখ্যাটিতে নিচে দেওয়া অঙ্কগুলো কোন স্থানে আছে, নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>27,493,615</mn></mrow></math></p>
+<ol id="fs-id1386307" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></li>
+<li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></li>
+<li><span class="token">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></li>
+<li><span class="token">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math></li>
+<li><span class="token">ⓔ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math></li>
+</ol></div>
+<div id="fs-id2903653">
+<ul id="fs-id1811287" class="circled"><li><span class="token">ⓐ</span> দশ মিলিয়ন</li>
+<li><span class="token">ⓑ</span> দশক</li>
+<li><span class="token">ⓒ</span> শত হাজার</li>
+<li><span class="token">ⓓ</span> মিলিয়ন</li>
+<li><span class="token">ⓔ</span> একক</li></ul></div>
+</div></aside><aside id="fs-id1282619" class="try"><div id="fs-id1518735"><p class="source-label">উৎসের কাজ: fs-id1518735</p><div id="fs-id3013699">
+<p id="fs-id1778628">সংখ্যাটিতে নিচে দেওয়া অঙ্কগুলো কোন স্থানে আছে, নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>519,711,641,328</mn></mrow></math></p>
+<ol id="fs-id1508784" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn></math></li>
+<li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></li>
+<li><span class="token">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></li>
+<li><span class="token">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math></li>
+<li><span class="token">ⓔ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math></li>
+</ol></div>
+<div id="fs-id2619544">
+<ul id="fs-id1807276" class="circled"><li><span class="token">ⓐ</span> বিলিয়ন</li>
+<li><span class="token">ⓑ</span> দশ হাজার</li>
+<li><span class="token">ⓒ</span> দশক</li>
+<li><span class="token">ⓓ</span> শত হাজার</li>
+<li><span class="token">ⓔ</span> শত মিলিয়ন</li></ul></div>
+</div></aside></section><section id="fs-id1321580"><h3>স্থানীয় মানের সাহায্যে সংখ্যা কথায় পড়ি</h3><p id="fs-id2566318">চেক লেখার সময় সংখ্যা অঙ্কের পাশাপাশি কথায়ও লিখতে হয়। উৎসের আন্তর্জাতিক রীতিতে সংখ্যা কথায় লিখতে প্রতিটি তিন ঘরের দলের সংখ্যা লেখো, তারপর সেই দলের নাম লেখো। ইংরেজিতে দলের নামের শেষে বহুবচনের ‘s’ থাকে না। বাম দিকের অঙ্ক থেকে শুরু করো; তার স্থানীয় মান সবচেয়ে বড়। কমা দলগুলো আলাদা করে। তাই অঙ্কে যেখানে কমা আছে, কথায়ও সেখানে কমা দাও। সবচেয়ে ছোট মানের এককের দলের নাম আলাদা করে বলা হয় না।</p>
+<figure id="eip-id1168289680652" class="unnumbered"><span id="fs-id1227744" class="media-description">চিত্রের বর্ণনা: কমা দিয়ে আলাদা তিনটি দল: 37 মিলিয়নের দল, 519 হাজারের দল এবং 248 এককের দল। তিরচিহ্নে যথাক্রমে নাম দেখানো হয়েছে: সাঁইত্রিশ মিলিয়ন; পাঁচশত উনিশ হাজার; দুইশত আটচল্লিশ।</span></figure><p id="fs-id2220075">তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>37,519,248</mn></mrow></math> সংখ্যাটি কথায় লেখা হয়: সাঁইত্রিশ মিলিয়ন, পাঁচশত উনিশ হাজার, দুইশত আটচল্লিশ।</p>
+<p id="fs-id3400199">খেয়াল করো, উৎসের ইংরেজি নিয়মে <em>and</em> শব্দটি শূন্যসহ স্বাভাবিক সংখ্যার নাম লেখার সময় ব্যবহার করা হয় না।</p>
+<aside id="fs-id1364640" class="howto"><h3>শূন্যসহ স্বাভাবিক সংখ্যা কথায় লেখো।</h3><ol id="eip-375" class="stepwise"><li>বাম দিক থেকে শুরু করে প্রতিটি তিন ঘরের দলের সংখ্যা বলো, তারপর দলের নাম বলো। এককের দলের ক্ষেত্রে দলের নাম বলবে না।</li>
+<li>সংখ্যার কমাগুলোর সাহায্যে তিন ঘরের দলগুলো আলাদা করো।</li></ol></aside><div id="fs-id2326974"><div id="fs-id1545709"><p class="source-label">উৎসের কাজ: fs-id1545709</p><div id="fs-id882630">
+<p id="fs-id1880734">সংখ্যাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8,165,432,098,710</mn></mrow></math>; কথায় লেখো।</p>
+</div>
+<div id="fs-id2196744">
+<h3>সমাধান</h3>
+<table id="fs-id1171100715908" class="unnumbered unstyled"><caption>সংখ্যার নাম লেখার ধাপ</caption><thead><tr><th scope="col">বিবরণ</th><th scope="col">কথায়</th></tr></thead><tbody><tr><td>বাম দিকের 8 অঙ্কটি থেকে শুরু করো। এটি ট্রিলিয়নের স্থানে আছে।</td><td>আট ট্রিলিয়ন</td></tr><tr><td>ডান দিকে পরের দলটি বিলিয়নের।</td><td>একশত পঁয়ষট্টি বিলিয়ন</td></tr><tr><td>ডান দিকে পরের দলটি মিলিয়নের।</td><td>চারশত বত্রিশ মিলিয়ন</td></tr><tr><td>ডান দিকে পরের দলটি হাজারের।</td><td>আটানব্বই হাজার</td></tr><tr><td>সবচেয়ে ডানের দলটি এককের।</td><td>সাতশত দশ</td></tr></tbody></table>
+<p id="eip-id1168287499693"><span id="fs-id1209906" class="media-description">চিত্রের বর্ণনা: কমা দিয়ে আলাদা পাঁচটি দল: 8 ট্রিলিয়ন, 165 বিলিয়ন, 432 মিলিয়ন, 098 হাজার ও 710 একক। তিরচিহ্নে নাম দেখানো হয়েছে: আট ট্রিলিয়ন; একশত পঁয়ষট্টি বিলিয়ন; চারশত বত্রিশ মিলিয়ন; আটানব্বই হাজার; সাতশত দশ। 098 দলের মান 98; নাম পড়ার সময় শুরুর শূন্যটি বলা হয় না।</span></p>
+<p id="fs-id1851678">সব নাম একসঙ্গে রেখে আমরা <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8,165,432,098,710</mn></mrow></math>-কে লিখি: আট ট্রিলিয়ন, একশত পঁয়ষট্টি বিলিয়ন, চারশত বত্রিশ মিলিয়ন, আটানব্বই হাজার, সাতশত দশ।</p>
+</div>
+</div></div><aside id="fs-id2774887" class="try">
+<div id="fs-id2601285"><p class="source-label">উৎসের কাজ: fs-id2601285</p>
+<div id="fs-id2353164">
+<p id="fs-id2269538">সংখ্যাটি কথায় লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9,258,137,904,061</mn></mrow></math></p>
+</div>
+<div id="fs-id1312880">
+<p id="fs-id1469854">নয় ট্রিলিয়ন, দুইশত আটান্ন বিলিয়ন, একশত সাঁইত্রিশ মিলিয়ন, নয়শত চার হাজার, একষট্টি</p></div>
+</div>
+</aside>
+<aside id="fs-id2136533" class="try">
+<div id="fs-id1773572"><p class="source-label">উৎসের কাজ: fs-id1773572</p>
+<div id="fs-id2926171">
+<p id="fs-id2555667">সংখ্যাটি কথায় লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>17,864,325,619,004</mn></mrow></math></p>
+</div>
+<div id="fs-id1683677">
+<p id="fs-id1278691">সতেরো ট্রিলিয়ন, আটশত চৌষট্টি বিলিয়ন, তিনশত পঁচিশ মিলিয়ন, ছয়শত উনিশ হাজার, চার</p></div>
+</div>
+</aside>
+<div id="fs-id1825910">
+<div id="fs-id1314136"><p class="source-label">উৎসের কাজ: fs-id1314136</p>
+<div id="fs-id4315464">
+<p id="fs-id2627959">একজন শিক্ষার্থী খোঁজ নিয়ে দেখল, মার্কিন যুক্তরাষ্ট্রে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2014</mn></mrow></math> সালের একটি মাসে মুঠোফোন ব্যবহারকারীর সংখ্যা ছিল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>327,577,529</mn></mstyle><mo>.</mo></mrow></math> সংখ্যাটি কথায় লেখো।</p>
+</div>
+<div id="fs-id2425040">
+<h3>সমাধান</h3>
+<p id="fs-id1526255">সংখ্যাটির তিন ঘরের দলগুলো চিহ্নিত করো।<br/>
+<span id="fs-id2670483" class="media-description">চিত্রের বর্ণনা: কমা দিয়ে আলাদা তিনটি দল: 327 মিলিয়নের দল, 577 হাজারের দল ও 529 এককের দল।</span></p><p id="fs-id2263806">প্রতিটি দলের সংখ্যা বলো, তারপর দলের নাম বলো। দলগুলো আলাদা করতে কমা দাও।</p>
+<p id="fs-id1738516">মিলিয়নের দল: তিনশত সাতাশ মিলিয়ন</p>
+<p id="fs-id1409152">হাজারের দল: পাঁচশত সাতাত্তর হাজার</p>
+<p id="fs-id1344528">এককের দল: পাঁচশত ঊনত্রিশ</p><p id="fs-id1394436">তাই এপ্রিল মাসে মার্কিন যুক্তরাষ্ট্রে মুঠোফোন ব্যবহারকারীর সংখ্যা ছিল তিনশত সাতাশ মিলিয়ন, পাঁচশত সাতাত্তর হাজার, পাঁচশত ঊনত্রিশ।</p>
+</div>
+</div>
+</div>
+<aside id="fs-id1628781" class="try">
+<div id="fs-id2472209"><p class="source-label">উৎসের কাজ: fs-id2472209</p>
+<div id="fs-id2223828">
+<p id="fs-id1919954">একটি দেশের জনসংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>316,128,839</mn><mo>.</mo></mrow></math> সংখ্যাটি কথায় লেখো।</p>
+</div>
+<div id="fs-id1393924">
+<p id="fs-id2243722">তিনশত ষোলো মিলিয়ন, একশত আটাশ হাজার, আটশত ঊনচল্লিশ</p>
+</div>
+</div>
+</aside>
+<aside id="fs-id1808812" class="try">
+<div id="fs-id2060477"><p class="source-label">উৎসের কাজ: fs-id2060477</p>
+<div id="fs-id2172100">
+<p id="fs-id1250766">এক বছরে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>31,536,000</mn></mrow></math> সেকেন্ড। সংখ্যাটি কথায় লেখো।</p>
+</div>
+<div id="fs-id1360632">
+<p id="fs-id1269733">একত্রিশ মিলিয়ন, পাঁচশত ছত্রিশ হাজার</p>
+</div>
+</div>
+</aside>
+</section><section id="fs-id1339359">
+<h3>স্থানীয় মানের সাহায্যে সংখ্যা অঙ্কে লিখি</h3>
+<p id="fs-id2607182">এবার উল্টো কাজটি করব: কথায় দেওয়া সংখ্যা অঙ্কে লিখব।</p>
+<aside id="fs-id2398163" class="howto"><h3>স্থানীয় মানের সাহায্যে শূন্যসহ স্বাভাবিক সংখ্যা লেখো।</h3><ol id="eip-100" class="stepwise"><li>কোন শব্দগুলো তিন ঘরের দলের নাম বোঝায়, চিহ্নিত করো। মনে রেখো, এককের দলের নাম আলাদা করে বলা হয় না।</li>
+<li>প্রতিটি দলের জন্য তিনটি ফাঁকা ঘর আঁকো। কমা দিয়ে দলগুলো আলাদা করো।</li>
+<li>প্রতিটি দলের সংখ্যা চিনে অঙ্কগুলো সঠিক স্থানীয় মানের ঘরে বসাও।</li></ol>
+
+
+</aside><div id="fs-id2376697"><div id="fs-id1340436"><p class="source-label">উৎসের কাজ: fs-id1340436</p><div id="fs-id845531">
+<p id="fs-id1576302">নিচের সংখ্যাগুলো অঙ্কে লেখো।</p>
+<ul id="fs-id2264653" class="circled"><li><span class="token">ⓐ</span> তিপ্পান্ন মিলিয়ন, চারশত এক হাজার, সাতশত বিয়াল্লিশ</li>
+<li><span class="token">ⓑ</span> নয় বিলিয়ন, দুইশত ছেচল্লিশ মিলিয়ন, তিয়াত্তর হাজার, একশত ঊননব্বই</li></ul></div>
+<div id="fs-id1786412">
+<h3>সমাধান</h3>
+<p id="fs-id3402446"><span class="token">ⓐ</span> তিন ঘরের দলের নাম বোঝানো শব্দগুলো চিহ্নিত করো।</p><p id="fs-id2198541">প্রথম দল ছাড়া অন্য সব দলে তিনটি অঙ্কের ঘর থাকতে হবে। প্রতিটি দলের ঘর বোঝাতে তিনটি ফাঁকা স্থান আঁকো। কমা দিয়ে দলগুলো আলাদা করো।</p>
+<p id="fs-id4300938">এবার প্রতিটি দলে অঙ্কগুলো বসাও।<br/>
+<span id="fs-id2668978" class="media-description">চিত্রের বর্ণনা: তিনটি নাম থেকে অঙ্কে তির গেছে: তিপ্পান্ন মিলিয়ন থেকে মিলিয়নের দলে 53; চারশত এক হাজার থেকে হাজারের দলে 401; সাতশত বিয়াল্লিশ থেকে এককের দলে 742।</span></p><p id="fs-id1726897">কমাসহ দলগুলো পাশাপাশি বসাও। সংখ্যাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>53,401,742</mn><mo>.</mo></mrow></math></p>
+<p id="fs-id1683995"><span class="token">ⓑ</span> তিন ঘরের দলের নাম বোঝানো শব্দগুলো চিহ্নিত করো।</p><p id="fs-id2159900">প্রথম দল ছাড়া অন্য সব দলে তিনটি অঙ্কের ঘর থাকতে হবে। প্রতিটি দলের ঘর বোঝাতে তিনটি ফাঁকা স্থান আঁকো। কমা দিয়ে দলগুলো আলাদা করো।</p>
+<p id="fs-id3429801">এবার প্রতিটি দলে অঙ্কগুলো বসাও।<br/>
+<span id="fs-id2903601" class="media-description">চিত্রের বর্ণনা: চারটি নাম থেকে অঙ্কে তির গেছে: নয় বিলিয়ন থেকে বিলিয়নের দলে 9; দুইশত ছেচল্লিশ মিলিয়ন থেকে মিলিয়নের দলে 246; তিয়াত্তর হাজার থেকে হাজারের দলে 073; একশত ঊননব্বই থেকে এককের দলে 189। হাজারের দলে শুরুর শূন্যটি তিনটি ঘর পূরণ করেছে।</span></p><p id="fs-id1374355">সংখ্যাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9,246,073,189</mn><mo>.</mo></mrow></math></p>
+<p id="fs-id2880619">খেয়াল করো, <span class="token">ⓑ</span> অংশে শত হাজারের ঘর ধরে রাখতে একটি শূন্য দরকার হয়েছে। প্রয়োজনে শূন্য বসিয়ে নিশ্চিত করো যে প্রথম দল ছাড়া প্রতিটি দলে তিনটি অঙ্ক আছে। প্রথম দলে কম অঙ্ক থাকতে পারে।</p></div>
+</div></div><aside id="fs-id1542693" class="try">
+<div id="fs-id2646708"><p class="source-label">উৎসের কাজ: fs-id2646708</p>
+<div id="fs-id3436547">
+<p id="fs-id2270159">প্রতিটি সংখ্যা অঙ্কে লেখো:</p>
+<p id="fs-id2149876">তিপ্পান্ন মিলিয়ন, আটশত নয় হাজার, একান্ন।</p>
+</div>
+<div id="fs-id998472">
+<p id="fs-id4163187">53,809,051</p>
+</div>
+</div>
+</aside>
+<aside id="fs-id2437124" class="try">
+<div id="fs-id2202956"><p class="source-label">উৎসের কাজ: fs-id2202956</p>
+<div id="fs-id1402052">
+<p id="fs-id1337332">প্রতিটি সংখ্যা অঙ্কে লেখো:</p>
+<p id="fs-id1792489">দুই বিলিয়ন, বাইশ মিলিয়ন, সাতশত চৌদ্দ হাজার, চারশত ছেষট্টি।</p>
+</div>
+<div id="fs-id1330293">
+<p id="fs-id1885399">2,022,714,466</p>
+</div>
+</div>
+</aside>
+<div id="fs-id3202693">
+<div id="fs-id1336757"><p class="source-label">উৎসের কাজ: fs-id1336757</p>
+<div id="fs-id1917299">
+<p id="fs-id2590590">একটি অঙ্গরাজ্যের বাজেট ছিল প্রায় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$77</mtext></mrow></math> বিলিয়ন। বাজেটের পরিমাণ অঙ্কে লেখো।</p>
+</div>
+<div id="fs-id1949045">
+<h3>সমাধান</h3>
+<p id="fs-id2634266">তিন ঘরের দলগুলো চিহ্নিত করো। এখানে শুধু দুটি অঙ্ক দেওয়া আছে; সেগুলো বিলিয়নের দলে। পুরো সংখ্যাটি লিখতে অন্য সব দলের ঘরে শূন্য বসাও।<br/>
+<span id="fs-id1345376" class="media-description">চিত্রের বর্ণনা: 77 বিলিয়ন নামটি থেকে বিলিয়নের দলে 77 লেখা হয়েছে। মিলিয়ন, হাজার ও এককের দলের জন্য কোনো অশূন্য মান বলা হয়নি, তাই প্রতিটি দলে 000 বসানো হয়েছে। একসঙ্গে 77,000,000,000।</span></p><p id="fs-id2319817">তাই বাজেট ছিল প্রায় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$77,000,000,000.</mtext></mrow></math></p>
+</div>
+</div>
+</div>
+<aside id="fs-id1805534" class="try">
+<div id="fs-id1485641"><p class="source-label">উৎসের কাজ: fs-id1485641</p>
+<div id="fs-id1929413">
+<p id="fs-id2262938">প্রতিটি সংখ্যা অঙ্কে লেখো:</p>
+<p id="fs-id1800228">পৃথিবী থেকে মঙ্গলের নিকটতম দূরত্ব প্রায় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>34</mn></mrow></math> মিলিয়ন মাইল।</p>
+</div>
+<div id="fs-id1779102">
+<p id="fs-id865214">34,000,000 মাইল</p>
+</div>
+</div>
+</aside>
+<aside id="fs-id1397780" class="try">
+<div id="fs-id2133886"><p class="source-label">উৎসের কাজ: fs-id2133886</p>
+<div id="fs-id1781552">
+<p id="fs-id1515747">প্রতিটি সংখ্যা অঙ্কে লেখো:</p>
+<p id="fs-id1586764">একটি বিমানবাহী রণতরির মোট ওজন <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>204</mn></mrow></math> মিলিয়ন পাউন্ড।</p>
+</div>
+<div id="fs-id2262414">
+<p id="fs-id1395137">204,000,000 পাউন্ড</p>
+</div>
+</div>
+</aside>
+</section><section id="fs-id2472737"><h3>শূন্যসহ স্বাভাবিক সংখ্যার আসন্ন মান নির্ণয়</h3><p id="fs-id1333125">সাল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2013</mn><mo>,</mo></mrow></math> সে বছর মার্কিন জনশুমারি ব্যুরো নিউইয়র্ক অঙ্গরাজ্যের জনসংখ্যা জানায় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>19,651,127</mn></mrow></math> জন। জনসংখ্যা প্রায় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math> মিলিয়ন বলাই হয়তো যথেষ্ট। এখানে <em>প্রায়</em> কথাটি বোঝায়, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math> মিলিয়ন সঠিক জনসংখ্যা নয়, তবে সঠিক মানের কাছাকাছি।</p>
+<p id="fs-id2368933">কোনো সংখ্যাকে এভাবে কাছাকাছি একটি মান দিয়ে প্রকাশ করার প্রক্রিয়াকে বলে <dfn id="term-00010">আসন্ন মান নির্ণয়</dfn>। কতটা নির্ভুলতা দরকার, তার ওপর নির্ভর করে নির্দিষ্ট একটি স্থানে আসন্ন মান নির্ণয় করা হয়। <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math> মিলিয়ন পাওয়া গেছে মিলিয়নের স্থানে আসন্ন মান নির্ণয় করে। একশত হাজারের স্থানে আসন্ন মান নির্ণয় করলে পাওয়া যেত <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>19,700,000</mn></mrow></math>। দশ হাজারের স্থানে আসন্ন মান নির্ণয় করলে পাওয়া যেত <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>19,650,000</mn></mrow></math>; এভাবে অন্য স্থানেও করা যায়। সংখ্যাটি কী কাজে লাগবে, তার ওপর নির্ভর করে কোন স্থানে আসন্ন মান নির্ণয় করতে হবে।</p><p id="fs-id2132131">সংখ্যারেখা দিয়ে আসন্ন মান নির্ণয়ের প্রক্রিয়াটি দেখা ও বোঝা সহজ হয়। এই সংখ্যারেখাটি দেখো: <a href="#CNX_BMath_Figure_01_01_019">চিত্র 019</a>। ধরি, আমাদের সংখ্যাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>76</mn></mrow></math>; এর দশকের স্থানে আসন্ন মান চাই। <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>76</mn></mrow></math> সংখ্যাটি কি বেশি কাছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>70</mn></mrow></math> নাকি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>80</mn></mrow></math>-এর, এই সংখ্যারেখায়?</p>
+<figure id="CNX_BMath_Figure_01_01_019"><span id="fs-id3447999" class="media-description">চিত্রের বর্ণনা: 70 থেকে 80 পর্যন্ত সংখ্যারেখা; প্রতি ধাপে 1 করে বাড়ে। দুই প্রান্তের 70 ও 80 লাল। 76-এ নীলচে সবুজ বিন্দু; এই বিন্দুর সংখ্যাটিও আলাদা রঙে দেখানো। বাকি সংখ্যাগুলো কালো।</span>
+
+<figcaption>দেখা যাচ্ছে, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>76</mn></mrow></math> সংখ্যাটির বেশি কাছের সংখ্যা হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>80</mn></mrow></math>; তুলনায় বেশি দূরে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>70</mn><mo>.</mo></mrow></math> তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>76</mn></mrow></math> সংখ্যাটির দশকের স্থানে আসন্ন মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>80</mn><mo>.</mo></mrow></math></figcaption></figure><p id="fs-id1885331">এবার দেখি সংখ্যাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn><mo>.</mo></mrow></math> খুঁজে বের করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> এই চিত্রে: <a href="#CNX_BMath_Figure_01_01_020">চিত্র 020</a>.</p>
+<figure id="CNX_BMath_Figure_01_01_020"><span id="fs-id2907091" class="media-description">চিত্রের বর্ণনা: 70 থেকে 80 পর্যন্ত সংখ্যারেখা; প্রতি ধাপে 1 করে বাড়ে। দুই প্রান্তের 70 ও 80 লাল। 72-এ নীলচে সবুজ বিন্দু; এই বিন্দুর সংখ্যাটিও আলাদা রঙে দেখানো। বাকি সংখ্যাগুলো কালো।</span>
+
+<figcaption>দেখা যাচ্ছে, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> সংখ্যাটির বেশি কাছের সংখ্যা হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>70</mn><mo>,</mo></mrow></math> তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> সংখ্যাটির দশকের স্থানে আসন্ন মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>70</mn><mo>.</mo></mrow></math></figcaption></figure><p id="fs-id2646813">দশকের স্থানে কীভাবে আসন্ন মান নির্ণয় করব, যখন সংখ্যাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn></mrow></math>? খুঁজে বের করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn></mrow></math> এই চিত্রে: <a href="#CNX_BMath_Figure_01_01_021">চিত্র 021</a>.</p>
+<figure id="CNX_BMath_Figure_01_01_021"><span id="fs-id2471614" class="media-description">চিত্রের বর্ণনা: 70 থেকে 80 পর্যন্ত সংখ্যারেখা; প্রতি ধাপে 1 করে বাড়ে। দুই প্রান্তের 70 ও 80 লাল। 75-এ নীলচে সবুজ বিন্দু; এই বিন্দুর সংখ্যাটিও আলাদা রঙে দেখানো। বাকি সংখ্যাগুলো কালো।</span>
+
+<figcaption>সংখ্যাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn></mrow></math> ঠিক মাঝখানে আছে এই দুই সংখ্যার: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>70</mn></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>80</mn><mo>.</mo></mrow></math></figcaption></figure><p id="fs-id1384953">এমন ক্ষেত্রে সবাই একইভাবে আসন্ন মান নির্ণয় করার জন্য গণিতবিদেরা বড় সংখ্যাটি নেওয়ার নিয়ম মেনে নিয়েছেন; এখানে সেটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>80</mn><mo>.</mo></mrow></math> তাই, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn></mrow></math> সংখ্যাটির দশকের স্থানে আসন্ন মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>80</mn><mo>.</mo></mrow></math></p>
+<p id="fs-id1545266">সংখ্যারেখায় প্রক্রিয়াটি দেখার পর এবার সাধারণ নিয়মটি জানি। নির্দিষ্ট একটি স্থানে আসন্ন মান নির্ণয় করতে তার ঠিক ডান পাশের অঙ্কটি দেখো। এই অঙ্কটি যদি ছোট হয় এই মানের চেয়ে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>,</mo></mrow></math> তবে নিচের মানটি নাও। যদি অঙ্কটির মান অন্তত হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>,</mo></mrow></math> তবে ওপরের মানটি নাও।</p>
+<p id="fs-id1583269">যেমন, সংখ্যাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>76</mn></mrow></math> হলে দশকের স্থানে আসন্ন মান নির্ণয়ের জন্য এককের অঙ্কটি দেখি।</p>
+<span id="fs-id1318626" class="media-description">চিত্রের বর্ণনা: 76 সংখ্যাটির 7-কে তীর দিয়ে দশকের স্থান বলা হয়েছে। অন্য তীরটি 6-কে দেখিয়ে বলছে, এর মান 5-এর বেশি।</span>
+<p id="fs-id1717390">এককের অঙ্ক <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>.</mo></mrow></math> যেহেতু <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math>-এর মান অন্তত <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>,</mo></mrow></math> তাই দশকের অঙ্ক 1 বাড়াই। ফলে দশকের অঙ্ক <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math> বদলে হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn><mo>.</mo></mrow></math> এবার সব অঙ্ক শূন্য দিয়ে বদলাই, যেগুলো আছে এই অঙ্কটির ডান পাশে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math>। ফলে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>76</mn></mrow></math>-এর আসন্ন মান হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>80</mn><mo>.</mo></mrow></math></p>
+<span id="fs-id1233161" class="media-description">চিত্রের বর্ণনা: 76-এর 6 কেটে 0 বসাতে বলা হয়েছে; 7-এর সঙ্গে 1 যোগ করতে বলা হয়েছে। নিচে ফল 80।</span>
+<p id="fs-id2966405"><dfn class="no-emphasis" id="term-00011">আসন্ন মান নির্ণয় আবার দেখা যাক:</dfn> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> সংখ্যাটির জন্য নিকটতম <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mo>.</mo></mrow></math> এককের অঙ্কটি আবার দেখি।</p>
+<span id="fs-id2306384" class="media-description">চিত্রের বর্ণনা: 72-এর 7-কে তীর দিয়ে দশকের স্থান বলা হয়েছে। অন্য তীরটি 2-কে দেখিয়ে বলছে, এর মান 5-এর কম।</span>
+<p id="fs-id2700449">এককের অঙ্ক <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>.</mo></mrow></math> যেহেতু <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math>-এর মান কম এই মানের চেয়ে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>,</mo></mrow></math> তাই দশকের অঙ্ক একই রাখি এবং তার ডান পাশের অঙ্ক শূন্য দিয়ে বদলাই। ফলে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> সংখ্যাটির দশকের স্থানে আসন্ন মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>70</mn><mo>.</mo></mrow></math></p>
+<span id="fs-id2588331" class="media-description">চিত্রের বর্ণনা: 72-এর 2 কেটে 0 বসাতে বলা হয়েছে; 7-এর সঙ্গে 1 যোগ না করতে বলা হয়েছে। নিচে ফল 70।</span>
+<aside id="fs-id1627986" class="howto"><h3>নির্দিষ্ট স্থানে শূন্যসহ স্বাভাবিক সংখ্যার আসন্ন মান নির্ণয় করি।</h3><ol id="eip-id1168287215567" class="stepwise"><li>নির্ধারিত স্থানটি চেনো। এর বাম পাশের অঙ্কগুলো বদলাবে না; তবে ওই স্থানে 9 থাকলে বদলাতে পারে। (3 নম্বর ধাপ দেখো।)</li>
+<li>নির্ধারিত স্থানের ঠিক ডান পাশের অঙ্কের নিচে দাগ দাও।</li>
+<li>দেখো এই অঙ্কের মান অন্তত কি না: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>.</mo></mrow></math>
+<ul id="fs-id2486248">
+<li>হ্যাঁ হলে—যোগ করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> নির্ধারিত স্থানের অঙ্কের সঙ্গে। ওই অঙ্ক 9 হলে সেখানে 0 বসাও এবং ঠিক বাম পাশের অঙ্কে 1 যোগ করো। সেই অঙ্কও 9 হলে একই কাজ আবার করো।</li>
+<li>না হলে—নির্ধারিত স্থানের অঙ্ক বদলাবে না।</li>
+</ul></li>
+<li>নির্ধারিত স্থানের ডান পাশের সব অঙ্কের বদলে শূন্য বসাও।</li></ol></aside><div id="fs-id1395272"><div id="fs-id3298586"><p class="source-label">উৎসের কাজ: fs-id3298586</p><div id="fs-id3365604">
+<p id="fs-id555970">আসন্ন মান নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>843</mn></mrow></math>; দশকের স্থানে।</p>
+</div>
+<div id="fs-id1245694">
+<h3>সমাধান</h3>
+<table id="eip-659" class="unnumbered unstyled"><caption>843: দশকের স্থানে আসন্ন মান</caption><thead><tr><th scope="col">ধাপ</th><th scope="col">সংখ্যায় কী হচ্ছে</th></tr></thead><tbody><tr><td>দশকের স্থানটি চেনো।</td><td><span id="eip-id1168287213054" class="media-description">চিত্রের বর্ণনা: 843-এর 4-কে তীর দিয়ে দশকের স্থান বলা হয়েছে।</span></td></tr><tr><td>দশকের স্থানের ঠিক ডান পাশের অঙ্কের নিচে দাগ দাও।</td><td><span id="eip-id1168288706202" class="media-description">চিত্রের বর্ণনা: 843 সংখ্যাটির 3-এর নিচে দাগ দেওয়া।</span></td></tr><tr><td>3-এর মান 5-এর কম, তাই দশকের অঙ্ক বদলাবে না।</td><td><span id="eip-id1168288469372" class="media-description">চিত্রের বর্ণনা: 843 সংখ্যাটির 3-এর নিচে দাগ দেওয়া।</span></td></tr><tr><td>দশকের ডান পাশের সব অঙ্ক শূন্য দিয়ে বদলাও।</td><td><span id="eip-id1168288213158" class="media-description">চিত্রের বর্ণনা: 840 সংখ্যাটির 0-এর নিচে দাগ দেওয়া।</span></td></tr><tr><td></td><td>843-এর দশকের স্থানে আসন্ন মান 840।</td></tr></tbody></table></div>
+</div></div><aside id="fs-id2324035" class="try">
+<div id="fs-id1312230"><p class="source-label">উৎসের কাজ: fs-id1312230</p>
+<div id="fs-id1361993">
+<p id="fs-id1347444">দশকের স্থানে আসন্ন মান নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>157</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2458753">
+<p id="fs-id1178888">160</p>
+</div>
+</div>
+</aside>
+<aside id="fs-id2306340" class="try">
+<div id="fs-id2648829"><p class="source-label">উৎসের কাজ: fs-id2648829</p>
+<div id="fs-id1732081">
+<p id="fs-id2210570">দশকের স্থানে আসন্ন মান নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>884</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1822077">
+<p id="fs-id1269556">880</p>
+</div>
+</div>
+</aside>
+<div id="fs-id3407439"><div id="fs-id1788778"><p class="source-label">উৎসের কাজ: fs-id1788778</p><div id="fs-id2351315">
+<p id="fs-id1339512">প্রতিটি সংখ্যার শতকের স্থানে আসন্ন মান নির্ণয় করো:</p>
+<ol id="eip-id1168287209769" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>23,658</mn></math></li>
+<li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3,978</mn></math></li></ol>
+</div>
+<div id="fs-id1352043">
+<h3>সমাধান</h3>
+
+ <table id="eip-493" class="unnumbered unstyled"><caption>23,658: শতকের স্থানে আসন্ন মান</caption><thead><tr><th scope="col">ধাপ</th><th scope="col">সংখ্যায় কী হচ্ছে</th></tr></thead><tbody><tr><td><span class="token">ⓐ</span> </td><td></td></tr><tr><td>শতকের স্থানটি চেনো।</td><td><span id="eip-id1168288300776" class="media-description">চিত্রের বর্ণনা: 23,658-এর 6-কে তীর দিয়ে শতকের স্থান হিসেবে দেখানো হয়েছে।</span></td></tr><tr><td>শতকের ঠিক ডানের অঙ্ক 5। এর নিচে দাগ দাও।</td><td><span id="eip-id1168288227113" class="media-description">চিত্রের বর্ণনা: 23,658 সংখ্যাটির 5-এর নিচে অনুভূমিক দাগ দেওয়া।</span></td></tr><tr><td>5-এর মান অন্তত 5, তাই শতকের অঙ্কে 1 যোগ করে ওপরের মানটি নাও। এরপর শতকের ডান পাশের সব অঙ্ক শূন্য দিয়ে বদলাও।</td><td><span id="eip-id1168287065587" class="media-description">চিত্রের বর্ণনা: 23,658-এর 6-এর দিকে তীর দিয়ে 1 যোগ করতে বলা হয়েছে। 58-এর দিকে অন্য তীর দিয়ে অঙ্ক দুটি শূন্য দিয়ে বদলাতে বলা হয়েছে। ফল 23,700।</span><br/>তাই 23,658-এর শতকের স্থানে আসন্ন মান 23,700।</td></tr></tbody></table><table id="eip-379" class="unnumbered unstyled"><caption>3,978: শতকের স্থানে আসন্ন মান</caption><thead><tr><th scope="col">ধাপ</th><th scope="col">সংখ্যায় কী হচ্ছে</th></tr></thead><tbody><tr><td><span class="token">ⓑ</span> </td><td></td></tr><tr><td>শতকের স্থানটি চেনো।</td><td><span id="eip-id1168289428642" class="media-description">চিত্রের বর্ণনা: চার অঙ্কের সংখ্যা 3,978-এর 9-কে তীর দিয়ে শতকের স্থান হিসেবে দেখানো হয়েছে।</span></td></tr><tr><td>শতকের স্থানের ঠিক ডান পাশের অঙ্কের নিচে দাগ দাও।</td><td><span id="eip-id1168286086719" class="media-description">চিত্রের বর্ণনা: 3,978 সংখ্যাটির 7-এর নিচে অনুভূমিক দাগ দেওয়া।</span></td></tr><tr><td>শতকের ঠিক ডানের অঙ্ক 7। এর মান অন্তত 5, তাই 9-এর সঙ্গে 1 যোগ করে ওপরের মানটি নাও। এরপর শতকের ডান পাশের সব অঙ্ক শূন্য দিয়ে বদলাও।</td><td><span id="eip-id1168289428689" class="media-description">চিত্রের বর্ণনা: 3,978-এর শতকের স্থানে আসন্ন মান নির্ণয়ের চিত্র। শতকের 9-এ 1 যোগ করলে 10 হয়; তাই শতকে 0 লিখে হাজারের 3-এ 1 যোগ করে 4 করা হয়। শেষের 7 ও 8-এর বদলে শূন্য বসে। ফল 4,000।</span><br/>তাই 3,978-এর শতকের স্থানে আসন্ন মান 4,000।</td></tr></tbody></table></div>
+</div></div><aside id="fs-id1518702" class="try">
+<div id="fs-id1288049"><p class="source-label">উৎসের কাজ: fs-id1288049</p>
+<div id="fs-id1512227">
+<p id="fs-id2133764">শতকের স্থানে আসন্ন মান নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>17,852</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2877246">
+<p id="fs-id1336744">17,900</p>
+</div>
+</div>
+</aside>
+<aside id="fs-id2149604" class="try">
+<div id="fs-id1153191"><p class="source-label">উৎসের কাজ: fs-id1153191</p>
+<div id="fs-id1792323">
+<p id="fs-id1939348">শতকের স্থানে আসন্ন মান নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4,951</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1461584">
+<p id="fs-id1344986">5,000</p>
+</div>
+</div>
+</aside>
+<div id="fs-id1263758"><div id="fs-id1951300"><p class="source-label">উৎসের কাজ: fs-id1951300</p><div id="fs-id1471031">
+<p id="fs-id2283895">প্রতিটি সংখ্যার হাজারের স্থানে আসন্ন মান নির্ণয় করো:</p>
+<ol id="eip-id1168289456047" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>147,032</mn></math></li>
+<li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>29,504</mn></math></li>
+</ol>
+</div>
+<div id="fs-id1559025">
+<h3>সমাধান</h3><table id="eip-695" class="unnumbered unstyled"><caption>147,032: হাজারের স্থানে আসন্ন মান</caption><thead><tr><th scope="col">ধাপ</th><th scope="col">সংখ্যায় কী হচ্ছে</th></tr></thead><tbody><tr><td><span class="token">ⓐ</span> </td><td></td></tr><tr><td>হাজারের স্থানটি চেনো। এর ঠিক ডান পাশের অঙ্কের নিচে দাগ দাও।</td><td><span id="eip-id1168285947958" class="media-description">চিত্রের বর্ণনা: 147,032-এর 7-কে তীর দিয়ে হাজারের স্থান হিসেবে দেখানো হয়েছে।</span></td></tr><tr><td>হাজারের ঠিক ডানের অঙ্ক 0। এর মান 5-এর কম, তাই হাজারের অঙ্ক বদলাবে না।</td><td><span id="eip-id1168285947976" class="media-description">চিত্রের বর্ণনা: সাদা পটভূমিতে কালো অঙ্কে 147,032 লেখা; শতকের অঙ্ক 0-এর নিচে দাগ।</span></td></tr><tr><td>এরপর হাজারের ডান পাশের সব অঙ্ক শূন্য দিয়ে বদলাই।</td><td><span id="eip-id1168286217819" class="media-description">চিত্রের বর্ণনা: 147,000 লেখা আছে।</span><br/>তাই 147,032-এর হাজারের স্থানে আসন্ন মান 147,000।</td></tr></tbody></table><table id="eip-596" class="unnumbered unstyled has-images"><caption>29,504: হাজারের স্থানে আসন্ন মান</caption><thead><tr><th scope="col">ধাপ</th><th scope="col">সংখ্যায় কী হচ্ছে</th></tr></thead><tbody><tr><td><span class="token">ⓑ</span> </td><td></td></tr><tr><td>হাজারের স্থানটি চেনো।</td><td><span id="eip-id1168287387756" class="media-description">চিত্রের বর্ণনা: 29,504-এর 9-কে তীর দিয়ে হাজারের স্থান হিসেবে দেখানো হয়েছে।</span></td></tr><tr><td>হাজারের স্থানের ঠিক ডান পাশের অঙ্কের নিচে দাগ দাও।</td><td><span id="eip-id1168284799982" class="media-description">চিত্রের বর্ণনা: 29,504 সংখ্যাটির 5-এর নিচে অনুভূমিক দাগ দেওয়া।</span></td></tr><tr><td>হাজারের ঠিক ডানের অঙ্ক 5। এর মান অন্তত 5, তাই 9-এ 1 যোগ করে ওপরের মানটি নাও। এরপর হাজারের ডান পাশের সব অঙ্ক শূন্য দিয়ে বদলাও।</td><td><span id="eip-id1168288313851" class="media-description">চিত্রের বর্ণনা: 29,504-এর হাজারের স্থানে আসন্ন মান নির্ণয়ের চিত্র। হাজারের 9-এ 1 যোগ করলে 10 হয়। তাই হাজারে 0 লিখে দশ হাজারের অঙ্কে 1 যোগ করা হয়। শেষের তিন অঙ্ক শূন্য দিয়ে বদলে ফল হয় 30,000।</span><br/>তাই 29,504-এর হাজারের স্থানে আসন্ন মান 30,000।</td></tr></tbody></table><p id="fs-id1751923">লক্ষ করো, অংশটি <span class="token">ⓑ</span> হলে আমরা যোগ করি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> হাজার, যার সঙ্গে যোগ করি তা হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn></math> হাজার। মোট হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> হাজার। এটিকে নতুন দল করি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশ হাজার এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> হাজার। এরপর এই <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশ হাজার যোগ করি আগে থাকা <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math> দশ হাজারের সঙ্গে; আর বসাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> হাজারের স্থানে।</p></div>
+</div></div><aside id="fs-id2603401" class="try">
+<div id="fs-id3447872"><p class="source-label">উৎসের কাজ: fs-id3447872</p>
+<div id="fs-id2168214">
+<p id="fs-id1756663">হাজারের স্থানে আসন্ন মান নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>63,921</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2947129">
+<p id="fs-id1823220">64,000</p>
+</div>
+</div>
+</aside>
+<aside id="fs-id4211785" class="try">
+<div id="fs-id1371038"><p class="source-label">উৎসের কাজ: fs-id1371038</p>
+<div id="fs-id2279344">
+<p id="fs-id2276491">হাজারের স্থানে আসন্ন মান নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>156,437</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1251048">
+<p id="fs-id2174049">156,000</p>
+</div>
+</div>
+</aside>
+<aside id="fs-id3323694" class="media-2"><h3>আরও অনলাইন উপকরণ</h3><ul id="fs-id1881276">
+<li><a href="https://www.openstax.org/l/24detplaceval">স্থানীয় মান নির্ণয়</a></li>
+<li><a href="https://www.openstax.org/l/24numdigword">কথা থেকে অঙ্কে শূন্যসহ স্বাভাবিক সংখ্যা লেখা</a></li>
+</ul>
+</aside></section><section id="fs-id2296006" class="key-concepts"><h3>মূল ধারণাগুলো</h3><figure id="eip-id1170196618448"><span id="eip-id1170196618449" class="media-description">চিত্রের বর্ণনা: স্থানীয় মানের ছক। 15টি ঘর তিনটি করে পাঁচ দলে ভাগ: ট্রিলিয়ন, বিলিয়ন, মিলিয়ন, হাজার ও এককের দল। প্রতি দলে বাম থেকে শত, দশ ও এক—ওই দলের একক অনুযায়ী। ডানতম দলের ঘর শতক, দশক, একক; তার বামে একশত হাজার, দশ হাজার, হাজার; তারপর একশত মিলিয়ন, দশ মিলিয়ন, মিলিয়ন; এরপর একইভাবে বিলিয়ন ও ট্রিলিয়নের দল। শিরোনাম, দলের নাম, ঘরের নাম এবং নিচের অঙ্কের সারি আছে। নিচের সারির প্রথম 8 ঘর ফাঁকা; নবম ঘর থেকে অঙ্কগুলো 5, 2, 7, 8, 1, 9, 4। সংখ্যাটি 5,278,194।</span>
+</figure><ul id="eip-903"><li><em>শূন্যসহ স্বাভাবিক সংখ্যা কথায় লেখো।</em>
+<ol id="eip-id1170195386307" class="stepwise"><li>বাম দিকের অঙ্ক থেকে শুরু করো। প্রতি তিন ঘরের দলের সংখ্যাটি পড়ে তারপর দলের নাম বলো। এককের দলের নাম বলবে না।</li>
+<li>সংখ্যার তিন ঘরের দলগুলো আলাদা করতে কমা ব্যবহার করো।</li></ol></li>
+<li><em>স্থানীয় মান ব্যবহার করে শূন্যসহ স্বাভাবিক সংখ্যা অঙ্কে লেখো।</em>
+<ol id="eip-id1170195386319" class="stepwise"><li>তিন ঘরের দল বোঝায় এমন শব্দগুলো চিহ্নিত করো। (মনে রেখো, এককের দলের নাম বলা হয় না।)</li>
+<li>প্রতি দলে প্রয়োজনীয় স্থান বোঝাতে তিনটি ফাঁকা ঘর আঁকো।</li>
+<li>প্রতি দলের সংখ্যাটি পড়ো এবং অঙ্কগুলো সঠিক স্থানে বসাও।</li></ol></li>
+
+<li><em>নির্দিষ্ট স্থানে শূন্যসহ স্বাভাবিক সংখ্যার আসন্ন মান নির্ণয় করো।</em>
+<ol id="eip-id1170195386333" class="stepwise"><li>নির্ধারিত স্থানটি চেনো। এর বাম পাশের অঙ্কগুলো বদলাবে না; তবে নির্ধারিত স্থানে 9 থাকলে বদলাতে পারে। (3 নম্বর ধাপ দেখো।)</li>
+<li>নির্ধারিত স্থানের ঠিক ডান পাশের অঙ্কের নিচে দাগ দাও।</li>
+<li>অঙ্কটির মান 5 বা তার বেশি কি না দেখো। হ্যাঁ হলে—নির্ধারিত স্থানের অঙ্কে 1 যোগ করো। ওই অঙ্ক 9 হলে তার বদলে 0 বসিয়ে ঠিক বাম পাশের অঙ্কে 1 যোগ করো। সেই অঙ্কও 9 হলে একই কাজ আবার করো। না হলে—নির্ধারিত স্থানের অঙ্ক বদলাবে না।</li>
+<li>নির্ধারিত স্থানের ডান পাশের সব অঙ্ক শূন্য দিয়ে বদলাও।</li></ol></li>
+</ul></section><section id="fs-id2279009" class="section-exercises">
+<section id="fs-id2318815" class="practice-perfect">
+<h3>অনুশীলনে দক্ষতা বাড়ে</h3>
+<p id="fs-id2686876"><em>স্বাভাবিক সংখ্যা ও শূন্যসহ স্বাভাবিক সংখ্যা চেনো</em> </p><p id="eip-498">নিচের প্রতিটি অনুশীলনে দেওয়া সংখ্যাগুলোর মধ্যে কোনগুলো <span class="token">ⓐ</span> স্বাভাবিক সংখ্যা এবং কোনগুলো <span class="token">ⓑ</span> শূন্যসহ স্বাভাবিক সংখ্যা, নির্ণয় করো।</p><div id="fs-id1617693"><p class="source-label">উৎসের কাজ: fs-id1617693</p><div id="fs-id2475713">
+<p id="fs-id1029877"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>,</mo><mn>5</mn><mo>,</mo><mn>8.1</mn><mo>,</mo><mn>125</mn></mrow></math></p>
+</div>
+<div id="fs-id2686692">
+<ol id="fs-id1933041" class="circled"><li><span class="token">ⓐ</span> 5, 125</li>
+<li><span class="token">ⓑ</span> 0, 5, 125</li></ol></div>
+</div><div id="fs-id834824"><p class="source-label">উৎসের কাজ: fs-id834824</p>
+<div id="fs-id1566499">
+<p id="fs-id1321421"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>7</mn><mrow><mn>10</mn></mrow></mfrac><mo>,</mo><mn>3</mn><mo>,</mo><mn>20.5</mn><mo>,</mo><mn>300</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2925019"><p class="source-label">উৎসের কাজ: fs-id2925019</p><div id="fs-id2186619">
+<p id="fs-id1717367"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>4</mn><mn>9</mn></mfrac><mo>,</mo><mn>3.9</mn><mo>,</mo><mn>50</mn><mo>,</mo><mn>221</mn></mrow></math></p>
+</div>
+<div id="fs-id1932107">
+<ol id="fs-id2278021" class="circled"><li><span class="token">ⓐ</span> 50, 221</li>
+<li><span class="token">ⓑ</span> 0, 50, 221</li></ol>
+</div>
+</div><div id="fs-id2134956"><p class="source-label">উৎসের কাজ: fs-id2134956</p>
+<div id="fs-id1367088">
+<p id="fs-id2452665"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>3</mn><mn>5</mn></mfrac><mo>,</mo><mn>10</mn><mo>,</mo><mn>303</mn><mo>,</mo><mn>422.6</mn></mrow></math></p>
+</div>
+</div>
+<p id="fs-id2960237"><em>মডেলে শূন্যসহ স্বাভাবিক সংখ্যা দেখাই</em> </p><p id="eip-954">নিচের অনুশীলনগুলোতে স্থানীয় মানের সাহায্যে সংখ্যাটি নির্ণয় করো। মডেলে ব্যবহার করা হয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক।</p><div id="fs-id1224988"><p class="source-label">উৎসের কাজ: fs-id1224988</p><div id="fs-id2437093">
+<span id="fs-id1393361" class="media-description">চিত্রের বর্ণনা: তিন ধরনের দল: পাঁচটি বর্গ, প্রতিটিতে 10 সারি ও 10 কলামে 100 ব্লক; ছয়টি অনুভূমিক দণ্ড, প্রতিটিতে 10 ব্লক; এবং 1টি আলাদা ব্লক।</span>
+</div>
+<div id="fs-id1385187">
+<p id="fs-id2590572">561</p>
+</div>
+</div><div id="fs-id2646862"><p class="source-label">উৎসের কাজ: fs-id2646862</p><div id="fs-id2805128">
+<span id="fs-id1284927" class="media-description">চিত্রের বর্ণনা: তিন ধরনের দল: তিনটি বর্গ, প্রতিটিতে 10 সারি ও 10 কলামে 100 ব্লক; আটটি অনুভূমিক দণ্ড, প্রতিটিতে 10 ব্লক; এবং 4টি আলাদা ব্লক।</span>
+</div>
+</div><div id="fs-id1462995"><p class="source-label">উৎসের কাজ: fs-id1462995</p><div id="fs-id2946657">
+<span id="fs-id2675330" class="media-description">চিত্রের বর্ণনা: চারটি বর্গ, প্রতিটিতে 10 সারি ও 10 কলামে 100 ব্লক; এবং 7টি আলাদা ব্লক। দশকের দণ্ড নেই।</span>
+</div>
+<div id="fs-id2669520">
+<p id="fs-id1988320">407</p>
+</div>
+</div><div id="fs-id1339977"><p class="source-label">উৎসের কাজ: fs-id1339977</p><div id="fs-id1577980">
+<span id="fs-id2716627" class="media-description">চিত্রের বর্ণনা: ছয়টি বর্গ, প্রতিটিতে 10 সারি ও 10 কলামে 100 ব্লক; এবং 2টি অনুভূমিক দণ্ড, প্রতিটিতে 10 ব্লক। আলাদা এককের ব্লক নেই।</span>
+</div>
+</div><p id="fs-id1362956"><em>অঙ্কটি কোন স্থানে আছে চেনো</em> </p><p id="eip-439">নিচের অনুশীলনগুলোতে দেওয়া অঙ্কগুলো কোন স্থানে আছে নির্ণয় করো।</p><div id="fs-id2466117"><p class="source-label">উৎসের কাজ: fs-id2466117</p><div id="fs-id1238472">
+<p id="fs-id2375962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>579,601</mn></mrow></math></p>
+<ol id="eip-id1168289429789" class="circled"><li><span class="token">ⓐ</span> 9</li>
+<li><span class="token">ⓑ</span> 6</li>
+<li><span class="token">ⓒ</span> 0</li>
+<li><span class="token">ⓓ</span> 7</li>
+<li><span class="token">ⓔ</span> 5</li>
+</ol>
+</div>
+<div id="fs-id2279435">
+<ol id="eip-id1168289429815" class="circled"><li><span class="token">ⓐ</span> হাজার</li>
+<li><span class="token">ⓑ</span> শতক</li>
+<li><span class="token">ⓒ</span> দশক</li>
+<li><span class="token">ⓓ</span> দশ হাজার</li>
+<li><span class="token">ⓔ</span> একশত হাজার</li>
+</ol>
+</div>
+</div><div id="fs-id1522372"><p class="source-label">উৎসের কাজ: fs-id1522372</p><div id="fs-id1684233">
+<p id="fs-id2208962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>398,127</mn></mrow></math></p>
+<ol id="eip-id1168287380517" class="circled"><li><span class="token">ⓐ</span> 9</li>
+<li><span class="token">ⓑ</span> 3</li>
+<li><span class="token">ⓒ</span> 2</li>
+<li><span class="token">ⓓ</span> 8</li>
+<li><span class="token">ⓔ</span> 7</li>
+</ol>
+</div>
+</div><div id="fs-id2197876"><p class="source-label">উৎসের কাজ: fs-id2197876</p><div id="fs-id2273409">
+<p id="fs-id2494777"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>56,804,379</mn></mrow></math></p>
+<ol id="eip-id1168288321948" class="circled"><li><span class="token">ⓐ</span> 8</li>
+<li><span class="token">ⓑ</span> 6</li>
+<li><span class="token">ⓒ</span> 4</li>
+<li><span class="token">ⓓ</span> 7</li>
+<li><span class="token">ⓔ</span> 0</li>
+</ol>
+</div>
+<div id="fs-id2323011">
+<ol id="eip-id1168288327374" class="circled"><li><span class="token">ⓐ</span> একশত হাজার</li>
+<li><span class="token">ⓑ</span> মিলিয়ন</li>
+<li><span class="token">ⓒ</span> হাজার</li>
+<li><span class="token">ⓓ</span> দশক</li>
+<li><span class="token">ⓔ</span> দশ হাজার</li>
+</ol>
+
+</div>
+</div><div id="fs-id1350682"><p class="source-label">উৎসের কাজ: fs-id1350682</p><div id="fs-id1464316">
+<p id="fs-id1948506"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>78,320,465</mn></mrow></math></p>
+<ol id="eip-id1168288227448" class="circled"><li><span class="token">ⓐ</span> 8</li>
+<li><span class="token">ⓑ</span> 4</li>
+<li><span class="token">ⓒ</span> 2</li>
+<li><span class="token">ⓓ</span> 6</li>
+<li><span class="token">ⓔ</span> 7</li>
+</ol>
+</div>
+</div><p id="fs-id769116"><em>স্থানীয় মান ব্যবহার করে শূন্যসহ স্বাভাবিক সংখ্যা কথায় লেখো</em> </p><p id="eip-882">নিচের অনুশীলনগুলোতে প্রতিটি সংখ্যা কথায় লেখো।</p><div id="fs-id2221898"><p class="source-label">উৎসের কাজ: fs-id2221898</p>
+<div id="fs-id1336694">
+<p id="fs-id1176880"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,078</mn></mrow></math></p>
+</div>
+<div id="fs-id1231920">
+<p id="fs-id1578269">এক হাজার, আটাত্তর</p>
+</div>
+</div>
+<div id="fs-id1190749"><p class="source-label">উৎসের কাজ: fs-id1190749</p>
+<div id="fs-id1629686">
+<p id="fs-id2702545"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5,902</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1222581"><p class="source-label">উৎসের কাজ: fs-id1222581</p>
+<div id="fs-id2466500">
+<p id="fs-id1193988"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>364,510</mn></mrow></math></p>
+</div>
+<div id="fs-id2137703">
+<p id="fs-id1841547">তিনশত চৌষট্টি হাজার, পাঁচশত দশ</p>
+</div>
+</div>
+<div id="fs-id1822153"><p class="source-label">উৎসের কাজ: fs-id1822153</p>
+<div id="fs-id2276526">
+<p id="fs-id1581240"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>146,023</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2908841"><p class="source-label">উৎসের কাজ: fs-id2908841</p>
+<div id="fs-id2483981">
+<p id="fs-id2767318"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5,846,103</mn></mrow></math></p>
+</div>
+<div id="fs-id2953088">
+<p id="fs-id2703955">পাঁচ মিলিয়ন, আটশত ছেচল্লিশ হাজার, একশত তিন</p>
+</div>
+</div>
+<div id="fs-id1798411"><p class="source-label">উৎসের কাজ: fs-id1798411</p>
+<div id="fs-id1946634">
+<p id="fs-id1611308"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,458,398</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2159905"><p class="source-label">উৎসের কাজ: fs-id2159905</p>
+<div id="fs-id2772277">
+<p id="fs-id1862644"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>37,889,005</mn></mrow></math></p>
+</div>
+<div id="fs-id1009593">
+<p id="fs-id1236756">সাঁইত্রিশ মিলিয়ন, আটশত ঊননব্বই হাজার, পাঁচ</p>
+</div>
+</div>
+<div id="fs-id1166761301603"><p class="source-label">উৎসের কাজ: fs-id1166761301603</p>
+<div id="fs-id1020409">
+<p id="fs-id1543134"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>62,008,465</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2562890"><p class="source-label">উৎসের কাজ: fs-id2562890</p>
+<div id="fs-id3402452">
+<p id="fs-id2678387">মাউন্ট রেইনিয়ারের উচ্চতা <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14,410</mn></mrow></math> ফুট।</p>
+</div>
+<div id="fs-id2669011">
+<p id="fs-id3398681">চৌদ্দ হাজার, চারশত দশ</p>
+</div>
+</div>
+<div id="fs-id3014390"><p class="source-label">উৎসের কাজ: fs-id3014390</p>
+<div id="fs-id1213910">
+<p id="fs-id4286399">মাউন্ট অ্যাডামসের উচ্চতা <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12,276</mn></mrow></math> ফুট।</p>
+</div>
+</div>
+<div id="fs-id1341564"><p class="source-label">উৎসের কাজ: fs-id1341564</p>
+<div id="fs-id2495818">
+<p id="fs-id3202675">সত্তর বছরে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>613,200</mn></mrow></math> ঘণ্টা।</p>
+</div>
+<div id="fs-id1891547">
+<p id="fs-id1358066">ছয়শত তেরো হাজার, দুইশত</p>
+</div>
+</div>
+<div id="fs-id1300121"><p class="source-label">উৎসের কাজ: fs-id1300121</p>
+<div id="fs-id2223819">
+<p id="fs-id1633813">এক বছরে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>525,600</mn></mrow></math> মিনিট।</p>
+</div>
+</div>
+<div id="fs-id1249481"><p class="source-label">উৎসের কাজ: fs-id1249481</p>
+<div id="fs-id2198126">
+<p id="fs-id1177694">মার্কিন জনশুমারির হিসাব অনুযায়ী মায়ামি-ডেইড কাউন্টির আনুমানিক জনসংখ্যা ছিল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2,617,176</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1215917">
+<p id="fs-id1193287">দুই মিলিয়ন, ছয়শত সতেরো হাজার, একশত ছিয়াত্তর</p>
+</div>
+</div>
+<div id="fs-id1386002"><p class="source-label">উৎসের কাজ: fs-id1386002</p>
+<div id="fs-id1172613">
+<p id="fs-id2754303">শিকাগোর জনসংখ্যা ছিল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2,718,782</mn><mo>.</mo></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1611785"><p class="source-label">উৎসের কাজ: fs-id1611785</p>
+<div id="fs-id1893505">
+<p id="fs-id1515209">পূর্বাভাস অনুযায়ী শিক্ষার্থীর সংখ্যা হবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>23,867,000</mn></mrow></math> জন, পাঁচ বছর পর মার্কিন যুক্তরাষ্ট্রের কলেজ ও বিশ্ববিদ্যালয়গুলোতে।</p>
+</div>
+<div id="fs-id2261866">
+<p id="fs-id1166481">তেইশ মিলিয়ন, আটশত সাতষট্টি হাজার</p>
+</div>
+</div>
+<div id="fs-id1362934"><p class="source-label">উৎসের কাজ: fs-id1362934</p>
+<div id="fs-id1239323">
+<p id="fs-id2670940">প্রায় বারো বছর আগে ছিল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20,665,415</mn></mrow></math>টি নিবন্ধিত গাড়ি, ক্যালিফোর্নিয়ায়।</p>
+</div>
+</div>
+<div id="fs-id1339309"><p class="source-label">উৎসের কাজ: fs-id1339309</p>
+<div id="fs-id1546274">
+<p id="fs-id1860576">চীনের জনসংখ্যা পৌঁছাবে বলে প্রত্যাশা করা হয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,377,583,156</mn></mrow></math> জনে, সাল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2016</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1263173">
+<p id="fs-id2221988">এক বিলিয়ন, তিনশত সাতাত্তর মিলিয়ন, পাঁচশত তিরাশি হাজার, একশত ছাপ্পান্ন</p>
+</div>
+</div>
+<div id="fs-id1544452"><p class="source-label">উৎসের কাজ: fs-id1544452</p>
+<div id="fs-id2443426">
+<p id="fs-id2344514">ভারতের আনুমানিক জনসংখ্যা ধরা হয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,267,401,849</mn></mrow></math> জন, তারিখ জুলাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo><mn>2014</mn><mo>.</mo></mrow></math></p>
+</div>
+</div>
+<p id="fs-id1714165"><em>স্থানীয় মান ব্যবহার করে শূন্যসহ স্বাভাবিক সংখ্যা অঙ্কে লেখো</em> </p><p id="eip-849">নিচের অনুশীলনগুলোতে কথায় দেওয়া প্রতিটি শূন্যসহ স্বাভাবিক সংখ্যা অঙ্কে লেখো।</p><div id="fs-id226532"><p class="source-label">উৎসের কাজ: fs-id226532</p>
+<div id="fs-id1217055">
+<p id="fs-id1388718">চারশত বারো</p>
+</div>
+<div id="fs-id1227127">
+<p id="fs-id3324386">412</p>
+</div>
+</div>
+<div id="fs-id1384471"><p class="source-label">উৎসের কাজ: fs-id1384471</p>
+<div id="fs-id1221829">
+<p id="fs-id2291517">দুইশত তিপ্পান্ন</p>
+</div>
+</div>
+<div id="fs-id1633028"><p class="source-label">উৎসের কাজ: fs-id1633028</p>
+<div id="fs-id2957960">
+<p id="fs-id2135363">পঁয়ত্রিশ হাজার, নয়শত পঁচাত্তর</p>
+</div>
+<div id="fs-id1693609">
+<p id="fs-id1828858">35,975</p>
+</div>
+</div>
+<div id="fs-id2760170"><p class="source-label">উৎসের কাজ: fs-id2760170</p>
+<div id="fs-id1265455">
+<p id="fs-id2288048">একষট্টি হাজার, চারশত পনেরো</p>
+</div>
+</div>
+<div id="fs-id1609639"><p class="source-label">উৎসের কাজ: fs-id1609639</p>
+<div id="fs-id2319610">
+<p id="fs-id2491175">এগারো মিলিয়ন, চুয়াল্লিশ হাজার, একশত সাতষট্টি</p>
+</div>
+<div id="fs-id2474599">
+<p id="fs-id2277386">11,044,167</p>
+</div>
+</div>
+<div id="fs-id2353124"><p class="source-label">উৎসের কাজ: fs-id2353124</p>
+<div id="fs-id1387432">
+<p id="fs-id1397862">আঠারো মিলিয়ন, একশত দুই হাজার, সাতশত তিরাশি</p>
+</div>
+</div>
+<div id="fs-id328342"><p class="source-label">উৎসের কাজ: fs-id328342</p>
+<div id="fs-id1325594">
+<p id="fs-id1612747">তিন বিলিয়ন, দুইশত ছাব্বিশ মিলিয়ন, পাঁচশত বারো হাজার, সতেরো</p>
+</div>
+<div id="fs-id1883860">
+<p id="fs-id4126359">3,226,512,017</p>
+</div>
+</div>
+<div id="fs-id2241247"><p class="source-label">উৎসের কাজ: fs-id2241247</p>
+<div id="fs-id1892005">
+<p id="fs-id2171400">এগারো বিলিয়ন, চারশত একাত্তর মিলিয়ন, ছত্রিশ হাজার, একশত ছয়</p>
+</div>
+</div>
+<div id="fs-id1825926"><p class="source-label">উৎসের কাজ: fs-id1825926</p>
+<div id="fs-id1242968">
+<p id="fs-id2211384">পৃথিবীর আনুমানিক জনসংখ্যা ধরা হয়েছিল সাত বিলিয়ন, একশত তিয়াত্তর মিলিয়ন জন।</p>
+</div>
+<div id="fs-id1617818">
+<p id="fs-id2486210">7,173,000,000</p>
+</div>
+</div>
+<div id="fs-id2926292"><p class="source-label">উৎসের কাজ: fs-id2926292</p>
+<div id="fs-id1863618">
+<p id="fs-id1517446">সৌরজগতের আনুমানিক বয়স চার বিলিয়ন, পাঁচশত আটষট্টি মিলিয়ন বছর ধরা হয়।</p>
+</div>
+</div>
+<div id="fs-id1733890"><p class="source-label">উৎসের কাজ: fs-id1733890</p>
+<div id="fs-id3204832">
+<p id="fs-id1576329">টাহো হ্রদের পানির ধারকত্ব ঊনচল্লিশ ট্রিলিয়ন গ্যালন।</p>
+</div>
+<div id="fs-id2700417">
+<p id="fs-id2202290">39,000,000,000,000</p>
+</div>
+</div>
+<div id="fs-id1572155"><p class="source-label">উৎসের কাজ: fs-id1572155</p>
+<div id="fs-id2261957">
+<p id="fs-id2214935">যুক্তরাষ্ট্রীয় সরকারের বাজেট ছিল তিন ট্রিলিয়ন, পাঁচশত বিলিয়ন ডলার।</p>
+</div>
+</div>
+<p id="fs-id3228060"><em>শূন্যসহ স্বাভাবিক সংখ্যার আসন্ন মান নির্ণয়</em> </p><p id="eip-406">নিচের অনুশীলনগুলোতে নির্দেশিত স্থানে আসন্ন মান নির্ণয় করো।</p><div id="fs-id2188696"><p class="source-label">উৎসের কাজ: fs-id2188696</p><div id="fs-id2751447">
+<div id="fs-id1348283"><p>দশকের স্থানে আসন্ন মান নির্ণয় করো: </p><ol id="eip-id1168288303519" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>386</mn></math> </li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2,931</mn></math></li></ol></div></div>
+<div id="fs-id1383942">
+<ol id="fs-id825804" class="circled"><li><span class="token">ⓐ</span> 390</li>
+<li><span class="token">ⓑ</span> 2,930</li>
+</ol></div>
+</div><div id="fs-id1621308"><p class="source-label">উৎসের কাজ: fs-id1621308</p>
+<div id="fs-id1190161">
+<div id="fs-id1465181"><p>দশকের স্থানে আসন্ন মান নির্ণয় করো: </p><ol id="eip-id1168287165376" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>792</mn></math> </li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5,647</mn></math></li></ol></div></div>
+</div>
+<div id="fs-id1341642"><p class="source-label">উৎসের কাজ: fs-id1341642</p><div id="fs-id1965804">
+<div id="fs-id2475738"><p>শতকের স্থানে আসন্ন মান নির্ণয় করো: </p><ol id="eip-id1168287251240" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>13,748</mn></math> </li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>391,794</mn></math></li></ol></div>
+</div>
+<div id="fs-id1742262">
+<ol id="fs-id2433804" class="circled">
+<li><span class="token">ⓐ</span> 13,700</li>
+<li><span class="token">ⓑ</span> 391,800</li>
+</ol>
+</div>
+</div><div id="fs-id2240116"><p class="source-label">উৎসের কাজ: fs-id2240116</p>
+<div id="fs-id1573732">
+<div id="fs-id1246712"><p>শতকের স্থানে আসন্ন মান নির্ণয় করো:</p><ol id="eip-id1168287190960" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28,166</mn></math> </li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>481,628</mn></math></li></ol></div></div>
+</div>
+<div id="fs-id1387845"><p class="source-label">উৎসের কাজ: fs-id1387845</p><div id="fs-id1161100">
+<p id="fs-id1136960">দশকের স্থানে আসন্ন মান নির্ণয় করো:</p>  <ol id="eip-id1168287180632" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1,492</mn></math> </li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1,497</mn></math></li></ol></div>
+<div id="fs-id1574330">
+<ol id="fs-id1973719" class="circled"><li><span class="token">ⓐ</span> 1,490</li>
+<li><span class="token">ⓑ</span> 1,500</li>
+</ol>
+</div>
+</div><div id="fs-id1516723"><p class="source-label">উৎসের কাজ: fs-id1516723</p>
+<div id="fs-id2926660">
+<div id="fs-id1357237"><p>হাজারের স্থানে আসন্ন মান নির্ণয় করো: </p><ol id="eip-id1168288217775" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2,391</mn></math> </li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2,795</mn></math> </li></ol></div></div>
+</div>
+<div id="fs-id1185521"><p class="source-label">উৎসের কাজ: fs-id1185521</p><div id="fs-id2626750">
+<div id="fs-id1608098"><p>শতকের স্থানে আসন্ন মান নির্ণয় করো: </p><ol id="eip-id1168288182229" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>63,994</mn></math></li> <li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>63,949</mn></math>  </li></ol></div></div>
+<div id="fs-id1560808">
+<div id="fs-id1177121"><ol id="eip-id1168287109226" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>64,000</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>63,900</mn></math></li></ol></div></div>
+</div><div id="fs-id1372149"><p class="source-label">উৎসের কাজ: fs-id1372149</p><div id="fs-id1605093">
+<div id="fs-id892326"><p>হাজারের স্থানে আসন্ন মান নির্ণয় করো:</p><ol id="eip-id1168288177128" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>163,584</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>163,246</mn></math></li></ol></div></div>
+</div></section>
+<section id="fs-id1717629" class="everyday">
+<h3>দৈনন্দিন গণিত</h3>
+<div id="fs-id1294881"><p class="source-label">উৎসের কাজ: fs-id1294881</p>
+<div id="fs-id1744657">
+<p id="fs-id2692049"><em>চেক লেখা</em> হোর্হে একটি গাড়ি কিনেছে এই দামে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$24,493</mtext><mo>.</mo></mrow></math> সে চেক দিয়ে গাড়ির দাম দিয়েছে। কেনার দামটি কথায় লেখো।</p>
+</div>
+<div id="fs-id764785">
+<p id="fs-id2587177">চব্বিশ হাজার, চারশত তিরানব্বই ডলার</p>
+</div>
+</div>
+<div id="fs-id2610406"><p class="source-label">উৎসের কাজ: fs-id2610406</p>
+<div id="fs-id1899511">
+<p id="fs-id2390911"><em>চেক লেখা</em> মারিসার রান্নাঘর সংস্কারের খরচ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$18,549</mtext><mo>.</mo></mrow></math> সে ঠিকাদারকে চেক দিয়েছে। পরিশোধ করা অর্থের পরিমাণ কথায় লেখো।</p>
+</div>
+</div>
+<div id="fs-id2792494"><p class="source-label">উৎসের কাজ: fs-id2792494</p><div id="fs-id1816472">
+<p id="fs-id1317952"><em>গাড়ি কেনা</em> হোর্হে একটি গাড়ি কিনেছে এই দামে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$24,493</mtext><mo>.</mo></mrow></math> নিচের প্রতিটি এককের নিকটতম গুণিতকে দামের আসন্ন মান নির্ণয় করো:</p>
+<ol id="eip-id1168288191463" class="circled"><li><span class="token">ⓐ</span> দশ ডলার</li>
+<li><span class="token">ⓑ</span> একশত ডলার</li>
+<li><span class="token">ⓒ</span> এক হাজার ডলার</li>
+<li><span class="token">ⓓ</span> দশ হাজার ডলার</li></ol></div>
+<div id="fs-id1154314">
+<ol id="eip-id1168288210369" class="circled"><li><span class="token">ⓐ</span> $24,490</li><li><span class="token">ⓑ</span> $24,500 </li><li><span class="token">ⓒ</span> $24,000 </li><li><span class="token">ⓓ</span> $20,000</li></ol></div>
+</div><div id="fs-id1604312"><p class="source-label">উৎসের কাজ: fs-id1604312</p><div id="fs-id1166211">
+<p id="fs-id1932966"><em>রান্নাঘর সংস্কার</em> মারিসার রান্নাঘর সংস্কারের খরচ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$18,549</mtext><mo>.</mo></mrow></math> নিচের প্রতিটি এককের নিকটতম গুণিতকে খরচের আসন্ন মান নির্ণয় করো:</p>
+<ol id="eip-id1168287387980" class="circled"><li><span class="token">ⓐ</span> দশ ডলার</li>
+<li><span class="token">ⓑ</span> একশত ডলার</li>
+<li><span class="token">ⓒ</span> এক হাজার ডলার</li>
+<li><span class="token">ⓓ</span> দশ হাজার ডলার</li></ol></div>
+</div><div id="fs-id2609369"><p class="source-label">উৎসের কাজ: fs-id2609369</p><div id="fs-id2058233">
+<p id="fs-id4171773"><em>জনসংখ্যা</em> চীনের জনসংখ্যা ছিল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,355,692,544</mn></mrow></math> জনে, সাল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2014</mn><mo>.</mo></mrow></math> নিচের প্রতিটি এককের নিকটতম গুণিতকে জনসংখ্যার আসন্ন মান নির্ণয় করো:</p><ol id="eip-id1168289677973" class="circled"><li><span class="token">ⓐ</span> এক বিলিয়ন জন</li>
+<li><span class="token">ⓑ</span> একশত মিলিয়ন জন</li>
+<li><span class="token">ⓒ</span> এক মিলিয়ন জন</li></ol></div>
+<div id="fs-id1177141"><ol id="eip-id1168289677990" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1,000,000,000</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1,400,000,000</mn></math></li><li><span class="token">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1,356,000,000</mn></math></li></ol></div>
+</div><div id="fs-id1806959"><p class="source-label">উৎসের কাজ: fs-id1806959</p><div id="fs-id1792359">
+<p id="fs-id1270274"><em>জ্যোতির্বিজ্ঞান</em> পৃথিবী ও সূর্যের মধ্যকার গড় দূরত্ব <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>149,597,888</mn></mrow></math> কিলোমিটার। নিচের প্রতিটি এককের নিকটতম গুণিতকে দূরত্বের আসন্ন মান নির্ণয় করো:</p><ol id="eip-id1168288211528" class="circled"><li><span class="token">ⓐ</span> একশত মিলিয়ন কিলোমিটার</li>
+<li><span class="token">ⓑ</span> দশ মিলিয়ন কিলোমিটার</li>
+<li><span class="token">ⓒ</span> এক মিলিয়ন কিলোমিটার</li></ol></div>
+</div></section>
+<section id="fs-id1345943" class="writing">
+<h3>লিখে ব্যাখ্যা করি</h3>
+<div id="fs-id3202450"><p class="source-label">উৎসের কাজ: fs-id3202450</p>
+<div id="fs-id2410682">
+<p id="fs-id1946666">স্বাভাবিক সংখ্যা আর শূন্যসহ স্বাভাবিক সংখ্যার পার্থক্য নিজের ভাষায় বোঝাও।</p>
+</div>
+<div id="fs-id1948767">
+<p id="fs-id2701563">উত্তরের ভাষা ভিন্ন হতে পারে। স্বাভাবিক সংখ্যার সঙ্গে শূন্য যোগ করলেই শূন্যসহ স্বাভাবিক সংখ্যার সমষ্টি পাওয়া যায়।</p>
+</div>
+</div>
+<div id="fs-id1258379"><p class="source-label">উৎসের কাজ: fs-id1258379</p>
+<div id="fs-id4295295">
+<p id="fs-id1350802">দৈনন্দিন জীবন থেকে এমন একটি উদাহরণ দাও যেখানে আসন্ন মান নির্ণয় করলে সুবিধা হয়।</p>
+</div>
+</div></section><section id="eip-823" class="self-check"><h3>নিজের শেখা যাচাই</h3><p id="eip-949"><span class="token">ⓐ</span> অনুশীলনগুলো শেষ করে এই ছক দিয়ে দেখো, এই অংশের শেখার লক্ষ্যগুলো কতটা আয়ত্ত করেছ। </p>
+
+<figure id="eip-id1165721974706" class="unnumbered"><span id="eip-id1165721974707" class="media-description">চিত্রের বর্ণনা: নিজের শেখা যাচাইয়ের ছক। ছয়টি কাজ: স্বাভাবিক ও শূন্যসহ স্বাভাবিক সংখ্যা চেনা; মডেলে সংখ্যা দেখানো; অঙ্কের স্থান চেনা; স্থানীয় মান দিয়ে সংখ্যা কথায় লেখা; স্থানীয় মান দিয়ে সংখ্যা অঙ্কে লেখা; আসন্ন মান নির্ণয়। প্রতিটি কাজের জন্য তিনটি অবস্থা বেছে নেওয়া যায়: আত্মবিশ্বাসের সঙ্গে পারি; কিছু সাহায্যে পারি; না—এখনও বুঝিনি।</span></figure>
+
+
+<p id="eip-id1168469895457"><span class="token">ⓑ</span> তোমার বেশির ভাগ চিহ্ন যদি হয়… </p>
+<p id="eip-id1168469895465">…আত্মবিশ্বাসের সঙ্গে পারি। অভিনন্দন! তুমি এই অংশের লক্ষ্যগুলো অর্জন করেছ। কোন শেখার কৌশল কাজে লেগেছে ভেবে দেখো, যাতে সেগুলো আবার ব্যবহার করতে পারো। এই কাজগুলো পারবে বলে আত্মবিশ্বাস পেতে তুমি কী করেছ? নির্দিষ্ট করে বলো।</p>
+<p id="eip-id1168469895472">…কিছু সাহায্যে পারি। দ্রুত এদিকে নজর দেওয়া দরকার, কারণ যে বিষয় ভালো শেখা হয়নি তা পরের সাফল্যের পথে বাধা হতে পারে। গণিতে প্রতিটি বিষয় আগের শেখার ওপর গড়ে ওঠে। সামনে যাওয়ার আগে ভিত্তি মজবুত করা জরুরি। কার কাছে সাহায্য চাইতে পারো? সহপাঠী ও শিক্ষক সাহায্য করতে পারেন। শিক্ষাপ্রতিষ্ঠানে গণিতের সহায়তাকারী শিক্ষক পাওয়া যায় এমন জায়গা কি আছে? তোমার শেখার কৌশল কি আরও ভালো করা যায়?</p>
+<p id="eip-id1168466338968">…না—এখনও বুঝিনি! এটি সতর্ক হওয়ার সংকেত; উপেক্ষা কোরো না। এখনই সাহায্য নেওয়া উচিত, নইলে কাজের চাপ দ্রুত বেশি মনে হতে পারে। যত তাড়াতাড়ি সম্ভব শিক্ষকের সঙ্গে নিজের অবস্থার কথা বলো। একসঙ্গে পরিকল্পনা করে তোমার প্রয়োজনীয় সাহায্যের ব্যবস্থা করা যায়।</p></section></section><section id="bd-m81243-glossary"><h2>শব্দার্থ</h2><dl><div id="fs-id2642858"><dt>স্থানাঙ্ক</dt><dd id="fs-id2145854">সংখ্যারেখায় কোনো বিন্দুর সঙ্গে যুক্ত সংখ্যাটিকে ওই বিন্দুর স্থানাঙ্ক বলে।</dd></div><div id="fs-id2935860"><dt>স্বাভাবিক সংখ্যা</dt><dd id="fs-id2567732">স্বাভাবিক সংখ্যাগুলো হলো 1, 2, 3, …। </dd></div><div id="fs-id2711214"><dt>সংখ্যারেখা</dt><dd id="fs-id2443061">সংখ্যা দেখাতে সংখ্যারেখা ব্যবহার করা হয়। সংখ্যারেখায় বাম থেকে ডানে গেলে সংখ্যার মান বাড়ে, আর ডান থেকে বামে গেলে কমে।</dd></div><div id="fs-id3330600"><dt>মূলবিন্দু</dt><dd id="fs-id2284600">সংখ্যারেখায় 0 দিয়ে চিহ্নিত বিন্দুটি মূলবিন্দু।</dd></div><div id="fs-id1336470"><dt>স্থানীয় মানভিত্তিক সংখ্যা পদ্ধতি</dt><dd id="fs-id2263265">আমাদের সংখ্যা পদ্ধতিকে স্থানীয় মানভিত্তিক পদ্ধতি বলা হয়, কারণ কোনো অঙ্কের মান নির্ভর করে সংখ্যাটিতে অঙ্কটি কোন স্থানে আছে তার ওপর।</dd></div><div id="fs-id2263270"><dt>আসন্ন মান নির্ণয়</dt><dd id="fs-id2326485">কোনো সংখ্যাকে কাছাকাছি একটি মান দিয়ে প্রকাশ করার প্রক্রিয়াকে আসন্ন মান নির্ণয় বলে।</dd></div><div id="fs-id4338000"><dt>শূন্যসহ স্বাভাবিক সংখ্যা</dt><dd id="fs-id1934263">শূন্যসহ স্বাভাবিক সংখ্যাগুলো হলো 0, 1, 2, 3, …।</dd></div></dl></section><footer id="attribution" lang="en"><h2>Attribution / উৎস ও পরিবর্তন</h2>
+<p>Based on OpenStax, <em>Prealgebra 2e</em>, Lynn Marecek and MaryAnne Anthony-Smith; Copyright Rice University. Canonical source: <a href="https://github.com/openstax/osbooks-prealgebra-bundle/tree/38cae454e644abf9f0a623e876994553881597c9">frozen OpenStax bundle</a>, complete module m81243, including title, objectives, all eight content sections and glossary. Indonesian edition by the KokunoYumeto project; its stated model provenance is “OpenAI Codex gpt-5.6-sol, Ultra.” Original human credits and notices are retained in provenance/notices.</p>
+<p>Bangladesh Bangla translation, text-equivalent figure renditions, plain-language companion and expanded answers: Language Allocation project, AI-assisted draft, 2026-08-30–31. Not reviewed by a Bangladesh teacher. Faithful module retains original digits, dollars, hierarchy, IDs and MathML values; the companion uses Bangla digits and separately authored classroom contexts. The external manipulative activity mentioned by the source is not bundled or counted as translated.</p>
+<p>Source and derivative: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0</a>, subject to component-specific notices. Supplied as-is without warranties; see the retained license. OpenStax and Rice University do not endorse this translation. Their names, logos and marks are not licensed. Bangladesh canon references are consulted for usage only, not relicensed or reproduced as a textbook.</p>
+<p>License URI: https://creativecommons.org/licenses/by-nc-sa/4.0/</p>
+<p>Original book: https://openstax.org/details/books/prealgebra-2e</p></footer></main></body></html>
