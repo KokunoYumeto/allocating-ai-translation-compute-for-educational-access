@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="bn-Beng-BD"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>শূন্যসহ স্বাভাবিক সংখ্যার যোগ</title><style>
+@font-face{font-family:"Noto Sans Bengali";src:url("../../assets/NumeracyBanglaMath.ttf") format("truetype");font-display:swap}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6f5f0;color:#172e35;font:20px/1.8 "Noto Sans Bengali","Nirmala UI",sans-serif}
+main{max-width:960px;margin:auto;background:white;padding:2rem 3rem}header{border-bottom:4px solid #226e65;padding-bottom:1rem}h1{font-size:2rem;line-height:1.5}h2{font-size:1.5rem;border-top:2px solid #b4cfc9;padding-top:1rem;margin-top:2rem}h3{font-size:1.15rem;color:#215b53;margin:1.4rem 0 .7rem}p{margin:.65rem 0}li{margin:.8rem 0}a{color:#125448;text-underline-offset:.2em}a:focus{outline:3px solid #bc6900}table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{border:1px solid #698481;padding:.5rem;text-align:left}th{background:#edf5f2}caption{text-align:left;font-weight:bold}.notice,aside{background:#f0f5f3;border-left:4px solid #426d64;padding:.8rem 1rem;margin:1.2rem 0}.kicker,.source-label{font-size:.85rem;color:#405655}.media-description{display:block;border:1px dashed #698481;padding:.6rem;margin:1rem 0}.numberline{word-spacing:.35em;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}math{font-size:1em}figure{margin:1rem 0}dfn{font-style:normal;font-weight:bold}.skip{display:block;padding:.5rem}footer{border-top:2px solid #698481;margin-top:3rem;padding-top:1rem;font-size:.85rem;overflow-wrap:anywhere}nav ul{padding-left:1.5rem}nav li{margin:.2rem 0}
+@media(max-width:600px){body{font-size:18px}main{padding:1rem}th,td{padding:.3rem}h1{font-size:1.65rem}}
+@media print{@page{size:A4;margin:18mm}body{background:white;font-size:12pt;color:black}main{padding:0;max-width:none}.skip{display:none}h1,h2,h3{break-after:avoid}tr,figure{break-inside:avoid}a{color:black}section{orphans:3;widows:3}}
+
+.circled{list-style:none;padding-left:0}td{overflow-wrap:anywhere}.table-scroll{overflow-x:auto}.table-scroll table{min-width:540px}.table-scroll:focus{outline:3px solid #bc6900}</style></head><body><a class="skip" href="#bd-source">পাঠে যাই</a><main><header><p>bn-Beng-BD · m81244 · পূর্ণ উৎস-খসড়া</p><h1>শূন্যসহ স্বাভাবিক সংখ্যার যোগ</h1></header><aside><p>এটি যোগের সম্পূর্ণ মডিউলের উৎস-অনুগত অনুবাদ-খসড়া; পূর্ণ প্রকাশনা বা শিক্ষক-পর্যালোচিত সংস্করণ নয়। উৎসের অঙ্ক, গাণিতিক চিহ্ন, নাম, প্রেক্ষাপট, মুদ্রা ও পরিমাপের একক রাখা হয়েছে। উৎসে উত্তরহীন প্রশ্নে নতুন উত্তর বসানো হয়নি; পূর্ণ ব্যাখ্যাসহ উত্তর ও শিশুর সহায়িকা আলাদা হবে। কয়েকটি ছবির ভুল বর্ণনা দৃশ্যমান চিত্র অনুযায়ী সংশোধিত; যোগের ছবিভিত্তিক ছকগুলো HTML ছকেও দেওয়া হয়েছে। ‘যোগের অভেদ বৈশিষ্ট্য/উপাদান’ ব্যাখ্যাসহ ব্যবহার করা সম্পাদকীয় পরিভাষা; স্থানীয় শিক্ষকের পর্যালোচনা বাকি। বাইরের অনলাইন উপকরণ এখানে অন্তর্ভুক্ত নয়।</p></aside><section id="bd-objectives"><h2>শেখার লক্ষ্য</h2><p id="para-00001">এই অংশ শেষে তুমি পারবে:</p><ul id="list-00001">
+<li>যোগের প্রতীক ব্যবহার করতে</li>
+<li>মডেল দিয়ে শূন্যসহ স্বাভাবিক সংখ্যার যোগ দেখাতে</li>
+<li>মডেল ছাড়া শূন্যসহ স্বাভাবিক সংখ্যা যোগ করতে</li>
+<li>কথায় বলা বিষয় গাণিতিক প্রতীকে লিখতে</li>
+<li>বাস্তব সমস্যায় শূন্যসহ স্বাভাবিক সংখ্যা যোগ করতে</li>
+</ul></section><article id="bd-source"><aside id="fs-id2299412" class="be-prepared">
+<p id="fs-id2646470">শুরু করার আগে প্রস্তুতি যাচাইয়ের এই প্রশ্নগুলোর উত্তর দাও।</p>
+<div id="fs-idm207409024"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-idm207409024</p>
+<div id="fs-idm215457168">
+<p id="fs-idm214637312">কোন সংখ্যাটি দেখানো হয়েছে এই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লকগুলো দিয়ে?<br/>
+<span id="fs-id2778433" class="media-description">চিত্রের বর্ণনা: তিন ধরনের উপকরণ আছে: দুটি শতকের বর্গ, প্রতিটিতে 10টি সারি ও 10টি কলামে মোট 100টি ছোট ঘর; 10টি ঘরের একটি অনুভূমিক দশকের দণ্ড; এবং 5টি আলাদা এককের ঘর।</span><br/>
+এই প্রশ্নের উত্তর ঠিক না হলে আবার দেখো <a href="../m81243/index.html#fs-id2222880"><span data-editorial="true">উৎসের উদাহরণ (fs-id2222880)</span></a>.</p>
+</div>
+<div id="fs-idm219309424">
+<p id="fs-idm216142416"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>215</mn></mrow></math></p>
+</div>
+</div></aside><aside id="fs-id1122444" class="be-prepared">
+<div id="fs-idm218505136"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-idm218505136</p>
+<div id="fs-idm221149472">
+<p id="fs-idm218825920">তিনশত বিয়াল্লিশ হাজার ছয় সংখ্যাটি অঙ্কে লেখো।<br/>
+এই প্রশ্নের উত্তর ঠিক না হলে আবার দেখো <a href="../m81243/index.html#fs-id3202693"><span data-editorial="true">উৎসের উদাহরণ (fs-id3202693)</span></a>.</p>
+</div>
+<div id="fs-idm207579776">
+<p id="fs-idm221421664"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>342</mn><mo>,</mo><mn>006</mn></mrow></math></p>
+</div>
+</div>
+</aside><section id="fs-id2601285">
+<h2>যোগের প্রতীক ব্যবহার করি</h2>
+<p id="fs-id3165690">কলেজের একজন ছাত্র খণ্ডকালীন কাজ করে। গত সপ্তাহে সে সোমবার কাজ করেছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> ঘণ্টা এবং শুক্রবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math> ঘণ্টা। গত সপ্তাহে মোট কত ঘণ্টা কাজ করেছে তা বের করতে সে যোগ করেছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>.</mo></mrow></math></p>
+<p id="fs-id2606793">যোগ প্রক্রিয়ায় সংখ্যাগুলো একত্র করে পাওয়া যায় <dfn id="term-00001">যোগফল</dfn>। এখানে আমরা যোগ করব <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math> । এই দুই সংখ্যার যোগফল খুঁজতে লিখি:</p>
+<div id="fs-id1474530" class="unnumbered"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>4</mn></mrow></math></div>
+<p id="fs-id2619407">এটি পড়ি <em>তিন যোগ চার</em> আর এর ফল হলো তিন ও চারের যোগফল। সংখ্যা দুটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math> —এগুলোকে যোগের সংখ্যা বলা হয়। সংখ্যা ও প্রক্রিয়ার চিহ্ন নিয়ে গঠিত গাণিতিক প্রকাশকে রাশি বলা হয়।</p><aside id="fs-id1282344">
+<h3>যোগের প্রতীক</h3>
+<p id="fs-id1966740">যোগ বোঝাতে আমরা প্রতীক ও কথা ব্যবহার করতে পারি।</p>
+<table id="fs-id2711498" class="unnumbered"><caption data-editorial="true">যোগ: প্রক্রিয়া, প্রতীক, রাশি, পড়ার ধরন ও ফল</caption><thead><tr><th scope="col">প্রক্রিয়া</th><th scope="col">প্রতীক</th><th scope="col">রাশি</th><th scope="col">যেভাবে পড়ি</th><th scope="col">ফল</th></tr></thead><tbody><tr><td>যোগ</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>4</mn></mrow></math></td><td>তিন যোগ চার</td><td>যোগফল—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></td></tr></tbody></table>
+</aside>
+<div id="fs-id1519902">
+<div id="fs-id2294573"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2294573</p><div id="fs-id1330068">
+<div id="fs-id2703725">গাণিতিক প্রতীক থেকে কথায় লেখো:<ol id="eip-id1168287109262" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mo>+</mo><mn>1</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn><mo>+</mo><mn>14</mn></math></li></ol></div></div>
+<div id="fs-id2294519">
+<h3>সমাধান</h3><ul id="eip-id1168287334447" class="circled"><li><span class="token">ⓐ</span> রাশিটিতে 7 ও 1-এর মধ্যে যোগচিহ্ন আছে। আমরা এটি পড়ি <em>সাত যোগ এক</em>। ফল হলো <em>সাত ও একের যোগফল</em>.</li>
+<li><span class="token">ⓑ</span> রাশিটিতে 12 ও 14-এর মধ্যে যোগচিহ্ন আছে। আমরা এটি পড়ি <em>বারো যোগ চৌদ্দ</em>। ফল হলো <em>বারো ও চৌদ্দের যোগফল</em>.</li></ul></div>
+</div></div>
+<aside id="fs-id2202625" class="try">
+<div id="fs-id1386428"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1386428</p><div id="fs-id2842881">
+<p id="fs-id1549906">গাণিতিক প্রতীক থেকে কথায় লেখো:</p>
+<ol id="eip-id1168289469583" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>+</mo><mn>4</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>18</mn><mo>+</mo><mn>11</mn></math></li></ol></div>
+<div id="fs-id1948344"><ul id="eip-id1168288479736"><li><span class="token">ⓐ</span> আট যোগ চার; আট ও চারের যোগফল</li><li><span class="token">ⓑ</span> আঠারো যোগ এগারো; আঠারো ও এগারোর যোগফল</li></ul></div>
+</div></aside>
+<aside id="fs-id2216255" class="try">
+<div id="fs-id2334163"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2334163</p><div id="fs-id1525211">
+<p id="fs-id1630183">গাণিতিক প্রতীক থেকে কথায় লেখো:</p>
+<ol id="eip-id1168289631763" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>21</mn><mo>+</mo><mn>16</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>100</mn><mo>+</mo><mn>200</mn></math></li></ol></div>
+<div id="fs-id1577525"><ol id="eip-id1168288338262" class="circled"><li><span class="token">ⓐ</span> একুশ যোগ ষোলো; একুশ ও ষোলোর যোগফল</li><li><span class="token">ⓑ</span> একশত যোগ দুইশত; একশত ও দুইশতের যোগফল</li></ol></div>
+</div></aside>
+</section><section id="fs-id2145437"><h2>মডেল দিয়ে শূন্যসহ স্বাভাবিক সংখ্যার যোগ দেখাই</h2><p id="fs-id1484984">যোগ আসলে গণনা করা। আমরা মডেল দিয়ে যোগ দেখাব। ব্যবহার করব <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক। মনে রেখো, একটি এককের ব্লকের মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> আর একটি দশকের দণ্ডের মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mo>.</mo></mrow></math> এইমাত্র যে যোগের রাশিটি দেখেছি, তার মডেল দিয়ে শুরু করি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>4</mn><mo>.</mo></mrow></math></p>
+<p id="fs-id1567091">যোগের প্রতিটি সংখ্যা এর চেয়ে ছোট: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mo>,</mo></mrow></math> তাই এককের ব্লক ব্যবহার করতে পারি।</p>
+<table id="eip-167" class="unnumbered unstyled"><caption data-editorial="true">3 + 4 ব্লক দিয়ে দেখাই</caption><thead data-editorial="true"><tr><th scope="col">করণীয়</th><th scope="col">ব্লকের মডেল</th></tr></thead><tbody><tr><td>প্রথম সংখ্যা বোঝাতে 3টি ব্লক দিয়ে শুরু করি।</td><td><span id="eip-id1168288475996" class="media-description">চিত্রের বর্ণনা: সাদা পটভূমিতে তিনটি এককের বর্গ; নিচে 3 লেখা।</span></td></tr><tr><td>তারপর 4টি ব্লক দিয়ে দ্বিতীয় সংখ্যা দেখাই।</td><td><span id="eip-id1168288501014" class="media-description">চিত্রের বর্ণনা: দুই দল এককের বর্গ: প্রথম দলে তিনটি, নিচে 3; দ্বিতীয় দলে চারটি, নিচে 4।</span></td></tr><tr><td>সব মিলিয়ে কতটি ব্লক আছে গুনে দেখো।</td><td><span id="eip-id1168288501034" class="media-description">চিত্রের বর্ণনা: পাশাপাশি সাতটি এককের বর্গ; নিচে 7 লেখা।</span></td></tr></tbody></table><p id="fs-id1607848">মোট আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math> টি ব্লক। যোগফল দেখাতে ব্যবহার করি সমানচিহ্ন <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>(=)</mtext></mrow></math> । দুটি রাশি সমান—এমন গাণিতিক বাক্যকে সমীকরণ বলে। আমরা দেখিয়েছি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>7</mn><mo>.</mo></mrow></math></p><aside id="fs-id1171103645619" class="manipulative-math">হাতে-কলমে গণিতের কার্যপত্রের ‘মডেল দিয়ে শূন্যসহ স্বাভাবিক সংখ্যার যোগ’ কাজটি করলে শূন্যসহ স্বাভাবিক সংখ্যার যোগ আরও ভালোভাবে বুঝতে পারবে।</aside><div id="fs-id1239606"><div id="fs-id1471255"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1471255</p><div id="fs-id3961697">
+<p id="fs-id1899387">মডেল দিয়ে যোগ দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>+</mo><mn>6</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1969376">
+<h3>সমাধান</h3>
+<p id="fs-id1883656"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>+</mo><mn>6</mn></mrow></math> হলো যোগের রাশি। এখানে সংখ্যা দুটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math></p><p id="eip-id1170195494564">যোগের প্রতিটি সংখ্যা 10-এর কম, তাই এককের ব্লক ব্যবহার করতে পারি।</p>
+
+<table id="eip-951" class="unnumbered unstyled"><caption data-editorial="true">2 + 6 ব্লক দিয়ে দেখাই</caption><thead data-editorial="true"><tr><th scope="col">করণীয়</th><th scope="col">ব্লকের মডেল</th></tr></thead><tbody><tr><td>2টি ব্লক দিয়ে প্রথম সংখ্যা দেখাও।</td><td><span id="eip-id1168287484993" class="media-description">চিত্রের বর্ণনা: দুটি হালকা নীল এককের বর্গ; নিচে 2 লেখা।</span></td></tr><tr><td>6টি ব্লক দিয়ে দ্বিতীয় সংখ্যা দেখাও।</td><td><span id="eip-id1168287042738" class="media-description">চিত্রের বর্ণনা: দুটি হালকা নীল এককের বর্গের নিচে 2 এবং ছয়টি বর্গের নিচে 6 লেখা।</span></td></tr><tr><td>সব মিলিয়ে কতটি ব্লক আছে গুনে দেখো</td><td><span id="eip-id1168287554343" class="media-description">চিত্রের বর্ণনা: আটটি হালকা নীল এককের বর্গ; নিচে 8 লেখা।</span><br/>মোট আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math> টি ব্লক, তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>8</mn><mo>.</mo></mrow></math></td></tr></tbody></table></div>
+</div></div><aside id="fs-id1718496" class="try">
+<div id="fs-id2792546"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2792546</p>
+<div id="fs-id1404551">
+<p id="fs-id1395632">মডেল দিয়ে দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>6</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1833338">
+<p id="fs-id1171103910560"><br/><span id="fs-id2198152" class="media-description">চিত্রের বর্ণনা: তিনটি ধূসর এককের বর্গের পরে ফাঁক রেখে আরও ছয়টি বর্গ। নিচে যোগফলের সমীকরণ 3 + 6 = 9 লেখা।</span></p>
+</div>
+</div>
+</aside>
+<aside id="fs-id2454904" class="try">
+<div id="fs-id1886370"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1886370</p>
+<div id="fs-id1374158">
+<p id="fs-id1202710">মডেল দিয়ে দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>1</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1241970">
+<p id="fs-id1171105209419"><br/><span id="fs-id1790053" class="media-description">চিত্রের বর্ণনা: পাঁচটি ধূসর এককের বর্গের পাশে আরও একটি। মোট ছয়টি; নিচে 5 + 1 = 6 লেখা।</span></p>
+</div>
+</div>
+</aside>
+<p id="fs-id1825926">যোগ করে যখন এককের ব্লকের সংখ্যা হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> বা তার চেয়ে বেশি, তখন <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> টি এককের ব্লকের বদলে একটি দশকের দণ্ড নেব।</p>
+<div id="fs-id998472"><div id="fs-id1792383"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1792383</p>
+<div id="fs-id1569336">
+<p id="fs-id1550016">মডেল দিয়ে যোগ দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>8</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1471782">
+<h3>সমাধান</h3>
+<p id="fs-id1171103442800"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>8</mn></mrow></math> হলো যোগের রাশি। এখানে সংখ্যা দুটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn><mo>.</mo></mrow></math></p>
+
+<table id="eip-555" class="unnumbered unstyled"><caption data-editorial="true">5 + 8: দশটি এককের বদলে একটি দশক</caption><thead data-editorial="true"><tr><th scope="col">করণীয়</th><th scope="col">মডেল ও ফল</th></tr></thead><tbody><tr><td>যোগের প্রতিটি সংখ্যা 10-এর কম, তাই এককের ব্লক ব্যবহার করতে পারি।</td><td></td></tr><tr><td>5টি ব্লক দিয়ে প্রথম সংখ্যা দেখাও।</td><td><span id="eip-id1168288219210" class="media-description">চিত্রের বর্ণনা: পাশাপাশি পাঁচটি হালকা নীল এককের বর্গ, গাঢ় সীমানায় ঘেরা; নিচে 5 লেখা।</span></td></tr><tr><td>8টি ব্লক দিয়ে দ্বিতীয় সংখ্যা দেখাও।</td><td><span id="eip-id1168288219228" class="media-description">চিত্রের বর্ণনা: প্রথম দলে পাঁচটি হালকা নীল এককের বর্গ, নিচে 5; দ্বিতীয় দলে আটটি, নিচে 8 লেখা।</span></td></tr><tr><td>মোট ব্লক গুনে দেখো। 10টির বেশি আছে, তাই 10টি এককের ব্লকের বদলে 1টি দশকের দণ্ড নিই।</td><td><span id="eip-id1168288217527" class="media-description">চিত্রের বর্ণনা: পাঁচটি করে দুই দল এবং তিনটি এককের বর্গ আছে। পাঁচটি করে দুই দলের মোট দশটি বর্গ একসঙ্গে ঘিরে দেখানো হয়েছে। নিচে সেগুলোর বদলে দশটি ঘরযুক্ত একটি লাল দণ্ড; পাশে বাকি তিনটি হালকা নীল এককের বর্গ।</span></td></tr><tr><td>এখন আছে 1 দশক ও 3 একক, অর্থাৎ 13।</td><td>5 + 8 = 13</td></tr></tbody></table><p id="eip-571">খেয়াল করো, মডেলগুলোর নাম এককের ব্লক ও দশকের দণ্ড বলতে পারি, অথবা সংক্ষেপে বলতে পারি <em>একক</em> ও <em>দশক</em>। এখন থেকে সংক্ষিপ্ত নাম ব্যবহার করব, তবে মনে রেখো—অর্থ একই।</p></div>
+</div></div><aside id="fs-id1762424" class="try">
+<div id="fs-id2265162"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2265162</p>
+<div id="fs-id2562850">
+<p id="fs-id1827907">মডেল দিয়ে যোগ দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>7</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2140822">
+<p id="fs-id1171105511335"><br/><span id="fs-id4346927" class="media-description">চিত্রের বর্ণনা: দশটি ঘরযুক্ত একটি দশকের দণ্ড এবং দুটি এককের বর্গ। এগুলো দিয়ে 5 + 7 = 12 দেখানো হয়েছে।</span></p>
+</div>
+</div>
+</aside>
+<aside id="fs-id1408852" class="try">
+<div id="fs-id1863239"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1863239</p>
+<div id="fs-id2496120">
+<p id="fs-id1344440">মডেল দিয়ে যোগ দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>+</mo><mn>8</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2129995">
+<p id="fs-id1171105491944"><br/><span id="fs-id2171528" class="media-description">চিত্রের বর্ণনা: দশটি ঘরযুক্ত একটি দশকের দণ্ড এবং চারটি এককের বর্গ। এগুলো দিয়ে 6 + 8 = 14 দেখানো হয়েছে।</span></p>
+</div>
+</div>
+</aside>
+<p id="fs-id1608773">এবার মডেল দিয়ে দুই অঙ্কের সংখ্যার যোগ দেখাব।
+</p><div id="fs-id1392030"><div id="fs-id1939376"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1939376</p><div id="fs-id1243266">
+<p id="fs-id1372968">মডেল দিয়ে যোগ দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>17</mn><mo>+</mo><mn>26</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1966628">
+<h3>সমাধান</h3>
+<p id="eip-id2450011"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>17</mn><mo>+</mo><mn>26</mn></math> মানে 17 ও 26-এর যোগফল।</p>
+<table id="eip-93" class="unnumbered unstyled"><caption data-editorial="true">17 + 26: দশক ও একক একত্র করি</caption><thead data-editorial="true"><tr><th scope="col">করণীয়</th><th scope="col">দশক ও এককের হিসাব</th><th scope="col">ব্লকের মডেল</th></tr></thead><tbody><tr><td>17-এর মডেল দেখাও।</td><td>1 দশক ও 7 একক</td><td><span id="eip-id1168289477492" class="media-description">চিত্রের বর্ণনা: বাঁয়ে দশটি ঘরযুক্ত একটি দশকের দণ্ড এবং ডানে সাতটি এককের বর্গ।</span></td></tr><tr><td>26-এর মডেল দেখাও।</td><td>2 দশক ও 6 একক</td><td><span id="eip-id1168289477512" class="media-description">চিত্রের বর্ণনা: বাঁয়ে দশটি করে ঘরযুক্ত দুটি দশকের দণ্ড এবং ডানে ছয়টি এককের বর্গ।</span></td></tr><tr><td>একত্র করো।</td><td>3 দশক ও 13 একক</td><td><span id="eip-id1168289744408" class="media-description">চিত্রের বর্ণনা: বাঁয়ে দশটি করে ঘরযুক্ত তিনটি দশকের দণ্ড। ডানে তেরোটি এককের বর্গ; এর দশটি লাল এবং তিনটি হালকা নীল।</span></td></tr><tr><td>10 এককের বদলে 1 দশক নাও।</td><td>4 দশক ও 3 একক<br/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>40</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>43</mn></math></td><td><span id="eip-id1168289429860" class="media-description">চিত্রের বর্ণনা: বাঁয়ে দশটি করে ঘরযুক্ত চারটি দণ্ড: ওপরের তিনটি হালকা নীল, নিচেরটি লাল। ডান পাশে তিনটি হালকা নীল এককের বর্গ।</span></td></tr><tr><td>আমরা দেখিয়েছি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>17</mn><mo>+</mo><mn>26</mn><mo>=</mo><mn>43</mn></math></td><td></td><td></td></tr></tbody></table></div>
+</div></div><aside id="fs-id1321704" class="try">
+<div id="fs-id2137714"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2137714</p>
+<div id="fs-id2645041">
+<p id="fs-id1951300">মডেল দিয়ে যোগ দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn><mo>+</mo><mn>27</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2483638">
+<p id="fs-id1171105493268"><br/><span id="fs-id1546073" class="media-description">চিত্রের বর্ণনা: দশভিত্তিক ব্লকে 4 দশক ও 2 একক। নিচে 15 + 27 = 42 লেখা।</span></p>
+</div>
+</div>
+</aside>
+<aside id="fs-id1470537" class="try">
+<div id="fs-id2813270"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2813270</p>
+<div id="fs-id2379322">
+<p id="fs-id2845299">মডেল দিয়ে যোগ দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>16</mn><mo>+</mo><mn>29</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2267850">
+<p id="fs-id1171105192135"><br/><span id="fs-id2197659" class="media-description">চিত্রের বর্ণনা: দশটি করে ঘরযুক্ত চারটি দণ্ড 40 বোঝায়; পাশে পাঁচটি এককের বর্গ 5 বোঝায়। মোট 45। নিচে 16 + 29 = 45 লেখা।</span></p>
+</div>
+</div>
+</aside>
+</section><section id="fs-id1385496"><h2>মডেল ছাড়া শূন্যসহ স্বাভাবিক সংখ্যা যোগ করি</h2><p id="fs-id2629808">মডেল দিয়ে সংখ্যা যোগ করা হয়েছে; এবার মডেল ছাড়া যোগের দিকে এগোতে পারি। তার আগে নিশ্চিত হও যে এক অঙ্কের সংখ্যার সব যোগফল তোমার জানা আছে। বড় সংখ্যা যোগ করার সময় এই যোগফলগুলো কাজে লাগবে।</p>
+<p id="fs-id2137623">মনে মনে পূরণ করো এই ছকটি: <a href="#fs-id2300206"><span data-editorial="true">উৎসের ছক (fs-id2300206)</span></a> বাঁয়ে থাকা প্রতিটি সারির সংখ্যার সঙ্গে ওপরে থাকা প্রতিটি কলামের সংখ্যা যোগ করবে। দেখো, দেখানো প্রতিটি যোগফল পাচ্ছ কি না। অসুবিধা হলে মডেল দিয়ে দেখাও। এখনো জানা নেই এমন যোগফলগুলো মনে রাখা জরুরি, যাতে বড় সংখ্যা যোগ করার সময় দ্রুত ও নির্ভরযোগ্যভাবে সেগুলো ব্যবহার করতে পারো।</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="0 থেকে 9-এর যোগের ছক"><table id="fs-id2300206" class="column-header"><caption data-editorial="true">0 থেকে 9-এর যোগের ছক</caption><thead><tr><th scope="col">+</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><th scope="row">1</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><th scope="row">2</th><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><th scope="row">3</th><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><th scope="row">4</th><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><th scope="row">5</th><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><th scope="row">6</th><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><th scope="row">7</th><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><th scope="row">8</th><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><th scope="row">9</th><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr></tbody></table></div><p id="fs-id1516824">কোনো সংখ্যার সঙ্গে শূন্য যোগ করলে কী হয় লক্ষ করেছ? যেকোনো সংখ্যা ও শূন্যের যোগফল সেই সংখ্যাটিই। একে যোগের অভেদ বৈশিষ্ট্য বলি। শূন্যকে বলা হয় যোগের অভেদ উপাদান।</p><aside id="fs-id3217986">
+<h3>যোগের অভেদ বৈশিষ্ট্য</h3>
+<p id="fs-id1960203">যেকোনো সংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> —এই দুইয়ের যোগফল প্রথম সংখ্যাটিই।</p><div id="fs-id1858891" class="unnumbered"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr></mtr><mtr><mtd><mi>a</mi><mo>+</mo><mn>0</mn><mo>=</mo><mi>a</mi></mtd></mtr><mtr><mtd><mn>0</mn><mo>+</mo><mi>a</mi><mo>=</mo><mi>a</mi></mtd></mtr></mtable></math></div>
+</aside>
+<div id="fs-id1502923"><div id="fs-id2323927"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2323927</p><div id="fs-id2133097">
+<div id="fs-id2287930">প্রতিটি যোগফল বের করো: <ol id="eip-id1168289479427" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>+</mo><mn>11</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>42</mn><mo>+</mo><mn>0</mn></math></li></ol></div></div>
+<div id="fs-id4363730">
+<h3>সমাধান</h3><table id="eip-629" class="unnumbered unstyled"><caption data-editorial="true">শূন্য যোগ করলে সংখ্যাটি বদলায় না</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td><span class="token">ⓐ</span> প্রথম যোগের সংখ্যা শূন্য। যেকোনো সংখ্যা ও শূন্যের যোগফল সেই সংখ্যাটিই।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>+</mo><mn>11</mn><mo>=</mo><mn>11</mn></mrow></math></td></tr><tr><td><span class="token">ⓑ</span> দ্বিতীয় যোগের সংখ্যা শূন্য। যেকোনো সংখ্যা ও শূন্যের যোগফল সেই সংখ্যাটিই।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>42</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>42</mn></mrow></math></td></tr></tbody></table></div>
+</div></div><aside id="fs-id1387252" class="try">
+<div id="fs-id1264596"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1264596</p><div id="fs-id2751992">
+<div id="fs-id1960514">প্রতিটি যোগফল বের করো: <ol id="eip-id1168287039629" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>+</mo><mn>19</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>39</mn><mo>+</mo><mn>0</mn></math></li></ol></div>
+</div>
+<div id="fs-id2144870">
+<ol id="eip-id1168289656112" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>+</mo><mn>19</mn><mo>=</mo><mn>19</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>39</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>39</mn></math></li></ol>
+</div>
+</div></aside>
+<aside id="fs-id2645953" class="try">
+<div id="fs-id2362020"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2362020</p><div id="fs-id2492225">
+<div id="fs-id1936994">প্রতিটি যোগফল বের করো: <ol id="eip-id1168288581011" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>+</mo><mn>24</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>57</mn><mo>+</mo><mn>0</mn></math></li></ol></div>
+</div>
+<div id="fs-id2788980">
+<ol id="eip-id1168287485680" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>+</mo><mn>24</mn><mo>=</mo><mn>24</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>57</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>57</mn></math></li></ol>
+</div>
+</div></aside>
+<p id="fs-id2777667">যোগফলগুলো জোড়ায় জোড়ায় দেখো।</p>
+<div id="eip-583"><table id="eip-id1168287208889" class="unnumbered unstyled"><caption data-editorial="true">ক্রম বদলালেও যোগফল একই</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>5</mn></math></td></tr><tr><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>11</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>11</mn></math></td></tr><tr><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>17</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>17</mn></math></td></tr></tbody></table></div><p id="fs-id2785833">লক্ষ করো, একই <dfn class="no-emphasis" id="term-00002">যোগের সংখ্যা</dfn> ভিন্ন ক্রমে যোগ করলেও যোগফল বদলায় না। এই বৈশিষ্ট্যকে যোগের বিনিময় বিধি বলে। অর্থাৎ, যোগের সংখ্যাগুলোর ক্রম বদলালেও তাদের যোগফল একই থাকে।</p><aside id="fs-id1566118">
+<h3>যোগের বিনিময় বিধি</h3>
+<p id="fs-id1884628">যোগ করার সংখ্যা দুটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>b</mi></mrow></math> । এদের ক্রম বদলালেও যোগফল বদলায় না।</p><div id="fs-id2670492" class="unnumbered"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mi>b</mi><mo>+</mo><mi>a</mi></mrow></math></div>
+</aside>
+<div id="fs-id2224023">
+<div id="fs-id2454866"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2454866</p><div id="fs-id2262840">
+<p id="fs-id1816267">যোগ করো: </p><ol id="eip-id1168288474909" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>+</mo><mn>7</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mo>+</mo><mn>8</mn></math></li></ol>
+</div>
+<div id="fs-id1824208">
+<h3>সমাধান</h3>
+<ul id="eip-id1168288224691"><li>
+<table id="eip-id1168288224694" class="unnumbered unstyled"><caption data-editorial="true">8 + 7-এর যোগফল</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td><span class="token">ⓐ</span> </td><td></td></tr><tr><td>যোগ করো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>+</mo><mn>7</mn></math></td></tr><tr><td></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math></td></tr></tbody></table></li>
+
+<li>
+
+<table id="eip-id11688224694" class="unnumbered unstyled"><caption data-editorial="true">7 + 8-এর যোগফল</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td><span class="token">ⓑ</span> </td><td></td></tr><tr><td>যোগ করো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mo>+</mo><mn>8</mn></math></td></tr><tr><td></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math></td></tr></tbody></table></li></ul><p id="fs-id3218755">যোগের সংখ্যাগুলোর ক্রম বদলালেও যোগফল বদলায়নি—লক্ষ করেছ? সহজেই জানতে পারতাম অংশ <span class="token">ⓑ</span> এর যোগফল, শুধু এইটুকু লক্ষ করে যে সংখ্যাগুলো অংশ <span class="token">ⓐ</span> এর মতোই, তবে বিপরীত ক্রমে আছে। তাই দুই যোগফলই সমান।</p></div>
+</div></div>
+<aside id="fs-id1827619" class="try">
+<div id="fs-id1968047"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1968047</p>
+<div id="fs-id1960578">
+<p id="fs-id1269366">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>+</mo><mn>7</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn><mo>+</mo><mn>9</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2170740">
+<p id="fs-id2909034"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>16</mn><mo>; </mo><mn>7</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>16</mn></math></p></div>
+</div>
+</aside>
+<aside id="fs-id2296788" class="try">
+<div id="fs-id1577590"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1577590</p>
+<div id="fs-id1603113">
+<p id="fs-id892992">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn><mo>+</mo><mn>6</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>+</mo><mn>8</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1806629">
+<p id="fs-id2283876"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>14</mn><mo>; </mo><mn>6</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>14</mn></math></p></div>
+</div>
+</aside>
+<div id="fs-id2686794"><div id="fs-id1578501"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1578501</p>
+<div id="fs-id1368562">
+<p id="fs-id2270260">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>28</mn><mo>+</mo><mn>61</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1791758">
+<h3>সমাধান</h3>
+<p id="fs-id1806085">একাধিক অঙ্কের সংখ্যা যোগ করতে প্রায়ই সংখ্যাগুলো ওপর-নিচে কলাম করে লিখলে সুবিধা হয়।</p>
+<table id="eip-id1168288293873" class="unnumbered unstyled"><caption data-editorial="true">28 + 61: একই ঘর ওপর-নিচে সাজাই</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td>এককের অঙ্ক এককের নিচে এবং দশকের অঙ্ক দশকের নিচে রেখে সংখ্যা দুটি লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>28</mn></mrow><mspace width="0.2em"></mspace></mtd></mtr><mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="0.4em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mn>61</mn></mrow><mtext>____</mtext></munder></mtd></mtr></mtable></math></td></tr><tr><td>তারপর একই ঘরের অঙ্কগুলো যোগ করো। <br/>এককগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>9</mn></math><br/>দশকগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>8</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>28</mn></mrow><mspace width="0.2em"></mspace></mtd></mtr><mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="0.4em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mn>61</mn></mrow><mtext>____</mtext></munder></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>89</mn></mrow><mspace width="0.2em"></mspace></mtd></mtr></mtable></math></td></tr></tbody></table></div>
+</div></div><aside id="fs-id2698087" class="try">
+<div id="fs-id2325520"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2325520</p>
+<div id="fs-id2221948">
+<p id="fs-id2648738">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>32</mn><mo>+</mo><mn>54</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2284818">
+<p id="fs-id1374910"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>32</mn><mo>+</mo><mn>54</mn><mo>=</mo><mn>86</mn></math></p></div>
+</div>
+</aside>
+<aside id="fs-id1928992" class="try">
+<div id="fs-id1275335"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1275335</p>
+<div id="fs-id2562841">
+<p id="fs-id1524844">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>25</mn><mo>+</mo><mn>74</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2951285">
+<p id="fs-id968671"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn><mo>+</mo><mn>74</mn><mo>=</mo><mn>99</mn></math></p></div>
+</div>
+</aside>
+<p id="fs-id1340418">আগের উদাহরণে এককগুলোর যোগফল ও দশকগুলোর যোগফল দুটোই ছিল এর চেয়ে ছোট: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mo>.</mo></mrow></math> কিন্তু যোগফল যদি হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> বা তার বেশি, তখন কী হবে? ব্যবহার করি আমাদের <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> মডেল, দেখে নিই কী হয়। <a href="#CNX_BMath_Figure_01_02_001"><span data-editorial="true">উৎসের চিত্র (CNX_BMath_Figure_01_02_001)</span></a> এ আবার যোগ দেখানো হয়েছে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>17</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>26</mn></mrow></math> —এই দুই সংখ্যার।</p>
+<figure id="CNX_BMath_Figure_01_02_001"><span id="fs-id1231518" class="media-description">চিত্রের বর্ণনা: বাঁয়ে 17 বোঝাতে 1টি দশকের দণ্ড ও 7টি এককের বর্গ; তার নিচে 26 বোঝাতে 2টি দণ্ড ও 6টি এককের বর্গ। একত্র করে ডানে 4টি দশকের দণ্ড ও 3টি এককের বর্গ পাওয়া যায়। দশটি একক নতুন একটি দশক হয়। পাশের লিখিত যোগে 17-এর দশকের অঙ্কের ওপরে ছোট লাল 1 দিয়ে সেই দশক দেখানো হয়েছে; 1 + 1 + 2 = 4 দশক। নিচে ফল 43, অর্থাৎ 17 + 26 = 43।</span>
+</figure><p id="fs-id2297149">এককগুলো যোগ করি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn><mo>+</mo><mn>6</mn><mo>,</mo></mrow></math> পাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>13</mn></mrow></math> টি একক। এককের সংখ্যা এই সীমা ছাড়িয়েছে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> টি। তাই বদলে নিতে পারি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> এককের বদলে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশক। এখন আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math> দশক ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> একক। মডেল ব্যবহার না করে দশকের অঙ্কের ওপরে ছোট লাল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> লিখে এই নতুন দশক দেখাই।</p>
+<p id="fs-id2877345">কোনো ঘরের যোগফল যখন এর চেয়ে বড় হয়: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>,</mo></mrow></math> তখন হাতে রেখে বাম পাশের পরের ঘরে নিয়ে যাই। হাতে রাখা মানে বদলের মাধ্যমে নতুন করে দল গঠন করা। যেমন, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> এককের বদলে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশক, অথবা <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> দশকের বদলে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> শতক।</p>
+<aside id="fs-id1567373" class="howto"><h3>শূন্যসহ স্বাভাবিক সংখ্যা যোগ করো।</h3><ol id="eip-id1168288474750" class="stepwise"><li>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</li>
+<li>একই ঘরের অঙ্কগুলো যোগ করো। এককের ঘর থেকে শুরু করে ডান থেকে বামে যাও। কোনো ঘরের যোগফল যদি এর চেয়ে বেশি হয়: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>,</mo></mrow></math> তবে হাতে রেখে পরের ঘরে নিয়ে যাও।</li>
+<li>ডান থেকে বামে প্রতিটি ঘরের যোগ চালিয়ে যাও; প্রয়োজন হলে হাতে রেখে পরের ঘরে যোগ করো।</li></ol></aside><div id="fs-id1377666"><div id="fs-id2325655"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2325655</p><div id="fs-id2785400">
+<p id="fs-id1239115">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>43</mn><mo>+</mo><mn>69</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2566312">
+<h3>সমাধান</h3>
+<table id="eip-id1168287505854" class="unnumbered unstyled"><caption data-editorial="true">43 + 69: হাতে রেখে যোগ</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>43</mn></mrow><mspace width="0.2em"></mspace></mtd></mtr><mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="0.4em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mn>69</mn></mrow><mtext>____</mtext></munder></mtd></mtr></mtable></math></td></tr><tr><td>একই ঘরের অঙ্কগুলো যোগ করো।<br/>এককগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>12</mn></math></td><td></td></tr><tr><td>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math> যোগফলের এককের ঘরে লেখো।<br/>হাতে রাখা <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশক—দশকের ঘরে তা যোগ করো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mover><mn>4</mn><mn mathsize="small">1</mn></mover><mn>3</mn></mrow><mspace width="0.1em"></mspace></mtd></mtr>
+<mtr><mtd columnalign="right"><munder accentunder="true"><mrow><mo>+</mo><mn>69</mn></mrow><mtext>____</mtext></munder></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>2</mn></mrow><mspace width="0.1em"></mspace></mtd></mtr></mtable></math></td></tr><tr><td>এবার দশকগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>11</mn></math><br/>যোগফলে 11 লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mover><mn>4</mn><mn mathsize="small">1</mn></mover><mn>3</mn></mrow><mspace width="0.1em"></mspace></mtd></mtr>
+<mtr><mtd columnalign="right"><munder accentunder="true"><mrow><mo>+</mo><mn>69</mn></mrow><mtext>____</mtext></munder></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>112</mn></mrow><mspace width="0.1em"></mspace></mtd></mtr></mtable></math></td></tr></tbody></table></div>
+</div></div><aside id="fs-id1257067" class="try">
+<div id="fs-id2758260"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2758260</p>
+<div id="fs-id1881610">
+<p id="fs-id2370602">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>35</mn><mo>+</mo><mn>98</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2215223">
+<p id="fs-id2278434"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>35</mn><mo>+</mo><mn>98</mn><mo>=</mo><mn>133</mn></math></p></div>
+</div>
+</aside>
+<aside id="fs-id2325880" class="try">
+<div id="fs-id1826280"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1826280</p>
+<div id="fs-id2462708">
+<p id="fs-id1517340">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn><mo>+</mo><mn>89</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1408807">
+<p id="fs-id1580884"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>72</mn><mo>+</mo><mn>89</mn><mo>=</mo><mn>161</mn></math></p></div>
+</div>
+</aside>
+<div id="fs-id1348056">
+<div id="fs-id2277302"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2277302</p><div id="fs-id2298083">
+<p id="fs-id2139613">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>324</mn><mo>+</mo><mn>586</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2150007">
+<h3>সমাধান</h3>
+<table id="eip-id1168287251210" class="unnumbered unstyled"><caption data-editorial="true">324 + 586: দুই ঘরে হাতে রেখে যোগ</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</td><td><span id="eip-id1168289818410" class="media-description">চিত্রের বর্ণনা: ওপর-নিচে 324 ও 586 লেখা; দ্বিতীয় সংখ্যার বাঁয়ে + চিহ্ন এবং নিচে দাগ।</span></td></tr><tr><td>একই ঘরের অঙ্কগুলো যোগ করো।<br/>এককগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>10</mn></math><br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> যোগফলের এককের ঘরে লেখো এবং হাতে রাখো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশক—দশকের ঘরে তা যোগ করো।</td><td><span id="eip-id1168287268641" class="media-description">চিত্রের বর্ণনা: 324 ও 586 যোগ করা হচ্ছে। প্রথমে এককের অঙ্ক যোগ করলে 4 + 6 = 10। যোগফলের এককের ঘরে 0 লেখা; নতুন দশক বোঝাতে 324-এর 2-এর ওপরে ছোট 1 লেখা।</span></td></tr><tr><td>দশকগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>11</mn></math><br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> যোগফলের দশকের ঘরে লেখো এবং হাতে রাখো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> শতক—শতকের ঘরে তা যোগ করো।</td><td><span id="eip-id1168287196613" class="media-description">চিত্রের বর্ণনা: ওপর-নিচে 324 ও 586-এর যোগ। দশকের হিসাব 1 + 2 + 8 = 11 হওয়ায় যোগফলের নিচে এখন 10 লেখা আছে। 324-এর শতকের অঙ্ক 3 ও দশকের অঙ্ক 2-এর ওপরে ছোট 1 আছে; এগুলো হাতে রাখা শতক ও দশক, ভগ্নাংশ নয়।</span></td></tr><tr><td>শতকগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>9</mn></math><br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn></math> শতকের ঘরে লেখো।</td><td><span id="eip-id1168287121476" class="media-description">চিত্রের বর্ণনা: ওপর-নিচে যোগে 324 + 586 = 910। প্রথম সংখ্যার শতক ও দশকের অঙ্কের ওপরে ছোট 1 দুটি হাতে রাখা মান বোঝায়; এগুলো ভগ্নাংশ নয়।</span></td></tr></tbody></table></div>
+</div></div>
+<aside id="fs-id2648959" class="try">
+<div id="fs-id1462931"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1462931</p>
+<div id="fs-id2690850">
+<p id="fs-id1376149">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>456</mn><mo>+</mo><mn>376</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1302654">
+<p id="fs-id2906019"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>456</mn><mo>+</mo><mn>376</mn><mo>=</mo><mn>832</mn></math></p></div>
+</div>
+</aside>
+<aside id="fs-id1339924" class="try">
+<div id="fs-id2267936"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2267936</p>
+<div id="fs-id1298548">
+<p id="fs-id1543215">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>269</mn><mo>+</mo><mn>578</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2146728">
+<p id="fs-id1314815"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>269</mn><mo>+</mo><mn>578</mn><mo>=</mo><mn>847</mn></math></p></div>
+</div>
+</aside>
+<div id="fs-id1988116">
+<div id="fs-id2144790"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2144790</p><div id="fs-id2280686">
+<p id="fs-id2368411">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,683</mn><mo>+</mo><mn>479</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1372016">
+<h3>সমাধান</h3>
+<table id="eip-id1168288687380" class="unnumbered unstyled"><caption data-editorial="true">1,683 + 479: অঙ্কসংখ্যা ভিন্ন হলেও একই ঘর মেলাই</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>1,683</mn></mrow><mspace width="0.2em"></mspace></mtd></mtr>
+    <mtr></mtr>
+    <mtr><mtd columnalign="right"><mspace width="2em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.2em"></mspace><mn>479</mn></mrow><mtext>______</mtext></munder></mtd></mtr></mtable></math></td></tr><tr><td>একই ঘরের অঙ্কগুলো যোগ করো।</td><td></td></tr><tr><td>এককগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>12.</mn></math><br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math> যোগফলের এককের ঘরে লেখো এবং হাতে রাখো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশক—দশকের ঘরে তা যোগ করো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>1,6</mn><mover><mn>8</mn><mn mathsize="small">1</mn></mover><mn>3</mn></mrow><mspace width="0.2em"></mspace></mtd></mtr>
+    <mtr></mtr>
+
+<mtr><mtd columnalign="right"><mspace width="2em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.2em"></mspace><mn>479</mn></mrow><mtext>______</mtext></munder></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mspace width="0.2em"></mspace></mtd></mtr></mtable></math></td></tr><tr><td>দশকগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>16</mn></math><br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math> দশকের ঘরে লেখো এবং হাতে রাখো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> শতক—শতকের ঘরে তা যোগ করো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>1,</mn><mover><mn>6</mn><mn mathsize="small">1</mn></mover><mover><mn>8</mn><mn mathsize="small">1</mn></mover><mn>3</mn></mrow><mspace width="0.2em"></mspace></mtd></mtr>
+   <mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="2em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.2em"></mspace><mn>479</mn></mrow><mtext>______</mtext></munder></mtd></mtr><mtr><mtd columnalign="right"><mn>62</mn><mspace width="0.2em"></mspace></mtd></mtr></mtable></math></td></tr><tr><td>শতকগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>11</mn></math><br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> শতকের ঘরে লেখো এবং হাতে রাখো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> হাজার—হাজারের ঘরে তা যোগ করো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>1,</mn><mover><mn>6</mn><mn mathsize="small">1</mn></mover><mover><mn>8</mn><mn mathsize="small">1</mn></mover><mn>3</mn></mrow><mspace width="0.2em"></mspace></mtd></mtr> <mtr></mtr>
+
+<mtr><mtd columnalign="right"><mspace width="2em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.2em"></mspace><mn>479</mn></mrow><mtext>______</mtext></munder></mtd></mtr><mtr><mtd columnalign="right"><mn>162</mn><mspace width="0.2em"></mspace></mtd></mtr></mtable></math></td></tr><tr><td>হাজারগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn></math>.<br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math> যোগফলের হাজারের ঘরে লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mover><mn>1,</mn><mn mathsize="small">1</mn></mover><mover><mn>6</mn><mn mathsize="small">1</mn></mover><mover><mn>8</mn><mn mathsize="small">1</mn></mover><mn>3</mn></mrow><mspace width="0.2em"></mspace></mtd></mtr> <mtr></mtr>
+
+<mtr><mtd columnalign="right"><mspace width="2em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.2em"></mspace><mn>479</mn></mrow><mtext>______</mtext></munder></mtd></mtr><mtr><mtd columnalign="right"><mn>2,162</mn><mspace width="0.2em"></mspace></mtd></mtr></mtable></math></td></tr></tbody></table><p id="fs-id2280341">যোগের সংখ্যাগুলোর অঙ্কসংখ্যা আলাদা হলে সতর্কভাবে একই ঘর ওপর-নিচে সাজাও। এককের ঘর থেকে শুরু করে বাম দিকে এগোবে।</p>
+</div>
+</div></div>
+<aside id="fs-id2375137" class="try">
+<div id="fs-id2174738"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2174738</p>
+<div id="fs-id2278499">
+<p id="fs-id2366246">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4,597</mn><mo>+</mo><mn>685</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2173908">
+<p id="fs-id1328241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4,597</mn><mo>+</mo><mn>685</mn><mo>=</mo><mn>5,282</mn></math></p></div>
+</div>
+</aside>
+<aside id="fs-id1217416" class="try">
+<div id="fs-id1367785"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1367785</p>
+<div id="fs-id1409440">
+<p id="fs-id2809228">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5,837</mn><mo>+</mo><mn>695</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1362543">
+<p id="fs-id1605828"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5,837</mn><mo>+</mo><mn>695</mn><mo>=</mo><mn>6,532</mn></math></p></div>
+</div>
+</aside>
+<div id="fs-id1801021">
+<div id="fs-id2264879"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2264879</p><div id="fs-id1883946">
+<p id="fs-id1302204">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>21,357</mn><mo>+</mo><mn>861</mn><mo>+</mo><mn>8,596</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2338420">
+<h3>সমাধান</h3>
+<table id="eip-id1168288531101" class="unnumbered unstyled"><caption data-editorial="true">21,357 + 861 + 8,596: তিনটি সংখ্যার যোগ</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>21,357</mn></mrow></mtd></mtr>
+<mtr><mtd columnalign="right"><mrow><mn>861</mn></mrow></mtd></mtr><mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="3em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.4em"></mspace><mn>8,596</mn></mrow><mtext>_______</mtext></munder></mtd></mtr></mtable></math></td></tr><tr><td>একই ঘরের অঙ্কগুলো যোগ করো।</td><td></td></tr><tr><td>এককগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>14</mn></math><br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math> যোগফলের এককের ঘরে লেখো এবং হাতে রাখো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশক; দশকের ঘরে তা যোগ করবে।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>21,3</mn><mover><mn>5</mn><mn mathsize="small">1</mn></mover><mn>7</mn></mrow></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mrow><mn>861</mn></mrow></mtd></mtr> <mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="3em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.4em"></mspace><mn>8,596</mn></mrow><mtext>_______</mtext></munder></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mn>4</mn></mtd></mtr></mtable></math></td></tr><tr><td>দশকগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>21</mn></math><br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশকের ঘরে লেখো এবং হাতে রাখো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math> শতক; শতকের ঘরে তা যোগ করবে।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>21,</mn><mover><mn>3</mn><mn mathsize="small">2</mn></mover><mover><mn>5</mn><mn mathsize="small">1</mn></mover><mn>7</mn></mrow></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mrow><mn>861</mn></mrow></mtd></mtr> <mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="3em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.4em"></mspace><mn>8,596</mn></mrow><mtext>_______</mtext></munder></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mn>14</mn></mtd></mtr></mtable></math></td></tr><tr><td>শতকগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>18</mn></math><br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math> শতকের ঘরে লেখো এবং হাতে রাখো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> হাজার; হাজারের ঘরে তা যোগ করবে।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mn>2</mn><mover><mn>1,</mn><mn mathsize="small">1</mn></mover><mover><mn>3</mn><mn mathsize="small">2</mn></mover><mover><mn>5</mn><mn mathsize="small">1</mn></mover><mn>7</mn></mrow></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mrow><mn>861</mn></mrow></mtd></mtr> <mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="3em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.4em"></mspace><mn>8,596</mn></mrow><mtext>_______</mtext></munder></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mn>814</mn></mtd></mtr></mtable></math></td></tr><tr><td>হাজারগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>10</mn></math>.<br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> হাজারের ঘরে লেখো এবং হাতে রাখো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> দশ হাজার; দশ হাজারের ঘরে তা যোগ করবে।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mover><mn>2</mn><mn mathsize="small">1</mn></mover><mover><mn>1,</mn><mn mathsize="small">1</mn></mover><mover><mn>3</mn><mn mathsize="small">2</mn></mover><mover><mn>5</mn><mn mathsize="small">1</mn></mover><mn>7</mn></mrow></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mrow><mn>861</mn></mrow></mtd></mtr> <mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="3em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.4em"></mspace><mn>8,596</mn></mrow><mtext>_______</mtext></munder></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mn>0814</mn></mtd></mtr></mtable></math></td></tr><tr><td>দশ হাজারের দলগুলো যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>3</mn></math>.<br/>এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> যোগফলের দশ হাজারের ঘরে লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd columnalign="right"><mrow><mover><mn>2</mn><mn mathsize="small">1</mn></mover><mover><mn>1,</mn><mn mathsize="small">1</mn></mover><mover><mn>3</mn><mn mathsize="small">2</mn></mover><mover><mn>5</mn><mn mathsize="small">1</mn></mover><mn>7</mn></mrow></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mrow><mn>861</mn></mrow></mtd></mtr> <mtr></mtr>
+<mtr><mtd columnalign="right"><mspace width="3em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mspace width="0.4em"></mspace><mn>8,596</mn></mrow><mtext>_______</mtext></munder></mtd></mtr>
+
+<mtr><mtd columnalign="right"><mn>30,814</mn></mtd></mtr></mtable></math></td></tr></tbody></table><p id="fs-id1246087">এই উদাহরণে যোগের সংখ্যা ছিল তিনটি। একই ঘরগুলো ঠিকভাবে ওপর-নিচে সাজাতে সতর্ক থাকলে একই পদ্ধতিতে যতগুলো সংখ্যা প্রয়োজন যোগ করতে পারি।</p>
+</div>
+</div></div>
+<aside id="fs-id2684886" class="try">
+<div id="fs-id2224340"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2224340</p>
+<div id="fs-id1967102">
+<p id="fs-id1881413">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>46,195</mn><mo>+</mo><mn>397</mn><mo>+</mo><mn>6,281</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2924594">
+<p id="fs-id1405279"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>46,195</mn><mo>+</mo><mn>397</mn><mo>+</mo><mn>6,281</mn><mo>=</mo><mn>52,873</mn></math></p></div>
+</div>
+</aside>
+<aside id="fs-id1282502" class="try">
+<div id="fs-id1406185"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1406185</p>
+<div id="fs-id1184057">
+<p id="fs-id1545934">যোগ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>53,762</mn><mo>+</mo><mn>196</mn><mo>+</mo><mn>7,458</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1351725">
+<p id="fs-id834282"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>53,762</mn><mo>+</mo><mn>196</mn><mo>+</mo><mn>7,458</mn><mo>=</mo><mn>61,416</mn></math></p></div>
+</div>
+</aside>
+</section><section id="fs-id2691382">
+<h2>কথায় বলা বিষয় গাণিতিক প্রতীকে লিখি</h2>
+<p id="fs-id1612949">এই অংশের শুরুতে গাণিতিক প্রতীককে কথায় লেখা হয়েছে। এবার উল্টো কাজ করব: কথায় বলা বিষয় গাণিতিক প্রতীকে লিখব। যোগ বোঝায় এমন কয়েকটি কথা দেওয়া আছে এই ছকে: <a href="#fs-id1826990"><span data-editorial="true">উৎসের ছক (fs-id1826990)</span></a>.</p>
+<table id="fs-id1826990"><caption data-editorial="true">কথায় যোগ এবং সংশ্লিষ্ট গাণিতিক রাশি</caption><thead><tr><th scope="col">প্রক্রিয়া</th><th scope="col">কথায়</th><th scope="col">উদাহরণ</th><th scope="col">রাশি</th></tr></thead><tbody><tr><td>যোগ</td><td>যোগ<br/>যোগফল<br/>-এর সঙ্গে যোগ করো<br/>বেশি—মূল সংখ্যা<br/>মোট<br/>যোগ করো এই সংখ্যার সঙ্গে:</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> যোগ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math><br/>যোগফল—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math><br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> -এর সঙ্গে যোগ করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math><br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math> বেশি—মূল সংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn></mrow></math><br/>মোট—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math><br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math> যোগ করো এই সংখ্যার সঙ্গে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>+</mo><mn>2</mn></mrow></math><br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>4</mn></mrow></math><br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>6</mn></mrow></math><br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn><mo>+</mo><mn>8</mn></mrow></math><br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>+</mo><mn>5</mn></mrow></math><br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>+</mo><mn>6</mn></mrow></math></td></tr></tbody></table>
+<div id="fs-id1826874">
+<div id="fs-id1392862"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1392862</p><div id="fs-id1833382">
+<p id="fs-id1950935">প্রতীকে লিখে মান বের করো। যোগের সংখ্যা দুটি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>19</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>23</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1363349">
+<h3>সমাধান</h3>
+<p id="fs-id2649934">এই শব্দটি: <em>যোগফল</em> —এটি যোগ করতে বলে। ইংরেজি <em>of</em> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>19</mn></mrow></math> <em>and</em> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>23</mn></mrow></math> —এগুলো যোগের সংখ্যা দুটি চিহ্নিত করে।</p>
+<table id="eip-id1168288294973" class="unnumbered unstyled"><caption data-editorial="true">19 ও 23-এর যোগফল: কথা থেকে প্রতীক</caption><thead data-editorial="true"><tr><th scope="col">ধাপ</th><th scope="col">প্রকাশ ও ফল</th></tr></thead><tbody><tr><td></td><td>সংখ্যা দুটি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>19</mn></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>23</mn></math></td></tr><tr><td>প্রতীকে লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>19</mn><mo>+</mo><mn>23</mn></math></td></tr><tr><td>যোগ করো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>42</mn></math></td></tr><tr><td></td><td>সংখ্যা দুটি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>19</mn></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>23</mn></math> ; ফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>42.</mn></math></td></tr></tbody></table></div>
+</div></div>
+<aside id="fs-id1566729" class="try">
+<div id="fs-id1932733"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1932733</p>
+<div id="fs-id1375941">
+<p id="fs-id2744730">প্রতীকে লিখে মান বের করো। যোগের সংখ্যা দুটি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>17</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>26</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2211062">
+<p id="fs-id2657242">প্রতীকে লিখি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>17</mn><mo>+</mo><mn>26</mn></math>; মান বের করি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>43</mn></math></p></div>
+</div>
+</aside>
+<aside id="fs-id1387204" class="try">
+<div id="fs-id1311804"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1311804</p>
+<div id="fs-id2216187">
+<p id="fs-id2774992">প্রতীকে লিখে মান বের করো। যোগের সংখ্যা দুটি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>28</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1731443">
+<p id="fs-id1585459">প্রতীকে লিখি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn><mo>+</mo><mn>14</mn></math>; মান বের করি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>42</mn></math></p></div>
+</div>
+</aside>
+<div id="fs-id1178091">
+<div id="fs-id1330230"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1330230</p><div id="fs-id1568191">
+<p id="fs-id1968803">প্রতীকে লিখে মান বের করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>28</mn></mrow></math> -এর সঙ্গে যোগ করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>31</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1726814">
+<h3>সমাধান</h3>
+<p id="fs-id1578716">এই কথাগুলো: <em>-এর সঙ্গে যোগ করো</em> —এগুলো যোগ করতে বলে। দেওয়া সংখ্যাগুলোই যোগের সংখ্যা।</p>
+<table id="eip-id1168288520954" class="unnumbered unstyled"><caption data-editorial="true">28-কে 31 বাড়ানো: কথা থেকে প্রতীক</caption><thead data-editorial="true"><tr><th scope="col">ধাপ</th><th scope="col">প্রকাশ ও ফল</th></tr></thead><tbody><tr><td></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn></math> -এর সঙ্গে যোগ করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>31.</mn></math></td></tr><tr><td>প্রতীকে লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn><mo>+</mo><mn>31</mn></math></td></tr><tr><td>যোগ করো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>59</mn></math></td></tr><tr><td></td><td>সুতরাং, <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn></math> -এর সঙ্গে যোগ করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>31</mn></math> ; ফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn> 59.</mn></math></td></tr></tbody></table></div>
+</div></div>
+<aside id="fs-id1728016" class="try">
+<div id="fs-id2130020"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2130020</p>
+<div id="fs-id2370626">
+<p id="fs-id2269129">প্রতীকে লিখে মান বের করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>29</mn></mrow></math> -এর সঙ্গে যোগ করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>76</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id2164356">
+<p id="fs-id2375959">প্রতীকে লিখি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>29</mn><mo>+</mo><mn>76</mn></math>; মান বের করি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>105</mn></math></p></div>
+</div>
+</aside>
+<aside id="fs-id1933763" class="try">
+<div id="fs-id2792137"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2792137</p>
+<div id="fs-id1899406">
+<p id="fs-id1549718">প্রতীকে লিখে মান বের করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>37</mn></mrow></math> -এর সঙ্গে যোগ করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>69</mn><mo>.</mo></mrow></math></p>
+</div>
+<div id="fs-id1410392">
+<p id="fs-id2451444">প্রতীকে লিখি: 37 + 69; মান বের করি: 106</p></div>
+</div>
+</aside>
+</section><section id="fs-id2197427">
+<h2>বাস্তব সমস্যায় শূন্যসহ স্বাভাবিক সংখ্যার যোগ</h2>
+<p id="fs-id2926269">শূন্যসহ স্বাভাবিক সংখ্যা যোগের অনুশীলন হয়েছে। এবার যা শিখেছি, তা দিয়ে বাস্তব জীবনের সমস্যা সমাধান করি। প্রথমে একটি পরিকল্পনা করব। প্রশ্নটি পড়ে বুঝব কী বের করতে হবে। তারপর তা বের করার তথ্য কথায় লিখব। সেই কথাকে গাণিতিক প্রতীকে লিখে মান বের করব। শেষে একটি বাক্যে প্রশ্নের উত্তর লিখব।</p>
+<div id="fs-id1880782">
+<div id="fs-id1899571"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1899571</p><div id="fs-id4300687">
+<p id="fs-id1746953">সেমিস্টারের পাঁচটি পরীক্ষায় হাওয়ের প্রাপ্ত নম্বর যথাক্রমে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>87</mn><mo>,</mo><mn>93</mn><mo>,</mo><mn>68</mn><mo>,</mo><mn>95</mn><mo>,</mo><mspace width="0.2em"></mspace><mtext>ও</mtext><mspace width="0.2em"></mspace><mn>89</mn></mrow></math> । পাঁচটি পরীক্ষায় সে মোট কত নম্বর পেয়েছে?</p>
+</div>
+<div id="fs-id1944399">
+<h3>সমাধান</h3>
+<p id="fs-id2265104">পরীক্ষাগুলোতে পাওয়া মোট নম্বর বের করতে বলা হয়েছে।</p>
+<table id="eip-id1168288617772" class="unnumbered unstyled"><caption data-editorial="true">হাওয়ের পাঁচটি পরীক্ষার মোট নম্বর</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td>কথায় লেখো।</td><td>পরীক্ষাগুলোর নম্বরের যোগফল</td></tr><tr><td>গাণিতিক প্রতীকে লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>87</mn><mo>+</mo><mn>93</mn><mo>+</mo><mn>68</mn><mo>+</mo><mn>95</mn><mo>+</mo><mn>89</mn></math></td></tr><tr><td>তারপর যোগ করে মান বের করি।</td><td></td></tr><tr><td>বেশ কয়েকটি সংখ্যা আছে বলে সেগুলো ওপর-নিচে লিখব।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr></mtr><mtr></mtr><mtr></mtr><mtr><mtd columnalign="left"><mspace width="1em"></mspace><mover><mn>8</mn><mn mathsize="small">3</mn></mover><mn>7</mn></mtd></mtr><mtr><mtd columnalign="left"><mspace width="1em"></mspace><mn>93</mn></mtd></mtr><mtr><mtd columnalign="left"><mspace width="1em"></mspace><mn>68</mn></mtd></mtr><mtr><mtd columnalign="left"><mspace width="1em"></mspace><mn>95</mn></mtd></mtr><mtr><mtd columnalign="left"><mspace width="0.1em"></mspace><munder accentunder="true"><mrow><mo>+</mo><mn>89</mn></mrow><mtext>____</mtext></munder></mtd></mtr><mtr><mtd columnalign="left"><mspace width="0.51em"></mspace><mn>432</mn></mtd></mtr></mtable></math></td></tr><tr><td>প্রশ্নের উত্তর একটি বাক্যে লেখো।</td><td>হাও মোট 432 নম্বর পেয়েছে।</td></tr></tbody></table><p id="fs-id2703969">লক্ষ করো, যোগ করেছি <em>নম্বর</em>; তাই যোগফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>432</mn></mrow></math> <em>নম্বর</em>। বাস্তব সমস্যার প্রতিটি উত্তরে সঠিক একক লেখা জরুরি।</p>
+</div>
+</div></div>
+<aside id="fs-id1509280" class="try">
+<div id="fs-id1564459"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1564459</p>
+<div id="fs-id2176012">
+<p id="fs-id1919047">মার্ক সাইকেল প্রতিযোগিতার জন্য অনুশীলন করছে। গত সপ্তাহে সে সাইকেল চালিয়েছে: সোমবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18</mn></mrow></math> মাইল, বুধবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn></mrow></math> মাইল, শুক্রবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>26</mn></mrow></math> মাইল, শনিবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>49</mn></mrow></math> মাইল এবং রবিবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>32</mn></mrow></math> মাইল। গত সপ্তাহে সে মোট কত মাইল সাইকেল চালিয়েছে?</p>
+</div>
+<div id="fs-id2146653">
+<p id="fs-id1390222">সে 140 মাইল সাইকেল চালিয়েছে।</p>
+</div>
+</div>
+</aside>
+<aside id="fs-id1512036" class="try">
+<div id="fs-id1761942"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1761942</p>
+<div id="fs-id1294758">
+<p id="fs-id2295551">লিংকন মিডল স্কুলে তিনটি শ্রেণি আছে। শ্রেণিগুলোতে শিক্ষার্থীর সংখ্যা যথাক্রমে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>230</mn><mo>,</mo><mn>165</mn><mo>,</mo><mtext>ও</mtext><mspace width="0.2em"></mspace><mn>325</mn><mo>.</mo></mrow></math> মোট শিক্ষার্থী কতজন?</p>
+</div>
+<div id="fs-id2296132">
+<p id="fs-id1931675">মোট শিক্ষার্থী 720 জন।</p>
+</div>
+</div>
+</aside>
+<p id="fs-id2594070">কিছু বাস্তব সমস্যা জ্যামিতিক আকৃতি নিয়ে। যেমন, বাগানে বেড়া দিতে বা ছবিতে ফ্রেম লাগাতে চারপাশের মোট দৈর্ঘ্য জানতে হতে পারে। কোনো জ্যামিতিক চিত্রের চারপাশের মোট দৈর্ঘ্য হলো তার পরিসীমা। চিত্রটির সব বাহুর দৈর্ঘ্য যোগ করলে পরিসীমা পাওয়া যায়।</p><div id="fs-id1894829">
+<div id="fs-id1628979"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1628979</p><div id="fs-id1511502">
+<p id="fs-id908485">দেখানো পাকা উঠানটির পরিসীমা বের করো।</p>
+<span id="fs-id588598" class="media-description">চিত্রের বর্ণনা: ছয় বাহুবিশিষ্ট পাকা উঠানের চিত্র। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে গেলে: ডানে 9 ফুট, নিচে 2 ফুট, বাঁয়ে 3 ফুট, নিচে 2 ফুট, বাঁয়ে 6 ফুট, ওপরে 4 ফুট গিয়ে শুরুর কোণে ফেরা যায়।</span>
+</div>
+<div id="fs-id1568241">
+<h3>সমাধান</h3>
+<table id="eip-id1168289453960" class="unnumbered unstyled"><caption data-editorial="true">উঠানের পরিসীমা: বাহুর দৈর্ঘ্যের যোগ</caption><thead data-editorial="true"><tr><th scope="col">ধাপ ও ব্যাখ্যা</th><th scope="col">গাণিতিক কাজ</th></tr></thead><tbody><tr><td>পরিসীমা বের করতে বলা হয়েছে।</td><td></td></tr><tr><td>কথায় লেখো।</td><td>বাহুগুলোর দৈর্ঘ্যের যোগফল</td></tr><tr><td>গাণিতিক প্রতীকে লেখো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>9</mn></math></td></tr><tr><td>যোগ করে মান বের করো।</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>26</mn></math></td></tr><tr><td>প্রশ্নের উত্তর একটি বাক্যে লেখো।</td><td></td></tr><tr><td>ফুট এককে দৈর্ঘ্য যোগ করেছি; তাই যোগফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>26</mn></math> ফুট।</td><td>উঠানটির পরিসীমা <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>26</mn></math> ফুট।</td></tr></tbody></table></div>
+</div></div>
+<aside id="fs-id1378644" class="try">
+<div id="fs-id2483376"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2483376</p><div id="fs-id1542511">
+<p id="fs-id1365334">চিত্রটির পরিসীমা বের করো। সব দৈর্ঘ্য ইঞ্চি এককে দেওয়া।</p>
+<span id="fs-id2175999" class="media-description">চিত্রের বর্ণনা: আট বাহুবিশিষ্ট চিত্র, নিচের মাঝখানে খাঁজ। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে বাহুর দৈর্ঘ্য: 9, 4, 3, 2, 3, 2, 3 ও 4 ইঞ্চি।</span>
+</div>
+<div id="fs-id2284683">
+<p id="fs-id1357069">পরিসীমা 30 ইঞ্চি।</p>
+</div>
+</div></aside>
+<aside id="fs-id1405610" class="try">
+<div id="fs-id2427950"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2427950</p><div id="fs-id1225224">
+<p id="fs-id1884028">চিত্রটির পরিসীমা বের করো। সব দৈর্ঘ্য ইঞ্চি এককে দেওয়া।</p>
+<span id="fs-id1381557" class="media-description">চিত্রের বর্ণনা: আট বাহুবিশিষ্ট সিঁড়ির মতো চিত্র। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে: ডানে 12, নিচে 6, বাঁয়ে 4, ওপরে 2, বাঁয়ে 4, ওপরে 2, বাঁয়ে 4 এবং ওপরে 2 ইঞ্চি।</span>
+</div>
+<div id="fs-id2136690">
+<p id="fs-id1613173">পরিসীমা 36 ইঞ্চি।</p>
+</div>
+</div></aside>
+<aside id="fs-id719196" class="media-2"><h3>আরও অনলাইন উপকরণ দেখো</h3><ul id="fs-id1176422">
+<li><a href="https://www.openstax.org/l/24add2blocks">দুই অঙ্কের সংখ্যা যোগ করি এই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক দিয়ে</a></li>
+<li><a href="https://www.openstax.org/l/24add3blocks">তিন অঙ্কের সংখ্যা যোগ করি এই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>দশভিত্তিক</mtext></mrow></math> ব্লক দিয়ে</a></li>
+<li><a href="https://www.openstax.org/l/24addwhlnumb">শূন্যসহ স্বাভাবিক সংখ্যার যোগ</a></li>
+</ul>
+</aside></section><section id="fs-id1611455" class="key-concepts">
+<h2>মূল ধারণা</h2>
+<ul id="eip-588"><li><em>যোগের প্রতীক</em> যোগ বোঝাতে আমরা প্রতীক ও কথা ব্যবহার করতে পারি। <table id="eip-id1170324017502" class="unnumbered"><caption data-editorial="true">যোগের প্রতীক ও পড়ার ধরন: মূল ধারণা</caption><thead><tr><th scope="col">প্রক্রিয়া</th><th scope="col">প্রতীক</th><th scope="col">রাশি</th><th scope="col">যেভাবে পড়ি</th><th scope="col">ফল</th></tr></thead><tbody><tr><td>যোগ</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo></mrow></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>4</mn></mrow></math></td><td>তিন যোগ চার</td><td>যোগফল—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></td></tr></tbody></table> </li>
+<li><em>যোগের অভেদ বৈশিষ্ট্য</em>
+<ul id="eip-id1170325229876">
+<li>যেকোনো সংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> —এই দুইয়ের যোগফল প্রথম সংখ্যাটিই। <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>+</mo><mn>0</mn><mo>=</mo><mi>a</mi></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>+</mo><mi>a</mi><mo>=</mo><mi>a</mi></math></li></ul></li>
+<li><em>যোগের বিনিময় বিধি</em>
+<ul id="eip-id1170325285133"><li>যোগ করার সংখ্যা দুটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math> । এদের ক্রম বদলালেও যোগফল বদলায় না। <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mi>b</mi><mo>+</mo><mi>a</mi></math>.</li></ul></li>
+<li><em>শূন্যসহ স্বাভাবিক সংখ্যা যোগ করো।</em>
+<ol id="eip-id1170325253924" class="stepwise"><li>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</li>
+<li>একই ঘরের অঙ্কগুলো যোগ করো। এককের ঘর থেকে শুরু করে ডান থেকে বামে যাও। কোনো ঘরের যোগফল 9-এর বেশি হলে হাতে রেখে বাম পাশের পরের ঘরে নিয়ে যাও।</li>
+<li>ডান থেকে বামে প্রতিটি ঘরের যোগ চালিয়ে যাও; প্রয়োজন হলে হাতে রেখে পরের ঘরে যোগ করো।</li></ol></li>
+</ul></section><section id="fs-id2263283" class="section-exercises"><section id="fs-id2150139" class="practice-perfect"><h2>অনুশীলনে দক্ষ হই</h2><p id="fs-id1459553"><strong>যোগের প্রতীক ব্যবহার করি</strong> </p><p id="eip-17">নিচের কাজগুলোতে গাণিতিক রাশিকে কথায় লেখো।</p><div id="fs-id1386835"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1386835</p>
+<div id="fs-id1858965">
+<p id="fs-id2216300"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>2</mn></mrow></math></p>
+</div>
+<div id="fs-id1179382">
+<p id="fs-id2950606">পাঁচ যোগ দুই; 5 ও 2-এর যোগফল।</p>
+</div>
+</div>
+<div id="fs-id2169300"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2169300</p>
+<div id="fs-id2479159">
+<p id="fs-id1562356"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>+</mo><mn>3</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2649783"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2649783</p>
+<div id="fs-id2472855">
+<p id="fs-id2295555"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>13</mn><mo>+</mo><mn>18</mn></mrow></math></p>
+</div>
+<div id="fs-id2284590">
+<p id="fs-id2921067">তেরো যোগ আঠারো; 13 ও 18-এর যোগফল।</p>
+</div>
+</div>
+<div id="fs-id2267610"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2267610</p>
+<div id="fs-id2300838">
+<p id="fs-id1201688"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn><mo>+</mo><mn>16</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2479137"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2479137</p>
+<div id="fs-id1565693">
+<p id="fs-id1742068"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>214</mn><mo>+</mo><mn>642</mn></mrow></math></p>
+</div>
+<div id="fs-id2649549">
+<p id="fs-id2300447">দুইশত চৌদ্দ যোগ ছয়শত বিয়াল্লিশ; 214 ও 642-এর যোগফল</p>
+</div>
+</div>
+<div id="fs-id2459088"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2459088</p>
+<div id="fs-id2658520">
+<p id="fs-id1208667"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>438</mn><mo>+</mo><mn>113</mn></mrow></math></p>
+</div>
+</div>
+<p id="fs-id2925322"><strong>মডেল দিয়ে শূন্যসহ স্বাভাবিক সংখ্যার যোগ দেখাই</strong> </p><p id="eip-987">নিচের কাজগুলোতে মডেল দিয়ে যোগ দেখাও।</p><div id="fs-id2431569"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2431569</p>
+<div id="fs-id1728216">
+<p id="fs-id1408830"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>+</mo><mn>4</mn></mrow></math></p>
+</div>
+<div id="fs-id2730040">
+<p id="fs-id1171105187236"><br/><span id="fs-id2751367" class="media-description">চিত্রের বর্ণনা: ছয়টি এককের বর্গ: প্রথমে দুটি, তারপর চারটি। ব্লকে 2 + 4 = 6 দেখানো।</span></p>
+<p id="fs-id1461649"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>6</mn></math></p></div>
+</div>
+<div id="fs-id2210891"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2210891</p>
+<div id="fs-id1040799">
+<p id="fs-id1405615"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>3</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1583137"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1583137</p>
+<div id="fs-id1246687">
+<p id="fs-id1467513"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn><mo>+</mo><mn>4</mn></mrow></math></p>
+</div>
+<div id="fs-id1899515">
+<p id="fs-id1171105186388"><br/><span id="fs-id1548483" class="media-description">চিত্রের বর্ণনা: দশকের একটি দণ্ড ও দুটি এককের বর্গ; 8 + 4 = 12 দেখানো।</span></p>
+<p id="fs-id2678643"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>12</mn></math></p></div>
+</div>
+<div id="fs-id1389381"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1389381</p>
+<div id="fs-id1370774">
+<p id="fs-id2658396"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>9</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1932178"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1932178</p>
+<div id="fs-id2835377">
+<p id="fs-id1607967"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn><mo>+</mo><mn>75</mn></mrow></math></p>
+</div>
+<div id="fs-id1605815">
+<p id="fs-id1171105284820"><br/><span id="fs-id2568159" class="media-description">চিত্রের বর্ণনা: দশকের আটটি দণ্ড ও এককের নয়টি বর্গ; 14 + 75 = 89 দেখানো।</span></p>
+<p id="fs-id2820243"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>14</mn><mo>+</mo><mn>75</mn><mo>=</mo><mn>89</mn></math></p></div>
+</div>
+<div id="fs-id1509761"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1509761</p>
+<div id="fs-id1807951">
+<p id="fs-id1524007"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn><mo>+</mo><mn>63</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2495783"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2495783</p>
+<div id="fs-id2270650">
+<p id="fs-id2818976"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>16</mn><mo>+</mo><mn>25</mn></mrow></math></p>
+</div>
+<div id="fs-id2368353">
+<p id="fs-id1171105560577"><br/><span id="fs-id2642795" class="media-description">চিত্রের বর্ণনা: দশকের চারটি দণ্ড ও এককের একটি বর্গ; 16 + 25 = 41 দেখানো।</span></p>
+<p id="fs-id2903286"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>16</mn><mo>+</mo><mn>25</mn><mo>=</mo><mn>41</mn></math></p></div>
+</div>
+<div id="fs-id1209935"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1209935</p>
+<div id="fs-id1917415">
+<p id="fs-id1582675"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn><mo>+</mo><mn>27</mn></mrow></math></p>
+</div>
+</div>
+<p id="fs-id4121509"><strong>শূন্যসহ স্বাভাবিক সংখ্যার যোগ</strong> </p><p id="fs-id2702696">নিচের কাজগুলোতে প্রতিটি ছকের ফাঁকা ঘর পূরণ করো।</p><div id="fs-id2190914"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2190914</p><div id="fs-id1499443">
+<div id="fs-id1518798" class="media-description"><p>চিত্রের বর্ণনা: শিরোনামসহ 11 সারি ও 11 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। সারি 0: 0, 1, 2, ফাঁকা, 4, 5, 6, 7, ফাঁকা, 9। সারি 1: 1, 2, 3, 4, ফাঁকা, ফাঁকা, 7, 8, 9, ফাঁকা। সারি 2: ফাঁকা, 3, 4, 5, 6, ফাঁকা, 8, ফাঁকা, ফাঁকা, 11। সারি 3: 3, ফাঁকা, 5, ফাঁকা, 7, 8, ফাঁকা, 10, ফাঁকা, 12। সারি 4: 4, 5, ফাঁকা, ফাঁকা, 8, 9, ফাঁকা, 11, 12, ফাঁকা। সারি 5: 5, 6, 7, 8, ফাঁকা, ফাঁকা, 11, ফাঁকা, 13, ফাঁকা। সারি 6: 6, 7, 8, ফাঁকা, 10, ফাঁকা, ফাঁকা, 13, ফাঁকা, 15। সারি 7: ফাঁকা, ফাঁকা, 9, 10, ফাঁকা, 12, ফাঁকা, ফাঁকা, 15, 16। সারি 8: 8, 9, ফাঁকা, 11, ফাঁকা, ফাঁকা, 14, ফাঁকা, 16, ফাঁকা। সারি 9: 9, 10, 11, ফাঁকা, 13, 14, ফাঁকা, ফাঁকা, 17, ফাঁকা।</p><div data-editorial="true" class="table-scroll" tabindex="0" role="region" aria-label="যোগের ছক: ফাঁকা ঘর পূরণ করো"><table><caption>যোগের ছক: ফাঁকা ঘর পূরণ করো</caption><thead><tr><th scope="col">+</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>1</td><td>2</td><td>ফাঁকা</td><td>4</td><td>5</td><td>6</td><td>7</td><td>ফাঁকা</td><td>9</td></tr><tr><th scope="row">1</th><td>1</td><td>2</td><td>3</td><td>4</td><td>ফাঁকা</td><td>ফাঁকা</td><td>7</td><td>8</td><td>9</td><td>ফাঁকা</td></tr><tr><th scope="row">2</th><td>ফাঁকা</td><td>3</td><td>4</td><td>5</td><td>6</td><td>ফাঁকা</td><td>8</td><td>ফাঁকা</td><td>ফাঁকা</td><td>11</td></tr><tr><th scope="row">3</th><td>3</td><td>ফাঁকা</td><td>5</td><td>ফাঁকা</td><td>7</td><td>8</td><td>ফাঁকা</td><td>10</td><td>ফাঁকা</td><td>12</td></tr><tr><th scope="row">4</th><td>4</td><td>5</td><td>ফাঁকা</td><td>ফাঁকা</td><td>8</td><td>9</td><td>ফাঁকা</td><td>11</td><td>12</td><td>ফাঁকা</td></tr><tr><th scope="row">5</th><td>5</td><td>6</td><td>7</td><td>8</td><td>ফাঁকা</td><td>ফাঁকা</td><td>11</td><td>ফাঁকা</td><td>13</td><td>ফাঁকা</td></tr><tr><th scope="row">6</th><td>6</td><td>7</td><td>8</td><td>ফাঁকা</td><td>10</td><td>ফাঁকা</td><td>ফাঁকা</td><td>13</td><td>ফাঁকা</td><td>15</td></tr><tr><th scope="row">7</th><td>ফাঁকা</td><td>ফাঁকা</td><td>9</td><td>10</td><td>ফাঁকা</td><td>12</td><td>ফাঁকা</td><td>ফাঁকা</td><td>15</td><td>16</td></tr><tr><th scope="row">8</th><td>8</td><td>9</td><td>ফাঁকা</td><td>11</td><td>ফাঁকা</td><td>ফাঁকা</td><td>14</td><td>ফাঁকা</td><td>16</td><td>ফাঁকা</td></tr><tr><th scope="row">9</th><td>9</td><td>10</td><td>11</td><td>ফাঁকা</td><td>13</td><td>14</td><td>ফাঁকা</td><td>ফাঁকা</td><td>17</td><td>ফাঁকা</td></tr></tbody></table></div></div>
+</div>
+<div id="fs-id1795710">
+<div id="fs-id1171105158842"><br/><div id="fs-id2658348" class="media-description"><p>চিত্রের বর্ণনা: শিরোনামসহ 11 সারি ও 11 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। সারি 0: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। সারি 1: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10। সারি 2: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11। সারি 3: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12। সারি 4: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13। সারি 5: 5, 6, 7, 8, 9, 10, 11, 12, 13, 14। সারি 6: 6, 7, 8, 9, 10, 11, 12, 13, 14, 15। সারি 7: 7, 8, 9, 10, 11, 12, 13, 14, 15, 16। সারি 8: 8, 9, 10, 11, 12, 13, 14, 15, 16, 17। সারি 9: 9, 10, 11, 12, 13, 14, 15, 16, 17, 18।</p><div data-editorial="true" class="table-scroll" tabindex="0" role="region" aria-label="আগের যোগের ছকের পূর্ণ উত্তর"><table><caption>আগের যোগের ছকের পূর্ণ উত্তর</caption><thead><tr><th scope="col">+</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><th scope="row">1</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><th scope="row">2</th><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><th scope="row">3</th><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><th scope="row">4</th><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><th scope="row">5</th><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><th scope="row">6</th><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><th scope="row">7</th><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><th scope="row">8</th><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><th scope="row">9</th><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr></tbody></table></div></div></div></div>
+</div><div id="fs-id1485179"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1485179</p><div id="fs-id2758793">
+<div id="fs-id2754245" class="media-description"><p>চিত্রের বর্ণনা: শিরোনামসহ 11 সারি ও 11 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। সারি 0: 0, 1, 2, 3, 4, ফাঁকা, 6, ফাঁকা, 8, 9। সারি 1: 1, 2, 3, ফাঁকা, 5, 6, ফাঁকা, 8, ফাঁকা, 10। সারি 2: 2, ফাঁকা, 4, ফাঁকা, 6, 7, ফাঁকা, 9, 10, ফাঁকা। সারি 3: ফাঁকা, 4, ফাঁকা, 6, ফাঁকা, ফাঁকা, 9, ফাঁকা, 11, ফাঁকা। সারি 4: 4, 5, 6, 7, ফাঁকা, ফাঁকা, 10, 11, ফাঁকা, 13। সারি 5: 5, 6, ফাঁকা, 8, 9, ফাঁকা, 11, 12, 13, ফাঁকা। সারি 6: ফাঁকা, ফাঁকা, 8, 9, ফাঁকা, ফাঁকা, 12, 13, ফাঁকা, 15। সারি 7: 7, 8, ফাঁকা, 10, ফাঁকা, 12, ফাঁকা, ফাঁকা, 15, 16। সারি 8: 8, 9, 10, ফাঁকা, 12, ফাঁকা, 14, ফাঁকা, 16, 17। সারি 9: ফাঁকা, ফাঁকা, 11, 12, 13, ফাঁকা, ফাঁকা, 16, ফাঁকা, ফাঁকা।</p><div data-editorial="true" class="table-scroll" tabindex="0" role="region" aria-label="আরেকটি যোগের ছক: ফাঁকা ঘর পূরণ করো"><table><caption>আরেকটি যোগের ছক: ফাঁকা ঘর পূরণ করো</caption><thead><tr><th scope="col">+</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>ফাঁকা</td><td>6</td><td>ফাঁকা</td><td>8</td><td>9</td></tr><tr><th scope="row">1</th><td>1</td><td>2</td><td>3</td><td>ফাঁকা</td><td>5</td><td>6</td><td>ফাঁকা</td><td>8</td><td>ফাঁকা</td><td>10</td></tr><tr><th scope="row">2</th><td>2</td><td>ফাঁকা</td><td>4</td><td>ফাঁকা</td><td>6</td><td>7</td><td>ফাঁকা</td><td>9</td><td>10</td><td>ফাঁকা</td></tr><tr><th scope="row">3</th><td>ফাঁকা</td><td>4</td><td>ফাঁকা</td><td>6</td><td>ফাঁকা</td><td>ফাঁকা</td><td>9</td><td>ফাঁকা</td><td>11</td><td>ফাঁকা</td></tr><tr><th scope="row">4</th><td>4</td><td>5</td><td>6</td><td>7</td><td>ফাঁকা</td><td>ফাঁকা</td><td>10</td><td>11</td><td>ফাঁকা</td><td>13</td></tr><tr><th scope="row">5</th><td>5</td><td>6</td><td>ফাঁকা</td><td>8</td><td>9</td><td>ফাঁকা</td><td>11</td><td>12</td><td>13</td><td>ফাঁকা</td></tr><tr><th scope="row">6</th><td>ফাঁকা</td><td>ফাঁকা</td><td>8</td><td>9</td><td>ফাঁকা</td><td>ফাঁকা</td><td>12</td><td>13</td><td>ফাঁকা</td><td>15</td></tr><tr><th scope="row">7</th><td>7</td><td>8</td><td>ফাঁকা</td><td>10</td><td>ফাঁকা</td><td>12</td><td>ফাঁকা</td><td>ফাঁকা</td><td>15</td><td>16</td></tr><tr><th scope="row">8</th><td>8</td><td>9</td><td>10</td><td>ফাঁকা</td><td>12</td><td>ফাঁকা</td><td>14</td><td>ফাঁকা</td><td>16</td><td>17</td></tr><tr><th scope="row">9</th><td>ফাঁকা</td><td>ফাঁকা</td><td>11</td><td>12</td><td>13</td><td>ফাঁকা</td><td>ফাঁকা</td><td>16</td><td>ফাঁকা</td><td>ফাঁকা</td></tr></tbody></table></div></div>
+</div>
+</div><div id="fs-id2307885"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2307885</p><div id="fs-id2940472">
+<div id="fs-id2370131" class="media-description"><p>চিত্রের বর্ণনা: শিরোনামসহ 5 সারি ও 8 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 6, 7, 8, 9। সারি 6: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 7: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 8: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 9: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা।</p><div data-editorial="true" class="table-scroll" tabindex="0" role="region" aria-label="যোগের ছক: সারি 6–9, কলাম 3–9"><table><caption>যোগের ছক: সারি 6–9, কলাম 3–9</caption><thead><tr><th scope="col">+</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">6</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">7</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">8</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">9</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr></tbody></table></div></div>
+</div>
+<div id="fs-id2474636">
+<div id="fs-id1171105186222"><br/><div id="fs-id1463120" class="media-description"><p>চিত্রের বর্ণনা: শিরোনামসহ 5 সারি ও 8 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 6, 7, 8, 9। সারি 6: 9, 10, 11, 12, 13, 14, 15। সারি 7: 10, 11, 12, 13, 14, 15, 16। সারি 8: 11, 12, 13, 14, 15, 16, 17। সারি 9: 12, 13, 14, 15, 16, 17, 18।</p><div data-editorial="true" class="table-scroll" tabindex="0" role="region" aria-label="সারি 6–9, কলাম 3–9 ছকের উত্তর"><table><caption>সারি 6–9, কলাম 3–9 ছকের উত্তর</caption><thead><tr><th scope="col">+</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">6</th><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><th scope="row">7</th><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><th scope="row">8</th><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><th scope="row">9</th><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr></tbody></table></div></div></div></div>
+</div><div id="fs-id1516426"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1516426</p><div id="fs-id1321944">
+<div id="fs-id2263429" class="media-description"><p>চিত্রের বর্ণনা: শিরোনামসহ 8 সারি ও 5 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 6, 7, 8, 9। বামের সারি-শিরোনাম: 3, 4, 5, 6, 7, 8, 9। সারি 3: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 4: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 5: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 6: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 7: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 8: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 9: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা।</p><div data-editorial="true" class="table-scroll" tabindex="0" role="region" aria-label="যোগের ছক: সারি 3–9, কলাম 6–9"><table><caption>যোগের ছক: সারি 3–9, কলাম 6–9</caption><thead><tr><th scope="col">+</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">3</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">4</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">5</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">6</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">7</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">8</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">9</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr></tbody></table></div></div>
+</div>
+</div><div id="fs-id2216372"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2216372</p><div id="fs-id2294290">
+<div id="fs-id2136825" class="media-description"><p>চিত্রের বর্ণনা: শিরোনামসহ 6 সারি ও 6 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 5, 6, 7, 8, 9। সারি 5: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 6: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 7: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 8: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 9: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা।</p><div data-editorial="true" class="table-scroll" tabindex="0" role="region" aria-label="যোগের ছক: সারি ও কলাম 5–9"><table><caption>যোগের ছক: সারি ও কলাম 5–9</caption><thead><tr><th scope="col">+</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">5</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">6</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">7</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">8</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">9</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr></tbody></table></div></div>
+
+</div>
+<div id="fs-id1563224">
+<div id="fs-id1171103593093"><br/><div id="fs-id2957906" class="media-description"><p>চিত্রের বর্ণনা: শিরোনামসহ 6 সারি ও 6 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 5, 6, 7, 8, 9। সারি 5: 10, 11, 12, 13, 14। সারি 6: 11, 12, 13, 14, 15। সারি 7: 12, 13, 14, 15, 16। সারি 8: 13, 14, 15, 16, 17। সারি 9: 14, 15, 16, 17, 18।</p><div data-editorial="true" class="table-scroll" tabindex="0" role="region" aria-label="সারি ও কলাম 5–9 ছকের উত্তর"><table><caption>সারি ও কলাম 5–9 ছকের উত্তর</caption><thead><tr><th scope="col">+</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">5</th><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><th scope="row">6</th><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><th scope="row">7</th><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><th scope="row">8</th><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><th scope="row">9</th><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr></tbody></table></div></div></div></div>
+</div><div id="fs-id2220307"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2220307</p><div id="fs-id2299643">
+<div id="fs-id2202588" class="media-description"><p>চিত্রের বর্ণনা: শিরোনামসহ 5 সারি ও 5 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 6, 7, 8, 9। বামের সারি-শিরোনাম: 6, 7, 8, 9। সারি 6: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 7: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 8: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 9: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা।</p><div data-editorial="true" class="table-scroll" tabindex="0" role="region" aria-label="যোগের ছক: সারি ও কলাম 6–9"><table><caption>যোগের ছক: সারি ও কলাম 6–9</caption><thead><tr><th scope="col">+</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr></thead><tbody><tr><th scope="row">6</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">7</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">8</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr><tr><th scope="row">9</th><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td><td>ফাঁকা</td></tr></tbody></table></div></div>
+</div>
+</div><p id="fs-id1950178">নিচের কাজগুলোতে যোগ করো।</p>
+<div id="fs-id3433877"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id3433877</p><div id="fs-id1841799">
+<ol id="eip-id1168287108282" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>+</mo><mn>13</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>13</mn><mo>+</mo><mn>0</mn></math></li></ol>
+</div>
+<div id="fs-id1059525">
+<ol id="eip-id1168288203886" class="circled"><li><span class="token">ⓐ</span> 13 </li><li><span class="token">ⓑ</span> 13</li></ol>
+</div>
+</div><div id="fs-id2670104"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2670104</p><div id="fs-id1458774">
+<ol id="eip-id1168288220373" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>+</mo><mn>5,280</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5,280</mn><mo>+</mo><mn>0</mn></math></li></ol></div>
+</div><div id="fs-id1800383"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1800383</p><div id="fs-id2432069">
+<ol id="eip-id1168287260366" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>+</mo><mn>3</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>+</mo><mn>8</mn></math></li></ol></div>
+<div id="fs-id2926422">
+<ol id="eip-id1168287179546" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11</mn></math></li></ol></div>
+</div><div id="fs-id2700265"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2700265</p><div id="fs-id1317764">
+<ol id="eip-id1168287179592" class="circled"><li><span class="token">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mo>+</mo><mn>5</mn></math></li><li><span class="token">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mo>+</mo><mn>7</mn></math></li></ol></div>
+</div><div id="fs-id2165529"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2165529</p>
+<div id="fs-id2778182">
+<p id="fs-id2684827"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>45</mn><mo>+</mo><mn>33</mn></mrow></math></p>
+</div>
+<div id="fs-id2755026">
+<p id="fs-id1336891"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>78</mn></math></p></div>
+</div>
+<div id="fs-id1785992"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1785992</p>
+<div id="fs-id1358946">
+<p id="fs-id1717749"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>37</mn><mo>+</mo><mn>22</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id3407533"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id3407533</p>
+<div id="fs-id1607908">
+<p id="fs-id1065635"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>71</mn><mo>+</mo><mn>28</mn></mrow></math></p>
+</div>
+<div id="fs-id1221773">
+<p id="fs-id934310"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>99</mn></math></p></div>
+</div>
+<div id="fs-id2209807"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2209807</p>
+<div id="fs-id2277895">
+<p id="fs-id1526157"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>43</mn><mo>+</mo><mn>53</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2715529"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2715529</p>
+<div id="fs-id764587">
+<p id="fs-id1215661"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>26</mn><mo>+</mo><mn>59</mn></mrow></math></p>
+</div>
+<div id="fs-id1944318">
+<p id="fs-id1828794"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>85</mn></math></p></div>
+</div>
+<div id="fs-id1184179"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1184179</p>
+<div id="fs-id1559422">
+<p id="fs-id2431742"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>38</mn><mo>+</mo><mn>17</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1612224"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1612224</p>
+<div id="fs-id2143943">
+<p id="fs-id2908339"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>64</mn><mo>+</mo><mn>78</mn></mrow></math></p>
+</div>
+<div id="fs-id1390654">
+<p id="fs-id2279598"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>142</mn></math></p></div>
+</div>
+<div id="fs-id1806818"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1806818</p>
+<div id="fs-id1597646">
+<p id="fs-id2165415"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>92</mn><mo>+</mo><mn>39</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1360696"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1360696</p>
+<div id="fs-id2280789">
+<p id="fs-id2922241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>168</mn><mo>+</mo><mn>325</mn></mrow></math></p>
+</div>
+<div id="fs-id2620973">
+<p id="fs-id2676387"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>493</mn></math></p></div>
+</div>
+<div id="fs-id2602850"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2602850</p>
+<div id="fs-id1852215">
+<p id="fs-id1278967"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>247</mn><mo>+</mo><mn>149</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1619766"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1619766</p>
+<div id="fs-id2485778">
+<p id="fs-id2160161"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>584</mn><mo>+</mo><mn>277</mn></mrow></math></p>
+</div>
+<div id="fs-id4212245">
+<p id="fs-id1946810"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>861</mn></math></p></div>
+</div>
+<div id="fs-id2269768"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2269768</p>
+<div id="fs-id2276203">
+<p id="fs-id1116074"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>175</mn><mo>+</mo><mn>648</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2238187"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2238187</p>
+<div id="fs-id2366316">
+<p id="fs-id1910846"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>832</mn><mo>+</mo><mn>199</mn></mrow></math></p>
+</div>
+<div id="fs-id1361604">
+<p id="fs-id1499591"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1,031</mn></math></p></div>
+</div>
+<div id="fs-id2202157"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2202157</p>
+<div id="fs-id1508765">
+<p id="fs-id2430610"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>775</mn><mo>+</mo><mn>369</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1257721"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1257721</p>
+<div id="fs-id1517058">
+<p id="fs-id2280943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6,358</mn><mo>+</mo><mn>492</mn></mrow></math></p>
+</div>
+<div id="fs-id1955469">
+<p id="fs-id2295088"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6,850</mn></math></p></div>
+</div>
+<div id="fs-id1808456"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1808456</p>
+<div id="fs-id1170550">
+<p id="fs-id2212086"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9,184</mn><mo>+</mo><mn>578</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1791279"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1791279</p>
+<div id="fs-id2219928">
+<p id="fs-id2277393"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3,740</mn><mo>+</mo><mn>18,593</mn></mrow></math></p>
+</div>
+<div id="fs-id1631210">
+<p id="fs-id2431506"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>22,333</mn></math></p></div>
+</div>
+<div id="fs-id1205572"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1205572</p>
+<div id="fs-id2657723">
+<p id="fs-id1549331"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6,118</mn><mo>+</mo><mn>15,990</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1582947"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1582947</p>
+<div id="fs-id1207993">
+<p id="fs-id2642784"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>485,012</mn><mo>+</mo><mn>619,848</mn></mrow></math></p>
+</div>
+<div id="fs-id1205670">
+<p id="fs-id1401839"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1,104,860</mn></math></p></div>
+</div>
+<div id="fs-id1542190"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1542190</p>
+<div id="fs-id2793180">
+<p id="fs-id2211302"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>368,911</mn><mo>+</mo><mn>857,289</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2308954"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2308954</p>
+<div id="fs-id1799797">
+<p id="fs-id1608176"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24,731</mn><mo>+</mo><mn>592</mn><mo>+</mo><mn>3,868</mn></mrow></math></p>
+</div>
+<div id="fs-id2334168">
+<p id="fs-id1566297"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>29,191</mn></math></p></div>
+</div>
+<div id="fs-id1352693"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1352693</p>
+<div id="fs-id1596476">
+<p id="fs-id1788229"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>28,925</mn><mo>+</mo><mn>817</mn><mo>+</mo><mn>4,593</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2611500"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2611500</p>
+<div id="fs-id1762023">
+<p id="fs-id2581581"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8,015</mn><mo>+</mo><mn>76,946</mn><mo>+</mo><mn>16,570</mn></mrow></math></p>
+</div>
+<div id="fs-id1563641">
+<p id="fs-id1828176"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>101,531</mn></math></p></div>
+</div>
+<div id="fs-id1523165"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1523165</p>
+<div id="fs-id1950063">
+<p id="fs-id1368588"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6,291</mn><mo>+</mo><mn>54,107</mn><mo>+</mo><mn>28,635</mn></mrow></math></p>
+</div>
+</div>
+<p id="fs-id1262565"><strong>কথায় বলা বিষয় গাণিতিক প্রতীকে লিখি</strong> </p><p id="eip-527">নিচের কাজগুলোতে কথায় বলা প্রতিটি বিষয় গাণিতিক প্রতীকে লেখো, তারপর মান বের করো।</p><div id="fs-id2387977"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2387977</p>
+<div id="fs-id2179698">
+<p id="fs-id1394583">যোগফল—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>13</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18</mn></mrow></math></p>
+</div>
+<div id="fs-id934090">
+<p id="fs-id1827165"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>13</mn><mo>+</mo><mn>18</mn><mo>=</mo><mn>31</mn></math></p></div>
+</div>
+<div id="fs-id1233172"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1233172</p>
+<div id="fs-id833404">
+<p id="fs-id1275802">যোগফল—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>19</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1916031"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1916031</p>
+<div id="fs-id1632164">
+<p id="fs-id1517572">যোগফল—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>90</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>65</mn></mrow></math></p>
+</div>
+<div id="fs-id1609461">
+<p id="fs-id2481653"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>90</mn><mo>+</mo><mn>65</mn><mo>=</mo><mn>155</mn></math></p></div>
+</div>
+<div id="fs-id1834317"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1834317</p>
+<div id="fs-id1549991">
+<p id="fs-id1811328">যোগফল—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>70</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>38</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2223707"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2223707</p>
+<div id="fs-id1265711">
+<p id="fs-id2432228"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>33</mn></mrow></math> -এর সঙ্গে যোগ করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>49</mn></mrow></math></p>
+</div>
+<div id="fs-id1517108">
+<p id="fs-id1238533"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>33</mn><mo>+</mo><mn>49</mn><mo>=</mo><mn>82</mn></math></p></div>
+</div>
+<div id="fs-id1529453"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1529453</p>
+<div id="fs-id1948922">
+<p id="fs-id2369763"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>68</mn></mrow></math> -এর সঙ্গে যোগ করো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>25</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1760728"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1760728</p>
+<div id="fs-id1397964">
+<p id="fs-id1836854"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>250</mn></mrow></math> বেশি—মূল সংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>599</mn></mrow></math></p>
+</div>
+<div id="fs-id1480647">
+<p id="fs-id1826480"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>599</mn><mo>+</mo><mn>250</mn><mo>=</mo><mn>849</mn></math></p></div>
+</div>
+<div id="fs-id2671623"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2671623</p>
+<div id="fs-id2146075">
+<p id="fs-id1880793"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>115</mn></mrow></math> বেশি—মূল সংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>286</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1606377"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1606377</p>
+<div id="fs-id1835123">
+<p id="fs-id1785250">মোট—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>628</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>77</mn></mrow></math></p>
+</div>
+<div id="fs-id1944908">
+<p id="fs-id1509499"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>628</mn><mo>+</mo><mn>77</mn><mo>=</mo><mn>705</mn></math></p></div>
+</div>
+<div id="fs-id1614332"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1614332</p>
+<div id="fs-id2619707">
+<p id="fs-id2174343">মোট—সংখ্যা দুটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>593</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>79</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2281219"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2281219</p>
+<div id="fs-id2129977">
+<p id="fs-id2265450"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,482</mn></mrow></math> যোগ করো এই সংখ্যার সঙ্গে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>915</mn></mrow></math></p>
+</div>
+<div id="fs-id2144836">
+<p id="fs-id2264496"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>915</mn><mo>+</mo><mn>1,482</mn><mo>=</mo><mn>2,397</mn></math></p></div>
+</div>
+<div id="fs-id1159676"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1159676</p>
+<div id="fs-id2478495">
+<p id="fs-id1786725"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2,719</mn></mrow></math> যোগ করো এই সংখ্যার সঙ্গে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>682</mn></mrow></math></p>
+</div>
+</div>
+<p id="fs-id1458706"><strong>বাস্তব সমস্যায় শূন্যসহ স্বাভাবিক সংখ্যার যোগ</strong> </p><p id="eip-222">নিচের সমস্যাগুলো সমাধান করো।</p><div id="fs-id2195542"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2195542</p>
+<div id="fs-id1760965">
+<p id="fs-id1747338"><strong>বাড়ি সংস্কার</strong> সোফিয়া রান্নাঘর সংস্কার করে নতুন চুলা-ওভেন, মাইক্রোওয়েভ ও বাসন ধোয়ার যন্ত্র কিনেছে। চুলা-ওভেনের দাম <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$1,100</mtext><mo>,</mo></mrow></math> মাইক্রোওয়েভের দাম <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$250</mtext><mo>,</mo></mrow></math> এবং বাসন ধোয়ার যন্ত্রের দাম <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$525</mtext><mo>.</mo></mrow></math> এই তিনটি যন্ত্রের মোট দাম কত?</p>
+</div>
+<div id="fs-id1801474">
+<p id="fs-id1408146">মোট দাম $1,875।</p>
+</div>
+</div>
+<div id="fs-id2452678"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2452678</p>
+<div id="fs-id2788930">
+<p id="fs-id2214138"><strong>খেলার সরঞ্জাম</strong> এইডেন একটি বেসবল ব্যাট, হেলমেট ও দস্তানা কিনেছে। ব্যাটের দাম <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$299</mtext><mo>,</mo></mrow></math> হেলমেটের দাম <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$35</mtext><mo>,</mo></mrow></math> এবং দস্তানার দাম <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$68</mtext><mo>.</mo></mrow></math> এইডেনের খেলার সরঞ্জামগুলোর মোট দাম কত?</p>
+</div>
+</div>
+<div id="fs-id2264366"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2264366</p>
+<div id="fs-id2135940">
+<p id="fs-id1968068"><strong>সাইকেল চালানো</strong> ইথান সাইকেল চালিয়েছে: সোমবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn></mrow></math> মাইল, মঙ্গলবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>19</mn></mrow></math> মাইল, বুধবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math> মাইল, শুক্রবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>25</mn></mrow></math> মাইল এবং শনিবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>68</mn></mrow></math> মাইল। ইথান মোট কত মাইল সাইকেল চালিয়েছে?</p>
+</div>
+<div id="fs-id1722779">
+<p id="fs-id1374526">ইথান 138 মাইল সাইকেল চালিয়েছে।</p>
+</div>
+</div>
+<div id="fs-id1401775"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1401775</p>
+<div id="fs-id1827632">
+<p id="fs-id1739127"><strong>ব্যবসা</strong> ক্লোয়ির একটি ফুলের দোকান আছে। গত সপ্তাহে সে সাজানো ফুলের গুচ্ছ তৈরি করেছে: সোমবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>19</mn></mrow></math> টি, মঙ্গলবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math> টি, বুধবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>23</mn></mrow></math> টি, বৃহস্পতিবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>29</mn></mrow></math> টি এবং শুক্রবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>44</mn></mrow></math> টি। ক্লোয়ি মোট কতটি সাজানো ফুলের গুচ্ছ তৈরি করেছে?</p>
+</div>
+</div>
+<div id="fs-id2609576"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2609576</p>
+<div id="fs-id2198580">
+<p id="fs-id1835026"><strong>ফ্ল্যাটের মেঝের ক্ষেত্রফল</strong> জ্যাকসন থাকে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math> ঘরের একটি ফ্ল্যাটে। ঘরগুলোর মেঝের ক্ষেত্রফল বর্গফুটে যথাক্রমে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>238</mn><mo>,</mo><mn>120</mn><mo>,</mo><mn>156</mn><mo>,</mo><mn>196</mn><mo>,</mo><mn>100</mn><mo>,</mo><mn>132</mn><mo>,</mo></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>225</mn><mo>.</mo></mrow></math> সব মিলিয়ে এই <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math> টি ঘরের মেঝের মোট ক্ষেত্রফল কত বর্গফুট?</p>
+</div>
+<div id="fs-id2474540">
+<p id="fs-id1386098">ঘরগুলোর মেঝের মোট ক্ষেত্রফল 1,167 বর্গফুট।</p>
+</div>
+</div>
+<div id="fs-id1946723"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1946723</p>
+<div id="fs-id2375146">
+<p id="fs-id1321612"><strong>ওজন</strong> সাতজন পুরুষ মাছ ধরার একটি নৌকা ভাড়া করেছেন। তাঁদের ওজন যথাক্রমে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>175</mn><mo>,</mo><mn>192</mn><mo>,</mo><mn>148</mn><mo>,</mo><mn>169</mn><mo>,</mo><mn>205</mn><mo>,</mo><mn>181</mn><mo>,</mo></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>225</mn></mrow></math> পাউন্ড। সাতজনের মোট ওজন কত?</p>
+</div>
+</div>
+<div id="fs-id1962359"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1962359</p>
+<div id="fs-id1280684">
+<p id="fs-id1352275"><strong>বেতন</strong> গত বছর ন্যাটালির বেতন ছিল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$82,572</mtext><mo>.</mo></mrow></math> দুই বছর আগে তাঁর বেতন ছিল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$79,316</mtext><mo>,</mo></mrow></math> এবং তিন বছর আগে ছিল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$75,298</mtext><mo>.</mo></mrow></math> গত তিন বছরে ন্যাটালির বেতনের মোট পরিমাণ কত?</p>
+</div>
+<div id="fs-id1957190">
+<p id="fs-id2164332">ন্যাটালির মোট বেতন $237,186।</p>
+</div>
+</div>
+<div id="fs-id1410524"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1410524</p>
+<div id="fs-id2136860">
+<p id="fs-id2730706"><strong>বাড়ি বিক্রি</strong> এমা বাড়ি কেনাবেচার মধ্যস্থতাকারী। গত মাসে তিনি তিনটি বাড়ি বিক্রি করেছেন। বাড়িগুলোর বিক্রয়মূল্য ছিল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$292,540</mtext><mo>,</mo><mtext>$505,875</mtext><mo>,</mo></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>$423,699</mn><mo>.</mo></mrow></math> তিনটি বিক্রয়মূল্যের মোট পরিমাণ কত?</p>
+</div>
+</div>
+<p id="fs-id2789052">নিচের কাজগুলোতে প্রতিটি চিত্রের পরিসীমা বের করো।</p>
+<div id="fs-id2658194"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2658194</p>
+<div id="fs-id2466163">
+<span id="fs-id3323886" class="media-description">চিত্রের বর্ণনা: ত্রিভুজের তিন বাহুর দৈর্ঘ্য 14, 12 ও 18 ইঞ্চি।</span>
+</div>
+<div id="fs-id764274">
+<p id="fs-id1910210">চিত্রটির পরিসীমা 44 ইঞ্চি।</p>
+</div>
+</div>
+<div id="fs-id2130628"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2130628</p>
+<div id="fs-id1739372">
+<span id="fs-id1920954" class="media-description">চিত্রের বর্ণনা: সমকোণী ত্রিভুজ: বাঁয়ের উল্লম্ব বাহু 5 সেন্টিমিটার, নিচের বাহু 12 সেন্টিমিটার এবং তির্যক বাহু 13 সেন্টিমিটার।</span>
+</div>
+</div>
+<div id="fs-id1718142"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1718142</p>
+<div id="fs-id1800041">
+<span id="fs-id1509030" class="media-description">চিত্রের বর্ণনা: আয়তক্ষেত্রের ওপরের ও নিচের বাহু 21 ও 21 মিটার; বাঁয়ের ও ডানের বাহু 7 ও 7 মিটার।</span>
+</div>
+<div id="fs-id1786922">
+<p id="fs-id2599809">চিত্রটির পরিসীমা 56 মিটার।</p>
+</div>
+</div>
+<div id="fs-id2173206"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2173206</p>
+<div id="fs-id1945450">
+<span id="fs-id1409007" class="media-description">চিত্রের বর্ণনা: আয়তক্ষেত্রের ওপরের ও নিচের বাহু 19 ও 19 ফুট; বাঁয়ের ও ডানের বাহু 14 ও 14 ফুট।</span>
+</div>
+</div>
+<div id="fs-id1788660"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1788660</p><div id="fs-id2220439">
+<span id="fs-id1386731" class="media-description">চিত্রের বর্ণনা: চতুর্ভুজের সমান্তরাল ওপরের ও নিচের বাহু যথাক্রমে 19 ও 16 গজ। দুই তির্যক বাহুর দৈর্ঘ্য 18 ও 18 গজ।</span>
+</div>
+<div id="fs-id1462641">
+<p id="fs-id1918111">চিত্রটির পরিসীমা 71 গজ।</p>
+</div>
+</div><div id="fs-id1321391"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1321391</p><div id="fs-id2261883">
+<span id="fs-id2453797" class="media-description">চিত্রের বর্ণনা: চতুর্ভুজের সমান্তরাল ওপরের ও নিচের বাহু যথাক্রমে 24 ও 29 মিটার। দুই তির্যক বাহুর দৈর্ঘ্য 17 ও 17 মিটার।</span>
+</div>
+</div><div id="fs-id2427822"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id2427822</p><div id="fs-id1933947">
+<span id="fs-id1727317" class="media-description">চিত্রের বর্ণনা: ছয় বাহুর চিত্র। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে: ডানে 24 ফুট, নিচে 7 ফুট, বাঁয়ে 19 ফুট, ওপরে 3 ফুট, বাঁয়ে 5 ফুট ও ওপরে 4 ফুট।</span>
+</div>
+<div id="fs-id2597307">
+<p id="fs-id764492">চিত্রটির পরিসীমা 62 ফুট।</p>
+</div>
+</div><div id="fs-id1960065"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1960065</p><div id="fs-id2172560">
+<span id="fs-id2316211" class="media-description">চিত্রের বর্ণনা: ছয় বাহুর চিত্র। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে: ডানে 25 ইঞ্চি, নিচে 10 ইঞ্চি, বাঁয়ে 14 ইঞ্চি, ওপরে 7 ইঞ্চি, বাঁয়ে 11 ইঞ্চি; তারপর ওপরে উঠে শুরুর কোণে ফেরা। শেষ উল্লম্ব বাহুর দৈর্ঘ্য চিত্রে লেখা নেই।</span>
+</div>
+</div></section><section id="fs-id2280700" class="everyday">
+<h2>দৈনন্দিন গণিত</h2>
+<div id="fs-id1606437"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1606437</p>
+<div id="fs-id3217928">
+<p id="fs-id1947377"><strong>ক্যালরি</strong> পলেট দুপুরে গ্রিল করা মুরগির সালাদ, র‍্যাঞ্চ ড্রেসিং ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>16 আউন্সের</mtext></mrow></math> পানীয় খেয়েছে। রেস্তোরাঁর পুষ্টিতথ্যের ছকে সে দেখেছে, প্রতিটি খাবারের ক্যালরির পরিমাণ এ রকম:</p>
+<p id="fs-id1262668">গ্রিল করা মুরগির সালাদ— <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>320</mn></mrow></math> ক্যালরি<br/>
+র‍্যাঞ্চ ড্রেসিং— <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>170</mn></mrow></math> ক্যালরি<br/>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>16 আউন্সের</mtext></mrow></math> পানীয়— <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>150</mn></mrow></math> ক্যালরি</p>
+<p id="fs-id2806755">পলেটের দুপুরের খাবারে মোট কত ক্যালরি ছিল?</p>
+</div>
+<div id="fs-id1880768">
+<p id="fs-id1548221">মোট ক্যালরি ছিল 640।</p>
+</div>
+</div>
+<div id="fs-id1215287"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1215287</p>
+<div id="fs-id2294699">
+<p id="fs-id1911016"><strong>ক্যালরি</strong> ফ্রেড রাতের খাবারে গ্রিল করা মুরগির স্যান্ডউইচ, ছোট এক পরিবেশন ফ্রেঞ্চ ফ্রাই ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>12 আউন্সের</mtext></mrow></math> চকলেট শেক খেয়েছে। রেস্তোরাঁর পুষ্টিতথ্যের ছকে প্রতিটি খাবারের ক্যালরির পরিমাণ এ রকম:</p>
+<p id="fs-id1321648">গ্রিল করা মুরগির স্যান্ডউইচ— <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>420</mn></mrow></math> ক্যালরি<br/>
+ছোট এক পরিবেশন ফ্রেঞ্চ ফ্রাই— <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>230</mn></mrow></math> ক্যালরি<br/>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>12 আউন্সের</mtext></mrow></math> চকলেট শেক— <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>580</mn></mrow></math> ক্যালরি</p>
+<p id="fs-id2307453">ফ্রেডের রাতের খাবারে মোট কত ক্যালরি ছিল?</p>
+</div>
+</div>
+<div id="fs-id1567863"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1567863</p>
+<div id="fs-id1394827">
+<p id="fs-id2270985"><strong>পরীক্ষার নম্বর</strong> একটি কোর্সে পাস করতে একজন শিক্ষার্থীর পাঁচটি পরীক্ষায় মোট প্রয়োজন <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>400</mn></mrow></math> নম্বর। শিক্ষার্থীটি পেয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>82</mn><mo>,</mo><mn>91</mn><mo>,</mo><mn>75</mn><mo>,</mo><mn>88</mn><mo>,</mo><mtext>ও</mtext><mspace width="0.2em"></mspace><mn>70</mn><mo>.</mo></mrow></math> শিক্ষার্থীটি কি কোর্সে পাস করেছে?</p></div>
+<div id="fs-id1171103481776">
+<p id="fs-id1171105500772">হ্যাঁ, সে 406 নম্বর পেয়েছে।</p>
+</div>
+</div>
+<div id="fs-id1369108"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1369108</p>
+<div id="fs-id1530557">
+<p id="fs-id2684871"><strong>লিফট</strong> একটি লিফট সর্বোচ্চ যে ওজন বহন করতে পারে, তা হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1150</mn></mrow></math> পাউন্ড। লিফটে ছয়জন পুরুষ আছেন। তাঁদের ওজন যথাক্রমে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>210</mn><mo>,</mo><mn>145</mn><mo>,</mo><mn>183</mn><mo>,</mo><mn>230</mn><mo>,</mo><mn>159</mn><mo>,</mo><mtext>ও</mtext><mspace width="0.2em"></mspace><mn>164</mn></mrow></math> পাউন্ড। মোট ওজন কি লিফটের সর্বোচ্চ ধারণক্ষমতার নিচে আছে?</p>
+</div>
+<div id="fs-idm275747712">
+<p id="fs-idm278477024">হ্যাঁ, মোট ওজন 1091 পাউন্ড।</p>
+</div>
+</div>
+</section>
+<section id="fs-id1405751" class="writing">
+<h2>লিখে বোঝাই</h2>
+<div id="fs-id1408863"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1408863</p>
+<div id="fs-id2912531">
+<p id="fs-id2267341">এক অঙ্কের সংখ্যার যোগফলগুলো জানা আছে—এ বিষয়ে তুমি কতটা নিশ্চিত? পুরোপুরি নিশ্চিত না হলে দক্ষতা বাড়াতে কী করবে?</p>
+</div>
+<div id="fs-id1604802">
+<p id="fs-id1149222">উত্তর বিভিন্ন হতে পারে।</p>
+</div>
+</div>
+<div id="fs-id1827602"><p class="source-label" data-editorial="true">উৎসের কাজ: fs-id1827602</p>
+<div id="fs-id1465007">
+<p id="fs-id1379335">এক অঙ্কের সংখ্যার যোগফল শিখতে তুমি কীভাবে মডেল ব্যবহার করেছ?</p>
+</div>
+</div></section><section id="eip-985" class="self-check"><h2>নিজে যাচাই করি</h2><p id="eip-464"><span class="token">ⓐ</span> কাজগুলো শেষ করে এই অংশের শেখার লক্ষ্যগুলো কতটা আয়ত্ত হয়েছে, তা নিচের যাচাই-ছক দিয়ে মূল্যায়ন করো।
+</p>
+
+<figure id="eip-id1168469634010" class="unnumbered"><span id="eip-id1168469634014" class="media-description">চিত্রের বর্ণনা: নিজের দক্ষতা যাচাইয়ের ছক। তিনটি বেছে নেওয়ার কলাম: আত্মবিশ্বাসের সঙ্গে পারি; কিছু সাহায্যে পারি; না—এখনো বুঝিনি। পাঁচটি কাজের সারি: যোগের প্রতীক ব্যবহার; মডেলে শূন্যসহ স্বাভাবিক সংখ্যার যোগ; মডেল ছাড়া যোগ; কথায় বলা বিষয় গাণিতিক প্রতীকে লেখা; বাস্তব সমস্যায় যোগ। প্রতিটি ঘর ফাঁকা।</span></figure><p id="eip-id1168466075811"><span class="token">ⓑ</span> যাচাই-ছকটি দেখার পর সবগুলো শেখার লক্ষ্যে আত্মবিশ্বাসী হতে তুমি কী করবে?
+</p></section></section><section id="bd-glossary"><h2 data-editorial="true">শব্দকোষ</h2><section>
+<div id="fs-id1226736">
+<dfn>যোগফল</dfn>
+<p id="fs-id1245763">দুই বা ততোধিক সংখ্যা যোগ করে যে ফল পাওয়া যায়, তা হলো যোগফল।</p>
+</div>
+</section></section></article><footer id="bd-attribution" lang="en"><h2>Attribution / উৎস ও পরিবর্তন</h2><p>OpenStax, Prealgebra 2e; Copyright Rice University; original author/reviewer credits retained in <a href="../m81241/index.html">the preface</a>. Frozen canonical bundle 38cae454e644abf9f0a623e876994553881597c9; Indonesian edition by KokunoYumeto. Bangladesh Bangla translation: Language Allocation, AI-assisted draft, 2026-08-31.</p><p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>, subject to component notices. <a href="../../provenance/notices/canonical-LICENSE">License</a>. OpenStax and Rice University do not endorse this translation. No native-teacher, browser, PDF or screen-reader approval is claimed for this new draft.</p></footer></main></body></html>
