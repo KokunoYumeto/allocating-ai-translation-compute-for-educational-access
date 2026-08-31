@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-30",
+  "reviewer": "AI-assisted page-image review; not native-teacher validation",
+  "method": "Every final PDF page rendered to PNG with PyMuPDF and visually inspected. Earlier Poppler images also used during font debugging. No browser screenshot claim.",
+  "checks": ["Bangla glyph shaping", "mixed Bangla/Latin identifiers", "mathematical digits", "table alignment", "clipping and overlap", "margins", "headings and footers", "page numbers", "attribution and license readability"],
+  "artifacts": [
+    {"file": "output/pdf/u01-print.pdf", "sha256": "8ef2226e0c46af5604a24cdeb5c12ddb54694879a9f15587ca271fccd2f56f90", "pages": 9, "inspected_pages": [1,2,3,4,5,6,7,8,9], "all_pages_inspected": true, "visual_defects_found": 0},
+    {"file": "output/pdf/u01-screen.pdf", "sha256": "68182825a9bc6a748df0cfc3031a8b13567521ad00d6fa028014aa101c28f9e7", "pages": 13, "inspected_pages": [1,2,3,4,5,6,7,8,9,10,11,12,13], "all_pages_inspected": true, "visual_defects_found": 0}
+  ],
+  "limits": ["No physical print test", "No native Bangla teacher review", "No screen-reader test", "Untagged PDF; no PDF/UA claim"],
+  "validity": "Valid only for these exact PDF hashes. The package builder rejects changed PDFs until a new visual review is recorded."
+}
