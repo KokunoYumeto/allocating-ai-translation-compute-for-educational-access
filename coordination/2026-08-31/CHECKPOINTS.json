@@ -1,0 +1,696 @@
+{
+  "schema": "language-allocation-coordination-v1",
+  "snapshot_at": "2026-08-31T02:30:06.1866922+02:00",
+  "working_notes_date": "2026-08-31",
+  "purpose": "Coordinator-only handoff; not a translation release or live monitor.",
+  "repository": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access",
+  "handoff_branch": "codex/language-allocation-handoff-2026-08-31",
+  "remote_base_commit": "975a3435f611792ef30a0908e0ba54b23a0e229a",
+  "worker_git_objects_included": false,
+  "worker_content_included": false,
+  "ignored_source_assets_included": false,
+  "evidence_policy": "Commit existence and listed paths at each pinned commit checked locally. Working notes combine dated lane handoffs and inspected ledgers; later work may exceed this fixed snapshot. Evidence locators are not bundled files. Rebuild assertions remain attributed to lane receipts; the coordinator did not replay all nine builds.",
+  "lanes": [
+    {
+      "rank": 2,
+      "locale": "bn-Beng-BD",
+      "title": "Bangladesh Bangla Mathematics Translation",
+      "language_root": "bn-Beng-BD",
+      "assigned_materials": [
+        "A00",
+        "selected A10",
+        "AX-1",
+        "AX-3"
+      ],
+      "assignment_scope": "Entire assignment and workflow; excerpt/pilot checkpoints do not narrow it.",
+      "branch": "codex/bn-beng-bd-numeracy-pilot",
+      "checkpoint_commit": "c7a793a822857258fbf65a2b3d9529a3a7d43008",
+      "checkpoint_date": "2026-08-31T02:10:56+02:00",
+      "checkpoint_subject": "Add verified Bangla whole-number reading editions and offline package",
+      "checkpoint_verified_locally": true,
+      "checkpoint_availability": "local_only_not_transferred",
+      "remote_configured_at_snapshot": false,
+      "dirty_at_snapshot": true,
+      "whole_assignment_complete": false,
+      "committed_coverage": "Complete A00 m81243 source draft: 88 exercises and 59 supplied solutions; separate worked answers for all 58 final-practice exercises. U01/U02 reader editions and offline packages.",
+      "uncommitted_working_notes": "Full m81241 preface and m81242 chapter introduction translated; prose/link review remains. m81244 addition next.",
+      "readiness_and_limits": "Recorded all-page visual PDF checks and reproducible package builds. Bengali PDF copy/search remains unreliable; prefer HTML. Native, teacher, browser, screen-reader and physical-print validation remain pending.",
+      "rebuild": {
+        "classification": "requires_rehydration",
+        "details": "Committed paths are project-relative. Independent rebuild needs pinned ignored sources plus documented Python/font dependencies; byte-identical PDF builds depend on pinned runtime and fonts.",
+        "coordinator_replayed_this_build": false
+      },
+      "user_or_capability_issue_ids": [],
+      "evidence": [
+        {
+          "path": "bn-Beng-BD/GOAL.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "bn-Beng-BD/STATUS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "bn-Beng-BD/NEXT_UNIT.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "bn-Beng-BD/canon/CONSULTATIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "bn-Beng-BD/assignment-coverage.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "bn-Beng-BD/sources.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "bn-Beng-BD/DECISIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "locale": "te-Telu-IN",
+      "title": "Telugu Mathematics Translation",
+      "language_root": "te-Telu-IN",
+      "assigned_materials": [
+        "A00",
+        "A10",
+        "A20",
+        "A30",
+        "B10"
+      ],
+      "assignment_scope": "Entire assignment and workflow; excerpt/pilot checkpoints do not narrow it.",
+      "branch": "codex/telugu-mastery-pilot",
+      "checkpoint_commit": "78f653d606490e2b8a25d50b9b13f77f2d7949ea",
+      "checkpoint_date": "2026-08-31T01:37:53+02:00",
+      "checkpoint_subject": "Add checked Telugu recap and verified cross-unit routing",
+      "checkpoint_verified_locally": true,
+      "checkpoint_availability": "local_only_not_transferred",
+      "remote_configured_at_snapshot": false,
+      "dirty_at_snapshot": true,
+      "whole_assignment_complete": false,
+      "committed_coverage": "Seven checked A00 m81243 subsections, TE-B001 through TE-B007 (whole numbers through recap), with learner bridge exercises. No complete canonical module or book.",
+      "uncommitted_working_notes": "TE-B008: all 58 final-practice exercises; glossary B009 and metadata/objectives B010 in parallel. Earlier preface/chapter introduction remain.",
+      "readiness_and_limits": "Recorded source/math, asset corruption and bounded desktop/mobile checks. Andhra Pradesh terminology is not independently witnessed; native/classroom validation pending.",
+      "rebuild": {
+        "classification": "not_established",
+        "details": "Main HTML/CNXML rebuilders use committed frozen inputs/assets and relative paths; clean-PC replay is not yet tested. Full acquisition/canon QA needs ignored pinned downloads. Visual QA hardcodes a host Playwright path and Edge, requiring receiving-PC runtime configuration. Sparse canonical Git checkouts do not prove complete media.",
+        "coordinator_replayed_this_build": false
+      },
+      "user_or_capability_issue_ids": [],
+      "evidence": [
+        {
+          "path": "te-Telu-IN/GOAL.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "te-Telu-IN/STATUS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "te-Telu-IN/NEXT_UNIT.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "te-Telu-IN/canon/CONSULTATIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "te-Telu-IN/units.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "te-Telu-IN/sources.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "te-Telu-IN/DECISIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "locale": "bn-Beng-IN",
+      "title": "Indian Bengali Mathematics Translation",
+      "language_root": "languages/bn-Beng-IN",
+      "assigned_materials": [
+        "A00",
+        "A10",
+        "A20",
+        "selected A30",
+        "AX-3"
+      ],
+      "assignment_scope": "Entire assignment and workflow; excerpt/pilot checkpoints do not narrow it.",
+      "branch": "codex/bn-beng-in-recovery",
+      "checkpoint_commit": "35b8743ef03cf1e350edee24640a8d8afcb04e7e",
+      "checkpoint_date": "2026-08-31T00:41:43+02:00",
+      "checkpoint_subject": "Translate two complete Bengali fraction modules and add U02 companion",
+      "checkpoint_verified_locally": true,
+      "checkpoint_availability": "local_only_not_transferred",
+      "remote_configured_at_snapshot": false,
+      "dirty_at_snapshot": true,
+      "whole_assignment_complete": false,
+      "committed_coverage": "Two complete A00 source modules m81285/m81286 plus learner companions U01/U02. This is not the later four-module working boundary.",
+      "uncommitted_working_notes": "Full m81287/m81288 and U03; eight m81289 blocks integrating. Four-module 164-output working rebuild reported; final review and README/NEXT synchronization remain.",
+      "readiness_and_limits": "Lane reports independent Git-archive replay of 87 committed outputs with donor/download paths absent. Human, learner and assistive-technology review pending.",
+      "rebuild": {
+        "classification": "lane_reported_independent_archive_replay",
+        "details": "The bounded committed reader checkpoint is independently rebuildable without donor/download roots. Acquiring or translating new material still requires its own pinned sources.",
+        "coordinator_replayed_this_build": false
+      },
+      "user_or_capability_issue_ids": [
+        "LA-C01"
+      ],
+      "evidence": [
+        {
+          "path": "languages/bn-Beng-IN/WORK_GOAL.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/bn-Beng-IN/progress.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/bn-Beng-IN/NEXT.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/bn-Beng-IN/canon/references.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/bn-Beng-IN/qa/checkpoint.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/bn-Beng-IN/sources.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/bn-Beng-IN/DECISIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "locale": "vi-Latn-VN",
+      "title": "Vietnamese Mathematics Translation",
+      "language_root": "vi-Latn-VN",
+      "assigned_materials": [
+        "A30",
+        "B20",
+        "B40",
+        "B60",
+        "B80",
+        "MV-1/SB-1 crosswalk"
+      ],
+      "assignment_scope": "Entire assignment and workflow; excerpt/pilot checkpoints do not narrow it.",
+      "branch": "codex/vi-latn-vn-spine-pilot",
+      "checkpoint_commit": "980ef0dfbd31f4e94d803f1e5a31b7060317a6dc",
+      "checkpoint_date": "2026-08-31T01:39:04+02:00",
+      "checkpoint_subject": "Translate and verify complete A30 graphical exercises U012-U013",
+      "checkpoint_verified_locally": true,
+      "checkpoint_availability": "local_only_not_transferred",
+      "remote_configured_at_snapshot": false,
+      "dirty_at_snapshot": true,
+      "whole_assignment_complete": false,
+      "committed_coverage": "A30 m49301 U001-U013 through graphical exercises; 62 of 92 unique end exercises reported. No complete module or book.",
+      "uncommitted_working_notes": "Numeric/technology/real-world exercises U014-U017 and module metadata U000 in draft/integration. Review includes malformed U004 table headers and 29 manual-notation preservation gaps.",
+      "readiness_and_limits": "Source/structure/math and bounded reader checks recorded. New notation/table findings need lane review; no native/educator or full-module completion claim.",
+      "rebuild": {
+        "classification": "partial_requires_rehydration",
+        "details": "Offline HTML is self-contained. Rebuild uses Python and Pandoc; full QA for U006/U007 still needs ignored pinned English/Indonesian originals. Clone-only full QA is not established.",
+        "coordinator_replayed_this_build": false
+      },
+      "user_or_capability_issue_ids": [],
+      "evidence": [
+        {
+          "path": "vi-Latn-VN/GOAL.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "vi-Latn-VN/STATUS.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "vi-Latn-VN/NEXT_UNIT.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "vi-Latn-VN/canon",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "vi-Latn-VN/module-map.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "vi-Latn-VN/sources.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "vi-Latn-VN/DECISIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "locale": "mr-Deva-IN",
+      "title": "Marathi Mathematics Translation",
+      "language_root": "mr-Deva-IN",
+      "assigned_materials": [
+        "A20",
+        "A30",
+        "B10",
+        "B20",
+        "B40"
+      ],
+      "assignment_scope": "Entire assignment and workflow; excerpt/pilot checkpoints do not narrow it.",
+      "branch": "codex/marathi-stem-bridge",
+      "checkpoint_commit": "b66be4d699be59c307a9fc75e230afc815f4b539",
+      "checkpoint_date": "2026-08-31T01:38:20+02:00",
+      "checkpoint_subject": "Translate and verify Marathi function-identification practice",
+      "checkpoint_verified_locally": true,
+      "checkpoint_availability": "local_only_not_transferred",
+      "remote_configured_at_snapshot": false,
+      "dirty_at_snapshot": true,
+      "whole_assignment_complete": false,
+      "committed_coverage": "Ready A20 bridge readers 001-005: 47 selected source blocks, 26 source practice items, 12 canonical diagrams. No complete canonical module/book.",
+      "uncommitted_working_notes": "006-010 frozen; 011 restores four legacy selections; 012 m81374 opening/Vertical Line Test frozen; 013 Basic Functions translating. Full m81373 source selection does not yet equal assembled module readiness.",
+      "readiness_and_limits": "Legacy nested anchors/worked steps, assembly/crosslinks and revised HTML QA remain. Explicit browser URL-policy denial; 006 recheck and 007 phone-table clipping not cleared. PDF checks are separate.",
+      "rebuild": {
+        "classification": "html_self_contained_source_qa_requires_rehydration",
+        "details": "Committed HTML rebuild is self-contained with standard-library Python. Refreeze/ZIP QA needs pinned ignored archives. PDF generation depends on ReportLab, HarfBuzz and Windows Nirmala fonts; not platform-neutral.",
+        "coordinator_replayed_this_build": false
+      },
+      "user_or_capability_issue_ids": [
+        "LA-C04"
+      ],
+      "evidence": [
+        {
+          "path": "mr-Deva-IN/GOAL.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "mr-Deva-IN/STATUS.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "mr-Deva-IN/NEXT.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "mr-Deva-IN/canon/CONSULTATIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "mr-Deva-IN/SOURCE_MAP.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "mr-Deva-IN/sources.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "mr-Deva-IN/DECISIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "locale": "ta-Taml-IN",
+      "title": "Indian Tamil Mathematics Translation",
+      "language_root": "ta-Taml-IN",
+      "assigned_materials": [
+        "A00",
+        "A10",
+        "A20",
+        "AX-1",
+        "AX-3"
+      ],
+      "assignment_scope": "Entire assignment and workflow; excerpt/pilot checkpoints do not narrow it.",
+      "branch": "codex/ta-taml-in-numeracy-pilot",
+      "checkpoint_commit": "05b2c45924c14038c35f94ac8f0d83ca618edb62",
+      "checkpoint_date": "2026-08-31T02:17:39+02:00",
+      "checkpoint_subject": "Add Tamil large-number recovery reader and executable answer checks",
+      "checkpoint_verified_locally": true,
+      "checkpoint_availability": "local_only_not_transferred",
+      "remote_configured_at_snapshot": false,
+      "dirty_at_snapshot": true,
+      "whole_assignment_complete": false,
+      "committed_coverage": "Complete A00 m81243 source draft, 88 exercises and 59 supplied solutions, preserving 29 source omissions. U001/U002 readers plus U003-U005 large-number recovery reader.",
+      "uncommitted_working_notes": "Whole-module source-review reader, separate omitted/supplied-answer reasoning, rounding and route companions; m81244 addition starts. Not a second complete module.",
+      "readiness_and_limits": "U001/U002 PDFs have all-page visual and full-token extraction checks. Large-number reader has targeted browser/EPUB/content checks, not all wide-figure/native/AT approval.",
+      "rebuild": {
+        "classification": "source_html_epub_self_contained",
+        "details": "Committed source/HTML/EPUB rebuild is self-contained with standard-library Python. PDF export additionally needs Chromium, Poppler and documented libraries; timestamps prevent blanket byte-identical PDF claims.",
+        "coordinator_replayed_this_build": false
+      },
+      "user_or_capability_issue_ids": [],
+      "evidence": [
+        {
+          "path": "ta-Taml-IN/GOAL.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "ta-Taml-IN/qa/STATUS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "ta-Taml-IN/NEXT_UNIT.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "ta-Taml-IN/canon/CONSULTATION_LOG.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "ta-Taml-IN/qa/M81243-source-receipt.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "ta-Taml-IN/sources.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "ta-Taml-IN/DECISIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "locale": "pnb-Arab-PK",
+      "title": "Western Punjabi Shahmukhi Mathematics Translation",
+      "language_root": "languages/pnb-Arab-PK",
+      "assigned_materials": [
+        "A10",
+        "A20",
+        "A30",
+        "B10",
+        "B40"
+      ],
+      "assignment_scope": "Entire assignment and workflow; excerpt/pilot checkpoints do not narrow it.",
+      "branch": "codex/pnb-arab-pk-bridge",
+      "checkpoint_commit": "69f4307631c7463d65453b26b4cea1c944071ce3",
+      "checkpoint_date": "2026-08-31T01:37:54+02:00",
+      "checkpoint_subject": "Translate the complete Punjabi A10 chapter introduction",
+      "checkpoint_verified_locally": true,
+      "checkpoint_availability": "local_only_not_transferred",
+      "remote_configured_at_snapshot": false,
+      "dirty_at_snapshot": true,
+      "whole_assignment_complete": false,
+      "committed_coverage": "Eight verified readers, 182 source blocks and 117 MathML trees. Only full canonical module is short four-block A10 chapter introduction m82451; no full substantive instructional module.",
+      "uncommitted_working_notes": "PNB-007: 72-block QA; A10-002: 92-block integration; full 87-block m82630 preface drafting. Remaining books active.",
+      "readiness_and_limits": "Structural and bounded visual checks recorded; native Shahmukhi, educator and accessibility review pending. Twelve canon reading loci support register, not mathematical term authority.",
+      "rebuild": {
+        "classification": "not_established",
+        "details": "Clean-machine replay is not independently established in this packet. Consult pinned source locks and provenance; do not infer rebuildability from existing readers.",
+        "coordinator_replayed_this_build": false
+      },
+      "user_or_capability_issue_ids": [],
+      "evidence": [
+        {
+          "path": "languages/pnb-Arab-PK/GOAL.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/pnb-Arab-PK/STATUS.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/pnb-Arab-PK/NEXT_UNIT.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/pnb-Arab-PK/canon",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/pnb-Arab-PK/sources.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/pnb-Arab-PK/DECISIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "locale": "jv-Latn-ID",
+      "title": "Javanese Mathematics Translation",
+      "language_root": "languages/jv-Latn-ID",
+      "assigned_materials": [
+        "A00",
+        "A10",
+        "AX-2"
+      ],
+      "assignment_scope": "Entire assignment and workflow; excerpt/pilot checkpoints do not narrow it.",
+      "branch": "codex/jv-latn-id-foundations",
+      "checkpoint_commit": "c858dc5fd8b4b0bc4bf132d739dab201a909d2df",
+      "checkpoint_date": "2026-08-31T02:05:29+02:00",
+      "checkpoint_subject": "Add Javanese whole-number naming and grouping review builds",
+      "checkpoint_verified_locally": true,
+      "checkpoint_availability": "local_only_not_transferred",
+      "remote_configured_at_snapshot": false,
+      "dirty_at_snapshot": true,
+      "whole_assignment_complete": false,
+      "committed_coverage": "Eight excerpt topics in three tracks (conversational Javanese, academic Javanese, Indonesian): 24 CNXML files, not 24 modules. 0 complete modules; 2 partial.",
+      "uncommitted_working_notes": "Ninth expressions/equations build, list-hierarchy fix, summary and stronger notation guards; rounding/writing/exponent/practice phrase drafts remain in integration.",
+      "readiness_and_limits": "Independent checkpoint source/narration review recorded. Teacher/browser/screen-reader/listening reviews pending. SSML/transcripts exist but no synthesized or recorded audio.",
+      "rebuild": {
+        "classification": "requires_rehydration_not_independently_replayed",
+        "details": "Committed readers/assets work offline. Fresh-clone rebuild not independently tested; ignored pinned sources/canon must be restored. No builder reads an absolute donor path; historical acquisition label cleanup is lane-owned.",
+        "coordinator_replayed_this_build": false
+      },
+      "user_or_capability_issue_ids": [
+        "LA-C02"
+      ],
+      "evidence": [
+        {
+          "path": "languages/jv-Latn-ID/GOAL.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/jv-Latn-ID/qa/STATUS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/jv-Latn-ID/NEXT_UNIT.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/jv-Latn-ID/canon/CONSULTATIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/jv-Latn-ID/coverage.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/jv-Latn-ID/sources.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "languages/jv-Latn-ID/DECISIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "locale": "gu-Gujr-IN",
+      "title": "Gujarati Mathematics Translation",
+      "language_root": "gu-Gujr-IN",
+      "assigned_materials": [
+        "A00",
+        "A10",
+        "AX-1",
+        "AX-3"
+      ],
+      "assignment_scope": "Entire assignment and workflow; excerpt/pilot checkpoints do not narrow it.",
+      "branch": "codex/gujarati-numeracy-pilot",
+      "checkpoint_commit": "688091fe8e07739bd9176c3d8b9e2ac27c003a3c",
+      "checkpoint_date": "2026-08-31T02:05:11+02:00",
+      "checkpoint_subject": "Expand Gujarati library to ten source drafts and 152 added answers",
+      "checkpoint_verified_locally": true,
+      "checkpoint_availability": "local_only_not_transferred",
+      "remote_configured_at_snapshot": false,
+      "dirty_at_snapshot": true,
+      "whole_assignment_complete": false,
+      "committed_coverage": "Ten full source-tree drafts: six instructional modules plus four front-matter/chapter introductions; 784 exercises, 522 supplied answers, 152 separately added answers, 19 HTML pages.",
+      "uncommitted_working_notes": "m82454 freeze passes shared library QA; m81256/m81266 awaiting integration; 51 additional m82453 answers and tagged PDF under final review. Whole 157-module/AX assignment remains active.",
+      "readiness_and_limits": "Machine-reviewed source/reader drafts, not completed module workflows. Native educator, pupil and screen-reader review pending.",
+      "rebuild": {
+        "classification": "requires_rehydration_bootstrap_incomplete",
+        "details": "Offline reader output is self-contained. Full rebuild requires four pinned repos, release authority and canonical media in ignored downloads. No one-step clean-machine bootstrap yet; fetch_releases covers only two release assets. PDF also needs ReportLab and uharfbuzz.",
+        "coordinator_replayed_this_build": false
+      },
+      "user_or_capability_issue_ids": [],
+      "evidence": [
+        {
+          "path": "gu-Gujr-IN/GOAL.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "gu-Gujr-IN/STATUS.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "gu-Gujr-IN/NEXT_UNIT.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "gu-Gujr-IN/canon/consultation-log.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "gu-Gujr-IN/COVERAGE.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "gu-Gujr-IN/sources.lock.json",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        },
+        {
+          "path": "gu-Gujr-IN/DECISIONS.md",
+          "present_at_checkpoint": true,
+          "present_in_working_tree_at_check": true,
+          "bundled": false
+        }
+      ]
+    }
+  ]
+}
