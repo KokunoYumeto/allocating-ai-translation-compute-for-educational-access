@@ -1,0 +1,1744 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:ns1="http://cnx.rice.edu/mdml" xml:lang="bn-Beng-BD">
+<title>শূন্যসহ স্বাভাবিক সংখ্যার যোগ</title>
+<metadata>
+  <ns1:content-id>m81244</ns1:content-id>
+  <ns1:title>শূন্যসহ স্বাভাবিক সংখ্যার যোগ</ns1:title>
+  <ns1:abstract><para id="para-00001">এই অংশ শেষে তুমি পারবে:</para><list id="list-00001">
+<item>যোগের প্রতীক ব্যবহার করতে</item>
+<item>মডেল দিয়ে শূন্যসহ স্বাভাবিক সংখ্যার যোগ দেখাতে</item>
+<item>মডেল ছাড়া শূন্যসহ স্বাভাবিক সংখ্যা যোগ করতে</item>
+<item>কথায় বলা বিষয় গাণিতিক প্রতীকে লিখতে</item>
+<item>বাস্তব সমস্যায় শূন্যসহ স্বাভাবিক সংখ্যা যোগ করতে</item>
+</list></ns1:abstract>
+  <ns1:uuid>8069044b-6fb1-49bf-b03a-64988f9b1ddd</ns1:uuid>
+</metadata>
+
+<content>
+<note id="fs-id2299412" class="be-prepared">
+<para id="fs-id2646470">শুরু করার আগে প্রস্তুতি যাচাইয়ের এই প্রশ্নগুলোর উত্তর দাও।</para>
+<exercise id="fs-idm207409024">
+<problem id="fs-idm215457168">
+<para id="fs-idm214637312">কোন সংখ্যাটি দেখানো হয়েছে এই <m:math><m:mrow><m:mtext>দশভিত্তিক</m:mtext></m:mrow></m:math> ব্লকগুলো দিয়ে?<newline />
+<media id="fs-id2778433" alt="তিন ধরনের উপকরণ আছে: দুটি শতকের বর্গ, প্রতিটিতে 10টি সারি ও 10টি কলামে মোট 100টি ছোট ঘর; 10টি ঘরের একটি অনুভূমিক দশকের দণ্ড; এবং 5টি আলাদা এককের ঘর।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_001_img.jpg" />
+</media><newline />
+এই প্রশ্নের উত্তর ঠিক না হলে আবার দেখো <link target-id="fs-id2222880" document="m81243" />.</para>
+</problem>
+<solution id="fs-idm219309424">
+<para id="fs-idm216142416"><m:math><m:mrow><m:mn>215</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise></note>
+<note id="fs-id1122444" class="be-prepared">
+<exercise id="fs-idm218505136">
+<problem id="fs-idm221149472">
+<para id="fs-idm218825920">তিনশত বিয়াল্লিশ হাজার ছয় সংখ্যাটি অঙ্কে লেখো।<newline />
+এই প্রশ্নের উত্তর ঠিক না হলে আবার দেখো <link target-id="fs-id3202693" document="m81243" />.</para>
+</problem>
+<solution id="fs-idm207579776">
+<para id="fs-idm221421664"><m:math><m:mrow><m:mn>342</m:mn><m:mo>,</m:mo><m:mn>006</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<section id="fs-id2601285">
+<title>যোগের প্রতীক ব্যবহার করি</title>
+<para id="fs-id3165690">কলেজের একজন ছাত্র খণ্ডকালীন কাজ করে। গত সপ্তাহে সে সোমবার কাজ করেছে <m:math><m:mn>3</m:mn></m:math> ঘণ্টা এবং শুক্রবার <m:math><m:mn>4</m:mn></m:math> ঘণ্টা। গত সপ্তাহে মোট কত ঘণ্টা কাজ করেছে তা বের করতে সে যোগ করেছে <m:math><m:mn>3</m:mn></m:math> ও <m:math><m:mrow><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id2606793">যোগ প্রক্রিয়ায় সংখ্যাগুলো একত্র করে পাওয়া যায় <term id="term-00001">যোগফল</term>। এখানে আমরা যোগ করব <m:math><m:mn>3</m:mn></m:math> ও <m:math><m:mn>4</m:mn></m:math> । এই দুই সংখ্যার যোগফল খুঁজতে লিখি:</para>
+<equation id="fs-id1474530" class="unnumbered"><label /><m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></equation>
+<para id="fs-id2619407">এটি পড়ি <emphasis effect="italics">তিন যোগ চার</emphasis> আর এর ফল হলো তিন ও চারের যোগফল। সংখ্যা দুটি <m:math><m:mn>3</m:mn></m:math> ও <m:math><m:mn>4</m:mn></m:math> —এগুলোকে যোগের সংখ্যা বলা হয়। সংখ্যা ও প্রক্রিয়ার চিহ্ন নিয়ে গঠিত গাণিতিক প্রকাশকে রাশি বলা হয়।</para><note id="fs-id1282344">
+<title>যোগের প্রতীক</title>
+<para id="fs-id1966740">যোগ বোঝাতে আমরা প্রতীক ও কথা ব্যবহার করতে পারি।</para>
+<table id="fs-id2711498" class="unnumbered" aria-label="দুই সারি ও পাঁচ কলামের ছক। প্রথম সারির শিরোনাম বাঁ থেকে: প্রক্রিয়া, প্রতীক, রাশি, যেভাবে পড়ি ও ফল। দ্বিতীয় সারিতে যথাক্রমে যোগ, + চিহ্ন, 3 + 4 রাশি, ‘তিন যোগ চার’ এবং 3 ও 4-এর যোগফল আছে।">
+<label />
+<tgroup cols="5">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<colspec colnum="4" colname="c4" />
+<colspec colnum="5" colname="c5" />
+<thead>
+<row valign="top">
+<entry align="left">প্রক্রিয়া</entry>
+<entry align="left">প্রতীক</entry>
+<entry align="left">রাশি</entry>
+<entry align="left">যেভাবে পড়ি</entry>
+<entry align="left">ফল</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left">যোগ</entry>
+<entry align="left"><m:math><m:mrow><m:mo>+</m:mo></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></entry>
+<entry align="left">তিন যোগ চার</entry>
+<entry align="left">যোগফল—সংখ্যা দুটি হলো <m:math><m:mn>3</m:mn></m:math> ও <m:math><m:mn>4</m:mn></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</note>
+<example id="fs-id1519902">
+<exercise id="fs-id2294573"><problem id="fs-id1330068">
+<para id="fs-id2703725">গাণিতিক প্রতীক থেকে কথায় লেখো:<list id="eip-id1168287109262" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>12</m:mn><m:mo>+</m:mo><m:mn>14</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id2294519">
+<title>সমাধান</title><list id="eip-id1168287334447" list-type="labeled-item" class="circled"><item><span class="token">ⓐ</span> রাশিটিতে 7 ও 1-এর মধ্যে যোগচিহ্ন আছে। আমরা এটি পড়ি <emphasis effect="italics">সাত যোগ এক</emphasis>। ফল হলো <emphasis effect="italics">সাত ও একের যোগফল</emphasis>.</item>
+<item><span class="token">ⓑ</span> রাশিটিতে 12 ও 14-এর মধ্যে যোগচিহ্ন আছে। আমরা এটি পড়ি <emphasis effect="italics">বারো যোগ চৌদ্দ</emphasis>। ফল হলো <emphasis effect="italics">বারো ও চৌদ্দের যোগফল</emphasis>.</item></list></solution>
+</exercise></example>
+<note id="fs-id2202625" class="try">
+<exercise id="fs-id1386428"><problem id="fs-id2842881">
+<para id="fs-id1549906">গাণিতিক প্রতীক থেকে কথায় লেখো:</para>
+<list id="eip-id1168289469583" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>18</m:mn><m:mo>+</m:mo><m:mn>11</m:mn></m:math></item></list></problem>
+<solution id="fs-id1948344"><list id="eip-id1168288479736" list-type="labeled-item"><item><span class="token">ⓐ</span> আট যোগ চার; আট ও চারের যোগফল</item><item><span class="token">ⓑ</span> আঠারো যোগ এগারো; আঠারো ও এগারোর যোগফল</item></list></solution>
+</exercise></note>
+<note id="fs-id2216255" class="try">
+<exercise id="fs-id2334163"><problem id="fs-id1525211">
+<para id="fs-id1630183">গাণিতিক প্রতীক থেকে কথায় লেখো:</para>
+<list id="eip-id1168289631763" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>21</m:mn><m:mo>+</m:mo><m:mn>16</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>100</m:mn><m:mo>+</m:mo><m:mn>200</m:mn></m:math></item></list></problem>
+<solution id="fs-id1577525"><list id="eip-id1168288338262" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> একুশ যোগ ষোলো; একুশ ও ষোলোর যোগফল</item><item><span class="token">ⓑ</span> একশত যোগ দুইশত; একশত ও দুইশতের যোগফল</item></list></solution>
+</exercise></note>
+</section>
+<section id="fs-id2145437"><title>মডেল দিয়ে শূন্যসহ স্বাভাবিক সংখ্যার যোগ দেখাই</title><para id="fs-id1484984">যোগ আসলে গণনা করা। আমরা মডেল দিয়ে যোগ দেখাব। ব্যবহার করব <m:math><m:mrow><m:mtext>দশভিত্তিক</m:mtext></m:mrow></m:math> ব্লক। মনে রেখো, একটি এককের ব্লকের মান <m:math><m:mrow><m:mn>1</m:mn></m:mrow></m:math> আর একটি দশকের দণ্ডের মান <m:math><m:mrow><m:mn>10</m:mn><m:mo>.</m:mo></m:mrow></m:math> এইমাত্র যে যোগের রাশিটি দেখেছি, তার মডেল দিয়ে শুরু করি: <m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1567091">যোগের প্রতিটি সংখ্যা এর চেয়ে ছোট: <m:math><m:mrow><m:mn>10</m:mn><m:mo>,</m:mo></m:mrow></m:math> তাই এককের ব্লক ব্যবহার করতে পারি।</para>
+<table id="eip-167" class="unnumbered unstyled" aria-label="দুই কলামের ছক: বাঁয়ে ধাপের ব্যাখ্যা, ডানে ব্লকের মডেল। প্রথম ধাপে 3টি এককের ব্লক দিয়ে প্রথম সংখ্যা দেখানো হয়েছে; নিচে 3 লেখা। দ্বিতীয় ধাপে সেই 3টির পাশে 4টি ব্লক দিয়ে দ্বিতীয় সংখ্যা দেখানো হয়েছে; দুই দলের নিচে 3 ও 4 লেখা। শেষ ধাপে সব ব্লক গুনে 7টি পাওয়া যায়; নিচে 7 লেখা।">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>প্রথম সংখ্যা বোঝাতে 3টি ব্লক দিয়ে শুরু করি।</entry>
+    <entry><media id="eip-id1168288475996" alt="সাদা পটভূমিতে তিনটি এককের বর্গ; নিচে 3 লেখা।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_019_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>তারপর 4টি ব্লক দিয়ে দ্বিতীয় সংখ্যা দেখাই।</entry>
+    <entry><media id="eip-id1168288501014" alt="দুই দল এককের বর্গ: প্রথম দলে তিনটি, নিচে 3; দ্বিতীয় দলে চারটি, নিচে 4।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_019_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>সব মিলিয়ে কতটি ব্লক আছে গুনে দেখো।</entry>
+    <entry><media id="eip-id1168288501034" alt="পাশাপাশি সাতটি এককের বর্গ; নিচে 7 লেখা।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_019_img-04.png" /></media></entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><para id="fs-id1607848">মোট আছে <m:math><m:mn>7</m:mn></m:math> টি ব্লক। যোগফল দেখাতে ব্যবহার করি সমানচিহ্ন <m:math><m:mrow><m:mtext>(=)</m:mtext></m:mrow></m:math> । দুটি রাশি সমান—এমন গাণিতিক বাক্যকে সমীকরণ বলে। আমরা দেখিয়েছি: <m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>.</m:mo></m:mrow></m:math></para><note id="fs-id1171103645619" class="manipulative-math">হাতে-কলমে গণিতের কার্যপত্রের ‘মডেল দিয়ে শূন্যসহ স্বাভাবিক সংখ্যার যোগ’ কাজটি করলে শূন্যসহ স্বাভাবিক সংখ্যার যোগ আরও ভালোভাবে বুঝতে পারবে।</note><example id="fs-id1239606"><exercise id="fs-id1471255"><problem id="fs-id3961697">
+<para id="fs-id1899387">মডেল দিয়ে যোগ দেখাও: <m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1969376">
+<title>সমাধান</title>
+<para id="fs-id1883656"><m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math> হলো যোগের রাশি। এখানে সংখ্যা দুটি <m:math><m:mn>2</m:mn></m:math> ও <m:math><m:mn>6</m:mn></m:math></para><para id="eip-id1170195494564">যোগের প্রতিটি সংখ্যা 10-এর কম, তাই এককের ব্লক ব্যবহার করতে পারি।</para>
+
+<table id="eip-951" class="unnumbered unstyled" aria-label="দুই কলামের ছক: বাঁয়ে ব্যাখ্যা, ডানে ব্লকের মডেল। প্রথম ধাপে 2টি এককের ব্লক দিয়ে প্রথম সংখ্যা দেখানো হয়েছে; নিচে 2 লেখা। দ্বিতীয় ধাপে সেই 2টির পাশে 6টি ব্লক দিয়ে দ্বিতীয় সংখ্যা দেখানো হয়েছে; দল দুটির নিচে 2 ও 6 লেখা। শেষ ধাপে মোট ব্লক গুনে 8টি পাওয়া যায়; নিচে 8 লেখা।"><tgroup cols="3"><tbody>
+
+  <row>
+    <entry>2টি ব্লক দিয়ে প্রথম সংখ্যা দেখাও।</entry>
+    <entry><media id="eip-id1168287484993" alt="দুটি হালকা নীল এককের বর্গ; নিচে 2 লেখা।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_016_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>6টি ব্লক দিয়ে দ্বিতীয় সংখ্যা দেখাও।</entry>
+    <entry><media id="eip-id1168287042738" alt="দুটি হালকা নীল এককের বর্গের নিচে 2 এবং ছয়টি বর্গের নিচে 6 লেখা।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_016_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>সব মিলিয়ে কতটি ব্লক আছে গুনে দেখো</entry>
+    <entry><media id="eip-id1168287554343" alt="আটটি হালকা নীল এককের বর্গ; নিচে 8 লেখা।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_016_img-04.png" /></media><newline />মোট আছে <m:math><m:mrow><m:mn>8</m:mn></m:mrow></m:math> টি ব্লক, তাই <m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></entry>
+  </row>
+
+</tbody>
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id1718496" class="try">
+<exercise id="fs-id2792546">
+<problem id="fs-id1404551">
+<para id="fs-id1395632">মডেল দিয়ে দেখাও: <m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1833338">
+<para id="fs-id1171103910560"><newline /><media id="fs-id2198152" alt="তিনটি ধূসর এককের বর্গের পরে ফাঁক রেখে আরও ছয়টি বর্গ। নিচে যোগফলের সমীকরণ 3 + 6 = 9 লেখা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_006_img.jpg" />
+</media></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id2454904" class="try">
+<exercise id="fs-id1886370">
+<problem id="fs-id1374158">
+<para id="fs-id1202710">মডেল দিয়ে দেখাও: <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1241970">
+<para id="fs-id1171105209419"><newline /><media id="fs-id1790053" alt="পাঁচটি ধূসর এককের বর্গের পাশে আরও একটি। মোট ছয়টি; নিচে 5 + 1 = 6 লেখা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_007_img.jpg" />
+</media></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1825926">যোগ করে যখন এককের ব্লকের সংখ্যা হয় <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> বা তার চেয়ে বেশি, তখন <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> টি এককের ব্লকের বদলে একটি দশকের দণ্ড নেব।</para>
+<example id="fs-id998472"><exercise id="fs-id1792383">
+<problem id="fs-id1569336">
+<para id="fs-id1550016">মডেল দিয়ে যোগ দেখাও: <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1471782">
+<title>সমাধান</title>
+<para id="fs-id1171103442800"><m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow></m:math> হলো যোগের রাশি। এখানে সংখ্যা দুটি <m:math><m:mrow><m:mn>5</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+
+<table id="eip-555" class="unnumbered unstyled" aria-label="দুই কলামের ছক: বাঁয়ে ব্যাখ্যা, ডানে ব্লকের মডেল। শুরুতে বলা হয়েছে, যোগের প্রতিটি সংখ্যা 10-এর কম। তারপর 5টি ও 8টি এককের ব্লক দিয়ে সংখ্যা দুটি দেখানো হয়; দলগুলোর নিচে 5 ও 8 লেখা। একত্রে 13টি ব্লক হয়। এর মধ্যে 10টি ঘিরে দেখিয়ে সেগুলোর বদলে একটি লাল দশকের দণ্ড নেওয়া হয়; 3টি এককের ব্লক বাকি থাকে। শেষে 1 দশক ও 3 একক, অর্থাৎ 13 পাওয়া যায়।">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>যোগের প্রতিটি সংখ্যা 10-এর কম, তাই এককের ব্লক ব্যবহার করতে পারি।</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>5টি ব্লক দিয়ে প্রথম সংখ্যা দেখাও।</entry>
+    <entry><media id="eip-id1168288219210" alt="পাশাপাশি পাঁচটি হালকা নীল এককের বর্গ, গাঢ় সীমানায় ঘেরা; নিচে 5 লেখা।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_017_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>8টি ব্লক দিয়ে দ্বিতীয় সংখ্যা দেখাও।</entry>
+    <entry><media id="eip-id1168288219228" alt="প্রথম দলে পাঁচটি হালকা নীল এককের বর্গ, নিচে 5; দ্বিতীয় দলে আটটি, নিচে 8 লেখা।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_017_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>মোট ব্লক গুনে দেখো। 10টির বেশি আছে, তাই 10টি এককের ব্লকের বদলে 1টি দশকের দণ্ড নিই।</entry>
+    <entry><media id="eip-id1168288217527" alt="পাঁচটি করে দুই দল এবং তিনটি এককের বর্গ আছে। পাঁচটি করে দুই দলের মোট দশটি বর্গ একসঙ্গে ঘিরে দেখানো হয়েছে। নিচে সেগুলোর বদলে দশটি ঘরযুক্ত একটি লাল দণ্ড; পাশে বাকি তিনটি হালকা নীল এককের বর্গ।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_017_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry>এখন আছে 1 দশক ও 3 একক, অর্থাৎ 13।</entry>
+    <entry>5 + 8 = 13</entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><para id="eip-571">খেয়াল করো, মডেলগুলোর নাম এককের ব্লক ও দশকের দণ্ড বলতে পারি, অথবা সংক্ষেপে বলতে পারি <emphasis effect="italics">একক</emphasis> ও <emphasis effect="italics">দশক</emphasis>। এখন থেকে সংক্ষিপ্ত নাম ব্যবহার করব, তবে মনে রেখো—অর্থ একই।</para></solution>
+</exercise></example><note id="fs-id1762424" class="try">
+<exercise id="fs-id2265162">
+<problem id="fs-id2562850">
+<para id="fs-id1827907">মডেল দিয়ে যোগ দেখাও: <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2140822">
+<para id="fs-id1171105511335"><newline /><media id="fs-id4346927" alt="দশটি ঘরযুক্ত একটি দশকের দণ্ড এবং দুটি এককের বর্গ। এগুলো দিয়ে 5 + 7 = 12 দেখানো হয়েছে।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_010_img.jpg" />
+</media></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1408852" class="try">
+<exercise id="fs-id1863239">
+<problem id="fs-id2496120">
+<para id="fs-id1344440">মডেল দিয়ে যোগ দেখাও: <m:math><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2129995">
+<para id="fs-id1171105491944"><newline /><media id="fs-id2171528" alt="দশটি ঘরযুক্ত একটি দশকের দণ্ড এবং চারটি এককের বর্গ। এগুলো দিয়ে 6 + 8 = 14 দেখানো হয়েছে।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_011_img.jpg" />
+</media></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1608773">এবার মডেল দিয়ে দুই অঙ্কের সংখ্যার যোগ দেখাব।
+</para><example id="fs-id1392030"><exercise id="fs-id1939376"><problem id="fs-id1243266">
+<para id="fs-id1372968">মডেল দিয়ে যোগ দেখাও: <m:math><m:mrow><m:mn>17</m:mn><m:mo>+</m:mo><m:mn>26</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1966628">
+<title>সমাধান</title>
+<para id="eip-id2450011"><m:math><m:mn>17</m:mn><m:mo>+</m:mo><m:mn>26</m:mn></m:math> মানে 17 ও 26-এর যোগফল।</para>
+<table id="eip-93" class="unnumbered unstyled" aria-label="তিন কলামের ছক: বাঁয়ে করণীয়, মাঝখানে দশক-এককের হিসাব, ডানে ব্লকের মডেল। 17 দেখাতে 1 দশক ও 7 একক, 26 দেখাতে 2 দশক ও 6 একক নেওয়া হয়। একত্র করলে 3 দশক ও 13 একক। 10 এককের বদলে 1 দশক নিলে হয় 4 দশক ও 3 একক। ডানের চিত্রে প্রথমে এক ও দুইটি দশকের দণ্ডের সঙ্গে যথাক্রমে সাত ও ছয়টি এককের বর্গ; একত্র করার চিত্রে বাম দিকে তিনটি দণ্ড এবং ডান দিকে তেরোটি এককের বর্গ, যার দশটি লাল। শেষে চারটি দণ্ড ও তিনটি এককের বর্গ।"><label />
+<tgroup cols="3"><tbody>
+  <row>
+    <entry>17-এর মডেল দেখাও।</entry>
+    <entry>1 দশক ও 7 একক</entry>
+    <entry><media id="eip-id1168289477492" alt="বাঁয়ে দশটি ঘরযুক্ত একটি দশকের দণ্ড এবং ডানে সাতটি এককের বর্গ।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_018_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>26-এর মডেল দেখাও।</entry>
+    <entry>2 দশক ও 6 একক</entry>
+    <entry><media id="eip-id1168289477512" alt="বাঁয়ে দশটি করে ঘরযুক্ত দুটি দশকের দণ্ড এবং ডানে ছয়টি এককের বর্গ।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_018_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>একত্র করো।</entry>
+    <entry>3 দশক ও 13 একক</entry>
+    <entry><media id="eip-id1168289744408" alt="বাঁয়ে দশটি করে ঘরযুক্ত তিনটি দশকের দণ্ড। ডানে তেরোটি এককের বর্গ; এর দশটি লাল এবং তিনটি হালকা নীল।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_018_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry>10 এককের বদলে 1 দশক নাও।</entry>
+    <entry>4 দশক ও 3 একক<newline />
+    <m:math><m:mn>40</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>43</m:mn></m:math></entry>
+    <entry><media id="eip-id1168289429860" alt="বাঁয়ে দশটি করে ঘরযুক্ত চারটি দণ্ড: ওপরের তিনটি হালকা নীল, নিচেরটি লাল। ডান পাশে তিনটি হালকা নীল এককের বর্গ।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_018_img-05.png" /></media></entry>
+  </row>
+  <row>
+    <entry>আমরা দেখিয়েছি: <m:math><m:mn>17</m:mn><m:mo>+</m:mo><m:mn>26</m:mn><m:mo>=</m:mo><m:mn>43</m:mn></m:math></entry>
+    <entry />
+    <entry />
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id1321704" class="try">
+<exercise id="fs-id2137714">
+<problem id="fs-id2645041">
+<para id="fs-id1951300">মডেল দিয়ে যোগ দেখাও: <m:math><m:mrow><m:mn>15</m:mn><m:mo>+</m:mo><m:mn>27</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2483638">
+<para id="fs-id1171105493268"><newline /><media id="fs-id1546073" alt="দশভিত্তিক ব্লকে 4 দশক ও 2 একক। নিচে 15 + 27 = 42 লেখা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_014_img.jpg" />
+</media></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1470537" class="try">
+<exercise id="fs-id2813270">
+<problem id="fs-id2379322">
+<para id="fs-id2845299">মডেল দিয়ে যোগ দেখাও: <m:math><m:mrow><m:mn>16</m:mn><m:mo>+</m:mo><m:mn>29</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2267850">
+<para id="fs-id1171105192135"><newline /><media id="fs-id2197659" alt="দশটি করে ঘরযুক্ত চারটি দণ্ড 40 বোঝায়; পাশে পাঁচটি এককের বর্গ 5 বোঝায়। মোট 45। নিচে 16 + 29 = 45 লেখা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_015_img.jpg" />
+</media></para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1385496"><title>মডেল ছাড়া শূন্যসহ স্বাভাবিক সংখ্যা যোগ করি</title><para id="fs-id2629808">মডেল দিয়ে সংখ্যা যোগ করা হয়েছে; এবার মডেল ছাড়া যোগের দিকে এগোতে পারি। তার আগে নিশ্চিত হও যে এক অঙ্কের সংখ্যার সব যোগফল তোমার জানা আছে। বড় সংখ্যা যোগ করার সময় এই যোগফলগুলো কাজে লাগবে।</para>
+<para id="fs-id2137623">মনে মনে পূরণ করো এই ছকটি: <link target-id="fs-id2300206" /> বাঁয়ে থাকা প্রতিটি সারির সংখ্যার সঙ্গে ওপরে থাকা প্রতিটি কলামের সংখ্যা যোগ করবে। দেখো, দেখানো প্রতিটি যোগফল পাচ্ছ কি না। অসুবিধা হলে মডেল দিয়ে দেখাও। এখনো জানা নেই এমন যোগফলগুলো মনে রাখা জরুরি, যাতে বড় সংখ্যা যোগ করার সময় দ্রুত ও নির্ভরযোগ্যভাবে সেগুলো ব্যবহার করতে পারো।</para>
+<table id="fs-id2300206" class="column-header">
+<tgroup cols="11"><thead>
+  <row valign="middle">
+    <entry align="center">+</entry>
+    <entry align="center">0</entry>
+    <entry align="center">1</entry>
+    <entry align="center">2</entry>
+    <entry align="center">3</entry>
+    <entry align="center">4</entry>
+    <entry align="center">5</entry>
+    <entry align="center">6</entry>
+    <entry align="center">7</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+  </row>
+</thead>
+<tbody>
+  <row valign="middle">
+    <entry align="center">0</entry>
+    <entry align="center">0</entry>
+    <entry align="center">1</entry>
+    <entry align="center">2</entry>
+    <entry align="center">3</entry>
+    <entry align="center">4</entry>
+    <entry align="center">5</entry>
+    <entry align="center">6</entry>
+    <entry align="center">7</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+  </row>
+  <row valign="middle">
+    <entry align="center">1</entry>
+    <entry align="center">1</entry>
+    <entry align="center">2</entry>
+    <entry align="center">3</entry>
+    <entry align="center">4</entry>
+    <entry align="center">5</entry>
+    <entry align="center">6</entry>
+    <entry align="center">7</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+    <entry align="center">10</entry>
+  </row>
+  <row valign="middle">
+    <entry align="center">2</entry>
+    <entry align="center">2</entry>
+    <entry align="center">3</entry>
+    <entry align="center">4</entry>
+    <entry align="center">5</entry>
+    <entry align="center">6</entry>
+    <entry align="center">7</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+    <entry align="center">10</entry>
+    <entry align="center">11</entry>
+  </row>
+  <row valign="middle">
+    <entry align="center">3</entry>
+    <entry align="center">3</entry>
+    <entry align="center">4</entry>
+    <entry align="center">5</entry>
+    <entry align="center">6</entry>
+    <entry align="center">7</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+    <entry align="center">10</entry>
+    <entry align="center">11</entry>
+    <entry align="center">12</entry>
+  </row>
+  <row valign="middle">
+    <entry align="center">4</entry>
+    <entry align="center">4</entry>
+    <entry align="center">5</entry>
+    <entry align="center">6</entry>
+    <entry align="center">7</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+    <entry align="center">10</entry>
+    <entry align="center">11</entry>
+    <entry align="center">12</entry>
+    <entry align="center">13</entry>
+  </row>
+  <row valign="middle">
+    <entry align="center">5</entry>
+    <entry align="center">5</entry>
+    <entry align="center">6</entry>
+    <entry align="center">7</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+    <entry align="center">10</entry>
+    <entry align="center">11</entry>
+    <entry align="center">12</entry>
+    <entry align="center">13</entry>
+    <entry align="center">14</entry>
+  </row>
+  <row valign="middle">
+    <entry align="center">6</entry>
+    <entry align="center">6</entry>
+    <entry align="center">7</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+    <entry align="center">10</entry>
+    <entry align="center">11</entry>
+    <entry align="center">12</entry>
+    <entry align="center">13</entry>
+    <entry align="center">14</entry>
+    <entry align="center">15</entry>
+  </row>
+  <row valign="middle">
+    <entry align="center">7</entry>
+    <entry align="center">7</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+    <entry align="center">10</entry>
+    <entry align="center">11</entry>
+    <entry align="center">12</entry>
+    <entry align="center">13</entry>
+    <entry align="center">14</entry>
+    <entry align="center">15</entry>
+    <entry align="center">16</entry>
+  </row>
+  <row valign="middle">
+    <entry align="center">8</entry>
+    <entry align="center">8</entry>
+    <entry align="center">9</entry>
+    <entry align="center">10</entry>
+    <entry align="center">11</entry>
+    <entry align="center">12</entry>
+    <entry align="center">13</entry>
+    <entry align="center">14</entry>
+    <entry align="center">15</entry>
+    <entry align="center">16</entry>
+    <entry align="center">17</entry>
+  </row>
+  <row valign="middle">
+    <entry align="center">9</entry>
+    <entry align="center">9</entry>
+    <entry align="center">10</entry>
+    <entry align="center">11</entry>
+    <entry align="center">12</entry>
+    <entry align="center">13</entry>
+    <entry align="center">14</entry>
+    <entry align="center">15</entry>
+    <entry align="center">16</entry>
+    <entry align="center">17</entry>
+    <entry align="center">18</entry>
+  </row>
+</tbody>
+</tgroup>
+</table><para id="fs-id1516824">কোনো সংখ্যার সঙ্গে শূন্য যোগ করলে কী হয় লক্ষ করেছ? যেকোনো সংখ্যা ও শূন্যের যোগফল সেই সংখ্যাটিই। একে যোগের অভেদ বৈশিষ্ট্য বলি। শূন্যকে বলা হয় যোগের অভেদ উপাদান।</para><note id="fs-id3217986">
+<title>যোগের অভেদ বৈশিষ্ট্য</title>
+<para id="fs-id1960203">যেকোনো সংখ্যা <m:math><m:mi>a</m:mi></m:math> ও <m:math><m:mn>0</m:mn></m:math> —এই দুইয়ের যোগফল প্রথম সংখ্যাটিই।</para><equation id="fs-id1858891" class="unnumbered"><label /><m:math><m:mtable><m:mtr /><m:mtr><m:mtd><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>0</m:mn><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd></m:mtr></m:mtable></m:math></equation>
+</note>
+<example id="fs-id1502923"><exercise id="fs-id2323927"><problem id="fs-id2133097">
+<para id="fs-id2287930">প্রতিটি যোগফল বের করো: <list id="eip-id1168289479427" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>11</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>42</m:mn><m:mo>+</m:mo><m:mn>0</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id4363730">
+<title>সমাধান</title><table id="eip-629" class="unnumbered unstyled" aria-label="ক অংশে প্রথম সংখ্যা শূন্য। যেকোনো সংখ্যা ও শূন্যের যোগফল সেই সংখ্যাটিই: 0 + 11 = 11। খ অংশে দ্বিতীয় সংখ্যা শূন্য: 42 + 0 = 42।">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> প্রথম যোগের সংখ্যা শূন্য। যেকোনো সংখ্যা ও শূন্যের যোগফল সেই সংখ্যাটিই।</entry>
+    <entry><m:math><m:mrow><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>11</m:mn><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓑ</span> দ্বিতীয় যোগের সংখ্যা শূন্য। যেকোনো সংখ্যা ও শূন্যের যোগফল সেই সংখ্যাটিই।</entry>
+    <entry><m:math><m:mrow><m:mn>42</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>42</m:mn></m:mrow></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id1387252" class="try">
+<exercise id="fs-id1264596"><problem id="fs-id2751992">
+<para id="fs-id1960514">প্রতিটি যোগফল বের করো: <list id="eip-id1168287039629" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>19</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>39</m:mn><m:mo>+</m:mo><m:mn>0</m:mn></m:math></item></list></para>
+</problem>
+<solution id="fs-id2144870">
+<list id="eip-id1168289656112" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>19</m:mn><m:mo>=</m:mo><m:mn>19</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>39</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>39</m:mn></m:math></item></list>
+</solution>
+</exercise></note>
+<note id="fs-id2645953" class="try">
+<exercise id="fs-id2362020"><problem id="fs-id2492225">
+<para id="fs-id1936994">প্রতিটি যোগফল বের করো: <list id="eip-id1168288581011" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>24</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>57</m:mn><m:mo>+</m:mo><m:mn>0</m:mn></m:math></item></list></para>
+</problem>
+<solution id="fs-id2788980">
+<list id="eip-id1168287485680" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>24</m:mn><m:mo>=</m:mo><m:mn>24</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>57</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>57</m:mn></m:math></item></list>
+</solution>
+</exercise></note>
+<para id="fs-id2777667">যোগফলগুলো জোড়ায় জোড়ায় দেখো।</para>
+<para id="eip-583"><table id="eip-id1168287208889" class="unnumbered unstyled" summary="যোগের বিনিময় বিধি দেখানো হয়েছে: যোগের সংখ্যাগুলোর ক্রম বদলালেও যোগফল বদলায় না।"><label /><tgroup cols="3"> <tbody>
+  <row>
+    <entry><m:math><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>5</m:mn></m:math></entry>
+
+    <entry><m:math><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>5</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry><m:math><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>11</m:mn></m:math></entry>
+
+    <entry><m:math><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>11</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry><m:math><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>17</m:mn></m:math></entry>
+
+    <entry><m:math><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>17</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup></table></para><para id="fs-id2785833">লক্ষ করো, একই <term class="no-emphasis" id="term-00002">যোগের সংখ্যা</term> ভিন্ন ক্রমে যোগ করলেও যোগফল বদলায় না। এই বৈশিষ্ট্যকে যোগের বিনিময় বিধি বলে। অর্থাৎ, যোগের সংখ্যাগুলোর ক্রম বদলালেও তাদের যোগফল একই থাকে।</para><note id="fs-id1566118">
+<title>যোগের বিনিময় বিধি</title>
+<para id="fs-id1884628">যোগ করার সংখ্যা দুটি <m:math><m:mrow><m:mi>a</m:mi></m:mrow></m:math> ও <m:math><m:mrow><m:mi>b</m:mi></m:mrow></m:math> । এদের ক্রম বদলালেও যোগফল বদলায় না।</para><equation id="fs-id2670492" class="unnumbered"><label /><m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>a</m:mi></m:mrow></m:math></equation>
+</note>
+<example id="fs-id2224023">
+<exercise id="fs-id2454866"><problem id="fs-id2262840">
+<para id="fs-id1816267">যোগ করো: </para><list id="eip-id1168288474909" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>7</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>8</m:mn></m:math></item></list>
+</problem>
+<solution id="fs-id1824208">
+<title>সমাধান</title>
+<list id="eip-id1168288224691" list-type="labeled-item"><item>
+<table id="eip-id1168288224694" class="unnumbered unstyled" summary="ছকে 8 ও 7 যোগ করে 15 পাওয়ার উদাহরণ দেখানো হয়েছে।"><label /><tgroup cols="3">
+<tbody>
+  <row><entry><span class="token">ⓐ</span> </entry><entry /></row>
+  <row>
+    <entry>যোগ করো।</entry>
+    <entry><m:math><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>7</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>15</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup></table></item>
+
+<item>
+
+<table id="eip-id11688224694" class="unnumbered unstyled" summary="ⓑ অংশের যোগ: 7 + 8 রাশি এবং তার যোগফল 15 দেখানো হয়েছে।"><label /><tgroup cols="3">
+<tbody>
+  <row><entry><span class="token">ⓑ</span> </entry><entry /></row>
+  <row>
+    <entry>যোগ করো।</entry>
+    <entry><m:math><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>8</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>15</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup></table></item></list><para id="fs-id3218755">যোগের সংখ্যাগুলোর ক্রম বদলালেও যোগফল বদলায়নি—লক্ষ করেছ? সহজেই জানতে পারতাম অংশ <span class="token">ⓑ</span> এর যোগফল, শুধু এইটুকু লক্ষ করে যে সংখ্যাগুলো অংশ <span class="token">ⓐ</span> এর মতোই, তবে বিপরীত ক্রমে আছে। তাই দুই যোগফলই সমান।</para></solution>
+</exercise></example>
+<note id="fs-id1827619" class="try">
+<exercise id="fs-id1968047">
+<problem id="fs-id1960578">
+<para id="fs-id1269366">যোগ করো: <m:math><m:mrow><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2170740">
+<para id="fs-id2909034"><m:math><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>; </m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>16</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<note id="fs-id2296788" class="try">
+<exercise id="fs-id1577590">
+<problem id="fs-id1603113">
+<para id="fs-id892992">যোগ করো: <m:math><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1806629">
+<para id="fs-id2283876"><m:math><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>14</m:mn><m:mo>; </m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>14</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<example id="fs-id2686794"><exercise id="fs-id1578501">
+<problem id="fs-id1368562">
+<para id="fs-id2270260">যোগ করো: <m:math><m:mrow><m:mn>28</m:mn><m:mo>+</m:mo><m:mn>61</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1791758">
+<title>সমাধান</title>
+<para id="fs-id1806085">একাধিক অঙ্কের সংখ্যা যোগ করতে প্রায়ই সংখ্যাগুলো ওপর-নিচে কলাম করে লিখলে সুবিধা হয়।</para>
+<table id="eip-id1168288293873" class="unnumbered unstyled" summary="ছকে দুই অঙ্কের সংখ্যার ওপর-নিচে যোগ ধাপে ধাপে দেখানো হয়েছে; নির্দেশনার পাশে সংশ্লিষ্ট গাণিতিক কাজ আছে।"><tgroup cols="3"><tbody>
+  <row>
+    <entry>এককের অঙ্ক এককের নিচে এবং দশকের অঙ্ক দশকের নিচে রেখে সংখ্যা দুটি লেখো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>28</m:mn></m:mrow><m:mspace width="0.2em" /></m:mtd></m:mtr><m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="0.4em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mn>61</m:mn></m:mrow><m:mtext>____</m:mtext></m:munder></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>তারপর একই ঘরের অঙ্কগুলো যোগ করো। <newline />এককগুলো যোগ করো: <m:math><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>9</m:mn></m:math><newline />দশকগুলো যোগ করো: <m:math><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>8</m:mn></m:math></entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>28</m:mn></m:mrow><m:mspace width="0.2em" /></m:mtd></m:mtr><m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="0.4em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mn>61</m:mn></m:mrow><m:mtext>____</m:mtext></m:munder></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>89</m:mn></m:mrow><m:mspace width="0.2em" /></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id2698087" class="try">
+<exercise id="fs-id2325520">
+<problem id="fs-id2221948">
+<para id="fs-id2648738">যোগ করো: <m:math><m:mrow><m:mn>32</m:mn><m:mo>+</m:mo><m:mn>54</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2284818">
+<para id="fs-id1374910"><m:math><m:mn>32</m:mn><m:mo>+</m:mo><m:mn>54</m:mn><m:mo>=</m:mo><m:mn>86</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<note id="fs-id1928992" class="try">
+<exercise id="fs-id1275335">
+<problem id="fs-id2562841">
+<para id="fs-id1524844">যোগ করো: <m:math><m:mrow><m:mn>25</m:mn><m:mo>+</m:mo><m:mn>74</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2951285">
+<para id="fs-id968671"><m:math><m:mn>25</m:mn><m:mo>+</m:mo><m:mn>74</m:mn><m:mo>=</m:mo><m:mn>99</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<para id="fs-id1340418">আগের উদাহরণে এককগুলোর যোগফল ও দশকগুলোর যোগফল দুটোই ছিল এর চেয়ে ছোট: <m:math><m:mrow><m:mn>10</m:mn><m:mo>.</m:mo></m:mrow></m:math> কিন্তু যোগফল যদি হয় <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> বা তার বেশি, তখন কী হবে? ব্যবহার করি আমাদের <m:math><m:mrow><m:mtext>দশভিত্তিক</m:mtext></m:mrow></m:math> মডেল, দেখে নিই কী হয়। <link target-id="CNX_BMath_Figure_01_02_001" /> এ আবার যোগ দেখানো হয়েছে: <m:math><m:mrow><m:mn>17</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>26</m:mn></m:mrow></m:math> —এই দুই সংখ্যার।</para>
+<figure id="CNX_BMath_Figure_01_02_001"><media id="fs-id1231518" alt="বাঁয়ে 17 বোঝাতে 1টি দশকের দণ্ড ও 7টি এককের বর্গ; তার নিচে 26 বোঝাতে 2টি দণ্ড ও 6টি এককের বর্গ। একত্র করে ডানে 4টি দশকের দণ্ড ও 3টি এককের বর্গ পাওয়া যায়। দশটি একক নতুন একটি দশক হয়। পাশের লিখিত যোগে 17-এর দশকের অঙ্কের ওপরে ছোট লাল 1 দিয়ে সেই দশক দেখানো হয়েছে; 1 + 1 + 2 = 4 দশক। নিচে ফল 43, অর্থাৎ 17 + 26 = 43।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_001.jpg" />
+</media>
+</figure><para id="fs-id2297149">এককগুলো যোগ করি: <m:math><m:mrow><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow></m:math> পাই <m:math><m:mrow><m:mn>13</m:mn></m:mrow></m:math> টি একক। এককের সংখ্যা এই সীমা ছাড়িয়েছে: <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> টি। তাই বদলে নিতে পারি: <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> এককের বদলে <m:math><m:mn>1</m:mn></m:math> দশক। এখন আছে <m:math><m:mn>4</m:mn></m:math> দশক ও <m:math><m:mn>3</m:mn></m:math> একক। মডেল ব্যবহার না করে দশকের অঙ্কের ওপরে ছোট লাল <m:math><m:mn>1</m:mn></m:math> লিখে এই নতুন দশক দেখাই।</para>
+<para id="fs-id2877345">কোনো ঘরের যোগফল যখন এর চেয়ে বড় হয়: <m:math><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow></m:math> তখন হাতে রেখে বাম পাশের পরের ঘরে নিয়ে যাই। হাতে রাখা মানে বদলের মাধ্যমে নতুন করে দল গঠন করা। যেমন, <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> এককের বদলে <m:math><m:mn>1</m:mn></m:math> দশক, অথবা <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> দশকের বদলে <m:math><m:mn>1</m:mn></m:math> শতক।</para>
+<note id="fs-id1567373" class="howto"><title>শূন্যসহ স্বাভাবিক সংখ্যা যোগ করো।</title><list id="eip-id1168288474750" list-type="enumerated" number-style="arabic" class="stepwise"><item>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</item>
+<item>একই ঘরের অঙ্কগুলো যোগ করো। এককের ঘর থেকে শুরু করে ডান থেকে বামে যাও। কোনো ঘরের যোগফল যদি এর চেয়ে বেশি হয়: <m:math><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow></m:math> তবে হাতে রেখে পরের ঘরে নিয়ে যাও।</item>
+<item>ডান থেকে বামে প্রতিটি ঘরের যোগ চালিয়ে যাও; প্রয়োজন হলে হাতে রেখে পরের ঘরে যোগ করো।</item></list></note><example id="fs-id1377666"><exercise id="fs-id2325655"><problem id="fs-id2785400">
+<para id="fs-id1239115">যোগ করো: <m:math><m:mrow><m:mn>43</m:mn><m:mo>+</m:mo><m:mn>69</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2566312">
+<title>সমাধান</title>
+<table id="eip-id1168287505854" class="unnumbered unstyled" summary="43 ও 69 দিয়ে দুই অঙ্কের সংখ্যায় হাতে রেখে যোগের ধাপে ধাপে উদাহরণ।"><tgroup cols="3"><tbody>
+  <row>
+    <entry>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>43</m:mn></m:mrow><m:mspace width="0.2em" /></m:mtd></m:mtr><m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="0.4em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mn>69</m:mn></m:mrow><m:mtext>____</m:mtext></m:munder></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+   <entry>একই ঘরের অঙ্কগুলো যোগ করো।<newline />এককগুলো যোগ করো: <m:math><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>12</m:mn></m:math></entry>
+<entry />
+</row>
+  <row>
+    <entry>এবার <m:math><m:mn>2</m:mn></m:math> যোগফলের এককের ঘরে লেখো।<newline />হাতে রাখা <m:math><m:mn>1</m:mn></m:math> দশক—দশকের ঘরে তা যোগ করো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mover><m:mn>4</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>3</m:mn></m:mrow><m:mspace width="0.1em" /></m:mtd></m:mtr>
+<m:mtr><m:mtd columnalign="right"><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mn>69</m:mn></m:mrow><m:mtext>____</m:mtext></m:munder></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>2</m:mn></m:mrow><m:mspace width="0.1em" /></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+
+  <row>
+    <entry>এবার দশকগুলো যোগ করো: <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>11</m:mn></m:math><newline />যোগফলে 11 লেখো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mover><m:mn>4</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>3</m:mn></m:mrow><m:mspace width="0.1em" /></m:mtd></m:mtr>
+<m:mtr><m:mtd columnalign="right"><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mn>69</m:mn></m:mrow><m:mtext>____</m:mtext></m:munder></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>112</m:mn></m:mrow><m:mspace width="0.1em" /></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id1257067" class="try">
+<exercise id="fs-id2758260">
+<problem id="fs-id1881610">
+<para id="fs-id2370602">যোগ করো: <m:math><m:mrow><m:mn>35</m:mn><m:mo>+</m:mo><m:mn>98</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2215223">
+<para id="fs-id2278434"><m:math><m:mn>35</m:mn><m:mo>+</m:mo><m:mn>98</m:mn><m:mo>=</m:mo><m:mn>133</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<note id="fs-id2325880" class="try">
+<exercise id="fs-id1826280">
+<problem id="fs-id2462708">
+<para id="fs-id1517340">যোগ করো: <m:math><m:mrow><m:mn>72</m:mn><m:mo>+</m:mo><m:mn>89</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1408807">
+<para id="fs-id1580884"><m:math><m:mn>72</m:mn><m:mo>+</m:mo><m:mn>89</m:mn><m:mo>=</m:mo><m:mn>161</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<example id="fs-id1348056">
+<exercise id="fs-id2277302"><problem id="fs-id2298083">
+<para id="fs-id2139613">যোগ করো: <m:math><m:mrow><m:mn>324</m:mn><m:mo>+</m:mo><m:mn>586</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2150007">
+<title>সমাধান</title>
+<table id="eip-id1168287251210" class="unnumbered unstyled" summary="চিত্রসহ একাধিক অঙ্কের সংখ্যা যোগের ধাপে ধাপে নির্দেশনা।"><tgroup cols="3"><tbody>
+  <row>
+    <entry>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</entry>
+    <entry><media id="eip-id1168289818410" alt="ওপর-নিচে 324 ও 586 লেখা; দ্বিতীয় সংখ্যার বাঁয়ে + চিহ্ন এবং নিচে দাগ।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_020-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>একই ঘরের অঙ্কগুলো যোগ করো।<newline />এককগুলো যোগ করো: <m:math><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>10</m:mn></m:math><newline />এবার <m:math><m:mn>0</m:mn></m:math> যোগফলের এককের ঘরে লেখো এবং হাতে রাখো <m:math><m:mn>1</m:mn></m:math> দশক—দশকের ঘরে তা যোগ করো।</entry>
+    <entry><media id="eip-id1168287268641" alt="324 ও 586 যোগ করা হচ্ছে। প্রথমে এককের অঙ্ক যোগ করলে 4 + 6 = 10। যোগফলের এককের ঘরে 0 লেখা; নতুন দশক বোঝাতে 324-এর 2-এর ওপরে ছোট 1 লেখা।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_020-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>দশকগুলো যোগ করো: <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>11</m:mn></m:math><newline />এবার <m:math><m:mn>1</m:mn></m:math> যোগফলের দশকের ঘরে লেখো এবং হাতে রাখো <m:math><m:mn>1</m:mn></m:math> শতক—শতকের ঘরে তা যোগ করো।</entry>
+    <entry><media id="eip-id1168287196613" alt="ওপর-নিচে 324 ও 586-এর যোগ। দশকের হিসাব 1 + 2 + 8 = 11 হওয়ায় যোগফলের নিচে এখন 10 লেখা আছে। 324-এর শতকের অঙ্ক 3 ও দশকের অঙ্ক 2-এর ওপরে ছোট 1 আছে; এগুলো হাতে রাখা শতক ও দশক, ভগ্নাংশ নয়।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_020-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>শতকগুলো যোগ করো: <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>9</m:mn></m:math><newline />এবার <m:math><m:mn>9</m:mn></m:math> শতকের ঘরে লেখো।</entry>
+    <entry><media id="eip-id1168287121476" alt="ওপর-নিচে যোগে 324 + 586 = 910। প্রথম সংখ্যার শতক ও দশকের অঙ্কের ওপরে ছোট 1 দুটি হাতে রাখা মান বোঝায়; এগুলো ভগ্নাংশ নয়।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_01_02_020-04.png" /></media></entry>
+  </row>
+
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example>
+<note id="fs-id2648959" class="try">
+<exercise id="fs-id1462931">
+<problem id="fs-id2690850">
+<para id="fs-id1376149">যোগ করো: <m:math><m:mrow><m:mn>456</m:mn><m:mo>+</m:mo><m:mn>376</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1302654">
+<para id="fs-id2906019"><m:math><m:mn>456</m:mn><m:mo>+</m:mo><m:mn>376</m:mn><m:mo>=</m:mo><m:mn>832</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<note id="fs-id1339924" class="try">
+<exercise id="fs-id2267936">
+<problem id="fs-id1298548">
+<para id="fs-id1543215">যোগ করো: <m:math><m:mrow><m:mn>269</m:mn><m:mo>+</m:mo><m:mn>578</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2146728">
+<para id="fs-id1314815"><m:math><m:mn>269</m:mn><m:mo>+</m:mo><m:mn>578</m:mn><m:mo>=</m:mo><m:mn>847</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<example id="fs-id1988116">
+<exercise id="fs-id2144790"><problem id="fs-id2280686">
+<para id="fs-id2368411">যোগ করো: <m:math><m:mrow><m:mn>1,683</m:mn><m:mo>+</m:mo><m:mn>479</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1372016">
+<title>সমাধান</title>
+<table id="eip-id1168288687380" class="unnumbered unstyled" summary="ছকে একই ঘর ওপর-নিচে সাজিয়ে একাধিক অঙ্কের সংখ্যা যোগের ধাপ দেখানো হয়েছে; হাতে রাখার ধাপও আছে।"><tgroup cols="3"><tbody>
+  <row>
+    <entry>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>1,683</m:mn></m:mrow><m:mspace width="0.2em" /></m:mtd></m:mtr>
+    <m:mtr />
+    <m:mtr><m:mtd columnalign="right"><m:mspace width="2em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.2em" /><m:mn>479</m:mn></m:mrow><m:mtext>______</m:mtext></m:munder></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>একই ঘরের অঙ্কগুলো যোগ করো।</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>এককগুলো যোগ করো: <m:math><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>12.</m:mn></m:math><newline />এবার <m:math><m:mn>2</m:mn></m:math> যোগফলের এককের ঘরে লেখো এবং হাতে রাখো <m:math><m:mn>1</m:mn></m:math> দশক—দশকের ঘরে তা যোগ করো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>1,6</m:mn><m:mover><m:mn>8</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>3</m:mn></m:mrow><m:mspace width="0.2em" /></m:mtd></m:mtr>
+    <m:mtr />
+
+<m:mtr><m:mtd columnalign="right"><m:mspace width="2em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.2em" /><m:mn>479</m:mn></m:mrow><m:mtext>______</m:mtext></m:munder></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>2</m:mn><m:mspace width="0.2em" /></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>দশকগুলো যোগ করো: <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>16</m:mn></m:math><newline />এবার <m:math><m:mn>6</m:mn></m:math> দশকের ঘরে লেখো এবং হাতে রাখো <m:math><m:mn>1</m:mn></m:math> শতক—শতকের ঘরে তা যোগ করো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>1,</m:mn><m:mover><m:mn>6</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mover><m:mn>8</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>3</m:mn></m:mrow><m:mspace width="0.2em" /></m:mtd></m:mtr>
+   <m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="2em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.2em" /><m:mn>479</m:mn></m:mrow><m:mtext>______</m:mtext></m:munder></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>62</m:mn><m:mspace width="0.2em" /></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>শতকগুলো যোগ করো: <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>11</m:mn></m:math><newline />এবার <m:math><m:mn>1</m:mn></m:math> শতকের ঘরে লেখো এবং হাতে রাখো <m:math><m:mn>1</m:mn></m:math> হাজার—হাজারের ঘরে তা যোগ করো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>1,</m:mn><m:mover><m:mn>6</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mover><m:mn>8</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>3</m:mn></m:mrow><m:mspace width="0.2em" /></m:mtd></m:mtr> <m:mtr />
+
+<m:mtr><m:mtd columnalign="right"><m:mspace width="2em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.2em" /><m:mn>479</m:mn></m:mrow><m:mtext>______</m:mtext></m:munder></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>162</m:mn><m:mspace width="0.2em" /></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>হাজারগুলো যোগ করো: <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn></m:math>.<newline />এবার <m:math><m:mn>2</m:mn></m:math> যোগফলের হাজারের ঘরে লেখো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mover><m:mn>1,</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mover><m:mn>6</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mover><m:mn>8</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>3</m:mn></m:mrow><m:mspace width="0.2em" /></m:mtd></m:mtr> <m:mtr />
+
+<m:mtr><m:mtd columnalign="right"><m:mspace width="2em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.2em" /><m:mn>479</m:mn></m:mrow><m:mtext>______</m:mtext></m:munder></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>2,162</m:mn><m:mspace width="0.2em" /></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+
+</tbody>
+
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id2280341">যোগের সংখ্যাগুলোর অঙ্কসংখ্যা আলাদা হলে সতর্কভাবে একই ঘর ওপর-নিচে সাজাও। এককের ঘর থেকে শুরু করে বাম দিকে এগোবে।</para>
+</solution>
+</exercise></example>
+<note id="fs-id2375137" class="try">
+<exercise id="fs-id2174738">
+<problem id="fs-id2278499">
+<para id="fs-id2366246">যোগ করো: <m:math><m:mrow><m:mn>4,597</m:mn><m:mo>+</m:mo><m:mn>685</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2173908">
+<para id="fs-id1328241"><m:math><m:mn>4,597</m:mn><m:mo>+</m:mo><m:mn>685</m:mn><m:mo>=</m:mo><m:mn>5,282</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<note id="fs-id1217416" class="try">
+<exercise id="fs-id1367785">
+<problem id="fs-id1409440">
+<para id="fs-id2809228">যোগ করো: <m:math><m:mrow><m:mn>5,837</m:mn><m:mo>+</m:mo><m:mn>695</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1362543">
+<para id="fs-id1605828"><m:math><m:mn>5,837</m:mn><m:mo>+</m:mo><m:mn>695</m:mn><m:mo>=</m:mo><m:mn>6,532</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<example id="fs-id1801021">
+<exercise id="fs-id2264879"><problem id="fs-id1883946">
+<para id="fs-id1302204">যোগ করো: <m:math><m:mrow><m:mn>21,357</m:mn><m:mo>+</m:mo><m:mn>861</m:mn><m:mo>+</m:mo><m:mn>8,596</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2338420">
+<title>সমাধান</title>
+<table id="eip-id1168288531101" class="unnumbered unstyled" summary="একক, দশক ও পরের ঘরগুলো ধরে একাধিক অঙ্কের সংখ্যায় হাতে রেখে যোগের ধাপ দেখানো হয়েছে।"><tgroup cols="3"><tbody>
+  <row>
+    <entry>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>21,357</m:mn></m:mrow></m:mtd></m:mtr>
+<m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>861</m:mn></m:mrow></m:mtd></m:mtr><m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="3em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.4em" /><m:mn>8,596</m:mn></m:mrow><m:mtext>_______</m:mtext></m:munder></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>একই ঘরের অঙ্কগুলো যোগ করো।</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>এককগুলো যোগ করো: <m:math><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>14</m:mn></m:math><newline />এবার <m:math><m:mn>4</m:mn></m:math> যোগফলের এককের ঘরে লেখো এবং হাতে রাখো <m:math><m:mn>1</m:mn></m:math> দশক; দশকের ঘরে তা যোগ করবে।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>21,3</m:mn><m:mover><m:mn>5</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>7</m:mn></m:mrow></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>861</m:mn></m:mrow></m:mtd></m:mtr> <m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="3em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.4em" /><m:mn>8,596</m:mn></m:mrow><m:mtext>_______</m:mtext></m:munder></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mn>4</m:mn></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>দশকগুলো যোগ করো: <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>21</m:mn></m:math><newline />এবার <m:math><m:mn>1</m:mn></m:math> দশকের ঘরে লেখো এবং হাতে রাখো <m:math><m:mn>2</m:mn></m:math> শতক; শতকের ঘরে তা যোগ করবে।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>21,</m:mn><m:mover><m:mn>3</m:mn><m:mn mathsize="small">2</m:mn></m:mover><m:mover><m:mn>5</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>7</m:mn></m:mrow></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>861</m:mn></m:mrow></m:mtd></m:mtr> <m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="3em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.4em" /><m:mn>8,596</m:mn></m:mrow><m:mtext>_______</m:mtext></m:munder></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mn>14</m:mn></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>শতকগুলো যোগ করো: <m:math><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>18</m:mn></m:math><newline />এবার <m:math><m:mn>8</m:mn></m:math> শতকের ঘরে লেখো এবং হাতে রাখো <m:math><m:mn>1</m:mn></m:math> হাজার; হাজারের ঘরে তা যোগ করবে।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>2</m:mn><m:mover><m:mn>1,</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mover><m:mn>3</m:mn><m:mn mathsize="small">2</m:mn></m:mover><m:mover><m:mn>5</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>7</m:mn></m:mrow></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>861</m:mn></m:mrow></m:mtd></m:mtr> <m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="3em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.4em" /><m:mn>8,596</m:mn></m:mrow><m:mtext>_______</m:mtext></m:munder></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mn>814</m:mn></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>হাজারগুলো যোগ করো: <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>10</m:mn></m:math>.<newline />এবার <m:math><m:mn>0</m:mn></m:math> হাজারের ঘরে লেখো এবং হাতে রাখো <m:math><m:mn>1</m:mn></m:math> দশ হাজার; দশ হাজারের ঘরে তা যোগ করবে।</entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mover><m:mn>2</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mover><m:mn>1,</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mover><m:mn>3</m:mn><m:mn mathsize="small">2</m:mn></m:mover><m:mover><m:mn>5</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>7</m:mn></m:mrow></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>861</m:mn></m:mrow></m:mtd></m:mtr> <m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="3em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.4em" /><m:mn>8,596</m:mn></m:mrow><m:mtext>_______</m:mtext></m:munder></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mn>0814</m:mn></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+<row>
+<entry>দশ হাজারের দলগুলো যোগ করো: <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:math>.<newline />এবার <m:math><m:mn>3</m:mn></m:math> যোগফলের দশ হাজারের ঘরে লেখো।</entry>
+<entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mover><m:mn>2</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mover><m:mn>1,</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mover><m:mn>3</m:mn><m:mn mathsize="small">2</m:mn></m:mover><m:mover><m:mn>5</m:mn><m:mn mathsize="small">1</m:mn></m:mover><m:mn>7</m:mn></m:mrow></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mrow><m:mn>861</m:mn></m:mrow></m:mtd></m:mtr> <m:mtr />
+<m:mtr><m:mtd columnalign="right"><m:mspace width="3em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mspace width="0.4em" /><m:mn>8,596</m:mn></m:mrow><m:mtext>_______</m:mtext></m:munder></m:mtd></m:mtr>
+
+<m:mtr><m:mtd columnalign="right"><m:mn>30,814</m:mn></m:mtd></m:mtr></m:mtable></m:math></entry></row>
+
+</tbody>
+
+
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1246087">এই উদাহরণে যোগের সংখ্যা ছিল তিনটি। একই ঘরগুলো ঠিকভাবে ওপর-নিচে সাজাতে সতর্ক থাকলে একই পদ্ধতিতে যতগুলো সংখ্যা প্রয়োজন যোগ করতে পারি।</para>
+</solution>
+</exercise></example>
+<note id="fs-id2684886" class="try">
+<exercise id="fs-id2224340">
+<problem id="fs-id1967102">
+<para id="fs-id1881413">যোগ করো: <m:math><m:mrow><m:mn>46,195</m:mn><m:mo>+</m:mo><m:mn>397</m:mn><m:mo>+</m:mo><m:mn>6,281</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2924594">
+<para id="fs-id1405279"><m:math><m:mn>46,195</m:mn><m:mo>+</m:mo><m:mn>397</m:mn><m:mo>+</m:mo><m:mn>6,281</m:mn><m:mo>=</m:mo><m:mn>52,873</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<note id="fs-id1282502" class="try">
+<exercise id="fs-id1406185">
+<problem id="fs-id1184057">
+<para id="fs-id1545934">যোগ করো: <m:math><m:mrow><m:mn>53,762</m:mn><m:mo>+</m:mo><m:mn>196</m:mn><m:mo>+</m:mo><m:mn>7,458</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1351725">
+<para id="fs-id834282"><m:math><m:mn>53,762</m:mn><m:mo>+</m:mo><m:mn>196</m:mn><m:mo>+</m:mo><m:mn>7,458</m:mn><m:mo>=</m:mo><m:mn>61,416</m:mn></m:math></para></solution>
+</exercise>
+</note>
+</section><section id="fs-id2691382">
+<title>কথায় বলা বিষয় গাণিতিক প্রতীকে লিখি</title>
+<para id="fs-id1612949">এই অংশের শুরুতে গাণিতিক প্রতীককে কথায় লেখা হয়েছে। এবার উল্টো কাজ করব: কথায় বলা বিষয় গাণিতিক প্রতীকে লিখব। যোগ বোঝায় এমন কয়েকটি কথা দেওয়া আছে এই ছকে: <link target-id="fs-id1826990" />.</para>
+<table id="fs-id1826990" aria-label="দুই সারি ও চার কলামের ছক। শিরোনাম: প্রক্রিয়া, কথায়, উদাহরণ, রাশি। যোগ বোঝাতে যোগ করা, যোগফল, বাড়ানো, বেশি, মোট ও সঙ্গে যোগ করার কথা আছে। ছয়টি উদাহরণের রাশি যথাক্রমে 1 + 2, 3 + 4, 5 + 6, 7 + 8, 9 + 5 ও 4 + 6।">
+<tgroup cols="5">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<colspec colnum="4" colname="c4" />
+<thead>
+<row valign="top">
+<entry align="left">প্রক্রিয়া</entry>
+<entry align="left">কথায়</entry>
+<entry align="left">উদাহরণ</entry>
+<entry align="left">রাশি</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry valign="top" align="left">যোগ</entry>
+<entry valign="top" align="left">যোগ<newline />যোগফল<newline />-এর সঙ্গে যোগ করো<newline />বেশি—মূল সংখ্যা<newline />মোট<newline />যোগ করো এই সংখ্যার সঙ্গে:</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>1</m:mn></m:mrow></m:math> যোগ <m:math><m:mrow><m:mn>2</m:mn></m:mrow></m:math><newline />যোগফল—সংখ্যা দুটি হলো <m:math><m:mrow><m:mn>3</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>4</m:mn></m:mrow></m:math><newline /><m:math><m:mrow><m:mn>5</m:mn></m:mrow></m:math> -এর সঙ্গে যোগ করো <m:math><m:mrow><m:mn>6</m:mn></m:mrow></m:math><newline /><m:math><m:mrow><m:mn>8</m:mn></m:mrow></m:math> বেশি—মূল সংখ্যা <m:math><m:mrow><m:mn>7</m:mn></m:mrow></m:math><newline />মোট—সংখ্যা দুটি হলো <m:math><m:mrow><m:mn>9</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>5</m:mn></m:mrow></m:math><newline /><m:math><m:mrow><m:mn>6</m:mn></m:mrow></m:math> যোগ করো এই সংখ্যার সঙ্গে: <m:math><m:mrow><m:mn>4</m:mn></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math><newline /><m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math><newline /><m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math><newline /><m:math><m:mrow><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow></m:math><newline /><m:math><m:mrow><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math><newline /><m:math><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<example id="fs-id1826874">
+<exercise id="fs-id1392862"><problem id="fs-id1833382">
+<para id="fs-id1950935">প্রতীকে লিখে মান বের করো। যোগের সংখ্যা দুটি: <m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>23</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1363349">
+<title>সমাধান</title>
+<para id="fs-id2649934">এই শব্দটি: <emphasis effect="italics">যোগফল</emphasis> —এটি যোগ করতে বলে। ইংরেজি <emphasis effect="italics">of</emphasis> <m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math> <emphasis effect="italics">and</emphasis> <m:math><m:mrow><m:mn>23</m:mn></m:mrow></m:math> —এগুলো যোগের সংখ্যা দুটি চিহ্নিত করে।</para>
+<table id="eip-id1168288294973" class="unnumbered unstyled" summary="কথায় বলা যোগের বিষয় প্রতীকে লেখা ও তার যোগফল নির্ণয়ের ধাপ।"><tgroup cols="3"><tbody>
+  <row>
+    <entry />
+    <entry>সংখ্যা দুটি: <m:math><m:mn>19</m:mn></m:math> ও <m:math><m:mn>23</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>প্রতীকে লেখো।</entry>
+    <entry><m:math><m:mn>19</m:mn><m:mo>+</m:mo><m:mn>23</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>যোগ করো।</entry>
+    <entry><m:math><m:mn>42</m:mn></m:math></entry>
+  </row>
+  <row> <entry />
+    <entry>সংখ্যা দুটি: <m:math><m:mn>19</m:mn></m:math> ও <m:math><m:mn>23</m:mn></m:math> ; ফল <m:math><m:mn>42.</m:mn></m:math></entry>
+
+  </row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise></example>
+<note id="fs-id1566729" class="try">
+<exercise id="fs-id1932733">
+<problem id="fs-id1375941">
+<para id="fs-id2744730">প্রতীকে লিখে মান বের করো। যোগের সংখ্যা দুটি: <m:math><m:mrow><m:mn>17</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>26</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2211062">
+<para id="fs-id2657242">প্রতীকে লিখি: <m:math><m:mn>17</m:mn><m:mo>+</m:mo><m:mn>26</m:mn></m:math>; মান বের করি: <m:math><m:mn>43</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<note id="fs-id1387204" class="try">
+<exercise id="fs-id1311804">
+<problem id="fs-id2216187">
+<para id="fs-id2774992">প্রতীকে লিখে মান বের করো। যোগের সংখ্যা দুটি: <m:math><m:mrow><m:mn>28</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>14</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1731443">
+<para id="fs-id1585459">প্রতীকে লিখি: <m:math><m:mn>28</m:mn><m:mo>+</m:mo><m:mn>14</m:mn></m:math>; মান বের করি: <m:math><m:mn>42</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<example id="fs-id1178091">
+<exercise id="fs-id1330230"><problem id="fs-id1568191">
+<para id="fs-id1968803">প্রতীকে লিখে মান বের করো: <m:math><m:mrow><m:mn>28</m:mn></m:mrow></m:math> -এর সঙ্গে যোগ করো <m:math><m:mrow><m:mn>31</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1726814">
+<title>সমাধান</title>
+<para id="fs-id1578716">এই কথাগুলো: <emphasis effect="italics">-এর সঙ্গে যোগ করো</emphasis> —এগুলো যোগ করতে বলে। দেওয়া সংখ্যাগুলোই যোগের সংখ্যা।</para>
+<table id="eip-id1168288520954" class="unnumbered unstyled" summary="কথায় বলা বিষয় গাণিতিক রাশিতে লিখে মান নির্ণয়ের ধাপ।"><tgroup cols="3"><tbody>
+  <row><entry />
+    <entry><m:math><m:mn>28</m:mn></m:math> -এর সঙ্গে যোগ করো <m:math><m:mn>31.</m:mn></m:math></entry>
+
+  </row>
+  <row>
+    <entry>প্রতীকে লেখো।</entry>
+    <entry><m:math><m:mn>28</m:mn><m:mo>+</m:mo><m:mn>31</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>যোগ করো।</entry>
+    <entry><m:math><m:mn>59</m:mn></m:math></entry>
+  </row>
+  <row>  <entry />
+    <entry>সুতরাং, <m:math><m:mn>28</m:mn></m:math> -এর সঙ্গে যোগ করো <m:math><m:mn>31</m:mn></m:math> ; ফল <m:math><m:mn> 59.</m:mn></m:math></entry>
+
+  </row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise></example>
+<note id="fs-id1728016" class="try">
+<exercise id="fs-id2130020">
+<problem id="fs-id2370626">
+<para id="fs-id2269129">প্রতীকে লিখে মান বের করো: <m:math><m:mrow><m:mn>29</m:mn></m:mrow></m:math> -এর সঙ্গে যোগ করো <m:math><m:mrow><m:mn>76</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2164356">
+<para id="fs-id2375959">প্রতীকে লিখি: <m:math><m:mn>29</m:mn><m:mo>+</m:mo><m:mn>76</m:mn></m:math>; মান বের করি: <m:math><m:mn>105</m:mn></m:math></para></solution>
+</exercise>
+</note>
+<note id="fs-id1933763" class="try">
+<exercise id="fs-id2792137">
+<problem id="fs-id1899406">
+<para id="fs-id1549718">প্রতীকে লিখে মান বের করো: <m:math><m:mrow><m:mn>37</m:mn></m:mrow></m:math> -এর সঙ্গে যোগ করো <m:math><m:mrow><m:mn>69</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1410392">
+<para id="fs-id2451444">প্রতীকে লিখি: 37 + 69; মান বের করি: 106</para></solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id2197427">
+<title>বাস্তব সমস্যায় শূন্যসহ স্বাভাবিক সংখ্যার যোগ</title>
+<para id="fs-id2926269">শূন্যসহ স্বাভাবিক সংখ্যা যোগের অনুশীলন হয়েছে। এবার যা শিখেছি, তা দিয়ে বাস্তব জীবনের সমস্যা সমাধান করি। প্রথমে একটি পরিকল্পনা করব। প্রশ্নটি পড়ে বুঝব কী বের করতে হবে। তারপর তা বের করার তথ্য কথায় লিখব। সেই কথাকে গাণিতিক প্রতীকে লিখে মান বের করব। শেষে একটি বাক্যে প্রশ্নের উত্তর লিখব।</para>
+<example id="fs-id1880782">
+<exercise id="fs-id1899571"><problem id="fs-id4300687">
+<para id="fs-id1746953">সেমিস্টারের পাঁচটি পরীক্ষায় হাওয়ের প্রাপ্ত নম্বর যথাক্রমে <m:math><m:mrow><m:mn>87</m:mn><m:mo>,</m:mo><m:mn>93</m:mn><m:mo>,</m:mo><m:mn>68</m:mn><m:mo>,</m:mo><m:mn>95</m:mn><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>ও</m:mtext><m:mspace width="0.2em" /><m:mn>89</m:mn></m:mrow></m:math> । পাঁচটি পরীক্ষায় সে মোট কত নম্বর পেয়েছে?</para>
+</problem>
+<solution id="fs-id1944399">
+<title>সমাধান</title>
+<para id="fs-id2265104">পরীক্ষাগুলোতে পাওয়া মোট নম্বর বের করতে বলা হয়েছে।</para>
+<table id="eip-id1168288617772" class="unnumbered unstyled" summary="কথায় বলা বিষয় যোগের রাশিতে লিখে মোট নম্বর নির্ণয়ের ধাপ।"><tgroup cols="3"><tbody>
+  <row>
+    <entry>কথায় লেখো।</entry>
+    <entry>পরীক্ষাগুলোর নম্বরের যোগফল</entry>
+  </row>
+  <row>
+    <entry>গাণিতিক প্রতীকে লেখো।</entry>
+    <entry><m:math><m:mn>87</m:mn><m:mo>+</m:mo><m:mn>93</m:mn><m:mo>+</m:mo><m:mn>68</m:mn><m:mo>+</m:mo><m:mn>95</m:mn><m:mo>+</m:mo><m:mn>89</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>তারপর যোগ করে মান বের করি।</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>বেশ কয়েকটি সংখ্যা আছে বলে সেগুলো ওপর-নিচে লিখব।</entry>
+    <entry><m:math><m:mtable><m:mtr /><m:mtr /><m:mtr /><m:mtr><m:mtd columnalign="left"><m:mspace width="1em" /><m:mover><m:mn>8</m:mn><m:mn mathsize="small">3</m:mn></m:mover><m:mn>7</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="1em" /><m:mn>93</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="1em" /><m:mn>68</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="1em" /><m:mn>95</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="0.1em" /><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mn>89</m:mn></m:mrow><m:mtext>____</m:mtext></m:munder></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="0.51em" /><m:mn>432</m:mn></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+
+  <row>
+    <entry>প্রশ্নের উত্তর একটি বাক্যে লেখো।</entry>
+    <entry>হাও মোট 432 নম্বর পেয়েছে।</entry>
+  </row>
+
+</tbody>
+
+
+
+
+</tgroup>
+</table><para id="fs-id2703969">লক্ষ করো, যোগ করেছি <emphasis effect="italics">নম্বর</emphasis>; তাই যোগফল <m:math><m:mrow><m:mn>432</m:mn></m:mrow></m:math> <emphasis effect="italics">নম্বর</emphasis>। বাস্তব সমস্যার প্রতিটি উত্তরে সঠিক একক লেখা জরুরি।</para>
+</solution>
+</exercise></example>
+<note id="fs-id1509280" class="try">
+<exercise id="fs-id1564459">
+<problem id="fs-id2176012">
+<para id="fs-id1919047">মার্ক সাইকেল প্রতিযোগিতার জন্য অনুশীলন করছে। গত সপ্তাহে সে সাইকেল চালিয়েছে: সোমবার <m:math><m:mrow><m:mn>18</m:mn></m:mrow></m:math> মাইল, বুধবার <m:math><m:mrow><m:mn>15</m:mn></m:mrow></m:math> মাইল, শুক্রবার <m:math><m:mrow><m:mn>26</m:mn></m:mrow></m:math> মাইল, শনিবার <m:math><m:mrow><m:mn>49</m:mn></m:mrow></m:math> মাইল এবং রবিবার <m:math><m:mrow><m:mn>32</m:mn></m:mrow></m:math> মাইল। গত সপ্তাহে সে মোট কত মাইল সাইকেল চালিয়েছে?</para>
+</problem>
+<solution id="fs-id2146653">
+<para id="fs-id1390222">সে 140 মাইল সাইকেল চালিয়েছে।</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1512036" class="try">
+<exercise id="fs-id1761942">
+<problem id="fs-id1294758">
+<para id="fs-id2295551">লিংকন মিডল স্কুলে তিনটি শ্রেণি আছে। শ্রেণিগুলোতে শিক্ষার্থীর সংখ্যা যথাক্রমে <m:math><m:mrow><m:mn>230</m:mn><m:mo>,</m:mo><m:mn>165</m:mn><m:mo>,</m:mo><m:mtext>ও</m:mtext><m:mspace width="0.2em" /><m:mn>325</m:mn><m:mo>.</m:mo></m:mrow></m:math> মোট শিক্ষার্থী কতজন?</para>
+</problem>
+<solution id="fs-id2296132">
+<para id="fs-id1931675">মোট শিক্ষার্থী 720 জন।</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id2594070">কিছু বাস্তব সমস্যা জ্যামিতিক আকৃতি নিয়ে। যেমন, বাগানে বেড়া দিতে বা ছবিতে ফ্রেম লাগাতে চারপাশের মোট দৈর্ঘ্য জানতে হতে পারে। কোনো জ্যামিতিক চিত্রের চারপাশের মোট দৈর্ঘ্য হলো তার পরিসীমা। চিত্রটির সব বাহুর দৈর্ঘ্য যোগ করলে পরিসীমা পাওয়া যায়।</para><example id="fs-id1894829">
+<exercise id="fs-id1628979"><problem id="fs-id1511502">
+<para id="fs-id908485">দেখানো পাকা উঠানটির পরিসীমা বের করো।</para>
+<media id="fs-id588598" alt="ছয় বাহুবিশিষ্ট পাকা উঠানের চিত্র। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে গেলে: ডানে 9 ফুট, নিচে 2 ফুট, বাঁয়ে 3 ফুট, নিচে 2 ফুট, বাঁয়ে 6 ফুট, ওপরে 4 ফুট গিয়ে শুরুর কোণে ফেরা যায়।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_002.jpg" />
+</media>
+</problem>
+<solution id="fs-id1568241">
+<title>সমাধান</title>
+<table id="eip-id1168289453960" class="unnumbered unstyled" summary="কী বের করতে হবে তা নির্ধারণ করা থেকে শেষ উত্তর পর্যন্ত পরিসীমা নির্ণয়ের ধাপ।">
+<tgroup cols="3"><tbody>
+  <row>
+    <entry>পরিসীমা বের করতে বলা হয়েছে।</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>কথায় লেখো।</entry>
+    <entry>বাহুগুলোর দৈর্ঘ্যের যোগফল</entry>
+  </row>
+  <row>
+    <entry>গাণিতিক প্রতীকে লেখো।</entry>
+    <entry><m:math><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>9</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>যোগ করে মান বের করো।</entry>
+    <entry><m:math><m:mn>26</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>প্রশ্নের উত্তর একটি বাক্যে লেখো।</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>ফুট এককে দৈর্ঘ্য যোগ করেছি; তাই যোগফল <m:math><m:mn>26</m:mn></m:math> ফুট।</entry>
+    <entry>উঠানটির পরিসীমা <m:math><m:mn>26</m:mn></m:math> ফুট।</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise></example>
+<note id="fs-id1378644" class="try">
+<exercise id="fs-id2483376"><problem id="fs-id1542511">
+<para id="fs-id1365334">চিত্রটির পরিসীমা বের করো। সব দৈর্ঘ্য ইঞ্চি এককে দেওয়া।</para>
+<media id="fs-id2175999" alt="আট বাহুবিশিষ্ট চিত্র, নিচের মাঝখানে খাঁজ। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে বাহুর দৈর্ঘ্য: 9, 4, 3, 2, 3, 2, 3 ও 4 ইঞ্চি।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_003.jpg" />
+</media>
+</problem>
+<solution id="fs-id2284683">
+<para id="fs-id1357069">পরিসীমা 30 ইঞ্চি।</para>
+</solution>
+</exercise></note>
+<note id="fs-id1405610" class="try">
+<exercise id="fs-id2427950"><problem id="fs-id1225224">
+<para id="fs-id1884028">চিত্রটির পরিসীমা বের করো। সব দৈর্ঘ্য ইঞ্চি এককে দেওয়া।</para>
+<media id="fs-id1381557" alt="আট বাহুবিশিষ্ট সিঁড়ির মতো চিত্র। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে: ডানে 12, নিচে 6, বাঁয়ে 4, ওপরে 2, বাঁয়ে 4, ওপরে 2, বাঁয়ে 4 এবং ওপরে 2 ইঞ্চি।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_004.jpg" />
+</media>
+</problem>
+<solution id="fs-id2136690">
+<para id="fs-id1613173">পরিসীমা 36 ইঞ্চি।</para>
+</solution>
+</exercise></note>
+<note id="fs-id719196" class="media-2"><title>আরও অনলাইন উপকরণ দেখো</title><list id="fs-id1176422" display="block">
+<item><link url="https://www.openstax.org/l/24add2blocks">দুই অঙ্কের সংখ্যা যোগ করি এই <m:math><m:mrow><m:mtext>দশভিত্তিক</m:mtext></m:mrow></m:math> ব্লক দিয়ে</link></item>
+<item><link url="https://www.openstax.org/l/24add3blocks">তিন অঙ্কের সংখ্যা যোগ করি এই <m:math><m:mrow><m:mtext>দশভিত্তিক</m:mtext></m:mrow></m:math> ব্লক দিয়ে</link></item>
+<item><link url="https://www.openstax.org/l/24addwhlnumb">শূন্যসহ স্বাভাবিক সংখ্যার যোগ</link></item>
+</list>
+</note></section>
+<section id="fs-id1611455" class="key-concepts">
+<title>মূল ধারণা</title>
+<list id="eip-588"><item><emphasis>যোগের প্রতীক</emphasis> যোগ বোঝাতে আমরা প্রতীক ও কথা ব্যবহার করতে পারি। <table id="eip-id1170324017502" class="unnumbered" aria-label="দুই সারি ও পাঁচ কলামের ছক। প্রথম সারির শিরোনাম বাঁ থেকে: প্রক্রিয়া, প্রতীক, রাশি, যেভাবে পড়ি ও ফল। দ্বিতীয় সারিতে যথাক্রমে যোগ, + চিহ্ন, 3 + 4 রাশি, ‘তিন যোগ চার’ এবং 3 ও 4-এর যোগফল আছে।">
+<label />
+<tgroup cols="5">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<colspec colnum="4" colname="c4" />
+<colspec colnum="5" colname="c5" />
+<thead>
+<row valign="top">
+<entry align="left">প্রক্রিয়া</entry>
+<entry align="left">প্রতীক</entry>
+<entry align="left">রাশি</entry>
+<entry align="left">যেভাবে পড়ি</entry>
+<entry align="left">ফল</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left">যোগ</entry>
+<entry align="left"><m:math><m:mrow><m:mo>+</m:mo></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></entry>
+<entry align="left">তিন যোগ চার</entry>
+<entry align="left">যোগফল—সংখ্যা দুটি হলো <m:math><m:mn>3</m:mn></m:math> ও <m:math><m:mn>4</m:mn></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table> </item>
+<item><emphasis>যোগের অভেদ বৈশিষ্ট্য</emphasis>
+<list id="eip-id1170325229876">
+<item>যেকোনো সংখ্যা <m:math><m:mi>a</m:mi></m:math> ও <m:math><m:mn>0</m:mn></m:math> —এই দুইয়ের যোগফল প্রথম সংখ্যাটিই। <m:math><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mi>a</m:mi></m:math> <m:math><m:mn>0</m:mn><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:math></item></list></item>
+<item><emphasis>যোগের বিনিময় বিধি</emphasis>
+<list id="eip-id1170325285133"><item>যোগ করার সংখ্যা দুটি <m:math><m:mi>a</m:mi></m:math> ও <m:math><m:mi>b</m:mi></m:math> । এদের ক্রম বদলালেও যোগফল বদলায় না। <m:math><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>a</m:mi></m:math>.</item></list></item>
+<item><emphasis>শূন্যসহ স্বাভাবিক সংখ্যা যোগ করো।</emphasis>
+<list id="eip-id1170325253924" list-type="enumerated" number-style="arabic" class="stepwise"><item>একই ঘরের অঙ্কগুলো ওপর-নিচে রেখে সংখ্যাগুলো লেখো।</item>
+<item>একই ঘরের অঙ্কগুলো যোগ করো। এককের ঘর থেকে শুরু করে ডান থেকে বামে যাও। কোনো ঘরের যোগফল 9-এর বেশি হলে হাতে রেখে বাম পাশের পরের ঘরে নিয়ে যাও।</item>
+<item>ডান থেকে বামে প্রতিটি ঘরের যোগ চালিয়ে যাও; প্রয়োজন হলে হাতে রেখে পরের ঘরে যোগ করো।</item></list></item>
+</list></section>
+<section id="fs-id2263283" class="section-exercises"><section id="fs-id2150139" class="practice-perfect"><title>অনুশীলনে দক্ষ হই</title><para id="fs-id1459553"><emphasis effect="bold">যোগের প্রতীক ব্যবহার করি</emphasis> </para><para id="eip-17">নিচের কাজগুলোতে গাণিতিক রাশিকে কথায় লেখো।</para><exercise id="fs-id1386835">
+<problem id="fs-id1858965">
+<para id="fs-id2216300"><m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1179382">
+<para id="fs-id2950606">পাঁচ যোগ দুই; 5 ও 2-এর যোগফল।</para>
+</solution>
+</exercise>
+<exercise id="fs-id2169300">
+<problem id="fs-id2479159">
+<para id="fs-id1562356"><m:math><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2649783">
+<problem id="fs-id2472855">
+<para id="fs-id2295555"><m:math><m:mrow><m:mn>13</m:mn><m:mo>+</m:mo><m:mn>18</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2284590">
+<para id="fs-id2921067">তেরো যোগ আঠারো; 13 ও 18-এর যোগফল।</para>
+</solution>
+</exercise>
+<exercise id="fs-id2267610">
+<problem id="fs-id2300838">
+<para id="fs-id1201688"><m:math><m:mrow><m:mn>15</m:mn><m:mo>+</m:mo><m:mn>16</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2479137">
+<problem id="fs-id1565693">
+<para id="fs-id1742068"><m:math><m:mrow><m:mn>214</m:mn><m:mo>+</m:mo><m:mn>642</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2649549">
+<para id="fs-id2300447">দুইশত চৌদ্দ যোগ ছয়শত বিয়াল্লিশ; 214 ও 642-এর যোগফল</para>
+</solution>
+</exercise>
+<exercise id="fs-id2459088">
+<problem id="fs-id2658520">
+<para id="fs-id1208667"><m:math><m:mrow><m:mn>438</m:mn><m:mo>+</m:mo><m:mn>113</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id2925322"><emphasis effect="bold">মডেল দিয়ে শূন্যসহ স্বাভাবিক সংখ্যার যোগ দেখাই</emphasis> </para><para id="eip-987">নিচের কাজগুলোতে মডেল দিয়ে যোগ দেখাও।</para><exercise id="fs-id2431569">
+<problem id="fs-id1728216">
+<para id="fs-id1408830"><m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2730040">
+<para id="fs-id1171105187236"><newline /><media id="fs-id2751367" alt="ছয়টি এককের বর্গ: প্রথমে দুটি, তারপর চারটি। ব্লকে 2 + 4 = 6 দেখানো।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_201_img.jpg" />
+</media></para>
+<para id="fs-id1461649"><m:math><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>6</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id2210891">
+<problem id="fs-id1040799">
+<para id="fs-id1405615"><m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1583137">
+<problem id="fs-id1246687">
+<para id="fs-id1467513"><m:math><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1899515">
+<para id="fs-id1171105186388"><newline /><media id="fs-id1548483" alt="দশকের একটি দণ্ড ও দুটি এককের বর্গ; 8 + 4 = 12 দেখানো।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_203_img.jpg" />
+</media></para>
+<para id="fs-id2678643"><m:math><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>12</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1389381">
+<problem id="fs-id1370774">
+<para id="fs-id2658396"><m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1932178">
+<problem id="fs-id2835377">
+<para id="fs-id1607967"><m:math><m:mrow><m:mn>14</m:mn><m:mo>+</m:mo><m:mn>75</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1605815">
+<para id="fs-id1171105284820"><newline /><media id="fs-id2568159" alt="দশকের আটটি দণ্ড ও এককের নয়টি বর্গ; 14 + 75 = 89 দেখানো।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_205_img.jpg" />
+</media></para>
+<para id="fs-id2820243"><m:math><m:mn>14</m:mn><m:mo>+</m:mo><m:mn>75</m:mn><m:mo>=</m:mo><m:mn>89</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1509761">
+<problem id="fs-id1807951">
+<para id="fs-id1524007"><m:math><m:mrow><m:mn>15</m:mn><m:mo>+</m:mo><m:mn>63</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2495783">
+<problem id="fs-id2270650">
+<para id="fs-id2818976"><m:math><m:mrow><m:mn>16</m:mn><m:mo>+</m:mo><m:mn>25</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2368353">
+<para id="fs-id1171105560577"><newline /><media id="fs-id2642795" alt="দশকের চারটি দণ্ড ও এককের একটি বর্গ; 16 + 25 = 41 দেখানো।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_207_img.jpg" />
+</media></para>
+<para id="fs-id2903286"><m:math><m:mn>16</m:mn><m:mo>+</m:mo><m:mn>25</m:mn><m:mo>=</m:mo><m:mn>41</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1209935">
+<problem id="fs-id1917415">
+<para id="fs-id1582675"><m:math><m:mrow><m:mn>14</m:mn><m:mo>+</m:mo><m:mn>27</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id4121509"><emphasis effect="bold">শূন্যসহ স্বাভাবিক সংখ্যার যোগ</emphasis> </para><para id="fs-id2702696">নিচের কাজগুলোতে প্রতিটি ছকের ফাঁকা ঘর পূরণ করো।</para><exercise id="fs-id2190914"><problem id="fs-id1499443">
+<media id="fs-id1518798" alt="শিরোনামসহ 11 সারি ও 11 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। সারি 0: 0, 1, 2, ফাঁকা, 4, 5, 6, 7, ফাঁকা, 9। সারি 1: 1, 2, 3, 4, ফাঁকা, ফাঁকা, 7, 8, 9, ফাঁকা। সারি 2: ফাঁকা, 3, 4, 5, 6, ফাঁকা, 8, ফাঁকা, ফাঁকা, 11। সারি 3: 3, ফাঁকা, 5, ফাঁকা, 7, 8, ফাঁকা, 10, ফাঁকা, 12। সারি 4: 4, 5, ফাঁকা, ফাঁকা, 8, 9, ফাঁকা, 11, 12, ফাঁকা। সারি 5: 5, 6, 7, 8, ফাঁকা, ফাঁকা, 11, ফাঁকা, 13, ফাঁকা। সারি 6: 6, 7, 8, ফাঁকা, 10, ফাঁকা, ফাঁকা, 13, ফাঁকা, 15। সারি 7: ফাঁকা, ফাঁকা, 9, 10, ফাঁকা, 12, ফাঁকা, ফাঁকা, 15, 16। সারি 8: 8, 9, ফাঁকা, 11, ফাঁকা, ফাঁকা, 14, ফাঁকা, 16, ফাঁকা। সারি 9: 9, 10, 11, ফাঁকা, 13, 14, ফাঁকা, ফাঁকা, 17, ফাঁকা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_216.jpg" />
+</media>
+</problem>
+<solution id="fs-id1795710">
+<para id="fs-id1171105158842"><newline /><media id="fs-id2658348" alt="শিরোনামসহ 11 সারি ও 11 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। সারি 0: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। সারি 1: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10। সারি 2: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11। সারি 3: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12। সারি 4: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13। সারি 5: 5, 6, 7, 8, 9, 10, 11, 12, 13, 14। সারি 6: 6, 7, 8, 9, 10, 11, 12, 13, 14, 15। সারি 7: 7, 8, 9, 10, 11, 12, 13, 14, 15, 16। সারি 8: 8, 9, 10, 11, 12, 13, 14, 15, 16, 17। সারি 9: 9, 10, 11, 12, 13, 14, 15, 16, 17, 18।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_217.jpg" />
+</media></para></solution>
+</exercise><exercise id="fs-id1485179"><problem id="fs-id2758793">
+<media id="fs-id2754245" alt="শিরোনামসহ 11 সারি ও 11 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9। সারি 0: 0, 1, 2, 3, 4, ফাঁকা, 6, ফাঁকা, 8, 9। সারি 1: 1, 2, 3, ফাঁকা, 5, 6, ফাঁকা, 8, ফাঁকা, 10। সারি 2: 2, ফাঁকা, 4, ফাঁকা, 6, 7, ফাঁকা, 9, 10, ফাঁকা। সারি 3: ফাঁকা, 4, ফাঁকা, 6, ফাঁকা, ফাঁকা, 9, ফাঁকা, 11, ফাঁকা। সারি 4: 4, 5, 6, 7, ফাঁকা, ফাঁকা, 10, 11, ফাঁকা, 13। সারি 5: 5, 6, ফাঁকা, 8, 9, ফাঁকা, 11, 12, 13, ফাঁকা। সারি 6: ফাঁকা, ফাঁকা, 8, 9, ফাঁকা, ফাঁকা, 12, 13, ফাঁকা, 15। সারি 7: 7, 8, ফাঁকা, 10, ফাঁকা, 12, ফাঁকা, ফাঁকা, 15, 16। সারি 8: 8, 9, 10, ফাঁকা, 12, ফাঁকা, 14, ফাঁকা, 16, 17। সারি 9: ফাঁকা, ফাঁকা, 11, 12, 13, ফাঁকা, ফাঁকা, 16, ফাঁকা, ফাঁকা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_218.jpg" />
+</media>
+</problem>
+</exercise><exercise id="fs-id2307885"><problem id="fs-id2940472">
+<media id="fs-id2370131" alt="শিরোনামসহ 5 সারি ও 8 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 6, 7, 8, 9। সারি 6: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 7: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 8: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 9: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_220.jpg" />
+</media>
+</problem>
+<solution id="fs-id2474636">
+<para id="fs-id1171105186222"><newline /><media id="fs-id1463120" alt="শিরোনামসহ 5 সারি ও 8 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 3, 4, 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 6, 7, 8, 9। সারি 6: 9, 10, 11, 12, 13, 14, 15। সারি 7: 10, 11, 12, 13, 14, 15, 16। সারি 8: 11, 12, 13, 14, 15, 16, 17। সারি 9: 12, 13, 14, 15, 16, 17, 18।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_221.jpg" />
+</media></para></solution>
+</exercise><exercise id="fs-id1516426"><problem id="fs-id1321944">
+<media id="fs-id2263429" alt="শিরোনামসহ 8 সারি ও 5 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 6, 7, 8, 9। বামের সারি-শিরোনাম: 3, 4, 5, 6, 7, 8, 9। সারি 3: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 4: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 5: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 6: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 7: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 8: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 9: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_222.jpg" />
+</media>
+</problem>
+</exercise><exercise id="fs-id2216372"><problem id="fs-id2294290">
+<media id="fs-id2136825" alt="শিরোনামসহ 6 সারি ও 6 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 5, 6, 7, 8, 9। সারি 5: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 6: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 7: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 8: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 9: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_224.jpg" />
+</media>
+
+</problem>
+<solution id="fs-id1563224">
+<para id="fs-id1171103593093"><newline /><media id="fs-id2957906" alt="শিরোনামসহ 6 সারি ও 6 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 5, 6, 7, 8, 9। বামের সারি-শিরোনাম: 5, 6, 7, 8, 9। সারি 5: 10, 11, 12, 13, 14। সারি 6: 11, 12, 13, 14, 15। সারি 7: 12, 13, 14, 15, 16। সারি 8: 13, 14, 15, 16, 17। সারি 9: 14, 15, 16, 17, 18।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_225.jpg" />
+</media></para></solution>
+</exercise><exercise id="fs-id2220307"><problem id="fs-id2299643">
+<media id="fs-id2202588" alt="শিরোনামসহ 5 সারি ও 5 কলামের যোগের ছক। ওপরের বাঁ ঘরে +। ওপরের কলাম-শিরোনাম: 6, 7, 8, 9। বামের সারি-শিরোনাম: 6, 7, 8, 9। সারি 6: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 7: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 8: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা। সারি 9: ফাঁকা, ফাঁকা, ফাঁকা, ফাঁকা।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_226.jpg" />
+</media>
+</problem>
+</exercise><para id="fs-id1950178">নিচের কাজগুলোতে যোগ করো।</para>
+<exercise id="fs-id3433877"><problem id="fs-id1841799">
+<list id="eip-id1168287108282" list-type="enumerated" class="circled" number-style="arabic"><item><span class="token">ⓐ</span> <m:math><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>13</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>13</m:mn><m:mo>+</m:mo><m:mn>0</m:mn></m:math></item></list>
+</problem>
+<solution id="fs-id1059525">
+<list id="eip-id1168288203886" class="circled" list-type="enumerated" number-style="arabic"><item><span class="token">ⓐ</span> 13 </item><item><span class="token">ⓑ</span> 13</item></list>
+</solution>
+</exercise><exercise id="fs-id2670104"><problem id="fs-id1458774">
+<list id="eip-id1168288220373" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>5,280</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>5,280</m:mn><m:mo>+</m:mo><m:mn>0</m:mn></m:math></item></list></problem>
+</exercise><exercise id="fs-id1800383"><problem id="fs-id2432069">
+<list id="eip-id1168287260366" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>8</m:mn></m:math></item></list></problem>
+<solution id="fs-id2926422">
+<list id="eip-id1168287179546" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mn>11</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>11</m:mn></m:math></item></list></solution>
+</exercise><exercise id="fs-id2700265"><problem id="fs-id1317764">
+<list id="eip-id1168287179592" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>7</m:mn></m:math></item></list></problem>
+</exercise><exercise id="fs-id2165529">
+<problem id="fs-id2778182">
+<para id="fs-id2684827"><m:math><m:mrow><m:mn>45</m:mn><m:mo>+</m:mo><m:mn>33</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2755026">
+<para id="fs-id1336891"><m:math><m:mn>78</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1785992">
+<problem id="fs-id1358946">
+<para id="fs-id1717749"><m:math><m:mrow><m:mn>37</m:mn><m:mo>+</m:mo><m:mn>22</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id3407533">
+<problem id="fs-id1607908">
+<para id="fs-id1065635"><m:math><m:mrow><m:mn>71</m:mn><m:mo>+</m:mo><m:mn>28</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1221773">
+<para id="fs-id934310"><m:math><m:mn>99</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id2209807">
+<problem id="fs-id2277895">
+<para id="fs-id1526157"><m:math><m:mrow><m:mn>43</m:mn><m:mo>+</m:mo><m:mn>53</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2715529">
+<problem id="fs-id764587">
+<para id="fs-id1215661"><m:math><m:mrow><m:mn>26</m:mn><m:mo>+</m:mo><m:mn>59</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1944318">
+<para id="fs-id1828794"><m:math><m:mn>85</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1184179">
+<problem id="fs-id1559422">
+<para id="fs-id2431742"><m:math><m:mrow><m:mn>38</m:mn><m:mo>+</m:mo><m:mn>17</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1612224">
+<problem id="fs-id2143943">
+<para id="fs-id2908339"><m:math><m:mrow><m:mn>64</m:mn><m:mo>+</m:mo><m:mn>78</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1390654">
+<para id="fs-id2279598"><m:math><m:mn>142</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1806818">
+<problem id="fs-id1597646">
+<para id="fs-id2165415"><m:math><m:mrow><m:mn>92</m:mn><m:mo>+</m:mo><m:mn>39</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1360696">
+<problem id="fs-id2280789">
+<para id="fs-id2922241"><m:math><m:mrow><m:mn>168</m:mn><m:mo>+</m:mo><m:mn>325</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2620973">
+<para id="fs-id2676387"><m:math><m:mn>493</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id2602850">
+<problem id="fs-id1852215">
+<para id="fs-id1278967"><m:math><m:mrow><m:mn>247</m:mn><m:mo>+</m:mo><m:mn>149</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1619766">
+<problem id="fs-id2485778">
+<para id="fs-id2160161"><m:math><m:mrow><m:mn>584</m:mn><m:mo>+</m:mo><m:mn>277</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id4212245">
+<para id="fs-id1946810"><m:math><m:mn>861</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id2269768">
+<problem id="fs-id2276203">
+<para id="fs-id1116074"><m:math><m:mrow><m:mn>175</m:mn><m:mo>+</m:mo><m:mn>648</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2238187">
+<problem id="fs-id2366316">
+<para id="fs-id1910846"><m:math><m:mrow><m:mn>832</m:mn><m:mo>+</m:mo><m:mn>199</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1361604">
+<para id="fs-id1499591"><m:math><m:mn>1,031</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id2202157">
+<problem id="fs-id1508765">
+<para id="fs-id2430610"><m:math><m:mrow><m:mn>775</m:mn><m:mo>+</m:mo><m:mn>369</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1257721">
+<problem id="fs-id1517058">
+<para id="fs-id2280943"><m:math><m:mrow><m:mn>6,358</m:mn><m:mo>+</m:mo><m:mn>492</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1955469">
+<para id="fs-id2295088"><m:math><m:mn>6,850</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1808456">
+<problem id="fs-id1170550">
+<para id="fs-id2212086"><m:math><m:mrow><m:mn>9,184</m:mn><m:mo>+</m:mo><m:mn>578</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1791279">
+<problem id="fs-id2219928">
+<para id="fs-id2277393"><m:math><m:mrow><m:mn>3,740</m:mn><m:mo>+</m:mo><m:mn>18,593</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1631210">
+<para id="fs-id2431506"><m:math><m:mn>22,333</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1205572">
+<problem id="fs-id2657723">
+<para id="fs-id1549331"><m:math><m:mrow><m:mn>6,118</m:mn><m:mo>+</m:mo><m:mn>15,990</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1582947">
+<problem id="fs-id1207993">
+<para id="fs-id2642784"><m:math><m:mrow><m:mn>485,012</m:mn><m:mo>+</m:mo><m:mn>619,848</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1205670">
+<para id="fs-id1401839"><m:math><m:mn>1,104,860</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1542190">
+<problem id="fs-id2793180">
+<para id="fs-id2211302"><m:math><m:mrow><m:mn>368,911</m:mn><m:mo>+</m:mo><m:mn>857,289</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2308954">
+<problem id="fs-id1799797">
+<para id="fs-id1608176"><m:math><m:mrow><m:mn>24,731</m:mn><m:mo>+</m:mo><m:mn>592</m:mn><m:mo>+</m:mo><m:mn>3,868</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2334168">
+<para id="fs-id1566297"><m:math><m:mn>29,191</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1352693">
+<problem id="fs-id1596476">
+<para id="fs-id1788229"><m:math><m:mrow><m:mn>28,925</m:mn><m:mo>+</m:mo><m:mn>817</m:mn><m:mo>+</m:mo><m:mn>4,593</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2611500">
+<problem id="fs-id1762023">
+<para id="fs-id2581581"><m:math><m:mrow><m:mn>8,015</m:mn><m:mo>+</m:mo><m:mn>76,946</m:mn><m:mo>+</m:mo><m:mn>16,570</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1563641">
+<para id="fs-id1828176"><m:math><m:mn>101,531</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1523165">
+<problem id="fs-id1950063">
+<para id="fs-id1368588"><m:math><m:mrow><m:mn>6,291</m:mn><m:mo>+</m:mo><m:mn>54,107</m:mn><m:mo>+</m:mo><m:mn>28,635</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1262565"><emphasis effect="bold">কথায় বলা বিষয় গাণিতিক প্রতীকে লিখি</emphasis> </para><para id="eip-527">নিচের কাজগুলোতে কথায় বলা প্রতিটি বিষয় গাণিতিক প্রতীকে লেখো, তারপর মান বের করো।</para><exercise id="fs-id2387977">
+<problem id="fs-id2179698">
+<para id="fs-id1394583">যোগফল—সংখ্যা দুটি হলো <m:math><m:mrow><m:mn>13</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>18</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id934090">
+<para id="fs-id1827165"><m:math><m:mn>13</m:mn><m:mo>+</m:mo><m:mn>18</m:mn><m:mo>=</m:mo><m:mn>31</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1233172">
+<problem id="fs-id833404">
+<para id="fs-id1275802">যোগফল—সংখ্যা দুটি হলো <m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1916031">
+<problem id="fs-id1632164">
+<para id="fs-id1517572">যোগফল—সংখ্যা দুটি হলো <m:math><m:mrow><m:mn>90</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>65</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1609461">
+<para id="fs-id2481653"><m:math><m:mn>90</m:mn><m:mo>+</m:mo><m:mn>65</m:mn><m:mo>=</m:mo><m:mn>155</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1834317">
+<problem id="fs-id1549991">
+<para id="fs-id1811328">যোগফল—সংখ্যা দুটি হলো <m:math><m:mrow><m:mn>70</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>38</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2223707">
+<problem id="fs-id1265711">
+<para id="fs-id2432228"><m:math><m:mrow><m:mn>33</m:mn></m:mrow></m:math> -এর সঙ্গে যোগ করো <m:math><m:mrow><m:mn>49</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1517108">
+<para id="fs-id1238533"><m:math><m:mn>33</m:mn><m:mo>+</m:mo><m:mn>49</m:mn><m:mo>=</m:mo><m:mn>82</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1529453">
+<problem id="fs-id1948922">
+<para id="fs-id2369763"><m:math><m:mrow><m:mn>68</m:mn></m:mrow></m:math> -এর সঙ্গে যোগ করো <m:math><m:mrow><m:mn>25</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1760728">
+<problem id="fs-id1397964">
+<para id="fs-id1836854"><m:math><m:mrow><m:mn>250</m:mn></m:mrow></m:math> বেশি—মূল সংখ্যা <m:math><m:mrow><m:mn>599</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1480647">
+<para id="fs-id1826480"><m:math><m:mn>599</m:mn><m:mo>+</m:mo><m:mn>250</m:mn><m:mo>=</m:mo><m:mn>849</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id2671623">
+<problem id="fs-id2146075">
+<para id="fs-id1880793"><m:math><m:mrow><m:mn>115</m:mn></m:mrow></m:math> বেশি—মূল সংখ্যা <m:math><m:mrow><m:mn>286</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1606377">
+<problem id="fs-id1835123">
+<para id="fs-id1785250">মোট—সংখ্যা দুটি হলো <m:math><m:mrow><m:mn>628</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>77</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1944908">
+<para id="fs-id1509499"><m:math><m:mn>628</m:mn><m:mo>+</m:mo><m:mn>77</m:mn><m:mo>=</m:mo><m:mn>705</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1614332">
+<problem id="fs-id2619707">
+<para id="fs-id2174343">মোট—সংখ্যা দুটি হলো <m:math><m:mrow><m:mn>593</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>79</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2281219">
+<problem id="fs-id2129977">
+<para id="fs-id2265450"><m:math><m:mrow><m:mn>1,482</m:mn></m:mrow></m:math> যোগ করো এই সংখ্যার সঙ্গে: <m:math><m:mrow><m:mn>915</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2144836">
+<para id="fs-id2264496"><m:math><m:mn>915</m:mn><m:mo>+</m:mo><m:mn>1,482</m:mn><m:mo>=</m:mo><m:mn>2,397</m:mn></m:math></para></solution>
+</exercise>
+<exercise id="fs-id1159676">
+<problem id="fs-id2478495">
+<para id="fs-id1786725"><m:math><m:mrow><m:mn>2,719</m:mn></m:mrow></m:math> যোগ করো এই সংখ্যার সঙ্গে: <m:math><m:mrow><m:mn>682</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1458706"><emphasis effect="bold">বাস্তব সমস্যায় শূন্যসহ স্বাভাবিক সংখ্যার যোগ</emphasis> </para><para id="eip-222">নিচের সমস্যাগুলো সমাধান করো।</para><exercise id="fs-id2195542">
+<problem id="fs-id1760965">
+<para id="fs-id1747338"><emphasis effect="bold">বাড়ি সংস্কার</emphasis> সোফিয়া রান্নাঘর সংস্কার করে নতুন চুলা-ওভেন, মাইক্রোওয়েভ ও বাসন ধোয়ার যন্ত্র কিনেছে। চুলা-ওভেনের দাম <m:math><m:mrow><m:mtext>$1,100</m:mtext><m:mo>,</m:mo></m:mrow></m:math> মাইক্রোওয়েভের দাম <m:math><m:mrow><m:mtext>$250</m:mtext><m:mo>,</m:mo></m:mrow></m:math> এবং বাসন ধোয়ার যন্ত্রের দাম <m:math><m:mrow><m:mtext>$525</m:mtext><m:mo>.</m:mo></m:mrow></m:math> এই তিনটি যন্ত্রের মোট দাম কত?</para>
+</problem>
+<solution id="fs-id1801474">
+<para id="fs-id1408146">মোট দাম $1,875।</para>
+</solution>
+</exercise>
+<exercise id="fs-id2452678">
+<problem id="fs-id2788930">
+<para id="fs-id2214138"><emphasis effect="bold">খেলার সরঞ্জাম</emphasis> এইডেন একটি বেসবল ব্যাট, হেলমেট ও দস্তানা কিনেছে। ব্যাটের দাম <m:math><m:mrow><m:mtext>$299</m:mtext><m:mo>,</m:mo></m:mrow></m:math> হেলমেটের দাম <m:math><m:mrow><m:mtext>$35</m:mtext><m:mo>,</m:mo></m:mrow></m:math> এবং দস্তানার দাম <m:math><m:mrow><m:mtext>$68</m:mtext><m:mo>.</m:mo></m:mrow></m:math> এইডেনের খেলার সরঞ্জামগুলোর মোট দাম কত?</para>
+</problem>
+</exercise>
+<exercise id="fs-id2264366">
+<problem id="fs-id2135940">
+<para id="fs-id1968068"><emphasis effect="bold">সাইকেল চালানো</emphasis> ইথান সাইকেল চালিয়েছে: সোমবার <m:math><m:mrow><m:mn>14</m:mn></m:mrow></m:math> মাইল, মঙ্গলবার <m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math> মাইল, বুধবার <m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math> মাইল, শুক্রবার <m:math><m:mrow><m:mn>25</m:mn></m:mrow></m:math> মাইল এবং শনিবার <m:math><m:mrow><m:mn>68</m:mn></m:mrow></m:math> মাইল। ইথান মোট কত মাইল সাইকেল চালিয়েছে?</para>
+</problem>
+<solution id="fs-id1722779">
+<para id="fs-id1374526">ইথান 138 মাইল সাইকেল চালিয়েছে।</para>
+</solution>
+</exercise>
+<exercise id="fs-id1401775">
+<problem id="fs-id1827632">
+<para id="fs-id1739127"><emphasis effect="bold">ব্যবসা</emphasis> ক্লোয়ির একটি ফুলের দোকান আছে। গত সপ্তাহে সে সাজানো ফুলের গুচ্ছ তৈরি করেছে: সোমবার <m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math> টি, মঙ্গলবার <m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math> টি, বুধবার <m:math><m:mrow><m:mn>23</m:mn></m:mrow></m:math> টি, বৃহস্পতিবার <m:math><m:mrow><m:mn>29</m:mn></m:mrow></m:math> টি এবং শুক্রবার <m:math><m:mrow><m:mn>44</m:mn></m:mrow></m:math> টি। ক্লোয়ি মোট কতটি সাজানো ফুলের গুচ্ছ তৈরি করেছে?</para>
+</problem>
+</exercise>
+<exercise id="fs-id2609576">
+<problem id="fs-id2198580">
+<para id="fs-id1835026"><emphasis effect="bold">ফ্ল্যাটের মেঝের ক্ষেত্রফল</emphasis> জ্যাকসন থাকে <m:math><m:mn>7</m:mn></m:math> ঘরের একটি ফ্ল্যাটে। ঘরগুলোর মেঝের ক্ষেত্রফল বর্গফুটে যথাক্রমে <m:math><m:mrow><m:mn>238</m:mn><m:mo>,</m:mo><m:mn>120</m:mn><m:mo>,</m:mo><m:mn>156</m:mn><m:mo>,</m:mo><m:mn>196</m:mn><m:mo>,</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>132</m:mn><m:mo>,</m:mo></m:mrow></m:math> ও <m:math><m:mrow><m:mn>225</m:mn><m:mo>.</m:mo></m:mrow></m:math> সব মিলিয়ে এই <m:math><m:mn>7</m:mn></m:math> টি ঘরের মেঝের মোট ক্ষেত্রফল কত বর্গফুট?</para>
+</problem>
+<solution id="fs-id2474540">
+<para id="fs-id1386098">ঘরগুলোর মেঝের মোট ক্ষেত্রফল 1,167 বর্গফুট।</para>
+</solution>
+</exercise>
+<exercise id="fs-id1946723">
+<problem id="fs-id2375146">
+<para id="fs-id1321612"><emphasis effect="bold">ওজন</emphasis> সাতজন পুরুষ মাছ ধরার একটি নৌকা ভাড়া করেছেন। তাঁদের ওজন যথাক্রমে <m:math><m:mrow><m:mn>175</m:mn><m:mo>,</m:mo><m:mn>192</m:mn><m:mo>,</m:mo><m:mn>148</m:mn><m:mo>,</m:mo><m:mn>169</m:mn><m:mo>,</m:mo><m:mn>205</m:mn><m:mo>,</m:mo><m:mn>181</m:mn><m:mo>,</m:mo></m:mrow></m:math> ও <m:math><m:mrow><m:mn>225</m:mn></m:mrow></m:math> পাউন্ড। সাতজনের মোট ওজন কত?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1962359">
+<problem id="fs-id1280684">
+<para id="fs-id1352275"><emphasis effect="bold">বেতন</emphasis> গত বছর ন্যাটালির বেতন ছিল <m:math><m:mrow><m:mtext>$82,572</m:mtext><m:mo>.</m:mo></m:mrow></m:math> দুই বছর আগে তাঁর বেতন ছিল <m:math><m:mrow><m:mtext>$79,316</m:mtext><m:mo>,</m:mo></m:mrow></m:math> এবং তিন বছর আগে ছিল <m:math><m:mrow><m:mtext>$75,298</m:mtext><m:mo>.</m:mo></m:mrow></m:math> গত তিন বছরে ন্যাটালির বেতনের মোট পরিমাণ কত?</para>
+</problem>
+<solution id="fs-id1957190">
+<para id="fs-id2164332">ন্যাটালির মোট বেতন $237,186।</para>
+</solution>
+</exercise>
+<exercise id="fs-id1410524">
+<problem id="fs-id2136860">
+<para id="fs-id2730706"><emphasis effect="bold">বাড়ি বিক্রি</emphasis> এমা বাড়ি কেনাবেচার মধ্যস্থতাকারী। গত মাসে তিনি তিনটি বাড়ি বিক্রি করেছেন। বাড়িগুলোর বিক্রয়মূল্য ছিল <m:math><m:mrow><m:mtext>$292,540</m:mtext><m:mo>,</m:mo><m:mtext>$505,875</m:mtext><m:mo>,</m:mo></m:mrow></m:math> ও <m:math><m:mrow><m:mn>$423,699</m:mn><m:mo>.</m:mo></m:mrow></m:math> তিনটি বিক্রয়মূল্যের মোট পরিমাণ কত?</para>
+</problem>
+</exercise>
+<para id="fs-id2789052">নিচের কাজগুলোতে প্রতিটি চিত্রের পরিসীমা বের করো।</para>
+<exercise id="fs-id2658194">
+<problem id="fs-id2466163">
+<media id="fs-id3323886" alt="ত্রিভুজের তিন বাহুর দৈর্ঘ্য 14, 12 ও 18 ইঞ্চি।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_208_img.jpg" />
+</media>
+</problem>
+<solution id="fs-id764274">
+<para id="fs-id1910210">চিত্রটির পরিসীমা 44 ইঞ্চি।</para>
+</solution>
+</exercise>
+<exercise id="fs-id2130628">
+<problem id="fs-id1739372">
+<media id="fs-id1920954" alt="সমকোণী ত্রিভুজ: বাঁয়ের উল্লম্ব বাহু 5 সেন্টিমিটার, নিচের বাহু 12 সেন্টিমিটার এবং তির্যক বাহু 13 সেন্টিমিটার।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_209_img.jpg" />
+</media>
+</problem>
+</exercise>
+<exercise id="fs-id1718142">
+<problem id="fs-id1800041">
+<media id="fs-id1509030" alt="আয়তক্ষেত্রের ওপরের ও নিচের বাহু 21 ও 21 মিটার; বাঁয়ের ও ডানের বাহু 7 ও 7 মিটার।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_210_img.jpg" />
+</media>
+</problem>
+<solution id="fs-id1786922">
+<para id="fs-id2599809">চিত্রটির পরিসীমা 56 মিটার।</para>
+</solution>
+</exercise>
+<exercise id="fs-id2173206">
+<problem id="fs-id1945450">
+<media id="fs-id1409007" alt="আয়তক্ষেত্রের ওপরের ও নিচের বাহু 19 ও 19 ফুট; বাঁয়ের ও ডানের বাহু 14 ও 14 ফুট।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_211_img.jpg" />
+</media>
+</problem>
+</exercise>
+<exercise id="fs-id1788660"><problem id="fs-id2220439">
+<media id="fs-id1386731" alt="চতুর্ভুজের সমান্তরাল ওপরের ও নিচের বাহু যথাক্রমে 19 ও 16 গজ। দুই তির্যক বাহুর দৈর্ঘ্য 18 ও 18 গজ।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_212_img.jpg" />
+</media>
+</problem>
+<solution id="fs-id1462641">
+<para id="fs-id1918111">চিত্রটির পরিসীমা 71 গজ।</para>
+</solution>
+</exercise><exercise id="fs-id1321391"><problem id="fs-id2261883">
+<media id="fs-id2453797" alt="চতুর্ভুজের সমান্তরাল ওপরের ও নিচের বাহু যথাক্রমে 24 ও 29 মিটার। দুই তির্যক বাহুর দৈর্ঘ্য 17 ও 17 মিটার।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_213_img.jpg" />
+</media>
+</problem>
+</exercise><exercise id="fs-id2427822"><problem id="fs-id1933947">
+<media id="fs-id1727317" alt="ছয় বাহুর চিত্র। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে: ডানে 24 ফুট, নিচে 7 ফুট, বাঁয়ে 19 ফুট, ওপরে 3 ফুট, বাঁয়ে 5 ফুট ও ওপরে 4 ফুট।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_214_img.jpg" />
+</media>
+</problem>
+<solution id="fs-id2597307">
+<para id="fs-id764492">চিত্রটির পরিসীমা 62 ফুট।</para>
+</solution>
+</exercise><exercise id="fs-id1960065"><problem id="fs-id2172560">
+<media id="fs-id2316211" alt="ছয় বাহুর চিত্র। ওপরের বাঁ কোণ থেকে ঘড়ির কাঁটার দিকে: ডানে 25 ইঞ্চি, নিচে 10 ইঞ্চি, বাঁয়ে 14 ইঞ্চি, ওপরে 7 ইঞ্চি, বাঁয়ে 11 ইঞ্চি; তারপর ওপরে উঠে শুরুর কোণে ফেরা। শেষ উল্লম্ব বাহুর দৈর্ঘ্য চিত্রে লেখা নেই।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_01_02_215_img.jpg" />
+</media>
+</problem>
+</exercise></section><section id="fs-id2280700" class="everyday">
+<title>দৈনন্দিন গণিত</title>
+<exercise id="fs-id1606437">
+<problem id="fs-id3217928">
+<para id="fs-id1947377"><emphasis effect="bold">ক্যালরি</emphasis> পলেট দুপুরে গ্রিল করা মুরগির সালাদ, র‍্যাঞ্চ ড্রেসিং ও <m:math><m:mrow><m:mtext>16 আউন্সের</m:mtext></m:mrow></m:math> পানীয় খেয়েছে। রেস্তোরাঁর পুষ্টিতথ্যের ছকে সে দেখেছে, প্রতিটি খাবারের ক্যালরির পরিমাণ এ রকম:</para>
+<para id="fs-id1262668">গ্রিল করা মুরগির সালাদ— <m:math><m:mrow><m:mn>320</m:mn></m:mrow></m:math> ক্যালরি<newline />
+র‍্যাঞ্চ ড্রেসিং— <m:math><m:mrow><m:mn>170</m:mn></m:mrow></m:math> ক্যালরি<newline />
+<m:math><m:mrow><m:mtext>16 আউন্সের</m:mtext></m:mrow></m:math> পানীয়— <m:math><m:mrow><m:mn>150</m:mn></m:mrow></m:math> ক্যালরি</para>
+<para id="fs-id2806755">পলেটের দুপুরের খাবারে মোট কত ক্যালরি ছিল?</para>
+</problem>
+<solution id="fs-id1880768">
+<para id="fs-id1548221">মোট ক্যালরি ছিল 640।</para>
+</solution>
+</exercise>
+<exercise id="fs-id1215287">
+<problem id="fs-id2294699">
+<para id="fs-id1911016"><emphasis effect="bold">ক্যালরি</emphasis> ফ্রেড রাতের খাবারে গ্রিল করা মুরগির স্যান্ডউইচ, ছোট এক পরিবেশন ফ্রেঞ্চ ফ্রাই ও <m:math><m:mrow><m:mtext>12 আউন্সের</m:mtext></m:mrow></m:math> চকলেট শেক খেয়েছে। রেস্তোরাঁর পুষ্টিতথ্যের ছকে প্রতিটি খাবারের ক্যালরির পরিমাণ এ রকম:</para>
+<para id="fs-id1321648">গ্রিল করা মুরগির স্যান্ডউইচ— <m:math><m:mrow><m:mn>420</m:mn></m:mrow></m:math> ক্যালরি<newline />
+ছোট এক পরিবেশন ফ্রেঞ্চ ফ্রাই— <m:math><m:mrow><m:mn>230</m:mn></m:mrow></m:math> ক্যালরি<newline />
+<m:math><m:mrow><m:mtext>12 আউন্সের</m:mtext></m:mrow></m:math> চকলেট শেক— <m:math><m:mrow><m:mn>580</m:mn></m:mrow></m:math> ক্যালরি</para>
+<para id="fs-id2307453">ফ্রেডের রাতের খাবারে মোট কত ক্যালরি ছিল?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1567863">
+<problem id="fs-id1394827">
+<para id="fs-id2270985"><emphasis effect="bold">পরীক্ষার নম্বর</emphasis> একটি কোর্সে পাস করতে একজন শিক্ষার্থীর পাঁচটি পরীক্ষায় মোট প্রয়োজন <m:math><m:mrow><m:mn>400</m:mn></m:mrow></m:math> নম্বর। শিক্ষার্থীটি পেয়েছে <m:math><m:mrow><m:mn>82</m:mn><m:mo>,</m:mo><m:mn>91</m:mn><m:mo>,</m:mo><m:mn>75</m:mn><m:mo>,</m:mo><m:mn>88</m:mn><m:mo>,</m:mo><m:mtext>ও</m:mtext><m:mspace width="0.2em" /><m:mn>70</m:mn><m:mo>.</m:mo></m:mrow></m:math> শিক্ষার্থীটি কি কোর্সে পাস করেছে?</para></problem>
+<solution id="fs-id1171103481776">
+<para id="fs-id1171105500772">হ্যাঁ, সে 406 নম্বর পেয়েছে।</para>
+</solution>
+</exercise>
+<exercise id="fs-id1369108">
+<problem id="fs-id1530557">
+<para id="fs-id2684871"><emphasis effect="bold">লিফট</emphasis> একটি লিফট সর্বোচ্চ যে ওজন বহন করতে পারে, তা হলো <m:math><m:mrow><m:mn>1150</m:mn></m:mrow></m:math> পাউন্ড। লিফটে ছয়জন পুরুষ আছেন। তাঁদের ওজন যথাক্রমে <m:math><m:mrow><m:mn>210</m:mn><m:mo>,</m:mo><m:mn>145</m:mn><m:mo>,</m:mo><m:mn>183</m:mn><m:mo>,</m:mo><m:mn>230</m:mn><m:mo>,</m:mo><m:mn>159</m:mn><m:mo>,</m:mo><m:mtext>ও</m:mtext><m:mspace width="0.2em" /><m:mn>164</m:mn></m:mrow></m:math> পাউন্ড। মোট ওজন কি লিফটের সর্বোচ্চ ধারণক্ষমতার নিচে আছে?</para>
+</problem>
+<solution id="fs-idm275747712">
+<para id="fs-idm278477024">হ্যাঁ, মোট ওজন 1091 পাউন্ড।</para>
+</solution>
+</exercise>
+</section>
+<section id="fs-id1405751" class="writing">
+<title>লিখে বোঝাই</title>
+<exercise id="fs-id1408863">
+<problem id="fs-id2912531">
+<para id="fs-id2267341">এক অঙ্কের সংখ্যার যোগফলগুলো জানা আছে—এ বিষয়ে তুমি কতটা নিশ্চিত? পুরোপুরি নিশ্চিত না হলে দক্ষতা বাড়াতে কী করবে?</para>
+</problem>
+<solution id="fs-id1604802">
+<para id="fs-id1149222">উত্তর বিভিন্ন হতে পারে।</para>
+</solution>
+</exercise>
+<exercise id="fs-id1827602">
+<problem id="fs-id1465007">
+<para id="fs-id1379335">এক অঙ্কের সংখ্যার যোগফল শিখতে তুমি কীভাবে মডেল ব্যবহার করেছ?</para>
+</problem>
+</exercise></section><section id="eip-985" class="self-check"><title>নিজে যাচাই করি</title><para id="eip-464"><span class="token">ⓐ</span> কাজগুলো শেষ করে এই অংশের শেখার লক্ষ্যগুলো কতটা আয়ত্ত হয়েছে, তা নিচের যাচাই-ছক দিয়ে মূল্যায়ন করো।
+</para>
+
+<figure id="eip-id1168469634010" class="unnumbered"><label /><media id="eip-id1168469634014" alt="নিজের দক্ষতা যাচাইয়ের ছক। তিনটি বেছে নেওয়ার কলাম: আত্মবিশ্বাসের সঙ্গে পারি; কিছু সাহায্যে পারি; না—এখনো বুঝিনি। পাঁচটি কাজের সারি: যোগের প্রতীক ব্যবহার; মডেলে শূন্যসহ স্বাভাবিক সংখ্যার যোগ; মডেল ছাড়া যোগ; কথায় বলা বিষয় গাণিতিক প্রতীকে লেখা; বাস্তব সমস্যায় যোগ। প্রতিটি ঘর ফাঁকা।"><image mime-type="image/jpg" src="../../media/CNX_BMath_Figure_AppB_002_A.jpg" /></media></figure><para id="eip-id1168466075811"><span class="token">ⓑ</span> যাচাই-ছকটি দেখার পর সবগুলো শেখার লক্ষ্যে আত্মবিশ্বাসী হতে তুমি কী করবে?
+</para></section></section></content>
+<glossary>
+<definition id="fs-id1226736">
+<term>যোগফল</term>
+<meaning id="fs-id1245763">দুই বা ততোধিক সংখ্যা যোগ করে যে ফল পাওয়া যায়, তা হলো যোগফল।</meaning>
+</definition>
+</glossary>
+</document>
