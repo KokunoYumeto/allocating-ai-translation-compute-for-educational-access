@@ -1,0 +1,35 @@
+{
+  "unit": "A30-U018",
+  "result": "pass",
+  "browser": "isolated headless Microsoft Edge via Playwright",
+  "fallback_reason": "U018 in-app runtime retry failed before connection: kernel assets path not found; isolated local Edge used without authenticated profile.",
+  "figures": 4,
+  "widths": [
+    {
+      "width": 1280,
+      "scroll": 1280
+    },
+    {
+      "width": 390,
+      "scroll": 390
+    }
+  ],
+  "answer_link": "not_applicable; source answers are inline; supplemental reasoning navigation passed",
+  "html_sha256": "4b06768385deaa27cd60cda7316f786a55cbf0e14185a37a9c27acec71e69f85",
+  "screenshots": "build/vi-visual-A30-U018",
+  "visual_inspection": "Root personally viewed all four original JPEGs and six reader screenshots (desktop Example1/Example4/Q&A/movie graphic;390px interval table/fraction example). Removed one duplicate authored period after source x. and reran build/visual QA; personally inspected the final repaired Example4 screenshot. MathML, intervals/endpoints and Vietnamese glyphs readable; no document overflow.",
+  "inspected_screenshots": [
+    "table-390.png",
+    "exercises-390.png",
+    "desktop-Example_01_02_01.png",
+    "desktop-Example_01_02_04.png",
+    "desktop-fs-id1165134328219.png",
+    "desktop-Figure_01_02_001.png"
+  ],
+  "navigation_test": {
+    "target": "vi-try-reasoning",
+    "result": "pass",
+    "scope": "TOC link to supplemental explanations for all four TryIts; not a source-answer deep link."
+  },
+  "initial_attempt_note": "Initial helper target was a third-level Q&A heading absent from the depth2TOC; selected the existing supplemental-reasoning link. This was QA target configuration, not a missing source answer."
+}
