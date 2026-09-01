@@ -1,0 +1,9 @@
+# Stable checkout bytes for draft-bound review hashes and offline readers.
+* text=auto eol=lf
+assets/** -text
+# Preserve copied notices exactly, including their original whitespace/newlines.
+notices/** -text -whitespace
+# Pandoc's embedded highlighting CSS contains upstream trailing spaces.
+review/*.html -whitespace
+# Preserve source XML tail whitespace without claiming an authored-text defect.
+sources/*.cnxml whitespace=-blank-at-eof,-trailing-space

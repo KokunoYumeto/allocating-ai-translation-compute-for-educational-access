@@ -1,0 +1,18 @@
+.page { background: white; border: 1px solid #b9cccc; border-radius: .45rem; padding: 1.6rem; margin: 0 0 2rem; min-width: 0; }
+.item, .answer { border-left: .25rem solid #6b8187; padding: .3rem 1rem; margin: 1.2rem 0; min-width: 0; }
+.item { background: #f4f7fa; }
+.answer { background: #f3f8f2; border-color: #657f5d; }
+.item h3, .answer h3 { margin-top: .3rem; }
+.page table { table-layout: fixed; }
+.page th:first-child { width: 53%; }
+.page td { font-variant-numeric: tabular-nums; }
+#ta-large-place-guide th:first-child { width: 45%; }
+#ta-large-place-guide td { white-space: nowrap; }
+.page p, .page li { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .page { padding: .8rem; }
+  .item, .answer { padding: .2rem .6rem; }
+}
+@media (max-width: 360px) {
+  #ta-large-place-guide td { font-size: .85em; }
+}

@@ -1,0 +1,21 @@
+# Normalize authored text, but preserve exact bytes in witnesses and products.
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.tsv text eol=lf
+scripts/*.py text eol=lf
+translation/* text eol=lf
+qa/*.json text eol=lf
+# Keep these last: the generic filename rules above also match subdirectories.
+provenance/** -text
+assets/** -text
+reader/** -text
+reader-u002/** -text
+reader-large-numbers/** -text
+reader-large-recovery/** -text
+reader-m81243-review/** -text
+reader-m81243-learning/** -text
+output/** -text
+# QA receipts are generated evidence and may have recorded byte hashes.
+qa/*.json -text
