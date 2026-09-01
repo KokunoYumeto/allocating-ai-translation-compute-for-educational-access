@@ -1,0 +1,145 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81288",
+  "section": "fs-id1525901",
+  "resolved_title": "Section Exercises",
+  "scope": "Entire assigned subtree and translation workflow: all 62 exercises, all 31 supplied solutions, applications, writing prompts and self-check. The 31 questions without source solutions retain that absence.",
+  "source_sha256": "4eb4a0c85c70a9e1a10fa4a5d99dabfb9ccc14b70de18d7cbefb820764c0ae90",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR01", "TR03", "TR04"],
+      "read": [
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt"
+      ],
+      "decision": "Read the actual fraction-definition OCR and p.50 image, and returned to the relevant p.51 simplest-form/equal-denominator text against the page image inspected in the adjoining section. TR01 anchors fractions as parts of a specified whole; this supports explicitly using same-sized wholes and equal parts in model instructions. TR03 supports লঘিষ্ঠ আকার, while TR04 supports keeping equal-sized parts when denominators agree. These are language/modeling witnesses, not replacements for the assigned source arithmetic."
+    },
+    {
+      "stage": "during model, application and unit drafting",
+      "examples": ["TR01", "TR03", "WB11"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_04_202_img.jpg",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_04_204_img.jpg",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_04_203_img.jpg",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_AppB_023.jpg"
+      ],
+      "decision": "Returned to the definition of a whole and the simplest-form passage while drafting. Inspected all four actual source images. The first model answer shows seven tenths, the second six eighths, and the subtraction sequence shows five sixths, two sixths and three sixths, not the eighths claimed in its English alt. Kept pounds and cups as source units and did not invent inch units for the drill-bit sizes. The pizza answer requires same-sized wholes and a one-whole capacity model; these assumptions are explicitly labelled editorially rather than asserted as real packing geometry."
+    },
+    {
+      "stage": "pre-admission terminology and answer review",
+      "examples": ["TR03", "WB11"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt"
+      ],
+      "decision": "Reread the actual simplest-form and like/unlike-term passages after drafting. WB11's 8x/6x and xy/−3xy pairs support checking that like numerator terms combine by their coefficients, while a variable term and a constant stay separate. Its mathematics was checked against the p.189 image during the preceding subtraction unit; OCR substitutions of x and numerals are not copied. Normalized both practice headings to একই হরযুক্ত as agreed during module integration. Verified every supplied answer against actual source MathML and retained every original question/solution ID relationship."
+    }
+  ],
+  "editorial_decisions": [
+    {
+      "source_ids": ["eip-582", "eip-755"],
+      "decision": "Model instructions explicitly use equal parts of same-sized wholes. This specifies the common unit without changing the fractions or demanding a single permissible drawing."
+    },
+    {
+      "source_ids": ["eip-981", "eip-229", "eip-144"],
+      "decision": "State that each fraction's denominator is nonzero. The addition problems therefore exclude p=0 and q=0 where those variables are denominators; the subtraction problems exclude d=0, c=0, u=0 and v=0 in the corresponding denominator problems. Variables occurring only in numerators remain allowed to be zero, including d in exercise fs-id2270033. No blanket all-variables-nonzero rule is introduced."
+    },
+    {
+      "source_ids": ["fs-id2204590"],
+      "decision": "Briefly explain drill bits as the drilling tool's hole-making shafts. Preserve all twelve direct children, ten displayed fraction values, three blank positions, punctuation sequence and order. No measurement unit absent from the source is invented, and the absent source solution remains absent."
+    },
+    {
+      "source_ids": ["fs-id2817341", "fs-id2749208"],
+      "decision": "Preserve all three pizza fractions and the one-box question. Add a visibly labelled editorial assumption that all pizzas are the same size and the box capacity is one whole pizza's amount. This makes the supplied 13/12>1 argument a stated mathematical model, not an unrestricted physical packing claim. Translate the source number-of-pieces wording as total pizza amount because 13/12 measures wholes, not a count of individual slices. Keep the supplied No answer and clarify that explanations, not the numerical conclusion, may vary."
+    },
+    {
+      "source_ids": ["fs-id2306335", "fs-id2657895", "fs-id2898535"],
+      "decision": "Retain the names and source quantities. Trail mix is described as a nut-raisin mixture; pounds remain pounds. The flour question and answer explicitly use cups. No localization of numerical data or measurement systems."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": ["fs-id2585104"],
+      "source_media": "CNX_BMath_Figure_04_04_203_img.jpg",
+      "source_alt": "A circle is divided into eight sections, three of which are shaded.",
+      "evidence": "Actual original pixels contain three circles with six equal sectors each; shaded sectors are five, two and three, from left to right. Exercise fs-id1925533 is 5/6−2/6, with supplied answer 1/2; the image is mathematically consistent with it.",
+      "bengali_correction": "পাশাপাশি তিনটি বৃত্তের প্রতিটিতে ছয়টি সমান ভাগ; বাঁ থেকে যথাক্রমে পাঁচটি, দুটি ও তিনটি ভাগ রং করা।",
+      "policy": "Only the Bengali alternative description corrects the English-alt mismatch. Original image pixels, question, answer and source MathML remain unchanged. The correct image is not classified as an answer-image error.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {"media_id": "fs-id1130008", "file": "CNX_BMath_Figure_04_04_202_img.jpg", "observed": "One circle, ten equal sectors, seven shaded; source 7/10 answer agrees."},
+    {"media_id": "fs-id1239729", "file": "CNX_BMath_Figure_04_04_204_img.jpg", "observed": "One circle, eight equal sectors, six shaded; 6/8 is equivalent to supplied 3/4."},
+    {"media_id": "fs-id2585104", "file": "CNX_BMath_Figure_04_04_203_img.jpg", "observed": "Three equal circles, six sectors each, with 5/6, 2/6 and 3/6 shaded; supplied 1/2 answer agrees."},
+    {"media_id": "eip-id1164271977510", "file": "CNX_BMath_Figure_AppB_023.jpg", "observed": "Four objectives: model addition, add equal-denominator fractions, model subtraction, subtract equal-denominator fractions. Three choices: confidently, with help, not understood. All are included in the Bengali alt."}
+  ],
+  "answer_checks": {
+    "numeric_method": "Exact Fraction evaluation of actual source MathML for all eighteen numerical supplied solutions, preserving signed grouping, parentheses, multiplication and division. All agree.",
+    "numeric_results": [
+      ["fs-id1340806", "7/10"], ["fs-id4286400", "3/4"],
+      ["fs-id1519645", "7/9"], ["fs-id2654762", "16/15"],
+      ["fs-id2399354", "-3/4"], ["fs-id2135091", "-7/8"],
+      ["fs-id1032546", "8/19"], ["fs-id1967390", "-13/12"],
+      ["fs-id1925533", "1/2"], ["fs-id1601863", "1/5"],
+      ["fs-id1733005", "5/13"], ["fs-id2481472", "1/6"],
+      ["fs-id1772038", "-8/3"], ["fs-id1693032", "2/7"],
+      ["fs-id1919318", "-3/11"], ["fs-id1932985", "-1/8"],
+      ["fs-id2223547", "-2/9"], ["fs-id2211162", "49/27"]
+    ],
+    "symbolic_method": "Inspected ordered numerator operations and unchanged denominators, including combining coefficients only for like terms. All eleven source expression/answer pairs were also evaluated with exact rational values −5, −2/3, 1, 5/2 and 4. Numerator-only variables were additionally tested at zero; denominator variables were not. These substitutions support, rather than replace, the source-bound algebraic inspection.",
+    "symbolic_results": [
+      ["fs-id2637940", "y/3+2/3=(y+2)/3"],
+      ["fs-id2707965", "8/q+6/q=14/q; q nonzero"],
+      ["fs-id1392688", "5a/7+4a/7=9a/7"],
+      ["fs-id1461707", "(-11x)/5+7x/5=(-4x)/5"],
+      ["fs-id1736331", "x/19−8/19=(x−8)/19"],
+      ["fs-id1884114", "11z/13−8/13=(11z−8)/13"],
+      ["fs-id1899473", "−7/c−7/c=−14/c; c nonzero"],
+      ["fs-id2298787", "−29/v−26/v=−55/v; v nonzero"],
+      ["fs-id2270033", "12d/11−9d/11=3d/11; d may be zero here"],
+      ["fs-id2346143", "(-7s)/3−7s/3=−14s/3"],
+      ["fs-id1891080", "6/11−s/11=(6−s)/11"]
+    ],
+    "applications": [
+      {"exercise_id": "fs-id2277965", "check": "Actual source amounts 5/8 cup needed and 3/8 cup available: 5/8−3/8=1/4 cup, matching supplied solution."},
+      {"exercise_id": "fs-id3406725", "check": "Actual source amounts 5/12+4/12+4/12=13/12>1. Supplied No is valid under the explicitly labelled one-whole-capacity model."}
+    ],
+    "coverage": "18 numerical + 11 symbolic + 2 application answers = all 31 supplied solution blocks. All 31 source-absent answers remain absent; no solution is invented for the drill-bit or trail-mix problem."
+  },
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "ccfb7f06250a8e42a9ff7341b34e2795d9e6d6bc470bbbe5e4d0bdc9a080badf",
+    "method": "Parent build.translated() plus in-memory render_cnxml(study_labels=True), exact source-to-target exercise/solution-ID mapping, unique HTML IDs, source-bound numerical/algebraic answer checks, and direct inspection of all four original images. No generated-output, media or shared-script writes.",
+    "nodes": 1298,
+    "ids": 271,
+    "mathml": 107,
+    "math_text_replacements": 0,
+    "paragraphs": 106,
+    "node_slot_mappings": 7,
+    "exercises": 62,
+    "supplied_solutions": 31,
+    "source_absent_solutions": 31,
+    "images": 4,
+    "tables": 0,
+    "links": 0,
+    "html_fragment_characters": 39836,
+    "html_unique_ids": 271,
+    "english_prose_gate": "passed",
+    "mathematical_structure_and_tokens": "exactly preserved",
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "language_gaps": [
+    "The inspected canon supports fraction wholes, equal-denominator language, simplest form and like terms. It is not evidence for the exact imported food/tool contexts, negative-expression sequences or pizza-box modeling assumption.",
+    "No additional local source or independent human review was acquired or claimed. The local canon remains an editorial language reference, not curriculum certification."
+  ],
+  "remaining_workflow": "Parent full-page integration and actual desktop/narrow visual checks remain required. This exercise block is complete as a source-faithful translation draft; the entire assigned corpus remains ongoing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

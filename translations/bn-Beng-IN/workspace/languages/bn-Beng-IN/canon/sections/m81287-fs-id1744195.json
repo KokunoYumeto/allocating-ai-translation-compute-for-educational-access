@@ -1,0 +1,147 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81287",
+  "section": "fs-id1744195",
+  "resolved_title": "Translate Phrases to Expressions with Fractions",
+  "scope": "Complete assigned source subtree and learning workflow, including both examples, all six exercises and their supplied solutions; editorial record only.",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR05",
+        "WB04",
+        "WB06"
+      ],
+      "additional_page_locator": "WB-Class7-Learning-Bridge p.191 bottom algebraic-division example: a whole polynomial numerator divided by 2x.",
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.png",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.png",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.png"
+      ],
+      "action": "Read OCR and directly inspected the full existing page images. TR05 gives verbal statements paired with 5y, y+5 and P/7, supporting the distinction between a verbal statement, an expression and an equation. WB04's explanatory x+4/4x paragraph anchors চল, যোগফল and গুণফল; its preceding inconsistent 4k list item is not used. WB06 and the actual bottom p.191 division example support treating a whole grouped expression as the quantity being operated on. Kept source mathematical authority separate from regional language witnesses."
+    },
+    {
+      "stage": "during dividend/divisor and grouped-expression drafting",
+      "examples": [
+        "TR05",
+        "WB04",
+        "WB06"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.txt"
+      ],
+      "action": "Returned to the phrase-expression table and Bengali descriptions of sums/products while drafting source-order text slots. Retained the source sequence of operands and used Bengali ভাজ্য/ভাজক role labels, introduced with explicit definitions, to prevent reversal when the source embeds final punctuation inside MathML. Wrote m থেকে বিয়োগ করো n, then divide the entire result by p; likewise a−b over cd and p+q over r. The three English mtext labels The quotient/of/and are translated functionally as ভাগফল:/ভাজ্য/ভাজক, not as a word-for-word general rule about English of. There is no of-means-multiplication lesson inside this exact subtree, so none was added."
+    },
+    {
+      "stage": "pre-admission grouping, language and reference review",
+      "examples": [
+        "TR05",
+        "WB04"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt"
+      ],
+      "action": "Reread the exact relevant OCR passages after drafting against their already inspected page images. Confirmed বীজগাণিতিক রাশি rather than সমীকরণ, preserved first-minus-second order, and confirmed each entire sum/difference is the numerator. All six source answers match the intended ordered numerator/divisor pairs. Builder translated() validates exact mathematical XML after reversing only the three documented linguistic mtext substitutions. The rendered fragment has unique IDs and no untranslated non-MathML English prose, aside from the deliberately visible module locator m81256. Parent performs full-page layout and offline integration; no images exist in this subsection."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_cross_reference_mismatch",
+      "paragraph_id": "fs-id2352799",
+      "source_link_document": "m81245",
+      "source_link_title": "Subtract Whole Numbers",
+      "source_claim": "This lesson previously defined quotient as the result of division.",
+      "evidence": "The pinned m81245 source is Subtract Whole Numbers and contains no quotient definition. In pinned m81256, title Divide Whole Numbers, paragraph fs-id2221649 names the quotient, dividend and divisor; glossary meaning fs-id2150366 defines quotient as the result of dividing two numbers.",
+      "correct_module": "m81256",
+      "correct_title": "Divide Whole Numbers",
+      "definition_ids": [
+        "fs-id2221649",
+        "fs-id2150366"
+      ],
+      "action": "Preserve original link document attribute and translate its original title. Add a visibly labelled Bengali editorial warning in the adjacent paragraph tail, naming the correct lesson and module m81256. No link override or source-structure change."
+    }
+  ],
+  "language_gaps": [
+    "The cited local pages directly witness verbal-expression phrasing, fraction reading and sum/product language, but not the exact English quotient-of-and construction. The dividend/divisor Bengali cue adaptation is explicitly editorial and awaits independent Bengali review.",
+    "ভাজ্য and ভাজক are explained in the introductory paragraph; the corpus pages read for this unit are not claimed as direct lexical attestation for both labels.",
+    "বাংলা postpositions cannot always follow final source operands because periods/commas are embedded in preserved MathML. Functional Bengali framing was chosen instead of moving nodes, changing mathematical punctuation or reversing operands."
+  ],
+  "source_observations": [
+    "Exact source section fs-id1744195 in m81287 has 205 elements, 41 IDs, 35 MathML expressions, two examples, six exercises, 14 paragraphs and no images or tables.",
+    "Original cross-reference document m81245 is retained. Adjacent visible text explicitly identifies it as mistaken and names the actual correct lesson m81256. The mistake was verified by checking pinned source titles and exact definition IDs, not inferred from a title alone.",
+    "Source math-label replacement is an explicit linguistic exception: The quotient→ভাগফল:, of→ভাজ্য, and→ভাজক. All mathematical numbers, identifiers, operators, element nesting and order remain exact after reversing these labels.",
+    "A nonzero divisor condition is explicit and applies to variable divisors as well: p≠0; c and d nonzero for cd; r≠0. No source solution is changed or invented."
+  ],
+  "answer_checks": [
+    {
+      "exercise_id": "fs-id1724754",
+      "numerator": "3x",
+      "divisor": "8",
+      "result": "3x/8",
+      "check": "ordered numerator/divisor matched exactly"
+    },
+    {
+      "exercise_id": "fs-id1596416",
+      "numerator": "9s",
+      "divisor": "14",
+      "result": "9s/14",
+      "check": "ordered numerator/divisor matched exactly"
+    },
+    {
+      "exercise_id": "fs-id1580668",
+      "numerator": "5y",
+      "divisor": "6",
+      "result": "5y/6",
+      "check": "ordered numerator/divisor matched exactly"
+    },
+    {
+      "exercise_id": "fs-id2716077",
+      "numerator": "m−n",
+      "divisor": "p",
+      "result": "(m−n)/p",
+      "condition": "p nonzero",
+      "check": "entire first-minus-second difference is numerator"
+    },
+    {
+      "exercise_id": "fs-id1632996",
+      "numerator": "a−b",
+      "divisor": "cd",
+      "result": "(a−b)/(cd)",
+      "condition": "c and d nonzero",
+      "check": "entire first-minus-second difference divided by product cd"
+    },
+    {
+      "exercise_id": "fs-id1620547",
+      "numerator": "p+q",
+      "divisor": "r",
+      "result": "(p+q)/r",
+      "condition": "r nonzero",
+      "check": "entire sum is numerator"
+    }
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "method": "Parent builder translated() and in-memory render; exact ordered numerator/divisor source checks; residual-language and unique-ID scans. No output, media or shared-builder writes.",
+    "nodes": 205,
+    "ids": 41,
+    "mathml": 35,
+    "localized_linguistic_mtext": 3,
+    "paragraphs": 14,
+    "node_slot_mappings": 8,
+    "examples": 2,
+    "exercises": 6,
+    "images": 0,
+    "tables": 0,
+    "html_fragment_characters": 7199,
+    "links": 1,
+    "preserved_source_link_attributes": true,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "independent_West_Bengal_teacher_and_language_review": "pending"
+}

@@ -1,0 +1,106 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81288",
+  "section": "fs-id2471354",
+  "resolved_title": "Subtract Fractions with a Common Denominator",
+  "scope": "Complete assigned source subtree and translation workflow: the definition/rule, all four worked examples, eight practice questions with their supplied solutions, four solution tables and summaries, and all three original online-resource links.",
+  "source_sha256": "4eb4a0c85c70a9e1a10fa4a5d99dabfb9ccc14b70de18d7cbefb820764c0ae90",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["WB11", "TR03", "TR04"],
+      "read": [
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "languages/bn-Beng-IN/terminology.tsv",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png"
+      ],
+      "decision": "Read the actual existing OCR and both page images. WB11 explicitly calls 8x and 6x, and xy and −3xy, সদৃশ পদ, while 6x and 8 are অসদৃশ পদ. This supports explaining the unlike numerator terms y and −1 without combining them. TR04's equal-denominator examples support একই হর and unchanged-sized fractional parts; TR03's correct 12/16 to 3/4 example supports লঘিষ্ঠ আকার and division of numerator and denominator by the same common factor. The inconsistent 4k item on p.189 and mixed-conversion denominator on p.51 are excluded."
+    },
+    {
+      "stage": "during rule and explanation drafting",
+      "examples": ["WB11", "TR03", "TR04"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png"
+      ],
+      "decision": "Returned to the specific like-term examples and the same-denominator/simplest-form page during drafting. Kept the ordered instruction প্রথম লব থেকে দ্বিতীয় লব বিয়োগ করো and explicitly retained the common denominator. For the first table, removing common factors is explained as dividing numerator and denominator by the same common factor rather than deleting terms. The y−1 explanation identifies unlike terms and separately checks that there is no removable common factor; unlike terms alone would not in general prove that a fraction is fully simplified."
+    },
+    {
+      "stage": "pre-admission terminology, signs and mathematical review",
+      "examples": ["WB11", "TR03"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt"
+      ],
+      "decision": "Reread the exact relevant OCR passages against the previously inspected images after the draft passed source-structure checks. Confirmed সদৃশ পদ, একই হর, লঘিষ্ঠ আকার and গুণনীয়ক. Kept every source mathematical sign and punctuation mark, including final periods inside MathML. Checked all four worked-example step chains and all eight practice answers against their actual source expressions; negative-sign relocation and left-to-right addition/subtraction remain equivalent."
+    }
+  ],
+  "editorial_decisions": [
+    {
+      "source_ids": ["fs-id1834468", "fs-id1943615", "fs-id2202732", "fs-id1347564"],
+      "decision": "Preserve the source rule's c≠0 exactly. State x nonzero in the two x-denominator exercise prompts and a nonzero in the a-denominator prompt. No nonzero restriction is added to x or y when it is only in a numerator; zero-numerator-variable cases were checked."
+    },
+    {
+      "source_ids": ["fs-id1680719"],
+      "decision": "Clarify why (y−1)/6 stays in this form: y and −1 are unlike terms, and there is no common factor that could be removed to simplify the fraction further. This is a faithful explanatory clarification, not a changed source formula or a claim that unlike terms alone guarantee simplest form."
+    },
+    {
+      "source_ids": ["eip-id1168469826203", "eip-id1168468417178"],
+      "decision": "Explain simplification by common-factor division. In the mixed addition/subtraction example, preserve both operations when collecting numerators and calculate left to right. No denominator subtraction is implied."
+    },
+    {
+      "source_ids": ["fs-id1515895", "fs-id1265324"],
+      "decision": "Translate all three link labels through the nodes mechanism and preserve every original URL. Pattern blocks is rendered descriptively as জ্যামিতিক আকারের টুকরো. These remain explicitly online resources, not downloaded/local Bengali lessons; target availability, destination language and accessibility were not verified in this task."
+    }
+  ],
+  "source_errata": [],
+  "language_gaps": [
+    "The inspected references directly support equal-denominator wording, simplest form, common factors and like/unlike terms. They are not claimed to contain this exact sequence of negative rational-expression examples.",
+    "The Bengali wording of the pattern-block resource label is descriptive editorial wording, not an attested local technical name. No new exemplar or completed destination review is claimed."
+  ],
+  "answer_checks": [
+    {"exercise_id": "fs-id2637970", "source_problem": "23/24−14/24", "supplied_result": "3/8", "check": "All four source table expressions have the same exact Fraction value."},
+    {"exercise_id": "fs-id2751774", "source_problem": "19/28−7/28", "supplied_result": "3/7", "check": "Exact Fraction equality."},
+    {"exercise_id": "fs-id1301208", "source_problem": "27/32−11/32", "supplied_result": "1/2", "check": "Exact Fraction equality."},
+    {"exercise_id": "fs-id2716697", "source_problem": "y/6−1/6", "supplied_result": "(y−1)/6", "check": "Whole ordered numerator difference retained; both table steps verified, including y=0."},
+    {"exercise_id": "fs-id2620114", "source_problem": "x/7−2/7", "supplied_result": "(x−2)/7", "check": "Whole ordered numerator difference retained; x=0 remains valid."},
+    {"exercise_id": "fs-id1951713", "source_problem": "y/14−13/14", "supplied_result": "(y−13)/14", "check": "Whole ordered numerator difference retained; y=0 remains valid."},
+    {"exercise_id": "fs-id2759998", "source_problem": "−10/x−4/x", "supplied_result": "−14/x", "condition": "x nonzero", "check": "All four table steps agree. The separate helper equivalence −(10/x)=(−10)/x is also checked."},
+    {"exercise_id": "fs-id1549368", "source_problem": "−9/x−7/x", "supplied_result": "−16/x", "condition": "x nonzero", "check": "Subtracting positive seven from negative nine gives negative sixteen, not negative two."},
+    {"exercise_id": "fs-id1568529", "source_problem": "−17/a−5/a", "supplied_result": "−22/a", "condition": "a nonzero", "check": "Ordered signed-numerator calculation agrees."},
+    {"exercise_id": "fs-id1967562", "source_problem": "3/8+(−5/8)−1/8", "supplied_result": "−3/8", "check": "All five source table expressions agree; 3+(−5)−1 is evaluated left to right."},
+    {"exercise_id": "fs-id2470970", "source_problem": "2/5+(−4/5)−3/5", "supplied_result": "−1", "check": "Exact Fraction equality; original raw numeric answer text is preserved."},
+    {"exercise_id": "fs-id1394714", "source_problem": "5/9+(−4/9)−7/9", "supplied_result": "−2/3", "check": "Exact Fraction equality."}
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "0e8a72296483e1124edd97268aaca3794ddf43028987c98709eb8ff629d567e9",
+    "method": "Parent build.translated() and in-memory render_cnxml(study_labels=True); exact original MathML/ID/hierarchy and attribute checks; unique HTML IDs. Actual source MathML was evaluated with exact Fractions for all twelve exercises and every source solution-table step. Variable expressions were additionally checked at −5, −2/3, 1, 5/2 and 4; these substitutions support, but do not replace, the inspected symbolic numerator/denominator identities. Three numerator-only zero cases and the separate negative-sign equivalence were checked explicitly.",
+    "nodes": 547,
+    "ids": 84,
+    "mathml": 40,
+    "math_text_replacements": 0,
+    "paragraphs": 26,
+    "examples": 4,
+    "exercises": 12,
+    "supplied_solutions": 12,
+    "source_absent_solutions": 0,
+    "tables": 4,
+    "translated_table_summaries": 4,
+    "node_slot_mappings": 14,
+    "images": 0,
+    "links": 3,
+    "source_urls_preserved": true,
+    "html_fragment_characters": 15354,
+    "html_unique_ids": 84,
+    "english_prose_gate": "passed",
+    "mathematical_structure_and_tokens": "exactly preserved",
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "integration_review": "Main had normalized headings to একই হরযুক্ত. Later independent model integration review found that table summary eip-id1168469856735 incorrectly labelled −10/x and 4/x as negative and positive for every nonzero x. Corrected only the summary to describe variable-containing fractions and the written minus sign, without assuming x>0. All source mathematics and original x≠0 scope remain. Original draft verification/hash above is historical; current build receipts bind the revised overlay.",
+  "remaining_workflow": "Parent full-page integration and actual desktop/narrow visual inspection remain required. No image exists in this source subtree. This section is complete as a translation draft; the entire assigned corpus remains ongoing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

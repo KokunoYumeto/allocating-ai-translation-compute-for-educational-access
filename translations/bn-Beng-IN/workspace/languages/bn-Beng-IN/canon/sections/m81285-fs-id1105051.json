@@ -1,0 +1,62 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81285",
+  "section": "fs-id1105051",
+  "scope": "Complete source-faithful subsection: Model Equivalent Fractions. This is one increment in the continuing entire assignment, not an assignment-completion or curriculum-certification claim.",
+  "consultations": [
+    {
+      "stage": "pre-draft",
+      "existing_exemplars": ["TR02", "WB02"],
+      "ocr_read": ["SCERT-Tripura-VI/p051.txt", "WB-Class7-Learning-Bridge/p181.txt"],
+      "images_inspected": ["SCERT-Tripura-VI/p051.png", "WB-Class7-Learning-Bridge/p181.png"],
+      "decision": "Read the canon workflow and terminology ledger, then the actual equivalent-fraction and numerator/denominator witnesses. Checked both page images because the OCR corrupts fractions. TR02 demonstrates 1/2,2/4,3/6,36/72 and calls them তুল্য ভগ্নাংশ. Retain project term সমতুল ভগ্নাংশ and record তুল্য as a synonym, not a different concept. WB02 confirms the numerator/denominator operation wording and unchanged value. Do not copy the unrelated erroneous mixed-number line at Tripura p51 into this lesson."
+    },
+    {
+      "stage": "source-diagram inspection during drafting",
+      "source_images_inspected": ["CNX_BMath_Figure_04_01_037_img.jpg", "CNX_BMath_Figure_04_01_038_img.jpg", "CNX_BMath_Figure_04_01_070_img.jpg", "CNX_BMath_Figure_04_01_039_img.jpg", "CNX_BMath_Figure_04_01_040_img.jpg"],
+      "decision": "All five existing diagrams were visually inspected without copying or modifying pixels. They show equal-length whole rows and shaded matching halves. Include the shading and equal-length relationship omitted from the English alt. Use সমপরিমাণ for the emphasized ordinary adjective describing Andy and Bobby's portions, while preserving সমতুল ভগ্নাংশ for the mathematical definition. Retain original names as Bengali transliterations অ্যান্ডি and ববি."
+    },
+    {
+      "stage": "draft revision and pre-handoff validation",
+      "existing_exemplars": ["TR02", "WB02"],
+      "ocr_reread": ["SCERT-Tripura-VI/p051.txt: equivalent-fraction passage", "WB-Class7-Learning-Bridge/p181.txt: question 4 solution"],
+      "decision": "Returned to the actual OCR witness passages during revision, using the already inspected images for mathematical values. Retained সমতুল/তুল্য synonym distinction and equal-value wording. Recast the image descriptions to say the colored parts in the two rows have equal length, avoiding an ambiguous combined total. Read all 19 assembled prose nodes, including the three XPath-translated list items, with original MathML punctuation. Preserved six circled labels and literal answer texts 2 and 3. Eight rational assertions verify all half-equivalence examples and both quarter practice answers. The empty source figure link is preserved for the parent's renderer to label and resolve."
+    }
+  ],
+  "terminology_decisions": [
+    {"english": "equivalent fractions", "bengali": "সমতুল ভগ্নাংশ", "witnessed_synonym": "তুল্য ভগ্নাংশ", "evidence": "TR02 on Tripura p51 and project T004; same mathematical value"},
+    {"english": "equivalent parts of the pizza", "bengali": "পিৎজার সমপরিমাণ অংশ", "evidence": "Editorial ordinary-language rendering constrained by source question 1/2 = 2/4; not a new technical term"},
+    {"english": "fraction tile", "bengali": "ভগ্নাংশের পাত", "evidence": "Project T021; original equal-length tile diagrams. Local canon has no inspected tile-specific lexical witness, so this remains provisional."},
+    {"english": "one-half", "bengali": "অর্ধেক / এক-দ্বিতীয়াংশ", "evidence": "TR02 equivalent-fraction values; explicit denominator readings distinguish one part from the number of parts"}
+  ],
+  "source_alt_observations": [
+    {"ids": ["fs-id1563540", "fs-id1311785", "fs-id2144939", "fs-id2619219", "fs-id1881979"], "source_issue": "English alt describes the subdivided rectangles but omits their colored matching portions.", "observed_evidence": "All five images shade the left half of the halves-row and, respectively, 2 fourths, 3 sixths, 4 eighths, 5 tenths or 6 twelfths below. Whole rows have equal length and a visible 1 label.", "translation_action": "Add this visible matching-amount information to Bengali alt; preserve original source media and MathML."}
+  ],
+  "coverage_limits": [
+    "TR02 is supplementary Indian Bengali evidence from Tripura, not West Bengal curriculum certification.",
+    "No local target-language source for the exact fraction-tile manipulative register has been inspected; ভগ্নাংশের পাত and its learner wording remain editorial and pending independent review.",
+    "The source figure cross-reference and named activity remain references; this overlay does not claim separate activity-sheet translation or offline integration."
+  ],
+  "validation": {
+    "status": "pass",
+    "method": "Read-only in-memory Python stdlib overlay application, structural/language assertions, and rational answer checks; command exited 0.",
+    "paragraphs": 19,
+    "xpath_nodes": 4,
+    "alt_descriptions": 5,
+    "cnxml_nodes": 292,
+    "preserved_ids": 42,
+    "mathml_expressions_unchanged": 32,
+    "source_examples": 1,
+    "worked_example_parts": 3,
+    "source_exercises": 3,
+    "practice_questions": 2,
+    "literal_answers_unchanged": ["2", "3"],
+    "circled_labels_unchanged": 6,
+    "rational_checks": 8,
+    "source_sha256": "7a39fccee8a29712929f04a6ac02f4e2646e46a6920f6e8b06f56de40b7ffad4",
+    "overlay_sha256": "28c4a54be6df490062d5413f051feab62691fb67b20addf4114452f27d319473",
+    "checks": ["Exact child-slot lengths", "Unique nodes XPath resolution", "Every CNXML tag/ID/non-alt attribute unchanged", "Original hierarchy and child order", "Exact MathML including punctuation", "Complete replacement of all five alt descriptions", "No untranslated English prose", "Source literal answer preservation", "Six source circled-label strings unchanged", "All half/quarter identities correct", "All five source diagrams visually inspected"],
+    "not_proven": ["Rendered output usability", "Independent Bengali correctness", "Assistive-technology behavior"]
+  },
+  "pending": ["Independent West Bengal teacher/language review", "Learner comprehension validation", "Assistive-technology review", "Parent integration and rendered output QA"]
+}

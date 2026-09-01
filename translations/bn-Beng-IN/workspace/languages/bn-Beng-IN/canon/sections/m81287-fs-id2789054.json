@@ -1,0 +1,136 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81287",
+  "section": "fs-id2789054",
+  "resolved_title": "Section Exercises",
+  "scope": "Entire assigned source subtree and its translation workflow: all 78 exercises, all 39 supplied solutions, everyday applications, writing prompts and self-check. The other 39 exercises have no source solution and remain without one.",
+  "source_sha256": "4a029d82953fcba05aeec289445bc21ffc3364ce68b866c56404de3785d4d076",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR02", "TR03", "TR05"],
+      "read": [
+        "languages/bn-Beng-IN/canon/README.md",
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "languages/bn-Beng-IN/terminology.tsv",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.png"
+      ],
+      "decision": "Read the actual existing OCR and page images. TR03's 12/16=(12/4)/(16/4)=3/4 supports লঘিষ্ঠ আকার in multiplication/division instructions; TR02 supplies তুল্য as a regional synonym while the ledger's consistent learner term remains সমতুল. TR05's first three table rows pair Bengali phrases with 5y, y+5 and P/7, supporting বীজগাণিতিক রাশি rather than সমীকরণ. Use ledger মিশ্র ভগ্নাংশ, not a new mixed-number synonym. Do not use p.51's incorrect intermediate mixed-number denominator or p.78's inconsistent lower equation table."
+    },
+    {
+      "stage": "during prose and grouped-divisor drafting",
+      "examples": ["TR03", "TR05"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt",
+        "languages/bn-Beng-IN/translations/m81287-fs-id1744195.bn-Beng-IN.json",
+        "languages/bn-Beng-IN/translations/m81287-fs-id2444943.bn-Beng-IN.json"
+      ],
+      "decision": "Returned to the relevant simplest-form and phrase-expression passages while drafting. Kept sibling terminology and explicit ভাজ্য/ভাজক roles. In fs-id1365952, the whole s+10 is the divisor of r; in fs-id1808162, the divisor is 3 minus B, not B minus 3. Localized the instruction English phrase to কথায় লেখা প্রতিটি হিসাব because the learner sees Bengali phrases. Preserved source MathML question marks and final periods by placing Bengali framing before the expression instead of moving punctuation or mathematical nodes."
+    },
+    {
+      "stage": "pre-admission language, units and answer review",
+      "examples": ["WB01", "WB02", "TR03", "TR05"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_AppB_022.jpg"
+      ],
+      "decision": "Rechecked the actual p.181 image: WB01's 15/12=5/4 and WB02's 9/7=72/56 reinforce simplification/equivalence wording. Its first worked nested-fraction calculation contains inconsistent factors and is excluded as arithmetic authority; it does not establish a local name for complex fractions. Reread the relevant Tripura OCR, resolving notation against the already inspected images. Reviewed every translated slot against source order. Inspected the original self-check pixels and described all four objectives and all three response columns in Bengali. Cups and pounds remain source units; the fudge question explicitly asks how many cups of chocolate chips, matching the stated rate and supplied answer units."
+    }
+  ],
+  "language_gaps": [
+    "The small local canon does not directly attest the exact terms জটিল ভগ্নাংশ and গুণাত্মক বিপরীত. These are provisional editorial terms consistent with the module and ledger; no government certification is claimed.",
+    "The cited local passages support Bengali verbal-expression instructions, but not this exact English quotient-of-and construction. The explicit ভাজ্য/ভাজক adaptation is editorial and awaits independent language review.",
+    "County-fair fudge and US measuring-cup sets are source contexts, not local-curriculum exemplars. Bengali explanation clarifies the food and units without substituting a different story or measurement system."
+  ],
+  "editorial_decisions": [
+    {
+      "source_ids": ["eip-386", "eip-833"],
+      "decision": "Explicitly state the original nonzero-divisor/denominator domain. For phrase problems: q and b are nonzero, s+10 is nonzero, and 3−B is nonzero. For complex-fraction problems: n, s and y are nonzero where they occur as divisors; m, r and x may be zero when only numerators. No blanket nonzero condition is applied to all variables, and no source mathematical token is changed."
+    },
+    {
+      "source_ids": ["fs-id3199446", "fs-id2296177", "fs-id2425810", "fs-id1933125", "fs-id1583481"],
+      "decision": "Question marks/final periods remain embedded in original MathML. Bengali equivalent-fraction prompts introduce the reference fraction before its question mark. Randy's incorrect proposed product is explicitly attributed to Randy and left unchanged for the learner to diagnose; its absent source answer remains absent."
+    },
+    {
+      "source_ids": ["fs-id1205750", "fs-id2607105", "fs-id1462897"],
+      "decision": "Baking is rendered contextually as মিষ্টি তৈরি, without claiming all fudge is oven-baked. Keep Graciela, the county fair, the named fudge, cups and pounds. In fs-id1462897 part b, source How many chocolate chips is made explicit as কত কাপ চকোলেট চিপস because the rate and both source answer units are cups; this is a unit clarification, not a changed numerical problem."
+    },
+    {
+      "source_ids": ["eip-id1164270736882"],
+      "decision": "Original self-check alt summarizes only three skills. Actual pixels show four rows, including simplifying expressions written with a fraction bar. Bengali alt gives every objective and the confidence/help/not-understood response choices. This is fuller image description, not an allegation of an incorrect source image; original pixels remain unchanged."
+    }
+  ],
+  "source_errata": [],
+  "answer_checks": {
+    "numeric_method": "Read-only exact Fraction evaluation of actual source MathML, including mixed-number grouping, unary signs, parentheses, exponents, and both dot-multiplication glyphs. Source fs-id1597614 encodes −4 and −3 inside mn after closing parentheses; the displayed notation is subtraction, not implicit multiplication by negative factors. All 29 single-expression numerical supplied answers agree.",
+    "numeric_results": [
+      ["fs-id1604577", "44/21"], ["fs-id1633040", "35/8"],
+      ["fs-id1406091", "-16/3"], ["fs-id4876849", "-63/16"],
+      ["fs-id1723035", "3/2"], ["fs-id2907584", "-4/3"],
+      ["fs-id1813805", "2"], ["fs-id2648831", "5"],
+      ["fs-id1311735", "3/2"], ["fs-id1790953", "-15/22"],
+      ["fs-id2129857", "-3/10"], ["fs-id1583136", "1/6"],
+      ["fs-id2209818", "28"], ["fs-id1509331", "-1/18"],
+      ["fs-id2789380", "12/7"], ["fs-id1387546", "5/2"],
+      ["fs-id2007281", "23/4"], ["fs-id1166761303488", "-1/3"],
+      ["fs-id1151358", "4/5"], ["fs-id1160478", "-1/2"],
+      ["fs-id2452656", "2"], ["fs-id2658577", "5/6"],
+      ["fs-id1325545", "26/25"], ["fs-id2669280", "11/6"],
+      ["fs-id1980016", "5/2"], ["fs-id1160651", "-10"],
+      ["fs-id1519168", "-2"], ["fs-id4212246", "51/20"],
+      ["fs-id1597614", "18/7"]
+    ],
+    "symbolic_pairs": [
+      {"exercise_id": "fs-id1567202", "result": "7v/13", "check": "Source ordered dividend/divisor exactly matched."},
+      {"exercise_id": "fs-id1609404", "result": "a/b", "condition": "b nonzero", "check": "Source ordered dividend/divisor exactly matched."},
+      {"exercise_id": "fs-id2198456", "result": "A/(3−B)", "condition": "B not 3", "check": "Entire first-minus-second difference is the divisor."},
+      {"exercise_id": "fs-id2483691", "result": "(r/5)/(s/3)=3r/(5s)", "condition": "s nonzero; r may be zero", "check": "Inspected exact source pair and reciprocal multiplication; also checked three rational substitutions including r=0."},
+      {"exercise_id": "fs-id2426156", "result": "(-3/8)/(-y/12)=9/(2y)", "condition": "y nonzero", "check": "Inspected exact source pair and cancellation of both negative signs; also checked three rational substitutions."}
+    ],
+    "equivalence_selections": [
+      {"exercise_id": "fs-id1841861", "check": "Source target −4/9: exactly the second and fourth choices are negative four ninths; both retained supplied answers agree."},
+      {"exercise_id": "fs-id1530669", "check": "Source target −13/6: exactly 13/(−6) and (−13)/6 agree; both retained supplied answers agree."}
+    ],
+    "application": {
+      "exercise_id": "fs-id1462897",
+      "check": "Source math strings bound to rate 2 2/3 cups per pound and batch size 10. Exact arithmetic: (8/3)(1/2)=4/3=1 1/3 cups; (8/3)(10)=80/3=26 2/3 cups. Both original subanswers agree."
+    },
+    "open_response": {
+      "exercise_ids": ["fs-id1789497", "fs-id2370599"],
+      "check": "Both source Answers will vary markers translated; no model response added."
+    },
+    "coverage": "29 numerical exercises + 5 symbolic exercises + 2 sign-selection exercises + 1 two-part application + 2 open-response markers = all 39 supplied solution blocks. The 39 source-absent solution blocks remain absent."
+  },
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "ece6a389a81b06db1353c6ddd9cdde85ea923d68a42692afa79ab5db1ebc69d5",
+    "method": "Parent build.translated() plus in-memory render_cnxml(study_labels=True), exact source-to-target exercise/solution-ID mapping, unique HTML IDs, and source-bound answer checks. No generated output, media or shared script writes.",
+    "nodes": 1651,
+    "ids": 337,
+    "mathml": 126,
+    "linguistic_mtext_replacements": 0,
+    "empty_mtext_preserved": 2,
+    "paragraphs": 132,
+    "node_slot_mappings": 12,
+    "exercises": 78,
+    "supplied_solutions": 39,
+    "source_absent_solutions": 39,
+    "images": 1,
+    "tables": 0,
+    "links": 0,
+    "html_fragment_characters": 49136,
+    "html_unique_ids": 337,
+    "english_prose_gate": "passed",
+    "mathematical_structure_and_tokens": "exactly preserved",
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent full-page integration and actual desktop/narrow render inspection remain required. This file completes only this assigned exercise subtree; the overall assigned translation remains ongoing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

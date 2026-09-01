@@ -1,0 +1,91 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81287",
+  "section": "fs-id2444943",
+  "date": "2026-08-31",
+  "source_path": "downloads/canonical-prealgebra/modules/m81287/index.cnxml",
+  "source_sha256": "4a029d82953fcba05aeec289445bc21ffc3364ce68b866c56404de3785d4d076",
+  "overlay_sha256": "f2ee85b2dce67b6a86508786e5cfb212f82d525dcb48fb852ce9222d93fe1f2c",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["WB01", "WB02", "TR01", "TR03", "WB04"],
+      "read": ["WB p181 OCR and page image", "Tripura p050/p051 OCR and page images", "WB p189 OCR and page image", "current terminology ledger", "complete source subsection"],
+      "action": "Checked numerator/denominator and simplest-form language, mixed-fraction terminology, and the distinction between the variable x and a multiplication sign. WB p181 shows nested-fraction layout but does not witness the exact term জটিল ভগ্নাংশ; its erroneous question-1 calculations were excluded."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR03", "WB04"],
+      "read": ["Tripura p051 OCR", "WB p189 OCR", "source variable-cancellation table and both variable practice expressions"],
+      "action": "Returned to the actual factor/simplification and variable vocabulary while drafting explanations. The parent approved provisional জটিল ভগ্নাংশ with an explicit definition. Tracked which quantity is the whole numerator and which the whole denominator, and retained the original nonzero domains after cancellation."
+    },
+    {
+      "stage": "pre-integration check",
+      "examples": ["TR03", "WB04"],
+      "read": ["Tripura p051 page image", "WB p189 OCR", "complete Bengali overlay", "all 48 source MathML expressions"],
+      "action": "Compared final term choices and instruction register with the witnesses. Checked all answers and worked rows symbolically or by exact rational arithmetic, including valid and invalid variable substitutions. Confirmed that the introductory x/2 divided by 5/6 permits x=0, unlike the later expression whose denominator contains xy."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "complex-fraction term and explicit definition",
+      "affected_ids": ["term-00003", "fs-id2084744", "fs-id2246100"],
+      "decision": "Use parent-approved provisional জটিল ভগ্নাংশ. Define it as a fraction whose numerator, denominator or both contain another fraction, then explain the main fraction bar as dividing the entire numerator by the entire denominator. No direct local term witness is claimed; WB181 supplies layout context only."
+    },
+    {
+      "topic": "division order and nonzero denominators",
+      "affected_ids": ["fs-id2246100", "eip-id1168468756479"],
+      "decision": "The main numerator is the dividend and the main denominator the divisor. Keep all internal grouping. State that the main denominator and every internal fraction denominator must be nonzero; do not impose a universal nonzero numerator condition. In the -6/7 divided by 3 example, call 3 the divisor instead of a second fraction that has not been explicitly written as such."
+    },
+    {
+      "topic": "original domains after cancellation",
+      "affected_ids": ["fs-id1311590", "eip-id1168468401740", "fs-id1605116", "fs-id1858398", "fs-id2278831", "fs-id2817140"],
+      "decision": "For (x/2)/(xy/6), retain x and y nonzero when giving 3/y. For (a/8)/(ab/6), retain a and b nonzero when giving 3/(4b). For (p/2)/(pq/8), retain p and q nonzero when giving 4/q. These conditions follow from the original denominators, even though the source's abbreviated prose does not spell them out. The canceled variable must not be silently admitted at zero by the reduced answer."
+    },
+    {
+      "topic": "introductory variable example exception",
+      "affected_ids": ["fs-id1171103635844"],
+      "decision": "Treat the three separated introductory fractions as three examples, not a product. The third, (x/2)/(5/6), has fixed nonzero denominators and permits x=0. Its wording does not inherit the later worked example's x-nonzero restriction."
+    },
+    {
+      "topic": "mixed-fraction and cancellation notation",
+      "affected_ids": ["eip-id1168467162804", "fs-id2137056", "fs-id1347889"],
+      "decision": "Use common-ledger মিশ্র ভগ্নাংশ and preserve additive mixed-number interpretation inside the main numerator or denominator. All original combining cancellation slashes in mn and mi, signs, nested mfrac structure, spacing and IDs remain exact. Annotation stripping occurs only inside the temporary independent arithmetic verifier."
+    },
+    {
+      "topic": "source and witness limits",
+      "decision": "No image/media elements or linguistic mtext occur in this subsection. No media work was needed. Exclude WB181's faulty question-1 intermediate calculations, WB189's initial 4k versus later 4x inconsistency, and Tripura p051's erroneous mixed-number intermediate denominator. OpenStax supplies the actual mathematics; the local witnesses supply register and terminology context only."
+    }
+  ],
+  "local_checks": {
+    "result": "passed",
+    "paragraph_slot_arrays": 23,
+    "node_slot_arrays": 24,
+    "translated_title_keys": 3,
+    "translated_terms": 1,
+    "translated_table_summaries": 4,
+    "preserved_mathml_expressions": 48,
+    "preserved_ids": 80,
+    "source_exercises": 12,
+    "source_examples": 4,
+    "source_practice_exercises": 8,
+    "source_images": 0,
+    "linguistic_mathml_exceptions": 0,
+    "worked_table_stages_checked": 25,
+    "answer_counts": {"exact_rational": 9, "symbolic": 3, "total": 12},
+    "answers_checked": [
+      ["fs-id2707862", "6/5"], ["fs-id3216932", "4/5"], ["fs-id1842592", "11/14"],
+      ["fs-id2839915", "-2/7"], ["fs-id2494798", "-2/7"], ["fs-id3323808", "-10/3"],
+      ["fs-id1918050", "3/y, x and y nonzero"], ["fs-id835063", "3/(4b), a and b nonzero"], ["fs-id1605580", "4/q, p and q nonzero"],
+      ["fs-id2662762", "22"], ["fs-id3218785", "25/49"], ["fs-id1959932", "1/2"]
+    ],
+    "legal_variable_substitutions": 9,
+    "original_domain_zero_rejections": 9,
+    "introductory_x_zero_permitted": true,
+    "additional_checks": "All 48 MathML expressions checked; the three introductory mfrac examples were evaluated separately. Monomial equality proves the three symbolic answers and all six variable worked stages. Nested (3/4)/(5/8)=6/5 distinguished from the invalid ungrouped chain (3/4)/5/8. Canceled-variable-zero cases explicitly rejected even when the reduced answer is finite.",
+    "structure": "All selectors unique, slot counts children+1, 48 canonical MathML signatures exact, all tags/IDs/non-linguistic attributes exact, no untranslated English prose or table summaries.",
+    "builder": "Shared translated() passed against the parent's frozen provenance/modules/m81287.source.cnxml, and shared render_cnxml() passed in memory. No files or media written by the validation."
+  },
+  "pending": ["Parent rendered-reader integration and browser visual QA", "Independent West Bengal language/teacher review, including provisional জটিল ভগ্নাংশ", "Assistive-technology review of nested fractions and cancellation notation"],
+  "scope": "One complete instructional subsection including all twelve exercises and solutions. The full assignment remains ongoing. No shared script, media or module registry edits and no commits. Canon is editorial reference material, not training data."
+}

@@ -1,0 +1,19 @@
+{
+  "locale": "bn-Beng-IN", "module": "m81288", "section": "fs-id1581238", "block_kind": "readiness_note", "date": "2026-08-31",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81288.source.cnxml",
+  "source_sha256": "4eb4a0c85c70a9e1a10fa4a5d99dabfb9ccc14b70de18d7cbefb820764c0ae90",
+  "overlay_sha256": "8743588413aad57f334ecc1f913b302c26257ba92e7b11c45d7cbaeee67822e3",
+  "consultations": [
+    {"stage": "before drafting", "examples": ["WB04", "WB11"], "read": ["Actual WB p189 OCR and page image", "Full frozen readiness note", "Updated 17-example bank and 40-term ledger"], "action": "In the shared four-block consultation, confirmed x as a variable and the actual সদৃশ পদ example. The faulty 4k introductory list is excluded; use the separate correct 4x explanation. Do not turn this quiz into a worked tutorial."},
+    {"stage": "during drafting", "examples": ["WB04", "WB11"], "read": ["WB p189 OCR again", "Source problem and answer"], "action": "Retained the short সরল করো instruction and the prior readiness-note register. Distinguished implicit multiplication in 2x and 3x from a multiplication-sign reading of x."},
+    {"stage": "pre-integration check", "examples": ["WB04", "WB11"], "read": ["WB p189 page image again", "Final overlay and exact review target"], "action": "Confirmed wording and unchanged answer. Reduced both original expressions symbolically to x coefficient 5 plus constant 5; no further language change was needed."}
+  ],
+  "decisions": [
+    {"topic": "readiness framing", "affected_locations": ["fs-id2314627", "fs-idm176911536"], "decision": "Translate the introductory quiz instruction and the review prompt with learner-facing দাও/করো/দেখো. Preserve all paragraph child/tail slots and the original empty link label."},
+    {"topic": "algebraic answer", "affected_locations": ["fs-idm176911536", "fs-idm180886752"], "decision": "Preserve 2x+9+3x-4 and 5x+5 exactly. No source answer is absent in this note and no new solution step is added."},
+    {"topic": "review link and out-of-scope issue", "affected_locations": ["m81270/fs-id1365874"], "decision": "Verified that the original target exists as an example. While resolving it, noticed its table aria description says plus where its problem has minus; reported this separate future-source issue to the parent, without changing the link or that out-of-scope source."}
+  ],
+  "local_checks": {"result": "passed", "paragraph_slot_arrays": 3, "preserved_mathml_expressions": 2, "preserved_ids": 7, "preserved_elements": 27, "source_exercises": 1, "source_images": 0, "arithmetic": "2x+9+3x-4 = (2+3)x+(9-4) = 5x+5, verified by symbolic polynomial coefficients", "review_target": "m81270/fs-id1365874 exists", "structure": "All slots children+1; tags, IDs, attributes and MathML exact; no English prose remains", "builder": "Shared translated() and in-memory render_cnxml() passed"},
+  "pending": ["Parent browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "One complete readiness note only. Full assignment ongoing; no shared edits, downloads, media copies, deletions or commits. Canon is editorial reference, not training data."
+}

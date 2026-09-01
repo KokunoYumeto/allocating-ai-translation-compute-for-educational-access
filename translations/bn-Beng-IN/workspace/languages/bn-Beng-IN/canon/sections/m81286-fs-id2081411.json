@@ -1,0 +1,111 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81286",
+  "section": "fs-id2081411",
+  "date": "2026-08-30",
+  "scope": "Complete Multiply Fractions subsection translation and local checks. The entire assigned curriculum remains ongoing. References are editorial witnesses, never training data.",
+  "source": {
+    "workspace_relative_path": "downloads/canonical-prealgebra/modules/m81286/index.cnxml",
+    "sha256": "7dab4be4d267ccd47f23df46e9b6a4b90a25c5d8b371e14b5947846af126b249",
+    "upstream_commit": "38cae454e644abf9f0a623e876994553881597c9"
+  },
+  "overlay": {
+    "path": "translations/m81286-fs-id2081411.bn-Beng-IN.json",
+    "sha256": "f9a20b223a129c0c13b27ddeea36a121fbc3095530658de76b2ab17b7cd93506"
+  },
+  "additional_reference_locators": [
+    {
+      "source": "WB-Class7-Learning-Bridge",
+      "pdf_page": 187,
+      "printed_page": 8,
+      "locator": "Example 1(ii), solution and the later signed-product true/false prompt",
+      "anchor": "(-7)*(-5)*(+3)=(+35)*(+3)=+105",
+      "use": "Signed-product language: গুণফল, ধনাত্মক and ঋণাত্মক. This is an integer example, not a fraction multiplication model."
+    },
+    {
+      "source": "SCERT-Tripura-VI",
+      "pdf_page": 52,
+      "printed_page": 52,
+      "locator": "Opening fraction addition explanation and exercise 7 question 3",
+      "anchor": "Shaded regions and fraction naming; opening calculation 4+3/5+7/10=53/10",
+      "use": "Bengali instruction and shaded-region wording only; this page does not teach fraction multiplication."
+    }
+  ],
+  "consultations": [
+    {
+      "stage": "before drafting and targeted existing-reference check",
+      "examples": [],
+      "read": ["SCERT-Tripura-VI p052.txt", "SCERT-Tripura-VI p052.png", "WB-Class7-Learning-Bridge p187.txt", "WB-Class7-Learning-Bridge p187.png"],
+      "action": "Read actual OCR and inspected both full page images. The existing pages cover shaded regions/addition and signed integers, not a complete part-of-part fraction multiplication lesson. Selected only the relevant signed-product and diagram wording; did not invent a direct local multiplication witness or import unrelated erroneous lines."
+    },
+    {
+      "stage": "during area-model, sign and simplification drafting",
+      "examples": ["TR03"],
+      "read": ["SCERT-Tripura-VI p051.txt", "WB-Class7-Learning-Bridge p187.txt", "all nine original source images referenced by fs-id2081411"],
+      "action": "Returned to the readable reference text for লঘিষ্ঠ আকার and signed-product wording. Inspected every source image, then corrected incomplete or wrong English image descriptions against the visible grids and numeric cancellation factors. Recast Bengali of-phrases as short explanatory sentences so the original MathML child order stays intact."
+    },
+    {
+      "stage": "pre-integration language, sign and answer check",
+      "examples": ["TR03"],
+      "read": ["WB-Class7-Learning-Bridge p187.png", "SCERT-Tripura-VI p051.txt", "complete current overlay"],
+      "action": "Reopened the signed-product page image and reread the simplest-form witness beside the finished overlay. Verified all 18 answer parts, all 21 numeric/algebraic worked-table MathML stages, the area model results and the general symbolic multiplication property. Checked negative, zero and positive values of x so the algebraic coefficient wording does not impose an unsupported sign assumption."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "reference gap",
+      "decision": "The part-of-part area explanation is an editorial Bengali translation of OpenStax, not a claimed quotation or witnessed local multiplication lesson. Existing readable material is sufficient for current terminology and sign checks; no new download was started. Independent West Bengal pedagogy/language review remains pending."
+    },
+    {
+      "topic": "unchanged mathematical order versus Bengali syntax",
+      "affected_source_locations": ["fs-id2904577", "fs-id2778298", "fs-id2173908"],
+      "decision": "Keep the source order 1/2 before 3/4. Explain that the first fraction requests half of the later quantity using short Bengali sentences instead of reversing the formula nodes or producing an ambiguous genitive phrase."
+    },
+    {
+      "topic": "complete shaded-grid descriptions",
+      "affected_source_locations": ["fs-id8372945", "fs-id8372986"],
+      "evidence": "The actual images CNX_BMath_Figure_04_02_038_img.jpg and CNX_BMath_Figure_04_02_039_img.jpg have full grids of 10 and 12 cells, with 3 and 5 cells respectively shaded more darkly. The original English alts omit or incompletely describe this subdivision.",
+      "decision": "Describe both row/column subdivisions and distinguish the dark area as a fraction of the whole rectangle, not merely of the already shaded region. Preserve original assets."
+    },
+    {
+      "topic": "numeric cancellation mislabelled as a variable",
+      "affected_source_locations": ["eip-id6805038"],
+      "evidence": "The original alt describes 5x/12x, while the actual PNG shows 5 times 2 over 12 times 2 with the numeric 2s crossed out.",
+      "decision": "Translate the actual diagram correctly, naming the common factor 2."
+    },
+    {
+      "topic": "simplest form",
+      "affected_source_locations": ["fs-id3400279"],
+      "decision": "Explicitly say 1 ছাড়া when stating that no common factor remains. This agrees with source eip-325 in the preceding simplification subsection and TR03."
+    },
+    {
+      "topic": "sign of algebraic product",
+      "affected_source_locations": ["eip-id1168466048420/row[4]", "eip-id1168466048420 aria-label"],
+      "evidence": "The source product is (12/5)*(-20x)=-48x; x has no given sign.",
+      "decision": "Refer to the negative numerical coefficient, not an always-negative overall product. The expression can be positive, zero or negative depending on x. Mathematical content remains unchanged."
+    },
+    {
+      "topic": "non-MathML answer notation and activity identity",
+      "decision": "Preserve original −48x, 9, −33a, italic variable a and circled part labels, including their existing XML hierarchy. Translate the hands-on activity name for learners and retain its exact original English identity in overlay metadata for provenance."
+    }
+  ],
+  "local_checks": {
+    "result": "passed before parent integration",
+    "paragraph_slot_arrays": 45,
+    "node_slot_arrays": 25,
+    "translated_table_aria_labels": 4,
+    "translated_table_summaries": 3,
+    "translated_image_alts": 9,
+    "preserved_mathml_expressions": 85,
+    "preserved_ids": 130,
+    "source_examples": 5,
+    "source_exercises": 15,
+    "source_answer_parts": 18,
+    "exact_rational_answer_checks": 15,
+    "exact_symbolic_answer_checks": 3,
+    "worked_numeric_or_algebraic_table_mathml_checks": 21,
+    "answer_parts_in_source_order": ["3/8", "3/10", "5/12", "3/20", "2/15", "21/40", "5/12", "5/14", "14/27", "-8/9", "-4/21", "-3/16", "8", "-48x", "9", "-33a", "24", "44x/3"],
+    "additional_checks": ["1/2 of 3/4 = 3/8", "1/2 of 3/5 = 3/10", "1/2 of 5/6 = 5/12", "Common-factor image arithmetic agrees with source results", "General a/b times c/d = ac/bd verified symbolically with original nonzero-denominator restrictions retained", "x=-2,0,3 each verifies (12/5)*(-20x)=-48x", "All mapped nodes exist and all slot lengths equal children plus one", "All MathML is exact without any mtext exception", "All tags and non-linguistic attributes are preserved", "No English words remain in learner XML text, tails, alt, aria-label or summary"],
+    "pending": ["Parent source-witness freeze and reader integration", "Rendered visual QA", "Independent West Bengal Bengali teacher/language review", "Assistive-technology review"]
+  }
+}

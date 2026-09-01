@@ -1,0 +1,102 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81287",
+  "section": "fs-id2755049",
+  "date": "2026-08-31",
+  "source_path": "downloads/canonical-prealgebra/modules/m81287/index.cnxml",
+  "source_sha256": "4a029d82953fcba05aeec289445bc21ffc3364ce68b866c56404de3785d4d076",
+  "overlay_sha256": "488665089a8d411616f2724cf0a90f74900e5a782a9c70e7685cc5d5a4ec6601",
+  "source_identity_observed": {
+    "module_title": "Multiply and Divide Mixed Numbers and Complex Fractions",
+    "section_title": "Multiply and Divide Mixed Numbers",
+    "top_level_readiness_notes": ["fs-id1336200", "fs-id1352037", "fs-id1362034"],
+    "instructional_sections_in_order": [
+      ["fs-id2755049", "Multiply and Divide Mixed Numbers"],
+      ["fs-id1744195", "Translate Phrases to Expressions with Fractions"],
+      ["fs-id2444943", "Simplify Complex Fractions"],
+      ["fs-id2211912", "Simplify Expressions with a Fraction Bar"]
+    ],
+    "remaining_top_level_sections": [["fs-id2261289", "Key Concepts"], ["fs-id2789054", "section-exercises"]],
+    "ownership": "Only fs-id2755049 overlay and this per-section record; titles and section identity were read from the actual XML, not inferred from module numbering."
+  },
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR01", "TR03", "WB01", "WB02"],
+      "additional_existing_locators": ["WB PDF p187, printed p8, example 1(ii)"],
+      "read": ["Tripura p050/p051 OCR and page images", "WB p181 OCR and page image", "WB p187 OCR and page image", "current terminology ledger", "m81285 module-title overlay", "full source subsection"],
+      "action": "Confirmed মিশ্র ভগ্নাংশ and অপ্রকৃত ভগ্নাংশ from actual Tripura text, and লঘিষ্ঠ আকার plus numerator/denominator procedure wording from WB01/WB02 and TR03. Checked the correct signed-product example on WB p187. The local bank does not directly witness this exact mixed-number multiplication/division lesson; no such provenance is invented."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR01", "TR03", "WB01", "WB02"],
+      "read": ["Tripura p050/p051 OCR", "WB p181 OCR", "source negative mixed-number conversion and practice expressions"],
+      "action": "Returned to the actual mixed-fraction and simplest-form wording while drafting all worked rows. Kept the ledger term throughout, explained common-factor removal as division of both numerator and denominator, and made the leading negative sign's whole-mixed-number scope explicit. Excluded Tripura p051's erroneous intermediate denominator."
+    },
+    {
+      "stage": "pre-integration check",
+      "examples": ["TR01", "WB01", "WB02"],
+      "read": ["Tripura p050 page image", "WB p181 OCR", "complete Bengali overlay", "all 47 source MathML expressions and all twelve answers"],
+      "action": "Compared final terminology, instruction register and explanation order with the actual witnesses. Confirmed that the mixed-fraction juxtaposition is additive internally but a leading minus covers the whole value. No change to the chosen terminology was needed. Independently evaluated every source MathML expression with exact rational arithmetic."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "mixed-number terminology and reference link",
+      "affected_ids": ["term-00001", "term-00002", "fs-id3324529"],
+      "decision": "Use common-ledger মিশ্র ভগ্নাংশ, not unbridged মিশ্র সংখ্যা. Use অপ্রকৃত ভগ্নাংশ for improper fraction. Translate the source link label with the existing module-title registry wording চিত্রের সাহায্যে ভগ্নাংশ বোঝা while preserving document=m81285."
+    },
+    {
+      "topic": "negative mixed-number scope",
+      "affected_locations": ["eip-id1168468531210/row[2]/entry[1]", "fs-id2159595", "fs-id2340144"],
+      "decision": "The source -1 7/8 means -(1+7/8)=-15/8, and -3 2/5 means -(3+2/5)=-17/5. Explain the sign scope in the worked conversion row. Keep the original minus-token encoding, spacing, parentheses and all subsequent negative answers unchanged."
+    },
+    {
+      "topic": "mixed-fraction notation versus multiplication",
+      "affected_ids": ["fs-id2828350"],
+      "decision": "Retain the source preference for improper-fraction answers in algebra. Explain explicitly that the source mixed notation 2 1/12 adds the fractional part to 2, while 2 times 1/12 is multiplication. Keep all three source formulas unchanged; their values are 25/12, 25/12 and 1/6."
+    },
+    {
+      "topic": "visible conversion and legal division",
+      "affected_locations": ["eip-id1168467104894/row[2]/entry[1]", "eip-id1168468257930/item[2]"],
+      "decision": "The first division example converts one mixed number and also writes 5 as 5/1; describe both visible operations instead of implying that 5 is itself a mixed number. State that the divisor cannot be zero. Use common-ledger গুণাত্মক বিপরীত, with its previously recorded provisional/editorial provenance."
+    },
+    {
+      "topic": "cancellation and simplest form",
+      "affected_locations": ["All four worked tables"],
+      "decision": "Translate look for common factors and remove common factors as identifying common numerator/denominator factors and dividing both by them. Preserve every original combining cancellation slash in MathML mn text. The rational verifier strips the annotation only in its temporary calculation input, never in source or output. Integer answers 2 and -15 remain source-native text; improper fractions remain improper fractions."
+    },
+    {
+      "topic": "source/witness limits",
+      "decision": "No images occur in this subsection. No media were created, copied or downloaded. Tripura p051's erroneous mixed-number intermediate denominator, WB p181's faulty question-1 intermediate arithmetic and WB p187's erroneous top subtraction lines were not propagated. OpenStax remains mathematical authority; Bengali pages supply register/terms, not a fabricated direct mixed-number operations witness."
+    }
+  ],
+  "local_checks": {
+    "result": "passed",
+    "paragraph_slot_arrays": 22,
+    "node_slot_arrays": 26,
+    "translated_title_keys": 3,
+    "translated_terms": 2,
+    "translated_table_summaries": 4,
+    "preserved_mathml_expressions": 47,
+    "preserved_ids": 79,
+    "source_exercises": 12,
+    "source_examples": 4,
+    "source_practice_exercises": 8,
+    "source_images": 0,
+    "linguistic_mathml_exceptions": 0,
+    "worked_table_stages_checked": 26,
+    "all_mathml_expressions_evaluated": 47,
+    "answers_checked": [
+      ["fs-id2485730", "25/12"], ["fs-id1511665", "2"], ["fs-id4211388", "9/4"],
+      ["fs-id3445945", "-21/4"], ["fs-id2436830", "-15"], ["fs-id1950660", "-85/6"],
+      ["fs-id2265821", "5/7"], ["fs-id1602109", "5/8"], ["fs-id1854628", "7/8"],
+      ["fs-id3231419", "2"], ["fs-id2771213", "2"], ["fs-id2376925", "5/2"]
+    ],
+    "additional_checks": "Mixed notation versus explicit multiplication values 25/12 and 1/6; -1 7/8=-15/8 and -3 2/5=-17/5, rejecting negative-integer-plus-positive-fraction misreadings",
+    "structure": "All node paths unique, all slot arrays children+1, all tags/IDs/non-linguistic attributes exact, all 47 MathML signatures exact including combining cancellation marks, no untranslated English prose, no unbridged মিশ্র সংখ্যা in learner text.",
+    "render": "Shared render_cnxml() passed in memory using the translated clone. Parent source-freeze and full translated()/browser integration are still pending; this check wrote no files."
+  },
+  "pending": ["Parent source freeze and shared admission build", "Browser visual QA, including combining cancellation marks", "Independent West Bengal language/teacher review", "Assistive-technology review"],
+  "scope": "One complete instructional subsection only. The full assignment and remaining module sections continue; no global title registry or shared script was edited, and no commit was made. Canon is editorial reference material, not training data."
+}

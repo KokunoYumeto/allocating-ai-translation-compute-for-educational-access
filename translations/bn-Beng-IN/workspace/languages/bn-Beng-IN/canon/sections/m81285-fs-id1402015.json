@@ -1,0 +1,63 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81285",
+  "section": "fs-id1402015",
+  "scope": "Translation editorial consultations only; not learner records, teacher certification or model-training data",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR01", "WB02", "WB03"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.png"],
+      "action": "Read OCR and complete relevant page images. TR01 and WB02 corroborate লব and হর; WB03's conversion to the same unit reinforces keeping the common whole and equal-sized pieces explicit. Used the witnesses for Bengali register only. Retained all OpenStax pizza contexts, a/b mathematics and picture counts, rather than copying government-book examples."
+    },
+    {
+      "stage": "during definition and worked-step review",
+      "examples": ["TR01", "WB02"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.txt"],
+      "action": "Reread the fraction and লব/হর definitions while checking the drafted whole-to-parts explanation and worked question tables. Retained the two-question sequence: count every equal part first to obtain হর, then count the shaded parts to obtain লব. Used explicit লব/হর when describing fraction labels in images; named unit pieces এক-দ্বিতীয়াংশ, এক-তৃতীয়াংশ and so on. Kept integer and nonzero-denominator conditions and the zero exception in the a/a property. Removed redundant চিত্র/উদাহরণ prefixes from paragraph slots because the renderer supplies linked labels; asked parent to distinguish example targets from figures."
+    },
+    {
+      "stage": "pre-admission comparison and full-section checks",
+      "examples": ["TR01", "WB02", "WB03"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.txt"],
+      "action": "Reread the targeted OCR passages with the previously inspected page images as the check on garbled numbers. Confirmed the register of সমান ভাগ, লব, হর and গোটা throughout all 46 paragraphs and retained the nonzero conditions. The descriptive এক-চব্বিশাংশ wording follows this translation's unit-piece pattern; it is editorial, not claimed as a phrase witnessed on these pages. Checked all twelve exercises against preserved literal fraction tokens and previously inspected shaded-image counts, including complete wholes and leftover pieces. The integrating builder's translated() gate passes, with eight reversible linguistic mtext replacements and one summary localization. In-memory HTML fragment rendering has unique IDs, all local anchors resolve, and all 23 images have nonempty Bengali alt. Full-page layout and independent language/teacher/assistive-technology review remain for parent integration."
+    }
+  ],
+  "source_observations": [
+    "All 23 local source images, 001 through 022 plus 074, were visually inspected before drafting their alt. Shaded counts agree with the source worked answers and practice solutions.",
+    "Source table fs-id7569845 has an English summary attribute, not an aria-label. Parent approved and implemented explicit summaries mapping; target preserves the attribute semantically and exposes it to the HTML reader.",
+    "Eight mtext nodes are prose in two worked tables; approved math_text mappings translate only those strings. Period-only mtext and all numeric/identifier/operator tokens remain unchanged.",
+    "Source repeats the 24/24 = 1 explanation after the table; translation retains the repetition.",
+    "Figure 015 has baked-in English labels. Source asset remains unchanged; translated list and alt convey the same meaning."
+  ],
+  "verification": {
+    "date": "2026-08-30",
+    "method": "Parent builder translated() gate plus in-memory exercise, language and HTML-fragment checks; no generated output writes",
+    "paragraphs": 46,
+    "unwrapped_note_slot_containers": 3,
+    "media_alt_descriptions": 23,
+    "mathml_expressions": 65,
+    "linguistic_mtext_replacements": 8,
+    "table_summary_translations": 1,
+    "all_elements": 526,
+    "preserved_ids": 134,
+    "examples": 4,
+    "exercises": 12,
+    "status": "passed_before_full_page_parent_integration"
+  },
+  "exercise_checks": [
+    {"id": "fs-id1946406", "result": "5/8 and 2/9 shaded; worked tables and image agree"},
+    {"id": "fs-id2795072", "result": "3/8 and 4/9 shaded; image and literal answer fractions agree"},
+    {"id": "fs-id1171103642147", "result": "3/5 and 3/4 shaded; image and literal answer fractions agree"},
+    {"id": "fs-id4216216", "result": "3/4 shaded; four equal parts followed by three shaded parts"},
+    {"id": "fs-id3332508", "result": "6/8 shaded; eight equal parts with six shaded in solution image"},
+    {"id": "fs-id3011390", "result": "2/5 shaded; five equal rectangular parts with two shaded"},
+    {"id": "fs-id1946535", "result": "4/4, 5/5 and 6/6 each form one whole"},
+    {"id": "fs-id1363556", "result": "3/3 forms one whole; all three image sectors shaded"},
+    {"id": "fs-id1262704", "result": "8/8 forms one whole; all eight image sectors shaded"},
+    {"id": "fs-id3413960", "result": "3/2 = 1 + 1/2; 8/5 = 1 + 3/5; 7/3 = 2 + 1/3; images agree"},
+    {"id": "fs-id2130641", "result": "5/3 = 1 + 2/3; first whole and two of three second-circle sectors shaded"},
+    {"id": "fs-id2446890", "result": "5/2 = 2 + 1/2; two whole circles and one half shaded"}
+  ],
+  "independent_West_Bengal_teacher_and_language_review": "pending"
+}

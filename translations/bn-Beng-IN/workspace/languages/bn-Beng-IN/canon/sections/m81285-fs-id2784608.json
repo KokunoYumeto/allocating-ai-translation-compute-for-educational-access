@@ -1,0 +1,68 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81285",
+  "section": "fs-id2784608",
+  "scope": "Complete source-faithful subsection translation; not a claim of complete assignment, curriculum certification, or human validation.",
+  "consultations": [
+    {
+      "stage": "pre-draft",
+      "existing_exemplars": ["TR01", "WB02"],
+      "pages_read": ["SCERT-Tripura-VI/p050.txt", "SCERT-Tripura-VI/p052.txt", "WB-Class7-Learning-Bridge/p181.txt"],
+      "page_images_inspected": ["SCERT-Tripura-VI/p050.png", "SCERT-Tripura-VI/p052.png"],
+      "decision": "Read the canon workflow and bank, the terminology ledger, and the existing OCR. Checked Tripura images rather than accepting garbled OCR fractions. TR01 and p50 support লব, হর, প্রকৃত ভগ্নাংশ, অপ্রকৃত ভগ্নাংশ and a mixed fraction as the sum of a whole number and proper fraction. The existing p52 exercise 4 is a targeted supplement: it asks for 2/3 on a number line and supports সংখ্যারেখায় অবস্থান দেখাও. It is not a worked example of negative fractions."
+    },
+    {
+      "stage": "drafting and source-image review",
+      "existing_exemplars": ["TR01", "WB02"],
+      "pages_reread": ["SCERT-Tripura-VI/p050.txt", "WB-Class7-Learning-Bridge/p181.txt"],
+      "source_images_inspected": ["CNX_BMath_Figure_04_01_058_img.jpg", "CNX_BMath_Figure_04_01_059_img.jpg", "CNX_BMath_Figure_04_01_052.jpg", "CNX_BMath_Figure_04_01_047_img.jpg"],
+      "decision": "Rechecked fraction names and learner-facing imperative register while translating position instructions. Kept the project's মিশ্র সংখ্যা term while recording witnessed মিশ্র ভগ্নাংশ as a synonym. Used পূর্ণ in spoken mixed-number descriptions; explicitly described a negative mixed number as the opposite of the whole positive mixed number. Source-image inspection exposed English alt count errors; Bengali alt now describes actual equal subdivisions and adds visible whole-number markers omitted from English alt. MathML, source images and source hierarchy are not edited."
+    },
+    {
+      "stage": "pre-handoff revision and validation",
+      "existing_exemplars": ["TR01"],
+      "pages_reread": ["SCERT-Tripura-VI/p050.txt", "SCERT-Tripura-VI/p052.txt"],
+      "source_images_inspected": ["CNX_BMath_Figure_04_01_044_img.jpg", "CNX_BMath_Figure_04_01_045_img.jpg", "CNX_BMath_Figure_04_01_046_img.jpg", "CNX_BMath_Figure_04_01_048_img.jpg", "CNX_BMath_Figure_04_01_049_img.jpg", "CNX_BMath_Figure_04_01_050_img.jpg", "CNX_BMath_Figure_04_01_051_img.jpg", "CNX_BMath_Figure_04_01_053_img.jpg", "CNX_BMath_Figure_04_01_054_img.jpg", "CNX_BMath_Figure_04_01_055_img.jpg", "CNX_BMath_Figure_04_01_056_img.jpg", "CNX_BMath_Figure_04_01_057_img.jpg", "CNX_BMath_Figure_04_01_060.jpg", "CNX_BMath_Figure_04_01_061.jpg", "CNX_BMath_Figure_04_01_062_img.jpg", "CNX_BMath_Figure_04_01_063_img.jpg"],
+      "decision": "Reread the relevant OCR against the already inspected p50/p52 images, then read all 31 assembled Bengali prose nodes with the unchanged MathML punctuation. Recast phrases before embedded sentence stops so Bengali postpositions do not follow an English full stop. Used the common nodes XPath slots schema for the ID-less m81275 link. Inspected all remaining source images; figure 061 retains two prior mixed-number markers omitted by English alt, now explicitly described. Figure 044's full 0–6 scale is described. Thirteen rational checks confirm conversions and opposite-number interpretations. No Bengali human or screen-reader certification is claimed."
+    }
+  ],
+  "terminology_decisions": [
+    {"english": "number line", "bengali": "সংখ্যারেখা", "evidence": "Tripura VI p52, exercise 4; p50 introductory fraction text"},
+    {"english": "proper fraction", "bengali": "প্রকৃত ভগ্নাংশ", "evidence": "Tripura VI p50; actual page image checked"},
+    {"english": "improper fraction", "bengali": "অপ্রকৃত ভগ্নাংশ", "evidence": "Tripura VI p50; actual page image checked"},
+    {"english": "mixed number", "bengali": "মিশ্র সংখ্যা", "witnessed_synonym": "মিশ্র ভগ্নাংশ", "evidence": "Project continuity; Tripura p50 supports synonym and whole-plus-proper-fraction meaning. Not independent West Bengal certification."},
+    {"english": "opposite of a number", "bengali": "বিপরীত সংখ্যা", "evidence": "Editorial provisional term constrained by the source definition: equal distance from zero on opposite sides. Not ব্যস্ত, which would incorrectly imply reciprocal."}
+  ],
+  "source_alt_errata": [
+    {"ids": ["fs-id1530935", "fs-id1357191"], "source_issue": "English alt says four tick marks between -1 and 0 and between 0 and 1.", "observed_evidence": "Existing source figures 058 and 059 have three interior marks per unit, producing four equal subintervals.", "translation_action": "Describe four equal parts and three interior marks; retain original image and every MathML node."},
+    {"ids": ["fs-id1745760"], "source_issue": "English alt says ten tick marks between any two numbers.", "observed_evidence": "Existing figure 052 divides each unit distance into ten equal parts; 3/4 lies between seventh and eighth tenth-marks.", "translation_action": "Describe ten equal parts, not ten interior marks; retain original image."},
+    {"ids": ["fs-id1259151"], "source_issue": "English alt omits the plotted whole numbers 3 and 5.", "observed_evidence": "Existing figure 047 visibly has marked dots at both 3 and 5, as well as the six fractional points.", "translation_action": "Include all eight visible plotted positions in Bengali alt."},
+    {"ids": ["fs-id1559245"], "source_issue": "English alt mentions only scale labels 3, 4 and 5.", "observed_evidence": "Existing figure 044 visibly labels the complete integer scale 0 through 6.", "translation_action": "Describe the complete displayed scale; retain the two plotted values 3 and 5."},
+    {"ids": ["fs-id1269539"], "source_issue": "English alt omits prior mixed-number markers still present in the diagram.", "observed_evidence": "Existing figure 061 visibly marks negative 1 1/3 and positive 1 1/3 as well as the current negative/positive 5/2 pair.", "translation_action": "Describe all four markers, identifying the two prior-step mixed-number positions explicitly."}
+  ],
+  "coverage_limits": [
+    "The local canon supplies Indian Bengali fraction terms and a number-line instruction, but no reviewed worked negative-fraction or negative-mixed-number number-line example. Negative-number wording is editorial and requires independent West Bengal teacher/language review.",
+    "Tripura witnesses are supplementary Indian Bengali references, not West Bengal curriculum certification.",
+    "The p52 exercise asking for a proper fraction with numerator 9 and denominator 7 is mathematically inconsistent; it was not used. Only exercise 4 supplies the number-line wording.",
+    "The existing manipulative activity reference is translated, not evidence that the external activity itself has been translated or made available offline.",
+    "Original image pixels are retained. Figures 055 and 057 contain embedded English unit labels; Bengali alt supplies their meaning, but the images are not fully localized graphics."
+  ],
+  "validation": {
+    "status": "pass",
+    "method": "Read-only in-memory Python stdlib application of the overlay followed by structural, language and rational assertions; command exited 0.",
+    "paragraphs": 31,
+    "xpath_nodes": 1,
+    "alt_descriptions": 20,
+    "cnxml_nodes": 811,
+    "preserved_ids": 87,
+    "mathml_expressions_unchanged": 119,
+    "source_examples": 2,
+    "source_exercises": 6,
+    "rational_checks": 13,
+    "source_sha256": "7a39fccee8a29712929f04a6ac02f4e2646e46a6920f6e8b06f56de40b7ffad4",
+    "overlay_sha256": "fd9c640921134a84cd6a412484d01b35e1d7a36b7c99d4499ccd0a26b4daade9",
+    "checks": ["Exact paragraph and XPath child-slot lengths", "Unique XPath resolution", "Original tag hierarchy and child order", "Every source ID and non-alt attribute unchanged", "Exact MathML structure, text and punctuation", "Every source alt replaced", "No remaining English words in CNXML prose", "Positive mixed-number conversions and whole-number opposites", "All 20 source media visually inspected"],
+    "not_proven": ["Rendered output usability", "Independent Bengali correctness", "Assistive-technology behavior"]
+  },
+  "pending": ["Independent West Bengal teacher/language review", "Learner comprehension validation", "Assistive-technology review", "Parent integration and rendered output QA"]
+}

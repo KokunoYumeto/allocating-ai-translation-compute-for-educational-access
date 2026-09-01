@@ -1,0 +1,18 @@
+{
+  "locale": "bn-Beng-IN", "module": "m81287", "section": "fs-id1336200", "block_kind": "readiness_note", "date": "2026-08-31",
+  "source_path": "downloads/canonical-prealgebra/modules/m81287/index.cnxml",
+  "source_sha256": "4a029d82953fcba05aeec289445bc21ffc3364ce68b866c56404de3785d4d076",
+  "overlay_sha256": "3c4c2dfd4005b2ff07e57b853d4e8b3f97988051655afcad78158c27ec7933f3",
+  "consultations": [
+    {"stage": "before drafting", "examples": ["WB01", "TR03"], "read": ["WB p181 OCR and page image", "Tripura p051 OCR and page image", "actual source readiness note"], "action": "Confirmed learner instruction register and লঘিষ্ঠ আকার wording; source arithmetic remains authoritative."},
+    {"stage": "during drafting", "examples": ["TR03"], "read": ["Tripura p051 OCR", "source grouped division expression"], "action": "Returned to simplest-form wording while keeping both source parentheses and dividend/divisor order unchanged."},
+    {"stage": "pre-integration check", "examples": ["WB01", "TR03"], "read": ["WB p181 page image", "Tripura p051 OCR", "final overlay"], "action": "Rechecked the instruction, exact-rational answer and actual linked review example. No terminology change needed."}
+  ],
+  "decisions": [
+    {"topic": "grouped arithmetic", "decision": "Preserve (4+5)/(10-7), not an ungrouped arithmetic chain. The computed denominator is 3, nonzero; answer 3 is unchanged."},
+    {"topic": "readiness and review scope", "decision": "Translate both the module-opening readiness instruction and the problem's review prompt. Preserve m81276/fs-id1166761435901; verified that this exact target exists as an example. No new title or ID added."}
+  ],
+  "local_checks": {"result": "passed", "paragraph_slot_arrays": 3, "preserved_mathml_expressions": 2, "preserved_ids": 7, "source_exercises": 1, "source_images": 0, "arithmetic": "(4+5)/(10-7)=9/3=3", "review_target": "m81276/fs-id1166761435901 exists", "structure": "All slots children+1; tags/IDs/attributes/MathML exact; no English prose remains", "builder": "Shared translated() and in-memory render_cnxml() passed"},
+  "pending": ["Parent browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "One complete readiness note only. Full assignment ongoing; no media, shared scripts or commits. Canon is editorial reference, not training data."
+}

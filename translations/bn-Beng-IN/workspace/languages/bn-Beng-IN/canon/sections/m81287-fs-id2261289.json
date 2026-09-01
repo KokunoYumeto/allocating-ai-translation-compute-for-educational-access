@@ -1,0 +1,20 @@
+{
+  "locale": "bn-Beng-IN", "module": "m81287", "section": "fs-id2261289", "block_kind": "key_concepts", "date": "2026-08-31",
+  "source_path": "downloads/canonical-prealgebra/modules/m81287/index.cnxml",
+  "source_sha256": "4a029d82953fcba05aeec289445bc21ffc3364ce68b866c56404de3785d4d076",
+  "overlay_sha256": "1dd3425969bdee6a07a4667c7a7de9fb2c3180c3aca74b1f8f1906e582f0d176",
+  "consultations": [
+    {"stage": "before drafting", "examples": ["TR01", "TR03", "WB01", "WB02"], "read": ["Tripura p050/p051 OCR and page images", "WB p181 OCR and page image", "actual Key Concepts source"], "action": "Confirmed mixed-fraction, numerator/denominator and simplest-form wording. Continued parent-approved provisional জটিল ভগ্নাংশ, explicitly defined rather than falsely attributed to WB181."},
+    {"stage": "during drafting", "examples": ["TR01", "TR03"], "additional_existing_locators": ["WB p187, printed p8, correct signed-product example 1(ii)"], "read": ["Tripura p050/p051 OCR", "WB p187 OCR and page image", "source sign identity"], "action": "Returned to actual terminology and sign vocabulary, excluding the faulty top subtraction lines. Preserved the source identity's positive-a/positive-b condition and carried over main-bar and original-domain explanations from completed instructional sections."},
+    {"stage": "pre-integration check", "examples": ["TR01", "TR03", "WB01", "WB02"], "read": ["Tripura p050/p051 OCR", "WB p181 page image", "complete overlay"], "action": "Rechecked all four summary topics, nonzero qualifications and mixed-fraction terminology. Proved the sign identity by reducing all three source expressions to the same monomial and checked three positive rational substitutions. No terminology change needed."}
+  ],
+  "decisions": [
+    {"topic": "mixed-fraction sign", "affected_locations": ["eip-id1170326533660/item[1]"], "decision": "Use মিশ্র ভগ্নাংশ and state that a leading negative sign applies to the complete mixed number, consistent with the worked section."},
+    {"topic": "complex-fraction definition and domain", "affected_locations": ["eip-id1170323812308/items[1-3]"], "decision": "Explain provisional জটিল ভগ্নাংশ and main-bar numerator divided by denominator. Main and internal denominators must be nonzero, and original restrictions remain after cancellation. No exact local complex-fraction term witness is claimed."},
+    {"topic": "negative sign placement", "affected_locations": ["eip-id1170324001139/item[1]"], "decision": "Preserve the source assumption a,b positive, as well as (-a)/b=a/(-b)=-(a/b). Explain the three equivalent sign positions without editing formula tokens."},
+    {"topic": "fraction-bar procedure", "affected_locations": ["eip-id1170325386880/items[1-3]"], "decision": "Retain the order: simplify numerator, simplify denominator, simplify fraction. Make denominator-nonzero condition explicit. This summary does not replace the separately owned full instructional section."}
+  ],
+  "local_checks": {"result": "passed", "node_slot_arrays": 14, "preserved_mathml_expressions": 3, "preserved_ids": 6, "source_exercises": 0, "source_images": 0, "sign_identity": "All three expressions reduce symbolically to coefficient -1, a exponent 1, b exponent -1", "positive_substitutions_checked": [[1,1],[2,3],[5,7]], "structure": "All selectors unique and slots children+1; tags/IDs/attributes/MathML exact; no English prose remains", "builder": "Shared translated() and in-memory render_cnxml() passed"},
+  "pending": ["Parent browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "One complete Key Concepts summary only; no module metadata or outer exercise block included. Full assignment ongoing; no media, shared scripts or commits. Canon is editorial reference, not training data."
+}

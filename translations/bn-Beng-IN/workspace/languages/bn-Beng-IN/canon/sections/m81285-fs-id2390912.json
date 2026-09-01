@@ -1,0 +1,73 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81285",
+  "section": "fs-id2390912",
+  "date": "2026-08-30",
+  "scope": "Editorial consultation record for the complete conversion subsection; not a claim that the whole language assignment is translated, and not a training dataset.",
+  "source": {
+    "path": "provenance/pilot/m81285.source.cnxml",
+    "sha256": "7a39fccee8a29712929f04a6ac02f4e2646e46a6920f6e8b06f56de40b7ffad4",
+    "upstream_commit": "38cae454e644abf9f0a623e876994553881597c9"
+  },
+  "overlay": {
+    "path": "translations/m81285-fs-id2390912.bn-Beng-IN.json",
+    "sha256": "c6a56ef23d688c805d253a553036249ee4ae3851ecb69d6008f0cf0fb7f93e7e"
+  },
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR01", "TR02", "TR03", "TR04"],
+      "read": ["SCERT-Tripura-VI p050.txt", "SCERT-Tripura-VI p050.png", "SCERT-Tripura-VI p051.txt", "SCERT-Tripura-VI p051.png", "canon/README.md", "terminology.tsv"],
+      "action": "Read the existing OCR and inspected both complete page images. The adjoining p.50 definitions witness অপ্রকৃত ভগ্নাংশ, মিশ্র ভগ্নাংশ, ভাগফল, ভাগশেষ and ভাজক. These are supplementary Indian Bengali witnesses, not West Bengal certification. The original OpenStax subsection supplies the mathematics."
+    },
+    {
+      "stage": "during table, instruction and accessibility translation",
+      "examples": ["TR01", "TR02", "TR03"],
+      "read": ["SCERT-Tripura-VI p050.txt", "SCERT-Tripura-VI p051.txt", "all ten source PNGs referenced by fs-id2390912"],
+      "action": "Returned to the readable OCR while drafting. Used লবকে হর দিয়ে ভাগ করো to keep dividend/divisor direction explicit, পূর্ণসংখ্যা অংশ for the whole-number component, and explicit লব/হর in every fraction-image description. Inspected all ten source images to check their numbers, blank placeholders and division labels."
+    },
+    {
+      "stage": "pre-integration lexical and mathematical check",
+      "examples": ["TR01", "TR02", "TR03", "TR04"],
+      "read": ["SCERT-Tripura-VI p050.png", "SCERT-Tripura-VI p051.txt", "complete current translation overlay"],
+      "action": "Reopened the p.50 page image and reread p.51 OCR alongside the finished overlay. Retained witnessed মিশ্র ভগ্নাংশ instead of a literal mixed-number calque. Verified all twelve source conversions with exact rational arithmetic. No government example prose or incorrect intermediate expression is copied into the translation."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "mathematical authority",
+      "evidence": "SCERT Tripura p.51 prints 5 3/7 = ((5 times 7)+3)/3 = 38/7; the intermediate denominator 3 is inconsistent.",
+      "decision": "Reject that worked conversion as mathematical authority. The preceding general verbal formula may inform terminology only. Preserve the OpenStax numbers and calculations."
+    },
+    {
+      "topic": "ID-less source text",
+      "evidence": "This subsection has instructional text in table entry and list item elements without IDs.",
+      "decision": "Use namespaced section-relative XPath keys in nodes rather than adding or inventing source IDs. Each mapped element keeps its existing children and order; array length is children plus one."
+    },
+    {
+      "topic": "linguistic MathML and table descriptions",
+      "evidence": "Seven mtext nodes contain only quotient, remainder or divisor; four table aria-labels contain English prose.",
+      "decision": "The parent explicitly approved translating these linguistic labels. This narrows the previous byte-identical MathML rule only for allowlisted mtext contents. Reverse those exact source/target substitutions and require canonical MathML equality; mathematical numbers, identifiers, operators, elements and attributes remain identical. Translate the four aria-labels as an explicit language-attribute exception."
+    },
+    {
+      "topic": "embedded source image lettering",
+      "evidence": "CNX_BMath_Figure_04_01_031_img-01.png and CNX_BMath_Figure_04_01_032_img-01.png visibly retain the source English labels divisor, quotient and remainder.",
+      "decision": "Preserve the original source assets and supply equivalent Bengali alt text and visible descriptions. Do not claim that the preserved raster lettering itself has been localized."
+    }
+  ],
+  "local_checks": {
+    "result": "passed before parent integration",
+    "paragraph_slot_arrays": 24,
+    "node_slot_arrays": 32,
+    "linguistic_mathml_labels": 7,
+    "translated_table_aria_labels": 4,
+    "translated_image_alts": 10,
+    "preserved_mathml_expressions": 48,
+    "preserved_ids": 95,
+    "source_examples": 4,
+    "source_exercises_including_examples": 12,
+    "exact_rational_conversion_checks": 12,
+    "checks": ["Every mapped node exists", "All slot counts equal children plus one", "All English linguistic mtext replacements match their exact source text", "No English words remain in XML text, tails, alt or aria-label after overlay application", "All element tags and non-linguistic attributes remain exact", "All MathML signatures match after reversing only allowlisted mtext translations"],
+    "pending": ["Parent builder integration and reader render QA", "Independent West Bengal Bengali teacher/language review", "Assistive-technology review"]
+  }
+}

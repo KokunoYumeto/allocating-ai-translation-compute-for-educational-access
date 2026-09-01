@@ -1,0 +1,230 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81287",
+  "section": "fs-id2211912",
+  "resolved_title": "Simplify Expressions with a Fraction Bar",
+  "scope": "Entire source subsection, including sign explanations, grouping procedure, five worked examples, ten practice exercises and final online-resource links; editorial record only.",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR02",
+        "TR03",
+        "WB06",
+        "WB07"
+      ],
+      "additional_page_locators": [
+        "WB-Class7-Learning-Bridge p.187 example 1(ii)/(iv): signed multiplication and division.",
+        "WB-Class7-Learning-Bridge p.191 bottom algebraic-division display: the whole numerator is grouped above the fraction bar."
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p187.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p187.png",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.png"
+      ],
+      "action": "Read actual OCR and inspected the corresponding full page images. Used TR02/TR03 for equivalent-value and lowest-terms wording; WB06/WB07 for grouped-expression steps and evaluating powers, with the actual bottom p.191 display for whole-numerator division. On p.187, used only the correct signed-operation examples, not the faulty top equality chains. The mismatched denominator in Tripura p.51's unrelated mixed-number example remains excluded."
+    },
+    {
+      "stage": "during sign, grouping and worked-step drafting",
+      "examples": [
+        "TR02",
+        "TR03",
+        "WB06",
+        "WB07"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.txt"
+      ],
+      "action": "Returned to the reduction and operation-order passages while drafting tables and prompts. Distinguished লবের রাশি সরল করো/হরের রাশি সরল করো from the final ভগ্নাংশটিকে লঘিষ্ঠ আকারে লেখো. Matched the adjacent complex-fraction overlay's ভগ্নাংশ-রেখা spelling. Explained grouping with plain Bengali: the complete expression above the line and the complete expression below it behave as separate parenthesized groups. Kept sign placement, powers and the nonzero denominator condition explicit. For the sign-selection example, stated equality of values, not merely that the selected fractions are negative."
+    },
+    {
+      "stage": "pre-admission answer, sign and accessibility review",
+      "examples": [
+        "TR02",
+        "TR03"
+      ],
+      "additional_page_locator": "WB-Class7-Learning-Bridge p.187 correct signed-operation examples 1(ii)/(iv).",
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p187.txt"
+      ],
+      "action": "Reread the targeted OCR against the page images already inspected for this unit. Rechecked signs and reduction language; no change was required. Standard-library exact Fraction parsing independently verified all three sign-selection questions and all twelve arithmetic questions, including every one of 24 displayed arithmetic solution stages. Both section images were directly inspected and fully described in Bengali. Builder translated() passes after reversing only three declared linguistic mtext sign-label substitutions; 820 elements, 111 IDs and 53 MathML expressions are preserved. The in-memory fragment has unique IDs, two nonempty image alts and no residual non-MathML English prose. Parent performs full page/mobile/offline integration."
+    }
+  ],
+  "language_gaps": [
+    "The selected Bengali canon demonstrates grouping, signed operations and powers but does not directly name all five displayed grouping symbols. রাশিকে একত্রে ধরার চিহ্ন is an explanatory editorial gloss.",
+    "ভগ্নাংশ-রেখা aligns with the adjacent module overlay. গোল বন্ধনী, বর্গবন্ধনী and বক্রবন্ধনী are provisional editorial names accompanied by the exact visible shapes ( ), [ ] and { }, so recognition does not depend on an unverified curriculum-specific naming convention."
+  ],
+  "source_observations": [
+    "Resolved exact section fs-id2211912 directly from the frozen source m81287. All 15 exercises have source solutions; all remain present.",
+    "Directly viewed original media CNX_BMath_Figure_04_03_001_img.jpg and CNX_BMath_Figure_04_03_002_img.jpg. The first shows both numerator-negative and denominator-negative one-third cases. The second lists parentheses, square brackets, braces, absolute-value bars and a fraction bar with blank numerator/denominator boxes. No assets were copied or edited.",
+    "The m81268 source title is Use the Language of Algebra, matching the preserved internal link. Both final external resource URLs are retained with Bengali labels; the linked external materials themselves are not newly translated or certified by this subsection.",
+    "The negative/negative=positive display contains three linguistic mtext nodes, now ঋণাত্মক, ঋণাত্মক and ধনাত্মক. No other MathML change is made; the empty source mtext node in a choice list remains empty.",
+    "Some source mn tokens contain a subtraction sign after a preceding closing parenthesis, e.g. −3(2)−2. Verification reads the displayed mathematical subtraction while preserving the original MathML tokens exactly; no destructive token normalization was performed.",
+    "No numerical, reference or image-content erratum was found in this source subsection. source_errata is explicitly empty; inherited warnings concern only rejected canon examples, not errors introduced into the learner source."
+  ],
+  "source_errata": [],
+  "exercise_checks": [
+    {
+      "exercise_id": "fs-id1962354",
+      "target_value": "-7/8",
+      "selected_expressions": [
+        "((−7)/(8))",
+        "−((7)/(8))"
+      ],
+      "check": "exact Fraction equality; both other listed options differ"
+    },
+    {
+      "exercise_id": "fs-id2139086",
+      "target_value": "-3/5",
+      "selected_expressions": [
+        "−((3)/(5))",
+        "((3)/(−5))"
+      ],
+      "check": "exact Fraction equality; both other listed options differ"
+    },
+    {
+      "exercise_id": "fs-id1392232",
+      "target_value": "-2/7",
+      "selected_expressions": [
+        "((−2)/(7))",
+        "((2)/(−7))"
+      ],
+      "check": "exact Fraction equality; both other listed options differ"
+    },
+    {
+      "exercise_id": "fs-id1511755",
+      "source_expression": "((4+8)/(5−3))",
+      "answer": "6",
+      "verified_solution_steps": [
+        "((4+8)/(5−3))",
+        "((12)/(5−3))",
+        "((12)/(2))",
+        "6"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1562536",
+      "source_expression": "((4+6)/(11−2))",
+      "answer": "10/9",
+      "verified_solution_steps": [
+        "((10)/(9))"
+      ]
+    },
+    {
+      "exercise_id": "fs-id2583078",
+      "source_expression": "((3+5)/(18−2))",
+      "answer": "1/2",
+      "verified_solution_steps": [
+        "((1)/(2))"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1751931",
+      "source_expression": "((4−2(3))/(((2)^(2))+2))",
+      "answer": "-1/3",
+      "verified_solution_steps": [
+        "((4−2(3))/(((2)^(2))+2))",
+        "((4−6)/(4+2))",
+        "((−2)/(6))",
+        "-((1)/(3))"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1836254",
+      "source_expression": "((6−3(5))/(((3)^(2))+3))",
+      "answer": "-3/4",
+      "verified_solution_steps": [
+        "((−3)/(4))"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1603489",
+      "source_expression": "((4−4(6))/(((3)^(3))+3))",
+      "answer": "-2/3",
+      "verified_solution_steps": [
+        "−((2)/(3))"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1517642",
+      "source_expression": "(((((8−4))^(2)))/(((8)^(2))−((4)^(2))))",
+      "answer": "1/3",
+      "verified_solution_steps": [
+        "(((((8−4))^(2)))/(((8)^(2))−((4)^(2))))",
+        "(((((4))^(2)))/(64−16))",
+        "((16)/(48))",
+        "((1)/(3))"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1232520",
+      "source_expression": "(((((11−7))^(2)))/(((11)^(2))−((7)^(2))))",
+      "answer": "2/9",
+      "verified_solution_steps": [
+        "((2)/(9))"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1824485",
+      "source_expression": "(((((6+2))^(2)))/(((6)^(2))+((2)^(2))))",
+      "answer": "8/5",
+      "verified_solution_steps": [
+        "((8)/(5))"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1264472",
+      "source_expression": "((4(−3)+6(−2))/(−3(2)−2))",
+      "answer": "3",
+      "verified_solution_steps": [
+        "((4(−3)+6(−2))/(−3(2)−2))",
+        "((−12+(−12))/(−6−2))",
+        "((−24)/(−8))",
+        "3"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1379337",
+      "source_expression": "((8(−2)+4(−3))/(−5(2)+3))",
+      "answer": "4",
+      "verified_solution_steps": [
+        "4"
+      ]
+    },
+    {
+      "exercise_id": "fs-id1247119",
+      "source_expression": "((7(−1)+9(−3))/(−5(3)−2))",
+      "answer": "2",
+      "verified_solution_steps": [
+        "2"
+      ]
+    }
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "method": "Exact rational arithmetic on displayed source expressions and all source solution stages; parent translated() reversible linguistic-MathML gate; in-memory fragment residual-English and unique-ID checks.",
+    "all_elements": 820,
+    "ids": 111,
+    "mathml": 53,
+    "localized_linguistic_mtext": 3,
+    "paragraphs": 33,
+    "terms": 2,
+    "node_slot_mappings": 19,
+    "table_summaries": 4,
+    "examples": 5,
+    "exercises": 15,
+    "provided_solutions_retained": 15,
+    "source_images_inspected": 2,
+    "arithmetic_solution_stages_checked": 24,
+    "html_fragment_characters": 21566,
+    "links": 3,
+    "untranslated_non_math_prose": [],
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "independent_West_Bengal_teacher_and_language_review": "pending"
+}

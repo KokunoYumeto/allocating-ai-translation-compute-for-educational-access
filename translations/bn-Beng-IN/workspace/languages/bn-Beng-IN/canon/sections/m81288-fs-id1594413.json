@@ -1,0 +1,64 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81288",
+  "section": "fs-id1594413",
+  "source_title": "Model Fraction Subtraction",
+  "date": "2026-08-31",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81288.source.cnxml",
+  "source_sha256": "4eb4a0c85c70a9e1a10fa4a5d99dabfb9ccc14b70de18d7cbefb820764c0ae90",
+  "overlay_sha256": "aedfd200d3cf1ab1ecf1470e041c0f2ca9dcf3acc4954cf7f23bd059419f0586",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR01", "TR04"],
+      "additional_existing_locators": ["SCERT Tripura p052 addition/subtraction heading and exercise 7 question 3 shaded-region prompt"],
+      "read": ["User instructions", "Updated canon README, 17-example bank and 40-term ledger", "Full frozen fs-id1594413 XML", "Tripura p050/p051/p052 OCR and page images", "Both original source diagram images"],
+      "action": "Confirmed fraction, numerator/denominator, same-denominator and shaded-part language. The p052 heading witnesses বিয়োগ, but its worked example is addition, not a directly witnessed take-away-circle procedure. Kept the source's pizza story and all numerical relations. Newly registered WB11 concerns algebraic like terms and was not used as a witness for this non-algebraic section."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR01", "TR04"],
+      "additional_existing_locators": ["Tripura p052 subtraction heading and shaded-region instruction"],
+      "read": ["Returned to actual p052 OCR and page image after the first complete draft", "Read the accepted addition-model overlay for within-module consistency"],
+      "action": "Kept the matching মডেলের সাহায্যে title and ভগ্নাংশের বৃত্ত phrase. Explained subtraction as removing equal parts of the same-size whole. Used the visible diagram colours and the complete grey-removal sequence, not a generic illustration description. The hands-on note and both models-may-differ answer tails are translated."
+    },
+    {
+      "stage": "pre-integration check",
+      "examples": ["TR01", "TR04"],
+      "read": ["Tripura p050/p051 OCR again", "Tripura p051 page image again", "Complete overlay and all source equations"],
+      "action": "Rechecked equal-part and numerator/denominator language, learner instructions and no imported canon arithmetic. Evaluated every MathML expression; independently checked both raster equations and every source exercise answer. The worked answer is prose plus three one-fifth pieces, not a standalone 3/5 MathML answer; checked that representation explicitly. No further wording change was needed."
+    }
+  ],
+  "decisions": [
+    {"topic": "story and equal whole", "affected_locations": ["fs-id4155625"], "decision": "Keep pizza, dinner and Leonardo (লিওনার্দো); explicitly say 12 equal pieces, and keep every fraction relative to the original whole pizza. Preserve 12-5=7 followed by 7-2=5, without treating the seven remaining pieces as a new denominator."},
+    {"topic": "take-away-model explanation", "affected_locations": ["section title", "fs-id2649068", "fs-id2742102", "fs-id2174048", "eip-992"], "decision": "Use the addition section's coordinated title pattern and T031 ভগ্নাংশের বৃত্ত. Explain the model as removing some equal pieces; read twelfths as parts of a whole divided into twelve equal pieces rather than introducing an unexplained new term. The activity title and take-away explanation are editorial Bengali wording, not directly attested local activity names."},
+    {"topic": "worked solution", "affected_locations": ["fs-id807972", "Solution title", "fs-id3242637", "fs-id1632996"], "decision": "Translate difference as বিয়োগফল in the instruction and show its meaning by counting the pieces left. Preserve four one-fifth pieces, removal of one, and the remaining three one-fifth pieces. Preserve the raster-only equation 4/5-1/5=3/5 and provide its complete Bengali numerator/denominator reading in alt."},
+    {"topic": "assessment and answer tails", "affected_locations": ["fs-id1409826", "fs-id1505824", "fs-id1511314", "fs-id1693551", "fs-id3274213", "fs-id1869509"], "decision": "Both prompts ask learners to draw their model; both numerical answers remain unchanged. Translate models may differ as মডেলের চিত্র আলাদা হতে পারে and retain it after each answer. Empty slots around math-only problem paragraphs remain explicit."},
+    {"topic": "pixel-faithful accessibility", "affected_locations": ["fs-id2661634", "fs-id1632996"], "decision": "Read both actual images using the PDF skill's visual-check principle. Describe their red/pink fill as লালচে, grey removed portions as ধূসর, and all three left-to-right stages. Every raster equation receives an explicit লব/হর reading. The renderer exposes these descriptions beside the untouched images as Bengali captions; no additional media or raster alteration is needed."},
+    {"topic": "mathematics and language-source separation", "affected_locations": ["all section text and equations"], "decision": "OpenStax remains mathematical authority. TR01/TR04 and the actual p052 heading/shading prompt supply Bengali language only. The known p051 intermediate mixed-fraction denominator typo and p052 question 5 proper-fraction error are excluded. No exact local subtraction-circle worked example was claimed, and no new acquisition was needed for this elementary model."},
+    {"topic": "immutable mathematical representation", "affected_locations": ["all 19 MathML expressions", "both raster equations"], "decision": "No linguistic mtext is present, so this block needs no MathML exception: complete source and target mathematical signatures are identical. All IDs, element order, attributes other than translated alt, and source image paths are preserved."}
+  ],
+  "source_errata": [],
+  "image_checks": [
+    {"source_media_id": "fs-id2661634", "file": "CNX_BMath_Figure_04_04_006_img.jpg", "observed": "Three same-size circles, each in 12 equal sectors. First: 7 red/pink sectors. Middle: 5 red/pink plus 2 grey, retaining 5 white. Last: 5 red/pink and 7 white. Raster equation visibly includes 7/12, minus, 2/12, equals and 5/12.", "mathematical_check": "7/12-2/12=5/12; 7-2=5 sectors"},
+    {"source_media_id": "fs-id1632996", "file": "CNX_BMath_Figure_04_04_007_img.jpg", "observed": "Three same-size circles, each in 5 equal sectors. First: 4 red/pink and 1 white. Middle: 3 red/pink plus 1 grey and 1 white. Last: 3 red/pink and 2 white. Raster equation visibly includes 4/5, minus, 1/5, equals and 3/5.", "mathematical_check": "4/5-1/5=3/5; 4-1=3 sectors"}
+  ],
+  "local_checks": {
+    "result": "passed",
+    "paragraph_slot_arrays": 12,
+    "node_slot_arrays": 1,
+    "preserved_mathml_expressions": 19,
+    "preserved_ids": 29,
+    "preserved_elements": 158,
+    "source_links": 0,
+    "source_exercises": 3,
+    "source_images_and_translated_alts": 2,
+    "all_mathml_values": ["12", "7/12", "2", "1/6", "5", "5/12", "5/12", "5/12", "1/12", "1/12", "5/12", "3/5", "1/5", "1/5", "1/5", "3/8", "3/8", "1/6", "1/6"],
+    "answer_checks": {"fs-id1620548": "4/5-1/5=3*(1/5)=3/5, checked against prose and raster", "fs-id1582076": "7/8-4/8=3/8", "fs-id2804680": "5/6-4/6=1/6"},
+    "pizza_and_raster_checks": ["12-5=7", "7-2=5", "7/12-2/12=5/12", "4-1=3", "4/5-1/5=3/5"],
+    "structure": "All source paragraphs and image alts covered; node selector unique; all slots children+1. Tags, IDs, nonlinguistic attributes and complete MathML signatures exact; no English prose remains.",
+    "rendering": "Shared translated() and in-memory render_cnxml() passed, retaining both images and both visible Bengali descriptions. No build output or shared script was written."
+  },
+  "pending": ["Parent browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "One complete instructional section only. Full assignment remains ongoing; next block to be assigned by parent. No shared edits, media copies, downloads, deletions or commits. Canon is an editorial reference, not training data."
+}

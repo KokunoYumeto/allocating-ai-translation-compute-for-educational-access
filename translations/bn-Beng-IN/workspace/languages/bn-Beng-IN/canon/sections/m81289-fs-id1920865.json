@@ -1,0 +1,127 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81289",
+  "section": "fs-id1920865",
+  "resolved_title": "Convert Fractions to Equivalent Fractions with the LCD",
+  "scope": "Complete assigned subtree and translation workflow: introductory model, equivalence property, both worked examples, four practice questions with their supplied answers, four-step procedure, both table accessibility labels and all nine image descriptions.",
+  "source_sha256": "bfaa71d9e1dcfa775dd6525ba2fbc9ecf0ce17e6833d8dcaca9bb2f259361fa3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR02", "TR03", "WB02"],
+      "read": [
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "languages/bn-Beng-IN/terminology.tsv",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.png"
+      ],
+      "decision": "Read the actual OCR and both page images. TR02 explicitly links equivalent fractions to the same part of a whole and multiplying/dividing numerator and denominator by the same nonzero number. WB02's actual 9/7=(9×8)/(7×8)=72/56 example supplies a concrete same-factor Bengali explanation. Retain ledger সমতুল ভগ্নাংশ; TR02's তুল্য is a recorded regional synonym, not a reason to alternate the learner term. TR03's reduction example helps distinguish reducing a fraction from the present task of retaining a common denominator. Do not use the incorrect mixed-conversion denominator on p.51 or the inconsistent first nested-fraction calculation on p.181."
+    },
+    {
+      "stage": "during conversion steps and accessibility drafting",
+      "examples": ["TR02", "WB02"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.txt",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_026_img.jpg",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_027_img-01.png",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_027_img-02.png",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_027_img-03.png",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_027_img-04.png",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_028_img-01.png",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_028_img-02.png",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_028_img-03.png",
+        "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_028_img-04.png"
+      ],
+      "decision": "Returned to the exact same-factor passages while drafting. Inspected all nine actual source images. For each fraction, the numerator and denominator receive that fraction's same multiplier; the two fractions need not use the same multiplier as each other. Render source simplify numerators and denominators as calculating their products, not reducing the fraction again. The image descriptions identify actual constants/multipliers and their red highlighting, without the source alt's speculation that 8 might be a variable."
+    },
+    {
+      "stage": "pre-admission common-denominator and source review",
+      "examples": ["TR02", "WB02"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.txt"
+      ],
+      "decision": "Reread the same-number numerator/denominator passages after the draft passed structural checks. Confirmed that the target preserves লঘিষ্ঠ সাধারণ হর, equivalent values and the displayed unreduced denominator. Verified all six exercise conversions, including their literal target denominators, rather than accepting reduced Fraction equality alone. The two linguistic mtext conjunctions are the only mathematical-XML text substitutions; reversing them yields the exact source MathML signature."
+    }
+  ],
+  "editorial_decisions": [
+    {
+      "source_ids": ["fs-id1462486", "fs-id1171105206877"],
+      "decision": "Translate whole numbers as অঋণাত্মক পূর্ণসংখ্যা, preserving that a may be zero while b and c are explicitly nonzero. Keep the source property scope and all mathematical conditions unchanged."
+    },
+    {
+      "source_ids": ["fs-id2829004", "eip-id1168467209573", "eip-id1168466215186"],
+      "decision": "The task is to calculate numerator/denominator products while retaining the LCD, not to reduce the resulting fractions back to their originals. State that distinction explicitly in the existing warning and final procedural step. Preserve 3/12, 2/12, 64/120 and 55/120 exactly as displayed."
+    },
+    {
+      "source_ids": ["eip-543", "fs-id1171105206877"],
+      "decision": "The actual linguistic mtext values ' and ' and 'and' become ' এবং ' through the approved reversible math_text mechanism. No numeral, sign, operator, identifier, element, ID or child order changes."
+    },
+    {
+      "source_ids": ["eip-id1168467209573", "eip-id1168466119565"],
+      "decision": "The first table's original aria-label claims extra equality statements below the final 3/12 and 2/12; the actual result image and table do not show them in that location. Bengali aria describes the actual steps and outcomes without that location claim. The 15×8 image's speculative source alt is replaced by a factual description of 8 as the displayed multiplier. These are accessibility-description improvements; no correct source image is declared erroneous or altered."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_prose_typo_corrected",
+      "source_ids": ["fs-id1612378"],
+      "source_phrase": "the LCD of 1/4 when 1/6",
+      "bengali_correction": "1/4 এবং 1/6-এর লঘিষ্ঠ সাধারণ হর",
+      "evidence": "The surrounding source text, equation and model compare denominators 4 and 6 and give LCD 12; when is an English conjunction typo for and, not a mathematical condition.",
+      "policy": "Correct the Bengali conjunction only; pinned source prose, all mathematical tokens and original pixels remain preserved.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {"media_id": "fs-id2300486", "file": "CNX_BMath_Figure_04_05_026_img.jpg", "observed": "One fourth is covered by three one-twelfth tiles; one sixth by two one-twelfth tiles. The one-fourth and one-sixth tiles are not described as equal to each other."},
+    {"media_id": "eip-id1168466118450", "file": "CNX_BMath_Figure_04_05_027_img-01.png", "observed": "4×3=12; multiplier 3 is red."},
+    {"media_id": "eip-id1168469455877", "file": "CNX_BMath_Figure_04_05_027_img-02.png", "observed": "6×2=12; multiplier 2 is red."},
+    {"media_id": "eip-id1168466096938", "file": "CNX_BMath_Figure_04_05_027_img-03.png", "observed": "1/4 above (1×3)/(4×3), and 1/6 above (1×2)/(6×2); inserted factors are red."},
+    {"media_id": "eip-id1168468629691", "file": "CNX_BMath_Figure_04_05_027_img-04.png", "observed": "3/12 and 2/12 only; no further equality line appears in this image."},
+    {"media_id": "eip-id1168466119565", "file": "CNX_BMath_Figure_04_05_028_img-01.png", "observed": "15×8=120; multiplier 8 is red, not an unknown variable."},
+    {"media_id": "eip-id1168466229504", "file": "CNX_BMath_Figure_04_05_028_img-02.png", "observed": "24×5=120; multiplier 5 is red."},
+    {"media_id": "eip-id1168466884619", "file": "CNX_BMath_Figure_04_05_028_img-03.png", "observed": "(8×8)/(15×8) and (11×5)/(24×5); inserted factors 8 and 5 are red."},
+    {"media_id": "eip-id1168466138250", "file": "CNX_BMath_Figure_04_05_028_img-04.png", "observed": "64/120 and 55/120, retaining the common denominator."}
+  ],
+  "answer_checks": [
+    {"exercise_id": "fs-id2590373", "source_pair": ["1/4", "1/6"], "lcd": 12, "multipliers": [3, 2], "results": ["3/12", "2/12"], "check": "Actual source problem bound to directly inspected conversion/result image files; lcm(4,6)=12 and both exact fraction values agree."},
+    {"exercise_id": "fs-id2778298", "source_pair": ["3/4", "5/6"], "lcd": 12, "multipliers": [3, 2], "results": ["9/12", "10/12"], "check": "Actual source math strings, LCD, literal output denominators, numerator multipliers and exact Fraction equality all verified."},
+    {"exercise_id": "fs-id1972960", "source_pair": ["-7/12", "11/15"], "lcd": 60, "multipliers": [5, 4], "results": ["-35/60", "44/60"], "check": "lcm(12,15)=60; negative sign retained on the first result. Exact values and literal denominator verified."},
+    {"exercise_id": "fs-id1209196", "source_pair": ["8/15", "11/24"], "lcd": 120, "multipliers": [8, 5], "results": ["64/120", "55/120"], "check": "Actual source problem bound to directly inspected conversion/result images; lcm(15,24)=120 and both exact fraction values agree."},
+    {"exercise_id": "fs-id1405429", "source_pair": ["13/24", "17/32"], "lcd": 96, "multipliers": [4, 3], "results": ["52/96", "51/96"], "check": "Actual source strings and lcm(24,32)=96; both numerator products, literal denominators and exact values verified."},
+    {"exercise_id": "fs-id1416124", "source_pair": ["9/28", "27/32"], "lcd": 224, "multipliers": [8, 7], "results": ["72/224", "189/224"], "check": "Actual source strings and lcm(28,32)=224; both numerator products, literal denominators and exact values verified."}
+  ],
+  "language_gaps": [
+    "The directly read examples attest equivalence and same-factor conversion, not the exact Bengali LCD term. লঘিষ্ঠ সাধারণ হর follows provisional ledger T011. A separate targeted LCM witness is not counted as read in this record; no uninspected page or peer's reading is claimed as this agent's own consultation.",
+    "সমতুল ভগ্নাংশের ধর্ম and the descriptive model wording are editorial pedagogical formulations; independent West Bengal review remains pending."
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "6531df5cb5b7ae1da76f6d472e109112bdd206912435353f1cb67f9c62556145",
+    "method": "Parent build.translated() and in-memory render_cnxml(study_labels=True), exact source exercise/solution-ID relationship, unique HTML IDs, all six LCD/conversion checks, and direct inspection of all nine original images. Original MathML is exact after reversing only the two declared linguistic mtext conjunctions. No shared-script, generated-output or media writes.",
+    "nodes": 421,
+    "ids": 62,
+    "mathml": 42,
+    "linguistic_mtext_replacements": 2,
+    "paragraphs": 20,
+    "examples": 2,
+    "exercises": 6,
+    "supplied_solutions": 6,
+    "source_absent_solutions": 0,
+    "tables": 2,
+    "translated_aria_labels": 2,
+    "node_slot_mappings": 15,
+    "images": 9,
+    "links": 0,
+    "html_fragment_characters": 15986,
+    "html_unique_ids": 62,
+    "english_prose_gate": "passed",
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent full-page integration and actual desktop/narrow visual review remain required. This entire subsection is complete as a draft; the assigned corpus remains ongoing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

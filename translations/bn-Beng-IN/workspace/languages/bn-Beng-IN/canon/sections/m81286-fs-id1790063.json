@@ -1,0 +1,33 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81286",
+  "section": "fs-id1790063",
+  "block_kind": "key_concepts",
+  "date": "2026-08-30",
+  "source_sha256": "7dab4be4d267ccd47f23df46e9b6a4b90a25c5d8b371e14b5947846af126b249",
+  "source_path": "downloads/canonical-prealgebra/modules/m81286/index.cnxml",
+  "overlay_sha256": "12ce34c07026979cd3cdc89a2901ecca7071bb57eafcf67f8e6d25f1b32af168",
+  "consultations": [
+    {"stage": "before drafting", "examples": ["WB01", "WB02", "TR02", "TR03"], "read": ["WB p181 OCR and page image", "Tripura p050/p051 OCR", "current terminology ledger"], "action": "Checked actual equivalent-fraction and simplest-form vocabulary. WB p181 has ব্যস্ত অনুপাত but does not establish the exact term for a number's reciprocal; no such attribution is claimed."},
+    {"stage": "during key-concept drafting", "examples": ["WB01", "WB02", "TR02", "TR03"], "read": ["WB p181 OCR", "Tripura p051 OCR"], "action": "Returned to the canon for consistent লব/হর, গুণনীয়ক and same-operation wording. Coordinated with the parent: use গুণাত্মক বিপরীত, বিপরীত সংখ্যা and পরম মান, with reciprocal explicitly provisional and explained in plain Bengali."},
+    {"stage": "pre-integration check", "examples": ["TR01", "TR02", "TR03", "WB01"], "read": ["Tripura p050 and p051 page images", "WB p181 OCR", "complete Key Concepts overlay"], "action": "Rechecked terminology, all stated nonzero conditions and the distinction between opposite, absolute value and reciprocal. Symbolically verified all five source property identities and tested zero/nonzero cases of the comparison table."}
+  ],
+  "decisions": [
+    {"topic": "reciprocal terminology", "decision": "Use parent-coordinated গুণাত্মক বিপরীত, with the numerator/denominator swap gloss. This is provisional editorial terminology, not claimed to be quoted from WB181."},
+    {"topic": "zero restrictions", "affected_locations": ["eip-id1170322987712/item[1]", "eip-id1170326426110/row[2]"], "decision": "A reciprocal exists only for a nonzero number; the reciprocal fraction identity requires both a and b nonzero. The opposite-sign wording applies to nonzero numbers, while zero is its own opposite. Explicitly state these qualifications without changing source formulas."},
+    {"topic": "source structure", "decision": "Preserve the empty table title and all source IDs. Translate its aria-label without adding a new title. Preserve even the original whitespace in MathML identifiers; normalization is used only in independent symbolic calculations."},
+    {"topic": "scope", "decision": "This is the Key Concepts summary, including its short division formula; it does not replace or claim completion of the separate Divide Fractions instructional section or the practice blocks."}
+  ],
+  "local_checks": {
+    "result": "passed",
+    "node_slot_arrays": 19,
+    "preserved_mathml_expressions": 18,
+    "preserved_ids": 9,
+    "property_identities_proved": 5,
+    "property_checks": ["a/b=(a*c)/(b*c)", "(a*c)/(b*c)=a/b", "(a/b)*(c/d)=(a*c)/(b*d)", "(a/b)*(b/a)=1", "(a/b)/(c/d)=(a/b)*(d/c)"],
+    "domain_checks": "Original b,c,d nonzero conditions preserved; reciprocal a,b nonzero qualification explicit; tested opposite/absolute value/reciprocal sign for -3/2, 0 and 4/5 where defined",
+    "structure": "All node paths unique and slot counts valid; all tags/IDs/non-linguistic attributes/MathML exact; empty title intact; no untranslated English prose"
+  },
+  "pending": ["Parent reader integration/render QA", "Independent West Bengal language/teacher review", "Assistive-technology review"],
+  "scope": "One complete key-concept summary; the entire curriculum assignment remains ongoing. References are editorial material, not training data."
+}

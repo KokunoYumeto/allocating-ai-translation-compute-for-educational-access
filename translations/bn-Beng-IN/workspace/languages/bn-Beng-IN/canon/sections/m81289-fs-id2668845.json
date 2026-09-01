@@ -1,0 +1,41 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81289",
+  "section": "fs-id2668845",
+  "source_sha256": "bfaa71d9e1dcfa775dd6525ba2fbc9ecf0ce17e6833d8dcaca9bb2f259361fa3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR02", "TR03", "WB06", "WB07"],
+      "read": ["SCERT-Tripura-VI/p051.txt", "SCERT-Tripura-VI/p051.png", "WB-Class7-Learning-Bridge/p191.txt", "WB-Class7-Learning-Bridge/p191.png"],
+      "action": "Read actual complete OCR and both rendered pages. WB examples separate grouped expressions and evaluate powers before combining terms; use this as a register witness for simplifying the outer numerator and denominator separately. TR02/TR03 support equivalence and final common-factor reduction. Exclude Tripura's incorrect mixed-conversion denominator and WB example5's flattened printed exponents. Neither page is claimed as a direct complex-fraction terminology witness."
+    },
+    {
+      "stage": "during translation",
+      "examples": ["TR02", "TR03", "WB06", "WB07"],
+      "read": ["SCERT-Tripura-VI/p051.txt", "WB-Class7-Learning-Bridge/p191.txt", "languages/bn-Beng-IN/terminology.tsv"],
+      "action": "Returned to actual OCR after drafting the table steps. Distinguished the numerator's LCD6 from the denominator's LCD12, retaining each as a separately grouped expression. Used ঘাতযুক্ত পদটির মান নির্ণয় করো before addition; used গুণাত্মক বিপরীত for the divisor, not additive opposite. Retained source periods inside MathML and translated only external punctuation."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": ["TR02", "TR03", "WB06", "WB07"],
+      "read": ["SCERT-Tripura-VI/p051.txt: equivalence and simplest-form passages", "WB-Class7-Learning-Bridge/p191.txt: examples3–4"],
+      "action": "Reread the relevant passages against the already inspected page images. Compared the completed source/target slots and all six actual source exercises/solutions. Confirmed 1/52,1/90,272,2,2,2/7 with exact fractions; the two worked tables retain exponent/addition/division order and four original cancellation enclosures. No new solution, image or mathematical word substitution is introduced. Independent human review remains pending."
+    }
+  ],
+  "verification": {
+    "nodes": 424,
+    "ids": 42,
+    "mathml": 22,
+    "examples": 2,
+    "exercises": 6,
+    "supplied_solutions": 6,
+    "images": 0,
+    "table_summaries": 2,
+    "source_cancellation_enclosures": 4,
+    "exact_rational_answers": ["1/52", "1/90", "272", "2", "2", "2/7"],
+    "mathematical_integrity": "Exact source MathML; no linguistic mtext exceptions needed.",
+    "visual_review": "Main opened all5desktop tiles and2narrow endpoints for reader74b0116ddb87d5605302b6124ca7d61c8b5679e6c174761622a5e96d127e5b4c; all four cancellation strokes visible, nested fractions and Bengali steps readable. This is self-review, not independent human/AT validation."
+  },
+  "independent_teacher_language_learner_and_assistive_technology_review": "pending"
+}

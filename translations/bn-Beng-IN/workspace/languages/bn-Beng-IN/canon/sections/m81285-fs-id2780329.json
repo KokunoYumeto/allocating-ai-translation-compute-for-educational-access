@@ -1,0 +1,51 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81285",
+  "section": "fs-id2780329",
+  "scope": "Translation editorial consultations only; not learner records, teacher certification or model-training data",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR01", "TR02", "TR03", "WB02"],
+      "additional_same_page_locators": ["SCERT Tripura VI p.50: proper/improper/mixed fraction definitions and 11/3 = 3 2/3 model", "SCERT Tripura VI p.51: mixed-to-improper formula above TR02"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.png"],
+      "action": "Read complete relevant OCR pages and visually checked the page images. Adopted প্রকৃত ভগ্নাংশ, অপ্রকৃত ভগ্নাংশ and মিশ্র ভগ্নাংশ from the Tripura definitions, with লব/হর also corroborated by WB02. Retained source mathematical numbers and models. Rejected the printed denominator 3 in Tripura p.51's 5 3/7 intermediate calculation; it must be 7, and no part of that worked calculation is copied into the translation."
+    },
+    {
+      "stage": "during definition and worked-model drafting",
+      "examples": ["TR01", "WB02"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p181.txt"],
+      "action": "Reread the fraction definitions and the explicit লব/হর wording while writing the mixed-number definition and model descriptions. Used এক পূর্ণ তিন-পঞ্চমাংশ for the spoken mixed-number label; selected অঋণাত্মক পূর্ণসংখ্যা for source whole number so it cannot be confused with the full signed integer domain. Kept same-sized pieces visible in every model explanation and করো/লেখো in learner instructions."
+    },
+    {
+      "stage": "pre-admission terminology, alt and structural review",
+      "examples": ["TR01", "TR02", "TR03"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt"],
+      "action": "Reread the OCR definitions against the page images inspected earlier, then checked all twelve source model images and the translated prose. Retained mixed/proper/improper terms and corrected the figure-075 alt mismatch. Revised figure-030 alt to describe its actual written fifths labels rather than inventing typeset numerator/denominator labels. English text baked into retained source images is not removed, but its meaning is provided by the Bengali alt. Applied all paragraph and XPath slots in memory: 33 paragraphs, 12 alt descriptions, 49 MathML expressions, 471 total elements and 105 IDs; all source structure and non-alt attributes match, the three mtext replacements reverse exactly, and no untranslated English words remain in node text/tails. A final prose pass simplified the লব/হর comparison and opening mixed-number explanation. Parent must still integrate and render the output; independent language/teacher and assistive-technology review remains pending."
+    }
+  ],
+  "source_issues": [
+    {
+      "id": "fs-idm267178704",
+      "evidence": "Direct inspection of downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_01_075_img.jpg: seven sectors per circle, all seven shaded on left and two on right. Source problem fs-id3274214 is 9/7 and answer fs-id2444943 is 1 2/7.",
+      "decision": "Correct only the Bengali alt description from the erroneous English 8/8 + 3/8 to the actual 7/7 + 2/7 drawing. Preserve image and MathML."
+    },
+    {
+      "id": "fs-id1152212",
+      "evidence": "Three source m:mtext elements contain sixths minus, sixths is and sixths.",
+      "decision": "Integrating parent authorized math_text mappings for linguistic mtext only. Bengali targets read the fixed 11, 6 and 5 tokens as numbers of one-sixth pieces, with subtraction expressed in the unchanged source order. No identifiers, numbers, operators, attributes or MathML elements change; reversing the three explicit replacements must recover original MathML exactly."
+    }
+  ],
+  "verification": {
+    "date": "2026-08-30",
+    "method": "In-memory stdlib XML overlay application and source comparison; no generated output or source modification",
+    "paragraphs": 33,
+    "media_alt_descriptions": 12,
+    "mathml_expressions": 49,
+    "linguistic_mtext_replacements": 3,
+    "all_elements": 471,
+    "preserved_ids": 105,
+    "status": "passed_before_parent_integration"
+  },
+  "independent_West_Bengal_teacher_and_language_review": "pending"
+}

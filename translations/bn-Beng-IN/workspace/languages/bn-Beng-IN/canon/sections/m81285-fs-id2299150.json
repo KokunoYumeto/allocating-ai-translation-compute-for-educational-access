@@ -1,0 +1,79 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81285",
+  "section": "fs-id2299150",
+  "scope": "Entire section-exercises block, including practice, everyday mathematics, writing exercises and self-check; one increment in the ongoing entire assignment.",
+  "consultations": [
+    {
+      "stage": "pre-draft",
+      "existing_exemplars": ["TR01", "TR02", "TR06"],
+      "ocr_read": ["SCERT-Tripura-VI/p050.txt", "SCERT-Tripura-VI/p051.txt", "SCERT-Tripura-VI/p052.txt"],
+      "images_inspected": ["SCERT-Tripura-VI/p052.png"],
+      "decision": "Read the complete source exercise/solution sequence and every English-bearing text slot. Reread local fraction names, equivalent-fraction terms and the number-line instruction witness. The already inspected p50/p51 pages remain the mathematical notation check; p52 exercise 3 supports shaded-region question register and exercise 4 supports সংখ্যারেখায় অবস্থান দেখাও. Retain প্রকৃত/অপ্রকৃত ভগ্নাংশ, মিশ্র সংখ্যা, সমতুল ভগ্নাংশ and number-line language consistently. Do not accept OCR strings as arithmetic authority."
+    },
+    {
+      "stage": "source-image verification during drafting",
+      "source_images_inspected": ["CNX_BMath_Figure_04_01_201_img.jpg", "CNX_BMath_Figure_04_01_202_img.jpg", "CNX_BMath_Figure_04_01_203_img.jpg", "CNX_BMath_Figure_04_01_205_img.jpg", "CNX_BMath_Figure_04_01_207_img.jpg", "CNX_BMath_Figure_04_01_209_img.jpg", "CNX_BMath_Figure_04_01_016_img.jpg", "CNX_BMath_Figure_04_01_213_img.jpg", "CNX_BMath_Figure_04_01_215_img.jpg", "CNX_BMath_Figure_04_01_217_img.jpg", "CNX_BMath_Figure_04_01_218_img.jpg", "CNX_BMath_Figure_04_01_219_img.jpg", "CNX_BMath_Figure_04_01_221_img.jpg", "CNX_BMath_Figure_04_01_223_img.jpg", "CNX_BMath_Figure_04_01_225_img.jpg", "CNX_BMath_Figure_04_01_227_img.jpg", "CNX_BMath_Figure_04_01_229_img.jpg", "CNX_BMath_Figure_04_01_231_img.jpg", "CNX_BMath_Figure_04_01_235_img.jpg", "CNX_BMath_Figure_04_01_234_img.jpg", "CNX_BMath_Figure_AppB_019.jpg"],
+      "decision": "Inspected all 21 existing images without copying or editing them. Source figure235 English alt initially suggested a wrong answer diagram, but actual pixels correctly show positive 1 3/4 and negative 1 3/5, matching the question. Corrected that preliminary interpretation immediately to the parent: only English alt is wrong. Figure218(b) also misnames the right square as a circle. Bengali alt describes actual pixels. Figure227 arranges two full circles above one partial circle, so use upper/lower rather than the source's left/right wording. Number-line markers are described without depending on their color. The complete English self-check image has seven objectives and three response options, all transcribed into Bengali alt."
+    },
+    {
+      "stage": "canon-driven draft revision",
+      "existing_exemplars": ["WB02", "TR02", "TR06"],
+      "ocr_reread": ["WB-Class7-Learning-Bridge/p181.txt: question 4 solution", "SCERT-Tripura-VI/p051.txt: equivalent-fractions passage", "SCERT-Tripura-VI/p052.txt: shaded-region and number-line instructions"],
+      "decision": "Returned to the actual readable witness passages while drafting and revising practice instructions. Preserved numerator/denominator meanings and used explicit counts of unit fractions: এক-ষষ্ঠাংশের 7টি ভাগ means seven sixths, not one-seventh. Used রঙ করা consistently for shaded portions and সংখ্যারেখায় অবস্থান দেখাও for plotting. Retained the learner-facing করো/লেখো register rather than importing a different national locale's wording."
+    },
+    {
+      "stage": "pre-QA and handoff review",
+      "existing_exemplars": ["WB02", "TR02", "TR06"],
+      "ocr_reread": ["WB-Class7-Learning-Bridge/p181.txt: numerator/denominator operation", "SCERT-Tripura-VI/p051.txt: equivalent-fraction terminology", "SCERT-Tripura-VI/p052.txt: exercise 3 and exercise 4"],
+      "decision": "Read all 37 assembled Bengali prose nodes and their embedded source MathML, including the seven XPath-translated emphasis/list nodes. Added a separator after the inline music/baking headings for readable sentence boundaries. Rechecked the self-check's seven rows and three response columns against its image. Ran the current shared build.translated function twice without writing output files; exact structural/MathML preservation and deterministic serialization pass. Arithmetic assertions are bound to actual source exercise IDs; diagrams were separately checked visually. The initial figure235 warning was not propagated into a false claim of a wrong source answer."
+    }
+  ],
+  "terminology_decisions": [
+    {"english": "shade parts / shaded fraction", "bengali": "অংশ রঙ করো / রঙ করা অংশের ভগ্নাংশ", "evidence": "TR06 source p52 exercise 3 uses shaded-region fraction questions; editorial wording uses রঙ করা for consistency with the learner units."},
+    {"english": "thirds, eighths, sixths, fifths, fourths", "bengali": "এক-তৃতীয়াংশের ...টি ভাগ; corresponding denominator names", "evidence": "TR01/TR02 fraction framework; explicit count-of-unit-fractions prevents confusing the item count with its denominator."},
+    {"english": "mixed number", "bengali": "মিশ্র সংখ্যা", "witnessed_synonym": "মিশ্র ভগ্নাংশ", "evidence": "Project continuity and Tripura p50; negative mixed numbers mean the opposite of the whole positive mixed number."},
+    {"english": "measure, quarter note, count", "bengali": "মেজার, কোয়ার্টার নোট, কাউন্ট", "evidence": "Provisional transliterations preserving the source's Western music/dance context. No domain-specific Bengali music witness has been inspected; do not equate these automatically with Indian tala/matra terminology."},
+    {"english": "fudge, walnuts, cup", "bengali": "ফাজ নামের মিষ্টি, আখরোট, কাপ", "evidence": "Source-context preservation; do not substitute a regional sweet or convert the original cup measurement."}
+  ],
+  "source_errata_policy": "The overlay's source_errata array records only demonstrated English-alt errors. Original problem MathML and images are unchanged. In particular, source figure235 is not an incorrect answer image; its Bengali alt corrects the English alt to match the already-correct pixels.",
+  "coverage_limits": [
+    "The 38 source exercises with no solution remain without source solutions; no completion claim counts invented answers as original material.",
+    "The source self-check is self-report, not validated placement, teacher certification or assignment completion. Source encouragement statements are translated source prose, not evaluator findings.",
+    "The music exercise premises are retained rather than independently certified musical analysis; topic-specific Bengali terminology and pedagogical fit need review.",
+    "The original self-check image remains English pixels. The Bengali alt/visible description fully supplies its seven objectives and three choices, but this does not claim a localized interactive form.",
+    "Tripura witnesses are supplementary Indian Bengali references, not proof of West Bengal curriculum alignment."
+  ],
+  "validation": {
+    "status": "pass_with_documented_source_alt_corrections",
+    "method": "Python -B read-only calls to current scripts/build.py translated(overlay_path), repeated target serialization, render_cnxml in memory, source-bound rational assertions and existing-media presence checks. Command exited 0; no output file or bytecode written.",
+    "paragraphs": 37,
+    "xpath_nodes": 7,
+    "source_exercises": 76,
+    "supplied_source_solutions": 38,
+    "exercises_without_source_solutions_preserved": 38,
+    "cnxml_nodes": 1105,
+    "preserved_ids": 349,
+    "mathml_expressions_unchanged": 93,
+    "media_descriptions": 21,
+    "source_media_visually_inspected": 21,
+    "rational_checks": 26,
+    "arithmetic_exercise_checks": ["fs-id2594218", "fs-id1406921", "fs-id2933570", "fs-id4131920", "fs-id3324396", "fs-id2209823", "fs-id1566988", "fs-id2136204", "fs-id1595636:1", "fs-id1595636:2", "fs-id1595636:3", "fs-id2298148:1", "fs-id2298148:2", "fs-id2298148:3", "fs-id1884643:1", "fs-id1884643:2", "fs-id1884643:3", "fs-id2743398", "fs-id1571433", "fs-id1949460", "fs-id2379395", "fs-id2139014", "fs-id1949811", "fs-id1823331", "fs-id2149259:a", "fs-id2149259:b"],
+    "arithmetic_scope": "Eight actual mixed/improper conversion answers, nine equivalent-fraction alternatives, three unit-fraction counts, four negative-number comparisons and two music ratios using the stated premises. Source image answers were separately reviewed visually. Open responses and absent source solutions are not presented as automated arithmetic passes.",
+    "overlay_sha256": "e7e0354b45b01b8e6d371499a7e413508cd017a10dad7ebb82fd16540b6facae",
+    "source_sha256": "7a39fccee8a29712929f04a6ac02f4e2646e46a6920f6e8b06f56de40b7ffad4",
+    "builder_sha256": "d794d260dc5862d6e7f2298e69d3f05bd5b5ac5082906ea5c5ef42818dd11516",
+    "in_memory_rendered_sha256": "c2b241a814f746f2c82db41851f4c5315d09b4057757a71ef632cee6904efef4",
+    "in_memory_rendered_utf8_bytes": 61298,
+    "checks": ["Shared translated() gate passes", "Exact child-slot lengths and unique XPath resolution", "Every source tag, ID, non-alt attribute and child order preserved", "All 93 source MathML expressions exact", "All circled-label texts preserved", "All literal numeric leaf answers preserved", "No omitted or invented source solutions", "No untranslated English prose", "Repeated translation serialization identical", "In-memory renderer supports entire subtree", "All 21 referenced source media exist locally"],
+    "not_proven": ["Rendered browser layout", "Independent Bengali accuracy", "Music-domain assumptions", "Assistive-technology usability", "Validated self-assessment"]
+  },
+  "next_block_suggestion": {
+    "module": "m81286",
+    "section": "fs-id1390478",
+    "title": "Find Reciprocals",
+    "evidence": "Read the actual canonical m81286 top-level section list and current overlay filenames; no corresponding overlay was present at this handoff check.",
+    "coordination": "Parent must check current ownership before assigning; no new block was edited by this subagent. Entire assignment remains ongoing."
+  },
+  "pending": ["Independent West Bengal teacher/language review", "Music-context terminology review", "Learner comprehension validation", "Assistive-technology review", "Parent rendered integration QA"]
+}

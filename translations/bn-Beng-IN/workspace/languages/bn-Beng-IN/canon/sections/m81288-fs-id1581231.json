@@ -1,0 +1,20 @@
+{
+  "locale": "bn-Beng-IN", "module": "m81288", "section": "fs-id1581231", "block_kind": "readiness_note", "date": "2026-08-31",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81288.source.cnxml",
+  "source_sha256": "4eb4a0c85c70a9e1a10fa4a5d99dabfb9ccc14b70de18d7cbefb820764c0ae90",
+  "overlay_sha256": "a56ce9e15750b613de33080bf3de1c751106877db106b9f0f0ce697989be568e",
+  "consultations": [
+    {"stage": "before drafting", "examples": ["TR01", "TR04"], "read": ["Tripura p050/p051 OCR and page images", "Full frozen readiness note", "Actual CNX_BMath_Figure_04_02_037a_img.jpg"], "action": "In the shared four-block consultation, confirmed whole/part and numerator/denominator language. Inspected the exact answer image: three grey quadrants and one white quadrant."},
+    {"stage": "during drafting", "examples": ["TR01", "TR04"], "read": ["Tripura p050/p051 OCR again", "Source prompt and anonymous media structure"], "action": "Explained model as drawing the fraction, without giving away the shading procedure in the question. Described equal parts and explicit লব/হর in the solution image alt."},
+    {"stage": "pre-integration check", "examples": ["TR01", "TR04"], "read": ["Tripura p050/p051 page images again", "Final overlay and exact review target"], "action": "Verified the source problem is 3/4, the image shades 3 of 4 equal parts, and there is still no answer MathML node or invented media ID. No language change needed."}
+  ],
+  "decisions": [
+    {"topic": "model prompt", "affected_locations": ["fs-idm176727504"], "decision": "Use মডেল with the explicit gloss চিত্র দিয়ে ভগ্নাংশটি দেখাও. Preserve the original review target m81285/fs-id2436750, which exists as the circle-shading example."},
+    {"topic": "image-only answer", "affected_locations": ["fs-idm203797184", ".//c:media"], "decision": "The source provides an answer image but no answer MathML. Preserve that representation and anonymous media node. Use the unique section-relative alt_paths selector, translate all meaning into Bengali, and retain original image pixels and path."},
+    {"topic": "canon boundary", "decision": "TR01/TR04 support Bengali fraction language, not a replacement model or West Bengal certification. The known p051 mixed-fraction intermediate-denominator error remains excluded."}
+  ],
+  "image_checks": [{"file": "CNX_BMath_Figure_04_02_037a_img.jpg", "source_xpath": ".//c:media", "observed": "A circle divided by perpendicular diameters into four equal quadrants. Upper-left quadrant white; other three grey. No raster equation or words.", "answer": "3/4"}],
+  "local_checks": {"result": "passed", "paragraph_slot_arrays": 2, "unique_alt_path_selectors": 1, "preserved_mathml_expressions": 1, "preserved_ids": 6, "preserved_elements": 16, "source_exercises": 1, "source_images": 1, "answer_mathml_nodes": 0, "review_target": "m81285/fs-id2436750 exists", "structure": "All slots children+1; tags, IDs, attributes except alt and MathML exact; no English prose remains; media still anonymous", "builder": "Shared translated() and in-memory render_cnxml() passed; one image and its visible Bengali description retained"},
+  "pending": ["Parent browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "One complete readiness note only. Full assignment ongoing; no shared edits, downloads, media copies, deletions or commits. Canon is editorial reference, not training data."
+}

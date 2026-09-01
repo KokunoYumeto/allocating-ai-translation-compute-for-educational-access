@@ -1,0 +1,18 @@
+{
+  "locale": "bn-Beng-IN", "module": "m81287", "section": "fs-id1352037", "block_kind": "readiness_note", "date": "2026-08-31",
+  "source_path": "downloads/canonical-prealgebra/modules/m81287/index.cnxml",
+  "source_sha256": "4a029d82953fcba05aeec289445bc21ffc3364ce68b866c56404de3785d4d076",
+  "overlay_sha256": "fa1960a9309bb44e25148b6931625aa90bbb567f02f965993b0434224d898485",
+  "consultations": [
+    {"stage": "before drafting", "examples": ["WB01", "WB02", "TR03"], "read": ["WB p181 OCR and page image", "Tripura p051 OCR and page image", "actual source readiness note"], "action": "Confirmed গুণ and লঘিষ্ঠ আকার procedure wording; did not use the witness's faulty question-1 arithmetic."},
+    {"stage": "during drafting", "examples": ["TR03"], "read": ["Tripura p051 OCR", "source multiplication and answer"], "action": "Returned to simplest-form vocabulary while preserving both fractions and their order."},
+    {"stage": "pre-integration check", "examples": ["WB01", "WB02", "TR03"], "read": ["WB p181 page image", "Tripura p051 OCR", "final overlay"], "action": "Rechecked the instruction, exact-rational product and actual linked review example. No terminology change needed."}
+  ],
+  "decisions": [
+    {"topic": "multiplication and simplest form", "decision": "Keep 1/8 times 2/3 = 2/24 = 1/12. Original answer and both nonzero denominators are preserved."},
+    {"topic": "review link", "decision": "Preserve m81286/fs-id1863495; verified that this exact target exists as an example. Translate prose outside MathML only."}
+  ],
+  "local_checks": {"result": "passed", "paragraph_slot_arrays": 2, "preserved_mathml_expressions": 2, "preserved_ids": 6, "source_exercises": 1, "source_images": 0, "arithmetic": "(1/8)*(2/3)=1/12", "review_target": "m81286/fs-id1863495 exists", "structure": "All slots children+1; tags/IDs/attributes/MathML exact; no English prose remains", "builder": "Shared translated() and in-memory render_cnxml() passed"},
+  "pending": ["Parent browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "One complete readiness note only. Full assignment ongoing; no media, shared scripts or commits. Canon is editorial reference, not training data."
+}

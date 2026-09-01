@@ -1,0 +1,93 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81286",
+  "section": "fs-id1408851",
+  "date": "2026-08-30",
+  "scope": "Editorial consultation and local checks for the complete Simplify Fractions subsection. The whole assigned curriculum remains ongoing; this is not a training dataset.",
+  "source": {
+    "workspace_relative_path": "downloads/canonical-prealgebra/modules/m81286/index.cnxml",
+    "sha256": "7dab4be4d267ccd47f23df46e9b6a4b90a25c5d8b371e14b5947846af126b249",
+    "upstream_commit": "38cae454e644abf9f0a623e876994553881597c9",
+    "small_source_witness_freeze": "Parent integration pending"
+  },
+  "overlay": {
+    "path": "translations/m81286-fs-id1408851.bn-Beng-IN.json",
+    "sha256": "f4146adccd4485acf274f3a7349c498938b33999f8bcd89a8c3ad10674c734f3"
+  },
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["WB01", "TR03"],
+      "read": ["WB-Class7-Learning-Bridge p181.txt", "WB-Class7-Learning-Bridge p181.png", "SCERT-Tripura-VI p051.txt", "SCERT-Tripura-VI p051.png", "canon/README.md", "terminology.tsv"],
+      "action": "Read the OCR and visually inspected both complete pages. WB01 supports লঘিষ্ঠ আকারে প্রকাশ and equal division by a nonzero quantity; TR03 explicitly states the '1 ছাড়া' common-factor condition and illustrates 12/16 to 3/4. Kept the Bengali sources as register/terminology witnesses and the pinned OpenStax subsection as mathematical authority."
+    },
+    {
+      "stage": "during definition, cancellation and worked-step translation",
+      "examples": ["WB01", "TR03"],
+      "read": ["WB-Class7-Learning-Bridge p181.txt", "SCERT-Tripura-VI p051.txt", "all eight source images referenced by fs-id1408851"],
+      "action": "Reread both OCR pages while drafting. Used common-factor division wording rather than suggesting subtraction or a change in the fraction's value. Inspected every source image and found two missing raster minus signs, as well as incorrect original alt descriptions of crossed-out factors. Retained the original pixels with explicitly labelled Bengali editorial warnings."
+    },
+    {
+      "stage": "pre-integration lexical, domain and arithmetic check",
+      "examples": ["WB01", "TR03"],
+      "read": ["SCERT-Tripura-VI p051.png", "WB-Class7-Learning-Bridge p181.txt", "current translation overlay"],
+      "action": "Reopened the Tripura page image and reread the West Bengal OCR at final check. Confirmed consistent লঘিষ্ঠ আকার, গুণনীয়ক, লব and হর, and the exception for the common factor 1. Verified every exercise and all worked MathML stages exactly; tested legal variable domains including allowed zero numerators. The known Tripura mixed-number misprint remains excluded."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "shortened source definition",
+      "affected_source_locations": ["fs-id1938440", "fs-id1302300/item[1]", "fs-id607076 including its emphasis child"],
+      "evidence": "The opening source paragraph eip-325 correctly says no common factors other than 1, while the later shortened definitions and the 2/3 bullet omit that exception. TR03 states the exception explicitly.",
+      "decision": "Make '1 ছাড়া' explicit at all affected locations. This corrects the shortened wording without changing the source mathematics. The parent approved the correction."
+    },
+    {
+      "topic": "nonzero conditions",
+      "affected_source_locations": ["fs-id2200239", "fs-id2288046"],
+      "evidence": "The immediately preceding Equivalent Fractions Property requires b and c to be nonzero. The algebraic example cancels x from 5xy/(15x).",
+      "decision": "Repeat the nonzero-denominator/common-factor condition in plain Bengali. Do not require an uncancelled numerator to be nonzero. Tested y=0 with x nonzero, and x=0 with y nonzero in the separate 7x/(7y) exercise."
+    },
+    {
+      "topic": "missing raster minus signs",
+      "affected_source_locations": ["eip-id1168466600046/row[2]", "eip-id1168469353476", "eip-id1168469451793"],
+      "evidence": "CNX_BMath_Figure_04_02_006_img.jpg and CNX_BMath_Figure_04_02_007_img.jpg visibly omit a minus sign. The surrounding canonical MathML begins at -56/32 and ends at -7/4.",
+      "decision": "Preserve source pixels, describe the actual images accurately and add an explicit adjacent Bengali editorial warning to retain the negative sign at both stages. No silent pixel or mathematical rewrite. The parent approved this treatment."
+    },
+    {
+      "topic": "incorrect original alternative text",
+      "affected_source_locations": ["eip-id1168467316038", "eip-id1168466150744"],
+      "evidence": "The original English alts call crossed-out 5 and 6 an x; inspection shows numeric common factors, not an algebraic variable.",
+      "decision": "Name the visible numeric factors correctly in Bengali. All fraction readings explicitly identify লব and হর; source colors are described generically as highlighted where hue is irrelevant."
+    },
+    {
+      "topic": "linguistic attributes and MathML",
+      "evidence": "Four table aria-labels, one table summary and one MathML mtext ('and') contain English prose.",
+      "decision": "Use the parent's approved aria_labels, summaries and math_text schema. Reverse the single allowlisted mtext substitution for canonical MathML comparison. Preserve every other structural attribute, identifier, number, operator and child order. The algebraic summary names common factors rather than misleadingly calling them additive terms."
+    },
+    {
+      "topic": "provisional local terminology",
+      "decision": "Use গুণনীয়ক-বৃক্ষ for factor tree and ভগ্নাংশের সংক্ষেপণ for reducing a fraction. These are editorial lexical choices, not claimed as quotations from WB01/TR03. Independent West Bengal review remains pending."
+    }
+  ],
+  "local_checks": {
+    "result": "passed before parent integration",
+    "paragraph_slot_arrays": 38,
+    "node_slot_arrays": 30,
+    "linguistic_mathml_labels": 1,
+    "translated_table_aria_labels": 4,
+    "translated_table_summaries": 1,
+    "translated_image_alts": 8,
+    "preserved_mathml_expressions": 51,
+    "preserved_ids": 126,
+    "source_examples": 5,
+    "source_exercises_including_examples": 15,
+    "exact_rational_exercise_checks": 12,
+    "exact_symbolic_exercise_checks": 3,
+    "worked_mathml_expression_or_equality_side_checks": 15,
+    "legal_domain_substitution_checks": 9,
+    "factorization_checks": ["10=2*5", "15=3*5", "18=3*6", "24=4*6", "56=7*8", "32=4*8", "210=21*10=2*3*5*7", "385=5*77=5*7*11", "210/385=6/11"],
+    "exercise_results_in_source_order": ["2/3", "2/3", "3/4", "-3/4", "-3/4", "-2/3", "-7/4", "-9/7", "-9/5", "6/11", "23/40", "5/8", "y/3 (x nonzero)", "x/y (y nonzero)", "a/b (b nonzero)"],
+    "checks": ["Every overlay node exists", "Each slot array has children plus one entries", "No English words remain in XML text, tails, alt, aria-label or summary after applying the overlay", "MathML compares exactly after reversing the one allowlisted linguistic substitution", "Every element and all non-linguistic attributes remain exact", "All source exercise values match their final answers exactly as rational monomials", "All worked MathML stages match their original problems", "Both missing-minus warnings are visible Bengali text"],
+    "pending": ["Parent source-witness freeze and builder integration", "Reader visual QA", "Independent West Bengal Bengali teacher/language review", "Assistive-technology review"]
+  }
+}

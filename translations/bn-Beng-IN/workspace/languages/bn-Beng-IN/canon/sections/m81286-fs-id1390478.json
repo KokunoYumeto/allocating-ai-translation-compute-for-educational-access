@@ -1,0 +1,91 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81286",
+  "section": "fs-id1390478",
+  "date": "2026-08-30",
+  "source_path": "downloads/canonical-prealgebra/modules/m81286/index.cnxml",
+  "source_sha256": "7dab4be4d267ccd47f23df46e9b6a4b90a25c5d8b371e14b5947846af126b249",
+  "overlay_sha256": "1a810029498ccb90ae90a1a4c8ec809272e37e68cbf1edc24e488dfaac5f6ca9",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["WB01", "WB02", "TR01"],
+      "additional_existing_locators": ["WB PDF p180, printed p1, points 7 and 9"],
+      "read": ["WB p180/p181 OCR and page images", "Tripura p050 OCR and page image", "current terminology ledger", "source subsection in full"],
+      "action": "Confirmed লব/হর, লঘিষ্ঠ আকার and learner-facing করো/লেখো register. WB p180 directly explains swapped ratio terms as ব্যস্ত অনুপাত, but neither that page nor WB p181 establishes the selected number-reciprocal wording গুণাত্মক বিপরীত. Kept the parent-coordinated term explicitly editorial and supplied its plain-language gloss."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR01", "WB02"],
+      "additional_existing_locators": ["WB PDF p180 points 7 and 9", "WB PDF p187, printed p8, example 1(ii) and true/false item 4(a)"],
+      "read": ["WB p180 OCR", "Tripura p050 OCR", "WB p187 OCR and page image", "all three original subsection JPGs"],
+      "action": "Returned to the actual numerator/denominator wording while composing the reciprocal gloss and table steps. WB p187's correct signed-product example supports the sign vocabulary, not a claim of exact reciprocal terminology. Read every cell in both raster answer tables and translated the English headings plus all values into explicit Bengali numerator/denominator descriptions."
+    },
+    {
+      "stage": "pre-integration check",
+      "examples": ["TR03"],
+      "additional_existing_locators": ["WB PDF p180 points 7 and 9"],
+      "read": ["WB p180 page image", "Tripura p051 OCR and page image", "complete Bengali overlay", "source MathML and all worked/practice answers"],
+      "action": "Checked লঘিষ্ঠ আকার against the actual witness, reviewed the distinction between opposite and reciprocal, and rechecked zero conditions and each image-only answer. The known Tripura mixed-number intermediate-denominator error remains excluded. No new terminology change was needed."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "coordinated reciprocal terminology",
+      "affected_ids": ["term-00007", "term-00008", "fs-id1804020", "fs-id2299691"],
+      "decision": "Use গুণাত্মক বিপরীত with the definition লব ও হরের স্থান বদলালে পাওয়া ভগ্নাংশ. Invert is rendered as the action লব ও হরের স্থান বদলাও. Distinguish বিপরীত সংখ্যা and পরম মান consistently. Direct West Bengal witness for the exact reciprocal term remains a gap, not an invented attribution."
+    },
+    {
+      "topic": "zero and sign qualification",
+      "affected_ids": ["fs-id1804020", "fs-id1183695", "fs-id2299691", "fs-id2224098", "fs-id1394345", "fs-id1932057", "fs-id1474540"],
+      "decision": "Preserve both original a and b nonzero conditions. Explicitly qualify the shortened comparison table: an opposite changes the sign of a nonzero number, zero is its own opposite, and zero has no reciprocal. Absolute value at zero is zero. A negative reciprocal remains negative; do not confuse it with the positive opposite. The general image formula is described on its legal nonzero domain."
+    },
+    {
+      "topic": "integer in the fraction chart",
+      "affected_ids": ["fs-id1627754"],
+      "decision": "Render each fraction as each number because the actual source chart includes -5. This clarifies the source instruction without changing any example or answer."
+    },
+    {
+      "topic": "complete raster-text access",
+      "affected_ids": ["fs-id1474540", "fs-id1167906110247", "fs-idm236192864"],
+      "images_inspected": ["CNX_BMath_Figure_04_02_035_img.jpg", "CNX_BMath_Figure_04_02_037_img.jpg", "CNX_BMath_Figure_04_02_040_img.jpg"],
+      "decision": "Keep source pixels unchanged. The first image's positive/both positive/and/both negative labels and both numerical products are fully conveyed in Bengali. Both answer-table images have all headings and all 16 cells described, including 12 answer cells per image. Alt text is visibly exposed by the shared reader; this was checked with an in-memory HTML render. No image copy, edit or external download was performed."
+    },
+    {
+      "topic": "linguistic MathML exception",
+      "affected_ids": ["fs-id1834573"],
+      "decision": "Translate the sole linguistic mtext and to এবং through the approved math_text allowlist. This is an explicit exception to earlier byte-identical MathML wording: reverse that substitution and assert exact canonical MathML signatures. All numeric tokens, identifiers, operators, structure, attributes and IDs remain unchanged."
+    },
+    {
+      "topic": "source-witness error exclusion",
+      "decision": "Do not copy the erroneous intermediate denominator in Tripura p051's mixed-number conversion, the faulty WB p181 question-1 intermediate calculations, or WB p187's erroneous top subtraction lines. Use only the separately correct witnessed wording/examples. The OpenStax subsection's worked and practice arithmetic was checked independently and no arithmetic error was found."
+    }
+  ],
+  "local_checks": {
+    "result": "passed",
+    "paragraph_slot_arrays": 22,
+    "node_slot_arrays": 37,
+    "translated_title_keys": 3,
+    "translated_terms": 2,
+    "translated_alt_attributes": 3,
+    "translated_aria_labels": 4,
+    "translated_table_summaries": 4,
+    "allowlisted_linguistic_mtext": 1,
+    "preserved_mathml_expressions": 88,
+    "preserved_ids": 69,
+    "source_exercises": 6,
+    "source_examples": 2,
+    "source_practice_exercises": 4,
+    "answer_cells_checked": 48,
+    "answer_breakdown": {"individual_reciprocals": 12, "worked_comparison_table": 12, "image_only_comparison_tables": 24},
+    "individual_reciprocal_pairs": [["4/9", "9/4"], ["-1/6", "-6"], ["-14/5", "-5/14"], ["7", "1/7"], ["5/7", "7/5"], ["-1/8", "-8"], ["-11/4", "-4/11"], ["14", "1/14"], ["3/7", "7/3"], ["-1/12", "-12"], ["-14/9", "-9/14"], ["21", "1/21"]],
+    "worked_comparison_rows": [["-3/8", "3/8", "3/8", "-8/3"], ["1/2", "-1/2", "1/2", "2"], ["9/5", "-9/5", "9/5", "5/9"], ["-5", "5", "5", "-1/5"]],
+    "image_037_rows": [["-5/8", "5/8", "5/8", "-8/5"], ["1/4", "-1/4", "1/4", "4"], ["8/3", "-8/3", "8/3", "3/8"], ["-8", "8", "8", "-1/8"]],
+    "image_040_rows": [["-4/7", "4/7", "4/7", "-7/4"], ["1/8", "-1/8", "1/8", "8"], ["9/4", "-9/4", "9/4", "4/9"], ["-1", "1", "1", "-1"]],
+    "additional_checks": "10 worked product stages equal 1; two worked representation stages; four introductory/image products; four exact-rational substitutions into the reciprocal identity on its legal domain; zero boundary checks",
+    "structure": "Every node selector unique and each paragraph/node slot count children+1. All tags, IDs and non-linguistic attributes exact. All 88 canonical MathML signatures exact after reversing one allowlisted mtext. No untranslated English prose or linguistic attributes remain.",
+    "builder": "Shared translated() and render_cnxml() passed in memory, including visible full descriptions for all three images. No files or media were written by that check."
+  },
+  "pending": ["Parent reader integration and browser visual QA", "Independent West Bengal language/teacher review, especially exact reciprocal terminology", "Assistive-technology review of long table descriptions"],
+  "scope": "One complete instructional subsection, including all six exercises and all solutions. This does not complete the whole curriculum assignment. Reference materials are editorial witnesses, not training data."
+}

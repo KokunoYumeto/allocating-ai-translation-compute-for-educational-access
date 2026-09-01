@@ -1,0 +1,18 @@
+{
+  "locale": "bn-Beng-IN", "module": "m81287", "section": "fs-id1362034", "block_kind": "readiness_note", "date": "2026-08-31",
+  "source_path": "downloads/canonical-prealgebra/modules/m81287/index.cnxml",
+  "source_sha256": "4a029d82953fcba05aeec289445bc21ffc3364ce68b866c56404de3785d4d076",
+  "overlay_sha256": "bae8371d1313b92eb77b0fe28ab9bd19f5b0c5e5085a899e2032e8f81147e5d7",
+  "consultations": [
+    {"stage": "before drafting", "examples": ["TR01", "TR03"], "read": ["Tripura p050/p051 OCR and page images", "actual source readiness note"], "action": "Confirmed actual মিশ্র ভগ্নাংশ and অপ্রকৃত ভগ্নাংশ wording; identified and excluded the already-known erroneous intermediate denominator in the p051 conversion example."},
+    {"stage": "during drafting", "examples": ["TR01", "TR03"], "read": ["Tripura p050/p051 OCR", "source mixed fraction and answer"], "action": "Returned to the mixed-fraction wording. Treat juxtaposition as whole part plus proper-fraction part, not multiplication."},
+    {"stage": "pre-integration check", "examples": ["TR01", "TR03"], "read": ["Tripura p050/p051 OCR", "final overlay", "source review target"], "action": "Rechecked ledger terms, 2+3/5=13/5 and the exact review example's existence. No terminology change needed."}
+  ],
+  "decisions": [
+    {"topic": "mixed-fraction interpretation", "decision": "Use মিশ্র ভগ্নাংশ and অপ্রকৃত ভগ্নাংশ, never unbridged মিশ্র সংখ্যা. The positive mixed fraction 2 3/5 equals 13/5; preserve the unchanged source answer."},
+    {"topic": "review link and witness caution", "decision": "Preserve m81285/fs-id1581575; verified that this exact target exists as an example. The source's denominator 5 is retained; no Tripura arithmetic error is imported."}
+  ],
+  "local_checks": {"result": "passed", "paragraph_slot_arrays": 2, "preserved_mathml_expressions": 2, "preserved_ids": 6, "source_exercises": 1, "source_images": 0, "arithmetic": "2+3/5=(2*5+3)/5=13/5", "review_target": "m81285/fs-id1581575 exists", "structure": "All slots children+1; tags/IDs/attributes/MathML exact; no English prose remains", "builder": "Shared translated() and in-memory render_cnxml() passed"},
+  "pending": ["Parent browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "One complete readiness note only. Full assignment ongoing; no media, shared scripts or commits. Canon is editorial reference, not training data."
+}

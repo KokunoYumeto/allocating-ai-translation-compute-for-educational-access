@@ -1,0 +1,78 @@
+{
+  "locale": "bn-Beng-IN", "module": "m81289", "section": "fs-id1833017", "source_title": "Find the Least Common Denominator", "date": "2026-08-31",
+  "source_path": "languages/bn-Beng-IN/provenance/pilot/m81289.source.cnxml",
+  "source_sha256": "bfaa71d9e1dcfa775dd6525ba2fbc9ecf0ce17e6833d8dcaca9bb2f259361fa3",
+  "overlay_sha256": "73ffcfbf7b210a8d50e511975965242e78b80c9949f2048ba51f2952489e0809",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR02", "TR03", "TR04"],
+      "additional_existing_locators": ["Tripura p052 addition/subtraction opening", "Tripura p022 factor/multiple discussion", "Tripura p023 prime/composite definitions", "Tripura p025 question1(iv)", "Tripura p026 questions3(l) and4(b)", "Tripura p104 exercise3 answers1(iv),3(l),4(b)"],
+      "read": ["User instructions, canon README and terminology ledger", "Full source section, then individual paragraph slots and direct-text nodes to recover a truncated combined output", "Tripura p051/p052 OCR and images", "Bounded local-PDF OCR screening and actual relevant page images", "All nine source images"],
+      "action": "The existing bank had no direct expanded LCM term. Located the relevant chapter from the actual local TOC and used in-memory OCR/rendering without writing shared files. Found the exact expansion লঘিষ্ঠ সাধারণ গুণিতক in p104 answer3(l), answering p026 question3(l). Checked p025 LCM(4,6) against p104 answer12 and p026 common-multiples prompt against p104 answer12,24,36. Sent precise locators to parent for durable freezing and bank admission."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR02", "TR03", "TR04"],
+      "additional_existing_locators": ["Tripura p104 exercise3 answer3(l)"],
+      "read": ["Returned to actual p051 OCR", "Re-OCRed the relevant p104 answer region in memory", "Compared actual source image labels with the draft descriptions"],
+      "action": "Kept T008's directly witnessed expansion distinct from explanatory T011 লঘিষ্ঠ সাধারণ হর. Preserved the original positive-integer-denominator context, explained repeated prime factors, and replaced unexplained একক-ভগ্নাংশ with লব ১ এমন ভগ্নাংশ. Corrected swapped fifth/sixth source alts and the raster LCD/LCM label mismatch, without touching images."
+    },
+    {
+      "stage": "pre-integration check",
+      "examples": ["TR02", "TR03", "TR04"],
+      "additional_existing_locators": ["Parent-frozen Tripura p026 and p104"],
+      "read": ["Actual p026/p104 OCR files created by parent", "Actual p026/p104 page images created by parent", "p051 OCR again", "Complete overlay, source mathematics and image observations"],
+      "action": "Confirmed the expansion from pixels despite OCR dropping letters in লঘিষ্ঠ and গুণিতক. Rechecked same whole, positive least denominator, numerator/denominator readings and instruction register. Evaluated all 75 MathML nodes, verified every worked/practice LCD with minimality tests and prime multiplicities, and checked every raster/model numerical relation."
+    }
+  ],
+  "targeted_search": {
+    "reason": "No direct expanded-LCM witness in the existing readable bank; p052 only used the abbreviation.",
+    "method": "Searched existing OCR with rg. Read existing Tripura TOC; it places সংখ্যা নিয়ে খেলা at pp22-28 and answers at pp103-110. OCRed only pp22-26 and104-105 in memory using the existing local PDF and Bengali Tesseract. No download, copy or reference-file write by this agent.",
+    "visual_pages_actually_used": [22,23,25,26,104],
+    "screened_but_not_claimed_as_visual_witnesses": [24,105],
+    "tool_limit": "A combined base64 image response truncated after page23; no unseen remainder was accepted. Pages25,26 and104 were then rendered individually and visually checked successfully.",
+    "new_witness": "p026 question3(l) / p104 exercise3 answer3(l): ল.সা.গু. expands to লঘিষ্ঠ সাধারণ গুণিতক. p025 question1(iv) / p104 answer1(iv): LCM(4,6)=12. p026 question4(b) / p104 answer4(b): first three common multiples of4,6 are12,24,36.",
+    "limits": "These are direct term and numerical-example witnesses, not a directly witnessed Bengali LCD definition or the exact OpenStax matching-columns procedure. Those explanations remain editorial translations of OpenStax. Parent owns reference freezing and bank IDs."
+  },
+  "decisions": [
+    {"topic": "US coins and common units", "affected_locations": ["fs-id1883782", "fs-id2650576", "fs-id1989058", "CNX_BMath_Figure_04_05_001/caption", "fs-id2076472"], "decision": "Keep US quarter/dime/cents context and explicitly identify the dollar whole. Translate figure caption and figure-link tail. Preserve 25+10=35 and 25/100+10/100=35/100; do not substitute rupees or exchange rates."},
+    {"topic": "common versus least denominator", "affected_locations": ["fs-id2669765", "fs-id2052732", "term-00001", "eip-334", "term-00002"], "decision": "State that a common denominator is not necessarily the smallest one. Define the least denominator using the smallest positive common multiple of the positive integer denominators, consistent with T011 and parent's glossary scope. The largest usable same-size tile must have numerator1 and be used as whole pieces; do not leave the phrase একক-ভগ্নাংশ unexplained."},
+    {"topic": "tile model and exact matching", "affected_locations": ["fs-id2587210", "fs-id2207102", "fs-id1511088", "fs-id729170", "fs-id1885367", "fs-id1269101", "fs-id2280121"], "decision": "Use T021 ভগ্নাংশের পাত, define the same-length whole within each diagram, and require whole tiles without cutting, gaps or overhang. Preserve both emphasis and every inline fraction. Fourths fit only one half; fifths fit neither target exactly; sixths, twelfths, twenty-fourths and forty-eighths fit both."},
+    {"topic": "LCM relation and terminology", "affected_locations": ["fs-id2269375", "fs-id2828994", "fs-id2261326", "eip-169"], "decision": "Use witnessed লঘিষ্ঠ সাধারণ গুণিতক (ল.সা.গু.) for LCM and coordinated লঘিষ্ঠ সাধারণ হর for LCD. Keep গুণনীয়ক distinct from গুণিতক, supported by actual p022/p023. Translate the hands-on activity note and explain that only denominators, not numerators, are used for this calculation."},
+    {"topic": "prime-factor procedure", "affected_locations": ["eip-id1168467165136/rows[1-5]", "eip-id1168469505824/items[1-5]"], "decision": "Translate all table cells and all five procedure steps. Match one occurrence of the same prime from each row per column; repeated occurrences remain, unmatched occurrences get separate columns. Bring one factor from every column down, then multiply. This preserves maximum prime multiplicity instead of confusing LCM with GCD."},
+    {"topic": "worked examples and assessment completeness", "affected_locations": ["fs-id1470244", "fs-id1321274", "fs-id2133793", "fs-id2356400", "fs-id3398621", "fs-id1773570", "fs-id2427618", "fs-id2196399", "fs-id1167906426767", "fs-id1836278", "fs-id3231419", "fs-id2587563", "fs-id2173739", "fs-id1568295"], "decision": "Translate both worked problems and solutions, four practice prompts and all answer locations. Preserve source numeric answer strings60,15,96,224 and both worked answers36,120. Do not convert any answer into new MathML or omit the image-based factor work."},
+    {"topic": "complete accessibility and raster labels", "affected_locations": ["all nine source media IDs", "eip-id1168467165136 aria-label"], "decision": "Every actual raster was opened before describing it. Give explicit লব/হর for tile labels and complete factorization readings. Distinguish two stacked factor rows from a fraction. Explain embedded English এলসিএম/এলসিডি in Bengali captions/alt, preserving the pixels themselves."},
+    {"topic": "canonical source separation and exclusions", "affected_locations": ["all translated content"], "decision": "OpenStax alone supplies the instructional mathematics. Tripura witnesses Indian Bengali register and terms, not West Bengal certification. Do not propagate p051's mixed-fraction intermediate-denominator error, p052's improper proper-fraction prompt, OCR corruptions or unrelated answer-key claims. Only the precise correct new LCM anchors are used."}
+  ],
+  "source_errata": [
+    {"source_media_id": "fs-id2264678", "file": "CNX_BMath_Figure_04_05_004_img.jpg", "source_claim": "Sixth tiles exactly fit one half and one third", "actual_pixels": "Fifth tiles: three overhang one half, two overhang one third", "action": "Correct Bengali alt to fifths and overhang; source image placement and preceding one-fifth paragraph are already correct, so preserve them."},
+    {"source_media_id": "fs-id2760375", "file": "CNX_BMath_Figure_04_05_005_img.jpg", "source_claim": "Fifth tiles overhang one half and one third", "actual_pixels": "Sixth tiles: three exactly fit one half, two exactly fit one third", "action": "Correct Bengali alt to sixths and exact fit; source image placement and preceding one-sixth paragraph are already correct, so preserve them."},
+    {"source_media_id": "fs-id2296558", "file": "CNX_BMath_Figure_04_05_016_img-01.png", "source_claim": "Last two raster rows labeled LCM", "actual_pixels": "Last two rows say LCD=2*2*2*3*5 and LCD=120", "action": "Describe actual LCD labels and explain in Bengali that120 is also LCM(15,24). Arithmetic is correct; no pixel edit or student error warning is needed."},
+    {"source_media_id": "eip-id1168469891757", "file": "CNX_BMath_Figure_04_05_025_img-03.png", "source_claim": "Garbled alt fragment '12 = 2 as 2 * 2 * 3'", "actual_pixels": "12=2*2*3;18=2*3*3;LCM=2*2*3*3", "action": "Replace garbled description with exact factor rows, column arrows and Bengali LCM expansion; pixels and mathematics unchanged."}
+  ],
+  "image_checks": [
+    {"file": "CNX_BMath_Figure_04_05_002_img.jpg", "observed": "Quarter plus dime, 25 cents plus10 cents, total35 cents; all visible monetary labels described."},
+    {"file": "CNX_BMath_Figure_04_05_003_img.jpg", "observed": "Two fourths exactly match one half; two fourths overhang one third."},
+    {"file": "CNX_BMath_Figure_04_05_004_img.jpg", "observed": "Three fifths exceed one half; two fifths exceed one third; all five small tile labels are1/5."},
+    {"file": "CNX_BMath_Figure_04_05_005_img.jpg", "observed": "Three sixths exactly match one half; two sixths exactly match one third; all small tile labels are1/6."},
+    {"file": "CNX_BMath_Figure_04_05_006_img.jpg", "observed": "Six twelfths exactly match one half; four twelfths exactly match one third."},
+    {"file": "CNX_BMath_Figure_04_05_025_img-01.png", "observed": "12 branches to3,4 then4 to2,2;18 branches to3,6 then6 to2,3; prime leaves circled."},
+    {"file": "CNX_BMath_Figure_04_05_025_img-02.png", "observed": "12=2*2*3 and18=2*3*3 in two rows; one2 and one3 vertically matched; other occurrences separate."},
+    {"file": "CNX_BMath_Figure_04_05_025_img-03.png", "observed": "Four downward arrows give LCM=2*2*3*3 from those rows."},
+    {"file": "CNX_BMath_Figure_04_05_016_img-01.png", "observed": "15=3*5;24=2*2*2*3;LCD=2*2*2*3*5;LCD=120. Same3 column matched."}
+  ],
+  "local_checks": {
+    "result": "passed", "paragraph_slot_arrays": 29, "node_slot_arrays": 16, "translated_terms": 2, "preserved_mathml_expressions": 75, "preserved_ids": 71, "preserved_elements": 485, "translated_media_descriptions": 9, "translated_table_aria_labels": 1, "source_exercises": 6,
+    "mathml_evaluation": "All75 numeric MathML nodes evaluated with exact rational arithmetic, including the table's partial =36 expression. No linguistic mtext occurs; complete source/target MathML signatures match.",
+    "answers": [{"exercise": "fs-id1800633", "denominators": [12,18], "lcd": 36}, {"exercise": "fs-id1377306", "denominators": [12,15], "lcd": 60}, {"exercise": "fs-id2283824", "denominators": [15,5], "lcd": 15}, {"exercise": "fs-id1790344", "denominators": [15,24], "lcd": 120}, {"exercise": "fs-id1944377", "denominators": [24,32], "lcd": 96}, {"exercise": "fs-id2637012", "denominators": [28,32], "lcd": 224}],
+    "minimality": "For every answer, verified divisibility by both original denominators, rejected every smaller positive candidate, and independently matched the maximum prime exponents.",
+    "tile_required_counts_half_third": {"fourths": ["2","4/3"], "fifths": ["5/2","5/3"], "sixths": ["3","2"], "twelfths": ["6","4"], "twenty_fourths": ["12","8"], "forty_eighths": ["24","16"]},
+    "additional_arithmetic": ["25+10=35;25/100+10/100=35/100", "25/100=1/4;10/100=1/10", "2/4=1/2 and2/4>1/3", "3/5>1/2 and2/5>1/3", "3/6=1/2;2/6=1/3", "6/12=1/2;4/12=1/3", "12=3*4=3*2*2;18=3*6=3*2*3;36=2*2*3*3", "15=3*5;24=2*2*2*3;120=2*2*2*3*5"],
+    "figure_link": "CNX_BMath_Figure_04_05_001 exists and link unchanged",
+    "structure": "Every source paragraph, term and alt covered; all node selectors unique and slots children+1. Tags, IDs, nonlinguistic attributes and MathML exact; no residual English prose.",
+    "rendering": "Shared translated() and in-memory render_cnxml() passed; all9 images and9 visible Bengali descriptions retained. Parent owns browser layout QA."
+  },
+  "pending": ["Parent browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "One complete instructional section only. Full assignment remains ongoing. This agent wrote only the overlay and this record, with no downloads, media copies, shared edits, deletions or commits. Parent separately materialized the targeted canon pages. Canon remains editorial reference, not training data."
+}
