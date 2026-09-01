@@ -1,0 +1,155 @@
+{
+  "schema": "interlanguage/global-expected-universe-validation/1.1.0",
+  "status": "PASS",
+  "checks": {
+    "unique_profile_ids": true,
+    "allowed_dispositions_only": true,
+    "recall_50m_complete": true,
+    "watch_40m_complete": true,
+    "all_candidate_references_resolve": true,
+    "bhojpuri_india_exact_profile_present": true,
+    "putonghua_spoken_modality_present": true,
+    "malaysian_malay_constituent_present": true
+  },
+  "profile_rows": 54,
+  "bridge_rows": 16,
+  "recall_50m_expected": [
+    "ar",
+    "arz",
+    "bho",
+    "bn",
+    "cmn",
+    "de",
+    "en",
+    "es",
+    "fa",
+    "fil",
+    "fr",
+    "gu",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "jv",
+    "kn",
+    "ko",
+    "lah",
+    "mr",
+    "ms",
+    "pa-Arab",
+    "ps",
+    "pt",
+    "ru",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tr",
+    "ur",
+    "vi",
+    "wuu",
+    "yue",
+    "zh"
+  ],
+  "recall_50m_covered": [
+    "ar",
+    "arz",
+    "bho",
+    "bn",
+    "cmn",
+    "de",
+    "en",
+    "es",
+    "fa",
+    "fil",
+    "fr",
+    "gu",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "jv",
+    "kn",
+    "ko",
+    "lah",
+    "mr",
+    "ms",
+    "pa-Arab",
+    "ps",
+    "pt",
+    "ru",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tr",
+    "ur",
+    "vi",
+    "wuu",
+    "yue",
+    "zh"
+  ],
+  "watch_40m_expected": [
+    "apc",
+    "ha",
+    "hsn",
+    "ml",
+    "or",
+    "pa",
+    "pcm",
+    "pl",
+    "sd"
+  ],
+  "watch_40m_covered": [
+    "apc",
+    "ha",
+    "hsn",
+    "ml",
+    "or",
+    "pa",
+    "pcm",
+    "pl",
+    "sd"
+  ],
+  "missing_recall_codes": {
+    "50m": [],
+    "watch_40m": []
+  },
+  "unknown_candidate_references": {},
+  "disposition_counts": {
+    "excluded_with_evidence": 0,
+    "forward_residual_audit": 9,
+    "ranked_in_typed_view": 22,
+    "shared_core_only": 2,
+    "supply_rich_negative_control": 8,
+    "unresolved_no_comparable_count": 13
+  },
+  "invariants": {
+    "independent_universe_before_ranking": true,
+    "typed_denominators_only": true,
+    "macrolanguage_not_single_rankable_population": true,
+    "shared_core_has_no_automatic_demographic_reach": true,
+    "supply_rich_profiles_remain_enumerated": true
+  },
+  "outputs": {
+    "expected_language_profiles_v1_1.csv": {
+      "bytes": 28762,
+      "sha256": "103AC91B4BC485EAC1849A0F4ADC4D398869D5A32AC697BBE9E46875D131E5D2"
+    },
+    "bridge_shared_core_hypotheses_v1_1.csv": {
+      "bytes": 6976,
+      "sha256": "34B85DEB823977966C403575AA3119B5588644156373177E6645AE3EAD0EB7BB"
+    }
+  },
+  "inputs": {
+    "candidate_interventions_master.csv": {
+      "bytes": 128472,
+      "sha256": "9891DC3211FD035BC52E650A7FC189DD17006A0DEAEB129E9A5BCC1B9C256220"
+    }
+  },
+  "limitations": [
+    "This is a recall/disposition universe, not a cardinal rank.",
+    "Several profiles remain unresolved because comparable written-reader or academic-comfort counts do not exist in the current evidence base.",
+    "The 50M and 40M thresholds are recall gates, not normative priorities."
+  ]
+}

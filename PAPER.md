@@ -3,1181 +3,533 @@
 ## A global language, interlanguage, accessibility, and open-curriculum portfolio model
 
 **Research report**  
-**Date:** 2026-08-30 (revised)
+**Version:** 1.1.0  
+**Date:** 2026-08-31  
+**Model provenance:** OpenAI Codex gpt-5.6-sol, Ultra
 
 ## Abstract
 
-Artificial intelligence sharply reduces some costs of adapting open educational
-resources, but “translate into the largest language” is not an adequate allocation
-rule. A useful portfolio must ask how many people gain *new, comfortable, usable*
-access; which content is absent; whether another edition or academic lingua franca
-already serves the same readers; whether the output works in the relevant script,
-device, bandwidth, and disability context; and how much source preparation,
-terminology work, mathematical checking, correction, and maintenance the edition
-requires. This paper constructs a reproducible global allocation model around that
-marginal-access question. It joins dated language-population observations to exact
-language/variety/script/territory interventions, local Open Logic and OpenStax
-workloads, advanced-material scarcity proxies, accessibility requirements, and
-evidence-bounded interlanguage architectures. The common language-priority
-comparator is a 210-unit, 120,083-source-token formal-reasoning curriculum; larger
-OpenStax portfolios are costed separately so that useful breadth is not mistaken for
-inefficiency. A population-specific needs layer then separates foundational numeracy
-recovery, bilingual academic-register transfer, secondary-to-tertiary bridging,
-coherent undergraduate sequences, and advanced/reference work: population rank does
-not select the same textbook for everyone. Gross demographic ceilings,
-evidence-backed marginal floors, and
-wide neutral sensitivities are reported separately. Constructed bridges receive no
-blanket family reach; shared semantic cores receive compute savings only through
-explicitly named localized outputs. The corrected source register contains 475
-population observations and 81 registered source records from 58 distinct authority
-labels; 143 exact natural-language/profile
-interventions were scored and 134 passed the cardinal eligibility gate. No intervention
-has a positive registered cardinal lower bound because at least one access or non-
-overlap factor remains unbounded; this fail-closed accounting floor is not evidence of
-zero educational benefit. The headline portfolio therefore alternates explicitly
-labelled base, optimistic, and scarcity sensitivities rather than fabricating a strict
-conservative order. An earlier build wrongly excluded Bahasa Indonesia because existing
-work placed it in a completion-only bookkeeping class. On the same ex-ante basis used
-for every other natural-language candidate, the official 2022 BPS functional-language
-ceiling places Bahasa Indonesia first in the base and optimistic views. The corrected
-Top 10 is Bahasa Indonesia, Bangladesh Bangla, Telugu, Indian Bengali, Vietnamese,
-Marathi, Indian Tamil, Western Punjabi, Javanese, and Gujarati. The first
-needs-audited products range from an exact-gap audit of the existing Indonesian program and
-Bangla/Tamil/Gujarati foundational-recovery packages to a Vietnamese
-precalculus-to-undergraduate spine; Japanese school algebra is a negative control,
-while advanced Japanese algebra and geometry remain a legitimate targeted lane.
-Costing the 100 selected language positions against the fixed Formal Reasoning Core
-comparator yields 91.274 million, 407.305 million, or 1.866 billion gross tokens under
-the low, base, and high workflows; these are workload comparators, not the needs-
-optimal first packages. An empirical Indonesian audit confirms the distinction: over
-a defined 2026-08-20 to 2026-08-29 root-event window, 33 user-visible roots recorded
-83.639 billion total tokens, 97.714% of gross input was
-cached, and a broader 6,726-thread descendant closure recorded 10.253 trillion
-cumulative total tokens. Those nested boundaries and a separate 88.493-million-token
-pursuit-goal attribution ledger are reported without addition or price conversion. Four
-shared-core package models with complete component joins show modeled base-scenario
-savings of 25%-37.5%,
-but remain noncardinal because their frozen population-link controls do not authorize
-additive package unions. This lack of a registered demographic multiplier is not a
-finding of zero mathematical usefulness: formal density and reader expertise make
-receptive interlanguage use more plausible in advanced mathematics than in novice
-exposition, and the paper specifies how to measure that breakpoint. Eleven
-accessibility interventions are preserved in a
-separate safeguard backlog because their linguistic and disability/connectivity
-population ceilings overlap. The result is a grant-oriented commissioning order
-with exact production identities, machine-readable provenance, open-license and
-one-download offline eligibility, and uncertainty that remains visible rather than
-being converted into invented precision.
-
-**Keywords:** educational access; language of instruction; open educational
-resources; machine translation; low-resource languages; interlanguages; OpenStax;
-Open Logic Project; accessibility; cost-effectiveness
-
-## 1. Introduction
-
-The relevant optimization problem is not how many translated files an AI system can
-produce. It is how much *additional usable educational access* a finite amount of
-compute can create. Those quantities diverge whenever a nominal language edition is
-not readable in the relevant variety or script, duplicates comfortable access through
-another language, contains content above the learner's current level, fails to reach
-low-bandwidth or disabled readers, or remains detached from instruction and actual
-use.
-
-Two widely cited global language-of-education statistics illustrate why the
-denominator must be defined before it is optimized. Walter and Benson's (2012)
-Table 14.2 (p. 283) estimated that 3,741,110,588 people belonged to languages used in formal
-education and 2,300,263,716 to languages not used, yielding 61.9% and 38.1% of their
-covered global population. The same table reported 97 languages with more than ten
-million speakers: 52 used in education and 45 not used. Those 45 accounted for
-1,120,220,125 people, almost half of the population in the table's “not used” side.
-The chapter prints size bands, not a list of the 97 languages. It therefore supports
-a concentration argument - large neglected languages matter - but cannot identify a
-modern target list.
-
-The World Bank's later estimate is different. It reports that approximately 37% of
-students in low- and middle-income countries, about 370 million of roughly one
-billion students, are taught in a language other than their first language or the
-language they best speak and understand (World Bank, 2021). This is a student and
-instructional-language estimate, not Walter and Benson's global language-population
-calculation. Neither percentage can be multiplied by every named language population
-to manufacture the number a translation would reach.
-
-The underlying distribution nevertheless makes allocation consequential. In Walter
-and Benson's (2012) table, the 45 noneducation languages above ten million and the 662 in
-the 250,000-9,999,999 band together represented 2,088,576,471 people - 90.8% of the
-population assigned to languages not used in education. A compute program can thus
-combine two aims rather than choose between them: large exact-language editions can
-deliver enormous aggregate reach, while smaller endangered, signed, Indigenous, and
-minoritized-language editions can expand public function, regional depth, and
-prestige domains that a population-only ranking erases.
-
-AI changes the feasible frontier but not the definition of access. Multilingual
-models, terminology constraints, deterministic source pipelines, independent model
-critique, and formula/structure checks make many editions cheaper and more auditable.
-Yet low-resource model performance, corpus quality, dialect coverage, and specialist
-terminology remain uneven (Blasi et al., 2022; Dinu et al., 2019; Kantharuban et al.,
-2023; Kreutzer et al., 2022; NLLB Team, 2024; Robinson et al., 2023). A global
-portfolio therefore needs exact target identities, an explicit overlap model, and
-uncertainty that remains visible rather than being compressed into an opaque score.
-
-## 2. Research questions
-
-The study asks:
-
-1. Which exact language, variety, script, territory, and accessibility interventions
-   have the largest dated source-population ceilings among communities not already
-   represented by the local Open Logic/OpenStax portfolio?
-2. How do those ceilings change after directly evidenced or bounded deductions for
-   literacy/modality access, academic-lingua-franca access, and existing editions?
-3. Which open curriculum package provides the most defensible first educational
-   intervention for each population, using Open Logic and OpenStax as measured
-   baselines rather than as an exhaustive source universe?
-4. How many low/base/high inference tokens and API-equivalent dollars would those
-   packages require under a reproducible multi-pass translation and audit workflow?
-5. When can an interlanguage, pluricentric semantic core, dual-script package, or
-   natural-intercomprehension workflow improve reach per compute relative to separate
-   editions?
-6. Which exact natural-language or shared-core interventions form a deduplicated Top
-   10 and Top 100 under reach-first, scarcity, and overlap sensitivities, and which
-   accessibility mechanisms must be retained as separate horizontal safeguards because
-   their residual beneficiary counts cannot yet be ranked cardinally?
-
-## 3. Conceptual framework
-
-### 3.1 Access is not learning, but it is a necessary input
-
-Language adaptation can remove a barrier without guaranteeing learning. A translated
-edition must still be instructionally appropriate, delivered, used, and integrated
-with practice. This paper therefore ranks **expected marginal educational access**
-rather than test-score effects. Learning-adjusted benefits require a specified
-deployment and appear only as a later scenario.
-
-This choice also follows comparative cost-effectiveness practice: a common numerator
-is useful only when its outcome definition and cost boundary remain explicit
-(Angrist et al., 2025; Dhaliwal et al., 2013). Here the common numerator is access
-created, not a synthetic learning-effect estimate.
-
-For population cell \(c\), intervention \(i\), and curriculum unit \(k\):
-
-\[
-EMA_{cik}=N_c D_{ck} C_{ci} P_{ci} U_{ci} R_{ck},
-\]
-
-where \(N\) is a dated source population; \(D\) is the missing-content share;
-\(C\) is comprehension of the proposed linguistic surface; \(P\) is practical
-written, signed, device, bandwidth, and disability access; \(U\) is residual
-non-overlap; and \(R\) is relevance of the fixed curriculum to the specified learner
-stratum. Scarcity, vitality/equity, prestige-domain value, production feasibility,
-and dialect-flattening risk remain separate views rather than invisible multipliers
-of people.
-
-This extends the recovered local marginal-intelligibility formalism
-(*Crosswalk to earlier local marginal-intelligibility research*, n.d.;
-*Marginal-intelligibility opportunity heuristic for OpenLogic*, n.d.). Its core
-opportunity dimensions are newly comfortable readers (R), scarcity (S), practical
-accessibility (A), and non-overlap (N), with vitality/prestige/feasibility/risk kept
-separate. Numeric intervals refine those bands without redefining them.
-
-### 3.2 Three quantities that must not be conflated
-
-Every language table distinguishes:
-
-- **source observation:** exactly what the source counted, including year, unit, and
-  measure type;
-- **new-edition access ceiling:** the compatible written or modality population for
-  an exact target; and
-- **marginal comfortable-access range:** the residual after access through existing
-  editions and academic lingua francas is deducted.
-
-A mother-tongue census count, a household-language count, self-reported speaking
-ability, an ethnic-group population, a refugee caseload, and school enrolment are not
-interchangeable. Aggregate Quechua, Nahuatl, Maya, Cree, Ojibwe, Inuktut, Fula,
-Kurdish, Amazigh, or Romani labels are not assigned to a single edition surface.
-
-### 3.3 Interlanguage mechanisms
-
-“Interlanguage” covers mechanisms with different numerators and denominators:
-
-1. A **constructed bridge surface** seeks receptive comprehension across named
-   communities. It earns reach only from evidence for that surface, script, cohort,
-   and task.
-2. A **pluricentric shared semantic core** generates explicitly named localized
-   outputs. Reach belongs to each native-language output; the shared source reduces
-   compute.
-3. **Natural intercomprehension reuse** shares terminology, source structure, and QA
-   across related languages while preserving separate editions.
-4. A **dual-script/register package** produces synchronized outputs for one language
-   continuum without adding script populations twice.
-5. An **accessibility derivative** removes a format, device, register, or disability
-   barrier within a language population and never substitutes for linguistic access.
-
-This taxonomy prevents a family name from turning into hundreds of millions of
-unsupported readers. The current Interslavic evidence includes an approximately .84
-pooled result on a seven-gap short written cloze task, but no low/high interval and no
-demonstration of sustained mathematical reading. The pooled point is retained as an
-upper-bound research sensitivity; it is not inherited by Russian, Ukrainian, Polish,
-Czech, Slovak, South Slavic, or minority-language leaves (Merunka et al., 2019).
-
-### 3.4 Mathematics changes the interlanguage prior
-
-The absence of a registered population multiplier is not evidence that an
-interlanguage is useless. Mathematics is a mixed semiotic system: prose, symbols,
-diagrams, layout, and previously learned formal structures jointly carry meaning.
-Expert mathematicians reading unfamiliar advanced material use disciplinary
-knowledge, examples, self-checks, and structural expectations differently from less
-experienced readers (Shepherd & van de Sande, 2014). Neurocognitive evidence also
-separates high-level mathematical reasoning from ordinary-language processing in
-important respects (Amalric & Dehaene, 2016). These findings make cross-language or
-interlanguage reading more plausible in mathematically expert, symbol-dense settings
-than it would be for ordinary expository prose.
-
-The effect cannot be generalized downward. Mathematical textbooks continually ask
-readers to switch between words and symbols; in a 180-page stratified textbook sample,
-4,242 symbolic structures were coded in 180 randomly selected textbook pages, and 82%
-were connected to natural language (Wikström Hultdin et al., 2023). Symbolic
-mathematical text can itself be difficult for students to comprehend (Österholm,
-2006), and word problems,
-definitions, motivation, and error explanations remain linguistically dense.
-Accordingly, the model uses an **expertise x formal-density prior**:
-
-- foundational and remedial material receives no assumed cross-language benefit;
-- secondary and undergraduate material is task-dependent;
-- advanced/reference material receives a higher research prior for receptive
-  interlanguage usefulness, but only measured task evidence can turn that prior into
-  a cardinal beneficiary count.
-
-This breakpoint makes interlanguages a serious mathematical research and production
-hypothesis without turning a family name into automatic comprehension.
-
-## 4. Evidence from education, OER, AI, and accessibility
-
-### 4.1 Familiar-language instruction can help, with heterogeneous effects
-
-Nakamura et al.'s (2023) systematic review included 45 studies and found positive
-pooled effects for several literacy outcomes: letter knowledge, sentence reading,
-reading comprehension, and national-language reading comprehension. Word reading
-was near zero, and writing evidence rested on one study. The result supports language
-as an enabling condition, not one transportable effect size.
-
-Setting-specific evidence shows both upside and implementation risk. A Kom-medium
-program in 24 Cameroonian schools reported large early gains and persistent later
-gains after transition to English (Laitin et al., 2019). South African administrative
-panel evidence associated early transition to English with lower later English
-achievement than three years of home-language instruction (Taylor & von Fintel,
-2016). Conversely, a Kenyan trial adding Lubukusu or Kikamba literacy to an
-English/Kiswahili package did not improve the wider-language outcomes and produced
-lower mathematics results in that implementation; limited classroom use, teacher
-language mismatch, and resistance mattered (Piper, Zuilkowski, Kwayumba, et al.,
-2018).
-
-One official language-specific administrative example shows why the global 37%-40%
-figures cannot simply be assigned to every language. South Africa's 2016 school
-tabulation reported 2,402,540 Foundation Phase learners whose school offered a
-language of learning and teaching matching home language and 540,484 whose school did
-not; in Intermediate Phase the corresponding counts were 585,808 and 1,844,086
-(Department of Basic Education, 2023). These are phase-specific principal-reported
-EMIS cells with verification warnings, not a global causal estimate or a count that
-can be multiplied by the 2022 census. They do, however, identify a concrete cohort and
-show how medium-of-instruction mismatch can rise sharply after the early grades.
-
-The allocation consequence is precise: familiar-language evidence justifies a
-linguistic-usability term and exact cohort research. It does not justify multiplying a
-static PDF by a generic standardized-effect coefficient.
-
-### 4.2 Teacher-independent packages and classroom packages are complementary
-
-The target user is not assumed to have a teacher. A motivated learner who can obtain
-the package once should be able to place themselves, follow a prerequisite path,
-study worked examples, attempt exercises, diagnose errors, and check complete public
-solutions offline. Worked examples can reduce unnecessary search while learners
-acquire algebraic schemas (Sweller & Cooper, 1985). Direct learner-facing digital
-mathematics interventions have also produced gains in settings with limited
-resources, including a randomized tablet intervention in Malawi (Pitchford, 2015).
-Neither result proves that a book alone teaches everyone; it supports treating
-diagnostics, examples, practice, and feedback as part of the product rather than
-assuming a teacher supplies them.
-
-Classroom adoption remains a complementary route. In a Kenyan randomized evaluation,
-professional development, coaching, student books, and structured teacher guides
-operated as a package and produced large gains; teacher guides added little cost
-relative to the other components in that setting (Piper, Zuilkowski, Dubeck, et al.,
-2018). McEwan's (2015) meta-analysis found positive average effects across several
-intervention classes but also showed that composite treatments and sparse cost data
-complicate category rankings.
-
-Input-only failures matter. Textbooks in 100 Kenyan schools had no average effect and
-benefited mainly higher-performing pupils; the books were in English and pitched to
-a demanding curriculum (Glewwe et al., 2009). In Sierra Leone, many supplied books
-remained stored and no learning effect was detected (Sabarwal et al., 2014). The
-Global Education Evidence Advisory Panel (2023) accordingly treats structured
-pedagogy and teaching at the right level more favorably than unintegrated inputs.
-
-Each recommended edition therefore names a bounded curriculum and derivative set:
-editable source, preserved examples/exercises, diagnostic placement, hints, public
-answers, worked solutions and misconception explanations, accessible HTML/MathML,
-visually checked screen and print PDFs, and one-download offline distribution. A
-teacher guide can be added for classroom reuse; it is not the missing engine that
-makes the learner edition coherent.
-
-### 4.3 Openness is an eligibility condition for a global translation program
-
-Open textbook meta-analysis finds little average achievement difference between open
-and commercial textbooks, with some evidence of lower withdrawal and strong access
-and cost advantages (Clinton & Khan, 2019). Reviews and observational studies are
-generally compatible with “no worse learning, lower access barriers,” but most are
-not randomized and are concentrated in North American higher education (Colvard et
-al., 2018; Hilton, 2016).
-
-Grimaldi et al. (2019) formalize the access hypothesis: when only students previously
-unable to obtain a commercial text benefit, whole-class averages dilute the effect.
-That mechanism motivates the present numerator - newly usable access rather than all
-speakers, downloads, or enrolments. For the present program, lawful openness is not a
-minor predictive factor: it is an eligibility condition. A global many-language
-workflow must be able to translate, adapt, correct, redistribute, print, preserve,
-and revise the source without charging the learner or renegotiating each edition.
-UNESCO's (2019) OER Recommendation explicitly supports open licensing, adaptation,
-translation, redistribution, accessible formats, and offline/printed access.
-
-This is compatible with the empirical finding that open and commercial textbooks
-often have similar average classroom outcomes. The claim is operational, not magical:
-openness removes price and permission barriers, permits one source improvement to
-propagate across languages, and prevents schools or independent learners from being
-locked into a purchase. “Free to view” is recorded as existing supply but is not
-treated as reusable OER unless the exact artifact license permits the required work.
-
-### 4.4 The translating model must also understand the mathematics
-
-NLLB demonstrates the engineering value of multilingual transfer, but aggregate
-benchmark gains coexist with large resource-level disparities (NLLB Team, 2024;
-Robinson et al., 2023). Corpus audits show why nominal data volume can mislead:
-Kreutzer et al. (2022) found that many web-crawled language corpora contained less
-than half usable text and some contained no in-language material in the audited
-sample. Dialect performance gaps are substantial and inconsistent (Kantharuban et
-al., 2023); relatively small dialect-specific parallel corpora have produced large
-improvements over standard-language-oriented systems in earlier MT settings (Zbib
-et al., 2012).
-
-The relevant intervention is not a cheap general machine-translation call. It is a
-reasoning model capable of reconstructing the mathematics, detecting whether a
-definition, quantifier, implication, index, or formula has changed, and revising the
-target prose in light of that semantic check. Scientific-paper translation studies
-show that LLM workflows can preserve a high proportion of tested source details while
-still producing terminology and overtranslation errors (Kleidermacher & Zou, 2025).
-MathMist likewise finds substantial cross-language degradation in mathematical
-reasoning, especially for lower-resource languages (E Sobhani et al., 2026).
-Capability therefore changes the workflow, not the need for evidence.
-
-Terminology constraints raise exact term-use rates but do not guarantee grammar,
-semantics, or mathematical fidelity (Bergmanis & Pinnis, 2021; Dinu et al., 2019).
-The compute model budgets a mathematically capable translation pass, an independent
-model critique/reconstruction pass, terminology reconciliation, literal source and
-formula comparison, structural QA, build/render inspection, correction cycles,
-accessibility derivation, and retry recovery. Symbolic-equivalence and semantic-
-consistency selection can improve mathematical autoformalization (Li et al., 2024),
-so formalizable fragments receive additional deterministic checks. Human feedback can
-inform later revisions, but no human-dependent approval gate is required for a
-reversible, source-audited release.
-
-### 4.5 Accessibility and low bandwidth are separate marginal-access axes
-
-WCAG 2.2, EPUB Accessibility 1.1, and MathML Core provide machine-testable and
-judgment-dependent requirements for web, publication, and mathematical structure
-(W3C Math Working Group, 2025; World Wide Web Consortium, 2024a, 2024b). Conformance
-is not the same as successful use across every assistive-technology stack, but native
-semantic source avoids repeatedly remediating inaccessible PDFs.
-
-Low-tech evidence again emphasizes intervention design. Phone tutoring plus SMS
-improved numeracy in Botswana, while SMS alone did not (Angrist et al., 2022). A
-Sierra Leone phone-tutoring intervention did not improve language or mathematics amid
-limited fidelity and take-up (Crawfurd et al., 2023). Offline HTML/EPUB, downloadable
-packages, audio, plain language, Braille, and signed-language video are therefore
-costed as specific derivatives, not credited merely because a file can be sent over a
-low-bandwidth channel.
-
-The baseline distribution hypothesis is intermittent rather than continuous access:
-someone with a phone and one successful connection should be able to acquire the
-course. The package therefore avoids login, streaming, and live-link dependencies;
-supports shared devices, low storage and resumable chapter downloads; and carries its
-answers, fonts, glossary, prerequisite map and version information locally. SMS/USSD
-can support placement, reminders, and short drills, but cannot carry the diagrams,
-fractions, derivations, and proofs that define a complete mathematics course.
-
-## 5. Data
-
-### 5.1 Population observations
-
-The population master preserves source labels, years, measure definitions, units,
-territories, exact counts or source intervals, nesting, and alternative-measure
-groups. Official censuses and statistical reports are preferred. Where an official
-source lacks direct language measurement, an ethnic group is retained only as a
-proxy/context row and cannot enter the language ranking. Survey case frequencies are
-not national populations. Same-name Indian C-16 mother-tongue components are used in
-preference to broader scheduled-language categories; C-17 English/Hindi knowledge
-remains a category-level overlap sensitivity.
-
-
-
-Where a direct national count was not registered, selected large-language ceilings
-use the pinned CLDR 48.2 population XML and transparent derivation chain. CLDR's
-heterogeneous estimates have unspecified component vintages and intervals, so these
-rows remain secondary ceilings rather than census observations (Unicode Consortium
-CLDR Technical Committee, n.d., 2025, 2026b).
-
-The final frozen inventory and region/source counts are inserted by the build:
-
-*Table 1. Frozen analytical inventory and cardinal treatment.*
-
-| Registered layer | Rows | Cardinal treatment |
-|---|---:|---|
-| Dated population observations | 475 | Source facts; heterogeneous measures are never summed globally |
-| Registered population-source records | 81 | 58 distinct authority labels; provenance and limitation register |
-| Candidate intervention hypotheses | 210 | Discovery universe, including unrankable hypotheses |
-| Scored exact natural-language/profile rows | 143 | Prior rows plus globally balanced expansion and the equal-basis Bahasa Indonesia correction |
-| Eligible exact natural-language interventions | 134 | Headline cardinal inventory |
-| Richly served negative controls | 4 | Excluded from generic translation priority |
-| Unresolved or D0 profile exclusions | 5 | Three unresolved profiles and two population/profile mismatches |
-| Intervention-matrix rows | 104 | 80 interlanguage plus 24 accessibility rows; not automatically cardinal |
-| Interlanguage population links | 113 | All remain nonadditive under the frozen upstream gate |
-| Package × token × reuse sensitivity rows | 135 | Engineering comparison only; zero packages enter the headline ranking |
-| Accessibility safeguard interventions | 11 | Separate noncardinal backlog; zero numbered linguistic positions |
-
-*Note.* Row counts describe registered records, not unique people. The 104
-intervention-matrix rows include both interlanguage and accessibility mechanisms; the
-80-row interlanguage subset is summarized separately in Appendix H.
-
-### 5.2 Existing local editions and work in progress
-
-The bounded successor-state census verifies complete Open Logic baselines for
-zh-Hans-CN, hi-Deva-IN, tr-TR, Modern Standard Arabic, fa-Arab-IR, Spanish, pt-BR,
-and Bahasa Indonesia; the Chinese lane also has all 94 *Algebra and Trigonometry 2e*
-modules and three of 55 *Calculus Volume 1* modules at its pinned state. The public
-Indonesian Open Logic repository independently identifies the frozen closure as
-722/722 editable content units and its linked reader as 1,116 pages. The canonical
-reader reaches 642 modules; the other 80 translated targets are non-reader source
-modules retained in the editable package rather than missing translations
-(OpenLogic-id, 2026). It therefore
-distinguishes complete Indonesian coverage from partial Interslavic work and from
-provisional or nonadmitted bridge artifacts. A complete exact edition is baseline
-coverage, not a new intervention: for any forward Open Logic allocation to Indonesian,
-the content deficit is (D=0), and the already delivered units must not be counted as
-future benefit or future translation workload.
-
-Two estimands are now kept separate. The **ex-ante equal-treatment language
-opportunity** asks whether an exact Bahasa Indonesia edition belonged in the original
-candidate set before any local work existed; for that comparison (D=1), exactly as
-for every other then-missing FR-2 edition. The **forward allocation** asks what useful
-content or access layer remains after the existing Indonesian program. That second
-question starts from (D=0) for Open Logic and applies unit-level deficits only to
-specific, demonstrably absent curriculum or accessibility components. Treating prior
-work as a reason to exclude Bahasa Indonesia from the first comparison was a
-classification error; treating the completed 722-unit edition as unfinished would be
-the opposite error.
-
-The Indonesian work is an established mathematics program, not a pilot. At the pinned
-public program commit audited for this revision, all 40 course roles have a selected
-corpus or frozen original specification. Applying the repository's executable live
-publication overlay to its base course map yields 27 published roles and 13 production
-roles: 67.5% complete by course-role count, with no planned or unresolved roles
-(Program Matematika Indonesia, 2026). Page counts require a stricter distinction. The
-central evidence ledger records 19,745 measured teaching-package pages, 20,763
-selected-corpus working pages, and a 27,705-page documented rendered universe that
-includes 306 donor pages and 7,654 Stacks reference pages. A separate pinned-public-
-artifact reconstruction yields 26,031 de-duplicated rendered course/checkpoint pages.
-These figures establish the program's scale, but none is a final translated-page total;
-“about 25,000 pages” is therefore retained only as an order-of-magnitude description
-whose exact page universe must be named.
-The public catalog also records a complete 82/82-module *Elementary Algebra 2e*
-edition, so neither another Prealgebra translation nor the formerly recommended
-Elementary-Algebra bridge is a valid next commission. The correct forward rule is to
-inventory the live program against the needs layer, finish only the exact missing or
-in-production roles, and improve placement, solution coverage, offline delivery, and
-accessibility where the existing edition evidence shows a real gap. This does not
-change the ex-ante result: Bahasa Indonesia still ranks first in the equal-treatment
-language opportunity set.
-
-### 5.3 Curriculum denominators
-
-The principal comparator is the complete **FR-2 Formal Reasoning Core** at D3:
-210 editable units and 120,083 measured source alpha tokens. Independent
-remeasurement verified every one of 722 Open Logic source units and the complete
-367,220-token closure. The pinned source identity is OpenLogic commit
-`1e960beff9ed7835bf3e3f1335e21af3439cd107`, licensed CC BY 4.0 unless a component
-states otherwise (Open Logic Project, 2026).
-
-OpenStax supplies concrete expansion portfolios rather than a vague content category.
-The locally available measured set comprises 257 modules and 1,017,337 source tokens:
-Algebra and Trigonometry 2e (94 modules; 394,473), Calculus Volume 1 (55; 195,458),
-Calculus Volume 2 (54; 180,155), and Calculus Volume 3 (54; 247,251). Four further
-books have exact module counts but only planning token intervals and are never
-misrepresented as measured. Fixed-source compute comparators choose among a minimum
-viable quantitative gateway, statistics/business, science bridge, undergraduate STEM,
-and formal-reasoning portfolios, plus accessibility derivatives. The needs
-recommendations are selected separately from learner-stage evidence; Appendix F's
-common-book mapping is not relabelled as a local-needs finding. Appendices A and F identify
-the exact collection commits, licenses, row-level curriculum measurements, and compute
-artifacts behind every denominator (OpenStax, n.d.-a, n.d.-b, n.d.-c, n.d.-d,
-n.d.-e, n.d.-f, n.d.-g, n.d.-h).
-
-### 5.4 Scarcity, digital context, and model support
-
-OpenAlex counts of mathematical works and open-access books are retained as a
-bibliographic scarcity proxy (OpenAlex, 2026). Wikimedia project counts provide broad
-digital-presence context (Numberof bot, 2026). Country internet, electricity,
-literacy, and enrolment indicators provide delivery sensitivities (World Bank, 2026).
-FLORES/SONAR and NLLB resource levels provide model-support context (Duquenne et al.,
-2023; NLLB Team, 2024).
-None of these is relabelled as an inventory of usable advanced teaching material, a
-language-specific accessibility rate, or proof of translation quality.
-
-### 5.5 Population-specific mathematics-needs register
-
-The content-needs unit is language x territory x learner stage x delivery context.
-The audited register combines primary or official mathematics outcomes with known
-curriculum/OER supply and delivery constraints for the corrected Top 10 plus a
-Japanese calibration case. It distinguishes four first-product tiers:
-
-1. foundational recovery: diagnostic number sense, operations, fractions,
-   proportional reasoning and prealgebra with complete feedback;
-2. secondary bridge: algebra, functions, trigonometry, data and transition into a
-   later academic language where relevant;
-3. undergraduate spine: coherent precalculus, calculus, linear algebra, discrete
-   mathematics and proof rather than disconnected modules; and
-4. advanced/reference: a documented dependency ladder for a specialist cohort.
-
-The first three tiers can coexist within one language; the model selects the lowest
-binding prerequisite for each observed cohort rather than branding a whole population
-“foundational.” ASER state figures are rural territorial proxies, PISA covers enrolled
-15-year-olds with explicit coverage rates, and Indonesia's national outcomes are not
-Javanese-specific. Those scope limits are preserved row by row in
-`population_mathematics_needs_register.csv`.
-
-Japan supplies a useful negative control on generic recommendations. PISA 2022 reports
-that 88% of represented Japanese 15-year-olds reached mathematics Level 2 or higher
-and 23% reached Levels 5-6 (Organisation for Economic Co-operation and Development,
-2023c); the national government supplies compulsory-school textbooks free of charge
-(Ministry of Education, Culture, Sports, Science and Technology, n.d.). Duplicating
-mainstream school algebra therefore has low marginal priority. That does not make
-Japanese mathematical translation useless: a proof-to-abstract-algebra-to-commutative-
-algebra-to-algebraic-geometry sequence addresses a different, narrower advanced and
-reference gap. The distinction is content-specific, not a verdict on the language.
-
-## 6. Methods
-
-### 6.1 Exact intervention edge construction
-
-Machine joins use exact ISO/code crosswalks, normalized explicit aliases, target
-territory, and source measure. Code-only matches between distinct profiles - for
-example Tetun Prasa and Tetun Terik - are routed to review and never accepted
-automatically. Parent/child alternatives, bilingual categories, script variants,
-household measures, oral ability, and proficiency measures retain nonadditive overlap
-groups. Every final Top 10 and Top 100 entry requires a rankable exact production
-target and a registered person observation copied from a dated authority or calculated
-by a fully exposed derivation from dated inputs. The population measure need not equal
-the production audience: where a census label pools standards, communities, or
-orthographies, the count is retained once as a ceiling and the mismatch is stated.
-Unresolved macro-targets appear in a separate research appendix.
-
-### 6.2 Factor assignment
-
-For a missing exact natural-language FR-2 edition, \(D=1\). For an exact named
-surface, \(C=1\) is a target-definition identity conditional on literacy in that
-standard - not a claim that every speaker understands mathematics. Language-specific
-literacy is used where reported; otherwise a national literacy value appears only in
-a wide proxy sensitivity with low 0 and high 1. Internet and electricity select
-delivery modes rather than comprehension.
-
-The equal-treatment ranking freezes the decision date before candidate-specific
-production and therefore applies the same (D=1) comparator to Bahasa Indonesia and
-every other language. A separate forward-looking table starts from current coverage
-and substitutes the exact remaining-content share and incremental compute. This
-counterfactual/current split prevents successful programs from being penalized merely
-because work already exists, while still preventing completed bytes from being counted
-twice as future benefit.
-
-Non-overlap is factored into existing-edition, academic-lingua-franca, and selected-
-portfolio residuals. India C-17 supports a disclosed sensitivity (Office of the
-Registrar General & Census Commissioner, India, 2018): the low scenario
-treats every reported English-or-Hindi speaker as already served, the base treats half
-as comfortably served, and the high treats one fifth as served. Elsewhere, unknown
-academic overlap is [0, 1]; a value of .5 appears only in a neutral sensitivity, not as
-observed evidence.
-
-The implemented paper consequently reports five views: exact gross ceiling per
-common compute; the direct-evidence marginal floor; base and optimistic factor-model
-sensitivities; a scarcity-adjusted sensitivity; and fail-closed interlanguage
-architecture comparisons. Vitality/equity, prestige, feasibility, and dialect risk
-remain descriptive or eligibility evidence; the frozen selector does not manufacture
-numeric portfolio objectives for them.
-
-### 6.3 Compute scenarios
-
-The workload ledger separately counts uncached input, cached input, and output. It
-does not recover or model cache-write tokens as a separate category; the
-API-equivalent dollar scenarios therefore exclude any cache-write surcharge. Gross,
-fresh, cached, weekly-plan, and monetary quantities are not interchangeable.
-For FR-2 D3, the low/base/high scenarios are:
-
-*Compute comparator. One exact FR-2/D3 edition under the three planning workflows.*
-
-| Scenario | Gross tokens | API-equivalent USD | Status |
-|---|---:|---:|---|
-| Low | 912,737 | 5.19 | Planning workflow |
-| Base | 4,073,049 | 16.77 | Planning workflow |
-| High | 18,664,571 | 65.43 | Stress workflow |
-
-These dated dollar values are API-equivalent comparisons under the recorded
-GPT-5.6 Sol prices - $4 per million uncached input tokens, $0.40 per million cached
-input tokens, and $20 per million output tokens - accessed August 25, 2026 (OpenAI,
-2026). They are not measured weekly Codex-plan consumption. The base scenario gives every
-unit an independent critique and allows substantial correction; the high scenario
-adds multiple broad passes and retry allowance. The full 722-unit Open Logic corpus
-costs 2.679/11.666/53.200 million gross tokens in the same low/base/high model.
-
-The earlier Indonesian “remainder” estimate is retired: the public Indonesian Open
-Logic closure is complete at 722/722, so its forward translation workload is zero.
-Program-scale compute must instead be measured against specific unfinished course or
-accessibility components. The empirical task-accounting subsection below distinguishes
-pursuit-accounting tokens, gross input, cached input, uncached input, output, reasoning,
-requests, and monetary cost. It reports only fields actually preserved by the tasks and
-does not invent a component split or price conversion.
-
-#### 6.3.1 Empirical Indonesian production accounting
-
-A central audit of the manager plus 32 user-visible owner roots covers root events from
-2026-08-20T10:40:19Z through 2026-08-29T23:33:38.559Z. All 33 final rollout totals
-match the corresponding `state_5.sqlite` counters. At this boundary, gross input is
-83,386,749,267 tokens, of which 81,480,422,656 (97.714%) is cached and
-1,906,326,611 (2.286%) is fresh/uncached; output is 251,883,504, including
-70,812,538 reasoning tokens that are already a subset of output. Total usage is
-83,638,632,771 tokens. Cache-write input is reported as zero. Reasoning is not added a
-second time.
-
-| Thirty-three-root field | Exact tokens | Accounting rule |
-|---|---:|---|
-| Gross input | 83,386,749,267 | Cached plus fresh input |
-| Cached input | 81,480,422,656 | 97.714% of gross input |
-| Fresh/uncached input | 1,906,326,611 | 2.286% of gross input |
-| Cache-write input | 0 | Exact reported field at this boundary |
-| Output | 251,883,504 | Includes reasoning output |
-| Reasoning output | 70,812,538 | Subset of output; never added again |
-| **Total** | **83,638,632,771** | **Gross input plus output** |
-
-The descendant-inclusive closure is much larger: 6,726 thread records and an exact
-cumulative total-token counter of **10,253,232,856,362** through
-2026-08-29T23:34:32Z. Its historical cached/fresh/cache-write/output/reasoning split
-and full request count are unavailable. A bounded final-rollout scan finds 7,970
-distinct cumulative-token progressions, which is only a request/progression lower
-bound. The sanitized audit receipt proves that the recursive closure begins with and
-therefore already contains the 33 roots. It is an inclusive accounting boundary: it
-may be compared with the 33-root subtotal but is never added to it, and no descendant-
-exclusive remainder is asserted.
-
-This measurement is not the whole historical Indonesian program. Open Logic work
-before 2026-08-20 is excluded because registry 152 does not map it to a canonical
-task ID; auxiliary audit and research tasks outside the selected 33 roots are
-excluded; and requests without surviving counters are excluded. These omissions are
-an unknown positive remainder, not zero.
-
-A separate bounded audit of surviving pursuit-goal receipts attributes
-**88,493,496 Codex pursuit-accounting tokens** to nine nonoverlapping phases. Of that amount,
-87,035,193 belongs to edition production, translation, mathematical/terminological QA,
-build, and publication goals; 1,458,303 belongs to separately identified deployment,
-maintenance, and durable-state correction goals. This is a strict measured lower bound:
-it is a narrow workflow-attribution ledger inside the larger program activity, not a
-program total. Central coordination, most other course tasks, work outside an active
-pursuit goal, and several known helper/revision phases have no surviving comparable
-goal counter.
-
-| Measured task phase | Exact output boundary | Pursuit-accounting tokens | Elapsed counter | Classification |
-|---|---|---:|---:|---|
-| *Methods in Algebra, Volume 2* complete edition | 146 units; 864 pages; public commit `8dbaeb4443978aef6d89365149e28a6ba06e005a` | 31,014,565 | approximately 49 h 21 min | Edition production |
-| Same edition, later Pages deployment | 31 reader files; deployment-only commit `7aacf53215171cfc734e963bdc40ac8f3eddfe13` | 586,587 | 30 min 28 s | Support; no corpus change |
-| *Elementary Algebra 2e* owner checkpoint | 82/82 modules; current 2,158-page release boundary | 38,663,209 | 69 h 40 min | Live lower bound for edition production |
-| *Elementary Algebra 2e* 17-module helper | 17-module packet; 869 files independently replayed | 2,022,997 | approximately 3 h 13 min | Edition-production helper |
-| *Applied Combinatorics* production | Public commit `50cb1c9eae0273d7235494c747555be2b4e9f910` | 10,838,830 | 16 h 39 min 8 s | Edition production |
-| *Applied Combinatorics* maintenance/publication | Same public lineage; separate later goal | 832,315 | 1 h 23 min 40 s | Support |
-| CLP4 Indonesian helper | 316-page text plus 486-page problem book; 4,477 files | 2,683,906 | 4 h 21 min 21 s | Edition-production helper |
-| *Elementary Algebra 2e* 15-module replacement helper | 15-module packet; 843 retained files checksum-closed | 1,811,686 | 54 min 58 s | Edition-production helper |
-| *Elementary Algebra 2e* durable-goal correction | Cursor/handoff reseal; no translation change | 39,401 | 4 min 6 s | Support |
-| **Measured lower bound** | **Nine nonoverlapping task-goal phases** | **88,493,496** | **Not summed: work ran in parallel** | **Known remainder is positive** |
-
-The Codex goal implementation defines the pursuit counter as input tokens minus cached-input
-tokens plus output tokens, and descendant-agent usage rolls into the root pursuit
-(OpenAI Codex, 2026). It is therefore neither gross input nor a separate sum of parent
-and subagent counters. The pursuit receipts do not preserve the component totals needed
-to reconstruct gross input or API-equivalent cost; the 33-root audit supplies a split
-for a different, wider boundary, while the 6,726-thread closure supplies only total
-tokens. None of the three views is an invoice, a weekly-plan percentage, or a
-token-per-page conversion rule, and they are never added. Token totals are workload
-and accounting proxies, not FLOPs, hardware time, or energy. Together they demonstrate that the
-paper's source-length planning scenarios are far below observed end-to-end program
-workflows once mathematical checking, terminology, deterministic replay, accessible
-reader/PDF/backend construction, repair, and publication are included.
-
-#### 6.3.2 Role-count rescaling and next-language sensitivity (not a forecast)
-
-The current public role boundary is 27 published of 40, but the observed counters
-already include activity from both published and production roles, and the 13
-production roles have consumed unknown compute and differ sharply in size. There is
-therefore no matched completed-role denominator from which to estimate remaining
-compute. Multiplying the counters by 40/27 is retained only as a deliberately crude
-arithmetic replay-scale screen: it gives 123.909 billion tokens at the 33-root total
-boundary, 3.197 billion at the derived root fresh-input-plus-output boundary, and
-15.190 trillion at the descendant-closure total boundary. These are not completion
-estimates, remaining-work estimates, or second-language forecasts; they simply expose
-the consequence of an explicitly arbitrary role-count assumption.
-
-For a second language using the same selected corpora and build infrastructure, the
-share of reusable non-language-specific work is unknown. Table 4 therefore applies a
-reuse sensitivity to the deliberately crude 40/27 replay scale. It assumes no
-language-difficulty adjustment and is not a price, promise, completion estimate, or
-forecast.
-
-*Table 4. Pure arithmetic replay-scale sensitivity for a subsequent language.*
-
-| Shared-pipeline reuse sensitivity | Descendant-total-token scale | Root fresh-input-plus-output scale | Interpretation |
-|---:|---:|---:|---|
-| 0% | 15,189,974,602,018 | 3,197,348,319 | Full replay sensitivity; no reuse credit |
-| 25% | 11,392,480,951,513 | 2,398,011,239 | Limited source/build reuse |
-| 50% | 7,594,987,301,009 | 1,598,674,159 | Half of measured workflow treated as reusable |
-| 75% | 3,797,493,650,504 | 799,337,080 | Aggressive reuse stress case |
-
-The correct next-language forecast must replace this table with task-stage
-instrumentation: source preparation, semantic translation, mathematical/terminological
-QA, repair, accessibility, build, and publication counters kept separately. Language-
-specific difficulty can increase the residual even when source and backend work are
-reused. Until those stage counters exist, the defensible claim is an observed scale and
-a sensitivity band, not a single “tokens per page” coefficient.
-
-### 6.4 Portfolio selection and double counting
-
-The selector operates on canonical intervention cells rather than adding every
-available language count. Upstream overlap groups choose one observation when a parent
-category and same-name component are alternative measures. A shared-core package can
-replace enumerated natural-edition rows only if the validated population-link and
-intervention-matrix layers explicitly authorize their union. The current frozen
-interlanguage model authorizes none: all raw package links remain nonadditive and all
-candidate matrix rows remain nonrankable. The headline portfolio therefore retains the
-natural-edition rows and reports package aggregation separately as an engineering
-sensitivity. Multilingual speaker totals, multiple-response language counts, pooled
-script or orthography audiences, and accessibility strata retain explicit
-nonadditivity rules. No unobserved cross-language audience is subtracted or added
-dynamically.
-
-The conservative efficiency view is reported even when every candidate has a zero
-floor. Because that view is then a complete tie and supplies no ordering information,
-admission cycles deterministically through three informative views: base marginal
-access per million base tokens, optimistic access per million low-scenario tokens, and
-scarcity-adjusted base access per million base tokens. Ties receive rank intervals.
-The cycle repeats until every eligible intervention is exposed; the first 10 and first
-100 positions form the headline portfolios. Accessibility mechanisms remain in a
-separate safeguard backlog until a residual population gain can be bounded, rather
-than filling linguistic positions with global or nested ceilings.
-
-### 6.5 Interlanguage compute comparison
-
-A constructed surface receives no demographic reach merely from a family name. It can
-enter a future cardinal comparison only after an exact target/task comprehension gain
-is registered; under the present conservative rule, constructed Interslavic therefore
-has a **zero registered cardinal lower bound**. That is an accounting floor, not an
-estimate of zero mathematical usefulness or zero receptive readability. A shared
-semantic core is different: it can produce a
-fully named native-language or script-localized output for every constituent, but
-shared-source reuse changes compute rather than readership. The analysis therefore
-compares complete named-output bundles with their independent-production counterparts
-while preserving each constituent population cell separately. Arithmetic reconciliation
-of those cells is necessary but not sufficient for a cardinal union; the frozen
-upstream nonadditivity controls keep every bundle outside the headline Top 10 and Top
-100. The paper varies the adaptation fraction widely because no complete
-category-resolved local usage ledger establishes one universal reuse rate.
-
-## 7. Results
-
-### 7.1 Which populations are most affected?
-
-Table 2 reports all 134 canonical natural-language interventions as source-bounded gross ceilings. These values retain each source's territory, year, age universe, question, and measure; they are not interchangeable estimates of people harmed by language mismatch. The largest base ceilings in the frozen candidate set are:
-
-*Table 2. Ten largest source-bounded gross ceilings in the eligible candidate set.*
-
-| Display order | Intervention | Profile(s) | Gross base ceiling | Measure | Year(s) | Source ID(s) |
-|---:|---|---|---:|---|---|---|
-| 1 | Bahasa Indonesia | id-Latn-ID | 248,501,794 | official_long_form_census_able_to_speak_indonesian_persons_age5plus | 2022 | PM-S021 |
-| 2 | Bangladesh Bangla | bn-Beng-BD | 165,323,060 | derived_cldr_territory_functional_language_users | 2026-03-17 CLDR release; component estimate year not stated | ASSEC-S006 |
-| 3 | Indian Bengali | bn-Beng-IN | 96,177,835 | census_same_name_mother_tongue_component_persons | 2011 | PM-S001 |
-| 4 | Vietnamese | vi-Latn-VN | 89,000,000 | peer_reviewed_published_lower_bound_speakers | 2016 publication; population estimate vintage not stated | ASSEC-S007 |
-| 5 | Western Punjabi | pnb-Arab-PK | 88,915,544 | census_mother_tongue_persons | 2023 | PM-S003 |
-| 6 | Marathi | mr-Deva-IN | 82,801,140 | census_same_name_mother_tongue_component_persons | 2011 | PM-S001 |
-| 7 | Telugu | te-Telu-IN | 80,912,459 | census_same_name_mother_tongue_component_persons | 2011 | PM-S001 |
-| 8 | Indian Tamil | ta-Taml-IN | 68,888,839 | census_same_name_mother_tongue_component_persons | 2011 | PM-S001 |
-| 9 | Javanese | jv-Latn-ID | 68,044,660 | daily_language_at_home_age5plus_persons | 2010 | PM-S005 |
-| 10 | Thai | th-Thai-TH | 64,080,191 | derived_union_of_mutually_exclusive_census_strata_persons | 2010-09-01 | TH-S001 |
-
-The gross ceilings cannot answer how many readers newly gain comfortable access. The machine-readable `table3_marginal_access_sensitivity_ranges.csv` therefore keeps low, base, and high marginal-access values separate. The base and optimistic columns are factor-model sensitivities, not observed harmed-population counts. All 134 low values are zero because at least one access or non-overlap factor lacks a positive direct lower bound. The conservative efficiency view is consequently degenerate: every intervention ties on the interval [1, 134], and that view is reported but not used to fill portfolio positions.
-
-### 7.2 Top 10 interventions
-
-The selector alternates base, optimistic, and scarcity sensitivity lanes. Under the fail-closed rule, no shared-core package substitutes for its constituent natural-language rows. This is a portfolio order, not a claim of a uniquely identified welfare ranking.
-
-*Table 5a. Corrected Top 10 natural-language intervention portfolio.*
-
-| Position | Intervention | Profile(s) | Gross base ceiling | Base marginal sensitivity | Base gross tokens | Informative rank range | Demonstrated-needs first package |
-|---:|---|---|---:|---:|---:|---:|---|
-| 1 | Bahasa Indonesia | id-Latn-ID | 248,501,794 | 119,280,861 | 4,073,049 | 1-25 | Close only verified gaps in the existing 40-course program; do not duplicate complete Open Logic, Prealgebra, or Elementary Algebra editions |
-| 2 | Bangladesh Bangla | bn-Beng-BD | 165,323,060 | 65,302,609 | 4,073,049 | 2-11 | Bangla Grade 2-5 foundational numeracy kit |
-| 3 | Telugu | te-Telu-IN | 80,912,459 | 57,833,869 | 4,073,049 | 1-6 | Telugu-English Grades 3-10 mastery bridge |
-| 4 | Indian Bengali | bn-Beng-IN | 96,177,835 | 69,699,712 | 4,073,049 | 2-9 | Indian Bangla Grades 3-8 arithmetic-to-algebra catch-up |
-| 5 | Vietnamese | vi-Latn-VN | 89,000,000 | 42,777,849 | 4,073,049 | 4-17 | Precalculus-to-calculus-to-linear-algebra self-study spine |
-| 6 | Marathi | mr-Deva-IN | 82,801,140 | 50,316,309 | 4,073,049 | 2-7 | Marathi Grade 8-to-first-year-STEM bridge |
-| 7 | Indian Tamil | ta-Taml-IN | 68,888,839 | 48,387,709 | 4,073,049 | 5-9 | Tamil Grades 2-8 teacher-independent numeracy recovery |
-| 8 | Western Punjabi | pnb-Arab-PK | 88,915,544 | 26,167,845 | 4,073,049 | 5-13 | Shahmukhi Punjabi-to-Urdu/English secondary-to-UG bridge |
-| 9 | Javanese | jv-Latn-ID | 68,044,660 | 32,661,437 | 4,073,049 | 3-9 | Bilingual Javanese-to-Bahasa foundational/academic-register scaffold |
-| 10 | Gujarati | gu-Gujr-IN | 55,036,204 | 34,089,878 | 4,073,049 | 4-11 | Gujarati Grades 2-6 diagnostic numeracy remediation |
-
-![Rank-sensitivity intervals for the ordered Top 20 natural-language interventions across the base, optimistic, and scarcity views.](figure_1_rank_sensitivity.png)
-
-*Figure 1. Informative-rank sensitivity for the headline Top 20. The point marks the view that admitted each intervention to the portfolio; the horizontal interval spans its best and worst rank across the three informative views. The conservative lower-bound view is omitted because all 134 interventions tie at zero.*
-
-### 7.3 What mathematics does the Top 10 actually need?
-
-Population rank does not select content. The audited needs layer distinguishes foundational recovery, bilingual transfer, secondary-to-tertiary bridging, a coherent undergraduate spine, and advanced/reference work. OpenStax and Open Logic remain concrete reusable source baselines, but no project title is assigned merely because its source-token denominator is convenient.
-
-*Table 5b. Directly audited Top-10 mathematics needs and first useful open packages.*
-
-| Intervention | Measured need or best available proxy | First useful open package | Evidence / package confidence |
-|---|---|---|---|
-| Bahasa Indonesia | PISA: 18% of represented 15-year-old students reached mathematics Level 2 or higher; the live public program already spans 40 selected course roles and includes complete Open Logic and Elementary Algebra baselines | Audit the live prerequisite map; finish exact incomplete foundation/bridge roles and missing placement, solution, offline, or accessibility layers without duplicating completed books | high / medium |
-| Bangladesh Bangla | NSA 2022: 39% of Grade 3 and 30% of Grade 5 students met grade-level mathematics standards; the report states about two thirds had not achieved grade-level foundational skills | Bangla Grade 2-5 foundational numeracy kit | high / high |
-| Telugu | ASER rural 2024: Andhra Pradesh Grade 3 at least subtraction 44.1% and Grade 5 division 36.2%; Telangana 30.9% and 25.2% | Telugu-English Grades 3-10 mastery bridge | high / medium |
-| Indian Bengali | ASER rural West Bengal 2024: 40.9% of Grade 3 children could do at least subtraction and 35.0% of Grade 5 children could divide | Indian Bangla Grades 3-8 arithmetic-to-algebra catch-up | high / medium |
-| Vietnamese | PISA 2022: 72% of represented 15-year-old students reached mathematics Level 2 or higher and 5% reached Levels 5-6 | Precalculus-to-calculus-to-linear-algebra self-study spine | high / medium |
-| Marathi | ASER rural Maharashtra 2024: 31.3% of Grade 3 children could do at least subtraction and 27.7% of Grade 5 children could divide | Marathi Grade 8-to-first-year-STEM bridge | high / medium |
-| Indian Tamil | ASER rural Tamil Nadu 2024: 27.8% of Grade 3 children could do at least subtraction and 20.8% of Grade 5 children could divide | Tamil Grades 2-8 teacher-independent numeracy recovery | high / medium_high |
-| Western Punjabi | ASER Pakistan 2023: 60.5% of rural Punjab Grade 5 children solved two-digit division; 2023 census counted 85,309,591 Punjabi mother-tongue residents in Punjab province | Shahmukhi Punjabi-to-Urdu/English secondary-to-UG bridge | high / medium |
-| Javanese | No Javanese-specific large-scale mathematics assessment located; Indonesia PISA gives only a national proxy and BPS 2010 counted 68,044,660 age-5+ daily home users | Bilingual Javanese-to-Bahasa foundational/academic-register scaffold | medium / medium |
-| Gujarati | ASER rural Gujarat 2024: 19.1% of Grade 3 children could do at least subtraction and 14.3% of Grade 5 children could divide | Gujarati Grades 2-6 diagnostic numeracy remediation | high / high |
-
-The Indian rows use rural state proxies and therefore do not turn one state percentage into a whole-language learning rate. Western Punjabi is the Pakistan/Shahmukhi profile, not Indian Gurmukhi Punjabi. Indonesia's PISA evidence is not Javanese-specific. Those limits change the confidence label and product form; they do not justify replacing unknowns with zero.
-
-*Table 5b sources.* Bangladesh: Directorate of Primary Education (2023);
-Indian state proxies: ASER Centre (2025); Western Punjabi: ASER Pakistan
-Secretariat (2024) and Pakistan Bureau of Statistics (2023b); Indonesia and Viet
-Nam: Organisation for Economic Co-operation and Development (2023a, 2023b);
-Javanese home use: BPS-Statistics Indonesia (2010). Exact URLs and scope caveats
-are also retained in `population_mathematics_needs_register.csv`.
-
-### 7.4 Top 100 portfolio
-
-The numbered Top 100 contains 100 natural-language interventions and 100 separately named localized outputs; no package occupies a cardinal position. Accessibility remains a separate, non-cardinal safeguard backlog and does not consume a linguistic position. The frozen FR-2 workload sums to 91,273,700 low, 407,304,900 base, and 1,866,457,100 high gross tokens. These compute totals are additive; the heterogeneous population measures are not summed as a count of unique people.
-
-| Portfolio lane | Interventions | Localized outputs | Base / optimistic / scarcity admissions | FR-2 base gross tokens |
-|---|---:|---:|---:|---:|
-| high_reach_underserved | 35 | 35 | 12 / 13 / 10 | 142,556,715 |
-| regional_depth | 49 | 49 | 21 / 21 / 7 | 199,579,401 |
-| small_population_prestige_domain_screen | 16 | 16 | 7 / 6 / 3 | 65,168,784 |
-
-### 7.5 Interlanguage and shared-core comparisons
-
-No package replaces a natural-language row in the fail-closed cardinal portfolio. IL-PUNJABI, IL-HU, IL-NGUNI, and IL-SOTHO retain complete component joins and positive modeled savings, but their upstream population unions are not admissible. Their displayed population values are diagnostic component subtotals only: they are nonadditive, noncardinal, and not unique-person, family-level, or constructed-bridge comprehension reach. Base reuse is an unobserved sensitivity, not an empirical production saving.
-
-*Table 6a. Shared-core package sensitivity models with complete component joins.*
-
-| Architecture | Named outputs | Profiles | Diagnostic component subtotal (noncardinal) | Independent base tokens | Shared-core base sensitivity | Modeled saving sensitivity |
-|---|---:|---|---:|---:|---:|---:|
-| IL-HU | 2 | ur-Arab-PK;ur-Arab-IN | 72,975,069 | 8,146,098 | 6,109,574 | 2,036,524 |
-| IL-NGUNI | 4 | zu-Latn-ZA;xh-Latn-ZA;ss-Latn-ZA;nr-Latn-ZA | 27,137,226 | 16,292,196 | 10,182,623 | 6,109,573 |
-| IL-PUNJABI | 2 | pa-Guru-IN;pnb-Arab-PK | 120,059,639 | 8,146,098 | 6,109,574 | 2,036,524 |
-| IL-SOTHO | 3 | nso-Latn-ZA;tn-Latn-ZA;st-Latn-ZA | 15,624,006 | 12,219,147 | 8,146,098 | 4,073,049 |
-
-The other 11 package proposals are excluded because planned named-output coverage, exact population joins, constituent score joins, or interval reconciliation is incomplete. Constructed Interslavic has a zero registered cardinal lower bound because no exact sustained mathematical-reading population result is available; that is not a substantive estimate of zero mathematical usefulness. Mathematical formalism can reduce prose dependence for expert readers, while novice word problems and explanations remain language-heavy. The paper therefore treats expertise and formal density as a stage-specific interlanguage prior to be measured, not as a blanket family multiplier or a reason to dismiss the architecture. Reuse fractions remain modeled sensitivities rather than observed production savings.
-
-#### Top-100 exact-profile crosswalk
-
-The ordered Top 100 was joined to the registered interlanguage matrix without
-fuzzy family matching. Sixteen rows have exact target-profile matches; four more
-match an exact language/script cell whose named territory contains the target
-country; one Belarusian-Interslavic relation remains hypothesis-only because its
-territory is unresolved; and 79 rows have no exact current matrix relation. The 20
-exact or country-compatible rows can therefore enter shared-core engineering
-analysis, but none receives additional readership automatically. All 100 current
-cross-language demographic reach credits remain zero, and every row remains
-non-rankable on interlanguage evidence alone.
-
-*Table 6b. Exact Top-100-to-interlanguage overlap-control crosswalk.*
-
-| Architecture | Relation class | Top-100 positions and exact targets |
-|---|---|---|
-| IL-IDMS | exact profile | 1 Bahasa Indonesia (`id-Latn-ID`) |
-| IL-PUNJABI | exact profile | 8 Western Punjabi (`pnb-Arab-PK`); 18 Eastern Punjabi (`pa-Guru-IN`) |
-| IL-HU | exact profile | 14 Indian Urdu (`ur-Arab-IN`); 24 Pakistani Urdu (`ur-Arab-PK`) |
-| IL-TURKIC | exact profile | 17 Uzbekistan Uzbek (`uz-Latn-UZ`); 33 Turkmen (`tk-Latn-TM`); 35 Kazakh (`kk-Cyrl-KZ`); 42 Kyrgyz (`ky-Cyrl-KG`) |
-| IL-PDT | exact profile | 23 Dari (`prs-Arab-AF`); 38 Tajik (`tg-Cyrl-TJ`) |
-| IL-NGUNI | exact profile | 31 isiZulu (`zu-Latn-ZA`); 37 isiXhosa (`xh-Latn-ZA`); 75 isiNdebele (`nr-Latn-ZA`) |
-| IL-MANDING | exact profile | 41 Mali Bamanankan (`bm-Latn-ML`) |
-| IL-SOTHO | exact profile | 47 Sepedi (`nso-Latn-ZA`) |
-| IL-NGUNI; IL-SOTHO; IL-GERM | exact language/script plus named country | 68 siSwati (`ss-Latn-ZA`); 49 Setswana (`tn-Latn-ZA`); 50 Sesotho (`st-Latn-ZA`); 84 Pennsylvania German (`pdc-Latn-US`) |
-| IL-ISV | hypothesis only | 57 official-standard Belarusian (`be-Cyrl-BY`); territory unresolved |
-
-The crosswalk separates direct localized coverage, possible reuse of source
-alignment or terminology work, and additional people reached across languages.
-Shared-core reuse is plausible for the 20 matched rows but unquantified because no
-empirical token-savings coefficient exists. Indonesian is the limiting control:
-its exact Open Logic component is complete at 722/722 units, so its forward deficit
-is `D=0`. It can seed later adaptations, but it is existing own-language coverage
-and supplies no automatic Malaysian, Bruneian, Javanese, Sundanese, or other
-cross-language reach. The remaining 79 rows are unmapped under the current exact
-matrix; that is not evidence that interlanguage engineering is impossible.
-
-### 7.6 Fixed-source OpenStax and Open Logic compute comparators
-
-FR-2 at D3 (210 editable units; 120,083 measured source alpha tokens) remains the common language-priority compute comparator. The older territory-proxy rule also groups the 100 rows into fixed OpenStax scenarios. These are reproducible workload counterfactuals, not claims that all populations need Formal Reasoning Core first or that the listed OpenStax bundle is locally missing. Actual commissioning follows Table 5b and `top100_needs_assignment_v2.csv`: all 100 rows now carry an explicit first-product or bounded-audit assignment, while the 90 rows outside the directly audited Top 10 retain lower-confidence territory-proxy or audit-required status rather than fabricated language-specific findings.
-
-*Table 7. Fixed-source OpenStax comparator allocations for the Top 100.*
-
-| Next portfolio | Depth | Interventions | Outputs | Low tokens | Base tokens | High tokens |
-|---|---|---:|---:|---:|---:|---:|
-| MV-1 | D2 | 36 | 36 | 39,137,220 | 156,816,432 | 670,681,044 |
-| MV-1 | D3 | 43 | 43 | 69,334,447 | 235,382,774 | 906,173,443 |
-| SB-1 | D3 | 21 | 21 | 62,944,707 | 238,856,625 | 989,359,497 |
-
-Table 7 costs only the 100 cardinal natural-language interventions under fixed-source comparator scenarios. Architecture sensitivities remain in Table 6a and are not transferred into OpenStax compute or cardinal output totals. These totals must not be relabeled as the needs-optimal curriculum.
-
-### 7.7 Sensitivity and negative controls
-
-The informative rank range spans the base, optimistic, and scarcity views. The conservative zero floor is disclosed separately and does not manufacture an arbitrary strict order. Richly served controls remain available for non-overlap, subgroup, and accessibility tests but are not generic translation priorities. Unresolved profiles and D0 profile/population mismatches are exclusions, not evidence that their communities are already served.
-
-*Table 8. Richly served negative controls and profile exclusions.*
-
-| Target | Profile | Territory | Gross base population | Measure | Year | Source ID | Classification |
-|---|---|---|---:|---|---|---|---|
-| Polish | pl-Latn-PL | Poland | 37,868,618 | census_languages_used_at_home_multiple_response_persons | 2021-03-31 | GRG-S006 | richly_served_negative_control |
-| German | de-Latn | Poland | 216,342 | census_languages_used_at_home_multiple_response_persons | 2021-03-31 | GRG-S006 | richly_served_negative_control |
-| Ukrainian | uk-Cyrl-UA | Poland | 55,104 | census_languages_used_at_home_multiple_response_persons | 2021-03-31 | GRG-S006 | richly_served_negative_control |
-| Czech | cs-Latn-CZ | Poland | 5,328 | census_languages_used_at_home_multiple_response_persons | 2021-03-31 | GRG-S006 | richly_served_negative_control |
-
-Table 8 also preserves 5 non-control exclusions: three unresolved localized-output profiles and two D0 profile/population mismatches. They are not counted as negative controls and must not be silently converted into recommendations.
-
-The complete machine-readable tables preserve exact population measures, years, observation IDs, source IDs, factor statuses, compute scenarios, package exclusions, and tie-aware ranks.
-
-## 8. Grant and implementation program
-
-The recommended program is staged by reusable infrastructure and diagnosed learner
-need rather than by isolated PDFs or one universal book assignment.
-
-1. **Open source and production eligibility.** Pin legally reusable editable Open
-   Logic, OpenStax, and other open units; preserve formula identity, semantic
-   structure, examples, exercises, public answers, attribution, tests, and
-   deterministic builds. A source that cannot be translated, corrected, redistributed,
-   printed, and preserved at zero learner price is not a program source.
-2. **Population-specific needs audit.** For each exact language/variety/script/
-   territory profile, distinguish foundational numeracy, arithmetic-to-algebra
-   recovery, bilingual academic-register transfer, secondary-to-tertiary bridging,
-   coherent undergraduate sequencing, and advanced/reference scarcity. Language
-   rank and curriculum rank are separate decisions.
-3. **High-reach commissioning wave.** Start the corrected Top 10 with the first
-   products in Table 5b - not ten copies of the same course. Continue or bridge existing
-   work rather than duplicating it: Indonesian commissioning starts from the existing
-   40-course program and closes only proven gaps; Bangla, Tamil, and Gujarati begin
-   lower in the prerequisite ladder; Vietnam begins higher.
-4. **Shared-core and interlanguage wave.** Where related varieties support semantic,
-   terminology, notation, or QA reuse, maintain one aligned core and release named
-   localized outputs. In advanced, symbol-dense mathematics, instrument receptive
-   interlanguage comprehension separately by expertise and task instead of assuming
-   either blanket family coverage or blanket uselessness.
-5. **Regional-depth and prestige-domain wave.** Fund smaller exact profiles whose
-   scarcity, vitality, regional function, or serious-mathematics public function would
-   be erased by population ranking. Japan's advanced algebraic-geometry lane belongs
-   here as a content-gap intervention, not as generic school-algebra remediation.
-6. **Teacher-independent access baseline.** Every learner package includes placement,
-   prerequisite routing, worked examples, exercises, complete public answers,
-   misconception explanations, semantic HTML/MathML, reflowable EPUB, checked screen
-   and print PDFs, local fonts/assets, and a one-download offline bundle. Classroom
-   guides and signed/audio/Braille derivatives extend the same source; they do not
-   replace the independent learner edition.
-7. **Maintenance and evaluation.** Preserve source hashes, terminology decisions,
-   formula/structure checks, build evidence, model-audit results, corrections, and
-   privacy-preserving usage indicators. New comprehension or usage evidence updates
-   the next portfolio without making human availability a release prerequisite.
-
-*Table 9. Grant-scale fixed-source inference comparators.*
-
-| Scope | Workflow | Cardinal interventions | Modeled outputs | Task bundle | Gross tokens | API-equivalent USD |
-|---|---|---:|---:|---|---:|---:|
-| Top-10 first-wave comparison | Low | 10 | 10 | 10 x FR-2/D3 | 9,127,370 | $51.90 |
-| Top-10 first-wave comparison | Base | 10 | 10 | 10 x FR-2/D3 | 40,730,490 | $167.70 |
-| Top-10 first-wave comparison | High | 10 | 10 | 10 x FR-2/D3 | 186,645,710 | $654.30 |
-| Headline Top 100 | Low | 100 | 100 | 100 x FR-2/D3 | 91,273,700 | $519.00 |
-| Headline Top 100 | Base | 100 | 100 | 100 x FR-2/D3 | 407,304,900 | $1,677.00 |
-| Headline Top 100 | High | 100 | 100 | 100 x FR-2/D3 | 1,866,457,100 | $6,543.00 |
-| Top 100 plus fixed-source OpenStax comparator | Low | 100 | 200 | FR-2 plus 36 x MV-1/D2, 43 x MV-1/D3, 21 x SB-1/D3 | 262,690,074 | $1,963.61 |
-| Top 100 plus fixed-source OpenStax comparator | Base | 100 | 200 | FR-2 plus 36 x MV-1/D2, 43 x MV-1/D3, 21 x SB-1/D3 | 1,038,360,731 | $5,978.52 |
-| Top 100 plus fixed-source OpenStax comparator | High | 100 | 200 | FR-2 plus 36 x MV-1/D2, 43 x MV-1/D3, 21 x SB-1/D3 | 4,432,671,084 | $22,397.84 |
-| All 134 eligible natural-language interventions | Low | 134 | 137 | 137 x FR-2/D3 | 125,044,969 | $711.03 |
-| All 134 eligible natural-language interventions | Base | 134 | 137 | 137 x FR-2/D3 | 558,007,713 | $2,297.49 |
-| All 134 eligible natural-language interventions | High | 134 | 137 | 137 x FR-2/D3 | 2,557,046,227 | $8,963.91 |
-
-*Note.* Table 9 is deliberately a source-fixed compute comparator, not the budget for
-the needs-optimal curriculum. All 100 rows carry an explicit first-product or bounded-
-audit assignment; the first 10 use the directly audited needs layer in Table 5b, while
-the other 90 preserve lower-confidence territory-proxy or audit-required status rather
-than being represented as equally strong language-specific findings. Three eligible interventions
-each require two explicitly named localized outputs, so 134 interventions produce 137
-modeled outputs in the full eligible set. A grant budget should replace each comparator with the exact selected
-source package and its measured token, figure, formula, exercise, accessibility, and
-maintenance burden. Dollar values use one convention throughout: each bundle's frozen
-two-decimal per-output planning cost is multiplied by its modeled output count and the
-bundle groups are summed. They are not aggregate-token repricing values. The planning
-comparator does not model a cache-write surcharge. Separately, the bounded empirical
-33-root receipt reports its cache-write field as exactly zero; that observation is not
-projected beyond the receipt's scope. Non-API program costs are excluded, not zero.
-
-Budget requests should separate inference, edition, and delivery costs. A low API
-bill does not imply low all-in cost where source acquisition, terminology, typography,
-accessibility, print/offline distribution, or maintenance dominate. Conversely,
-openly licensed semantic infrastructure is the condition that makes cumulative reuse,
-zero-price learner access, correction, and future-language expansion possible.
+AI can reduce the production cost of multilingual educational resources, but a
+speaker-count sort does not identify where one more edition creates the most usable
+access. This paper defines the relevant outcome as *marginal intelligibility*: the
+additional comfortable, practical educational access created for an exact
+language/variety/script/territory/learner profile after subtracting current native-
+language supply, usable academic-lingua-franca access, completed local work, format
+barriers, and overlap with other proposed editions. It joins 477 population
+observations and 83 source records to a 54-profile global recall universe, 16 bridge
+or shared-production architectures, 38 conservative supplemental observations, 91
+profile-population join rows, 20 intensive needs studies, 24 normalized needs edges,
+and 100 concrete commissioning profiles. Population measures remain typed: territory,
+mother tongue, home use, functional use, institutional estimate and learner cohort are
+never silently added or treated as one measured harmed-person denominator.
+
+The resulting Top 10 is a transparent operational commissioning sequence, not a
+cardinal global welfare leaderboard. In the current canonical order it comprises:
+1. Bangla shared-source caregiver/ECE and Indian TVET residuals (SHC-BN); 2. Telugu applied STEM and tertiary-transition package (NAT-003); 3. Odia (NAT-010); 4. Bhojpuri (India) (NAT-125); 5. Hausa boko Nigeria–Niger package with optional established Ajami layers (SHC-HAUSA); 6. Bambara (NAT-082); 7. Standard Hindi first-year and research-methods bridge (NAT-124); 8. Peru Ashaninka Latin-script edition (EXP-026); 9. Russian learned standard (GLB-027); 10. Dari (NAT-058).
+The current positions of the separately discussed cases are Bahasa Indonesia: position 32; Mainland Simplified Chinese: position 34; Standard Hindi: position 7; Indian Bhojpuri: position 4; Japanese: position 37; Indonesian–Malaysian Malay localization: position 31.
+Every Top-100 row states its stage or unresolved stage scope, first and follow-on
+package, prerequisite route, delivery and accessibility requirements, existing supply,
+uncertainty, double-count rule and operational ordering basis. Sourced need and supply
+evidence are distinct from the policy choices that resolve an uncertain marginal-access
+partial order into a useful work sequence.
+
+The corrected analysis does not infer that interlanguages are useless for
+mathematics. Formal notation and conventional proof structure plausibly increase
+receptive access for expert, symbol-dense tasks. The present evidence cannot turn that
+prior into a family-population multiplier: 24 Top-100 entries have exact normalized
+interlanguage/shared-core relations, but all matched cross-language reach rows remain
+non-rankable. Additional demographic reach is unestimated, not demonstrated absent;
+no family population is added. Semantic-source, terminology, formula, script and
+QA reuse remain separate production opportunities.
+
+The established Indonesian program, with its completed Open Logic corpus and a
+registered snapshot of 27 public course roles and 13 production roles, provides the
+first measured production anchor. A
+bounded 33-root window recorded 83,638,632,771 accounting tokens, of which
+81,480,422,656 were cached input, 1,906,326,611 fresh input, and 251,883,504 output.
+The descendant-inclusive 6,726-task closure recorded 10,253,232,856,362 cumulative
+tokens but includes the roots and lacks category splits. These numbers cannot be
+converted directly to money, FLOPs, energy or a universal token-per-page rate. They
+show that cumulative program accounting is not translated-prose volume. These
+counters do not isolate the cost of translation, critique, correction, builds or
+accessibility work, so no stage-specific cost dominance is inferred.
+
+## 1. Research problem
+
+The policy problem is how to allocate a finite amount of model work so that the next
+bounded edition produces the largest credible increase in usable education. “Forty
+percent lack education in a language they understand” is not itself a language list.
+Walter and Benson's (2012, p. 283, Table 14.2) historical calculation assigned
+3,741,110,588 people to languages used in formal education and 2,300,263,716 to
+languages not used, 61.9% and 38.1% of its covered population. The same table counted
+97 languages above ten million speakers: 52 used in education and 45 not used. Those
+45 represented 1,120,220,125 people. The chapter prints size bands, not the names of
+all 97 languages. The figure is directly related to the language-of-education concern
+but does not identify modern commissions. Crawford et al.'s separate set of 96
+alphabetic EGRA assessment languages is unrelated and is not substituted for it.
+
+The World Bank's later estimate—about 37% of students in low- and middle-income
+countries, roughly 370 million—uses a student/instructional-language universe and asks
+whether teaching occurs in a learner's first or best-understood language (World Bank,
+2021). It is not Walter and Benson's global language-population denominator. Neither
+percentage can be multiplied by every modern language count.
+
+Functional increase in intelligibility is more concrete: a reader who currently
+cannot comfortably use the available source can successfully navigate the new
+edition, prerequisites, notation, examples, exercises, feedback and delivery format
+for the intended task. This can be a child's first numeracy bridge, a vocational
+learner's quantitative module, a disabled student's semantic-math edition, or a
+researcher's access to a canonical monograph. Education includes research and
+continuing self-education; the audience and outcome must be stated rather than erased.
+
+## 2. Formal allocation framework
+
+The controlling recovered formalism uses four separate opportunity dimensions:
+`R` (plausible newly comfortable readers), `S` (scarcity of usable material),
+`A` (practical accessibility) and `N` (non-overlap with current comfortable access).
+Vitality/marginalization `V`, prestige-domain value `P`, production feasibility `F`
+and dialect/standardization risk `D` remain separate. R5 means more than 50 million;
+R4 10–50 million; R3 1–10 million; R2 100,000–1 million; R1 below 100,000; R0 no
+material incremental cohort identified; RU unknown. These are planning categories,
+not measured beneficiary counts. A plausible literature-backed judgment is admissible
+without experimentally measured uptake. An ordinal label is not multiplied by another
+ordinal label as though their product were a cardinal welfare quantity.
+
+The new package-calibration layer specifies R/S/A/N for exact current outputs and
+cohorts. A formal-reasoning readership prior cannot silently become an early-years
+audience, a national speaker total cannot become a calculus audience, and an optional
+future course cannot inflate a smaller first package. S is explicitly generalized
+from the earlier advanced-material definition to scarcity of the selected curricular
+or format function at its own stage. Because R already discounts existing-language,
+edition and modality overlap, N documents that residual rather than subtracting the
+same people a second time. The baseline and cautious/favorable bands are disclosed
+research judgments. A separate measured-only view makes the difference from observation
+visible; it is not the sole legitimate way to make a recommendation.
+
+For a secondary numeric sensitivity, let `P_i` be a source-defined population or learner universe, `L_i`
+the probability or bounded share able to use the target written/spoken modality,
+`A_i` practical accessibility, `O_i` comfortable overlap with existing editions or
+academic lingua francas, and `D_i` the exact remaining content/format deficit. A
+within-measure-class marginal-access sensitivity is:
+
+`M_i = P_i × L_i × A_i × (1 − O_i) × D_i`.
+
+Here the indexed `D_i` denotes a content deficit, not the formalism's dialect-risk
+band D. Factors must be interpreted conditionally on the same learner universe;
+independent marginal percentages cannot identify their intersection. This numeric
+diagnostic does not replace the controlling ordinal opportunity framework.
+
+`M_i` is not reported as an observed harmed-person count unless every factor and joint
+universe is directly supported. Unknown factors remain intervals; an ignorance
+midpoint is labelled a sensitivity, not evidence. Territory, L1, L2, home-language,
+institutional and learner-cohort denominators are not cardinally compared as though
+they measured the same thing. Sourced observations can support bounded comparisons,
+but unknown marginal-access factors leave a partial order with ties or incomparable
+profiles. The operational allocation policy produces a usable Top 10 and Top 100 from
+that incomplete evidence. Its declared criteria and tie-breaking rules are decision
+rules, not additional measurements of educational benefit. Each emitted row retains
+its `ordering_basis`; the current policy diagnostic is reported in Section 3.
+
+For a bounded product with lifecycle accounting tokens `C_i`, a compatible efficiency
+sensitivity is `E_i = M_i / C_i`. Source tokens, editable units, requests, fresh input,
+cached input, output, critique passes, correction, builds, accessibility conversion
+and maintenance are recorded separately. Gross accounting tokens are not hardware
+compute or price.
+
+For an architecture with a shared semantic core and named outputs *j*:
+
+`C_bundle = C_core + Σ(C_locale,j + C_script,j + C_QA,j)`.
+
+The core has no readers of its own. Direct access is credited only to exact named
+outputs after overlap controls. For constructed or naturally intercomprehensible
+surfaces, comprehension is a function of direction, script, prior study, expertise,
+formal density and task. Mathematics raises the prior for expert receptive reading;
+it does not prove novice explanation, word-problem, writing or oral-instruction reach.
+
+## 3. Data and reproducibility
+
+The independent universe contains 54 profiles and 16
+architectures. Of the profiles, 47 currently have at least one
+source-specific population observation and 7 remain
+explicitly unresolved rather than disappearing. Dispositions are:
+forward_residual_audit=9, ranked_in_typed_view=22, shared_core_only=2, supply_rich_negative_control=8, unresolved_no_comparable_count=13.
+The supplemental layer has 38 rows and the join has 91 rows.
+All supplement and join rows are gross/context evidence and remain non-rank-ready for
+unique marginal access.
+
+The 17-step rebuild starts with normalized interlanguage staging and equal-basis
+augmentation, then rebuilds candidates, population evidence, needs, exact forward
+residuals, the canonical portfolio and its companions. The current pipeline receipt
+is `V1_1_DATA_PIPELINE_REBUILD_20260831.json` (SHA-256 `B59154152CC35DF16B7F26D0233C4FB4129F5AB99E121676CA0CF6DCE7A546F7`). The Top-100
+companion receipt is `top100_companions_v1_1_validation.json` (SHA-256
+`605A3E7E8D3E516D811FC20902D787143A19E20CD73C17388403C3D7C949E638`).
+
+The full-register selector separates an evidence partial order from an operational work queue. A 6:3:1 cycle reserves turns for high-reach, regional-depth and endangered/prestige work. This is an explicit allocation choice, not an estimated optimum. Within a lane, it uses the currently undominated actions, then stage-specific package evidence, then the least-exposed compatible population-measure subqueue; gross-size bands, target/format specificity and finally stable identifiers resolve remaining choices. It never renames a gross population as newly comfortable readership. Literature-constrained package-specific planning judgments are now admitted: the controlling formalism asks for plausible readership ranges, not experimentally measured uptake. A separately reported measured-only view retains those judgments as priors rather than presenting them as observations. Recovered OpenLogic R/S/A/N judgments apply only to exact-profile formal-reasoning packages; they are not copied onto ECE, TVET or small residual products. Missing magnitudes remain unknown, not zero. A static evidence-front number is only a diagnostic: once a candidate's remaining dominators clear, it can compete immediately. Unknown/incomparable rows therefore do not have to be exhausted before a well-evidenced candidate in a later static layer becomes eligible. Exact duplicate packages have one owner. A canonical component register separates locale, package, stage and modality before ranking; mixed bundles must be residualized and their opportunity recalibrated. Reused components are recorded separately and cannot retain another audience. Different stages and outputs are not silently deleted.
+
+The operational policy diagnostic is `allocation_policy_v1_1_validation.json` (SHA-256 `DA7831A1C4F01D3FC9D650C4C0F820E8B38BA2412A1FEC34D05C966BD7DC1B1C`). Its reported fields are reproduced below. A PASS status concerns its declared deterministic checks; it does not establish a measured welfare optimum.
+
+| Policy / diagnostic field | Reported value |
+| --- | --- |
+| Policy identity | educational-access-dispatch-1.1.0 |
+| Master candidates / constructed actions / selected actions | 214 / 198 / 197 |
+| Exact duplicate-package rows suppressed | 1 |
+| Strict evidence-dominance comparisons | 71 |
+| Provisional source-informed R judgments / unresolved R | 41 / 157 |
+| Package-calibration memoranda | 2 |
+| Declared cycle | high_reach_underserved -> high_reach_underserved -> regional_depth -> high_reach_underserved -> high_reach_underserved -> regional_depth -> high_reach_underserved -> endangered_prestige -> high_reach_underserved -> regional_depth |
+| Within-view gross-scope thresholds (persons) | 1,000,000, 10,000,000, 50,000,000 |
+| Mechanical validation | PASS |
+
+The following is a policy-sensitivity experiment, not a confidence interval.
+Only the lane allocation cycle changes; the source observations and opportunity
+dimensions remain byte-for-byte equivalent in the computation. Positions can
+therefore move without any new claim about a population's educational need.
+This makes the discretionary part of the recommendations visible.
+
+| Action | Default 6:3:1 | Balanced 1:1:1 | Scale emphasis 8:1:1 |
+| --- | --- | --- | --- |
+| SHC-BN | position 1 | 1 | 1 |
+| NAT-003 | position 2 | 4 | 2 |
+| NAT-010 | position 3 | 2 | 9 |
+| NAT-125 | position 4 | 7 | 3 |
+| SHC-HAUSA | position 5 | 10 | 4 |
+| NAT-082 | position 6 | 5 | 19 |
+| NAT-124 | position 7 | 13 | 5 |
+| EXP-026 | position 8 | 3 | 10 |
+| GLB-027 | position 9 | 16 | 6 |
+| NAT-058 | position 10 | 8 | 29 |
+| NAT-121 | position 32 | 57 | 24 |
+| NAT-122 | position 34 | 59 | 25 |
+| NAT-123 | position 37 | 63 | 27 |
+
+The next comparison changes the explicitly supplied opportunity judgments while
+keeping the lane schedule fixed. Cautious and favorable select the disclosed ordinal
+endpoints; the baseline uses an explicit analyst-selected band when supplied, never
+an automatically invented midpoint. Range comparison preserves the full supplied
+envelope. Measured-only deliberately withholds provisional judgments from active
+comparisons, without claiming zero access. These are conditional planning scenarios,
+not statistical confidence intervals or probabilities of success.
+
+| Action | Base | Cautious | Favorable | Range comparison | Measured-only |
+| --- | --- | --- | --- | --- | --- |
+| SHC-BN | position 1 | 11 | 14 | 25 | 25 |
+| NAT-003 | position 2 | 41 | 1 | 4 | 4 |
+| NAT-010 | position 3 | 3 | 3 | 30 | 30 |
+| NAT-125 | position 4 | 2 | 2 | 5 | 5 |
+| SHC-HAUSA | position 5 | 1 | 4 | 2 | 2 |
+| NAT-082 | position 6 | 151 | 152 | 6 | 6 |
+| NAT-124 | position 7 | 44 | 5 | 7 | 7 |
+| EXP-026 | position 8 | 8 | 8 | 8 | 8 |
+| GLB-027 | position 9 | 4 | 7 | 9 | 9 |
+| NAT-058 | position 10 | 6 | 6 | 10 | 10 |
+| NAT-121 | position 32 | 45 | 31 | 12 | 12 |
+| NAT-122 | position 34 | 52 | 39 | 41 | 24 |
+| NAT-123 | position 37 | 55 | 34 | 24 | 29 |
+
+21 current packages have source-informed calibrations; Appendix G gives every
+scope and band rationale. Other exact-profile formal-reasoning priors are retained
+only in their compatible domain. Observation-only census rows remain in the evidence
+register but are not manufactured into extra translation commissions. In particular,
+a US home-language count does not become a population in the language's country of
+origin, and a supply-rich comparison row does not automatically commission another
+generic formal-reasoning translation.
+
+The component ownership correction is substantive, not a language exclusion.
+NAT-001 owns Bangladesh grades 2–5 recovery; SHC-BN retains caregiver-mediated
+preschool learning and Indian Bengali secondary/TVET. NAT-124 owns the Hindi
+first-year/methods package; IL-HU retains only the Indian and Pakistani Urdu
+outputs. Their R/S/A/N judgments are recalibrated to those active components.
+Caregivers are delivery intermediaries, not extra children counted as beneficiaries.
+The Malaysian Malay FR-2 core appears once as NAT-040; IL-IDMS remains its
+shared-source architecture alias rather than a second commission. Distinct
+school catch-up, advanced modules, regional surfaces and Jawi derivatives are
+not silently collapsed. SHC-SWAHILI's current population/dispatch scope is
+DRC/Uganda only; Tanzania/Kenya are follow-on context, not active first-package
+audiences.
+
+OpenStax and Open Logic are auditable, editable baselines for zero-price reuse, not
+universal books. Need is measured by population profile × learner stage × subject ×
+format × current supply.
+
+## 4. Educational stages and product selection
+
+| Stage | Binding access question | Typical first product | Evaluation unit |
+| --- | --- | --- | --- |
+| Pre-primary | Is mathematical language available in the home/familiar register? | Oral counting, comparison, shape, pattern, caregiver activities | Child/caregiver task |
+| Primary | Can a learner repair number, operation, fraction and measurement foundations? | Diagnostic mastery cycle with worked feedback and complete answers | Mastered prerequisite |
+| Lower secondary | Can the learner cross into proportional reasoning, algebra, geometry and data? | Catch-up and academic-register bridge | Problem set and re-entry path |
+| Upper secondary/TVET | Does the route connect to functions, precalculus, statistics and occupation-specific numeracy? | Applied bridge, simulations and sector cases | Course or occupational competency |
+| Undergraduate | Are coherent prerequisite chains and proof practices available? | Calculus, linear algebra, discrete math, probability and proof sequence | Course/unit |
+| Professional/continuing | Can readers update health, engineering, finance, management and data practice? | Versioned applied modules and notebooks | Competency/use case |
+| Postgraduate/doctoral | Can students enter advanced seminars, monographs and research methods? | Terminology, proof and literature-navigation bridge | Course, monograph or seminar |
+| Active researcher | Can specialists read, teach and extend frontier corpora? | Title-audited canonical source and dependency graph | Reference work/research uptake |
+
+The product baseline is teacher-independent without assuming that teachers are
+irrelevant: a motivated reader should be able to download once, diagnose prerequisites,
+follow worked examples, attempt exercises, inspect complete answers and recover from
+errors without an account, LMS or persistent connection. Classroom use remains an
+additional valid route. Semantic HTML/MathML, reflowable EPUB, tagged/print PDF,
+captions, audio transcripts, keyboard operation, large print and low-bandwidth bundles
+are separate access axes, not decoration.
+
+The content universe is wider than mathematics. OpenStax provides an auditable starting
+catalog for physics, chemistry, biology, statistics, business, economics, management,
+health and social science. Local evidence may instead prioritize financial capability,
+workplace numeracy, agriculture, climate/disaster resilience, public health, computing,
+data practice, entrepreneurship or research methods. Advanced mathematical corpora such
+as EGA, SGA and FGA are educational infrastructure for specialist readers, not mass
+foundational substitutes.
+
+## 5. Results: operational commissioning order
+
+| Position | ID | Intervention | Profiles | Planning R/S/A/N | Population basis | First bounded package |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | SHC-BN | Bangla shared-source caregiver/ECE and Indian TVET residuals | bn-Beng-BD; bn-Beng-IN | R3/S3/A3/N3 | Bangla, Bangladesh: 168,419,331 (interval 168,410,840–168,427,822) [mother_tongue_or_first_language; 2022 population / 2023 survey] \| Bengali, India: 97,237,669 [mother_tongue_or_first_language; 2011] \| Bengali, India: 96,177,835 [same_name_mother_tongue_component; 2011] | Produce only the residual Bangladesh 24-week caregiver/ECE component and the Indian Bengali secondary/TVET workshop-mathematics, safety, coding, finance and entrepreneurship bridge. Link the Bangladesh primary progression to NAT-001 grades 2–5 recovery; do not recommission or count that recovery component here. |
+| 2 | NAT-003 | Telugu applied STEM and tertiary-transition package | te-Telu-IN with Andhra Pradesh and Telangana overlays | R3/S3/A4/N3 | Telugu: 81,127,740 [mother_tongue_or_first_language; 2011] \| Telugu: 80,912,459 [same_name_mother_tongue_component; 2011] | Produce applied secondary/TVET/first-year STEM, coding, financial safety and entrepreneurship with Telugu–English terminology and offline simulations. |
+| 3 | NAT-010 | Odia | or-Orya-IN | RU/SU/AU/NU | Odia: 37,521,324 [mother_tongue_or_first_language; 2011] \| Odia: 34,059,266 [same_name_mother_tongue_component; 2011] | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. |
+| 4 | NAT-125 | Bhojpuri (India) | bho-Deva-IN | R3/S3/A3/N3 | Bhojpuri, India: 50,579,447 [mother_tongue_or_first_language; 2011] | Create a declared versioned Devanagari Bhojpuri editorial register and a teacher-independent foundational-numeracy-through-algebra sequence with diagnostics, full worked answers, phone/offline delivery, audio, and Bhojpuri-to-Hindi bridge terminology. |
+| 5 | SHC-HAUSA | Hausa boko Nigeria–Niger package with optional established Ajami layers | ha-Latn-NG; ha-Latn-NE; optional locally established ha-Arab layers | R3/S3/A2/N3 | Hausa Boko country outputs: 58,000,000 [published_or_derived_speaker_estimate; 2022] \| Hausa Boko country outputs: 94,000,000 [published_or_derived_speaker_estimate; 2022] | Build boko structured literacy/numeracy with diagnostics and Hausa↔English in Nigeria / Hausa↔French in Niger; add print, radio, IVR and optional established Ajami parallel text/audio. |
+| 6 | NAT-082 | Bambara | bm-Latn-ML | R2..R3/S4/A2..A3/N4 | Mali Bamanankan Latin-script edition: 9,551,561 [census_mother_tongue_persons_age_3_plus; 2022] | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. |
+| 7 | NAT-124 | Standard Hindi first-year and research-methods bridge | hi-Deva-IN | R3/S3/A4/N3 | Standard Hindi, India: 322,230,097 [same_name_mother_tongue_component; 2011] | Produce the Hindi first-year physics, chemistry, biology, statistics, computing, economics and management bridges with research design, R/Python and open-science methods. NAT-124 owns this exact Hindi component; IL-HU reuses its semantic/formula core for two separate Urdu locale outputs without recommissioning Hindi. |
+| 8 | EXP-026 | Peru Ashaninka Latin-script edition | cni-Latn-PE | RU/SU/AU/NU | Ashaninka: 73,567 [census_language_learned_in_childhood_age3plus_persons; 2017] | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. |
+| 9 | GLB-027 | Russian learned standard | ru-Cyrl-RU; localized successor-state overlays | RU/S1/A4/N2 | Russian learned standard: 134,319,233 [functional_language_ability_or_estimate; 2021-10-01] \| Russian learned standard: 132,317,159 [home_or_usual_language_use; 2021-10-01] | Open, accessible, no-login/offline statistics/causal inference, reproducible Python/R, research integrity, open licensing/data stewardship and AI evidence evaluation with applied tracks. |
+| 10 | NAT-058 | Dari | prs-Arab-AF | RU/SU/AU/NU | Dari: 30,083,114 [derived_2020_total_speakers_from_official_secondary_share_and_world_bank_denominator; 2020 estimate; republished in official report 2023] | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. |
+
+The canonical Top 10 above is reproduced from `TOP_10.csv`, the exact prefix of
+`TOP_100.csv`; it is not a separately fixed shortlist. Its ordering is the operational
+policy result, while each row's evidence and uncertainty must be read on their own terms.
+Across the broader portfolio, Bangla shares one semantic source but requires
+separate Bangladesh and Indian curricula. MSA is a learned written standard and must be
+paired with named spoken-language scaffolds. Hindi and Urdu reuse semantics while
+keeping Devanagari, Nastaliq, country standards and exact population cells separate.
+Kiswahili and Hausa require country and orthography outputs rather than umbrella reach.
+Filipino is not every Philippine learner's first language. Vietnamese and Telugu enter
+with explicit transition packages. The Indonesian and Chinese cases are at
+position 32 and position 34, respectively. Their
+prior work is credited in the forward deficit rather than used to erase either
+profile from opportunity analysis; these facts alone do not prove either position.
+
+### 5.1 What the Top 10 actually need
+
+| Position | ID | Why now | Follow-on | Prerequisite route | Access design |
+| --- | --- | --- | --- | --- | --- |
+| 1 | SHC-BN | Documented Bangladesh ECE participation gaps and Indian Bengali secondary/TVET material discontinuity support two distinct localized residuals. The Bangladesh grades 2–5 recovery commission is owned by NAT-001 and is excluded from this action's reader estimate. | Separate Bangladesh disaster-resilience and Indian Bengali first-year university overlays; then postgraduate research methods. | Oral-language/ECE entry -> grades 2-5 literacy/numeracy recovery -> lower-secondary re-entry -> TVET/applied pathway. \| Secondary mastery diagnostic -> workshop mathematics/science -> TVET or first-year bridge -> research methods. | Print, offline HTML, audio, IVR/SMS-compatible prompts and SD-card/local-server bundle. \| Offline phone/desktop course graph plus print workshop cards. |
+| 2 | NAT-003 | A large exact L1 population and substantial school supply point to the school-to-TVET/first-year transition, not another primary textbook series. | Agriculture/climate, health and SME continuing education, then postgraduate research methods and reproducibility. | Secondary prerequisite repair -> TVET/applied STEM -> first-year bilingual bridge -> professional/research methods. | Offline simulations, semantic HTML/EPUB/PDF and print practical guides. |
+| 3 | NAT-010 | Use ISO 639-3 `ory` in research tables; keep `or` as tooling alias. | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE |
+| 4 | NAT-125 | The exact 50,579,447 mother-tongue return establishes scale but not literacy, academic comfort, current population or the number newly served; Hindi academic-reading overlap is unmeasured. | After an exact supply audit, add missing secondary/TVET practical science, health, finance and computing; keep tertiary/professional work as a separately evidenced residual. | Bhojpuri oral/Devanagari entry diagnostic -> foundational numeracy -> pre-algebra/algebra -> secondary/TVET bridge -> separately audited tertiary residual. | Download-once semantic HTML/MathML, EPUB, tagged PDF, print workbook and low-data audio; no login required. |
+| 5 | SHC-HAUSA | Hausa has a very large L1/L2 universe and unusually strong cross-border reuse potential, but script, literacy and country-curriculum reach are not one number. | Secondary/TVET science, agriculture, public health, computing, mobile-money safety, microenterprise, livestock/water and solar/GSM trades; then tertiary statistics/R/Python. | Boko/Ajami placement and oral-literacy entry -> foundational mastery -> practical TVET -> statistics/programming/open science. | Print, radio, IVR, basic-phone and offline HTML/PDF. |
+| 6 | NAT-082 | N'Ko literacy is a separate script derivative. | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE |
+| 7 | NAT-124 | The sharper discontinuity is higher education and professional/research continuity, not absence of all Hindi school books. | Current health, agriculture, cyber-finance and SME continuing education, then accessible catch-up practice only where exact gaps remain. | Bilingual secondary diagnostic -> first-year disciplinary bridge -> statistics/programming -> postgraduate research methods. | Offline bilingual HTML/EPUB/PDF plus low-cost laboratory/simulation assets. |
+| 8 | EXP-026 | Americas balance; exact Indigenous-language cell | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE |
+| 9 | GLB-027 | The marginal need is reuse/accessibility/current methods and exact frontier gaps, not wholesale school translation. | Exact modern frontier review/monograph translations and semantic-accessible editions only where inventory proves absence. | Disciplinary prerequisite check -> statistics/programming/research integrity -> reproducible professional/research work -> exact frontier gaps. | Open no-login offline semantic bundle plus source and print. |
+| 10 | NAT-058 | Shared source and term graph can reduce compute. | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE |
+
+### 5.2 Large-profile completeness and omitted billions
+
+After Indian Bhojpuri was added at the exact 2011 C-16 mother-tongue count of
+50,579,447, every direct person-count language observation at or above 50 million in
+the current official master maps to the expected universe. The 528,347,193 Census
+“Hindi” umbrella is never added to its same-name Hindi component or Bhojpuri and other
+children. The remaining billion-scale defect was a modality conflation: written
+`zh-Hans-CN` and spoken Putonghua. The latter now has its own profile. Applying the
+official rounded 80.72% communication prevalence to the mainland census denominator
+gives a derived sensitivity of 1,139,587,786, with a rounding-only interval of
+1,139,517,198–1,139,658,374. It is not an official speaker, L1, literacy or academic-
+comfort count and is wholly nonadditive with written Chinese and Sinitic profiles
+(Ministry of Education of the People's Republic of China, 2021; National Bureau of
+Statistics of China, 2021).
+
+Malaysian Malay is also explicit. The 32.4 million Malaysia total is a rounded
+territory ceiling, not a Malay-reader count. MABBIM supports strong terminology and
+production reuse with Indonesian, not blanket direct comprehension. The named
+Indonesian–Malaysian architecture's first action is represented once by NAT-040 at position 31; it begins by measuring and executing
+the `ms-Latn-MY` locale delta from the completed Indonesian semantic corpus; Brunei
+Rumi and Jawi outputs stay separate (Department of Statistics Malaysia, 2022; Dewan
+Bahasa dan Pustaka, n.d.).
+
+### 5.3 Existing work and exact forward residuals
+
+| Pos. | Case | Credited existing supply | Next work | Non-overlap |
+| --- | --- | --- | --- | --- |
+| 4 | Bhojpuri (India) | Official sources evidence Hindi-medium schooling and some Bhojpuri-as-subject provision, but no continuous open Bhojpuri-medium mathematics/STEM sequence has been evidenced. | Create a declared versioned Devanagari Bhojpuri editorial register and a teacher-independent foundational-numeracy-through-algebra sequence with diagnostics, full worked answers, phone/offline delivery, audio, and Bhojpuri-to-Hindi bridge terminology. | Never add Bhojpuri to the parent Hindi census umbrella; award zero automatic Hindi comprehension credit; keep Nepal, Mauritius, Magahi and Maithili outputs separate. |
+| 7 | Standard Hindi first-year and research-methods bridge | NCERT/DIKSHA school provision is extensive; DIKSHA supports offline use and many languages; Hindi had the largest audited NIMI vocational output. | Produce the Hindi first-year physics, chemistry, biology, statistics, computing, economics and management bridges with research design, R/Python and open-science methods. NAT-124 owns this exact Hindi component; IL-HU reuses its semantic/formula core for two separate Urdu locale outputs without recommissioning Hindi. | NAT-124 is the sole owner of this hi-Deva-IN first-year/professional/methods package. IL-HU owns Urdu outputs only. Exclude Bhojpuri and other Hindi-umbrella returns; neither source reuse nor bilingual overlap creates another Hindi audience. |
+| 31 | Malaysian Malay formal reasoning via Indonesian source reuse | Malaysian educational supply exists; the verified reusable source asset is Indonesian Open Logic 722/722. Exact Malaysian terminology/curriculum deltas are distinct from Indonesian readership. | Produce the registered FR-2 Formal-reasoning core, 210 source units covering FR-1 plus first-order logic, as a Malaysian Malay locale adaptation of the completed 722/722 Indonesian Open Logic corpus. NAT-040 owns this bounded shared-source action; IL-IDMS is its architecture alias, not another commission. Retain diagnostics, complete worked answers, editable source and offline HTML/MathML/PDF. | One ms-Latn-MY FR-2 commission, canonically NAT-040. IL-IDMS is an exact first-action alias retained in architecture/disposition data. Do not count Indonesian beneficiaries, the architecture itself, additional Open Logic units or Jawi derivatives as this action's new audience. |
+| 32 | Bahasa Indonesia Evidence-to-Practice and Research Core | Indonesian program, not pilot: Open Logic 722/722 and a 40-course mathematics program with public and active-production roles. | Add six nonduplicative courses: research design/open science; applied statistics and causal reasoning in R/Python; reproducible data/AI/cybersecurity; evidence appraisal; public health/One Health; climate-smart agriculture/disaster risk. | Do not duplicate the completed Open Logic corpus or already covered 40-course roles; commission only exact residual or new-domain packages. |
+| 34 | Mainland Simplified Chinese accessibility and frontier residual | Large national platform supply; local Open Logic 722/722 and Algebra and Trigonometry 94/94 complete; Calculus I 30/55 with 25 exact units remaining; Open Logic has a deterministically evidenced accessibility residual. | Finish the exact 25-unit Calculus I residual (CALC1-0031 through CALC1-0055), then Calculus II/III and Statistics; produce semantic HTML/MathML, accessible EPUB, tagged-PDF, audio/transcript and low-bandwidth offline derivatives for completed corpora. | Do not claim coverage of Wu, Yue vernacular, Xiang, Hakka, Taigi or minority-language communities; do not duplicate complete Open Logic or algebra. |
+| 37 | Japanese (Japan) | All compulsory-school pupils receive required textbooks free; approved Japanese school series are abundant and attainment is high. Residual cohorts include 84,759 public-school pupils requiring Japanese-language instruction, 353,970 non-attending compulsory-school pupils and roughly 10% of the PIAAC age-16-65 population at or below numeracy Level 1; these cohorts overlap. | Build a no-login, download-once Japanese Open Mathematics Access and Research Bridge: curriculum-aligned diagnostics and prerequisite repair, complete solutions, accessible semantic HTML/EPUB/MathML, and easy-Japanese/furigana plus multilingual terminology for non-attending pupils, adult re-entry learners and pupils requiring Japanese-language instruction. | Do not duplicate generic compulsory-school algebra or treat the 123.802M territory population as Japanese readers newly served; keep formalism-assisted foreign-language reading distinct from writing/oral-instruction access. |
+
+The Indonesian program is established, not a pilot and not a wholly completed
+40-course program. The registered public snapshot records Open Logic 722/722, a
+1,116-page linked reader, 40 selected course roles, 27 effective published roles and
+13 production roles. Its documented page universes—19,745 teaching-package pages,
+20,763 selected-corpus working pages and 27,705 rendered-universe pages—are not
+interchangeable, and final Indonesian pagination is unknown. Its next package therefore
+adds six nonduplicative evidence-to-practice and research courses rather than repeating
+Open Logic (OpenLogic-id, 2026; Program Matematika Indonesia, 2026).
+
+Mainland China likewise receives no duplicate Open Logic or algebra. The current exact
+state is Open Logic 722/722, *Algebra and Trigonometry 2e* 94/94 and *Calculus Volume
+1* 30/55. The first bounded work is CALC1-0031 through CALC1-0055, followed by
+Calculus II/III and Statistics, semantic accessibility, a curriculum-aligned school
+diagnostic overlay, a 144-hour vocational quantitative bridge, adult/workplace/
+financial numeracy, academic re-entry and title-audited frontier work. Six further
+STEM titles are candidate scope, not six verified residual books: their completion and
+remaining units stay unknown until the exact works and coverage are audited. Official
+platform abundance rules out “China lacks native-language education” as the diagnosis;
+it does not prove open licences, no-login offline permanence, independent-study closure
+or accessibility (Ministry of Education of the People's Republic of China, 2026;
+National Bureau of Statistics of China, 2026; W3C, 2023, 2025).
+
+Japan's current placement is position 37 in the operational sequence; this is not a
+measured estimate of its relative marginal benefit. Free compulsory textbooks, multiple
+approved series and high PISA/TIMSS attainment make another ordinary school textbook a
+low-additionality comparator. Concrete overlapping residual cohorts include 84,759
+pupils requiring Japanese-language instruction, 353,970 compulsory-school pupils
+meeting the nonattendance definition, and roughly 10% of the PIAAC age-16–65
+population at or below numeracy Level 1. Upper-secondary accessible-audio coverage was
+reported far below elementary coverage, and a bounded MEXT audit found independent
+screen-reader operation inconsistent. The commission is a Japanese Open Mathematics
+Access and Research Bridge: open offline self-study, easy Japanese/ruby/multilingual
+scaffolding, semantic mathematics, adult re-entry, proof/foreign-language reading and
+title-audited frontier translations (Ministry of Education of Japan, 2025, 2026a,
+2026b; OECD, 2024; Sawaki, 2017).
+
+## 6. Interlanguage and shared-core result
+
+The overlap companion finds exact normalized relations for
+24 of 100 portfolio entries. No matched matrix row is
+currently rankable for cross-language demographic reach, so the cross-language credit
+is conservatively zero. This is not an estimate of zero mathematical utility. It means
+that family ceilings, short cloze tests, names and scripts are not multiplied into
+reader populations without directed task evidence.
+
+The production recommendation remains positive where reuse is coherent: Bangla,
+Hindi–Urdu, Arabic, Indonesian–Malaysian Malay, BCMS, Nguni, Sotho–Tswana, Persian–
+Dari–Tajik, Punjabi, Scandinavian, Turkic-branch and other packages can share semantic
+source, terminology, formulas, accessibility structure, rendering tests and QA while
+publishing named outputs. Interslavic remains a useful supplementary mathematics-
+reading and terminology experiment. Its observed short professional-text result does
+not establish sustained mathematical comprehension or blanket Slavic coverage.
+
+The next research design should cross expertise (novice, undergraduate, specialist),
+formal density (expository prose, worked example, theorem-proof, notation-heavy
+reference), direction, script, prior study and task (gist, exact proposition,
+error-detection, problem solution). This tests the user's mathematically plausible
+hypothesis directly instead of importing a general-prose prior.
+
+## 7. Compute evidence and planning
+
+| Boundary | Gross input | Cached input | Fresh input | Output | Total | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- |
+| 33 registered owner roots | 83,386,749,267 | 81,480,422,656 | 1,906,326,611 | 251,883,504 | 83,638,632,771 | Exact final cumulative counters; reasoning is already inside output |
+| 6,726-task descendant-inclusive closure | not split | not split | not split | not split | 10,253,232,856,362 | Includes the 33 roots; never add to the root subtotal |
+
+The 33-root total partitions as cached + fresh + cache-write gross input, with
+cache-write zero. Reasoning output is already contained in output. The closure total is
+an inclusive superset, not a descendant add-on. A tail scan found 7,970 distinct
+cumulative-token progressions, an evidenced lower bound rather than a complete request
+count. These boundaries are the reason “a million gross tokens” cannot be converted
+directly into a million fresh tokens or into weekly monetary spend.
+
+For a fixed 722-unit Open Logic source, the pre-existing planning scenarios are:
+
+| Scenario | Source alpha tokens | Editable units | Fresh input | Cached input | Output | Gross tokens | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| low | 367220 | 722 | 1199000 | 1023000 | 457000 | 2679000 | Disciplined first-pass translation with targeted review; hypothetical workflow coefficients; not weekly Codex-plan consumption. |
+| base | 367220 | 722 | 4738000 | 5854000 | 1074000 | 11666000 | Every unit receives one independent model critique and about 35 percent receives a rewritten slice; hypothetical workflow coefficients; not observed local usage. |
+| high | 367220 | 722 | 19435000 | 30324000 | 3440000 | 53200000 | Two full critique passes substantial rewriting verbose QA and 40 percent retry allowance; conservative stress scenario; not observed local usage. |
+
+Those scenarios are hypothetical workflow coefficients, not measured Indonesian usage.
+They demonstrate how source preparation, per-unit calls, critique, correction, build QA
+and retry allowance can change gross workload. Future grants should report at least:
+source tokens, editable units, fresh input, cached input, output, model/request boundary,
+formula/structure checks, build/render checks, accessibility conversion, corrections and
+maintenance. Package comparisons should use the same boundary.
+
+## 8. Grant and implementation design
+
+1. **Use open, editable sources.** Global reuse requires lawful translation,
+   correction, redistribution, printing and preservation at zero learner price.
+2. **Select an exact profile and exact deficit.** Record variety, script, territory,
+   stage, subject, format, current supply and non-overlap before production.
+3. **Build once, localize explicitly.** Reuse semantic cores and toolchains while
+   retaining named locale/script outputs and zero automatic demographic reach.
+4. **Make self-study a baseline.** Include diagnostics, prerequisites, worked examples,
+   exercises, complete answers, misconception feedback and download-once delivery.
+5. **Treat accessibility as content.** Semantic math, keyboard operation, captions,
+   transcripts, reflow, large print, Braille/speech compatibility and low-bandwidth
+   bundles are independently commissioned and checked.
+6. **Maintain separate foundational and frontier lanes.** A small specialist corpus
+   can have high research and teaching leverage without masquerading as mass reach.
+7. **Instrument the lifecycle.** Persist source identities, terminology decisions,
+   formula/structure checks, builds, renders, model critiques, corrections, token
+   categories and public-byte receipts.
+8. **Evaluate use without creating a human-dependent release gate.** Learning and
+   comprehension evidence should inform later revisions; complete deterministic work
+   remains publishable while uncertainty is disclosed.
 
 ## 9. Limitations
 
-Population sources differ in year, age universe, language question, and territorial
-coverage. Exact counts are exact only to their printed measure; they are not all
-current L1-speaker estimates. Many censuses measure ethnicity rather than language,
-speaking rather than reading, or household use rather than individual ability.
+Population observations span incompatible measures and years. Territory ceilings are
+not reader counts; L1 is not literacy; home use is not academic comfort; an official
+language is not universal competence; and a learner cohort is not a language
+population. Several expected profiles remain unresolved. Top-100 positions are a
+decision-aid sequence, not a measured global welfare ordering.
 
-Academic-lingua-franca comfort is the largest unresolved factor. Official status,
-school exposure, or self-reported subsidiary-language knowledge does not prove
-comfortable advanced reading. Wide ranges are therefore a feature, not an error.
+Needs evidence is deepest for 20 high-reach profiles. Other Top-100 rows use explicit
+provisional local-need fits from registered curriculum portfolios and are labelled as
+such. A package recommendation can be reasonable before a full local supply census,
+but it cannot be described as a demonstrated absence. Clinical, legal, financial,
+agricultural and warning information requires local versioning.
 
-Scarcity proxies can miss unindexed, offline, paywalled, or locally hosted resources,
-and can overcount research works that are not teaching material. Model benchmarks are
-general-domain and may not represent specialist mathematics or the target variety.
+AI mathematical competence improves semantic checking relative to blind machine
+translation, but it is not infallibility or linguistic authority. Source-faithful
+formula and structure checks, terminology evidence, independent model critique,
+compilation, rendering and versioned correction remain necessary deterministic parts
+of the workflow. Missing human evidence is uncertainty, not a reason to halt a
+complete provisional edition.
 
-The compute model is reproducible but scenario-based. It is calibrated to exact local
-source tokens and planned workflow stages; its coefficients are not fitted to the
-empirical 33-root cached/fresh/output boundary, and the broader 6,726-thread closure
-lacks a historical category split.
-API-equivalent prices are date- and model-specific and should not be treated as weekly
-subscription accounting or complete program cost.
-
-Interlanguage evidence is especially sparse, but the evidentiary gap must be named
-correctly. A zero in the cardinal register means **no demographic reach has yet been
-credited**; it is not a substantive estimate that the surface has zero mathematical
-utility. Short-task comprehension, linguistic relatedness, or a family label cannot
-alone establish sustained mathematical usability, while symbol density, prior subject
-knowledge, and the reader's ability to reconstruct formal structure may make advanced
-mathematics unusually receptive to partial linguistic comprehension. The present
-portfolio therefore withholds unmeasured population multiplication, credits shared-
-core production savings where auditable, and treats expertise-by-formal-density
-comprehension as a high-priority measurement program.
-
-Finally, access is not learning, but this distinction does not reduce the product to a
-bare text or assume that a teacher must supply the rest. The ranking identifies where
-an open, exercise-rich, answer-bearing, offline-capable course can remove a barrier.
-Learning-adjusted causal claims still require a defined package, exposure, and outcome
-measure; access claims require proof that the usable package exists and can be
-obtained.
+The compute audit is unusually large but not a universal cost model. Its earliest
+Open Logic work is outside the registered boundary, cached inputs dominate the root
+total, the descendant closure lacks category splits, and page universes include
+different source/reference roles. No cost, energy or carbon claim is derived.
 
 ## 10. Conclusion
 
-Efficient use of AI compute for educational access is a portfolio-design problem, not
-a speaker-count sort and not a race to maximize translated file totals. The central
-unit must be an exact production profile - language or variety, script, orthography,
-territory, register, and curriculum - joined to a dated population observation and an
-explicit non-overlap model. The revised analysis also makes a second distinction that
-the first paper missed: **the population that should be served and the mathematics it
-most needs are two different optimization questions**.
+An evidence-conscious educational translation program need not choose between large
+languages, small endangered languages, interlanguages, accessibility and advanced
+research. It separates their outcomes and builds a portfolio. Large exact profiles
+can create vast aggregate access; regional and endangered editions create depth and
+prestige-domain function; semantic accessibility reaches readers whom language count
+misses; and research-frontier translation supports advanced education and knowledge
+production.
 
-On the equal ex-ante comparison used for other natural-language candidates, Bahasa
-Indonesia ranks first. Its official 2022 BPS measure counts 248,501,794 people aged
-five or older reported able to understand spoken Indonesian and produce Indonesian
-words intelligible to another person; this is a functional-language
-ceiling, not a literacy or academic-readiness count. Including it corrects a
-classification error: completed Indonesian work made the language more feasible and
-reduced the next marginal cost, but the earlier model treated that evidence as a reason
-to omit the population opportunity. Bangladesh Bangla, Telugu, Indian Bengali,
-Vietnamese, Marathi, Indian Tamil, Western Punjabi, Javanese, and Gujarati complete
-the corrected Top 10 under the disclosed alternating base/optimistic/scarcity rule.
-The list records a reproducible allocation view rather than pretending that one
-uncertain scalar identifies global welfare.
+The current Top 10 is the canonical sequence reproduced in Section 5, not a claim that
+its members are the ten empirically best uses of compute. The broader portfolio credits
+completed Indonesian and Chinese work, retains Japan's specific access needs, and keeps
+their operational positions distinct from unmeasured marginal benefit. The analysis
+explicitly represents Indian Bhojpuri, separates spoken Putonghua from written Chinese,
+and exposes Malaysian Malay as its own output. It uses
+interlanguage mechanisms where they save production work and gives direct readership
+only where evidence supports comprehension. Most importantly, it says what to build:
+from caregiver numeracy and mastery recovery through TVET, statistics, financial and
+workplace capability, undergraduate proof, professional updating, semantic access and
+canonical research corpora.
 
-Those ten populations should not receive ten identical first books. For Indonesian,
-the first operation is no longer another book title: it is an exact needs-to-program
-crosswalk across the existing 40-course curriculum, whose public overlay records 27
-published roles and 13 production roles, followed by closure of only the unfinished
-prerequisite, solution, delivery, or accessibility components. Its page evidence is
-reported as distinct teaching-package, selected-corpus, rendered-universe, and public-
-artifact totals rather than one false final translated-page count. The other
-first-wave packages are foundational Grade 2-5 numeracy for Bangladesh Bangla;
-arithmetic-to-algebra catch-up for Telugu, Indian Bengali, Tamil, and Gujarati; a
-secondary-to-tertiary bridge for Marathi and Western Punjabi; a coherent precalculus,
-calculus, linear-algebra, and proof spine for Vietnamese; and a bilingual
-Javanese-to-Bahasa academic-register scaffold whose outcome evidence is explicitly
-weaker. Japanese generic school algebra is deprioritized because national
-achievement and textbook supply are strong, while advanced proof, abstract algebra,
-commutative algebra, and algebraic geometry in Japanese remain a legitimate high-level
-scarcity and prestige-domain program. “What is missing?” must therefore be audited at
-the population, territory, stage, and subject level before compute is committed.
-
-The 210-unit Formal Reasoning Core and the fixed OpenStax bundles remain useful because
-they make token comparisons reproducible, not because they are universal curricular
-prescriptions. Producing the 100 selected FR-2 comparison editions is estimated at
-91.274 million gross tokens in the low workflow, 407.305 million in the base workflow,
-and 1.866 billion in the high workflow. The larger 100-language OpenStax comparison
-uses 36 MV-1/D2, 43 MV-1/D3, and 21 SB-1/D3 workloads. Actual grants should replace
-those fixed denominators with the measured source burden of the needs-audited package;
-all 100 Top-100 rows now carry a territory- and stage-specific first-product or bounded-
-audit assignment, with confidence and caveats explicit. The Indonesian implementation
-also shows why source-length estimates cannot be presented as observed program cost:
-33 user-visible roots recorded 83.639 billion total tokens with 97.714% of gross input
-cached, while the broader 6,726-thread closure recorded 10.253 trillion cumulative
-total tokens without a historical component split. A narrower nine-goal ledger
-attributes 88.493 million pursuit-accounting tokens to named phases. These boundaries
-are not added or priced; they motivate instrumentation that preserves scope, cached and
-fresh input, output, reasoning-subset, retries, and workflow stage for future grants.
-
-Interlanguage work has two potentially large mathematical advantages. First, a shared
-semantic/terminology core can reduce production compute while preserving separately
-named localized editions; Punjabi, dual-territory Urdu, Nguni, and Sotho architectures
-show modeled base savings of 25%-37.5%. Second, advanced mathematics may permit more
-receptive cross-language or constructed-bridge reading than ordinary prose because
-notation, formal structure, diagrams, examples, and prior disciplinary knowledge carry
-part of the meaning. The effect should be strongest for expert readers and symbol-dense
-material and weakest for foundational explanation and word problems. Constructed
-Interslavic therefore receives no **unmeasured demographic multiplier** from a short
-cloze result, but neither Interslavic nor interlanguages generally are rated useless.
-They receive an explicit mathematics-specific research design: compare comprehension,
-error detection, and problem solving across expertise levels and prose/formal-density
-bands, then incorporate measured reach without double counting readers already served
-by native-language editions.
-
-The program's baseline artifact is not a streaming portal and not a teacher-dependent
-promise. It is a lawful open source, a mathematically capable model translation and
-semantic-audit pipeline, preserved exercises and public worked answers, and a package
-that can be downloaded once to a phone or shared device and used offline. Classroom
-adoption, print, MathML/HTML, reflowable EPUB, plain-language, audio/Braille, and signed-
-language products expand that baseline. The separate accessibility safeguard backlog
-keeps those nested access axes visible without pretending that their global population
-ceilings are additive.
-
-The resulting grant strategy is concrete: fund reusable open and formula-preserving
-source infrastructure; commission the corrected Top 10 according to demonstrated
-content need; extend to a needs-audited Top 100; test shared-core and receptive
-interlanguage mathematics as separately instrumented workflows; and publish offline
-and accessible derivatives alongside the language edition. As better literacy,
-academic-comfort, comprehension, production, and usage evidence arrives, the same open
-model can be rerun without discarding prior editions or converting uncertainty into
-zero.
+The next production decision can now be bounded and auditable: choose one emitted
+profile, take its stated first package rather than a generic textbook, measure exact
+source units and workflow tokens, publish open offline accessible outputs, and update
+the evidence after use. That is a tractable path from AI compute to additional
+educational access.
 
 ## Model and contributor provenance
 
-The research questions, program-design considerations, corrections, and publication
-direction were supplied by the commissioning researcher. Literature retrieval,
-evidence reconciliation, quantitative analysis, drafting, source-to-formula checks,
-document construction, and revision assistance were performed with **OpenAI Codex
-gpt-5.6-sol, Ultra**. This identification describes the computational production
-environment; it does not replace the authorship, licensing, or contributor credit of
-any source work. Every reused source retains its stated author, publisher, license,
-and attribution, and the machine-readable evidence register preserves the authority
-and limitation attached to each quantitative claim.
+Research synthesis, analysis, deterministic data generation, drafting and document
+production used **OpenAI Codex gpt-5.6-sol, Ultra**. The model identity does not replace
+the authorities cited below. Original source authors, OpenStax/Open Logic contributors,
+public-program contributors and human contributors retain their credits. First-party
+paper and data are intended for CC BY 4.0 release; first-party code is intended for
+MIT release; third-party material retains its own terms.
 
 ## References
 
@@ -1185,6 +537,12 @@ Amalric, M., & Dehaene, S. (2016). Origins of the brain networks for advanced
 mathematics in expert mathematicians. *Proceedings of the National Academy of
 Sciences of the United States of America, 113*(18), 4909-4917.
 https://doi.org/10.1073/pnas.1603205113
+
+Amano, T., Ramírez-Castañeda, V., Berdejo-Espinola, V., Borokini, I.,
+Chowdhury, S., Golivets, M., González-Trujillo, J. D., Montaño-Centellas, F.,
+Paudel, K., White, R. L., & Veríssimo, D. (2023). The manifold costs of being a
+non-native English speaker in science. *PLOS Biology, 21*(7), e3002184.
+https://doi.org/10.1371/journal.pbio.3002184
 
 Angrist, N., Bergman, P., & Matsheng, M. (2022). Experimental evidence on
 learning using low-tech when school is out. *Nature Human Behaviour, 6*, 941-950.
@@ -1202,6 +560,13 @@ https://asercentre.org/wp-content/uploads/2022/12/ASER_2024_Final-Report_13_2_24
 ASER Pakistan Secretariat. (2024, March 8). *Annual Status of Education Report
 (ASER) Pakistan 2023: National (Rural)* (Provisional). Idara-e-Taleem-o-Aagahi.
 https://aserpakistan.org/document/2024/aser_national_2023.pdf
+
+Asian Development Bank. (2021). *Reaping the benefits of Industry 4.0 through
+skills development in Viet Nam*. https://doi.org/10.22617/SPR200308
+
+Bangladesh Bureau of Statistics, & UNICEF. (n.d.). *MICS 2025: Data on the situation of children in Bangladesh*. Retrieved August 31, 2026, from https://www.unicef.org/bangladesh/en/data-situation-children-bangladesh
+
+Bangladesh Bureau of Statistics. (2024). *Population and Housing Census 2022: Report on Socio-Economic and Demographic Survey 2023*. https://bbs.portal.gov.bd/pages/static-pages/6922e073933eb65569e27220
 
 Bergmanis, T., & Pinnis, M. (2021). Facilitating terminology translation with
 target lemma annotations. In *Proceedings of the 16th Conference of the European
@@ -1223,6 +588,8 @@ menurut wilayah, jenis kelamin, dan kemampuan berbahasa Indonesia, Indonesia,
 2022* [Long Form Population Census 2020 data table].
 https://sensus.bps.go.id/topik/tabular/sp2022/196/0/0
 
+China Internet Network Information Center. (2026). *The 57th statistical report on China's internet development*. https://www3.cnnic.cn/n4/2026/0304/c88-11549.html
+
 Clinton, V., & Khan, S. (2019). Efficacy of open textbook adoption on learning
 performance and course withdrawal rates: A meta-analysis. *AERA Open, 5*(3).
 https://doi.org/10.1177/2332858419872212
@@ -1232,6 +599,11 @@ resources on various student success metrics. *International Journal of Teaching
 and Learning in Higher Education, 30*(2), 262-276.
 https://files.eric.ed.gov/fulltext/EJ1184998.pdf
 
+Committee on Economic, Social and Cultural Rights. (2020). *General comment
+No. 25 (2020) on science and economic, social and cultural rights (article 15(1)(b),
+(2), (3) and (4) of the International Covenant on Economic, Social and Cultural
+Rights)*. United Nations. https://digitallibrary.un.org/record/3899847
+
 Crawfurd, L., Evans, D. K., Hares, S., & Sandefur, J. (2023). Live tutoring calls
 did not improve learning during the COVID-19 pandemic in Sierra Leone. *Journal of
 Development Economics, 164*, 103114. https://doi.org/10.1016/j.jdeveco.2023.103114
@@ -1239,9 +611,9 @@ Development Economics, 164*, 103114. https://doi.org/10.1016/j.jdeveco.2023.1031
 *Crosswalk to earlier local marginal-intelligibility research*. (n.d.).
 [Unpublished internal methodology artifact].
 
-Department of Basic Education. (n.d.). *Curriculum Assessment Policy Statements:
-Foundation phase.* Retrieved August 25, 2026, from
-https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements/CAPSFoundation/tabid/571/Default.aspx
+Cuntz, A., Mueller-Langer, F., Muscarnera, A., Oguguo, P. C., & Scheufen, M.
+(2025). Access to science and innovation in the developing world. *Research Policy,
+54*(3), 105153. https://doi.org/10.1016/j.respol.2024.105153
 
 Department of Basic Education. (2015). *Official languages: Home language:
 Examination guidelines, Senior Certificate, Grade 12.*
@@ -1250,6 +622,16 @@ https://www.education.gov.za/LinkClick.aspx?fileticket=4bgvpFIDeso%3D&mid=2506&p
 Department of Basic Education. (2023). *The status of the language of learning and
 teaching in schools: A quantitative overview, 2008-2016.*
 https://www.education.gov.za/Portals/0/Documents/Reports/The%20Status%20of%20LoLT%20In%20Schools%202023.pdf
+
+Department of Basic Education. (n.d.). *Curriculum Assessment Policy Statements:
+Foundation phase.* Retrieved August 25, 2026, from
+https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements/CAPSFoundation/tabid/571/Default.aspx
+
+Department of Education, Philippines. (2021, June 4). *DepEd records 4.5M early registrants for SY 2021–2022*. https://www.deped.gov.ph/2021/06/04/deped-records-4-5m-early-registrants-for-sy-2021-2022/
+
+Department of Statistics Malaysia. (2022). *Key findings: Population and Housing Census of Malaysia 2020*. https://www.dosm.gov.my/portal-main/release-content/launching-of-report-on-the-key-findings-population-and-housing-census-of-malaysia-2020-
+
+Dewan Bahasa dan Pustaka. (n.d.). *Majlis Bahasa Brunei Darussalam-Indonesia-Malaysia (MABBIM)*. https://dbp.gov.my/majlis-bahasa-brunei-darussalam-indonesia-malaysia-mabbim/
 
 Dhaliwal, I., Duflo, E., Glennerster, R., & Tulloch, C. (2013). Comparative
 cost-effectiveness analysis to inform policy in developing countries: A general
@@ -1268,6 +650,10 @@ Ministry of Primary and Mass Education, Government of the People's Republic of
 Bangladesh.
 https://dpe.portal.gov.bd/sites/default/files/files/dpe.portal.gov.bd/publications/27a08801_1d5d_4e08_8fdb_25a4a693a2f3/NSA-2022%20Final%20Report.pdf
 
+Doan, D., Luu, T., Nguyen, N. T., & Safir, A. (2023). *Green jobs: Upskilling
+and reskilling Vietnam's workforce for a greener economy*. World Bank.
+https://documents1.worldbank.org/curated/en/099091823063517461/pdf/P1781121e19c8506719ff81042e6be4e00b.pdf
+
 Duquenne, P.-A., Schwenk, H., & Sagot, B. (2023). *SONAR: Sentence-level
 multimodal and language-agnostic representations*. arXiv.
 https://arxiv.org/abs/2308.11466
@@ -1278,6 +664,10 @@ problem solving and reasoning. In *Findings of the Association for Computational
 Linguistics: EACL 2026* (pp. 2524-2550). Association for Computational
 Linguistics. https://doi.org/10.18653/v1/2026.findings-eacl.131
 
+General Statistics Office of Viet Nam. (2025, January). *Press release on the
+labour and employment situation in the fourth quarter and 2024*.
+https://www.gso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/01/thong-cao-bao-chi-ve-tinh-hinh-lao-dong-viec-lam-quy-iv-va-nam-2024/
+
 Glewwe, P., Kremer, M., & Moulin, S. (2009). Many children left behind? Textbooks
 and test scores in Kenya. *American Economic Journal: Applied Economics, 1*(1),
 112-135. https://doi.org/10.1257/app.1.1.112
@@ -1287,19 +677,34 @@ to improve global learning: What does recent evidence tell us are “smart buys�
 improving learning in low- and middle-income countries?* World Bank Group.
 https://documents1.worldbank.org/curated/en/099420106132331608/pdf/IDU-977f73d7-22b1-4777-980c-c5a14598eef8.pdf
 
+Government of Gujarat. (2024, January 9). *Strategic investment plan under RAMP
+programme: Gujarat*. Ministry of Micro, Small & Medium Enterprises.
+https://ramp.msme.gov.in/ramp/pdf-documents/sip-states/gujarat.pdf
+
 Grimaldi, P. J., Basu Mallick, D., Waters, A. E., & Baraniuk, R. G. (2019). Do
 open educational resources improve student learning? Implications of the access
 hypothesis. *PLOS ONE, 14*(3), e0212508.
 https://doi.org/10.1371/journal.pone.0212508
 
+Higher Education Commission, Pakistan. (2024). *Annual report 2023–24*. https://www.hec.gov.pk/english/news/AnnualReports/Annual-Report-2023-24.pdf
+
+Higher Education Commission, Pakistan. (n.d.). *Undergraduate education policy*. https://www.hec.gov.pk/english/policies/Pages/UGEP.aspx
+
 Hilton, J. (2016). Open educational resources and college textbook choices: A
 review of research on efficacy and perceptions. *Educational Technology Research
 and Development, 64*, 573-590. https://doi.org/10.1007/s11423-016-9434-9
+
+JMOOC. (2025). *For institutions*. https://www.jmooc.jp/en/institutions
 
 Kantharuban, A., Vulić, I., & Korhonen, A. (2023). Quantifying the dialect gap and
 its correlates across languages. In *Findings of the Association for Computational
 Linguistics: EMNLP 2023* (pp. 7226-7245). Association for Computational Linguistics.
 https://doi.org/10.18653/v1/2023.findings-emnlp.481
+
+Kementerian Kesehatan Republik Indonesia, Direktorat Jenderal Sumber Daya
+Manusia Kesehatan. (2026). *Perencanaan nasional tenaga medis dan tenaga kesehatan:
+Proyeksi kebutuhan melalui pendekatan wilayah tahun 2023-2032*.
+https://repositori-ditjen-nakes.kemkes.go.id/802/1/2026_IND_Dokumen%20Proyeksi%20Kebutuhan%20Named%20Nakes%20Berbasis%20Wilayah.pdf
 
 Kleidermacher, H. C., & Zou, J. (2025). *Science across languages: Assessing LLM
 multilingual translation of scientific papers* [Preprint]. arXiv.
@@ -1311,6 +716,9 @@ S., Sagot, B., Rivera, C., Rios, A., Papadimitriou, I., Osei, S., Ortiz Suárez,
 P. J., ... Adeyemi, M. (2022). Quality at a glance: An audit of web-crawled
 multilingual datasets. *Transactions of the Association for Computational
 Linguistics, 10*, 50-72. https://doi.org/10.1162/tacl_a_00447
+
+Kyoto University OpenCourseWare. (2015). *Development from basic mathematics A*.
+https://ocw.kyoto-u.ac.jp/course/67/
 
 Laitin, D. D., Ramachandran, R., & Walter, S. L. (2019). The legacy of colonial
 language policies and their impact on student learning: Evidence from an experimental
@@ -1327,23 +735,61 @@ https://doi.org/10.52202/079017-1697
 *Marginal-intelligibility opportunity heuristic for OpenLogic*. (n.d.).
 [Unpublished internal methodology artifact].
 
+Mathematical Society of Japan. (2026). *Algebra symposium*.
+https://www.mathsoc.jp/section/algebra/algsympo.html
+
 McEwan, P. J. (2015). Improving learning in primary schools of developing
 countries: A meta-analysis of randomized experiments. *Review of Educational
 Research, 85*(3), 353-394. https://doi.org/10.3102/0034654314553127
-
-Ministry of Education, Culture, Sports, Science and Technology. (n.d.). *Japan's
-school textbook*.
-https://www.mext.go.jp/en/policy/education/elsec/title02/detail02/sdetail02/1383719.html
 
 Merunka, V., van Steenbergen, J., Yordanova, L., & Kocór, M. (2019). The
 Interslavic language as a tool for supporting e-democracy in Central and Eastern
 Europe. *International Journal of Electronic Governance, 11*(3/4), 260-288.
 https://doi.org/10.1504/IJEG.2019.103710
 
+Ministry of Education of Japan. (2025). *Second basic plan for promoting reading accessibility*. https://www.mext.go.jp/content/20250328-mxt_kyousei02-000008669_02.pdf
+
+Ministry of Education of Japan. (2026a). *FY2025 survey of pupils requiring Japanese-language instruction*. https://www.mext.go.jp/content/20260525-mxt_kyokoku-000049811_2.pdf
+
+Ministry of Education of Japan. (2026b). *FY2026 textbook catalogue*. https://www.mext.go.jp/a_menu/shotou/kyoukasho/gaiyou/20260401-mxt_kyokasyo02-3.pdf
+
+Ministry of Education of the People's Republic of China. (2021). *Overview of
+Chinese language and writing (2021 edition)*.
+https://www.moe.gov.cn/jyb_sjzl/wenzi/202108/t20210827_554992.html
+
+Ministry of Education of the People's Republic of China. (2021). *Putonghua prevalence reached 80.72% in 2020*. https://www.moe.gov.cn/fbh/live/2021/53486/twwd/202106/t20210602_535078.html
+
+Ministry of Education of the People's Republic of China. (2026). *National education development statistics, 2025*. https://www.moe.gov.cn/jyb_sjzl/sjzl_fztjgb/202607/t20260706_1442870.html
+
+Ministry of Education, Culture, Sports, Science and Technology. (n.d.). *Japan's
+school textbook*.
+https://www.mext.go.jp/en/policy/education/elsec/title02/detail02/sdetail02/1383719.html
+
+Ministry of Higher Education, Science and Technology, Indonesia. (2026). *Buku statistik pendidikan tinggi tahun 2025*. https://lldikti3.kemdiktisaintek.go.id/wp-content/uploads/2026/05/Buku-Statistik-Pendidikan-Tinggi-Tahun-2025.pdf
+
+Ministry of Micro, Small and Medium Enterprises, Government of India. (2026).
+*MSME (Udyam) registration including Udyam Assist Platform: State-wise dashboard*.
+Retrieved August 30, 2026, from https://dashboard.msme.gov.in/Udyam_Statewise.aspx
+
+Ministry of National Education and New Citizenship, Democratic Republic of the Congo. (n.d.). *School programmes*. https://edu-nc.gouv.cd/national-programmes
+
+Mueller-Langer, F., Scheufen, M., & Waelbroeck, P. (2020). Does online access
+promote research in developing countries? Empirical evidence from article-level data.
+*Research Policy, 49*(2), 103886. https://doi.org/10.1016/j.respol.2019.103886
+
+Nagoya University OpenCourseWare. (2020). *Towards modern mathematics*.
+https://ocw.nagoya-u.jp/en/courses/0149-Towards-Modern-Mathematics-2008/
+
 Nakamura, P., Molotsky, A., Castro Zarzur, R., Ranjit, V., Haddad, Y., & De Hoop,
 T. (2023). Language of instruction in schools in low- and middle-income countries: A
 systematic review. *Campbell Systematic Reviews, 19*(4), e1351.
 https://doi.org/10.1002/cl2.1351
+
+National Bureau of Statistics of China. (2021). *Communiqué of the Seventh
+National Population Census (No. 2)*.
+https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817187.html
+
+National Bureau of Statistics of China. (2026). *Monitoring survey report on migrant workers, 2025*. https://www.stats.gov.cn/sj/zxfb/202604/t20260430_1963472.html
 
 NLLB Team. (2024). Scaling neural machine translation to 200 languages. *Nature,
 630*, 841-846. https://doi.org/10.1038/s41586-024-07335-x
@@ -1352,35 +798,27 @@ Numberof bot. (2026, August 24). *Wikipedia site statistics* [Data set].
 Wikimedia Commons.
 https://commons.wikimedia.org/wiki/Data:Wikipedia_statistics/data.tab
 
+OECD. (2024). *Survey of Adult Skills 2023 country note: Japan*. https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/japan_91adbde1-en.html
+
 Office of the Registrar General & Census Commissioner, India. (2018). *C-17:
 Population by bilingualism and trilingualism, India, 2011* [Data set].
 https://censusindia.gov.in/nada/index.php/catalog/10262/download/13374/DDW-C17-0000.XLSX
 
-Organisation for Economic Co-operation and Development. (2023a, December 5).
-*PISA 2022 results (Volume I and II) - Country notes: Indonesia*.
-https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/indonesia_c2e1ae0e-en.html
-
-Organisation for Economic Co-operation and Development. (2023b, December 5).
-*PISA 2022 results (Volume I and II) - Country notes: Viet Nam*.
-https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/viet-nam_a727c3a8-en.html
-
-Organisation for Economic Co-operation and Development. (2023c, December 5).
-*PISA 2022 results (Volume I and II) - Country notes: Japan*.
-https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/japan_f7d7daad-en.html
-
-OpenAI. (2026). *GPT-5.6 Sol model* [Documentation]. Retrieved August 25, 2026,
-from https://developers.openai.com/api/docs/models/gpt-5.6-sol
+Open Logic Project. (2026). *OpenLogic* [Source repository snapshot; commit
+`1e960beff9ed7835bf3e3f1335e21af3439cd107`]. GitHub.
+https://github.com/OpenLogicProject/OpenLogic
 
 OpenAI Codex. (2026). *Goal token-accounting implementation* [Source code;
 `accounting.rs` and `extension.rs`]. GitHub.
 https://github.com/openai/codex/tree/main/codex-rs/ext/goal/src
 
+OpenAI. (2026). *GPT-5.6 Sol model* [Documentation]. Retrieved August 25, 2026,
+from https://developers.openai.com/api/docs/models/gpt-5.6-sol
+
 OpenAlex. (2026). *OpenAlex works API* [Data set]. Retrieved August 25, 2026,
 from https://api.openalex.org/works
 
-Open Logic Project. (2026). *OpenLogic* [Source repository snapshot; commit
-`1e960beff9ed7835bf3e3f1335e21af3439cd107`]. GitHub.
-https://github.com/OpenLogicProject/OpenLogic
+OpenLogic-id. (2026). *Complete Indonesian Open Logic corpus, release id-olp-0722-20260814*. https://github.com/KokunoYumeto/OpenLogic-id/releases/tag/id-olp-0722-20260814
 
 OpenLogic-id. (2026). *OpenLogic Bahasa Indonesia* [Complete 722-target source
 edition and 1,116-page linked reader; published release snapshot at commit
@@ -1420,15 +858,17 @@ OpenStax. (n.d.-h). *Introductory Statistics 2e* [CNXML collection; repository
 snapshot at commit `1f6a35825395bb4aa2834cf1eca37512655f920c`]. GitHub.
 https://github.com/openstax/osbooks-introductory-statistics-bundle
 
-Program Matematika Indonesia. (2026). *Program Matematika Indonesia* [40-role
-public curriculum hub; v0.62.6 content snapshot at commit
-`e0bd0f8affbec5ab2eee91deee1ab1898c984397`; receipt snapshot
-`a6ae2e3c9a1abb77132a0028414780c9976e48e4`]. GitHub.
-https://github.com/KokunoYumeto/program-matematika-indonesia
+Organisation for Economic Co-operation and Development. (2023a, December 5).
+*PISA 2022 results (Volume I and II) - Country notes: Indonesia*.
+https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/indonesia_c2e1ae0e-en.html
 
-Österholm, M. (2006). Characterizing reading comprehension of mathematical
-texts. *Educational Studies in Mathematics, 63*(3), 325-346.
-https://doi.org/10.1007/s10649-005-9016-y
+Organisation for Economic Co-operation and Development. (2023b, December 5).
+*PISA 2022 results (Volume I and II) - Country notes: Viet Nam*.
+https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/viet-nam_a727c3a8-en.html
+
+Organisation for Economic Co-operation and Development. (2023c, December 5).
+*PISA 2022 results (Volume I and II) - Country notes: Japan*.
+https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/japan_f7d7daad-en.html
 
 Pakistan Bureau of Statistics. (2023a). *Table 11: Population by mother tongue,
 sex and rural/urban, Census-2023 - National* [Data table].
@@ -1437,6 +877,9 @@ https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_11_national
 Pakistan Bureau of Statistics. (2023b). *Table 11: Population by mother tongue,
 sex and rural/urban, Census-2023 - Punjab Province* [Data table].
 https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_11_punjab_province.pdf
+
+Pakistan Bureau of Statistics. (2025). *Provincial census report 2023 - Punjab*.
+https://www.pbs.gov.pk/sites/default/files/population/2023/reports/Provincial%20Census%20Report%202023-Punjab.pdf
 
 Piper, B., Zuilkowski, S. S., Dubeck, M. M., Jepkemei, E., & King, S. J. (2018).
 Identifying the essential ingredients to literacy and numeracy improvement: Teacher
@@ -1454,18 +897,43 @@ Pitchford, N. J. (2015). Development of early mathematical skills with a tablet
 intervention: A randomized control trial in Malawi. *Frontiers in Psychology, 6*,
 Article 485. https://doi.org/10.3389/fpsyg.2015.00485
 
+Program Matematika Indonesia. (2026). *Program Matematika Indonesia* [40-role
+public curriculum hub; v0.62.6 content snapshot at commit
+`e0bd0f8affbec5ab2eee91deee1ab1898c984397`; receipt snapshot
+`a6ae2e3c9a1abb77132a0028414780c9976e48e4`]. GitHub.
+https://github.com/KokunoYumeto/program-matematika-indonesia
+
+Program Matematika Indonesia. (2026). *Public curriculum program, release v0.62.6*. https://github.com/KokunoYumeto/program-matematika-indonesia/releases/tag/v0.62.6
+
+Pulford, J., Price, N., Amegee Quach, J., & Bates, I. (2020). Measuring the
+outcome and impact of research capacity strengthening initiatives: A review of
+indicators used or described in the published and grey literature. *F1000Research,
+9*, 517. https://doi.org/10.12688/f1000research.24144.1
+
 Robinson, N. R., Ogayo, P., Mortensen, D. R., & Neubig, G. (2023). ChatGPT MT:
 Competitive for high- (but not low-) resource languages. In *Proceedings of the
 Eighth Conference on Machine Translation* (pp. 392-418). Association for
 Computational Linguistics. https://doi.org/10.18653/v1/2023.wmt-1.40
 
+Rostadmo, M., et al. (2021). Language and comprehension of medical literature:
+A randomized trial. *BMJ Open, 11*, e043444.
+https://doi.org/10.1136/bmjopen-2020-043444
+
 Sabarwal, S., Evans, D. K., & Marshak, A. (2014). *The permanent input
 hypothesis: The case of textbooks and (no) student learning in Sierra Leone* (Policy
 Research Working Paper 7021). World Bank. https://doi.org/10.1596/1813-9450-7021
 
+Sawaki, Y. (2017). University faculty members' perspectives on English-medium instruction in Japanese higher education. *Asian-Pacific Journal of Second and Foreign Language Education, 2*, Article 10. https://doi.org/10.1186/s40468-017-0043-2
+
 Shepherd, M. D., & van de Sande, C. (2014). Reading mathematics for
 understanding - From novice to expert. *The Journal of Mathematical Behavior, 35*,
 74-86. https://doi.org/10.1016/j.jmathb.2014.06.003
+
+Stacks Project. (n.d.). *About the Stacks Project*.
+https://stacks.math.columbia.edu/about
+
+SUGAKU. (2026). *Journal home*. J-STAGE.
+https://www.jstage.jst.go.jp/browse/sugaku
 
 Sweller, J., & Cooper, G. A. (1985). The use of worked examples as a substitute
 for problem solving in learning algebra. *Cognition and Instruction, 2*(1),
@@ -1475,13 +943,19 @@ Taylor, S., & von Fintel, M. (2016). Estimating the impact of language of
 instruction in South African primary schools: A fixed effects approach. *Economics
 of Education Review, 50*, 75-89. https://doi.org/10.1016/j.econedurev.2016.01.003
 
+UNESCO. (2012). *International Standard Classification of Education: ISCED
+2011*. https://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf
+
+UNESCO. (2017). *Recommendation on science and scientific researchers*.
+https://www.unesco.org/en/legal-affairs/recommendation-science-and-scientific-researchers
+
 UNESCO. (2019). *Recommendation on open educational resources (OER).*
 https://www.unesco.org/en/legal-affairs/recommendation-open-educational-resources-oer
 
-Unicode Consortium CLDR Technical Committee. (n.d.). *Requesting additions or
-updates to CLDR language and population data* [Official methodology page]. Retrieved
-August 25, 2026, from
-https://cldr.unicode.org/index/requesting-additionsupdates-to-cldr-languagepopulation-data
+UNESCO. (2021). *Recommendation on open science*.
+https://www.unesco.org/en/legal-affairs/recommendation-open-science
+
+UNICEF. (2025, January 24). *At least 30 million children out of school in the Middle East and North Africa*. https://www.unicef.org/mena/press-releases/least-30-million-children-out-school-middle-east-and-north-africa
 
 Unicode Consortium CLDR Technical Committee. (2025, October 29). *CLDR 48
 territory-language information chart* [Data set chart and measure definition].
@@ -1498,6 +972,19 @@ Unicode Consortium CLDR Technical Committee. (2026c, March 17). *Unicode CLDR 48
 likely-subtag mappings* [XML data set].
 https://raw.githubusercontent.com/unicode-org/cldr/release-48-2/common/supplemental/likelySubtags.xml
 
+Unicode Consortium CLDR Technical Committee. (n.d.). *Requesting additions or
+updates to CLDR language and population data* [Official methodology page]. Retrieved
+August 25, 2026, from
+https://cldr.unicode.org/index/requesting-additionsupdates-to-cldr-languagepopulation-data
+
+W3C Math Working Group. (2025). *Mathematical Markup Language (MathML) Core*
+(Candidate Recommendation Snapshot, 24 June 2025). World Wide Web Consortium.
+https://www.w3.org/TR/mathml-core/
+
+W3C. (2023). *EPUB Accessibility 1.1*. https://www.w3.org/TR/epub-a11y-11/
+
+W3C. (2025). *MathML Core*. https://www.w3.org/TR/mathml-core/
+
 Walter, S. L., & Benson, C. (2012). Language policy and medium of instruction in
 formal education. In B. Spolsky (Ed.), *The Cambridge handbook of language policy*
 (pp. 278-300). Cambridge University Press.
@@ -1508,22 +995,31 @@ M. (2023). Applying a new framework of connections between mathematical symbols
 and natural language. *The Journal of Mathematical Behavior, 72*, Article 101097.
 https://doi.org/10.1016/j.jmathb.2023.101097
 
+World Bank. (2018). *Vietnam's future jobs: Leveraging mega-trends for greater
+prosperity*. https://documents1.worldbank.org/curated/en/670201533917679996/pdf/129380-WP-PUBLIC-Vietnam-Future-Jobs-English-25-6-2018.pdf
+
 World Bank. (2021). *Loud and clear: Effective language of instruction policies
 for learning.* World Bank Group.
 https://documents.worldbank.org/curated/en/517851626203470278/pdf/Effective-Language-of-Instruction-Policies-for-Learning.pdf
 
+World Bank. (2023). *The Sundarban - a unique wetland to preserve*.
+https://blogs.worldbank.org/en/endpovertyinsouthasia/sundarban-unique-wetland-preserve
+
+World Bank. (2024). *Maharashtra Project on Climate Resilient Agriculture:
+Results report (P160408)*.
+https://documents1.worldbank.org/curated/en/099040324063539794/pdf/P1604081aa1b130a7183b61a06b64d1715c.pdf
+
 World Bank. (2026). *World Development Indicators API* [Data set]. Retrieved
 August 25, 2026, from https://api.worldbank.org/v2/
+
+World Health Organization. (2025). *State of the world's nursing 2025: Indonesia
+country profile*. https://cdn.who.int/media/docs/default-source/searo/indonesia/sown2025-idn.pdf
 
 World Wide Web Consortium. (2024a). *EPUB Accessibility 1.1* (W3C
 Recommendation, 17 October 2024). https://www.w3.org/TR/epub-a11y-11/
 
 World Wide Web Consortium. (2024b). *Web Content Accessibility Guidelines (WCAG)
 2.2* (W3C Recommendation, 12 December 2024). https://www.w3.org/TR/WCAG22/
-
-W3C Math Working Group. (2025). *Mathematical Markup Language (MathML) Core*
-(Candidate Recommendation Snapshot, 24 June 2025). World Wide Web Consortium.
-https://www.w3.org/TR/mathml-core/
 
 Zbib, R., Malchiodi, E., Devlin, J., Stallard, D., Matsoukas, S., Schwartz, R.,
 Makhoul, J., Zaidan, O. F., & Callison-Burch, C. (2012). Machine translation of
@@ -1532,892 +1028,485 @@ Chapter of the Association for Computational Linguistics: Human Language
 Technologies* (pp. 49-59). Association for Computational Linguistics.
 https://aclanthology.org/N12-1006/
 
-# Appendix A. Reproducibility and computational provenance
+Österholm, M. (2006). Characterizing reading comprehension of mathematical
+texts. *Educational Studies in Mathematics, 63*(3), 325-346.
+https://doi.org/10.1007/s10649-005-9016-y
 
-Research synthesis, deterministic modeling, drafting, and document production used **OpenAI Codex gpt-5.6-sol, Ultra**. This model identity does not replace the authorities in the evidence register. Exact source labels, measures, dates, locators, caveats, and hashes remain attached to the corresponding machine-readable rows.
+# Appendix A. Full ordered Top 100: population, stage, and product
 
-The table identifies the principal current inputs and derived tables. The release `MANIFEST.sha256` records the complete final public-file inventory; the paper deliberately does not attempt to hash itself inside this self-referential table.
-
-| Artifact | Data rows | Bytes | SHA-256 |
-|---|---:|---:|---|
-| population_observations_master.csv | 475 | 387,613 | B43B4B3A48AC2BE647F4ED4446D566822F713351A7361D8F663D802A7990F3EF |
-| population_source_register_public.csv | 81 | 63,578 | FE3AA4257E8FA8CC742DBA53FEF5414174975C93D6D4C262E034FFD2FDF3E4DF |
-| candidate_interventions_master.csv | 210 | 123,913 | AEE2224E139FF346C459024A42BAC7C3F4B7D718A5CFF5D9691A59100762761B |
-| natural_language_scores_v3.csv | 106 | 138,598 | 096976FD45EB9B5EFC0D4D2C71730F861D51F6B18131AA56CD94876886A48BFD |
-| candidate_expansion_scores.csv | 37 | 50,444 | B97383E20E9FAD2791BD4883082CF3985C66F08158670A466B9D82597BD43291 |
-| staging/interlanguage_bundle_model/interlanguage_intervention_matrix.csv | 104 | 84,793 | DD6BD32BCEC92FD2DE3111DBC584EBC7455E4C707241AF647B62F500318D8B33 |
-| staging/interlanguage_bundle_model/interlanguage_population_links.csv | 113 | 49,082 | 8743D37ACB11EC2942EB3BE07AC9C4F884FD07DA8FCFF320E89B6775EC5A6DEB |
-| interlanguage_package_scores.csv | 135 | 88,114 | 5B943C3CDF2C2454F21ADD46B8897F1F61CFE32F06CA81E1561378D8C855BAE2 |
-| portfolio_compute_scenarios.csv | 60 | 18,067 | 6FCFBE82135F0671BF30F03FE1F404FF8E9E9C054992A4445AA8ACA0016A4961 |
-| curriculum_units.csv | 29 | 7,074 | 0F7A958D7C19F989A1C95F673456B3667ED23F41B64208100EA1CB5C3360E204 |
-| curriculum_portfolios.csv | 13 | 3,404 | 2E4CC460C4CB343A092C5A8A4C11EC09EEF091A93807D983B74E258A698B5049 |
-| openstax_workload_measurements.csv | 94 | 26,411 | ECF9E83428CFCBA41600AE070F970A9685E2C5F7E6E2F2045C07B1DB319A86A2 |
-| portfolio_linguistic_candidates.csv | 134 | 164,909 | 0B99C00FC987F57C893BA8B0B1B91843D2CAEC0852F383249983904BC1945A9B |
-| TOP_10.csv | 10 | 12,533 | E7287B63C063E21200F0D0C12E3C9E12828222ABF365563B4A6CF1BD1582FC48 |
-| TOP_100.csv | 100 | 117,712 | BB5894B135A77FA7EC6FBD854477025D0BF3ABA1FE476EA0F5430D6A9DF3CDE3 |
-| table2_exact_gross_ceilings.csv | 134 | 97,622 | 3E655674420B1D5D25E4584FD5D88134E86FE5EFFBEE53671A16588A55937BB0 |
-| table3_marginal_access_sensitivity_ranges.csv | 134 | 125,306 | 8225CA538A409B27402F5A4830DB94B2155415A6F3BFAA61262DAF120A84E7D3 |
-| table4_top10.csv | 10 | 10,687 | 7768FF21264C79D6F075D143B2C61F5E9FBA8D82BFC2572793369D47AA80BFD3 |
-| table5_top100_grouped_lanes.csv | 3 | 5,333 | C8A01350D97C0A24FD09332DC1D2E3A6849FAEB977BFD5C167DA9473EEF27348 |
-| table5_top100_members.csv | 100 | 65,610 | 5EE9376D77C392FD0C628A8ED1CD3F9091477090EC1108FC0DA281833C6B92D9 |
-| table6_package_exclusions_noncardinal.csv | 11 | 13,407 | 40D2BF237CC9FED66CD20FBA0C71ABEB6DCFCB32C6422DF6885858CA1A2AC282 |
-| table6a_architecture_sensitivity_noncardinal.csv | 4 | 10,163 | A6A5A9B26F82F91B82CC5EB5E759F1065C745D64277E181E2C60890E5D804CD0 |
-| table7_curriculum_allocation_summary.csv | 4 | 3,545 | 34C83D6F7A93E30C8AACA980EBFC7246719956D791EB1AFA548148DF95F7D376 |
-| table8_negative_controls_and_exclusions.csv | 9 | 5,584 | B7CC8F6DCA3BFE006FA1104E6E6B6ED8849D72B67D23E76178EE76C2A61AAFC5 |
-| population_mathematics_needs_register.csv | 11 | 14,695 | 0E070BE5F4660EDFA6F47FA1F6CD6309F253FCCE8BF1B9197C0A8895C606634C |
-| top100_needs_assignment_v2.csv | 100 | 175,234 | A34A4C10F9CF84522A7CEB49A50EC59D727AD9C1086E025D0C09C4ECAF33CBB0 |
-| indonesian_equal_basis_and_forward_allocation.csv | 2 | 2,132 | 2B142F64FC663A5B7917CCD0A0E85F8D311CF53101A665A07FC0EB14705454EB |
-| appendix_a_existing_work_reconciliation.csv | 210 | 115,956 | C6B7B53F1D13D6C24A42B37A0CA43D60D360EFCFD06D14BFB17AFBAAF7C65C5F |
-| appendix_b_global_gap_map.csv | 134 | 258,714 | 398EFBDF645F54E400F11D348201C5C7348011F70F69F0F70536F6BCA1FF3813 |
-| appendix_b_regional_gap_summary.csv | 21 | 5,373 | 996DD1EA51C22962D445C8E5211296F57CDC8AE695A7A08FE06FC845D39E8F50 |
-| appendix_c_accessibility_safeguards.csv | 11 | 14,637 | 43355270FD730CD6A36DBC265142DE07D1AFD9D7C618962877B4CDC2337AFA2C |
-| appendix_d_top100_curriculum_mapping.csv | 100 | 51,148 | D64CC56ED243CC4D842531D73C3D0DA32AA4A3E35246F6012136D9BC8169889C |
-| appendix_f_interlanguage_matrix_summary.csv | 15 | 19,555 | BA41972EC17E027A6C3DB1E589B8070525845A1DD9D9492061A0A42FAF6A5F1C |
-| top100_interlanguage_overlap_crosswalk.csv | 100 | 114,561 | ED88A556E1055655E3635AAA64C793A684E1C655713BA4F86AD50B851CC1A380 |
-| TOP100_INTERLANGUAGE_CROSSWALK_METHOD_20260830.md |  -  | 3,982 | BF59C23B002F8ED7ECE9FDEC16CE624BED28D27ACA44044A5642404C48354AE8 |
-| TOP100_INTERLANGUAGE_CROSSWALK_VALIDATION_RECEIPT_20260830.md |  -  | 2,489 | 1D8F4E0EE5F531D39059C86074A5A3334094FAF6BD15C3415B483D6F14311BDD |
-| compute_token_audit_33_roots_20260830.json |  -  | 6,620 | 1DAFEAC9EB161204DF470D247811F4E29415EE8AB3A297E412DBDD619CC0911C |
-| INDONESIAN_TASK_TOKEN_AUDIT_20260830.md |  -  | 9,863 | 6EA38C1684E3D2C9C1420DCE1C67A90DCCDBF6217D9503F2FA7D957CB87E5108 |
-| INDONESIAN_PROGRAM_COMPUTE_AND_PAGE_RECONCILIATION_PUBLIC_20260830.md |  -  | 4,635 | 9472BE4077C60AF35C37B6615719B51425C1F555022F9DB55A96F6EF50B1A458 |
-| INDONESIAN_PUBLIC_PROGRAM_AUDIT_20260830.md |  -  | 20,920 | 5C34C78E6E9BEF9E7B75E9179DD31CDE98995D70CEFF7DDD82DA98ECBFBB6E0D |
-
-# Appendix B. Full ordered Top 100
-
-Every row is one exact named natural-language edition. Population values retain the source's own measure and date; they are not summed as unique people. `Base access` is a labelled sensitivity, not an observed harmed-population count. All 100 rows carry an explicit first-product or bounded-audit assignment. The Top 10 use directly audited primary or official evidence; the other 90 retain lower-confidence territory-proxy or audit-required status rather than fabricated language-specific findings.
-
-| Pos. | Intervention | Production profile | Territory | Gross base population | Base access | Portfolio lane | Needs-audited first product/status | Source ID |
-|---:|---|---|---|---:|---:|---|---|---|
-| 1 | Bahasa Indonesia | id-Latn-ID | Indonesia | 248,501,794 | 119,280,861 | high_reach_underserved | Use the verified 27-published/13-production catalog to commission only an exact remaining course or format gap | PM-S021 |
-| 2 | Bangladesh Bangla | bn-Beng-BD | Bangladesh | 165,323,060 | 65,302,609 | high_reach_underserved | Bangla Grade 2-5 number sense, operations, place value, fractions, measurement and pattern kit with diagnostics and complete worked answers | ASSEC-S006 |
-| 3 | Telugu | te-Telu-IN | India | 80,912,459 | 57,833,869 | high_reach_underserved | Telugu-English Grades 3-10 mastery bridge with placement, error-specific explanations and full solutions | PM-S001 |
-| 4 | Indian Bengali | bn-Beng-IN | India | 96,177,835 | 69,699,712 | high_reach_underserved | Bangla Grades 3-8 arithmetic/fractions-to-algebra catch-up with placement tests, short mastery units and full answers | PM-S001 |
-| 5 | Vietnamese | vi-Latn-VN | Vietnam | 89,000,000 | 42,777,849 | high_reach_underserved | Vietnamese precalculus-to-calculus-to-linear-algebra self-study spine, reusing suitable open local modules before retranslating | ASSEC-S007 |
-| 6 | Marathi | mr-Deva-IN | India | 82,801,140 | 50,316,309 | high_reach_underserved | Marathi Grade 8-to-first-year-STEM bridge with embedded fractions/algebra diagnostic, functions, trigonometry, precalculus and proof introduction | PM-S001 |
-| 7 | Indian Tamil | ta-Taml-IN | India | 68,888,839 | 48,387,709 | high_reach_underserved | Tamil Grades 2-8 numeracy recovery course with placement, mastery units, full answers and worked misconception explanations | PM-S001 |
-| 8 | Western Punjabi | pnb-Arab-PK | Pakistan | 88,915,544 | 26,167,845 | high_reach_underserved | Shahmukhi Punjabi-to-Urdu/English algebra, functions, trigonometry, precalculus and proof bridge | PM-S003 |
-| 9 | Javanese | jv-Latn-ID | Indonesia | 68,044,660 | 32,661,437 | high_reach_underserved | Oral/bilingual Javanese-to-Bahasa number-sense through prealgebra/algebra scaffold with audio and deliberate terminology transfer | PM-S005 |
-| 10 | Gujarati | gu-Gujr-IN | India | 55,036,204 | 34,089,878 | high_reach_underserved | Gujarati Grades 2-6 diagnostic remediation in place value, operations, fractions and proportional reasoning | PM-S001 |
-| 11 | Thai | th-Thai-TH | Thailand | 64,080,191 | 29,188,527 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | TH-S001 |
-| 12 | Odia | or-Orya-IN | India | 34,059,266 | 23,106,806 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | PM-S001 |
-| 13 | Kannada | kn-Knda-IN | India | 43,506,272 | 31,535,081 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | PM-S001 |
-| 14 | Indian Urdu | ur-Arab-IN | India | 50,725,762 | 30,600,888 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | PM-S001 |
-| 15 | Burmese | my-Mymr-MM | Myanmar | 36,817,344 | 17,217,151 | high_reach_underserved | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ASSEC-S006 |
-| 16 | Malayalam | ml-Mlym-IN | India | 34,776,533 | 23,946,869 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | PM-S001 |
-| 17 | Uzbekistan Uzbek Latin-script edition | uz-Latn-UZ | Uzbekistan | 35,700,000 | 17,850,000 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | ALG-S018 |
-| 18 | Eastern Punjabi | pa-Guru-IN | India | 31,144,095 | 17,886,376 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | PM-S001 |
-| 19 | Sundanese | su-Latn-ID | Indonesia | 32,412,752 | 15,558,121 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | PM-S005 |
-| 20 | Sindhi | sd-Arab-PK | Pakistan | 34,401,564 | 10,124,380 | high_reach_underserved | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S003 |
-| 21 | Amharic | am-Ethi-ET | Ethiopia | 21,634,396 | 6,540,078 | high_reach_underserved | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S020 |
-| 22 | Cebuano | ceb-Latn-PH | Philippines | 20,697,364 | 10,190,347 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | ASSEC-S008 |
-| 23 | Dari | prs-Arab-AF | Afghanistan | 30,083,114 | 5,605,988 | high_reach_underserved | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ASSEC-S018 |
-| 24 | Pakistani Urdu | ur-Arab-PK | Pakistan | 22,249,307 | 6,547,971 | high_reach_underserved | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S003 |
-| 25 | Assamese | as-Beng-IN | India | 14,816,414 | 10,118,381 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | PM-S001 |
-| 26 | Saraiki | skr-Arab-PK | Pakistan | 28,849,579 | 8,490,431 | high_reach_underserved | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S003 |
-| 27 | Sinhala | si-Sinh-LK | Sri Lanka | 14,948,168 | 6,931,465 | high_reach_underserved | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ASSEC-S006 |
-| 28 | India Maithili Devanagari edition | mai-Deva-IN | India | 13,353,347 | 7,644,770 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | PM-S001 |
-| 29 | Afghanistan Pashto Arabic-script edition | ps-Arab-AF | Afghanistan | 18,753,110 | 3,494,642 | high_reach_underserved | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ASSEC-S018 |
-| 30 | Nepali | ne-Deva-NP | Nepal | 13,084,457 | 5,502,014 | high_reach_underserved | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S004 |
-| 31 | isiZulu | zu-Latn-ZA | South Africa | 14,613,202 | 6,659,967 | high_reach_underserved | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ZA-S001 |
-| 32 | Khmer | km-Khmr-KH | Cambodia | 14,893,134 | 5,356,316 | high_reach_underserved | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ALG-S011 |
-| 33 | Turkmen | tk-Latn-TM | Turkmenistan | 6,297,965 | 3,145,834 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ALG-S009 |
-| 34 | Shona | sn-Latn-ZW | Zimbabwe | 11,251,734 | 5,244,996 | high_reach_underserved | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S011 |
-| 35 | Kazakh | kk-Cyrl-KZ | Kazakhstan | 13,380,107 | 3,345,027 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | ALG-S007 |
-| 36 | Lao | lo-Laoo-LA | Laos | 5,487,956 | 2,075,545 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ASSEC-S006 |
-| 37 | isiXhosa | xh-Latn-ZA | South Africa | 9,786,928 | 4,460,393 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ZA-S001 |
-| 38 | Tajik | tg-Cyrl-TJ | Tajikistan | 10,394,100 | 2,598,525 | high_reach_underserved | Audit local algebra/statistics and tertiary supply before choosing a secondary-data or undergraduate bridge. | ASSEC-S006 |
-| 39 | Ethiopia Somali Latin-script edition | so-Latn-ET | Ethiopia | 4,609,274 | 1,393,384 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S020 |
-| 40 | Indonesia Madurese Latin-script edition | mad-Latn-ID | Indonesia | 7,743,533 | 3,716,896 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S005 |
-| 41 | Mali Bamanankan Latin-script edition | bm-Latn-ML | Mali | 9,551,561 | 1,701,611 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | AFG-S008 |
-| 42 | Kyrgyz | ky-Cyrl-KG | Kyrgyzstan | 5,527,168 | 1,381,792 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ALG-S008 |
-| 43 | Ilocano | ilo-Latn-PH | Philippines | 7,098,503 | 3,494,948 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ASSEC-S008 |
-| 44 | Wolof | wo-Latn-SN | Senegal | 8,786,892 | 2,212,539 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | AFG-S009 |
-| 45 | Sri Lankan Tamil | ta-Taml-LK | Sri Lanka | 3,297,390 | 1,529,000 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ASSEC-S006 |
-| 46 | Hiligaynon | hil-Latn-PH | Philippines | 6,073,883 | 2,990,476 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ASSEC-S008 |
-| 47 | South Africa Sepedi Latin-script edition | nso-Latn-ZA | South Africa | 5,972,255 | 2,721,855 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ZA-S001 |
-| 48 | Mongolian | mn-Cyrl-MN | Mongolia | 3,051,962 | 1,505,228 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ASSEC-S006 |
-| 49 | South Africa Setswana Latin-script edition | tn-Latn-ZA | South Africa | 4,972,787 | 2,266,348 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ZA-S001 |
-| 50 | South Africa Sesotho Latin-script edition | st-Latn-ZA | South Africa | 4,678,964 | 2,132,438 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ZA-S001 |
-| 51 | Maori | mi-Latn-NZ | New Zealand | 213,849 | 53,462 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S014 |
-| 52 | Indonesia Minangkabau Latin-script edition | min-Latn-ID | Indonesia | 4,232,226 | 2,031,468 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S005 |
-| 53 | Ethiopia Tigrinya Ethiopic-script edition | ti-Ethi-ET | Ethiopia | 4,324,933 | 1,307,427 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S020 |
-| 54 | Ireland Irish Latin-script daily-use edition | ga-Latn-IE | Ireland | 71,968 | 17,992 | small_population_prestige_domain_screen | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S016 |
-| 55 | Indonesia Banjar Latin-script edition | bjn-Latn-ID | Indonesia | 3,651,626 | 1,752,780 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S005 |
-| 56 | Senegal Pulaar, official Latin orthography | fuc-Latn-SN | Senegal | 4,314,509 | 1,086,393 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | AFG-S009 |
-| 57 | Official-standard Belarusian | be-Cyrl-BY | Poland | 17,325 | 4,331 | small_population_prestige_domain_screen | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S006 |
-| 58 | Waray | war-Latn-PH | Philippines | 2,694,135 | 1,326,457 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ASSEC-S008 |
-| 59 | Ethiopia Sidama Latin-script edition | sid-Latn-ET | Ethiopia | 2,981,471 | 901,299 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S020 |
-| 60 | Standard Lithuanian | lt-Latn-LT | Poland | 5,422 | 1,356 | small_population_prestige_domain_screen | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S006 |
-| 61 | Indonesia Sasak Latin-script edition | sas-Latn-ID | Indonesia | 2,691,127 | 1,291,741 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S005 |
-| 62 | South Africa Xitsonga Latin-script edition | ts-Latn-ZA | South Africa | 2,784,279 | 1,268,935 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ZA-S001 |
-| 63 | Indonesia Acehnese Latin-script edition | ace-Latn-ID | Indonesia | 2,550,055 | 1,224,026 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S005 |
-| 64 | Brahui | brh-Arab-PK | Pakistan | 2,778,670 | 817,763 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S003 |
-| 65 | Kirundi | rn-Latn-BI | Burundi | 2,261,931 | 1,130,966 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | AFG-S011 |
-| 66 | Indonesia Betawi Latin-script edition | bew-Latn-ID | Indonesia | 2,244,648 | 1,077,431 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S005 |
-| 67 | Maithili Nepal profile | mai-Deva-NP | Nepal | 3,222,389 | 1,105,279 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S004 |
-| 68 | South Africa siSwati Latin-script edition | ss-Latn-ZA | South Africa | 1,692,719 | 771,457 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ZA-S001 |
-| 69 | Zimbabwean Ndebele | nd-Latn-ZW | Zimbabwe | 1,599,324 | 745,525 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S011 |
-| 70 | Ethiopia Wolaytta Latin-script edition | wal-Latn-ET | Ethiopia | 1,627,955 | 492,131 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S020 |
-| 71 | South Africa Tshivenda Latin-script edition | ve-Latn-ZA | South Africa | 1,480,565 | 674,768 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ZA-S001 |
-| 72 | Bhojpuri Nepal profile | bho-Deva-NP | Nepal | 1,820,795 | 627,264 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S004 |
-| 73 | Mauritius Mauritian Creole Latin-script edition | mfe-Latn-MU | Mauritius | 1,045,558 | 492,917 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S013 |
-| 74 | Ethiopia Hadiyya Latin-script edition | hdy-Latn-ET | Ethiopia | 1,253,894 | 379,052 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S020 |
-| 75 | South Africa isiNdebele Latin-script edition | nr-Latn-ZA | South Africa | 1,044,377 | 475,975 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | ZA-S001 |
-| 76 | Standard Haitian Creole | ht-Latn-HT | United States | 867,500 | 216,875 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S001 |
-| 77 | Indonesia Nias Latin-script edition | nia-Latn-ID | Indonesia | 747,168 | 358,641 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S005 |
-| 78 | Avadhi Nepal profile | awa-Deva-NP | Nepal | 864,276 | 276,568 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S004 |
-| 79 | Zimbabwe Ndau Latin-script edition | ndc-Latn-ZW | Zimbabwe | 372,607 | 173,691 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S011 |
-| 80 | Silesian in ślabikŏrzowy szrajbōnek | szl-Latn-PL | Poland | 467,145 | 116,786 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S006 |
-| 81 | Tetum Prasa | tet-Latn-TL | Timor-Leste | 361,027 | 125,276 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ALG-S014 |
-| 82 | Senegal Mandinka (Màndienka), official Latin profile | mnk-Latn-SN | Senegal | 465,052 | 117,100 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | AFG-S009 |
-| 83 | YIVO Standard Yiddish edition for the explicitly named YIVO-reading audience | ydd-Hebr-US | United States | 194,800 | 48,700 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S001 |
-| 84 | English-oriented Pennsylvania German spelling used by Vitt Du Deitsh Shvetza / Di Heilich Shrift / Ich Kann PA Deitsh Shreiva | pdc-Latn-US | United States | 185,200 | 46,300 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S001 |
-| 85 | Timor-Leste Makasai Latin-script edition | mkz-Latn-TL | Timor-Leste | 123,840 | 42,972 | regional_depth | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ALG-S014 |
-| 86 | Diné Bizaad in Navajo Nation school orthography | nv-Latn-US | United States | 161,200 | 40,300 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S001 |
-| 87 | Peru Ashaninka Latin-script edition | cni-Latn-PE | Peru | 73,567 | 34,451 | small_population_prestige_domain_screen | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S007 |
-| 88 | New Zealand Samoan Latin-script edition | sm-Latn-NZ | New Zealand | 110,541 | 27,635 | regional_depth | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | PM-S014 |
-| 89 | Peru Awajun Latin-script edition | agr-Latn-PE | Peru | 56,584 | 26,498 | small_population_prestige_domain_screen | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S007 |
-| 90 | School-standard Kashubian | csb-Latn-PL | Poland | 89,198 | 22,300 | small_population_prestige_domain_screen | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S006 |
-| 91 | Timor-Leste Kemak Latin-script edition | kem-Latn-TL | Timor-Leste | 68,995 | 23,941 | small_population_prestige_domain_screen | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ALG-S014 |
-| 92 | Jamaican Creole in Cassidy/JLU orthography | jam-Latn-JM | United States | 72,000 | 18,000 | small_population_prestige_domain_screen | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S001 |
-| 93 | Timor-Leste Bunak Latin-script edition | bfn-Latn-TL | Timor-Leste | 64,686 | 22,446 | small_population_prestige_domain_screen | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ALG-S014 |
-| 94 | Timor-Leste Tokodede Latin-script edition | tkd-Latn-TL | Timor-Leste | 46,784 | 16,234 | small_population_prestige_domain_screen | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ALG-S014 |
-| 95 | Peru Shipibo-Konibo Latin-script edition | shp-Latn-PE | Peru | 34,152 | 15,993 | small_population_prestige_domain_screen | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | PM-S007 |
-| 96 | Fataluku | ddg-Latn-TL | Timor-Leste | 41,500 | 14,401 | small_population_prestige_domain_screen | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ALG-S014 |
-| 97 | Standard ʻŌlelo Hawaiʻi with ʻokina and kahakō | haw-Latn-US | United States | 32,730 | 8,182 | small_population_prestige_domain_screen | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S001 |
-| 98 | Standard Marshallese under the 2010 Orthography Act | mh-Latn-MH | United States | 27,160 | 6,790 | small_population_prestige_domain_screen | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S001 |
-| 99 | Timor-Leste Waima'a Latin-script edition | wmh-Latn-TL | Timor-Leste | 21,227 | 7,366 | small_population_prestige_domain_screen | Diagnose foundational readiness first; commission a numeracy-to-algebra recovery path only if the local corpus audit confirms the gap. | ALG-S014 |
-| 100 | Standard Central Alaskan Yup'ik | esu-Latn-US | United States | 16,120 | 4,030 | small_population_prestige_domain_screen | Audit local secondary supply, then commission a complete algebra/functions/trigonometry bridge only where it is the binding gap. | GRG-S001 |
-
-# Appendix C. Ordered accessibility safeguard portfolio
-
-Only safeguard 1 has foundational priority. Items 2-11 retain the deterministic registered backlog order and are not evidence-based cardinal ranks. Every access-gain interval has a conservative zero floor or no defensible denominator. Token increments are FR-2 reference sensitivities, not observed usage, billing, or whole-programme cost.
-
-| Order | Safeguard | Barrier | Stratum | Source ceiling | Gain status | FR-2 base-token increment | Product | Nonadditivity | Population source |
+| Pos. | ID | Intervention | Profiles | Scope | Population context | Stages | First package | Evidence | Operational ordering basis |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Semantic HTML with accessible math | visual_disability | India | 771288 | zero_to_nested_ceiling_only | 610957 | Born-accessible localized HTML; semantic headings tables language metadata MathML intent/structure skip links keyboard navigation and tested screen-reader reading order | ACCPOP-VIS-INDIA-5-19-2011; all intervention edges in VIS-INDIA-5-19-2011 | ACC-S004 |
-| 2 | Formula narration and synchronized audio | visual_disability | India | 771288 | zero_to_nested_ceiling_only | 1425567 | Deterministic language-specific symbol and formula narration synchronized with navigable text; diagrams require separate descriptions | ACCPOP-VIS-INDIA-5-19-2011; all intervention edges in VIS-INDIA-5-19-2011 | ACC-S004 |
-| 3 | English mathematical Braille derivative | braille_math | United States and Canada |  | unbounded_unknown |  | Source-linked BRF using the jurisdictionally correct UEB technical or UEB-with-Nemeth policy; tactile/diagram alternatives; round-trip formula QA | visual impairment and screen-reader populations | ACC-S012 |
-| 4 | Localized British Sign Language instructional video and interactive glossary | signed_language | Scotland | 117349 | zero_to_language_ability_ceiling_only |  | Native BSL presentation with captions transcript downloadable low-bandwidth video glossary diagrams and source-aligned segment identifiers | none | ACC-S006 |
-| 5 | Logic figure and proof-tree remediation | visual_disability | India | 771288 | zero_to_nested_ceiling_only | 346209 | Programmatic proof structure with explicit subproof starts ends indentation rule names symbol pronunciation and linearized fallback | ACCPOP-VIS-INDIA-5-19-2011; all intervention edges in VIS-INDIA-5-19-2011 | ACC-S004 |
-| 6 | Mathematics figure remediation | visual_disability | India | 771288 | zero_to_nested_ceiling_only | 610957 | Structured data plus concise alt text and adjacent long descriptions; non-colour-only encodings; downloadable data where meaningful | ACCPOP-VIS-INDIA-5-19-2011; all intervention edges in VIS-INDIA-5-19-2011 | ACC-S004 |
-| 7 | Localized New Zealand Sign Language instructional video and interactive glossary | signed_language | New Zealand | 24680 | zero_to_language_ability_ceiling_only |  | Native NZSL presentation with captions transcript downloadable low-bandwidth video glossary diagrams and source-aligned segment identifiers | none | ACC-S005 |
-| 8 | Offline HTML EPUB or SCORM package | connectivity | Global | 2200000000 | zero_to_global_ceiling_only | 346209 | Dependency-free static HTML plus conformant EPUB; local assets search navigation checksums and print profile; no mandatory account analytics CDN font or runtime requests | every language territory and learner cell; all other delivery-axis interventions | ACC-S002 |
-| 9 | Tagged searchable screen and print PDF | visual_disability | India | 771288 | zero_to_nested_ceiling_only | 305479 | Tagged reading order bookmarks language metadata embedded fonts searchable text black-and-white print profile and formula alternatives | ACCPOP-VIS-INDIA-5-19-2011; all intervention edges in VIS-INDIA-5-19-2011 | ACC-S004 |
-| 10 | Plain-language companion | cognitive_access_proxy | India | 257755 | zero_to_nested_proxy_ceiling_only | 1934698 | Aligned summaries definitions one-idea steps worked examples explicit goals consistent vocabulary and source links; preserve mathematical truth conditions | ACCPOP-COG-INDIA-5-19-2011; AX-PLAIN edges | ACC-S004 |
-| 11 | Localized Peruvian Sign Language instructional video and interactive glossary | signed_language | Peru | 10447 | zero_to_childhood_language_ceiling_only |  | Native Peruvian Sign Language presentation with Spanish captions transcript downloadable low-bandwidth video glossary diagrams and source-aligned segment identifiers | none | ACC-S007 |
-
-# Appendix D. Existing-work reconciliation and deficit effect
-
-## D1. Exact current local baselines
-
-The table below is the bounded successor-state census used to avoid commissioning a
-duplicate full Open Logic edition. It is separate from the 210-row candidate register:
-the single `covered` record is an explicit completed-baseline sentinel, while the other
-complete local editions remain baseline evidence rather than new ranked interventions.
-
-| Exact profile or architecture | Current bounded state | Marginal treatment | Controlling asset / SHA-256 |
-|---|---|---|---|
-| zh-Hans-CN | Complete Open Logic; OpenStax Algebra and Trigonometry 2e 94/94; Calculus Volume 1 3/55 at the frozen state | No duplicate Open Logic commission; remaining OpenStax scope only | ACE-A006 / 89B03BB2854AE28DCBA29B73887FA20B46296DC94B8077C21CF90866439D331D |
-| hi-Deva-IN | Complete, published Open Logic with public-byte readback | Baseline for Hindi; never credited to Urdu or other South Asian profiles | ACE-A007 / C155255517CA9B57B9556ABD18CADB8A4E31E52725934F8A090C25D8C7D3B1C5 |
-| tr-TR | Complete Open Logic | Baseline for Turkish only; no automatic Turkic-family coverage | ACE-A008 / 8119903A18489AFEBEB18A1A787020869BB4F11E32C008C8849D351392B77834 |
-| ar (Modern Standard Arabic formal edition) | Complete, published Open Logic with public-byte readback | Baseline formal Arabic coverage; dialect, Amazigh, Kurdish, Nubian, South Arabian, signed, and accessibility needs remain separate | ACE-A009 / 8F0DB97861BE0777A49359E865531AC2E6DBF42B1BFA4D550A8817A000CC914B |
-| fa-Arab-IR | Complete, published Iranian Persian Open Logic with public-byte readback | Baseline for Iranian Persian only; Dari, Tajik, Hazaragi, and other Iranic profiles remain separate | ACE-A009 / 8F0DB97861BE0777A49359E865531AC2E6DBF42B1BFA4D550A8817A000CC914B |
-| es | Complete local Open Logic QA state | Baseline for exact Spanish output; no pan-Romance reach | ACE-A010 / F2A940018EB87B959112B71EE8435D23C24469925728CBFDDB8AF15717B4AFD0 |
-| pt-BR | Complete local Open Logic QA state | Baseline for Brazilian Portuguese only; no European/African Portuguese or pan-Romance reach | ACE-A010 / F2A940018EB87B959112B71EE8435D23C24469925728CBFDDB8AF15717B4AFD0 |
-| id-ID | Complete Open Logic: 722/722 editable targets; 1,116-page public linked reader | Residual Open Logic deficit D = 0; no duplicate completion workload or reach | OpenLogic-id published release commit 34af65419e4c5c5580dae60a48454c485ddf504c; reader SHA-256 BF538D5E1994A7A7600703C9D24616696F77E43E9312FB51078095FF0C963C0A |
-| isv-Latn / isv-Cyrl programme | Seven accepted Open Logic units of 722; no finished reader | Unit progress only; no scalar token deficit or cross-language demographic reach inferred | ACE-A012 / 8515634D615773223074590F0DB4F2612BDF564BDDEC8E8015A6D6BB7815D3FB |
-| Proposed Romance constructed surface | 722 provisional files but zero canon-admitted units | Research/architecture hypothesis only; zero cardinal reach | ACE-A010 / F2A940018EB87B959112B71EE8435D23C24469925728CBFDDB8AF15717B4AFD0 |
-
-The `id-ID` row is a completed Open Logic baseline, not a proxy for the whole Indonesian
-program. The pinned public overlay finds 27 of 40 course roles published and 13 in
-production. Its 26,031-page de-duplicated public-artifact reconstruction is distinct
-from the central ledger's 19,745 teaching-package pages, 20,763 selected-corpus working
-pages, and 27,705-page rendered universe; none is a final translated-page total.
-Consequently, Indonesian forward allocation begins with a course-by-course and
-format-by-format gap audit. It does not prescribe another Open Logic, Prealgebra, or
-Elementary Algebra translation and does not infer a new missing book merely from a
-population-level learning deficit.
-
-## D2. Candidate-register reconciliation states
-
-| State | Rows | Registered meaning | Deficit effect | Boundary |
-| --- | ---: | --- | --- | --- |
-| covered | 1 | Exact declared target scope is registered as delivered and verifiable. | D=0 only for the exact verified target × unit × format; any uncovered curriculum or format remains D=1. | Classification uses only existing_local_status and the declared scope in candidate_interventions_master.csv. |
-| partial | 18 | At least one exact unit/component is registered, but the declared target scope is incomplete or inconsistent. | D=0 only on verified covered units/components and D=1 on the residual; no scalar is assigned without a common exact denominator. | Classification uses only existing_local_status and the declared scope in candidate_interventions_master.csv. |
-| researched | 2 | Research exists, but no delivered target coverage is registered. | Research without delivered target bytes does not reduce the content deficit; D=1 for the missing comparator. | Classification uses only existing_local_status and the declared scope in candidate_interventions_master.csv. |
-| dormant | 0 | A prior item is registered as dormant and lacks current usable/build evidence. | A dormant item is not credited without verified usable current bytes and build identity; D=1 pending that registered evidence. | No rows in the current 210-row register meet this state; retained as an explicit fail-closed rule. |
-| duplicated | 0 | The same usable target coverage is registered more than once; only a canonical copy may count. | The canonical item counts once; a duplicate adds no marginal coverage and produces no further reduction in D. | No rows in the current 210-row register meet this state; retained as an explicit fail-closed rule. |
-| missing | 189 | No exact target coverage is registered in the bounded local census. | No registered target coverage: D=1 for the declared target × unit × format. | Classification uses only existing_local_status and the declared scope in candidate_interventions_master.csv. |
-
-Indonesian Open Logic is a complete 722/722 baseline: verified coverage is 722 units, the residual is zero, and D=0 for that exact corpus. It is covered rather than partial and cannot be counted again as forward translation gain. Interslavic has seven accepted units but no comparable accepted-source-token denominator, so this paper does not convert those local units into demographic bridge reach. All other partial rows remain component-level. The detailed 210-row reconciliation is machine-readable in `appendix_a_existing_work_reconciliation.csv`.
-
-# Appendix E. Global regional, source, measure, and confidence gap map
-
-| Region | Subregion | Cardinal rows | Top100 | Sources | Measures | High | Medium | Aggregation rule |
-| --- | --- | ---: | ---: | ---: | --- | ---: | ---: | --- |
-| Africa | Eastern Africa | 1 | 1 | 1 | derived_census_any_kirundi_read_and_written_persons_age_10_plus | 1 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Africa | Horn of Africa | 6 | 6 | 1 | census_mother_tongue_persons | 6 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Africa | Indian Ocean | 1 | 1 | 1 | language_usually_spoken_at_home_persons | 1 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Africa | Southern Africa | 12 | 12 | 2 | census_language_most_often_spoken_in_household_persons_age_1_plus \|\| census_mother_tongue_persons | 12 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Africa | Western Africa | 4 | 4 | 2 | census_mother_tongue_persons_age_3_plus \|\| census_principal_language_commonly_spoken_persons_age_3_plus | 3 | 1 | not summed: measures, years, territories, and overlap universes may differ |
-| Americas | Arctic | 1 | 0 | 1 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 1 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Americas | North America | 13 | 2 | 1 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 13 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Americas | North America (Caribbean and Central American diaspora) | 1 | 0 | 1 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 1 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Americas | North America (Caribbean diaspora) | 3 | 2 | 1 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 3 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Americas | North America (Central American Indigenous diaspora) | 4 | 0 | 1 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 4 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Americas | North America (European nonterritorial diaspora) | 2 | 2 | 1 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 2 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Americas | North America (Pacific diaspora) | 8 | 2 | 1 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 8 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Americas | South America | 3 | 3 | 1 | census_language_learned_in_childhood_age3plus_persons | 3 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Asia | Central Asia | 5 | 5 | 5 | census_mother_tongue_persons \|\| census_native_language_of_own_nationality_persons \|\| census_native_language_persons \|\| derived_cldr_territory_functional_language_users \|\| preliminary_census_mother_tongue_persons_rounded | 4 | 1 | not summed: measures, years, territories, and overlap universes may differ |
-| Asia | East Asia | 1 | 1 | 1 | derived_cldr_territory_functional_language_users | 0 | 1 | not summed: measures, years, territories, and overlap universes may differ |
-| Asia | South Asia | 26 | 26 | 5 | census_mother_tongue_persons \|\| census_same_name_mother_tongue_component_persons \|\| derived_2020_total_speakers_from_official_secondary_share_and_world_bank_denominator \|\| derived_cldr_territory_functional_language_users | 21 | 5 | not summed: measures, years, territories, and overlap universes may differ |
-| Asia | Southeast Asia | 26 | 26 | 8 | census_mother_tongue_persons \|\| CLEAR_normalized_main_language_weighted_persons_from_IPUMS_2010_census_extract \|\| daily_language_at_home_age5plus_persons \|\| derived_cldr_territory_functional_language_users \|\| derived_union_of_mutually_exclusive_census_strata_persons \|\| official_long_form_census_able_to_speak_indonesian_persons_age5plus \|\| peer_reviewed_published_lower_bound_speakers | 23 | 3 | not summed: measures, years, territories, and overlap universes may differ |
-| Europe | Central Europe | 4 | 4 | 1 | census_languages_used_at_home_multiple_response_persons | 4 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Europe | Northern Europe | 1 | 1 | 1 | self_reported_daily_use_outside_education_persons | 1 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Oceania | Australia | 10 | 0 | 4 | census_language_used_at_home_persons | 10 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-| Oceania | Polynesia | 2 | 2 | 1 | census_languages_spoken_multiple_response_persons | 2 | 0 | not summed: measures, years, territories, and overlap universes may differ |
-
-The global detail table has one row for each of the 134 cardinal natural-language interventions and an exact join to one population observation and its registered source. The source/measure/confidence table preserves source-level groupings. Counts in this appendix describe records and coverage strata; they are not summed population claims.
-
-# Appendix F. Curriculum portfolios, adaptation depths, and needs assignment
-
-## F1. Exact curriculum portfolios
-
-| ID | Portfolio | Project | Exact content | Units | Source tokens | Preferred depth | Prerequisite | Sources | Caveat |
-| --- | --- | --- | --- | ---: | ---: | --- | --- | --- | --- |
-| MV-1 | Minimum viable quantitative curriculum | OpenStax | Algebra and Trigonometry 2e | 94 |  -  | D2 |  -  | ACE-E002;ACE-E003 | Whole book retained because later statistics physics and calculus reuse its sequence and vocabulary. |
-| SB-1 | Secondary data bridge | OpenStax | MV-1 plus Introductory Statistics 2e | 196 |  -  | D2 | MV-1 | ACE-E002;ACE-E003 | Statistics chapters are not fully independent; partial extracts must be labeled as packets. |
-| SB-2 | Secondary STEM bridge | OpenStax | SB-1 plus College Physics 2e | 479 |  -  | D2_then_D3 | SB-1 | ACE-E002;ACE-E003 | College Physics is algebra based and does not require calculus. |
-| UG-1 | Undergraduate STEM breadth | OpenStax | SB-2 plus Chemistry 2e and Biology 2e | 887 |  -  | D2 | SB-2 | ACE-E002;ACE-E003 | Terminology figure and alt-text burden rises substantially. |
-| UG-2 | Complete undergraduate STEM core | OpenStax | UG-1 plus Calculus Volumes 1 through 3 | 1050 |  -  | D2_then_D3 | UG-1 | ACE-E002;ACE-E003 | Calculus volumes must be sequenced 1 then 2 then 3. |
-| FR-1 | Formal-reasoning foundation | Open Logic Project | methods plus sets-functions-relations plus propositional | 87 | 50330 | D2 |  -  | ACE-A013;ACE-E004;ACE-E005 | Compact mathematical-reasoning route. |
-| FR-2 | Formal-reasoning core | Open Logic Project | FR-1 plus first-order-logic | 210 | 120083 | D2 | FR-1 | ACE-A013;ACE-E004;ACE-E005 | Preferred main Open Logic educational intervention. |
-| FR-3 | Logic and computation bridge | Open Logic Project | FR-2 plus computability plus turing-machines | 276 | 157048 | D2 | FR-2 | ACE-A013;ACE-E004 | Suitable as a logic/computer-science bridge. |
-| FR-4 | Advanced formal-reasoning portfolio | Open Logic Project | full canonical reader | 642 | 318916 | D1_or_D2 | FR-2 | ACE-A013;ACE-E004 | Select by official remix rather than repository order. |
-| FR-5 | Complete archival corpus | Open Logic Project | canonical plus supplements | 722 | 367220 | D1_unless_selected | FR-4 | ACE-A013;ACE-E004 | Not automatically a teachable sequence. |
-| AX-1 | Core accessibility package | Cross-project | semantic HTML or MathML plus screen PDF print PDF and offline package |  -  |  -  | parallel_to_D2 |  -  | ACE-E003;ACE-E005 | Apply to every selected language and curriculum tier rather than deferring. |
-| AX-2 | Enhanced nonvisual access | Cross-project | formula narration diagram descriptions and audio or TTS-ready text |  -  |  -  | separate_derivative | AX-1 | ACE-E003;ACE-E005 | Requires deterministic mathematical and chemistry reading conventions. |
-| AX-3 | Plain-language companion | Cross-project | definitions summaries and worked-example explanations |  -  |  -  | separate_derivative | AX-1 | ACE-E003;ACE-E005 | Supplement only; never silently replaces the source-faithful edition. |
-
-## F2. Exact adaptation depths
-
-| ID | Depth | Included components | Low | Base | High | Status | Caveat |
-| --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| D0 | Terminology and structure | TOC metadata learning objectives key-term graph notation registry attribution | 0.05 | 0.075 | 0.10 | infrastructure | Not an educational edition. |
-| D1 | Reading edition | Expository narrative definitions summaries captions and a small worked-example set | 0.30 | 0.375 | 0.45 | reference_or_early_reach | Bulk assessment and practice architecture omitted. |
-| D2 | Course-ready core | Complete exposition definitions worked examples checkpoints representative exercises and answers figures and alt text | 0.60 | 0.70 | 0.80 | minimum_course_intervention | Default first educational production depth. |
-| D3 | Complete public edition | Every public module component exercise public answer caption glossary reference and attribution | 1.00 | 1.00 | 1.00 | complete_public_source | Does not include restricted instructor-only ancillaries. |
-| D4 | Local pedagogical adaptation | D3 plus locally appropriate data units software instructions examples and explanatory scaffolding | 1.20 | 1.40 | 1.60 | localized_complete | Separate from source-faithful translation and requires explicit adaptation labeling. |
-
-## F3. Legacy fixed-source Top100 workload mapping
-
-This mapping preserves the older uniform curriculum assignment solely as a reproducible compute sensitivity. It is **not** a claim that the named book is the first missing product in every population. The distribution is MV-1/D2 = 36, MV-1/D3 = 43, and SB-1/D3 = 21. SB-1 means **MV-1 plus Introductory Statistics 2e**.
-
-| Pos. | ID | Target | Profile | Lane | First comparator | First depth | Next comparator | Next depth | Next exact content | Population source |
-| ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | NAT-121 | Bahasa Indonesia | id-Latn-ID | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S021 |
-| 2 | NAT-001 | Bangladesh Bangla | bn-Beng-BD | high_reach_underserved | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ASSEC-S006 |
-| 3 | NAT-003 | Telugu | te-Telu-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 4 | NAT-002 | Indian Bengali | bn-Beng-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 5 | NAT-028 | Vietnamese | vi-Latn-VN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | ASSEC-S007 |
-| 6 | NAT-006 | Marathi | mr-Deva-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 7 | NAT-004 | Indian Tamil | ta-Taml-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 8 | NAT-015 | Western Punjabi | pnb-Arab-PK | high_reach_underserved | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S003 |
-| 9 | NAT-038 | Javanese | jv-Latn-ID | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S005 |
-| 10 | NAT-007 | Gujarati | gu-Gujr-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 11 | NAT-029 | Thai | th-Thai-TH | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | TH-S001 |
-| 12 | NAT-010 | Odia | or-Orya-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 13 | NAT-008 | Kannada | kn-Knda-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 14 | NAT-013 | Indian Urdu | ur-Arab-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 15 | NAT-030 | Burmese | my-Mymr-MM | high_reach_underserved | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ASSEC-S006 |
-| 16 | NAT-009 | Malayalam | ml-Mlym-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 17 | EXP-003 | Uzbekistan Uzbek Latin-script edition | uz-Latn-UZ | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | ALG-S018 |
-| 18 | NAT-014 | Eastern Punjabi | pa-Guru-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 19 | NAT-039 | Sundanese | su-Latn-ID | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S005 |
-| 20 | NAT-018 | Sindhi | sd-Arab-PK | high_reach_underserved | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S003 |
-| 21 | NAT-065 | Amharic | am-Ethi-ET | high_reach_underserved | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S020 |
-| 22 | NAT-034 | Cebuano | ceb-Latn-PH | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | ASSEC-S008 |
-| 23 | NAT-058 | Dari | prs-Arab-AF | high_reach_underserved | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ASSEC-S018 |
-| 24 | NAT-012 | Pakistani Urdu | ur-Arab-PK | high_reach_underserved | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S003 |
-| 25 | NAT-011 | Assamese | as-Beng-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 26 | NAT-019 | Saraiki | skr-Arab-PK | high_reach_underserved | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S003 |
-| 27 | NAT-027 | Sinhala | si-Sinh-LK | high_reach_underserved | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ASSEC-S006 |
-| 28 | EXP-004 | India Maithili Devanagari edition | mai-Deva-IN | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | PM-S001 |
-| 29 | EXP-001 | Afghanistan Pashto Arabic-script edition | ps-Arab-AF | high_reach_underserved | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ASSEC-S018 |
-| 30 | NAT-022 | Nepali | ne-Deva-NP | high_reach_underserved | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S004 |
-| 31 | NAT-073 | isiZulu | zu-Latn-ZA | high_reach_underserved | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ZA-S001 |
-| 32 | NAT-031 | Khmer | km-Khmr-KH | high_reach_underserved | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ALG-S011 |
-| 33 | NAT-055 | Turkmen | tk-Latn-TM | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ALG-S009 |
-| 34 | NAT-075 | Shona | sn-Latn-ZW | high_reach_underserved | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S011 |
-| 35 | NAT-047 | Kazakh | kk-Cyrl-KZ | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | ALG-S007 |
-| 36 | NAT-032 | Lao | lo-Laoo-LA | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ASSEC-S006 |
-| 37 | NAT-074 | isiXhosa | xh-Latn-ZA | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ZA-S001 |
-| 38 | NAT-049 | Tajik | tg-Cyrl-TJ | high_reach_underserved | FR-2 | D2 | SB-1 | D3 | MV-1 plus Introductory Statistics 2e | ASSEC-S006 |
-| 39 | EXP-013 | Ethiopia Somali Latin-script edition | so-Latn-ET | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S020 |
-| 40 | EXP-005 | Indonesia Madurese Latin-script edition | mad-Latn-ID | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S005 |
-| 41 | EXP-018 | Mali Bamanankan Latin-script edition | bm-Latn-ML | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | AFG-S008 |
-| 42 | NAT-048 | Kyrgyz | ky-Cyrl-KG | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ALG-S008 |
-| 43 | NAT-035 | Ilocano | ilo-Latn-PH | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ASSEC-S008 |
-| 44 | NAT-081 | Wolof | wo-Latn-SN | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | AFG-S009 |
-| 45 | NAT-005 | Sri Lankan Tamil | ta-Taml-LK | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ASSEC-S006 |
-| 46 | NAT-036 | Hiligaynon | hil-Latn-PH | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ASSEC-S008 |
-| 47 | EXP-019 | South Africa Sepedi Latin-script edition | nso-Latn-ZA | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ZA-S001 |
-| 48 | NAT-050 | Mongolian | mn-Cyrl-MN | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ASSEC-S006 |
-| 49 | EXP-020 | South Africa Setswana Latin-script edition | tn-Latn-ZA | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ZA-S001 |
-| 50 | EXP-021 | South Africa Sesotho Latin-script edition | st-Latn-ZA | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ZA-S001 |
-| 51 | NAT-105 | Maori | mi-Latn-NZ | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S014 |
-| 52 | EXP-006 | Indonesia Minangkabau Latin-script edition | min-Latn-ID | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S005 |
-| 53 | EXP-014 | Ethiopia Tigrinya Ethiopic-script edition | ti-Ethi-ET | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S020 |
-| 54 | EXP-037 | Ireland Irish Latin-script daily-use edition | ga-Latn-IE | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S016 |
-| 55 | EXP-007 | Indonesia Banjar Latin-script edition | bjn-Latn-ID | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S005 |
-| 56 | OBS-POP-SN-AFG-002 | Senegal Pulaar, official Latin orthography | fuc-Latn-SN | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | AFG-S009 |
-| 57 | OBS-GRG-PL-007 | Official-standard Belarusian | be-Cyrl-BY | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S006 |
-| 58 | NAT-037 | Waray | war-Latn-PH | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ASSEC-S008 |
-| 59 | EXP-015 | Ethiopia Sidama Latin-script edition | sid-Latn-ET | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S020 |
-| 60 | OBS-GRG-PL-010 | Standard Lithuanian | lt-Latn-LT | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S006 |
-| 61 | EXP-008 | Indonesia Sasak Latin-script edition | sas-Latn-ID | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S005 |
-| 62 | EXP-022 | South Africa Xitsonga Latin-script edition | ts-Latn-ZA | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ZA-S001 |
-| 63 | EXP-009 | Indonesia Acehnese Latin-script edition | ace-Latn-ID | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S005 |
-| 64 | NAT-021 | Brahui | brh-Arab-PK | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S003 |
-| 65 | NAT-079 | Kirundi | rn-Latn-BI | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | AFG-S011 |
-| 66 | EXP-010 | Indonesia Betawi Latin-script edition | bew-Latn-ID | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S005 |
-| 67 | NAT-023 | Maithili Nepal profile | mai-Deva-NP | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S004 |
-| 68 | EXP-023 | South Africa siSwati Latin-script edition | ss-Latn-ZA | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ZA-S001 |
-| 69 | NAT-076 | Zimbabwean Ndebele | nd-Latn-ZW | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S011 |
-| 70 | EXP-016 | Ethiopia Wolaytta Latin-script edition | wal-Latn-ET | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S020 |
-| 71 | EXP-024 | South Africa Tshivenda Latin-script edition | ve-Latn-ZA | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ZA-S001 |
-| 72 | NAT-024 | Bhojpuri Nepal profile | bho-Deva-NP | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S004 |
-| 73 | EXP-029 | Mauritius Mauritian Creole Latin-script edition | mfe-Latn-MU | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S013 |
-| 74 | EXP-017 | Ethiopia Hadiyya Latin-script edition | hdy-Latn-ET | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S020 |
-| 75 | EXP-025 | South Africa isiNdebele Latin-script edition | nr-Latn-ZA | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | ZA-S001 |
-| 76 | OBS-GRG-US-025 | Standard Haitian Creole | ht-Latn-HT | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S001 |
-| 77 | EXP-011 | Indonesia Nias Latin-script edition | nia-Latn-ID | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S005 |
-| 78 | NAT-026 | Avadhi Nepal profile | awa-Deva-NP | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S004 |
-| 79 | EXP-030 | Zimbabwe Ndau Latin-script edition | ndc-Latn-ZW | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S011 |
-| 80 | OBS-GRG-PL-002 | Silesian in ślabikŏrzowy szrajbōnek | szl-Latn-PL | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S006 |
-| 81 | NAT-041 | Tetum Prasa | tet-Latn-TL | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ALG-S014 |
-| 82 | OBS-POP-SN-AFG-005 | Senegal Mandinka (Màndienka), official Latin profile | mnk-Latn-SN | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | AFG-S009 |
-| 83 | OBS-GRG-US-030 | YIVO Standard Yiddish edition for the explicitly named YIVO-reading audience | ydd-Hebr-US | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S001 |
-| 84 | OBS-GRG-US-029 | English-oriented Pennsylvania German spelling used by Vitt Du Deitsh Shvetza / Di Heilich Shrift / Ich Kann PA Deitsh Shreiva | pdc-Latn-US | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S001 |
-| 85 | EXP-031 | Timor-Leste Makasai Latin-script edition | mkz-Latn-TL | regional_depth | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ALG-S014 |
-| 86 | OBS-GRG-US-003 | Diné Bizaad in Navajo Nation school orthography | nv-Latn-US | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S001 |
-| 87 | EXP-026 | Peru Ashaninka Latin-script edition | cni-Latn-PE | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S007 |
-| 88 | EXP-036 | New Zealand Samoan Latin-script edition | sm-Latn-NZ | regional_depth | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | PM-S014 |
-| 89 | EXP-027 | Peru Awajun Latin-script edition | agr-Latn-PE | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S007 |
-| 90 | OBS-GRG-PL-004 | School-standard Kashubian | csb-Latn-PL | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S006 |
-| 91 | EXP-032 | Timor-Leste Kemak Latin-script edition | kem-Latn-TL | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ALG-S014 |
-| 92 | OBS-GRG-US-026 | Jamaican Creole in Cassidy/JLU orthography | jam-Latn-JM | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S001 |
-| 93 | EXP-033 | Timor-Leste Bunak Latin-script edition | bfn-Latn-TL | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ALG-S014 |
-| 94 | EXP-034 | Timor-Leste Tokodede Latin-script edition | tkd-Latn-TL | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ALG-S014 |
-| 95 | EXP-028 | Peru Shipibo-Konibo Latin-script edition | shp-Latn-PE | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | PM-S007 |
-| 96 | NAT-044 | Fataluku | ddg-Latn-TL | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ALG-S014 |
-| 97 | OBS-GRG-US-023 | Standard ʻŌlelo Hawaiʻi with ʻokina and kahakō | haw-Latn-US | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S001 |
-| 98 | OBS-GRG-US-017 | Standard Marshallese under the 2010 Orthography Act | mh-Latn-MH | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S001 |
-| 99 | EXP-035 | Timor-Leste Waima'a Latin-script edition | wmh-Latn-TL | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D2 | Algebra and Trigonometry 2e | ALG-S014 |
-| 100 | OBS-GRG-US-001 | Standard Central Alaskan Yup'ik | esu-Latn-US | small_population_prestige_domain_screen | FR-2 | D2 | MV-1 | D3 | Algebra and Trigonometry 2e | GRG-S001 |
-
-## F4. Needs-audited assignment layer
-
-`top100_needs_assignment_v2.csv` replaces F3 for commissioning decisions. It contains a source-backed, territory- and stage-specific first-product or audit assignment for all 100 ranked rows, with confidence and caveats kept explicit. A row can recommend a bounded gap audit rather than a translation when current supply is already substantial or insufficiently inventoried. `population_mathematics_needs_register.csv` preserves the assessment population, indicator, source, curricular interpretation, confidence, and caveat behind the directly audited assignments.
-
-# Appendix G. Unresolved output profiles and D0 exclusions
-
-| ID | Issue | Target | Profile | Source population | Measure | Year | Population source | Why excluded | Evidence sought |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| EXP-002 | D0_profile_population_mismatch | Pakistani Pashto | ps-Arab-PK | 43633946 | census_mother_tongue_persons | 2023 | PM-S003 | exclude_D0_profile_population_mismatch; Pakistan census label Pushto is broader than an exact production variety | Exact production-variety/standard mapping within the PBS Pushto umbrella and a population-to-profile join that does not assign the whole category to one variety. |
-| EXP-012 | D0_profile_population_mismatch | Oromo | om-Latn-ET | 24930424 | census_mother_tongue_persons | 2007 | PM-S020 | exclude_D0_profile_population_mismatch; census Oromigna category is broad and its editorial identifier is orm:CSA; exact variety reach is unresolved | Exact production-variety/standard mapping within the CSA Oromigna category, with cross-border populations excluded unless separately and disjointly evidenced. |
-| OBS-GRG-US-004 | unresolved_localized_output_profile | Eastern Keres | kee-Zzzz-US target profile; script unresolved by population source | 12540 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 2017-2021 | GRG-S001 | not rankable as one edition; split into community profiles first | Community-specific Eastern Keres variety, script, orthography, educational-standard authority, and a nonmultiplying population-to-output join. |
-| OBS-GRG-US-012 | unresolved_localized_output_profile | Tewa | tew-Zzzz-US target profile; script unresolved by population source | 5105 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 2017-2021 | GRG-S001 | not rankable as one edition; split into community profiles first | Pueblo-specific Tewa variety, script, orthography, educational-standard authority, and a nonmultiplying population-to-output join. |
-| OBS-GRG-US-027 | unresolved_localized_output_profile | Guyanese Creole English | gyn-Latn-GY | 4603 | acs_2017_2021_estimated_persons_age5plus_language_spoken_at_home | 2017-2021 | GRG-S001 | rank shared core and localized profiles separately; do not multiply one population observation | Exact institutional teaching orthography and an audience split between a shared core and localized profiles without multiplying GRG-US-027. |
-
-These are exclusions from recommendation ranking, not claims that the communities lack educational need. The two D0 rows retain source population cells but do not assign them to an exact production profile.
-
-# Appendix H. Interlanguage overlap matrix summary
-
-The complete registered matrix contains 104 rows: 80 interlanguage rows across 15 intervention IDs and 24 accessibility rows across 18 IDs. IL-AR occurs in both mechanism scopes, so those ID counts are nonadditive and reconcile to 32 distinct IDs overall. Appendix F summarizes only the 80 interlanguage rows; Appendix C handles accessibility. Every interlanguage component remains non-rankable under current evidence, and every demographic or component subtotal is nonadditive unless an explicit disjoint-universe rule says otherwise.
-
-| ID | Mechanism | Rows | Exact communities/varieties | Scripts | Task evidence | Prior-study evidence | Existing-edition overlap | Exclusions | Double-count rule |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| IL-AR | pluricentric_shared_core | 1 | Readers comfortable with Modern Standard Arabic | Arab | none registered for target corpus | formal literacy required | complete local Arabic edition | Amazigh Kurdish Nubian Modern South Arabian and signed languages | Existing MSA coverage is baseline and cannot be claimed again by scaffolds |
-| IL-BCMS | dual_script_register \|\| pluricentric_shared_core | 5 | Bosnian-standard cell \|\| Croatian-standard cell \|\| Montenegrin-standard cell \|\| Serbian Cyrillic-reading stratum \|\| Serbian Latin-reading stratum | Cyrl \|\| Latn | none registered | none beyond named-standard literacy \|\| none beyond script literacy | none established | Croatian Montenegrin Serbian and non-BCMS languages remain distinct cells \|\| Other BCMS standards \|\| Other BCMS standards remain distinct cells | Named output claims only Bosnian cell; shared source has compute value only \|\| Named output claims only Croatian cell \|\| Named output claims only Montenegrin cell \|\| Partition one Serbian population by script use; do not add Latin and Cyrillic |
-| IL-GERM | natural_intercomprehension_reuse | 10 | Afrikaans-standard cell \|\| Dutch-standard cell \|\| Faroese cell \|\| Hutterisch cell \|\| Low German exact-standard cell \|\| Pennsylvania Dutch cell \|\| Plautdietsch cell \|\| Scots cell \|\| West Frisian cell \|\| Yiddish exact-register cell | Hebr \|\| Latn | none | none beyond community-standard literacy \|\| none beyond exact-register literacy \|\| none beyond exact-standard literacy \|\| none beyond named-standard literacy | Danish and English overlap unmeasured \|\| Dutch and English overlap unmeasured \|\| English and German overlap unmeasured \|\| English Hebrew Russian and German overlaps vary \|\| English overlap expected high but unmeasured \|\| English overlap expected very high but unmeasured \|\| English overlap likely high but unmeasured \|\| German English Russian Spanish and Portuguese overlaps vary \|\| German overlap unmeasured | All Latin-script Germanic profiles \|\| All residual Germanic communities \|\| Dutch Afrikaans and other Germanic communities \|\| Mainland Scandinavian and other Germanic languages \|\| Other Frisian languages and Germanic communities \|\| Other Germanic communities \|\| Other Germanic diaspora languages \|\| Other Germanic languages | Claims only residual Afrikaans cell; directional Dutch credit zero \|\| Claims only residual Dutch cell; cross-language credit zero \|\| Count only residual comfortable-reader gain; no pan-Germanic credit \|\| Count only residual community readers; no pan-Germanic credit \|\| Deduplicate by residence and dominant academic-language access; no pan-Germanic credit \|\| No pan-Germanic credit \|\| No pan-Germanic credit; named output only \|\| No pan-Germanic credit; residence and community register define separate cells \|\| No pan-Germanic or mainland Scandinavian credit |
-| IL-HU | dual_script_register | 3 | Indian Urdu cell \|\| Pakistani Urdu cell \|\| Standard Hindi-oriented cell | Arab Nastaliq \|\| Deva | none | none beyond named-standard literacy | C-17 reports English-or-Hindi subsidiary-language knowledge for 23172258 of 50772631 Urdu-category speakers; academic comfort remains unknown \|\| complete local Hindi edition; C-17 reports English subsidiary-language knowledge for 35257144 of the 528347193 Hindi census umbrella \|\| Hindi overlap unmeasured | Other Indian mother tongues \|\| Punjabi Sindhi Saraiki Pashto and other languages \|\| Urdu and Hindi census umbrella sublanguages | Existing Hindi coverage is baseline and not added to Urdu adaptation reach; C-17 language knowledge is not academic comfort \|\| Hindi gives zero Urdu credit; named Urdu output claims exact Pakistan cell \|\| Keep Indian Urdu separate from Pakistan Urdu; apply disclosed nonoverlap sensitivity 0.543607303/0.771803651/0.908721461 rather than categorical Hindi coverage |
-| IL-IDMS | dual_script_register \|\| pluricentric_shared_core | 4 | Brunei Malay educational-standard cell \|\| Indonesian standard cell \|\| Malaysian Malay Jawi-reading stratum \|\| Malaysian Malay Rumi cell | Arab \|\| Latn | none | none beyond exact-standard literacy \|\| none beyond Jawi literacy \|\| none beyond named-standard literacy | 722 of 722 Open Logic units complete \|\| Indonesian and Malaysian overlap untested \|\| Indonesian cross-standard overlap untested \|\| Same language as ms-Latn-MY | Javanese Sundanese Madurese Minangkabau Acehnese and other languages \|\| Other Malayic and Indonesian languages \|\| Other Malayic languages | Completed Indonesian Open Logic is excluded from forward reach; no Malaysian reach \|\| Named Brunei cell only; no regional blanket credit \|\| Partition or model dual literacy; never add Jawi and Rumi populations \|\| Zero Indonesian credit pending directional technical-text audit; localized output claims Malaysian cell |
-| IL-ISV | constructed_bridge | 15 | Belarusian-literate cohort \|\| Bosnian-standard cohort \|\| Bulgarian-literate cohort \|\| Croatian-standard cohort \|\| Czech-literate cohort \|\| Macedonian-literate cohort \|\| Montenegrin-standard cohort \|\| Polish-literate cohort \|\| Pooled native-Slavic study respondents \|\| Russian-literate cohort \|\| Serbian Cyrillic-script reading cell \|\| Serbian Latin-script reading cell \|\| Slovak-literate cohort \|\| Slovene-literate cohort \|\| Ukrainian-literate cohort | Cyrl \|\| Latn \|\| study surface reported as written Interslavic | none at exact leaf level in current register \|\| seven-gap written professional-text cloze [seven-gap short written professional-text cloze] score=0.84 | not required for the short cloze; sustained mathematics unknown \|\| unknown for sustained mathematics | No exact local native-language-edition overlap was subtracted \|\| unknown \|\| unknown in current local coverage census | Kashubian is not included \|\| Kashubian Sorbian Rusyn and all untested minority leaves \|\| No additive credit with Serbian Cyrillic \|\| No additive credit with Serbian Latin \|\| No BCMS or other South-Slavic transfer credit \|\| No Bulgarian or other South-Slavic transfer credit \|\| No Czech or other West-Slavic transfer credit \|\| No Macedonian or other South-Slavic transfer credit \|\| No Slovak or other West-Slavic transfer credit \|\| No unnamed BCMS population aggregation \|\| No untested minority or exact language leaf receives this pooled value \|\| Untested Slavic leaves | Credit zero until an exact surface/script/cohort test; deduct any comfortable Russian edition before reach \|\| Credit zero until exact testing and deduct any comfortable Ukrainian edition \|\| Partition one Serbian population by observed script use; then deduct named Serbian access \|\| The pooled 0.84 is one study-level point estimate and may not be copied to leaf rows or multiplied by a Slavic demographic ceiling \|\| Zero until exact testing and after any named BCMS edition \|\| Zero until exact testing and overlap subtraction \|\| Zero until exact testing; deduct Czech and English comfortable access \|\| Zero until exact testing; deduct Polish and English comfortable access \|\| Zero until exact testing; deduct Slovak and English comfortable access \|\| Zero until exact testing; deduct Slovene and English comfortable access \|\| Zero until exact testing; one person cannot be counted in both Latin and Cyrillic projection cells |
-| IL-MANDING | dual_script_register \|\| pluricentric_shared_core | 5 | Bambara Latin-standard cell \|\| Bambara N'Ko-literate stratum \|\| Jula Latin-standard cell \|\| Maninka exact-national-standard cell \|\| Maninka N'Ko-literate stratum | Latn \|\| Nkoo | none registered | none beyond exact-standard literacy \|\| none beyond N'Ko literacy \|\| none beyond named-standard literacy | none established \|\| Same Bambara language cell as Latin output \|\| Same Maninka language cell as Latin output | Other Manding and Mande languages \|\| Other Manding languages | Named output and country cell only \|\| Named output and territory cell only \|\| Named output only; no continuum-wide population \|\| Partition by observed script use; never add Latin and N'Ko users |
-| IL-NGUNI | pluricentric_shared_core | 4 | isiXhosa-standard cell \|\| isiZulu-standard cell \|\| siSwati-standard cell \|\| Southern Ndebele standard cell | Latn | none registered | none beyond named-standard literacy | none established | isiXhosa siSwati isiNdebele and non-Nguni languages \|\| Other Nguni standards \|\| Zimbabwean Ndebele and other Nguni standards | Country cells and named output only \|\| Keep nr and nd distinct; named output only \|\| Named output only; no combined Nguni population \|\| Named output only; no cross-language credit |
-| IL-PDT | pluricentric_shared_core | 3 | Dari-standard cell \|\| Iranian Persian cell \|\| Tajik-standard cell | Arab \|\| Cyrl | none | none beyond named-standard literacy | complete local Iranian Persian edition \|\| Iranian Persian directional overlap unmeasured | Dari Tajik Kurdish Pashto Balochi and Pamiri languages \|\| Pamiri Uzbek Russian and other languages \|\| Pashto Hazaragi and other languages | Existing fa-IR coverage is baseline and not added to adaptation reach \|\| Zero fa-IR reach pending technical-text evidence; named Dari output claims only exact cells \|\| Zero fa-IR reach; named Tajik output only; transliteration is not additive |
-| IL-PUNJABI | dual_script_register | 2 | Eastern Punjabi Gurmukhi cell \|\| Western Punjabi Shahmukhi cell | Arab Shahmukhi \|\| Guru | none | none beyond named-standard literacy | C-17 reports English-or-Hindi subsidiary-language knowledge for 17571723 of 33124726 Punjabi-category speakers; academic comfort remains unknown \|\| none established | Saraiki Hindko and unresolved Punjabi census sublabels \|\| Western Punjabi Saraiki Hindko | Claims only India Gurmukhi cell; apply nonoverlap sensitivity 0.469528503/0.734764251/0.893905701 and never add a dual-script population \|\| Claims only resolved Shahmukhi population; no additive dual-script population |
-| IL-ROM | constructed_bridge \|\| pluricentric_shared_core | 8 | Brazilian Portuguese cell \|\| Catalan-standard cell \|\| French-standard cell \|\| Galician-standard cell \|\| Italian-standard cell \|\| Proposed constructed pan-Romance surface \|\| Romanian-standard cell \|\| Spanish-standard cell | Latn | none \|\| none required for own localized output | none beyond literacy in exact locale standard \|\| none beyond literacy in exact standard \|\| none beyond literacy in named standard \|\| none beyond literacy in the named standard \|\| unknown | complete local edition \|\| not established \|\| not established in current successor census \|\| Spanish and Brazilian Portuguese complete locally | All named Romance languages absent exact testing \|\| Aromanian and other Eastern Romance varieties \|\| Catalan Galician and other languages are not Spanish cells \|\| European and African Portuguese profiles not automatically included \|\| Occitan and other Romance languages \|\| Other Romance languages \|\| Portuguese and Spanish are separate baseline editions \|\| Sardinian Sicilian Neapolitan Friulian and Ladin | Claims only Catalan cell; Spanish overlap deducted by cohort \|\| Claims only exact French cell; bilingual overlap deducted separately \|\| Claims only exact Romanian cell \|\| Claims only Italian cell \|\| Claims only residual Galician cell after measured Spanish/Portuguese comfort \|\| Constructed surface has zero coverage; design artifacts cannot claim demographic ceilings \|\| pt-BR output is subtracted from residual bridge scenarios; no additive bridge credit \|\| Spanish output claims only exact Spanish residual cells and is subtracted before any bridge scenario |
-| IL-SCAND | natural_intercomprehension_reuse | 4 | Danish-standard cell \|\| Norwegian Bokmal cell \|\| Norwegian Nynorsk cell \|\| Swedish-standard cell | Latn | exact pair values not registered | none beyond named-standard literacy | Bokmal English and Scandinavian overlap unmeasured \|\| English and Scandinavian overlap unmeasured | Faroese Icelandic \|\| Nynorsk Faroese Icelandic | Named output only; cross-language reach zero until exact directional value is imported \|\| Named output only; no cross-language credit \|\| Partition Norwegian readers and do not add dual-standard literacy |
-| IL-SOTHO | pluricentric_shared_core | 3 | Northern Sotho standard cell \|\| Southern Sotho standard cell \|\| Tswana standard cell | Latn | none registered | none beyond named-standard literacy | none established | Other Sotho-Tswana standards \|\| Tswana Southern Sotho Venda Tsonga and Nguni languages | Country cells remain separate; named output only \|\| Named output only; no combined Sotho-Tswana population |
-| IL-SQUECHUA | pluricentric_shared_core | 3 | Ayacucho Quechua cell \|\| Cusco Quechua cell \|\| South Bolivian Quechua cell | Latn | none registered | none beyond named-variety literacy | Spanish overlap unmeasured | Ayacucho South Bolivian Northern and Central Quechua \|\| Cusco South Bolivian Northern and Central Quechua \|\| Peruvian Southern Northern and Central Quechua | Named variety and country cell only; no aggregate Quechua population \|\| Named variety only; no aggregate Quechua population |
-| IL-TURKIC | natural_intercomprehension_reuse | 10 | Azerbaijani-standard cell \|\| Bashkir-standard cell \|\| Gagauz-standard cell \|\| Kazakh-standard cell \|\| Kyrgyz-standard cell \|\| Tatar-standard cell \|\| Turkish-standard cell \|\| Turkmen-standard cell \|\| Uyghur-standard cell \|\| Uzbek-standard cell | Arab \|\| Cyrl \|\| Latn | none | none beyond named-standard literacy | complete local Turkish edition \|\| Russian and Turkic overlap unmeasured \|\| Turkish overlap unmeasured \|\| Uzbek and Turkic overlap unmeasured | All other Turkic languages \|\| Oghuz and other Kipchak languages \|\| Other Karluk profiles \|\| Other Kipchak languages \|\| Other Oghuz languages \|\| Uyghur and all other Karluk profiles | Cross-language reach zero; named output only \|\| Cross-language Turkish credit is zero; named Azerbaijani output claims only Azerbaijani cell \|\| No cross-language credit \|\| No cross-language credit; legacy Cyrillic is a script-access cell \|\| No cross-language credit; script projection is not additive \|\| Turkish population is already covered locally and is never added to branch reuse reach |
-
-The Interslavic short-cloze evidence remains a task-specific observed result; it is not a sustained mathematics-comprehension estimate and is never multiplied by a Slavic-family demographic total.
-
-## H2. Top-100 overlap-control result
-
-The separate `top100_interlanguage_overlap_crosswalk.csv` joins all 100 ordered
-natural-language interventions to this matrix. It records 16 exact-profile matches,
-four exact language/script plus named-country matches, one hypothesis-only relation,
-and 79 unmapped rows. Every cross-language demographic reach credit is zero, every
-interlanguage-rankability flag is false, and positive shared-core reuse remains
-unquantified. These zeros are overlap-control values, not estimates of mathematical
-utility. The crosswalk's SHA-256 is
-`ED88A556E1055655E3635AAA64C793A684E1C655713BA4F86AD50B851CC1A380`.
-
-
-# Appendix I. Table-source authorities and source notes
-
-Generated from the exact source IDs used by the current Table 2 and Top 100 snapshots. Draft references use only locally registered metadata; each entry retains its authorship basis and bounded source note.
-
-## Population and count authorities
-
-### AFG-S008
-
-Institut National de la Statistique (INSTAT) and Bureau Central du Recensement (BCR), Mali. (2022). *RGPH5 2022: Caractéristiques culturelles de la population* [official census thematic report]. https://bibliostat.instat.ml/greenstone3/library/collection/dmograph/document/HASH01e98829c5a7e2847f521a98?ed=1
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* AFG-S008 supplies Resident population aged 3 years and above by mother-tongue category for Mali. Registered locator: Tableau 3.01, printed p.25; HTML document node HASH01e98829c5a7e2847f521a98.40. Registered temporal field: 2022. Caveat: Table 3.01 and Annex A03 publish materially different counts, and some printed sex subtotals do not exactly add to the printed ensemble cells. These observations preserve the Table 3.01 ensemble cells verbatim and do not repair or combine them. Peulh/Fulfulde and Malinké/Maninkakan remain source aggregates unless separately resolved.
-
-### AFG-S009
-
-Agence Nationale de la Statistique et de la Démographie (ANSD), Senegal. (2023). *RGPH-5 2023 definitive report, Theme I: Etat et structure, urbanisation et caractéristiques socioculturelles de la population* [official census report]. https://www.ansd.sn/sites/default/files/recensements/rapport/rapport_national/Rapport-def-RGPH-5.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* AFG-S009 supplies Resident population aged 3 years and above by principal language commonly spoken for Senegal. Registered locator: Tableau I-32, printed pp.57-58; PDF pp.94-95. Registered temporal field: 2023. Caveat: Principal-language categories are mutually exclusive and do not measure all languages spoken, literacy, or academic reading ability. Joola is not a single exact variety. ISO mappings are editorial and not supplied by the census table.
-
-### AFG-S011
-
-Institut de Statistiques et d’Études Économiques du Burundi (ISTEEBU/INSBU). (2008). *Répartition de la population issue du RGPH 2008* [official census tables]. https://www.insbu.bi/documents/recensements/R%C3%A9partition-de-la-population-issue-du-RGPH-2008.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* AFG-S011 supplies Population aged 10 years and above by mutually exclusive language read-and-written combination for Burundi. Registered locator: Tableau 3.2, PDF p.62. Registered temporal field: 2008. Caveat: The any-Kirundi count is a derived sum of 16 mutually exclusive total-column rows containing Kirundi. It is nested over the exact Kirundi-only cell; never add the two observations. Counts concern reading and writing among persons aged 10+, not total speakers.
-
-### ALG-S007
-
-Bureau of National Statistics of the Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. (2021). *National composition, religion and language proficiency in the Republic of Kazakhstan* [official national census statistical collection]. https://stat.gov.kz/upload/medialibrary/cee/3rsfg8ps3xo19orb284esg4rx27ihqf7/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* ALG-S007 supplies Native language by nationality and population language proficiency for Kazakhstan. Registered locator: Table 6, printed p. 243; Table 8, printed p. 366. Registered temporal field: 2021. Caveat: Table 6 counts language-of-own-nationality only within each nationality and omits cross-nationality native speakers. Table 8 proficiency is not mother tongue or academic comfort; its 17,194,712-person universe appears to be age 5+ from the age table, so the age interpretation is retained as a caveat.
-
-### ALG-S008
-
-National Statistical Committee of the Kyrgyz Republic. (2022). *Population and Housing Census of the Kyrgyz Republic 2022: Book II (Part One), Population of Kyrgyzstan* [official national census statistical collection]. https://stat.gov.kg/media/publicationarchive/0f717d2d-5078-4e18-8b56-fb2a530462a2.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* ALG-S008 supplies Native language by ethnic group for Kyrgyzstan. Registered locator: Table 3.8, printed pp. 118-119. Registered temporal field: 2022. Caveat: National Kyrgyz, Uzbek, and Russian native-language totals in the observation file are exact sums of mutually exclusive own-ethnicity and cross-ethnicity cells. Other named groups are nationality-scoped own-language counts and therefore lower bounds on total speakers.
-
-### ALG-S009
-
-State Committee of Turkmenistan on Statistics. (2022). *Results of the Complete Population and Housing Census of Turkmenistan - 2022: National Composition and Language Proficiency* [official national census tables]. https://stat.gov.tm/population-census-pdfs/results/en/4.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* ALG-S009 supplies Population by mother tongue for Turkmenistan. Registered locator: Table 4.9, PDF section pp. 8-10. Registered temporal field: 2022. Caveat: Direct mother-tongue totals. Published category labels such as Baloch are retained as-is and do not establish a narrower variety.
-
-### ALG-S011
-
-National Institute of Statistics Cambodia. (2019). *General Population Census of the Kingdom of Cambodia 2019: National Report on Final Census Results* [official national census report]. https://nis.gov.kh/nis/Census2019/Final%20General%20Population%20Census%202019-English.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* ALG-S011 supplies Population by mother tongue for Cambodia. Registered locator: Table 2.7.1, PDF p. 53 / printed p. 25. Registered temporal field: 2019. Caveat: The table covers all persons in census households and excludes migrants working abroad. Published total-category counts sum to the stated universe, but multiple male/female subtotals do not sum to their published category totals; only the total-category column is staged.
-
-### ALG-S014
-
-General Directorate of Statistics Timor-Leste. (2015). *Timor-Leste Population and Housing Census 2015 Volume 2 Language Tables* [official national census workbook]. https://www.laohamutuk.org/DVD/DGS/Cens15/Census2015v2data.zip
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* ALG-S014 supplies Population by mother tongue for Timor-Leste. Registered locator: Workbook 4_2015 V2 Language.xls, sheet 2.12, Table 12. Registered temporal field: 2015. Caveat: The official DGS workbook is preserved from a longstanding external mirror archive. Counts are direct mother-tongue totals; distinct source varieties such as Tetun Prasa and Tetun Terik remain separate.
-
-### ALG-S018
-
-National Statistics Committee of the Republic of Uzbekistan. (2026, June 30). *Проведена конференция посвящённая предварительным результатам переписи населения и сельского хозяйства* [official preliminary national census release]. https://stat.uz/ru/press-tsentr/novosti-goskomstata/68978-a-oli-va-ishlo-kh-zhaligini-r-jkhatga-olish-tadbirining-dastlabki-natizhalariga-ba-ishlangan-konferentsiya-tkazildi-3
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* ALG-S018 supplies Preliminary national population and Uzbek mother-tongue results for Uzbekistan. Registered locator: Paragraphs reporting the exact preliminary population total and 35.7 million / 91.3 percent Uzbek mother tongue. Registered temporal field: 2026-06-30. Caveat: Preliminary release. The mother-tongue count is rounded to 0.1 million; its separately published 91.3 percent does not arithmetically reproduce 35.7 million against the exact preliminary population total, so the percentage is not used to narrow the count range. Post-enumeration coverage was reported as 97.3 percent.
-
-### ASSEC-S006
-
-*Transparent CLDR 48.2 target person-count derivations and exclusion audit*. (2026, March 17). [transparent secondary derivation witness]. https://raw.githubusercontent.com/unicode-org/cldr/release-48-2/common/supplemental/supplementalData.xml
-
-*Authorship basis:* title-first reference because the register identifies an arithmetic derivation, not an author
-
-*Source note:* ASSEC-S006 supplies Nearest-person arithmetic from pinned territory population times pinned language population percentage; no invented confidence interval for Bangladesh; Myanmar; Laos; Mongolia; Sri Lanka; Malaysia; Tajikistan. Registered locator: cldr_target_derivations.md formulas table and exclusion audit. Registered temporal field: 2026-03-17 release; component years not stated. Caveat: Derived point counts inherit CLDR's unspecified component vintages and uncertainty. Integer percentage rounding rules are not published, so observation low/high fields remain blank. Not direct census evidence.
-
-### ASSEC-S007
-
-Phạm, B., & McLeod, S. (2016). Consonants, vowels and tones across Vietnamese dialects. *International Journal of Speech-Language Pathology, 18*(2), 122-134. https://doi.org/10.3109/17549507.2015.1101162
-
-*Authorship basis:* named authors, journal, volume, issue, pages, and DOI read from the hash-verified local PubMed XML witness
-
-*Source note:* ASSEC-S007 supplies Published lower-bound statement that Vietnamese is spoken by over 89 million people in Vietnam for Vietnam. Registered locator: PMID 27172848; AbstractText label PURPOSE first sentence; volume 18 issue 2 pages 122-134; DOI 10.3109/17549507.2015.1101162. Registered temporal field: 2016; estimate vintage not stated. Caveat: Rounded lower bound rather than a point estimate; L1 versus L2 and source year of the population estimate are not stated. The article is about dialect phonetics rather than population estimation.
-
-### ASSEC-S008
-
-CLEAR Global. (2010). *CLEAR Global Language Use Data Platform Philippines national API snapshot* [Weighted census-microdata API]. https://ludp.clearglobal.org/public/location/PHL/?aggregation=0&fields=proportion_value,language_rank,language_name,language_code,location_name,location_code,location_level,dataset_name,url,source,datetime_published,reliability_score,individuals_value_weighted&page_size=500
-
-*Authorship basis:* CLEAR Global selected from the registered compound authority as the API platform/corporate author; underlying IPUMS Census 2010 provenance remains in the source note
-
-*Source note:* ASSEC-S008 supplies Weighted persons by normalized main language at national aggregation level zero for Philippines. Registered locator: JSON data rows Cebuano cebu1242; Iloko ilok1237; Hiligaynon hili1240; Waray (Philippines) wara1300; fields individuals_value_weighted and reliability_score. Registered temporal field: 2010-12-31. Caveat: Exact API point values are weighted estimates, not exact headcounts; no variance or confidence interval is exposed. The platform normalizes the metric as main language. API content is mutable, so the local byte witness is controlling.
-
-### ASSEC-S018
-
-*Transparent Afghanistan Dari and Pashto person-count derivation*. (2020). [transparent secondary derivation witness]. https://web.archive.org/web/20230102023706id_/https://www.cia.gov/the-world-factbook/countries/afghanistan/
-
-*Authorship basis:* title-first reference because the register identifies an arithmetic derivation, not an author
-
-*Source note:* ASSEC-S018 supplies Nearest-person product of World Bank 2020 population and CIA 2020 total-speaker shares, with official report semantic check for Afghanistan. Registered locator: afghanistan_language_derivation.md formulas for Dari and Pashto. Registered temporal field: 2020. Caveat: Derived point counts inherit the source shares' unknown rounding and uncertainty. No numerical low/high interval is invented. Dari and Pashto totals overlap and must never be summed; displaced cohorts outside Afghanistan are excluded.
-
-### GRG-S001
-
-U.S. Census Bureau. (n.d.). *Detailed Languages Spoken at Home and Ability to Speak English for the Population 5 Years and Over in the United States: 2017-2021* [official ACS five-year detailed-language tabulation]. Retrieved August 25, 2026, from https://www2.census.gov/programs-surveys/demo/tables/language-use/2017/2017-2021-acs-lang-tables-nation.xlsx
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* GRG-S001 supplies Estimated persons age 5 years and over speaking the named language at home with published 90 percent margin of error for United States. Registered locator: Nation worksheet; selected indented child rows 11, 22, 24, 231, 233-234, 237-239, 246-247, 255, 260, 272, 458, 462, 473-474, 487-488, 492, 508, 510-511, 520, 522, 527, 529, 535, 538, 547-548, 552, 554, 564; notes rows 575-581. Registered temporal field: 2017-2021. Caveat: Sample estimates, not enumerated counts. Universe is age 5 and over and the measure is language spoken at home, not mother tongue or educational access. Parent language-family rows overlap child rows and were excluded. Published margins of error are 90 percent intervals; nonsampling error is not included. Detailed estimates may not sum to aggregates because of rounding.
-
-### GRG-S002
-
-Australian Bureau of Statistics. (2021). *2021 Lingiari, Census All persons QuickStats* [official national census QuickStats]. https://www.abs.gov.au/census/find-census-data/quickstats/2021/CED701
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* GRG-S002 supplies Persons reporting the named main language used at home in the national Australia comparison column for Australia. Registered locator: Language used at home, top responses other than English; Australia column; Kriol, Djambarrpuyngu, Warlpiri, Murrinh Patha and Alyawarr rows. Registered temporal field: 2021. Caveat: National values are the Australia comparison column, not the Lingiari local counts. ABS applied small random changes to cells for privacy. Language used at home permits one main-language response and is not an L1 or educational-access measure.
-
-### GRG-S003
-
-Australian Bureau of Statistics. (2021). *2021 Alice Springs, Census All persons QuickStats* [official national census QuickStats]. https://www.abs.gov.au/census/find-census-data/quickstats/2021/70201
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* GRG-S003 supplies Persons reporting the named main language used at home in the national Australia comparison column for Australia. Registered locator: Language used at home, top responses other than English; Australia column; Pitjantjatjara row. Registered temporal field: 2021. Caveat: National value is the Australia comparison column, not the Alice Springs local count. ABS applied small random changes to cells for privacy. Language used at home permits one main-language response and is not an L1 or educational-access measure.
-
-### GRG-S004
-
-Australian Bureau of Statistics. (2021). *2021 Katherine, Census All persons QuickStats* [official national census QuickStats]. https://www.abs.gov.au/census/find-census-data/quickstats/2021/70205
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* GRG-S004 supplies Persons reporting the named main language used at home in the national Australia comparison column for Australia. Registered locator: Language used at home, top responses other than English; Australia column; Gurindji, Ngarinyman and Nunggubuyu rows. Registered temporal field: 2021. Caveat: National values are the Australia comparison column, not the Katherine local counts. ABS applied small random changes to cells for privacy. Language used at home permits one main-language response and is not an L1 or educational-access measure.
-
-### GRG-S005
-
-Australian Bureau of Statistics. (2021). *2021 Barkly, Census All persons QuickStats* [official national census QuickStats]. https://www.abs.gov.au/census/find-census-data/quickstats/2021/70202
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* GRG-S005 supplies Persons reporting the named main language used at home in the national Australia comparison column for Australia. Registered locator: Language used at home, top responses other than English; Australia column; Warumungu row. Registered temporal field: 2021. Caveat: National value is the Australia comparison column, not the Barkly local count. ABS applied small random changes to cells for privacy. Language used at home permits one main-language response and is not an L1 or educational-access measure.
-
-### GRG-S006
-
-Statistics Poland. (2021, March 31). *Size and demographic-social structure in the light of the 2021 Census results* [official national census publication]. https://stat.gov.pl/files/gfx/portalinformacyjny/en/defaultaktualnosci/3701/6/1/1/national_population_and_housing_census_2021_population_2.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* GRG-S006 supplies Persons using the named language at home; respondents could indicate more than one language for Poland. Registered locator: Table 7.5, printed p. 120, PDF p. 122. Registered temporal field: 2021-03-31. Caveat: Multiple language responses were allowed, so rows overlap and must not be summed. The table measures language used at home, not L1 or academic-language comfort. Official bilingual labels are retained exactly. The population source does not report scripts or orthographies.
-
-### PM-S001
-
-Office of the Registrar General & Census Commissioner, India. (2011). *C-16 Population by Mother Tongue, Statement 1: Abstract of Speakers' Strength of Languages and Mother Tongues, Census of India 2011* [official census table]. https://censusindia.gov.in/nada/index.php/catalog/42458/download/46089/C-16_25062018.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S001 supplies Persons returned under each census language or mother-tongue category for India. Registered locator: Statement 1, printed pp. 5-12; Part A scheduled-language totals and named mother-tongue components. Registered temporal field: 2011. Caveat: Census language categories can aggregate distinct mother tongues; Hindi parent total overlaps its listed child categories and must not be summed with them. Counts are 2011 observations, not current estimates.
-
-### PM-S003
-
-Pakistan Bureau of Statistics. (2023a). *Table 11: Population by Mother Tongue, Sex and Rural/Urban, Census 2023* [official census table]. https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_11_national.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S003 supplies All-localities all-sexes persons by reported mother tongue for Pakistan. Registered locator: Table 11, national row, PDF p. 1. Registered temporal field: 2023. Caveat: Several labels are census aggregates (for example Pushto, Balochi, Kohistani); they are not automatically single edition targets.
-
-### PM-S004
-
-National Statistics Office, Nepal. (2021). *Languages in Nepal: National Population and Housing Census 2021 Thematic Report* [official census thematic report]. https://censusnepal.cbs.gov.np/results/files/result-folder/Language%20in%20Nepal.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S004 supplies Persons by reported mother tongue for Nepal. Registered locator: Annex 1, printed pp. 123-126. Registered temporal field: 2021. Caveat: Some census labels aggregate varieties; the Sign Language entry is a census mother-tongue response category rather than a full sign-language-use census.
-
-### PM-S005
-
-BPS-Statistics Indonesia. (2010). *Kewarganegaraan, Suku Bangsa, Agama, dan Bahasa Sehari-hari Penduduk Indonesia: Hasil Sensus Penduduk 2010* [official census publication]. https://www.bps.go.id/en/publication/2012/05/23/55eca38b7fe0830834605b35/nationality--ethnicity--religion--and-dailylanguage-of-indonesian-population.html
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S005 supplies Population aged 5 and over by language used daily at home for Indonesia. Registered locator: Table L4.1, printed p. 47 (PDF p. 55). Registered temporal field: 2010. Caveat: Home-use counts are not L1 totals. Several rows are broad language groups, including Batak and regional clusters; only individually named cells are retained here.
-
-*Local evidence status:* No local witness path or hash is registered; do not describe this source as locally hash-verified.
-
-### PM-S007
-
-Instituto Nacional de Estadística e Informática (INEI). (2017). *Peru: Perfil Sociodemográfico, Censos Nacionales 2017* [official census report]. https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1544/00TOMO_01.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S007 supplies Census population aged 3 and over by language or mother tongue learned in childhood for Peru. Registered locator: Cuadro 4, printed p. 618, total column. Registered temporal field: 2017. Caveat: Quechua and Aimara are aggregate census labels spanning varieties. The total column is used from a health-insurance cross-tabulation; it remains the national count for the stated age and language universe.
-
-### PM-S011
-
-Zimbabwe National Statistics Agency (ZIMSTAT). (2022). *Zimbabwe 2022 Population and Housing Census Report, Volume 1* [official census report]. https://www.zimstat.co.zw/wp-content/uploads/Demography/Census/2022_PHC_Report_27012023_Final.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S011 supplies Population by reported mother tongue for Zimbabwe. Registered locator: Table 2.17, printed p. 123. Registered temporal field: 2022. Caveat: Census labels do not resolve every dialect or orthographic choice. Sign Language is a census mother-tongue category, not a complete sign-language-use measure.
-
-### PM-S013
-
-Statistics Mauritius. (2022). *2022 Housing and Population Census, Volume II: Demographic and Fertility Characteristics* [official census report]. https://statsmauritius.govmu.org/Documents/Census_and_Surveys/Census2022/HPC_TR_Vol2_Demography_Yr22.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S013 supplies Resident population by language usually spoken at home for Mauritius. Registered locator: Table D9, printed p. 165, Republic of Mauritius row. Registered temporal field: 2022. Caveat: Chinese languages is an aggregate. Home language is not necessarily L1. The published table excludes Agalega and St Brandon as documented in the report.
-
-### PM-S014
-
-Stats NZ. (2023). *Place and ethnic group summaries: Total New Zealand population language comparator* [official census summary table]. https://tools.summaries.stats.govt.nz/ethnic-group/pacific-peoples-not-elsewhere-classified
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S014 supplies Persons who reported speaking each language; multiple-response census measure for New Zealand. Registered locator: Table 'Percentage of population that speak each language', Total New Zealand population, 2023 column. Registered temporal field: 2023. Caveat: Multiple responses are permitted and figures use fixed random rounding; rows are not L1 counts and must not be summed. Northern Chinese is a census category, not a single unqualified language target.
-
-*Local evidence status:* No local witness path or hash is registered; do not describe this source as locally hash-verified.
-
-### PM-S016
-
-Central Statistics Office Ireland. (2022). *Census of Population 2022 Summary Results: Education and Irish Language* [official census release]. https://www.cso.ie/en/releasesandpublications/ep/p-cpsr/censusofpopulation2022-summaryresults/educationandirishlanguage/
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S016 supplies Population aged 3 and over reporting ability to speak Irish; and daily use outside education for Ireland. Registered locator: Table 6.2 and Figure 6.4 text. Registered temporal field: 2022. Caveat: Ability and daily-use measures are not interchangeable; cells are separated and must not be summed.
-
-*Local evidence status:* No local witness path or hash is registered; do not describe this source as locally hash-verified.
-
-### PM-S020
-
-Central Statistical Agency of Ethiopia (now Ethiopian Statistical Service). (2007). *Population and Housing Census 2007: National Statistical Report* [official census statistical report]. https://ess.gov.et/wp-content/uploads/2007/09/Population-and-Housing-Census-2007-National_Statistical.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* PM-S020 supplies Population by mother tongue used with family members or guardians during childhood for Ethiopia. Registered locator: Table 3.2, printed pp. 91-93, Urban + Rural both sexes. Registered temporal field: 2007. Caveat: The observation is old but remains the latest Ethiopian national census. Several census labels, especially Guragiegna, aggregate distinct languages; counts are not current projections.
-
-### PM-S021
-
-BPS-Statistics Indonesia. (2022). *Jumlah Penduduk Berumur 5 Tahun ke Atas Menurut Wilayah, Jenis Kelamin, dan Kemampuan Berbahasa Indonesia, di INDONESIA* [Long Form Population Census 2020 table]. https://sensus.bps.go.id/topik/tabular/sp2022/196
-
-*Source type and time:* Official long-form census table; 2022 release/measure.
-
-*Source note:* PM-S021 supplies the total population aged five or older reported able to understand spoken Indonesian and produce Indonesian words intelligible to another person: 248,501,794 able and 5,177,554 unable, total 253,679,348. This is oral functional ability, not written literacy, home language, mother tongue, academic reading comfort, or demand for a particular curriculum. The model uses it only as the gross Bahasa Indonesia reach ceiling and applies written-access and non-overlap factors separately.
-
-### TH-S001
-
-National Statistical Office Thailand. (2010, September 1). *The 2010 Population and Housing Census (Whole Kingdom)* [official national census report]. https://catalogapi.nso.go.th/api/doc/department/D10/SD10_04/SD10_04_165_2.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* TH-S001 supplies Population by usual languages spoken at home for Thailand. Registered locator: Table 7, PDF pp. 98-99; census day described on PDF pp. 49-50. Registered temporal field: 2010-09-01. Caveat: The table mixes mutually exclusive Thai-only/Thai-plus-other/other-only strata with named other-language categories that can overlap the Thai-plus-other stratum. English labels contain several typographic or country-name substitutions. Counts are 2010 observations, not current projections; the report warns that independently rounded totals may differ slightly.
-
-### ZA-S001
-
-Statistics South Africa. (n.d.). *Census 2022 in Brief* [official national census report]. Retrieved August 25, 2026, from https://www.statssa.gov.za/publications/Census2022inBrief/Census2022inBriefJune2024.pdf
-
-*Authorship basis:* registered authority used as corporate author
-
-*Source note:* ZA-S001 supplies Population aged 1 year and older by language most often spoken in the household for South Africa. Registered locator: Table 3.8 (1)-(2), printed pp. 26-27; PDF pp. 34-35. Registered temporal field: 2024-06. Caveat: The measure is language most often spoken with other household members, not mother tongue, proficiency, literacy, or academic-language comfort. The table excludes Not applicable (638,736) and Unspecified (258,967). Census label 'Sign language' does not identify a signed-language variety.
-
-## Profile and orthography authorities
-
-### S-ACS
-
-U.S. Census Bureau. (n.d.). *Detailed Languages Spoken at Home and Ability to Speak English for the Population 5 Years and Over in the United States: 2017-2021* [official census workbook]. Retrieved August 25, 2026, from https://www2.census.gov/programs-surveys/demo/tables/language-use/2017/2017-2021-acs-lang-tables-nation.xlsx
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-ACS is profile/orthography authority for the interventions listed here. Exact registered evidence: Nation worksheet supplies the retained point estimates and 90% margins of error; universe is age 5+ language spoken at home. Authority level: primary national statistical authority. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-APW
-
-Dilzhe'e Apache Dictionary. (n.d.). *The Pronunciation and Spelling of Dilzhe'e Apache* [community dictionary orthography]. Retrieved August 25, 2026, from https://dilzhee.western-apache.org/Spelling
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-APW is profile/orthography authority for the interventions listed here. Exact registered evidence: Defines the dictionary spelling and its explicit changes from White Mountain and San Carlos Western Apache practice. Authority level: community language-resource authority. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-CH-GU
-
-Kumision i Fino' CHamoru yan i Fina'naguen i Historia yan i Lina'la' i Taotao Tano'. (n.d.). *Utugrafihan CHamoru Guahan* [official orthography]. Retrieved August 25, 2026, from https://kumisionchamoru.guam.gov/wp-content/uploads/2024/07/utugrafihan_chamoru_guahan.pdf
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-CH-GU is profile/orthography authority for the interventions listed here. Exact registered evidence: Complete adopted 2024 Guam CHamoru orthography. Authority level: Guam statutory language commission. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-CH-MP
-
-Inetnun Kutturan Natibun Marianas / Kkoor Aramasal Marianas. (n.d.). *Revised Chamorro-English Dictionary introduction* [community dictionary documentation]. Retrieved August 25, 2026, from https://natibunmarianas.org/dictionary-introduction/
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-CH-MP is profile/orthography authority for the interventions listed here. Exact registered evidence: States there are two standard orthographies and that all headwords use the official CNMI orthography adopted in 2010. Authority level: CNMI community language institution. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-CHO-MS
-
-Mississippi Band of Choctaw Indians. (n.d.). *Mississippi Band of Choctaw Indians 2023 Tribal Profile* [official tribal publication]. Retrieved August 25, 2026, from https://www.choctaw.org/wp-content/uploads/2024/01/2023-Tribal-Profile_v19-updated.pdf
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-CHO-MS is profile/orthography authority for the interventions listed here. Exact registered evidence: Describes the modern Mississippi Choctaw alphabet as a variant of the Byington alphabet and documents tribal language programming. Authority level: tribal government. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-CHO-OK
-
-Choctaw Nation of Oklahoma School of Choctaw Language. (n.d.). *Choctaw alphabet* [official tribal-language reference]. Retrieved August 25, 2026, from https://dictionary.choctawnation.com/alphabet/
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-CHO-OK is profile/orthography authority for the interventions listed here. Exact registered evidence: Defines the Choctaw Nation instructional alphabet. Authority level: tribal government language authority. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-DAKOTA-DIO
-
-Dakhota Iapi Okhodakichiye. (n.d.). *About Dakhota Iapi Okhodakichiye* [community language institution]. Retrieved August 25, 2026, from https://dakhota.org/about-dio/
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-DAKOTA-DIO is profile/orthography authority for the interventions listed here. Exact registered evidence: Delimits the organization to Eastern/Santee-Sisseton Dakota language work. Authority level: community authority. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-DAKOTA-SWC
-
-Sisseton Wahpeton College. (n.d.). *Dakota Dictionary introduction* [tribal-college dictionary documentation]. Retrieved August 25, 2026, from https://dakotadictionary.hartman-technology.com/uploads/content/Introduction.pdf
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-DAKOTA-SWC is profile/orthography authority for the interventions listed here. Exact registered evidence: Documents the University of Minnesota orthography used at Sisseton Wahpeton College and contrasts another system. Authority level: tribal college. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-GARIFUNA-ALPH
-
-Honduras Secretaria de las Culturas las Artes y los Patrimonios. (n.d.). *Alfabeto Garifuna* [official alphabet]. Retrieved August 25, 2026, from https://arc.secapph.gob.hn/wp-content/uploads/2025/10/Alfabeto-Garifuna.pdf
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-GARIFUNA-ALPH is profile/orthography authority for the interventions listed here. Exact registered evidence: Publishes the alphabet used for the Honduras educational profile. Authority level: national government authority. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-GARIFUNA-HN
-
-Honduras Secretaria de las Culturas las Artes y los Patrimonios. (n.d.). *Unidad de Educacion Plurilingue y Multicultural* [official government education page]. Retrieved August 25, 2026, from https://arc.secapph.gob.hn/direccion-general-de-las-culturas-y-los-patrimonios/unidad-de-educacion-plurilingue-y-multicultural
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-GARIFUNA-HN is profile/orthography authority for the interventions listed here. Exact registered evidence: Documents government production of Garifuna educational texts and links the official alphabet. Authority level: national government authority. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-HOPI
-
-Hopi Dictionary Project. (n.d.). *Learn Hopi / Third Mesa dictionary materials* [institutional teaching and dictionary resource]. Retrieved August 25, 2026, from https://hopidictionary.com/wp-content/uploads/2024/10/learnhopi.pdf
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-HOPI is profile/orthography authority for the interventions listed here. Exact registered evidence: Provides a reproducible Third Mesa-oriented Hopi writing and teaching profile. Authority level: community and University of Arizona project. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-IANA
-
-Internet Assigned Numbers Authority. (n.d.). *Language Subtag Registry* [standards registry]. Retrieved August 25, 2026, from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-IANA is profile/orthography authority for the interventions listed here. Exact registered evidence: Validates emitted language/script/region components and identifies ik as a macrolanguage with esi and esk members. Authority level: primary international registry. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-INUPIAQ
-
-Alaska Native Language Archive / University of Alaska Fairbanks. (n.d.). *Guide to the Inupiaq Language Collection* [public-university archive guide]. Retrieved August 25, 2026, from https://www.uaf.edu/anla/collections/inupiaq/
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-INUPIAQ is profile/orthography authority for the interventions listed here. Exact registered evidence: Identifies two major groups and four dialect types and records an accepted 1970s orthography. Authority level: public university. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-INUPIAQ-NS
-
-University of Alaska Fairbanks Documenting Alaskan and Neighboring Languages. (n.d.). *North Slope Inupiaq lexicon* [public-university lexicon record]. Retrieved August 25, 2026, from https://www.uaf.edu/danl/project-updates/edna-maclean/
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-INUPIAQ-NS is profile/orthography authority for the interventions listed here. Exact registered evidence: Identifies the completed lexicon as the definitive dictionary for North Slope Inupiaq. Authority level: public university. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-LKT
-
-Lakota Language Consortium. (n.d.). *Lakota Stories and Lakota Level 1 textbook* [institutional teaching and reader resources]. Retrieved August 25, 2026, from https://lakhota.org/product/lakota-stories-collected-by-ella-deloria/
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-LKT is profile/orthography authority for the interventions listed here. Exact registered evidence: Defines a consistent contemporary phonemic orthography used in the reader and a pedagogically consistent textbook series. Authority level: language-teaching institution. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-ODAWA-DICT
-
-Algonquian Dictionaries Project. (n.d.). *Nishnaabemwin Odawa and Eastern Ojibwe online dictionary* [institutional dictionary]. Retrieved August 25, 2026, from https://dictionary.nishnaabemwin.atlas-ling.ca/
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-ODAWA-DICT is profile/orthography authority for the interventions listed here. Exact registered evidence: Identifies an exact Odawa/Eastern Ojibwe dictionary data edition suitable as a named production profile. Authority level: community and academic dictionary project. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-ODAWA-TRIBAL
-
-Adawe Cultural Center / Ottawa Tribe of Oklahoma. (n.d.). *Language resources* [official tribal cultural resource]. Retrieved August 25, 2026, from https://www.heritage.ottawatribe.gov/language
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-ODAWA-TRIBAL is profile/orthography authority for the interventions listed here. Exact registered evidence: Corroborates tribal use and recommendation of Double-Vowel language resources. Authority level: tribal cultural institution. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-OJ
-
-University of Minnesota Ojibwe People's Dictionary. (n.d.). *About the Ojibwe language* [institutional dictionary documentation]. Retrieved August 25, 2026, from https://ojibwe.lib.umn.edu/about-ojibwe-language
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-OJ is profile/orthography authority for the interventions listed here. Exact registered evidence: Names the Central Southwestern variety and states that the dictionary uses the Double-Vowel system. Authority level: public-university and community consortium. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-PAP-AW
-
-Government of Aruba. (n.d.). *First Bible in Papiamento in Aruba's official spelling* [official government language page]. Retrieved August 25, 2026, from https://www.gobierno.aw/en/first-bible-in-papiamento-in-arubas-official-spelling
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-PAP-AW is profile/orthography authority for the interventions listed here. Exact registered evidence: Explicitly distinguishes Aruba's official spelling from Curaçao's existing Papiamentu edition. Authority level: territorial government authority. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-PAP-CW
-
-Government of Curaçao. (n.d.). *Landsbesluit schrijfwijze Papiamentu en Nederlands* [official spelling decree]. Retrieved August 25, 2026, from https://gobiernu.cw/wp-content/uploads/2025/12/196-GT.-Lb-schrijfwijze-Papiamentu-en-Nederlands.pdf
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-PAP-CW is profile/orthography authority for the interventions listed here. Exact registered evidence: Establishes the official Papiamentu spelling and wordlist used in Curaçao; the same phonological tradition is the statutory Bonaire baseline. Authority level: territorial government authority. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-PAP-FACT
-
-United Kingdom Foreign Commonwealth and Development Office. (n.d.). *Kingdom of the Netherlands Toponymic Factfile* [official government factfile]. Retrieved August 25, 2026, from https://assets.publishing.service.gov.uk/media/68419e2efa0289a17a3e879c/Kingdom_of_the_Netherlands_Toponymic_Factfile.pdf
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-PAP-FACT is profile/orthography authority for the interventions listed here. Exact registered evidence: Distinguishes Aruba Papiamento from Curaçao/Bonaire Papiamentu usage. Authority level: government institutional source. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-PDC
-
-Deitsh Books. (n.d.). *Pennsylvania German spelling-system resources* [community publishing resource]. Retrieved August 25, 2026, from https://www.deitshbooks.com/tools/books/grammer/
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-PDC is profile/orthography authority for the interventions listed here. Exact registered evidence: States that two written spelling systems exist and identifies the English-oriented system used in named books. Authority level: community language publisher. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
-
-### S-YIVO
-
-YIVO Institute for Jewish Research. (n.d.). *Basic Facts about Yiddish* [institutional language reference]. Retrieved August 25, 2026, from https://www.yivo.org/cimages/basic_facts_about_yiddish_2014.pdf
-
-*Authorship basis:* registered institution used as corporate-author candidate; no personal creator or publication-date field is registered
-
-*Source note:* S-YIVO is profile/orthography authority for the interventions listed here. Exact registered evidence: Section on Standard Yiddish defines the YIVO literary standard while delimiting it from any single spoken dialect. Authority level: major cultural and scholarly institution. The register supplies no publication date; n.d. and the access date are retained rather than inferred.
+| 1 | SHC-BN | Bangla shared-source caregiver/ECE and Indian TVET residuals | bn-Beng-BD; bn-Beng-IN | Bangladesh; West Bengal and other Indian Bengali contexts | Bangla, Bangladesh: 168,419,331 (interval 168,410,840–168,427,822) [mother_tongue_or_first_language; 2022 population / 2023 survey] \| Bengali, India: 97,237,669 [mother_tongue_or_first_language; 2011] \| Bengali, India: 96,177,835 [same_name_mother_tongue_component; 2011] | Bangladesh caregiver/pre-primary; Indian Bengali secondary/TVET transition | Produce only the residual Bangladesh 24-week caregiver/ECE component and the Indian Bengali secondary/TVET workshop-mathematics, safety, coding, finance and entrepreneurship bridge. Link the Bangladesh primary progression to NAT-001 grades 2–5 recovery; do not recommission or count that recovery component here. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view mother_tongue_or_first_language\|Bangladesh residents represented by the official 2023 SEDS mother-tongue estimate\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 2 | NAT-003 | Telugu applied STEM and tertiary-transition package | te-Telu-IN with Andhra Pradesh and Telangana overlays | Andhra Pradesh and Telangana, India | Telugu: 81,127,740 [mother_tongue_or_first_language; 2011] \| Telugu: 80,912,459 [same_name_mother_tongue_component; 2011] | secondary/TVET; first-year tertiary; professional continuing education | Produce applied secondary/TVET/first-year STEM, coding, financial safety and entrepreneurship with Telugu–English terminology and offline simulations. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 3 | NAT-010 | Odia | or-Orya-IN | Odisha India | Odia: 37,521,324 [mother_tongue_or_first_language; 2011] \| Odia: 34,059,266 [same_name_mother_tongue_component; 2011] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 4 | NAT-125 | Bhojpuri (India) | bho-Deva-IN | India | Bhojpuri, India: 50,579,447 [mother_tongue_or_first_language; 2011] | foundational numeracy through algebra | Create a declared versioned Devanagari Bhojpuri editorial register and a teacher-independent foundational-numeracy-through-algebra sequence with diagnostics, full worked answers, phone/offline delivery, audio, and Bhojpuri-to-Hindi bridge terminology. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view mother_tongue_or_first_language\|regional_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 5 | SHC-HAUSA | Hausa boko Nigeria–Niger package with optional established Ajami layers | ha-Latn-NG; ha-Latn-NE; optional locally established ha-Arab layers | Nigeria and Niger; cross-border communities | Hausa Boko country outputs: 58,000,000 [published_or_derived_speaker_estimate; 2022] \| Hausa Boko country outputs: 94,000,000 [published_or_derived_speaker_estimate; 2022] | foundational literacy/numeracy; secondary/TVET; practical professional learning | Build boko structured literacy/numeracy with diagnostics and Hausa↔English in Nigeria / Hausa↔French in Niger; add print, radio, IVR and optional established Ajami parallel text/audio. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 2 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view mother_tongue_or_first_language\|Unspecified global L1 universe\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 6 | NAT-082 | Bambara | bm-Latn-ML | Mali | Mali Bamanankan Latin-script edition: 9,551,561 [census_mother_tongue_persons_age_3_plus; 2022] | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|unspecified_source_stratum\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 7 | NAT-124 | Standard Hindi first-year and research-methods bridge | hi-Deva-IN | India | Standard Hindi, India: 322,230,097 [same_name_mother_tongue_component; 2011] | first-year tertiary through active researcher | Produce the Hindi first-year physics, chemistry, biology, statistics, computing, economics and management bridges with research design, R/Python and open-science methods. NAT-124 owns this exact Hindi component; IL-HU reuses its semantic/formula core for two separate Urdu locale outputs without recommissioning Hindi. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view mother_tongue_or_first_language\|same_name_mother_tongue_component_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 8 | EXP-026 | Peru Ashaninka Latin-script edition | cni-Latn-PE | Peru | Ashaninka: 73,567 [census_language_learned_in_childhood_age3plus_persons; 2017] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 9 | GLB-027 | Russian learned standard | ru-Cyrl-RU; localized successor-state overlays | Europe/Central Asia | Russian learned standard: 134,319,233 [functional_language_ability_or_estimate; 2021-10-01] \| Russian learned standard: 132,317,159 [home_or_usual_language_use; 2021-10-01] | professional/postgraduate/research | Open, accessible, no-login/offline statistics/causal inference, reproducible Python/R, research integrity, open licensing/data stewardship and AI evidence evaluation with applied tracks. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view home_or_usual_language_use\|Respondents answering language-use question\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 10 | NAT-058 | Dari | prs-Arab-AF | Afghanistan and displaced cohorts | Dari: 30,083,114 [derived_2020_total_speakers_from_official_secondary_share_and_world_bank_denominator; 2020 estimate; republished in official report 2023] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view institutional_speaker_estimate\|total_language_speakers_L1_plus_L2_nonexclusive\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 11 | GLB-024 | Latin American Spanish localized core | es-419 with country overlays | Americas | Latin American Spanish localized core: 44,867,699 (interval 44,724,507–45,010,891) [home_or_usual_language_use; 2024] \| Latin American Spanish localized core: 519,115,258 [published_or_derived_speaker_estimate; 2025] | grades 3-9 | Teacher-independent mastery recovery in literacy, numeracy and practical science with health, household finance, digital safety and climate; diagnostics and full answers. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view home_or_usual_language_use\|United States residents age 5+\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 12 | GLB-025 | Brazilian Portuguese | pt-BR | Americas | Brazilian Portuguese: >=265,000,000 [published_or_derived_speaker_estimate; 2026] \| Brazilian Portuguese: 203,080,756 [territory_all_residents_ceiling; 2022] | adult/vocational/professional/research | No-login/offline, semantic, teacher-independent mastery and transition bundles using lawfully reusable Brazilian sources. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view institutional_speaker_estimate\|Unspecified global speaker universe\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 13 | IL-PDT | Persian–Dari–Tajik shared-source package | fa-Arab-IR; prs-Arab-AF; tg-Cyrl-TJ | Iran Afghanistan Tajikistan and displaced cells separate | Iranian Persian: 79,926,270 [territory_all_residents_ceiling; 2016] | stage-specific named outputs; exact first stage follows the component needs audit | Reuse one semantic source for separate Iranian Persian, Afghan Dari and Tajik Cyrillic tertiary/professional paths; keep scripts, terminology and national curricula distinct. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view territory_all_residents_ceiling\|Iran residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 14 | NAT-028 | Vietnamese TVET–university and research-method spine | vi-Latn-VN | Vietnam | Vietnamese: 89,000,000 [published_or_derived_speaker_estimate; 2016 publication; population estimate vintage not stated] | secondary/TVET; undergraduate; postgraduate and continuing professional | Build five coherent courses: data/programming/AI/cybersecurity; climate-smart rice/aquaculture/green skills; public health/evidence appraisal; MSME accounting/digital finance; applied biology/chemistry with low-cost labs. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 2 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view institutional_speaker_estimate\|Vietnam_total_Vietnamese_speakers_L1_L2_unspecified\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 15 | IL-AR | Modern Standard Arabic core with named spoken-language scaffolds | arb-Arab core; Egyptian, Levantine, Iraqi, Gulf, Maghrebi, Yemeni, Sudanese and Hassaniya layers | Arabic-using countries, separately localized | Modern Standard Arabic plus locale scaffolds: >=400,000,000 [published_or_derived_speaker_estimate; current UNESCO page] \| Egyptian Arabic scaffold: 94,798,827 [territory_all_residents_ceiling; 2017] | early literacy; emergency education; secondary/TVET; professional and research methods | In parallel, build fully vowelled leveled ECE–grade 3 MSA with local-spoken narration and offline accelerated literacy/science/health/WASH packages for crisis-affected country profiles. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 3 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view territory_all_residents_ceiling\|Egypt residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 16 | NAT-027 | Sinhala | si-Sinh-LK | Sri Lanka | Sinhala: 14,948,168 [derived_cldr_territory_functional_language_users; 2026-03-17 CLDR release; component estimate year not stated] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view territory_all_residents_ceiling\|functional_literate_language_users_L1_or_later_language\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 17 | GLB-044 | Korean, Republic of Korea | ko-Kore-KR | Eastern Asia | Korean, Republic of Korea: 51,829,136 [territory_all_residents_ceiling; 2020] | adult/professional and research continuity | Thirty-six short offline life-capability modules: health, fraud/credit/SME finance, agriculture/climate, practical science, computing and AI-output verification. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view territory_all_residents_ceiling\|Republic of Korea census population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 18 | EXP-028 | Peru Shipibo-Konibo Latin-script edition | shp-Latn-PE | Peru | Shipibo-Konibo: 34,152 [census_language_learned_in_childhood_age3plus_persons; 2017] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 19 | SHC-SWAHILI | Kiswahili DRC grades 1–3 and Uganda P4 package | swc-Latn-CD; swh-Latn-UG | Named Kiswahili-using DRC regions (grades 1–3); Uganda (P4 Kiswahili L2) | Uganda territory population: 45,905,417 [territory_all_residents_ceiling; 2024] | DRC grades 1–3 literacy/numeracy and Uganda P4 Kiswahili-L2 support | Reuse/adapt the DRC ministry's listed Kiswahili grades 1–3 and literacy materials where rights permit; complete missing worked feedback, science/health, semantic/offline and regional-variety components with French bridges. Add separate Uganda P4 L2 self-study scripts and audio; do not duplicate existing schoolbooks. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 4 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view territory_all_residents_ceiling\|Uganda residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 20 | NAT-047 | Kazakh | kk-Cyrl-KZ | Kazakhstan | Kazakh: 13,380,107 [census_native_language_of_own_nationality_persons; 2021] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view other_source_defined_person_count\|direct_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 21 | NAT-004 | Indian Tamil | ta-Taml-IN | India | Tamil, India: 69,026,881 [mother_tongue_or_first_language; 2011] \| Tamil, India: 68,888,839 [same_name_mother_tongue_component; 2011] | first-year tertiary | Tamil-English first-year STEM, computing and management with worked problems, offline simulations and research methods. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 3 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 22 | NAT-065 | Amharic | am-Ethi-ET | Ethiopia | Amharic: 56,900,000 [education_cohort; 2018 estimate] \| Amharic: 21,634,396 [mother_tongue_or_first_language; 2007] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|large_national_mother_tongue\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 23 | NAT-035 | Ilocano | ilo-Latn-PH | Philippines | Iloko: 7,098,503 [CLEAR_normalized_main_language_weighted_persons_from_IPUMS_2010_census_extract; 2010-12-31] | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view other_source_defined_person_count\|national_main_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 24 | NAT-046 | Uzbek | uz-Latn-UZ | Uzbekistan | Uzbekistan Uzbek Latin-script edition: 35,700,000 (interval 35,650,000–35,749,999) [preliminary_census_mother_tongue_persons_rounded; 2026] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|unspecified_source_stratum\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 25 | NAT-038 | Javanese | jv-Latn-ID | Indonesia | Javanese: 68,044,660 [home_or_usual_language_use; 2010] | primary_to_secondary | Oral/bilingual Javanese-to-Bahasa number-sense through prealgebra/algebra scaffold with audio and deliberate terminology transfer | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view home_or_usual_language_use\|large_regional_home_language\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 26 | EXP-004 | India Maithili Devanagari edition | mai-Deva-IN | India | Maithili: 13,353,347 [census_same_name_mother_tongue_component_persons; 2011] | secondary through first-year tertiary | Produce the registered SB-1 Secondary data bridge for this exact named output: MV-1 plus Introductory Statistics 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 27 | NAT-030 | Burmese | my-Mymr-MM | Myanmar and displaced cohorts | Burmese: 36,817,344 [functional_language_ability_or_estimate; 2026-03-17 CLDR release; component estimate year not stated] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view functional_language_ability_or_estimate\|functional_literate_language_users_L1_or_later_language\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 28 | NAT-044 | Fataluku | ddg-Latn-TL | Timor-Leste | Fataluku: 41,500 [census_mother_tongue_persons; 2015] | upper-secondary through undergraduate formal reasoning | Produce the registered FR-1 Formal-reasoning foundation for this exact named output: methods plus sets-functions-relations plus propositional; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 29 | NAT-064 | Kenyan Swahili | sw-Latn-KE | Kenya | Standard Kiswahili with country layers: 47,564,296 [territory_all_residents_ceiling; 2019] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view territory_all_residents_ceiling\|Kenya residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 30 | NAT-014 | Eastern Punjabi | pa-Guru-IN | Punjab India | Punjabi, India: 33,124,726 [mother_tongue_or_first_language; 2011] \| Punjabi, India: 31,144,095 [same_name_mother_tongue_component; 2011] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 31 | NAT-040 | Malaysian Malay formal reasoning via Indonesian source reuse | ms-Latn-MY | Malaysia | Malaysian Malay: 32,400,000 (interval 32,350,000–32,449,999) [territory_all_residents_ceiling; 2020] | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core, 210 source units covering FR-1 plus first-order logic, as a Malaysian Malay locale adaptation of the completed 722/722 Indonesian Open Logic corpus. NAT-040 owns this bounded shared-source action; IL-IDMS is its architecture alias, not another commission. Retain diagnostics, complete worked answers, editable source and offline HTML/MathML/PDF. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view territory_all_residents_ceiling\|Malaysia residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 32 | NAT-121 | Bahasa Indonesia Evidence-to-Practice and Research Core | id-Latn-ID | Indonesia | Bahasa Indonesia: 248,501,794 [functional_language_ability_or_estimate; 2022] | undergraduate; professional/continuing; postgraduate and active researcher | Add six nonduplicative courses: research design/open science; applied statistics and causal reasoning in R/Python; reproducible data/AI/cybersecurity; evidence appraisal; public health/One Health; climate-smart agriculture/disaster risk. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 3 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view functional_language_ability_or_estimate\|population_age_5_plus\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 33 | NAT-049 | Tajik | tg-Cyrl-TJ | Tajikistan | Tajik: 10,394,100 [derived_cldr_territory_functional_language_users; 2026-03-17 CLDR release; component estimate year not stated] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view territory_all_residents_ceiling\|functional_literate_language_users_L1_or_later_language\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 34 | NAT-122 | Mainland Simplified Chinese accessibility and frontier residual | zh-Hans-CN | Mainland China | Standard Written Chinese, Mainland Simplified: 1,411,778,724 [territory_all_residents_ceiling; 2020-11-01] | secondary through undergraduate; accessibility; professional and research frontier | Finish the exact 25-unit Calculus I residual (CALC1-0031 through CALC1-0055), then Calculus II/III and Statistics; produce semantic HTML/MathML, accessible EPUB, tagged-PDF, audio/transcript and low-bandwidth offline derivatives for completed corpora. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 3 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view territory_all_residents_ceiling\|national written-standard potential population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 35 | NAT-006 | Marathi | mr-Deva-IN | Maharashtra India | Marathi: 83,026,680 [mother_tongue_or_first_language; 2011] \| Marathi: 82,801,140 [same_name_mother_tongue_component; 2011] | secondary/TVET/first-year | Applied science, workshop practice, computing, finance and entrepreneurship. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 3 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 36 | NAT-036 | Hiligaynon | hil-Latn-PH | Philippines | Hiligaynon: 6,073,883 [CLEAR_normalized_main_language_weighted_persons_from_IPUMS_2010_census_extract; 2010-12-31] | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view other_source_defined_person_count\|national_main_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 37 | NAT-123 | Japanese (Japan) | ja-Jpan-JP | Japan | Japanese, Japan: 126,146,099 [territory_all_residents_ceiling; 2020-10-01] | accessible self-study, multilingual academic bridge and postgraduate/research frontier | Build a no-login, download-once Japanese Open Mathematics Access and Research Bridge: curriculum-aligned diagnostics and prerequisite repair, complete solutions, accessible semantic HTML/EPUB/MathML, and easy-Japanese/furigana plus multilingual terminology for non-attending pupils, adult re-entry learners and pupils requiring Japanese-language instruction. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 4 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view territory_all_residents_ceiling\|national written-standard potential population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 38 | NAT-045 | Baikeno | bkx-Latn-TL | Timor-Leste | unresolved—no comparable source-defined population count | upper-secondary through undergraduate formal reasoning | Produce the registered FR-1 Formal-reasoning foundation for this exact named output: methods plus sets-functions-relations plus propositional; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 39 | NAT-063 | Tanzanian Swahili | sw-Latn-TZ | Tanzania | Standard Kiswahili with country layers: 61,741,120 [territory_all_residents_ceiling; 2022] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view territory_all_residents_ceiling\|Tanzania residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 40 | EXP-005 | Indonesia Madurese Latin-script edition | mad-Latn-ID | Indonesia | Madurese: 7,743,533 [daily_language_at_home_age5plus_persons; 2010] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 41 | NAT-072 | Nigerian Pidgin | pcm-Latn-NG | Nigeria | Nigerian Pidgin / Naijá: 80,000,000–112,000,000 [published_or_derived_speaker_estimate; 2024] | adult/community practical numeracy with oral access; written pathway separately scoped | Produce Naija/Nigerian Pidgin audio and basic-phone practical numeracy modules with spoken worked examples, money/measurement/data tasks and optional aligned Latin-script transcripts; do not presume standardized written readership. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view other_source_defined_person_count\|Nigeria oral L1/L2 user universe\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 42 | NAT-034 | Cebuano | ceb-Latn-PH | Philippines | Cebuano: 20,697,364 [CLEAR_normalized_main_language_weighted_persons_from_IPUMS_2010_census_extract; 2010-12-31] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view other_source_defined_person_count\|national_main_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 43 | NAT-005 | Sri Lankan Tamil | ta-Taml-LK | Sri Lanka | Tamil: 3,297,390 [derived_cldr_territory_functional_language_users; 2026-03-17 CLDR release; component estimate year not stated] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view territory_all_residents_ceiling\|functional_literate_language_users_L1_or_later_language\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 44 | NAT-029 | Thai | th-Thai-TH | Thailand | Thai: 64,080,191 [derived_union_of_census_language_strata; 2010-09-01] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view other_source_defined_person_count\|usual_home_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 45 | NAT-039 | Sundanese | su-Latn-ID | Indonesia | Sundanese: 32,412,752 [daily_language_at_home_age5plus_persons; 2010] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 46 | NAT-037 | Waray | war-Latn-PH | Philippines | Waray: 2,694,135 [CLEAR_normalized_main_language_weighted_persons_from_IPUMS_2010_census_extract; 2010-12-31] | upper-secondary through undergraduate formal reasoning | Produce the registered FR-1 Formal-reasoning foundation for this exact named output: methods plus sets-functions-relations plus propositional; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view other_source_defined_person_count\|national_main_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 47 | NAT-015 | Western Punjabi | pnb-Arab-PK | Pakistan | Punjabi: 88,915,544 [census_mother_tongue_persons; 2023] | secondary_to_undergraduate | Shahmukhi Punjabi-to-Urdu/English algebra, functions, trigonometry, precalculus and proof bridge | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|regional_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 48 | NAT-102 | Inuinnaqtun Roman profile | ikt-Latn-CA | Canada exact region pending | unresolved—no comparable source-defined population count | upper-secondary through undergraduate formal reasoning | Produce the registered FR-1 Formal-reasoning foundation for this exact named output: methods plus sets-functions-relations plus propositional; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 49 | NAT-056 | Kurmanji Kurdish | kmr-Latn-TR | Turkey Syria and separately modeled diaspora | unresolved—no comparable source-defined population count | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 50 | EXP-006 | Indonesia Minangkabau Latin-script edition | min-Latn-ID | Indonesia | Minangkabau: 4,232,226 [daily_language_at_home_age5plus_persons; 2010] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 51 | NAT-001 | Bangladesh Bangla grades 2–5 mastery-recovery package | bn-Beng-BD | Bangladesh | Bangla, Bangladesh: 168,419,331 (interval 168,410,840–168,427,822) [mother_tongue_or_first_language; 2022 population / 2023 survey] | primary grades 2–5 mastery recovery | Produce the Bangladesh Bangla 24-week grades 2–5 mastery-recovery component: number sense, operations, place value, fractions, measurement and patterns, with placement diagnostics, complete worked answers, audio and offline practice. NAT-001 is its sole commission owner; SHC-BN links to this component instead of translating it again. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 2 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view mother_tongue_or_first_language\|Bangladesh residents represented by the official 2023 SEDS mother-tongue estimate\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 52 | NAT-033 | Filipino–English STEM–Kabuhayan package | fil-Latn-PH with replaceable home-language audio/glossary tracks | Philippines | Filipino, Philippines: 109,035,343 [territory_all_residents_ceiling; 2020-05-01] | grades 7–12; Alternative Learning System; TVET; first-year tertiary | Produce 120 Filipino–English micro-lessons in health, personal finance/SME management, agriculture/climate/disaster, core science, computing/data/AI and cybersecurity for grades 7–12, ALS and TESDA. | literature_backed_high_reach_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 4 is diagnostic only (planning inference is not measurement); package-evidence policy tier stage_specific; least-dispatched compatible typed view territory_all_residents_ceiling\|Philippines residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 53 | NAT-032 | Lao | lo-Laoo-LA | Laos | Lao: 5,487,956 [derived_cldr_territory_functional_language_users; 2026-03-17 CLDR release; component estimate year not stated] | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view territory_all_residents_ceiling\|functional_literate_language_users_L1_or_later_language\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 54 | NAT-018 | Sindhi | sd-Arab-PK | Pakistan | Sindhi, Pakistan: 34,401,564 [mother_tongue_or_first_language; 2023] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|regional_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 55 | NAT-069 | Hausa | ha-Latn-NG | Nigeria and separately tagged cross-border cells | unresolved—no comparable source-defined population count | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 56 | EXP-007 | Indonesia Banjar Latin-script edition | bjn-Latn-ID | Indonesia | Banjar: 3,651,626 [daily_language_at_home_age5plus_persons; 2010] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 57 | IL-HU | Hindi–Urdu shared-core architecture: two Urdu residual outputs | ur-Aran-IN; ur-Aran-PK | Indian and Pakistani Urdu cohorts; Hindi is a separately owned source-reuse component | Urdu, Pakistan: 22,249,307 [mother_tongue_or_first_language; 2023] \| Urdu, India: 50,772,631 [mother_tongue_or_first_language; 2011] \| Urdu, India: 50,725,762 [same_name_mother_tongue_component; 2011] | first-year tertiary; professional/continuing; research-methods bridge | Produce two separate Urdu first-year disciplinary and research-methods bridges, ur-Aran-IN and ur-Aran-PK, using the NAT-124 Hindi/source semantic, formula and exercise core. Include physics, chemistry, biology, statistics, computing, economics, management, research design and R/Python with distinct India/Pakistan examples. Hindi production and Hindi beneficiaries are excluded from this residual action. | source_informed_provisional_urdu_stage_need | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 3 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 58 | NAT-103 | Greenlandic | kl-Latn-GL | Greenland | unresolved—no comparable source-defined population count | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 59 | NAT-019 | Saraiki | skr-Arab-PK | Pakistan | Lahnda-labelled recall universe: 28,849,579 [mother_tongue_or_first_language; 2023] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|regional_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 60 | NAT-050 | Mongolian | mn-Cyrl-MN | Mongolia | Mongolian: 3,051,962 [derived_cldr_territory_functional_language_users; 2026-03-17 CLDR release; component estimate year not stated] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view territory_all_residents_ceiling\|functional_literate_language_users_L1_or_later_language\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 61 | NAT-070 | Yoruba | yo-Latn-NG | Nigeria and diaspora | unresolved—no comparable source-defined population count | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 62 | NAT-002 | Indian Bengali | bn-Beng-IN | India | Bengali, India: 97,237,669 [mother_tongue_or_first_language; 2011] \| Bengali, India: 96,177,835 [same_name_mother_tongue_component; 2011] | primary | Bangla Grades 3-8 arithmetic/fractions-to-algebra catch-up with placement tests, short mastery units and full answers | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 63 | EXP-008 | Indonesia Sasak Latin-script edition | sas-Latn-ID | Indonesia | Sasak: 2,691,127 [daily_language_at_home_age5plus_persons; 2010] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 64 | NAT-007 | Gujarati | gu-Gujr-IN | Gujarat India | Gujarati: 55,492,554 [mother_tongue_or_first_language; 2011] \| Gujarati: 55,036,204 [same_name_mother_tongue_component; 2011] | primary | Gujarati Grades 2-6 diagnostic remediation in place value, operations, fractions and proportional reasoning | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 65 | NAT-013 | Indian Urdu | ur-Arab-IN | India | Urdu, India: 50,772,631 [mother_tongue_or_first_language; 2011] \| Urdu, India: 50,725,762 [same_name_mother_tongue_component; 2011] | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 66 | EXP-009 | Indonesia Acehnese Latin-script edition | ace-Latn-ID | Indonesia | Acehnese: 2,550,055 [daily_language_at_home_age5plus_persons; 2010] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 67 | NAT-008 | Kannada | kn-Knda-IN | Karnataka India | Kannada: 43,706,512 [mother_tongue_or_first_language; 2011] \| Kannada: 43,506,272 [same_name_mother_tongue_component; 2011] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 68 | NAT-105 | Maori | mi-Latn-NZ | New Zealand | Maori: 213,849 (interval 213,847–213,851) [census_languages_spoken_multiple_response_persons; 2023] | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 2 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 69 | NAT-009 | Malayalam | ml-Mlym-IN | Kerala India | Malayalam: 34,838,819 [mother_tongue_or_first_language; 2011] \| Malayalam: 34,776,533 [same_name_mother_tongue_component; 2011] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 70 | EXP-010 | Indonesia Betawi Latin-script edition | bew-Latn-ID | Indonesia | Betawi: 2,244,648 [daily_language_at_home_age5plus_persons; 2010] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 71 | NAT-012 | Pakistani Urdu | ur-Arab-PK | Pakistan | Urdu, Pakistan: 22,249,307 [mother_tongue_or_first_language; 2023] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view mother_tongue_or_first_language\|national_language_population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 72 | NAT-017 | Pakistani Pashto | ps-Arab-PK | Pakistan | Pashto, Pakistan and Afghanistan profiles: 43,633,946 [mother_tongue_or_first_language; 2023] | target and learner-cohort resolution; curriculum stage remains provisional | First resolve the exact variety, script, orthography and learner locale using the registered source/profile evidence; retain any broader census count as a ceiling only. Then scope the appropriate registered curriculum package; this is a bounded target-resolution commission, not authorization to translate into a fabricated common standard. | profile_resolution_action_local_need_unresolved | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view mother_tongue_or_first_language\|regional_language_umbrella\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 73 | EXP-011 | Indonesia Nias Latin-script edition | nia-Latn-ID | Indonesia | Nias: 747,168 [daily_language_at_home_age5plus_persons; 2010] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 74 | GLB-028 | German, Germany | de-Latn-DE | Europe | German, Germany: 63,433,000 [home_or_usual_language_use; 2024] \| German, Germany: 77,847,000 [home_or_usual_language_use; 2024] | target/profile resolution before stage-specific production | Only exact open/accessibility/frontier residuals; do not use for Germanic minority coverage. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view home_or_usual_language_use\|Germany private-household population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 75 | GLB-029 | Italian, Italy | it-Latn-IT | Europe | Italian, Italy: 47,611,000 [home_or_usual_language_use; 2024] | target/profile resolution before stage-specific production | Audit only exact open/accessibility/professional/frontier residuals. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view home_or_usual_language_use\|Italy resident population age 6+\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 76 | EXP-013 | Ethiopia Somali Latin-script edition | so-Latn-ET | Ethiopia | Somali: 4,609,274 [census_mother_tongue_persons; 2007] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 77 | GLB-053 | Putonghua, Mainland spoken standard | cmn-Hans-CN for aligned text/audio; cmn-CN for speech-only metadata | Eastern Asia | Putonghua, Mainland spoken standard: 1,139,587,786 (interval 1,139,517,198–1,139,658,374) [functional_language_ability_or_estimate; 2020 census and 2020 survey] \| Putonghua, Mainland spoken standard: 1,411,778,724 [territory_all_residents_ceiling; 2020-11-01] | target/profile resolution before stage-specific production | Register spoken/audio outputs separately, preserve text/audio alignment, and award no direct written-reader or Sinitic-variety reach from this profile. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view functional_language_ability_or_estimate\|Mainland residents under a cross-source communication-prevalence sensitivity\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 78 | NAT-108 | Bislama | bi-Latn-VU | Vanuatu | unresolved—no comparable source-defined population count | upper-secondary through undergraduate formal reasoning | Produce the registered FR-1 Formal-reasoning foundation for this exact named output: methods plus sets-functions-relations plus propositional; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 79 | GLB-026 | Global/French regional localized standards | fr-Latn with country overlays | Global | Global/French regional localized standards: 348,000,000 [functional_language_ability_or_estimate; 2025] \| Global/French regional localized standards: 396,000,000 [functional_language_ability_or_estimate; 2025] | target/profile resolution before stage-specific production | Audit country/stage-specific residuals and local-language bridges. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view functional_language_ability_or_estimate\|Modeled global French-competence and schooling population\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 80 | EXP-015 | Ethiopia Sidama Latin-script edition | sid-Latn-ET | Ethiopia | Sidama: 2,981,471 [census_mother_tongue_persons; 2007] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 81 | GLB-003 | Standard Written Chinese, Taiwan Traditional | zh-Hant-TW | Eastern Asia | Standard Written Chinese, Taiwan Traditional: 8,801,742 (interval 8,790,849–8,812,635) [first_learned_language_derived_from_percentage; 2020] \| Standard Written Chinese, Taiwan Traditional: 21,089,322 (interval 21,078,430–21,100,215) [functional_language_ability_or_estimate; 2020] \| Standard Written Chinese, Taiwan Traditional: 21,786,490 [territory_age_restricted_ceiling; 2020] | target/profile resolution before stage-specific production | Audit exact residual and reuse semantic source with a Taiwan locale layer. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view functional_language_ability_or_estimate\|Taiwan resident nationals age 6+\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 82 | GLB-034 | Iranian Persian | fa-Arab-IR | West/Central Asia | Iranian Persian: 79,926,270 [territory_all_residents_ceiling; 2016] | target/profile resolution before stage-specific production | Resolve denominator and exact tertiary/professional/frontier residual. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view territory_all_residents_ceiling\|Iran residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 83 | EXP-016 | Ethiopia Wolaytta Latin-script edition | wal-Latn-ET | Ethiopia | Wolaytta: 1,627,955 [census_mother_tongue_persons; 2007] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 84 | GLB-030 | Polish | pl-Latn-PL | Europe | Polish: 37,489,000 [territory_all_residents_ceiling; 2024-12-31] | target/profile resolution before stage-specific production | Exact residual audit only. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view territory_all_residents_ceiling\|Poland residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 85 | GLB-035 | Turkish, Turkey | tr-Latn-TR | West Asia/Europe | Turkish, Turkey: 85,664,944 [territory_all_residents_ceiling; 2024-12-31] | target/profile resolution before stage-specific production | Rank only in territory/proxy view; audit exact open/accessibility/frontier residual. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view territory_all_residents_ceiling\|Residents of Türkiye\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 86 | EXP-017 | Ethiopia Hadiyya Latin-script edition | hdy-Latn-ET | Ethiopia | Hadiyya: 1,253,894 [census_mother_tongue_persons; 2007] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 87 | NAT-066 | Oromo | om-Latn-ET | Ethiopia and neighboring cells | Oromo exact variety profiles: 24,930,424 [mother_tongue_or_first_language; 2007] | target and learner-cohort resolution; curriculum stage remains provisional | First resolve the exact variety, script, orthography and learner locale using the registered source/profile evidence; retain any broader census count as a ceiling only. Then scope the appropriate registered curriculum package; this is a bounded target-resolution commission, not authorization to translate into a fabricated common standard. | profile_resolution_action_local_need_unresolved | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view mother_tongue_or_first_language\|large_national_mother_tongue\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 88 | NAT-110 | Basque | eu-Latn-ES | Basque Country exact territory cells | unresolved—no comparable source-defined population count | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 2 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 89 | GLB-001 | Global learned English access baseline | en-Latn; locale outputs required | Global | Global learned English access baseline: 292,827,195 [functional_language_ability_or_estimate; 2024] \| Global learned English access baseline: 53,667,911 [functional_language_ability_or_estimate; 2021] \| Global learned English access baseline: 247,695,110 [home_or_usual_language_use; 2024] | target/profile resolution before stage-specific production | Audit exact stage/subject/format residuals and keep English overlap out of unique-language reach. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view home_or_usual_language_use\|United States residents age 5+\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 90 | EXP-019 | South Africa Sepedi Latin-script edition | nso-Latn-ZA | South Africa | Sepedi: 5,972,255 [census_language_most_often_spoken_in_household_persons_age_1_plus; 2022] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 91 | GLB-032 | Egyptian Arabic scaffold | arz-Arab-EG; Saidi and other profiles separate | North Africa | Egyptian Arabic scaffold: 94,798,827 [territory_all_residents_ceiling; 2017] | target/profile resolution before stage-specific production | Specify oral/audio/plain-language functions and exact orthography before reach credit. | profile_resolution_or_exact_residual_action_from_expected_universe | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view territory_all_residents_ceiling\|Egypt residents\|persons; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 92 | NAT-071 | Igbo | ig-Latn-NG | Nigeria and diaspora | unresolved—no comparable source-defined population count | target and learner-cohort resolution; curriculum stage remains provisional | First resolve the exact variety, script, orthography and learner locale using the registered source/profile evidence; retain any broader census count as a ceiling only. Then scope the appropriate registered curriculum package; this is a bounded target-resolution commission, not authorization to translate into a fabricated common standard. | profile_resolution_action_local_need_unresolved | Declared lane cycle high_reach_underserved; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier profile_or_residual_resolution; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 93 | EXP-020 | South Africa Setswana Latin-script edition | tn-Latn-ZA | South Africa | Setswana: 4,972,787 [census_language_most_often_spoken_in_household_persons_age_1_plus; 2022] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 94 | EXP-021 | South Africa Sesotho Latin-script edition | st-Latn-ZA | South Africa | Sesotho: 4,678,964 [census_language_most_often_spoken_in_household_persons_age_1_plus; 2022] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 95 | NAT-112 | Low German | nds-Latn-DE | Germany and separately diaspora | unresolved—no comparable source-defined population count | upper-secondary through undergraduate formal reasoning | Produce the registered FR-1 Formal-reasoning foundation for this exact named output: methods plus sets-functions-relations plus propositional; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 96 | EXP-022 | South Africa Xitsonga Latin-script edition | ts-Latn-ZA | South Africa | Xitsonga: 2,784,279 [census_language_most_often_spoken_in_household_persons_age_1_plus; 2022] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 97 | EXP-023 | South Africa siSwati Latin-script edition | ss-Latn-ZA | South Africa | siSwati: 1,692,719 [census_language_most_often_spoken_in_household_persons_age_1_plus; 2022] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 98 | EXP-024 | South Africa Tshivenda Latin-script edition | ve-Latn-ZA | South Africa | Tshivenda: 1,480,565 [census_language_most_often_spoken_in_household_persons_age_1_plus; 2022] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 99 | NAT-113 | Faroese | fo-Latn-FO | Faroe Islands | unresolved—no comparable source-defined population count | upper-secondary through undergraduate formal reasoning | Produce the registered FR-2 Formal-reasoning core for this exact named output: FR-1 plus first-order-logic; adaptation D2; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle endangered_prestige; no remaining dominance predecessors in the planning view; static opportunity layer 2 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+| 100 | EXP-025 | South Africa isiNdebele Latin-script edition | nr-Latn-ZA | South Africa | isiNdebele: 1,044,377 [census_language_most_often_spoken_in_household_persons_age_1_plus; 2022] | secondary through first-year tertiary | Produce the registered MV-1 Minimum viable quantitative curriculum for this exact named output: Algebra and Trigonometry 2e; adaptation D3; include placement diagnostics, complete worked answers, editable source, and download-once delivery. | registered_curriculum_package_provisional_local_need_fit | Declared lane cycle regional_depth; no remaining dominance predecessors in the planning view; static opportunity layer 1 is diagnostic only (planning inference is not measurement); package-evidence policy tier registered_provisional; least-dispatched compatible typed view unknown\|unknown\|unknown; within-view gross stratum, target/route specificity, then stable ID. Gross scope is not newly comfortable reach. |
+
+# Appendix B. Full ordered Top 100: continuation, prerequisites, and access
+
+| Pos. | Intervention | Follow-on | Prerequisite route | Delivery | Teacher-independent requirements | Accessibility | Non-overlap |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Bangla shared-source caregiver/ECE and Indian TVET residuals | Separate Bangladesh disaster-resilience and Indian Bengali first-year university overlays; then postgraduate research methods. | Oral-language/ECE entry -> grades 2-5 literacy/numeracy recovery -> lower-secondary re-entry -> TVET/applied pathway. \| Secondary mastery diagnostic -> workshop mathematics/science -> TVET or first-year bridge -> research methods. | Print, offline HTML, audio, IVR/SMS-compatible prompts and SD-card/local-server bundle. \| Offline phone/desktop course graph plus print workshop cards. | Daily diagnostic cycle, full worked answers, caregiver scripts and catch-up placement/re-entry map. \| Worked cases, complete answers, simulated labs and Bengali-English terminology. | Unicode Bangla, semantic math, TTS testing, captions, large-print and low-data audio. \| Semantic Bangla/MathML, captions, audio, high-contrast print and keyboard navigation. | SHC-BN owns caregiver/ECE and Indian Bengali secondary/TVET only. NAT-001 owns Bangladesh grades 2–5 recovery. NAT-002 Indian Bengali grades 3–8 catch-up is a distinct stage-specific action. Do not sum learner/caregiver roles or ordinal R bands into a measured total. |
+| 2 | Telugu applied STEM and tertiary-transition package | Agriculture/climate, health and SME continuing education, then postgraduate research methods and reproducibility. | Secondary prerequisite repair -> TVET/applied STEM -> first-year bilingual bridge -> professional/research methods. | Offline simulations, semantic HTML/EPUB/PDF and print practical guides. | Placement, full solutions, terminology crosswalk, low-cost laboratories and career cases. | Telugu screen-reader/font testing, semantic math, captions and reflow. | Do not average Andhra Pradesh and Telangana outcomes or treat one state curriculum as the other. |
+| 3 | Odia | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Below 50M on verified measures. |
+| 4 | Bhojpuri (India) | After an exact supply audit, add missing secondary/TVET practical science, health, finance and computing; keep tertiary/professional work as a separately evidenced residual. | Bhojpuri oral/Devanagari entry diagnostic -> foundational numeracy -> pre-algebra/algebra -> secondary/TVET bridge -> separately audited tertiary residual. | Download-once semantic HTML/MathML, EPUB, tagged PDF, print workbook and low-data audio; no login required. | Entry diagnostic; Bhojpuri oral-to-Devanagari support; complete worked feedback; explicit Hindi bridge glossary; reversible Bihar/eastern-UP terminology overlays. | Devanagari font/TTS/screen-reader tests, semantic mathematics, reflow, captions/transcripts, large print and keyboard navigation. | Never add Bhojpuri to the parent Hindi census umbrella; award zero automatic Hindi comprehension credit; keep Nepal, Mauritius, Magahi and Maithili outputs separate. |
+| 5 | Hausa boko Nigeria–Niger package with optional established Ajami layers | Secondary/TVET science, agriculture, public health, computing, mobile-money safety, microenterprise, livestock/water and solar/GSM trades; then tertiary statistics/R/Python. | Boko/Ajami placement and oral-literacy entry -> foundational mastery -> practical TVET -> statistics/programming/open science. | Print, radio, IVR, basic-phone and offline HTML/PDF. | Structured phonics/mastery, full feedback, country terminology and practical projects. | Audio, large print, semantic boko, optional local Ajami and captions/transcripts. | Never invent one universal Ajami or convert oral user estimates into written educational reach. |
+| 6 | Bambara | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Manding package saves compute; named Bambara output claims only Bambara cells. |
+| 7 | Standard Hindi first-year and research-methods bridge | Current health, agriculture, cyber-finance and SME continuing education, then accessible catch-up practice only where exact gaps remain. | Bilingual secondary diagnostic -> first-year disciplinary bridge -> statistics/programming -> postgraduate research methods. | Offline bilingual HTML/EPUB/PDF plus low-cost laboratory/simulation assets. | Complete exercises/answers, terminology crosswalk, prerequisites, research datasets and reproducible notebooks. | Devanagari screen-reader testing, semantic math, captions, reflow and print. | NAT-124 is the sole owner of this hi-Deva-IN first-year/professional/methods package. IL-HU owns Urdu outputs only. Exclude Bhojpuri and other Hindi-umbrella returns; neither source reuse nor bilingual overlap creates another Hindi audience. |
+| 8 | Peru Ashaninka Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate childhood-language category; do not add to aggregate Quechua/Aimara rows or to other measures without a common-universe proof. |
+| 9 | Russian learned standard | Exact modern frontier review/monograph translations and semantic-accessible editions only where inventory proves absence. | Disciplinary prerequisite check -> statistics/programming/research integrity -> reproducible professional/research work -> exact frontier gaps. | Open no-login offline semantic bundle plus source and print. | Exercises/answers, reproducible notebooks, datasets and bilingual search/navigation where relevant. | Cyrillic semantic text/math, captions, screen-reader testing and reflow. | Russian competence is not blanket coverage for Indigenous, displaced, diaspora or successor-state communities. |
+| 10 | Dari | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Iranian Persian yields zero credit until directional register comprehension is measured. |
+| 11 | Latin American Spanish localized core | No-login/offline/accessibility conversion of high-value OER, then exact nursing, computing, business, research-method and frontier gaps. | Grades 3-9 diagnostic recovery -> country secondary transition -> professional or first-year path -> exact frontier residual. | Country-localized offline HTML/EPUB/PDF and print. | Diagnostics, misconception repair, full answers and country examples/regulation. | Semantic text/math, captions, TTS, reflow and low-bandwidth assets. | `es-ES` does not dictate Latin American curricula or professional terminology; global Spanish totals are nonadditive models. |
+| 12 | Brazilian Portuguese | Research methods/reproducibility and exact advanced-content gaps. | Adult/secondary placement -> teacher-independent transition bundle -> professional/research methods -> exact advanced residual. | No-login offline bundle with editable source and print. | Complete answers, diagnostic progression and current professional examples. | Semantic text/math, captions, screen-reader support and reflow. | Brazil is separate from Portugal, Angola, Mozambique and other PALOP outputs. |
+| 13 | Persian–Dari–Tajik shared-source package | Resolve exact counts and measure script/terminology delta | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | No one script/register or additive comfort count |
+| 14 | Vietnamese TVET–university and research-method spine | Quarterly frontier-to-field briefs plus postgraduate research design, causal inference, systematic review and reproducibility. | Secondary quantitative/digital diagnostic -> TVET/university applied courses -> research design and reproducibility. | Offline interoperable HTML/EPUB/PDF plus low-cost labs/notebooks. | Prerequisite map, complete solutions, applied cases and bilingual search terminology. | Semantic math, captions, screen-reader testing and low-bandwidth download. | Vietnamese material does not replace exact oral/home-language overlays for minoritized early-years learners. |
+| 15 | Modern Standard Arabic core with named spoken-language scaffolds | Country-specific disciplinary literacy, TVET and research-method paths in health, climate/agriculture, finance, computing, statistics and reproducibility. | Local spoken-language oral scaffold -> vowelled MSA literacy -> disciplinary MSA -> TVET/tertiary -> research methods. | Offline print/radio/SD/local-server bundle plus maintained professional pathways. | Diagnostics, complete feedback, local spoken narration, country curriculum/re-entry maps and versioning. | Unicode RTL/bidi metadata, logical reading order, TTS-tested vowelization, captions, sign-language video where relevant and semantic math. | Never award blanket MSA comprehension or collapse Arabic varieties and non-Arabic home-language communities. |
+| 16 | Sinhala | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Own-language cell only; English comfort is not assumed from official bilingualism. |
+| 17 | Korean, Republic of Korea | Statistics, R/Python, open licensing, data management, research integrity and applied-domain laboratories. | Short placement and digital-safety diagnostics -> adult capability modules -> statistics/programming/research methods. | Download-once offline bundle with print/simple-language cards. | Short mastery checks, full explanations, locally current examples and maintenance dates. | Semantic Korean text, captions, audio, large type, high contrast and key Korean Sign Language safety/health videos. | No inference about DPRK follows from ROK supply; do not pool the territories. |
+| 18 | Peru Shipibo-Konibo Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate childhood-language category; do not add to aggregate Quechua/Aimara rows or to other measures without a common-universe proof. |
+| 19 | Kiswahili DRC grades 1–3 and Uganda P4 package | Follow-on context only: separately scope Tanzania swh-Latn-TZ and Kenya swh-Latn-KE secondary/advanced outputs; their populations do not enter this first action. Extend separately evidenced country routes into Kiswahili↔English/French biology, chemistry, climate/agriculture, health, computing and finance, then TVET and statistics/R/Python/open-science paths. | DRC grades 1–3 literacy/numeracy entry -> exact regional-variety and French-bridge support -> missing worked feedback; Uganda P4 Kiswahili-L2 entry -> self-study scripts and offline audio. | Print/audio/offline HTML with country curriculum overlay. | Teacher and self-study scripts, diagnostics, worked answers, French/English bridges and locally relevant cases. | Captions, audio, semantic text/math, large print and offline delivery. | Do not use East African Standard Kiswahili as blanket coverage for DRC varieties or non-Kiswahili L1 communities. Tanzania/Kenya outputs are follow-on context only and add no current first-package audience. |
+| 20 | Kazakh | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Do not mix current Cyrillic users with future Latin projection. |
+| 21 | Indian Tamil | Health, climate/agriculture, cyber-finance and SME professional modules, then accessible school practice where needed. | Secondary diagnostic -> Tamil-English first-year bridge -> reproducible methods -> postgraduate/frontier navigation. | Offline semantic course graph plus simulations and print. | Full solutions, bilingual terminology, research datasets and reproducible notebooks. | Tamil font/TTS testing, semantic math, captions and reflow. | Sri Lankan Tamil remains a separate profile and curriculum. |
+| 22 | Amharic | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Broad estimate is not an exact written-reader count. |
+| 23 | Ilocano | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Count exact language-speaking household evidence only in its original measure. |
+| 24 | Uzbek | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Latin and Cyrillic literacy must be separate modifiers; Turkish gives zero coverage credit. |
+| 25 | Javanese | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Explicit subset/overlap edge with Indonesian is mandatory. |
+| 26 | India Maithili Devanagari edition | After the bounded SB-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> MV-1 -> SB-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Nested in parent POP-IN-010; never sum parent and component. Nepal Maithili is a distinct territory observation and profile. |
+| 27 | Burmese | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Territory includes non-Burmese L1 communities. |
+| 28 | Fataluku | After the bounded FR-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> FR-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Own-community cell only; no Tetum coverage deduction without evidence. |
+| 29 | Kenyan Swahili | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Global headline is not a deduplicated written-reader count; DRC Congo Swahili is distinct. |
+| 30 | Eastern Punjabi | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | No cross-script population credit. |
+| 31 | Malaysian Malay formal reasoning via Indonesian source reuse | After the FR-2 component, scope the remaining non-FR-2 Open Logic modules and separate Malaysian Jawi derivatives individually; neither is included in this first action's reader estimate. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | One ms-Latn-MY FR-2 commission, canonically NAT-040. IL-IDMS is an exact first-action alias retained in architecture/disposition data. Do not count Indonesian beneficiaries, the architecture itself, additional Open Logic units or Jawi derivatives as this action's new audience. |
+| 32 | Bahasa Indonesia Evidence-to-Practice and Research Core | Maintained professional updates for MSME finance/management, health CPD, renewable energy/water, agriculture/aquaculture and quarterly frontier briefs. | Use completed Indonesian Open Logic and the relevant available exact-course prerequisites -> statistics/programming entry diagnostic and prerequisite repair -> evidence-to-practice core -> maintained professional updates; completion of the whole 40-course program is not required. | Download-once offline HTML/PWA/local server, EPUB, tagged PDF and source package. | Complete exercises/answers, diagnostics, executable notebooks, maintenance cadence and evidence-update dates. | Semantic MathML, screen-reader navigation, captions/audio, low-bandwidth mode and print. | Do not duplicate the completed Open Logic corpus or already covered 40-course roles; commission only exact residual or new-domain packages. |
+| 33 | Tajik | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Iranian Persian gives zero Tajik credit without script-adjusted comprehension evidence. |
+| 34 | Mainland Simplified Chinese accessibility and frontier residual | Add a four-band school diagnostic overlay, a 144-hour vocational quantitative bridge, adult/workplace/financial numeracy and academic re-entry, then title-audited frontier mathematics. | Exact completed-corpus inventory -> Calculus I module prerequisites -> professional/research pathway prerequisites. | No-account, download-once semantic HTML/MathML, EPUB, tagged PDF, audio/transcripts, chapter bundles, print assets and offline source archive. | Diagnostics, complete worked answers, executable notebooks where relevant, explicit prerequisites, mastery/re-entry routing and maintenance versioning. | True Unicode; tested CJK fonts and ToUnicode; semantic MathML; keyboard and screen-reader navigation; captions/transcripts; reflow, large print, math-speech and Braille compatibility. | Do not claim coverage of Wu, Yue vernacular, Xiang, Hakka, Taigi or minority-language communities; do not duplicate complete Open Logic or algebra. |
+| 35 | Marathi | Climate-resilient agriculture, health/SME professional modules and research methods. | Grade-level diagnostic -> secondary recovery -> TVET/first-year bridge -> professional/research methods. | Offline bilingual course graph and printable practice/lab pack. | Diagnostic prerequisite repair, worked solutions and Marathi-English terminology. | Devanagari semantic text/math, captions, reflow and large print. | Keep foundational rural assessment evidence separate from all Marathi speakers. |
+| 36 | Hiligaynon | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Keep distinct from Cebuano and generic Bisaya labels. |
+| 37 | Japanese (Japan) | Add a university proof/foreign-language-reading bridge and translate only title-audited missing or non-open EGA/SGA/FGA and other frontier works; do not duplicate ordinary compulsory-school mathematics. | Grades 5-9 diagnostic repair -> upper-secondary proof language -> undergraduate algebra -> commutative algebra -> algebraic geometry/frontier corpus. | No-login offline HTML5/EPUB 3/MathML, tagged PDF, low-bandwidth ZIP, print, Japanese mathematical speech and tactile/embossable diagram assets. | Placement checks, worked feedback, full solutions, prerequisite graph, mastery checkpoints and Japanese-English-French research-navigation terminology. | Furigana/plain-Japanese modes, semantic math, Japanese speech strings, Braille-compatible math, tactile diagrams, dyslexia/low-vision settings, captions, keyboard navigation and reflow. | Do not duplicate generic compulsory-school algebra or treat the 123.802M territory population as Japanese readers newly served; keep formalism-assisted foreign-language reading distinct from writing/oral-instruction access. |
+| 38 | Baikeno | After the bounded FR-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> FR-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Own-community cell only. |
+| 39 | Tanzanian Swahili | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Global headline is not a deduplicated written-reader count; DRC Congo Swahili is distinct. |
+| 40 | Indonesia Madurese Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate named BPS daily-home-language cell; the master table does not assert portfolio additivity, so do not sum it with grouped Indonesian rows or infer cross-language coverage. |
+| 41 | Nigerian Pidgin | Extend into locally evidenced livelihood, financial-safety and health-data modules; use explicit orthography and reading-demand profiles before a text-heavy algebra course. | Oral number and measurement diagnostic -> short spoken worked examples -> practice with answers -> optional transcript/text bridge. | Downloadable audio, radio/IVR scripts, basic-phone prompts and low-bandwidth transcript/PDF companions. | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Nigeria territory and oral users do not establish standardized written readership. |
+| 42 | Cebuano | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Do not merge Cebuano and Bisaya household labels without source-defined mapping. |
+| 43 | Sri Lankan Tamil | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Keep separate from ta-Taml-IN and avoid double-counting diaspora residents. |
+| 44 | Thai | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Derived union assumptions and minority-language overlap must remain visible. |
+| 45 | Sundanese | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Indonesian overlap and politeness-level design are explicit uncertainty terms. |
+| 46 | Waray | After the bounded FR-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> FR-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Own-language cell only. |
+| 47 | Western Punjabi | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Do not equate every Punjabi return with one Western Punjabi variety or standardized readership. |
+| 48 | Inuinnaqtun Roman profile | After the bounded FR-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> FR-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Keep distinct from syllabic Inuktitut and other Inuit varieties. |
+| 49 | Kurmanji Kurdish | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Do not merge with Sorani Zazaki or Turkish; diaspora cells must be residence-deduplicated. |
+| 50 | Indonesia Minangkabau Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate named BPS daily-home-language cell; the master table does not assert portfolio additivity, so do not sum it with grouped Indonesian rows or infer cross-language coverage. |
+| 51 | Bangladesh Bangla grades 2–5 mastery-recovery package | Link to SHC-BN caregiver/ECE and separately scoped secondary progression; do not duplicate its Indian Bengali secondary/TVET package. | Short oral/numeracy placement -> learner-specific missing foundations -> grades 2–5 worked practice and mastery checks; no teacher or online service required. | Print, offline HTML, audio, IVR/SMS-compatible prompts and SD-card/local-server bundle. | Daily diagnostic cycle, full worked answers, caregiver scripts and catch-up placement/re-entry map. | Unicode Bangla, semantic math, TTS testing, captions, large-print and low-data audio. | One owner for bn-Beng-BD grades 2–5 recovery: NAT-001. SHC-BN caregiver/ECE and Indian Bengali TVET are distinct components, not another copy of this work. Population ceilings and attainment deficits are not counted as measured causal benefits. |
+| 52 | Filipino–English STEM–Kabuhayan package | Open science, biostatistics, public health, programming/data, accounting/management and climate-smart agriculture/renewable-energy spine. | Grades 7-12/ALS diagnostic -> STEM-Kabuhayan modules -> TVET/first-year bridge -> professional/research spine. | Offline local-server/USB/SD package plus print and low-data audio. | Full answers, practical projects, terminology, mastery checks and local livelihood cases. | Captions, semantic text/math, screen-reader support and replaceable home-language audio/glossaries. | Filipino is not every learner's first language; do not count replaceable home-language tracks as one Filipino audience. |
+| 53 | Lao | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | No Thai cross-language credit without directional comprehension evidence. |
+| 54 | Sindhi | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Shared RTL tooling is not intelligibility. |
+| 55 | Hausa | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | 60M and 94M source universes differ; optional Ajami has separate unknown readership. |
+| 56 | Indonesia Banjar Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate named BPS daily-home-language cell; the master table does not assert portfolio additivity, so do not sum it with grouped Indonesian rows or infer cross-language coverage. |
+| 57 | Hindi–Urdu shared-core architecture: two Urdu residual outputs | Current health, agriculture, cyber-finance, SME and postgraduate reproducibility modules, maintaining distinct India/Pakistan examples and law. | Locale-specific Urdu–English secondary diagnostic -> first-year disciplinary bridge -> statistics/programming -> research-methods exercises; reuse source content, not presumed Hindi reading ability. | Separate Indian/Pakistani Nastaliq offline HTML/MathML, EPUB and PDF, with accessible logical reading order, low-cost labs and downloadable notebooks. | Worked answers, diagnostic entry, Urdu–English terminology crosswalk, locally appropriate examples, reproducible notebooks and no mandatory teacher or live platform. | Nastaliq/RTL shaping, bidirectional formula ordering, semantic math, keyboard/reflow support, extraction and screen-reader checks; captions/transcripts and printable fallback. | IL-HU owns two Urdu locale outputs only. NAT-124 owns the Hindi component. HRN-004 is Hindi need evidence, not independently established Urdu need. Urdu India/Pakistan ceilings are separate and nonadditive with functional-language umbrellas; the shared source has no additional audience. |
+| 58 | Greenlandic | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | No Inuktut bridge credit and no Danish comfort assumption. |
+| 59 | Saraiki | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Overlaps Punjabi, Saraiki, Hindko and classification conventions. |
+| 60 | Mongolian | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Keep Cyrillic Mongolia distinct from traditional-script communities. |
+| 61 | Yoruba | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Nigeria territory and unjoined literacy percentages cannot be multiplied without matching strata. |
+| 62 | Indian Bengali | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Do not use one locale-neutral Bangla edition. |
+| 63 | Indonesia Sasak Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate named BPS daily-home-language cell; the master table does not assert portfolio additivity, so do not sum it with grouped Indonesian rows or infer cross-language coverage. |
+| 64 | Gujarati | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Functional total is not additive to L1. |
+| 65 | Indian Urdu | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Do not merge with Pakistan Urdu or Standard Hindi readership. |
+| 66 | Indonesia Acehnese Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate named BPS daily-home-language cell; the master table does not assert portfolio additivity, so do not sum it with grouped Indonesian rows or infer cross-language coverage. |
+| 67 | Kannada | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | C-17 L2/L3 total cannot be compared as L1. |
+| 68 | Maori | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Deduct English comfort by cohort; no Polynesian-family reach. |
+| 69 | Malayalam | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Do not inflate using Kerala territory without language evidence. |
+| 70 | Indonesia Betawi Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate named BPS daily-home-language cell; the master table does not assert portfolio additivity, so do not sum it with grouped Indonesian rows or infer cross-language coverage. |
+| 71 | Pakistani Urdu | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | National status is not universal comfortable Nastaliq readership. |
+| 72 | Pakistani Pashto | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Resolve exact production profile -> check source-stated learner prerequisites -> scope a bounded content package. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Mixed denominator and dialect/orthography profiles cannot form one rank. |
+| 73 | Indonesia Nias Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate named BPS daily-home-language cell; the master table does not assert portfolio additivity, so do not sum it with grouped Indonesian rows or infer cross-language coverage. |
+| 74 | German, Germany | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | Home use is not a literacy test and does not cover all Germanic minorities. |
+| 75 | Italian, Italy | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | No direct Italian literacy census in located source. |
+| 76 | Ethiopia Somali Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate 2007 mother-tongue cell; do not add cross-border observations or family-language proxies without explicit disjoint-universe accounting. |
+| 77 | Putonghua, Mainland spoken standard | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | The 1,139,587,786 sensitivity is 80.72% of the mainland census denominator, not an official speaker count, L1 count, home-language count, literacy measure or academic-comfort count. It is wholly nonadditive with zh-Hans-CN and all Sinitic profiles. |
+| 78 | Bislama | After the bounded FR-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> FR-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | No Tok Pisin or English automatic coverage. |
+| 79 | Global/French regional localized standards | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | Modeled Francophone totals include heterogeneous competence and schooling. |
+| 80 | Ethiopia Sidama Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate 2007 mother-tongue cell; do not add cross-border observations or family-language proxies without explicit disjoint-universe accounting. |
+| 81 | Standard Written Chinese, Taiwan Traditional | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | Taiwan Guoyu and traditional-character literacy are not mainland Hans reach. |
+| 82 | Iranian Persian | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | Do not merge Dari and Tajik populations or scripts. |
+| 83 | Ethiopia Wolaytta Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate 2007 mother-tongue cell; do not add cross-border observations or family-language proxies without explicit disjoint-universe accounting. |
+| 84 | Polish | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | Rounded survey shares are not exact population cells. |
+| 85 | Turkish, Turkey | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | Territory and language-neutral literacy are not Turkish reader counts. |
+| 86 | Ethiopia Hadiyya Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Separate 2007 mother-tongue cell; do not add cross-border observations or family-language proxies without explicit disjoint-universe accounting. |
+| 87 | Oromo | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Resolve exact production profile -> check source-stated learner prerequisites -> scope a bounded content package. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Oromia territory and Oromo macrolanguage are not one edition population. |
+| 88 | Basque | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Territory and dominant-language overlaps are explicit deductions. |
+| 89 | Global learned English access baseline | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | Global L2/use estimates are not academic-reading comfort and overlap nearly every other profile. |
+| 90 | South Africa Sepedi Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Mutually exclusive within the coded Table 3.8 household-language denominator; additive only inside that table, never with another South Africa language measure. |
+| 91 | Egyptian Arabic scaffold | After target/profile resolution, select a bounded content package from the registered source inventory. | Resolve the exact target, population and existing supply before assigning a curriculum prerequisite chain. | research dossier and source inventory only until the target profile is resolved | For any later content edition: diagnostics, complete worked answers, self-check feedback and no mandatory teacher or live service. | For any later edition: semantic structure and mathematics, keyboard/reflow support, tested fonts/text extraction, captions/transcripts and printable low-bandwidth fallback. | Egypt territory is not Egyptian-Arabic reader population; regional varieties remain. |
+| 92 | Igbo | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Resolve exact production profile -> check source-stated learner prerequisites -> scope a bounded content package. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Continuum and standardized literacy require evidence. |
+| 93 | South Africa Setswana Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Mutually exclusive within the coded Table 3.8 household-language denominator; additive only inside that table, never with another South Africa language measure. |
+| 94 | South Africa Sesotho Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Mutually exclusive within the coded Table 3.8 household-language denominator; additive only inside that table, never with another South Africa language measure. |
+| 95 | Low German | After the bounded FR-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> FR-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | No pan-Germanic or Dutch coverage credit. |
+| 96 | South Africa Xitsonga Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Mutually exclusive within the coded Table 3.8 household-language denominator; additive only inside that table, never with another South Africa language measure. |
+| 97 | South Africa siSwati Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Mutually exclusive within the coded Table 3.8 household-language denominator; additive only inside that table, never with another South Africa language measure. |
+| 98 | South Africa Tshivenda Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Mutually exclusive within the coded Table 3.8 household-language denominator; additive only inside that table, never with another South Africa language measure. |
+| 99 | Faroese | After the bounded FR-2 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry -> FR-1 -> FR-2. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Excluded from mainland Scandinavian bridge credit. |
+| 100 | South Africa isiNdebele Latin-script edition | After the bounded MV-1 package, extend only after an itemized local supply and stage audit; preserve the same named profile and non-overlap rules. | Diagnostic entry and any source-stated prerequisites -> MV-1. | AX-HTML;AX-PDF;AX-OFFLINE | Placement checks, explicit prerequisite repair, complete worked examples and answers, self-check feedback, and no required teacher or live platform. | Semantic headings and mathematics/MathML, keyboard navigation, captions/transcripts for media, reflow, tested fonts and text extraction, low-bandwidth assets, and printable fallback. | Mutually exclusive within the coded Table 3.8 household-language denominator; additive only inside that table, never with another South Africa language measure. |
+
+# Appendix C. Interlanguage/shared-core crosswalk and exact forward work
+
+| Pos. | ID | Matrix rows | Mechanisms | Credited cross-language reach (not estimated utility) | Compute reuse | Current completion | Forward deficit | Next action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | SHC-BN | none | none | 0 | High same-script semantic, terminology, formula, accessibility and QA reuse; two separately localized curricula and examples. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 2 | NAT-003 | none | none | 0 | Reuse source semantics and labs across two state overlays; each curriculum crosswalk remains distinct. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 3 | NAT-010 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 4 | NAT-125 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 5 | SHC-HAUSA | none | none | 0 | High semantic core reuse; country orthographies and every Ajami layer stay explicit and separately validated. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 6 | NAT-082 | EDGE-MAN-001 | pluricentric_shared_core | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 7 | NAT-124 | EDGE-HU-001 | dual_script_register | 0 | High semantic/formula reuse Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | FWD-HI-FR2 FR-2 Formal Reasoning Core at D3: complete=210/210; residual=0 \| FWD-HI-OTHER Uncovered Hindi subject, stage, and accessibility residuals: scope unresolved | FWD-HI-FR2=0.000000 [exact_completed_corpus] \| FWD-HI-OTHER=unmeasured [unknown_until_exact_target_work_format_is_registered] | FWD-HI-FR2: Do not retranslate FR-2; commission only a separately demonstrated subject, stage, or format residual. \| FWD-HI-OTHER: Name and audit an exact missing work, stage, and format before computing a residual score. |
+| 8 | EXP-026 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 9 | GLB-027 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 10 | NAT-058 | EDGE-PDT-002 | pluricentric_shared_core | 0 | High semantic reuse with script/locale deltas Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 11 | GLB-024 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 12 | GLB-025 | EDGE-ROM-002 | pluricentric_shared_core | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 13 | IL-PDT | EDGE-PDT-001;EDGE-PDT-002;EDGE-PDT-003 | pluricentric_shared_core | 0 | High semantic reuse with script/locale deltas Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 14 | NAT-028 | none | none | 0 | Single locale output with strong reuse of open labs, code and data assets across subjects. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 15 | IL-AR | EDGE-AR-001;EDGE-AR-002;EDGE-AR-003;EDGE-AR-004;EDGE-AR-005;EDGE-AR-006;EDGE-AR-007;EDGE-AR-008 | pluricentric_shared_core;accessibility_derivative | 0 | High formal-register, RTL, terminology and source reuse; every spoken scaffold remains a named output. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 16 | NAT-027 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 17 | GLB-044 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 18 | EXP-028 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 19 | SHC-SWAHILI | none | none | 0 | High standard-core reuse, but every country/DRC regional surface is separately rendered and audited. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 20 | NAT-047 | EDGE-TUR-005 | natural_intercomprehension_reuse | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 21 | NAT-004 | none | none | 0 | Shared formula, layout and QA only unless measured Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 22 | NAT-065 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 23 | NAT-035 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 24 | NAT-046 | EDGE-TUR-009 | natural_intercomprehension_reuse | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 25 | NAT-038 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 26 | EXP-004 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 27 | NAT-030 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 28 | NAT-044 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 29 | NAT-064 | none | none | 0 | High standard-core reuse Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 30 | NAT-014 | EDGE-PNJ-001 | dual_script_register | 0 | High semantic and transliteration assistance Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 31 | NAT-040 | EDGE-IDMS-002 | pluricentric_shared_core | 0 | IL-IDMS Indonesian–Malaysian Malay production architecture: reuse the completed Indonesian semantic/formula source for the 210-unit FR-2 Malaysian output. Locale-delta token savings are unmeasured. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 32 | NAT-121 | EDGE-IDMS-001 | pluricentric_shared_core | 0 | Reuse the established terminology, build, QA and offline infrastructure; Malaysian Malay localization is a separate later output. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | FWD-ID-OLP Open Logic complete target set: complete=722/722; residual=0 \| FWD-ID-PROGRAM13 Nonpublic roles in the registered 40-course program: complete=27/40; residual=13 \| FWD-ID-ACCESS Accessibility, offline-delivery, and maintenance residuals: scope unresolved | FWD-ID-OLP=0.000000 [exact_completed_corpus] \| FWD-ID-PROGRAM13=unmeasured [unknown_heterogeneous_role_weights] \| FWD-ID-ACCESS=unmeasured [unknown_until_exact_format_gap_is_registered] | FWD-ID-OLP: Do not retranslate; preserve and maintain the completed corpus. \| FWD-ID-PROGRAM13: Select an exact role, work, version, and format; then measure its remaining source tokens. \| FWD-ID-ACCESS: Audit each published role for semantic HTML/MathML, screen-reader, offline, and maintenance gaps. |
+| 33 | NAT-049 | EDGE-PDT-003 | pluricentric_shared_core | 0 | High semantic reuse with script/locale deltas Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 34 | NAT-122 | none | none | 0 | Very high standardized written Chinese/toolchain reuse; Taiwan/Hong Kong locale outputs remain separate. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | FWD-CN-OLP Open Logic complete target set: complete=722/722; residual=0 \| FWD-CN-AT2E Algebra and Trigonometry 2e: complete=94/94; residual=0 \| FWD-CN-CALC1 Calculus Volume 1: complete=30/55; residual=25 \| FWD-CN-STEM6 Six further fixed STEM books: complete=unknown/6; residual=unknown \| FWD-CN-ACCESS-FRONTIER Semantic accessibility and demonstrated advanced/research-frontier gaps: scope unresolved | FWD-CN-OLP=0.000000 [exact_completed_corpus] \| FWD-CN-AT2E=0.000000 [exact_completed_corpus] \| FWD-CN-CALC1=unmeasured [unknown_until_residual_source_tokens_are_measured] \| FWD-CN-STEM6=unmeasured [unknown_work_weight] \| FWD-CN-ACCESS-FRONTIER=unmeasured [unknown_until_exact_target_work_format_is_registered] | FWD-CN-OLP: Do not retranslate; commission only a separately demonstrated format or semantic-access derivative. \| FWD-CN-AT2E: Do not retranslate; audit only accessibility, maintenance, or edition-version residuals. \| FWD-CN-CALC1: Finish the exact residual after measuring residual source tokens; do not infer D from module count alone. \| FWD-CN-STEM6: Audit exact titles, current unit coverage, source tokens, and local supply before ordering. \| FWD-CN-ACCESS-FRONTIER: Define exact format or advanced corpus first; then measure its source and residual units. |
+| 35 | NAT-006 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 36 | NAT-036 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 37 | NAT-123 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | FWD-JA-FR2 FR-2 Formal Reasoning Core at D3: complete=unknown/210; residual=unknown \| FWD-JA-STAGE Proof bridge, semantic accessibility, postgraduate, monograph, and research-frontier gaps: scope unresolved | FWD-JA-FR2=unmeasured [unknown_partial_or_missing_fraction] \| FWD-JA-STAGE=unmeasured [unknown_until_exact_target_work_format_is_registered] | FWD-JA-FR2: Audit exact local/open equivalents and any partial FR-2 units before deciding whether FR-2 itself is the next product. \| FWD-JA-STAGE: Commission only the exact stage/corpus/format gap established by the needs audit; do not infer a generic school-algebra need. |
+| 38 | NAT-045 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 39 | NAT-063 | none | none | 0 | High standard-core reuse Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 40 | EXP-005 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 41 | NAT-072 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 42 | NAT-034 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 43 | NAT-005 | none | none | 0 | Shared formula, layout and QA only unless measured Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 44 | NAT-029 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 45 | NAT-039 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 46 | NAT-037 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 47 | NAT-015 | EDGE-PNJ-002 | dual_script_register | 0 | High semantic and transliteration assistance Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 48 | NAT-102 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 49 | NAT-056 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 50 | EXP-006 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 51 | NAT-001 | none | none | 0 | High same-script semantic reuse Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 52 | NAT-033 | none | none | 0 | Reuse semantic sources and STARBOOKS-style offline packaging; home-language tracks are separate outputs. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 53 | NAT-032 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 54 | NAT-018 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 55 | NAT-069 | none | none | 0 | Strong shared-source potential Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 56 | EXP-007 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 57 | IL-HU | EDGE-HU-001;EDGE-HU-002;EDGE-HU-003 | dual_script_register | 0 | High semantic, formula, exercise and terminology-graph reuse; separate scripts, render QA and locale registers. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 58 | NAT-103 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 59 | NAT-019 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 60 | NAT-050 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 61 | NAT-070 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 62 | NAT-002 | none | none | 0 | High same-script semantic reuse Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 63 | EXP-008 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 64 | NAT-007 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 65 | NAT-013 | EDGE-HU-003 | dual_script_register | 0 | High semantic/formula reuse Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 66 | EXP-009 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 67 | NAT-008 | none | none | 0 | Shared formula, layout and QA only unless measured Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 68 | NAT-105 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 69 | NAT-009 | none | none | 0 | Shared formula, layout and QA only unless measured Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 70 | EXP-010 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 71 | NAT-012 | EDGE-HU-002 | dual_script_register | 0 | High semantic/formula reuse Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 72 | NAT-017 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 73 | EXP-011 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 74 | GLB-028 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 75 | GLB-029 | EDGE-ROM-004 | pluricentric_shared_core | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 76 | EXP-013 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 77 | GLB-053 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 78 | NAT-108 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 79 | GLB-026 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 80 | EXP-015 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 81 | GLB-003 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 82 | GLB-034 | EDGE-PDT-001 | pluricentric_shared_core | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 83 | EXP-016 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 84 | GLB-030 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 85 | GLB-035 | EDGE-TUR-001 | natural_intercomprehension_reuse | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 86 | EXP-017 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 87 | NAT-066 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 88 | NAT-110 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 89 | GLB-001 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 90 | EXP-019 | EDGE-SOT-001 | pluricentric_shared_core | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 91 | GLB-032 | EDGE-AR-002 | accessibility_derivative | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 92 | NAT-071 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 93 | EXP-020 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 94 | EXP-021 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 95 | NAT-112 | EDGE-GER-003 | natural_intercomprehension_reuse | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 96 | EXP-022 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 97 | EXP-023 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 98 | EXP-024 | none | none | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 99 | NAT-113 | EDGE-GER-010 | natural_intercomprehension_reuse | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+| 100 | EXP-025 | EDGE-NGU-004 | pluricentric_shared_core | 0 | Single named output; source, notation and accessibility tooling may be reused, but no extra reader reach is inferred. Package-specific token savings are unmeasured unless separately quantified in a named compute receipt. | No exact work-level completion row is registered in Table C. | unregistered_not_zero | Register an exact work, stage and format before assigning a forward content deficit. |
+
+# Appendix D. Expected global profiles and dispositions
+
+| ID | Profile | Tag | Kind | Region | Band | Disposition | Population warning | Next action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| GLB-001 | Global learned English access baseline | en-Latn; locale outputs required | learned_lingua_franca | Global | >=1B functional ceiling | supply_rich_negative_control | Global L2/use estimates are not academic-reading comfort and overlap nearly every other profile. | Audit exact stage/subject/format residuals and keep English overlap out of unique-language reach. |
+| GLB-002 | Standard Written Chinese, Mainland Simplified | zh-Hans-CN | learned_written_standard | Eastern Asia | >=1B territory; >=1B derived functional sensitivity | forward_residual_audit | Territory, Putonghua communication and simplified-character use are different universes; not spoken-Sinitic mutual intelligibility. | Finish registered partial works and commission only exact open, accessible, professional or frontier gaps. |
+| GLB-003 | Standard Written Chinese, Taiwan Traditional | zh-Hant-TW | pluricentric_written_standard | Eastern Asia | regional constituent | forward_residual_audit | Taiwan Guoyu and traditional-character literacy are not mainland Hans reach. | Audit exact residual and reuse semantic source with a Taiwan locale layer. |
+| GLB-004 | Wu varieties and written-access profiles | wuu-Hans-CN; exact variety outputs unresolved | macrolanguage_resolution | Eastern Asia | >=50M recall | unresolved_no_comparable_count | Standard Written Chinese schooling does not make spoken Wu identical to Mandarin or prove vernacular written demand. | Resolve exact varieties, modality and product need before any rank. |
+| GLB-005 | Yue/Cantonese written and spoken profiles | yue-Hant-HK; yue-Hans-CN; locale outputs | language_register_split | Eastern Asia | >=50M recall | unresolved_no_comparable_count | Formal written Chinese and written vernacular Cantonese are not the same target. | Build separate HK/Guangdong profile inventory before commissioning. |
+| GLB-006 | Xiang varieties | hsn-Hans-CN; exact standard unresolved | macrolanguage_resolution | Eastern Asia | 40-50M watch | unresolved_no_comparable_count | Do not substitute the Sinitic family or mainland population. | Resolve exact community, written modality and incremental use. |
+| GLB-007 | Standard Hindi, India | hi-Deva-IN | standard_variety | South Asia | >=250M exact same-name L1 | forward_residual_audit | Bhojpuri and other named returns are nested in the census Hindi umbrella. | Commission exact bilingual tertiary, research-method, professional and accessibility residuals. |
+| GLB-008 | Urdu, Pakistan | ur-Aran-PK | national_standard | South Asia | >=50M functional/bridge recall | ranked_in_typed_view | National status is not universal comfortable Nastaliq readership. | Audit secondary-to-tertiary and professional gaps with offline Nastaliq rendering. |
+| GLB-009 | Urdu, India | ur-Aran-IN | regional_standard | South Asia | >=50M exact L1 | ranked_in_typed_view | Do not merge with Pakistan Urdu or Standard Hindi readership. | Audit exact state/stage open supply and terminology transitions. |
+| GLB-010 | Bangla, Bangladesh | bn-Beng-BD | national_standard | South Asia | >=150M | ranked_in_typed_view | Derived L1 is not an exact census language count; Bangladesh and India need separate overlays. | Prioritize ECE/grades 2-5 recovery, emergency continuity, then TVET/applied pathways. |
+| GLB-011 | Bengali, India | bn-Beng-IN | regional_standard | South Asia | >=90M exact L1 | ranked_in_typed_view | Do not use one locale-neutral Bangla edition. | Prioritize secondary/TVET and Bengali-English first-year bridges. |
+| GLB-012 | Telugu | te-Telu-IN | regional_standard | South Asia | >=80M exact L1 | ranked_in_typed_view | Andhra Pradesh and Telangana require separate curriculum crosswalks. | Applied secondary/TVET/first-year STEM, coding, finance and entrepreneurship. |
+| GLB-013 | Marathi | mr-Deva-IN | regional_standard | South Asia | >=80M exact L1 | ranked_in_typed_view | Functional total is not additive to L1. | Secondary/TVET and first-year applied science, computing, finance and agriculture. |
+| GLB-014 | Tamil, India | ta-Taml-IN | regional_standard | South Asia | >=50M exact L1 | ranked_in_typed_view | Sri Lankan Tamil is a distinct locale and population cell. | Tamil-English first-year STEM, management and research methods. |
+| GLB-015 | Gujarati | gu-Gujr-IN | regional_standard | South Asia | >=50M exact L1 | ranked_in_typed_view | Functional total is not additive to L1. | Audit microenterprise, applied science, finance and first-year transition. |
+| GLB-016 | Kannada | kn-Knda-IN | regional_standard | South Asia | >=50M functional; L1 below threshold | ranked_in_typed_view | C-17 L2/L3 total cannot be compared as L1. | Audit TVET/tertiary and professional residual before selecting package. |
+| GLB-017 | Malayalam | ml-Mlym-IN | regional_standard | South Asia | 40-50M watch | ranked_in_typed_view | Do not inflate using Kerala territory without language evidence. | Audit exact advanced/open/accessibility gaps. |
+| GLB-018 | Odia | ory-Orya-IN | regional_standard | South Asia | 40-50M watch | ranked_in_typed_view | Below 50M on verified measures. | Audit secondary/TVET/tertiary discontinuity. |
+| GLB-019 | Punjabi, Pakistan | pa-Arab-PK; Aran when Nastaliq asserted | census_label_to_profile_resolution | South Asia | >=80M exact source label | unresolved_no_comparable_count | Do not equate every Punjabi return with one Western Punjabi variety or standardized readership. | Resolve variety and orthography, then commission a separate Pakistan output. |
+| GLB-020 | Punjabi, India | pa-Guru-IN | regional_standard | South Asia | 40-50M watch | ranked_in_typed_view | No cross-script population credit. | Audit exact secondary/tertiary residual and synchronized dual-script production. |
+| GLB-021 | Lahnda-labelled recall universe | und-Arab-PK-Lahnda; resolve Saraiki/Hindko/Punjabi labels | invalid_aggregation | South Asia | >=50M recall | unresolved_no_comparable_count | Overlaps Punjabi, Saraiki, Hindko and classification conventions. | Resolve named outputs and never rank the macro-label. |
+| GLB-022 | Pashto, Pakistan and Afghanistan profiles | ps-Arab-PK; ps-Arab-AF | cross_border_standard_profiles | South/Central Asia | >=50M combined mixed diagnostic | unresolved_no_comparable_count | Mixed denominator and dialect/orthography profiles cannot form one rank. | Resolve each profile; reuse a shared semantic source without blanket reach. |
+| GLB-023 | Sindhi, Pakistan | sd-Arab-PK | regional_standard | South Asia | 40-50M watch | ranked_in_typed_view | Shared RTL tooling is not intelligibility. | Audit school-to-tertiary and professional residual. |
+| GLB-024 | Latin American Spanish localized core | es-419 with country overlays | pluricentric_standard | Americas | >=250M | supply_rich_negative_control | Headline global totals are models and do not equal unique underserved readers. | Country-specific grades 3-9 recovery and exact professional/frontier gaps. |
+| GLB-025 | Brazilian Portuguese | pt-BR | national_pluricentric_standard | Americas | >=200M territory proxy | supply_rich_negative_control | Brazil population is not a Portuguese-reader count; global Portuguese totals lack disclosed proficiency method. | Build lawful offline teacher-independent bundles and exact research residuals. |
+| GLB-026 | Global/French regional localized standards | fr-Latn with country overlays | learned_lingua_franca | Global | >=250M institutional functional model | supply_rich_negative_control | Modeled Francophone totals include heterogeneous competence and schooling. | Audit country/stage-specific residuals and local-language bridges. |
+| GLB-027 | Russian learned standard | ru-Cyrl-RU; localized successor-state overlays | learned_lingua_franca | Europe/Central Asia | >=100M functional | supply_rich_negative_control | Knowledge may mean speaking only; no automatic written competence or ex-Soviet community coverage. | Open no-login professional/research-methods stack and exact frontier gaps. |
+| GLB-028 | German, Germany | de-Latn-DE | national_standard | Europe | >=50M home-language | supply_rich_negative_control | Home use is not a literacy test and does not cover all Germanic minorities. | Only exact open/accessibility/frontier residuals; do not use for Germanic minority coverage. |
+| GLB-029 | Italian, Italy | it-Latn-IT | national_standard | Europe | >=50M derived L1 | supply_rich_negative_control | No direct Italian literacy census in located source. | Audit only exact open/accessibility/professional/frontier residuals. |
+| GLB-030 | Polish | pl-Latn-PL | national_standard | Europe | 40-50M watch | supply_rich_negative_control | Rounded survey shares are not exact population cells. | Exact residual audit only. |
+| GLB-031 | Modern Standard Arabic plus locale scaffolds | arb-Arab; country spoken-language layers | learned_written_standard | MENA/Global | >=250M umbrella | forward_residual_audit | Nobody's ordinary home language can be presumed to be MSA; Arabic umbrella varieties are not one comfort population. | Country-specific MSA-literacy plus local-spoken scaffolds, emergency and research pathways. |
+| GLB-032 | Egyptian Arabic scaffold | arz-Arab-EG; Saidi and other profiles separate | spoken_scaffold | North Africa | >=50M recall | shared_core_only | Egypt territory is not Egyptian-Arabic reader population; regional varieties remain. | Specify oral/audio/plain-language functions and exact orthography before reach credit. |
+| GLB-033 | Levantine Arabic profiles | apc-Arab with SY/LB/JO/PS locale layers | spoken_scaffold | West Asia | 40-50M watch | shared_core_only | Conflict/displacement and country varieties prevent one additive comfort count. | Build country-specific emergency and spoken-to-MSA bridges. |
+| GLB-034 | Iranian Persian | fa-Arab-IR | national_standard | West/Central Asia | >=50M recall | ranked_in_typed_view | Do not merge Dari and Tajik populations or scripts. | Resolve denominator and exact tertiary/professional/frontier residual. |
+| GLB-035 | Turkish, Turkey | tr-Latn-TR | national_standard | West Asia/Europe | >=50M territory/official proxy | ranked_in_typed_view | Territory and language-neutral literacy are not Turkish reader counts. | Rank only in territory/proxy view; audit exact open/accessibility/frontier residual. |
+| GLB-036 | Standard Kiswahili with country layers | swh-Latn-TZ; swh-Latn-KE; swh-Latn-UG; swc-Latn-CD | learned_lingua_franca | Eastern/Central Africa | >=100M gross regional functional estimate | ranked_in_typed_view | Global headline is not a deduplicated written-reader count; DRC Congo Swahili is distinct. | DRC early-grade/local variety and Uganda L2 first; later bilingual STEM/TVET/research. |
+| GLB-037 | Hausa Boko country outputs | ha-Latn-NG; ha-Latn-NE | cross_border_standard | West Africa | 40-50M watch L1; >=50M gross functional estimates | unresolved_no_comparable_count | 60M and 94M source universes differ; optional Ajami has separate unknown readership. | Resolve denominator; foundational/functional boko, country bridges, optional Ajami/audio. |
+| GLB-038 | Nigerian Pidgin / Naijá | pcm-Latn-NG | oral_lingua_franca | West Africa | 40-50M watch; >50M oral estimate | unresolved_no_comparable_count | Nigeria territory and oral users do not establish standardized written readership. | Audio/basic-phone practical modules first; measure orthography uptake before text rank. |
+| GLB-039 | Bahasa Indonesia | id-Latn-ID | national_standard | Southeast Asia | >=200M functional | forward_residual_audit | Oral ability is not written academic comfort; overlaps Javanese and other home languages. | No duplicate logic/basic math; finish exact program roles then evidence-to-practice/research core. |
+| GLB-040 | Javanese | jv-Latn-ID | regional_language | Southeast Asia | >=50M home-language | ranked_in_typed_view | Explicit subset/overlap edge with Indonesian is mandatory. | Bilingual/audio terminology transfer before duplicating the full advanced corpus. |
+| GLB-041 | Vietnamese | vi-Latn-VN | national_standard | Southeast Asia | >=50M speaker/territory | ranked_in_typed_view | Territory and language reach are distinct; minority-language early grades remain separate. | Coherent TVET-university data, green industry, health, MSME and research-method packages. |
+| GLB-042 | Thai | th-Thai-TH | national_standard | Southeast Asia | >=50M home/functional | ranked_in_typed_view | Derived union assumptions and minority-language overlap must remain visible. | Audit exact secondary/TVET/tertiary/open/accessibility gaps. |
+| GLB-043 | Japanese, Japan | ja-Jpan-JP | national_standard | Eastern Asia | >=100M territory ceiling | forward_residual_audit | Territory is not Japanese-language or underserved-reader count. | Accessible grades 5-9 bridge, research methods, then exact advanced algebraic-geometry gaps. |
+| GLB-044 | Korean, Republic of Korea | ko-Kore-KR | national_standard | Eastern Asia | >=50M territory ceiling | forward_residual_audit | Territory is not a Korean reader count and excludes DPRK conditions. | Offline life-capability and research reproducibility packages; exact advanced residual audit. |
+| GLB-045 | Korean, DPRK | ko-Kore-KP | national_standard_locale | Eastern Asia | regional constituent | unresolved_no_comparable_count | Do not infer DPRK access from ROK platforms or combine populations silently. | Obtain authoritative current supply/connectivity/access evidence before ranking. |
+| GLB-046 | Filipino, Philippines | fil-Latn-PH | learned_national_standard | Southeast Asia | >=50M functional recall; >100M territory ceiling | unresolved_no_comparable_count | Filipino is not every learner's L1 and Tagalog household counts are not national competence. | Resolve functional denominator; Filipino-English STEM-Kabuhayan with replaceable home-language tracks. |
+| GLB-047 | Burmese | my-Mymr-MM | national_standard | Southeast Asia | >=50M territory; functional below threshold | ranked_in_typed_view | Territory includes non-Burmese L1 communities. | Emergency/offline foundational and transition packages with exact minority-language overlays. |
+| GLB-048 | Amharic | am-Ethi-ET | national_federal_working_standard | Horn of Africa | >=50M broad school/speaker estimate; L1 below | ranked_in_typed_view | Broad estimate is not an exact written-reader count. | Secondary-tertiary STEM, professional/research bridge and offline delivery. |
+| GLB-049 | Oromo exact variety profiles | gaz/hae/gax/orc; locale outputs unresolved | macrolanguage_resolution | Horn of Africa | large regional; exact L1 below 50M in old census | unresolved_no_comparable_count | Oromia territory and Oromo macrolanguage are not one edition population. | Resolve exact profiles and secondary/agriculture/health need. |
+| GLB-050 | Standard Yoruba | yo-Latn-NG | regional_standard | West Africa | near/above 50M range | unresolved_no_comparable_count | Nigeria territory and unjoined literacy percentages cannot be multiplied without matching strata. | Resolve population/literacy join; STEM, health, finance and agriculture sequence. |
+| GLB-051 | Standard Igbo | ig-Latn-NG | regional_standard | West Africa | material 25-33M | unresolved_no_comparable_count | Continuum and standardized literacy require evidence. | Resolve standard/profile and exact foundational-to-tertiary residual. |
+| GLB-052 | Bhojpuri, India | bho-Deva-IN | regional_language_variety_set | South Asia | >=50M exact named L1 return | ranked_in_typed_view | The 50,579,447 count is a 2011 India mother-tongue return nested within the 528,347,193 Census Hindi umbrella; it is not a current, all-variety, literacy, academic-comfort, India-plus-Nepal, or diaspora count. Devanagari is a production default, not proof of one transregional standard. | Declare a versioned Devanagari editorial register, inventory exact current supply, and commission the missing teacher-independent phone/offline foundational-numeracy-through-algebra sequence with Bhojpuri-to-Hindi bridge terms; keep Nepal and Mauritius outputs separate. |
+| GLB-053 | Putonghua, Mainland spoken standard | cmn-Hans-CN for aligned text/audio; cmn-CN for speech-only metadata | learned_spoken_standard | Eastern Asia | >=1B derived functional sensitivity | forward_residual_audit | The 1,139,587,786 sensitivity is 80.72% of the mainland census denominator, not an official speaker count, L1 count, home-language count, literacy measure or academic-comfort count. It is wholly nonadditive with zh-Hans-CN and all Sinitic profiles. | Register spoken/audio outputs separately, preserve text/audio alignment, and award no direct written-reader or Sinitic-variety reach from this profile. |
+| GLB-054 | Malaysian Malay | ms-Latn-MY | national_pluricentric_standard | Southeast Asia | regional constituent of >=250M architecture | forward_residual_audit | The rounded 32.4M Malaysia territory population and 20.6M Bumiputera count are not Malay-reader counts. Indonesian contributes zero direct Malaysian demographic reach without directed evidence. | Reuse the completed Indonesian semantic and terminology assets, but produce and audit an explicit ms-Latn-MY locale output; keep Brunei Rumi/Jawi derivatives separate. |
+
+# Appendix E. Bridge and shared-production architectures
+
+| ID | Architecture | Mechanism | Named outputs | Diagnostic universe | Direct reach status | Compute reuse | Exclusions | Next measurement |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ARCH-001 | Standard Written Chinese localized package | learned_written_standard | zh-Hans-CN; zh-Hant-TW; zh-Hant-HK; zh-Hant-MO; zh-Hans-SG; optional zh-Hans-MY | Mainland territory >1.4B plus separate locale cells | No blanket spoken-Sinitic reach; named written-standard outputs only | Very high semantic/toolchain reuse | Wu, Yue vernacular, Taigi, Hakka and other Sinitic products remain separate | Measure locale-specific source/QA token reuse and written academic comfort |
+| ARCH-002 | South Asian multilingual production system | parallel_semantic_core_compute_only | separate India/Pakistan/Bangladesh language-script outputs | >1.35B current disjoint planning envelope | Zero direct reader reach of the core | Potentially very high shared formula/semantic/accessibility QA reuse | No pan-South-Asian reader surface or genealogy multiplier | Measure core, locale, script and QA tokens per named output |
+| ARCH-003 | Global English overlap/accessibility baseline | learned_lingua_franca | plain English; locale overlays; bilingual glossaries | >2B institutional first/additional-language diagnostic | Unmeasured academic comfort; never unique reach by default | High source reuse and accessibility leverage | Does not replace local-language editions | Measure stage/subject comfort and exact plain/offline access gain |
+| ARCH-004 | Arabic MSA plus spoken-language scaffolds | learned_written_standard | arb written core plus Egyptian/Levantine/Iraqi/Gulf/Maghrebi/Yemeni/Sudanese/Hassaniya layers | 400-450M umbrella diagnostic | Named outputs only; MSA not L1 | High formal-core and RTL reuse | Non-Arabic L1 communities and dialect comfort remain separate | Measure local oral scaffold effect by stage/task |
+| ARCH-005 | Romance localized/intercomprehension core | natural_intercomprehension_and_pluricentric_reuse | Spanish; Portuguese; French; optional research bridge | Nonadditive >1B headline speaker estimates | Only directed written comprehension receives reach | High terminology/source reuse | No one pan-Romance replacement or summed audience | Measure mathematical expert/novice written comprehension and locale token reuse |
+| ARCH-006 | Hindi-Urdu two-script core | pluricentric_shared_core | hi-Deva-IN; ur-Aran-IN; ur-Aran-PK | 395,205,166 exact named L1 cells | No demonstrated untrained academic-text cross-script reach | High semantic/formula reuse | Hindi umbrella subsidiaries remain separate | Measure transliteration/locale QA and directed educational comprehension |
+| ARCH-007 | Indonesian-Malaysian Malay package | pluricentric_shared_core | id-Latn-ID; ms-Latn-MY; Brunei/Jawi named derivatives | ~274M functional diagnostic; ~319M territory ceiling | Only each named locale population receives direct reach | Very high MABBIM/terminology reuse | Javanese, Sundanese, Madurese and other languages excluded | Measure Malaysian/Bruneian locale delta after completed Indonesian source |
+| ARCH-008 | Bangla Bangladesh-India shared core | pluricentric_shared_core | bn-Beng-BD; bn-Beng-IN | ~264.6M L1 diagnostic | Two distinct locale outputs | High same-script semantic reuse | No locale-neutral curriculum or professional overlay | Measure source reuse and locale-specific terminology/examples |
+| ARCH-009 | Russian learned-standard overlap | learned_lingua_franca | ru-Cyrl locale/localization outputs | >250M institutional diagnostic | Unique residual unmeasured | High source/localization reuse | No blanket ex-Soviet/Indigenous/displaced coverage | Measure academic comfort and local-language nonoverlap |
+| ARCH-010 | Standard Kiswahili country package | learned_lingua_franca | swh-TZ; swh-KE; swh-UG; swc-CD regional outputs | >200M institutional diagnostic | Named country/variety outputs only | High standard-core reuse | DRC varieties and non-Swahili L1 communities remain | Measure country-layer delta and written comfort |
+| ARCH-011 | Dravidian parallel pipeline | parallel_semantic_core_compute_only | te; ta-IN/ta-LK; kn; ml outputs | 228,084,103 exact Indian L1 components before Sri Lanka | Zero core reach | Shared formula, layout and QA only unless measured | Genealogy supplies no comprehension multiplier | Measure actual reused tokens across named scripts/outputs |
+| ARCH-012 | Slavic/Interslavic supplementary bridge | constructed_bridge | dual-script Interslavic plus native outputs | ~266-320M family ceiling | Current short-task evidence is not demographic reach | Terminology/semantic reuse plausible | Russian/Ukrainian bias and communities not tested remain explicit | Test mathematics by expertise, script and task; measure production reuse |
+| ARCH-013 | Turkic branch production | parallel_semantic_core_and_constructed_hypothesis | Oghuz, Kipchak, Karluk named outputs | ~200M family; Oghuz ~110-120M | No pan-Turkic direct reach | Branch terminology/model reuse plausible | No family-wide standard or comprehension | Measure per-branch reuse and directed text comprehension |
+| ARCH-014 | Persian-Dari-Tajik core | pluricentric_shared_core | fa-IR; prs-AF; tg-Cyrl-TJ | ~102M functional diagnostic; ~147M territory ceiling | Named outputs only | High semantic reuse with script/locale deltas | No one script/register or additive comfort count | Resolve exact counts and measure script/terminology delta |
+| ARCH-015 | Punjabi dual-script core | dual_script_register | pa-Guru-IN; pa-Arab-PK | 120,059,639 exact source-labelled L1 cells | Separate scripts/locale reach only | High semantic and transliteration assistance | Pakistan variety identity and cross-script literacy unresolved | Resolve Pakistan profile and measure post-edit/QA cost |
+| ARCH-016 | Hausa country/orthography package | learned_lingua_franca_shared_core | ha-Latn-NG; ha-Latn-NE; optional established Ajami layers | Cross-border >=100M plausible but unverified | No bankable cross-border written reach | Strong shared-source potential | No universal Ajami or territory-wide reach | Obtain compatible population/literacy evidence and measure country delta |
+
+# Appendix F. Reproducibility identities
+
+| Artifact | Rows | Bytes | SHA-256 |
+| --- | --- | --- | --- |
+| TOP_100.csv | 100 | 406614 | C5ACDEE9A09805A4B0C22346655C429FE7906E927512A8432F74DCE3183CBB34 |
+| TOP_10.csv | 10 | 46175 | 616E2571B02A3F1B29012479E01405B4E2169541DB4AD390CB3BB603D34B5103 |
+| top100_needs_assignment_v2.csv | 100 | 280635 | E3098F019722839E0CB64FBE4740E426F907A5FDD568A3E61E715F23D881CBA2 |
+| top100_interlanguage_overlap_crosswalk.csv | 100 | 112187 | 4C5021F7E5E6CBF642574A2AAA0BB2E3CD70CA408129E888309F5DF13C0D4E79 |
+| expected_language_profiles_v1_1.csv | 54 | 28762 | 103AC91B4BC485EAC1849A0F4ADC4D398869D5A32AC697BBE9E46875D131E5D2 |
+| bridge_shared_core_hypotheses_v1_1.csv | 16 | 6976 | 34B85DEB823977966C403575AA3119B5588644156373177E6645AE3EAD0EB7BB |
+| profile_population_estimates_supplement_v1_1.csv | 38 | 33515 | 0BA2DDC28306F9A79A256F47F80F0D2AEBB99EB34E80C782B731E1E316E9852B |
+| expected_profile_population_joins_v1_1.csv | 91 | 100823 | D949CDA66DCCD469DC3DB706933412B6C93C043ED83C48C32673C35385C44548 |
+| high_reach_education_needs_v1_1.csv | 20 | 33593 | A41FBAC87B2DF2E3876392E7AA199DB0DAE7803FE1629D6B61CBD229343391B6 |
+| table_c_forward_residual_commissioning.csv | 12 | 13418 | 0755B3AE7ED06EFC5D7505B160C1E7F5F8825DEBC04569E8D925443E9393273C |
+| V1_1_DATA_PIPELINE_REBUILD_20260831.json | — | 26311 | B59154152CC35DF16B7F26D0233C4FB4129F5AB99E121676CA0CF6DCE7A546F7 |
+| top100_companions_v1_1_validation.json | — | 1550 | 605A3E7E8D3E516D811FC20902D787143A19E20CD73C17388403C3D7C949E638 |
+| allocation_policy_v1_1_validation.json | — | 4473023 | DA7831A1C4F01D3FC9D650C4C0F820E8B38BA2412A1FEC34D05C966BD7DC1B1C |
+| opportunity_planning_sensitivity_v1_1.csv | 792 | 127265 | B3583CB76859E9B62D6646CE6349F78FC815634DA67230468E3B09E61D394589 |
+| asia_core.json | — | 89458 | 8068948F3296B2EDAE599C4126C07F6F557C1958799401EC4F0E0D2CFA7D8F30 |
+| large_profiles.json | — | 84832 | 28EACA5383EB4011A0A8BAA3F85C9513D2842FFBB27A03C4F080D714B250874D |
+| component_work_ownership_v1_1.json | — | 12636 | 8917A77C461A3196CE2B1DF2F9A256C36DB3C358EFD8B5727F486D2F4B7D025F |
+
+The source-to-claim research memos are `JAPAN_EQUAL_BASIS_RESEARCH_20260831.md`
+(SHA-256 `AE40A7DB56DB5F66A6F9DF6ADFFA21B31B7DF1629A012EBAB4CEC8651DC7320C`),
+`SIMPLIFIED_CHINESE_RESIDUAL_RESEARCH_20260831.md` (SHA-256
+`AA62604919E63BEB0DA8DA3CEA39AAD31B884450E82CA8D962806B8B8932F109`),
+`GLOBAL_LARGE_PROFILE_AND_MODALITY_AUDIT_20260831.md` (SHA-256
+`0D2C7583BA5A8F830C5959DDE4875DB3BE5DA920EA8F36CE5EFBB81D54B540B2`), and
+`INDONESIAN_PROGRAM_COMPUTE_AND_SCALE_AUDIT_20260831.md` (SHA-256
+`4A93B4EDEC44A8D310B2DAC94B87EED60EA70096925068DB6A0A843569F56260`).
+
+# Appendix G. Scope-calibrated planning judgments
+
+The following are literature-constrained commissioning judgments, not measured
+intervention effects or guaranteed positive floors. The population facts and
+curriculum/supply sources constrain the reasoning; the residual audience is an
+explicit inference. R already incorporates overlap, and no additional N multiplier
+is applied. Exact source chains, confidence, assumptions and threshold tests are
+preserved in `asia_core.json` and `large_profiles.json`.
+
+| Action | Position | R | S | A | N | Exact planning scope | Reader-band reasoning |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| NAT-121 | position 32 | R3 (range 2–3) | S2 (range 2–3) | A4 (range 3–4) | N2 (range 2–3) | The selected six-course Evidence-to-Practice and Research Core: research design/open science; applied statistics/causal reasoning in R/Python; reproducible data/AI/cybersecurity; evidence appraisal; public health/One Health; climate-smart agriculture/disaster risk. The same person taking several courses counts once. | A cross-disciplinary continuation serves a standing tertiary/professional cohort, not all Indonesian speakers. Official higher-education statistics place the enrolled cohort near ten million; the established mathematics program supplies prerequisites and reusable delivery infrastructure. WHO's separately reported 574,343 nurses supports a concrete professional route but is not added to enrollment. Hundreds of thousands to low millions gaining materially easier independent access is a plausible planning envelope; no source measures that residual directly. R4 would require over ten million newly served, approximately the entire enrolled cohort before any overlap discount, so it is not assigned to this six-course scope. |
+| NAT-122 | position 34 | R3 (range 2–3) | S2 (range 1–2) | A4 (range 3–4) | N2 (range 1–2) | Complete Calculus I CALC1-0031 through CALC1-0055, continue Calculus II/III and Statistics, and add semantic/offline/accessible derivatives to completed corpora. The later school, 144-hour vocational, adult-finance and frontier proposals do not contribute extra audience to this score. | The 48.7257m higher-education enrollment provides a relevant gross scale, but substantial native-language calculus/statistics supply and completed Open Logic/algebra imply a much smaller residual. A multi-title no-login, downloadable, exercise-complete and semantic-accessibility package can plausibly improve access for hundreds of thousands to low millions of prepared students and independent learners; this remains a planning judgment. Over ten million would require demonstrating a much broader distinct residual, which the current exact package evidence does not establish. |
+| NAT-123 | position 37 | R2 (range 1–3) | S2 (range 2–3) | A4 (range 3–4) | N2 (range 2–3) | The selected Japanese Open Mathematics Access and Research Bridge: accessible self-study diagnostics/prerequisite repair, full solutions, easy-Japanese/furigana and multilingual terminology for non-attending pupils, adult re-entry and pupils needing Japanese-language instruction. Later title-specific EGA/SGA/FGA translations are not counted as a mass audience. | Officially identified cohorts include 353,970 non-attending compulsory pupils, 84,759 needing Japanese instruction and an approximately 7.47m low-numeracy adult exposure. These overlap and neither outcome directly measures language-caused deprivation. Tens of thousands to low millions benefiting from the specific no-login accessible/re-entry route is plausible; the central planning band is hundreds of thousands because school-textbook supply is strong and most adults require more than language substitution alone. Adult re-entry supports an R3 favorable scenario, not an R4 or language-wide negative control. |
+| SHC-BN | position 1 | R3 (range 2–3) | S3 (range 2–3) | A3 (range 2–3) | N3 (range 2–4) | Residual SHC-BN only: Bangladesh 24-week caregiver-mediated early-childhood numeracy/school-readiness for children 36-59 months, plus Indian Bengali secondary/TVET workshop mathematics, safety, coding, finance and entrepreneurship. Link NAT-001 for grades 2-5 recovery; link NAT-002 for Indian grades 3-8 catch-up rather than duplicate either spine. | Base R3 is a joint residual-package judgment: the Indian Bengali TVET component alone has a low-million central opportunity, with a smaller additional Bangladesh preschool component. It is not R3 because two labels were summed. Low R2 reflects weaker residual use in both settings; favorable R3 reflects several-million joint use, not the Cartesian maximum of both broad component bands. R4 is not proved impossible but is no longer a retained favorable scenario for this narrower first output. No primary recovery audience is included. |
+| IL-HU | position 57 | R2 (range 2–3) | S3 (range 2–3) | A3 (range 2–3) | N3 (range 2–4) | Residual IL-HU only: two separately localized Urdu first-year disciplinary and research-methods outputs, ur-Aran-IN and ur-Aran-PK. Reuse the separately owned NAT-124 Hindi semantic/formula source; do not commission or count a new Hindi output. | Base R2 is a direct joint judgment of hundreds-of-thousands newly comfortable Urdu users across the two localized first-year/methods packages, not an arithmetic consequence of two R2 labels. Each component could occupy different parts of its broad band; together they may cross 1m, so favorable R3 is explicit. The cautious joint endpoint R2 is consistent with Pakistan's own cautious R2 component. Hindi's much larger population and professional reach are excluded completely from this residual score. |
+| NAT-125 | position 4 | R3 (range 2–4) | S3 (range 3–4) | A3 (range 2–3) | N3 (range 2–4) | Declared versioned Devanagari Bhojpuri editorial register with teacher-independent foundational numeracy through algebra, full worked answers, offline/phone/audio delivery and explicit Bhojpuri-to-Hindi academic terminology transfer. Bihar/eastern-UP overlays; no Nepal or diaspora audience. | The 50.579m exact mother-tongue return and absence of an evidenced continuous Bhojpuri mathematics/STEM sequence support a substantial plausible first-language scaffold opportunity. Hindi-medium schooling does not establish comfortable academic comprehension, but nor can its overlap be treated as zero. Audio and explicit transfer reduce the written-literacy barrier. A low-million standing opportunity is a defensible provisional base; the wide range reflects unmeasured Hindi comfort, age/stage match and oral-to-written uptake. |
+| NAT-001 | position 51 | R3 (range 2–3) | S3 (range 2–3) | A3 (range 2–3) | N3 (range 2–4) | Bangladesh Bangla grades 2-5 number sense, operations, place value, fractions, measurement and patterns with diagnostics and full worked answers, including only caregiver instructions supporting these same grades. Excludes preschool 36-59 months and Indian Bengali outputs. | Base R3 is a low-million planning opportunity for a four-grade recovery kit within the large Bangladesh child cohort, supported by directly observed foundational deficits and missing practice/feedback continuity. The former Bangladesh component included preschool/ECE; that extra audience is now excluded. R4 is not retained for this narrower initial kit, and no grade-population interpolation or arbitrary percentage is used. |
+| NAT-124 | position 7 | R3 (range 2–4) | S3 (range 2–3) | A4 (range 3–4) | N3 (range 2–3) | Standard Hindi hi-Deva-IN first-year physics, chemistry, biology, statistics, computing, economics and management, followed by research design, R/Python and open-science methods. Exact HRN-004; no Urdu/Bhojpuri or already completed formal-reasoning audience. | Base R3 is a low-million Standard Hindi professional/tertiary continuity opportunity, not the whole 322.230m mother-tongue cell. Extensive school supply and completed formal reasoning are credited. R4 is favorable for the same selected multidisciplinary and methods route including independent re-entry/professional users, not for an unscoped all-education portfolio; no numerical fraction is chosen. |
+| SHC-HAUSA | position 5 | R3 (range 2–4) | S3 (range 2–3) | A2 (range 2–3) | N3 (range 3–4) | Current first package only: Nigeria/Niger boko foundational literacy and numeracy, with separately localized English/French bridges and print/audio/IVR; optional Ajami is a separate named layer. Potential learners after the package's own entry bridge, not already fluent readers and not future TVET users. | A tens-of-millions Hausa speech community and independently evidenced foundational-learning crisis make a million-scale joint cohort plausible for a full foundational package. R3 is the base judgment; R4 is a favorable extension to adult beginning readers and both country outputs, not a finding that 10–50M currently read boko. No R5 credit. |
+| SHC-SWAHILI | position 19 | R2 (range 2–3) | S2 (range 1–3) | A2 (range 2–3) | N2 (range 2–3) | Current first package only: DRC grades 1–3 Kiswahili completion/adaptation with French bridge and regional-variety overlays; Uganda P4 Kiswahili-L2 support with offline audio. Tanzania/Kenya secondary or advanced editions are follow-on, not counted here. | The current package targets only two grade/country routes, so whole-family 200M speech estimates and legacy Tanzanian R4 are irrelevant to its first-output audience. A hundred-thousand-to-million-scale opportunity is plausible across these large systems but an exact language-by-grade-by-supply joint denominator is absent. |
+| IL-AR | position 15 | R3 (range 2–4) | S2 (range 2–3) | A2 (range 2–3) | N3 (range 3–4) | Current first package only: vowelled MSA foundational sequence with named country spoken narration, plus country-specific crisis catch-up literacy/science/health/WASH. Count only children whose spoken layer and entry route are actually supplied; later MSA professional/research editions are excluded. | Regional crisis and foundational-learning cohorts are large enough to support a provisional million-scale planning opportunity, while the mechanism is exact spoken-to-MSA scaffolding, not generic MSA availability. R4 is a favorable scenario across multiple completed country outputs, not a 400M blanket-reader assumption. |
+| NAT-028 | position 14 | R3 (range 2–3) | S2 (range 2–3) | A4 (range 3–4) | N3 (range 2–3) | Current five Vietnamese applied TVET/university courses in data/digital work, green agriculture/aquaculture, health evidence, MSME finance and applied biology/chemistry; their worked self-study material, not later postgraduate/frontier courses. | Five practically broad courses can plausibly serve a million-scale residual from large employed and education cohorts, but the older 89M language estimate is not their readership. The industrial/digital component alone has a 17.4M employed-sector context and documented skills need. R3 is a provisional joint-eligibility judgment, not an observed conversion rate. |
+| NAT-033 | position 52 | R3 (range 2–3) | S2 (range 1–2) | A3 (range 3–4) | N2 (range 2–3) | Current 120 Filipino-English STEM-Kabuhayan micro-lessons for grades 7–12, ALS and TVET, with replaceable home-language tracks, worked answers and offline distribution. Not the whole Philippine population or later research spine. | Official secondary entry-grade registrations are already million-scale, and the package spans six grades plus ALS/TVET. Combined with offline-access gaps and the explicit bilingual design this supports a provisional R3, not proof all secondary learners lack resources. |
+| NAT-003 | position 2 | R3 (range 2–3) | S3 (range 2–3) | A4 (range 3–4) | N3 (range 3–4) | Current applied secondary/TVET/first-year STEM, coding, financial safety and entrepreneurship package with Telugu-English terminology, Andhra Pradesh/Telangana crosswalks, worked solutions and offline simulations. | The aged census language category minus reported English-or-Hindi subsidiary-language union establishes a large no-reported-bridge context, not an academically ready or newly served count. Combining that with the exact stage discontinuity supports a 100k–10M planning interval, with the stated baseline; legacy whole-OpenLogic R4 is not copied onto this first package. |
+| NAT-006 | position 35 | R3 (range 2–3) | S2 (range 2–3) | A4 (range 3–4) | N2 (range 2–3) | Current applied science/workshop/computing/finance/entrepreneurship package for secondary/TVET/first-year transition, not later statewide agriculture or research courses. | The aged census language category minus reported English-or-Hindi subsidiary-language union establishes a large no-reported-bridge context, not an academically ready or newly served count. Combining that with the exact stage discontinuity supports a 100k–10M planning interval, with the stated baseline; legacy whole-OpenLogic R4 is not copied onto this first package. |
+| NAT-004 | position 21 | R2 (range 2–3) | S2 (range 2–3) | A4 (range 3–4) | N3 (range 3–4) | Current Tamil-English first-year STEM/computing/management bridge with worked problems, offline simulations and introductory research methods. Later professional education and all school grades are outside this R. | The aged census language category minus reported English-or-Hindi subsidiary-language union establishes a large no-reported-bridge context, not an academically ready or newly served count. Combining that with the exact stage discontinuity supports a 100k–10M planning interval, with the stated baseline; legacy whole-OpenLogic R4 is not copied onto this first package. |
+| IL-PUNJABI | outside the current Top 100; retained in the full candidate disposition | R2 (range 2–3) | S3 (range 2–3) | A3 (range 2–4) | N2 (range 2–3) | Current synchronized secondary/TVET/first-year STEM package with distinct Gurmukhi India and declared Pakistan Perso-Arabic outputs. Numerical interval below covers the currently resolved Indian component only; Pakistan's target-resolution ceiling is shown separately, not zeroed. | The resolved Indian component supports a provisional hundred-thousand-to-million-scale transition opportunity. Pakistan offers potentially much larger additional access, but its census Punjabi label does not resolve one written production variety; assigning the entire 88.9M to a particular ISO code would fabricate precision. |
+| GLB-044 | position 17 | RU | S1 (range 1–2) | A4 (range 3–4) | N2 (range 1–2) | Current 36 offline life-capability modules in health, fraud/SME finance, agriculture/climate, practical science, computing and AI verification. | No source inspected here cross-tabulates the proposed residual package, language comfort and existing usable-resource access. An R2/R3 assignment based solely on a large industrialized population would be arbitrary. The profile remains a positive residual opportunity with RU, not R0 or a blanket negative control. |
+| GLB-024 | position 11 | RU | S1 (range 1–2) | A4 (range 3–4) | N2 (range 1–2) | Current grades 3–9 mastery-recovery package with health/household finance/digital/climate applications and complete diagnostic feedback; country overlays required. | No source inspected here cross-tabulates the proposed residual package, language comfort and existing usable-resource access. An R2/R3 assignment based solely on a large industrialized population would be arbitrary. The profile remains a positive residual opportunity with RU, not R0 or a blanket negative control. |
+| GLB-025 | position 12 | RU | S1 (range 1–2) | A4 (range 3–4) | N2 (range 1–2) | Current adult/vocational/professional self-study mastery/transition bundle built from reusable Brazilian sources; no-login/offline and semantic access. | No source inspected here cross-tabulates the proposed residual package, language comfort and existing usable-resource access. An R2/R3 assignment based solely on a large industrialized population would be arbitrary. The profile remains a positive residual opportunity with RU, not R0 or a blanket negative control. |
+| GLB-027 | position 9 | RU | S1 (range 1–2) | A4 (range 3–4) | N2 (range 1–2) | Current statistics/causal-inference/reproducible Python-R/research-integrity/data-stewardship/AI-evidence course with applied tracks; later frontier texts excluded. | No source inspected here cross-tabulates the proposed residual package, language comfort and existing usable-resource access. An R2/R3 assignment based solely on a large industrialized population would be arbitrary. The profile remains a positive residual opportunity with RU, not R0 or a blanket negative control. |
+
+Sources: Several source checks materially changed package scope. The DRC ministry already
+lists Kiswahili early-grade pupil books, workbooks, teacher guides and literacy
+materials, so the proposal targets specified feedback, accessible/offline and
+regional-variety gaps rather than claiming all such textbooks absent (Ministry of
+National Education and New Citizenship, n.d.). UNICEF's 30-million figure concerns
+out-of-school children aged 5–18 across 12 MENA countries, not 30 million Arabic
+readers (UNICEF, 2025). Final BBS/UNICEF MICS 2025 reports foundational numeracy for
+39.2% of ages 7–14, reading for 50.2%, and ECE attendance for 16.6% at ages 36–59
+months; those outcome/attendance measures are not a causal count of language exclusion
+(Bangladesh Bureau of Statistics & UNICEF, n.d.).
+
+Source: The Indonesian 2025 higher-education report extraction gives 10,754,154 enrolled
+students; the live portal shows a different snapshot near ten million. The 33.9-MB
+report was not page-audited in this bounded pass, so the exact extraction remains
+provisional and the snapshots are not averaged; only their order of magnitude informs
+the recommendation. Pakistan's indexed 2022-23 enrollment anchor is 1,964,147, not a
+measure of Urdu readership (Higher Education Commission, 2024, p. 202). Indian Hindi
+evidence is not independent Urdu evidence. These are source limits, not zero-access
+findings.

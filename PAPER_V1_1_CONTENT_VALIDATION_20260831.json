@@ -1,0 +1,84 @@
+{
+  "schema": "interlanguage/paper-v1-1-content-validation/1.0.0",
+  "status": "PASS",
+  "checks": {
+    "paper_nonempty": true,
+    "canonical_top100": true,
+    "canonical_top100_positions": true,
+    "canonical_top10_exact_prefix": true,
+    "paper_top10_summary_matches_canonical_prefix": true,
+    "paper_top10_needs_matches_canonical_prefix": true,
+    "paper_appendix_a_matches_canonical_order_and_content": true,
+    "paper_appendix_b_matches_canonical_order_and_content": true,
+    "paper_appendix_c_matches_canonical_ids_and_order": true,
+    "all_required_claims_present": true,
+    "all_stale_claims_absent": true,
+    "user_first_name_absent_case_insensitive": true,
+    "root_input_partition": true,
+    "root_total_invariant": true,
+    "putonghua_arithmetic": true,
+    "bangladesh_arithmetic": true,
+    "chinese_forward_state": true,
+    "appendix_a_has_100_rows": true,
+    "appendix_b_has_100_rows": true,
+    "appendix_c_has_100_rows": true,
+    "appendix_d_has_54_rows": true,
+    "appendix_e_has_16_rows": true,
+    "appendix_f_has_expected_artifact_rows": true,
+    "appendix_g_has_every_calibration": true,
+    "calibration_provenance_hashes_present": true,
+    "planning_measurement_distinction_present": true,
+    "observation_rows_not_fake_commissions": true,
+    "key_references_present": true,
+    "allocation_policy_receipt_schema": true,
+    "allocation_policy_receipt_status": true,
+    "allocation_policy_receipt_checks": true,
+    "allocation_policy_receipt_inputs": true,
+    "allocation_policy_receipt_policy": true,
+    "allocation_policy_receipt_diagnostics": true,
+    "paper_allocation_policy_receipt_provenance": true
+  },
+  "appendix_counts": {
+    "appendix_a_top100": 100,
+    "appendix_b_top100": 100,
+    "appendix_c_crosswalk": 100,
+    "appendix_d_universe": 54,
+    "appendix_e_architectures": 16,
+    "appendix_f_artifacts": 17,
+    "appendix_g_calibrations": 21
+  },
+  "arithmetic": {
+    "putonghua": {
+      "low": 1139517198,
+      "base": 1139587786,
+      "high": 1139658374
+    },
+    "bangladesh_bangla_point": 168419331,
+    "root_input_partition": 83386749267
+  },
+  "paper": {
+    "bytes": 340091,
+    "sha256": "4816EED71728B0A9A29AA4D2B28BB9FB716035515D53A9337A23F7A5E59D23B1"
+  },
+  "top100": {
+    "bytes": 406614,
+    "sha256": "C5ACDEE9A09805A4B0C22346655C429FE7906E927512A8432F74DCE3183CBB34"
+  },
+  "top10": {
+    "bytes": 46175,
+    "sha256": "616E2571B02A3F1B29012479E01405B4E2169541DB4AD390CB3BB603D34B5103"
+  },
+  "forward": {
+    "bytes": 13418,
+    "sha256": "0755B3AE7ED06EFC5D7505B160C1E7F5F8825DEBC04569E8D925443E9393273C"
+  },
+  "compute_receipt": {
+    "bytes": 6620,
+    "sha256": "1DAFEAC9EB161204DF470D247811F4E29415EE8AB3A297E412DBDD619CC0911C"
+  },
+  "allocation_policy_receipt": {
+    "bytes": 4473023,
+    "sha256": "DA7831A1C4F01D3FC9D650C4C0F820E8B38BA2412A1FEC34D05C966BD7DC1B1C"
+  },
+  "limitations": "This validates source state, selected arithmetic, exact canonical Top-10 prefix, emitted paper table order and content, optional allocation-policy receipt schema/status, stale-claim absence, and appendix closure. It does not replace PDF rendering or visual QA."
+}

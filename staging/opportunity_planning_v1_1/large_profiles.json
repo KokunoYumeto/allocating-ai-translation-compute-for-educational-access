@@ -1,0 +1,1173 @@
+{
+  "schema": "educational-access/provisional-package-calibration/1.0",
+  "created_utc": "2026-08-31",
+  "scope": "Large intensively researched profiles assigned to this bounded calibration; excluded NAT-121,NAT-122,NAT-123,NAT-125,SHC-BN,IL-HU.",
+  "method": {
+    "controlling_source": "../marginal_intelligibility_reach_20260816/SCORING_MODEL.md",
+    "R_ranges": {
+      "1": "<100000",
+      "2": "100000–1000000",
+      "3": "1000000–10000000",
+      "4": "10000000–50000000",
+      "5": ">50000000"
+    },
+    "interval_semantics": "Ordinal planning intervals and explicit baseline judgments, not estimated confidence intervals, observed beneficiaries, causal effects, uptake forecasts, or fractions mechanically applied to populations.",
+    "scope_rule": "Only current first package with its own entry/prerequisite/accessibility work. Future packages cannot inflate the first-output R.",
+    "non_overlap": "R is net of literacy/entry feasibility, academic-language comfort and existing usable editions. N is descriptive evidence about that residual and must not be applied again as an invented multiplicative discount.",
+    "no_experimental_requirement": "Plausible literature-backed inferences are allowed. Unknown remains unknown only where the inspected sources do not support any defensible magnitude; no human review or experiment is a construction/publication prerequisite.",
+    "missing_joint_data": "Threshold percentages are arithmetic requirements for a band, not measured or assumed population fractions. Narrowing scope to currently enrolled pupils alone would incorrectly erase self-directed adults, but those adults cannot be silently counted either.",
+    "S_adaptation": "Original S concerns advanced/open material. Current ECE/foundation cases explicitly reinterpret S as scarcity of the exact commissioned usable package at its stage; this crosswalk must be declared, not hidden."
+  },
+  "new_sources": [
+    {
+      "id": "LARGE-NEW-001",
+      "authority": "UNICEF Nigeria",
+      "title": "Enabling teachers, educating children",
+      "url": "https://www.unicef.org/nigeria/stories/enabling-teachers-educating-children",
+      "date": "2025-02-07",
+      "verified": "2026-08-31 web page body",
+      "claim": "Nigeria-wide foundational literacy/numeracy difficulty exceeds 70%; the small 12-school pilot is contextual evidence, not a Hausa population sample.",
+      "limitation": "No Hausa-specific cross-tabulation of need, script literacy and available resources."
+    },
+    {
+      "id": "LARGE-NEW-002",
+      "authority": "UNICEF MENA",
+      "title": "At least 30 million children out of school in the Middle East and North Africa",
+      "url": "https://www.unicef.org/mena/press-releases/least-30-million-children-out-school-middle-east-and-north-africa",
+      "date": "2025-01-24",
+      "verified": "2026-08-31 primary institutional result and page text",
+      "claim": "At least 30 million out-of-school children aged 5–18 across 12 countries; approximately one third of children in those countries.",
+      "limitation": "Neither an Arabic-only count nor an accessible-reader count. Current needs CSV URL omitted 'and' between east and north."
+    },
+    {
+      "id": "LARGE-NEW-003",
+      "authority": "World Bank",
+      "title": "Advancing Arabic Language Teaching and Learning",
+      "url": "https://documents1.worldbank.org/curated/en/909741624654308046/pdf/Advancing-Arabic-Language-Teaching-and-Learning-A-Path-to-Reducing-Learning-Poverty-in-the-Middle-East-and-North-Africa.pdf",
+      "date": "2021",
+      "verified": "2026-08-31 PDF text pp.5,9–12",
+      "claim": "The report distinguishes spoken dialect acquisition from school-acquired MSA, diagnoses 59% regional learning poverty, and supports deliberate spoken-to-MSA scaffolding and sequenced foundational teaching.",
+      "limitation": "Regional and historical synthesis; no single constant comprehension coefficient across dialects or countries."
+    },
+    {
+      "id": "LARGE-NEW-004",
+      "authority": "DRC Ministry of National Education and New Citizenship",
+      "title": "School programmes",
+      "url": "https://edu-nc.gouv.cd/national-programmes",
+      "date": "undated live page",
+      "verified": "2026-08-31 page body and named download-link inventory",
+      "claim": "The ministry lists Kiswahili pupil books, workbooks and teacher guides for grades 1–3, plus initial/functional literacy materials. Therefore absence of all DRC Kiswahili early-grade books is false.",
+      "limitation": "Link inventory checked, not every linked file. At least one grade-1 pupil-book link shares a destination with a Ciluba-labelled link; exact bytes, license, variety fit, solution closure and accessibility remain distinct checks."
+    },
+    {
+      "id": "LARGE-NEW-005",
+      "authority": "Department of Education, Philippines",
+      "title": "DepEd records 4.5M early registrants for SY 2021-2022",
+      "url": "https://www.deped.gov.ph/2021/06/04/deped-records-4-5m-early-registrants-for-sy-2021-2022/",
+      "date": "2021-06-04",
+      "verified": "2026-08-31 official page; source internally has a school-year wording inconsistency",
+      "claim": "The page reports 1,143,193 grade-7 and 867,997 grade-11 early registrants, a combined 2,011,190 transition-grade registration scale.",
+      "limitation": "Aged, early registrations rather than final enrollments; two distinct entry grades, not all secondary learners or Filipino/English-comfort counts."
+    },
+    {
+      "id": "LARGE-NEW-006",
+      "authority": "Ministry of Education, India / Press Information Bureau",
+      "title": "Ministry releases AISHE 2021-2022",
+      "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1999713&lang=2&reg=48",
+      "date": "2024-01-25",
+      "verified": "2026-08-31 official page body",
+      "claim": "Approximately 43.3 million higher-education enrollments nationally, including 9.85 million STEM enrollments across undergraduate through doctoral levels.",
+      "limitation": "National institutional enrollments, not language-specific people, first-year enrollments or unmet need. No proportional allocation to Telugu/Tamil/Marathi is performed."
+    }
+  ],
+  "input_identities": [
+    {
+      "path": "../marginal_intelligibility_reach_20260816/SCORING_MODEL.md",
+      "bytes": 8257,
+      "sha256": "4F8377EED3F4E44C346A568230EAD8E972F6C98AED1BAC8378CBB6B1C956F1C7"
+    },
+    {
+      "path": "../marginal_intelligibility_reach_20260816/GLOBAL_GAP_REGISTER.csv",
+      "bytes": 79198,
+      "sha256": "709007A3B8236D3ADA1CEC612229F4F301DEA2385E10003546696B1CBB1B8A85"
+    },
+    {
+      "path": "EVIDENCE_REGISTER.jsonl",
+      "bytes": 91576,
+      "sha256": "B2DE74D7CFA2A06D4A9C0DA9D07E6918EDACD95B91089DE6522988ED20231908"
+    },
+    {
+      "path": "MULTIDISCIPLINARY_HIGH_REACH_CASES_20260830.md",
+      "bytes": 15207,
+      "sha256": "2F7CE0441B2A9883CE50B50417A508FC574B54432877C911B09125943635E56A"
+    },
+    {
+      "path": "staging/high_reach_education_needs/high_reach_education_needs_v1_1.csv",
+      "bytes": 32570,
+      "sha256": "0157E357C4E5B51E8A2CDC96D68358597BF9D3B60183093B92562AA14ABAE6BB"
+    },
+    {
+      "path": "staging/high_reach_education_needs/high_reach_needs_portfolio_edges_v1_1.csv",
+      "bytes": 1996,
+      "sha256": "429A5CA6D0BED571471DB9AA2E0B67FEC157CBBBD4A717262B8F158E838458CC"
+    },
+    {
+      "path": "staging/authoritative_exposure_portfolio_v1_1/full_computed_allocation_queue.csv",
+      "bytes": 876952,
+      "sha256": "951D932CDD947B5C58C8D1B116677737D136F1465797FC4E3492788429D42DAA"
+    }
+  ],
+  "entries": [
+    {
+      "entry_id": "SHC-HAUSA",
+      "name": "Hausa Nigeria/Niger foundational package",
+      "planning_scope": "Current first package only: Nigeria/Niger boko foundational literacy and numeracy, with separately localized English/French bridges and print/audio/IVR; optional Ajami is a separate named layer. Potential learners after the package's own entry bridge, not already fluent readers and not future TVET users.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 4,
+          "baseline": 3,
+          "basis": "A tens-of-millions Hausa speech community and independently evidenced foundational-learning crisis make a million-scale joint cohort plausible for a full foundational package. R3 is the base judgment; R4 is a favorable extension to adult beginning readers and both country outputs, not a finding that 10–50M currently read boko. No R5 credit.",
+          "evidence_ids": [
+            "SUPSRC-NEWMAN-HAUSA-2022",
+            "SUPSRC-WORLDBANK-HAUSA-2022",
+            "HRN-014",
+            "LARGE-NEW-001"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current first package only: Nigeria/Niger boko foundational literacy and numeracy, with separately localized English/French bridges and print/audio/IVR; optional Ajami is a separate named layer. Potential learners after the package's own entry bridge, not already fluent readers and not future TVET users.",
+          "population_ceiling_context": "58M and 94M published speaker estimates are alternatives with different scope, never summed. Neither is a boko/Ajami reader count.",
+          "thresholds": "R3 requires at least 1M distinct people jointly needing the foundational content, understanding the chosen country Hausa surface and gaining access through print/audio/IVR. R4 requires at least 10M meeting that joint condition; relative to the smaller 58M speech estimate these thresholds are 1.72% and 17.24%, not estimated eligibility fractions.",
+          "scenarios": {
+            "cautious": "R2 if only a narrow boko-literate distribution cohort gains materially.",
+            "baseline": "R3 for complete foundational package including its own oral/literacy entry route.",
+            "favorable": "R4 only for distinct multi-country child-and-adult learner cohorts served by completed country outputs."
+          },
+          "base": 3,
+          "base_basis": "A tens-of-millions Hausa speech community and independently evidenced foundational-learning crisis make a million-scale joint cohort plausible for a full foundational package. R3 is the base judgment; R4 is a favorable extension to adult beginning readers and both country outputs, not a finding that 10–50M currently read boko. No R5 credit.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 3,
+          "basis": "RANA readers and government resources already exist. Scarcity is the integrated diagnostic, answer-complete, offline country pathway—not absence of Hausa books. Advanced-material S3 cannot alone justify the foundational package.",
+          "evidence_ids": [
+            "HRN-014",
+            "https://education.gov.ng/e-learning-resources/"
+          ],
+          "base": 3,
+          "base_basis": "RANA readers and government resources already exist. Scarcity is the integrated diagnostic, answer-complete, offline country pathway—not absence of Hausa books. Advanced-material S3 cannot alone justify the foundational package.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "Boko/Unicode production and low-tech audio/print routes are practicable; literacy, distribution and connectivity remain substantial design constraints. An audio route broadens usable access without pretending all speakers can read.",
+          "evidence_ids": [
+            "HRN-014",
+            "LARGE-NEW-001"
+          ],
+          "base": 2,
+          "base_basis": "Boko/Unicode production and low-tech audio/print routes are practicable; literacy, distribution and connectivity remain substantial design constraints. An audio route broadens usable access without pretending all speakers can read.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 3,
+          "basis": "Selected beginning readers are not assumed comfortably served by English/French schooling, but country bilingualism and existing Hausa-resource overlap are unresolved. The same person receives one joint incremental-access count.",
+          "evidence_ids": [
+            "HRN-014",
+            "LARGE-NEW-001"
+          ],
+          "base": 3,
+          "base_basis": "Selected beginning readers are not assumed comfortably served by English/French schooling, but country bilingualism and existing Hausa-resource overlap are unresolved. The same person receives one joint incremental-access count.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "low-medium numerical planning; strong need regime",
+      "no_double_discount": "R is already net of existing usable editions and academic-language comfort. N describes why that residual is plausible; do not multiply a further arbitrary N fraction into R.",
+      "package_correction": "Credit existing Hausa early readers and build closure/feedback/localization around them; later TVET is outside this R calibration."
+    },
+    {
+      "entry_id": "SHC-SWAHILI",
+      "name": "Kiswahili DRC/Uganda first package",
+      "planning_scope": "Current first package only: DRC grades 1–3 Kiswahili completion/adaptation with French bridge and regional-variety overlays; Uganda P4 Kiswahili-L2 support with offline audio. Tanzania/Kenya secondary or advanced editions are follow-on, not counted here.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "The current package targets only two grade/country routes, so whole-family 200M speech estimates and legacy Tanzanian R4 are irrelevant to its first-output audience. A hundred-thousand-to-million-scale opportunity is plausible across these large systems but an exact language-by-grade-by-supply joint denominator is absent.",
+          "evidence_ids": [
+            "HRN-013",
+            "LARGE-NEW-004"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current first package only: DRC grades 1–3 Kiswahili completion/adaptation with French bridge and regional-variety overlays; Uganda P4 Kiswahili-L2 support with offline audio. Tanzania/Kenya secondary or advanced editions are follow-on, not counted here.",
+          "population_ceiling_context": "200M global users and 61.74M/47.56M/45.91M country totals are not compatible grade-specific reader denominators and are not summed.",
+          "thresholds": "R2 requires >=100k distinct grade-appropriate learners with usable local-language/entry support and a residual gap. R3 requires >=1M such learners. Existing textbooks must be excluded only where they already supply the proposed usable package, not just because a catalog entry exists.",
+          "scenarios": {
+            "cautious": "RU if the exact local varieties and grade population remain unresolved; unknown is not zero.",
+            "baseline": "R2 for the DRC/Uganda bounded country package.",
+            "favorable": "R3 when completed locality-specific outputs cover a million-scale residual; no R4 inherited from Tanzania."
+          },
+          "base": 2,
+          "base_basis": "The current package targets only two grade/country routes, so whole-family 200M speech estimates and legacy Tanzanian R4 are irrelevant to its first-output audience. A hundred-thousand-to-million-scale opportunity is plausible across these large systems but an exact language-by-grade-by-supply joint denominator is absent.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 3,
+          "baseline": 2,
+          "basis": "New DRC ministry inventory evidences early-grade Kiswahili books and literacy packages. Scarcity now concerns verified missing components, independent worked feedback, accessible/offline reuse and regional fit; Uganda L2 supply is a separate problem.",
+          "evidence_ids": [
+            "LARGE-NEW-004",
+            "HRN-013"
+          ],
+          "base": 2,
+          "base_basis": "New DRC ministry inventory evidences early-grade Kiswahili books and literacy packages. Scarcity now concerns verified missing components, independent worked feedback, accessible/offline reuse and regional fit; Uganda L2 supply is a separate problem.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "Latin orthography and ordinary print/audio tooling are usable, but region-specific comprehension, L2 entry and low-resource distribution require country-specific formats.",
+          "evidence_ids": [
+            "HRN-013"
+          ],
+          "base": 2,
+          "base_basis": "Latin orthography and ordinary print/audio tooling are usable, but region-specific comprehension, L2 entry and low-resource distribution require country-specific formats.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "Credit existing local Kiswahili and French/English access where usable. Do not award automatic coverage to every DRC national-language or Ugandan home-language community.",
+          "evidence_ids": [
+            "HRN-013",
+            "LARGE-NEW-004"
+          ],
+          "base": 2,
+          "base_basis": "Credit existing local Kiswahili and French/English access where usable. Do not award automatic coverage to every DRC national-language or Ugandan home-language community.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "low population-band judgment; high correction of blanket textbook-absence claim",
+      "required_prose_correction": "Rephrase DRC recommendation as audit/reuse/complete existing Kiswahili early-grade materials and supply missing self-study, accessibility, regional and science/health components; do not describe all grades 1–3 books as absent."
+    },
+    {
+      "entry_id": "IL-AR",
+      "name": "MSA with spoken-country foundational scaffolds",
+      "planning_scope": "Current first package only: vowelled MSA foundational sequence with named country spoken narration, plus country-specific crisis catch-up literacy/science/health/WASH. Count only children whose spoken layer and entry route are actually supplied; later MSA professional/research editions are excluded.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 4,
+          "baseline": 3,
+          "basis": "Regional crisis and foundational-learning cohorts are large enough to support a provisional million-scale planning opportunity, while the mechanism is exact spoken-to-MSA scaffolding, not generic MSA availability. R4 is a favorable scenario across multiple completed country outputs, not a 400M blanket-reader assumption.",
+          "evidence_ids": [
+            "HRN-015",
+            "LARGE-NEW-002",
+            "LARGE-NEW-003"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current first package only: vowelled MSA foundational sequence with named country spoken narration, plus country-specific crisis catch-up literacy/science/health/WASH. Count only children whose spoken layer and entry route are actually supplied; later MSA professional/research editions are excluded.",
+          "population_ceiling_context": "30M out-of-school ages 5–18 across 12 countries is a contextual cohort, not an Arabic-speaking or reachable-reader denominator. It is not added to in-school learning-poverty cohorts. The 400M/467M speech headlines do not enter R.",
+          "thresholds": "For the crisis-only component R3 requires >=1M of the 30M regional cohort to have a supplied spoken-language route, usable delivery and a residual content gap (3.33% threshold, not estimated fraction). R4 requires >=10M (33.33%). The ECE/in-school component needs its own deduplicated cohort; it is not automatically added.",
+          "scenarios": {
+            "cautious": "R2 if only a few country/locality outputs are immediately usable.",
+            "baseline": "R3 for the complete named-country first package.",
+            "favorable": "R4 conditional on ten-million-scale language-matched residual coverage; no R5."
+          },
+          "base": 3,
+          "base_basis": "Regional crisis and foundational-learning cohorts are large enough to support a provisional million-scale planning opportunity, while the mechanism is exact spoken-to-MSA scaffolding, not generic MSA availability. R4 is a favorable scenario across multiple completed country outputs, not a 400M blanket-reader assumption.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "Arabic educational and professional material is substantial. The documented deficiency is sequencing, spoken-to-MSA scaffolding, literacy feedback and continuity in crises; this is not S4 absence of Arabic material.",
+          "evidence_ids": [
+            "HRN-015",
+            "LARGE-NEW-003"
+          ],
+          "base": 2,
+          "base_basis": "Arabic educational and professional material is substantial. The documented deficiency is sequencing, spoken-to-MSA scaffolding, literacy feedback and continuity in crises; this is not S4 absence of Arabic material.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "RTL text/MathML and vowelled text are feasible; print, offline/audio and local distribution are central for disrupted schooling. A technically correct PDF alone is not the full commissioned route.",
+          "evidence_ids": [
+            "HRN-015"
+          ],
+          "base": 2,
+          "base_basis": "RTL text/MathML and vowelled text are feasible; print, offline/audio and local distribution are central for disrupted schooling. A technically correct PDF alone is not the full commissioned route.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 3,
+          "basis": "For beginning readers a supplied colloquial scaffold can add access beyond existing MSA-only materials. Already comfortable MSA readers and children whose actual home language is unsupplied must not be credited as new access.",
+          "evidence_ids": [
+            "LARGE-NEW-003",
+            "HRN-015"
+          ],
+          "base": 3,
+          "base_basis": "For beginning readers a supplied colloquial scaffold can add access beyond existing MSA-only materials. Already comfortable MSA readers and children whose actual home language is unsupplied must not be credited as new access.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "medium mechanism; low-medium numerical planning",
+      "interlanguage_classification": "Established learned standard plus natural spoken scaffolds, not evidence for a newly constructed pan-Arabic language.",
+      "source_url_correction": "https://www.unicef.org/mena/press-releases/least-30-million-children-out-school-middle-east-and-north-africa"
+    },
+    {
+      "entry_id": "NAT-028",
+      "name": "Vietnamese applied course package",
+      "planning_scope": "Current five Vietnamese applied TVET/university courses in data/digital work, green agriculture/aquaculture, health evidence, MSME finance and applied biology/chemistry; their worked self-study material, not later postgraduate/frontier courses.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 3,
+          "basis": "Five practically broad courses can plausibly serve a million-scale residual from large employed and education cohorts, but the older 89M language estimate is not their readership. The industrial/digital component alone has a 17.4M employed-sector context and documented skills need. R3 is a provisional joint-eligibility judgment, not an observed conversion rate.",
+          "evidence_ids": [
+            "HRN-011",
+            "ACE-E067"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current five Vietnamese applied TVET/university courses in data/digital work, green agriculture/aquaculture, health evidence, MSME finance and applied biology/chemistry; their worked self-study material, not later postgraduate/frontier courses.",
+          "population_ceiling_context": "51.9M employed people in 2024, including 17.4M industry/construction workers, are nested—not additive. They are territorial workforce observations, not exact Vietnamese reading counts. 89M speech estimate is older and broader.",
+          "thresholds": "A 1M residual among 17.4M industry/construction workers requires 5.75% to jointly need this curriculum, use Vietnamese more comfortably than existing routes, and lack an equivalent accessible package. No 5.75% eligibility rate is asserted. A >10M residual cannot be inferred from the current evidence.",
+          "scenarios": {
+            "cautious": "R2 if existing Vietnamese content plus bilingual comfort leaves only a specialized residual.",
+            "baseline": "R3 for complete exercise-rich five-course package across the named uses.",
+            "favorable": "R3 remains the supported band; broader R4–5 belongs to a separately costed future full curriculum."
+          },
+          "base": 3,
+          "base_basis": "Five practically broad courses can plausibly serve a million-scale residual from large employed and education cohorts, but the older 89M language estimate is not their readership. The industrial/digital component alone has a 17.4M employed-sector context and documented skills need. R3 is a provisional joint-eligibility judgment, not an observed conversion rate.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "VOER and national digital learning exist. Interoperability, coherent practice and TVET course closure are the evidenced targets, not a claim that each course title is absent.",
+          "evidence_ids": [
+            "HRN-011",
+            "ACE-E067"
+          ],
+          "base": 2,
+          "base_basis": "VOER and national digital learning exist. Interoperability, coherent practice and TVET course closure are the evidenced targets, not a claim that each course title is absent.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 4,
+          "basis": "Established Latin-script standard, open formats and downloadable datasets/notebooks support mature delivery; offline alternatives and low-cost labs are explicit.",
+          "evidence_ids": [
+            "HRN-011"
+          ],
+          "base": 4,
+          "base_basis": "Established Latin-script standard, open formats and downloadable datasets/notebooks support mature delivery; offline alternatives and low-cost labs are explicit.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 3,
+          "basis": "Residual includes workers/self-learners poorly served by English or fragmented formal-course routes; current bilingual and subject-specific resource overlap is unmeasured and already belongs in R.",
+          "evidence_ids": [
+            "HRN-011",
+            "ACE-E067"
+          ],
+          "base": 3,
+          "base_basis": "Residual includes workers/self-learners poorly served by English or fragmented formal-course routes; current bilingual and subject-specific resource overlap is unmeasured and already belongs in R.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "medium cohort and need mechanism; low-medium residual magnitude",
+      "openstax_fit": "Workplace Software and Skills; Introductory Business Statistics; Introduction to Python Programming; Principles of Management; accounting and biology modules, with Vietnamese applied datasets and green-skills cases."
+    },
+    {
+      "entry_id": "NAT-033",
+      "name": "Filipino-English STEM-Kabuhayan package",
+      "planning_scope": "Current 120 Filipino-English STEM-Kabuhayan micro-lessons for grades 7–12, ALS and TVET, with replaceable home-language tracks, worked answers and offline distribution. Not the whole Philippine population or later research spine.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 3,
+          "basis": "Official secondary entry-grade registrations are already million-scale, and the package spans six grades plus ALS/TVET. Combined with offline-access gaps and the explicit bilingual design this supports a provisional R3, not proof all secondary learners lack resources.",
+          "evidence_ids": [
+            "HRN-012",
+            "LARGE-NEW-005"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current 120 Filipino-English STEM-Kabuhayan micro-lessons for grades 7–12, ALS and TVET, with replaceable home-language tracks, worked answers and offline distribution. Not the whole Philippine population or later research spine.",
+          "population_ceiling_context": "109,035,343 residents in 2020 is not Filipino readership. The aged 2,011,190 grade 7 + grade 11 early registrations contextualize educational scale only; no national-to-Filipino conversion is performed.",
+          "thresholds": "R2 requires >=100k distinct learners with a material content/language/format improvement; R3 requires >=1M. The threshold must exclude learners already adequately served by DepEd/TESDA/UPOU/STARBOOKS and those who require a home-language track not yet supplied.",
+          "scenarios": {
+            "cautious": "R2 for residual ALS/offline users after strong existing systems receive credit.",
+            "baseline": "R3 across all six secondary grades plus ALS/TVET when the complete 120-lesson package supplies the missing path.",
+            "favorable": "R3; no ten-million lower bound is justified."
+          },
+          "base": 3,
+          "base_basis": "Official secondary entry-grade registrations are already million-scale, and the package spans six grades plus ALS/TVET. Combined with offline-access gaps and the explicit bilingual design this supports a provisional R3, not proof all secondary learners lack resources.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 2,
+          "baseline": 2,
+          "basis": "Multiple substantial national OER/training repositories exist. Incremental value is a localized, self-study-complete, interoperable offline sequence; duplication is a serious resource-allocation risk.",
+          "evidence_ids": [
+            "HRN-012",
+            "https://stii.dost.gov.ph/starbooks/",
+            "https://e-tesda.gov.ph/course",
+            "https://oer.upou.edu.ph/"
+          ],
+          "base": 2,
+          "base_basis": "Multiple substantial national OER/training repositories exist. Incremental value is a localized, self-study-complete, interoperable offline sequence; duplication is a serious resource-allocation risk.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 3,
+          "basis": "Filipino/English tooling and STARBOOKS-style offline delivery are established. Unequal Internet access is addressed by USB/SD/local-server and print, not assumed away.",
+          "evidence_ids": [
+            "HRN-012"
+          ],
+          "base": 3,
+          "base_basis": "Filipino/English tooling and STARBOOKS-style offline delivery are established. Unequal Internet access is addressed by USB/SD/local-server and print, not assumed away.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "English and existing national-language materials create meaningful overlap; Filipino is not all residents' L1. Named home-language tracks enlarge access only for their actual communities.",
+          "evidence_ids": [
+            "HRN-012"
+          ],
+          "base": 2,
+          "base_basis": "English and existing national-language materials create meaningful overlap; Filipino is not all residents' L1. Named home-language tracks enlarge access only for their actual communities.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "medium opportunity mechanism; low-medium net count"
+    },
+    {
+      "entry_id": "NAT-003",
+      "name": "Telugu secondary/TVET/first-year transition",
+      "planning_scope": "Current applied secondary/TVET/first-year STEM, coding, financial safety and entrepreneurship package with Telugu-English terminology, Andhra Pradesh/Telangana crosswalks, worked solutions and offline simulations.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 3,
+          "basis": "The aged census language category minus reported English-or-Hindi subsidiary-language union establishes a large no-reported-bridge context, not an academically ready or newly served count. Combining that with the exact stage discontinuity supports a 100k–10M planning interval, with the stated baseline; legacy whole-OpenLogic R4 is not copied onto this first package.",
+          "evidence_ids": [
+            "ACE-E019",
+            "HRN-007",
+            "LARGE-NEW-006"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current applied secondary/TVET/first-year STEM, coding, financial safety and entrepreneurship package with Telugu-English terminology, Andhra Pradesh/Telangana crosswalks, worked solutions and offline simulations.",
+          "population_ceiling_context": {
+            "census_category_2011": 81127740,
+            "reported_English_or_Hindi_union": 13878134,
+            "no_reported_English_or_Hindi_context": 67249606,
+            "semantics": "Subtraction of matched census-language categories; not exact same-name L1 components. Non-reporting does not prove no competence, and reported bilingualism does not prove academic comfort. No census fraction is multiplied into a current educational cohort."
+          },
+          "thresholds": "R2 requires at least 100k jointly eligible residual learners; R3 requires at least 1M. One million is 1.49% of the aged no-reported-bridge context; that is a threshold, not an estimated share. National STEM enrollment is only 9.85M across all languages/levels, so a first-year-only R4 would need a separately evidenced noninstitutional/multicohort audience.",
+          "scenarios": {
+            "cautious": "R2 after crediting existing books, bilingual capacity and stage prerequisites.",
+            "baseline": "R3 for the current package's joint residual, a provisional judgment.",
+            "favorable": "R3; R4 requires a separately defined and costed broader curriculum, not inflation of this package."
+          },
+          "base": 3,
+          "base_basis": "The aged census language category minus reported English-or-Hindi subsidiary-language union establishes a large no-reported-bridge context, not an academically ready or newly served count. Combining that with the exact stage discontinuity supports a 100k–10M planning interval, with the stated baseline; legacy whole-OpenLogic R4 is not copied onto this first package.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 3,
+          "basis": "State school resources exist; audited NIMI output was 14 Telugu books, which is an institution-specific supply indicator, not a complete Telugu inventory.",
+          "evidence_ids": [
+            "HRN-007",
+            "https://nimi.gov.in/web/pdf/Annual%20Report-2025_English%20Version.pdf",
+            "https://www.scert.telangana.gov.in/Home.aspx/Pdf/Displaycontent.aspx?encry=ammkNW4%2Fgx+NeApstGPX+A%3D%3D"
+          ],
+          "base": 3,
+          "base_basis": "State school resources exist; audited NIMI output was 14 Telugu books, which is an institution-specific supply indicator, not a complete Telugu inventory.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 4,
+          "basis": "Established educational script and state standards support semantic HTML/MathML/EPUB/PDF/offline delivery; screen-reader/TTS testing and full-answer closure are included in production, not assumed complete.",
+          "evidence_ids": [
+            "HRN-007"
+          ],
+          "base": 4,
+          "base_basis": "Established educational script and state standards support semantic HTML/MathML/EPUB/PDF/offline delivery; screen-reader/TTS testing and full-answer closure are included in production, not assumed complete.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 3,
+          "basis": "The census English/Hindi union constrains overlap without measuring academic reading. Existing native-language provision is credited by stage. R already represents the residual; N is interpretive, not a second numeric discount.",
+          "evidence_ids": [
+            "ACE-E019",
+            "HRN-007"
+          ],
+          "base": 3,
+          "base_basis": "The census English/Hindi union constrains overlap without measuring academic reading. Existing native-language provision is credited by stage. R already represents the residual; N is interpretive, not a second numeric discount.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "medium supply/overlap evidence; low-medium package residual magnitude",
+      "exact_profile": "te-Telu-IN"
+    },
+    {
+      "entry_id": "NAT-006",
+      "name": "Marathi practical transition package",
+      "planning_scope": "Current applied science/workshop/computing/finance/entrepreneurship package for secondary/TVET/first-year transition, not later statewide agriculture or research courses.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 3,
+          "basis": "The aged census language category minus reported English-or-Hindi subsidiary-language union establishes a large no-reported-bridge context, not an academically ready or newly served count. Combining that with the exact stage discontinuity supports a 100k–10M planning interval, with the stated baseline; legacy whole-OpenLogic R4 is not copied onto this first package.",
+          "evidence_ids": [
+            "ACE-E019",
+            "HRN-008",
+            "LARGE-NEW-006"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current applied science/workshop/computing/finance/entrepreneurship package for secondary/TVET/first-year transition, not later statewide agriculture or research courses.",
+          "population_ceiling_context": {
+            "census_category_2011": 83026680,
+            "reported_English_or_Hindi_union": 36954768,
+            "no_reported_English_or_Hindi_context": 46071912,
+            "semantics": "Subtraction of matched census-language categories; not exact same-name L1 components. Non-reporting does not prove no competence, and reported bilingualism does not prove academic comfort. No census fraction is multiplied into a current educational cohort."
+          },
+          "thresholds": "R2 requires at least 100k jointly eligible residual learners; R3 requires at least 1M. One million is 2.17% of the aged no-reported-bridge context; that is a threshold, not an estimated share. National STEM enrollment is only 9.85M across all languages/levels, so a first-year-only R4 would need a separately evidenced noninstitutional/multicohort audience.",
+          "scenarios": {
+            "cautious": "R2 after crediting existing books, bilingual capacity and stage prerequisites.",
+            "baseline": "R3 for the current package's joint residual, a provisional judgment.",
+            "favorable": "R3; R4 requires a separately defined and costed broader curriculum, not inflation of this package."
+          },
+          "base": 3,
+          "base_basis": "The aged census language category minus reported English-or-Hindi subsidiary-language union establishes a large no-reported-bridge context, not an academically ready or newly served count. Combining that with the exact stage discontinuity supports a 100k–10M planning interval, with the stated baseline; legacy whole-OpenLogic R4 is not copied onto this first package.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "eBalbharati school supply is extensive; vocational output is more limited. Maharashtra agriculture programs already reach millions and do not provide extra audience credit to this different package.",
+          "evidence_ids": [
+            "HRN-008",
+            "https://ebooks.ebalbharati.in/ebook.aspx",
+            "https://nimi.gov.in/web/pdf/Annual%20Report-2025_English%20Version.pdf"
+          ],
+          "base": 2,
+          "base_basis": "eBalbharati school supply is extensive; vocational output is more limited. Maharashtra agriculture programs already reach millions and do not provide extra audience credit to this different package.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 4,
+          "basis": "Established educational script and state standards support semantic HTML/MathML/EPUB/PDF/offline delivery; screen-reader/TTS testing and full-answer closure are included in production, not assumed complete.",
+          "evidence_ids": [
+            "HRN-008"
+          ],
+          "base": 4,
+          "base_basis": "Established educational script and state standards support semantic HTML/MathML/EPUB/PDF/offline delivery; screen-reader/TTS testing and full-answer closure are included in production, not assumed complete.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "The census English/Hindi union constrains overlap without measuring academic reading. Existing native-language provision is credited by stage. R already represents the residual; N is interpretive, not a second numeric discount.",
+          "evidence_ids": [
+            "ACE-E019",
+            "HRN-008"
+          ],
+          "base": 2,
+          "base_basis": "The census English/Hindi union constrains overlap without measuring academic reading. Existing native-language provision is credited by stage. R already represents the residual; N is interpretive, not a second numeric discount.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "medium supply/overlap evidence; low-medium package residual magnitude",
+      "exact_profile": "mr-Deva-IN"
+    },
+    {
+      "entry_id": "NAT-004",
+      "name": "Indian Tamil first-year bridge",
+      "planning_scope": "Current Tamil-English first-year STEM/computing/management bridge with worked problems, offline simulations and introductory research methods. Later professional education and all school grades are outside this R.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "The aged census language category minus reported English-or-Hindi subsidiary-language union establishes a large no-reported-bridge context, not an academically ready or newly served count. Combining that with the exact stage discontinuity supports a 100k–10M planning interval, with the stated baseline; legacy whole-OpenLogic R4 is not copied onto this first package.",
+          "evidence_ids": [
+            "ACE-E019",
+            "HRN-009",
+            "LARGE-NEW-006"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current Tamil-English first-year STEM/computing/management bridge with worked problems, offline simulations and introductory research methods. Later professional education and all school grades are outside this R.",
+          "population_ceiling_context": {
+            "census_category_2011": 69026881,
+            "reported_English_or_Hindi_union": 13992609,
+            "no_reported_English_or_Hindi_context": 55034272,
+            "semantics": "Subtraction of matched census-language categories; not exact same-name L1 components. Non-reporting does not prove no competence, and reported bilingualism does not prove academic comfort. No census fraction is multiplied into a current educational cohort."
+          },
+          "thresholds": "R2 requires at least 100k jointly eligible residual learners; R3 requires at least 1M. One million is 1.82% of the aged no-reported-bridge context; that is a threshold, not an estimated share. National STEM enrollment is only 9.85M across all languages/levels, so a first-year-only R4 would need a separately evidenced noninstitutional/multicohort audience.",
+          "scenarios": {
+            "cautious": "R2 after crediting existing books, bilingual capacity and stage prerequisites.",
+            "baseline": "R2 for the current package's joint residual, a provisional judgment.",
+            "favorable": "R3; R4 requires a separately defined and costed broader curriculum, not inflation of this package."
+          },
+          "base": 2,
+          "base_basis": "The aged census language category minus reported English-or-Hindi subsidiary-language union establishes a large no-reported-bridge context, not an academically ready or newly served count. Combining that with the exact stage discontinuity supports a 100k–10M planning interval, with the stated baseline; legacy whole-OpenLogic R4 is not copied onto this first package.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "Tamil has substantial school/vocational/computing-tutorial supply. The first-year transition gap is narrower than absence of all advanced educational material.",
+          "evidence_ids": [
+            "HRN-009",
+            "https://scertbooks-staging.tnschools.gov.in/",
+            "https://nimi.gov.in/web/pdf/Annual%20Report-2025_English%20Version.pdf",
+            "https://spoken-tutorial.org/"
+          ],
+          "base": 2,
+          "base_basis": "Tamil has substantial school/vocational/computing-tutorial supply. The first-year transition gap is narrower than absence of all advanced educational material.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 4,
+          "basis": "Established educational script and state standards support semantic HTML/MathML/EPUB/PDF/offline delivery; screen-reader/TTS testing and full-answer closure are included in production, not assumed complete.",
+          "evidence_ids": [
+            "HRN-009"
+          ],
+          "base": 4,
+          "base_basis": "Established educational script and state standards support semantic HTML/MathML/EPUB/PDF/offline delivery; screen-reader/TTS testing and full-answer closure are included in production, not assumed complete.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 3,
+          "basis": "The census English/Hindi union constrains overlap without measuring academic reading. Existing native-language provision is credited by stage. R already represents the residual; N is interpretive, not a second numeric discount.",
+          "evidence_ids": [
+            "ACE-E019",
+            "HRN-009"
+          ],
+          "base": 3,
+          "base_basis": "The census English/Hindi union constrains overlap without measuring academic reading. Existing native-language provision is credited by stage. R already represents the residual; N is interpretive, not a second numeric discount.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "medium supply/overlap evidence; low-medium package residual magnitude",
+      "exact_profile": "ta-Taml-IN"
+    },
+    {
+      "entry_id": "IL-PUNJABI",
+      "name": "Punjabi two-script shared-production package",
+      "planning_scope": "Current synchronized secondary/TVET/first-year STEM package with distinct Gurmukhi India and declared Pakistan Perso-Arabic outputs. Numerical interval below covers the currently resolved Indian component only; Pakistan's target-resolution ceiling is shown separately, not zeroed.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "The resolved Indian component supports a provisional hundred-thousand-to-million-scale transition opportunity. Pakistan offers potentially much larger additional access, but its census Punjabi label does not resolve one written production variety; assigning the entire 88.9M to a particular ISO code would fabricate precision.",
+          "evidence_ids": [
+            "ACE-E019",
+            "ACE-E012",
+            "ACE-E073"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current synchronized secondary/TVET/first-year STEM package with distinct Gurmukhi India and declared Pakistan Perso-Arabic outputs. Numerical interval below covers the currently resolved Indian component only; Pakistan's target-resolution ceiling is shown separately, not zeroed.",
+          "population_ceiling_context": {
+            "India_category_2011": 33124726,
+            "India_same_name_component_2011": 31144095,
+            "India_English_or_Hindi_union": 17571723,
+            "India_no_reported_bridge_context": 15553003,
+            "Pakistan_Punjabi_census_label_2023": 88915544,
+            "semantics": "India context is not added to Pakistan's unresolved category as an exact readership sum. The Pakistan count is not automatically pnb or uniform Shahmukhi literacy."
+          },
+          "thresholds": "For the resolved India component, R2 means >=100k joint residual, R3 >=1M; 1M is 6.43% of the no-reported-bridge context, not an estimated eligibility rate. Pakistan requires a declared written/editorial output profile; its magnitude remains an additional unknown component, not a human-dependent gate.",
+          "scenarios": {
+            "cautious": "R2 for the resolved Gurmukhi transition package.",
+            "baseline": "R2; Pakistan component remains numerically uncalibrated.",
+            "favorable": "R3 for the resolved current package; higher range can be added with a source-informed Pakistan profile calibration."
+          },
+          "partial_scope": true,
+          "base": 2,
+          "base_basis": "The resolved Indian component supports a provisional hundred-thousand-to-million-scale transition opportunity. Pakistan offers potentially much larger additional access, but its census Punjabi label does not resolve one written production variety; assigning the entire 88.9M to a particular ISO code would fabricate precision.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 3,
+          "basis": "Indian regional school resources exist; advanced/TVET/open self-study continuity is the target. Pakistan's Punjabi-medium progression must be described by its actual written profile, not inferred from a shared oral-language name.",
+          "evidence_ids": [
+            "ACE-E019",
+            "ACE-E073",
+            "ACE-E067"
+          ],
+          "base": 3,
+          "base_basis": "Indian regional school resources exist; advanced/TVET/open self-study continuity is the target. Pakistan's Punjabi-medium progression must be described by its actual written profile, not inferred from a shared oral-language name.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 4,
+          "baseline": 3,
+          "basis": "Gurmukhi is mature; Urdu/Nastaliq tooling can support a declared Punjabi Perso-Arabic edition, but script literacy and synchronized terminology are not identical across outputs.",
+          "evidence_ids": [
+            "ACE-E073",
+            "ACE-E067"
+          ],
+          "base": 3,
+          "base_basis": "Gurmukhi is mature; Urdu/Nastaliq tooling can support a declared Punjabi Perso-Arabic edition, but script literacy and synchronized terminology are not identical across outputs.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 2,
+          "high": 3,
+          "baseline": 2,
+          "basis": "Hindi/English overlap is substantial for the Indian component. Pakistan Urdu competence is not automatically Punjabi educational comfort; synchronized scripts share production, not audiences.",
+          "evidence_ids": [
+            "ACE-E019",
+            "ACE-E073"
+          ],
+          "base": 2,
+          "base_basis": "Hindi/English overlap is substantial for the Indian component. Pakistan Urdu competence is not automatically Punjabi educational comfort; synchronized scripts share production, not audiences.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "medium Indian context; low Pakistan written audience",
+      "compute_rule": "Shared semantic/formula source and synchronized output tooling justify testing reuse. No token-saving percentage or extra interlanguage audience is invented."
+    },
+    {
+      "entry_id": "GLB-044",
+      "name": "Korean, Republic of Korea",
+      "planning_scope": "Current 36 offline life-capability modules in health, fraud/SME finance, agriculture/climate, practical science, computing and AI verification.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": null,
+          "high": null,
+          "baseline": null,
+          "basis": "No source inspected here cross-tabulates the proposed residual package, language comfort and existing usable-resource access. An R2/R3 assignment based solely on a large industrialized population would be arbitrary. The profile remains a positive residual opportunity with RU, not R0 or a blanket negative control.",
+          "evidence_ids": [
+            "HRN-003"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current 36 offline life-capability modules in health, fraud/SME finance, agriculture/climate, practical science, computing and AI verification.",
+          "population_ceiling_context": {
+            "value": 51829136,
+            "meaning": "ROK territory population, not Korean comfortable readers"
+          },
+          "scenarios": {
+            "cautious": "RU",
+            "baseline": "RU",
+            "favorable": "RU until a source-informed cohort mechanism supports an order of magnitude; not a human-review prerequisite."
+          },
+          "base": null,
+          "base_basis": "No defensible working magnitude from inspected evidence; do not invent an ordinal midpoint.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 2,
+          "baseline": 1,
+          "basis": "K-MOOC/KOCW supply is extensive; exact no-login/offline, exercise-complete and accessible residuals matter.",
+          "evidence_ids": [
+            "HRN-003",
+            "https://www.kocw.net/home/kocwStatistics.do?statType=1",
+            "https://nia.or.kr/site/nia_kor/ex/bbs/View.do?bcIdx=27832&cbIdx=81623"
+          ],
+          "base": 1,
+          "base_basis": "K-MOOC/KOCW supply is extensive; exact no-login/offline, exercise-complete and accessible residuals matter.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 4,
+          "basis": "Mature script/platforms make semantic offline formats technically practical; exact accessibility and answer closure are part of the proposed improvement.",
+          "evidence_ids": [
+            "HRN-003"
+          ],
+          "base": 4,
+          "base_basis": "Mature script/platforms make semantic offline formats technically practical; exact accessibility and answer closure are part of the proposed improvement.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 2,
+          "baseline": 2,
+          "basis": "Large existing native-language provision creates high overlap. A specific self-study/accessibility/current-methods residual may still matter greatly; its audience is not inferred from national wealth or presumed English fluency.",
+          "evidence_ids": [
+            "HRN-003"
+          ],
+          "base": 2,
+          "base_basis": "Large existing native-language provision creates high overlap. A specific self-study/accessibility/current-methods residual may still matter greatly; its audience is not inferred from national wealth or presumed English fluency.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "high broad supply diagnosis; uncalibrated numerical residual",
+      "not_negative_control": "Do not classify the whole language as useless or already fully served. This only limits numerical ranking evidence for the exact package."
+    },
+    {
+      "entry_id": "GLB-024",
+      "name": "Latin American Spanish",
+      "planning_scope": "Current grades 3–9 mastery-recovery package with health/household finance/digital/climate applications and complete diagnostic feedback; country overlays required.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": null,
+          "high": null,
+          "baseline": null,
+          "basis": "No source inspected here cross-tabulates the proposed residual package, language comfort and existing usable-resource access. An R2/R3 assignment based solely on a large industrialized population would be arbitrary. The profile remains a positive residual opportunity with RU, not R0 or a blanket negative control.",
+          "evidence_ids": [
+            "HRN-016"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current grades 3–9 mastery-recovery package with health/household finance/digital/climate applications and complete diagnostic feedback; country overlays required.",
+          "population_ceiling_context": {
+            "value": null,
+            "meaning": "519M global Spanish model and 44.9M US home-language estimate do not isolate Latin American grade 3–9 cohorts"
+          },
+          "scenarios": {
+            "cautious": "RU",
+            "baseline": "RU",
+            "favorable": "RU until a source-informed cohort mechanism supports an order of magnitude; not a human-review prerequisite."
+          },
+          "base": null,
+          "base_basis": "No defensible working magnitude from inspected evidence; do not invent an ordinal midpoint.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 2,
+          "baseline": 1,
+          "basis": "Strong school OER/OpenStax/SciELO supply means the main residual is pedagogical closure, accessibility and offline delivery, not ordinary Spanish translation.",
+          "evidence_ids": [
+            "HRN-016",
+            "https://procomun.intef.es/es/contenido/acerca-de-procomun",
+            "https://siteal.iiep.unesco.org/eje/educacion_basica"
+          ],
+          "base": 1,
+          "base_basis": "Strong school OER/OpenStax/SciELO supply means the main residual is pedagogical closure, accessibility and offline delivery, not ordinary Spanish translation.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 4,
+          "basis": "Mature script/platforms make semantic offline formats technically practical; exact accessibility and answer closure are part of the proposed improvement.",
+          "evidence_ids": [
+            "HRN-016"
+          ],
+          "base": 4,
+          "base_basis": "Mature script/platforms make semantic offline formats technically practical; exact accessibility and answer closure are part of the proposed improvement.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 2,
+          "baseline": 2,
+          "basis": "Large existing native-language provision creates high overlap. A specific self-study/accessibility/current-methods residual may still matter greatly; its audience is not inferred from national wealth or presumed English fluency.",
+          "evidence_ids": [
+            "HRN-016"
+          ],
+          "base": 2,
+          "base_basis": "Large existing native-language provision creates high overlap. A specific self-study/accessibility/current-methods residual may still matter greatly; its audience is not inferred from national wealth or presumed English fluency.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "high broad supply diagnosis; uncalibrated numerical residual",
+      "not_negative_control": "Do not classify the whole language as useless or already fully served. This only limits numerical ranking evidence for the exact package."
+    },
+    {
+      "entry_id": "GLB-025",
+      "name": "Brazilian Portuguese",
+      "planning_scope": "Current adult/vocational/professional self-study mastery/transition bundle built from reusable Brazilian sources; no-login/offline and semantic access.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": null,
+          "high": null,
+          "baseline": null,
+          "basis": "No source inspected here cross-tabulates the proposed residual package, language comfort and existing usable-resource access. An R2/R3 assignment based solely on a large industrialized population would be arbitrary. The profile remains a positive residual opportunity with RU, not R0 or a blanket negative control.",
+          "evidence_ids": [
+            "HRN-017"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current adult/vocational/professional self-study mastery/transition bundle built from reusable Brazilian sources; no-login/offline and semantic access.",
+          "population_ceiling_context": {
+            "value": 203080756,
+            "meaning": "Brazil 2022 territory population, not Portuguese-reader or deficit count"
+          },
+          "scenarios": {
+            "cautious": "RU",
+            "baseline": "RU",
+            "favorable": "RU until a source-informed cohort mechanism supports an order of magnitude; not a human-review prerequisite."
+          },
+          "base": null,
+          "base_basis": "No defensible working magnitude from inspected evidence; do not invent an ordinal midpoint.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 2,
+          "baseline": 1,
+          "basis": "PNLD Digital/UNA-SUS supply is extensive. Retain/adapt/redistribute rights and independent answer closure are specific residuals, not absence of Portuguese content.",
+          "evidence_ids": [
+            "HRN-017",
+            "https://www.gov.br/fnde/pt-br/acesso-a-informacao/acoes-e-programas/programas/programas-do-livro/pnld/guia-do-livro-didatico/obras-digitais-do-pnld",
+            "https://www.unasus.gov.br/institucional"
+          ],
+          "base": 1,
+          "base_basis": "PNLD Digital/UNA-SUS supply is extensive. Retain/adapt/redistribute rights and independent answer closure are specific residuals, not absence of Portuguese content.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 4,
+          "basis": "Mature script/platforms make semantic offline formats technically practical; exact accessibility and answer closure are part of the proposed improvement.",
+          "evidence_ids": [
+            "HRN-017"
+          ],
+          "base": 4,
+          "base_basis": "Mature script/platforms make semantic offline formats technically practical; exact accessibility and answer closure are part of the proposed improvement.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 2,
+          "baseline": 2,
+          "basis": "Large existing native-language provision creates high overlap. A specific self-study/accessibility/current-methods residual may still matter greatly; its audience is not inferred from national wealth or presumed English fluency.",
+          "evidence_ids": [
+            "HRN-017"
+          ],
+          "base": 2,
+          "base_basis": "Large existing native-language provision creates high overlap. A specific self-study/accessibility/current-methods residual may still matter greatly; its audience is not inferred from national wealth or presumed English fluency.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "high broad supply diagnosis; uncalibrated numerical residual",
+      "not_negative_control": "Do not classify the whole language as useless or already fully served. This only limits numerical ranking evidence for the exact package."
+    },
+    {
+      "entry_id": "GLB-027",
+      "name": "Russian learned-standard residual",
+      "planning_scope": "Current statistics/causal-inference/reproducible Python-R/research-integrity/data-stewardship/AI-evidence course with applied tracks; later frontier texts excluded.",
+      "dimensions": {
+        "R": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": null,
+          "high": null,
+          "baseline": null,
+          "basis": "No source inspected here cross-tabulates the proposed residual package, language comfort and existing usable-resource access. An R2/R3 assignment based solely on a large industrialized population would be arbitrary. The profile remains a positive residual opportunity with RU, not R0 or a blanket negative control.",
+          "evidence_ids": [
+            "HRN-019"
+          ],
+          "measure_kind": "newly_comfortable_reader_opportunity",
+          "planning_scope": "Current statistics/causal-inference/reproducible Python-R/research-integrity/data-stewardship/AI-evidence course with applied tracks; later frontier texts excluded.",
+          "population_ceiling_context": {
+            "value": 134319233,
+            "meaning": "Russia 2021 reported language ability, not advanced readers lacking this package"
+          },
+          "scenarios": {
+            "cautious": "RU",
+            "baseline": "RU",
+            "favorable": "RU until a source-informed cohort mechanism supports an order of magnitude; not a human-review prerequisite."
+          },
+          "base": null,
+          "base_basis": "No defensible working magnitude from inspected evidence; do not invent an ordinal midpoint.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "S": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 2,
+          "baseline": 1,
+          "basis": "Openedu and Math-Net provide strong university/research supply. The candidate is current methods, lawful reusable offline form and exercise-rich independent navigation.",
+          "evidence_ids": [
+            "HRN-019",
+            "https://openedu.ru/",
+            "https://www.mathnet.ru/"
+          ],
+          "base": 1,
+          "base_basis": "Openedu and Math-Net provide strong university/research supply. The candidate is current methods, lawful reusable offline form and exercise-rich independent navigation.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "A": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 3,
+          "high": 4,
+          "baseline": 4,
+          "basis": "Mature script/platforms make semantic offline formats technically practical; exact accessibility and answer closure are part of the proposed improvement.",
+          "evidence_ids": [
+            "HRN-019"
+          ],
+          "base": 4,
+          "base_basis": "Mature script/platforms make semantic offline formats technically practical; exact accessibility and answer closure are part of the proposed improvement.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        },
+        "N": {
+          "assumption_status": "prior_qualitative_judgment",
+          "calibration_type": "source-informed provisional planning judgment, not a confidence interval or observed effect",
+          "low": 1,
+          "high": 2,
+          "baseline": 2,
+          "basis": "Large existing native-language provision creates high overlap. A specific self-study/accessibility/current-methods residual may still matter greatly; its audience is not inferred from national wealth or presumed English fluency.",
+          "evidence_ids": [
+            "HRN-019"
+          ],
+          "base": 2,
+          "base_basis": "Large existing native-language provision creates high overlap. A specific self-study/accessibility/current-methods residual may still matter greatly; its audience is not inferred from national wealth or presumed English fluency.",
+          "endpoint_semantics": "Conditional qualitative judgment endpoints; not observed-benefit bounds or confidence limits."
+        }
+      },
+      "confidence": "high broad supply diagnosis; uncalibrated numerical residual",
+      "not_negative_control": "Do not classify the whole language as useless or already fully served. This only limits numerical ranking evidence for the exact package."
+    }
+  ],
+  "not_scored": [
+    {
+      "needs_profile_id": "HRN-018",
+      "reason": "No single portfolio entry or exact local-language outputs resolved. Angola/Mozambique plus unspecified local languages cannot receive one numerical reader band. Provisional country language targeting is executable without a human gate, but is not this already-scoped package."
+    }
+  ],
+  "external_read_limits": "No downloads or desktop/browser UI actions. Read-only web primary-source pages and one report text. AISHE detailed table fetch timed out; cached state-level counts were not used. No publication."
+}

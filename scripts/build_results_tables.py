@@ -91,6 +91,7 @@ assert all(number(row["marginal_access_low"]) == 0 for row in portfolio)
 assert sum(row["selected_for_deduplicated_portfolio"] == "true" for row in package_decisions) == 0
 
 SHORT_NEEDS_PACKAGES = {
+    "NAT-122": "Finish the exact Calculus I residual, produce accessible Open Logic derivatives, then audit the remaining fixed-STEM and advanced gaps",
     "NAT-121": "Close the next verified gap in the existing 40-course program; do not duplicate complete Open Logic, Prealgebra, or Elementary Algebra",
     "NAT-001": "Bangla Grade 2-5 foundational numeracy kit",
     "NAT-003": "Telugu-English Grades 3-10 mastery bridge",
@@ -107,11 +108,16 @@ SHORT_NEEDS_PACKAGES = {
 def needs_assignment(row: dict[str, str]) -> dict[str, str]:
     exact = needs_by_intervention.get(row["intervention_id"])
     if exact:
+        assignment_status = (
+            "directly_audited_stage_specific_residual"
+            if row["intervention_id"] == "NAT-122"
+            else "audited_primary_or_official_proxy"
+        )
         return {
             "needs_evidence_stage": exact["evidence_stage"],
             "needs_first_package": exact["first_useful_open_package"],
             "needs_first_package_short": SHORT_NEEDS_PACKAGES[row["intervention_id"]],
-            "needs_assignment_status": "audited_primary_or_official_proxy",
+            "needs_assignment_status": assignment_status,
             "needs_observed_evidence": exact["observed_need"],
             "needs_source": exact["evidence_source"],
             "needs_caveat": exact["caveat"],

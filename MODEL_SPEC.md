@@ -1,5 +1,79 @@
 # Marginal educational access per compute: model specification
 
+## Current implementation notice — v1.1
+
+The current selector is specified in the opening section of `RANKING_METHOD.md`
+and implemented in `scripts/allocation_policy_v1_1.py`. It replaces the earlier
+hard-coded exposure list with full-register selection, evidence-aware tied
+fronts and an explicit operational allocation policy. Exact source populations,
+estimated additional access and the decision to commission are separate outputs.
+
+No scalar welfare optimum is claimed from heterogeneous gross-population
+denominators or unmeasured academic-language overlap. R is the magnitude of
+newly comfortable readership, not a raw population band; missing R/S/A/N evidence
+remains unknown. Twenty-one current packages now have explicit source-informed
+low/base/high planning judgments, with exact cohorts, scopes and threshold
+reasoning in `staging/opportunity_planning_v1_1/asia_core.json` and
+`large_profiles.json`. They are not measured effects or confidence intervals.
+The recovered register's qualitative bands are preserved as
+prior judgments, not silently promoted into measured access estimates. Exact-tag
+matches may supply the independent high-reach, regional-depth or endangered/
+prestige lane, but never an inherited numerical rank.
+
+Scope-compatible R/S/A/N priors may inform the same FR-2 formal-reasoning domain;
+they may not be copied onto ECE, TVET or small completion residuals. The baseline
+uses only explicitly supplied central judgments, never an automatic midpoint.
+Cautious/favorable, full-envelope and measured-only views remain separate. The
+measured-only view is a diagnostic, not a prerequisite for recommendation.
+
+Dispatch uses dynamic topological eligibility: once all remaining dominators
+clear, an action competes immediately. Static evidence-front layers are diagnostic
+only; an unknown/incomparable front cannot lock all better-studied later layers
+behind it. Population observations without independently scoped learner/output
+packages remain evidence, not manufactured commissions.
+
+Exact work ownership is resolved before calibration/ranking using
+`staging/component_work_ownership_v1_1.json`: locale, package, stage and modality
+are all required. NAT-001 owns Bangladesh primary recovery; SHC-BN retains
+preschool and Indian TVET. NAT-124 owns Hindi; IL-HU retains two Urdu outputs.
+Active component keys must match their recalibrated opportunity scope. NAT-040
+owns the Malaysian Malay FR-2 component; IL-IDMS is its architecture alias.
+Reusable cores have no additional audience, and distinct stages remain distinct.
+
+The current computation writes the full selected queue, the Top 100 and Top 10,
+input/alias dispositions, package ownership and a hash-bound validation receipt.
+The declared 6:3:1 lane schedule is a normative default; its sensitivity is
+distinct from evidence uncertainty. Generic accessibility mechanisms are a
+cross-cutting axis. National signed-language outputs retain their own language
+identity and are not replaced by a universal signed or textual edition.
+
+### Crosswalk to the recovered formalism
+
+| Requested consideration | Current representation | Boundary |
+| --- | --- | --- |
+| Population sizes | Dated, typed source observations | Not automatically newly comfortable readers |
+| Additional usable readership | R and exact learner/output identities | Unknown where no supported residual estimate exists |
+| Scarcity of usable open material | S and stage-specific supply evidence | Bibliographic index counts are not textbook availability |
+| Practical access | A plus explicit modality/delivery route | Audio/signed formats are not assigned low social value |
+| Non-overlap | N, source nonadditivity and exact package ownership | No blanket family/bridge reach; do not discount the same overlap twice |
+| Vitality and prestige | V/P and independent allocation lane | Not erased by raw population size |
+| AI production and audit feasibility | F, source packages and actual tooling evidence | Model support is not population/comprehension evidence |
+| Dialect/standard risk | D and a bounded profile-resolution action | No invented standard and no human-dependent hold |
+| Compute efficiency | Category-resolved actual counters or separately labelled scenarios | Gross cached tokens are not fresh tokens, money or weekly allowance |
+
+If R already measures a residual cohort after bilingual overlap, N is retained
+as its provenance/diagnostic rather than multiplied again as a second numerical
+discount. The present ordinal comparison does not multiply ordinal band labels.
+
+## Historical fixed-comparator specification
+
+The remainder records the earlier FR-2/D3 scenario model and its implementation
+limits. References below to the "current selector", 134 rows, zero admitted
+shared-core packages, and the base/optimistic/scarcity cycle refer to that
+historical comparator, not the current commissioning queue. The source-token
+and compute-category definitions remain applicable within their stated scope;
+they are not cost estimates for every new ECE, TVET, audio or research package.
+
 ## Controlling local formalism
 
 This specification extends, and does not replace, the recovered formalized

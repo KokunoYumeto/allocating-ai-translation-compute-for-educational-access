@@ -1,0 +1,40 @@
+{
+  "schema": "interlanguage/top100-companions-validation/1.1.0",
+  "status": "PASS",
+  "checks": {
+    "top100_exactly_100_unique": true,
+    "needs_exactly_100_unique": true,
+    "crosswalk_exactly_100_unique": true,
+    "needs_membership_and_order_equal_top100": true,
+    "crosswalk_membership_and_order_equal_top100": true,
+    "needs_required_fields_nonempty": true,
+    "no_unresolved_package_status": true,
+    "crosswalk_direct_reach_zero_without_rankable_edges": true,
+    "forward_completion_not_conditioned_on_matrix": true,
+    "chinese_calc_cursor_current": true,
+    "major_profiles_considered_on_equal_basis_not_forced_into_top10": true,
+    "policy_selection_checks_pass": true
+  },
+  "top100": {
+    "bytes": 406614,
+    "sha256": "C5ACDEE9A09805A4B0C22346655C429FE7906E927512A8432F74DCE3183CBB34"
+  },
+  "needs": {
+    "bytes": 280635,
+    "sha256": "E3098F019722839E0CB64FBE4740E426F907A5FDD568A3E61E715F23D881CBA2"
+  },
+  "crosswalk": {
+    "bytes": 112187,
+    "sha256": "4C5021F7E5E6CBF642574A2AAA0BB2E3CD70CA408129E888309F5DF13C0D4E79"
+  },
+  "matrix": {
+    "bytes": 84793,
+    "sha256": "DD6BD32BCEC92FD2DE3111DBC584EBC7455E4C707241AF647B62F500318D8B33"
+  },
+  "forward_table": {
+    "bytes": 13418,
+    "sha256": "0755B3AE7ED06EFC5D7505B160C1E7F5F8825DEBC04569E8D925443E9393273C"
+  },
+  "matched_entries": 24,
+  "direct_reach_rule": "No cross-language demographic gain is aggregated while all exact matched matrix rows are non-rankable. Compute reuse remains separately recorded."
+}

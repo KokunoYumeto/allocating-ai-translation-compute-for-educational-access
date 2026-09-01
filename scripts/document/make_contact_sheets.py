@@ -21,6 +21,8 @@ def main() -> int:
     parser.add_argument("render_dir", type=Path)
     parser.add_argument("output_dir", type=Path)
     parser.add_argument("--per-sheet", type=int, default=6)
+    parser.add_argument("--cell-width", type=int, default=560)
+    parser.add_argument("--cell-height", type=int, default=735)
     args = parser.parse_args()
     pages = sorted(args.render_dir.glob("page-*.png"), key=page_number)
     if not pages:
@@ -28,7 +30,7 @@ def main() -> int:
     args.output_dir.mkdir(parents=True, exist_ok=True)
     columns = 2
     rows = math.ceil(args.per_sheet / columns)
-    cell_w, cell_h, label_h, gap = 560, 735, 30, 18
+    cell_w, cell_h, label_h, gap = args.cell_width, args.cell_height, 30, 18
     font = ImageFont.load_default()
     for sheet_index in range(0, len(pages), args.per_sheet):
         batch = pages[sheet_index : sheet_index + args.per_sheet]

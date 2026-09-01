@@ -98,6 +98,10 @@ def appendix_a() -> str:
         "INDONESIAN_TASK_TOKEN_AUDIT_20260830.md",
         "INDONESIAN_PROGRAM_COMPUTE_AND_PAGE_RECONCILIATION_PUBLIC_20260830.md",
         "INDONESIAN_PUBLIC_PROGRAM_AUDIT_20260830.md",
+        "JAPANESE_STAGE_SPECIFIC_ACCESS_ASSESSMENT_20260830.md",
+        "ZH_HANS_CN_EQUAL_BASIS_AND_RESIDUAL_ASSESSMENT_20260830.md",
+        "RESEARCH_FRONTIER_TRANSLATION_AS_EDUCATIONAL_INFRASTRUCTURE_20260830.md",
+        "MULTIDISCIPLINARY_HIGH_REACH_CASES_20260830.md",
     ]
     out = [
         "# Appendix A. Reproducibility and computational provenance",
@@ -155,7 +159,7 @@ def appendix_d2() -> str:
         ]))
     out.extend([
         "",
-        "Indonesian Open Logic is a complete 722/722 baseline: verified coverage is 722 units, the residual is zero, and D=0 for that exact corpus. It is covered rather than partial and cannot be counted again as forward translation gain. Interslavic has seven accepted units but no comparable accepted-source-token denominator, so this paper does not convert those local units into demographic bridge reach. All other partial rows remain component-level. The detailed 210-row reconciliation is machine-readable in `appendix_a_existing_work_reconciliation.csv`.",
+        "Indonesian Open Logic is a complete 722/722 baseline: verified coverage is 722 units, the residual is zero, and D=0 for that exact corpus. Mainland Simplified Chinese likewise has complete Open Logic (722/722) and Algebra and Trigonometry 2e (94/94), while Calculus Volume 1 is partial at 29/55; its D=1 value belongs only to the ex-ante equal-basis comparison, and forward allocation uses zero for complete components plus the exact 26-module calculus residual. Interslavic has seven accepted units but no comparable accepted-source-token denominator, so this paper does not convert those local units into demographic bridge reach. All other partial rows remain component-level. The detailed 211-row reconciliation is machine-readable in `appendix_a_existing_work_reconciliation.csv`.",
     ])
     return "\n".join(out)
 
@@ -176,7 +180,7 @@ def appendix_e() -> str:
         ]))
     out.extend([
         "",
-        "The global detail table has one row for each of the 134 cardinal natural-language interventions and an exact join to one population observation and its registered source. The source/measure/confidence table preserves source-level groupings. Counts in this appendix describe records and coverage strata; they are not summed population claims.",
+        "The global detail table has one row for each of the 135 cardinal natural-language interventions and an exact join to one population observation and its registered source. The source/measure/confidence table preserves source-level groupings. Counts in this appendix describe records and coverage strata; they are not summed population claims.",
     ])
     return "\n".join(out)
 
@@ -253,6 +257,22 @@ BPS-Statistics Indonesia. (2022). *Jumlah Penduduk Berumur 5 Tahun ke Atas Menur
     return text.replace(marker, block + marker, 1)
 
 
+def add_pm_s022(text: str) -> str:
+    if "### PM-S022" in text:
+        return text
+    marker = "### TH-S001"
+    block = """### PM-S022
+
+National Bureau of Statistics of China. (2021). *Communique of the Seventh National Population Census (No. 2)*. https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817187.html
+
+*Source type and time:* Official census communique; population at 2020-11-01, released 2021.
+
+*Source note:* PM-S022 supplies the 1,411,778,724 mainland territory population ceiling. The source excludes Hong Kong, Macao, Taiwan, and foreigners in the mainland jurisdictions under its own definitions. It is not an exact count of Standard Simplified Chinese comfortable readers, academic-language users, or people lacking educational access. Standard-character prevalence and regional language variation are modeled separately.
+
+"""
+    return text.replace(marker, block + marker, 1)
+
+
 def main() -> None:
     text = PAPER.read_text(encoding="utf-8")
     text = replace_between(text, "# Appendix A. Reproducibility and computational provenance", "# Appendix B. Full ordered Top 100", appendix_a())
@@ -261,6 +281,7 @@ def main() -> None:
     text = replace_between(text, "# Appendix E. Global regional, source, measure, and confidence gap map", "# Appendix F. Curriculum portfolios", appendix_e())
     text = replace_between(text, "# Appendix F. Curriculum portfolios", "# Appendix G. Unresolved output profiles and D0 exclusions", appendix_f())
     text = add_pm_s021(text)
+    text = add_pm_s022(text)
     PAPER.write_text(text.rstrip() + "\n", encoding="utf-8")
     print(f"updated={PAPER}")
 

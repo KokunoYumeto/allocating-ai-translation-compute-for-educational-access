@@ -1,0 +1,71 @@
+{
+  "schema": "interlanguage/supplemental-typed-population-estimates-validation/1.1.0",
+  "status": "PASS",
+  "row_count": 38,
+  "profile_count": 24,
+  "profile_ids": [
+    "GLB-001",
+    "GLB-003",
+    "GLB-005",
+    "GLB-010",
+    "GLB-024",
+    "GLB-025",
+    "GLB-026",
+    "GLB-027",
+    "GLB-028",
+    "GLB-029",
+    "GLB-030",
+    "GLB-031",
+    "GLB-032",
+    "GLB-034",
+    "GLB-035",
+    "GLB-036",
+    "GLB-037",
+    "GLB-038",
+    "GLB-044",
+    "GLB-046",
+    "GLB-048",
+    "GLB-049",
+    "GLB-053",
+    "GLB-054"
+  ],
+  "denominator_class_counts": {
+    "education_cohort": 1,
+    "first_learned_language_derived_from_percentage": 1,
+    "functional_language_ability_or_estimate": 8,
+    "home_or_usual_language_use": 7,
+    "mother_tongue_or_first_language": 1,
+    "published_or_derived_speaker_estimate": 7,
+    "territory_age_restricted_ceiling": 1,
+    "territory_all_residents_ceiling": 12
+  },
+  "checks": {
+    "unique_supplement_ids": true,
+    "explicit_transcription_status_for_every_row": true,
+    "no_duplicate_master_observation_signature": true,
+    "removed_duplicate_alias_targets_exist": true,
+    "stable_source_id_for_every_row": true,
+    "all_population_values_are_person_counts": true,
+    "all_rows_context_or_typed_only": true,
+    "lower_bounds_not_encoded_as_point_estimates": true
+  },
+  "removed_duplicate_aliases": {
+    "SUP-007": "POP-PK-002",
+    "SUP-031": "POP-ET-002",
+    "SUP-033": "POP-ET-001"
+  },
+  "superseded_observation_ids": {
+    "SUP-039": "ASSEC-BD-BN-001"
+  },
+  "upstream_expected_universe": {
+    "bytes": 28762,
+    "sha256": "103AC91B4BC485EAC1849A0F4ADC4D398869D5A32AC697BBE9E46875D131E5D2",
+    "validation_sha256": "2060598A7E09B90C9B60E4350B231E3B4133D9FA3DE91F2C92888A73C5969AA8"
+  },
+  "territory_rows_not_promoted": true,
+  "output": {
+    "bytes": 33515,
+    "sha256": "0BA2DDC28306F9A79A256F47F80F0D2AEBB99EB34E80C782B731E1E316E9852B"
+  },
+  "limitations": "The supplement closes source-profile recall gaps only. It does not estimate underserved readers, deduplicate cross-border users, or make heterogeneous denominator classes cardinally comparable."
+}

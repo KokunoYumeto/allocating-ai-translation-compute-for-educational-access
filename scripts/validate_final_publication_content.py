@@ -44,16 +44,17 @@ def main() -> None:
     top100 = read_csv("TOP_100.csv")
     needs = read_csv("top100_needs_assignment_v2.csv")
     crosswalk = read_csv("top100_interlanguage_overlap_crosswalk.csv")
+    curriculum = read_csv("appendix_d_top100_curriculum_mapping.csv")
     compute = json.loads((ROOT / "compute_token_audit_33_roots_20260830.json").read_text(encoding="utf-8"))
 
     results: list[dict[str, object]] = []
     results += [
-        check("population_observation_rows", len(observations) == 475, f"rows={len(observations)}"),
-        check("source_record_rows", len(sources) == 81, f"rows={len(sources)}"),
-        check("distinct_authority_labels", len({r['authority'] for r in sources}) == 58, f"labels={len({r['authority'] for r in sources})}"),
-        check("candidate_rows", len(candidates) == 210, f"rows={len(candidates)}"),
-        check("exact_natural_profile_interventions", len(natural_scores) + len(expansion_scores) == 143, f"base_scores={len(natural_scores)} expansion_scores={len(expansion_scores)} total={len(natural_scores) + len(expansion_scores)}"),
-        check("eligible_cardinal_rows", len(eligible) == 134, f"rows={len(eligible)}"),
+        check("population_observation_rows", len(observations) == 476, f"rows={len(observations)}"),
+        check("source_record_rows", len(sources) == 82, f"rows={len(sources)}"),
+        check("distinct_authority_labels", len({r['authority'] for r in sources}) == 59, f"labels={len({r['authority'] for r in sources})}"),
+        check("candidate_rows", len(candidates) == 211, f"rows={len(candidates)}"),
+        check("exact_natural_profile_interventions", len(natural_scores) + len(expansion_scores) == 144, f"base_scores={len(natural_scores)} expansion_scores={len(expansion_scores)} total={len(natural_scores) + len(expansion_scores)}"),
+        check("eligible_cardinal_rows", len(eligible) == 135, f"rows={len(eligible)}"),
         check("top10_rows", len(top10) == 10, f"rows={len(top10)}"),
         check("top100_rows", len(top100) == 100, f"rows={len(top100)}"),
         check("top100_unique_positions", len({r['portfolio_position'] for r in top100}) == 100, f"unique={len({r['portfolio_position'] for r in top100})}"),
@@ -62,10 +63,18 @@ def main() -> None:
 
     top10_order = [r["intervention_name"] for r in sorted(top10, key=lambda r: int(r["portfolio_position"]))]
     expected_top10 = [
-        "Bahasa Indonesia", "Bangladesh Bangla", "Telugu", "Indian Bengali",
-        "Vietnamese", "Marathi", "Indian Tamil", "Western Punjabi", "Javanese", "Gujarati",
+        "Standard Simplified Chinese (Mainland China)", "Bahasa Indonesia", "Telugu",
+        "Indian Bengali", "Bangladesh Bangla", "Marathi", "Indian Tamil",
+        "Vietnamese", "Javanese", "Gujarati",
     ]
     results.append(check("top10_order", top10_order == expected_top10, " | ".join(top10_order)))
+
+    allocation_counts = Counter((row["next_portfolio_id"], row["next_depth_id"]) for row in curriculum)
+    expected_allocation_counts = Counter({("MV-1", "D2"): 36, ("MV-1", "D3"): 42, ("SB-1", "D3"): 22})
+    results += [
+        check("curriculum_mapping_rows", len(curriculum) == 100, f"rows={len(curriculum)}"),
+        check("curriculum_fixed_source_distribution", allocation_counts == expected_allocation_counts, str(dict(allocation_counts))),
+    ]
 
     relation_counts = Counter(r["overlap_relation_status"] for r in crosswalk)
     results += [
@@ -90,16 +99,17 @@ def main() -> None:
     ]
 
     required_paper_strings = [
-        "475 population observations and 81 registered source records from 58 distinct authority labels",
-        "Bahasa Indonesia, Bangladesh Bangla, Telugu, Indian Bengali, Vietnamese",
+        "registered data contain 476 population observations, 82 public source records, 144 scored natural-language/profile rows, and 135 eligible exact natural-language interventions",
+        "The v1.1 equal-basis correction adds mainland Standard Simplified Chinese",
+        "followed by Bahasa Indonesia, Telugu, Indian Bengali, Bangladesh Bangla, Marathi, Indian Tamil, Vietnamese, Javanese, and Gujarati",
         "83,638,632,771",
         "10,253,232,856,362",
         "88,493,496",
         "19,745 measured teaching-package pages",
         "20,763 selected-corpus working pages",
-        "27,705-page documented rendered universe",
+        "27,705-page rendered universe",
         "722/722",
-        "Top-100 exact-profile crosswalk",
+        "top100_interlanguage_overlap_crosswalk.csv",
         "16 exact-profile matches",
         "four exact language/script plus named-country matches",
         "79 unmapped rows",
@@ -148,7 +158,7 @@ def main() -> None:
 
     failed = [item for item in results if not item["passed"]]
     receipt = {
-        "schema": "standalone-ai-compute-access-final-content-validation/1.0.0",
+        "schema": "standalone-ai-compute-access-final-content-validation/1.1.0",
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "paper": {"bytes": PAPER.stat().st_size, "sha256": sha256(PAPER)},
         "checks": results,

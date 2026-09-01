@@ -1,0 +1,117 @@
+{
+  "schema": "interlanguage/denominator-stratified-rankings-validation/1.0.0",
+  "build": "build_denominator_stratified_rankings_v1_1.py",
+  "estimands": {
+    "table_a": "ex_ante gross opportunity screen; ranks only within source-measure classes",
+    "table_b": "target-readable factor sensitivities; proxy and ignorance midpoints explicit",
+    "table_c": "forward residual work after verified coverage; unknown residuals unranked"
+  },
+  "input_files": {
+    "natural_scores": {
+      "path": "C:\\Users\\Floris\\Documents\\interlanguage\\01_methodology\\research_department\\ai_compute_educational_access_20260825\\natural_language_scores_v3.csv",
+      "bytes": 142987,
+      "sha256": "CEB54FFE1976B00B977501D1DB201BC6824C25884350A982EBAAE1EACB601089"
+    },
+    "expansion_scores": {
+      "path": "C:\\Users\\Floris\\Documents\\interlanguage\\01_methodology\\research_department\\ai_compute_educational_access_20260825\\candidate_expansion_scores.csv",
+      "bytes": 50444,
+      "sha256": "B97383E20E9FAD2791BD4883082CF3985C66F08158670A466B9D82597BD43291"
+    },
+    "portfolio": {
+      "path": "C:\\Users\\Floris\\Documents\\interlanguage\\01_methodology\\research_department\\ai_compute_educational_access_20260825\\portfolio_linguistic_candidates.csv",
+      "bytes": 168690,
+      "sha256": "A4515A86169E023A0C5DE48CB6D2B038D8B4CD05DB1BCF1AE947FDE945F59929"
+    },
+    "candidates": {
+      "path": "C:\\Users\\Floris\\Documents\\interlanguage\\01_methodology\\research_department\\ai_compute_educational_access_20260825\\candidate_interventions_master.csv",
+      "bytes": 128472,
+      "sha256": "9891DC3211FD035BC52E650A7FC189DD17006A0DEAEB129E9A5BCC1B9C256220"
+    },
+    "observations": {
+      "path": "C:\\Users\\Floris\\Documents\\interlanguage\\01_methodology\\research_department\\ai_compute_educational_access_20260825\\population_observations_master.csv",
+      "bytes": 389905,
+      "sha256": "205F52E165E2DD54051C0BC41BB6B5DEA50FEB6CFD4E0FF4F8E29C891DC618B7"
+    },
+    "compute": {
+      "path": "C:\\Users\\Floris\\Documents\\interlanguage\\01_methodology\\research_department\\ai_compute_educational_access_20260825\\portfolio_compute_scenarios.csv",
+      "bytes": 18067,
+      "sha256": "6FCFBE82135F0671BF30F03FE1F404FF8E9E9C054992A4445AA8ACA0016A4961"
+    }
+  },
+  "output_files": {
+    "table_a": {
+      "path": "C:\\Users\\Floris\\Documents\\interlanguage\\01_methodology\\research_department\\ai_compute_educational_access_20260825\\table_a_ex_ante_gross_opportunity.csv",
+      "rows": 137,
+      "bytes": 65067,
+      "sha256": "9AB0265B1C3F8869D74351FCF21B16CEA6388AD9B10976CDA3D2C12DC873D838"
+    },
+    "table_b": {
+      "path": "C:\\Users\\Floris\\Documents\\interlanguage\\01_methodology\\research_department\\ai_compute_educational_access_20260825\\table_b_target_readable_access_sensitivity.csv",
+      "rows": 137,
+      "bytes": 104273,
+      "sha256": "A4B1BF7DCF8DCB9DADC1545EC05CC4D41E7AEABC395A7146820E6729022AA13C"
+    },
+    "table_c": {
+      "path": "C:\\Users\\Floris\\Documents\\interlanguage\\01_methodology\\research_department\\ai_compute_educational_access_20260825\\table_c_forward_residual_commissioning.csv",
+      "rows": 12,
+      "bytes": 13418,
+      "sha256": "0755B3AE7ED06EFC5D7505B160C1E7F5F8825DEBC04569E8D925443E9393273C"
+    }
+  },
+  "checks": {
+    "portfolio_rows": 137,
+    "table_a_rows_equal_portfolio": true,
+    "table_b_rows_equal_portfolio": true,
+    "table_a_unique_intervention_ids": true,
+    "table_b_unique_intervention_ids": true,
+    "table_a_and_b_same_interventions": true,
+    "population_measure_class_count": 10,
+    "heterogeneous_measure_classes_explicit": true,
+    "conservative_distinct_scores": [
+      "0.000"
+    ],
+    "conservative_rank_intervals": [
+      [
+        "1",
+        "137"
+      ]
+    ],
+    "zero_conservative_unique_ranks_forbidden": true,
+    "forward_profile_ids": [
+      "NAT-121",
+      "NAT-122",
+      "NAT-123",
+      "NAT-124"
+    ],
+    "required_forward_profiles_present": true,
+    "forward_rows": 12,
+    "forward_completed_D0_rows": 4,
+    "forward_unknown_or_partial_rows": 8,
+    "forward_rows_all_unranked": true,
+    "completed_rows_have_zero_residual": true
+  },
+  "measure_class_counts": {
+    "derived_union_of_census_language_strata": 1,
+    "direct_literacy_or_access_stratum": 1,
+    "functional_language_ability_or_estimate": 8,
+    "home_or_usual_language_use": 69,
+    "mother_tongue_or_first_language": 34,
+    "multiple_response_language_ability": 2,
+    "published_or_derived_speaker_estimate": 3,
+    "same_name_mother_tongue_component": 13,
+    "survey_weighted_main_language_estimate": 4,
+    "territory_all_residents_ceiling": 2
+  },
+  "forward_row_counts_by_profile": {
+    "NAT-121": 3,
+    "NAT-122": 5,
+    "NAT-123": 2,
+    "NAT-124": 2
+  },
+  "warnings": [
+    "Table A cross-measure screen order is descriptive, not a harmed-person or comfortable-reader rank.",
+    "Table B neutral 0.5 factors are ignorance midpoints when labelled unmeasured.",
+    "OpenAlex-derived scarcity remains a bibliographic proxy, not an educational-material inventory.",
+    "Table C intentionally has no ranks because nonzero residual source-token workloads are not yet measured consistently."
+  ]
+}

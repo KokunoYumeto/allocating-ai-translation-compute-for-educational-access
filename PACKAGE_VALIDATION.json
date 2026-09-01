@@ -1,18 +1,98 @@
 {
-  "schema": "standalone-ai-compute-access-release-validation/1.0.0",
-  "generated_date": "2026-08-30",
-  "status": "PASS",
-  "file_count_before_manifest": 123,
-  "total_bytes_before_manifest": 7393537,
-  "privacy_scan_findings": [],
-  "paper": {
-    "markdown_sha256": "3215FB1A8609DFFE71655786008B40BF0BF69639EF7A1758166280ECF001BA57",
-    "docx_sha256": "2C1E1D91AD8358E25CE1888B79DB62CD4D807EC0A39240F4FF6ED0912818DD19",
-    "pdf_sha256": "EE0BC862CDEE5DBE96813CE0E697F1EE2E1CDC61BEE0B6DD2C9231780DAA764F"
+  "generated_at_utc": "2026-09-01T00:17:52.570583Z",
+  "metadata_gate": {
+    "CITATION.cff": {
+      "bytes": 1972,
+      "sha256": "02F732683E5C06347EC78DAE70D98525321EB8681026A6C1587BE7D21703B16F"
+    },
+    "CODE_LICENSE": {
+      "bytes": 1091,
+      "sha256": "BBCD3A2DD86D1AFBA52B79E57EEB4EB0EA866DD1C127B7334EE59E4D2644FADB"
+    },
+    "LICENSE": {
+      "bytes": 1751,
+      "sha256": "16394C0250B6D0248DD18CCEB73F1DEE731B532BF26A8209988254FACEAF6444"
+    },
+    "PROVENANCE.md": {
+      "bytes": 7025,
+      "sha256": "88852D2FACFEB806B52FEA79FA050084119A14FD5181B4EB344CBF19D6A096CD"
+    },
+    "README.md": {
+      "bytes": 8855,
+      "sha256": "7ED285282A28D062D606FCE8F4AD8AF07BD50FEFF690462A8C64AF9D0B53819C"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 4216,
+      "sha256": "F8D3045D1BB6D0BC46E3F72A33227979835D55449A94E02A0C7C0429B7C0F578"
+    },
+    "zenodo_metadata.json": {
+      "bytes": 2901,
+      "sha256": "E14EF047CB7C28D611BC056F7C61A5FC3561104DC610DCBA9020A4F316172236"
+    }
   },
   "notes": [
+    "PASS is emitted only after identity, freshness, QA, metadata, and privacy gates pass.",
     "Third-party source bytes and private source-witness paths are excluded.",
-    "The package begins from frozen public input tables and registered public locators.",
-    "MANIFEST.sha256 intentionally does not hash itself."
-  ]
+    "MANIFEST.sha256 intentionally does not hash itself.",
+    "Legacy FR-2 source tables are retained as model inputs, not as the current commissioning order.",
+    "Current recommendations are PAPER, TOP_10, TOP_100 and their v1.1 companions and receipts."
+  ],
+  "paper": {
+    "docx_sha256": "CA8E37C4E59C7553B763B622687B62E754514BCF7DC274ACFAD090B53E703A18",
+    "markdown_sha256": "4816EED71728B0A9A29AA4D2B28BB9FB716035515D53A9337A23F7A5E59D23B1",
+    "pdf_sha256": "0BD75DCA3763F434C89223B9AAE031CA2021F81871009A6FF109D971834CAE12"
+  },
+  "privacy_scan_findings": [],
+  "qa_gate": {
+    "docx": {
+      "bytes": 164577,
+      "sha256": "CA8E37C4E59C7553B763B622687B62E754514BCF7DC274ACFAD090B53E703A18"
+    },
+    "html": {
+      "bytes": 490793,
+      "sha256": "57C005E74CE7E926E1403242A41653C952D58B282EFDAEF73242214F1C389B8D"
+    },
+    "paper": {
+      "bytes": 340091,
+      "sha256": "4816EED71728B0A9A29AA4D2B28BB9FB716035515D53A9337A23F7A5E59D23B1"
+    },
+    "pdf": {
+      "bytes": 1653952,
+      "pages": 156,
+      "sha256": "0BD75DCA3763F434C89223B9AAE031CA2021F81871009A6FF109D971834CAE12"
+    },
+    "receipts": {
+      "FINAL_DOCUMENT_QA_PUBLIC_20260831.json": {
+        "bytes": 4727,
+        "sha256": "6DCD836DD490BE4714D6D28E417E8B02CF37892E4A7F390726EE5CBFC3CA895E"
+      },
+      "HTML_READER_V1_1_VALIDATION.json": {
+        "bytes": 3683,
+        "sha256": "DDCFEA33055F602A21413EA388BC55BD3334CE841348B5E67D45FEE65BD2F6E7"
+      },
+      "PAPER_V1_1_CONTENT_VALIDATION_20260831.json": {
+        "bytes": 3242,
+        "sha256": "D0E5FCA0B76551ECB794C21BD3898A918CE342305439D2DABDC2561DF0193330"
+      },
+      "V1_1_DATA_PIPELINE_REBUILD_20260831.json": {
+        "bytes": 26311,
+        "sha256": "B59154152CC35DF16B7F26D0233C4FB4129F5AB99E121676CA0CF6DCE7A546F7"
+      },
+      "allocation_policy_v1_1_validation.json": {
+        "bytes": 4473023,
+        "sha256": "DA7831A1C4F01D3FC9D650C4C0F820E8B38BA2412A1FEC34D05C966BD7DC1B1C"
+      },
+      "top100_companions_v1_1_validation.json": {
+        "bytes": 1550,
+        "sha256": "605A3E7E8D3E516D811FC20902D787143A19E20CD73C17388403C3D7C949E638"
+      }
+    },
+    "visual_pages_verified": 156
+  },
+  "release_date": "2026-08-31",
+  "release_version": "1.1.0",
+  "schema": "standalone-ai-compute-access-release-validation/1.1.0",
+  "status": "PASS",
+  "validated_input_files": 198,
+  "version_doi": "10.5281/zenodo.22217113"
 }

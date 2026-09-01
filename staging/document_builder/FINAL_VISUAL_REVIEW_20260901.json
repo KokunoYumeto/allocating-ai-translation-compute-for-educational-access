@@ -1,0 +1,72 @@
+{
+  "schema": "research-paper-visual-qa/1.1",
+  "status": "PASS",
+  "reviewed_at": "2026-09-01T02:05:00+02:00",
+  "current_render_dir": "staging/document_builder/render_v1_1_final_20260901_r6",
+  "current_pdf": {
+    "path": "PAPER.pdf",
+    "bytes": 1653952,
+    "sha256": "0BD75DCA3763F434C89223B9AAE031CA2021F81871009A6FF109D971834CAE12",
+    "pages": 156
+  },
+  "inspection_method": "Every page in the 157-page component-scope predecessor render had already been opened individually at original detail under the five hashed predecessor receipts below. SHA-256 comparison proved 146 current pages pixel-file-identical to those inspected pages. The ten current pages whose PNG bytes changed (6, 7, 147, 148, 150, 151, 152, 153, 155, 156) were opened and inspected individually at original detail in the current task. The former page 157 was removed when the two final source-limit paragraphs were deliberately styled as compact source notes; current page 156 was inspected after that reflow.",
+  "coverage": {
+    "current_pages": "1-156",
+    "current_page_count": 156,
+    "unchanged_pages_proved_by_sha256_count": 146,
+    "changed_pages_inspected_current": [6, 7, 147, 148, 150, 151, 152, 153, 155, 156],
+    "predecessor_page_removed_by_final_reflow": 157,
+    "all_current_pages_covered_exactly_once": true
+  },
+  "predecessor_full_page_receipts": [
+    {
+      "path": "staging/document_builder/visual_v1_1_component_scope_001_032.json",
+      "bytes": 16572,
+      "sha256": "DE17D6832DE86C8BDED726895036E7E3D0256D1F590FDC415160B396FF82BD7D"
+    },
+    {
+      "path": "staging/document_builder/visual_v1_1_component_scope_033_064.json",
+      "bytes": 14345,
+      "sha256": "DAB0700E3C6841AB2876377F23DC109EF7AE402E39D41E395F1D388636A3B77D"
+    },
+    {
+      "path": "staging/document_builder/visual_v1_1_component_scope_065_096.json",
+      "bytes": 8151,
+      "sha256": "12B3908326011B73BFD97A90C6B31AD85864FC5554230E38822B463373F0CED2"
+    },
+    {
+      "path": "staging/document_builder/visual_v1_1_component_scope_097_128.json",
+      "bytes": 7775,
+      "sha256": "62EEF70A53FA0311A9CC6619C140BBAFC1B484FDE68B6A3AA7C9C16B7B57E48E"
+    },
+    {
+      "path": "staging/document_builder/visual_v1_1_component_scope_129_157.json",
+      "bytes": 10048,
+      "sha256": "CF5F9E07E18D59577DB44824F270F813CD79C13705E21AEDB8FE421AAFFC049E"
+    }
+  ],
+  "current_delta_pages": [
+    {"page": 6, "bytes": 204548, "sha256": "7266976D6A486DC7D0513F35D65CCF79369BA1410645363A1061454727E89922", "result": "PASS"},
+    {"page": 7, "bytes": 156661, "sha256": "50D149CB1CBF69D7E151DE4DEC1DAED16B6BF0F38DA8D85D2379ED2F04B79788", "result": "PASS"},
+    {"page": 147, "bytes": 171289, "sha256": "ED8F412BFE0CF84209EE4B8CE2A8B65318D84AD6360765000AB3C45484130739", "result": "PASS"},
+    {"page": 148, "bytes": 139916, "sha256": "B324527F9BD2A3D209FE4A14E1201465CE39600D761E65BC371206AFC5BB85F8", "result": "PASS"},
+    {"page": 150, "bytes": 213548, "sha256": "68F3DA9DABFE384EF68949BA95884E93EFCB3C109889D1FF9209F6BC2AE716BB", "result": "PASS"},
+    {"page": 151, "bytes": 228977, "sha256": "53ADFAAB88AA55F84075F4D90605D3BA77473F69CD191E82DE67941683DB28EC", "result": "PASS"},
+    {"page": 152, "bytes": 206526, "sha256": "8ADD579D483202BB1C2EFDF6CBAFCE1A68AF572C9E6591A4ACBB9209FFA6DE08", "result": "PASS"},
+    {"page": 153, "bytes": 201556, "sha256": "564CEB921CF6EFD23F998542D8ADD5F296444577A5397D7F392A93B9926CA2C9", "result": "PASS"},
+    {"page": 155, "bytes": 188076, "sha256": "505FCA27B6A1CC3D01325E877DB9DAF07E9EEE121563F64148166DAA293A41EE", "result": "PASS"},
+    {"page": 156, "bytes": 219106, "sha256": "AB079D2462429EDE22B4C6B1C8D00FE989EC914A87D23D94045D75DC92BFE5A9", "result": "PASS"}
+  ],
+  "checks": {
+    "clipping": "PASS",
+    "overlap": "PASS",
+    "missing_or_broken_glyphs": "PASS",
+    "table_legibility": "PASS",
+    "headers_and_footers": "PASS",
+    "page_breaks_and_record_flow": "PASS",
+    "final_page_density": "PASS",
+    "typography_corrections": "PASS"
+  },
+  "serious_defects": [],
+  "minor_unresolved_defects": []
+}

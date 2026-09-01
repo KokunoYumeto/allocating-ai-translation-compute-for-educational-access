@@ -25,12 +25,36 @@ LANE_COLORS = {
     "scarcity": "#6A4C93",
 }
 
+EXPECTED_ELIGIBLE_ROWS = 135
+EXPECTED_TOP10 = [
+    "Standard Simplified Chinese (Mainland China)",
+    "Bahasa Indonesia",
+    "Telugu",
+    "Indian Bengali",
+    "Bangladesh Bangla",
+    "Marathi",
+    "Indian Tamil",
+    "Vietnamese",
+    "Javanese",
+    "Gujarati",
+]
+
 
 def main() -> None:
     with INPUT.open("r", encoding="utf-8-sig", newline="") as handle:
-        rows = list(csv.DictReader(handle))[:20]
+        top100_rows = list(csv.DictReader(handle))
     with PORTFOLIO_INPUT.open("r", encoding="utf-8-sig", newline="") as handle:
-        portfolio_count = sum(1 for _ in csv.DictReader(handle))
+        portfolio_rows = list(csv.DictReader(handle))
+
+    portfolio_count = len(portfolio_rows)
+    if portfolio_count != EXPECTED_ELIGIBLE_ROWS:
+        raise ValueError(f"Expected {EXPECTED_ELIGIBLE_ROWS} eligible rows, found {portfolio_count}")
+    if len(top100_rows) != 100:
+        raise ValueError(f"Expected 100 ordered headline rows, found {len(top100_rows)}")
+    actual_top10 = [row["intervention_name"] for row in top100_rows[:10]]
+    if actual_top10 != EXPECTED_TOP10:
+        raise ValueError(f"Unexpected Top 10 order: {actual_top10}")
+    rows = top100_rows[:20]
 
     output_fields = [
         "portfolio_position",

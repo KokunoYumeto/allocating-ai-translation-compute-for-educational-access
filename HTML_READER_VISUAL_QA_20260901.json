@@ -1,0 +1,49 @@
+{
+  "schema": "research-paper-html-visual-qa/1.1",
+  "status": "PASS",
+  "reviewed_at": "2026-09-01T02:06:00+02:00",
+  "browser": "Codex in-app browser",
+  "url": "http://127.0.0.1:49384/",
+  "source_sha256": "4816EED71728B0A9A29AA4D2B28BB9FB716035515D53A9337A23F7A5E59D23B1",
+  "html": {
+    "path": "staging/reader_surface_v1_1/index.html",
+    "bytes": 490793,
+    "sha256": "57C005E74CE7E926E1403242A41653C952D58B282EFDAEF73242214F1C389B8D"
+  },
+  "desktop": {
+    "viewport": {"width": 1280, "height": 900},
+    "document_scroll_width": 1265,
+    "body_scroll_width": 1265,
+    "page_level_horizontal_overflow": false,
+    "visual_result": "PASS"
+  },
+  "phone": {
+    "viewport": {"width": 390, "height": 844},
+    "document_scroll_width": 375,
+    "body_scroll_width": 375,
+    "page_level_horizontal_overflow": false,
+    "wide_table_behavior": "Contained horizontal-scroll regions; no page-level overflow",
+    "visual_result": "PASS"
+  },
+  "navigation": {
+    "tested_link": "5.1 What the Top 10 actually need",
+    "href": "#what-the-top-10-actually-need",
+    "resulting_hash": "#what-the-top-10-actually-need",
+    "target_top_px": 95.91666412353516,
+    "result": "PASS"
+  },
+  "content_checks": {
+    "document_title": "Allocating AI Translation Compute for Marginal Educational Access",
+    "main_landmark_present": true,
+    "toc_link_count": 31,
+    "anchor_link_count": 32,
+    "rendered_html_table_count": 9,
+    "no_external_runtime_dependencies": true
+  },
+  "visual_observations": [
+    "Desktop hierarchy, sticky navigation, title block, abstract, and body measure are legible and aligned.",
+    "Phone title, subtitle, provenance, abstract, and body text reflow without clipping.",
+    "Dense tables remain locally scrollable at phone width and do not force the whole page wider."
+  ],
+  "defects": []
+}

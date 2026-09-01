@@ -1,0 +1,137 @@
+{
+  "schema_id": "interlanguage/program-compute-token-audit/1.0.0",
+  "recorded_at": "2026-08-30T01:45:55.4494091+02:00",
+  "sanitization": {
+    "credentials_recorded": false,
+    "personal_name_recorded": false,
+    "absolute_profile_paths_recorded": false,
+    "path_placeholders": {
+      "<CODEX_HOME>": "local Codex state directory",
+      "<WORKSPACE>": "local interlanguage workspace root"
+    }
+  },
+  "root_scope": {
+    "description": "Central manager plus the 32 user-visible owner roots selected by registry 152.",
+    "registry": {
+      "path": "<WORKSPACE>/outputs/01a01ec1-e685-70d0-b022-211396334723/curriculum_logbook/152_FULL_LIVE_OWNER_REGISTRY_POST_V0625_20260830.json",
+      "bytes": 23836,
+      "sha256": "2c34301e5e77065336c5079b8787e15103bf97abe5458f71db92dfbda684ef2d",
+      "selector": "manager_thread_id UNION every records[].task_id",
+      "unique_root_count": 33
+    },
+    "event_time_boundary_utc": {
+      "earliest_included_root_event": "2026-08-20T10:40:19Z",
+      "latest_included_root_event": "2026-08-29T23:33:38.559Z"
+    },
+    "excluded": [
+      "Pre-2026-08-20 Open Logic production family because registry 152 does not map it to a canonical task ID.",
+      "Auxiliary audit and research tasks outside the 33 selected roots.",
+      "Any model request that emitted no persisted cumulative token counter."
+    ]
+  },
+  "primary_counter_sources": {
+    "database": "<CODEX_HOME>/state_5.sqlite",
+    "thread_fields": [
+      "threads.id",
+      "threads.tokens_used",
+      "threads.rollout_path",
+      "threads.created_at",
+      "threads.updated_at"
+    ],
+    "root_rollout_tail_bytes_per_file": 4194304,
+    "root_rollout_selector": "top-level type == event_msg AND payload.type == token_count AND payload.info.total_token_usage is non-null; choose the last cumulative event for each exact root rollout_path",
+    "root_counter_fields": [
+      "input_tokens",
+      "cached_input_tokens",
+      "cache_write_input_tokens",
+      "output_tokens",
+      "reasoning_output_tokens",
+      "total_tokens"
+    ]
+  },
+  "root_counters": {
+    "root_count": 33,
+    "gross_input_tokens": 83386749267,
+    "cached_input_tokens": 81480422656,
+    "fresh_uncached_input_tokens": 1906326611,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 251883504,
+    "reasoning_output_tokens": 70812538,
+    "reasoning_is_subset_of_output": true,
+    "total_tokens": 83638632771,
+    "database_reconciliation": {
+      "matched_roots": 33,
+      "mismatched_roots": 0,
+      "assertion": "Each root rollout's final total_token_usage.total_tokens exactly equalled threads.tokens_used for that root."
+    }
+  },
+  "root_accounting_invariants": [
+    "fresh_uncached_input_tokens = gross_input_tokens - cached_input_tokens - cache_write_input_tokens",
+    "gross_input_tokens = cached_input_tokens + fresh_uncached_input_tokens + cache_write_input_tokens",
+    "total_tokens = gross_input_tokens + output_tokens",
+    "reasoning_output_tokens is already contained in output_tokens and is never added again",
+    "Repeated codex/premium rate-limit emissions may expose the same cumulative state; exactly one final cumulative state per root is summed"
+  ],
+  "descendant_inclusive_closure": {
+    "root_seed": "The same 33 registry-selected root IDs.",
+    "database": "<CODEX_HOME>/state_5.sqlite",
+    "tables_and_fields": [
+      "thread_spawn_edges.parent_thread_id",
+      "thread_spawn_edges.child_thread_id",
+      "threads.id",
+      "threads.tokens_used"
+    ],
+    "query_semantics": "WITH RECURSIVE roots(id) AS (the 33 exact IDs), closure(id) AS (SELECT id FROM roots UNION SELECT e.child_thread_id FROM closure c JOIN thread_spawn_edges e ON e.parent_thread_id = c.id) SELECT COUNT(*), SUM(t.tokens_used) FROM closure c JOIN threads t ON t.id = c.id",
+    "deduplication": "SQL UNION deduplicates thread IDs before aggregation; every threads.tokens_used value is summed at most once.",
+    "snapshot_through_utc": "2026-08-29T23:34:32Z",
+    "thread_count": 6726,
+    "zero_counter_thread_count": 9,
+    "inclusive_total_tokens": 10253232856362,
+    "contains_all_33_roots": true,
+    "comparison_semantics": "The closure total is an inclusive superset of the 33-root subtotal. It may be compared with that subtotal to describe descendant amplification, but it must not be added to the root subtotal because that would count all 33 roots twice.",
+    "descendant_exclusive_total_asserted": false,
+    "split_availability": {
+      "gross_input": "unavailable",
+      "cached_input": "unavailable",
+      "fresh_uncached_input": "unavailable",
+      "cache_write_input": "unavailable",
+      "output": "unavailable",
+      "reasoning_output": "unavailable"
+    }
+  },
+  "model_request_lower_bound": {
+    "scope": "Final 4,194,304 bytes of each of the 33 exact root rollout files.",
+    "total_bytes_inspected": 138412032,
+    "event_selector": "top-level type == event_msg AND payload.type == token_count AND payload.info.total_token_usage.total_tokens is non-null",
+    "counting_rule": "Within each root, count distinct cumulative total_tokens values; sum the 33 distinct-count results. Identical repeated token emissions count once.",
+    "covered_event_time_boundary_utc": {
+      "earliest": "2026-08-22T19:49:18.067Z",
+      "latest": "2026-08-29T23:34:08.979Z"
+    },
+    "distinct_cumulative_progressions": 7970,
+    "interpretation": "Exact count within inspected tails and an evidenced lower bound on model requests, not a complete request total.",
+    "missing_from_bound": [
+      "Requests represented only before the final 4 MiB of a rollout.",
+      "Failed or counterless requests that did not change the cumulative token state.",
+      "Other attempts for which no token_count event was persisted."
+    ]
+  },
+  "weekly_usage_observations": [
+    {
+      "task": "CLP canonical owner",
+      "used_percent": 100,
+      "window_minutes": 10080,
+      "observed_at_utc": "2026-08-29T17:56:11.291Z",
+      "reset_at_utc": "2026-09-05T16:35:04Z"
+    },
+    {
+      "task": "D80 canonical owner",
+      "used_percent": 52,
+      "window_minutes": 10080,
+      "observed_at_utc": "2026-08-29T23:33:38.559Z",
+      "reset_at_utc": "2026-09-05T21:21:12Z"
+    }
+  ],
+  "weekly_usage_semantics": "These are non-additive account-window snapshots. They do not identify task-level compute, token totals, money, or a weekly allocation and must not be converted into any of those quantities.",
+  "terminal_statement": "This receipt records measured counters and explicit unknowns only. It does not estimate money, energy, hardware compute, or unexposed request counts."
+}

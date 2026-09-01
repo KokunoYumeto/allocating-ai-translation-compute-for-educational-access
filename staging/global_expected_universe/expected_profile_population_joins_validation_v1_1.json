@@ -1,0 +1,81 @@
+{
+  "schema": "interlanguage/expected-profile-population-join-validation/1.1.0",
+  "status": "PASS",
+  "expected_profiles": 54,
+  "output_rows": 91,
+  "profiles_with_population_evidence": 47,
+  "profiles_without_population_evidence": 7,
+  "unresolved_profile_ids": [
+    "GLB-004",
+    "GLB-006",
+    "GLB-019",
+    "GLB-033",
+    "GLB-045",
+    "GLB-050",
+    "GLB-051"
+  ],
+  "join_status_counts": {
+    "candidate_without_machine_strong_population_suggestion": 12,
+    "machine_strong_join_suggestion_pending_semantic_audit": 37,
+    "no_current_candidate_profile": 4,
+    "supplemental_profile_link_context_only": 38
+  },
+  "denominator_class_counts": {
+    "derived_union_of_census_language_strata": 1,
+    "education_cohort": 1,
+    "first_learned_language_derived_from_percentage": 1,
+    "functional_language_ability_or_estimate": 10,
+    "home_or_usual_language_use": 8,
+    "mother_tongue_or_first_language": 18,
+    "published_or_derived_speaker_estimate": 9,
+    "same_name_mother_tongue_component": 11,
+    "territory_age_restricted_ceiling": 1,
+    "territory_all_residents_ceiling": 15
+  },
+  "supplemental_context_rows": 38,
+  "supplement": {
+    "bytes": 33515,
+    "sha256": "0BA2DDC28306F9A79A256F47F80F0D2AEBB99EB34E80C782B731E1E316E9852B"
+  },
+  "direct_rank_ready_rows": 0,
+  "checks": {
+    "every_output_row_has_explicit_count_unit": true,
+    "every_numeric_row_is_a_person_count": true,
+    "machine_suggestions_never_marked_candidate_ready": true,
+    "all_numeric_rows_context_only": true,
+    "source_profile_tags_preserved_by_exact_equality": true,
+    "source_transcription_status_explicit_for_numeric_rows": true,
+    "removed_duplicate_supplement_ids_absent": true,
+    "canonical_duplicate_targets_not_duplicated": true,
+    "canonical_targets_present_or_profile_explicitly_unresolved": true,
+    "superseded_observations_absent": true
+  },
+  "upstream_receipts": {
+    "expected_universe_validation": {
+      "bytes": 3132,
+      "sha256": "2060598A7E09B90C9B60E4350B231E3B4133D9FA3DE91F2C92888A73C5969AA8"
+    },
+    "supplement_validation": {
+      "bytes": 2204,
+      "sha256": "2047A356CD8B75EE85200E44937B59D47BDDB799071EA9BA8048DEAB1EF0F4ED"
+    }
+  },
+  "removed_duplicate_aliases": {
+    "SUP-007": "POP-PK-002",
+    "SUP-031": "POP-ET-002",
+    "SUP-033": "POP-ET-001"
+  },
+  "canonical_duplicate_target_occurrences": {
+    "POP-PK-002": 0,
+    "POP-ET-002": 1,
+    "POP-ET-001": 1
+  },
+  "superseded_observation_ids": [
+    "ASSEC-BD-BN-001"
+  ],
+  "output": {
+    "bytes": 100823,
+    "sha256": "D949CDA66DCCD469DC3DB706933412B6C93C043ED83C48C32673C35385C44548"
+  },
+  "limitations": "Strong source-to-profile identity does not make heterogeneous denominator classes comparable or establish unique marginal access."
+}

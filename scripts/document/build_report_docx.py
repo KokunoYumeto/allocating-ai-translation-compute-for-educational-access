@@ -10,6 +10,7 @@ Design authority:
   - documents skill preset: narrative_proposal
   - first-page pattern: editorial_cover
   - named override: landscape_wide_table (US Letter landscape, 9 in usable)
+  - named override: labelled_record_appendix (portrait, compact left-aligned prose)
 
 The script contains no publication logic and changes no source files.
 """
@@ -90,6 +91,13 @@ ALT_TEXT_DEFAULT = (
     "shows the range of base, optimistic, and scarcity ranks; a colored point "
     "marks the admission-lane rank. The all-zero conservative rank is not plotted."
 )
+
+# Word structured-document tags bind the visible labelled-record layout back
+# to the original Markdown table. They are not hidden copies of the data:
+# each field's visible text is its sole value in the document body.
+RECORD_TABLE_TAG = "ea-labelled-record-table-v1"
+RECORD_ROW_TAG = "ea-labelled-record-row-v1"
+RECORD_FIELD_PREFIX = "ea-labelled-record-field-"
 
 
 @dataclass
@@ -263,6 +271,32 @@ def configure_styles(doc: Document) -> None:
     note.paragraph_format.space_before = Pt(4)
     note.paragraph_format.space_after = Pt(4)
     note.paragraph_format.line_spacing = 1.0
+
+    # Named override: paragraph-heavy table records are readable prose, not
+    # miniature paragraphs inside an eight-to-ten-column landscape grid.
+    # The record heading remains a genuine outline-level-2 heading in Word.
+    for name, size, before, after in (
+        ("Record Heading", 11, 10, 4),
+        ("Record Field", 10, 0, 4),
+    ):
+        style = styles[name] if name in styles else styles.add_style(name, WD_STYLE_TYPE.PARAGRAPH)
+        style.base_style = styles["Heading 2"] if name == "Record Heading" else normal
+        set_style_font(style, "Calibri", size, PRESET["colors"]["dark_heading"] if name == "Record Heading" else "000000")
+        style.font.bold = name == "Record Heading"
+        style.paragraph_format.space_before = Pt(before)
+        style.paragraph_format.space_after = Pt(after)
+        style.paragraph_format.line_spacing = 1.14
+        style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        style.paragraph_format.keep_with_next = name == "Record Heading"
+        style.paragraph_format.keep_together = name == "Record Heading"
+        style.paragraph_format.widow_control = True
+        style.paragraph_format.page_break_before = False
+        ppr = style.element.get_or_add_pPr()
+        outline = ppr.find(qn("w:outlineLvl"))
+        if outline is None:
+            outline = OxmlElement("w:outlineLvl")
+            ppr.append(outline)
+        outline.set(qn("w:val"), "1" if name == "Record Heading" else "9")
 
 
 def _max_numbering_id(numbering, element_name: str, attr_name: str) -> int:
@@ -763,7 +797,7 @@ def compute_column_widths(rows: Sequence[Sequence[str]], total_dxa: int) -> list
     headers = [h.lower() for h in rows[0]]
     max_lengths = [max(len(str(row[i])) for row in rows) for i in range(len(headers))]
     weights: list[float] = []
-    narrow_terms = {"pos.", "position", "rows", "outputs", "depth", "year", "year(s)", "scenario"}
+    narrow_terms = {"pos.", "position", "rows", "outputs", "depth", "year", "year(s)"}
     wide_fragments = ("intervention", "measure", "classification", "product", "evidence", "factor", "artifact", "scope", "task bundle")
     for header, length in zip(headers, max_lengths):
         weight = 4.0 + 2.8 * math.sqrt(max(1, min(length, 120)))
@@ -775,11 +809,26 @@ def compute_column_widths(rows: Sequence[Sequence[str]], total_dxa: int) -> list
             weight *= 0.72
         weights.append(max(3.0, weight))
 
-    minimum = 520 if len(headers) >= 7 else 700
-    widths = [max(minimum, int(total_dxa * weight / sum(weights))) for weight in weights]
+    minimum = 700
+    # Protect short identity and header words from one-character last-line
+    # wraps. Narrative columns may wrap normally; hashes/paths are allowed to
+    # wrap because requiring their full unbroken width would destroy the grid.
+    minima = []
+    for index, header in enumerate(headers):
+        words = re.findall(r"[\w./:-]+", str(rows[0][index]))
+        longest_word = max((len(word) for word in words), default=0)
+        value_tokens = [str(row[index]).strip() for row in rows[1:]]
+        if header in {"id", "action", "profile", "profiles", "source id", "scenario"}:
+            longest_word = max(longest_word, max((len(value) for value in value_tokens if re.fullmatch(r"[A-Za-z0-9-]{1,20}", value)), default=0))
+        minima.append(max(minimum, 240 + 90 * min(longest_word, 14)))
+    if sum(minima) > total_dxa:
+        # Such a grid should normally have been selected for records. Fail
+        # loudly rather than silently assigning impossible/negative widths.
+        raise ValueError(f"Table headers/identities need {sum(minima)} DXA, only {total_dxa} available")
+    widths = [max(minima[i], int(total_dxa * weight / sum(weights))) for i, weight in enumerate(weights)]
     while sum(widths) > total_dxa:
-        idx = max(range(len(widths)), key=lambda i: widths[i] - minimum)
-        reducible = widths[idx] - minimum
+        idx = max(range(len(widths)), key=lambda i: widths[i] - minima[i])
+        reducible = widths[idx] - minima[idx]
         if reducible <= 0:
             break
         widths[idx] -= min(reducible, sum(widths) - total_dxa)
@@ -789,6 +838,107 @@ def compute_column_widths(rows: Sequence[Sequence[str]], total_dxa: int) -> list
     # Resolve any last integer drift deterministically in the final column.
     widths[-1] += total_dxa - sum(widths)
     return widths
+
+
+def table_uses_labelled_records(rows: Sequence[Sequence[str]], context: str = "body") -> bool:
+    """Apply the document skill's prose-table gate deterministically.
+
+    Long appendices are lookup records rather than a 50+-row visual matrix.
+    Smaller tables also become records if their cells are mini-paragraphs.
+    Short numeric/comparison tables (including hashes) keep table geometry.
+    """
+    if len(rows) <= 1:
+        return False
+    cells = [str(cell) for row in rows[1:] for cell in row]
+    prose = [cell for cell in cells if len(cell) >= 60 and len(cell.split()) >= 7]
+    row_count = len(rows) - 1
+    columns = len(rows[0])
+    if row_count >= 50:
+        return True
+    if columns >= 5 and (len(prose) / len(cells) >= 0.30 or max(map(len, cells)) >= 240):
+        return True
+    if context.startswith("appendix_") and columns >= 7:
+        return True
+    return False
+
+
+def _structured_tag(tag: str, *, alias: str | None = None):
+    sdt = OxmlElement("w:sdt")
+    props = OxmlElement("w:sdtPr")
+    tag_node = OxmlElement("w:tag")
+    tag_node.set(qn("w:val"), tag)
+    props.append(tag_node)
+    if alias is not None:
+        alias_node = OxmlElement("w:alias")
+        alias_node.set(qn("w:val"), alias)
+        props.append(alias_node)
+    sdt.append(props)
+    content = OxmlElement("w:sdtContent")
+    sdt.append(content)
+    return sdt, content
+
+
+def _record_heading_columns(headers: Sequence[str]) -> int:
+    """Use source identity cells once; never invent a second row number."""
+    normalized = [re.sub(r"[*`]", "", str(header)).strip().lower() for header in headers]
+    identity = {"pos.", "position", "id", "intervention", "profile", "case", "architecture"}
+    count = 0
+    for header in normalized[:3]:
+        if header not in identity:
+            break
+        count += 1
+    return max(1, count)
+
+
+def _add_record_field(paragraph, header: str, value: str, column_index: int) -> None:
+    """Add a visible label plus one tagged value with an exact source alias."""
+    size = 11 if paragraph.style.name == "Record Heading" else 10
+    label_start = len(paragraph.runs)
+    add_inline(paragraph, header, default_size=size)
+    paragraph.add_run(": ")
+    for label in paragraph.runs[label_start:]:
+        label.bold = True
+    previous_children = len(paragraph._p)
+    add_inline(paragraph, value, default_size=size)
+    value_nodes = list(paragraph._p)[previous_children:]
+    field, content = _structured_tag(RECORD_FIELD_PREFIX + str(column_index), alias=header)
+    for node in value_nodes:
+        paragraph._p.remove(node)
+        content.append(node)
+    paragraph._p.append(field)
+
+
+def add_labelled_records(doc: Document, rows: Sequence[Sequence[str]]) -> dict[str, int]:
+    """Render each original row as a semantic, full-width labelled record.
+
+    The nested Word content controls retain field identities for QA. A heading
+    uses the row's own first identity cells, once and in source order. Fields
+    may flow across pages naturally; only a short final field travels with its
+    predecessor so an isolated ID/hash/status does not create a sparse tail.
+    """
+    headers = [str(cell) for cell in rows[0]]
+    heading_columns = _record_heading_columns(headers)
+    group, group_content = _structured_tag(RECORD_TABLE_TAG)
+    doc._element.body.insert_element_before(group, "w:sectPr")
+    for row in rows[1:]:
+        if len(row) != len(headers):
+            raise ValueError("Labelled record column count differs from source headers")
+        record, record_content = _structured_tag(RECORD_ROW_TAG)
+        group_content.append(record)
+        heading = doc.add_paragraph(style="Record Heading")
+        for index in range(heading_columns):
+            if index:
+                heading.add_run("  ·  ")
+            _add_record_field(heading, headers[index], str(row[index]), index)
+        record_content.append(heading._p)
+        for index in range(heading_columns, len(headers)):
+            paragraph = doc.add_paragraph(style="Record Field")
+            _add_record_field(paragraph, headers[index], str(row[index]), index)
+            paragraph.paragraph_format.keep_with_next = (
+                index == len(headers) - 2 and len(str(row[-1])) < 110
+            )
+            record_content.append(paragraph._p)
+    return {"rows": len(rows) - 1, "columns": len(headers), "cells": (len(rows) - 1) * len(headers)}
 
 
 def apply_table_geometry(table, widths: Sequence[int], total_dxa: int) -> None:
@@ -867,26 +1017,9 @@ def apply_table_geometry(table, widths: Sequence[int], total_dxa: int) -> None:
 def add_table(doc: Document, rows: Sequence[Sequence[str]], *, landscape: bool) -> None:
     column_count = len(rows[0])
     total = PRESET["page"]["landscape_width_dxa"] if landscape else PRESET["page"]["portrait_width_dxa"]
-    is_interlanguage_summary = [str(cell).strip() for cell in rows[0]] == [
-        "ID",
-        "Mechanism",
-        "Rows",
-        "Exact communities/varieties",
-        "Scripts",
-        "Task evidence",
-        "Prior-study evidence",
-        "Existing-edition overlap",
-        "Exclusions",
-        "Double-count rule",
-    ]
-    # Appendix H contains one unusually evidence-dense Interslavic row.  At the
-    # standard landscape-table size that row is taller than a page, so Word
-    # must split it even when w:cantSplit is present.  A narrow, named 7 pt
-    # override preserves the full comparison table while keeping every record
-    # whole and legible on a landscape page.
-    font_size = 7.0 if is_interlanguage_summary else (
-        7.5 if landscape and column_count >= 7 else (8.0 if landscape else 8.5)
-    )
+    # Prose-heavy grids are now records; surviving comparisons need no 7 pt
+    # dense-table exception to keep a paragraph-sized row on one page.
+    font_size = 8.5
     widths = compute_column_widths(rows, total)
 
     table = doc.add_table(rows=len(rows), cols=column_count)
@@ -945,12 +1078,8 @@ def token_contexts(tokens: Sequence[Token]) -> list[str]:
                 context = "abstract"
             elif lower == "references":
                 context = "references"
-            elif lower.startswith("appendix a"):
-                context = "appendix_a"
-            elif lower.startswith("appendix b"):
-                context = "appendix_b"
-            elif lower.startswith("appendix c"):
-                context = "appendix_c"
+            elif match := re.match(r"appendix ([a-z])\b", lower):
+                context = "appendix_" + match.group(1)
             elif token.level == 1:
                 context = "body"
         contexts.append(context)
@@ -967,12 +1096,13 @@ def orientation_plan(tokens: Sequence[Token]) -> list[str]:
     """
     contexts = token_contexts(tokens)
     plan = ["portrait"] * len(tokens)
-    for index, context in enumerate(contexts):
-        if context in {"appendix_b", "appendix_c"}:
-            plan[index] = "landscape"
 
     for table_index, token in enumerate(tokens):
-        if token.kind != "table" or not table_is_wide(token.value, contexts[table_index]):
+        if (
+            token.kind != "table"
+            or table_uses_labelled_records(token.value, contexts[table_index])
+            or not table_is_wide(token.value, contexts[table_index])
+        ):
             continue
         heading_index = next(
             (i for i in range(table_index, -1, -1) if tokens[i].kind == "heading"),
@@ -984,24 +1114,6 @@ def orientation_plan(tokens: Sequence[Token]) -> list[str]:
             if tokens[future].kind == "heading" and tokens[future].level <= level:
                 end = future
                 break
-        for i in range(heading_index, end):
-            plan[i] = "landscape"
-    # Results, implementation, limitations, and conclusion form one continuous
-    # analytic plate. Keeping them landscape prevents a short tail paragraph
-    # from being stranded when the report returns to portrait for references.
-    for heading_index, token in enumerate(tokens):
-        if token.kind != "heading" or token.level != 1:
-            continue
-        if not re.match(r"^(7\. Results|8\. Grant|9\. Limitations|10\. Conclusion)\b", str(token.value)):
-            continue
-        end = next(
-            (
-                i
-                for i in range(heading_index + 1, len(tokens))
-                if tokens[i].kind == "heading" and tokens[i].level <= 1
-            ),
-            len(tokens),
-        )
         for i in range(heading_index, end):
             plan[i] = "landscape"
     # A parent heading immediately followed by a landscape child heading should
@@ -1052,6 +1164,11 @@ def add_body_paragraph(doc: Document, text: str, context: str) -> None:
         paragraph = doc.add_paragraph(style="Normal")
     add_inline(paragraph, text)
     paragraph.paragraph_format.widow_control = True
+    # Named override: identifiers/URLs and appendix lead-ins cannot distribute
+    # across a justified line gracefully. Keep narrative Normal unchanged.
+    long_tokens = [part for part in plain.split() if len(part) >= 28]
+    if context.startswith("appendix_") or sum(map(len, long_tokens)) > len(plain) * 0.15:
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
     if plain.lower().startswith("figure "):
         # The preceding image already keeps this caption with itself. Do not
         # also chain the caption to the next table and push all three objects.
@@ -1089,6 +1206,7 @@ def build_document(source: Path, figure: Path | None, output: Path) -> dict[str,
     orientation = "portrait"
     context = "body"
     table_count = 0
+    record_tables: list[dict[str, int]] = []
     image_count = 0
     list_count = 0
 
@@ -1100,12 +1218,8 @@ def build_document(source: Path, figure: Path | None, output: Path) -> dict[str,
                 context = "abstract"
             elif lower == "references":
                 context = "references"
-            elif lower.startswith("appendix a"):
-                context = "appendix_a"
-            elif lower.startswith("appendix b"):
-                context = "appendix_b"
-            elif lower.startswith("appendix c"):
-                context = "appendix_c"
+            elif match := re.match(r"appendix ([a-z])\b", lower):
+                context = "appendix_" + match.group(1)
             elif token.level == 1:
                 context = "body"
 
@@ -1152,8 +1266,13 @@ def build_document(source: Path, figure: Path | None, output: Path) -> dict[str,
                 if orientation == "landscape":
                     apply_landscape_prose_override(paragraph, list_item=True)
         elif token.kind == "table":
-            table_count += 1
-            add_table(doc, token.value, landscape=(orientation == "landscape"))
+            if table_uses_labelled_records(token.value, context):
+                if orientation != "portrait":
+                    raise ValueError("Labelled records must be assigned a portrait reading section")
+                record_tables.append(add_labelled_records(doc, token.value))
+            else:
+                table_count += 1
+                add_table(doc, token.value, landscape=(orientation == "landscape"))
         elif token.kind == "image":
             resolved = figure if figure is not None else (source.parent / token.value["path"])
             if not resolved.exists():
@@ -1175,12 +1294,15 @@ def build_document(source: Path, figure: Path | None, output: Path) -> dict[str,
         "header_pattern": "editorial_cover",
         "named_overrides": [
             "landscape_wide_table",
-            "appendix_h_dense_comparison_table",
+            "labelled_record_appendix",
+            "identifier_dense_prose_left",
             "abstract_left_rule",
             "reference_hanging_indent",
         ],
         "tokens": len(tokens),
         "tables": table_count,
+        "source_tables": table_count + len(record_tables),
+        "labelled_record_tables": record_tables,
         "images": image_count,
         "list_blocks": list_count,
         "sections": len(doc.sections),

@@ -12,23 +12,25 @@ contains the report, frozen evidence tables, analysis scripts, model definitions
 validation receipts, and publication metadata needed to inspect or reproduce the
 reported results.
 
-- DOI: https://doi.org/10.5281/zenodo.22172596
+- DOI: https://doi.org/10.5281/zenodo.22217113
 - Repository: https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access
 
 ## Headline results
 
-- The frozen source layer contains 475 population observations registered through
-  81 source records from 58 distinct authority labels.
-- Of 143 exact natural-language/profile interventions scored, 134 pass the
-  cardinal eligibility gate.
-- The corrected Top 10 is Bahasa Indonesia, Bangladesh Bangla, Telugu, Indian
-  Bengali, Vietnamese, Marathi, Indian Tamil, Western Punjabi, Javanese, and
-  Gujarati.
+- The source and supplemental population layers contain 477 observations registered
+  through 83 source records.
+- The operational Top 10 is: Bangla shared-source caregiver/ECE and Indian-TVET
+  residuals; Telugu; Odia; Bhojpuri; Hausa; Bambara; Standard Hindi; Peru Ashaninka;
+  Russian learned standard; and Dari.
+- Bahasa Indonesia (position 32), Mainland Simplified Chinese (34), Japanese (37),
+  and Indonesian-Malaysian Malay localization (31) are explicitly evaluated on the
+  same basis. Their positions are policy-sequence results, not declarations of low
+  educational value.
 - The Top 100 includes a needs-specific first-product assignment for every
   position. Population rank is not treated as curriculum rank.
-- The Top-100 interlanguage crosswalk grants no unmeasured demographic reach.
-  Existing or proposed bridges remain auditable architecture hypotheses unless an
-  exact profile and comprehension basis supports additional coverage.
+- The Top-100 interlanguage crosswalk grants no invented demographic reach, while
+  retaining semantic-source, terminology, formula, script, and QA reuse and the
+  mathematics-specific hypothesis that formal structure can improve receptive use.
 - Translating the fixed 210-unit, 120,083-source-token Formal Reasoning Core for the
   100 selected positions yields low, base, and high gross-workload comparators of
   91.274 million, 407.305 million, and 1.866 billion tokens. These are scenario

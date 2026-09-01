@@ -13,7 +13,13 @@ from pathlib import Path
 from lxml import etree
 from PIL import Image
 
-from build_report_docx import parse_markdown
+from build_report_docx import (
+    RECORD_FIELD_PREFIX,
+    RECORD_ROW_TAG,
+    RECORD_TABLE_TAG,
+    _record_heading_columns,
+    parse_markdown,
+)
 
 
 NS = {
@@ -103,11 +109,62 @@ def source_units(source_path: Path) -> tuple[list[tuple[str, object]], list[str]
     return units, image_alts, source_text.count(r"\|\|")
 
 
-def docx_units(document) -> tuple[list[tuple[str, object]], list[str], int, int]:
+def record_table_units(group) -> tuple[list[list[str]], list[str]]:
+    """Reconstruct a source table from its visible semantic record fields.
+
+    Values are read from the displayed Word fields, not an embedded source
+    copy. Labels, order, field counts and paragraph text are checked too.
+    """
+    errors: list[str] = []
+    headers: list[str] | None = None
+    rows: list[list[str]] = []
+    records = group.xpath("w:sdtContent/w:sdt", namespaces=NS)
+    if not records:
+        errors.append("Labelled-record group contains no records")
+    for row_index, record in enumerate(records, start=1):
+        if attr(record.find("w:sdtPr/w:tag", namespaces=NS), "val") != RECORD_ROW_TAG:
+            errors.append(f"Labelled-record row {row_index}: unexpected record tag")
+        fields = record.xpath("w:sdtContent/w:p/w:sdt", namespaces=NS)
+        row: list[str] = []
+        row_headers: list[str] = []
+        for column_index, field in enumerate(fields):
+            tag = attr(field.find("w:sdtPr/w:tag", namespaces=NS), "val")
+            if tag != RECORD_FIELD_PREFIX + str(column_index):
+                errors.append(f"Labelled-record row {row_index} column {column_index}: missing/reordered field tag {tag!r}")
+            alias = attr(field.find("w:sdtPr/w:alias", namespaces=NS), "val")
+            if alias is None:
+                errors.append(f"Labelled-record row {row_index} column {column_index}: missing header identity")
+            row_headers.append(rendered_inline_text(alias or ""))
+            row.append("".join(field.xpath("w:sdtContent//w:t/text()", namespaces=NS)))
+        if headers is None:
+            headers = row_headers
+        elif row_headers != headers:
+            errors.append(f"Labelled-record row {row_index}: header sequence changed")
+        if not fields:
+            errors.append(f"Labelled-record row {row_index}: no displayed value fields")
+        if headers:
+            heading_columns = _record_heading_columns(headers)
+            labelled = [f"{header}: {value}" for header, value in zip(row_headers, row)]
+            expected_paragraphs = ["  ·  ".join(labelled[:heading_columns])] + labelled[heading_columns:]
+            paragraphs = record.xpath("w:sdtContent/w:p", namespaces=NS)
+            actual_paragraphs = ["".join(p.xpath(".//w:t/text()", namespaces=NS)) for p in paragraphs]
+            if actual_paragraphs != expected_paragraphs:
+                errors.append(f"Labelled-record row {row_index}: visible labels/separators/paragraphs changed")
+            expected_styles = ["RecordHeading"] + ["RecordField"] * (len(expected_paragraphs) - 1)
+            actual_styles = [attr(p.find("w:pPr/w:pStyle", namespaces=NS), "val") for p in paragraphs]
+            if actual_styles != expected_styles:
+                errors.append(f"Labelled-record row {row_index}: semantic paragraph styles changed")
+        rows.append(row)
+    return [headers or []] + rows, errors
+
+
+def docx_units(document) -> tuple[list[tuple[str, object]], list[str], int, int, dict[str, object]]:
     """Extract main-story text/tables after the editorial cover."""
     units: list[tuple[str, object]] = []
     body = document.find("w:body", namespaces=NS)
     started = False
+    record_errors: list[str] = []
+    record_groups: list[dict[str, int]] = []
     for child in body:
         if child.tag == f"{{{NS['w']}}}p":
             text = "".join(child.xpath(".//w:t/text()", namespaces=NS))
@@ -127,6 +184,15 @@ def docx_units(document) -> tuple[list[tuple[str, object]], list[str], int, int]
                 ]
                 rows.append(cells)
             units.append(("table", rows))
+        elif child.tag == f"{{{NS['w']}}}sdt" and started:
+            tag = attr(child.find("w:sdtPr/w:tag", namespaces=NS), "val")
+            if tag != RECORD_TABLE_TAG:
+                record_errors.append(f"Unexpected main-story structured group: {tag!r}")
+                continue
+            rows, errors = record_table_units(child)
+            record_errors.extend(errors)
+            record_groups.append({"rows": len(rows) - 1, "columns": len(rows[0]), "cells": sum(map(len, rows[1:]))})
+            units.append(("table", rows))
     image_alts = [
         node.get("descr") or ""
         for node in document.xpath("//wp:docPr", namespaces=NS)
@@ -140,7 +206,7 @@ def docx_units(document) -> tuple[list[tuple[str, object]], list[str], int, int]
     ]
     literal_double_pipes = sum(text.count("||") for text in table_text)
     residual_escaped_pipes = sum(text.count(r"\|") for text in table_text)
-    return units, image_alts, literal_double_pipes, residual_escaped_pipes
+    return units, image_alts, literal_double_pipes, residual_escaped_pipes, {"groups": record_groups, "errors": record_errors}
 
 
 def abbreviated(value: object, limit: int = 240) -> str:
@@ -201,6 +267,8 @@ def audit(
         "Heading1": {"size": "32", "before": "360", "after": "200", "color": "2E74B5"},
         "Heading2": {"size": "26", "before": "240", "after": "120", "color": "2E74B5"},
         "Heading3": {"size": "24", "before": "160", "after": "80", "color": "1F4D78"},
+        "RecordHeading": {"size": "22", "before": "200", "after": "80", "line": "274", "color": "1F4D78", "alignment": "left"},
+        "RecordField": {"size": "20", "before": "0", "after": "80", "line": "274", "alignment": "left"},
     }
     for style_id, expected in expected_styles.items():
         nodes = styles.xpath(f"//w:style[@w:styleId='{style_id}']", namespaces=NS)
@@ -218,6 +286,8 @@ def audit(
                 errors.append(f"{style_id}: {key} {attr(spacing, key)} != {expected[key]}")
         if "color" in expected and color != expected["color"]:
             errors.append(f"{style_id}: color {color} != {expected['color']}")
+        if "alignment" in expected and attr(style.find("w:pPr/w:jc", namespaces=NS), "val") != expected["alignment"]:
+            errors.append(f"{style_id}: alignment is not {expected['alignment']}")
 
     tables = document.xpath("//w:tbl", namespaces=NS)
     table_widths: list[int] = []
@@ -266,6 +336,8 @@ def audit(
         match = re.fullmatch(r"Heading([123])", value)
         if match:
             heading_levels.append(int(match.group(1)))
+        elif value == "RecordHeading":
+            heading_levels.append(2)
     for previous, current in zip(heading_levels, heading_levels[1:]):
         if current > previous + 1:
             errors.append(f"Heading hierarchy skips from {previous} to {current}")
@@ -281,6 +353,8 @@ def audit(
 
     source_roundtrip = None
     source_roundtrip_passed = source_path is None
+    actual_units, actual_alts, literal_pipes, residual_pipes, record_audit = docx_units(document)
+    errors.extend(record_audit["errors"])
     if expected_source_sha256 and source_path is None:
         errors.append("An expected source SHA-256 was supplied without --source")
     if source_path is not None:
@@ -290,7 +364,6 @@ def audit(
                 f"Source SHA-256 {source_hash} != expected {expected_source_sha256.upper()}"
             )
         expected_units, expected_alts, escaped_pipes = source_units(source_path)
-        actual_units, actual_alts, literal_pipes, residual_pipes = docx_units(document)
         mismatch = None
         for index, (expected, actual) in enumerate(
             zip(expected_units, actual_units, strict=False), start=1
@@ -393,6 +466,7 @@ def audit(
             {"name": "section_geometry", "passed": not any(e.startswith("Section ") for e in errors)},
             {"name": "preset_styles", "passed": not any(e.startswith(tuple(expected_styles)) for e in errors)},
             {"name": "table_geometry_and_headers", "passed": not any(e.startswith("Table ") for e in errors)},
+            {"name": "labelled_record_structure", "passed": not record_audit["errors"]},
             {"name": "image_alt_text", "passed": not missing_alt},
             {"name": "real_numbering", "passed": bool(list_paragraphs and abstract_nums and nums)},
             {"name": "heading_hierarchy", "passed": not any("Heading hierarchy" in e for e in errors)},
@@ -403,7 +477,7 @@ def audit(
             },
             {
                 "name": "input_hash_guards",
-                "passed": not any("sha-256" in e for e in errors),
+                "passed": not any("sha-256" in e.lower() for e in errors),
             },
         ]
     )
@@ -417,6 +491,7 @@ def audit(
         "orientations": orientation_counts,
         "tables": len(tables),
         "table_widths_dxa": table_widths,
+        "labelled_records": record_audit,
         "images": len(image_nodes),
         "real_list_paragraphs": len(list_paragraphs),
         "checks": checks,

@@ -4,11 +4,11 @@
 
 - **Title:** *Allocating AI Translation Compute for Marginal Educational Access*
 - **Artifact type:** standalone research report and reproducibility package
-- **Release date:** 2026-08-30
+- **Release date:** 2026-08-31
 - **Creator identity:** OpenAI Codex Research
 - **Model identity:** OpenAI Codex gpt-5.6-sol, Ultra
-- **Version:** 1.0.0
-- **DOI:** 10.5281/zenodo.22172596
+- **Version:** 1.1.0
+- **DOI:** 10.5281/zenodo.22217113
 - **Repository:** https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access
 
 This release is separate from the interlanguage-sidecar lineage. Its report, data,
@@ -34,8 +34,8 @@ comprehension.
 
 ## Frozen source and evidence boundary
 
-The public source register contains 81 registered source records from 58 distinct
-authority labels. Those records support 475 dated population observations. The
+The release's registered source and supplemental population layers contain 83 source
+records supporting 477 dated population observations. The
 frozen `population_source_register_public.csv` snapshot is 63,578 bytes with SHA-256
 `FE3AA4257E8FA8CC742DBA53FEF5414174975C93D6D4C262E034FFD2FDF3E4DF`.
 Each record preserves a source title, authority, reference date, measure definition,

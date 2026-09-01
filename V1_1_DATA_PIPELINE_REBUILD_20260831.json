@@ -1,0 +1,341 @@
+{
+  "schema": "interlanguage/v1-1-data-pipeline-rebuild/1.1.0",
+  "status": "PASS",
+  "steps": [
+    {
+      "script": "normalize_interlanguage_staging.py",
+      "exit_code": 0,
+      "stdout": "{\"candidate_rows\": 151, \"candidate_ids_unique\": true, \"discovery_only\": 18, \"overlap_rows\": 87, \"edge_ids_unique\": true, \"non_population_evidence_rows\": 2, \"numeric_comprehension_cells\": 0, \"observed_task_scores\": 1}",
+      "stderr": ""
+    },
+    {
+      "script": "augment_equal_basis_east_asia_v1_1.py",
+      "exit_code": 0,
+      "stdout": "registered=NAT-121,NAT-122,NAT-123,NAT-124,NAT-125 observations=POP-ID-018,POP-CN-001,POP-JP-001,POP-IN-COMP-006,POP-IN-023 sources=PM-S021,PM-S022,PM-S023,PM-S001",
+      "stderr": ""
+    },
+    {
+      "script": "build_candidate_master_and_join_suggestions.py",
+      "exit_code": 0,
+      "stdout": "{'candidate_rows': 214, 'join_suggestions': 259, 'strong': 140, 'aggregate_review': 0, 'code_only_profile_review': 14, 'same_language_other_territory': 88, 'name_only': 17}",
+      "stderr": ""
+    },
+    {
+      "script": "build_edge_curation_queue.py",
+      "exit_code": 0,
+      "stdout": "{'rows': 259, 'status_counts': {'not_automatic_cross_territory_or_name_only': 116, 'exclude_nonperson_measure_from_population_rank': 8, 'eligible_exact_gross_ceiling': 108, 'exclude_superseded_parent_aggregate': 11, 'exclude_unresolved_target': 6, 'context_until_specific_mapping_or_written_access': 5, 'manual_review': 1, 'exclude_nested_direct_access_component': 2, 'eligible_exact_direct_access_floor': 1, 'route_to_interlanguage_or_accessibility_edges': 1}}",
+      "stderr": ""
+    },
+    {
+      "script": "build_natural_language_scores_v3.py",
+      "exit_code": 0,
+      "stdout": "{'rows': 109, 'profile_ready': 107, 'profile_pending': 2, 'direct_access_floor_rows': 1, 'explicit_controls': 4, 'top_gross': 'Mainland Simplified Chinese'}",
+      "stderr": ""
+    },
+    {
+      "script": "build_final_portfolio.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"natural_score_rows_considered\": 146,\n  \"eligible_natural_before_package_replacement\": 137,\n  \"selected_pareto_dominant_packages\": 0,\n  \"source_audited_profile_recoveries_applied\": 13,\n  \"consumed_natural_observations\": 0,\n  \"deduplicated_cardinal_linguistic_rows\": 137,\n  \"top_100_cardinal_positions_filled\": 100,\n  \"top_100_cardinal_positions_unfilled\": 0,\n  \"top_100_ready\": true,\n  \"conservative_view_degenerate\": true,\n  \"admission_lane_cycle\": [\n    \"base\",\n    \"optimistic\",\n    \"scarcity\"\n  ],\n  \"accessibility_treatment\": \"separate_non_cardinal_safeguard_backlog\"\n}\n{'linguistic_sha256': 'A4515A86169E023A0C5DE48CB6D2B038D8B4CD05DB1BCF1AE947FDE945F59929', 'replacement_sha256': '939390A84238E6B10E35D9BF4F7DEE7033A49CF51C0CB4302414BF2EEFFC81A2', 'status_sha256': '474DED85A186902DFC5302E6AE75E990A87B7518273CCF3889911FF539E344CA'}",
+      "stderr": ""
+    },
+    {
+      "script": "build_global_expected_universe_v1_1.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"profiles\": 54,\n  \"bridges\": 16,\n  \"profile_sha256\": \"103AC91B4BC485EAC1849A0F4ADC4D398869D5A32AC697BBE9E46875D131E5D2\",\n  \"bridge_sha256\": \"34B85DEB823977966C403575AA3119B5588644156373177E6645AE3EAD0EB7BB\",\n  \"validation_sha256\": \"2060598A7E09B90C9B60E4350B231E3B4133D9FA3DE91F2C92888A73C5969AA8\"\n}",
+      "stderr": ""
+    },
+    {
+      "script": "build_supplemental_typed_population_estimates_v1_1.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"rows\": 38,\n  \"profiles\": 24,\n  \"csv_sha256\": \"0BA2DDC28306F9A79A256F47F80F0D2AEBB99EB34E80C782B731E1E316E9852B\",\n  \"validation_sha256\": \"2047A356CD8B75EE85200E44937B59D47BDDB799071EA9BA8048DEAB1EF0F4ED\"\n}",
+      "stderr": ""
+    },
+    {
+      "script": "join_expected_universe_to_population_v1_1.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"rows\": 91,\n  \"profiles_with_population_evidence\": 47,\n  \"profiles_without_population_evidence\": 7,\n  \"csv_sha256\": \"D949CDA66DCCD469DC3DB706933412B6C93C043ED83C48C32673C35385C44548\",\n  \"validation_sha256\": \"6F289110CEC38BDFB9284B3823BF9CECA6A485446068F873DE164A40F0B76F3B\"\n}",
+      "stderr": ""
+    },
+    {
+      "script": "build_high_reach_education_needs_v1_1.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"rows\": 20,\n  \"edges\": 24,\n  \"csv_sha256\": \"A41FBAC87B2DF2E3876392E7AA199DB0DAE7803FE1629D6B61CBD229343391B6\",\n  \"edge_sha256\": \"429A5CA6D0BED571471DB9AA2E0B67FEC157CBBBD4A717262B8F158E838458CC\",\n  \"validation_sha256\": \"819F63584B0734F623BA865786300B3DFC1E675086DE03AB101B9A22AC5224B1\"\n}",
+      "stderr": ""
+    },
+    {
+      "script": "build_denominator_stratified_rankings_v1_1.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"table_a_rows\": 137,\n  \"table_b_rows\": 137,\n  \"table_c_rows\": 12,\n  \"measure_classes\": 10,\n  \"conservative_intervals\": [\n    [\n      \"1\",\n      \"137\"\n    ]\n  ],\n  \"outputs\": {\n    \"table_a\": {\n      \"bytes\": 65067,\n      \"sha256\": \"9AB0265B1C3F8869D74351FCF21B16CEA6388AD9B10976CDA3D2C12DC873D838\"\n    },\n    \"table_b\": {\n      \"bytes\": 104273,\n      \"sha256\": \"A4B1BF7DCF8DCB9DADC1545EC05CC4D41E7AEABC395A7146820E6729022AA13C\"\n    },\n    \"table_c\": {\n      \"bytes\": 13418,\n      \"sha256\": \"0755B3AE7ED06EFC5D7505B160C1E7F5F8825DEBC04569E8D925443E9393273C\"\n    },\n    \"validation\": {\n      \"bytes\": 5368,\n      \"sha256\": \"6CEE9A1FA1F9EC48BE9AA0B1505DC175DE55DF69D71D0D3B269BE5CA16261685\"\n    }\n  }\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test_allocation_policy_v1_1.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_accessibility_modes_not_ordinally_compared (__main__.AllocationPolicyTests.test_accessibility_modes_not_ordinally_compared) ... ok\ntest_all_remaining_predecessors_must_clear_before_dynamic_eligibility (__main__.AllocationPolicyTests.test_all_remaining_predecessors_must_clear_before_dynamic_eligibility) ... ok\ntest_canonical_work_alias_suppressed_before_ranking_permutation_invariant (__main__.AllocationPolicyTests.test_canonical_work_alias_suppressed_before_ranking_permutation_invariant) ... ok\ntest_component_contract_supported_in_evidence_context (__main__.AllocationPolicyTests.test_component_contract_supported_in_evidence_context) ... ok\ntest_component_fields_required_no_HRN_stage_inference (__main__.AllocationPolicyTests.test_component_fields_required_no_HRN_stage_inference) ... ok\ntest_default_first_ten_lane_allocation (__main__.AllocationPolicyTests.test_default_first_ten_lane_allocation) ... ok\ntest_distinct_stage_and_modality_bypass_coarse_HRN_deduplication (__main__.AllocationPolicyTests.test_distinct_stage_and_modality_bypass_coarse_HRN_deduplication) ... ok\ntest_duplicate_work_requires_explicit_owner (__main__.AllocationPolicyTests.test_duplicate_work_requires_explicit_owner) ... ok\ntest_dynamic_eligibility_does_not_force_unknown_static_front_before_successor (__main__.AllocationPolicyTests.test_dynamic_eligibility_does_not_force_unknown_static_front_before_successor) ... ok\ntest_exact_package_ownership_suppresses_duplicate_not_distinct_residual (__main__.AllocationPolicyTests.test_exact_package_ownership_suppresses_duplicate_not_distinct_residual) ... ok\ntest_explicit_measurement_supported_intervals_active_in_both_views (__main__.AllocationPolicyTests.test_explicit_measurement_supported_intervals_active_in_both_views) ... ok\ntest_fully_covered_predecessor_clears_dynamic_eligibility (__main__.AllocationPolicyTests.test_fully_covered_predecessor_clears_dynamic_eligibility) ... ok\ntest_gross_R_input_is_rejected_as_reader_opportunity (__main__.AllocationPolicyTests.test_gross_R_input_is_rejected_as_reader_opportunity) ... ok\ntest_households_and_unsourced_counts_not_used_as_person_scope (__main__.AllocationPolicyTests.test_households_and_unsourced_counts_not_used_as_person_scope) ... ok\ntest_incompatible_denominators_never_count_compared (__main__.AllocationPolicyTests.test_incompatible_denominators_never_count_compared) ... ok\ntest_incompatible_learner_strata_have_separate_views (__main__.AllocationPolicyTests.test_incompatible_learner_strata_have_separate_views) ... ok\ntest_invalid_policy_and_duplicate_id_fail_closed (__main__.AllocationPolicyTests.test_invalid_policy_and_duplicate_id_fail_closed) ... ok\ntest_lane_mapping_requires_provenance (__main__.AllocationPolicyTests.test_lane_mapping_requires_provenance) ... ok\ntest_many_random_permutations (__main__.AllocationPolicyTests.test_many_random_permutations) ... ok\ntest_mixed_component_alias_requires_pre_rank_residualization (__main__.AllocationPolicyTests.test_mixed_component_alias_requires_pre_rank_residualization) ... ok\ntest_no_unsourced_prior_or_missing_interval_is_admitted_in_either_view (__main__.AllocationPolicyTests.test_no_unsourced_prior_or_missing_interval_is_admitted_in_either_view) ... ok\ntest_old_positions_lanes_ranks_are_not_consumed (__main__.AllocationPolicyTests.test_old_positions_lanes_ranks_are_not_consumed) ... ok\ntest_partial_bundle_and_compute_only_edges (__main__.AllocationPolicyTests.test_partial_bundle_and_compute_only_edges) ... ok\ntest_permutations_and_input_immutability (__main__.AllocationPolicyTests.test_permutations_and_input_immutability) ... ok\ntest_planning_accepts_sourced_prior_as_inference_measured_only_retains_unknown (__main__.AllocationPolicyTests.test_planning_accepts_sourced_prior_as_inference_measured_only_retains_unknown) ... ok\ntest_policy_and_unverified_scenarios_are_not_planning_evidence (__main__.AllocationPolicyTests.test_policy_and_unverified_scenarios_are_not_planning_evidence) ... ok\ntest_policy_change_changes_queue_not_evidence (__main__.AllocationPolicyTests.test_policy_change_changes_queue_not_evidence) ... ok\ntest_population_observations_not_summed (__main__.AllocationPolicyTests.test_population_observations_not_summed) ... ok\ntest_prior_dimensions_are_permutation_invariant_in_both_views (__main__.AllocationPolicyTests.test_prior_dimensions_are_permutation_invariant_in_both_views) ... ok\ntest_prose_profile_cannot_assert_exhaustive_package_keys (__main__.AllocationPolicyTests.test_prose_profile_cannot_assert_exhaustive_package_keys) ... ok\ntest_reported_point_does_not_gain_zero_bound (__main__.AllocationPolicyTests.test_reported_point_does_not_gain_zero_bound) ... ok\ntest_reuse_cannot_inherit_population_or_whole_bundle_R (__main__.AllocationPolicyTests.test_reuse_cannot_inherit_population_or_whole_bundle_R) ... ok\ntest_reuse_must_name_known_exact_active_owner_and_cannot_be_active (__main__.AllocationPolicyTests.test_reuse_must_name_known_exact_active_owner_and_cannot_be_active) ... ok\ntest_robust_dominance_with_sourced_intervals (__main__.AllocationPolicyTests.test_robust_dominance_with_sourced_intervals) ... ok\ntest_scenario_labels_do_not_generate_or_modify_evidence (__main__.AllocationPolicyTests.test_scenario_labels_do_not_generate_or_modify_evidence) ... ok\ntest_source_informed_provisional_need_has_provisional_not_unresolved_tier (__main__.AllocationPolicyTests.test_source_informed_provisional_need_has_provisional_not_unresolved_tier) ... ok\ntest_source_lower_bound_keeps_upper_unknown (__main__.AllocationPolicyTests.test_source_lower_bound_keeps_upper_unknown) ... ok\ntest_stage_evidence_precedes_gross_scope_policy (__main__.AllocationPolicyTests.test_stage_evidence_precedes_gross_scope_policy) ... ok\ntest_unkeyed_urdu_output_not_erased_by_owned_hindi_package (__main__.AllocationPolicyTests.test_unkeyed_urdu_output_not_erased_by_owned_hindi_package) ... ok\ntest_unknown_R_prevents_false_dominance (__main__.AllocationPolicyTests.test_unknown_R_prevents_false_dominance) ... ok\ntest_unknown_component_owner_and_nonclaiming_owner_fail (__main__.AllocationPolicyTests.test_unknown_component_owner_and_nonclaiming_owner_fail) ... ok\ntest_unknown_not_zero_and_never_excluded (__main__.AllocationPolicyTests.test_unknown_not_zero_and_never_excluded) ... ok\n\n----------------------------------------------------------------------\nRan 42 tests in 0.120s\n\nOK"
+    },
+    {
+      "script": "test_opportunity_planning_v1_1.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_band_parser_never_converts_unknown_to_zero (__main__.PlanningScopeTests.test_band_parser_never_converts_unknown_to_zero) ... ok\ntest_baseline_never_invents_midpoint (__main__.PlanningScopeTests.test_baseline_never_invents_midpoint) ... ok\ntest_dialect_risk_direction_is_not_positive_benefit (__main__.PlanningScopeTests.test_dialect_risk_direction_is_not_positive_benefit) ... ok\ntest_exact_formal_reasoning_scope_retains_provisional_prior (__main__.PlanningScopeTests.test_exact_formal_reasoning_scope_retains_provisional_prior) ... ok\ntest_explicit_baseline_and_endpoints_remain_scenarios (__main__.PlanningScopeTests.test_explicit_baseline_and_endpoints_remain_scenarios) ... ok\ntest_measured_only_preserves_supplied_envelope (__main__.PlanningScopeTests.test_measured_only_preserves_supplied_envelope) ... ok\ntest_no_cross_territory_tag_match (__main__.PlanningScopeTests.test_no_cross_territory_tag_match) ... ok\ntest_no_transfer_to_early_years_or_small_residual (__main__.PlanningScopeTests.test_no_transfer_to_early_years_or_small_residual) ... ok\ntest_no_unmapped_calibration_is_silently_discarded (__main__.PlanningScopeTests.test_no_unmapped_calibration_is_silently_discarded) ... ok\ntest_package_calibration_overrides_prior_but_not_lane (__main__.PlanningScopeTests.test_package_calibration_overrides_prior_but_not_lane) ... ok\ntest_unresolved_profile_does_not_acquire_reader_band (__main__.PlanningScopeTests.test_unresolved_profile_does_not_acquire_reader_band) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.001s\n\nOK"
+    },
+    {
+      "script": "test_portfolio_unit_identity_v1_1.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"master_rows\": 214,\n  \"observation_derived_master_rows\": 57,\n  \"observation_only_dispositions\": 57,\n  \"explicit_scoped_observation_actions\": 0,\n  \"active_nonobservation_master_identities\": 145,\n  \"expansion_aliases\": 6,\n  \"prepolicy_action_identities\": 198,\n  \"disposition_counts\": {\n    \"observation_evidence_for_existing_profile_not_a_new_commission\": 4,\n    \"observation_only_pending_independent_action_definition\": 48,\n    \"observation_only_scarcity_overlap_control\": 1,\n    \"observation_only_supply_rich_control\": 4\n  }\n}",
+      "stderr": "test_a_valid_kriol_surface_does_not_itself_define_a_course (__main__.UnitIdentityTests.test_a_valid_kriol_surface_does_not_itself_define_a_course) ... ok\ntest_all_observation_only_rows_are_disposed_without_padding (__main__.UnitIdentityTests.test_all_observation_only_rows_are_disposed_without_padding) ... ok\ntest_an_independently_scoped_diaspora_action_can_be_preserved (__main__.UnitIdentityTests.test_an_independently_scoped_diaspora_action_can_be_preserved) ... ok\ntest_explicit_negative_and_comparison_control_treatments_survive (__main__.UnitIdentityTests.test_explicit_negative_and_comparison_control_treatments_survive) ... ok\ntest_indonesian_prerequisite_credits_available_work_not_whole_program_completion (__main__.UnitIdentityTests.test_indonesian_prerequisite_credits_available_work_not_whole_program_completion) ... ok\ntest_kiswahili_exact_output_keys_match_first_package_not_wider_architecture (__main__.UnitIdentityTests.test_kiswahili_exact_output_keys_match_first_package_not_wider_architecture) ... ok\ntest_kiswahili_first_action_excludes_follow_on_population_views (__main__.UnitIdentityTests.test_kiswahili_first_action_excludes_follow_on_population_views) ... ok\ntest_kiswahili_scope_can_admit_exact_drc_but_not_broad_umbrella (__main__.UnitIdentityTests.test_kiswahili_scope_can_admit_exact_drc_but_not_broad_umbrella) ... ok\ntest_mam_diaspora_is_context_not_a_guatemala_population_or_new_action (__main__.UnitIdentityTests.test_mam_diaspora_is_context_not_a_guatemala_population_or_new_action) ... ok\ntest_origin_country_scope_cannot_reuse_a_us_population (__main__.UnitIdentityTests.test_origin_country_scope_cannot_reuse_a_us_population) ... ok\ntest_profile_only_and_compute_only_evidence_are_not_action_bindings (__main__.UnitIdentityTests.test_profile_only_and_compute_only_evidence_are_not_action_bindings) ... ok\ntest_source_observations_and_territories_are_preserved (__main__.UnitIdentityTests.test_source_observations_and_territories_are_preserved) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.014s\n\nOK"
+    },
+    {
+      "script": "test_component_scope_v1_1.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_active_components_have_single_owner (__main__.ComponentScopeTests.test_active_components_have_single_owner) ... ok\ntest_every_active_component_matches_current_calibration (__main__.ComponentScopeTests.test_every_active_component_matches_current_calibration) ... ok\ntest_malay_architecture_is_same_work_not_second_commission (__main__.ComponentScopeTests.test_malay_architecture_is_same_work_not_second_commission) ... ok\ntest_primary_recovery_and_ece_are_distinct (__main__.ComponentScopeTests.test_primary_recovery_and_ece_are_distinct) ... ok\ntest_prose_and_machine_active_outputs_agree (__main__.ComponentScopeTests.test_prose_and_machine_active_outputs_agree) ... ok\ntest_reused_work_is_exactly_owned_elsewhere (__main__.ComponentScopeTests.test_reused_work_is_exactly_owned_elsewhere) ... ok\ntest_urdu_has_no_hindi_need_or_active_target (__main__.ComponentScopeTests.test_urdu_has_no_hindi_need_or_active_target) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.003s\n\nOK"
+    },
+    {
+      "script": "build_authoritative_exposure_portfolio_v1_1.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"top100_rows\": 100,\n  \"top10\": [\n    \"SHC-BN\",\n    \"NAT-003\",\n    \"NAT-010\",\n    \"NAT-125\",\n    \"SHC-HAUSA\",\n    \"NAT-082\",\n    \"NAT-124\",\n    \"EXP-026\",\n    \"GLB-027\",\n    \"NAT-058\"\n  ],\n  \"top100_sha256\": \"C5ACDEE9A09805A4B0C22346655C429FE7906E927512A8432F74DCE3183CBB34\",\n  \"top10_sha256\": \"616E2571B02A3F1B29012479E01405B4E2169541DB4AD390CB3BB603D34B5103\",\n  \"validation_sha256\": \"6FC3E23F02BD965093516F73148D2DFC53F3371AEB3AD791DF7C818D7C54BE51\"\n}",
+      "stderr": ""
+    },
+    {
+      "script": "build_top100_companions_v1_1.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"needs_rows\": 100,\n  \"crosswalk_rows\": 100,\n  \"matched_entries\": 24,\n  \"needs_sha256\": \"E3098F019722839E0CB64FBE4740E426F907A5FDD568A3E61E715F23D881CBA2\",\n  \"crosswalk_sha256\": \"4C5021F7E5E6CBF642574A2AAA0BB2E3CD70CA408129E888309F5DF13C0D4E79\",\n  \"validation_sha256\": \"605A3E7E8D3E516D811FC20902D787143A19E20CD73C17388403C3D7C949E638\"\n}",
+      "stderr": ""
+    }
+  ],
+  "required_equal_basis_profiles": {
+    "NAT-121": "id-Latn-ID",
+    "NAT-122": "zh-Hans-CN",
+    "NAT-123": "ja-Jpan-JP",
+    "NAT-124": "hi-Deva-IN",
+    "NAT-125": "bho-Deva-IN"
+  },
+  "indonesian_openlogic_state": "Indonesian Open Logic 722 of 722 complete; Malaysian Malay unstarted",
+  "chinese_calculus_state": "complete Open Logic 722 of 722 and Algebra and Trigonometry 2e 94 of 94; Calculus Volume 1 30 of 55; six additional fixed STEM books pending; ex-ante equal-basis row",
+  "top100_membership": [
+    "SHC-BN",
+    "NAT-003",
+    "NAT-010",
+    "NAT-125",
+    "SHC-HAUSA",
+    "NAT-082",
+    "NAT-124",
+    "EXP-026",
+    "GLB-027",
+    "NAT-058",
+    "GLB-024",
+    "GLB-025",
+    "IL-PDT",
+    "NAT-028",
+    "IL-AR",
+    "NAT-027",
+    "GLB-044",
+    "EXP-028",
+    "SHC-SWAHILI",
+    "NAT-047",
+    "NAT-004",
+    "NAT-065",
+    "NAT-035",
+    "NAT-046",
+    "NAT-038",
+    "EXP-004",
+    "NAT-030",
+    "NAT-044",
+    "NAT-064",
+    "NAT-014",
+    "NAT-040",
+    "NAT-121",
+    "NAT-049",
+    "NAT-122",
+    "NAT-006",
+    "NAT-036",
+    "NAT-123",
+    "NAT-045",
+    "NAT-063",
+    "EXP-005",
+    "NAT-072",
+    "NAT-034",
+    "NAT-005",
+    "NAT-029",
+    "NAT-039",
+    "NAT-037",
+    "NAT-015",
+    "NAT-102",
+    "NAT-056",
+    "EXP-006",
+    "NAT-001",
+    "NAT-033",
+    "NAT-032",
+    "NAT-018",
+    "NAT-069",
+    "EXP-007",
+    "IL-HU",
+    "NAT-103",
+    "NAT-019",
+    "NAT-050",
+    "NAT-070",
+    "NAT-002",
+    "EXP-008",
+    "NAT-007",
+    "NAT-013",
+    "EXP-009",
+    "NAT-008",
+    "NAT-105",
+    "NAT-009",
+    "EXP-010",
+    "NAT-012",
+    "NAT-017",
+    "EXP-011",
+    "GLB-028",
+    "GLB-029",
+    "EXP-013",
+    "GLB-053",
+    "NAT-108",
+    "GLB-026",
+    "EXP-015",
+    "GLB-003",
+    "GLB-034",
+    "EXP-016",
+    "GLB-030",
+    "GLB-035",
+    "EXP-017",
+    "NAT-066",
+    "NAT-110",
+    "GLB-001",
+    "EXP-019",
+    "GLB-032",
+    "NAT-071",
+    "EXP-020",
+    "EXP-021",
+    "NAT-112",
+    "EXP-022",
+    "EXP-023",
+    "EXP-024",
+    "NAT-113",
+    "EXP-025"
+  ],
+  "outputs": {
+    "candidate_interventions_master.csv": {
+      "bytes": 128472,
+      "sha256": "9891DC3211FD035BC52E650A7FC189DD17006A0DEAEB129E9A5BCC1B9C256220"
+    },
+    "candidate_population_join_suggestions.csv": {
+      "bytes": 93862,
+      "sha256": "E47247E101C0C04B396F0F5A86F402EAF6597A2606AF34FF598070954F15965C"
+    },
+    "candidate_population_edge_curation_queue.csv": {
+      "bytes": 158443,
+      "sha256": "20839A8D8122342758E3868A277BA8A4B08B9B72130EDA5A286DEFED4089516B"
+    },
+    "natural_language_scores_v3.csv": {
+      "bytes": 142987,
+      "sha256": "CEB54FFE1976B00B977501D1DB201BC6824C25884350A982EBAAE1EACB601089"
+    },
+    "portfolio_linguistic_candidates.csv": {
+      "bytes": 168690,
+      "sha256": "A4515A86169E023A0C5DE48CB6D2B038D8B4CD05DB1BCF1AE947FDE945F59929"
+    },
+    "TOP_10.csv": {
+      "bytes": 46175,
+      "sha256": "616E2571B02A3F1B29012479E01405B4E2169541DB4AD390CB3BB603D34B5103"
+    },
+    "TOP_100.csv": {
+      "bytes": 406614,
+      "sha256": "C5ACDEE9A09805A4B0C22346655C429FE7906E927512A8432F74DCE3183CBB34"
+    },
+    "table_a_ex_ante_gross_opportunity.csv": {
+      "bytes": 65067,
+      "sha256": "9AB0265B1C3F8869D74351FCF21B16CEA6388AD9B10976CDA3D2C12DC873D838"
+    },
+    "table_b_target_readable_access_sensitivity.csv": {
+      "bytes": 104273,
+      "sha256": "A4B1BF7DCF8DCB9DADC1545EC05CC4D41E7AEABC395A7146820E6729022AA13C"
+    },
+    "table_c_forward_residual_commissioning.csv": {
+      "bytes": 13418,
+      "sha256": "0755B3AE7ED06EFC5D7505B160C1E7F5F8825DEBC04569E8D925443E9393273C"
+    },
+    "denominator_stratified_rankings_v1_1_validation.json": {
+      "bytes": 5368,
+      "sha256": "6CEE9A1FA1F9EC48BE9AA0B1505DC175DE55DF69D71D0D3B269BE5CA16261685"
+    },
+    "expected_language_profiles_v1_1.csv": {
+      "bytes": 28762,
+      "sha256": "103AC91B4BC485EAC1849A0F4ADC4D398869D5A32AC697BBE9E46875D131E5D2"
+    },
+    "expected_universe_validation_v1_1.json": {
+      "bytes": 3132,
+      "sha256": "2060598A7E09B90C9B60E4350B231E3B4133D9FA3DE91F2C92888A73C5969AA8"
+    },
+    "profile_population_estimates_supplement_v1_1.csv": {
+      "bytes": 33515,
+      "sha256": "0BA2DDC28306F9A79A256F47F80F0D2AEBB99EB34E80C782B731E1E316E9852B"
+    },
+    "profile_population_estimates_supplement_validation_v1_1.json": {
+      "bytes": 2204,
+      "sha256": "2047A356CD8B75EE85200E44937B59D47BDDB799071EA9BA8048DEAB1EF0F4ED"
+    },
+    "expected_profile_population_joins_v1_1.csv": {
+      "bytes": 100823,
+      "sha256": "D949CDA66DCCD469DC3DB706933412B6C93C043ED83C48C32673C35385C44548"
+    },
+    "expected_profile_population_joins_validation_v1_1.json": {
+      "bytes": 2846,
+      "sha256": "6F289110CEC38BDFB9284B3823BF9CECA6A485446068F873DE164A40F0B76F3B"
+    },
+    "high_reach_education_needs_v1_1.csv": {
+      "bytes": 33593,
+      "sha256": "A41FBAC87B2DF2E3876392E7AA199DB0DAE7803FE1629D6B61CBD229343391B6"
+    },
+    "high_reach_needs_portfolio_edges_v1_1.csv": {
+      "bytes": 1996,
+      "sha256": "429A5CA6D0BED571471DB9AA2E0B67FEC157CBBBD4A717262B8F158E838458CC"
+    },
+    "top100_commissioning_portfolio_v1_1_validation.json": {
+      "bytes": 3461,
+      "sha256": "6FC3E23F02BD965093516F73148D2DFC53F3371AEB3AD791DF7C818D7C54BE51"
+    },
+    "allocation_policy_v1_1_validation.json": {
+      "bytes": 4473023,
+      "sha256": "DA7831A1C4F01D3FC9D650C4C0F820E8B38BA2412A1FEC34D05C966BD7DC1B1C"
+    },
+    "allocation_policy_sensitivity_v1_1.csv": {
+      "bytes": 46106,
+      "sha256": "6F4DAECE9FC5C4F24F0E033C4002CCC98595AAAE8B84EB960F1D7712B4E17085"
+    },
+    "opportunity_planning_sensitivity_v1_1.csv": {
+      "bytes": 127265,
+      "sha256": "B3583CB76859E9B62D6646CE6349F78FC815634DA67230468E3B09E61D394589"
+    },
+    "full_computed_allocation_queue.csv": {
+      "bytes": 757401,
+      "sha256": "B8B08F52A1FEA81CA7F2DD6DCA3A3252A771DC0CD59D53E2838D85AF7DD16263"
+    },
+    "candidate_dispositions.json": {
+      "bytes": 66696,
+      "sha256": "6EBAB4A8FFB4B8A5D0B1B6CE9165FF4279AD121D686F31653763A38621E7C623"
+    },
+    "recovered_lane_and_prior_band_crosswalk.json": {
+      "bytes": 57996,
+      "sha256": "C850AAB4A3445978127A2FB513F367D5ADF2A671A8BD2A218C5D1E1F57874BC0"
+    },
+    "scope_calibrated_planning_crosswalk.json": {
+      "bytes": 1007784,
+      "sha256": "20F3A46F98399BF18BB0DDB927F0D62819A02BC3C974F3A6A5D4B17B73450DD5"
+    },
+    "top100_needs_assignment_v2.csv": {
+      "bytes": 280635,
+      "sha256": "E3098F019722839E0CB64FBE4740E426F907A5FDD568A3E61E715F23D881CBA2"
+    },
+    "top100_interlanguage_overlap_crosswalk.csv": {
+      "bytes": 112187,
+      "sha256": "4C5021F7E5E6CBF642574A2AAA0BB2E3CD70CA408129E888309F5DF13C0D4E79"
+    },
+    "top100_companions_v1_1_validation.json": {
+      "bytes": 1550,
+      "sha256": "605A3E7E8D3E516D811FC20902D787143A19E20CD73C17388403C3D7C949E638"
+    }
+  }
+}

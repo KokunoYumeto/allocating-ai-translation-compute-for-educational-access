@@ -138,6 +138,7 @@ function classifyExisting(status) {
     status === "partial_321_of_722" || status === "7 of 722 units" ||
     status === "not systematic programme-wide" || status === "inconsistent across local corpus" ||
     status.startsWith("established Indonesian program") ||
+    status.startsWith("complete Open Logic 722 of 722") ||
     status.startsWith("Indonesian Open Logic complete 722 of 722; Malaysian Malay unstarted") ||
     status.includes("complete locally") || status.startsWith("partial exact ") || status.includes("complete and publicly read back") ||
     status.includes("complete; ") || status.startsWith("Indonesian 321") ||
@@ -189,6 +190,9 @@ const appendixA = data.candidates.map(row => {
   } else if (row.intervention_id === "IL-ISV") {
     verified = "7"; total = "722"; residual = "715"; residualFraction = (715 / 722).toFixed(10);
     deficit = "Exact local-unit accounting only: D=0 for 7 units and D=1 for 715 remaining units; no demographic bridge credit follows.";
+  } else if (row.intervention_id === "NAT-122") {
+    verified = "29"; total = "55"; residual = "26"; residualFraction = (26 / 55).toFixed(10);
+    deficit = "Mixed exact baseline: D=0 for complete Open Logic 722/722 and Algebra and Trigonometry 2e 94/94; Calculus Volume 1 has 29/55 covered and 26/55 residual. D=1 applies only to the ex-ante equal-basis comparison, never to already completed forward work.";
   }
   return {
     intervention_id: row.intervention_id,
@@ -229,7 +233,7 @@ const appendixAStates = stateOrder.map(state => ({
   definition: stateMeaning[state],
   deficit_effect: deficitRule[state],
   evidence_boundary: state === "dormant" || state === "duplicated"
-    ? "No rows in the current 210-row register meet this state; retained as an explicit fail-closed rule."
+    ? "No rows in the current 211-row register meet this state; retained as an explicit fail-closed rule."
     : "Classification uses only existing_local_status and the declared scope in candidate_interventions_master.csv.",
 }));
 
@@ -573,17 +577,17 @@ const mapCounts = Object.fromEntries(
 const stateCounts = Object.fromEntries(appendixAStates.map(r => [r.reconciliation_state, Number(r.registered_row_count)]));
 
 const validations = [
-  [data.candidates.length === 210, `candidate register rows = ${data.candidates.length} (expected 210)`],
-  [appendixA.length === 210, `Appendix A rows = ${appendixA.length}`],
-  [JSON.stringify(stateCounts) === JSON.stringify({covered:1,partial:18,researched:2,dormant:0,duplicated:0,missing:189}), `Appendix A state counts = ${JSON.stringify(stateCounts)}`],
-  [data.cardinal.length === 134, `cardinal natural-language rows = ${data.cardinal.length} (expected 134)`],
-  [appendixB.length === 134, `global gap rows = ${appendixB.length}`],
+  [data.candidates.length === 211, `candidate register rows = ${data.candidates.length} (expected 211)`],
+  [appendixA.length === 211, `Appendix A rows = ${appendixA.length}`],
+  [JSON.stringify(stateCounts) === JSON.stringify({covered:1,partial:19,researched:2,dormant:0,duplicated:0,missing:189}), `Appendix A state counts = ${JSON.stringify(stateCounts)}`],
+  [data.cardinal.length === 135, `cardinal natural-language rows = ${data.cardinal.length} (expected 135)`],
+  [appendixB.length === 135, `global gap rows = ${appendixB.length}`],
   [appendixB.filter(r => r.top100 === "true").length === 100, `global gap Top100 rows = ${appendixB.filter(r => r.top100 === "true").length}`],
   [data.top100.length === 100, `TOP_100 rows = ${data.top100.length}`],
   [data.top100.every(r => r.intervention_type === "natural_language_edition"), "TOP_100 contains only natural-language editions"],
   [data.top100.every(r => r.output_count === "1"), "TOP_100 output_count is one for every target"],
   [data.top100.every((r, i) => Number(r.portfolio_position) === i + 1), "TOP_100 positions are exactly 1 through 100"],
-  [JSON.stringify(mapCounts) === JSON.stringify({"MV-1|D2":36,"MV-1|D3":43,"SB-1|D3":21}), `curriculum mapping counts = ${JSON.stringify(mapCounts)}`],
+  [JSON.stringify(mapCounts) === JSON.stringify({"MV-1|D2":36,"MV-1|D3":42,"SB-1|D3":22}), `curriculum mapping counts = ${JSON.stringify(mapCounts)}`],
   [appendixC.length === 11, `accessibility safeguard rows = ${appendixC.length}`],
   [appendixC.every(r => r.rank_ready === "false" && r.portfolio_slot_selected === "false"), "all accessibility safeguards remain non-cardinal and unselected"],
   [appendixE.length === 5, `unresolved/D0 rows = ${appendixE.length}`],
@@ -607,7 +611,7 @@ ${mdTable(appendixAStates, [
   {key:"reconciliation_state",label:"State"},{key:"registered_row_count",label:"Rows"},{key:"definition",label:"Registered meaning"},{key:"deficit_effect",label:"Deficit effect"},{key:"evidence_boundary",label:"Boundary"}
 ])}
 
-The two exact unit-denominator cases are the completed Indonesian Open Logic baseline (722/722 covered; zero residual, D = ${(0).toFixed(10)}) and Interslavic local production (7/722 covered; 715/722 residual, D = ${(715/722).toFixed(10)}). Indonesian is retained only to prevent double counting, not as a forward completion candidate. Interslavic unit coverage does not establish cross-language demographic reach. All other partial rows remain component-level because the register supplies no common scalar denominator. The detailed 210-row reconciliation is machine-readable in \`appendix_a_existing_work_reconciliation.csv\`.
+The exact unit-denominator cases include complete Indonesian Open Logic (722/722; zero residual), complete mainland Simplified Chinese Open Logic (722/722; zero residual), complete mainland Simplified Chinese Algebra and Trigonometry 2e (94/94; zero residual), partial mainland Simplified Chinese Calculus Volume 1 (29/55; 26-module residual), and Interslavic local production (7/722 covered; 715/722 residual, D = ${(715/722).toFixed(10)}). Indonesian and Chinese complete components are retained to prevent double counting, not as forward completion candidates. Interslavic unit coverage does not establish cross-language demographic reach. All other partial rows remain component-level because the register supplies no common scalar denominator. The detailed 211-row reconciliation is machine-readable in \`appendix_a_existing_work_reconciliation.csv\`.
 
 ## Appendix B. Global regional, source, measure, and confidence gap map
 
@@ -615,7 +619,7 @@ ${mdTable(appendixBRegions, [
   {key:"region",label:"Region"},{key:"subregion",label:"Subregion"},{key:"cardinal_rows",label:"Cardinal rows"},{key:"top100_rows",label:"Top100"},{key:"distinct_source_count",label:"Sources"},{key:"measure_types",label:"Measures"},{key:"high_confidence_rows",label:"High"},{key:"medium_confidence_rows",label:"Medium"},{key:"population_aggregation",label:"Aggregation rule"}
 ])}
 
-The global detail table has one row for each of the 134 cardinal natural-language interventions and an exact join to one population observation and its registered source. The source/measure/confidence table preserves source-level groupings. Counts in this appendix describe records and coverage strata; they are not summed population claims.
+The global detail table has one row for each of the 135 cardinal natural-language interventions and an exact join to one population observation and its registered source. The source/measure/confidence table preserves source-level groupings. Counts in this appendix describe records and coverage strata; they are not summed population claims.
 
 ## Appendix C. Ordered accessibility safeguard portfolio
 
@@ -641,7 +645,7 @@ ${mdTable(appendixDDepths, [
 
 ### D3. Legacy fixed-source Top100 workload mapping
 
-This mapping intentionally omits the full score fields already present in \`TOP_100.csv\`. It preserves the ordered target identity and the older uniform curriculum assignment solely as a reproducible compute sensitivity. It is not a claim that the named book is the first missing product in every population. The distribution is MV-1/D2 = 36, MV-1/D3 = 43, and SB-1/D3 = 21. SB-1 means **MV-1 plus Introductory Statistics 2e**. Commissioning decisions use \`top100_needs_assignment_v2.csv\` instead: all 100 rows now have a territory- and stage-specific first-product or bounded-audit assignment, with confidence and caveats preserved.
+This mapping intentionally omits the full score fields already present in \`TOP_100.csv\`. It preserves the ordered target identity and the older uniform curriculum assignment solely as a reproducible compute sensitivity. It is not a claim that the named book is the first missing product in every population. The distribution is MV-1/D2 = 36, MV-1/D3 = 42, and SB-1/D3 = 22. SB-1 means **MV-1 plus Introductory Statistics 2e**. Commissioning decisions use \`top100_needs_assignment_v2.csv\` instead: all 100 rows now have a territory- and stage-specific first-product or bounded-audit assignment, with confidence and caveats preserved.
 
 ${mdTable(appendixDMapping, [
   {key:"portfolio_position",label:"Pos."},{key:"intervention_id",label:"ID"},{key:"intervention_name",label:"Target"},{key:"target_profiles",label:"Profile"},{key:"portfolio_lane",label:"Lane"},{key:"first_product_id",label:"First"},{key:"first_product_depth",label:"First depth"},{key:"next_portfolio_id",label:"Next"},{key:"next_depth_id",label:"Next depth"},{key:"next_portfolio_exact_content",label:"Next exact content"},{key:"population_source_ids",label:"Population source"}

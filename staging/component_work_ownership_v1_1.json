@@ -1,0 +1,121 @@
+{
+  "schema": "educational-access/component-work-ownership/1.1",
+  "decision_basis": "Canonical ownership of exact educational outputs before ranking. Different stages or modalities remain distinct; source/toolchain reuse has no second audience. These four contracts repair source-verified bundle/member overlap, not language eligibility or position.",
+  "entries": [
+    {
+      "entry_id": "NAT-001",
+      "active_components": [
+        {"locale": "bn-Beng-BD", "package_id": "BD-FLN-G2G5-RECOVERY-v1", "stage_id": "primary-grades2-5", "modality": "offline-text-audio-worked-feedback", "owner_entry_id": "NAT-001", "evidence_ids": ["HRN-005", "ASIA-NEW-BD-MICS"]}
+      ],
+      "reuse_components": [],
+      "needs_profile_ids": ["HRN-005"],
+      "component_profile_ids": ["GLB-010"],
+      "row_overrides": {
+        "entry_name": "Bangladesh Bangla grades 2–5 mastery-recovery package",
+        "education_stages": "primary grades 2–5 mastery recovery",
+        "first_bounded_package": "Produce the Bangladesh Bangla 24-week grades 2–5 mastery-recovery component: number sense, operations, place value, fractions, measurement and patterns, with placement diagnostics, complete worked answers, audio and offline practice. NAT-001 is its sole commission owner; SHC-BN links to this component instead of translating it again.",
+        "follow_on_package": "Link to SHC-BN caregiver/ECE and separately scoped secondary progression; do not duplicate its Indian Bengali secondary/TVET package.",
+        "prerequisite_route": "Short oral/numeracy placement -> learner-specific missing foundations -> grades 2–5 worked practice and mastery checks; no teacher or online service required.",
+        "non_overlap_rule": "One owner for bn-Beng-BD grades 2–5 recovery: NAT-001. SHC-BN caregiver/ECE and Indian Bengali TVET are distinct components, not another copy of this work. Population ceilings and attainment deficits are not counted as measured causal benefits."
+      }
+    },
+    {
+      "entry_id": "NAT-124",
+      "active_components": [
+        {"locale": "hi-Deva-IN", "package_id": "HI-FIRSTYEAR-METHODS-v1", "stage_id": "firstyear-tertiary-professional-research-methods", "modality": "semantic-offline-text-labs", "owner_entry_id": "NAT-124", "evidence_ids": ["HRN-004", "ASIA-NEW-IN-AISHE"]}
+      ],
+      "reuse_components": [],
+      "needs_profile_ids": ["HRN-004"],
+      "component_profile_ids": ["GLB-007"],
+      "row_overrides": {
+        "entry_name": "Standard Hindi first-year and research-methods bridge",
+        "first_bounded_package": "Produce the Hindi first-year physics, chemistry, biology, statistics, computing, economics and management bridges with research design, R/Python and open-science methods. NAT-124 owns this exact Hindi component; IL-HU reuses its semantic/formula core for two separate Urdu locale outputs without recommissioning Hindi.",
+        "non_overlap_rule": "NAT-124 is the sole owner of this hi-Deva-IN first-year/professional/methods package. IL-HU owns Urdu outputs only. Exclude Bhojpuri and other Hindi-umbrella returns; neither source reuse nor bilingual overlap creates another Hindi audience."
+      }
+    },
+    {
+      "entry_id": "SHC-BN",
+      "active_components": [
+        {"locale": "bn-Beng-BD", "package_id": "BD-ECE-36-59M-24W-v1", "stage_id": "caregiver-preprimary-36-59months", "modality": "offline-text-audio-worked-feedback", "owner_entry_id": "SHC-BN", "evidence_ids": ["HRN-005", "ASIA-NEW-BD-MICS"]},
+        {"locale": "bn-Beng-IN", "package_id": "IN-BN-TVET-TRANSITION-v1", "stage_id": "secondary-tvet-transition", "modality": "semantic-offline-text-labs", "owner_entry_id": "SHC-BN", "evidence_ids": ["HRN-006"]}
+      ],
+      "reuse_components": [
+        {"locale": "bn-Beng-BD", "package_id": "BD-FLN-G2G5-RECOVERY-v1", "stage_id": "primary-grades2-5", "modality": "offline-text-audio-worked-feedback", "owner_entry_id": "NAT-001", "reuse_role": "link-existing-commission-no-additional-audience"}
+      ],
+      "needs_profile_ids": ["HRN-005", "HRN-006"],
+      "component_profile_ids": ["GLB-010", "GLB-011"],
+      "row_overrides": {
+        "entry_name": "Bangla shared-source caregiver/ECE and Indian TVET residuals",
+        "target_profiles": "bn-Beng-BD; bn-Beng-IN",
+        "education_stages": "Bangladesh caregiver/pre-primary; Indian Bengali secondary/TVET transition",
+        "why_now": "Documented Bangladesh ECE participation gaps and Indian Bengali secondary/TVET material discontinuity support two distinct localized residuals. The Bangladesh grades 2–5 recovery commission is owned by NAT-001 and is excluded from this action's reader estimate.",
+        "first_bounded_package": "Produce only the residual Bangladesh 24-week caregiver/ECE component and the Indian Bengali secondary/TVET workshop-mathematics, safety, coding, finance and entrepreneurship bridge. Link the Bangladesh primary progression to NAT-001 grades 2–5 recovery; do not recommission or count that recovery component here.",
+        "direct_reader_reach_claim": "Active opportunity covers caregiver/ECE in bn-Beng-BD and secondary/TVET in bn-Beng-IN only. NAT-001 grades 2–5 readers and any shared-source core audience are excluded; country population figures are ceilings, not active stage counts.",
+        "non_overlap_rule": "SHC-BN owns caregiver/ECE and Indian Bengali secondary/TVET only. NAT-001 owns Bangladesh grades 2–5 recovery. NAT-002 Indian Bengali grades 3–8 catch-up is a distinct stage-specific action. Do not sum learner/caregiver roles or ordinal R bands into a measured total."
+      }
+    },
+    {
+      "entry_id": "IL-HU",
+      "active_components": [
+        {"locale": "ur-Aran-IN", "package_id": "UR-IN-FIRSTYEAR-METHODS-v1", "stage_id": "firstyear-tertiary-professional-research-methods", "modality": "semantic-offline-text-labs", "owner_entry_id": "IL-HU", "evidence_ids": ["ACE-E011", "ACE-E023"]},
+        {"locale": "ur-Aran-PK", "package_id": "UR-PK-FIRSTYEAR-METHODS-v1", "stage_id": "firstyear-tertiary-professional-research-methods", "modality": "semantic-offline-text-labs", "owner_entry_id": "IL-HU", "evidence_ids": ["ASIA-NEW-PK-HEC", "ACE-E012", "ACE-E023"]}
+      ],
+      "reuse_components": [
+        {"locale": "hi-Deva-IN", "package_id": "HI-FIRSTYEAR-METHODS-v1", "stage_id": "firstyear-tertiary-professional-research-methods", "modality": "semantic-offline-text-labs", "owner_entry_id": "NAT-124", "reuse_role": "semantic-formula-exercise-reuse-no-hindi-audience"}
+      ],
+      "needs_profile_ids": [],
+      "component_profile_ids": ["GLB-008", "GLB-009"],
+      "row_overrides": {
+        "entry_name": "Hindi–Urdu shared-core architecture: two Urdu residual outputs",
+        "target_profiles": "ur-Aran-IN; ur-Aran-PK",
+        "territory_or_scope": "Indian and Pakistani Urdu cohorts; Hindi is a separately owned source-reuse component",
+        "education_stages": "first-year tertiary; professional/continuing; research-methods bridge",
+        "why_now": "Indian and Pakistani Urdu cohorts have a plausible tertiary/professional language-continuity opportunity, but local supply and exact residual readership are less securely measured than the Hindi component. The shared Hindi semantic/formula core is reused from NAT-124, not commissioned again.",
+        "first_bounded_package": "Produce two separate Urdu first-year disciplinary and research-methods bridges, ur-Aran-IN and ur-Aran-PK, using the NAT-124 Hindi/source semantic, formula and exercise core. Include physics, chemistry, biology, statistics, computing, economics, management, research design and R/Python with distinct India/Pakistan examples. Hindi production and Hindi beneficiaries are excluded from this residual action.",
+        "direct_reader_reach_claim": "Only ur-Aran-IN and ur-Aran-PK residual cohorts enter this action's planning R. Hindi remains at NAT-124; no cross-script comprehension multiplier or blanket L2 Urdu audience is inferred.",
+        "prerequisite_route": "Locale-specific Urdu–English secondary diagnostic -> first-year disciplinary bridge -> statistics/programming -> research-methods exercises; reuse source content, not presumed Hindi reading ability.",
+        "delivery_formats": "Separate Indian/Pakistani Nastaliq offline HTML/MathML, EPUB and PDF, with accessible logical reading order, low-cost labs and downloadable notebooks.",
+        "teacher_independent_requirements": "Worked answers, diagnostic entry, Urdu–English terminology crosswalk, locally appropriate examples, reproducible notebooks and no mandatory teacher or live platform.",
+        "accessibility_requirements": "Nastaliq/RTL shaping, bidirectional formula ordering, semantic math, keyboard/reflow support, extraction and screen-reader checks; captions/transcripts and printable fallback.",
+        "source_urls": "https://nptel.ac.in/translation ; https://aishe.gov.in/ ; https://www.hec.gov.pk/",
+        "package_evidence_status": "source_informed_provisional_urdu_stage_need",
+        "evidence_confidence": "medium broad tertiary opportunity; low exact Urdu residual cohort and package supply; provisional component-specific inference",
+        "non_overlap_rule": "IL-HU owns two Urdu locale outputs only. NAT-124 owns the Hindi component. HRN-004 is Hindi need evidence, not independently established Urdu need. Urdu India/Pakistan ceilings are separate and nonadditive with functional-language umbrellas; the shared source has no additional audience."
+      }
+    },
+    {
+      "entry_id": "NAT-040",
+      "requires_calibration_binding": false,
+      "active_components": [
+        {"locale": "ms-Latn-MY", "package_id": "OLP-FR2-210-MY-v1", "stage_id": "uppersecondary-undergraduate-formal-reasoning", "modality": "semantic-offline-text-worked-feedback", "owner_entry_id": "NAT-040", "evidence_ids": ["ACE-A013", "ACE-E004", "ACE-E005"]}
+      ],
+      "reuse_components": [],
+      "needs_profile_ids": [],
+      "component_profile_ids": ["GLB-054"],
+      "row_overrides": {
+        "entry_name": "Malaysian Malay formal reasoning via Indonesian source reuse",
+        "target_profiles": "ms-Latn-MY",
+        "first_bounded_package": "Produce the registered FR-2 Formal-reasoning core, 210 source units covering FR-1 plus first-order logic, as a Malaysian Malay locale adaptation of the completed 722/722 Indonesian Open Logic corpus. NAT-040 owns this bounded shared-source action; IL-IDMS is its architecture alias, not another commission. Retain diagnostics, complete worked answers, editable source and offline HTML/MathML/PDF.",
+        "follow_on_package": "After the FR-2 component, scope the remaining non-FR-2 Open Logic modules and separate Malaysian Jawi derivatives individually; neither is included in this first action's reader estimate.",
+        "existing_supply_state": "Malaysian educational supply exists; the verified reusable source asset is Indonesian Open Logic 722/722. Exact Malaysian terminology/curriculum deltas are distinct from Indonesian readership.",
+        "shared_core_compute_reuse": "IL-IDMS Indonesian–Malaysian Malay production architecture: reuse the completed Indonesian semantic/formula source for the 210-unit FR-2 Malaysian output. Locale-delta token savings are unmeasured.",
+        "non_overlap_rule": "One ms-Latn-MY FR-2 commission, canonically NAT-040. IL-IDMS is an exact first-action alias retained in architecture/disposition data. Do not count Indonesian beneficiaries, the architecture itself, additional Open Logic units or Jawi derivatives as this action's new audience."
+      }
+    },
+    {
+      "entry_id": "IL-IDMS",
+      "canonical_alias_of": "NAT-040",
+      "requires_calibration_binding": false,
+      "active_components": [
+        {"locale": "ms-Latn-MY", "package_id": "OLP-FR2-210-MY-v1", "stage_id": "uppersecondary-undergraduate-formal-reasoning", "modality": "semantic-offline-text-worked-feedback", "owner_entry_id": "NAT-040", "evidence_ids": ["ACE-A013", "ACE-E004", "ACE-E005"]}
+      ],
+      "reuse_components": [],
+      "needs_profile_ids": [],
+      "component_profile_ids": ["GLB-054"],
+      "row_overrides": {
+        "first_bounded_package": "Architecture alias of NAT-040: localize the 210-unit FR-2 Malaysian Malay component from completed Indonesian Open Logic. Schedule this exact work only under NAT-040; broader non-FR-2 and Jawi derivatives remain separately scoped follow-on work.",
+        "non_overlap_rule": "Canonical first-action owner NAT-040; retain this architecture in the disposition/evidence register without a second commission or demographic increment."
+      }
+    }
+  ]
+}
