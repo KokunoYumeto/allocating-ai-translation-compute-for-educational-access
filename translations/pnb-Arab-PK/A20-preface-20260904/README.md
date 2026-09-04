@@ -24,6 +24,8 @@ Run `python scripts/build_reader.py`, then `node scripts/build_pdf.cjs`. The lat
 
 The PDF contains structural tags and bookmarks, but is not PDF/UA-certified. Arabic presentation forms in extracted text require Unicode NFKC normalization, and mixed-direction reading order can vary by PDF tool. The static-font edition eliminates the missing/null-character extraction seen in the rejected variable-font build. The semantic HTML is the primary accessible alternative. Native Shahmukhi terminology consensus and screen-reader pronunciation are not claimed.
 
+The [readable terminology decision log](terminology/DECISION_LOG.md) and [machine-readable JSONL](terminology/DECISION_LOG.jsonl) expose the exact decision source, observed target locations, mathematical sense, authorities actually checked or not found, rationale, Urdu/English alternatives, uncertainty, provisional status, and focused expert-review question. These initial 31 entries are explicitly retrospective reconstructions from the preexisting terminology/canon records, not claimed contemporaneous motives. Missing expert evidence does not leave translation gaps; provisional choices remain open to asynchronous correction.
+
 ## Rights and credits
 
 OpenStax / Rice University; senior contributing authors Lynn Marecek and Andrea Honeycutt Mathis, with all source reviewers retained. CC BY-NC-SA 4.0 subject to component exceptions. Bundled Noto font: SIL OFL 1.1. Canon quotations: attributed linguistic evidence, not a claim of CC licensing. See `LICENSE.txt`.

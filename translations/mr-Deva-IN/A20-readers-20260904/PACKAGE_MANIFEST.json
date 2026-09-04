@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5073,
-      "sha256": "0575da7d913cc0cbdeadf3c1c3be000bb4fbf54d505c5f30c432f91aa0c54923"
+      "bytes": 5629,
+      "sha256": "0cc1c4151a17df7854b05bfa583d1eb21c353a6dd9ec2b6508c4b9836338feec"
     },
     {
       "path": "LICENSE",
@@ -226,8 +226,29 @@
       "path": "qa/VISUAL_REVIEW.md",
       "bytes": 1674,
       "sha256": "776439f44c3d9ee6dda96c600b67b4154f6f576eae37cdedf9c08849fb61bd6a"
+    },
+    {
+      "path": "terminology/DECISION_LOG.jsonl",
+      "bytes": 143679,
+      "sha256": "e6ec03505d8acd465c4b3bec69a27b2d07a219d63f087f46b0340927bb3c0487"
+    },
+    {
+      "path": "terminology/DECISION_LOG.md",
+      "bytes": 120812,
+      "sha256": "756e73a6834e4718ace68ad474adb4eb8107b73f72ad5e56e64c566acda41a2a"
+    },
+    {
+      "path": "qa/TERMINOLOGY_DECISION_LOG_QA.json",
+      "bytes": 799,
+      "sha256": "4b774e8ffa4142bafed36d60d0074a873dd09eec4413fa8048946e4b09c240a3"
     }
   ],
   "source_zip_integrity": "PASS; every entry hash re-read",
-  "public_paths_preserve_predecessors": true
+  "public_paths_preserve_predecessors": true,
+  "terminology_decision_log": {
+    "jsonl": "terminology/DECISION_LOG.jsonl",
+    "readable": "terminology/DECISION_LOG.md",
+    "evidence_timing": "initial records are explicitly marked retrospective; future packet records are contemporaneous",
+    "expert_review": "asynchronous and optional; not a release hold"
+  }
 }

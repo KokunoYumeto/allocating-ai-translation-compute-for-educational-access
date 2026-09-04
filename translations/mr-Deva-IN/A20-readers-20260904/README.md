@@ -24,6 +24,8 @@ Frozen recovered intake: [GitHub commit ed6f2e2](https://github.com/KokunoYumeto
 
 The pinned Marathi canon draws on Maharashtra's Marathi-medium Grade-8 mathematics book and specific Marathi Vishwakosh passages. Canon-supported and provisional terms remain distinct. In particular, मूल्यसंच is the retained working term for the actual range; कक्षा is the recorded attested synonym. The full vertical-line-test phrase and some classroom compounds remain authored/provisional. No new linguistic certification is inferred from a successful build.
 
+The [readable terminology decision log](terminology/DECISION_LOG.md) and its [machine-readable JSONL](terminology/DECISION_LOG.jsonl) expose the source/target locations, checked authorities, rationale, alternatives, uncertainty, provisional status, and focused expert-review question for each recorded choice. These initial 54 entries are explicitly retrospective reconstructions from the preexisting ledger and canon records; they are not presented as contemporaneous motives. Expert review can correct them asynchronously and is not a publication gate.
+
 ## Changes in this package
 
 The 2026-09-04 recovery completes the two full HTML readers, fixes narrow-screen table layout in the smaller readers, adds reader navigation and updates edition framing. Mathematical source strings, exercise roles, source IDs and source images remain unchanged. Concrete PDF-only layout fixes and exact build/visual checks are in the compact QA receipts. Source corrections already present in the recovery remain visibly disclosed rather than silently rewritten.
