@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "task": "Marathi A20:m81374 readable PDF recovery",
+  "status": "COMPLETE bounded helper; owner integration/publication remains separate",
+  "pdf_pages": 178,
+  "learning_content_pages": 164,
+  "credits_pages": 1,
+  "identity_index_pages": 13,
+  "source_sha256": "c629adb12dd6381b9d219d783f4af055aa1a8c060a9b36dce3bfcb5a39c1172d",
+  "pdf_sha256": "71cb67cadf6e4e13f8cf12b8d51e2b601fbbea23759ec87918a971a5cf91f411",
+  "source_exercises": 255,
+  "source_supplied_answers": 141,
+  "explicit_answer_omissions": 114,
+  "render_fixes": [
+    "keep plain subpart labels with next graph",
+    "correct mixed-font punctuation runs",
+    "refresh render-only closing status and preserve exact source attachment"
+  ],
+  "source_or_math_edits": false,
+  "figures": 149,
+  "math_checks": 685,
+  "named_destinations": 1371,
+  "fresh_process_replays_identical": true,
+  "source_oracle_tests_passed": 20,
+  "visual_samples": [
+    1,
+    4,
+    39,
+    50,
+    81,
+    120,
+    149,
+    164,
+    165,
+    178
+  ],
+  "next_action": "Owner copies these helper changes into existing m81374 closure and integrates final PDF.",
+  "required_unchanged_builder_files": [
+    {
+      "path": "tools/build_pdf.py",
+      "bytes": 24564,
+      "sha256": "c54d8571feb262fcce90d37dbe9d02fcdf9b39246fbed739ce9992f1185afc90"
+    },
+    {
+      "path": "tools/build_unit.py",
+      "bytes": 21765,
+      "sha256": "b86e2cfb36ee411e981e67fbcb73d579aca4f75afa5d16104d0bfd92bcea31b9"
+    },
+    {
+      "path": "tools/assemble_m81374.py",
+      "bytes": 48826,
+      "sha256": "3220e1a0164c1a6af71066d3250952cc7773a70a1f6095c0a5fbc3548274b54d"
+    },
+    {
+      "path": "tools/test_m81374_primary_source.py",
+      "bytes": 47495,
+      "sha256": "3f11b59133d137b32e5157dab8baab25f17236b69bd47942a5708b74597fd9e7"
+    }
+  ],
+  "files": [
+    {
+      "path": "output/pdf/A20-m81374.pdf",
+      "bytes": 13814663,
+      "sha256": "71cb67cadf6e4e13f8cf12b8d51e2b601fbbea23759ec87918a971a5cf91f411"
+    },
+    {
+      "path": "tools/build_m81374_pdf.py",
+      "bytes": 35185,
+      "sha256": "c15d45f822b549e29a24e1905637707b7df9404f5297c1f82f2321f6b0a06eb8"
+    },
+    {
+      "path": "tools/audit_symbol_runs.py",
+      "bytes": 1154,
+      "sha256": "4536c48c00e259289ffbb7cc7336f71b74bd6834beeb135f2715ac5b62d373b8"
+    },
+    {
+      "path": "tools/qa_m81374_pdf_recovery.py",
+      "bytes": 6542,
+      "sha256": "e53f9d96d2a23efa74d87d5151e4076615e3e3c8203667165be1dfb31bc907c5"
+    },
+    {
+      "path": "tools/verify_m81374_replay.py",
+      "bytes": 1690,
+      "sha256": "b57d65cf1bd7b62ec146eafac65c3fcb28793381c4f54ee89030efa6abe21dca"
+    },
+    {
+      "path": "tools/seal_m81374_handoff.py",
+      "bytes": 3188,
+      "sha256": "4a2f403a85bb18f4ad89c8fe84dcd924a93bbe9e390d750183d2e4660f151c28"
+    },
+    {
+      "path": "requirements-pdf.txt",
+      "bytes": 313,
+      "sha256": "408893177cb2f516077551d1e0edcca8fde802b1f8b34a77d6b2f149bd202a92"
+    },
+    {
+      "path": "qa/recovery/BUILD_RECEIPT_PUBLIC.json",
+      "bytes": 342617,
+      "sha256": "3f17800eb6204f513abdaa1d16be907e889f626e3eb425b72e62efa641e4e634"
+    },
+    {
+      "path": "qa/recovery/DEPENDENCIES.json",
+      "bytes": 1676,
+      "sha256": "2320d41197f31d5c75e0bb1e543811de0ab827bd5f0bbf8a1d6a89aefe2fe3f6"
+    },
+    {
+      "path": "qa/recovery/REVIEW.md",
+      "bytes": 5721,
+      "sha256": "28e7b6e7a938bad96f04604c57dac3e42dcc03399ad3d5c7b81e89eb367bba51"
+    },
+    {
+      "path": "qa/recovery/AUTOMATED_QA.json",
+      "bytes": 54483,
+      "sha256": "a976ec2fd0a50f37348c32733720970209ea13be9f7c5862c907d448f1d0af26"
+    },
+    {
+      "path": "qa/recovery/REPLAY_QA.json",
+      "bytes": 4381,
+      "sha256": "f5cc2cf523efdf620a4c789e1b8531fb9b4168c2263f0a256e9d0473fb174243"
+    }
+  ]
+}

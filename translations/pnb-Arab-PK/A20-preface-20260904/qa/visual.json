@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "date": "2026-09-04",
+  "reviewer": "OpenAI Codex gpt-5.6-sol, Ultra",
+  "pdf": "output/pdf/a20-preface-shahmukhi.pdf",
+  "pdf_sha256": "127fe94e93acc43d8aac85788bbe2fb568c9567bd3c5fe98f0adac3b8c972b50",
+  "pages_inspected": [1,2,3,4,5,6,7,8,9,10,11,12],
+  "rendering": "Poppler pdftoppm, 85 dpi for all 12 pages; source graph inspected separately at original pixels; 360-pixel mobile screenshot inspected.",
+  "observations": [
+    "All pages readable, no blank pages, clipped text, overprinting, missing glyph boxes or unintended mirroring observed.",
+    "Punjabi text is right aligned with shaped Naskh glyphs; English names, source labels and URLs are isolated left-to-right.",
+    "The complete source three-panel graph is contained on page 7, in original left-to-right panel order with unmirrored axes.",
+    "The three static source icons remain inline on page 6; they are not represented as operative controls.",
+    "All 16 reviewer lines and both author affiliations appear on page 9.",
+    "The Urdu/English glossary bridge remains distinct from source text; the corrected binomial-theorem bridge appears on page 11.",
+    "The 360-pixel mobile reader reflows without document-level horizontal overflow; the graph alone offers its deliberate local scroller.",
+    "Page numbers are present on all pages; the final short page continues the credits and scope statement without truncation."
+  ],
+  "limitations": [
+    "Visual review does not certify native terminology consensus or assistive-technology behavior.",
+    "The PDF is tagged but not PDF/UA-certified; extraction requires NFKC normalization for Arabic presentation forms."
+  ],
+  "rejected_build": {
+    "reason": "The initially acquired Google Fonts variable Naskh produced null/missing PDF text-extraction characters.",
+    "remedy": "Bundled pinned upstream static Regular/Bold Noto Naskh fonts; zero null/replacement characters in final extracted PDF text."
+  }
+}
