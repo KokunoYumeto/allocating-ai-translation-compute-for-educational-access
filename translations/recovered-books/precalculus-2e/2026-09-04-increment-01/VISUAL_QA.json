@@ -1,0 +1,79 @@
+{
+  "schema": "a30-increment-bounded-visual-qa/1",
+  "date": "2026-09-04",
+  "method": {
+    "browser_instances_per_reader": 1,
+    "serial": true,
+    "viewports": [
+      {"width": 1280, "height": 950},
+      {"width": 390, "height": 950}
+    ],
+    "network": "blocked",
+    "samples_per_reader": 2,
+    "all_page_rendering": false,
+    "scope_note": "A bounded risk-based sample supplements deterministic whole-reader structure, asset, MathML, ID and link checks; it is not a claim that every page-equivalent viewport was visually inspected."
+  },
+  "readers": [
+    {
+      "locale": "pnb-Arab-PK",
+      "module": "m49308",
+      "reader": "pnb-Arab-PK/m49308/reader.html",
+      "reader_sha256": "efc30347c20e681ab4e534e90834fe05e6e0e5159b119652cb398db3ef7e0d62",
+      "geometry": "pass at both viewports; document width equals viewport",
+      "assets": "10/10 images loaded with nonempty alternative text",
+      "mathml_blocks": 543,
+      "manual_sample": "Pass: desktop worked composition example and mobile composition definition are centered/readable; Shahmukhi flow is RTL while formulas remain isolated LTR. Wide internal formula/image objects remain locally scrollable without widening the document."
+    },
+    {
+      "locale": "mr-Deva-IN",
+      "module": "m49301",
+      "reader": "mr-Deva-IN/m49301/reader/m49301.mr.html",
+      "reader_sha256": "a8f3618fa67c9fd9648dd9da05398eed986692808c77232564a03ac53f16df4e",
+      "geometry": "pass at both viewports; document width equals viewport",
+      "assets": "50/50 images loaded with nonempty alternative text",
+      "mathml_blocks": 411,
+      "manual_sample": "Pass: one-to-one-function discussion, Table 13 and definition panel are centered and readable; mobile text and table content wrap without document overflow."
+    },
+    {
+      "locale": "bn-Beng-IN",
+      "module": "m49301",
+      "reader": "bn-Beng-IN/m49301/reader/m49301.bn-IN.html",
+      "reader_sha256": "ffb74b748745956bc7ef18fa54e2241c9b16360ea850b60af2f2e8bf833804cc",
+      "geometry": "pass after owner repair at both viewports; document width equals viewport",
+      "assets": "50/50 images loaded with nonempty alternative text",
+      "mathml_blocks": 411,
+      "manual_sample": "Pass: Exercises 97–100 and source-supplied answer panels are legible. The repaired mobile stylesheet contains long MathML within a local horizontal scroller instead of widening the whole reader."
+    },
+    {
+      "locale": "te-Telu-IN",
+      "module": "m50919",
+      "reader": "te-Telu-IN/m50919/reader.html",
+      "reader_sha256": "cea0b79113924d2ed03d8edf90df6864c1cd04e5fb6f411c146c7fd6f1a2a2ec",
+      "geometry": "pass at both viewports; document width equals viewport",
+      "assets": "1/1 image loaded with nonempty alternative text",
+      "mathml_blocks": 0,
+      "manual_sample": "Pass: the preface graph montage, caption, Telugu prose and added-support heading are clear at desktop and mobile widths; the English labels inside the source image remain visibly unchanged."
+    },
+    {
+      "locale": "te-Telu-IN",
+      "module": "m49299",
+      "reader": "te-Telu-IN/m49299/reader.html",
+      "reader_sha256": "7e57b0bc6ce652cbbc9f2da0bcfd51d5e44addab411119c26cd9180efc04925e",
+      "geometry": "pass at both viewports; document width equals viewport",
+      "assets": "1/1 schematic loaded with nonempty alternative text",
+      "mathml_blocks": 0,
+      "manual_sample": "Pass: the separately labeled lawful schematic and Telugu explanation are centered and readable. On mobile the intrinsically wide diagram is contained in its explicit focusable scroll region rather than shrinking labels into illegibility."
+    },
+    {
+      "locale": "vi-Latn-VN",
+      "module": "m49306",
+      "reader": "vi-Latn-VN/m49306/index.html",
+      "reader_sha256": "d53a45a413195caccea0b8c1ae594a5cbdd48e23b710fc907cdadad9cc8f9c35",
+      "geometry": "pass at both viewports; document width equals viewport",
+      "assets": "24/24 images loaded with nonempty alternative text",
+      "mathml_blocks": 254,
+      "manual_sample": "Pass: the Figure 2 secant/parabola source-supplied solution is centered and readable at desktop and mobile widths; Vietnamese prose wraps cleanly and formulas remain legible. Wide internal worked MathML remains locally scrollable without widening the document."
+    }
+  ],
+  "result": "pass"
+}
