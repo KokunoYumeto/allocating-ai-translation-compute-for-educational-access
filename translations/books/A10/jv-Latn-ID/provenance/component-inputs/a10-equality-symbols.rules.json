@@ -1,0 +1,120 @@
+{
+  "schema": "jv-source-bound-narration-fixtures-v1",
+  "status": "draft_provider_neutral_not_synthesized_not_listening_reviewed",
+  "date": "2026-08-30",
+  "purpose": "AX-2 narration fixtures for the selected A10 equality/inequality source span; not training or fine-tuning data.",
+  "tracks": ["jv-academic", "jv-conversation", "id-academic"],
+  "locales": {"jv-academic": "jv-Latn-ID", "jv-conversation": "jv-Latn-ID", "id-academic": "id-ID"},
+  "scope": {
+    "module": "m82453",
+    "section": "fs-id1170655150800",
+    "direct_child_slice_zero_based": [13, 23],
+    "first_anchor": "fs-id1171789687379",
+    "first_instructional_anchor": "fs-id1170655208137",
+    "last_included_anchor": "fs-id1170655124058",
+    "next_anchor": "fs-id1170654957487",
+    "source_mathml_expression_count": 23,
+    "indonesian_path": "downloads/jv-Latn-ID/a10-source/translated/modules/m82453/index.cnxml",
+    "indonesian_sha256": "2c0b688d569044b128d589579e9ba7d871a0fb9ac7a670ac6f22d0ef2b66e635",
+    "english_path": "downloads/jv-Latn-ID/a10-source/authority/source/modules/m82453/index.cnxml",
+    "english_sha256": "a8fdd235aa254c5a0a1248fa858e9b3579d9b40982bbc514cbe6a18c3e6fcbed",
+    "completion_claim": "Only this source-bound narration fragment is drafted; full A10/A00/AX-2 remains active."
+  },
+  "matching_contract": {
+    "namespace_context": {"m": "http://www.w3.org/1998/Math/MathML"},
+    "dispatch": "Require pinned source hash, module, source section, top-level anchor, one-based MathML ordinal, and exact namespace-aware tree including empty rows, attributes, text, tokens, and operand order.",
+    "source_mathml_storage": "Exact source element substrings under inherited m namespace; parse in a namespace-bearing wrapper.",
+    "unknown_case": "unsupported_source_bound_narration",
+    "broad_parser_authorized": false,
+    "mutate_visible_source": false,
+    "provider_behavior": "Use an explicitly supported requested locale or return unsupported_voice_locale. Never substitute an Indonesian voice/text for a Javanese track silently."
+  },
+  "canon_checkpoint": {
+    "readable_entries_reconsulted": ["C09 kiwa", "C10 tengen", "C11 luwih", "C12 gedhé", "C13 cilik", "C15 tetep", "C16 saka", "new para division-family entry"],
+    "attested_components": ["kiwa", "tengen", "luwih", "gedhé", "cilik", "tetep", "saka", "para division family"],
+    "not_claimed_attested_as_full_math_phrases": ["padha karo", "ora padha karo", "luwih cilik tinimbang", "luwih gedhé tinimbang", "Pertidaksamaan", "Bandhingan Ora Padha", "complete formula readings"],
+    "decisions": [
+      "Use luwih cilik/gedhé tinimbang for relational less/greater, avoiding collision with arithmetic subtraction.",
+      "Use padha karo for equals and padha tegese karo only for equivalence after reversing relation/operands.",
+      "Keep fixed formula narration nearly identical across Javanese registers while surrounding prose remains distinctly labeled.",
+      "Cardinal forms above the directly acquired small-number shelf remain the prior source-bound provisional forms; no IPA or dialect universality is claimed."
+    ],
+    "review_status": "Native mathematical-register, pronunciation, educator, and listening review pending."
+  },
+  "operator_conventions": [
+    {"token": "=", "jv": "padha karo", "id": "sama dengan", "restriction": "Binary equality only in registered fixtures; quoted isolated glyph uses a glyph-name fixture."},
+    {"token": "≠", "codepoint": "U+2260", "jv": "ora padha karo", "id": "tidak sama dengan"},
+    {"token": "<", "jv": "luwih cilik tinimbang", "id": "kurang dari", "spatial_support": "left on the registered number-line explanation"},
+    {"token": ">", "jv": "luwih gedhé tinimbang", "id": "lebih dari", "spatial_support": "right on the registered number-line explanation"},
+    {"token": "≤", "codepoint": "U+2264", "jv": "luwih cilik utawa padha karo", "id": "kurang dari atau sama dengan"},
+    {"token": "≥", "codepoint": "U+2265", "jv": "luwih gedhé utawa padha karo", "id": "lebih dari atau sama dengan"},
+    {"token": "−", "codepoint": "U+2212", "jv": "dikurangi", "id": "dikurangi", "restriction": "Binary subtraction only; never infer unary-negative support."},
+    {"token": "÷", "codepoint": "U+00F7", "jv": "dipara", "id": "dibagi"},
+    {"token": "+", "jv": "ditambah", "id": "ditambah"}
+  ],
+  "math_fixtures": [
+    {"id":"A10-EQ-M01","anchor":"fs-id1170655025665","math_ordinal":1,"source_mathml":"<m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow></m:math>","expected":{"jv-academic":"aksara a padha karo aksara be","jv-conversation":"aksara a padha karo aksara be","id-academic":"huruf a sama dengan huruf be"}},
+    {"id":"A10-EQ-M02","anchor":"fs-id1170655025665","math_ordinal":2,"source_mathml":"<m:math><m:mrow><m:mo>“=”</m:mo></m:mrow></m:math>","expected":{"jv-academic":"tandha padha karo","jv-conversation":"tandha padha karo","id-academic":"tanda sama dengan"}},
+    {"id":"A10-EQ-M03","anchor":"fs-id1170655207857","math_ordinal":1,"source_mathml":"<m:math><m:mrow><m:mtable><m:mtr/><m:mtr/><m:mtr><m:mtd columnalign=\"left\"><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mspace width=\"0.2em\"/><m:mtext>dibaca “</m:mtext><m:mi>a</m:mi><m:mspace width=\"0.2em\"/><m:mtext>kurang dari</m:mtext><m:mspace width=\"0.2em\"/><m:mi>b</m:mi><m:mtext>”</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign=\"left\"><m:mi>a</m:mi><m:mspace width=\"0.2em\"/><m:mtext>berada di sebelah kiri</m:mtext><m:mspace width=\"0.2em\"/><m:mi>b</m:mi><m:mspace width=\"0.2em\"/><m:mtext>pada garis bilangan</m:mtext></m:mtd></m:mtr></m:mtable></m:mrow></m:math>","expected":{"jv-academic":"Aksara a luwih cilik tinimbang aksara be. Diwaca: aksara a luwih cilik tinimbang aksara be. Aksara a mapan ing sisih kiwa aksara be ing garis wilangan.","jv-conversation":"Aksara a luwih cilik tinimbang aksara be. Wacane: aksara a luwih cilik tinimbang aksara be. Aksara a ana ing kiwa aksara be ing garis wilangan.","id-academic":"Huruf a kurang dari huruf be. Dibaca: huruf a kurang dari huruf be. Huruf a berada di sebelah kiri huruf be pada garis bilangan."}},
+    {"id":"A10-EQ-M04","anchor":"fs-id1170655207857","math_ordinal":2,"source_mathml":"<m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign=\"left\"><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mi>b</m:mi><m:mspace width=\"0.2em\"/><m:mtext>dibaca “</m:mtext><m:mi>a</m:mi><m:mspace width=\"0.2em\"/><m:mtext>lebih dari</m:mtext><m:mspace width=\"0.2em\"/><m:mi>b</m:mi><m:mtext>”</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign=\"left\"><m:mi>a</m:mi><m:mspace width=\"0.2em\"/><m:mtext>berada di sebelah kanan</m:mtext><m:mspace width=\"0.2em\"/><m:mi>b</m:mi><m:mspace width=\"0.2em\"/><m:mtext>pada garis bilangan</m:mtext></m:mtd></m:mtr></m:mtable></m:mrow></m:math>","expected":{"jv-academic":"Aksara a luwih gedhé tinimbang aksara be. Diwaca: aksara a luwih gedhé tinimbang aksara be. Aksara a mapan ing sisih tengen aksara be ing garis wilangan.","jv-conversation":"Aksara a luwih gedhé tinimbang aksara be. Wacane: aksara a luwih gedhé tinimbang aksara be. Aksara a ana ing tengen aksara be ing garis wilangan.","id-academic":"Huruf a lebih dari huruf be. Dibaca: huruf a lebih dari huruf be. Huruf a berada di sebelah kanan huruf be pada garis bilangan."}},
+    {"id":"A10-EQ-M05","anchor":"fs-id1170655178120","math_ordinal":1,"source_mathml":"<m:math><m:mrow><m:mi>a</m:mi><m:mo>≠</m:mo><m:mi>b</m:mi></m:mrow></m:math>","expected":{"jv-academic":"aksara a ora padha karo aksara be","jv-conversation":"aksara a ora padha karo aksara be","id-academic":"huruf a tidak sama dengan huruf be"}},
+    {"id":"A10-EQ-M06","anchor":"fs-id1170655178120","math_ordinal":2,"source_mathml":"<m:math><m:mrow><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi></m:mrow></m:math>","expected":{"jv-academic":"aksara a luwih cilik utawa padha karo aksara be","jv-conversation":"aksara a luwih cilik utawa padha karo aksara be","id-academic":"huruf a kurang dari atau sama dengan huruf be"}},
+    {"id":"A10-EQ-M07","anchor":"fs-id1170655178120","math_ordinal":3,"source_mathml":"<m:math><m:mrow><m:mi>a</m:mi><m:mo>≥</m:mo><m:mi>b</m:mi></m:mrow></m:math>","expected":{"jv-academic":"aksara a luwih gedhé utawa padha karo aksara be","jv-conversation":"aksara a luwih gedhé utawa padha karo aksara be","id-academic":"huruf a lebih dari atau sama dengan huruf be"}},
+    {"id":"A10-EQ-M08","anchor":"fs-id1170655113222","math_ordinal":1,"source_mathml":"<m:math><m:mrow><m:mn>17</m:mn><m:mo>≤</m:mo><m:mn>26</m:mn></m:mrow></m:math>","expected":{"jv-academic":"pitulas luwih cilik utawa padha karo nemlikur","jv-conversation":"pitulas luwih cilik utawa padha karo nemlikur","id-academic":"tujuh belas kurang dari atau sama dengan dua puluh enam"}},
+    {"id":"A10-EQ-M09","anchor":"fs-id1170655113222","math_ordinal":2,"source_mathml":"<m:math><m:mrow><m:mn>8</m:mn><m:mo>≠</m:mo><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math>","expected":{"jv-academic":"wolu ora padha karo pitulas dikurangi telu","jv-conversation":"wolu ora padha karo pitulas dikurangi telu","id-academic":"delapan tidak sama dengan tujuh belas dikurangi tiga"}},
+    {"id":"A10-EQ-M10","anchor":"fs-id1170655113222","math_ordinal":3,"source_mathml":"<m:math><m:mrow><m:mn>12</m:mn><m:mo>&gt;</m:mo><m:mn>27</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn></m:mrow></m:math>","expected":{"jv-academic":"rolas luwih gedhé tinimbang pitulikur dipara telu","jv-conversation":"rolas luwih gedhé tinimbang pitulikur dipara telu","id-academic":"dua belas lebih dari dua puluh tujuh dibagi tiga"}},
+    {"id":"A10-EQ-M11","anchor":"fs-id1170655113222","math_ordinal":4,"source_mathml":"<m:math><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>&lt;</m:mo><m:mn>19</m:mn></m:mrow></m:math>","expected":{"jv-academic":"aksara ye ditambah pitu luwih cilik tinimbang sangalas","jv-conversation":"aksara ye ditambah pitu luwih cilik tinimbang sangalas","id-academic":"huruf ye ditambah tujuh kurang dari sembilan belas"}},
+    {"id":"A10-EQ-M12","anchor":"fs-id1170655113222","math_ordinal":5,"source_mathml":"<m:math><m:mrow><m:mn>17</m:mn><m:mo>≤</m:mo><m:mn>26</m:mn></m:mrow></m:math>","expected":{"jv-academic":"pitulas luwih cilik utawa padha karo nemlikur","jv-conversation":"pitulas luwih cilik utawa padha karo nemlikur","id-academic":"tujuh belas kurang dari atau sama dengan dua puluh enam"}},
+    {"id":"A10-EQ-M13","anchor":"fs-id1170655113222","math_ordinal":6,"source_mathml":"<m:math><m:mrow><m:mn>8</m:mn><m:mo>≠</m:mo><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math>","expected":{"jv-academic":"wolu ora padha karo pitulas dikurangi telu","jv-conversation":"wolu ora padha karo pitulas dikurangi telu","id-academic":"delapan tidak sama dengan tujuh belas dikurangi tiga"}},
+    {"id":"A10-EQ-M14","anchor":"fs-id1170655113222","math_ordinal":7,"source_mathml":"<m:math><m:mrow><m:mn>12</m:mn><m:mo>&gt;</m:mo><m:mn>27</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn></m:mrow></m:math>","expected":{"jv-academic":"rolas luwih gedhé tinimbang pitulikur dipara telu","jv-conversation":"rolas luwih gedhé tinimbang pitulikur dipara telu","id-academic":"dua belas lebih dari dua puluh tujuh dibagi tiga"}},
+    {"id":"A10-EQ-M15","anchor":"fs-id1170655113222","math_ordinal":8,"source_mathml":"<m:math><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>&lt;</m:mo><m:mn>19</m:mn></m:mrow></m:math>","expected":{"jv-academic":"aksara ye ditambah pitu luwih cilik tinimbang sangalas","jv-conversation":"aksara ye ditambah pitu luwih cilik tinimbang sangalas","id-academic":"huruf ye ditambah tujuh kurang dari sembilan belas"}},
+    {"id":"A10-EQ-M16","anchor":"fs-id1170654935250","math_ordinal":1,"source_mathml":"<m:math><m:mrow><m:mn>14</m:mn><m:mo>≤</m:mo><m:mn>27</m:mn></m:mrow></m:math>","expected":{"jv-academic":"patbelas luwih cilik utawa padha karo pitulikur","jv-conversation":"patbelas luwih cilik utawa padha karo pitulikur","id-academic":"empat belas kurang dari atau sama dengan dua puluh tujuh"}},
+    {"id":"A10-EQ-M17","anchor":"fs-id1170654935250","math_ordinal":2,"source_mathml":"<m:math><m:mrow><m:mn>19</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>≠</m:mo><m:mn>8</m:mn></m:mrow></m:math>","expected":{"jv-academic":"sangalas dikurangi loro ora padha karo wolu","jv-conversation":"sangalas dikurangi loro ora padha karo wolu","id-academic":"sembilan belas dikurangi dua tidak sama dengan delapan"}},
+    {"id":"A10-EQ-M18","anchor":"fs-id1170654935250","math_ordinal":3,"source_mathml":"<m:math><m:mrow><m:mn>12</m:mn><m:mo>&gt;</m:mo><m:mn>4</m:mn><m:mo>÷</m:mo><m:mn>2</m:mn></m:mrow></m:math>","expected":{"jv-academic":"rolas luwih gedhé tinimbang papat dipara loro","jv-conversation":"rolas luwih gedhé tinimbang papat dipara loro","id-academic":"dua belas lebih dari empat dibagi dua"}},
+    {"id":"A10-EQ-M19","anchor":"fs-id1170654935250","math_ordinal":4,"source_mathml":"<m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:math>","expected":{"jv-academic":"aksara eks dikurangi pitu luwih cilik tinimbang siji","jv-conversation":"aksara eks dikurangi pitu luwih cilik tinimbang siji","id-academic":"huruf eks dikurangi tujuh kurang dari satu"}},
+    {"id":"A10-EQ-M20","anchor":"fs-id1170655124058","math_ordinal":1,"source_mathml":"<m:math><m:mrow><m:mn>19</m:mn><m:mo>≥</m:mo><m:mn>15</m:mn></m:mrow></m:math>","expected":{"jv-academic":"sangalas luwih gedhé utawa padha karo limalas","jv-conversation":"sangalas luwih gedhé utawa padha karo limalas","id-academic":"sembilan belas lebih dari atau sama dengan lima belas"}},
+    {"id":"A10-EQ-M21","anchor":"fs-id1170655124058","math_ordinal":2,"source_mathml":"<m:math><m:mrow><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math>","expected":{"jv-academic":"pitu padha karo rolas dikurangi lima","jv-conversation":"pitu padha karo rolas dikurangi lima","id-academic":"tujuh sama dengan dua belas dikurangi lima"}},
+    {"id":"A10-EQ-M22","anchor":"fs-id1170655124058","math_ordinal":3,"source_mathml":"<m:math><m:mrow><m:mn>15</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>&lt;</m:mo><m:mn>8</m:mn></m:mrow></m:math>","expected":{"jv-academic":"limalas dipara telu luwih cilik tinimbang wolu","jv-conversation":"limalas dipara telu luwih cilik tinimbang wolu","id-academic":"lima belas dibagi tiga kurang dari delapan"}},
+    {"id":"A10-EQ-M23","anchor":"fs-id1170655124058","math_ordinal":4,"source_mathml":"<m:math><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>&gt;</m:mo><m:mn>6</m:mn></m:mrow></m:math>","expected":{"jv-academic":"aksara ye ditambah telu luwih gedhé tinimbang enem","jv-conversation":"aksara ye ditambah telu luwih gedhé tinimbang enem","id-academic":"huruf ye ditambah tiga lebih dari enam"}}
+  ],
+  "prose_symbol_rules": [
+    {"anchor":"fs-id1170655155145","role":"plain-text reversal examples","invariants":["a<b is equivalent to b>a","7<11 is equivalent to 11>7","a>b is equivalent to b<a","17>4 is equivalent to 4<17"],"jv_equivalence":"padha tegese karo","restriction":"Do not replace logical equivalence with an equals glyph; preserve every reversed operand."},
+    {"anchor":"fs-id1170655178120","role":"plain-emphasis table rows","registered_notation":["a < b","a > b"],"expected_jv":["aksara a luwih cilik tinimbang aksara be","aksara a luwih gedhé tinimbang aksara be"],"restriction":"These two source rows are not MathML but remain mathematical notation; do not omit them."},
+    {"anchors":["fs-id1170654989586","fs-id1166424795899","fs-id1170655190264","fs-id1170655174550"],"role":"exercise part labels","expected":{"jv-academic":["bagean a","bagean be","bagean ce","bagean de"],"jv-conversation":["bagean a","bagean be","bagean ce","bagean de"],"id-academic":["bagian a","bagian be","bagian ce","bagian de"]},"restriction":"Circled labels are structural part markers, never variables or operators."}
+  ],
+  "diagram_rules": [
+    {"source_media":"fs-id1170652623871","source_alt":"Garis bilangan dengan titik a di sebelah kiri titik b.","expected":{"jv-academic":"Garis wilangan kanthi titik aksara a ing sisih kiwa titik aksara be. Mula aksara a luwih cilik tinimbang aksara be.","jv-conversation":"Ing garis wilangan, titik aksara a ana ing kiwa titik aksara be. Dadi aksara a luwih cilik tinimbang aksara be.","id-academic":"Garis bilangan dengan titik huruf a di sebelah kiri titik huruf be. Maka huruf a kurang dari huruf be."}},
+    {"source_media":"fs-id1167269961954","source_alt":"Garis bilangan dengan titik b di sebelah kiri titik a.","expected":{"jv-academic":"Garis wilangan kanthi titik aksara be ing sisih kiwa titik aksara a. Mula aksara a luwih gedhé tinimbang aksara be.","jv-conversation":"Ing garis wilangan, titik aksara be ana ing kiwa titik aksara a. Dadi aksara a luwih gedhé tinimbang aksara be.","id-academic":"Garis bilangan dengan titik huruf be di sebelah kiri titik huruf a. Maka huruf a lebih dari huruf be."}},
+    {"restriction":"Narration adds the explicit source-taught relation, but visible alt translation remains a faithful point-order description. Geometry/visual review is separate."}
+  ],
+  "fail_closed_cases": [
+    {"case":"Any source hash, anchor, ordinal, exact tree, operator, text token, empty mtr, mtd attribute, or operand differs","result":"unsupported_source_bound_narration"},
+    {"case":"Any unregistered matrix/table MathML","result":"unsupported_math_table_structure","reason":"The two registered mtables are prose/diagram layouts, not generic matrices."},
+    {"case":"Unary minus or negative number inferred from binary U+2212","result":"unsupported_negative_or_operator_context"},
+    {"case":"Operator precedence/evaluation requested","result":"unsupported_evaluation_context","reason":"These source expressions are translated/read, not evaluated by the fixture set."},
+    {"case":"Unknown MathML tag, operator, semantic attribute, or plain comparison notation","result":"unsupported_math_structure"},
+    {"case":"A comparison is reversed without reversing both relation and operands","result":"source_relation_invariant_failure"},
+    {"case":"A number-line point order conflicts with the registered relation","result":"diagram_relation_invariant_failure"},
+    {"case":"Provider lacks requested locale","result":"unsupported_voice_locale"}
+  ],
+  "qa_receipt": {
+    "draft_only": false,
+    "production_integration": "standalone reader and three-track SSML drafts integrated; full module and human reviews pending",
+    "math_fixtures": 23,
+    "source_prose_rule_groups": 3,
+    "diagram_fixtures": 2,
+    "structural_source_match": "pass: all 23 source MathML trees match their declared top-level anchor and one-based ordinal under namespace-aware canonical comparison",
+    "read_only_checks": [
+      "Indonesian and English source module SHA256 values match the pinned hashes recorded here.",
+      "All 23 selected source MathML expressions are covered once, with no missing or duplicate anchor/ordinal pairs.",
+      "Every MathML fixture has all three nonempty expected-reading tracks.",
+      "All formula tokens and operand orders match the worked example, both repeated worked answers, and both Try It answer blocks.",
+      "The plain-text reversal examples, emphasized table relations, part labels, and two diagram alts are separately registered.",
+      "Root subsequently integrated the exact fixtures, plain relations and diagrams into the standalone review build. No synthesis, provider call, listening review, or generic algebra parser is claimed."
+    ],
+    "human_language_review": false,
+    "synthesized_audio_files": 0,
+    "listening_review": false,
+    "provider_compatibility_tested": false
+  }
+}

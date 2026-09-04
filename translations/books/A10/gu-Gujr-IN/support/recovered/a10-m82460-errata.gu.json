@@ -1,0 +1,63 @@
+{
+  "schema": "gujarati-source-errata-v1",
+  "book": "A10",
+  "module": "m82460",
+  "entries": {
+    "fs-id1170654059651": {
+      "source_issue": "Source says3x cannot be multiplied without knowingx;3x already represents the product and is a valid simplified algebraic term. Only its numerical value needsx.",
+      "correction_gu": "3xનું સંખ્યાત્મક મૂલ્ય મેળવવા xની કિંમત જરૂરી છે;3x તરીકેનો ગુણાકાર પહેલેથી માન્ય છે.",
+      "rationale": "Distinguishes symbolic multiplication from numerical evaluation; source mathematics remains unchanged.",
+      "original_evidence": "Notice that we can multiply6·3 but we could not multiply3x without having a value forx."
+    },
+    "fs-id1170654036118": {
+      "source_issue": "The source MathML places a period inside −a before the sentence continues, displaying “−a. the additive inverse”.",
+      "correction_gu": "વાક્યનો અર્થ: −a એ aની સરવાળા માટેની વિરોધી સંખ્યા છે; સૂત્રમાં દેખાતું વચ્ચેનું પૂર્ણવિરામ ગણિતનો ભાગ નથી.",
+      "rationale": "Preserves source MathML while explicitly identifying the punctuation defect.",
+      "original_evidence": "Source MathML mrow is −,a,. followed by prose “the additive inverse of a”."
+    },
+    "eip-73": {
+      "source_issue": "The formal inverse-property table says “for any real number a” before1/a without excludinga=0.",
+      "correction_gu": "ગુણાકાર માટેની વ્યસ્ત સંખ્યા માત્ર a≠0 માટે છે; ત્યારે a·(1/a)=1. શૂન્યની વ્યસ્ત સંખ્યા નથી.",
+      "rationale": "Division by zero is undefined; the later chapter summary supplies the missing a≠0 restriction.",
+      "original_evidence": "For any real number a,1/a is the multiplicative inverse ofa."
+    },
+    "fs-id1170653991489": {
+      "source_issue": "The division-by-zero statement restricts a/0 undefined toa≠0, so it omits0/0 even though0/0 is also undefined.",
+      "correction_gu": "દરેક વાસ્તવિક a માટે a/0 અવ્યાખ્યાયિત છે; તેમાં a=0નો કિસ્સો0/0 પણ સામેલ છે.",
+      "rationale": "No real quotient gives a unique result for division by zero. Source formula is preserved.",
+      "original_evidence": "For any real number a, except0, a/0 and a÷0 are undefined."
+    },
+    "fs-id1170654012915": {
+      "source_issue": "Worked solution part(b) explains0/(−2) with the product-by-zero rule instead of the division-of-zero rule.",
+      "correction_gu": "ભાગ(b)માં0ને −2 વડે ભાગતાં0 મળે છે, કારણ કે શૂન્યને શૂન્ય સિવાયની સંખ્યા વડે ભાગતાં0 મળે છે.",
+      "rationale": "Answer0 is correct; only the stated rule is wrong.",
+      "original_evidence": "Part(b) shows0/(−2), but says “The product of any real number and0 is0.”"
+    },
+    "fs-id1170654059595": {
+      "source_issue": "In a three-factor product, source calls the first and third factors “terms”.",
+      "correction_gu": "પહેલો અને ત્રીજો અવયવ એકબીજાની વ્યસ્ત સંખ્યાઓ છે.",
+      "rationale": "Factor is the precise role inside a product; Gujarati faithful prose already uses અવયવ.",
+      "original_evidence": "Notice that the first and third terms are reciprocals...re-order the factors."
+    },
+    "fs-id1170654084055": {
+      "source_issue": "Part(c) asks which property proves two differently grouped products equal; source solution only says answers vary although the property is determined.",
+      "correction_gu": "ભાગ(c): ગુણાકારનો જૂથબંધીનો ગુણધર્મ.",
+      "rationale": "5[(0.20)(80)] and[5(0.20)](80) differ only in grouping.",
+      "original_evidence": "Source solution: ⓐ$80 ⓑ$80 ⓒ answers will vary."
+    },
+    "fs-id1170654084384": {
+      "source_issue": "The writing exercise asks to simplify8(x−1/4), but its source solution supplies no resulting expression and only says answers may vary.",
+      "correction_gu": "નમૂના જવાબ:8(x−1/4)=8x−8·(1/4)=8x−2. પગલાંની સમજૂતી જુદી હોઈ શકે છે.",
+      "rationale": "The explanation may vary, while the simplified expression is fixed.",
+      "original_evidence": "Source solution: Answers may vary."
+    },
+    "fs-id1170654068740": {
+      "source_issue": "The source accessibility summary calls the associative property “Associate Property” and misreads the addition formula as a+b times c in parentheses.",
+      "correction_gu": "જૂથબંધીનો ગુણધર્મ: સરવાળામાં (a+b)+c=a+(b+c) અને ગુણાકારમાં(ab)c=a(bc).",
+      "rationale": "Correction follows the actual native table formulas and surrounding lesson.",
+      "original_evidence": "Source summary says “Associate Property” and describes the right side as “a plus b times c in parentheses”.",
+      "summary_gu": "વાસ્તવિક સંખ્યાઓના ગુણધર્મોનું બે કૉલમવાળું કોષ્ટક છે. ક્રમવિનિમયનો ગુણધર્મ: વાસ્તવિક a, b માટે સરવાળામાં a+b=b+a અને ગુણાકારમાં ab=ba. જૂથબંધીનો ગુણધર્મ: સરવાળામાં (a+b)+c=a+(b+c) અને ગુણાકારમાં (ab)c=a(bc). વિભાજનનો ગુણધર્મ: વાસ્તવિક a, b, c માટે a(b+c)=ab+ac. તટસ્થ સંખ્યાના ગુણધર્મો: કોઈ પણ વાસ્તવિક a માટે a+0=a, 0+a=a; 0 સરવાળા માટેની તટસ્થ સંખ્યા છે. a·1=a, 1·a=a; 1 ગુણાકાર માટેની તટસ્થ સંખ્યા છે. વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો: aની સરવાળા માટેની વિરોધી સંખ્યા −a છે અને a+(−a)=0. a≠0 માટે aની ગુણાકાર માટેની વ્યસ્ત સંખ્યા 1/a છે અને a·(1/a)=1. શૂન્યના ગુણધર્મો: કોઈ પણ વાસ્તવિક a માટે a·0=0 અને 0·a=0; a≠0 માટે 0/a=0; અને દરેક વાસ્તવિક a માટે a/0 અવ્યાખ્યાયિત છે.",
+      "aria-label_gu": "વાસ્તવિક સંખ્યાઓના ગુણધર્મોનું બે કૉલમવાળું કોષ્ટક છે. ક્રમવિનિમયનો ગુણધર્મ: વાસ્તવિક a, b માટે સરવાળામાં a+b=b+a અને ગુણાકારમાં ab=ba. જૂથબંધીનો ગુણધર્મ: સરવાળામાં (a+b)+c=a+(b+c) અને ગુણાકારમાં (ab)c=a(bc). વિભાજનનો ગુણધર્મ: વાસ્તવિક a, b, c માટે a(b+c)=ab+ac. તટસ્થ સંખ્યાના ગુણધર્મો: કોઈ પણ વાસ્તવિક a માટે a+0=a, 0+a=a; 0 સરવાળા માટેની તટસ્થ સંખ્યા છે. a·1=a, 1·a=a; 1 ગુણાકાર માટેની તટસ્થ સંખ્યા છે. વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો: aની સરવાળા માટેની વિરોધી સંખ્યા −a છે અને a+(−a)=0. a≠0 માટે aની ગુણાકાર માટેની વ્યસ્ત સંખ્યા 1/a છે અને a·(1/a)=1. શૂન્યના ગુણધર્મો: કોઈ પણ વાસ્તવિક a માટે a·0=0 અને 0·a=0; a≠0 માટે 0/a=0; અને દરેક વાસ્તવિક a માટે a/0 અવ્યાખ્યાયિત છે."
+    }
+  }
+}

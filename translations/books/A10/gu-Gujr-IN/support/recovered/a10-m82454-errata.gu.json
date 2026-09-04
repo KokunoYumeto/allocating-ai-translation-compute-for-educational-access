@@ -1,0 +1,152 @@
+{
+  "schema": "source-id-keyed-gujarati-errata-v1",
+  "source_module": "A10 m82454",
+  "source_sha256": "4483b9df8736598af20287450b89cf367728da04c697f85f1abb64bbeffb092f",
+  "status": "Full source, Gujarati prose and all 65 unchanged original images reviewed; 17 confirmed source-description/prose/image issues and one explicit zero-category accessibility clarification. Source mathematical tokens preserved.",
+  "entries": {
+    "eip-id1169750893702": {
+      "source_issue": "The table ARIA calls the two distances from -7 to 0 and 0 to 7 ten units. The c-part prose says the opposite of -(-6) is 6, although that opposite would be -6.",
+      "correction_gu": "ભાગ ⓐમાં બંને અંતર 7 એકમ છે. ભાગ ⓒમાં −6ની વિરોધી સંખ્યા 6 છે, એટલે −(−6)=6.",
+      "rationale": "Distance is absolute difference; negating -6 gives 6. The expression -(-6) already equals 6.",
+      "evidence": "CNX_ElemAlg_Figure_01_03_006a_img_new.jpg actually labels both brackets with the numeral7 (not10; no English unit word). Source table newline tail: The opposite of −(−6) is6.",
+      "text_replacements_gu": {
+        "−(−6)ની વિરોધી સંખ્યા 6 છે.": "−6ની વિરોધી સંખ્યા 6 છે."
+      },
+      "aria-label_gu": "આ આકૃતિમાં a, b અને c એમ ત્રણ ભાગ છે. દરેક ભાગમાં ડાબે લખાણ અને જમણે તેને અનુરૂપ સંખ્યારેખા છે. ભાગ aનું લખાણ કહે છે: “−7 એ 7 જેટલા જ અંતરે શૂન્યથી દૂર છે, પરંતુ શૂન્યની બીજી બાજુએ છે.” જમણે −7થી 7 સુધીની સંખ્યારેખા છે. ઉપરનું પહેલું કૌંસ −7થી 0 સુધી છે અને તેની ઉપર 7 લખ્યું છે. બીજું કૌંસ 0થી 7 સુધી છે અને તેની ઉપર 7 લખ્યું છે. નીચે “7ની વિરોધી સંખ્યા −7 છે” લખ્યું છે. −7 અને 7 પર બિંદુઓ છે. ભાગ bનું લખાણ કહે છે: “10 એ −10 જેટલા જ અંતરે શૂન્યથી દૂર છે, પરંતુ શૂન્યની બીજી બાજુએ છે.” જમણે −10થી 10 સુધીની સંખ્યારેખા છે. ઉપરના બે કૌંસ −10થી 0 અને 0થી 10 સુધી છે; બંનેની ઉપર 10 લખ્યું છે. નીચે “−10ની વિરોધી સંખ્યા 10 છે” લખ્યું છે. −10 અને 10 પર બિંદુઓ છે. ભાગ cમાં −(−6) છે. જમણે −6થી 6 સુધીની સંખ્યારેખા છે. ઉપરના કૌંસ −6થી 0 અને 0થી 6 સુધી છે; બંનેની ઉપર 6 લખ્યું છે. નીચે “−6ની વિરોધી સંખ્યા 6 છે” લખ્યું છે. −6 અને 6 પર બિંદુઓ છે."
+    },
+    "fs-id1169754375291": {
+      "source_issue": "The original image itself says: To evaluate when x = -8 means to substitute -8 for -x. The alt faithfully repeats that incorrect instruction.",
+      "correction_gu": "x = −8 હોય ત્યારે xની જગ્યાએ −8 મૂકો. −xની જગ્યાએ સીધું −8 મૂકવાનું નથી. તેથી −x = −(−8) = 8.",
+      "rationale": "Substitution replaces the variable x; the external negative sign remains and takes the opposite.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_008a_img_new.jpg viewed: the final printed token is −x. Table ARIA and next solution step correctly substitute for x.",
+      "alt_gu": "મૂળ ચિત્રમાં ‘x = −8 હોય ત્યારે −xની જગ્યાએ −8 મૂકો’ લખેલું છે; આ સૂચનામાં ભૂલ છે. સાચી સૂચના: xની જગ્યાએ −8 મૂકો, જેથી −x = −(−8) = 8 થાય. ચિત્રમાં −8 લાલ રંગમાં છે."
+    },
+    "eip-id1169749467098": {
+      "source_issue": "Alt describes an absolute value of negative twenty prefixed by a negative sign, which misstates the actual grouping.",
+      "correction_gu": "ચિત્રની પદાવલી |−(−20)| છે: ગોળ કૌંસની બહારનું ઋણ ચિહ્ન પણ નિરપેક્ષ મૂલ્યની ઊભી રેખાઓની અંદર છે.",
+      "rationale": "The actual image has both negations inside the absolute-value bars.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_011b_img_new.jpg viewed. Inner −20 red; outside-parenthesis minus black.",
+      "alt_gu": "પદાવલી |−(−20)| છે. ગોળ કૌંસની અંદરનું −20 લાલ રંગમાં છે. કૌંસની બહારનું ઋણ ચિહ્ન નિરપેક્ષ મૂલ્યની ઊભી રેખાઓની અંદર છે અને કાળા રંગમાં છે."
+    },
+    "eip-id1169753237153": {
+      "source_issue": "Alt has an extra pair of absolute-value bars: -| |12| |.",
+      "correction_gu": "ચિત્રની પદાવલી −|12| છે; માત્ર એક જ જોડી ઊભી રેખાઓ છે. કિંમત −12 થાય છે.",
+      "rationale": "Description corrected to the actual original image, without changing source MathML.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_012b_img_new.jpg viewed: outside minus black, 12 red, one pair of bars.",
+      "alt_gu": "પદાવલી −|12| છે. 12 લાલ રંગમાં છે; ઊભી રેખાઓની બહારનું ઋણ ચિહ્ન કાળા રંગમાં છે. પદાવલીની કિંમત −12 થાય છે."
+    },
+    "eip-id1169754130713": {
+      "source_issue": "Alt omits the external negative sign from the actual expression -|-14|.",
+      "correction_gu": "ચિત્રની સંપૂર્ણ પદાવલી −|−14| છે, જેની કિંમત −14 થાય છે.",
+      "rationale": "Omitting the outer sign changes the expression and its value.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_013b_img_new.jpg viewed: outer minus black; inner −14 red.",
+      "alt_gu": "સફેદ પૃષ્ઠભૂમિ પર પદાવલી −|−14| છે. ઊભી રેખાઓની અંદરનું −14 લાલ રંગમાં અને બહારનું ઋણ ચિહ્ન કાળા રંગમાં છે."
+    },
+    "eip-id1169754030168": {
+      "source_issue": "Table ARIA says 5+(-3) means the sum of -5 and 3, reversing both signs.",
+      "correction_gu": "5 + (−3) એટલે 5 અને −3નો સરવાળો.",
+      "rationale": "The displayed expression and corresponding table text both use 5 and -3.",
+      "evidence": "Table eip-id1169754030168 first entry: 5 + (−3) means the sum of 5 and −3.",
+      "aria-label_gu": "આકૃતિ બે સ્તંભમાં વહેંચાયેલી છે. ઉપર જમણા સ્તંભમાં ‘5 + (−3) એટલે 5 અને −3નો સરવાળો’ લખેલું છે. પછીની હરોળમાં ડાબે ‘શરૂઆતમાં આપણી પાસે 5 ધન ચકતીઓ છે’ અને જમણે પાંચ વાદળી ચકતીઓ છે. પછી ડાબે ‘પછી 3 ઋણ ચકતીઓ ઉમેરીએ છીએ’ અને જમણે પાંચ વાદળી ચકતીઓની નીચે ત્રણ લાલ ચકતીઓ છે. પછી ડાબે ‘શૂન્ય બનાવતી જોડીઓ દૂર કરીએ છીએ’ અને જમણે ત્રણ વાદળી-લાલ જોડીઓની આસપાસ વર્તુળો છે; જમણી બાજુ બે વાદળી ચકતીઓ બાકી છે. પછી ડાબે ‘2 ધન ચકતીઓ બાકી છે’ અને જમણે બે વાદળી ચકતીઓની નીચે ‘2 ધન ચકતીઓ’ લખેલું છે. છેલ્લે ડાબે ‘5 અને −3નો સરવાળો 2 છે’ અને જમણે 5 + (−3) = 2 છે."
+    },
+    "eip-id1169749528166": {
+      "source_issue": "Alt says five additional blue circles outside the neutral pair; the original image has four.",
+      "correction_gu": "શૂન્ય બનાવતી જોડીની બહાર ચાર વાદળી ચકતીઓ છે.",
+      "rationale": "There are five counters of the majority color in total; one belongs to the zero pair, leaving four.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_027_img_new.jpg viewed and counted: one paired plus four unpaired majority-color counters.",
+      "alt_gu": "સફેદ પૃષ્ઠભૂમિ પર એક લાલ અને એક વાદળી વર્તુળ જાંબલી અંડાકારમાં બંધ છે. તેની જમણે બીજાં ચાર વાદળી વર્તુળો એક હરોળમાં છે."
+    },
+    "eip-id1169750608293": {
+      "source_issue": "Alt says five additional red circles outside the neutral pair; the original image has four.",
+      "correction_gu": "શૂન્ય બનાવતી જોડીની બહાર ચાર લાલ ચકતીઓ છે.",
+      "rationale": "There are five counters of the majority color in total; one belongs to the zero pair, leaving four.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_028_img_new.jpg viewed and counted: one paired plus four unpaired majority-color counters.",
+      "alt_gu": "એક વાદળી અને એક લાલ વર્તુળ જાંબલી અંડાકારમાં બંધ છે. તેની બાજુમાં બીજાં ચાર લાલ વર્તુળો આડી હરોળમાં છે."
+    },
+    "eip-id1169754016106": {
+      "source_issue": "Alt says seven red counters; actual image has eight (5+3).",
+      "correction_gu": "સફેદ પૃષ્ઠભૂમિ પર આઠ લાલ વર્તુળો છે—પહેલાં પાંચ, પછી થોડા અંતરે ત્રણ. છેલ્લાં ત્રણ લાલ વર્તુળોની નીચે ત્રણ વાદળી વર્તુળો છે.",
+      "rationale": "Count verified directly in the unchanged original image; corrected description leaves source mathematical tokens intact.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_032b_img_new.jpg viewed and counters counted.",
+      "alt_gu": "સફેદ પૃષ્ઠભૂમિ પર આઠ લાલ વર્તુળો છે—પહેલાં પાંચ, પછી થોડા અંતરે ત્રણ. છેલ્લાં ત્રણ લાલ વર્તુળોની નીચે ત્રણ વાદળી વર્તુળો છે."
+    },
+    "eip-id1169754016122": {
+      "source_issue": "Alt says seven red counters in groups four and three; actual image has eight in groups five and three.",
+      "correction_gu": "આઠ લાલ વર્તુળો બે જૂથમાં છે—પહેલાં પાંચ, પછી ત્રણ. બીજા જૂથની નીચે ત્રણ આછા વાદળી વર્તુળો છે; તેમની આસપાસ જાંબલી અંડાકાર અને ડાબી તરફનું તીર છે.",
+      "rationale": "Count verified directly in the unchanged original image; corrected description leaves source mathematical tokens intact.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_032c_img_new.jpg viewed and counters counted.",
+      "alt_gu": "આઠ લાલ વર્તુળો બે જૂથમાં છે—પહેલાં પાંચ, પછી ત્રણ. બીજા જૂથની નીચે ત્રણ આછા વાદળી વર્તુળો છે; તેમની આસપાસ જાંબલી અંડાકાર અને ડાબી તરફનું તીર છે."
+    },
+    "eip-id1169753968375": {
+      "source_issue": "Alt says six blue counters; actual image has eight (5+3).",
+      "correction_gu": "ઉપરની હરોળમાં આઠ આછા વાદળી વર્તુળો છે—પહેલાં પાંચ, પછી ત્રણ. છેલ્લાં ત્રણની નીચે ત્રણ લાલ વર્તુળો છે.",
+      "rationale": "Count verified directly in the unchanged original image; corrected description leaves source mathematical tokens intact.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_033b_img_new.jpg viewed and counters counted.",
+      "alt_gu": "ઉપરની હરોળમાં આઠ આછા વાદળી વર્તુળો છે—પહેલાં પાંચ, પછી ત્રણ. છેલ્લાં ત્રણની નીચે ત્રણ લાલ વર્તુળો છે."
+    },
+    "eip-id1169749482408": {
+      "source_issue": "Alt says five counters with a gap after the fourth; actual image has four with a gap after the third.",
+      "correction_gu": "સફેદ પૃષ્ઠભૂમિ પર લાલ કિનારીવાળાં ચાર આછાં નારંગી વર્તુળો છે. ત્રીજા અને ચોથા વર્તુળ વચ્ચે થોડું અંતર છે.",
+      "rationale": "Count verified directly in the unchanged original image; corrected description leaves source mathematical tokens intact.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_034a_img_new.jpg viewed and counters counted.",
+      "alt_gu": "સફેદ પૃષ્ઠભૂમિ પર લાલ કિનારીવાળાં ચાર આછાં નારંગી વર્તુળો છે. ત્રીજા અને ચોથા વર્તુળ વચ્ચે થોડું અંતર છે."
+    },
+    "fs-id1170655204215": {
+      "source_issue": "ARIA transposes row and column counts, claiming two rows and five columns.",
+      "correction_gu": "કોષ્ટકમાં પાંચ હરોળ અને બે સ્તંભ છે.",
+      "rationale": "Source tgroup has cols=2 and tbody has five row elements, one for each weekday.",
+      "evidence": "Source table fs-id1170655204215: tgroup cols=\"2\" and five tbody rows.",
+      "aria-label_gu": "આ કોષ્ટકમાં પાંચ હરોળ અને બે સ્તંભ છે. પહેલી હરોળમાં ડાબેથી જમણે ‘સોમવાર’ અને ‘−504’ છે. બીજી હરોળમાં ‘મંગળવાર’ અને ‘+142’ છે. ત્રીજી હરોળમાં ‘બુધવાર’ અને ‘−449’ છે. ચોથી હરોળમાં ‘ગુરુવાર’ અને ‘+410’ છે. પાંચમી અને છેલ્લી હરોળમાં ‘શુક્રવાર’ અને ‘+369’ છે."
+    },
+    "fs-id1170655226595": {
+      "source_issue": "ARIA transposes row and column counts, claiming two rows and five columns.",
+      "correction_gu": "કોષ્ટકમાં પાંચ હરોળ અને બે સ્તંભ છે.",
+      "rationale": "Source tgroup has cols=2 and tbody has five row elements, one for each weekday.",
+      "evidence": "Source table fs-id1170655226595: tgroup cols=\"2\" and five tbody rows.",
+      "aria-label_gu": "આ કોષ્ટકમાં પાંચ હરોળ અને બે સ્તંભ છે. પહેલી હરોળમાં ડાબેથી જમણે ‘સોમવાર’ અને ‘−201’ છે. બીજી હરોળમાં ‘મંગળવાર’ અને ‘−16’ છે. ત્રીજી હરોળમાં ‘બુધવાર’ અને ‘−23’ છે. ચોથી હરોળમાં ‘ગુરુવાર’ અને ‘+172’ છે. પાંચમી અને છેલ્લી હરોળમાં ‘શુક્રવાર’ અને ‘−34’ છે."
+    },
+    "eip-id1169752188805": {
+      "source_issue": "Source alt says the full expression -(8) appears red; only the numeral 8 is red.",
+      "correction_gu": "સફેદ પૃષ્ઠભૂમિ પર પદાવલી −(8) છે. માત્ર 8 લાલ રંગમાં છે; ઋણ ચિહ્ન અને બંને ગોળ કૌંસ કાળા રંગમાં છે.",
+      "rationale": "Verified directly against unchanged original figure; preserve the visual grouping and pedagogical color roles.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_007c_img_new.jpg viewed.",
+      "alt_gu": "સફેદ પૃષ્ઠભૂમિ પર પદાવલી −(8) છે. માત્ર 8 લાલ રંગમાં છે; ઋણ ચિહ્ન અને બંને ગોળ કૌંસ કાળા રંગમાં છે."
+    },
+    "eip-id1169749482451": {
+      "source_issue": "Source alt calls all four counters evenly spaced; the actual figure groups three then one with a larger gap.",
+      "correction_gu": "સફેદ પૃષ્ઠભૂમિ પર ચાર સમાન આછા વાદળી વર્તુળો છે. પ્રથમ ત્રણ પછી થોડા વધુ અંતરે ચોથું વર્તુળ છે; આ 3 અને ઉમેરેલી જોડીની 1 ધન ચકતી દર્શાવે છે.",
+      "rationale": "Verified directly against unchanged original figure; preserve the visual grouping and pedagogical color roles.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_034c_img_new.jpg viewed.",
+      "alt_gu": "સફેદ પૃષ્ઠભૂમિ પર ચાર સમાન આછા વાદળી વર્તુળો છે. પ્રથમ ત્રણ પછી થોડા વધુ અંતરે ચોથું વર્તુળ છે; આ 3 અને ઉમેરેલી જોડીની 1 ધન ચકતી દર્શાવે છે."
+    },
+    "fs-id1170654962580": {
+      "source_issue": "Source alt calls positive counters gray and the enclosing arrows red; actual positive counters are blue and arrows are magenta/purple.",
+      "correction_gu": "નામનિર્દેશ સાથે બે ચિત્રો છે. પહેલા ચિત્રમાં ચાર આછા વાદળી ચકતીઓની બાજુમાં બે આછા વાદળી ચકતીઓ છે. પહેલા ચારની આસપાસ જાંબલી અંડાકાર છે અને નીચે ડાબી તરફ જાંબલી તીર જાય છે. ઉપર 6 − 4 અને નીચે 2 છે. બીજા ચિત્રમાં ચાર આછા વાદળી ચકતીઓની નીચે ચાર લાલ ચકતીઓ છે. તેમની આસપાસ જાંબલી અંડાકાર અને નીચે ડાબી તરફનું જાંબલી તીર છે. બાજુમાં બે આછા વાદળી ચકતીઓ છે. ઉપર 6 + (−4) અને નીચે 2 છે.",
+      "rationale": "Verified directly against unchanged original figure; preserve the visual grouping and pedagogical color roles.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_035_img_new.jpg viewed.",
+      "alt_gu": "નામનિર્દેશ સાથે બે ચિત્રો છે. પહેલા ચિત્રમાં ચાર આછા વાદળી ચકતીઓની બાજુમાં બે આછા વાદળી ચકતીઓ છે. પહેલા ચારની આસપાસ જાંબલી અંડાકાર છે અને નીચે ડાબી તરફ જાંબલી તીર જાય છે. ઉપર 6 − 4 અને નીચે 2 છે. બીજા ચિત્રમાં ચાર આછા વાદળી ચકતીઓની નીચે ચાર લાલ ચકતીઓ છે. તેમની આસપાસ જાંબલી અંડાકાર અને નીચે ડાબી તરફનું જાંબલી તીર છે. બાજુમાં બે આછા વાદળી ચકતીઓ છે. ઉપર 6 + (−4) અને નીચે 2 છે."
+    },
+    "fs-id1170654966725": {
+      "kind": "accessibility_clarification",
+      "source_issue": "The source describes bracket intervals using zero as an endpoint without explicitly saying that zero is separate from both number categories.",
+      "correction_gu": "શૂન્ય ધન પણ નથી અને ઋણ પણ નથી; ચિત્રમાં તે બંને કૌંસથી અલગ નામનિર્દેશ સાથે દર્શાવેલું છે.",
+      "rationale": "The visible Zero label and central arrow should be explicit in the description so bracket bounds are not read as inclusive membership.",
+      "evidence": "Actual CNX_ElemAlg_Figure_01_03_001_new.jpg: separate Zero label and upward arrow at 0 between Negative numbers and Positive numbers brackets.",
+      "alt_gu": "−4થી 4 સુધીની સંખ્યારેખા છે. 0ની ડાબી બાજુના કૌંસ નીચે ‘ઋણ સંખ્યાઓ’ અને જમણી બાજુના કૌંસ નીચે ‘ધન સંખ્યાઓ’ લખેલું છે. બંને કૌંસની વચ્ચે ‘શૂન્ય’ લખેલું છે અને તેનું તીર 0ને ચીંધે છે. શૂન્ય બંને વર્ગોથી અલગ છે."
+    },
+    "eip-id1169749482428": {
+      "source_issue": "Source alt describes a clockwise rotation, but the arrow indicates removing the enclosed counter.",
+      "correction_gu": "એક આછા વાદળી ચકતીની આસપાસ જાંબલી અંડાકાર છે; તેનું તીર નીચે ડાબી તરફ જાય છે અને ચકતી દૂર કરવાનું સૂચવે છે.",
+      "rationale": "The actual exit arrow goes below to the left, matching the removal convention used in the surrounding subtraction examples; describing physical rotation obscures the operation.",
+      "evidence": "Actual unchanged CNX_ElemAlg_Figure_01_03_034b_img_new.jpg viewed independently by translator and figure reviewer; removal oval and exit arrow visible.",
+      "alt_gu": "એક આછા વાદળી ચકતીની આસપાસ જાંબલી અંડાકાર છે; તેનું તીર નીચે ડાબી તરફ જાય છે અને ચકતી દૂર કરવાનું સૂચવે છે."
+    },
+    "eip-id1169749482475": {
+      "source_issue": "Source alt describes a clockwise rotation, but the arrow indicates removing the enclosed counter.",
+      "correction_gu": "એક લાલ ચકતીની આસપાસ જાંબલી અંડાકાર છે; તેનું તીર નીચે ડાબી તરફ જાય છે અને ચકતી દૂર કરવાનું સૂચવે છે.",
+      "rationale": "The actual exit arrow goes below to the left, matching the removal convention used in the surrounding subtraction examples; describing physical rotation obscures the operation.",
+      "evidence": "Actual unchanged CNX_ElemAlg_Figure_01_03_034d_img_new.jpg viewed independently by translator and figure reviewer; removal oval and exit arrow visible.",
+      "alt_gu": "એક લાલ ચકતીની આસપાસ જાંબલી અંડાકાર છે; તેનું તીર નીચે ડાબી તરફ જાય છે અને ચકતી દૂર કરવાનું સૂચવે છે."
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "schema": "bounded-A10-QA-v1",
+  "date": "2026-09-04",
+  "status": "pass",
+  "checks": {
+    "recovered_input_hashes": {
+      "passed": true,
+      "files": 183
+    },
+    "reader_source_identity": [
+      {
+        "track": "jv-academic",
+        "source_ids": 432,
+        "mathml": 219,
+        "exercises": 39,
+        "source_solutions": 39
+      },
+      {
+        "track": "jv-conversation",
+        "source_ids": 432,
+        "mathml": 219,
+        "exercises": 39,
+        "source_solutions": 39
+      },
+      {
+        "track": "id-academic",
+        "source_ids": 432,
+        "mathml": 219,
+        "exercises": 39,
+        "source_solutions": 39
+      }
+    ],
+    "rendered_mathml_full_tree_comparison": {
+      "passed": true,
+      "description": "Every rendered MathML tree, text token, attribute, child order and mixed tail checked against assembled target CNXML; namespace syntax only normalized."
+    },
+    "xml_parse": {
+      "passed": true,
+      "files": 96
+    },
+    "utf8_control_characters": {
+      "passed": true
+    },
+    "offline_links_and_anchors": {
+      "passed": true,
+      "html_files": 4,
+      "local_references_checked": 263,
+      "remote_runtime_dependencies": 0,
+      "targeted_added_local_references_checked": 12,
+      "note": "Original 263-reference check retained; twelve newly inserted caption references separately checked."
+    },
+    "narration": {
+      "source_ssml_files": 27,
+      "source_written_files": 27,
+      "recorded_audio": 0,
+      "synthesized_audio": 0,
+      "xml_valid": true,
+      "note": "Existing source-bound narration retained by hashes; no claim of listening or assistive-technology user test."
+    },
+    "new_worked_example": {
+      "passed": true,
+      "proof": "Exact polynomial coefficient comparison: {2:4,1:6,0:12}; distributivity. 41 integer spot checks supplementary only.",
+      "x_2_value": 40,
+      "source_exercise": false
+    },
+    "historical_pre_caption_build_replay": {
+      "passed": true,
+      "outputs_compared": 18,
+      "sha256": {
+        "jv-academic.html": "a1f3f0b5e3c2fb9f433dbcb927f2da38406b710de83b30cfc8225fcba390eb73",
+        "jv-conversation.html": "5563871d1e7912ce6b5c5f92c1b8d9de3f7749922ca1698836511356c69515a8",
+        "id-academic.html": "531137a832f3e2495d3dc23323533bdbb12806256545889f624e8f1e50cf7f82",
+        "PACKAGE.json": "fbdabd4f0b3b0b2cac2de257d08a58bd2bed259c51d4f4e378f2e7eaae09a3b1",
+        "provenance/RECOVERY-INPUTS.json": "a09807b8f8d8cbd72044d80c0c1c1dd738e86630cbda7bf7dd43a1421a64b917",
+        "provenance/SOURCE-BOUNDARY.json": "44f281f407dd08aecc67dbe24e85f17c49ed6dd53ca094a0e6c9b3af77c75f58",
+        "source/assembled/01-id-academic.cnxml": "9ef264de37864ee9cff4bc69a9087bc68353f8bc846af69c105793139f5bebf8",
+        "source/assembled/01-jv-academic.cnxml": "bb8df7fd10b9652afca9087147c03fb44e6e4933988443dafc4495933057fcc8",
+        "source/assembled/01-jv-conversation.cnxml": "b10d896b8921859b27e8073919de306b0e0d23e8ba9226e64ecae837fc68ff7b",
+        "source/assembled/02-id-academic.cnxml": "0443a2ef2cfcea5065f75829cf8fe0527a7fd78ce34981076bb87736047f727f",
+        "source/assembled/02-jv-academic.cnxml": "cfb45b54fff33a2d67dc91b7be92717ea5aec713e097b527cd125a0eac9dcc3c",
+        "source/assembled/02-jv-conversation.cnxml": "6867574fe0280f65377e929e0ad8a9627c70ae20c1ba80c1d02fa604c06b42f6",
+        "source/assembled/03-id-academic.cnxml": "f87845818e19761891d067c262a8fba67b988c69350a18a3fb19d0c4dc07aa2f",
+        "source/assembled/03-jv-academic.cnxml": "565eeadae0952ce66669e801c89e6833f7f9a16a0b898364cfc92ceae1d55ac1",
+        "source/assembled/03-jv-conversation.cnxml": "bcf7b8d54bb53a35efb78a8d4c1f28f304773a667c3e62ecacb20bf39b2375da",
+        "source/assembled/04-id-academic.cnxml": "b07ce5c5c61f3a7405594671a858c897fd0cc3d315461d23c8afc77cb4b95b55",
+        "source/assembled/04-jv-academic.cnxml": "c9dd0eb192c45e035832adc5d0438bc0150f3cc402c5734f1c1307f57b9f472f",
+        "source/assembled/04-jv-conversation.cnxml": "2abb13ff9422e2590e9feef8f913fbe039b3c216226290482124e8af326d104b"
+      },
+      "method": "Fresh source component reads and independent rerender; SHA-256 byte comparison; output path argument excluded from payload.",
+      "scope": "Historical before explicit inherited-asset captions; no current full rebuild claimed. Targeted follow-up proves that only six captions were added to reader HTML."
+    },
+    "inherited_asset_caption_followup": {
+      "schema": "targeted-inherited-asset-qa-v1",
+      "date": "2026-09-04",
+      "status": "pass",
+      "canonical_files_directly_downloaded_and_hash_verified": 2,
+      "inherited_redraw_files_hash_verified_unchanged": 2,
+      "canonical_git_blob_sha1_matches": true,
+      "caption_insertions": 6,
+      "tracks_checked": 3,
+      "original_reader_bytes_preserved_except_caption_insertions": true,
+      "all_source_ids_mathml_exercises_answers_and_narration_unchanged": true,
+      "reader_changes": [
+        {
+          "path": "jv-academic.html",
+          "before_sha256": "a1f3f0b5e3c2fb9f433dbcb927f2da38406b710de83b30cfc8225fcba390eb73",
+          "after_sha256": "911790f5ff1c0dccbf2d0a48919942d7a70af8895383f00ccbe526e55800af92",
+          "only_additions": "Two explicit inherited-Indonesian-redraw captions; all preexisting HTML bytes retained."
+        },
+        {
+          "path": "jv-conversation.html",
+          "before_sha256": "5563871d1e7912ce6b5c5f92c1b8d9de3f7749922ca1698836511356c69515a8",
+          "after_sha256": "2367296aff781aab01376a4de416dfcdf6a5e1f97a6c28c310a921529f8d80fa",
+          "only_additions": "Two explicit inherited-Indonesian-redraw captions; all preexisting HTML bytes retained."
+        },
+        {
+          "path": "id-academic.html",
+          "before_sha256": "531137a832f3e2495d3dc23323533bdbb12806256545889f624e8f1e50cf7f82",
+          "after_sha256": "909a998474a3af350a1548bfb6adf8387c2305794a3b28da4f5a2816828ec22a",
+          "only_additions": "Two explicit inherited-Indonesian-redraw captions; all preexisting HTML bytes retained."
+        }
+      ],
+      "mathematics": {
+        "substitution": "x = 4",
+        "012b": "3^x → 3^4 = 81",
+        "013b": "2x²+3x+8 → 2(4)²+3(4)+8 = 52"
+      },
+      "visual": "Four exact JPEGs inspected directly; caption-layout screenshot check recorded separately.",
+      "rebuild_scope": "No section, CNXML, narration, or image rebuild; caption-only integration.",
+      "caption_visual_check": {
+        "schema": "targeted-two-asset-caption-layout-v1",
+        "status": "pass",
+        "browser": "Edge Chromium headless",
+        "checks": [
+          {
+            "track": "jv-academic",
+            "width": 1280,
+            "media_id": "fs-id1167836692989",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi saka edisi Indonesia (v1.0.2)Gambar ulang kanggo langkah ngganti x nganggo 4: 3^x dadi 3^4. Iki dudu piksel sumber kanonis OpenStax sing ora diowahi. Bandhingna karo gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "jv-academic",
+            "width": 1280,
+            "media_id": "fs-id1169149089480",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi saka edisi Indonesia (v1.0.2)Gambar ulang kanggo langkah ngganti x nganggo 4: 2x² + 3x + 8 dadi 2(4)² + 3(4) + 8. Iki dudu piksel sumber kanonis OpenStax sing ora diowahi. Bandhingna karo gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "jv-conversation",
+            "width": 1280,
+            "media_id": "fs-id1167836692989",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi saka edisi Indonesia (v1.0.2)Gambar ulang kanggo langkah ngganti x nganggo 4: 3^x dadi 3^4. Iki dudu piksel sumber kanonis OpenStax sing ora diowahi. Bandhingna karo gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "jv-conversation",
+            "width": 1280,
+            "media_id": "fs-id1169149089480",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi saka edisi Indonesia (v1.0.2)Gambar ulang kanggo langkah ngganti x nganggo 4: 2x² + 3x + 8 dadi 2(4)² + 3(4) + 8. Iki dudu piksel sumber kanonis OpenStax sing ora diowahi. Bandhingna karo gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "id-academic",
+            "width": 1280,
+            "media_id": "fs-id1167836692989",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi warisan edisi Indonesia (v1.0.2)Gambar ulang untuk langkah substitusi x = 4: 3^x menjadi 3^4. Ini bukan piksel kanonis OpenStax yang tidak diubah. Bandingkan gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "id-academic",
+            "width": 1280,
+            "media_id": "fs-id1169149089480",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi warisan edisi Indonesia (v1.0.2)Gambar ulang untuk langkah substitusi x = 4: 2x² + 3x + 8 menjadi 2(4)² + 3(4) + 8. Ini bukan piksel kanonis OpenStax yang tidak diubah. Bandingkan gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "jv-academic",
+            "width": 390,
+            "media_id": "fs-id1167836692989",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi saka edisi Indonesia (v1.0.2)Gambar ulang kanggo langkah ngganti x nganggo 4: 3^x dadi 3^4. Iki dudu piksel sumber kanonis OpenStax sing ora diowahi. Bandhingna karo gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "jv-academic",
+            "width": 390,
+            "media_id": "fs-id1169149089480",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi saka edisi Indonesia (v1.0.2)Gambar ulang kanggo langkah ngganti x nganggo 4: 2x² + 3x + 8 dadi 2(4)² + 3(4) + 8. Iki dudu piksel sumber kanonis OpenStax sing ora diowahi. Bandhingna karo gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "jv-conversation",
+            "width": 390,
+            "media_id": "fs-id1167836692989",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi saka edisi Indonesia (v1.0.2)Gambar ulang kanggo langkah ngganti x nganggo 4: 3^x dadi 3^4. Iki dudu piksel sumber kanonis OpenStax sing ora diowahi. Bandhingna karo gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "jv-conversation",
+            "width": 390,
+            "media_id": "fs-id1169149089480",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi saka edisi Indonesia (v1.0.2)Gambar ulang kanggo langkah ngganti x nganggo 4: 2x² + 3x + 8 dadi 2(4)² + 3(4) + 8. Iki dudu piksel sumber kanonis OpenStax sing ora diowahi. Bandhingna karo gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "id-academic",
+            "width": 390,
+            "media_id": "fs-id1167836692989",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi warisan edisi Indonesia (v1.0.2)Gambar ulang untuk langkah substitusi x = 4: 3^x menjadi 3^4. Ini bukan piksel kanonis OpenStax yang tidak diubah. Bandingkan gambar kanonis · SHA-256 / provenance."
+          },
+          {
+            "track": "id-academic",
+            "width": 390,
+            "media_id": "fs-id1169149089480",
+            "captionCount": 1,
+            "imageLoaded": true,
+            "pageOverflow": false,
+            "text": "Adaptasi warisan edisi Indonesia (v1.0.2)Gambar ulang untuk langkah substitusi x = 4: 2x² + 3x + 8 menjadi 2(4)² + 3(4) + 8. Ini bukan piksel kanonis OpenStax yang tidak diubah. Bandingkan gambar kanonis · SHA-256 / provenance."
+          }
+        ],
+        "scope": "Two affected figures in three readers at 1280px/390px; captions expanded, loaded images, no page overflow.",
+        "screenshots_inspection_record": "provenance/ASSET-OVERRIDE-VISUAL.md"
+      }
+    }
+  },
+  "source_build_checks": "recover.py proves the exact canonical opening-fragment union and all four section boundaries; exact ordered IDs and hierarchy; MathML comparison with enumerated inherited pivot differences. Original source bytes retained.",
+  "visual": {
+    "schema": "headless-browser-layout-v1",
+    "browser": "Microsoft Edge / Chromium",
+    "status": "automated_pass",
+    "modes": "1280px desktop and 390px mobile; all source answer and description disclosures expanded for geometry checks",
+    "records": [
+      {
+        "file": "index.html",
+        "width": 1280,
+        "scrollWidth": 1280,
+        "brokenImages": 0,
+        "images": 0,
+        "math": 4,
+        "sourceIDs": 0,
+        "font": "Georgia, \"Times New Roman\", serif",
+        "h1": "Basa AljabarSaka variabel nganti suku sajinis",
+        "clippedText": 0
+      },
+      {
+        "file": "jv-academic.html",
+        "width": 1280,
+        "scrollWidth": 1280,
+        "brokenImages": 0,
+        "images": 46,
+        "math": 219,
+        "sourceIDs": 432,
+        "font": "Georgia, \"Times New Roman\", serif",
+        "h1": "Basa Jawa akademikBasa Aljabar",
+        "clippedText": 0
+      },
+      {
+        "file": "jv-conversation.html",
+        "width": 1280,
+        "scrollWidth": 1280,
+        "brokenImages": 0,
+        "images": 46,
+        "math": 219,
+        "sourceIDs": 432,
+        "font": "Georgia, \"Times New Roman\", serif",
+        "h1": "Basa Jawa padinan · ngokoBasa Aljabar",
+        "clippedText": 0
+      },
+      {
+        "file": "id-academic.html",
+        "width": 1280,
+        "scrollWidth": 1280,
+        "brokenImages": 0,
+        "images": 46,
+        "math": 219,
+        "sourceIDs": 432,
+        "font": "Georgia, \"Times New Roman\", serif",
+        "h1": "Jembatan Bahasa IndonesiaBasa Aljabar",
+        "clippedText": 0
+      },
+      {
+        "file": "index.html",
+        "width": 390,
+        "scrollWidth": 390,
+        "brokenImages": 0,
+        "images": 0,
+        "math": 4,
+        "sourceIDs": 0,
+        "font": "Georgia, \"Times New Roman\", serif",
+        "h1": "Basa AljabarSaka variabel nganti suku sajinis",
+        "clippedText": 0
+      },
+      {
+        "file": "jv-academic.html",
+        "width": 390,
+        "scrollWidth": 390,
+        "brokenImages": 0,
+        "images": 46,
+        "math": 219,
+        "sourceIDs": 432,
+        "font": "Georgia, \"Times New Roman\", serif",
+        "h1": "Basa Jawa akademikBasa Aljabar",
+        "clippedText": 0
+      },
+      {
+        "file": "jv-conversation.html",
+        "width": 390,
+        "scrollWidth": 390,
+        "brokenImages": 0,
+        "images": 46,
+        "math": 219,
+        "sourceIDs": 432,
+        "font": "Georgia, \"Times New Roman\", serif",
+        "h1": "Basa Jawa padinan · ngokoBasa Aljabar",
+        "clippedText": 0
+      },
+      {
+        "file": "id-academic.html",
+        "width": 390,
+        "scrollWidth": 390,
+        "brokenImages": 0,
+        "images": 46,
+        "math": 219,
+        "sourceIDs": 432,
+        "font": "Georgia, \"Times New Roman\", serif",
+        "h1": "Jembatan Bahasa IndonesiaBasa Aljabar",
+        "clippedText": 0
+      }
+    ],
+    "errors": [],
+    "visual_inspection": "Screenshots produced; agent inspection recorded separately before final package checks.",
+    "limits": "DOM geometry and image loading are deterministic checks, not a human or screen-reader usability study.",
+    "agent_inspection_record": "provenance/VISUAL-INSPECTION.md"
+  },
+  "errors": [],
+  "limits": [
+    "No completed full source module or book.",
+    "No human linguistic certification, pronunciation approval, or screen-reader user study.",
+    "Usage witness PDF direct fetch failed; official catalog plus indexed printed-page text used, not a byte-verified or visually inspected PDF.",
+    "Source solutions are retained, not newly recomputed wholesale. The editorial supplement is independently coefficient-checked."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "date": "2026-09-04",
+  "method": "Actual PNG inspection after isolated headless Chromium rendering; all network requests blocked. Not inferred from DOM metrics alone.",
+  "inspected": [
+    "index-1280.png",
+    "index-390.png",
+    "a10-preface-1280.png",
+    "a10-introduction-1280.png",
+    "a10-unit-005-1280.png",
+    "a10-unit-008-1280.png",
+    "a10-unit-008-390.png",
+    "evaluation-table-1280.png",
+    "evaluation-table-390.png",
+    "evaluation-table-390-scrolled.png"
+  ],
+  "observations": [
+    "Shahmukhi letters are joined and legible at desktop and phone widths; headings, body text and navigation do not overlap.",
+    "The index presents its incomplete-book scope before the ordered reading links. Technical unit identifiers wrap on a 390-pixel phone, but the linked Punjabi titles remain readable and the document does not overflow.",
+    "The introduction construction photo loads with correct aspect ratio; the preface and whole-number exercise-page text remain readable.",
+    "The evaluation section keeps Punjabi prose RTL and numerical expressions LTR, including the base/exponent distinction.",
+    "The desktop worked table displays the instruction column on the left and math column on the right. Canonical 012b visibly repeats 3^x; the distinct correction link is visible beside it.",
+    "At 390 pixels, the table initially shows its instruction column and scroll cue. Actual horizontal scrolling exposes the math column, including 3^x, 3·3·3·3 and 81, without document-level horizontal overflow.",
+    "Original source-image links, bilingual explanatory links and separately marked original corrections are readable. Canonical tiny equation JPEGs are not mirrored or silently replaced by comparison redraws."
+  ],
+  "limitations": [
+    "Screenshots inspect representative surfaces, not every point on every long page. Automated full-document element bounds, image loading, ID/math and link checks supplement them.",
+    "This is browser visual verification, not recorded screen-reader testing or native-language certification."
+  ]
+}

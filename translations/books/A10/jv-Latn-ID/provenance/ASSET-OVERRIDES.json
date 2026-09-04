@@ -1,0 +1,53 @@
+{
+  "schema": "A10-two-inherited-substitution-redraws-v1",
+  "date": "2026-09-04",
+  "decision": "Retain the two inherited Indonesian v1.0.2 redraw bytes and their matching translated alts/narration; label them visibly as adapted substitution surfaces, never unchanged canonical pixels. Canonical comparison bytes are separately retained.",
+  "source_commit": "38cae454e644abf9f0a623e876994553881597c9",
+  "indonesian_source_release": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/elementary-algebra-2e-id-ID-1.0.2-source.zip",
+  "indonesian_source_release_sha256": "6f04e88387e8d4e6e710dddcebb8d41e952a315231d7e203d62170c6ad9f3456",
+  "indonesian_release_hash_basis": "Inherited pinned acquisition witness; whole release not redownloaded for this bounded image check.",
+  "inherited_provenance": "component-inputs/a10-evaluate-expressions.assets.json",
+  "assets": [
+    {
+      "source_media_id": "fs-id1167836692989",
+      "context_example": "fs-id1170655213474",
+      "canonical": {
+        "path": "source/canonical-witness-assets/CNX_ElemAlg_Figure_01_02_012b_img_new.jpg",
+        "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/38cae454e644abf9f0a623e876994553881597c9/media/CNX_ElemAlg_Figure_01_02_012b_img_new.jpg",
+        "bytes": 48381,
+        "sha256": "8ec3ccd4ccb9745db4f7a2a14740c03abd00f61330ab6c0f3a6292a26a864b76",
+        "git_blob_sha1": "ce462eacd0a9d5e133214662ed9e7b58259a7f12",
+        "visible_expression": "3^x"
+      },
+      "inherited_indonesian_redraw": {
+        "path": "assets/a10-evaluate-expressions/CNX_ElemAlg_Figure_01_02_012b_img_new.jpg",
+        "release_member": "translated/media/CNX_ElemAlg_Figure_01_02_012b_img_new.jpg",
+        "bytes": 439,
+        "sha256": "fc469cf6cd1dfac09c4010af7d7606f1309033663fc0ddbf891813f1b5208b67",
+        "visible_expression": "3^4"
+      },
+      "meaning_check": "The adjacent source step says replace x with 4. Substituting x=4 into 3^x gives 3^4, then 3·3·3·3=81. Canonical and redraw are not claimed equal for arbitrary x. Existing translated alt and narration correctly describe the redraw."
+    },
+    {
+      "source_media_id": "fs-id1169149089480",
+      "context_example": "fs-id1170655171250",
+      "canonical": {
+        "path": "source/canonical-witness-assets/CNX_ElemAlg_Figure_01_02_013b_img_new.jpg",
+        "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/38cae454e644abf9f0a623e876994553881597c9/media/CNX_ElemAlg_Figure_01_02_013b_img_new.jpg",
+        "bytes": 44330,
+        "sha256": "efa3a502dd3a5cceadc846d48d1aa6fe5fe3f48b9671183a7ab43143df6d19fb",
+        "git_blob_sha1": "e9308c9201231b42199ab4a4f613f643a5a98334",
+        "visible_expression": "2x² + 3x + 8"
+      },
+      "inherited_indonesian_redraw": {
+        "path": "assets/a10-evaluate-expressions/CNX_ElemAlg_Figure_01_02_013b_img_new.jpg",
+        "release_member": "translated/media/CNX_ElemAlg_Figure_01_02_013b_img_new.jpg",
+        "bytes": 1079,
+        "sha256": "31e05fe68d3807d96bca8c3c747a82bc0ccf1b08d2dbfdb70fc1dea36a025a1e",
+        "visible_expression": "2(4)² + 3(4) + 8"
+      },
+      "meaning_check": "The adjacent source step says substitute x=4. Applying that substitution gives 2(4)²+3(4)+8=32+12+8=52. Canonical and redraw are not claimed equal for arbitrary x. Existing translated alt and narration correctly describe the redraw."
+    }
+  ],
+  "visual_verification": "All four exact local images inspected directly by the agent after direct pinned-canonical download and SHA-256/byte-count verification."
+}

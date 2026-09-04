@@ -1,0 +1,19 @@
+# Elementary Algebra 2e — bounded Javanese reader
+
+This is a four-section Javanese derivative of OpenStax *Elementary Algebra 2e*, not a complete translated book or source module. The senior contributing authors are Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis. Copyright and component-specific credits belong to their respective owners. OpenStax and Rice University do not endorse this work; trademarks are not licensed.
+
+The source and this translation/reader adaptation are distributed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International, subject to component-specific credits. The full license is in `LICENSE.txt`. The package retains inherited source/asset provenance. Mathematical diagram derivatives retain their source relationships in `provenance/component-inputs/`.
+
+Canonical source: https://github.com/openstax/osbooks-prealgebra-bundle, commit `38cae454e644abf9f0a623e876994553881597c9`, collection `col31130`, module `m82453`. The full canonical English module is provided solely as source/provenance and is not claimed as Javanese coverage. Its SHA-256 is `a8fdd235aa254c5a0a1248fa858e9b3579d9b40982bbc514cbe6a18c3e6fcbed`.
+
+Recovered translation pivot: the existing Indonesian release v1.0.2, module SHA-256 `2c0b688d569044b128d589579e9ba7d871a0fb9ac7a670ac6f22d0ef2b66e635`. Its inherited notice is preserved as historical attribution, not as this package's coverage claim. The later complete Indonesian edition is neither replaced nor modified.
+
+Changes in this recovered edition: nine hash-verified component drafts integrated into four consecutive complete instructional sections; six opening fragments consolidated without duplication; single-register semantic HTML readers; source answer disclosure controls; offline source links and local visual assets; written narration and SSML inventories; one explicitly marked new worked example; book-local terminology evidence and deterministic QA. Recovered component bytes, shared terminology and canon pins are preserved unchanged.
+
+The inherited Indonesian pivot replaces the English grammatical `n-th` MathML ordinal with `n` in two exponent-reading phrases. It also uses `n²` and `9n²` in the third item of `fs-id1166422559187`, matching the immediately preceding example; canonical English prints `x²` and `9x²`. These differences are explicit, not silently advertised as byte-identical mathematics. Both versions remain available.
+
+Two evaluation images are inherited Indonesian v1.0.2 substitution redraws, **not unchanged canonical OpenStax pixels**. `012b` at media ID `fs-id1167836692989` changes the displayed `3^x` to `3^4` for the adjacent instruction to replace x with 4; `013b` at `fs-id1169149089480` changes `2x² + 3x + 8` to `2(4)² + 3(4) + 8`. Their 439-byte and 1,079-byte inherited JPEGs remain unchanged. Their existing Javanese/Indonesian descriptions and written narration match those substitution steps, giving 81 and 52 respectively. The separately retained canonical comparison JPEGs are 48,381 and 44,330 bytes. Exact pinned URLs, hashes, contexts and mathematical checks are in `provenance/ASSET-OVERRIDES.json`; all three readers label these surfaces beside the images.
+
+AI-assisted translation, accessibility text and production are provisional editorial work by OpenAI Codex. There is no claim of linguistic certification, completed screen-reader user testing, synthesized audio, or pronunciation approval. These uncertainties are descriptive, not human-dependent release conditions.
+
+The separately cited Balai Bahasa mathematics reader is consulted for short usage evidence only. Its PDF and illustrations are not redistributed in this package. Dictionary entries are likewise not bulk redistributed. Source material is never used here as training or fine-tuning data.
