@@ -1,0 +1,127 @@
+{
+  "schema": "b10.visual-qa.v1",
+  "result": "pass_bounded_samples",
+  "date": "2026-09-04",
+  "method": "Direct Codex In-app Browser screenshots plus read-only rendered DOM measurements over the local static reader. Screenshots were inspected in the tool output; no screenshot file archive is claimed.",
+  "scope": "Representative desktop/mobile views of all six active HTML pages; not every paragraph, equation, exercise state, font, browser or assistive-technology combination.",
+  "observations": [
+    {
+      "page": "index.html",
+      "viewport": [
+        1280,
+        720
+      ],
+      "document_scroll_width": 1265,
+      "observed": "Centered readable three-card RTL navigation; separated book/source/support scope."
+    },
+    {
+      "page": "index.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "document_scroll_width": 375,
+      "observed": "Single-column cards and wrapped mixed-script title, no horizontal page overflow."
+    },
+    {
+      "page": "canon/terminology.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "document_scroll_width": 375,
+      "observed": "Readable RTL prose and narrow attestation/provisional terminology notice."
+    },
+    {
+      "page": "support/practice.html#b10-support-quantifier-06",
+      "viewport": [
+        390,
+        844
+      ],
+      "document_scroll_width": 375,
+      "observed": "Answer disclosure opened successfully; full answer inspected across two scroll positions; LTR quantified formulas wrap within card, no clipping.",
+      "open_answers": 1
+    },
+    {
+      "page": "reader/b10-unit-001.html#subsec_structures-graphs",
+      "viewport": [
+        390,
+        844
+      ],
+      "document_scroll_width": 375,
+      "observed": "Shahmukhi prose, LTR formulas, unmirrored labeled source graph readable.",
+      "broken_images": 0,
+      "computed_math_directions": [
+        "ltr"
+      ]
+    },
+    {
+      "page": "reader/b10-unit-002.html#fig-truth-tables",
+      "viewport": [
+        390,
+        844
+      ],
+      "document_scroll_width": 375,
+      "observed": "Stacked source truth tables preserve P/Q/result column order, T/F values and LTR formulas; no page overflow.",
+      "broken_images": 0,
+      "computed_math_directions": [
+        "ltr"
+      ]
+    },
+    {
+      "page": "reader/b10-frontmatter.html#preface",
+      "viewport": [
+        1280,
+        720
+      ],
+      "document_scroll_width": 1265,
+      "observed": "Centered RTL paragraphs and mixed English contributor/institution names readable.",
+      "broken_images": 0
+    }
+  ],
+  "encoding": "Sampled page roots use lang=pnb-Arab-PK and dir=rtl; mathematical runs are isolated LTR. Current source graphs are unchanged.",
+  "viewport_restored": true,
+  "source_readers_changed": false,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 6545,
+      "sha256": "839b137abdcb49606e3bf1a95968d5e5daa725d755e07ec07244441215304873"
+    },
+    {
+      "path": "site.css",
+      "bytes": 2697,
+      "sha256": "e07d2143042681ef59c506a9ea0ea3f5ae1100cb522b7fd655eef0e4e18b1114"
+    },
+    {
+      "path": "reader/b10-frontmatter.html",
+      "bytes": 58954,
+      "sha256": "0e7e9d6a73349d2b972f6d6e44033a57589b0c52db57fffa2a1dda7d0c2ef5bf"
+    },
+    {
+      "path": "reader/b10-unit-001.html",
+      "bytes": 272425,
+      "sha256": "cdc168b6c98db7e40cca2310786e7a2a3a5fa28fd072f5d16a533bf924664de9"
+    },
+    {
+      "path": "reader/b10-unit-002.html",
+      "bytes": 909320,
+      "sha256": "33ff4c6f580655fc66a1057ae09a5de275646ed96f5f931fc26aa9d9972ae06f"
+    },
+    {
+      "path": "support/practice.html",
+      "bytes": 7696,
+      "sha256": "4b893140f8740c859f7c7a9edb7d5833d29bddb63e607eea05bbade1712aaf61"
+    },
+    {
+      "path": "canon/terminology.html",
+      "bytes": 10518,
+      "sha256": "9b84428bd32c3ed8b74720bdfe090a02f49d9db7247d6de0f8b86d342a31cc6b"
+    }
+  ],
+  "limitations": [
+    "Bounded visual inspection is not comprehensive linguistic certification or proof of every assistive-technology behavior.",
+    "One explicit raw-TeX fallback remains as documented; no wider formula-conversion claim.",
+    "No PDF or live WeBWorK grading service is included."
+  ]
+}

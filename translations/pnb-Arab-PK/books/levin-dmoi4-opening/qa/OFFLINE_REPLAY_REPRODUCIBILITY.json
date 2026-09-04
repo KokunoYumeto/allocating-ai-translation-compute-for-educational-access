@@ -1,0 +1,25 @@
+{
+  "schema": "recovered-b10-independent-process-replay.v1",
+  "result": "pass",
+  "command": "python build.py",
+  "verification": "Two successive independent Python invocations each regenerated all three readers twice, passed structural/math/mutation/link QA, and emitted identical final receipt bytes.",
+  "build_script": {
+    "path": "build.py",
+    "bytes": 30889,
+    "sha256": "d5cd7d0770d431ab9411de0126abc1ce5ce5b6b5dd61ea30d28217fd5e916625"
+  },
+  "verified_receipt": {
+    "path": "qa/OFFLINE_REPLAY.json",
+    "bytes": 17138,
+    "sha256": "0d6475be768aeadaac218f80691e3e9c4da5f03b4e65d1cf04ab0f45dcb70f09"
+  },
+  "network_used": false,
+  "git_used": false,
+  "frozen_input_mutated": false,
+  "environment": {
+    "python": "3.13",
+    "lxml": "6.1.1",
+    "Pillow": "12.2.0"
+  },
+  "limitation": "This records local deterministic execution, not successful testing on every OS/library version. The build has no fixed absolute path dependency."
+}

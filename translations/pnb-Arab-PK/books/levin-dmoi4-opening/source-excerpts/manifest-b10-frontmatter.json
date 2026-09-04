@@ -1,0 +1,2519 @@
+{
+  "schema": "pnb-bounded-pretext-manifest-v1",
+  "unit": "B10-frontmatter",
+  "assignment": "B10",
+  "locale": "pnb-Arab-PK",
+  "path_base": "workspace root unless noted",
+  "work": {
+    "title": "Discrete Mathematics: An Open Introduction",
+    "edition": "Fourth Edition",
+    "author": "Oscar Levin",
+    "book_xml_id": "dmoi4",
+    "document_id": "dmoi-4",
+    "not_this_work": "OpenLogic is retained as unused auxiliary material, not B10."
+  },
+  "authority": {
+    "lock_path": "languages/pnb-Arab-PK/sources.lock.json",
+    "lock_raw_sha256": "c8259e2caca9674b89860e9ac03bfaad3db56e61f000fd9081003bc8b514efde",
+    "canonical": {
+      "repository": "https://github.com/oscarlevin/discrete-book.git",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "tree": "5b8209e92286e967a18114eea99c11ba68b8a162",
+      "local_path": "downloads/upstream/discrete-book"
+    },
+    "comparison": {
+      "repository": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id.git",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "tree": "457bb9f48aefe119f3c3a48b485f0c1198d64c3d",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id"
+    },
+    "heads_and_trees_reverified": true,
+    "source_checkout_status_clean": true,
+    "hash_policy": "Record exact git-show blob bytes, SHA-256 and Git blob SHA-1 separately from working-tree bytes. Selected PTX/SVG/TEX/config working files normalize CRLF to the pinned Git text bytes in memory. Do not normalize binary images, and do not assume every tracked file uses LF: canonical root LICENSE itself contains CRLF. No source files were rewritten.",
+    "edition_evidence": "source/dmoi.ptx subtitle, source/bookinfo.ptx blurb and source/frontmatter.ptx identify the active fourth edition. The root README's generic third-edition/main-branch description is stale for this pinned source and is not the edition selector."
+  },
+  "source_excerpt": "b10-frontmatter.ptx",
+  "excerpt_bytes": 16704,
+  "excerpt_sha256": "997ed1b17cf0fd67b9ef8a4c4e3a5ebb598630005beeb93aaddd64dad2fc61cb",
+  "hash_policy": "Witness is UTF-8 LF, composed from exact pinned Git text blobs. Selected working PTX/TEX files are separately hashed raw and verified CRLF-to-LF equal to those blobs. Do not apply that rule to all repository files or binary images. Existing notice inputs retain both raw and logical-LF hashes already recorded; no notice text changed.",
+  "selection_kind": "Complete canonical docinfo plus book title/subtitle and entire canonical frontmatter. Not a full book.",
+  "scope_from": "source/dmoi.ptx docinfo include, then book/title and book/subtitle",
+  "scope_through_inclusive": "source/frontmatter.ptx second preface / Interactive Online Version / sidebyside / shortdescription and image, with every closing container",
+  "first_outside": {
+    "include": "./ch_intro.ptx",
+    "xml_id": "ch_intro",
+    "title": "Introduction and Preliminaries",
+    "planned_unit": "B10-001"
+  },
+  "construction": {
+    "outer_root": "pretext",
+    "source_language": "en-US",
+    "book_id": "dmoi4",
+    "method": "Expand only bookinfo.ptx and frontmatter.ptx from their exact raw Git blobs; preserve all their comments/content. Retain original title/subtitle and root/book attributes. Omit later chapter includes at an explicitly recorded boundary.",
+    "unresolved_include": {
+      "source_file": "source/bookinfo.ptx",
+      "href": "assets/tikz-defs.tex",
+      "parse": "text",
+      "canonical_resolution": "downloads/upstream/discrete-book/source/assets/tikz-defs.tex",
+      "policy": "Retained inert source dependency. Do not resolve against excerpt directory, parse as XML, execute, or inject its text into reader prose."
+    },
+    "comments": "Preserved in witness, excluded from active element/key counts. Commented older ISBN/2016/cover-caption/analytics statements are not active source content."
+  },
+  "source_files": [
+    {
+      "role": "canonical",
+      "path": "source/dmoi.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/dmoi.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "git_blob_sha1": "40a75cc1a98194e2616a346c099364353d1f4510",
+      "bytes": 670,
+      "sha256": "f0029601a3478be629c7df9c7a42252f2b12d5267db01c91bd0a1db5e1f1d6c9",
+      "working_bytes": 687,
+      "working_sha256": "b2c702b9107d3c09d90c8ee1aa5e5cebc8e08c69f7cc605df65e2f779bcf123a",
+      "working_logical_lf_matches_git": true
+    },
+    {
+      "role": "canonical",
+      "path": "source/bookinfo.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/bookinfo.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "git_blob_sha1": "3557b570add0f32719dac104eadfd658ab942e25",
+      "bytes": 3495,
+      "sha256": "76686015118c216bcdbd0b7972778ee8b52d5375078ceab999030b23a999f10a",
+      "working_bytes": 3590,
+      "working_sha256": "1367a582c1d88507e9e8d8e928300e3c4e2b72274cbf8de6920906d7cadd0ba3",
+      "working_logical_lf_matches_git": true
+    },
+    {
+      "role": "canonical",
+      "path": "source/frontmatter.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/frontmatter.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "git_blob_sha1": "be2aa1aad7560bad260f1043b1650ae1739ed95f",
+      "bytes": 13043,
+      "sha256": "1f1cc0f20e29c867751c1abaa648891f9275efa38671f4b539209dcecc8a68a2",
+      "working_bytes": 13278,
+      "working_sha256": "174267fb99edc78cebaf13d014f5dcf6011a58db06f86bc01b7f8f1a4d2c77c4",
+      "working_logical_lf_matches_git": true
+    },
+    {
+      "role": "canonical",
+      "path": "source/assets/tikz-defs.tex",
+      "local_path": "downloads/upstream/discrete-book/source/assets/tikz-defs.tex",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "git_blob_sha1": "bbba652c8821fe5a9f321b3fc313dc7a2e1e5ee0",
+      "bytes": 96523,
+      "sha256": "502a66fecff6ab2d8aa2e846aeef8d50029048e610c2a859553872d6ea4981e4",
+      "working_bytes": 97884,
+      "working_sha256": "9346fc5d53f4110b094270cf4fe84bdc15a264db8da521320c1365520ccf0afa",
+      "working_logical_lf_matches_git": true
+    },
+    {
+      "role": "comparison",
+      "path": "source/dmoi.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/dmoi.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "git_blob_sha1": "c6f048f26ce48b3d3150d03ef753502d0cbe384d",
+      "bytes": 676,
+      "sha256": "26c3d390d510b2cae62ff1c16576fc878d8f4195c385f856ad942939bbba7cff",
+      "working_bytes": 693,
+      "working_sha256": "d2419705c5b52b31db7c549a27b86544b49e0afc9acd0c872747894a93364d20",
+      "working_logical_lf_matches_git": true
+    },
+    {
+      "role": "comparison",
+      "path": "source/bookinfo.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/bookinfo.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "git_blob_sha1": "2a06d74e29b6728fef082c6bffb70b90eecbb9b9",
+      "bytes": 3834,
+      "sha256": "f6148ada7977ba04cdf12e3a6caea8cf99583cf5ef95791dcbaf9b3294a87677",
+      "working_bytes": 3933,
+      "working_sha256": "c3462127704c3ec5250320c722d5039ba74dba810f52a2d7f45830e21c7e3e50",
+      "working_logical_lf_matches_git": true
+    },
+    {
+      "role": "comparison",
+      "path": "source/frontmatter.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/frontmatter.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "git_blob_sha1": "b63cd5d9f3a617b608f29a2abe5147e357ff2531",
+      "bytes": 14762,
+      "sha256": "8aeefa860bf480f90c2849ad149bc159584d8003c6042af2406a70390b9f8341",
+      "working_bytes": 15004,
+      "working_sha256": "f024674d72f01cd09a808d2689d4d67dd5a77d924e0174bc4092d7e386be70f2",
+      "working_logical_lf_matches_git": true
+    },
+    {
+      "role": "comparison",
+      "path": "source/assets/tikz-defs.tex",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/assets/tikz-defs.tex",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "git_blob_sha1": "bbba652c8821fe5a9f321b3fc313dc7a2e1e5ee0",
+      "bytes": 96523,
+      "sha256": "502a66fecff6ab2d8aa2e846aeef8d50029048e610c2a859553872d6ea4981e4",
+      "working_bytes": 97884,
+      "working_sha256": "9346fc5d53f4110b094270cf4fe84bdc15a264db8da521320c1365520ccf0afa",
+      "working_logical_lf_matches_git": true
+    }
+  ],
+  "source_keys": [
+    "bookinfo.ptx#/docinfo/blurb[1]/@shelf",
+    "bookinfo.ptx#/docinfo/blurb[1]",
+    "bookinfo.ptx#/docinfo/rename[1]",
+    "bookinfo.ptx#/docinfo/rename[2]",
+    "bookinfo.ptx#/docinfo/rename[3]",
+    "bookinfo.ptx#/docinfo/rename[4]",
+    "dmoi.ptx#/pretext/book[1]/title[1]",
+    "dmoi.ptx#/pretext/book[1]/subtitle[1]",
+    "frontmatter.ptx#/frontmatter/titlepage[1]/author[1]/personname[1]",
+    "frontmatter.ptx#/frontmatter/titlepage[1]/author[1]/department[1]",
+    "frontmatter.ptx#/frontmatter/titlepage[1]/author[1]/institution[1]",
+    "frontmatter.ptx#/frontmatter/titlepage[1]/date[1]",
+    "frontmatter.ptx#/frontmatter/colophon[1]/copyright[1]/year[1]",
+    "frontmatter.ptx#/frontmatter/colophon[1]/copyright[1]/holder[1]",
+    "frontmatter.ptx#/frontmatter/colophon[1]/copyright[1]/shortlicense[1]",
+    "frontmatter.ptx#/frontmatter/dedication[1]/p[1]",
+    "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[1]",
+    "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[2]",
+    "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[3]",
+    "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[4]",
+    "frontmatter.ptx#/frontmatter/preface[1]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[1]/p[2]",
+    "frontmatter.ptx#/frontmatter/preface[1]/p[3]",
+    "frontmatter.ptx#/frontmatter/preface[1]/p[4]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/title[1]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[1]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[2]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[3]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[2]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[3]",
+    "frontmatter.ptx#/frontmatter/preface[1]/attribution[1]/line[1]",
+    "frontmatter.ptx#/frontmatter/preface[1]/attribution[1]/line[2]",
+    "frontmatter.ptx#/frontmatter/preface[2]/title[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[1]/title[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[1]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[2]/title[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[2]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[3]/title[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[3]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[4]/title[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[4]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/title[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[2]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[3]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[4]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/sidebyside[1]/shortdescription[1]"
+  ],
+  "translation_key_count": 50,
+  "block_key_policy": "Filename plus canonical source XPath with one-based same-tag sibling indexes, not generated source IDs. Blurb shelf is the one translated attribute. 42 full-frontmatter slots + 2 book title/subtitle + 6 docinfo slots. URL-only website is retained structurally and has no invented prose key.",
+  "blocks": [
+    {
+      "key": "bookinfo.ptx#/docinfo/blurb[1]/@shelf",
+      "tag": "attribute",
+      "source_attributes": {
+        "shelf": "Mathematics"
+      },
+      "source_text": "Mathematics",
+      "source_display_text": "Mathematics",
+      "inline_source_tree": null
+    },
+    {
+      "key": "bookinfo.ptx#/docinfo/blurb[1]",
+      "tag": "blurb",
+      "source_attributes": {
+        "shelf": "Mathematics"
+      },
+      "source_text": "\n    The 4th edition of Levin's Discrete Mathematics: an Open Introduction, released in August 2024.  The new edition includes a better arrangement of topics, many more exercises, and much more interactivity.  There are sections on relations, probability, and a stronger emphasis on discrete structures.\n  ",
+      "source_display_text": "\n    The 4th edition of Levin's Discrete Mathematics: an Open Introduction, released in August 2024.  The new edition includes a better arrangement of topics, many more exercises, and much more interactivity.  There are sections on relations, probability, and a stronger emphasis on discrete structures.\n  ",
+      "inline_source_tree": [
+        "blurb",
+        {
+          "shelf": "Mathematics"
+        },
+        "\n    The 4th edition of Levin's Discrete Mathematics: an Open Introduction, released in August 2024.  The new edition includes a better arrangement of topics, many more exercises, and much more interactivity.  There are sections on relations, probability, and a stronger emphasis on discrete structures.\n  ",
+        []
+      ]
+    },
+    {
+      "key": "bookinfo.ptx#/docinfo/rename[1]",
+      "tag": "rename",
+      "source_attributes": {
+        "element": "investigation",
+        "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+      },
+      "source_text": "Investigate!",
+      "source_display_text": "Investigate!",
+      "inline_source_tree": [
+        "rename",
+        {
+          "element": "investigation",
+          "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+        },
+        "Investigate!",
+        []
+      ]
+    },
+    {
+      "key": "bookinfo.ptx#/docinfo/rename[2]",
+      "tag": "rename",
+      "source_attributes": {
+        "element": "assemblage",
+        "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+      },
+      "source_text": "Summary",
+      "source_display_text": "Summary",
+      "inline_source_tree": [
+        "rename",
+        {
+          "element": "assemblage",
+          "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+        },
+        "Summary",
+        []
+      ]
+    },
+    {
+      "key": "bookinfo.ptx#/docinfo/rename[3]",
+      "tag": "rename",
+      "source_attributes": {
+        "element": "inlineexercise",
+        "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+      },
+      "source_text": "Try it",
+      "source_display_text": "Try it",
+      "inline_source_tree": [
+        "rename",
+        {
+          "element": "inlineexercise",
+          "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+        },
+        "Try it",
+        []
+      ]
+    },
+    {
+      "key": "bookinfo.ptx#/docinfo/rename[4]",
+      "tag": "rename",
+      "source_attributes": {
+        "element": "aside",
+        "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+      },
+      "source_text": "By the way...",
+      "source_display_text": "By the way...",
+      "inline_source_tree": [
+        "rename",
+        {
+          "element": "aside",
+          "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+        },
+        "By the way...",
+        []
+      ]
+    },
+    {
+      "key": "dmoi.ptx#/pretext/book[1]/title[1]",
+      "tag": "title",
+      "source_attributes": {},
+      "source_text": "Discrete Mathematics",
+      "source_display_text": "Discrete Mathematics",
+      "inline_source_tree": [
+        "title",
+        {},
+        "Discrete Mathematics",
+        []
+      ]
+    },
+    {
+      "key": "dmoi.ptx#/pretext/book[1]/subtitle[1]",
+      "tag": "subtitle",
+      "source_attributes": {},
+      "source_text": "An Open Introduction, 4th Edition",
+      "source_display_text": "An Open Introduction, 4th Edition",
+      "inline_source_tree": [
+        "subtitle",
+        {},
+        "An Open Introduction, 4th Edition",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/titlepage[1]/author[1]/personname[1]",
+      "tag": "personname",
+      "source_attributes": {},
+      "source_text": "\n      Oscar Levin",
+      "source_display_text": "\n      Oscar Levin",
+      "inline_source_tree": [
+        "personname",
+        {},
+        "\n      Oscar Levin",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/titlepage[1]/author[1]/department[1]",
+      "tag": "department",
+      "source_attributes": {},
+      "source_text": "Mathematical Sciences",
+      "source_display_text": "Mathematical Sciences",
+      "inline_source_tree": [
+        "department",
+        {},
+        "Mathematical Sciences",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/titlepage[1]/author[1]/institution[1]",
+      "tag": "institution",
+      "source_attributes": {},
+      "source_text": "University of Northern Colorado",
+      "source_display_text": "University of Northern Colorado",
+      "inline_source_tree": [
+        "institution",
+        {},
+        "University of Northern Colorado",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/titlepage[1]/date[1]",
+      "tag": "date",
+      "source_attributes": {},
+      "source_text": "Fall 2024",
+      "source_display_text": "Fall 2024",
+      "inline_source_tree": [
+        "date",
+        {},
+        "Fall 2024",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/colophon[1]/copyright[1]/year[1]",
+      "tag": "year",
+      "source_attributes": {},
+      "source_text": "2013\n      2025",
+      "source_display_text": "2013–\n      2025",
+      "inline_source_tree": [
+        "year",
+        {},
+        "2013",
+        [
+          [
+            [
+              "ndash",
+              {},
+              null,
+              []
+            ],
+            "\n      2025"
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/colophon[1]/copyright[1]/holder[1]",
+      "tag": "holder",
+      "source_attributes": {},
+      "source_text": "Oscar Levin",
+      "source_display_text": "Oscar Levin",
+      "inline_source_tree": [
+        "holder",
+        {},
+        "Oscar Levin",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/colophon[1]/copyright[1]/shortlicense[1]",
+      "tag": "shortlicense",
+      "source_attributes": {},
+      "source_text": "\n         This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \n      ",
+      "source_display_text": "\n         This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit creativecommons.org/licenses/by-nc-sa/4.0\n      ",
+      "inline_source_tree": [
+        "shortlicense",
+        {},
+        "\n         This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit ",
+        [
+          [
+            [
+              "url",
+              {
+                "href": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+                "visual": "creativecommons.org/licenses/by-nc-sa/4.0"
+              },
+              null,
+              []
+            ],
+            "\n      "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/dedication[1]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      For Madeline and Teagan\n    ",
+      "source_display_text": "\n      For Madeline and Teagan\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      For Madeline and Teagan\n    ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      This book would not exist if not for Discrete and Combinatorial Mathematics, by Richard Grassl and Tabitha Mingus.\n      It is the book I learned discrete math out of, and that I taught with the semester before I began writing this text.\n      I wanted to maintain the inquiry-based feel of their book but update, expand, and rearrange some of the material.\n      Some of the best exposition and exercises here were graciously donated from this source.\n    ",
+      "source_display_text": "\n      This book would not exist if not for Discrete and Combinatorial Mathematics, by Richard Grassl and Tabitha Mingus.\n      It is the book I learned discrete math out of, and that I taught with the semester before I began writing this text.\n      I wanted to maintain the inquiry-based feel of their book but update, expand, and rearrange some of the material.\n      Some of the best exposition and exercises here were graciously donated from this source.\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      This book would not exist if not for ",
+        [
+          [
+            [
+              "q",
+              {},
+              "Discrete and Combinatorial Mathematics,",
+              []
+            ],
+            " by Richard Grassl and Tabitha Mingus.\n      It is the book I learned discrete math out of, and that I taught with the semester before I began writing this text.\n      I wanted to maintain the inquiry-based feel of their book but update, expand, and rearrange some of the material.\n      Some of the best exposition and exercises here were graciously donated from this source.\n    "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[2]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      Thanks go to the graduate students who have co-taught the Discrete Mathematics course with me over the years, including Evan Czysz, Alees Lee, and Sarah Sparks, who helped develop new activities and exercises that have been incorporated into this text.  Michelle Morgan provided copy-editing support, and Jennifer Zakotnik-Gutierrez helped code many of the interactive exercises in the online version of the book.\n      Thanks also to Katie Morrison, Nate Eldredge, and Richard Grassl (again) for their suggestions after using parts of this text in their classes.\n    ",
+      "source_display_text": "\n      Thanks go to the graduate students who have co-taught the Discrete Mathematics course with me over the years, including Evan Czysz, Alees Lee, and Sarah Sparks, who helped develop new activities and exercises that have been incorporated into this text.  Michelle Morgan provided copy-editing support, and Jennifer Zakotnik-Gutierrez helped code many of the interactive exercises in the online version of the book.\n      Thanks also to Katie Morrison, Nate Eldredge, and Richard Grassl (again) for their suggestions after using parts of this text in their classes.\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      Thanks go to the graduate students who have co-taught the Discrete Mathematics course with me over the years, including Evan Czysz, Alees Lee, and Sarah Sparks, who helped develop new activities and exercises that have been incorporated into this text.  Michelle Morgan provided copy-editing support, and Jennifer Zakotnik-Gutierrez helped code many of the interactive exercises in the online version of the book.\n      Thanks also to Katie Morrison, Nate Eldredge, and Richard Grassl (again) for their suggestions after using parts of this text in their classes.\n    ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[3]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      The online version of the book is written in PreTeXt and hosted on Runestone Academy thanks to the tremendous development work of Rob Beezer, Brad Miller, David Farmer, and Alex Jordan along with the rest of the participants of the pretext-support group.\n    ",
+      "source_display_text": "\n      The online version of the book is written in PreTeXt and hosted on Runestone Academy thanks to the tremendous development work of Rob Beezer, Brad Miller, David Farmer, and Alex Jordan along with the rest of the participants of the pretext-support group.\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      The online version of the book is written in PreTeXt and hosted on Runestone Academy thanks to the tremendous development work of Rob Beezer, Brad Miller, David Farmer, and Alex Jordan along with the rest of the participants of the ",
+        [
+          [
+            [
+              "url",
+              {
+                "href": "https://groups.google.com/g/pretext-support",
+                "visual": "groups.google.com/g/pretext-support"
+              },
+              "pretext-support group",
+              []
+            ],
+            ".\n    "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[4]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      Finally, a thank you to the numerous students who have pointed out typos and made suggestions over the years, and a thanks in advance to those who will do so in the future.\n    ",
+      "source_display_text": "\n      Finally, a thank you to the numerous students who have pointed out typos and made suggestions over the years, and a thanks in advance to those who will do so in the future.\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      Finally, a thank you to the numerous students who have pointed out typos and made suggestions over the years, and a thanks in advance to those who will do so in the future.\n    ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      This text aims to introduce select topics in discrete mathematics at a level appropriate for first- or second-year undergraduate math and computer science majors, especially those who intend to teach middle and high school mathematics.\n      The book began as a set of notes for the Discrete Mathematics course at the University of Northern Colorado.\n      This course serves both as a survey of the topics in discrete math and as the bridge course for math majors, as UNC does not offer a separate introduction to proofs course.\n      As this course has evolved to support our computer science major, so has the text.  The current version of the book is intended to support  inquiry-based teaching for understanding that is so crucial for future teachers, while also providing the necessary mathematical foundation and application-based motivation for computer science students.  While teaching the course in Spring 2024 using an early version of this edition, I was pleasantly surprised by how many students reported that they, for the first time, saw how useful math could be in the real world.  I hope that this experience can be replicated in other classes using this text.\n    ",
+      "source_display_text": "\n      This text aims to introduce select topics in discrete mathematics at a level appropriate for first- or second-year undergraduate math and computer science majors, especially those who intend to teach middle and high school mathematics.\n      The book began as a set of notes for the Discrete Mathematics course at the University of Northern Colorado.\n      This course serves both as a survey of the topics in discrete math and as the bridge course for math majors, as UNC does not offer a separate introduction to proofs course.\n      As this course has evolved to support our computer science major, so has the text.  The current version of the book is intended to support  inquiry-based teaching for understanding that is so crucial for future teachers, while also providing the necessary mathematical foundation and application-based motivation for computer science students.  While teaching the course in Spring 2024 using an early version of this edition, I was pleasantly surprised by how many students reported that they, for the first time, saw how useful math could be in the real world.  I hope that this experience can be replicated in other classes using this text.\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      This text aims to introduce select topics in discrete mathematics at a level appropriate for first- or second-year undergraduate math and computer science majors, especially those who intend to teach middle and high school mathematics.\n      The book began as a set of notes for the Discrete Mathematics course at the University of Northern Colorado.\n      This course serves both as a survey of the topics in discrete math and as the ",
+        [
+          [
+            [
+              "q",
+              {},
+              "bridge",
+              []
+            ],
+            " course for math majors, as UNC does not offer a separate "
+          ],
+          [
+            [
+              "q",
+              {},
+              "introduction to proofs",
+              []
+            ],
+            " course.\n      As this course has evolved to support our computer science major, so has the text.  The current version of the book is intended to support  inquiry-based teaching for understanding that is so crucial for future teachers, while also providing the necessary mathematical foundation and application-based motivation for computer science students.  While teaching the course in Spring 2024 using an early version of this edition, I was pleasantly surprised by how many students reported that they, for the first time, saw how useful math could be in the "
+          ],
+          [
+            [
+              "q",
+              {},
+              "real world.",
+              []
+            ],
+            "  I hope that this experience can be replicated in other classes using this text.\n    "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/p[2]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      This book is intended to be used in a class taught using problem-oriented or inquiry-based methods.  Each section begins with a preview of the content that includes an open-ended Investigate! motivating question, as well as a structured preview activity.  The preview activities are carefully scaffolded to provide an entry-point to the section's topic and to prime students to engage deeply in the material.  \n      Depending on the pace of the class, I have found success assigning only the section preview before class, using the preview activity as in-class group work, or assigning the entire section to be read before class (each section concludes with a small set of reading questions that can be assigned to encourage students to actually read).  For those readers using this book for self-study, the organization of the sections will hopefully mimic the style of a rich inquiry-based classroom.\n    ",
+      "source_display_text": "\n      This book is intended to be used in a class taught using problem-oriented or inquiry-based methods.  Each section begins with a preview of the content that includes an open-ended Investigate! motivating question, as well as a structured preview activity.  The preview activities are carefully scaffolded to provide an entry-point to the section's topic and to prime students to engage deeply in the material.  \n      Depending on the pace of the class, I have found success assigning only the section preview before class, using the preview activity as in-class group work, or assigning the entire section to be read before class (each section concludes with a small set of reading questions that can be assigned to encourage students to actually read).  For those readers using this book for self-study, the organization of the sections will hopefully mimic the style of a rich inquiry-based classroom.\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      This book is intended to be used in a class taught using problem-oriented or inquiry-based methods.  Each section begins with a preview of the content that includes an open-ended ",
+        [
+          [
+            [
+              "em",
+              {},
+              "Investigate!",
+              []
+            ],
+            " motivating question, as well as a structured preview activity.  The preview activities are carefully scaffolded to provide an entry-point to the section's topic and to prime students to engage deeply in the material.  \n      Depending on the pace of the class, I have found success assigning only the section preview before class, using the preview activity as in-class group work, or assigning the entire section to be read before class (each section concludes with a small set of reading questions that can be assigned to encourage students to actually read).  For those readers using this book for self-study, the organization of the sections will hopefully mimic the style of a rich inquiry-based classroom.\n    "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/p[3]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      The topics covered in this text were chosen to match the needs of the students I teach at UNC.\n      The main areas of study are logic and proof, graph theory, combinatorics, and sequences.\n      Induction is covered at the end of the chapter on sequences.  Discrete structures are introduced as needed, but a more thorough treatment of sets and functions is included as a separate chapter, which can be studied independent of the other content.  The final chapter covers two additional topics: generating functions and number theory.\n    ",
+      "source_display_text": "\n      The topics covered in this text were chosen to match the needs of the students I teach at UNC.\n      The main areas of study are logic and proof, graph theory, combinatorics, and sequences.\n      Induction is covered at the end of the chapter on sequences.  Discrete structures are introduced as needed, but a more thorough treatment of sets and functions is included as a separate chapter, which can be studied independent of the other content.  The final chapter covers two additional topics: generating functions and number theory.\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      The topics covered in this text were chosen to match the needs of the students I teach at UNC.\n      The main areas of study are logic and proof, graph theory, combinatorics, and sequences.\n      Induction is covered at the end of the chapter on sequences.  Discrete structures are introduced ",
+        [
+          [
+            [
+              "q",
+              {},
+              "as needed",
+              []
+            ],
+            ", but a more thorough treatment of sets and functions is included as a separate chapter, which can be studied independent of the other content.  The final chapter covers two additional topics: generating functions and number theory.\n    "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/p[4]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      While I believe this selection and order of topics is optimal, you should feel free to skip around to what interests you.\n      There are occasionally examples and exercises that rely on earlier material, but I have tried to keep these to a minimum, and they usually can either be skipped or understood without too much additional study.\n      If you are an instructor, you can also create a custom version by editing the  source to fit your needs.\n    ",
+      "source_display_text": "\n      While I believe this selection and order of topics is optimal, you should feel free to skip around to what interests you.\n      There are occasionally examples and exercises that rely on earlier material, but I have tried to keep these to a minimum, and they usually can either be skipped or understood without too much additional study.\n      If you are an instructor, you can also create a custom version by editing the PreTeXt source to fit your needs.\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      While I believe this selection and order of topics is optimal, you should feel free to skip around to what interests you.\n      There are occasionally examples and exercises that rely on earlier material, but I have tried to keep these to a minimum, and they usually can either be skipped or understood without too much additional study.\n      If you are an instructor, you can also create a custom version by editing the ",
+        [
+          [
+            [
+              "pretext",
+              {},
+              null,
+              []
+            ],
+            " source to fit your needs.\n    "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/title[1]",
+      "tag": "title",
+      "source_attributes": {},
+      "source_text": "Improvements to the 4th Edition",
+      "source_display_text": "Improvements to the 4th Edition",
+      "inline_source_tree": [
+        "title",
+        {},
+        "Improvements to the 4th Edition",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        Many of the sections have been rewritten to improve the clarity of the exposition.  \n        \n          \n            \n              Nearly 300 new exercises, bringing the total to more than 750.  These are better divided into preview activity questions, reading questions, practice problems, and additional exercises. \n              Most of the new exercises are interactive for the online version.\n            \n          \n\n          \n            \n              New sections on probability, relations, and discrete structures and their proofs.  Some other sections have been split up to make it more likely that a single class period can be devoted to a single topic.\n            \n          \n\n          \n            \n              Improved presentation for the counting chapter with a focus on considering sets of outcomes more than following rules.\n            \n          \n\n          \n            \n              The Investigate! activities of the 3rd Edition have been split into two types: Investigate! questions and Preview Activities.  The former are open-ended questions designed to engage you with the topic soon to be discussed.  The latter are structured preview activities that you should be able to completely answer before reading the section.\n            \n          \n        \n      ",
+      "source_display_text": "\n        Many of the sections have been rewritten to improve the clarity of the exposition.  \n        {{child:0}}\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        Many of the sections have been rewritten to improve the clarity of the exposition.  \n        ",
+        [
+          [
+            [
+              "ul",
+              {},
+              "\n          ",
+              [
+                [
+                  [
+                    "li",
+                    {},
+                    "\n            ",
+                    [
+                      [
+                        [
+                          "p",
+                          {},
+                          "\n              Nearly 300 new exercises, bringing the total to more than 750.  These are better divided into preview activity questions, reading questions, practice problems, and additional exercises. \n              Most of the new exercises are interactive for the online version.\n            ",
+                          []
+                        ],
+                        "\n          "
+                      ]
+                    ]
+                  ],
+                  "\n\n          "
+                ],
+                [
+                  [
+                    "li",
+                    {},
+                    "\n            ",
+                    [
+                      [
+                        [
+                          "p",
+                          {},
+                          "\n              New sections on probability, relations, and discrete structures and their proofs.  Some other sections have been split up to make it more likely that a single class period can be devoted to a single topic.\n            ",
+                          []
+                        ],
+                        "\n          "
+                      ]
+                    ]
+                  ],
+                  "\n\n          "
+                ],
+                [
+                  [
+                    "li",
+                    {},
+                    "\n            ",
+                    [
+                      [
+                        [
+                          "p",
+                          {},
+                          "\n              Improved presentation for the counting chapter with a focus on considering sets of outcomes more than following rules.\n            ",
+                          []
+                        ],
+                        "\n          "
+                      ]
+                    ]
+                  ],
+                  "\n\n          "
+                ],
+                [
+                  [
+                    "li",
+                    {},
+                    "\n            ",
+                    [
+                      [
+                        [
+                          "p",
+                          {},
+                          "\n              The ",
+                          [
+                            [
+                              [
+                                "em",
+                                {},
+                                "Investigate!",
+                                []
+                              ],
+                              " activities of the 3rd Edition have been split into two types: "
+                            ],
+                            [
+                              [
+                                "em",
+                                {},
+                                "Investigate!",
+                                []
+                              ],
+                              " questions and Preview Activities.  The former are open-ended questions designed to engage you with the topic soon to be discussed.  The latter are structured preview activities that you should be able to completely answer before reading the section.\n            "
+                            ]
+                          ]
+                        ],
+                        "\n          "
+                      ]
+                    ]
+                  ],
+                  "\n        "
+                ]
+              ]
+            ],
+            "\n      "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[1]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n              Nearly 300 new exercises, bringing the total to more than 750.  These are better divided into preview activity questions, reading questions, practice problems, and additional exercises. \n              Most of the new exercises are interactive for the online version.\n            ",
+      "source_display_text": "\n              Nearly 300 new exercises, bringing the total to more than 750.  These are better divided into preview activity questions, reading questions, practice problems, and additional exercises. \n              Most of the new exercises are interactive for the online version.\n            ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n              Nearly 300 new exercises, bringing the total to more than 750.  These are better divided into preview activity questions, reading questions, practice problems, and additional exercises. \n              Most of the new exercises are interactive for the online version.\n            ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[2]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n              New sections on probability, relations, and discrete structures and their proofs.  Some other sections have been split up to make it more likely that a single class period can be devoted to a single topic.\n            ",
+      "source_display_text": "\n              New sections on probability, relations, and discrete structures and their proofs.  Some other sections have been split up to make it more likely that a single class period can be devoted to a single topic.\n            ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n              New sections on probability, relations, and discrete structures and their proofs.  Some other sections have been split up to make it more likely that a single class period can be devoted to a single topic.\n            ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[3]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n              Improved presentation for the counting chapter with a focus on considering sets of outcomes more than following rules.\n            ",
+      "source_display_text": "\n              Improved presentation for the counting chapter with a focus on considering sets of outcomes more than following rules.\n            ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n              Improved presentation for the counting chapter with a focus on considering sets of outcomes more than following rules.\n            ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n              The Investigate! activities of the 3rd Edition have been split into two types: Investigate! questions and Preview Activities.  The former are open-ended questions designed to engage you with the topic soon to be discussed.  The latter are structured preview activities that you should be able to completely answer before reading the section.\n            ",
+      "source_display_text": "\n              The Investigate! activities of the 3rd Edition have been split into two types: Investigate! questions and Preview Activities.  The former are open-ended questions designed to engage you with the topic soon to be discussed.  The latter are structured preview activities that you should be able to completely answer before reading the section.\n            ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n              The ",
+        [
+          [
+            [
+              "em",
+              {},
+              "Investigate!",
+              []
+            ],
+            " activities of the 3rd Edition have been split into two types: "
+          ],
+          [
+            [
+              "em",
+              {},
+              "Investigate!",
+              []
+            ],
+            " questions and Preview Activities.  The former are open-ended questions designed to engage you with the topic soon to be discussed.  The latter are structured preview activities that you should be able to completely answer before reading the section.\n            "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[2]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        The previous editions (3rd Edition, released in 2019, 2nd Edition, released in 2016, and the Fall 2015 Edition) will still be available for instructors who wish to use those versions due to familiarity.\n      ",
+      "source_display_text": "\n        The previous editions (3rd Edition, released in 2019, 2nd Edition, released in 2016, and the Fall 2015 Edition) will still be available for instructors who wish to use those versions due to familiarity.\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        The previous editions (3rd Edition, released in 2019, 2nd Edition, released in 2016, and the Fall 2015 Edition) will still be available for instructors who wish to use those versions due to familiarity.\n      ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[3]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        I plan to continue improving the book.  Some of this will happen in real-time by updating the online versions to include new content (numbering will remain consistent).  \n        Thus I encourage you to send along any suggestions and comments as you have them.\n      ",
+      "source_display_text": "\n        I plan to continue improving the book.  Some of this will happen in real-time by updating the online versions to include new content (numbering will remain consistent).  \n        Thus I encourage you to send along any suggestions and comments as you have them.\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        I plan to continue improving the book.  Some of this will happen in real-time by updating the online versions to include new content (numbering will remain consistent).  \n        Thus I encourage you to send along any suggestions and comments as you have them.\n      ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/attribution[1]/line[1]",
+      "tag": "line",
+      "source_attributes": {},
+      "source_text": "Oscar Levin, Ph.D.",
+      "source_display_text": "Oscar Levin, Ph.D.",
+      "inline_source_tree": [
+        "line",
+        {},
+        "Oscar Levin, Ph.D.",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/attribution[1]/line[2]",
+      "tag": "line",
+      "source_attributes": {},
+      "source_text": "University of Northern Colorado, 2024",
+      "source_display_text": "University of Northern Colorado, 2024",
+      "inline_source_tree": [
+        "line",
+        {},
+        "University of Northern Colorado, 2024",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/title[1]",
+      "tag": "title",
+      "source_attributes": {},
+      "source_text": "How to Use This Book",
+      "source_display_text": "How to Use This Book",
+      "inline_source_tree": [
+        "title",
+        {},
+        "How to Use This Book",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n      In addition to expository text, this book has a few features designed to encourage you to interact with the mathematics.\n    ",
+      "source_display_text": "\n      In addition to expository text, this book has a few features designed to encourage you to interact with the mathematics.\n    ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n      In addition to expository text, this book has a few features designed to encourage you to interact with the mathematics.\n    ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[1]/title[1]",
+      "tag": "title",
+      "source_attributes": {},
+      "source_text": "Investigate! questions",
+      "source_display_text": "Investigate! questions",
+      "inline_source_tree": [
+        "title",
+        {},
+        null,
+        [
+          [
+            [
+              "em",
+              {},
+              "Investigate!",
+              []
+            ],
+            " questions"
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[1]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        Sprinkled throughout the sections (usually at the very beginning of a topic) you will find open-ended questions designed to engage you with the topic soon to be discussed.\n        You really should spend some time thinking about, or even working through, these problems before reading the section.  However, don't worry if you cannot find a satisfying solution right away.  The goal is to pique your interest, so you will read what is next looking for answers.\n      ",
+      "source_display_text": "\n        Sprinkled throughout the sections (usually at the very beginning of a topic) you will find open-ended questions designed to engage you with the topic soon to be discussed.\n        You really should spend some time thinking about, or even working through, these problems before reading the section.  However, don't worry if you cannot find a satisfying solution right away.  The goal is to pique your interest, so you will read what is next looking for answers.\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        Sprinkled throughout the sections (usually at the very beginning of a topic) you will find open-ended questions designed to engage you with the topic soon to be discussed.\n        You really should spend some time thinking about, or even working through, these problems before reading the section.  However, don't worry if you cannot find a satisfying solution right away.  The goal is to pique your interest, so you will read what is next looking for answers.\n      ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[2]/title[1]",
+      "tag": "title",
+      "source_attributes": {},
+      "source_text": "Preview Activities",
+      "source_display_text": "Preview Activities",
+      "inline_source_tree": [
+        "title",
+        {},
+        "Preview Activities",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[2]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        Most sections include a structured preview activity.  These contain leading questions that you should be able to completely answer before reading the section.  The idea is that the questions prime you to engage meaningfully with the new content ahead.  If you are using the online version, most of these questions will provide you with immediate feedback so you can be confident moving forward.\n      ",
+      "source_display_text": "\n        Most sections include a structured preview activity.  These contain leading questions that you should be able to completely answer before reading the section.  The idea is that the questions prime you to engage meaningfully with the new content ahead.  If you are using the online version, most of these questions will provide you with immediate feedback so you can be confident moving forward.\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        Most sections include a structured preview activity.  These contain leading questions that you should be able to completely answer before reading the section.  The idea is that the questions prime you to engage meaningfully with the new content ahead.  If you are using the online version, most of these questions will provide you with immediate feedback so you can be confident moving forward.\n      ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[3]/title[1]",
+      "tag": "title",
+      "source_attributes": {},
+      "source_text": "Examples",
+      "source_display_text": "Examples",
+      "inline_source_tree": [
+        "title",
+        {},
+        "Examples",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[3]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        I have tried to include the correct number of examples.\n        For those examples that include problems, full solutions are included.\n        Before reading the solution, try to at least have an understanding of what the problem is asking.\n        Unlike some textbooks, the examples are not meant to be all-inclusive for problems you will see in the exercises.\n        They should not be used as a blueprint for solving other problems.\n        Instead, use the examples to deepen your understanding of the concepts and techniques discussed in each section.\n        Then use this understanding to solve the exercises at the end of each section.\n      ",
+      "source_display_text": "\n        I have tried to include the correct number of examples.\n        For those examples that include problems, full solutions are included.\n        Before reading the solution, try to at least have an understanding of what the problem is asking.\n        Unlike some textbooks, the examples are not meant to be all-inclusive for problems you will see in the exercises.\n        They should not be used as a blueprint for solving other problems.\n        Instead, use the examples to deepen your understanding of the concepts and techniques discussed in each section.\n        Then use this understanding to solve the exercises at the end of each section.\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        I have tried to include the ",
+        [
+          [
+            [
+              "q",
+              {},
+              "correct",
+              []
+            ],
+            " number of examples.\n        For those examples that include "
+          ],
+          [
+            [
+              "em",
+              {},
+              "problems",
+              []
+            ],
+            ", full solutions are included.\n        Before reading the solution, try to at least have an understanding of what the problem is asking.\n        Unlike some textbooks, the examples are not meant to be all-inclusive for problems you will see in the exercises.\n        They should not be used as a blueprint for solving other problems.\n        Instead, use the examples to deepen your understanding of the concepts and techniques discussed in each section.\n        Then use this understanding to solve the exercises at the end of each section.\n      "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[4]/title[1]",
+      "tag": "title",
+      "source_attributes": {},
+      "source_text": "Exercises",
+      "source_display_text": "Exercises",
+      "inline_source_tree": [
+        "title",
+        {},
+        "Exercises",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[4]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        You get good at math through practice.\n        Each section concludes with practice problems meant to solidify concepts and basic skills presented in that section; the online version provides immediate feedback on these problems.  There are then additional exercises that are more challenging and open-ended.  These might be assigned as written homework or used in class as group work.  Some of the additional exercises have hints or solutions in the back of the book, but use these as little as possible.  Struggle is good for you.  \n        At the end of each chapter, a larger collection of similar exercises is included (as a sort of chapter review) which might bridge the material of different sections in that chapter.\n      ",
+      "source_display_text": "\n        You get good at math through practice.\n        Each section concludes with practice problems meant to solidify concepts and basic skills presented in that section; the online version provides immediate feedback on these problems.  There are then additional exercises that are more challenging and open-ended.  These might be assigned as written homework or used in class as group work.  Some of the additional exercises have hints or solutions in the back of the book, but use these as little as possible.  Struggle is good for you.  \n        At the end of each chapter, a larger collection of similar exercises is included (as a sort of chapter review) which might bridge the material of different sections in that chapter.\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        You get good at math through practice.\n        Each section concludes with practice problems meant to solidify concepts and basic skills presented in that section; the online version provides immediate feedback on these problems.  There are then additional exercises that are more challenging and open-ended.  These might be assigned as written homework or used in class as group work.  Some of the additional exercises have hints or solutions in the back of the book, but use these as little as possible.  Struggle is good for you.  \n        At the end of each chapter, a larger collection of similar exercises is included (as a sort of ",
+        [
+          [
+            [
+              "q",
+              {},
+              "chapter review",
+              []
+            ],
+            ") which might bridge the material of different sections in that chapter.\n      "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/title[1]",
+      "tag": "title",
+      "source_attributes": {},
+      "source_text": "Interactive Online Version",
+      "source_display_text": "Interactive Online Version",
+      "inline_source_tree": [
+        "title",
+        {},
+        "Interactive Online Version",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[1]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        For those of you reading this in print or as a PDF, I encourage you to also check out the interactive online version.  Many of the preview activities and exercises are interactive and can give you immediate feedback.  Some of these have randomized components, allowing you to practice many similar versions of the same problems until you master the topic.\n      ",
+      "source_display_text": "\n        For those of you reading this in print or as a PDF, I encourage you to also check out the interactive online version.  Many of the preview activities and exercises are interactive and can give you immediate feedback.  Some of these have randomized components, allowing you to practice many similar versions of the same problems until you master the topic.\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        For those of you reading this in print or as a PDF, I encourage you to also check out the interactive online version.  Many of the preview activities and exercises are interactive and can give you immediate feedback.  Some of these have randomized components, allowing you to practice many similar versions of the same problems until you master the topic.\n      ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[2]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        Hints and solutions to examples are also hidden away behind an extra click to encourage you to think about the problem before reading the solution.  There is a good search feature available as well, and the index has expandable links to see the content without jumping to the page immediately.  There is also a python scratch pad (the pencil icon) so you can try out some code if you feel so inclined.\n      ",
+      "source_display_text": "\n        Hints and solutions to examples are also hidden away behind an extra click to encourage you to think about the problem before reading the solution.  There is a good search feature available as well, and the index has expandable links to see the content without jumping to the page immediately.  There is also a python scratch pad (the pencil icon) so you can try out some code if you feel so inclined.\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        Hints and solutions to examples are also hidden away behind an extra click to encourage you to think about the problem before reading the solution.  There is a good search feature available as well, and the index has expandable links to see the content without jumping to the page immediately.  There is also a python scratch pad (the pencil icon) so you can try out some code if you feel so inclined.\n      ",
+        []
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[3]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        Additional interactivity is planned.\n        These bonus features will be added on a rolling basis, so keep an eye out!\n      ",
+      "source_display_text": "\n        Additional interactivity is planned.\n        These bonus features will be added on a rolling basis, so keep an eye out!\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        Additional interactivity is planned.\n        These ",
+        [
+          [
+            [
+              "q",
+              {},
+              "bonus",
+              []
+            ],
+            " features will be added on a rolling basis, so keep an eye out!\n      "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[4]",
+      "tag": "p",
+      "source_attributes": {},
+      "source_text": "\n        You can view the interactive version for free at  or by scanning the QR code below.\n      ",
+      "source_display_text": "\n        You can view the interactive version for free at discrete.openmathbooks.org or by scanning the QR code below.\n      ",
+      "inline_source_tree": [
+        "p",
+        {},
+        "\n        You can view the interactive version for free at ",
+        [
+          [
+            [
+              "url",
+              {
+                "href": "https://discrete.openmathbooks.org/",
+                "visual": "discrete.openmathbooks.org"
+              },
+              null,
+              []
+            ],
+            " or by scanning the QR code below.\n      "
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/sidebyside[1]/shortdescription[1]",
+      "tag": "shortdescription",
+      "source_attributes": {},
+      "source_text": "QR Code to https://discrete/openmathbooks.org",
+      "source_display_text": "QR Code to https://discrete/openmathbooks.org",
+      "inline_source_tree": [
+        "shortdescription",
+        {},
+        "QR Code to https://discrete/openmathbooks.org",
+        []
+      ]
+    }
+  ],
+  "source_ids_in_order": [
+    {
+      "id": "dmoi4",
+      "tag": "book",
+      "excerpt_path": "/pretext/book[1]",
+      "ancestor_ids": []
+    },
+    {
+      "id": "frontmatter",
+      "tag": "frontmatter",
+      "excerpt_path": "/pretext/book[1]/frontmatter[1]",
+      "ancestor_ids": [
+        "dmoi4"
+      ]
+    },
+    {
+      "id": "preface",
+      "tag": "preface",
+      "excerpt_path": "/pretext/book[1]/frontmatter[1]/preface[1]",
+      "ancestor_ids": [
+        "dmoi4",
+        "frontmatter"
+      ]
+    },
+    {
+      "id": "pref_editions",
+      "tag": "paragraphs",
+      "excerpt_path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]",
+      "ancestor_ids": [
+        "dmoi4",
+        "frontmatter",
+        "preface"
+      ]
+    }
+  ],
+  "source_structure": [
+    {
+      "path": "/pretext",
+      "tag": "pretext",
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+      },
+      "children": [
+        "/pretext/docinfo[1]",
+        "/pretext/book[1]"
+      ],
+      "own_text": "\n",
+      "tail": null
+    },
+    {
+      "path": "/pretext/docinfo[1]",
+      "tag": "docinfo",
+      "attributes": {},
+      "children": [
+        "/pretext/docinfo[1]/brandlogo[1]",
+        "/pretext/docinfo[1]/document-id[1]",
+        "/pretext/docinfo[1]/blurb[1]",
+        "/pretext/docinfo[1]/macros[1]",
+        "/pretext/docinfo[1]/latex-image-preamble[1]",
+        "/pretext/docinfo[1]/rename[1]",
+        "/pretext/docinfo[1]/rename[2]",
+        "/pretext/docinfo[1]/rename[3]",
+        "/pretext/docinfo[1]/rename[4]",
+        "/pretext/docinfo[1]/cross-references[1]"
+      ],
+      "own_text": "\n  ",
+      "tail": "\n\t"
+    },
+    {
+      "path": "/pretext/docinfo[1]/brandlogo[1]",
+      "tag": "brandlogo",
+      "attributes": {
+        "url": "http://discrete.openmathbooks.org/dmoi4.html",
+        "source": "images/cover4.png"
+      },
+      "children": [],
+      "own_text": null,
+      "tail": "\n\n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/document-id[1]",
+      "tag": "document-id",
+      "attributes": {},
+      "children": [],
+      "own_text": "dmoi-4",
+      "tail": "\n\n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/blurb[1]",
+      "tag": "blurb",
+      "attributes": {
+        "shelf": "Mathematics"
+      },
+      "children": [],
+      "own_text": "\n    The 4th edition of Levin's Discrete Mathematics: an Open Introduction, released in August 2024.  The new edition includes a better arrangement of topics, many more exercises, and much more interactivity.  There are sections on relations, probability, and a stronger emphasis on discrete structures.\n  ",
+      "tail": "\n\n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/macros[1]",
+      "tag": "macros",
+      "attributes": {},
+      "children": [],
+      "own_text": " \n    \\usepackage{cancel}\n    \\def\\d{\\displaystyle} \n    \\def\\N{\\mathbb N} \n    \\def\\B{\\mathbf B} \n    \\def\\Z{\\mathbb Z} \n    \\def\\Q{\\mathbb Q} \n    \\def\\R{\\mathbb R} \n    \\def\\C{\\mathbb C} \n    \\def\\U{\\mathcal U} \n    \\def\\x{\\mathbf{x}}\n    \\def\\y{\\mathbf{y}}\n    \\def\\X{\\mathcal{X}}\n    \\def\\Y{\\mathcal{Y}}\n    \\def\\pow{\\mathcal P} \n    \\def\\inv{^{-1}} \n    \\def\\st{:} \n    \\def\\iff{\\leftrightarrow} \n    \\def\\Iff{\\Leftrightarrow} \n    \\def\\imp{\\rightarrow} \n    \\def\\Imp{\\Rightarrow} \n    \\def\\isom{\\cong} \n    \n    \\def\\bar{\\overline} \n    \\def\\card#1{\\left| #1 \\right|} \n    \\def\\twoline#1#2{\\begin{pmatrix}#1 \\\\ #2 \\end{pmatrix}} \n\n    \\def\\mchoose#1#2{\n      \\left.\\mathchoice\n        {\\left(\\kern-0.48em\\binom{#1}{#2}\\kern-0.48em\\right)}\n        {\\big(\\kern-0.30em\\binom{\\smash{#1}}{\\smash{#2}}\\kern-0.30em\\big)}\n        {\\left(\\kern-0.30em\\binom{\\smash{#1}}{\\smash{#2}}\\kern-0.30em\\right)}\n        {\\left(\\kern-0.30em\\binom{\\smash{#1}}{\\smash{#2}}\\kern-0.30em\\right)}\n      \\right.}\n    \\def\\o{\\circ}\n\n  ",
+      "tail": "\n\n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/latex-image-preamble[1]",
+      "tag": "latex-image-preamble",
+      "attributes": {},
+      "children": [
+        "/pretext/docinfo[1]/latex-image-preamble[1]/{http://www.w3.org/2001/XInclude}include[1]"
+      ],
+      "own_text": " \n  \t\\usepackage{adjustbox}\n    \\usepackage{tikz} \n    \\usepackage{pgfplots}\n    \\usepackage{skak} \n    \\pgfplotsset{\n        every axis/.append style={\n            axis lines=middle,\n            xlabel={\\(x\\)},\n            ylabel={\\(y\\)},\n            grid = both,\n        }\n    }\n    \\usetikzlibrary{positioning,matrix,arrows} \n    \\usetikzlibrary{shapes,decorations,shadows,fadings,patterns} \n    \\usetikzlibrary{decorations.markings} \n    \\usetikzlibrary{calc}\n    \\newcommand{\\vtx}[2]{node[fill,circle,inner sep=0pt, minimum size=4pt,label=#1:#2]{}} \n    \\newcommand{\\va}[1]{\\vtx{above}{#1}} \n    \\newcommand{\\vb}[1]{\\vtx{below}{#1}} \n    \\newcommand{\\vr}[1]{\\vtx{right}{#1}} \n    \\newcommand{\\vl}[1]{\\vtx{left}{#1}} \n    \\renewcommand{\\v}{\\vtx{above}{}} \n    \\def\\vo{node[circle, color=black, fill=white, inner sep=2pt, minimum size = 17pt, draw]{}}\n    ",
+      "tail": "\n\n\n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/latex-image-preamble[1]/{http://www.w3.org/2001/XInclude}include[1]",
+      "tag": "{http://www.w3.org/2001/XInclude}include",
+      "attributes": {
+        "href": "assets/tikz-defs.tex",
+        "parse": "text"
+      },
+      "children": [],
+      "own_text": null,
+      "tail": "\n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/rename[1]",
+      "tag": "rename",
+      "attributes": {
+        "element": "investigation",
+        "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+      },
+      "children": [],
+      "own_text": "Investigate!",
+      "tail": "\n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/rename[2]",
+      "tag": "rename",
+      "attributes": {
+        "element": "assemblage",
+        "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+      },
+      "children": [],
+      "own_text": "Summary",
+      "tail": "\n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/rename[3]",
+      "tag": "rename",
+      "attributes": {
+        "element": "inlineexercise",
+        "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+      },
+      "children": [],
+      "own_text": "Try it",
+      "tail": "\n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/rename[4]",
+      "tag": "rename",
+      "attributes": {
+        "element": "aside",
+        "{http://www.w3.org/XML/1998/namespace}lang": "en-US"
+      },
+      "children": [],
+      "own_text": "By the way...",
+      "tail": "\n  \n  "
+    },
+    {
+      "path": "/pretext/docinfo[1]/cross-references[1]",
+      "tag": "cross-references",
+      "attributes": {
+        "text": "type-global"
+      },
+      "children": [],
+      "own_text": null,
+      "tail": "\n\n\n  \n  \n  \n  \n  \n\n  \n  \n"
+    },
+    {
+      "path": "/pretext/book[1]",
+      "tag": "book",
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "dmoi4"
+      },
+      "children": [
+        "/pretext/book[1]/title[1]",
+        "/pretext/book[1]/subtitle[1]",
+        "/pretext/book[1]/frontmatter[1]"
+      ],
+      "own_text": "\n\t\t",
+      "tail": "\n"
+    },
+    {
+      "path": "/pretext/book[1]/title[1]",
+      "tag": "title",
+      "attributes": {},
+      "children": [],
+      "own_text": "Discrete Mathematics",
+      "tail": "\n\t\t"
+    },
+    {
+      "path": "/pretext/book[1]/subtitle[1]",
+      "tag": "subtitle",
+      "attributes": {},
+      "children": [],
+      "own_text": "An Open Introduction, 4th Edition",
+      "tail": "\n"
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]",
+      "tag": "frontmatter",
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "frontmatter"
+      },
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/titlepage[1]",
+        "/pretext/book[1]/frontmatter[1]/colophon[1]",
+        "/pretext/book[1]/frontmatter[1]/dedication[1]",
+        "/pretext/book[1]/frontmatter[1]/acknowledgement[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]"
+      ],
+      "own_text": "\n  ",
+      "tail": "\n\t"
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/titlepage[1]",
+      "tag": "titlepage",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/titlepage[1]/author[1]",
+        "/pretext/book[1]/frontmatter[1]/titlepage[1]/date[1]"
+      ],
+      "own_text": "\n    ",
+      "tail": "\n\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/titlepage[1]/author[1]",
+      "tag": "author",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/titlepage[1]/author[1]/personname[1]",
+        "/pretext/book[1]/frontmatter[1]/titlepage[1]/author[1]/department[1]",
+        "/pretext/book[1]/frontmatter[1]/titlepage[1]/author[1]/institution[1]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/titlepage[1]/author[1]/personname[1]",
+      "tag": "personname",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n      Oscar Levin",
+      "tail": "\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/titlepage[1]/author[1]/department[1]",
+      "tag": "department",
+      "attributes": {},
+      "children": [],
+      "own_text": "Mathematical Sciences",
+      "tail": "\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/titlepage[1]/author[1]/institution[1]",
+      "tag": "institution",
+      "attributes": {},
+      "children": [],
+      "own_text": "University of Northern Colorado",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/titlepage[1]/date[1]",
+      "tag": "date",
+      "attributes": {},
+      "children": [],
+      "own_text": "Fall 2024",
+      "tail": "\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/colophon[1]",
+      "tag": "colophon",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/colophon[1]/website[1]",
+        "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]"
+      ],
+      "own_text": "\n    ",
+      "tail": "\n\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/colophon[1]/website[1]",
+      "tag": "website",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/colophon[1]/website[1]/url[1]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/colophon[1]/website[1]/url[1]",
+      "tag": "url",
+      "attributes": {
+        "href": "http://discrete.openmathbooks.org/",
+        "visual": "discrete.openmathbooks.org"
+      },
+      "children": [],
+      "own_text": null,
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]",
+      "tag": "copyright",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/year[1]",
+        "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/holder[1]",
+        "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/shortlicense[1]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n    \n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/year[1]",
+      "tag": "year",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/year[1]/ndash[1]"
+      ],
+      "own_text": "2013",
+      "tail": "\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/year[1]/ndash[1]",
+      "tag": "ndash",
+      "attributes": {},
+      "children": [],
+      "own_text": null,
+      "tail": "\n      2025"
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/holder[1]",
+      "tag": "holder",
+      "attributes": {},
+      "children": [],
+      "own_text": "Oscar Levin",
+      "tail": "\n      \n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/shortlicense[1]",
+      "tag": "shortlicense",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/shortlicense[1]/url[1]"
+      ],
+      "own_text": "\n         This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/colophon[1]/copyright[1]/shortlicense[1]/url[1]",
+      "tag": "url",
+      "attributes": {
+        "href": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "visual": "creativecommons.org/licenses/by-nc-sa/4.0"
+      },
+      "children": [],
+      "own_text": null,
+      "tail": "\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/dedication[1]",
+      "tag": "dedication",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/dedication[1]/p[1]"
+      ],
+      "own_text": "\n    ",
+      "tail": "\n\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/dedication[1]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n      For Madeline and Teagan\n    ",
+      "tail": "\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/acknowledgement[1]",
+      "tag": "acknowledgement",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[1]",
+        "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[2]",
+        "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[3]",
+        "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[4]"
+      ],
+      "own_text": "\n    ",
+      "tail": "\n\n\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[1]/q[1]"
+      ],
+      "own_text": "\n      This book would not exist if not for ",
+      "tail": "\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[1]/q[1]",
+      "tag": "q",
+      "attributes": {},
+      "children": [],
+      "own_text": "Discrete and Combinatorial Mathematics,",
+      "tail": " by Richard Grassl and Tabitha Mingus.\n      It is the book I learned discrete math out of, and that I taught with the semester before I began writing this text.\n      I wanted to maintain the inquiry-based feel of their book but update, expand, and rearrange some of the material.\n      Some of the best exposition and exercises here were graciously donated from this source.\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[2]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n      Thanks go to the graduate students who have co-taught the Discrete Mathematics course with me over the years, including Evan Czysz, Alees Lee, and Sarah Sparks, who helped develop new activities and exercises that have been incorporated into this text.  Michelle Morgan provided copy-editing support, and Jennifer Zakotnik-Gutierrez helped code many of the interactive exercises in the online version of the book.\n      Thanks also to Katie Morrison, Nate Eldredge, and Richard Grassl (again) for their suggestions after using parts of this text in their classes.\n    ",
+      "tail": "\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[3]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[3]/url[1]"
+      ],
+      "own_text": "\n      The online version of the book is written in PreTeXt and hosted on Runestone Academy thanks to the tremendous development work of Rob Beezer, Brad Miller, David Farmer, and Alex Jordan along with the rest of the participants of the ",
+      "tail": "\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[3]/url[1]",
+      "tag": "url",
+      "attributes": {
+        "href": "https://groups.google.com/g/pretext-support",
+        "visual": "groups.google.com/g/pretext-support"
+      },
+      "children": [],
+      "own_text": "pretext-support group",
+      "tail": ".\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/acknowledgement[1]/p[4]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n      Finally, a thank you to the numerous students who have pointed out typos and made suggestions over the years, and a thanks in advance to those who will do so in the future.\n    ",
+      "tail": "\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]",
+      "tag": "preface",
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "preface"
+      },
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[2]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[3]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[4]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/attribution[1]"
+      ],
+      "own_text": "\n    ",
+      "tail": "\n\n\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[1]/q[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[1]/q[2]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[1]/q[3]"
+      ],
+      "own_text": "\n      This text aims to introduce select topics in discrete mathematics at a level appropriate for first- or second-year undergraduate math and computer science majors, especially those who intend to teach middle and high school mathematics.\n      The book began as a set of notes for the Discrete Mathematics course at the University of Northern Colorado.\n      This course serves both as a survey of the topics in discrete math and as the ",
+      "tail": "\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[1]/q[1]",
+      "tag": "q",
+      "attributes": {},
+      "children": [],
+      "own_text": "bridge",
+      "tail": " course for math majors, as UNC does not offer a separate "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[1]/q[2]",
+      "tag": "q",
+      "attributes": {},
+      "children": [],
+      "own_text": "introduction to proofs",
+      "tail": " course.\n      As this course has evolved to support our computer science major, so has the text.  The current version of the book is intended to support  inquiry-based teaching for understanding that is so crucial for future teachers, while also providing the necessary mathematical foundation and application-based motivation for computer science students.  While teaching the course in Spring 2024 using an early version of this edition, I was pleasantly surprised by how many students reported that they, for the first time, saw how useful math could be in the "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[1]/q[3]",
+      "tag": "q",
+      "attributes": {},
+      "children": [],
+      "own_text": "real world.",
+      "tail": "  I hope that this experience can be replicated in other classes using this text.\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[2]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[2]/em[1]"
+      ],
+      "own_text": "\n      This book is intended to be used in a class taught using problem-oriented or inquiry-based methods.  Each section begins with a preview of the content that includes an open-ended ",
+      "tail": "\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[2]/em[1]",
+      "tag": "em",
+      "attributes": {},
+      "children": [],
+      "own_text": "Investigate!",
+      "tail": " motivating question, as well as a structured preview activity.  The preview activities are carefully scaffolded to provide an entry-point to the section's topic and to prime students to engage deeply in the material.  \n      Depending on the pace of the class, I have found success assigning only the section preview before class, using the preview activity as in-class group work, or assigning the entire section to be read before class (each section concludes with a small set of reading questions that can be assigned to encourage students to actually read).  For those readers using this book for self-study, the organization of the sections will hopefully mimic the style of a rich inquiry-based classroom.\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[3]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[3]/q[1]"
+      ],
+      "own_text": "\n      The topics covered in this text were chosen to match the needs of the students I teach at UNC.\n      The main areas of study are logic and proof, graph theory, combinatorics, and sequences.\n      Induction is covered at the end of the chapter on sequences.  Discrete structures are introduced ",
+      "tail": "\n\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[3]/q[1]",
+      "tag": "q",
+      "attributes": {},
+      "children": [],
+      "own_text": "as needed",
+      "tail": ", but a more thorough treatment of sets and functions is included as a separate chapter, which can be studied independent of the other content.  The final chapter covers two additional topics: generating functions and number theory.\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[4]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/p[4]/pretext[1]"
+      ],
+      "own_text": "\n      While I believe this selection and order of topics is optimal, you should feel free to skip around to what interests you.\n      There are occasionally examples and exercises that rely on earlier material, but I have tried to keep these to a minimum, and they usually can either be skipped or understood without too much additional study.\n      If you are an instructor, you can also create a custom version by editing the ",
+      "tail": "\n\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/p[4]/pretext[1]",
+      "tag": "pretext",
+      "attributes": {},
+      "children": [],
+      "own_text": null,
+      "tail": " source to fit your needs.\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]",
+      "tag": "paragraphs",
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "pref_editions"
+      },
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/title[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[2]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[3]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/title[1]",
+      "tag": "title",
+      "attributes": {},
+      "children": [],
+      "own_text": "Improvements to the 4th Edition",
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]"
+      ],
+      "own_text": "\n        Many of the sections have been rewritten to improve the clarity of the exposition.  \n        ",
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]",
+      "tag": "ul",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[2]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[3]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]"
+      ],
+      "own_text": "\n          ",
+      "tail": "\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[1]",
+      "tag": "li",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[1]/p[1]"
+      ],
+      "own_text": "\n            ",
+      "tail": "\n\n          "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[1]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n              Nearly 300 new exercises, bringing the total to more than 750.  These are better divided into preview activity questions, reading questions, practice problems, and additional exercises. \n              Most of the new exercises are interactive for the online version.\n            ",
+      "tail": "\n          "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[2]",
+      "tag": "li",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[2]/p[1]"
+      ],
+      "own_text": "\n            ",
+      "tail": "\n\n          "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[2]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n              New sections on probability, relations, and discrete structures and their proofs.  Some other sections have been split up to make it more likely that a single class period can be devoted to a single topic.\n            ",
+      "tail": "\n          "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[3]",
+      "tag": "li",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[3]/p[1]"
+      ],
+      "own_text": "\n            ",
+      "tail": "\n\n          "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[3]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n              Improved presentation for the counting chapter with a focus on considering sets of outcomes more than following rules.\n            ",
+      "tail": "\n          "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]",
+      "tag": "li",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]/p[1]"
+      ],
+      "own_text": "\n            ",
+      "tail": "\n        "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]/p[1]/em[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]/p[1]/em[2]"
+      ],
+      "own_text": "\n              The ",
+      "tail": "\n          "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]/p[1]/em[1]",
+      "tag": "em",
+      "attributes": {},
+      "children": [],
+      "own_text": "Investigate!",
+      "tail": " activities of the 3rd Edition have been split into two types: "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[1]/ul[1]/li[4]/p[1]/em[2]",
+      "tag": "em",
+      "attributes": {},
+      "children": [],
+      "own_text": "Investigate!",
+      "tail": " questions and Preview Activities.  The former are open-ended questions designed to engage you with the topic soon to be discussed.  The latter are structured preview activities that you should be able to completely answer before reading the section.\n            "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[2]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n        The previous editions (3rd Edition, released in 2019, 2nd Edition, released in 2016, and the Fall 2015 Edition) will still be available for instructors who wish to use those versions due to familiarity.\n      ",
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/paragraphs[1]/p[3]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n        I plan to continue improving the book.  Some of this will happen in real-time by updating the online versions to include new content (numbering will remain consistent).  \n        Thus I encourage you to send along any suggestions and comments as you have them.\n      ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/attribution[1]",
+      "tag": "attribution",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[1]/attribution[1]/line[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[1]/attribution[1]/line[2]"
+      ],
+      "own_text": "\n    ",
+      "tail": "\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/attribution[1]/line[1]",
+      "tag": "line",
+      "attributes": {},
+      "children": [],
+      "own_text": "Oscar Levin, Ph.D.",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[1]/attribution[1]/line[2]",
+      "tag": "line",
+      "attributes": {},
+      "children": [],
+      "own_text": "University of Northern Colorado, 2024",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]",
+      "tag": "preface",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/title[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/p[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[2]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[4]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]"
+      ],
+      "own_text": "\n    ",
+      "tail": "\n  "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/title[1]",
+      "tag": "title",
+      "attributes": {},
+      "children": [],
+      "own_text": "How to Use This Book",
+      "tail": "\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n      In addition to expository text, this book has a few features designed to encourage you to interact with the mathematics.\n    ",
+      "tail": "\n\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[1]",
+      "tag": "paragraphs",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[1]/title[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[1]/p[1]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[1]/title[1]",
+      "tag": "title",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[1]/title[1]/em[1]"
+      ],
+      "own_text": null,
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[1]/title[1]/em[1]",
+      "tag": "em",
+      "attributes": {},
+      "children": [],
+      "own_text": "Investigate!",
+      "tail": " questions"
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[1]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n        Sprinkled throughout the sections (usually at the very beginning of a topic) you will find open-ended questions designed to engage you with the topic soon to be discussed.\n        You really should spend some time thinking about, or even working through, these problems before reading the section.  However, don't worry if you cannot find a satisfying solution right away.  The goal is to pique your interest, so you will read what is next looking for answers.\n      ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[2]",
+      "tag": "paragraphs",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[2]/title[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[2]/p[1]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[2]/title[1]",
+      "tag": "title",
+      "attributes": {},
+      "children": [],
+      "own_text": "Preview Activities",
+      "tail": "\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[2]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n        Most sections include a structured preview activity.  These contain leading questions that you should be able to completely answer before reading the section.  The idea is that the questions prime you to engage meaningfully with the new content ahead.  If you are using the online version, most of these questions will provide you with immediate feedback so you can be confident moving forward.\n      ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]",
+      "tag": "paragraphs",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]/title[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]/p[1]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]/title[1]",
+      "tag": "title",
+      "attributes": {},
+      "children": [],
+      "own_text": "Examples",
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]/p[1]/q[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]/p[1]/em[1]"
+      ],
+      "own_text": "\n        I have tried to include the ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]/p[1]/q[1]",
+      "tag": "q",
+      "attributes": {},
+      "children": [],
+      "own_text": "correct",
+      "tail": " number of examples.\n        For those examples that include "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[3]/p[1]/em[1]",
+      "tag": "em",
+      "attributes": {},
+      "children": [],
+      "own_text": "problems",
+      "tail": ", full solutions are included.\n        Before reading the solution, try to at least have an understanding of what the problem is asking.\n        Unlike some textbooks, the examples are not meant to be all-inclusive for problems you will see in the exercises.\n        They should not be used as a blueprint for solving other problems.\n        Instead, use the examples to deepen your understanding of the concepts and techniques discussed in each section.\n        Then use this understanding to solve the exercises at the end of each section.\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[4]",
+      "tag": "paragraphs",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[4]/title[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[4]/p[1]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n\n\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[4]/title[1]",
+      "tag": "title",
+      "attributes": {},
+      "children": [],
+      "own_text": "Exercises",
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[4]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[4]/p[1]/q[1]"
+      ],
+      "own_text": "\n        You get good at math through practice.\n        Each section concludes with practice problems meant to solidify concepts and basic skills presented in that section; the online version provides immediate feedback on these problems.  There are then additional exercises that are more challenging and open-ended.  These might be assigned as written homework or used in class as group work.  Some of the additional exercises have hints or solutions in the back of the book, but use these as little as possible.  Struggle is good for you.  \n        At the end of each chapter, a larger collection of similar exercises is included (as a sort of ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[4]/p[1]/q[1]",
+      "tag": "q",
+      "attributes": {},
+      "children": [],
+      "own_text": "chapter review",
+      "tail": ") which might bridge the material of different sections in that chapter.\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]",
+      "tag": "paragraphs",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/title[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[2]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[3]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[4]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/sidebyside[1]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n    "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/title[1]",
+      "tag": "title",
+      "attributes": {},
+      "children": [],
+      "own_text": "Interactive Online Version",
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[1]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n        For those of you reading this in print or as a PDF, I encourage you to also check out the interactive online version.  Many of the preview activities and exercises are interactive and can give you immediate feedback.  Some of these have randomized components, allowing you to practice many similar versions of the same problems until you master the topic.\n      ",
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[2]",
+      "tag": "p",
+      "attributes": {},
+      "children": [],
+      "own_text": "\n        Hints and solutions to examples are also hidden away behind an extra click to encourage you to think about the problem before reading the solution.  There is a good search feature available as well, and the index has expandable links to see the content without jumping to the page immediately.  There is also a python scratch pad (the pencil icon) so you can try out some code if you feel so inclined.\n      ",
+      "tail": "\n\n        "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[3]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[3]/q[1]"
+      ],
+      "own_text": "\n        Additional interactivity is planned.\n        These ",
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[3]/q[1]",
+      "tag": "q",
+      "attributes": {},
+      "children": [],
+      "own_text": "bonus",
+      "tail": " features will be added on a rolling basis, so keep an eye out!\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[4]",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[4]/url[1]"
+      ],
+      "own_text": "\n        You can view the interactive version for free at ",
+      "tail": "\n\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/p[4]/url[1]",
+      "tag": "url",
+      "attributes": {
+        "href": "https://discrete.openmathbooks.org/",
+        "visual": "discrete.openmathbooks.org"
+      },
+      "children": [],
+      "own_text": null,
+      "tail": " or by scanning the QR code below.\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/sidebyside[1]",
+      "tag": "sidebyside",
+      "attributes": {
+        "width": "25%"
+      },
+      "children": [
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/sidebyside[1]/shortdescription[1]",
+        "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/sidebyside[1]/image[1]"
+      ],
+      "own_text": "\n      ",
+      "tail": "\n      "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/sidebyside[1]/shortdescription[1]",
+      "tag": "shortdescription",
+      "attributes": {},
+      "children": [],
+      "own_text": "QR Code to https://discrete/openmathbooks.org",
+      "tail": "\n        "
+    },
+    {
+      "path": "/pretext/book[1]/frontmatter[1]/preface[2]/paragraphs[5]/sidebyside[1]/image[1]",
+      "tag": "image",
+      "attributes": {
+        "source": "images/qrcode.png"
+      },
+      "children": [],
+      "own_text": null,
+      "tail": "\n      "
+    }
+  ],
+  "source_active_tree_sha256": "1f3fdd250a78543f347e7f7b82bc147dffe5fe48b08a6cf5a8be7cb2f77abaae",
+  "active_tag_counts": {
+    "pretext": 2,
+    "docinfo": 1,
+    "brandlogo": 1,
+    "document-id": 1,
+    "blurb": 1,
+    "macros": 1,
+    "latex-image-preamble": 1,
+    "{http://www.w3.org/2001/XInclude}include": 1,
+    "rename": 4,
+    "cross-references": 1,
+    "book": 1,
+    "title": 8,
+    "subtitle": 1,
+    "frontmatter": 1,
+    "titlepage": 1,
+    "author": 1,
+    "personname": 1,
+    "department": 1,
+    "institution": 1,
+    "date": 1,
+    "colophon": 1,
+    "website": 1,
+    "url": 4,
+    "copyright": 1,
+    "year": 1,
+    "ndash": 1,
+    "holder": 1,
+    "shortlicense": 1,
+    "dedication": 1,
+    "p": 25,
+    "acknowledgement": 1,
+    "q": 8,
+    "preface": 2,
+    "em": 5,
+    "paragraphs": 6,
+    "ul": 1,
+    "li": 4,
+    "attribution": 1,
+    "line": 2,
+    "sidebyside": 1,
+    "shortdescription": 1,
+    "image": 1
+  },
+  "frontmatter_tag_counts": {
+    "frontmatter": 1,
+    "titlepage": 1,
+    "author": 1,
+    "personname": 1,
+    "department": 1,
+    "institution": 1,
+    "date": 1,
+    "colophon": 1,
+    "website": 1,
+    "url": 4,
+    "copyright": 1,
+    "year": 1,
+    "ndash": 1,
+    "holder": 1,
+    "shortlicense": 1,
+    "dedication": 1,
+    "p": 25,
+    "acknowledgement": 1,
+    "q": 8,
+    "preface": 2,
+    "em": 5,
+    "pretext": 1,
+    "paragraphs": 6,
+    "title": 7,
+    "ul": 1,
+    "li": 4,
+    "attribution": 1,
+    "line": 2,
+    "sidebyside": 1,
+    "shortdescription": 1,
+    "image": 1
+  },
+  "original_urls": [
+    {
+      "source_url_id": "u1",
+      "source_key": "frontmatter.ptx#/frontmatter/colophon[1]/website[1]/url[1]",
+      "attributes": {
+        "href": "http://discrete.openmathbooks.org/",
+        "visual": "discrete.openmathbooks.org"
+      },
+      "text": "",
+      "parent_path": "/frontmatter/colophon[1]/website[1]"
+    },
+    {
+      "source_url_id": "u2",
+      "source_key": "frontmatter.ptx#/frontmatter/colophon[1]/copyright[1]/shortlicense[1]/url[1]",
+      "attributes": {
+        "href": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "visual": "creativecommons.org/licenses/by-nc-sa/4.0"
+      },
+      "text": "",
+      "parent_path": "/frontmatter/colophon[1]/copyright[1]/shortlicense[1]"
+    },
+    {
+      "source_url_id": "u3",
+      "source_key": "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[3]/url[1]",
+      "attributes": {
+        "href": "https://groups.google.com/g/pretext-support",
+        "visual": "groups.google.com/g/pretext-support"
+      },
+      "text": "pretext-support group",
+      "parent_path": "/frontmatter/acknowledgement[1]/p[3]"
+    },
+    {
+      "source_url_id": "u4",
+      "source_key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[4]/url[1]",
+      "attributes": {
+        "href": "https://discrete.openmathbooks.org/",
+        "visual": "discrete.openmathbooks.org"
+      },
+      "text": "",
+      "parent_path": "/frontmatter/preface[2]/paragraphs[5]/p[4]"
+    }
+  ],
+  "images": [
+    {
+      "id": "cover4",
+      "source_key": "bookinfo.ptx#/docinfo/brandlogo[1]",
+      "source_attributes": {
+        "url": "http://discrete.openmathbooks.org/dmoi4.html",
+        "source": "images/cover4.png"
+      },
+      "local_path": "downloads/upstream/discrete-book/assets/images/cover4.png",
+      "repository_path": "assets/images/cover4.png",
+      "sha256": "e6cb97c02b6be3d53964e971661684d806b3fb04941d028c1dd3743bb5d28870",
+      "bytes": 11971,
+      "width": 100,
+      "height": 142,
+      "git_blob_sha1": "b56b2fd014c80d53b2bd461886afbe2d51bcd457",
+      "planned_reader_path": "assets/b10/cover4.png",
+      "source_alt": null,
+      "source_alt_owner": null,
+      "copied": false
+    },
+    {
+      "id": "qrcode",
+      "source_key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/sidebyside[1]/image[1]",
+      "source_attributes": {
+        "source": "images/qrcode.png"
+      },
+      "local_path": "downloads/upstream/discrete-book/assets/images/qrcode.png",
+      "repository_path": "assets/images/qrcode.png",
+      "sha256": "25ac46ed89c1547d707f6aff76d0e9c338ea7eb51efe4d077e19be0b6aea183e",
+      "bytes": 3576,
+      "width": 200,
+      "height": 200,
+      "git_blob_sha1": "38167af8a3404bd558d9e269e65ff07bb47a2e1a",
+      "planned_reader_path": "assets/b10/qrcode.png",
+      "source_alt": "QR Code to https://discrete/openmathbooks.org",
+      "source_alt_owner": "sidebyside",
+      "copied": false
+    }
+  ],
+  "retained_metadata": {
+    "book_xml_id": "dmoi4",
+    "document_id": "dmoi-4",
+    "author": "Oscar Levin",
+    "department": "Mathematical Sciences",
+    "institution": "University of Northern Colorado",
+    "date": "Fall 2024",
+    "copyright_year": "2013–2025",
+    "copyright_holder": "Oscar Levin",
+    "source_attribution_lines": [
+      "Oscar Levin, Ph.D.",
+      "University of Northern Colorado, 2024"
+    ],
+    "brandlogo_url": "http://discrete.openmathbooks.org/dmoi4.html",
+    "cross_references": {
+      "text": "type-global"
+    },
+    "rename_elements": [
+      "investigation",
+      "assemblage",
+      "inlineexercise",
+      "aside"
+    ],
+    "rename_source_lang": "en-US",
+    "opaque_blocks": [
+      "docinfo/macros",
+      "docinfo/latex-image-preamble"
+    ],
+    "policy": "Keep all source metadata in witness/manifest. The reader may provide translated prose labels but must not relabel them as original source attributes or discard author/date/edition/credit fields."
+  },
+  "mixed_content": {
+    "source_key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]",
+    "ordered_slots": [
+      "translated own text",
+      "{{child:0}}"
+    ],
+    "child_tag": "ul",
+    "child_count": 1,
+    "list_items": 4,
+    "policy": "Render a valid paragraph-equivalent div or split paragraphs around the source list; do not nest a ul directly inside HTML p or flatten/duplicate the four list-item paragraphs. Source has no explicit line-break elements."
+  },
+  "renderer_contract": {
+    "urls": "Render u1 from exact source href/visual attributes once; u2/u3/u4 occur once each as data-source-url in translated blocks. Cover brandlogo URL is a fifth separate metadata link, not an extra frontmatter url node.",
+    "inline": "Keep all 8 q, 5 em, 1 pretext marker and copyright ndash bound to their source owners. No source m/me/MathML/table/footnote/exercise/figure/caption elements exist here. Document-root pretext must not be mistaken for the one inline pretext marker.",
+    "images": "Retain exact two canonical image byte streams, orientation, dimensions and distinct brandlogo-versus-sidebyside identity. QR shortdescription belongs to sidebyside, not image. Accessible overrides are original additions and must retain raw source shortdescription in data-source-alt or equivalent plus faithful translation and a visible original correction link/aria-describedby. No QR decoding has been performed.",
+    "ids": "Preserve four original xml:id values once in source order/ancestry. Any path-derived anchors are generated, never claimed as original IDs.",
+    "bidi": "RTL Punjabi with explicit LTR isolation for every ASCII numeral, English name/term and visible URL. URL-only source website must also be LTR; no automatic mirroring of images.",
+    "source_and_original": "bridge_before_html and bridge_after_html are separate labeled original siblings, not part of translated source. Raw metadata/licensing/resource claims remain source-attributed; no local interactive runtime, legal verification or present availability is promised."
+  },
+  "source_claim_owners": [
+    "bookinfo.ptx#/docinfo/blurb[1]",
+    "frontmatter.ptx#/frontmatter/colophon[1]/copyright[1]/shortlicense[1]",
+    "frontmatter.ptx#/frontmatter/acknowledgement[1]/p[3]",
+    "frontmatter.ptx#/frontmatter/preface[1]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[1]/p[4]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[2]",
+    "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[3]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[2]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[4]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[1]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[2]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[3]",
+    "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[4]"
+  ],
+  "punctuation_relocations": [
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/p[1]",
+      "source": "<q>real world.</q>",
+      "target": "<q>اصل دنیا</q> ... اے۔",
+      "reason": "Punjabi clause puts the predicate after the quoted noun phrase; source final period is represented by sentence-final Urdu full stop, outside q. No formula altered."
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[2]",
+      "source": "Parenthesized list of previous editions",
+      "target": "Em-dash-delimited list with semicolons",
+      "reason": "Readable Punjabi edition/date enumeration; digit order unchanged."
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[3]",
+      "source": "(numbering will remain consistent)",
+      "target": "; نمبر بندی اوہو رہے گی۔",
+      "reason": "Parenthetical assurance becomes a clause; remains Oscar's source claim."
+    },
+    {
+      "key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[4]/p[1]",
+      "source": "(as a sort of <q>chapter review</q>)",
+      "target": "<q>باب دی دہرائی</q> دی اک صورت وجوں",
+      "reason": "Same qualification incorporated into Punjabi sentence order."
+    }
+  ],
+  "comparison_differences": [
+    "Indonesian frontmatter adds two colophon paragraphs/two URLs (independence/source commit and DOI), redirects the final online-version URL and replaces the QR image. These are comparison-edition additions, not English source paragraphs.",
+    "Indonesian bookinfo adds initialism Discrete_Mathematics for compatibility and localizes rename labels; do not import it as English-source metadata."
+  ],
+  "source_discrepancies": [
+    {
+      "id": "B10-FM-QR-001",
+      "source_key": "frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/sidebyside[1]/shortdescription[1]",
+      "finding": "Source shortdescription malformed URL differs from adjacent canonical URL; QR payload not decoded.",
+      "treatment": "Faithful translated source shortdescription retained; original conservative image alt does not assert destination; visible original note required."
+    }
+  ],
+  "existing_notice_policy": {
+    "status": "Retain the already audited B10 work/component policy; no new supply/license audit or image-specific clearance decision.",
+    "work_level": "Existing Indonesian LICENSE explicitly follows active fourth-edition CC BY-NC-SA 4.0 frontmatter while retaining stale upstream root BY-SA 4.0 discrepancy.",
+    "authors_and_nonendorsement": "Identify Oscar Levin and the English fourth edition; identify changes; no endorsement by Oscar Levin or University of Northern Colorado.",
+    "components": "Retain THIRD_PARTY_NOTICES for WeBWorK OPL and PreTeXt/Runestone software when those components are actually used. The proposed chapter contains zero WeBWorK elements; do not import the entire OPL for it.",
+    "publication_claims": "The comparison README's complete-book/613-page/243-WeBWorK claims describe the Indonesian release, not the future Punjabi opening.",
+    "notice_inputs": [
+      {
+        "path": "languages/pnb-Arab-PK/provenance/upstream--discrete-book/README.md",
+        "raw_sha256": "fd127161b2b13127102ae8f915d8ad39b61719b40fe24ec179087de20fddfa80",
+        "logical_lf_sha256": "fd127161b2b13127102ae8f915d8ad39b61719b40fe24ec179087de20fddfa80"
+      },
+      {
+        "path": "languages/pnb-Arab-PK/provenance/upstream--discrete-book/LICENSE",
+        "raw_sha256": "e1cd4008924dcbef0964c59284648bd97ae640077e1137014d23db1f61838e64",
+        "logical_lf_sha256": "323c591067d0e840eeac90828eb1862af612b8be24781a2c48109ac4938ee337"
+      },
+      {
+        "path": "languages/pnb-Arab-PK/provenance/discrete-mathematics-open-introduction-id/README.md",
+        "raw_sha256": "a6f32096a6c57a48f06f4e10eb91f6e8214584cc5ab780a3d2e010dd2db9c462",
+        "logical_lf_sha256": "a6f32096a6c57a48f06f4e10eb91f6e8214584cc5ab780a3d2e010dd2db9c462"
+      },
+      {
+        "path": "languages/pnb-Arab-PK/provenance/discrete-mathematics-open-introduction-id/LICENSE",
+        "raw_sha256": "7e544e0509f70e951b6f811a18e8432163c1a7db2b099c91d1337e251d85c057",
+        "logical_lf_sha256": "7e544e0509f70e951b6f811a18e8432163c1a7db2b099c91d1337e251d85c057"
+      },
+      {
+        "path": "languages/pnb-Arab-PK/provenance/discrete-mathematics-open-introduction-id/THIRD_PARTY_NOTICES.md",
+        "raw_sha256": "e3779ab66e4a9644e7ca4e4322af39b0ea008ef584a425561b336af1411450a4",
+        "logical_lf_sha256": "e3779ab66e4a9644e7ca4e4322af39b0ea008ef584a425561b336af1411450a4"
+      }
+    ]
+  },
+  "canon_receipts": [
+    "languages/pnb-Arab-PK/canon/receipts/B10-frontmatter-draft-20260831T002909950384Z.json",
+    "languages/pnb-Arab-PK/canon/receipts/B10-frontmatter-revision-20260831T004025203508Z.json",
+    "languages/pnb-Arab-PK/canon/receipts/B10-frontmatter-qa-20260831T004507464330Z.json"
+  ],
+  "whole_assignment_complete": false,
+  "translation_workflow_status": "Complete 50-block source draft, canon-based self-revision and source-bound input QA. No build, asset copy or browser/native review in this task; full B10 and the five-work assignment remain active."
+}
