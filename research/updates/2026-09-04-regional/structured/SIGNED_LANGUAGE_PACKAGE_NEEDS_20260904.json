@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "title": "Signed-language educational-package needs: five distinct profiles",
+  "evidence_cutoff": "2026-09-04",
+  "scope": "Bounded primary-source comparison for a worldwide educational-access paper; not a rank, allocation, translation or publication.",
+  "report": "agent_reports/SIGNED_LANGUAGE_PACKAGE_NEEDS_20260904.md",
+  "all_profiles_eligible_stages": ["foundation", "secondary", "practical_vocational", "university", "research"],
+  "inspection_contract": {
+    "performed": ["provider lesson and resource-index inspection", "selected original research and kit-content documents", "primary census/survey definitions", "embedded video identity inspection"],
+    "not_performed": ["independent linguistic assessment of signed performances", "large media downloads", "new population estimation", "learning-effect estimation", "complete worldwide provision census"],
+    "absence_rule": "A blank index cell or failed retrieval is not global absence.",
+    "human_dependent_gate": false,
+    "unknown_is_zero": false
+  },
+  "profiles": [
+    {
+      "id": "asl",
+      "language": "American Sign Language",
+      "territory_frame": "United States sources; no claim to enumerate Canadian or other ASL communities",
+      "language_population": null,
+      "population_evidence": [{"source": "US_CENSUS", "observation": "ACS language questions do not identify ASL users", "year": null, "usable_as_language_population": false}],
+      "population_inference": "Unknown total and unknown stage-specific sign-using learners; hearing disability and English-at-home data are not substitute counts.",
+      "existing_provision": [
+        {"sources": ["DEAFTEC_EQ"], "kind": "lessons_with_external_practice", "verified_scope": "One-variable equations, fractions, grouping symbols; four linked practice types", "inspection": "actual lesson page", "limitations": ["practice depends on another service", "offline completeness unverified", "not a fluency assessment"]},
+        {"sources": ["ASLCORE_CS", "ASLCORE_REPO"], "kind": "technical_lexicon", "verified_scope": "Computing concepts and individual Repository video entry", "inspection": "branch contents and entry", "limitations": ["not verified as a complete course", "all-rights-reserved notice"]},
+        {"sources": ["EVERYDAY_ASL"], "kind": "paid_downloadable_film_collection", "verified_scope": "Eleven mathematics films, including word problems, calculus and statistics", "inspection": "producer contents", "limitations": ["full exercise/answer curriculum unverified"]},
+        {"sources": ["ASL_STEM_WIKI"], "kind": "research_corpus_and_bilingual_articles", "verified_scope": "254 articles, including 26 mathematics articles, and over 300 video hours", "inspection": "original paper sections 3 and datasheet", "limitations": ["research-use licence", "interpreted English, not representative ASL-first discourse", "not a sequenced textbook"]}
+      ],
+      "packages": [
+        {
+          "id": "ASL-A",
+          "title": "Algebra-to-functions complete self-study course",
+          "stages": ["secondary", "university", "practical_vocational"],
+          "learner_group": "ASL-using secondary pupils, returning adults and college entrants unable to study the subject comfortably through English alone",
+          "units": ["equations", "ratio", "coordinate graphs", "systems", "polynomials", "functions"],
+          "full_route": "Signed conceptual sequence, exact notation, worked examples, local exercises and answers",
+          "smaller_route": "Offline practice and answer companion to usable existing DeafTEC explanations",
+          "mechanism": "Connect conceptual explanation to independent application without fragmented navigation or connectivity",
+          "counterevidence_sources": ["DEAFTEC_EQ", "EVERYDAY_ASL"],
+          "comparison": "Full course if prerequisite or signed problem explanation remains missing; companion if practice/offline access is the binding difference",
+          "additionality_status": "plausible_conditional_not_measured"
+        },
+        {
+          "id": "ASL-B",
+          "title": "Executable computing and proof-reading modules",
+          "stages": ["practical_vocational", "university", "research"],
+          "learner_group": "ASL-using IT learners, computing undergraduates and beginning research readers",
+          "units": ["variables and functions", "recursion", "assertions", "tests", "complexity", "proof and counterexample"],
+          "full_route": "Complete introductory course with runnable examples and contextual signed explanation",
+          "smaller_route": "Contextual sign references, missing worked examples and answer rationales around an existing course",
+          "mechanism": "Technical terms acquire meaning through operations and proof structure, not dictionary lookup alone",
+          "counterevidence_sources": ["ASLCORE_CS", "ASL_STEM_WIKI"],
+          "comparison": "Compare contextual gaps and permitted reuse; corpus size is not complete course coverage",
+          "additionality_status": "plausible_conditional_not_measured"
+        }
+      ],
+      "stage_candidates": {
+        "foundation": "Complete arithmetic/word-problem course for late-access learners; existing elementary videos weaken generic duplication",
+        "secondary": "ASL-A",
+        "practical_vocational": "ASL-A or ASL-B according to actual course prerequisite",
+        "university": "ASL-A or ASL-B",
+        "research": "ASL-B proof/counterexample and technical reading modules; existing interpreted STEM articles are counterevidence"
+      },
+      "modalities": {"sign": "ASL, with source variety preserved", "text": "English terminology and bilingual support, not an assumed adequate substitute", "mathml": "exact mathematical structure", "offline": "full clips, indexes, exercises and rendering must be local; paid download route exists but reuse rights differ", "ai": "ASL-to-English server-based input exists; no verified complete autonomous signed lesson-production route in inspected sources"}
+    },
+    {
+      "id": "libras",
+      "language": "Língua Brasileira de Sinais (Libras)",
+      "territory_frame": "Brazil",
+      "language_population": null,
+      "population_evidence": [
+        {"source": "BR_PNS", "year": 2019, "measure": "knows how to use Libras", "age_min": 5, "age_max": 40, "frame": "respondents reporting at least some permanent hearing difficulty", "approximate_count": 153000, "percent": 9.2, "percent_ci95": [7.3, 11.6], "usable_as_language_population": false, "usable_as_observed_subgroup": true},
+        {"source": "BR_RELEASE", "year": 2019, "age_min": 5, "age_max": 40, "frame": "a lot of hearing difficulty or unable to hear", "percent_knowing_libras": 22.4, "usable_as_language_population": false}
+      ],
+      "population_inference": "Subgroup estimate excludes hearing signers and other ages; neither knowledge nor its survey interval establishes academic usability. Do not multiply its rate by all-age hearing-disability totals.",
+      "existing_provision": [
+        {"sources": ["MATHLIBRAS_2019", "MATHLIBRAS_2025"], "kind": "bilingual_visual_math_videos", "verified_scope": "Child-facing addition/subtraction and fraction operator examples; teacher-facing classification series distinguished", "inspection": "original production report and March 2025 content analysis with actual lesson V67", "limitations": ["no independent playback assessment", "no measured self-study effect", "complete answer/offline coverage unverified"]},
+        {"sources": ["INES_PRODUCTS"], "kind": "institutional_products", "verified_scope": "2026 basic mathematics booklet, numeric-sign materials and scientific-work manual listed", "inspection": "dated institutional catalogue", "limitations": ["booklet internals uninspected", "not evidence of full statistics coverage"]}
+      ],
+      "packages": [
+        {
+          "id": "LIB-A",
+          "title": "Fraction-to-ratio visual course",
+          "stages": ["foundation", "secondary", "practical_vocational"],
+          "learner_group": "Libras-using older primary pupils, secondary catch-up learners and adults applying quantities at work",
+          "units": ["part-whole and number line", "equivalence", "operations", "fraction as operator", "ratio and proportion", "measurement applications"],
+          "full_route": "Integrated explanations, contrasting worked problems, progressive practice and answers",
+          "smaller_route": "Practice and answer sequence linked to usable MathLibras lessons",
+          "mechanism": "Build cumulative quantitative understanding and independent checking",
+          "counterevidence_sources": ["MATHLIBRAS_2019", "MATHLIBRAS_2025", "INES_PRODUCTS"],
+          "comparison": "Substantial existing fractions provision weakens fresh disconnected explanations; full course remains conditional on sequence/practice/offline differences",
+          "additionality_status": "plausible_conditional_not_measured"
+        },
+        {
+          "id": "LIB-B",
+          "title": "Bilingual research-data practicum",
+          "stages": ["university", "research"],
+          "learner_group": "Libras-using university entrants and novice researchers interpreting data and uncertainty",
+          "units": ["data dictionaries", "descriptive summaries", "graphs", "sampling", "uncertainty", "reproducible notebook"],
+          "full_route": "Datasets, code, signed concepts, worked analyses and answer rationales",
+          "smaller_route": "Probability and uncertainty concept/interpretation additions to an existing course",
+          "mechanism": "Connect academic data interpretation to executable and explainable analysis",
+          "counterevidence_sources": ["INES_PRODUCTS"],
+          "comparison": "Academic products exist; complete independent statistics sequence and its absence globally are both unestablished",
+          "additionality_status": "specific_but_weaker_evidence_than_school_comparison"
+        }
+      ],
+      "stage_candidates": {"foundation": "LIB-A and distinct language/number foundations where needed", "secondary": "LIB-A", "practical_vocational": "LIB-A measurement applications", "university": "LIB-B", "research": "LIB-B"},
+      "modalities": {"sign": "Libras", "text": "written Portuguese as bilingual support", "mathml": "notation and structure, not signed grammar", "offline": "video/caption access not implied by PDF or YouTube link", "ai": "VLibras offers automatic avatars but its provider advises against replacement use in classes/courses"}
+    },
+    {
+      "id": "isl",
+      "language": "Indian Sign Language",
+      "territory_frame": "India; written-language repertoire must not be inferred from territory",
+      "language_population": null,
+      "population_evidence": [{"source": "ISLRTC_HISTORY", "year": 2011, "approximate_count": 5000000, "frame": "deaf persons as cited by ISLRTC from Census 2011", "usable_as_language_population": false}],
+      "population_inference": "Historical disability context only; sign proficiency and stage-specific learner totals unknown.",
+      "existing_provision": [
+        {"sources": ["ISL_NCERT", "ISL_MATH"], "kind": "school_textbook_and_concept_videos", "verified_scope": "NCERT Classes I-VI advertised; actual maths page embeds Class VI and VII videos", "inspection": "provider page and embedded identities", "example_ids": ["v4Msfk4kDQo", "DxR6Ou6_wHQ"], "limitations": ["playback throttled", "topic contents and self-check answers uninspected", "not verified complete national curriculum"]},
+        {"sources": ["NIOS_ENGLISH"], "kind": "secondary_mixed_media_course", "verified_scope": "English 202 lessons with PDFs, signed links, learner guides and worksheets; several later signed-video cells blank", "inspection": "actual rows 1-27", "limitations": ["blank cell is only inspected-index omission", "not subject mathematics provision", "full video coverage and linguistic accuracy not assessed"]}
+      ],
+      "packages": [
+        {
+          "id": "ISL-A",
+          "title": "Secondary quantitative-continuity course",
+          "stages": ["secondary", "practical_vocational"],
+          "learner_group": "ISL-using adolescents and adult school-returners progressing beyond early NCERT resources",
+          "units": ["proportional reasoning", "algebra", "graphs", "geometry and measurement", "probability", "data interpretation"],
+          "full_route": "Cumulative subject course with signed problems, explanation, worked practice and answers",
+          "smaller_route": "Exercise/answer and exact explanatory gap additions to existing concept videos",
+          "mechanism": "Continuity beyond already available school content",
+          "counterevidence_sources": ["ISL_NCERT", "ISL_MATH"],
+          "comparison": "Class VII is already represented; VIII-X coverage remains unestablished, not absent by default",
+          "additionality_status": "plausible_conditional_not_measured"
+        },
+        {
+          "id": "ISL-B",
+          "title": "Programming-entry course",
+          "stages": ["practical_vocational", "university", "research"],
+          "learner_group": "ISL-using vocational and first-year university learners, with an optional methods unit for beginning researchers",
+          "units": ["files and input-output", "variables", "control flow", "functions", "debugging and tests", "small data tables"],
+          "full_route": "Self-contained conceptual sequence, executable examples and answers",
+          "smaller_route": "Signed navigation and contextual explanation for a usable existing text course",
+          "mechanism": "Connect programming notation to conceptual instruction without assuming English/Hindi comfort",
+          "counterevidence_sources": ["NIOS_ENGLISH"],
+          "comparison": "NIOS demonstrates mixed-media architecture, not programming coverage or transported learning effects",
+          "additionality_status": "specific_but_advanced_provision_and_reach_unidentified"
+        }
+      ],
+      "stage_candidates": {"foundation": "Complete accessible route through NCERT lessons; new beginning course remains eligible for late-access learners", "secondary": "ISL-A", "practical_vocational": "ISL-A or ISL-B", "university": "ISL-B", "research": "ISL-B methods/notebook unit; exact audience and alternatives unknown"},
+      "modalities": {"sign": "ISL, not signed Hindi or universal sign", "text": "actual learner's written-language repertoire; English technical labels where needed", "mathml": "exact symbols and structure", "offline": "existing embeds do not establish downloadable complete courses", "ai": "mechanical content assembly feasible; no validated end-to-end ISL advanced lesson generator established by inspected evidence"}
+    },
+    {
+      "id": "ksl_kenya",
+      "language": "Kenyan Sign Language",
+      "territory_frame": "Kenya; separate from other African sign languages and Korean KSL",
+      "language_population": null,
+      "population_evidence": [{"source": "KNBS_2020", "year": 2019, "count": 153361, "age_min": 5, "frame": "hearing disability category", "usable_as_language_population": false}],
+      "population_inference": "Unknown sign-user and stage-specific totals; hearing-disability count is context only.",
+      "existing_provision": [
+        {"sources": ["STUDIO_KSL", "KSL_EPISODES", "KSL_BROADCAST", "KSL_SEASON2"], "kind": "signed_story_learning_programme", "verified_scope": "Stories, vocabulary, comprehension questions, quizzes and identified episodes 026/009/011/022", "inspection": "actual provider episode index plus provider format descriptions", "example_video_id": "RZaL5Juz2fw", "limitations": ["performance playback throttled", "337-item headline covers six sign languages, not KSL alone", "viewership is not unique sign-user population or learning effect"]},
+        {"sources": ["EKITABU_OFFLINE"], "kind": "ebook_offline_reader", "verified_scope": "General offline ebook capability", "inspection": "provider support documentation", "limitations": ["does not establish offline availability of each signed video"]},
+        {"sources": ["KICD_KSL7"], "kind": "school_language_curriculum", "verified_scope": "Grade 7 KSL design", "inspection": "curriculum scope", "limitations": ["not proof of a signed mathematics course"]},
+        {"sources": ["KSL_DATASET"], "kind": "local_research_baseline", "verified_scope": "Kenyan sign dataset study", "inspection": "original study abstract", "limitations": ["not proof of autonomous translation or learning effects"]}
+      ],
+      "packages": [
+        {
+          "id": "KSL-A",
+          "title": "Complete early bilingual literacy pathway",
+          "stages": ["foundation"],
+          "learner_group": "Primary children and late entrants acquiring KSL and written English or Kiswahili",
+          "units": ["event matching", "sequence", "questions", "comparison", "inference", "retelling"],
+          "full_route": "Story-based course with replayable signing, illustrated print and answer explanations",
+          "smaller_route": "Sequenced practice/answer booklet with stable existing-episode links",
+          "mechanism": "Connect receptive language and comprehension practice into a usable progression",
+          "counterevidence_sources": ["STUDIO_KSL", "KSL_EPISODES", "KSL_SEASON2"],
+          "comparison": "A generic new story collection is weakly additional; full offline course competes on actual local media and quiz availability",
+          "additionality_status": "plausible_conditional_not_measured"
+        },
+        {
+          "id": "KSL-B",
+          "title": "Practical numeracy and digital records",
+          "stages": ["secondary", "practical_vocational"],
+          "learner_group": "KSL-using secondary catch-up and vocational learners",
+          "units": ["money and change", "quantities", "unit conversion", "measurement", "tables", "spreadsheet records"],
+          "full_route": "Coherent explanations, everyday tasks and worked self-checks",
+          "smaller_route": "Task-specific signed interpretation and answers around existing resources",
+          "mechanism": "Connect quantities to practical record keeping and independent checking",
+          "counterevidence_sources": ["STUDIO_KSL", "KICD_KSL7"],
+          "comparison": "Literacy provision and a language curriculum neither establish nor disprove a complete practical numeracy course",
+          "additionality_status": "specific_subject_hypothesis_with_unknown_global_provision"
+        }
+      ],
+      "stage_candidates": {"foundation": "KSL-A", "secondary": "KSL-B", "practical_vocational": "KSL-B", "university": "Corpus/data-methods reader: annotation, sampling, train/test separation, errors, uncertainty and reporting", "research": "Same bounded reproducible methods reader using local KSL research baseline; target population unknown"},
+      "modalities": {"sign": "Kenyan Sign Language explicitly identified", "text": "English/Kiswahili as differentiated bilingual supports", "mathml": "numeracy and statistical notation", "offline": "verify actual video and quiz assets, not app install alone", "ai": "local dataset/assessment research is not validated full-course generation; Korean KSL benchmarks are inapplicable"}
+    },
+    {
+      "id": "sasl",
+      "language": "South African Sign Language",
+      "territory_frame": "South Africa; preserve source labels when some linked literature examples say ASL",
+      "language_population": null,
+      "population_evidence": [{"source": "SASL_CENSUS", "years": [2011, 2022], "percents": [0.5, 0.02], "age_min": 1, "frame": "generic Sign language category, language spoken most often in household", "usable_as_language_population": false, "comparability": "large unexplained discrepancy; no collapse-of-need inference"}],
+      "population_inference": "No conversion to user counts; most-often household language is not individual proficiency or exact variety.",
+      "existing_provision": [
+        {"sources": ["SLED_KITS", "SLED_SHOP"], "kind": "multi_component_curriculum_kits", "verified_scope": "SASL stories, activities, books/DVDs, workbook/teacher guide and FET bridge", "inspection": "two-page detailed brochure and actual shop sample entries", "limitations": ["primarily teacher-mediated language/literature", "paid supply does not prove universal home access", "not a mathematics curriculum"]},
+        {"sources": ["DBE_SASL", "DBE_MATH_PLAN"], "kind": "secondary_revision_and_lesson_plans", "verified_scope": "2018 spring-school resources in Mathematical Literacy, English FAL and SASL HL", "inspection": "actual provider index; 59-page mathematical-literacy PDF identity resolved", "limitations": ["internal PDF coverage uninspected after timeout", "some literature labels explicitly ASL"]},
+        {"sources": ["EDEAF"], "kind": "SASL_delivered_training_and_information_videos", "verified_scope": "AET/FLC, IT/retail and work-readiness routes", "inspection": "provider learner hub and topic lists", "limitations": ["campus support and programme access not equivalent to open self-study", "marketing assertions are not causal evidence"]}
+      ],
+      "packages": [
+        {
+          "id": "SASL-A",
+          "title": "Matric mathematical-literacy course",
+          "stages": ["secondary", "practical_vocational"],
+          "learner_group": "SASL-using secondary learners and adult qualification returners",
+          "units": ["proportional reasoning", "finance arithmetic", "measurement", "maps and scales", "data", "probability"],
+          "full_route": "Complete conceptual sequence with realistic tasks, notation and self-check answers",
+          "smaller_route": "Exam-practice additions to an already usable explanatory course",
+          "mechanism": "Provide independent subject progression when revision alone does not supply prerequisites",
+          "counterevidence_sources": ["DBE_SASL", "DBE_MATH_PLAN"],
+          "comparison": "Directly compare existing DBE resources; failed internal retrieval does not prove a gap",
+          "additionality_status": "plausible_conditional_not_measured"
+        },
+        {
+          "id": "SASL-B",
+          "title": "Digital-work and data-literacy course",
+          "stages": ["practical_vocational", "university", "research"],
+          "learner_group": "SASL-using vocational and university entrants; optional data/academic-writing extension for graduate readers",
+          "units": ["files", "task instructions", "spreadsheets", "formula checks", "graphs", "documenting results"],
+          "full_route": "Independent offline course with signed explanation and executable tasks",
+          "smaller_route": "Troubleshooting and answer pack around accessible existing teaching",
+          "mechanism": "Extend independent access beyond institutional training routes without claiming their accreditation or placement outcomes",
+          "counterevidence_sources": ["EDEAF"],
+          "comparison": "Existing SASL training materially weakens broad absence claims; geographical/institutional reach remains unknown",
+          "additionality_status": "plausible_conditional_not_measured"
+        }
+      ],
+      "stage_candidates": {"foundation": "Home-use sequence around SLED literature competes with a complete newly authored bilingual reading course", "secondary": "SASL-A", "practical_vocational": "SASL-A or SASL-B", "university": "SASL-B", "research": "Data interpretation/academic writing; exact advanced mathematics edition and global absence unverified"},
+      "modalities": {"sign": "SASL rather than automatically relabelled ASL examples", "text": "written-language support matched to learners", "mathml": "exact notation and spreadsheet/formula documentation", "offline": "DVD kits establish a non-streaming alternative, not unrestricted redistribution", "ai": "mechanical assembly and provisional labelled assistance feasible; reliable autonomous SASL teaching generation not established"}
+    }
+  ],
+  "production_evidence": [
+    {"sources": ["W3C_SIGN", "MATHML"], "finding": "Sign, captions, text and mathematical structure serve different roles; complete signing space and legibility must survive encoding", "not_supported": "MathML or written captions automatically confer signed-language comprehension"},
+    {"sources": ["SL2T"], "finding": "2026-08-12 ASL-to-English consumer input release; on-device landmarks with server translation", "not_supported": "Offline signing generation or proven coverage of all five languages", "limitations": ["rare signs", "fingerspelling", "classifiers", "tense"]},
+    {"sources": ["VLIBRAS"], "finding": "Automatic Portuguese-to-Libras support exists; provider advises against course/class replacement use", "not_supported": "Verified full educational translation"},
+    {"sources": ["SIGNLLM"], "finding": "Text/prompt-to-pose research with further video rendering; current page says model will not be open-sourced", "not_supported": "Ready unrestricted five-language autonomous textbook generator", "identity_caution": "KSL example is Korean, not Kenyan"}
+  ],
+  "conditional_comparison": {
+    "B_definition": "Stage-and-package-matched eligible population",
+    "q_definition": "Fraction newly gaining specified usable access; gross gains, not net access change or test scores",
+    "formula": "Compare B_F*q_F/C_F with B_S*q_S/C_S for full course F and smaller addition S",
+    "same_population_threshold": "For the same B and positive denominators, F exceeds S when q_F/q_S > C_F/C_S",
+    "effect_estimates": null,
+    "newly_comfortable_reader_counts": null,
+    "production_cost_estimates": null,
+    "exclusions": ["No test-score SD or translation benchmark converted to access probability", "No missing-language-population zero", "No universal sign language", "No human-dependent hold"]
+  },
+  "sources": [
+    {"id": "US_CENSUS", "url": "https://www.census.gov/topics/population/language-use/about/faqs.html", "date": "2021-12-16", "locator": "Does the Census Bureau provide the number of people who use American Sign Language (ASL)?", "type": "primary_statistical_agency", "access": "page_read"},
+    {"id": "BR_PNS", "url": "https://biblioteca.ibge.gov.br/visualizacao/livros/liv101846.pdf", "date": "2021", "observation_year": 2019, "locator": "Língua Brasileira de Sinais - Libras; Table 8 and preceding paragraph", "type": "primary_survey_report", "access": "indexed_primary_table_read; direct retrieval 403"},
+    {"id": "BR_RELEASE", "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/31445-pns-2019-pais-tem-17-3-milhoes-de-pessoas-com-algum-tipo-de-deficiencia", "date": "2021-08-26", "locator": "Libras age 5-40 paragraph", "type": "primary_statistical_agency", "access": "page_read"},
+    {"id": "ISLRTC_HISTORY", "url": "https://islrtc.nic.in/about-department/about-islrtc/", "date": "2024-07-08", "locator": "2011 Census 50 lakh paragraph; historical founding narrative", "type": "government_institution", "access": "page_read", "caution": "Historical no-materials language not adopted as current fact"},
+    {"id": "KNBS_2020", "url": "https://www.knbs.or.ke/wp-content/uploads/2023/09/2020-Economic-Survey.pdf", "date": "2020", "observation_year": 2019, "locator": "section 21.12; Figure 21.10; printed p.386", "type": "primary_statistical_agency", "access": "indexed_primary_text_read; direct PDF timeout"},
+    {"id": "SASL_CENSUS", "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf", "date": "2023-10-10", "observation_year": 2022, "locator": "Table 2.8; printed p.22 / PDF p.34; under-one exclusion footnote", "type": "primary_census", "access": "PDF_text_read"},
+    {"id": "DEAFTEC_EQ", "url": "https://deaftec.org/teaching-learning/strategies-for-teaching-math/math-video-tutorials/solving-linear-equations-with-one-variable/", "date": null, "locator": "three video labels and Khan Academy Practice Problem Links", "type": "primary_education_provider", "access": "actual_lesson_page_read"},
+    {"id": "ASLCORE_CS", "url": "https://aslcore.org/computerscience/", "date": null, "locator": "Entries; 139 entries at inspection; team and rights notice", "type": "primary_education_provider", "access": "contents_read"},
+    {"id": "ASLCORE_REPO", "url": "https://aslcore.org/computerscience/entries/?id=repository&navset=1", "date": null, "locator": "Repository entry", "type": "primary_education_provider", "access": "entry_page_read_not_video_fluency_test"},
+    {"id": "EVERYDAY_ASL", "url": "https://everydayasl.com/products/math11", "date": null, "locator": "Included in This Set - 11 Full Films; digital-download description", "type": "primary_commercial_provider", "access": "contents_read"},
+    {"id": "ASL_STEM_WIKI", "url": "https://arxiv.org/html/2411.05783v1", "date": "2024-11-08", "locator": "sections 3.1-3.5 and Appendix A datasheet; release 2024-10-15", "type": "primary_research", "access": "relevant_sections_read"},
+    {"id": "MATHLIBRAS_2019", "url": "https://cti.ufpel.edu.br/siepe/arquivos/2019/MD_01555.pdf", "date": "2019", "locator": "pp.1-3; production chronology and methodology", "type": "primary_producer_research", "access": "four_page_PDF_text_read"},
+    {"id": "MATHLIBRAS_2025", "url": "https://anais-siiepe.ufpel.edu.br/2025/MD_01023.pdf", "date": "2025", "observation_date": "2025-03", "locator": "Tables 1-2 and Figure 1; pp.2-3; V67 fraction operator", "type": "primary_content_analysis", "access": "four_page_PDF_text_read"},
+    {"id": "INES_PRODUCTS", "url": "https://mestrado.ines.gov.br/tccs-e-produtos/produtos", "date": null, "locator": "Apostila de Matemática Básica em LIBRAS, 2026-06-03; scientific-work manual, 2025-02-27", "type": "primary_institutional_repository", "access": "catalogue_read; booklet internals uninspected"},
+    {"id": "ISL_NCERT", "url": "https://islrtc.nic.in/ncert-books-in-isl/", "date": null, "locator": "ISL e-content of NCERT textbooks; Classes I-VI", "type": "primary_government_education_provider", "access": "page_read"},
+    {"id": "ISL_MATH", "url": "https://islrtc.nic.in/maths-concept-video/", "date": null, "locator": "Class VI and Class VII embedded videos", "type": "primary_government_education_provider", "access": "embedded_identities_read; attempted first video throttled"},
+    {"id": "NIOS_ENGLISH", "url": "https://rcpune.nios.ac.in/English-202.html", "date": null, "locator": "English 202 rows 1-27; Sign Language Video / Learner Guide / Worksheet columns", "type": "primary_government_education_provider", "access": "actual_course_index_read; linked chapter retrieval failed"},
+    {"id": "STUDIO_KSL", "url": "https://www.ekitabu.com/studioksl", "date": null, "locator": "Accessible Kenyan Sign Language Video Storybooks; Digital StoryTime Apps", "type": "primary_education_provider", "access": "page_read"},
+    {"id": "KSL_EPISODES", "url": "https://www.ekitabu.com/ksl-assessment", "date": null, "locator": "Digital Story Time Episodes 026, 009, 011, 022; episode 026 video RZaL5Juz2fw", "type": "primary_education_provider", "access": "episode_index_and_embedded_identity_read; video request throttled"},
+    {"id": "KSL_BROADCAST", "url": "https://www.ekitabu.com/news/ekitabus-signed-digital-story-time-included-in-kenya-ministry-of-educations-distance-learning-program", "date": "2020-06-23", "original_publication_date": "2020-04-20", "locator": "episode format: KSL, English/Kiswahili, comprehension and vocabulary; originally published by project funder All Children Reading", "type": "primary_project_account_republished_by_producer", "access": "page_read"},
+    {"id": "KSL_SEASON2", "url": "https://www.ekitabu.com/news/digital-storytime-season-2-is-here", "date": "2025-11-15", "locator": "Season 2 and digital application announcement", "type": "primary_producer_account", "access": "page_read"},
+    {"id": "EKITABU_OFFLINE", "url": "https://support.ekitabu.com/shophelp/ekitabu-shop-homepage", "date": "2026-05-22", "locator": "online Bookshelf / offline eKitabu app", "type": "primary_provider_documentation", "access": "provider_help_read"},
+    {"id": "KICD_KSL7", "url": "https://kicd.ac.ke/wp-content/uploads/2024/09/KSL-GRADE-7.pdf", "date": "2024-09", "locator": "Grade 7 KSL; essence statement printed p.10", "type": "primary_curriculum", "access": "indexed_curriculum_scope_read"},
+    {"id": "KSL_DATASET", "url": "https://arxiv.org/abs/2410.18295", "date": "2024-10-23", "locator": "Wanzare et al.; abstract", "type": "primary_research", "access": "abstract_read"},
+    {"id": "SLED_KITS", "url": "https://www.sled.org.za/wp-content/uploads/2019/03/Full-SASL-CAPS-kit-pamphet.pdf", "date": "2019-03", "date_basis": "URL path; document undated", "locator": "p.2 grade-specific kit contents", "type": "primary_provider_contents", "access": "two_page_PDF_text_read"},
+    {"id": "SLED_SHOP", "url": "https://www.sled.org.za/shop/", "date": "2021-05-04", "locator": "Community Resources; curriculum kits; foundation sample entries", "type": "primary_commercial_education_provider", "access": "page_read"},
+    {"id": "DBE_SASL", "url": "https://www.education.gov.za/Programmes/InclusiveEducation/SouthAfricanSignLanguage.aspx", "date": "2018", "locator": "Spring Classes; revision booklets; scripted lesson plans; presentation slides", "type": "primary_government_education_provider", "access": "actual_resource_index_read"},
+    {"id": "DBE_MATH_PLAN", "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=hlwzV7XvxYE%3D&mid=7994&portalid=0&tabid=2064", "date": "2018", "locator": "Mathematical Literacy scripted lesson plan linked from DBE SASL page", "type": "primary_government_education_resource", "access": "59_page_PDF_identity_resolved; later content fetch timeout; internal coverage uninspected"},
+    {"id": "EDEAF", "url": "https://edeaf.co.za/learner-hub/", "date": null, "locator": "Academic Support; Work Readiness; information videos; IT and retail learnership contents", "type": "primary_training_provider", "access": "page_contents_read"},
+    {"id": "W3C_SIGN", "url": "https://www.w3.org/WAI/media/av/sign-languages/", "date": "2024-09-17", "locator": "Introduction; Creating Sign Language Alternatives", "type": "primary_accessibility_guidance", "access": "page_read"},
+    {"id": "MATHML", "url": "https://www.w3.org/TR/MathML3/chapter1.html", "date": "2014-04-10", "locator": "Introduction and design goals", "type": "primary_technical_specification", "access": "page_read"},
+    {"id": "SL2T", "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/", "date": "2026-08-12", "locator": "How SL2T works; example errors; Looking ahead", "type": "primary_model_provider", "access": "page_read"},
+    {"id": "VLIBRAS", "url": "https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/vlibras/vlibras", "date": null, "locator": "Suite VLibras; non-replacement warning for courses/classes", "type": "primary_government_technology_provider", "access": "page_read"},
+    {"id": "SIGNLLM", "url": "https://signllm.github.io/", "date": null, "locator": "ICCV 2025 workshop paper; current non-open-source notice; pose-generation explanation; Korean KSL example", "type": "primary_research_project", "access": "page_read"}
+  ],
+  "all_sources_accessed_on": "2026-09-04"
+}

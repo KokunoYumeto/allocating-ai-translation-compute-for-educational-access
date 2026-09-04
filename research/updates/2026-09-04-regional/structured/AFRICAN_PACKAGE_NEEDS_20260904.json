@@ -1,0 +1,493 @@
+{
+  "schema": "african-package-needs/1.0",
+  "date": "2026-09-04",
+  "scope": "Eight source-read profiles; not Africa-wide completeness or ranking",
+  "report": {
+    "path": "AFRICAN_PACKAGE_NEEDS_20260904.md",
+    "bytes": 14331,
+    "sha256": "52207B3CF255D46928ADFF26A2E7DE3AA0071C040B851AE4CEBF86F7638E1AA8"
+  },
+  "sources": {
+    "ET_WB": {
+      "url": "https://thedocs.worldbank.org/en/doc/cdce381e0517064c80cc1f6ad6ce1735-0510022026/original/20260430-Ethiopia-FL-Final-Report-FINAL.pdf",
+      "date": "2026",
+      "locators": "printed16,20,55; physical20,24,59",
+      "inspection": "Actual downloaded PDF text; physical20 previously rendered; not a full national materials census",
+      "local": {
+        "path": "sources/african_packages_20260904/ethiopia_fl_review_2026.pdf",
+        "bytes": 1784926,
+        "sha256": "7861DDEEBD3062AEF9B1AF56F0CED938F689F0B8205344FC821DBD2D7AACFFB0"
+      },
+      "accessed_on": "2026-09-04"
+    },
+    "RW_NISR": {
+      "url": "https://statistics.gov.rw/sites/default/files/documents/2025-02/Education.pdf",
+      "date": "2023 report; 2022 census",
+      "locators": "TableC.25 printed123/physical147; Table7.7 printed78/physical102; narrative printed76 and77; TableC31 printed129",
+      "inspection": "Actual local PDF; tables C25 and7.7 text and rendered pages inspected",
+      "local": {
+        "path": "sources/african_packages_20260904/rwanda_education_census.pdf",
+        "bytes": 17508218,
+        "sha256": "B1C8BFF8F2BDA94C8438E180895F31AD12BE3C4688FC87EF8249FBDEB20383E5"
+      },
+      "accessed_on": "2026-09-04"
+    },
+    "RW_REB": {
+      "url": "https://www.reb.gov.rw/news-detail/translated-books-are-now-available-for-students-and-teachers",
+      "date": null,
+      "locators": "English-medium from2021 and print/device distribution paragraphs",
+      "inspection": "Primary HTML read; publication date not inferred from footer",
+      "accessed_on": "2026-09-04"
+    },
+    "SO_UNICEF": {
+      "url": "https://www.unicef.org/media/175126/file/Teaching%20at%20the%20Right%20Level%20in%20Somalia.pdf",
+      "date": "2025-10",
+      "locators": "both pages",
+      "inspection": "Primary web PDF text read; local download failed403; no local byte or visual claim",
+      "accessed_on": "2026-09-04"
+    },
+    "TI_UNICEF": {
+      "url": "https://www.unicef.org/ethiopia/stories/every-child-has-right-learn",
+      "date": "2026-06-05",
+      "locators": "Negash closure/reopening and classroom paragraphs",
+      "inspection": "Primary HTML read; qualitative setting evidence",
+      "accessed_on": "2026-09-04"
+    },
+    "BI_TWIGE": {
+      "url": "https://www.unicef.org/burundi/stories/launch-twige-twese-programme-improve-fundamental-education-burundi",
+      "date": "2025-01-28",
+      "locators": "barriers and future programme targets",
+      "inspection": "Primary HTML read; targets not outcomes",
+      "accessed_on": "2026-09-04"
+    },
+    "BI_STEM": {
+      "url": "https://www.unicef.org/burundi/stories/musenyi-students-are-turning-their-communitys-challenges-innovative-solutions",
+      "date": "2026-05-26",
+      "locators": "three modules and home project examples",
+      "inspection": "Primary HTML read; programme testimony not treatment effect; health anecdotes not adopted",
+      "accessed_on": "2026-09-04"
+    },
+    "ZA_POLICY": {
+      "url": "https://www.gov.za/news/media-statements/minister-siviwe-gwarube-welcomes-writing-mother-tongue-based-bilingual",
+      "date": "2025-11-24",
+      "locators": "11948 schools and9provincial cells",
+      "inspection": "Primary HTML read; schools not people or exact-language counts",
+      "accessed_on": "2026-09-04"
+    },
+    "ZA_TOOLKIT": {
+      "url": "https://www.education.gov.za/Programmes/MTbBE/MTbBEToolkit/MTbBEMathsToolkit.aspx",
+      "date": null,
+      "locators": "Grade4 ATPs, terminology, guides, worksheets by language",
+      "inspection": "Primary current catalogue read; not all linked books inspected; Sepedi exact worksheet body unverified",
+      "accessed_on": "2026-09-04"
+    }
+  },
+  "rwanda_literacy_calculation": {
+    "source": "RW_NISR",
+    "table": "C.25",
+    "resident15plus": 8289582,
+    "kinyarwanda_only_percent_reported": 54.0,
+    "plug_in_count_not_exact": 4476374.28,
+    "rounding_assumption": "54.0 is nearest-tenth percentage: underlying fraction in [0.5395,0.5405). This is not a confidence interval.",
+    "conditional_integer_count_interval": [
+      4472230,
+      4480519
+    ],
+    "construct": "Reported literacy only in Kinyarwanda; not scientific proficiency, need or causal benefit",
+    "overlapping_language_marginals_percent": {
+      "Kinyarwanda": 78.3,
+      "English": 21.2,
+      "French": 8.2,
+      "Swahili": 4.0
+    },
+    "discrepancies": [
+      "Printed76 narrative overall78.3 differs from none complement78.8; use labelled table constructs",
+      "Printed77 urban narrative89.5 is male marginal; Table7.7bothsex88.7",
+      "Actual national language table C25, not narrative pointer C24"
+    ]
+  },
+  "profiles": [
+    {
+      "candidate_id": "hypothesis-candidate:031",
+      "label": "Amharic",
+      "edition_profile": "amh-Ethi",
+      "profile_scope": "Amharic regional evidence; Ethiopia totals and other home languages are not assigned to this profile",
+      "all_stages_eligible": [
+        "P",
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "source_ids": [
+        "ET_WB"
+      ],
+      "package_comparison": {
+        "id": "ET_AM_PROGRESS",
+        "title": "Low-equipment early learning and primary numeracy",
+        "stages_with_current_designs": [
+          "P",
+          "F"
+        ],
+        "full": "Complete progression from oral/illustrated activity to worked numeracy and feedback",
+        "smaller": "Reteaching and no-special-equipment alternatives around existing guides",
+        "contents": [
+          "oral and illustrated entry",
+          "sorting and quantity",
+          "place value",
+          "worked reasoning",
+          "diagnostic branches",
+          "explained answers"
+        ],
+        "need_count": null,
+        "benefit": null,
+        "cost": null,
+        "full_vs_smaller_rule": "G_full*C_small > G_small*C_full for compatible positive costs; not an empirical winner"
+      },
+      "stages_without_current_designs": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ]
+    },
+    {
+      "candidate_id": "hypothesis-candidate:032",
+      "label": "West-Central Oromo educational profile",
+      "edition_profile": "gaz-Latn",
+      "profile_scope": "Regional Afaan Oromo guide is not proof of coverage of every Oromo variety; gaz is an operational educational-profile label",
+      "all_stages_eligible": [
+        "P",
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "source_ids": [
+        "ET_WB"
+      ],
+      "package_comparison": {
+        "id": "ET_OR_PROGRESS",
+        "title": "Play-to-literacy and numeracy progression",
+        "stages_with_current_designs": [
+          "P",
+          "F"
+        ],
+        "full": "Complete illustrated sequence with oral activity instructions",
+        "smaller": "Daily activity and diagnostic cards around the existing programme",
+        "contents": [
+          "oral language",
+          "pictures and symbols",
+          "number play",
+          "word-to-sentence progression",
+          "worked tasks",
+          "feedback"
+        ],
+        "need_count": null,
+        "benefit": null,
+        "cost": null,
+        "full_vs_smaller_rule": "G_full*C_small > G_small*C_full for compatible positive costs; not an empirical winner"
+      },
+      "stages_without_current_designs": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ]
+    },
+    {
+      "candidate_id": "hypothesis-candidate:033",
+      "label": "Somali",
+      "edition_profile": "som-Latn",
+      "profile_scope": "Central/southern displaced and Somaliland settings separate; Maay and diaspora not silently assigned",
+      "all_stages_eligible": [
+        "P",
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "source_ids": [
+        "SO_UNICEF"
+      ],
+      "package_comparison": {
+        "id": "SO_RECOVERY",
+        "title": "Level-based foundational recovery",
+        "stages_with_current_designs": [
+          "F"
+        ],
+        "full": "Complete reading and numeracy course with illustrated/oral entry",
+        "smaller": "Additional practice around accessible accelerated instruction",
+        "contents": [
+          "entry assessment",
+          "reading progression",
+          "numbers and operations",
+          "worked examples",
+          "cumulative practice",
+          "answers"
+        ],
+        "need_count": null,
+        "benefit": null,
+        "cost": null,
+        "full_vs_smaller_rule": "G_full*C_small > G_small*C_full for compatible positive costs; not an empirical winner"
+      },
+      "stages_without_current_designs": [
+        "P",
+        "S",
+        "V",
+        "U",
+        "R"
+      ]
+    },
+    {
+      "candidate_id": "hypothesis-candidate:036",
+      "label": "Kinyarwanda",
+      "edition_profile": "kin-Latn",
+      "profile_scope": "2022 resident15+ reported literacy is context, not current stage-specific unmet scientific-learning need",
+      "all_stages_eligible": [
+        "P",
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "source_ids": [
+        "RW_NISR",
+        "RW_REB"
+      ],
+      "package_comparison": {
+        "id": "RW_SCIENCE_DATA",
+        "title": "Scientific reading and practical quantitative reasoning",
+        "stages_with_current_designs": [
+          "F",
+          "S",
+          "V"
+        ],
+        "full": "Independent science/numeracy course with a separate adult practical-data entry",
+        "smaller": "Bilingual explanations and practice around existing textbooks",
+        "contents": [
+          "scientific explanation",
+          "measurement",
+          "fractions",
+          "graphs",
+          "records",
+          "introductory data"
+        ],
+        "need_count": null,
+        "benefit": null,
+        "cost": null,
+        "full_vs_smaller_rule": "G_full*C_small > G_small*C_full for compatible positive costs; not an empirical winner"
+      },
+      "stages_without_current_designs": [
+        "P",
+        "U",
+        "R"
+      ]
+    },
+    {
+      "candidate_id": "hypothesis-candidate:037",
+      "label": "Kirundi",
+      "edition_profile": "run-Latn",
+      "profile_scope": "Burundi school/programme contexts do not establish language readership; Kirundi not equated with Kinyarwanda",
+      "all_stages_eligible": [
+        "P",
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "source_ids": [
+        "BI_TWIGE",
+        "BI_STEM"
+      ],
+      "package_comparison": {
+        "id": "BI_APPLIED_SCIENCE",
+        "title": "Applied scientific observation and measurement",
+        "stages_with_current_designs": [
+          "S",
+          "V"
+        ],
+        "full": "Sequential plant-science, measurement and data course",
+        "smaller": "Contextual project and feedback pack around existing teaching",
+        "contents": [
+          "observation",
+          "plant biology",
+          "measurement",
+          "simple experiments",
+          "tables",
+          "records"
+        ],
+        "need_count": null,
+        "benefit": null,
+        "cost": null,
+        "full_vs_smaller_rule": "G_full*C_small > G_small*C_full for compatible positive costs; not an empirical winner"
+      },
+      "stages_without_current_designs": [
+        "P",
+        "F",
+        "U",
+        "R"
+      ]
+    },
+    {
+      "candidate_id": "hypothesis-candidate:044",
+      "label": "Zulu",
+      "edition_profile": "zul-Latn",
+      "profile_scope": "isiZulu route; provincial school totals are shared multilingual context, not learner counts",
+      "all_stages_eligible": [
+        "P",
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "source_ids": [
+        "ZA_POLICY",
+        "ZA_TOOLKIT"
+      ],
+      "package_comparison": {
+        "id": "ZA_ZUL_MATH",
+        "title": "Grade4 bilingual mathematical reasoning",
+        "stages_with_current_designs": [
+          "F"
+        ],
+        "full": "Complete independently usable mathematics course",
+        "smaller": "Explanatory feedback and navigation additions to DBE materials",
+        "contents": [
+          "numbers",
+          "place value",
+          "operations",
+          "fractions",
+          "worked reasoning",
+          "self-check answers"
+        ],
+        "need_count": null,
+        "benefit": null,
+        "cost": null,
+        "full_vs_smaller_rule": "G_full*C_small > G_small*C_full for compatible positive costs; not an empirical winner"
+      },
+      "stages_without_current_designs": [
+        "P",
+        "S",
+        "V",
+        "U",
+        "R"
+      ]
+    },
+    {
+      "candidate_id": "hypothesis-candidate:045",
+      "label": "Northern Sotho / Sepedi standard",
+      "edition_profile": "nso-Latn",
+      "profile_scope": "Northern Sotho census versus Sepedi educational-standard boundaries retained; worksheet content not verified",
+      "all_stages_eligible": [
+        "P",
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "source_ids": [
+        "ZA_POLICY",
+        "ZA_TOOLKIT"
+      ],
+      "package_comparison": {
+        "id": "ZA_NSO_MATH",
+        "title": "Grade4 bilingual mathematical reasoning",
+        "stages_with_current_designs": [
+          "F"
+        ],
+        "full": "Complete independently usable mathematics course in the selected standard",
+        "smaller": "Explanatory practice additions to the Sepedi DBE route",
+        "contents": [
+          "numbers",
+          "place value",
+          "operations",
+          "fractions",
+          "worked reasoning",
+          "self-check answers"
+        ],
+        "need_count": null,
+        "benefit": null,
+        "cost": null,
+        "full_vs_smaller_rule": "G_full*C_small > G_small*C_full for compatible positive costs; not an empirical winner"
+      },
+      "stages_without_current_designs": [
+        "P",
+        "S",
+        "V",
+        "U",
+        "R"
+      ]
+    },
+    {
+      "candidate_id": "hypothesis-candidate:077",
+      "label": "Tigrinya",
+      "edition_profile": "tir-Ethi",
+      "profile_scope": "Ethiopian Negash evidence; Eritrea and displaced routes remain distinct and unmeasured",
+      "all_stages_eligible": [
+        "P",
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "source_ids": [
+        "TI_UNICEF"
+      ],
+      "package_comparison": {
+        "id": "TI_CONTINUITY",
+        "title": "Learning continuity after interrupted schooling",
+        "stages_with_current_designs": [
+          "F",
+          "S"
+        ],
+        "full": "Complete prerequisite-to-secondary science and quantitative sequence",
+        "smaller": "Re-entry diagnostic and practice pack alongside resumed schooling",
+        "contents": [
+          "diagnostic entry",
+          "reading scientific explanations",
+          "fractions",
+          "measurement",
+          "graphs",
+          "cumulative feedback"
+        ],
+        "need_count": null,
+        "benefit": null,
+        "cost": null,
+        "full_vs_smaller_rule": "G_full*C_small > G_small*C_full for compatible positive costs; not an empirical winner"
+      },
+      "stages_without_current_designs": [
+        "P",
+        "V",
+        "U",
+        "R"
+      ]
+    }
+  ],
+  "regional_challengers": [
+    "isiXhosa",
+    "Sesotho",
+    "Setswana",
+    "Siswati",
+    "Tshivenda",
+    "Tsonga (DBE label: Xitsonga)",
+    "isiNdebele",
+    "Maay",
+    "other Oromo varieties"
+  ],
+  "shared_count_rules": [
+    "11948 SouthAfrican schools is one shared multilingual school count, never duplicated as people",
+    "Somalia programme participants are not total language audience",
+    "Rwanda literacy marginals overlap and are not summed",
+    "All stage and mode routes may serve the same people; do not sum without joint overlap"
+  ],
+  "publication_status": "WORKING_RESEARCH_NOT_FINAL"
+}

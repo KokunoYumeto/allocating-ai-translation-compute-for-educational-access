@@ -16,6 +16,12 @@ GitHub is the continually evolving version. This dated Zenodo snapshot preserves
 
 Dated Zenodo working snapshot: [10.5281/zenodo.22307432](https://doi.org/10.5281/zenodo.22307432). It is ongoing, non-exhaustive research, not the final product.
 
+
+## Research update: nineteen further profiles
+
+<!-- regional-research-update-20260904 -->
+[Read the new African, Arabic/Iranic and signed-language comparisons](research/updates/2026-09-04-regional/README.md). The current bounded calculation has designs for 44 forecast profiles and 112 of 600 stage cells, with preschool now explicit. These are investigation counts, not ranks or educational coverage. The linked v0.1 PDF and Zenodo files remain an earlier dated snapshot; this working update is additional, unfinished research.
+
 ## Read the current notebook
 
 - [Readable HTML](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/)
@@ -35,7 +41,7 @@ Source suggestions and omissions can be reported through [GitHub issues](https:/
 
 ## What is unfinished
 
-The bounded intervention calculation currently contains package routes for 25 of the 100 forecast profiles, across 42 of 500 possible profile-stage cells. Those counts describe this calculation only: they omit separate shared-register analyses and do not measure the full research record, educational provision or need. The remaining cells are unfinished comparisons, not rejected populations. The wider retained register contains 8,618 language-level entries from Glottolog 5.3, including historical and bookkeeping entries labelled in the source. That register is an identity starting point, not an exhaustive inventory of every community, variety, script, diaspora or accessible format.
+The earlier v0.1 snapshot contained routes for 25 forecast profiles across 42 of 500 stage cells. The linked research update advances this to 44 profiles and 112 of 600 cells, with preschool separated explicitly. Those counts describe this calculation only: they omit separate shared-register analyses and do not measure the full research record, educational provision or need. The remaining cells are unfinished comparisons, not rejected populations. The wider retained register contains 8,618 language-level entries from Glottolog 5.3, including historical and bookkeeping entries labelled in the source. That register is an identity starting point, not an exhaustive inventory of every community, variety, script, diaspora or accessible format.
 
 - Expand comparable population, stage, subject, supply and delivery evidence beyond the initial forecast.
 - Test useful full courses and smaller additions on the same basis, including OpenStax, Open Logic, other open resources and advanced research materials.
