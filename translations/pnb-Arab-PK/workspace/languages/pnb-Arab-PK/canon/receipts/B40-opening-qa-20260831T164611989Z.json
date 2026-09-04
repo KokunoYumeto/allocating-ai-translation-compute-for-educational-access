@@ -1,0 +1,37 @@
+{
+  "schema": "pnb-actual-canon-consultation-v1",
+  "unit": "B40-opening",
+  "stage": "qa",
+  "read_at": "2026-08-31T16:46:11.989Z",
+  "examples": [
+    {
+      "example": "C01",
+      "path": "downloads/canon/pnb-Arab-PK/R1.txt",
+      "line": 28,
+      "text_raw_sha256": "55df854b1d79bdcec3b217145e1ee8ee08f26da44fa77afe614c9372bc55ee82",
+      "paragraph_sha256": "eac51d99935bf7cd3b52fda2c10fbe88a864450617e46e944730317cc34c7d84"
+    },
+    {
+      "example": "C03",
+      "path": "downloads/canon/pnb-Arab-PK/R1.txt",
+      "line": 45,
+      "text_raw_sha256": "55df854b1d79bdcec3b217145e1ee8ee08f26da44fa77afe614c9372bc55ee82",
+      "paragraph_sha256": "8fc9179e93f25479d018b503af4431e120fd0778a4d9148ab107876e2eddf1fc"
+    },
+    {
+      "example": "C04",
+      "path": "downloads/canon/pnb-Arab-PK/R1.txt",
+      "line": 35,
+      "text_raw_sha256": "55df854b1d79bdcec3b217145e1ee8ee08f26da44fa77afe614c9372bc55ee82",
+      "paragraph_sha256": "2b8bfffa5cc63fcf6c267d51dbed8c23de3ec997bc4c0a6bf6299ef78d209e49"
+    }
+  ],
+  "actual_checks": [
+    "C01: checked the final learner-address ability constructions against the actual paragraph; no Urdu سکتی ہے/سکتا ہے replacements were used.",
+    "C03: rechecked sequence description after removing the accidental similarity claim; ترتیب وار is register evidence, not proof of a standardized mathematical term.",
+    "C04: checked فضاواں, plural source examples and final preface agreement after revision.",
+    "Read all final Greek pronunciation/name cells and both complete lineated quotes/credit rows against the canonical source. Preserved English guide payloads, author names, source date and edition.",
+    "Original degree-n clarification cites the later exact canonical six-line definition and remains outside174sourceblocks. Historical availability assertions remain the original author's dated claims."
+  ],
+  "limits": "Source-span/token/table/credit QA does not establish native Punjabi terminology approval, mathematical pedagogy certification or browser/assistive-technology behavior. No derived MathML or reader exists yet."
+}

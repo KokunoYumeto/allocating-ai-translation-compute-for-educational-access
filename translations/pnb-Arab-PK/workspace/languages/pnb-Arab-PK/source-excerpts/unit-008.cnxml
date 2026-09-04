@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" id="m49301-unit-008-excerpt"><section id="fs-id1165135422920">
+  <title>Determining Whether a Function is One-to-One </title><para id="fs-id1165135678633">Some functions have a given output value that corresponds to two or more input values. For example, in the stock chart shown in the figure at the beginning of this chapter, the stock price was $1000 on five different dates, meaning that there were five different input values that all resulted in the same output value of $1000.</para><para id="fs-id1165135245630">However, some functions have only one input value for each output value, as well as having only one output for each input. We call these functions one-to-one functions. As an example, consider a school that uses only letter grades and decimal equivalents, as listed in <link target-id="Table_01_01_13"/>.</para>
+<table id="Table_01_01_13" summary="Two columns and five rows. The first column is labeled, “Letter Grade”, and the second column is labeled, “Grade point average”. Reading the rows as ordered pairs, we have: (A, 4.0), (B, 3.0), (C, 2.0), and (D, 1.0).">
+<tgroup cols="2"><colspec colnum="1" colname="c1" align="center"/>
+    <colspec colnum="2" colname="c2" align="center"/>
+    <thead>
+     <row>
+      <entry align="center">Letter grade</entry>
+      <entry align="center">Grade point average</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry align="center">A</entry>
+      <entry align="center">4.0</entry>
+     </row>
+     <row>
+      <entry align="center">B</entry>
+      <entry align="center">3.0</entry>
+     </row>
+     <row>
+      <entry align="center">C</entry>
+      <entry align="center">2.0</entry>
+     </row>
+     <row>
+      <entry align="center">D</entry>
+      <entry align="center">1.0</entry>
+     </row>
+    </tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165137561844">This grading system represents a one-to-one function, because each letter input yields one particular grade point average output and each grade point average corresponds to one input letter.</para>
+  <para id="fs-id1165137628999">To visualize this concept, let’s look again at the two simple functions sketched in <link target-id="Figure_01_01_001"/><emphasis>(a) </emphasis>and <link target-id="Figure_01_01_001"/><emphasis>(b)</emphasis>. The function in part (a) shows a relationship that is not a one-to-one function because inputs <m:math>
+   <m:mrow>
+    <m:mi>q</m:mi></m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi></m:mrow>
+  </m:math> both give output <m:math>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> The function in part (b) shows a relationship that is a one-to-one function because each input is associated with a single output.</para>
+
+  <note id="fs-id1165135261974">
+
+   <title>One-to-One Function</title>
+  <para id="fs-id1165137387348"> A <term id="term-00015">one-to-one function</term> is a function in which each output value corresponds to exactly one input value.</para>
+  </note>
+
+  <example id="Example_01_01_13"><exercise id="fs-id1165137755749">
+    <problem id="fs-id1165137755752">
+     <title>Determining Whether a Relationship Is a One-to-One Function </title>
+     <para id="fs-id1165137892387">Is the area of a circle a function of its radius? If yes, is the function one-to-one?</para>
+    </problem>
+    <solution id="fs-id1165137892391">
+     <para id="fs-id1165134148470">A circle of radius <m:math>
+      <m:mrow>
+       <m:mi>r</m:mi></m:mrow>
+     </m:math> has a unique area measure given by <m:math>
+      <m:mrow>
+       <m:mi>A</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:msup>
+        <m:mi>r</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>,</m:mo></m:mrow>
+     </m:math> so for any input, <m:math>
+      <m:mrow>
+       <m:mi>r</m:mi><m:mo>,</m:mo></m:mrow>
+     </m:math> there is only one output, <m:math><m:mrow><m:mi>A</m:mi><m:mo>.</m:mo></m:mrow></m:math> The area is a function of radius <m:math>
+      <m:mrow>
+       <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para><para id="fs-id1165137892326">If the function is one-to-one, the output value, the area, must correspond to a unique input value, the radius. Any area measure <m:math>
+      <m:mrow>
+       <m:mi>A</m:mi></m:mrow>
+     </m:math> is given by the formula <m:math>
+      <m:mrow>
+       <m:mi>A</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:msup>
+        <m:mi>r</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>.</m:mo></m:mrow>
+     </m:math> Because areas and radii are positive numbers, there is exactly one solution: <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>A</m:mi>
+     <m:mi>π</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> So the area of a circle is a one-to-one function of the circle’s radius.</para></solution>
+   </exercise>
+ </example>
+<note id="fs-id1165137579363" class="precalculus try">
+<label>Try It</label>
+   <exercise id="ti_01_01_10"><problem id="fs-id1165134079641">
+    <list id="fs-id1165134079644" list-type="enumerated" number-style="arabic" class="circled">
+    <item><span class="token">ⓐ</span> Is a balance a function of the bank account number?</item>
+    <item><span class="token">ⓑ</span> Is a bank account number a function of the balance?</item>
+    <item><span class="token">ⓒ</span> Is a balance a one-to-one function of the bank account number?</item>
+    </list>
+    </problem>
+    <solution id="fs-id1165137456018"><list id="eip-idm552643792" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> yes, because each bank account has a single balance at any given time</item>
+<item><span class="token">ⓑ</span> no, because several bank account numbers may have the same balance</item>
+<item><span class="token">ⓒ</span> no, because the same output may correspond to more than one input.</item></list></solution>
+   </exercise></note>
+
+<note id="fs-id1327356" class="precalculus try"><label>Try It</label>
+<exercise id="ti_01_01_11"><problem id="fs-id1165137737576"><para id="eip-id1166399990268">Evaluate the following:
+    <newline/><span class="token">ⓐ</span> If each percent grade earned in a course translates to one letter grade, is the letter grade a function of the percent grade?
+  <newline/><span class="token">ⓑ</span> If so, is the function one-to-one?
+</para>
+  </problem>
+  <solution id="fs-id1165137655289">
+  <list id="fs-id1165137655291" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> Yes, letter grade is a function of percent grade;</item>
+  <item><span class="token">ⓑ</span> No, it is not one-to-one. There are 100 different percent numbers we could get but only about five possible letter grades, so there cannot be only one percent number that corresponds to each letter grade.</item>
+  </list></solution>
+   </exercise></note></section>
+
+ <section id="fs-id1165135435781"><title>Using the Vertical Line Test</title><para id="fs-id1165135435786">As we have seen in some examples above, we can represent a function using a graph. Graphs display a great many input-output pairs in a small space. The visual information they provide often makes relationships easier to understand. By convention, graphs are typically constructed with the input values along the horizontal axis and the output values along the vertical axis.</para>
+  <para id="fs-id1165137637786">The most common graphs name the input value <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi></m:mrow>
+  </m:math> and the output value <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> and we say <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi></m:mrow>
+  </m:math> is a function of <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> or <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+     <m:mo>)</m:mo></m:mrow></m:mrow>
+  </m:math> when the function is named <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> The graph of the function is the set of all points <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> in the plane that satisfies the equation <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+     <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+  </m:math> If the function is defined for only a few input values, then the graph of the function is only a few points, where the <emphasis effect="italics">x</emphasis>-coordinate of each point is an input value and the <emphasis effect="italics">y</emphasis>-coordinate of each point is the corresponding output value. For example, the black dots on the graph in <link target-id="Figure_01_01_011"/> tell us that <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mn>0</m:mn>
+     <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mn>6</m:mn>
+     <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+  </m:math> However, the set of all points <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> satisfying <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+     <m:mo>)</m:mo></m:mrow></m:mrow>
+  </m:math> is a curve. The curve shown includes <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> because the curve passes through those points.</para>
+<figure id="Figure_01_01_011" class="medium">
+   <media id="fs-id1165137572613" alt="Graph of a polynomial.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_011-659b.jpg"/>
+   </media>
+  </figure>
+
+  <para id="fs-id1165137737620">The <term id="term-00016">vertical line test</term> can be used to determine whether a graph represents a function. If we can draw any vertical line that intersects a graph more than once, then the graph does <emphasis effect="italics">not</emphasis> define a function because a function has only one output value for each input value. See <link target-id="Figure_01_01_012"/>.</para>
+<figure id="Figure_01_01_012">
+   <media id="fs-id1165135533149" alt="Three graphs visually showing what is and is not a function.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_012-73a7.jpg"/>
+   </media>
+  </figure>
+
+  <note id="fs-id1165135460884" class="how-to-notitle">
+   <label>How To</label>
+   <para id="fs-id1165137452182"><emphasis>Given a graph, use the vertical line test to determine if the graph represents a function.
+   </emphasis></para>
+   <list id="fs-id1165133277614" list-type="enumerated" number-style="arabic">
+    <item>Inspect the graph to see if any vertical line drawn would intersect the curve more than once.</item>
+   <item>If there is any such line, determine that the graph does not represent a function.</item>
+   </list>
+  </note>
+
+  <example id="Example_01_01_14">
+   <exercise id="fs-id1165134541166"><problem id="fs-id1165137571591">
+     <title>Applying the Vertical Line Test</title>
+     <para id="fs-id1165137761111">Which of the graphs in <link target-id="Figure_01_01_013"/> represent(s) a function <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>?</m:mo></m:mrow>
+     </m:math>
+  </para>
+
+     <figure id="Figure_01_01_013">
+      <media id="fs-id1165137786563" alt="Graph of a polynomial.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_013abc-9102.jpg"/>
+      </media>
+     </figure>
+
+    </problem>
+    <solution id="fs-id1165135190052">
+     <para id="fs-id1165137629350">If any vertical line intersects a graph more than once, the relation represented by the graph is not a function. Notice that any vertical line would pass through only one point of the two graphs shown in parts (a) and (b) of <link target-id="Figure_01_01_013"/>. From this we can conclude that these two graphs represent functions. The third graph does not represent a function because, at most <emphasis effect="italics">x</emphasis>-values, a vertical line would intersect the graph at more than one point, as shown in <link target-id="Figure_01_01_016"/>.</para><figure id="Figure_01_01_016" class="small">
+     <media id="fs-id1165133201929" alt="A circle with radius 3 centered at the origin is shown. A vertical dashed line at x=2 intersects the circle at two points, demonstrating that the circle is not a function.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_016.jpg"/>
+     </media>
+    </figure>
+    </solution>
+   </exercise></example>
+
+  <note id="fs-id1165134544969" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_01_04">
+    <problem id="fs-id1165135600805"><para id="fs-id1165135210137">Does the graph in <link target-id="Figure_01_01_017"/> represent a function?</para>
+
+    <figure id="Figure_01_01_017" class="small">
+     <media id="fs-id1165135519277" alt="Graph of absolute value function.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_017-6d3f.jpg"/>
+     </media>
+    </figure>
+    </problem>
+    <solution id="fs-id1165134258608"><para id="fs-id1165134258609">yes</para></solution>
+   </exercise>
+  </note>
+ </section><section id="fs-id1165137610952">
+  <title> Using the Horizontal Line Test</title>
+  <para id="fs-id1165137871503">Once we have determined that a graph defines a function, an easy way to determine if it is a one-to-one function is to use the <term id="term-00017">horizontal line test</term>. Draw horizontal lines through the graph. If any horizontal line intersects the graph more than once, then the graph does not represent a one-to-one function.</para>
+
+  <note id="fs-id1165137736232" class="how-to-notitle">
+   <label>How To</label>
+  <para id="fs-id1165133437255"><emphasis>Given a graph of a function, use the horizontal line test to determine if the graph represents a one-to-one function.
+  </emphasis></para>
+   <list id="fs-id1165137611853" list-type="enumerated" number-style="arabic">
+    <item>Inspect the graph to see if any horizontal line drawn would intersect the curve more than once.</item>
+  <item>If there is any such line, determine that the function is not one-to-one.</item>
+   </list>
+  </note>
+
+  <example id="Example_01_01_15">
+   <exercise id="fs-id1165134389035">
+    <problem id="fs-id1165134342668">
+     <title>Applying the Horizontal Line Test</title>
+     <para id="fs-id1165135434808">Consider the functions shown in <link target-id="Figure_01_01_013"/><emphasis>(a)</emphasis> and <link target-id="Figure_01_01_013"/><emphasis>(b)</emphasis>. Are either of the functions one-to-one?</para>
+    </problem>
+    <solution id="fs-id1165135521259">
+     <para id="fs-id1165135185190">The function in <link target-id="Figure_01_01_013"/><emphasis>(a) </emphasis>is not one-to-one. The horizontal line shown in <link target-id="Figure_01_01_010"/> intersects the graph of the function at two points (and we can even find horizontal lines that intersect it at three points.)</para>
+
+
+    <figure id="Figure_01_01_010" class="small">
+     <media id="fs-id1165135255395" alt="A graph of a function f(x) displays a blue curve on a coordinate plane with x and f(x) axes from -5 to 5. A dashed orange horizontal line at y=3 intersects the curve at two points.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_010-140f.jpg"/>
+     </media>
+    </figure>
+
+     <para id="fs-id1165135151243">The function in <link target-id="Figure_01_01_013"/><emphasis>(b)</emphasis> is one-to-one. Any horizontal line will intersect a diagonal line at most once.</para>
+    </solution>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165135252051" class="precalculus try">
+   <label>Try It</label>
+  <exercise id="ti_01_01_12">
+  <problem id="fs-id1165137749742">
+   <para id="fs-id1165137749744">Is the graph shown in <link target-id="Figure_01_01_013"/><emphasis>(c)</emphasis> one-to-one?</para></problem>
+  <solution id="fs-id1165135255384"><para id="fs-id1165135255385">No, because it does not pass the horizontal line test.</para>
+  </solution>
+   </exercise>
+  </note>
+ </section>
+
+ <section id="fs-id1165135545919"><title>Identifying Basic Toolkit Functions</title><para id="fs-id1165137698132">In this text, we will be exploring functions—the shapes of their graphs, their unique characteristics, their algebraic formulas, and how to solve problems with them. When learning to read, we start with the alphabet. When learning to do arithmetic, we start with numbers. When working with functions, it is similarly helpful to have a base set of building-block elements. We call these our “toolkit functions,” which form a set of basic named functions for which we know the graph, formula, and special properties. Some of these functions are programmed to individual buttons on many calculators. For these definitions we will use <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi></m:mrow>
+  </m:math> as the input variable and <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+     <m:mo>)</m:mo></m:mrow></m:mrow>
+  </m:math> as the output variable.</para>
+  <para id="fs-id1165135591070">We will see these toolkit functions, combinations of toolkit functions, their graphs, and their transformations frequently throughout this book. It will be very helpful if we can recognize these toolkit functions and their features quickly by name, formula, graph, and basic table properties. The graphs and sample table values are included with each function shown in <link target-id="Table_01_01_14"/>.</para><table id="Table_01_01_14" summary="The title is “Toolkit functions”. There are three columns and ten rows. The first column is labeled, “name”, the second column is labeled, “function”, and the third column is labeled graph which contains pictures of the functions. The constant function is f(x) = c where c is the constant; the identity function is f(x) = x; the absolute function is f(x)=|x|; the quadratic function is f(x) = x^2; the cubic function is f(x)=x^3; the reciprocal function is f(x)=1/x; the reciprocal squared function is f(x)=1/x^2; the square root function is f(x)=sqrt(x); the cube root function is f(x) = x^(1/3).">
+<tgroup cols="3"><colspec colnum="1" colname="c1" align="center"/>
+<colspec colnum="2" colname="c2" align="center"/>
+<colspec colnum="3" colname="c3" align="center"/>
+    <thead>
+     <row>
+      <entry namest="c1" nameend="c3">Toolkit Functions</entry>
+     </row>
+     <row>
+      <entry align="center">Name</entry>
+      <entry align="center">Function</entry>
+      <entry align="center">Graph</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row valign="top">
+      <entry align="center">Constant</entry>
+      <entry align="center"> <m:math>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>x</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>,</m:mo></m:mrow>
+      </m:math> where <m:math>
+ <m:mrow><m:mi>c</m:mi>
+ </m:mrow>
+</m:math> is a constant </entry>
+      <entry align="center"><media id="fs-id1165137643159" alt="Graph of a constant function.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_018n-c166.jpg"/></media>
+</entry>
+     </row>
+     <row valign="top">
+      <entry align="center">Identity</entry>
+      <entry align="center"> <m:math>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>x</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow>
+      </m:math>
+      </entry>
+      <entry align="center">
+       <media id="fs-id1165137811013" alt="Graph of a straight line.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_019n-76a3.jpg"/>
+       </media>
+      </entry>
+     </row>
+     <row valign="top">
+      <entry align="center">Absolute value</entry>
+      <entry align="center"> <m:math>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>x</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow></m:mrow>
+      </m:math>
+      </entry>
+      <entry align="center">
+       <media id="fs-id1165135195221" alt="Graph of absolute function.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_020n-ec22.jpg"/>
+       </media>
+      </entry>
+     </row>
+     <row valign="top">
+      <entry align="center">Quadratic</entry>
+      <entry align="center"> <m:math>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>x</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>2</m:mn>
+         </m:msup>
+       </m:mrow>
+      </m:math>
+      </entry>
+      <entry align="center">
+       <media id="fs-id1165137501903" alt="Graph of a parabola.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_021-0f74.jpg"/>
+       </media>
+      </entry>
+     </row>
+     <row valign="top">
+      <entry align="center">Cubic</entry>
+      <entry align="center"> <m:math>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>x</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>3</m:mn>
+         </m:msup>
+       </m:mrow>
+      </m:math>
+      </entry>
+      <entry align="center">
+       <media id="fs-id1165137722123" alt="Graph of f(x) = x^3.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_022n-45dd.jpg"/>
+       </media>
+      </entry>
+     </row>
+     <row valign="top">
+      <entry align="center">Reciprocal</entry>
+      <entry align="center"> <m:math>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>x</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mi>x</m:mi>
+         </m:mfrac>
+       </m:mrow>
+      </m:math>
+      </entry>
+      <entry align="center">
+       <media id="fs-id1165134544980" alt="Graph of f(x)=1/x.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_023n-0d2b.jpg"/>
+       </media>
+      </entry>
+     </row>
+     <row valign="top">
+      <entry align="center">Reciprocal squared</entry>
+      <entry align="center"> <m:math>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>x</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mrow>
+           <m:msup>
+            <m:mi>x</m:mi>
+            <m:mn>2</m:mn>
+           </m:msup>
+          </m:mrow>
+         </m:mfrac>
+       </m:mrow>
+      </m:math>
+      </entry>
+      <entry align="center">
+       <media id="fs-id1165137647610" alt="Graph of f(x)=1/x^2.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_024-a33e.jpg"/>
+       </media>
+      </entry>
+     </row>
+     <row valign="top">
+      <entry align="center">Square root</entry>
+      <entry align="center"> <m:math>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>x</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+          <m:mi>x</m:mi>
+         </m:msqrt>
+       </m:mrow>
+      </m:math>
+      </entry>
+      <entry align="center">
+       <media id="fs-id1165137863670" alt="Graph of f(x)=sqrt(x).">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_025-de47.jpg"/>
+       </media>
+      </entry>
+     </row>
+     <row valign="top">
+      <entry align="center">Cube root</entry>
+      <entry align="center"> <m:math>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>x</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mroot>
+          <m:mi>x</m:mi>
+          <m:mn>3</m:mn>
+         </m:mroot>
+       </m:mrow>
+      </m:math>
+      </entry>
+      <entry align="center">
+       <media id="fs-id1165137838612" alt="Graph of f(x)=x^(1/3).">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_026n-b744.jpg"/>
+       </media>
+      </entry>
+     </row>
+    </tbody>
+
+
+
+
+</tgroup>
+</table><note id="fs-id1165134042311" class="precalculus media media-notitle">
+<label>Media</label>
+
+   <para id="fs-id1165135549046">Access the following online resources for additional instruction and practice with functions.</para>
+<list id="eip-id1165137846437">
+   <item><link url="https://openstax.org/l/relationfunction">Determine if a Relation is a Function</link></item>
+   <item><link url="https://openstax.org/l/vertlinetest">Vertical Line Test</link></item>
+   <item><link url="https://openstax.org/l/introtofunction">Introduction to Functions</link></item>
+   <item><link url="https://openstax.org/l/vertlinegraph">Vertical Line Test on Graph</link></item>
+   <item><link url="https://openstax.org/l/onetoone">One-to-one Functions</link></item>
+   <item><link url="https://openstax.org/l/graphonetoone">Graphs as One-to-one Functions</link></item>
+</list>
+</note></section><section id="fs-id1165135203679" class="key-equations"><title>Key Equations</title><table id="eip-id1165134393730" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" align="left" colname="c1"/>
+<colspec colnum="2" align="left" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">Constant function</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi>
+ </m:mrow>
+</m:math> is a constant</entry>
+</row>
+
+
+<row>
+<entry align="center">Identity function</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+
+<row>
+<entry align="center">Absolute value function </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+
+<row>
+<entry align="center">Quadratic function </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+
+<row>
+<entry align="center">Cubic function </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+
+</entry>
+</row>
+
+<row>
+<entry align="center">Reciprocal function </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+
+<row>
+<entry align="center">Reciprocal squared function </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+
+<row>
+<entry align="center">Square root function </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mi>x</m:mi>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+
+<row>
+<entry align="center">Cube root function </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mroot>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:mroot>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></section><section id="fs-id1165137692068" class="key-concepts">
+  <title>Key Concepts</title>
+  <list id="fs-id1165137851183"><item>A relation is a set of ordered pairs. A function is a specific type of relation in which each domain value, or input, leads to exactly one range value, or output. See <link target-id="Example_01_01_01"/> and <link target-id="Example_01_01_02"/>.</item>
+   <item>Function notation is a shorthand method for relating the input to the output in the form <m:math>
+    <m:mrow>
+     <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+   </m:math> See <link target-id="Example_01_01_03"/> and <link target-id="Example_01_01_04"/>.</item>
+   <item>In tabular form, a function can be represented by rows or columns that relate to input and output values. See <link target-id="Example_01_01_05"/>.</item>
+   <item>To evaluate a function, we determine an output value for a corresponding input value. Algebraic forms of a function can be evaluated by replacing the input variable with a given value. See <link target-id="Example_01_01_06"/> and <link target-id="Example_01_01_07"/>.</item>
+   <item>To solve for a specific function value, we determine the input values that yield the specific output value. See <link target-id="Example_01_01_08"/>.</item>
+   <item>An algebraic form of a function can be written from an equation. See <link target-id="Example_01_01_09"/> and <link target-id="Example_01_01_10"/>.</item>
+   <item>Input and output values of a function can be identified from a table. See <link target-id="Example_01_01_11"/>.</item>
+   <item>Relating input values to output values on a graph is another way to evaluate a function. See <link target-id="Example_01_01_12"/>.</item>
+   <item>A function is one-to-one if each output value corresponds to only one input value. See <link target-id="Example_01_01_13"/>.</item>
+   <item>A graph represents a function if any vertical line drawn on the graph intersects the graph at no more than one point. See <link target-id="Example_01_01_14"/>.</item>
+   <item>The graph of a one-to-one function passes the horizontal line test. See <link target-id="Example_01_01_15"/>.</item>
+  </list></section>
+
+
+</document>

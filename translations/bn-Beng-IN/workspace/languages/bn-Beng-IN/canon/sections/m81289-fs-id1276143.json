@@ -1,0 +1,103 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81289",
+  "section": "fs-id1276143",
+  "resolved_title": "Add and Subtract Fractions with Different Denominators",
+  "scope": "Complete assigned subtree: explanation, four-step procedure, six worked examples, twelve practice exercises and all eighteen supplied solutions; all six table accessibility labels and thirteen source-image descriptions.",
+  "source_sha256": "bfaa71d9e1dcfa775dd6525ba2fbc9ecf0ce17e6833d8dcaca9bb2f259361fa3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR07", "TR02", "TR03", "WB11"],
+      "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv", "languages/bn-Beng-IN/terminology.tsv", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p025.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p025.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p026.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p026.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p104.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p104.png"],
+      "decision": "Read the newly frozen TR07 pages directly, including OCR and all three actual page images. The paired question/answer confirms LCM(4,6)=12, common multiples 12,24,36, and the expansion লঘিষ্ঠ সাধারণ গুণিতক. Use this for the denominator LCM instruction and the abbreviation ল.সা.গু.; it does not directly attest the exact LCD phrase. The unrelated incomplete product-identity answer at p.104 is excluded. The current eighteen-exemplar bank is a bounded register reference, not certification."
+    },
+    {
+      "stage": "during arithmetic, factor and algebraic explanation drafting",
+      "examples": ["TR02", "TR03", "WB11"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt"],
+      "decision": "Returned to the actual equivalent-fraction and simplest-form passages, and the like-term definition. Retain সমতুল ভগ্নাংশ and সদৃশ পদ. Explain missing factors as additional occurrences in a prime-factor decomposition, not the absence of that prime altogether. State that simplest-form integer numerator and denominator share no factor other than 1. Distinguish unlike numerator terms from the separate absence of a removable common factor."
+    },
+    {
+      "stage": "pre-admission source and Bengali review",
+      "examples": ["TR02", "TR03", "WB11"],
+      "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.png"],
+      "decision": "Reread the OCR and inspected both page images again after translation. Confirmed the printed exception for factor 1 in TR03 and the actual WB11 examples 8x/6x and xy/−3xy, distinct from unlike 6x/8. Preserve source mathematical punctuation in surrounding Bengali slots. The p.51 incorrect intermediate denominator and p.189 preceding inconsistent 4k list are excluded. No additional lexical change was needed after these checks."
+    }
+  ],
+  "editorial_decisions": [
+    {"source_ids": ["fs-id2684867", "fs-id1544257", "fs-id3216933", "fs-id4333649", "eip-id1168466319808"], "decision": "Count repeated prime factors: 36 requires two 2s and two 3s. Relative to this, 12 needs one additional 3 and 18 one additional 2. For LCD 120, 15 needs three additional 2s (multiplier 8) and 24 one additional 5. These are not cancellation steps."},
+    {"source_ids": ["eip-id1168466144855", "eip-id1168466426391", "eip-id1168468285390", "eip-id1168466319808", "eip-id1168466855270", "eip-id1168467320994"], "decision": "Before addition/subtraction, source simplify means calculating products while retaining the common denominator. Only after the operation is the resulting fraction reduced by common factors. Bengali step labels make this order explicit."},
+    {"source_ids": ["fs-id2427683", "fs-id1730525", "fs-id2215700"], "decision": "The variables occur only in numerators; all denominators are fixed positive integers. Do not add a nonzero-variable restriction. Symbolic checks include zero."},
+    {"source_ids": ["eip-id1168468230268", "fs-id2474611"], "decision": "Inspected actual pixels. The red 8s/5s in figure032-02 are newly introduced multipliers for the LCD, not factors being cancelled. Figure015's English annotation remains in the unchanged source pixels; the Bengali description explains its missing-factor markers. These are accessibility clarifications, not wrong-answer-image claims."},
+    {"source_ids": ["fs-id1976979", "eip-id1168466855270"], "decision": "The displayed initial expression is −11/30+23/42. A MathML mrow without visible fences is a layout group, not an added pair of arithmetic parentheses. Verification follows the displayed operators/fences, correctly obtaining 19/105; the original MathML is unmodified."}
+  ],
+  "source_errata": [
+    {"kind": "source_definition_clarified", "source_ids": ["fs-id1598176", "fs-id1960505"], "source_issue": "The prose omits the common factor 1 and the second explanation cites primality alone.", "bengali_correction": "1 ছাড়া আর কোনো সাধারণ গুণনীয়ক নেই। 31 মৌলিক এবং 36 সংখ্যাটি 31 দিয়ে নিঃশেষে বিভাজ্য নয়।", "policy": "Make the existing explanation precise; keep all source numbers, expressions and pixels unchanged.", "status": "preserved_with_warning"},
+    {"kind": "source_definition_clarified", "source_ids": ["fs-id1584847"], "source_issue": "Unlike numerator terms alone do not rule out a removable numerator/denominator common factor.", "bengali_correction": "পদ দুটি সদৃশ নয়; এখানে লব ও হরে বাদ দিয়ে আরও সরল করার মতো সাধারণ গুণনীয়কও নেই।", "policy": "Explain both facts in the existing paragraph; retain (24+5x)/40 exactly.", "status": "preserved_with_warning"}
+  ],
+  "image_checks": [
+    {"media_id": "eip-id1168467195192", "file": "CNX_BMath_Figure_04_05_029_img-01.png", "observed": "Prime factors of 2 and 3; LCD 6."},
+    {"media_id": "eip-id1168468757936", "file": "CNX_BMath_Figure_04_05_029_img-02.png", "observed": "(1×3)/(2×3)+(1×2)/(3×2); added multipliers 3 and 2 in red."},
+    {"media_id": "eip-id1168467313638", "file": "CNX_BMath_Figure_04_05_030_img-01.png", "observed": "2 and 4=2×2; LCD 4."},
+    {"media_id": "eip-id1168466034872", "file": "CNX_BMath_Figure_04_05_030_img-02.png", "observed": "(1×2)/(2×2)−(−1/4), red multiplier 2; negative second fraction retains visible parentheses."},
+    {"media_id": "eip-id1168469563657", "file": "CNX_BMath_Figure_04_05_031_img-01.png", "observed": "12=2×2×3; 18=2×3×3; LCD 36."},
+    {"media_id": "eip-id1168468271675", "file": "CNX_BMath_Figure_04_05_031_img-02.png", "observed": "(7×3)/(12×3)+(5×2)/(18×2); red multipliers 3 and 2."},
+    {"media_id": "fs-id2474611", "file": "CNX_BMath_Figure_04_05_015.jpg", "observed": "Aligned prime factors for 12 and 18 have blank extra-factor positions for 3 and 2; red English missing-factors annotation; LCD 36 below."},
+    {"media_id": "eip-id1168469519946", "file": "CNX_BMath_Figure_04_05_032_img-01.png", "observed": "15=3×5 and 24=2×2×2×3; LCD 120."},
+    {"media_id": "eip-id1168468230268", "file": "CNX_BMath_Figure_04_05_032_img-02.png", "observed": "(7×8)/(15×8)−(19×5)/(24×5), red inserted multipliers 8 and 5; no cancellation marks."},
+    {"media_id": "eip-id1168468614224", "file": "CNX_BMath_Figure_04_05_033_img-01.png", "observed": "30=2×3×5 and 42=2×3×7; LCD 210."},
+    {"media_id": "eip-id1168468567274", "file": "CNX_BMath_Figure_04_05_033_img-02.png", "observed": "Negative first fraction (11×7)/(30×7), plus positive (23×5)/(42×5); red multipliers 7 and 5."},
+    {"media_id": "eip-id1168468646686", "file": "CNX_BMath_Figure_04_05_034_img-01.png", "observed": "5 and 8=2×2×2; LCD 40."},
+    {"media_id": "eip-id1168469473384", "file": "CNX_BMath_Figure_04_05_034_img-02.png", "observed": "(3×8)/(5×8)+(x×5)/(8×5); red multipliers 8 and 5."}
+  ],
+  "answer_checks": [
+    {"exercise_id": "fs-id2579343", "result": "5/6", "checked_solution_expressions": 3, "lcd": 6},
+    {"exercise_id": "fs-id2751036", "result": "7/12", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id2637969", "result": "7/10", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id3360192", "result": "3/4", "checked_solution_expressions": 4, "lcd": 4},
+    {"exercise_id": "fs-id3326333", "result": "5/8", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id2362973", "result": "1/2", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id1931320", "result": "31/36", "checked_solution_expressions": 3, "lcd": 36},
+    {"exercise_id": "fs-id2218297", "result": "79/60", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id1246713", "result": "103/60", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id3322510", "result": "-13/40", "checked_solution_expressions": 5, "lcd": 120},
+    {"exercise_id": "fs-id1805524", "result": "1/96", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id1512468", "result": "75/224", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id1976979", "result": "19/105", "checked_solution_expressions": 5, "lcd": 210},
+    {"exercise_id": "fs-id2170248", "result": "37/210", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id2375300", "result": "-25/96", "checked_solution_expressions": 1},
+    {"exercise_id": "fs-id2427683", "result": "(24+5x)/40", "checked_solution_expressions": 3, "lcd": 40, "variable": "x"},
+    {"exercise_id": "fs-id1730525", "result": "(3y+14)/18", "checked_solution_expressions": 1, "variable": "y"},
+    {"exercise_id": "fs-id2215700", "result": "(5x+14)/30", "checked_solution_expressions": 1, "variable": "x"}
+  ],
+  "language_gaps": [
+    "TR07 directly attests লঘিষ্ঠ সাধারণ গুণিতক, not the exact phrase লঘিষ্ঠ সাধারণ হর. LCD wording remains provisional ledger T011 rather than a newly claimed canonical quotation.",
+    "The explanatory language for repeated prime-factor occurrences is editorial, informed by the actual equivalent-fraction and factor witnesses. This record does not claim West Bengal curriculum or human-review certification."
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "4533f783931d0c79af439f94b54a6e825746791f0359b27dc29cfdbb7c86ad51",
+    "method": "Read-only build.translated() and in-memory render_cnxml(study_labels=True); exact source exercise-to-solution-ID mapping; direct inspection of all thirteen source images; all eighteen source-bound answer checks and six LCM checks. Fifteen numerical answers and every numerical worked table expression agree using exact rational arithmetic. Three symbolic answers and worked expressions agree by algebraic inspection and exact substitution at −5, −2/3, 0, 1, 5/2 and 4. No shared-script, media or generated-output writes.",
+    "nodes": 860,
+    "ids": 135,
+    "mathml": 75,
+    "linguistic_mtext_replacements": 0,
+    "paragraphs": 41,
+    "paragraph_mappings": 29,
+    "examples": 6,
+    "exercises": 18,
+    "supplied_solutions": 18,
+    "source_absent_solutions": 0,
+    "tables": 6,
+    "translated_aria_labels": 6,
+    "node_slot_mappings": 33,
+    "images": 13,
+    "html_fragment_characters": 31546,
+    "html_unique_ids": 135,
+    "english_prose_gate": "passed",
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integration and actual desktop/narrow visual review remain required. This entire subtree is complete as a draft; the corpus assignment continues immediately into this module's full section exercises.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

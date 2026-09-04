@@ -1,0 +1,48 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81295",
+  "section": "fs-id2583328",
+  "scope": "Second readiness note, including one problem, supplied answer and exact review link.",
+  "source_sha256": "c22d14bb2b833ed20ea5a7aa95d0e50b7810e8930834bd61993b8431dcfd02c3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR01", "TR05"],
+      "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv:TR01,TR05", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt", "languages/bn-Beng-IN/translations/m81286-fs-id2081411.bn-Beng-IN.cnxml"],
+      "decision": "TR01 controls fraction terms; use the established direct command গুণ করো and preserve the source product and supplied fraction answer."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR01", "TR05"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt:fraction-definition passage", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt:multiplication/product passage"],
+      "decision": "Keep the readiness prompt concise; the source does not ask to reduce or explain steps."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": ["TR01"],
+      "read": ["exact source fs-id2583328 subtree", "languages/bn-Beng-IN/translations/m81295-fs-id2583328.bn-Beng-IN.cnxml"],
+      "decision": "Rechecked (3/10)(9/10)=27/100, all six IDs, two MathML roots and original m81286/fs-id1863495 routing."
+    },
+    {
+      "stage": "pre-closure evidence audit",
+      "examples": ["TR01", "TR05"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.png", "exact final fs-id2583328 reader"],
+      "decision": "The fresh page-image check confirms লব/হর on p.50 and the direct গুণ/গুণফল register on p.78. The concise readiness command and exact 27/100 supplied answer need no revision; TR05 remains only a bounded product-language witness."
+    }
+  ],
+  "source_errata": [],
+  "checks": ["Exact arithmetic (3/10)(9/10)=27/100 checked independently; one question and one supplied answer preserved."],
+  "language_gaps": ["TR05 supplies a bounded product register witness, not a decimal multiplication algorithm; independent human and AT review is pending."],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "7af76849b64785f2583f668ca3c501755743c29896cffb851c805d93b73f8fe8",
+    "reader_sha256": "e006d6dbe428cd78f5b0001c6ef5fc6f402a5a5954a4339058d738c7f32b4af5",
+    "method": "Read-only build.translated and section renderer passed exact source tags, IDs, link attributes, MathML and English-prose gate.",
+    "nodes": 27,
+    "ids": 6,
+    "mathml": 2,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integrates the complete module and performs desktop/narrow visual review. Entire assignment continues; no independent publishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

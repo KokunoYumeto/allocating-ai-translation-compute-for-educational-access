@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi-Latn-VN" xml:lang="vi-Latn-VN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bài tập đại số: quan hệ nào là hàm số?</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">html { color: #182b35; background: #f8f6f1; font-size: 18px; }
+body { max-width: 52rem; margin: 0 auto; padding: 2.5rem 1.3rem 4rem; line-height: 1.65; font-family: "Noto Sans", "Segoe UI", Arial, sans-serif; }
+header { border-bottom: 3px solid #216c68; margin-bottom: 2rem; }
+h1,h2,h3 { line-height: 1.25; color: #175a57; break-after: avoid; }
+h1 { font-size: 2.3rem; } h2 { margin-top: 2.5rem; } h3 { margin-top: 1.8rem; }
+a { color: #075d99; text-underline-offset: .15em; }
+nav { background: #edf0e8; border-radius: .4rem; padding: 1rem 1.4rem; }
+table { border-collapse: collapse; margin: 1.2rem auto; min-width: 55%; }
+th,td { border: 1px solid #98aaa9; padding: .4rem 1rem; }
+th { background: #e2eeea; }
+img { display: block; max-width: 100%; height: auto; margin: 1rem auto; }
+figure { margin: 1.4rem 0; } figcaption { font-size: .9rem; }
+pre { overflow-x: auto; background: #edf0e8; padding: 1rem; border-radius: .3rem; }
+code { font-size: .88em; }
+math[display="block"] { overflow-x: auto; overflow-y: hidden; padding: .6rem 0; }
+:target { scroll-margin-top: 1rem; outline: 2px solid #c3dcd0; }
+@media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.9rem; } body { padding: 1rem; } table { width: 100%; } th,td { padding: .35rem .5rem; } }
+@media print { html { background: white; font-size: 11pt; } body { max-width: none; padding: 0; } nav { display: none; } img,table,pre { break-inside: avoid; } a { color: inherit; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Bài tập đại số: quan hệ nào là hàm số?</h1>
+<p class="subtitle">A30 · Bài tự học 010 · Bản dịch thử nghiệm 0.1</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#vi-prerequisites" id="toc-vi-prerequisites">Phạm vi và
+cách làm</a></li>
+<li><a href="#fs-id1165134080937" id="toc-fs-id1165134080937">Bài tập
+đại số — Nhận dạng hàm số</a></li>
+<li><a href="#vi-answers" id="toc-vi-answers">Đáp án và lời
+giải</a></li>
+<li><a href="#vi-next" id="toc-vi-next">Tự kiểm tra và phần tiếp
+theo</a></li>
+<li><a href="#vi-attribution" id="toc-vi-attribution">Nguồn và ghi
+công</a></li>
+</ul>
+</nav>
+<h2 id="vi-prerequisites">Phạm vi và cách làm</h2>
+<p>Bài này dịch hai nhóm đầu của phần <strong>Algebraic</strong> trong
+mô-đun <code>m49301</code>: 21 bài tập liên tiếp, theo thứ tự nguồn là
+Bài 6–26. Hai chỉ dẫn chung và mọi công thức được giữ lại. Nguồn có đáp
+án cho 10 bài; 11 bài còn lại không có lời giải trong đoạn nguồn này.
+Tất cả phần giải thích mới đều được đánh dấu là bổ sung.</p>
+<p><em>Hướng dẫn bổ sung:</em> Trước hết hãy xác định đầu vào, rồi xét
+xem mỗi đầu vào trong tập xác định có đúng một đầu ra hay không. Để bác
+bỏ, chỉ cần tìm một đầu vào có hai đầu ra khác nhau. Khi giải phương
+trình, phải giữ các điều kiện xác định và kiểm tra tính tương đương của
+các phép biến đổi. Bạn có thể tự làm trước rồi theo liên kết đến lời
+giải.</p>
+<h2 id="fs-id1165134080937">Bài tập đại số — Nhận dạng hàm số</h2>
+<div id="fs-id1165134080942">
+<p>Với các bài tập sau, hãy xác định quan hệ có biểu diễn một hàm số hay
+không.</p>
+</div>
+<p><em>Quy ước bổ sung cho Bài 6–7:</em> Các chữ khác nhau chỉ các phần
+tử khác nhau. Đây là các nhãn của phần tử, không phải những biến số có
+thể được gán cùng một giá trị. Quy ước này làm rõ cách hiểu của các bài
+tập bằng ký hiệu chữ.</p>
+<h3 id="fs-id1165134080945">Bài 6</h3>
+<div id="fs-id1165134080947">
+<div id="fs-id1165132967123">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165132967123:0">
+<mrow> <mrow><mo>{</mo> <mrow> <mrow><mo>(</mo> <mrow>
+<mi>a</mi><mo>,</mo><mi>b</mi></mrow>
+<mo>)</mo></mrow><mo>,</mo><mspace width="0.5em"></mspace><mrow><mo>(</mo>
+<mrow> <mi>c</mi><mo>,</mo><mi>d</mi></mrow>
+<mo>)</mo></mrow><mo>,</mo><mspace width="0.5em"></mspace><mrow><mo>(</mo>
+<mrow> <mi>a</mi><mo>,</mo><mi>c</mi></mrow> <mo>)</mo></mrow></mrow>
+<mo>}</mo></mrow></mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-6">Lời giải Bài 6</a></p>
+<h3 id="fs-id1165135570225">Bài 7</h3>
+<div id="fs-id1165135570227">
+<div id="fs-id1165137530462">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137530462:0">
+<mrow>
+<mo>{</mo><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo><mo>,</mo><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo><mo>,</mo><mo stretchy="false">(</mo><mi>c</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo><mo>}</mo></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165135318977">Lời giải Bài 7</a></p>
+<div id="fs-id1165135318984">
+<p>Với các bài tập sau, hãy xác định quan hệ có biểu diễn
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135318984:0">
+<mrow> <mi>y</mi></mrow> </math> như một hàm số của
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135318984:1">
+<mrow> <mi>x</mi><mo>.</mo> </mrow> </math></p>
+</div>
+<p><em>Quy ước bổ sung cho Bài 8–26:</em> Xét các số thực. Tập các đầu
+vào của quan hệ gồm những giá trị
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+xuất hiện trong ít nhất một cặp nghiệm thực
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math>.
+Ta kiểm tra tính duy nhất của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+trên tập ấy, không tự giả sử tập xác định luôn là toàn bộ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="double-struck">ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.</p>
+<h3 id="fs-id1165137841682">Bài 8</h3>
+<div id="fs-id1165137841684">
+<div id="fs-id1165137841686">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137841686:0">
+<mrow>
+<mn>5</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>10</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#vi-sol-8">Lời giải Bài 8</a></p>
+<h3 id="fs-id1165137925514">Bài 9</h3>
+<div id="fs-id1165135628498">
+<div id="fs-id1165135628500">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135628500:0">
+<mrow> <mi>y</mi><mo>=</mo><msup> <mi>x</mi> <mn>2</mn> </msup> </mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165137942475">Lời giải Bài 9</a></p>
+<h3 id="fs-id1165137942483">Bài 10</h3>
+<div id="fs-id1165137722399">
+<div id="fs-id1165137722401">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137722401:0">
+<mrow> <mi>x</mi><mo>=</mo><msup> <mi>y</mi> <mn>2</mn> </msup> </mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#vi-sol-10">Lời giải Bài 10</a></p>
+<h3 id="fs-id1165135394228">Bài 11</h3>
+<div id="fs-id1165135394230">
+<div id="fs-id1165135394232">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135394232:0">
+<mrow> <mn>3</mn><msup> <mi>x</mi> <mn>2</mn> </msup>
+<mo>+</mo><mi>y</mi><mo>=</mo><mn>14</mn></mrow> </math></p>
+</div>
+</div>
+<p><a href="#fs-id1165135675187">Lời giải Bài 11</a></p>
+<h3 id="fs-id1165135675195">Bài 12</h3>
+<div id="fs-id1165135173422">
+<div id="fs-id1165135173424">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135173424:0">
+<mrow> <mn>2</mn><mi>x</mi><mo>+</mo><msup> <mi>y</mi> <mn>2</mn>
+</msup> <mo>=</mo><mn>6</mn></mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-12">Lời giải Bài 12</a></p>
+<h3 id="fs-id1165137864148">Bài 13</h3>
+<div id="fs-id1165134085981">
+<div id="fs-id1165134085983">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134085983:0">
+<mrow> <mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><msup> <mi>x</mi>
+<mn>2</mn> </msup> <mo>+</mo><mn>40</mn><mi>x</mi></mrow> </math></p>
+</div>
+</div>
+<p><a href="#fs-id1165137679348">Lời giải Bài 13</a></p>
+<h3 id="fs-id1165137679356">Bài 14</h3>
+<div id="fs-id1165137924374">
+<div id="fs-id1165137924377">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137924377:0">
+<mrow> <mi>y</mi><mo>=</mo><mfrac> <mn>1</mn> <mi>x</mi> </mfrac>
+</mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-14">Lời giải Bài 14</a></p>
+<h3 id="fs-id1165137661060">Bài 15</h3>
+<div id="fs-id1165137661062">
+<div id="fs-id1165137661065">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137661065:0">
+<mrow> <mi>x</mi><mo>=</mo><mfrac> <mrow>
+<mn>3</mn><mi>y</mi><mo>+</mo><mn>5</mn></mrow> <mrow>
+<mn>7</mn><mi>y</mi><mo>−</mo><mn>1</mn></mrow> </mfrac> </mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165135581209">Lời giải Bài 15</a></p>
+<h3 id="fs-id1165135581214">Bài 16</h3>
+<div id="fs-id1165135581216">
+<div id="fs-id1165135581218">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135581218:0">
+<mrow> <mi>x</mi><mo>=</mo><msqrt> <mrow> <mn>1</mn><mo>−</mo><msup>
+<mi>y</mi> <mn>2</mn> </msup> </mrow> </msqrt> </mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-16">Lời giải Bài 16</a></p>
+<h3 id="fs-id1165133202429">Bài 17</h3>
+<div id="fs-id1165133202431">
+<div id="fs-id1165133202434">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165133202434:0">
+<mrow> <mi>y</mi><mo>=</mo><mfrac> <mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow> <mrow>
+<mn>7</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow> </mfrac> </mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165134042765">Lời giải Bài 17</a></p>
+<h3 id="fs-id1165134042772">Bài 18</h3>
+<div id="fs-id1165134042774">
+<div id="fs-id1165134042776">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134042776:0">
+<mrow> <msup> <mi>x</mi> <mn>2</mn> </msup> <mo>+</mo><msup> <mi>y</mi>
+<mn>2</mn> </msup> <mo>=</mo><mn>9</mn></mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-18">Lời giải Bài 18</a></p>
+<h3 id="fs-id1165137887434">Bài 19</h3>
+<div id="fs-id1165137887436">
+<div id="fs-id1165134329782">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134329782:0">
+<mrow> <mn>2</mn><mi>x</mi><mi>y</mi><mo>=</mo><mn>1</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165135434851">Lời giải Bài 19</a></p>
+<h3 id="fs-id1165137658561">Bài 20</h3>
+<div id="fs-id1165137658563">
+<div id="fs-id1165137658565">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137658565:0">
+<mrow> <mi>x</mi><mo>=</mo><msup> <mi>y</mi> <mn>3</mn> </msup> </mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#vi-sol-20">Lời giải Bài 20</a></p>
+<h3 id="fs-id1165137777686">Bài 21</h3>
+<div id="fs-id1165137777688">
+<div id="fs-id1165137777690">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137777690:0">
+<mrow> <mi>y</mi><mo>=</mo><msup> <mi>x</mi> <mn>3</mn> </msup> </mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165137849364">Lời giải Bài 21</a></p>
+<h3 id="fs-id1165137892513">Bài 22</h3>
+<div id="fs-id1165137892515">
+<div id="fs-id1165137892517">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137892517:0">
+<mrow> <mi>y</mi><mo>=</mo><msqrt> <mrow> <mn>1</mn><mo>−</mo><msup>
+<mi>x</mi> <mn>2</mn> </msup> </mrow> </msqrt> </mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-22">Lời giải Bài 22</a></p>
+<h3 id="fs-id1165134216874">Bài 23</h3>
+<div id="fs-id1165134216877">
+<div id="fs-id1165134216879">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134216879:0">
+<mrow> <mi>x</mi><mo>=</mo><mo>±</mo><msqrt> <mrow>
+<mn>1</mn><mo>−</mo><mi>y</mi></mrow> </msqrt> </mrow> </math></p>
+</div>
+</div>
+<p><a href="#fs-id1165135527680">Lời giải Bài 23</a></p>
+<h3 id="fs-id1165135538770">Bài 24</h3>
+<div id="fs-id1165135538772">
+<div id="fs-id1165135538774">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135538774:0">
+<mrow> <mi>y</mi><mo>=</mo><mo>±</mo><msqrt> <mrow>
+<mn>1</mn><mo>−</mo><mi>x</mi></mrow> </msqrt> </mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-24">Lời giải Bài 24</a></p>
+<h3 id="fs-id1165135203596">Bài 25</h3>
+<div id="fs-id1165135203598">
+<div id="fs-id1165135203600">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135203600:0">
+<mrow> <msup> <mi>y</mi> <mn>2</mn> </msup> <mo>=</mo><msup> <mi>x</mi>
+<mn>2</mn> </msup> </mrow> </math></p>
+</div>
+</div>
+<p><a href="#fs-id1165137629243">Lời giải Bài 25</a></p>
+<h3 id="fs-id1165137599984">Bài 26</h3>
+<div id="fs-id1165137599986">
+<div id="fs-id1165137599988">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137599988:0">
+<mrow> <msup> <mi>y</mi> <mn>3</mn> </msup> <mo>=</mo><msup> <mi>x</mi>
+<mn>2</mn> </msup> </mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-26">Lời giải Bài 26</a></p>
+<h2 id="vi-answers">Đáp án và lời giải</h2>
+<h3 id="vi-sol-6">Bài 6 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Không phải là hàm số.</strong> Theo quy ước các chữ khác nhau
+là các nhãn khác nhau, đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+xuất hiện trong hai cặp
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(a,c)</annotation></semantics></math>,
+với hai đầu ra khác nhau
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+Chỉ một đầu vào như vậy đã đủ để bác bỏ tính chất hàm số.</p>
+<p><a href="#fs-id1165134080945">Trở lại đề Bài 6</a></p>
+<h3 id="fs-id1165135318977">Bài 7 — Lời giải</h3>
+<div id="fs-id1165135318979">
+<p><strong>Đáp án nguồn:</strong> Là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Các đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a,b,c</annotation></semantics></math>
+lần lượt có một đầu ra là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">b,c,c</annotation></semantics></math>.
+Hai đầu vào khác nhau
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+cùng cho đầu ra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+không vi phạm định nghĩa hàm số.</p>
+<p><a href="#fs-id1165135570225">Trở lại đề Bài 7</a></p>
+<h3 id="vi-sol-8">Bài 8 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Là hàm số.</strong> Giải theo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+được
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>y</mi><mo>=</mo><mn>10</mn><mo>−</mo><mn>5</mn><mi>x</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>y</mi><mo>=</mo><mn>5</mn><mo>−</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mi>x</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">2y=10-5x,\qquad y=5-\frac{5}{2}x.</annotation></semantics></math>
+Mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>
+xác định đúng một
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165137841682">Trở lại đề Bài 8</a></p>
+<h3 id="fs-id1165137942475">Bài 9 — Lời giải</h3>
+<div id="fs-id1165137942477">
+<p><strong>Đáp án nguồn:</strong> Là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Với mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>,
+bình phương
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>2</mn></msup><annotation encoding="application/x-tex">x^2</annotation></semantics></math>
+là một số xác định duy nhất. Các đầu vào đối nhau có thể cho cùng một
+đầu ra; điều đó không làm mất tính chất hàm số.</p>
+<p><a href="#fs-id1165137925514">Trở lại đề Bài 9</a></p>
+<h3 id="vi-sol-10">Bài 10 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Không phải là hàm số của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</strong>
+Khi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math>,
+cả
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">y=1</annotation></semantics></math>
+lẫn
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">y=-1</annotation></semantics></math>
+đều thỏa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x=y^2</annotation></semantics></math>.
+Một đầu vào có hai đầu ra khác nhau. Tập các đầu vào xuất hiện trong
+quan hệ là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>+</mi><mi>∞</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[0,+\infty)</annotation></semantics></math>;
+tại
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>
+chỉ có một đầu ra, nhưng phản ví dụ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math>
+vẫn đủ.</p>
+<p><a href="#fs-id1165137942483">Trở lại đề Bài 10</a></p>
+<h3 id="fs-id1165135675187">Bài 11 — Lời giải</h3>
+<div id="fs-id1165135675189">
+<p><strong>Đáp án nguồn:</strong> Là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Chuyển vế được
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y=14-3x^2</annotation></semantics></math>.
+Mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>
+xác định đúng một
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165135394228">Trở lại đề Bài 11</a></p>
+<h3 id="vi-sol-12">Bài 12 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Không phải là hàm số của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</strong>
+Chọn
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math>:
+phương trình trở thành
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">2+y^2=6</annotation></semantics></math>,
+nên cả
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">y=2</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">y=-2</annotation></semantics></math>
+đều thỏa. Tập các đầu vào thực là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>∞</mi><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">(-\infty,3]</annotation></semantics></math>,
+nhưng có những đầu vào trong tập này cho hai đầu ra.</p>
+<p><a href="#fs-id1165135675195">Trở lại đề Bài 12</a></p>
+<h3 id="fs-id1165137679348">Bài 13 — Lời giải</h3>
+<div id="fs-id1165137679350">
+<p><strong>Đáp án nguồn:</strong> Là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Công thức
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>−</mi><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>40</mn><mi>x</mi></mrow><annotation encoding="application/x-tex">y=-2x^2+40x</annotation></semantics></math>
+cho đúng một giá trị
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+với mỗi số thực
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165137864148">Trở lại đề Bài 13</a></p>
+<h3 id="vi-sol-14">Bài 14 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Là hàm số trên
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">ℝ</mi><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}\setminus\{0\}</annotation></semantics></math>.</strong>
+Với mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\ne0</annotation></semantics></math>,
+nghịch đảo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">1/x</annotation></semantics></math>
+là duy nhất. Công thức không xác định tại
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>;
+điều này xác định một giá trị cần loại khỏi tập xác định, không phải một
+đầu vào có hai đầu ra.</p>
+<p><a href="#fs-id1165137679356">Trở lại đề Bài 14</a></p>
+<h3 id="fs-id1165135581209">Bài 15 — Lời giải</h3>
+<div id="fs-id1165135581210">
+<p><strong>Đáp án nguồn:</strong> Là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Điều kiện của phân thức ban đầu là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mi>y</mi><mo>−</mo><mn>1</mn><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">7y-1\ne0</annotation></semantics></math>.
+Từ phương trình nguồn, ta có
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mn>7</mn><mi>y</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>3</mn><mi>y</mi><mo>+</mo><mn>5</mn><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mn>7</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mi>y</mi><mo>=</mo><mi>x</mi><mo>+</mo><mn>5</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">x(7y-1)=3y+5,\qquad (7x-3)y=x+5.</annotation></semantics></math>
+Nếu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn><mi>/</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">x=3/7</annotation></semantics></math>,
+phương trình sau trở thành
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mn>38</mn><mi>/</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">0=38/7</annotation></semantics></math>,
+vô lý. Với
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>3</mn><mi>/</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">x\ne3/7</annotation></semantics></math>,
+có đúng một giá trị
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mrow><mn>7</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">y=\frac{x+5}{7x-3}.</annotation></semantics></math>
+Giá trị ấy thỏa điều kiện ban đầu vì
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mi>y</mi><mo>−</mo><mn>1</mn><mo>=</mo><mfrac><mn>38</mn><mrow><mn>7</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow></mfrac><mo>≠</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">7y-1=\frac{38}{7x-3}\ne0.</annotation></semantics></math>
+Vậy tập xác định theo đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">ℝ</mi><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mn>3</mn><mi>/</mi><mn>7</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}\setminus\{3/7\}</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165137661060">Trở lại đề Bài 15</a></p>
+<h3 id="vi-sol-16">Bài 16 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Không phải là hàm số của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</strong>
+Khi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>,
+cả
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">y=1</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">y=-1</annotation></semantics></math>
+đều cho
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sqrt{1-y^2}=0</annotation></semantics></math>.
+Do đó cùng một đầu vào có hai đầu ra khác nhau.</p>
+<p>Căn bậc hai ở vế phải không âm và không vượt quá 1, nên tập các đầu
+vào thực là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.
+Nếu bình phương hai vế, phải giữ điều kiện
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\ge0</annotation></semantics></math>;
+không được thay quan hệ ban đầu bằng toàn bộ đường tròn
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^2+y^2=1</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165135581214">Trở lại đề Bài 16</a></p>
+<h3 id="fs-id1165134042765">Bài 17 — Lời giải</h3>
+<div id="fs-id1165134042767">
+<p><strong>Đáp án nguồn:</strong> Là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Mẫu số khác 0 khi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>1</mn><mi>/</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">x\ne1/7</annotation></semantics></math>.
+Với mỗi đầu vào như vậy, công thức đã cho xác định đúng một giá trị
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.
+Tập xác định là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">ℝ</mi><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mi>/</mi><mn>7</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}\setminus\{1/7\}</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165133202429">Trở lại đề Bài 17</a></p>
+<h3 id="vi-sol-18">Bài 18 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Không phải là hàm số của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</strong>
+Với
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>,
+hai giá trị
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">y=3</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>−</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">y=-3</annotation></semantics></math>
+đều thỏa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">x^2+y^2=9</annotation></semantics></math>.
+Tập các đầu vào của quan hệ là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mn>3</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[-3,3]</annotation></semantics></math>.
+Không cần mọi đầu vào đều có hai đầu ra để kết luận quan hệ không phải
+là hàm số.</p>
+<p><a href="#fs-id1165134042772">Trở lại đề Bài 18</a></p>
+<h3 id="fs-id1165135434851">Bài 19 — Lời giải</h3>
+<div id="fs-id1165135434853">
+<p><strong>Đáp án nguồn:</strong> Là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Không có nghiệm khi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>,
+vì vế trái khi ấy bằng 0 chứ không bằng 1. Với
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\ne0</annotation></semantics></math>,
+ta có duy nhất
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>x</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">y=\frac{1}{2x}.</annotation></semantics></math>
+Vậy tập xác định là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">ℝ</mi><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}\setminus\{0\}</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165137887434">Trở lại đề Bài 19</a></p>
+<h3 id="vi-sol-20">Bài 20 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Là hàm số.</strong> Mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>
+có đúng một căn bậc ba thực, nên
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mroot><mi>x</mi><mn>3</mn></mroot><mi>.</mi></mrow><annotation encoding="application/x-tex">y=\sqrt[3]{x}.</annotation></semantics></math>
+Khác với phương trình chứa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>y</mi><mn>2</mn></msup><annotation encoding="application/x-tex">y^2</annotation></semantics></math>,
+ở đây không thêm dấu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>±</mi><annotation encoding="application/x-tex">\pm</annotation></semantics></math>
+trước căn bậc ba.</p>
+<p><a href="#fs-id1165137658561">Trở lại đề Bài 20</a></p>
+<h3 id="fs-id1165137849364">Bài 21 — Lời giải</h3>
+<div id="fs-id1165137849366">
+<p><strong>Đáp án nguồn:</strong> Là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Với mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>,
+lũy thừa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>3</mn></msup><annotation encoding="application/x-tex">x^3</annotation></semantics></math>
+cho đúng một giá trị
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165137777686">Trở lại đề Bài 21</a></p>
+<h3 id="vi-sol-22">Bài 22 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Là hàm số trên
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[-1,1]</annotation></semantics></math>.</strong>
+Điều kiện
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1-x^2\ge0</annotation></semantics></math>
+tương đương
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1\le x\le1</annotation></semantics></math>.
+Với mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+trong khoảng đóng này, ký hiệu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{1-x^2}</annotation></semantics></math>
+chỉ căn bậc hai không âm duy nhất. Đề không có dấu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>±</mi><annotation encoding="application/x-tex">\pm</annotation></semantics></math>,
+nên không bổ sung nhánh âm.</p>
+<p><a href="#fs-id1165137892513">Trở lại đề Bài 22</a></p>
+<h3 id="fs-id1165135527680">Bài 23 — Lời giải</h3>
+<div id="fs-id1165135538764">
+<p><strong>Đáp án nguồn:</strong> Là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Dấu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>±</mi><annotation encoding="application/x-tex">\pm</annotation></semantics></math>
+nằm trong biểu thức cho đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+không phải là kết luận có hai đầu ra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.
+Bình phương hai vế cho
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>y</mi><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">x^2=1-y,\qquad y=1-x^2.</annotation></semantics></math>
+Ngược lại, nếu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y=1-x^2</annotation></semantics></math>
+thì
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mn>1</mn><mo>−</mo><mi>y</mi></mrow></msqrt><mo>=</mo><msqrt><msup><mi>x</mi><mn>2</mn></msup></msqrt><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">\sqrt{1-y}=\sqrt{x^2}=|x|</annotation></semantics></math>;
+chọn dấu thích hợp trong
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">\pm|x|</annotation></semantics></math>
+sẽ cho chính
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Vì vậy hai cách biểu diễn là tương đương, và mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>
+xác định đúng một
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165134216874">Trở lại đề Bài 23</a></p>
+<h3 id="vi-sol-24">Bài 24 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Không phải là hàm số của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</strong>
+Chọn
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>:
+đề cho
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>±</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">y=\pm1</annotation></semantics></math>,
+tức hai đầu ra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math>.
+Tập các đầu vào thực là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>∞</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">(-\infty,1]</annotation></semantics></math>.
+Dấu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>±</mi><annotation encoding="application/x-tex">\pm</annotation></semantics></math>
+trong bài này tạo hai giá trị của chính đầu ra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+khi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x&lt;1</annotation></semantics></math>.</p>
+<p><a href="#fs-id1165135538770">Trở lại đề Bài 24</a></p>
+<h3 id="fs-id1165137629243">Bài 25 — Lời giải</h3>
+<div id="fs-id1165137599978">
+<p><strong>Đáp án nguồn:</strong> Không phải là hàm số.</p>
+</div>
+<p><em>Lời giải bổ sung:</em> Chọn
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math>:
+cả
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">y=1</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">y=-1</annotation></semantics></math>
+đều thỏa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y^2=x^2</annotation></semantics></math>.
+Do đó một đầu vào có hai đầu ra khác nhau. Quan hệ có đầu vào là mọi số
+thực; riêng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>
+chỉ cho
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y=0</annotation></semantics></math>,
+nhưng không khắc phục được phản ví dụ trên.</p>
+<p><a href="#fs-id1165135203596">Trở lại đề Bài 25</a></p>
+<h3 id="vi-sol-26">Bài 26 — Lời giải</h3>
+<p><strong>Đáp án và lời giải bổ sung — nguồn không kèm lời
+giải:</strong></p>
+<p><strong>Là hàm số.</strong> Với mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>,
+số
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>2</mn></msup><annotation encoding="application/x-tex">x^2</annotation></semantics></math>
+có đúng một căn bậc ba thực:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mroot><msup><mi>x</mi><mn>2</mn></msup><mn>3</mn></mroot><mi>.</mi></mrow><annotation encoding="application/x-tex">y=\sqrt[3]{x^2}.</annotation></semantics></math>
+Đây là một đầu ra duy nhất và không âm. Không thêm dấu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>±</mi><annotation encoding="application/x-tex">\pm</annotation></semantics></math>;
+các đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">-x</annotation></semantics></math>
+cùng cho một đầu ra vẫn được phép đối với hàm số.</p>
+<p><a href="#fs-id1165137599984">Trở lại đề Bài 26</a></p>
+<h2 id="vi-next">Tự kiểm tra và phần tiếp theo</h2>
+<p><em>Các câu hỏi bổ sung:</em> Bạn có phân biệt được căn bậc hai không
+âm với hai nghiệm của một phương trình bình phương không? Vì sao Bài 23
+là hàm số dù có dấu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>±</mi><annotation encoding="application/x-tex">\pm</annotation></semantics></math>,
+còn Bài 24 thì không? Vì sao loại một điểm làm mẫu số bằng 0 khỏi tập
+xác định không tự biến một hàm số thành quan hệ không phải hàm số?</p>
+<p>Tiếp theo: nhóm bài <strong>tính giá trị của hàm số</strong>, bắt đầu
+tại <code>fs-id1165134066606</code>. Bài này chỉ bao phủ 21 bài đại số
+vừa nêu, không đánh dấu hoàn thành phần bài tập, mô-đun hay toàn bộ
+chương trình dịch.</p>
+<h2 id="vi-attribution">Nguồn và ghi công</h2>
+<p>Bản dịch độc lập <code>vi-Latn-VN</code> từ Jay Abramson và các cộng
+tác viên OpenStax, <em>Precalculus 2e</em>, mô-đun <code>m49301</code>,
+UUID <code>11f4eacc-c348-4836-8c5b-747577d249ca</code>; <a href="https://github.com/openstax/osbooks-college-algebra-bundle/tree/789b54099106b071d1d32bfcee454fed72eb4768">nguồn
+được ghim</a>. Đối chiếu với <a href="https://github.com/KokunoYumeto/openstax-precalculus-2e-id">ấn bản
+Bahasa Indonesia</a> <code>0.1.0-alpha.58-reader.1</code>.</p>
+<p>Văn bản và bản dịch A30 này theo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
+4.0</a>. Giữ nguyên ghi công tác giả và các thông báo trong
+<code>notices/</code>; các thành phần của những sách khác giữ giấy phép
+riêng. Các quy ước, hướng dẫn và lời giải được đánh dấu “bổ sung” là
+phần biên soạn thêm của bản dịch; không được gán thành đáp án của nguồn.
+Không phải ấn bản chính thức hay được tác giả nguồn bảo trợ. Được thực
+hiện với sự hỗ trợ của OpenAI Codex theo yêu cầu người dùng; chưa có
+thẩm định của người bản ngữ.</p>
+</body>
+</html>

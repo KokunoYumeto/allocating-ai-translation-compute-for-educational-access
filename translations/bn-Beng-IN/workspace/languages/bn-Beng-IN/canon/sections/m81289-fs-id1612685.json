@@ -1,0 +1,113 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81289",
+  "section": "fs-id1612685",
+  "resolved_title": "Evaluate Variable Expressions with Fractions",
+  "scope": "Entire source subsection: introduction, four worked examples, eight try exercises, all 26 paragraphs and tails, all fourteen linguistic table entries, five full table ARIA descriptions and sixteen image alternatives. All twelve source solutions remain present, covering fifteen value-substitution cases.",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["WB06", "WB07", "TR02", "TR03"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.txt",
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png",
+        "languages/bn-Beng-IN/canon/README.md",
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "languages/bn-Beng-IN/terminology.tsv"
+      ],
+      "action": "Read actual OCR and inspected both full page images, not merely the ledger. WB07 example 4 explicitly evaluates 2x²−xy+y² at x=2,y=3 through substitution and powers to 11; use মান নির্ণয় করো and preserve the scope of the exponent. WB06's grouped sum and p.191's bottom whole-numerator division support keeping p+q together above r. TR02/TR03 support equivalent-fraction and common-factor reduction wording. The ledger's সমতুল ভগ্নাংশ is retained consistently, while noting TR02's regional synonym তুল্য ভগ্নাংশ. Exclude the unrelated WB p.191 example 5's flat x2/y2 misprinting and Tripura p.51's faulty mixed-number intermediate denominator. OpenStax, not the Bengali witnesses, is the mathematical authority."
+    },
+    {
+      "stage": "during worked-step and accessibility drafting",
+      "examples": ["WB06", "WB07", "TR02", "TR03"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt"
+      ],
+      "action": "Returned to actual OCR against the page images already inspected for this section. Used the distinction between মান বসানো, ঘাতের মান নির্ণয় and final লঘিষ্ঠ আকার instead of translating every Simplify instruction identically. In the three-factor product, the intermediate step means multiplying numerators and denominators, while the next step divides both by their common factor 4. Describe that cancellation as division, not deletion of a summand. The final example makes the complete numerator sum and the given nonzero denominator 8 explicit. Source MathML commas/periods remain intact; Bengali predicates are placed before source-ending periods, with no suffix appended after them."
+    },
+    {
+      "stage": "pre-admission mathematical and language review",
+      "examples": ["WB06", "WB07", "TR02", "TR03"],
+      "read": [
+        "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png"
+      ],
+      "action": "Reopened both actual full page images after drafting and checked the previously read OCR against them. Reconfirmed exponent scope, whole-numerator grouping and common-factor reduction; no further language change was needed. Read every assembled paragraph with retained mathematical punctuation and all fourteen table-step translations. Exact Fraction arithmetic on source MathML verified all fifteen question cases and all thirteen MathML table stages; six further arithmetic stages were transcribed from the inspected exponent-example bitmaps and verified to equal −1/12. The structural gate preserves all 699 elements, 101 IDs and 68 MathML expressions without any MathML text exception. In-memory HTML has 101 unique IDs, sixteen nonempty image alternatives and five complete table ARIA labels. Parent performs full-page/offline/browser integration; no independent human certification is claimed."
+    }
+  ],
+  "language_gaps": [
+    "The selected Bengali canon directly witnesses integer-valued substitution and fractions/equivalence separately, not this exact set of negative fractional substitutions. Their combination is an editorial Bengali rendering of the OpenStax mathematics, not a claimed locally published worked example.",
+    "লঘিষ্ঠ সাধারণ হর follows existing ledger T011 and adjacent-section terminology. This section did not acquire a direct Bengali LCD lexical witness; the term remains provisional. The actual displayed least common denominators 12 and 6 were checked mathematically.",
+    "মান বসানো and the explicit fraction-reading pattern with লব, হর and the leading negative sign are accessible editorial wording. They are not claimed verbatim government-text phrasing or verified screen-reader performance."
+  ],
+  "source_observations": [
+    "Resolved the exact section ID and read its entire subtree from provenance/pilot/m81289.source.cnxml. It contains four examples and twelve exercises/solutions, with three of the exercises having two cases, hence fifteen checked answers. No source solution is missing and none was invented.",
+    "Opened all sixteen original local image files individually under downloads/canonical-prealgebra/media. The first three pairs show substitution of −1/3 and −3/4 for x, and −2/3 for y, with each substituted fraction in red. Their expressions are −1/3+1/3, −3/4+1/3 and −2/3−5/6.",
+    "The eight _039 images show 2x²y; the instruction x=1/4,y=−2/3; 2(1/4)²(−2/3); 2(1/16)(−2/3); −(2/1)(1/16)(2/3); −4/48; −(1·4)/(4·12) with both 4s crossed out; and −1/12. The x substitution is red and the y substitution blue. The descriptions preserve the base of the square and the leading negative sign.",
+    "The final _040 pair says p=−4,q=−2,r=8 and shows (−4+(−2))/8. The p and r values are red; the q value is blue. The whole numerator, not only the second term, is divided by 8.",
+    "All English text inside original bitmaps is retained as immutable source pixels and translated in full adjacent Bengali alternatives. No downloads, media copies, image edits, shared-builder changes or commits were performed by this translator.",
+    "Source MathML, including embedded sentence-ending commas and periods, is preserved exactly. No linguistic mtext node exists to translate here, so math_text is empty. The circled case tokens and list structures remain source-exact.",
+    "No arithmetic, cross-reference or image-content source error was established in this subsection. source_errata is explicitly empty. The canon errors excluded above are not errors in this OpenStax subsection."
+  ],
+  "source_errata": [],
+  "image_checks": [
+    {"media_id": "eip-id1168468460939", "file": "CNX_BMath_Figure_04_05_036_img-01.png", "observed": "Substitute −1/3 for x; fraction red."},
+    {"media_id": "eip-id1168468460949", "file": "CNX_BMath_Figure_04_05_036_img-02.png", "observed": "−1/3+1/3; first fraction red."},
+    {"media_id": "eip-id1168463773484", "file": "CNX_BMath_Figure_04_05_037_img-01.png", "observed": "Substitute −3/4 for x; fraction red."},
+    {"media_id": "eip-id1168469860627", "file": "CNX_BMath_Figure_04_05_037_img-02.png", "observed": "−3/4+1/3; first fraction red."},
+    {"media_id": "eip-id1168466426384", "file": "CNX_BMath_Figure_04_05_038_img-01.png", "observed": "Substitute −2/3 for y; fraction red."},
+    {"media_id": "eip-id1168466426394", "file": "CNX_BMath_Figure_04_05_038_img-02.png", "observed": "−2/3−5/6; first fraction red."},
+    {"media_id": "eip-id1165719606616", "file": "CNX_BMath_Figure_04_05_039_img-02.png", "observed": "2x²y; exponent applies only to x."},
+    {"media_id": "eip-id1168464883701", "file": "CNX_BMath_Figure_04_05_039_img-01.png", "observed": "Substitute 1/4 for x and −2/3 for y; red and blue respectively."},
+    {"media_id": "eip-id1165719606642", "file": "CNX_BMath_Figure_04_05_039_img-03.png", "observed": "2(1/4)²(−2/3); red and blue respectively."},
+    {"media_id": "eip-id1165719606659", "file": "CNX_BMath_Figure_04_05_039_img-04.png", "observed": "2(1/16)(−2/3)."},
+    {"media_id": "eip-id1165719606676", "file": "CNX_BMath_Figure_04_05_039_img-05.png", "observed": "−(2/1)·(1/16)·(2/3)."},
+    {"media_id": "eip-id1165719606692", "file": "CNX_BMath_Figure_04_05_039_img-06.png", "observed": "−4/48."},
+    {"media_id": "eip-id1165719606709", "file": "CNX_BMath_Figure_04_05_039_img-07.png", "observed": "−(1·4)/(4·12); common factor 4 crossed out above and below."},
+    {"media_id": "eip-id1165719606726", "file": "CNX_BMath_Figure_04_05_039_img-08.png", "observed": "−1/12."},
+    {"media_id": "eip-id1168466313739", "file": "CNX_BMath_Figure_04_05_040_img-01.png", "observed": "Substitute −4 for p, −2 for q and 8 for r; red, blue, red."},
+    {"media_id": "eip-id1168466313750", "file": "CNX_BMath_Figure_04_05_040_img-02.png", "observed": "(−4+(−2))/8; entire numerator grouped, same colour coding."}
+  ],
+  "exercise_checks": [
+    {"exercise_id": "fs-id2303897", "expression": "x+1/3", "cases": [{"x": "-1/3", "answer": "0"}, {"x": "-3/4", "answer": "-5/12"}]},
+    {"exercise_id": "fs-id2691324", "expression": "x+3/4", "cases": [{"x": "-7/4", "answer": "-1"}, {"x": "-5/4", "answer": "-1/2"}]},
+    {"exercise_id": "fs-id2139186", "expression": "y+1/2", "cases": [{"y": "2/3", "answer": "7/6"}, {"y": "-3/4", "answer": "-1/4"}]},
+    {"exercise_id": "fs-id2325827", "expression": "y-5/6", "cases": [{"y": "-2/3", "answer": "-3/2"}]},
+    {"exercise_id": "fs-id2425626", "expression": "y-1/2", "cases": [{"y": "-1/4", "answer": "-3/4"}]},
+    {"exercise_id": "fs-id2284769", "expression": "x-3/8", "cases": [{"x": "-5/2", "answer": "-23/8"}]},
+    {"exercise_id": "fs-id1365952", "expression": "2*x^2*y", "cases": [{"x": "1/4", "y": "-2/3", "answer": "-1/12"}], "bitmap_arithmetic_stages": ["2*(1/4)^2*(-2/3)", "2*(1/16)*(-2/3)", "-(2/1)*(1/16)*(2/3)", "-4/48", "-(1*4)/(4*12)", "-1/12"]},
+    {"exercise_id": "fs-id1823766", "expression": "3*a*b^2", "cases": [{"a": "-2/3", "b": "-1/2", "answer": "-1/2"}]},
+    {"exercise_id": "fs-id2365302", "expression": "4*c^3*d", "cases": [{"c": "-1/2", "d": "-4/3", "answer": "2/3"}]},
+    {"exercise_id": "fs-id1772076", "expression": "(p+q)/r", "cases": [{"p": "-4", "q": "-2", "r": "8", "answer": "-3/4"}]},
+    {"exercise_id": "fs-id1388573", "expression": "(a+b)/c", "cases": [{"a": "-8", "b": "-7", "c": "6", "answer": "-5/2"}]},
+    {"exercise_id": "fs-id1722582", "expression": "(x+y)/z", "cases": [{"x": "9", "y": "-18", "z": "-6", "answer": "3/2"}]}
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "source_path": "languages/bn-Beng-IN/provenance/pilot/m81289.source.cnxml",
+    "source_sha256": "bfaa71d9e1dcfa775dd6525ba2fbc9ecf0ce17e6833d8dcaca9bb2f259361fa3",
+    "overlay_sha256": "69f476d3bc8bd0470f3bccea37bd54266bb5c0d562c73dcf5bb135e58d5ae047",
+    "method": "Exact Fraction arithmetic from original MathML and directly inspected bitmap stages; translated() structural/text gate; in-memory rendered HTML uniqueness and full linguistic-attribute coverage checks.",
+    "all_elements": 699,
+    "ids": 101,
+    "mathml": 68,
+    "localized_linguistic_mtext": 0,
+    "paragraphs": 26,
+    "node_slot_mappings": 14,
+    "table_aria_labels": 5,
+    "examples": 4,
+    "exercises": 12,
+    "provided_solutions_retained": 12,
+    "answer_cases_checked": 15,
+    "source_images_inspected": 16,
+    "arithmetic_table_mathml_stages_checked": 13,
+    "additional_bitmap_arithmetic_stages_checked": 6,
+    "html_fragment_characters": 26178,
+    "untranslated_non_math_prose": [],
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "independent_West_Bengal_teacher_and_language_review": "pending"
+}

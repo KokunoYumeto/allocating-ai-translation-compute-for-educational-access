@@ -1,0 +1,1669 @@
+<!doctype html>
+<html lang="gu-Gujr-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>અવયવી અને અવયવ શોધો | ગુજરાતી ગણિત</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="library.css"></head><body><a class="skip" href="#main">મુખ્ય પાઠ પર જાઓ</a><header><p class="eyebrow">ગુજરાતી · A00 / A10 · સમગ્ર અનુવાદ ચાલુ છે</p><h1>અવયવી અને અવયવ શોધો</h1><p>સ્રોતને અનુસરતો અનુવાદ. ગુજરાતી શિક્ષકની સમીક્ષા બાકી છે.</p></header><nav aria-label="વાંચનનાં પાનાં"><a href="index.html">પુસ્તકની સૂચિ</a><a href="../index.html">સરળ અભ્યાસ અને તપાસ</a><a href="../notices.html">સ્રોત અને શ્રેય</a></nav><main id="main" class="source"><p class="note">આખા પાઠનો અનુવાદિત પ્રારૂપ અહીં છે. ચિત્રો, ઉકેલો અને સુલભતાની સમીક્ષા અલગથી ચાલુ છે. આખી સોંપણી હજુ પૂરી નથી.</p><ul class="module-contents"><li><a href="#fs-id2654602">સંખ્યાઓના અવયવી ઓળખો</a></li><li><a href="#fs-id1566084">વિભાજ્યતાની સામાન્ય ચાવીઓનો ઉપયોગ કરો</a></li><li><a href="#fs-id2172492">સંખ્યાના બધા અવયવ શોધો</a></li><li><a href="#fs-id1500003">અવિભાજ્ય અને સંયુક્ત સંખ્યાઓ ઓળખો</a></li><li><a href="#fs-id2382506">મુખ્ય સંકલ્પનાઓ</a></li><li><a href="#fs-id1932978">અભ્યાસ</a></li></ul><section><h2>શીખવાના હેતુઓ</h2><div id="para-00001" class="source-paragraph">આ વિભાગના અંતે તમે:</div>
+<ul id="list-00001">
+<li class="item">સંખ્યાઓના અવયવી ઓળખી શકશો</li>
+<li class="item">વિભાજ્યતાની સામાન્ય ચાવીઓ વાપરી શકશો</li>
+<li class="item">સંખ્યાના બધા અવયવ શોધી શકશો</li>
+<li class="item">અવિભાજ્ય અને સંયુક્ત સંખ્યાઓ ઓળખી શકશો</li>
+</ul></section><div class="content">
+<div id="fs-id1301324" class="note">
+<div id="fs-id3407322" class="source-paragraph">શરૂઆત કરતાં પહેલાં તૈયારી તપાસવાના આ પ્રશ્નો ઉકેલો.</div>
+<div id="fs-idm213607056" class="exercise">
+<div id="fs-idm201757264" class="problem">
+<div id="fs-idm200036800" class="source-paragraph">નીચેની સંખ્યાઓમાંથી કઈ ગણતરીની સંખ્યાઓ (પ્રાકૃતિક સંખ્યાઓ) છે?<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>215</mn></mrow></math><br>જો આ પ્રશ્નનો જવાબ ન મળ્યો હોય, તો ફરી જુઓ <a href="a00-m81243.html#fs-id1262372">સંદર્ભ fs-id1262372</a>.</div>
+</div>
+<div id="fs-idm176400784" class="solution">
+<div id="fs-idm187414272" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>215</mn></mrow></math></div>
+</div>
+</div></div>
+<div id="fs-id1301322" class="note">
+<div id="fs-idm193081984" class="exercise">
+<div id="fs-idm182170768" class="problem">
+<div id="fs-idm203207968" class="source-paragraph">આ સંખ્યાઓનો સરવાળો શોધો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn><mo>.</mo></mrow></math><br>જો આ પ્રશ્નનો જવાબ ન મળ્યો હોય, તો ફરી જુઓ <a href="a00-m81268.html#fs-id4121509">સંદર્ભ fs-id4121509</a>.</div>
+</div>
+<div id="fs-idm206303792" class="solution">
+<div id="fs-idm216593968" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn></mrow></math></div>
+</div>
+</div>
+</div>
+<section id="fs-id2654602"><h2>સંખ્યાઓના અવયવી ઓળખો</h2><div id="fs-id1531302" class="source-paragraph">ઍની પોતાના કબાટમાંનાં જૂતાં ગણે છે. જૂતાં જોડીમાં ગોઠવેલાં હોવાથી તેને દરેક જૂતું અલગ ગણવું પડતું નથી. તે બે-બેના ક્રમમાં ગણે છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>12</mn><mo>.</mo></mrow></math> તેના કબાટમાં છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math> જૂતાં.</div>
+<div id="fs-id2398906" class="source-paragraph">આ સંખ્યાઓ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>12</mn></mrow></math> અવયવી કહેવાય આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>.</mo></mrow></math> અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> ગણતરીની સંખ્યા અને આ સંખ્યાના ગુણનફળ તરીકે લખી શકાય: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>.</mo></mrow></math> પહેલા છ અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> નીચે આપેલા છે.</div>
+<div id="fs-id1257309" class="equation"><span class="source-label"></span><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign="left"><mtr><mtd><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>4</mn></mtd></mtr><mtr><mtd><mn>3</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>6</mn></mtd></mtr><mtr><mtd><mn>4</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>8</mn></mtd></mtr><mtr><mtd><mn>5</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>10</mn></mtd></mtr><mtr><mtd><mn>6</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>12</mn></mtd></mtr></mtable></mrow></math></div></div>
+<div id="fs-id1932440" class="source-paragraph">કોઈ <strong id="term-00001" class="term">સંખ્યાનો અવયવી</strong> એ તે સંખ્યા અને ગણતરીની સંખ્યાનું ગુણનફળ છે. એટલે અવયવી, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math> ગણતરીની સંખ્યા અને આ સંખ્યાનું ગુણનફળ હશે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math> નીચે પહેલા છ અવયવી આપેલા છે, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math></div><aside class="note reader-bridge" aria-label="વાંચવામાં મદદરૂપ નોંધ"><strong>વાંચવામાં મદદરૂપ નોંધ:</strong> આ વિભાગમાં ગણતરીની સંખ્યા એકથી શરૂ થાય છે; તેથી અહીં આપેલી અવયવીની યાદીઓ ધન અવયવીની છે. પૂર્ણ સંખ્યાના ગુણાકારની વ્યાપક વ્યાખ્યામાં શૂન્ય અવયવી ગણાય છે, પણ મૂળ યાદીઓમાં તેને મૌન રીતે ઉમેર્યું નથી.</aside><div id="fs-id2218997" class="equation"><span class="source-label"></span><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign="left"><mtr><mtd><mn>1</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>6</mn></mtd></mtr><mtr><mtd><mn>3</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>9</mn></mtd></mtr><mtr><mtd><mn>4</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>12</mn></mtd></mtr><mtr><mtd><mn>5</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>15</mn></mtd></mtr><mtr><mtd><mn>6</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>18</mn></mtd></mtr></mtable></mrow></math></div></div>
+<div id="fs-id1409054" class="source-paragraph">આ પ્રક્રિયા ચાલુ રાખીને કોઈ પણ સંખ્યાના અવયવી શોધી શકીએ. <a href="#fs-id1946698">કોષ્ટક fs-id1946698</a> માં પહેલી બાર ગણતરીની સંખ્યાઓ માટે અવયવી દર્શાવ્યા છે, સંખ્યાઓ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> થી <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math> સુધીના.</div>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id1946698" aria-label="ગણતરીની સંખ્યાઓ એકથી બાર સાથે બે થી નવના અવયવી દર્શાવતું કોષ્ટક. દરેક હરોળના બાર ગુણનફળ સાચા છે.">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<thead>
+<tr>
+<th scope="col"><em class="emphasis">ગણતરીની સંખ્યા</em></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>1</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>2</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>3</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>4</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>6</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>7</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>8</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>9</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>10</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>11</mn></mstyle></mrow></math></th>
+<th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>12</mn></mstyle></mrow></math></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> અવયવી, આના: </mtext><mspace width="0.2em"></mspace><mn>2</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>16</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>22</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> અવયવી, આના: </mtext><mspace width="0.2em"></mspace><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>21</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>27</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>30</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>33</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>36</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> અવયવી, આના: </mtext><mspace width="0.2em"></mspace><mn>4</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>16</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>28</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>32</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>36</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>40</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>44</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>48</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> અવયવી, આના: </mtext><mspace width="0.2em"></mspace><mn>5</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>25</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>30</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>35</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>40</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>45</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>50</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>55</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>60</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> અવયવી, આના: </mtext><mspace width="0.2em"></mspace><mn>6</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>30</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>36</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>42</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>48</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>54</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>60</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>66</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> અવયવી, આના: </mtext><mspace width="0.2em"></mspace><mn>7</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>21</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>28</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>35</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>42</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>49</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>56</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>63</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>70</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>77</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>84</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> અવયવી, આના: </mtext><mspace width="0.2em"></mspace><mn>8</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>16</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>32</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>40</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>48</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>56</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>64</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>80</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>88</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>96</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> અવયવી, આના: </mtext><mspace width="0.2em"></mspace><mn>9</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>27</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>36</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>45</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>54</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>63</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>81</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>90</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>99</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>108</mn></mrow></math></td>
+</tr>
+</tbody>
+
+</table></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> નવ હરોળ અને તેર સ્તંભનું કોષ્ટક. પહેલી હરોળમાં ગણતરીની સંખ્યાઓ એકથી બાર. પછીની આઠ હરોળમાં અનુક્રમે બે, ત્રણ, ચાર, પાંચ, છ, સાત, આઠ અને નવના પહેલા બાર અવયવી. દરેક ખાનું હરોળની સંખ્યા અને સ્તંભની ગણતરીની સંખ્યાનું ગુણનફળ છે.</aside>
+<div id="fs-id2199259" class="note">
+<h3>સંખ્યાનો અવયવી</h3>
+<div id="fs-id2751305" class="source-paragraph">કોઈ સંખ્યા <strong id="term-00002" class="term">અવયવી</strong> છે, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi></mrow></math> જો તે ગણતરીની સંખ્યા અને આ સંખ્યાનું ગુણનફળ હોય: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>.</mo></mrow></math></div>
+</div>
+<div id="fs-id1150171" class="source-paragraph">આ સંખ્યાઓના અવયવીની ભાત ઓળખવી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>10</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>3</mn></mrow></math> આ અભ્યાસક્રમમાં આગળ જતાં ઉપયોગી થશે.</div>
+<div id="fs-id1171104053598" class="note">હાથથી સામગ્રી ગોઠવીને ગણિત સમજવાની “અવયવી” પ્રવૃત્તિ કરવાથી અવયવીની વધુ સારી સમજ મળશે.</div>
+<div id="fs-id1733229" class="source-paragraph"><a href="#CNX_BMath_Figure_02_04_001">આકૃતિ 001</a> માં ગણતરીની સંખ્યાઓ દર્શાવેલી છે, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> થી <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>50</mn><mo>.</mo></mrow></math> અહીં આ સંખ્યાના અવયવી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> રંગથી દર્શાવેલા છે. તમને કોઈ ભાત દેખાય છે?</div>
+<figure id="CNX_BMath_Figure_02_04_001" class="figure">
+<div id="fs-id1949566" class="source-media"><img loading="lazy" src="media/CNX_BMath_Figure_02_04_001.jpg" alt="એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 2ના અવયવી રંગથી દર્શાવેલા છે."><p class="figure-description">એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 2ના અવયવી રંગથી દર્શાવેલા છે.</p></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 2ના અવયવી રંગથી દર્શાવેલા છે.</aside>
+<figcaption class="caption">અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> આ બે સંખ્યાઓ વચ્ચે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>50</mn></mrow></math></figcaption>
+</figure>
+<div id="fs-id2297954" class="source-paragraph">રંગથી દર્શાવેલી દરેક સંખ્યાનો છેલ્લો અંક જુઓ, આ ચિત્રમાં: <a href="#CNX_BMath_Figure_02_04_001">આકૃતિ 001</a> તે છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mtext> અથવા </mtext><mspace width="0.2em"></mspace><mn>8</mn><mo>.</mo></mrow></math> આ વાત આ સંખ્યા: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> અને કોઈ પણ ગણતરીની સંખ્યાના ગુણનફળ માટે સાચી છે. તેથી કોઈ સંખ્યા આનો અવયવી છે કે નહીં તે જાણવા: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> છેલ્લો અંક જુઓ. જો તે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontstyle="italic"><mtext> અથવા </mtext></mstyle><mspace width="0.2em"></mspace><mn>8</mn><mo>,</mo></mrow></math> હોય, તો સંખ્યા આનો અવયવી છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id1933504" class="example">
+<div id="fs-id2195600" class="exercise"><div id="fs-id1336719" class="problem">
+<div id="fs-id3301368" class="source-paragraph">નીચેનામાંની દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mtext>:</mtext></math>
+<ol id="eip-id1168469470854"><li class="item">
+<span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>489</mn><mspace width="0.2em"></mspace></math>
+</li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>3,714</mn></math>
+</li>
+</ol></div></div>
+<div id="fs-id1283777" class="solution">
+<h3>ઉકેલ</h3>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="eip-id1168468413253" aria-label="છેલ્લો અંક તપાસીને 489 અવયવી છે કે નહીં તે નક્કી કરવાનાં પગલાં, આ સંખ્યાનો: 2.">
+<span class="source-label"></span>
+ <tbody>
+  <tr>
+    <td><span class="span">ⓐ</span> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું 489 આ સંખ્યાનો અવયવી છે: 2?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું છેલ્લો અંક 0, 2, 4, 6, કે 8 છે?</td>
+    <td>ના.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>489 આ સંખ્યાનો અવયવી નથી: 2.</td>
+  </tr>
+</tbody>
+
+
+</table></div>
+
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="eip-id1168469557564" aria-label="કોષ્ટક બતાવે છે કે 3,714 અવયવી છે કે નહીં તે કેવી રીતે નક્કી કરવું, આ સંખ્યાનો: 2; છેલ્લો અંક તપાસીએ, વિભાજ્યતાની ચાવી મુજબ આ સંખ્યાની: 2."><span class="source-label"></span>
+<tbody>
+  <tr>
+    <td><span class="span">ⓑ</span> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું 3,714 આ સંખ્યાનો અવયવી છે: 2?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું છેલ્લો અંક 0, 2, 4, 6, કે 8 છે?</td>
+    <td>હા.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>3,714 આ સંખ્યાનો અવયવી છે: 2.</td>
+  </tr>
+</tbody>
+
+
+
+</table></div></div>
+</div></div>
+<div id="fs-id2200549" class="note">
+<div id="fs-id2296262" class="exercise">
+<div id="fs-id1510145" class="problem">
+<div id="fs-id1337332" class="source-paragraph">દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext>:</mtext></mrow></math></div>
+<div id="fs-id4121581" class="source-paragraph"><ol id="eip-id1168468261793"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>678</mn><mspace width="0.2em"></mspace></math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>21,493</mn></math></li>
+</ol></div></div>
+<div id="fs-id1392853" class="solution">
+<div id="fs-id2200506" class="source-paragraph"><ol id="eip-id1168467492717"><li class="item">
+<span class="span">ⓐ</span> હા
+</li>
+<li class="item">
+<span class="span">ⓑ</span> ના
+</li>
+</ol></div></div>
+</div>
+</div>
+<div id="fs-id1171104409404" class="note">
+<div id="fs-id2646813" class="exercise">
+<div id="fs-id2164034" class="problem">
+<div id="fs-id1171104020017" class="source-paragraph">દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext>:</mtext></mrow></math></div>
+<div id="fs-id998472" class="source-paragraph"><ol id="eip-id1168466659034"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>979</mn><mspace width="0.2em"></mspace>
+</math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>17,780</mn></math></li>
+</ol></div></div>
+<div id="fs-id556042" class="solution">
+<div id="fs-id1969783" class="source-paragraph"><ol id="eip-id1168466488927"><li class="item">
+<span class="span">ⓐ</span> ના
+</li>
+<li class="item">
+<span class="span">ⓑ</span> હા
+</li>
+</ol></div></div>
+</div>
+</div>
+<div id="fs-id4338408" class="source-paragraph">હવે આ સંખ્યાના અવયવી જોઈએ: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle><mo>.</mo></mrow></math> <a href="#CNX_BMath_Figure_02_04_002">આકૃતિ 002</a> માં રંગથી આના બધા અવયવી દર્શાવ્યા છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle></mrow></math> આ બે સંખ્યાઓ વચ્ચે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>1</mn></mstyle></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>50</mn></mstyle><mo>.</mo></mrow></math> તમને શું દેખાય છે આના અવયવીમાં: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle><mo>?</mo></mrow></math></div>
+<figure id="CNX_BMath_Figure_02_04_002" class="figure">
+<div id="fs-id1379128" class="source-media"><img loading="lazy" src="media/CNX_BMath_Figure_02_04_002.jpg" alt="એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 5ના અવયવી રંગથી દર્શાવેલા છે."><p class="figure-description">એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 5ના અવયવી રંગથી દર્શાવેલા છે.</p></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 5ના અવયવી રંગથી દર્શાવેલા છે.</aside>
+<figcaption class="caption">અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> આ બે સંખ્યાઓ વચ્ચે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>50</mn></mrow></math></figcaption>
+</figure>
+<div id="fs-id1966999" class="source-paragraph">બધા અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> અંતે ધરાવે છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> અથવા <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>.</mo></mrow></math> જેમ છેલ્લો અંક જોઈને અવયવી ઓળખીએ છીએ આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> તેમ છેલ્લો અંક જોઈને અવયવી ઓળખી શકીએ આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> .</div>
+<div id="fs-id1945166" class="example"><div id="fs-id1402050" class="exercise"><div id="fs-id1294922" class="problem">
+<div id="fs-id1859291" class="source-paragraph">નીચેનામાંની દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mtext>:</mtext><mspace width="0.2em"></mspace></math>
+<ol id="eip-id1168468416906"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mspace width="0.2em"></mspace><mn>579</mn><mspace width="0.2em"></mspace>
+</math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mspace width="0.2em"></mspace><mn>880</mn></math></li>
+</ol></div></div>
+<div id="fs-id1800197" class="solution">
+<h3>ઉકેલ</h3>
+
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="eip-id1168466183262" aria-label="કોષ્ટક બતાવે છે કે 579 અવયવી છે કે નહીં તે કેવી રીતે નક્કી કરવું, આ સંખ્યાનો: 5; તેનો છેલ્લો અંક તપાસીએ.">
+<span class="source-label"></span>
+ <tbody>
+  <tr>
+    <td><span class="span">ⓐ</span> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું 579 આ સંખ્યાનો અવયવી છે: 5?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું છેલ્લો અંક 5 કે 0 છે?</td>
+    <td>ના.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>579 આ સંખ્યાનો અવયવી નથી: 5.</td>
+  </tr>
+</tbody>
+
+
+</table></div>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="eip-id1168469479124" aria-label="કોષ્ટક આ સંખ્યાની વિભાજ્યતાની ચાવી દર્શાવે છે: 5; તે પૂછે છે કે 880 અવયવી છે કે નહીં, આ સંખ્યાનો: 5, અને છેલ્લા અંકને આધારે શરત ચકાસે છે.">
+<span class="source-label"></span>
+ <tbody>
+  <tr>
+    <td><span class="span">ⓑ</span> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું 880 આ સંખ્યાનો અવયવી છે: 5?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું છેલ્લો અંક 5 કે 0 છે?</td>
+    <td>હા.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>880 આ સંખ્યાનો અવયવી છે: 5.</td>
+  </tr>
+</tbody>
+
+
+</table></div>
+</div>
+</div></div><div id="fs-id1611836" class="note">
+<div id="fs-id2129414" class="exercise">
+<div id="fs-id1722832" class="problem">
+<div id="fs-id1559185" class="source-paragraph">દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id2223147" class="source-paragraph"><ol id="eip-id1168466262646"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>675</mn><mspace width="0.2em"></mspace></math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mspace width="0.2em"></mspace><mn>1,578</mn></math></li>
+</ol></div></div>
+<div id="fs-id1387277" class="solution">
+<div id="fs-id2620103" class="source-paragraph"><ol id="eip-id1168466659025"><li class="item">
+<span class="span">ⓐ</span> હા
+</li>
+<li class="item">
+<span class="span">ⓑ</span> ના
+</li>
+</ol></div></div>
+</div>
+</div>
+<div id="fs-id1171102911564" class="note">
+<div id="fs-id2700402" class="exercise">
+<div id="fs-id2608791" class="problem">
+<div id="fs-id1171102824262" class="source-paragraph">દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id1933951" class="source-paragraph"><ol id="eip-id1168469893914"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>421</mn><mspace width="0.2em"></mspace>
+</math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>2,690</mn></math></li>
+</ol></div></div>
+<div id="fs-id1282864" class="solution">
+<div id="fs-id2483351" class="source-paragraph"><ol id="eip-id1168466334406"><li class="item">
+<span class="span">ⓐ</span> ના
+</li>
+<li class="item">
+<span class="span">ⓑ</span> હા
+</li>
+</ol></div></div>
+</div>
+</div>
+<div id="fs-id1224467" class="source-paragraph"><a href="#CNX_BMath_Figure_02_04_003">આકૃતિ 003</a> માં રંગથી દર્શાવ્યા છે અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> આ બે સંખ્યાઓ વચ્ચે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>50</mn><mo>.</mo></mrow></math> બધા અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> અંતે શૂન્ય ધરાવે છે.</div>
+<figure id="CNX_BMath_Figure_02_04_003" class="figure">
+<div id="fs-id2320043" class="source-media"><img loading="lazy" src="media/CNX_BMath_Figure_02_04_003.jpg" alt="એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 10ના અવયવી રંગથી દર્શાવેલા છે."><p class="figure-description">એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 10ના અવયવી રંગથી દર્શાવેલા છે.</p></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 10ના અવયવી રંગથી દર્શાવેલા છે.</aside>
+<figcaption class="caption">અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> આ બે સંખ્યાઓ વચ્ચે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>50</mn></mrow></math></figcaption>
+</figure>
+<div id="fs-id2581585" class="example">
+<div id="fs-id1918409" class="exercise"><div id="fs-id1627894" class="problem">
+<div id="fs-id1790326" class="source-paragraph">નીચેનામાંની દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn><mtext>:</mtext><mspace width="0.2em"></mspace></math>
+<ol id="eip-id1168469873298"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>425</mn><mspace width="0.2em"></mspace></math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>350</mn></math></li>
+</ol></div></div>
+<div id="fs-id2495896" class="solution">
+<h3>ઉકેલ</h3>
+
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="eip-id1168466058608" aria-label="વિભાજ્યતાની ચાવી દર્શાવે છે, સંખ્યા 425 માટે, આના વડે: 10; ખાસ કરીને છેલ્લો અંક તપાસે છે."><span class="source-label"></span>
+<tbody>
+  <tr>
+    <td><span class="span">ⓐ</span> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું 425 આ સંખ્યાનો અવયવી છે: 10?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું છેલ્લો અંક શૂન્ય છે?</td>
+    <td>ના.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>425 આ સંખ્યાનો અવયવી નથી: 10.</td>
+  </tr>
+</tbody>
+
+
+
+
+</table></div>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="eip-id1168468276774" aria-label="છેલ્લો અંક તપાસીને સંખ્યા અવયવી છે કે નહીં તે નક્કી કરતું ઉદાહરણ, આ સંખ્યાનો: 10.">
+<span class="source-label"></span>
+ <tbody>
+  <tr>
+    <td><span class="span">ⓑ</span> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું 350 આ સંખ્યાનો અવયવી છે: 10?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>શું છેલ્લો અંક શૂન્ય છે?</td>
+    <td>હા.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>350 આ સંખ્યાનો અવયવી છે: 10.</td>
+  </tr>
+</tbody>
+
+
+</table></div>
+</div>
+</div></div>
+<div id="fs-id1602825" class="note">
+<div id="fs-id1313068" class="exercise">
+<div id="fs-id2219043" class="problem">
+<div id="fs-id2687482" class="source-paragraph">દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mtext>:</mtext></mrow></math></div>
+<div id="fs-id1714227" class="source-paragraph"><ol id="eip-id1168466211343"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>179</mn><mspace width="0.2em"></mspace></math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>3,540</mn></math></li>
+</ol></div></div>
+<div id="fs-id2472564" class="solution">
+<div id="fs-id1545128" class="source-paragraph"><ol id="eip-id1168466223476"><li class="item">
+<span class="span">ⓐ</span> ના
+</li>
+<li class="item">
+<span class="span">ⓑ</span> હા
+</li>
+</ol></div></div>
+</div>
+</div>
+<div id="fs-id1171104048350" class="note">
+<div id="fs-id1693595" class="exercise">
+<div id="fs-id2136478" class="problem">
+<div id="fs-id1171102985206" class="source-paragraph">દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mtext>:</mtext></mrow></math></div>
+<div id="fs-id1951300" class="source-paragraph"><ol id="eip-id1168467239818"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>110</mn><mspace width="0.2em"></mspace>
+</math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>7,595</mn></math></li>
+</ol></div></div>
+<div id="fs-id770612" class="solution">
+<div id="fs-id1325144" class="source-paragraph"><ol id="eip-id1168469658335"><li class="item">
+<span class="span">ⓐ</span> હા
+</li>
+<li class="item">
+<span class="span">ⓑ</span> ના
+</li>
+</ol></div></div>
+</div>
+</div>
+<div id="fs-id1257171" class="source-paragraph"><a href="#CNX_BMath_Figure_02_04_004">આકૃતિ 004</a> માં રંગથી દર્શાવ્યા છે અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math> અવયવીની ભાત, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math> એટલી સ્પષ્ટ નથી જેટલી આ સંખ્યાઓના અવયવીની ભાત: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>10</mn><mo>.</mo></mrow></math></div>
+<figure id="CNX_BMath_Figure_02_04_004" class="figure">
+<div id="fs-id1242400" class="source-media"><img loading="lazy" src="media/CNX_BMath_Figure_02_04_004.jpg" alt="એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 3ના અવયવી રંગથી દર્શાવેલા છે."><p class="figure-description">એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 3ના અવયવી રંગથી દર્શાવેલા છે.</p></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> એકથી પચાસ સુધીની સંખ્યાઓનું પાંચ હરોળ અને દસ સ્તંભનું કોષ્ટક. સંખ્યા 3ના અવયવી રંગથી દર્શાવેલા છે.</aside>
+<figcaption class="caption">અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math> આ બે સંખ્યાઓ વચ્ચે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>50</mn></mrow></math></figcaption>
+</figure>
+<div id="fs-id2319353" class="source-paragraph">અત્યાર સુધી તપાસેલી અન્ય ભાતથી જુદું, આ ભાતનો સંબંધ છેલ્લા અંક સાથે નથી. અવયવીની ભાત, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math> અંકોના સરવાળા પર આધારિત છે. જો સંખ્યાના અંકોનો સરવાળો આનો અવયવી હોય: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>,</mo></mrow></math> તો સંખ્યા પોતે પણ આનો અવયવી છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math> જુઓ <a href="#fs-id2670625">કોષ્ટક fs-id2670625</a>.</div>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id2670625" aria-label="કોષ્ટકમાં બે હરોળ અને નવ સ્તંભ છે. પહેલો સ્તંભ બંને હરોળને નામ આપે છે: પહેલી અવયવી, આ સંખ્યાના: 3, અને બીજી અંકોનો સરવાળો. બીજા સ્તંભમાં પહેલી હરોળમાં 3 અને બીજીમાં 3 છે. ત્રીજા સ્તંભમાં પહેલી હરોળમાં 6 અને બીજીમાં 6 છે. ચોથા સ્તંભમાં પહેલી હરોળમાં 9 અને બીજીમાં 9 છે. પાંચમા સ્તંભમાં પહેલી હરોળમાં 12 અને બીજીમાં 1 વત્તા 2 બરાબર 3 છે. છઠ્ઠા સ્તંભમાં પહેલી હરોળમાં 15 અને બીજીમાં 1 વત્તા 5 બરાબર 6 છે. સાતમા સ્તંભમાં પહેલી હરોળમાં 18 અને બીજીમાં 1 વત્તા 8 બરાબર 9 છે. આઠમા સ્તંભમાં પહેલી હરોળમાં 21 અને બીજીમાં 2 વત્તા 1 બરાબર 3 છે. છેલ્લા સ્તંભમાં પહેલી હરોળમાં 24 અને બીજીમાં 2 વત્તા 4 બરાબર 6 છે.">
+
+
+
+
+
+
+
+
+
+
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext mathvariant="bold"> અવયવી, આના: 3 </mtext></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>21</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext mathvariant="bold"> અંકોનો સરવાળો </mtext></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math></td>
+<td><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign="center"><mtr columnalign="center"><mtd columnalign="center"><mn>1</mn><mo>+</mo><mn>2</mn></mtd></mtr><mtr columnalign="center"><mtd columnalign="center"><mn>3</mn></mtd></mtr></mtable></mrow></math></div></td>
+<td><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign="center"><mtr columnalign="center"><mtd columnalign="center"><mn>1</mn><mo>+</mo><mn>5</mn></mtd></mtr><mtr columnalign="center"><mtd columnalign="center"><mn>6</mn></mtd></mtr></mtable></mrow></math></div></td>
+<td><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign="center"><mtr columnalign="center"><mtd columnalign="center"><mn>1</mn><mo>+</mo><mn>8</mn></mtd></mtr><mtr columnalign="center"><mtd columnalign="center"><mn>9</mn></mtd></mtr></mtable></mrow></math></div></td>
+<td><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign="center"><mtr columnalign="center"><mtd columnalign="center"><mn>2</mn><mo>+</mo><mn>1</mn></mtd></mtr><mtr columnalign="center"><mtd columnalign="center"><mn>3</mn></mtd></mtr></mtable></mrow></math></div></td>
+<td><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign="center"><mtr columnalign="center"><mtd columnalign="center"><mn>2</mn><mo>+</mo><mn>4</mn></mtd></mtr><mtr columnalign="center"><mtd columnalign="center"><mn>6</mn></mtd></mtr></mtable></mrow></math></div></td>
+</tr>
+</tbody>
+
+</table></div>
+<div id="fs-id2273231" class="source-paragraph">આ સંખ્યા લો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>42</mn><mo>.</mo></mrow></math> તેના અંકો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo></mrow></math> છે અને તેમનો સરવાળો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>6</mn><mo>.</mo></mrow></math> કારણ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math> અવયવી છે, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>,</mo></mrow></math> એટલે આપણે જાણીએ છીએ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>42</mn></mrow></math> પણ અવયવી છે, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id1585294" class="example">
+<div id="fs-id1862568" class="exercise">
+<div id="fs-id1916138" class="problem">
+<div id="fs-id1717630" class="source-paragraph">આપેલી દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mtext>:</mtext><mspace width="0.2em"></mspace></math>
+<ol id="eip-id1168468294103"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>645</mn><mspace width="0.2em"></mspace>
+</math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>10,519</mn></math></li>
+</ol></div></div>
+<div id="fs-id1221829" class="solution">
+<h3>ઉકેલ</h3>
+<div id="fs-id2166582" class="source-paragraph"><span class="span">ⓐ</span> શું <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>645</mn></mrow></math> અવયવી છે, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>?</mo></mrow></math>
+</div><div id="fs-id1166211" class="source-paragraph"><div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="eip-id1168467261275" aria-label="ઉદાહરણ વડે આ સંખ્યાની વિભાજ્યતાની ચાવી દર્શાવી છે: 3; તેમાં અંકોનો સરવાળો કરીને પરિણામની ચકાસણી સામેલ છે.">
+<span class="source-label"></span>
+ <tbody>
+  <tr>
+    <td>અંકોનો સરવાળો શોધો.</td>
+    <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>15</mn></math></td>
+  </tr>
+  <tr>
+    <td>શું 15 અવયવી છે, આ સંખ્યાનો: 3?</td>
+    <td>હા.</td>
+  </tr>
+  <tr>
+    <td>ખાતરી ન હોય તો તેના અંકોનો સરવાળો કરીને જાણી શકીએ. ભાગાકારથી ચકાસીએ: 645ને ભાગો 3 વડે.</td>
+    <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>645</mn><mo>÷</mo><mn>3</mn></math></td>
+  </tr>
+  <tr>
+    <td>ભાગફળ છે 215.</td>
+    <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>⋅</mo><mn>215</mn><mo>=</mo><mn>645</mn></math></td>
+  </tr>
+</tbody>
+
+
+</table></div>
+</div><div id="fs-id1302295" class="source-paragraph"><span class="span">ⓑ</span> શું <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10,519</mn></mrow></math> અવયવી છે, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>?</mo></mrow></math></div><div id="fs-id1596736" class="source-paragraph"><div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="eip-id1168466267838" aria-label="અંકોનો સરવાળો કરીને અને ભાગાકારથી ચકાસીને આ સંખ્યાની વિભાજ્યતાની ચાવી દર્શાવે છે: 3; ઉદાહરણની સંખ્યા છે 10,519.">
+<span class="source-label"></span>
+ <tbody>
+  <tr>
+    <td>અંકોનો સરવાળો શોધો.</td>
+    <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>16</mn></math></td>
+  </tr>
+  <tr>
+    <td>શું 16 અવયવી છે, આ સંખ્યાનો: 3?</td>
+    <td>ના.</td>
+  </tr>
+  <tr>
+    <td>તેથી 10,519 પણ અવયવી નથી આ સંખ્યાનો: 3.</td>
+    <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>645</mn><mo>÷</mo><mn>3</mn></math></td>
+  </tr>
+  <tr>
+    <td>ભાગાકારથી ચકાસી શકીએ: 10,519ને ભાગો 3 વડે.</td>
+    <td><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd><mn>3,506</mn><mtext> શેષ </mtext><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>3</mn><menclose notation="longdiv" style="border-top:1px solid currentColor;border-left:1px solid currentColor;padding:.08em .16em 0 .18em;margin-left:.18em;border-top-left-radius:.28em"><mrow><mn>10,519</mn></mrow></menclose><mspace width="1em"></mspace></mtd></mtr></mtable></math></div></td>
+  </tr>
+</tbody>
+
+
+</table></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> આ ઉદાહરણમાં ભાગાકાર 10,519 ÷ 3 છે. ભાગફળ 3,506 અને શેષ 1. મૂળમાં અહીં અગાઉના ઉદાહરણનું 645 ÷ 3 રહી ગયું છે.</aside>
+</div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> આ ઉદાહરણમાં ભાગાકાર 10,519 ÷ 3 છે. ભાગફળ 3,506 અને શેષ 1. મૂળમાં અહીં અગાઉના ઉદાહરણનું 645 ÷ 3 રહી ગયું છે.</aside><div id="fs-id1280496" class="source-paragraph">જ્યારે ભાગીએ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10,519</mn></mrow></math> ને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>,</mo></mrow></math> વડે, ત્યારે ગણતરીની સંખ્યા મળતી નથી. તેથી <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10,519</mn></mrow></math> ગણતરીની સંખ્યા અને આ સંખ્યાનું ગુણનફળ નથી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math> તે આનો અવયવી નથી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math></div>
+</div>
+</div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> આ ઉદાહરણમાં ભાગાકાર 10,519 ÷ 3 છે. ભાગફળ 3,506 અને શેષ 1. મૂળમાં અહીં અગાઉના ઉદાહરણનું 645 ÷ 3 રહી ગયું છે.</aside>
+</div>
+<div id="fs-id1325302" class="note">
+<div id="fs-id1205350" class="exercise">
+<div id="fs-id1198820" class="problem">
+<div id="fs-id1595540" class="source-paragraph">દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mtext>:</mtext></mrow></math></div>
+<div id="fs-id1500117" class="source-paragraph"><ol id="eip-id1168468675959"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>954</mn><mspace width="0.2em"></mspace>
+</math></li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>3,742</mn></math>
+</li>
+</ol></div></div>
+<div id="fs-id1187338" class="solution">
+<div id="fs-id1863656" class="source-paragraph"><ol id="eip-id1168467506093"><li class="item">
+<span class="span">ⓐ</span> હા
+</li>
+<li class="item">
+<span class="span">ⓑ</span> ના
+</li>
+</ol></div></div>
+</div>
+</div>
+<div id="fs-id1171102866840" class="note">
+<div id="fs-id1213726" class="exercise">
+<div id="fs-id1365874" class="problem">
+<div id="fs-id1171100737980" class="source-paragraph">દરેક સંખ્યા આનો અવયવી છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mtext>:</mtext></mrow></math></div>
+<div id="fs-id2218606" class="source-paragraph"><ol id="eip-id1168469668538"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>643</mn><mspace width="0.2em"></mspace>
+</math>
+</li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mspace width="0.2em"></mspace><mn>8,379</mn></math></li>
+</ol></div></div>
+<div id="fs-id2280141" class="solution">
+<div id="fs-id1381742" class="source-paragraph"><ol id="eip-id1168469468727"><li class="item">
+<span class="span">ⓐ</span> ના
+</li>
+<li class="item">
+<span class="span">ⓑ</span> હા
+</li>
+</ol></div></div>
+</div>
+</div>
+<div id="fs-id2495618" class="source-paragraph">અગાઉનાં કોષ્ટકો ફરી જુઓ, જેમાં રંગથી દર્શાવ્યા હતા અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo></mrow></math> આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>,</mo></mrow></math> અને આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mo>.</mo></mrow></math> ધ્યાન આપો કે અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> એવી સંખ્યાઓ છે જે આ બંનેના અવયવી છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>.</mo></mrow></math> તેનું કારણ છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>5</mn><mo>.</mo></mrow></math> તેવી જ રીતે, કારણ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>,</mo></mrow></math> તેથી અવયવી, આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math> એવી સંખ્યાઓ છે જે આ બંનેના અવયવી છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math></div>
+</section><section id="fs-id1566084">
+<h2>વિભાજ્યતાની સામાન્ય ચાવીઓનો ઉપયોગ કરો</h2>
+<div id="fs-id2221897" class="source-paragraph">આમ કહેવું કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>375</mn></mrow></math> અવયવી છે, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> એનો બીજો અર્થ છે કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>375</mn></mrow></math> આ સંખ્યા વડે વિભાજ્ય છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>.</mo></mrow></math> ખરેખર, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>375</mn><mo>÷</mo><mn>5</mn></mrow></math> છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn><mo>,</mo></mrow></math> એટલે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>375</mn></mrow></math> છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>⋅</mo><mn>75</mn><mo>.</mo></mrow></math> ધ્યાન આપો, <a href="#fs-id1585294">ઉદાહરણ fs-id1585294</a> માં <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10,519</mn></mrow></math> અવયવી નથી, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math> જ્યારે ભાગ્યું <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10,519</mn></mrow></math> ને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math> વડે, ત્યારે ગણતરીની સંખ્યા ન મળી. તેથી <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10,519</mn></mrow></math> આ સંખ્યા વડે વિભાજ્ય નથી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id1558919" class="note">
+<h3>વિભાજ્યતા</h3>
+<div id="fs-id2630113" class="source-paragraph">જો સંખ્યા <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi></mrow></math> અવયવી હોય, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>,</mo></mrow></math> તો કહીએ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi></mrow></math> આ સંખ્યા વડે વિભાજ્ય છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>.</mo></mrow></math></div></div>
+<div id="fs-id4875562" class="source-paragraph">ગુણાકાર અને ભાગાકાર વિપરીત ક્રિયાઓ હોવાથી આપણે શોધેલી અવયવીની ભાત વિભાજ્યતાની ચાવી તરીકે વાપરી શકાય. <a href="#fs-id2134771">કોષ્ટક fs-id2134771</a> માં સાર આપેલો છે; <strong id="term-00003" class="term">વિભાજ્યતાની ચાવીઓ</strong> એકથી દસ વચ્ચેની કેટલીક ગણતરીની સંખ્યાઓ માટે દર્શાવેલી છે.</div>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id2134771" aria-label="સાત હરોળનું વિભાજ્યતાની ચાવીઓનું કોષ્ટક; બે, ત્રણ, પાંચ, છ અને દસના નિયમો, શીર્ષક અને મથાળા સાથે.">
+
+
+<thead>
+<tr>
+<th scope="col"><em class="emphasis">વિભાજ્યતાની ચાવીઓ</em></th>
+</tr>
+<tr>
+<th scope="col"><em class="emphasis">સંખ્યા આના વડે વિભાજ્ય છે:</em></th>
+<th scope="col"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>2</mn></mstyle></mrow></math></td>
+<td>છેલ્લા અંક માટે શરત: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>0</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>2</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>4</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>6</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mtext> અથવા </mtext></mstyle><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>8</mn></mstyle></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>3</mn></mstyle></mrow></math></td>
+<td>અંકોનો સરવાળો વિભાજ્ય હોવો જોઈએ આના વડે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>3</mn></mstyle></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle></mrow></math></td>
+<td>છેલ્લા અંક માટે શરત: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle></mrow></math> અથવા <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>0</mn></mstyle></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>6</mn></mstyle></mrow></math></td>
+<td>આ બંને વડે વિભાજ્ય હોવું જોઈએ: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>2</mn></mstyle></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>3</mn></mstyle></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>10</mn></mstyle></mrow></math></td>
+<td>છેલ્લા અંક માટે શરત: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>0</mn></mstyle></mrow></math></td>
+</tr>
+</tbody>
+
+
+
+</table></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> શીર્ષક અને મથાળાની હરોળ સહિત સાત હરોળ. ચાવીઓ: બે માટે છેલ્લો અંક શૂન્ય, બે, ચાર, છ કે આઠ; ત્રણ માટે અંકોનો સરવાળો ત્રણ વડે વિભાજ્ય; પાંચ માટે છેલ્લો અંક પાંચ કે શૂન્ય; છ માટે બે અને ત્રણ બંને વડે વિભાજ્ય; દસ માટે છેલ્લો અંક શૂન્ય.</aside><div id="fs-id1159977" class="example"><div id="fs-id1946686" class="exercise">
+<div id="fs-id2790541" class="problem">
+<div id="fs-id1300120" class="source-paragraph">નક્કી કરો કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,290</mn></mrow></math> આ સંખ્યાઓ વડે વિભાજ્ય છે કે નહીં: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>10</mn><mo>.</mo></mrow></math></div>
+</div>
+<div id="fs-id1569846" class="solution">
+<h3>ઉકેલ</h3>
+<div id="fs-id2907137" class="source-paragraph"><a href="#fs-id1405269">કોષ્ટક fs-id1405269</a> માં વિભાજ્યતાની ચાવીઓ આ સંખ્યાને લાગુ કરી છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,290</mn><mo>.</mo></mrow></math> સૌથી જમણા સ્તંભમાં ભાગફળ પૂર્ણ સંખ્યા છે કે નહીં તે જોઈને ચાવીઓનાં પરિણામ ચકાસ્યાં છે.</div>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id1405269" aria-label="કોષ્ટકમાં પાંચ હરોળ અને ચાર સ્તંભ છે. પહેલી હરોળ શીર્ષકની છે અને દરેક સ્તંભનું નામ આપે છે: કોના વડે વિભાજ્ય, ચાવી, વિભાજ્ય છે? અને ચકાસણી. બીજી હરોળમાં પહેલા સ્તંભમાં 2, બીજામાં શું છેલ્લો અંક 0, 2, 4, 6 કે 8 છે?, ત્રીજામાં હા અને ચોથામાં સમીકરણ 1290 ભાગ્યા 2 બરાબર 645 છે. ત્રીજી હરોળમાં પહેલા સ્તંભમાં 3, બીજામાં શું અંકોનો સરવાળો આના વડે વિભાજ્ય છે: 3? પછી સમીકરણ 1 વત્તા 2 વત્તા 9 વત્તા 0 = 12, ત્રીજામાં હા અને ચોથામાં સમીકરણ 1290 ભાગ્યા 3 બરાબર 430 છે. ચોથી હરોળમાં પહેલા સ્તંભમાં 5, બીજામાં શું છેલ્લો અંક 5 કે 0 છે?, ત્રીજામાં હા અને ચોથામાં સમીકરણ 1290 ભાગ્યા 5 બરાબર 258 છે. પાંચમી હરોળમાં પહેલા સ્તંભમાં 10, બીજામાં શું છેલ્લો અંક 0 છે?, ત્રીજામાં હા અને ચોથામાં સમીકરણ 1290 ભાગ્યા 10 બરાબર 129 છે.">
+
+
+
+
+
+<thead>
+<tr>
+<th scope="col"><em class="emphasis">કોના વડે વિભાજ્ય છે…?</em></th>
+<th scope="col"><em class="emphasis">ચાવી</em></th>
+<th scope="col"><em class="emphasis">વિભાજ્ય છે?</em></th>
+<th scope="col"><em class="emphasis">ચકાસણી</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>2</mn></mstyle></mrow></math></td>
+<td>શું છેલ્લો અંક આ છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>0</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>2</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>4</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>6</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mtext> કે </mtext></mstyle><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>8</mn></mstyle><mo>?</mo></mrow></math> <em class="emphasis">હા.</em></td>
+<td>હા</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1290</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>645</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>3</mn></mstyle></mrow></math></td>
+<td><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> શું અંકોનો સરવાળો આના વડે વિભાજ્ય છે: </mtext><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>3</mn></mstyle><mo>?</mo></mrow></math></div><br><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>12</mn></mrow></math> <em class="emphasis">હા.</em></td>
+<td>હા</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1290</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>430</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle></mrow></math></td>
+<td>શું છેલ્લો અંક આ છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle></mrow></math> કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>0</mn></mstyle><mo>?</mo></mrow></math> <em class="emphasis">હા.</em></td>
+<td>હા</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1290</mn><mo>÷</mo><mn>5</mn><mo>=</mo><mn>258</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>10</mn></mstyle></mrow></math></td>
+<td>શું છેલ્લો અંક આ છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>0</mn></mstyle><mo>?</mo></mrow></math> <em class="emphasis">હા.</em></td>
+<td>હા</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1290</mn><mo>÷</mo><mn>10</mn><mo>=</mo><mn>129</mn></mrow></math></td>
+</tr>
+</tbody>
+
+</table></div>
+<div id="fs-id1741819" class="source-paragraph">એટલે, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1,290</mn></mrow></math> આ સંખ્યાઓ વડે વિભાજ્ય છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>10</mn><mo>.</mo></mrow></math></div>
+</div>
+</div>
+</div><div id="fs-id2202281" class="note">
+<div id="fs-id2221615" class="exercise">
+<div id="fs-id1730533" class="problem">
+<div id="fs-id2202284" class="source-paragraph">આપેલી સંખ્યા આના વડે વિભાજ્ય છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>10</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id1730536" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6240</mn></mrow></math></div>
+</div>
+<div id="fs-id1948901" class="solution">
+<div id="fs-id1948903" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 2, 3, 5 અને 10</div>
+</div>
+</div>
+</div>
+<div id="fs-id1171102992471" class="note">
+<div id="fs-id1882702" class="exercise">
+<div id="fs-id1882704" class="problem">
+<div id="fs-id1171104402357" class="source-paragraph">આપેલી સંખ્યા આના વડે વિભાજ્ય છે કે નહીં તે નક્કી કરો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>10</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id1909533" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7248</mn></mrow></math></div>
+</div>
+<div id="fs-id1891972" class="solution">
+<div id="fs-id2909012" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 2 અને 3; આના વડે નહીં: 5 કે 10.</div>
+</div>
+</div>
+</div>
+<div id="fs-id4212248" class="example"><div id="fs-id2382335" class="exercise">
+<div id="fs-id2382337" class="problem">
+<div id="fs-id1948909" class="source-paragraph">નક્કી કરો કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5,625</mn></mrow></math> આ સંખ્યાઓ વડે વિભાજ્ય છે કે નહીં: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>10</mn><mo>.</mo></mrow></math></div>
+</div>
+<div id="fs-id2466908" class="solution">
+<h3>ઉકેલ</h3>
+<div id="fs-id2650037" class="source-paragraph"><a href="#fs-id1970659">કોષ્ટક fs-id1970659</a> માં વિભાજ્યતાની ચાવીઓ આ સંખ્યાને લાગુ કરી છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5,625</mn></mrow></math> અને ભાગફળ શોધીને પરિણામ ચકાસ્યાં છે.</div>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id1970659" aria-label="કોષ્ટકમાં પાંચ હરોળ અને ચાર સ્તંભ છે. પહેલી હરોળ શીર્ષકની છે અને દરેક સ્તંભનું નામ આપે છે: કોના વડે વિભાજ્ય, ચાવી, વિભાજ્ય છે? અને ચકાસણી. બીજી હરોળમાં પહેલા સ્તંભમાં 2, બીજામાં શું છેલ્લો અંક 0, 2, 4, 6 કે 8 છે?, ત્રીજામાં ના અને ચોથામાં સમીકરણ 5625 ભાગ્યા 2 બરાબર 2812.5 છે. ત્રીજી હરોળમાં પહેલા સ્તંભમાં 3, બીજામાં શું અંકોનો સરવાળો આના વડે વિભાજ્ય છે: 3? પછી સમીકરણ 5 વત્તા 6 વત્તા 2 વત્તા 5 = 18, ત્રીજામાં હા અને ચોથામાં સમીકરણ 5625 ભાગ્યા 3 બરાબર 1875 છે. ચોથી હરોળમાં પહેલા સ્તંભમાં 5, બીજામાં શું છેલ્લો અંક 5 કે 0 છે?, ત્રીજામાં હા અને ચોથામાં સમીકરણ 5625 ભાગ્યા 5 બરાબર 1125 છે. પાંચમી હરોળમાં પહેલા સ્તંભમાં 10, બીજામાં શું છેલ્લો અંક 0 છે?, ત્રીજામાં ના અને ચોથામાં સમીકરણ 5625 ભાગ્યા 10 બરાબર 562.5 છે.">
+
+
+
+
+
+<thead>
+<tr>
+<th scope="col"><em class="emphasis">કોના વડે વિભાજ્ય છે…?</em></th>
+<th scope="col"><em class="emphasis">ચાવી</em></th>
+<th scope="col"><em class="emphasis">વિભાજ્ય છે?</em></th>
+<th scope="col"><em class="emphasis">ચકાસણી</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>2</mn></mstyle></mrow></math></td>
+<td>શું છેલ્લો અંક આ છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>0</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>2</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>4</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>6</mn></mstyle><mo>,</mo><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mtext> કે </mtext></mstyle><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>8</mn></mstyle><mo>?</mo></mrow></math> <em class="emphasis">ના.</em></td>
+<td>ના</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5625</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>2812.5</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>3</mn></mstyle></mrow></math></td>
+<td><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> શું અંકોનો સરવાળો આના વડે વિભાજ્ય છે: </mtext><mspace width="0.2em"></mspace><mstyle fontweight="bold"><mn>3</mn></mstyle><mo>?</mo></mrow></math></div><br><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>18</mn></mrow></math> <em class="emphasis">હા.</em></td>
+<td>હા</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5625</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>1875</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle></mrow></math></td>
+<td>શું છેલ્લો અંક આ છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>5</mn></mstyle></mrow></math> કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>0</mn></mstyle><mo>?</mo></mrow></math> <em class="emphasis">હા.</em></td>
+<td>હા</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5625</mn><mo>÷</mo><mn>5</mn><mo>=</mo><mn>1125</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>10</mn></mstyle></mrow></math></td>
+<td>શું છેલ્લો અંક આ છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>0</mn></mstyle><mo>?</mo></mrow></math> <em class="emphasis">ના.</em></td>
+<td>ના</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5625</mn><mo>÷</mo><mn>10</mn><mo>=</mo><mn>562.5</mn></mrow></math></td>
+</tr>
+</tbody>
+
+</table></div>
+<div id="fs-id1859662" class="source-paragraph">એટલે, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5,625</mn></mrow></math> આ સંખ્યાઓ વડે વિભાજ્ય છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>,</mo></mrow></math> પરંતુ આના વડે નહીં: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo></mrow></math> કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mo>.</mo></mrow></math></div>
+</div>
+</div>
+</div><div id="fs-id1946957" class="note">
+<div id="fs-id1519100" class="exercise">
+<div id="fs-id1519102" class="problem">
+<div id="fs-id1946960" class="source-paragraph">આપેલી સંખ્યા વિભાજ્ય છે કે નહીં તે નક્કી કરો, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> આના વડે: </mtext><mspace width="0.2em"></mspace><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>10</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id1726142" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4962</mn></mrow></math></div>
+</div>
+<div id="fs-id1828926" class="solution">
+<div id="fs-id1828929" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 2 અને 3; આના વડે નહીં: 5 કે 10.</div></div>
+</div>
+</div>
+<div id="fs-id1171102866908" class="note">
+<div id="fs-id2209994" class="exercise">
+<div id="fs-id2209996" class="problem">
+<div id="fs-id1171103296260" class="source-paragraph">આપેલી સંખ્યા વિભાજ્ય છે કે નહીં તે નક્કી કરો, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext> આના વડે: </mtext><mspace width="0.2em"></mspace><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>10</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id1735435" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3765</mn></mrow></math></div>
+</div>
+<div id="fs-id1823105" class="solution">
+<div id="fs-id1823108" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 3 અને 5.</div>
+</div>
+</div>
+</div>
+</section>
+<section id="fs-id2172492">
+<h2>સંખ્યાના બધા અવયવ શોધો</h2>
+<div id="fs-id2202736" class="source-paragraph">એક જ વિચાર જુદી જુદી રીતે રજૂ કરી શકાય. અત્યાર સુધી જોયું કે જો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi></mrow></math> અવયવી હોય આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>,</mo></mrow></math> તો કહી શકીએ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi></mrow></math> છે <strong id="term-00004" class="term">વિભાજ્ય</strong> આના વડે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>.</mo></mrow></math> આપણે જાણીએ છીએ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> એ ગુણનફળ છે આ બંનેનું: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>,</mo></mrow></math> એટલે કહી શકીએ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> અવયવી છે આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> અવયવી છે આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>.</mo></mrow></math> એમ પણ કહી શકીએ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> વિભાજ્ય છે આના વડે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math> અને આના વડે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>.</mo></mrow></math> આ વાત બીજી રીતે કહીએ તો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math> અવયવ છે આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn><mo>.</mo></mrow></math> જ્યારે લખીએ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn><mo>=</mo><mn>8</mn><mo>⋅</mo><mn>9</mn></mrow></math> ત્યારે કહી શકીએ કે આ સંખ્યાનું અવયવીકરણ કર્યું છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn><mo>.</mo></mrow></math></div>
+<div id="fs-id2751166" class="source-media"><div id="gu-pv-fs-id2751166-redraw-27399c2e" class="gu-place-redraw" data-redraw="a00-factors-product" role="group" aria-label="ચિત્રમાં સમીકરણ 8 ગુણ્યા 9 બરાબર 72 છે. અહીં 8 અને 9ને અવયવ તથા 72ને ગુણનફળ તરીકે નામ આપેલાં છે." lang="gu-Gujr-IN" style="font-family:Gujarati,'Nirmala UI',sans-serif;color:#182c35;background:white;border:1px solid #b8cecb;border-radius:6px;padding:12px;margin:8px 0;max-width:100%;box-sizing:border-box;line-height:1.65"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" aria-hidden="true" style="display:block;width:min(100%,520px);height:auto;margin:auto;font-family:Gujarati,'Nirmala UI',sans-serif;color:#182c35"><text x="65" y="42" text-anchor="middle" font-size="30" fill="#182c35">8 · 9</text><text x="185" y="42" text-anchor="middle" font-size="30" fill="#182c35">=</text><text x="315" y="42" text-anchor="middle" font-size="30" fill="#182c35">72</text><path d="M20 60 V68 Q20 77 31 77 H99 Q110 77 110 88 Q110 77 121 77 H189 Q200 77 200 68 V60" fill="none" stroke="#08656b" stroke-width="3"/><path d="M275 60 V68 Q275 77 286 77 H304 Q315 77 315 88 Q315 77 326 77 H344 Q355 77 355 68 V60" fill="none" stroke="#08656b" stroke-width="3"/><text x="110" y="112" text-anchor="middle" font-size="22" fill="#08656b">અવયવ</text><text x="315" y="112" text-anchor="middle" font-size="22" fill="#08656b">ગુણનફળ</text></svg></div><p class="figure-description">ચિત્રમાં સમીકરણ 8 ગુણ્યા 9 બરાબર 72 છે. અહીં 8 અને 9ને અવયવ તથા 72ને ગુણનફળ તરીકે નામ આપેલાં છે.</p></div>
+<div id="fs-id1285055" class="note">
+<h3>અવયવ</h3>
+<div id="fs-id1393991" class="source-paragraph">આ પદાવલીમાં: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>⋅</mo><mi>b</mi></mrow></math> આ બંને:  <em class="emphasis">a</em> અને <em class="emphasis">b</em> કહેવાય છે <em class="emphasis">અવયવ</em>જો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>⋅</mo><mi>b</mi><mo>=</mo><mi>m</mi><mo>,</mo></mrow></math> અને બંને <em class="emphasis">a</em> અને <em class="emphasis">b</em> પૂર્ણાંક હોય, તો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mspace width="0.2em"></mspace><mtext> અને </mtext><mspace width="0.2em"></mspace><mi>b</mi></mrow></math> અવયવ છે આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>,</mo></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi></mrow></math> ગુણનફળ છે આ બંનેનું: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mspace width="0.2em"></mspace><mtext> અને </mtext><mspace width="0.2em"></mspace><mi>b</mi><mo>.</mo></mrow></math></div><aside class="note reader-bridge" aria-label="વાંચવામાં મદદરૂપ નોંધ"><strong>વાંચવામાં મદદરૂપ નોંધ:</strong> સામાન્ય બીજગણિતની વ્યાખ્યામાં પૂર્ણાંક અવયવ ઋણ પણ હોઈ શકે; આ વિભાગના અવયવની યાદીવાળા અભ્યાસમાં ધન અવયવ શોધવાના છે.</aside>
+</div>
+<div id="fs-id2197819" class="source-paragraph">બીજગણિતમાં સંખ્યાના બધા અવયવ શોધવા ઉપયોગી થઈ શકે. તેને સંખ્યાનું અવયવીકરણ કહે છે અને તે અનેક પ્રકારના પ્રશ્નો ઉકેલવામાં મદદરૂપ થાય છે.</div><div id="eip-47" class="note">હાથથી સામગ્રી ગોઠવીને ગણિત સમજવાની “ગુણાકાર અને અવયવીકરણના નમૂના બનાવો” પ્રવૃત્તિ કરવાથી ગુણાકાર અને અવયવીકરણની વધુ સારી સમજ મળશે.</div><div id="fs-id1741468" class="source-paragraph">ધારો કે નૃત્યનિર્દેશક બેલેના કાર્યક્રમ માટે નૃત્ય ગોઠવે છે. નર્તકોની સંખ્યા છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math> અને ચોક્કસ દૃશ્ય માટે નૃત્યનિર્દેશક મંચ પર નર્તકોને સમાન કદનાં જૂથમાં ગોઠવવા માગે છે. </div><div id="eip-356" class="source-paragraph">નર્તકોને સમાન કદનાં જૂથમાં કેટલી રીતે ગોઠવી શકાય? આ પ્રશ્નનો જવાબ આપવો એટલે આ સંખ્યાના અવયવ ઓળખવા: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn><mo>.</mo></mrow></math> <a href="#fs-id1406287">કોષ્ટક fs-id1406287</a> માં નર્તકોને ગોઠવવાની જુદી જુદી રીતોનો સાર આપ્યો છે.</div><div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id1406287" aria-label="કોષ્ટકમાં નવ હરોળ અને ત્રણ સ્તંભ છે. પહેલી હરોળ શીર્ષકની છે. સ્તંભનાં નામ છે: જૂથની સંખ્યા, દરેક જૂથમાં નર્તકો અને કુલ નર્તકો. જૂથની સંખ્યાના સ્તંભમાં કિંમતો છે: 1, 2, 3, 4, 6, 8,12 અને 24. દરેક જૂથમાં નર્તકોના સ્તંભમાં કિંમતો છે: 24, 12, 8, 6, 4, 3, 2 અને 1. કુલ નર્તકોના સ્તંભમાં સમીકરણો છે: 1 ગુણ્યા 24 બરાબર 24, 2 ગુણ્યા 12 બરાબર 24, 3 ગુણ્યા 8 બરાબર 24, 4 ગુણ્યા 6 બરાબર 24, 6 ગુણ્યા 4 બરાબર 24, 8 ગુણ્યા 3 બરાબર 24, 12 ગુણ્યા 2 બરાબર 24 અને 24 ગુણ્યા 1 બરાબર 24.">
+
+
+
+
+<thead>
+<tr>
+<th scope="col"><em class="emphasis">જૂથની સંખ્યા</em></th>
+<th scope="col"><em class="emphasis">દરેક જૂથમાં નર્તકો</em></th>
+<th scope="col"><em class="emphasis">કુલ નર્તકો</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>⋅</mo><mn>24</mn><mo>=</mo><mn>24</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>⋅</mo><mn>12</mn><mo>=</mo><mn>24</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>⋅</mo><mn>8</mn><mo>=</mo><mn>24</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>⋅</mo><mn>6</mn><mo>=</mo><mn>24</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>24</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>24</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>24</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn><mo>⋅</mo><mn>1</mn><mo>=</mo><mn>24</mn></mrow></math></td>
+</tr>
+</tbody>
+
+</table></div>
+<div id="fs-id2668925" class="source-paragraph">આ કોષ્ટકમાં કઈ ભાત દેખાય છે: <a href="#fs-id1406287">કોષ્ટક fs-id1406287</a>? શું તમે નોંધ્યું કે જૂથની સંખ્યાને દરેક જૂથમાંના નર્તકોની સંખ્યા વડે ગુણતાં હંમેશાં મળે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn><mo>?</mo></mrow></math> તે યોગ્ય છે, કારણ કે હંમેશાં <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn></mrow></math> નર્તકો હોય છે.</div>
+<div id="fs-id3445237" class="source-paragraph">પહેલા બે સ્તંભ ધ્યાનથી જોતાં બીજી ભાત પણ દેખાય. બંને સ્તંભમાં બરાબર એ જ સંખ્યાઓ છે, પરંતુ ઊલટા ક્રમમાં. તેઓ એકબીજાના અરીસા જેવા છે. ખરેખર, બંનેમાં આ સંખ્યાના બધા અવયવ છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>24</mn><mo>,</mo></mrow></math> જે આ છે:</div>
+<div id="fs-id1824865" class="equation"><span class="source-label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>24</mn></mrow></math></div>
+<div id="fs-id2619780" class="source-paragraph">કોઈ પણ ગણતરીની સંખ્યાના બધા અવયવ શોધવા, તેને ગણતરીની દરેક સંખ્યા વડે ક્રમશઃ ભાગીએ; પહેલી ભાજક સંખ્યા છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>.</mo></mrow></math> જો <strong id="term-00005" class="term">ભાગફળ</strong> પણ ગણતરીની સંખ્યા હોય, તો ભાજક અને ભાગફળ આપેલી સંખ્યાના અવયવ છે. ભાગફળ ભાજક કરતાં નાનું થાય ત્યારે અટકી શકીએ.</div>
+<div id="fs-id4280966" class="note"><h3>ગણતરીની સંખ્યાના બધા અવયવ શોધો.</h3><ol id="eip-id1168467162605"><li class="item">ભાગફળ ભાજક કરતાં નાનું થાય ત્યાં સુધી, ગણતરીની દરેક સંખ્યા વડે ક્રમશઃ આપેલી સંખ્યાને ભાગો.
+<ul id="eip-id1168263547010"><li class="item">જો ભાગફળ ગણતરીની સંખ્યા હોય, તો ભાજક અને ભાગફળ અવયવની જોડી છે.</li>
+<li class="item">જો ભાગફળ ગણતરીની સંખ્યા ન હોય, તો ભાજક અવયવ નથી.</li></ul></li>
+<li class="item">અવયવની બધી જોડીઓની યાદી બનાવો.</li>
+<li class="item">બધા <strong id="term-00006" class="term">અવયવ</strong> નાનાથી મોટા ક્રમમાં લખો.</li></ol></div><div id="fs-id1842375" class="example">
+<div id="fs-id1842378" class="exercise">
+<div id="fs-id1742809" class="problem">
+<div id="fs-id1742811" class="source-paragraph">આ સંખ્યાના બધા અવયવ શોધો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn><mo>.</mo></mrow></math></div>
+</div>
+<div id="fs-id2657538" class="solution">
+<h3>ઉકેલ</h3>
+<div id="fs-id1866900" class="source-paragraph">ભાગો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn></mrow></math> ને ગણતરીની દરેક સંખ્યા વડે; પહેલી ભાજક સંખ્યા છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>.</mo></mrow></math> જો ભાગફળ પૂર્ણ સંખ્યા હોય, તો ભાજક અને ભાગફળ અવયવની જોડી છે.<br>
+<div id="fs-id3369689" class="source-media"><div id="gu-pv-fs-id3369689-redraw-67719426" class="gu-place-redraw" data-redraw="a00-factors-72-table" role="group" aria-label="બોતેરના અવયવ શોધતું નવ હરોળનું કોષ્ટક, શીર્ષક સહિત; ભાજક એકથી આઠ સુધી. ભાજક નવની હરોળ ચિત્રમાં નથી." lang="gu-Gujr-IN" style="font-family:Gujarati,'Nirmala UI',sans-serif;color:#182c35;background:white;border:1px solid #b8cecb;border-radius:6px;padding:12px;margin:8px 0;max-width:100%;box-sizing:border-box;line-height:1.65"><div role="region" aria-label="72ના અવયવો શોધવાનું કોષ્ટક; આડું સરકાવી શકાય છે" tabindex="0" style="overflow-x:auto;max-width:100%"><table style="border-collapse:collapse;min-width:560px;width:100%;table-layout:fixed;font-size:15px"><caption style="position:sticky;left:0;text-align:left;font-weight:700;padding:4px 0 8px">72ના અવયવો શોધવાનું કોષ્ટક</caption><thead><tr><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">ભાજ્ય</th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">ભાજક</th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">ભાગફળ</th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">અવયવ</th></tr></thead><tbody><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">72</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">72</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 72</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">72</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">2</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">36</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">2, 36</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">72</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">3</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">24</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">3, 24</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">72</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">4</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">18</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">4, 18</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">72</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">5</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">14.4</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">–</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">72</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">6</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">12</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">6, 12</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">72</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">7</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">~10.29</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">–</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">72</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">8</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">9</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">8, 9</td></tr></tbody></table></div></div><p class="figure-description">બોતેરના અવયવ શોધતું નવ હરોળનું કોષ્ટક, શીર્ષક સહિત; ભાજક એકથી આઠ સુધી. ભાજક નવની હરોળ ચિત્રમાં નથી.</p></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> ચિત્રમાં શીર્ષક સહિત નવ હરોળ અને ચાર સ્તંભ છે: ભાજ્ય, ભાજક, ભાગફળ અને અવયવ. ભાજ્ય બોતેર છે. ભાજક એકથી આઠ સુધી છે. ભાગફળ ગણતરીની સંખ્યા ન હોય ત્યારે અવયવના ખાનામાં આડી રેખા છે. નવના ભાજકવાળી હરોળ ચિત્રમાં નથી.</aside></div>
+<div id="fs-id1740274" class="source-paragraph">પછીની હરોળમાં ભાજક હશે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math> અને ભાગફળ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn><mo>.</mo></mrow></math> ભાગફળ ભાજક કરતાં નાનું હશે, તેથી અટકીએ. ચાલુ રાખીએ તો એ જ અવયવ ફરી ઊલટા ક્રમમાં મળશે. બધા અવયવ નાનાથી મોટા ક્રમમાં લખતાં મળે</div>
+<div id="fs-id1321733" class="source-paragraph"><div class="math-scroll" role="region" aria-label="ગણિતની ગોઠવણી; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0" style="max-width:100%;overflow-x:auto;margin:.6rem 0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>18</mn><mo>,</mo><mn>24</mn><mo>,</mo><mn>36</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>72</mn></mrow></math></div></div>
+</div>
+</div>
+</div>
+<div id="fs-id2661440" class="note">
+<div id="fs-id2440121" class="exercise">
+<div id="fs-id2790496" class="problem">
+<div id="fs-id2440118" class="source-paragraph">આપેલી સંખ્યાના બધા અવયવ શોધો:</div>
+<div id="fs-id2790498" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>96</mn></mrow></math></div>
+</div>
+<div id="fs-id588366" class="solution">
+<div id="fs-id588368" class="source-paragraph">1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96</div>
+</div>
+</div>
+</div>
+<div id="fs-id1171104005581" class="note">
+<div id="fs-id1463317" class="exercise">
+<div id="fs-id1463320" class="problem">
+<div id="fs-id1171104014294" class="source-paragraph">આપેલી સંખ્યાના બધા અવયવ શોધો:</div>
+<div id="fs-id1463322" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>80</mn></mrow></math></div>
+</div>
+<div id="fs-id764418" class="solution">
+<div id="fs-id2472012" class="source-paragraph">1, 2, 4, 5, 8, 10, 16, 20, 40, 80</div>
+</div>
+</div>
+</div>
+</section>
+<section id="fs-id1500003"><h2>અવિભાજ્ય અને સંયુક્ત સંખ્યાઓ ઓળખો</h2><div id="fs-id1500008" class="source-paragraph">કેટલીક સંખ્યાઓ, જેમ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>72</mn><mo>,</mo></mrow></math> ના ઘણા અવયવ હોય છે. બીજી સંખ્યાઓ, જેમ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn><mo>,</mo></mrow></math> ના માત્ર બે અવયવ હોય છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> અને તે સંખ્યા પોતે. માત્ર બે અવયવ ધરાવતી સંખ્યાને કહે છે <strong id="term-00007" class="term">અવિભાજ્ય સંખ્યા</strong>; બે કરતાં વધુ અવયવ ધરાવતી સંખ્યાને કહે છે <strong id="term-00008" class="term">સંયુક્ત સંખ્યા</strong> (વિભાજ્ય સંખ્યા). સંખ્યા <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> અવિભાજ્ય પણ નથી અને સંયુક્ત પણ નથી. તેનો એક જ અવયવ છે: તે પોતે.</div>
+<div id="fs-id2431129" class="note">
+<h3>અવિભાજ્ય સંખ્યાઓ અને સંયુક્ત સંખ્યાઓ</h3>
+<div id="fs-id2484442" class="source-paragraph">અવિભાજ્ય સંખ્યા એ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> કરતાં મોટી ગણતરીની સંખ્યા છે, જેના અવયવ માત્ર <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> અને તે પોતે હોય છે.</div>
+<div id="fs-id1824744" class="source-paragraph">જે ગણતરીની સંખ્યા અવિભાજ્ય ન હોય તે સંયુક્ત સંખ્યા છે.</div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> સંયુક્ત સંખ્યા એ એક કરતાં મોટી એવી ગણતરીની સંખ્યા છે જે અવિભાજ્ય ન હોય. તેના બે કરતાં વધુ ધન અવયવ હોય છે. એક અવિભાજ્ય પણ નથી અને સંયુક્ત પણ નથી.</aside>
+</div>
+<div id="fs-id1824749" class="source-paragraph"><a href="#CNX_BMath_Figure_02_04_014">આકૃતિ 014</a> માં ગણતરીની સંખ્યાઓ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> થી <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math> સુધીની, તેમના અવયવ સાથે આપેલી છે. રંગથી દર્શાવેલી સંખ્યાઓ અવિભાજ્ય છે, કારણ કે દરેકના માત્ર બે અવયવ છે.</div>
+<figure id="CNX_BMath_Figure_02_04_014" class="figure"><div id="fs-id1480189" class="source-media"><div id="gu-pv-fs-id1480189-redraw-335b18d9" class="gu-place-redraw" data-redraw="a00-factors-prime-composite" role="group" aria-label="બે થી વીસની સંખ્યાઓ, તેમના અવયવ અને અવિભાજ્ય કે સંયુક્ત વર્ગ દર્શાવતું બે પેનલનું કોષ્ટક. અવિભાજ્ય સંખ્યાના નંબરવાળા ખાના આછા રાખોડી-વાદળી છે. પંદરના અવયવમાં બે નથી." lang="gu-Gujr-IN" style="font-family:Gujarati,'Nirmala UI',sans-serif;color:#182c35;background:white;border:1px solid #b8cecb;border-radius:6px;padding:12px;margin:8px 0;max-width:100%;box-sizing:border-box;line-height:1.65"><div role="region" aria-label="2થી 20 સુધી અવિભાજ્ય અને સંયુક્ત સંખ્યાઓ; આડું સરકાવી શકાય છે" tabindex="0" style="overflow-x:auto;max-width:100%"><table style="border-collapse:collapse;min-width:940px;width:100%;table-layout:fixed;font-size:15px"><caption style="position:sticky;left:0;text-align:left;font-weight:700;padding:4px 0 8px">2થી 20 સુધી અવિભાજ્ય અને સંયુક્ત સંખ્યાઓ</caption><colgroup><col style="width:11%"><col style="width:21%"><col style="width:18%"><col style="width:3%"><col style="width:11%"><col style="width:21%"><col style="width:18%"></colgroup><thead><tr><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">સંખ્યા</th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">અવયવ</th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">અવિભાજ્ય કે સંયુક્ત?</th><th scope="col" aria-hidden="true" style="border:0;background:#fff"></th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">સંખ્યા</th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">અવયવ</th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;">અવિભાજ્ય કે સંયુક્ત?</th></tr></thead><tbody><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;background:#d1e1e1;">2</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">અવિભાજ્ય</td><td aria-hidden="true" style="border:0;background:#fff"></td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">12</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2, 3, 4, 6, 12</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;background:#d1e1e1;">3</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 3</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">અવિભાજ્ય</td><td aria-hidden="true" style="border:0;background:#fff"></td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;background:#d1e1e1;">13</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 13</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">અવિભાજ્ય</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">4</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2, 4</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td><td aria-hidden="true" style="border:0;background:#fff"></td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">14</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2, 7, 14</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;background:#d1e1e1;">5</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 5</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">અવિભાજ્ય</td><td aria-hidden="true" style="border:0;background:#fff"></td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">15</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 3, 5, 15</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">6</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2, 3, 6</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td><td aria-hidden="true" style="border:0;background:#fff"></td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">16</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2, 4, 8, 16</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;background:#d1e1e1;">7</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 7</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">અવિભાજ્ય</td><td aria-hidden="true" style="border:0;background:#fff"></td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;background:#d1e1e1;">17</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 17</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">અવિભાજ્ય</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">8</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2, 4, 8</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td><td aria-hidden="true" style="border:0;background:#fff"></td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">18</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2, 3, 6, 9, 18</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">9</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 3, 9</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td><td aria-hidden="true" style="border:0;background:#fff"></td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;background:#d1e1e1;">19</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 19</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">અવિભાજ્ય</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">10</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2, 5, 10</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td><td aria-hidden="true" style="border:0;background:#fff"></td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">20</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 2, 4, 5, 10, 20</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">સંયુક્ત</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;background:#d1e1e1;">11</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1, 11</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">અવિભાજ્ય</td><td aria-hidden="true" style="border:0;background:#fff"></td><td aria-label="ખાલી" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">&#160;</td><td aria-label="ખાલી" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">&#160;</td><td aria-label="ખાલી" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">&#160;</td></tr></tbody></table></div></div><p class="figure-description">બે થી વીસની સંખ્યાઓ, તેમના અવયવ અને અવિભાજ્ય કે સંયુક્ત વર્ગ દર્શાવતું બે પેનલનું કોષ્ટક. અવિભાજ્ય સંખ્યાના નંબરવાળા ખાના આછા રાખોડી-વાદળી છે. પંદરના અવયવમાં બે નથી.</p></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> ચિત્રમાં ત્રણ-ત્રણ સ્તંભનાં બે પેનલ છે. શીર્ષક સહિત અગિયાર હરોળ છે. બે થી અગિયાર ડાબે અને બારથી વીસ જમણે છે. માત્ર અવિભાજ્ય સંખ્યાના નંબરવાળા ખાના આછા રાખોડી-વાદળી છે; લાલ લખાણ નથી. પંદરના અવયવ એક, ત્રણ, પાંચ અને પંદર છે.</aside>
+
+<figcaption class="caption">ગણતરીની સંખ્યાઓ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> થી <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn><mo>,</mo></mrow></math> સુધીના અવયવ; અવિભાજ્ય સંખ્યાઓ રંગથી દર્શાવેલી છે</figcaption></figure><div id="fs-id2382417" class="source-paragraph">આનાથી નાની અવિભાજ્ય સંખ્યાઓ: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math> છે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>17</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>19</mn><mo>.</mo></mrow></math> મોટી અવિભાજ્ય સંખ્યાઓ પણ ઘણી છે. સંખ્યા અવિભાજ્ય છે કે સંયુક્ત તે નક્કી કરવા, આ સિવાય તેનો કોઈ અવયવ છે કે નહીં તે જોવું પડે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> અને તે પોતે. આ માટે નાની અવિભાજ્ય સંખ્યાઓને ક્રમશઃ તપાસીએ કે તે આપેલી સંખ્યાનો અવયવ છે કે નહીં. જો તેમાંથી કોઈ અવયવ ન હોય, તો આપેલી સંખ્યા પણ અવિભાજ્ય છે.</div>
+<div id="fs-id1762218" class="note"><h3>સંખ્યા અવિભાજ્ય છે કે નહીં તે નક્કી કરો.</h3><ol id="eip-id1168468773932"><li class="item"> દરેક અવિભાજ્ય સંખ્યા આપેલી સંખ્યાનો અવયવ છે કે નહીં તે ક્રમશઃ ચકાસો.</li>
+<li class="item"> શરૂઆત કરો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> થી અને ભાગફળ ભાજક કરતાં નાનું થાય કે અવિભાજ્ય અવયવ મળે ત્યારે અટકો.</li>
+<li class="item"> જો સંખ્યાનો <strong id="term-00009" class="term">અવિભાજ્ય અવયવ</strong> હોય, તો તે  <strong id="term-00010" class="term">સંયુક્ત સંખ્યા</strong> છે. જો તેનો કોઈ અવિભાજ્ય અવયવ ન હોય, તો સંખ્યા અવિભાજ્ય છે.</li></ol><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> એક કરતાં મોટી આપેલી સંખ્યા માટે, તેનાથી નાનો અવિભાજ્ય અવયવ મળે તો સંખ્યા સંયુક્ત છે. નાના અવિભાજ્ય ભાજકો ક્રમશઃ તપાસો. ભાજકનો વર્ગ સંખ્યા કરતાં મોટો થાય ત્યાં સુધી કોઈ એવો અવયવ ન મળે તો સંખ્યા અવિભાજ્ય છે. વર્ગ સમાન થાય ત્યારે તે ભાજકની તપાસ છોડશો નહીં.</aside></div><div id="fs-id1756650" class="example">
+<div id="fs-id1756652" class="exercise">
+<div id="fs-id1756654" class="problem">
+<div id="fs-id2425072" class="source-paragraph">દરેક સંખ્યા અવિભાજ્ય છે કે સંયુક્ત તે ઓળખો:
+<ol id="eip-id1168466268209"><li class="item">
+<span class="span">ⓐ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>83</mn><mspace width="0.2em"></mspace></math>
+</li>
+<li class="item">
+<span class="span">ⓑ</span> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em"></mspace><mn>77</mn></math></li>
+</ol></div></div>
+<div id="fs-id1570468" class="solution">
+<h3>ઉકેલ</h3>
+<div id="fs-id2210031" class="source-paragraph"><span class="span">ⓐ</span> દરેક અવિભાજ્ય સંખ્યા આ સંખ્યાનો અવયવ છે કે નહીં તે ક્રમશઃ ચકાસો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>83</mn></mrow></math>; શરૂઆત કરો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo></mrow></math> થી, બતાવ્યા પ્રમાણે. ભાગફળ ભાજક કરતાં નાનું થાય ત્યારે અટકીશું.</div><div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id3335859" aria-label="ચિત્રમાં છ હરોળ અને ત્રણ સ્તંભનું કોષ્ટક છે. પહેલી હરોળ શીર્ષકની છે; નામ છે અવિભાજ્ય સંખ્યા, ચાવી અને આનો અવયવ છે: 83? અવિભાજ્ય સંખ્યાના સ્તંભમાં હરોળો આ સંખ્યાઓ દર્શાવે છે: 2, 3, 5, 7 અને 11. ચાવીના સ્તંભની બીજી હરોળ કહે છે કે આ સંખ્યાનો છેલ્લો અંક: 83, આ નથી: 0, 2, 4, 6 કે 8. આનો અવયવ છે: 83?ના સ્તંભમાં દરેક હરોળમાં ના છે. ચાવીના સ્તંભની ત્રીજી હરોળમાં આઠ વત્તા ત્રણ બરાબર અગિયાર અને અગિયાર ત્રણ વડે વિભાજ્ય નથી એવું લખેલું છે. ચોથી હરોળમાં ત્ર્યાસીનો છેલ્લો અંક પાંચ કે શૂન્ય નથી એવું લખેલું છે. પાંચમી હરોળમાં ત્ર્યાસી ભાગ્યા સાત બરાબર અગિયાર દશાંશ આઠ પાંચ સાત, અને આમ આગળ એવું લખેલું છે. છઠ્ઠી હરોળમાં ત્ર્યાસી ભાગ્યા અગિયાર બરાબર સાત દશાંશ પાંચ ચાર પાંચ, અને આમ આગળ એવું લખેલું છે.">
+<span class="source-label"></span>
+
+
+
+
+<thead>
+<tr>
+<th scope="col">
+<em class="emphasis">અવિભાજ્ય સંખ્યા</em></th>
+<th scope="col"><em class="emphasis">ચાવી</em></th>
+<th scope="col"><em class="emphasis">આનો અવયવ છે:</em> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle fontweight="bold"><mn>83</mn></mstyle><mo>?</mo></mrow></math></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></td>
+<td>છેલ્લો અંક, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>83</mn></mrow></math> આ નથી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mtext> કે </mtext><mspace width="0.2em"></mspace><mn>8</mn><mo>.</mo></mrow></math></td>
+<td>ના.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>11</mn><mo>,</mo></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>11</mn></mrow></math> આના વડે વિભાજ્ય નથી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math></td>
+<td>ના.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math></td>
+<td>છેલ્લો અંક, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>83</mn></mrow></math> આ નથી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>.</mo></mrow></math></td>
+<td>ના.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>83</mn><mo>÷</mo><mn>7</mn><mo>=</mo><mn>11.857</mn><mtext>….</mtext></mrow></math></td>
+<td>ના.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>11</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>83</mn><mo>÷</mo><mn>11</mn><mo>=</mo><mn>7.545</mn><mtext>…</mtext></mrow></math></td>
+<td>ના.</td>
+</tr>
+</tbody>
+
+</table></div>
+<div id="fs-id1755034" class="source-paragraph">અહીં પહોંચતાં અટકી શકીએ: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>11</mn></mrow></math> કારણ કે ભાગફળ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>(7.545…)</mtext></mrow></math> ભાજક કરતાં નાનું છે.</div>
+<div id="fs-id2431998" class="source-paragraph">કોઈ અવિભાજ્ય સંખ્યા અવયવ તરીકે ન મળી, આ સંખ્યાની: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>83</mn><mo>,</mo></mrow></math> તેથી જાણીએ છીએ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>83</mn></mrow></math> અવિભાજ્ય છે.</div>
+<div id="fs-id3002106" class="source-paragraph"><span class="span">ⓑ</span> દરેક અવિભાજ્ય સંખ્યા ક્રમશઃ તપાસો કે તે અવયવ છે કે નહીં, આ સંખ્યાનો: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>77</mn><mo>.</mo></mrow></math></div><div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id2371111" aria-label="સિત્યોતેર માટે અવિભાજ્ય ભાજકો બે, ત્રણ, પાંચ અને સાતની ચકાસણી. પ્રથમ ત્રણ અવયવ નથી; સાત અવયવ છે, કારણ કે સિત્યોતેર ભાગ્યા સાત બરાબર અગિયાર."><span class="source-label"></span>
+
+
+
+<thead>
+<tr>
+<th scope="col"><em class="emphasis">અવિભાજ્ય સંખ્યા</em></th>
+<th scope="col"><em class="emphasis">ચાવી</em></th>
+<th scope="col"><em class="emphasis">આનો અવયવ છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>77</mn><mo>?</mo></mrow></math></em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></td>
+<td>છેલ્લો અંક આ નથી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mtext> કે </mtext><mspace width="0.2em"></mspace><mn>8</mn><mo>.</mo></mrow></math></td>
+<td>ના.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>14</mn><mo>,</mo></mrow></math> અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn></mrow></math> આના વડે વિભાજ્ય નથી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math></td>
+<td>ના.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math></td>
+<td>છેલ્લો અંક આ નથી: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math> કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>.</mo></mrow></math></td>
+<td>ના.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>77</mn><mo>÷</mo><mn>7</mn><mo>=</mo><mn>11</mn></mrow></math></td>
+<td>હા.</td>
+</tr>
+</tbody>
+
+
+</table></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> છેલ્લી હરોળમાં ભાજક સાત છે: સિત્યોતેર ભાગ્યા સાત બરાબર અગિયાર. તેથી સાત અવયવ છે.</aside><div id="fs-id2835605" class="source-paragraph">કારણ કે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>77</mn></mrow></math> આ સંખ્યા વડે વિભાજ્ય છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn><mo>,</mo></mrow></math> તેથી તે અવિભાજ્ય નથી. તે સંયુક્ત છે.</div>
+</div>
+</div>
+</div>
+<div id="fs-id2388653" class="note">
+<div id="fs-id2388660" class="exercise">
+<div id="fs-id2924990" class="problem">
+<div id="fs-id2388657" class="source-paragraph">સંખ્યા અવિભાજ્ય છે કે સંયુક્ત તે ઓળખો:</div>
+<div id="fs-id2924992" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>91</mn></mrow></math></div>
+</div>
+<div id="fs-id2492211" class="solution">
+<div id="fs-id2492213" class="source-paragraph">સંયુક્ત</div>
+</div>
+</div>
+</div>
+<div id="fs-id1171104424147" class="note">
+<div id="fs-id2352840" class="exercise">
+<div id="fs-id2352842" class="problem">
+<div id="fs-id1171101067266" class="source-paragraph">સંખ્યા અવિભાજ્ય છે કે સંયુક્ત તે ઓળખો:</div>
+<div id="fs-id2352844" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>137</mn></mrow></math></div>
+</div>
+<div id="fs-id2649067" class="solution">
+<div id="fs-id2649069" class="source-paragraph">અવિભાજ્ય</div>
+</div>
+</div>
+</div>
+<div id="eip-id1168466680369" class="note">સાક્ષરતા સાથે જોડતી પ્રવૃત્તિઓ <em class="emphasis">વન હન્ડ્રેડ હંગરી ઍન્ટ્સ</em>, <em class="emphasis">સ્પન્કી મન્કીઝ ઑન પરેડ</em> અને <em class="emphasis">અ રિમેઇન્ડર ઑફ વન</em> આ વિભાગના વિષયોનો બીજો દૃષ્ટિકોણ આપશે.</div><aside class="note reader-bridge" aria-label="વાંચવામાં મદદરૂપ નોંધ"><strong>વાંચવામાં મદદરૂપ નોંધ:</strong> પુસ્તકનાં નામ મૂળની ઓળખ જાળવતા લિપ્યંતરિત છે: One Hundred Hungry Ants; Spunky Monkeys on Parade; A Remainder of One. મૂળ કડીઓ યથાવત્ છે.</aside><div id="fs-id2608556" class="note"><h3>વધારાનાં ઑનલાઇન સંસાધનો જુઓ</h3><ul id="fs-id2200105">
+<li class="item"><a href="https://openstaxcollege.org/l/24Divisrules">વિભાજ્યતાના નિયમો</a></li>
+<li class="item"><a href="https://openstaxcollege.org/l/24Factors">અવયવ</a></li>
+<li class="item"><a href="https://openstaxcollege.org/l/24Factors1">ઉદાહરણ 1: સંખ્યાના અવયવ શોધો</a></li>
+<li class="item"><a href="https://openstaxcollege.org/l/24Factors2">ઉદાહરણ 2: સંખ્યાના અવયવ શોધો</a></li>
+<li class="item"><a href="https://openstaxcollege.org/l/24Factors3">ઉદાહરણ 3: સંખ્યાના અવયવ શોધો</a></li>
+</ul>
+</div></section><section id="fs-id2382506"><h2>મુખ્ય સંકલ્પનાઓ</h2><div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="eip-839" aria-label="કોષ્ટક">
+
+
+<thead>
+  <tr>
+    <th scope="col">વિભાજ્યતાની ચાવીઓ</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><em class="emphasis">સંખ્યા આના વડે વિભાજ્ય છે:</em></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><em class="emphasis">2</em></td>
+    <td>છેલ્લા અંક માટે શરત: <em class="emphasis">0, 2, 4, 6,</em> અથવા <em class="emphasis">8</em></td>
+  </tr>
+  <tr>
+    <td><em class="emphasis">3</em></td>
+    <td>અંકોનો સરવાળો વિભાજ્ય હોવો જોઈએ આના વડે:  <em class="emphasis">3</em></td>
+  </tr>
+  <tr>
+    <td><em class="emphasis">4</em></td>
+    <td>છેલ્લા બે અંકથી બનેલી સંખ્યા વિભાજ્ય હોવી જોઈએ આના વડે:  <em class="emphasis">4</em></td>
+  </tr>
+  <tr>
+    <td><em class="emphasis">5</em></td>
+    <td>છેલ્લા અંક માટે શરત: <em class="emphasis">5</em> અથવા <em class="emphasis">0</em></td>
+  </tr>
+  <tr>
+    <td><em class="emphasis">6</em></td>
+    <td>આ બંને વડે વિભાજ્ય હોવું જોઈએ: <em class="emphasis">2</em> અને <em class="emphasis">3</em></td>
+  </tr>
+  <tr>
+    <td><em class="emphasis">10</em></td>
+    <td>છેલ્લા અંક માટે શરત: <em class="emphasis">0</em></td>
+  </tr>
+</tbody>
+
+
+
+
+
+
+
+</table></div><ul id="eip-8"><li class="item"><em class="emphasis">અવયવ</em>   જો <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>⋅</mo><mi>b</mi><mo>=</mo><mi>m</mi></math> તો  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math>  અને  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math> અવયવ છે આ સંખ્યાના: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math> અને  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math> ગુણનફળ છે આ બંનેનું: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math>  અને <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math>.</li>
+<li class="item"><em class="emphasis">ગણતરીની સંખ્યાના બધા અવયવ શોધો.</em>
+<ol id="eip-id1170196371740"><li class="item">ભાગફળ ભાજક કરતાં નાનું થાય ત્યાં સુધી, ગણતરીની દરેક સંખ્યા વડે ક્રમશઃ આપેલી સંખ્યાને ભાગો.
+<ol id="eip-id1170196371744"><li class="item">જો ભાગફળ ગણતરીની સંખ્યા હોય, તો ભાજક અને ભાગફળ અવયવની જોડી છે.</li>
+<li class="item">જો ભાગફળ ગણતરીની સંખ્યા ન હોય, તો ભાજક અવયવ નથી.</li></ol></li>
+<li class="item">અવયવની બધી જોડીઓની યાદી બનાવો.</li>
+<li class="item">બધા અવયવ નાનાથી મોટા ક્રમમાં લખો.</li></ol></li>
+<li class="item"><em class="emphasis">સંખ્યા અવિભાજ્ય છે કે નહીં તે નક્કી કરો.</em>
+<ol id="eip-id1170196371762"><li class="item">દરેક અવિભાજ્ય સંખ્યા આપેલી સંખ્યાનો અવયવ છે કે નહીં તે ક્રમશઃ ચકાસો.</li>
+<li class="item">શરૂઆત 2થી કરો અને ભાગફળ ભાજક કરતાં નાનું થાય કે અવિભાજ્ય અવયવ મળે ત્યારે અટકો.</li>
+<li class="item">જો સંખ્યાનો અવિભાજ્ય અવયવ હોય, તો તે સંયુક્ત સંખ્યા છે. જો તેનો કોઈ અવિભાજ્ય અવયવ ન હોય, તો સંખ્યા અવિભાજ્ય છે.</li></ol><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> એક કરતાં મોટી આપેલી સંખ્યા માટે, તેનાથી નાનો અવિભાજ્ય અવયવ મળે તો સંખ્યા સંયુક્ત છે. નાના અવિભાજ્ય ભાજકો ક્રમશઃ તપાસો. ભાજકનો વર્ગ સંખ્યા કરતાં મોટો થાય ત્યાં સુધી કોઈ એવો અવયવ ન મળે તો સંખ્યા અવિભાજ્ય છે. વર્ગ સમાન થાય ત્યારે તે ભાજકની તપાસ છોડશો નહીં.</aside></li>
+</ul></section><section id="fs-id1932978">
+<section id="fs-id1932982">
+<h3>અભ્યાસથી નિપુણતા</h3>
+<div id="fs-id1932987" class="source-paragraph"><em class="emphasis">સંખ્યાઓના અવયવી ઓળખો</em> </div><div id="eip-139" class="source-paragraph">નીચેના અભ્યાસમાં, આપેલી સંખ્યાના બધા અવયવી લખો જે <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>50</mn></mrow></math> કરતાં નાના હોય.</div><div id="fs-id2648898" class="exercise">
+<div id="fs-id2648900" class="problem">
+<div id="fs-id2648902" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></div>
+</div>
+<div id="fs-id1463030" class="solution">
+<div id="fs-id1463032" class="source-paragraph">2, 4, 6, 8, 10 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> બેના અવયવીની યાદીમાં દસ અને બાર વચ્ચે અલ્પવિરામ હોવો જોઈએ.</aside>
+</div>
+</div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> બેના અવયવીની યાદીમાં દસ અને બાર વચ્ચે અલ્પવિરામ હોવો જોઈએ.</aside>
+<div id="fs-id2945589" class="exercise">
+<div id="fs-id2945591" class="problem">
+<div id="fs-id2945594" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2491166" class="exercise">
+<div id="fs-id2491168" class="problem">
+<div id="fs-id2491170" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math></div>
+</div>
+<div id="fs-id2438565" class="solution">
+<div id="fs-id2438567" class="source-paragraph">4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48</div>
+</div>
+</div>
+<div id="fs-id2142206" class="exercise">
+<div id="fs-id2142208" class="problem">
+<div id="fs-id2142211" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2159924" class="exercise">
+<div id="fs-id2159926" class="problem">
+<div id="fs-id2159928" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></div>
+</div>
+<div id="fs-id2806721" class="solution">
+<div id="fs-id2806723" class="source-paragraph">6, 12, 18, 24, 30, 36, 42, 48</div>
+</div>
+</div>
+<div id="fs-id1898539" class="exercise">
+<div id="fs-id1898541" class="problem">
+<div id="fs-id1898543" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2830249" class="exercise">
+<div id="fs-id2830251" class="problem">
+<div id="fs-id2830253" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn></mrow></math></div>
+</div>
+<div id="fs-id2319446" class="solution">
+<div id="fs-id2319448" class="source-paragraph">8, 16, 24, 32, 40, 48</div>
+</div>
+</div>
+<div id="fs-id2142909" class="exercise">
+<div id="fs-id2142911" class="problem">
+<div id="fs-id2142913" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1919779" class="exercise">
+<div id="fs-id1919781" class="problem">
+<div id="fs-id1919783" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math></div>
+</div>
+<div id="fs-id1777681" class="solution">
+<div id="fs-id1777684" class="source-paragraph">10, 20, 30, 40</div>
+</div>
+</div>
+<div id="fs-id2133632" class="exercise">
+<div id="fs-id2133634" class="problem">
+<div id="fs-id2133636" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2751187" class="source-paragraph"><em class="emphasis">વિભાજ્યતાની સામાન્ય ચાવીઓનો ઉપયોગ કરો</em> </div><div id="eip-334" class="source-paragraph">નીચેના અભ્યાસમાં વિભાજ્યતાની ચાવીઓ વડે નક્કી કરો કે દરેક સંખ્યા આના વડે વિભાજ્ય છે કે નહીં: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mtext> અને </mtext><mspace width="0.2em"></mspace><mn>10</mn><mo>.</mo></mrow></math></div><div id="fs-id1275833" class="exercise">
+<div id="fs-id1275835" class="problem">
+<div id="fs-id1275837" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>84</mn></mrow></math></div>
+</div>
+<div id="fs-id1899193" class="solution">
+<div id="fs-id1899195" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 2, 3, 4, 6</div>
+</div>
+</div>
+<div id="fs-id2137515" class="exercise">
+<div id="fs-id2137517" class="problem">
+<div id="fs-id2137519" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>96</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2670133" class="exercise">
+<div id="fs-id2670135" class="problem">
+<div id="fs-id2670137" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn></mrow></math></div>
+</div>
+<div id="fs-id1808301" class="solution">
+<div id="fs-id1808303" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 3, 5</div>
+</div>
+</div>
+<div id="fs-id2661999" class="exercise">
+<div id="fs-id2662001" class="problem">
+<div id="fs-id2662003" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>78</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2308877" class="exercise">
+<div id="fs-id2308879" class="problem">
+<div id="fs-id2308881" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>168</mn></mrow></math></div>
+</div>
+<div id="fs-id2436810" class="solution">
+<div id="fs-id2436812" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 2, 3, 4, 6</div>
+</div>
+</div>
+<div id="fs-id4428679" class="exercise">
+<div id="fs-id4428681" class="problem">
+<div id="fs-id4428683" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>264</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1756662" class="exercise">
+<div id="fs-id1756664" class="problem">
+<div id="fs-id1756666" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>900</mn></mrow></math></div>
+</div>
+<div id="fs-id2762455" class="solution">
+<div id="fs-id2762457" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 2, 3, 4, 5, 6, 10</div>
+</div>
+</div>
+<div id="fs-id2379600" class="exercise">
+<div id="fs-id2379602" class="problem">
+<div id="fs-id2379604" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>800</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2257959" class="exercise">
+<div id="fs-id2257961" class="problem">
+<div id="fs-id2257964" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>896</mn></mrow></math></div>
+</div>
+<div id="fs-id2754342" class="solution">
+<div id="fs-id2754344" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 2, 4</div>
+</div>
+</div>
+<div id="fs-id1597338" class="exercise">
+<div id="fs-id1597341" class="problem">
+<div id="fs-id1597343" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>942</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1378148" class="exercise">
+<div id="fs-id1378150" class="problem">
+<div id="fs-id1378152" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>375</mn></mrow></math></div>
+</div>
+<div id="fs-id1826050" class="solution">
+<div id="fs-id1826053" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 3, 5</div>
+</div>
+</div>
+<div id="fs-id1807539" class="exercise">
+<div id="fs-id1807541" class="problem">
+<div id="fs-id1807543" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>750</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2221799" class="exercise">
+<div id="fs-id2221801" class="problem">
+<div id="fs-id2221803" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>350</mn></mrow></math></div>
+</div>
+<div id="fs-id2636590" class="solution">
+<div id="fs-id2636592" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 2, 5, 10</div>
+</div>
+</div>
+<div id="fs-id2139115" class="exercise">
+<div id="fs-id2139117" class="problem">
+<div id="fs-id2139120" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>550</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2385578" class="exercise">
+<div id="fs-id2385580" class="problem">
+<div id="fs-id2385582" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1430</mn></mrow></math></div>
+</div>
+<div id="fs-id3013724" class="solution">
+<div id="fs-id3013726" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 2, 5, 10</div>
+</div>
+</div>
+<div id="fs-id1785849" class="exercise">
+<div id="fs-id1785852" class="problem">
+<div id="fs-id1785854" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1080</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1480699" class="exercise">
+<div id="fs-id1480701" class="problem">
+<div id="fs-id1480703" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>22,335</mn></mrow></math></div>
+</div>
+<div id="fs-id1842364" class="solution">
+<div id="fs-id1842366" class="source-paragraph">આ સંખ્યાઓ વડે વિભાજ્ય છે: 3, 5</div>
+</div>
+</div>
+<div id="fs-id1969257" class="exercise">
+<div id="fs-id1969259" class="problem">
+<div id="fs-id1969261" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>39,075</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2817222" class="source-paragraph"><em class="emphasis">સંખ્યાના બધા અવયવ શોધો</em> </div><div id="eip-505" class="source-paragraph">નીચેના અભ્યાસમાં આપેલી સંખ્યાના બધા અવયવ શોધો.</div><div id="fs-id2817229" class="exercise">
+<div id="fs-id2817231" class="problem">
+<div id="fs-id2172314" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>36</mn></mrow></math></div>
+</div>
+<div id="fs-id2172322" class="solution">
+<div id="fs-id2172324" class="source-paragraph">1, 2, 3, 4, 6, 9, 12, 18, 36</div>
+</div>
+</div>
+<div id="fs-id2307475" class="exercise">
+<div id="fs-id2307477" class="problem">
+<div id="fs-id2307480" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>42</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2662819" class="exercise">
+<div id="fs-id2662821" class="problem">
+<div id="fs-id2662823" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>60</mn></mrow></math></div>
+</div>
+<div id="fs-id2189878" class="solution">
+<div id="fs-id2189880" class="source-paragraph">1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60</div>
+</div>
+</div>
+<div id="fs-id1931719" class="exercise">
+<div id="fs-id1931721" class="problem">
+<div id="fs-id1931723" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>48</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2222884" class="exercise">
+<div id="fs-id2222886" class="problem">
+<div id="fs-id2222888" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>144</mn></mrow></math></div>
+</div>
+<div id="fs-id1807754" class="solution">
+<div id="fs-id1807756" class="source-paragraph">1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 36, 48, 72,144</div>
+</div>
+</div>
+<div id="fs-id1807762" class="exercise">
+<div id="fs-id1206182" class="problem">
+<div id="fs-id1206184" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>200</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1206193" class="exercise">
+<div id="fs-id2197000" class="problem">
+<div id="fs-id2197002" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>588</mn></mrow></math></div>
+</div>
+<div id="fs-id2197009" class="solution">
+<div id="fs-id2496694" class="source-paragraph">1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 49, 84, 98, 147, 196, 294, 588</div>
+</div>
+</div>
+<div id="fs-id2496699" class="exercise">
+<div id="fs-id2496701" class="problem">
+<div id="fs-id2496703" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>576</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1328329" class="source-paragraph"><em class="emphasis">અવિભાજ્ય અને સંયુક્ત સંખ્યાઓ ઓળખો</em> </div><div id="eip-544" class="source-paragraph">નીચેના અભ્યાસમાં આપેલી સંખ્યા અવિભાજ્ય છે કે સંયુક્ત તે નક્કી કરો.</div><div id="fs-id1328335" class="exercise">
+<div id="fs-id2967678" class="problem">
+<div id="fs-id2967680" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>43</mn></mrow></math></div>
+</div>
+<div id="fs-id2967688" class="solution">
+<div id="fs-id1946923" class="source-paragraph">અવિભાજ્ય</div>
+</div>
+</div>
+<div id="fs-id1946929" class="exercise">
+<div id="fs-id1946931" class="problem">
+<div id="fs-id1946933" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>67</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id2571113" class="exercise">
+<div id="fs-id2571115" class="problem">
+<div id="fs-id2571117" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>39</mn></mrow></math></div>
+</div>
+<div id="fs-id1367633" class="solution">
+<div id="fs-id1367635" class="source-paragraph">સંયુક્ત</div>
+</div>
+</div>
+<div id="fs-id1367640" class="exercise">
+<div id="fs-id1715426" class="problem">
+<div id="fs-id1715428" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>53</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1715437" class="exercise">
+<div id="fs-id2340923" class="problem">
+<div id="fs-id2340925" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>71</mn></mrow></math></div>
+</div>
+<div id="fs-id2340932" class="solution">
+<div id="fs-id2425657" class="source-paragraph">અવિભાજ્ય</div>
+</div>
+</div>
+<div id="fs-id2425663" class="exercise">
+<div id="fs-id2425665" class="problem">
+<div id="fs-id2425667" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>119</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1597737" class="exercise">
+<div id="fs-id1597739" class="problem">
+<div id="fs-id1597742" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>481</mn></mrow></math></div>
+</div>
+<div id="fs-id2852874" class="solution">
+<div id="fs-id2852876" class="source-paragraph">સંયુક્ત</div>
+</div>
+</div>
+<div id="fs-id2852882" class="exercise">
+<div id="fs-id1968900" class="problem">
+<div id="fs-id1968902" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>221</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1968911" class="exercise">
+<div id="fs-id3436536" class="problem">
+<div id="fs-id3436539" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>209</mn></mrow></math></div>
+</div>
+<div id="fs-id3436546" class="solution">
+<div id="fs-id2757906" class="source-paragraph">સંયુક્ત</div>
+</div>
+</div>
+<div id="fs-id2757911" class="exercise">
+<div id="fs-id2757913" class="problem">
+<div id="fs-id2757916" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>359</mn></mrow></math></div>
+</div>
+</div>
+<div id="fs-id1800104" class="exercise">
+<div id="fs-id1800106" class="problem">
+<div id="fs-id1800108" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>667</mn></mrow></math></div>
+</div>
+<div id="fs-id2340905" class="solution">
+<div id="fs-id2340907" class="source-paragraph">સંયુક્ત</div>
+</div>
+</div>
+<div id="fs-id2340912" class="exercise">
+<div id="fs-id4153356" class="problem">
+<div id="fs-id4153358" class="source-paragraph"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1771</mn></mrow></math></div>
+</div>
+</div>
+</section>
+<section id="fs-id1721184">
+<h3>રોજિંદા જીવનમાં ગણિત</h3>
+<div id="fs-id1721189" class="exercise">
+<div id="fs-id1721191" class="problem">
+<div id="fs-id1721194" class="source-paragraph"><em class="emphasis">બૅન્ક વ્યવહાર</em> ફ્રૅન્કને હાઇસ્કૂલનું ભણતર પૂરું કરતાં તેની દાદીમાએ આપ્યા <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$100</mtext></mrow></math> ; ખર્ચી નાખવાને બદલે તેણે બૅન્કમાં ખાતું ખોલ્યું. દર અઠવાડિયે તે ઉમેરતો <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$15</mtext></mrow></math> ખાતામાં. કોષ્ટક દરેક અઠવાડિયાના અંત સુધીમાં ફ્રૅન્કે ખાતામાં મૂકેલી કુલ રકમ દર્શાવે છે. ખાલી જગ્યાઓ ભરીને કોષ્ટક પૂરું કરો.</div>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id1783686" aria-label="કોષ્ટકમાં નવ હરોળ અને ત્રણ સ્તંભ છે. પહેલી હરોળ શીર્ષકની છે, જેમાં દરેક સ્તંભનું નામ છે. પહેલા સ્તંભનું નામ ભણતર પૂરું થયા પછીનાં અઠવાડિયાં, બીજાનું ફ્રૅન્કે ખાતામાં મૂકેલા કુલ ડૉલર અને છેલ્લાનું સરળ કરેલો સરવાળો છે. ભણતર પૂરું થયા પછીનાં અઠવાડિયાંના સ્તંભમાં કિંમતો છે: 0, 1, 2, 3, 4, 5, 6, 20 અને અક્ષર x. ફ્રૅન્કે ખાતામાં મૂકેલા કુલ ડૉલરના સ્તંભમાં પદાવલીઓ છે: 100; 100 વત્તા 15; 100 વત્તા 15 ગુણ્યા 2; 100 વત્તા 15 ગુણ્યા 3; 100 વત્તા 15 ગુણ્યા ખાલી કૌંસ; 100 વત્તા ખાલી કૌંસ; છેલ્લી ત્રણ હરોળ ખાલી છે. સરળ કરેલા સરવાળાના સ્તંભમાં કિંમતો છે: 100, 115, 130; છેલ્લી છ હરોળ ખાલી છે.">
+<span class="source-label"></span>
+
+
+
+
+<thead>
+<tr>
+<th scope="col"><em class="emphasis">ભણતર પૂરું થયા પછીનાં અઠવાડિયાં</em></th>
+<th scope="col"><em class="emphasis">ફ્રૅન્કે ખાતામાં મૂકેલા કુલ ડૉલર</em></th>
+<th scope="col"><em class="emphasis">સરળ કરેલો સરવાળો</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn><mo>+</mo><mn>15</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>115</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn><mo>+</mo><mn>15</mn><mo>⋅</mo><mn>2</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>130</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn><mo>+</mo><mn>15</mn><mo>⋅</mo><mn>3</mn></mrow></math></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn><mo>+</mo><mn>15</mn><mo>⋅</mo><mo>[</mo><mspace width="0.2em"></mspace><mo>]</mo></mrow></math></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn><mo>+</mo><mo>[</mo><mspace width="0.2em"></mspace><mo>]</mo></mrow></math></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi></mrow></math></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+
+</table></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> કોષ્ટકમાં શીર્ષક સહિત દસ હરોળ અને ત્રણ સ્તંભ છે. મૂળ પ્રશ્નની ખાલી જગ્યાઓ ખાલી જ રાખો.</aside>
+</div>
+<div id="fs-id2385555" class="solution">
+<div id="fs-id1167906508368" class="source-paragraph"><br><div id="fs-id19495660" class="source-media"><div id="gu-pv-fs-id19495660-redraw-f9cb1de8" class="gu-place-redraw" data-redraw="a00-factors-frank-table" role="group" aria-label="ફ્રૅન્કના ખાતામાં શરૂઆતમાં સો ડૉલર અને દર અઠવાડિયે પંદર ડૉલર ઉમેરાય છે. શીર્ષક સહિત દસ હરોળનું સંપૂર્ણ જવાબનું કોષ્ટક; x અઠવાડિયે કુલ 100 + 15x ડૉલર." lang="gu-Gujr-IN" style="font-family:Gujarati,'Nirmala UI',sans-serif;color:#182c35;background:white;border:1px solid #b8cecb;border-radius:6px;padding:12px;margin:8px 0;max-width:100%;box-sizing:border-box;line-height:1.65"><div role="region" aria-label="ફ્રૅન્કના બેંક ખાતાનો પૂર્ણ ઉકેલ; આડું સરકાવી શકાય છે" tabindex="0" style="overflow-x:auto;max-width:100%"><table style="border-collapse:collapse;min-width:650px;width:100%;table-layout:fixed;font-size:15px"><caption style="position:sticky;left:0;text-align:left;font-weight:700;padding:4px 0 8px">ફ્રૅન્કના બેંક ખાતાનો પૂર્ણ ઉકેલ</caption><thead><tr><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;overflow-wrap:anywhere">ભણતર પૂરું થયા પછીનાં અઠવાડિયાં</th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;overflow-wrap:anywhere">ફ્રૅન્કે ખાતામાં મૂકેલા કુલ ડૉલર</th><th scope="col" style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#a9ccce;overflow-wrap:anywhere">સરળ કરેલો સરવાળો</th></tr></thead><tbody><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">0</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">1</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100 + 15</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">115</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">2</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100 + 15 · 2</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">130</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">3</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100 + 15 · 3</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">145</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">4</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100 + 15 · 4</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">160</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">5</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100 + 15 · 5</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">175</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">6</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100 + 15 · 6</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">190</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">20</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100 + 15 · 20</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">400</td></tr><tr><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">x</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100 + 15 · x</td><td style="border:1px solid #08656b;padding:6px 8px;text-align:center;vertical-align:middle;background:#fff;">100 + 15x</td></tr></tbody></table></div></div><p class="figure-description">ફ્રૅન્કના ખાતામાં શરૂઆતમાં સો ડૉલર અને દર અઠવાડિયે પંદર ડૉલર ઉમેરાય છે. શીર્ષક સહિત દસ હરોળનું સંપૂર્ણ જવાબનું કોષ્ટક; x અઠવાડિયે કુલ 100 + 15x ડૉલર.</p></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> આ ફ્રૅન્કનો પૂર્ણ કોષ્ટક છે: અઠવાડિયાં શૂન્ય, એક, બે, ત્રણ, ચાર, પાંચ, છ, વીસ અને x; કુલ ડૉલર અનુક્રમે સો, એકસો પંદર, એકસો ત્રીસ, એકસો પિસ્તાલીસ, એકસો સાઠ, એકસો પંચોતેર, એકસો નેવું, ચારસો અને 100 + 15x.</aside></div></div>
+</div>
+<div id="fs-id2314342" class="exercise">
+<div id="fs-id2314344" class="problem">
+<div id="fs-id2314346" class="source-paragraph"><em class="emphasis">બૅન્ક વ્યવહાર</em> માર્ચમાં જીનાએ પોતાની બૅન્કમાં ક્રિસમસ ક્લબનું બચત ખાતું ખોલ્યું. તેણે જમા કર્યા <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$75</mtext></mrow></math> ખાતું ખોલવા માટે. દર અઠવાડિયે તે ઉમેરતી <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$20</mtext></mrow></math> ખાતામાં. કોષ્ટક દરેક અઠવાડિયાના અંત સુધીમાં જીનાએ ખાતામાં મૂકેલી કુલ રકમ દર્શાવે છે. ખાલી જગ્યાઓ ભરીને કોષ્ટક પૂરું કરો.</div>
+<div class="table-scroll" role="region" aria-label="કોષ્ટક; જરૂર પડે તો આડું ખસેડીને વાંચો" tabindex="0"><table id="fs-id4201920" aria-label="કોષ્ટકમાં નવ હરોળ અને ત્રણ સ્તંભ છે. પહેલી હરોળ શીર્ષકની છે, જેમાં દરેક સ્તંભનું નામ છે. પહેલા સ્તંભનું નામ ખાતું ખોલ્યા પછીનાં અઠવાડિયાં, બીજાનું જીનાએ ખાતામાં મૂકેલા કુલ ડૉલર અને છેલ્લાનું સરળ કરેલો સરવાળો છે. ખાતું ખોલ્યા પછીનાં અઠવાડિયાંના સ્તંભમાં કિંમતો છે: 0, 1, 2, 3, 4, 5, 6, 20 અને અક્ષર x. જીનાએ ખાતામાં મૂકેલા કુલ ડૉલરના સ્તંભમાં પદાવલીઓ છે: 75; 75 વત્તા 20; 75 વત્તા 20 ગુણ્યા 2; 75 વત્તા 20 ગુણ્યા 3; 75 વત્તા 20 ગુણ્યા ખાલી કૌંસ; 75 વત્તા ખાલી કૌંસ; છેલ્લી ત્રણ હરોળ ખાલી છે. સરળ કરેલા સરવાળાના સ્તંભમાં કિંમતો છે: 75, 95, 115; છેલ્લી છ હરોળ ખાલી છે.">
+<span class="source-label"></span>
+
+
+
+
+<thead>
+<tr>
+<th scope="col"><em class="emphasis">ખાતું ખોલ્યા પછીનાં અઠવાડિયાં</em></th>
+<th scope="col"><em class="emphasis">જીનાએ ખાતામાં મૂકેલા કુલ ડૉલર</em></th>
+<th scope="col"><em class="emphasis">સરળ કરેલો સરવાળો</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn><mo>+</mo><mn>20</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>95</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn><mo>+</mo><mn>20</mn><mo>⋅</mo><mn>2</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>115</mn></mrow></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn><mo>+</mo><mn>20</mn><mo>⋅</mo><mn>3</mn></mrow></math></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn><mo>+</mo><mn>20</mn><mo>⋅</mo><mo>[</mo><mspace width="0.2em"></mspace><mo>]</mo></mrow></math></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn></mrow></math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn><mo>+</mo><mo>[</mo><mspace width="0.2em"></mspace><mo>]</mo></mrow></math></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn></mrow></math></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn></mrow></math></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi></mrow></math></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+
+</table></div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> કોષ્ટકમાં શીર્ષક સહિત દસ હરોળ અને ત્રણ સ્તંભ છે. મૂળ પ્રશ્નની ખાલી જગ્યાઓ ખાલી જ રાખો.</aside>
+</div>
+</div>
+</section>
+<section id="fs-id2168145">
+<h3>લેખન અભ્યાસ</h3>
+<div id="fs-id2168150" class="exercise">
+<div id="fs-id2168152" class="problem">
+<div id="fs-id3329385" class="source-paragraph">જો સંખ્યા આના વડે વિભાજ્ય હોય: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn></mrow></math> અને આના વડે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>,</mo></mrow></math> તો તે આના વડે પણ વિભાજ્ય કેમ હોય: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>?</mo></mrow></math></div>
+</div>
+</div>
+<div id="fs-id4163772" class="exercise">
+<div id="fs-id4163774" class="problem">
+<div id="fs-id4163776" class="source-paragraph">અવિભાજ્ય સંખ્યાઓ અને સંયુક્ત સંખ્યાઓ વચ્ચે શું તફાવત છે?</div>
+</div>
+</div></section><section id="eip-387"><h3>સ્વમૂલ્યાંકન</h3><div id="eip-id1168468374941" class="source-paragraph"><span class="span">ⓐ</span> અભ્યાસ પૂરો કર્યા પછી આ ચકાસણીપત્રકથી વિભાગના હેતુઓમાં તમારું પ્રભુત્વ તપાસો.
+</div>
+
+<figure id="eip-id1164269515410" class="figure"><span class="source-label"></span><div id="eip-id1164271108221" class="source-media"><div class="table-scroll" role="region" aria-label="પોતાની સમજની તપાસ" tabindex="0"><table><thead><tr><th scope="col">હું કરી શકું છું…</th><th scope="col">આત્મવિશ્વાસથી</th><th scope="col">થોડી મદદથી</th><th scope="col">ના—મને સમજાતું નથી!</th></tr></thead><tbody><tr><th scope="row">સંખ્યાઓના અવયવી ઓળખવા.</th><td></td><td></td><td></td></tr><tr><th scope="row">વિભાજ્યતાની સામાન્ય ચાવીઓ વાપરવી.</th><td></td><td></td><td></td></tr><tr><th scope="row">સંખ્યાના બધા અવયવ શોધવા.</th><td></td><td></td><td></td></tr><tr><th scope="row">અવિભાજ્ય અને સંયુક્ત સંખ્યાઓ ઓળખવી.</th><td></td><td></td><td></td></tr></tbody></table></div><p class="figure-description">સંખ્યાઓ વિશેની ગાણિતિક કુશળતાનું સ્વમૂલ્યાંકન કોષ્ટક: અવયવી ઓળખવા, વિભાજ્યતાની ચાવીઓ વાપરવી, અવયવ શોધવા તથા અવિભાજ્ય અને સંયુક્ત સંખ્યાઓ ઓળખવી. વિદ્યાર્થીઓ પોતાની સમજનું મૂલ્યાંકન કરે છે.</p></div></figure><div id="eip-id1168466075811" class="source-paragraph"><span class="span">ⓑ</span> તપાસયાદીમાં આપેલા તમારા જવાબોને આધારે, 1–10ના માપક્રમ પર આ વિભાગમાં તમારી નિપુણતાને કેટલો ગુણ આપશો? તમે તેમાં કેવી રીતે સુધારો કરી શકો?</div></section></section>
+</div><section><h2>શબ્દાર્થ</h2>
+<div id="fs-id1596534" class="definition">
+<strong class="term">સંખ્યાનો અવયવી</strong>
+<div id="fs-id1596539" class="meaning">કોઈ સંખ્યા આનો અવયવી છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> જો તે ગણતરીની સંખ્યા અને આ સંખ્યાનું ગુણનફળ હોય: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math>.</div>
+</div>
+<div id="fs-id1596543" class="definition">
+<strong class="term">વિભાજ્યતા</strong>
+<div id="fs-id2860656" class="meaning">જો સંખ્યા <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math> આનો અવયવી હોય: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> તો કહીએ કે  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math> આના વડે વિભાજ્ય છે: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math>.</div>
+</div>
+<div id="fs-id2860661" class="definition">
+<strong class="term">અવિભાજ્ય સંખ્યા</strong>
+<div id="fs-id2860666" class="meaning">અવિભાજ્ય સંખ્યા એ 1 કરતાં મોટી એવી ગણતરીની સંખ્યા છે જેના અવયવ માત્ર 1 અને તે સંખ્યા પોતે હોય છે.</div>
+</div>
+<div id="fs-id1227087" class="definition">
+<strong class="term">સંયુક્ત સંખ્યા</strong>
+<div id="fs-id1227093" class="meaning">જે ગણતરીની સંખ્યા અવિભાજ્ય ન હોય તે સંયુક્ત સંખ્યા છે.</div><aside class="note source-correction" aria-label="મૂળ સ્રોતની ભૂલ અંગે નોંધ"><strong>મૂળ સ્રોતની ભૂલ અંગે નોંધ:</strong> સંયુક્ત સંખ્યા એ એક કરતાં મોટી એવી ગણતરીની સંખ્યા છે જે અવિભાજ્ય ન હોય. તેના બે કરતાં વધુ ધન અવયવ હોય છે. એક અવિભાજ્ય પણ નથી અને સંયુક્ત પણ નથી.</aside>
+</div>
+</section></main><footer>OpenStax / Rice University; Indonesian adaptation: KokunoYumeto. Gujarati translation: Language Allocation / OpenAI Codex. CC BY-NC-SA 4.0, component notices apply. No endorsement or native-review claim. <a href="../notices.html">પૂર્ણ શ્રેય અને શરતો</a>.</footer></body></html>

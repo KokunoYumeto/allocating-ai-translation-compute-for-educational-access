@@ -1,0 +1,47 @@
+@font-face { font-family: TamilBook; src: url('fonts/NotoSansTamil.ttf'); font-weight: 100 900; font-style: normal; }
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: auto; }
+body { margin: 0 auto; max-width: 54rem; padding: 1.5rem; color: #192a32; background: #fff; font-family: TamilBook, 'Nirmala UI', sans-serif; font-size: 18px; line-height: 1.9; }
+h1 { font-size: 1.9rem; line-height: 1.6; }
+h2 { font-size: 1.35rem; line-height: 1.65; color: #125754; margin-top: 2rem; }
+h3 { font-size: 1.06rem; line-height: 1.7; margin-bottom: .4rem; }
+p { margin: .7rem 0; }
+a { color: #075980; text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
+a:focus { outline: 3px solid #9e4500; outline-offset: 3px; }
+nav, .note, .example { padding: 1rem 1.2rem; background: #f1f7f6; border-left: 4px solid #25706a; margin: 1rem 0; }
+.item, .answer { padding-bottom: .75rem; border-bottom: 1px solid #c5d0d2; }
+.source-head, .muted { color: #40535e; font-size: .88em; }
+.source-sol { padding: .65rem 1rem; border: 1px solid #acbdc2; }
+ul.labeled { list-style: none; padding-left: .3rem; }
+li { margin: .6rem 0; }
+figure { margin: 1.2rem 0; }
+figure svg { display: block; width: 100%; height: auto; }
+.counting-model { display: block; width: 100%; max-height: 5rem; height: auto; margin: .2rem 0; }
+figcaption { font-size: .88em; }
+math { font-family: 'Cambria Math', 'STIX Two Math', serif; font-size: 1.1em; }
+math mtext { font-family: TamilBook, 'Nirmala UI', sans-serif; }
+.equation { padding: .5rem 0; }
+.credits { font-size: .85em; line-height: 1.65; }
+dfn { font-style: normal; font-weight: 650; }
+section { scroll-margin-top: 1rem; }
+.cover { padding-bottom: 1rem; border-bottom: 2px solid #125754; }
+@media (max-width: 500px) { body { padding: 1rem; font-size: 16px; } h1 { font-size: 1.5rem; } nav, .note, .example { padding: .6rem; } }
+@page { size: A4; margin: 16mm 17mm 19mm; @bottom-right { content: counter(page); font: 9pt sans-serif; color: #40535e; } }
+@media print {
+  body { max-width: none; padding: 0; margin: 0; font-size: 11pt; line-height: 1.7; color: #000; }
+  h1 { font-size: 22pt; } h2 { font-size: 15pt; margin-top: 0; color: #000; } h3 { font-size: 11.5pt; }
+  h1, h2, h3 { break-after: avoid; }
+  .page { break-before: page; }
+  .cover { break-before: auto; }
+  .item, .answer, figure, .note, .example { break-inside: avoid; }
+  p, li { orphans: 3; widows: 3; }
+  a { color: #000; }
+  .skip { display: none; }
+  nav, .note, .example { background: #fff; }
+  .credits { font-size: 9.5pt; }
+  body.screen-profile { font-size: 13pt; line-height: 1.8; }
+  .screen-profile #ta-placement-answers, .screen-profile #ta-mastery-answers { line-height: 1.65; }
+  .screen-profile #ta-placement-answers p, .screen-profile #ta-mastery-answers p { margin: .55rem 0; }
+  .screen-profile #ta-placement-answers .answer, .screen-profile #ta-mastery-answers .answer { padding-bottom: .45rem; }
+}

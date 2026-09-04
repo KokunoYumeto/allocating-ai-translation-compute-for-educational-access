@@ -1,0 +1,28 @@
+{
+  "unit": "A10-001",
+  "status": "bounded_visual_review_pass_with_limitations",
+  "recorded_date": "2026-08-31",
+  "browser": "Codex in-app Chromium",
+  "reader_sha256": "40f6a3fbc1d4cb3469975b013bf80f671be60900759df9d4634dce725ca567dd",
+  "structural_checks": 505,
+  "viewports": [{"width":1024,"height":800,"document_client_width":1009,"document_scroll_width":1009},{"width":390,"height":844,"document_client_width":375,"document_scroll_width":375}],
+  "observations": [
+    "The unchanged 750-pixel number line starts at its source-left smaller-values end. Pointer horizontal scrolling reached scrollLeft 410.317 in a 340-pixel region, exposing the larger-values arrow and 4, 5, 6; the page itself stayed 375 pixels wide.",
+    "Both 377-pixel place-value charts retain original orientation and locally scroll on mobile. Desktop shows the 5,278,194 chart and its source-bound Punjabi caption without page-width overflow.",
+    "The first source-alt advisory link was clicked and reached a10-alt-correction-1. The separately labeled correction explains seventy-eight rather than the erroneous source seventy-nine thousand. The second discrepancy has a distinct target.",
+    "A mobile revision grouped each short part label with its answer/digit. The final practice view keeps (c) and سو ہزار together. All 25 presentation groups preserve the underlying source order and are independently checked by structural QA.",
+    "The 15 digit/place-value answers are arithmetically checked against their source numbers; the two preserved MathML trees supply spacing only and are not used as evidence for those answers."
+  ],
+  "screenshot_sha256": {
+    "a10-numberline-mobile.jpg":"6398c0ef9bd5d9698f9f3b1d0d005103912289d24d39218f4642fe888f6d8f78",
+    "a10-placevalue-desktop.jpg":"ee2f447d21e594e0513a7735a9d9c299983138ae478f7b06dce43e383a00c6bb",
+    "a10-correction-desktop.jpg":"ce49a3cebe7c3c187d2d569b6989c873aab41b0df62778f60291c735572b279e",
+    "a10-practice-mobile.jpg":"1f0ae3eb7242400710a12b25a0be5638d636a3b30cc2fd7604270fee5106f060"
+  },
+  "limitations": [
+    "Selected anchors only, not an exhaustive screenshot of every line or complete-module/publication certification.",
+    "Source alt errors are retained with visible linked corrections. Screen-reader pronunciation, correction discoverability and assistive-technology usability remain untested.",
+    "Pointer scrolling and focusable regions were observed; native keyboard-arrow scrolling, cross-browser rendering and exact font availability are not certified.",
+    "Native Punjabi speaker and mathematics-educator review remain pending."
+  ]
+}

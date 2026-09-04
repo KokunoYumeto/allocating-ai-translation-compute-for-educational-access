@@ -1,0 +1,1770 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:ns1="http://cnx.rice.edu/mdml" xml:lang="gu-Gujr-IN">
+
+<title>પૂર્ણાંકોનો ગુણાકાર અને ભાગાકાર કરો</title>
+<metadata>
+  <ns1:content-id>m82455</ns1:content-id>
+  <ns1:title>પૂર્ણાંકોનો ગુણાકાર અને ભાગાકાર કરો</ns1:title>
+  <ns1:abstract><para id="para-00001">આ વિભાગના અંતે તમે આ કરી શકશો:</para>
+<list id="list-00001">
+<item>પૂર્ણાંકોનો ગુણાકાર કરવો</item>
+<item>પૂર્ણાંકોનો ભાગાકાર કરવો</item>
+<item>પૂર્ણાંકોવાળી પદાવલીઓને સરળ બનાવવી</item>
+<item>પૂર્ણાંકોવાળી ચલ પદાવલીઓની કિંમત શોધવી</item>
+<item>અંગ્રેજી શબ્દસમૂહોને બીજગણિતીય પદાવલીઓમાં ફેરવવા</item>
+<item>વ્યવહારુ પ્રશ્નોમાં પૂર્ણાંકોનો ઉપયોગ કરવો</item>
+</list></ns1:abstract>
+  <ns1:uuid>e1538584-9fa6-4c61-be47-6cefb25a54ad</ns1:uuid>
+</metadata>
+
+<content>
+<note id="fs-id1170653879907" class="be-prepared">
+<para id="fs-id1170654069120">આ વિભાગના વિષયોનો વધુ વિગતવાર પરિચય <emphasis effect="italics">પૂર્વબીજગણિત</emphasis> પુસ્તકના આ પ્રકરણમાં મળે છે: <emphasis effect="bold">પૂર્ણાંકો</emphasis>.</para>
+</note>
+<section id="fs-id1170652620585">
+<title>પૂર્ણાંકોનો ગુણાકાર કરો</title>
+<para id="fs-id1170654047593">ગુણાકાર એટલે પુનરાવર્તિત સરવાળાનું ટૂંકું ગાણિતિક સ્વરૂપ. તેથી આ નિરૂપણથી આપણે <term class="no-emphasis" id="term-00001">ગુણાકાર</term> એવી સંખ્યાઓ માટે દર્શાવી શકીએ છીએ જે <term class="no-emphasis" id="term-00002">પૂર્ણાંકો</term> હોય. ચાલો આ મૂર્ત નિરૂપણમાં કઈ ભાત દેખાય છે તે જોઈએ. સરવાળા અને બાદબાકી માટે વાપરેલાં એ જ ઉદાહરણો અહીં લઈશું. અહીં નિરૂપણનો ઉપયોગ માત્ર ભાત શોધવામાં મદદ માટે કરીશું.</para>
+<para id="fs-id1170654027710">આપણે યાદ કરીએ કે <m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi></m:mrow></m:math> એટલે <emphasis effect="italics">a</emphasis>ને <emphasis effect="italics">b</emphasis> વખત ઉમેરવું.</para>
+<media id="fs-id1170652629325" alt="બે ચિત્રો બાજુબાજુ છે. ડાબા ચિત્રની ઉપર 5 · 3 છે. નીચે ‘5ને 3 વખત ઉમેરો’ લખેલું છે. પછી વાદળી ચકતીઓની ત્રણ હરોળ છે, દરેકમાં પાંચ ચકતીઓ છે. નીચે ‘15 ધન ચકતીઓ’ અને પછી 5 · 3 = 15 છે. જમણા ચિત્રની ઉપર −5(3) છે. નીચે ‘−5ને 3 વખત ઉમેરો’ લખેલું છે. પછી પાંચ-પાંચ લાલ ચકતીઓની ત્રણ હરોળમાં કુલ પંદર લાલ ચકતીઓ છે. નીચે ‘15 ઋણ ચકતીઓ’ અને પછી −5(3) = −15 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_04_001_img_new.jpg" />
+</media>
+<para id="fs-id1170654235984">આગળનાં બે ઉદાહરણો વધુ રસપ્રદ છે.</para>
+<para id="fs-id1171791114068">5નો આ સંખ્યા વડે ગુણાકાર કરવાનો અર્થ શું છે: <m:math><m:mrow><m:mn>−3</m:mn><m:mo>?</m:mo></m:mrow></m:math> તેનો અર્થ 5ને 3 વખત બાદ કરવો એવો છે. બાદબાકી એટલે ‘દૂર કરવું’ તેમ વિચારીએ તો 5ને 3 વખત દૂર કરવાના છે. પરંતુ દૂર કરવા માટે કંઈ નથી, તેથી પહેલાં કામ કરવાની જગ્યામાં શૂન્ય બનાવતી જોડીઓ ઉમેરીએ છીએ. પછી 5ને ત્રણ વખત દૂર કરીએ છીએ.</para>
+<media id="fs-id1170654116877" alt="આકૃતિમાં બે સ્તંભ છે. ઉપર ડાબે 5 × (−3) છે; તેનો અર્થ 5ને ત્રણ વખત દૂર કરવો. નીચે પાંચ-પાંચ લાલ ઋણ ચકતીઓનાં ત્રણ જૂથ છે અને દરેકની નીચે પાંચ વાદળી ધન ચકતીઓનું જૂથ છે. પંદર લાલ ચકતીઓથી દર્શાવેલી 15 ઋણ ચકતીઓ બાકી રહે છે. નીચે 5 × (−3) = −15 છે. ઉપર જમણે −5 × (−3) છે; તેનો અર્થ −5ને ત્રણ વખત દૂર કરવો. નીચે પાંચ-પાંચ વાદળી ધન ચકતીઓનાં ત્રણ જૂથ છે અને દરેકની નીચે પાંચ લાલ ઋણ ચકતીઓનું જૂથ છે. પંદર વાદળી ચકતીઓથી દર્શાવેલી 15 ધન ચકતીઓ બાકી રહે છે. નીચે −5 × (−3) = 15 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_04_002_img_new.jpg" />
+</media>
+<para id="fs-id1170654009263">સારાંશ:</para>
+<equation id="fs-id1170653916873" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>15</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="right"><m:mn>−5</m:mn><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−15</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−15</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="right"><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>15</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170653885621">બે ચિહ્નવાળી સંખ્યાઓના ગુણાકારમાં ધ્યાન આપો કે જ્યારે:</para>
+<list id="fs-id1166425881422" list-type="bulleted" bullet-style="bullet">
+<item>ચિહ્નો <emphasis effect="italics">સમાન</emphasis> હોય ત્યારે ગુણાકારનું પરિણામ <emphasis effect="italics">ધન</emphasis> છે.</item>
+<item>ચિહ્નો <emphasis effect="italics">જુદાં</emphasis> હોય ત્યારે ગુણાકારનું પરિણામ <emphasis effect="italics">ઋણ</emphasis> છે.</item>
+</list>
+<para id="fs-id1170653867968">આ બધી વાત નીચેના કોષ્ટકમાં ગોઠવીએ.</para>
+<note id="fs-id1170654150981">
+<title>ચિહ્નવાળી સંખ્યાઓનો ગુણાકાર</title>
+<para id="fs-id1170653850117">બે ચિહ્નવાળી સંખ્યાઓના ગુણાકાર માટે:</para>
+<table id="fs-id1170654202932" class="unnumbered">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<thead>
+<row valign="top">
+<entry valign="top" align="left">સમાન ચિહ્નો</entry>
+<entry valign="top" align="left">ગુણાકારનું પરિણામ</entry>
+<entry valign="top" align="left">ઉદાહરણ</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry valign="middle" align="left">બંને ધન<newline />બંને ઋણ</entry>
+<entry valign="middle" align="left">ધન<newline />ધન</entry>
+<entry valign="middle" align="left"><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>28</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>−8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>48</m:mn></m:mtd></m:mtr></m:mtable></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table id="fs-id1170652641320" class="unnumbered">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<thead>
+<row valign="top">
+<entry valign="middle" align="left">જુદાં ચિહ્નો</entry>
+<entry valign="middle" align="left">ગુણાકારનું પરિણામ</entry>
+<entry valign="middle" align="left">ઉદાહરણ</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry valign="middle" align="left">ધન · ઋણ<newline />ઋણ · ધન</entry>
+<entry valign="middle" align="left">ઋણ<newline />ઋણ</entry>
+<entry valign="middle" align="left"><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−63</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>−5</m:mn><m:mo>·</m:mo><m:mn>10</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−50</m:mn></m:mtd></m:mtr></m:mtable></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</note>
+<example id="fs-id1170654115992"><exercise id="fs-id1170654071533">
+<problem id="fs-id1170654016481">
+<para id="fs-id1170653756055">ગુણાકાર કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−9</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654013170">
+<title>ઉકેલ</title>
+<table id="eip-959" summary="પૂર્ણાંકોના ગુણાકારનાં ઉદાહરણો: સંખ્યાઓનાં ચિહ્નો ગુણાકારના પરિણામનું ચિહ્ન કેવી રીતે નક્કી કરે છે તે દર્શાવ્યું છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> <newline />
+    ગુણાકાર કરો. ચિહ્નો જુદાં હોવાથી પરિણામ ઋણ છે.</entry>
+    <entry><m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>−9</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−27</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓑ</span> <newline />
+    ગુણાકાર કરો. ચિહ્નો સમાન હોવાથી પરિણામ ધન છે.</entry>
+    <entry><m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>−2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>10</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓒ</span> <newline />
+    જુદાં ચિહ્નો સાથે ગુણાકાર કરો.</entry>
+    <entry><m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−32</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓓ</span> <newline />સમાન ચિહ્નો સાથે ગુણાકાર કરો.</entry>
+    <entry><m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>6</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>42</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654237917" class="try">
+<exercise id="fs-id1170654016024">
+<problem id="fs-id1170654150864">
+<para id="fs-id1170653870759">ગુણાકાર કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−6</m:mn><m:mo>·</m:mo><m:mn>8</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>12</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654034104">
+<para id="fs-id1170653885313"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−48</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 28 <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−63</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> 60</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654164622" class="try">
+<exercise id="fs-id1170653884384">
+<problem id="fs-id1170654016412">
+<para id="fs-id1170654116452">ગુણાકાર કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−8</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>13</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653741029">
+<para id="fs-id1170653795701"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−56</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 54 <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−28</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> 39</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654150913">કોઈ સંખ્યાનો 1 વડે ગુણાકાર કરીએ ત્યારે એ જ સંખ્યા મળે છે. આ સંખ્યા વડે ગુણાકાર કરીએ તો શું થાય: <m:math><m:mrow><m:mn>−1</m:mn><m:mo>?</m:mo></m:mrow></m:math> ચાલો પહેલાં ધન અને પછી ઋણ સંખ્યાનો ગુણાકાર આ સંખ્યા વડે કરીએ: <m:math><m:mrow><m:mn>−1</m:mn></m:mrow></m:math> અને શું મળે છે તે જોઈએ.</para>
+<equation id="fs-id1170653893750" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−1</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−1</m:mn><m:mo>(</m:mo><m:mn>−3</m:mn><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>ગુણાકાર કરો.</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−4</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>3</m:mn></m:mtd></m:mtr><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−4</m:mn><m:mspace width="0.2em" /><m:mtext>એ આની વિરોધી સંખ્યા છે:</m:mtext><m:mspace width="0.2em" /><m:mn>4</m:mn><m:mo>.</m:mo></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>એ આની વિરોધી સંખ્યા છે:</m:mtext><m:mspace width="0.2em" /><m:mn>−3</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170652622975">દરેક વખતે કોઈ સંખ્યાનો ગુણાકાર આ સંખ્યા વડે કરીએ ત્યારે: <m:math><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo></m:mrow></m:math> આપણને તેની વિરોધી સંખ્યા મળે છે!</para>
+<note id="fs-id1170653776943">
+<title>આ સંખ્યા વડે ગુણાકાર: <m:math><m:mrow><m:mn>−1</m:mn></m:mrow></m:math></title>
+<equation id="fs-id1170654237357" class="unnumbered"><label /><m:math><m:mrow><m:mn>−1</m:mn><m:mi>a</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow></m:math></equation>
+<para id="fs-id1170653806855">કોઈ સંખ્યાનો <m:math><m:mrow><m:mn>−1</m:mn></m:mrow></m:math> વડે ગુણાકાર કરતાં તેની વિરોધી સંખ્યા મળે છે.</para>
+</note>
+<example id="fs-id1170653912296"><exercise id="fs-id1170654236699">
+<problem id="fs-id1170654068942">
+<para id="fs-id1170654036219">ગુણાકાર કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653910210">
+<title>ઉકેલ</title>
+<table id="eip-228" summary="−1 વડે ગુણાકારનાં ઉદાહરણો દર્શાવે છે કે પરિણામનું ચિહ્ન કેવી રીતે નક્કી થાય છે અને હંમેશાં મૂળ સંખ્યાની વિરોધી સંખ્યા મળે છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> <newline />ગુણાકાર કરો. ચિહ્નો જુદાં હોવાથી પરિણામ ઋણ છે.</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>−1</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−7</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−7</m:mn><m:mspace width="0.2em" /><m:mtext>એ આની વિરોધી સંખ્યા છે:</m:mtext><m:mspace width="0.2em" /><m:mn>7</m:mn><m:mo>.</m:mo></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry><span class="token">ⓑ</span> <newline />ગુણાકાર કરો. ચિહ્નો સમાન હોવાથી પરિણામ ધન છે.</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mrow><m:mn>−1</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>11</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>11</m:mn><m:mspace width="0.2em" /><m:mtext>એ આની વિરોધી સંખ્યા છે:</m:mtext><m:mspace width="0.2em" /><m:mn>−11</m:mn><m:mo>.</m:mo></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table></solution>
+</exercise>
+</example><note id="fs-id1170653806821" class="try">
+<exercise id="fs-id1170653901925">
+<problem id="fs-id1170654073784">
+<para id="fs-id1170653851085">ગુણાકાર કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>·</m:mo><m:mn>9</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−17</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654014381">
+<para id="fs-id1170654231240"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−9</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 17</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654035879" class="try">
+<exercise id="fs-id1170653837027">
+<problem id="fs-id1170654047261">
+<para id="fs-id1170653804423">ગુણાકાર કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>·</m:mo><m:mn>8</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654015023">
+<para id="fs-id1170653799135"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 16</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170653874776">
+<title>પૂર્ણાંકોનો ભાગાકાર કરો</title>
+<para id="fs-id1170654029961">હવે <term class="no-emphasis" id="term-00003">ભાગાકાર</term> વિશે શું? ભાગાકાર એ ગુણાકારની વિપરીત ક્રિયા છે. તેથી, <m:math><m:mrow><m:mn>15</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> કારણ કે <m:math><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>.</m:mo></m:mrow></m:math> શબ્દોમાં કહીએ તો, આ પદાવલીનો અર્થ એ છે કે 15ને પાંચ-પાંચનાં ત્રણ જૂથમાં વહેંચી શકાય છે, કારણ કે પાંચને ત્રણ વખત ઉમેરતાં 15 મળે છે. પૂર્ણાંકોના ભાગાકારના નિયમો શોધવા માટે તેમના ગુણાકારનાં કેટલાંક ઉદાહરણો જુઓ.</para>
+<equation id="fs-id1170653798201" class="unnumbered"><label /><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="right"><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>15</m:mn><m:mspace width="0.2em" /><m:mtext>તેથી</m:mtext><m:mspace width="0.2em" /><m:mn>15</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>5</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="right"><m:mn>−5</m:mn><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−15</m:mn><m:mspace width="0.2em" /><m:mtext>તેથી</m:mtext><m:mspace width="0.2em" /><m:mn>−15</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−5</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>15</m:mn><m:mspace width="0.2em" /><m:mtext>તેથી</m:mtext><m:mspace width="0.2em" /><m:mn>15</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−5</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="right"><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−15</m:mn><m:mspace width="0.2em" /><m:mtext>તેથી</m:mtext><m:mspace width="0.2em" /><m:mn>−15</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1170654116562">ભાગાકારમાં પણ ગુણાકાર જેવા જ નિયમો લાગુ પડે છે!</para>
+<para id="fs-id1170653915002">બે ચિહ્નવાળી સંખ્યાઓના ભાગાકારમાં, જ્યારે:</para>
+<list id="fs-id1166426287557" list-type="bulleted" bullet-style="bullet">
+<item>ચિહ્નો <emphasis effect="italics">સમાન</emphasis> હોય ત્યારે ભાગફળ <emphasis effect="italics">ધન</emphasis> છે.</item>
+<item>ચિહ્નો <emphasis effect="italics">જુદાં</emphasis> હોય ત્યારે ભાગફળ <emphasis effect="italics">ઋણ</emphasis> છે.</item>
+</list>
+<para id="fs-id1170653869100">યાદ રાખો, ભાગાકારનો જવાબ આપણે હંમેશાં ગુણાકાર વડે તપાસી શકીએ છીએ.</para>
+<note id="fs-id1170654015283">
+<title>ચિહ્નવાળી સંખ્યાઓનો ગુણાકાર અને ભાગાકાર</title>
+<para id="fs-id1170653774421">બે ચિહ્નવાળી સંખ્યાઓના ગુણાકાર અને ભાગાકાર માટે:</para>
+<list id="fs-id1166425927232" list-type="bulleted" bullet-style="bullet">
+<item>ચિહ્નો સમાન હોય તો પરિણામ ધન છે.</item>
+<item>ચિહ્નો જુદાં હોય તો પરિણામ ઋણ છે.</item>
+</list>
+<table id="fs-id1170654154997" class="unnumbered">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry valign="top" align="left">સમાન ચિહ્નો</entry>
+<entry valign="top" align="left">પરિણામ</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry valign="top" align="left">બંને ધન<newline />બંને ઋણ</entry>
+<entry valign="top" align="left">ધન<newline />ધન</entry>
+</row>
+<row valign="top">
+<entry align="center" valign="top" namest="c1" nameend="c2">ચિહ્નો સમાન હોય તો પરિણામ ધન છે.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table id="fs-id1170653799921" class="unnumbered">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry valign="top" align="left">જુદાં ચિહ્નો</entry>
+<entry valign="top" align="left">પરિણામ</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry valign="top" align="left">ધન અને ઋણ<newline />ઋણ અને ધન</entry>
+<entry valign="top" align="left">ઋણ<newline />ઋણ</entry>
+</row>
+<row valign="top">
+<entry align="center" valign="top" namest="c1" nameend="c2">ચિહ્નો જુદાં હોય તો પરિણામ ઋણ છે.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</note>
+<example id="fs-id1170653767572"><exercise id="fs-id1170653894066">
+<problem id="fs-id1170652618826">
+<para id="fs-id1170654008734">ભાગાકાર કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−27</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−100</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654212229">
+<title>ઉકેલ</title>
+<table id="eip-762" summary="જુદાં અને સમાન ચિહ્નવાળા પૂર્ણાંકોના ભાગાકારના નિયમો દર્શાવતાં ઉદાહરણો.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> <newline />ભાગાકાર કરો. ચિહ્નો જુદાં હોય ત્યારે ભાગફળ ઋણ છે.</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mo>−</m:mo><m:mn>27</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−9</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry><span class="token">ⓑ</span> <newline />ભાગાકાર કરો. ચિહ્નો સમાન હોય ત્યારે ભાગફળ ધન છે.</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mo>−</m:mo><m:mn>100</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>25</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table></solution>
+</exercise>
+</example><note id="fs-id1170653776048" class="try">
+<exercise id="fs-id1170653749416">
+<problem id="fs-id1170653797425">
+<para id="fs-id1170653906270">ભાગાકાર કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−42</m:mn><m:mo>÷</m:mo><m:mn>6</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−117</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654149901">
+<para id="fs-id1170654047662"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−7</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 39</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170652618194" class="try">
+<exercise id="fs-id1170653797335">
+<problem id="fs-id1170654233461">
+<para id="fs-id1170652622579">ભાગાકાર કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−63</m:mn><m:mo>÷</m:mo><m:mn>7</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−115</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653897540">
+<para id="fs-id1170653910431"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−9</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 23</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654060143">
+<title>પૂર્ણાંકોવાળી પદાવલીઓને સરળ બનાવો</title>
+<para id="fs-id1170653741550">પદાવલીમાં બે કરતાં વધુ સંખ્યાઓ હોય ત્યારે શું થાય? ઋણ સંખ્યાઓ હોય ત્યારે પણ ક્રિયાઓનો ક્રમ લાગુ પડે છે. અંગ્રેજી સ્મૃતિસૂત્ર ‘My Dear Aunt Sally’ યાદ છે?</para>
+<para id="fs-id1170653790201">ચાલો કેટલાંક ઉદાહરણો કરીએ. આપણે પૂર્ણાંકો સાથે ચારેય ક્રિયાઓ—સરવાળો, બાદબાકી, ગુણાકાર અને ભાગાકાર—વાપરતી પદાવલીઓને સરળ બનાવીશું. ક્રિયાઓનો ક્રમ અનુસરવાનું યાદ રાખો.</para>
+<example id="fs-id1170653814988"><exercise id="fs-id1170653896026">
+<problem id="fs-id1170654066443">
+<para id="fs-id1170653768124">સરળ બનાવો: <m:math><m:mrow><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652623765">
+<title>ઉકેલ</title>
+<table id="eip-431" summary="7(−2) + 4(−7) − 6 પદાવલીની કિંમત શોધતાં ક્રિયાઓનાં પગલાં દર્શાવેલાં છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>પહેલાં ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>−14</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−28</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>સરવાળો કરો.</entry>
+    <entry><m:math><m:mn>−42</m:mn><m:mo>−</m:mo><m:mn>6</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>બાદબાકી કરો.</entry>
+    <entry><m:math><m:mn>−48</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170653898032" class="try">
+<exercise id="fs-id1170652620761">
+<problem id="fs-id1170652620764">
+<para id="fs-id1170653875298">સરળ બનાવો: <m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654149857">
+<para id="fs-id1170654149859"><m:math><m:mrow><m:mn>−63</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653871378" class="try">
+<exercise id="fs-id1170652630281">
+<problem id="fs-id1170652630283">
+<para id="fs-id1170653880078">સરળ બનાવો: <m:math><m:mrow><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652620232">
+<para id="fs-id1170654286008"><m:math><m:mrow><m:mn>−84</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170652619966"><exercise id="fs-id1170652619968">
+<problem id="fs-id1170652619970">
+<para id="fs-id1170653761875">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:msup></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:msup><m:mn>2</m:mn><m:mn>4</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654237484">
+<title>ઉકેલ</title>
+<table id="eip-217" summary="ઘાતવાળી પદાવલીઓની કિંમત પગલાંવાર શોધી છે. ઋણ આધારની ઘાત અને ધન આધારની ઘાતની વિરોધી સંખ્યા વચ્ચેનો તફાવત દર્શાવેલો છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> 
+    <newline />ગુણાકારના વિસ્તારરૂપે લખો.
+    <newline />ગુણાકાર કરો.
+    <newline />ગુણાકાર કરો.
+    <newline />ગુણાકાર કરો.
+</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:msup></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>16</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry><span class="token">ⓑ</span> 
+    <newline />ગુણાકારના વિસ્તારરૂપે લખો. આપણે આ સંખ્યાની વિરોધી સંખ્યા શોધવાની છે:<m:math><m:mspace width="0.2em" /><m:msup><m:mn>2</m:mn><m:mn>4</m:mn></m:msup><m:mo>.</m:mo></m:math>
+	<newline />ગુણાકાર કરો.
+	<newline />ગુણાકાર કરો.
+	<newline />ગુણાકાર કરો.
+	</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mtext>−</m:mtext><m:msup><m:mn>2</m:mn><m:mn>4</m:mn></m:msup></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>-16</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table><para id="fs-id1170653737864">ભાગો વચ્ચેનો તફાવત જુઓ: <span class="token">ⓐ</span> અને <span class="token">ⓑ</span>. ભાગમાં <span class="token">ⓐ</span> ઘાતાંક સૂચવે છે કે કૌંસની અંદરની સંખ્યા, <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> ની <m:math><m:msup><m:mn>4</m:mn><m:mtext>મી</m:mtext></m:msup></m:math> ઘાત લેવાની છે. ભાગમાં <span class="token">ⓑ</span> ઘાતાંક સૂચવે છે કે માત્ર 2ની <m:math><m:msup><m:mn>4</m:mn><m:mtext>મી</m:mtext></m:msup></m:math> ઘાત લેવી અને પછી તેની વિરોધી સંખ્યા લેવી.</para>
+</solution>
+</exercise>
+</example><note id="fs-id1170652623866" class="try">
+<exercise id="fs-id1170652622520">
+<problem id="fs-id1170652622523">
+<para id="fs-id1170653790279">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:msup></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:msup><m:mn>3</m:mn><m:mn>4</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654230619">
+<para id="fs-id1170654230621"><span class="token">ⓐ</span> 81 <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−81</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653875780" class="try">
+<exercise id="fs-id1170653875783">
+<problem id="fs-id1170653875785">
+<para id="fs-id1170654200505">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654154361">
+<para id="fs-id1170654154363"><span class="token">ⓐ</span> 49 <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−49</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170653904816">આગળનું ઉદાહરણ યાદ અપાવે છે કે પહેલાં કૌંસની અંદરની પદાવલી સરળ બનાવવી જોઈએ.</para>
+<example id="fs-id1170653904819"><exercise id="fs-id1170652622787">
+<problem id="fs-id1170652622789">
+<para id="fs-id1170652622791">સરળ બનાવો: <m:math><m:mrow><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653905533">
+<title>ઉકેલ</title>
+<table id="eip-138" summary="ગાણિતિક પદાવલીની કિંમત પગલાંવાર શોધી છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>પહેલાં ગોળ કૌંસની અંદર બાદબાકી કરો.</entry>
+    <entry><m:math><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>12</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>બાદબાકી કરો.</entry>
+    <entry><m:math><m:mn>21</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170653880736" class="try">
+<exercise id="fs-id1170653880740">
+<problem id="fs-id1170654134940">
+<para id="fs-id1170654134942">સરળ બનાવો: <m:math><m:mrow><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652622244">
+<para id="fs-id1170654150070">29</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170652631537" class="try">
+<exercise id="fs-id1170652631540">
+<problem id="fs-id1170652631542">
+<para id="fs-id1170654239598">સરળ બનાવો: <m:math><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653874260">
+<para id="fs-id1170653874262">52</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170653795439"><exercise id="fs-id1170652624012">
+<problem id="fs-id1170652624014">
+<para id="fs-id1170652624016">સરળ બનાવો: <m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653850514">
+<title>ઉકેલ</title>
+<table id="eip-410" summary="8(−9) ÷ (−2)³ પદાવલીની કિંમત શોધવા માટે ક્રિયાઓનો ક્રમ પગલાંવાર દર્શાવેલો છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup></m:math></entry>
+  </row>
+  <row>
+    <entry>પહેલાં ઘાતની કિંમત શોધો.</entry>
+    <entry><m:math><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>−72</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>ભાગાકાર કરો.</entry>
+    <entry><m:math><m:mn>9</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654156593" class="try">
+<exercise id="fs-id1170652621176">
+<problem id="fs-id1170652621179">
+<para id="fs-id1170652621181">સરળ બનાવો: <m:math><m:mrow><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653797293">
+<para id="fs-id1170653797295">4</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653902761" class="try">
+<exercise id="fs-id1170653902764">
+<problem id="fs-id1170654071433">
+<para id="fs-id1170654071435">સરળ બનાવો: <m:math><m:mrow><m:mn>18</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652622271">
+<para id="fs-id1170652622274">9</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170653913797"><exercise id="fs-id1170653913799">
+<problem id="fs-id1170654047271">
+<para id="fs-id1170654047273">સરળ બનાવો: <m:math><m:mrow><m:mn>−30</m:mn><m:mo>÷</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654233306">
+<title>ઉકેલ</title>
+<table id="eip-343" summary="ક્રિયાઓનો ક્રમ વાપરી ગાણિતિક પદાવલીની કિંમત પગલાંવાર શોધતાં અંતિમ સંખ્યાત્મક પરિણામ મળે છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>−30</m:mn><m:mo>÷</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર અને ભાગાકાર ડાબેથી જમણે કરો, તેથી પહેલાં ભાગાકાર કરો.</entry>
+    <entry><m:math><m:mn>−15</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>−15</m:mn><m:mo>+</m:mo><m:mn>21</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>સરવાળો કરો.</entry>
+    <entry><m:math><m:mn>6</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654284453" class="try">
+<exercise id="fs-id1170654284456">
+<problem id="fs-id1170654154229">
+<para id="fs-id1170654154231">સરળ બનાવો: <m:math><m:mrow><m:mn>−27</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654079166">
+<para id="fs-id1170654079169">21</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170652622498" class="try">
+<exercise id="fs-id1170652622501">
+<problem id="fs-id1170652622504">
+<para id="fs-id1170653742352">સરળ બનાવો: <m:math><m:mrow><m:mn>−32</m:mn><m:mo>÷</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652630484">
+<para id="fs-id1170654011846">6</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654011853">
+<title>પૂર્ણાંકોવાળી ચલ પદાવલીઓની કિંમત શોધો</title>
+<para id="fs-id1170653874683">યાદ રાખો કે પદાવલીની કિંમત શોધવી એટલે તેમાંના ચલની જગ્યાએ સંખ્યા મૂકવી. હવે આપણે ધન સંખ્યાઓ સાથે ઋણ સંખ્યાઓ પણ વાપરી શકીએ છીએ.</para>
+<example id="fs-id1170654236880">
+<exercise id="fs-id1170654236882">
+<problem id="fs-id1170654236884">
+<para id="fs-id1170654236886">જ્યારે <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo></m:mrow></m:math> ત્યારે કિંમત શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653907935">
+<title>ઉકેલ</title>
+<para id="fs-id1166421949103"><span class="token">ⓐ</span> <newline />
+<table id="fs-id1167836601446" class="unnumbered unstyled" aria-label="ઉકેલના કોષ્ટકમાં બે સ્તંભ છે. જમણા સ્તંભની ઉપર n + 1 છે. પછીની હરોળમાં ડાબે ‘nની જગ્યાએ −5 મૂકો’ છે, જેમાં −5 લાલ રંગમાં છે. જમણે −5 + 1 છે. પછી ડાબે ‘સરળ બનાવો’ અને જમણે −4 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="fs-id1167836341026" alt="n + 1 પદાવલીમાં ચલ nમાં એક ઉમેરેલો છે. ગણિત અને કમ્પ્યુટર વિજ્ઞાનમાં આ સંકેતલિપિનો ઉપયોગ ઘણી વાર n પછીનો પૂર્ણાંક, એટલે તેનો અનુગામી, દર્શાવવા માટે થાય છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_003b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry><media id="fs-id1167836692265" alt="nની જગ્યાએ −5 મૂકો."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_003a_img_new.jpg" /></media></entry>
+    <entry><media id="fs-id1167836606199" alt="પદાવલી −5 + 1 છે. ઋણ ચિહ્ન અને 5 લાલ રંગમાં છે; સરવાળાનું ચિહ્ન અને 1 કાળા રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_003c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સરળ બનાવો.</entry>
+    <entry>−4</entry>
+  </row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167833329031"><span class="token">ⓑ</span> <newline />
+<table id="eip-id1169751873718" class="unnumbered unstyled" aria-label="ઉકેલના કોષ્ટકમાં બે સ્તંભ છે. જમણા સ્તંભની ઉપર −n + 1 છે. પછીની હરોળમાં ડાબે ‘nની જગ્યાએ −5 મૂકો’ છે, જેમાં −5 લાલ રંગમાં છે. જમણે −(−5) + 1 છે: કૌંસની બહાર ઋણ ચિહ્ન અને કૌંસમાં −5 છે. પછી ડાબે ‘સરળ બનાવો’ અને જમણે 5 + 1 છે. છેલ્લે ડાબે ‘સરવાળો કરો’ અને જમણે 6 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1169754187288" alt="સફેદ પૃષ્ઠભૂમિ પર પદાવલી −n + 1 છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_004b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169754188317" alt="સફેદ પૃષ્ઠભૂમિ પર ‘nની જગ્યાએ −5 મૂકો’ સૂચના છે. −5 લાલ રંગમાં અને બાકીનું લખાણ કાળા રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_004a_img_new.jpg" /></media></entry>
+    <entry><media id="eip-id1169754188329" alt="ગાણિતિક પદાવલી −(−5) + 1 છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_004c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સરળ બનાવો.</entry>
+    <entry><media id="eip-id1169754018353" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા રંગમાં પદાવલી 5 + 1 છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_004d_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સરવાળો કરો.</entry>
+    <entry align="center">6</entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table></para></solution>
+</exercise>
+</example>
+<note id="fs-id1170652631263" class="try">
+<exercise id="fs-id1170652631266">
+<problem id="fs-id1170653797954">
+<para id="fs-id1170653797956">જ્યારે <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn><m:mo>,</m:mo></m:mrow></m:math> કિંમત શોધો <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652631156">
+<para id="fs-id1170652631158"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−6</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 10</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654034373" class="try">
+<exercise id="fs-id1170654034376">
+<problem id="fs-id1170653799901">
+<para id="fs-id1170653799903">જ્યારે <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−9</m:mn><m:mo>,</m:mo></m:mrow></m:math> કિંમત શોધો <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654286534">
+<para id="fs-id1170654286536"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−1</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 17</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170654047965">
+<exercise id="fs-id1170654047967"><problem id="fs-id1170654212321">
+<para id="fs-id1170654212324">કિંમત શોધો <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−18</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>24</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653800718">
+<title>ઉકેલ</title>
+
+
+<table id="eip-id1169751902542" class="unnumbered unstyled" aria-label="ઉકેલના કોષ્ટકમાં બે સ્તંભ છે. જમણા સ્તંભની ઉપર (x + y)² છે. પછીની હરોળમાં ડાબે ‘xની જગ્યાએ −18 અને yની જગ્યાએ 24 મૂકો’ છે; −18 લાલ અને 24 વાદળી રંગમાં છે. જમણે (−18 + 24)² છે. પછી ડાબે ‘ગોળ કૌંસની અંદર સરવાળો કરો’ અને જમણે (6)² છે. છેલ્લે ડાબે ‘સરળ બનાવો’ અને જમણે 36 છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry align="center"><media id="eip-id1169754030720" alt="દ્વિપદી x + y ગોળ કૌંસમાં છે અને આખા કૌંસની ઘાત 2 છે, એટલે (x + y)²."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_005b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169752191035" alt="ચિત્રમાં ‘xની જગ્યાએ −18 અને yની જગ્યાએ 24 મૂકો’ લખેલું છે. −18 લાલ અને 24 આછા વાદળી રંગમાં છે; તે ચલોની આપેલી કિંમતો દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_005a_img_new.jpg" /></media></entry>
+    <entry align="center"><media id="eip-id1169752191047" alt="ચિત્રમાં પદાવલી (−18 + 24)² છે. −18 લાલ રંગમાં, 24 આછા વાદળી રંગમાં અને બાકીનું લખાણ કાળા રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_005c_img.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>ગોળ કૌંસની અંદર સરવાળો કરો.</entry>
+    <entry align="center">(6)<sup>2</sup></entry>
+  </row>
+  <row>
+    <entry>સરળ બનાવો.</entry>
+    <entry align="center">36</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id1170652630290" class="try">
+<exercise id="fs-id1170652630294">
+<problem id="fs-id1170652630296">
+<para id="fs-id1170652630298">કિંમત શોધો <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−15</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>29</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654285387">
+<para id="fs-id1170654061358">196</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654061364" class="try">
+<exercise id="fs-id1170653791773">
+<problem id="fs-id1170653791775">
+<para id="fs-id1170653791777">કિંમત શોધો <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652624057">
+<para id="fs-id1170652624060">8</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170652623775">
+<exercise id="fs-id1170652623778">
+<problem id="fs-id1170652623780">
+<para id="fs-id1170652623782">કિંમત શોધો <m:math><m:mrow><m:mn>20</m:mn><m:mo>−</m:mo><m:mi>z</m:mi></m:mrow></m:math> જ્યારે <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math> અને <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>−12</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654165739">
+<title>ઉકેલ</title>
+<para id="fs-id1166419679240"><span class="token">ⓐ</span> <newline /><table id="eip-id1169752967592" class="unnumbered unstyled" aria-label="ઉકેલના કોષ્ટકમાં બે સ્તંભ છે. જમણા સ્તંભની ઉપર 20 − z છે. પછીની હરોળમાં ડાબે ‘zની જગ્યાએ 12 મૂકો’ છે, જેમાં 12 લાલ રંગમાં છે. જમણે 20 − 12 છે. પછી ડાબે ‘બાદબાકી કરો’ અને જમણે 8 છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry align="center"><media id="eip-id1169752986908" alt="સફેદ પૃષ્ઠભૂમિ પર ઘાટા અક્ષરોમાં પદાવલી 20 − z છે, એટલે વીસ ઓછા z."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_006b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169751035249" alt="ચિત્રમાં ‘zની જગ્યાએ 12 મૂકો’ લખેલું છે. 12 લાલ રંગમાં છે; બાકીનું લખાણ કાળા રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_006a_img_new.jpg" /></media></entry>
+    <entry align="center"><media id="eip-id1169753314441" alt="ચિત્રમાં પદાવલી 20 − 12 છે. માત્ર 12 લાલ રંગમાં છે; 20 અને બાદબાકીનું ચિહ્ન કાળા રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_006c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>બાદબાકી કરો.</entry>
+    <entry align="center">8</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table><newline /><newline />
+<span class="token">ⓑ</span> <newline /><table id="eip-id1169753284608" class="unnumbered unstyled" aria-label="ઉકેલના કોષ્ટકમાં બે સ્તંભ છે. જમણા સ્તંભની ઉપર 20 − z છે. પછીની હરોળમાં ડાબે ‘zની જગ્યાએ −12 મૂકો’ છે, જેમાં −12 લાલ રંગમાં છે. જમણે 20 − (−12) છે; −12 કૌંસમાં છે. પછી ડાબે ‘બાદબાકી કરો’ અને જમણે 32 છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry align="center"><media id="eip-id1169752818172" alt="સફેદ પૃષ્ઠભૂમિ પર પદાવલી 20 − z છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_007b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169752838416" alt="ચિત્રમાં ‘zની જગ્યાએ −12 મૂકો’ સૂચના છે. −12 લાલ-નારંગી રંગમાં દર્શાવેલું છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_007a_img_new.jpg" /></media></entry>
+    <entry align="center"><media id="eip-id1169750893297" alt="પદાવલી 20 − (−12) છે. −12 લાલ રંગમાં છે. આ ઋણ સંખ્યાની બાદબાકી દર્શાવે છે, જે 20 + 12ની સમકક્ષ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_007c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>બાદબાકી કરો.</entry>
+    <entry align="center">32</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table></para></solution>
+</exercise>
+</example>
+<note id="fs-id1170654157548" class="try">
+<exercise id="fs-id1170654157552">
+<problem id="fs-id1170654157554">
+<para id="fs-id1170654157556">કિંમત શોધો: <m:math><m:mrow><m:mn>17</m:mn><m:mo>−</m:mo><m:mi>k</m:mi></m:mrow></m:math> જ્યારે <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>19</m:mn></m:mrow></m:math> અને <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>−19</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652619306">
+<para id="fs-id1170652619308"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 36</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170652623493" class="try">
+<exercise id="fs-id1170652623497">
+<problem id="fs-id1170652623499">
+<para id="fs-id1170654138480">કિંમત શોધો: <m:math><m:mrow><m:mn>−5</m:mn><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow></m:math> જ્યારે <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>14</m:mn></m:mrow></m:math> અને <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>−14</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652619277">
+<para id="fs-id1170652619279"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−19</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 9</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170654287812">
+<exercise id="fs-id1170654287814">
+<problem id="fs-id1170654287816">
+<para id="fs-id1170652618176">કિંમત શોધો: <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+
+<solution id="fs-id1170654215881">
+<title>ઉકેલ</title>
+<para id="fs-id1170654164395">આપેલી કિંમત <m:math><m:mrow><m:mn>4</m:mn><m:mspace width="0.2em" /><m:mtext>આ ચલની જગ્યાએ મૂકો:</m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> ગુણાકાર દર્શાવવા ગોળ કૌંસ વાપરો.<newline />
+<table id="eip-id1169752967487" class="unnumbered unstyled" aria-label="ઉકેલના કોષ્ટકમાં બે સ્તંભ છે. જમણા સ્તંભની ઉપર 2x² + 3x + 8 છે, જેમાં વર્ગ માત્ર xનો છે. પછીની હરોળમાં ડાબે ‘મૂકો’ અને જમણે 2(4)² + 3(4) + 8 છે; 4 લાલ રંગમાં છે. પછી ડાબે ‘ઘાતની કિંમત શોધો’ અને જમણે 2(16) + 3(4) + 8 છે. પછી ડાબે ‘ગુણાકાર કરો’ અને જમણે 32 + 12 + 8 છે. છેલ્લે ડાબે ‘સરવાળો કરો’ અને જમણે 52 છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry align="center"><media id="eip-id1169753319331" alt="પદાવલી 2x² + 3x + 8 છે; પહેલા પદમાં 2 ગુણ્યા xનો વર્ગ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_008a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>આપેલી કિંમત મૂકો.</entry>
+    <entry align="center"><media id="eip-id1169752839642" alt="પદાવલી 2(4)² + 3(4) + 8 છે. ગોળ કૌંસમાં આવતો દરેક 4 લાલ રંગમાં છે. પહેલા પદમાં વર્ગ માત્ર કૌંસમાંના 4નો છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_008b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>ઘાતની કિંમત શોધો.</entry>
+    <entry align="center"><media id="eip-id1169753138651" alt="પદાવલી 2(16) + 3(4) + 8 છે, એટલે 2 ગુણ્યા 16, વત્તા 3 ગુણ્યા 4, વત્તા 8."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_008c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry align="center"><media id="eip-id1169752821475" alt="ત્રણ સંખ્યાઓનો સરવાળો દર્શાવતી પદાવલી 32 + 12 + 8 છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_04_008d_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સરવાળો કરો.</entry>
+    <entry align="center">52</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table></para></solution>
+</exercise>
+</example>
+<note id="fs-id1170652618806" class="try">
+<exercise id="fs-id1170652618809">
+<problem id="fs-id1170654080966">
+<para id="fs-id1170654080968">કિંમત શોધો: <m:math><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653798527">
+<para id="fs-id1170653798529">39</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654183344" class="try">
+<exercise id="fs-id1170654183347">
+<problem id="fs-id1170654129713">
+<para id="fs-id1170654129715">કિંમત શોધો: <m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653875048">
+<para id="fs-id1170653875050">13</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654080262">
+<title>શબ્દસમૂહોને પૂર્ણાંકોવાળી પદાવલીઓમાં ફેરવો</title>
+<para id="fs-id1170654080268">અંગ્રેજી શબ્દસમૂહોને બીજગણિતમાં ફેરવવાનું આપણું અગાઉનું કાર્ય ધન અને ઋણ બંને સંખ્યાઓવાળા શબ્દસમૂહોને પણ લાગુ પડે છે.</para>
+<example id="fs-id1170654286411"><exercise id="fs-id1170654286413">
+<problem id="fs-id1170654286415">
+<para id="fs-id1170654286418">પદાવલીમાં ફેરવો અને સરળ બનાવો: 8 અને <m:math><m:mrow><m:mn>−12</m:mn><m:mo>,</m:mo></m:mrow></m:math> એ બંનેના સરવાળામાં 3 ઉમેરો.</para>
+</problem>
+<solution id="fs-id1170652630972">
+<title>ઉકેલ</title>
+<table id="eip-929" summary="સરવાળા અને પૂર્ણાંકોવાળા શાબ્દિક દાખલાને પગલાંવાર પદાવલીમાં ફેરવી ઉકેલ્યો છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry>આ સંખ્યાઓનો <emphasis>સરવાળો</emphasis> લો: 8 અને <m:math><m:mrow><m:mn>−12</m:mn><m:mo>,</m:mo></m:mrow></m:math> પછી તેમાં 3 ઉમેરો.</entry>
+  </row>
+  <row>
+    <entry>પદાવલીમાં ફેરવો.</entry>
+    <entry><m:math><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>સરળ બનાવો. ચોરસ કૌંસને નિરપેક્ષ મૂલ્યની ઊભી રેખાઓ સાથે ગૂંચવશો નહીં.</entry>
+    <entry><m:math><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>સરવાળો કરો.</entry>
+    <entry><m:math><m:mn>−1</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654285664" class="try">
+<exercise id="fs-id1170654285667">
+<problem id="fs-id1170654285669">
+<para id="fs-id1170652620473">પદાવલીમાં ફેરવો અને સરળ બનાવો: 9 અને <m:math><m:mrow><m:mn>−16</m:mn><m:mo>,</m:mo></m:mrow></m:math> એ બંનેના સરવાળામાં 4 ઉમેરો.</para>
+</problem>
+<solution id="fs-id1170652622182">
+<para id="fs-id1170652622184"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>;</m:mo><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654041770" class="try">
+<exercise id="fs-id1170654041774">
+<problem id="fs-id1170654041776">
+<para id="fs-id1170654041778">પદાવલીમાં ફેરવો અને સરળ બનાવો: <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−12</m:mn><m:mo>,</m:mo></m:mrow></m:math> એ બંનેના સરવાળામાં 7 ઉમેરો.</para>
+</problem>
+<solution id="fs-id1170653849382">
+<para id="fs-id1170654209722"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>;</m:mo><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170652622623">ક્રિયાઓનાં ચિહ્નોનો પરિચય થયો ત્યારે આપણે જોયું કે પદાવલીને જુદીજુદી રીતે વાંચી શકાય છે. આ રીતો નીચેના કોષ્ટકમાં આપી છે.</para>
+<table id="fs-id1170654190232" class="unnumbered" aria-label="આ કોષ્ટકમાં બે ખાનાં છે. ઉપરના ખાનામાં a − b પદાવલી છે. નીચેના ખાનામાં ‘a ઓછા b’, ‘a અને bનો તફાવત’, ‘aમાંથી b બાદ કરેલું’ અને ‘a કરતાં b ઓછું’ એવા શબ્દસમૂહો છે.">
+<label />
+<tgroup cols="1">
+<colspec colnum="1" colname="c1" />
+<thead>
+<row valign="top">
+<entry align="center" valign="top"><m:math><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="center" valign="top"><m:math><m:mi>a</m:mi></m:math> ઓછા <m:math><m:mi>b</m:mi></m:math><newline />તફાવત: <m:math><m:mi>a</m:mi></m:math> અને <m:math><m:mi>b</m:mi></m:math>નો તફાવત<newline /><m:math><m:mi>b</m:mi></m:math>ને આમાંથી બાદ કરેલું: <m:math><m:mi>a</m:mi></m:math><newline /><m:math><m:mi>b</m:mi></m:math> જેટલું આ કરતાં ઓછું: <m:math><m:mi>a</m:mi></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1170654238524">આ પદાવલીમાં <emphasis effect="italics">a</emphasis> અને <emphasis effect="italics">b</emphasis>નો યોગ્ય ક્રમ રાખવાની કાળજી લો!</para>
+<example id="fs-id1170653874522"><exercise id="fs-id1170653874524">
+<problem id="fs-id1170653874526">
+<para id="fs-id1170653874528">પદાવલીમાં ફેરવો અને પછી સરળ બનાવો: <span class="token">ⓐ</span> આ સંખ્યાઓનો તફાવત: 13 અને <m:math><m:mrow><m:mn>−21</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 24ને આ સંખ્યામાંથી બાદ કરો: <m:math><m:mrow><m:mn>−19</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654150875">
+<title>ઉકેલ</title>
+<table id="eip-651" summary="પૂર્ણાંકોવાળા શાબ્દિક દાખલાને પદાવલીમાં ફેરવી તેના ઉકેલ શોધ્યા છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> 
+    <newline />પદાવલીમાં ફેરવો.
+    <newline />સરળ બનાવો.</entry>
+    <entry><m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mtext /><m:mspace width="0.2em" /><m:mtext mathvariant="bold">તફાવત</m:mtext><m:mspace width="0.2em" /><m:mtext mathvariant="italic">:</m:mtext><m:mspace width="0.2em" /><m:mn>13</m:mn><m:mspace width="0.2em" /><m:mtext mathvariant="italic">અને</m:mtext><m:mspace width="0.2em" /><m:mo>−</m:mo><m:mn>21</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>13</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−21</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>34</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓑ</span> <newline />
+    પદાવલીમાં ફેરવો. યાદ રાખો: ‘બાદ કરો <m:math><m:mi>b</m:mi></m:math> આમાંથી <m:math><m:mi>a</m:mi></m:math> એટલે <m:math><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi></m:math>.
+	<newline />સરળ બનાવો.</entry>
+    <entry><m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mtext mathvariant="bold">બાદ કરો</m:mtext><m:mspace width="0.2em" /><m:mn>24</m:mn><m:mspace width="0.2em" /><m:mtext mathvariant="bold">આમાંથી</m:mtext><m:mspace width="0.2em" /><m:mo>−</m:mo><m:mn>19</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mo>−</m:mo><m:mn>19</m:mn><m:mo>−</m:mo><m:mn>24</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mo>−</m:mo><m:mn>43</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math></entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654159524" class="try">
+<exercise id="fs-id1170654159527">
+<problem id="fs-id1170654159530">
+<para id="fs-id1170654159532">પદાવલીમાં ફેરવો અને સરળ બનાવો: <span class="token">ⓐ</span> આ સંખ્યાઓનો તફાવત: 14 અને <m:math><m:mrow><m:mn>−23</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 21ને આ સંખ્યામાંથી બાદ કરો: <m:math><m:mrow><m:mn>−17</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652619950">
+<para id="fs-id1170652619953"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>14</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−23</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mn>37</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−17</m:mn><m:mo>−</m:mo><m:mn>21</m:mn><m:mo>;</m:mo><m:mo>−</m:mo><m:mn>38</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653815250" class="try">
+<exercise id="fs-id1170654285362">
+<problem id="fs-id1170654285364">
+<para id="fs-id1170654285366">પદાવલીમાં ફેરવો અને સરળ બનાવો: <span class="token">ⓐ</span> આ સંખ્યાઓનો તફાવત: 11 અને <m:math><m:mrow><m:mn>−19</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 18ને આ સંખ્યામાંથી બાદ કરો: <m:math><m:mrow><m:mn>−11</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652621632">
+<para id="fs-id1170652621634"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>11</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−19</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mn>30</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−11</m:mn><m:mo>−</m:mo><m:mn>18</m:mn><m:mo>;</m:mo><m:mo>−</m:mo><m:mn>29</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170653881059">અંગ્રેજી શબ્દસમૂહોને બીજગણિતમાં ફેરવવાનું અગાઉનું કાર્ય પૂર્ણાંકોના ગુણાકાર અને ભાગાકારવાળા શબ્દસમૂહોને પણ લાગુ પડે છે. યાદ રાખો કે <term class="no-emphasis" id="term-00004">ગુણાકાર</term> માટે મુખ્ય શબ્દ ‘<term class="no-emphasis" id="term-00005">ગુણાકારનું પરિણામ</term>’ છે અને <term class="no-emphasis" id="term-00006">ભાગાકાર</term> માટે ‘<term class="no-emphasis" id="term-00007">ભાગફળ</term>’ છે.</para>
+<example id="fs-id1170654149705"><exercise id="fs-id1170654149707">
+<problem id="fs-id1170654158684">
+<para id="fs-id1170654158686">બીજગણિતીય પદાવલીમાં ફેરવો અને શક્ય હોય તો સરળ બનાવો: આ સંખ્યાઓના ગુણાકારનું પરિણામ: <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math> અને 14.</para>
+</problem>
+<solution id="fs-id1170654158696">
+<title>ઉકેલ</title>
+<table id="eip-856" summary="શાબ્દિક ગુણાકારને પદાવલીમાં ફેરવી સરળ બનાવતાં સંખ્યાત્મક પરિણામ મેળવ્યું છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mtext>ગુણાકારનું પરિણામ</m:mtext><m:mspace width="0.2em" /><m:mtext mathvariant="italic">:</m:mtext><m:mspace width="0.2em" /><m:mn>−2</m:mn><m:mspace width="0.2em" /><m:mtext mathvariant="italic">અને</m:mtext><m:mspace width="0.2em" /><m:mn>14</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>પદાવલીમાં ફેરવો.</entry>
+    <entry><m:math><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>14</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>સરળ બનાવો.</entry>
+    <entry><m:math><m:mn>−28</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170652620828" class="try">
+<exercise id="fs-id1170652620831">
+<problem id="fs-id1170652620834">
+<para id="fs-id1170652620836">બીજગણિતીય પદાવલીમાં ફેરવો અને શક્ય હોય તો સરળ બનાવો: આ સંખ્યાઓના ગુણાકારનું પરિણામ: <m:math><m:mrow><m:mn>−5</m:mn></m:mrow></m:math> અને 12.</para>
+</problem>
+<solution id="fs-id1170652623909">
+<para id="fs-id1170652623911"><m:math><m:mrow><m:mn>−5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mo>−</m:mo><m:mn>60</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653797090" class="try">
+<exercise id="fs-id1170653797093">
+<problem id="fs-id1170653797095">
+<para id="fs-id1170653797097">બીજગણિતીય પદાવલીમાં ફેરવો અને શક્ય હોય તો સરળ બનાવો: આ સંખ્યાઓના ગુણાકારનું પરિણામ—8 અને <m:math><m:mrow><m:mn>−13</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653868747">
+<para id="fs-id1170653868749"><m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−13</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mo>−</m:mo><m:mn>104</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170654149648"><exercise id="fs-id1170654158557">
+<problem id="fs-id1170654158560">
+<para id="fs-id1170654158562">બીજગણિતીય પદાવલીમાં ફેરવો અને શક્ય હોય તો સરળ બનાવો: આ સંખ્યાઓનું ભાગફળ: <m:math><m:mrow><m:mn>−56</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−7</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653875100">
+<title>ઉકેલ</title>
+<table id="eip-659" summary="શબ્દસમૂહને ગાણિતિક પદાવલીમાં ફેરવી બે ઋણ પૂર્ણાંકોનું ભાગફળ સરળ બનાવવાનાં પગલાં.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mtext>ભાગફળ</m:mtext><m:mspace width="0.2em" /><m:mtext mathvariant="italic">:</m:mtext><m:mspace width="0.2em" /><m:mn>−56</m:mn><m:mspace width="0.2em" /><m:mtext mathvariant="italic">અને</m:mtext><m:mspace width="0.2em" /><m:mn>−7</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>પદાવલીમાં ફેરવો.</entry>
+    <entry><m:math><m:mn>−56</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>સરળ બનાવો.</entry>
+    <entry><m:math><m:mn>8</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170652621551" class="try">
+<exercise id="fs-id1170652621554">
+<problem id="fs-id1170652621556">
+<para id="fs-id1170652621559">બીજગણિતીય પદાવલીમાં ફેરવો અને શક્ય હોય તો સરળ બનાવો: આ સંખ્યાઓનું ભાગફળ: <m:math><m:mrow><m:mn>−63</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−9</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653906972">
+<para id="fs-id1170653906974"><m:math><m:mrow><m:mn>−63</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653930626" class="try">
+<exercise id="fs-id1170653930629">
+<problem id="fs-id1170653930632">
+<para id="fs-id1170652630883">બીજગણિતીય પદાવલીમાં ફેરવો અને શક્ય હોય તો સરળ બનાવો: આ સંખ્યાઓનું ભાગફળ: <m:math><m:mrow><m:mn>−72</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−9</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654164368">
+<para id="fs-id1170654164370"><m:math><m:mrow><m:mn>−72</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mn>8</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170652633172">
+<title>વ્યવહારુ પ્રશ્નોમાં પૂર્ણાંકોનો ઉપયોગ કરો</title>
+<para id="fs-id1170653875242">વ્યવહારુ પ્રશ્નો ઉકેલવા માટે આપણે એક યોજના બનાવીએ. શું શોધવું છે અથવા તેને શું નામ આપવું છે તે જ જાણતા ન હોઈએ તો શોધવું મુશ્કેલ થાય! તેથી પહેલાં પ્રશ્ન આપણને શું શોધવાનું કહે છે તે નક્કી કરીએ. પછી તે શોધવા જરૂરી માહિતી આપતો શબ્દસમૂહ લખીએ. તેને પદાવલીમાં ફેરવી, પદાવલી સરળ બનાવી જવાબ મેળવીએ. છેલ્લે જવાબને વાક્યમાં લખીએ, જેથી તે અર્થપૂર્ણ છે તેની ખાતરી થાય.</para>
+<example id="fs-id1170653875250">
+<title>પૂર્ણાંકોવાળા વ્યવહારુ પ્રશ્નો ઉકેલવાની યોજના કેવી રીતે લાગુ કરવી</title>
+<exercise id="fs-id1170653875252">
+<problem id="fs-id1170653879266">
+<para id="fs-id1170653879268">સવારે ઇલિનોઇના અર્બાનામાં તાપમાન 11 ડિગ્રી હતું. બપોર પછી તાપમાન ઘટીને <m:math><m:mrow><m:mn>−9</m:mn></m:mrow></m:math> ડિગ્રી થયું. સવાર અને બપોર પછીના તાપમાન વચ્ચે કેટલો તફાવત હતો?</para>
+</problem>
+<solution id="fs-id1170653879279">
+<title>ઉકેલ</title>
+<media id="fs-id1170653797914" alt="કોષ્ટકમાં બે સ્તંભ છે. ડાબે પ્રશ્ન ઉકેલવાનાં પગલાં અને જમણે તેને અનુરૂપ ગણિત છે. પહેલી હરોળમાં ડાબે ‘પગલું 1. પ્રશ્ન વાંચો. બધા શબ્દો અને વિચારો સમજાયા છે તેની ખાતરી કરો’ લખેલું છે. જમણું ખાનુ ખાલી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_04_009a_new.jpg" />
+</media>
+<media id="fs-id1170653907530" alt="બીજી હરોળમાં ડાબે ‘પગલું 2. શું શોધવાનું છે તે ઓળખો’ અને જમણે ‘સવાર અને બપોર પછીના તાપમાન વચ્ચેનો તફાવત’ લખેલું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_04_009b_new.jpg" />
+</media>
+<media id="fs-id1170654231700" alt="ત્રીજી હરોળમાં ડાબે ‘પગલું 3. તે શોધવા જરૂરી માહિતી આપતો શબ્દસમૂહ લખો’ અને જમણે ‘11 અને −9નો તફાવત’ લખેલું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_04_009c_new.jpg" />
+</media>
+<media id="fs-id1170652751567" alt="ચોથી હરોળમાં ડાબે ‘પગલું 4. શબ્દસમૂહને પદાવલીમાં ફેરવો’ અને જમણે 11 − (−9) છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_04_009d_new.jpg" />
+</media>
+<media id="fs-id1170653837169" alt="પાંચમી હરોળમાં ડાબે ‘પગલું 5. પદાવલીને સરળ બનાવો’ અને જમણે 20 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_04_009e_new.jpg" />
+</media>
+<media id="fs-id1171792706468" alt="છેલ્લી હરોળમાં ડાબે ‘પગલું 6. પ્રશ્નનો જવાબ આપતું પૂર્ણ વાક્ય લખો’ છે. જમણે ‘તાપમાનનો તફાવત 20 ડિગ્રી હતો’ લખેલું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_04_009f_new.jpg" />
+</media>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170653881811" class="try">
+<exercise id="fs-id1170653881814">
+<problem id="fs-id1170652630563">
+<para id="fs-id1170652630565">સવારે અલાસ્કાના ઍન્કરેજમાં તાપમાન 15 ડિગ્રી હતું. બપોર પછી તાપમાન ઘટીને શૂન્યથી 30 ડિગ્રી નીચે ગયું. સવાર અને બપોર પછીના તાપમાન વચ્ચે કેટલો તફાવત હતો?</para>
+</problem>
+<solution id="fs-id1170652630571">
+<para id="fs-id1170652630574">તાપમાનનો તફાવત 45 ડિગ્રી હતો.</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654202588" class="try">
+<exercise id="fs-id1170654202592">
+<problem id="fs-id1170654202594">
+<para id="fs-id1170654202596">ડેન્વરમાં બપોરે જમવાના સમયે તાપમાન <m:math><m:mrow><m:mn>−6</m:mn></m:mrow></m:math> ડિગ્રી હતું. સૂર્યાસ્ત સુધીમાં તાપમાન ઘટીને <m:math><m:mrow><m:mn>−15</m:mn></m:mrow></m:math> ડિગ્રી થયું. બપોરે જમવાના સમયના અને સૂર્યાસ્તના તાપમાન વચ્ચે કેટલો તફાવત હતો?</para>
+</problem>
+<solution id="fs-id1170654209698">
+<para id="fs-id1170654209700">તાપમાનનો તફાવત 9 ડિગ્રી હતો.</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654209706" class="howto">
+<title>પૂર્ણાંકોવાળા વ્યવહારુ પ્રશ્નો ઉકેલવાની યોજના લાગુ કરો.</title>
+<list id="fs-id1166426171804" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>પ્રશ્ન વાંચો. બધા શબ્દો અને વિચારો સમજાયા છે તેની ખાતરી કરો.</item>
+<item>શું શોધવાનું છે તે ઓળખો.</item>
+<item>તે શોધવા જરૂરી માહિતી આપતો શબ્દસમૂહ લખો.</item>
+<item>શબ્દસમૂહને પદાવલીમાં ફેરવો.</item>
+<item>પદાવલીને સરળ બનાવો.</item>
+<item>પૂર્ણ વાક્યમાં પ્રશ્નનો જવાબ આપો.</item>
+</list>
+</note>
+<example id="fs-id1170652620542"><exercise id="fs-id1170652620544">
+<problem id="fs-id1170652620547">
+<para id="fs-id1170654154716">મસ્ટૅંગ્સ ફૂટબૉલ ટીમને ત્રીજા ક્વાર્ટરમાં ત્રણ દંડ મળ્યા. દરેક દંડને કારણે તેમને પંદર યાર્ડ ગુમાવવા પડ્યા. કુલ કેટલા યાર્ડ ગુમાવ્યા?</para>
+</problem>
+<solution id="fs-id1170654154722">
+<title>ઉકેલ</title>
+<table id="eip-436" summary="15 યાર્ડના દંડવાળો શાબ્દિક દાખલો ઉકેલવાનાં પગલાં દર્શાવ્યાં છે. કુલ 45 યાર્ડ ગુમાવ્યા છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis>પગલું 1.</emphasis> પ્રશ્ન વાંચો. બધા શબ્દો અને વિચારો સમજાયા છે તેની ખાતરી કરો.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry><emphasis>પગલું 2.</emphasis> શું શોધવાનું છે તે ઓળખો.</entry>
+    <entry>ગુમાવેલા યાર્ડની સંખ્યા</entry>
+  </row>
+  <row>
+    <entry><emphasis>પગલું 3.</emphasis> તે શોધવા જરૂરી માહિતી આપતો શબ્દસમૂહ લખો.</entry>
+    <entry>15 યાર્ડનો દંડ ત્રણ વખત</entry>
+  </row>
+  <row>
+    <entry><emphasis>પગલું 4.</emphasis> શબ્દસમૂહને પદાવલીમાં ફેરવો.</entry>
+    <entry><m:math><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−15</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis>પગલું 5.</emphasis> પદાવલીને સરળ બનાવો.</entry>
+    <entry><m:math><m:mn>−45</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis>પગલું 6.</emphasis> પૂર્ણ વાક્યમાં પ્રશ્નનો જવાબ આપો.</entry>
+    <entry>ટીમે 45 યાર્ડ ગુમાવ્યા.</entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654185951" class="try">
+<exercise id="fs-id1170653874319">
+<problem id="fs-id1170653874322">
+<para id="fs-id1170653874324">બેઅર્સ ટીમ ખરાબ રમી અને રમતમાં તેને સાત દંડ મળ્યા. દરેક દંડને કારણે 15 યાર્ડ ગુમાવવા પડ્યા. દંડને કારણે કુલ કેટલા યાર્ડ ગુમાવ્યા?</para>
+</problem>
+<solution id="fs-id1170653874329">
+<para id="fs-id1170653874332">બેઅર્સે 105 યાર્ડ ગુમાવ્યા.</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653874661" class="try">
+<exercise id="fs-id1170653874665">
+<problem id="fs-id1170653874667">
+<para id="fs-id1170653874669">બિલ માટે કૅમ્પસનું ATM અનુકૂળ હોવાથી તે તેનો ઉપયોગ કરે છે. પરંતુ દરેક ઉપયોગ માટે તેની પાસેથી $2 ફી લેવાય છે. ગયા મહિને તેણે આઠ વખત ATM વાપર્યું. ATMના ઉપયોગની તેની કુલ ફી કેટલી થઈ?</para>
+</problem>
+<solution id="fs-id1170653874675">
+<para id="fs-id1170654239353">તેના ચેકિંગ ખાતામાંથી $16 ફી કપાઈ.</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654239360" class="key-concepts">
+<title>મુખ્ય ખ્યાલો</title>
+<list id="fs-id1170654239367" list-type="bulleted" bullet-style="bullet">
+<item><emphasis effect="bold">બે ચિહ્નવાળી સંખ્યાઓનો ગુણાકાર અને ભાગાકાર</emphasis>
+<list id="fs-id1170653881237" list-type="bulleted" bullet-style="open-circle">
+<item>સમાન ચિહ્નો—ગુણાકારનું પરિણામ ધન</item>
+<item>જુદાં ચિહ્નો—ગુણાકારનું પરિણામ ઋણ</item>
+</list></item>
+<item><emphasis effect="bold">વ્યવહારુ પ્રશ્નો માટેની યોજના</emphasis>
+<list id="fs-id1170652621952" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>તમારે શું શોધવાનું છે તે ઓળખો.</item>
+<item>તે શોધવા જરૂરી માહિતી આપતો શબ્દસમૂહ લખો.</item>
+<item>શબ્દસમૂહને પદાવલીમાં ફેરવો.</item>
+<item>પદાવલીને સરળ બનાવો.</item>
+<item>પૂર્ણ વાક્યમાં પ્રશ્નનો જવાબ આપો.</item>
+</list></item></list>
+</section>
+<section id="fs-id1170654285505" class="section-exercises">
+<section id="fs-id1170654285508" class="practice-perfect">
+<title>અભ્યાસથી નિપુણતા</title>
+<para id="fs-id1170654014011"><emphasis effect="bold">પૂર્ણાંકોનો ગુણાકાર કરો</emphasis></para>
+<para id="fs-id1166421558397">નીચેના અભ્યાસમાં, ગુણાકાર કરો.</para>
+<exercise id="fs-id1170654014018">
+<problem id="fs-id1170654014020">
+<para id="fs-id1170654014022"><m:math><m:mrow><m:mn>−4</m:mn><m:mo>·</m:mo><m:mn>8</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654209659">
+<para id="fs-id1170654209661"><m:math><m:mrow><m:mn>−32</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652623459">
+<problem id="fs-id1170652623461">
+<para id="fs-id1170652623463"><m:math><m:mrow><m:mn>−3</m:mn><m:mo>·</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652620378">
+<problem id="fs-id1170652620380">
+<para id="fs-id1170652620383"><m:math><m:mrow><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654285487">
+<para id="fs-id1170654285489"><m:math><m:mrow><m:mn>−63</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652631415">
+<problem id="fs-id1170652631417">
+<para id="fs-id1170652631420"><m:math><m:mrow><m:mn>13</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653875074">
+<problem id="fs-id1170654284498">
+<para id="fs-id1170654284500"><m:math><m:mrow><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>⋅</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654284507">
+<para id="fs-id1170654284510"><m:math><m:mrow><m:mn>−6</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654229838">
+<problem id="fs-id1170654229840">
+<para id="fs-id1170654229843"><m:math><m:mrow><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654129770">
+<problem id="fs-id1170654129772">
+<para id="fs-id1170654129774"><m:math><m:mrow><m:mn>−1</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−14</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653868848">
+<para id="fs-id1170653868850">14</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653868856">
+<problem id="fs-id1170653868858">
+<para id="fs-id1170654200454"><m:math><m:mrow><m:mn>−1</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−19</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654285236"><emphasis effect="bold">પૂર્ણાંકોનો ભાગાકાર કરો</emphasis></para>
+<para id="fs-id1166421949046">નીચેના અભ્યાસમાં, ભાગાકાર કરો.</para>
+<exercise id="fs-id1170654285242">
+<problem id="fs-id1170654285244">
+<para id="fs-id1170654285246"><m:math><m:mrow><m:mn>−24</m:mn><m:mo>÷</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652618869">
+<para id="fs-id1170652618871"><m:math><m:mrow><m:mn>−4</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652623979">
+<problem id="fs-id1170652623981">
+<para id="fs-id1170652623983"><m:math><m:mrow><m:mn>35</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652622669">
+<problem id="fs-id1170652622671">
+<para id="fs-id1170654286642"><m:math><m:mrow><m:mn>−52</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654286661">
+<para id="fs-id1170654286455">13</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654286461">
+<problem id="fs-id1170654286463">
+<para id="fs-id1170654286465"><m:math><m:mrow><m:mn>−84</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652620139">
+<problem id="fs-id1170653877718">
+<para id="fs-id1170653877720"><m:math><m:mrow><m:mn>−180</m:mn><m:mo>÷</m:mo><m:mn>15</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653877732">
+<para id="fs-id1170653877734"><m:math><m:mrow><m:mn>−12</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654285002">
+<problem id="fs-id1170654285004">
+<para id="fs-id1170654285006"><m:math><m:mrow><m:mn>−192</m:mn><m:mo>÷</m:mo><m:mn>12</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170652622812"><emphasis effect="bold">પૂર્ણાંકોવાળી પદાવલીઓને સરળ બનાવો</emphasis></para>
+<para id="fs-id1166421486016">નીચેના અભ્યાસમાં, દરેક પદાવલીને સરળ બનાવો.</para>
+<exercise id="fs-id1170653879427">
+<problem id="fs-id1170653879429">
+<para id="fs-id1170653879431"><m:math><m:mrow><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654164588">
+<para id="fs-id1170654159543"><m:math><m:mrow><m:mn>−47</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654159551">
+<problem id="fs-id1170654159554">
+<para id="fs-id1170654159556"><m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654116606">
+<problem id="fs-id1170654164293">
+<para id="fs-id1170654164295"><m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>6</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654128449">
+<para id="fs-id1170654128451">64</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654128456">
+<problem id="fs-id1170654128459">
+<para id="fs-id1170654128461"><m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>5</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653881171">
+<problem id="fs-id1170653881173">
+<para id="fs-id1170653881175"><m:math><m:mrow><m:mtext>−</m:mtext><m:msup><m:mn>4</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653881188">
+<para id="fs-id1170653881190"><m:math><m:mrow><m:mn>−16</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654236414">
+<problem id="fs-id1170654236416">
+<para id="fs-id1170654236419"><m:math><m:mrow><m:mtext>−</m:mtext><m:msup><m:mn>6</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652631246">
+<problem id="fs-id1170652631248">
+<para id="fs-id1170652631250"><m:math><m:mrow><m:mn>−3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>6</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653875723">
+<para id="fs-id1170652630992">90</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652630997">
+<problem id="fs-id1170652630999">
+<para id="fs-id1170652631002"><m:math><m:mrow><m:mn>−4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654164528">
+<problem id="fs-id1170654164530">
+<para id="fs-id1170654211037"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654164545">
+<para id="fs-id1170654164547">9</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654164553">
+<problem id="fs-id1170654164555">
+<para id="fs-id1170654164557"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652620724">
+<problem id="fs-id1170652620726">
+<para id="fs-id1170652620728"><m:math><m:mrow><m:mn>26</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653890632">
+<para id="fs-id1170653890634">41</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652633361">
+<problem id="fs-id1170652633363">
+<para id="fs-id1170652633365"><m:math><m:mrow><m:mn>23</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654211106">
+<problem id="fs-id1170654211108">
+<para id="fs-id1170654211111"><m:math><m:mrow><m:mn>65</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−28</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652620344">
+<para id="fs-id1170652620347"><m:math><m:mrow><m:mn>−9</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652620355">
+<problem id="fs-id1170652620358">
+<para id="fs-id1170652620360"><m:math><m:mrow><m:mn>52</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−32</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654126035">
+<problem id="fs-id1170654126037">
+<para id="fs-id1170654126039"><m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654053631">
+<para id="fs-id1170654053633"><m:math><m:mrow><m:mn>−29</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654053642">
+<problem id="fs-id1170652623033">
+<para id="fs-id1170652623035"><m:math><m:mrow><m:mn>11</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654211763">
+<problem id="fs-id1170654211765">
+<para id="fs-id1170654211767"><m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>24</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652624028">
+<para id="fs-id1170652624030">5</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652624035">
+<problem id="fs-id1170652624037">
+<para id="fs-id1170652624040"><m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>32</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170653881829"><emphasis effect="bold">પૂર્ણાંકોવાળી ચલ પદાવલીઓની કિંમત શોધો</emphasis></para>
+<para id="fs-id1166426233230">નીચેના અભ્યાસમાં, દરેક પદાવલીની કિંમત શોધો.</para>
+<exercise id="fs-id1170653881835">
+<problem id="fs-id1170653881838">
+<para id="fs-id1170653881840"><m:math><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−14</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> જ્યારે <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−33</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654126091">
+<para id="fs-id1170654126094"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−47</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 16</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652630247">
+<problem id="fs-id1170652630249">
+<para id="fs-id1170652630251"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−21</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> જ્યારે<span class="token">ⓐ</span> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−27</m:mn></m:mrow></m:math><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>44</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652633074">
+<problem id="fs-id1170652633076">
+<list id="fs-id1169511702566" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>−7</m:mn></m:mrow></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>−7</m:mn></m:mrow></m:math></item></list>
+</problem>
+<solution id="fs-id1170653879336">
+<para id="fs-id1170653879338"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 10</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654215815">
+<problem id="fs-id1170654215817">
+<list id="fs-id1162511402566" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>d</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn></m:mrow></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>d</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn></m:mrow></m:math></item></list>
+</problem>
+</exercise>
+<exercise id="fs-id1170653881704">
+<problem id="fs-id1170653881706">
+<para id="fs-id1170653881708"><m:math><m:mrow><m:mi>m</m:mi><m:mo>+</m:mo><m:mi>n</m:mi></m:mrow></m:math> જ્યારે<newline /><m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>−15</m:mn><m:mo>,</m:mo><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654212282">
+<para id="fs-id1170654212284"><m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654285904">
+<problem id="fs-id1170654285906">
+<para id="fs-id1170654285908"><m:math><m:mrow><m:mi>p</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow></m:math> જ્યારે<newline /><m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>−9</m:mn><m:mo>,</m:mo><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>17</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654138521">
+<problem id="fs-id1170654138524">
+<para id="fs-id1170654138526"><m:math><m:mrow><m:mi>r</m:mi><m:mo>+</m:mo><m:mi>s</m:mi></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−9</m:mn><m:mo>,</m:mo><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>−7</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653881340">
+<para id="fs-id1170653881342"><m:math><m:mrow><m:mn>−16</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653881351">
+<problem id="fs-id1170653881353">
+<para id="fs-id1170653881355"><m:math><m:mrow><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>u</m:mi></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mo>,</m:mo><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>−5</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652622829">
+<problem id="fs-id1170652622831">
+<para id="fs-id1170652622833"><m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math> જ્યારે<newline /><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>14</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654238153">
+<para id="fs-id1170654238156">121</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654238161">
+<problem id="fs-id1170654238163">
+<para id="fs-id1170654238165"><m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math> જ્યારે<newline /><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652631952">
+<problem id="fs-id1170652631954">
+<para id="fs-id1170652631956"><m:math><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>17</m:mn></m:mrow></m:math> જ્યારે</para> <list id="fs-id1169211202566" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow></m:math></item><item><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn></m:mrow></m:math></item></list>
+</problem>
+<solution id="fs-id1170652621604">
+<list id="fs-id1189211202566" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 1 </item><item><span class="token">ⓑ</span> 33</item></list>
+</solution>
+</exercise>
+<exercise id="fs-id1170652621612">
+<problem id="fs-id1170652621614">
+<para id="fs-id1170652621616"><m:math><m:mrow><m:mn>−5</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>14</m:mn></m:mrow></m:math> જ્યારે<newline /><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math><newline /><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654285156">
+<problem id="fs-id1170654285158">
+<para id="fs-id1170654285160"><m:math><m:mrow><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>m</m:mi></m:mrow></m:math> જ્યારે<newline /><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math><newline /><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>−5</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654285947">
+<para id="fs-id1170654285949"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−5</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 25</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654285960">
+<problem id="fs-id1170654285962">
+<para id="fs-id1170654285964"><m:math><m:mrow><m:mn>18</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>n</m:mi></m:mrow></m:math> જ્યારે<newline /><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math><newline /><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653880492">
+<problem id="fs-id1170653880494">
+<para id="fs-id1170653880496"><m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>w</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>w</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow></m:math> જ્યારે<newline /><m:math><m:mrow><m:mi>w</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652622992">
+<para id="fs-id1170652622994">21</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652622999">
+<problem id="fs-id1170652623002">
+<para id="fs-id1170652623004"><m:math><m:mrow><m:mn>3</m:mn><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>u</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654236743">
+<problem id="fs-id1170654236745">
+<para id="fs-id1170654236747"><m:math><m:mrow><m:mn>9</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>b</m:mi><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow></m:math> જ્યારે<newline /><m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654154248">
+<para id="fs-id1170654154250"><m:math><m:mrow><m:mn>−56</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654154258">
+<problem id="fs-id1170654154261">
+<para id="fs-id1170654154263"><m:math><m:mrow><m:mn>7</m:mn><m:mi>m</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math> જ્યારે<newline /><m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>−9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654286384"><emphasis effect="bold">અંગ્રેજી શબ્દસમૂહોને બીજગણિતીય પદાવલીઓમાં ફેરવો</emphasis></para>
+<para id="fs-id1166418098647">નીચેના અભ્યાસમાં, બીજગણિતીય પદાવલીમાં ફેરવો અને શક્ય હોય તો સરળ બનાવો.</para>
+<exercise id="fs-id1170654230021">
+<problem id="fs-id1170654230023">
+<para id="fs-id1170654230025">3 અને <m:math><m:mrow><m:mn>−15</m:mn><m:mo>,</m:mo></m:mrow></m:math> એ બંનેના સરવાળામાં 7 ઉમેરો</para>
+</problem>
+<solution id="fs-id1170654230037">
+<para id="fs-id1170654230039"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−15</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>;</m:mo><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652620034">
+<problem id="fs-id1170652620036">
+<para id="fs-id1170652620038">આ બે સંખ્યાઓ લો: <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−9</m:mn><m:mo>,</m:mo></m:mrow></m:math> એ બંનેના સરવાળામાં 23 ઉમેરો</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652629793">
+<problem id="fs-id1170652629795">
+<para id="fs-id1170652629798">આ સંખ્યાઓનો તફાવત: 10 અને <m:math><m:mrow><m:mn>−18</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652629806">
+<para id="fs-id1170652629808"><m:math><m:mrow><m:mn>10</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−18</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mn>28</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652629996">
+<problem id="fs-id1170652629998">
+<para id="fs-id1170652630000">11ને આ સંખ્યામાંથી બાદ કરો: <m:math><m:mrow><m:mn>−25</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654285978">
+<problem id="fs-id1170654285981">
+<para id="fs-id1170654285983">તફાવત: <m:math><m:mrow><m:mn>−5</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−30</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654285997">
+<para id="fs-id1170654286000"><m:math><m:mrow><m:mn>−5</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−30</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mn>25</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654285034">
+<problem id="fs-id1170654285036">
+<para id="fs-id1170654285039">બાદ કરો: <m:math><m:mrow><m:mn>−6</m:mn></m:mrow></m:math>ને આ સંખ્યામાંથી: <m:math><m:mrow><m:mn>−13</m:mn></m:mrow></m:math>.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652631848">
+<problem id="fs-id1170652631850">
+<para id="fs-id1170652631852">આ સંખ્યાઓના ગુણાકારનું પરિણામ: <m:math><m:mrow><m:mtext>−3 અને 15</m:mtext></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654285185">
+<para id="fs-id1170654285188"><m:math><m:mrow><m:mn>−3</m:mn><m:mo>·</m:mo><m:mn>15</m:mn><m:mo>;</m:mo><m:mo>−</m:mo><m:mn>45</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654285207">
+<problem id="fs-id1170654285209">
+<para id="fs-id1170654285211">આ સંખ્યાઓના ગુણાકારનું પરિણામ: <m:math><m:mrow><m:mtext>−4 અને 16</m:mtext><m:mspace width="0.2em" /></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654286622">
+<problem id="fs-id1170654286625">
+<para id="fs-id1170654286627">આ સંખ્યાઓનું ભાગફળ: <m:math><m:mrow><m:mn>−60</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−20</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653880888">
+<para id="fs-id1170653880890"><m:math><m:mrow><m:mn>−60</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−20</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653880914">
+<problem id="fs-id1170653880916">
+<para id="fs-id1170653880918">આ સંખ્યાઓનું ભાગફળ: <m:math><m:mrow><m:mn>−40</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−20</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653880562">
+<problem id="fs-id1170653880564">
+<para id="fs-id1170653880566">ભાગાકાર: <m:math><m:mrow><m:mn>−6</m:mn></m:mrow></m:math>ને <emphasis effect="italics">a</emphasis> અને <emphasis effect="italics">b</emphasis>ના સરવાળા વડે ભાગો.</para>
+</problem>
+<solution id="fs-id1170652631288">
+<para id="fs-id1170652631290"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>−6</m:mn></m:mrow><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652631309">
+<problem id="fs-id1170652622736">
+<para id="fs-id1170652622738">ભાગાકાર: <m:math><m:mrow><m:mn>−7</m:mn></m:mrow></m:math>ને <emphasis effect="italics">m</emphasis> અને <emphasis effect="italics">n</emphasis>ના સરવાળા વડે ભાગો.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654159475">
+<problem id="fs-id1170654159478">
+<para id="fs-id1170654159480">ગુણાકારનું પરિણામ: <m:math><m:mrow><m:mn>−10</m:mn></m:mrow></m:math>ને <m:math><m:mrow><m:mi>p</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>q</m:mi></m:mrow></m:math>ના તફાવત વડે ગુણો.</para>
+</problem>
+<solution id="fs-id1170654159503">
+<para id="fs-id1170654159505"><m:math><m:mrow><m:mn>−10</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mi>q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653879555">
+<problem id="fs-id1170653879557">
+<para id="fs-id1170653879559">ગુણાકારનું પરિણામ: <m:math><m:mrow><m:mn>−13</m:mn></m:mrow></m:math>ને <m:math><m:mrow><m:mi>c</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi></m:mrow></m:math>ના તફાવત વડે ગુણો.</para>
+</problem>
+</exercise>
+<para id="fs-id1170654149968"><emphasis effect="bold">વ્યવહારુ પ્રશ્નોમાં પૂર્ણાંકોનો ઉપયોગ કરો</emphasis></para>
+<para id="fs-id1166423907674">નીચેના અભ્યાસમાં, ઉકેલો.</para>
+<exercise id="fs-id1170654149974" class="material-set-2">
+<problem id="fs-id1170654149977">
+<para id="fs-id1170654149979"><emphasis effect="bold">તાપમાન</emphasis> જાન્યુઆરીની તારીખ <m:math><m:mrow><m:mn>15</m:mn><m:mo>,</m:mo></m:mrow></m:math> કેલિફોર્નિયાના ઍનહાઇમમાં મહત્તમ તાપમાન હતું <m:math><m:mrow><m:mn>84</m:mn><m:mtext>°</m:mtext><m:mo>.</m:mo></m:mrow></m:math> એ જ દિવસે મિનેસોટાના ઍમ્બૅરસમાં મહત્તમ તાપમાન હતું <m:math><m:mrow><m:mn>−12</m:mn><m:mtext>°</m:mtext><m:mo>.</m:mo></m:mrow></m:math> ઍનહાઇમ અને ઍમ્બૅરસના તાપમાન વચ્ચે કેટલો તફાવત હતો?</para>
+</problem>
+<solution id="fs-id1170652621008">
+<para id="fs-id1170652621010"><m:math><m:mrow><m:mn>96</m:mn><m:mtext>°</m:mtext></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652621021" class="material-set-2">
+<problem id="fs-id1170652622018">
+<para id="fs-id1170652622020"><emphasis effect="bold">તાપમાન</emphasis> જાન્યુઆરીની તારીખ <m:math><m:mrow><m:mn>21</m:mn><m:mo>,</m:mo></m:mrow></m:math> કેલિફોર્નિયાના પામ સ્પ્રિંગ્સમાં મહત્તમ તાપમાન હતું <m:math><m:mrow><m:mn>89</m:mn><m:mtext>°</m:mtext><m:mo>,</m:mo></m:mrow></m:math> અને ન્યૂ હૅમ્પશાયરના વ્હાઇટફીલ્ડમાં મહત્તમ તાપમાન હતું <m:math><m:mrow><m:mn>−31</m:mn><m:mtext>°</m:mtext><m:mo>.</m:mo></m:mrow></m:math> પામ સ્પ્રિંગ્સ અને વ્હાઇટફીલ્ડના તાપમાન વચ્ચે કેટલો તફાવત હતો?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654164670" class="material-set-2">
+<problem id="fs-id1170654164672">
+<para id="fs-id1170654164674"><emphasis effect="bold">ફૂટબૉલ</emphasis> ફર્સ્ટ ડાઉન વખતે ચાર્જર્સ ટીમનો બૉલ તેમની 25 યાર્ડની રેખા પર હતો. ફર્સ્ટ ડાઉનની રમતમાં 6 યાર્ડ ગુમાવ્યા, સેકન્ડ ડાઉનની રમતમાં 10 યાર્ડ મેળવ્યા અને થર્ડ ડાઉનની રમતમાં 8 યાર્ડ ગુમાવ્યા. થર્ડ ડાઉનની રમત પૂરી થતાં બૉલ કઈ યાર્ડ રેખા પર હતો?</para>
+</problem>
+<solution id="fs-id1170654164684">
+<para id="fs-id1170654164686">21</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654164692" class="material-set-2">
+<problem id="fs-id1170654164694">
+<para id="fs-id1170654164696"><emphasis effect="bold">ફૂટબૉલ</emphasis> ફર્સ્ટ ડાઉન વખતે સ્ટીલર્સ ટીમનો બૉલ તેમની 30 યાર્ડની રેખા પર હતો. ફર્સ્ટ ડાઉનની રમતમાં 9 યાર્ડ મેળવ્યા, સેકન્ડ ડાઉનની રમતમાં 14 યાર્ડ ગુમાવ્યા અને થર્ડ ડાઉનની રમતમાં 2 યાર્ડ ગુમાવ્યા. થર્ડ ડાઉનની રમત પૂરી થતાં બૉલ કઈ યાર્ડ રેખા પર હતો? </para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653879466" class="material-set-2">
+<problem id="fs-id1170653879468">
+<para id="fs-id1170653879470"><emphasis effect="bold">ચેકિંગ ખાતું</emphasis> માયરાના ચેકિંગ ખાતામાં $124 છે. તે $152નો ચેક લખે છે. તેના ખાતામાં નવી બાકી રકમ કેટલી થાય?</para>
+</problem>
+<solution id="fs-id1170653879480">
+<para id="fs-id1170653879482"><m:math><m:mrow><m:mtext>−</m:mtext><m:mn>$28</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653879493" class="material-set-2">
+<problem id="fs-id1170652633018">
+<para id="fs-id1170652633020"><emphasis effect="bold">ચેકિંગ ખાતું</emphasis> સેલિનાના ચેકિંગ ખાતામાં $165 છે. તે $207નો ચેક લખે છે. તેના ખાતામાં નવી બાકી રકમ કેટલી થાય?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652633042" class="material-set-2">
+<problem id="fs-id1170652633044">
+<para id="fs-id1170652633046"><emphasis effect="bold">ચેકિંગ ખાતું</emphasis> ડિઓન્ટ્રેના ચેકિંગ ખાતામાં બાકી રકમ <m:math><m:mrow><m:mtext>−</m:mtext><m:mn>$38</m:mn></m:mrow></m:math> છે. તે ખાતામાં $225 જમા કરાવે છે. નવી બાકી રકમ કેટલી થાય?</para>
+</problem>
+<solution id="fs-id1170652631607">
+<para id="fs-id1170652631610">$187</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652631615" class="material-set-2">
+<problem id="fs-id1170652631617">
+<para id="fs-id1170652631619"><emphasis effect="bold">ચેકિંગ ખાતું</emphasis> રેમોન્ટેના ચેકિંગ ખાતામાં બાકી રકમ <m:math><m:mrow><m:mtext>−</m:mtext><m:mn>$49</m:mn></m:mrow></m:math> છે. તે ખાતામાં $281 જમા કરાવે છે. નવી બાકી રકમ કેટલી થાય?</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170652631644" class="everyday">
+<title>રોજિંદા જીવનનું ગણિત</title>
+<exercise id="fs-id1170652631649">
+<problem id="fs-id1170652631889">
+<para id="fs-id1170652631891"><emphasis effect="bold">શેરબજાર</emphasis> હેવિયરની પાસે એક કંપનીના 300 શેર છે. મંગળવારે શેરના ભાવમાં પ્રતિ શેર $12નો ઘટાડો થયો. હેવિયરના શેરપોર્ટફોલિયો પર કુલ કેટલી અસર થઈ?</para>
+</problem>
+<solution id="fs-id1170652631901">
+<para id="fs-id1170652631903"><m:math><m:mrow><m:mtext>−</m:mtext><m:mn>$3600</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652631914">
+<problem id="fs-id1170652631916">
+<para id="fs-id1170652631918"><emphasis effect="bold">વજનમાં ઘટાડો</emphasis> આહાર કાર્યક્રમના પહેલા અઠવાડિયામાં આઠ સ્ત્રીઓનું વજન સરેરાશ પ્રત્યેકનું 3 પાઉન્ડ ઘટ્યું. આઠેય સ્ત્રીઓના વજનમાં કુલ કેટલો ફેરફાર થયો?</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170652629835" class="writing">
+<title>લેખન અભ્યાસ</title>
+<exercise id="fs-id1170652629841">
+<problem id="fs-id1170652629843">
+<para id="fs-id1170652629845">પૂર્ણાંકોના ગુણાકારના નિયમો તમારા શબ્દોમાં લખો.</para>
+</problem>
+<solution id="fs-id1170652629849">
+<para id="fs-id1170652629852">જવાબો જુદા હોઈ શકે છે.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652629857">
+<problem id="fs-id1170652629859">
+<para id="fs-id1170652629861">પૂર્ણાંકોના ભાગાકારના નિયમો તમારા શબ્દોમાં લખો.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653880680">
+<problem id="fs-id1170653880682">
+<para id="fs-id1170653880684">શા માટે <m:math><m:mrow><m:mtext>−</m:mtext><m:msup><m:mn>2</m:mn><m:mn>4</m:mn></m:msup><m:mo>≠</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:msup><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653880715">
+<para id="fs-id1170653880717">જવાબો જુદા હોઈ શકે છે.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653880723">
+<problem id="fs-id1170653880725">
+<para id="fs-id1170652631175">શા માટે <m:math><m:mrow><m:mtext>−</m:mtext><m:msup><m:mn>4</m:mn><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170652631215">
+<title>સ્વમૂલ્યાંકન</title>
+<para id="fs-id1170652631561"><span class="token">ⓐ</span> અભ્યાસ પૂરો કર્યા પછી, આ વિભાગનાં ઉદ્દેશ્યો તમે કેટલાં સિદ્ધ કર્યાં છે તે આ યાદીની મદદથી તપાસો.</para>
+<media id="fs-id1170652631573" alt="ચાર સ્તંભ અને સાત હરોળવાળો કોષ્ટક છે. સ્તંભનાં મથાળાં છે: ‘હું … કરી શકું છું’, ‘વિશ્વાસપૂર્વક’, ‘થોડી મદદથી’ અને ‘ના—મને સમજાતું નથી!’ પહેલા સ્તંભમાં ‘પૂર્ણાંકોનો ગુણાકાર કરવો’, ‘પૂર્ણાંકોનો ભાગાકાર કરવો’, ‘પૂર્ણાંકોવાળી પદાવલીઓને સરળ બનાવવી’, ‘પૂર્ણાંકોવાળી ચલ પદાવલીઓની કિંમત શોધવી’, ‘અંગ્રેજી શબ્દસમૂહોને બીજગણિતીય પદાવલીઓમાં ફેરવવા’ અને ‘વ્યવહારુ પ્રશ્નોમાં પૂર્ણાંકોનો ઉપયોગ કરવો’ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_04_201_img_new.jpg" />
+</media>
+<para id="fs-id1170652631580"><span class="token">ⓑ</span> આ યાદીમાં આપેલા તમારા જવાબોને ધ્યાનમાં લેતાં, 1–10ના માપક્રમ પર આ વિભાગમાં તમારા પ્રભુત્વને કેટલા ગુણ આપશો? તેમાં સુધારો કેવી રીતે કરી શકો?</para>
+</section>
+</section>
+</content>
+</document>

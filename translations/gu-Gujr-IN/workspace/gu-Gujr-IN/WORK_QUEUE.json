@@ -1,0 +1,36 @@
+{
+  "schema": "gujarati-worker-boundaries-v1",
+  "assignment_complete": false,
+  "rule": "A bounded subtask or commit is progress. Continue the entire157-module A00/A10 assignment and AX-1/AX-3 workflow. Update ownership before taking over another worker's files.",
+  "workers": {
+    "root": {
+      "role": "Integrate frozen A00:m81277 and AX-1:A00:m81276 after resolving reader metadata/bridge blockers; then continue omitted-answer and AX workflows",
+      "source_modules": []
+    },
+    "a00_exercises": {
+      "role": "Translate full A00:m81278; m81277 is frozen for root integration",
+      "source_modules": [
+        "A00:m81278"
+      ],
+      "next": "Verify next full collection module"
+    },
+    "a10_whole_numbers": {
+      "role": "Translate full A10:m82463; m82461 and m82462 are integrated",
+      "source_modules": [
+        "A10:m82463"
+      ],
+      "next": "Verify next full collection module",
+      "workflow_modules": []
+    },
+    "a00_place_value": {
+      "role": "Returned frozen AX-1:A00:m81276 figure bundle; no shared reader files owned",
+      "source_modules": [],
+      "workflow_modules": [],
+      "next": "Await root integration boundary before taking another AX-1 module"
+    }
+  },
+  "frozen_awaiting_root_integration": {
+    "A00:m81277": "Complete source reader package; recipe/normalizer integration blockers identified",
+    "AX-1:A00:m81276": "Twelve language-bearing figure equivalents frozen for root integration"
+  }
+}

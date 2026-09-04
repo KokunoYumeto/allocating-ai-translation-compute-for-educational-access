@@ -1,0 +1,117 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81291",
+  "section": "fs-id2146075",
+  "resolved_title": "Solve Equations with Fractions using the Addition, Subtraction, and Division Properties of Equality",
+  "scope": "Entire assigned subtree: equality-property table and explanation, three worked examples with verification, all six practice exercises and all nine supplied solutions, sixteen source raster fragments, all table labels/descriptions and three link labels.",
+  "source_sha256": "729ab266737111c7cdd795ca6ddd887c41a9efcb2e802ab6ae46adfe3c13a195",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["WB09", "WB10", "TR02", "TR03"],
+      "read": ["downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p226.txt:19-43", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt:9-24", "languages/bn-Beng-IN/terminology.tsv:T041-T043"],
+      "decision": "Actually reopen WBp227 OCR and page image for the same-operation rule and6x/6=24/6, x=4. Reread WBp226's definition of a solution through equal sides, and TRp51's equivalent/simplest-form passages. Use দুই পক্ষ, মান বসাও and সমতা বজায় থাকে. The formal property names follow the ledger and remain editorial; the actual Bengali witness attests the rule, not those exact formal names. Preserve the source c≠0 condition and make it explicit in prose."
+    },
+    {
+      "stage": "during worked-step drafting and reduction review",
+      "examples": ["WB10", "TR02", "TR03"],
+      "read": ["downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt:9-24", "all sixteen original028/029 raster fragments listed below"],
+      "decision": "Return to the actual same-operation wording and fraction simplification passage after drafting. Inspect every source raster, preserving both signed subtraction/addition and test-of-equality symbols. Correct the source preposition Addfromeachside to the mathematically supported দুই পক্ষেই যোগ করো. Do not suggest subtracting a term on one side cancels a term on the other: the left-side inverse pair alone gives zero."
+    },
+    {
+      "stage": "pre-admission canon and domain review",
+      "examples": ["WB09", "WB10", "TR02", "TR03"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.txt:1-7", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p226.txt:19-43"],
+      "decision": "Reinspect the actual fraction page and reread the equation/checking passages after all nine source answers passed exact substitution checks. Retain অশূন্য in the division rule, distinguish simplifying a fraction from solving an equation, and preserve the source's final improper answers. TRp51's unrelated erroneous mixed-conversion intermediate denominator is excluded. No further wording revision was needed."
+    }
+  ],
+  "editorial_decisions": [
+    {"source_ids": ["fs-id1816403", "eip-id1172107133172", "fs-id2371290"], "decision": "Preserve every original formula, including commas, periods, the empty MathML node in the subtraction row and c≠0 in the division row. Add a plain-language same-operation gloss beside each property and repeat the existing nonzero divisor condition in the prose recap; no restriction is imposed on a or b."},
+    {"source_ids": ["eip-id1165720941272", "eip-id1165721109263", "eip-id1168467284261"], "decision": "Preserve the original table hierarchy, cols=2, all three colspec nodes, nameend/namest attributes and entry order. The source's two-column declaration versus three colspecs was flagged to the parent for integration layout inspection, not silently repaired in the overlay."},
+    {"source_ids": ["eip-id1165721010728", "eip-id1165720712427"], "decision": "Describe actual red9/16 subtraction and red5/9 addition on both sides. Explain the left inverse pair yielding zero without implying terms on opposite sides can be independently cancelled."},
+    {"source_ids": ["fs-id1409559", "fs-id1334468", "eip-id1168467284261"], "decision": "A proposed answer is inserted into the original equation; question-mark equalities remain tests until both sides are evaluated. Keep negative signs and fraction values exactly."},
+    {"source_ids": ["fs-id2950035", "fs-id2265870", "fs-id2909220"], "decision": "Retain22/5,−19/3and23/2 as original improper-fraction answers. The source explicitly permits improper final form here; do not normalize to mixed form."},
+    {"source_ids": ["fs-id1405284", "fs-id2146789"], "decision": "Translate two prerequisite-link labels and the local previous-example link through unique nodes. Preserve all original document/target attributes. The local target exists in this subtree; external destinations have not been visited or certified available."}
+  ],
+  "source_errata": [
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": ["fs-id2371290", "eip-id1172107133172"],
+      "source_issue": "The prose recap says divide both sides by the same quantity without repeating the nonzero restriction that is correctly present in the immediately preceding formula.",
+      "bengali_correction": "দুই পক্ষকে একই অশূন্য সংখ্যা দিয়ে ভাগ করো; সংখ্যাটি শূন্য হতে পারবে না। এই শর্তটি মূল সারণিতেও দেওয়া আছে।",
+      "policy": "Make the existing source-formula domain explicit in Bengali prose and the summary; preserve the original c≠0 MathML without claiming the formula itself is wrong.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_prose_corrected",
+      "source_ids": ["eip-id1165721109263"],
+      "source_issue": "The worked instruction says Add5/9fromeachside although both its formula and intended operation add5/9toeachside.",
+      "bengali_correction": "বিয়োগের প্রভাব দূর করতে দুই পক্ষেই 5/9 যোগ করো।",
+      "policy": "Translate the preposition according to the correct original equation; retain all mathematical source tokens and raster pixels.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": ["eip-id1165719769134"],
+      "source_issue": "The English alt calls y=−1/4 a horizontal line; this worked-step image contains only the equation and no graph.",
+      "evidence": "Directly inspected CNX_BMath_Figure_04_07_028_img-04.png; only y=−1/4 is visible.",
+      "bengali_correction": "ভগ্নাংশটি লঘিষ্ঠ আকারে প্রকাশ করে সমাধান y = −1/4 পাওয়া যায়।",
+      "policy": "Describe the actual equation image, not an unpictured graph; preserve original pixels.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {"files": ["CNX_BMath_Figure_04_07_028_img-01.png", "CNX_BMath_Figure_04_07_028_img-02.png", "CNX_BMath_Figure_04_07_028_img-03.png", "CNX_BMath_Figure_04_07_028_img-04.png", "CNX_BMath_Figure_04_07_028_img-05.png", "CNX_BMath_Figure_04_07_028_img-06.png", "CNX_BMath_Figure_04_07_028_img-07.png", "CNX_BMath_Figure_04_07_028_img-08.png"], "observed": "Every actual image opened. Originaly+9/16=5/16; subtractred9/16bothsides; y+0=−4/16; y=−1/4withoutgraph; repeat original equation; red−1/4+9/16 ?=5/16; red−4/16+9/16 ?=5/16;5/16=5/16withtick."},
+    {"files": ["CNX_BMath_Figure_04_07_029_img-01.png", "CNX_BMath_Figure_04_07_029_img-02.png", "CNX_BMath_Figure_04_07_029_img-03.png", "CNX_BMath_Figure_04_07_029_img-04.png", "CNX_BMath_Figure_04_07_029_img-05.png", "CNX_BMath_Figure_04_07_029_img-06.png", "CNX_BMath_Figure_04_07_029_img-07.png", "CNX_BMath_Figure_04_07_029_img-08.png"], "observed": "Every actual image opened. Originala−5/9=−8/9; addred5/9bothsides; a+0=−3/9; a=−1/3; repeat original equation; red−1/3−5/9 ?=−8/9; red−3/9−5/9 ?=−8/9;−8/9=−8/9withtick."}
+  ],
+  "answer_checks": [
+    {"exercise_id": "fs-id1966768", "solution_id": "fs-id1302617", "result": "−1/4", "check": "Sourcey+9/16=5/16. Both solving stages5/16−9/16=−4/16=−1/4and check−1/4+9/16=−4/16+9/16=5/16 verified, including all actual raster steps."},
+    {"exercise_id": "fs-id2820442", "solution_id": "fs-id3399383", "result": "−1/2", "check": "Exact sourcey+11/12=5/12; substitute−1/2and both sides are5/12. Original MathML answer parsed and matched."},
+    {"exercise_id": "fs-id1760952", "solution_id": "fs-id1701840", "result": "−4/15", "check": "Exact sourcey+8/15=4/15; substitute−4/15and both sides are4/15. Original MathML answer parsed and matched."},
+    {"exercise_id": "fs-id1340193", "solution_id": "fs-id1351094", "result": "−1/3", "check": "Sourcea−5/9=−8/9. Both solving stages−8/9+5/9=−3/9=−1/3and check−1/3−5/9=−3/9−5/9=−8/9 verified, including all actual raster steps."},
+    {"exercise_id": "fs-id1562578", "solution_id": "fs-id2686947", "result": "−1", "check": "Exact sourcea−3/5=−8/5; substitute−1and both sides are−8/5. Original plain-text numerical answer retained and matched."},
+    {"exercise_id": "fs-id2268748", "solution_id": "fs-id2134538", "result": "−6/7", "check": "Exact sourcen−3/7=−9/7; substitute−6/7and both sides are−9/7. Original MathML answer parsed and matched."},
+    {"exercise_id": "fs-id1473226", "solution_id": "fs-id2805153", "result": "22/5", "check": "Exact source10q=44;44/10=22/5and10×22/5=2×22=44. The crossed10and5and red-free reduced factor2 in source MathML are preserved. Final44=44check and improper-form conclusion agree."},
+    {"exercise_id": "fs-id2340012", "solution_id": "fs-id2472141", "result": "−19/3", "check": "Exact source12u=−76; substitute−19/3and both sides are−76. Original MathML answer parsed and matched."},
+    {"exercise_id": "fs-id1883601", "solution_id": "fs-id1515598", "result": "23/2", "check": "Exact source8m=92; substitute23/2and both sides are92. Original MathML answer parsed and matched."}
+  ],
+  "language_gaps": ["WBp227 directly attests the same-operation rule and division of both sides by6, not the exact formal property labels. The current canon does not directly provide these negative fractional equation examples. The wording is a documented editorial extension of WB09/WB10 and the fraction witnesses, not a fabricated local example.", "LCD wording remains provisional. Independent West Bengal language, teacher, learner and assistive-technology review remains pending; no certification or full-topic coverage claim is made."],
+  "accessibility_refinement": {
+    "date": "2026-08-31",
+    "reason": "Parent peer-review criterion: name numerator and denominator at the first appearance of each distinct fraction in raster alt text.",
+    "consultations": [
+      {"stage": "before", "read": ["SCERT-Tripura-VI/p050.txt", "SCERT-Tripura-VI/p050.png", "WB-Class7-Learning-Bridge/p181.txt:31-39"], "decision": "Use actual TR01 and WB02 wording লব ও হর, not slash notation alone."},
+      {"stage": "during", "read": ["SCERT-Tripura-VI/p050.txt:3-10", "WB-Class7-Learning-Bridge/p181.txt:31-38"], "decision": "Explain each new signed fraction's numerator, denominator and outer sign without changing the equation."},
+      {"stage": "pre-QA", "read": ["SCERT-Tripura-VI/p050.txt:3-10", "WB-Class7-Learning-Bridge/p181.txt:31-38", "CNX_BMath_Figure_04_07_028_img-03.png"], "decision": "Actual image confirms the minus lies outside4/16, unlike the negative numerator in multiplication example030-06. Keep these descriptions distinct."}
+    ],
+    "changed_media_ids": ["eip-id1165721010700", "eip-id1165719769115", "eip-id1165719769134", "eip-id1165721134827", "eip-id1165720945679", "eip-id1165720945698"],
+    "distinct_fraction_forms": ["9/16", "5/16", "−4/16", "−1/4", "5/9", "−8/9", "−3/9", "−1/3"],
+    "result": "Six alt entries refined. Original math/pixels/IDs and all prior exact answer checks retained; source_errata still mirror the overlay. Read-only translated/render gate passed. Parent refreshed visual review and independent AT validation remain pending."
+  },
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "d74155db73e4fab7e040f01d38e7eb94539614560bdcf7c07512380b8712f6fa",
+    "method": "Read-only build.translated() and in-memory render_cnxml(study_labels=True), exact exercise/solution-ID relation, HTML-ID uniqueness, source/target structure and mathematical signature gate. All nine provided answers checked by exact rational substitution into equations read directly from source XML; six simple practice answers also parsed directly from source. All three worked solving/checking sequences checked and sixteen raster fragments viewed. Seventy bounded exact equality-property checks included zero operands and excluded zero divisors; this is a check, not a proof by sampling. No shared-script/media/generated-output writes.",
+    "nodes": 548,
+    "ids": 81,
+    "mathml": 39,
+    "linguistic_mtext_replacements": 0,
+    "paragraphs": 23,
+    "paragraph_mappings": 17,
+    "node_slot_mappings": 29,
+    "examples": 3,
+    "exercises": 9,
+    "supplied_solutions": 9,
+    "source_absent_solutions": 0,
+    "images": 16,
+    "tables": 4,
+    "translated_aria_labels": 2,
+    "translated_summaries": 2,
+    "links": 3,
+    "html_fragment_characters": 20797,
+    "english_prose_gate": "passed",
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integration and actual desktop/narrow visual review remain required. Continue safe read-only verification and request the next owned block; the whole assignment remains active.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

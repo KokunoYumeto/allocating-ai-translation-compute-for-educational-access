@@ -1,0 +1,111 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81293",
+  "section": "fs-id1742151",
+  "scope": "Entire Key Concepts section:5top-level concepts and20nested method steps; no source key group added or omitted.",
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR10",
+        "TR11"
+      ],
+      "read": [
+        "languages/bn-Beng-IN/canon/README.md",
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "languages/bn-Beng-IN/terminology.tsv:T045-T052",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt"
+      ],
+      "decision": "Actualp8supports Indian/international naming: retain source international comma grouping and add labelled Indian equivalent. Actualp9islexical আসন্নমান witnessandprints4117→4100/4000;OCR40900excluded. TR08/09supportdecimalplacesand ordinary Bengali digit-by-digit reading,not universal tie rules."
+    },
+    {
+      "stage": "during drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR10",
+        "TR11"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.txt:27-40",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.txt:3-9",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:4-24"
+      ],
+      "decision": "Returntoactualname,estimationanddecimal-readingwitnesseswhiletranslating. Preserve zerosandsource numbers. English‘and’decimal naming is labelled as a source-language alternative beside ordinary Bengali‘দশমিক’digitreading. No local negative-rounding or tie exemplar fabricated."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": [
+        "TR09",
+        "TR10",
+        "TR11"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.txt:31-39",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.txt:3-8",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:4-11",
+        "exact source subtree and built Bengali output"
+      ],
+      "decision": "RereadonlyrelevantOCRanchorsafterdraft; actualpageimages alreadycontrol numerictruth. Check exact child counts,order,IDs,links,answersandMathMLthroughread-onlygate. Indian4,926,015readingand748→750verified; keyconditionsmatchfullycheckedinstructionalblocks."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "eip-id1170322956760"
+      ],
+      "source_issue": "The conversion summary omits finite-decimal,zero-fractional-partandnegative-signboundariesandcalls the denominator the place value.",
+      "bengali_correction": "সসীম দশমিক, পূর্ণসংখ্যা-ফল, পুরো ফলের ঋণচিহ্ন এবং10/100/1000হর স্পষ্ট করা হয়েছে।",
+      "policy": "Mirror the fully checked instructional clarification; preserve source step count and hierarchy.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "eip-id1170325313990"
+      ],
+      "source_issue": "The ordering summary omits sign,whole-partandequalitychecks.",
+      "bengali_correction": "আগে চিহ্ন ও পূর্ণসংখ্যার অংশ; ঋণাত্মক জোড়ায় মানের ক্রম উল্টো; সমান হলে=।",
+      "policy": "Mirror the checked ordering conditions without altering source mathematical content.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_rounding_convention_clarified",
+      "source_ids": [
+        "eip-id1170325314005"
+      ],
+      "source_issue": "The rounding summary omits signed extension,carry,trailing-zeropreservationandindependent-roundingconditions.",
+      "bengali_correction": "ties-away-from-zeroextensionlabelled;carry,original-valueandrequired-zero rules explicit.",
+      "policy": "Mirror the checked rounding clarifications; do not attribute tie convention toTR11.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "checks": [
+    "All5source key-concept groups and20nested steps translated in exact order. Conversion,orderingandroundingconditions mirror the exact checks in owned instructional records; name/write explicitly distinguish sourceEnglish‘অ্যান্ড’place-value method fromordinaryBengalidigitreading."
+  ],
+  "language_gaps": [
+    "TR10andTR11areIndianBengaliregisterwitnesses,notWestBengalcurriculumcertification. TR11doesnotdirectlywitnessdecimalnegative/tie/carryrules;those remainlabellededitorialwherepresent.",
+    "IndependentWestBengallanguage,teacher,learnerandassistive-technologyvalidationpending."
+  ],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "afe4d40e1ff4902b7332d9b088762c892e60a8b2ca999506f6a323838b31c338",
+    "method": "Read-onlybuild.translatedandin-memoryrender_cnxml(study_labels=True)passedexactsource tags/IDs/order/nonlocalizedattributes/MathMLandEnglish-prosegate. All5source key-concept groups and20nested steps translated in exact order. Conversion,orderingandroundingconditions mirror the exact checks in owned instructional records; name/write explicitly distinguish sourceEnglish‘অ্যান্ড’place-value method fromordinaryBengalidigitreading.",
+    "nodes": 44,
+    "ids": 7,
+    "mathml": 0,
+    "html_fragment_characters": 4067,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parentintegratesandperformsactualdesktop/narrowvisualreview. Entireassignmentcontinues;noindependentpush/publishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

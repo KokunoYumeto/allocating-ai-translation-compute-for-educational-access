@@ -1,0 +1,30 @@
+{
+  "unit":"A10-003",
+  "module":"m82452",
+  "status":"bounded_visual_review_pass_with_limitations",
+  "recorded_date":"2026-08-31",
+  "browser":"Codex in-app Chromium",
+  "reader_sha256":"172b74375fa4cd028e88bdb80baa5c3d8ba6b12fb12a3ae6f0f1cc1803a83869",
+  "structural_checks":2683,
+  "source_coverage":"Standalone variables paragraph newelem_para01 and complete divisibility section fs-id1170655199097; 178 source keys/scaffolds, 40 IDs, 148 table cells, three MathML trees, two original JPEGs. Next fs-id1170655247410 remains outside.",
+  "viewports":[{"requested_width":1024,"requested_height":800,"document_client_width":1009,"document_scroll_width":1009},{"requested_width":390,"requested_height":844,"document_client_width":375,"document_scroll_width":375}],
+  "observations":[
+    "The preceding standalone paragraph is present and retains the seven isolated italic Latin variables a,b,c,m,n,x,y. It was not skipped to start at the section heading.",
+    "The multiples grid has thirteen genuine column headers and nine functionally appropriate row headers; all 108 numeric products remain ordinary cells. At initial mobile scroll zero, the complete row labels and first numeric columns are visible.",
+    "The grid is 819.996px wide within a 340px region. Pointer horizontal scrolling reached 480.1587219238281px and exposed columns 7 through 12, including the final 120. The page remains 375px wide. All ten displayed rows remain in their original order, including multiples of 10 despite the source prose's narrower 2–9 wording.",
+    "The 660px worked table shows all nine left-column instructions and retains four intentionally empty right cells. DOM reading confirms source 5,625 steps, digit sum 18 and divisibility results without invented headers.",
+    "Both Try It questions and supplied answers were read in the desktop DOM and screenshot: 4,962 is divisible by 2,3,6 among the offered tests; 3,765 by 3,5. No whole-page overflow. Original additions remain visibly separated.",
+    "Both original image sources loaded with natural dimensions 393×43 and 391×43. Source-derived asset and rendering checks are in the structural receipt; these bounded screenshots focus on the tables and answers rather than claiming every image pixel was visually reviewed here."
+  ],
+  "screenshots":{
+    "a10-unit-003-grid-left-mobile.jpg":{"sha256":"9a944dd42ff1703b32f542c5f07363e2b3f4faa30aaa8617575a64e74c38a32d","pixels":[375,537]},
+    "a10-unit-003-grid-right-mobile.jpg":{"sha256":"0d15044767d5f35c1fa80e5e34f958164a3098c7fbd925b5af68183bbd81686b","pixels":[375,537]},
+    "a10-unit-003-divisibility-mobile.jpg":{"sha256":"daddc54a52ebb9ee680d3f0f42d1cbb57cae51b793c31fe39c37c6819fe15e83","pixels":[375,537]},
+    "a10-unit-003-answers-desktop.jpg":{"sha256":"afb82c1cd6b60274968eec63fe2726bae8e35ae39c87018ed1a5035b31035fd1","pixels":[1009,568]}
+  },
+  "limitations":[
+    "Saved screenshots have bounded pixel dimensions different from requested viewport sizes; not exhaustive page/image review.",
+    "No native-speaker, mathematics-educator, screen-reader, keyboard-arrow, cross-browser or font-portability certification.",
+    "Source mathematical checks and preserved component notices are not a new rights audit or complete-module/book claim."
+  ]
+}

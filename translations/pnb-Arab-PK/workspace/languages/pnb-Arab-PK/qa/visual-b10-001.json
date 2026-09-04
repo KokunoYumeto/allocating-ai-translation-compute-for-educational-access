@@ -1,0 +1,43 @@
+{
+  "unit":"B10-001",
+  "status":"bounded_visual_review_pass_with_limitations",
+  "recorded_date":"2026-08-31",
+  "browser":"Codex in-app Chromium",
+  "final_reader_sha256":"cdc168b6c98db7e40cca2310786e7a2a3a5fa28fd072f5d16a533bf924664de9",
+  "structural_checks":11196,
+  "viewports":[{"requested_width":390,"requested_height":844,"document_client_width":375,"document_scroll_width":375},{"requested_width":1024,"requested_height":800,"document_client_width":1009,"document_scroll_width":1009}],
+  "observations":[
+    "The source interval[0,infinity) retains its square opening bracket and round closing parenthesis; the square function exponent renders correctly. Grouped sequence subscripts apply to the entire parenthesized sequence, not merely its closing fence.",
+    "Browser review caught source mtext spaces collapsing visually around English and. Scoped white-space:pre preserves exact text while increasing its visible width from32.8559 to41.8961px. Before/after evidence is retained.",
+    "Browser review caught plain italic N despite the legacy double-struck attribute. Derived rendering now uses U+2115 with mathvariant=normal, preserving exact source macro and TeX in annotations/ledgers. The corrected set-builder formula visibly distinguishes the natural-number set and separates5 and x.",
+    "The triangular-number fraction shows complete numerator n(n+1), denominator2 and subscript n. The Fibonacci recurrence retains n-1 and n-2 as whole subscripts, plus f1=1 and f2=1. Its299.510px content fits the340px mobile region.",
+    "Both original76x73 SVGs render at151.997x145.995px without mirroring or clipping. The sum-seven graph has edges1-6,2-5,3-4; the even-sum graph contains the odd and even triangles. Crossings have no extra vertices. Added descriptions are visibly labeled original, while both original descriptions remain source-bound.",
+    "Browser review caught the pure domino answer row reversed by inherited RTL. Its exact owner now has dir=ltr and unicode-bidi:isolate; source-order input positions increase67.690,123.189,178.689px. Filling source answers6,10,15 shows1,3,6,10,15,... left-to-right; the Punjabi question remains RTL. This was a local scratch-field test, not grading or saved learner work.",
+    "Opened the source answer/feedback disclosure; it explicitly says there is no automatic grading. Conditions6,10,15 remain paired with their separate source feedback and fallback conditions. The initial role=button selector did not match the native summary; clicking the observed summary element succeeded.",
+    "Clicked the first TeX link and verified #source-tex-001, then opened its disclosure. The exact raw[0,\\infty) is readable without a TeX runtime.",
+    "Final desktop view shows the complete2x6 sequence table at287.996px width: n,1,2,3,4,... and a_n,1,3,6,10,...; the following closed formula is readable. The page remains1009px wide."
+  ],
+  "screenshot_sha256":{
+    "b10-unit-001-answer-order-before-mobile.jpg":"abf97cd1f5205aae563fbcac0f15b8cefa95276c31514ed737fa3525b199e7be",
+    "b10-unit-001-answer-order-mobile.jpg":"01bf67a3f838883e972309c840ec4a1ca9e423b4be3df7691527de5b2d3e9a7b",
+    "b10-unit-001-even-graph-mobile.jpg":"8ed269cac31c2008e95727f5c41be845bc1d88e92214dd864d0ba0ba8d5d9852",
+    "b10-unit-001-feedback-mobile.jpg":"f4bee339048196526096eb49af1ba09fd741288ba0a09b6ea76520be706ed451",
+    "b10-unit-001-fraction-mobile.jpg":"039f1a97e4913516f2c4c0ef70412d7d83d2159894f355908bf877cda4e0f2b7",
+    "b10-unit-001-grouped-index-mobile.jpg":"2395704180c8e8fe40dc91bd1d265f09f0e85d60ae401600ce3de10dcb934668",
+    "b10-unit-001-interval-mobile.jpg":"c72484ccefc69fa31a404972f62e3e8c6379f74410c6d8d56d1a032cfce80e94",
+    "b10-unit-001-recurrence-mobile.jpg":"3d24ea270132dfd361ec86cf8f87d602ddea74ef55b86880a4e948cdff012daa",
+    "b10-unit-001-set-builder-mobile.jpg":"74b17c7e2f46c45b85f15e183d21b1f45d01844c3b2cf8a379b219dcd194edf9",
+    "b10-unit-001-set-spacing-before-mobile.jpg":"ae6814a96f34734d0878d50e5fb0630a2a1c9123df91beaac64cf5f232259308",
+    "b10-unit-001-seven-graph-mobile.jpg":"36102ecf788e310d808fe6f420af1aadff5864e88d8c8f9e89d2cad6e1b8d324",
+    "b10-unit-001-source-tex-mobile.jpg":"3aa5395681ab903554736f04c27a695ff7bacf406ea1bdddee46de9f151f50a9",
+    "b10-unit-001-table-desktop.jpg":"dda48d1d80cb63a839815c8ed04fbc542f6488b9d50aae0cef7fa6e9212cbd18"
+  },
+  "evidence_sequence":"Screenshots were captured during bounded review iterations, including explicitly named before-fix evidence. Unchanged source regions are not presented as screenshots all taken from one reader hash. The corrected answer-row and final desktop table views use the final reader; final source-bound QA checks all three fixes.",
+  "limitations":[
+    "Selected views, not a whole-chapter visual proofread or publication certification. Actual screenshot sizes differ from emulated viewport sizes.",
+    "No native Punjabi, educator, screen-reader, keyboard-navigation, cross-browser or font-portability certification.",
+    "Local response controls are unsaved scratch space. No interactive upstream engine or automatic assessment was implemented.",
+    "The parser supports only this reviewed TeX subset, not arbitrary LaTeX.105derived MathML owners are not105original source MathML trees.",
+    "Complete Chapter0 only; Chapter1 and the remainder of B10 and all five assigned works remain active."
+  ]
+}

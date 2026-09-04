@@ -1,0 +1,460 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<title>Graphing Piecewise-Defined Functions</title>
+<content>
+<section id="fs-id1165135440477">
+<title>Graphing Piecewise-Defined Functions</title>
+<para id="fs-id1165137409262">Sometimes, we come across a function that requires more than one formula in order to obtain the given output. For example, in the toolkit functions, we introduced the absolute value function <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> With a domain of all real numbers and a range of values greater than or equal to 0, <term class="no-emphasis" id="term-00010">absolute value</term> can be defined as the <term class="no-emphasis" id="term-00011">magnitude</term>, or <term class="no-emphasis" id="term-00012">modulus</term>, of a real number value regardless of sign. It is the distance from 0 on the number line. All of these definitions require the output to be greater than or equal to 0.</para><para id="fs-id1165137558775">If we input 0, or a positive value, the output is the same as the input.</para>
+<equation id="fs-id1165135194329" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mtext>if</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137529947">If we input a negative value, the output is the opposite of the input.</para>
+<equation id="fs-id1165133112779" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mtext>if</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137863778">Because this requires two different processes or pieces, the absolute value function is an example of a piecewise function. A <term id="term-00013">piecewise function</term> is a function in which more than one formula is used to define the output over different pieces of the domain.</para><para id="fs-id1165134042316">We use piecewise functions to describe situations in which a rule or relationship changes as the input value crosses certain “boundaries.” For example, we often encounter situations in business for which the cost per piece of a certain item is discounted once the number ordered exceeds a certain value. Tax brackets are another real-world example of piecewise functions. For example, consider a simple tax system in which incomes up to $10,000 are taxed at 10%, and any additional income is taxed at 20%. The tax on a total income <m:math>
+<m:mrow>
+<m:mi>S</m:mi></m:mrow>
+</m:math> would be <m:math>
+<m:mrow>
+<m:mn>0.1</m:mn><m:mi>S</m:mi></m:mrow>
+</m:math> if <m:math>
+ <m:mrow>
+  <m:mi>S</m:mi><m:mo>≤</m:mo><m:mtext>$</m:mtext><m:mn>10</m:mn><m:mtext>,</m:mtext><m:mn>000</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mtext>$</m:mtext><m:mn>1000</m:mn><m:mo>+</m:mo><m:mn>0.2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>S</m:mi><m:mo>−</m:mo><m:mtext>$</m:mtext><m:mn>10</m:mn><m:mtext>,</m:mtext><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> if <m:math>
+ <m:mrow>
+  <m:mi>S</m:mi><m:mo>&gt;</m:mo><m:mtext>$</m:mtext><m:mn>10</m:mn><m:mtext>,</m:mtext><m:mn>000.</m:mn>
+ </m:mrow>
+</m:math> </para><note id="fs-id1165137531241">
+
+<title>Piecewise Function</title>
+<para id="fs-id1165135504970">A piecewise function is a function in which more than one formula is used to define the output. Each formula has its own domain, and the domain of the function is the union of all these smaller domains. We notate this idea like this:</para>
+<equation id="fs-id1165137482244" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mtext>formula 1     if </m:mtext><m:mi>x</m:mi><m:mtext> is in domain 1</m:mtext>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mtext>formula 2     if </m:mtext><m:mi>x</m:mi><m:mtext> is in domain 2</m:mtext>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mtext>formula 3     if </m:mtext><m:mi>x</m:mi><m:mtext> is in domain 3</m:mtext>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:mrow></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137543841">In piecewise notation, the absolute value function is</para>
+<equation id="fs-id1165135190749" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>x</m:mi><m:mtext>    if  </m:mtext><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mo>−</m:mo><m:mi>x</m:mi><m:mtext>  if  </m:mtext><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:mrow></m:mrow>
+</m:math>
+</equation>
+</note>
+
+<note id="fs-id1165137768426" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137823161"><emphasis>Given a piecewise function, write the formula and identify the domain for each interval.
+</emphasis></para>
+<list id="fs-id1165135443772" list-type="enumerated" number-style="arabic">
+<item>Identify the intervals for which different rules apply.</item>
+<item>Determine formulas that describe how to calculate an output from an input in each interval.</item>
+<item>Use braces and if-statements to write the function.</item>
+</list>
+</note>
+
+<example id="Example_01_02_11">
+<exercise id="fs-id1165137452506">
+<problem id="fs-id1165135321994">
+<title>Writing a Piecewise Function</title>
+<para id="fs-id1165137834905">A museum charges $5 per person for a guided tour with a group of 1 to 9 people or a fixed $50 fee for a group of 10 or more people. Write a <term class="no-emphasis" id="term-00014">function</term> relating the number of people, <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> to the cost, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Since one cannot have fractions of a person, this is really a discrete function. However, for this exercise we will treat it as a continuous function.
+</para></problem>
+<solution id="fs-id1165137807421">
+<para id="fs-id1165135331729">Two different formulas will be needed. For <emphasis effect="italics">n</emphasis>-values under 10, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>n</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> For values of <m:math>
+<m:mrow>
+<m:mi>n</m:mi></m:mrow>
+</m:math> that are 10 or greater, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo>=</m:mo><m:mn>50.</m:mn></m:mrow>
+</m:math>
+</para>
+
+<equation id="fs-id1165135208951" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>n</m:mi></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>n</m:mi><m:mo>&lt;</m:mo><m:mn>10</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>50</m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>10</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</equation>
+</solution>
+<commentary id="fs-id1165135436578">
+<title>Analysis </title>
+<para id="fs-id1165135196985">The function is represented in <link target-id="Figure_01_02_021"/>. The graph is a diagonal line from <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> to <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow>
+</m:math> and a constant after that. In this example, the two formulas agree at the meeting point where <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> but not all piecewise functions have this property.</para><figure id="Figure_01_02_021" class="small">
+<media id="fs-id1165137419948" alt="Graph of C(n).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_021.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+<example id="Example_01_02_12">
+<exercise id="fs-id1165135436662">
+<problem id="fs-id1165135436664">
+<title>Working with a Piecewise Function</title>
+<para id="fs-id1165137938645">A cell phone company uses the function below to determine the cost, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> in dollars for <m:math>
+<m:mrow>
+<m:mi>g</m:mi></m:mrow>
+</m:math> gigabytes of data transfer.</para>
+<equation id="fs-id1165137660470" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>25</m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>g</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>25</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>g</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135193798">Find the cost of using 1.5 gigabytes of data and the cost of using 4 gigabytes of data.</para></problem>
+<solution id="fs-id1165135177567">
+<para id="fs-id1165134373545">To find the cost of using 1.5 gigabytes of data, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1.5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> we first look to see which part of the domain our input falls in. Because 1.5 is less than 2, we use the first formula.</para>
+
+<equation id="fs-id1165134300204" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1.5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>$</m:mtext><m:mn>25</m:mn>
+</m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135440213">To find the cost of using 4 gigabytes of data, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> we see that our input of 4 is greater than 2, so we use the second formula.</para>
+<equation id="fs-id1165135383665" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>25</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>$</m:mtext><m:mn>45</m:mn>
+</m:mrow>
+</m:math> </equation></solution>
+<commentary id="fs-id1165137634432">
+<title>Analysis </title>
+<para id="fs-id1165137601265">The function is represented in <link target-id="Figure_01_02_022"/>. We can see where the function changes from a constant to a shifted and stretched identity at <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math> We plot the graphs for the different formulas on a common set of axes, making sure each formula is applied on its proper domain. </para><figure id="Figure_01_02_022" class="">
+<media id="fs-id1165135453346" alt="A graph displays C(g) vs. g. The function is constant at 25 for g from 0 to 2, then linearly increases to 45 at g=4, shown with a blue line and grid background.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_022-75d8.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137600493" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165135532516"><emphasis>Given a piecewise function, sketch a graph.</emphasis></para>
+<list id="fs-id1165137588539" list-type="enumerated" number-style="arabic"><item>Indicate on the <emphasis effect="italics">x</emphasis>-axis the boundaries defined by the intervals on each piece of the domain.</item>
+<item>For each piece of the domain, graph on that interval using the corresponding equation pertaining to that piece.  Do not graph two functions over one interval because it would violate the criteria of a function.</item>
+</list></note>
+
+<example id="Example_01_02_13">
+<exercise id="fs-id1165137781618"><problem id="fs-id1165135412870">
+<title>Graphing a Piecewise Function</title>
+<para id="fs-id1165137838785">Sketch a graph of the function.</para>
+<equation id="fs-id1165137475346" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mn>3</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>x</m:mi>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>2</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165135487148">
+<para id="fs-id1165135487150">Each of the component functions is from our library of toolkit functions, so we know their shapes. We can imagine graphing each function and then limiting the graph to the indicated domain. At the endpoints of the domain, we draw open circles to indicate where the endpoint is not included because of a less-than or greater-than inequality; we draw a closed circle where the endpoint is included because of a less-than-or-equal-to or greater-than-or-equal-to inequality.</para><para id="fs-id1165137642848"><link target-id="Figure_01_02_023"/> shows the three components of the piecewise function graphed on separate coordinate systems.</para>
+
+<figure id="Figure_01_02_023">
+<media id="fs-id1165137439226" alt="Graph of each part of the piece-wise function f(x)">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_023abc-8709.jpg"/>
+</media>
+<caption>(a) <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mtext> if  </m:mtext><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> (b) <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mtext> if 1&lt; </m:mtext><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> (c) <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mtext>  if </m:mtext><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math>
+</caption>
+</figure>
+
+<para id="fs-id1165137676209">Now that we have sketched each piece individually, we combine them in the same coordinate plane. See <link target-id="Figure_01_02_026"/>.</para>
+
+<figure id="Figure_01_02_026" class="small">
+<media id="fs-id1165137646696" alt="Graph of the entire function.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_026-e20a.jpg"/>
+</media>
+</figure>
+</solution>
+<commentary id="fs-id1165135188517">
+<title>Analysis </title>
+<para id="fs-id1165134389893">Note that the graph does pass the vertical line test even at <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math> because the points <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow>  <m:mo>)</m:mo></m:mrow></m:mrow></m:math> are not part of the graph of the function, though <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+ and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> are.</para></commentary>
+</exercise></example>
+
+<note id="fs-id1165137762558" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_01_02_06"><problem id="fs-id1165137692562"><para id="fs-id1165137692563">Graph the following piecewise function.</para>
+<equation id="fs-id1165137433350" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>4</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>if</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>4</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137784656">
+<media id="fs-id1165134302462" alt="Graph of f(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_027-55b5.jpg"/>
+</media>
+</solution>
+</exercise></note>
+
+<note id="fs-id1165137810682" class="precalculus qa">
+<label>Q&amp;A</label>
+
+<para id="fs-id1165137527804"><emphasis>Can more than one formula from a piecewise function be applied to a value in the domain?</emphasis></para>
+<para id="fs-id1165137464467"><emphasis effect="italics">No. Each value corresponds to one equation in a piecewise formula.</emphasis></para>
+</note>
+<note id="fs-id1165135190393" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165137627040">Access these online resources for additional instruction and practice with domain and range.</para>
+<list id="fs-id1165135189954">
+<item><link url="https://openstax.org/l/domainsqroot">Domain and Range of Square Root Functions</link></item>
+<item><link url="https://openstax.org/l/determinedomain">Determining Domain and Range</link></item>
+<item><link url="https://openstax.org/l/drgraph">Find Domain and Range Given the Graph</link></item>
+<item><link url="https://openstax.org/l/drtable">Find Domain and Range Given a Table</link></item>
+<item><link url="https://openstax.org/l/drcoordinate">Find Domain and Range Given Points on a Coordinate Plane</link></item>
+</list>
+</note>
+</section>
+</content>
+</document>

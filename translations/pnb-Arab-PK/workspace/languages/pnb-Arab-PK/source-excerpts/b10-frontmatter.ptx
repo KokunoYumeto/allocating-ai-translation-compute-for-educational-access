@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+  <brandlogo url="http://discrete.openmathbooks.org/dmoi4.html" source="images/cover4.png" />
+
+  <document-id>dmoi-4</document-id>
+
+  <blurb shelf="Mathematics">
+    The 4th edition of Levin's Discrete Mathematics: an Open Introduction, released in August 2024.  The new edition includes a better arrangement of topics, many more exercises, and much more interactivity.  There are sections on relations, probability, and a stronger emphasis on discrete structures.
+  </blurb>
+
+  <macros> 
+    \usepackage{cancel}
+    \def\d{\displaystyle} 
+    \def\N{\mathbb N} 
+    \def\B{\mathbf B} 
+    \def\Z{\mathbb Z} 
+    \def\Q{\mathbb Q} 
+    \def\R{\mathbb R} 
+    \def\C{\mathbb C} 
+    \def\U{\mathcal U} 
+    \def\x{\mathbf{x}}
+    \def\y{\mathbf{y}}
+    \def\X{\mathcal{X}}
+    \def\Y{\mathcal{Y}}
+    \def\pow{\mathcal P} 
+    \def\inv{^{-1}} 
+    \def\st{:} 
+    \def\iff{\leftrightarrow} 
+    \def\Iff{\Leftrightarrow} 
+    \def\imp{\rightarrow} 
+    \def\Imp{\Rightarrow} 
+    \def\isom{\cong} 
+    
+    \def\bar{\overline} 
+    \def\card#1{\left| #1 \right|} 
+    \def\twoline#1#2{\begin{pmatrix}#1 \\ #2 \end{pmatrix}} 
+
+    \def\mchoose#1#2{
+      \left.\mathchoice
+        {\left(\kern-0.48em\binom{#1}{#2}\kern-0.48em\right)}
+        {\big(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\big)}
+        {\left(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+        {\left(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+      \right.}
+    \def\o{\circ}
+
+  </macros>
+
+  <latex-image-preamble> 
+  	\usepackage{adjustbox}
+    \usepackage{tikz} 
+    \usepackage{pgfplots}
+    \usepackage{skak} <!-- for chess -->
+    \pgfplotsset{
+        every axis/.append style={
+            axis lines=middle,
+            xlabel={\(x\)},
+            ylabel={\(y\)},
+            grid = both,
+        }
+    }
+    \usetikzlibrary{positioning,matrix,arrows} 
+    \usetikzlibrary{shapes,decorations,shadows,fadings,patterns} 
+    \usetikzlibrary{decorations.markings} 
+    \usetikzlibrary{calc}
+    \newcommand{\vtx}[2]{node[fill,circle,inner sep=0pt, minimum size=4pt,label=#1:#2]{}} 
+    \newcommand{\va}[1]{\vtx{above}{#1}} 
+    \newcommand{\vb}[1]{\vtx{below}{#1}} 
+    \newcommand{\vr}[1]{\vtx{right}{#1}} 
+    \newcommand{\vl}[1]{\vtx{left}{#1}} 
+    \renewcommand{\v}{\vtx{above}{}} 
+    \def\vo{node[circle, color=black, fill=white, inner sep=2pt, minimum size = 17pt, draw]{}}
+    <xi:include href="assets/tikz-defs.tex" parse="text"/>
+  </latex-image-preamble>
+
+
+  <rename element="investigation" xml:lang="en-US">Investigate!</rename>
+  <rename element="assemblage" xml:lang="en-US">Summary</rename>
+  <rename element="inlineexercise" xml:lang="en-US">Try it</rename>
+  <rename element="aside" xml:lang="en-US">By the way...</rename>
+  <!-- <rename element="example" xml:lang="en-US">Example!</rename> -->
+  <cross-references text="type-global" />
+
+
+  <!-- Various third-party add-ons need some sort of token -->
+  <!-- Using an element here serves two purposes -->
+  <!-- (1) it is a flag to enable the addon -->
+  <!-- (2) it holds the token and MBX supplies generic code -->
+  <!-- This is for the Google Custom Search Engine in HTML -->
+
+  <!-- Moved to custom-html.xsl 5/29/19 -->
+  <!-- <search> <google> <cx>000445521324161818100:qhc2ahxtur8</cx> </google> </search> <analytics> <google> <tracking>UA-66485406-1</tracking> </google> </analytics> -->
+</docinfo>
+	<book xml:id="dmoi4">
+		<title>Discrete Mathematics</title>
+		<subtitle>An Open Introduction, 4th Edition</subtitle>
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+  <titlepage>
+    <author>
+      <personname>
+      Oscar Levin</personname>
+      <department>Mathematical Sciences</department>
+      <institution>University of Northern Colorado</institution>
+    </author>
+    <date>Fall 2024</date>
+  </titlepage>
+
+  <colophon>
+    <website>
+      <url href="http://discrete.openmathbooks.org/" visual="discrete.openmathbooks.org"/>
+    </website>
+
+    <copyright>
+      <year>2013<ndash/>
+      2025</year>
+      <holder>Oscar Levin</holder>
+      <!--
+      <minilicense><image source="../images/by-sa.png" />
+      </minilicense>
+      -->
+      <shortlicense>
+        <!-- <image source="../images/by-sa.png" width="15%"/>  --> This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-nc-sa/4.0/" visual="creativecommons.org/licenses/by-nc-sa/4.0"/>
+      </shortlicense>
+    </copyright>
+    <!--
+    <p>
+      This online edition matches the 2nd print edition, published August 2016.
+      <dl width="narrow">
+      <li>
+        <title>ISBN-13:</title>
+
+        978-1534970748
+      </li>
+
+      <li>
+        <title>ISBN-10:</title>
+
+        1534970746
+      </li>
+      </dl>
+    </p>
+
+    <p>
+      Cover image: <em>Tiling with Fibonacci and Pascal</em>.
+    </p>
+    -->
+  </colophon>
+
+  <dedication>
+    <p>
+      For Madeline and Teagan
+    </p>
+  </dedication>
+
+  <acknowledgement>
+    <p>
+      This book would not exist if not for <q>Discrete and Combinatorial Mathematics,</q> by Richard Grassl and Tabitha Mingus.
+      It is the book I learned discrete math out of, and that I taught with the semester before I began writing this text.
+      I wanted to maintain the inquiry-based feel of their book but update, expand, and rearrange some of the material.
+      Some of the best exposition and exercises here were graciously donated from this source.
+    </p>
+
+    <p>
+      Thanks go to the graduate students who have co-taught the Discrete Mathematics course with me over the years, including Evan Czysz, Alees Lee, and Sarah Sparks, who helped develop new activities and exercises that have been incorporated into this text.  Michelle Morgan provided copy-editing support, and Jennifer Zakotnik-Gutierrez helped code many of the interactive exercises in the online version of the book.
+      Thanks also to Katie Morrison, Nate Eldredge, and Richard Grassl (again) for their suggestions after using parts of this text in their classes.
+    </p>
+
+    <p>
+      The online version of the book is written in PreTeXt and hosted on Runestone Academy thanks to the tremendous development work of Rob Beezer, Brad Miller, David Farmer, and Alex Jordan along with the rest of the participants of the <url href="https://groups.google.com/g/pretext-support" visual="groups.google.com/g/pretext-support">pretext-support group</url>.
+    </p>
+
+    <p>
+      Finally, a thank you to the numerous students who have pointed out typos and made suggestions over the years, and a thanks in advance to those who will do so in the future.
+    </p>
+  </acknowledgement>
+
+
+  <preface xml:id="preface">
+    <p>
+      This text aims to introduce select topics in discrete mathematics at a level appropriate for first- or second-year undergraduate math and computer science majors, especially those who intend to teach middle and high school mathematics.
+      The book began as a set of notes for the Discrete Mathematics course at the University of Northern Colorado.
+      This course serves both as a survey of the topics in discrete math and as the <q>bridge</q> course for math majors, as UNC does not offer a separate <q>introduction to proofs</q> course.
+      As this course has evolved to support our computer science major, so has the text.  The current version of the book is intended to support  inquiry-based teaching for understanding that is so crucial for future teachers, while also providing the necessary mathematical foundation and application-based motivation for computer science students.  While teaching the course in Spring 2024 using an early version of this edition, I was pleasantly surprised by how many students reported that they, for the first time, saw how useful math could be in the <q>real world.</q>  I hope that this experience can be replicated in other classes using this text.
+    </p>
+
+    <p>
+      This book is intended to be used in a class taught using problem-oriented or inquiry-based methods.  Each section begins with a preview of the content that includes an open-ended <em>Investigate!</em> motivating question, as well as a structured preview activity.  The preview activities are carefully scaffolded to provide an entry-point to the section's topic and to prime students to engage deeply in the material.  
+      Depending on the pace of the class, I have found success assigning only the section preview before class, using the preview activity as in-class group work, or assigning the entire section to be read before class (each section concludes with a small set of reading questions that can be assigned to encourage students to actually read).  For those readers using this book for self-study, the organization of the sections will hopefully mimic the style of a rich inquiry-based classroom.
+    </p>
+
+    <p>
+      The topics covered in this text were chosen to match the needs of the students I teach at UNC.
+      The main areas of study are logic and proof, graph theory, combinatorics, and sequences.
+      Induction is covered at the end of the chapter on sequences.  Discrete structures are introduced <q>as needed</q>, but a more thorough treatment of sets and functions is included as a separate chapter, which can be studied independent of the other content.  The final chapter covers two additional topics: generating functions and number theory.
+    </p>
+
+
+    <p>
+      While I believe this selection and order of topics is optimal, you should feel free to skip around to what interests you.
+      There are occasionally examples and exercises that rely on earlier material, but I have tried to keep these to a minimum, and they usually can either be skipped or understood without too much additional study.
+      If you are an instructor, you can also create a custom version by editing the <pretext/> source to fit your needs.
+    </p>
+
+
+    <paragraphs xml:id="pref_editions">
+      <title>Improvements to the 4th Edition</title>
+
+      <p>
+        Many of the sections have been rewritten to improve the clarity of the exposition.  
+        <ul>
+          <li>
+            <p>
+              Nearly 300 new exercises, bringing the total to more than 750.  These are better divided into preview activity questions, reading questions, practice problems, and additional exercises. 
+              Most of the new exercises are interactive for the online version.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              New sections on probability, relations, and discrete structures and their proofs.  Some other sections have been split up to make it more likely that a single class period can be devoted to a single topic.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Improved presentation for the counting chapter with a focus on considering sets of outcomes more than following rules.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The <em>Investigate!</em> activities of the 3rd Edition have been split into two types: <em>Investigate!</em> questions and Preview Activities.  The former are open-ended questions designed to engage you with the topic soon to be discussed.  The latter are structured preview activities that you should be able to completely answer before reading the section.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        The previous editions (3rd Edition, released in 2019, 2nd Edition, released in 2016, and the Fall 2015 Edition) will still be available for instructors who wish to use those versions due to familiarity.
+      </p>
+
+      <p>
+        I plan to continue improving the book.  Some of this will happen in real-time by updating the online versions to include new content (numbering will remain consistent).  
+        Thus I encourage you to send along any suggestions and comments as you have them.
+      </p>
+    </paragraphs>
+    <attribution>
+    <line>Oscar Levin, Ph.D.</line>
+    <line>University of Northern Colorado, 2024</line>
+    </attribution>
+  </preface>
+
+
+  <preface>
+    <title>How to Use This Book</title>
+
+    <p>
+      In addition to expository text, this book has a few features designed to encourage you to interact with the mathematics.
+    </p>
+
+
+    <paragraphs>
+      <title><em>Investigate!</em> questions</title>
+
+      <p>
+        Sprinkled throughout the sections (usually at the very beginning of a topic) you will find open-ended questions designed to engage you with the topic soon to be discussed.
+        You really should spend some time thinking about, or even working through, these problems before reading the section.  However, don't worry if you cannot find a satisfying solution right away.  The goal is to pique your interest, so you will read what is next looking for answers.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Preview Activities</title>
+      <p>
+        Most sections include a structured preview activity.  These contain leading questions that you should be able to completely answer before reading the section.  The idea is that the questions prime you to engage meaningfully with the new content ahead.  If you are using the online version, most of these questions will provide you with immediate feedback so you can be confident moving forward.
+      </p>
+    </paragraphs>
+    <paragraphs>
+      <title>Examples</title>
+
+      <p>
+        I have tried to include the <q>correct</q> number of examples.
+        For those examples that include <em>problems</em>, full solutions are included.
+        Before reading the solution, try to at least have an understanding of what the problem is asking.
+        Unlike some textbooks, the examples are not meant to be all-inclusive for problems you will see in the exercises.
+        They should not be used as a blueprint for solving other problems.
+        Instead, use the examples to deepen your understanding of the concepts and techniques discussed in each section.
+        Then use this understanding to solve the exercises at the end of each section.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Exercises</title>
+
+      <p>
+        You get good at math through practice.
+        Each section concludes with practice problems meant to solidify concepts and basic skills presented in that section; the online version provides immediate feedback on these problems.  There are then additional exercises that are more challenging and open-ended.  These might be assigned as written homework or used in class as group work.  Some of the additional exercises have hints or solutions in the back of the book, but use these as little as possible.  Struggle is good for you.  
+        At the end of each chapter, a larger collection of similar exercises is included (as a sort of <q>chapter review</q>) which might bridge the material of different sections in that chapter.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Interactive Online Version</title>
+
+      <p>
+        For those of you reading this in print or as a PDF, I encourage you to also check out the interactive online version.  Many of the preview activities and exercises are interactive and can give you immediate feedback.  Some of these have randomized components, allowing you to practice many similar versions of the same problems until you master the topic.
+      </p>
+
+      <p>
+        Hints and solutions to examples are also hidden away behind an extra click to encourage you to think about the problem before reading the solution.  There is a good search feature available as well, and the index has expandable links to see the content without jumping to the page immediately.  There is also a python scratch pad (the pencil icon) so you can try out some code if you feel so inclined.
+      </p>
+
+        <p>
+        Additional interactivity is planned.
+        These <q>bonus</q> features will be added on a rolling basis, so keep an eye out!
+      </p>
+
+      <p>
+        You can view the interactive version for free at <url href="https://discrete.openmathbooks.org/" visual="discrete.openmathbooks.org"/> or by scanning the QR code below.
+      </p>
+
+      <sidebyside width="25%">
+      <shortdescription>QR Code to https://discrete/openmathbooks.org</shortdescription>
+        <image source="images/qrcode.png"/>
+      </sidebyside>
+      </paragraphs>
+    </preface>
+  </frontmatter>
+	</book>
+</pretext>

@@ -1,0 +1,19 @@
+{
+  "unit": "PNB-012",
+  "reviewed_at": "2026-09-01T17:28:15+02:00",
+  "reader_sha256": "8d74a1f3351e051ad7f56cb5362d6ee7c85061d057a44e4f6b1d2f4f9cb32940",
+  "browser": "in-app Browser",
+  "viewports": {"desktop_content_width": 1009, "mobile_content_width": 375, "mobile_height": 800},
+  "result": "pass; bounded visual review, not native, educator or assistive-technology certification",
+  "observations": [
+    "No duplicate IDs or page-level overflow; repeated final runs loaded all 44 JPEGs.",
+    "Corrected source table has three TH scope=row labels and three TD formula cells and stays locally scrollable.",
+    "Two long MathML expressions remain in local overflow-auto parents while the document stays 375 pixels wide.",
+    "Footnote 1 forward and return links reached their exact source IDs; final component/scope footer was reviewed."
+  ],
+  "screenshots": [
+    {"path": "qa/unit-012-final-top-mobile.png", "sha256": "0189fc10572f6bcd614cd415b24cd7e7bec01d254b81c42f7a17630a654f4932", "bytes": 20627},
+    {"path": "qa/unit-012-final-table-mobile.png", "sha256": "dba8f79ad64c5ffa5a6c89260e028b0d03bd71d91956e296769836068f45a07d", "bytes": 29367},
+    {"path": "qa/unit-012-final-tail-mobile.png", "sha256": "d2d74d1520aac7e16f83f41160eac976e90a23b9b97110292807817498a03dcd", "bytes": 47896}
+  ]
+}

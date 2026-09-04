@@ -1,0 +1,80 @@
+{
+  "module": "m81298",
+  "section": "fs-id2263562",
+  "result": "pass",
+  "translation_sha256": "91338675ccded61bc4a254daf83e4db4e1dad9f58ff9eb75d13832052fd383b2",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "9448f28a30578e8ad9333d9580afcc8d99ea0a9df7fddfb3503030874f3e349d"
+  },
+  "source_sha256": "a8105d6d162b071c7365bd74a48737cf4175ce1c7b14afbee4f3bcf472631d81",
+  "reader": "reader/sections/m81298-fs-id2263562.html",
+  "reader_sha256": "c06a3722059622bc73d11ff5bd65c32adbbfcbdd3138ef11fc9c1fbce76d847e",
+  "nodes": 1285,
+  "ids": 364,
+  "mathml": 98,
+  "localized_linguistic_mtext": 29,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 0,
+  "exercises": 84,
+  "assets": [
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_AppB_030.jpg",
+      "bytes": 121137,
+      "sha256": "d2993c67f90476da37389379bd9d2916fcc95b2f1307dfe4bec15bee17701b72",
+      "git_blob": "bccac7a4a48592df23f9490d499618aa4eaf1f72"
+    }
+  ],
+  "source_errata": [
+    {
+      "source_ids": [
+        "fs-id2202283",
+        "fs-id2842885"
+      ],
+      "issue": "The source problem begins with boots but asks for the price of shoes in its final sentence.",
+      "action": "Use one consistent Bengali noun for the same item and disclose the source mismatch in the learner-facing paragraph. Preserve $84.99 and the supplied $56.66 exactly."
+    },
+    {
+      "source_ids": [
+        "fs-id1302611",
+        "fs-id1302613"
+      ],
+      "issue": "The supplied circumference answer is punctuated as 56.52.ft.; the numerical result is correct.",
+      "action": "Render 56.52 ফুট with natural Bengali spacing, preserve the value, and record the punctuation correction."
+    },
+    {
+      "source_ids": [
+        "eip-471",
+        "fs-id1960093",
+        "fs-id1960095"
+      ],
+      "issue": "The final comparison sign plus period is encoded as m:mtext while the first sign is m:mo; 0.25 is also encoded as m:mo rather than m:mn.",
+      "action": "Preserve the pinned MathML token classes and all visible values. Phrase the surrounding Bengali so the embedded period remains at the end of the instruction."
+    },
+    {
+      "source_ids": [
+        "fs-id1164271087723",
+        "fs-id1164271087726"
+      ],
+      "file": "CNX_BMath_Figure_AppB_030.jpg",
+      "issue": "The source alternative summarizes the self-check but omits its exact four task rows and four column headings; all raster text is English. The source MIME is image/jpg.",
+      "action": "Preserve the 666×172 JPEG bytes and source MIME; provide a complete Bengali alternative naming all rows and choices and state that the pixels remain English."
+    },
+    {
+      "source_ids": [
+        "eip-564",
+        "fs-id2200996",
+        "fs-id1302613",
+        "fs-id2697498",
+        "fs-id2267335",
+        "fs-id1264489",
+        "fs-id2211744",
+        "fs-id1379600"
+      ],
+      "issue": "The supplied circle results use pi≈3.14 for decimal measurements and pi≈22/7 for fractional measurements; fractional results are printed without an approximation sign and unit punctuation is inconsistent.",
+      "action": "Preserve every supplied number/fraction and the source instruction to approximate. Translate units consistently without changing =, ≈, or any MathML structure. Record the convention as a source-context boundary rather than silently claiming exact pi values."
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

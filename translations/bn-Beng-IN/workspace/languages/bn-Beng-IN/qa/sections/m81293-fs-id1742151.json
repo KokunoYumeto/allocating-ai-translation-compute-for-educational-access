@@ -1,0 +1,55 @@
+{
+  "module": "m81293",
+  "section": "fs-id1742151",
+  "result": "pass",
+  "translation_sha256": "afe4d40e1ff4902b7332d9b088762c892e60a8b2ca999506f6a323838b31c338",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "9448f28a30578e8ad9333d9580afcc8d99ea0a9df7fddfb3503030874f3e349d"
+  },
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "reader": "reader/sections/m81293-fs-id1742151.html",
+  "reader_sha256": "4aa413bb12a1ef836dd1ed80158ce60efcbf62c96c4b01b7a8dfb8ce1ea81ce2",
+  "nodes": 44,
+  "ids": 7,
+  "mathml": 0,
+  "localized_linguistic_mtext": 0,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 0,
+  "exercises": 0,
+  "assets": [],
+  "source_errata": [
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "eip-id1170322956760"
+      ],
+      "source_issue": "The conversion summary omits finite-decimal,zero-fractional-partandnegative-signboundariesandcalls the denominator the place value.",
+      "bengali_correction": "সসীম দশমিক, পূর্ণসংখ্যা-ফল, পুরো ফলের ঋণচিহ্ন এবং10/100/1000হর স্পষ্ট করা হয়েছে।",
+      "policy": "Mirror the fully checked instructional clarification; preserve source step count and hierarchy.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "eip-id1170325313990"
+      ],
+      "source_issue": "The ordering summary omits sign,whole-partandequalitychecks.",
+      "bengali_correction": "আগে চিহ্ন ও পূর্ণসংখ্যার অংশ; ঋণাত্মক জোড়ায় মানের ক্রম উল্টো; সমান হলে=।",
+      "policy": "Mirror the checked ordering conditions without altering source mathematical content.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_rounding_convention_clarified",
+      "source_ids": [
+        "eip-id1170325314005"
+      ],
+      "source_issue": "The rounding summary omits signed extension,carry,trailing-zeropreservationandindependent-roundingconditions.",
+      "bengali_correction": "ties-away-from-zeroextensionlabelled;carry,original-valueandrequired-zero rules explicit.",
+      "policy": "Mirror the checked rounding clarifications; do not attribute tie convention toTR11.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

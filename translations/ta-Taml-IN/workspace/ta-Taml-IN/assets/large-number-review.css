@@ -1,0 +1,73 @@
+@font-face {
+  font-family: TamilBook;
+  src: url('fonts/NotoSansTamil.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root { color-scheme: light; font-family: TamilBook, 'Nirmala UI', sans-serif; color: #142d38; background: #f3f6f5; }
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 62rem; padding: 1.6rem; font-size: 18px; line-height: 1.95; }
+header, .source-faithful, .credits { background: white; border: 1px solid #b9cccc; border-radius: .45rem; padding: 1.6rem; margin: 0 0 2rem; min-width: 0; }
+h1, h2, h3, h4 { line-height: 1.6; overflow-wrap: anywhere; }
+h1 { font-size: 1.75rem; margin-top: .4rem; }
+h2 { font-size: 1.45rem; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.05rem; }
+p { margin: .85rem 0; }
+a { color: #005d79; text-decoration-thickness: .1em; text-underline-offset: .2em; }
+a:hover { color: #7c291d; }
+:focus-visible { outline: 3px solid #a84616; outline-offset: 4px; }
+.skip { position: absolute; top: .25rem; left: .25rem; transform: translateY(-200%); background: white; padding: .4rem; }
+.skip:focus { transform: none; z-index: 10; }
+.eyebrow, .source-head { font-size: .85rem; color: #47646a; overflow-wrap: anywhere; }
+.draft-banner { background: #fff1d8; border-left: .35rem solid #96620f; padding: .2rem 1rem; }
+.note, .example { border-left: .3rem solid #00646a; background: #f1f8f7; padding: .7rem 1rem; margin: 1.4rem 0; min-width: 0; }
+.example { background: #f7f8fa; border-color: #596c8e; }
+.source-sol { margin: 1rem 0 .3rem; padding-top: .5rem; border-top: 1px solid #c1cdcf; }
+.source-sol:has(> h4:first-child) { padding-top: 0; }
+.source-bullets, .source-steps-list { padding-left: 1.7rem; }
+li { padding-left: .15rem; margin: .45rem 0; }
+.source-circled { list-style: none; padding-left: .25rem; }
+.token { font-family: TamilBook, 'Segoe UI Symbol', sans-serif; white-space: nowrap; }
+.no-emphasis { font-style: normal; font-weight: inherit; }
+figure { margin: 1.2rem 0; }
+figcaption { color: #3d5961; font-weight: 600; text-align: center; margin-top: .6rem; }
+.source-media, .source-table-group, .chart-alternative { min-width: 0; max-width: 100%; }
+.diagram-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; border: 1px solid #b8cbcf; border-radius: .25rem; background: white; margin: .65rem 0; overscroll-behavior-x: contain; }
+.diagram-scroll svg { display: block; max-width: none; }
+.diagram-hint, .media-description, .editorial-note { font-size: .9rem; color: #38515a; }
+.editorial-note { padding: .6rem .8rem; background: #fff5e6; border-left: 3px solid #9c6c22; }
+.media-description { padding: .5rem .7rem; background: #eef4f4; }
+.chart-alternative { border-top: 2px solid #b9d1d0; padding-top: .6rem; margin-top: 1rem; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+caption { text-align: left; font-weight: 600; padding-bottom: .6rem; }
+th, td { border: 1px solid #a9c0c2; text-align: left; padding: .55rem .65rem; vertical-align: top; overflow-wrap: anywhere; }
+thead th { background: #dceeed; }
+tbody th { font-weight: 500; background: #f1f7f6; }
+tfoot th, tfoot td { font-weight: 650; background: #e3f0ef; }
+.place-table { table-layout: fixed; }
+.place-name { width: 47%; }
+.place-digit { width: 18%; }
+.place-value { width: 35%; }
+.place-table td:nth-child(2) { text-align: center; }
+.place-table td:last-child { font-variant-numeric: tabular-nums; }
+.source-steps { table-layout: fixed; }
+.source-steps th:first-child { width: 54%; }
+math { font-family: 'Cambria Math', 'STIX Two Math', serif; font-size: 1.12em; }
+math mtext { font-family: TamilBook, 'Nirmala UI', sans-serif; }
+math mstyle[fontweight='bold'] { font-weight: bold; }
+.back-link { border-top: 1px solid #c4d5d4; padding-top: .8rem; margin-top: 2rem; }
+.credits { font-size: .9rem; overflow-wrap: anywhere; }
+[id] { scroll-margin-top: 1rem; }
+@media (max-width: 600px) {
+  body { font-size: 17px; padding: .6rem; }
+  header, .source-faithful, .credits { padding: .8rem; }
+  .note, .example { padding: .6rem; }
+  h1 { font-size: 1.45rem; }
+  h2 { font-size: 1.25rem; }
+  th, td { padding: .4rem .35rem; }
+  .place-name { width: 43%; }
+  .place-digit { width: 20%; }
+  .place-value { width: 37%; }
+}

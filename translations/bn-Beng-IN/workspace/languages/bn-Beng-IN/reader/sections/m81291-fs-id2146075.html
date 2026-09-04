@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="bn-Beng-IN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>সমতার যোগের, বিয়োগের ও ভাগের ধর্ম ব্যবহার করে ভগ্নাংশযুক্ত সমীকরণ সমাধান</title><style>body{font-family:"Nirmala UI","Noto Sans Bengali",sans-serif;color:#182d39;background:#f7f5ef;margin:0;font-size:19px;line-height:1.85}main{max-width:900px;margin:auto;padding:32px 24px;background:white}nav{padding:14px 0;border-bottom:2px solid #14685e}a{color:#075b6b}h1,h2{line-height:1.5;color:#104d48}h1{font-size:2rem}h2{font-size:1.3rem;margin-top:1.7em}p,li{overflow-wrap:anywhere}li{padding:6px 0}aside,.example{border-left:4px solid #157468;padding:8px 20px;margin:24px 0;background:#eff8f4}.solution{padding:8px 14px;background:#f7f7f3}.media{text-align:center;margin:20px 0}img{max-width:100%;height:auto;max-height:280px}math{font-size:1.1em;direction:ltr}.description,.notice{font-size:0.85em;color:#43535a}.notice{border:1px solid #9bafa9;padding:16px}footer{border-top:1px solid #9bafa9;margin-top:36px;padding:16px 0}@media(max-width:480px){main{padding:18px 14px}body{font-size:18px}aside,.example{padding:6px 10px}}@media print{body{background:white;font-size:12pt}main{padding:0}nav{display:none}h2{break-after:avoid}img{max-height:50mm}.example,li{break-inside:avoid}}table{width:100%;border-collapse:collapse;table-layout:fixed}td{padding:8px;vertical-align:top;overflow-wrap:anywhere;border-bottom:1px solid #d5e0dc}td .media{margin:6px 0}td img{max-height:140px}td math{font-size:1em}ol.circled{list-style:none}.math-scroll{display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle;padding:4px 0}.math-scroll:focus{outline:2px solid #14685e}.math-scroll math{white-space:nowrap}menclose[notation~="longdiv"]{display:inline-block;border-top:1.5px solid currentColor;border-left:1.5px solid currentColor;border-top-left-radius:0.35em;padding:0.05em 0.25em 0.05em 0.2em;margin-left:0.12em}menclose[notation~="updiagonalstrike"]{display:inline-block;background:linear-gradient(135deg,transparent calc(50% - 0.65px),currentColor calc(50% - 0.65px),currentColor calc(50% + 0.65px),transparent calc(50% + 0.65px))}.exercise{border:1px solid #aec4bb;padding:10px 12px;margin:18px 0}.exercise-label,.solution-label{font-size:0.8em;color:#43535a;margin:0 0 8px}.solution-label{font-weight:bold}.exercise .solution{margin-top:14px}</style></head><body><main><nav aria-label="পাঠ নির্বাচন"><a href="../index.html">পাঠসূচি</a> · <a href="../U01-companion.html">সহজ ভাষার সহায়িকা</a> · <a href="../U01-source-faithful.html">উৎস-অনুগত নির্বাচিত পাঠ</a></nav><h1>সমতার যোগের, বিয়োগের ও ভাগের ধর্ম ব্যবহার করে ভগ্নাংশযুক্ত সমীকরণ সমাধান</h1><p class="notice">উৎস-অনুগত উপবিভাগ · m81291-fs-id2146075। সম্পূর্ণ বইয়ের অনুবাদ এখনও চলছে। গাণিতিক চিহ্ন, সংখ্যা ও মূল কাঠামো অক্ষুণ্ণ; প্রযোজ্য ক্ষেত্রে সূত্রের শব্দলেবেল বাংলায় অনূদিত। মূল ছবির ভিতরের ইংরেজি লেবেলের অর্থ বাংলা বিবরণে আছে। স্বাধীন শিক্ষক ও ভাষা-পর্যালোচনা বাকি। অন্য উপবিভাগের উৎস-লিঙ্কে ইন্টারনেট প্রয়োজন।</p><section id="fs-id2146075" class="section">
+<h2 class="title">সমতার যোগের, বিয়োগের ও ভাগের ধর্ম ব্যবহার করে ভগ্নাংশযুক্ত সমীকরণ সমাধান</h2>
+<p id="fs-id1405284" class="para">আমরা <a href="https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m81271/index.cnxml">সমতার বিয়োগের ও যোগের ধর্ম ব্যবহার করে সমীকরণ সমাধান</a> এবং <a href="https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m81281/index.cnxml">পূর্ণসংখ্যা ব্যবহার করে সমীকরণ সমাধান; সমতার ভাগের ধর্ম</a> পাঠে সমতার যোগের, বিয়োগের ও ভাগের ধর্ম ব্যবহার করে সমীকরণ সমাধান করেছি। ভগ্নাংশযুক্ত সমীকরণ সমাধান করতেও আমরা এই ধর্মগুলিই ব্যবহার করব।</p><aside id="fs-id2702122" class="note"><h2 class="title">সমতার যোগের, বিয়োগের ও ভাগের ধর্ম</h2><p id="fs-id1816403" class="para">যেকোনো সংখ্যার জন্য— <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>c</mi><mo>,</mo></mrow></math> নিচের ধর্মগুলি প্রযোজ্য। ভাগের ক্ষেত্রে শেষ সারিতে দেওয়া অশূন্য শর্তটিও প্রযোজ্য।</p>
+<table id="eip-id1172107133172" class="table" aria-label="সমতার যোগের, বিয়োগের ও ভাগের ধর্ম। a = b হলে দুই পক্ষে একই c যোগ বা বিয়োগ করলে সমতা বজায় থাকে। c শূন্য না হলে দুই পক্ষকে c দিয়ে ভাগ করলেও সমতা বজায় থাকে।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry">যদি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mo>,</mo></mrow></math> তবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>+</mo><mi>c</mi><mo>=</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>.</mo></mrow></math></td>
+   <td class="entry">সমতার যোগের ধর্ম: দুই পক্ষে একই সংখ্যা যোগ করলেও সমতা বজায় থাকে।</td>
+</tr>
+<tr class="row">
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML" />যদি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mo>,</mo></mrow></math> তবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>−</mo><mi>c</mi><mo>=</mo><mi>b</mi><mo>−</mo><mi>c</mi><mo>.</mo></mrow></math></td>
+   <td class="entry">সমতার বিয়োগের ধর্ম: দুই পক্ষ থেকে একই সংখ্যা বিয়োগ করলেও সমতা বজায় থাকে।</td>
+</tr>
+<tr class="row">
+   <td class="entry">যদি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mo>,</mo></mrow></math> তবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mi>c</mi></mfrac><mo>=</mo><mfrac><mi>b</mi><mi>c</mi></mfrac><mo>,</mo><mi>c</mi><mo>≠</mo><mn>0</mn><mo>.</mo></mrow></math></td>
+   <td class="entry">সমতার ভাগের ধর্ম: দুই পক্ষকে একই অশূন্য সংখ্যা দিয়ে ভাগ করলেও সমতা বজায় থাকে।</td></tr>
+</tbody>
+
+
+
+
+
+</table><p id="fs-id2371290" class="para">অর্থাৎ, সমীকরণের দুই পক্ষে একই সংখ্যা যোগ করলে, দুই পক্ষ থেকে একই সংখ্যা বিয়োগ করলে অথবা দুই পক্ষকে একই অশূন্য সংখ্যা দিয়ে ভাগ করলে সমতা বজায় থাকে। ভাগের ক্ষেত্রে সংখ্যাটি শূন্য হতে পারবে না—উপরের সারণিতেও এই শর্তটি দেওয়া আছে।</p>
+</aside><section id="fs-id2314948" class="example">
+<div id="fs-id1966768" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1966768">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id2773761" class="problem">
+<p id="fs-id2262817" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mfrac><mn>9</mn><mrow><mn>16</mn></mrow></mfrac><mo>=</mo><mfrac><mn>5</mn><mrow><mn>16</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1302617" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1165720941272" class="table" aria-label="সমীকরণ y + 9/16 = 5/16। দুই পক্ষ থেকে 9/16 বিয়োগ করে y + 0 = −4/16 পাওয়া যায়; লঘিষ্ঠ আকারে y = −1/4। যাচাইয়ের জন্য মূল সমীকরণে y-এর জায়গায় −1/4 বসাও। একই হর নিয়ে −4/16 + 9/16 = 5/16 হয়। দুই পক্ষই 5/16, তাই সমাধান সঠিক।"><span class="label"></span>
+
+
+
+ <tbody class="tbody">
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><div id="eip-id1165721010700" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_028_img-01.png" alt="সমীকরণ: y + 9/16 = 5/16। 9/16-এর লব 9 ও হর 16; 5/16-এর লব 5 ও হর 16।"/><p class="description">সমীকরণ: y + 9/16 = 5/16। 9/16-এর লব 9 ও হর 16; 5/16-এর লব 5 ও হর 16।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যোগের প্রভাব দূর করতে দুই পক্ষ থেকেই <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>16</mn></mfrac></math> বিয়োগ করো।</td>
+    <td class="entry"><div id="eip-id1165721010728" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_028_img-02.png" alt="দুই পক্ষ থেকেই 9/16 বিয়োগ: y + 9/16 − 9/16 = 5/16 − 9/16। বিয়োগ করা 9/16 দুটি লাল রঙে। বাম পক্ষে 9/16 − 9/16 = 0 হয়।"/><p class="description">দুই পক্ষ থেকেই 9/16 বিয়োগ: y + 9/16 − 9/16 = 5/16 − 9/16। বিয়োগ করা 9/16 দুটি লাল রঙে। বাম পক্ষে 9/16 − 9/16 = 0 হয়।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সমীকরণের দুই পক্ষই সরল করো।</td>
+    <td class="entry"><div id="eip-id1165719769115" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_028_img-03.png" alt="দুই পক্ষ সরল করে y + 0 = −4/16 পাওয়া যায়। এখানে 4/16-এর লব 4 ও হর 16; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।"/><p class="description">দুই পক্ষ সরল করে y + 0 = −4/16 পাওয়া যায়। এখানে 4/16-এর লব 4 ও হর 16; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">ভগ্নাংশটি লঘিষ্ঠ আকারে প্রকাশ করো।</td>
+    <td class="entry"><div id="eip-id1165719769134" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_028_img-04.png" alt="ভগ্নাংশটি লঘিষ্ঠ আকারে প্রকাশ করে সমাধান y = −1/4 পাওয়া যায়। এখানে 1/4-এর লব 1 ও হর 4; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।"/><p class="description">ভগ্নাংশটি লঘিষ্ঠ আকারে প্রকাশ করে সমাধান y = −1/4 পাওয়া যায়। এখানে 1/4-এর লব 1 ও হর 4; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই করো:</td>
+    <td class="entry"><div id="eip-id1165721065168" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_028_img-05.png" alt="যাচাইয়ের জন্য মূল সমীকরণ: y + 9/16 = 5/16।"/><p class="description">যাচাইয়ের জন্য মূল সমীকরণ: y + 9/16 = 5/16।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">মান বসাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></math>।</td>
+    <td class="entry"><div id="eip-id1165719769895" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_028_img-06.png" alt="y-এর জায়গায় লাল রঙের −1/4 বসানো হয়েছে। −1/4 + 9/16 এবং 5/16 সমান কি না পরীক্ষা করতে সমান চিহ্নের উপরে প্রশ্নচিহ্ন দেওয়া আছে।"/><p class="description">y-এর জায়গায় লাল রঙের −1/4 বসানো হয়েছে। −1/4 + 9/16 এবং 5/16 সমান কি না পরীক্ষা করতে সমান চিহ্নের উপরে প্রশ্নচিহ্ন দেওয়া আছে।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে প্রকাশ করো।</td>
+    <td class="entry"><div id="eip-id1165719769913" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_028_img-07.png" alt="−4/16 + 9/16 এবং 5/16 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। −4/16 লাল রঙে।"/><p class="description">−4/16 + 9/16 এবং 5/16 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। −4/16 লাল রঙে।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যোগ করো।</td>
+    <td class="entry"><div id="eip-id1165721180840" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_028_img-08.png" alt="5/16 = 5/16; পাশে ঠিকচিহ্ন। দুই পক্ষ সমান।"/><p class="description">5/16 = 5/16; পাশে ঠিকচিহ্ন। দুই পক্ষ সমান।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+</tbody>
+
+
+</table><p id="fs-id1409559" class="para">যেহেতু <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> বসালে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mfrac><mn>9</mn><mrow><mn>16</mn></mrow></mfrac><mo>=</mo><mfrac><mn>5</mn><mrow><mn>16</mn></mrow></mfrac></mrow></math> সমতাটি সত্য হয়, তাই আমরা সমীকরণটির সমাধান পেয়েছি।</p>
+</section>
+</div></section>
+<aside id="fs-id2340144" class="note">
+<div id="fs-id2820442" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2820442">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2140617" class="problem">
+<p id="fs-id1166761302296" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mfrac><mrow><mn>11</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>=</mo><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id3399383" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2135964" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id2359434" class="note">
+<div id="fs-id1760952" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1760952">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2952135" class="problem">
+<p id="fs-id1483146" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mfrac><mn>8</mn><mrow><mn>15</mn></mrow></mfrac><mo>=</mo><mfrac><mn>4</mn><mrow><mn>15</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1701840" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1944377" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>4</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<p id="fs-id2146789" class="para">আমরা <a href="#fs-id2314948">আগের উদাহরণ</a>-এ সমতার বিয়োগের ধর্ম ব্যবহার করেছি। এবার সমতার যোগের ধর্ম ব্যবহার করব।</p>
+<section id="fs-id2751898" class="example"><div id="fs-id1340193" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1340193">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id1976942" class="problem">
+<p id="fs-id4228354" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>−</mo><mfrac><mn>5</mn><mn>9</mn></mfrac><mo>=</mo><mo>−</mo><mfrac><mn>8</mn><mn>9</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1351094" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1165721109263" class="table" aria-label="সমীকরণ a − 5/9 = −8/9। দুই পক্ষে 5/9 যোগ করে a + 0 = −3/9 পাওয়া যায়; লঘিষ্ঠ আকারে a = −1/3। যাচাইয়ের জন্য মূল সমীকরণে a-এর জায়গায় −1/3 বসাও। একই হর নিয়ে −3/9 − 5/9 = −8/9 হয়। দুই পক্ষই −8/9, তাই সমাধান সঠিক।"><span class="label"></span>
+
+
+
+ <tbody class="tbody">
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><div id="eip-id1165721134827" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_029_img-01.png" alt="সমীকরণ: a − 5/9 = −8/9। 5/9-এর লব 5 ও হর 9। ডান পক্ষে 8/9-এর লব 8 ও হর 9; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।"/><p class="description">সমীকরণ: a − 5/9 = −8/9। 5/9-এর লব 5 ও হর 9। ডান পক্ষে 8/9-এর লব 8 ও হর 9; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">বিয়োগের প্রভাব দূর করতে দুই পক্ষেই <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>9</mn></mfrac></math> যোগ করো।</td>
+    <td class="entry"><div id="eip-id1165720712427" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_029_img-02.png" alt="দুই পক্ষেই 5/9 যোগ: a − 5/9 + 5/9 = −8/9 + 5/9। যোগ করা 5/9 দুটি লাল রঙে।"/><p class="description">দুই পক্ষেই 5/9 যোগ: a − 5/9 + 5/9 = −8/9 + 5/9। যোগ করা 5/9 দুটি লাল রঙে।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সমীকরণের দুই পক্ষই সরল করো।</td>
+    <td class="entry"><div id="eip-id1165720945679" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_029_img-03.png" alt="দুই পক্ষ সরল করে a + 0 = −3/9 পাওয়া যায়। এখানে 3/9-এর লব 3 ও হর 9; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।"/><p class="description">দুই পক্ষ সরল করে a + 0 = −3/9 পাওয়া যায়। এখানে 3/9-এর লব 3 ও হর 9; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">ভগ্নাংশটি লঘিষ্ঠ আকারে প্রকাশ করো।</td>
+    <td class="entry"><div id="eip-id1165720945698" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_029_img-04.png" alt="ভগ্নাংশটি লঘিষ্ঠ আকারে প্রকাশ করে সমাধান a = −1/3 পাওয়া যায়। এখানে 1/3-এর লব 1 ও হর 3; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।"/><p class="description">ভগ্নাংশটি লঘিষ্ঠ আকারে প্রকাশ করে সমাধান a = −1/3 পাওয়া যায়। এখানে 1/3-এর লব 1 ও হর 3; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই করো:</td>
+    <td class="entry"><div id="eip-id1165721042463" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_029_img-05.png" alt="যাচাইয়ের জন্য মূল সমীকরণ: a − 5/9 = −8/9।"/><p class="description">যাচাইয়ের জন্য মূল সমীকরণ: a − 5/9 = −8/9।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">মান বসাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></math>।</td>
+    <td class="entry"><div id="eip-id1165720945156" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_029_img-06.png" alt="a-এর জায়গায় লাল রঙের −1/3 বসানো হয়েছে। −1/3 − 5/9 এবং −8/9 সমান কি না পরীক্ষা করতে সমান চিহ্নের উপরে প্রশ্নচিহ্ন দেওয়া আছে।"/><p class="description">a-এর জায়গায় লাল রঙের −1/3 বসানো হয়েছে। −1/3 − 5/9 এবং −8/9 সমান কি না পরীক্ষা করতে সমান চিহ্নের উপরে প্রশ্নচিহ্ন দেওয়া আছে।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">একই হর নিয়ে সমতুল ভগ্নাংশে প্রকাশ করো।</td>
+    <td class="entry"><div id="eip-id1165720945174" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_029_img-07.png" alt="−3/9 − 5/9 এবং −8/9 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। −3/9 লাল রঙে।"/><p class="description">−3/9 − 5/9 এবং −8/9 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। −3/9 লাল রঙে।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">বিয়োগ করো।</td>
+    <td class="entry"><div id="eip-id1165721023118" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_029_img-08.png" alt="−8/9 = −8/9; পাশে ঠিকচিহ্ন। দুই পক্ষ সমান।"/><p class="description">−8/9 = −8/9; পাশে ঠিকচিহ্ন। দুই পক্ষ সমান।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+</tbody>
+
+
+</table><p id="fs-id1334468" class="para">যেহেতু <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math> বসালে সমতা সত্য হয়, তাই সমীকরণটির সমাধান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>।</p>
+</section>
+</div></section><aside id="fs-id1572088" class="note">
+<div id="fs-id1562578" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1562578">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2241352" class="problem">
+<p id="fs-id2353064" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>−</mo><mfrac><mn>3</mn><mn>5</mn></mfrac><mo>=</mo><mo>−</mo><mfrac><mn>8</mn><mn>5</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2686947" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2166631" class="para">−1</p>
+</section>
+</div>
+</aside>
+<aside id="fs-id2483440" class="note">
+<div id="fs-id2268748" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2268748">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2594066" class="problem">
+<p id="fs-id2387642" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>−</mo><mfrac><mn>3</mn><mn>7</mn></mfrac><mo>=</mo><mo>−</mo><mfrac><mn>9</mn><mn>7</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2134538" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1830196" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>6</mn><mn>7</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<p id="fs-id2434453" class="para">পরের উদাহরণে প্রথমে কোনো ভগ্নাংশ দেখা যাচ্ছে না। কিন্তু সমীকরণটি সমাধান করলে কী হয়, দেখি।</p>
+<section id="fs-id1772520" class="example"><div id="fs-id1473226" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1473226">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id2840309" class="problem">
+<p id="fs-id3228059" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mi>q</mi><mo>=</mo><mn>44</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2805153" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168467284261" class="table" aria-label="10q = 44 সমীকরণের দুই পক্ষকে 10 দিয়ে ভাগ করে q = 44/10 = 22/5 পাওয়া যায়। মূল সমীকরণে q-এর এই মান বসালে 10 × 22/5 = 44। সাধারণ গুণনীয়ক 5 দিয়ে 10 ও হর 5 ভাগ করে 2 × 22 = 44 পাওয়া যায়। তাই যাচাইয়ে 44 = 44 সত্য।"><span class="label"></span>
+
+
+
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn><mi>q</mi><mo>=</mo><mn>44</mn></math></td>
+ </tr>
+ <tr class="row">
+   <td class="entry">গুণের প্রভাব দূর করতে দুই পক্ষকেই 10 দিয়ে ভাগ করো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>10</mn><mi>q</mi></mrow><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>44</mn></mrow><mrow><mn>10</mn></mrow></mfrac></math></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">সরল করো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi><mo>=</mo><mfrac><mrow><mn>22</mn></mrow><mn>5</mn></mfrac></math></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">যাচাই করো:</td>
+   <td class="entry"></td>
+ </tr>
+ <tr class="row">
+   <td class="entry">মূল সমীকরণে মান বসাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi><mo>=</mo><mfrac><mn>22</mn><mn>5</mn></mfrac></math>।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn><mo stretchy="false">(</mo><mfrac><mn>22</mn><mn>5</mn></mfrac><mo stretchy="false">)</mo><mover><mo>=</mo><mo>?</mo></mover><mn>44</mn></math></td>
+   <td class="entry"></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">সরল করো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mrow><menclose notation="updiagonalstrike"><mrow><mn>10</mn></mrow></menclose></mrow><mn>2</mn></mover><mrow><mo>(</mo><mrow><mfrac><mrow><mn>22</mn></mrow><mrow><menclose notation="updiagonalstrike"><mn>5</mn></menclose></mrow></mfrac></mrow><mo>)</mo></mrow><mover><mo>=</mo><mo>?</mo></mover><mn>44</mn></math></td>
+   <td class="entry"></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">গুণ করো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>44</mn><mo>=</mo><mn>44</mn><mspace width="0.2em" /><mo>✓</mo></math></td>
+   <td class="entry"></td>
+ </tr>
+
+</tbody>
+
+
+
+
+
+
+</table><p id="fs-id2950035" class="para">সমীকরণটির সমাধান হলো ভগ্নাংশ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>22</mn></mrow><mn>5</mn></mfrac><mo>.</mo></mrow></math> আমরা একে অপ্রকৃত ভগ্নাংশের আকারেই রাখব।</p>
+</section>
+</div></section><aside id="fs-id2961546" class="note">
+<div id="fs-id2340012" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2340012">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2907729" class="problem">
+<p id="fs-id2561531" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn><mi>u</mi><mo>=</mo><mn>−76</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2472141" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2265870" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>19</mn></mrow><mn>3</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id2594865" class="note">
+<div id="fs-id1883601" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1883601">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2257603" class="problem">
+<p id="fs-id2248728" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn><mi>m</mi><mo>=</mo><mn>92</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1515598" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2909220" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>23</mn></mrow><mn>2</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+</section><footer>OpenStax, Rice University · Prealgebra 2e · Lynn Marecek, MaryAnne Anthony-Smith, Andrea Honeycutt Mathis। <a href="../../provenance/pilot/m81241.source.cnxml">পূর্ণ উৎস-স্বীকৃতি</a> · <a href="../../provenance/A00/repository/LICENSE">CC BY-NC-SA 4.0</a>। অনানুষ্ঠানিক অনুবাদ; মূল প্রকাশকের অনুমোদন দাবি করা হচ্ছে না।</footer></main></body></html>

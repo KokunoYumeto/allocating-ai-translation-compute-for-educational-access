@@ -1,0 +1,30 @@
+{
+  "unit":"A10-002",
+  "module":"m82452",
+  "status":"bounded_visual_review_pass_with_limitations",
+  "recorded_date":"2026-08-31",
+  "browser":"Codex in-app Chromium",
+  "reader_sha256":"6b9a1c45c521aa4d11502773c3327373fd1d4291ae4779a5a40e7579ce763a92",
+  "structural_checks":1368,
+  "source_coverage":"Complete first-section remainder, 20 direct children; 92 blocks/scaffolds, 108 retained ID occurrences (107 new), 14 MathML trees, three tables, 14 unchanged JPEGs. Next standalone source paragraph is newelem_para01.",
+  "viewports":[{"requested_width":1024,"requested_height":800,"document_client_width":1009,"document_scroll_width":1009},{"requested_width":390,"requested_height":844,"document_client_width":375,"document_scroll_width":375}],
+  "observations":[
+    "Parent found initial clipping: the former 700px table gave 349.6px instruction cells, exceeding the 340px mobile wrapper. Unit-only CSS was reduced to 660px; source text, image bytes and shared CSS did not change.",
+    "Final first-table width is 659.995px, wrapper width 340px, cell width 329.601px, cell right edge 347.594px versus wrapper right edge 357.403px. At scrollLeft zero the complete 103,978 instruction is visible.",
+    "Pointer horizontal scrolling reached 320.23809814453125px and exposed the original hundreds-place carry diagram: 9+1=10, replacement by zero and carry to thousands, giving 104,000. Page width remains 375px. Source left instruction/right image order is retained; all twenty source cells are td, not invented headers.",
+    "Both Try It questions and all six answers were viewed together on mobile: 206,981 gives 207,000/207,000/210,000, and 784,951 gives 785,000/785,000/780,000. LTR part-label/number groups remain intact inside RTL reading order.",
+    "Desktop view confirms the original 839×163 four-period diagram, its unmirrored arrows and 9|246|073|189 groups. Clicking its advisory reaches #a10-002-alt022-correction, whose visible text explains the wrong source layout description without editing the image."
+  ],
+  "screenshots":{
+    "a10-unit-002-rounding-left-mobile.jpg":{"sha256":"5c57e91e57b6080af61470be29044c1d796162514dc2922f1c1a04edbb2a7ac6","pixels":[375,537]},
+    "a10-unit-002-carry-right-mobile.jpg":{"sha256":"06e38bb0d4d6f6117b86ac222eec8d1bfabd29cc92e68bd6bfea8e6ec8a042a6","pixels":[375,537]},
+    "a10-unit-002-answers-mobile.jpg":{"sha256":"134a9e2f809f3c62fd4683b16676a0963d07325a352f4d2e109480bf890c48ec","pixels":[375,537]},
+    "a10-unit-002-periods-desktop.jpg":{"sha256":"4702c28c71623f2aba23aaeeb54ce88b9ab524d677254b74f4941ecabc145e44","pixels":[1009,568]},
+    "a10-unit-002-correction-desktop.jpg":{"sha256":"20c3aca90c3bd4733c0c186eae2165fda4e3a123af90a925a5d7aa99bc0742c6","pixels":[1009,568]}
+  },
+  "limitations":[
+    "Saved images are bounded 375×537/1009×568 views, not full requested-viewport captures or proof of every source line.",
+    "No native Punjabi, mathematics-educator, screen-reader, keyboard-arrow, cross-browser or font-portability certification.",
+    "Known source errors remain traceable; original accessible corrections do not silently change source-bound wording. The full five-work workflow is incomplete."
+  ]
+}

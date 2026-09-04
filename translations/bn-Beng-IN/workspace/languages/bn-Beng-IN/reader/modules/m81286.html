@@ -1,0 +1,2118 @@
+<!doctype html>
+<html lang="bn-Beng-IN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>ভগ্নাংশের গুণ ও ভাগ</title><style>body{font-family:"Nirmala UI","Noto Sans Bengali",sans-serif;color:#182d39;background:#f7f5ef;margin:0;font-size:19px;line-height:1.85}main{max-width:900px;margin:auto;padding:32px 24px;background:white}nav{padding:14px 0;border-bottom:2px solid #14685e}a{color:#075b6b}h1,h2{line-height:1.5;color:#104d48}h1{font-size:2rem}h2{font-size:1.3rem;margin-top:1.7em}p,li{overflow-wrap:anywhere}li{padding:6px 0}aside,.example{border-left:4px solid #157468;padding:8px 20px;margin:24px 0;background:#eff8f4}.solution{padding:8px 14px;background:#f7f7f3}.media{text-align:center;margin:20px 0}img{max-width:100%;height:auto;max-height:280px}math{font-size:1.1em;direction:ltr}.description,.notice{font-size:0.85em;color:#43535a}.notice{border:1px solid #9bafa9;padding:16px}footer{border-top:1px solid #9bafa9;margin-top:36px;padding:16px 0}@media(max-width:480px){main{padding:18px 14px}body{font-size:18px}aside,.example{padding:6px 10px}}@media print{body{background:white;font-size:12pt}main{padding:0}nav{display:none}h2{break-after:avoid}img{max-height:50mm}.example,li{break-inside:avoid}}table{width:100%;border-collapse:collapse;table-layout:fixed}td{padding:8px;vertical-align:top;overflow-wrap:anywhere;border-bottom:1px solid #d5e0dc}td .media{margin:6px 0}td img{max-height:140px}td math{font-size:1em}ol.circled{list-style:none}.math-scroll{display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle;padding:4px 0}.math-scroll:focus{outline:2px solid #14685e}.math-scroll math{white-space:nowrap}menclose[notation~="longdiv"]{display:inline-block;border-top:1.5px solid currentColor;border-left:1.5px solid currentColor;border-top-left-radius:0.35em;padding:0.05em 0.25em 0.05em 0.2em;margin-left:0.12em}menclose[notation~="updiagonalstrike"]{display:inline-block;background:linear-gradient(135deg,transparent calc(50% - 0.65px),currentColor calc(50% - 0.65px),currentColor calc(50% + 0.65px),transparent calc(50% + 0.65px))}.exercise{border:1px solid #aec4bb;padding:10px 12px;margin:18px 0}.exercise-label,.solution-label{font-size:0.8em;color:#43535a;margin:0 0 8px}.solution-label{font-weight:bold}.exercise .solution{margin-top:14px}</style></head><body><main><nav aria-label="পাঠ নির্বাচন"><a href="../index.html">পাঠসূচি</a> · <a href="../U01-companion.html">সহজ ভাষার সহায়িকা</a> · <a href="../U01-source-faithful.html">উৎস-অনুগত নির্বাচিত পাঠ</a></nav><h1>ভগ্নাংশের গুণ ও ভাগ</h1><p class="notice">উৎস-অনুগত সম্পূর্ণ মডিউল · A00 / m81286। সম্পূর্ণ বইয়ের অনুবাদ এখনও চলছে। গণিত, প্রশ্ন, উপস্থিত সমাধান, মূল পরিচয়চিহ্ন ও ছবি সংরক্ষিত। সূত্রের শব্দলেবেল ও ছবি-বিবরণ বাংলায় অনূদিত। যেসব প্রশ্নের উত্তর মূল উৎসে নেই, এখানে সেগুলিতে নতুন উত্তর যোগ করা হয়নি। মূল ছবিতে থাকা ভুল/ইংরেজি লেবেলের ক্ষেত্রে বাংলা বিবরণ ও সম্পাদকীয় সতর্কতা পড়ো। স্বাধীন বাংলা ভাষা/শিক্ষক, শিক্ষার্থী ও সহায়ক-প্রযুক্তি পর্যালোচনা বাকি। বাইরের উৎস-লিঙ্কে ইন্টারনেট প্রয়োজন।</p><section class="section"><section class="abstract"><p id="para-00001" class="para">এই পাঠের শেষে তুমি পারবে:</p>
+<ul id="list-00001">
+<li class="item">ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করতে</li>
+<li class="item">ভগ্নাংশ গুণ করতে</li>
+<li class="item">গুণাত্মক বিপরীত নির্ণয় করতে</li>
+<li class="item">ভগ্নাংশ ভাগ করতে</li>
+</ul></section>
+  <aside id="fs-id1362037" class="note">
+<p id="fs-id2994162" class="para">শুরু করার আগে এই প্রশ্নগুলি করে তোমার প্রস্তুতি যাচাই করো।</p>
+<div id="fs-idm339425664" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-idm339425664">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-idm320507840" class="problem">
+<p id="fs-idm344789088" class="para">এই সংখ্যাটিকে মৌলিক গুণনীয়কে বিশ্লেষণ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>48</mn><mo>.</mo></mrow></math><br/>প্রশ্নটি করতে না পারলে আবার দেখো <a href="https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m81273/index.cnxml">পূর্ববর্তী উৎস-উদাহরণ [fs-id1528968]</a>।</p>
+</div>
+<section id="fs-idm350031296" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm353026784" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn></mrow></math></p>
+</section>
+</div></aside>
+<aside id="fs-id1362067" class="note">
+<div id="fs-idm349332864" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-idm349332864">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-idm320036096" class="problem">
+<p id="fs-idm348362320" class="para">চিত্র এঁকে এই ভগ্নাংশটি দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math><br/>প্রশ্নটি করতে না পারলে আবার দেখো <a href="https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m81285/index.cnxml">পূর্ববর্তী উৎস-উদাহরণ [fs-id2436750]</a>।</p>
+</div>
+<section id="fs-idm352205664" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm339753744" class="para"><div class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_037a_img.jpg" alt="একটি বৃত্তকে চারটি সমান ভাগে ভাগ করা হয়েছে। তিনটি ভাগ রঙ করা, একটি ভাগ সাদা। রঙ করা অংশ গোটা বৃত্তের তিন-চতুর্থাংশ।"/><p class="description">একটি বৃত্তকে চারটি সমান ভাগে ভাগ করা হয়েছে। তিনটি ভাগ রঙ করা, একটি ভাগ সাদা। রঙ করা অংশ গোটা বৃত্তের তিন-চতুর্থাংশ।</p></div></p>
+</section>
+</div></aside>
+<aside id="fs-id1362337" class="note">
+<div id="fs-idm350457744" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-idm350457744">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-idm345564592" class="problem">
+<p id="fs-idm334820736" class="para">এই ভগ্নাংশটির সমতুল দুটি ভগ্নাংশ নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>.</mo></mrow></math><br/>প্রশ্নটি করতে না পারলে আবার দেখো <a href="https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m81285/index.cnxml">পূর্ববর্তী উৎস-উদাহরণ [fs-id1816266]</a>।</p>
+</div>
+<section id="fs-idm349360528" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm326750256" class="para">বিভিন্ন সঠিক উত্তর হতে পারে। গ্রহণযোগ্য উত্তরগুলির মধ্যে রয়েছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>10</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>,</mo><mfrac><mrow><mn>15</mn></mrow><mrow><mn>18</mn></mrow></mfrac><mo>,</mo><mfrac><mrow><mn>50</mn></mrow><mrow><mn>60</mn></mrow></mfrac><mo>,</mo></mrow></math>ইত্যাদি।</p>
+</section>
+</div></aside>
+<section id="fs-id1408851" class="section">
+<h2 class="title">ভগ্নাংশ লঘিষ্ঠ আকারে প্রকাশ</h2>
+<p id="fs-id2828350" class="para">সমতুল ভগ্নাংশের পাঠে দেখেছ, একই মানের ভগ্নাংশ অনেকভাবে লেখা যায়। সেগুলি সমগ্রের একই অংশ বোঝায়। কোন রূপটি ব্যবহার করবে, তা বুঝবে কীভাবে? প্রায়ই আমরা ভগ্নাংশের <strong>লঘিষ্ঠ আকার</strong> ব্যবহার করব।</p><p id="eip-325" class="para">যদি একমাত্র সাধারণ গুণনীয়ক হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>,</mo></math> তবে ভগ্নাংশটির <strong id="term-00001" class="term">লব</strong> ও <strong id="term-00002" class="term">হর</strong>-এর আর কোনও সাধারণ গুণনীয়ক নেই; তখন ভগ্নাংশটিকে লঘিষ্ঠ আকারে আছে বলা হয়। লব ও হরে অন্য কোনও সাধারণ গুণনীয়ক থাকলে সেই গুণনীয়ক দিয়ে উভয়কে ভাগ করে ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করা যায়।</p><aside id="fs-id2773415" class="note">
+<h2 class="title">লঘিষ্ঠ আকারের ভগ্নাংশ</h2>
+<p id="fs-id1938440" class="para">লব ও হরের মধ্যে 1 ছাড়া আর কোনও সাধারণ গুণনীয়ক না থাকলে ভগ্নাংশটিকে লঘিষ্ঠ আকারে আছে বলা হয়।</p></aside>
+<p id="fs-id2701635" class="para">যেমন,</p>
+<ul id="fs-id1302300">
+<li class="item"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math> লঘিষ্ঠ আকারে আছে। কারণ, 1 ছাড়া আর কোনও সাধারণ গুণনীয়ক নেই এই দুটি সংখ্যার: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo></math></li>
+<li class="item"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>10</mn><mn>15</mn></mfrac></mrow></math> লঘিষ্ঠ আকারে নেই। কারণ, <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math> সাধারণ গুণনীয়ক এই দুটি সংখ্যার: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn><mo>.</mo></mrow></math></li>
+</ul>
+<p id="fs-id1581968" class="para">ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করার প্রক্রিয়াকে প্রায়ই <strong>ভগ্নাংশের সংক্ষেপণ</strong> বলা হয়। আগের উপবিভাগে সমতুল ভগ্নাংশের ধর্ম ব্যবহার করে সমতুল ভগ্নাংশ নির্ণয় করেছি। সেই ধর্ম উল্টোভাবেও ব্যবহার করে ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করা যায়। ধর্মটির দুটি রূপ একসঙ্গে লিখি।</p>
+<aside id="fs-id1629685" class="note">
+<h2 class="title">সমতুল ভগ্নাংশের ধর্ম</h2>
+<p id="fs-id1529520" class="para">যদি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></math> এমন সংখ্যা হয়, যেখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>b</mi><mo>≠</mo><mn>0</mn><mo>,</mo><mi>c</mi><mo>≠</mo><mn>0</mn><mo>,</mo></mrow></math> তবে</p>
+<div id="fs-id1171103161681" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mo>·</mo><mi>c</mi></mrow><mrow><mi>b</mi><mo>·</mo><mi>c</mi></mrow></mfrac><mspace width="1.0em" /><mtext>এবং</mtext><mspace width="1.0em" /><mfrac><mrow><mi>a</mi><mo>·</mo><mi>c</mi></mrow><mrow><mi>b</mi><mo>·</mo><mi>c</mi></mrow></mfrac><mo>=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>.</mo></mrow></math></div></aside>
+<p id="fs-id2200239" class="para">লক্ষ করো, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> হল <strong id="term-00003" class="term">লব</strong> ও <strong id="term-00004" class="term">হর</strong>-এর একটি সাধারণ গুণনীয়ক। লব ও হরে একই অশূন্য গুণনীয়ক থাকলে সেই গুণনীয়ক দিয়ে উভয়কে ভাগ করা যায়।</p>
+<aside id="fs-id1578323" class="note"><h2 class="title">ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করো।</h2><ol id="eip-id1168467382990"><li class="item">সাধারণ গুণনীয়কগুলি দেখিয়ে লব ও হর আবার লেখো। দরকার হলে লব ও হরকে মৌলিক গুণনীয়কে বিশ্লেষণ করো।</li>
+<li class="item">সমতুল ভগ্নাংশের ধর্ম ব্যবহার করে সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</li>
+<li class="item">লবে ও হরে বাকি থাকা গুণনীয়কগুলি গুণ করো।</li></ol></aside><section id="fs-id1330187" class="example"><div id="fs-id2453182" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2453182">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1944717" class="problem">
+<p id="fs-id1724461" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>10</mn></mrow><mrow><mn>15</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2165742" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id2264678" class="para">ভগ্নাংশটিকে লঘিষ্ঠ আকারে প্রকাশ করার জন্য লব ও হরের সাধারণ গুণনীয়ক খুঁজি।</p>
+
+<table id="eip-id1168468231694" class="table" aria-label="ভগ্নাংশটির লব 10 ও হর 15। 5 হল 10 ও 15 উভয়ের গুণনীয়ক। লবকে 2 গুণ 5 এবং হরকে 3 গুণ 5 হিসেবে লেখো। লব ও হরের সাধারণ গুণনীয়ক 5 দুটি কাটা হয়েছে। সরল করলে লব 2, হর 3।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry">লক্ষ করো, 5 হল 10 ও 15 উভয়ের গুণনীয়ক।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>15</mn></mfrac></math></td></tr>
+ <tr class="row">
+   <td class="entry">লব ও হরকে গুণনীয়কে বিশ্লেষণ করো।</td>
+   <td class="entry"><div id="eip-id1168468231727" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_025_img-01.png" alt="লব: 2 গুণ 5। হর: 3 গুণ 5। সাধারণ গুণনীয়ক 5 দুটি আলাদা রঙে দেখানো হয়েছে।"/><p class="description">লব: 2 গুণ 5। হর: 3 গুণ 5। সাধারণ গুণনীয়ক 5 দুটি আলাদা রঙে দেখানো হয়েছে।</p></div></td></tr>
+ <tr class="row">
+   <td class="entry">সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</td>
+   <td class="entry"><div id="eip-id1168467316038" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_025_img-02.png" alt="লবে 2 গুণ 5 এবং হরে 3 গুণ 5। লব ও হরের সাধারণ গুণনীয়ক 5 দুটি কাটা হয়েছে; বাকি থাকে লব 2 ও হর 3।"/><p class="description">লবে 2 গুণ 5 এবং হরে 3 গুণ 5। লব ও হরের সাধারণ গুণনীয়ক 5 দুটি কাটা হয়েছে; বাকি থাকে লব 2 ও হর 3।</p></div></td></tr>
+ <tr class="row">
+   <td class="entry">সরল করো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math></td></tr>
+</tbody>
+
+
+
+
+</table>
+</section>
+</div></section><aside id="fs-id1883720" class="note">
+<div id="fs-id3003345" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id3003345">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2031173" class="problem">
+<p id="fs-id2150058" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>8</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math>।</p></div>
+<section id="fs-id1402015" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1612630" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1333125" class="note">
+<div id="fs-id2151162" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2151162">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1826048" class="problem">
+<p id="fs-id4155296" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>12</mn></mrow><mrow><mn>16</mn></mrow></mfrac></mrow></math>।</p></div>
+<section id="fs-id3228566" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2758783" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<p id="fs-id1505756" class="para">ঋণাত্মক ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করতেও <a href="#fs-id1330187">উদাহরণ [fs-id1330187]</a>-এর পদ্ধতিই ব্যবহার করি। ঋণচিহ্নটি রাখতে ভুলো না।</p>
+<section id="fs-id1360134" class="example"><div id="fs-id1166761301185" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1166761301185">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1786124" class="problem">
+<p id="fs-id1104929" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>18</mn></mrow><mrow><mn>24</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1767395" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168469841089" class="table" aria-label="ঋণাত্মক ভগ্নাংশ: লব 18, হর 24, বাইরে ঋণচিহ্ন। 6 হল 18 ও 24 উভয়ের গুণনীয়ক। লবকে 3 গুণ 6 এবং হরকে 4 গুণ 6 হিসেবে লেখো। লব ও হরের সাধারণ গুণনীয়ক 6 দুটি কাটা হয়েছে। শেষে ঋণচিহ্ন অক্ষুণ্ণ রেখে পাই: লব 3, হর 4।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry">দেখা যায়, 6 হল 18 ও 24 উভয়ের গুণনীয়ক।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>18</mn></mrow><mrow><mn>24</mn></mrow></mfrac></mrow></math></td></tr>
+ <tr class="row">
+   <td class="entry">সাধারণ গুণনীয়কটি দেখিয়ে লব ও হর আবার লেখো।</td>
+   <td class="entry"><div id="eip-id1168469638526" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_026_img-01.png" alt="ঋণাত্মক ভগ্নাংশ। লব: 3 গুণ 6। হর: 4 গুণ 6। ঋণচিহ্নটি ভগ্নাংশের বাইরে আছে। সাধারণ গুণনীয়ক 6 দুটি আলাদা রঙে দেখানো হয়েছে।"/><p class="description">ঋণাত্মক ভগ্নাংশ। লব: 3 গুণ 6। হর: 4 গুণ 6। ঋণচিহ্নটি ভগ্নাংশের বাইরে আছে। সাধারণ গুণনীয়ক 6 দুটি আলাদা রঙে দেখানো হয়েছে।</p></div></td></tr>
+ <tr class="row">
+   <td class="entry">সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</td>
+   <td class="entry"><div id="eip-id1168466150744" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_026_img-02.png" alt="ঋণাত্মক ভগ্নাংশের লবে 3 গুণ 6 এবং হরে 4 গুণ 6। সাধারণ গুণনীয়ক 6 দুটি কাটা হয়েছে। বাইরে ঋণচিহ্নটি বজায় আছে; বাকি থাকে লব 3 ও হর 4।"/><p class="description">ঋণাত্মক ভগ্নাংশের লবে 3 গুণ 6 এবং হরে 4 গুণ 6। সাধারণ গুণনীয়ক 6 দুটি কাটা হয়েছে। বাইরে ঋণচিহ্নটি বজায় আছে; বাকি থাকে লব 3 ও হর 4।</p></div></td></tr>
+ <tr class="row">
+   <td class="entry">সরল করো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>3</mn></mrow><mrow><mn>4</mn></mrow></mfrac></mrow></math></td></tr>
+</tbody>
+
+
+
+
+</table></section>
+</div></section><aside id="fs-id1885832" class="note">
+<div id="fs-id1805514" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1805514">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1483146" class="problem">
+<p id="fs-id1825493" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>21</mn></mrow><mrow><mn>28</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1602350" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id4163295" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1512205" class="note">
+<div id="fs-id2820442" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2820442">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2956658" class="problem">
+<p id="fs-id1972179" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>16</mn></mrow><mrow><mn>24</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2266047" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1549181" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<p id="fs-id607076" class="para">ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করার পরে ফলটি অবশ্যই পরীক্ষা করো। লব ও হরে 1 ছাড়া আর কোনও সাধারণ গুণনীয়ক রয়ে গেছে কি না, দেখো। সংজ্ঞাটি মনে রেখো: <strong>লব ও হরের মধ্যে 1 ছাড়া আর কোনও সাধারণ গুণনীয়ক না থাকলে ভগ্নাংশটিকে লঘিষ্ঠ আকারে আছে বলা হয়</strong>।</p><p id="eip-632" class="para">অপ্রকৃত ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করার সময় সেটিকে মিশ্র ভগ্নাংশে রূপান্তর করার দরকার নেই।</p><section id="fs-id3448287" class="example"><div id="fs-id1842628" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1842628">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2263834" class="problem">
+<p id="fs-id1546827" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>56</mn></mrow><mrow><mn>32</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2669580" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168466600046" class="table" aria-label="প্রথমে ঋণাত্মক ভগ্নাংশ: লব 56, হর 32। লবকে 7 গুণ 8 এবং হরকে 4 গুণ 8 হিসেবে লেখো। লব ও হরের সাধারণ গুণনীয়ক 8 দুটি কাটা হয়েছে। সম্পাদকীয় সতর্কতা: মাঝের দুটি মূল চিত্রে ঋণচিহ্নটি ছাপা হয়নি; প্রতিটি ধাপে ঋণচিহ্নটি রাখতে হবে। শেষে ঋণাত্মক ভগ্নাংশ: লব 7, হর 4।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>56</mn></mrow><mrow><mn>32</mn></mrow></mfrac></mrow></math></td></tr>
+<tr class="row">
+   <td class="entry">সাধারণ গুণনীয়ক 8 দেখিয়ে লব ও হর আবার লেখো। সম্পাদকীয় সতর্কতা: এই ধাপের ও পরের ধাপের মূল চিত্রে ঋণচিহ্নটি ছাপা হয়নি। রাশিটির ঋণচিহ্ন বজায় রাখো।</td>
+   <td class="entry"><div id="eip-id1168469353476" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_006_img.jpg" alt="মূল চিত্রে লবে 7 গুণ 8 এবং হরে 4 গুণ 8 দেখানো হয়েছে। সাধারণ গুণনীয়ক 8 দুটি আলাদা রঙে দেখানো। সতর্কতা: মূল চিত্রে রাশিটির ঋণচিহ্নটি ছাপা হয়নি; ঋণচিহ্ন রাখতে হবে।"/><p class="description">মূল চিত্রে লবে 7 গুণ 8 এবং হরে 4 গুণ 8 দেখানো হয়েছে। সাধারণ গুণনীয়ক 8 দুটি আলাদা রঙে দেখানো। সতর্কতা: মূল চিত্রে রাশিটির ঋণচিহ্নটি ছাপা হয়নি; ঋণচিহ্ন রাখতে হবে।</p></div></td></tr>
+ <tr class="row">
+   <td class="entry">সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</td>
+   <td class="entry"><div id="eip-id1168469451793" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_007_img.jpg" alt="মূল চিত্রে লবে 7 গুণ 8 এবং হরে 4 গুণ 8; সাধারণ গুণনীয়ক 8 দুটি কাটা হয়েছে। সতর্কতা: চিত্রে না থাকলেও রাশিটির ঋণচিহ্ন রাখতে হবে। ফলে ঋণাত্মক ভগ্নাংশটির লব 7, হর 4।"/><p class="description">মূল চিত্রে লবে 7 গুণ 8 এবং হরে 4 গুণ 8; সাধারণ গুণনীয়ক 8 দুটি কাটা হয়েছে। সতর্কতা: চিত্রে না থাকলেও রাশিটির ঋণচিহ্ন রাখতে হবে। ফলে ঋণাত্মক ভগ্নাংশটির লব 7, হর 4।</p></div></td></tr>
+ <tr class="row">
+   <td class="entry">সরল করো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>7</mn></mrow><mrow><mn>4</mn></mrow></mfrac></mrow></math></td></tr>
+</tbody>
+
+
+
+
+
+</table></section>
+</div>
+</section><aside id="fs-id1918521" class="note">
+<div id="fs-id1568295" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1568295">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1529526" class="problem">
+<p id="fs-id2907445" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>54</mn></mrow><mrow><mn>42</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1258502" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id3317150" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>9</mn><mn>7</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1619832" class="note">
+<div id="fs-id3415645" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id3415645">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1830196" class="problem">
+<p id="fs-id2165710" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>81</mn></mrow><mrow><mn>45</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1166761301313" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2387642" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="eip-758" class="note"><h2 class="title">ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করো।</h2><ol id="eip-id1170196813922"><li class="item">সাধারণ গুণনীয়কগুলি দেখিয়ে লব ও হর আবার লেখো। দরকার হলে লব ও হরকে মৌলিক গুণনীয়কে বিশ্লেষণ করো।</li>
+<li class="item">সমতুল ভগ্নাংশের ধর্ম ব্যবহার করে সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</li>
+<li class="item">লবে ও হরে বাকি থাকা গুণনীয়কগুলি গুণ করো।</li></ol></aside><p id="fs-id2144708" class="para">কখনও লব ও হরের সাধারণ গুণনীয়ক সহজে খুঁজে পাওয়া যায় না। তখন লব ও হরকে মৌলিক গুণনীয়কে বিশ্লেষণ করা ভাল উপায়। মৌলিক গুণনীয়কগুলি খুঁজতে গুণনীয়ক-বৃক্ষ পদ্ধতি ব্যবহার করতে পারো। তার পরে সমতুল ভগ্নাংশের ধর্ম ব্যবহার করে সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</p>
+<section id="fs-id2129310" class="example"><div id="fs-id1362117" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1362117">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2630333" class="problem">
+<p id="fs-id1318626" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>210</mn></mrow><mrow><mn>385</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1781487" class="solution">
+<h2 class="title">সমাধান</h2>
+
+
+
+
+
+<table id="eip-id1168467251049" class="table" aria-label="ভগ্নাংশটির লব 210 ও হর 385। প্রথম গুণনীয়ক-বৃক্ষে 210 থেকে দুটি শাখায় 21 ও 10; 21 থেকে 3 ও 7; 10 থেকে 2 ও 5। দ্বিতীয় বৃক্ষে 385 থেকে 5 ও 77; 77 থেকে 7 ও 11। তাই লবে 2 গুণ 3 গুণ 5 গুণ 7 এবং হরে 5 গুণ 7 গুণ 11। লব ও হর থেকে সাধারণ গুণনীয়ক 5 ও 7 কাটা হয়েছে। অবশিষ্ট লব 2 গুণ 3 ও হর 11। গুণ করে পাই: লব 6, হর 11।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+  <td class="entry">গুণনীয়ক-বৃক্ষ ব্যবহার করে লব ও হরকে গুণনীয়কে বিশ্লেষণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>210</mn><mn>385</mn></mfrac></math><br/><div id="eip-id1168468369764" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_028_img-01.png" alt="দুটি গুণনীয়ক-বৃক্ষ। প্রথমটিতে 210 থেকে 21 ও 10; 21 থেকে 3 ও 7; 10 থেকে 2 ও 5। তাই 210 সমান 2 গুণ 3 গুণ 5 গুণ 7। দ্বিতীয়টিতে 385 থেকে 5 ও 77; 77 থেকে 7 ও 11। তাই 385 সমান 5 গুণ 7 গুণ 11।"/><p class="description">দুটি গুণনীয়ক-বৃক্ষ। প্রথমটিতে 210 থেকে 21 ও 10; 21 থেকে 3 ও 7; 10 থেকে 2 ও 5। তাই 210 সমান 2 গুণ 3 গুণ 5 গুণ 7। দ্বিতীয়টিতে 385 থেকে 5 ও 77; 77 থেকে 7 ও 11। তাই 385 সমান 5 গুণ 7 গুণ 11।</p></div></td></tr>
+ <tr class="row">
+  <td class="entry">লব ও হরকে মৌলিক সংখ্যাগুলির গুণফল হিসেবে আবার লেখো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>210</mn><mn>385</mn></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mn>7</mn></mrow><mrow><mn>5</mn><mo>⋅</mo><mn>7</mn><mo>⋅</mo><mn>11</mn></mrow></mfrac></math></td>
+</tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</td>
+  <td class="entry"><div id="eip-id1168469840594" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_028_img-02.png" alt="লব: 2 গুণ 3 গুণ 5 গুণ 7। হর: 5 গুণ 7 গুণ 11। লব ও হরের সাধারণ গুণনীয়ক 5 ও 7 কাটা হয়েছে।"/><p class="description">লব: 2 গুণ 3 গুণ 5 গুণ 7। হর: 5 গুণ 7 গুণ 11। লব ও হরের সাধারণ গুণনীয়ক 5 ও 7 কাটা হয়েছে।</p></div></td>
+</tr>
+<tr class="row">
+  <td class="entry">সরল করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn></mrow><mn>11</mn></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">লবে ও হরে বাকি থাকা গুণনীয়কগুলি গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>11</mn></mfrac></math></td></tr>
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+</table></section>
+</div></section><aside id="fs-id1294909" class="note">
+<div id="fs-id1577294" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1577294">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2223862" class="problem">
+<p id="fs-id1509336" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>69</mn></mrow><mrow><mn>120</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1858439" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2483440" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>23</mn></mrow><mrow><mn>40</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id2751898" class="note">
+<div id="fs-id1730335" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1730335">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2264382" class="problem">
+<p id="fs-id3003333" class="para">লঘিষ্ঠ আকারে প্রকাশ করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>120</mn></mrow><mrow><mn>192</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1464476" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2144926" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>8</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<p id="fs-id2288046" class="para">চল রয়েছে এমন ভগ্নাংশও সরল করা যায়। কোনও চল যদি <strong id="term-00005" class="term">লব</strong> ও <strong id="term-00006" class="term">হর</strong>-এর সাধারণ গুণনীয়ক হয়, তবে পূর্ণসংখ্যা গুণনীয়কের মতোই সেই চল দিয়ে উভয়কে ভাগ করি। মনে রেখো, হর শূন্য হতে পারে না; যে চল দিয়ে ভাগ করছ, তার মানও শূন্য হতে পারে না।</p>
+<section id="fs-id2462323" class="example"><div id="fs-id1569561" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1569561">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2427943" class="problem">
+<p id="fs-id2790515" class="para">সরল করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>5</mn><mi>x</mi><mi>y</mi></mrow><mrow><mn>15</mn><mi>x</mi></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1366907" class="solution">
+<h2 class="title">সমাধান</h2>
+
+<table id="eip-id1168469401986" class="table" aria-label="বীজগাণিতিক ভগ্নাংশকে গুণনীয়কে বিশ্লেষণ করে লব ও হরের সাধারণ গুণনীয়ক দিয়ে ভাগ করার ধাপগুলি এই ছকে দেখানো হয়েছে।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mi>x</mi><mi>y</mi></mrow><mrow><mn>15</mn><mi>x</mi></mrow></mfrac></math></td></tr>
+ <tr class="row">
+   <td class="entry">সাধারণ গুণনীয়কগুলি দেখিয়ে লব ও হর আবার লেখো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>·</mo><mi>x</mi><mo>·</mo><mi>y</mi></mrow><mrow><mn>3</mn><mo>·</mo><mn>5</mn><mo>·</mo><mi>x</mi></mrow></mfrac></math></td></tr>
+<tr class="row">
+   <td class="entry">সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><menclose notation="updiagonalstrike"><mn>5</mn></menclose><mo>·</mo><menclose notation="updiagonalstrike"><mi>x</mi></menclose><mo>·</mo><mi>y</mi></mrow><mrow><mn>3</mn><mo>·</mo><menclose notation="updiagonalstrike"><mn>5</mn></menclose><mo>·</mo><menclose notation="updiagonalstrike"><mi>x</mi></menclose></mrow></mfrac></math></td></tr>
+ <tr class="row">
+   <td class="entry">সরল করো।</td>
+   <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>y</mi></mrow><mrow><mn>3</mn></mrow></mfrac></math></td></tr>
+</tbody>
+
+
+
+
+</table>
+</section>
+</div></section><aside id="fs-id4329651" class="note">
+<div id="fs-id1166198" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1166198">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2669151" class="problem">
+<p id="fs-id1569724" class="para">সরল করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>7</mn><mi>x</mi></mrow><mrow><mn>7</mn><mi>y</mi></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2754063" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2676078" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>x</mi><mi>y</mi></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id3358128" class="note">
+<div id="fs-id2839926" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2839926">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1516604" class="problem">
+<p id="fs-id2750406" class="para">সরল করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>9</mn><mi>a</mi></mrow><mrow><mn>9</mn><mi>b</mi></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2161836" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1598290" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+</section>
+<section id="fs-id2081411" class="section"><h2 class="title">ভগ্নাংশের গুণ</h2><p id="fs-id2904577" class="para">একটি মডেল ভগ্নাংশের গুণ বুঝতে সাহায্য করতে পারে। ভগ্নাংশের পাত দিয়ে আমরা দেখাব <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math> এখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>,</mo></mrow></math> এই দুটি ভগ্নাংশ গুণ করতে হবে। প্রথমটির মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>; তাই অর্ধেক নিতে হবে এই পরিমাণের: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math></p>
+<p id="fs-id2140323" class="para">প্রথমে তিন-চতুর্থাংশ বোঝায় এমন ভগ্নাংশের পাত নাও। তিন-চতুর্থাংশের অর্ধেক পেতে পাতগুলি সমান দুটি দলে ভাগ করতে হবে। কিন্তু <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> মাপের তিনটি পাতকে সমান দুটি দলে সাজানো যায় না। তাই সেগুলির বদলে আরও ছোট পাত নিই।</p>
+<div id="fs-id2173839" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_010_img.jpg" alt="একই সমগ্রের মাপে উপরের সারিতে তিনটি পাত; প্রতিটির মান এক-চতুর্থাংশ। তিরচিহ্নের পরে নীচের সারিতে একই মোট দৈর্ঘ্যের ছয়টি ছোট পাত; প্রতিটির মান এক-অষ্টমাংশ। ছয়টি ছোট পাতকে তিনটি করে দুটি সমান দলে ভাগ করা হয়েছে। প্রতিটি দলের মান তিন-অষ্টমাংশ।"/><p class="description">একই সমগ্রের মাপে উপরের সারিতে তিনটি পাত; প্রতিটির মান এক-চতুর্থাংশ। তিরচিহ্নের পরে নীচের সারিতে একই মোট দৈর্ঘ্যের ছয়টি ছোট পাত; প্রতিটির মান এক-অষ্টমাংশ। ছয়টি ছোট পাতকে তিনটি করে দুটি সমান দলে ভাগ করা হয়েছে। প্রতিটি দলের মান তিন-অষ্টমাংশ।</p></div>
+<p id="fs-id1858740" class="para">দেখা যাচ্ছে, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>6</mn><mn>8</mn></mfrac></mrow></math> সমতুল এই ভগ্নাংশটির: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math> এবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math> মাপের ছয়টি পাতের অর্ধেক নিলে পাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math> মাপের তিনটি পাত। তাদের মোট পরিমাণ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>.</mo></mrow></math></p>
+<p id="fs-id1968554" class="para">সুতরাং,</p>
+<div id="fs-id1759411" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></div>
+<aside id="fs-id1170196781270" class="note">হাতে-কলমে গণিতের ‘মডেলের সাহায্যে ভগ্নাংশের গুণ’ কার্যক্রমটি করলে ভগ্নাংশের গুণ আরও ভালভাবে বুঝতে পারবে।</aside><section id="fs-id1534696" class="example">
+<div id="fs-id2601459" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2601459">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id1851679" class="problem">
+<p id="fs-id2829004" class="para">চিত্রের সাহায্যে এই গুণটি দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1523872" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id2216313" class="para">প্রথমে আয়তক্ষেত্রটির <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math> অংশ রঙ করো।</p>
+<div id="fs-id2946372" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_029_img.jpg" alt="একটি আয়তক্ষেত্রকে চারটি সমান উল্লম্ব ভাগে ভাগ করা হয়েছে। বাঁ দিকের তিনটি ভাগ রঙ করা।"/><p class="description">একটি আয়তক্ষেত্রকে চারটি সমান উল্লম্ব ভাগে ভাগ করা হয়েছে। বাঁ দিকের তিনটি ভাগ রঙ করা।</p></div>
+<p id="fs-id2778298" class="para">আমরা নেব <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> অংশ, অর্থাৎ অর্ধেক। যে পরিমাণের অর্ধেক নেব, তা হল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>,</mo></mrow></math> তাই রঙ করা অঞ্চলটির <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> অংশে আরও গাঢ় রঙ করি।</p><div id="fs-id3199434" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_030_img.jpg" alt="আয়তক্ষেত্রটি চারটি সমান স্তম্ভ ও দুটি সমান সারিতে আটটি সমান ঘরে বিভক্ত। বাঁ দিকের তিনটি স্তম্ভে রঙ আছে; নীচের সারির বাঁ দিকের তিনটি ঘরে আরও গাঢ় রঙ। গোটা আয়তক্ষেত্রের তিন-অষ্টমাংশ গাঢ় রঙ করা।"/><p class="description">আয়তক্ষেত্রটি চারটি সমান স্তম্ভ ও দুটি সমান সারিতে আটটি সমান ঘরে বিভক্ত। বাঁ দিকের তিনটি স্তম্ভে রঙ আছে; নীচের সারির বাঁ দিকের তিনটি ঘরে আরও গাঢ় রঙ। গোটা আয়তক্ষেত্রের তিন-অষ্টমাংশ গাঢ় রঙ করা।</p></div>
+<p id="fs-id2703738" class="para">লক্ষ করো, <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>টি ঘরে গাঢ় রঙ আছে; মোট সমান ঘরের সংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math>। অর্থাৎ, আয়তক্ষেত্রটির <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math> অংশ গাঢ় রঙ করা।</p><p id="fs-id2173908" class="para">সুতরাং, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> অংশ নেওয়া হয়েছে এই পরিমাণের: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>। তার মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>,</mo></mrow></math> অর্থাৎ, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>.</mo></mrow></math></p>
+</section>
+</div></section>
+<aside id="fs-id1358945" class="note">
+<div id="fs-id1548744" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1548744">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2084744" class="problem">
+<p id="fs-id2954309" class="para">চিত্রের সাহায্যে এই গুণটি দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>5</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1360285" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1974089" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac></mrow></math></p>
+<div id="fs-id8372945" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_038_img.jpg" alt="আয়তক্ষেত্রটি পাঁচটি সমান স্তম্ভ ও দুটি সমান সারিতে দশটি সমান ঘরে বিভক্ত। বাঁ দিকের তিনটি স্তম্ভে রঙ আছে; নীচের সারির বাঁ দিকের তিনটি ঘরে আরও গাঢ় রঙ। তাই গাঢ় রঙ করা অংশ গোটা আয়তক্ষেত্রের তিন-দশমাংশ।"/><p class="description">আয়তক্ষেত্রটি পাঁচটি সমান স্তম্ভ ও দুটি সমান সারিতে দশটি সমান ঘরে বিভক্ত। বাঁ দিকের তিনটি স্তম্ভে রঙ আছে; নীচের সারির বাঁ দিকের তিনটি ঘরে আরও গাঢ় রঙ। তাই গাঢ় রঙ করা অংশ গোটা আয়তক্ষেত্রের তিন-দশমাংশ।</p></div>
+</section>
+</div>
+</aside>
+<aside id="fs-id2686874" class="note">
+<div id="fs-id1608839" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1608839">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1374192" class="problem">
+<p id="fs-id1621382" class="para">চিত্রের সাহায্যে এই গুণটি দেখাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1823215" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1752739" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math></p>
+<div id="fs-id8372986" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_039_img.jpg" alt="আয়তক্ষেত্রটি ছয়টি সমান স্তম্ভ ও দুটি সমান সারিতে বারোটি সমান ঘরে বিভক্ত। বাঁ দিকের পাঁচটি স্তম্ভে রঙ আছে; নীচের সারির বাঁ দিকের পাঁচটি ঘরে আরও গাঢ় রঙ। তাই গাঢ় রঙ করা অংশ গোটা আয়তক্ষেত্রের পাঁচ-দ্বাদশাংশ।"/><p class="description">আয়তক্ষেত্রটি ছয়টি সমান স্তম্ভ ও দুটি সমান সারিতে বারোটি সমান ঘরে বিভক্ত। বাঁ দিকের পাঁচটি স্তম্ভে রঙ আছে; নীচের সারির বাঁ দিকের পাঁচটি ঘরে আরও গাঢ় রঙ। তাই গাঢ় রঙ করা অংশ গোটা আয়তক্ষেত্রের পাঁচ-দ্বাদশাংশ।</p></div>
+</section>
+</div>
+</aside>
+<p id="fs-id1598175" class="para"><a href="#fs-id1534696">উদাহরণ [fs-id1534696]</a>-এর মডেল থেকে পাওয়া ফলটি দেখো। আমরা পেয়েছি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>.</mo></mrow></math> লক্ষ করেছ কি, লবগুলিকে গুণ করে এবং হরগুলিকে গুণ করেও একই উত্তর পাওয়া যেত?</p>
+<table id="eip-id1168468256450" class="table" aria-label="দুটি ভগ্নাংশ গুণ করার ধাপ: লবগুলির গুণফলকে লবে ও হরগুলির গুণফলকে হরে লিখে সরল করা।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">লবগুলিকে গুণ করো এবং হরগুলিকে গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">সরল করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>8</mn></mfrac></math></td></tr>
+</tbody>
+
+
+</table><p id="fs-id3293033" class="para">এখান থেকেই ভগ্নাংশের গুণের সংজ্ঞা পাই। ভগ্নাংশ গুণ করতে লবগুলিকে গুণ করি এবং হরগুলিকে গুণ করি। তার পরে পাওয়া ভগ্নাংশটিকে লঘিষ্ঠ আকারে লিখি।</p>
+<aside id="fs-id2908633" class="note">
+<h2 class="title">ভগ্নাংশের গুণ</h2>
+<p id="fs-id2707863" class="para">যদি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>d</mi></mrow></math> এমন সংখ্যা হয়, যেখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>d</mi><mo>≠</mo><mn>0</mn><mo>,</mo></mrow></math> তবে</p>
+<div id="fs-id1171100782926" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>·</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mi>c</mi></mrow><mrow><mi>b</mi><mi>d</mi></mrow></mfrac></mrow></math></div>
+</aside>
+<section id="fs-id1863495" class="example"><div id="fs-id2436292" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2436292">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1370912" class="problem">
+<p id="fs-id1632996" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>·</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1988962" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168468398776" class="table" aria-label="তিন-চতুর্থাংশ ও এক-পঞ্চমাংশ গুণ করার ধাপ এবং গাণিতিক রাশিগুলি দেখানো হয়েছে।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>·</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">লবগুলিকে গুণ করো; হরগুলিকে গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>·</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>·</mo><mn>5</mn></mrow></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">সরল করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>20</mn></mfrac></math></td></tr>
+</tbody>
+
+
+</table><p id="fs-id3400279" class="para">লব ও হরের মধ্যে 1 ছাড়া আর কোনও সাধারণ গুণনীয়ক নেই। তাই ভগ্নাংশটি লঘিষ্ঠ আকারে আছে।</p>
+</section>
+</div>
+</section><aside id="fs-id2951424" class="note">
+<div id="fs-id2751102" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2751102">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2365113" class="problem">
+<p id="fs-id1379855" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>·</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1160264" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1931320" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1951437" class="note">
+<div id="fs-id1920848" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1920848">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2138940" class="problem">
+<p id="fs-id2142823" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>5</mn></mfrac><mo>·</mo><mfrac><mn>7</mn><mn>8</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1381742" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id4163293" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>21</mn></mrow><mrow><mn>40</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<p id="eip-533" class="para">ভগ্নাংশের গুণেও ধনাত্মক ও ঋণাত্মক সংখ্যার নিয়মগুলি প্রযোজ্য। প্রথম ধাপেই গুণফলের চিহ্ন নির্ণয় করে নেওয়া ভাল। <a href="#fs-id2590618">উদাহরণ 4.26</a>-এ আমরা দুটি ঋণাত্মক সংখ্যা গুণ করব; তাই গুণফল ধনাত্মক হবে।</p><section id="fs-id2590618" class="example"><div id="fs-id4876976" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id4876976">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1933193" class="problem">
+<p id="fs-id3323807" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mn>8</mn></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2784352" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168466273465" class="table" aria-label="ঋণাত্মক পাঁচ-অষ্টমাংশকে ঋণাত্মক দুই-তৃতীয়াংশ দিয়ে গুণ করা হচ্ছে। একই চিহ্নের দুটি সংখ্যা, তাই গুণফল ধনাত্মক। লব 5 গুণ 2; হর 8 গুণ 3। সরল করলে লব 10, হর 24। সাধারণ গুণনীয়ক দেখিয়ে লব 5 গুণ 2 ও হর 12 গুণ 2 লেখা হয়েছে। লব ও হরের সাধারণ গুণনীয়ক 2 কেটে পাই: লব 5, হর 12।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mn>8</mn></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></td></tr>
+<tr class="row">
+  <td class="entry">দুটি সংখ্যার চিহ্ন একই, তাই গুণফল ধনাত্মক। লবগুলিকে গুণ করো, হরগুলিকে গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>⋅</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>⋅</mo><mn>3</mn></mrow></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">সরল করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>24</mn></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">লব ও হরের সাধারণ গুণনীয়ক খোঁজো। সাধারণ গুণনীয়কটি দেখিয়ে আবার লেখো।</td>
+  <td class="entry"><div id="eip-id6805038" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_038_img-01.png" alt="লব: 5 গুণ 2। হর: 12 গুণ 2। লব ও হরের সাধারণ গুণনীয়ক 2 দুটি কাটা হয়েছে। বাকি থাকে লব 5 ও হর 12।"/><p class="description">লব: 5 গুণ 2। হর: 12 গুণ 2। লব ও হরের সাধারণ গুণনীয়ক 2 দুটি কাটা হয়েছে। বাকি থাকে লব 5 ও হর 12।</p></div></td></tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>12</mn></mfrac></math></td></tr>
+</tbody>
+
+
+
+
+
+
+</table><p id="fs-id2358857" class="para">এই গুণফল পাওয়ার আর-একটি উপায় হল, আগে থেকেই সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করে নেওয়া।</p>
+<table id="eip-id1168466166066" class="table" aria-label="ঋণাত্মক পাঁচ-অষ্টমাংশকে ঋণাত্মক দুই-তৃতীয়াংশ দিয়ে গুণ করা হচ্ছে। গুণফল ধনাত্মক। লব 5 গুণ 2; হর 8 গুণ 3। সাধারণ গুণনীয়ক দেখিয়ে লবে 5 গুণ 2 এবং হরে 4 গুণ 2 গুণ 3 লেখা হয়েছে। লব ও হরের 2 দুটি কাটা হয়েছে। বাকি গুণনীয়কগুলি গুণ করে পাই: লব 5, হর 12।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mn>8</mn></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></td></tr>
+<tr class="row">
+  <td class="entry">গুণফলের চিহ্ন নির্ণয় করো। গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>⋅</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>⋅</mo><mn>3</mn></mrow></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়ক দেখাও; তার পরে তা দিয়ে লব ও হর ভাগ করো।</td>
+  <td class="entry"><div id="eip-id1168469466410" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_032_img-01.png" alt="লব: 5 গুণ 2। হর: 4 গুণ 2 গুণ 3। লব ও হরের সাধারণ গুণনীয়ক 2 দুটি কাটা হয়েছে।"/><p class="description">লব: 5 গুণ 2। হর: 4 গুণ 2 গুণ 3। লব ও হরের সাধারণ গুণনীয়ক 2 দুটি কাটা হয়েছে।</p></div></td>
+</tr>
+<tr class="row">
+  <td class="entry">লবে ও হরে বাকি থাকা গুণনীয়কগুলি গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>12</mn></mfrac></math></td></tr>
+</tbody>
+
+
+</table><p id="fs-id1891341" class="para">একই ফল পাওয়া গেল।</p>
+</section>
+</div>
+</section><aside id="fs-id1239322" class="note">
+<div id="fs-id2629556" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2629556">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1298655" class="problem">
+<p id="fs-id1259033" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>4</mn><mn>7</mn></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>5</mn><mn>8</mn></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2620115" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1169860" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mrow><mn>14</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id2385558" class="note">
+<div id="fs-id1826031" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1826031">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2248724" class="problem">
+<p id="fs-id1266084" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>7</mn><mrow><mn>12</mn></mrow></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>8</mn><mn>9</mn></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1842592" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1614509" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>14</mn></mrow><mrow><mn>27</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<section id="fs-id1460940" class="example"><div id="fs-id1500224" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1500224">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id4201379" class="problem">
+<p id="fs-id4338318" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>15</mn></mrow></mfrac><mo>·</mo><mfrac><mrow><mn>20</mn></mrow><mrow><mn>21</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2224517" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168466394330" class="table" aria-label="ঋণাত্মক ভগ্নাংশ, লব 14 ও হর 15, গুণ করা হচ্ছে ভগ্নাংশ লব 20 ও হর 21 দিয়ে। গুণফল ঋণাত্মক। সাধারণ গুণনীয়ক দেখিয়ে লবে 2 গুণ 7 গুণ 4 গুণ 5 এবং হরে 3 গুণ 5 গুণ 3 গুণ 7 লেখা হয়েছে। লব ও হরের 5 ও 7 কাটা হয়েছে। বাকি থাকে লব 2 গুণ 4, হর 3 গুণ 3 এবং বাইরের ঋণচিহ্ন। ফলে ঋণাত্মক ভগ্নাংশ: লব 8, হর 9।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>15</mn></mrow></mfrac><mo>·</mo><mfrac><mrow><mn>20</mn></mrow><mrow><mn>21</mn></mrow></mfrac></mrow></math></td></tr>
+<tr class="row">
+  <td class="entry">গুণফলের চিহ্ন নির্ণয় করো; গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>15</mn></mrow></mfrac><mo>·</mo><mfrac><mrow><mn>20</mn></mrow><mrow><mn>21</mn></mrow></mfrac></mrow></math></td></tr>
+<tr class="row">
+  <td class="entry">লব ও হরের মধ্যে কি কোনও সাধারণ গুণনীয়ক আছে?<br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em" /></math>আমরা জানি, 7 হল 14 ও 21-এর গুণনীয়ক এবং 5 হল 20 ও 15-এর গুণনীয়ক।</td>
+  <td class="entry"></td></tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়কগুলি দেখিয়ে আবার লেখো।</td>
+  <td class="entry"><div id="eip-id1168467209499" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_033_img-01.png" alt="ঋণাত্মক ভগ্নাংশ। লব: 2 গুণ 7 গুণ 4 গুণ 5। হর: 3 গুণ 5 গুণ 3 গুণ 7। লব ও হরের সাধারণ গুণনীয়ক 7 ও 5 কাটা হয়েছে; বাইরের ঋণচিহ্নটি বজায় আছে।"/><p class="description">ঋণাত্মক ভগ্নাংশ। লব: 2 গুণ 7 গুণ 4 গুণ 5। হর: 3 গুণ 5 গুণ 3 গুণ 7। লব ও হরের সাধারণ গুণনীয়ক 7 ও 5 কাটা হয়েছে; বাইরের ঋণচিহ্নটি বজায় আছে।</p></div></td></tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>2</mn><mo>·</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>·</mo><mn>3</mn></mrow></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">লবে ও হরে বাকি থাকা গুণনীয়কগুলি গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>8</mn><mn>9</mn></mfrac></math></td></tr>
+</tbody>
+
+
+
+
+
+</table>
+</section>
+</div>
+</section><aside id="fs-id2261289" class="note">
+<div id="fs-id1822971" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1822971">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1601932" class="problem">
+<p id="fs-id1961355" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>28</mn></mrow></mfrac><mo>·</mo><mfrac><mn>8</mn><mrow><mn>15</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2495710" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2903726" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>4</mn><mrow><mn>21</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1987890" class="note">
+<div id="fs-id2280190" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2280190">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2352778" class="problem">
+<p id="fs-id2246436" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>9</mn><mrow><mn>20</mn></mrow></mfrac><mo>·</mo><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1581515" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1517522" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mrow><mn>16</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<p id="fs-id2778365" class="para">কোনও ভগ্নাংশকে পূর্ণসংখ্যা দিয়ে গুণ করার সময় পূর্ণসংখ্যাটিকে ভগ্নাংশ হিসেবে লিখলে সুবিধা হতে পারে। যে কোনও পূর্ণসংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>,</mo></math> লেখা যায় এভাবে: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mn>1</mn></mfrac><mo>.</mo></mrow></math> যেমন, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>=</mo><mfrac><mn>3</mn><mn>1</mn></mfrac><mo>,</mo></mrow></math></p>
+<section id="fs-id1257967" class="example"><div id="fs-id2323137" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2323137">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2561418" class="problem">
+<p id="fs-id1859590" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো:</p>
+<p id="fs-id2129913" class="para"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>7</mn></mfrac><mo>·</mo><mn>56</mn></math></p><p id="eip-id1168466244933" class="para"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>12</mn></mrow><mn>5</mn></mfrac><mrow><mo>(</mo><mrow><mn>−20</mn><mi>x</mi></mrow><mo>)</mo></mrow></math></p>
+
+</div>
+<section id="fs-id1724732" class="solution">
+<h2 class="title">সমাধান</h2>
+
+
+<table id="eip-id1168466216346" class="table" aria-label="এক-সপ্তমাংশকে পূর্ণসংখ্যা 56 দিয়ে গুণ করে 8 পাওয়ার ধাপগুলি দেখানো হয়েছে।"><span class="label"></span>
+<tbody class="tbody">
+<tr class="row">
+  <td class="entry"><span class="span">ⓐ</span> </td>
+  <td class="entry"></td>
+</tr>
+<tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>7</mn></mfrac><mo>·</mo><mn>56</mn></math></td></tr>
+<tr class="row">
+  <td class="entry">56-কে ভগ্নাংশ হিসেবে লেখো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>7</mn></mfrac><mo>·</mo><mfrac><mn>56</mn><mn>1</mn></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">গুণফলের চিহ্ন নির্ণয় করো; গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>56</mn><mn>7</mn></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">সরল করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math></td></tr>
+</tbody>
+
+
+
+
+
+
+
+
+</table><table id="eip-id1168466048420" class="table" aria-label="লব 12 ও হর 5-এর ভগ্নাংশকে −20x দিয়ে গুণ করা হচ্ছে। −20x-কে লবে ও 1-কে হরে লিখে গুণ করো। সংখ্যাগত সহগ ঋণাত্মক; ভগ্নাংশের লব 12 গুণ 20 গুণ x ও হর 5 গুণ 1, বাইরে ঋণচিহ্ন। সাধারণ গুণনীয়ক দেখালে লব 12 গুণ 4 গুণ 5 গুণ x। লব ও হরের 5 দুটি কাটা হয়েছে। বাকি গুণনীয়কগুলি গুণ করে পাই −48x। এখানে x চল; x-এর মান না জানলে গোটা রাশির চিহ্ন স্থির করা যায় না।"><span class="label"></span>
+<tbody class="tbody">
+<tr class="row">
+  <td class="entry"><span class="span">ⓑ</span> </td>
+  <td class="entry"></td>
+</tr>
+<tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>12</mn></mrow><mn>5</mn></mfrac><mrow><mo>(</mo><mrow><mn>−20</mn><mi>x</mi></mrow><mo>)</mo></mrow></math></td></tr>
+<tr class="row">
+  <td class="entry">−20x-কে ভগ্নাংশ হিসেবে লেখো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>12</mn></mrow><mn>5</mn></mfrac><mrow><mo>(</mo><mfrac><mrow><mn>−20</mn><mi>x</mi></mrow><mrow><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></math></td></tr>
+<tr class="row">
+  <td class="entry">সংখ্যাগত সহগের চিহ্ন নির্ণয় করো; গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>12</mn><mo>·</mo><mn>20</mn><mo>·</mo><mi>x</mi></mrow><mrow><mn>5</mn><mo>·</mo><mn>1</mn></mrow></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়ক দেখাও; তার পরে তা দিয়ে লব ও হর ভাগ করো।</td>
+  <td class="entry"><div id="eip-id1168468528865" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_036_img-01.png" alt="ভগ্নাংশের বাইরে ঋণচিহ্ন। লব: 12 গুণ 4 গুণ 5 গুণ x। হর: 5 গুণ 1। লব ও হরের সাধারণ গুণনীয়ক 5 দুটি কাটা হয়েছে। x চলটি লবে রয়ে গেছে।"/><p class="description">ভগ্নাংশের বাইরে ঋণচিহ্ন। লব: 12 গুণ 4 গুণ 5 গুণ x। হর: 5 গুণ 1। লব ও হরের সাধারণ গুণনীয়ক 5 দুটি কাটা হয়েছে। x চলটি লবে রয়ে গেছে।</p></div></td></tr>
+<tr class="row">
+  <td class="entry">বাকি থাকা গুণনীয়কগুলি গুণ করো; সরল করো।</td>
+  <td class="entry">−48x</td></tr>
+</tbody>
+
+
+
+
+
+
+
+
+</table></section>
+</div></section><aside id="fs-id1467322" class="note">
+<div id="fs-id1835798" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1835798">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id764673" class="problem">
+<p id="fs-id2862189" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো:</p>
+<div id="fs-id1966816" class="para"><ol id="eip-id1169412621214" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em" /><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>·</mo><mn>72</mn><mspace width="1.0em" /></math></li><li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.2em" /><mfrac><mrow><mn>11</mn></mrow><mn>3</mn></mfrac><mrow><mo>(</mo><mrow><mn>−9</mn><mi>a</mi></mrow><mo>)</mo></mrow></math> </li></ol></div></div>
+<section id="fs-id2155634" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id1406586" class="para"><ol id="eip-id1168468331926" class="circled"><li class="item"><span class="span">ⓐ</span> 9</li><li class="item"><span class="span">ⓑ</span> −33<strong>a</strong></li></ol></div></section>
+</div>
+</aside>
+<aside id="fs-id2784746" class="note">
+<div id="fs-id1511894" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1511894">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2707936" class="problem">
+<p id="fs-id1881389" class="para">গুণ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো:</p>
+<div id="fs-id1373389" class="para"><ol id="eip-id1168469430618" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>·</mo><mn>64</mn></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>16</mn><mi>x</mi><mo>·</mo><mfrac><mrow><mn>11</mn></mrow><mrow><mn>12</mn></mrow></mfrac></math></li></ol></div></div>
+<section id="fs-id1508469" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id1372010" class="para"><ol id="eip-id1168467345915" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>24</mn></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>44</mn><mi>x</mi></mrow><mn>3</mn></mfrac></math></li></ol></div></section>
+</div>
+</aside>
+</section><section id="fs-id1390478" class="section"><h2 class="title">গুণাত্মক বিপরীত নির্ণয় করো</h2><p id="fs-id1166761301297" class="para">ভগ্নাংশ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></math>-এর মধ্যে একটি বিশেষ সম্পর্ক আছে। এমনই আর একটি জোড়া হল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>10</mn></mrow><mn>7</mn></mfrac></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>7</mn><mrow><mn>10</mn></mrow></mfrac><mo>.</mo></mrow></math> সম্পর্কটি কি তুমি বুঝতে পারছ? এদের একটির লব ও হর অন্যটির হর ও লবের জায়গায় আছে। প্রত্যেক জোড়ার ভগ্নাংশ দুটিকে গুণ করলে গুণফল হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math></p>
+<div id="fs-id1834573" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mspace width="1.0em" /><mtext>এবং</mtext><mspace width="1.0em" /><mo>−</mo><mfrac><mrow><mn>10</mn></mrow><mn>7</mn></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>7</mn><mrow><mn>10</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math></div><p id="fs-id1597613" class="para">এমন জোড়ার সংখ্যা দুটিকে পরস্পরের গুণাত্মক বিপরীত বলে।</p><aside id="fs-id1361007" class="note">
+<h2 class="title">গুণাত্মক বিপরীত</h2>
+<p id="fs-id1804020" class="para">কোনো অশূন্য ভগ্নাংশের <strong id="term-00007" class="term">গুণাত্মক বিপরীত</strong> হলো তার লব ও হরের স্থান বদলালে পাওয়া ভগ্নাংশ। তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow></math> ভগ্নাংশের গুণাত্মক বিপরীত <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>b</mi><mi>a</mi></mfrac><mo>,</mo></mrow></math> যেখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>b</mi><mo>≠</mo><mn>0</mn><mo>,</mo></mrow></math> অর্থাৎ লব ও হর কোনোটিই শূন্য নয়।</p><p id="fs-id1183695" class="para">একটি অশূন্য সংখ্যা ও তার গুণাত্মক বিপরীতের গুণফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math></p>
+<div id="fs-id1340660" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>·</mo><mfrac><mi>b</mi><mi>a</mi></mfrac><mo>=</mo><mn>1</mn></mrow></math></div>
+</aside>
+<p id="fs-id2299691" class="para">কোনো অশূন্য ভগ্নাংশের গুণাত্মক বিপরীত পেতে তার লব ও হরের স্থান বদলাও। অর্থাৎ, লবের সংখ্যাটিকে হরে এবং হরের সংখ্যাটিকে লবে বসাও।</p><p id="fs-id3262124" class="para">দুটি সংখ্যার গুণফল ধনাত্মক হতে হলে সংখ্যা দুটির চিহ্ন একই হতে হবে। তাই একটি সংখ্যা ও তার গুণাত্মক বিপরীতের চিহ্নও একই হয়।</p><div id="fs-id1474540" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_035_img.jpg" alt="ছবির ইংরেজি লেখার বাংলা পাঠ: লব a ও হর b-এর ভগ্নাংশকে লব b ও হর a-এর ভগ্নাংশ দিয়ে গুণ করলে ধনাত্মক 1 পাওয়া যায়; এখানে a ও b অশূন্য। বাঁ দিকের উদাহরণে 3-কে লব 1, হর 3-এর ভগ্নাংশ দিয়ে গুণ করলে 1 হয়; দুটি সংখ্যাই ধনাত্মক। ডান দিকের উদাহরণে ঋণাত্মক 3-কে ঋণাত্মক চিহ্নযুক্ত লব 1, হর 3-এর ভগ্নাংশ দিয়ে গুণ করলে 1 হয়; দুটি সংখ্যাই ঋণাত্মক।"/><p class="description">ছবির ইংরেজি লেখার বাংলা পাঠ: লব a ও হর b-এর ভগ্নাংশকে লব b ও হর a-এর ভগ্নাংশ দিয়ে গুণ করলে ধনাত্মক 1 পাওয়া যায়; এখানে a ও b অশূন্য। বাঁ দিকের উদাহরণে 3-কে লব 1, হর 3-এর ভগ্নাংশ দিয়ে গুণ করলে 1 হয়; দুটি সংখ্যাই ধনাত্মক। ডান দিকের উদাহরণে ঋণাত্মক 3-কে ঋণাত্মক চিহ্নযুক্ত লব 1, হর 3-এর ভগ্নাংশ দিয়ে গুণ করলে 1 হয়; দুটি সংখ্যাই ঋণাত্মক।</p></div>
+<p id="fs-id2224098" class="para">গুণাত্মক বিপরীত পেতে চিহ্ন একই রাখো এবং ভগ্নাংশের লব ও হরের স্থান বদলাও। শূন্যের কোনো গুণাত্মক বিপরীত নেই। কেন? একটি সংখ্যা ও তার গুণাত্মক বিপরীতের গুণফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math> এমন কোনো সংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi></math> কি আছে, যার জন্য <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>·</mo><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mo>?</mo></math> না। তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math>-এর কোনো গুণাত্মক বিপরীত নেই।</p><section id="fs-id1242988" class="example">
+<div id="fs-id1841849" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1841849">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id2691525" class="problem">
+<p id="fs-id1714600" class="para">প্রত্যেকটি সংখ্যার গুণাত্মক বিপরীত নির্ণয় করো। তারপর যাচাই করো যে সংখ্যাটি ও তার গুণাত্মক বিপরীতের গুণফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math></p>
+
+<ol id="eip-id1168469776775" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>9</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mn>5</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math></li></ol>
+
+</div>
+<section id="fs-id2150565" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id2270162" class="para">গুণাত্মক বিপরীত পেতে আমরা চিহ্ন একই রাখি এবং ভগ্নাংশের লব ও হরের স্থান বদলাই।</p>
+<table id="eip-374" class="table" aria-label="লব 4 ও হর 9-এর ভগ্নাংশের গুণাত্মক বিপরীত নির্ণয় করা হয়েছে। তারপর সংখ্যা দুটির গুণফল 1 কি না যাচাই করা হয়েছে।"><span class="label"></span>
+<tbody class="tbody">
+  <tr class="row"><td class="entry"><span class="span">ⓐ</span> </td>
+  <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত নির্ণয় করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn></mrow><mrow><mn>4</mn></mrow></mfrac></math>।</td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই:</td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সংখ্যাটি ও তার গুণাত্মক বিপরীত গুণ করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>⋅</mo><mfrac><mrow><mn>9</mn></mrow><mrow><mn>4</mn></mrow></mfrac></math></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">লব দুটিকে গুণ করো এবং হর দুটিকে গুণ করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>36</mn></mrow><mrow><mn>36</mn></mrow></mfrac></math></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">লঘিষ্ঠ আকারে প্রকাশ করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>✓</mo></math></td>
+  </tr>
+</tbody>
+
+
+
+
+
+
+
+</table><table id="eip-37774" class="table" aria-label="ঋণাত্মক চিহ্নযুক্ত লব 1 ও হর 6-এর ভগ্নাংশের গুণাত্মক বিপরীত নির্ণয়, সরলীকরণ ও গুণফল যাচাই।"><span class="label"></span>
+<tbody class="tbody">
+  <tr class="row">
+    <td class="entry"><span class="span">ⓑ</span> </td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>6</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত নির্ণয় করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>6</mn></mrow><mrow><mn>1</mn></mrow></mfrac></math> </td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সরল করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>6</mn></math></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই:</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>6</mn></mrow></mfrac><mo>⋅</mo><mo>(</mo><mo>-</mo><mn>6</mn><mo>)</mo></math></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>✓</mo></math></td>
+  </tr>
+
+</tbody>
+
+
+
+
+
+
+
+
+
+</table><table id="eip-id1170196522976" class="table" aria-label="ঋণাত্মক চিহ্নযুক্ত লব 14 ও হর 5-এর ভগ্নাংশের গুণাত্মক বিপরীত নির্ণয় ও গুণফল যাচাই।"><span class="label"></span>
+<tbody class="tbody">
+  <tr class="row">
+    <td class="entry"><span class="span">ⓒ</span> </td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>5</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত নির্ণয় করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>14</mn></mrow></mfrac></math> </td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই:</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>⋅</mo><mo>(</mo><mo>-</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>14</mn></mrow></mfrac><mo>)</mo></math></td>
+  </tr>
+<tr class="row">
+<td class="entry"></td><td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>70</mn></mrow><mrow><mn>70</mn></mrow></mfrac></math></td></tr>
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>✓</mo></math></td>
+  </tr>
+
+</tbody>
+
+
+
+
+
+
+
+
+</table><table id="eip-id1170195508737" class="table" aria-label="7-কে লব 7, হর 1-এর ভগ্নাংশের আকারে লিখে গুণাত্মক বিপরীত নির্ণয় এবং গুণফল যাচাই।"><span class="label"></span>
+<tbody class="tbody">
+  <tr class="row">
+    <td class="entry"><span class="span">ⓓ</span> </td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>-এর গুণাত্মক বিপরীত নির্ণয় করো।</td>
+    <td class="entry"></td>
+  </tr>
+
+<tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>-কে ভগ্নাংশের আকারে লেখো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn></mrow><mrow><mn>1</mn></mrow></mfrac></math></td>
+  </tr>
+
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn></mrow><mrow><mn>1</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত লেখো।</td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn></mrow><mrow><mn>7</mn></mrow></mfrac></math></td>
+</tr>
+
+
+<tr class="row">
+    <td class="entry">যাচাই:</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mo>⋅</mo><mo>(</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>7</mn></mrow></mfrac><mo>)</mo></math></td>
+  </tr>
+
+
+<tr class="row">
+<td class="entry"></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>✓</mo></math></td></tr>
+
+</tbody>
+
+
+
+
+
+
+</table></section>
+</div></section>
+<aside id="fs-id1602123" class="note">
+<div id="fs-id2906598" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2906598">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2171218" class="problem">
+<p id="fs-id2175650" class="para">গুণাত্মক বিপরীত নির্ণয় করো:</p>
+<div id="fs-id2676883" class="para"><ol id="eip-id1168469888111" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>7</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>11</mn></mrow><mn>4</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>14</mn></math></li></ol></div></div>
+<section id="fs-id2223955" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id2330674" class="para"><ol id="eip-id1168468629212" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>5</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>−8</mn></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>4</mn><mrow><mn>11</mn></mrow></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>14</mn></mfrac></math></li></ol></div></section>
+</div>
+</aside>
+<aside id="fs-id1160285" class="note">
+<div id="fs-id1918491" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1918491">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id3159114" class="problem">
+<p id="fs-id1512222" class="para">গুণাত্মক বিপরীত নির্ণয় করো:</p>
+<div id="fs-id1355541" class="para"><ol id="eip-id1168468483976" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>7</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>1</mn><mrow><mn>12</mn></mrow></mfrac></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mn>9</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>21</mn></math></li></ol></div></div>
+<section id="fs-id2900649" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id2262256" class="para"><ol id="eip-id1168469835155" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>3</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mn>12</mn></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>9</mn></mrow><mn>14</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn></mrow><mn>21</mn></mfrac></math></li></ol></div></section>
+</div>
+</aside>
+<p id="fs-id3013805" class="para">আগের একটি অধ্যায়ে আমরা বিপরীত সংখ্যা ও পরম মান নিয়ে কাজ করেছি। <a href="#fs-id1394345">সারণি [fs-id1394345]</a>-এ বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীতের তুলনা দেখানো হয়েছে।</p>
+<table id="fs-id1394345" class="table" aria-label="দুই সারি ও তিন স্তম্ভের ছকে বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীতের তুলনা। অশূন্য সংখ্যার বিপরীত সংখ্যার চিহ্ন উল্টো হয়; শূন্যের বিপরীত সংখ্যা শূন্য। পরম মান কখনও ঋণাত্মক হয় না। অশূন্য সংখ্যার গুণাত্মক বিপরীতের চিহ্ন একই থাকে এবং ভগ্নাংশের লব ও হরের স্থান বদলায়; শূন্যের গুণাত্মক বিপরীত নেই।">
+<span class="label"></span>
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry">অশূন্য সংখ্যার চিহ্ন উল্টো হয়; শূন্যের বিপরীত সংখ্যা শূন্য</td>
+<td class="entry">কখনও ঋণাত্মক হয় না</td>
+<td class="entry">অশূন্য সংখ্যার চিহ্ন একই থাকে; ভগ্নাংশের লব ও হরের স্থান বদলায়। শূন্যের গুণাত্মক বিপরীত নেই</td>
+</tr>
+</tbody>
+
+</table>
+<section id="fs-id2649269" class="example">
+<div id="fs-id1811476" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1811476">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1741941" class="problem">
+<p id="fs-id1627754" class="para">বাঁ দিকের স্তম্ভে দেওয়া প্রতিটি সংখ্যার জন্য ছকটি পূরণ করো:</p>
+<table id="fs-id1179454" class="table" aria-label="পাঁচ সারি ও চার স্তম্ভের ছক। স্তম্ভের শিরোনাম: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম স্তম্ভে আছে ঋণাত্মক চিহ্নযুক্ত লব 3, হর 8-এর ভগ্নাংশ; লব 1, হর 2; লব 9, হর 5; এবং ঋণাত্মক 5। বাকি ঘরগুলি পূরণ করতে হবে।">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">সংখ্যা</td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−5</mn></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+</tbody>
+
+</table>
+</div>
+<section id="fs-id2431075" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id1932057" class="para">বিপরীত সংখ্যা পেতে অশূন্য সংখ্যার চিহ্ন বদলাও; শূন্যের বিপরীত সংখ্যা শূন্য। পরম মান পেতে ধনাত্মক সংখ্যাকে একই রাখো, কিন্তু ঋণাত্মক সংখ্যার বিপরীত সংখ্যা নাও; শূন্যের পরম মান শূন্য। গুণাত্মক বিপরীত পেতে অশূন্য সংখ্যার চিহ্ন একই রাখো এবং ভগ্নাংশের <strong id="term-00008" class="term">লব ও হরের স্থান বদলাও</strong>।</p>
+<table id="fs-id1722688" class="table" aria-label="পূর্ণ করা ছকে স্তম্ভের ক্রম: সংখ্যা, বিপরীত সংখ্যা, পরম মান, গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 3, হর 8; লব 3, হর 8; লব 3, হর 8; ঋণাত্মক চিহ্নযুক্ত লব 8, হর 3। দ্বিতীয় সারি: লব 1, হর 2; ঋণাত্মক চিহ্নযুক্ত লব 1, হর 2; লব 1, হর 2; 2। তৃতীয় সারি: লব 9, হর 5; ঋণাত্মক চিহ্নযুক্ত লব 9, হর 5; লব 9, হর 5; লব 5, হর 9। চতুর্থ সারি: ঋণাত্মক 5; 5; 5; ঋণাত্মক চিহ্নযুক্ত লব 1, হর 5।">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">সংখ্যা</td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>8</mn><mn>3</mn></mfrac></mrow></math></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>9</mn></mfrac></mrow></math></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−5</mn></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow></math></td>
+</tr>
+</tbody>
+
+</table>
+</section>
+</div>
+</section>
+<aside id="fs-id2792517" class="note">
+<div id="fs-id1608252" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1608252">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2202608" class="problem">
+<p id="fs-id1236377" class="para">দেওয়া প্রতিটি সংখ্যার জন্য ছকটি পূরণ করো:</p>
+<table id="fs-id2657895" class="table" aria-label="পাঁচ সারি ও চার স্তম্ভের ছক। স্তম্ভের শিরোনাম: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম স্তম্ভে আছে ঋণাত্মক চিহ্নযুক্ত লব 5, হর 8-এর ভগ্নাংশ; লব 1, হর 4; লব 8, হর 3; এবং ঋণাত্মক 8। বাকি ঘরগুলি পূরণ করতে হবে।">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">সংখ্যা</td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>8</mn><mn>3</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−8</mn></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+</tbody>
+
+</table>
+</div>
+<section id="fs-id2198989" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1167906110243" class="para"><br/><div id="fs-id1167906110247" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_037_img.jpg" alt="উত্তরের ছকে চারটি স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 5, হর 8-এর ভগ্নাংশ; বিপরীত সংখ্যা লব 5, হর 8; পরম মান লব 5, হর 8; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 8, হর 5। দ্বিতীয় সারি: লব 1, হর 4; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 1, হর 4; পরম মান লব 1, হর 4; গুণাত্মক বিপরীত 4। তৃতীয় সারি: লব 8, হর 3; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 8, হর 3; পরম মান লব 8, হর 3; গুণাত্মক বিপরীত লব 3, হর 8। চতুর্থ সারি: ঋণাত্মক 8; বিপরীত সংখ্যা 8; পরম মান 8; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 1, হর 8।"/><p class="description">উত্তরের ছকে চারটি স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 5, হর 8-এর ভগ্নাংশ; বিপরীত সংখ্যা লব 5, হর 8; পরম মান লব 5, হর 8; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 8, হর 5। দ্বিতীয় সারি: লব 1, হর 4; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 1, হর 4; পরম মান লব 1, হর 4; গুণাত্মক বিপরীত 4। তৃতীয় সারি: লব 8, হর 3; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 8, হর 3; পরম মান লব 8, হর 3; গুণাত্মক বিপরীত লব 3, হর 8। চতুর্থ সারি: ঋণাত্মক 8; বিপরীত সংখ্যা 8; পরম মান 8; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 1, হর 8।</p></div></p>
+</section>
+</div>
+</aside>
+<aside id="eip-id1165685648332" class="note">
+<div id="eip-id1165685648336" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#eip-id1165685648336">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="eip-id1165685648339" class="problem">
+<p id="eip-id1165685648364" class="para">দেওয়া প্রতিটি সংখ্যার জন্য ছকটি পূরণ করো:</p>
+<table id="eip-id1165685648367" class="table">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">সংখ্যা</td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>4</mn><mn>7</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>9</mn><mn>4</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−1</mn></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+</tbody>
+
+</table></div>
+<section id="fs-idm236193504" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm236193248" class="para"><br/><div id="fs-idm236192864" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_040_img.jpg" alt="উত্তরের ছকে চারটি স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 4, হর 7-এর ভগ্নাংশ; বিপরীত সংখ্যা লব 4, হর 7; পরম মান লব 4, হর 7; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 7, হর 4। দ্বিতীয় সারি: লব 1, হর 8; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 1, হর 8; পরম মান লব 1, হর 8; গুণাত্মক বিপরীত 8। তৃতীয় সারি: লব 9, হর 4; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 9, হর 4; পরম মান লব 9, হর 4; গুণাত্মক বিপরীত লব 4, হর 9। চতুর্থ সারি: ঋণাত্মক 1; বিপরীত সংখ্যা 1; পরম মান 1; গুণাত্মক বিপরীত ঋণাত্মক 1।"/><p class="description">উত্তরের ছকে চারটি স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 4, হর 7-এর ভগ্নাংশ; বিপরীত সংখ্যা লব 4, হর 7; পরম মান লব 4, হর 7; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 7, হর 4। দ্বিতীয় সারি: লব 1, হর 8; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 1, হর 8; পরম মান লব 1, হর 8; গুণাত্মক বিপরীত 8। তৃতীয় সারি: লব 9, হর 4; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 9, হর 4; পরম মান লব 9, হর 4; গুণাত্মক বিপরীত লব 4, হর 9। চতুর্থ সারি: ঋণাত্মক 1; বিপরীত সংখ্যা 1; পরম মান 1; গুণাত্মক বিপরীত ঋণাত্মক 1।</p></div></p>
+</section>
+</div></aside></section><section id="fs-id2700526" class="section">
+<h2 class="title">ভগ্নাংশের ভাগ</h2><p id="fs-id1574742" class="para">কেন <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>4</mn></mrow><mo>?</mo></math> গোনার গুটি দিয়ে আগে এর মডেল তৈরি করেছি। প্রতিটি দলে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>টি করে গুটি রাখলে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn></mrow></math>টি গুটি দিয়ে মোট কতটি দল তৈরি করা যায়?</p>
+<div id="fs-id1621685" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_015_img.jpg" alt="চারটি ডিম্বাকৃতি বেষ্টনী; প্রতিটির ভিতরে 3টি করে গোল গুটি, মোট 12টি গুটি।"/><p class="description">চারটি ডিম্বাকৃতি বেষ্টনী; প্রতিটির ভিতরে 3টি করে গোল গুটি, মোট 12টি গুটি।</p></div>
+<p id="fs-id1828558" class="para">এখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math>টি দল আছে; প্রতিটি দলে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>টি গুটি। অন্যভাবে বললে, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math>-কে চারবার নিলে হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn><mo>.</mo></mrow></math> তাই, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>4</mn><mo>.</mo></mrow></math></p>
+<p id="fs-id2340005" class="para">ভগ্নাংশ ভাগ করলে কী হবে? ধরা যাক, এই ভাগফলটি নির্ণয় করতে চাই: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>.</mo></mrow></math> জানতে হবে, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math> মাপের কতগুলি অংশ মিলে তৈরি হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>.</mo></mrow></math> এটি অর্ধেক মাপের অংশ। ভগ্নাংশের পাত দিয়ে এই ভাগের মডেল বানাতে পারি। প্রথমে অর্ধেক ও এক-ষষ্ঠাংশ মাপের পাতগুলি পাশাপাশি মেলাই; দেখো <a href="#CNX_BMath_Figure_04_02_016">চিত্র [CNX_BMath_Figure_04_02_016]</a>। দেখা যাচ্ছে, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math> মাপের তিনটি পাতের মোট পরিমাণ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo></mrow></math> অর্থাৎ অর্ধেক পাতের মাপ। তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>=</mo><mn>3</mn><mo>.</mo></mrow></math></p>
+<figure id="CNX_BMath_Figure_04_02_016" class="figure">
+<div id="fs-id1458356" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_016-179c.jpg" alt="উপরে একটি আয়তাকার পাত; তার চিহ্নিত ভগ্নাংশে লব 1, হর 2। নীচে একই দৈর্ঘ্যের আয়তাকার পাত সমান 3 ভাগে বিভক্ত; প্রতিটি ভাগের চিহ্নিত ভগ্নাংশে লব 1, হর 6।"/><p class="description">উপরে একটি আয়তাকার পাত; তার চিহ্নিত ভগ্নাংশে লব 1, হর 2। নীচে একই দৈর্ঘ্যের আয়তাকার পাত সমান 3 ভাগে বিভক্ত; প্রতিটি ভাগের চিহ্নিত ভগ্নাংশে লব 1, হর 6।</p></div>
+</figure>
+<aside id="eip-993" class="note">হাতে-কলমে গণিতের ‘ভগ্নাংশ ভাগের মডেল’ কাজটি করলে ভগ্নাংশের ভাগ আরও ভালোভাবে বুঝতে পারবে।</aside><section id="fs-id1340751" class="example">
+<div id="fs-id1508964" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1508964">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1899946" class="problem">
+<p id="fs-id1969048" class="para">মডেল তৈরি করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2908766" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id1885595" class="para">লক্ষ্য হল খুঁজে দেখা, কতগুলি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math> মাপের পাত মিলে তৈরি হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math> প্রথমে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> মাপের একটি পাত নাও। তার নীচে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math> মাপের পাতগুলি এমনভাবে পাশাপাশি সাজাও, যেন উপরের <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> মাপের পাতটির সমান দৈর্ঘ্য হয়।</p>
+<div id="fs-id1362946" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_017_img.jpg" alt="উপরে একটি আয়তাকার পাত; তার চিহ্নিত ভগ্নাংশে লব 1, হর 4। নীচে একই দৈর্ঘ্যের আয়তাকার পাত সমান 2 ভাগে বিভক্ত; প্রতিটি ভাগের চিহ্নিত ভগ্নাংশে লব 1, হর 8।"/><p class="description">উপরে একটি আয়তাকার পাত; তার চিহ্নিত ভগ্নাংশে লব 1, হর 4। নীচে একই দৈর্ঘ্যের আয়তাকার পাত সমান 2 ভাগে বিভক্ত; প্রতিটি ভাগের চিহ্নিত ভগ্নাংশে লব 1, হর 8।</p></div>
+<p id="fs-id3017276" class="para">এক-চতুর্থাংশ মাপের পাতটি তৈরি করতে দুটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math> মাপের পাত লাগে। অর্থাৎ, দুটি পাত মিলে হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math></p>
+<p id="fs-id4163583" class="para">তাই, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>=</mo><mn>2</mn><mo>.</mo></mrow></math></p>
+</section>
+</div>
+</section>
+<aside id="fs-id1730116" class="note">
+<div id="fs-id4315988" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id4315988">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id4219967" class="problem">
+<p id="fs-id1567253" class="para">মডেল তৈরি করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2138110" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm206575408" class="para">2</p>
+<p id="fs-id1171103030165" class="para"><br/><div id="fs-id1325545" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_018_img.jpg" alt="উপরে একটি আয়তাকার পাত; তার চিহ্নিত ভগ্নাংশে লব 1, হর 3। নীচে একই দৈর্ঘ্যের আয়তাকার পাত সমান 2 ভাগে বিভক্ত; প্রতিটি ভাগের চিহ্নিত ভগ্নাংশে লব 1, হর 6।"/><p class="description">উপরে একটি আয়তাকার পাত; তার চিহ্নিত ভগ্নাংশে লব 1, হর 3। নীচে একই দৈর্ঘ্যের আয়তাকার পাত সমান 2 ভাগে বিভক্ত; প্রতিটি ভাগের চিহ্নিত ভগ্নাংশে লব 1, হর 6।</p></div></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1919209" class="note">
+<div id="fs-id1208820" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1208820">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2325427" class="problem">
+<p id="fs-id2298816" class="para">মডেল তৈরি করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2220935" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm241127312" class="para">2</p>
+<p id="fs-id1171103110560" class="para"><br/><div id="fs-id2387806" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_019_img.jpg" alt="উপরে একটি আয়তাকার পাত; তার চিহ্নিত ভগ্নাংশে লব 1, হর 2। নীচে একই দৈর্ঘ্যের আয়তাকার পাত সমান 2 ভাগে বিভক্ত; প্রতিটি ভাগের চিহ্নিত ভগ্নাংশে লব 1, হর 4।"/><p class="description">উপরে একটি আয়তাকার পাত; তার চিহ্নিত ভগ্নাংশে লব 1, হর 2। নীচে একই দৈর্ঘ্যের আয়তাকার পাত সমান 2 ভাগে বিভক্ত; প্রতিটি ভাগের চিহ্নিত ভগ্নাংশে লব 1, হর 4।</p></div></p>
+</section>
+</div>
+</aside>
+<section id="fs-id2269244" class="example">
+<div id="fs-id2908464" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2908464">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1282534" class="problem">
+<p id="fs-id2262665" class="para">মডেল তৈরি করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id3340394" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id1398050" class="para">জানতে চাই, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> মাপের কতগুলি অংশ মিলে তৈরি হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo></math> নীচের মডেলে তা দেখানো হয়েছে।</p>
+<div id="fs-id1398224" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_020_img.jpg" alt="উপরে দুটি একই দৈর্ঘ্যের আয়তাকার পাত; প্রতিটির উপরে লেখা 1। নীচে একই দৈর্ঘ্যের দুটি পাত, প্রতিটি সমান 4 ভাগে বিভক্ত; মোট 8টি ভাগের প্রত্যেকটির চিহ্নিত ভগ্নাংশে লব 1, হর 4।"/><p class="description">উপরে দুটি একই দৈর্ঘ্যের আয়তাকার পাত; প্রতিটির উপরে লেখা 1। নীচে একই দৈর্ঘ্যের দুটি পাত, প্রতিটি সমান 4 ভাগে বিভক্ত; মোট 8টি ভাগের প্রত্যেকটির চিহ্নিত ভগ্নাংশে লব 1, হর 4।</p></div>
+<p id="fs-id1738644" class="para">আটটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> মাপের অংশ মিলে দুটি গোটা হয়। গোটা সংখ্যা ও ভাগের সমীকরণটি হল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>,</mo><mrow><mn>2</mn><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mn>8</mn><mo>.</mo></mrow></math></p>
+</section>
+</div>
+</section>
+<aside id="fs-id3274121" class="note">
+<div id="fs-id1370723" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1370723">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1714263" class="problem">
+<p id="fs-id1721210" class="para">মডেল তৈরি করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>÷</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1168874" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm241335632" class="para">6</p>
+<p id="fs-id1171103265357" class="para"><br/><div id="fs-id1608240" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_021_img.jpg" alt="উপরে একই দৈর্ঘ্যের দুটি আয়তাকার পাত; প্রতিটির উপরে লেখা 1। নীচে একই দৈর্ঘ্যের দুটি পাত, প্রতিটি সমান 3 ভাগে বিভক্ত; মোট 6টি ভাগের প্রত্যেকটির চিহ্নিত ভগ্নাংশে লব 1, হর 3।"/><p class="description">উপরে একই দৈর্ঘ্যের দুটি আয়তাকার পাত; প্রতিটির উপরে লেখা 1। নীচে একই দৈর্ঘ্যের দুটি পাত, প্রতিটি সমান 3 ভাগে বিভক্ত; মোট 6টি ভাগের প্রত্যেকটির চিহ্নিত ভগ্নাংশে লব 1, হর 3।</p></div></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id2241393" class="note">
+<div id="fs-id1393940" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1393940">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2212061" class="problem">
+<p id="fs-id1389506" class="para">মডেল তৈরি করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>÷</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1609314" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm235819968" class="para">6</p>
+<p id="fs-id1171102819720" class="para"><br/><div id="fs-id3202520" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_022_img.jpg" alt="উপরে একই দৈর্ঘ্যের 3টি আয়তাকার পাত; প্রতিটির উপরে লেখা 1। নীচে একই দৈর্ঘ্যের 3টি পাত, প্রতিটি সমান 2 ভাগে বিভক্ত; মোট 6টি ভাগের প্রত্যেকটির চিহ্নিত ভগ্নাংশে লব 1, হর 2।"/><p class="description">উপরে একই দৈর্ঘ্যের 3টি আয়তাকার পাত; প্রতিটির উপরে লেখা 1। নীচে একই দৈর্ঘ্যের 3টি পাত, প্রতিটি সমান 2 ভাগে বিভক্ত; মোট 6টি ভাগের প্রত্যেকটির চিহ্নিত ভগ্নাংশে লব 1, হর 2।</p></div></p>
+</section>
+</div>
+</aside>
+<p id="fs-id1785530" class="para">আর-একভাবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>-এর মডেল তৈরি করতে এবার মার্কিন মুদ্রা ব্যবহার করি। ইংরেজিতে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>-কে প্রায়ই ‘কোয়ার্টার’ বলা হয়; <a href="#CNX_BMath_Figure_04_02_023">চিত্র [CNX_BMath_Figure_04_02_023]</a>-এ দেখানো কোয়ার্টার মুদ্রাটির মূল্য এক ডলারের এক-চতুর্থাংশ। তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> প্রশ্নটির অর্থ দাঁড়ায়, ‘দুই ডলারে কতগুলি কোয়ার্টার আছে?’ এক ডলারে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math>টি কোয়ার্টার থাকে; তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math> ডলারে থাকে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math>টি কোয়ার্টার। আবারও পেলাম, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mn>8</mn><mo>.</mo></mrow></math></p>
+<figure id="CNX_BMath_Figure_04_02_023" class="figure">
+<div id="fs-id1543978" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_023.jpg" alt="মার্কিন যুক্তরাষ্ট্রের একটি কোয়ার্টার মুদ্রার ছবি।"/><p class="description">মার্কিন যুক্তরাষ্ট্রের একটি কোয়ার্টার মুদ্রার ছবি।</p></div>
+<caption class="caption">‘কোয়ার্টার’ নামে পরিচিত এই মার্কিন মুদ্রাটির মূল্য এক ডলারের এক-চতুর্থাংশ।</caption>
+</figure>
+<p id="fs-id1733017" class="para">ভগ্নাংশের পাত দিয়ে দেখিয়েছি, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>=</mo><mn>3</mn><mo>.</mo></mrow></math> লক্ষ করো, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>6</mn><mn>1</mn></mfrac><mo>=</mo><mn>3</mn></mrow></math>-ও সত্য। <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>6</mn><mn>1</mn></mfrac></mrow></math>-এর মধ্যে সম্পর্ক কী? এগুলি পরস্পরের গুণাত্মক বিপরীত—লব ও হরের স্থান বদলালে একটি থেকে অপরটি পাওয়া যায়। এ থেকেই ভগ্নাংশ ভাগের নিয়মটি পাই।</p>
+<aside id="fs-id1185222" class="note">
+<h2 class="title">ভগ্নাংশ ভাগের নিয়ম</h2>
+<p id="fs-id1792338" class="para">ধরা যাক, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>d</mi></mrow></math> এমন সংখ্যা, যেখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>b</mi><mo>≠</mo><mn>0</mn><mo>,</mo><mi>c</mi><mo>≠</mo><mn>0</mn><mo>,</mo></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>d</mi><mo>≠</mo><mn>0</mn><mo>,</mo></mrow></math> তবে</p>
+<div id="fs-id1171100707994" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>÷</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>·</mo><mfrac><mi>d</mi><mi>c</mi></mfrac></mrow></math></div>
+<p id="fs-id2691204" class="para">ভগ্নাংশ ভাগ করতে প্রথম ভগ্নাংশটিকে দ্বিতীয় অশূন্য ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণ করো।</p>
+</aside>
+<p id="fs-id2325600" class="para">আমাদের <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>b</mi><mo>≠</mo><mn>0</mn><mo>,</mo><mi>c</mi><mo>≠</mo><mn>0</mn></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>d</mi><mo>≠</mo><mn>0</mn></mrow></math> শর্তগুলি লিখতে হবে, যাতে কখনও শূন্য দিয়ে ভাগ না হয়।</p>
+<section id="fs-id2352971" class="example"><div id="fs-id1382195" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1382195">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2603246" class="problem">
+<p id="fs-id2275768" class="para">ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>3</mn><mn>7</mn></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2263586" class="solution">
+<h2 class="title">সমাধান</h2>
+
+<table id="eip-id1168468274991" class="table" aria-label="ভগ্নাংশ ভাগকে দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণে বদলে লঘিষ্ঠ আকারে উত্তর পাওয়ার ধাপগুলি দেখানো হয়েছে।"><span class="label"></span>
+<tbody class="tbody">
+<tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>3</mn><mn>7</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></td></tr>
+<tr class="row">
+  <td class="entry">প্রথম ভগ্নাংশটিকে দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>(</mo><mo>−</mo><mfrac><mn>7</mn><mn>3</mn></mfrac><mo>)</mo></math></td></tr>
+<tr class="row">
+  <td class="entry">গুণ করো। গুণফল ঋণাত্মক।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>14</mn><mn>15</mn></mfrac></math></td></tr>
+</tbody>
+
+
+
+
+</table></section>
+</div>
+</section><aside id="fs-id4120559" class="note">
+<div id="fs-id2495384" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2495384">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2220252" class="problem">
+<p id="fs-id2961572" class="para">ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>7</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2267354" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1262427" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>9</mn><mrow><mn>14</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1160023" class="note">
+<div id="fs-id1727728" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1727728">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1548119" class="problem">
+<p id="fs-id1629369" class="para">ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>7</mn><mn>5</mn></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2204854" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1579752" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<section id="fs-id1822162" class="example"><div id="fs-id1347749" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1347749">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1159900" class="problem">
+<p id="fs-id2629698" class="para">চলটির মান শূন্য নয় ধরে ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>÷</mo><mfrac><mi>n</mi><mn>5</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id3340612" class="solution">
+<h2 class="title">সমাধান</h2>
+
+<table id="eip-id1168466192195" class="table" aria-label="চলযুক্ত দুটি ভগ্নাংশ ভাগ করতে দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণ করার ধাপগুলি দেখানো হয়েছে।"><span class="label"></span>
+<tbody class="tbody">
+<tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>÷</mo><mfrac><mi>n</mi><mn>5</mn></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">প্রথম ভগ্নাংশটিকে দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>·</mo><mfrac><mn>5</mn><mi>n</mi></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>10</mn></mrow><mrow><mn>3</mn><mi>n</mi></mrow></mfrac></math></td></tr>
+</tbody>
+
+
+
+</table>
+</section>
+</div></section><aside id="fs-id1808732" class="note">
+<div id="fs-id752392" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id752392">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2662153" class="problem">
+<p id="fs-id1744840" class="para">চলটির মান শূন্য নয় ধরে ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>5</mn></mfrac><mo>÷</mo><mfrac><mi>p</mi><mn>7</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2267236" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1461555" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>21</mn></mrow><mrow><mn>5</mn><mi>p</mi></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1529415" class="note">
+<div id="fs-id2645446" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2645446">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1265120" class="problem">
+<p id="fs-id1516055" class="para">চলটির মান শূন্য নয় ধরে ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>8</mn></mfrac><mo>÷</mo><mfrac><mi>q</mi><mn>3</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2434605" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1386794" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>15</mn></mrow><mrow><mn>8</mn><mi>q</mi></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<section id="fs-id1549882" class="example"><div id="fs-id2370170" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2370170">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1546203" class="problem">
+<p id="fs-id2369156" class="para">ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>7</mn><mn>8</mn></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id3199626" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168467263034" class="table" aria-label="দুটি ঋণাত্মক ভগ্নাংশ ভাগ, গুণফলের চিহ্ন নির্ণয়, সাধারণ গুণনীয়ক বাদ দেওয়া ও লঘিষ্ঠ আকারে লেখার ধাপগুলি দেখানো হয়েছে।"><span class="label"></span>
+<tbody class="tbody">
+<tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>÷</mo><mo>(</mo><mo>−</mo><mfrac><mn>7</mn><mn>8</mn></mfrac><mo>)</mo></math></td></tr>
+<tr class="row">
+  <td class="entry">প্রথম ভগ্নাংশটিকে দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>·</mo><mo>(</mo><mo>−</mo><mfrac><mn>8</mn><mn>7</mn></mfrac><mo>)</mo></math></td></tr>
+<tr class="row">
+  <td class="entry">গুণ করো। আগে গুণফলের চিহ্ন নির্ণয় করতে মনে রেখো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>·</mo><mn>8</mn></mrow><mrow><mn>4</mn><mo>·</mo><mn>7</mn></mrow></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়কগুলি দেখানোর জন্য নতুন করে লেখো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>·</mo><menclose notation="updiagonalstrike"><mn>4</mn></menclose><mo>·</mo><mn>2</mn></mrow><mrow><menclose notation="updiagonalstrike"><mn>4</mn></menclose><mo>·</mo><mn>7</mn></mrow></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়ক বাদ দিয়ে লঘিষ্ঠ আকারে লেখো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>7</mn></mfrac></math></td></tr>
+</tbody>
+
+
+
+
+
+
+</table></section>
+</div></section><aside id="fs-id1862865" class="note">
+<div id="fs-id1250656" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1250656">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1605117" class="problem">
+<p id="fs-id2649324" class="para">ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1613316" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1631317" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1731339" class="note">
+<div id="fs-id2279421" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2279421">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1949411" class="problem">
+<p id="fs-id1470461" class="para">ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1531820" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1731663" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>4</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<section id="fs-id2961464" class="example"><div id="fs-id2135873" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2135873">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1781622" class="problem">
+<p id="fs-id1611165" class="para">ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>7</mn><mrow><mn>18</mn></mrow></mfrac><mo>÷</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>27</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2305386" class="solution">
+<h2 class="title">সমাধান</h2>
+
+<table id="eip-id1168466022407" class="table" aria-label="দুটি ভগ্নাংশ ভাগকে গুণে বদলে সাধারণ গুণনীয়ক বাদ দিয়ে লঘিষ্ঠ আকারে উত্তর পাওয়ার ধাপগুলি দেখানো হয়েছে।"><span class="label"></span>
+<tbody class="tbody">
+<tr class="row">
+  <td class="entry"></td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>7</mn><mrow><mn>18</mn></mrow></mfrac><mo>÷</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>27</mn></mrow></mfrac></mrow></math></td></tr>
+<tr class="row">
+  <td class="entry">প্রথম ভগ্নাংশটিকে দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>18</mn></mfrac><mo>·</mo><mfrac><mn>27</mn><mn>14</mn></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">গুণ করো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>·</mo><mn>27</mn></mrow><mrow><mn>18</mn><mo>·</mo><mn>14</mn></mrow></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়কগুলি দেখানোর জন্য নতুন করে লেখো।</td>
+  <td class="entry"><div id="eip-id1168468328104" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_034_img-01.png" alt="একটি ভগ্নাংশে লবে 7 গুণ 9 গুণ 3 এবং হরে 9 গুণ 2 গুণ 7 গুণ 2। লব ও হরের সাধারণ গুণনীয়ক 7 ও 9 কেটে বাদ দেওয়া দেখানো হয়েছে।"/><p class="description">একটি ভগ্নাংশে লবে 7 গুণ 9 গুণ 3 এবং হরে 9 গুণ 2 গুণ 7 গুণ 2। লব ও হরের সাধারণ গুণনীয়ক 7 ও 9 কেটে বাদ দেওয়া দেখানো হয়েছে।</p></div></td></tr>
+<tr class="row">
+  <td class="entry">সাধারণ গুণনীয়ক বাদ দাও।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mrow><mn>2</mn><mo>·</mo><mn>2</mn></mrow></mfrac></math></td></tr>
+<tr class="row">
+  <td class="entry">লঘিষ্ঠ আকারে লেখো।</td>
+  <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math></td></tr>
+</tbody>
+
+
+
+
+
+
+</table></section>
+</div></section><aside id="fs-id2603320" class="note">
+<div id="fs-id1607514" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1607514">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1395156" class="problem">
+<p id="fs-id1222060" class="para">ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>7</mn><mrow><mn>27</mn></mrow></mfrac><mo>÷</mo><mfrac><mrow><mn>35</mn></mrow><mrow><mn>36</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1782725" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2206531" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>4</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1824545" class="note">
+<div id="fs-id1392635" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1392635">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2451798" class="problem">
+<p id="fs-id2224488" class="para">ভাগ করো এবং উত্তরটি লঘিষ্ঠ আকারে লেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mrow><mn>14</mn></mrow></mfrac><mo>÷</mo><mfrac><mrow><mn>15</mn></mrow><mrow><mn>28</mn></mrow></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1957189" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1547189" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1784433" class="note"><h2 class="title">আরও অনলাইন উপকরণ দেখো</h2><ul id="fs-id2707739">
+<li class="item"><a href="https://www.openstax.org/l/24SimplifyFrac">ভগ্নাংশ লঘিষ্ঠ আকারে লেখা</a></li>
+<li class="item"><a href="https://www.openstax.org/l/24MultiplyFrac">ভগ্নাংশের গুণ: শুধু ধনাত্মক ভগ্নাংশ</a></li>
+<li class="item"><a href="https://www.openstax.org/l/24MultSigned">চিহ্নযুক্ত ভগ্নাংশের গুণ</a></li>
+<li class="item"><a href="https://www.openstax.org/l/24DivideFrac">ভগ্নাংশের ভাগ: শুধু ধনাত্মক ভগ্নাংশ</a></li>
+<li class="item"><a href="https://www.openstax.org/l/24DivideSign">চিহ্নযুক্ত ভগ্নাংশের ভাগ</a></li>
+</ul></aside></section>
+<section id="fs-id1790063" class="section">
+<h2 class="title">মূল ধারণা</h2>
+<ul id="eip-167"><li class="item"><strong>সমতুল ভগ্নাংশের ধর্ম</strong><ul id="eip-id1170323004261"><li class="item">যদি <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>,</mo><mi> b</mi><mo>,</mo><mi> c</mi></math> এমন সংখ্যা হয়, যেখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>≠</mo><mn>0</mn></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>≠</mo><mn>0</mn></math> তবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mo>⋅</mo><mi>c</mi></mrow><mrow><mi>b</mi><mo>⋅</mo><mi>c</mi></mrow></mfrac></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>a</mi><mo>⋅</mo><mi>c</mi></mrow><mrow><mi>b</mi><mo>⋅</mo><mi>c</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></mfrac></math>।</li></ul></li>
+<li class="item"><strong>ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করো।</strong><ol id="eip-id1170323004302"><li class="item">সাধারণ গুণনীয়কগুলি দেখিয়ে লব ও হর আবার লেখো। দরকার হলে লব ও হরকে মৌলিক গুণনীয়কে বিশ্লেষণ করো।</li>
+<li class="item">সমতুল ভগ্নাংশের ধর্ম ব্যবহার করে সাধারণ গুণনীয়ক দিয়ে লব ও হর ভাগ করো।</li>
+<li class="item">লবে ও হরে বাকি থাকা গুণনীয়কগুলি গুণ করো।</li></ol></li>
+<li class="item"><strong>ভগ্নাংশের গুণ</strong><ul id="eip-id1170323004360"><li class="item">যদি <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>,</mo><mi> b</mi><mo>,</mo><mi> c</mi><mo>,</mo></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi></math> এমন সংখ্যা হয়, যেখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>≠</mo><mn>0</mn></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mo>≠</mo><mn>0</mn></math> তবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></mfrac><mo>⋅</mo><mfrac><mrow><mi>c</mi></mrow><mrow><mi>d</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mi>c</mi></mrow><mrow><mi>b</mi><mi>d</mi></mrow></mfrac></math>।</li></ul></li>
+<li class="item"><strong>গুণাত্মক বিপরীত</strong><ul id="eip-id1170322987712"><li class="item">একটি অশূন্য ভগ্নাংশের লব ও হরের স্থান বদলালে তার গুণাত্মক বিপরীত পাওয়া যায়। একটি অশূন্য সংখ্যা ও তার গুণাত্মক বিপরীতের গুণফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math>। নীচের সমতায় লব ও হর দুটিই অশূন্য: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></mfrac><mo>⋅</mo><mfrac><mrow><mi>b</mi></mrow><mrow><mi>a</mi></mrow></mfrac><mo>=</mo><mn>1</mn></math></li>
+<li class="item"><table id="eip-id1170326426110" class="table" aria-label="বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীতের পার্থক্য"><h2 class="title"></h2><tbody class="tbody">
+<tr class="row">
+<td class="entry"><strong>বিপরীত সংখ্যা</strong></td>
+<td class="entry"><strong>পরম মান</strong></td>
+<td class="entry"><strong>গুণাত্মক বিপরীত</strong></td>
+</tr>
+
+<tr class="row">
+<td class="entry">অশূন্য সংখ্যার চিহ্ন উল্টো হয়; শূন্যের বিপরীত সংখ্যা শূন্য</td>
+<td class="entry">কখনও ঋণাত্মক হয় না</td>
+<td class="entry">অশূন্য সংখ্যার চিহ্ন একই থাকে; ভগ্নাংশের লব ও হরের স্থান বদলায়</td></tr></tbody></table></li></ul></li>
+<li class="item"><strong>ভগ্নাংশের ভাগ</strong><ul id="eip-id1170323913006"><li class="item">যদি <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>, </mo><mi>b</mi><mo>, </mo><mi>c</mi><mo>,</mo></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi></math> এমন সংখ্যা হয়, যেখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>≠</mo><mn>0</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>≠</mo><mn>0</mn></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mo>≠</mo><mn>0</mn></math> তবে<br/><div id="eip-id1170322979647" class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></mfrac><mo>÷</mo><mfrac><mrow><mi>c</mi></mrow><mrow><mi>d</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></mfrac><mo>⋅</mo><mfrac><mrow><mi>d</mi></mrow><mrow><mi>c</mi></mrow></mfrac></math></div></li>
+<li class="item">ভগ্নাংশ ভাগ করতে প্রথম ভগ্নাংশটিকে দ্বিতীয় ভগ্নাংশটির গুণাত্মক বিপরীত দিয়ে গুণ করো।</li></ul></li></ul></section>
+<section id="fs-id3215450" class="section"><section id="fs-id1808116" class="section"><h2 class="title">অনুশীলনে দক্ষতা</h2><p id="fs-id2375474" class="para"><strong>ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করা</strong> </p><p id="eip-507" class="para">নীচের অনুশীলনগুলিতে প্রতিটি ভগ্নাংশকে লঘিষ্ঠ আকারে লেখো। কোনো অপ্রকৃত ভগ্নাংশকে মিশ্র ভগ্নাংশে পরিণত কোরো না। চলযুক্ত রাশির ক্ষেত্রে হরের মান শূন্য নয় বলে ধরো।</p><div id="fs-id1568581" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1568581">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1347888" class="problem">
+<p id="fs-id1604351" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>7</mn><mrow><mn>21</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1346528" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2246481" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2775170" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2775170">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1790731" class="problem">
+<p id="fs-id1284728" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>8</mn><mrow><mn>24</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2481556" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2481556">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2264545" class="problem">
+<p id="fs-id1347502" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>15</mn></mrow><mrow><mn>20</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1346791" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1379732" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2261411" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2261411">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1374022" class="problem">
+<p id="fs-id3211279" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>12</mn></mrow><mrow><mn>18</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1312453" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1312453">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2785410" class="problem">
+<p id="fs-id2314438" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>40</mn></mrow><mrow><mn>88</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2420182" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1336899" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mrow><mn>11</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1547777" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1547777">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2369338" class="problem">
+<p id="fs-id1033577" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>63</mn></mrow><mrow><mn>99</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1032604" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1032604">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1788807" class="problem">
+<p id="fs-id1603310" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>108</mn></mrow><mrow><mn>63</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2325399" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2817966" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>12</mn></mrow><mn>7</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2793119" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2793119">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id574581" class="problem">
+<p id="fs-id2261318" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>104</mn></mrow><mrow><mn>48</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1684083" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1684083">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1381828" class="problem">
+<p id="fs-id1363951" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>120</mn></mrow><mrow><mn>252</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2196239" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1970881" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1741803" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1741803">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2280962" class="problem">
+<p id="fs-id1967034" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>182</mn></mrow><mrow><mn>294</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1238655" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1238655">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2655499" class="problem">
+<p id="fs-id1406695" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>168</mn></mrow><mrow><mn>192</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2687031" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1799726" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>7</mn><mn>8</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2903548" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2903548">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2262648" class="problem">
+<p id="fs-id1607745" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>140</mn></mrow><mrow><mn>224</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2279769" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2279769">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2676746" class="problem">
+<p id="fs-id1302203" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>11</mn><mi>x</mi></mrow><mrow><mn>11</mn><mi>y</mi></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1402050" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1899705" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>x</mi><mi>y</mi></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2270719" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2270719">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2338434" class="problem">
+<p id="fs-id4153464" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>15</mn><mi>a</mi></mrow><mrow><mn>15</mn><mi>b</mi></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2716617" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2716617">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id908852" class="problem">
+<p id="fs-id1960210" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>3</mn><mi>x</mi></mrow><mrow><mn>12</mn><mi>y</mi></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id3203073" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1920834" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mi>x</mi><mrow><mn>4</mn><mi>y</mi></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2172406" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2172406">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1094601" class="problem">
+<p id="fs-id2216272" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>4</mn><mi>x</mi></mrow><mrow><mn>32</mn><mi>y</mi></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1594743" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1594743">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2288018" class="problem">
+<p id="fs-id1357548" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>14</mn><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>21</mn><mi>y</mi></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1727185" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2310581" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>3</mn><mi>y</mi></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2792510" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2792510">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2146523" class="problem">
+<p id="fs-id2993417" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>24</mn><mi>a</mi></mrow><mrow><mn>32</mn><msup><mi>b</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<p id="fs-id2164361" class="para"><strong>ভগ্নাংশের গুণ</strong> </p><p id="eip-661" class="para">নীচের অনুশীলনগুলিতে চিত্র এঁকে গুণের মডেল দেখাও।</p><div id="fs-id1893304" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1893304">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1408242" class="problem">
+<p id="fs-id1288130" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1284174" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2348804" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>
+<br/>
+<div id="fs-idm201661312" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_041a_img.jpg" alt="সমান ছয় ভাগের আয়তক্ষেত্র, দুই সারি ও তিন স্তম্ভ। প্রথম দুই স্তম্ভের চারটি ঘর সবুজ; তাদের নীচের সারির দুটি ঘর আরও গাঢ়। সবুজ অংশ হল লব ২ ও হর ৩-এর ভগ্নাংশ। তার অর্ধেক হল গাঢ় দুটি ঘর: লব ২ ও হর ৬, অর্থাৎ লব ১ ও হর ৩।"/><p class="description">সমান ছয় ভাগের আয়তক্ষেত্র, দুই সারি ও তিন স্তম্ভ। প্রথম দুই স্তম্ভের চারটি ঘর সবুজ; তাদের নীচের সারির দুটি ঘর আরও গাঢ়। সবুজ অংশ হল লব ২ ও হর ৩-এর ভগ্নাংশ। তার অর্ধেক হল গাঢ় দুটি ঘর: লব ২ ও হর ৬, অর্থাৎ লব ১ ও হর ৩।</p></div></p>
+</section>
+</div>
+<div id="fs-id1373285" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1373285">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2278341" class="problem">
+<p id="fs-id1484783" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>5</mn><mn>8</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2261168" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2261168">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1345738" class="problem">
+<p id="fs-id2314456" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>·</mo><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1913808" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1515486" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mrow><mn>18</mn></mrow></mfrac></mrow></math>
+<br/>
+<div id="fs-idm525542880" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_041c_img.jpg" alt="সমান আঠারো ভাগের আয়তক্ষেত্র, তিন সারি ও ছয় স্তম্ভ। প্রথম পাঁচ স্তম্ভের পনেরোটি ঘর সবুজ; তাদের নীচের সারির পাঁচটি ঘর আরও গাঢ়। সবুজ অংশ হল লব ৫ ও হর ৬-এর ভগ্নাংশ। তার এক-তৃতীয়াংশ হল গাঢ় পাঁচটি ঘর: লব ৫ ও হর ১৮।"/><p class="description">সমান আঠারো ভাগের আয়তক্ষেত্র, তিন সারি ও ছয় স্তম্ভ। প্রথম পাঁচ স্তম্ভের পনেরোটি ঘর সবুজ; তাদের নীচের সারির পাঁচটি ঘর আরও গাঢ়। সবুজ অংশ হল লব ৫ ও হর ৬-এর ভগ্নাংশ। তার এক-তৃতীয়াংশ হল গাঢ় পাঁচটি ঘর: লব ৫ ও হর ১৮।</p></div></p>
+</section>
+</div>
+<div id="fs-id1389494" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1389494">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1597497" class="problem">
+<p id="fs-id2220562" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>·</mo><mfrac><mn>2</mn><mn>5</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<p id="fs-id1943541" class="para">নীচের অনুশীলনগুলিতে গুণ করো এবং উত্তর লঘিষ্ঠ আকারে লেখো।</p>
+<div id="fs-id2715472" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2715472">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1631522" class="problem">
+<p id="fs-id2661041" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>·</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1973825" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1336323" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1544169" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1544169">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1308438" class="problem">
+<p id="fs-id2376745" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2266856" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2266856">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2777560" class="problem">
+<p id="fs-id1517644" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>·</mo><mfrac><mn>9</mn><mrow><mn>10</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1529110" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2204669" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>27</mn></mrow><mrow><mn>40</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id3302583" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id3302583">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1842765" class="problem">
+<p id="fs-id1973900" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>4</mn><mn>5</mn></mfrac><mo>·</mo><mfrac><mn>2</mn><mn>7</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2924529" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2924529">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1773352" class="problem">
+<p id="fs-id1405782" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id1594436" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1596023" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2418810" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2418810">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2486497" class="problem">
+<p id="fs-id1461123" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>4</mn><mn>9</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2167868" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2167868">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2334193" class="problem">
+<p id="fs-id1827310" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mn>9</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2471763" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1935703" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2669693" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2669693">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2129525" class="problem">
+<p id="fs-id1841592" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>·</mo><mfrac><mn>4</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2314753" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2314753">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id4219942" class="problem">
+<p id="fs-id2247424" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>7</mn><mrow><mn>12</mn></mrow></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>8</mn><mrow><mn>21</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id1523740" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id3301361" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>2</mn><mn>9</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2603810" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2603810">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1935472" class="problem">
+<p id="fs-id1800026" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>8</mn><mrow><mn>15</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id3208477" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id3208477">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2426558" class="problem">
+<p id="fs-id3242540" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>15</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mfrac><mn>9</mn><mrow><mn>20</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id2172399" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2472033" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>21</mn></mrow><mrow><mn>50</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1858616" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1858616">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1544270" class="problem">
+<p id="fs-id2474584" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>9</mn><mrow><mn>10</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mn>25</mn></mrow><mrow><mn>33</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1415856" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1415856">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1410437" class="problem">
+<p id="fs-id1365265" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><mn>63</mn></mrow><mrow><mn>84</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><mn>44</mn></mrow><mrow><mn>90</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id2903896" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1253704" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>11</mn></mrow><mrow><mn>30</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1988914" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1988914">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1960568" class="problem">
+<p id="fs-id1774638" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><mn>33</mn></mrow><mrow><mn>60</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><mn>40</mn></mrow><mrow><mn>88</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2385626" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2385626">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1632740" class="problem">
+<p id="fs-id1943455" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>·</mo><mfrac><mn>5</mn><mrow><mn>11</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2300299" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2310300" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>20</mn></mrow><mrow><mn>11</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1265553" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1265553">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1807110" class="problem">
+<p id="fs-id2462705" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>·</mo><mfrac><mn>8</mn><mn>3</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2597475" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2597475">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1322046" class="problem">
+<p id="fs-id2273325" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>7</mn></mfrac><mo>·</mo><mn>21</mn><mi>n</mi></mrow></math></p>
+</div>
+<section id="fs-id2294024" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2136649" class="para">9<strong>n</strong></p>
+</section>
+</div>
+<div id="fs-id1739679" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1739679">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1721195" class="problem">
+<p id="fs-id1739375" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>·</mo><mn>30</mn><mi>m</mi></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1883587" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1883587">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2946722" class="problem">
+<p id="fs-id1065470" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−28</mn><mi>p</mi><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id1582653" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1202611" class="para">7<strong>p</strong></p>
+</section>
+</div>
+<div id="fs-id2319438" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2319438">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1916860" class="problem">
+<p id="fs-id1517659" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−51</mn><mi>q</mi><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2270973" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2270973">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2626245" class="problem">
+<p id="fs-id2392352" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−8</mn><mrow><mo>(</mo><mrow><mfrac><mrow><mn>17</mn></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id1629524" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1508872" class="para">−34</p>
+</section>
+</div>
+<div id="fs-id1358294" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1358294">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2908974" class="problem">
+<p id="fs-id1906198" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>14</mn></mrow><mn>5</mn></mfrac><mrow><mo>(</mo><mrow><mn>−15</mn></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1890930" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1890930">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1947524" class="problem">
+<p id="fs-id1406067" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−1</mn><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id2818995" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1863175" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1369143" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1369143">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1127333" class="problem">
+<p id="fs-id1530908" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>(</mo><mrow><mn>−1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>6</mn><mn>7</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1308067" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1308067">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2266432" class="problem">
+<p id="fs-id1492046" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>3</mn></msup></mrow></math></p>
+</div>
+<section id="fs-id2149912" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1718436" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>8</mn><mrow><mn>27</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2275739" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2275739">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1812505" class="problem">
+<p id="fs-id2820273" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1523998" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1523998">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2133082" class="problem">
+<p id="fs-id2648984" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>6</mn><mn>5</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>4</mn></msup></mrow></math></p>
+</div>
+<section id="fs-id1324946" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1356531" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1296</mn><mrow><mn>625</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2140722" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2140722">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1363042" class="problem">
+<p id="fs-id1404697" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>4</mn><mn>7</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>4</mn></msup></mrow></math></p>
+</div>
+</div>
+<p id="fs-id1308636" class="para"><strong>গুণাত্মক বিপরীত নির্ণয়</strong> </p><p id="eip-564" class="para">নীচের অনুশীলনগুলিতে গুণাত্মক বিপরীত নির্ণয় করো।</p><div id="fs-id1415472" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1415472">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2137646" class="problem">
+<p id="fs-id1335579" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1265907" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2159646" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1189140" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1189140">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2793268" class="problem">
+<p id="fs-id1572133" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2817673" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2817673">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id3413567" class="problem">
+<p id="fs-id1338287" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mrow><mn>17</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1858104" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1683794" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>17</mn></mrow><mn>5</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1833710" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1833710">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2275916" class="problem">
+<p id="fs-id2261370" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>6</mn><mrow><mn>19</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1569021" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1569021">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2472662" class="problem">
+<p id="fs-id3448046" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>11</mn></mrow><mn>8</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2294014" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id4121433" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>8</mn><mrow><mn>11</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1151897" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1151897">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2819000" class="problem">
+<p id="fs-id2754506" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−13</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2362865" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2362865">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1736946" class="problem">
+<p id="fs-id1395612" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−19</mn></mrow></math></p>
+</div>
+<section id="fs-id1542704" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1884715" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>19</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2387940" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2387940">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1786828" class="problem">
+<p id="fs-id2265455" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−1</mn></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1041245" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1041245">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2774872" class="problem">
+<p id="fs-id1586208" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></p>
+</div>
+<section id="fs-id1367155" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2707625" class="para">1</p>
+</section>
+</div>
+<div id="fs-id1215434" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1215434">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1851779" class="problem">
+<p id="fs-id1733054" class="para">সারণিটি পূরণ করো।</p>
+<table id="fs-id1760782" class="table" aria-label="পাঁচ সারি ও চার স্তম্ভের সারণি। প্রথম সারির প্রথম ঘর ফাঁকা; পরের তিনটি শিরোনাম হল বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীত। প্রথম স্তম্ভে পরপর দেওয়া আছে: ঋণাত্মক ভগ্নাংশ, লব ৭ ও হর ১১; ভগ্নাংশ, লব ৪ ও হর ৫; ভগ্নাংশ, লব ১০ ও হর ৭; এবং ঋণাত্মক ৮। এই সংখ্যাগুলির পাশের তিনটি ঘর পূরণ করতে হবে।">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry"></td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>7</mn><mrow><mn>11</mn></mrow></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>10</mn></mrow><mn>7</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−8</mn></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+</tbody>
+
+</table>
+</div>
+<section id="fs-idm254919680" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm254919424" class="para"><br/>
+<div id="fs-idm254919040" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_040_img.jpg" alt="মূল উৎসের উত্তর-ছবিতে সংখ্যা, বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীত—এই চার স্তম্ভ আছে। প্রথম সারি: ঋণাত্মক ভগ্নাংশ লব ৪ হর ৭; ভগ্নাংশ লব ৪ হর ৭; ভগ্নাংশ লব ৪ হর ৭; ঋণাত্মক ভগ্নাংশ লব ৭ হর ৪। দ্বিতীয় সারি: ভগ্নাংশ লব ১ হর ৮; ঋণাত্মক ভগ্নাংশ লব ১ হর ৮; ভগ্নাংশ লব ১ হর ৮; ৮। তৃতীয় সারি: ভগ্নাংশ লব ৯ হর ৪; ঋণাত্মক ভগ্নাংশ লব ৯ হর ৪; ভগ্নাংশ লব ৯ হর ৪; ভগ্নাংশ লব ৪ হর ৯। শেষ সারি: ঋণাত্মক ১; ১; ১; ঋণাত্মক ১। এই ছবির সংখ্যাগুলি প্রশ্নের সংখ্যার সঙ্গে মেলে না; ছবির পরে আলাদা করে সম্পাদকীয় সংশোধন দেওয়া আছে।"/><p class="description">মূল উৎসের উত্তর-ছবিতে সংখ্যা, বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীত—এই চার স্তম্ভ আছে। প্রথম সারি: ঋণাত্মক ভগ্নাংশ লব ৪ হর ৭; ভগ্নাংশ লব ৪ হর ৭; ভগ্নাংশ লব ৪ হর ৭; ঋণাত্মক ভগ্নাংশ লব ৭ হর ৪। দ্বিতীয় সারি: ভগ্নাংশ লব ১ হর ৮; ঋণাত্মক ভগ্নাংশ লব ১ হর ৮; ভগ্নাংশ লব ১ হর ৮; ৮। তৃতীয় সারি: ভগ্নাংশ লব ৯ হর ৪; ঋণাত্মক ভগ্নাংশ লব ৯ হর ৪; ভগ্নাংশ লব ৯ হর ৪; ভগ্নাংশ লব ৪ হর ৯। শেষ সারি: ঋণাত্মক ১; ১; ১; ঋণাত্মক ১। এই ছবির সংখ্যাগুলি প্রশ্নের সংখ্যার সঙ্গে মেলে না; ছবির পরে আলাদা করে সম্পাদকীয় সংশোধন দেওয়া আছে।</p></div> সম্পাদকীয় সংশোধন: উপরের মূল উৎসের উত্তর-ছবিটি এই প্রশ্নের সংখ্যাগুলির সঙ্গে মেলে না। এই প্রশ্নের জন্য সঠিক সারিগুলি নীচে দেওয়া হল। প্রতিটি সারিতে ক্রমটি হল সংখ্যা; বিপরীত সংখ্যা; পরম মান; গুণাত্মক বিপরীত। ঋণাত্মক ৭/১১; ৭/১১; ৭/১১; ঋণাত্মক ১১/৭। ৪/৫; ঋণাত্মক ৪/৫; ৪/৫; ৫/৪। ১০/৭; ঋণাত্মক ১০/৭; ১০/৭; ৭/১০। ঋণাত্মক ৮; ৮; ৮; ঋণাত্মক ১/৮। এগুলি সম্পাদকীয়ভাবে যাচাই করা সংশোধিত উত্তর, মূল ছবিতে থাকা উত্তর নয়।</p>
+</section>
+</div>
+<div id="fs-id1266696" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1266696">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2762464" class="problem">
+<p id="fs-id1834474" class="para">সারণিটি পূরণ করো।</p>
+<table id="fs-id1630636" class="table" aria-label="পাঁচ সারি ও চার স্তম্ভের সারণি। প্রথম সারির প্রথম ঘর ফাঁকা; পরের তিনটি শিরোনাম হল বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীত। প্রথম স্তম্ভে পরপর দেওয়া আছে: ঋণাত্মক ভগ্নাংশ, লব ৩ ও হর ১৩; ভগ্নাংশ, লব ৯ ও হর ১৪; ভগ্নাংশ, লব ১৫ ও হর ৭; এবং ঋণাত্মক ৯। এই সংখ্যাগুলির পাশের তিনটি ঘর পূরণ করতে হবে।">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry"></td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mrow><mn>13</mn></mrow></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>9</mn><mrow><mn>14</mn></mrow></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>15</mn></mrow><mn>7</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−9</mn></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+</tbody>
+
+</table>
+</div>
+<section id="fs-id2492055" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1167906045192" class="para"><br/>
+<div id="fs-id1167906045195" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_201_img.jpg" alt="সারণির চার স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক ভগ্নাংশ লব ৩ হর ১৩; ভগ্নাংশ লব ৩ হর ১৩; ভগ্নাংশ লব ৩ হর ১৩; ঋণাত্মক ভগ্নাংশ লব ১৩ হর ৩। দ্বিতীয় সারি: ভগ্নাংশ লব ৯ হর ১৪; ঋণাত্মক ভগ্নাংশ লব ৯ হর ১৪; ভগ্নাংশ লব ৯ হর ১৪; ভগ্নাংশ লব ১৪ হর ৯। তৃতীয় সারি: ভগ্নাংশ লব ১৫ হর ৭; ঋণাত্মক ভগ্নাংশ লব ১৫ হর ৭; ভগ্নাংশ লব ১৫ হর ৭; ভগ্নাংশ লব ৭ হর ১৫। শেষ সারি: ঋণাত্মক ৯; ৯; ৯; ঋণাত্মক ভগ্নাংশ লব ১ হর ৯।"/><p class="description">সারণির চার স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক ভগ্নাংশ লব ৩ হর ১৩; ভগ্নাংশ লব ৩ হর ১৩; ভগ্নাংশ লব ৩ হর ১৩; ঋণাত্মক ভগ্নাংশ লব ১৩ হর ৩। দ্বিতীয় সারি: ভগ্নাংশ লব ৯ হর ১৪; ঋণাত্মক ভগ্নাংশ লব ৯ হর ১৪; ভগ্নাংশ লব ৯ হর ১৪; ভগ্নাংশ লব ১৪ হর ৯। তৃতীয় সারি: ভগ্নাংশ লব ১৫ হর ৭; ঋণাত্মক ভগ্নাংশ লব ১৫ হর ৭; ভগ্নাংশ লব ১৫ হর ৭; ভগ্নাংশ লব ৭ হর ১৫। শেষ সারি: ঋণাত্মক ৯; ৯; ৯; ঋণাত্মক ভগ্নাংশ লব ১ হর ৯।</p></div></p>
+</section>
+</div>
+<p id="fs-id1607610" class="para"><strong>ভগ্নাংশের ভাগ</strong> </p><p id="eip-640" class="para">নীচের অনুশীলনগুলিতে চিত্র এঁকে প্রতিটি ভগ্নাংশের ভাগের মডেল দেখাও।</p><div id="fs-id764835" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id764835">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id782662" class="problem">
+<p id="fs-id2299819" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1465303" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1465303">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id3165768" class="problem">
+<p id="fs-id1571326" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2279098" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2377015" class="para">4
+<br/>
+<div id="fs-idm206228288" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_042b_img.jpg" alt="উপরের পাতের মান লব ১ ও হর ২-এর ভগ্নাংশ। একই দৈর্ঘ্যের নীচের সারিতে চারটি সমান পাত আছে; প্রতিটির মান লব ১ ও হর ৮-এর ভগ্নাংশ। তাই এক-অর্ধেকের মধ্যে এক-অষ্টমাংশের চারটি দল আছে।"/><p class="description">উপরের পাতের মান লব ১ ও হর ২-এর ভগ্নাংশ। একই দৈর্ঘ্যের নীচের সারিতে চারটি সমান পাত আছে; প্রতিটির মান লব ১ ও হর ৮-এর ভগ্নাংশ। তাই এক-অর্ধেকের মধ্যে এক-অষ্টমাংশের চারটি দল আছে।</p></div></p>
+</section>
+</div>
+<div id="fs-id1916693" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1916693">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2157212" class="problem">
+<p id="fs-id4201392" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>÷</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1578681" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1578681">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2912460" class="problem">
+<p id="fs-id1956495" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2439629" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1366632" class="para">12
+<br/>
+<div id="fs-idm239861520" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_042d_img.jpg" alt="উপরের সারিতে পাশাপাশি তিনটি সমগ্র পাত, প্রতিটির মান ১। প্রতিটি সমগ্রের নীচে চারটি সমান ছোটো পাত; প্রতিটির মান লব ১ ও হর ৪-এর ভগ্নাংশ। মোট বারোটি ছোটো পাত আছে, তাই ৩-এর মধ্যে এক-চতুর্থাংশের বারোটি দল আছে।"/><p class="description">উপরের সারিতে পাশাপাশি তিনটি সমগ্র পাত, প্রতিটির মান ১। প্রতিটি সমগ্রের নীচে চারটি সমান ছোটো পাত; প্রতিটির মান লব ১ ও হর ৪-এর ভগ্নাংশ। মোট বারোটি ছোটো পাত আছে, তাই ৩-এর মধ্যে এক-চতুর্থাংশের বারোটি দল আছে।</p></div></p>
+</section>
+</div>
+<p id="fs-id1464458" class="para">নীচের অনুশীলনগুলিতে ভাগ করো এবং উত্তর লঘিষ্ঠ আকারে লেখো। চলযুক্ত রাশির ক্ষেত্রে হর ও ভাজকের মান শূন্য নয় বলে ধরো।</p>
+<div id="fs-id1858302" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1858302">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1742800" class="problem">
+<p id="fs-id1531440" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1566978" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1566978">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2129236" class="problem">
+<p id="fs-id1344614" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>÷</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1801438" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2459937" class="para">4</p>
+</section>
+</div>
+<div id="fs-id2594981" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2594981">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2170418" class="problem">
+<p id="fs-id1778575" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>÷</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2427735" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2427735">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2657860" class="problem">
+<p id="fs-id2301622" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>4</mn><mn>5</mn></mfrac><mo>÷</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1357360" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1549993" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>16</mn></mrow><mrow><mn>15</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1406691" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1406691">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1374368" class="problem">
+<p id="fs-id4130836" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><mo>÷</mo><mfrac><mn>4</mn><mn>7</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2933662" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2933662">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2260910" class="problem">
+<p id="fs-id1925576" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>÷</mo><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2246011" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1129185" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mn>4</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2212160" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2212160">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1804559" class="problem">
+<p id="fs-id1833337" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>7</mn><mn>9</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>7</mn><mn>9</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1518697" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1518697">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2176000" class="problem">
+<p id="fs-id2904124" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id1525626" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1239717" class="para">1</p>
+</section>
+</div>
+<div id="fs-id2283920" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2283920">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id4337752" class="problem">
+<p id="fs-id1579037" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>÷</mo><mfrac><mi>x</mi><mrow><mn>11</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id3302722" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id3302722">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1588929" class="problem">
+<p id="fs-id2206389" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>÷</mo><mfrac><mi>y</mi><mn>9</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2218036" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2352829" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>18</mn></mrow><mrow><mn>5</mn><mi>y</mi></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1405693" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1405693">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1789384" class="problem">
+<p id="fs-id2144773" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>8</mn></mfrac><mo>÷</mo><mfrac><mi>a</mi><mrow><mn>10</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1807250" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1807250">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1891270" class="problem">
+<p id="fs-id3415432" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>÷</mo><mfrac><mi>c</mi><mrow><mn>15</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1881449" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1900080" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>25</mn></mrow><mrow><mn>2</mn><mi>c</mi></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1929066" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1929066">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2903385" class="problem">
+<p id="fs-id1365407" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mrow><mn>18</mn></mrow></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><mn>15</mn></mrow><mrow><mn>24</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id4428673" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id4428673">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1756541" class="problem">
+<p id="fs-id2298383" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>7</mn><mrow><mn>18</mn></mrow></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>27</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id1358784" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2428251" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id2339794" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2339794">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1890889" class="problem">
+<p id="fs-id1314637" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>7</mn><mi>p</mi></mrow><mrow><mn>12</mn></mrow></mfrac><mo>÷</mo><mfrac><mrow><mn>21</mn><mi>p</mi></mrow><mn>8</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id3334258" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id3334258">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1265763" class="problem">
+<p id="fs-id1581964" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>5</mn><mi>q</mi></mrow><mrow><mn>12</mn></mrow></mfrac><mo>÷</mo><mfrac><mrow><mn>15</mn><mi>q</mi></mrow><mn>8</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2261312" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2142397" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>9</mn></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id3447846" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id3447846">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2703653" class="problem">
+<p id="fs-id1722355" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>8</mn><mi>u</mi></mrow><mrow><mn>15</mn></mrow></mfrac><mo>÷</mo><mfrac><mrow><mn>12</mn><mi>v</mi></mrow><mrow><mn>25</mn></mrow></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2451413" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2451413">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2790346" class="problem">
+<p id="fs-id2905919" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>12</mn><mi>r</mi></mrow><mrow><mn>25</mn></mrow></mfrac><mo>÷</mo><mfrac><mrow><mn>18</mn><mi>s</mi></mrow><mrow><mn>35</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id2497158" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id4118562" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>14</mn><mi>r</mi></mrow><mrow><mn>15</mn><mi>s</mi></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1524310" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1524310">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id3327298" class="problem">
+<p id="fs-id2678771" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−5</mn><mo>÷</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id2290556" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2290556">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1564608" class="problem">
+<p id="fs-id2256382" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−3</mn><mo>÷</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math></p>
+</div>
+<section id="fs-id1392556" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id4211897" class="para">−12</p>
+</section>
+</div>
+<div id="fs-id2301291" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2301291">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2296022" class="problem">
+<p id="fs-id1265110" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mn>−12</mn></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1824762" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1824762">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2133939" class="problem">
+<p id="fs-id2139654" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mn>−10</mn></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id1509351" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id3202250" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>25</mn></mrow></mfrac></mrow></math></p>
+</section>
+</div>
+<div id="fs-id1580957" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1580957">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2495471" class="problem">
+<p id="fs-id2392385" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−18</mn><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>9</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1516451" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1516451">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id3326215" class="problem">
+<p id="fs-id1166761302391" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−15</mn><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>5</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math></p>
+</div>
+<section id="fs-id1739742" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2751709" class="para">9</p>
+</section>
+</div>
+<div id="fs-id1862910" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1862910">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1733322" class="problem">
+<p id="fs-id2605964" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>÷</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mo>÷</mo><mfrac><mn>7</mn><mn>8</mn></mfrac></mrow></math></p>
+</div>
+</div>
+<div id="fs-id1322092" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1322092">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1909806" class="problem">
+<p id="fs-id2365358" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mn>11</mn></mrow><mn>2</mn></mfrac><mo>÷</mo><mfrac><mn>7</mn><mn>8</mn></mfrac><mo>·</mo><mfrac><mn>2</mn><mrow><mn>11</mn></mrow></mfrac></mrow></math></p>
+</div>
+<section id="fs-id4174321" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1744306" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>8</mn><mn>7</mn></mfrac></mrow></math></p>
+</section>
+</div>
+</section><section id="fs-id3415453" class="section">
+<h2 class="title">দৈনন্দিন জীবনের গণিত</h2>
+<div id="fs-id2058741" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2058741">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1385591" class="problem">
+<p id="fs-id1595594" class="para"><strong>বেক করে রান্না</strong> চকোলেট চিপ কুকি তৈরির একটি প্রণালীতে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math> কাপ বাদামি চিনি লাগে। ইমেল্ডা ওই প্রণালীর দ্বিগুণ পরিমাণ কুকি তৈরি করতে চায়।</p>
+<p id="fs-id3273825" class="para"><span class="span">ⓐ</span> ইমেল্ডার কতটা বাদামি চিনি লাগবে? তোমার হিসাব দেখাও। ফলটি অপ্রকৃত ভগ্নাংশ ও মিশ্র ভগ্নাংশ—দুই আকারেই লেখো।</p><p id="fs-id1339503" class="para"><span class="span">ⓑ</span> উপকরণ মাপার কাপ সাধারণত <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> কাপ মাপের সেটে পাওয়া যায়। দ্বিগুণ পরিমাণ কুকির জন্য প্রয়োজনীয় বাদামি চিনি ইমেল্ডা কীভাবে দুই রকম উপায়ে মাপতে পারে, চিত্র এঁকে দেখাও।</p></div>
+</div>
+<div id="fs-id2436125" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2436125">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1772478" class="problem">
+<p id="fs-id2619219" class="para"><strong>বেক করে রান্না</strong> সংগীতানুষ্ঠানের পরে পরিবেশন করার জন্য নিনা <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math> প্যান ফাজ মিষ্টি তৈরি করছে। প্রতি প্যানের জন্য তার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math> কাপ কনডেন্সড মিল্ক লাগবে।</p>
+<div id="fs-id2409887" class="para"><ol id="eip-id1168469343959" class="circled"><li class="item"><span class="span">ⓐ</span> নিনার কতটা কনডেন্সড মিল্ক লাগবে? তোমার হিসাব দেখাও। ফলটি অপ্রকৃত ভগ্নাংশ ও মিশ্র ভগ্নাংশ—দুই আকারেই লেখো।</li>
+<li class="item"><span class="span">ⓑ</span> উপকরণ মাপার কাপ সাধারণত <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> কাপ মাপের সেটে পাওয়া যায়। প্রয়োজনীয় কনডেন্সড মিল্ক নিনা কীভাবে দুই রকম উপায়ে মাপতে পারে, চিত্র এঁকে দেখাও।</li></ol></div></div>
+<section id="fs-id1920318" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id2430749" class="para"><ul id="eip-id1168469629616"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>·</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math> কাপ<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>=</mo><mfrac><mn>8</mn><mn>3</mn></mfrac></mrow></math> কাপ<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>=</mo><mn>2</mn><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math> কাপ<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow /></math></li>
+<li class="item"><span class="span">ⓑ</span> উত্তর ভিন্ন হতে পারে।</li></ul></div></section>
+</div>
+<div id="fs-id1566824" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1566824">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2390932" class="problem">
+<p id="fs-id2690818" class="para"><strong>ছোটো অংশে ভাগ</strong> ডন ক্যান্ডির একটি বড়ো প্যাকেট কিনেছে, যার ওজন <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math> পাউন্ড। সে ক্যান্ডিগুলি ছোটো ছোটো ব্যাগে ভরে বিক্রি করতে চায়। প্রতিটি ব্যাগে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> পাউন্ড ক্যান্ডি ধরে। বড়ো প্যাকেট থেকে সে ক্যান্ডির কতগুলি ছোটো ব্যাগ ভরতে পারবে?</p>
+</div>
+</div>
+<div id="fs-id2379502" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2379502">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2495445" class="problem">
+<p id="fs-id2925973" class="para"><strong>ছোটো অংশে ভাগ</strong> ক্রিস্টেনের কাছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math> ইয়ার্ড ফিতে আছে। সে ফিতেটিকে সমান ভাগে কেটে তার মেয়ের <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math>টি পুতুলের চুল বাঁধার ফিতে তৈরি করতে চায়। প্রতিটি পুতুলের ফিতের দৈর্ঘ্য কত হবে?</p>
+</div>
+<section id="fs-id2645994" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1828264" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math> ইয়ার্ড</p>
+</section>
+</div>
+</section>
+<section id="fs-id2662316" class="section">
+<h2 class="title">লিখে ব্যাখ্যা করো</h2>
+<div id="fs-id2300631" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2300631">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2849921" class="problem">
+<p id="fs-id1747023" class="para">একটি অশূন্য ভগ্নাংশের গুণাত্মক বিপরীত তুমি কীভাবে নির্ণয় করো, ব্যাখ্যা করো।</p>
+</div>
+</div>
+<div id="fs-id1743778" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1743778">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1893329" class="problem">
+<p id="fs-id2715522" class="para">একটি ঋণাত্মক ভগ্নাংশের গুণাত্মক বিপরীত তুমি কীভাবে নির্ণয় করো, ব্যাখ্যা করো।</p>
+</div>
+<section id="fs-id2961270" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2219072" class="para">উত্তর ভিন্ন হতে পারে।</p>
+</section>
+</div>
+<div id="fs-id2151092" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2151092">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2670466" class="problem">
+<p id="fs-id1739310" class="para">রাফায়েল একটি রেস্তোরাঁয় মাঝারি মাপের একটি পিৎজার অর্ধেক অর্ডার করতে চাইল। পরিবেশক তাকে জানাল, মাঝারি মাপের একটি পিৎজাকে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math> বা <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math>টি সমান টুকরো করা যায়। সে কি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>টি টুকরো নিতে চাইবে, যদি গোটা পিৎজাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math>টি সমান টুকরো করা হয়, নাকি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math>টি টুকরো নিতে চাইবে, যদি সেটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math>টি সমান টুকরো করা হয়? রাফায়েল বলল, তার খুব বেশি খিদে নেই; তাই সে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>টি টুকরোই নেবে, গোটা পিৎজাটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math>টি সমান টুকরো করা হলে। রাফায়েলের যুক্তিতে কোথায় ভুল আছে, ব্যাখ্যা করো।</p>
+</div>
+</div>
+<div id="fs-id1463166" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1463166">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2278796" class="problem">
+<p id="fs-id1680911" class="para">দৈনন্দিন জীবন থেকে এমন একটি উদাহরণ দাও যা দিয়ে বোঝানো যায় কেন <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math>-এর মান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2833205" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2431305" class="para">উত্তর ভিন্ন হতে পারে।</p>
+</section>
+</div>
+</section><section id="eip-621" class="section"><h2 class="title">নিজেকে যাচাই করো</h2><p id="eip-id1168469711232" class="para"><span class="span">ⓐ</span> অনুশীলনগুলি শেষ করে এই তালিকা দিয়ে যাচাই করো, এই অংশের শেখার লক্ষ্যগুলি তুমি কতটা আয়ত্ত করেছ।</p>
+
+<figure id="eip-id1165720786210" class="figure"><span class="label"></span><div id="eip-id1165720786213" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_AppB_020.jpg" alt="নিজেকে যাচাই করার ফাঁকা সারণি। প্রথম স্তম্ভের শিরোনাম: আমি পারি। পরের তিনটি স্তম্ভ: আত্মবিশ্বাসের সঙ্গে; কিছু সাহায্য পেলে; না, আমি বুঝতে পারছি না। চারটি সারির দক্ষতা: ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করা; ভগ্নাংশের গুণ করা; গুণাত্মক বিপরীত নির্ণয় করা; ভগ্নাংশের ভাগ করা। প্রতিটি দক্ষতার জন্য নিজের উপযুক্ত স্তম্ভ বেছে নাও।"/><p class="description">নিজেকে যাচাই করার ফাঁকা সারণি। প্রথম স্তম্ভের শিরোনাম: আমি পারি। পরের তিনটি স্তম্ভ: আত্মবিশ্বাসের সঙ্গে; কিছু সাহায্য পেলে; না, আমি বুঝতে পারছি না। চারটি সারির দক্ষতা: ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করা; ভগ্নাংশের গুণ করা; গুণাত্মক বিপরীত নির্ণয় করা; ভগ্নাংশের ভাগ করা। প্রতিটি দক্ষতার জন্য নিজের উপযুক্ত স্তম্ভ বেছে নাও।</p></div></figure><p id="eip-id1168466075811" class="para"><span class="span">ⓑ</span> এই তালিকাটি দেখার পরে সব কটি শেখার লক্ষ্যে আত্মবিশ্বাসী হয়ে উঠতে তুমি কী করবে?</p>
+</section></section><section class="glossary">
+
+<h2 class="title">শব্দার্থ</h2><div id="fs-id2946118" class="definition"><strong class="term">গুণাত্মক বিপরীত</strong><p id="fs-id2447033" class="meaning"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></mfrac></math> ভগ্নাংশটির গুণাত্মক বিপরীত হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>b</mi></mrow><mrow><mi>a</mi></mrow></mfrac></math>, যেখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>≠</mo><mn>0</mn></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>≠</mo><mn>0</mn></math>। অর্থাৎ, শূন্য নয় এমন ভগ্নাংশের লব ও হরের স্থান বদলালে তার গুণাত্মক বিপরীত পাওয়া যায়।</p></div>
+<div id="fs-id1170326339386" class="definition"><strong class="term">লঘিষ্ঠ আকারের ভগ্নাংশ</strong><p id="fs-id1170326339389" class="meaning">কোনো ভগ্নাংশের লব ও হরের মধ্যে 1 ছাড়া আর কোনো সাধারণ গুণনীয়ক না থাকলে ভগ্নাংশটি লঘিষ্ঠ আকারে আছে বলা হয়।</p></div>
+</section>
+</section><footer>OpenStax, Rice University · Prealgebra 2e · Lynn Marecek, MaryAnne Anthony-Smith, Andrea Honeycutt Mathis। <a href="../../provenance/pilot/m81241.source.cnxml">পূর্ণ উৎস-স্বীকৃতি</a> · <a href="../../provenance/A00/repository/LICENSE">CC BY-NC-SA 4.0 ও উপাদানভিত্তিক শর্ত</a>। অনানুষ্ঠানিক অনুবাদ; মূল প্রকাশকের অনুমোদন দাবি করা হচ্ছে না।</footer></main></body></html>

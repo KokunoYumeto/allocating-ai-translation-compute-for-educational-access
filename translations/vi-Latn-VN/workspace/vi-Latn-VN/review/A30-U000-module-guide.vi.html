@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi-Latn-VN" xml:lang="vi-Latn-VN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Hàm số và ký hiệu hàm số</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">html { color: #182b35; background: #f8f6f1; font-size: 18px; }
+body { max-width: 52rem; margin: 0 auto; padding: 2.5rem 1.3rem 4rem; line-height: 1.65; font-family: "Noto Sans", "Segoe UI", Arial, sans-serif; }
+header { border-bottom: 3px solid #216c68; margin-bottom: 2rem; }
+h1,h2,h3 { line-height: 1.25; color: #175a57; break-after: avoid; }
+h1 { font-size: 2.3rem; } h2 { margin-top: 2.5rem; } h3 { margin-top: 1.8rem; }
+a { color: #075d99; text-underline-offset: .15em; }
+nav { background: #edf0e8; border-radius: .4rem; padding: 1rem 1.4rem; }
+table { border-collapse: collapse; margin: 1.2rem auto; min-width: 55%; }
+th,td { border: 1px solid #98aaa9; padding: .4rem 1rem; }
+th { background: #e2eeea; }
+img { display: block; max-width: 100%; height: auto; margin: 1rem auto; }
+figure { margin: 1.4rem 0; } figcaption { font-size: .9rem; }
+pre { overflow-x: auto; background: #edf0e8; padding: 1rem; border-radius: .3rem; }
+code { font-size: .88em; }
+math[display="block"] { overflow-x: auto; overflow-y: hidden; padding: .6rem 0; }
+:target { scroll-margin-top: 1rem; outline: 2px solid #c3dcd0; }
+@media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.9rem; } body { padding: 1rem; } table { width: 100%; } th,td { padding: .35rem .5rem; } }
+@media print { html { background: white; font-size: 11pt; } body { max-width: none; padding: 0; } nav { display: none; } img,table,pre { break-inside: avoid; } a { color: inherit; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Hàm số và ký hiệu hàm số</h1>
+<p class="subtitle">A30 · Hướng dẫn học mô-đun m49301 · Bản dịch thử
+nghiệm 0.1</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#vi-prerequisites" id="toc-vi-prerequisites">Phạm vi của
+trang</a></li>
+<li><a href="#vi-objectives" id="toc-vi-objectives">Mục tiêu học
+tập</a></li>
+<li><a href="#vi-lessons" id="toc-vi-lessons">Hướng dẫn đọc các bài
+học</a></li>
+<li><a href="#fs-id1165137737761" id="toc-fs-id1165137737761">Bài tập
+của mục</a></li>
+<li><a href="#vi-glossary-guide" id="toc-vi-glossary-guide">Tra cứu
+thuật ngữ</a></li>
+<li><a href="#vi-attribution" id="toc-vi-attribution">Nguồn và giới
+hạn</a></li>
+</ul>
+</nav>
+<h2 id="vi-prerequisites">Phạm vi của trang</h2>
+<p>Trang này dịch tên mô-đun, năm mục tiêu học tập trong phần siêu dữ
+liệu nguồn và tiêu đề chung của phần bài tập. Danh sách liên kết là
+hướng dẫn bổ sung của bản dịch, không phải nội dung nguồn. Trang không
+chép lại các bài học hoặc lời giải.</p>
+<h2 id="vi-objectives">Mục tiêu học tập</h2>
+<div id="para-00001">
+<p>Trong mục này, bạn sẽ:</p>
+</div>
+<div id="list-00001">
+<ul>
+<li>Xác định một quan hệ có biểu diễn một hàm số hay không.</li>
+<li>Tính giá trị của một hàm số.</li>
+<li>Xác định một hàm số có đơn ánh hay không.</li>
+<li>Dùng phép kiểm tra bằng đường thẳng đứng để nhận biết hàm số.</li>
+<li>Vẽ đồ thị các hàm số được liệt kê trong danh mục hàm số.</li>
+</ul>
+</div>
+<h2 id="vi-lessons">Hướng dẫn đọc các bài học</h2>
+<p><em>Phần bổ sung — lộ trình đọc của bản dịch:</em> Đọc các bài theo
+thứ tự dưới đây. “Đơn ánh” là một tính chất cần kiểm tra sau khi đã biết
+quan hệ là hàm số, không phải điều kiện của mọi hàm số.</p>
+<ol type="1">
+<li><a href="A30-U001-functions.vi.html#fs-id1165133394710">U001 — Quan
+hệ và hàm số</a>.</li>
+<li><a href="A30-U002-function-notation.vi.html#fs-id1165134474160">U002
+— Ký hiệu hàm số</a>.</li>
+<li><a href="A30-U003-tables.vi.html#fs-id1165137804204">U003 — Biểu
+diễn hàm số bằng bảng</a>.</li>
+<li><a href="A30-U004-input-output.vi.html#fs-id1165137503241">U004 —
+Tìm giá trị đầu vào và đầu ra</a>.</li>
+<li><a href="A30-U005-one-to-one.vi.html#fs-id1165135422920">U005 — Hàm
+số đơn ánh</a>.</li>
+<li><a href="A30-U006-graph-tests.vi.html#fs-id1165135435781">U006 —
+Kiểm tra bằng đường thẳng đứng và đường thẳng ngang</a>.</li>
+<li><a href="A30-U007-toolkit-functions.vi.html#fs-id1165135545919">U007
+— Danh mục hàm số cơ bản</a>.</li>
+<li><a href="A30-U008-key-summary.vi.html#fs-id1165135203679">U008 —
+Công thức và ý chính</a>.</li>
+</ol>
+<h2 id="fs-id1165137737761">Bài tập của mục</h2>
+<p><em>Phần bổ sung — chỉ dẫn đến các nhóm bài tập:</em> Tiêu đề trên là
+bản dịch của “Section Exercises”. Các liên kết dưới đây dẫn đến đề bài,
+đáp án nguồn nếu có và những lời giải bổ sung đã ghi nhãn; trang hướng
+dẫn này không thêm bài tập hay đáp án.</p>
+<ol type="1">
+<li><a href="A30-U009-verbal-exercises.vi.html#fs-id1165137432988">U009
+— Giải thích các khái niệm</a>.</li>
+<li><a href="A30-U010-algebraic-classification.vi.html#fs-id1165134080937">U010
+— Nhận biết hàm số từ quan hệ và phương trình</a>.</li>
+<li><a href="A30-U011-algebraic-evaluation.vi.html#fs-id1165134066606">U011 —
+Tính giá trị bằng công thức</a>.</li>
+<li><a href="A30-U012-graphical-functions.vi.html#fs-id1165135664071">U012 —
+Nhận biết hàm số và đọc giá trị từ đồ thị</a>.</li>
+<li><a href="A30-U013-graphical-injectivity.vi.html#fs-id1165135531627">U013 —
+Kiểm tra tính đơn ánh từ đồ thị</a>.</li>
+<li><a href="A30-U014-numeric-exercises.vi.html#fs-id1165135342204">U014
+— Đọc bảng và tính giá trị hàm số</a>.</li>
+<li><a href="A30-U015-technology.vi.html#fs-id1165134373511">U015 — Vẽ
+đồ thị và tìm tập giá trị trên đoạn cho trước</a>.</li>
+<li><a href="A30-U016-real-world-applications.vi.html#fs-id1165135580349">U016
+— Đọc ý nghĩa của hàm số trong tình huống thực tế</a>.</li>
+</ol>
+<h2 id="vi-glossary-guide">Tra cứu thuật ngữ</h2>
+<p><em>Phần bổ sung:</em> Dùng <a href="A30-U017-glossary.vi.html#fs-id1165137758543">U017 — Bảng thuật
+ngữ</a> để đối chiếu các khái niệm khi cần. Bảng giữ thứ tự của nguồn,
+không sắp xếp lại theo bảng chữ cái tiếng Việt.</p>
+<h2 id="vi-attribution">Nguồn và giới hạn</h2>
+<p>Tên nguồn: <em>Functions and Function Notation</em>; tên đối chiếu
+Bahasa Indonesia: <em>Fungsi dan Notasi Fungsi</em>. Mô-đun m49301, UUID
+11f4eacc-c348-4836-8c5b-747577d249ca, thuộc <em>Precalculus 2e</em> của
+Jay Abramson và các cộng tác viên OpenStax. <a href="https://github.com/openstax/osbooks-college-algebra-bundle/tree/789b54099106b071d1d32bfcee454fed72eb4768">Phiên
+bản nguồn được ghim</a>; <a href="https://github.com/KokunoYumeto/openstax-precalculus-2e-id">ấn bản
+Bahasa Indonesia</a> 0.1.0-alpha.58-reader.1.</p>
+<p>Bản dịch độc lập và phần chỉ dẫn bổ sung A30 này theo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
+4.0</a>. Giữ ghi công và thông báo nguồn trong notices/; các sách khác
+giữ giấy phép riêng. Không phải ấn bản chính thức hay được tác giả nguồn
+bảo trợ. Được thực hiện với sự hỗ trợ của OpenAI Codex theo yêu cầu
+người dùng; chưa có thẩm định của người bản ngữ.</p>
+<p>Năm mục tiêu trên là mục tiêu của nguồn, không phải tuyên bố rằng
+người đọc đã đạt được chúng. Danh sách liên kết cũng không tự chứng minh
+đã dịch và kiểm tra xong toàn bộ mô-đun. Việc xác nhận phạm vi và hoàn
+thành được thực hiện riêng; sách A30 và toàn bộ lộ trình năm sách vẫn
+cần tiếp tục.</p>
+</body>
+</html>

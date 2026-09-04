@@ -1,0 +1,117 @@
+# Basa Jawa padinan · ngoko
+
+Status: narration draft; not synthesized or listening-reviewed.
+
+## m81243--title
+
+Ayo Ngenali Panggonane Saben Digit
+
+## m81243--fs-id1795155
+
+Saka conto dhuwit lan blok basis sepuluh, bisa dideleng yen saben panggonan ing sawijining wilangan nduweni nilai dhewe-dhewe. Katrangan iki bisa diringkes nganggo tabel nilai panggonan. Panggonan-panggonan mau diklompokake telu-telu; saben klompok diarani periode. Periode mau yaiku satuan, éwuan, yutanan, milyaran, trilyunan, lan sateruse. Yen wilangane ditulis, saben periode dipisah nganggo tandha koma.
+
+## m81243--fs-id2825467
+
+Kaya sing dideleng ing blok basis sepuluh, siji batang puluhan nilaine sepuluh ping nilaine siji blok satuan, lan siji persegi atusan nilaine sepuluh ping nilaine siji batang puluhan. Semono uga ing tabel: saben panggonan nilaine sepuluh ping nilaine panggonan ing sisih tengene.
+
+## m81243--fs-id1408851
+
+gambar tabel nilai panggonan nuduhake carane wilangan limang yuta rong atus pitung puluh wolu éwu satus sangang puluh papat ditulis ing tabel nilai panggonan.
+
+## m81243--CNX_BMath_Figure_01_01_011
+
+Bagan Nilai Panggonan iki ana limalas kolom lan patang larik. Kolome diklompokake telu-telu dadi limang klompok: trilyun, milyar, yuta, éwuan, lan satuan. Saka kiwa menyang tengen, label panggonane yaiku atusan trilyun; sepuluh trilyun; trilyun; atusan milyar; sepuluh milyar; milyar; satus yuta; sepuluh yuta; yutanan; satus éwu; sepuluh éwu; éwuan; atusan; puluhan; lan satuan. Wolung kolom kapisan ing larik digit isih kosong, dudu nol. Wiwit kolom kaping sanga, ana lima ing yutanan; loro ing atusan éwu; pitu ing puluhan éwu; wolu ing éwuan; siji ing atusan; sanga ing puluhan; lan papat ing satuan.
+
+## m81243--fs-id930962
+
+Digit lima ana ing yutanan. Nilaine limang yuta.
+
+Digit loro ana ing atusan éwu. Nilaine rong atus éwu.
+
+Digit pitu ana ing puluhan éwu. Nilaine pitung puluh éwu.
+
+Digit wolu ana ing éwuan. Nilaine wolung éwu.
+
+Digit siji ana ing atusan. Nilaine satus.
+
+Digit sanga ana ing puluhan. Nilaine sangang puluh.
+
+Digit papat ana ing satuan. Nilaine papat.
+
+## m81243--fs-id1891091
+
+Ing wilangan sewidak telu yuta patang atus pitu éwu rong atus wolulas; temtokna panggonane saben digit iki:
+
+bagean a: pitu
+ bagean be: nol
+ bagean ce: siji
+bagean de: enem
+bagean e: telu
+
+Cara Ngrampungake
+
+Tulisen wilangan kuwi ing tabel nilai panggonan, diwiwiti saka sisih tengen.
+
+Gambar Nilai Panggonan iki ana limalas kolom lan rong larik. Kolome diklompokake telu-telu dadi limang klompok: trilyun, milyar, yuta, éwuan, lan satuan. Saka kiwa menyang tengen, label panggonane yaiku atusan trilyun; sepuluh trilyun; trilyun; atusan milyar; sepuluh milyar; milyar; satus yuta; sepuluh yuta; yutanan; satus éwu; sepuluh éwu; éwuan; atusan; puluhan; lan satuan. Pitung kolom kapisan ing larik digit isih kosong. Wiwit kolom kaping wolu, ana enem ing puluhan yuta; telu ing yutanan; papat ing atusan éwu; nol ing puluhan éwu; pitu ing éwuan; loro ing atusan; siji ing puluhan; lan wolu ing satuan. Nol ing puluhan éwu kuwi digit sing ditulis, dudu sel kosong.
+
+bagean a: Digit pitu ana ing éwuan.
+
+bagean be: Digit nol ana ing puluhan éwu.
+
+bagean ce: Digit siji ana ing puluhan.
+
+bagean de: Digit enem ana ing puluhan yuta.
+
+bagean e: Digit telu ana ing yutanan.
+
+## m81243--fs-id2310429
+
+Kanggo saben wilangan iki, temtokna panggonane saben digit sing disebut: pitulikur yuta patang atus sangang puluh telu éwu nem atus limalas
+
+bagean a: loro
+
+bagean be: siji
+
+bagean ce: papat
+
+bagean de: pitu
+
+bagean e: lima
+
+Wangsulan.
+
+bagean a: puluhan yuta
+
+bagean be: puluhan
+
+bagean ce: atusan éwu
+
+bagean de: yutanan
+
+bagean e: satuan
+
+## m81243--fs-id1282619
+
+Kanggo saben wilangan iki, temtokna panggonane saben digit sing disebut: limang atus sangalas milyar pitung atus sewelas yuta nem atus patang puluh siji éwu telung atus wolulikur
+
+bagean a: sanga
+
+bagean be: papat
+
+bagean ce: loro
+
+bagean de: enem
+
+bagean e: pitu
+
+Wangsulan.
+
+bagean a: milyaran
+
+bagean be: puluhan éwu
+
+bagean ce: puluhan
+
+bagean de: atusan éwu
+
+bagean e: atusan yuta

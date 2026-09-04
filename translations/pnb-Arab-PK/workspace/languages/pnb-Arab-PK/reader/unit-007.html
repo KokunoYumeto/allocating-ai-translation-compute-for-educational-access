@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="pnb-Arab-PK" dir="rtl"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Shahmukhi Punjabi algebra-to-functions bridge; incremental translation unit" />
+<title>فارمولے، جدولاں تے گراف توں فنکشن دیاں قدراں لبھنا — PNB-007</title><style>:root { color-scheme: light; --ink:#173434; --accent:#1b6159; --paper:#fffdf8; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:#edf1ee; font-family:"Noto Nastaliq Urdu","Urdu Typesetting","Noto Naskh Arabic","Segoe UI",serif; font-size:21px; line-height:2.35; }
+header, main, footer { max-width:1000px; margin:auto; padding:2rem 3rem; background:var(--paper); }
+header { border-block-start:8px solid var(--accent); padding-block-end:1.5rem; }
+h1 { font-size:2.4rem; line-height:2; margin:.2rem 0; }
+h2 { font-size:1.5rem; margin-block:1.5rem .5rem; color:var(--accent); }
+h3 { font-size:1.22rem; margin-block:1rem .4rem; }
+p { margin-block:.8rem; }
+a { color:#175b94; text-underline-offset:5px; }
+nav { font-size:1rem; }
+.eyebrow, .status, .source-label { font-size:1rem; }
+.status { border-inline-start:4px solid #b98238; padding-inline-start:1rem; }
+.source-label { background:#dae9e2; padding:.7rem 1rem; border-radius:4px; }
+.bridge { border-block-end:1px solid #cad7d1; padding-block-end:1rem; }
+bdi, .math-isolate, .formula, [dir="ltr"] { unicode-bidi:isolate; }
+bdi, math, .display-formula, [lang="en"] { font-family:"Cambria Math",Cambria,"Segoe UI",serif; }
+math { direction:ltr; font-size:1.03em; }
+.math-isolate { display:inline-block; direction:ltr; max-width:100%; vertical-align:middle; overflow-x:auto; overflow-y:hidden; }
+.equation, .display-formula { direction:ltr; text-align:center; overflow-x:auto; background:#f0f5f1; padding:1rem .5rem; margin-block:1.3rem; border-radius:4px; line-height:1.7; }
+.equation .math-isolate { display:block; }
+.formula { display:inline-block; direction:ltr; }
+figure { margin:1.5rem 0; }
+figure img { width:100%; height:auto; background:white; border:1px solid #cad7d1; padding:.5rem; }
+.figure-scroll { overflow-x:auto; }
+.scroll-hint { font-size:.9rem; }
+:focus-visible { outline:3px solid #b98238; outline-offset:3px; }
+figcaption { font-size:1rem; }
+aside { border-inline-start:4px solid var(--accent); padding:.5rem 1rem; background:#edf4ef; margin-block:1.2rem; }
+ol { padding-inline-start:2.2rem; list-style-type:decimal; }
+li { padding-inline-start:.5rem; margin-block:.5rem; }
+.source-parts { list-style:none; padding-inline-start:0; }
+.source-parts > li { margin-block:1rem; }
+.source-solution { border-block-start:1px solid #cad7d1; }
+.source-example figure img { width:var(--source-width); min-width:var(--source-width); display:block; margin-inline:auto; }
+.source-footnote { font-size:.75em; padding-inline:.25em; }
+.source-endnotes { font-size:.85em; border-block-start:1px solid #cad7d1; overflow-wrap:anywhere; }
+.source-table-scroll { margin-block:1rem; }
+.source-table { width:max-content; min-width:100%; }
+.source-table td { white-space:nowrap; font-family:"Cambria Math",Cambria,"Segoe UI",serif; }
+.source-table th { min-width:8rem; }
+.table-scroll { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:1rem; }
+th, td { text-align:start; vertical-align:top; border:1px solid #c6d5cc; padding:.6rem .8rem; }
+th { background:#e4eee7; }
+footer { font-family:"Segoe UI",sans-serif; font-size:14px; line-height:1.7; border-block-start:1px solid #cad7d1; }
+footer h2 { font-size:1.1rem; }
+@media (max-width:600px) { body { font-size:19px; } header,main,footer { padding:1.1rem; } h1 { font-size:1.9rem; } .formula { max-width:100%; overflow-x:auto; vertical-align:middle; } th,td { padding:.4rem; } figure img { min-width:640px; } }
+@media print { body { background:white; font-size:13pt; } header,main,footer { max-width:none; padding:0; } nav { display:none; } h2,h3 { break-after:avoid; } figure,aside,li { break-inside:avoid; } a { color:inherit; } }
+</style></head><body>
+<header><p class="eyebrow"><bdi dir="ltr">PNB-007 · A30 / m49301</bdi></p><h1>فارمولے، جدولاں تے گراف توں فنکشن دیاں قدراں لبھنا</h1><p>شاہ مکھی پنجابی · اردو تے انگریزی نال تعلیمی پُل</p>
+<p class="status">ابتدائی ترجمہ · پنجابی دے ماہر دی لسانی جانچ ہن تک نہیں ہوئی</p>
+<nav aria-label="سبق دے حصے"><a href="unit-006.html">پچھلا سبق</a> · <a href="#fs-id1165137591827">ماخذ دا ترجمہ</a> · <a href="#terminology">اصطلاحاں</a></nav></header>
+<main><aside id="representations-source-context" class="bridge" data-origin="original-bridge"><h2>ماخذ نوں پڑھن توں پہلاں — ساڈا اپنا نوٹ</h2><p>اگے جانوراں دی یاد بارے کہانی تے قدراں ماخذ دی پرانی مثال دے طور اُتے ترجمہ کیتیاں نیں۔ ایہناں نوں ساڈی ولوں کیتی نویں سائنسی جانچ، سارے جانوراں لئی پکا قاعدہ، یا جانور دی دیکھ بھال دی ہدایت نہ سمجھو۔ ایتھے ریاضی دا کم دِتی جدول توں جوڑیاں پڑھنا اے۔ ماخذ دے دو غلط وضاحتی ویرویاں دی درستگی تے ہور ضروری حدّاں <a href="#representations-bridge">ساڈے وکھرے نوٹاں</a> وچ نیں۔</p></aside>
+<p class="source-label">ماخذ دا ترجمہ: <bdi dir="ltr" lang="en">OpenStax Precalculus 2e, §1.1</bdi> دا چُنیا ہویا حصہ؛ پورے حصے دا ترجمہ نہیں۔</p>
+<section id="fs-id1165137591827" class="translated"><h2>فارمولیاں دی شکل وچ دِتے فنکشناں دیاں قدراں کڈھنا</h2><p id="fs-id1165137598337">کجھ فنکشناں دی تعریف ریاضی دے قاعدیاں یا طریقیاں نال کیتی جاندی اے، جیہڑے <span id="term-00012">مساوات</span> دی شکل وچ لکھے ہوندے نیں۔ جے فنکشن دی آؤٹ پُٹ نوں ایسے اک <span id="term-00013">فارمولے</span> نال لکھنا ممکن ہووے جیہدے وچ اِن پُٹ دی مقدار ہووے، تاں اسیں فنکشن دی تعریف الجبرا دی شکل وچ کر سکدے آں۔ مثال لئی، مساوات <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+    <mrow>
+     <mn>2</mn><mi>n</mi><mo>+</mo><mn>6</mn><mi>p</mi><mo>=</mo><mn>12</mn></mrow>
+   </math></span>، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+    <mrow>
+     <mi>n</mi></mrow>
+   </math></span> تے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>p</mi><mo />
+ </mrow>
+</math></span> دے وچکار فنکشن والا تعلق وکھاندی اے۔ اسیں ایہنوں دوبارہ لکھ کے طے کر سکدے آں کہ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+     <mrow>
+      <mi>p</mi></mrow>
+    </math></span>، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>n</mi><mo />
+ </mrow>
+</math></span> دا فنکشن اے یا نہیں۔</p><aside id="fs-id1165137827882"><h3>کرن دا طریقہ</h3><p id="fs-id1165132034236"><strong>جے فنکشن مساوات دی شکل وچ دِتا ہووے، تاں اوہدا جبری فارمولا لکھو۔</strong></p><ol id="fs-id1165134544989"><li>مساوات حل کر کے آؤٹ پُٹ متغیر نوں برابری دے نشان دے اک پاسے اِکّلّا کرو، تے دوجے پاسے ایسی عبارت رکھو جیہدے وچ <em>صرف</em> اِن پُٹ متغیر ہووے۔</li><li>مساواتاں حل کرن دے عام جبری طریقے ورتو، جیویں دوہاں پاسیاں وچ اِکّو مقدار جمع کرنا یا دوہاں پاسیاں وچوں اِکّو مقدار گھٹانا، یا مساوات دے دوہاں پاسیاں نوں اِکّو مقدار نال ضرب دینا یا تقسیم کرنا۔</li></ol></aside><section id="Example_01_01_09" class="source-example"><h2>حل کیتی مثال <bdi dir="ltr">9</bdi></h2><div id="fs-id1165137634899" class="source-exercise"><div id="fs-id1165137560474" class="source-problem"><h3>فنکشن دی جبری شکل لبھنا</h3><p id="fs-id1165137452465">جے ممکن ہووے، تاں تعلق <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <mn>2</mn><mi>n</mi><mo>+</mo><mn>6</mn><mi>p</mi><mo>=</mo><mn>12</mn></mrow>
+      </math></span> نوں فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>p</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+         <mi>n</mi>
+         <mo>)</mo></mrow><mo /></mrow>
+      </math></span> دی شکل وچ لکھو۔</p></div><section id="fs-id1165137832865" class="source-solution"><h3>حل</h3><p id="fs-id1165137832868">تعلق نوں ایس شکل وچ لکھن لئی سانوں ایہنوں اِنج لکھ سکنا چاہیدا اے کہ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <mi>p</mi></mrow>
+      </math></span>، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>n</mi><mo />
+ </mrow>
+</math></span> دا فنکشن ہووے؛ یعنی ایہنوں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,9],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>p</mi><mo>=</mo><mo stretchy="false">[</mo><mtext>expression</mtext><mspace width="0.5em" /><mtext>involving</mtext><mspace width="0.5em" /><mi>n</mi><mo stretchy="false">]</mo><mo /></mrow>
+      </math></span> دی شکل وچ لکھنا اے۔</p><div id="fs-id1165131920640" class="equation" dir="ltr"><span class="math-isolate" dir="ltr" tabindex="0" role="region" aria-label="ریاضی دا فارمولا؛ لوڑ پئے تے پاسے سرکاؤ"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" dir="ltr">
+ <mrow>
+  <mtable columnalign="left">
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mn>2</mn><mi>n</mi><mo>+</mo><mn>6</mn><mi>p</mi><mo>=</mo><mn>12</mn>
+     </mrow>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+   </mtr>
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mn>6</mn><mi>p</mi><mo>=</mo><mn>12</mn><mo>−</mo><mn>2</mn><mi>n</mi>
+     </mrow>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mrow />
+        </mtd>
+        <mtd>
+         <mrow />
+        </mtd>
+        <mtd>
+         <mrow />
+        </mtd>
+       </mtr>
+
+      </mtable><mtext>Subtract </mtext><mn>2</mn><mi>n</mi><mtext> from both sides</mtext><mo>.</mo>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mi>p</mi><mo>=</mo><mfrac>
+       <mrow>
+        <mn>12</mn><mo>−</mo><mn>2</mn><mi>n</mi>
+       </mrow>
+       <mn>6</mn>
+      </mfrac>
+
+     </mrow>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mrow />
+        </mtd>
+        <mtd>
+         <mrow />
+        </mtd>
+        <mtd>
+         <mrow />
+        </mtd>
+       </mtr>
+
+      </mtable><mtext>Divide both sides by 6 and simplify</mtext><mo>.</mo>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mi>p</mi><mo>=</mo><mfrac>
+       <mrow>
+        <mn>12</mn>
+       </mrow>
+       <mn>6</mn>
+      </mfrac>
+      <mo>−</mo><mfrac>
+       <mrow>
+        <mn>2</mn><mi>n</mi>
+       </mrow>
+       <mn>6</mn>
+      </mfrac>
+
+     </mrow>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+   </mtr>
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mi>p</mi><mo>=</mo><mn>2</mn><mo>−</mo><mfrac>
+       <mn>1</mn>
+       <mn>3</mn>
+      </mfrac>
+      <mi>n</mi>
+     </mrow>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+   </mtr>
+
+  </mtable>
+ </mrow>
+</math></span></div><p id="fs-id1165135513733">ایس لئی، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+        <mrow>
+         <mi>p</mi></mrow>
+       </math></span> نوں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+        <mrow>
+         <mi>n</mi></mrow>
+       </math></span> دے فنکشن دے طور اُتے اِنج لکھیا جاندا اے:</p><div id="fs-id1165135187787" class="equation" dir="ltr"><span class="math-isolate" dir="ltr" tabindex="0" role="region" aria-label="ریاضی دا فارمولا؛ لوڑ پئے تے پاسے سرکاؤ"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" dir="ltr">
+        <mrow>
+         <mi>p</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+          <mi>n</mi>
+          <mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>−</mo><mfrac>
+           <mn>1</mn>
+           <mn>3</mn>
+          </mfrac>
+         <mi>n</mi></mrow>
+       </math></span></div></section><div id="fs-id1165135161336" class="source-commentary"><h3>پرکھ</h3><p id="fs-id1165137870972">ایہہ گل چیتے رکھنی ضروری اے کہ مساوات نال وکھایا گیا ہر تعلق، فارمولے والے فنکشن دی شکل وچ وی نہیں لکھیا جا سکدا۔</p></div></div></section><section id="Example_01_01_10" class="source-example"><h2>حل کیتی مثال <bdi dir="ltr">10</bdi></h2><div id="fs-id1165135378843" class="source-exercise"><div id="fs-id1165135378845" class="source-problem"><h3>دائرے دی مساوات نوں فنکشن دی شکل وچ لکھنا</h3><p id="fs-id1165137758151">کی مساوات <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <msup>
+         <mi>x</mi>
+         <mn>2</mn>
+        </msup>
+        <mo>+</mo><msup>
+         <mi>y</mi>
+         <mn>2</mn>
+        </msup>
+        <mo>=</mo><mn>1</mn></mrow>
+      </math></span>، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <mi>x</mi></mrow>
+      </math></span> نوں اِن پُٹ تے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <mi>y</mi></mrow>
+      </math></span> نوں آؤٹ پُٹ من کے، اک فنکشن وکھاندی اے؟ جے ہاں، تاں تعلق نوں فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+         <mi>x</mi>
+         <mo>)</mo></mrow><mo /></mrow>
+      </math></span> دی شکل وچ لکھو۔</p></div><section id="fs-id1165135424684" class="source-solution"><h3>حل</h3><p id="fs-id1165137937536">پہلاں اسیں دوہاں پاسیاں وچوں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <msup>
+         <mi>x</mi>
+         <mn>2</mn>
+        </msup>
+        </mrow>
+      </math></span> گھٹاندے آں۔</p><div id="fs-id1165134054911" class="equation" dir="ltr"><span class="math-isolate" dir="ltr" tabindex="0" role="region" aria-label="ریاضی دا فارمولا؛ لوڑ پئے تے پاسے سرکاؤ"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" dir="ltr">
+       <mrow>
+        <msup>
+         <mi>y</mi>
+         <mn>2</mn>
+        </msup>
+        <mo>=</mo><mn>1</mn><mo>−</mo><msup>
+         <mi>x</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+      </math></span></div><p id="fs-id1165133437258">ہُن اسیں ایس مساوات نوں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <mi>y</mi></mrow>
+      </math></span> لئی حل کرن دی کوشش کردے آں۔</p><div id="fs-id1165137416396" class="equation" dir="ltr"><span class="math-isolate" dir="ltr" tabindex="0" role="region" aria-label="ریاضی دا فارمولا؛ لوڑ پئے تے پاسے سرکاؤ"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" dir="ltr">
+ <mrow>
+  <mtable columnalign="left">
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mi>y</mi><mo>=</mo><mo>±</mo><msqrt>
+       <mrow>
+        <mn>1</mn><mo>−</mo><msup>
+         <mi>x</mi>
+         <mn>2</mn>
+        </msup>
+
+       </mrow>
+      </msqrt>
+
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mtext>  </mtext><mo>=</mo><mo>+</mo><msqrt>
+       <mrow>
+        <mn>1</mn><mo>−</mo><msup>
+         <mi>x</mi>
+         <mn>2</mn>
+        </msup>
+
+       </mrow>
+      </msqrt>
+      <mtext> and </mtext><mo>−</mo><msqrt>
+       <mrow>
+        <mn>1</mn><mo>−</mo><msup>
+         <mi>x</mi>
+         <mn>2</mn>
+        </msup>
+
+       </mrow>
+      </msqrt>
+
+     </mrow>
+    </mtd>
+   </mtr>
+
+  </mtable>
+ </mrow>
+</math></span></div><p id="fs-id1165135369156">سانوں اِکّو اِن پُٹ نال جُڑیاں دو آؤٹ پُٹ قدراں ملدیاں نیں، ایس لئی ایہہ تعلق اک اکلوتے فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+         <mi>x</mi>
+         <mo>)</mo></mrow><mo /></mrow>
+      </math></span> دی شکل وچ نہیں لکھیا جا سکدا۔</p></section></div></section><aside id="fs-id1165137647659"><h3>آپ کر کے ویکھو</h3><div id="fs-id1165137698725" class="source-exercise"><div id="fs-id1165137698726" class="source-problem"><p id="fs-id1165137698727">جے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,6],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+     <mrow>
+      <mi>x</mi><mo>−</mo><mn>8</mn><msup>
+       <mi>y</mi>
+       <mn>3</mn>
+      </msup>
+      <mo>=</mo><mn>0</mn><mo /></mrow>
+    </math></span> ہووے، تاں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+     <mrow>
+      <mi>y</mi></mrow>
+    </math></span> نوں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>x</mi><mo />
+ </mrow>
+</math></span> دے فنکشن دے طور اُتے لکھو۔</p></div><section id="fs-id1165137677194" class="source-solution"><h3>حل</h3><p id="fs-id1165135344102"><span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+      <mrow>
+       <mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+        <mi>x</mi>
+        <mo>)</mo></mrow><mo>=</mo><mfrac>
+         <mrow>
+          <mroot>
+           <mi>x</mi>
+           <mn>3</mn>
+          </mroot>
+         </mrow>
+         <mn>2</mn>
+        </mfrac>
+      </mrow>
+     </math></span></p></section></div></aside><aside id="fs-id1165135581166"><h3>سوال تے جواب</h3><p id="eip-id1165135547539"><strong>کی مساوات نال وکھائے گئے ایسے تعلق وی نیں جیہڑے فنکشن تاں ہوندے نیں، پر فیر وی جبری فارمولے دی شکل وچ نہیں لکھے جا سکدے؟</strong></p><p id="fs-id1165137627784"><em>ہاں، اِنج ہو سکدا اے۔ مثال لئی، مساوات <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,5],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+     <mrow>
+      <mi>x</mi><mo>=</mo><mi>y</mi><mo>+</mo><msup>
+       <mn>2</mn>
+       <mi>y</mi>
+      </msup>
+      <mo /></mrow>
+    </math></span> دِتی ہووے تے اسیں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+     <mrow>
+      <mi>y</mi></mrow>
+    </math></span> نوں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+     <mrow>
+      <mi>x</mi><mo /></mrow>
+    </math></span> دے فنکشن دے طور اُتے لکھنا چاہندے ہوئیے، تاں ایسا کوئی سادہ جبری فارمولا نہیں جیہدے وچ صرف <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+     <mrow>
+      <mi>x</mi></mrow>
+    </math></span> ہووے تے جیہڑا <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+     <mrow>
+      <mi>y</mi><mo /></mrow>
+    </math></span> دے برابر ہووے۔ فیر وی ہر <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+     <mrow>
+      <mi>x</mi></mrow>
+    </math></span>، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+     <mrow>
+      <mi>y</mi><mo /></mrow>
+    </math></span> دی اک اکلوتی قدر طے کردا اے، تے ریاضی دے ایسے طریقے موجود نیں جنہاں نال <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+     <mrow>
+      <mi>y</mi></mrow>
+    </math></span> نوں منگی گئی جِنّی وی درستی نال لبھیا جا سکدا اے۔ ایس حالت وچ اسیں آکھدے آں کہ مساوات، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+     <mrow>
+      <mi>y</mi></mrow>
+    </math></span> نوں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+     <mrow>
+      <mi>x</mi><mo /></mrow>
+    </math></span> دا فنکشن بناؤن والا ضمنی (گل وچوں سمجھ آؤن والا) قاعدہ دیندی اے، بھاویں فارمولا صاف طور اُتے نہیں لکھیا جا سکدا۔</em></p></aside></section><section id="fs-id1165137648450" class="translated"><h2>جدول وچ دِتے فنکشن دی قدر کڈھنا</h2><p id="fs-id1165135186424">جیویں اسیں اُتّے ویکھیا اے، فنکشناں نوں جدولاں وچ وکھایا جا سکدا اے۔ اُلٹے پاسے، اسیں جدولاں دی معلومات توں فنکشن لکھ سکدے آں تے جدولاں نال اوہناں دیاں قدراں وی کڈھ سکدے آں۔ مثال لئی، ساڈے پالتو جانور ساڈے نال گزارے خوشگوار پل کِنّے چنگے یاد رکھدے نیں؟ اک عام مشہور کہانی اے کہ سنہری مچھلی دی یاد صرف <bdi dir="ltr">3</bdi> سیکنڈ رہندی اے، پر ایہہ صرف افسانہ اے۔ سنہری مچھلی <bdi dir="ltr">3</bdi> مہینیاں تیکر یاد رکھ سکدی اے، جد کہ بیٹا مچھلی دی یاد <bdi dir="ltr">5</bdi> مہینیاں تیکر رہندی اے۔ کتے دے بچے دی یاد دا دورانیہ <bdi dir="ltr">30</bdi> سیکنڈ توں ودھ نہیں ہوندا، پر بالغ کتا <bdi dir="ltr">5</bdi> منٹ تیکر یاد رکھ سکدا اے۔ بلی دے مقابلے وچ ایہہ بہت تھوڑا اے؛ بلی دی یاد <bdi dir="ltr">16</bdi> گھنٹے رہندی اے۔</p><p id="fs-id1165135186427">پالتو جانور دی قسم نوں اوہدی یاد دے دورانیے نال جوڑن والا فنکشن، جدول نال ہور سوکھا ویکھیا جا سکدا اے۔ <a href="#Table_01_01_10">جدول <bdi dir="ltr">1.1.10</bdi></a> ویکھو۔<sup id="fs-id1165135434830" class="source-footnote"><a href="#fs-id1165135434830-text" aria-label="ماخذ دا حوالہ 1"><bdi dir="ltr">1</bdi></a></sup></p><div class="table-scroll source-table-scroll" dir="ltr" tabindex="0" role="region" aria-label="جدول؛ لوڑ پئے تے پاسے سرکاؤ"><table id="Table_01_01_10" aria-label="چھے قطاراں تے دو کالم: پہلی قطار سرلیکھاں دی اے؛ پہلا کالم پالتو جانور تے دوجا یاد دا دورانیہ گھنٹیاں وچ وکھاندا اے۔ اصل خانیاں دیاں جوڑیاں: (کتے دا بچہ, 0.008)، (بالغ کتا, 0.083)، (بلی, 16)، (سنہری مچھلی, 2160)، تے (بیٹا مچھلی, 3600)۔" data-source-summary="چھے قطاراں تے دو کالم۔ پہلے کالم دا ناں «پالتو جانور» تے دوجے دا ناں «یاد دا دورانیہ، گھنٹیاں وچ» اے۔ قطاراں نوں ترتیب وار جوڑیاں دے طور اُتے پڑھیے، تاں ایہہ جوڑیاں نیں: (کتے دا بچہ, 0.008)، (بالغ کتا, 0.083)، (بلی, 16)، (سنہری مچھلی, 2100)، تے (بیٹا مچھلی, 3600)۔" dir="ltr" class="source-table"><tbody><tr><th dir="rtl" scope="col" style="text-align:center">پالتو جانور</th><th dir="rtl" scope="col" style="text-align:center">یاد دا دورانیہ، گھنٹیاں وچ</th></tr><tr><td dir="rtl" style="text-align:center">کتے دا بچہ</td><td dir="ltr" style="text-align:center">0.008</td></tr><tr><td dir="rtl" style="text-align:center">بالغ کتا</td><td dir="ltr" style="text-align:center">0.083</td></tr><tr><td dir="rtl" style="text-align:center">بلی</td><td dir="ltr" style="text-align:center">16</td></tr><tr><td dir="rtl" style="text-align:center">سنہری مچھلی</td><td dir="ltr" style="text-align:center">2160</td></tr><tr><td dir="rtl" style="text-align:center">بیٹا مچھلی</td><td dir="ltr" style="text-align:center">3600</td></tr></tbody></table></div><p id="fs-id1165137584852">کدی کدی فنکشن دی قدر جدول توں کڈھنی، مساواتاں ورتن توں ودھ کم دی ہو سکدی اے۔ ایتھے ایس فنکشن نوں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>P</mi><mo />
+ </mrow>
+</math></span> آکھ لئیے۔ فنکشن دا <span id="term-00014">ڈومین</span> پالتو جانور دی قسم اے، تے رینج اک حقیقی عدد اے جیہڑا اوہ گھنٹے وکھاندا اے جِنّے چِر جانور دی یاد رہندی اے۔ اسیں فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+    <mrow>
+     <mi>P</mi></mrow>
+   </math></span> دی قدر اِن پُٹ «سنہری مچھلی» اُتے کڈھ سکدے آں۔ اسیں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,5],&quot;old&quot;:&quot;2160.&quot;,&quot;new&quot;:&quot;2160&quot;}]">
+ <mrow>
+  <mi>P</mi><mo stretchy="false">(</mo><mtext>goldfish</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>2160</mn>
+ </mrow>
+</math></span> لکھاں گے۔ چیتے رکھو کہ جدول دی شکل وچ فنکشن دی قدر کڈھن لئی اسیں جدول دی متعلقہ قطار توں اِن پُٹ قدر تے اوہدی جُڑی آؤٹ پُٹ قدر لبھدے آں۔ فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+    <mrow>
+     <mi>P</mi></mrow>
+   </math></span> لئی جدول دی شکل بہت ڈھکدی لگدی اے، پیراگراف یا فنکشن دی شکل وچ لکھن نالوں وی ودھ۔</p><aside id="fs-id1165137838337"><h3>کرن دا طریقہ</h3><p id="fs-id1165137870786"><strong>جے فنکشن جدول دی شکل وچ دِتا ہووے، تاں خاص آؤٹ پُٹ تے اِن پُٹ قدراں لبھو۔</strong></p><ol id="fs-id1165137870791"><li>اِن پُٹ قدراں دی قطار (یا کالم) وچ دِتی ہوئی اِن پُٹ لبھو۔</li><li>اوس اِن پُٹ نال جوڑی گئی آؤٹ پُٹ قدر لبھو۔</li><li>آؤٹ پُٹ قدراں دی قطار (یا کالم) وچ دِتیاں ہوئیاں آؤٹ پُٹ قدراں لبھو؛ ہر اوہ تھاں نوٹ کرو جتھے اوہ آؤٹ پُٹ قدر آؤندی اے۔</li><li>دِتی ہوئی آؤٹ پُٹ قدر نال جُڑی اِن پُٹ قدر یا قدراں لبھو۔</li></ol></aside><section id="Example_01_01_11" class="source-example"><h2>حل کیتی مثال <bdi dir="ltr">11</bdi></h2><div id="fs-id1165137619419" class="source-exercise"><div id="fs-id1165137619421" class="source-problem"><h3>جدول والے فنکشن دی قدر کڈھنا تے اوہدی مساوات حل کرنا</h3><p id="fs-id1165133356033"><a href="#Table_01_01_11">جدول <bdi dir="ltr">1.1.11</bdi></a> ورت کے،</p><ol id="fs-id1165137653327" class="source-parts" role="list"><li><bdi dir="ltr">(a)</bdi> <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,2],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+        <mrow>
+         <mi>g</mi><mrow><mo>(</mo>
+          <mn>3</mn>
+          <mo>)</mo></mrow><mo /></mrow>
+       </math></span> دی قدر کڈھو۔</li><li><bdi dir="ltr">(b)</bdi> <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,3],&quot;old&quot;:&quot;6.&quot;,&quot;new&quot;:&quot;6&quot;}]">
+        <mrow>
+         <mi>g</mi><mrow><mo>(</mo>
+          <mi>n</mi>
+          <mo>)</mo></mrow><mo>=</mo><mn>6</mn></mrow>
+       </math></span> نوں حل کرو۔</li></ol><div class="table-scroll source-table-scroll" dir="ltr" tabindex="0" role="region" aria-label="جدول؛ لوڑ پئے تے پاسے سرکاؤ"><table id="Table_01_01_11" aria-label="دو قطاراں تے چھے کالم۔ پہلی قطار دا ناں «n» تے دوجی دا ناں «g(n)» اے۔ کالماں نوں ترتیب وار جوڑیاں دے طور اُتے پڑھیے، تاں ایہہ جوڑیاں نیں: (1, 8)، (2, 6)، (3, 7)، (4, 6)، تے (5, 8)۔" data-source-summary="دو قطاراں تے چھے کالم۔ پہلی قطار دا ناں «n» تے دوجی دا ناں «g(n)» اے۔ کالماں نوں ترتیب وار جوڑیاں دے طور اُتے پڑھیے، تاں ایہہ جوڑیاں نیں: (1, 8)، (2, 6)، (3, 7)، (4, 6)، تے (5, 8)۔" dir="ltr" class="source-table"><tbody><tr><th dir="rtl" scope="row" style="text-align:center"><strong><span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mi>n</mi>
+</math></span></strong></th><td dir="ltr" style="text-align:center">1</td><td dir="ltr" style="text-align:center">2</td><td dir="ltr" style="text-align:center">3</td><td dir="ltr" style="text-align:center">4</td><td dir="ltr" style="text-align:center">5</td></tr><tr><th dir="rtl" scope="row" style="text-align:center"><strong><span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>g</mi><mrow><mo>(</mo>
+   <mi>n</mi>
+  <mo>)</mo></mrow></mrow>
+</math></span></strong></th><td dir="ltr" style="text-align:center">8</td><td dir="ltr" style="text-align:center">6</td><td dir="ltr" style="text-align:center">7</td><td dir="ltr" style="text-align:center">6</td><td dir="ltr" style="text-align:center">8</td></tr></tbody></table></div></div><section id="fs-id1165137748378" class="source-solution"><h3>حل</h3><ol id="fs-id1165137725812" class="source-parts" role="list"><li><bdi dir="ltr">(a)</bdi> <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo>
+ </mrow>
+</math></span> دی قدر کڈھن دا مطلب فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mi>g</mi>
+</math></span> دی آؤٹ پُٹ قدر، اِن پُٹ قدر <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,2],&quot;old&quot;:&quot;3.&quot;,&quot;new&quot;:&quot;3&quot;}]">
+ <mrow>
+  <mi>n</mi><mo>=</mo><mn>3</mn>
+ </mrow>
+</math></span> لئی لبھنا اے۔ جدول وچ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>n</mi><mo>=</mo><mn>3</mn>
+ </mrow>
+</math></span> نال جُڑی آؤٹ پُٹ قدر <bdi dir="ltr">7</bdi> اے، ایس لئی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,5],&quot;old&quot;:&quot;7.&quot;,&quot;new&quot;:&quot;7&quot;}]">
+ <mrow>
+  <mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>7</mn>
+ </mrow>
+</math></span> اے۔</li><li><bdi dir="ltr">(b)</bdi> <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>g</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn>
+ </mrow>
+</math></span> نوں حل کرن دا مطلب اوہ اِن پُٹ قدراں، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>n</mi><mo />
+ </mrow>
+</math></span>، لبھنا اے جیہڑیاں <bdi dir="ltr">6</bdi> دی آؤٹ پُٹ دیندیاں نیں۔ تھلّے دِتی جدول دو حل وکھاندی اے: <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mn>2</mn>
+ </mrow>
+</math></span> تے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,0],&quot;old&quot;:&quot;4.&quot;,&quot;new&quot;:&quot;4&quot;}]">
+ <mrow>
+  <mn>4</mn>
+ </mrow>
+</math></span>۔</li></ol><div class="table-scroll source-table-scroll" dir="ltr" tabindex="0" role="region" aria-label="جدول؛ لوڑ پئے تے پاسے سرکاؤ"><table id="Table_01_01_12" aria-label="دو قطاراں تے چھے کالم۔ پہلی قطار دا ناں «n» تے دوجی دا ناں «g(n)» اے۔ کالماں نوں ترتیب وار جوڑیاں دے طور اُتے پڑھیے، تاں ایہہ جوڑیاں نیں: (1, 8)، (2, 6)، (3, 7)، (4, 6)، تے (5, 8)۔" data-source-summary="دو قطاراں تے چھے کالم۔ پہلی قطار دا ناں «n» تے دوجی دا ناں «g(n)» اے۔ کالماں نوں ترتیب وار جوڑیاں دے طور اُتے پڑھیے، تاں ایہہ جوڑیاں نیں: (1, 8)، (2, 6)، (3, 7)، (4, 6)، تے (5, 8)۔" dir="ltr" class="source-table"><tbody><tr><th dir="rtl" scope="row" style="text-align:center"><strong><span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mi>n</mi>
+</math></span></strong></th><td dir="ltr" style="text-align:center">1</td><td dir="ltr" style="text-align:center">2</td><td dir="ltr" style="text-align:center">3</td><td dir="ltr" style="text-align:center">4</td><td dir="ltr" style="text-align:center">5</td></tr><tr><th dir="rtl" scope="row" style="text-align:center"><strong><span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>g</mi><mrow><mo>(</mo>
+   <mi>n</mi>
+  <mo>)</mo></mrow></mrow>
+</math></span></strong></th><td dir="ltr" style="text-align:center">8</td><td dir="ltr" style="text-align:center">6</td><td dir="ltr" style="text-align:center">7</td><td dir="ltr" style="text-align:center">6</td><td dir="ltr" style="text-align:center">8</td></tr></tbody></table></div><p id="fs-id1165137448125">جدوں اسیں فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>g</mi><mo /></mrow>
+      </math></span> وچ اِن پُٹ <bdi dir="ltr">2</bdi> دیندے آں، تاں ساڈی آؤٹ پُٹ <bdi dir="ltr">6</bdi> ہوندی اے۔ جدوں فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>g</mi><mo /></mrow>
+      </math></span> وچ اِن پُٹ <bdi dir="ltr">4</bdi> دیندے آں، تاں ساڈی آؤٹ پُٹ وی <bdi dir="ltr">6</bdi> ہوندی اے۔</p></section></div></section><aside id="fs-id1165137584384"><h3>آپ کر کے ویکھو</h3><div id="ti_01_01_06" class="source-exercise"><div id="fs-id1165137557816" class="source-problem"><p id="fs-id1165137557817">اُتّے <strong>جدول والے فنکشن دی قدر کڈھنا تے اوہدی مساوات حل کرنا</strong> وچ دِتی جدول ورت کے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,2],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+      <mrow>
+       <mi>g</mi><mrow><mo>(</mo>
+        <mn>1</mn>
+        <mo>)</mo></mrow><mo /></mrow>
+     </math></span> دی قدر کڈھو۔</p></div><section id="fs-id1165137423936" class="source-solution"><h3>حل</h3><p id="fs-id1165137423937"><span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+      <mrow>
+       <mi>g</mi><mrow><mo>(</mo>
+        <mn>1</mn>
+        <mo>)</mo></mrow><mo>=</mo><mn>8</mn></mrow>
+     </math></span></p></section></div></aside></section><section id="fs-id1165135696152" class="translated"><h2>گراف توں فنکشن دیاں قدراں لبھنا</h2><p id="fs-id1165137779152">گراف نال فنکشن دی قدر کڈھن لئی وی دِتی اِن پُٹ نال جُڑی آؤٹ پُٹ قدر لبھنی پیندی اے؛ فرق ایہہ اے کہ ایتھے اسیں گراف ویکھ کے آؤٹ پُٹ لبھدے آں۔ گراف نال فنکشن دی مساوات حل کرن لئی گراف اُتے اوہ ساریاں تھاواں لبھدے آں جتھے دِتی آؤٹ پُٹ قدر ملدی اے، تے اوہناں نال جُڑی اِن پُٹ قدر یا قدراں ویکھدے آں۔</p><section id="Example_01_01_12" class="source-example"><h2>حل کیتی مثال <bdi dir="ltr">12</bdi></h2><div id="fs-id1165134212105" class="source-exercise"><div id="fs-id1165134212107" class="source-problem"><h3>گراف توں فنکشن دیاں قدراں پڑھنا</h3><p id="fs-id1165137469316"><a href="#Figure_01_01_007">شکل <bdi dir="ltr">1.1.7</bdi></a> وچ دِتا گراف ورت کے،</p><ol id="fs-id1165137604039" class="source-parts" role="list"><li><bdi dir="ltr">(a)</bdi> <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,2],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+        <mrow>
+         <mi>f</mi><mrow><mo>(</mo>
+          <mn>2</mn>
+          <mo>)</mo></mrow><mo /></mrow>
+       </math></span> دی قدر کڈھو۔</li><li><bdi dir="ltr">(b)</bdi> <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,3],&quot;old&quot;:&quot;4.&quot;,&quot;new&quot;:&quot;4&quot;}]">
+        <mrow>
+         <mi>f</mi><mrow><mo>(</mo>
+          <mi>x</mi>
+          <mo>)</mo></mrow><mo>=</mo><mn>4</mn></mrow>
+       </math></span> نوں حل کرو۔</li></ol><figure id="Figure_01_01_007"><div class="figure-scroll" dir="ltr" tabindex="0" role="region" aria-label="اصل شکل؛ لوڑ پئے تے پاسے سرکاؤ"><img id="fs-id1165137705894" src="../assets/Figure_01_01_007.jpg" alt="گراف: پیرابولا اُتّے ول کھُلدا اے تے اوہدا راس (1, 0) اُتے اے۔" data-source-alt="مثبت پیرابولا دا گراف، جیہدا مرکز (1, 0) اُتے اے۔" aria-describedby="representations-alt-wording" width="487" height="445" style="--source-width:487px" /></div><p class="scroll-hint">چھوٹی سکرین اُتے پوری شکل ویکھن لئی پاسے سرکاؤ، یا <a href="../assets/Figure_01_01_007.jpg">اصل شکل وکھری کھولو</a>۔</p><p class="scroll-hint source-alt-advisory">ایس شکل دے ماخذ والے متبادل متن بارے <a href="#representations-alt-wording">ساڈی وکھری درستی تے وضاحت وی ویکھو</a>۔</p></figure></div><section id="fs-id1165137849160" class="source-solution"><h3>حل</h3><ol id="fs-id1165137871522" class="source-parts" role="list"><li><bdi dir="ltr">(a)</bdi> <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,2],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>f</mi><mrow><mo>(</mo>
+         <mn>2</mn>
+         <mo>)</mo></mrow><mo /></mrow>
+      </math></span> دی قدر کڈھن لئی منحنی اُتے اوہ نقطہ لبھو جتھے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,3],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>x</mi><mo>=</mo><mn>2</mn><mo /></mrow>
+      </math></span> اے، تے فیر اوس نقطے دا <em><bdi dir="ltr">y</bdi></em>-محدد پڑھو۔ نقطے دے محدد <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,5],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo><mo />
+ </mrow>
+</math></span> نیں، ایس لئی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,3],&quot;old&quot;:&quot;1.&quot;,&quot;new&quot;:&quot;1&quot;}]">
+       <mrow>
+        <mi>f</mi><mrow><mo>(</mo>
+         <mn>2</mn>
+         <mo>)</mo></mrow><mo>=</mo><mn>1</mn></mrow>
+      </math></span> اے۔ <a href="#Figure_01_01_008">شکل <bdi dir="ltr">1.1.8</bdi></a> ویکھو۔<figure id="Figure_01_01_008"><div class="figure-scroll" dir="ltr" tabindex="0" role="region" aria-label="اصل شکل؛ لوڑ پئے تے پاسے سرکاؤ"><img id="fs-id1165135675165" src="../assets/Figure_01_01_008.jpg" alt="گراف: پیرابولا اُتّے ول کھُلدا اے؛ اوہدا راس (1, 0) اُتے اے تے نشان لایا نقطہ (2, 1) اے، جتھے f(2) = 1 اے۔" data-source-alt="مثبت پیرابولا دا گراف، جیہدا مرکز (1, 0) اُتے اے تے جیہدے اُتے نقطہ (2, 1) نشان لایا گیا اے، جتھے f(2) = 1 اے۔" aria-describedby="representations-alt-wording" width="361" height="339" style="--source-width:361px" /></div><p class="scroll-hint">چھوٹی سکرین اُتے پوری شکل ویکھن لئی پاسے سرکاؤ، یا <a href="../assets/Figure_01_01_008.jpg">اصل شکل وکھری کھولو</a>۔</p><p class="scroll-hint source-alt-advisory">ایس شکل دے ماخذ والے متبادل متن بارے <a href="#representations-alt-wording">ساڈی وکھری درستی تے وضاحت وی ویکھو</a>۔</p></figure></li><li><bdi dir="ltr">(b)</bdi> <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,3],&quot;old&quot;:&quot;4,&quot;,&quot;new&quot;:&quot;4&quot;}]">
+       <mrow>
+        <mi>f</mi><mrow><mo>(</mo>
+         <mi>x</mi>
+         <mo>)</mo></mrow><mo>=</mo><mn>4</mn></mrow>
+      </math></span> نوں حل کرن لئی اسیں عمودی محور اُتے آؤٹ پُٹ قدر <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mn>4</mn>
+ </mrow>
+</math></span> لبھدے آں۔ لکیر <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,3],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>y</mi><mo>=</mo><mn>4</mn><mo /></mrow>
+      </math></span> دے نال افقی پاسے چلدے ہوئے سانوں منحنی دے دو ایسے نقطے ملدے نیں جنہاں دی آؤٹ پُٹ قدر <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,0],&quot;old&quot;:&quot;4:&quot;,&quot;new&quot;:&quot;4&quot;}]">
+ <mrow>
+  <mn>4</mn>
+ </mrow>
+</math></span> اے: <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mo stretchy="false">(</mo><mn>−1</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo>
+ </mrow>
+</math></span> تے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,5],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo><mo />
+ </mrow>
+</math></span>۔ ایہہ نقطے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,3],&quot;old&quot;:&quot;4:&quot;,&quot;new&quot;:&quot;4&quot;}]">
+       <mrow>
+        <mi>f</mi><mrow><mo>(</mo>
+         <mi>x</mi>
+         <mo>)</mo></mrow><mo>=</mo><mn>4</mn></mrow>
+      </math></span> دے دو حل وکھاندے نیں: <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <mn>−1</mn></mrow>
+      </math></span> یا <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,0],&quot;old&quot;:&quot;3.&quot;,&quot;new&quot;:&quot;3&quot;}]">
+       <mrow>
+        <mn>3</mn></mrow>
+      </math></span>۔ ایس دا مطلب اے کہ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <mi>f</mi><mrow><mo>(</mo>
+         <mrow>
+<mn>−1</mn></mrow>
+         <mo>)</mo></mrow><mo>=</mo><mn>4</mn></mrow>
+      </math></span> تے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+       <mrow>
+        <mi>f</mi><mrow><mo>(</mo>
+         <mn>3</mn>
+         <mo>)</mo></mrow><mo>=</mo><mn>4</mn><mo /></mrow>
+      </math></span> اے؛ یعنی جدوں اِن پُٹ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+       <mrow>
+        <mn>−1</mn></mrow>
+      </math></span> یا <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,0],&quot;old&quot;:&quot;3,&quot;,&quot;new&quot;:&quot;3&quot;}]">
+ <mrow>
+  <mtext>3</mtext>
+ </mrow>
+</math></span> ہووے، تاں آؤٹ پُٹ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mtext>4</mtext><mtext />
+ </mrow>
+</math></span> اے۔ <a href="#Figure_01_01_009">شکل <bdi dir="ltr">1.1.9</bdi></a> ویکھو۔<figure id="Figure_01_01_009"><div class="figure-scroll" dir="ltr" tabindex="0" role="region" aria-label="اصل شکل؛ لوڑ پئے تے پاسے سرکاؤ"><img id="fs-id1165137469773" src="../assets/Figure_01_01_009.jpg" alt="گراف: پیرابولا اُتّے ول کھُلدا اے تے اوہدا راس (1, 0) اُتے اے۔ نشان لائے نقطے (-1, 4) تے (3, 4) نیں۔ افقی لکیر y = 4 پیرابولا نوں ایہناں دوہاں نقطیاں اُتے کٹدی اے۔" data-source-alt="اُتّے ول کھُلدے پیرابولا دا گراف، جیہدا راس (0,1) اُتے اے تے جیہدے اُتے (-1, 4) تے (3,4) نقطے نشان لائے گئے نیں۔ y = 4 والی لکیر ایہناں نشان لائے نقطیاں اُتے پیرابولا نوں کٹدی اے۔" aria-describedby="representations-alt-vertex" width="487" height="445" style="--source-width:487px" /></div><p class="scroll-hint">چھوٹی سکرین اُتے پوری شکل ویکھن لئی پاسے سرکاؤ، یا <a href="../assets/Figure_01_01_009.jpg">اصل شکل وکھری کھولو</a>۔</p><p class="scroll-hint source-alt-advisory">ایس شکل دے ماخذ والے متبادل متن بارے <a href="#representations-alt-vertex">ساڈی وکھری درستی تے وضاحت وی ویکھو</a>۔</p></figure></li></ol></section></div></section><aside id="fs-id1165135149263"><h3>آپ کر کے ویکھو</h3><div id="ti_01_01_05" class="source-exercise"><div id="fs-id1165137695207" class="source-problem"><p id="fs-id1165137695208"><a href="#Figure_01_01_007">شکل <bdi dir="ltr">1.1.7</bdi></a> ورت کے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,3],&quot;old&quot;:&quot;1.&quot;,&quot;new&quot;:&quot;1&quot;}]">
+      <mrow>
+       <mi>f</mi><mrow><mo>(</mo>
+        <mi>x</mi>
+        <mo>)</mo></mrow><mo>=</mo><mn>1</mn></mrow>
+     </math></span> نوں حل کرو۔</p></div><section id="fs-id1165137598286" class="source-solution"><h3>حل</h3><p id="fs-id1165137598287"><span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+      <mrow>
+       <mi>x</mi><mo>=</mo><mn>0</mn></mrow>
+     </math></span> یا <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+      <mrow>
+       <mi>x</mi><mo>=</mo><mn>2</mn></mrow>
+     </math></span></p></section></div></aside></section><section class="source-endnotes"><h2>ماخذ دے حوالے</h2><ol><li id="fs-id1165135434830-text"><span>ماخذ: <a href="http://www.kgbanswers.com/how-long-is-a-dogs-memory-span/4221590"><bdi dir="ltr" lang="en">http://www.kgbanswers.com/how-long-is-a-dogs-memory-span/4221590</bdi></a>۔ ویکھن دی تاریخ: <bdi dir="ltr">3/24/2014</bdi>۔</span> <a href="#fs-id1165135434830">متن ول واپس</a></li></ol></section><section id="representations-bridge" class="bridge" data-origin="original-bridge"><h2>فارمولے، جدولاں تے گراف — ساڈی اپنی وضاحت</h2><p>ایتھوں اگے دِتیاں وضاحتاں ساڈی ولوں شامل کیتیاں نیں؛ ایہہ ماخذ دا ترجمہ نہیں۔</p><h3>مساوات توں فارمولا</h3><p><a href="#Example_01_01_09">پہلی مثال</a> وچ <bdi dir="ltr">p = f(n) = 2 − n/3</bdi> اے۔ مساوات حل کردیاں دوہاں پاسیاں نوں اِکّو غیر صفر مقدار نال ضرب دینا یا تقسیم کرنا حل قائم رکھدا اے۔ صفر نال تقسیم نہیں ہو سکدی؛ صفر نال ضرب دے کے اصل مساوات دی ساری معلومات وی مِٹ سکدی اے۔ ماخذ دے عام طریقے نال ایہہ ضروری حد ساڈے ایس نوٹ وچ شامل کیتی گئی اے۔</p><p>انگریزی حساب وچ <bdi dir="ltr" lang="en">expression involving n</bdi> دا مطلب <bdi dir="ltr">n</bdi> والی عبارت اے؛ <bdi dir="ltr" lang="en">Subtract 2n from both sides.</bdi> دا مطلب دوہاں پاسیاں وچوں <bdi dir="ltr">2n</bdi> گھٹاؤ؛ <bdi dir="ltr" lang="en">Divide both sides by 6 and simplify.</bdi> دا مطلب دوہاں پاسیاں نوں <bdi dir="ltr">6</bdi> نال تقسیم کر کے سادہ کرو۔ انگریزی ہدایتاں، خالی ترتیب والے خانے تے ریاضی دی پوری لکھت اصل حساب وچ قائم نیں۔</p><h3>اک مساوات، پر ضروری نہیں اک فنکشن</h3><p><a href="#Example_01_01_10">دائرے دی مثال</a> وچ <bdi dir="ltr">x² + y² = 1</bdi> لئی <bdi dir="ltr">x = 0</bdi> رکھو: <bdi dir="ltr">y = 1</bdi> تے <bdi dir="ltr">y = −1</bdi> دو وکھرے جواب نیں۔ اِکّو اِن پُٹ نال ایہہ دو آؤٹ پُٹ ملنا، پورے تعلق نوں <bdi dir="ltr">y = f(x)</bdi> والا اک فنکشن منّن توں روکدا اے۔ ایہہ نہ سمجھو کہ ہر <bdi dir="ltr">x</bdi> اُتے دو وکھرے حقیقی جواب نیں: <bdi dir="ltr">x = −1</bdi> تے <bdi dir="ltr">x = 1</bdi> اُتے <bdi dir="ltr">y = 0</bdi> اے، تے <bdi dir="ltr">−1 ≤ x ≤ 1</bdi> توں باہر کوئی حقیقی جواب نہیں۔ <bdi dir="ltr">+√(1 − x²)</bdi> تے <bdi dir="ltr">−√(1 − x²)</bdi> وچوں صرف اک شاخ چُننا اک ہور، محدود تعلق بناندا اے؛ ماخذ وچ پورا دائرہ دِتا اے۔ حساب دے <bdi dir="ltr" lang="en">and</bdi> دا مطلب «تے» اے۔</p><p><a href="#fs-id1165137647659">اگلی مشق</a> دا جواب <bdi dir="ltr">y = ∛x/2</bdi> اے: جذر دا درجہ <bdi dir="ltr">3</bdi> تے کسر دا مخرج <bdi dir="ltr">2</bdi> اے۔ حقیقی مکعب جذر منفی عدداں لئی وی ہوندا اے؛ مثال لئی <bdi dir="ltr">x = −8</bdi> نال <bdi dir="ltr">y = −1</bdi> ملدا اے، تے اصل مساوات <bdi dir="ltr">x − 8y³ = 0</bdi> وچ ایہہ قدراں پوری آؤندیاں نیں۔</p><h3>ضمنی قاعدہ تے صاف لکھیا فارمولا</h3><p><a href="#fs-id1165135581166">سوال جواب</a> دی مثال <bdi dir="ltr">x = y + 2ʸ</bdi> وچ حقیقی <bdi dir="ltr">y</bdi> ودھے، تاں <bdi dir="ltr">y + 2ʸ</bdi> وی لگاتار ودھدا اے؛ اوہدی آؤٹ پُٹ ہر حقیقی <bdi dir="ltr">x</bdi> تیکر پہنچ سکدی اے۔ ایس لئی ہر حقیقی <bdi dir="ltr">x</bdi> لئی اک اکلوتا <bdi dir="ltr">y</bdi> ہوندا اے۔ ماخذ دی «فارمولا نہیں لکھیا جا سکدا» والی گل نوں اوتھے دِتے «سادہ جبری فارمولے» دے دائرے وچ پڑھو؛ ایہہ ہر ممکن خاص علامت یا ہور ریاضی طریقے اُتے پابندی دا دعویٰ نہیں۔ <bdi dir="ltr" lang="en">implicit</bdi> لئی ایتھے «ضمنی، گل وچوں سمجھ آؤن والا» تے <bdi dir="ltr" lang="en">explicit</bdi> لئی «صاف طور اُتے لکھیا ہویا» ورتیا اے۔ اردو دے تعلیمی رجسٹر وچ <span lang="ur-Arab-PK">ضمنی / صریح</span> ملدے نیں؛ ساڈیاں پنجابی تعلیمی چوناں ہُن وی استاد دی پڑتال منگدیاں نیں۔</p><h3>جانوراں والی جدول: ماخذ تے اصل خانے</h3><p><a href="#Table_01_01_10">جانوراں دی جدول</a> وچ چھے قطاراں تے دو کالم نیں؛ پہلی قطار سرلیکھاں دی اے۔ انگریزی ماخذ دے غیر بصری خلاصے وچ سنہری مچھلی لئی <bdi dir="ltr">2100</bdi> لکھیا اے، پر اصل خانے تے <bdi dir="ltr">P(goldfish) = 2160</bdi> والے فارمولے وچ <bdi dir="ltr">2160</bdi> اے۔ اسیں خانے دا <bdi dir="ltr">2160</bdi> قائم رکھیا اے۔ ماخذ دے خلاصے دا وفادار ترجمہ وکھرا محفوظ اے؛ پڑھ کے سناؤن والا خلاصہ اصل خانے مطابق درست کیتا اے۔ انڈونیشی مقابلے دے خلاصے وچ وی <bdi dir="ltr">2160</bdi> اے۔</p><p>ماخذ دی تاریخ <bdi dir="ltr">3/24/2014</bdi> تے اوہدا اصل ویب حوالہ <a href="#fs-id1165135434830-text">حاشیے</a> وچ قائم نیں۔ ایہہ پڑھائی لئی دِتی پرانی جدول اے، جانوراں دی یاد دا عالمگیر سائنسی قانون نہیں۔ <bdi dir="ltr">0.008</bdi> گھنٹے ٹھیک <bdi dir="ltr">30</bdi> سیکنڈ نہیں بلکہ <bdi dir="ltr">28.8</bdi> سیکنڈ نیں؛ <bdi dir="ltr">0.083</bdi> گھنٹے <bdi dir="ltr">4.98</bdi> منٹ نیں۔ مہینیاں نوں گھنٹیاں وچ بدلنا وی مہینے دے دِناں بارے مفروضہ منگدا اے۔ اصل جدولی قدراں بدل کے نویں نہیں بنائیاں گئیاں۔</p><p>ایتھے <bdi dir="ltr">P</bdi> دا ڈومین دِتیاں پنج جانوراں دیاں قسماں دا سیٹ اے، تے رینج آؤٹ پُٹ قدراں دا سیٹ <bdi dir="ltr">{0.008, 0.083, 16, 2160, 3600}</bdi> اے۔ ماخذ دا «رینج اک حقیقی عدد اے» ہر آؤٹ پُٹ دی قسم بارے گل اے؛ پوری رینج اک اکلوتا عدد نہیں۔ «پیراگراف یا فنکشن دی شکل» والے جملے وچ مراد فارمولے دی شکل توں فرق اے؛ جدول وی فنکشن وکھا سکدی اے۔</p><p>انگریزی ناں <bdi dir="ltr" lang="en">goldfish</bdi> ایتھے «سنہری مچھلی» اے، تے <bdi dir="ltr" lang="en">beta fish</bdi> ماخذ دی اپنی لکھت مطابق «بیٹا مچھلی» اے۔ <bdi dir="ltr" lang="en">puppy</bdi> — کتے دا بچہ؛ <bdi dir="ltr" lang="en">adult dog</bdi> — بالغ کتا؛ <bdi dir="ltr" lang="en">cat</bdi> — بلی۔ ایہہ جدول دے عام ناں نیں، کسی فرد دے ذاتی ناں نہیں۔</p><h3>جدول نوں دو پاسیاں توں پڑھنا</h3><p><bdi dir="ltr">g</bdi> والیاں دوہاں جدولاں وچ اِن پُٹ <bdi dir="ltr">1, 2, 3, 4, 5</bdi> تے جُڑیاں آؤٹ پُٹ <bdi dir="ltr">8, 6, 7, 6, 8</bdi> اِسّے ترتیب نال نیں۔ ایس لئی <bdi dir="ltr">g(3) = 7</bdi> تے <bdi dir="ltr">g(1) = 8</bdi>، جد کہ <bdi dir="ltr">g(n) = 6</bdi> دے حل <bdi dir="ltr">n = 2</bdi> تے <bdi dir="ltr">n = 4</bdi> نیں۔ دوجی جدول اوہو معلومات دوبارہ وکھاندی اے؛ ماخذ نے اوہنوں بے نمبر رکھیا اے۔ جدول توں باہر دیاں اِن پُٹ قدراں لئی کوئی نواں فارمولا فرض نہ کرو۔</p><h3>گراف دے محور تے راس دی درستگی</h3><p id="representations-alt-wording">تِنّاں گرافاں وچ افقی محور <bdi dir="ltr">x</bdi> اِن پُٹ وکھاندا اے تے عمودی محور <bdi dir="ltr">f(x)</bdi> آؤٹ پُٹ۔ پیرابولا اُتّے ول کھُلدا اے تے اوہدا راس، یعنی سبھ توں تھلّے والا موڑ، <bdi dir="ltr">(1, 0)</bdi> اُتے اے۔ پہلے دو انگریزی متبادل ویروے <bdi dir="ltr" lang="en">positive</bdi> تے <bdi dir="ltr" lang="en">centered</bdi> آکھدے نیں؛ تصویر دے مطابق ایتھے مراد اُتّے ول کھُلنا تے راس دی تھاں اے، پیرابولا دا تقارنی مرکز نہیں۔ اوہناں دی اصل ترجمہ شدہ لکھت محفوظ رکھ کے قابل رسائی ویروے وچ «راس» لکھیا اے۔</p><p id="representations-alt-vertex"><a href="#Figure_01_01_009">افقی لکیر والے گراف</a> دے انگریزی متبادل ویروے وچ راس غلطی نال <bdi dir="ltr">(0,1)</bdi> اے؛ اصل تصویر تے انڈونیشی ویروے وچ <bdi dir="ltr">(1,0)</bdi> اے۔ تصویر بدلے بغیر قابل رسائی ویروے وچ <bdi dir="ltr">(1, 0)</bdi> درست کیتا اے، تے اصل ترجمہ شدہ ویروہ وکھرا محفوظ اے۔ لکیر <bdi dir="ltr">y = 4</bdi>، <bdi dir="ltr">(−1, 4)</bdi> تے <bdi dir="ltr">(3, 4)</bdi> اُتے منحنی نوں کٹدی اے۔ ایس لئی <bdi dir="ltr">f(x) = 4</bdi> دے حل <bdi dir="ltr">x = −1</bdi> تے <bdi dir="ltr">x = 3</bdi> نیں۔ <bdi dir="ltr">f(2) = 1</bdi> تے آخری مشق دے حل <bdi dir="ltr">x = 0</bdi> یا <bdi dir="ltr">x = 2</bdi> وی اصل گراف نال میل کھاندے نیں۔</p><p>چیتے رکھو کہ ہر مثال اپنے فنکشن ناں نوں اپنے دائرے وچ ورتدی اے۔ پہلی مثال دا <bdi dir="ltr">f(n) = 2 − n/3</bdi>، مکعب جذر والی مشق دا <bdi dir="ltr">f(x) = ∛x/2</bdi>، تے گراف دا <bdi dir="ltr">f</bdi> اِکّو فنکشن نہیں۔ ایتھے جدولی <bdi dir="ltr">g</bdi> پچھلے سبق دے جذر والے <bdi dir="ltr">g</bdi> توں وکھرا اے۔</p><h3>عارضی اصطلاحی کُنجی</h3><p><bdi dir="ltr" lang="en">curve</bdi> — منحنی، مڑی ہوئی لکیر؛ <bdi dir="ltr" lang="en">vertex</bdi> — راس؛ <bdi dir="ltr" lang="en">coordinate</bdi> — محدد؛ <bdi dir="ltr" lang="en">horizontal axis</bdi> — افقی محور؛ <bdi dir="ltr" lang="en">vertical axis</bdi> — عمودی محور؛ <bdi dir="ltr" lang="en">cube root</bdi> — مکعب جذر۔ ایہہ تعلیمی اصطلاحاں انگریزی تے اردو رجسٹراں نال پُل لئی دِتیاں نیں؛ پڑھنے والے نوں سادہ پنجابی وضاحت نال اوہناں دا کم وی دسیا اے۔ ماہر پنجابی استاد دی منظوری ہن تک نہیں ملی۔</p></section><section id="terminology"><h2>تِن زباناں دی اصطلاحی کُنجی</h2><div class="table-scroll"><table><thead><tr><th scope="col">شاہ مکھی پنجابی</th><th scope="col" lang="ur-Arab-PK">اردو</th><th scope="col" lang="en" dir="ltr">English</th></tr></thead><tbody><tr><td>الجبرا</td><td lang="ur-Arab-PK">الجبرا</td><td lang="en" dir="ltr">algebra</td></tr><tr><td>متغیر</td><td lang="ur-Arab-PK">متغیر</td><td lang="en" dir="ltr">variable</td></tr><tr><td>جبری عبارت</td><td lang="ur-Arab-PK">جبری عبارت</td><td lang="en" dir="ltr">algebraic expression</td></tr><tr><td>مساوات</td><td lang="ur-Arab-PK">مساوات</td><td lang="en" dir="ltr">equation</td></tr><tr><td>قدر</td><td lang="ur-Arab-PK">قیمت / قدر</td><td lang="en" dir="ltr">value</td></tr><tr><td>تعلق</td><td lang="ur-Arab-PK">تعلق</td><td lang="en" dir="ltr">relation</td></tr><tr><td>ترتیب وار جوڑی</td><td lang="ur-Arab-PK">مرتب جوڑا</td><td lang="en" dir="ltr">ordered pair</td></tr><tr><td>سیٹ</td><td lang="ur-Arab-PK">مجموعہ</td><td lang="en" dir="ltr">set</td></tr><tr><td>رکن</td><td lang="ur-Arab-PK">رکن / عنصر</td><td lang="en" dir="ltr">element</td></tr><tr><td>فنکشن</td><td lang="ur-Arab-PK">تفاعل / فنکشن</td><td lang="en" dir="ltr">function</td></tr><tr><td>ڈومین</td><td lang="ur-Arab-PK">دائرۂ تعریف</td><td lang="en" dir="ltr">domain</td></tr><tr><td>رینج</td><td lang="ur-Arab-PK">حاصل شدہ قدروں کا مجموعہ</td><td lang="en" dir="ltr">range</td></tr><tr><td>اِن پُٹ</td><td lang="ur-Arab-PK">داخل کردہ قدر</td><td lang="en" dir="ltr">input</td></tr><tr><td>آؤٹ پُٹ</td><td lang="ur-Arab-PK">حاصل ہونے والی قدر</td><td lang="en" dir="ltr">output</td></tr><tr><td>آزاد متغیر</td><td lang="ur-Arab-PK">آزاد متغیر</td><td lang="en" dir="ltr">independent variable</td></tr><tr><td>تابع متغیر</td><td lang="ur-Arab-PK">تابع متغیر</td><td lang="en" dir="ltr">dependent variable</td></tr><tr><td>قدرتی عدد</td><td lang="ur-Arab-PK">قدرتی عدد</td><td lang="en" dir="ltr">natural number</td></tr><tr><td>جفت</td><td lang="ur-Arab-PK">جفت</td><td lang="en" dir="ltr">even</td></tr><tr><td>طاق</td><td lang="ur-Arab-PK">طاق</td><td lang="en" dir="ltr">odd</td></tr><tr><td>ٹھیک اک</td><td lang="ur-Arab-PK">صرف ایک</td><td lang="en" dir="ltr">exactly one</td></tr><tr><td>ثبوت</td><td lang="ur-Arab-PK">ثبوت</td><td lang="en" dir="ltr">proof</td></tr><tr><td>ویکٹر</td><td lang="ur-Arab-PK">سمتیہ / ویکٹر</td><td lang="en" dir="ltr">vector</td></tr><tr><td>خطی نقشہ</td><td lang="ur-Arab-PK">خطی تبدیلی</td><td lang="en" dir="ltr">linear map</td></tr><tr><td>فنکشن دی علامتی لکھت</td><td lang="ur-Arab-PK">فنکشن کی علامتی صورت</td><td lang="en" dir="ltr">function notation</td></tr><tr><td>فی صد گریڈ</td><td lang="ur-Arab-PK">فیصد نمبر</td><td lang="en" dir="ltr">percent grade</td></tr><tr><td>گریڈ پوائنٹ اوسط</td><td lang="ur-Arab-PK">گریڈ پوائنٹ اوسط</td><td lang="en" dir="ltr">grade point average (GPA)</td></tr><tr><td>درجہ</td><td lang="ur-Arab-PK">درجہ / مرتبہ</td><td lang="en" dir="ltr">rank</td></tr><tr><td>قیمت</td><td lang="ur-Arab-PK">قیمت</td><td lang="en" dir="ltr">price</td></tr><tr><td>مینو دی چیز</td><td lang="ur-Arab-PK">مینو کی شے</td><td lang="en" dir="ltr">menu item</td></tr><tr><td>قاعدہ</td><td lang="ur-Arab-PK">قاعدہ</td><td lang="en" dir="ltr">rule</td></tr><tr><td>قوساں</td><td lang="ur-Arab-PK">قوسین</td><td lang="en" dir="ltr">parentheses</td></tr></tbody></table></div></section></main>
+<footer id="credits" lang="en" dir="ltr">
+<h2>Sources, credits and changes</h2>
+<p>Adapted from <a href="https://github.com/openstax/osbooks-college-algebra-bundle/blob/789b54099106b071d1d32bfcee454fed72eb4768/modules/m49301/index.cnxml">OpenStax Precalculus 2e, module m49301</a>, Jay Abramson et al., OpenStax / Rice University; foundational chapters credit David Lippman and Melonie Rasmussen. Figure copyright Rice University, OpenStax, under CC BY-NC-SA 4.0. Full contributor notices remain in <a href="../provenance/ATTRIBUTION.md">the provenance record</a>. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>, subject to retained component notices. OpenStax and Rice University do not endorse this adaptation; no cover or trademarks are reproduced. Figure labels 1.1.7–1.1.9 and table references are local reader labels. Canonical IDs and original English images are unchanged; source Table_01_01_12 remains unnumbered. Faithfully translated image alt is retained in data-source-alt, while corrected accessible descriptions link to explicit original notes. Exact component notices are retained in unit-007-component-notices.json.</p>
+<p>Changes: Shahmukhi Punjabi translation of the declared source selection, with original explanatory additions labeled separately. Source identifiers, table data, proper names and mathematical content are retained. Where present, source circled-letter parts are displayed as isolated Latin-letter labels with the same correspondence. Unit-specific source ambiguities and accessibility-summary corrections are disclosed in the original bridge notes and provenance record. No native-speaker approval is claimed. Source MathML nodes remain in order; English quotation marks and terminal sentence punctuation are moved into Punjabi prose by reversible text edits recorded in data-source-text-edits. Internal mathematical punctuation and closing parentheses remain. The frozen source is unchanged.</p>
+<p>Indonesian comparison edition: KokunoYumeto/openstax-precalculus-2e-id, alpha.58-reader.1. Its stated process provenance is OpenAI Codex gpt-5.6-sol, Ultra. This pilot was produced with OpenAI Codex assistance at the user's direction; source and human-contributor credits are not replaced. This is a local translation pilot, not a complete textbook or a model-training corpus.</p>
+</footer></body></html>

@@ -1,0 +1,55 @@
+/* U002-only additions. The shared U001 stylesheet is intentionally unchanged. */
+.source-media { margin: 1rem 0; }
+.source-media svg { display: block; width: 100%; min-width: 34rem; height: auto; max-height: 34rem; }
+.diagram-scroll { overflow-x: auto; max-width: 100%; min-width: 0; }
+.diagram-scroll:focus { outline: 3px solid #9e4500; outline-offset: 3px; }
+.diagram-hint { margin-bottom: .35rem; }
+.media-description { margin: .4rem 0 .9rem; }
+.source-paragraph > p { margin-bottom: .4rem; }
+.source-table-group { margin: 1.2rem 0; }
+.table-hint { margin-bottom: .35rem; }
+.table-scroll { overflow-x: auto; border: 1px solid #a4b8bc; border-radius: .2rem; padding: .2rem; }
+.table-scroll:focus { outline: 3px solid #9e4500; outline-offset: 3px; }
+.table-scroll table { width: 100%; min-width: 36rem; border-collapse: collapse; line-height: 1.6; }
+.table-scroll th, .table-scroll td { padding: .5rem .55rem; border: 1px solid #bdcbd0; vertical-align: top; }
+.table-scroll thead th { background: #eaf4f2; font-weight: 700; }
+.table-scroll tbody th { background: #f5f8f8; font-weight: 600; }
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+h4 { font-size: 1rem; margin-bottom: .4rem; }
+@media print {
+  .source-table-group, #fs-id2206322 { break-inside: avoid; }
+  a[href="#ta2-R1"], a[href="#ta2-R2"], a[href="#ta2-R3"] { white-space: nowrap; }
+  .table-scroll { overflow: visible; border: 0; padding: 0; }
+  .table-scroll table { min-width: 0; width: 100%; font-size: .85em; }
+  .table-scroll th, .table-scroll td { padding: .3rem; }
+  .table-scroll thead { display: table-header-group; }
+  .table-scroll tr { break-inside: avoid; }
+  .table-hint { display: none; }
+  .source-media { break-inside: avoid; }
+  .diagram-scroll { overflow: visible; }
+  .diagram-hint { display: none; }
+  .source-media svg { min-width: 0; max-height: 105mm; }
+  .example { break-inside: auto; }
+  .screen-profile .cover nav li { margin: .3rem 0; line-height: 1.65; }
+  .screen-profile #ta2-start, .screen-profile #ta2-placement-answers,
+  .screen-profile #ta2-R2, .screen-profile #ta2-mastery,
+  .screen-profile #ta2-mastery-answers, .screen-profile #ta2-retry-answers { line-height: 1.65; }
+  .screen-profile #ta2-start p, .screen-profile #ta2-placement-answers p,
+  .screen-profile #ta2-R2 p, .screen-profile #ta2-mastery p,
+  .screen-profile #ta2-mastery-answers p, .screen-profile #ta2-retry-answers p { margin: .5rem 0; }
+  .screen-profile #ta2-start li, .screen-profile #ta2-R2 li { margin: .4rem 0; }
+  .screen-profile #ta2-placement-answers .answer, .screen-profile #ta2-mastery .item,
+  .screen-profile #ta2-mastery-answers .answer, .screen-profile #ta2-retry-answers .answer { padding-bottom: .45rem; }
+  .screen-profile #ta2-start, .screen-profile #ta2-placement-answers,
+  .screen-profile #ta2-R2, .screen-profile #ta2-mastery-answers { line-height: 1.5; }
+  .screen-profile #ta2-start p, .screen-profile #ta2-placement-answers p,
+  .screen-profile #ta2-R2 p, .screen-profile #ta2-mastery-answers p { margin: .4rem 0; }
+  .screen-profile #ta2-start li, .screen-profile #ta2-R2 li { margin: .3rem 0; }
+  .screen-profile #ta2-placement-answers h3, .screen-profile #ta2-R2 h3,
+  .screen-profile #ta2-mastery-answers h3 { margin-top: .6rem; margin-bottom: .3rem; }
+  .screen-profile #ta2-mastery-answers h2 { margin-bottom: .4rem; }
+  .screen-profile #ta2-mastery-answers .answer { padding-bottom: .25rem; }
+  .screen-profile #ta2-mastery-answers h3 { margin-top: .4rem; }
+}

@@ -1,0 +1,141 @@
+{
+  "schema": "gujarati-source-errata-v1",
+  "book": "A10",
+  "module": "m82461",
+  "source_mathematical_tokens_unchanged": true,
+  "entries": {
+    "fs-id1170654027716": {
+      "source_issue": "The U.S.-system table accessibility label omits the numerical values in all three length relations, saying only that a foot equals inches, a yard equals feet, and a mile equals feet.",
+      "correction_gu": "લંબાઈના સંબંધો 1 ફૂટ=12 ઇંચ, 1 યાડ=3 ફૂટ અને 1 માઈલ=5,280 ફૂટ છે.",
+      "rationale": "The values are visible in the native source table and are required to use it independently.",
+      "original_evidence": "The native table visibly gives 1 ft=12 in, 1 yd=3 ft, and 1 mi=5,280 ft; the source aria-label leaves those three numerals out.",
+      "aria-label_gu": "આ કોષ્ટક યુ.એસ. માપન પદ્ધતિ બતાવે છે. લંબાઈ: 1 ફૂટ (ft.) = 12 ઇંચ (in.), 1 યાડ (yd.) = 3 ફૂટ, અને 1 માઈલ (mi.) = 5,280 ફૂટ. ક્ષમતા: 3 નાના ચમચા (t) = 1 મોટો ચમચો (T), 16 મોટા ચમચા = 1 કપ (C), 1 કપ = 8 પ્રવાહી ઔંસ (fl. oz.), 1 પિન્ટ (pt.) = 2 કપ, 1 ક્વૉર્ટ (qt.) = 2 પિન્ટ, અને 1 ગૅલન (gal) = 4 ક્વૉર્ટ. વજન: 1 પાઉન્ડ (lb.) = 16 ઔંસ (oz.) અને 1 ટન = 2,000 પાઉન્ડ. સમય: 1 મિનિટ (min) = 60 સેકન્ડ (sec), 1 કલાક (hr) = 60 મિનિટ, 1 દિવસ = 24 કલાક, 1 અઠવાડિયું (wk) = 7 દિવસ અને 1 વર્ષ (yr) = 365 દિવસ."
+    },
+    "eip-id1169750760364": {
+      "source_issue": "A worked-conversion instruction says to write 1 as a function relating kilograms and grams; the required object is a fraction.",
+      "correction_gu": "1ને કિલોગ્રામ અને ગ્રામને જોડતા અપૂર્ણાંક તરીકે લખો.",
+      "rationale": "The displayed conversion factor is (1 kg)/(1,000 g), a fraction equal to one.",
+      "original_evidence": "Source instruction: “Write 1 as a function relating kilograms and grams.”"
+    },
+    "fs-id1170653915966": {
+      "source_issue": "The capacity question and worked solution call the result ounces, while the table relation is specifically fluid ounces.",
+      "correction_gu": "1 ગૅલનમાં 128 પ્રવાહી ઔંસ હોય છે.",
+      "rationale": "Ordinary ounces measure weight; the gallon-to-cup relation here measures capacity and uses fl. oz.",
+      "original_evidence": "The table states 1 cup=8 fluid ounces, but the problem asks “How many ounces are in 1 gallon?”"
+    },
+    "fs-id1170653898370": {
+      "source_issue": "The Mayflower problem converts 2 months and 5 days to 65 days without stating the assumed number of days per month.",
+      "correction_gu": "સ્ત્રોતના 65 દિવસના જવાબ માટે દરેક મહિનો 30 દિવસનો માન્યો છે: 2·30+5=65 દિવસ.",
+      "rationale": "Calendar months do not all contain 30 days, so the convention must be explicit.",
+      "original_evidence": "Question: 2 months and 5 days; source answer: 65 days. No month-to-day factor is supplied."
+    },
+    "fs-id1170654233918": {
+      "source_issue": "The reflector question says reflectors are spaced 16 yards apart along a one-mile stripe but does not say whether both endpoints contain reflectors.",
+      "correction_gu": "1 માઈલ=1,760 યાડ, એટલે 1,760÷16=110 અંતરાલ. જો બંને છેડે પરાવર્તક હોય તો 111 પરાવર્તક; માત્ર દરેક 16 યાડે એક ગણીએ તો 110.",
+      "rationale": "The number of marked points is one more than the number of intervals when both endpoints are included.",
+      "original_evidence": "Source supplies no answer and does not specify endpoint placement."
+    },
+    "fs-id1170652618835": {
+      "source_issue": "Part (a) has a stray greater-than sign immediately after c+(−4), so it displays an incomplete inequality before part (b).",
+      "correction_gu": "ભાગ (a)ની પદાવલી c+(−4) છે; તેની પાછળ દેખાતું > ચિહ્ન પ્રશ્નનો ભાગ નથી.",
+      "rationale": "There is no right-hand operand for the greater-than sign, and the shared instruction is evaluation rather than comparison.",
+      "original_evidence": "Source problem MathML/tail displays ⓐ c+(−4)> ⓑ −c+(−4)."
+    },
+    "fs-id1170653768882": {
+      "source_issue": "The worked 100-kilometer conversion gives 62 miles without requesting or identifying rounding; 100÷1.61 is approximately 62.1118.",
+      "correction_gu": "આપેલા રૂપાંતર અવયવથી 100÷1.61≈62.1 માઈલ (નજીકના દશાંશ સુધી), અથવા નજીકની પૂર્ણ સંખ્યામાં 62 માઈલ મળે છે.",
+      "rationale": "Both the approximation and its rounding place should be visible.",
+      "original_evidence": "Question asks only “How many miles”; worked solution jumps from 100/1.61 to 62 miles."
+    },
+    "fs-id1170653871535": {
+      "source_issue": "The 5,895-meter conversion gives 19,336 feet without stating that 5,895·3.28=19,335.6 was rounded to the nearest foot.",
+      "correction_gu": "5,895·3.28=19,335.6 ફૂટ, જેને નજીકના ફૂટ સુધી ફેરવતાં 19,336 ફૂટ મળે છે.",
+      "rationale": "The displayed integer answer is a rounded value, not an exact equality under the supplied factor.",
+      "original_evidence": "Source question has no rounding instruction; source answer is 19,336 feet."
+    },
+    "fs-id1170654076817": {
+      "source_issue": "The 5,586-kilometer conversion gives 3,469.57 miles without stating that the quotient was rounded to the nearest hundredth.",
+      "correction_gu": "5,586÷1.61≈3,469.5652 માઈલ, જેને નજીકના શતાંશ સુધી ફેરવતાં 3,469.57 માઈલ મળે છે.",
+      "rationale": "The displayed decimal answer uses an unstated rounding place.",
+      "original_evidence": "Source question has no rounding instruction; source answer is 3469.57 miles."
+    },
+    "fs-id1170653875223": {
+      "source_issue": "The source answer 750 kilograms for 1,650 pounds follows 1 kg=2.2 lb, while the same table also gives 1 lb=0.45 kg, which would yield 742.5 kg; the rounded reciprocal factors are inconsistent.",
+      "correction_gu": "1 kg=2.2 lb વાપરીએ તો 1,650÷2.2=750 kg. જો કોષ્ટકનો અલગ, ગોળ કરેલો 1 lb=0.45 kg અવયવ વાપરીએ તો 742.5 kg મળે; તેથી કયો અવયવ વાપર્યો તે જણાવવું જરૂરી છે.",
+      "rationale": "The two displayed approximate conversion factors are not exact reciprocals and cannot both yield the same result.",
+      "original_evidence": "Source table lists both 1 lb=0.45 kg and 1 kg=2.2 lb; source solution is 750 kilograms."
+    },
+    "fs-id1170653895402": {
+      "source_issue": "The source alternative ends mid-quotation and does not explicitly finish the lower cancellation statement.",
+      "correction_gu": "બે પદાવલીઓ છે: 66 ઇંચ·(1 ફૂટ)/(12 ઇંચ) અને 66 ઇંચ·(12 ઇંચ)/(1 ફૂટ). બીજી પદાવલી પર લાલ ચોકડી છે. નીચે પહેલી પદાવલી ફરી છે અને અંશ-છેદના ઇંચ લાલ રેખાથી છેદેલા છે; આ રૂપ કામ કરે છે.",
+      "rationale": "Actual original image was individually viewed; the corrected alternative completes and localizes the visible content.",
+      "original_evidence": "Source alt ends “with inches crossed off in both instances.” after an unmatched opening quotation.",
+      "alt_gu": "બે પદાવલીઓ છે: 66 ઇંચ·(1 ફૂટ)/(12 ઇંચ) અને 66 ઇંચ·(12 ઇંચ)/(1 ફૂટ). બીજી પદાવલી પર લાલ ચોકડી છે. નીચે પહેલી પદાવલી ફરી છે અને અંશ-છેદના ઇંચ લાલ રેખાથી છેદેલા છે; આ રૂપ કામ કરે છે.",
+      "source_image": "../../media/CNX_ElemAlg_Figure_01_10_016_img_new.jpg"
+    },
+    "fs-id1170654071984": {
+      "source_issue": "The source alternative drops the numeral 1 twice from the Step 1 direction, although the actual image says multiply by 1 and write 1 as a fraction.",
+      "correction_gu": "પગલું 1માં રૂપાંતર કરવાના માપનનો 1 સાથે ગુણાકાર કરીને 1ને આપેલા અને જોઈતા એકમોને જોડતા અપૂર્ણાંક તરીકે લખવાનું છે.",
+      "rationale": "The numeral is essential to the identity-property method and is visibly present in the original.",
+      "original_evidence": "Actual first cell: “Multiply the measurement to be converted by 1; write 1 as a fraction…”; source alt says “by; write as”.",
+      "alt_gu": "ત્રણ કૉલમના કોષ્ટકમાં પગલું 1 છે: “રૂપાંતર કરવાના માપનનો 1 સાથે ગુણાકાર કરો; આપેલા અને જોઈતા એકમોને જોડતા અપૂર્ણાંક તરીકે 1 લખો.” વચ્ચે સમજ છે: “66 ઇંચનો 1 સાથે ગુણાકાર કરો અને 1ને ઇંચ તથા ફૂટને જોડતા અપૂર્ણાંક તરીકે લખો. ઇંચ છેદાઈ જાય તે માટે છેદમાં ઇંચ જોઈએ!” જમણે 66 ઇંચ·1 અને 66 ઇંચ·(1 ફૂટ)/(12 ઇંચ) છે.",
+      "source_image": "../../media/CNX_ElemAlg_Figure_01_10_017a_img_new.jpg"
+    },
+    "eip-id1169750704513": {
+      "source_issue": "The source alternative says this image also converts 2 pounds 22 ounces to 3 pounds 6 ounces; the actual fragment ends at 2 pounds 22 ounces.",
+      "correction_gu": "ઊભા સરવાળામાં 14 ઔંસ, 1 પાઉન્ડ 2 ઔંસ અને 1 પાઉન્ડ 6 ઔંસનો સરવાળો 2 પાઉન્ડ 22 ઔંસ બતાવ્યો છે. 3 પાઉન્ડ 6 ઔંસમાં રૂપાંતર આ આકૃતિમાં નથી.",
+      "rationale": "Actual original image was individually viewed; the later conversion is prose outside this fragment.",
+      "original_evidence": "Actual 014_img_new.jpg contains only the vertical addition ending “2 pounds 22 ounces”.",
+      "alt_gu": "ઊભા સરવાળામાં 14 ઔંસ, 1 પાઉન્ડ 2 ઔંસ અને 1 પાઉન્ડ 6 ઔંસનો સરવાળો 2 પાઉન્ડ 22 ઔંસ બતાવ્યો છે. 3 પાઉન્ડ 6 ઔંસમાં રૂપાંતર આ આકૃતિમાં નથી.",
+      "source_image": "../../media/CNX_ElemAlg_Figure_01_10_014_img_new.jpg"
+    },
+    "fs-id1170654008560": {
+      "source_issue": "The source alternative invents g/kg unit cancellation in this image; the actual image contains only the numeric calculations and decimal shift.",
+      "correction_gu": "ડાબે 3,200·(1/1,000)ની નીચે 3.2 છે. જમણે 3,200.માંથી દશાંશ ચિહ્ન ત્રણ સ્થાન ડાબે ખસતું વાદળી તીર છે અને નીચે 3.2 છે. આ આકૃતિમાં g કે kg લખેલા નથી.",
+      "rationale": "Actual original image was individually viewed; units occur in surrounding prose, not in this fragment.",
+      "original_evidence": "Actual 005_img_new.jpg is numeric-only; source alt starts with 3200 g·(1 kg/1000 g) and cancellation.",
+      "alt_gu": "ડાબે 3,200·(1/1,000)ની નીચે 3.2 છે. જમણે 3,200.માંથી દશાંશ ચિહ્ન ત્રણ સ્થાન ડાબે ખસતું વાદળી તીર છે અને નીચે 3.2 છે. આ આકૃતિમાં g કે kg લખેલા નથી.",
+      "source_image": "../../media/CNX_ElemAlg_Figure_01_10_005_img_new.jpg"
+    },
+    "eip-id1169754197015": {
+      "source_issue": "The source alternative calls the mark under 350. a wavy underline; the actual mark is a three-place leftward decimal-shift arrow.",
+      "correction_gu": "“દશાંશ ચિહ્નને 3 સ્થાન ડાબે ખસેડો.” સૂચના સાથે (350.) છે; વાદળી તીર દશાંશ ચિહ્નથી ત્રણ સ્થાન ડાબે જાય છે.",
+      "rationale": "Direction and count are pedagogically essential to the conversion.",
+      "original_evidence": "Actual 006_img_new.jpg visibly has a three-stage cyan arrow below 350., not an underline.",
+      "alt_gu": "“દશાંશ ચિહ્નને 3 સ્થાન ડાબે ખસેડો.” સૂચના સાથે (350.) છે; વાદળી તીર દશાંશ ચિહ્નથી ત્રણ સ્થાન ડાબે જાય છે.",
+      "source_image": "../../media/CNX_ElemAlg_Figure_01_10_006_img_new.jpg"
+    },
+    "eip-id1169748340071": {
+      "source_issue": "The source alternative calls the decimal-shift mark a wavy line or arrow without its exact three-place direction.",
+      "correction_gu": "4.100 mLમાં દશાંશ ચિહ્નથી ત્રણ સ્થાન જમણે જતા વાદળી તીરો છે.",
+      "rationale": "The exact direction and three-place movement explain multiplication by 1,000.",
+      "original_evidence": "Actual 007d_img_new.jpg shows 4.100 mL with three cyan shift arcs under the digits.",
+      "alt_gu": "4.100 mLમાં દશાંશ ચિહ્નથી ત્રણ સ્થાન જમણે જતા વાદળી તીરો છે.",
+      "source_image": "../../media/CNX_ElemAlg_Figure_01_10_007d_img_new.jpg"
+    },
+    "fs-id1170654009196": {
+      "source_issue": "The ruler alternative names the two unit systems but omits the visible scale ranges and subdivisions.",
+      "correction_gu": "પટ્ટીની ઉપર ઇંચનો માપક્રમ 0થી 5થી થોડો આગળ અને નીચે સેન્ટિમીટરનો માપક્રમ 0થી 12થી થોડો આગળ છે; બંનેમાં નાના વિભાગો છે.",
+      "rationale": "A useful accessible alternative must describe the actual dual scale.",
+      "original_evidence": "Actual 008_img_new.jpg visibly shows numbered inch and centimeter scales and their subdivisions.",
+      "alt_gu": "પટ્ટીની ઉપર ઇંચનો માપક્રમ 0થી 5થી થોડો આગળ અને નીચે સેન્ટિમીટરનો માપક્રમ 0થી 12થી થોડો આગળ છે; બંનેમાં નાના વિભાગો છે.",
+      "source_image": "../../media/CNX_ElemAlg_Figure_01_10_008_img_new.jpg"
+    },
+    "fs-id1170654030469": {
+      "source_issue": "The measuring-cup alternative omits the cup scale and all visible numerical graduations.",
+      "correction_gu": "માપવાના કપની ડાબી બાજુ 1/4થી 2 કપ સુધી, મધ્યમાં 2થી 16 પ્રવાહી ઔંસ સુધી અને જમણી બાજુ 50થી 500 મિલીલીટર સુધીનાં નિશાન છે.",
+      "rationale": "All three visible scales are needed to understand the cross-system comparison.",
+      "original_evidence": "Actual 009_img_new.jpg visibly labels CUPS, oz and ml scales with those values.",
+      "alt_gu": "માપવાના કપની ડાબી બાજુ 1/4થી 2 કપ સુધી, મધ્યમાં 2થી 16 પ્રવાહી ઔંસ સુધી અને જમણી બાજુ 50થી 500 મિલીલીટર સુધીનાં નિશાન છે.",
+      "source_image": "../../media/CNX_ElemAlg_Figure_01_10_009_img_new.jpg"
+    },
+    "fs-id1170653910440": {
+      "source_issue": "The bathroom-scale alternative says only pounds, omitting the second kilogram scale visible in the actual image.",
+      "correction_gu": "બાથરૂમના કાંટામાં બહારનો ગોળ માપક્રમ 0થી 320 પાઉન્ડ અને અંદરનો માપક્રમ 0થી 140 કિલોગ્રામ બતાવે છે; લાલ સૂચક લગભગ શૂન્ય પર છે.",
+      "rationale": "The surrounding lesson explicitly uses this image to compare pounds and kilograms.",
+      "original_evidence": "Actual 010_img_new.jpg has two concentric numbered scales, outer 0–320 and inner 0–140.",
+      "alt_gu": "બાથરૂમના કાંટામાં બહારનો ગોળ માપક્રમ 0થી 320 પાઉન્ડ અને અંદરનો માપક્રમ 0થી 140 કિલોગ્રામ બતાવે છે; લાલ સૂચક લગભગ શૂન્ય પર છે.",
+      "source_image": "../../media/CNX_ElemAlg_Figure_01_10_010_img_new.jpg"
+    }
+  }
+}

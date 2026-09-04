@@ -1,0 +1,48 @@
+{
+  "locale": "bn-Beng-IN", "module": "m81290", "section": "fs-id2833156", "date": "2026-08-31",
+  "source_title": "Add Mixed Numbers",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81290.source.cnxml",
+  "source_sha256": "96985df586080ae5e52b870320d310a6061a0c00c5d1699e58a024e55bdba005",
+  "overlay_sha256": "0251d77802606feb539069a9ff8c7f3b874ef64576a325a353159bbfadb44f90",
+  "consultations": [
+    {"stage": "before drafting", "examples": ["TR01", "TR02", "TR03"], "read": ["Actual full assigned CNXML subsection and text/media inventory", "Actual Tripura p050/p051 OCR and page images at the transition from the preceding model section", "All three original017 source images"], "action": "Use মিশ্র ভগ্নাংশ for a whole plus proper fraction; preserve mixed-number additive juxtaposition and distinguish a partial whole-part sum from the final answer. Use the separate correct equivalent/simplest-form examples, not p051's incorrect intermediate conversion denominator."},
+    {"stage": "during drafting", "examples": ["TR01", "TR02", "TR03"], "read": ["Actual p050/p051 OCR again", "All worked-table rows, source comparison MathML and all nine exercise/solution pairs"], "action": "Explain regrouping and conversion with explicit লব/হর. Scope separate whole-part/fraction-part addition to this section's positive mixed numbers. Identify and preserve the comparison table's mfrac-as-addition-line fault with a visible warning. Clarify that horizontal writing refers to the addition expression, not every solution step."},
+    {"stage": "pre-integration check", "examples": ["TR01", "TR02", "TR03"], "read": ["Actual canon README and complete p050/p051 OCR", "Actual p050/p051 page images again, including the correct11/3 example and separate12/16 simplification", "All three original017 images reopened individually", "Saved full overlay and pinned source hash", "All31 source MathML nodes and all nine supplied results"], "action": "Reconfirm register, numerator/denominator readings, positive mixed-number conventions and the exclusion of p051's denominator error. The exact checker passes30 numeric MathML nodes and explicitly detects the one preserved malformed comparison layout; it does not certify that faulty node. The first worked example's final5 2/3 answer is in the actual raster, not in a later source MathML answer."}
+  ],
+  "decisions": [
+    {"topic": "complete procedure and prompts", "affected_locations": ["fs-id1517517", "fs-id4338157", "fs-id2820418", "fs-id1904597", "all exercise prompts"], "decision": "Translate all steps and questions in তুমি/করো register. Add whole parts, then numerator parts over the common denominator; regroup an improper fractional part and reduce. Use মিশ্র ভগ্নাংশ consistently. Preserve all source-provided answers without adding answers to the preference question."},
+    {"topic": "intermediate additive notation", "affected_locations": ["eip-id1168467368769", "fs-id1951781"], "decision": "14 12/9 and9 6/5 are intermediate additive representations, not final proper mixed fractions. Explain12/9=1+3/9 and6/5=1+1/5 before adding the extracted whole part. Keep all numerical MathML unchanged."},
+    {"topic": "conversion and formula reading", "affected_locations": ["fs-id2597267", "eip-id1168467375736", "all table descriptions"], "decision": "Read conversion as whole part multiplied by denominator, then add numerator; retain that denominator. Explain66 divided by8 gives whole quotient8 and remainder2, followed by2/8=1/4. Specify লব/হর in accessible text rather than relying on English spoken fractions."},
+    {"topic": "source-layout warning", "affected_locations": ["fs-id1951781 first body cell", "fs-id1951781 aria-label"], "decision": "Preserve the source's malformed fraction structure used as an addition underline. Add a visible Bengali warning before that MathML in the existing cell and the intended addition reading afterward. The aria label distinguishes addition layout from division. Mirror this genuine error in overlay source_errata for module inventory."},
+    {"topic": "linguistic attribute exception", "affected_locations": ["three media alts", "two table aria-labels", "two table summaries"], "decision": "Translate linguistic accessibility attributes and expose full table/image narration through the existing builder contract. No numerical text, operators, IDs, links, attributes other than the allowlisted linguistic ones, or source image pixels change. Underscore mtext remains untouched; no linguistic mtext substitution is needed."},
+    {"topic": "canon limits", "affected_locations": ["all translated content"], "decision": "TR01 directly witnesses মিশ্র ভগ্নাংশ and whole-plus-proper meaning; TR02/TR03 support equivalence and simplest-form wording. The actual p051 intermediate denominator3 in the5 3/7 example is excluded. These supplementary Indian Bengali witnesses do not certify West Bengal usage and do not replace OpenStax mathematical authority. No canon material is republished as learner text or used as training data."}
+  ],
+  "source_errata": [
+    {"source_table_id": "fs-id1951781", "source_xpath": ".//c:table[@id='fs-id1951781']/c:tgroup/c:tbody/c:row/c:entry[1]/m:math/m:mtable/m:mtr[4]/m:mtd/m:mfrac", "issue": "The left comparison column encodes the addition underline as a fraction with numerator+6 4/5 and denominator9 6/5. A literal quotient reading conflicts with the intended vertical addition and gives2/3, not10 1/5.", "action": "Preserve all MathML and put a visible Bengali layout/semantic warning before it in the existing cell, with the intended addition/regrouping reading after it and in the table aria-label."}
+  ],
+  "image_checks": [
+    {"id": "eip-id1168467123080", "file": "CNX_BMath_Figure_04_06_017-01.png", "observed": "Vertical3 4/9 plus2 2/9. Whole parts3 and2 are red; below the line only the partial whole-part sum5 is red. Fractions remain uncombined. Bengali alt explicitly says this is not the complete answer."},
+    {"id": "eip-id1168467184698", "file": "CNX_BMath_Figure_04_06_017-02.png", "observed": "Same addition; fractional parts4/9 and2/9 are red. Below the line5 is black and6/9 is red, giving5 6/9."},
+    {"id": "eip-id1168468282563", "file": "CNX_BMath_Figure_04_06_017-03.png", "observed": "Same addition; entire result5 6/9 is red, including5. It equals black5 2/3. All pixels and correct source mathematics are retained."}
+  ],
+  "local_checks": {
+    "result": "passed with one explicitly preserved and warned source-layout fault", "paragraph_slot_arrays": 25, "node_slot_arrays": 15, "preserved_mathml_nodes": 31, "numerically_valid_mathml_nodes": 30, "explicitly_flagged_source_mathml_nodes": 1, "preserved_ids": 71, "preserved_elements": 499, "source_exercises": 9, "source_images_inspected": 3, "table_aria_labels": 2, "table_summaries": 2, "internal_links_checked": 2, "source_errata_mirrored_in_overlay": 1,
+    "math_method": "Dependency-free exact Fraction evaluator packs adjacent whole/fraction as additive mixed notation before unary signs and operations. It checks28 scalar MathML nodes and two valid mtable nodes, and detects the one malformed comparison mtable. The malformed quotient is independently2/3, while the intended addition is51/5. No erroneous node is counted as numerically valid.",
+    "answers": [
+      {"exercise": "fs-id2145076", "result": "3 4/9+2 2/9=5 2/3", "source_answer_location": "Viewed raster017-03; source solution MathML only repeats the initial expression"},
+      {"exercise": "fs-id2702128", "result": "4 4/7+1 2/7=5 6/7"},
+      {"exercise": "fs-id2197788", "result": "2 3/11+5 6/11=7 9/11"},
+      {"exercise": "fs-id1481942", "result": "9 5/9+5 7/9=15 1/3"},
+      {"exercise": "fs-id1885824", "result": "8 7/8+7 5/8=16 1/2"},
+      {"exercise": "fs-id2166631", "result": "6 7/9+8 5/9=15 1/3"},
+      {"exercise": "fs-id1340193", "result": "3 7/8+4 3/8=8 1/4"},
+      {"exercise": "fs-id4875619", "result": "5 5/9+3 7/9=9 1/3"},
+      {"exercise": "fs-id2262563", "result": "3 7/10+2 9/10=6 3/5"}
+    ],
+    "additional_numeric_checks": ["Every second-column row of eip-id1168467368769 equals46/3; the separate first-column12/9 expression equals4/3", "Every second-column row of eip-id1168467375736 equals33/4", "Both intended comparison methods give3 2/5+6 4/5=17/5+34/5=51/5=10 1/5", "The source mfrac literal(6 4/5)/(9 6/5)=2/3, not51/5"],
+    "structure": "Shared translated() passes unique selectors, children+1 slots, tags/IDs/order/nonlinguistic attributes and exact MathML preservation. All two internal links resolve to original targets. No original math or source pixels repaired.",
+    "rendering": "In-memory rendering retains all71 source IDs, three images and three visible descriptions, and all four tables have Bengali accessible labels. Parent owns browser and assistive-technology QA."
+  },
+  "pending": ["Parent integration/browser QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "Only the assigned overlay and separate record were edited with apply_patch. No downloads, media copies, shared scripts/logs/ledger edits, deletions or commits. Continue next assigned m81290/fs-id2926467 Section Exercises; the whole assignment remains ongoing."
+}

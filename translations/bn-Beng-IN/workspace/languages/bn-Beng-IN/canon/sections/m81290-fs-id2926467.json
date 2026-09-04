@@ -1,0 +1,587 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81290",
+  "section": "fs-id2926467",
+  "date": "2026-08-31",
+  "source_title": null,
+  "source_class": "section-exercises",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81290.source.cnxml",
+  "source_sha256": "96985df586080ae5e52b870320d310a6061a0c00c5d1699e58a024e55bdba005",
+  "overlay_sha256": "2d67b6bf8f5c73d15e09ae13932f58e6076c51b73a3e4c2f5452b169cf81d154",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR01",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "Actual complete source subtree: four titled subsections,62 exercises,31 solutions,95 MathML and all media attributes",
+        "Actual Tripura p050/p051 OCR and page images at the transition from the preceding addition section",
+        "Actual current terminology ledger and canon README; all three distinct source rasters opened"
+      ],
+      "action": "Confirm the outer exercise section has no own title. Use মিশ্র ভগ্নাংশ, same-size wholes, explicit লব/হর and simplest-form wording. Preserve every source-absent answer. Inspect the full five-row rubric instead of relying on the abbreviated English alt."
+    },
+    {
+      "stage": "during drafting",
+      "examples": [
+        "TR01",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "Actual p050/p051 OCR again",
+        "Actual18-entry examples.tsv and40-entry terminology.tsv",
+        "Every source exercise and solution with exact rational arithmetic",
+        "Prior integrated exercise-overlay titles for consistency, not as mathematical authority"
+      ],
+      "action": "Recheck proper/improper/mixed distinctions while qualifying overbroad output-form instructions. Exclude p051's incorrect intermediate conversion denominator. State the negative sign applies to the whole mixed magnitude. Keep original yards/inches/dollars and account for both left/right borders. Clarify that variable writing answers refer to explanation/method, not to a variable numerical result."
+    },
+    {
+      "stage": "pre-integration check",
+      "examples": [
+        "TR01",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "Actual full p050/p051 OCR and page images again",
+        "Pinned source SHA and saved overlay SHA",
+        "All95 exact source MathML values and all62 exercises, including31 source-provided solutions and31 omissions",
+        "All four translated media descriptions against the three actually viewed source assets; all five rubric rows and three response choices"
+      ],
+      "action": "Confirm additive mixed notation, signed negative mixed answer, equivalent simplification, full text coverage, original answer placement and no invented answer. Recheck positive proper-fraction language against the actual canon, using explicit signed-magnitude wording where the source requires it. Shared in-memory structure and render checks pass."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "complete source scope",
+      "affected_locations": [
+        "fs-id2299052",
+        "fs-id2256557",
+        "fs-id3274178",
+        "eip-296"
+      ],
+      "decision": "Translate all four subsection titles, ten emphasized headings, every authored prompt/answer and text tail, and all four media descriptions. The outer section has no title, so none is invented. Empty figure label, circled subpart tokens, numeric11/23 answers and mathematical-only paragraphs remain unchanged."
+    },
+    {
+      "topic": "source answers and omissions",
+      "affected_locations": [
+        "all62 exercises",
+        "fs-id1562260",
+        "fs-id2277299"
+      ],
+      "decision": "Keep31 original solution elements and31 source-absent solutions absent. Check all29 supplied numerical answers; translate both Answers will vary notices to identify variation in change-making/explanation or preferred method. Do not supply missing numerical answers or an invented explanation in learner text. Independent calculated values are retained only in this QA record."
+    },
+    {
+      "topic": "signed mixed-number convention",
+      "affected_locations": [
+        "fs-id908853"
+      ],
+      "decision": "Original mn−1 followed by11/24 conventionally means−(1+11/24)=−35/24, not−1+11/24. Add an explicit Bengali reading in the existing answer paragraph tail, with লব11/হর24. Every original mathematical token remains unchanged. The exact evaluator normalizes Unicode minus only internally, not in source or translation."
+    },
+    {
+      "topic": "applicable final form",
+      "affected_locations": [
+        "eip-791",
+        "eip-734"
+      ],
+      "decision": "The instruction to use mixed form for every answer is overbroad. Qualify it with an explicitly labelled editorial clarification: mixed form when applicable; simplified signed fraction below unit magnitude; integers remain integers. Preserve all original math and answer forms. Mirror the source instruction issue in overlay source_errata."
+    },
+    {
+      "topic": "models and images",
+      "affected_locations": [
+        "eip-731",
+        "eip-337",
+        "fs-id1816266",
+        "fs-id2454125",
+        "fs-id3016845"
+      ],
+      "decision": "Specify equal-size wholes in draw-a-model prompts. The two identical four-circle rasters genuinely support different sums with the same result3 2/3; do not treat this intentional reuse as an error. The subtraction picture is4/8=1/2, explicitly read in Bengali."
+    },
+    {
+      "topic": "applications and source context",
+      "affected_locations": [
+        "fs-id1972934",
+        "fs-id2771889",
+        "fs-id1613316",
+        "fs-id2908975",
+        "fs-id1779181",
+        "fs-id2485256",
+        "fs-id2650349"
+      ],
+      "decision": "Retain Renata/Pauline/Nishant/Tessa/Edgar, sewing patterns, yards, inches and dollars. Translate graduation generically as a picture commemorating completion of study, without inventing a university level. Width calculations use both side margins/frame strips: subtract two margins or add two frame widths. No unit conversion or new mathematical data is inserted."
+    },
+    {
+      "topic": "rubric and linguistic attributes",
+      "affected_locations": [
+        "eip-id1164268510609",
+        "eip-id1168466311226",
+        "eip-id1168466075811"
+      ],
+      "decision": "Preserve the original English raster but provide its entire five-task/three-choice rubric in Bengali alt, rendered as a visible description. No row is omitted. Translate both self-assessment prompts. Only allowed linguistic alt attributes change; there are no table aria/summary attributes or mtext linguistic substitutions in this source block."
+    },
+    {
+      "topic": "canon limits",
+      "affected_locations": [
+        "all translated content"
+      ],
+      "decision": "Actual Tripura p050 supports the fraction terms and adjacent mixed-fraction definition; p051's separate equivalence/simplest-form material supports reduction. Exclude the top conversion example's printed denominator3. Negative-sign explanation follows the source arithmetic, not an invented claim of direct Tripura witness. These supplementary Indian Bengali pages do not establish West Bengal certification. No reference PDF/OCR is republished or used as training data."
+    }
+  ],
+  "source_errata": [
+    {
+      "source_para_ids": [
+        "eip-791",
+        "eip-734"
+      ],
+      "issue": "The source universally requests mixed-number output although some results have magnitude below1 or are integers: eip-791 includes exercise fs-id2626772, while eip-734 includes supplied proper-fraction and integer answers such as fs-id1823569 and fs-id2372861.",
+      "action": "Qualify the instruction with an explicitly marked Bengali editorial clarification: use simplified mixed form where applicable, a signed proper fraction for magnitude below1, and an integer for integral results. Preserve every original mathematical expression and answer; do not add source-absent answers."
+    }
+  ],
+  "image_checks": [
+    {
+      "ids": [
+        "fs-id1816266",
+        "fs-id2454125"
+      ],
+      "file": "CNX_BMath_Figure_04_06_202_img.jpg",
+      "observed": "Four equal circles in a2-by2 arrangement. First three fully shaded; bottom-right divided into thirds, two shaded and the right third white. Total3 2/3. Same source image is correctly reused for2 1/3+1 1/3 and1 5/6+1 5/6."
+    },
+    {
+      "ids": [
+        "fs-id3016845"
+      ],
+      "file": "CNX_BMath_Figure_04_06_204_img.jpg",
+      "observed": "One circle in eight equal sectors; four left sectors shaded and four right sectors white.4/8=1/2 matches1 1/8−5/8."
+    },
+    {
+      "ids": [
+        "eip-id1164268510609"
+      ],
+      "file": "CNX_BMath_Figure_AppB_025.jpg",
+      "observed": "Four-column English self-check: I can plus Confidently, With some help, No-I don't get it. Five task rows: model same-denominator mixed addition; add same-denominator mixed numbers; model mixed subtraction; subtract same-denominator mixed numbers; add/subtract mixed numbers with different denominators. All tasks/choices reproduced in Bengali description while original pixels remain."
+    }
+  ],
+  "local_checks": {
+    "result": "passed; one overbroad source-instruction issue visibly qualified",
+    "paragraph_slot_arrays": 23,
+    "node_slot_arrays": 10,
+    "subsection_titles": 4,
+    "source_paragraphs": 110,
+    "preserved_mathml_nodes": 95,
+    "preserved_ids": 275,
+    "preserved_elements": 1175,
+    "source_exercises": 62,
+    "source_solutions": 31,
+    "source_absent_solutions": 31,
+    "numerical_source_answers": 29,
+    "varied_answer_notices": 2,
+    "source_media_references": 4,
+    "distinct_source_images_inspected": 3,
+    "visible_media_descriptions": 4,
+    "source_errata_mirrored_in_overlay": 1,
+    "math_method": "Exact Fraction evaluation of all95 numeric MathML nodes. Adjacent whole/fraction is a single mixed-number atom; a negative whole atom subtracts its positive fractional magnitude. Unary signs and operation precedence are evaluated after mixed-number grouping. Currency punctuation and question/full-stop punctuation are ignored only in calculation, never changed in artifacts. Every nonzero denominator/divisor evaluated successfully.",
+    "calculations": [
+      {
+        "exercise": "fs-id2716140",
+        "expression": "1 (1/5) + 3 (1/5)",
+        "exact_result": "22/5",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2817966",
+        "expression": "2 (1/3) + 1 (1/3)",
+        "exact_result": "11/3",
+        "source_answer": "11/3"
+      },
+      {
+        "exercise": "fs-id1964725",
+        "expression": "1 (3/8) + 1 (7/8)",
+        "exact_result": "13/4",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2462758",
+        "expression": "1 (5/6) + 1 (5/6)",
+        "exact_result": "11/3",
+        "source_answer": "11/3"
+      },
+      {
+        "exercise": "fs-id2284085",
+        "expression": "5 (1/3) + 6 (1/3)",
+        "exact_result": "35/3",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1560843",
+        "expression": "2 (4/9) + 5 (1/9)",
+        "exact_result": "68/9",
+        "source_answer": "68/9"
+      },
+      {
+        "exercise": "fs-id764543",
+        "expression": "4 (5/8) + 9 (3/8)",
+        "exact_result": "14",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2171048",
+        "expression": "7 (9/10) + 3 (1/10)",
+        "exact_result": "11",
+        "source_answer": "11"
+      },
+      {
+        "exercise": "fs-id1823582",
+        "expression": "3 (4/5) + 6 (4/5)",
+        "exact_result": "53/5",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1200097",
+        "expression": "9 (2/3) + 1 (2/3)",
+        "exact_result": "34/3",
+        "source_answer": "34/3"
+      },
+      {
+        "exercise": "fs-id2432094",
+        "expression": "6 (9/10) + 8 (3/10)",
+        "exact_result": "76/5",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2348702",
+        "expression": "8 (4/9) + 2 (8/9)",
+        "exact_result": "34/3",
+        "source_answer": "34/3"
+      },
+      {
+        "exercise": "fs-id1369100",
+        "expression": "1 (1/6) − (5/6)",
+        "exact_result": "1/3",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1151892",
+        "expression": "1 (1/8) − (5/8)",
+        "exact_result": "1/2",
+        "source_answer": "1/2"
+      },
+      {
+        "exercise": "fs-id1516554",
+        "expression": "2 (7/8) − 1 (3/8)",
+        "exact_result": "3/2",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2140929",
+        "expression": "2 (7/12) − 1 (5/12)",
+        "exact_result": "7/6",
+        "source_answer": "7/6"
+      },
+      {
+        "exercise": "fs-id2433613",
+        "expression": "8 (17/20) − 4 (9/20)",
+        "exact_result": "22/5",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2269626",
+        "expression": "19 (13/15) − 13 (7/15)",
+        "exact_result": "32/5",
+        "source_answer": "32/5"
+      },
+      {
+        "exercise": "fs-id2270119",
+        "expression": "8 (3/7) − 4 (4/7)",
+        "exact_result": "27/7",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1762266",
+        "expression": "5 (2/9) − 3 (4/9)",
+        "exact_result": "16/9",
+        "source_answer": "16/9"
+      },
+      {
+        "exercise": "fs-id3414953",
+        "expression": "2 (5/8) − 1 (7/8)",
+        "exact_result": "3/4",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1834436",
+        "expression": "2 (5/12) − 1 (7/12)",
+        "exact_result": "5/6",
+        "source_answer": "5/6"
+      },
+      {
+        "exercise": "fs-id1841849",
+        "expression": "3 (1/4) + 6 (1/3)",
+        "exact_result": "115/12",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1522774",
+        "expression": "2 (1/6) + 5 (3/4)",
+        "exact_result": "95/12",
+        "source_answer": "95/12"
+      },
+      {
+        "exercise": "fs-id2266612",
+        "expression": "1 (5/8) + 4 (1/2)",
+        "exact_result": "49/8",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id3448276",
+        "expression": "7 (2/3) + 8 (1/2)",
+        "exact_result": "97/6",
+        "source_answer": "97/6"
+      },
+      {
+        "exercise": "fs-id1385668",
+        "expression": "9 (7/10) − 2 (1/3)",
+        "exact_result": "221/30",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1936948",
+        "expression": "6 (4/5) − 1 (1/4)",
+        "exact_result": "111/20",
+        "source_answer": "111/20"
+      },
+      {
+        "exercise": "fs-id2626772",
+        "expression": "2 (2/3) − 3 (1/2)",
+        "exact_result": "-5/6",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2170228",
+        "expression": "2 (7/8) − 4 (1/3)",
+        "exact_result": "-35/24",
+        "source_answer": "-35/24"
+      },
+      {
+        "exercise": "fs-id1381829",
+        "expression": "2 (5/8) · 1 (3/4)",
+        "exact_result": "147/32",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1549369",
+        "expression": "1 (2/3) · 4 (1/6)",
+        "exact_result": "125/18",
+        "source_answer": "125/18"
+      },
+      {
+        "exercise": "fs-id2795160",
+        "expression": "(2/7) + (4/7)",
+        "exact_result": "6/7",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1823569",
+        "expression": "(2/9) + (5/9)",
+        "exact_result": "7/9",
+        "source_answer": "7/9"
+      },
+      {
+        "exercise": "fs-id2295448",
+        "expression": "1 (5/12) ÷ (1/12)",
+        "exact_result": "17",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2372861",
+        "expression": "2 (3/10) ÷ (1/10)",
+        "exact_result": "23",
+        "source_answer": "23"
+      },
+      {
+        "exercise": "fs-id1726392",
+        "expression": "13 (5/12) − 9 (7/12)",
+        "exact_result": "23/6",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1356690",
+        "expression": "15 (5/8) − 6 (7/8)",
+        "exact_result": "35/4",
+        "source_answer": "35/4"
+      },
+      {
+        "exercise": "fs-id2678903",
+        "expression": "(5/9) − (4/9)",
+        "exact_result": "1/9",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2222872",
+        "expression": "(11/15) − (7/15)",
+        "exact_result": "4/15",
+        "source_answer": "4/15"
+      },
+      {
+        "exercise": "fs-id3335905",
+        "expression": "4 − (3/4)",
+        "exact_result": "13/4",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1973825",
+        "expression": "6 − (2/5)",
+        "exact_result": "28/5",
+        "source_answer": "28/5"
+      },
+      {
+        "exercise": "fs-id2661403",
+        "expression": "(9/20) ÷ (3/4)",
+        "exact_result": "3/5",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2482150",
+        "expression": "(7/24) ÷ (14/3)",
+        "exact_result": "1/16",
+        "source_answer": "1/16"
+      },
+      {
+        "exercise": "fs-id1562863",
+        "expression": "9 (6/11) + 7 (10/11)",
+        "exact_result": "192/11",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2471251",
+        "expression": "8 (5/13) + 4 (9/13)",
+        "exact_result": "170/13",
+        "source_answer": "170/13"
+      },
+      {
+        "exercise": "fs-id1345384",
+        "expression": "3 (2/5) + 5 (3/4)",
+        "exact_result": "183/20",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2880449",
+        "expression": "2 (5/6) + 4 (1/5)",
+        "exact_result": "211/30",
+        "source_answer": "211/30"
+      },
+      {
+        "exercise": "fs-id1974110",
+        "expression": "(8/15) · (10/19)",
+        "exact_result": "16/57",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id1463146",
+        "expression": "(5/12) · (8/9)",
+        "exact_result": "10/27",
+        "source_answer": "10/27"
+      },
+      {
+        "exercise": "fs-id2269244",
+        "expression": "6 (7/8) − 2 (1/3)",
+        "exact_result": "109/24",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2819330",
+        "expression": "6 (5/9) − 4 (2/5)",
+        "exact_result": "97/45",
+        "source_answer": "97/45"
+      },
+      {
+        "exercise": "fs-id1278966",
+        "expression": "5 (2/9) − 4 (4/5)",
+        "exact_result": "19/45",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2299623",
+        "expression": "4 (3/8) − 3 (2/3)",
+        "exact_result": "17/24",
+        "source_answer": "17/24"
+      },
+      {
+        "exercise": "fs-id2704082",
+        "inputs": [
+          "19/8",
+          "9/8"
+        ],
+        "exact_result": "7/2",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2298122",
+        "inputs": [
+          "13/4",
+          "8/3"
+        ],
+        "exact_result": "7/12",
+        "source_answer": "7/12"
+      },
+      {
+        "exercise": "fs-id1549412",
+        "inputs": [
+          "17/2",
+          "3/2"
+        ],
+        "exact_result": "11/2",
+        "source_answer": null
+      },
+      {
+        "exercise": "fs-id2140723",
+        "inputs": [
+          "8",
+          "21/8"
+        ],
+        "exact_result": "53/4",
+        "source_answer": "53/4"
+      }
+    ],
+    "writing_checks": [
+      {
+        "exercise": "fs-id2348872",
+        "calculation": "1 5/8+2 7/8=9/2=4 1/2",
+        "source_solution": "absent; no answer added"
+      },
+      {
+        "exercise": "fs-id2922307",
+        "calculation": "$3.75=15/4 dollars;10−3 3/4=25/4=6 1/4 dollars",
+        "source_solution": "Answers will vary; only notice translated, no denominations or worked answer added"
+      },
+      {
+        "exercise": "fs-id1301014",
+        "calculation": "4 5/12+3 7/8=199/24=8 7/24 by either method",
+        "source_solution": "absent; no answer added"
+      },
+      {
+        "exercise": "fs-id2587795",
+        "calculation": "3 7/8−4 5/12=−13/24 by either method",
+        "source_solution": "Answers will vary refers to explanation/preference; numerical answer not newly inserted"
+      }
+    ],
+    "additional_checks": [
+      "27practice numerical supplied answers agree exactly, including standalone11 and23",
+      "Two everyday supplied answers agree:7/12 yard and13 1/4 inches",
+      "The two remaining everyday questions calculate to3 1/2 yards and5 1/2 inches; their answers remain absent",
+      "Source negative mixed answer−1 11/24=−35/24, explicitly unequal to−1+11/24",
+      "All four circles represent the same-size whole;4/8 simplifies to1/2",
+      "All62 source questions and31 solution-presence flags unchanged"
+    ],
+    "structure": "Shared translated() passes full tag/ID/order/attribute and exact MathML preservation, children+1 slot lengths, unique selectors and no residual authored English. All275IDs are retained in HTML, with all10 emphasis nodes and all95math nodes. Circled tokens and six newline elements stay in their original positions.",
+    "rendering": "In-memory render has4images and4visible Bengali descriptions, including every rubric task and response column. No files or source media are copied. Parent owns browser and assistive-technology review."
+  },
+  "pending": [
+    "Parent integration/browser QA",
+    "Independent West Bengal teacher/language review",
+    "Assistive-technology review"
+  ],
+  "scope": "Only this assigned overlay and separate canon record were written with apply_patch. No downloads, image copies, shared scripts/logs/ledger edits, deletions or commits. Whole assignment remains ongoing; report readiness and continue safe verification pending next assignment."
+}

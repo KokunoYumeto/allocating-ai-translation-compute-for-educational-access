@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="te-Telu-IN"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>సంఖ్యల నుంచి బీజగణితానికి · TE-B001</title>
+<style>
+:root{color-scheme:light;--ink:#193849;--accent:#006b67;--paper:#fffdfa}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.85 'Nirmala UI','Noto Sans Telugu',sans-serif}
+header,main,footer{max-width:1100px;margin:auto;padding:26px}header{border-bottom:5px solid var(--accent)}
+h1{font-size:2rem;line-height:1.5}h2{font-size:1.55rem;border-bottom:1px solid #bdd7d4;padding-bottom:10px;margin-top:2.4em}h3{font-size:1.2rem;line-height:1.6}
+p,li,dd{overflow-wrap:anywhere}a{color:#005e86}nav a{display:inline-block;margin:5px 15px 5px 0}
+aside,.cn-example,details{background:#eef6f4;border-left:4px solid var(--accent);padding:15px 22px;margin:20px 0}
+li{margin:14px 0}dd{margin:0 0 22px 0}dt{font-weight:700}summary{cursor:pointer;font-weight:700}
+figure{margin:20px 0}img{max-width:100%;height:auto}figcaption{font-size:.9em}dfn{font-style:normal;font-weight:600}
+math{font-size:1.12em}.cn-equation{padding:8px 0}.cn-solution{border-top:1px dotted #aac3c0;margin-top:14px}
+.cn-exercise{margin:16px 0}.english{font-size:16px}code{font-size:.8em}.meta{color:#526873;font-size:.88em}
+footer{font-size:.83em;border-top:2px solid #bdd7d4}@media(max-width:600px){body{font-size:17px}header,main,footer{padding:17px}h1{font-size:1.6rem}aside,details{padding:12px}}
+@media print{body{font-size:11pt}nav,summary{display:none}details>div,details>ol,details>section{display:block!important}h2,h3{break-after:avoid}li,figure{break-inside:avoid}}
+</style></head><body>
+<header><p class="meta">తెలుగు–English mastery bridge · te-Telu-IN · TE-B001 · review pilot</p>
+<h1>సంఖ్యల నుంచి బీజగణితానికి</h1><p>సహజ సంఖ్యలు, సున్నా, పూర్ణాంకాలు · Counting numbers, zero and whole numbers</p>
+<nav><a href="#bridge">ప్రారంభ పరీక్ష</a><a href="#source-te">మూలపాఠం అనువాదం</a><a href="#source-en">English source</a><a href="#attribution">మూలాలు / credits</a></nav>
+<p class="meta">One complete subsection; not a complete module or book. Placement and worked-solution additions are labeled separately. Telugu linguistic review remains open.</p></header>
+<main><section id="bridge" lang="te">
+  <h2>ముందుగా ఎక్కడ మొదలుపెట్టాలి? · Placement bridge</h2>
+  <p>ఇది 3–10 తరగతుల అభ్యాసకుల కోసం రూపొందిస్తున్న పునాది అభ్యాస సేతువులో మొదటి చిన్న భాగం. ఇది తరగతిని నిర్ణయించే ప్రమాణీకృత పరీక్ష కాదు. ప్రతి ప్రశ్నను చదివి, జవాబుతో పాటు కారణం రాయండి. చదవడంలో సహాయం కావాలంటే ఉపాధ్యాయుడు ప్రశ్నను చదివి వినిపించవచ్చు; గణిత జవాబును చెప్పకూడదు. సమయ పరిమితి లేదు. కాలిక్యులేటర్ అవసరం లేదు.</p>
+  <p lang="en">Original bridge additions, not OpenStax assessment items. Ask for an answer and a reason. Reading support is allowed. This is a skill-routing aid, not a validated grade-placement test. No learner data is collected.</p>
+  <aside><h3>పదాలు స్పష్టంగా · A convention that matters</h3><p>ఈ పాఠంలో సహజ సంఖ్యలు (counting / natural numbers) 1 నుంచి మొదలవుతాయి. పూర్ణాంకాలు (whole numbers) 0 నుంచి మొదలవుతాయి. పూర్ణ సంఖ్యలు (integers) అంటే …, −2, −1, 0, 1, 2, … వంటి సంఖ్యలు; వాటిని తరువాత నేర్చుకుంటాం. కొన్ని ఇతర పుస్తకాలు natural numbers లో 0 ను కూడా చేరుస్తాయి. ఇక్కడ మాత్రం మూలపాఠం నిర్వచనాన్నే అనుసరిస్తాం.</p></aside>
+  <h3 id="diagnostic">ప్రారంభ ప్రశ్నలు · Entry check</h3>
+  <ol>
+    <li id="D01"><strong>D01 · K1</strong> ఖాళీ పెట్టెలో ఎన్ని బంతులు ఉన్నాయి? ఆ సంఖ్య సహజ సంఖ్యా, పూర్ణాంకమా? <span lang="en">An empty box contains how many balls? Classify that number.</span></li>
+    <li id="D02"><strong>D02 · K1</strong> 4 సహజ సంఖ్యా, పూర్ణాంకమా, లేక రెండూనా? కారణం చెప్పండి. <span lang="en">Is 4 a counting number, a whole number, or both?</span></li>
+    <li id="D03"><strong>D03 · K2</strong> 1/4, 3, 5.2, 15 లో పూర్ణాంకాలను ఎంచుకోండి. మిగిలినవి ఎందుకు కావో చెప్పండి. <span lang="en">Select the whole numbers and explain the exclusions.</span></li>
+    <li id="D04"><strong>D04 · K2</strong> “6/3 ను భిన్నం రూపంలో రాశారు కాబట్టి అది పూర్ణాంకం కాదు” అని రవి అన్నాడు. ఇది సరైనదా? <span lang="en">Does fractional notation alone mean that 6/3 is not a whole number?</span></li>
+    <li id="D05"><strong>D05 · K3</strong> సంఖ్యారేఖపై 2, 5 లో కుడివైపు ఏది ఉంటుంది? 2 __ 5 లో &lt; లేదా &gt; రాయండి. <span lang="en">Which lies farther right? Choose the comparison sign.</span></li>
+    <li id="D06"><strong>D06 · K3</strong> 0 నుంచి కుడివైపు ఒక్కొక్క ప్రమాణం చొప్పున మూడు అడుగులు వెళ్తే ఏ బిందువుకు చేరతాం? దాని నిరూపకం ఏమిటి? <span lang="en">Move three unit steps right from 0; name the coordinate.</span></li>
+    <li id="D07"><strong>D07 · K4</strong> 305 లో 3, 0, 5 అంకెల స్థాన విలువలు రాయండి. 305 = __ + __ + __ పూర్తి చేయండి. <span lang="en">Write each digit's place value and expand 305.</span></li>
+    <li id="D08"><strong>D08 · K4</strong> 537, 735 లో పెద్ద సంఖ్య ఏది? రెండింటిలో అంకెలు ఒకటే అయినా విలువలు ఎందుకు వేరుగా ఉన్నాయి? <span lang="en">Compare 537 and 735 using place value.</span></li>
+  </ol>
+  <h3 id="routing">జవాబుల ఆధారంగా దారి · Skill-based routing</h3>
+  <p>ప్రతి నైపుణ్యానికి రెండు ప్రశ్నలు ఉన్నాయి: K1 = D01–D02; K2 = D03–D04; K3 = D05–D06; K4 = D07–D08. జవాబు, కారణం రెండూ సరైనప్పుడు మాత్రమే ఆ ప్రశ్నకు 1 ఇవ్వండి. సరైన జవాబు ఉన్నా కారణం లేకపోతే “కారణం అడగాలి” అని గుర్తించి ప్రస్తుతం 0 ఇవ్వండి. ఊహించిన తప్పును విద్యార్థి చేసిన తప్పుగా భావించకండి; ముందుగా వివరణ అడగండి.</p>
+  <p>ఒక నైపుణ్యంలో 2/2 వస్తే దాని సమాన స్థాయి మళ్లీ-తనిఖీ ప్రశ్నలు చేయండి. 0/2 లేదా 1/2 వస్తే కింద ఉన్న ఆ నైపుణ్యపు సహాయం చదివి, తరువాత మళ్లీ తనిఖీ చేయండి. మొత్తం మార్కుల ఆధారంగా ఒక్క నైపుణ్యంలోని లోటును దాచకండి. R01–R08 లో సంబంధిత రెండు ప్రశ్నలూ కారణాలతో సరిగా చేసినప్పుడు మాత్రమే ఆ నైపుణ్యాన్ని ఈ చిన్న యూనిట్‌కు సరిపడినట్లు గుర్తించండి. అన్ని నాలుగు నైపుణ్యాలు సిద్ధమైతే తదుపరి భాగం “స్థాన విలువతో సంఖ్యలను నమూనాలుగా చూపడం”కు వెళ్లండి. లేదంటే అవసరమైన సహాయాన్ని మళ్లీ తీసుకోండి.</p>
+  <p>మళ్లీ-తనిఖీలో K1 = R01–R02; K2 = R03–R04; K3 = R05–R06; K4 = R07–R08.</p>
+  <p lang="en">For each skill, an entry score of 0/2 or 1/2 leads to the relevant support; a score of 2/2 leads directly to the recheck. Mark that skill ready for this small unit only after both corresponding recheck items are answered correctly with explanations. An earlier entry score below 2/2 does not prevent readiness after support. The threshold is an editorial rule, not an empirically validated mastery cut score. Keep results on paper; the reader stores nothing.</p>
+  <h3 id="support">తప్పు ఎక్కడ వచ్చిందో చూద్దాం · Explain and repair</h3>
+  <dl>
+    <dt id="K1">K1 · సున్నా కూడా ఒక సంఖ్య</dt><dd>“ఏమీ లేవు కాబట్టి సంఖ్య లేదు” అనడం పొరపాటు. వస్తువులు లేని పరిమాణాన్ని 0 సూచిస్తుంది. 1, 2, 3, … సహజ సంఖ్యలు. వీటితో 0 ను చేర్చితే 0, 1, 2, 3, … పూర్ణాంకాలు. కాబట్టి ప్రతి సహజ సంఖ్య పూర్ణాంకం కూడా; కానీ 0 సహజ సంఖ్య కాదు.</dd>
+    <dt id="K2">K2 · రూపం కాదు, విలువను చూడాలి</dt><dd>1/4 అనేది 0, 1 మధ్య ఉంటుంది; 5.2 అనేది 5, 6 మధ్య ఉంటుంది. అందువల్ల ఇవి పూర్ణాంకాలు కావు. అయితే 6/3 = 2. భిన్న రూపంలో ఉన్నా దాని విలువ పూర్ణాంకం కావచ్చు. అలాగే 4.0 = 4. కేవలం గీత లేదా దశాంశ బిందువు ఉందని నిర్ణయించకండి.</dd>
+    <dt id="K3">K3 · దిశ, దూరం, గుర్తు</dt><dd>ఈ పాఠంలో సంఖ్యారేఖపై వరుస పూర్ణాంకాలను ఒక ప్రమాణం దూరంలో గుర్తిస్తాం. కుడికి వెళ్తే సంఖ్య పెరుగుతుంది. 2 నుంచి మూడు ప్రమాణాలు కుడికి వెళ్తే 5. కాబట్టి 2 &lt; 5. పోలిక చిహ్నంలోని విస్తరించిన వైపు పెద్ద సంఖ్యవైపు ఉంటుంది. 0 అనే బిందువునే మూలబిందువు అంటాం.</dd>
+    <dt id="K4">K4 · స్థాన విలువ — తదుపరి పాఠానికి వంతెన</dt><dd>కుడి నుంచి స్థానాలు: ఒకట్లు (ones), పదులు (tens), వందలు (hundreds). 10 ఒకట్లు = 1 పది; 10 పదులు = 1 వంద. 305 లో 3 వందలు = 300; 0 పదులు = 0; 5 ఒకట్లు = 5. మధ్యలోని 0 ను తొలగిస్తే 35 వస్తుంది; అది 305 కాదు. ఒకే సంఖ్యలో అంకెలు ఉన్న రెండు సంఖ్యలను పోల్చేటప్పుడు ఎడమ నుంచి మొదట భిన్నంగా ఉన్న స్థానాన్ని చూడండి. ఇవి మూలపాఠంలోని తదుపరి భాగానికి పరిచయంగా ఇక్కడ చేర్చిన వివరణలు.</dd>
+  </dl>
+  <details id="entry-solutions"><summary>ప్రారంభ ప్రశ్నల పూర్తి సాధనలు · Worked entry solutions</summary>
+    <ol>
+      <li id="S-D01"><a href="#D01">D01</a>: బంతులు లేవు, కాబట్టి సంఖ్య 0. సహజ సంఖ్యల జాబితా 1 వద్ద మొదలవుతుంది, కనుక 0 అందులో లేదు. పూర్ణాంకాల జాబితా 0 వద్ద మొదలవుతుంది, కనుక 0 పూర్ణాంకం.</li>
+      <li id="S-D02"><a href="#D02">D02</a>: 1, 2, 3, 4 అంటూ లెక్కించగలం, కాబట్టి 4 సహజ సంఖ్య. పూర్ణాంకాల్లో సహజ సంఖ్యలన్నీ ఉంటాయి. అందువల్ల 4 రెండూ అవుతుంది.</li>
+      <li id="S-D03"><a href="#D03">D03</a>: 3, 15 పూర్ణాంకాలు. 0 &lt; 1/4 &lt; 1; 5 &lt; 5.2 &lt; 6. 1/4, 5.2 పూర్ణాంకాల గుర్తుల మధ్య ఉన్నాయి, వాటి వద్ద లేవు. కాబట్టి వాటిని ఎంచుకోము.</li>
+      <li id="S-D04"><a href="#D04">D04</a>: రవి మాట సరైంది కాదు. 6 ను 3 సమాన భాగాలుగా పంచితే ఒక్కో భాగం 2; అంటే 6/3 = 2. 2 సహజ సంఖ్య కూడా, పూర్ణాంకం కూడా. సంఖ్య విలువను చూడాలి, రాసిన రూపాన్ని మాత్రమే కాదు.</li>
+      <li id="S-D05"><a href="#D05">D05</a>: 2 నుంచి 3, 4, 5 వరకు కుడికి వెళ్తాం. 5 కుడివైపు ఉంది, అందువల్ల 5 పెద్దది. సరైన పోలిక 2 &lt; 5; విస్తరించిన వైపు 5 వైపు ఉంది.</li>
+      <li id="S-D06"><a href="#D06">D06</a>: మొదటి అడుగు 1 వద్దకు, రెండోది 2 వద్దకు, మూడోది 3 వద్దకు. చేరిన బిందువు నిరూపకం 3. మొదట నిల్చున్న 0 ను ఒక అడుగుగా లెక్కించకూడదు.</li>
+      <li id="S-D07"><a href="#D07">D07</a>: 3 వందల స్థానంలో ఉంది: 3 × 100 = 300. 0 పదుల స్థానంలో ఉంది: 0 × 10 = 0. 5 ఒకట్ల స్థానంలో ఉంది: 5 × 1 = 5. కాబట్టి 305 = 300 + 0 + 5.</li>
+      <li id="S-D08"><a href="#D08">D08</a>: రెండూ మూడు అంకెల సంఖ్యలు. వందల స్థానంలో 537 కు 5, 735 కు 7 ఉన్నాయి. 7 వందలు 5 వందల కంటే ఎక్కువ, కాబట్టి 735 &gt; 537. 537 = 500 + 30 + 7; 735 = 700 + 30 + 5. అంకెల స్థానాలు మారితే వాటి స్థాన విలువలు మారుతాయి.</li>
+    </ol>
+  </details>
+  <h3 id="recheck">సహాయం తరువాత మళ్లీ తనిఖీ · Recheck</h3>
+  <ol>
+    <li id="R01"><strong>R01 · K1</strong> పక్షులన్నీ కొమ్మ నుంచి ఎగిరిపోయాయి. మిగిలిన పక్షుల సంఖ్యను రాసి వర్గీకరించండి.</li>
+    <li id="R02"><strong>R02 · K1</strong> 8 సహజ సంఖ్యా, పూర్ణాంకమా, లేక రెండూనా? ఎందుకు?</li>
+    <li id="R03"><strong>R03 · K2</strong> 2/3, 7, 8.8, 13 లో పూర్ణాంకాలను ఎంచుకుని, మిగిలినవాటిని ఎందుకు ఎంచుకోలేదో చెప్పండి.</li>
+    <li id="R04"><strong>R04 · K2</strong> 12/4 పూర్ణాంకం అవుతుందా? ముందుగా దాని విలువను కనుగొనండి.</li>
+    <li id="R05"><strong>R05 · K3</strong> సంఖ్యారేఖపై 1, 4 లో కుడివైపు ఏది? 1 __ 4 పూర్తి చేయండి.</li>
+    <li id="R06"><strong>R06 · K3</strong> 0 నుంచి కుడికి నాలుగు ప్రమాణాలు వెళ్లిన బిందువు నిరూపకం ఏమిటి? అడుగులను చూపండి.</li>
+    <li id="R07"><strong>R07 · K4</strong> 402 లో ప్రతి అంకె స్థాన విలువను రాయండి. సంఖ్యను విస్తరించండి.</li>
+    <li id="R08"><strong>R08 · K4</strong> 426, 624 లో ఏది పెద్దది? వందల స్థానాన్ని ఉపయోగించి వివరించండి.</li>
+  </ol>
+  <details id="recheck-solutions"><summary>మళ్లీ-తనిఖీ పూర్తి సాధనలు · Worked recheck solutions</summary>
+    <ol>
+      <li id="S-R01"><a href="#R01">R01</a>: పక్షులు ఏవీ మిగలలేదు, కాబట్టి 0. ఈ పాఠం నిర్వచనం ప్రకారం 0 పూర్ణాంకం; సహజ సంఖ్య కాదు.</li>
+      <li id="S-R02"><a href="#R02">R02</a>: 8 అనేది 1, 2, 3, … జాబితాలో ఉంటుంది. కాబట్టి సహజ సంఖ్య. ప్రతి సహజ సంఖ్య పూర్ణాంకం కూడా, అందువల్ల రెండూ.</li>
+      <li id="S-R03"><a href="#R03">R03</a>: 7, 13 పూర్ణాంకాలు. 0 &lt; 2/3 &lt; 1; 8 &lt; 8.8 &lt; 9. మిగిలిన రెండు సంఖ్యలు వరుస పూర్ణాంకాల మధ్య ఉన్నాయి కాబట్టి పూర్ణాంకాలు కావు.</li>
+      <li id="S-R04"><a href="#R04">R04</a>: 12 ÷ 4 = 3, ఎందుకంటే 4 × 3 = 12. 3 పూర్ణాంకం. అందువల్ల 12/4 విలువ కూడా పూర్ణాంకమే.</li>
+      <li id="S-R05"><a href="#R05">R05</a>: 1 నుంచి 2, 3, 4 వరకు కుడికి వెళ్తాం. 4 పెద్దది, కాబట్టి 1 &lt; 4.</li>
+      <li id="S-R06"><a href="#R06">R06</a>: 0 → 1 → 2 → 3 → 4. నాలుగు అడుగుల తరువాత నిరూపకం 4. ఐదు సంఖ్యా గుర్తులు కనిపించినా కదిలిన అడుగులు నాలుగే.</li>
+      <li id="S-R07"><a href="#R07">R07</a>: 4 × 100 = 400; 0 × 10 = 0; 2 × 1 = 2. కాబట్టి 402 = 400 + 0 + 2. 0 పదుల స్థానాన్ని నిలిపి ఉంచుతుంది; దానిని తొలగిస్తే 42 అవుతుంది.</li>
+      <li id="S-R08"><a href="#R08">R08</a>: రెండూ మూడు అంకెల సంఖ్యలు. 624 లో 6 వందలు, 426 లో 4 వందలు ఉన్నాయి. 6 &gt; 4 కాబట్టి 624 &gt; 426. విస్తరణలు 600 + 20 + 4, 400 + 20 + 6 కూడా ఇదే చూపుతాయి.</li>
+    </ol>
+  </details>
+  <h3 id="source-try-solutions">మూలపాఠపు “మీరే ప్రయత్నించండి” ప్రశ్నలకు పూర్తి వివరణలు</h3>
+  <p>కింది రెండు వివరణలు ఈ సేతువు కోసం చేర్చినవి. మూలంలో ఉన్న సంక్షిప్త జవాబులు యథాతథంగా అనువాద భాగంలో ఉన్నాయి.</p>
+  <p id="S-fs-id3298473"><strong>fs-id3298473:</strong> జాబితా 0, 2/3, 2, 9, 11.8, 241, 376. 2, 9, 241, 376 లెక్కించడానికి ఉపయోగించే సంఖ్యలు, కాబట్టి సహజ సంఖ్యలు. పూర్ణాంకాల జాబితా కోసం వీటికి 0 ను చేర్చాలి: 0, 2, 9, 241, 376. 2/3 అనేది 0, 1 మధ్య; 11.8 అనేది 11, 12 మధ్య. కాబట్టి ఈ రెండూ ఏ జాబితాలోనూ చేరవు.</p>
+  <p id="S-fs-id1786026"><strong>fs-id1786026:</strong> జాబితా 0, 5/3, 7, 8.8, 13, 201. సహజ సంఖ్యలు 7, 13, 201. వీటితో 0 ను చేరిస్తే పూర్ణాంకాలు 0, 7, 13, 201. 5/3 = 1 + 2/3, కాబట్టి అది 1, 2 మధ్య ఉంటుంది; 8.8 అనేది 8, 9 మధ్య. అందువల్ల 5/3, 8.8 సహజ సంఖ్యలూ కావు, పూర్ణాంకాలూ కావు.</p>
+  <p id="next">తదుపరి మూలభాగం: <code>m81243#fs-id2340048</code>, <span lang="en">Model Whole Numbers</span>. నమూనాలు, వందలు–పదులు–ఒకట్లు, తరువాత స్థాన విలువ. ఇంకా అనువదించని భాగాలను ఈ పైలట్ పూర్తిచేసినట్లు పరిగణించవద్దు.</p>
+</section><section id="source-te"><h2>మూలపాఠం అనువాదం · OpenStax source subsection</h2>
+<p class="meta">A00 · m81243 · fs-id1830385 · Original identifiers and mathematical structure retained.</p><section id="fs-id1830385" class="cn-section"><h3 class="cn-title">సహజ సంఖ్యలు, పూర్ణాంకాలను గుర్తించడం</h3><p id="fs-id2325869" class="cn-para">బీజగణితం నేర్చుకోవడం ఒక భాష నేర్చుకోవడం లాంటిది. మొదట కొన్ని ప్రాథమిక పదాలను నేర్చుకుంటాం. తరువాత కొత్త పదాలను చేర్చుకుంటూ వెళ్తాం. ఆ పదాలు సులభంగా అర్థమయ్యే వరకు తరచూ సాధన చేయాలి. వాటిని ఎంత ఎక్కువగా ఉపయోగిస్తే అంత బాగా పరిచయమవుతాయి.</p>
+<p id="fs-id2269442" class="cn-para">పదాలనూ భావాలనూ తెలియజేయడానికి బీజగణితంలో సంఖ్యలు, చిహ్నాలు వాడతాం. ముందుగా సంఖ్యలను చూద్దాం. వస్తువులను లెక్కించడానికి ఉపయోగించే సంఖ్యలే బీజగణితంలోని అత్యంత ప్రాథమిక సంఖ్యలు: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mo>…</mo></mrow></math> ఇలా కొనసాగుతాయి. వీటి పేరు <dfn id="term-00001" class="cn-term">సహజ సంఖ్యలు (counting numbers)</dfn>. “…” అనే చిహ్నాన్ని ఎలిప్సిస్ (ellipsis) అంటారు. “ఇలాగే కొనసాగుతుంది” అని, అంటే ఈ నమూనా అంతం లేకుండా కొనసాగుతుందని ఇది సూచిస్తుంది. Counting numbers ను natural numbers అని కూడా అంటారు.</p>
+<aside id="fs-id2631065" class="cn-note">
+<h3 class="cn-title">సహజ సంఖ్యలు — Counting numbers</h3>
+<p id="fs-id1565524" class="cn-para">సహజ సంఖ్యల ప్రారంభ సంఖ్య <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math>; అక్కడి నుంచి లెక్కింపు కొనసాగుతుంది.</p>
+<div id="fs-id1601874" class="cn-equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mtext>5…</mtext></mrow></math></div></aside>
+<p id="fs-id2741297" class="cn-para">సహజ సంఖ్యలనూ పూర్ణాంకాలనూ చూపడానికి ఉపయోగించే రేఖ పేరు <dfn id="term-00002" class="cn-term">సంఖ్యారేఖ (number line)</dfn>. దీనిని పటంలో చూడండి: <a href="#CNX_BMath_Figure_01_01_001">CNX_BMath_Figure_01_01_001</a>.</p>
+<figure id="CNX_BMath_Figure_01_01_001" class="cn-figure"><div id="fs-id2316516"><img src="../assets/number-line.te.svg" alt="0 నుంచి 6 వరకు సమాన దూరాల్లో గుర్తులు ఉన్న సంఖ్యారేఖ. ప్రతి రెండు పక్కపక్క గుర్తుల మధ్య దూరం ఒక ప్రమాణం. కుడివైపు బాణం వద్ద ‘పెద్దవి — larger’, ఎడమవైపు బాణం వద్ద ‘చిన్నవి — smaller’ అని ఉంది."/></div>
+
+<figcaption class="cn-caption">సంఖ్యారేఖపై ఎడమ నుంచి కుడికి వెళ్తే సంఖ్యలు పెరుగుతాయి; కుడి నుంచి ఎడమకు వెళ్తే తగ్గుతాయి.</figcaption></figure><p id="fs-id1410425" class="cn-para">సంఖ్యారేఖపై <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> అని గుర్తించిన బిందువు పేరు <dfn id="term-00003" class="cn-term">మూలబిందువు (origin)</dfn>. సమాన దూరాల్లో బిందువులను గుర్తిస్తూ <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> కు కుడివైపున సహజ సంఖ్యలను రాస్తాం. ఒక బిందువుతో జత చేసిన సంఖ్యను ఆ బిందువు యొక్క <dfn id="term-00004" class="cn-term">నిరూపకం (coordinate)</dfn> అంటారు.</p>
+<p id="fs-id1383646" class="cn-para">సున్నాను కనుగొనడం గణిత చరిత్రలో ఒక ముఖ్యమైన ముందడుగు. సహజ సంఖ్యలకు సున్నాను చేరిస్తే వచ్చే కొత్త సంఖ్యల సమితి పేరు <dfn id="term-00005" class="cn-term">పూర్ణాంకాలు (whole numbers)</dfn>.</p>
+<aside id="fs-id2606982" class="cn-note">
+<h3 class="cn-title">పూర్ణాంకాలు — Whole numbers</h3>
+<p id="fs-id1516323" class="cn-para">సహజ సంఖ్యలతో పాటు సున్నాను చేర్చితే పూర్ణాంకాలు వస్తాయి.</p>
+<div id="fs-id2260967" class="cn-equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mtext>5…</mtext></mrow></math></div></aside>
+<p id="fs-id1904853" class="cn-para">మొదటి కొన్ని సంఖ్యలను చూపడానికి <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math> వరకు మాత్రమే రాశాము. పైన చూపిన జాబితాలు వరుసగా <dfn id="term-00006" class="cn-term">సహజ సంఖ్యలు</dfn> మరియు <dfn id="term-00007" class="cn-term">పూర్ణాంకాలు</dfn>. నమూనా మరింత స్పష్టంగా తెలియాలంటే ఇంకా ఎక్కువ సంఖ్యలను రాయవచ్చు.</p>
+<section id="fs-id1262372" class="cn-example">
+<section id="fs-id1398237" class="cn-exercise"><div id="fs-id3413579" class="cn-problem">
+<p id="fs-id1393222" class="cn-para">కింది సంఖ్యల్లో వేటిని <span class="cn-span">ⓐ</span> సహజ సంఖ్యలుగా, <span class="cn-span">ⓑ</span> పూర్ణాంకాలుగా గుర్తించవచ్చు?</p><p id="fs-id1269630" class="cn-para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mn>3</mn><mo>,</mo><mn>5.2</mn><mo>,</mo><mn>15</mn><mo>,</mo><mn>105</mn></mrow></math></p>
+</div>
+<div id="fs-id2564359" class="cn-solution">
+<h3 class="cn-title">సాధన — Solution</h3>
+<ul id="fs-id2198081" class="cn-list"><li class="cn-item"><span class="cn-span">ⓐ</span> సహజ సంఖ్యల ప్రారంభ సంఖ్య <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo></mrow></math> కాబట్టి <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> సహజ సంఖ్య కాదు. <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>,</mo><mn>15</mn><mo>,</mo><mspace width="0.2em" /><mtext>మరియు</mtext><mspace width="0.2em" /><mn>105</mn></mrow></math> అన్నీ సహజ సంఖ్యలే.</li>
+<li class="cn-item"><span class="cn-span">ⓑ</span> పూర్ణాంకాలు అంటే సహజ సంఖ్యలతో పాటు <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>.</mo></mrow></math> అందువల్ల <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>15</mn><mo>,</mo><mspace width="0.2em" /><mtext>మరియు</mtext><mspace width="0.2em" /><mn>105</mn></mrow></math> పూర్ణాంకాలు.</li></ul><p id="fs-id1952631" class="cn-para">ఇక్కడ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> మరియు <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5.2</mn></mrow></math> సహజ సంఖ్యలూ కావు, పూర్ణాంకాలూ కావు. వీటి గురించి తరువాత నేర్చుకుంటాం.</p>
+</div>
+</section></section>
+<aside id="fs-id2698269" class="cn-note try">
+<section id="fs-id3298473" class="cn-exercise"><div id="fs-id2210740" class="cn-problem">
+<p id="fs-id1587799" class="cn-para">కింది సంఖ్యల్లో వేటిని <span class="cn-span">ⓐ</span> సహజ సంఖ్యలుగా, <span class="cn-span">ⓑ</span> పూర్ణాంకాలుగా గుర్తించవచ్చు?</p><p id="fs-id1363233" class="cn-para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>,</mo><mn>2</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>11.8</mn><mo>,</mo><mn>241</mn><mo>,</mo><mn>376</mn></mrow></math></p>
+</div>
+<div id="fs-id2775154" class="cn-solution">
+<ul id="fs-id2425678" class="cn-list"><li class="cn-item"><span class="cn-span">ⓐ</span> 2, 9, 241, 376</li>
+<li class="cn-item"><span class="cn-span">ⓑ</span> 0, 2, 9, 241, 376</li></ul></div>
+</section></aside>
+<aside id="fs-id1906330" class="cn-note try">
+<section id="fs-id1786026" class="cn-exercise"><div id="fs-id2812320" class="cn-problem">
+<p id="fs-id1409646" class="cn-para">కింది సంఖ్యల్లో వేటిని <span class="cn-span">ⓐ</span> సహజ సంఖ్యలుగా, <span class="cn-span">ⓑ</span> పూర్ణాంకాలుగా గుర్తించవచ్చు?</p><p id="fs-id2840506" class="cn-para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mn>7</mn><mo>,</mo><mn>8.8</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>201</mn></mrow></math></p>
+</div>
+<div id="fs-id1415724" class="cn-solution">
+<ul id="fs-id1960220" class="cn-list"><li class="cn-item"><span class="cn-span">ⓐ</span> 7, 13, 201</li>
+<li class="cn-item"><span class="cn-span">ⓑ</span> 0, 7, 13, 201</li></ul></div>
+</section></aside>
+</section></section>
+<details id="source-en" class="english" lang="en"><summary>Read the parallel canonical English subsection</summary><section id="en-fs-id1830385" class="cn-section"><h3 class="cn-title">Identify Counting Numbers and Whole Numbers</h3><p id="en-fs-id2325869" class="cn-para">Learning algebra is similar to learning a language. You start with a basic vocabulary and then add to it as you go along. You need to practice often until the vocabulary becomes easy to you. The more you use the vocabulary, the more familiar it becomes.</p>
+<p id="en-fs-id2269442" class="cn-para">Algebra uses numbers and symbols to represent words and ideas. Let’s look at the numbers first. The most basic numbers used in algebra are those we use to count objects: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mo>…</mo></mrow></math> and so on. These are called the <dfn id="en-term-00001" class="cn-term">counting numbers</dfn>. The notation “…” is called an ellipsis, which is another way to show “and so on”, or that the pattern continues endlessly. Counting numbers are also called natural numbers.</p>
+<aside id="en-fs-id2631065" class="cn-note">
+<h3 class="cn-title">Counting Numbers</h3>
+<p id="en-fs-id1565524" class="cn-para">The counting numbers start with <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn></mrow></math> and continue.</p>
+<div id="en-fs-id1601874" class="cn-equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mtext>5…</mtext></mrow></math></div></aside>
+<p id="en-fs-id2741297" class="cn-para">Counting numbers and whole numbers can be visualized on a <dfn id="en-term-00002" class="cn-term">number line</dfn> as shown in <a href="#en-CNX_BMath_Figure_01_01_001">CNX_BMath_Figure_01_01_001</a>.</p>
+<figure id="en-CNX_BMath_Figure_01_01_001" class="cn-figure"><div id="en-fs-id2316516"><img src="../assets/number-line.te.svg" alt="An image of a number line from 0 to 6 in increments of one. An arrow above the number line pointing to the right with the label “larger”. An arrow pointing to the left with the label “smaller”."/></div>
+
+<figcaption class="cn-caption">The numbers on the number line increase from left to right, and decrease from right to left.</figcaption></figure><p id="en-fs-id1410425" class="cn-para">The point labeled <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> is called the <dfn id="en-term-00003" class="cn-term">origin</dfn>. The points are equally spaced to the right of <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> and labeled with the counting numbers. When a number is paired with a point, it is called the <dfn id="en-term-00004" class="cn-term">coordinate</dfn> of the point.</p>
+<p id="en-fs-id1383646" class="cn-para">The discovery of the number zero was a big step in the history of mathematics. Including zero with the counting numbers gives a new set of numbers called the <dfn id="en-term-00005" class="cn-term">whole numbers</dfn>.</p>
+<aside id="en-fs-id2606982" class="cn-note">
+<h3 class="cn-title">Whole Numbers</h3>
+<p id="en-fs-id1516323" class="cn-para">The whole numbers are the counting numbers and zero.</p>
+<div id="en-fs-id2260967" class="cn-equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mtext>5…</mtext></mrow></math></div></aside>
+<p id="en-fs-id1904853" class="cn-para">We stopped at <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math> when listing the first few <dfn id="en-term-00006" class="cn-term">counting numbers</dfn> and <dfn id="en-term-00007" class="cn-term">whole numbers</dfn>. We could have written more numbers if they were needed to make the patterns clear.</p>
+<section id="en-fs-id1262372" class="cn-example">
+<section id="en-fs-id1398237" class="cn-exercise"><div id="en-fs-id3413579" class="cn-problem">
+<p id="en-fs-id1393222" class="cn-para">Which of the following are <span class="cn-span">ⓐ</span> counting numbers? <span class="cn-span">ⓑ</span> whole numbers?</p><p id="en-fs-id1269630" class="cn-para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mn>3</mn><mo>,</mo><mn>5.2</mn><mo>,</mo><mn>15</mn><mo>,</mo><mn>105</mn></mrow></math></p>
+</div>
+<div id="en-fs-id2564359" class="cn-solution">
+<h3 class="cn-title">Solution</h3>
+<ul id="en-fs-id2198081" class="cn-list"><li class="cn-item"><span class="cn-span">ⓐ</span> The counting numbers start at <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>,</mo></mrow></math> so <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math> is not a counting number. The numbers <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>,</mo><mn>15</mn><mo>,</mo><mspace width="0.2em" /><mtext>and</mtext><mspace width="0.2em" /><mn>105</mn></mrow></math> are all counting numbers.</li>
+<li class="cn-item"><span class="cn-span">ⓑ</span> Whole numbers are counting numbers and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>.</mo></mrow></math> The numbers <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>15</mn><mo>,</mo><mspace width="0.2em" /><mtext>and</mtext><mspace width="0.2em" /><mn>105</mn></mrow></math> are whole numbers.</li></ul><p id="en-fs-id1952631" class="cn-para">The numbers <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5.2</mn></mrow></math> are neither counting numbers nor whole numbers. We will discuss these numbers later.</p>
+</div>
+</section></section>
+<aside id="en-fs-id2698269" class="cn-note try">
+<section id="en-fs-id3298473" class="cn-exercise"><div id="en-fs-id2210740" class="cn-problem">
+<p id="en-fs-id1587799" class="cn-para">Which of the following are <span class="cn-span">ⓐ</span> counting numbers <span class="cn-span">ⓑ</span> whole numbers?</p><p id="en-fs-id1363233" class="cn-para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>,</mo><mn>2</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>11.8</mn><mo>,</mo><mn>241</mn><mo>,</mo><mn>376</mn></mrow></math></p>
+</div>
+<div id="en-fs-id2775154" class="cn-solution">
+<ul id="en-fs-id2425678" class="cn-list"><li class="cn-item"><span class="cn-span">ⓐ</span> 2, 9, 241, 376</li>
+<li class="cn-item"><span class="cn-span">ⓑ</span> 0, 2, 9, 241, 376</li></ul></div>
+</section></aside>
+<aside id="en-fs-id1906330" class="cn-note try">
+<section id="en-fs-id1786026" class="cn-exercise"><div id="en-fs-id2812320" class="cn-problem">
+<p id="en-fs-id1409646" class="cn-para">Which of the following are <span class="cn-span">ⓐ</span> counting numbers <span class="cn-span">ⓑ</span> whole numbers?</p><p id="en-fs-id2840506" class="cn-para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>,</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mn>7</mn><mo>,</mo><mn>8.8</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>201</mn></mrow></math></p>
+</div>
+<div id="en-fs-id1415724" class="cn-solution">
+<ul id="en-fs-id1960220" class="cn-list"><li class="cn-item"><span class="cn-span">ⓐ</span> 7, 13, 201</li>
+<li class="cn-item"><span class="cn-span">ⓑ</span> 0, 7, 13, 201</li></ul></div>
+</section></aside>
+</section></details>
+</main><footer id="attribution" lang="en"><p>Adapted from <em>Prealgebra 2e</em>, OpenStax, Rice University; senior contributing authors Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis. Canonical source: <a href="https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m81243/index.cnxml">m81243 at 38cae454e644abf9f0a623e876994553881597c9</a>. Indonesian reference edition: <a href="https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID">KokunoYumeto/openstax-prealgebra-2e-id-ID</a>, v0.2.7. Existing source and contributor credits remain in the preserved notices.</p>
+<p>CC BY-NC-SA 4.0, subject to retained component notices. <a href="../notices/A00-LICENSE.txt">License</a> · <a href="../ATTRIBUTION.md">Full provenance and change disclosure</a>. No endorsement by OpenStax, Rice University, the source authors, or either state government. Translation, added diagnostics and explanations, and the number-line SVG redraw were prepared with OpenAI Codex assistance at the user's request. The English column also displays the disclosed localized diagram, not the upstream JPG. This pilot has no external scripts, fonts, scoring service, or telemetry.</p></footer></body></html>

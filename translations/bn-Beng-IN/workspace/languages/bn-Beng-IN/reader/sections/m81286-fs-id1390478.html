@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="bn-Beng-IN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>গুণাত্মক বিপরীত নির্ণয় করো</title><style>body{font-family:"Nirmala UI","Noto Sans Bengali",sans-serif;color:#182d39;background:#f7f5ef;margin:0;font-size:19px;line-height:1.85}main{max-width:900px;margin:auto;padding:32px 24px;background:white}nav{padding:14px 0;border-bottom:2px solid #14685e}a{color:#075b6b}h1,h2{line-height:1.5;color:#104d48}h1{font-size:2rem}h2{font-size:1.3rem;margin-top:1.7em}p,li{overflow-wrap:anywhere}li{padding:6px 0}aside,.example{border-left:4px solid #157468;padding:8px 20px;margin:24px 0;background:#eff8f4}.solution{padding:8px 14px;background:#f7f7f3}.media{text-align:center;margin:20px 0}img{max-width:100%;height:auto;max-height:280px}math{font-size:1.1em;direction:ltr}.description,.notice{font-size:0.85em;color:#43535a}.notice{border:1px solid #9bafa9;padding:16px}footer{border-top:1px solid #9bafa9;margin-top:36px;padding:16px 0}@media(max-width:480px){main{padding:18px 14px}body{font-size:18px}aside,.example{padding:6px 10px}}@media print{body{background:white;font-size:12pt}main{padding:0}nav{display:none}h2{break-after:avoid}img{max-height:50mm}.example,li{break-inside:avoid}}table{width:100%;border-collapse:collapse;table-layout:fixed}td{padding:8px;vertical-align:top;overflow-wrap:anywhere;border-bottom:1px solid #d5e0dc}td .media{margin:6px 0}td img{max-height:140px}td math{font-size:1em}ol.circled{list-style:none}.math-scroll{display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle;padding:4px 0}.math-scroll:focus{outline:2px solid #14685e}.math-scroll math{white-space:nowrap}menclose[notation~="longdiv"]{display:inline-block;border-top:1.5px solid currentColor;border-left:1.5px solid currentColor;border-top-left-radius:0.35em;padding:0.05em 0.25em 0.05em 0.2em;margin-left:0.12em}menclose[notation~="updiagonalstrike"]{display:inline-block;background:linear-gradient(135deg,transparent calc(50% - 0.65px),currentColor calc(50% - 0.65px),currentColor calc(50% + 0.65px),transparent calc(50% + 0.65px))}.exercise{border:1px solid #aec4bb;padding:10px 12px;margin:18px 0}.exercise-label,.solution-label{font-size:0.8em;color:#43535a;margin:0 0 8px}.solution-label{font-weight:bold}.exercise .solution{margin-top:14px}</style></head><body><main><nav aria-label="পাঠ নির্বাচন"><a href="../index.html">পাঠসূচি</a> · <a href="../U01-companion.html">সহজ ভাষার সহায়িকা</a> · <a href="../U01-source-faithful.html">উৎস-অনুগত নির্বাচিত পাঠ</a></nav><h1>গুণাত্মক বিপরীত নির্ণয় করো</h1><p class="notice">উৎস-অনুগত উপবিভাগ · m81286-fs-id1390478। সম্পূর্ণ বইয়ের অনুবাদ এখনও চলছে। গাণিতিক চিহ্ন, সংখ্যা ও মূল কাঠামো অক্ষুণ্ণ; প্রযোজ্য ক্ষেত্রে সূত্রের শব্দলেবেল বাংলায় অনূদিত। মূল ছবির ভিতরের ইংরেজি লেবেলের অর্থ বাংলা বিবরণে আছে। স্বাধীন শিক্ষক ও ভাষা-পর্যালোচনা বাকি। অন্য উপবিভাগের উৎস-লিঙ্কে ইন্টারনেট প্রয়োজন।</p><section id="fs-id1390478" class="section"><h2 class="title">গুণাত্মক বিপরীত নির্ণয় করো</h2><p id="fs-id1166761301297" class="para">ভগ্নাংশ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></math>-এর মধ্যে একটি বিশেষ সম্পর্ক আছে। এমনই আর একটি জোড়া হল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mrow><mn>10</mn></mrow><mn>7</mn></mfrac></mrow></math> ও <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>7</mn><mrow><mn>10</mn></mrow></mfrac><mo>.</mo></mrow></math> সম্পর্কটি কি তুমি বুঝতে পারছ? এদের একটির লব ও হর অন্যটির হর ও লবের জায়গায় আছে। প্রত্যেক জোড়ার ভগ্নাংশ দুটিকে গুণ করলে গুণফল হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math></p>
+<div id="fs-id1834573" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>·</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mspace width="1.0em" /><mtext>এবং</mtext><mspace width="1.0em" /><mo>−</mo><mfrac><mrow><mn>10</mn></mrow><mn>7</mn></mfrac><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>7</mn><mrow><mn>10</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math></div><p id="fs-id1597613" class="para">এমন জোড়ার সংখ্যা দুটিকে পরস্পরের গুণাত্মক বিপরীত বলে।</p><aside id="fs-id1361007" class="note">
+<h2 class="title">গুণাত্মক বিপরীত</h2>
+<p id="fs-id1804020" class="para">কোনো অশূন্য ভগ্নাংশের <strong id="term-00007" class="term">গুণাত্মক বিপরীত</strong> হলো তার লব ও হরের স্থান বদলালে পাওয়া ভগ্নাংশ। তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow></math> ভগ্নাংশের গুণাত্মক বিপরীত <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>b</mi><mi>a</mi></mfrac><mo>,</mo></mrow></math> যেখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>b</mi><mo>≠</mo><mn>0</mn><mo>,</mo></mrow></math> অর্থাৎ লব ও হর কোনোটিই শূন্য নয়।</p><p id="fs-id1183695" class="para">একটি অশূন্য সংখ্যা ও তার গুণাত্মক বিপরীতের গুণফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math></p>
+<div id="fs-id1340660" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>·</mo><mfrac><mi>b</mi><mi>a</mi></mfrac><mo>=</mo><mn>1</mn></mrow></math></div>
+</aside>
+<p id="fs-id2299691" class="para">কোনো অশূন্য ভগ্নাংশের গুণাত্মক বিপরীত পেতে তার লব ও হরের স্থান বদলাও। অর্থাৎ, লবের সংখ্যাটিকে হরে এবং হরের সংখ্যাটিকে লবে বসাও।</p><p id="fs-id3262124" class="para">দুটি সংখ্যার গুণফল ধনাত্মক হতে হলে সংখ্যা দুটির চিহ্ন একই হতে হবে। তাই একটি সংখ্যা ও তার গুণাত্মক বিপরীতের চিহ্নও একই হয়।</p><div id="fs-id1474540" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_035_img.jpg" alt="ছবির ইংরেজি লেখার বাংলা পাঠ: লব a ও হর b-এর ভগ্নাংশকে লব b ও হর a-এর ভগ্নাংশ দিয়ে গুণ করলে ধনাত্মক 1 পাওয়া যায়; এখানে a ও b অশূন্য। বাঁ দিকের উদাহরণে 3-কে লব 1, হর 3-এর ভগ্নাংশ দিয়ে গুণ করলে 1 হয়; দুটি সংখ্যাই ধনাত্মক। ডান দিকের উদাহরণে ঋণাত্মক 3-কে ঋণাত্মক চিহ্নযুক্ত লব 1, হর 3-এর ভগ্নাংশ দিয়ে গুণ করলে 1 হয়; দুটি সংখ্যাই ঋণাত্মক।"/><p class="description">ছবির ইংরেজি লেখার বাংলা পাঠ: লব a ও হর b-এর ভগ্নাংশকে লব b ও হর a-এর ভগ্নাংশ দিয়ে গুণ করলে ধনাত্মক 1 পাওয়া যায়; এখানে a ও b অশূন্য। বাঁ দিকের উদাহরণে 3-কে লব 1, হর 3-এর ভগ্নাংশ দিয়ে গুণ করলে 1 হয়; দুটি সংখ্যাই ধনাত্মক। ডান দিকের উদাহরণে ঋণাত্মক 3-কে ঋণাত্মক চিহ্নযুক্ত লব 1, হর 3-এর ভগ্নাংশ দিয়ে গুণ করলে 1 হয়; দুটি সংখ্যাই ঋণাত্মক।</p></div>
+<p id="fs-id2224098" class="para">গুণাত্মক বিপরীত পেতে চিহ্ন একই রাখো এবং ভগ্নাংশের লব ও হরের স্থান বদলাও। শূন্যের কোনো গুণাত্মক বিপরীত নেই। কেন? একটি সংখ্যা ও তার গুণাত্মক বিপরীতের গুণফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math> এমন কোনো সংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi></math> কি আছে, যার জন্য <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mo>·</mo><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mo>?</mo></math> না। তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math>-এর কোনো গুণাত্মক বিপরীত নেই।</p><section id="fs-id1242988" class="example">
+<div id="fs-id1841849" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1841849">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id2691525" class="problem">
+<p id="fs-id1714600" class="para">প্রত্যেকটি সংখ্যার গুণাত্মক বিপরীত নির্ণয় করো। তারপর যাচাই করো যে সংখ্যাটি ও তার গুণাত্মক বিপরীতের গুণফল <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math></p>
+
+<ol id="eip-id1168469776775" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>9</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mn>5</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math></li></ol>
+
+</div>
+<section id="fs-id2150565" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id2270162" class="para">গুণাত্মক বিপরীত পেতে আমরা চিহ্ন একই রাখি এবং ভগ্নাংশের লব ও হরের স্থান বদলাই।</p>
+<table id="eip-374" class="table" aria-label="লব 4 ও হর 9-এর ভগ্নাংশের গুণাত্মক বিপরীত নির্ণয় করা হয়েছে। তারপর সংখ্যা দুটির গুণফল 1 কি না যাচাই করা হয়েছে।"><span class="label"></span>
+<tbody class="tbody">
+  <tr class="row"><td class="entry"><span class="span">ⓐ</span> </td>
+  <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত নির্ণয় করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn></mrow><mrow><mn>4</mn></mrow></mfrac></math>।</td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই:</td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সংখ্যাটি ও তার গুণাত্মক বিপরীত গুণ করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>⋅</mo><mfrac><mrow><mn>9</mn></mrow><mrow><mn>4</mn></mrow></mfrac></math></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">লব দুটিকে গুণ করো এবং হর দুটিকে গুণ করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>36</mn></mrow><mrow><mn>36</mn></mrow></mfrac></math></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">লঘিষ্ঠ আকারে প্রকাশ করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>✓</mo></math></td>
+  </tr>
+</tbody>
+
+
+
+
+
+
+
+</table><table id="eip-37774" class="table" aria-label="ঋণাত্মক চিহ্নযুক্ত লব 1 ও হর 6-এর ভগ্নাংশের গুণাত্মক বিপরীত নির্ণয়, সরলীকরণ ও গুণফল যাচাই।"><span class="label"></span>
+<tbody class="tbody">
+  <tr class="row">
+    <td class="entry"><span class="span">ⓑ</span> </td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>6</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত নির্ণয় করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>6</mn></mrow><mrow><mn>1</mn></mrow></mfrac></math> </td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সরল করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>6</mn></math></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই:</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>6</mn></mrow></mfrac><mo>⋅</mo><mo>(</mo><mo>-</mo><mn>6</mn><mo>)</mo></math></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>✓</mo></math></td>
+  </tr>
+
+</tbody>
+
+
+
+
+
+
+
+
+
+</table><table id="eip-id1170196522976" class="table" aria-label="ঋণাত্মক চিহ্নযুক্ত লব 14 ও হর 5-এর ভগ্নাংশের গুণাত্মক বিপরীত নির্ণয় ও গুণফল যাচাই।"><span class="label"></span>
+<tbody class="tbody">
+  <tr class="row">
+    <td class="entry"><span class="span">ⓒ</span> </td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>5</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত নির্ণয় করো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>14</mn></mrow></mfrac></math> </td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই:</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mrow><mn>14</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>⋅</mo><mo>(</mo><mo>-</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>14</mn></mrow></mfrac><mo>)</mo></math></td>
+  </tr>
+<tr class="row">
+<td class="entry"></td><td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>70</mn></mrow><mrow><mn>70</mn></mrow></mfrac></math></td></tr>
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>✓</mo></math></td>
+  </tr>
+
+</tbody>
+
+
+
+
+
+
+
+
+</table><table id="eip-id1170195508737" class="table" aria-label="7-কে লব 7, হর 1-এর ভগ্নাংশের আকারে লিখে গুণাত্মক বিপরীত নির্ণয় এবং গুণফল যাচাই।"><span class="label"></span>
+<tbody class="tbody">
+  <tr class="row">
+    <td class="entry"><span class="span">ⓓ</span> </td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>-এর গুণাত্মক বিপরীত নির্ণয় করো।</td>
+    <td class="entry"></td>
+  </tr>
+
+<tr class="row">
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>-কে ভগ্নাংশের আকারে লেখো।</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn></mrow><mrow><mn>1</mn></mrow></mfrac></math></td>
+  </tr>
+
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn></mrow><mrow><mn>1</mn></mrow></mfrac></math>-এর গুণাত্মক বিপরীত লেখো।</td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn></mrow><mrow><mn>7</mn></mrow></mfrac></math></td>
+</tr>
+
+
+<tr class="row">
+    <td class="entry">যাচাই:</td>
+    <td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mo>⋅</mo><mo>(</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>7</mn></mrow></mfrac><mo>)</mo></math></td>
+  </tr>
+
+
+<tr class="row">
+<td class="entry"></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>✓</mo></math></td></tr>
+
+</tbody>
+
+
+
+
+
+
+</table></section>
+</div></section>
+<aside id="fs-id1602123" class="note">
+<div id="fs-id2906598" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2906598">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2171218" class="problem">
+<p id="fs-id2175650" class="para">গুণাত্মক বিপরীত নির্ণয় করো:</p>
+<div id="fs-id2676883" class="para"><ol id="eip-id1168469888111" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>7</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>11</mn></mrow><mn>4</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>14</mn></math></li></ol></div></div>
+<section id="fs-id2223955" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id2330674" class="para"><ol id="eip-id1168468629212" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>5</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>−8</mn></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>4</mn><mrow><mn>11</mn></mrow></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>14</mn></mfrac></math></li></ol></div></section>
+</div>
+</aside>
+<aside id="fs-id1160285" class="note">
+<div id="fs-id1918491" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1918491">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id3159114" class="problem">
+<p id="fs-id1512222" class="para">গুণাত্মক বিপরীত নির্ণয় করো:</p>
+<div id="fs-id1355541" class="para"><ol id="eip-id1168468483976" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>7</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mn>1</mn><mrow><mn>12</mn></mrow></mfrac></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mn>9</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>21</mn></math></li></ol></div></div>
+<section id="fs-id2900649" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id2262256" class="para"><ol id="eip-id1168469835155" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>3</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mn>12</mn></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mfrac><mrow><mn>9</mn></mrow><mn>14</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn></mrow><mn>21</mn></mfrac></math></li></ol></div></section>
+</div>
+</aside>
+<p id="fs-id3013805" class="para">আগের একটি অধ্যায়ে আমরা বিপরীত সংখ্যা ও পরম মান নিয়ে কাজ করেছি। <a href="#fs-id1394345">সারণি [fs-id1394345]</a>-এ বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীতের তুলনা দেখানো হয়েছে।</p>
+<table id="fs-id1394345" class="table" aria-label="দুই সারি ও তিন স্তম্ভের ছকে বিপরীত সংখ্যা, পরম মান ও গুণাত্মক বিপরীতের তুলনা। অশূন্য সংখ্যার বিপরীত সংখ্যার চিহ্ন উল্টো হয়; শূন্যের বিপরীত সংখ্যা শূন্য। পরম মান কখনও ঋণাত্মক হয় না। অশূন্য সংখ্যার গুণাত্মক বিপরীতের চিহ্ন একই থাকে এবং ভগ্নাংশের লব ও হরের স্থান বদলায়; শূন্যের গুণাত্মক বিপরীত নেই।">
+<span class="label"></span>
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry">অশূন্য সংখ্যার চিহ্ন উল্টো হয়; শূন্যের বিপরীত সংখ্যা শূন্য</td>
+<td class="entry">কখনও ঋণাত্মক হয় না</td>
+<td class="entry">অশূন্য সংখ্যার চিহ্ন একই থাকে; ভগ্নাংশের লব ও হরের স্থান বদলায়। শূন্যের গুণাত্মক বিপরীত নেই</td>
+</tr>
+</tbody>
+
+</table>
+<section id="fs-id2649269" class="example">
+<div id="fs-id1811476" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1811476">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1741941" class="problem">
+<p id="fs-id1627754" class="para">বাঁ দিকের স্তম্ভে দেওয়া প্রতিটি সংখ্যার জন্য ছকটি পূরণ করো:</p>
+<table id="fs-id1179454" class="table" aria-label="পাঁচ সারি ও চার স্তম্ভের ছক। স্তম্ভের শিরোনাম: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম স্তম্ভে আছে ঋণাত্মক চিহ্নযুক্ত লব 3, হর 8-এর ভগ্নাংশ; লব 1, হর 2; লব 9, হর 5; এবং ঋণাত্মক 5। বাকি ঘরগুলি পূরণ করতে হবে।">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">সংখ্যা</td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−5</mn></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+</tbody>
+
+</table>
+</div>
+<section id="fs-id2431075" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id1932057" class="para">বিপরীত সংখ্যা পেতে অশূন্য সংখ্যার চিহ্ন বদলাও; শূন্যের বিপরীত সংখ্যা শূন্য। পরম মান পেতে ধনাত্মক সংখ্যাকে একই রাখো, কিন্তু ঋণাত্মক সংখ্যার বিপরীত সংখ্যা নাও; শূন্যের পরম মান শূন্য। গুণাত্মক বিপরীত পেতে অশূন্য সংখ্যার চিহ্ন একই রাখো এবং ভগ্নাংশের <strong id="term-00008" class="term">লব ও হরের স্থান বদলাও</strong>।</p>
+<table id="fs-id1722688" class="table" aria-label="পূর্ণ করা ছকে স্তম্ভের ক্রম: সংখ্যা, বিপরীত সংখ্যা, পরম মান, গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 3, হর 8; লব 3, হর 8; লব 3, হর 8; ঋণাত্মক চিহ্নযুক্ত লব 8, হর 3। দ্বিতীয় সারি: লব 1, হর 2; ঋণাত্মক চিহ্নযুক্ত লব 1, হর 2; লব 1, হর 2; 2। তৃতীয় সারি: লব 9, হর 5; ঋণাত্মক চিহ্নযুক্ত লব 9, হর 5; লব 9, হর 5; লব 5, হর 9। চতুর্থ সারি: ঋণাত্মক 5; 5; 5; ঋণাত্মক চিহ্নযুক্ত লব 1, হর 5।">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">সংখ্যা</td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>8</mn><mn>3</mn></mfrac></mrow></math></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>9</mn></mfrac></mrow></math></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−5</mn></mrow></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math></td>
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow></math></td>
+</tr>
+</tbody>
+
+</table>
+</section>
+</div>
+</section>
+<aside id="fs-id2792517" class="note">
+<div id="fs-id1608252" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1608252">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2202608" class="problem">
+<p id="fs-id1236377" class="para">দেওয়া প্রতিটি সংখ্যার জন্য ছকটি পূরণ করো:</p>
+<table id="fs-id2657895" class="table" aria-label="পাঁচ সারি ও চার স্তম্ভের ছক। স্তম্ভের শিরোনাম: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম স্তম্ভে আছে ঋণাত্মক চিহ্নযুক্ত লব 5, হর 8-এর ভগ্নাংশ; লব 1, হর 4; লব 8, হর 3; এবং ঋণাত্মক 8। বাকি ঘরগুলি পূরণ করতে হবে।">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">সংখ্যা</td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>5</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>8</mn><mn>3</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−8</mn></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+</tbody>
+
+</table>
+</div>
+<section id="fs-id2198989" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1167906110243" class="para"><br/><div id="fs-id1167906110247" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_037_img.jpg" alt="উত্তরের ছকে চারটি স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 5, হর 8-এর ভগ্নাংশ; বিপরীত সংখ্যা লব 5, হর 8; পরম মান লব 5, হর 8; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 8, হর 5। দ্বিতীয় সারি: লব 1, হর 4; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 1, হর 4; পরম মান লব 1, হর 4; গুণাত্মক বিপরীত 4। তৃতীয় সারি: লব 8, হর 3; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 8, হর 3; পরম মান লব 8, হর 3; গুণাত্মক বিপরীত লব 3, হর 8। চতুর্থ সারি: ঋণাত্মক 8; বিপরীত সংখ্যা 8; পরম মান 8; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 1, হর 8।"/><p class="description">উত্তরের ছকে চারটি স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 5, হর 8-এর ভগ্নাংশ; বিপরীত সংখ্যা লব 5, হর 8; পরম মান লব 5, হর 8; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 8, হর 5। দ্বিতীয় সারি: লব 1, হর 4; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 1, হর 4; পরম মান লব 1, হর 4; গুণাত্মক বিপরীত 4। তৃতীয় সারি: লব 8, হর 3; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 8, হর 3; পরম মান লব 8, হর 3; গুণাত্মক বিপরীত লব 3, হর 8। চতুর্থ সারি: ঋণাত্মক 8; বিপরীত সংখ্যা 8; পরম মান 8; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 1, হর 8।</p></div></p>
+</section>
+</div>
+</aside>
+<aside id="eip-id1165685648332" class="note">
+<div id="eip-id1165685648336" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#eip-id1165685648336">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="eip-id1165685648339" class="problem">
+<p id="eip-id1165685648364" class="para">দেওয়া প্রতিটি সংখ্যার জন্য ছকটি পূরণ করো:</p>
+<table id="eip-id1165685648367" class="table">
+<span class="label"></span>
+
+
+
+
+
+<thead class="thead">
+<tr class="row">
+<td class="entry">সংখ্যা</td>
+<td class="entry">বিপরীত সংখ্যা</td>
+<td class="entry">পরম মান</td>
+<td class="entry">গুণাত্মক বিপরীত</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>4</mn><mn>7</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>9</mn><mn>4</mn></mfrac></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−1</mn></mrow></math></td>
+<td class="entry"></td>
+<td class="entry"></td>
+<td class="entry"></td>
+</tr>
+</tbody>
+
+</table></div>
+<section id="fs-idm236193504" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-idm236193248" class="para"><br/><div id="fs-idm236192864" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_02_040_img.jpg" alt="উত্তরের ছকে চারটি স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 4, হর 7-এর ভগ্নাংশ; বিপরীত সংখ্যা লব 4, হর 7; পরম মান লব 4, হর 7; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 7, হর 4। দ্বিতীয় সারি: লব 1, হর 8; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 1, হর 8; পরম মান লব 1, হর 8; গুণাত্মক বিপরীত 8। তৃতীয় সারি: লব 9, হর 4; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 9, হর 4; পরম মান লব 9, হর 4; গুণাত্মক বিপরীত লব 4, হর 9। চতুর্থ সারি: ঋণাত্মক 1; বিপরীত সংখ্যা 1; পরম মান 1; গুণাত্মক বিপরীত ঋণাত্মক 1।"/><p class="description">উত্তরের ছকে চারটি স্তম্ভ: সংখ্যা, বিপরীত সংখ্যা, পরম মান এবং গুণাত্মক বিপরীত। প্রথম সারি: ঋণাত্মক চিহ্নযুক্ত লব 4, হর 7-এর ভগ্নাংশ; বিপরীত সংখ্যা লব 4, হর 7; পরম মান লব 4, হর 7; গুণাত্মক বিপরীত ঋণাত্মক চিহ্নযুক্ত লব 7, হর 4। দ্বিতীয় সারি: লব 1, হর 8; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 1, হর 8; পরম মান লব 1, হর 8; গুণাত্মক বিপরীত 8। তৃতীয় সারি: লব 9, হর 4; বিপরীত সংখ্যা ঋণাত্মক চিহ্নযুক্ত লব 9, হর 4; পরম মান লব 9, হর 4; গুণাত্মক বিপরীত লব 4, হর 9। চতুর্থ সারি: ঋণাত্মক 1; বিপরীত সংখ্যা 1; পরম মান 1; গুণাত্মক বিপরীত ঋণাত্মক 1।</p></div></p>
+</section>
+</div></aside></section><footer>OpenStax, Rice University · Prealgebra 2e · Lynn Marecek, MaryAnne Anthony-Smith, Andrea Honeycutt Mathis। <a href="../../provenance/pilot/m81241.source.cnxml">পূর্ণ উৎস-স্বীকৃতি</a> · <a href="../../provenance/A00/repository/LICENSE">CC BY-NC-SA 4.0</a>। অনানুষ্ঠানিক অনুবাদ; মূল প্রকাশকের অনুমোদন দাবি করা হচ্ছে না।</footer></main></body></html>

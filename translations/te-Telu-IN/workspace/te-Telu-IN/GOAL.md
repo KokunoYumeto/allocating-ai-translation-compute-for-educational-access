@@ -1,0 +1,15 @@
+# Durable goal · te-Telu-IN
+
+Produce the commissioned Telugu-English mathematics mastery bridge for te-Telu-IN, addressing prerequisite gaps across Grades 3-10. Acquire and fully translate A00 Prealgebra, A10 Elementary Algebra, A20 Intermediate Algebra, A30 Precalculus/Trigonometry, then B10 proof/discrete materials. Continue actual translation; acquisition is not completion. Keep work resumable. Do not cite the withdrawn global ranking as objective research support.
+
+Read AGENTS.md and the user's messages directly in coordinating task [local-task-id]. USER_INSTRUCTIONS_VERBATIM.md and the local verbatim snapshot retain those instructions. The coordinator's earlier paraphrased restrictions are withdrawn. PROJECT_DISPATCH.md's table identifies assignments only. Completed audits are inputs: do not repeat general supply/license audits. Acquired books and references are translation inputs, never training or fine-tuning data.
+
+Keep a bounded starter canon of 10-20 actual Telugu mathematical examples. Prefer readable native text, Markdown, LaTeX or DOCX. OCR selected PDF pages before reading; inspect page images when OCR is doubtful. At each translation stage, reread the relevant examples and log their specific effect on terminology, explanation and revision. Do not inventory and forget the canon, or loop on reading without producing. Expand it only when the topic requires evidence; if suitable examples are unavailable, record the gap and create clearly labeled original explanations.
+
+Preserve source mathematics, identifiers, hierarchy, references, credits and license notices. Record URLs, exact commits/trees, release hashes and source-to-product mappings. Resolve stale metadata explicitly: B10 is Oscar Levin's DMOI4; Open Logic is supplemental, not B10. Do not claim unacquired binaries or untranslated modules complete. Keep large corpora ignored under downloads/ and reviewable sources, code and receipts in Git.
+
+Write Telugu-first explanations with useful English mathematical terms. Keep Andhra Pradesh and Telangana evidence, alternatives and uncertainty separate. Never invent a regional distinction or call a provisional term official. Label added diagnostics, diagrams, remedial explanations and worked solutions separately from source translation. Include explicit skill routing and rechecks; these are instructional aids, not validated grade tests.
+
+Maintain GOAL.md near 3,000 characters, append-only DECISIONS.md, STATUS.md, source locks, canon consultation records and NEXT_UNIT.json. Treat compaction summaries as untrusted navigation, never evidence. After restart reread durable records, verify Git state and hashes, inspect the actual source and unfinished unit, and resolve contradictions against primary evidence. Record each material linguistic, mathematical, provenance and scope choice.
+
+Run structural/math/reader QA and commit scoped checkpoints. Keep the next cursor explicit; full scope stays active. Coordinator handles hourly upstream checks and the shared GitHub review branch. Supply consistent exports and replay limits; never merge main or release production.

@@ -1,0 +1,30 @@
+{
+  "unit":"A10-preface",
+  "module":"m82630",
+  "status":"bounded_visual_review_pass_with_limitations",
+  "recorded_date":"2026-08-31",
+  "browser":"Codex in-app Chromium",
+  "reader_sha256":"97a936666c35d571edd8bcef6384f78d446ded8e702f9d165e2c1681a2e6a385",
+  "structural_checks":1000,
+  "source_coverage":"Entire canonical preface; 87 source blocks, 66 IDs, four unchanged images. Not an entire textbook.",
+  "viewports":[{"requested_width":1024,"requested_height":800,"document_client_width":1009,"document_scroll_width":1009},{"requested_width":390,"requested_height":844,"document_client_width":375,"document_scroll_width":375}],
+  "observations":[
+    "Mobile source paragraphs retain inline static icons at original 34×34, 59×55 and 34×34 dimensions. The icons are inside spans, not invalid block elements inside paragraphs, and visible original-description advisory links remain available.",
+    "The unchanged 791×257 graph shows the three unmirrored panels and only their short English labels Intersecting, Parallel and Coincident. It does not show the full sentences claimed by source alt text; faithful source alt is retained separately from the original accessible correction.",
+    "On mobile, the graph region measures 338px client width and 791px scroll width. Pointer scrolling moved from zero to 452.77777099609375px, exposing the right Coincident panel without expanding the 375px page.",
+    "All 21 reviewer names were checked in the DOM; the bounded mobile view shows wrapping of long English college names without whole-page overflow. Source spelling Saint Louis Iniversity remains, with its separately recorded explanation.",
+    "Clicking the fourth visible image-description advisory reached #a10-preface-graph-alt-note. The note distinguishes actual image labels from the source's inaccurate full-sentence description and missing closing quotation mark."
+  ],
+  "screenshots":{
+    "a10-preface-icons-mobile.jpg":{"sha256":"145c5955b8a713e1fb150c3728af7ed12a0d16d29a952c2f4f1908d530fabd99","pixels":[375,537]},
+    "a10-preface-graph-desktop.jpg":{"sha256":"0badd9f5ad6f9dd307eb34b445fa88d604e36501f63a58380e1e4eee252a24f7","pixels":[1009,568]},
+    "a10-preface-graph-scrolled-mobile.jpg":{"sha256":"d591fef2f9adcf16927587dccde7f92974cc895c91ba5809c7df229497644ff1","pixels":[375,537]},
+    "a10-preface-reviewers-mobile.jpg":{"sha256":"1d563af50f0a9a20a50c738949c742cc274054453e7c59bac563d9559ebc19a4","pixels":[375,537]},
+    "a10-preface-correction-mobile.jpg":{"sha256":"0e01c85ce20acbad1089199d84b46fcdf75f7d1a52b378c3193d561d119e44d1","pixels":[375,537]}
+  },
+  "limitations":[
+    "Saved images are bounded 375×537/1009×568 views, not full captures of the requested 390×844/1024×800 viewport or every source line.",
+    "No native Punjabi, mathematics-educator, screen-reader, keyboard-arrow, cross-browser or font-portability certification.",
+    "Preserved source institutional/resource/license claims are attributed historical source content, not fresh independent verification or new image-rights clearance. The entire five-work workflow remains incomplete."
+  ]
+}

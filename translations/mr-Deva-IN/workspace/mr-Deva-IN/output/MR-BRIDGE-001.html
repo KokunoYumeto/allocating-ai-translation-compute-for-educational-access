@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="mr-Deva-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>अपूर्णांकांपासून फलनांपर्यंत | Marathi STEM Bridge</title><style>:root { color-scheme: light; --ink:#172b35; --accent:#006b63; --muted:#50656b; }
+* { box-sizing:border-box; }
+body { margin:0; background:#f3f1ea; color:var(--ink); font:19px/1.85 "Nirmala UI","Mangal","Noto Sans Devanagari",sans-serif; }
+article { max-width:940px; padding:54px 64px; margin:32px auto; background:#fff; border-top:8px solid var(--accent); }
+h1 { font-size:2.3rem; line-height:1.5; margin:10px 0 20px; }
+h2 { font-size:1.65rem; border-bottom:2px solid #d9e6e2; padding-bottom:12px; margin-top:40px; }
+h3 { font-size:1.2rem; line-height:1.65; margin-top:28px; }
+h4 { font-size:1rem; color:var(--accent); margin:12px 0; }
+p { margin:14px 0; }
+li { margin:9px 0; }
+a { color:#00675d; text-underline-offset:4px; }
+nav { padding:18px; background:#eaf4ef; border-radius:5px; font-size:1rem; }
+.eyebrow { color:var(--accent); font-size:.9rem; letter-spacing:.03em; }
+.lead { font-size:1.17rem; }
+.math, .equation { font-family:"Cambria Math","Nirmala UI",serif; font-variant-numeric:lining-nums; overflow-wrap:anywhere; }
+.equation { background:#f2f6f5; padding:12px 18px; border-left:3px solid var(--accent); }
+.problem { font-weight:600; }
+.solution { padding-left:18px; border-left:2px solid #dae7e2; }
+.source-label { font:12px/1.55 monospace; color:var(--muted); overflow-wrap:anywhere; }
+aside { background:#fff9e8; border-left:3px solid #d2a746; padding:1px 20px 10px; margin:24px 0; }
+#credits { font-size:.88rem; color:var(--muted); }
+:target { scroll-margin-top:20px; outline:2px solid #d4ac48; outline-offset:5px; }
+@media (max-width:680px) { body { font-size:18px; } article { margin:0; padding:28px 20px; } h1 { font-size:1.9rem; } ol,ul { padding-left:26px; } }
+@media print { body { background:#fff; font-size:11pt; } article { margin:0; border:0; padding:0; max-width:none; } nav { display:none; } h2,h3,h4 { break-after:avoid; } p,li { orphans:3; widows:3; } .source-label { font-size:8pt; } @page { size:A4; margin:18mm; } }
+</style></head><body><article lang="mr-Deva-IN" id="MR-BRIDGE-001">
+  <header>
+    <p class="eyebrow">मराठी STEM सेतू · घटक 001 · परीक्षणासाठी मसुदा</p>
+    <h1>अपूर्णांकांपासून फलनांपर्यंत</h1>
+    <p class="lead">इयत्ता आठवीपासून पुढील गणितासाठी पायाभूत तयारी: अपूर्णांक, रेषीय समीकरणे आणि फलनाचे संकेतलेखन.</p>
+    <p>हा निवडक स्रोतांवर आधारित अनुवादित व अनुकूलित अभ्यासघटक आहे; कोणत्याही संपूर्ण प्रकरणाचा अनुवाद नाही. मूळ उदाहरणांची गणिती चिन्हे व ओळखक्रमांक जतन केले आहेत. निदान प्रश्न, जोडस्पष्टीकरणे आणि शेवटचा सराव या घटकासाठी नव्याने तयार केले आहेत.</p>
+  </header>
+  <nav aria-label="अनुक्रमणिका"><a href="#diagnostic">पूर्वतयारी</a> · <a href="#fractions">अपूर्णांक</a> · <a href="#equations">समीकरणे</a> · <a href="#functions">फलने</a> · <a href="#practice">सराव</a> · <a href="#answers">उत्तरे</a> · <a href="#credits">श्रेय</a></nav>
+  <section id="goals">
+    <h2>या घटकातून काय शिकायचे?</h2>
+    <ul><li>अपूर्णांकांचे रूप बदलताना त्यांचे मूल्य न बदलणे.</li><li>समीकरणाच्या दोन्ही बाजूंवर योग्य क्रिया करून उकल काढणे आणि ती तपासणे.</li><li>संबंधाचे प्रांत व मूल्यसंच शोधणे आणि तो संबंध फलन आहे का हे ठरवणे.</li><li><span class="math">f(a)</span>, <span class="math">g(x + 2)</span> आणि <span class="math">g(x) + g(2)</span> यांतील फरक स्पष्ट करणे.</li><li>प्रत्येक दाव्यासाठी कारण देणे; गरज पडल्यास प्रतिउदाहरण वापरणे.</li></ul>
+    <p>सुचवलेला वेळ: 3 सत्रे, प्रत्येकी 40–50 मिनिटे. कागद-पेन वापरा. सुरुवातीची उत्तरे पाहण्यापूर्वी स्वतः प्रयत्न करा.</p>
+  </section>
+  <section id="diagnostic" data-kind="original">
+    <h2>1 · आधी स्वतःची तयारी तपासा</h2>
+    <p>प्रत्येक प्रश्नात उत्तराबरोबर एक कारण किंवा गणनेची एक पायरी लिहा. गुण हे पुढील सराव निवडण्यासाठी आहेत; विद्यार्थ्याला कायमचा स्तर देण्यासाठी नाहीत.</p>
+    <ol>
+      <li id="D1"><span class="math">3/4 + 1/6</span> काढा. <a href="#S-D1">उत्तर D1</a></li>
+      <li id="D2"><span class="math">(−2/3) ÷ (4/9)</span> काढा. <a href="#S-D2">उत्तर D2</a></li>
+      <li id="D3"><span class="math">3(2x − 1) − 2x</span> ही राशी सोपी करा. <a href="#S-D3">उत्तर D3</a></li>
+      <li id="D4"><span class="math">(x − 1)/3 = 2</span> सोडवा व उकल तपासा. <a href="#S-D4">उत्तर D4</a></li>
+      <li id="D5"><span class="math">R = {(1, 2), (2, 2), (3, 4)}</span> चे प्रांत व मूल्यसंच लिहा. <a href="#S-D5">उत्तर D5</a></li>
+      <li id="D6"><span class="math">f(x) = x² − 2x</span> असेल, तर <span class="math">f(−3)</span> काढा. <a href="#S-D6">उत्तर D6</a></li>
+    </ol>
+    <p>प्रत्येक प्रश्नासाठी: योग्य उत्तराला 1 गुण आणि योग्य कारण/पायरीला 1 गुण; एकूण 12. D1–D2 मध्ये अडचण असल्यास विभाग 2 सावकाश करा. D3–D4 साठी विभाग 3, तर D5–D6 साठी विभाग 4 पुन्हा वाचा. पुढे जाण्यापूर्वी चुकीचा प्रश्न पुन्हा स्वतः सोडवा.</p>
+  </section>
+  <section id="fractions">
+    <h2>2 · अपूर्णांक: मूल्य तेच, रूप वेगळे</h2>
+    <p data-kind="adaptation">अपूर्णांक (fraction) <span class="math">a/b</span> मध्ये <span class="math">a</span> हा अंश (numerator), <span class="math">b</span> हा छेद (denominator), आणि <span class="math">b ≠ 0</span>. अंश व छेद यांना एकाच शून्येतर संख्येने भागल्यास अपूर्णांकाचे मूल्य बदलत नाही. सामाईक <em>अवयव</em> रद्द करता येतात; बेरजेतील एखादे पद तसेच रद्द करता येत नाही.</p>
+    <section id="fs-id1167836620030" data-source="A20:m81359#fs-id1167836620030">
+      <h3>उदाहरण 1 · अपूर्णांक सोपा करा</h3>
+      <p class="problem">सोपा करा: <span class="math">−315/770</span>.</p>
+      <div class="solution"><h4>उकल करण्याची प्रक्रिया</h4><p>315 आणि 770 यांचा महत्तम सामाईक विभाजक 35 आहे. ऋणचिन्ह तसेच ठेवून अंश व छेदाला 35 ने भागू.</p><p class="equation" data-check="reduce">−315/770 = −9/22</p><p>9 आणि 22 यांना 1 व्यतिरिक्त सामाईक धन अवयव नाही. म्हणून हे लघुतम रूप आहे.</p></div>
+    <p class="source-label" lang="en">Source: A20:m81359#fs-id1167836620030</p></section>
+    <section id="fs-id1167836390100" data-source="A20:m81359#fs-id1167836390100">
+      <h3>उदाहरण 2 · अपूर्णांकाचा चल असलेल्या राशीशी गुणाकार</h3>
+      <p class="problem">गुणाकार करा: <span class="math">(−12/5)(−20x)</span>.</p>
+      <div class="solution"><h4>उकल करण्याची प्रक्रिया</h4><p><span class="math">−12/5</span> आणि <span class="math">−20</span> हे दोन्ही संख्यात्मक सहगुणक ऋण आहेत; त्यामुळे <span class="math">x</span> चा सहगुणक धन येतो. <span class="math">20x = 20x/1</span> असे लिहा. 20 मधील 5 हा अवयव छेदातील 5 बरोबर रद्द होतो.</p><p class="equation" data-check="product">(−12/5)(−20x) = 12 · 4x = 48x</p><p>ही समानता प्रत्येक वास्तविक <span class="math">x</span> साठी खरी आहे. पूर्ण राशी <span class="math">48x</span> चे चिन्ह मात्र <span class="math">x</span> च्या चिन्हावर अवलंबून असते.</p></div>
+    <p class="source-label" lang="en">Source: A20:m81359#fs-id1167836390100</p></section>
+    <section id="fs-id1167836356409" data-source="A20:m81359#fs-id1167836356409">
+      <h3>उदाहरण 3 · अपूर्णांकाने भागणे</h3>
+      <p class="problem">भागाकार काढा: <span class="math">(−7/18) ÷ (−14/27)</span>.</p>
+      <div class="solution"><h4>उकल करण्याची प्रक्रिया</h4><p>शून्येतर अपूर्णांकाने भागणे म्हणजे त्याच्या व्यस्ताने (reciprocal) गुणणे. दुसऱ्या अपूर्णांकाचा व्यस्त घ्या; पहिल्याचा नाही.</p><p class="equation" data-check="quotient">(−7/18) ÷ (−14/27) = (−7/18)(−27/14) = 3/4</p><p>ऋणचिन्हांचा गुणाकार धन आहे. <span class="math">7/14 = 1/2</span> आणि <span class="math">27/18 = 3/2</span>; म्हणून उत्तर <span class="math">3/4</span>.</p></div>
+    <p class="source-label" lang="en">Source: A20:m81359#fs-id1167836356409</p></section>
+    <aside data-kind="original"><h3>थांबा आणि कारण सांगा</h3><p><span class="math">3/4 + 1/6 = 4/10</span> हे चुकीचे का? भिन्न छेद असलेले भाग थेट मोजता येत नाहीत. दोन्ही अपूर्णांकांचा छेद 12 केल्यावर <span class="math">9/12 + 2/12 = 11/12</span> मिळते. गुणाकारासाठी सामाईक छेद करावा लागत नाही; बेरजेसाठी मात्र तो आवश्यक असतो.</p></aside>
+  </section>
+  <section id="equations">
+    <h2>3 · राशीपासून समीकरणाकडे</h2>
+    <p data-kind="original">राशी (expression) सोपी करायची असते; समीकरणाची (equation) उकल शोधायची असते. उकल (solution) म्हणजे चलाचे असे मूल्य की ज्यामुळे समीकरण खरे ठरते. समीकरणाच्या दोन्ही बाजूंना तीच संख्या मिळवणे किंवा दोन्ही बाजूंना त्याच शून्येतर संख्येने भागणे या क्रिया समतुल्य समीकरण देतात.</p>
+    <section id="fs-id1167836432956" data-source="A20:m81362#fs-id1167836432956">
+      <h3>उदाहरण 4 · कंस उघडा, मग चल वेगळा करा</h3>
+      <p class="problem">सोडवा: <span class="math">7(n − 3) − 8 = −15</span>.</p>
+      <div class="solution"><h4>उकल करण्याची प्रक्रिया</h4><ol><li>वितरण नियम वापरा: <span class="math">7n − 21 − 8 = −15</span>.</li><li>समान प्रकारची पदे एकत्र करा: <span class="math">7n − 29 = −15</span>.</li><li>दोन्ही बाजूंना 29 मिळवा: <span class="math">7n = 14</span>.</li><li>दोन्ही बाजूंना 7 ने भागा: <span class="math" data-check="linear-n">n = 2</span>.</li></ol><p>तपासणी: <span class="math">7(2 − 3) − 8 = −7 − 8 = −15</span>. मूळ समीकरण खरे ठरते.</p></div>
+    <p class="source-label" lang="en">Source: A20:m81362#fs-id1167836432956</p></section>
+    <section id="fs-id1167836481206" data-source="A20:m81362#fs-id1167836481206">
+      <h3>उदाहरण 5 · अपूर्णांकी सहगुणक</h3>
+      <p class="problem">सोडवा: <span class="math">(2/3)(3m − 6) = 5 − m</span>.</p>
+      <div class="solution"><h4>उकल करण्याची प्रक्रिया</h4><ol><li>वितरण नियम: <span class="math">2m − 4 = 5 − m</span>.</li><li>दोन्ही बाजूंना <span class="math">m</span> मिळवा: <span class="math">3m − 4 = 5</span>.</li><li>दोन्ही बाजूंना 4 मिळवा: <span class="math">3m = 9</span>.</li><li>3 ने भागा: <span class="math" data-check="linear-m">m = 3</span>.</li></ol><p>तपासणी: डावी बाजू <span class="math">(2/3)(9 − 6) = 2</span>; उजवी बाजू <span class="math">5 − 3 = 2</span>. म्हणून उकल योग्य आहे.</p></div>
+    <p class="source-label" lang="en">Source: A20:m81362#fs-id1167836481206</p></section>
+    <aside data-kind="original"><h3>सिद्धतेची सवय</h3><p>“पद पलीकडे नेले” एवढेच न लिहिता दोन्ही बाजूंवर कोणती क्रिया केली ते सांगा. अज्ञात चलाने भागताना तो शून्य असू शकतो का हे तपासा. उदाहरणार्थ, <span class="math">x(x − 1) = 0</span> मध्ये लगेच <span class="math">x</span> ने भागल्यास <span class="math">x = 0</span> ही उकल हरवते. योग्य उकली <span class="math">x = 0</span> किंवा <span class="math">x = 1</span> आहेत.</p></aside>
+  </section>
+  <section id="functions">
+    <h2>4 · संबंध, फलन आणि संकेतलेखन</h2>
+    <section id="fs-id1167833175472" data-source="A20:m81373#fs-id1167833175472"><h3>व्याख्या · संबंध (relation)</h3><p>संबंध म्हणजे क्रमित जोड्यांचा (ordered pairs) कोणताही संच. प्रत्येक जोडी <span class="math">(x, y)</span> या रूपात लिहितात. या जोड्यांतील सर्व <span class="math">x</span>-मूल्यांचा संच म्हणजे प्रांत (domain); सर्व <span class="math">y</span>-मूल्यांचा संच म्हणजे मूल्यसंच (range).</p><p class="source-label" lang="en">Source: A20:m81373#fs-id1167833175472</p></section>
+    <section id="fs-id1167836692527" data-source="A20:m81373#fs-id1167836692527">
+      <h3>उदाहरण 6 · प्रांत व मूल्यसंच</h3>
+      <p class="problem"><span class="math">{(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)}</span> या संबंधाचे (a) प्रांत आणि (b) मूल्यसंच शोधा.</p>
+      <div class="solution"><h4>उकल करण्याची प्रक्रिया</h4><p>(a) प्रत्येक जोडीतील पहिले मूल्य घ्या: <span class="math" data-check="domain">{1, 2, 3, 4, 5}</span>.</p><p>(b) प्रत्येक जोडीतील दुसरे मूल्य घ्या: <span class="math" data-check="range">{1, 4, 9, 16, 25}</span>.</p><p data-kind="original">जोडलेल्या स्पष्टीकरणाची नोंद: येथे फक्त दिलेल्या पाच जोड्या आहेत. हा संबंध पाहून प्रांत सर्व वास्तविक संख्या आहे असे गृहीत धरू नका.</p></div>
+    <p class="source-label" lang="en">Source: A20:m81373#fs-id1167836692527</p></section>
+    <section id="fs-id1165137932580" data-source="A30:m49301#fs-id1165137932580"><h3>व्याख्या · फलन (function)</h3><p>प्रत्येक आदान-मूल्यासाठी नेमके एक प्रदान-मूल्य देणारा संबंध म्हणजे फलन.</p><p class="source-label" lang="en">Source: A30:m49301#fs-id1165137932580</p></section>
+    <p data-kind="original">आदान (input) म्हणजे घेतलेले मूल्य; प्रदान (output) म्हणजे मिळालेले मूल्य. दोन वेगवेगळ्या आदानांना <em>एकच</em> प्रदान मिळू शकते. पण एकाच आदानाला दोन वेगवेगळी प्रदाने मिळाली, तर तो संबंध फलन नाही. मूल्यसंच म्हणजे प्रत्यक्ष मिळणारी प्रदाने; घोषित सहप्रांत (codomain) त्यापेक्षा मोठे असू शकते.</p>
+    <p data-kind="original">उदा., <span class="math">{(1, 2), (2, 2)}</span> हा संबंध फलन आहे. <span class="math">{(1, 2), (1, 3)}</span> फलन नाही, कारण आदान 1 साठी 2 आणि 3 अशी दोन भिन्न प्रदाने आहेत.</p>
+    <p data-kind="adaptation"><span class="math">f(x)</span> वाचताना “<span class="math">x</span> या आदानासाठी <span class="math">f</span> फलनाचे मूल्य” असा अर्थ घ्या. येथे <span class="math">f</span> आणि <span class="math">x</span> यांचा गुणाकार अभिप्रेत नाही. फलनाचे मूल्य काढताना चलाच्या प्रत्येक जागी दिलेले आदान कंसात ठेवा.</p>
+    <section id="fs-id1167836521479" data-source="A20:m81373#fs-id1167836521479">
+      <h3>उदाहरण 7 · संख्या किंवा अक्षर आदान म्हणून</h3>
+      <p class="problem"><span class="math">f(x) = 2x² + 3x − 1</span> या फलनासाठी (a) <span class="math">f(3)</span>, (b) <span class="math">f(−2)</span>, (c) <span class="math">f(a)</span> काढा.</p>
+      <div class="solution"><h4>उकल करण्याची प्रक्रिया</h4><p>(a) <span class="math" data-check="f3">f(3) = 2(3)² + 3(3) − 1 = 18 + 9 − 1 = 26</span>.</p><p>(b) <span class="math" data-check="fminus2">f(−2) = 2(−2)² + 3(−2) − 1 = 8 − 6 − 1 = 1</span>.</p><p>(c) <span class="math" data-check="fa">f(a) = 2a² + 3a − 1</span>.</p><p data-kind="original">जोडस्पष्टीकरण: <span class="math">(−2)² = 4</span>, पण <span class="math">−2² = −4</span>. ऋण आदान ठेवताना कंस गाळू नका.</p></div>
+    <p class="source-label" lang="en">Source: A20:m81373#fs-id1167836521479</p></section>
+    <section id="fs-id1167829859398" data-source="A20:m81373#fs-id1167829859398">
+      <h3>उदाहरण 8 · संकेतलेखनातील महत्त्वाचा फरक</h3>
+      <p class="problem"><span class="math">g(x) = 3x − 5</span> या फलनासाठी (a) <span class="math">g(h²)</span>, (b) <span class="math">g(x + 2)</span>, (c) <span class="math">g(x) + g(2)</span> काढा.</p>
+      <div class="solution"><h4>उकल करण्याची प्रक्रिया</h4><p>(a) <span class="math" data-check="gh2">g(h²) = 3h² − 5</span>.</p><p>(b) संपूर्ण <span class="math">x + 2</span> हे आदान आहे: <span class="math" data-check="gshift">g(x + 2) = 3(x + 2) − 5 = 3x + 1</span>.</p><p>(c) आधी <span class="math">g(2) = 6 − 5 = 1</span> काढा. मग <span class="math" data-check="gsum">g(x) + g(2) = (3x − 5) + 1 = 3x − 4</span>.</p><p>म्हणून या फलनासाठी <span class="math">g(x + 2) ≠ g(x) + g(2)</span>. फलन हे बेरीज “कंसाबाहेर काढणारे” चिन्ह नाही.</p></div>
+    <p class="source-label" lang="en">Source: A20:m81373#fs-id1167829859398</p></section>
+    <aside data-kind="original"><h3>पुढील विषयांशी जोड</h3><p>त्रिकोणमितीत कोन हे आदान आणि साइनसारख्या फलनाचे मूल्य हे प्रदान असते. कलनात आदान बदलल्यावर प्रदान कसे बदलते याचा अभ्यास करू. रेषीय बीजगणितात आदान व प्रदान सदिशही असू शकतात. प्रत्येक ठिकाणी प्रांत आणि “नेमके एक प्रदान” हा अर्थ आधी स्पष्ट करावा लागतो.</p></aside>
+  </section>
+  <section id="practice" data-kind="original">
+    <h2>5 · स्वतंत्र सराव</h2>
+    <ol><li id="P1"><span class="math">5/6 − 1/4</span> काढा. <a href="#S-P1">उत्तर P1</a></li><li id="P2"><span class="math">(3/4)x − 1/2 = 1</span> सोडवा व तपासा. <a href="#S-P2">उत्तर P2</a></li><li id="P3"><span class="math">{(−1, 1), (0, 0), (1, 1)}</span> चे प्रांत व मूल्यसंच लिहा. हा संबंध फलन आहे का? <a href="#S-P3">उत्तर P3</a></li><li id="P4"><span class="math">f(x) = x² + 1</span> असल्यास <span class="math">f(−2)</span> आणि <span class="math">f(a + 1)</span> काढा. <a href="#S-P4">उत्तर P4</a></li><li id="P5">“प्रत्येक फलनासाठी <span class="math">f(u + v) = f(u) + f(v)</span>” या दाव्याला <span class="math">f(x) = x²</span> वापरून प्रतिउदाहरण द्या. <a href="#S-P5">उत्तर P5</a></li><li id="P6"><span class="math">(x + 2)/x = 3</span> सोडवा. निषिद्ध मूल्य आधी लिहा. <a href="#S-P6">उत्तर P6</a></li></ol>
+  </section>
+  <section id="answers" data-kind="original">
+    <h2>6 · पूर्ण उत्तरे व कारणे</h2>
+    <h3>पूर्वतयारीची उत्तरे</h3>
+    <p id="S-D1"><a href="#D1">D1</a> · छेदांचा लसावि 12. <span class="math" data-check="d1">3/4 + 1/6 = 9/12 + 2/12 = 11/12</span>.</p>
+    <p id="S-D2"><a href="#D2">D2</a> · दुसऱ्या अपूर्णांकाचा व्यस्त घ्या: <span class="math" data-check="d2">(−2/3)(9/4) = −18/12 = −3/2</span>.</p>
+    <p id="S-D3"><a href="#D3">D3</a> · वितरण नियम व समान पदांची बेरीज: <span class="math" data-check="d3">6x − 3 − 2x = 4x − 3</span>.</p>
+    <p id="S-D4"><a href="#D4">D4</a> · दोन्ही बाजूंना 3 ने गुणा: <span class="math">x − 1 = 6</span>, म्हणून <span class="math" data-check="d4">x = 7</span>. तपासणी: <span class="math">(7 − 1)/3 = 2</span>.</p>
+    <p id="S-D5"><a href="#D5">D5</a> · पहिल्या मूल्यांचा संच <span class="math">{1, 2, 3}</span>; दुसऱ्या मूल्यांचा संच <span class="math">{2, 4}</span>. संचात 2 पुन्हा लिहायची गरज नाही.</p>
+    <p id="S-D6"><a href="#D6">D6</a> · कंसासह प्रतिस्थापन: <span class="math" data-check="d6">f(−3) = (−3)² − 2(−3) = 9 + 6 = 15</span>.</p>
+    <h3>सरावाची उत्तरे</h3>
+    <p id="S-P1"><a href="#P1">P1</a> · <span class="math" data-check="p1">5/6 − 1/4 = 10/12 − 3/12 = 7/12</span>.</p>
+    <p id="S-P2"><a href="#P2">P2</a> · दोन्ही बाजूंना 4 ने गुणल्यावर <span class="math">3x − 2 = 4</span>, मग <span class="math">3x = 6</span> आणि <span class="math" data-check="p2">x = 2</span>. तपासणी: <span class="math">(3/4) · 2 − 1/2 = 1</span>.</p>
+    <p id="S-P3"><a href="#P3">P3</a> · प्रांत <span class="math">{−1, 0, 1}</span>, मूल्यसंच <span class="math">{0, 1}</span>. हा संबंध फलन आहे: प्रत्येक आदानाला एकच प्रदान आहे. −1 आणि 1 यांना समान प्रदान 1 मिळणे मान्य आहे.</p>
+    <p id="S-P4"><a href="#P4">P4</a> · <span class="math" data-check="p4a">f(−2) = (−2)² + 1 = 5</span>. तसेच <span class="math" data-check="p4b">f(a + 1) = (a + 1)² + 1 = a² + 2a + 2</span>.</p>
+    <p id="S-P5"><a href="#P5">P5</a> · <span class="math">u = 1</span>, <span class="math">v = 1</span> घ्या. डावी बाजू <span class="math">f(2) = 4</span>; उजवी बाजू <span class="math">f(1) + f(1) = 2</span>. <span class="math">4 ≠ 2</span>, म्हणून सार्वत्रिक दावा खोटा. एक प्रतिउदाहरण पुरेसे आहे; काही यशस्वी उदाहरणे मात्र सार्वत्रिक सिद्धता होत नाहीत.</p>
+    <p id="S-P6"><a href="#P6">P6</a> · छेदामुळे <span class="math">x ≠ 0</span>. या अटीवर दोन्ही बाजूंना <span class="math">x</span> ने गुणल्यास <span class="math">x + 2 = 3x</span>; म्हणून <span class="math" data-check="p6">x = 1</span>. हे निषिद्ध मूल्य नाही. तपासणी: <span class="math">(1 + 2)/1 = 3</span>.</p>
+  </section>
+  <section id="exit">
+    <h2>पुढे जाण्याची खूण</h2>
+    <p>तुम्ही अपूर्णांकाच्या प्रत्येक क्रियेचे कारण सांगू शकता, उकल मूळ समीकरणात तपासू शकता आणि “एक आदान, नेमके एक प्रदान” ही अट लावू शकता का? तसे असल्यास पुढील घटकात सूत्रावरून प्रांत, अंतरालाचे संकेतलेखन आणि आलेख वाचणे शिकू. अडचण असल्यास संबंधित सोडवलेले उदाहरण झाकून पुन्हा सोडवा.</p>
+  </section>
+  <section id="credits">
+    <h2>स्रोत, श्रेय आणि मर्यादा</h2>
+    <p>OpenStax, <cite>Intermediate Algebra 2e</cite>: Lynn Marecek आणि Andrea Honeycutt Mathis; मूळ मालिकेच्या पायाभरणीसाठी Lynn Marecek आणि MaryAnne Anthony-Smith यांचे श्रेय कायम. निवडक मॉड्यूल: m81359, m81362, m81373. OpenStax, <cite>Precalculus 2e</cite>: Jay Abramson आणि मूळ मानवी योगदानकर्ते; निवडक व्याख्या: m49301. प्रकाशक: OpenStax, Rice University. पूर्ण मूळ श्रेय व घटक-हक्कांच्या सूचना सोबतच्या provenance/notices मध्ये जतन आहेत.</p>
+    <p>अनुवाद, संक्षिप्त जोडस्पष्टीकरणे, नव्याने तयार केलेले निदान/सराव आणि तांत्रिक मांडणी: वापरकर्त्याच्या सूचनेवर Codex-सहाय्यित मराठी कार्यप्रवाह. ही प्रक्रिया-विषयक नोंद आहे; मूळ मानवी लेखकांचे श्रेय बदलत नाही. हे OpenStax, Rice University किंवा मूळ लेखकांनी मान्य केलेले अधिकृत संस्करण नाही.</p>
+    <p>या निवडक मजकुराचा व त्याच्या मराठी अनुकूलनाचा परवाना <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. तृतीय-पक्ष घटकांच्या स्वतंत्र सूचना कायम लागू आहेत. या घटकात मूळ चित्रे किंवा लोगो वापरलेले नाहीत. हा मसुदा मातृभाषिक शिक्षकाने तपासलेला असल्याचा दावा नाही. पारिभाषिक शब्दांची नोंद terminology.csv मध्ये आहे.</p>
+  </section>
+</article></body></html>

@@ -1,0 +1,2073 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:ns1="http://cnx.rice.edu/mdml" xml:lang="bn-Beng-IN">
+
+<title>আলাদা হরযুক্ত ভগ্নাংশের যোগ ও বিয়োগ</title>
+<metadata>
+  <ns1:content-id>m81289</ns1:content-id>
+  <ns1:title>আলাদা হরযুক্ত ভগ্নাংশের যোগ ও বিয়োগ</ns1:title>
+  <ns1:abstract><para id="para-00001">এই পাঠের শেষে তুমি পারবে:</para>
+<list id="list-00001">
+<item>লঘিষ্ঠ সাধারণ হর নির্ণয় করতে</item>
+<item>লঘিষ্ঠ সাধারণ হরযুক্ত সমতুল ভগ্নাংশে রূপান্তর করতে</item>
+<item>আলাদা হরযুক্ত ভগ্নাংশ যোগ ও বিয়োগ করতে</item>
+<item>ভগ্নাংশের বিভিন্ন গাণিতিক প্রক্রিয়া চিনতে ও প্রয়োগ করতে</item>
+<item>গাণিতিক প্রক্রিয়ার ক্রম মেনে জটিল ভগ্নাংশ সরল করতে</item>
+<item>চলের মান বসিয়ে ভগ্নাংশযুক্ত রাশির মান নির্ণয় করতে</item>
+</list></ns1:abstract>
+  <ns1:uuid>585a56d9-e90a-42c5-a00b-8d275fddd81a</ns1:uuid>
+</metadata>
+
+<content>
+<note id="fs-id1713426" class="be-prepared">
+<para id="fs-id1509507">শুরু করার আগে এই প্রস্তুতি যাচাইয়ের প্রশ্নটি করো।</para>
+<exercise id="fs-idm211743824">
+<problem id="fs-idm214917376">
+<para id="fs-idm212399824">এই ভগ্নাংশটির সমতুল দুটি ভগ্নাংশ লেখো: <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math><newline /> প্রশ্নটি না পারলে আবার দেখো <link target-id="fs-id1816266" document="m81285" />।</para>
+</problem>
+<solution id="fs-idm214504800">
+<para id="fs-idm209799200"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise></note>
+<note id="fs-id1712426" class="be-prepared">
+<exercise id="fs-idm188713840">
+<problem id="fs-idm198103184">
+<para id="fs-idm184960944">সরল করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math><newline /> প্রশ্নটি না পারলে আবার দেখো <link target-id="fs-id2317911" document="m81287" />।</para>
+</problem>
+<solution id="fs-idm182268624">
+<para id="fs-idm200684592"><m:math><m:mn>2</m:mn></m:math></para>
+</solution>
+</exercise>
+</note>
+<section id="fs-id1833017">
+<title>লঘিষ্ঠ সাধারণ হর নির্ণয় করো</title>
+<para id="fs-id1883782">আগের পাঠে একই হরের ভগ্নাংশ যোগ ও বিয়োগ করার পদ্ধতি দেখানো হয়েছে। কিন্তু ভগ্নাংশগুলির হর আলাদা হলে কীভাবে যোগ ও বিয়োগ করবে?</para>
+<para id="fs-id2650576">আবার মুদ্রার কথা ভাবো। একটি মার্কিন কোয়ার্টার ও একটি ডাইম যোগ করতে পারো কি? মুদ্রা দুটি আছে বলা যায়, কিন্তু তাতে তাদের মোট মূল্য জানা যায় না। মোট মূল্য বার করতে দুটি মুদ্রার মূল্যই একই এককে, অর্থাৎ সেন্টে প্রকাশ করো। একটি কোয়ার্টারের মূল্য <m:math><m:mrow><m:mn>25</m:mn></m:mrow></m:math> সেন্ট এবং একটি ডাইমের মূল্য <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> সেন্ট। তাই মোট মূল্য <m:math><m:mrow><m:mn>35</m:mn></m:mrow></m:math> সেন্ট। দেখো <link target-id="CNX_BMath_Figure_04_05_001" />।</para>
+<figure id="CNX_BMath_Figure_04_05_001"><media id="fs-id2076472" alt="একটি মার্কিন কোয়ার্টার ও একটি ডাইম মুদ্রার মধ্যে যোগচিহ্ন। নীচে তাদের মূল্য: ২৫ সেন্ট যোগ ১০ সেন্ট। তার নীচে মোট ৩৫ সেন্ট লেখা আছে।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_002_img.jpg" />
+</media>
+<caption>একটি কোয়ার্টার ও একটি ডাইমের মোট মূল্য <m:math><m:mrow><m:mn>35</m:mn></m:mrow></m:math> সেন্ট, অর্থাৎ এক মার্কিন ডলারের <m:math><m:mrow><m:mfrac><m:mrow><m:mn>35</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow></m:math> অংশ।</caption></figure><para id="fs-id1989058">একইভাবে, ভিন্ন হরের ভগ্নাংশ যোগ করার আগে সেগুলিকে একই হরের সমতুল ভগ্নাংশে রূপান্তর করতে হয়। মুদ্রার মূল্য সেন্টে প্রকাশ করলে এখানে হর হয় <m:math><m:mrow><m:mn>100</m:mn><m:mo>.</m:mo></m:mrow></m:math> এক মার্কিন ডলারে <m:math><m:mrow><m:mn>100</m:mn></m:mrow></m:math> সেন্ট থাকে। তাই <m:math><m:mrow><m:mn>25</m:mn></m:mrow></m:math> সেন্ট হল এক ডলারের <m:math><m:mrow><m:mfrac><m:mrow><m:mn>25</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow></m:math> অংশ। আবার <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> সেন্টের মূল্য, এক ডলারকে সমগ্র ধরলে, <m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> তাই যোগ করি <m:math><m:mrow><m:mfrac><m:mrow><m:mn>25</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow></m:math>। পাওয়া যায় <m:math><m:mrow><m:mfrac><m:mrow><m:mn>35</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> অর্থাৎ <m:math><m:mrow><m:mn>35</m:mn></m:mrow></m:math> সেন্ট।</para>
+<para id="fs-id2669765">একই হরের ভগ্নাংশের যোগ ও বিয়োগ তুমি অনুশীলন করেছ। এবার দেখো, হর আলাদা হলে কী করতে হবে। মনে রেখো, একটি সাধারণ হর পাওয়া মানেই সবচেয়ে ছোটো সাধারণ হর পাওয়া নয়।</para>
+<para id="fs-id2587210">প্রথমে ভগ্নাংশের পাত দিয়ে মডেল তৈরি করে একই হর খুঁজব। প্রতিটি চিত্রে একই দৈর্ঘ্যের গোটা পাতকে সমগ্র ধরো; তার সমান ভাগ দিয়ে ভগ্নাংশের পাত তৈরি হয়। ভগ্নাংশ দুটি হল <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id2207102">শুরুতে <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> অংশের একটি পাত ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> অংশের একটি পাত নাও। একই মাপের ছোটো পাত দিয়ে <emphasis effect="italics">দুই ক্ষেত্রেই</emphasis> ঠিকমতো মিল চাই: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> অংশের পাত এবং <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> অংশের পাত ঢাকতে হবে, ছোটো পাত না কেটে এবং ফাঁক বা বাড়তি অংশ না রেখে।</para>
+<para id="fs-id1511088">যদি <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> অংশের টুকরো দিয়ে চেষ্টা করি, তবে এমন <m:math><m:mn>2</m:mn></m:math>টি টুকরো মিলে <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> অংশের পাতকে ঠিকমতো ঢাকে। কিন্তু সেগুলি দিয়ে <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> অংশের পাতকে ঠিকমতো ঢাকা যায় না।</para>
+<media id="fs-id872283" alt="বাঁদিকে লব ১, হর ২-এর পাতের নীচে লব ১, হর ৪-এর দুটি পাত; দুটি মিলে উপরের পাতের দৈর্ঘ্য ঠিক মেলে। ডানদিকে লব ১, হর ৩-এর পাতের নীচে লব ১, হর ৪-এর দুটি পাত; দুটি মিলে উপরের পাতের চেয়ে লম্বা। এক চতুর্থাংশের গোটা পাত দিয়ে এক তৃতীয়াংশের দৈর্ঘ্য ঠিক মেলে না।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_003_img.jpg" />
+</media>
+<para id="fs-id729170">যদি <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> অংশের টুকরো দিয়ে চেষ্টা করি, তবে সেগুলি দিয়ে <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> অংশের পাত বা <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> অংশের পাত, কোনোটিকেই ঠিকমতো ঢাকা যায় না।</para>
+<media id="fs-id2264678" alt="বাঁদিকে লব ১, হর ২-এর পাতের নীচে লব ১, হর ৫-এর তিনটি পাত; তিনটি মিলে উপরের পাতের চেয়ে লম্বা। ডানদিকে লব ১, হর ৩-এর পাতের নীচে লব ১, হর ৫-এর দুটি পাত; সেগুলিও উপরের পাতের চেয়ে লম্বা। এক পঞ্চমাংশের গোটা পাত দিয়ে কোনোটির দৈর্ঘ্যই ঠিক মেলে না।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_004_img.jpg" />
+</media>
+<para id="fs-id1885367">যদি <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> অংশের টুকরো দিয়ে চেষ্টা করি, তবে ঠিক <m:math><m:mn>3</m:mn></m:math>টি টুকরো দিয়ে <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> অংশের পাত ঢাকা যায়, আর ঠিক <m:math><m:mn>2</m:mn></m:math>টি টুকরো দিয়ে <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> অংশের পাত ঢাকা যায়।</para>
+<media id="fs-id2760375" alt="বাঁদিকে লব ১, হর ২-এর পাতের নীচে লব ১, হর ৬-এর তিনটি পাত; তিনটি মিলে উপরের পাতের দৈর্ঘ্য ঠিক মেলে। ডানদিকে লব ১, হর ৩-এর পাতের নীচে লব ১, হর ৬-এর দুটি পাত; দুটি মিলে উপরের পাতের দৈর্ঘ্য ঠিক মেলে।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_005_img.jpg" />
+</media>
+<para id="fs-id1269101">যদি <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> অংশের টুকরো দিয়ে চেষ্টা করি, সেগুলি দিয়েও পাত দুটিকে ঠিকমতো ঢাকা যাবে।</para>
+<media id="fs-id1496302" alt="বাঁদিকে লব ১, হর ২-এর পাতের নীচে লব ১, হর ১২-এর ছয়টি পাত; ছয়টি মিলে উপরের পাতের দৈর্ঘ্য ঠিক মেলে। ডানদিকে লব ১, হর ৩-এর পাতের নীচে লব ১, হর ১২-এর চারটি পাত; চারটি মিলে উপরের পাতের দৈর্ঘ্য ঠিক মেলে।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_006_img.jpg" />
+</media>
+
+
+<para id="fs-id2280121">আরও ছোটো পাত, যেমন <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>48</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> দিয়েও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> অংশের পাত এবং <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> অংশের পাত, দুটিকেই ঠিকমতো ঢাকা যাবে।</para>
+<para id="fs-id2052732">লব ১ এমন ভগ্নাংশের একই মাপের গোটা টুকরো দিয়ে পাত দুটিকেই ঠিকমতো ঢাকতে চাই। যে মাপগুলি দিয়ে তা করা যায়, তাদের মধ্যে সবচেয়ে বড়ো টুকরোটির হর হল ভগ্নাংশদুটির <term id="term-00001">লঘিষ্ঠ সাধারণ হর</term>। তাই <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর হল <m:math><m:mn>6</m:mn><m:mo>.</m:mo></m:math></para><para id="fs-id2269375">খেয়াল করো, <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> পাতদুটিকে মেলাতে পারে এমন ছোটো পাতগুলির হরে একটি মিল আছে। হরগুলি <m:math><m:mn>2</m:mn></m:math> এবং <m:math><m:mn>3</m:mn><m:mo>,</m:mo></m:math> দুই সংখ্যারই সাধারণ গুণিতক। এই দুই সংখ্যা হল নিম্নলিখিত ভগ্নাংশদুটির হর: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> হরদুটির লঘিষ্ঠ সাধারণ গুণিতক (ল.সা.গু.) হল <m:math><m:mn>6</m:mn><m:mo>,</m:mo></m:math> তাই <m:math><m:mn>6</m:mn></m:math>-ই নিম্নলিখিত ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para><note id="eip-169" class="manipulative-math">হাতে-কলমে গণিতের ‘লঘিষ্ঠ সাধারণ হর নির্ণয়’ কাজটি করলে লঘিষ্ঠ সাধারণ হর আরও ভালোভাবে বুঝতে পারবে।</note><note id="eip-334"><title>লঘিষ্ঠ সাধারণ হর</title>দুটি ভগ্নাংশের <term id="term-00002">লঘিষ্ঠ সাধারণ হর</term> হল তাদের হরগুলির লঘিষ্ঠ সাধারণ গুণিতক (ল.সা.গু.), অর্থাৎ হরদুটি দিয়ে নিঃশেষে বিভাজ্য সবচেয়ে ছোটো ধনাত্মক পূর্ণসংখ্যা। এখানে হরগুলি ধনাত্মক পূর্ণসংখ্যা।</note><para id="fs-id2828994">দুটি ভগ্নাংশের লঘিষ্ঠ সাধারণ হর নির্ণয় করতে তাদের হরগুলির ল.সা.গু. নির্ণয় করব। আগে দুটি সংখ্যার ল.সা.গু. বার করার যে পদ্ধতি ব্যবহার করেছিলে, এখানেও সেটিই অনুসরণ করো। লঘিষ্ঠ সাধারণ হর বার করতে শুধু ভগ্নাংশগুলির হর ব্যবহার করি, লব নয়।</para>
+<example id="fs-id1858347"><exercise id="fs-id1800633"><problem id="fs-id2139288">
+<para id="fs-id1470244">নিচের ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর নির্ণয় করো: <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1910766">
+<title>সমাধান</title>
+<table id="eip-id1168467165136" class="unnumbered unstyled" aria-label="১২ ও ১৮-এর ল.সা.গু. থেকে লঘিষ্ঠ সাধারণ হর নির্ণয়। প্রথম সারির গুণনীয়ক-বৃক্ষে ১২ ভেঙে ৩ ও ৪, তারপর ৪ ভেঙে ২ ও ২; ১৮ ভেঙে ৩ ও ৬, তারপর ৬ ভেঙে ২ ও ৩। মৌলিক গুণনীয়কগুলি বৃত্ত দিয়ে ঘেরা। দ্বিতীয় সারিতে ১২ সমান ২ গুণ ২ গুণ ৩ এবং ১৮ সমান ২ গুণ ৩ গুণ ৩, মিল থাকা একটি করে ২ ও ৩ একই স্তম্ভে। তৃতীয় সারিতে প্রত্যেক স্তম্ভ থেকে একটি করে গুণনীয়ক নামিয়ে ল.সা.গু. সমান ২ গুণ ২ গুণ ৩ গুণ ৩। চতুর্থ সারিতে ল.সা.গু. সমান ৩৬। শেষ সারিতে সিদ্ধান্ত: লব ৭, হর ১২-এর ভগ্নাংশ এবং লব ৫, হর ১৮-এর ভগ্নাংশের লঘিষ্ঠ সাধারণ হর ৩৬।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry>প্রতিটি হরকে মৌলিক গুণনীয়কে বিশ্লেষণ করো।</entry>
+   <entry><media id="eip-id1168468743774" alt="দুটি গুণনীয়ক-বৃক্ষ। প্রথমটিতে ১২ ভেঙে ৩ ও ৪, তারপর ৪ ভেঙে ২ ও ২ দেখানো হয়েছে। মৌলিক গুণনীয়ক ৩, ২ ও ২ বৃত্ত দিয়ে ঘেরা। দ্বিতীয়টিতে ১৮ ভেঙে ৩ ও ৬, তারপর ৬ ভেঙে ২ ও ৩ দেখানো হয়েছে। মৌলিক গুণনীয়ক ৩, ২ ও ৩ বৃত্ত দিয়ে ঘেরা।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_025_img-01.png" /></media></entry>
+ </row>
+ <row>
+   <entry>১২ ও ১৮-এর মৌলিক গুণনীয়কগুলি দুটি সারিতে লেখো। যতটা সম্ভব একই গুণনীয়কের একটি করে জোড়া একই স্তম্ভে রাখো। বারবার আসা গুণনীয়ক বাদ দিও না; জোড়া না পাওয়া গুণনীয়কগুলির জন্য আলাদা স্তম্ভ রাখো।</entry>
+   <entry><media id="eip-id1168468412977" alt="দুটি সারিতে লেখা: ১২ সমান ২ গুণ ২ গুণ ৩; ১৮ সমান ২ গুণ ৩ গুণ ৩। দুই সারির একটি করে ২ একই স্তম্ভে, একটি করে ৩ একই স্তম্ভে। বাকি ২ ও ৩ আলাদা স্তম্ভে আছে। এটি দুটি সারির বিন্যাস, ভাগের ভগ্নাংশ নয়।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_025_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>প্রত্যেক স্তম্ভ থেকে একটি করে গুণনীয়ক নীচে নামাও।</entry>
+   <entry><media id="eip-id1168469891757" alt="উপরের সারিতে ১২ সমান ২ গুণ ২ গুণ ৩; পরের সারিতে ১৮ সমান ২ গুণ ৩ গুণ ৩। চারটি স্তম্ভের প্রতিটি থেকে একটি করে গুণনীয়ক তিরচিহ্ন দিয়ে নীচে নামানো হয়েছে। নীচে লেখা ল.সা.গু. সমান ২ গুণ ২ গুণ ৩ গুণ ৩। ছবির ইংরেজি এলসিএম সংক্ষিপ্ত রূপটি লঘিষ্ঠ সাধারণ গুণিতক বোঝায়।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_025_img-03.png" /></media></entry>
+ </row>
+<row>
+   <entry>গুণনীয়কগুলি গুণ করো। গুণফলই ল.সা.গু.।</entry>
+   <entry>ল.সা.গু. <m:math><m:mo>=</m:mo><m:mn>36</m:mn></m:math></entry>
+</row>
+<row>
+    <entry>১২ ও ১৮-এর ল.সা.গু. হল ৩৬। তাই <m:math><m:mfrac><m:mn>7</m:mn><m:mn>12</m:mn></m:mfrac></m:math> ও <m:math><m:mfrac><m:mn>5</m:mn><m:mn>18</m:mn></m:mfrac></m:math> ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর হল ৩৬।</entry>
+    <entry>নিচের ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর ৩৬: <m:math><m:mfrac><m:mn>7</m:mn><m:mn>12</m:mn></m:mfrac></m:math> ও <m:math><m:mfrac><m:mn>5</m:mn><m:mn>18</m:mn></m:mfrac></m:math>।</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id1566083" class="try">
+<exercise id="fs-id1377306">
+<problem id="fs-id1534845">
+<para id="fs-id1321274">নিচের ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর নির্ণয় করো: <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2310707">
+<para id="fs-id2133793">60</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1988591" class="try">
+<exercise id="fs-id2283824">
+<problem id="fs-id2399028">
+<para id="fs-id2356400">নিচের ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর নির্ণয় করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mn>5</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2583269">
+<para id="fs-id3398621">15</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id2261326">দুটি ভগ্নাংশের লঘিষ্ঠ সাধারণ হর বার করতে তাদের হরগুলির ল.সা.গু. নির্ণয় করো। লক্ষ করো, নীচের ধাপগুলি ল.সা.গু. নির্ণয়ের ধাপগুলির মতোই।</para>
+<note id="fs-id2263834" class="howto"><title>দুটি ভগ্নাংশের লঘিষ্ঠ সাধারণ হর নির্ণয় করো।</title><list id="eip-id1168469505824" list-type="enumerated" number-style="arabic" class="stepwise"><item>প্রতিটি হরকে মৌলিক গুণনীয়কে বিশ্লেষণ করো।</item>
+<item>মৌলিক গুণনীয়কগুলি দুটি সারিতে লেখো। যতটা সম্ভব একই গুণনীয়কের একটি করে জোড়া একই স্তম্ভে রাখো। বারবার আসা গুণনীয়ক বাদ দিও না; জোড়া না পাওয়া গুণনীয়কগুলির জন্য আলাদা স্তম্ভ রাখো।</item>
+<item>প্রত্যেক স্তম্ভ থেকে একটি করে গুণনীয়ক নীচে নামাও।</item>
+<item>গুণনীয়কগুলি গুণ করো। গুণফলই হরগুলির ল.সা.গু.।</item>
+<item>হরগুলির ল.সা.গু.-ই ভগ্নাংশগুলির লঘিষ্ঠ সাধারণ হর।</item></list></note><example id="fs-id1481942">
+<exercise id="fs-id1790344">
+<problem id="fs-id2273331">
+<para id="fs-id1773570">নিচের ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর নির্ণয় করো: <m:math><m:mrow><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1602350">
+<title>সমাধান</title>
+<para id="fs-id2427618">লঘিষ্ঠ সাধারণ হর বার করতে হরগুলির ল.সা.গু. নির্ণয় করি।</para>
+<para id="fs-id2196399">ল.সা.গু. নির্ণয় করো: <m:math><m:mrow><m:mn>15</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>24</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167906426767"><media id="fs-id2296558" alt="প্রথম সারিতে ১৫ সমান ৩ গুণ ৫। পরের সারিতে ২৪ সমান ২ গুণ ২ গুণ ২ গুণ ৩। দুই সারির ৩ একই স্তম্ভে আছে। রেখার নীচে লঘিষ্ঠ সাধারণ হর সমান ২ গুণ ২ গুণ ২ গুণ ৩ গুণ ৫, তারপর লঘিষ্ঠ সাধারণ হর সমান ১২০ লেখা। ছবির ইংরেজি এলসিডি সংক্ষিপ্ত রূপটি লঘিষ্ঠ সাধারণ হর বোঝায়; ১২০ হল হর ১৫ ও ২৪-এর ল.সা.গু.-ও।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_016_img-01.png" />
+</media></para><para id="fs-id1836278">ল.সা.গু. নির্ণয় করলে <m:math><m:mrow><m:mn>15</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>24</m:mn></m:mrow></m:math>-এর জন্য পাওয়া যায় <m:math><m:mrow><m:mn>120</m:mn><m:mo>.</m:mo></m:mrow></m:math> তাই <m:math><m:mrow><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর হল <m:math><m:mrow><m:mn>120</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id2265364" class="try">
+<exercise id="fs-id1944377">
+<problem id="fs-id2692103">
+<para id="fs-id3231419">নিচের ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর নির্ণয় করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1318626">
+<para id="fs-id2587563">96</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1891509" class="try">
+<exercise id="fs-id2637012">
+<problem id="fs-id2241352">
+<para id="fs-id2173739">নিচের ভগ্নাংশদুটির লঘিষ্ঠ সাধারণ হর নির্ণয় করো: <m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>28</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>21</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3219758">
+<para id="fs-id1568295">224</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1920865"><title>লঘিষ্ঠ সাধারণ হরযুক্ত সমতুল ভগ্নাংশে রূপান্তর</title><para id="fs-id1612378">আগে ভগ্নাংশের মডেলে টুকরো সাজিয়ে দেখেছি, <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math>-এর লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mn>12</m:mn><m:mo>.</m:mo></m:mrow></m:math> একই গোটা বস্তুর <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> অংশের তিনটি টুকরো মিলে ঠিক ঢেকে দেয় <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> অংশের টুকরোকে। আবার <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> অংশের দুটি টুকরো দিয়ে ঠিক ঢাকা যায় গোটা বস্তুর এই অংশটিকে: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> তাই </para>
+<equation id="eip-543" class="unnumbered"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow><m:mtext> এবং </m:mtext><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><media id="fs-id2300486" alt="বাঁ দিকে এক-চতুর্থাংশ লেখা একটি আয়তাকার টুকরো। তার ঠিক নীচে সমান মোট দৈর্ঘ্য জুড়ে তিনটি এক-দ্বাদশাংশের টুকরো। ডান দিকে এক-ষষ্ঠাংশ লেখা একটি টুকরোর নীচে সমান মোট দৈর্ঘ্য জুড়ে দুটি এক-দ্বাদশাংশের টুকরো। তাই এক-চতুর্থাংশের সমান তিন-দ্বাদশাংশ এবং এক-ষষ্ঠাংশের সমান দুই-দ্বাদশাংশ।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_026_img.jpg" />
+</media>
+<para id="fs-id1833979">আমরা বলি, <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> সমতুল ভগ্নাংশ; একইভাবে <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> সমতুল ভগ্নাংশ।</para>
+<para id="fs-id2432332">সমতুল ভগ্নাংশের ধর্ম ব্যবহার করে আমরা বীজগাণিতিক পদ্ধতিতে একটি ভগ্নাংশকে তার সমতুল ভগ্নাংশে রূপান্তর করতে পারি। মনে রাখো, দুটি ভগ্নাংশের মান একই হলে তারা সমতুল। সুবিধার জন্য সমতুল ভগ্নাংশের ধর্মটি আবার দেওয়া হলো।</para><note id="fs-id2154719">
+<title>সমতুল ভগ্নাংশের ধর্ম</title>
+<para id="fs-id1462486">যদি <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> অঋণাত্মক পূর্ণসংখ্যা হয়, যেখানে <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> তবে</para>
+<equation id="fs-id1171105206877" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac><m:mspace width="1.0em" /><m:mtext> এবং </m:mtext><m:mspace width="1.0em" /><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math></equation></note>
+<para id="fs-id3006477">ভিন্ন হরযুক্ত ভগ্নাংশ যোগ বা বিয়োগ করতে প্রথমে প্রতিটি ভগ্নাংশকে লঘিষ্ঠ সাধারণ হরযুক্ত একটি <term class="no-emphasis" id="term-00003">সমতুল</term> ভগ্নাংশে রূপান্তর করতে হবে। এবার মডেল ব্যবহার না করে <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> ভগ্নাংশ দুটিকে সমতুল ভগ্নাংশে রূপান্তর করি, যাদের হর হবে <m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math>।</para>
+<example id="fs-id1744424"><exercise id="fs-id2590373">
+<problem id="fs-id2719084">
+<para id="fs-id2775051"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> ভগ্নাংশ দুটিকে এমন সমতুল ভগ্নাংশে রূপান্তর করো, যাদের হর হবে <m:math><m:mrow><m:mn>12</m:mn><m:mo>,</m:mo></m:mrow></m:math> অর্থাৎ ভগ্নাংশ দুটির লঘিষ্ঠ সাধারণ হর।</para>
+</problem>
+<solution id="fs-id1512026">
+<title>সমাধান</title>
+<table id="eip-id1168467209573" class="unnumbered unstyled" aria-label="এক-চতুর্থাংশ ও এক-ষষ্ঠাংশের লঘিষ্ঠ সাধারণ হর 12। প্রথমে 4-কে 3 দিয়ে এবং 6-কে 2 দিয়ে গুণ করলে 12 পাওয়া যায়। 3 ও 2 লাল রঙে দেখানো। এরপর এক-চতুর্থাংশের লব ও হরকে 3 দিয়ে গুণ করে 1 গুণ 3 লব এবং 4 গুণ 3 হর লেখা হয়েছে। এক-ষষ্ঠাংশের লব ও হরকে 2 দিয়ে গুণ করে 1 গুণ 2 লব এবং 6 গুণ 2 হর লেখা হয়েছে। শেষে পাওয়া সমতুল ভগ্নাংশ দুটি হলো 3/12 ও 2/12। একই হর 12 বজায় রাখা হয়েছে।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নির্ণয় করো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math>-এর লঘিষ্ঠ সাধারণ হর 12।</entry>
+ </row>
+ <row>
+   <entry>4-কে কত দিয়ে গুণ করলে 12 হয়, তা নির্ণয় করো।</entry>
+   <entry><media id="eip-id1168466118450" alt="4 গুণ 3 সমান 12। গুণক 3 লাল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_027_img-01.png" /></media></entry>
+ </row>
+ <row>
+   <entry>6-কে কত দিয়ে গুণ করলে 12 হয়, তা নির্ণয় করো।</entry>
+   <entry><media id="eip-id1168469455877" alt="6 গুণ 2 সমান 12। গুণক 2 লাল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_027_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>সমতুল ভগ্নাংশের ধর্ম ব্যবহার করে প্রতিটি ভগ্নাংশকে লঘিষ্ঠ সাধারণ হরযুক্ত সমতুল ভগ্নাংশে রূপান্তর করো। প্রত্যেক ভগ্নাংশের লব ও হরকে একই সংখ্যা দিয়ে গুণ করো।</entry>
+   <entry><media id="eip-id1168466096938" alt="বাঁ দিকে 1/4-এর নীচে লবে 1 গুণ 3 এবং হরে 4 গুণ 3 লেখা। ডান দিকে 1/6-এর নীচে লবে 1 গুণ 2 এবং হরে 6 গুণ 2 লেখা। একই ভগ্নাংশের লব ও হর একই গুণক দিয়ে গুণ করা হয়েছে; গুণকগুলি লাল রঙে।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_027_img-03.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লব ও হরের গুণগুলি হিসাব করো।</entry>
+   <entry><media id="eip-id1168468629691" alt="বাঁ দিকের ভগ্নাংশের লব ৩, হর ১২; ডান দিকের ভগ্নাংশের লব ২, হর ১২। দুটি ভগ্নাংশের হরই ১২।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_027_img-04.png" /></media></entry>
+ </row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id2829004">পাওয়া ভগ্নাংশগুলিকে আবার লঘিষ্ঠ আকারে নিয়ে যাবে না। তা করলে আমরা মূল ভগ্নাংশগুলিতেই ফিরে যাব, আর একই হর থাকবে না। এখানে লব ও হরের গুণগুলি হিসাব করে লঘিষ্ঠ সাধারণ হরটি বজায় রাখাই উদ্দেশ্য।</para>
+</solution>
+</exercise>
+</example><note id="fs-id2948402" class="try">
+<exercise id="fs-id2778298">
+<problem id="fs-id1462699">
+<para id="fs-id1534696">লঘিষ্ঠ সাধারণ হরযুক্ত সমতুল ভগ্নাংশে রূপান্তর করো:</para>
+<para id="fs-id2454114"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mo>=</m:mo><m:mrow><m:mn>12</m:mn></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2452812">
+<para id="fs-id2464200"><m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id2388743" class="try">
+<exercise id="fs-id1972960">
+<problem id="fs-id2138536">
+<para id="fs-id1596416">লঘিষ্ঠ সাধারণ হরযুক্ত সমতুল ভগ্নাংশে রূপান্তর করো:</para>
+<para id="fs-id2730090"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mo>=</m:mo><m:mrow><m:mn>60</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2340211">
+<para id="fs-id2248728"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>35</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>44</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1383519" class="howto"><title>লঘিষ্ঠ সাধারণ হরকে একই হর হিসেবে নিয়ে দুটি ভগ্নাংশকে সমতুল ভগ্নাংশে রূপান্তর করো।</title><list id="eip-id1168468227692" list-type="enumerated" number-style="arabic" class="stepwise"><item>লঘিষ্ঠ সাধারণ হর নির্ণয় করো।</item>
+<item>প্রতিটি ভগ্নাংশের হরকে কত দিয়ে গুণ করলে লঘিষ্ঠ সাধারণ হর পাওয়া যাবে, তা নির্ণয় করো।</item>
+<item>সমতুল ভগ্নাংশের ধর্ম ব্যবহার করে লব ও হর—দুটিকেই দ্বিতীয় ধাপে পাওয়া সংখ্যা দিয়ে গুণ করো।</item>
+<item>লব ও হরের গুণগুলি হিসাব করো; হর হিসেবে লঘিষ্ঠ সাধারণ হরটি রেখে দাও।</item></list></note><example id="fs-id1987883"><exercise id="fs-id1209196">
+<problem id="fs-id1346383">
+<para id="fs-id2924698"><m:math><m:mrow><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ভগ্নাংশ দুটিকে এমন সমতুল ভগ্নাংশে রূপান্তর করো, যাদের হর হবে <m:math><m:mrow><m:mn>120</m:mn><m:mo>,</m:mo></m:mrow></m:math> অর্থাৎ ভগ্নাংশ দুটির লঘিষ্ঠ সাধারণ হর।</para>
+</problem>
+<solution id="fs-id2265944">
+<title>সমাধান</title>
+
+<table id="eip-id1168466215186" class="unnumbered unstyled" aria-label="লঘিষ্ঠ সাধারণ হর 120 দেওয়া আছে, তাই দ্বিতীয় ধাপ থেকে শুরু। 15-কে 8 দিয়ে এবং 24-কে 5 দিয়ে গুণ করলে 120 পাওয়া যায়। 8 ও 5 লাল রঙে দেখানো। 8/15-এর লব ও হরকে 8 দিয়ে গুণ করে লবে 8 গুণ 8 এবং হরে 15 গুণ 8 লেখা হয়েছে। 11/24-এর লব ও হরকে 5 দিয়ে গুণ করে লবে 11 গুণ 5 এবং হরে 24 গুণ 5 লেখা হয়েছে। শেষে সমতুল ভগ্নাংশ দুটি 64/120 ও 55/120; একই হর 120 বজায় রাখা হয়েছে।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry>লঘিষ্ঠ সাধারণ হর 120 দেওয়া আছে। আমরা দ্বিতীয় ধাপ থেকে শুরু করব।</entry>
+ </row>
+ <row>
+   <entry>15-কে কত দিয়ে গুণ করলে 120 হয়, তা নির্ণয় করো।</entry>
+   <entry><media id="eip-id1168466119565" alt="15 গুণ 8 সমান 120। গুণক 8 লাল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_028_img-01.png" /></media></entry>
+ </row>
+ <row>
+   <entry>24-কে কত দিয়ে গুণ করলে 120 হয়, তা নির্ণয় করো।</entry>
+   <entry><media id="eip-id1168466229504" alt="24 গুণ 5 সমান 120। গুণক 5 লাল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_028_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>সমতুল ভগ্নাংশের ধর্ম ব্যবহার করো।</entry>
+   <entry><media id="eip-id1168466884619" alt="বাঁ দিকে লবে 8 গুণ 8 এবং হরে 15 গুণ 8; ডান দিকে লবে 11 গুণ 5 এবং হরে 24 গুণ 5। প্রথম ভগ্নাংশের একই গুণক 8 এবং দ্বিতীয় ভগ্নাংশের একই গুণক 5 লাল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_028_img-03.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লব ও হরের গুণগুলি হিসাব করো।</entry>
+   <entry><media id="eip-id1168466138250" alt="বাঁ দিকের ভগ্নাংশের লব ৬৪, হর ১২০; ডান দিকের ভগ্নাংশের লব ৫৫, হর ১২০। দুটি ভগ্নাংশের হরই ১২০।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_028_img-04.png" /></media></entry>
+ </row>
+</tbody>
+
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id4349540" class="try">
+<exercise id="fs-id1405429">
+<problem id="fs-id3218190">
+<para id="fs-id2173671">লঘিষ্ঠ সাধারণ হরযুক্ত সমতুল ভগ্নাংশে রূপান্তর করো:</para>
+<para id="fs-id2129976"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mn>96</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id4155624">
+<para id="fs-id1508708"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>52</m:mn></m:mrow><m:mrow><m:mn>96</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>51</m:mn></m:mrow><m:mrow><m:mn>96</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id2151741" class="try">
+<exercise id="fs-id1416124">
+<problem id="fs-id3293032">
+<para id="fs-id1718335">লঘিষ্ঠ সাধারণ হরযুক্ত সমতুল ভগ্নাংশে রূপান্তর করো:</para>
+<para id="fs-id2744689"><m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>28</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ও <m:math><m:mrow><m:mfrac><m:mrow><m:mn>27</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mn>224</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2649667">
+<para id="fs-id1608839"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>72</m:mn></m:mrow><m:mrow><m:mn>224</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>189</m:mn></m:mrow><m:mrow><m:mn>224</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1276143"><title>ভিন্ন হরযুক্ত ভগ্নাংশের যোগ ও বিয়োগ</title><para id="fs-id2369879">দুটি ভগ্নাংশকে একই হরযুক্ত সমতুল ভগ্নাংশে রূপান্তর করার পরে, হর একই রেখে লবগুলি যোগ বা বিয়োগ করলেই ভগ্নাংশ দুটির যোগফল বা বিয়োগফল পাওয়া যায়।</para>
+<note id="fs-id1594414" class="howto"><title>ভিন্ন হরযুক্ত ভগ্নাংশ যোগ বা বিয়োগ করো।</title><list id="eip-id1168468303196" list-type="enumerated" number-style="arabic" class="stepwise"><item>লঘিষ্ঠ সাধারণ হর নির্ণয় করো।</item>
+<item>প্রতিটি ভগ্নাংশকে এমন সমতুল ভগ্নাংশে রূপান্তর করো, যার হর হবে লঘিষ্ঠ সাধারণ হর।</item>
+<item>একই হর রেখে ভগ্নাংশগুলি যোগ বা বিয়োগ করো।</item>
+<item>ফলটি লঘিষ্ঠ আকারে লেখো।</item></list></note><example id="fs-id2376018"><exercise id="fs-id2579343">
+<problem id="fs-id808259">
+<para id="fs-id1357286">যোগ করো: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2757148">
+<title>সমাধান</title>
+
+
+<table id="eip-id1168466144855" class="unnumbered unstyled" aria-label="1/2 ও 1/3 যোগ করার ধাপ। হর 2 ও 3-এর মৌলিক বিশ্লেষণ থেকে লঘিষ্ঠ সাধারণ হর 2 গুণ 3, অর্থাৎ 6। প্রথম ভগ্নাংশের লব ও হরকে 3 দিয়ে এবং দ্বিতীয়টির লব ও হরকে 2 দিয়ে গুণ করা হয়েছে। তারপর 3/6 যোগ 2/6 করে ফল 5/6 পাওয়া গেছে।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry align="center"><m:math><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>2 ও 3-এর ল.সা.গু. নির্ণয় করো; সেটিই লঘিষ্ঠ সাধারণ হর।<newline /><media id="eip-id1168467195192" alt="হরগুলির মৌলিক বিশ্লেষণ: 2 সমান 2; 3 সমান 3। লঘিষ্ঠ সাধারণ হর 2 গুণ 3, অর্থাৎ 6।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_029_img-01.png" /></media></entry>
+   <entry />
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর 6 নিয়ে সমতুল ভগ্নাংশে রূপান্তর করো।</entry>
+   <entry><media id="eip-id1168468757936" alt="প্রথম ভগ্নাংশের লবে 1 গুণ 3 এবং হরে 2 গুণ 3; এর সঙ্গে যোগ করা হয়েছে দ্বিতীয় ভগ্নাংশ, যার লব 1 গুণ 2 এবং হর 3 গুণ 2। নতুন গুণক 3 ও 2 লাল রঙে।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_029_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লব ও হরের গুণগুলি হিসাব করো।</entry>
+   <entry align="center"><m:math><m:mfrac><m:mn>3</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>6</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>যোগ করো।</entry>
+   <entry align="center"><m:math><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:math></entry>
+ </row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="fs-id1598176">মনে রাখো, উত্তরটি আরও সরল করা যায় কি না, তা সব সময় যাচাই করবে। যেহেতু <m:math><m:mn>5</m:mn></m:math> ও <m:math><m:mn>6</m:mn></m:math>-এর 1 ছাড়া আর কোনো সাধারণ গুণনীয়ক নেই, তাই <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> ভগ্নাংশটিকে আর সরল করা যায় না।</para>
+</solution>
+</exercise>
+</example><note id="fs-id1582076" class="try">
+<exercise id="fs-id2751036">
+<problem id="fs-id3219784">
+<para id="fs-id1722631">যোগ করো: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1391214">
+<para id="fs-id2716076"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id2932730" class="try">
+<exercise id="fs-id2637969">
+<problem id="fs-id1517473">
+<para id="fs-id2307579">যোগ করো: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id764828">
+<para id="fs-id2142822"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1457880"><exercise id="fs-id3360192">
+<problem id="fs-id2667703">
+<para id="fs-id2484398">বিয়োগ করো: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1460941">
+<title>সমাধান</title>
+
+
+<table id="eip-id1168466426391" class="unnumbered unstyled" aria-label="1/2 থেকে ঋণাত্মক 1/4 বিয়োগ করার ধাপ। 2 এবং 4 সমান 2 গুণ 2 থেকে লঘিষ্ঠ সাধারণ হর 4। প্রথম ভগ্নাংশের লব ও হরকে 2 দিয়ে গুণ করে পাওয়া যায় 2/4। তারপর 2/4 থেকে ঋণাত্মক 1/4 বিয়োগ করে লবে 2 থেকে ঋণাত্মক 1 বিয়োগ করা হয়েছে; ফল 3/4।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry align="center"><m:math><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mo>(</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>)</m:mo></m:math></entry>
+ </row>
+ <row>
+   <entry>2 ও 4-এর ল.সা.গু. নির্ণয় করো; সেটিই লঘিষ্ঠ সাধারণ হর।<newline /><media id="eip-id1168467313638" alt="হরগুলির মৌলিক বিশ্লেষণ: 2 সমান 2 এবং 4 সমান 2 গুণ 2। লঘিষ্ঠ সাধারণ হর 2 গুণ 2, অর্থাৎ 4।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_030_img-01.png" /></media></entry>
+   <entry />
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর 4 ব্যবহার করে সমতুল ভগ্নাংশে লেখো।</entry>
+   <entry align="center"><media id="eip-id1168466034872" alt="লবে 1 গুণ 2 এবং হরে 2 গুণ 2 লেখা ভগ্নাংশ থেকে বন্ধনীর মধ্যে থাকা ঋণাত্মক 1/4 বিয়োগ করা হয়েছে। প্রথম ভগ্নাংশের নতুন গুণক 2 লাল রঙে।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_030_img-02.png" /></media></entry>
+</row>
+<row>
+  <entry>প্রথম ভগ্নাংশের লব ও হরের গুণগুলি হিসাব করো।</entry>
+  <entry align="center"><m:math><m:mfrac><m:mn>2</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mo>(</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>)</m:mo></m:math></entry>
+</row>
+<row>
+  <entry>বিয়োগ করো।</entry>
+  <entry align="center"><m:math><m:mfrac><m:mrow><m:mn>2</m:mn><m:mspace width="0.2em" /><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mo>(</m:mo><m:mn>−1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>4</m:mn></m:mfrac></m:math></entry>
+</row>
+<row>
+  <entry>সরল করো।</entry>
+  <entry align="center"><m:math><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:math></entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><para id="fs-id3400279">একটি ভগ্নাংশের হর আগে থেকেই লঘিষ্ঠ সাধারণ হরের সমান ছিল। তাই কেবল অন্য ভগ্নাংশটিকেই রূপান্তর করতে হয়েছে।</para>
+</solution>
+</exercise>
+</example><note id="fs-id1377668" class="try">
+<exercise id="fs-id3326333">
+<problem id="fs-id1160307">
+<para id="fs-id1862391">সরল করো: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1804491">
+<para id="fs-id1359130"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1784079" class="try">
+<exercise id="fs-id2362973">
+<problem id="fs-id1727938">
+<para id="fs-id1328210">সরল করো: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2603159">
+<para id="fs-id2662112"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1851766"><exercise id="fs-id1931320">
+<problem id="fs-id1714211">
+<para id="fs-id1574924">যোগ করো: <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2452897">
+<title>সমাধান</title>
+
+
+<table id="eip-id1168468285390" class="unnumbered unstyled" aria-label="7/12 ও 5/18 যোগ করার ধাপ। 12 সমান 2 গুণ 2 গুণ 3 এবং 18 সমান 2 গুণ 3 গুণ 3। লঘিষ্ঠ সাধারণ হর 2 গুণ 2 গুণ 3 গুণ 3, অর্থাৎ 36। প্রথম ভগ্নাংশের লব ও হরে গুণক 3 এবং দ্বিতীয়টির লব ও হরে গুণক 2 ব্যবহার করে পাওয়া যায় 21/36 ও 10/36। যোগফল 31/36।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry align="center"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mn>12</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>18</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>12 ও 18-এর ল.সা.গু. নির্ণয় করো; সেটিই লঘিষ্ঠ সাধারণ হর।<newline /><media id="eip-id1168469563657" alt="12 সমান 2 গুণ 2 গুণ 3 এবং 18 সমান 2 গুণ 3 গুণ 3। লঘিষ্ঠ সাধারণ হরে 2 দুবার এবং 3 দুবার নিয়ে গুণ করা হয়েছে; ফল 36।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_031_img-01.png" /></media></entry>
+   <entry />
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে লেখো।</entry>
+   <entry align="center"><media id="eip-id1168468271675" alt="প্রথম ভগ্নাংশের লবে 7 গুণ 3 এবং হরে 12 গুণ 3। যোগ করা দ্বিতীয় ভগ্নাংশের লবে 5 গুণ 2 এবং হরে 18 গুণ 2। নতুন গুণক 3 ও 2 লাল রঙে।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_031_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লব ও হরের গুণগুলি হিসাব করো।</entry>
+   <entry align="center"><m:math><m:mrow><m:mfrac><m:mn>21</m:mn><m:mn>36</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>10</m:mn><m:mn>36</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>যোগ করো।</entry>
+   <entry align="center"><m:math><m:mfrac><m:mn>31</m:mn><m:mn>36</m:mn></m:mfrac></m:math></entry>
+ </row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="fs-id1960505">লব <m:math><m:mrow><m:mn>31</m:mn></m:mrow></m:math> মৌলিক সংখ্যা, আর হর হলো <m:math><m:mrow><m:mn>36</m:mn><m:mo>.</m:mo></m:mrow></m:math> হরটি লব দিয়ে নিঃশেষে বিভাজ্য নয়। তাই লব ও হরের 1 ছাড়া আর কোনো সাধারণ গুণনীয়ক নেই। উত্তরটি লঘিষ্ঠ আকারে আছে।</para>
+</solution>
+</exercise>
+</example><note id="fs-id2952072" class="try">
+<exercise id="fs-id2218297">
+<problem id="fs-id2950948">
+<para id="fs-id2316405">যোগ করো: <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1778672">
+<para id="fs-id2751774"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>79</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1834467" class="try">
+<exercise id="fs-id1246713">
+<problem id="fs-id1166761301642">
+<para id="fs-id1598291">যোগ করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id4215311">
+<para id="fs-id2877886"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>103</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id2684867">সমতুল ভগ্নাংশের ধর্ম ব্যবহার করার সময়, লঘিষ্ঠ সাধারণ হর পেতে কত দিয়ে গুণ করতে হবে তা দ্রুত নির্ণয় করা যায়। লঘিষ্ঠ সাধারণ হর নির্ণয়ের সময় যেভাবে লিখেছিলে, সেভাবেই হরগুলি ও লঘিষ্ঠ সাধারণ হরের মৌলিক গুণনীয়কগুলি সাজিয়ে লেখো। প্রতিটি হরের বিশ্লেষণে আরও যে গুণনীয়কগুলি দরকার, তাদের গুণফলই হবে ওই হরের জন্য প্রয়োজনীয় গুণক। একই মৌলিক গুণনীয়ক যতবার দরকার, ততবার গুনতে হবে।</para><media id="fs-id2474611" alt="12-এর মৌলিক বিশ্লেষণে 2 দুবার ও 3 একবার; শেষের আর একটি 3-এর জায়গা ফাঁকা। 18-এর বিশ্লেষণে 2 একবার ও 3 দুবার; আর একটি 2-এর জায়গা ফাঁকা। লাল রেখা ও ইংরেজি লেখা দিয়ে আরও প্রয়োজনীয় গুণনীয়কগুলির জায়গা চিহ্নিত করা হয়েছে। নীচে লঘিষ্ঠ সাধারণ হর 2 গুণ 2 গুণ 3 গুণ 3, অর্থাৎ 36।">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_015.jpg" />
+</media>
+<para id="fs-id1544257">লঘিষ্ঠ সাধারণ হর হলো <m:math><m:mrow><m:mn>36</m:mn><m:mo>,</m:mo></m:mrow></m:math> যার মৌলিক গুণনীয়কে বিশ্লেষণে <m:math><m:mn>2</m:mn></m:math> বার আসে <m:math><m:mn>2</m:mn></m:math> এবং <m:math><m:mn>2</m:mn></m:math> বার আসে <m:math><m:mn>3</m:mn><m:mo>.</m:mo></m:math></para>
+<para id="fs-id3216933">12-এর মৌলিক গুণনীয়কে বিশ্লেষণে দুবার থাকে <m:math><m:mn>2</m:mn><m:mo>,</m:mo></m:math> কিন্তু একবার থাকে <m:math><m:mn>3</m:mn></m:math>। তাই 36-এর বিশ্লেষণের সঙ্গে মেলাতে আরও একবার দরকার <m:math><m:mn>3</m:mn><m:mo>.</m:mo></m:math> সেজন্য <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math>-এর লব ও হরকে <m:math><m:mn>3</m:mn></m:math> দিয়ে গুণ করে আমরা এমন সমতুল ভগ্নাংশ পেয়েছি, যার হর <m:math><m:mrow><m:mn>36</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id4333649">36-এর বিশ্লেষণের সঙ্গে মেলাতে 18-এর বিশ্লেষণে আরও একটি <m:math><m:mn>2</m:mn></m:math> দরকার। তাই <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac></m:mrow></m:math>-এর লব ও হরকে <m:math><m:mn>2</m:mn></m:math> দিয়ে গুণ করলে পাই সমতুল ভগ্নাংশ, যার হর <m:math><m:mrow><m:mn>36</m:mn><m:mo>.</m:mo></m:mrow></m:math> পরের উদাহরণে ভগ্নাংশ বিয়োগ করার সময় এই পদ্ধতি ব্যবহার করব।</para><example id="fs-id2668537"><exercise id="fs-id3322510">
+<problem id="fs-id2270972">
+<para id="fs-id2454954">বিয়োগ করো: <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>19</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2173183">
+<title>সমাধান</title>
+<table id="eip-id1168466319808" class="unnumbered unstyled" aria-label="7/15 থেকে 19/24 বিয়োগ করার ধাপ। 15 সমান 3 গুণ 5 এবং 24 সমান 2 গুণ 2 গুণ 2 গুণ 3; লঘিষ্ঠ সাধারণ হর 120। 15-এর বিশ্লেষণে আরও তিনটি 2, অর্থাৎ গুণক 8 দরকার; 24-এর জন্য গুণক 5 দরকার। লব ও হরকে যথাক্রমে 8 ও 5 দিয়ে গুণ করে 56/120 থেকে 95/120 বিয়োগ করা হয়; ফল ঋণাত্মক 39/120। সাধারণ গুণনীয়ক 3 আলাদা করে ঋণাত্মক চিহ্নসহ লবে 13 গুণ 3 এবং হরে 40 গুণ 3 লেখা হয়। লব ও হরকে 3 দিয়ে ভাগ করলে ফল ঋণাত্মক 13/40।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry align="center"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mn>15</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>19</m:mn><m:mn>24</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নির্ণয় করো।<newline /><media id="eip-id1168469519946" alt="15 সমান 3 গুণ 5 এবং 24 সমান 2 গুণ 2 গুণ 2 গুণ 3। লঘিষ্ঠ সাধারণ হর 2 গুণ 2 গুণ 2 গুণ 3 গুণ 5, অর্থাৎ 120।"><image mime-type="image/png" src="../../media/CNX_BMath_Figure_04_05_032_img-01.png" /></media><newline />120-এর মৌলিক বিশ্লেষণের সঙ্গে মেলাতে 15-এর বিশ্লেষণে আরও তিনটি 2 দরকার।<newline />24-এর বিশ্লেষণে আরও একটি 5 দরকার।</entry>
+   <entry />
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে লেখো।</entry>
+   <entry align="center"><media id="eip-id1168468230268" alt="লবে 7 গুণ 8 ও হরে 15 গুণ 8 লেখা ভগ্নাংশ থেকে লবে 19 গুণ 5 ও হরে 24 গুণ 5 লেখা ভগ্নাংশ বিয়োগ করা হয়েছে। হর 120 করতে নতুন গুণক 8 ও 5 ব্যবহার করা হয়েছে; সেগুলি লাল রঙে। এখানে ওই গুণকগুলি বাদ দেওয়া হচ্ছে না।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_032_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>প্রতিটি লব ও হরের গুণগুলি হিসাব করো।</entry>
+   <entry align="center"><m:math><m:mrow><m:mfrac><m:mn>56</m:mn><m:mn>120</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>95</m:mn><m:mn>120</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>বিয়োগ করো।</entry>
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mfrac><m:mn>39</m:mn><m:mn>120</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>লব ও হরের সাধারণ গুণনীয়ক 3 আলাদা করে দেখাও।</entry>
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>13</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>40</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>লব ও হরকে একই সাধারণ গুণনীয়ক দিয়ে ভাগ করে সরল করো।</entry>
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mfrac><m:mn>13</m:mn><m:mn>40</m:mn></m:mfrac></m:math></entry>
+ </row>
+</tbody>
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id1517188" class="try">
+<exercise id="fs-id1805524">
+<problem id="fs-id1801581">
+<para id="fs-id2196761">বিয়োগ করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2427464">
+<para id="fs-id2222099"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>96</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1835990" class="try">
+<exercise id="fs-id1512468">
+<problem id="fs-id2264545">
+<para id="fs-id2494464">বিয়োগ করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>21</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>28</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2300461">
+<para id="fs-id2319250"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>75</m:mn></m:mrow><m:mrow><m:mn>224</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1250061"><exercise id="fs-id1976979">
+<problem id="fs-id3262124">
+<para id="fs-id4210825">যোগ করো: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>23</m:mn></m:mrow><m:mrow><m:mn>42</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para></problem>
+<solution id="fs-id3448071">
+<title>সমাধান</title>
+
+
+<table id="eip-id1168466855270" class="unnumbered unstyled" aria-label="ঋণাত্মক 11/30 ও 23/42 যোগ করার ধাপ। 30 সমান 2 গুণ 3 গুণ 5 এবং 42 সমান 2 গুণ 3 গুণ 7 থেকে লঘিষ্ঠ সাধারণ হর 210। প্রথম ভগ্নাংশের লব ও হরকে 7 দিয়ে এবং দ্বিতীয়টির লব ও হরকে 5 দিয়ে গুণ করলে পাওয়া যায় ঋণাত্মক 77/210 ও 115/210। যোগফল 38/210। লবে 19 গুণ 2 এবং হরে 105 গুণ 2 লিখে উভয়কে সাধারণ গুণনীয়ক 2 দিয়ে ভাগ করলে ফল 19/105।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mrow><m:mfrac><m:mn>11</m:mn><m:mn>30</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>23</m:mn><m:mn>42</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নির্ণয় করো।<newline /><media id="eip-id1168468614224" alt="30 সমান 2 গুণ 3 গুণ 5 এবং 42 সমান 2 গুণ 3 গুণ 7। লঘিষ্ঠ সাধারণ হর 2 গুণ 3 গুণ 5 গুণ 7, অর্থাৎ 210।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_033_img-01.png" /></media></entry>
+   <entry />
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে লেখো।</entry>
+   <entry align="center"><media id="eip-id1168468567274" alt="প্রথম ভগ্নাংশের লবে 11 গুণ 7 ও হরে 30 গুণ 7; পুরো ভগ্নাংশের আগে ঋণাত্মক চিহ্ন। এর সঙ্গে যোগ করা দ্বিতীয় ভগ্নাংশের লবে 23 গুণ 5 ও হরে 42 গুণ 5। নতুন গুণক 7 ও 5 লাল রঙে।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_033_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>প্রতিটি লব ও হরের গুণগুলি হিসাব করো।</entry>
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mrow><m:mfrac><m:mn>77</m:mn><m:mn>210</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>115</m:mn><m:mn>210</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+  <row>
+   <entry>যোগ করো।</entry>
+   <entry align="center"><m:math><m:mfrac><m:mn>38</m:mn><m:mn>210</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>লব ও হরের সাধারণ গুণনীয়ক 2 আলাদা করে দেখাও।</entry>
+   <entry align="center"><m:math><m:mfrac><m:mrow><m:mn>19</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mn>105</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>লব ও হরকে একই সাধারণ গুণনীয়ক দিয়ে ভাগ করে সরল করো।</entry>
+   <entry align="center"><m:math><m:mfrac><m:mn>19</m:mn><m:mn>105</m:mn></m:mfrac></m:math></entry>
+ </row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id2294244" class="try">
+<exercise id="fs-id2170248">
+<problem id="fs-id2314250">
+<para id="fs-id1807337">যোগ করো: <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>42</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1528816">
+<para id="fs-id1516390"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>37</m:mn></m:mrow><m:mrow><m:mn>210</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1756676" class="try">
+<exercise id="fs-id2375300">
+<problem id="fs-id2356670">
+<para id="fs-id2657242">যোগ করো: <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>19</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1739375">
+<para id="fs-id1562362"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>25</m:mn></m:mrow><m:mrow><m:mn>96</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id3291799">পরের উদাহরণে একটি ভগ্নাংশের লবে চল আছে। দুটি লবেই শুধু সংখ্যা থাকলে যে ধাপগুলি অনুসরণ করি, এখানেও সেই একই ধাপ অনুসরণ করব।</para>
+<example id="fs-id4337738"><exercise id="fs-id2427683">
+<problem id="fs-id1581515">
+<para id="fs-id1334345">যোগ করো: <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1337914">
+<title>সমাধান</title>
+<para id="fs-id2331011">ভগ্নাংশ দুটির হর আলাদা।</para>
+<table id="eip-id1168467320994" class="unnumbered unstyled" aria-label="3/5 ও x/8 যোগ করার ধাপ। 5 এবং 8 সমান 2 গুণ 2 গুণ 2 থেকে লঘিষ্ঠ সাধারণ হর 40। প্রথম ভগ্নাংশের লব ও হরকে 8 দিয়ে এবং দ্বিতীয়টির লব ও হরকে 5 দিয়ে গুণ করলে পাওয়া যায় 24/40 ও 5x/40। যোগফলের পুরো লব 24 যোগ 5x এবং হর 40।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry align="center"><m:math><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>8</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নির্ণয় করো।<newline /><media id="eip-id1168468646686" alt="5 সমান 5 এবং 8 সমান 2 গুণ 2 গুণ 2। লঘিষ্ঠ সাধারণ হর 2 গুণ 2 গুণ 2 গুণ 5, অর্থাৎ 40।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_034_img-01.png" /></media></entry>
+   <entry />
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে লেখো।</entry>
+   <entry align="center"><media id="eip-id1168469473384" alt="প্রথম ভগ্নাংশের লবে 3 গুণ 8 এবং হরে 5 গুণ 8; এর সঙ্গে যোগ করা দ্বিতীয় ভগ্নাংশের লবে x গুণ 5 এবং হরে 8 গুণ 5। নতুন গুণক 8 ও 5 লাল রঙে।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_034_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লব ও হরের গুণগুলি হিসাব করো।</entry>
+   <entry align="center"><m:math><m:mfrac><m:mn>24</m:mn><m:mn>40</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow><m:mn>40</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>যোগ করো।</entry>
+   <entry align="center"><m:math><m:mfrac><m:mrow><m:mn>24</m:mn><m:mspace width="0.2em" /><m:mo>+</m:mo><m:mspace width="0.2em" /><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow><m:mn>40</m:mn></m:mfrac></m:math></entry>
+ </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1584847">লবের পদ <m:math><m:mrow><m:mn>24</m:mn></m:mrow></m:math> ও <m:math><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:math> সদৃশ নয়, তাই যোগ করে একটি পদে লেখা যায় না। এখানে লব ও হরে এমন কোনো সাধারণ গুণনীয়কও নেই যা বাদ দিয়ে আরও সরল করা যায়। তাই রাশিটি এই আকারেই থাকে।</para>
+</solution>
+</exercise>
+
+</example><note id="fs-id1269584" class="try">
+<exercise id="fs-id1730525">
+<problem id="fs-id2387976">
+<para id="fs-id1684083">যোগ করো: <m:math><m:mrow><m:mfrac><m:mi>y</m:mi><m:mn>6</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1579188">
+<para id="fs-id2909034"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>14</m:mn></m:mrow><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1931671" class="try">
+<exercise id="fs-id2215700">
+<problem id="fs-id2295154">
+<para id="fs-id2684886">যোগ করো: <m:math><m:mrow><m:mfrac><m:mi>x</m:mi><m:mn>6</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1798732">
+<para id="fs-id2792427"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>14</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id2145474">
+<title>ভগ্নাংশের ক্রিয়া চেনো ও প্রয়োগ করো</title>
+<para id="fs-id2189944">এই অধ্যায়ে এতক্ষণ তুমি ভগ্নাংশের গুণ, ভাগ, যোগ ও বিয়োগ অনুশীলন করেছ। নিচে এই চারটি গাণিতিক ক্রিয়ার সারাংশ দেওয়া হল। মনে রেখো, ভগ্নাংশ যোগ বা বিয়োগ করতে হর এক করতে হয়, কিন্তু গুণ বা ভাগ করতে তা লাগে না। প্রতিটি ভগ্নাংশের হর শূন্য নয়; ভাগের ক্ষেত্রে ভাজকও শূন্য হতে পারে না। এখানে লঘিষ্ঠ সাধারণ হর নির্ণয়ের সময় হরগুলিকে ধনাত্মক পূর্ণসংখ্যা ধরা হচ্ছে।</para>
+<note id="fs-id1617042">
+<title>ভগ্নাংশের চারটি ক্রিয়ার সারাংশ</title>
+<para id="fs-id1754978"><emphasis>ভগ্নাংশের গুণ:</emphasis> লবগুলিকে গুণ করো এবং হরগুলিকে গুণ করো। ফলের লব হবে লবগুলির গুণফল, আর হর হবে হরগুলির গুণফল। নীচের সূত্রে ফলের লব এ গুণ সি এবং হর বি গুণ ডি। হর বি ও ডি শূন্য নয়।</para><equation id="fs-id1171105206682" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>d</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mi>d</m:mi></m:mrow></m:mfrac></m:mrow></m:math></equation>
+<para id="fs-id2773547"><emphasis>ভগ্নাংশের ভাগ:</emphasis> প্রথম ভগ্নাংশকে দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণ করো। শূন্য নয় এমন ভগ্নাংশের লব ও হরের স্থান বদলালে তার গুণাত্মক বিপরীত পাওয়া যায়। নীচে দ্বিতীয় ভগ্নাংশের লব সি ও হর ডি বদলে লব ডি ও হর সি হয়েছে। এই ভাগের সূত্রে বি, সি ও ডি শূন্য নয়।</para><equation id="fs-id1171103505483" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>d</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mi>d</m:mi><m:mi>c</m:mi></m:mfrac></m:mrow></m:math></equation>
+<para id="fs-id1362986"><emphasis>ভগ্নাংশের যোগ:</emphasis> হর এক হলে লবগুলি যোগ করো। যোগফলকে লবে লেখো, আর একই হর রাখো। হর আলাদা হলে প্রথমে লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে রূপান্তর করো। নীচের সূত্রে ফলের লব এ যোগ বি এবং হর সি; সি শূন্য নয়।</para><equation id="fs-id1171105199899" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>c</m:mi></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mi>b</m:mi><m:mi>c</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mi>c</m:mi></m:mfrac></m:mrow></m:math></equation>
+<para id="fs-id2164207"><emphasis>ভগ্নাংশের বিয়োগ:</emphasis> হর এক হলে প্রথম লব থেকে দ্বিতীয় লব বিয়োগ করো। বিয়োগফলকে লবে লেখো, আর একই হর রাখো। হর আলাদা হলে প্রথমে লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে রূপান্তর করো। নীচের সূত্রে ফলের লব এ বিয়োগ বি এবং হর সি; সি শূন্য নয়।</para><equation id="fs-id1171105198355" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>c</m:mi></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mi>b</m:mi><m:mi>c</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow><m:mi>c</m:mi></m:mfrac></m:mrow></m:math></equation>
+</note>
+<example id="fs-id1166761240001"><exercise id="fs-id2577975">
+<problem id="fs-id1701222">
+<para id="fs-id1603151">সরল করো:<newline /><list id="eip-id1168467352010" list-type="enumerated" number-style="arabic" class="circled"><item>
+<span class="token">ⓐ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id2261298">
+<title>সমাধান</title>
+<para id="fs-id3407452">প্রথমে নিজেকে জিজ্ঞাসা করো, ‘এখানে কোন ক্রিয়া করতে হবে?’</para>
+<para id="fs-id1258802"><span class="token">ⓐ</span> এখানে যোগ করতে হবে।</para><para id="fs-id2268553">ভগ্নাংশগুলির হর কি এক? না।</para>
+
+
+
+<table id="eip-id1168468666374" class="unnumbered unstyled" aria-label="ঋণাত্মক এক চতুর্থাংশের সঙ্গে এক ষষ্ঠাংশ যোগের ধাপ। প্রথমে হর ৪ ও ৬-এর লঘিষ্ঠ সাধারণ হর নির্ণয়: ৪ সমান ২ গুণ ২, ৬ সমান ২ গুণ ৩, লঘিষ্ঠ সাধারণ হর সমান ২ গুণ ২ গুণ ৩ অর্থাৎ ১২। প্রথম ভগ্নাংশের বাইরে ঋণাত্মক চিহ্ন রেখে লবে ১ গুণ ৩, হরে ৪ গুণ ৩; দ্বিতীয়টির লবে ১ গুণ ২, হরে ৬ গুণ ২। গুণ করে ঋণাত্মক তিন দ্বাদশাংশ যোগ দুই দ্বাদশাংশ। চিহ্নসহ লব যোগ করলে ফল ঋণাত্মক এক দ্বাদশাংশ। উত্তর লঘিষ্ঠ আকারে আছে।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নির্ণয় করো।<newline /><media id="eip-id1168467261783" alt="প্রথম সারিতে ৪ সমান ২ গুণ ২। দ্বিতীয় সারিতে ৬ সমান ২ গুণ ৩। দুই সারির একটি করে ২ একই স্তম্ভে আছে। রেখার নীচে লঘিষ্ঠ সাধারণ হর সমান ২ গুণ ২ গুণ ৩; পরের সারিতে লঘিষ্ঠ সাধারণ হর সমান ১২। ছবির ইংরেজি এলসিডি সংক্ষিপ্ত রূপটি লঘিষ্ঠ সাধারণ হর বোঝায়। ১২ হল হর ৪ ও ৬-এর লঘিষ্ঠ সাধারণ গুণিতক।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_035_img-01.png" /></media></entry>
+   <entry />
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর নিয়ে প্রতিটি ভগ্নাংশকে সমতুল ভগ্নাংশে লেখো।</entry>
+   <entry align="center"><media id="eip-id1168468273951" alt="একটি ঋণাত্মক ভগ্নাংশের সঙ্গে একটি ধনাত্মক ভগ্নাংশের যোগ। প্রথম ভগ্নাংশের বাইরে ঋণাত্মক চিহ্ন আছে; তার লব ১ গুণ ৩ এবং হর ৪ গুণ ৩। যোগচিহ্নের পরে দ্বিতীয় ভগ্নাংশের লব ১ গুণ ২ এবং হর ৬ গুণ ২। প্রথমটির লব ও হরে নতুন গুণনীয়ক ৩, আর দ্বিতীয়টির লব ও হরে নতুন গুণনীয়ক ২ লাল রঙে দেখানো। এতে দুই হরই ১২ হয়, ভগ্নাংশের মান অপরিবর্তিত থাকে।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_035_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লব ও হরের গুণগুলি করো।</entry>
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>12</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>12</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>চিহ্নসহ লবগুলি যোগ করো। যোগফলকে লবে লেখো, আর একই হর রাখো।</entry>
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>12</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>দেখো, উত্তরকে আরও লঘিষ্ঠ আকারে প্রকাশ করা যায় কি না। যায় না; ১ ছাড়া লব ও হরের আর কোনো ধনাত্মক সাধারণ গুণনীয়ক নেই।</entry>
+   <entry />
+ </row>
+</tbody>
+
+
+</tgroup>
+</table><para id="fs-id2379028"><span class="token">ⓑ</span> এখানে ভাগ করতে হবে। হর এক করার দরকার নেই।</para>
+
+
+
+<table id="eip-id1168466269694" class="unnumbered unstyled" summary="ঋণাত্মক এক চতুর্থাংশকে এক ষষ্ঠাংশ দিয়ে ভাগের ধাপ: দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত, লব ৬ ও হর ১-এর ভগ্নাংশ দিয়ে গুণ। ফলে ঋণাত্মক ছয় চতুর্থাংশ, যা লঘিষ্ঠ আকারে ঋণাত্মক তিন অর্ধাংশ।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>ভগ্নাংশ ভাগ করতে প্রথম ভগ্নাংশকে দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণ করো। দ্বিতীয় ভগ্নাংশের লব ১ ও হর ৬ বদলে লব ৬ ও হর ১ হয়।</entry>
+   <entry><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>6</m:mn><m:mn>1</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>গুণ করো। ঋণাত্মক সংখ্যাকে ধনাত্মক সংখ্যা দিয়ে গুণ করলে গুণফল ঋণাত্মক হয়।</entry>
+   <entry><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>6</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লব ও হরকে ২ দিয়ে ভাগ করে লঘিষ্ঠ আকারে প্রকাশ করো। ঋণাত্মক চিহ্ন বজায় রাখো।</entry>
+   <entry><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+
+</tbody>
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id4121421" class="try">
+<exercise id="fs-id2205866">
+<problem id="fs-id1916152">
+<para id="fs-id1731703">প্রতিটি রাশি সরল করো:</para>
+<para id="fs-id1407886"><list id="eip-id1168469476664" list-type="enumerated" number-style="arabic" class="circled"><item>
+<span class="token">ⓐ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id2281535">
+<para id="fs-id1566184"><list id="eip-id1168468755642" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>11</m:mn><m:mn>12</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+</note>
+<note id="fs-id1294403" class="try">
+<exercise id="fs-id2671602">
+<problem id="fs-id1510548">
+<para id="fs-id1738967">প্রতিটি রাশি সরল করো:</para>
+<para id="fs-id2730448"><list id="eip-id1168467190347" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>÷</m:mo><m:mo>(</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>)</m:mo></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mo>(</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>)</m:mo></m:math></item></list></para></problem>
+<solution id="fs-id1461554">
+<para id="fs-id1499374"><list id="eip-id1168469817334" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>10</m:mn><m:mn>3</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mn>13</m:mn><m:mn>12</m:mn></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+</note>
+<example id="fs-id2667758"><exercise id="fs-id2453812">
+<problem id="fs-id1470605">
+<para id="fs-id2657161">সরল করো:<newline /><list id="eip-id1168466041720" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>10</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>10</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id1408005">
+<title>সমাধান</title>
+<para id="fs-id2290501"><span class="token">ⓐ</span> এখানে বিয়োগ করতে হবে। ভগ্নাংশগুলির হর এক নয়।</para>
+
+<table id="eip-id1168467554451" class="unnumbered unstyled" summary="লব ৫ গুণ এক্স ও হর ৬-এর ভগ্নাংশ থেকে তিন দশমাংশ বিয়োগ। লঘিষ্ঠ সাধারণ হর ৩০ নিয়ে লবদুটি হয় ২৫ গুণ এক্স ও ৯। ফলের লব পুরো রাশি ২৫ গুণ এক্স বিয়োগ ৯, আর হর ৩০।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর ৩০ নিয়ে প্রতিটি ভগ্নাংশকে সমতুল ভগ্নাংশে লেখো। প্রথম ভগ্নাংশের লব ও হরকে ৫ দিয়ে, আর দ্বিতীয়টির লব ও হরকে ৩ দিয়ে গুণ করো।</entry>
+   <entry><m:math><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>10</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry />
+   <entry><m:math><m:mfrac><m:mrow><m:mn>25</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>প্রথম লব থেকে দ্বিতীয় লব বিয়োগ করো। বিয়োগফলকে লবে লেখো, আর একই হর রাখো। ২৫ গুণ এক্স এবং ৯ সদৃশ পদ নয়, তাই লবটি ওই বিয়োগের রাশি হিসেবেই রাখো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mn>25</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+</tbody>
+</tgroup>
+</table>
+
+<para id="fs-id2654763"><span class="token">ⓑ</span> এখানে গুণ করতে হবে। হর এক করার দরকার নেই।</para>
+
+
+
+
+<table id="eip-id1168467446368" class="unnumbered unstyled" summary="লব ৫ গুণ এক্স ও হর ৬-এর ভগ্নাংশকে তিন দশমাংশ দিয়ে গুণ। লব ও হর গুণ করে সাধারণ গুণনীয়ক ৫ ও ৩ দিয়ে উভয়কে ভাগ করা হয়। ফলে লব এক্স ও হর ৪-এর ভগ্নাংশ পাওয়া যায়।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>ভগ্নাংশ গুণ করতে লবগুলিকে গুণ করো এবং হরগুলিকে গুণ করো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লব ও হরকে গুণনীয়কে ভেঙে সাধারণ গুণনীয়কগুলি দেখাও। একই ৫ ও একই ৩ লব ও হর উভয়ের গুণনীয়ক।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:menclose notation="updiagonalstrike"><m:mn>5</m:mn></m:menclose><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:menclose notation="updiagonalstrike"><m:mn>3</m:mn></m:menclose></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:menclose notation="updiagonalstrike"><m:mn>3</m:mn></m:menclose><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:menclose notation="updiagonalstrike"><m:mn>5</m:mn></m:menclose></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লব ও হর উভয়কে একই সাধারণ গুণনীয়ক ৫ ও ৩ দিয়ে ভাগ করে লঘিষ্ঠ আকারে প্রকাশ করো। কেবল গুণনীয়ক কাটা যায়; যোগ বা বিয়োগের আলাদা পদ এভাবে কাটা যায় না।</entry>
+   <entry><m:math><m:mfrac><m:mi>x</m:mi><m:mn>4</m:mn></m:mfrac></m:math></entry>
+ </row>
+</tbody>
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id1517156" class="try">
+<exercise id="fs-id2430566">
+<problem id="fs-id2284084">
+<para id="fs-id2297842">সরল করো। উৎস সম্পর্কে নোট: এখানে প্রশ্নের দুটি রাশিই উত্তরে আবার দেওয়া আছে। চলের কোনো নির্দিষ্ট মান দেওয়া নেই; সাধারণ বীজগাণিতিক আকারে এই ভগ্নাংশগুলির লব ও হর থেকে আর কোনো সাধারণ গুণনীয়ক কাটা যায় না। এর আগে অন্য কোনো যোগ, বিয়োগ, গুণ বা ভাগের রাশি থাকার কথা ছিল কি না, উৎস থেকে তা জানা যাচ্ছে না। প্রশ্নের রাশিগুলি অপরিবর্তিত রাখা হল:<newline /><list id="eip-id1168468454836" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>27</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>32</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>36</m:mn></m:mrow></m:mfrac></m:mrow></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow><m:mn>3</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id1223841">
+<para id="fs-id2466997">উৎসে দেওয়া উত্তর:<list id="eip-id1168469829644" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>27</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>32</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>36</m:mn></m:mrow></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+</note>
+<note id="fs-id1243241" class="try">
+<exercise id="fs-id1869461">
+<problem id="fs-id2754536">
+<para id="fs-id1880793">সরল করো। উৎস সম্পর্কে নোট: এই প্রশ্নেও দুটি রাশিই উত্তরে হুবহু আবার দেওয়া আছে। চলের কোনো নির্দিষ্ট মান দেওয়া নেই; সাধারণ বীজগাণিতিক আকারে এই ভগ্নাংশগুলির লব ও হর থেকে আর কোনো সাধারণ গুণনীয়ক কাটা যায় না। এর আগে অন্য কোনো যোগ, বিয়োগ, গুণ বা ভাগের রাশি থাকার কথা ছিল কি না, উৎস থেকে তা জানা যাচ্ছে না। প্রশ্নের রাশিগুলি অপরিবর্তিত রাখা হল:<newline /><list id="eip-id1168468677781" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>24</m:mn><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>25</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mrow><m:mn>24</m:mn><m:mi>k</m:mi></m:mrow><m:mn>5</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id1899945">
+<para id="fs-id1166761304009">উৎসে দেওয়া উত্তর:<list id="eip-id1168469862081" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>24</m:mn><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>25</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>30</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mrow><m:mn>24</m:mn><m:mi>k</m:mi></m:mrow><m:mn>5</m:mn></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id2668845">
+<title>গাণিতিক প্রক্রিয়ার ক্রম মেনে জটিল ভগ্নাংশ সরল করা</title>
+<para id="fs-id1925758"><link document="m81287">মিশ্র ভগ্নাংশ ও জটিল ভগ্নাংশের গুণ ও ভাগ</link> পাঠে আমরা দেখেছি, যে ভগ্নাংশের লব বা হরের মধ্যে ভগ্নাংশ থাকে, তাকে জটিল ভগ্নাংশ বলা হয়। জটিল ভগ্নাংশকে ভাগের আকারে লিখে আমরা সরল করেছি। যেমন,</para><equation id="fs-id1171105157012" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mrow><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.2em" /></m:mrow><m:mrow><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mspace width="0.2em" /></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></equation>
+<para id="fs-id1961694">এবার এমন জটিল ভগ্নাংশ দেখব, যার লব বা হরকে আগে সরল করা যায়। গাণিতিক প্রক্রিয়ার ক্রম মেনে প্রথমে লব ও হর আলাদাভাবে সরল করো। তার পরে লবকে হর দিয়ে ভাগ করো।</para>
+<note id="fs-id1956331" class="howto"><title>জটিল ভগ্নাংশ সরল করো।</title><list id="eip-id1168468461939" list-type="enumerated" number-style="arabic" class="stepwise"><item>লব সরল করো।</item>
+<item>হর সরল করো।</item>
+<item>লবকে হর দিয়ে ভাগ করো।</item>
+<item>সম্ভব হলে ফল আরও সরল করো।</item></list></note><example id="fs-id2860831"><exercise id="fs-id2881526">
+<problem id="fs-id1535603">
+<para id="fs-id1781622">সরল করো: <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1583482">
+<title>সমাধান</title>
+<table id="eip-id1168467304832" class="unnumbered unstyled" summary="এক-দ্বিতীয়াংশের বর্গকে 4 ও 3-এর বর্গের যোগফল দিয়ে ভাগ করার ধাপগুলি। প্রথমে লব এক-চতুর্থাংশ, তার পরে হর 4 যোগ 9 অর্থাৎ 13। এক-চতুর্থাংশকে 13 দিয়ে ভাগ করে এক-চতুর্থাংশ গুণ এক-ত্রয়োদশাংশ লেখা হয়। ফল 1/52।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লব সরল করো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>হরের ঘাতযুক্ত পদটির মান নির্ণয় করো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>হরের পদগুলি যোগ করো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লবকে হর দিয়ে ভাগ করো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mn>13</m:mn></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>ভাজকের গুণাত্মক বিপরীত দিয়ে গুণের আকারে লেখো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>গুণ করো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>52</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id1379114" class="try">
+<exercise id="fs-id2168863">
+<problem id="fs-id1842765">
+<para id="fs-id2262795">সরল করো: <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:math>।</para></problem>
+<solution id="fs-id783845">
+<para id="fs-id1602846"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>90</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1607677" class="try">
+<exercise id="fs-id1597521"><problem id="fs-id2926467">
+<para id="fs-id2316248">সরল করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mn>4</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>।</para>
+</problem>
+<solution id="fs-id2661236">
+<para id="fs-id2294828">272</para>
+</solution>
+</exercise></note>
+<example id="fs-id2947578"><exercise id="fs-id2454023">
+<problem id="fs-id1752756">
+<para id="fs-id1574511">সরল করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2264945">
+<title>সমাধান</title>
+
+<table id="eip-id1168468561600" class="unnumbered unstyled" summary="জটিল ভগ্নাংশটির লবে এক-দ্বিতীয়াংশ যোগ দুই-তৃতীয়াংশ এবং হরে তিন-চতুর্থাংশ বিয়োগ এক-ষষ্ঠাংশ। লবের জন্য একই হর 6 এবং হরের জন্য একই হর 12 নিয়ে যথাক্রমে 7/6 ও 7/12 পাওয়া যায়। তার পরে 7/6-কে 7/12 দিয়ে ভাগ, অর্থাৎ 12/7 দিয়ে গুণ করা হয়। সাধারণ গুণনীয়ক 7 ও 6 কাটাকাটি করলে ফল 2।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লবের ভগ্নাংশগুলিকে তাদের লঘিষ্ঠ সাধারণ হর 6 নিয়ে লেখো। হরের ভগ্নাংশগুলিকে তাদের লঘিষ্ঠ সাধারণ হর 12 নিয়ে লেখো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লবে যোগ করো। হরে বিয়োগ করো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mn>6</m:mn></m:mfrac><m:mspace width="0.2em" /></m:mrow><m:mrow><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mspace width="0.2em" /></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>লবকে হর দিয়ে ভাগ করো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>ভাজকের গুণাত্মক বিপরীত দিয়ে গুণের আকারে লেখো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>12</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>সাধারণ গুণনীয়কগুলি দেখিয়ে লেখো।</entry>
+   <entry><m:math><m:mrow><m:mfrac><m:mrow><m:menclose notation="updiagonalstrike"><m:mn>7</m:mn></m:menclose><m:mo>·</m:mo><m:menclose notation="updiagonalstrike"><m:mn>6</m:mn></m:menclose><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:menclose notation="updiagonalstrike"><m:mn>6</m:mn></m:menclose><m:mo>·</m:mo><m:menclose notation="updiagonalstrike"><m:mn>7</m:mn></m:menclose><m:mo>·</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry>সরল করো।</entry>
+   <entry>2</entry>
+ </row>
+</tbody>
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id1369610" class="try">
+<exercise id="fs-id1232085">
+<problem id="fs-id1607744">
+<para id="fs-id1893777">সরল করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math>।</para></problem>
+<solution id="fs-id2662153">
+<para id="fs-id1967373">2</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id2265389" class="try">
+<exercise id="fs-id2567856">
+<problem id="fs-id2281564">
+<para id="fs-id3434658">সরল করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math>।</para></problem>
+<solution id="fs-id1369652">
+<para id="fs-id1215385"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1612685">
+<title>ভগ্নাংশযুক্ত বীজগাণিতিক রাশির মান নির্ণয়</title>
+<para id="fs-id2436592">আগেও আমরা রাশির মান নির্ণয় করেছি। এখন ভগ্নাংশযুক্ত রাশির মানও নির্ণয় করতে পারব। মনে রেখো, কোনো রাশির মান নির্ণয় করতে হলে সেই রাশিতে চলের দেওয়া মান বসিয়ে তারপর সরল করতে হয়।</para>
+<example id="fs-id1225698"><exercise id="fs-id2303897">
+<problem id="fs-id2296737">
+<para id="fs-id1788806">রাশিটির মান নির্ণয় করো: <m:math><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:math>। চলের মান দেওয়া আছে:<newline /><list id="eip-id1168468728153" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:math></item></list></para></problem>
+<solution id="fs-id2431128">
+<title>সমাধান</title>
+<para id="fs-id2451256"><span class="token">ⓐ</span> মান নির্ণয়ের রাশিটি হল <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math>। এখানে <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> তাই <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> মানটি বসাও <m:math><m:mi>x</m:mi></m:math>-এর জায়গায়।</para>
+
+
+<table id="eip-id1168467081489" class="unnumbered unstyled" aria-label="প্রথম সারিতে x যোগ ভগ্নাংশ, যার লব ১ ও হর ৩। পরের সারির নির্দেশ: x-এর জায়গায় ঋণাত্মক এক-তৃতীয়াংশ বসাও; অর্থাৎ ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ১ ও হর ৩। পাশে ওই ঋণাত্মক ভগ্নাংশের সঙ্গে লব ১ ও হর ৩-এর ধনাত্মক ভগ্নাংশ যোগ করা হয়েছে। শেষ সারিতে সরল করে ০ পাওয়া যায়।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry><media id="eip-id1168468460939" alt="নির্দেশ: x-এর জায়গায় ঋণাত্মক এক-তৃতীয়াংশ বসাও; ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ১ ও হর ৩। বসানোর মানটি লাল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_036_img-01.png" /></media></entry>
+   <entry><media id="eip-id1168468460949" alt="বাঁ দিকে লাল রঙে ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ১ ও হর ৩। এর সঙ্গে যোগ ডান দিকের লব ১ ও হর ৩-এর ভগ্নাংশ। দুটি পরস্পরের বিপরীত সংখ্যা; যোগফল ০।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_036_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>সরল করো।</entry>
+   <entry><m:math><m:mn>0</m:mn></m:math></entry>
+ </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id3273744"><span class="token">ⓑ</span> মান নির্ণয়ের রাশিটি হল <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math>। এখানে <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> তাই <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> মানটি বসাও <m:math><m:mi>x</m:mi></m:math>-এর জায়গায়।</para><table id="eip-id1168466833969" class="unnumbered unstyled" aria-label="প্রথম সারিতে x যোগ ভগ্নাংশ, যার লব ১ ও হর ৩। পরের সারিতে x-এর জায়গায় ঋণাত্মক ভগ্নাংশ বসাও, যার লব ৩ ও হর ৪; পাশে এই ঋণাত্মক ভগ্নাংশের সঙ্গে লব ১ ও হর ৩-এর ভগ্নাংশ যোগ করা হয়েছে। লঘিষ্ঠ সাধারণ হর ১২ নিয়ে সমতুল ভগ্নাংশে লেখো: প্রথম ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৩ গুণ ৩ ও হর ৪ গুণ ৩; এর সঙ্গে যোগ দ্বিতীয় ভগ্নাংশ, যার লব ১ গুণ ৪ ও হর ৩ গুণ ৪। লব ও হরের গুণগুলি করলে প্রথম ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৯ ও হর ১২; এর সঙ্গে যোগ লব ৪ ও হর ১২-এর ভগ্নাংশ। শেষে যোগফল: ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৫ ও হর ১২।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry><media id="eip-id1168463773484" alt="নির্দেশ: x-এর জায়গায় ঋণাত্মক ভগ্নাংশ বসাও, যার লব ৩ ও হর ৪। বসানোর মানটি লাল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_037_img-01.png" /></media></entry>
+   <entry><media id="eip-id1168469860627" alt="বাঁ দিকে লাল রঙে ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৩ ও হর ৪। এর সঙ্গে যোগ ডান দিকের লব ১ ও হর ৩-এর ভগ্নাংশ।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_037_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর ১২ নিয়ে সমতুল ভগ্নাংশে লেখো।</entry>
+   <entry><m:math><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>লব ও হরের গুণগুলি করো।</entry>
+   <entry><m:math><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>12</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>12</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>যোগ করো।</entry>
+   <entry><m:math><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>12</m:mn></m:mfrac></m:math></entry>
+ </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id3289607" class="try">
+<exercise id="fs-id2691324">
+<problem id="fs-id1866020">
+<para id="fs-id1581158">রাশিটির মান নির্ণয় করো: <m:math><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:math>। চলের মান দেওয়া আছে:<newline /><list id="eip-id1168469876707" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>4</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>4</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id3407996">
+<para id="fs-id2933571"><list id="eip-id1168469867948" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mn>−1</m:mn></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+</note>
+<note id="fs-id2206666" class="try">
+<exercise id="fs-id2139186">
+<problem id="fs-id1582121">
+<para id="fs-id1347137">রাশিটির মান নির্ণয় করো: <m:math><m:mi>y</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math>। চলের মান দেওয়া আছে:<newline /><list id="eip-id1168468323278" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id1262522">
+<para id="fs-id2645386"><list id="eip-id1168469804401" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mn>7</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+</note>
+<example id="fs-id1968596"><exercise id="fs-id2325827">
+<problem id="fs-id1577502">
+<para id="fs-id1737365">রাশিটির মান নির্ণয় করো: <m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math>। দেওয়া আছে <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3014697">
+<title>সমাধান</title>
+<para id="fs-id2217787">রাশিতে <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> মানটি বসাও <m:math><m:mi>y</m:mi></m:math>-এর জায়গায়।</para>
+<table id="eip-id1168469728183" class="unnumbered unstyled" aria-label="প্রথম সারিতে y থেকে লব ৫ ও হর ৬-এর ভগ্নাংশ বিয়োগ। পরের সারিতে y-এর জায়গায় ঋণাত্মক ভগ্নাংশ বসাও, যার লব ২ ও হর ৩; পাশে এই ঋণাত্মক ভগ্নাংশ থেকে লব ৫ ও হর ৬-এর ভগ্নাংশ বিয়োগ করা হয়েছে। লঘিষ্ঠ সাধারণ হর ৬ নিয়ে সমতুল ভগ্নাংশে লেখো: প্রথম ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৪ ও হর ৬; তা থেকে লব ৫ ও হর ৬-এর ভগ্নাংশ বিয়োগ। বিয়োগ করে পাওয়া ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৯ ও হর ৬। লঘিষ্ঠ আকারে: ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৩ ও হর ২।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry><m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry><media id="eip-id1168466426384" alt="নির্দেশ: y-এর জায়গায় ঋণাত্মক ভগ্নাংশ বসাও, যার লব ২ ও হর ৩। বসানোর মানটি লাল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_038_img-01.png" /></media></entry>
+   <entry><media id="eip-id1168466426394" alt="বাঁ দিকের ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ২ ও হর ৩; এই ভগ্নাংশটি লাল রঙে দেখানো। তা থেকে ডান দিকের লব ৫ ও হর ৬-এর ভগ্নাংশ বিয়োগ করা হয়েছে।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_038_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লঘিষ্ঠ সাধারণ হর ৬ নিয়ে সমতুল ভগ্নাংশে লেখো।</entry>
+   <entry><m:math><m:mo>−</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>বিয়োগ করো।</entry>
+   <entry><m:math><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>6</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>ভগ্নাংশটিকে লঘিষ্ঠ আকারে লেখো।</entry>
+   <entry><m:math><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:math></entry>
+ </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id2626795" class="try">
+<exercise id="fs-id2425626">
+<problem id="fs-id1394714">
+<para id="fs-id2485777">রাশিটির মান নির্ণয় করো: <m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>। দেওয়া আছে <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1365206">
+<para id="fs-id2691542"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id2218317" class="try">
+<exercise id="fs-id2284769">
+<problem id="fs-id1510976">
+<para id="fs-id1937025">রাশিটির মান নির্ণয় করো: <m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math>। দেওয়া আছে <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2774874">
+<para id="fs-id1511894"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>23</m:mn></m:mrow><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1531562"><exercise id="fs-id1365952">
+<problem id="fs-id2246480">
+<para id="fs-id1823586">রাশিটির মান নির্ণয় করো: <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow></m:math>। দেওয়া আছে <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2661182">
+<title>সমাধান</title>
+<para id="fs-id2339842">চলগুলির মান রাশিতে বসাও। লক্ষ্য করো রাশিটি: <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> এখানে ঘাত ২ শুধু এই চলটির উপর প্রযোজ্য: <m:math><m:mi>x</m:mi><m:mo>.</m:mo></m:math></para>
+<table id="eip-id1168467326105" class="unnumbered unstyled" aria-label="প্রথম সারিতে ২ গুণ x-এর বর্গ গুণ y। পরের সারিতে x-এর জায়গায় লব ১ ও হর ৪-এর ভগ্নাংশ এবং y-এর জায়গায় ঋণাত্মক ভগ্নাংশ, যার লব ২ ও হর ৩, বসাও। পাশে ২ গুণ লব ১ ও হর ৪-এর পুরো ভগ্নাংশের বর্গ, গুণ ঋণাত্মক ভগ্নাংশ, যার লব ২ ও হর ৩। আগে ঘাতের মান নির্ণয় করলে ২ গুণ লব ১ ও হর ১৬-এর ভগ্নাংশ, গুণ ঋণাত্মক ভগ্নাংশ, যার লব ২ ও হর ৩। গুণফল ঋণাত্মক হবে: সামনের ঋণাত্মক চিহ্নের পরে লব ২ ও হর ১-এর ভগ্নাংশ, গুণ লব ১ ও হর ১৬-এর ভগ্নাংশ, গুণ লব ২ ও হর ৩-এর ভগ্নাংশ। গুণ করে পাওয়া ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৪ ও হর ৪৮। সাধারণ গুণনীয়ক বাদ দেওয়ার ধাপে ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ১ গুণ ৪ ও হর ৪ গুণ ১২; লব ও হরের ৪ কাটা, অর্থাৎ উভয়কে ৪ দিয়ে ভাগ করা হয়েছে। শেষ ফল: ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ১ ও হর ১২।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry><media id="eip-id1165719606616" alt="রাশিটি হল ২ গুণ x-এর বর্গ গুণ y; ঘাত ২ শুধু x-এর উপর প্রযোজ্য।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_039_img-02.png" /></media></entry>
+ </row>
+ <row>
+   <entry><media id="eip-id1168464883701" alt="নির্দেশ: x-এর জায়গায় লব ১ ও হর ৪-এর ভগ্নাংশ এবং y-এর জায়গায় ঋণাত্মক ভগ্নাংশ, যার লব ২ ও হর ৩, বসাও। প্রথম মানটি লাল এবং দ্বিতীয়টি নীল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_039_img-01.png" /></media></entry>
+   <entry><media id="eip-id1165719606642" alt="২ গুণ বন্ধনীর ভিতরে লব ১ ও হর ৪-এর পুরো ভগ্নাংশের বর্গ, গুণ বন্ধনীর ভিতরে ঋণাত্মক ভগ্নাংশ, যার লব ২ ও হর ৩। প্রথম ভগ্নাংশটি লাল এবং ঋণাত্মক ভগ্নাংশটি নীল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_039_img-03.png" /></media></entry>
+ </row>
+ <row>
+   <entry>আগে ঘাতের মান নির্ণয় করো।</entry>
+   <entry><media id="eip-id1165719606659" alt="২ গুণ বন্ধনীর ভিতরে লব ১ ও হর ১৬-এর ভগ্নাংশ, গুণ বন্ধনীর ভিতরে ঋণাত্মক ভগ্নাংশ, যার লব ২ ও হর ৩।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_039_img-04.png" /></media></entry>
+ </row>
+<row>
+   <entry>গুণ করো। গুণফল ঋণাত্মক হবে।</entry>
+   <entry><media id="eip-id1165719606676" alt="সামনের ঋণাত্মক চিহ্নের পরে লব ২ ও হর ১-এর ভগ্নাংশ, গুণ লব ১ ও হর ১৬-এর ভগ্নাংশ, গুণ লব ২ ও হর ৩-এর ভগ্নাংশ।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_039_img-05.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লবগুলি এবং হরগুলি গুণ করো।</entry>
+   <entry><media id="eip-id1165719606692" alt="ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৪ ও হর ৪৮।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_039_img-06.png" /></media></entry>
+ </row>
+ <row>
+   <entry>লব ও হরকে সাধারণ গুণনীয়ক দিয়ে ভাগ করো।</entry>
+   <entry><media id="eip-id1165719606709" alt="ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ১ গুণ ৪ ও হর ৪ গুণ ১২। লব ও হরের সাধারণ গুণনীয়ক ৪ কেটে দেখানো হয়েছে; অর্থাৎ লব ও হর উভয়কে ৪ দিয়ে ভাগ করা হয়েছে।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_039_img-07.png" /></media></entry>
+ </row>
+<row>
+   <entry>ভগ্নাংশটিকে লঘিষ্ঠ আকারে লেখো।</entry>
+   <entry><media id="eip-id1165719606726" alt="ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ১ ও হর ১২।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_039_img-08.png" /></media></entry>
+ </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id3445893" class="try">
+<exercise id="fs-id1823766">
+<problem id="fs-id3320043">
+<para id="fs-id1933937">রাশিটির মান নির্ণয় করো: <m:math><m:mrow><m:mn>3</m:mn><m:mi>a</m:mi><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>। দেওয়া আছে <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1628065">
+<para id="fs-id2467040"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id2603357" class="try">
+<exercise id="fs-id2365302">
+<problem id="fs-id2816961">
+<para id="fs-id1961488">রাশিটির মান নির্ণয় করো: <m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>c</m:mi><m:mn>3</m:mn></m:msup><m:mi>d</m:mi></m:mrow></m:math>। দেওয়া আছে <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1269450">
+<para id="fs-id1543678"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1633522"><exercise id="fs-id1772076">
+<problem id="fs-id2270807">
+<para id="fs-id1979944">রাশিটির মান নির্ণয় করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow><m:mi>r</m:mi></m:mfrac></m:mrow></m:math>। দেওয়া আছে <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn><m:mo>,</m:mo><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo></m:mrow></m:math> এবং <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1500160">
+<title>সমাধান</title>
+<para id="fs-id3256030">রাশিতে চলগুলির মান বসিয়ে সরল করো। লবের পুরো যোগফল আগে নির্ণয় করো; এখানে হরে বসানো ৮ শূন্য নয়।</para>
+
+<table id="eip-id1168469803463" class="unnumbered unstyled" aria-label="প্রথম সারির ভগ্নাংশের লব p যোগ q, হর r। পরের সারির নির্দেশ: p-এর জায়গায় ঋণাত্মক ৪, q-এর জায়গায় ঋণাত্মক ২ এবং r-এর জায়গায় ৮ বসাও। পাশে ভগ্নাংশের লবে ঋণাত্মক ৪ যোগ বন্ধনীর ভিতরে ঋণাত্মক ২, হরে ৮। আগে লবের যোগ করলে পাওয়া ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৬ ও হর ৮। লঘিষ্ঠ আকারে: ভগ্নাংশের সামনে ঋণাত্মক চিহ্ন, লব ৩ ও হর ৪।"><label />
+<tgroup cols="2"><tbody>
+ <row>
+   <entry />
+   <entry align="center"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow><m:mi>r</m:mi></m:mfrac></m:mrow></m:math></entry>
+ </row>
+ <row>
+   <entry><media id="eip-id1168466313739" alt="নির্দেশ: p-এর জায়গায় ঋণাত্মক ৪, q-এর জায়গায় ঋণাত্মক ২ এবং r-এর জায়গায় ৮ বসাও। মানগুলি যথাক্রমে লাল, নীল ও লাল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_040_img-01.png" /></media></entry>
+   <entry align="center"><media id="eip-id1168466313750" alt="ভগ্নাংশের লবে ঋণাত্মক ৪ যোগ বন্ধনীর ভিতরে ঋণাত্মক ২, হরে ৮। লবের পুরো যোগফলকে ৮ দিয়ে ভাগ করা হবে। ঋণাত্মক ৪ ও ৮ লাল রঙে এবং ঋণাত্মক ২ নীল রঙে দেখানো।"><image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_04_05_040_img-02.png" /></media></entry>
+ </row>
+<row>
+   <entry>আগে লবের যোগ করো।</entry>
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mfrac><m:mn>6</m:mn><m:mn>8</m:mn></m:mfrac></m:math></entry>
+ </row>
+ <row>
+   <entry>ভগ্নাংশটিকে লঘিষ্ঠ আকারে লেখো।</entry>
+   <entry align="center"><m:math><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:math></entry>
+ </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id2270319" class="try">
+<exercise id="fs-id1388573">
+<problem id="fs-id2478189">
+<para id="fs-id2620301">রাশিটির মান নির্ণয় করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mi>c</m:mi></m:mfrac></m:mrow></m:math>। দেওয়া আছে <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>−7</m:mn><m:mo>,</m:mo></m:mrow></m:math> এবং <m:math><m:mrow><m:mspace width="0.2em" /><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2462757">
+<para id="fs-id2650253"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1208567" class="try">
+<exercise id="fs-id1722582">
+<problem id="fs-id2470922">
+<para id="fs-id1462929">রাশিটির মান নির্ণয় করো: <m:math><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mi>z</m:mi></m:mfrac></m:mrow></m:math>। দেওয়া আছে <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−18</m:mn><m:mo>,</m:mo></m:mrow></m:math> এবং <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1728161">
+<para id="fs-id1781684"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1935579" class="key-concepts">
+<title>মূল ধারণা</title>
+<list id="eip-352"><item><emphasis>দুটি ভগ্নাংশের লঘিষ্ঠ সাধারণ হর নির্ণয় করো।</emphasis> এখানে হরগুলি ধনাত্মক পূর্ণসংখ্যা। লঘিষ্ঠ সাধারণ হর হল হরগুলির লঘিষ্ঠ সাধারণ গুণিতক (ল.সা.গু.)। <list id="eip-id1170326533417" list-type="enumerated" number-style="arabic" class="stepwise"><item>প্রতিটি হরকে মৌলিক গুণনীয়কে বিশ্লেষণ করো। কোনো হর ১ হলে তার মৌলিক গুণনীয়ক নেই।</item>
+<item>মৌলিক গুণনীয়কগুলি দুটি সারিতে লেখো। যতটা সম্ভব একই গুণনীয়কের একটি করে জোড়া একই স্তম্ভে রাখো। বারবার আসা গুণনীয়ক বাদ দিও না; জোড়া না পাওয়া গুণনীয়কের জন্য আলাদা স্তম্ভ রাখো।</item>
+<item>প্রত্যেক স্তম্ভ থেকে একটি করে গুণনীয়ক নীচে নামাও।</item>
+<item>গুণনীয়কগুলি গুণ করো। গুণফলই হরগুলির ল.সা.গু.। দুই হরই ১ হলে তাদের ল.সা.গু. ১।</item>
+<item>হরগুলির ল.সা.গু.-ই ভগ্নাংশগুলির লঘিষ্ঠ সাধারণ হর। অন্য কোনো সাধারণ গুণিতকও একই হর হিসেবে নেওয়া যায়, কিন্তু লঘিষ্ঠ সাধারণ হরটি সবচেয়ে ছোটো ধনাত্মক সাধারণ গুণিতক।</item></list></item>
+<item><emphasis>সমতুল ভগ্নাংশের ধর্ম</emphasis><list id="eip-id1170322988097"><item>যদি <m:math><m:mi>a</m:mi><m:mo>, </m:mo><m:mi>b</m:mi></m:math> এবং <m:math><m:mi>c</m:mi></m:math> অঋণাত্মক পূর্ণসংখ্যা হয় এবং <m:math><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:math>, <m:math><m:mi>c</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:math> হয়, তবে <newline /><m:math><m:mfrac><m:mrow><m:mi>a</m:mi></m:mrow><m:mrow><m:mi>b</m:mi></m:mrow></m:mfrac>
+<m:mo>=</m:mo>
+<m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>⋅</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>⋅</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac></m:math> এবং <m:math><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>⋅</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>⋅</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi></m:mrow><m:mrow><m:mi>b</m:mi></m:mrow></m:mfrac></m:math>। অর্থাৎ লব ও হরকে একই অশূন্য সংখ্যা দিয়ে গুণ করলে ভগ্নাংশের মান বদলায় না। উল্টোভাবে, লব ও হর উভয়কে একই অশূন্য সাধারণ গুণনীয়ক দিয়ে ভাগ করলেও মান বদলায় না। এখানে লব এ শূন্য হতে পারে; হর বি এবং গুণনীয়ক সি শূন্য নয়।</item></list></item>
+<item><emphasis>দুটি ভগ্নাংশকে তাদের লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে রূপান্তর করো।</emphasis><list id="eip-id1170324058309" list-type="enumerated" number-style="arabic" class="stepwise"><item>লঘিষ্ঠ সাধারণ হর নির্ণয় করো।</item>
+<item>প্রতিটি ভগ্নাংশের হরকে কোন সংখ্যা দিয়ে গুণ করলে লঘিষ্ঠ সাধারণ হর পাওয়া যাবে, তা নির্ণয় করো।</item>
+<item>সমতুল ভগ্নাংশের ধর্ম ব্যবহার করো: লব ও হর উভয়কে দ্বিতীয় ধাপে পাওয়া একই সংখ্যা দিয়ে গুণ করো।</item>
+<item>লব ও হরের গুণগুলি করো।</item></list></item><item><emphasis>আলাদা হরের ভগ্নাংশ যোগ বা বিয়োগ করো।</emphasis><list id="eip-id1170322955166" list-type="enumerated" number-style="arabic" class="stepwise"><item>লঘিষ্ঠ সাধারণ হর নির্ণয় করো।</item>
+<item>লঘিষ্ঠ সাধারণ হর নিয়ে প্রতিটি ভগ্নাংশকে সমতুল ভগ্নাংশে লেখো।</item>
+<item>এবার লবগুলি যোগ করো বা প্রথম লব থেকে দ্বিতীয় লব বিয়োগ করো; একই হর রাখো।</item>
+<item>ফলকে লঘিষ্ঠ আকারে প্রকাশ করো।</item></list></item><item><emphasis>ভগ্নাংশের চারটি ক্রিয়ার সারাংশ</emphasis> প্রতিটি ভগ্নাংশের হর শূন্য নয়। ভাগের ক্ষেত্রে ভাজকও শূন্য হতে পারে না। গুণ বা ভাগের জন্য হর এক করার দরকার নেই। <list id="eip-id1170322929638"><item><emphasis>ভগ্নাংশের গুণ:</emphasis> লবগুলিকে গুণ করো এবং হরগুলিকে গুণ করো। নীচের সূত্রে ফলের লব এ গুণ সি এবং হর বি গুণ ডি। হর বি ও ডি শূন্য নয়। <equation id="eip-id1170323965022"><m:math><m:mfrac><m:mrow><m:mi>a</m:mi></m:mrow><m:mrow><m:mi>b</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mi>d</m:mi></m:mrow></m:mfrac></m:math></equation></item>
+<item><emphasis>ভগ্নাংশের ভাগ (নীচের সূত্রে উৎসের ভুল আছে):</emphasis> প্রথম ভগ্নাংশকে দ্বিতীয় ভগ্নাংশের গুণাত্মক বিপরীত দিয়ে গুণ করো। শূন্য নয় এমন ভগ্নাংশের লব ও হরের স্থান বদলালে তার গুণাত্মক বিপরীত পাওয়া যায়। এখানে বি, সি ও ডি শূন্য নয়। উৎসের ভুল: নীচের সূত্রে প্রথম দুই ভগ্নাংশের মাঝে যোগচিহ্ন (+) ছাপা আছে; ভাগের নিয়মে সেখানে ভাগচিহ্ন (÷) হবে। মূল সূত্রটি অপরিবর্তিত রাখা হয়েছে। <equation id="eip-id1170324128063"><m:math><m:mfrac><m:mrow><m:mi>a</m:mi></m:mrow><m:mrow><m:mi>b</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi></m:mrow><m:mrow><m:mi>b</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mi>d</m:mi></m:mrow><m:mrow><m:mi>c</m:mi></m:mrow></m:mfrac></m:math></equation> সঠিক পাঠ: লব এ, হর বি-এর ভগ্নাংশকে লব সি, হর ডি-এর ভগ্নাংশ দিয়ে ভাগ করলে প্রথম ভগ্নাংশকে লব ডি, হর সি-এর ভগ্নাংশ দিয়ে গুণ করতে হয়। উপরের মুদ্রিত সমতাটি যোগের সূত্র নয়।</item>
+<item><emphasis>ভগ্নাংশের যোগ:</emphasis> হর এক হলে লবগুলি যোগ করো। যোগফলকে লবে লেখো, আর একই হর রাখো। হর আলাদা হলে প্রথমে লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে রূপান্তর করো। নীচের সূত্রে ফলের লব এ যোগ বি এবং হর সি; সি শূন্য নয়। <equation id="eip-id1170326522136"><m:math><m:mfrac><m:mrow><m:mi>a</m:mi></m:mrow><m:mrow><m:mi>c</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mi>b</m:mi></m:mrow><m:mrow><m:mi>c</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mrow><m:mi>c</m:mi></m:mrow></m:mfrac></m:math></equation></item>
+<item><emphasis>ভগ্নাংশের বিয়োগ:</emphasis> হর এক হলে প্রথম লব থেকে দ্বিতীয় লব বিয়োগ করো। বিয়োগফলকে লবে লেখো, আর একই হর রাখো। হর আলাদা হলে প্রথমে লঘিষ্ঠ সাধারণ হর নিয়ে সমতুল ভগ্নাংশে রূপান্তর করো। নীচের সূত্রে ফলের লব এ বিয়োগ বি এবং হর সি; সি শূন্য নয়। <equation id="eip-id1170323796197"><m:math><m:mfrac><m:mrow><m:mi>a</m:mi></m:mrow><m:mrow><m:mi>c</m:mi></m:mrow></m:mfrac><m:mo>-</m:mo><m:mfrac><m:mrow><m:mi>b</m:mi></m:mrow><m:mrow><m:mi>c</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi></m:mrow><m:mrow><m:mi>c</m:mi></m:mrow></m:mfrac></m:math></equation></item></list></item>
+<item><emphasis>জটিল ভগ্নাংশ সরল করো।</emphasis> জটিল ভগ্নাংশের প্রধান ভগ্নাংশ-রেখার লব বা হর, অথবা উভয়েই ভগ্নাংশ থাকে। প্রধান রেখার উপরের পুরো রাশিটি লব, আর নীচের পুরো রাশিটি হর। সব ভিতরের ভগ্নাংশের হরও শূন্য নয়। <list id="eip-id1170321558052" list-type="enumerated" number-style="arabic" class="stepwise"><item>ক্রিয়ার ক্রম মেনে প্রধান ভগ্নাংশ-রেখার লবের পুরো রাশিটি সরল করো।</item>
+<item>ক্রিয়ার ক্রম মেনে প্রধান ভগ্নাংশ-রেখার হরের পুরো রাশিটি সরল করো। এই হর শূন্য হলে জটিল ভগ্নাংশটি অসংজ্ঞায়িত।</item>
+<item>সরল করা লবকে সরল করা হর দিয়ে ভাগ করো, উল্টোটি নয়। ভাজক শূন্য হতে পারে না।</item>
+<item>সম্ভব হলে ফলকে লঘিষ্ঠ আকারে প্রকাশ করো। মূল রাশিতে যে মানগুলিতে কোনো হর শূন্য হয়, সরল করার পরও সেগুলি নেওয়া যাবে না।</item>
+</list></item></list></section>
+<section id="fs-id2140985" class="section-exercises">
+<section id="fs-id1392232" class="practice-perfect"><title>অনুশীলনে দক্ষতা বাড়ে</title><para id="fs-id1264711"><emphasis effect="bold">লঘিষ্ঠ সাধারণ হর নির্ণয়</emphasis> </para><para id="eip-638">নীচের অনুশীলনীগুলিতে প্রতিটি ভগ্নাংশগুচ্ছের লঘিষ্ঠ সাধারণ হর নির্ণয় করো। প্রদত্ত হরগুলির ল.সা.গু. ব্যবহার করো।</para><exercise id="fs-id1693271">
+<problem id="fs-id2165554">
+<para id="fs-id1612201"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1336524">
+<problem id="fs-id2443844">
+<para id="fs-id1410437"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1330160">
+<para id="fs-id2620045">20</para>
+</solution>
+</exercise>
+<exercise id="fs-id1381545">
+<problem id="fs-id1518942">
+<para id="fs-id2789410"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1613697">
+<problem id="fs-id1166761303488">
+<para id="fs-id1509394"><m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2278392">
+<para id="fs-id2880438">48</para>
+</solution>
+</exercise>
+<exercise id="fs-id1282534">
+<problem id="fs-id2939653">
+<para id="fs-id2399108"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mrow><m:mn>25</m:mn></m:mrow><m:mrow><m:mn>42</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1822983">
+<problem id="fs-id2265456">
+<para id="fs-id1225002"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>23</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>48</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2670099">
+<para id="fs-id3292935">240</para>
+</solution>
+</exercise>
+<exercise id="fs-id4338002">
+<problem id="fs-id1346528">
+<para id="fs-id2296178"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>21</m:mn></m:mrow><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mrow><m:mn>39</m:mn></m:mrow><m:mrow><m:mn>56</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1546363">
+<problem id="fs-id1266693">
+<para id="fs-id3327243"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>18</m:mn></m:mrow><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mrow><m:mn>33</m:mn></m:mrow><m:mrow><m:mn>49</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2150140">
+<para id="fs-id3165471">245</para>
+</solution>
+</exercise>
+<exercise id="fs-id2453013">
+<problem id="fs-id1341463">
+<para id="fs-id1166761237483"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2880413">
+<problem id="fs-id4127957">
+<para id="fs-id2277404"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165958">
+<para id="fs-id1312557">60</para>
+</solution>
+</exercise>
+<para id="fs-id1726052"><emphasis effect="bold">লঘিষ্ঠ সাধারণ হরযুক্ত সমতুল ভগ্নাংশে রূপান্তর</emphasis> </para><para id="eip-423">নীচের অনুশীলনীগুলিতে প্রদত্ত লঘিষ্ঠ সাধারণ হর ব্যবহার করে ভগ্নাংশগুলিকে সমতুল ভগ্নাংশে রূপান্তর করো।</para><exercise id="fs-id2840494">
+<problem id="fs-id1575684">
+<para id="fs-id2334041"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2267080">
+<problem id="fs-id2269379">
+<para id="fs-id942496"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2303878">
+<para id="fs-id1909873"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1950937">
+<problem id="fs-id2149494">
+<para id="fs-id1562493"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mo>=</m:mo><m:mn>24</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2224474">
+<problem id="fs-id1858526">
+<para id="fs-id2666150"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mo>=</m:mo><m:mn>24</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1605432">
+<para id="fs-id2819323"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1371986">
+<problem id="fs-id2134081">
+<para id="fs-id2715571"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mo>-</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mo>=</m:mo><m:mn>48</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2454125">
+<problem id="fs-id1245510">
+<para id="fs-id2924694"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mo>-</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mo>=</m:mo><m:mn>48</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1614232">
+<para id="fs-id2629699"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>33</m:mn></m:mrow><m:mrow><m:mn>48</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>20</m:mn></m:mrow><m:mrow><m:mn>48</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1458722">
+<problem id="fs-id2707468">
+<para id="fs-id1465158"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1499436">
+<problem id="fs-id2471534">
+<para id="fs-id2139816"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> এবং <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> লঘিষ্ঠ সাধারণ হর <m:math><m:mrow><m:mo>=</m:mo><m:mn>60</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1835207">
+<para id="fs-id1788989"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>20</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>45</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>36</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1309307"><emphasis effect="bold">ভিন্ন হরযুক্ত ভগ্নাংশের যোগ ও বিয়োগ</emphasis> </para><para id="eip-429">নীচের অনুশীলনীগুলিতে যোগ বা বিয়োগ করো। ফলটি লঘিষ্ঠ আকারে লেখো।</para><exercise id="fs-id1752471">
+<problem id="fs-id1562014">
+<para id="fs-id1560076"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2308556">
+<problem id="fs-id1764836">
+<para id="fs-id871832"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1559966">
+<para id="fs-id2198454"><m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1750268">
+<problem id="fs-id1798687">
+<para id="fs-id1968540"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1859655">
+<problem id="fs-id2310581">
+<para id="fs-id1950381"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2662763">
+<para id="fs-id1791921"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1311590">
+<problem id="fs-id2751084">
+<para id="fs-id2648982"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1356855">
+<problem id="fs-id1338286">
+<para id="fs-id2279785"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2198534">
+<para id="fs-id2813321"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1805296">
+<problem id="fs-id2197014">
+<para id="fs-id2281472"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2277350">
+<problem id="fs-id1789964">
+<para id="fs-id1370472"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1166761270071">
+<para id="fs-id4333775"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2790511">
+<problem id="fs-id2275695">
+<para id="fs-id2994172"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2452675">
+<problem id="fs-id1565941">
+<para id="fs-id2261411"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1363941">
+<para id="fs-id2257996"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>23</m:mn></m:mrow><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1789503">
+<problem id="fs-id1379598">
+<para id="fs-id2371142"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id761801">
+<problem id="fs-id1563224">
+<para id="fs-id3302598"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1358209">
+<para id="fs-id1919046"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>19</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1371604">
+<problem id="fs-id2376208">
+<para id="fs-id2619715"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2266447">
+<problem id="fs-id1694179">
+<para id="fs-id2494660"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2669263">
+<para id="fs-id1378522"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>48</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1547777">
+<problem id="fs-id1357061">
+<para id="fs-id1341395"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2646654">
+<problem id="fs-id2325525">
+<para id="fs-id1880999"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2906250">
+<para id="fs-id1358780"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1543448">
+<problem id="fs-id1988732">
+<para id="fs-id1817001"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2129495">
+<problem id="fs-id2661765">
+<para id="fs-id2661255"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1807698">
+<para id="fs-id2711243"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2771254">
+<problem id="fs-id1732927">
+<para id="fs-id3273740"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>27</m:mn></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1630988">
+<problem id="fs-id2277299">
+<para id="fs-id2951922"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1210856">
+<para id="fs-id1732060"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2279472">
+<problem id="fs-id2165624">
+<para id="fs-id1601933"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>25</m:mn></m:mrow><m:mrow><m:mn>42</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1561338">
+<problem id="fs-id2173746">
+<para id="fs-id3401582"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>23</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>48</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1328350">
+<para id="fs-id3340623"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>53</m:mn></m:mrow><m:mrow><m:mn>80</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2382277">
+<problem id="fs-id2451244">
+<para id="fs-id1239728"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>39</m:mn></m:mrow><m:mrow><m:mn>56</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>22</m:mn></m:mrow><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1781874">
+<problem id="fs-id1701793">
+<para id="fs-id1595018"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>33</m:mn></m:mrow><m:mrow><m:mn>49</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>18</m:mn></m:mrow><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2217938">
+<para id="fs-id2295647"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>291</m:mn></m:mrow><m:mrow><m:mn>245</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id892228">
+<problem id="fs-id2482369">
+<para id="fs-id1570507"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1977577">
+<problem id="fs-id1356663">
+<para id="fs-id2205607"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1485180">
+<para id="fs-id1586226"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1944491">
+<problem id="fs-id1811610">
+<para id="fs-id1511680"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1842640">
+<problem id="fs-id1967647">
+<para id="fs-id1369121"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2484072">
+<para id="fs-id1278966"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2201189">
+<problem id="fs-id769305">
+<para id="fs-id1972086"><m:math><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2676565">
+<problem id="fs-id2730066">
+<para id="fs-id2330719"><m:math><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id4131869">
+<para id="fs-id764524"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1129708">
+<problem id="fs-id2257843">
+<para id="fs-id1462568"><m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1516056">
+<problem id="fs-id1299371">
+<para id="fs-id1767322"><m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2478269">
+<para id="fs-id2378224"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2176062">
+<problem id="fs-id2954632">
+<para id="fs-id1602619"><m:math><m:mrow><m:mfrac><m:mi>x</m:mi><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1511787">
+<problem id="fs-id1597344">
+<para id="fs-id2377079"><m:math><m:mrow><m:mfrac><m:mi>y</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1881106">
+<para id="fs-id1909550"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2676675">
+<problem id="fs-id1808029">
+<para id="fs-id1891088"><m:math><m:mrow><m:mfrac><m:mi>y</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1811499">
+<problem id="fs-id2278558">
+<para id="fs-id2215867"><m:math><m:mrow><m:mfrac><m:mi>x</m:mi><m:mn>5</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2135697">
+<para id="fs-id835385"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1502515"><emphasis effect="bold">ভগ্নাংশের যোগ, বিয়োগ, গুণ ও ভাগ চেনা ও প্রয়োগ</emphasis> </para><para id="eip-802">নীচের অনুশীলনীগুলিতে নির্দেশিত গাণিতিক প্রক্রিয়াগুলি সম্পন্ন করো। উত্তর লঘিষ্ঠ আকারে লেখো।</para><exercise id="fs-id1795724">
+<problem id="fs-id2599807">
+<para id="fs-id2678249"><list id="eip-id1168466001273" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id2273527">
+<problem id="fs-id1367083">
+<para id="fs-id2905950"><list id="eip-id1168469672095" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id2790801">
+<para id="fs-id1579914"><list id="eip-id1168468748585" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mn>4</m:mn></m:math></item></list></para></solution>
+</exercise>
+<exercise id="fs-id1221888">
+<problem id="fs-id1340061">
+<para id="fs-id2398143"><list id="eip-id1168466595711" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mo>-</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mo>-</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1407818">
+<problem id="fs-id1950558">
+<para id="fs-id2326593"><list id="eip-id1168466163113" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mo>-</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mo>-</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id2784436">
+<para id="fs-id1345691"><list id="eip-id1168466050341" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>37</m:mn><m:mn>40</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>10</m:mn></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+<exercise id="fs-id2777894">
+<problem id="fs-id1714014">
+<para id="fs-id1313240"><list id="eip-id1168466037179" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>n</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>n</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1542072">
+<problem id="fs-id2166810">
+<para id="fs-id2471040"><list id="eip-id1168469832555" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>a</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>a</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></item></list></para></problem>
+<solution id="fs-id2132234">
+<para id="fs-id2299611"><list id="eip-id1168467335382" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mrow><m:mn>9</m:mn><m:mi>a</m:mi></m:mrow><m:mrow><m:mn>14</m:mn></m:mrow></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mrow><m:mn>9</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>14</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+<exercise id="fs-id1357328">
+<problem id="fs-id2953683">
+<para id="fs-id2630564"><list id="eip-id1168466124567" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn><m:mi>d</m:mi></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn><m:mi>d</m:mi></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id2749365">
+<problem id="fs-id1612017">
+<para id="fs-id1241982"><list id="eip-id1168469873489" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>q</m:mi></m:mrow><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>q</m:mi></m:mrow><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item></list></para></problem>
+<solution id="fs-id1387204">
+<para id="fs-id1984845"><list id="eip-id1168468520212" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>q</m:mi></m:mrow><m:mrow><m:mn>27</m:mn></m:mrow></m:mfrac></m:mrow></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>25</m:mn><m:mi>q</m:mi></m:mrow><m:mrow><m:mn>45</m:mn></m:mrow></m:mfrac></m:mrow></m:math></item></list></para></solution>
+</exercise>
+
+<exercise id="fs-id1308127">
+<problem id="fs-id1517888">
+<para id="fs-id1563316"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+
+<exercise id="fs-id2203099">
+<problem id="fs-id2658576">
+<para id="fs-id2204668"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="sol-00001">
+  <para id="para-00002"><m:math><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:math></para>
+</solution>
+</exercise>
+
+<exercise id="fs-id2863928">
+<problem id="fs-id1371092">
+<para id="fs-id1632984"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2357298">
+<problem id="fs-id2208794">
+<para id="fs-id1607348"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1781788">
+<para id="fs-id1629180"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2946174">
+<problem id="fs-id607139">
+<para id="fs-id1350806"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1525903">
+<problem id="fs-id1511182">
+<para id="fs-id1927696"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1394340">
+<para id="fs-id1724827"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1693547">
+<problem id="fs-id3264246">
+<para id="fs-id2280686"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>21</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1369432">
+<problem id="fs-id2141070">
+<para id="fs-id2877396"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2295777">
+<para id="fs-id1943615"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2165572">
+<problem id="fs-id1208719">
+<para id="fs-id1363106"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mi>y</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id4120740">
+<problem id="fs-id2130636">
+<para id="fs-id1921058"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1913664">
+<para id="fs-id2684999"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>−33</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>88</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1542547">
+<problem id="fs-id3398787">
+<para id="fs-id2199392"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>12</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>9</m:mn><m:mi>a</m:mi></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math>। সম্পাদকীয় শর্ত: মূল রাশির হরে a আছে, তাই a-এর মান শূন্য নয়।</para>
+</problem>
+</exercise>
+<exercise id="fs-id2832049">
+<problem id="fs-id2298817">
+<para id="fs-id3216948"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn><m:mi>y</m:mi></m:mrow><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>15</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow></m:math>। সম্পাদকীয় শর্ত: মূল রাশির হরে y আছে, তাই y-এর মান শূন্য নয়।</para>
+</problem>
+<solution id="fs-id2649935">
+<para id="fs-id2835276"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mrow><m:mn>39</m:mn></m:mrow></m:mfrac></m:mrow></m:math>। সম্পাদকীয় শর্ত: মূল রাশির জন্য y-এর মান শূন্য নয়।</para>
+</solution>
+</exercise>
+<para id="fs-id1407162"><emphasis effect="bold">গাণিতিক প্রক্রিয়ার ক্রম মেনে জটিল ভগ্নাংশ সরল করা</emphasis> </para><para id="eip-313">নীচের অনুশীলনীগুলিতে সরল করো।</para><exercise id="fs-id1484431">
+<problem id="fs-id1266695">
+<para id="fs-id1322383"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id4222157">
+<problem id="fs-id3448074">
+<para id="fs-id2279309"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1576804">
+<para id="fs-id2264697"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>81</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1325326">
+<problem id="fs-id818515">
+<para id="fs-id1262963"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>4</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id817327">
+<problem id="fs-id4211933">
+<para id="fs-id3407521"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>3</m:mn><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1382289">
+<para id="fs-id2619954">32</para>
+</solution>
+</exercise>
+<exercise id="fs-id1827264">
+<problem id="fs-id1582367">
+<para id="fs-id1246341"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1238942">
+<problem id="fs-id1567649">
+<para id="fs-id1569725"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1458024">
+<para id="fs-id1970690"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>36</m:mn></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1919907">
+<problem id="fs-id1931788">
+<para id="fs-id2607163"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1570614">
+<problem id="fs-id1386912">
+<para id="fs-id1733758"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1904848">
+<para id="fs-id1572134"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>60</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1311655">
+<problem id="fs-id2316211">
+<para id="fs-id2199117"><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1736945">
+<problem id="fs-id1581539">
+<para id="fs-id2817140"><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1401807">
+<para id="fs-id1920884"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2139031">
+<problem id="fs-id1733947">
+<para id="fs-id1366497"><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>7</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1762426">
+<problem id="fs-id2174033">
+<para id="fs-id1605492"><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1567354">
+<para id="fs-id1836246"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id2579369"><emphasis effect="bold">সমন্বিত অনুশীলন</emphasis> </para><para id="eip-125">নীচের অনুশীলনীগুলিতে সরল করো।</para><exercise id="fs-id1892707">
+<problem id="fs-id1301015">
+<para id="fs-id1160479"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1823569">
+<problem id="fs-id1356051">
+<para id="fs-id2165581"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2279697">
+<para id="fs-id2627999"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>19</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2270178">
+<problem id="fs-id2820295">
+<para id="fs-id2567808"><m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2306540">
+<problem id="fs-id2820274">
+<para id="fs-id2567844"><m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1263745">
+<para id="fs-id1464453">−9</para>
+</solution>
+</exercise>
+<exercise id="fs-id769205">
+<problem id="fs-id2833139">
+<para id="fs-id2751683"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2007280">
+<problem id="fs-id2369220">
+<para id="fs-id1827704"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1762282">
+<para id="fs-id1189140"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>91</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1860918">
+<problem id="fs-id2645447">
+<para id="fs-id2205739"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2474528">
+<problem id="fs-id2277293">
+<para id="fs-id2425029"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1594536">
+<para id="fs-id2218618"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1529415">
+<problem id="fs-id1236123">
+<para id="fs-id1580837"><m:math><m:mrow><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2212470">
+<problem id="fs-id1510273">
+<para id="fs-id3195631"><m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1404607">
+<para id="fs-id2567736"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1919873">
+<problem id="fs-id2267662">
+<para id="fs-id1565221"><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>19</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1160473">
+<problem id="fs-id2269486">
+<para id="fs-id1549457"><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2487973">
+<para id="fs-id2137954">1</para>
+</solution>
+</exercise>
+<exercise id="fs-id2198553">
+<problem id="fs-id1529639">
+<para id="fs-id1970858"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2926286">
+<problem id="fs-id1543940">
+<para id="fs-id2139913"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1826390">
+<para id="fs-id2433503"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>22</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id2678855">নীচের অনুশীলনীগুলিতে চলের দেওয়া মান বসিয়ে রাশির মান নির্ণয় করো। উত্তর লঘিষ্ঠ আকারে লেখো; প্রয়োজনে অপ্রকৃত ভগ্নাংশ ব্যবহার করো।</para>
+<exercise id="fs-id1742183">
+<problem id="fs-id2453957">
+<para id="fs-id2151244"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন<newline /><list id="eip-id1168468301550" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1829310">
+<problem id="fs-id1391659">
+<para id="fs-id1969382"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন<newline /><list id="eip-id1168466661076" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>3</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id1816448">
+<para id="fs-id1795862"><list id="eip-id1168468416603" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mn>−1</m:mn></m:math></item></list></para></solution>
+</exercise>
+<exercise id="fs-id2298245">
+<problem id="fs-id3195456">
+<para id="fs-id1522392"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন<newline /><list id="eip-id1168466145706" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1517657">
+<problem id="fs-id2700271">
+<para id="fs-id2201201"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন<newline /><list id="eip-id1168466026714" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>11</m:mn><m:mn>12</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id2160894">
+<para id="fs-id1967476"><list id="eip-id1168466154679" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mn> 0</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+<exercise id="fs-id1371534">
+<problem id="fs-id2296162">
+<para id="fs-id2704028"><m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <list id="eip-id1168469522774" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1336683">
+<problem id="fs-id1919317">
+<para id="fs-id1824484"><m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <list id="eip-id1168466661039" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id1582387">
+<para id="fs-id2594218"><list id="eip-id1168468725882" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mn>−1</m:mn></m:math></item></list></para></solution>
+</exercise>
+<exercise id="fs-id1566707">
+<problem id="fs-id1944626">
+<para id="fs-id2197597"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mi>w</m:mi></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <list id="eip-id1168469523171" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>w</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mi>w</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1542261">
+<problem id="fs-id2472320">
+<para id="fs-id1729362"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mi>w</m:mi></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <list id="eip-id1168466154678" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mi>w</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mi>w</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:math></item></list></para></problem>
+<solution id="fs-id1800603">
+<para id="fs-id1947559"><list id="eip-id1168467310253" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:math></item></list></para></solution>
+</exercise>
+<exercise id="fs-id1298696">
+<problem id="fs-id2479126">
+<para id="fs-id1390294"><m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>p</m:mi><m:mn>2</m:mn></m:msup><m:mi>q</m:mi></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math>।</para>
+</problem>
+</exercise>
+<exercise id="fs-id2206208">
+<problem id="fs-id1515895">
+<para id="fs-id1300013"><m:math><m:mrow><m:mn>5</m:mn><m:msup><m:mi>m</m:mi><m:mn>2</m:mn></m:msup><m:mi>n</m:mi></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math>।</para>
+</problem>
+<solution id="fs-id2304204">
+<para id="fs-id769247"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id2880607">
+<problem id="fs-id1410621">
+<para id="fs-id2431902"><m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <m:math><m:mrow> <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow> <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>।</para>
+</problem>
+</exercise>
+<exercise id="fs-id2212088">
+<problem id="fs-id2172630">
+<para id="fs-id2144930"><m:math><m:mrow><m:mn>8</m:mn><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>v</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <m:math><m:mrow><m:mspace width="0.2em" /><m:mi>u</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> এবং <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>।</para>
+</problem>
+<solution id="fs-id2486429">
+<para id="fs-id2842873"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1977252">
+<problem id="fs-id2306335">
+<para id="fs-id2266512"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>u</m:mi><m:mo>+</m:mo><m:mi>v</m:mi></m:mrow><m:mi>w</m:mi></m:mfrac></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn><m:mo>,</m:mo><m:mi>v</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn><m:mo>,</m:mo><m:mi>w</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>।</para>
+</problem>
+</exercise>
+<exercise id="fs-id2270617">
+<problem id="fs-id2192202">
+<para id="fs-id1631316"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>+</m:mo><m:mi>n</m:mi></m:mrow><m:mi>p</m:mi></m:mfrac></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mo>,</m:mo><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math>।</para>
+</problem>
+<solution id="fs-id2486692">
+<para id="fs-id2707139">−2</para>
+</solution>
+</exercise>
+<exercise id="fs-id825594">
+<problem id="fs-id2648730">
+<para id="fs-id1582493"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow></m:mfrac></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow></m:math>।</para>
+</problem>
+</exercise>
+<exercise id="fs-id1394420">
+<problem id="fs-id1949529">
+<para id="fs-id1756409"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>r</m:mi><m:mo>−</m:mo><m:mi>s</m:mi></m:mrow><m:mrow><m:mi>r</m:mi><m:mo>+</m:mo><m:mi>s</m:mi></m:mrow></m:mfrac></m:mrow></m:math> রাশিটির মান নির্ণয় করো, যখন <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>−5</m:mn></m:mrow></m:math>।</para>
+</problem>
+<solution id="fs-id3294263">
+<para id="fs-id2603810">3</para>
+</solution>
+</exercise>
+</section><section id="fs-id1321595" class="everyday">
+<title>রোজকার জীবনে গণিত</title>
+<exercise id="fs-id361712">
+<problem id="fs-id1752622">
+<para id="fs-id1862457"><emphasis effect="bold">ঘর সাজানো</emphasis> — লারন্ডা তার সোফার ছোটো কুশনগুলির কভার তৈরি করছে। প্রতিটি কভারের জন্য তার দরকার <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math> গজ ছাপা নকশাযুক্ত কাপড় এবং <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> গজ একরঙা কাপড়। প্রতিটি কুশনের কভারের জন্য লারন্ডার মোট কত গজ কাপড় দরকার?</para>
+</problem>
+</exercise>
+<exercise id="fs-id3253872">
+<problem id="fs-id1788976">
+<para id="fs-id2367854"><emphasis effect="bold">কুকি তৈরি</emphasis> — ভ্যানেসা চকোলেট চিপ কুকি এবং ওটমিল কুকি তৈরি করছে। চকোলেট চিপ কুকির জন্য তার দরকার <m:math><m:mrow><m:mn>1</m:mn><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> কাপ চিনি এবং ওটমিল কুকির জন্য <m:math><m:mrow><m:mn>1</m:mn><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> কাপ চিনি। সব মিলিয়ে তার কত কাপ চিনি দরকার?</para>
+</problem>
+<solution id="fs-id1242631">
+<para id="fs-id1481955">তার দরকার <m:math><m:mrow><m:mn>2</m:mn><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> কাপ চিনি।</para>
+</solution>
+</exercise>
+</section>
+<section id="fs-id2265862" class="writing">
+<title>লিখে প্রকাশ করো</title>
+<exercise id="fs-id2661875">
+<problem id="fs-id1247119">
+<para id="fs-id1932985">ভগ্নাংশ যোগ বা বিয়োগ করতে হর একই হওয়া কেন দরকার, তা ব্যাখ্যা করো।</para>
+</problem>
+</exercise>
+<exercise id="fs-id1630265">
+<problem id="fs-id2436226">
+<para id="fs-id2459947">দুটি ভগ্নাংশের লঘিষ্ঠ সাধারণ হর কীভাবে নির্ণয় করতে হয়, তা ব্যাখ্যা করো।</para>
+</problem>
+<solution id="fs-id1529337">
+<para id="fs-id1466885">উত্তর বিভিন্ন রকম হতে পারে।</para>
+</solution>
+</exercise>
+</section><section id="eip-284" class="self-check"><title>নিজের শেখা যাচাই করো</title><para id="eip-id1168469742398"><span class="token">ⓐ</span> অনুশীলনীগুলি শেষ করার পরে, এই পাঠের শেখার উদ্দেশ্যগুলি কতটা আয়ত্ত করেছ, তা যাচাই করতে এই তালিকাটি ব্যবহার করো।
+</para>
+
+
+<para id="eip-567"><figure id="eip-id1164270985699" class="unnumbered"><label /><media id="eip-id1164270985702" alt="নিজের শেখা যাচাই করার তালিকা। প্রতিটি কাজের জন্য তিনটি অবস্থার একটি বেছে নাও: ‘আত্মবিশ্বাসের সঙ্গে পারি’, ‘কিছুটা সাহায্য পেলে পারি’, অথবা ‘না, বুঝতে পারিনি’। কাজগুলি হলো: ভিন্ন হরযুক্ত ভগ্নাংশ যোগ ও বিয়োগ করা; ভগ্নাংশের যোগ, বিয়োগ, গুণ ও ভাগ চেনা ও প্রয়োগ করা; গাণিতিক প্রক্রিয়ার ক্রম মেনে জটিল ভগ্নাংশ সরল করা; এবং ভগ্নাংশযুক্ত বীজগাণিতিক রাশিতে চলের মান বসিয়ে রাশির মান নির্ণয় করা।"><image mime-type="image/jpg" src="../../media/CNX_BMath_Figure_AppB_024.jpg" /></media></figure>
+</para><para id="eip-id1168466075811"><span class="token">ⓑ</span> তালিকায় দেওয়া তোমার উত্তরগুলি বিবেচনা করে বলো, পরের পাঠের জন্য তুমি ভালোভাবে প্রস্তুত বলে মনে হচ্ছে কি? কেন মনে হচ্ছে বা হচ্ছে না, তা ব্যাখ্যা করো।
+</para></section></section>
+</content>
+<glossary>
+
+<definition id="fs-id2483777"><term>লঘিষ্ঠ সাধারণ হর</term><meaning id="fs-id2129255">ধনাত্মক পূর্ণসংখ্যা হরযুক্ত দুটি ভগ্নাংশের লঘিষ্ঠ সাধারণ হর হল তাদের হরদুটির লঘিষ্ঠ সাধারণ গুণিতক (ল.সা.গু.)।</meaning></definition>
+
+</glossary>
+</document>

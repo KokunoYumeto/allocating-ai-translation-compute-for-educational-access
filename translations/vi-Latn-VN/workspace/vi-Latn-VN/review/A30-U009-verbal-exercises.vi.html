@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi-Latn-VN" xml:lang="vi-Latn-VN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bài tập giải thích: quan hệ và hàm số</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">html { color: #182b35; background: #f8f6f1; font-size: 18px; }
+body { max-width: 52rem; margin: 0 auto; padding: 2.5rem 1.3rem 4rem; line-height: 1.65; font-family: "Noto Sans", "Segoe UI", Arial, sans-serif; }
+header { border-bottom: 3px solid #216c68; margin-bottom: 2rem; }
+h1,h2,h3 { line-height: 1.25; color: #175a57; break-after: avoid; }
+h1 { font-size: 2.3rem; } h2 { margin-top: 2.5rem; } h3 { margin-top: 1.8rem; }
+a { color: #075d99; text-underline-offset: .15em; }
+nav { background: #edf0e8; border-radius: .4rem; padding: 1rem 1.4rem; }
+table { border-collapse: collapse; margin: 1.2rem auto; min-width: 55%; }
+th,td { border: 1px solid #98aaa9; padding: .4rem 1rem; }
+th { background: #e2eeea; }
+img { display: block; max-width: 100%; height: auto; margin: 1rem auto; }
+figure { margin: 1.4rem 0; } figcaption { font-size: .9rem; }
+pre { overflow-x: auto; background: #edf0e8; padding: 1rem; border-radius: .3rem; }
+code { font-size: .88em; }
+math[display="block"] { overflow-x: auto; overflow-y: hidden; padding: .6rem 0; }
+:target { scroll-margin-top: 1rem; outline: 2px solid #c3dcd0; }
+@media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.9rem; } body { padding: 1rem; } table { width: 100%; } th,td { padding: .35rem .5rem; } }
+@media print { html { background: white; font-size: 11pt; } body { max-width: none; padding: 0; } nav { display: none; } img,table,pre { break-inside: avoid; } a { color: inherit; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Bài tập giải thích: quan hệ và hàm số</h1>
+<p class="subtitle">A30 · Bài tự học 009 · Bản dịch thử nghiệm 0.1</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#vi-prerequisites" id="toc-vi-prerequisites">Phạm vi và
+cách học</a></li>
+<li><a href="#fs-id1165137432988" id="toc-fs-id1165137432988">Bài tập
+giải thích</a></li>
+<li><a href="#vi-answers" id="toc-vi-answers">Lời giải và giải
+thích</a></li>
+<li><a href="#vi-next" id="toc-vi-next">Tự kiểm tra và phần tiếp
+theo</a></li>
+<li><a href="#vi-attribution" id="toc-vi-attribution">Nguồn và ghi
+công</a></li>
+</ul>
+</nav>
+<h2 id="vi-prerequisites">Phạm vi và cách học</h2>
+<p>Bài này dịch trọn nhóm <em>Verbal</em> trong phần bài tập mục 1.1 của
+mô-đun <code>m49301</code>. Năm câu được giữ theo thứ tự nguồn. Câu 1 và
+câu 2 đã có trong <a href="A30-U001-functions.vi.html#vi-exercises">U001</a>; chúng được nhắc
+lại để nhóm bài tập này đọc được độc lập. Vì vậy, U009 bổ sung
+<strong>ba bài tập mới</strong>, không phải năm bài mới. Số câu dưới đây
+là số trong nhóm này.</p>
+<p><em>Hướng dẫn bổ sung:</em> Ôn lại <a href="A30-U001-functions.vi.html#fs-id1165133394710">quan hệ và hàm
+số</a>, <a href="A30-U005-one-to-one.vi.html#fs-id1165135422920">hàm số
+đơn ánh</a>, <a href="A30-U006-graph-tests.vi.html#fs-id1165135435781">kiểm tra bằng
+đường thẳng đứng</a> và <a href="A30-U006-graph-tests.vi.html#fs-id1165137610952">kiểm tra bằng
+đường thẳng ngang</a> nếu cần. Các liên kết sang bài khác cần những tệp
+HTML ấy nằm cùng thư mục; nội dung và lời giải của năm câu dưới đây đều
+có ngay trong tệp này.</p>
+<p>Trong bài này, <em>đầu vào</em> được hiểu là phần tử của tập xác
+định; <em>đầu ra</em> là giá trị thực sự đạt được, thuộc tập giá trị.
+Khi biểu diễn một quan hệ bằng các cặp, tập đầu vào đang xét là các
+thành phần thứ nhất của quan hệ, trừ khi một tập đầu vào khác được chỉ
+định riêng. Cách dùng từ <em>hàm số</em> cho cả nhãn không phải số theo
+quy ước rộng của OpenStax đã được giải thích trong U001.</p>
+<h2 id="fs-id1165137432988">Bài tập giải thích</h2>
+<h3 id="fs-id1165137432993">Câu 1 — Quan hệ và hàm số</h3>
+<div id="fs-id1165137432995">
+<div id="fs-id1165137432998">
+<p>Quan hệ và hàm số khác nhau ở điểm nào?</p>
+</div>
+</div>
+<p><a href="#fs-id1165137667225">Xem lời giải câu 1</a>.</p>
+<h3 id="fs-id1165137870912">Câu 2 — Đầu vào và đầu ra</h3>
+<div id="fs-id1165137870914">
+<div id="fs-id1165137870917">
+<p>Đầu vào và đầu ra của một hàm số khác nhau ở điểm nào?</p>
+</div>
+</div>
+<p><a href="#vi-sol-verbal-2">Xem lời giải bổ sung câu 2</a>.</p>
+<h3 id="fs-id1165137870922">Câu 3 — Đường thẳng đứng</h3>
+<div id="fs-id1165134118508">
+<div id="fs-id1165134118510">
+<p>Vì sao kiểm tra bằng đường thẳng đứng cho biết đồ thị của một quan hệ
+có biểu diễn một hàm số hay không?</p>
+</div>
+</div>
+<p><a href="#fs-id1165134118515">Xem lời giải câu 3</a>.</p>
+<h3 id="fs-id1165135570273">Câu 4 — Hàm số đơn ánh</h3>
+<div id="fs-id1165135570275">
+<div id="fs-id1165135570277">
+<p>Làm thế nào để xác định một quan hệ có phải là hàm số đơn ánh hay
+không?</p>
+</div>
+</div>
+<p><a href="#vi-sol-verbal-4">Xem lời giải bổ sung câu 4</a>.</p>
+<h3 id="fs-id1165134391600">Câu 5 — Đường thẳng ngang</h3>
+<div id="fs-id1165134391602">
+<div id="fs-id1165134391604">
+<p>Vì sao kiểm tra bằng đường thẳng ngang cho biết một hàm số có đơn ánh
+hay không?</p>
+</div>
+</div>
+<p><a href="#fs-id1165137679053">Xem lời giải câu 5</a>.</p>
+<h2 id="vi-answers">Lời giải và giải thích</h2>
+<h3 id="fs-id1165137667225">Câu 1 — Lời giải nguồn, đã có trong
+U001</h3>
+<div id="fs-id1165137667227">
+<p>Một quan hệ là một tập hợp các cặp có thứ tự. Hàm số là một loại quan
+hệ đặc biệt: hai cặp phân biệt không có cùng thành phần thứ nhất. Vì
+vậy, mỗi đầu vào có đúng một đầu ra.</p>
+</div>
+<p><em>Giải thích bổ sung:</em> Từ “phân biệt” làm rõ rằng việc ghi lặp
+lại đúng cùng một cặp không tạo ra hai đầu ra. Còn hai cặp
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>7</mn><mo>,</mo><mn>11</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(7,11)</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>7</mn><mo>,</mo><mn>9</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(7,9)</annotation></semantics></math>
+cho thấy đầu vào 7 có hai đầu ra khác nhau; quan hệ chứa cả hai cặp ấy
+không phải là hàm số. Hai đầu vào khác nhau vẫn có thể cho cùng một đầu
+ra.</p>
+<h3 id="vi-sol-verbal-2">Câu 2 — Lời giải bổ sung, đã có trong U001</h3>
+<p>Đầu vào là giá trị được đưa vào quy tắc, thuộc tập xác định. Đầu ra
+là giá trị mà quy tắc gán cho đầu vào ấy, thuộc tập giá trị. Trong một
+cặp
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math>
+biểu diễn hàm số,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+là đầu vào và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+là đầu ra. Ví dụ, cặp
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(3,6)</annotation></semantics></math>
+trong quan hệ nhân đôi cho biết đầu vào 3 dẫn tới đầu ra 6.</p>
+<p>Nguồn không kèm lời giải cho câu này; lời giải trên được biên soạn
+cho bản tiếng Việt và được dùng lại từ U001.</p>
+<h3 id="fs-id1165134118515">Câu 3 — Lời giải nguồn</h3>
+<div id="fs-id1165134118518">
+<p>Khi một đường thẳng đứng cắt đồ thị của quan hệ tại nhiều hơn một
+điểm, điều đó cho thấy cùng một đầu vào có nhiều hơn một đầu ra. Để quan
+hệ là một hàm số, mỗi giá trị đầu vào chỉ được có một đầu ra.</p>
+</div>
+<p><em>Giải thích bổ sung:</em> Trên đường thẳng đứng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x=a</annotation></semantics></math>,
+mọi giao điểm đều có cùng hoành độ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.
+Hai điểm phân biệt trên đường ấy phải có hai tung độ khác nhau. Do đó,
+điều kiện “mỗi đường thẳng đứng có nhiều nhất một giao điểm với đồ thị”
+chính là điều kiện không có một đầu vào nhận hai đầu ra khác nhau. Với
+mỗi đầu vào thuộc tập xác định, phải có đúng một giao điểm; ngoài tập
+xác định thì không có giao điểm. Nếu tập đầu vào đã được chỉ định trước,
+cũng cần kiểm tra rằng mỗi phần tử của tập ấy thật sự có đầu ra.</p>
+<p>Ví dụ bổ sung: hai điểm
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mi>−</mi><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2,-1)</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2,1)</annotation></semantics></math>
+đủ bác bỏ tính chất hàm số. Ngược lại, chỉ kiểm tra một vài đường thẳng
+đứng không chứng minh được tính chất ấy cho toàn bộ một đường cong.</p>
+<h3 id="vi-sol-verbal-4">Câu 4 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho câu này. Lời giải sau được biên soạn cho
+bản tiếng Việt.</p>
+<p>Trước hết, kiểm tra quan hệ có phải là <strong>hàm số</strong>: mỗi
+đầu vào trong tập xác định phải có đúng một đầu ra. Sau đó, kiểm tra
+tính <strong>đơn ánh</strong>: hai đầu vào khác nhau phải cho hai đầu ra
+khác nhau. Tương đương, mỗi giá trị thuộc tập giá trị chỉ ứng với một
+đầu vào.</p>
+<p>Nếu quan hệ được cho bằng đồ thị trong mặt phẳng tọa độ, trước hết
+dùng kiểm tra bằng đường thẳng đứng để xác nhận tính chất hàm số, rồi
+dùng kiểm tra bằng đường thẳng ngang để xét tính đơn ánh. Phải xét toàn
+bộ đồ thị trên tập xác định, không chỉ một vài điểm lấy mẫu.</p>
+<p>Ví dụ bổ sung: quan hệ gồm
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2,1)</annotation></semantics></math>
+là hàm số nhưng không đơn ánh, vì hai đầu vào 0 và 2 cùng cho đầu ra 1.
+Quan hệ gồm
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mi>−</mi><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2,-1)</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2,1)</annotation></semantics></math>
+không phải là hàm số, dù các đường thẳng ngang không gặp hai điểm của
+quan hệ này. Vì thế, kiểm tra bằng đường thẳng ngang riêng lẻ không đủ
+để gọi một quan hệ là hàm số đơn ánh.</p>
+<h3 id="fs-id1165137679053">Câu 5 — Lời giải nguồn</h3>
+<div id="fs-id1165137679055">
+<p>Khi một đường thẳng ngang cắt đồ thị của hàm số tại nhiều hơn một
+điểm, điều đó cho thấy cùng một đầu ra ứng với nhiều hơn một đầu vào.
+Hàm số là đơn ánh nếu mỗi đầu ra chỉ ứng với một đầu vào.</p>
+</div>
+<p><em>Giải thích bổ sung:</em> Trên đường thẳng ngang
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">y=b</annotation></semantics></math>,
+mọi giao điểm đều có cùng tung độ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>.
+Hai giao điểm phân biệt vì thế có hai hoành độ khác nhau: hai đầu vào
+khác nhau cho cùng đầu ra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>,
+trái với tính đơn ánh. Ngược lại, nếu hai đầu vào khác nhau cho cùng đầu
+ra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>,
+đường thẳng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">y=b</annotation></semantics></math>
+đi qua hai điểm ấy. Vì vậy, với một quan hệ <strong>đã là hàm
+số</strong>, điều kiện mỗi đường thẳng ngang có nhiều nhất một giao điểm
+với đồ thị tương đương với tính đơn ánh. Đường thẳng ngang nằm ngoài tập
+giá trị không có giao điểm, và điều đó không làm hàm số mất tính đơn
+ánh.</p>
+<h2 id="vi-next">Tự kiểm tra và phần tiếp theo</h2>
+<p><em>Gợi ý bổ sung:</em> Trong mỗi lời giải, hãy chỉ ra điều kiện nói
+về cùng đầu vào và điều kiện nói về cùng đầu ra. Bạn có giải thích được
+vì sao “nhiều nhất một” áp dụng cho mọi đường thẳng, còn “đúng một” chỉ
+áp dụng cho các giá trị trong tập xác định hoặc tập giá trị tương ứng
+không?</p>
+<p>Tiếp theo trong nguồn là nhóm bài tập <em>Algebraic</em>, bắt đầu tại
+<code>fs-id1165134080937</code>. Nhóm ấy chưa được dịch trong bài
+này.</p>
+<h2 id="vi-attribution">Nguồn và ghi công</h2>
+<p>Bản dịch và phần bổ sung tiếng Việt độc lập, địa phương hóa
+<code>vi-Latn-VN</code>. Nguồn: Jay Abramson và các cộng tác viên
+OpenStax, <em>Precalculus 2e</em>, mô-đun <code>m49301</code>, UUID
+<code>11f4eacc-c348-4836-8c5b-747577d249ca</code>; <a href="https://github.com/openstax/osbooks-college-algebra-bundle/tree/789b54099106b071d1d32bfcee454fed72eb4768">nguồn
+được ghim</a>. Đối chiếu với <a href="https://github.com/KokunoYumeto/openstax-precalculus-2e-id">ấn bản
+Bahasa Indonesia</a> <code>0.1.0-alpha.58-reader.1</code>. Giữ nguyên
+quyền ghi công của Jay Abramson, OpenStax và các tác giả, cộng tác viên
+được liệt kê trong nguồn.</p>
+<p>Văn bản nguồn, bản dịch và phần bổ sung A30 này theo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
+4.0</a>. Các thông báo nguồn được giữ trong thư mục
+<code>notices/</code>; các tác phẩm B40 và B80 giữ giấy phép riêng,
+không bị đổi giấy phép bởi bài này. Không phải ấn bản chính thức hoặc
+được các tác giả hay tổ chức nguồn bảo trợ. Bản dịch, lời giải bổ sung
+và kiểm tra được thực hiện với sự hỗ trợ của OpenAI Codex theo yêu cầu
+người dùng; thông tin quy trình này không thay thế tên tác giả gốc. Chưa
+có thẩm định độc lập của người bản ngữ.</p>
+</body>
+</html>

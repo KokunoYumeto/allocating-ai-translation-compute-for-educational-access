@@ -1,0 +1,185 @@
+<article id="MR-BRIDGE-027" lang="mr-Deva-IN" data-source-content-id="m81427" data-source-uuid="b9f8475e-9490-4f24-995f-2923b1ed9644" data-source-title-en="Solve Systems of Linear Equations with Two Variables" data-source-title-id="Menyelesaikan Sistem Persamaan Linear dengan Dua Variabel" data-source-language-id="id-ID">
+  <header>
+    <p class="eyebrow">मराठी STEM पूल · घटक 27 · विलोपन पद्धत</p>
+    <h1>विलोपनाने समीकरणांची प्रणाली सोडवा</h1>
+    <p class="lead">एका चलाचे विरुद्ध सहगुणक तयार करा, समीकरणे बेरीज करून तो चल वगळा आणि मिळालेली क्रमित जोडी दोन्ही मूळ समीकरणांत तपासा.</p>
+    <p data-kind="original">हा घटक m81427 मधील “Solve a System of Equations by Elimination” हा संपूर्ण शिकवणी-विभाग घेतो. त्यात चार सोडवलेली उदाहरणे, आठ “स्वतः सोडवा” प्रश्न, सर्व पुरवलेली उत्तरे आणि 27 मूळ आकृत्या आहेत. पुढील “Choose the Most Convenient Method to Solve a System of Linear Equations” विभाग येथे घेतलेला नाही. संपूर्ण module, पुस्तक किंवा पाच-पुस्तकांचे काम पूर्ण झाल्याचा दावा नाही.</p>
+    <nav aria-label="घटकातील विभाग"><a href="#fs-id1167834222378">विलोपनाची कल्पना</a> · <a href="#fs-id1167834121139">सात पायऱ्यांचे उदाहरण</a> · <a href="#fs-id1167831835910">दोन्ही समीकरणांना गुणा</a> · <a href="#fs-id1167834535350">अपूर्णांक असलेली प्रणाली</a> · <a href="#fs-id1167832138940">अनंत उकली</a> · <a href="#credits">श्रेय</a></nav>
+  </header>
+
+  <section id="fs-id1167834222378" data-kind="translation">
+    <h2>विलोपनाने समीकरणांची प्रणाली सोडवा</h2>
+
+    <p id="fs-id1167834132598" data-source="A20:m81427#fs-id1167834132598" data-kind="translation">आपण रेषीय समीकरणांच्या प्रणाली आलेख काढून आणि प्रतिस्थापनाने सोडवल्या आहेत. चलांचे सहगुणक लहान असतील आणि उकलीची मूल्ये पूर्णांक असतील, तेव्हा आलेख-पद्धत चांगली चालते. एखादे समीकरण एका चलासाठी सहज सोडवता येत असेल आणि त्यातून मिळणाऱ्या राशीत खूप अपूर्णांक येत नसतील, तेव्हा प्रतिस्थापन-पद्धत चांगली चालते.</p>
+
+    <p id="fs-id1167834132604" data-source="A20:m81427#fs-id1167834132604" data-kind="translation">रेषीय समीकरणांची प्रणाली सोडवण्याच्या तिसऱ्या पद्धतीला <strong>विलोपन पद्धत</strong> म्हणतात. प्रतिस्थापनाने प्रणाली सोडवताना आपण दोन समीकरणे आणि दोन चले यांपासून सुरुवात करून ती एका चलातील एका समीकरणापर्यंत कमी केली. विलोपनातही आपण तेच करू; पण त्या टप्प्यापर्यंत पोहोचण्याची रीती वेगळी असेल.</p>
+
+    <p id="fs-id1167835510985" data-source="A20:m81427#fs-id1167835510985" data-kind="translation">विलोपन पद्धत <strong>समतेच्या बेरीज-गुणधर्मावर</strong> आधारलेली आहे. या गुणधर्मानुसार समीकरणाच्या दोन्ही बाजूंमध्ये एकच राशी मिळवली, तरी समता टिकून राहते. आपण हा गुणधर्म पुढे असा विस्तारित करू: समीकरणाच्या दोन्ही बाजूंमध्ये परस्पर समान राशी मिळवल्या, तरी मिळणारे परिणाम समान राहतात.</p>
+    <aside data-kind="original"><p>संज्ञा-नोंद: C12/C13 मधील वाचनीय मराठी गणित-मजकूर “समीकरण”, “उकल” आणि दोन्ही बाजूंवर समान क्रिया करण्याची भाषा पुष्ट करतो. “विलोपन पद्धत”, “समतेचा बेरीज-गुणधर्म”, “सुसंगत/विसंगत प्रणाली” आणि “अवलंबित प्रणाली” ही पूर्ण वर्गखोलीतील पदे त्या कॅननमध्ये अक्षरशः आढळलेली नाहीत; ती येथे अर्थ स्पष्ट ठेवणारी, तयार केलेली कार्यपदे आहेत.</p></aside>
+
+    <p id="fs-id1167832055312" data-source="A20:m81427#fs-id1167832055312" data-kind="translation">कोणत्याही <em>a, b, c</em> आणि <em>d</em> या राशींसाठी:</p>
+
+    <p id="fs-id1167831911684" data-source="A20:m81427#fs-id1167831911684" data-kind="translation" data-source-class="unnumbered"><span class="math" data-check="addition-property">a = b; c = d ⇒ a + c = b + d</span>. म्हणजे <span class="math">a = b</span> आणि <span class="math">c = d</span> असल्यास <span class="math">a + c = b + d</span>.</p>
+
+    <p id="fs-id1167835376848" data-source="A20:m81427#fs-id1167835376848" data-kind="translation">विलोपनाने प्रणाली सोडवताना प्रथम दोन्ही समीकरणे प्रमाणित रूपात लिहितो. मग कोणते चल सर्वांत सहज वगळता येईल ते ठरवतो. हे कसे ठरवायचे? एका चलाचे सहगुणक परस्पर विरुद्ध असावेत, म्हणजे समीकरणांची बेरीज केल्यावर ते चल नाहीसे होईल.</p>
+
+    <p id="fs-id1167835340855" data-source="A20:m81427#fs-id1167835340855" data-kind="translation">पुढील दोन समीकरणांची बेरीज केल्यावर हे कसे घडते ते पाहा:</p>
+
+    <p id="fs-id1167831847197" data-source="A20:m81427#fs-id1167831847197" data-kind="translation" data-source-class="unnumbered"><span class="math" data-check="opening-add">{ 3x + y = 5; 2x − y = 0 } ⇒ 5x = 5</span></p>
+
+    <p id="fs-id1167835338949" data-source="A20:m81427#fs-id1167835338949" data-kind="translation"><span class="math">y</span> ची पदे मिळून शून्य होतात आणि आपल्याकडे एका चलातील एकच समीकरण उरते.</p>
+    <aside data-kind="original"><p>समांतर-स्रोत नोंद: इंडोनेशियन <span class="math">fs-id1167835338949</span> मध्ये <span class="math">y</span> आणि पुढील “saling” हा शब्द अवकाशाविना जोडला आहे; मराठीत आशय स्पष्ट करून योग्य अवकाश ठेवला आहे.</p></aside>
+
+    <p id="fs-id1167834376400" data-source="A20:m81427#fs-id1167834376400" data-kind="translation">आता आणखी एक उदाहरण पाहू:</p>
+
+    <p id="fs-id1167834063624" data-source="A20:m81427#fs-id1167834063624" data-kind="translation" data-source-class="unnumbered"><span class="math" data-check="opening-system">{ x + 4y = 2; 2x + 5y = −2 }</span></p>
+
+    <p id="fs-id1167835336856" data-source="A20:m81427#fs-id1167835336856" data-kind="translation">यावेळी समीकरणांची थेट बेरीज केल्यास लगेच वगळता येईल असे कोणतेही चल दिसत नाही.</p>
+
+    <p id="fs-id1167834195035" data-source="A20:m81427#fs-id1167834195035" data-kind="translation">पण पहिले समीकरण <span class="math" data-check="minus-two-first">−2</span> ने गुणल्यास <span class="math">x</span> चे सहगुणक परस्पर विरुद्ध होतील. समीकरणाच्या दोन्ही बाजूंवरील प्रत्येक पदाला <span class="math" data-check="minus-two-every">−2</span> ने गुणले पाहिजे.</p>
+
+    <figure id="fs-id1167834193440" data-source="A20:m81427#fs-id1167834193440" data-kind="translation"><img src="asset:CNX_IntAlg_Figure_04_01_011_img_new.jpg" alt="प्रणालीत पहिले समीकरण −2 ने गुणले आहे: −2(x + 4y) = −2(2); दुसरे समीकरण 2x + 5y = −2 तसेच ठेवले आहे." /><figcaption><span class="math" data-check="img011">{ −2(x + 4y) = −2(2); 2x + 5y = −2 }</span></figcaption></figure>
+
+    <p id="fs-id1167828420195" data-source="A20:m81427#fs-id1167828420195" data-kind="translation">मग समीकरणांची प्रणाली पुन्हा लिहा.</p>
+
+    <figure id="fs-id1167828420197" data-source="A20:m81427#fs-id1167828420197" data-kind="translation"><img src="asset:CNX_IntAlg_Figure_04_01_012_img_new.jpg" alt="पहिले समीकरण −2x − 8y = −4 आणि दुसरे समीकरण 2x + 5y = −2 आहे." /><figcaption><span class="math" data-check="img012">{ −2x − 8y = −4; 2x + 5y = −2 }</span></figcaption></figure>
+
+    <p id="fs-id1167826997236" data-source="A20:m81427#fs-id1167826997236" data-kind="translation">आता <span class="math">x</span> पदांचे सहगुणक परस्पर विरुद्ध आहेत. म्हणून ही दोन समीकरणे मिळवल्यावर <span class="math">x</span> चे विलोपन होईल.</p>
+
+    <figure id="fs-id1167831031275" data-source="A20:m81427#fs-id1167831031275" data-kind="translation"><img src="asset:CNX_IntAlg_Figure_04_01_013_img_new.jpg" alt="−2x − 8y = −4 आणि 2x + 5y = −2 यांची बेरीज केल्यावर x पदे नाहीशी होतात आणि −3y = −6 मिळते." /><figcaption><span class="math" data-check="img013">{ −2x − 8y = −4; 2x + 5y = −2 } ⇒ −3y = −6</span></figcaption></figure>
+
+    <p id="fs-id1167834324678" data-source="A20:m81427#fs-id1167834324678" data-kind="translation">फक्त एक चल असलेले समीकरण मिळाल्यावर ते सोडवा. मग उरलेल्या चलाचे मूल्य शोधण्यासाठी मिळालेले मूल्य मूळ समीकरणांपैकी एका समीकरणात प्रतिस्थापित करा. नेहमीप्रमाणे, उत्तर दोन्ही मूळ समीकरणांची उकल आहे याची खात्री करण्यासाठी ते तपासा.</p>
+
+    <p id="fs-id1167834121134" data-source="A20:m81427#fs-id1167834121134" data-kind="translation">आलेखाने आणि प्रतिस्थापनाने पूर्वी सोडवलेली तीच प्रणाली आता विलोपनाने कशी सोडवायची ते पाहू.</p>
+
+    <section id="fs-id1167834121139" data-source="A20:m81427#fs-id1167834121139" data-kind="translation">
+      <h3>सोडवलेले उदाहरण 1 · विलोपनाच्या सात पायऱ्या</h3>
+      <section id="fs-id1167834053780">
+        <div id="fs-id1167834053782" class="problem"><p id="fs-id1167834053784">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="example1-system">{ 2x + y = 7; x − 2y = 6 }</span>.</p><p><a href="#fs-id1167832055991">सोडवणूक पाहा</a></p></div>
+        <div id="fs-id1167832055991" class="solution"><h4>स्रोतातील चित्रमय सोडवणूक</h4>
+          <figure id="fs-id1167832055992"><img src="asset:CNX_IntAlg_Figure_04_01_014a_img_new.jpg" alt="पायरी 1: दोन्ही समीकरणे Ax + By = C या प्रमाणित रूपात लिहा. 2x + y = 7 आणि x − 2y = 6 ही दोन्ही आधीच प्रमाणित रूपात आहेत आणि त्यांत अपूर्णांक नाहीत." /><figcaption>पायरी 1: <span class="math" data-check="img014a">{ 2x + y = 7; x − 2y = 6 }</span>; दोन्ही समीकरणे प्रमाणित रूपात आहेत.</figcaption></figure>
+          <figure id="fs-id1167835489057"><img src="asset:CNX_IntAlg_Figure_04_01_014b_img_new.jpg" alt="पायरी 2: y चे सहगुणक विरुद्ध करण्यासाठी पहिले समीकरण 2 ने गुणा. 2(2x + y) = 2(7) आणि x − 2y = 6, त्यामुळे 4x + 2y = 14 आणि x − 2y = 6 मिळते." /><figcaption>पायरी 2: <span class="math" data-check="img014b">{ 2(2x + y) = 2(7); x − 2y = 6 } ⇒ { 4x + 2y = 14; x − 2y = 6 }</span>.</figcaption></figure>
+          <figure id="fs-id1167835375465"><img src="asset:CNX_IntAlg_Figure_04_01_014c_img_new.jpg" alt="पायरी 3: 4x + 2y = 14 आणि x − 2y = 6 यांची बेरीज केल्यावर y नाहीसे होते आणि 5x = 20 मिळते." /><figcaption>पायरी 3: <span class="math" data-check="img014c">{ 4x + 2y = 14; x − 2y = 6 } ⇒ 5x = 20</span>.</figcaption></figure>
+          <figure id="fs-id1167828436322"><img src="asset:CNX_IntAlg_Figure_04_01_014d_img_new.jpg" alt="पायरी 4: 5x = 20 सोडवल्यावर x = 4 मिळते." /><figcaption>पायरी 4: <span class="math" data-check="img014d">x = 4</span>.</figcaption></figure>
+          <figure id="fs-id1167835218199"><img src="asset:CNX_IntAlg_Figure_04_01_014e_img_new.jpg" alt="पायरी 5: x = 4 हे x − 2y = 6 मध्ये ठेवा. 4 − 2y = 6, मग −2y = 2 आणि y = −1 मिळते." /><figcaption>पायरी 5: <span class="math" data-check="img014e">x − 2y = 6; 4 − 2y = 6; −2y = 2; y = −1</span>.</figcaption></figure>
+          <figure id="fs-id1167826782824"><img src="asset:CNX_IntAlg_Figure_04_01_014f_img_new.jpg" alt="पायरी 6: उकल (4, −1) या क्रमित जोडीच्या रूपात लिहिली आहे." /><figcaption>पायरी 6: <span class="math" data-check="img014f">(4, −1)</span>.</figcaption></figure>
+          <figure id="fs-id1167835312274"><img src="asset:CNX_IntAlg_Figure_04_01_014g_img_new.jpg" alt="पायरी 7: x = 4 आणि y = −1 ठेवल्यावर 2(4) + (−1) = 7 आणि 4 − 2(−1) = 6; दोन्ही विधाने सत्य आहेत. उकल (4, −1) आहे." /><figcaption>पायरी 7: <span class="math" data-check="img014g">2(4) + (−1) = 7; 4 − 2(−1) = 6</span>. म्हणून <span class="math">(4, −1)</span> ही दोन्ही मूळ समीकरणांची उकल आहे.</figcaption></figure>
+          <p><a href="#fs-id1167834053782">प्रश्नाकडे परत</a></p>
+        </div>
+      </section>
+    </section>
+
+    <section id="fs-id1167834413553" data-source="A20:m81427#fs-id1167834413553" data-kind="translation" data-source-class="try">
+      <section id="fs-id1167835433665"><h3>स्वतः सोडवा 1</h3><div id="fs-id1167835433667" class="problem"><p id="fs-id1167835433669">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="try1-system">{ 3x + y = 5; 2x − 3y = 7 }</span>.</p><p><a href="#fs-id1167834161733">उत्तर पाहा</a></p></div><div id="fs-id1167834161733" class="solution"><h4>स्रोतातील उत्तर</h4><p id="fs-id1167834161734"><span class="math" data-check="try1-answer">(2, −1)</span></p><p><a href="#fs-id1167835433667">प्रश्नाकडे परत</a></p></div></section>
+    </section>
+
+    <section id="fs-id1167831031022" data-source="A20:m81427#fs-id1167831031022" data-kind="translation" data-source-class="try">
+      <section id="fs-id1167832043684"><h3>स्वतः सोडवा 2</h3><div id="fs-id1167832043686" class="problem"><p id="fs-id1167832043689">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="try2-system">{ 4x + y = −5; −2x − 2y = −2 }</span>.</p><p><a href="#fs-id1167834134812">उत्तर पाहा</a></p></div><div id="fs-id1167834134812" class="solution"><h4>स्रोतातील उत्तर</h4><p id="fs-id1167834134813"><span class="math" data-check="try2-answer">(−2, 3)</span></p><p><a href="#fs-id1167832043686">प्रश्नाकडे परत</a></p></div></section>
+    </section>
+
+    <p id="fs-id1167831921387" data-source="A20:m81427#fs-id1167831921387" data-kind="translation">सहज संदर्भासाठी पायऱ्या येथे एकत्र दिल्या आहेत.</p>
+
+    <section id="fs-id1167835347820" data-source="A20:m81427#fs-id1167835347820" data-kind="translation" data-source-class="howto">
+      <h3>विलोपनाने समीकरणांची प्रणाली सोडवा</h3>
+      <ol id="fs-id1167835268056">
+        <li>दोन्ही समीकरणे प्रमाणित रूपात लिहा. कोणतेही सहगुणक अपूर्णांक असतील, तर ते अपूर्णांक दूर करा.</li>
+        <li>एका चलाचे सहगुणक परस्पर विरुद्ध करा.
+          <ul id="fs-id1167835355835"><li>कोणत्या चलाचे विलोपन करायचे ते ठरवा.</li><li>त्या चलाचे सहगुणक परस्पर विरुद्ध होतील अशा रीतीने एक किंवा दोन्ही समीकरणांना गुणा.</li></ul>
+        </li>
+        <li>एक चल वगळण्यासाठी पायरी 2 मधून मिळालेल्या समीकरणांची बेरीज करा.</li>
+        <li>उरलेल्या चलासाठी समीकरण सोडवा.</li>
+        <li>पायरी 4 मधील उकल मूळ समीकरणांपैकी एका समीकरणात प्रतिस्थापित करा. मग दुसऱ्या चलासाठी ते समीकरण सोडवा.</li>
+        <li>उकल क्रमित जोडीच्या रूपात लिहा.</li>
+        <li>ती क्रमित जोडी <strong>दोन्ही</strong> मूळ समीकरणांची उकल आहे याची तपासणी करा.</li>
+      </ol>
+    </section>
+
+    <p id="fs-id1167831835904" data-source="A20:m81427#fs-id1167831835904" data-kind="translation">आता एका चलाचे सहगुणक परस्पर विरुद्ध करण्यासाठी दोन्ही समीकरणांना स्थिरांकांनी गुणावे लागणारे उदाहरण पाहू.</p>
+
+    <section id="fs-id1167831835910" data-source="A20:m81427#fs-id1167831835910" data-kind="translation">
+      <h3>सोडवलेले उदाहरण 2 · दोन्ही समीकरणांना गुणा</h3>
+      <section id="fs-id1167835183559">
+        <div id="fs-id1167835183561" class="problem"><p id="fs-id1167835183563">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="example2-system">{ 4x − 3y = 9; 7x + 2y = −6 }</span>.</p><p><a href="#fs-id1167834133101">सोडवणूक पाहा</a></p></div>
+        <div id="fs-id1167834133101" class="solution"><h4>स्रोतातील सोडवणूक</h4><p id="fs-id1167834133104">या उदाहरणात कोणत्याही एका समीकरणाला फक्त एका स्थिरांकाने गुणून विरुद्ध सहगुणक मिळत नाहीत. म्हणून योग्य विरुद्ध सहगुणक मिळवण्यासाठी दोन्ही समीकरणांना वेगवेगळ्या स्थिरांकांनी विचारपूर्वक गुणू.</p>
+          <table id="fs-id1167834536402"><tbody>
+            <tr><td></td><td><figure id="fs-id1167832226710"><img src="asset:CNX_IntAlg_Figure_04_01_015b_img.jpg" alt="महिरपी कंसात 4x − 3y = 9 आणि 7x + 2y = −6 ही प्रणाली आहे." /><figcaption><span class="math" data-check="img015b">{ 4x − 3y = 9; 7x + 2y = −6 }</span></figcaption></figure></td></tr>
+            <tr><td>दोन्ही समीकरणे प्रमाणित रूपात आहेत. <span class="math">y</span> चे विरुद्ध सहगुणक मिळवण्यासाठी पहिले समीकरण 2 ने आणि दुसरे समीकरण 3 ने गुणू.</td><td><figure id="fs-id1167835509822"><img src="asset:CNX_IntAlg_Figure_04_01_015c_img.jpg" alt="पहिले समीकरण 2 ने आणि दुसरे समीकरण 3 ने गुणले आहे: 2(4x − 3y) = 2(9) आणि 3(7x + 2y) = 3(−6)." /><figcaption><span class="math" data-check="img015c">{ 2(4x − 3y) = 2(9); 3(7x + 2y) = 3(−6) }</span></figcaption></figure></td></tr>
+            <tr><td>सोपी करा.</td><td><figure id="fs-id1167832058367"><img src="asset:CNX_IntAlg_Figure_04_01_015d_img.jpg" alt="गुणाकारानंतर 8x − 6y = 18 आणि 21x + 6y = −18 मिळते." /><figcaption><span class="math" data-check="img015d">{ 8x − 6y = 18; 21x + 6y = −18 }</span></figcaption></figure></td></tr>
+            <tr><td><span class="math">y</span> चे विलोपन करण्यासाठी दोन्ही समीकरणांची बेरीज करा.</td><td><figure id="fs-id1167835287480"><img src="asset:CNX_IntAlg_Figure_04_01_015e_img.jpg" alt="8x − 6y = 18 आणि 21x + 6y = −18 यांची बेरीज केल्यावर 29x = 0 मिळते." /><figcaption><span class="math" data-check="img015e">{ 8x − 6y = 18; 21x + 6y = −18 } ⇒ 29x = 0</span></figcaption></figure></td></tr>
+            <tr><td><span class="math">x</span> साठी सोडवा.</td><td><figure id="fs-id1167830961361"><img src="asset:CNX_IntAlg_Figure_04_01_015f_img.jpg" alt="29x = 0 पासून x = 0 मिळते आणि लाल बाण 7x + 2y = −6 मधील x कडे निर्देश करतो." /><figcaption><span class="math" data-check="img015f">x = 0 ⇒ 7x + 2y = −6</span></figcaption></figure></td></tr>
+            <tr><td>मूळ समीकरणांपैकी एका समीकरणात <span class="math" data-check="example2-x0">x = 0</span> प्रतिस्थापित करा.</td><td><figure id="fs-id1167835200374"><img src="asset:CNX_IntAlg_Figure_04_01_015g_img.jpg" alt="7 · 0 + 2y = −6 मध्ये 0 लाल रंगात दाखवला आहे." /><figcaption><span class="math" data-check="img015g">7(0) + 2y = −6</span></figcaption></figure></td></tr>
+            <tr><td><span class="math">y</span> साठी सोडवा.</td><td><figure id="fs-id1167835333944"><img src="asset:CNX_IntAlg_Figure_04_01_015h_img.jpg" alt="2y = −6 पासून y = −3 मिळते." /><figcaption><span class="math" data-check="img015h">2y = −6; y = −3</span></figcaption></figure></td></tr>
+            <tr><td>उकल क्रमित जोडीच्या रूपात लिहा.</td><td>क्रमित जोडी <span class="math" data-check="example2-pair-row">(0, −3)</span> आहे.</td></tr>
+            <tr><td>क्रमित जोडी दोन्ही मूळ समीकरणांची उकल आहे का ते तपासा.<figure id="fs-id1167835351833"><img src="asset:CNX_IntAlg_Figure_04_01_015a_img.jpg" alt="(0, −3) तपासताना 4(0) − 3(−3) = 9 आणि 7(0) + 2(−3) = −6 मिळते; दोन्ही विधाने सत्य आहेत." /><figcaption><span class="math" data-check="img015a">4(0) − 3(−3) = 9; 7(0) + 2(−3) = −6</span></figcaption></figure></td><td></td></tr>
+            <tr><td></td><td>उकल <span class="math" data-check="example2-pair-final">(0, −3)</span> आहे.</td></tr>
+          </tbody></table>
+          <p data-kind="original">स्रोत-मांडणी नोंद: या तक्त्यात दहा ओळी व वीस कप्पे आहेत. इंडोनेशियन <span class="math">fs-id1167834536402</span> तक्त्यात <span class="math">y</span> आणि पुढील “yang” हा शब्द अवकाशाविना जोडला आहे; मराठीत योग्य अवकाश ठेवला आहे. आकृतींचा स्रोतक्रम 015b, 015c, 015d, 015e, 015f, 015g, 015h, 015a असा जतन केला आहे.</p>
+          <p><a href="#fs-id1167835183561">प्रश्नाकडे परत</a></p>
+        </div>
+      </section>
+    </section>
+
+    <section id="fs-id1167826996182" data-source="A20:m81427#fs-id1167826996182" data-kind="translation" data-source-class="try"><section id="fs-id1167835244250"><h3>स्वतः सोडवा 3</h3><div id="fs-id1167835244252" class="problem"><p id="fs-id1167835244254">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="try3-system">{ 3x − 4y = −9; 5x + 3y = 14 }</span>.</p><p><a href="#fs-id1167834340042">उत्तर पाहा</a></p></div><div id="fs-id1167834340042" class="solution"><h4>स्रोतातील उत्तर</h4><p id="fs-id1167834340045"><span class="math" data-check="try3-answer">(1, 3)</span></p><p><a href="#fs-id1167835244252">प्रश्नाकडे परत</a></p></div></section></section>
+
+    <section id="fs-id1167835163286" data-source="A20:m81427#fs-id1167835163286" data-kind="translation" data-source-class="try"><section id="fs-id1167835163290"><h3>स्वतः सोडवा 4</h3><div id="fs-id1167835163292" class="problem"><p id="fs-id1167834583891">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="try4-system">{ 7x + 8y = 4; 3x − 5y = 27 }</span>.</p><p><a href="#fs-id1167831888060">उत्तर पाहा</a></p></div><div id="fs-id1167831888060" class="solution"><h4>स्रोतातील उत्तर</h4><p id="fs-id1167831888061"><span class="math" data-check="try4-answer">(4, −3)</span></p><p><a href="#fs-id1167835163292">प्रश्नाकडे परत</a></p></div></section></section>
+
+    <p id="fs-id1167830757705" data-source="A20:m81427#fs-id1167830757705" data-kind="translation">समीकरणांच्या प्रणालीत अपूर्णांक असतील, तर प्रत्येक समीकरणाला त्या समीकरणातील सर्व अपूर्णांकांच्या लघुतम सामाईक छेदाने (LCD) गुणून प्रथम अपूर्णांक दूर करू.</p>
+
+    <section id="fs-id1167834535350" data-source="A20:m81427#fs-id1167834535350" data-kind="translation">
+      <h3>सोडवलेले उदाहरण 3 · अपूर्णांक दूर करा</h3>
+      <section id="fs-id1167834535352">
+        <div id="fs-id1167834535354" class="problem"><p id="fs-id1167831117475">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="example3-system">{ x + (1/2)y = 6; (3/2)x + (2/3)y = 17/2 }</span>.</p><p><a href="#fs-id1167832041346">सोडवणूक पाहा</a></p></div>
+        <div id="fs-id1167832041346" class="solution"><h4>स्रोतातील सोडवणूक</h4><p id="fs-id1167832041348">या उदाहरणात दोन्ही समीकरणांत अपूर्णांक आहेत. अपूर्णांक दूर करण्यासाठी प्रथम प्रत्येक समीकरणाला त्या समीकरणातील सर्व अपूर्णांकांच्या लघुतम सामाईक छेदाने गुणू.</p>
+          <table id="fs-id1167834464514"><tbody>
+            <tr><td></td><td><figure id="fs-id1167835575772"><img src="asset:CNX_IntAlg_Figure_04_01_016b_img.jpg" alt="महिरपी कंसात x + (1/2)y = 6 आणि (3/2)x + (2/3)y = 17/2 ही प्रणाली आहे." /><figcaption><span class="math" data-check="img016b">{ x + (1/2)y = 6; (3/2)x + (2/3)y = 17/2 }</span></figcaption></figure></td></tr>
+            <tr><td>अपूर्णांक दूर करण्यासाठी प्रत्येक समीकरणाला त्याच्या LCD ने गुणा.</td><td><figure id="fs-id1167832151434"><img src="asset:CNX_IntAlg_Figure_04_01_016c_img.jpg" alt="पहिले समीकरण 2 ने आणि दुसरे समीकरण 6 ने गुणले आहे: 2(x + (1/2)y) = 2(6) आणि 6((3/2)x + (2/3)y) = 6(17/2)." /><figcaption><span class="math" data-check="img016c">{ 2(x + (1/2)y) = 2(6); 6((3/2)x + (2/3)y) = 6(17/2) }</span></figcaption></figure></td></tr>
+            <tr><td>सोपी करा.</td><td><figure id="fs-id1167834064043"><img src="asset:CNX_IntAlg_Figure_04_01_016d_img.jpg" alt="अपूर्णांक दूर केल्यावर 2x + y = 12 आणि 9x + 4y = 51 मिळते." /><figcaption><span class="math" data-check="img016d">{ 2x + y = 12; 9x + 4y = 51 }</span></figcaption></figure></td></tr>
+            <tr><td>आता एक चल वगळण्यासाठी आपण तयार आहोत. दोन्ही समीकरणे प्रमाणित रूपात आहेत.</td><td></td></tr>
+            <tr><td>पहिले समीकरण <span class="math" data-check="example3-neg4">−4</span> ने गुणून <span class="math" data-check="example3-y">y</span> चे विलोपन करता येईल.</td><td><figure id="fs-id1167835353312"><img src="asset:CNX_IntAlg_Figure_04_01_016e_img.jpg" alt="पहिले समीकरण −4 ने गुणले आहे: −4(2x + y) = −4(12); दुसरे समीकरण 9x + 4y = 51 आहे." /><figcaption><span class="math" data-check="img016e">{ −4(2x + y) = −4(12); 9x + 4y = 51 }</span></figcaption></figure></td></tr>
+            <tr><td>सोपी करून बेरीज करा. मग मूळ समीकरणांपैकी एका समीकरणात <span class="math" data-check="example3-x3">x = 3</span> प्रतिस्थापित करा.</td><td><figure id="fs-id1167828421222"><img src="asset:CNX_IntAlg_Figure_04_01_016f_img.jpg" alt="−8x − 4y = −48 आणि 9x + 4y = 51 यांची बेरीज केल्यावर x = 3 मिळते; हे मूल्य x + (1/2)y = 6 मध्ये ठेवायचे आहे." /><figcaption><span class="math" data-check="img016f">{ −8x − 4y = −48; 9x + 4y = 51 } ⇒ x = 3; x + (1/2)y = 6</span></figcaption></figure></td></tr>
+            <tr><td><span class="math" data-check="example3-y2">y</span> साठी सोडवा.</td><td><figure id="fs-id1167835589634"><img src="asset:CNX_IntAlg_Figure_04_01_016g_img.jpg" alt="3 + (1/2)y = 6 मध्ये 3 लाल रंगात आहे." /><figcaption><span class="math" data-check="img016g">3 + (1/2)y = 6</span></figcaption></figure><figure id="fs-id1167834184112"><img src="asset:CNX_IntAlg_Figure_04_01_016h_img.jpg" alt="(1/2)y = 3." /><figcaption><span class="math" data-check="img016h">(1/2)y = 3</span></figcaption></figure><figure id="fs-id1167835327424"><img src="asset:CNX_IntAlg_Figure_04_01_016i_img.jpg" alt="y = 6." /><figcaption><span class="math" data-check="img016i">y = 6</span></figcaption></figure></td></tr>
+            <tr><td>उकल क्रमित जोडीच्या रूपात लिहा.</td><td>क्रमित जोडी <span class="math" data-check="example3-pair-row">(3, 6)</span> आहे.</td></tr>
+            <tr><td>क्रमित जोडी दोन्ही मूळ समीकरणांची उकल आहे का ते तपासा.<figure id="fs-id1167835190458"><img src="asset:CNX_IntAlg_Figure_04_01_016a_img.jpg" alt="(3, 6) तपासताना 3 + (1/2)(6) = 6 आणि (3/2)(3) + (2/3)(6) = 17/2 मिळते; दोन्ही विधाने सत्य आहेत." /><figcaption><span class="math" data-check="img016a">3 + (1/2)(6) = 6; (3/2)(3) + (2/3)(6) = 17/2</span></figcaption></figure></td><td></td></tr>
+            <tr><td></td><td>उकल <span class="math" data-check="example3-pair-final">(3, 6)</span> आहे.</td></tr>
+          </tbody></table>
+          <p data-kind="original">स्रोत-मांडणी नोंद: या तक्त्यात दहा ओळी व वीस कप्पे आहेत. आकृतींचा स्रोतक्रम 016b, 016c, 016d, 016e, 016f, 016g, 016h, 016i, 016a असा जतन केला आहे.</p>
+          <p><a href="#fs-id1167834535354">प्रश्नाकडे परत</a></p>
+        </div>
+      </section>
+    </section>
+
+    <section id="fs-id1167835309662" data-source="A20:m81427#fs-id1167835309662" data-kind="translation" data-source-class="try"><section id="fs-id1167835342662"><h3>स्वतः सोडवा 5</h3><div id="fs-id1167835342664" class="problem"><p id="fs-id1167835342666">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="try5-system">{ (1/3)x − (1/2)y = 1; (3/4)x − y = 5/2 }</span>.</p><p><a href="#fs-id1167831921076">उत्तर पाहा</a></p></div><div id="fs-id1167831921076" class="solution"><h4>स्रोतातील उत्तर</h4><p id="fs-id1167831921079"><span class="math" data-check="try5-answer">(6, 2)</span></p><p><a href="#fs-id1167835342664">प्रश्नाकडे परत</a></p></div></section></section>
+
+    <section id="fs-id1167831890568" data-source="A20:m81427#fs-id1167831890568" data-kind="translation" data-source-class="try"><section id="fs-id1167835341021"><h3>स्वतः सोडवा 6</h3><div id="fs-id1167835341023" class="problem"><p id="fs-id1167835341025">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="try6-system">{ x + (3/5)y = −1/5; −(1/2)x − (2/3)y = 5/6 }</span>.</p><p><a href="#fs-id1167834190571">उत्तर पाहा</a></p></div><div id="fs-id1167834190571" class="solution"><h4>स्रोतातील उत्तर</h4><p id="fs-id1167834190573"><span class="math" data-check="try6-answer">(1, −2)</span></p><p><a href="#fs-id1167835341023">प्रश्नाकडे परत</a></p></div></section></section>
+
+    <p id="fs-id1167831163799" data-source="A20:m81427#fs-id1167831163799" data-kind="translation">प्रणाली आलेखाने सोडवताना आपण पाहिले की प्रत्येक रेषीय समीकरण-प्रणालीची उकल एकच क्रमित जोडी असेल असे नाही. दोन्ही समीकरणे प्रत्यक्षात तीच रेषा दर्शवत असतील, तर अनंत उकली असतात; अशा प्रणालीला आपण <strong>सुसंगत प्रणाली</strong> म्हटले. दोन समीकरणे समांतर रेषा दर्शवत असतील, तर उकल नसते; अशा प्रणालीला आपण <strong>विसंगत प्रणाली</strong> म्हटले.</p>
+
+    <p id="fs-id1167831163806" data-source="A20:m81427#fs-id1167831163806" data-kind="translation">प्रतिस्थापन किंवा विलोपन वापरतानाही हेच सत्य आहे. प्रतिस्थापनाच्या किंवा विलोपनाच्या शेवटी <span class="math">0 = 0</span> सारखे सत्य विधान मिळाले, तर प्रणाली सुसंगत पण अवलंबित असते आणि तिला अनंत उकली असतात. शेवटी <span class="math">0 = 5</span> सारखे असत्य विधान मिळाले, तर प्रणाली विसंगत असते आणि तिला उकल नसते.</p>
+    <aside data-kind="original"><p>समांतर-स्रोत नोंद: इंडोनेशियन <span class="math">fs-id1167831163799</span> ने सत्य/असत्य निष्कर्ष एका वेगळ्या क्रमाने संक्षिप्त केले आहेत; <span class="math">fs-id1167831163806</span> मध्ये फक्त अवलंबित, अनंत-उकलीचा भाग ठेवून असत्य विधान/विसंगत प्रणाली/उकल नसणे हा कॅननिकल इंग्रजी भाग वगळला आहे. मराठी मजकूर कॅननिकल इंग्रजीतील दोन्ही शाखा पूर्णपणे जतन करतो; ही दुरुस्ती कोणत्याही संख्यात्मक स्रोत-बदलाचा दावा नाही.</p></aside>
+
+    <section id="fs-id1167832138940" data-source="A20:m81427#fs-id1167832138940" data-kind="translation">
+      <h3>सोडवलेले उदाहरण 4 · अनंत उकली</h3>
+      <section id="fs-id1167832138943">
+        <div id="fs-id1167835380388" class="problem"><p id="fs-id1167835380390">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="example4-system">{ 3x + 4y = 12; y = 3 − (3/4)x }</span>.</p><p><a href="#fs-id1167831117510">सोडवणूक पाहा</a></p></div>
+        <div id="fs-id1167831117510" class="solution"><h4>स्रोतातील सोडवणूक</h4>
+          <table id="fs-idm340185024"><tbody>
+            <tr><td></td><td><span class="math" data-check="example4-row1">{ 3x + 4y = 12; y = 3 − (3/4)x }</span></td></tr>
+            <tr><td>दुसरे समीकरण प्रमाणित रूपात लिहा.</td><td><span class="math" data-check="example4-row2">{ 3x + 4y = 12; (3/4)x + y = 3 }</span></td></tr>
+            <tr><td>दुसरे समीकरण 4 ने गुणून अपूर्णांक दूर करा.</td><td><span class="math" data-check="example4-row3">{ 3x + 4y = 12; 4((3/4)x + y) = 4(3) }</span></td></tr>
+            <tr><td>सोपी करा.</td><td><span class="math" data-check="example4-row4">{ 3x + 4y = 12; 3x + 4y = 12 }</span></td></tr>
+            <tr><td>एक चल वगळण्यासाठी दुसरे समीकरण <span class="math">−1</span> ने गुणा. सोपी करून बेरीज करा.</td><td><span class="math" data-check="example4-row5">{ 3x + 4y = 12; −3x − 4y = −12 } ⇒ 0 = 0</span></td></tr>
+          </tbody></table>
+          <p id="fs-id1167831086799">हे सत्य विधान आहे. समीकरणे सुसंगत पण अवलंबित आहेत. त्यांचे दोन्ही आलेख एकमेकांवर येऊन तीच रेषा दाखवतील. प्रणालीला अनंत उकली आहेत.</p>
+          <p id="fs-id1167831833311">दुसऱ्या समीकरणातील अपूर्णांक दूर केल्यावर दोन्ही समीकरणे सारखीच झाली, हे तुमच्या लक्षात आले का? याचा अर्थ दोन्ही रेषा एकमेकींवर जुळतात.</p>
+          <p><a href="#fs-id1167835380388">प्रश्नाकडे परत</a></p>
+        </div>
+      </section>
+    </section>
+
+    <section id="fs-id1167835357545" data-source="A20:m81427#fs-id1167835357545" data-kind="translation" data-source-class="try"><section id="fs-id1167835357549"><h3>स्वतः सोडवा 7</h3><div id="fs-id1167835357552" class="problem"><p id="fs-id1167834066022">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="try7-system">{ 5x − 3y = 15; y = −5 + (5/3)x }</span>.</p><p><a href="#fs-id1167831823837">उत्तर पाहा</a></p></div><div id="fs-id1167831823837" class="solution"><h4>स्रोतातील उत्तर</h4><p id="fs-id1167835379275">अनंत उकली</p><p><a href="#fs-id1167835357552">प्रश्नाकडे परत</a></p></div></section></section>
+
+    <section id="fs-id1167835379282" data-source="A20:m81427#fs-id1167835379282" data-kind="translation" data-source-class="try"><section id="fs-id1167835357672"><h3>स्वतः सोडवा 8</h3><div id="fs-id1167835357674" class="problem"><p id="fs-id1167835357677">ही प्रणाली विलोपनाने सोडवा: <span class="math" data-check="try8-system">{ x + 2y = 6; y = −(1/2)x + 3 }</span>.</p><p><a href="#fs-id1167831920066">उत्तर पाहा</a></p></div><div id="fs-id1167831920066" class="solution"><h4>स्रोतातील उत्तर</h4><p id="fs-id1167831920068">अनंत उकली</p><p><a href="#fs-id1167835357674">प्रश्नाकडे परत</a></p></div></section></section>
+  </section>
+
+  <footer id="credits"><h2>श्रेय आणि मर्यादा</h2><p>इंग्रजी मूळ: OpenStax, <em>Intermediate Algebra 2e</em>; Lynn Marecek आणि Andrea Honeycutt Mathis. मूळ संग्रहाची CC BY-NC-SA 4.0 अट आणि संबंधित घटकांच्या स्वतंत्र सूचना लागू राहतात. <a href="https://openstax.org/books/intermediate-algebra-2e/pages/4-1-solve-systems-of-linear-equations-with-two-variables">OpenStax स्रोत</a> · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">परवाना</a>. इंडोनेशियन समांतर स्रोत: KokunoYumeto/openstax-intermediate-algebra-2e-id मधील पिन केलेला v0.3.0-wip संग्रह. मराठी अनुवाद, पर्यायी वर्णने, चित्रशीर्षके आणि स्पष्ट स्रोत-फरक नोंदी या घटकासाठी तयार केल्या आहेत. बाह्य दुव्यांसाठी इंटरनेट लागते.</p><p data-kind="original">38 थेट स्रोत-निवडी आणि त्यांचा विभाग-wrapper मिळून 128 स्रोत-ओळखचिन्हे जतन केली आहेत. 12 प्रश्न व 12 पुरवलेली उत्तरे, चार सोडवलेली उदाहरणे, आठ “स्वतः सोडवा” प्रश्न, सात पायऱ्यांची सूचना, 37 स्रोत MathML राशी, 27 स्रोत-आकृत्या आणि 10/20, 10/20 व 5/10 अशा ओळी/कप्प्यांचे तीन स्रोत-तक्ते घेतले आहेत. रिकामे स्रोत-उत्तर नाही; नवीन प्रश्न किंवा नवीन उत्तर जोडलेले नाही.</p><p data-kind="original">पुढील sibling विभाग <span class="math">fs-id1167826783829</span>, “Choose the Most Convenient Method to Solve a System of Linear Equations”, येथे घेतलेला नाही. या मसुद्याचे freeze/build, HTML/PDF दृश्य परीक्षण किंवा मानवी मराठी गणित-शिक्षकाचे पुनरावलोकन पूर्ण झाल्याचा दावा नाही. संपूर्ण पाच-पुस्तकांचे काम सुरू आहे.</p></footer>
+</article>

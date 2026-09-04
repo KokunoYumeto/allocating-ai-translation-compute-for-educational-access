@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi-Latn-VN" xml:lang="vi-Latn-VN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bài tập vận dụng: đọc ý nghĩa của hàm số</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">html { color: #182b35; background: #f8f6f1; font-size: 18px; }
+body { max-width: 52rem; margin: 0 auto; padding: 2.5rem 1.3rem 4rem; line-height: 1.65; font-family: "Noto Sans", "Segoe UI", Arial, sans-serif; }
+header { border-bottom: 3px solid #216c68; margin-bottom: 2rem; }
+h1,h2,h3 { line-height: 1.25; color: #175a57; break-after: avoid; }
+h1 { font-size: 2.3rem; } h2 { margin-top: 2.5rem; } h3 { margin-top: 1.8rem; }
+a { color: #075d99; text-underline-offset: .15em; }
+nav { background: #edf0e8; border-radius: .4rem; padding: 1rem 1.4rem; }
+table { border-collapse: collapse; margin: 1.2rem auto; min-width: 55%; }
+th,td { border: 1px solid #98aaa9; padding: .4rem 1rem; }
+th { background: #e2eeea; }
+img { display: block; max-width: 100%; height: auto; margin: 1rem auto; }
+figure { margin: 1.4rem 0; } figcaption { font-size: .9rem; }
+pre { overflow-x: auto; background: #edf0e8; padding: 1rem; border-radius: .3rem; }
+code { font-size: .88em; }
+math[display="block"] { overflow-x: auto; overflow-y: hidden; padding: .6rem 0; }
+:target { scroll-margin-top: 1rem; outline: 2px solid #c3dcd0; }
+@media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.9rem; } body { padding: 1rem; } table { width: 100%; } th,td { padding: .35rem .5rem; } }
+@media print { html { background: white; font-size: 11pt; } body { max-width: none; padding: 0; } nav { display: none; } img,table,pre { break-inside: avoid; } a { color: inherit; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Bài tập vận dụng: đọc ý nghĩa của hàm số</h1>
+<p class="subtitle">A30 · Bài tự học 016 · Bản dịch thử nghiệm 0.1</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#vi-prerequisites" id="toc-vi-prerequisites">Phạm vi và
+cách học</a></li>
+<li><a href="#fs-id1165135580349" id="toc-fs-id1165135580349">Vận dụng
+vào thực tế</a></li>
+<li><a href="#vi-solutions" id="toc-vi-solutions">Lời giải và giải
+thích</a></li>
+<li><a href="#vi-next" id="toc-vi-next">Tự kiểm tra và bước tiếp
+theo</a></li>
+<li><a href="#vi-attribution" id="toc-vi-attribution">Nguồn và ghi
+công</a></li>
+</ul>
+</nav>
+<h2 id="vi-prerequisites">Phạm vi và cách học</h2>
+<p>Bài này dịch toàn bộ nhóm <em>Real-World Applications</em>, gồm năm
+bài 88–92 theo thứ tự của phần bài tập mục 1.1 trong mô-đun m49301. Đây
+là nhóm bài tập cuối cùng của mục; phần thuật ngữ nằm sau đó không thuộc
+đơn vị này. Giữ nguyên cả bài 92 về tính đơn ánh, dù bài ấy không nêu
+một tình huống thực tế.</p>
+<p><em>Hướng dẫn bổ sung:</em> Khi đọc một giá trị hàm số, hãy xác định
+đầu vào, đầu ra, đơn vị của từng đại lượng và mốc thời gian nếu có. Các
+chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+trong những bài khác nhau chỉ những hàm số khác nhau; không mang dữ kiện
+hoặc đơn vị của bài trước sang bài sau. Các mô hình trong đề được dùng
+theo giả thiết đã cho, không phải khẳng định rằng một đại lượng duy nhất
+quyết định mọi tình huống thực tế.</p>
+<p>Nguồn có lời giải cho bài 89 và 91. Ba lời giải còn thiếu được viết
+bổ sung và ghi nhãn rõ ràng. Các ghi chú về đơn vị, cách đọc ký hiệu và
+tập xác định cũng là phần bổ sung.</p>
+<h2 id="fs-id1165135580349">Vận dụng vào thực tế</h2>
+<h3 id="fs-id1165135580355">Bài 88</h3>
+<div id="fs-id1165135580357">
+<div id="fs-id1165135580359">
+<p>Lượng rác,
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135580359:0">
+<mrow> <mi>G</mi><mo>,</mo></mrow> </math> do một thành phố có dân số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135580359:1">
+<mrow> <mi>p</mi></mrow> </math> tạo ra được cho bởi
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135580359:2">
+<mrow> <mi>G</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo> <mi>p</mi>
+<mo>)</mo></mrow><mo>.</mo></mrow> </math> Đại lượng
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135580359:3">
+<mrow> <mi>G</mi></mrow> </math> được đo bằng ton mỗi tuần, còn
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135580359:4">
+<mrow> <mi>p</mi></mrow> </math> được đo bằng nghìn người.</p>
+</div>
+<div id="fs-id1165135380706">
+<p>ⓐ Thị trấn Tola có 40 000 người và tạo ra 13 ton rác mỗi tuần. Hãy
+biểu diễn thông tin này bằng ký hiệu hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135380706:0">
+<mrow> <mi>f</mi><mo>.</mo></mrow> </math></p>
+<p>ⓑ Giải thích ý nghĩa của đẳng thức
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135380706:1">
+<mrow> <mi>f</mi><mrow><mo>(</mo> <mn>5</mn>
+<mo>)</mo></mrow><mo>=</mo><mn>2.</mn></mrow> </math></p>
+</div>
+</div>
+<p><em>Ghi chú đơn vị bổ sung:</em> Giữ cách gọi <strong>ton</strong>
+của nguồn tiếng Anh (<em>tons</em>). Nguồn không xác định loại ton; bài
+này không quy đổi sang kilôgam và không mặc nhiên đồng nhất đơn vị ấy
+với tấn hệ mét.</p>
+<p><a href="#vi-sol-88">Xem lời giải bổ sung bài 88</a>.</p>
+<h3 id="fs-id1165137922382">Bài 89</h3>
+<div id="fs-id1165134269005">
+<div id="fs-id1165134269007">
+<p>Thể tích đất,
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134269007:0">
+<mrow> <mi>D</mi><mo>,</mo></mrow> </math> tính bằng yard khối, cần để
+phủ một khu vườn có diện tích
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134269007:1">
+<mrow> <mi>a</mi></mrow> </math> foot vuông được cho bởi
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134269007:2">
+<mrow> <mi>D</mi><mo>=</mo><mi>g</mi><mrow><mo>(</mo> <mi>a</mi>
+<mo>)</mo></mrow><mo>.</mo></mrow> </math></p>
+</div>
+<div id="fs-id1165137834372">
+<p>ⓐ Một khu vườn có diện tích 5000 ft² cần 50 yd³ đất. Hãy biểu diễn
+thông tin này bằng ký hiệu hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137834372:0">
+<mrow> <mi>g</mi><mo>.</mo></mrow> </math></p>
+<p>ⓑ Giải thích ý nghĩa của đẳng thức
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137834372:1">
+<mrow> <mi>g</mi><mrow><mo>(</mo> <mrow> <mn>100</mn></mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>1.</mn></mrow> </math></p>
+</div>
+</div>
+<p><em>Ghi chú đơn vị bổ sung:</em> ft² là foot vuông, đơn vị diện tích;
+yd³ là yard khối, đơn vị thể tích. Giữ hai đơn vị của nguồn, không đổi
+sang mét vuông hoặc mét khối.</p>
+<p><a href="#fs-id1165135434096">Xem lời giải bài 89</a>.</p>
+<h3 id="fs-id1165135553615">Bài 90</h3>
+<div id="fs-id1165135553617">
+<div id="fs-id1165135553620">
+<p>Gọi
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135553620:0">
+<mrow> <mi>f</mi><mrow><mo>(</mo> <mi>t</mi> <mo>)</mo></mrow></mrow>
+</math> là số con vịt trong một hồ vào thời điểm
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135553620:1">
+<mrow> <mi>t</mi></mrow> </math> năm sau năm 1990. Giải thích ý nghĩa
+của mỗi đẳng thức sau:</p>
+</div>
+<div id="fs-id1165135186507">
+<p>ⓐ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135186507:0">
+<mrow> <mi>f</mi><mrow><mo>(</mo> <mn>5</mn>
+<mo>)</mo></mrow><mo>=</mo><mn>30</mn></mrow> </math></p>
+<p>ⓑ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135186507:1">
+<mrow> <mi>f</mi><mrow><mo>(</mo> <mrow> <mn>10</mn></mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>40</mn></mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-90">Xem lời giải bổ sung bài 90</a>.</p>
+<h3 id="fs-id1165134272734">Bài 91</h3>
+<div id="fs-id1165134272736">
+<div id="fs-id1165134272739">
+<p>Gọi
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134272739:0">
+<mrow> <mi>h</mi><mrow><mo>(</mo> <mi>t</mi> <mo>)</mo></mrow></mrow>
+</math> là độ cao so với mặt đất, tính bằng foot, của một tên lửa tại
+thời điểm
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134272739:1">
+<mrow> <mi>t</mi></mrow> </math> giây sau khi phóng. Giải thích ý nghĩa
+của mỗi đẳng thức sau:</p>
+</div>
+<div id="fs-id1165135342160">
+<p>ⓐ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135342160:0">
+<mrow> <mi>h</mi><mrow><mo>(</mo> <mn>1</mn>
+<mo>)</mo></mrow><mo>=</mo><mn>200</mn></mrow> </math></p>
+<p>ⓑ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135342160:1">
+<mrow> <mi>h</mi><mrow><mo>(</mo> <mn>2</mn>
+<mo>)</mo></mrow><mo>=</mo><mn>350</mn></mrow> </math></p>
+</div>
+</div>
+<p><em>Ghi chú trình bày bổ sung:</em> Hai ý của đề nguồn nằm trong danh
+sách đánh số dạng khoanh tròn; bản dịch ghi rõ ⓐ và ⓑ để khớp với hai
+nhãn trong lời giải nguồn. Ký hiệu ft ở lời giải là đơn vị foot.</p>
+<p><a href="#fs-id1165135708034">Xem lời giải bài 91</a>.</p>
+<h3 id="fs-id1165135708043">Bài 92</h3>
+<div id="fs-id1165135708045">
+<div id="fs-id1165137844421">
+<p>Chứng minh rằng hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137844421:0">
+<mrow> <mi>f</mi><mrow><mo>(</mo> <mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mn>3</mn><msup> <mrow> <mrow><mo>(</mo>
+<mrow> <mi>x</mi><mo>−</mo><mn>5</mn></mrow> <mo>)</mo></mrow></mrow>
+<mn>2</mn> </msup> <mo>+</mo><mn>7</mn></mrow> </math> <u>không</u> đơn
+ánh.</p>
+</div>
+</div>
+<p><a href="#vi-sol-92">Xem lời giải bổ sung bài 92</a>.</p>
+<h2 id="vi-solutions">Lời giải và giải thích</h2>
+<h3 id="vi-sol-88">Bài 88 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho bài này.</p>
+<p>ⓐ Đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+được tính bằng nghìn người, nên dân số 40 000 người tương ứng với</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mfrac><mrow><mn>40</mn><mspace width="0.167em"></mspace><mn>000</mn></mrow><mn>1000</mn></mfrac><mo>=</mo><mn>40</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">p=\frac{40\,000}{1000}=40.</annotation></semantics></math></p>
+<p>Lượng rác mỗi tuần là 13 ton, nên thông tin được viết là</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>40</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>13</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">f(40)=13.</annotation></semantics></math></p>
+<p>Không viết
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>40</mn><mspace width="0.167em"></mspace><mn>000</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>13</mn></mrow><annotation encoding="application/x-tex">f(40\,000)=13</annotation></semantics></math>,
+vì như vậy đã quên đơn vị nghìn người của đầu vào.</p>
+<p>ⓑ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">f(5)=2</annotation></semantics></math>
+nghĩa là, theo mô hình đã cho, một thành phố có
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>×</mo><mn>1000</mn><mo>=</mo><mn>5000</mn></mrow><annotation encoding="application/x-tex">5\times1000=5000</annotation></semantics></math>
+người tạo ra 2 ton rác mỗi tuần.</p>
+<p><em>Giải thích bổ sung:</em> Một cặp đầu vào–đầu ra không xác định
+toàn bộ công thức của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>;
+không tự suy ra rằng lượng rác tỉ lệ thuận với dân số.</p>
+<h3 id="fs-id1165135434096">Bài 89 — Lời giải nguồn</h3>
+<div id="eip-idm959115456">
+<p>ⓐ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-idm959115456:0">
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mn>5000</mn><mo stretchy="false">)</mo><mo>=</mo><mn>50</mn><mo>;</mo></mrow>
+</math></p>
+<p>ⓑ Một khu vườn có diện tích 100 foot vuông cần 1 yard khối đất.</p>
+</div>
+<p><em>Giải thích bổ sung:</em> Đầu vào của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+là số đo diện tích theo ft², đầu ra là số đo thể tích đất theo yd³. Vì
+vậy, đầu vào ở ý ⓐ là 5000, không phải 5; bài này không dùng đơn vị
+nghìn foot vuông. Đề đã giả thiết mô hình
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">D=g(a)</annotation></semantics></math>,
+không yêu cầu tìm độ dày lớp đất hay suy ra một công thức tổng quát từ
+hai giá trị đã cho.</p>
+<h3 id="vi-sol-90">Bài 90 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho bài này.</p>
+<p>ⓐ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">f(5)=30</annotation></semantics></math>
+nghĩa là vào năm
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1990</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>1995</mn></mrow><annotation encoding="application/x-tex">1990+5=1995</annotation></semantics></math>,
+trong hồ có 30 con vịt.</p>
+<p>ⓑ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">f(10)=40</annotation></semantics></math>
+nghĩa là vào năm
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1990</mn><mo>+</mo><mn>10</mn><mo>=</mo><mn>2000</mn></mrow><annotation encoding="application/x-tex">1990+10=2000</annotation></semantics></math>,
+trong hồ có 40 con vịt.</p>
+<p><em>Giải thích bổ sung:</em> Đầu vào là số năm tính từ mốc 1990,
+không phải số chỉ năm trên lịch. Đầu ra là số con vịt ở thời điểm ấy,
+không phải số vịt tăng thêm mỗi năm.</p>
+<h3 id="fs-id1165135708034">Bài 91 — Lời giải nguồn</h3>
+<div id="eip-idm528575840">
+<p>ⓐ Sau khi phóng 1 giây, tên lửa ở độ cao 200 ft so với mặt đất.</p>
+<p>ⓑ Sau khi phóng 2 giây, tên lửa ở độ cao 350 ft so với mặt đất.</p>
+</div>
+<p><em>Giải thích bổ sung:</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">h(t)</annotation></semantics></math>
+là độ cao so với mặt đất ở một thời điểm, không phải vận tốc hay tổng
+quãng đường đã đi. Hai dữ kiện không đủ để xác định
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">h(0)</annotation></semantics></math>
+hoặc kết luận tên lửa chuyển động đều.</p>
+<h3 id="vi-sol-92">Bài 92 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho bài này.</p>
+<p><em>Làm rõ tập xác định:</em> Đề không hạn chế đầu vào. Ta xét công
+thức đa thức đã cho trên tập xác định tự nhiên
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="double-struck">ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.
+Hai số 4 và 6 đều thuộc tập này, và</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>3</mn><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>−</mo><mn>5</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>=</mo><mn>10</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">f(4)=3(4-5)^2+7=10,</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>3</mn><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mo>−</mo><mn>5</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>=</mo><mn>10</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">f(6)=3(6-5)^2+7=10.</annotation></semantics></math></p>
+<p>Vì
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>≠</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">4\ne6</annotation></semantics></math>
+nhưng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(4)=f(6)</annotation></semantics></math>,
+có hai đầu vào khác nhau cho cùng một đầu ra. Do đó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+không đơn ánh.</p>
+<p>Đây là một phản ví dụ chính xác: chỉ cần một cặp như vậy là đủ bác bỏ
+tính đơn ánh. Kết luận được xét trên tập xác định vừa nêu; không được tự
+thu hẹp tập xác định rồi giữ nguyên kết luận.</p>
+<h2 id="vi-next">Tự kiểm tra và bước tiếp theo</h2>
+<p><em>Phần bổ sung:</em> Trước khi kết thúc, hãy tự nêu đơn vị của cả
+đầu vào lẫn đầu ra trong từng bài 88–91, rồi giải thích vì sao cặp
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">4,6</annotation></semantics></math>
+ở bài 92 đủ để chứng minh hàm số không đơn ánh. Chương trình đi kèm kiểm
+tra các giá trị cụ thể, phép đổi giữa số người và nghìn người, cùng phép
+tính năm; nó không xác nhận tính đúng đắn thực nghiệm của các mô
+hình.</p>
+<p>Đơn vị tiếp theo là toàn bộ 11 định nghĩa trong phần thuật ngữ của
+mô-đun m49301, bắt đầu ở fs-id1165137758543. Hoàn thành nhóm năm bài tập
+này không có nghĩa đã hoàn thành mô-đun, sách A30 hoặc toàn bộ lộ trình
+năm sách.</p>
+<h2 id="vi-attribution">Nguồn và ghi công</h2>
+<p>Bản dịch và phần bổ sung tiếng Việt độc lập, địa phương hóa
+vi-Latn-VN. Nguồn: Jay Abramson và các cộng tác viên OpenStax,
+<em>Precalculus 2e</em>, mô-đun m49301, UUID
+11f4eacc-c348-4836-8c5b-747577d249ca; <a href="https://github.com/openstax/osbooks-college-algebra-bundle/tree/789b54099106b071d1d32bfcee454fed72eb4768">nguồn
+được ghim</a>. Đối chiếu với <a href="https://github.com/KokunoYumeto/openstax-precalculus-2e-id">ấn bản
+Bahasa Indonesia</a> 0.1.0-alpha.58-reader.1.</p>
+<p>Văn bản nguồn: Copyright Rice University, OpenStax. Văn bản, bản dịch
+và phần bổ sung A30 này theo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
+4.0</a>. Giữ thông báo thành phần trong notices/, ghi công, chia sẻ
+tương tự và ghi chú thay đổi; các sách khác giữ giấy phép riêng. Bản
+dịch thêm ba lời giải và các ghi chú đã đánh dấu, không sửa bản trích
+nguồn. Không phải ấn bản chính thức hoặc được các tác giả, tổ chức nguồn
+bảo trợ. Được thực hiện với sự hỗ trợ của OpenAI Codex theo yêu cầu
+người dùng; chưa có thẩm định độc lập của người bản ngữ.</p>
+</body>
+</html>

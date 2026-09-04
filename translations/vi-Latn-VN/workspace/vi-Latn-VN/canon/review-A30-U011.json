@@ -1,0 +1,94 @@
+{
+  "unit": "A30-U011",
+  "date": "2026-08-31",
+  "translation_sha256": "d4e6381b6e7532a799396f439075725dad696542e523462688ba83408407ea0d",
+  "author_and_independent_review_draft_sha256": "b73349c830dba7a933091e6528c37f49f5a2370ea15c30847942bdf613b996eb",
+  "root_layout_revision": "After screenshot inspection at390px, split the supplementary Bài28 f(-3) derivation into two display lines so its final value is immediately visible. No source MathML or arithmetic changed. Root reopened actual HUST OCR08 and reread the changed answer before binding this revised hash; author/independent content reviews apply to the preceding hash.",
+  "source_excerpt_sha256": "7a10ea3a63a59e3ca40064a78d40142a48484a72356e86134317a67a9ba78294",
+  "examples_consulted": ["VI-C01", "VI-C02", "VI-C03", "VI-C04", "VI-C05"],
+  "draft_checked": true,
+  "final_checked": true,
+  "draft_author_review_completed": true,
+  "independent_review": "Subsequent read-only review by remaining_exercise_audit passed at the recorded hash: all13 problems,60 sourceIDs,54 sourceMathML,7 translated source answers and6 new answers checked against actual EN/ID, with actual HUST canon rereading. No edits requested. This supersedes the author's earlier blocked attempt to start a reviewer; rendered visual QA is separate.",
+  "root_acceptance": "Root read the whole final draft and complete54-MathML source excerpt, checked all13 substitutions/equations and separate domain conditions, and reopened actual HUST OCR07/08/09 during source review plus OCR08 again after the complete source read. Verified outside negation, quotient exclusions after cancellation and both quadratic roots. Accepted at the recorded draft hash; reader rendering is recorded separately in qa/visual-A30-U011.json.",
+  "stages": [
+    {
+      "stage": "before drafting",
+      "note": "Reopened the actual root/user instructions and durable language instructions. Read the complete EN A3-A6 source span and the ID selected-subtree prose/structure, confirmed the prior exercise and Graphical boundary, and compared all EN/ID MathML. Actually reopened HUST OCR07 and OCR08 plus native printed pages6-7 and the terminology ledger. Used the function/formula distinction and explicit-domain language in VI-C01, the domain exercise VI-C03 and function-argument exercise VI-C05; the range witnesses VI-C02/04 were read for consistent surrounding terminology."
+    },
+    {
+      "stage": "during drafting and answer verification",
+      "note": "Returned to actual HUST OCR07/08 and native Exercise1.1-1.3 passages while drafting the solution explanations and domain qualifications. Kept tập xác định fully written out rather than TXĐ. Preserved seven source answers as source answers and marked six newly authored solutions. Kept the argument f(-a) distinct from the negative value -f(a). Coordinated source-wide numbering27-39 with U010 and did not duplicate its Algebraic parent anchor."
+    },
+    {
+      "stage": "final draft-author review",
+      "note": "Read the whole Vietnamese draft, reopened actual OCR07/08 and native printed page6 definition plus printed page7 Exercises1.1-1.3, and visually inspected existing hust-08.png against those extracts. Revised two awkward substitution sentences and the opening heading. Reread the relevant actual canon passages and changed paragraphs after revision, reran445 checks including originals, and ran a no-file Pandoc smoke parse:60 source IDs,54 source MathML occurrences,84 HTML IDs,177 total MathML nodes, no images/duplicate IDs/escaped MathML/unparsed containers. This is not final reader visual QA."
+    }
+  ],
+  "witnesses": [
+    {
+      "source": "C-VI-01",
+      "path": "downloads/vi-canon/hust-07.ocr.txt",
+      "sha256": "a93f4fdf9f7e4606386cd27b026138a3e00c676733ee8666beecd9f9f7545353",
+      "locator": "PDF page7 / printed page6, section3(1), function definition and formula/domain distinction; examples VI-C01/02"
+    },
+    {
+      "source": "C-VI-01",
+      "path": "downloads/vi-canon/hust-08.ocr.txt",
+      "sha256": "8791a452903eeca13238095063a51227da0cfd6c81fc4bfa19ac73f104d1fa6e",
+      "locator": "PDF page8 / printed page7, Exercises1.1-1.3; examples VI-C03/04/05"
+    },
+    {
+      "source": "C-VI-01",
+      "path": "downloads/vi-canon/hust-giai-tich-1.native.txt",
+      "sha256": "8e810df28f8051bf1db67cc7e19855f9aa0b203c0ef7273dcf5c85dce0cdb38e",
+      "locator": "Printed pages6-7, section3(1) and Exercises1.1-1.3; native text compared with OCR and existing page image"
+    },
+    {
+      "source": "C-VI-01",
+      "path": "downloads/vi-canon/hust-08.png",
+      "sha256": "66d7e8a2df2f274fc4f9915775d6c8b361ddf1771a5a95e3c699088de84eca89",
+      "locator": "Existing raster of PDF page8 / printed page7, visually inspected after OCR reading"
+    }
+  ],
+  "source_start": "m49301/fs-id1165134066606",
+  "previous_exercise": "fs-id1165137599984",
+  "last_exercise": "fs-id1165137433542",
+  "stop_before": "fs-id1165135664071",
+  "source_scope": {
+    "source_ids": 60,
+    "mathml_expressions": 54,
+    "shared_prompt": 1,
+    "exercises": 13,
+    "source_solutions": 7,
+    "newly_authored_solutions": 6,
+    "source_images": 0,
+    "source_tables": 0,
+    "source_links": 0
+  },
+  "terminology_choices": {
+    "evaluate a function": "tính giá trị của hàm số; short problem instruction Tính",
+    "solve": "giải phương trình, finding all valid inputs",
+    "domain": "tập xác định",
+    "negative function value": "số đối của toàn bộ giá trị hàm số",
+    "difference-quotient heading": "Rút gọn tỉ số các hiệu"
+  },
+  "material_decisions_for_root_log": [
+    "Translate the shared A3 instruction as computing expressions involving f, consistent with the ID wording: -f(a) is not an input value. Preserve both source MathML occurrences in that prompt.",
+    "Preserve source-wide exercise numbering27-39, coordinated with U010's6-26, rather than restarting at1. U010 owns parent Algebraic ID fs-id1165134080937; U011's source-excerpt wrapper has no ID or duplicated title.",
+    "Retain all54 source MathML expressions and60 original IDs explicitly, and all source subpart labels. No source image/table/link occurs in this span; no assets or component notices changed.",
+    "Add real-domain assumptions as supplementary guidance, not source text. Radical f(x)=sqrt(2-x)+5 needs x<=2; its three variable expressions separately require a>=-2, a<=2 and a+h<=2. Do not falsely require all three conditions simultaneously.",
+    "For the rational function, retain different restrictions a!=2/5 for f(-a), a!=-2/5 for -f(a), and a+h!=-2/5 for f(a+h). New solution uses exact19/13 and11/12, and changes both numerator and denominator signs together.",
+    "Retain the explicit source quotient conditions h!=0 and x!=a after cancellation. The descriptive heading tỉ số các hiệu is not claimed as directly witnessed canon terminology; no derivative or limit is introduced.",
+    "New quadratic substitution solution expands the middle2ah term and applies the outside minus sign to the whole expression. The absolute-value answer retains bars when their arguments have unknown sign.",
+    "Use exact radical sqrt5+5, not rounded decimals. The map's erroneous rounded-irrational equality belongs to later Numeric exercise fs-id1165137937596, not U011; that issue is deliberately left for the later unit.",
+    "Supply all roots for the two quadratic solve prompts. Explain that c is the local input variable for p, rather than carrying forward a constant-parameter interpretation from another unit.",
+    "The square-root function is nonnegative: f(7)=3, not plus/minus3. Solving sqrt(x+2)=4 includes x>=-2 and verifies the unique result x=14.",
+    "The final relation is solved for r as output and t as input, without importing a physical interpretation or units. All expanded reasoning is explicitly supplementary.",
+    "438 standalone assertions comprise174 structural/transcription,15 exact polynomial-coefficient identities,219 finite arithmetic checks and30 domain checks. Optional --originals adds7 full-source/boundary checks. Default tests require only the committed draft/excerpt and Python standard library, not ignored downloads.",
+    "No external canon exercise or answer is incorporated. Canon supports Vietnamese language only and does not override pinned-source mathematics; OCR/formula defects were visible during comparison.",
+    "Only six new U011-owned files authored. No shared registry, assets, notices or status files changed; no commit or goal-completion claim."
+  ],
+  "canon_limit": "Current witnesses directly support function/domain and exercise-solution language, not the exact descriptive tỉ số các hiệu heading. That phrase is an original, transparent translator choice pending native review. The witness is not mathematical authority and none of its exercises is reproduced.",
+  "native_speaker_review": "not_performed"
+}

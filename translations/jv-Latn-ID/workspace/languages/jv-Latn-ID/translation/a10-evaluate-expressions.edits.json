@@ -1,0 +1,245 @@
+{
+  "schema": "reviewable-translation-phrases-v1",
+  "purpose": "Source-bound translation edits only; not training or fine-tuning data.",
+  "unit": "a10-evaluate-expressions",
+  "source_module": "m82453",
+  "source_section": "fs-id1170654889475",
+  "direct_child_slice_zero_based": null,
+  "scope": "Entire 13-child evaluating-expressions section, including all three worked examples, six practices, fifteen question parts, nine solutions, five tables, and sixteen media descriptions. Stops before fs-id1170655163482; no later section or whole-module completion is implied.",
+  "tracks": [
+    "jv-academic",
+    "jv-conversation"
+  ],
+  "review_status": "AI-assisted provisional text/attribute draft only; media-label derivatives, source-bound narration, reader integration and native educator review pending.",
+  "unchanged_identifiers": [
+    "x",
+    "y"
+  ],
+  "required_linguistic_attributes": [
+    "alt",
+    "aria-label",
+    "summary"
+  ],
+  "source_hashes": {
+    "indonesian_module_sha256": "2c0b688d569044b128d589579e9ba7d871a0fb9ac7a670ac6f22d0ef2b66e635",
+    "english_module_sha256": "a8fdd235aa254c5a0a1248fa858e9b3579d9b40982bbc514cbe6a18c3e6fcbed"
+  },
+  "expected_source_counts": {
+    "direct_children": 13,
+    "ids": 83,
+    "mathml": 38,
+    "msup": 12,
+    "identifier_mtext": 1,
+    "spacing_only_mathml": 0,
+    "tables": 5,
+    "media": 16,
+    "exercises": 9,
+    "solutions": 9,
+    "question_parts": 15,
+    "links": 0
+  },
+  "clarifications": [
+    {
+      "source_anchor": "fs-id1167829717426",
+      "source_key": "Gambar memiliki dua kolom, dengan petunjuk di kiri dan matematika di kanan. Di kiri, teks berbunyi “Ganti x dengan 4.” Di kanan terdapat suku x kuadrat. Satu baris di bawahnya, petunjuk di kiri berbunyi “Gunakan definisi eksponen.” Di kanan terdapat suku 4 kuadrat. Satu baris di bawahnya, petunjuk di kiri berbunyi “Sederhanakan.” Di kanan terdapat ekspresi 4 kali 4. Di bawah ekspresi ini terdapat angka 16, yaitu hasil substitusi 4 untuk x.",
+      "decision": "Target-only accessible description follows the actual four source rows: initial x squared with empty left cell; replace x with 4 paired with 4 squared; exponent definition paired with 4 times 4; simplify paired with 16. The existing ID/EN aria shifts its instructions one row early. All original numeric mentions are retained, and no source or MathML node changes."
+    },
+    {
+      "source_anchor": "fs-id1167836504155",
+      "source_key": "Gambar memiliki dua kolom, dengan petunjuk di kiri dan matematika di kanan. Di kiri, teks berbunyi “Ganti x dengan 4.” Di kanan terdapat suku 3 pangkat 4. Satu baris di bawahnya, petunjuk di kiri berbunyi “Gunakan definisi eksponen.” Di kanan terdapat ekspresi 3 kali 3 kali 3 kali 3. Satu baris di bawahnya, petunjuk di kiri berbunyi “Sederhanakan.” Di kanan terdapat angka 81, yaitu nilai ekspresi ketika x diganti dengan 4.",
+      "decision": "Target-only accessible description acknowledges the omitted initial symbolic row with a variable exponent before the existing substitution/calculation rows. No new numeric claim is inserted. The actual initial MathML 3 to mtext x remains exact."
+    },
+    {
+      "source_anchor": "fs-id1169148881010",
+      "source_key": "Gambar memiliki dua kolom, dengan petunjuk di kiri dan matematika di kanan. Di kanan atas terdapat ekspresi 2x kuadrat tambah 3x tambah 8. Satu baris di bawahnya, teks di kiri berbunyi “Substitusikan x sama dengan 4.” Di kanan terdapat ekspresi 2, buka tanda kurung, 4, tutup tanda kurung, kuadrat, tambah 3, buka tanda kurung, 4, tutup tanda kurung, tambah 8. Satu baris di bawahnya, petunjuk di kiri berbunyi “Ikuti urutan operasi hitung.” Di kanan terdapat ekspresi 2, buka tanda kurung, 16, tutup tanda kurung, tambah 3, buka tanda kurung, 4, tutup tanda kurung, tambah 8. Di bawahnya terdapat ekspresi 32 tambah 12 tambah 8. Di bawahnya terdapat 52, yaitu nilai ekspresi ketika x diganti dengan 4.",
+      "decision": "Make the implicit product in 2x squared explicit as 2 ping x kuadrat, so the square applies to x, not the coefficient-variable product. The table's actual MathML tree is unchanged."
+    },
+    {
+      "source_anchor": "fs-id1169149357522",
+      "source_key": "Teks 'Substitusikan x = 4.' ditampilkan dengan angka 4 disorot merah.",
+      "decision": "Render the displayed substitution instruction as Gunakna x = 4.; preserve the literal variable, equals sign and value. The introductory text explains replacement, and the table description uses the matching assignment wording."
+    }
+  ],
+  "phrases": [
+    [
+      "Menentukan Nilai Ekspresi",
+      "Nemtokake Nilai Ekspresi",
+      "Ngetung Nilai Wujud Aljabar"
+    ],
+    [
+      "Dalam beberapa contoh terakhir, kita menyederhanakan ekspresi dengan menggunakan urutan operasi hitung. Sekarang kita akan menentukan nilai beberapa ekspresi—sekali lagi dengan mengikuti urutan operasi hitung.",
+      "Ing sawetara tuladha pungkasan, kita nggawe ekspresi luwih prasaja kanthi nggunakake urutan operasi itung. Saiki kita bakal nemtokake nilai sawetara ekspresi—maneh kanthi manut urutan operasi itung.",
+      "Ing sawetara tuladha pungkasan, kita nggawe wujud aljabar luwih prasaja nganggo urutan ngetung. Saiki kita bakal ngetung nilai sawetara wujud aljabar—uga manut urutan ngetung."
+    ],
+    [
+      "Menentukan nilai ekspresi",
+      "Nemtokake nilai ekspresi",
+      "Ngetung nilai wujud aljabar"
+    ],
+    [
+      "berarti mencari nilai ekspresi ketika variabelnya diganti dengan bilangan tertentu.",
+      "ateges nggoleki nilai ekspresi nalika variabele diganti nganggo wilangan tartamtu.",
+      "tegese nggoleki nilai wujud aljabar nalika variabele diganti nganggo wilangan tartamtu."
+    ],
+    [
+      "Untuk menentukan nilai ekspresi, substitusikan bilangan tersebut sebagai pengganti variabel dalam ekspresi, lalu sederhanakan ekspresinya.",
+      "Kanggo nemtokake nilai ekspresi, gantia variabel ing ekspresi nganggo wilangan kasebut, banjur gawea ekspresine luwih prasaja.",
+      "Kanggo ngetung nilai wujud aljabar, ganti variabele nganggo wilangan kuwi, banjur gawe wujude luwih prasaja."
+    ],
+    [
+      "Tentukan nilai",
+      "Temtokna nilai",
+      "Etungen nilai"
+    ],
+    [
+      "ketika",
+      "nalika",
+      "nalika"
+    ],
+    [
+      "dan",
+      "lan",
+      "lan"
+    ],
+    [
+      "Penyelesaian",
+      "Panyelesaian",
+      "Cara Ngrampungake"
+    ],
+    [
+      "Gambar memiliki dua kolom, dengan petunjuk di kiri dan matematika di kanan. Di kiri, teks berbunyi “Ketika x sama dengan 5.” Di kanan terdapat ekspresi 7x kurang 4. Satu baris di bawahnya terdapat ekspresi dengan 5 disubstitusikan untuk x: 7, buka tanda kurung, 5, tutup tanda kurung, kurang 4. Satu baris di bawahnya, petunjuk di kiri berbunyi “Kalikan.” Di kanan terdapat ekspresi 35 kurang 4. Satu baris di bawahnya, petunjuk di kiri berbunyi “Kurangkan.” Di kanan terdapat angka 31, yaitu bentuk sederhana ekspresi tersebut.",
+      "Gambar nduweni rong kolom, kanthi pituduh ing kiwa lan petungan ing tengen. Ing kiwa, teks muni “Nalika x padha karo 5.” Ing tengen ana ekspresi 7x dikurangi 4. Siji larik ing ngisore ana ekspresi kanthi 5 minangka gantine x: 7, bukak tandha kurung, 5, tutup tandha kurung, dikurangi 4. Siji larik ing ngisore, pituduh ing kiwa muni “Pingake.” Ing tengen ana ekspresi 35 dikurangi 4. Siji larik ing ngisore, pituduh ing kiwa muni “Kurangana.” Ing tengen ana angka 31, yaiku wujud prasaja saka ekspresi kasebut.",
+      "Gambar ana rong kolom, pituduh ing kiwa lan petungan ing tengen. Ing kiwa, tulisan unine “Nalika x padha karo 5.” Ing tengen ana wujud 7x dikurangi 4. Siji larik ing ngisore ana wujud nganggo 5 minangka gantine x: 7, bukak kurung, 5, tutup kurung, dikurangi 4. Siji larik ing ngisore, pituduh ing kiwa unine “Pingna.” Ing tengen ana wujud 35 dikurangi 4. Siji larik ing ngisore, pituduh ing kiwa unine “Kurangi.” Ing tengen ana angka 31, yaiku wujud prasaja saka wujud aljabar mau."
+    ],
+    [
+      "Teks 'ketika x = 5' ditampilkan pada latar putih, dengan angka 5 disorot merah secara halus.",
+      "Teks 'nalika x = 5' ditampilake ing latar putih, kanthi angka 5 dicethakake nganggo warna abang samar.",
+      "Tulisan 'nalika x = 5' ditampilake ing latar putih, lan angka 5 diwenehi warna abang samar."
+    ],
+    [
+      "Ekspresi matematika '7x-4' ditampilkan pada latar putih, terdiri atas angka 7, variabel x, tanda kurang, dan angka 4.",
+      "Ekspresi matematika '7x-4' ditampilake ing latar putih, dumadi saka angka 7, variabel x, tandha kurang, lan angka 4.",
+      "Ana wujud matematika '7x-4' ing latar putih, isine angka 7, variabel x, tandha kurang, lan angka 4."
+    ],
+    [
+      "Ekspresi matematika menunjukkan 7 dikalikan 5, kemudian hasilnya dikurangi 4, ditulis sebagai 7(5)-4. Angka 5 disorot merah.",
+      "Ekspresi matematika nuduhake 7 dipingake karo 5, banjur asile dikurangi 4, ditulis minangka 7(5)-4. Angka 5 dicethakake nganggo warna abang.",
+      "Wujud matematika nuduhake 7 dipingake karo 5, banjur asile dikurangi 4, ditulis 7(5)-4. Angka 5 diwenehi warna abang."
+    ],
+    [
+      "Kalikan.",
+      "Pingake.",
+      "Pingna."
+    ],
+    [
+      "Gambar menampilkan '35-4' dengan huruf abu-abu gelap pada latar putih.",
+      "Gambar nuduhake '35-4' kanthi tulisan klawu peteng ing latar putih.",
+      "Gambar nuduhake '35-4', tulisane klawu peteng ing latar putih."
+    ],
+    [
+      "Kurangkan.",
+      "Kurangana.",
+      "Kurangi."
+    ],
+    [
+      "Angka '31' tampak jelas di sudut kanan atas pada latar putih polos.",
+      "Angka '31' katon cetha ing pojok tengen ndhuwur ing latar putih polos.",
+      "Angka '31' katon cetha ing pojok tengen ndhuwur ing latar putih polos."
+    ],
+    [
+      "Gambar memiliki dua kolom, dengan petunjuk di kiri dan matematika di kanan. Di kiri, teks berbunyi “Ketika x sama dengan 1.” Di kanan terdapat ekspresi 7x kurang 4. Satu baris di bawahnya terdapat ekspresi dengan 1 disubstitusikan untuk x: 7, buka tanda kurung, 1, tutup tanda kurung, kurang 4. Satu baris di bawahnya, petunjuk di kiri berbunyi “Kalikan.” Di kanan terdapat ekspresi 7 kurang 4. Satu baris di bawahnya, petunjuk di kiri berbunyi “Kurangkan.” Di kanan terdapat angka 3, yaitu bentuk sederhana ekspresi tersebut.",
+      "Gambar nduweni rong kolom, kanthi pituduh ing kiwa lan petungan ing tengen. Ing kiwa, teks muni “Nalika x padha karo 1.” Ing tengen ana ekspresi 7x dikurangi 4. Siji larik ing ngisore ana ekspresi kanthi 1 minangka gantine x: 7, bukak tandha kurung, 1, tutup tandha kurung, dikurangi 4. Siji larik ing ngisore, pituduh ing kiwa muni “Pingake.” Ing tengen ana ekspresi 7 dikurangi 4. Siji larik ing ngisore, pituduh ing kiwa muni “Kurangana.” Ing tengen ana angka 3, yaiku wujud prasaja saka ekspresi kasebut.",
+      "Gambar ana rong kolom, pituduh ing kiwa lan petungan ing tengen. Ing kiwa, tulisan unine “Nalika x padha karo 1.” Ing tengen ana wujud 7x dikurangi 4. Siji larik ing ngisore ana wujud nganggo 1 minangka gantine x: 7, bukak kurung, 1, tutup kurung, dikurangi 4. Siji larik ing ngisore, pituduh ing kiwa unine “Pingna.” Ing tengen ana wujud 7 dikurangi 4. Siji larik ing ngisore, pituduh ing kiwa unine “Kurangi.” Ing tengen ana angka 3, yaiku wujud prasaja saka wujud aljabar mau."
+    ],
+    [
+      "Teks 'ketika x = 1' ditampilkan pada latar putih, dengan angka 1 disorot merah.",
+      "Teks 'nalika x = 1' ditampilake ing latar putih, kanthi angka 1 dicethakake nganggo warna abang.",
+      "Tulisan 'nalika x = 1' ditampilake ing latar putih, lan angka 1 diwenehi warna abang."
+    ],
+    [
+      "Ekspresi matematika berbunyi '7(1)-4', dengan angka 1 disorot merah secara jelas.",
+      "Ekspresi matematika muni '7(1)-4', kanthi angka 1 dicethakake nganggo warna abang sing cetha.",
+      "Wujud matematika unine '7(1)-4', angka 1 diwenehi warna abang sing cetha."
+    ],
+    [
+      "Ekspresi 7-4 ditampilkan pada latar putih.",
+      "Ekspresi 7-4 ditampilake ing latar putih.",
+      "Wujud 7-4 ditampilake ing latar putih."
+    ],
+    [
+      "Tampak dekat angka 3 berukuran besar dan berwarna abu-abu gelap pada latar putih bersih.",
+      "Katon saka cedhak angka 3 sing gedhé lan awarna klawu peteng ing latar putih resik.",
+      "Katon saka cedhak angka 3 sing gedhé, wernane klawu peteng ing latar putih resik."
+    ],
+    [
+      "Untuk",
+      "Kanggo",
+      "Kanggo"
+    ],
+    [
+      "tentukan nilai",
+      "temtokna nilai",
+      "etungen nilai"
+    ],
+    [
+      "Gambar memiliki dua kolom, dengan petunjuk di kiri dan matematika di kanan. Di kiri, teks berbunyi “Ganti x dengan 4.” Di kanan terdapat suku x kuadrat. Satu baris di bawahnya, petunjuk di kiri berbunyi “Gunakan definisi eksponen.” Di kanan terdapat suku 4 kuadrat. Satu baris di bawahnya, petunjuk di kiri berbunyi “Sederhanakan.” Di kanan terdapat ekspresi 4 kali 4. Di bawah ekspresi ini terdapat angka 16, yaitu hasil substitusi 4 untuk x.",
+      "Gambar nduweni rong kolom, kanthi pituduh ing kiwa lan petungan ing tengen. Ing larik kapisan, kolom kiwa kosong lan ing tengen ana suku x kuadrat. Ing larik sabanjure, pituduh ing kiwa muni “Gantia x nganggo 4.” Ing tengen ana suku 4 kuadrat. Siji larik ing ngisore, pituduh ing kiwa muni “Gunakna definisi eksponen.” Ing tengen ana ekspresi 4 ping 4. Ing larik pungkasan, pituduh ing kiwa muni “Gawea luwih prasaja.” Ing tengen ana angka 16, yaiku asile nalika x diganti nganggo 4.",
+      "Gambar ana rong kolom, pituduh ing kiwa lan petungan ing tengen. Ing larik kapisan, kolom kiwa kosong lan ing tengen ana suku x kuadrat. Ing larik sabanjure, pituduh ing kiwa unine “Ganti x nganggo 4.” Ing tengen ana suku 4 kuadrat. Siji larik ing ngisore, pituduh ing kiwa unine “Nganggoa definisi eksponen.” Ing tengen ana wujud 4 ping 4. Ing larik paling ngisor, pituduh ing kiwa unine “Gawe luwih prasaja.” Ing tengen ana angka 16, yaiku asile nalika x diganti nganggo 4."
+    ],
+    [
+      "Gambar menampilkan teks 'Ganti x dengan 4.' dengan huruf sans-serif abu-abu dan angka 4 disorot merah pada latar putih polos.",
+      "Gambar nuduhake teks 'Gantia x nganggo 4.' kanthi tulisan sans-serif klawu lan angka 4 dicethakake nganggo warna abang ing latar putih polos.",
+      "Gambar nuduhake tulisan 'Ganti x nganggo 4.', jinise sans-serif klawu, lan angka 4 diwenehi warna abang ing latar putih polos."
+    ],
+    [
+      "Tampak dekat angka 4 besar berwarna merah yang dipangkatkan 2.",
+      "Katon saka cedhak angka 4 gedhé awarna abang sing dipangkatake 2.",
+      "Katon saka cedhak angka 4 gedhé, wernane abang, sing dipangkatake 2."
+    ],
+    [
+      "Gunakan definisi eksponen.",
+      "Gunakna definisi eksponen.",
+      "Nganggoa definisi eksponen."
+    ],
+    [
+      "Sederhanakan.",
+      "Gawea luwih prasaja.",
+      "Gawe luwih prasaja."
+    ],
+    [
+      "Gambar memiliki dua kolom, dengan petunjuk di kiri dan matematika di kanan. Di kiri, teks berbunyi “Ganti x dengan 4.” Di kanan terdapat suku 3 pangkat 4. Satu baris di bawahnya, petunjuk di kiri berbunyi “Gunakan definisi eksponen.” Di kanan terdapat ekspresi 3 kali 3 kali 3 kali 3. Satu baris di bawahnya, petunjuk di kiri berbunyi “Sederhanakan.” Di kanan terdapat angka 81, yaitu nilai ekspresi ketika x diganti dengan 4.",
+      "Gambar nduweni rong kolom, kanthi pituduh ing kiwa lan petungan ing tengen. Larik pambuka nuduhake ekspresi asli kanthi variabel ing pangkate ing kolom tengen. Ing larik sabanjure, pituduh ing kiwa muni “Gantia x nganggo 4.” Ing tengen ana suku 3 pangkat 4. Siji larik ing ngisore, pituduh ing kiwa muni “Gunakna definisi eksponen.” Ing tengen ana ekspresi 3 ping 3 ping 3 ping 3. Siji larik ing ngisore, pituduh ing kiwa muni “Gawea luwih prasaja.” Ing tengen ana angka 81, yaiku nilai ekspresi nalika x diganti nganggo 4.",
+      "Gambar ana rong kolom, pituduh ing kiwa lan petungan ing tengen. Larik kapisan nuduhake wujud asli sing pangkate isih variabel, ana ing kolom tengen. Ing larik sabanjure, pituduh ing kiwa unine “Ganti x nganggo 4.” Ing tengen ana suku 3 pangkat 4. Siji larik ing ngisore, pituduh ing kiwa unine “Nganggoa definisi eksponen.” Ing tengen ana wujud 3 ping 3 ping 3 ping 3. Siji larik ing ngisore, pituduh ing kiwa unine “Gawe luwih prasaja.” Ing tengen ana angka 81, yaiku nilai wujud aljabar nalika x diganti nganggo 4."
+    ],
+    [
+      "Teks 'Ganti x dengan 4.' ditampilkan secara digital. Kata-katanya berwarna abu-abu gelap, sedangkan angka 4 disorot merah jingga dan diikuti titik abu-abu gelap. Latar belakangnya putih.",
+      "Teks 'Gantia x nganggo 4.' ditampilake kanthi cara digital. Tetembungane awarna klawu peteng, dene angka 4 dicethakake nganggo warna abang jingga lan diterusake titik klawu peteng. Latare putih.",
+      "Tulisan 'Ganti x nganggo 4.' ditampilake kanthi cara digital. Tembung-tembunge wernane klawu peteng, nanging angka 4 diwenehi warna abang jingga lan diterusake titik klawu peteng. Latare putih."
+    ],
+    [
+      "Ekspresi matematika menunjukkan 3 pangkat 4, ditulis sebagai 3^4, dengan 3 sebagai bilangan pokok dan 4 sebagai eksponen.",
+      "Ekspresi matematika nuduhake 3 pangkat 4, ditulis minangka 3^4, kanthi 3 minangka wilangan pokok lan 4 minangka eksponen.",
+      "Wujud matematika nuduhake 3 pangkat 4, ditulis 3^4, kanthi 3 minangka wilangan dhasar lan 4 minangka eksponen."
+    ],
+    [
+      "Gambar memiliki dua kolom, dengan petunjuk di kiri dan matematika di kanan. Di kanan atas terdapat ekspresi 2x kuadrat tambah 3x tambah 8. Satu baris di bawahnya, teks di kiri berbunyi “Substitusikan x sama dengan 4.” Di kanan terdapat ekspresi 2, buka tanda kurung, 4, tutup tanda kurung, kuadrat, tambah 3, buka tanda kurung, 4, tutup tanda kurung, tambah 8. Satu baris di bawahnya, petunjuk di kiri berbunyi “Ikuti urutan operasi hitung.” Di kanan terdapat ekspresi 2, buka tanda kurung, 16, tutup tanda kurung, tambah 3, buka tanda kurung, 4, tutup tanda kurung, tambah 8. Di bawahnya terdapat ekspresi 32 tambah 12 tambah 8. Di bawahnya terdapat 52, yaitu nilai ekspresi ketika x diganti dengan 4.",
+      "Gambar nduweni rong kolom, kanthi pituduh ing kiwa lan petungan ing tengen. Ing tengen ndhuwur ana ekspresi 2 ping x kuadrat ditambah 3x ditambah 8. Siji larik ing ngisore, teks ing kiwa muni “Gunakna x padha karo 4.” Ing tengen ana ekspresi 2, bukak tandha kurung, 4, tutup tandha kurung, kuadrat, ditambah 3, bukak tandha kurung, 4, tutup tandha kurung, ditambah 8. Siji larik ing ngisore, pituduh ing kiwa muni “Manuta urutan operasi itung.” Ing tengen ana ekspresi 2, bukak tandha kurung, 16, tutup tandha kurung, ditambah 3, bukak tandha kurung, 4, tutup tandha kurung, ditambah 8. Ing ngisore ana ekspresi 32 ditambah 12 ditambah 8. Ing ngisore ana 52, yaiku nilai ekspresi nalika x diganti nganggo 4.",
+      "Gambar ana rong kolom, pituduh ing kiwa lan petungan ing tengen. Ing tengen ndhuwur ana wujud 2 ping x kuadrat ditambah 3x ditambah 8. Siji larik ing ngisore, tulisan ing kiwa unine “Gunakna x padha karo 4.” Ing tengen ana wujud 2, bukak kurung, 4, tutup kurung, kuadrat, ditambah 3, bukak kurung, 4, tutup kurung, ditambah 8. Siji larik ing ngisore, pituduh ing kiwa unine “Manuta urutan ngetung.” Ing tengen ana wujud 2, bukak kurung, 16, tutup kurung, ditambah 3, bukak kurung, 4, tutup kurung, ditambah 8. Ing ngisore ana wujud 32 ditambah 12 ditambah 8. Ing ngisore ana 52, yaiku nilai wujud aljabar nalika x diganti nganggo 4."
+    ],
+    [
+      "Teks 'Substitusikan x = 4.' ditampilkan dengan angka 4 disorot merah.",
+      "Teks 'Gunakna x = 4.' ditampilake kanthi angka 4 dicethakake nganggo warna abang.",
+      "Tulisan 'Gunakna x = 4.' ditampilake, angka 4 diwenehi warna abang."
+    ],
+    [
+      "Ekspresi matematika menunjukkan 2 kali 4 kuadrat tambah 3 kali 4 tambah 8, ditulis sebagai 2(4)^2 + 3(4) + 8, dengan huruf hitam pada latar putih.",
+      "Ekspresi matematika nuduhake 2 ping 4 kuadrat ditambah 3 ping 4 ditambah 8, ditulis minangka 2(4)^2 + 3(4) + 8, kanthi tulisan ireng ing latar putih.",
+      "Wujud matematika nuduhake 2 ping 4 kuadrat ditambah 3 ping 4 ditambah 8, ditulis 2(4)^2 + 3(4) + 8, tulisane ireng ing latar putih."
+    ],
+    [
+      "Ikuti urutan operasi hitung.",
+      "Manuta urutan operasi itung.",
+      "Manuta urutan ngetung."
+    ]
+  ]
+}

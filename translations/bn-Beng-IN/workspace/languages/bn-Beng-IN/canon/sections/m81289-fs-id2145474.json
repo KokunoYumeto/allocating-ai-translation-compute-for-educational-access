@@ -1,0 +1,147 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81289",
+  "section": "fs-id2145474",
+  "source_title": "Identify and Use Fraction Operations",
+  "date": "2026-08-31",
+  "source_path": "languages/bn-Beng-IN/provenance/pilot/m81289.source.cnxml",
+  "source_sha256": "bfaa71d9e1dcfa775dd6525ba2fbc9ecf0ce17e6833d8dcaca9bb2f259361fa3",
+  "overlay_sha256": "23a5e5c8f9fbe3159da04fc8663b6c041fe6fd19544cd52f31bc0409b0719595",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR02", "TR03", "TR07", "WB11"],
+      "read": ["Actual AGENTS.md and USER_INSTRUCTIONS_VERBATIM.md", "Current canon README, examples.tsv and terminology.tsv: 18 exemplars and 40 terms", "Actual full CNXML subsection and a separate paragraph-slot inventory", "Tripura p051, p025, p026 and p104 OCR and page images", "West Bengal p189 OCR and page image", "Both original OpenStax raster images"],
+      "action": "Use TR02 for equivalent-fraction wording, TR03 for simplest form and the explicit exception for factor1, TR07 for the exact LCM expansion and the paired 4,6 example, and WB11 for unlike numerator terms. Distinguish the mathematical operations before choosing a method. Detect the two already-simplified question/answer pairs from the actual source, not from earlier summaries."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR02", "TR03", "TR07", "WB11"],
+      "read": ["Returned to actual Tripura p051 and p104 OCR", "Returned to actual WB p189 OCR", "Compared the original two raster expressions and the complete source table rows with Bengali descriptions"],
+      "action": "Retain সমতুল ভগ্নাংশ, লঘিষ্ঠ আকারে প্রকাশ করা, গুণনীয়ক and সদৃশ পদ. Keep direct LCM witness separate from the editorial LCD and reciprocal terms. Explain that cancellation divides the entire numerator and denominator by the same common factor, never removes a single additive term. Preserve the minus sign that is actually visible in the second raster."
+    },
+    {
+      "stage": "pre-integration check",
+      "examples": ["TR02", "TR03", "TR07", "WB11"],
+      "read": ["Full saved overlay", "Actual Tripura p051 and p104 OCR and page images again", "WB p189 OCR again", "All source mathematics through an exact rational-polynomial evaluator", "Final source, overlay and raster hashes"],
+      "action": "Check explicit numerator/denominator readings, তুমি/করো register, positive-integer LCD scope, and nonzero conditions for division. Confirm that all four general formulas are identities on their original domains and all four worked table chains preserve value. Keep source-degenerate practice notes visible. No new canon acquisition or unsupported claim of a local reciprocal witness."
+    }
+  ],
+  "witness_limits": {
+    "TR07": "Use only p025 Exercise3 question1(iv), p026 questions3(l) and4(b), and p104 corresponding answers: LCM(4,6)=12; লঘিষ্ঠ সাধারণ গুণিতক; common multiples12,24,36. This directly supports LCM, not an exact Bengali LCD definition.",
+    "TR02_TR03": "Use the separate correct equivalent-fraction and12/16=3/4 examples on p051. The erroneous intermediate denominator in the mixed-fraction example above them is excluded.",
+    "WB11": "Actual p189 identifies8x and6x as like, and6x and8 as unlike. This supports the term distinction, not the specific OpenStax fractional worked example. The inconsistent4k introductory item is excluded; x is a variable, not a multiplication sign.",
+    "editorial_terms": "গুণাত্মক বিপরীত and the exact LCD wording remain coordinated explanatory terms, not directly witnessed local terms. No targeted search is needed for this already-covered four-operation consolidation; the same nonzero-swap gloss used in earlier translated sections is retained.",
+    "authority": "OpenStax supplies instructional mathematics. Bengali canon supplies wording and register; Tripura is supplementary Indian Bengali, not proof of West Bengal certification. No source text is repurposed as training data."
+  },
+  "decisions": [
+    {
+      "topic": "complete section and operation identification",
+      "affected_locations": ["section title", "fs-id2189944", "fs-id1617042/title", "fs-id3407452", "fs-id1258802", "fs-id2268553", "fs-id2379028", "fs-id2290501", "fs-id2654763"],
+      "decision": "Translate the whole four-operation summary, the decision prompts and all worked/practice content. Use ক্রিয়া with an immediate listing of গুণ, ভাগ, যোগ ও বিয়োগ, not as an unexplained technical label. Say নিচে সারাংশ rather than incorrectly calling the source note a table. Addition/subtraction require matching denominators; multiplication/division do not."
+    },
+    {
+      "topic": "general formula readings and original domains",
+      "affected_locations": ["fs-id1754978", "fs-id2773547", "fs-id1362986", "fs-id2164207", "four emphasis nodes", "fs-id2189944"],
+      "decision": "Read numerator and denominator explicitly beside each unchanged formula, using Bengali letter names. Multiplication requires b,d nonzero; division additionally requires c nonzero. Addition/subtraction require their common denominator c nonzero. Do not require a or the numerators in multiplication/addition/subtraction to be nonzero. LCD discussion is separately scoped to positive integer denominators; the general fraction identities are not restricted to positive numerators or denominators."
+    },
+    {
+      "topic": "reciprocal and sign handling",
+      "affected_locations": ["fs-id2773547", "eip-id1168466269694/rows2-4", "eip-id1168466269694/summary"],
+      "decision": "Use গুণাত্মক বিপরীত with the explicit nonzero numerator/denominator swap explanation. Keep first and second fractions in their original order, including negative signs. Explain why the product is negative and divide numerator and denominator by2 to obtain−3/2. Do not replace reciprocal with বিপরীত সংখ্যা."
+    },
+    {
+      "topic": "numeric addition and least form",
+      "affected_locations": ["eip-id1168468666374/rows2-6", "eip-id1168467261783", "eip-id1168468273951"],
+      "decision": "Find LCD12, multiply the first numerator/denominator by3 and second by2, retain the external negative sign, add signed numerators and keep denominator12. State why−1/12 is already in least form: no positive common factor other than1. Preserve the actual red-factor highlighting and explain it in the alt text."
+    },
+    {
+      "topic": "algebraic subtraction versus multiplication",
+      "affected_locations": ["eip-id1168467554451/rows2,4", "eip-id1168467446368/rows2-4", "both table summaries"],
+      "decision": "For subtraction use LCD30 and multipliers5,3, then retain the whole numerator25x−9 because those are unlike terms. For multiplication factor6 and10 and divide numerator and denominator by the common factors5 and3. Explain that factors, not separate additive terms, can cancel. Do not impose x nonzero: x=0 remains valid in both worked parts."
+    },
+    {
+      "topic": "assessment translation without invented mathematics",
+      "affected_locations": ["fs-id1603151", "fs-id1731703", "fs-id1407886", "fs-id1566184", "fs-id1738967", "fs-id2730448", "fs-id1499374", "fs-id2657161", "fs-id2297842", "fs-id2466997", "fs-id1880793", "fs-id1166761304009"],
+      "decision": "Translate every instruction, including both duplicated source practice pairs and their answer containers. Preserve all circled tokens, lists and original mathematical expressions. Add visible source notes to the defective practice prompts, explicitly saying the intended earlier operations cannot be established from this source. Verify equality but do not misreport the repeated answers as successful verification of missing original operations."
+    },
+    {
+      "topic": "accessible linguistic attributes",
+      "affected_locations": ["eip-id1168468666374/aria-label", "eip-id1168466269694/summary", "eip-id1168467554451/summary", "eip-id1168467446368/summary", "both media alt attributes"],
+      "decision": "Translate the two image descriptions, one aria-label and all three summaries. Scope the first table's label to its own addition rows; describe division in the following table's own summary. Preserve embedded LCD pixels, explaining এলসিডি as লঘিষ্ঠ সাধারণ হর. No mtext occurs, so the approved linguistic-mtext exception is not used. All other attributes remain exact."
+    }
+  ],
+  "source_errata": [
+    {
+      "exercise": "fs-id2430566",
+      "problem_paragraph": "fs-id2297842",
+      "solution_paragraph": "fs-id2466997",
+      "observed": "Question parts are already(27a−32)/36 and2a/3; solution parts repeat the same expressions, apart from presentational wrapper/parenthesis attributes.",
+      "action": "Preserve all problem and solution MathML. Add a visible Bengali note that the source repeats the answer forms as questions and that any intended earlier operations are not recoverable here. No replacement operation is invented."
+    },
+    {
+      "exercise": "fs-id1869461",
+      "problem_paragraph": "fs-id1880793",
+      "solution_paragraph": "fs-id1166761304009",
+      "observed": "Question parts are already(24k+25)/30 and24k/5; solution parts repeat those same expressions.",
+      "action": "Preserve every source expression and add the equivalent visible Bengali source note. The generic algebraic forms have no cancellable positive integer factor greater than1; no special k value is supplied."
+    },
+    {
+      "source_attribute": "eip-id1168468666374/aria-label",
+      "observed": "The source addition-table label continues into part b, which actually resides in a separate division table.",
+      "action": "Correct this linguistic description's scope. Its Bengali label covers only addition; the original following division table retains all rows and receives a complete translated summary. No mathematics or node is deleted."
+    },
+    {
+      "source_location": "fs-id1617042 four-operation summary",
+      "observed": "The displayed formulas omit explicit denominator and divisor restrictions from the adjacent source prose.",
+      "action": "Supply the required restrictions in Bengali prose and keep each formula unchanged; no erroneous restriction on otherwise-valid zero numerators is introduced."
+    }
+  ],
+  "image_checks": [
+    {
+      "media_id": "eip-id1168467261783",
+      "path": "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_035_img-01.png",
+      "sha256": "a23b1988e4aa55987f1fd491b8143256ff39a271e1980078268e20559fd02d64",
+      "observed": "4=2·2;6=2·3, with one2 vertically matched. Under the line: LCD=2·2·3, thenLCD=12. This is stacked factorization, not a fraction.",
+      "result": "Actual pixels read; arithmetic and source alt agree. Complete Bengali description added; pixels untouched."
+    },
+    {
+      "media_id": "eip-id1168468273951",
+      "path": "downloads/canonical-prealgebra/media/CNX_BMath_Figure_04_05_035_img-02.png",
+      "sha256": "5731c960a0f5394b664a344036641a5186794e412bde4a1747a9db32cd8cd4bf",
+      "observed": "A visible external minus precedes(1·3)/(4·3), followed by+(1·2)/(6·2). Both added3 factors and both added2 factors are red.",
+      "result": "Actual minus sign, fraction bars and factors read. Equals−1/12 and matches source MathML continuation. No omitted-minus warning is appropriate for this image."
+    }
+  ],
+  "local_checks": {
+    "result": "passed",
+    "paragraph_slot_arrays": 23,
+    "node_slot_arrays": 17,
+    "translated_title_strings": 3,
+    "preserved_mathml_expressions": 39,
+    "preserved_ids": 69,
+    "preserved_elements": 590,
+    "source_exercises": 6,
+    "supplied_exercise_parts": 12,
+    "ordinary_operation_parts": 8,
+    "source_degenerate_parts": 4,
+    "translated_media_descriptions": 2,
+    "translated_table_aria_labels": 1,
+    "translated_table_summaries": 3,
+    "method": "In-memory standard-library exact Fraction rational-polynomial evaluator. Parse all39 MathML expressions, including implicit multiplication, parentheses, unary/binary minus and menclose factors. Compare polynomial cross-products to prove all4 symbolic summary identities and every step in all4 table chains. Evaluate numeric answers independently as exact fractions.",
+    "verifier_adjustments": "SymPy was unavailable in both existing Python runtimes; no package was installed. Used a dependency-free polynomial verifier. One test initially mixed Python floating-point expected values with Fraction; replaced all test values with Fraction and reran the complete39-expression/12-part check successfully. This was a verifier issue, not a source-math fault.",
+    "answers": [
+      {"exercise": "fs-id2577975", "parts": ["−1/4+1/6=−1/12", "−1/4÷1/6=−3/2"]},
+      {"exercise": "fs-id2205866", "parts": ["−3/4−1/6=−11/12", "−3/4·1/6=−1/8"]},
+      {"exercise": "fs-id2671602", "parts": ["5/6÷(−1/4)=−10/3", "5/6−(−1/4)=13/12"]},
+      {"exercise": "fs-id2453812", "parts": ["5x/6−3/10=(25x−9)/30", "5x/6·3/10=x/4"]},
+      {"exercise": "fs-id2430566", "parts": ["(27a−32)/36 repeats unchanged", "2a/3 repeats unchanged"], "limit": "Equality verified, missing intended operations not invented."},
+      {"exercise": "fs-id1869461", "parts": ["(24k+25)/30 repeats unchanged", "24k/5 repeats unchanged"], "limit": "Equality verified, missing intended operations not invented."}
+    ],
+    "supplementary_tests": ["Worked x expressions tested at−3/2,−1,0,1,2,9/25 after symbolic identity checks", "General rules tested with signed denominators and allowed zero numerators; divisor zero excluded", "LCM(4,6)=12 andLCM(6,10)=30", "Raster prime products4=2·2;6=2·3;12=2·2·3", "Raster equivalent-fraction sum−(1·3)/(4·3)+(1·2)/(6·2)=−1/12", "gcd(27,32,36)=gcd(2,3)=gcd(24,25,30)=gcd(24,5)=1"],
+    "structure": "Shared translated() passed: all XPath selectors unique; every slot array has children+1 entries; tags, IDs, child order, nonlinguistic attributes and complete MathML signatures unchanged; no residual English prose.",
+    "rendering": "Shared render_cnxml() in memory passed. Both images have visible Bengali description paragraphs. Both source-defect notices are present; all four table accessibility descriptions retained. Parent owns actual browser layout and assistive-technology QA."
+  },
+  "pending": ["Parent integration and browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review", "Upstream clarification of the two degenerate practice questions if available later"],
+  "scope": "This agent wrote only the assigned overlay and this per-section record with apply_patch. No downloads, media copies, shared builder/log/term-bank edits, deletions or commits. The full Indian Bengali assignment remains ongoing; this is one complete translated section, not assignment completion."
+}

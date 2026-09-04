@@ -1,0 +1,968 @@
+{
+  "schema": "pnb-source-scope-checkpoint-v1",
+  "unit": "B10-001",
+  "assignment": "B10",
+  "locale": "pnb-Arab-PK",
+  "status": "Complete 157-slot chapter draft/revision/input-QA checkpoint; renderer decision/build/visual/native review pending. Not a completed book.",
+  "authority": {
+    "lock_path": "languages/pnb-Arab-PK/sources.lock.json",
+    "lock_raw_sha256": "c8259e2caca9674b89860e9ac03bfaad3db56e61f000fd9081003bc8b514efde",
+    "canonical": {
+      "repository": "https://github.com/oscarlevin/discrete-book.git",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "tree": "5b8209e92286e967a18114eea99c11ba68b8a162",
+      "local_path": "downloads/upstream/discrete-book"
+    },
+    "comparison": {
+      "repository": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id.git",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "tree": "457bb9f48aefe119f3c3a48b485f0c1198d64c3d",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id"
+    },
+    "heads_and_trees_reverified": true,
+    "source_checkout_status_clean": true,
+    "hash_policy": "Record exact git-show blob bytes, SHA-256 and Git blob SHA-1 separately from working-tree bytes. Selected PTX/SVG/TEX/config working files normalize CRLF to the pinned Git text bytes in memory. Do not normalize binary images, and do not assume every tracked file uses LF: canonical root LICENSE itself contains CRLF. No source files were rewritten.",
+    "edition_evidence": "source/dmoi.ptx subtitle, source/bookinfo.ptx blurb and source/frontmatter.ptx identify the active fourth edition. The root README's generic third-edition/main-branch description is stale for this pinned source and is not the edition selector."
+  },
+  "scope": "Entire Chapter 0 Introduction and Preliminaries: original chapter title/introduction, full 0.1 and 0.2 including all seven active subsections and six exercises. Earlier full front matter is a separate frozen completed-input/built checkpoint, not duplicated.",
+  "excerpt": {
+    "path": "source-excerpts/b10-unit-001.ptx",
+    "sha256": "22d106e2b8f6e456550c292ecbda0f40d528dec139462629a4d3c1de1c844721",
+    "bytes": 37882,
+    "composed_git_sha256": "0e0f609c396780e9036d808a18c3f33dc4e1e7627304b5e26ffd4db1ce128185",
+    "composed_git_bytes": 37881,
+    "construction": "Replace only the two active chapter XIncludes with exact pinned section-root text, preserving comments and all source children. The reviewable witness adds one terminal LF to that composition; parsed source content is unchanged."
+  },
+  "first_outside": {
+    "source_file": "source/ch_logic.ptx",
+    "id": "ch_logic",
+    "title": "Logic and Proofs"
+  },
+  "counts": {
+    "chapter": 1,
+    "title": 10,
+    "introduction": 2,
+    "p": 85,
+    "section": 2,
+    "blockquote": 1,
+    "midpoint": 1,
+    "em": 34,
+    "ellipsis": 2,
+    "q": 11,
+    "m": 102,
+    "fn": 2,
+    "xref": 3,
+    "term": 65,
+    "investigation": 2,
+    "ol": 3,
+    "li": 12,
+    "sidebyside": 1,
+    "reading-questions": 2,
+    "exercise": 6,
+    "statement": 6,
+    "response": 5,
+    "subsection": 7,
+    "idx": 33,
+    "h": 38,
+    "see": 2,
+    "aside": 1,
+    "alert": 2,
+    "example": 1,
+    "me": 3,
+    "tabular": 1,
+    "col": 6,
+    "row": 2,
+    "cell": 12,
+    "image": 2,
+    "latex-image": 2,
+    "shortdescription": 2,
+    "description": 1,
+    "var": 6,
+    "setup": 1,
+    "condition": 6,
+    "feedback": 6
+  },
+  "source_ids": [
+    {
+      "id": "ch_intro",
+      "tag": "chapter",
+      "excerpt_path": "/chapter",
+      "ancestor_ids": []
+    },
+    {
+      "id": "sec_intro-intro",
+      "tag": "section",
+      "excerpt_path": "/chapter/section[1]",
+      "ancestor_ids": [
+        "ch_intro"
+      ]
+    },
+    {
+      "id": "rqs-intro-intro",
+      "tag": "reading-questions",
+      "excerpt_path": "/chapter/section[1]/reading-questions[1]",
+      "ancestor_ids": [
+        "ch_intro",
+        "sec_intro-intro"
+      ]
+    },
+    {
+      "id": "sec_intro-structures",
+      "tag": "section",
+      "excerpt_path": "/chapter/section[2]",
+      "ancestor_ids": [
+        "ch_intro"
+      ]
+    },
+    {
+      "id": "subsec_structures-sets",
+      "tag": "subsection",
+      "excerpt_path": "/chapter/section[2]/subsection[2]",
+      "ancestor_ids": [
+        "ch_intro",
+        "sec_intro-structures"
+      ]
+    },
+    {
+      "id": "subsec_structures-functions",
+      "tag": "subsection",
+      "excerpt_path": "/chapter/section[2]/subsection[3]",
+      "ancestor_ids": [
+        "ch_intro",
+        "sec_intro-structures"
+      ]
+    },
+    {
+      "id": "subsec_structures-sequences",
+      "tag": "subsection",
+      "excerpt_path": "/chapter/section[2]/subsection[4]",
+      "ancestor_ids": [
+        "ch_intro",
+        "sec_intro-structures"
+      ]
+    },
+    {
+      "id": "subsec-relations",
+      "tag": "subsection",
+      "excerpt_path": "/chapter/section[2]/subsection[5]",
+      "ancestor_ids": [
+        "ch_intro",
+        "sec_intro-structures"
+      ]
+    },
+    {
+      "id": "subsec_structures-graphs",
+      "tag": "subsection",
+      "excerpt_path": "/chapter/section[2]/subsection[6]",
+      "ancestor_ids": [
+        "ch_intro",
+        "sec_intro-structures"
+      ]
+    },
+    {
+      "id": "graphs-7sum",
+      "tag": "image",
+      "excerpt_path": "/chapter/section[2]/subsection[6]/image[1]",
+      "ancestor_ids": [
+        "ch_intro",
+        "sec_intro-structures",
+        "subsec_structures-graphs"
+      ]
+    },
+    {
+      "id": "subsec_structures-even-more",
+      "tag": "subsection",
+      "excerpt_path": "/chapter/section[2]/subsection[7]",
+      "ancestor_ids": [
+        "ch_intro",
+        "sec_intro-structures"
+      ]
+    },
+    {
+      "id": "rqs-intro-structures",
+      "tag": "reading-questions",
+      "excerpt_path": "/chapter/section[2]/reading-questions[1]",
+      "ancestor_ids": [
+        "ch_intro",
+        "sec_intro-structures"
+      ]
+    }
+  ],
+  "source_labels": [
+    {
+      "label": "rq-intro-intro-about",
+      "tag": "exercise",
+      "excerpt_path": "/chapter/section[1]/reading-questions[1]/exercise[1]"
+    },
+    {
+      "label": "rq-intro-intro-q",
+      "tag": "exercise",
+      "excerpt_path": "/chapter/section[1]/reading-questions[1]/exercise[2]"
+    },
+    {
+      "label": "mp_intro_structures",
+      "tag": "exercise",
+      "excerpt_path": "/chapter/section[2]/subsection[1]/exercise[1]"
+    },
+    {
+      "label": "graphs-evensum",
+      "tag": "latex-image",
+      "excerpt_path": "/chapter/section[2]/subsection[6]/image[2]/latex-image[1]"
+    },
+    {
+      "label": "rq-intro-structures-domino-set",
+      "tag": "exercise",
+      "excerpt_path": "/chapter/section[2]/reading-questions[1]/exercise[1]"
+    },
+    {
+      "label": "rq-intro-structures-domino-sequence",
+      "tag": "exercise",
+      "excerpt_path": "/chapter/section[2]/reading-questions[1]/exercise[2]"
+    },
+    {
+      "label": "rq-intro-structures-q",
+      "tag": "exercise",
+      "excerpt_path": "/chapter/section[2]/reading-questions[1]/exercise[3]"
+    }
+  ],
+  "source_files": [
+    {
+      "role": "canonical",
+      "repository_path": "source/ch_intro.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/ch_intro.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "dc179f92091c81eae8e24b477d982e660dabdf2f8bb1e84c5804b0245aab9ed8",
+      "bytes": 825,
+      "git_blob_sha1": "5d5d34dd8d2a12f98ed9a4890b279e90f6e33c5a",
+      "working_raw_sha256": "1512ff6279f0333667e5d0eeee15eac419a468688b6b62554b7b16542fad6a38",
+      "working_raw_bytes": 845
+    },
+    {
+      "role": "canonical",
+      "repository_path": "source/sec_intro-intro.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/sec_intro-intro.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "1adf768614848784d17145f6ef61ac696a926f9f6ed0ca7142744f41654f706e",
+      "bytes": 9912,
+      "git_blob_sha1": "965f37e3e463fef7c210104e549f26a9cfe01bac",
+      "working_raw_sha256": "db7c135aba989a48636a1a6d6e29f7527f4beeab39998bb676438b977069df16",
+      "working_raw_bytes": 10144
+    },
+    {
+      "role": "canonical",
+      "repository_path": "source/sec_intro-structures.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/sec_intro-structures.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "21fcdff52ca98cb218a5484f6f7b9a8ef96a053b7b2b9b78eea37ddf35b139e7",
+      "bytes": 27311,
+      "git_blob_sha1": "1630d556cb5022ce02c77d279cb0fe0bf1e2ae9c",
+      "working_raw_sha256": "4bdf3c414e68b26e935a6b256a9562ca7c70ae271282b822ab291c0e5877c3d1",
+      "working_raw_bytes": 27866
+    },
+    {
+      "role": "comparison",
+      "repository_path": "source/ch_intro.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/ch_intro.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "235739d29fff2aaa48afbcecf274e8cdd2bca0eacfbc8970d42dc0cd1add234c",
+      "bytes": 869,
+      "git_blob_sha1": "e98662159f8f450c5e463c5ca786a5b96b7369e1",
+      "working_raw_sha256": "ecaf8482c172096ed08222147a756370061cc8fc810b52a94a95d4be2159baff",
+      "working_raw_bytes": 890
+    },
+    {
+      "role": "comparison",
+      "repository_path": "source/sec_intro-intro.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/sec_intro-intro.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "ffc1f49d28e40bf62a413332452a1428466ad4d54f74c0bd19152727ea6e34e5",
+      "bytes": 11144,
+      "git_blob_sha1": "b1e09669e04ffeb18e73444acded9f4e1407588d",
+      "working_raw_sha256": "cfe8a106b83fad235dab91d33422224a128150bd2e863f8ced82577993e859b1",
+      "working_raw_bytes": 11376
+    },
+    {
+      "role": "comparison",
+      "repository_path": "source/sec_intro-structures.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/sec_intro-structures.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "6001a9d52c5ef751fc0eb3b406f0dc01f7604d65b7cbd0e59dbc1759903ec88b",
+      "bytes": 30071,
+      "git_blob_sha1": "b5614ffb9cf0349dd7a7f80a759f15daba20bc65",
+      "working_raw_sha256": "9fbfd93ece9d5e5a497ebe663e9afc16220faaffe907cc6937f05453817cb768",
+      "working_raw_bytes": 30627
+    }
+  ],
+  "planned_source_keys": [
+    "ch_intro.ptx#/chapter/title[1]",
+    "ch_intro.ptx#/chapter/introduction[1]/p[1]",
+    "sec_intro-intro.ptx#/section/title[1]",
+    "sec_intro-intro.ptx#/section/blockquote[1]/p[1]",
+    "sec_intro-intro.ptx#/section/blockquote[1]/p[2]",
+    "sec_intro-intro.ptx#/section/blockquote[1]/p[3]",
+    "sec_intro-intro.ptx#/section/p[1]",
+    "sec_intro-intro.ptx#/section/p[2]",
+    "sec_intro-intro.ptx#/section/p[3]",
+    "sec_intro-intro.ptx#/section/p[3]/fn[1]",
+    "sec_intro-intro.ptx#/section/p[4]",
+    "sec_intro-intro.ptx#/section/p[4]/fn[1]",
+    "sec_intro-intro.ptx#/section/p[5]",
+    "sec_intro-intro.ptx#/section/investigation[1]/p[1]",
+    "sec_intro-intro.ptx#/section/investigation[1]/p[2]",
+    "sec_intro-intro.ptx#/section/investigation[1]/p[2]/ol[1]/li[1]/p[1]",
+    "sec_intro-intro.ptx#/section/investigation[1]/p[2]/ol[1]/li[2]/p[1]",
+    "sec_intro-intro.ptx#/section/investigation[1]/p[2]/ol[1]/li[3]/p[1]",
+    "sec_intro-intro.ptx#/section/investigation[1]/p[2]/ol[1]/li[3]/sidebyside[1]/p[1]",
+    "sec_intro-intro.ptx#/section/investigation[1]/p[2]/ol[1]/li[3]/sidebyside[1]/p[2]",
+    "sec_intro-intro.ptx#/section/investigation[1]/p[2]/ol[1]/li[3]/p[2]",
+    "sec_intro-intro.ptx#/section/investigation[1]/p[2]/ol[1]/li[4]/p[1]",
+    "sec_intro-intro.ptx#/section/p[6]",
+    "sec_intro-intro.ptx#/section/p[7]",
+    "sec_intro-intro.ptx#/section/p[7]/ol[1]/li[1]/p[1]",
+    "sec_intro-intro.ptx#/section/p[7]/ol[1]/li[1]/p[2]",
+    "sec_intro-intro.ptx#/section/p[7]/ol[1]/li[2]/p[1]",
+    "sec_intro-intro.ptx#/section/p[7]/ol[1]/li[2]/p[2]",
+    "sec_intro-intro.ptx#/section/p[7]/ol[1]/li[3]/p[1]",
+    "sec_intro-intro.ptx#/section/p[7]/ol[1]/li[4]/p[1]",
+    "sec_intro-intro.ptx#/section/p[8]",
+    "sec_intro-intro.ptx#/section/p[9]",
+    "sec_intro-intro.ptx#/section/reading-questions[1]/introduction[1]/p[1]",
+    "sec_intro-intro.ptx#/section/reading-questions[1]/exercise[1]/statement[1]/p[1]",
+    "sec_intro-intro.ptx#/section/reading-questions[1]/exercise[2]/statement[1]/p[1]",
+    "sec_intro-structures.ptx#/section/title[1]",
+    "sec_intro-structures.ptx#/section/subsection[1]/title[1]",
+    "sec_intro-structures.ptx#/section/subsection[1]/investigation[1]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[1]/exercise[1]/statement[1]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[1]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[1]/p[2]",
+    "sec_intro-structures.ptx#/section/subsection[1]/p[3]",
+    "sec_intro-structures.ptx#/section/subsection[1]/p[3]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[1]/p[3]/idx[1]/see[1]",
+    "sec_intro-structures.ptx#/section/subsection[1]/p[3]/idx[2]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[1]/p[4]",
+    "sec_intro-structures.ptx#/section/subsection[2]/title[1]",
+    "sec_intro-structures.ptx#/section/subsection[2]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[2]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[2]/p[2]",
+    "sec_intro-structures.ptx#/section/subsection[2]/aside[1]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[2]/p[3]",
+    "sec_intro-structures.ptx#/section/subsection[2]/p[3]/ol[1]/li[1]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[2]/p[3]/ol[1]/li[2]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[2]/p[3]/ol[1]/li[3]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[2]/p[3]/ol[1]/li[4]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[2]/p[4]",
+    "sec_intro-structures.ptx#/section/subsection[3]/title[1]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[1]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[1]/idx[2]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[1]/idx[3]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[1]/idx[4]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[1]/idx[4]/h[2]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[2]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[3]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[4]",
+    "sec_intro-structures.ptx#/section/subsection[3]/example[1]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[3]/example[1]/p[2]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[5]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[6]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[6]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[6]/idx[1]/h[2]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[7]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[7]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[7]/idx[1]/h[2]",
+    "sec_intro-structures.ptx#/section/subsection[3]/p[8]",
+    "sec_intro-structures.ptx#/section/subsection[4]/title[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[2]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[2]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[2]/idx[2]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[2]/idx[3]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[2]/idx[3]/see[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[3]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[4]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[5]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[5]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[6]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[7]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[7]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[8]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[1]/cell[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[1]/cell[2]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[1]/cell[3]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[1]/cell[4]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[1]/cell[5]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[1]/cell[6]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[2]/cell[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[2]/cell[2]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[2]/cell[3]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[2]/cell[4]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[2]/cell[5]",
+    "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[2]/cell[6]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[9]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[9]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[10]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[10]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[10]/idx[1]/h[2]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[10]/idx[2]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[10]/idx[2]/h[2]",
+    "sec_intro-structures.ptx#/section/subsection[4]/p[11]",
+    "sec_intro-structures.ptx#/section/subsection[5]/title[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[2]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[2]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[2]/idx[2]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[3]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[4]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[4]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[4]/idx[2]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[4]/idx[3]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[5]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[5]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[5]/idx[2]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[5]/p[5]/idx[3]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[6]/title[1]",
+    "sec_intro-structures.ptx#/section/subsection[6]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[6]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[6]/image[1]/shortdescription[1]",
+    "sec_intro-structures.ptx#/section/subsection[6]/image[1]/description[1]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[6]/p[2]",
+    "sec_intro-structures.ptx#/section/subsection[6]/image[2]/shortdescription[1]",
+    "sec_intro-structures.ptx#/section/subsection[6]/p[3]",
+    "sec_intro-structures.ptx#/section/subsection[6]/p[4]",
+    "sec_intro-structures.ptx#/section/subsection[6]/p[4]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[6]/p[4]/idx[2]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[6]/p[5]",
+    "sec_intro-structures.ptx#/section/subsection[6]/p[6]",
+    "sec_intro-structures.ptx#/section/subsection[7]/title[1]",
+    "sec_intro-structures.ptx#/section/subsection[7]/p[1]",
+    "sec_intro-structures.ptx#/section/subsection[7]/p[1]/idx[1]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[7]/p[1]/idx[2]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[7]/p[1]/idx[3]/h[1]",
+    "sec_intro-structures.ptx#/section/subsection[7]/p[2]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[1]/statement[1]/p[1]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/statement[1]/p[1]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/statement[1]/p[2]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/setup[1]/var[1]/condition[1]/feedback[1]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/setup[1]/var[1]/condition[2]/feedback[1]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/setup[1]/var[2]/condition[1]/feedback[1]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/setup[1]/var[2]/condition[2]/feedback[1]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/setup[1]/var[3]/condition[1]/feedback[1]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/setup[1]/var[3]/condition[2]/feedback[1]",
+    "sec_intro-structures.ptx#/section/reading-questions[1]/exercise[3]/statement[1]/p[1]"
+  ],
+  "key_count": 157,
+  "tex_count": 105,
+  "term_count": 65,
+  "placeholder_contract": "Local per-owner {{tex:i}}, {{footnote:i}}, {{xref:i}}, {{child:i}}, {{index:i}}, {{symbol:i}}, {{answer:i}}. Source term markup uses per-owner data-source-term indexes. Exact raw TeX remains in the source witness/manifest, never translated or executed. Parent blocks exclude descendant list/footnote/index text to prevent duplication.",
+  "graph_assets": [
+    {
+      "id": "graphs-7sum",
+      "role": "canonical",
+      "variant": "rs",
+      "repository_path": "generated-assets/rs/latex-image/graphs-7sum.svg",
+      "local_path": "downloads/upstream/discrete-book/generated-assets/rs/latex-image/graphs-7sum.svg",
+      "bytes": 9461,
+      "sha256": "27ac010ecf130314dd92dd7ffa74fff6b38002b83ee90025a316b80d24af98ab",
+      "git_blob_sha1": "24429562f106ca8937b7c23721d2b51056bf1d15",
+      "working_raw_sha256": "3705fa5ebd2ade2cd155e284eb27c9ccbc5407f345f3ca4bc37af3916a9785b1",
+      "working_logical_lf_matches_git": true,
+      "width": "76",
+      "height": "73",
+      "viewBox": "0 0 76 73",
+      "labels": [
+        "1",
+        "6",
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "edge_paths": [
+        {
+          "transform": "matrix(1.00008,0,0,-1,38.068849,35.843004)",
+          "stroke-width": ".3985",
+          "stroke-linecap": "butt",
+          "stroke-miterlimit": "10",
+          "stroke-linejoin": "miter",
+          "fill": "none",
+          "stroke": "#000000",
+          "d": "M14.17339 24.5491H-14.17339M28.3468 0H-28.3468M14.17339-24.5491H-14.17339"
+        }
+      ],
+      "external_references": []
+    },
+    {
+      "id": "graphs-7sum",
+      "role": "comparison",
+      "variant": "rs",
+      "repository_path": "generated-assets/rs/latex-image/graphs-7sum.svg",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/generated-assets/rs/latex-image/graphs-7sum.svg",
+      "bytes": 9461,
+      "sha256": "27ac010ecf130314dd92dd7ffa74fff6b38002b83ee90025a316b80d24af98ab",
+      "git_blob_sha1": "24429562f106ca8937b7c23721d2b51056bf1d15",
+      "working_raw_sha256": "3705fa5ebd2ade2cd155e284eb27c9ccbc5407f345f3ca4bc37af3916a9785b1",
+      "working_logical_lf_matches_git": true,
+      "width": "76",
+      "height": "73",
+      "viewBox": "0 0 76 73",
+      "labels": [
+        "1",
+        "6",
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "edge_paths": [
+        {
+          "transform": "matrix(1.00008,0,0,-1,38.068849,35.843004)",
+          "stroke-width": ".3985",
+          "stroke-linecap": "butt",
+          "stroke-miterlimit": "10",
+          "stroke-linejoin": "miter",
+          "fill": "none",
+          "stroke": "#000000",
+          "d": "M14.17339 24.5491H-14.17339M28.3468 0H-28.3468M14.17339-24.5491H-14.17339"
+        }
+      ],
+      "external_references": []
+    },
+    {
+      "id": "graphs-7sum",
+      "role": "comparison",
+      "variant": "web",
+      "repository_path": "generated-assets/web/latex-image/graphs-7sum.svg",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/generated-assets/web/latex-image/graphs-7sum.svg",
+      "bytes": 9447,
+      "sha256": "faeb77e88eb69d74430e90f9562e9935dac2af5ed92005b9173e46090ef2f82a",
+      "git_blob_sha1": "1fc364df41c6d542290a7e4833b6ea1bf6d5f101",
+      "working_raw_sha256": "faeb77e88eb69d74430e90f9562e9935dac2af5ed92005b9173e46090ef2f82a",
+      "working_logical_lf_matches_git": false,
+      "width": "77",
+      "height": "75",
+      "viewBox": "0 0 77 75",
+      "labels": [
+        "1",
+        "6",
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "edge_paths": [
+        {
+          "transform": "matrix(1,0,0,-1.00003,38.841,37.526647)",
+          "stroke-width": ".3985",
+          "stroke-linecap": "butt",
+          "stroke-miterlimit": "10",
+          "stroke-linejoin": "miter",
+          "fill": "none",
+          "stroke": "#000000",
+          "d": "M14.17339 24.5491H-14.17339M28.3468 0H-28.3468M14.17339-24.5491H-14.17339"
+        }
+      ],
+      "external_references": []
+    },
+    {
+      "id": "graphs-evensum",
+      "role": "canonical",
+      "variant": "rs",
+      "repository_path": "generated-assets/rs/latex-image/graphs-evensum.svg",
+      "local_path": "downloads/upstream/discrete-book/generated-assets/rs/latex-image/graphs-evensum.svg",
+      "bytes": 9547,
+      "sha256": "d59d64e902a9233ea4826db6bebf1e2ccd8a0162aeb29ed449e2f0e1117aa0c1",
+      "git_blob_sha1": "39e65906387dfd1116e3a4f3859374b0924607a4",
+      "working_raw_sha256": "fa57a3b9412161d1818633cbecc90ee64e52e79fae6b04e6a730ef63b2ea3f5f",
+      "working_logical_lf_matches_git": true,
+      "width": "76",
+      "height": "73",
+      "viewBox": "0 0 76 73",
+      "labels": [
+        "1",
+        "5",
+        "2",
+        "6",
+        "3",
+        "4"
+      ],
+      "edge_paths": [
+        {
+          "transform": "matrix(1.00008,0,0,-1,38.068849,35.843004)",
+          "stroke-width": ".3985",
+          "stroke-linecap": "butt",
+          "stroke-miterlimit": "10",
+          "stroke-linejoin": "miter",
+          "fill": "none",
+          "stroke": "#000000",
+          "d": "M14.17339 24.5491-28.3468 0M28.3468 0-14.17339 24.5491M14.17339-24.5491V24.5491M-14.17339-24.5491V24.5491M28.3468 0-14.17339-24.5491M14.17339-24.5491-28.3468 0"
+        }
+      ],
+      "external_references": []
+    },
+    {
+      "id": "graphs-evensum",
+      "role": "comparison",
+      "variant": "rs",
+      "repository_path": "generated-assets/rs/latex-image/graphs-evensum.svg",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/generated-assets/rs/latex-image/graphs-evensum.svg",
+      "bytes": 9547,
+      "sha256": "d59d64e902a9233ea4826db6bebf1e2ccd8a0162aeb29ed449e2f0e1117aa0c1",
+      "git_blob_sha1": "39e65906387dfd1116e3a4f3859374b0924607a4",
+      "working_raw_sha256": "fa57a3b9412161d1818633cbecc90ee64e52e79fae6b04e6a730ef63b2ea3f5f",
+      "working_logical_lf_matches_git": true,
+      "width": "76",
+      "height": "73",
+      "viewBox": "0 0 76 73",
+      "labels": [
+        "1",
+        "5",
+        "2",
+        "6",
+        "3",
+        "4"
+      ],
+      "edge_paths": [
+        {
+          "transform": "matrix(1.00008,0,0,-1,38.068849,35.843004)",
+          "stroke-width": ".3985",
+          "stroke-linecap": "butt",
+          "stroke-miterlimit": "10",
+          "stroke-linejoin": "miter",
+          "fill": "none",
+          "stroke": "#000000",
+          "d": "M14.17339 24.5491-28.3468 0M28.3468 0-14.17339 24.5491M14.17339-24.5491V24.5491M-14.17339-24.5491V24.5491M28.3468 0-14.17339-24.5491M14.17339-24.5491-28.3468 0"
+        }
+      ],
+      "external_references": []
+    },
+    {
+      "id": "graphs-evensum",
+      "role": "comparison",
+      "variant": "web",
+      "repository_path": "generated-assets/web/latex-image/graphs-evensum.svg",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/generated-assets/web/latex-image/graphs-evensum.svg",
+      "bytes": 9533,
+      "sha256": "a91e16294fdb2e3bab8a52b8aa5deda3b5e928dcd5717fa63a196f033ec53f0f",
+      "git_blob_sha1": "8fc6f09e0323afa6b49a5e23642955eb8a13edd5",
+      "working_raw_sha256": "a91e16294fdb2e3bab8a52b8aa5deda3b5e928dcd5717fa63a196f033ec53f0f",
+      "working_logical_lf_matches_git": false,
+      "width": "77",
+      "height": "75",
+      "viewBox": "0 0 77 75",
+      "labels": [
+        "1",
+        "5",
+        "2",
+        "6",
+        "3",
+        "4"
+      ],
+      "edge_paths": [
+        {
+          "transform": "matrix(1,0,0,-1.00003,38.841,37.526647)",
+          "stroke-width": ".3985",
+          "stroke-linecap": "butt",
+          "stroke-miterlimit": "10",
+          "stroke-linejoin": "miter",
+          "fill": "none",
+          "stroke": "#000000",
+          "d": "M14.17339 24.5491-28.3468 0M28.3468 0-14.17339 24.5491M14.17339-24.5491V24.5491M-14.17339-24.5491V24.5491M28.3468 0-14.17339-24.5491M14.17339-24.5491-28.3468 0"
+        }
+      ],
+      "external_references": []
+    }
+  ],
+  "source_constraints": [
+    "Canonical rs SVGs are 76x73 and byte-identical to Indonesian rs SVGs; comparison web SVGs are different 77x75 files. Use canonical Git blob bytes, not a redraw or mirror.",
+    "Two graphs retain source source IDs/labels on their correct nodes. graphs-evensum is a latex-image label, not an image XML ID.",
+    "5 response nodes remain ungraded; 3 statement var slots bind in order to numeric 6/10/15 conditions and fallback feedback. No answers inferred for the four motivating investigation questions.",
+    "One 2x6 PreTeXt tabular with exact source column/right and row/bottom rules; no CNXML assumptions.",
+    "3 xrefs: local Section 0.2; future Chapters 4 and 2 must be labeled not yet available in Punjabi.",
+    "29 inline index placeholders plus four standalone idx nodes make 33 source idx records; 38 h and two see values each have their own translation key.",
+    "Source metroids/POSets, integers (whole numbers), nursery-rhyme footnote and source English chest-message language remain traceable; Indonesian adaptations are not canonical."
+  ],
+  "comparison_math_differences": [
+    {
+      "source_path": "sec_intro-structures.ptx#/section/subsection[2]/p[3]/ol[1]/li[4]/p[1]/m[1]",
+      "canonical": "\\{x \\in \\N \\st x \\lt 5 \\text{ and } x \\ge 1\\}",
+      "comparison": "\\{x \\in \\N \\st x \\lt 5 \\text{ dan } x \\ge 1\\}"
+    }
+  ],
+  "metadata_dependencies": {
+    "source/dmoi.ptx": {
+      "sha256": "f0029601a3478be629c7df9c7a42252f2b12d5267db01c91bd0a1db5e1f1d6c9",
+      "bytes": 670,
+      "git_blob_sha1": "40a75cc1a98194e2616a346c099364353d1f4510"
+    },
+    "source/bookinfo.ptx": {
+      "sha256": "76686015118c216bcdbd0b7972778ee8b52d5375078ceab999030b23a999f10a",
+      "bytes": 3495,
+      "git_blob_sha1": "3557b570add0f32719dac104eadfd658ab942e25"
+    },
+    "source/assets/tikz-defs.tex": {
+      "sha256": "502a66fecff6ab2d8aa2e846aeef8d50029048e610c2a859553872d6ea4981e4",
+      "bytes": 96523,
+      "git_blob_sha1": "bbba652c8821fe5a9f321b3fc313dc7a2e1e5ee0"
+    },
+    "publication/publication.ptx": {
+      "sha256": "80ecd821555ce7e347c8ca8e751e683540f232f135e149d0c110e7963debc438",
+      "bytes": 4430,
+      "git_blob_sha1": "fa857c283a13057e581808e95f33dbb327d0837a"
+    },
+    "source/ch_logic.ptx": {
+      "sha256": "491e05adc9aafc8325743feb4156db8bca11402758cc3c2c0653c39e4b86b674",
+      "bytes": 2801,
+      "git_blob_sha1": "94a809824debbeaebc641f97fc437ca68ee836c4"
+    }
+  },
+  "draft_canon_receipt": "canon/receipts/B10-001-draft-20260831T011820800687Z.json",
+  "whole_assignment_complete": false,
+  "final_input_files": [
+    "languages/pnb-Arab-PK/source-excerpts/b10-unit-001.ptx",
+    "languages/pnb-Arab-PK/source-excerpts/manifest-b10-unit-001.json",
+    "languages/pnb-Arab-PK/translations/b10-unit-001.json",
+    "languages/pnb-Arab-PK/qa/b10-unit-001-language-notes.md"
+  ],
+  "input_qa": {
+    "program_language": "Python 3; local lxml; no upstream code execution",
+    "program": "\nfrom pathlib import Path\nfrom lxml import etree as E\nimport json,hashlib,re,subprocess,collections,html,sys\nsys.stdout.reconfigure(encoding='utf-8')\nB=Path('languages/pnb-Arab-PK');P=json.loads((B/'plans/B10-start.json').read_text(encoding='utf-8'))\ndef sh(b):return hashlib.sha256(b).hexdigest()\ndef git(repo,*a):return subprocess.check_output(['git','-C',repo,*a])\ndef xp(e):return '/'+e.tag if e.getparent() is None else xp(e.getparent())+'/'+e.tag+'['+str(1+sum(s.tag==e.tag for s in e.itersiblings(preceding=True)))+']'\ndef tree(e):return [e.tag,dict(e.attrib),e.text,[[tree(c),c.tail] for c in e]]\ndef jsh(o):return sh(json.dumps(o,ensure_ascii=False,separators=(',',':')).encode())\nparser=E.XMLParser(remove_comments=True,resolve_entities=False,no_network=True)\nfiles=[];raws={};roots={};comp={}\nfor role in ['canonical','comparison']:\n a=P['authority'][role];repo=a['local_path'];assert git(repo,'rev-parse','HEAD').decode().strip()==a['commit'];assert not git(repo,'status','--porcelain').strip()\n for f in ['ch_intro.ptx','sec_intro-intro.ptx','sec_intro-structures.ptx']:\n  p='source/'+f;raw=git(repo,'show',a['commit']+':'+p);working=(Path(repo)/p).read_bytes();assert working.replace(b'\\r\\n',b'\\n')==raw\n  files.append(dict(role=role,repository_path=p,local_path=(Path(repo)/p).as_posix(),commit=a['commit'],sha256=sh(raw),bytes=len(raw),git_blob_sha1=git(repo,'rev-parse',a['commit']+':'+p).decode().strip(),working_raw_sha256=sh(working),working_raw_bytes=len(working)))\n  if role=='canonical':raws[f]=raw.decode();roots[f]=E.fromstring(raw,parser)\n  else:comp[f]=E.fromstring(raw,parser)\nwit=raws['ch_intro.ptx']\nfor f in ['sec_intro-intro.ptx','sec_intro-structures.ptx']:\n needle='<xi:include href=\"./'+f+'\"/>';assert wit.count(needle)==1;wit=wit.replace(needle,re.sub(r'^<\\?xml[^>]+>\\s*','',raws[f],count=1))\nw=E.fromstring(wit.encode(),parser)\nfor e,f in zip(w.findall('section'),['sec_intro-intro.ptx','sec_intro-structures.ptx']):assert tree(e)==tree(roots[f])\nblocks=[];tex=[];terms=[];refs=[];indices=[];children=[];symbols=[];answers=[]\nfor f,r in roots.items():\n for e in r.iter():\n  if e.tag not in {'p','title','fn','shortdescription','feedback','h','see','cell'}:continue\n  k=f+'#'+xp(e);counters=collections.Counter();slots=[];markup=[]\n  def tok(n,kind):\n   i=counters[kind];counters[kind]+=1;t='{{'+kind+':'+str(i)+'}}';record=dict(token=t,kind=kind,index=i,owner_key=k,source_path=f+'#'+xp(n),source_tag=n.tag,source_attributes=dict(n.attrib),inline_ancestors=[f+'#'+xp(a) for a in reversed(list(n.iterancestors())) if a is not e and e in a.iterancestors()]);slots.append(record)\n   if kind=='tex':record.update(raw_tex=n.text or '',tex_sha256=sh((n.text or '').encode()),tex_bytes=len((n.text or '').encode()));tex.append(record)\n   elif kind=='xref':refs.append(record)\n   elif kind=='index':indices.append(record)\n   elif kind=='child':children.append(record)\n   elif kind=='symbol':symbols.append(record)\n   elif kind=='answer':answers.append(record)\n   return t\n  def content(n):\n   out=html.escape(n.text or '',quote=False)\n   for c in n:\n    special={'m':'tex','me':'tex','fn':'footnote','xref':'xref','idx':'index','ol':'child','ul':'child','sidebyside':'child','midpoint':'symbol','ellipsis':'symbol','var':'answer'}\n    if c.tag in special:out+=tok(c,special[c.tag])\n    elif c.tag in {'em','q','term','alert'}:\n     markup.append(dict(tag=c.tag,path=f+'#'+xp(c),source_text=''.join(c.itertext()),attributes=dict(c.attrib)))\n     if c.tag=='term':\n      i=counters['term'];counters['term']+=1;terms.append(dict(owner_key=k,index=i,source_path=f+'#'+xp(c),raw_source_text=''.join(c.itertext())));out+='<span data-source-term=\"'+str(i)+'\">'+content(c)+'</span>'\n     elif c.tag=='alert':out+='<strong data-source-tag=\"alert\">'+content(c)+'</strong>'\n     else:out+='<'+c.tag+'>'+content(c)+'</'+c.tag+'>'\n    else:raise ValueError(c.tag+' in '+k)\n    out+=html.escape(c.tail or '',quote=False)\n   return out\n  template=re.sub(r'\\s+',' ',content(e)).strip()\n  blocks.append(dict(key=k,tag=e.tag,source_attributes=dict(e.attrib),source_tree_sha256=jsh(tree(e)),source_template=template,slots=slots,inline_markup=markup))\nassert len(blocks)==157 and len(tex)==105 and len(terms)==65\nimages=[]\nfor ident in ['graphs-7sum','graphs-evensum']:\n for role,variant in [('canonical','rs'),('comparison','rs'),('comparison','web')]:\n  a=P['authority'][role];p='generated-assets/'+variant+'/latex-image/'+ident+'.svg';raw=git(a['local_path'],'show',a['commit']+':'+p);working=(Path(a['local_path'])/p).read_bytes();img=E.fromstring(raw,parser);ns={'s':'http://www.w3.org/2000/svg'}\n  images.append(dict(id=ident,role=role,variant=variant,repository_path=p,local_path=(Path(a['local_path'])/p).as_posix(),bytes=len(raw),sha256=sh(raw),git_blob_sha1=git(a['local_path'],'rev-parse',a['commit']+':'+p).decode().strip(),working_raw_sha256=sh(working),working_logical_lf_matches_git=working.replace(b'\\r\\n',b'\\n')==raw,width=img.get('width'),height=img.get('height'),viewBox=img.get('viewBox'),labels=[x.get('data-text') for x in img.findall('s:use',ns)],edge_paths=[dict(x.attrib) for x in img.findall('s:path',ns) if x.get('stroke')],external_references=[v for n in img.iter() for a,v in n.attrib.items() if a.endswith('href') and not v.startswith('#')]))\nXID='{http://www.w3.org/XML/1998/namespace}id'\nids=[dict(id=e.get(XID),tag=e.tag,excerpt_path=xp(e),ancestor_ids=[a.get(XID) for a in reversed(list(e.iterancestors())) if a.get(XID)]) for e in w.iter() if e.get(XID)]\nlabels=[dict(label=e.get('label'),tag=e.tag,excerpt_path=xp(e)) for e in w.iter() if e.get('label')]\ndiffs=[]\nfor f in roots:\n en=list(roots[f].xpath('.//m|.//me'));id=list(comp[f].xpath('.//m|.//me'));assert len(en)==len(id)\n for s,d in zip(en,id):\n  if s.text!=d.text:diffs.append(dict(source_path=f+'#'+xp(s),canonical=s.text,comparison=d.text))\ndeps={}\nfor p in ['source/dmoi.ptx','source/bookinfo.ptx','source/assets/tikz-defs.tex','publication/publication.ptx','source/ch_logic.ptx']:\n a=P['authority']['canonical'];raw=git(a['local_path'],'show',a['commit']+':'+p);deps[p]=dict(sha256=sh(raw),bytes=len(raw),git_blob_sha1=git(a['local_path'],'rev-parse',a['commit']+':'+p).decode().strip())\nout=dict(unit='B10-001',authority=P['authority'],witness=wit,excerpt_bytes=len(wit.encode()),excerpt_sha256=sh(wit.encode()),source_active_tree_sha256=jsh(tree(w)),source_files=files,blocks=blocks,tex=tex,terms=terms,xrefs=refs,index_slots=indices,child_slots=children,symbol_slots=symbols,answer_slots=answers,images=images,ids=ids,labels=labels,counts=dict(collections.Counter(e.tag for e in w.iter())),comparison_math_differences=diffs,metadata_dependencies=deps)\n\n\nimport copy\nM=json.loads((B/'source-excerpts/manifest-b10-unit-001.json').read_text(encoding='utf-8'))\nT=json.loads((B/'translations/b10-unit-001.json').read_text(encoding='utf-8'))\nW=(B/'source-excerpts/b10-unit-001.ptx').read_bytes()\ncanonical_ledger=[dict(path=xp(e),tag=e.tag,attributes=dict(e.attrib),children=[xp(c) for c in e],own_text=e.text,tail=e.tail) for e in w.iter()]\ncanonical_exercises=[dict(source_path=f+'#'+xp(e),attributes=dict(e.attrib),statement_keys=[f+'#'+xp(p) for p in e.findall('statement/p')],response=[dict(attributes=dict(r.attrib),text=r.text) for r in e.findall('response')],setup_tree=tree(e.find('setup')) if e.find('setup') is not None else None) for f,r in roots.items() for e in r.iter('exercise')]\ncanonical_image_owners=[dict(source_path='sec_intro-structures.ptx#'+xp(e),attributes=dict(e.attrib),latex_image=dict(attributes=dict(e.find('latex-image').attrib),raw_tex=e.find('latex-image').text,raw_tex_sha256=sh(e.find('latex-image').text.encode())),shortdescription=e.findtext('shortdescription'),description_tree=tree(e.find('description')) if e.find('description') is not None else None) for e in roots['sec_intro-structures.ptx'].iter('image')]\na=P['authority']['canonical']\nbookinfo=E.fromstring(git(a['local_path'],'show',a['commit']+':source/bookinfo.ptx'),parser)\nfm=json.loads((B/'source-excerpts/manifest-b10-frontmatter.json').read_text(encoding='utf-8'))\nK=[x['key'] for x in blocks]\ndef parse(s):return E.fromstring(('<root>'+s+'</root>').encode())\ndef plain(s):return ''.join(parse(s).itertext())\ndef digits(s):return re.findall(r'\\d+(?:\\.\\d+)?',re.sub(r'{{.*?}}','',plain(s)))\ndef punct(s):\n p=re.sub(r'{{.*?}}',lambda m:' '*len(m.group()),plain(s))\n return [[m.start(),m.group()] for m in re.finditer(r\"[^\\w\\s\\u0600-\\u06ff]+|[،؛؟۔]\",p)]\ndef events(r):\n out=[]\n def txt(t):out.extend(re.findall(r'{{(?:tex|footnote|xref|index|child|symbol|answer):\\d+}}',t or ''))\n def walk(e):\n  if e.tag not in ['root','bdi']:out.append(('open',e.tag,dict(e.attrib)))\n  txt(e.text)\n  for c in e:walk(c);txt(c.tail)\n  if e.tag not in ['root','bdi']:out.append(('close',e.tag))\n walk(r);return out\ndef check_bidi(root,ok,label):\n for e in root.iter():\n  for value,owner in [(e.text,e),(e.tail,e.getparent())]:\n   visible=re.sub(r'{{.*?}}','',value or '')\n   if re.search('[A-Za-z0-9]',visible):\n    ok(owner is not None and any(a.tag=='bdi' and a.get('dir')=='ltr' for a in [owner]+list(owner.iterancestors())),label+' ASCII isolation')\ndef validate(m,t,wb,exact_text=True):\n checks=[]\n def ok(v,label):\n  if not v:raise AssertionError(label)\n  checks.append(label)\n ok(sh((B/'sources.lock.json').read_bytes())==m['authority']['lock_raw_sha256'],'actual source lock bytes')\n ok(m['authority']==P['authority'],'pinned authority')\n ok(m['work']==dict(title='Discrete Mathematics: An Open Introduction',edition='Fourth Edition',author='Oscar Levin',book_xml_id='dmoi4',document_id='dmoi-4',not_this_work='OpenLogic is not the assigned B10 work.'),'work/edition identity')\n ok(wb==(wit+'\\n').encode(),'complete composed source bytes plus exactly one terminal LF')\n ok(len(wb)==37882 and sh(wb)=='22d106e2b8f6e456550c292ecbda0f40d528dec139462629a4d3c1de1c844721','witness independent expected hash')\n ok(m['excerpt_bytes']==len(wb) and m['excerpt_sha256']==sh(wb),'manifest witness binding')\n ok(m['construction']['canonical_composition_bytes']==len(wit.encode()) and m['construction']['canonical_composition_sha256']==sh(wit.encode()),'raw composition binding')\n ok(m['construction']['witness_terminal_lf_added']==1 and m['construction']['upstream_execution'] is False,'construction scope')\n ok(tree(E.fromstring(wb,parser))==tree(w),'exact active source tree')\n ok(m['source_active_tree_sha256']==jsh(tree(w)),'active tree hash')\n ok(m['source_files']==files,'all six source/comparison file raw and checkout hashes')\n ok(m['metadata_dependencies']==deps,'all five exact metadata dependencies')\n ok(m['source_macros']==bookinfo.findtext('macros'),'exact inert macros')\n ok(m['inherited_rename_labels']==[dict(attributes=dict(e.attrib),text=e.text) for e in bookinfo.findall('rename')],'source inherited labels')\n ok(m['retained_book_metadata']==fm['retained_metadata'],'retained edition author and source metadata')\n ok(m['existing_notice_policy']==fm['existing_notice_policy'],'existing notice policy unchanged')\n for x in m['existing_notice_policy']['notice_inputs']:\n  raw=Path(x['path']).read_bytes()\n  ok(sh(raw)==x['raw_sha256'] and sh(raw.replace(b'\\r\\n',b'\\n'))==x['logical_lf_sha256'],'retained existing notice input '+x['path'])\n ok(m['active_tag_counts']==out['counts'] and len(list(w.iter()))==492,'all 492 active elements')\n ok(m['source_ids']==ids and len(ids)==12,'exact12 source IDs and ancestry')\n ok(m['source_labels']==labels and len(labels)==7,'exact7 original labels on correct owners')\n ok(m['source_structure_ledger']==canonical_ledger,'every source child/own-text/tail')\n for x,y in zip(m['source_structure_ledger'],canonical_ledger):ok(x==y,'source-node '+y['path'])\n ok(m['first_outside']==dict(source_file='source/ch_logic.ptx',xml_id='ch_logic',title='Logic and Proofs'),'next complete chapter boundary')\n nxt=E.fromstring(git(a['local_path'],'show',a['commit']+':source/ch_logic.ptx'),parser)\n ok(nxt.get(XID)=='ch_logic' and nxt.findtext('title')=='Logic and Proofs','next source identity')\n ok(len(K)==157 and m['translation_key_count']==157 and m['expected_source_keys']==K and list(t['source_blocks'])==K,'exact157 keys in source order')\n ok(m['source_blocks']==blocks,'all independently rederived source-own block templates/slots')\n ok(m['tex_slots']==tex and len(tex)==105,'exact105 source TeX/owners/whitespace')\n for x in m['tex_slots']:ok(sh(x['raw_tex'].encode())==x['tex_sha256'] and len(x['raw_tex'].encode())==x['tex_bytes'],'TeX hash '+x['source_path'])\n for field,expected in [('source_terms',terms),('xrefs',refs),('index_slots',indices),('mixed_child_slots',children),('symbol_slots',symbols),('answer_slots',answers)]:ok(m[field]==expected,'source exact '+field)\n ok(len(terms)==65 and len(indices)==29 and len(children)==3 and len(symbols)==3 and len(answers)==3,'inline slot counts')\n ok(m['source_table_tree']==tree(w.find('.//tabular')),'source table rows columns cells and border metadata')\n ok([[''.join(c.itertext()).strip() for c in r.findall('cell')] for r in w.findall('.//tabular/row')]==[['n','1','2','3','4','...'],['a_n','1','3','6','10','...']],'independent table values')\n ok(m['source_exercises']==canonical_exercises,'all exercise prompt/response/setup associations')\n ok(w.xpath('.//setup/var/condition/@number')==['6','10','15'] and w.xpath('.//setup/var/condition/@string')==['.*']*3,'exact numeric answers and fallback order')\n ok(len(w.findall('.//response'))==5 and len(w.findall('.//exercise'))==6,'five ungraded exercises plus numeric exercise')\n ok(m['source_image_owners']==canonical_image_owners,'image owner source alt/description/TikZ binding')\n ok(m['image_evidence']==images,'all6 exact SVG evidence records')\n canonical_images=[x for x in images if x['role']=='canonical']\n ok(len(m['declared_assets'])==2,'two planned unchanged source images')\n for decl,img in zip(m['declared_assets'],canonical_images):\n  ok(all(decl[k]==v for k,v in img.items()),'exact selected SVG '+img['id'])\n  ok(decl['copied'] is False and decl['planned_reader_path']=='assets/b10/b10-unit-001-'+img['id']+'.svg','input-only asset plan')\n  ok(img['width']=='76' and img['height']=='73' and img['viewBox']=='0 0 76 73' and not img['external_references'],'SVG dimensions and inert local refs')\n ok(m['graph_evidence']['edges']=={'graphs-7sum':[[1,6],[2,5],[3,4]],'graphs-evensum':[[1,5],[2,6],[1,3],[4,6],[2,4],[3,5]]},'independently reviewed six-vertex edge lists')\n ok(m['comparison_math_differences']==diffs and len(diffs)==1,'Indonesian math change remains separate')\n ok('\\\\text{ and }' in diffs[0]['canonical'] and '\\\\text{ dan }' in diffs[0]['comparison'],'exact and/dan distinction')\n ok(len(m['punctuation_ledger'])==157 and len(m['translation_block_seals'])==157,'full punctuation and approved-text seals')\n for i,x in enumerate(blocks):\n  key=x['key'];target=t['source_blocks'][key];sr=parse(x['source_template']);tr=parse(target);seal=m['translation_block_seals'][i];pl=m['punctuation_ledger'][i]\n  ok(isinstance(target,str) and bool(target.strip()),'nonempty '+key)\n  ok(events(sr)==events(tr),'exact ordered inline tree/placeholder events '+key)\n  ok(digits(x['source_template'])==digits(target),'exact literal source numerals '+key)\n  ok(seal['key']==key and seal['source_numerals']==digits(x['source_template']) and seal['target_numerals']==digits(target),'numeral seal '+key)\n  ok(pl['key']==key and pl['source_template_sha256']==sh(x['source_template'].encode()) and pl['source']==punct(x['source_template']),'source punctuation ledger '+key)\n  if exact_text:\n   ok(seal['sha256']==sh(target.encode()) and seal['bytes']==len(target.encode()),'approved target text '+key)\n   ok(pl['translation_sha256']==sh(target.encode()) and pl['target']==punct(target),'target punctuation ledger '+key)\n  for e in tr.iter():\n   ok(e.tag in ['root','bdi','span','q','em','strong'],'allowed inline markup '+key)\n   if e.tag=='bdi':ok(dict(e.attrib)=={'dir':'ltr','lang':'en'},'LTR bdi attributes '+key)\n   ok(not any(k.startswith('on') or k in ['href','src','id'] for k in e.attrib),'no undeclared links/assets/IDs '+key)\n  check_bidi(tr,ok,key)\n  ok(not re.search('[\\u0a00-\\u0a7f]',target),'no Gurmukhi '+key)\n  ok(not re.search(r'\\\\[A-Za-z]+',target),'no copied/unbound TeX in target prose '+key)\n ok(t['source_blocks'][K[131]]==t['source_blocks'][K[132]],'first graph duplicated source alt/description translated consistently')\n for field,sealed in m['original_field_seals'].items():ok(jsh(t[field])==sealed,'separate original field '+field)\n orig_ids=[]\n for field in ['bridge_before_html','bridge_after_html']:\n  root=parse(t[field]);check_bidi(root,ok,field);orig_ids.extend(root.xpath('.//@id'))\n  ok(len(root)==1 and root[0].tag=='section' and root[0].get('data-origin')=='original','separate labeled original region '+field)\n  ok('data-source-term' not in t[field] and not re.search(r'{{.*?}}',t[field]),'no source tokens claimed in original '+field)\n ok(len(orig_ids)==len(set(orig_ids)) and not set(orig_ids)&{x['id'] for x in ids},'unique original-only IDs')\n rl=list(t['reference_labels'].values())\n ok([r['source_ref'] for r in rl]==['sec_intro-structures','ch_sequences','ch_graphtheory'],'all3 reference labels order')\n ok(rl[0]['resolution']=='local' and rl[0]['target_id']=='sec_intro-structures' and digits(rl[0]['html'])==['0.2'],'local reference target/label')\n for r,num in zip(rl[1:],['4','2']):ok(r['resolution']=='pending-untranslated' and r['target_id'] is None and bool(r['pending_notice']) and digits(r['html'])==[num],'pending chapter reference '+num)\n for r in rl:check_bidi(parse(r['html']),ok,'reference label')\n for ident,x in t['original_image_descriptions'].items():\n  ok(ident in ['graphs-7sum','graphs-evensum'] and x['origin']=='original' and x['source_description_retained'] is True,'original image description '+ident)\n  check_bidi(parse(x['html']),ok,'original image '+ident)\n ok(len(m['canon_receipts'])==3,'draft revision QA receipts')\n for rp in m['canon_receipts']:\n  r=json.loads(Path(rp).read_text(encoding='utf-8'));ok(r['unit']=='B10-001' and r['stage'] in ['draft','revision','qa'],'canon stage identity')\n  for x in r['examples']:\n   p=Path(x['local_text_path']);raw=p.read_bytes();passage=p.read_text(encoding='utf-8').splitlines()[x['line']-1]\n   ok(sh(raw)==x['source_text_sha256'] and sh(passage.encode())==x['paragraph_sha256'],'actual canon passage '+r['stage']+' '+x['id'])\n ok(m['whole_assignment_complete'] is False and t['whole_assignment_complete'] is False,'whole assignment remains active')\n return len(checks)\ncount=validate(M,T,W)\nmutations=[]\ndef mutate(name,fn,exact=True):\n m=copy.deepcopy(M);t=copy.deepcopy(T);wb=[W];fn(m,t,wb)\n try:validate(m,t,wb[0],exact)\n except (AssertionError,E.XMLSyntaxError,KeyError,IndexError,ValueError,TypeError) as e:mutations.append(dict(name=name,rejected_by=str(e)))\n else:raise AssertionError('mutation survived: '+name)\nmutate('missing source key',lambda m,t,w:t['source_blocks'].pop(K[-1]))\nmutate('extra unkeyed source prose',lambda m,t,w:t['source_blocks'].update({'invented-source-p':'نویں گل'}))\nmutate('source key order swap',lambda m,t,w:t.update(source_blocks=dict(list(t['source_blocks'].items())[1:]+[list(t['source_blocks'].items())[0]])))\nmutate('table numeral6 to7 without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[102],t['source_blocks'][K[102]].replace('6','7')),False)\nmutate('decimal digit change without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[8],t['source_blocks'][K[8]].replace('1.32419','1.32418')),False)\nmutate('TeX token order swap without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[25],t['source_blocks'][K[25]].replace('{{tex:0}}','TEMP').replace('{{tex:1}}','{{tex:0}}').replace('TEMP','{{tex:1}}')),False)\nmutate('math moved out of source term without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[80],t['source_blocks'][K[80]].replace('<span data-source-term=\"3\">{{tex:2}}-ٹپل</span>','{{tex:2}}<span data-source-term=\"3\">-ٹپل</span>')),False)\nmutate('nested emphasis flattened without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[13],t['source_blocks'][K[13]].replace('<em>کھوج لاؤ!</em>','کھوج لاؤ!')),False)\nmutate('LTR wrapper removed without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[94],plain(t['source_blocks'][K[94]])),False)\nmutate('term marker index changed without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[58],t['source_blocks'][K[58]].replace('data-source-term=\"4\"','data-source-term=\"3\"')),False)\nmutate('index placeholder removed without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[58],t['source_blocks'][K[58]].replace('{{index:3}}','')),False)\nmutate('mixed list child duplicated without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[14],t['source_blocks'][K[14]]+'{{child:0}}'),False)\nmutate('footnote placeholder erased without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[8],t['source_blocks'][K[8]].replace('{{footnote:0}}','')),False)\nmutate('source ID fabricated',lambda m,t,w:m['source_ids'][1].update(id='fake-section'))\nmutate('source ancestry altered',lambda m,t,w:m['source_ids'][4].update(ancestor_ids=[]))\nmutate('source structural own-text injection',lambda m,t,w:m['source_structure_ledger'][0].update(own_text='injected'))\nmutate('raw TeX numerical value changed',lambda m,t,w:m['tex_slots'][0].update(raw_tex='999'))\nmutate('raw TeX whitespace trimmed',lambda m,t,w:m['tex_slots'].__setitem__(next(i for i,x in enumerate(m['tex_slots']) if x['source_tag']=='me'),dict(next(x for x in m['tex_slots'] if x['source_tag']=='me'),raw_tex='a_0,a_1,a_2')))\nmutate('source numeric answer6 to7',lambda m,t,w:m['source_exercises'][4]['setup_tree'][3][0][0][3][0][0][1].update(number='7'))\nmutate('answer placeholder order changed without text seals',lambda m,t,w:t['source_blocks'].__setitem__(K[149],t['source_blocks'][K[149]].replace('{{answer:0}}','TEMP').replace('{{answer:1}}','{{answer:0}}').replace('TEMP','{{answer:1}}')),False)\nmutate('feedback assigned wrong text',lambda m,t,w:t['source_blocks'].__setitem__(K[151],t['source_blocks'][K[153]]))\nmutate('image hash substituted',lambda m,t,w:m['declared_assets'][0].update(sha256=m['declared_assets'][1]['sha256']))\nmutate('image owner label moved',lambda m,t,w:m['source_image_owners'][1]['attributes'].update(label='graphs-evensum'))\nmutate('Indonesian added graph description imported',lambda m,t,w:m['source_image_owners'][1].update(description_tree=['description',{},'added',[]]))\nmutate('raw source alt erased',lambda m,t,w:m['source_image_owners'][0].update(shortdescription=''))\nmutate('future chapter misrepresented as local',lambda m,t,w:t['reference_labels']['ch_sequences'].update(resolution='local',target_id='ch_sequences'))\nmutate('source punctuation ledger altered',lambda m,t,w:m['punctuation_ledger'][3]['source'].append([0,'-']))\nmutate('original correction erased',lambda m,t,w:t.update(bridge_after_html=''))\nmutate('function conclusion inserted in source',lambda m,t,w:t['source_blocks'].__setitem__(K[68],t['source_blocks'][K[68]]+' ہر فنکشن دا کوڈومین ایہہ سیٹ اے۔'))\nmutate('own-block prose duplicated',lambda m,t,w:t['source_blocks'].__setitem__(K[46],t['source_blocks'][K[46]]+t['source_blocks'][K[48]]))\nmutate('source TikZ tampered',lambda m,t,w:m['source_image_owners'][0]['latex_image'].update(raw_tex='\\\\draw fake;'))\nmutate('inert source macro changed',lambda m,t,w:m.update(source_macros=m['source_macros'].replace('\\\\def\\\\N','\\\\def\\\\Z')))\nmutate('source boundary trimmed',lambda m,t,w:w.__setitem__(0,w[0].replace(b'</chapter>',b'')))\nmutate('source terminal LF policy changed',lambda m,t,w:w.__setitem__(0,w[0].rstrip(b'\\n')))\nmutate('source rights metadata changed',lambda m,t,w:m['retained_book_metadata'].update(copyright_holder='Unknown'))\nresult=dict(unit='B10-001',kind='input-only source-bound checkpoint',passed=True,checks=count,detached_mutations=len(mutations),mutations=mutations,source_key_count=len(K),active_elements=492,source_tex_count=len(tex),source_ids=len(ids),source_labels=len(labels),input_hashes={p:sh((B/p).read_bytes()) for p in ['source-excerpts/b10-unit-001.ptx','source-excerpts/manifest-b10-unit-001.json','translations/b10-unit-001.json']},limits=['Input/source fidelity and approved-text drift checks, not independent semantic proof of every translation.','Mutation tests marked without text seals exercise structural/numeric guards directly; prose/bridge meaning mutations rely on approved-text seals.','No build, asset copy, TeX conversion, upstream execution, browser visual or native/educator review.','No new license/supply audit or claim of image-specific clearance.','Entire book and five-work assignment remain incomplete.'])\nprint(json.dumps(result,ensure_ascii=False,separators=(',',':')))\n",
+    "replay_from_workspace_root": "python -B -c \"import json,pathlib;exec(json.loads(pathlib.Path('languages/pnb-Arab-PK/plans/B10-001-scope.json').read_text(encoding='utf-8'))['input_qa']['program'])\"",
+    "mode": "Read-only source/translation checks plus deep-copied detached mutations; no source/input/output files modified.",
+    "expected_checks": 2925,
+    "expected_detached_mutations": 35,
+    "limitations": [
+      "Input/source fidelity and approved-text drift checks, not independent semantic proof of every translation.",
+      "Mutation tests marked without text seals exercise structural/numeric guards directly; prose/bridge meaning mutations rely on approved-text seals.",
+      "No build, asset copy, TeX conversion, upstream execution, browser visual or native/educator review.",
+      "No new license/supply audit or claim of image-specific clearance.",
+      "Entire book and five-work assignment remain incomplete."
+    ],
+    "program_sha256": "c709061c0f35854341aba8faa2a203ca224e9cc28b74ef698941b2038a6413c9",
+    "last_verified": {
+      "fresh_process_runs": 2,
+      "identical_results": true,
+      "result": {
+        "unit": "B10-001",
+        "kind": "input-only source-bound checkpoint",
+        "passed": true,
+        "checks": 2925,
+        "detached_mutations": 35,
+        "mutations": [
+          {
+            "name": "missing source key",
+            "rejected_by": "exact157 keys in source order"
+          },
+          {
+            "name": "extra unkeyed source prose",
+            "rejected_by": "exact157 keys in source order"
+          },
+          {
+            "name": "source key order swap",
+            "rejected_by": "exact157 keys in source order"
+          },
+          {
+            "name": "table numeral6 to7 without text seals",
+            "rejected_by": "exact literal source numerals sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[2]/cell[4]"
+          },
+          {
+            "name": "decimal digit change without text seals",
+            "rejected_by": "exact literal source numerals sec_intro-intro.ptx#/section/p[3]"
+          },
+          {
+            "name": "TeX token order swap without text seals",
+            "rejected_by": "exact ordered inline tree/placeholder events sec_intro-intro.ptx#/section/p[7]/ol[1]/li[1]/p[2]"
+          },
+          {
+            "name": "math moved out of source term without text seals",
+            "rejected_by": "exact ordered inline tree/placeholder events sec_intro-structures.ptx#/section/subsection[4]/p[2]"
+          },
+          {
+            "name": "nested emphasis flattened without text seals",
+            "rejected_by": "exact ordered inline tree/placeholder events sec_intro-intro.ptx#/section/investigation[1]/p[1]"
+          },
+          {
+            "name": "LTR wrapper removed without text seals",
+            "rejected_by": "sec_intro-structures.ptx#/section/subsection[4]/tabular[1]/row[1]/cell[2] ASCII isolation"
+          },
+          {
+            "name": "term marker index changed without text seals",
+            "rejected_by": "exact ordered inline tree/placeholder events sec_intro-structures.ptx#/section/subsection[3]/p[1]"
+          },
+          {
+            "name": "index placeholder removed without text seals",
+            "rejected_by": "exact ordered inline tree/placeholder events sec_intro-structures.ptx#/section/subsection[3]/p[1]"
+          },
+          {
+            "name": "mixed list child duplicated without text seals",
+            "rejected_by": "exact ordered inline tree/placeholder events sec_intro-intro.ptx#/section/investigation[1]/p[2]"
+          },
+          {
+            "name": "footnote placeholder erased without text seals",
+            "rejected_by": "exact ordered inline tree/placeholder events sec_intro-intro.ptx#/section/p[3]"
+          },
+          {
+            "name": "source ID fabricated",
+            "rejected_by": "exact12 source IDs and ancestry"
+          },
+          {
+            "name": "source ancestry altered",
+            "rejected_by": "exact12 source IDs and ancestry"
+          },
+          {
+            "name": "source structural own-text injection",
+            "rejected_by": "every source child/own-text/tail"
+          },
+          {
+            "name": "raw TeX numerical value changed",
+            "rejected_by": "exact105 source TeX/owners/whitespace"
+          },
+          {
+            "name": "raw TeX whitespace trimmed",
+            "rejected_by": "exact105 source TeX/owners/whitespace"
+          },
+          {
+            "name": "source numeric answer6 to7",
+            "rejected_by": "all exercise prompt/response/setup associations"
+          },
+          {
+            "name": "answer placeholder order changed without text seals",
+            "rejected_by": "exact ordered inline tree/placeholder events sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/statement[1]/p[2]"
+          },
+          {
+            "name": "feedback assigned wrong text",
+            "rejected_by": "approved target text sec_intro-structures.ptx#/section/reading-questions[1]/exercise[2]/setup[1]/var[1]/condition[2]/feedback[1]"
+          },
+          {
+            "name": "image hash substituted",
+            "rejected_by": "exact selected SVG graphs-7sum"
+          },
+          {
+            "name": "image owner label moved",
+            "rejected_by": "image owner source alt/description/TikZ binding"
+          },
+          {
+            "name": "Indonesian added graph description imported",
+            "rejected_by": "image owner source alt/description/TikZ binding"
+          },
+          {
+            "name": "raw source alt erased",
+            "rejected_by": "image owner source alt/description/TikZ binding"
+          },
+          {
+            "name": "future chapter misrepresented as local",
+            "rejected_by": "separate original field reference_labels"
+          },
+          {
+            "name": "source punctuation ledger altered",
+            "rejected_by": "source punctuation ledger sec_intro-intro.ptx#/section/blockquote[1]/p[1]"
+          },
+          {
+            "name": "original correction erased",
+            "rejected_by": "separate original field bridge_after_html"
+          },
+          {
+            "name": "function conclusion inserted in source",
+            "rejected_by": "approved target text sec_intro-structures.ptx#/section/subsection[3]/example[1]/p[2]"
+          },
+          {
+            "name": "own-block prose duplicated",
+            "rejected_by": "exact ordered inline tree/placeholder events sec_intro-structures.ptx#/section/subsection[2]/title[1]"
+          },
+          {
+            "name": "source TikZ tampered",
+            "rejected_by": "image owner source alt/description/TikZ binding"
+          },
+          {
+            "name": "inert source macro changed",
+            "rejected_by": "exact inert macros"
+          },
+          {
+            "name": "source boundary trimmed",
+            "rejected_by": "complete composed source bytes plus exactly one terminal LF"
+          },
+          {
+            "name": "source terminal LF policy changed",
+            "rejected_by": "complete composed source bytes plus exactly one terminal LF"
+          },
+          {
+            "name": "source rights metadata changed",
+            "rejected_by": "retained edition author and source metadata"
+          }
+        ],
+        "source_key_count": 157,
+        "active_elements": 492,
+        "source_tex_count": 105,
+        "source_ids": 12,
+        "source_labels": 7,
+        "input_hashes": {
+          "source-excerpts/b10-unit-001.ptx": "22d106e2b8f6e456550c292ecbda0f40d528dec139462629a4d3c1de1c844721",
+          "source-excerpts/manifest-b10-unit-001.json": "98848df0ae9bda7cea41e05cb42dfbadcda9181588beab3a4a5637c9be239443",
+          "translations/b10-unit-001.json": "6581cc29aa051220f91ec342c5642d08ff16203d5292b29948fa3df9595ea0cd"
+        },
+        "limits": [
+          "Input/source fidelity and approved-text drift checks, not independent semantic proof of every translation.",
+          "Mutation tests marked without text seals exercise structural/numeric guards directly; prose/bridge meaning mutations rely on approved-text seals.",
+          "No build, asset copy, TeX conversion, upstream execution, browser visual or native/educator review.",
+          "No new license/supply audit or claim of image-specific clearance.",
+          "Entire book and five-work assignment remain incomplete."
+        ]
+      }
+    }
+  },
+  "canon_receipts": [
+    "languages/pnb-Arab-PK/canon/receipts/B10-001-draft-20260831T011820800687Z.json",
+    "languages/pnb-Arab-PK/canon/receipts/B10-001-revision-20260831T014217426841Z.json",
+    "languages/pnb-Arab-PK/canon/receipts/B10-001-qa-20260831T014957783751Z.json"
+  ],
+  "tex_delivery_study": {
+    "status": "Source-study proposal only; no converter/runtime implemented/executed.",
+    "observed_nodes": 105,
+    "unique_raw_tex_blobs": 78,
+    "inline": 102,
+    "display": 3,
+    "named_commands": [
+      "\\N",
+      "\\cdot",
+      "\\frac",
+      "\\ge",
+      "\\in",
+      "\\infty",
+      "\\ldots",
+      "\\lt",
+      "\\ne",
+      "\\st",
+      "\\text",
+      "\\to"
+    ],
+    "grammar_scope": [
+      "ASCII single-letter variables and multi-digit numeral tokens; ordinary =,+,-,comma,semicolon,colon operators.",
+      "Visible parentheses, square bracket and escaped brace fences; intentionally mixed interval [0,infinity) must not be rejected as mismatched punctuation.",
+      "Subscript/superscript operators with a single atom or braced group, including nested a_n, f_{n-1}, (a_n)_{n>=0}, and squares.",
+      "Only frac with two braced arguments; only text with exact observed content ' and ' and its spaces.",
+      "Whitelisted declarative interpretations of source \\N and \\st; no TeX macro expansion engine."
+    ],
+    "requirements": [
+      "Retain exact raw TeX bytes/hash and inert source macros; derived MathML must not be described as canonical source MathML.",
+      "Keep source m/me owner and display kind plus every source text/term boundary; retain exact token/whitespace ledger and source annotation.",
+      "Consume every source character through explicit known grammar; reject unsupported commands/forms, do not silently strip them.",
+      "Separate normal TeX whitespace ignored for presentation from exact raw-text preservation. Preserve spaces inside text{ and }.",
+      "LTR math root/wrapper, properly isolated punctuation and subscript grouping; no source prose punctuation swallowed into formula.",
+      "Original graph SVG reuse remains separate from both math converter and inert source TikZ."
+    ],
+    "independent_qa": [
+      "Do not generate expected trees by calling the converter under test.",
+      "Explicit reviewed expected descriptors for all78 unique raw formulas, bound back to105 source owners, or a genuinely independent grammar checker plus reviewed complete tree fixtures.",
+      "Check complete MathML hierarchy, exact token/glyph sequences, fence and sub/sup/fraction binding, inferred presentation-only transformations and raw-TeX reverse ledgers.",
+      "Detach mutations for minus/relation swaps, interval fences, variable script owners, fraction denominator, text spaces, hidden wrapper text, MathML owner interchange and raw TeX whitespace."
+    ],
+    "risks": [
+      "[0,\\infty) intentionally mixes bracket types.",
+      "Parenthesized sequence subscript must retain its full base; f_{n-1} must not bind -1 outside the subscript.",
+      "\\text{ and } is English canonical math content, not Indonesian dan or translated Punjabi.",
+      "ASCII TeX - needs an explicitly recorded presentation mapping to a true-minus MathML glyph; source bytes remain unchanged."
+    ],
+    "next_authority": "Parent will assign bounded renderer/converter implementation after input freeze."
+  }
+}

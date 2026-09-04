@@ -1,0 +1,35 @@
+{
+  "module": "m81289",
+  "section": "fs-id1935579",
+  "result": "pass",
+  "translation_sha256": "2cee08c7055aea4a37625410b3916e3b946409dcb7afe38a38b11a4ad9a7de05",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "6da182dad65b0ee0cc5afd30f9c4ed28fb6a3cb1d81d1c0745b87825faf664a3"
+  },
+  "source_sha256": "bfaa71d9e1dcfa775dd6525ba2fbc9ecf0ce17e6833d8dcaca9bb2f259361fa3",
+  "reader": "reader/sections/m81289-fs-id1935579.html",
+  "reader_sha256": "0ae6a2456c2c531ed767198d38f73858892d4fa246315d847739d3d8efea4b81",
+  "nodes": 182,
+  "ids": 12,
+  "mathml": 10,
+  "localized_linguistic_mtext": 0,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 0,
+  "exercises": 0,
+  "assets": [],
+  "source_errata": [
+    {
+      "kind": "source_operator_error_preserved",
+      "source_ids": [
+        "eip-id1170324128063"
+      ],
+      "evidence": "The division-summary equation prints a/b+c/d=a/b·d/c. The instructional equation fs-id1171103505483 correctly has division. With a=c=1,b=2,d=3, the printed left side is5/6 while the right side is3/2.",
+      "bengali_correction": "ভাগের নিয়মে প্রথম দুটি ভগ্নাংশের মাঝের যোগচিহ্ন (+)-এর জায়গায় ভাগচিহ্ন (÷) হবে।",
+      "policy": "Preserve source MathML exactly, with an explicit existing-emphasis warning and adjacent Bengali correction before and after the formula. Do not certify the erroneous identity.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

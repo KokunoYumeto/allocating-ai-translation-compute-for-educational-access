@@ -1,0 +1,45 @@
+{
+  "unit": "PNB-011",
+  "status": "bounded_visual_review_pass_with_limitations",
+  "recorded_date": "2026-08-31",
+  "browser": "Codex in-app Chromium",
+  "viewports": [
+    {
+      "requested_width": 390,
+      "requested_height": 844,
+      "document_client_width": 375,
+      "document_scroll_width": 375
+    },
+    {
+      "requested_width": 1024,
+      "requested_height": 800,
+      "document_client_width": 1009,
+      "document_scroll_width": 1009
+    }
+  ],
+  "limitations": [
+    "Selected viewport views, not an exhaustive visual proofread or native Punjabi/mathematics-educator certification.",
+    "No screen-reader, complete keyboard, cross-browser or font-portability certification. Actual screenshot dimensions differ from emulated viewports.",
+    "Full five-work assignment and all books remain incomplete."
+  ],
+  "final_reader_sha256": "4c9f8c6c889768b21d12f9716d3bbda785ada83e31a15258f180c372e510aa93",
+  "structural_checks": 1198,
+  "detached_mutations": 60,
+  "source_text_coverage": "complete",
+  "source_image_coverage": "incomplete; existing quarantined image is not included",
+  "observations": [
+    "Explicit original unavailable-image notice is visible on mobile and desktop. Browser DOM has zero images and zero src/srcset/object/embed/iframe/link resource elements; no broken-image icon or hidden image request substitutes for the missing component.",
+    "Source-only metadata retains media/CNX_Precalc_Figure_01_00_001n.jpg,1401x637 and SHAca0b74aac78b0d531539da17c762954d38cd084c7770297216ef9b651bcc3363 as text, not an asset link.",
+    "Caption retains both named credits: Prayitno Hadinata for bull modification; MeasuringWorth for graph modification. Source generic alt and unnumbered/empty-label figure remain.",
+    "Historical paragraph shows unchanged$100/$500/$1,100,40years,1995and2000 and approximate wording. The source graph-above phrase is retained but explicitly qualified by the absent-image context.",
+    "Original explanation distinguishes horizontal year variable y and vertical P, not an automatic x/y relabeling. No graph redraw, sampled dataset, financial recommendation or invented formula is included."
+  ],
+  "screenshot_sha256": {
+    "unit-011-axis-explanation-desktop.jpg": "375b3a27aa56efef923b312b91beb9a0d00ef7f3b761b5261ba22a8d60ac8130",
+    "unit-011-caption-desktop.jpg": "226c1b98deddcc29ddb084f1b25bdc6849bdd5c53ad60f457959c18de5b9910c",
+    "unit-011-historical-dollars-mobile.jpg": "423a35cc2d96e707ce1448af2d3c7190373eb31aa9157d4f4bc3333674aab982",
+    "unit-011-placeholder-credits-desktop.jpg": "f8ab8abf2f1417127901543a9a00c8595b38414ff3e50360ae2815d8324ad6ca",
+    "unit-011-unavailable-mobile.jpg": "fa0ce08eeb5b94861a71d27cb9acecb314c1ccee90faccc34f2069995497ab20"
+  },
+  "evidence_sequence": "All five screenshots use final4c9f8c...reader. Shared-attribution refresh changed neither reader bytes nor visual content."
+}

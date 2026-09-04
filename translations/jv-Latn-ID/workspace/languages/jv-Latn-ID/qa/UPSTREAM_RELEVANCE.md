@@ -23,3 +23,21 @@ queries, assets, assessment counts or audits. No adopted source pin changes.
 
 No adapter download, source replacement or new audit was performed. The
 coordinator owns continued upstream monitoring and publication distribution.
+
+## Methodology and candidate-integration update — 2026-09-01
+
+The coordinator reported a replacement allocation-research main at
+`c2e607135e3e98e5ef9f48257c6e579b89c4f55c` (dossier v1.1.0). That release
+withdraws the former global ranking because it depended on out-of-scope project
+state; its replacement population method is still pending. Therefore the old
+“Top 10” / “rank 9” result is not objective research support for this locale,
+must not be cited to stop or rerank it, and does not alter the commissioned
+A00/A10/AX-2 work. The current source pins remain unchanged; this note is not a
+new allocation audit.
+
+The coordinator also reported catalog main
+`aedb245224c39bac887c9653324287d390a1c469` (v0.62.14). Its backend-v2 and
+capsule work is a candidate integration surface only, not an automatic pin or
+reader-backend replacement. The reported A30 and assessment-adapter state is
+unchanged. No candidate backend, capsule, adapter, catalog archive, or source
+replacement was adopted here.

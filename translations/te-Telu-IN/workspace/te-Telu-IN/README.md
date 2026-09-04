@@ -47,8 +47,18 @@ the entire A00→A10→A20→A30→B10 program.
 [TE-B011](reader/TE-B011.html) and [TE-B012](reader/TE-B012.html) are the checked
 addition readiness notes. [TE-B013](reader/TE-B013.html) covers addition notation,
 including the distinction between reading an expression and finding its value.
-Next is B014's addition modeling; see [NEXT_UNIT.json](NEXT_UNIT.json). EarlierPreface/Introduction remain
-untranslated. Full program translation is the active goal.
+[TE-B014](reader/TE-B014.html) covers addition models and value-preserving exchanges,
+with19adapted diagrams and complete sourceTryIt reasoning. [TE-B015](reader/TE-B015.html)
+is checked: addition properties, aligned column addition, carries and all source
+TryIt explanations. [TE-B016](reader/TE-B016.html) covers phrase translation,
+[TE-B017](reader/TE-B017.html) covers whole-number applications and perimeter,
+and [TE-B018](reader/TE-B018.html) covers the addition recap. [TE-B019](reader/TE-B019.html)
+covers all82 source practice exercises with22 adapted diagrams and complete
+source/editorial answer classification; all four are editorially checked with
+separate final receipts. B020's exact module opening/glossary remainder is the
+active integration; see [NEXT_UNIT.json](NEXT_UNIT.json). Modulem81244, earlierPreface/
+Introduction, and the full program remain incomplete. Full program translation
+is the active goal.
 
 ## Source and canon evidence
 
@@ -108,7 +118,9 @@ Do not treat a missing large input as permission to redownload every corpus.
 `pypdf`; OCR regeneration uses Tesseract Telugu+English and Poppler and is not
 needed for an ordinary build. Visual QA uses the documented local Edge fallback
 in `scripts/visual_qa.cjs`; it expects the reader served on127.0.0.1:8763 and the
-existing bundled Playwright path. It is not a browser-portability certification.
+existing bundled Playwright path. Per-unit QA uses an isolated local
+Chromium-family executable (Edge when present, otherwise installed Chrome).
+It is not a browser-portability certification.
 
 ## QA, limits and recovery
 

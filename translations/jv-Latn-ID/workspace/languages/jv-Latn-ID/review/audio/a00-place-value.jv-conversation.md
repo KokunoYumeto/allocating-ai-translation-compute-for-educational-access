@@ -1,0 +1,104 @@
+# Basa Jawa padinan · ngoko
+
+Status: narration draft; not synthesized or listening-reviewed.
+
+## m81243--title
+
+Ayo Nggawe Model Wilangan Cacah
+
+## m81243--fs-id1862565
+
+Sistem wilangan sing dienggo iki jenenge sistem nilai panggonan amarga nilai saben digit gumantung marang panggonane ing sawijining wilangan. Wilangan limang atus telung puluh pitu nilaine beda karo wilangan pitung atus telung puluh lima . Sanajan digite padha, nilaine beda amarga panggonane digit pitu lan lima beda.
+
+## m81243--fs-id1461000
+
+Dhuwit bisa dadi conto nilai panggonan sing wis kulina dideleng. Upamane ing dompet ana telung lembar dhuwit satus dolar Amerika Serikat, pitung lembar dhuwit sepuluh dolar Amerika Serikat, lan patang lembar dhuwit siji dolar Amerika Serikat. Cacahe bisa dideleng ing gambar dhuwit kertas. Dadi, ing dompet kuwi ana dhuwit pira?
+
+## m81243--CNX_BMath_Figure_01_01_002
+
+Iki gambar telung tumpukan dhuwit kertas Amerika Serikat. Saka kiwa menyang tengen: telung lembar dhuwit satus dolar Amerika Serikat, tulisane “Telung lembar dhuwit satus dolar Amerika Serikat; telu ping satus dolar Amerika Serikat padha karo telung atus dolar Amerika Serikat”; pitung lembar dhuwit sepuluh dolar Amerika Serikat, tulisane “Pitung lembar dhuwit sepuluh dolar Amerika Serikat; pitu ping sepuluh dolar Amerika Serikat padha karo pitung puluh dolar Amerika Serikat”; lan patang lembar dhuwit siji dolar Amerika Serikat, tulisane “Patang lembar dhuwit siji dolar Amerika Serikat; papat ping siji dolar Amerika Serikat padha karo papat dolar Amerika Serikat”.
+
+## m81243--fs-id2243766
+
+Etungen dhisik nilai kabeh lembar ing saben jinis dhuwit kertas, banjur tambahna kabeh. Dompet kuwi isine telung atus pitung puluh papat dolar Amerika Serikat .
+
+## m81243--fs-id2438560
+
+Ing gambar ana “telung atus dolar Amerika Serikat ditambah pitung puluh dolar Amerika Serikat ditambah papat dolar Amerika Serikat”. Digit telu ing telung atus dolar Amerika Serikat, digit pitu ing pitung puluh dolar Amerika Serikat, lan digit papat ing papat dolar Amerika Serikat wernane abang; sing liyane ireng. Ing ngisore ana telung atus pitung puluh papat dolar Amerika Serikat. Saben digit abang disambungake nganggo panah menyang digit sing cocog ing telung atus pitung puluh papat dolar Amerika Serikat.
+
+## m81243--fs-id865961
+
+Blok basis sepuluh bisa dienggo cara liya kanggo nggambarake nilai panggonan, kaya ing gambar wujud blok basis sepuluh. Blok iki bisa makili atusan, puluhan, lan satuan. Delengen: siji batang puluhan isine sepuluh satuan, dene siji persegi atusan isine sepuluh puluhan, utawa satus satuan.
+
+## m81243--CNX_BMath_Figure_01_01_004
+
+Ana telung wujud blok basis sepuluh ing gambar. Sing kapisan, siji blok, tulisane “Siji blok makili siji”. Sing kapindho, batang mendatar sing isine sepuluh blok, tulisane “Siji batang makili sepuluh”. Sing katelu, persegi sing ukurane sepuluh ping sepuluh blok, tulisane “Siji persegi makili satus”.
+
+## m81243--fs-id2860981
+
+gambar model wilangan satus telung puluh wolu nuduhake wilangan satus telung puluh wolu sing digambarake nganggo blok basis sepuluh.
+
+## m81243--CNX_BMath_Figure_01_01_005
+
+Ing gambar blok basis sepuluh ana siji persegi atusan ukuran sepuluh ping sepuluh blok, tulisane “siji atusan”; telung batang puluhan, tulisane “telu puluhan”; lan wolung blok satuan, tulisane “wolu satuan”.
+
+Notasi nilai panggonan dienggo nuduhake nilai wilangan satus telung puluh wolu .
+
+## m81243--fs-id2387933
+
+Ing gambar ana “satus ditambah telung puluh ditambah wolu”. Digit siji ing satus, digit telu ing telung puluh, lan digit wolu wernane abang; sing liyane ireng. Ing ngisore ana wilangan satus telung puluh wolu. Saben digit abang disambungake nganggo panah menyang digit sing cocog ing satus telung puluh wolu.
+
+## m81243--fs-id1714120
+
+Tabel.
+Digit: siji; Nilai panggonan: atusan; Wilangan: siji; Nilai: satus; Nilai kabeh: satus
+Digit: telu; Nilai panggonan: puluhan; Wilangan: telu; Nilai: sepuluh; Nilai kabeh: telung puluh
+Digit: wolu; Nilai panggonan: satuan; Wilangan: wolu; Nilai: siji; Nilai kabeh: ditambah wolu
+Nilai kabeh: Kabeh padha karo satus telung puluh wolu
+
+## m81243--fs-id2222880
+
+Anggonen notasi nilai panggonan kanggo nemtokake nilai wilangan sing digambarake nganggo blok basis sepuluh sing katon ing gambar.
+
+Ing gambar blok basis sepuluh ana rong persegi atusan, siji batang puluhan, lan limang blok satuan.
+
+Cara Ngrampungake
+
+Ana loro persegi atusan. Nilai kabeh rong atus .
+
+Ana siji batang puluhan. Nilai kabeh sepuluh .
+
+Ana lima blok satuan. Nilai kabeh lima .
+
+Ing gambar ana “rong atus ditambah sepuluh ditambah lima”. Digit loro ing rong atus, digit siji ing sepuluh, lan digit lima wernane abang; sing liyane ireng. Ing ngisore ana wilangan rong atus limalas. Saben digit abang disambungake nganggo panah menyang digit sing cocog ing rong atus limalas.
+
+Tabel.
+Digit: loro; Nilai panggonan: atusan; Wilangan: loro; Nilai: satus; Nilai kabeh: rong atus
+Digit: siji; Nilai panggonan: puluhan; Wilangan: siji; Nilai: sepuluh; Nilai kabeh: sepuluh
+Digit: lima; Nilai panggonan: satuan; Wilangan: lima; Nilai: siji; Nilai kabeh: ditambah lima
+Nilai kabeh: rong atus limalas
+Blok basis sepuluh kuwi nggambarake wilangan rong atus limalas .
+
+## m81243--fs-id835824
+
+Anggonen notasi nilai panggonan kanggo nemtokake nilai wilangan sing digambarake nganggo blok basis sepuluh sing katon ing gambar.
+
+Ing gambar blok basis sepuluh ana siji persegi atusan, pitung batang puluhan, lan nem blok satuan.
+
+Wangsulan.
+
+satus pitung puluh enem
+
+## m81243--fs-id2269666
+
+Anggonen notasi nilai panggonan kanggo nemtokake nilai wilangan sing digambarake nganggo blok basis sepuluh sing katon ing gambar.
+
+Ing gambar blok basis sepuluh ana rong persegi atusan, telung batang puluhan, lan pitung blok satuan.
+
+Wangsulan.
+
+rong atus telung puluh pitu
+
+## m81243--eip-id1168898089706
+
+Kagiyatan Matematika Manipulatif Garis Wilangan—Bagean siji bisa mbantu supaya luwih ngerti wilangan asli lan wilangan cacah.

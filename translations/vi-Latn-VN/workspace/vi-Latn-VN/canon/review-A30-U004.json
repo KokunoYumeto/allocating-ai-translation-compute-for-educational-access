@@ -1,0 +1,70 @@
+{
+  "unit": "A30-U004",
+  "date": "2026-08-30",
+  "translation_sha256": "26995ddf17243bc57ec0dc00eee054eea1d22be3bb0ddb3ae25ea606d6dcad92",
+  "previous_verified_translation_sha256": "bd8788f884e6ed99c686fd8324cfc7260a19b8158255d1f34107b3666e07e033",
+  "root_table_layout_review_2026_08_31": "Module audit found Pandoc had split Table11 and12 raw MathML headers across HTML div/paragraph boundaries. Root reread actual table source and adjacent problem/solution, moved all four unchanged source expressions to labeled prose immediately above the table, and used matching n/g(n) column labels. All five ordered pairs1:8,2:6,3:7,4:6,5:8 remain unchanged. Actual HUST OCR08 reopened during final wording review; no mathematical change. New builder validation rejects malformed MathML independently of marker counts.",
+  "author_reviewed_translation_sha256": "48f0aade37aee7422a170114b4634e2a492e8c3e722ba1fe861dc7fd6fb07105",
+  "examples_consulted": [
+    "VI-C01",
+    "VI-C02",
+    "VI-C03",
+    "VI-C04",
+    "VI-C05",
+    "VI-C06"
+  ],
+  "draft_checked": true,
+  "final_checked": true,
+  "root_content_review": "Read the entire Vietnamese draft, all121 original MathML expressions and all four original images; reread actual HUST OCR07–09 and native domain/function/inverse passages. Added an answer navigation link and corrected figure006 alt from claiming printed coordinate labels to describing the points it passes through. No formula/data changes. Final_checked means content/canon acceptance; build and visual acceptance are separate receipts.",
+  "author_final_checked": true,
+  "stages": [
+    {
+      "stage": "original instructions and before drafting",
+      "note": "Read AGENTS.md, USER_INSTRUCTIONS_VERBATIM.md, FULL_ASSIGNMENT_USER_INSTRUCTION.md, GOAL.md, canon/README.md, terminology.csv and U002 conventions. Reopened coordinating task [local-task-id] via read_thread, filtered and read actual user messages. Read full HUST OCR pages 7 and 8 and native text lines 151–246, including the mapping/formula distinction, domain/range vocabulary, worked-answer forms, and inverse restrictions (VI-C01–C06)."
+    },
+    {
+      "stage": "definitions, substitution and equation solutions",
+      "note": "After drafting the algebraic portions, reopened HUST OCR pages 7–8 and native lines 205–245. Used tính giá trị của hàm số for evaluate and giải phương trình/tìm đầu vào for solve; kept f distinct from its value, and source radicals/powers intact. HUST is a language witness, never mathematical authority."
+    },
+    {
+      "stage": "tables, graph examples and source answers",
+      "note": "Reread domain/range and worked-answer witnesses while completing the table/graph portion. Repaired source wording that confuses a single real output with the finite range, with an explicit clarification. Source answers are labeled Đáp án nguồn; all expanded solutions are labeled Giải thích bổ sung. Retained every source formula occurrence, pet-table datum and graph answer."
+    },
+    {
+      "stage": "author final canon review",
+      "note": "After the complete draft, reopened both OCR files and native lines 154–162 and 221–245. Rechecked tập xác định/tập giá trị, hàm số versus formula, and lời giải. After final minor title/self-assessment amendments, reopened native lines 154–162 and 228–240 and reran all 329 checks. Bound this receipt to the final authored draft hash."
+    },
+    {
+      "stage": "independent source and mathematical review",
+      "note": "Independent read-only agents compared all 121 EN/ID math occurrences, inspected all four images, verified seven worked examples and five answers, and reviewed the complete draft. Applied their minor refinements: consistent bạn address; Figure007 axis labels x/f(x); Figure008 alt describes only the visible point, not nonexistent guide lines. Root integration, reader build and visual QA remain pending; final_checked intentionally false."
+    }
+  ],
+  "ocr_sha256": {
+    "hust-07.ocr.txt": "a93f4fdf9f7e4606386cd27b026138a3e00c676733ee8666beecd9f9f7545353",
+    "hust-08.ocr.txt": "8791a452903eeca13238095063a51227da0cfd6c81fc4bfa19ac73f104d1fa6e"
+  },
+  "native_text_sha256": {
+    "hust-giai-tich-1.native.txt": "8e810df28f8051bf1db67cc7e19855f9aa0b203c0ef7273dcf5c85dce0cdb38e"
+  },
+  "source_section": "m49301/fs-id1165137503241",
+  "stop_before": "fs-id1165135422920",
+  "decisions": [
+    "Translate the complete contiguous source section, including four nested subsections; do not stop at an inventory or imply the assignment is complete.",
+    "Preserve all 121 source MathML occurrences exactly once through source-bound placeholders; only mtext is localized by the supplied registry map.",
+    "Keep source Try It IDs out of numerical order; visible Vietnamese sequence is Tự thử4–8 after U003's Tự thử3.",
+    "Make h≠0 explicit as a labeled supplement for the difference quotient. State nonzero divisor and nonzero multiplication factor when requiring equivalent equation transformations.",
+    "Circle counterexample uses x=0 with two distinct outputs; distinguish interior -1<x<1, endpoints ±1, and no real outputs for |x|>1. Do not imply every real input has two outputs.",
+    "Cube-root answer is ∛x/2, not sqrt(x)/2, x^(3/2), or ±∛x/2; preserve original MathML.",
+    "Implicit-rule Q&A says no simple algebraic formula, not no explicit representation of any kind. Quy tắc ẩn is provisional translator wording; VI-C01 witnesses the function/formula distinction, not this exact term.",
+    "Pet-memory claims are framed as unverified illustrative claims in the source; preserve 2014 citation and all numeric values. Do not perform a new biology or license audit.",
+    "Retain 0.008/0.083 decimal-point notation and explain rounding; 2160/3600 hours use an explicit 30-day-month convention. Preserve source spelling beta fish in a note while labeling the animal cá betta.",
+    "Repair English Table10 accessibility summary 2100 to visible/prose2160, explicitly disclose correction. Repair Figure009 source alt vertex(0,1) to actual(1,0), explicitly disclose correction.",
+    "Clarify that P's range is the finite set of table outputs, not a single real number or all reals; preserve broad labeled-input mapping usage established in U001.",
+    "Transpose Tables11/12 to two columns without changing pair order. Preserve repeated Table12 but identify it as the unnumbered repeated source table, not a new numbered table.",
+    "All original images remain unedited; original attribution, component notices, non-endorsement and ShareAlike preserved.",
+    "Do not claim native-speaker review, completed reader/visual validation, or completion of the entire multi-book assignment."
+  ],
+  "canon_limit": "Actual source-language witnesses were read, not only canon summaries. OCR formula corruption is known; EN MathML remains mathematical authority. No reference exercise is incorporated and sources are not used as training data.",
+  "native_speaker_review": "not_performed",
+  "remaining_review": "Unit source/draft acceptance and offline reader/visual checks complete; module-wide acceptance recorded separately. No native-speaker review."
+}

@@ -1,0 +1,710 @@
+{
+  "schema": "pnb-source-scope-plan-v1",
+  "unit": "B10-002",
+  "locale": "pnb-Arab-PK",
+  "status": "Input freeze: full559-slot translation,10original notes,actualdraft/revision/QAcanon,6,798checks/30detachedmutations; twoidenticalread-onlyQAruns. Production notyetbuilt.",
+  "scope": "All earlier Chapter1 title, two index records and four opening paragraphs, then complete Section1.1 Mathematical Statements, all three subsections/objectives/reading questions and both active practice/additional-exercise includes. Six retained canonical cached WeBWorK static versions are separately bound; no runtime execution.",
+  "first_outside": {
+    "file": "source/sec_logic-implications.ptx",
+    "xml_id": "sec_logic-implications",
+    "title": "Implications",
+    "original_include": "<xi:include href=\"./sec_logic-implications.ptx\" />"
+  },
+  "authority": {
+    "lock_path": "languages/pnb-Arab-PK/sources.lock.json",
+    "lock_raw_sha256": "c8259e2caca9674b89860e9ac03bfaad3db56e61f000fd9081003bc8b514efde",
+    "canonical": {
+      "repository": "https://github.com/oscarlevin/discrete-book.git",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "tree": "5b8209e92286e967a18114eea99c11ba68b8a162",
+      "local_path": "downloads/upstream/discrete-book"
+    },
+    "comparison": {
+      "repository": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id.git",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "tree": "457bb9f48aefe119f3c3a48b485f0c1198d64c3d",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id"
+    },
+    "heads_and_trees_reverified": true,
+    "hash_policy": "Record exact git-show blob bytes, SHA-256 and Git blob SHA-1 separately from working-tree bytes. Selected PTX/SVG/TEX/config working files normalize CRLF to the pinned Git text bytes in memory. Do not normalize binary images, and do not assume every tracked file uses LF: canonical root LICENSE itself contains CRLF. No source files were rewritten.",
+    "edition_evidence": "source/dmoi.ptx subtitle, source/bookinfo.ptx blurb and source/frontmatter.ptx identify the active fourth edition. The root README's generic third-edition/main-branch description is stale for this pinned source and is not the edition selector.",
+    "selected_working_files_logical_lf_match_pins": true
+  },
+  "source_files": [
+    {
+      "role": "canonical",
+      "repository_path": "source/ch_logic.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/ch_logic.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "491e05adc9aafc8325743feb4156db8bca11402758cc3c2c0653c39e4b86b674",
+      "bytes": 2801,
+      "git_blob_sha1": "94a809824debbeaebc641f97fc437ca68ee836c4",
+      "working_raw_sha256": "6786bbdc731e25e183e2a57e36fa49532d4ebe0020aadb188f62464b1002ded8",
+      "working_raw_bytes": 2838
+    },
+    {
+      "role": "canonical",
+      "repository_path": "source/sec_logic-statements.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/sec_logic-statements.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "147fdb79e8c6a4e6d6ca5d647a5e6a1f051d879671a21811e625eab94c1de43b",
+      "bytes": 50907,
+      "git_blob_sha1": "1707fcc62379944e287f298a7ab1e544e4f179c0",
+      "working_raw_sha256": "935d3f32a978b8d9b84a11eeabd9d59e34d2d1b8f095646335bf9d47d8e0bd7f",
+      "working_raw_bytes": 52295
+    },
+    {
+      "role": "canonical",
+      "repository_path": "source/practice/logic-statements.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/practice/logic-statements.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "351fb85f51bfa677c1553632b58af0e2d49a2fd993cf00da0e5af7a2237a32ea",
+      "bytes": 9139,
+      "git_blob_sha1": "51915a5477a4859ee494d422ef859b26e5cd86f3",
+      "working_raw_sha256": "852579a6a159e0dca418599717f02400131fd93765958e8b68d9240fb39c4c71",
+      "working_raw_bytes": 9433
+    },
+    {
+      "role": "canonical",
+      "repository_path": "source/exercises/logic-statements.ptx",
+      "local_path": "downloads/upstream/discrete-book/source/exercises/logic-statements.ptx",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "6895c72d095c6327786ff47b0a95ed8b794ff115de735da1a9c35bc25fe00383",
+      "bytes": 3657,
+      "git_blob_sha1": "8eca2bee71099e32a2273ddfaaedf07814343045",
+      "working_raw_sha256": "67e827f1ce4fcf9acbf7d093d216e3859494a83e812153f59ecb61aaf65ab647",
+      "working_raw_bytes": 3808
+    },
+    {
+      "role": "canonical",
+      "repository_path": "source/practice/wwpg/statements-quant1.pg",
+      "local_path": "downloads/upstream/discrete-book/source/practice/wwpg/statements-quant1.pg",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "659b1ec51f8bd668c90c446495c85179a7051589e1f6b5c7cc75b171e43bab3e",
+      "bytes": 4199,
+      "git_blob_sha1": "38498d5c55cc1e1699407b17ff304acc29d58bbe",
+      "working_raw_sha256": "de44cedefd1e97515936b0a8623955cfc2336b0e93d5fdb1a005e1f1e2890363",
+      "working_raw_bytes": 4318
+    },
+    {
+      "role": "canonical",
+      "repository_path": "source/practice/wwpg/statements-quant2.pg",
+      "local_path": "downloads/upstream/discrete-book/source/practice/wwpg/statements-quant2.pg",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "3160b52ef7b9658f5b0922567d5f2957716a0d8c8caaf253a7d2c99eb513a892",
+      "bytes": 4198,
+      "git_blob_sha1": "9a0c9b064add5a36b2bed4d8f7acde87f03c58b5",
+      "working_raw_sha256": "4a654208e7a253e5c2d4f26b8c03be2359035a6792b261007ff2981f1e1eab45",
+      "working_raw_bytes": 4316
+    },
+    {
+      "role": "canonical",
+      "repository_path": "generated-assets/rs/webwork/webwork-representations.xml",
+      "local_path": "downloads/upstream/discrete-book/generated-assets/rs/webwork/webwork-representations.xml",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "sha256": "f24b9c6d4ff24dca505faed027234af395ed8427020735ab877398a9670dd864",
+      "bytes": 729050,
+      "git_blob_sha1": "8a9480a08551f318357190d5bdd8aa702262ed33",
+      "working_raw_sha256": "25e13d53fbde1aac495442686fa8f558b03b1b16e65045d32d8e0643a4759ca5",
+      "working_raw_bytes": 750499
+    },
+    {
+      "role": "comparison",
+      "repository_path": "source/ch_logic.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/ch_logic.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "a80386d4ad16818780d2ee777e8fc7bcdb4d7308d0d6723303fde0a126f9e5d2",
+      "bytes": 3182,
+      "git_blob_sha1": "7c72fc2d432ebdaa6d8fe0776273183d450b7541",
+      "working_raw_sha256": "449a5de957865ebe3a23d06445b0df89ecc3772340e67922e949589c876200be",
+      "working_raw_bytes": 3218
+    },
+    {
+      "role": "comparison",
+      "repository_path": "source/sec_logic-statements.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/sec_logic-statements.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "aa57a97eeccc60044aff99f7e0b59948fc200c93a43476addf98351b3feb6b5e",
+      "bytes": 54801,
+      "git_blob_sha1": "8fdb70cd6096f6167c336703a3d3f74230485a43",
+      "working_raw_sha256": "2a9e5b169219d0c09ac9379620f3d2d14dd79b793ec9ba715b64f8f18d8113c1",
+      "working_raw_bytes": 56189
+    },
+    {
+      "role": "comparison",
+      "repository_path": "source/practice/logic-statements.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/practice/logic-statements.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "00832f317eb8f5c6a5dcea509c80e8228eac9c41de335b744245a88e264c319e",
+      "bytes": 9836,
+      "git_blob_sha1": "8d4acfb4bbc0795743fc4d7d26099dc049a691ff",
+      "working_raw_sha256": "e5d494636bf1cb8d70dab2f29cf9734be08c0d04e6283225e3061c8a4cee1b9e",
+      "working_raw_bytes": 10138
+    },
+    {
+      "role": "comparison",
+      "repository_path": "source/exercises/logic-statements.ptx",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/exercises/logic-statements.ptx",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "e695c97e184e58b46ec6651d767dfd5b94b24f90a01d246110b647138a7c3358",
+      "bytes": 3916,
+      "git_blob_sha1": "43e67f57ca2cb7c3172741a37814d5aedef47000",
+      "working_raw_sha256": "d0ee92bcebc4919b83672d052c919faa01dcf0118acaba659fa1f4ef77d30998",
+      "working_raw_bytes": 4067
+    },
+    {
+      "role": "comparison",
+      "repository_path": "source/practice/wwpg/statements-quant1.pg",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/practice/wwpg/statements-quant1.pg",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "a5d511707e890f0034226ed3558993638c92eab3d8e6b5f7b3d29a5bf034564c",
+      "bytes": 4229,
+      "git_blob_sha1": "87ab241204df8f9e1376664210681cd033a16f26",
+      "working_raw_sha256": "de486624d4ac5890bc860c5fc34af9632e2f6bc68dceb870a65de24031e75491",
+      "working_raw_bytes": 4348
+    },
+    {
+      "role": "comparison",
+      "repository_path": "source/practice/wwpg/statements-quant2.pg",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/source/practice/wwpg/statements-quant2.pg",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "57f178ac634a837ce2caa94733f1ef50416c0e14ceeaa75440592f5e12d7ae2d",
+      "bytes": 4228,
+      "git_blob_sha1": "85ff79ada2c921fdddddf4875e85166acf0197ed",
+      "working_raw_sha256": "4ce6073a1102eb2b3f9720b402e23e212164526e9badd28e3915f427934954e0",
+      "working_raw_bytes": 4346
+    },
+    {
+      "role": "comparison",
+      "repository_path": "generated-assets/rs/webwork/webwork-representations.xml",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id/generated-assets/rs/webwork/webwork-representations.xml",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "sha256": "f24b9c6d4ff24dca505faed027234af395ed8427020735ab877398a9670dd864",
+      "bytes": 729050,
+      "git_blob_sha1": "8a9480a08551f318357190d5bdd8aa702262ed33",
+      "working_raw_sha256": "25e13d53fbde1aac495442686fa8f558b03b1b16e65045d32d8e0643a4759ca5",
+      "working_raw_bytes": 750499
+    }
+  ],
+  "expected_slots": 559,
+  "canonical_ptx_math": 279,
+  "cached_static_math": 58,
+  "source_counts": {
+    "chapter": 1,
+    "title": 15,
+    "idx": 81,
+    "h": 97,
+    "see": 7,
+    "introduction": 5,
+    "p": 215,
+    "m": 271,
+    "q": 77,
+    "em": 45,
+    "xref": 8,
+    "section": 1,
+    "objectives": 1,
+    "ol": 12,
+    "li": 74,
+    "subsection": 3,
+    "investigation": 1,
+    "blockquote": 2,
+    "exercise": 23,
+    "statement": 66,
+    "response": 10,
+    "definition": 6,
+    "term": 40,
+    "aside": 1,
+    "example": 5,
+    "tabular": 7,
+    "row": 30,
+    "cell": 79,
+    "notation": 5,
+    "usage": 5,
+    "description": 5,
+    "solution": 12,
+    "remark": 1,
+    "worksheet": 1,
+    "choices": 8,
+    "choice": 34,
+    "feedback": 22,
+    "ul": 4,
+    "ellipsis": 8,
+    "fn": 1,
+    "figure": 1,
+    "caption": 1,
+    "sidebyside": 1,
+    "col": 14,
+    "me": 8,
+    "assemblage": 2,
+    "paragraphs": 1,
+    "reading-questions": 1,
+    "matches": 2,
+    "match": 8,
+    "premise": 8,
+    "exercises": 2,
+    "webwork": 6,
+    "{http://www.w3.org/2001/XInclude}include": 2,
+    "task": 6,
+    "hint": 1
+  },
+  "cache_counts": {
+    "static": 6,
+    "statement": 6,
+    "p": 68,
+    "ol": 6,
+    "li": 44,
+    "m": 58,
+    "lq": 4,
+    "rq": 4,
+    "ul": 6,
+    "answer": 6,
+    "solution": 2,
+    "em": 1,
+    "tabular": 1,
+    "col": 5,
+    "row": 5,
+    "cell": 25
+  },
+  "source_xml_ids": [
+    {
+      "file": "source/ch_logic.ptx",
+      "id": "ch_logic",
+      "path": "/chapter",
+      "tag": "chapter"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "sec_logic-statements",
+      "path": "/section",
+      "tag": "section"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "def-argument",
+      "path": "/section/subsection[1]/definition[1]",
+      "tag": "definition"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "def-statement",
+      "path": "/section/subsection[1]/definition[2]",
+      "tag": "definition"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "PA-logic-statements",
+      "path": "/section/subsection[1]/worksheet[1]",
+      "tag": "worksheet"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "atomic-molecular-statements",
+      "path": "/section/subsection[2]",
+      "tag": "subsection"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "def-connectives-truth",
+      "path": "/section/subsection[2]/definition[2]",
+      "tag": "definition"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "fig-truth-tables",
+      "path": "/section/subsection[2]/figure[1]",
+      "tag": "figure"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "subsec_logic-statements-quant",
+      "path": "/section/subsection[3]",
+      "tag": "subsection"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "def-quantifiers",
+      "path": "/section/subsection[3]/definition[1]",
+      "tag": "definition"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "assemblage-universal-rot",
+      "path": "/section/subsection[3]/assemblage[1]",
+      "tag": "assemblage"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "assemblage-existential-rot",
+      "path": "/section/subsection[3]/assemblage[2]",
+      "tag": "assemblage"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "pars-implicituantifiers",
+      "path": "/section/subsection[3]/paragraphs[1]",
+      "tag": "paragraphs"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "def-univerals-generalization",
+      "path": "/section/subsection[3]/paragraphs[1]/definition[1]",
+      "tag": "definition"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "id": "rqs-logic-statements",
+      "path": "/section/reading-questions[1]",
+      "tag": "reading-questions"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "id": "practice_intro-statements",
+      "path": "/exercises",
+      "tag": "exercises"
+    },
+    {
+      "file": "source/exercises/logic-statements.ptx",
+      "id": "exercises_intro-statements",
+      "path": "/exercises",
+      "tag": "exercises"
+    }
+  ],
+  "exercise_label_anchors": [
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "label": "ip_sec_logic-statements",
+      "path": "/section/subsection[1]/exercise[1]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "label": "pa-logic-statements-vs-sentences",
+      "path": "/section/subsection[1]/worksheet[1]/exercise[1]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "label": "pa-logic-statements-tf-and",
+      "path": "/section/subsection[1]/worksheet[1]/exercise[2]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "label": "pa-logic-statements-tf-if-then",
+      "path": "/section/subsection[1]/worksheet[1]/exercise[3]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "label": "pa-logic-statement-tf-or-all",
+      "path": "/section/subsection[1]/worksheet[1]/exercise[4]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "label": "rq-logic-statements-connective-type",
+      "path": "/section/reading-questions[1]/exercise[1]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "label": "rq-logic-statements-free-vars",
+      "path": "/section/reading-questions[1]/exercise[2]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "label": "rq-logic-statements-q",
+      "path": "/section/reading-questions[1]/exercise[3]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "ww-statements-classify",
+      "path": "/exercises/exercise[1]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "ww-statements-classify-type",
+      "path": "/exercises/exercise[2]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "ww-statements-favnum",
+      "path": "/exercises/exercise[3]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "rs-statements-quant-translate",
+      "path": "/exercises/exercise[4]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "rs-statements-quant-neg",
+      "path": "/exercises/exercise[5]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "rs-statements-quant-interpretation",
+      "path": "/exercises/exercise[6]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "ww-statements-quant1",
+      "path": "/exercises/exercise[7]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "ww-statements-quant2",
+      "path": "/exercises/exercise[9]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "rs-statements-quant-free-variables",
+      "path": "/exercises/exercise[11]",
+      "tag": "exercise"
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "label": "ww-statements-binary-pred",
+      "path": "/exercises/exercise[12]",
+      "tag": "exercise"
+    }
+  ],
+  "list_numbering_patterns": [
+    {
+      "file": "generated-assets/rs/webwork/webwork-representations.xml",
+      "label": "a.",
+      "path": "/webwork-representations/webwork-reps[4]/static[1]/statement[1]/p[1]/ol[1]",
+      "tag": "ol"
+    },
+    {
+      "file": "generated-assets/rs/webwork/webwork-representations.xml",
+      "label": "a.",
+      "path": "/webwork-representations/webwork-reps[5]/static[1]/statement[1]/p[1]/ol[1]",
+      "tag": "ol"
+    }
+  ],
+  "cache_binding": [
+    {
+      "owner": "source/practice/logic-statements.ptx#/exercises/exercise[1]/webwork[1]",
+      "cache_path": "generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[1]/static[1]",
+      "cache_ww_id": "webwork-1",
+      "cache_xml_id": "extracted-webwork-1",
+      "seed": "1",
+      "source": "Contrib/DMOI/0-Introduction_and_Preliminaries/0_2-Mathematical_Statements/0_2_1.pg",
+      "parse_text_source": null,
+      "static_tree_sha256": "f0ba7ad054f35cf20d395d505137828aa36e8f14ae7b3e7b1e6124be1dc9cfbc",
+      "inert_pg_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "owner": "source/practice/logic-statements.ptx#/exercises/exercise[2]/webwork[1]",
+      "cache_path": "generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[2]/static[1]",
+      "cache_ww_id": "webwork-2",
+      "cache_xml_id": "extracted-webwork-2",
+      "seed": "2",
+      "source": "Contrib/DMOI/0-Introduction_and_Preliminaries/0_2-Mathematical_Statements/0_2_2.pg",
+      "parse_text_source": null,
+      "static_tree_sha256": "a98f2f470d011027fb589794dcd293ff217af68259a36fdfffd3062edb4c79bd",
+      "inert_pg_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "owner": "source/practice/logic-statements.ptx#/exercises/exercise[3]/webwork[1]",
+      "cache_path": "generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[3]/static[1]",
+      "cache_ww_id": "webwork-3",
+      "cache_xml_id": "extracted-webwork-3",
+      "seed": "3",
+      "source": "Contrib/DMOI/0-Introduction_and_Preliminaries/0_2-Mathematical_Statements/0_2_4.pg",
+      "parse_text_source": null,
+      "static_tree_sha256": "e1cb5164b2129b6dbda420088733060639ae54ce647c8de276b655ce47721f2b",
+      "inert_pg_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "owner": "source/practice/logic-statements.ptx#/exercises/exercise[7]/webwork[1]",
+      "cache_path": "generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[4]/static[1]",
+      "cache_ww_id": "webwork-4",
+      "cache_xml_id": "extracted-webwork-4",
+      "seed": "4",
+      "source": null,
+      "parse_text_source": "source/practice/wwpg/statements-quant1.pg",
+      "static_tree_sha256": "598c08092b7fe12994336d6789f70b0fdc4f73dd8c49bf842bbe835b03d00dc1",
+      "inert_pg_text_sha256": "13ea1a0a6366a1053809cd1f3290f62624e929097b2188ec96a2b5b2b7048490"
+    },
+    {
+      "owner": "source/practice/logic-statements.ptx#/exercises/exercise[9]/webwork[1]",
+      "cache_path": "generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[5]/static[1]",
+      "cache_ww_id": "webwork-5",
+      "cache_xml_id": "extracted-webwork-5",
+      "seed": "5",
+      "source": null,
+      "parse_text_source": "source/practice/wwpg/statements-quant2.pg",
+      "static_tree_sha256": "33051fbefc365527430d85590de8433e2546762fdff33c0ea7d3ea06cf70a6c7",
+      "inert_pg_text_sha256": "cd1f42afafa45ea0c48d23cfaaf7d298b95d1cd4504780be6584b08d7b578bcb"
+    },
+    {
+      "owner": "source/practice/logic-statements.ptx#/exercises/exercise[12]/webwork[1]",
+      "cache_path": "generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[6]/static[1]",
+      "cache_ww_id": "webwork-6",
+      "cache_xml_id": "extracted-webwork-6",
+      "seed": "6",
+      "source": "Contrib/DMOI/0-Introduction_and_Preliminaries/0_2-Mathematical_Statements/0_2_15.pg",
+      "parse_text_source": null,
+      "static_tree_sha256": "ef0bdf1ec028b6f3726335ef4946f7c98422c8c8543295228791a3a6feeb80b8",
+      "inert_pg_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "comparison_math_differences": [
+    {
+      "file": "source/ch_logic.ptx",
+      "canonical_math": 5,
+      "comparison_math": 5,
+      "differences": []
+    },
+    {
+      "file": "source/sec_logic-statements.ptx",
+      "canonical_math": 184,
+      "comparison_math": 184,
+      "differences": [
+        {
+          "path": "/section/subsection[3]/p[11]/m[1]",
+          "canonical": "x",
+          "comparison": "A"
+        },
+        {
+          "path": "/section/subsection[3]/p[11]/m[2]",
+          "canonical": "y",
+          "comparison": "B"
+        }
+      ]
+    },
+    {
+      "file": "source/practice/logic-statements.ptx",
+      "canonical_math": 68,
+      "comparison_math": 68,
+      "differences": [
+        {
+          "path": "/exercises/exercise[6]/choices[1]/choice[5]/statement[1]/p[1]/m[3]",
+          "canonical": "\\exists y \\forall x",
+          "comparison": "\\exists y \\forall x P(x,y)"
+        }
+      ]
+    },
+    {
+      "file": "source/exercises/logic-statements.ptx",
+      "canonical_math": 22,
+      "comparison_math": 22,
+      "differences": []
+    }
+  ],
+  "reader_requirements": [
+    "Full three-subsection hierarchy and23exercises, including six WeBWorK owners and two interactive/static source pairs; keep cache identity and fixed seeds explicit.",
+    "No upstream Perl/PG/TeX/PreTeXt/Runestone execution. Retain both local PG files as inert source, not executed or translated code. Cached static prompts/solutions are translated separately; not a claim that all randomized instances are translated.",
+    "Seven PTX tables and one cached table, 104cells; lone figure contains truth tables, not an image. No image assets to copy.",
+    "337exact TeX nodes (279PTX+58cache). Existing001parser is insufficient: logic macros, quantifiers, closed intervals, unary negation, different text{} tokens, negative thin space and formatting need fresh observed-grammar study.",
+    "Original XML IDs, exercise-label anchors and list-label numberingpatterns are distinct. Full source owntext/tails/child order and choice/match/feedback associations must survive.",
+    "Canonical source errors stay traceable and translated faithfully; visible separately original corrections must prevent misinformation. Indonesian corrections are comparison evidence, not authority substitutions.",
+    "Source negation table includes a final single empty cell; do not silently drop it. Cache six-record container has six original cache XML IDs separately from the17 authored XML IDs; preserve both identities without conflating them.",
+    "Observed exactTeX grammar has123unique raw forms /337owners andcommands: !, cdot, cdots, exists, forall, ge, gt, iff, imp, ldots, le, lt, neg, text, therefore, vee, wedge. Incomplete source ∃y∀x stays incomplete; note supplies intendedP(x,y), never a silent parser insertion."
+  ],
+  "canon_draft_receipt": "languages/pnb-Arab-PK/canon/receipts/B10-002-draft-20260831T025813772849Z.json",
+  "draft_progress": {
+    "drafted_first": 559,
+    "total": 559,
+    "next_index": null,
+    "actual_comparison_read": "All559slots read:466authored canonical/Indonesian pairs plus93cachedstatic slots. Fullcacheblob canonical/comparison isbyteidentical English, not an Indonesian translation.",
+    "not_yet_claimed": [
+      "Production/TeXconversion",
+      "Independent renderer/math-tree review",
+      "BrowservisualQA",
+      "Native-speaker/educator/assistive-technologyreview",
+      "WholeChapter1orbookcompletion"
+    ]
+  },
+  "inventory_program": "\nfrom pathlib import Path\nfrom lxml import etree as E\nimport json,hashlib,re,subprocess,collections,html,sys,copy\nsys.stdout.reconfigure(encoding='utf-8')\nB=Path('languages/pnb-Arab-PK');P=json.loads((B/'plans/B10-start.json').read_text(encoding='utf-8'))\ndef sh(b):return hashlib.sha256(b).hexdigest()\ndef git(repo,*a):return subprocess.check_output(['git','-C',repo,*a])\ndef xp(e):return '/'+e.tag if e.getparent() is None else xp(e.getparent())+'/'+e.tag+'['+str(1+sum(s.tag==e.tag for s in e.itersiblings(preceding=True)))+']'\ndef tree(e):return [e.tag,dict(e.attrib),e.text,[[tree(c),c.tail] for c in e]]\ndef jsh(o):return sh(json.dumps(o,ensure_ascii=False,separators=(',',':')).encode())\nlockraw=(B/'sources.lock.json').read_bytes()\nassert sh(lockraw)=='c8259e2caca9674b89860e9ac03bfaad3db56e61f000fd9081003bc8b514efde'\nlock=json.loads(lockraw)\nfor role,lockrole in [('canonical','B10 upstream'),('comparison','B10')]:\n a=P['authority'][role]; row=next(x for x in lock['repositories'] if x['role']==lockrole)\n assert [row['local_path'],row['url'],row['commit'],row['tree']]==[a['local_path'],a['repository'],a['commit'],a['tree']]\nassert P['authority']['canonical']['commit']=='82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799'\nassert P['authority']['comparison']['commit']=='e94905932301e699b7c4d44e88ec54e972b886b6'\nparser=E.XMLParser(remove_comments=True,resolve_entities=False,no_network=True)\nnames=['source/ch_logic.ptx','source/sec_logic-statements.ptx','source/practice/logic-statements.ptx','source/exercises/logic-statements.ptx','source/practice/wwpg/statements-quant1.pg','source/practice/wwpg/statements-quant2.pg','generated-assets/rs/webwork/webwork-representations.xml']\nfiles=[];raws={};roots={};comp={};allraw={}\nfor role in ['canonical','comparison']:\n a=P['authority'][role];repo=a['local_path'];assert git(repo,'rev-parse','HEAD').decode().strip()==a['commit'];assert git(repo,'rev-parse','HEAD^{tree}').decode().strip()==a['tree']\n for f in names:\n  raw=git(repo,'show',a['commit']+':'+f);working=(Path(repo)/f).read_bytes();assert working.replace(b'\\r\\n',b'\\n')==raw\n  files.append(dict(role=role,repository_path=f,local_path=(Path(repo)/f).as_posix(),commit=a['commit'],sha256=sh(raw),bytes=len(raw),git_blob_sha1=git(repo,'rev-parse',a['commit']+':'+f).decode().strip(),working_raw_sha256=sh(working),working_raw_bytes=len(working)))\n  allraw[role+'#'+f]=raw.decode()\n  if role=='canonical':raws[f]=raw.decode()\n  if f.endswith('.ptx'):\n   (roots if role=='canonical' else comp)[f]=E.fromstring(raw,parser)\n  elif f.endswith('.xml'):\n   (roots if role=='canonical' else comp)[f]=E.fromstring(raw,parser)\nchapter=raws['source/ch_logic.ptx']\nfirst='<xi:include href=\"./sec_logic-statements.ptx\"/>'\noutside='<xi:include href=\"./sec_logic-implications.ptx\" />'\nassert chapter.count(first)==1 and chapter.count(outside)==1\nsection=raws['source/sec_logic-statements.ptx']\ninclude_records=[]\nfor f in ['practice/logic-statements.ptx','exercises/logic-statements.ptx']:\n needle='<xi:include href=\"'+f+'\"/>';assert section.count(needle)==1\n content=re.sub(r'^<\\?xml[^>]+>\\s*','',raws['source/'+f],count=1)\n section=section.replace(needle,content)\n include_records.append(dict(owner='source/sec_logic-statements.ptx',href=f,mode='xml-expanded',source='source/'+f))\nwit=chapter[:chapter.index(first)]+re.sub(r'^<\\?xml[^>]+>\\s*','',section,count=1)+'\\n</chapter>\\n'\nw=E.fromstring(wit.encode(),parser)\ncachefile='generated-assets/rs/webwork/webwork-representations.xml';cache=roots[cachefile]\ncaches=list(cache)[:6]\nassert [e.get('ww-id') for e in caches]==['webwork-'+str(i) for i in range(1,7)]\ncache_binding=[]\nwebworks=list(roots['source/practice/logic-statements.ptx'].iter('webwork'))\nassert len(webworks)==6\nfor i,(e,c) in enumerate(zip(webworks,caches),1):\n static=c.find('static');pg=c.find('pg')\n if e.get('source'):assert e.get('source')==static.get('source')==pg.get('source')\n else:\n  inc=e[0];f='source/practice/'+inc.get('href')\n  assert (pg.text or '').strip()==raws[f].strip()\n cache_binding.append(dict(owner='source/practice/logic-statements.ptx#'+xp(e),cache_path=cachefile+'#'+xp(static),cache_ww_id=c.get('ww-id'),cache_xml_id=c.get('{http://www.w3.org/XML/1998/namespace}id'),seed=static.get('seed'),source=e.get('source'),parse_text_source=None if e.get('source') else f,static_tree_sha256=jsh(tree(static)),inert_pg_text_sha256=sh((pg.text or '').encode())))\nfixed={'p','title','fn','shortdescription','h','see','cell','caption'}\nconditional={'li','response','premise','description','usage','feedback'}\ninline={'em','q','term','alert','foreign'}\nspecial={'m':'tex','me':'tex','fn':'footnote','xref':'xref','idx':'index','ol':'child','ul':'child','sidebyside':'child','tabular':'child','notation':'child','midpoint':'symbol','ellipsis':'symbol','mdash':'symbol','lq':'symbol','rq':'symbol'}\ndef blockable(e):\n return e.tag in fixed or (e.tag in conditional and (bool((e.text or '').strip()) or any((c.tail or '').strip() or c.tag in inline|{'m','me'} for c in e)))\nblocks=[];tex=[];terms=[];refs=[];symbols=[];children=[];indices=[]\nselected=[(f,r) for f,r in roots.items() if f.endswith('.ptx')]+[(cachefile,c.find('static')) for c in caches]\nfor f,r in selected:\n for e in r.iter():\n  if not blockable(e):continue\n  k=f+'#'+xp(e);counters=collections.Counter();slots=[];markup=[]\n  def tok(n,kind):\n   i=counters[kind];counters[kind]+=1;t='{{'+kind+':'+str(i)+'}}'\n   rec=dict(token=t,kind=kind,index=i,owner_key=k,source_path=f+'#'+xp(n),source_tag=n.tag,source_attributes=dict(n.attrib),inline_ancestors=[f+'#'+xp(a) for a in reversed(list(n.iterancestors())) if a is not e and e in a.iterancestors()]);slots.append(rec)\n   if kind=='tex':rec.update(raw_tex=n.text or '',tex_sha256=sh((n.text or '').encode()));tex.append(rec)\n   elif kind=='xref':refs.append(rec)\n   elif kind=='index':indices.append(rec)\n   elif kind=='child':children.append(rec)\n   elif kind=='symbol':symbols.append(rec)\n   return t\n  def content(n):\n   out=html.escape(n.text or '',quote=False)\n   for c in n:\n    if c.tag in special:out+=tok(c,special[c.tag])\n    elif c.tag in inline:\n     markup.append(dict(tag=c.tag,path=f+'#'+xp(c),source_text=''.join(c.itertext()),attributes=dict(c.attrib)))\n     if c.tag=='term':\n      i=counters['term'];counters['term']+=1;terms.append(dict(owner_key=k,index=i,source_path=f+'#'+xp(c),raw_source_text=''.join(c.itertext())));out+='<span data-source-term=\"'+str(i)+'\">'+content(c)+'</span>'\n     elif c.tag=='alert':out+='<strong data-source-tag=\"alert\">'+content(c)+'</strong>'\n     elif c.tag=='foreign':out+='<span data-source-tag=\"foreign\">'+content(c)+'</span>'\n     else:out+='<'+c.tag+'>'+content(c)+'</'+c.tag+'>'\n    elif c.tag in fixed|conditional:out+=tok(c,'child')\n    else:raise ValueError(c.tag+' in '+k)\n    out+=html.escape(c.tail or '',quote=False)\n   return out\n  template=re.sub(r'\\s+',' ',content(e)).strip()\n  blocks.append(dict(key=k,tag=e.tag,source_attributes=dict(e.attrib),source_tree_sha256=jsh(tree(e)),source_template=template,slots=slots,inline_markup=markup))\nids=[dict(file=f,id=e.get('{http://www.w3.org/XML/1998/namespace}id'),path=xp(e),tag=e.tag) for f,r in selected for e in r.iter() if e.get('{http://www.w3.org/XML/1998/namespace}id')]\nlabels=[dict(file=f,label=e.get('label'),path=xp(e),tag=e.tag) for f,r in selected for e in r.iter() if e.get('label')]\ndiffs=[]\nfor f,r in roots.items():\n if not f.endswith('.ptx'):continue\n en=list(r.xpath('.//m|.//me'));id=list(comp[f].xpath('.//m|.//me'))\n diffs.append(dict(file=f,canonical_math=len(en),comparison_math=len(id),differences=[dict(path=xp(s),canonical=s.text,comparison=d.text) for s,d in zip(en,id) if s.text!=d.text]))\nout=dict(unit='B10-002',authority=P['authority'],source_files=files,witness=wit,excerpt_bytes=len(wit.encode()),excerpt_sha256=sh(wit.encode()),source_active_tree_sha256=jsh(tree(w)),blocks=blocks,tex=tex,terms=terms,xrefs=refs,index_slots=indices,child_slots=children,symbol_slots=symbols,ids=ids,labels=labels,counts=dict(collections.Counter(e.tag for e in w.iter())),cache_counts=dict(collections.Counter(e.tag for c in caches for e in c.find('static').iter())),cache_binding=cache_binding,includes=include_records,first_outside=dict(file='source/sec_logic-implications.ptx',xml_id='sec_logic-implications',title='Implications',original_include=outside),comparison_math_differences=diffs,selected_cache_xml=[E.tostring(c,encoding='unicode') for c in caches])\n\nmetadata_files=[];metadata_raw={}\nfor role in ['canonical','comparison']:\n a=P['authority'][role]\n for f in ['source/bookinfo.ptx','source/dmoi.ptx']:\n  raw=git(a['local_path'],'show',a['commit']+':'+f)\n  assert (Path(a['local_path'])/f).read_bytes().replace(b'\\r\\n',b'\\n')==raw\n  metadata_files.append(dict(role=role,repository_path=f,sha256=sh(raw),bytes=len(raw),git_blob_sha1=git(a['local_path'],'rev-parse',a['commit']+':'+f).decode().strip()))\n  metadata_raw[role+'#'+f]=raw\ndocinfo=E.fromstring(metadata_raw['canonical#source/bookinfo.ptx'],parser)\nid_docinfo=E.fromstring(metadata_raw['comparison#source/bookinfo.ptx'],parser)\nassert docinfo.findtext('macros')==id_docinfo.findtext('macros')\ncw='<webwork-representations>\\n'+''.join(out['selected_cache_xml'])+'</webwork-representations>\\n'\ncache_witness=E.fromstring((B/'source-excerpts/b10-unit-002-webwork.xml').read_bytes(),parser)\nassert len(cache_witness)==6\nassert [tree(c) for c in cache_witness]==[tree(c) for c in caches]\nout['cache_excerpt_sha256']=sh((B/'source-excerpts/b10-unit-002-webwork.xml').read_bytes().replace(b'\\r\\n',b'\\n'))\nout['cache_excerpt_bytes']=len((B/'source-excerpts/b10-unit-002-webwork.xml').read_bytes().replace(b'\\r\\n',b'\\n'))\nout['cache_record_tree_sha256']=[jsh(tree(c)) for c in caches]\nout['metadata_files']=metadata_files\nout['source_macros']=docinfo.findtext('macros')\nout['source_rename_labels']=[dict(attributes=dict(e.attrib),text=e.text) for e in docinfo.findall('rename')]\nout['source_cross_reference_style']=dict(docinfo.find('cross-references').attrib)\nout['cache_comparison_blob_identical']=allraw['canonical#'+cachefile]==allraw['comparison#'+cachefile]\nout['source_exercises']=[dict(source_path=f+'#'+xp(e),attributes=dict(e.attrib),children=[c.tag for c in e],tree_sha256=jsh(tree(e))) for f,r in selected for e in r.iter('exercise')]\nout['source_tables']=[dict(source_path=f+'#'+xp(e),attributes=dict(e.attrib),row_cell_counts=[len(r.findall('cell')) for r in e.findall('row')],tree_sha256=jsh(tree(e))) for f,r in selected for e in r.iter('tabular')]\nout['choice_and_match_contracts']=[dict(source_path=f+'#'+xp(e),tag=e.tag,attributes=dict(e.attrib),child_paths=[f+'#'+xp(c) for c in e],tree_sha256=jsh(tree(e))) for f,r in selected for e in r.iter() if e.tag in {'choices','choice','matches','match','answer','task','solution','feedback','webwork'}]\nout['observed_tex_commands']=sorted(set(re.findall(r'\\\\([A-Za-z]+|[^A-Za-z\\s])',' '.join(x['raw_tex'] for x in tex))))\nout['tex_unique_count']=len(set(x['raw_tex'] for x in tex))\nledger_selected=[('source/ch_logic.ptx',E.fromstring((chapter[:chapter.index(first)]+'</chapter>').encode(),parser))]+[(f,r) for f,r in selected if f!='source/ch_logic.ptx']\nout['source_structure_ledger']=[dict(source_path=f+'#'+xp(e),tag=e.tag,attributes=dict(e.attrib),own_text=e.text,tail=e.tail,child_paths=[f+'#'+xp(c) for c in e]) for f,r in ledger_selected for e in r.iter()]\n",
+  "existing_notice_policy": "Retain active-fourth-edition framework and already recorded root-license discrepancy from frozen B10 frontmatter. No new audit or clearance determination.",
+  "input_qa_program": "\n# Read-only input QA. exec below runs only this lane's authored inventory program,\n# never pinned upstream code, TeX, Perl, PG, remote grading, or a renderer.\nfrom pathlib import Path\nfrom lxml import etree as E\nimport json,re,hashlib,copy,collections,sys\nsys.stdout.reconfigure(encoding='utf-8')\nB=Path('languages/pnb-Arab-PK')\ndef unique_pairs(items):\n d={}\n for k,v in items:\n  if k in d:raise AssertionError('duplicate JSON key: '+k)\n  d[k]=v\n return d\ndef load_json(s):return json.loads(s,object_pairs_hook=unique_pairs)\nplan=load_json((B/'plans/B10-002-scope.json').read_text(encoding='utf-8'))\nenv={}\nexec(compile(plan['inventory_program'],'<B10-002 authored read-only inventory>','exec'),env)\nO=env['out']; roots=env['roots']; parser=E.XMLParser(resolve_entities=False,no_network=True,remove_comments=True)\nM=load_json((B/'source-excerpts/manifest-b10-unit-002.json').read_text(encoding='utf-8'))\nT=load_json((B/'translations/b10-unit-002.json').read_text(encoding='utf-8'))\nW=(B/'source-excerpts/b10-unit-002.ptx').read_bytes().replace(b'\\r\\n',b'\\n')\nCW=(B/'source-excerpts/b10-unit-002-webwork.xml').read_bytes().replace(b'\\r\\n',b'\\n')\ndef sh(b):return hashlib.sha256(b).hexdigest()\ndef jsh(o):return sh(json.dumps(o,ensure_ascii=False,separators=(',',':')).encode())\ndef tree(e):return [e.tag,dict(e.attrib),e.text,[[tree(c),c.tail] for c in e]]\ndef frag(s):return E.fromstring(('<r>'+s+'</r>').encode(),parser)\nTOKEN=re.compile(r'\\{\\{[a-z]+:\\d+\\}\\}')\ndef events(e):\n result=[]\n def visit(n):\n  if n.tag not in {'r','bdi'}:result.append(('open',n.tag,dict(n.attrib)))\n  result.extend(('slot',s) for s in TOKEN.findall(n.text or ''))\n  for c in n:\n   visit(c);result.extend(('slot',s) for s in TOKEN.findall(c.tail or ''))\n  if n.tag not in {'r','bdi'}:result.append(('close',n.tag))\n visit(e);return result\ndef digits(e):return re.findall(r'\\d+',TOKEN.sub('',''.join(e.itertext())))\nmapping={'source_files':'source_files','source_active_tree_sha256':'source_active_tree_sha256','excerpt_sha256':'excerpt_sha256','excerpt_bytes':'excerpt_bytes','source_blocks':'blocks','tex_slots':'tex','xrefs':'xrefs','source_xml_ids':'ids','counts':'counts','cached_static_counts':'cache_counts','cached_static_bindings':'cache_binding','first_outside':'first_outside','comparison_math_differences':'comparison_math_differences','source_terms':'terms','index_slots':'index_slots','mixed_child_slots':'child_slots','symbol_slots':'symbol_slots','includes':'includes'}\nmapping.update({k:k for k in ['cache_excerpt_sha256','cache_excerpt_bytes','cache_record_tree_sha256','metadata_files','source_macros','source_rename_labels','source_cross_reference_style','cache_comparison_blob_identical','source_exercises','source_tables','choice_and_match_contracts','observed_tex_commands','tex_unique_count','source_structure_ledger']})\ndef validate(m,t,w,cw,seals=True):\n checks=[]\n def need(ok,label):\n  if not ok:raise AssertionError(label)\n  checks.append(label)\n need(t['locale']=='pnb-Arab-PK' and t['unit']=='B10-002' and t['whole_book_translation_complete'] is False,'target identity / incomplete book')\n need(m['whole_assignment_complete'] is False,'assignment not complete')\n need(m['authority']['lock_raw_sha256']=='c8259e2caca9674b89860e9ac03bfaad3db56e61f000fd9081003bc8b514efde','actual lock authority hash')\n for role in ['canonical','comparison']:need(m['authority'][role]==O['authority'][role],'authority tuple '+role)\n need(t['work']=='Discrete Mathematics: An Open Introduction, Fourth Edition','correct work, not auxiliary OpenLogic')\n need(list(t['source_blocks'])==[b['key'] for b in O['blocks']]==m['expected_source_keys'],'all exact keys/order')\n need(len(t['source_blocks'])==559 and len(O['tex'])==337 and O['tex_unique_count']==123,'fixed full scope counts')\n need(len(m['source_xml_ids'])==17 and len(m['exercise_label_anchors'])==18,'ID versus exercise anchors')\n need(m['exercise_label_anchors']==[r for r in O['labels'] if r['tag']=='exercise'],'all exercise labels/order')\n need(m['list_numbering_patterns']==[r for r in O['labels'] if r['tag']=='ol'],'list patterns not anchors')\n for mk,ok in mapping.items():\n  need(m[mk]==O[ok],'source-derived '+mk)\n  if isinstance(O[ok],list):\n   for i,(a,b) in enumerate(zip(m[mk],O[ok])):need(a==b,mk+' record '+str(i))\n need(m['declared_assets']==[] and O['counts'].get('image',0)==0,'no images; figure is tables')\n need(w==O['witness'].encode(),'full canonical witness composition/boundary')\n need(sh(w)==m['excerpt_sha256'],'LF witness pin')\n need(sh(cw)==m['cache_excerpt_sha256'],'LF cache witness pin')\n cr=E.fromstring(cw,parser);need(cr.tag=='webwork-representations' and dict(cr.attrib)=={} and len(cr)==6,'cache wrapper / six records')\n need([tree(c) for c in cr]==[tree(c) for c in env['caches']],'all static/PG/render metadata trees exact')\n for i,b in enumerate(O['blocks']):\n  s=t['source_blocks'][b['key']];a=frag(b['source_template']);z=frag(s)\n  need(events(a)==events(z),'inline/slot events '+str(i))\n  need(digits(a)==digits(z),'literal numeric source order '+str(i))\n  need('\\ufffd' not in s,'no replacement characters '+str(i))\n  for n in z.iter():\n   need(n.tag in {'r','bdi','em','q','span','strong'},'allowed input tag '+str(i))\n   if n.tag=='bdi':need(dict(n.attrib)=={'dir':'ltr','lang':'en'},'exact isolate '+str(i))\n   for kind,txt in [('text',n.text),('tail',n.tail)]:\n    if re.search('[A-Za-z0-9]',TOKEN.sub('',txt or '')):\n     anc=n if kind=='text' else n.getparent()\n     need(anc is not None and any(q.tag=='bdi' and q.get('dir')=='ltr' for q in [anc,*anc.iterancestors()]),'visible Latin/digit isolate '+str(i))\n  if b['tag']=='cell' and re.fullmatch(r'[TF0-9]*',b['source_template']):\n   need(''.join(z.itertext())==b['source_template'],'exact table data '+str(i))\n  if b['tag'] in {'h','see'} and b['source_template']=='iff':\n   need(''.join(z.itertext())=='iff','canonical iff not Indonesian jhj')\n  if seals:need(sh(s.encode())==m['translation_block_seals'][b['key']],'reviewed target text seal '+str(i))\n need(len(t['original_notes'])==10,'all ten separate original notes')\n need([n['id'] for n in t['original_notes']]==list(m['original_note_seals']),'note identity/order')\n for n in t['original_notes']:\n  need(n['origin']=='original','original not source '+n['id'])\n  need(all(k in t['source_blocks'] for k in n['source_keys']),'note source bindings '+n['id'])\n  z=frag(n['html'])\n  for el in z.iter():\n   need(el.tag in {'r','bdi'},'note not active content '+n['id'])\n   if el.tag=='bdi':need(dict(el.attrib)=={'dir':'ltr','lang':'en'},'note isolate '+n['id'])\n   for kind,txt in [('text',el.text),('tail',el.tail)]:\n    if re.search('[A-Za-z0-9<>]',txt or ''):\n     anc=el if kind=='text' else el.getparent()\n     need(anc is not None and any(q.tag=='bdi' for q in [anc,*anc.iterancestors()]),'note ASCII/math isolate '+n['id'])\n  if seals:need(jsh(n)==m['original_note_seals'][n['id']],'reviewed original note seal '+n['id'])\n if seals:need(jsh(t['terminology_choices'])==m['original_terms_seal'],'terminology seal')\n return checks\n\nchecks=validate(M,T,W,CW)\ndef need(ok,label):\n if not ok:raise AssertionError(label)\n checks.append(label)\nexpected_receipts=['canon/receipts/B10-002-draft-20260831T025813772849Z.json','canon/receipts/B10-002-revision-20260831T032959205086Z.json','canon/receipts/B10-002-qa-20260831T123645709014Z.json']\nneed(M['canon_receipts']==expected_receipts,'draft/revision/QA receipt identities')\nfor p,stage in zip(expected_receipts,['draft','revision','qa']):\n r=load_json((B/p).read_text(encoding='utf-8'));need(r['unit']=='B10-002' and r['stage']==stage,'canon stage '+stage)\n for e in r['examples']:\n  raw=Path(e['path']).read_bytes()\n  need(sh(raw)==e['text_raw_sha256'],'readable canon file pin '+stage+e['id'])\n  need(sh(raw.decode().splitlines()[e['line']-1].encode())==e['paragraph_sha256'],'actual canon locus pin '+stage+e['id'])\n# These mathematical expectations are written independently of any renderer.\nfig=roots['source/sec_logic-statements.ptx'].find('.//figure')\ntruths=fig.findall('sidebyside/tabular')\nops=[lambda p,q:p and q,lambda p,q:p or q,lambda p,q:not p or q,lambda p,q:p==q]\nneed(len(truths)==4,'four binary truth tables')\nfor j,(table,op) in enumerate(zip(truths,ops)):\n for row,(p,q) in zip(table.findall('row')[1:],[(True,True),(True,False),(False,True),(False,False)]):\n  need([''.join(c.itertext()).strip() for c in row.findall('cell')]==[('T' if v else 'F') for v in [p,q,op(p,q)]],'independent Boolean row '+str(j))\nneg=fig.find('tabular')\nneed([[''.join(c.itertext()).strip() for c in row.findall('cell')] for row in neg.findall('row')[1:]]==[['T','F'],['F','T'],['']],'negation table / source empty spanning row')\nneed(17*15+1==256 and 18*15+1==271,'authored static arithmetic')\nneed(16*11+1==177 and 16*1+1==17 and (16%2,1%2)==(0,1),'cache4 parity correction')\nneed(9*13+1==118 and 9*4+1==37,'cache5 arithmetic')\n# At each of two times someone escapes, but no one escapes at both times.\nfooled={(0,0):False,(1,0):True,(0,1):True,(1,1):False}\nneed(all(any(not fooled[x,y] for x in range(2)) for y in range(2)) and not any(all(not fooled[x,y] for y in range(2)) for x in range(2)),'independent quantifier-scope countermodel')\ncachetable=env['caches'][5].find('.//tabular')\nneed([[''.join(c.itertext()).strip() for c in row.findall('cell')] for row in cachetable.findall('row')]==[['','1','2','3','4'],['1','T','F','F','F'],['2','F','T','T','F'],['3','T','T','T','T'],['4','F','F','F','F']],'hand-bound cache table exact matrix')\nneed(env['caches'][0].find('static').find('answer') is None and env['caches'][5].find('static').find('answer') is None,'no invented answers for cache records without answer')\ncases=[]\ndef reject(name,mutate,seals=True):\n m=copy.deepcopy(M);t=copy.deepcopy(T);w=W;cw=CW\n m,t,w,cw=mutate(m,t,w,cw)\n need((json.dumps(m,ensure_ascii=False),json.dumps(t,ensure_ascii=False),w,cw)!=(json.dumps(M,ensure_ascii=False),json.dumps(T,ensure_ascii=False),W,CW),'mutation changes detached input '+name)\n try:validate(m,t,w,cw,seals=seals)\n except (AssertionError,E.XMLSyntaxError,KeyError,ValueError,TypeError):cases.append(name)\n else:raise AssertionError('mutation accepted: '+name)\ndef change_target(i,fn):\n def f(m,t,w,cw):\n  k=O['blocks'][i]['key'];t['source_blocks'][k]=fn(t['source_blocks'][k]);return m,t,w,cw\n return f\nreject('literal numeral without seal',change_target(80,lambda s:s.replace('5050','5051')),False)\nreject('table T to F without seal',change_target(533,lambda s:s.replace('>T<','>F<')),False)\nreject('inline slot grouping without seal',change_target(283,lambda s:s.replace('<em>یا {{tex:3}} تے {{tex:4}} دوویں</em>','یا {{tex:3}} تے <em>{{tex:4}} دوویں</em>')),False)\nreject('emphasis/slot order without seal',change_target(406,lambda s:s.replace('<em>یا برابر</em> اے، {{tex:4}}','{{tex:4}} <em>یا برابر</em> اے')),False)\nreject('literal Latin isolate without seal',change_target(119,lambda s:s.replace('<bdi dir=\"ltr\" lang=\"en\">USA</bdi>','USA')),False)\nreject('source slot omission without seal',change_target(340,lambda s:s.replace('{{tex:8}}','')),False)\nreject('source slot duplication without seal',change_target(340,lambda s:s+' {{tex:8}}'),False)\nreject('term identity without seal',change_target(37,lambda s:s.replace('data-source-term=\"0\"','data-source-term=\"9\"')),False)\nreject('unapproved prose injection',change_target(43,lambda s:s+' ہر نتیجہ سچ اے۔'))\nreject('answer changed',change_target(412,lambda s:s.replace('سچ','جھوٹ')))\nreject('source error silently corrected',change_target(505,lambda s:s.replace('سچ نکلدا اے','جھوٹ نکلدا اے')))\ndef keydrop(m,t,w,cw):t['source_blocks'].pop(O['blocks'][0]['key']);return m,t,w,cw\nreject('earlier chapter title omitted',keydrop,False)\ndef keyextra(m,t,w,cw):t['source_blocks']['invented#p']='نواں بیان';return m,t,w,cw\nreject('extra source paragraph',keyextra,False)\ndef keyorder(m,t,w,cw):\n k=list(t['source_blocks']);k[0],k[1]=k[1],k[0];t['source_blocks']={x:t['source_blocks'][x] for x in k};return m,t,w,cw\nreject('source key order',keyorder,False)\ndef mfield(field,fn):\n def f(m,t,w,cw):fn(m[field]);return m,t,w,cw\n return f\nreject('raw TeX variable mutation',mfield('tex_slots',lambda a:a[0].update(raw_tex=a[0]['raw_tex']+'x')),False)\nreject('raw TeX source owner mutation',mfield('tex_slots',lambda a:a[1].update(source_path=a[0]['source_path'])),False)\nreject('xref target mutation',mfield('xrefs',lambda a:a[0]['source_attributes'].update(ref='ch_fake')),False)\nreject('choice source correct flag',mfield('choice_and_match_contracts',lambda a:next(x for x in a if x['attributes'].get('correct')=='yes')['attributes'].update(correct='no')),False)\nreject('table shape',mfield('source_tables',lambda a:a[0]['row_cell_counts'].__setitem__(0,3)),False)\nreject('cache seed rebinding',mfield('cached_static_bindings',lambda a:a[3].update(seed='5')),False)\nreject('canonical authority changed',lambda m,t,w,cw:(dict(m,authority=dict(m['authority'],canonical=dict(m['authority']['canonical'],commit='0'*40))),t,w,cw),False)\nreject('source metadata macro',lambda m,t,w,cw:(dict(m,source_macros=m['source_macros'].replace('\\\\rightarrow','\\\\leftarrow')),t,w,cw),False)\nreject('source witness text injected',lambda m,t,w,cw:(m,t,w.replace(b'</chapter>',b'<p>Injected statement</p></chapter>'),cw),False)\nreject('cache source answer mutation',lambda m,t,w,cw:(m,t,w,cw.replace(b'Choice 3',b'Choice 1',1)),False)\nreject('cache source solution arithmetic',lambda m,t,w,cw:(m,t,w,cw.replace(b'16x+1',b'17x+1',1)),False)\nreject('cache image injection',lambda m,t,w,cw:(m,t,w,cw.replace(b'</static>',b'<image source=\"fake.png\"/></static>',1)),False)\ndef noteorigin(m,t,w,cw):t['original_notes'][6]['origin']='source';return m,t,w,cw\nreject('original correction relabeled source',noteorigin,False)\ndef notedrop(m,t,w,cw):t['original_notes'].pop(7);return m,t,w,cw\nreject('parity correction removed',notedrop,False)\ndef notemath(m,t,w,cw):t['original_notes'][7]['html']=t['original_notes'][7]['html'].replace('16·1+1=17','16·1+1=18');return m,t,w,cw\nreject('original correction arithmetic changed',notemath)\ndef noteoverreach(m,t,w,cw):t['original_notes'][9]['html']+=' ہر بنن والا سوال ترجمہ ہو چکیا اے۔';return m,t,w,cw\nreject('randomized coverage overclaim',noteoverreach)\nreceipt=dict(unit='B10-002',stage='input-QA-only',result='pass',checks=len(checks),detached_mutations=cases,source_keys=559,tex_owners=337,unique_raw_tex=123,xml_ids=17,exercise_label_anchors=18,source_tables=8,source_cells=104,original_notes=10,inputs_sha256={p:sh((B/p).read_bytes().replace(b'\\r\\n',b'\\n')) for p in ['source-excerpts/b10-unit-002.ptx','source-excerpts/b10-unit-002-webwork.xml','source-excerpts/manifest-b10-unit-002.json','translations/b10-unit-002.json']},limitations=['Input checks are not a reader, TeX conversion, visual QA, native-speaker or educator certification.','Source derivation uses this lane authored inventory program, not an independent parser implementation.','Target/original text seals detect post-review edits; they do not prove linguistic correctness.','Only six pinned cached static versions, not all possible PG-generated versions; no runtime/remote grading.','Full Chapter1 and all assigned books remain incomplete.'])\nprint(json.dumps(receipt,ensure_ascii=False,indent=2))\n",
+  "canon_revision_receipt": "languages/pnb-Arab-PK/canon/receipts/B10-002-revision-20260831T032959205086Z.json",
+  "revision_decisions": {
+    "truth_values": "Use سچ/جھوٹ uniformly for source true/false; غلط remains for technical incorrectness/interpretation. Explain that false need not imply intentional deception.",
+    "negated_conjunction": "Additionalexercise1solutionpart4 explicitly says it is not true that both passed, avoiding neither-passed ambiguity.",
+    "inline_order": "Rephrased practicefeedback so source em(or equal) remains before final y slot while preserving Punjabi meaning.",
+    "source_tasks": "Retain explicit source English-translation task; optional Punjabi practice is separately original, not imported Indonesian localization.",
+    "source_errors": "Retain canonical typo/incomplete formula/source correct flag and bad cached solution; all corrections remain original notes.",
+    "source_note_xml": "Inputfragmentparsercaughtandfixed unescaped less-than signs in original interval qualification; source TeX untouched."
+  },
+  "canon_qa_receipt": "languages/pnb-Arab-PK/canon/receipts/B10-002-qa-20260831T123645709014Z.json",
+  "input_qa_result": {
+    "unit": "B10-002",
+    "stage": "input-QA-only",
+    "result": "pass",
+    "checks": 6798,
+    "detached_mutations": [
+      "literal numeral without seal",
+      "table T to F without seal",
+      "inline slot grouping without seal",
+      "emphasis/slot order without seal",
+      "literal Latin isolate without seal",
+      "source slot omission without seal",
+      "source slot duplication without seal",
+      "term identity without seal",
+      "unapproved prose injection",
+      "answer changed",
+      "source error silently corrected",
+      "earlier chapter title omitted",
+      "extra source paragraph",
+      "source key order",
+      "raw TeX variable mutation",
+      "raw TeX source owner mutation",
+      "xref target mutation",
+      "choice source correct flag",
+      "table shape",
+      "cache seed rebinding",
+      "canonical authority changed",
+      "source metadata macro",
+      "source witness text injected",
+      "cache source answer mutation",
+      "cache source solution arithmetic",
+      "cache image injection",
+      "original correction relabeled source",
+      "parity correction removed",
+      "original correction arithmetic changed",
+      "randomized coverage overclaim"
+    ],
+    "source_keys": 559,
+    "tex_owners": 337,
+    "unique_raw_tex": 123,
+    "xml_ids": 17,
+    "exercise_label_anchors": 18,
+    "source_tables": 8,
+    "source_cells": 104,
+    "original_notes": 10,
+    "inputs_sha256": {
+      "source-excerpts/b10-unit-002.ptx": "1fce081a82dc8d22fa044da96fe8ba309fe4b0a4db7ab9835b0cf7f63e280009",
+      "source-excerpts/b10-unit-002-webwork.xml": "1c8947d8d695deca514e0e6952e6b8ce96938cffb02bb19e15feb314d769bf7c",
+      "source-excerpts/manifest-b10-unit-002.json": "68bd9bb7158886a20ecf01df0420e8f3b4efebe3b09e0842240085c53e24e8ce",
+      "translations/b10-unit-002.json": "ec9666ae9313c9a1d891c709e7e476fe82455ff44f14d7dde24761ebb72995ad"
+    },
+    "limitations": [
+      "Input checks are not a reader, TeX conversion, visual QA, native-speaker or educator certification.",
+      "Source derivation uses this lane authored inventory program, not an independent parser implementation.",
+      "Target/original text seals detect post-review edits; they do not prove linguistic correctness.",
+      "Only six pinned cached static versions, not all possible PG-generated versions; no runtime/remote grading.",
+      "Full Chapter1 and all assigned books remain incomplete."
+    ]
+  },
+  "determinism": {
+    "cycles": 2,
+    "complete_stdout_identical": true,
+    "source_and_translation_files_modified_by_tests": false,
+    "mode": "Read-only source extraction/verification plus detached in-memory mutation cases. Inventory and QA code never execute upstream source."
+  },
+  "pinned_input_status": "Frozen except reported source/fidelity issues authorized by parent; B10-001 unchanged and frozen."
+}

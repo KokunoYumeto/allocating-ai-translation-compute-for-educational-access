@@ -1,0 +1,41 @@
+{
+  "module": "m81290",
+  "section": "fs-id1791269",
+  "result": "pass",
+  "translation_sha256": "6895200ccddbf2efe679a1b1f0aa182f200eb2dae1f18d74d675179656cb58a3",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "6da182dad65b0ee0cc5afd30f9c4ed28fb6a3cb1d81d1c0745b87825faf664a3"
+  },
+  "source_sha256": "96985df586080ae5e52b870320d310a6061a0c00c5d1699e58a024e55bdba005",
+  "reader": "reader/sections/m81290-fs-id1791269.html",
+  "reader_sha256": "d5e4115948b215b75f59c36a149d56f5b7da35225fff01a7b6489d851693a158",
+  "nodes": 25,
+  "ids": 5,
+  "mathml": 0,
+  "localized_linguistic_mtext": 0,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 0,
+  "exercises": 0,
+  "assets": [],
+  "source_errata": [
+    {
+      "source_id": "eip-id1170324018538",
+      "kind": "terminological and equality-case clarification",
+      "detail": "Source calls the regrouped whole-plus-improper-fraction expression a mixed number. Bengali explicitly labels this as an intermediate regrouping, retaining the whole-plus-proper-fraction definition. Original greater-than/otherwise sequence is preserved, with a labelled note that equal fractional parts do not require regrouping."
+    },
+    {
+      "kind": "source_procedure_domain_and_result_form_clarified",
+      "source_ids": [
+        "eip-id1170324018538",
+        "eip-id1170322790853"
+      ],
+      "source_issue": "The source's separated whole/fraction subtraction procedure and unconditional mixed-number output instruction omit negative-part sign scope and proper-fraction/integer results.",
+      "bengali_correction": "সম্পাদকীয় ব্যাখ্যা: পূর্ণসংখ্যা ও ভগ্নাংশ অংশ আলাদা করে বিয়োগের এই ধাপগুলি এখানে অঋণাত্মক ফলের উদাহরণে ব্যবহার করা হয়েছে। ঋণাত্মক ফল হলে অপ্রকৃত ভগ্নাংশের পদ্ধতি ব্যবহার করো, অথবা অংশদুটির ফল যোগফল হিসেবেই রাখো। যেমন, পূর্ণসংখ্যা অংশের ফল −1 ও ভগ্নাংশ অংশের ফল 1/2 হলে মোট −1 + 1/2 = −1/2; পাশাপাশি −1 1/2 লিখলে তা −(1 + 1/2), অর্থাৎ অন্য সংখ্যা বোঝায়।",
+      "policy": "Keep all original mathematical tokens and step hierarchy. Explicitly label nonnegative-example scope, additive negative-part interpretation and appropriate integer/proper-fraction result forms.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

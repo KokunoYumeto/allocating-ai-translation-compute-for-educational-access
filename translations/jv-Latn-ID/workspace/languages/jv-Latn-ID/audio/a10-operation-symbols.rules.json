@@ -1,0 +1,270 @@
+{
+  "schema": "jv-source-bound-narration-fixtures-v1",
+  "status": "draft_provider_neutral_not_synthesized_not_listening_reviewed",
+  "date": "2026-08-30",
+  "purpose": "AX-2 narration fixtures for translation review only; not model-training or fine-tuning data.",
+  "tracks": ["jv-academic", "jv-conversation", "id-academic"],
+  "locales": {"jv-academic": "jv-Latn-ID", "jv-conversation": "jv-Latn-ID", "id-academic": "id-ID"},
+  "scope": {
+    "module": "m82453",
+    "section": "fs-id1170655150800",
+    "direct_child_slice_zero_based": [7, 13],
+    "first_anchor": "fs-id1170655224522",
+    "last_included_anchor": "fs-id1170655004454",
+    "next_source_child": "fs-id1171789687379",
+    "next_instructional_anchor": "fs-id1170655208137",
+    "indonesian_path": "downloads/jv-Latn-ID/a10-source/translated/modules/m82453/index.cnxml",
+    "indonesian_sha256": "2c0b688d569044b128d589579e9ba7d871a0fb9ac7a670ac6f22d0ef2b66e635",
+    "english_path": "downloads/jv-Latn-ID/a10-source/authority/source/modules/m82453/index.cnxml",
+    "english_sha256": "a8fdd235aa254c5a0a1248fa858e9b3579d9b40982bbc514cbe6a18c3e6fcbed",
+    "upstream_commit": "38cae454e644abf9f0a623e876994553881597c9",
+    "indonesian_release": "v1.0.2",
+    "source_mathml_expression_count": 11,
+    "completion_claim": "Only these source-bound narration fixtures are drafted. This does not complete A10, A00, or AX-2."
+  },
+  "matching_contract": {
+    "namespace_context": {"m": "http://www.w3.org/1998/Math/MathML", "cnxml": "http://cnx.rice.edu/cnxml"},
+    "mathml_storage": "Exact source substrings with inherited m namespace; parse inside a namespace-bearing wrapper. Math ordinals are one-based within their top-level source anchor.",
+    "dispatch": "Require module, top-level anchor, math ordinal, and exact namespace-aware element tree including attributes and tokens. Whitespace-only formatting may differ; no token, element, attribute, or operand normalization is authorized.",
+    "unknown_case": "unsupported_source_bound_narration",
+    "operator_conventions_are_not_a_parser": true,
+    "mutate_visible_source": false,
+    "preserve_source_punctuation": "Commas separate alternatives; final MathML periods end sentences. Spoken punctuation is a pause, not a decimal or multiplication operator.",
+    "register_note": "Fixed mathematical readings intentionally overlap across the two Javanese registers. Surrounding prose remains separately labeled.",
+    "provider_behavior": "No voice/provider selected. A later synthesizer must support the requested locale explicitly or return unsupported_voice_locale, never substitute Indonesian for Javanese silently."
+  },
+  "canon_checkpoint": {
+    "stage": "Narration drafting after translation drafting; existing readable canon reconsulted against actual source expressions.",
+    "consulted": [
+      {"id": "C01", "path": "downloads/jv-Latn-ID/canon/wilangan.txt", "observed_entry": "wilangan hitungan, jumlah, bilangan, golongan", "decision": "Keep wilangan for numerical operands; do not call a written letter a translated number."},
+      {"id": "C02", "path": "downloads/jv-Latn-ID/canon/cacah.txt", "observed_entry": "nacahaké menjumlahkan", "decision": "The sum sense does not establish an entire formal operation lexicon; dedicated operation evidence comes from the later C21-C23 extensions."},
+      {"id": "C03", "path": "downloads/jv-Latn-ID/canon/siji.txt", "observed_entry": "siji KN satu", "decision": "Use siji in conversational numbering of notation alternatives."},
+      {"id": "C04", "path": "downloads/jv-Latn-ID/canon/loro.txt", "observed_entry": "loro dua", "decision": "Read operand 2 as loro in the subtraction example."},
+      {"id": "C05", "path": "downloads/jv-Latn-ID/canon/telu.txt", "observed_entry": "telu tiga, tri", "decision": "Read coefficient 3 as telu; do not silently convert adjacent letter x into a multiplication sign."},
+      {"id": "C06", "path": "downloads/jv-Latn-ID/canon/papat.txt", "observed_entry": "papat empat", "decision": "Read operand 4 as papat; retain four division alternatives."},
+      {"id": "C07", "path": "downloads/jv-Latn-ID/canon/lima.txt", "observed_entry": "lima lima", "decision": "Retain five multiplication alternatives across two adjacent MathML nodes."},
+      {"id": "C16", "path": "downloads/jv-Latn-ID/canon/saka.txt", "observed_entry": "dijupuki saka siji", "decision": "Keep the declared njupuk 2 saka 9 subtraction explanation and Indonesian-to-Javanese source/from gloss; this is not a formal subtraction-dictionary attestation."},
+      {"id": "C21", "path": "downloads/jv-Latn-ID/canon/ping.txt", "observed_entry": "ngepingaké mengalikan; ping-pingan perkalian", "decision": "Use ping for the source-bound multiplication readings and ping-pingan for the operation, without generalizing beyond registered expressions."},
+      {"id": "C22", "path": "downloads/jv-Latn-ID/canon/para.txt", "observed_entry": "para bagi; para gapit pembagian bersusun; paran hitungan tentang membagi", "decision": "Revise the operation heading/result to Paran/asil paran and name long division para gapit; exact operands remain fixture-bound."},
+      {"id": "C23", "path": "downloads/jv-Latn-ID/canon/gunggung.txt", "observed_entry": "gunggung jumlah, total", "decision": "Keep gunggung for sum/total; do not treat this as approval of every composed table sentence."}
+    ],
+    "not_attested_on_current_shelf": ["complete long-division and fraction boundary phrases", "ordinal table-form labels", "wolu and sanga as dedicated dictionary entries", "the full composed formula prosody as standardized mathematical language"],
+    "provisional_decisions": [
+      "Use the C21/C22-supported vocabulary ping-pingan/paran and readings ping/dipara only in the registered source contexts; educator and formula-prosody review remains pending.",
+      "Carry wolu for 8 and sanga for 9 from the already drafted pilot narration, without claiming the currently consulted entries verify them.",
+      "Use aksara a/be/eks/ye in Javanese and huruf a/be/eks/ye in Indonesian; these letter-name choices require pronunciation review and are not invented IPA.",
+      "Use explicit fraction boundaries in both Javanese tracks and Indonesian. No nested fraction/radical/power rules are inferred.",
+      "Describe source notation separately from its arithmetic meaning when the notation is the lesson topic. The division table is a notation lesson, not a computation request."
+    ],
+    "review_status": "Native mathematical-register and listening review pending; no human approval claimed."
+  },
+  "operator_conventions": [
+    {"token": "+", "role": "binary addition in registered source expressions", "jv-academic": "ditambah", "jv-conversation": "ditambah", "id-academic": "ditambah"},
+    {"token": "−", "codepoint": "U+2212", "role": "binary subtraction only in these source expressions", "jv-academic": "dikurangi", "jv-conversation": "dikurangi", "id-academic": "dikurangi", "restriction": "Do not infer unary-negative-number support from this rule."},
+    {"token": "·", "codepoint": "U+00B7", "role": "multiplication dot", "jv_operation": "ping", "id_operation": "kali", "jv_glyph_mention": "tandha titik ping-pingan", "id_glyph_mention": "tanda titik perkalian"},
+    {"token": "×", "codepoint": "U+00D7", "role": "multiplication cross distinct from variable x", "jv_operation": "ping", "id_operation": "kali", "jv_glyph_mention": "tandha ping wujud silang", "id_glyph_mention": "tanda kali berbentuk silang"},
+    {"token": "÷", "codepoint": "U+00F7", "role": "division sign", "jv_operation": "dipara", "id_operation": "dibagi", "jv_glyph_mention": "tandha para", "id_glyph_mention": "tanda bagi"},
+    {"token": "/", "element": "mtext", "role": "division slash only in the registered a/b alternative", "jv_glyph_mention": "garis miring", "id_glyph_mention": "garis miring", "restriction": "Do not read it as the word mtext or treat slash as missing. No general arbitrary-mtext narration rule follows."},
+    {"token": "(", "role": "opening parenthesis", "jv-academic": "bukak kurung", "jv-conversation": "bukak kurung", "id-academic": "buka kurung"},
+    {"token": ")", "role": "closing parenthesis", "jv-academic": "tutup kurung", "jv-conversation": "tutup kurung", "id-academic": "tutup kurung"},
+    {"token": ",", "role": "notation-alternative separator", "speech": "Separate alternatives with an audible pause; do not say koma as though this were a decimal."},
+    {"token": ".", "role": "sentence-final punctuation in 9−2. and 4·8.", "speech": "Sentence pause; do not say titik or ping."}
+  ],
+  "math_fixtures": [
+    {
+      "id": "A10-OPS-M01",
+      "anchor": "fs-id1170655178881",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math>",
+      "expected": {"jv-academic": "aksara a ditambah aksara be", "jv-conversation": "aksara a ditambah aksara be", "id-academic": "huruf a ditambah huruf be"}
+    },
+    {
+      "id": "A10-OPS-M02",
+      "anchor": "fs-id1170655178881",
+      "math_ordinal": 2,
+      "source_mathml": "<m:math><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow></m:math>",
+      "expected": {"jv-academic": "aksara a dikurangi aksara be", "jv-conversation": "aksara a dikurangi aksara be", "id-academic": "huruf a dikurangi huruf be"},
+      "invariant": "a is the minuend; b is subtracted from a. Never reverse them."
+    },
+    {
+      "id": "A10-OPS-M03",
+      "anchor": "fs-id1170655178881",
+      "math_ordinal": 3,
+      "source_mathml": "<m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math>",
+      "expected": {
+        "jv-academic": "Wujud kapisan: aksara a, tandha titik ping-pingan, aksara be. Wujud kapindho: aksara a jejer aksara be tanpa tandha ing antarane. Wujud katelu: bukak kurung, aksara a, tutup kurung, diterusake bukak kurung, aksara be, tutup kurung.",
+        "jv-conversation": "Wujud siji: aksara a, tandha titik ping-pingan, aksara be. Wujud loro: aksara a lan aksara be ditulis jejer tanpa tandha ing antarane. Wujud telu: bukak kurung, aksara a, tutup kurung, banjur bukak kurung, aksara be, tutup kurung.",
+        "id-academic": "Bentuk pertama: huruf a, tanda titik perkalian, huruf be. Bentuk kedua: huruf a bersebelahan dengan huruf be tanpa tanda di antaranya. Bentuk ketiga: buka kurung, huruf a, tutup kurung, diikuti buka kurung, huruf be, tutup kurung."
+      },
+      "notation_forms": ["a·b", "ab", "(a)(b)"],
+      "continuation_fixture": "A10-OPS-M04",
+      "invariant": "Three of five multiplication forms, not three separate factors of one product. Trailing comma continues the same table cell."
+    },
+    {
+      "id": "A10-OPS-M04",
+      "anchor": "fs-id1170655178881",
+      "math_ordinal": 4,
+      "source_mathml": "<m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>",
+      "expected": {
+        "jv-academic": "Wujud kapapat: bukak kurung, aksara a, tutup kurung, diterusake aksara be. Wujud kalima: aksara a diterusake bukak kurung, aksara be, tutup kurung. Limang wujud kasebut ateges aksara a ping aksara be.",
+        "jv-conversation": "Wujud papat: bukak kurung, aksara a, tutup kurung, banjur aksara be. Wujud lima: aksara a banjur bukak kurung, aksara be, tutup kurung. Limang wujud mau kabeh tegese aksara a ping aksara be.",
+        "id-academic": "Bentuk keempat: buka kurung, huruf a, tutup kurung, diikuti huruf be. Bentuk kelima: huruf a diikuti buka kurung, huruf be, tutup kurung. Kelima bentuk tersebut berarti huruf a kali huruf be."
+      },
+      "notation_forms": ["(a)b", "a(b)"],
+      "requires_preceding_fixture": "A10-OPS-M03",
+      "invariant": "a(b) is source notation for multiplication in this table, not a function-call interpretation. Never generalize that interpretation to an unregistered context."
+    },
+    {
+      "id": "A10-OPS-M05",
+      "anchor": "fs-id1170655178881",
+      "math_ordinal": 5,
+      "source_mathml": "<m:math><m:mrow><m:mi>a</m:mi><m:mo>÷</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mtext>/</m:mtext><m:mi>b</m:mi><m:mo>,</m:mo><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>,</m:mo><m:mi>b</m:mi><m:menclose notation=\"longdiv\"><m:mi>a</m:mi></m:menclose></m:mrow></m:math>",
+      "expected": {
+        "jv-academic": "Wujud kapisan: aksara a, tandha para, aksara be. Wujud kapindho: aksara a, garis miring, aksara be. Wujud katelu: pecahan: aksara a per aksara be, pungkasan pecahan. Wujud kapapat: aksara be ing njaba kurung para gapit, lan aksara a ing sajrone kurung para gapit. Kabeh diwaca aksara a dipara aksara be.",
+        "jv-conversation": "Wujud siji: aksara a, tandha para, aksara be. Wujud loro: aksara a, garis miring, aksara be. Wujud telu: pecahan: aksara a per aksara be, pungkasan pecahan. Wujud papat: aksara be ana ing njaba kurung para gapit, aksara a ana ing njero. Kabeh diwaca aksara a dipara aksara be.",
+        "id-academic": "Bentuk pertama: huruf a, tanda bagi, huruf be. Bentuk kedua: huruf a, garis miring, huruf be. Bentuk ketiga: pecahan: huruf a per huruf be, akhir pecahan. Bentuk keempat: huruf be di luar kurung pembagian, dan huruf a di dalam kurung pembagian. Semuanya dibaca huruf a dibagi huruf be."
+      },
+      "notation_forms": ["a÷b", "a/b", "fraction with numerator a and denominator b", "b outside long-division enclosure containing a"],
+      "dividend": "a",
+      "divisor": "b",
+      "invariant": "Sibling tree order b then menclose(a) is diagram order, not operation order. Narrate a divided by b. Do not evaluate at b=0 or claim division is defined there."
+    },
+    {
+      "id": "A10-OPS-M06",
+      "anchor": "fs-id1166424846753",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "expected": {"jv-academic": "sanga dikurangi loro.", "jv-conversation": "sanga dikurangi loro.", "id-academic": "sembilan dikurangi dua."},
+      "invariant": "Retain expression 9−2; do not insert an unevidenced source answer or reverse it to 2−9."
+    },
+    {
+      "id": "A10-OPS-M07",
+      "anchor": "fs-id1166424846753",
+      "math_ordinal": 2,
+      "source_mathml": "<m:math><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "expected": {"jv-academic": "papat ping wolu.", "jv-conversation": "papat ping wolu.", "id-academic": "empat kali delapan."},
+      "invariant": "The first dot is multiplication and the final period is punctuation; neither is a decimal separator."
+    },
+    {
+      "id": "A10-OPS-M08",
+      "anchor": "fs-id1170655004454",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mo>×</m:mo><m:mo>,</m:mo></m:mrow></m:math>",
+      "expected": {"jv-academic": "tandha ping wujud silang,", "jv-conversation": "tandha ping wujud silang,", "id-academic": "tanda kali berbentuk silang,"},
+      "composition": "This fixture explicitly mentions a glyph. In full-paragraph narration, avoid duplicating the preceding prose phrase naming the cross; use the registered warning-paragraph composition convention."
+    },
+    {
+      "id": "A10-OPS-M09",
+      "anchor": "fs-id1170655004454",
+      "math_ordinal": 2,
+      "source_mathml": "<m:math><m:mrow><m:mn>3</m:mn><m:mspace width=\"0.2em\"/><m:mo>×</m:mo><m:mspace width=\"0.2em\"/><m:mi>y</m:mi></m:mrow></m:math>",
+      "expected": {"jv-academic": "telu, tandha ping wujud silang, aksara ye", "jv-conversation": "telu, tandha ping wujud silang, aksara ye", "id-academic": "tiga, tanda kali berbentuk silang, huruf ye"},
+      "meaning": {"jv-academic": "telu ping aksara ye", "jv-conversation": "telu ping aksara ye", "id-academic": "tiga kali huruf ye"},
+      "invariant": "Name the cross as a glyph because the paragraph contrasts it with letter x. The existing following parenthetic prose supplies the operation reading."
+    },
+    {
+      "id": "A10-OPS-M10",
+      "anchor": "fs-id1170655004454",
+      "math_ordinal": 3,
+      "source_mathml": "<m:math><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>y</m:mi></m:mrow></m:math>",
+      "expected": {"jv-academic": "telu, tandha titik ping-pingan, aksara eks, tandha titik ping-pingan, aksara ye", "jv-conversation": "telu, tandha titik ping-pingan, aksara eks, tandha titik ping-pingan, aksara ye", "id-academic": "tiga, tanda titik perkalian, huruf eks, tanda titik perkalian, huruf ye"},
+      "meaning": {"jv-academic": "telu ping aksara eks ping aksara ye", "jv-conversation": "telu ping aksara eks ping aksara ye", "id-academic": "tiga kali huruf eks kali huruf ye"},
+      "invariant": "Both variables and both dot operators are present. Never merge xy into one identifier or replace x by a cross."
+    },
+    {
+      "id": "A10-OPS-M11",
+      "anchor": "fs-id1170655004454",
+      "math_ordinal": 4,
+      "source_mathml": "<m:math><m:mrow><m:mo>·</m:mo></m:mrow></m:math>",
+      "expected": {"jv-academic": "tandha titik ping-pingan", "jv-conversation": "tandha titik ping-pingan", "id-academic": "tanda titik perkalian"},
+      "invariant": "An isolated glyph being recommended, not an incomplete multiplication expression to evaluate."
+    }
+  ],
+  "prose_symbol_fixtures": [
+    {
+      "id": "A10-OPS-P01",
+      "anchor": "fs-id1170655178881",
+      "selector": "thead/row/entry[4] (one-based)",
+      "source_text": "Hasilnya adalah…",
+      "translated_visible_text": {"jv-academic": "Asile yaiku…", "jv-conversation": "Asile…", "id-academic": "Hasilnya adalah…"},
+      "expected": {"jv-academic": "Asile yaiku:", "jv-conversation": "Asile:", "id-academic": "Hasilnya adalah:"},
+      "role": "heading lead-in to the result, followed by a brief pause",
+      "forbidden_readings": ["lan sateruse", "dan seterusnya", "infinite sequence", "tandha telung titik"],
+      "restriction": "This replaces only spoken punctuation at this exact heading. Preserve the visible ellipsis. The earlier A00 counting-list ellipsis still means continuation."
+    },
+    {
+      "id": "A10-OPS-P02",
+      "anchor": "fs-id1170655004454",
+      "source_cnxml_fragment": "<emphasis effect=\"italics\">xy</emphasis>",
+      "preceding_text_suffix": "3",
+      "visible_combined_tokens": "3xy",
+      "expected": {"jv-academic": "telu diterusake aksara eks lan aksara ye sing ditulis jejer tanpa tandha ing antarane", "jv-conversation": "telu, banjur aksara eks lan aksara ye sing ditulis jejer tanpa tandha ing antarane", "id-academic": "tiga diikuti huruf eks dan huruf ye yang ditulis bersebelahan tanpa tanda di antaranya"},
+      "role": "literal token mention in a question comparing two interpretations",
+      "restriction": "Do not resolve the intentionally ambiguous introductory 3xy to either following alternative before reading the question. Do not treat xy as one spoken word."
+    },
+    {
+      "id": "A10-OPS-P03",
+      "anchor": "fs-id1170655004454",
+      "source_prefix": "Dalam aljabar, tanda silang",
+      "applies_before_math_fixture": "A10-OPS-M08",
+      "expected_combined_prefix_and_glyph": {"jv-academic": "Ing aljabar, tandha ping wujud silang,", "jv-conversation": "Ing aljabar, tandha ping wujud silang,", "id-academic": "Dalam aljabar, tanda kali berbentuk silang,"},
+      "role": "narration-only de-duplication of adjacent prose/glyph naming",
+      "restriction": "Replace only this exact spoken prefix-plus-glyph span. Do not remove any written source tokens or suppress names of the cross elsewhere."
+    }
+  ],
+  "synthetic_contrast_fixtures": [
+    {
+      "id": "A10-OPS-PROBE-3X",
+      "source_bound": false,
+      "source_coverage": "None: standalone MathML 3x is not present in the selected source span. This is an explicitly requested bounded contrast fixture only.",
+      "probe_mathml": "<m:math><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:math>",
+      "declared_probe_context": "Two-token coefficient-variable multiplication with single-letter variable x, not the ambiguous source typography question.",
+      "expected": {"jv-academic": "telu ping aksara eks", "jv-conversation": "telu ping aksara eks", "id-academic": "tiga kali huruf eks"},
+      "literal_notation": {"jv-academic": "telu diterusake aksara eks tanpa tandha ing antarane", "jv-conversation": "telu banjur aksara eks tanpa tandha ing antarane", "id-academic": "tiga diikuti huruf eks tanpa tanda di antaranya"},
+      "restriction": "Must be explicitly opted into as a test fixture. It is not a wildcard rule for other adjacent tokens, multi-letter identifiers, units, function calls, or source text."
+    },
+    {
+      "id": "A10-OPS-PROBE-XY",
+      "source_bound": false,
+      "source_coverage": "None as standalone MathML; actual source xy occurs in the prose fixture A10-OPS-P02.",
+      "probe_mathml": "<m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math>",
+      "declared_probe_context": "Product of explicitly declared separate single-letter variables x and y.",
+      "expected": {"jv-academic": "aksara eks ping aksara ye", "jv-conversation": "aksara eks ping aksara ye", "id-academic": "huruf eks kali huruf ye"},
+      "restriction": "Do not apply to <mi>xy</mi> or to the intentionally ambiguous source question before its alternatives."
+    }
+  ],
+  "fail_closed_cases": [
+    {"case": "Source module hash, anchor, ordinal, or exact element tree differs from a fixture", "result": "unsupported_source_bound_narration", "reason": "The file is a finite fixture set, not broad algebra parsing authority."},
+    {"case": "Bare menclose(a) with notation=longdiv and no registered outside divisor", "result": "unsupported_long_division_context", "reason": "The operand outside the enclosure is required; do not guess it."},
+    {"case": "Changed/reversed or multi-token long-division operands", "result": "unsupported_long_division_context", "reason": "Only the exact source b-outside/a-inside tree is registered. Never flatten it to b divided by a."},
+    {"case": "menclose has other notation or additional notation values/attributes", "result": "unsupported_enclosure_notation", "reason": "No radical, box, cancellation, or general enclosure semantics are authorized."},
+    {"case": "Fraction differs from the exact source a-over-b fixture, or has nested/extra children", "result": "unsupported_fraction_structure", "reason": "The source fixture does not establish general nested-fraction reading rules."},
+    {"case": "Slash appears in another element, text token, or expression context", "result": "unsupported_slash_context", "reason": "This stage registers only the source mtext slash alternative in the division table."},
+    {"case": "Unregistered juxtaposition, multi-letter mi, or function-like a(b) outside this table", "result": "unsupported_juxtaposition_context", "reason": "The source operation table licenses these local multiplication readings, not a global product rule."},
+    {"case": "Unary minus, negative numeric token, or unregistered ASCII hyphen used as arithmetic", "result": "unsupported_negative_or_operator_context", "reason": "Binary U+2212 subtraction is not a negative-number pronunciation rule."},
+    {"case": "Unknown MathML tag, operator, or semantic attribute", "result": "unsupported_math_structure", "reason": "Never silently flatten powers, subscripts, roots, attributes, or unknown operators."},
+    {"case": "Ellipsis outside this registered result heading and the separately registered A00 sequence contexts", "result": "unsupported_ellipsis_context", "reason": "A heading lead-in, omitted material, and infinite sequence have different narration."},
+    {"case": "TTS provider lacks explicit requested locale support", "result": "unsupported_voice_locale", "reason": "Do not silently speak a Javanese track with an Indonesian voice."}
+  ],
+  "qa_receipt": {
+    "draft_only": false,
+    "production_integration": "standalone offline reader and three-track SSML draft integrated; full assignment and human reviews pending",
+    "math_fixtures": 11,
+    "source_prose_fixtures": 3,
+    "synthetic_not_source_coverage": 2,
+    "structural_source_match": "pass: all 11 exact raw source MathML substrings and namespace-aware trees verified in their declared source anchors and one-based ordinals",
+    "read_only_checks": [
+      "Indonesian source module SHA256 matches the pinned module hash recorded here.",
+      "All 11 source MathML expressions are covered once, with no missing or duplicate anchor/ordinal pairs.",
+      "Every mathematical expected-reading fixture has all three nonempty register tracks.",
+      "All three prose-symbol source strings/fragments exist in the actual source module.",
+      "Five multiplication forms and four division forms are retained, with dividend a and divisor b explicitly fixed.",
+      "The 3x and xy MathML contrast probes are explicitly synthetic and excluded from source coverage.",
+      "The standalone build replays these exact fixtures deterministically and emits no synthesized audio; native and listening review remain pending."
+    ],
+    "human_language_review": false,
+    "synthesized_audio_files": 0,
+    "listening_review": false,
+    "provider_compatibility_tested": false
+  }
+}

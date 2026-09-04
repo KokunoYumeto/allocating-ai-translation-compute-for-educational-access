@@ -1,0 +1,139 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81291",
+  "section": "fs-id2314470",
+  "resolved_title": "Solve Equations with Fractions Using the Multiplication Property of Equality",
+  "scope": "Entire assigned subtree, including both nested coefficient subsections: multiplication property, five worked examples, all three methods for coefficient−1, all ten practice exercises and fifteen supplied solutions,38media occurrences using37unique rasters, seven table descriptions and both local links.",
+  "source_sha256": "729ab266737111c7cdd795ca6ddd887c41a9efcb2e802ab6ae46adfe3c13a195",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["WB04", "WB05", "WB10", "TR02", "TR03"],
+      "read": ["downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt:9-24", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png", "languages/bn-Beng-IN/terminology.tsv:T033,T034,T043,T044"],
+      "decision": "Reopen actual Bengali OCR and page images for coefficient, same-operation equality rule and same-value fraction conversion. WBp189 explicitly identifies the coefficient2ofx in2x+3 and coefficient1ofx in5xy+x+5. Use সহগ and চল, keeping product juxtaposition distinct from denominators. WBp227 attests the rule but not the exact formal property name. TRp51 supports nonzero same-value conversion; its erroneous mixed-conversion intermediate denominator is excluded. গুণাত্মক বিপরীত remains a declared editorial ledger term, not an invented local witness."
+    },
+    {
+      "stage": "during negative-coefficient and reciprocal drafting",
+      "examples": ["WB04", "WB05", "WB10", "TR02", "TR03"],
+      "read": ["downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt:9-16", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.txt:1-7", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt:9-24", "all37unique source images listed below"],
+      "decision": "Return to the actual coefficient and same-operation passages after drafting. Preserve negative signs through multiplication/division by−1. The source image correctly has(−1)(−y), although its table description omits the inner minus; correct only Bengali accessibility text. Make the coefficient's nonzero condition explicit for taking a reciprocal, while allowing zero in the forward multiplication property itself."
+    },
+    {
+      "stage": "pre-admission wording, source-math and domain review",
+      "examples": ["WB04", "WB05", "WB10", "TR02", "TR03"],
+      "read": ["downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt:9-16", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.txt:1-7", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt:9-24"],
+      "decision": "Reread the relevant excerpts after all15answers and five worked examples passed exact checks. Improve the opposite-number explanation to −yমানেy-এরবিপরীতসংখ্যা and inflect both local link labels as নিচেরউদাহরণে. Distinguish opposite from reciprocal, and coefficient1from a denominator. The source's numerical examples all have nonzero coefficients/divisors; no numerical source answer is changed."
+    }
+  ],
+  "editorial_decisions": [
+    {"source_ids": ["fs-id1972020", "fs-id2671633", "fs-id2385558"], "decision": "Multiplication preserves a true equality even for multiplier0; it need not preserve an equivalent solving step when the multiplier is0. Label that distinction explicitly. A reciprocal exists only for a nonzero coefficient. Do not incorrectly add c≠0to the original forward multiplication property."},
+    {"source_ids": ["fs-id1171103928012"], "decision": "Localize only linguistic mtext if→যদি and then→তবে. Use stable positional XPath selectors, not selectors matching the English text, so the gate can reverse the linguistic changes and verify all original mathematical tokens."},
+    {"source_ids": ["fs-id1510851"], "decision": "The nested title contains source MathML−1. Use a two-slot title nodes mapping to place Bengali text around that unchanged child, preserving the source number and order."},
+    {"source_ids": ["fs-id2174049", "fs-id1511313"], "decision": "Describe the prefix as a minus sign, not a claim that−yis always negative. Read−yas the opposite ofy; withy=−15the value−yis positive15. Keep opposite distinct from গুণাত্মক বিপরীত."},
+    {"source_ids": ["fs-id2949338", "fs-id1269302", "fs-id1207917", "fs-id2385558"], "decision": "Reorder Bengali clause wording around the existing child sequence so source MathML periods remain sentence boundaries. Preserve all formulas, commas, periods and the original mnminus-sign node in the negative reciprocal instruction."},
+    {"source_ids": ["fs-id1377485"], "decision": "Preserve the source comparison of division with reciprocal multiplication. Attribute the claim that most people find the latter easier to the source, rather than presenting it as an independently verified learner survey."},
+    {"source_ids": ["eip-id1165722216597", "eip-id1165719561991", "eip-id1165721301772", "eip-id1165721064926"], "decision": "Preserve original cols=2and three colspec nodes, entry/child order and all table attributes. Parent full-page integration remains responsible for actual layout review."},
+    {"source_ids": ["fs-id1965746", "fs-id2385558"], "decision": "Both local link targets exist in this subtree; preserve their target IDs and translate only labels/tails. No external destinations are introduced."}
+  ],
+  "source_errata": [
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": ["fs-id2671633", "fs-id2385558", "fs-id1972020"],
+      "source_issue": "The general fraction-coefficient strategy omits the requirement that the coefficient be nonzero before taking its reciprocal. The multiplication property itself correctly permits any multiplier, including zero.",
+      "bengali_correction": "শূন্যের গুণাত্মক বিপরীত নেই; সহগ অশূন্য হলেই তার গুণাত্মক বিপরীত দিয়ে গুণ করে সহগ 1 করা যায়। শূন্য দিয়ে গুণ করলেও সমতা সত্য থাকে, কিন্তু উল্টো ধাপে শূন্য দিয়ে ভাগ করা যায় না।",
+      "policy": "Add labelled domain explanations for solving, not a false nonzero restriction on the forward multiplication property; preserve original formulas.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_aria_corrected",
+      "source_ids": ["eip-id1168468554901", "eip-id1165721889179"],
+      "source_issue": "The English table aria description omits the minus sign on y in the multiplication step, saying negative1timesy instead of negative1timesnegativey.",
+      "evidence": "Directly inspected CNX_BMath_Figure_04_07_033_img-02.png; it shows(−1)(−y)=(−1)(15), with both outer−1multipliers red.",
+      "bengali_correction": "(−1)(−y) = (−1)(15), তাই y = −15। বাম পক্ষের দ্বিতীয় গুণনীয়ক −y, শুধু y নয়।",
+      "policy": "Correct Bengali accessibility text to the actual correct source image; preserve original pixels and all math.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_aria_corrected",
+      "source_ids": ["eip-id1168469681151", "eip-id1165722196473"],
+      "source_issue": "The English aria description calls the first displayed line y=−15; the actual first image is the original equation−y=15.",
+      "evidence": "Directly inspected CNX_BMath_Figure_04_07_034a_img.jpg and the following034-02/03check images.",
+      "bengali_correction": "মূল সমীকরণ −y = 15-তে y-এর জায়গায় −15 বসাও।",
+      "policy": "Match the original displayed sequence without claiming the algebraically equivalent solution value is wrong.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_prose_corrected",
+      "source_ids": ["fs-id4280485", "eip-id1165722229925"],
+      "source_issue": "The source prose duplicates isolated in one sentence, and image030-05contains the duplicated phrase forxin in the instruction Substitute−63forxforintheoriginalequation.",
+      "evidence": "Read exact paragraph and directly inspected CNX_BMath_Figure_04_07_030_img-05.png.",
+      "bengali_correction": "তিনটি পদ্ধতিতেই চলটিকে একলা রেখে সমীকরণ সমাধান করা হয়েছে। যাচাইয়ের নির্দেশ: মূল সমীকরণে x-এর জায়গায় −63 বসাও।",
+      "policy": "Translate the intended grammatical instruction; retain original raster typo and source structure.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {"files": ["CNX_BMath_Figure_04_07_030_img-01.png", "CNX_BMath_Figure_04_07_030_img-02.png", "CNX_BMath_Figure_04_07_030_img-03.png", "CNX_BMath_Figure_04_07_030_img-04.png", "CNX_BMath_Figure_04_07_030_img-05.png", "CNX_BMath_Figure_04_07_030_img-06.png", "CNX_BMath_Figure_04_07_030_img-07.png"], "observed": "All7actualfilesviewed: x/7=−9;red7multipliers;7x/7=−63;x=−63;checkcaptionwithduplicatedfor;red−63/7 ?=−9;−9=−9withtick."},
+    {"files": ["CNX_BMath_Figure_04_07_031_img-01.png", "CNX_BMath_Figure_04_07_031_img-02.png", "CNX_BMath_Figure_04_07_031_img-03.png", "CNX_BMath_Figure_04_07_031_img-04.png", "CNX_BMath_Figure_04_07_031_img-05.png", "CNX_BMath_Figure_04_07_031_img-06.png"], "observed": "All6actualfilesviewed: p/(−8)=−40;red−8multipliers;(−8p)/(−8)=320;p=320;red320/(−8) ?=−40;−40=−40withtick. Imagepislowercase."},
+    {"files": ["CNX_BMath_Figure_04_07_032_img-01.png", "CNX_BMath_Figure_04_07_032_img-02.png", "CNX_BMath_Figure_04_07_032_img-03.png", "CNX_BMath_Figure_04_07_032_img-04.png"], "observed": "All4actualfilesviewed:−y=15;(−1)y=15;dividebyred−1bothsides;y=−15."},
+    {"files": ["CNX_BMath_Figure_04_07_034a_img.jpg", "CNX_BMath_Figure_04_07_033_img-02.png", "CNX_BMath_Figure_04_07_033_img-03.png", "CNX_BMath_Figure_04_07_034_img-02.png", "CNX_BMath_Figure_04_07_034_img-03.png"], "observed": "All5uniqueactualfilesviewed.034ais−y=15andoccursin2media nodes.033-02is(−1)(−y)=(−1)(15)withredouter−1,theny=−15.034-02shows−(−15) ?=(15),withinner−15red;lastis15=15withtick."},
+    {"files": ["CNX_BMath_Figure_04_07_035_img-01.png", "CNX_BMath_Figure_04_07_035_img-02.png", "CNX_BMath_Figure_04_07_035_img-03.png", "CNX_BMath_Figure_04_07_035_img-04.png", "CNX_BMath_Figure_04_07_035_img-05.png", "CNX_BMath_Figure_04_07_035_img-06.png", "CNX_BMath_Figure_04_07_035_img-07.png", "CNX_BMath_Figure_04_07_035_img-08.png"], "observed": "All8actualfilesviewed: (3/4)x=24;red4/3multipliers;1x=(4/3)(24/1);x=32;originalequation;(3/4)×32 ?=24;(3/4)(32/1) ?=24;24=24withtick. Variablexisoutsidethefractiondenominator."},
+    {"files": ["CNX_BMath_Figure_04_07_036a_img.jpg", "CNX_BMath_Figure_04_07_036_img-02.png", "CNX_BMath_Figure_04_07_036_img-03.png", "CNX_BMath_Figure_04_07_036_img-04.png", "CNX_BMath_Figure_04_07_036_img-05.png", "CNX_BMath_Figure_04_07_036_img-06.png", "CNX_BMath_Figure_04_07_036_img-07.png"], "observed": "All7actualfilesviewed:(−3/8)w=72;red−8/3multipliers;1w=(−8/3)(72/1);w=−192;originalequation;(−3/8)(−192) ?=72;72=72withtick. Variablewisoutsidethefractiondenominator."}
+  ],
+  "answer_checks": [
+    {"exercise_id": "fs-id1919354", "solution_id": "fs-id1760611", "result": "−63", "check": "Exact sourcex/7=−9;−63/7=−9. All multiply/simplify/check raster stages agree."},
+    {"exercise_id": "fs-id2730090", "solution_id": "fs-id2703738", "result": "−125", "check": "Exact sourcef/5=−25;−125/5=−25. Source numerical answer matched."},
+    {"exercise_id": "fs-id2341035", "solution_id": "fs-id1505825", "result": "−243", "check": "Exact sourceh/9=−27;−243/9=−27. Source numerical answer matched."},
+    {"exercise_id": "fs-id2619535", "solution_id": "fs-id1508708", "result": "320", "check": "Exact sourcep/(−8)=−40;320/(−8)=−40and(−8)(−40)=320. All raster stages agree."},
+    {"exercise_id": "fs-id1360285", "solution_id": "fs-id1816572", "result": "245", "check": "Exact sourcec/(−7)=−35;245/(−7)=−35. Source numerical answer matched."},
+    {"exercise_id": "fs-id1852419", "solution_id": "fs-id1374192", "result": "132", "check": "Exact sourcex/(−11)=−12;132/(−11)=−12. Source numerical answer matched."},
+    {"exercise_id": "fs-id2900588", "solution_id": "fs-id1333241", "result": "−15", "check": "Source−y=15. Three methods verified:15/(−1)=−15;multiplyoriginalby−1toobtainy=−15;oppositeof15is−15. Substitution−(−15)=15andallactualrasterstagesagree."},
+    {"exercise_id": "fs-id1784080", "solution_id": "fs-id1727938", "result": "−48", "check": "Exact source−y=48;−(−48)=48. Source numerical answer matched."},
+    {"exercise_id": "fs-id4114386", "solution_id": "fs-id2484398", "result": "23", "check": "Exact source−c=−23;−(23)=−23. Source numerical answer matched."},
+    {"exercise_id": "fs-id2697498", "solution_id": "fs-id2314247", "result": "32", "check": "Exact source(3/4)x=24;(4/3)(3/4)=1;(4/3)24=32;substitution(3/4)32=24. All raster stages agree."},
+    {"exercise_id": "fs-id2587473", "solution_id": "fs-id2268161", "result": "35", "check": "Exact source(2/5)n=14;(2/5)35=14. Source numerical answer matched."},
+    {"exercise_id": "fs-id1364690", "solution_id": "fs-id2751101", "result": "18", "check": "Exact source(5/6)y=15;(5/6)18=15. Source numerical answer matched."},
+    {"exercise_id": "fs-id1166761301642", "solution_id": "fs-id1160263", "result": "−192", "check": "Exact source(−3/8)w=72;(−8/3)(−3/8)=1;(−8/3)72=−192;substitution(−3/8)(−192)=72. All raster stages agree."},
+    {"exercise_id": "fs-id2299983", "solution_id": "fs-id1355542", "result": "−91", "check": "Exact source(−4/7)a=52;(−4/7)(−91)=52. Source numerical answer matched."},
+    {"exercise_id": "fs-id1345691", "solution_id": "fs-id1906006", "result": "−108", "check": "Exact source(−7/9)w=84;(−7/9)(−108)=84. Source numerical answer matched."}
+  ],
+  "language_gaps": ["Actual WB coefficient and equality-operation witnesses do not directly cover the negative fractional reciprocal-solving examples. The exact reciprocal and formal property names remain editorial ledger terms. These gaps are not filled by pretending to have a local source example.", "Independent West Bengal language, teacher, learner and assistive-technology review remains pending; no certification or complete topic coverage is claimed."],
+  "accessibility_refinement": {
+    "date": "2026-08-31",
+    "reason": "Parent peer-review criterion: name numerator and denominator at the first appearance of each distinct fraction in raster alt text.",
+    "consultations": [
+      {"stage": "before", "read": ["SCERT-Tripura-VI/p050.txt", "SCERT-Tripura-VI/p050.png", "WB-Class7-Learning-Bridge/p181.txt:31-39"], "decision": "Use actual TR01 and WB02 wording লব ও হর for numeric and algebraic fractions; retain variables outside a fractional coefficient."},
+      {"stage": "during", "read": ["SCERT-Tripura-VI/p050.txt:3-10", "WB-Class7-Learning-Bridge/p181.txt:31-38"], "decision": "Keep a negative denominator, a negative numerator and an outer minus distinct. Name a product numerator as a product, not an additional denominator."},
+      {"stage": "pre-QA", "read": ["SCERT-Tripura-VI/p050.txt:3-10", "WB-Class7-Learning-Bridge/p181.txt:31-38", "CNX_BMath_Figure_04_07_030_img-06.png", "CNX_BMath_Figure_04_07_032_img-03.png", "CNX_BMath_Figure_04_07_036a_img.jpg"], "decision": "Actual030-06 places−63 in the numerator; corrected the draft alt accordingly. Actual032-03 divides both sides by−1. Actual036a has the minus outside3/8 and w outside the fraction. Preserve question marks above equality signs."}
+    ],
+    "changed_media_ids": ["eip-id1165722257411", "eip-id1165721889424", "eip-id1165722071497", "eip-id1165719562032", "eip-id1165721139770", "eip-id1165721139826", "eip-id1165719562819", "eip-id1165722064490", "eip-id1165721576149", "eip-id1165721983600", "eip-id1165722071394", "eip-id1165719630512", "eip-id1165719630543", "eip-id1165719630564"],
+    "distinct_fraction_forms": ["x/7", "7x/7", "(−63)/7", "p/(−8)", "(−8p)/(−8)", "320/(−8)", "((−1)y)/(−1)", "15/(−1)", "3/4", "4/3", "24/1", "32/1", "−3/8", "−8/3", "72/1"],
+    "result": "Fourteen alt entries refined. Original math/pixels/IDs and both linguistic mtext mappings unchanged; prior15exact solution checks retained. Read-only translated/render gate passed and source_errata still mirror the overlay. Parent refreshed visual review and independent AT validation remain pending."
+  },
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "c9ad52eab8db3a331b0627fd231362d3cdc5c7ab856f62c321a4243d13129185",
+    "method": "Read-only build.translated() and in-memory render_cnxml(study_labels=True). All15providedanswers checked by exact rational substitution into source-XML equations; all10practice numeric source answers matched. All5workedexamples including3methodsfor−y=15 checked against actual images and exact arithmetic. Zero-multiplier check preserves forward equality while0×2=0×5doesnotimply2=5. Exact exercise/solution-ID relation and HTML-ID uniqueness verified. Math signature unchanged after reversing the2explicit linguistic mtext mappings. No shared-script/media/generated-output writes.",
+    "nodes": 695,
+    "ids": 153,
+    "mathml": 64,
+    "linguistic_mtext_replacements": 2,
+    "paragraphs": 42,
+    "paragraph_mappings": 32,
+    "node_slot_mappings": 34,
+    "examples": 5,
+    "exercises": 15,
+    "supplied_solutions": 15,
+    "source_absent_solutions": 0,
+    "images": 38,
+    "unique_images_actually_inspected": 37,
+    "tables": 7,
+    "translated_aria_labels": 7,
+    "links": 2,
+    "html_fragment_characters": 32925,
+    "english_prose_gate": "passed",
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integration and actual desktop/narrow visual review remain required. Continue immediately with the entire owned m81291/fs-id1966292 Section Exercises block; the whole assignment remains active.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

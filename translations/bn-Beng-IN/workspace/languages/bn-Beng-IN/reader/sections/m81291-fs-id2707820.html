@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="bn-Beng-IN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>কোনো ভগ্নাংশ একটি সমীকরণের সমাধান কি না নির্ণয় করা</title><style>body{font-family:"Nirmala UI","Noto Sans Bengali",sans-serif;color:#182d39;background:#f7f5ef;margin:0;font-size:19px;line-height:1.85}main{max-width:900px;margin:auto;padding:32px 24px;background:white}nav{padding:14px 0;border-bottom:2px solid #14685e}a{color:#075b6b}h1,h2{line-height:1.5;color:#104d48}h1{font-size:2rem}h2{font-size:1.3rem;margin-top:1.7em}p,li{overflow-wrap:anywhere}li{padding:6px 0}aside,.example{border-left:4px solid #157468;padding:8px 20px;margin:24px 0;background:#eff8f4}.solution{padding:8px 14px;background:#f7f7f3}.media{text-align:center;margin:20px 0}img{max-width:100%;height:auto;max-height:280px}math{font-size:1.1em;direction:ltr}.description,.notice{font-size:0.85em;color:#43535a}.notice{border:1px solid #9bafa9;padding:16px}footer{border-top:1px solid #9bafa9;margin-top:36px;padding:16px 0}@media(max-width:480px){main{padding:18px 14px}body{font-size:18px}aside,.example{padding:6px 10px}}@media print{body{background:white;font-size:12pt}main{padding:0}nav{display:none}h2{break-after:avoid}img{max-height:50mm}.example,li{break-inside:avoid}}table{width:100%;border-collapse:collapse;table-layout:fixed}td{padding:8px;vertical-align:top;overflow-wrap:anywhere;border-bottom:1px solid #d5e0dc}td .media{margin:6px 0}td img{max-height:140px}td math{font-size:1em}ol.circled{list-style:none}.math-scroll{display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle;padding:4px 0}.math-scroll:focus{outline:2px solid #14685e}.math-scroll math{white-space:nowrap}menclose[notation~="longdiv"]{display:inline-block;border-top:1.5px solid currentColor;border-left:1.5px solid currentColor;border-top-left-radius:0.35em;padding:0.05em 0.25em 0.05em 0.2em;margin-left:0.12em}menclose[notation~="updiagonalstrike"]{display:inline-block;background:linear-gradient(135deg,transparent calc(50% - 0.65px),currentColor calc(50% - 0.65px),currentColor calc(50% + 0.65px),transparent calc(50% + 0.65px))}.exercise{border:1px solid #aec4bb;padding:10px 12px;margin:18px 0}.exercise-label,.solution-label{font-size:0.8em;color:#43535a;margin:0 0 8px}.solution-label{font-weight:bold}.exercise .solution{margin-top:14px}</style></head><body><main><nav aria-label="পাঠ নির্বাচন"><a href="../index.html">পাঠসূচি</a> · <a href="../U01-companion.html">সহজ ভাষার সহায়িকা</a> · <a href="../U01-source-faithful.html">উৎস-অনুগত নির্বাচিত পাঠ</a></nav><h1>কোনো ভগ্নাংশ একটি সমীকরণের সমাধান কি না নির্ণয় করা</h1><p class="notice">উৎস-অনুগত উপবিভাগ · m81291-fs-id2707820। সম্পূর্ণ বইয়ের অনুবাদ এখনও চলছে। গাণিতিক চিহ্ন, সংখ্যা ও মূল কাঠামো অক্ষুণ্ণ; প্রযোজ্য ক্ষেত্রে সূত্রের শব্দলেবেল বাংলায় অনূদিত। মূল ছবির ভিতরের ইংরেজি লেবেলের অর্থ বাংলা বিবরণে আছে। স্বাধীন শিক্ষক ও ভাষা-পর্যালোচনা বাকি। অন্য উপবিভাগের উৎস-লিঙ্কে ইন্টারনেট প্রয়োজন।</p><section id="fs-id2707820" class="section">
+<h2 class="title">কোনো ভগ্নাংশ একটি সমীকরণের সমাধান কি না নির্ণয় করা</h2>
+<p id="fs-id2134601" class="para">আমরা <a href="https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m81271/index.cnxml">সমতার বিয়োগের ও যোগের ধর্ম ব্যবহার করে সমীকরণ সমাধান</a> এবং <a href="https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m81281/index.cnxml">পূর্ণসংখ্যা ব্যবহার করে সমীকরণ সমাধান; সমতার ভাগের ধর্ম</a> পাঠে দেখেছি, সমীকরণে চলের জায়গায় যে মান বসালে সমতা সত্য হয়, সেই মানটি সমীকরণের একটি সমাধান। ওই পাঠগুলিতে আমরা সমীকরণের অঋণাত্মক পূর্ণসংখ্যা ও পূর্ণসংখ্যা সমাধান পেয়েছি। এখন ভগ্নাংশ নিয়ে কাজ করা হয়ে গেছে; তাই আমরা সমীকরণের ভগ্নাংশ সমাধান নির্ণয় করতে প্রস্তুত।</p><p id="fs-id1610617" class="para">কোনো সংখ্যা সমীকরণের সমাধান কি না নির্ণয় করার ধাপগুলি একই থাকে—সংখ্যাটি অঋণাত্মক পূর্ণসংখ্যা, পূর্ণসংখ্যা বা ভগ্নাংশ যা-ই হোক।</p>
+<aside id="fs-id1378369" class="note"><h2 class="title">কোনো সংখ্যা একটি সমীকরণের সমাধান কি না নির্ণয় করো।</h2><ol id="eip-id1168469777675"><li class="item">সমীকরণে চলের জায়গায় সংখ্যাটি বসাও।</li>
+<li class="item">সমীকরণের দুই পক্ষের রাশি সরল করো।</li>
+<li class="item">পাওয়া সমতাটি সত্য কি না নির্ণয় করো। সত্য হলে সংখ্যাটি একটি সমাধান। সত্য না হলে সংখ্যাটি সমাধান নয়।</li>
+</ol></aside><section id="fs-id1610002" class="example">
+<div id="fs-id1693128" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1693128">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id1221828" class="problem">
+<p id="fs-id3399510" class="para">নিচের প্রতিটি মান এই সমীকরণের সমাধান কি না নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>−</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>.</mo></mrow></math></p>
+<div id="fs-id2605979" class="para"><ol id="eip-id1168469607931" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>1</mn></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mo>−</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></math></li></ol></div>
+
+</div>
+<section id="fs-id1257840" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168468728112" class="table" aria-label="সমীকরণ x − 3/10 = 1/2। x-এর জায়গায় 1 বসিয়ে দুই পক্ষ সমান কি না পরীক্ষা করো। লঘিষ্ঠ সাধারণ হর 10 নিয়ে 10/10 − 3/10 এবং 5/10 তুলনা করো। বিয়োগে 7/10 পাওয়া যায়, যা 5/10-এর সমান নয়। তাই 1 সমাধান নয়।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry"><span class="span">ⓐ</span> </td>
+   <td class="entry"></td>
+ </tr>
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><div id="eip-id1165721310561" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_025_img-02.png" alt="সমীকরণ: x − 3/10 = 1/2। 3/10-এর লব 3 ও হর 10; 1/2-এর লব 1 ও হর 2।"/><p class="description">সমীকরণ: x − 3/10 = 1/2। 3/10-এর লব 3 ও হর 10; 1/2-এর লব 1 ও হর 2।</p></div></td>
+ </tr>
+ <tr class="row">
+   <td class="entry"><div id="eip-id1168468269679" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_025_img-01.png" alt="নির্দেশ: x-এর জায়গায় 1 বসাও। বসানোর সংখ্যা 1 লাল রঙে।"/><p class="description">নির্দেশ: x-এর জায়গায় 1 বসাও। বসানোর সংখ্যা 1 লাল রঙে।</p></div></td>
+<td class="entry"><div id="eip-id1168467291115" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_025_img-03.png" alt="1 − 3/10 এবং 1/2 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। বসানো 1 লাল রঙে।"/><p class="description">1 − 3/10 এবং 1/2 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। বসানো 1 লাল রঙে।</p></div></td>
+ </tr>
+ <tr class="row">
+   <td class="entry">লঘিষ্ঠ সাধারণ হর 10 নিয়ে সমতুল ভগ্নাংশে প্রকাশ করো।</td>
+   <td class="entry"><div id="eip-id1165722250309" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_025_img-04.png" alt="10/10 − 3/10 এবং 5/10 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। 10/10 লাল রঙে; এর লব ও হর উভয়ই 10। 5/10-এর লব 5 ও হর 10।"/><p class="description">10/10 − 3/10 এবং 5/10 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। 10/10 লাল রঙে; এর লব ও হর উভয়ই 10। 5/10-এর লব 5 ও হর 10।</p></div></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">বিয়োগ করো।</td>
+   <td class="entry"><div id="eip-id1165721405747" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_025_img-05.png" alt="বিয়োগের পরে 7/10 ≠ 5/10; দুই পক্ষ সমান নয়। 7/10-এর লব 7 ও হর 10।"/><p class="description">বিয়োগের পরে 7/10 ≠ 5/10; দুই পক্ষ সমান নয়। 7/10-এর লব 7 ও হর 10।</p></div></td>
+ </tr>
+
+</tbody>
+
+
+
+
+
+
+</table><p id="eip-id1170323816529" class="para">যেহেতু <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>1</mn></math> বসালে সমতা সত্য হয় না, তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> সমীকরণটির সমাধান নয়।</p><table id="eip-id1168469686493" class="table" aria-label="সমীকরণ x − 3/10 = 1/2। x-এর জায়গায় 4/5 বসাও। 8/10 − 3/10 = 5/10 হয়; বাম ও ডান পক্ষ সমান। তাই 4/5 একটি সমাধান।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry"><span class="span">ⓑ</span> </td>
+   <td class="entry"></td>
+ </tr>
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><div id="eip-id1165719644872" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_026_img-02.png" alt="সমীকরণ: x − 3/10 = 1/2।"/><p class="description">সমীকরণ: x − 3/10 = 1/2।</p></div></td>
+ </tr>
+ <tr class="row">
+   <td class="entry"><div id="eip-id1168466312566" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_026_img-01.png" alt="নির্দেশ: x-এর জায়গায় 4/5 বসাও। বসানোর ভগ্নাংশ 4/5 লাল রঙে; এর লব 4 ও হর 5।"/><p class="description">নির্দেশ: x-এর জায়গায় 4/5 বসাও। বসানোর ভগ্নাংশ 4/5 লাল রঙে; এর লব 4 ও হর 5।</p></div></td>
+   <td class="entry"><div id="eip-id1165719644897" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_026_img-03.png" alt="4/5 − 3/10 এবং 1/2 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। বসানো 4/5 লাল রঙে।"/><p class="description">4/5 − 3/10 এবং 1/2 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। বসানো 4/5 লাল রঙে।</p></div></td>
+ </tr>
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><div id="eip-id1168469768782" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_026_img-04.png" alt="8/10 − 3/10 এবং 5/10 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। 8/10 লাল রঙে; এর লব 8 ও হর 10।"/><p class="description">8/10 − 3/10 এবং 5/10 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। 8/10 লাল রঙে; এর লব 8 ও হর 10।</p></div></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">বিয়োগ করো।</td>
+   <td class="entry"><div id="eip-id1165719634019" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_026_img-05.png" alt="বিয়োগের পরে 5/10 = 5/10; পাশে ঠিকচিহ্ন। দুই পক্ষ সমান।"/><p class="description">বিয়োগের পরে 5/10 = 5/10; পাশে ঠিকচিহ্ন। দুই পক্ষ সমান।</p></div></td>
+ </tr>
+
+</tbody>
+
+
+
+
+
+</table><p id="fs-id2085823" class="para">যেহেতু <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>=</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></math> বসালে সমতা সত্য হয়, তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></math> এই সমীকরণের একটি সমাধান: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>−</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>.</mo></mrow></math></p>
+<table id="eip-id1168468469809" class="table" aria-label="সমীকরণ x − 3/10 = 1/2। x-এর জায়গায় −4/5 বসাও। −8/10 − 3/10 = −11/10 হয়, যা ডান পক্ষের 5/10-এর সমান নয়। তাই −4/5 সমাধান নয়।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry"><span class="span">ⓒ</span> </td>
+   <td class="entry"></td>
+ </tr>
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><div id="eip-id1165721076579" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_027_img-02.png" alt="সমীকরণ: x − 3/10 = 1/2।"/><p class="description">সমীকরণ: x − 3/10 = 1/2।</p></div></td>
+ </tr>
+ <tr class="row">
+   <td class="entry"><div id="eip-id1168467339013" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_027_img-01.png" alt="নির্দেশ: x-এর জায়গায় −4/5 বসাও। বসানোর ঋণাত্মক ভগ্নাংশ −4/5 লাল রঙে। এখানে 4/5-এর লব 4 ও হর 5; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।"/><p class="description">নির্দেশ: x-এর জায়গায় −4/5 বসাও। বসানোর ঋণাত্মক ভগ্নাংশ −4/5 লাল রঙে। এখানে 4/5-এর লব 4 ও হর 5; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।</p></div></td>
+   <td class="entry"><div id="eip-id1165721076605" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_027_img-03.png" alt="−4/5 − 3/10 এবং 1/2 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। বসানো −4/5 লাল রঙে।"/><p class="description">−4/5 − 3/10 এবং 1/2 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। বসানো −4/5 লাল রঙে।</p></div></td>
+ </tr>
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><div id="eip-id1165721076620" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_027_img-04.png" alt="−8/10 − 3/10 এবং 5/10 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। −8/10 লাল রঙে। এখানে 8/10-এর লব 8 ও হর 10; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।"/><p class="description">−8/10 − 3/10 এবং 5/10 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। −8/10 লাল রঙে। এখানে 8/10-এর লব 8 ও হর 10; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।</p></div></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">বিয়োগ করো।</td>
+   <td class="entry"><div id="eip-id1165721190585" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_027_img-05.jpg" alt="বিয়োগের পরে −11/10 ≠ 5/10; দুই পক্ষ সমান নয়। এখানে 11/10-এর লব 11 ও হর 10; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।"/><p class="description">বিয়োগের পরে −11/10 ≠ 5/10; দুই পক্ষ সমান নয়। এখানে 11/10-এর লব 11 ও হর 10; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।</p></div></td>
+ </tr>
+
+</tbody>
+
+
+
+
+
+</table><p id="fs-id2932772" class="para">যেহেতু <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></math> বসালে সমতা সত্য হয় না, তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></math> সমীকরণটির সমাধান নয়।</p>
+</section>
+</div></section>
+<aside id="fs-id3202653" class="note">
+<div id="fs-id2661471" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2661471">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1630889" class="problem">
+<p id="fs-id2207102" class="para">প্রতিটি সংখ্যা প্রদত্ত সমীকরণের সমাধান কি না নির্ণয় করো।</p>
+<div id="fs-id1372300" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></math>:
+
+<ol id="eip-id1168468724014" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>1</mn></math></li>
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mfrac><mn>5</mn><mn>6</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mo>−</mo><mfrac><mn>5</mn><mn>6</mn></mfrac></math></li></ol></div></div>
+<section id="fs-id2967099" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id1891834" class="para"><ol id="eip-id1168469874245" class="circled"><li class="item"><span class="span">ⓐ</span> না</li>
+<li class="item"><span class="span">ⓑ</span> হ্যাঁ</li><li class="item"><span class="span">ⓒ</span> না</li></ol></div></section>
+</div>
+</aside>
+<aside id="fs-id2275839" class="note">
+<div id="fs-id1302600" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1302600">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1402015" class="problem">
+<p id="fs-id1613404" class="para">প্রতিটি সংখ্যা প্রদত্ত সমীকরণের সমাধান কি না নির্ণয় করো।</p>
+<div id="fs-id2619446" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></math>:
+<ol id="eip-id1168468773463" class="circled"><li class="item"><span class="span">ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mn>1</mn></math></li>
+
+<li class="item"><span class="span">ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>5</mn><mn>8</mn></mfrac></math></li>
+<li class="item"><span class="span">ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mfrac><mn>5</mn><mn>8</mn></mfrac></math></li></ol></div></div>
+<section id="fs-id4216216" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id1542145" class="para"><ol id="eip-id1168468557619" class="circled"><li class="item"><span class="span">ⓐ</span> না</li><li class="item"><span class="span">ⓑ</span> না</li><li class="item"><span class="span">ⓒ</span> হ্যাঁ</li></ol></div></section>
+</div>
+</aside>
+</section><footer>OpenStax, Rice University · Prealgebra 2e · Lynn Marecek, MaryAnne Anthony-Smith, Andrea Honeycutt Mathis। <a href="../../provenance/pilot/m81241.source.cnxml">পূর্ণ উৎস-স্বীকৃতি</a> · <a href="../../provenance/A00/repository/LICENSE">CC BY-NC-SA 4.0</a>। অনানুষ্ঠানিক অনুবাদ; মূল প্রকাশকের অনুমোদন দাবি করা হচ্ছে না।</footer></main></body></html>

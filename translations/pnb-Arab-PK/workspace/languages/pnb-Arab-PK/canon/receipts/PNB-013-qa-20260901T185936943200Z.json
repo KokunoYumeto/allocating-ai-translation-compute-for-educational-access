@@ -1,0 +1,90 @@
+{
+  "stage": "qa",
+  "unit": "PNB-013",
+  "read_at": "2026-09-01T18:59:36.9432006Z",
+  "readable_sources": [
+    {
+      "path": "downloads/canon/pnb-Arab-PK/R1.txt",
+      "displayed_lines": [28, 35, 39],
+      "purpose": "Ability, direct-instruction and plural-agreement review"
+    },
+    {
+      "path": "downloads/canon/pnb-Arab-PK/R2.txt",
+      "displayed_lines": [27],
+      "purpose": "Purpose and explicit-alternative constructions"
+    },
+    {
+      "path": "downloads/canon/pnb-Arab-PK/R3.txt",
+      "displayed_lines": [25, 31],
+      "purpose": "Qualification, reminder and reason-giving register"
+    }
+  ],
+  "examples": [
+    {
+      "id": "C01",
+      "quote": "بیان کیتی جا سکدی اے",
+      "source_sha256": "31880244e24591f07bd2a8038825a4c765443168d37cbc84e17d45ef61cf13f0",
+      "paragraph_sha256": "eac51d99935bf7cd3b52fda2c10fbe88a864450617e46e944730317cc34c7d84",
+      "source_url": "https://www.rvel.org/detail.php?id=2835",
+      "application": "Rechecked possibility constructions such as ہو سکدی اے without substituting Urdu agreement."
+    },
+    {
+      "id": "C02",
+      "quote": "پڑھنا چاہیدا اے",
+      "source_sha256": "31880244e24591f07bd2a8038825a4c765443168d37cbc84e17d45ef61cf13f0",
+      "paragraph_sha256": "0cde33a4c138f111941e792c0c976a0d89983d721c5be29f089575df79f5ce79",
+      "source_url": "https://www.rvel.org/detail.php?id=2835",
+      "application": "Rechecked direct exercise instructions and retained Punjabi verbal phrasing."
+    },
+    {
+      "id": "C04",
+      "quote": "صفحے گھٹ ودھ وی ہوندے رہے",
+      "source_sha256": "31880244e24591f07bd2a8038825a4c765443168d37cbc84e17d45ef61cf13f0",
+      "paragraph_sha256": "2b8bfffa5cc63fcf6c267d51dbed8c23de3ec997bc4c0a6bf6299ef78d209e49",
+      "source_url": "https://www.rvel.org/detail.php?id=2835",
+      "application": "Actual passage reread after detecting the malformed older receipt hash; fixed the attached plural verb بدلدے in fs-id1165137784644."
+    },
+    {
+      "id": "C05",
+      "quote": "تاں جے",
+      "source_sha256": "3ba215ebb2e83467d0c598cf2ccc80b22511df0bf6c9ab29cd87b257a645129c",
+      "paragraph_sha256": "72bb037525ad637734749223f67c982684b18e0c3cd0b2f14bc9961ee08d2612",
+      "source_url": "https://www.rvel.org/detail.php?id=1234",
+      "application": "Rechecked purpose clauses and kept them distinct from mathematical implication."
+    },
+    {
+      "id": "C06",
+      "quote": "دی بجائے",
+      "source_sha256": "3ba215ebb2e83467d0c598cf2ccc80b22511df0bf6c9ab29cd87b257a645129c",
+      "paragraph_sha256": "72bb037525ad637734749223f67c982684b18e0c3cd0b2f14bc9961ee08d2612",
+      "source_url": "https://www.rvel.org/detail.php?id=1234",
+      "application": "Rechecked explicit alternatives while preserving the source distinction between average speed and average velocity."
+    },
+    {
+      "id": "C09",
+      "quote": "چیتے رہوے کہ",
+      "source_sha256": "004d82c40a5a86f1ce4363543996668d4d5303b7973abe3d69acc0a1989e9b85",
+      "paragraph_sha256": "c3dabcb3a5fe6c7cc8b9280619629db52ed3e6de05b5b22bc6b95b003693aea8",
+      "source_url": "https://rvel.org/detail.php?id=1283",
+      "application": "Rechecked reminder wording in analysis passages."
+    },
+    {
+      "id": "C10",
+      "quote": "وضاحت منگدی اے",
+      "source_sha256": "004d82c40a5a86f1ce4363543996668d4d5303b7973abe3d69acc0a1989e9b85",
+      "paragraph_sha256": "f47f928b8d5161570f8bb7e22b2a0f2870aed287c55936fe7fba6c0ae95a8b5a",
+      "source_url": "https://rvel.org/detail.php?id=1283",
+      "application": "Rechecked qualification register for the source extrema and denominator ambiguities."
+    },
+    {
+      "id": "C11",
+      "quote": "کیوں جے",
+      "source_sha256": "004d82c40a5a86f1ce4363543996668d4d5303b7973abe3d69acc0a1989e9b85",
+      "paragraph_sha256": "493c1b16a6e78397262021a2dc823b6e455d3fa7e814f1608990ce11fcf1413a",
+      "source_url": "https://rvel.org/detail.php?id=1283",
+      "application": "Rechecked reason-giving clauses in worked analysis without treating prose as mathematical terminology authority."
+    }
+  ],
+  "supersedes_for_pnb_013_qa": "PNB-013-part-b-qa-20260901T161640022860Z.json",
+  "claim": "The displayed readable Shahmukhi passages were actually reread for whole-unit QA. This corrects a receipt-level C04 hash typo without editing the older record; it is register evidence, not native-speaker or mathematical terminology certification."
+}

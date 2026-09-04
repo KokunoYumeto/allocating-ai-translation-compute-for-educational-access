@@ -1,0 +1,338 @@
+{
+  "schema": "jv-source-bound-narration-fixtures-v1",
+  "status": "draft_provider_neutral_not_synthesized_not_listening_reviewed",
+  "date": "2026-08-31",
+  "purpose": "AX-2 exact-source narration fixtures for the complete bounded A10 grouping-symbol introduction; not training or fine-tuning data.",
+  "tracks": [
+    "jv-academic",
+    "jv-conversation",
+    "id-academic"
+  ],
+  "locales": {
+    "jv-academic": "jv-Latn-ID",
+    "jv-conversation": "jv-Latn-ID",
+    "id-academic": "id-ID"
+  },
+  "scope": {
+    "unit": "a10-grouping-symbols",
+    "module": "m82453",
+    "section": "fs-id1170655150800",
+    "direct_child_slice_zero_based": [
+      23,
+      28
+    ],
+    "context_title_retained": true,
+    "first_anchor": "fs-id1170654957487",
+    "last_instructional_anchor": "fs-id1170654936322",
+    "last_included_anchor": "fs-id1166424830424",
+    "next_anchor": "fs-id1170654957085",
+    "source_ids_total": 8,
+    "new_source_ids_excluding_shared_section": 7,
+    "source_mathml_expression_count": 2,
+    "source_cnxml_tables": 0,
+    "source_mathml_layout_tables": 2,
+    "source_media": 0,
+    "source_exercises": 0,
+    "source_solutions": 0,
+    "indonesian_path": "downloads/jv-Latn-ID/a10-source/translated/modules/m82453/index.cnxml",
+    "indonesian_sha256": "2c0b688d569044b128d589579e9ba7d871a0fb9ac7a670ac6f22d0ef2b66e635",
+    "english_path": "downloads/jv-Latn-ID/a10-source/authority/source/modules/m82453/index.cnxml",
+    "english_sha256": "a8fdd235aa254c5a0a1248fa858e9b3579d9b40982bbc514cbe6a18c3e6fcbed",
+    "completion_claim": "Only this bounded source fragment has narration fixtures. The full A00/A10/AX-2 assignment and human review remain unfinished."
+  },
+  "matching_contract": {
+    "namespace_context": {
+      "m": "http://www.w3.org/1998/Math/MathML"
+    },
+    "dispatch": "Require the pinned module/source-section identity, top-level source anchor, one-based MathML ordinal, and exact namespace-aware source tree, including empty rows/cells/groups, attributes, tokens and delimiter order. Callers must validate the source hash and scope before exact-tree dispatch; this file does not modify the builder.",
+    "source_mathml_storage": "Source-exact element trees under the inherited m namespace; parse each string inside a namespace-bearing wrapper. Namespace-prefix and XML empty-element serialization differences do not change the canonical tree.",
+    "translation_boundary": "Only the three registered linguistic mtext labels may differ in translated CNXML, through the exact source-keyed edits. All other mathematics, hierarchy, empty nodes, attributes and numeric tokens are invariant.",
+    "unknown_case": "unsupported_source_bound_narration",
+    "broad_parser_authorized": false,
+    "generic_matrix_reading_authorized": false,
+    "expression_evaluation_authorized": false,
+    "mutate_visible_source": false,
+    "provider_behavior": "Use an explicitly supported requested locale or return unsupported_voice_locale. No silent Indonesian voice/text substitution for a Javanese track."
+  },
+  "canon_checkpoint": {
+    "local_shelf_records_observed_at_start": 28,
+    "local_entries_reconsulted_for_this_narration_stage": [
+      "C18 likur: full readable local entry, including selikur and patlikur"
+    ],
+    "related_local_entries_read_in_the_preceding_source_and_revision_stages": [
+      "C21 ping",
+      "C22 para",
+      "C26 wolu",
+      "C27 sanga"
+    ],
+    "online_entries_consulted": [
+      {
+        "url": "https://kbji.kemendikdasmen.go.id/kata/kurung",
+        "access": "Readable official KBJI page retrieved and its written-sign sense read; consulted again at this narration stage on 2026-08-31. Not locally acquired or added to canon/sources.lock.json by this task.",
+        "effect": "Retain kurung as a writing-sign term, not merely a physical enclosure. The complete bracket-family names and audio syntax remain provisional compounds."
+      },
+      {
+        "url": "https://kbji.kemendikdasmen.go.id/kata/tutup",
+        "access": "Readable official KBJI page retrieved and read in full on 2026-08-31, including the tutup and bukak/mbukak entries within it. Not locally acquired or counted as a pinned new canon record.",
+        "effect": "Ordinary open/close vocabulary supports retaining the preceding operation unit's bukak kurung / tutup kurung convention. This is component evidence, not an attestation of mathematical TTS prosody."
+      },
+      {
+        "url": "https://kbji.kemendikdasmen.go.id/kata/lampus",
+        "access": "The preceding drafting stage read an indexed KBJI result containing lumpuk in the gathering/collecting sense. Direct page retrieval failed there and again here; no full-page or local-acquisition claim is made.",
+        "effect": "Supports only the root-level grouping intuition. Panglumpukan remains a provisional derivation in the separate prose draft, not a standardized mathematical headword."
+      }
+    ],
+    "decisions": [
+      "Use bukak/tutup kurung biasa, kurung siku and kurung kurawal consistently to identify every delimiter type; Indonesian uses buka/tutup. These extend the existing operation lesson's explicit bracket naming.",
+      "Kurung siku and kurung kurawal retain declared Indonesian-derived school-label components. No newly standardized Javanese bracket terminology is claimed.",
+      "Read selikur and patlikur for source 21 and 24 using actual C18 evidence; wolu/sanga are supported by C26/C27. Other fixed small-number forms retain the preceding provisional narration convention.",
+      "Speak all five source-implied multiplication sites as ping/kali without inserting visible operators. Read division as dipara/dibagi and the binary U+2212 minus as dikurangi.",
+      "Use academic Ekspresi kapisan/kapindho/katelu and conversational Wujud siji/loro/telu only as auditory enumeration of the three source layout cells. Formula content remains identical in both Javanese registers."
+    ],
+    "review_status": "Native educator, mathematical-register, pronunciation, and listening review pending; no IPA, dialect universality, or voice approval claimed.",
+    "production_canon_update": "Root acquired C29 kurung and C30 tutup into the locked readable shelf and read both extracts in full before production QA; their earlier online-only status above describes the initial draft stage."
+  },
+  "operator_conventions": [
+    {
+      "token": "(",
+      "role": "open parenthesis",
+      "jv": "bukak kurung biasa",
+      "id": "buka kurung biasa"
+    },
+    {
+      "token": ")",
+      "role": "close parenthesis",
+      "jv": "tutup kurung biasa",
+      "id": "tutup kurung biasa"
+    },
+    {
+      "token": "[",
+      "role": "open square bracket",
+      "jv": "bukak kurung siku",
+      "id": "buka kurung siku"
+    },
+    {
+      "token": "]",
+      "role": "close square bracket",
+      "jv": "tutup kurung siku",
+      "id": "tutup kurung siku"
+    },
+    {
+      "token": "{",
+      "role": "open grouping brace, not a set declaration",
+      "jv": "bukak kurung kurawal",
+      "id": "buka kurung kurawal"
+    },
+    {
+      "token": "}",
+      "role": "close grouping brace",
+      "jv": "tutup kurung kurawal",
+      "id": "tutup kurung kurawal"
+    },
+    {
+      "token": "−",
+      "codepoint": "U+2212",
+      "role": "registered binary subtraction only",
+      "jv": "dikurangi",
+      "id": "dikurangi"
+    },
+    {
+      "token": "+",
+      "role": "addition",
+      "jv": "ditambah",
+      "id": "ditambah"
+    },
+    {
+      "token": "÷",
+      "codepoint": "U+00F7",
+      "role": "division by the entire following brace group",
+      "jv": "dipara",
+      "id": "dibagi"
+    }
+  ],
+  "implicit_multiplication_convention": {
+    "source_sites": [
+      "8(14−8)",
+      "3[2+4(9−8)]",
+      "4(9−8)",
+      "2[1(6−5)+4]",
+      "1(6−5)"
+    ],
+    "site_count": 5,
+    "jv": "ping",
+    "id": "kali",
+    "restriction": "These five exact source juxtapositions only. The added speech names the existing operation; it does not introduce a visible token, authorize other juxtaposition, or evaluate any expression."
+  },
+  "math_fixtures": [
+    {
+      "id": "A10-GRP-M01",
+      "module": "m82453",
+      "section": "fs-id1170655150800",
+      "anchor": "fs-id1170655219760",
+      "math_ordinal": 1,
+      "nested_equation_id": "fs-id1167269979347",
+      "source_mathml": "<m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign=\"left\"><m:mtext>Tanda kurung biasa</m:mtext></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign=\"left\"><m:mspace width=\"0.15em\"/><m:mrow><m:mo>(</m:mo><m:mrow/><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign=\"left\"><m:mtext>Tanda kurung siku</m:mtext></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign=\"left\"><m:mspace width=\"0.15em\"/><m:mrow><m:mo>[</m:mo><m:mrow/><m:mo>]</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign=\"left\"><m:mtext>Tanda kurung kurawal</m:mtext></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign=\"left\"><m:mrow><m:mo>{</m:mo><m:mrow/><m:mo>}</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math>",
+      "layout": {
+        "role": "three bracket-name rows, not a matrix",
+        "cells_per_row": [
+          4,
+          4,
+          4
+        ],
+        "empty_separator_cells": 6,
+        "empty_delimited_groups": 3,
+        "delimiter_order": [
+          "(",
+          ")",
+          "[",
+          "]",
+          "{",
+          "}"
+        ]
+      },
+      "translated_mtext": {
+        "jv-academic": [
+          "Tandha kurung biasa",
+          "Tandha kurung siku",
+          "Tandha kurung kurawal"
+        ],
+        "jv-conversation": [
+          "Kurung biasa",
+          "Kurung siku",
+          "Kurung kurawal"
+        ],
+        "id-academic": [
+          "Tanda kurung biasa",
+          "Tanda kurung siku",
+          "Tanda kurung kurawal"
+        ]
+      },
+      "expected": {
+        "jv-academic": "Tandha kurung biasa: bukak kurung biasa, tutup kurung biasa. Tandha kurung siku: bukak kurung siku, tutup kurung siku. Tandha kurung kurawal: bukak kurung kurawal, tutup kurung kurawal.",
+        "jv-conversation": "Kurung biasa: bukak kurung biasa, tutup kurung biasa. Kurung siku: bukak kurung siku, tutup kurung siku. Kurung kurawal: bukak kurung kurawal, tutup kurung kurawal.",
+        "id-academic": "Tanda kurung biasa: buka kurung biasa, tutup kurung biasa. Tanda kurung siku: buka kurung siku, tutup kurung siku. Tanda kurung kurawal: buka kurung kurawal, tutup kurung kurawal."
+      },
+      "narration_decision": "Read each row label and its opening/closing glyph pair. Empty layout cells are spacing, not zeros; empty example brackets are displayed delimiter pairs, not empty-set claims."
+    },
+    {
+      "id": "A10-GRP-M02",
+      "module": "m82453",
+      "section": "fs-id1170655150800",
+      "anchor": "fs-id1170654936322",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign=\"center\"><m:mn>8</m:mn><m:mo stretchy=\"false\">(</m:mo><m:mn>14</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mo stretchy=\"false\">)</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign=\"center\"><m:mn>21</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy=\"false\">[</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy=\"false\">(</m:mo><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mo stretchy=\"false\">)</m:mo><m:mo stretchy=\"false\">]</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign=\"center\"><m:mn>24</m:mn><m:mo>÷</m:mo><m:mo>{</m:mo><m:mn>13</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy=\"false\">[</m:mo><m:mn>1</m:mn><m:mo stretchy=\"false\">(</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy=\"false\">)</m:mo><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy=\"false\">]</m:mo><m:mo>}</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math>",
+      "layout": {
+        "role": "three complete expressions in one presentation row, not a matrix",
+        "cells_per_row": [
+          7
+        ],
+        "empty_separator_cells": 4,
+        "occupied_cells_one_based": [
+          1,
+          4,
+          7
+        ]
+      },
+      "source_expressions": [
+        "8(14−8)",
+        "21−3[2+4(9−8)]",
+        "24÷{13−2[1(6−5)+4]}"
+      ],
+      "delimiter_sequences_per_expression": [
+        [
+          "(",
+          ")"
+        ],
+        [
+          "[",
+          "(",
+          ")",
+          "]"
+        ],
+        [
+          "{",
+          "[",
+          "(",
+          ")",
+          "]",
+          "}"
+        ]
+      ],
+      "expected": {
+        "jv-academic": "Ekspresi kapisan: wolu ping, bukak kurung biasa, patbelas dikurangi wolu, tutup kurung biasa. Ekspresi kapindho: selikur dikurangi telu ping, bukak kurung siku, loro ditambah papat ping, bukak kurung biasa, sanga dikurangi wolu, tutup kurung biasa, tutup kurung siku. Ekspresi katelu: patlikur dipara, bukak kurung kurawal, telulas dikurangi loro ping, bukak kurung siku, siji ping, bukak kurung biasa, enem dikurangi lima, tutup kurung biasa, ditambah papat, tutup kurung siku, tutup kurung kurawal.",
+        "jv-conversation": "Wujud siji: wolu ping, bukak kurung biasa, patbelas dikurangi wolu, tutup kurung biasa. Wujud loro: selikur dikurangi telu ping, bukak kurung siku, loro ditambah papat ping, bukak kurung biasa, sanga dikurangi wolu, tutup kurung biasa, tutup kurung siku. Wujud telu: patlikur dipara, bukak kurung kurawal, telulas dikurangi loro ping, bukak kurung siku, siji ping, bukak kurung biasa, enem dikurangi lima, tutup kurung biasa, ditambah papat, tutup kurung siku, tutup kurung kurawal.",
+        "id-academic": "Ekspresi pertama: delapan kali, buka kurung biasa, empat belas dikurangi delapan, tutup kurung biasa. Ekspresi kedua: dua puluh satu dikurangi tiga kali, buka kurung siku, dua ditambah empat kali, buka kurung biasa, sembilan dikurangi delapan, tutup kurung biasa, tutup kurung siku. Ekspresi ketiga: dua puluh empat dibagi, buka kurung kurawal, tiga belas dikurangi dua kali, buka kurung siku, satu kali, buka kurung biasa, enam dikurangi lima, tutup kurung biasa, ditambah empat, tutup kurung siku, tutup kurung kurawal."
+      },
+      "narration_decision": "Read source occupied cells left to right; name all six nested delimiter pairs with their type, all numbers and explicit arithmetic operators in order, and all five source-implied multiplications. The divisor of 24 remains the entire outer brace group. No results, precedence computation, or visible new operator is supplied."
+    }
+  ],
+  "nonspoken_source_blocks": [
+    "fs-id1166424830424"
+  ],
+  "nonspoken_source_block_rules": [
+    {
+      "anchor": "fs-id1166424830424",
+      "source_structure": "CNXML para containing only newline",
+      "reader": "Preserve the source anchor and spacing node.",
+      "narration": "Omit speech and do not generate an empty SSML paragraph; record this exact anchor explicitly in the build receipt.",
+      "restriction": "No other empty node or instructional content is authorized for omission."
+    }
+  ],
+  "fail_closed_cases": [
+    {
+      "case": "Pinned source module hash, module/section identity, anchor, ordinal, namespace-aware tree, numeric token, mtext source label, operator, or attribute differs",
+      "result": "Reject source fixture dispatch; do not reuse the expected reading for the changed expression."
+    },
+    {
+      "case": "Parenthesis, square bracket, or brace is missing, substituted, reversed, or closed in a different order",
+      "result": "unsupported_source_bound_narration"
+    },
+    {
+      "case": "Empty layout cell/group is removed, added, or interpreted as a zero or a matrix value",
+      "result": "unsupported_source_bound_narration"
+    },
+    {
+      "case": "An implied multiplication is inserted at a site not listed, or one of the five registered sites is omitted",
+      "result": "Reject narration regression validation; no generic juxtaposition inference authorized."
+    },
+    {
+      "case": "Unknown MathML table, general expression evaluation, unary-negative interpretation, or later-course notation is requested",
+      "result": "No authority in these fixtures; require a separately source-reviewed rule."
+    },
+    {
+      "case": "An empty narration block has an ID other than fs-id1166424830424",
+      "result": "Reject unexpected empty narration; do not silently omit it."
+    },
+    {
+      "case": "Requested provider locale is unsupported",
+      "result": "unsupported_voice_locale"
+    }
+  ],
+  "qa_receipt": {
+    "draft_only": false,
+    "production_integration": "three_CNXML_tracks_offline_reader_and_three_transcript_SSML_pairs_built; human_review_pending",
+    "math_fixtures": 2,
+    "register_readings": 6,
+    "bracket_types": 3,
+    "grouped_examples": 3,
+    "implicit_multiplication_sites": 5,
+    "source_tree_validation": "pass: both source-exact MathML fixtures match their pinned source anchor and ordinal; all six readings dispatch against in-memory ID/JV trees",
+    "read_only_checks": [
+      "Indonesian and English module SHA-256 values match the pinned witnesses recorded in scope.",
+      "The two ID/EN MathML trees differ only in their three linguistic mtext labels; all six ID/JV source-bound fixture readings dispatch successfully.",
+      "A test-only token walk checks every source numeral/operator, every bracket type and opening/closing order, balanced nesting, all three complete expressions, and exactly five implied multiplications per track; it is not a new production parser.",
+      "All twelve deliberate source mutations fail dispatch: changed anchor, ordinal, mtable attribute, mtr attribute, mtd alignment, stretchy attribute, empty-cell removal, empty-group removal, delimiter substitution, closing-brace removal, numeric operand, and occupied-cell order.",
+      "The exact trailing spacing-only para/newline node is present and explicitly listed as nonspoken; no other omission is authorized.",
+      "Both Javanese drafts pass the existing in-memory ID, structure, mathematical-token/attribute and numeric-fact validation. No generated file or shared build code was written."
+    ],
+    "validation_scope": "Exact fixture/source matching and in-memory translated-tree dispatch only; no generated artifact or reader completion claim.",
+    "human_language_review": false,
+    "visual_review": false,
+    "screen_reader_review": false,
+    "synthesized_audio_files": 0,
+    "listening_review": false,
+    "provider_compatibility_tested": false,
+    "whole_module_complete": false,
+    "original_rule_handoff": "The read_only_checks and original draft scope descriptions record the initial rule-handoff stage. Current production state is given by production_integration and hash-bound qa build receipts."
+  }
+}

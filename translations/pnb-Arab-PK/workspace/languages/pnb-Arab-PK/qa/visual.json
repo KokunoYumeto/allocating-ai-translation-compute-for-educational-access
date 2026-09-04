@@ -1,0 +1,53 @@
+{
+  "status": "bounded_visual_review_pass_with_limitations",
+  "reviewed_at": "2026-08-30T22:47:00+02:00",
+  "browser": "Codex in-app Chromium",
+  "viewports": [
+    {"requested_width": 1024, "requested_height": 800, "document_client_width": 1009},
+    {"requested_width": 390, "requested_height": 844, "document_client_width": 375}
+  ],
+  "reader_sha256": {
+    "unit-001.html": "97517f36174a63938994ee3165f90f88be783b9aa68c3a8d3042a68cc2a346d1",
+    "unit-002.html": "2a629aabfdf69ce99c0ea5327d8a45388d8360d362605629e11487ec0c28522e",
+    "unit-003.html": "ae1791d510580422e7970d67a251f326581556a3d25b4cba2332382ad1036034",
+    "unit-004.html": "57fa6a320eab370abdd1b8f2cb53e210904de6a6d66d3ee922828fa10e6d7cd2",
+    "unit-005.html": "be223862ac331e9e4c50eef5b33369abf9d6ead60443dc4d57e85ae44412bfba"
+  },
+  "subsequent_footer_only_revision": {
+    "recorded_date": "2026-08-31",
+    "reason": "Generalized the modification notice from (a)/(b) to isolated Latin-letter labels with the same correspondence, to cover PNB-006's four parts. Source bodies and CSS are unchanged; the screenshots above remain evidence for their bounded source-body views, not a new full-page review of the revised footers.",
+    "current_reader_sha256": {
+      "unit-003.html":"29d6494a3da4ddfb854a61e94c43117573a89fffe409ac717fd9c267862c3c37",
+      "unit-004.html":"d132aed33c18c6c805b9de3b277472ef20d301c64b03bc6adc9f93c0523557d4",
+      "unit-005.html":"ccee3425b8569b566838efef49e262dad44430f05379764d37e9f95d959b53e4"
+    },
+    "structural_revalidation": "All five suites rebuilt twice and passed after the footer/attribution update."
+  },
+  "observations": [
+    "PNB-001 desktop: all three unchanged relation panels, arrows, labels and Punjabi explanation are visible; no page-width overflow.",
+    "PNB-002 mobile: all three 584-pixel menu figures are locally scrollable. The third reached scrollLeft 252.38 of scrollWidth 584 in a 332-pixel region; document scrollWidth remained 375. Prices 1.49 and 1.99 and the negative conclusion remained readable.",
+    "PNB-003 mobile: the grade table starts at its first source column and scrolls locally (340 client, 603 scroll); the baseball table fits (304/304). The linked source footnote resolves to its endnote; URL and 3/24/2014 date are visible. Document scrollWidth remained 375.",
+    "PNB-004 mobile: the 641-pixel English three-row MathML explanation scrolls inside its 324-pixel region and reached scrollLeft 316.67; page width stayed 375. Function-notation parentheses and the Q&A are visible. Desktop: the unchanged 245 by 142 January diagram loaded at natural dimensions; March prose remains distinct and the page does not overflow.",
+    "PNB-005 mobile: the 13-column month table starts at its source-first column, scrolls locally from 0 to 240.48 (340 client, 580 scroll) and leaves document width at 375. All seven tables have the expected visible shapes. The final 1/10, 2/100, 3/1000 table and source answer yes are visible; the labeled original note explicitly refuses to infer an unstated rule. Desktop: the en-dash –3 table cell, repeated-output examples and adjacent solution render without page overflow (1009 client/scroll)."
+  ],
+  "screenshot_sha256": {
+    "desktop-figure.jpg": "517588f7352c7f3abcc1ebfa3fc674684343e44b001414e426aa3befbde45546",
+    "unit-002-mobile.jpg": "414d0a450eceb7f424efa50e1ed184b6c21d9e4409bbebf36c1cc34d10469156",
+    "unit-003-grade-mobile.jpg": "ea38758b711cdb25b52c4a8c5f6884c353ec7e7b9aa50074c8fd7538106e208b",
+    "unit-003-footnote-mobile.jpg": "f3b9230767b213999a640119c43a135f4ced0a09995f1e6d4c4aa60faa948b71",
+    "unit-004-mobile.jpg": "df1b044ea6af327d3c0cbc19d344ad4fd66298e72ccae671c4b6182d4620ee89",
+    "unit-004-mobile-math-scrolled.jpg": "6a2090d1a1fb2eb754f6a80f8d092c8aa44a9a60d7e0b5af45ce39bbeefb8cda",
+    "unit-004-qa-mobile.jpg": "175620d3dac820112cbfed1abca359cb2cef99c380b128009ebe68ad6c81cc0e",
+    "unit-004-desktop.jpg": "771c7c11ff8da0a016d3c643ea8a7e1e82c29882a9479967e1e67c3dccb878f7",
+    "unit-005-month-mobile.jpg": "b7bf6b68f3783c12b2754b8a6e12d8bb3ba6ea3f8059b79de749507e48a456fa",
+    "unit-005-try-mobile.jpg": "fe1b90fdad8836d7b4079a3789450dd139fd41fc13743563bf0fba473c25220e",
+    "unit-005-desktop.jpg": "a2fe1ab9427471569c8f6b02b9b78cbbf2aae66f1668d0c4e8e75ae0eefcb415"
+  },
+  "limitations": [
+    "These are bounded views at selected anchors, not an exhaustive screenshot of every line or a publication certification.",
+    "Browser automation confirmed pointer scrolling and keyboard focusability, but did not establish native arrow-key scrolling; that behavior is not claimed.",
+    "No screen-reader, pronunciation, cross-browser or cross-machine font test was performed.",
+    "The runtime used available local Arabic-script fonts; exact Noto Nastaliq availability is not pinned.",
+    "Native Punjabi speaker, mathematics educator and assistive-technology review remain pending."
+  ]
+}

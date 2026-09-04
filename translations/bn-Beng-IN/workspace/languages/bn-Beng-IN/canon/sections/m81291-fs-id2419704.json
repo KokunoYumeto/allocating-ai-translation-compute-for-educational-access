@@ -1,0 +1,349 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81291",
+  "section": "fs-id2419704",
+  "date": "2026-08-31",
+  "source_title": "Translate Sentences to Equations and Solve",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81291.source.cnxml",
+  "source_sha256": "729ab266737111c7cdd795ca6ddd887c41a9efcb2e802ab6ae46adfe3c13a195",
+  "overlay_sha256": "a9643e80e15d1b7b9d68826052f428de5860805fe26aace24d8071a63878cee2",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "WB08",
+        "WB09",
+        "WB10",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "Actual module title Solve Equations with Fractions and full top-level section list",
+        "Actual complete assigned CNXML, read in two bounded halves after an initial combined output truncated",
+        "Actual WB p226/p227 OCR and page images; current44-entry terminology ledger",
+        "Actual Tripura p051 OCR and prior page-image reading at the unit transition",
+        "All22 original source rasters opened individually in four groups"
+      ],
+      "action": "Choose সমীকরণ গঠন করে সমাধান করো for Translate and solve, not literal language translation. Read the6x=24 formation, x=4 value check and equal division of both sides from actual pages. Preserve fraction meanings, original operators and variable names. Identify the first raster's missing negative sign against the authoritative source problem."
+    },
+    {
+      "stage": "during drafting",
+      "examples": [
+        "WB08",
+        "WB09",
+        "WB10",
+        "WB11",
+        "TR03"
+      ],
+      "read": [
+        "Actual p226/p227 OCR again",
+        "Actual WB p189 OCR and page image, especially the8x/6x like-term example",
+        "Actual Tripura p051 OCR again",
+        "Every source table slot, all15 exercise solutions and all22 picture stages"
+      ],
+      "action": "Use দুই পক্ষ/উভয় পক্ষ, মান বসিয়ে যাচাই and সদৃশ পদ. Keep formal equality-property names T041–44 and reciprocal terminology explicitly editorial rather than claiming the names occur in the witnesses. Explain division order, the primary fraction bar and same nonzero divisor; do not reuse p051's incorrect conversion denominator."
+    },
+    {
+      "stage": "pre-integration check",
+      "examples": [
+        "WB08",
+        "WB09",
+        "WB10",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "Actual complete p226/p227 and p051 OCR again",
+        "Actual p226/p227/p051 page images again",
+        "Pinned source and saved overlay hashes",
+        "Every one of95 MathML nodes with exact rational evaluation and all15 independently formed linear equations",
+        "Rendered IDs,22visible image descriptions, all7table labels and4preserved links"
+      ],
+      "action": "Confirm equation formation and substitution register against source pages, not a summary. Check all15 unique numerical solutions and all numeric picture stages. Preserve9 identifier-only mtext nodes unchanged. Reject division by zero in the checker and test forward multiplication by zero separately. Record the actual missing raster minus and original column inconsistencies without changing math, pixels or table attributes."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "equation versus expression",
+      "affected_locations": [
+        "section title",
+        "fs-id2704084",
+        "all15 exercise prompts",
+        "all Translate table steps",
+        "all4 link labels"
+      ],
+      "decision": "Use বাক্য থেকে সমীকরণ গঠন and সমীকরণে লেখো. Keep source variables and quotient operand order exactly. Translate the m81270 cross-reference label and all three optional online-resource labels; preserve their original targets. Link endpoint availability is not claimed or tested."
+    },
+    {
+      "topic": "equality properties and zero",
+      "affected_locations": [
+        "fs-id2246480",
+        "fs-id908853",
+        "fs-id1781790"
+      ],
+      "decision": "Use coordinated editorial headings সমতার বিয়োগের/যোগের/ভাগের/গুণের ধর্ম. Translate every cell and its text tails, including c≠0. Restate the existing nonzero division condition in the following prose. Multiplication by zero preserves truth forward but can lose original information and cannot be reversed by dividing by zero; do not incorrectly impose c≠0 on the forward multiplication identity itself."
+    },
+    {
+      "topic": "meaning of fraction coefficients and division",
+      "affected_locations": [
+        "fs-id1474489",
+        "eip-id1168047349783",
+        "fs-id2486692",
+        "eip-id1168466022434",
+        "fs-id1795979",
+        "fs-id2295151"
+      ],
+      "decision": "Two-thirds of f means multiplying f by the fraction whose numerator is2 and denominator3. For m divided by5/6, m is the primary numerator and5/6 is the primary denominator. Multiply both equation sides by5/6; when checking5/8 divided by5/6, multiply by the reciprocal6/5. Explain reciprocal as swapping numerator/denominator and retain its editorial status."
+    },
+    {
+      "topic": "worked reduction and checking",
+      "affected_locations": [
+        "eip-id1168466022434",
+        "eip-id1168467290209",
+        "eip-id1168468659436",
+        "all answer checks"
+      ],
+      "decision": "Explain cancelling the common factor3 in(5·3)/(6·4), combining constant like terms3/8−3/8, choosing positive LCD8, reducing25/8 to3 1/8 and substituting into the original equation. Source question-mark equalities indicate a check, while the final checkmarks indicate equality was verified. No source numerical expression is altered."
+    },
+    {
+      "topic": "raster minus and column discrepancies",
+      "affected_locations": [
+        "eip-id1168048345418",
+        "eip-id1168048345376",
+        "eip-id1168047338066",
+        "eip-id1168047349783",
+        "eip-id1168466022434"
+      ],
+      "decision": "The first raster's English sentence genuinely lacks the minus before24, while the question and equation use−24. Preserve it, narrate the pixels accurately and add a visible Bengali warning before the image. Four tables declare cols2 despite three colspecs; preserve original declarations/spans/row order and flag parent browser-layout review. Both issues are mirrored in overlay source_errata."
+    },
+    {
+      "topic": "text-localization boundary",
+      "affected_locations": [
+        "all95MathML",
+        "all9mtext",
+        "all22media",
+        "all7tables"
+      ],
+      "decision": "All9 mtext nodes contain only mathematical identifiers and punctuation such as a,b,c, not English linguistic labels. They stay byte-for-byte at the MathML-signature level; math_text is empty. Translate22alts,5aria labels and2summaries under the approved linguistic-attribute exception. Original numbers, signs, attributes, IDs, source images and child order remain exact."
+    },
+    {
+      "topic": "canon limits and excluded faults",
+      "affected_locations": [
+        "all translated text"
+      ],
+      "decision": "WB226/227 directly witness equation formation, both-side comparison and doing the same operation; WB189 directly witnesses সদৃশ পদ. Neither source is claimed to witness the formal equality-property names or reciprocal label. Tripura p051's separate correct equivalence and simplest-form examples support reduction; exclude its top conversion example's wrong denominator. Existing WB p189 opening4k/4x mismatch is not used as the like-term witness. No training-data use or canon copying."
+    }
+  ],
+  "source_errata": [
+    {
+      "source_media_id": "eip-id1168048345418",
+      "source_table_id": "eip-id1168048345376",
+      "file": "CNX_BMath_Figure_04_07_037_img-01.png",
+      "issue": "The raster English sentence says n divided by6 is24 without a minus, but its equation and the original problem fs-id2129943 use−24. The table aria-label inaccurately describes the raster sentence as negative24.",
+      "action": "Preserve the image and all mathematics. Describe the actual missing minus in Bengali alt/aria and give a visible warning in row1 entry1 that the authoritative problem and equation use−24."
+    },
+    {
+      "source_table_ids": [
+        "eip-id1168048345376",
+        "eip-id1168047338066",
+        "eip-id1168047349783",
+        "eip-id1168466022434"
+      ],
+      "issue": "Each source tgroup declares cols=2 but contains three colspec elements and rows using three cells or a two-column span plus another cell.",
+      "action": "Preserve all original column declarations, spans and cell order. Translate the complete contents and provide table-level Bengali narration; parent integration/browser review must check the resulting layout."
+    }
+  ],
+  "image_checks": [
+    {
+      "files": [
+        "CNX_BMath_Figure_04_07_037_img-01.png",
+        "CNX_BMath_Figure_04_07_037_img-02.png",
+        "CNX_BMath_Figure_04_07_037_img-03.png",
+        "CNX_BMath_Figure_04_07_037_img-04.png",
+        "CNX_BMath_Figure_04_07_037_img-05.png"
+      ],
+      "observed": "First English sentence literally n divided by6 is24, with blue braces to n/6=−24: missing sentence minus flagged. Next red6 multiplies both sides; n=−144; question-mark check−144/6=−24; final−24=−24 with checkmark. All five files actually opened."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_04_07_038_img-01.png",
+        "CNX_BMath_Figure_04_07_038_img-02.png",
+        "CNX_BMath_Figure_04_07_038_img-03.png",
+        "CNX_BMath_Figure_04_07_038_img-04.png",
+        "CNX_BMath_Figure_04_07_038_img-05.png"
+      ],
+      "observed": "Blue-braced quotient q and−5 equals70; red−5 multiplies both sides; q=−350; question-mark−350/−5=70; final70=70 with checkmark. All five files actually opened and consistent."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_04_07_039_img-01.png",
+        "CNX_BMath_Figure_04_07_039_img-02.png",
+        "CNX_BMath_Figure_04_07_039_img-03.png",
+        "CNX_BMath_Figure_04_07_039_img-04.png",
+        "CNX_BMath_Figure_04_07_039_img-05.png"
+      ],
+      "observed": "Blue-braced Two-thirds of f is18 maps to(2/3)f=18; red3/2 multiplies both sides; f=27; question-mark(2/3)(27)=18; final18=18 with checkmark. All five files actually opened and consistent."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_04_07_040_img-01.png",
+        "CNX_BMath_Figure_04_07_040_img-02.png",
+        "CNX_BMath_Figure_04_07_040_img-03.png",
+        "CNX_BMath_Figure_04_07_040_img-04.png",
+        "CNX_BMath_Figure_04_07_040_img-05.png",
+        "CNX_BMath_Figure_04_07_040_img-06.png",
+        "CNX_BMath_Figure_04_07_040_img-07.png"
+      ],
+      "observed": "Blue-braced3/8+x=3 1/2; subtract3/8 on both sides; x=3 1/2−3/8; x=7/2−3/8; x=28/8−3/8; x=25/8; x=3 1/8. All seven files actually opened; signs and fractional denominators match."
+    }
+  ],
+  "local_checks": {
+    "result": "passed with preserved and explicitly documented source faults",
+    "paragraph_slot_arrays": 33,
+    "node_slot_arrays": 52,
+    "source_mathml": 95,
+    "worked_practice_mathml": 78,
+    "property_mathml": 17,
+    "unchanged_identifier_mtext": 9,
+    "source_ids": 125,
+    "source_elements": 922,
+    "source_exercises": 15,
+    "source_solutions": 15,
+    "source_images_inspected": 22,
+    "table_aria_labels": 5,
+    "table_summaries": 2,
+    "source_errata_mirrored_in_overlay": 2,
+    "method": "Exact rational evaluator with named-variable environments, additive mixed-number atoms, implicit multiplication, negative numerals, parentheses, equalities/inequality, semicolon-separated equation/answer clauses and question-mark equality checks. Each of the15 equations independently yields its recorded unique solution from a nonzero linear coefficient; all78 worked/practice MathML nodes agree at that value. All17 property nodes checked over16 exact rational assignments under a=b and c≠0; this finite check supplements the direct algebraic rule and is not claimed as an exhaustive proof for all real numbers. Multiplication by zero tested forward separately and division by zero rejected.",
+    "answers": [
+      {
+        "exercise": "fs-id2133545",
+        "equation": "n/6=-24",
+        "variable": "n",
+        "solution": "-144",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id2755989",
+        "equation": "n/7=-21",
+        "variable": "n",
+        "solution": "-147",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id1628712",
+        "equation": "n/8=-56",
+        "variable": "n",
+        "solution": "-448",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id1884169",
+        "equation": "q/(-5)=70",
+        "variable": "q",
+        "solution": "-350",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id1891704",
+        "equation": "q/(-8)=72",
+        "variable": "q",
+        "solution": "-576",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id2135426",
+        "equation": "p/(-9)=81",
+        "variable": "p",
+        "solution": "-729",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id2165340",
+        "equation": "(2/3)f=18",
+        "variable": "f",
+        "solution": "27",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id2649109",
+        "equation": "(2/5)f=16",
+        "variable": "f",
+        "solution": "40",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id2130040",
+        "equation": "(3/4)f=21",
+        "variable": "f",
+        "solution": "28",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id1892316",
+        "equation": "m/(5/6)=3/4",
+        "variable": "m",
+        "solution": "5/8",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id2708307",
+        "equation": "n/(2/3)=5/12",
+        "variable": "n",
+        "solution": "5/18",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id1333839",
+        "equation": "c/(3/8)=4/9",
+        "variable": "c",
+        "solution": "1/6",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id1346792",
+        "equation": "3/8+x=3 1/2",
+        "variable": "x",
+        "solution": "25/8",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id2792104",
+        "equation": "5/8+x=1/4",
+        "variable": "x",
+        "solution": "-3/8",
+        "unique_linear_solution": true
+      },
+      {
+        "exercise": "fs-id2348742",
+        "equation": "1 3/4-x=5/6",
+        "variable": "x",
+        "solution": "11/12",
+        "unique_linear_solution": true
+      }
+    ],
+    "additional_checks": [
+      "First original problem n/6=−24 has n=−144; the raster sentence's24 is not accepted as−24",
+      "All22 raster stages checked independently from their visible equations",
+      "m/(5/6)=3/4 gives m=5/8 and(5/8)/(5/6)=3/4",
+      "3/8+25/8=7/2 and7/2−3/8=25/8=3 1/8",
+      "All three count2/three-colspec worked-picture tables and the analogous m table retain original source declarations"
+    ],
+    "structure": "Shared translated() passes all unique paths, children+1 slots, tag/ID/order and nonlinguistic attribute checks, exact MathML signature and no residual authored English. All15 solutions retained; no new solution or formula is added.",
+    "rendering": "In-memory render retains125IDs,95MathML,22images plus22visible descriptions,7Bengali accessible tables,4links,3resource-list items and4emphasis nodes. The missing-minus warning precedes the original first raster. Parent owns browser and assistive-technology review."
+  },
+  "followup_checks": [
+    {
+      "date": "2026-08-31",
+      "request": "Recheck explicit Bengali numerator/denominator readings for every distinct fraction's first appearance in raster descriptions.",
+      "consultation": "Actual Tripura p050 OCR/page image's5/7 numerator-denominator reading and p051 simplest-form OCR/page image were revisited during the adjacent chapter QA. Actual WB226/227 OCR/page images remain the equation-language witness. Reopened11 original m91 rasters covering every distinct fraction's first appearance:037 images01/04,038 images01/04,039 images01/02,040 images01/04/05/06/07.",
+      "finding": "The original saved overlay already supplies explicit লব/হর in all16 fraction-containing alts; the other6 alts contain integer-only equations. No alt relies on slash notation. All12 distinct fractions/parts are covered: n/6,−144/6,q/(−5),−350/(−5),2/3,3/2,3/8,1/2,7/2,28/8,25/8,1/8. Variable numerators, negative signs, mixed-number parts and the first raster's missing−24 warning remain correct.",
+      "action": "Do not rewrite already-compliant learner text. Overlay remains SHA a9643e80e15d1b7b9d68826052f428de5860805fe26aace24d8071a63878cee2. Rerun existing exact95MathML/15solution/22raster-stage/125ID and in-memory accessibility checks: all pass. Only this consultation record is extended."
+    }
+  ],
+  "pending": [
+    "Parent integration/browser review, especially original table column mismatches",
+    "Independent West Bengal teacher/language review",
+    "Assistive-technology review"
+  ],
+  "scope": "Only this overlay and separate canon record were edited using apply_patch. No downloads, media copies, shared scripts/logs/ledger changes, deletions or commits. Immediately continue assigned m81291/fs-id2630718 Chapter Review Exercises; the entire assignment remains active."
+}

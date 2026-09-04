@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="bn-Beng-IN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>দশমিক সংখ্যার আসন্নমান নির্ণয় করো</title><style>body{font-family:"Nirmala UI","Noto Sans Bengali",sans-serif;color:#182d39;background:#f7f5ef;margin:0;font-size:19px;line-height:1.85}main{max-width:900px;margin:auto;padding:32px 24px;background:white}nav{padding:14px 0;border-bottom:2px solid #14685e}a{color:#075b6b}h1,h2{line-height:1.5;color:#104d48}h1{font-size:2rem}h2{font-size:1.3rem;margin-top:1.7em}p,li{overflow-wrap:anywhere}li{padding:6px 0}aside,.example{border-left:4px solid #157468;padding:8px 20px;margin:24px 0;background:#eff8f4}.solution{padding:8px 14px;background:#f7f7f3}.media{text-align:center;margin:20px 0}img{max-width:100%;height:auto;max-height:280px}math{font-size:1.1em;direction:ltr}.description,.notice{font-size:0.85em;color:#43535a}.notice{border:1px solid #9bafa9;padding:16px}footer{border-top:1px solid #9bafa9;margin-top:36px;padding:16px 0}@media(max-width:480px){main{padding:18px 14px}body{font-size:18px}aside,.example{padding:6px 10px}}@media print{body{background:white;font-size:12pt}main{padding:0}nav{display:none}h2{break-after:avoid}img{max-height:50mm}.example,li{break-inside:avoid}}table{width:100%;border-collapse:collapse;table-layout:fixed}td{padding:8px;vertical-align:top;overflow-wrap:anywhere;border-bottom:1px solid #d5e0dc}td .media{margin:6px 0}td img{max-height:140px}td math{font-size:1em}ol.circled{list-style:none}.math-scroll{display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle;padding:4px 0}.math-scroll:focus{outline:2px solid #14685e}.math-scroll math{white-space:nowrap}menclose[notation~="longdiv"]{display:inline-block;border-top:1.5px solid currentColor;border-left:1.5px solid currentColor;border-top-left-radius:0.35em;padding:0.05em 0.25em 0.05em 0.2em;margin-left:0.12em}menclose[notation~="updiagonalstrike"]{display:inline-block;background:linear-gradient(135deg,transparent calc(50% - 0.65px),currentColor calc(50% - 0.65px),currentColor calc(50% + 0.65px),transparent calc(50% + 0.65px))}.exercise{border:1px solid #aec4bb;padding:10px 12px;margin:18px 0}.exercise-label,.solution-label{font-size:0.8em;color:#43535a;margin:0 0 8px}.solution-label{font-weight:bold}.exercise .solution{margin-top:14px}</style></head><body><main><nav aria-label="পাঠ নির্বাচন"><a href="../index.html">পাঠসূচি</a> · <a href="../U01-companion.html">সহজ ভাষার সহায়িকা</a> · <a href="../U01-source-faithful.html">উৎস-অনুগত নির্বাচিত পাঠ</a></nav><h1>দশমিক সংখ্যার আসন্নমান নির্ণয় করো</h1><p class="notice">উৎস-অনুগত উপবিভাগ · m81293-fs-id1739414। সম্পূর্ণ বইয়ের অনুবাদ এখনও চলছে। গাণিতিক চিহ্ন, সংখ্যা ও মূল কাঠামো অক্ষুণ্ণ; প্রযোজ্য ক্ষেত্রে সূত্রের শব্দলেবেল বাংলায় অনূদিত। মূল ছবির ভিতরের ইংরেজি লেবেলের অর্থ বাংলা বিবরণে আছে। স্বাধীন শিক্ষক ও ভাষা-পর্যালোচনা বাকি। অন্য উপবিভাগের উৎস-লিঙ্কে ইন্টারনেট প্রয়োজন।</p><section id="fs-id1739414" class="section">
+<h2 class="title">দশমিক সংখ্যার আসন্নমান নির্ণয় করো</h2>
+<p id="fs-id1351097" class="para">উৎসে দেওয়া যুক্তরাষ্ট্রের উদাহরণে গ্যাসোলিনের দাম প্রায়ই ডলারের সহস্রাংশ পর্যন্ত লেখা হয়। যেমন, কোনও পাম্পে সিসামুক্ত গ্যাসোলিনের প্রতি গ্যালনের দাম লেখা থাকতে পারে <math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>$3.279</mtext></math>। ওই দামে ঠিক এক গ্যালন কিনলে দিতে হবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>$3.28</mtext></math>, কারণ চূড়ান্ত দাম নিকটতম সেন্টে আসন্নমান করে নেওয়া হয়। <a href="https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m81242/index.cnxml">অঋণাত্মক পূর্ণসংখ্যা</a> অধ্যায়ে দেখেছি, নির্ভুল মানের প্রয়োজন না হলে তার কাছাকাছি মান পেতে আসন্নমান নির্ণয় করি। ধরা যাক, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$2.72</mtext></mrow></math>-এর নিকটতম ডলারে আসন্নমান চাই। এটি কোনটির বেশি কাছে, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$2</mtext></mrow></math> না <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$3</mtext><mo>?</mo></mrow></math> আবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$2.72</mtext></mrow></math>-এর নিকটতম দশ সেন্টে আসন্নমান চাইলে কোনটির বেশি কাছে হবে, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$2.70</mtext></mrow></math> না <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>$2.80</mtext><mo>?</mo></mrow></math> এই প্রশ্নগুলির উত্তর পেতে <a href="#CNX_BMath_Figure_05_01_012">এই চিত্রের</a> সংখ্যারেখাগুলি সাহায্য করবে।</p><figure id="CNX_BMath_Figure_05_01_012" class="figure"><div id="fs-id1562237" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_012.jpg" alt="দুটি সংখ্যারেখা। (ক) 2 থেকে 3 পর্যন্ত 0.1 ব্যবধানে দাগ আছে; 2.7 ও 2.8-এর মাঝে 2.72 বিন্দুটি চিহ্নিত। এটি 2-এর চেয়ে 3-এর বেশি কাছে। (খ) 2.70 থেকে 2.80 পর্যন্ত 0.01 ব্যবধানে দাগ আছে; 2.72 দাগে বিন্দু। এটি 2.80-এর চেয়ে 2.70-এর বেশি কাছে।"/><p class="description">দুটি সংখ্যারেখা। (ক) 2 থেকে 3 পর্যন্ত 0.1 ব্যবধানে দাগ আছে; 2.7 ও 2.8-এর মাঝে 2.72 বিন্দুটি চিহ্নিত। এটি 2-এর চেয়ে 3-এর বেশি কাছে। (খ) 2.70 থেকে 2.80 পর্যন্ত 0.01 ব্যবধানে দাগ আছে; 2.72 দাগে বিন্দু। এটি 2.80-এর চেয়ে 2.70-এর বেশি কাছে।</p></div>
+
+<caption class="caption"><span class="span">ⓐ</span> দেখা যায়, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2.72</mn></mrow></math>-এর বেশি কাছে আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>; তুলনার অপর সংখ্যাটি হল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>.</mo></mrow></math> তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2.72</mn></mrow></math>-এর নিকটতম পূর্ণসংখ্যায় আসন্নমান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>.</mo></mrow></math> <br/><span class="span">ⓑ</span> দেখা যায়, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2.72</mn></mrow></math>-এর বেশি কাছে আছে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2.70</mn></mrow></math>; তুলনার অপর সংখ্যাটি হল <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2.80</mn><mo>.</mo></mrow></math> তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2.72</mn></mrow></math>-এর নিকটতম দশাংশে আসন্নমান <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2.7</mn><mo>.</mo></mrow></math></caption></figure><p id="fs-id1266320" class="para">সংখ্যারেখা ছাড়াও কি দশমিক সংখ্যার আসন্নমান নির্ণয় করা যায়? হ্যাঁ। অঋণাত্মক পূর্ণসংখ্যার আসন্নমান নির্ণয়ের পদ্ধতির উপর ভিত্তি করে তা করা যায়। সম্পাদকীয় স্পষ্টীকরণ: নির্দিষ্ট স্থান পর্যন্ত আসন্নমান মানে ওই স্থানে লেখা সম্ভব এমন নিকটতম মান বেছে নেওয়া। যেমন, শতাংশ স্থান পর্যন্ত রাখলে দশমিকের পরে দুই ঘর থাকবে। পরের ধাপগুলি অঋণাত্মক সংখ্যার জন্য। ঠিক মাঝামাঝি হলে এখানে বড় মানটি নেওয়া হয়; ঋণাত্মক সংখ্যায় এই পাঠের নিয়ম ব্যবহার করতে মাইনাস চিহ্ন বাদ দিয়ে আসন্নমান বের করে শেষে চিহ্নটি ফিরিয়ে দেবে—ফলে ঠিক মাঝামাঝি হলে শূন্য থেকে দূরের মানটি নেওয়া হয়। এটি এই পাঠের ঘোষিত নিয়ম; অন্য প্রসঙ্গে মাঝামাঝি মান বাছাইয়ের অন্য নিয়মও থাকতে পারে। 9-এর সঙ্গে 1 যোগ হলে বাঁ দিকের ঘরে হাতে থাকা 1 যোগ করতে হবে; যেমন 1.999-এর নিকটতম শতাংশে আসন্নমান 2.00। প্রতিটি চাওয়া স্থানের জন্য মূল সংখ্যা থেকে আলাদা করে আসন্নমান বের করো, আগের আসন্নমান থেকে আবার নয়।</p>
+<aside id="fs-id4163462" class="note"><h2 class="title">দশমিক সংখ্যার আসন্নমান নির্ণয়ের পদ্ধতি</h2><ol id="eip-id1168466730764"><li class="item">যে স্থান পর্যন্ত আসন্নমান চাই, সেই স্থানটি খুঁজে তিরচিহ্ন দিয়ে চিহ্নিত করো।</li>
+<li class="item">ওই স্থানের ঠিক ডান দিকের অঙ্কটির নীচে দাগ দাও।</li>
+<li class="item">দাগ দেওয়া অঙ্কটি কি অন্তত <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>?</mo></mrow></math><ul id="fs-id1367462">
+<li class="item">হ্যাঁ হলে নির্দিষ্ট স্থানের অঙ্কটির সঙ্গে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> যোগ করো। যোগফলে 10 হলে সেখানে 0 লিখে বাঁ দিকের ঘরে হাতে থাকা 1 যোগ করো; প্রয়োজনে এভাবে আরও বাঁ দিকে এগোও।</li>
+<li class="item">না হলে নির্দিষ্ট স্থানের অঙ্কটি বদলাবে না।</li>
+</ul></li>
+<li class="item">নির্দিষ্ট স্থানের ডান দিকের সব অঙ্ক বাদ দিয়ে সংখ্যাটি লেখো। এখানে একক বা তার ডান দিকের দশমিক স্থান পর্যন্ত আসন্নমান করছি। একক পর্যন্ত হলে দশমিক বিন্দুটিও বাদ যাবে। যে দশমিক স্থান পর্যন্ত চাওয়া হয়েছে, তা দেখাতে প্রয়োজনীয় শেষের শূন্য রেখো।</li></ol></aside><section id="fs-id1567354" class="example">
+<div id="fs-id1614508" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1614508">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id2174295" class="problem">
+<p id="fs-id1614237" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18.379</mn></mrow></math>-এর নিকটতম শতাংশে আসন্নমান নির্ণয় করো।</p>
+</div>
+<section id="fs-id2464215" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168469619891" class="table" aria-label="18.379-এর নিকটতম শতাংশে আসন্নমান। শতাংশের অঙ্ক 7-এ তিরচিহ্ন; ঠিক ডান দিকের অঙ্ক 9-এর নীচে দাগ। 9 অন্তত 5 বলে 7-এর সঙ্গে 1 যোগ করে শেষের 9 বাদ দাও। ফল 18.38।"><span class="label"></span>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"></td>
+<td class="entry"><div id="eip-id1168468270060" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_021_img-01.png" alt="দশমিক সংখ্যা 18.379।"/><p class="description">দশমিক সংখ্যা 18.379।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">শতাংশের স্থানটি খুঁজে তিরচিহ্ন দাও।</td>
+<td class="entry"><div id="eip-id1168463808144" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_021_img-02.png" alt="18.379 সংখ্যায় শতাংশের স্থানের অঙ্ক 7-এর দিকে তিরচিহ্ন; উপরে শতাংশের স্থান লেখা আছে।"/><p class="description">18.379 সংখ্যায় শতাংশের স্থানের অঙ্ক 7-এর দিকে তিরচিহ্ন; উপরে শতাংশের স্থান লেখা আছে।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">7-এর ঠিক ডান দিকের অঙ্কটির নীচে দাগ দাও।</td>
+<td class="entry"><div id="eip-id1168469635592" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_021_img-03.png" alt="18.379 সংখ্যায় শতাংশের অঙ্ক 7-এর দিকে তিরচিহ্ন। তার ঠিক ডান দিকের অঙ্ক 9-এর নীচে দাগ দেওয়া আছে।"/><p class="description">18.379 সংখ্যায় শতাংশের অঙ্ক 7-এর দিকে তিরচিহ্ন। তার ঠিক ডান দিকের অঙ্ক 9-এর নীচে দাগ দেওয়া আছে।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">9 অন্তত 5, তাই 7-এর সঙ্গে 1 যোগ করো।</td>
+<td class="entry"><div id="eip-id1168466166028" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_021_img-04.png" alt="18.379 সংখ্যার শতাংশের অঙ্ক 7-এর সঙ্গে 1 যোগ করার নির্দেশ। শেষ অঙ্ক 9 বাদ দিতে বলা হয়েছে। এতে 18.38 পাওয়া যায়; পূর্ণসংখ্যার অংশ 18 বদলানো হচ্ছে না।"/><p class="description">18.379 সংখ্যার শতাংশের অঙ্ক 7-এর সঙ্গে 1 যোগ করার নির্দেশ। শেষ অঙ্ক 9 বাদ দিতে বলা হয়েছে। এতে 18.38 পাওয়া যায়; পূর্ণসংখ্যার অংশ 18 বদলানো হচ্ছে না।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">শতাংশের স্থানের ডান দিকের সব অঙ্ক বাদ দিয়ে সংখ্যাটি লেখো।</td>
+<td class="entry"><div id="eip-id1168468445870" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_021_img-05.png" alt="শতাংশ পর্যন্ত আসন্নমান 18.38।"/><p class="description">শতাংশ পর্যন্ত আসন্নমান 18.38।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry"></td>
+<td class="entry">18.379-এর নিকটতম শতাংশে আসন্নমান 18.38।</td>
+</tr>
+</tbody>
+
+
+</table></section>
+</div></section>
+<aside id="fs-id1983348" class="note">
+<div id="fs-id1629393" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1629393">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2755336" class="problem">
+<p id="fs-id1783833" class="para">নিকটতম শতাংশে আসন্নমান নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1.047</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2197551" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2567695" class="para">1.05</p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1787052" class="note">
+<div id="fs-id4337739" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id4337739">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2270390" class="problem">
+<p id="fs-id1832953" class="para">নিকটতম শতাংশে আসন্নমান নির্ণয় করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9.173</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1393348" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1357476" class="para">9.17</p>
+</section>
+</div>
+</aside>
+<section id="fs-id1741603" class="example"><div id="fs-id1617454" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1617454">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1531380" class="problem">
+<p id="fs-id1968886" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18.379</mn></mrow></math>-এর আসন্নমান নির্ণয় করো—নিকটতম <span class="span">ⓐ</span> দশাংশে <span class="span">ⓑ</span> পূর্ণসংখ্যায়।</p></div>
+<section id="fs-id1727429" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1168467479198" class="table" aria-label="18.379-এর নিকটতম দশাংশে আসন্নমান। দশাংশের অঙ্ক 3-এ তিরচিহ্ন; ঠিক ডান দিকের 7 দেখে সিদ্ধান্ত নিতে হবে। মূল মধ্যবর্তী ছবিতে ভুল করে 3-এর নীচে দাগ আছে, 7-এর নীচে হওয়া উচিত। 7 অন্তত 5 বলে 3-এর সঙ্গে 1 যোগ করো এবং শেষের 79 বাদ দাও। ফল 18.4।"><span class="label"></span>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><span class="span">ⓐ</span> 18.379-এর নিকটতম দশাংশে আসন্নমান নির্ণয় করো।</td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"></td>
+<td class="entry"><div id="eip-id1168469838756" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_022_img-01.png" alt="দশমিক সংখ্যা 18.379।"/><p class="description">দশমিক সংখ্যা 18.379।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">দশাংশের স্থানটি খুঁজে তিরচিহ্ন দাও।</td>
+<td class="entry"><div id="eip-id1168467375522" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_022_img-02.png" alt="18.379 সংখ্যায় দশাংশের স্থানের অঙ্ক 3-এর দিকে তিরচিহ্ন; উপরে দশাংশের স্থান লেখা আছে।"/><p class="description">18.379 সংখ্যায় দশাংশের স্থানের অঙ্ক 3-এর দিকে তিরচিহ্ন; উপরে দশাংশের স্থান লেখা আছে।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">দশাংশের অঙ্কটির ঠিক ডান দিকের অঙ্কের নীচে দাগ দাও। সম্পাদকীয় সতর্কতা: মূল ছবিতে ভুল করে 3-এর নীচে দাগ আছে; এই ধাপে 7-এর নীচে দাগ দেওয়া উচিত। ছবিটি অপরিবর্তিত রাখা হয়েছে।</td>
+<td class="entry"><div id="eip-id1168468292755" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_022_img-03.png" alt="18.379 সংখ্যায় দশাংশের অঙ্ক 3-এর দিকে তিরচিহ্ন এবং 3-এর নীচে দাগ আছে। উৎসের ছবিতে দাগটি ভুল জায়গায়: এই ধাপে ঠিক ডান দিকের অঙ্ক 7-এর নীচে দাগ দেওয়া উচিত।"/><p class="description">18.379 সংখ্যায় দশাংশের অঙ্ক 3-এর দিকে তিরচিহ্ন এবং 3-এর নীচে দাগ আছে। উৎসের ছবিতে দাগটি ভুল জায়গায়: এই ধাপে ঠিক ডান দিকের অঙ্ক 7-এর নীচে দাগ দেওয়া উচিত।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">7 অন্তত 5, তাই 3-এর সঙ্গে 1 যোগ করো।</td>
+<td class="entry"><div id="eip-id1168468595227" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_022_img-04.png" alt="18.379 সংখ্যার দশাংশের অঙ্ক 3-এর সঙ্গে 1 যোগ করার নির্দেশ। তার ডান দিকের অঙ্ক 7 ও 9 বাদ দিতে বলা হয়েছে। এতে 18.4 পাওয়া যায়; এখানে নিকটতম পূর্ণসংখ্যা বের করা হচ্ছে না।"/><p class="description">18.379 সংখ্যার দশাংশের অঙ্ক 3-এর সঙ্গে 1 যোগ করার নির্দেশ। তার ডান দিকের অঙ্ক 7 ও 9 বাদ দিতে বলা হয়েছে। এতে 18.4 পাওয়া যায়; এখানে নিকটতম পূর্ণসংখ্যা বের করা হচ্ছে না।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">দশাংশের স্থানের ডান দিকের সব অঙ্ক বাদ দিয়ে সংখ্যাটি লেখো।</td>
+<td class="entry"><div id="eip-id1168466001190" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_022_img-05.png" alt="দশাংশ পর্যন্ত আসন্নমান 18.4।"/><p class="description">দশাংশ পর্যন্ত আসন্নমান 18.4।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry"></td>
+<td class="entry">তাই 18.379-এর নিকটতম দশাংশে আসন্নমান 18.4।</td>
+</tr>
+</tbody>
+
+
+
+</table>
+
+<table id="eip-id1168466047205" class="table" aria-label="18.379-এর নিকটতম পূর্ণসংখ্যায় আসন্নমান। এককের অঙ্ক 8-এ তিরচিহ্ন; ঠিক ডান দিকের অঙ্ক 3-এর নীচে দাগ। 3 হল 5-এর চেয়ে ছোট বলে 8 বদলাবে না। দশমিক অংশ বাদ দিলে ফল 18।"><span class="label"></span>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry"><span class="span">ⓑ</span> 18.379-এর নিকটতম পূর্ণসংখ্যায় আসন্নমান নির্ণয় করো।</td>
+<td class="entry"></td>
+</tr>
+<tr class="row">
+<td class="entry"></td>
+<td class="entry"><div id="eip-id1168466024767" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_023_img-01.png" alt="দশমিক সংখ্যা 18.379।"/><p class="description">দশমিক সংখ্যা 18.379।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">এককের স্থানটি খুঁজে তিরচিহ্ন দাও।</td>
+<td class="entry"><div id="eip-id1168469846810" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_023_img-02.png" alt="18.379 সংখ্যায় এককের স্থানের অঙ্ক 8-এর দিকে তিরচিহ্ন; উপরে এককের স্থান লেখা আছে।"/><p class="description">18.379 সংখ্যায় এককের স্থানের অঙ্ক 8-এর দিকে তিরচিহ্ন; উপরে এককের স্থান লেখা আছে।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">এককের স্থানের ঠিক ডান দিকের অঙ্কটির নীচে দাগ দাও।</td>
+<td class="entry"><div id="eip-id1168466176170" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_023_img-03.png" alt="18.379 সংখ্যায় এককের অঙ্ক 8-এর দিকে তিরচিহ্ন। তার ঠিক ডান দিকের অঙ্ক 3-এর নীচে দাগ দেওয়া আছে।"/><p class="description">18.379 সংখ্যায় এককের অঙ্ক 8-এর দিকে তিরচিহ্ন। তার ঠিক ডান দিকের অঙ্ক 3-এর নীচে দাগ দেওয়া আছে।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">3 সংখ্যাটি 5-এর চেয়ে বড় বা সমান নয়, তাই 8-এর সঙ্গে 1 যোগ কোরো না।</td>
+<td class="entry"><div id="eip-id1168469566569" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_023_img-04.png" alt="18.379 সংখ্যার এককের অঙ্ক 8-এর সঙ্গে 1 যোগ না করার নির্দেশ। দশমিকের পরের 379 বাদ দিতে বলা হয়েছে; নিকটতম পূর্ণসংখ্যায় আসন্নমান 18।"/><p class="description">18.379 সংখ্যার এককের অঙ্ক 8-এর সঙ্গে 1 যোগ না করার নির্দেশ। দশমিকের পরের 379 বাদ দিতে বলা হয়েছে; নিকটতম পূর্ণসংখ্যায় আসন্নমান 18।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry">এককের স্থানের ডান দিকের সব অঙ্ক এবং দশমিক বিন্দু বাদ দিয়ে সংখ্যাটি লেখো।</td>
+<td class="entry"><div id="eip-id1168469808231" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_05_01_023_img-05.png" alt="নিকটতম পূর্ণসংখ্যায় আসন্নমান 18।"/><p class="description">নিকটতম পূর্ণসংখ্যায় আসন্নমান 18।</p></div></td>
+</tr>
+<tr class="row">
+<td class="entry"></td>
+<td class="entry">তাই 18.379-এর নিকটতম পূর্ণসংখ্যায় আসন্নমান 18।</td>
+</tr>
+</tbody>
+
+
+
+</table></section>
+</div>
+</section><aside id="fs-id3229974" class="note">
+<div id="fs-id1772478" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1772478">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id3201815" class="problem">
+<p id="fs-id2318927" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6.582</mn></mrow></math>-এর আসন্নমান নির্ণয় করো—নিকটতম <span class="span">ⓐ</span> শতাংশে <span class="span">ⓑ</span> দশাংশে <span class="span">ⓒ</span> পূর্ণসংখ্যায়।</p></div>
+<section id="fs-id2606069" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id1774692" class="para"><ol id="eip-id1168469657484" class="circled"><li class="item"><span class="span">ⓐ</span> 6.58 </li><li class="item"><span class="span">ⓑ</span> 6.6 </li><li class="item"><span class="span">ⓒ</span> 7</li></ol></div></section>
+</div>
+</aside>
+<aside id="fs-id3256290" class="note">
+<div id="fs-id2364254" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2364254">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2609717" class="problem">
+<p id="fs-id1948755" class="para"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15.2175</mn></mrow></math>-এর আসন্নমান নির্ণয় করো—নিকটতম <span class="span">ⓐ</span> সহস্রাংশে <span class="span">ⓑ</span> শতাংশে <span class="span">ⓒ</span> দশাংশে।</p></div>
+<section id="fs-id2603261" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<div id="fs-id4333643" class="para"><ol id="eip-id1168466176936" class="circled"><li class="item"><span class="span">ⓐ</span> 15.218 </li><li class="item"><span class="span">ⓑ</span> 15.22 </li><li class="item"><span class="span">ⓒ</span> 15.2</li></ol></div></section>
+</div>
+</aside>
+<aside id="fs-id2436675" class="note"><h2 class="title">অনলাইনে আরও পাঠসহায়ক উপকরণ</h2><ul id="fs-id1480623">
+<li class="item"><a href="https://www.openstax.org/l/24decmlnotat">দশমিক রূপের পরিচয়</a></li>
+<li class="item"><a href="https://www.openstax.org/l/24word2dcmlnot">কথায় লেখা সংখ্যাকে দশমিক রূপে লেখো</a></li>
+<li class="item"><a href="https://www.openstax.org/l/24decmlnumline">সংখ্যারেখায় দশমিক সংখ্যা চেনো</a></li>
+<li class="item"><a href="https://www.openstax.org/l/24rounddecml">দশমিক সংখ্যার আসন্নমান নির্ণয়</a></li>
+<li class="item"><a href="https://www.openstax.org/l/24decmlsimpfrac">দশমিক সংখ্যাকে লঘিষ্ঠ আকারের ভগ্নাংশে লেখো</a></li>
+</ul>
+</aside></section><footer>OpenStax, Rice University · Prealgebra 2e · Lynn Marecek, MaryAnne Anthony-Smith, Andrea Honeycutt Mathis। <a href="../../provenance/pilot/m81241.source.cnxml">পূর্ণ উৎস-স্বীকৃতি</a> · <a href="../../provenance/A00/repository/LICENSE">CC BY-NC-SA 4.0</a>। অনানুষ্ঠানিক অনুবাদ; মূল প্রকাশকের অনুমোদন দাবি করা হচ্ছে না।</footer></main></body></html>

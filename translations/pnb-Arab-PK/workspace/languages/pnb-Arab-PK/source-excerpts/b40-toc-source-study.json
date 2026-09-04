@@ -1,0 +1,2532 @@
+{
+  "schema": "pnb-b40-generated-toc-source-study-v1",
+  "unit_proposal": "B40-toc",
+  "status": "source study only; production blocked on current generated page-number authority",
+  "runtime": "read-only pinned byte parsing plus pypdf extraction; no TeX, Asymptote, Sage, upstream code, network, analytics or grading runtime",
+  "inputs": [
+    {
+      "role": "canonical-root",
+      "path": "downloads/upstream/hefferon-linear-algebra/src/book.tex",
+      "bytes": 3642,
+      "raw_sha256": "f8806ade45e0878273fe4d2c6380fa78a0b30d9b53a672714b754a234fd21c5d",
+      "logical_lf_sha256": "5493db2d10853ad7fdce70b4e6cc65174b7dbb3a66d8d654782977e7137abaaa"
+    },
+    {
+      "role": "comparison-root",
+      "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/book.tex",
+      "bytes": 3654,
+      "raw_sha256": "4a36ed5a19f814aa563c69f2ab42cac2b71861800a808681ca4aceff5bed06cf",
+      "logical_lf_sha256": "a260d6dc1036c61644cc8ae3522b17924a943dd3d8f7209576b7bc8e72b95b8b"
+    },
+    {
+      "role": "canonical-toc-style",
+      "path": "downloads/upstream/hefferon-linear-algebra/src/sty/bookjhconcrete.sty",
+      "bytes": 39304,
+      "raw_sha256": "2478d5638d62928fe84730b3c9b4b93374b6908afe4e25d8ac3d65e910ddbe12",
+      "logical_lf_sha256": "3d5f6f14a0b433089fc25b9b88ab481434bd6266e09f84292477e96c2c6160f6"
+    }
+  ],
+  "include_order": [
+    "gr/gr1",
+    "gr/gr2",
+    "gr/gr3",
+    "gr/cas",
+    "gr/leontief",
+    "gr/ppivot",
+    "gr/network",
+    "vs/vs1",
+    "vs/vs2",
+    "vs/vs3",
+    "vs/fields",
+    "vs/crystal",
+    "vs/voting",
+    "vs/dimen",
+    "map/map1",
+    "map/map2",
+    "map/map3",
+    "map/map4",
+    "map/map5",
+    "map/map6",
+    "map/lstsqs",
+    "map/homogeom",
+    "map/magicsqs",
+    "map/markov",
+    "map/erlang",
+    "det/det1",
+    "det/det2",
+    "det/det3",
+    "det/cramer",
+    "det/detspeed",
+    "det/chio",
+    "det/projplane",
+    "det/compgraphics",
+    "jc/jc1",
+    "jc/jc2",
+    "jc/jc3",
+    "jc/jc4",
+    "jc/powers",
+    "jc/pops",
+    "jc/search",
+    "jc/recur",
+    "jc/wilber",
+    "jc/innerproduct",
+    "appen/appen",
+    "bib/bib"
+  ],
+  "include_order_sha256": "38b558f841e2348e277fd280330da0f59e742f6bb56777e49658fc1fb356a099",
+  "counts": {
+    "chapter": 6,
+    "section": 19,
+    "subsection": 44,
+    "topic": 24,
+    "appendix-subsection": 4,
+    "total": 97,
+    "optional_subsections": 14,
+    "entries_with_generated_page_numbers": 91,
+    "chapter_entries_without_page_numbers_by_style": 6
+  },
+  "canonical_entries": [
+    {
+      "owner": "src/gr/gr1.tex#chapter/1",
+      "file": "src/gr/gr1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter One:",
+      "raw_title": "Linear Systems",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/gr/gr1.tex#section/1",
+      "file": "src/gr/gr1.tex",
+      "line": 5,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Solving Linear Systems",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr1.tex#subsection/1",
+      "file": "src/gr/gr1.tex",
+      "line": 74,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Gauss's Method",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr1.tex#subsection/2",
+      "file": "src/gr/gr1.tex",
+      "line": 1875,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Describing the Solution Set",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr1.tex#subsection/3",
+      "file": "src/gr/gr1.tex",
+      "line": 3535,
+      "kind": "subsection",
+      "generated_label": "I.3",
+      "raw_title": "\\texorpdfstring{$\\text{General}=\\text{Particular}+\\text{Homogeneous}$}{General=Particular+Homogeneous}",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr2.tex#section/1",
+      "file": "src/gr/gr2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Linear Geometry",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr2.tex#subsectionoptional/1",
+      "file": "src/gr/gr2.tex",
+      "line": 86,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Vectors in Space",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr2.tex#subsectionoptional/2",
+      "file": "src/gr/gr2.tex",
+      "line": 755,
+      "kind": "subsection",
+      "generated_label": "II.2",
+      "raw_title": "Length and Angle Measures",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr3.tex#section/1",
+      "file": "src/gr/gr3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Reduced Echelon Form",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr3.tex#subsection/1",
+      "file": "src/gr/gr3.tex",
+      "line": 58,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Gauss-Jordan Reduction",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr3.tex#subsection/2",
+      "file": "src/gr/gr3.tex",
+      "line": 1352,
+      "kind": "subsection",
+      "generated_label": "III.2",
+      "raw_title": "The Linear Combination Lemma",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/cas.tex#topic/1",
+      "file": "src/gr/cas.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Computer Algebra Systems",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/leontief.tex#topic/1",
+      "file": "src/gr/leontief.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Input-Output Analysis",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/ppivot.tex#topic/1",
+      "file": "src/gr/ppivot.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Accuracy of Computations",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/network.tex#topic/1",
+      "file": "src/gr/network.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Analyzing Networks",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs1.tex#chapter/1",
+      "file": "src/vs/vs1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter Two:",
+      "raw_title": "Vector Spaces",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/vs/vs1.tex#section/1",
+      "file": "src/vs/vs1.tex",
+      "line": 69,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Definition of Vector Space",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs1.tex#subsection/1",
+      "file": "src/vs/vs1.tex",
+      "line": 83,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Definition and Examples",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs1.tex#subsection/2",
+      "file": "src/vs/vs1.tex",
+      "line": 2163,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Subspaces and Spanning Sets",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs2.tex#section/1",
+      "file": "src/vs/vs2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Linear Independence",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs2.tex#subsection/1",
+      "file": "src/vs/vs2.tex",
+      "line": 54,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Definition and Examples",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#section/1",
+      "file": "src/vs/vs3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Basis and Dimension",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#subsection/1",
+      "file": "src/vs/vs3.tex",
+      "line": 17,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Basis",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#subsection/2",
+      "file": "src/vs/vs3.tex",
+      "line": 1513,
+      "kind": "subsection",
+      "generated_label": "III.2",
+      "raw_title": "Dimension",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#subsection/3",
+      "file": "src/vs/vs3.tex",
+      "line": 2936,
+      "kind": "subsection",
+      "generated_label": "III.3",
+      "raw_title": "Vector Spaces and Linear Systems",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#subsectionoptional/1",
+      "file": "src/vs/vs3.tex",
+      "line": 4656,
+      "kind": "subsection",
+      "generated_label": "III.4",
+      "raw_title": "Combining Subspaces",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/fields.tex#topic/1",
+      "file": "src/vs/fields.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Fields",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/crystal.tex#topic/1",
+      "file": "src/vs/crystal.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Crystals",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/voting.tex#topic/1",
+      "file": "src/vs/voting.tex",
+      "line": 1,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Voting Paradoxes",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/dimen.tex#topic/1",
+      "file": "src/vs/dimen.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Dimensional Analysis",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map1.tex#chapter/1",
+      "file": "src/map/map1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter Three:",
+      "raw_title": "Maps Between Spaces",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/map/map1.tex#section/1",
+      "file": "src/map/map1.tex",
+      "line": 9,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Isomorphisms",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map1.tex#subsection/1",
+      "file": "src/map/map1.tex",
+      "line": 61,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Def{}inition and Examples",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map1.tex#subsection/2",
+      "file": "src/map/map1.tex",
+      "line": 1909,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Dimension Characterizes Isomorphism",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map2.tex#section/1",
+      "file": "src/map/map2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Homomorphisms",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map2.tex#subsection/1",
+      "file": "src/map/map2.tex",
+      "line": 24,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Definition",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map2.tex#subsection/2",
+      "file": "src/map/map2.tex",
+      "line": 1424,
+      "kind": "subsection",
+      "generated_label": "II.2",
+      "raw_title": "Range Space and Null Space",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map3.tex#section/1",
+      "file": "src/map/map3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Computing Linear Maps",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map3.tex#subsection/1",
+      "file": "src/map/map3.tex",
+      "line": 41,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Representing Linear Maps with Matrices",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map3.tex#subsection/2",
+      "file": "src/map/map3.tex",
+      "line": 1983,
+      "kind": "subsection",
+      "generated_label": "III.2",
+      "raw_title": "Any Matrix Represents a Linear Map",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#section/1",
+      "file": "src/map/map4.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "IV",
+      "raw_title": "Matrix Operations",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#subsection/1",
+      "file": "src/map/map4.tex",
+      "line": 19,
+      "kind": "subsection",
+      "generated_label": "IV.1",
+      "raw_title": "Sums and Scalar Products",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#subsection/2",
+      "file": "src/map/map4.tex",
+      "line": 654,
+      "kind": "subsection",
+      "generated_label": "IV.2",
+      "raw_title": "Matrix Multiplication",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#subsection/3",
+      "file": "src/map/map4.tex",
+      "line": 2359,
+      "kind": "subsection",
+      "generated_label": "IV.3",
+      "raw_title": "Mechanics of Matrix Multiplication",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#subsection/4",
+      "file": "src/map/map4.tex",
+      "line": 4393,
+      "kind": "subsection",
+      "generated_label": "IV.4",
+      "raw_title": "Inverses",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map5.tex#section/1",
+      "file": "src/map/map5.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "V",
+      "raw_title": "Change of Basis",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map5.tex#subsection/1",
+      "file": "src/map/map5.tex",
+      "line": 50,
+      "kind": "subsection",
+      "generated_label": "V.1",
+      "raw_title": "Changing Representations of Vectors",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map5.tex#subsection/2",
+      "file": "src/map/map5.tex",
+      "line": 1167,
+      "kind": "subsection",
+      "generated_label": "V.2",
+      "raw_title": "Changing Map Representations",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map6.tex#section/1",
+      "file": "src/map/map6.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "VI",
+      "raw_title": "Projection",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map6.tex#subsectionoptional/1",
+      "file": "src/map/map6.tex",
+      "line": 43,
+      "kind": "subsection",
+      "generated_label": "VI.1",
+      "raw_title": "Orthogonal Projection Into a Line",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map6.tex#subsectionoptional/2",
+      "file": "src/map/map6.tex",
+      "line": 772,
+      "kind": "subsection",
+      "generated_label": "VI.2",
+      "raw_title": "Gram-Schmidt Orthogonalization",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map6.tex#subsectionoptional/3",
+      "file": "src/map/map6.tex",
+      "line": 2165,
+      "kind": "subsection",
+      "generated_label": "VI.3",
+      "raw_title": "Projection Into a Subspace",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/lstsqs.tex#topic/1",
+      "file": "src/map/lstsqs.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Line of Best Fit",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/homogeom.tex#topic/1",
+      "file": "src/map/homogeom.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Geometry of Linear Maps",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/magicsqs.tex#topic/1",
+      "file": "src/map/magicsqs.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Magic Squares",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/markov.tex#topic/1",
+      "file": "src/map/markov.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Markov Chains",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/erlang.tex#topic/1",
+      "file": "src/map/erlang.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Orthonormal Matrices",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#chapter/1",
+      "file": "src/det/det1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter Four:",
+      "raw_title": "Determinants",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/det/det1.tex#section/1",
+      "file": "src/det/det1.tex",
+      "line": 53,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Def{}inition",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#subsectionoptional/1",
+      "file": "src/det/det1.tex",
+      "line": 104,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Exploration",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#subsection/1",
+      "file": "src/det/det1.tex",
+      "line": 1072,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Properties of Determinants",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#subsection/2",
+      "file": "src/det/det1.tex",
+      "line": 2016,
+      "kind": "subsection",
+      "generated_label": "I.3",
+      "raw_title": "The Permutation Expansion",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#subsectionoptional/2",
+      "file": "src/det/det1.tex",
+      "line": 3711,
+      "kind": "subsection",
+      "generated_label": "I.4",
+      "raw_title": "Determinants Exist",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det2.tex#section/1",
+      "file": "src/det/det2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Geometry of Determinants",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det2.tex#subsection/1",
+      "file": "src/det/det2.tex",
+      "line": 23,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Determinants as Size Functions",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det3.tex#section/1",
+      "file": "src/det/det3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Laplace's Formula",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det3.tex#subsectionoptional/1",
+      "file": "src/det/det3.tex",
+      "line": 15,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Laplace's Expansion",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/cramer.tex#topic/1",
+      "file": "src/det/cramer.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Cramer's Rule",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/detspeed.tex#topic/1",
+      "file": "src/det/detspeed.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Speed of Calculating Determinants",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/chio.tex#topic/1",
+      "file": "src/det/chio.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Chi\\`o's Method",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/projplane.tex#topic/1",
+      "file": "src/det/projplane.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Projective Geometry",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/compgraphics.tex#topic/1",
+      "file": "src/det/compgraphics.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Computer Graphics",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc1.tex#chapter/1",
+      "file": "src/jc/jc1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter Five:",
+      "raw_title": "Similarity",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/jc/jc1.tex#section/1",
+      "file": "src/jc/jc1.tex",
+      "line": 49,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Complex Vector Spaces",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc1.tex#subsectionoptional/1",
+      "file": "src/jc/jc1.tex",
+      "line": 88,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Polynomial Factoring and Complex Numbers",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc1.tex#subsection/1",
+      "file": "src/jc/jc1.tex",
+      "line": 334,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Complex Representations",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc2.tex#section/1",
+      "file": "src/jc/jc2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Similarity",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc2.tex#subsection/1",
+      "file": "src/jc/jc2.tex",
+      "line": 43,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Definition and Examples",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc2.tex#subsection/2",
+      "file": "src/jc/jc2.tex",
+      "line": 1239,
+      "kind": "subsection",
+      "generated_label": "II.2",
+      "raw_title": "Diagonalizability",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc2.tex#subsection/3",
+      "file": "src/jc/jc2.tex",
+      "line": 2781,
+      "kind": "subsection",
+      "generated_label": "II.3",
+      "raw_title": "Eigenvalues and Eigenvectors",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc3.tex#section/1",
+      "file": "src/jc/jc3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Nilpotence",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc3.tex#subsectionoptional/1",
+      "file": "src/jc/jc3.tex",
+      "line": 19,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Self-Composition",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc3.tex#subsectionoptional/2",
+      "file": "src/jc/jc3.tex",
+      "line": 509,
+      "kind": "subsection",
+      "generated_label": "III.2",
+      "raw_title": "Strings",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc4.tex#section/1",
+      "file": "src/jc/jc4.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "IV",
+      "raw_title": "Jordan Form",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc4.tex#subsectionoptional/1",
+      "file": "src/jc/jc4.tex",
+      "line": 53,
+      "kind": "subsection",
+      "generated_label": "IV.1",
+      "raw_title": "Polynomials of Maps and Matrices",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc4.tex#subsectionoptional/2",
+      "file": "src/jc/jc4.tex",
+      "line": 1800,
+      "kind": "subsection",
+      "generated_label": "IV.2",
+      "raw_title": "Jordan Canonical Form",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/powers.tex#topic/1",
+      "file": "src/jc/powers.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Method of Powers",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/pops.tex#topic/1",
+      "file": "src/jc/pops.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Stable Populations",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/search.tex#topic/1",
+      "file": "src/jc/search.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Page Ranking",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/recur.tex#topic/1",
+      "file": "src/jc/recur.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Linear Recurrences",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/wilber.tex#topic/1",
+      "file": "src/jc/wilber.tex",
+      "line": 9,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Coupled Oscillators",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/innerproduct.tex#topic/1",
+      "file": "src/jc/innerproduct.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Inner Product",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/appen/appen.tex#addcontentsline/chapter/1",
+      "file": "src/appen/appen.tex",
+      "line": 11,
+      "kind": "chapter",
+      "generated_label": null,
+      "raw_title": "Appendix",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/appen/appen.tex#appendsection/1",
+      "file": "src/appen/appen.tex",
+      "line": 26,
+      "kind": "appendix-subsection",
+      "generated_label": null,
+      "raw_title": "Statements",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/appen/appen.tex#appendsection/2",
+      "file": "src/appen/appen.tex",
+      "line": 179,
+      "kind": "appendix-subsection",
+      "generated_label": null,
+      "raw_title": "Quantifiers",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/appen/appen.tex#appendsection/3",
+      "file": "src/appen/appen.tex",
+      "line": 263,
+      "kind": "appendix-subsection",
+      "generated_label": null,
+      "raw_title": "Techniques of Proof",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/appen/appen.tex#appendsection/4",
+      "file": "src/appen/appen.tex",
+      "line": 430,
+      "kind": "appendix-subsection",
+      "generated_label": null,
+      "raw_title": "Sets, Functions, and Relations",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    }
+  ],
+  "comparison_entries": [
+    {
+      "owner": "src/gr/gr1.tex#chapter/1",
+      "file": "src/gr/gr1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter One:",
+      "raw_title": "Sistem Linear",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/gr/gr1.tex#section/1",
+      "file": "src/gr/gr1.tex",
+      "line": 5,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Menyelesaikan Sistem Linear",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr1.tex#subsection/1",
+      "file": "src/gr/gr1.tex",
+      "line": 74,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Metode Gauss",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr1.tex#subsection/2",
+      "file": "src/gr/gr1.tex",
+      "line": 1879,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Mendeskripsikan Himpunan Solusi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr1.tex#subsection/3",
+      "file": "src/gr/gr1.tex",
+      "line": 3532,
+      "kind": "subsection",
+      "generated_label": "I.3",
+      "raw_title": "\\texorpdfstring{$\\text{Umum}=\\text{Partikular}+\\text{Homogen}$}{Umum=Partikular+Homogen}",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr2.tex#section/1",
+      "file": "src/gr/gr2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Geometri Linear",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr2.tex#subsectionoptional/1",
+      "file": "src/gr/gr2.tex",
+      "line": 86,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Vektor dalam Ruang",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr2.tex#subsectionoptional/2",
+      "file": "src/gr/gr2.tex",
+      "line": 750,
+      "kind": "subsection",
+      "generated_label": "II.2",
+      "raw_title": "Ukuran Panjang dan Sudut",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr3.tex#section/1",
+      "file": "src/gr/gr3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Bentuk Eselon Tereduksi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr3.tex#subsection/1",
+      "file": "src/gr/gr3.tex",
+      "line": 54,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Reduksi Gauss--Jordan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/gr3.tex#subsection/2",
+      "file": "src/gr/gr3.tex",
+      "line": 1339,
+      "kind": "subsection",
+      "generated_label": "III.2",
+      "raw_title": "Lema Kombinasi Linear",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/cas.tex#topic/1",
+      "file": "src/gr/cas.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Sistem Aljabar Komputer",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/leontief.tex#topic/1",
+      "file": "src/gr/leontief.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Analisis Masukan-Keluaran",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/ppivot.tex#topic/1",
+      "file": "src/gr/ppivot.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Keakuratan Perhitungan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/gr/network.tex#topic/1",
+      "file": "src/gr/network.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Menganalisis Jaringan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs1.tex#chapter/1",
+      "file": "src/vs/vs1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter Two:",
+      "raw_title": "Ruang Vektor",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/vs/vs1.tex#section/1",
+      "file": "src/vs/vs1.tex",
+      "line": 67,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Definisi Ruang Vektor",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs1.tex#subsection/1",
+      "file": "src/vs/vs1.tex",
+      "line": 80,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Definisi dan Contoh",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs1.tex#subsection/2",
+      "file": "src/vs/vs1.tex",
+      "line": 2095,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Subruang dan Himpunan Perentang",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs2.tex#section/1",
+      "file": "src/vs/vs2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Kebebasan Linear",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs2.tex#subsection/1",
+      "file": "src/vs/vs2.tex",
+      "line": 49,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Definisi dan Contoh",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#section/1",
+      "file": "src/vs/vs3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Basis dan Dimensi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#subsection/1",
+      "file": "src/vs/vs3.tex",
+      "line": 18,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Basis",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#subsection/2",
+      "file": "src/vs/vs3.tex",
+      "line": 1522,
+      "kind": "subsection",
+      "generated_label": "III.2",
+      "raw_title": "Dimensi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#subsection/3",
+      "file": "src/vs/vs3.tex",
+      "line": 2961,
+      "kind": "subsection",
+      "generated_label": "III.3",
+      "raw_title": "Ruang Vektor dan Sistem Linear",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/vs3.tex#subsectionoptional/1",
+      "file": "src/vs/vs3.tex",
+      "line": 4660,
+      "kind": "subsection",
+      "generated_label": "III.4",
+      "raw_title": "Mengombinasikan Subruang",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/fields.tex#topic/1",
+      "file": "src/vs/fields.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Lapangan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/crystal.tex#topic/1",
+      "file": "src/vs/crystal.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Kristal",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/voting.tex#topic/1",
+      "file": "src/vs/voting.tex",
+      "line": 1,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Paradoks Pemungutan Suara",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/vs/dimen.tex#topic/1",
+      "file": "src/vs/dimen.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Analisis Dimensi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map1.tex#chapter/1",
+      "file": "src/map/map1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter Three:",
+      "raw_title": "Pemetaan Antar-Ruang",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/map/map1.tex#section/1",
+      "file": "src/map/map1.tex",
+      "line": 9,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Isomorfisme",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map1.tex#subsection/1",
+      "file": "src/map/map1.tex",
+      "line": 62,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Def{}inisi dan Contoh",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map1.tex#subsection/2",
+      "file": "src/map/map1.tex",
+      "line": 1918,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Dimensi Mencirikan Isomorfisme",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map2.tex#section/1",
+      "file": "src/map/map2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Homomorfisme",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map2.tex#subsection/1",
+      "file": "src/map/map2.tex",
+      "line": 24,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Definisi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map2.tex#subsection/2",
+      "file": "src/map/map2.tex",
+      "line": 1424,
+      "kind": "subsection",
+      "generated_label": "II.2",
+      "raw_title": "Ruang Hasil dan Ruang Nol",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map3.tex#section/1",
+      "file": "src/map/map3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Menghitung Peta Linear",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map3.tex#subsection/1",
+      "file": "src/map/map3.tex",
+      "line": 41,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Merepresentasikan Peta Linear dengan Matriks",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map3.tex#subsection/2",
+      "file": "src/map/map3.tex",
+      "line": 1982,
+      "kind": "subsection",
+      "generated_label": "III.2",
+      "raw_title": "Setiap Matriks Merepresentasikan Peta Linear",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#section/1",
+      "file": "src/map/map4.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "IV",
+      "raw_title": "Operasi Matriks",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#subsection/1",
+      "file": "src/map/map4.tex",
+      "line": 19,
+      "kind": "subsection",
+      "generated_label": "IV.1",
+      "raw_title": "Jumlah dan Perkalian Skalar",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#subsection/2",
+      "file": "src/map/map4.tex",
+      "line": 653,
+      "kind": "subsection",
+      "generated_label": "IV.2",
+      "raw_title": "Perkalian Matriks",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#subsection/3",
+      "file": "src/map/map4.tex",
+      "line": 2357,
+      "kind": "subsection",
+      "generated_label": "IV.3",
+      "raw_title": "Mekanika Perkalian Matriks",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map4.tex#subsection/4",
+      "file": "src/map/map4.tex",
+      "line": 4388,
+      "kind": "subsection",
+      "generated_label": "IV.4",
+      "raw_title": "Invers",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map5.tex#section/1",
+      "file": "src/map/map5.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "V",
+      "raw_title": "Perubahan Basis",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map5.tex#subsection/1",
+      "file": "src/map/map5.tex",
+      "line": 48,
+      "kind": "subsection",
+      "generated_label": "V.1",
+      "raw_title": "Mengubah Representasi Vektor",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map5.tex#subsection/2",
+      "file": "src/map/map5.tex",
+      "line": 1150,
+      "kind": "subsection",
+      "generated_label": "V.2",
+      "raw_title": "Mengubah Representasi Pemetaan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map6.tex#section/1",
+      "file": "src/map/map6.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "VI",
+      "raw_title": "Proyeksi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map6.tex#subsectionoptional/1",
+      "file": "src/map/map6.tex",
+      "line": 43,
+      "kind": "subsection",
+      "generated_label": "VI.1",
+      "raw_title": "Proyeksi Ortogonal ke Sebuah Garis",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map6.tex#subsectionoptional/2",
+      "file": "src/map/map6.tex",
+      "line": 764,
+      "kind": "subsection",
+      "generated_label": "VI.2",
+      "raw_title": "Ortogonalisasi Gram--Schmidt",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/map6.tex#subsectionoptional/3",
+      "file": "src/map/map6.tex",
+      "line": 2156,
+      "kind": "subsection",
+      "generated_label": "VI.3",
+      "raw_title": "Proyeksi ke Sebuah Subruang",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/lstsqs.tex#topic/1",
+      "file": "src/map/lstsqs.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Garis Kecocokan Terbaik",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/homogeom.tex#topic/1",
+      "file": "src/map/homogeom.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Geometri Pemetaan Linear",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/magicsqs.tex#topic/1",
+      "file": "src/map/magicsqs.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Persegi Ajaib",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/markov.tex#topic/1",
+      "file": "src/map/markov.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Rantai Markov",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/map/erlang.tex#topic/1",
+      "file": "src/map/erlang.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Matriks Ortonormal",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#chapter/1",
+      "file": "src/det/det1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter Four:",
+      "raw_title": "Determinan",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/det/det1.tex#section/1",
+      "file": "src/det/det1.tex",
+      "line": 53,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Def{}inisi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#subsectionoptional/1",
+      "file": "src/det/det1.tex",
+      "line": 104,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Eksplorasi",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#subsection/1",
+      "file": "src/det/det1.tex",
+      "line": 1070,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Sifat-Sifat Determinan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#subsection/2",
+      "file": "src/det/det1.tex",
+      "line": 2012,
+      "kind": "subsection",
+      "generated_label": "I.3",
+      "raw_title": "Ekspansi Permutasi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det1.tex#subsectionoptional/2",
+      "file": "src/det/det1.tex",
+      "line": 3706,
+      "kind": "subsection",
+      "generated_label": "I.4",
+      "raw_title": "Determinan Ada",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det2.tex#section/1",
+      "file": "src/det/det2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Geometri Determinan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det2.tex#subsection/1",
+      "file": "src/det/det2.tex",
+      "line": 23,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Determinan sebagai Fungsi Ukuran",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det3.tex#section/1",
+      "file": "src/det/det3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Rumus Laplace",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/det3.tex#subsectionoptional/1",
+      "file": "src/det/det3.tex",
+      "line": 15,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Ekspansi Laplace",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/cramer.tex#topic/1",
+      "file": "src/det/cramer.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Aturan Cramer",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/detspeed.tex#topic/1",
+      "file": "src/det/detspeed.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Kecepatan Menghitung Determinan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/chio.tex#topic/1",
+      "file": "src/det/chio.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Metode Chi\\`o",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/projplane.tex#topic/1",
+      "file": "src/det/projplane.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Geometri Proyektif",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/det/compgraphics.tex#topic/1",
+      "file": "src/det/compgraphics.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Grafika Komputer",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc1.tex#chapter/1",
+      "file": "src/jc/jc1.tex",
+      "line": 4,
+      "kind": "chapter",
+      "generated_label": "Chapter Five:",
+      "raw_title": "Keserupaan",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/jc/jc1.tex#section/1",
+      "file": "src/jc/jc1.tex",
+      "line": 45,
+      "kind": "section",
+      "generated_label": "I",
+      "raw_title": "Ruang Vektor Kompleks",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc1.tex#subsectionoptional/1",
+      "file": "src/jc/jc1.tex",
+      "line": 77,
+      "kind": "subsection",
+      "generated_label": "I.1",
+      "raw_title": "Faktorisasi Polinomial dan Bilangan Kompleks",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc1.tex#subsection/1",
+      "file": "src/jc/jc1.tex",
+      "line": 311,
+      "kind": "subsection",
+      "generated_label": "I.2",
+      "raw_title": "Representasi Kompleks",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc2.tex#section/1",
+      "file": "src/jc/jc2.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "II",
+      "raw_title": "Keserupaan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc2.tex#subsection/1",
+      "file": "src/jc/jc2.tex",
+      "line": 41,
+      "kind": "subsection",
+      "generated_label": "II.1",
+      "raw_title": "Definisi dan Contoh",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc2.tex#subsection/2",
+      "file": "src/jc/jc2.tex",
+      "line": 1221,
+      "kind": "subsection",
+      "generated_label": "II.2",
+      "raw_title": "Keterdiagonalan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc2.tex#subsection/3",
+      "file": "src/jc/jc2.tex",
+      "line": 2738,
+      "kind": "subsection",
+      "generated_label": "II.3",
+      "raw_title": "Nilai Eigen dan Vektor Eigen",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc3.tex#section/1",
+      "file": "src/jc/jc3.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "III",
+      "raw_title": "Nilpotensi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc3.tex#subsectionoptional/1",
+      "file": "src/jc/jc3.tex",
+      "line": 19,
+      "kind": "subsection",
+      "generated_label": "III.1",
+      "raw_title": "Komposisi Diri",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc3.tex#subsectionoptional/2",
+      "file": "src/jc/jc3.tex",
+      "line": 491,
+      "kind": "subsection",
+      "generated_label": "III.2",
+      "raw_title": "Untaian",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc4.tex#section/1",
+      "file": "src/jc/jc4.tex",
+      "line": 4,
+      "kind": "section",
+      "generated_label": "IV",
+      "raw_title": "Bentuk Jordan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc4.tex#subsectionoptional/1",
+      "file": "src/jc/jc4.tex",
+      "line": 52,
+      "kind": "subsection",
+      "generated_label": "IV.1",
+      "raw_title": "Polinomial Pemetaan dan Matriks",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/jc4.tex#subsectionoptional/2",
+      "file": "src/jc/jc4.tex",
+      "line": 1798,
+      "kind": "subsection",
+      "generated_label": "IV.2",
+      "raw_title": "Bentuk Kanonik Jordan",
+      "optional_star": true,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/powers.tex#topic/1",
+      "file": "src/jc/powers.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Metode Pangkat",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/pops.tex#topic/1",
+      "file": "src/jc/pops.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Populasi Stabil",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/search.tex#topic/1",
+      "file": "src/jc/search.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Pemeringkatan Halaman",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/recur.tex#topic/1",
+      "file": "src/jc/recur.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Rekurensi Linear",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/wilber.tex#topic/1",
+      "file": "src/jc/wilber.tex",
+      "line": 9,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Osilator Terkopel",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/jc/innerproduct.tex#topic/1",
+      "file": "src/jc/innerproduct.tex",
+      "line": 4,
+      "kind": "topic",
+      "generated_label": "Topic:",
+      "raw_title": "Hasil Kali Dalam",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/appen/appen.tex#addcontentsline/chapter/1",
+      "file": "src/appen/appen.tex",
+      "line": 11,
+      "kind": "chapter",
+      "generated_label": null,
+      "raw_title": "Lampiran",
+      "optional_star": false,
+      "page_number_source": null
+    },
+    {
+      "owner": "src/appen/appen.tex#appendsection/1",
+      "file": "src/appen/appen.tex",
+      "line": 26,
+      "kind": "appendix-subsection",
+      "generated_label": null,
+      "raw_title": "Pernyataan",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/appen/appen.tex#appendsection/2",
+      "file": "src/appen/appen.tex",
+      "line": 174,
+      "kind": "appendix-subsection",
+      "generated_label": null,
+      "raw_title": "Kuantor",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/appen/appen.tex#appendsection/3",
+      "file": "src/appen/appen.tex",
+      "line": 254,
+      "kind": "appendix-subsection",
+      "generated_label": null,
+      "raw_title": "Teknik Pembuktian",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    },
+    {
+      "owner": "src/appen/appen.tex#appendsection/4",
+      "file": "src/appen/appen.tex",
+      "line": 412,
+      "kind": "appendix-subsection",
+      "generated_label": null,
+      "raw_title": "Himpunan, Fungsi, dan Relasi",
+      "optional_star": false,
+      "page_number_source": "generated-only"
+    }
+  ],
+  "canonical_entries_sha256": "f12f5c9a94786d858dea704e93f7d228f8eeb6513ebc5b18707213d0cf742f51",
+  "comparison_entries_sha256": "300492d5fa87e5742cc0f350e0c1be361a2e545f73819ff5c96901491e638fd6",
+  "canonical_structure_sha256": "5721ca1b5b61976d50688a202b4a5ccc6022a76cd312d5b723d0230ed01de76f",
+  "comparison_structure_sha256": "5721ca1b5b61976d50688a202b4a5ccc6022a76cd312d5b723d0230ed01de76f",
+  "legend": {
+    "canonical": {
+      "owner": "src/book.tex#line/51/starred-subsections-explanation",
+      "line": 51,
+      "active_raw": "\\pagestyle{booktoc}\\clearemptydoublepage\\tableofcontents\\bigskip\\par\\noindent${}^*\\!$Starred subsections are optional.\\clearemptydoublepage",
+      "active_raw_sha256": "e722ac861846339cb7e86672b5f9dc09f568d0e78269989c6dbef676ccfc7121",
+      "marker_raw_tex": "${}^*\\!$",
+      "marker_tokens": [
+        "{",
+        "}",
+        "^",
+        "*",
+        "\\!"
+      ],
+      "text": "Starred subsections are optional.",
+      "prefix_raw": "\\pagestyle{booktoc}\\clearemptydoublepage\\tableofcontents\\bigskip\\par\\noindent",
+      "suffix_raw": "\\clearemptydoublepage"
+    },
+    "comparison": {
+      "owner": "src/book.tex#line/51/starred-subsections-explanation",
+      "line": 51,
+      "active_raw": "\\pagestyle{booktoc}\\clearemptydoublepage\\tableofcontents\\bigskip\\par\\noindent${}^*\\!$Subbagian bertanda bintang bersifat opsional.\\clearemptydoublepage",
+      "active_raw_sha256": "34ddb08fe86b2945b8b2268d2f8d571374d59cd8aa5d1f00cd2adbcf4b7f7c61",
+      "marker_raw_tex": "${}^*\\!$",
+      "marker_tokens": [
+        "{",
+        "}",
+        "^",
+        "*",
+        "\\!"
+      ],
+      "text": "Subbagian bertanda bintang bersifat opsional.",
+      "prefix_raw": "\\pagestyle{booktoc}\\clearemptydoublepage\\tableofcontents\\bigskip\\par\\noindent",
+      "suffix_raw": "\\clearemptydoublepage"
+    }
+  },
+  "toc_generation_style": {
+    "source": "src/sty/bookjhconcrete.sty:420-447,488-506,654-656,765-808,823-824,833-850",
+    "tocdepth": 2,
+    "secnumdepth": 2,
+    "chapter_page_numbers": "off by \\cftpagenumbersoff{chapter}",
+    "section_and_subsection_page_numbers": "generated from actual typeset pages; not source literals",
+    "optional_star": "subsectionoptional writes a raised literal asterisk into the TOC title",
+    "topic": "unnumbered displayed label Topic:, but source macro increments the section counter",
+    "appendix": "manual chapter and four unnumbered subsection entries; pages use A-n only after typesetting",
+    "bibliography": "no explicit TOC entry in this selected source/style path"
+  },
+  "parser_coverage": {
+    "reviewed_active_heading_invocations": {
+      "canonical": [
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/gr/gr1.tex",
+          "invocations": 5
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/gr/gr2.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/gr/gr3.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/gr/cas.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/gr/leontief.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/gr/ppivot.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/gr/network.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/vs/vs1.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/vs/vs2.tex",
+          "invocations": 2
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/vs/vs3.tex",
+          "invocations": 5
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/vs/fields.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/vs/crystal.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/vs/voting.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/vs/dimen.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/map1.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/map2.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/map3.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/map4.tex",
+          "invocations": 5
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/map5.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/map6.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/lstsqs.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/homogeom.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/magicsqs.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/markov.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/map/erlang.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/det/det1.tex",
+          "invocations": 6
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/det/det2.tex",
+          "invocations": 2
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/det/det3.tex",
+          "invocations": 2
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/det/cramer.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/det/detspeed.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/det/chio.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/det/projplane.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/det/compgraphics.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/jc1.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/jc2.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/jc3.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/jc4.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/powers.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/pops.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/search.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/recur.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/wilber.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/jc/innerproduct.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/appen/appen.tex",
+          "invocations": 5
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/bib/bib.tex",
+          "invocations": 0
+        }
+      ],
+      "comparison": [
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/gr/gr1.tex",
+          "invocations": 5
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/gr/gr2.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/gr/gr3.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/gr/cas.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/gr/leontief.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/gr/ppivot.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/gr/network.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/vs/vs1.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/vs/vs2.tex",
+          "invocations": 2
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/vs/vs3.tex",
+          "invocations": 5
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/vs/fields.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/vs/crystal.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/vs/voting.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/vs/dimen.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/map1.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/map2.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/map3.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/map4.tex",
+          "invocations": 5
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/map5.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/map6.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/lstsqs.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/homogeom.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/magicsqs.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/markov.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/map/erlang.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/det/det1.tex",
+          "invocations": 6
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/det/det2.tex",
+          "invocations": 2
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/det/det3.tex",
+          "invocations": 2
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/det/cramer.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/det/detspeed.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/det/chio.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/det/projplane.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/det/compgraphics.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/jc1.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/jc2.tex",
+          "invocations": 4
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/jc3.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/jc4.tex",
+          "invocations": 3
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/powers.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/pops.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/search.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/recur.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/wilber.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/jc/innerproduct.tex",
+          "invocations": 1
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/appen/appen.tex",
+          "invocations": 5
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/bib/bib.tex",
+          "invocations": 0
+        }
+      ]
+    },
+    "manual_addcontentsline_owners": {
+      "canonical": [
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/appen/appen.tex",
+          "line": 2
+        },
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/appen/appen.tex",
+          "line": 11
+        }
+      ],
+      "comparison": [
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/appen/appen.tex",
+          "line": 2
+        },
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/appen/appen.tex",
+          "line": 11
+        }
+      ]
+    },
+    "inert_headings_after_endinput": {
+      "canonical": [
+        {
+          "path": "downloads/upstream/hefferon-linear-algebra/src/gr/gr1.tex",
+          "line": 5065,
+          "kind": "subsection",
+          "raw_title": "Comparing Set Descriptions",
+          "reason_inert": "active \\endinput at line 5060"
+        }
+      ],
+      "comparison": [
+        {
+          "path": "downloads/hefferon-linear-algebra-id/source/linear-algebra/src/gr/gr1.tex",
+          "line": 5033,
+          "kind": "subsection",
+          "raw_title": "Membandingkan Deskripsi Himpunan",
+          "reason_inert": "active \\endinput at line 5028"
+        }
+      ]
+    },
+    "important_correction": "src/gr/gr1.tex:5065 Comparing Set Descriptions is after active \\endinput at line5060 (comparison lines5033/5028), so it is not a generated TOC entry. Earlier boundary planning that listed it as active is superseded for TOC reconstruction."
+  },
+  "authority_pdf": {
+    "path": "downloads/hefferon-linear-algebra-id/authority/official/book.pdf",
+    "bytes": 7626685,
+    "sha256": "5240f2782e645bc6351ad9eba69d8c19500142a5cca9c90450c17b3765a1a400",
+    "pages": 525,
+    "metadata_creation_date": "D:20200508141321-04'00'",
+    "visually_inspected_physical_pages": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "toc_text_physical_pages": [
+      7,
+      8,
+      9
+    ],
+    "blank_after_toc_physical_page": 10,
+    "staleness_evidence": [
+      "TOC ends Chapter Five topics at Coupled Oscillators and omits current src/jc/innerproduct.tex Topic: Inner Product.",
+      "Preface credit says 2020-Apr-26 while current pinned src/publicationdate.tex says 2021-Oct-12.",
+      "PDF displays the James Joyce quotation that is commented out in the current pinned preface source."
+    ],
+    "use": "bounded visual/generated-layout comparison only; not current page-number authority"
+  },
+  "blocking_finding": {
+    "reason": "The exact 91 section/subsection/topic/appendix-subsection page-number strings are generated by pagination, not present in pinned TeX. The only frozen official PDF is an older generated artifact and demonstrably omits the current 2021 Inner Product topic, uses the older 2020 author date, and includes now-commented content.",
+    "safe_result": "All current source-owned titles, hierarchy, numbering labels, optional-star flags and the literal legend are statically reconstructible. Current page numbers and line wrapping are not.",
+    "decision": "Do not invent, copy stale page numbers, or execute the untrusted upstream TeX stack. Stop at source study until an exact generated artifact for df2262e/current files or explicit authority to publish a page-number-free semantic TOC is supplied."
+  },
+  "rejected_mutations": [
+    "remove-innerproduct-include",
+    "activate-commented-eigengeom",
+    "change-star-legend"
+  ],
+  "whole_frontmatter_complete": false,
+  "whole_book_translation_complete": false,
+  "whole_assignment_complete": false
+}

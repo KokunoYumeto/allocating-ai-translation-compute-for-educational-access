@@ -1,0 +1,99 @@
+# Bahasa Indonesia · teks sumber
+
+Status: narration draft; not synthesized or listening-reviewed.
+
+## m81243--title
+
+Menggunakan Nilai Tempat untuk Menulis Bilangan Cacah
+
+## m81243--fs-id2607182
+
+Sekarang kita akan membalik prosesnya dan menuliskan bilangan yang diberikan dalam kata-kata sebagai digit.
+
+## m81243--fs-id2398163
+
+Menggunakan nilai tempat untuk menulis bilangan cacah.
+Identifikasi kata-kata yang menunjukkan periode. (Ingat bahwa periode satuan tidak pernah disebutkan namanya.)
+
+Buat tiga tempat kosong untuk menunjukkan banyaknya tempat yang diperlukan dalam setiap periode. Pisahkan periode dengan koma.
+
+Sebutkan bilangan dalam setiap periode dan letakkan digit pada posisi nilai tempat yang benar.
+
+## m81243--fs-id2376697
+
+Tulislah bilangan-bilangan berikut dengan menggunakan angka.
+
+bagian a: lima puluh tiga juta empat ratus satu ribu tujuh ratus empat puluh dua
+
+bagian be: sembilan miliar dua ratus empat puluh enam juta tujuh puluh tiga ribu seratus delapan puluh sembilan
+
+Penyelesaian
+
+bagian a: Identifikasi kata-kata yang menunjukkan periode.
+Kecuali periode pertama, semua periode lainnya harus mendapat tiga tempat. Gambarlah tiga tempat kosong untuk menunjukkan jumlah tempat yang dibutuhkan pada setiap periode. Pisahkan periode dengan koma.
+
+Kemudian tuliskan digit-digit pada setiap periode.
+
+Gambar menunjukkan tiga blok kata yang menunjuk ke kelompok digit. Dari kiri ke kanan: blok “lima puluh tiga juta”, berlabel jutaan, menunjuk ke digit lima, tiga. Blok “empat ratus satu ribu”, berlabel ribuan, menunjuk ke digit empat, nol, satu. Blok “tujuh ratus empat puluh dua”, berlabel satuan, menunjuk ke digit tujuh, empat, dua. Di antara setiap kelompok digit terdapat tanda koma.
+Gabungkan digit-digitnya, termasuk koma. Bilangannya adalah digit dari kiri ke kanan: lima, tiga; tanda koma; empat, nol, satu; tanda koma; tujuh, empat, dua.
+
+bagian be: Identifikasi kata-kata yang menunjukkan periode.
+Kecuali periode pertama, semua periode lainnya harus mendapat tiga tempat. Gambarlah tiga tempat kosong untuk menunjukkan jumlah tempat yang dibutuhkan pada setiap periode. Pisahkan periode dengan koma.
+
+Kemudian tuliskan digit-digit pada setiap periode.
+
+Gambar menunjukkan empat blok kata yang menunjuk ke kelompok digit. Dari kiri ke kanan: blok “sembilan miliar”, berlabel miliar, menunjuk ke digit sembilan. Blok “dua ratus empat puluh enam juta”, berlabel jutaan, menunjuk ke digit dua, empat, enam. Blok “tujuh puluh tiga ribu”, berlabel ribuan, menunjuk ke digit nol, tujuh, tiga. Blok “seratus delapan puluh sembilan”, berlabel satuan, menunjuk ke digit satu, delapan, sembilan. Di antara setiap kelompok digit terdapat tanda koma. Nol di awal kelompok ribuan harus tetap ditulis.
+Bilangannya adalah digit dari kiri ke kanan: sembilan; tanda koma; dua, empat, enam; tanda koma; nol, tujuh, tiga; tanda koma; satu, delapan, sembilan.
+
+Perhatikan bahwa pada bagian be, nol diperlukan sebagai digit pengisi di tempat ratus ribuan. Pastikan Anda menulis nol jika diperlukan agar setiap periode, kecuali mungkin periode pertama, memiliki tiga tempat.
+
+## m81243--fs-id1542693
+
+Tulislah setiap bilangan dalam bentuk standar:
+
+lima puluh tiga juta delapan ratus sembilan ribu lima puluh satu.
+
+Jawaban.
+
+digit dari kiri ke kanan: lima, tiga; tanda koma; delapan, nol, sembilan; tanda koma; nol, lima, satu.
+
+## m81243--fs-id2437124
+
+Tulislah setiap bilangan dalam bentuk standar:
+
+dua miliar, dua puluh dua juta, tujuh ratus empat belas ribu empat ratus enam puluh enam.
+
+Jawaban.
+
+digit dari kiri ke kanan: dua; tanda koma; nol, dua, dua; tanda koma; tujuh, satu, empat; tanda koma; empat, enam, enam.
+
+## m81243--fs-id3202693
+
+Anggaran suatu negara bagian sekitar tujuh puluh tujuh miliar dolar Amerika Serikat. Tulislah anggaran tersebut dalam bentuk standar.
+
+Penyelesaian
+
+Identifikasi periodenya. Dalam hal ini, hanya dua digit yang diberikan dan berada dalam periode miliaran. Untuk menulis bilangan cacah, tulislah digit nol untuk semua periode lainnya.
+
+Gambar menunjukkan empat blok kata dan empat kelompok digit. Blok pertama berisi “tujuh puluh tujuh miliar”, berlabel miliaran, dan menunjuk ke digit tujuh, tujuh. Blok kedua tidak berisi kata, berlabel jutaan, dan menunjuk ke digit nol, nol, nol. Blok ketiga tidak berisi kata, berlabel ribuan, dan menunjuk ke digit nol, nol, nol. Blok keempat tidak berisi kata, berlabel satuan, dan menunjuk ke digit nol, nol, nol. Di antara setiap kelompok digit terdapat tanda koma. Blok kata yang kosong berbeda dari kelompok digit yang berisi tiga nol.
+Jadi anggarannya sekitar digit dari kiri ke kanan: tujuh, tujuh; tanda koma; nol, nol, nol; tanda koma; nol, nol, nol; tanda koma; nol, nol, nol; dolar Amerika Serikat.
+
+## m81243--fs-id1805534
+
+Tulislah setiap bilangan dalam bentuk standar:
+
+Jarak terdekat Bumi ke Mars adalah sekitar tiga puluh empat juta mil.
+
+Jawaban.
+
+digit dari kiri ke kanan: tiga, empat; tanda koma; nol, nol, nol; tanda koma; nol, nol, nol; mil.
+
+## m81243--fs-id1397780
+
+Tulislah setiap bilangan dalam bentuk standar:
+
+Berat total kapal induk adalah dua ratus empat juta pound.
+
+Jawaban.
+
+digit dari kiri ke kanan: dua, nol, empat; tanda koma; nol, nol, nol; tanda koma; nol, nol, nol; pound.

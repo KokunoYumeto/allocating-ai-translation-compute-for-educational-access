@@ -1,0 +1,288 @@
+{
+  "schema": "jv-translation-input-lock-v1",
+  "purpose": "translation_inputs_only_not_training_or_fine_tuning",
+  "acquired_date": "2026-08-30",
+  "repositories": [
+    {
+      "name": "catalog",
+      "url": "https://github.com/KokunoYumeto/program-matematika-indonesia.git",
+      "commit": "2f0e52280791854f904475e5f92392f52745ea24",
+      "tree": "af8d0254ca0132fc5c8c8622052e4b50b9392fff",
+      "role": "Program catalog and AX-2 authority snapshot",
+      "local_path": "downloads/jv-Latn-ID/catalog",
+      "shallow": true,
+      "tracked_file_count": 2673,
+      "checkout_scope": "complete shallow repository checkout"
+    },
+    {
+      "name": "a00-id",
+      "url": "https://github.com/KokunoYumeto/openstax-prealgebra-2e-id-ID.git",
+      "commit": "3de9207f56f8b5c57c017abf973fb04e00d740f1",
+      "tree": "12bfaf8b678cae9675bedf05fd12c58da2070b1e",
+      "role": "A00 complete Indonesian translation inputs",
+      "local_path": "downloads/jv-Latn-ID/a00-id",
+      "shallow": true,
+      "tracked_file_count": 3709,
+      "checkout_scope": "complete shallow repository checkout"
+    },
+    {
+      "name": "a10-id",
+      "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id.git",
+      "commit": "11754719d8eab8de63d5340ad35824e8be8d99e4",
+      "tree": "e6c78af3ba6b5975697f25c8d551303f850eee7d",
+      "role": "A10 release authority and notices",
+      "local_path": "downloads/jv-Latn-ID/a10-id",
+      "shallow": true,
+      "tracked_file_count": 6,
+      "checkout_scope": "complete shallow repository checkout"
+    },
+    {
+      "name": "openstax-prealgebra-bundle",
+      "url": "https://github.com/openstax/osbooks-prealgebra-bundle.git",
+      "commit": "38cae454e644abf9f0a623e876994553881597c9",
+      "tree": "7907e4c81d43de1c3b6da173f0eb273c01dc5b55",
+      "role": "Canonical upstream shared by A00 and A10; no translation of the bundled Intermediate Algebra book",
+      "local_path": "downloads/jv-Latn-ID/openstax-prealgebra-bundle",
+      "shallow": true,
+      "tracked_file_count": 13738,
+      "checkout_scope": "modules, collections and root notices; unrelated media not materialized"
+    },
+    {
+      "name": "access-dossier",
+      "url": "https://github.com/KokunoYumeto/allocating-ai-translation-compute-for-educational-access.git",
+      "commit": "2c9c129c3e693bec5a0e387c76b1c270fccf399c",
+      "tree": "67e61e7ce612b73c66639383a9dbe5d99b37d970",
+      "role": "AX-2 canonical planning specifications; no repeat audit",
+      "local_path": "downloads/jv-Latn-ID/access-dossier",
+      "shallow": true,
+      "tracked_file_count": 125,
+      "checkout_scope": "complete shallow repository checkout"
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/elementary-algebra-2e-id-ID-1.0.2-source.zip",
+      "release": "v1.0.2",
+      "bytes": 6397865,
+      "sha256": "6f04e88387e8d4e6e710dddcebb8d41e952a315231d7e203d62170c6ad9f3456",
+      "local_path": "downloads/jv-Latn-ID/a10-source.zip",
+      "checksum_authority": "GitHub release asset digest SHA-256 (also bound by the release SHA256SUMS file)"
+    },
+    {
+      "repository": "openstax-prealgebra-bundle",
+      "path": "media/CNX_BMath_Figure_01_01_001.jpg",
+      "sha256": "fe4a2282db97f1d06fa7f4e20e8750caf666f4f53b58b516155f717be13348f8",
+      "bytes": 36549,
+      "local_path": "downloads/jv-Latn-ID/canonical-pilot-media/CNX_BMath_Figure_01_01_001.jpg",
+      "role": "Canonical original number-line image; reader uses the Indonesian edition SVG with translated labels."
+    },
+    {
+      "url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/download/v1.0.2/SHA256SUMS.txt",
+      "sha256": "5f4abce9a019ea01dd5fb5fa0f4aa61e478cc1699c166fa28dd1596bbe510d8d",
+      "bytes": 799,
+      "retained_at": "provenance/A10-release-SHA256SUMS.txt"
+    },
+    {
+      "url": "https://codeload.github.com/openstax/osbooks-prealgebra-bundle/zip/38cae454e644abf9f0a623e876994553881597c9",
+      "sha256": "effdf2dbb6dfd9cab771b568c6575d8074be4a1f9565f1fedbd54f621e138917",
+      "bytes": 537455794,
+      "archive_entries": 13987,
+      "crc_all_entries": "pass",
+      "local_path": "downloads/jv-Latn-ID/openstax-full-pinned.zip",
+      "coverage": "Complete pinned upstream archive including media; separate from sparse Git checkout",
+      "acquisition": "Read-only NTFS hard link to the independently hash-verified archive acquired by the sibling worktree e4ec; no duplicate 537 MB allocation",
+      "shared_origin_at_acquisition": "[local-home]/.codex/worktrees/e4ec/LAN ALLOC/downloads/osbooks-prealgebra-bundle-pinned.zip"
+    }
+  ],
+  "files": [
+    {
+      "repository": "a00-id",
+      "path": "LICENSE",
+      "retained_at": "provenance/A00-LICENSE.txt",
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "bytes": 21442,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "a00-id",
+      "path": "README.md",
+      "retained_at": "provenance/A00-README.md",
+      "sha256": "ec46a5ccc8dc5dff5a567e99682d6925a47706556d2c98e5f817e4aef43dab19",
+      "bytes": 2992,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "a00-id",
+      "path": "provenance/UPSTREAM_README.md",
+      "retained_at": "provenance/UPSTREAM_README.md",
+      "sha256": "158ffba799594279d784587ee9a46cdf331fad43285d69abefe772a9f8fa8288",
+      "bytes": 1114,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "a00-id",
+      "path": "modules/m81241/index.cnxml",
+      "retained_at": "provenance/A00-preface-credits.id.cnxml",
+      "sha256": "224602a3e0474140b3f79a3ba7c6b3f4b4aa7ee6ca48e7c1630ffa170d17cb3f",
+      "bytes": 27902,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "a00-id",
+      "path": "provenance/logbook/authority/prealgebra2e/prealgebra2e-source-manifest.tsv",
+      "retained_at": "provenance/A00-source-manifest.tsv",
+      "sha256": "608507fe5ddd9c80715877715d19bf7ce61b01112648a4963f7c81d362e4d5be",
+      "bytes": 17907,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "a10-id",
+      "path": "SOURCE_AUTHORITY.md",
+      "retained_at": "provenance/A10-SOURCE_AUTHORITY.md",
+      "sha256": "8e8964240ccfd434e8edb6e37957b697534d89658be67fc087ec916924082210",
+      "bytes": 499,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "a10-id",
+      "path": "MODEL_PROVENANCE.md",
+      "retained_at": "provenance/A10-MODEL_PROVENANCE.md",
+      "sha256": "2cd5286265ae103297fc8feea639a9bd87300d2c87befaface34b37862c021c8",
+      "bytes": 223,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "a10-id",
+      "path": "PUBLICATION.json",
+      "retained_at": "provenance/A10-PUBLICATION.json",
+      "sha256": "4b406e0826e180fc14536fce97c8bff56e6cbe335a6ed6bd7bd6715aad083283",
+      "bytes": 742,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "openstax-prealgebra-bundle",
+      "path": "LICENSE",
+      "retained_at": "provenance/UPSTREAM-LICENSE.txt",
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "bytes": 21442,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "access-dossier",
+      "path": "LICENSE",
+      "retained_at": "provenance/AX2-LICENSE.txt",
+      "sha256": "16394c0250b6d0248dd18cceb73f1dee731b532bf26a8209988254faceaf6444",
+      "bytes": 1751,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "access-dossier",
+      "path": "THIRD_PARTY_NOTICES.md",
+      "retained_at": "provenance/AX2-THIRD_PARTY_NOTICES.md",
+      "sha256": "f8d3045d1bb6d0bc46e3f72a33227979835d55449a94e02a0c7c0429b7c0f578",
+      "bytes": 4216,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "catalog",
+      "path": "backend/v2.1/planning/educational-access/authority_snapshot.json",
+      "retained_at": "provenance/AX2-authority-snapshot.json",
+      "sha256": "54b5f69a5ea0b9427c80f24f390e5bc59f9a9d4c1aee8761bc46fd523d537d97",
+      "bytes": 48166,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "archive": "a10-source.zip",
+      "path": "NOTICE.txt",
+      "retained_at": "provenance/A10-NOTICE.txt",
+      "sha256": "47e88be9b9dc79d450ebf514f7be42d6d5f9841449905b908106adf30020647e",
+      "bytes": 738
+    },
+    {
+      "archive": "a10-source.zip",
+      "path": "LICENSE.txt",
+      "retained_at": "provenance/A10-LICENSE.txt",
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "bytes": 21442
+    },
+    {
+      "archive": "a10-source.zip",
+      "path": "authority/SOURCE_AUTHORITY_MANIFEST.csv",
+      "retained_at": "provenance/A10-SOURCE_AUTHORITY_MANIFEST.csv",
+      "sha256": "b817c9bfbd1dcba59f1e6949a83727a662bf95407882634620cd46b625b6a5f2",
+      "bytes": 14863
+    },
+    {
+      "archive": "a10-source.zip",
+      "path": "translated/modules/m82630/index.cnxml",
+      "retained_at": "provenance/A10-preface-credits.id.cnxml",
+      "sha256": "015098db38e15422185f5d179c94b2d07dd3c074f2d4468ab65f75518fc732dd",
+      "bytes": 23923
+    },
+    {
+      "repository": "access-dossier",
+      "path": "curriculum_portfolios.csv",
+      "retained_at": "provenance/AX2-curriculum_portfolios.csv",
+      "sha256": "2e4cc460c4cb343a092c5a8a4c11ec09eef091a93807d983b74e258a698b5049",
+      "bytes": 3404,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "access-dossier",
+      "path": "accessibility_derivatives.csv",
+      "retained_at": "provenance/AX2-accessibility_derivatives.csv",
+      "sha256": "34eed02a5642bd1d9a205f5751f39c3f7d1f0795979e180e05296c51e6d34fb9",
+      "bytes": 1743,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    },
+    {
+      "repository": "a00-id",
+      "path": "media/CNX_BMath_Figure_01_01_001.jpg.id-ID.svg",
+      "retained_at": "translation/number-line.id-ID.svg",
+      "sha256": "80155d34716552ddf7b2cf0d879673ffc10424f6712798c30e7219f4013e884e",
+      "bytes": 2346,
+      "hash_basis": "git blob; independent of checkout CRLF conversion"
+    }
+  ],
+  "units": [
+    {
+      "key": "a00-number-sense",
+      "program": "A00",
+      "module": "m81243",
+      "section": "fs-id1830385",
+      "children": null,
+      "next_anchor": "fs-id2340048",
+      "source": "modules/m81243/index.cnxml",
+      "scope": "Complete first instructional subsection, including worked example and both Try It exercises/solutions.",
+      "indonesian_module_sha256": "7153ce88bcd4aea07fab4075bdb025884e07d534aafb6d06ff1bfbedbc46f251",
+      "upstream_module_sha256": "396b0029798e054e5db6d7acde738cec9f9d8b86bc81da8cc3690d01ec07cf2b",
+      "indonesian_excerpt_sha256": "588af8de4bc09489b8a2a34d4b14d80a09df3e10b1e2c2dfbcfb48fc5f3f0159",
+      "excerpt_path": "translation/a00-number-sense.id-academic.cnxml"
+    },
+    {
+      "key": "a10-variable-bridge",
+      "program": "A10",
+      "module": "m82453",
+      "section": "fs-id1170655150800",
+      "children": 7,
+      "next_anchor": "fs-id1170655224522",
+      "source": "translated/modules/m82453/index.cnxml",
+      "scope": "Contiguous opening through the constant definition; not the complete subsection or module.",
+      "indonesian_module_sha256": "2c0b688d569044b128d589579e9ba7d871a0fb9ac7a670ac6f22d0ef2b66e635",
+      "upstream_module_sha256": "a8fdd235aa254c5a0a1248fa858e9b3579d9b40982bbc514cbe6a18c3e6fcbed",
+      "indonesian_excerpt_sha256": "39e12fa67d48150aa8134477e18a4095e4d1067ee711ba0b3eb568406063bf8a",
+      "excerpt_path": "translation/a10-variable-bridge.id-academic.cnxml"
+    }
+  ],
+  "a10_release_manifest_entries_verified": 408,
+  "ax2_resolution": {
+    "owner": "access-dossier",
+    "portfolio_id": "AX-2",
+    "derivative_id": "AX-AUDIO",
+    "catalog_hashes_match_dossier": true,
+    "independent_repository": false,
+    "note": "AX-2 is a cross-project specification in the catalog/dossier, not a separate book repository; no unrelated B10/OpenLogic corpus is assigned."
+  },
+  "a00_canonical_modules_verified": 75,
+  "a10_canonical_modules_verified": 82
+}

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" id="fs-id1165135422920">
+  <title>Determining Whether a Function is One-to-One </title><para id="fs-id1165135678633">Some functions have a given output value that corresponds to two or more input values. For example, in the stock chart shown in the figure at the beginning of this chapter, the stock price was $1000 on five different dates, meaning that there were five different input values that all resulted in the same output value of $1000.</para><para id="fs-id1165135245630">However, some functions have only one input value for each output value, as well as having only one output for each input. We call these functions one-to-one functions. As an example, consider a school that uses only letter grades and decimal equivalents, as listed in <link target-id="Table_01_01_13" />.</para>
+<table id="Table_01_01_13" summary="Two columns and five rows. The first column is labeled, “Letter Grade”, and the second column is labeled, “Grade point average”. Reading the rows as ordered pairs, we have: (A, 4.0), (B, 3.0), (C, 2.0), and (D, 1.0).">
+<tgroup cols="2"><colspec colnum="1" colname="c1" align="center" />
+    <colspec colnum="2" colname="c2" align="center" />
+    <thead>
+     <row>
+      <entry align="center">Letter grade</entry>
+      <entry align="center">Grade point average</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry align="center">A</entry>
+      <entry align="center">4.0</entry>
+     </row>
+     <row>
+      <entry align="center">B</entry>
+      <entry align="center">3.0</entry>
+     </row>
+     <row>
+      <entry align="center">C</entry>
+      <entry align="center">2.0</entry>
+     </row>
+     <row>
+      <entry align="center">D</entry>
+      <entry align="center">1.0</entry>
+     </row>
+    </tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165137561844">This grading system represents a one-to-one function, because each letter input yields one particular grade point average output and each grade point average corresponds to one input letter.</para>
+  <para id="fs-id1165137628999">To visualize this concept, let’s look again at the two simple functions sketched in <link target-id="Figure_01_01_001" /><emphasis>(a) </emphasis>and <link target-id="Figure_01_01_001" /><emphasis>(b)</emphasis>. The function in part (a) shows a relationship that is not a one-to-one function because inputs <m:math>
+   <m:mrow>
+    <m:mi>q</m:mi></m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi></m:mrow>
+  </m:math> both give output <m:math>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> The function in part (b) shows a relationship that is a one-to-one function because each input is associated with a single output.</para>
+
+  <note id="fs-id1165135261974">
+
+   <title>One-to-One Function</title>
+  <para id="fs-id1165137387348"> A <term id="term-00015">one-to-one function</term> is a function in which each output value corresponds to exactly one input value.</para>
+  </note>
+
+  <example id="Example_01_01_13"><exercise id="fs-id1165137755749">
+    <problem id="fs-id1165137755752">
+     <title>Determining Whether a Relationship Is a One-to-One Function </title>
+     <para id="fs-id1165137892387">Is the area of a circle a function of its radius? If yes, is the function one-to-one?</para>
+    </problem>
+    <solution id="fs-id1165137892391">
+     <para id="fs-id1165134148470">A circle of radius <m:math>
+      <m:mrow>
+       <m:mi>r</m:mi></m:mrow>
+     </m:math> has a unique area measure given by <m:math>
+      <m:mrow>
+       <m:mi>A</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:msup>
+        <m:mi>r</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>,</m:mo></m:mrow>
+     </m:math> so for any input, <m:math>
+      <m:mrow>
+       <m:mi>r</m:mi><m:mo>,</m:mo></m:mrow>
+     </m:math> there is only one output, <m:math><m:mrow><m:mi>A</m:mi><m:mo>.</m:mo></m:mrow></m:math> The area is a function of radius <m:math>
+      <m:mrow>
+       <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para><para id="fs-id1165137892326">If the function is one-to-one, the output value, the area, must correspond to a unique input value, the radius. Any area measure <m:math>
+      <m:mrow>
+       <m:mi>A</m:mi></m:mrow>
+     </m:math> is given by the formula <m:math>
+      <m:mrow>
+       <m:mi>A</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:msup>
+        <m:mi>r</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>.</m:mo></m:mrow>
+     </m:math> Because areas and radii are positive numbers, there is exactly one solution: <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>A</m:mi>
+     <m:mi>π</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> So the area of a circle is a one-to-one function of the circle’s radius.</para></solution>
+   </exercise>
+ </example>
+<note id="fs-id1165137579363" class="precalculus try">
+<label>Try It</label>
+   <exercise id="ti_01_01_10"><problem id="fs-id1165134079641">
+    <list id="fs-id1165134079644" list-type="enumerated" number-style="arabic" class="circled">
+    <item><span class="token">ⓐ</span> Is a balance a function of the bank account number?</item>
+    <item><span class="token">ⓑ</span> Is a bank account number a function of the balance?</item>
+    <item><span class="token">ⓒ</span> Is a balance a one-to-one function of the bank account number?</item>
+    </list>
+    </problem>
+    <solution id="fs-id1165137456018"><list id="eip-idm552643792" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> yes, because each bank account has a single balance at any given time</item>
+<item><span class="token">ⓑ</span> no, because several bank account numbers may have the same balance</item>
+<item><span class="token">ⓒ</span> no, because the same output may correspond to more than one input.</item></list></solution>
+   </exercise></note>
+
+<note id="fs-id1327356" class="precalculus try"><label>Try It</label>
+<exercise id="ti_01_01_11"><problem id="fs-id1165137737576"><para id="eip-id1166399990268">Evaluate the following:
+    <newline /><span class="token">ⓐ</span> If each percent grade earned in a course translates to one letter grade, is the letter grade a function of the percent grade?
+  <newline /><span class="token">ⓑ</span> If so, is the function one-to-one?
+</para>
+  </problem>
+  <solution id="fs-id1165137655289">
+  <list id="fs-id1165137655291" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> Yes, letter grade is a function of percent grade;</item>
+  <item><span class="token">ⓑ</span> No, it is not one-to-one. There are 100 different percent numbers we could get but only about five possible letter grades, so there cannot be only one percent number that corresponds to each letter grade.</item>
+</list></solution>
+   </exercise></note></section>
+
+ 

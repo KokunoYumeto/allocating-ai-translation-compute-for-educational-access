@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" id="m49301-unit-006-excerpt"><section id="fs-id1165137503241">
+  <title>Finding Input and Output Values of a Function </title>
+  <para id="fs-id1165137470651">When we know an input value and want to determine the corresponding output value for a function, we <emphasis effect="italics">evaluate</emphasis> the function. Evaluating will always produce one result because each input value of a function corresponds to exactly one output value.</para>
+  <para id="fs-id1165137735634">When we know an output value and want to determine the input values that would produce that output value, we set the output equal to the function’s formula and <emphasis effect="italics">solve</emphasis> for the input. Solving can produce more than one solution because different input values can produce the same output value.</para>
+
+  <section id="fs-id1165137425943">
+   <title>Evaluation of Functions in Algebraic Forms</title>
+   <para id="fs-id1165137655584">When we have a function in formula form, it is usually a simple matter to evaluate the function. For example, the function <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+     </m:mrow>
+   </m:math> can be evaluated by squaring the input value, multiplying by 3, and then subtracting the product from 5.</para>
+
+   <note id="fs-id1165135613610" class="how-to-notitle">
+    <label>How To</label>
+   <para id="fs-id1165137767182"> <emphasis>Given the formula for a function, evaluate.
+   </emphasis></para>
+    <list id="fs-id1165137629040" list-type="enumerated" number-style="arabic"><item>Substitute the input variable in the formula with the value provided.</item>
+    <item>Calculate the result.</item>
+    </list></note>
+
+    <example id="Example_01_01_06"><exercise id="fs-id1165137742220"><problem id="fs-id1165137455592">
+       <title>Evaluating Functions at Specific Values</title>
+       <para id="fs-id1165134193005">Evaluate <m:math>
+        <m:mrow>
+         <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mi>x</m:mi>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+           <m:mi>x</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+         <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+       </m:math> at:</para>
+       <list id="fs-id1165137648008" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math>
+         <m:mn>2</m:mn>
+        </m:math>
+        </item>
+        <item><span class="token">ⓑ</span> <m:math>
+         <m:mi>a</m:mi>
+        </m:math>
+        </item>
+        <item><span class="token">ⓒ</span> <m:math>
+         <m:mrow>
+          <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi></m:mrow>
+        </m:math>
+        </item>
+        <item><span class="token">ⓓ</span> Now evaluate <m:math>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+             <m:mrow>
+              <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi></m:mrow>
+             <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+              <m:mi>a</m:mi>
+              <m:mo>)</m:mo></m:mrow></m:mrow>
+           <m:mi>h</m:mi>
+          </m:mfrac>
+         </m:mrow>
+        </m:math>
+        </item>
+       </list></problem>
+      <solution id="fs-id1165135397244">
+       <para id="fs-id1165137936905">Replace the <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+in the function with each specified value.</para><list id="fs-id1165137778273" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> Because the input value is a number, 2, we can use simple algebra to simplify.
+        <equation id="fs-id1165135160774" class="unnumbered"><label />
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mn>2</m:mn>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+       <m:mn>2</m:mn>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mn>2</m:mn>
+      <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+       </item>
+
+       <item><span class="token">ⓑ</span> In this case, the input value is a letter so we cannot simplify the answer any further.
+        <equation id="fs-id1165137638318" class="unnumbered"><label />
+      <m:math display="block">
+        <m:mrow>
+         <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mi>a</m:mi>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+           <m:mi>a</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+         <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+        </m:math>
+         </equation>
+       </item>
+
+       <item><span class="token">ⓒ</span> With an input value of <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> we must use the distributive property.
+<equation id="fs-id1165137911654" class="unnumbered"><label /> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>h</m:mi><m:mo>+</m:mo><m:msup>
+       <m:mi>h</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>h</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></item>
+
+       <item><span class="token">ⓓ</span> In this case, we apply the input values to the function more than once, and then perform algebraic operations on the result. We already found that
+<equation id="fs-id1165135154122" class="unnumbered"><label /> <m:math display="block">
+        <m:mrow>
+         <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+           <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+           <m:mi>a</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+         <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>h</m:mi><m:mo>+</m:mo><m:msup>
+          <m:mi>h</m:mi>
+          <m:mn>2</m:mn>
+         </m:msup>
+         <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>h</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+       </m:math>
+       </equation>
+<para id="fs-id1165135632109">and we know that</para>
+<equation id="fs-id1165137471110" class="unnumbered"><label /> <m:math display="block">
+       <m:mrow>
+        <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>a</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+          <m:mi>a</m:mi>
+          <m:mn>2</m:mn>
+         </m:msup>
+        <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+      </m:math> </equation>
+
+<para id="fs-id1165137767461">Now we combine the results and simplify.</para>
+       <equation id="fs-id1165137573884" class="unnumbered"><label /> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow />
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mi>h</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mo stretchy="false">(</m:mo><m:msup>
+             <m:mi>a</m:mi>
+             <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>h</m:mi><m:mo>+</m:mo><m:msup>
+             <m:mi>h</m:mi>
+             <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>h</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
+             <m:mi>a</m:mi>
+             <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mi>h</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>                         </m:mtext><m:mo>=</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mn>2</m:mn><m:mi>a</m:mi><m:mi>h</m:mi><m:mo>+</m:mo><m:msup>
+             <m:mi>h</m:mi>
+             <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>h</m:mi>
+           </m:mrow>
+           <m:mi>h</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow />
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>                         </m:mtext><m:mo>=</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mi>h</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtable>
+           <m:mtr>
+            <m:mtd>
+             <m:mrow>
+              <m:mtable>
+               <m:mtr>
+                <m:mtd>
+                 <m:mrow />
+                </m:mtd>
+                <m:mtd>
+                 <m:mrow />
+                </m:mtd>
+               </m:mtr>
+
+              </m:mtable>
+             </m:mrow>
+            </m:mtd>
+            <m:mtd>
+             <m:mrow />
+            </m:mtd>
+           </m:mtr>
+
+          </m:mtable><m:mtext>Factor out </m:mtext><m:mi>h</m:mi><m:mo>.</m:mo>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>                         </m:mtext><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtable>
+           <m:mtr>
+            <m:mtd>
+             <m:mrow>
+              <m:mtable>
+               <m:mtr>
+                <m:mtd>
+                 <m:mrow />
+                </m:mtd>
+                <m:mtd>
+                 <m:mrow />
+                </m:mtd>
+               </m:mtr>
+
+              </m:mtable>
+             </m:mrow>
+            </m:mtd>
+            <m:mtd>
+             <m:mrow />
+            </m:mtd>
+           </m:mtr>
+
+          </m:mtable><m:mtext>Simplify</m:mtext><m:mo>.</m:mo>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></item>
+        </list></solution>
+     </exercise></example><example id="Example_01_01_07">
+     <exercise id="fs-id1165134043756">
+      <problem id="fs-id1165137705537">
+       <title>Evaluating Functions</title>
+       <para id="fs-id1165137731385">Given the function <m:math>
+        <m:mrow>
+         <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mi>p</m:mi>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+           <m:mi>p</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+         <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>p</m:mi><m:mo>,</m:mo></m:mrow>
+       </m:math> evaluate <m:math>
+        <m:mrow>
+         <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mn>4</m:mn>
+          <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+       </m:math>
+       </para>
+      </problem>
+      <solution id="fs-id1165137433651">
+       <para id="fs-id1165137433653">To evaluate <m:math>
+        <m:mrow>
+         <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mn>4</m:mn>
+          <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+       </m:math> we substitute the value 4 for the input variable <m:math>
+        <m:mrow>
+         <m:mi>p</m:mi></m:mrow>
+       </m:math> in the given function.</para>
+
+       <equation id="fs-id1165137444745" class="unnumbered"><label /> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mi>p</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>p</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>+</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:mo>=</m:mo><m:mn>24</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137785006">Therefore, for an input of 4, we have an output of 24.</para>
+      </solution>
+     </exercise>
+    </example>
+
+    <note id="fs-id1165137704746" class="precalculus try">
+     <label>Try It</label>
+     <exercise id="ti_01_01_08">
+      <problem id="fs-id1165134039322"><para id="fs-id1165134039323">Given the function <m:math>
+       <m:mrow>
+        <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>m</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+          <m:mrow>
+           <m:mi>m</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+         </m:msqrt>
+        <m:mo>,</m:mo></m:mrow>
+      </m:math> evaluate <m:math>
+       <m:mrow>
+        <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mn>5</m:mn>
+         <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+      </m:math>
+      </para></problem>
+      <solution id="fs-id1165137441862"><para id="fs-id1165134037488"> <m:math>
+       <m:mrow>
+        <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mn>5</m:mn>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+      </m:math>
+      </para></solution>
+     </exercise>
+    </note>
+
+    <example id="Example_01_01_08">
+     <exercise id="fs-id1165137459747">
+      <problem id="fs-id1165137459749">
+       <title>Solving Functions</title>
+       <para id="fs-id1165137460826">Given the function <m:math>
+        <m:mrow>
+         <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mi>p</m:mi>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+           <m:mi>p</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+         <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>p</m:mi><m:mo>,</m:mo></m:mrow>
+       </m:math> solve for <m:math>
+        <m:mrow>
+         <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mi>p</m:mi>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+       </m:math>
+       </para>
+      </problem>
+      <solution id="fs-id1165132971707">
+       <equation id="fs-id1165135195145" class="unnumbered"><label />
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                 </m:mtext><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow />
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow />
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow />
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>           </m:mtext><m:msup>
+       <m:mi>p</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow />
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow />
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Substitute the original function </m:mtext><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mi>p</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>p</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:msup>
+       <m:mi>p</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow />
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow />
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Subtract 3 from each side</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mtext>)(</m:mtext><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow />
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow />
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Factor</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137770370">If <m:math>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>p</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+         <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+           <m:mi>p</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+      </m:math> either <m:math>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>p</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+      </m:math> or <m:math>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>p</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+      </m:math> (or both of them equal 0). We will set each factor equal to 0 and solve for <m:math>
+       <m:mrow>
+        <m:mi>p</m:mi></m:mrow>
+      </m:math> in each case.</para>
+       <equation id="fs-id1165134114001" class="unnumbered"><label /> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>p</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>p</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134468906">This gives us two solutions. The output <m:math>
+       <m:mrow>
+        <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>p</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+      </m:math> when the input is either <m:math>
+       <m:mrow>
+        <m:mi>p</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+      </m:math> or <m:math>
+       <m:mrow>
+        <m:mi>p</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3.</m:mn></m:mrow>
+      </m:math> We can also verify by graphing as in <link target-id="Figure_01_01_006" />. The graph verifies that <m:math>
+       <m:mrow>
+        <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mn>1</m:mn>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+           <m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+      </m:math> and <m:math>
+       <m:mrow>
+        <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mn>4</m:mn>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>24.</m:mn></m:mrow>
+      </m:math>
+      </para>
+
+      <figure id="Figure_01_01_006" class="small">
+       <media id="fs-id1165135335985" alt="Graph of a parabola with labeled points (-3, 3), (1, 3), and (4, 24).">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_01_006-5f6f.jpg" />
+       </media>
+      </figure>
+       </solution>
+     </exercise>
+    </example>
+
+    <note id="fs-id1165133056923" class="precalculus try">
+     <label>Try It</label>
+     <exercise id="ti_01_01_09">
+      <problem id="fs-id1165134170173"><para id="fs-id1165134170174">Given the function <m:math>
+       <m:mrow>
+        <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>m</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+          <m:mrow>
+           <m:mi>m</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+         </m:msqrt>
+        <m:mo>,</m:mo></m:mrow>
+      </m:math> solve <m:math>
+       <m:mrow>
+        <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>m</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+      </m:math>
+      </para></problem>
+      <solution id="fs-id1165135664055"><para id="fs-id1165135664056"> <m:math>
+       <m:mrow>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow>
+      </m:math>
+      </para></solution>
+     </exercise>
+     </note>
+  </section>
+  </section></document>

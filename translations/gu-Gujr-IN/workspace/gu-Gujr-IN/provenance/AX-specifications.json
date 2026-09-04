@@ -1,0 +1,106 @@
+[
+  {
+    "source": "downloads/gu-Gujr-IN/program/backend/v2.1/planning/educational-access/curriculum_portfolios.jsonl",
+    "sha256": "07a5c6f4cb312324afac8b06345bb64b1a2e332718da61c4dc34627eb56bd585",
+    "records": [
+      {
+        "cumulative_result": "Screen-reader-native low-bandwidth and print access",
+        "exact_content": "semantic HTML or MathML plus screen PDF print PDF and offline package",
+        "notes": "Apply to every selected language and curriculum tier rather than deferring.",
+        "portfolio_id": "AX-1",
+        "portfolio_name": "Core accessibility package",
+        "preferred_depth_expression": "parallel_to_D2",
+        "prerequisite_portfolio": null,
+        "raw_units": null,
+        "record_type": "planning_curriculum_portfolio",
+        "schema_id": "interlanguage/global-backend-v2.1-educational-access-planning/0.1.0",
+        "source_alpha_tokens": null,
+        "source_ids": [
+          "ACE-E003",
+          "ACE-E005"
+        ],
+        "source_project": "Cross-project"
+      },
+      {
+        "cumulative_result": "Additional cognitive-access scaffold",
+        "exact_content": "definitions summaries and worked-example explanations",
+        "notes": "Supplement only; never silently replaces the source-faithful edition.",
+        "portfolio_id": "AX-3",
+        "portfolio_name": "Plain-language companion",
+        "preferred_depth_expression": "separate_derivative",
+        "prerequisite_portfolio": "AX-1",
+        "raw_units": null,
+        "record_type": "planning_curriculum_portfolio",
+        "schema_id": "interlanguage/global-backend-v2.1-educational-access-planning/0.1.0",
+        "source_alpha_tokens": null,
+        "source_ids": [
+          "ACE-E003",
+          "ACE-E005"
+        ],
+        "source_project": "Cross-project"
+      }
+    ]
+  },
+  {
+    "source": "downloads/gu-Gujr-IN/program/backend/v2.1/planning/educational-access/accessibility_derivatives.jsonl",
+    "sha256": "a4ba83fd93246fb90165a9b2fbaa929d37a3f424e49e670285422671990b28e4",
+    "records": [
+      {
+        "access_gain_axis": "screen reader and responsive low-bandwidth access",
+        "derivative_id": "AX-HTML",
+        "name": "Semantic HTML with accessible math",
+        "notes": "Primary accessibility derivative.",
+        "record_type": "accessibility_derivative",
+        "schema_id": "interlanguage/global-backend-v2.1-educational-access-planning/0.1.0",
+        "scope": "structured headings tables language metadata MathML",
+        "workload_increment": {
+          "base": 0.15,
+          "high": 0.2,
+          "low": 0.1
+        }
+      },
+      {
+        "access_gain_axis": "print and screen-reader fallback",
+        "derivative_id": "AX-PDF",
+        "name": "Tagged searchable screen and print PDFs",
+        "notes": "Maintain separate screen and print profiles where necessary.",
+        "record_type": "accessibility_derivative",
+        "schema_id": "interlanguage/global-backend-v2.1-educational-access-planning/0.1.0",
+        "scope": "pagination bookmarks reading order embedded fonts and black-and-white print",
+        "workload_increment": {
+          "base": 0.075,
+          "high": 0.1,
+          "low": 0.05
+        }
+      },
+      {
+        "access_gain_axis": "low-connectivity and institutional distribution",
+        "derivative_id": "AX-OFFLINE",
+        "name": "Offline HTML EPUB or SCORM package",
+        "notes": "Avoid remote runtime dependencies.",
+        "record_type": "accessibility_derivative",
+        "schema_id": "interlanguage/global-backend-v2.1-educational-access-planning/0.1.0",
+        "scope": "portable local assets and LMS delivery",
+        "workload_increment": {
+          "base": 0.085,
+          "high": 0.12,
+          "low": 0.05
+        }
+      },
+      {
+        "access_gain_axis": "cognitive and second-language accessibility",
+        "derivative_id": "AX-PLAIN",
+        "name": "Plain-language companion",
+        "notes": "Must remain aligned to and distinct from the source-faithful edition.",
+        "record_type": "accessibility_derivative",
+        "schema_id": "interlanguage/global-backend-v2.1-educational-access-planning/0.1.0",
+        "scope": "definitions summaries and worked-example scaffolding",
+        "workload_increment": {
+          "base": 0.475,
+          "high": 0.6,
+          "low": 0.35
+        }
+      }
+    ]
+  }
+]

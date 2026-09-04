@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi-Latn-VN" xml:lang="vi-Latn-VN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bài tập đại số: tính giá trị và tìm đầu vào</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">html { color: #182b35; background: #f8f6f1; font-size: 18px; }
+body { max-width: 52rem; margin: 0 auto; padding: 2.5rem 1.3rem 4rem; line-height: 1.65; font-family: "Noto Sans", "Segoe UI", Arial, sans-serif; }
+header { border-bottom: 3px solid #216c68; margin-bottom: 2rem; }
+h1,h2,h3 { line-height: 1.25; color: #175a57; break-after: avoid; }
+h1 { font-size: 2.3rem; } h2 { margin-top: 2.5rem; } h3 { margin-top: 1.8rem; }
+a { color: #075d99; text-underline-offset: .15em; }
+nav { background: #edf0e8; border-radius: .4rem; padding: 1rem 1.4rem; }
+table { border-collapse: collapse; margin: 1.2rem auto; min-width: 55%; }
+th,td { border: 1px solid #98aaa9; padding: .4rem 1rem; }
+th { background: #e2eeea; }
+img { display: block; max-width: 100%; height: auto; margin: 1rem auto; }
+figure { margin: 1.4rem 0; } figcaption { font-size: .9rem; }
+pre { overflow-x: auto; background: #edf0e8; padding: 1rem; border-radius: .3rem; }
+code { font-size: .88em; }
+math[display="block"] { overflow-x: auto; overflow-y: hidden; padding: .6rem 0; }
+:target { scroll-margin-top: 1rem; outline: 2px solid #c3dcd0; }
+@media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.9rem; } body { padding: 1rem; } table { width: 100%; } th,td { padding: .35rem .5rem; } }
+@media print { html { background: white; font-size: 11pt; } body { max-width: none; padding: 0; } nav { display: none; } img,table,pre { break-inside: avoid; } a { color: inherit; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Bài tập đại số: tính giá trị và tìm đầu vào</h1>
+<p class="subtitle">A30 · Bài tự học 011 · Bản dịch thử nghiệm 0.1</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#vi-prerequisites" id="toc-vi-prerequisites">Phạm vi và
+cách học</a></li>
+<li><a href="#vi-substitution" id="toc-vi-substitution">Tính giá trị từ
+công thức</a></li>
+<li><a href="#vi-difference-quotients" id="toc-vi-difference-quotients">Rút gọn tỉ số các hiệu</a></li>
+<li><a href="#vi-evaluate-solve" id="toc-vi-evaluate-solve">Phân biệt
+tính giá trị và giải phương trình</a></li>
+<li><a href="#vi-rewrite-relation" id="toc-vi-rewrite-relation">Viết
+quan hệ dưới dạng hàm số</a></li>
+<li><a href="#vi-answers" id="toc-vi-answers">Lời giải và giải
+thích</a></li>
+<li><a href="#vi-next" id="toc-vi-next">Tự kiểm tra và phần tiếp
+theo</a></li>
+<li><a href="#vi-attribution" id="toc-vi-attribution">Nguồn và ghi
+công</a></li>
+</ul>
+</nav>
+<h2 id="vi-prerequisites">Phạm vi và cách học</h2>
+<p>Bài này dịch 13 bài tập cuối nhóm <em>Algebraic</em> trong phần bài
+tập mục 1.1 của mô-đun m49301. Chúng tương ứng với các bài 27–39 nếu đếm
+toàn bộ phần bài tập theo thứ tự nguồn, hoặc các bài 22–34 trong riêng
+nhóm đại số. Số bài 27–39 dưới đây giữ thứ tự trong toàn bộ phần bài tập
+nguồn. Phạm vi bắt đầu ở hướng dẫn chung fs-id1165134066606 và dừng
+trước nhóm <em>Graphical</em> fs-id1165135664071; không bao gồm bài tập
+đọc đồ thị.</p>
+<p><em>Hướng dẫn bổ sung:</em> Cần biết thay số hoặc biểu thức vào công
+thức, khai triển bình phương, quy tắc dấu, giá trị tuyệt đối, phân tích
+đa thức thành nhân tử và căn bậc hai số học. Trong bài này, các biến
+nhận giá trị thực và mỗi công thức được xét trên tập xác định thực tự
+nhiên của nó, trừ khi có điều kiện riêng. Ký hiệu hàm số được dùng lại
+trong các bài độc lập: công thức ở bài này không áp dụng cho bài
+khác.</p>
+<p>Hãy thử giải trước, rồi dùng liên kết đến lời giải. Nguồn kèm đáp án
+cho bảy bài; sáu lời giải còn lại được đánh dấu <strong>lời giải bổ
+sung</strong>, không phải đáp án của nguồn. Những bước giải thích thêm
+và điều kiện tập xác định được bổ sung cũng được phân biệt rõ.</p>
+<h2 id="vi-substitution">Tính giá trị từ công thức</h2>
+<div id="fs-id1165134066606">
+<p>Trong năm bài tiếp theo, với mỗi hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134066606:0">
+<mrow> <mi>f</mi></mrow> </math>, hãy tính các biểu thức</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134066606:1">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>−3</mn><mo stretchy="false">)</mo><mo>,</mo><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>,</mo><mi>f</mi><mo stretchy="false">(</mo><mi>−</mi><mi>a</mi><mo stretchy="false">)</mo><mo>,</mo><mi>−</mi><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>,</mo><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow> </math></p>
+</div>
+<p><em>Lưu ý bổ sung:</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(-a)</annotation></semantics></math>
+yêu cầu thay đầu vào bằng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">-a</annotation></semantics></math>;
+còn
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">-f(a)</annotation></semantics></math>
+yêu cầu tính
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a)</annotation></semantics></math>
+rồi lấy số đối của toàn bộ kết quả. Hai thao tác này không giống nhau.
+Với
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a+h)</annotation></semantics></math>,
+hãy thay mỗi lần xuất hiện của biến đầu vào bằng cả biểu thức
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">a+h</annotation></semantics></math>
+và giữ ngoặc cho đến khi khai triển.</p>
+<h3 id="fs-id1165137431335">Bài 27</h3>
+<div id="fs-id1165137431337">
+<div id="fs-id1165137431339">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137431339:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165137409631">Xem lời giải bài 27</a>.</p>
+<h3 id="fs-id1165137727203">Bài 28</h3>
+<div id="fs-id1165137603598">
+<div id="fs-id1165137603600">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137603600:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>5</mn><msup>
+<mi>x</mi> <mn>2</mn> </msup>
+<mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow> </math></p>
+</div>
+</div>
+<p><a href="#vi-sol-2">Xem lời giải bổ sung bài 28</a>.</p>
+<h3 id="fs-id1165137844088">Bài 29</h3>
+<div id="fs-id1165137844090">
+<div id="fs-id1165137844092">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137844092:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow> <mn>2</mn><mo>−</mo><mi>x</mi></mrow> </msqrt>
+<mo>+</mo><mn>5</mn></mrow> </math></p>
+</div>
+</div>
+<p><a href="#fs-id1165134151868">Xem lời giải bài 29</a>.</p>
+<h3 id="fs-id1165135697840">Bài 30</h3>
+<div id="fs-id1165135697842">
+<div id="fs-id1165135697844">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135697844:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mrow> <mn>6</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow> <mrow>
+<mn>5</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow> </mfrac> </mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#vi-sol-4">Xem lời giải bổ sung bài 30</a>.</p>
+<h3 id="fs-id1165135453854">Bài 31</h3>
+<div id="fs-id1165135453856">
+<div id="fs-id1165135453858">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135453858:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo>|</mo>
+<mrow> <mi>x</mi><mo>−</mo><mn>1</mn></mrow>
+<mo>|</mo></mrow><mo>−</mo><mrow><mo>|</mo> <mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn></mrow> <mo>|</mo></mrow></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165135357153">Xem lời giải bài 31</a>.</p>
+<h2 id="vi-difference-quotients">Rút gọn tỉ số các hiệu</h2>
+<h3 id="fs-id1165135195666">Bài 32</h3>
+<div id="fs-id1165135195668">
+<div id="fs-id1165135195670">
+<p>Cho hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135195670:0">
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>−</mo><msup>
+<mi>x</mi> <mn>2</mn> </msup> <mo>,</mo></mrow> </math> hãy tính và rút
+gọn</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135195670:1">
+<mrow> <mfrac> <mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy="false">)</mo><mo>−</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+<mi>h</mi> </mfrac>
+<mo>,</mo><mspace width="0.5em"></mspace><mi>h</mi><mo>≠</mo><mn>0.</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#vi-sol-6">Xem lời giải bổ sung bài 32</a>.</p>
+<h3 id="fs-id1165135579705">Bài 33</h3>
+<div id="fs-id1165135579707">
+<div id="fs-id1165135579709">
+<p>Cho hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135579709:0">
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi> <mn>2</mn> </msup>
+<mo>+</mo><mn>2</mn><mi>x</mi><mo>,</mo></mrow> </math> hãy tính và rút
+gọn</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135579709:1">
+<mrow> <mfrac> <mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mi>g</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow>
+<mrow> <mi>x</mi><mo>−</mo><mi>a</mi></mrow> </mfrac>
+<mo>,</mo><mspace width="0.5em"></mspace><mi>x</mi><mo>≠</mo><mi>a</mi><mo>.</mo></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165134284461">Xem lời giải bài 33</a>.</p>
+<h2 id="vi-evaluate-solve">Phân biệt tính giá trị và giải phương
+trình</h2>
+<p><em>Hướng dẫn bổ sung:</em> Khi tính giá trị, đầu vào đã cho và cần
+tìm đầu ra. Khi giải phương trình, đầu ra đã cho và cần tìm tất cả các
+đầu vào phù hợp trong tập xác định. Hai loại yêu cầu này được đặt cạnh
+nhau ở mỗi bài.</p>
+<h3 id="fs-id1165134036847">Bài 34</h3>
+<div id="fs-id1165134036849">
+<div id="fs-id1165135538779">
+<p>Cho hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135538779:0">
+<mrow>
+<mi>k</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>t</mi><mo>−</mo><mn>1</mn><mo>:</mo></mrow>
+</math></p>
+</div>
+<div id="fs-id1165135639752">
+<p>ⓐ Tính
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135639752:0">
+<mrow>
+<mi>k</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</math></p>
+<p>ⓑ Giải phương trình
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135639752:1">
+<mrow>
+<mi>k</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>7.</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#vi-sol-8">Xem lời giải bổ sung bài 34</a>.</p>
+<h3 id="fs-id1165134155170">Bài 35</h3>
+<div id="fs-id1165134155172">
+<div id="fs-id1165134155174">
+<p>Cho hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134155174:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>−</mo><mn>3</mn><mi>x</mi><mo>:</mo></mrow>
+</math></p>
+</div>
+<div id="fs-id1165132950022">
+<p>ⓐ Tính
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165132950022:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</math></p>
+<p>ⓑ Giải phương trình
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165132950022:1">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>1.</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165135518215">Xem lời giải bài 35</a>.</p>
+<h3 id="fs-id1165137935719">Bài 36</h3>
+<div id="fs-id1165135388490">
+<div id="fs-id1165135388492">
+<p>Cho hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135388492:0">
+<mrow>
+<mi>p</mi><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>c</mi> <mn>2</mn> </msup> <mo>+</mo><mi>c</mi><mo>:</mo></mrow>
+</math></p>
+</div>
+<div id="fs-id1165137803284">
+<p>ⓐ Tính
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137803284:0">
+<mrow>
+<mi>p</mi><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</math></p>
+<p>ⓑ Giải phương trình
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137803284:1">
+<mrow>
+<mi>p</mi><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2.</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#vi-sol-10">Xem lời giải bổ sung bài 36</a>.</p>
+<h3 id="fs-id1165135361357">Bài 37</h3>
+<div id="fs-id1165135361359">
+<div id="fs-id1165135361361">
+<p>Cho hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135361361:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi> <mn>2</mn> </msup>
+<mo>−</mo><mn>3</mn><mi>x</mi><mo>:</mo></mrow> </math></p>
+</div>
+<div id="fs-id1165135320063">
+<p>ⓐ Tính
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135320063:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</math></p>
+<p>ⓑ Giải phương trình
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135320063:1">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4.</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165135453081">Xem lời giải bài 37</a>.</p>
+<h3 id="fs-id1165137833947">Bài 38</h3>
+<div id="fs-id1165137833949">
+<div id="fs-id1165137833951">
+<p>Cho hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137833951:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow> <mi>x</mi><mo>+</mo><mn>2</mn></mrow> </msqrt> <mo>:</mo></mrow>
+</math></p>
+</div>
+<div id="fs-id1165137731069">
+<p>ⓐ Tính
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137731069:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</math></p>
+<p>ⓑ Giải phương trình
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137731069:1">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4.</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#vi-sol-12">Xem lời giải bổ sung bài 38</a>.</p>
+<h2 id="vi-rewrite-relation">Viết quan hệ dưới dạng hàm số</h2>
+<h3 id="fs-id1165137433542">Bài 39</h3>
+<div id="fs-id1165137433544">
+<div id="fs-id1165137433547">
+<p>Xét quan hệ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137433547:0">
+<mrow>
+<mn>3</mn><mi>r</mi><mo>+</mo><mn>2</mn><mi>t</mi><mo>=</mo><mn>18.</mn></mrow>
+</math></p>
+</div>
+<div id="fs-id1165135349856">
+<p>ⓐ Viết quan hệ đó dưới dạng hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135349856:0">
+<mrow>
+<mi>r</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</math></p>
+<p>ⓑ Tính
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135349856:1">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</math></p>
+<p>ⓒ Giải phương trình
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135349856:2">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2.</mn></mrow>
+</math></p>
+</div>
+</div>
+<p><a href="#fs-id1165137767447">Xem lời giải bài 39</a>.</p>
+<h2 id="vi-answers">Lời giải và giải thích</h2>
+<h3 id="fs-id1165137409631">Bài 27 — Lời giải nguồn</h3>
+<div id="fs-id1165137529461">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137529461:0"><mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>11</mn><mo>;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137529461:1">
+<mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>1</mn><mo>;</mo>
+</math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137529461:2">
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>2</mn><mi>a</mi><mo>−</mo><mn>5</mn><mo>;</mo>
+</math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137529461:3">
+<mo>−</mo><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>2</mn><mi>a</mi><mo>+</mo><mn>5</mn><mo>;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137529461:4"><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>a</mi><mo>+</mo><mn>2</mn><mi>h</mi><mo>−</mo><mn>5</mn>
+</math></p>
+</div>
+<p><em>Giải thích bổ sung:</em> Hai giá trị đầu là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>5</mn><mo>=</mo><mi>−</mi><mn>11</mn></mrow><annotation encoding="application/x-tex">2(-3)-5=-11</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>5</mn><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">2(2)-5=-1</annotation></semantics></math>.
+Thay
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">x=-a</annotation></semantics></math>
+vào công thức, ta được
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>5</mn><mo>=</mo><mi>−</mi><mn>2</mn><mi>a</mi><mo>−</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">2(-a)-5=-2a-5</annotation></semantics></math>;
+còn lấy số đối của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a)</annotation></semantics></math>
+cho
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>a</mi><mo>−</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>2</mn><mi>a</mi><mo>+</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">-(2a-5)=-2a+5</annotation></semantics></math>.
+Với đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">a+h</annotation></semantics></math>,
+ta có
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>5</mn><mo>=</mo><mn>2</mn><mi>a</mi><mo>+</mo><mn>2</mn><mi>h</mi><mo>−</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">2(a+h)-5=2a+2h-5</annotation></semantics></math>.
+Các biểu thức đều xác định với mọi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">a,h</annotation></semantics></math>
+thực.</p>
+<h3 id="vi-sol-2">Bài 28 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho bài này. Lời giải sau được biên soạn cho
+bản tiếng Việt.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>5</mn><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(-3)=-5(-3)^2+2(-3)-1</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>45</mn><mo>−</mo><mn>6</mn><mo>−</mo><mn>1</mn><mo>=</mo><mi>−</mi><mn>52</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">f(-3)=-45-6-1=-52.</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>5</mn><mo stretchy="false" form="prefix">(</mo><mn>2</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>1</mn><mo>=</mo><mi>−</mi><mn>20</mn><mo>+</mo><mn>4</mn><mo>−</mo><mn>1</mn><mo>=</mo><mi>−</mi><mn>17</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">f(2)=-5(2)^2+2(2)-1=-20+4-1=-17.</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>5</mn><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>a</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>1</mn><mo>=</mo><mi>−</mi><mn>5</mn><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mo>−</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">f(-a)=-5(-a)^2+2(-a)-1=-5a^2-2a-1.</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>5</mn><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>5</mn><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mo>+</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">-f(a)=-(-5a^2+2a-1)=5a^2-2a+1.</annotation></semantics></math></p>
+<p>Với đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">a+h</annotation></semantics></math>,
+trước hết viết</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>5</mn><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">f(a+h)=-5(a+h)^2+2(a+h)-1.</annotation></semantics></math></p>
+<p>Dùng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>h</mi><mo>+</mo><msup><mi>h</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(a+h)^2=a^2+2ah+h^2</annotation></semantics></math>,
+ta được</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>5</mn><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>10</mn><mi>a</mi><mi>h</mi><mo>−</mo><mn>5</mn><msup><mi>h</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mo>+</mo><mn>2</mn><mi>h</mi><mo>−</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">f(a+h)=-5a^2-10ah-5h^2+2a+2h-1.</annotation></semantics></math></p>
+<p>Tập xác định là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="double-struck">ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>;
+không cần hạn chế thêm đối với
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">a,h</annotation></semantics></math>
+thực.</p>
+<h3 id="fs-id1165134151868">Bài 29 — Lời giải nguồn</h3>
+<div id="fs-id1165134151870">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134151870:0">
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mn>5</mn> </msqrt> <mo>+</mo><mn>5</mn><mo>;</mo> </math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134151870:1"><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134151870:2"><mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt><mn>2</mn><mo>+</mo><mi>a</mi></msqrt><mo>+</mo><mn>5</mn><mo>;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134151870:3"><mo>−</mo><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><msqrt><mn>2</mn><mo>−</mo><mi>a</mi></msqrt><mo>−</mo><mn>5</mn><mo>;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134151870:4"><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt><mn>2</mn><mo>−</mo><mi>a</mi><mo>−</mo><mi>h</mi></msqrt><mo>+</mo><mn>5</mn></math></p>
+</div>
+<p><em>Giải thích và điều kiện bổ sung:</em> Trong tập số thực, biểu
+thức dưới dấu căn phải không âm:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>−</mo><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2-x\ge0</annotation></semantics></math>,
+nên tập xác định là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>∞</mi><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">(-\infty,2]</annotation></semantics></math>.
+Cả
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">-3</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+đều thuộc tập xác định. Khi thay
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">x=-3</annotation></semantics></math>,
+biểu thức dưới căn là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">2-(-3)=5</annotation></semantics></math>;
+khi thay
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x=2</annotation></semantics></math>,
+biểu thức đó bằng 0. Giữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>5</mn></msqrt><mo>+</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\sqrt5+5</annotation></semantics></math>
+ở dạng chính xác, không thay bằng số thập phân làm tròn.</p>
+<p>Ba đáp án chứa biến ở trên chỉ có nghĩa khi thỏa điều kiện tương
+ứng:</p>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(-a)</annotation></semantics></math>
+xác định khi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>+</mo><mi>a</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2+a\ge0</annotation></semantics></math>,
+tức
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≥</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">a\ge-2</annotation></semantics></math>.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">-f(a)</annotation></semantics></math>
+xác định khi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>−</mo><mi>a</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2-a\ge0</annotation></semantics></math>,
+tức
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≤</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">a\le2</annotation></semantics></math>.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a+h)</annotation></semantics></math>
+xác định khi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>−</mo><mi>a</mi><mo>−</mo><mi>h</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2-a-h\ge0</annotation></semantics></math>,
+tức
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>h</mi><mo>≤</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">a+h\le2</annotation></semantics></math>.</li>
+</ul>
+<p>Đây là các điều kiện cho từng biểu thức, không phải yêu cầu chung
+rằng cả ba biểu thức luôn đồng thời xác định. Dấu trừ trong
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">-f(a)</annotation></semantics></math>
+áp dụng cho cả
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mn>2</mn><mo>−</mo><mi>a</mi></mrow></msqrt><mo>+</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\sqrt{2-a}+5</annotation></semantics></math>,
+nên cả hai hạng tử đều đổi dấu.</p>
+<h3 id="vi-sol-4">Bài 30 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho bài này. Lời giải sau được biên soạn cho
+bản tiếng Việt.</p>
+<p>Mẫu số phải khác 0:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">5x+2\ne0</annotation></semantics></math>,
+nên tập xác định là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">ℝ</mi><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mi>−</mi><mn>2</mn><mi>/</mi><mn>5</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}\setminus\{-2/5\}</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mn>6</mn><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>−</mi><mn>19</mn></mrow><mrow><mi>−</mi><mn>13</mn></mrow></mfrac><mo>=</mo><mfrac><mn>19</mn><mn>13</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">f(-3)=\frac{6(-3)-1}{5(-3)+2}=\frac{-19}{-13}=\frac{19}{13}.</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mn>12</mn><mo>−</mo><mn>1</mn></mrow><mrow><mn>10</mn><mo>+</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>11</mn><mn>12</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">f(2)=\frac{12-1}{10+2}=\frac{11}{12}.</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>−</mi><mn>6</mn><mi>a</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>−</mi><mn>5</mn><mi>a</mi><mo>+</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>6</mn><mi>a</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>5</mn><mi>a</mi><mo>−</mo><mn>2</mn></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>a</mi><mo>≠</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">f(-a)=\frac{-6a-1}{-5a+2}=\frac{6a+1}{5a-2},
+\qquad a\ne\frac25.</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mfrac><mrow><mn>6</mn><mi>a</mi><mo>−</mo><mn>1</mn></mrow><mrow><mn>5</mn><mi>a</mi><mo>+</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mn>6</mn><mi>a</mi></mrow><mrow><mn>5</mn><mi>a</mi><mo>+</mo><mn>2</mn></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>a</mi><mo>≠</mo><mi>−</mi><mfrac><mn>2</mn><mn>5</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">-f(a)=-\frac{6a-1}{5a+2}=\frac{1-6a}{5a+2},
+\qquad a\ne-\frac25.</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mn>6</mn><mi>a</mi><mo>+</mo><mn>6</mn><mi>h</mi><mo>−</mo><mn>1</mn></mrow><mrow><mn>5</mn><mi>a</mi><mo>+</mo><mn>5</mn><mi>h</mi><mo>+</mo><mn>2</mn></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>a</mi><mo>+</mo><mi>h</mi><mo>≠</mo><mi>−</mi><mfrac><mn>2</mn><mn>5</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">f(a+h)=\frac{6a+6h-1}{5a+5h+2},
+\qquad a+h\ne-\frac25.</annotation></semantics></math></p>
+<p>Ở phép rút gọn
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(-a)</annotation></semantics></math>,
+ta nhân cả tử và mẫu với
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math>;
+không chỉ đổi dấu một trong hai. Điều kiện của mỗi biểu thức phải được
+giữ riêng.</p>
+<h3 id="fs-id1165135357153">Bài 31 — Lời giải nguồn</h3>
+<div id="fs-id1165135357155">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135357155:0">
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135357155:1"><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><mo>=</mo><mo>−</mo><mn>2</mn><mo>;</mo>
+</math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135357155:2">
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mo>|</mo>
+<mo>−</mo><mi>a</mi><mo>−</mo><mn>1</mn> <mo>|</mo><mo>−</mo><mo>|</mo>
+<mo>−</mo><mi>a</mi><mo>+</mo><mn>1</mn> <mo>|</mo><mo>;</mo>
+</math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135357155:3">
+<mo>−</mo><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mo>|</mo>
+<mi>a</mi><mo>−</mo><mn>1</mn> <mo>|</mo><mo>+</mo><mo>|</mo>
+<mi>a</mi><mo>+</mo><mn>1</mn> <mo>|</mo><mo>;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135357155:4">
+<mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>h</mi><mo stretchy="false">)</mo><mo>=</mo><mo>|</mo>
+<mi>a</mi><mo>+</mo><mi>h</mi><mo>−</mo><mn>1</mn>
+<mo>|</mo><mo>−</mo><mo>|</mo>
+<mi>a</mi><mo>+</mo><mi>h</mi><mo>+</mo><mn>1</mn> <mo>|</mo>
+</math></p>
+</div>
+<p><em>Giải thích bổ sung:</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mi>−</mi><mn>4</mn><mo stretchy="false" form="prefix">|</mo><mi>−</mi><mo stretchy="false" form="prefix">|</mo><mi>−</mi><mn>2</mn><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">f(-3)=|-4|-|-2|=4-2=2</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mn>1</mn><mo stretchy="false" form="prefix">|</mo><mi>−</mi><mo stretchy="false" form="prefix">|</mo><mn>3</mn><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><mo>=</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">f(2)=|1|-|3|=1-3=-2</annotation></semantics></math>.
+Khi lấy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">-f(a)</annotation></semantics></math>,
+dấu trừ đứng trước toàn bộ hiệu nên
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>a</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="prefix">|</mo><mi>−</mi><mo stretchy="false" form="prefix">|</mo><mi>a</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mo stretchy="false" form="prefix">|</mo><mi>a</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><mi>a</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">-(|a-1|-|a+1|)=-|a-1|+|a+1|</annotation></semantics></math>.
+Chưa biết dấu của biểu thức bên trong thì không được tự ý bỏ dấu giá trị
+tuyệt đối. Các đáp án xác định với mọi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">a,h</annotation></semantics></math>
+thực.</p>
+<h3 id="vi-sol-6">Bài 32 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho bài này. Lời giải sau được biên soạn cho
+bản tiếng Việt.</p>
+<p>Trước hết,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>5</mn><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><mn>5</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mi>h</mi><mo>−</mo><msup><mi>h</mi><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">g(x+h)=5-(x+h)^2=5-x^2-2xh-h^2.</annotation></semantics></math></p>
+<p>Do đó,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mi>h</mi><mo>−</mo><msup><mi>h</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>2</mn><mi>x</mi><mi>h</mi><mo>−</mo><msup><mi>h</mi><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">g(x+h)-g(x)=(5-x^2-2xh-h^2)-(5-x^2)=-2xh-h^2.</annotation></semantics></math></p>
+<p>Đặt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+làm nhân tử chung và dùng điều kiện
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h\ne0</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>h</mi></mfrac><mo>=</mo><mfrac><mrow><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>2</mn><mi>x</mi><mo>−</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>h</mi></mfrac><mo>=</mo><mi>−</mi><mn>2</mn><mi>x</mi><mo>−</mo><mi>h</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>h</mi><mo>≠</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{g(x+h)-g(x)}{h}
+=\frac{h(-2x-h)}{h}=-2x-h,\qquad h\ne0.</annotation></semantics></math></p>
+<p>Biểu thức ban đầu không xác định tại
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h=0</annotation></semantics></math>.
+Việc rút gọn không làm mất điều kiện đó, dù biểu thức
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2</mn><mi>x</mi><mo>−</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">-2x-h</annotation></semantics></math>
+riêng lẻ có giá trị khi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h=0</annotation></semantics></math>.</p>
+<h3 id="fs-id1165134284461">Bài 33 — Lời giải nguồn</h3>
+<div id="fs-id1165134284463">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165134284463:0">
+<mrow> <mfrac> <mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mi>g</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow>
+<mrow> <mi>x</mi><mo>−</mo><mi>a</mi></mrow> </mfrac>
+<mo>=</mo><mi>x</mi><mo>+</mo><mi>a</mi><mo>+</mo><mn>2</mn><mo>,</mo><mspace width="0.5em"></mspace><mi>x</mi><mo>≠</mo><mi>a</mi></mrow>
+</math></p>
+</div>
+<p><em>Giải thích bổ sung:</em> Hiệu hai giá trị là</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">g(x)-g(a)=x^2+2x-a^2-2a=(x-a)(x+a)+2(x-a).</annotation></semantics></math></p>
+<p>Đặt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x-a</annotation></semantics></math>
+làm nhân tử chung:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>a</mi><mo>+</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mo>=</mo><mi>x</mi><mo>+</mo><mi>a</mi><mo>+</mo><mn>2</mn><mo>,</mo><mspace width="2.0em"></mspace><mi>x</mi><mo>≠</mo><mi>a</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{g(x)-g(a)}{x-a}
+=\frac{(x-a)(x+a+2)}{x-a}=x+a+2,\qquad x\ne a.</annotation></semantics></math></p>
+<p>Phải giữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x\ne a</annotation></semantics></math>
+sau khi rút gọn vì đó là điều kiện để mẫu số ban đầu khác 0.</p>
+<h3 id="vi-sol-8">Bài 34 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho bài này. Lời giải sau được biên soạn cho
+bản tiếng Việt.</p>
+<p>ⓐ Thay đầu vào bằng 2:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">k(2)=2(2)-1=3</annotation></semantics></math>.</p>
+<p>ⓑ Tìm đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>t</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">2t-1=7</annotation></semantics></math>,
+suy ra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>t</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">2t=8</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">t=4</annotation></semantics></math>.
+Thử lại:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>1</mn><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">k(4)=2(4)-1=7</annotation></semantics></math>.</p>
+<h3 id="fs-id1165135518215">Bài 35 — Lời giải nguồn</h3>
+<div id="eip-idm507287856">
+<p>ⓐ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-idm507287856:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>14</mn><mo>;</mo></mrow>
+</math></p>
+<p>ⓑ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-idm507287856:1">
+<mrow> <mi>x</mi><mo>=</mo><mn>3</mn></mrow> </math></p>
+</div>
+<p><em>Giải thích bổ sung:</em> ⓐ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>8</mn><mo>−</mo><mn>3</mn><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>8</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>14</mn></mrow><annotation encoding="application/x-tex">f(-2)=8-3(-2)=8+6=14</annotation></semantics></math>.
+ⓑ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>−</mo><mn>3</mn><mi>x</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">8-3x=-1</annotation></semantics></math>
+tương đương
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>3</mn><mi>x</mi><mo>=</mo><mi>−</mi><mn>9</mn></mrow><annotation encoding="application/x-tex">-3x=-9</annotation></semantics></math>,
+nên
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x=3</annotation></semantics></math>.
+Thử lại:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>8</mn><mo>−</mo><mn>9</mn><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">f(3)=8-9=-1</annotation></semantics></math>.</p>
+<h3 id="vi-sol-10">Bài 36 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho bài này. Lời giải sau được biên soạn cho
+bản tiếng Việt.</p>
+<p>ⓐ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>9</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">p(-3)=(-3)^2+(-3)=9-3=6</annotation></semantics></math>.</p>
+<p>ⓑ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p(c)=2</annotation></semantics></math>
+tương đương
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><mo>−</mo><mn>2</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c^2+c-2=0</annotation></semantics></math>.
+Phân tích
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><mo>−</mo><mn>2</mn><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>+</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">c^2+c-2=(c+2)(c-1)</annotation></semantics></math>,
+ta được
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">c=-2</annotation></semantics></math>
+hoặc
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c=1</annotation></semantics></math>.
+Cả hai đều thỏa:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p(-2)=4-2=2</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p(1)=1+1=2</annotation></semantics></math>.
+Đó là tất cả nghiệm vì tích hai số thực bằng 0 khi và chỉ khi ít nhất
+một thừa số bằng 0. Trong bài này,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+là biến đầu vào của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.</p>
+<h3 id="fs-id1165135453081">Bài 37 — Lời giải nguồn</h3>
+<div id="eip-idm501917600">
+<p>ⓐ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-idm501917600:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>;</mo></mrow>
+</math></p>
+<p>ⓑ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-idm501917600:1">
+<mrow> <mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow> </math> hoặc
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-idm501917600:2">
+<mrow> <mi>x</mi><mo>=</mo><mn>4</mn></mrow> </math></p>
+</div>
+<p><em>Giải thích bổ sung:</em> ⓐ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>25</mn><mo>−</mo><mn>15</mn><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">f(5)=25-15=10</annotation></semantics></math>.
+ⓑ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">x^2-3x=4</annotation></semantics></math>
+tương đương</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>4</mn><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">x^2-3x-4=(x-4)(x+1)=0.</annotation></semantics></math></p>
+<p>Vì thế
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">x=4</annotation></semantics></math>
+hoặc
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">x=-1</annotation></semantics></math>,
+và không còn nghiệm nào khác. Thử lại:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>16</mn><mo>−</mo><mn>12</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">f(4)=16-12=4</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">f(-1)=1+3=4</annotation></semantics></math>.</p>
+<h3 id="vi-sol-12">Bài 38 — Lời giải bổ sung</h3>
+<p>Nguồn không kèm lời giải cho bài này. Lời giải sau được biên soạn cho
+bản tiếng Việt.</p>
+<p>Tập xác định là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mn>2</mn><mo>,</mo><mi>+</mi><mi>∞</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[-2,+\infty)</annotation></semantics></math>
+vì
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x+2\ge0</annotation></semantics></math>.</p>
+<p>ⓐ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>7</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msqrt><mrow><mn>7</mn><mo>+</mo><mn>2</mn></mrow></msqrt><mo>=</mo><msqrt><mn>9</mn></msqrt><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">f(7)=\sqrt{7+2}=\sqrt9=3</annotation></semantics></math>.
+Căn bậc hai số học không âm; giá trị hàm số ở đây là 3, không phải hai
+giá trị
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">\pm3</annotation></semantics></math>.</p>
+<p>ⓑ Cần giải
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></msqrt><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\sqrt{x+2}=4</annotation></semantics></math>.
+Hai vế không âm; bình phương hai vế cho
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">x+2=16</annotation></semantics></math>,
+nên
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>14</mn></mrow><annotation encoding="application/x-tex">x=14</annotation></semantics></math>.
+Giá trị này thuộc tập xác định và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>14</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msqrt><mn>16</mn></msqrt><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">f(14)=\sqrt{16}=4</annotation></semantics></math>.
+Ngược lại, mọi nghiệm của phương trình ban đầu phải thỏa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">x+2=16</annotation></semantics></math>,
+nên
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>14</mn></mrow><annotation encoding="application/x-tex">x=14</annotation></semantics></math>
+là nghiệm duy nhất.</p>
+<h3 id="fs-id1165137767447">Bài 39 — Lời giải nguồn</h3>
+<div id="eip-idm497267968">
+<p>ⓐ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-idm497267968:0">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>−</mo><mfrac>
+<mn>2</mn> <mn>3</mn> </mfrac> <mi>t</mi><mo>;</mo></mrow> </math></p>
+<p>ⓑ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-idm497267968:1">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>;</mo></mrow>
+</math></p>
+<p>ⓒ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-idm497267968:2">
+<mrow> <mi>t</mi><mo>=</mo><mn>6</mn></mrow> </math></p>
+</div>
+<p><em>Giải thích bổ sung:</em> ⓐ Từ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>r</mi><mo>+</mo><mn>2</mn><mi>t</mi><mo>=</mo><mn>18</mn></mrow><annotation encoding="application/x-tex">3r+2t=18</annotation></semantics></math>,
+chuyển
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>t</mi></mrow><annotation encoding="application/x-tex">2t</annotation></semantics></math>
+sang vế phải rồi chia cho 3:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>18</mn><mo>−</mo><mn>2</mn><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>3</mn><mo>=</mo><mn>6</mn><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>t</mi></mrow><annotation encoding="application/x-tex">r=(18-2t)/3=6-\frac23t</annotation></semantics></math>.
+Như vậy,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+là đầu vào và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">r=f(t)</annotation></semantics></math>
+là đầu ra; mỗi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+thực xác định duy nhất một
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>.</p>
+<p>ⓑ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>6</mn><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>6</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">f(-3)=6-\frac23(-3)=6+2=8</annotation></semantics></math>.</p>
+<p>ⓒ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>t</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">6-\frac23t=2</annotation></semantics></math>
+tương đương
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>t</mi><mo>=</mo><mi>−</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">-\frac23t=-4</annotation></semantics></math>,
+nên
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">t=6</annotation></semantics></math>.
+Thử vào quan hệ ban đầu với
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">r=2</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>18</mn></mrow><annotation encoding="application/x-tex">3(2)+2(6)=18</annotation></semantics></math>.</p>
+<h2 id="vi-next">Tự kiểm tra và phần tiếp theo</h2>
+<p><em>Gợi ý bổ sung:</em> Hãy giải thích vì sao điều kiện của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(-a)</annotation></semantics></math>
+có thể khác điều kiện của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">-f(a)</annotation></semantics></math>;
+vì sao phải giữ mẫu số khác 0 sau khi khử nhân tử chung; và vì sao giải
+phương trình ở bài 36, bài 37 phải liệt kê hai đầu vào dù mỗi đầu vào
+chỉ có một đầu ra. Các phép kiểm tra bằng mã đi kèm dùng số hữu tỉ chính
+xác và kiểm tra hệ số đại số; việc thử một số giá trị riêng lẻ không
+thay thế lập luận cho mọi giá trị.</p>
+<p>Phần tiếp theo trong nguồn là nhóm bài tập <em>Graphical</em>, bắt
+đầu tại fs-id1165135664071. Bài tự học này không dịch nhóm đó và không
+khép lại mô-đun hay toàn bộ sách.</p>
+<h2 id="vi-attribution">Nguồn và ghi công</h2>
+<p>Bản dịch và phần bổ sung tiếng Việt độc lập, địa phương hóa
+vi-Latn-VN. Nguồn: Jay Abramson và các cộng tác viên OpenStax,
+<em>Precalculus 2e</em>, mô-đun m49301, UUID
+11f4eacc-c348-4836-8c5b-747577d249ca; <a href="https://github.com/openstax/osbooks-college-algebra-bundle/tree/789b54099106b071d1d32bfcee454fed72eb4768">nguồn
+được ghim</a>. Đối chiếu với <a href="https://github.com/KokunoYumeto/openstax-precalculus-2e-id">ấn bản
+Bahasa Indonesia</a> 0.1.0-alpha.58-reader.1. Giữ nguyên quyền ghi công
+của Jay Abramson, OpenStax và các tác giả, cộng tác viên được liệt kê
+trong nguồn.</p>
+<p>Văn bản nguồn, bản dịch và phần bổ sung A30 này theo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
+4.0</a>. Các thông báo nguồn được giữ trong thư mục notices/; các tác
+phẩm B40 và B80 giữ giấy phép riêng, không bị đổi giấy phép bởi bài này.
+Không phải ấn bản chính thức hoặc được các tác giả hay tổ chức nguồn bảo
+trợ. Bản dịch, lời giải bổ sung và kiểm tra được thực hiện với sự hỗ trợ
+của OpenAI Codex theo yêu cầu người dùng; thông tin quy trình này không
+thay thế tên tác giả gốc. Chưa có thẩm định độc lập của người bản
+ngữ.</p>
+</body>
+</html>

@@ -1,0 +1,1066 @@
+{
+  "schema": "jv-source-bound-narration-fixtures-v1",
+  "scope": {
+    "unit": "a00-name-whole",
+    "module": "m81243",
+    "section": "fs-id1321580",
+    "complete_section": true,
+    "direct_child_slice_zero_based": [
+      0,
+      12
+    ],
+    "direct_children_including_title": 12,
+    "direct_child_ids_after_title": [
+      "fs-id2566318",
+      "eip-id1168289680652",
+      "fs-id2220075",
+      "fs-id3400199",
+      "fs-id1364640",
+      "fs-id2326974",
+      "fs-id2774887",
+      "fs-id2136533",
+      "fs-id1825910",
+      "fs-id1628781",
+      "fs-id1808812"
+    ],
+    "first_instructional_anchor": "fs-id2566318",
+    "last_top_level_anchor": "fs-id1808812",
+    "last_solution_id": "fs-id1360632",
+    "last_descendant_id": "fs-id1269733",
+    "next_section": "fs-id1339359",
+    "source_unique_ids": 53,
+    "source_mathml_expression_count": 9,
+    "source_media_references": 3,
+    "indonesian_commit": "3de9207f56f8b5c57c017abf973fb04e00d740f1",
+    "indonesian_git_blob": "90def09ee1dbfdc66aa8bc910938ad7684668e97",
+    "indonesian_blob_sha256": "7153ce88bcd4aea07fab4075bdb025884e07d534aafb6d06ff1bfbedbc46f251",
+    "indonesian_section_canonical_sha256": "339b8559c18575e982cbafeadaa22c23e2c32c019458bdea46512f1f9b293f9f",
+    "english_commit": "38cae454e644abf9f0a623e876994553881597c9",
+    "english_git_blob": "612244f80ecb6bce0f811c9d99204ae2f9f7a4f5",
+    "english_blob_sha256": "396b0029798e054e5db6d7acde738cec9f9d8b86bc81da8cc3690d01ec07cf2b",
+    "english_section_canonical_sha256": "fa980c748e0d5989d073ad3b6c8cc6be0202f23337545b5b5973bc03ad8d847b",
+    "hash_basis": "Exact pinned Git blob bytes; canonical section witnesses strip formatting whitespace and rewrite namespace prefixes.",
+    "completion_claim": "Finite narration draft only; standalone integration, human review, full A00/A10/AX-2 and the remainder of m81243 are unfinished."
+  },
+  "matching_contract": {
+    "namespace_context": {
+      "m": "http://www.w3.org/1998/Math/MathML",
+      "cnxml": "http://cnx.rice.edu/cnxml"
+    },
+    "dispatch": "Require source hash, module, section, top-level anchor, one-based MathML ordinal, and exact namespace-aware tree. Match chart media ID, exact source alt and image ref; match complete source table/prose CNXML before using their fixed readouts.",
+    "mathml_storage": "Exact original source substrings with inherited m namespace; parse in a namespace-bearing wrapper.",
+    "cnxml_storage": "Exact source table and paragraph substrings with inherited default CNXML namespace; parse in a default-namespace-bearing wrapper.",
+    "unknown_case": "unsupported_source_bound_narration",
+    "generic_number_parser_authorized": false,
+    "strip_commas_then_parse_at_runtime": false,
+    "mutate_visible_source": false,
+    "source_mathml_inventory": {
+      "tags": [
+        "math",
+        "mrow",
+        "mn",
+        "mstyle",
+        "mo"
+      ],
+      "attributes": [
+        {
+          "element": "mstyle",
+          "attribute": "fontweight",
+          "value": "bold"
+        }
+      ],
+      "mo_tokens": [
+        ".",
+        "."
+      ],
+      "mtext_tokens": []
+    },
+    "register_note": "Exact cardinal names match across Javanese registers. Diagram/table and metalinguistic prose have separate academic/conversational readouts.",
+    "provider_behavior": "No voice/provider selected. Later synthesis must explicitly support the requested locale or return unsupported_voice_locale; no silent Indonesian fallback.",
+    "naming_lesson_reading": "The eight grouped printed-numeral occurrences are spoken digit by digit with explicit comma separators, preserving every leading zero. This avoids giving away the word-form naming exercises or duplicating an adjacent written-out answer. The year 2014 is still a cardinal. expected_cardinal is a verification witness, not prompt narration."
+  },
+  "canon_checkpoint": {
+    "stage": "Read actual source trees and C07/C24-C28 again for narration drafting; compare complete composed names with the earlier source-keyed draft and reread selected canon at rule revision.",
+    "consulted": [
+      {
+        "ids": [
+          "C07"
+        ],
+        "path": "downloads/jv-Latn-ID/canon/lima.txt",
+        "observed": "lima; limang atus; sèket; salawé",
+        "decision": "Retain sèket in 258 and salawé in 325, matching the actual headword spellings. Do not generate these fixtures through the older seket/selawe helper."
+      },
+      {
+        "ids": [
+          "C24"
+        ],
+        "path": "downloads/jv-Latn-ID/canon/ewu.txt",
+        "observed": "éwu ribu; éwuan ribuan; sèwu seribu",
+        "decision": "Use éwu/éwuan consistently, including the finite year reading rong éwu patbelas; no general thousands parser is authorized."
+      },
+      {
+        "ids": [
+          "C25"
+        ],
+        "path": "downloads/jv-Latn-ID/canon/yuta.txt",
+        "observed": "yuta in the million sense",
+        "decision": "Use yuta for the magnitude; yutanan is still an explicitly productive period label."
+      },
+      {
+        "ids": [
+          "C26"
+        ],
+        "path": "downloads/jv-Latn-ID/canon/wolu.txt",
+        "observed": "wolu means eight",
+        "decision": "Use bare wolu when naming a digit; wolung in composed cardinal quantities remains a productive attributive choice."
+      },
+      {
+        "ids": [
+          "C27"
+        ],
+        "path": "downloads/jv-Latn-ID/canon/sanga.txt",
+        "observed": "sanga; sangang puluh; sangang atus",
+        "decision": "Use sanga in digit sequences, sangang puluh wolu for 98 and sangang atus papat for 904."
+      },
+      {
+        "ids": [
+          "C28"
+        ],
+        "path": "downloads/jv-Latn-ID/canon/sewidak.txt",
+        "observed": "sewidak means sixty; variants also listed",
+        "decision": "Use sewidak consistently in 61, 64 and 65; do not mix variants across equivalent readings."
+      }
+    ],
+    "provisional_forms": [
+      "milyar/milyaran",
+      "trilyun/trilyunan",
+      "yutanan",
+      "nilai panggonan",
+      "pitulikur/wolulikur/sangalikur",
+      "teen forms not directly quoted by the consulted entries",
+      "full composed cardinal prosody",
+      "metalinguistic quotation cue"
+    ],
+    "restriction": "Lexical components are evidence, not native-language, mathematical-register, dialect or pronunciation certification."
+  },
+  "operator_conventions": [
+    {
+      "token": ",",
+      "source_element": "inside mn",
+      "role": "three-digit period separator",
+      "speech": "Fixed names use comma boundaries between nonzero periods, never decimal-comma speech. Original grouping is retained byte-for-byte in source tokens."
+    },
+    {
+      "token": ".",
+      "source_element": "mo",
+      "role": "sentence boundary after 327,577,529 and 316,128,839",
+      "speech": "The exact fixture includes a final period/pause, not the spoken word titik and not a decimal or multiplication operator."
+    },
+    {
+      "token": "fontweight=bold",
+      "source_element": "mstyle",
+      "role": "styling of the phone-user count",
+      "speech": "Preserve exact source structure and attribute; do not speak a mathematical operation or infer new semantic meaning from bold."
+    },
+    {
+      "token": "dan",
+      "source_element": "italic prose emphasis at fs-id3400199",
+      "role": "quoted metalinguistic conjunction",
+      "speech": "The dedicated paragraph readout explicitly introduces and quotes lan/dan; it must not delete the word or treat it as an ordinary conjunction connecting the surrounding clause."
+    }
+  ],
+  "math_fixtures": [
+    {
+      "id": "A00-NAME-M01",
+      "module": "m81243",
+      "anchor": "fs-id2220075",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>37,519,248</m:mn></m:mrow></m:math>",
+      "source_value": "37,519,248",
+      "role": "printed digit form for naming lesson; preserve the exercise without speaking its word-form answer",
+      "expected": {
+        "jv-academic": "digit saka kiwa menyang tengen: telu, pitu; tandha koma; lima, siji, sanga; tandha koma; loro, papat, wolu",
+        "jv-conversation": "digit saka kiwa menyang tengen: telu, pitu; tandha koma; lima, siji, sanga; tandha koma; loro, papat, wolu",
+        "id-academic": "digit dari kiri ke kanan: tiga, tujuh; tanda koma; lima, satu, sembilan; tanda koma; dua, empat, delapan"
+      },
+      "expected_cardinal": {
+        "jv-academic": "telung puluh pitu yuta, limang atus sangalas éwu, rong atus patang puluh wolu",
+        "jv-conversation": "telung puluh pitu yuta, limang atus sangalas éwu, rong atus patang puluh wolu",
+        "id-academic": "tiga puluh tujuh juta, lima ratus sembilan belas ribu, dua ratus empat puluh delapan"
+      }
+    },
+    {
+      "id": "A00-NAME-M02",
+      "module": "m81243",
+      "anchor": "fs-id2326974",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>8,165,432,098,710</m:mn></m:mrow></m:math>",
+      "source_value": "8,165,432,098,710",
+      "role": "printed digit form for naming lesson; preserve the exercise without speaking its word-form answer",
+      "expected": {
+        "jv-academic": "digit saka kiwa menyang tengen: wolu; tandha koma; siji, enem, lima; tandha koma; papat, telu, loro; tandha koma; nol, sanga, wolu; tandha koma; pitu, siji, nol",
+        "jv-conversation": "digit saka kiwa menyang tengen: wolu; tandha koma; siji, enem, lima; tandha koma; papat, telu, loro; tandha koma; nol, sanga, wolu; tandha koma; pitu, siji, nol",
+        "id-academic": "digit dari kiri ke kanan: delapan; tanda koma; satu, enam, lima; tanda koma; empat, tiga, dua; tanda koma; nol, sembilan, delapan; tanda koma; tujuh, satu, nol"
+      },
+      "expected_cardinal": {
+        "jv-academic": "wolung trilyun, satus sewidak lima milyar, patang atus telung puluh loro yuta, sangang puluh wolu éwu, pitung atus sepuluh",
+        "jv-conversation": "wolung trilyun, satus sewidak lima milyar, patang atus telung puluh loro yuta, sangang puluh wolu éwu, pitung atus sepuluh",
+        "id-academic": "delapan triliun, seratus enam puluh lima miliar, empat ratus tiga puluh dua juta, sembilan puluh delapan ribu, tujuh ratus sepuluh"
+      }
+    },
+    {
+      "id": "A00-NAME-M03",
+      "module": "m81243",
+      "anchor": "fs-id2326974",
+      "math_ordinal": 2,
+      "source_mathml": "<m:math><m:mrow><m:mn>8,165,432,098,710</m:mn></m:mrow></m:math>",
+      "source_value": "8,165,432,098,710",
+      "role": "printed digit form for naming lesson; preserve the exercise without speaking its word-form answer",
+      "expected": {
+        "jv-academic": "digit saka kiwa menyang tengen: wolu; tandha koma; siji, enem, lima; tandha koma; papat, telu, loro; tandha koma; nol, sanga, wolu; tandha koma; pitu, siji, nol",
+        "jv-conversation": "digit saka kiwa menyang tengen: wolu; tandha koma; siji, enem, lima; tandha koma; papat, telu, loro; tandha koma; nol, sanga, wolu; tandha koma; pitu, siji, nol",
+        "id-academic": "digit dari kiri ke kanan: delapan; tanda koma; satu, enam, lima; tanda koma; empat, tiga, dua; tanda koma; nol, sembilan, delapan; tanda koma; tujuh, satu, nol"
+      },
+      "expected_cardinal": {
+        "jv-academic": "wolung trilyun, satus sewidak lima milyar, patang atus telung puluh loro yuta, sangang puluh wolu éwu, pitung atus sepuluh",
+        "jv-conversation": "wolung trilyun, satus sewidak lima milyar, patang atus telung puluh loro yuta, sangang puluh wolu éwu, pitung atus sepuluh",
+        "id-academic": "delapan triliun, seratus enam puluh lima miliar, empat ratus tiga puluh dua juta, sembilan puluh delapan ribu, tujuh ratus sepuluh"
+      }
+    },
+    {
+      "id": "A00-NAME-M04",
+      "module": "m81243",
+      "anchor": "fs-id2774887",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>9,258,137,904,061</m:mn></m:mrow></m:math>",
+      "source_value": "9,258,137,904,061",
+      "role": "printed digit form for naming lesson; preserve the exercise without speaking its word-form answer",
+      "expected": {
+        "jv-academic": "digit saka kiwa menyang tengen: sanga; tandha koma; loro, lima, wolu; tandha koma; siji, telu, pitu; tandha koma; sanga, nol, papat; tandha koma; nol, enem, siji",
+        "jv-conversation": "digit saka kiwa menyang tengen: sanga; tandha koma; loro, lima, wolu; tandha koma; siji, telu, pitu; tandha koma; sanga, nol, papat; tandha koma; nol, enem, siji",
+        "id-academic": "digit dari kiri ke kanan: sembilan; tanda koma; dua, lima, delapan; tanda koma; satu, tiga, tujuh; tanda koma; sembilan, nol, empat; tanda koma; nol, enam, satu"
+      },
+      "expected_cardinal": {
+        "jv-academic": "sangang trilyun, rong atus sèket wolu milyar, satus telung puluh pitu yuta, sangang atus papat éwu, sewidak siji",
+        "jv-conversation": "sangang trilyun, rong atus sèket wolu milyar, satus telung puluh pitu yuta, sangang atus papat éwu, sewidak siji",
+        "id-academic": "sembilan triliun, dua ratus lima puluh delapan miliar, seratus tiga puluh tujuh juta, sembilan ratus empat ribu, enam puluh satu"
+      }
+    },
+    {
+      "id": "A00-NAME-M05",
+      "module": "m81243",
+      "anchor": "fs-id2136533",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>17,864,325,619,004</m:mn></m:mrow></m:math>",
+      "source_value": "17,864,325,619,004",
+      "role": "printed digit form for naming lesson; preserve the exercise without speaking its word-form answer",
+      "expected": {
+        "jv-academic": "digit saka kiwa menyang tengen: siji, pitu; tandha koma; wolu, enem, papat; tandha koma; telu, loro, lima; tandha koma; enem, siji, sanga; tandha koma; nol, nol, papat",
+        "jv-conversation": "digit saka kiwa menyang tengen: siji, pitu; tandha koma; wolu, enem, papat; tandha koma; telu, loro, lima; tandha koma; enem, siji, sanga; tandha koma; nol, nol, papat",
+        "id-academic": "digit dari kiri ke kanan: satu, tujuh; tanda koma; delapan, enam, empat; tanda koma; tiga, dua, lima; tanda koma; enam, satu, sembilan; tanda koma; nol, nol, empat"
+      },
+      "expected_cardinal": {
+        "jv-academic": "pitulas trilyun, wolung atus sewidak papat milyar, telung atus salawé yuta, nem atus sangalas éwu, papat",
+        "jv-conversation": "pitulas trilyun, wolung atus sewidak papat milyar, telung atus salawé yuta, nem atus sangalas éwu, papat",
+        "id-academic": "tujuh belas triliun, delapan ratus enam puluh empat miliar, tiga ratus dua puluh lima juta, enam ratus sembilan belas ribu, empat"
+      }
+    },
+    {
+      "id": "A00-NAME-M06",
+      "module": "m81243",
+      "anchor": "fs-id1825910",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>2014</m:mn></m:mrow></m:math>",
+      "source_value": "2014",
+      "role": "historical year, exact ungrouped token",
+      "expected": {
+        "jv-academic": "rong éwu patbelas",
+        "jv-conversation": "rong éwu patbelas",
+        "id-academic": "dua ribu empat belas"
+      }
+    },
+    {
+      "id": "A00-NAME-M07",
+      "module": "m81243",
+      "anchor": "fs-id1825910",
+      "math_ordinal": 2,
+      "source_mathml": "<m:math><m:mrow><m:mstyle fontweight=\"bold\"><m:mn>327,577,529</m:mn></m:mstyle><m:mo>.</m:mo></m:mrow></m:math>",
+      "source_value": "327,577,529",
+      "role": "printed digit form for naming lesson; preserve the exercise without speaking its word-form answer",
+      "expected": {
+        "jv-academic": "digit saka kiwa menyang tengen: telu, loro, pitu; tandha koma; lima, pitu, pitu; tandha koma; lima, loro, sanga.",
+        "jv-conversation": "digit saka kiwa menyang tengen: telu, loro, pitu; tandha koma; lima, pitu, pitu; tandha koma; lima, loro, sanga.",
+        "id-academic": "digit dari kiri ke kanan: tiga, dua, tujuh; tanda koma; lima, tujuh, tujuh; tanda koma; lima, dua, sembilan."
+      },
+      "expected_cardinal": {
+        "jv-academic": "telung atus pitulikur yuta, limang atus pitung puluh pitu éwu, limang atus sangalikur",
+        "jv-conversation": "telung atus pitulikur yuta, limang atus pitung puluh pitu éwu, limang atus sangalikur",
+        "id-academic": "tiga ratus dua puluh tujuh juta, lima ratus tujuh puluh tujuh ribu, lima ratus dua puluh sembilan"
+      }
+    },
+    {
+      "id": "A00-NAME-M08",
+      "module": "m81243",
+      "anchor": "fs-id1628781",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>316,128,839</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "source_value": "316,128,839",
+      "role": "printed digit form for naming lesson; preserve the exercise without speaking its word-form answer",
+      "expected": {
+        "jv-academic": "digit saka kiwa menyang tengen: telu, siji, enem; tandha koma; siji, loro, wolu; tandha koma; wolu, telu, sanga.",
+        "jv-conversation": "digit saka kiwa menyang tengen: telu, siji, enem; tandha koma; siji, loro, wolu; tandha koma; wolu, telu, sanga.",
+        "id-academic": "digit dari kiri ke kanan: tiga, satu, enam; tanda koma; satu, dua, delapan; tanda koma; delapan, tiga, sembilan."
+      },
+      "expected_cardinal": {
+        "jv-academic": "telung atus nembelas yuta, satus wolulikur éwu, wolung atus telung puluh sanga",
+        "jv-conversation": "telung atus nembelas yuta, satus wolulikur éwu, wolung atus telung puluh sanga",
+        "id-academic": "tiga ratus enam belas juta, seratus dua puluh delapan ribu, delapan ratus tiga puluh sembilan"
+      }
+    },
+    {
+      "id": "A00-NAME-M09",
+      "module": "m81243",
+      "anchor": "fs-id1808812",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>31,536,000</m:mn></m:mrow></m:math>",
+      "source_value": "31,536,000",
+      "role": "printed digit form for naming lesson; preserve the exercise without speaking its word-form answer",
+      "expected": {
+        "jv-academic": "digit saka kiwa menyang tengen: telu, siji; tandha koma; lima, telu, enem; tandha koma; nol, nol, nol",
+        "jv-conversation": "digit saka kiwa menyang tengen: telu, siji; tandha koma; lima, telu, enem; tandha koma; nol, nol, nol",
+        "id-academic": "digit dari kiri ke kanan: tiga, satu; tanda koma; lima, tiga, enam; tanda koma; nol, nol, nol"
+      },
+      "expected_cardinal": {
+        "jv-academic": "telung puluh siji yuta, limang atus telung puluh enem éwu",
+        "jv-conversation": "telung puluh siji yuta, limang atus telung puluh enem éwu",
+        "id-academic": "tiga puluh satu juta, lima ratus tiga puluh enam ribu"
+      }
+    }
+  ],
+  "number_decomposition_witnesses": [
+    {
+      "source": "37,519,248",
+      "groups_from_left": [
+        "37",
+        "519",
+        "248"
+      ],
+      "group_scales": [
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "37519248",
+      "expected_cardinal": {
+        "jv-academic": "telung puluh pitu yuta, limang atus sangalas éwu, rong atus patang puluh wolu",
+        "jv-conversation": "telung puluh pitu yuta, limang atus sangalas éwu, rong atus patang puluh wolu",
+        "id-academic": "tiga puluh tujuh juta, lima ratus sembilan belas ribu, dua ratus empat puluh delapan"
+      },
+      "leading_zero_groups": [],
+      "zero_group_policy": "Preserve printed group strings. Read each nonzero group as a cardinal at its scale; omit an all-zero period and omit the ones-period name."
+    },
+    {
+      "source": "8,165,432,098,710",
+      "groups_from_left": [
+        "8",
+        "165",
+        "432",
+        "098",
+        "710"
+      ],
+      "group_scales": [
+        "1000000000000",
+        "1000000000",
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "8165432098710",
+      "expected_cardinal": {
+        "jv-academic": "wolung trilyun, satus sewidak lima milyar, patang atus telung puluh loro yuta, sangang puluh wolu éwu, pitung atus sepuluh",
+        "jv-conversation": "wolung trilyun, satus sewidak lima milyar, patang atus telung puluh loro yuta, sangang puluh wolu éwu, pitung atus sepuluh",
+        "id-academic": "delapan triliun, seratus enam puluh lima miliar, empat ratus tiga puluh dua juta, sembilan puluh delapan ribu, tujuh ratus sepuluh"
+      },
+      "leading_zero_groups": [
+        {
+          "group": "098",
+          "index_from_left": 4,
+          "scale": "1000"
+        }
+      ],
+      "zero_group_policy": "Preserve printed group strings. Read each nonzero group as a cardinal at its scale; omit an all-zero period and omit the ones-period name."
+    },
+    {
+      "source": "9,258,137,904,061",
+      "groups_from_left": [
+        "9",
+        "258",
+        "137",
+        "904",
+        "061"
+      ],
+      "group_scales": [
+        "1000000000000",
+        "1000000000",
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "9258137904061",
+      "expected_cardinal": {
+        "jv-academic": "sangang trilyun, rong atus sèket wolu milyar, satus telung puluh pitu yuta, sangang atus papat éwu, sewidak siji",
+        "jv-conversation": "sangang trilyun, rong atus sèket wolu milyar, satus telung puluh pitu yuta, sangang atus papat éwu, sewidak siji",
+        "id-academic": "sembilan triliun, dua ratus lima puluh delapan miliar, seratus tiga puluh tujuh juta, sembilan ratus empat ribu, enam puluh satu"
+      },
+      "leading_zero_groups": [
+        {
+          "group": "061",
+          "index_from_left": 5,
+          "scale": "1"
+        }
+      ],
+      "zero_group_policy": "Preserve printed group strings. Read each nonzero group as a cardinal at its scale; omit an all-zero period and omit the ones-period name."
+    },
+    {
+      "source": "17,864,325,619,004",
+      "groups_from_left": [
+        "17",
+        "864",
+        "325",
+        "619",
+        "004"
+      ],
+      "group_scales": [
+        "1000000000000",
+        "1000000000",
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "17864325619004",
+      "expected_cardinal": {
+        "jv-academic": "pitulas trilyun, wolung atus sewidak papat milyar, telung atus salawé yuta, nem atus sangalas éwu, papat",
+        "jv-conversation": "pitulas trilyun, wolung atus sewidak papat milyar, telung atus salawé yuta, nem atus sangalas éwu, papat",
+        "id-academic": "tujuh belas triliun, delapan ratus enam puluh empat miliar, tiga ratus dua puluh lima juta, enam ratus sembilan belas ribu, empat"
+      },
+      "leading_zero_groups": [
+        {
+          "group": "004",
+          "index_from_left": 5,
+          "scale": "1"
+        }
+      ],
+      "zero_group_policy": "Preserve printed group strings. Read each nonzero group as a cardinal at its scale; omit an all-zero period and omit the ones-period name."
+    },
+    {
+      "source": "327,577,529",
+      "groups_from_left": [
+        "327",
+        "577",
+        "529"
+      ],
+      "group_scales": [
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "327577529",
+      "expected_cardinal": {
+        "jv-academic": "telung atus pitulikur yuta, limang atus pitung puluh pitu éwu, limang atus sangalikur",
+        "jv-conversation": "telung atus pitulikur yuta, limang atus pitung puluh pitu éwu, limang atus sangalikur",
+        "id-academic": "tiga ratus dua puluh tujuh juta, lima ratus tujuh puluh tujuh ribu, lima ratus dua puluh sembilan"
+      },
+      "leading_zero_groups": [],
+      "zero_group_policy": "Preserve printed group strings. Read each nonzero group as a cardinal at its scale; omit an all-zero period and omit the ones-period name."
+    },
+    {
+      "source": "316,128,839",
+      "groups_from_left": [
+        "316",
+        "128",
+        "839"
+      ],
+      "group_scales": [
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "316128839",
+      "expected_cardinal": {
+        "jv-academic": "telung atus nembelas yuta, satus wolulikur éwu, wolung atus telung puluh sanga",
+        "jv-conversation": "telung atus nembelas yuta, satus wolulikur éwu, wolung atus telung puluh sanga",
+        "id-academic": "tiga ratus enam belas juta, seratus dua puluh delapan ribu, delapan ratus tiga puluh sembilan"
+      },
+      "leading_zero_groups": [],
+      "zero_group_policy": "Preserve printed group strings. Read each nonzero group as a cardinal at its scale; omit an all-zero period and omit the ones-period name."
+    },
+    {
+      "source": "31,536,000",
+      "groups_from_left": [
+        "31",
+        "536",
+        "000"
+      ],
+      "group_scales": [
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "31536000",
+      "expected_cardinal": {
+        "jv-academic": "telung puluh siji yuta, limang atus telung puluh enem éwu",
+        "jv-conversation": "telung puluh siji yuta, limang atus telung puluh enem éwu",
+        "id-academic": "tiga puluh satu juta, lima ratus tiga puluh enam ribu"
+      },
+      "leading_zero_groups": [
+        {
+          "group": "000",
+          "index_from_left": 3,
+          "scale": "1"
+        }
+      ],
+      "zero_group_policy": "Preserve printed group strings. Read each nonzero group as a cardinal at its scale; omit an all-zero period and omit the ones-period name."
+    }
+  ],
+  "year_witness": {
+    "source": "2014",
+    "anchor": "fs-id1825910",
+    "math_ordinal": 1,
+    "source_paragraph": "fs-id2627959",
+    "fixed_value": "2014",
+    "expected": {
+      "jv-academic": "rong éwu patbelas",
+      "jv-conversation": "rong éwu patbelas",
+      "id-academic": "dua ribu empat belas"
+    },
+    "restriction": "Exact year token only. Do not insert comma grouping into source, read digits separately, infer a date, or add a second spoken taun/tahun where the surrounding prose already supplies it."
+  },
+  "chart_fixtures": [
+    {
+      "id": "A00-NAME-C01",
+      "module": "m81243",
+      "anchor": "eip-id1168289680652",
+      "media_id": "fs-id1227744",
+      "source_alt": "Gambar dengan tiga nilai yang dipisahkan koma. Nilai pertama adalah “37” dan berlabel “jutaan”. Nilai kedua adalah “519” dan berlabel “ribuan”. Nilai ketiga adalah “248” dan berlabel “satuan”. Di bawahnya, tanda panah dari “37” menunjuk ke “Tiga puluh tujuh juta”, tanda panah dari “519” menunjuk ke “Lima ratus sembilan belas ribu”, dan tanda panah dari “248” menunjuk ke “Dua ratus empat puluh delapan”.",
+      "source_image": "../../media/CNX_BMath_Figure_01_01_013_img.jpg.id-ID.svg",
+      "whole_number": "37,519,248",
+      "groups_from_left": [
+        "37",
+        "519",
+        "248"
+      ],
+      "group_scales": [
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "period_labels": {
+        "jv-academic": [
+          "yutanan",
+          "éwuan",
+          "satuan"
+        ],
+        "jv-conversation": [
+          "yutanan",
+          "éwuan",
+          "satuan"
+        ],
+        "id-academic": [
+          "jutaan",
+          "ribuan",
+          "satuan"
+        ]
+      },
+      "printed_digit_readings": {
+        "jv-academic": [
+          "telu, pitu",
+          "lima, siji, sanga",
+          "loro, papat, wolu"
+        ],
+        "jv-conversation": [
+          "telu, pitu",
+          "lima, siji, sanga",
+          "loro, papat, wolu"
+        ],
+        "id-academic": [
+          "tiga, tujuh",
+          "lima, satu, sembilan",
+          "dua, empat, delapan"
+        ]
+      },
+      "arrow_mappings": [
+        {
+          "group_index_from_left": 1,
+          "source_group": "37",
+          "expected_word_label": {
+            "jv-academic": "telung puluh pitu yuta",
+            "jv-conversation": "telung puluh pitu yuta",
+            "id-academic": "tiga puluh tujuh juta"
+          }
+        },
+        {
+          "group_index_from_left": 2,
+          "source_group": "519",
+          "expected_word_label": {
+            "jv-academic": "limang atus sangalas éwu",
+            "jv-conversation": "limang atus sangalas éwu",
+            "id-academic": "lima ratus sembilan belas ribu"
+          }
+        },
+        {
+          "group_index_from_left": 3,
+          "source_group": "248",
+          "expected_word_label": {
+            "jv-academic": "rong atus patang puluh wolu",
+            "jv-conversation": "rong atus patang puluh wolu",
+            "id-academic": "dua ratus empat puluh delapan"
+          }
+        }
+      ],
+      "expected": {
+        "jv-academic": "Gambar nuduhake telung klompok digit sing dipisah nganggo koma. Saka kiwa menyang tengen: klompok yutanan ditulis nganggo digit telu, pitu; klompok éwuan nganggo digit lima, siji, sanga; lan klompok satuan nganggo digit loro, papat, wolu. Ing ngisore, panah saka klompok yutanan nuding menyang wacan telung puluh pitu yuta; panah saka klompok éwuan nuding menyang wacan limang atus sangalas éwu; lan panah saka klompok satuan nuding menyang wacan rong atus patang puluh wolu.",
+        "jv-conversation": "Gambar iki ana telung klompok digit sing dipisah nganggo koma. Saka kiwa menyang tengen: ing klompok yutanan ana digit telu, pitu; ing klompok éwuan ana digit lima, siji, sanga; lan ing klompok satuan ana digit loro, papat, wolu. Ing ngisore, panah saka yutanan menyang tulisan telung puluh pitu yuta; panah saka éwuan menyang tulisan limang atus sangalas éwu; lan panah saka satuan menyang tulisan rong atus patang puluh wolu.",
+        "id-academic": "Gambar menunjukkan tiga kelompok digit yang dipisahkan dengan koma. Dari kiri ke kanan: kelompok jutaan ditulis dengan digit tiga, tujuh; kelompok ribuan dengan digit lima, satu, sembilan; dan kelompok satuan dengan digit dua, empat, delapan. Di bawahnya, panah dari kelompok jutaan menunjuk ke bacaan tiga puluh tujuh juta; panah dari kelompok ribuan menunjuk ke bacaan lima ratus sembilan belas ribu; dan panah dari kelompok satuan menunjuk ke bacaan dua ratus empat puluh delapan."
+      },
+      "restriction": "Name the printed digits separately before the source's arrow-linked cardinal word labels; no digit or leading zero may disappear from the structural description."
+    },
+    {
+      "id": "A00-NAME-C02",
+      "module": "m81243",
+      "anchor": "fs-id2326974",
+      "media_id": "fs-id1209906",
+      "source_alt": "Gambar dengan lima nilai dipisahkan dengan koma. Nilai pertama adalah “8” dan diberi label “triliun”. Nilai kedua adalah “165” dan diberi label “miliar”. Nilai ketiga adalah “432” dan diberi label “jutaan”. Nilai keempat adalah “098” dan diberi label “ribuan”. Nilai kelima adalah “710” dan diberi label “satuan”. Di bawahnya, nilai “8” memiliki tanda panah yang menunjuk ke “Delapan triliun”, nilai “165” memiliki tanda panah yang menunjuk ke “Seratus enam puluh lima miliar”, nilai “432” memiliki tanda panah yang menunjuk ke “Empat ratus tiga puluh dua juta”, nilai “098” memiliki tanda panah yang menunjuk ke “Sembilan puluh delapan ribu”, dan nilai “710” memiliki tanda panah yang menunjuk ke “tujuh ratus sepuluh”.",
+      "source_image": "../../media/CNX_BMath_Figure_01_01_014_img.jpg.id-ID.svg",
+      "whole_number": "8,165,432,098,710",
+      "groups_from_left": [
+        "8",
+        "165",
+        "432",
+        "098",
+        "710"
+      ],
+      "group_scales": [
+        "1000000000000",
+        "1000000000",
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "period_labels": {
+        "jv-academic": [
+          "trilyun",
+          "milyar",
+          "yutanan",
+          "éwuan",
+          "satuan"
+        ],
+        "jv-conversation": [
+          "trilyun",
+          "milyar",
+          "yutanan",
+          "éwuan",
+          "satuan"
+        ],
+        "id-academic": [
+          "triliun",
+          "miliar",
+          "jutaan",
+          "ribuan",
+          "satuan"
+        ]
+      },
+      "printed_digit_readings": {
+        "jv-academic": [
+          "wolu",
+          "siji, enem, lima",
+          "papat, telu, loro",
+          "nol, sanga, wolu",
+          "pitu, siji, nol"
+        ],
+        "jv-conversation": [
+          "wolu",
+          "siji, enem, lima",
+          "papat, telu, loro",
+          "nol, sanga, wolu",
+          "pitu, siji, nol"
+        ],
+        "id-academic": [
+          "delapan",
+          "satu, enam, lima",
+          "empat, tiga, dua",
+          "nol, sembilan, delapan",
+          "tujuh, satu, nol"
+        ]
+      },
+      "arrow_mappings": [
+        {
+          "group_index_from_left": 1,
+          "source_group": "8",
+          "expected_word_label": {
+            "jv-academic": "wolung trilyun",
+            "jv-conversation": "wolung trilyun",
+            "id-academic": "delapan triliun"
+          }
+        },
+        {
+          "group_index_from_left": 2,
+          "source_group": "165",
+          "expected_word_label": {
+            "jv-academic": "satus sewidak lima milyar",
+            "jv-conversation": "satus sewidak lima milyar",
+            "id-academic": "seratus enam puluh lima miliar"
+          }
+        },
+        {
+          "group_index_from_left": 3,
+          "source_group": "432",
+          "expected_word_label": {
+            "jv-academic": "patang atus telung puluh loro yuta",
+            "jv-conversation": "patang atus telung puluh loro yuta",
+            "id-academic": "empat ratus tiga puluh dua juta"
+          }
+        },
+        {
+          "group_index_from_left": 4,
+          "source_group": "098",
+          "expected_word_label": {
+            "jv-academic": "sangang puluh wolu éwu",
+            "jv-conversation": "sangang puluh wolu éwu",
+            "id-academic": "sembilan puluh delapan ribu"
+          }
+        },
+        {
+          "group_index_from_left": 5,
+          "source_group": "710",
+          "expected_word_label": {
+            "jv-academic": "pitung atus sepuluh",
+            "jv-conversation": "pitung atus sepuluh",
+            "id-academic": "tujuh ratus sepuluh"
+          }
+        }
+      ],
+      "expected": {
+        "jv-academic": "Gambar nuduhake limang klompok digit sing dipisah nganggo koma. Saka kiwa menyang tengen: klompok trilyun ditulis nganggo digit wolu; klompok milyar nganggo digit siji, enem, lima; klompok yutanan nganggo digit papat, telu, loro; klompok éwuan nganggo digit nol, sanga, wolu; lan klompok satuan nganggo digit pitu, siji, nol. Ing ngisore, panah saka klompok trilyun nuding menyang wacan wolung trilyun; panah saka klompok milyar menyang satus sewidak lima milyar; panah saka klompok yutanan menyang patang atus telung puluh loro yuta; panah saka klompok éwuan menyang sangang puluh wolu éwu; lan panah saka klompok satuan menyang pitung atus sepuluh. Nol ing wiwitan klompok éwuan iku digit sing katulis, dudu panggonan kosong. Digit nol kasebut tetep ditulis, nanging ora disebutake minangka tambahan ing jeneng wilangan.",
+        "jv-conversation": "Gambar iki ana limang klompok digit sing dipisah nganggo koma. Saka kiwa menyang tengen: ing klompok trilyun ana digit wolu; ing klompok milyar ana digit siji, enem, lima; ing klompok yutanan ana digit papat, telu, loro; ing klompok éwuan ana digit nol, sanga, wolu; lan ing klompok satuan ana digit pitu, siji, nol. Ing ngisore, panah saka trilyun menyang tulisan wolung trilyun; panah saka milyar menyang satus sewidak lima milyar; panah saka yutanan menyang patang atus telung puluh loro yuta; panah saka éwuan menyang sangang puluh wolu éwu; lan panah saka satuan menyang pitung atus sepuluh. Klompok éwuan mau diwiwiti digit nol, dudu papan kosong. Nol kuwi tetep ditulis, nanging ora disebut nalika nyebut wilangane.",
+        "id-academic": "Gambar menunjukkan lima kelompok digit yang dipisahkan dengan koma. Dari kiri ke kanan: kelompok triliun ditulis dengan digit delapan; kelompok miliar dengan digit satu, enam, lima; kelompok jutaan dengan digit empat, tiga, dua; kelompok ribuan dengan digit nol, sembilan, delapan; dan kelompok satuan dengan digit tujuh, satu, nol. Di bawahnya, panah dari kelompok triliun menunjuk ke bacaan delapan triliun; panah dari kelompok miliar ke seratus enam puluh lima miliar; panah dari kelompok jutaan ke empat ratus tiga puluh dua juta; panah dari kelompok ribuan ke sembilan puluh delapan ribu; dan panah dari kelompok satuan ke tujuh ratus sepuluh. Nol pada awal kelompok ribuan adalah digit tertulis, bukan tempat kosong. Digit nol itu tetap ditulis, tetapi tidak disebut sebagai tambahan dalam nama bilangan."
+      },
+      "restriction": "Name the printed digits separately before the source's arrow-linked cardinal word labels; no digit or leading zero may disappear from the structural description."
+    },
+    {
+      "id": "A00-NAME-C03",
+      "module": "m81243",
+      "anchor": "fs-id1825910",
+      "media_id": "fs-id2670483",
+      "source_alt": "Gambar dengan tiga nilai dipisahkan dengan koma. Nilai pertama adalah “327” dan diberi label “jutaan”. Nilai kedua adalah “577” dan diberi label “ribuan”. Nilai ketiga adalah “529” dan diberi label “satuan”.",
+      "source_image": "../../media/CNX_BMath_Figure_01_01_015_img.jpg.id-ID.svg",
+      "whole_number": "327,577,529",
+      "groups_from_left": [
+        "327",
+        "577",
+        "529"
+      ],
+      "group_scales": [
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "period_labels": {
+        "jv-academic": [
+          "yutanan",
+          "éwuan",
+          "satuan"
+        ],
+        "jv-conversation": [
+          "yutanan",
+          "éwuan",
+          "satuan"
+        ],
+        "id-academic": [
+          "jutaan",
+          "ribuan",
+          "satuan"
+        ]
+      },
+      "printed_digit_readings": {
+        "jv-academic": [
+          "telu, loro, pitu",
+          "lima, pitu, pitu",
+          "lima, loro, sanga"
+        ],
+        "jv-conversation": [
+          "telu, loro, pitu",
+          "lima, pitu, pitu",
+          "lima, loro, sanga"
+        ],
+        "id-academic": [
+          "tiga, dua, tujuh",
+          "lima, tujuh, tujuh",
+          "lima, dua, sembilan"
+        ]
+      },
+      "arrow_mappings": [],
+      "expected": {
+        "jv-academic": "Gambar nuduhake telung klompok digit sing dipisah nganggo koma. Saka kiwa menyang tengen: klompok yutanan ditulis nganggo digit telu, loro, pitu; klompok éwuan nganggo digit lima, pitu, pitu; lan klompok satuan nganggo digit lima, loro, sanga.",
+        "jv-conversation": "Gambar iki ana telung klompok digit sing dipisah nganggo koma. Saka kiwa menyang tengen: ing klompok yutanan ana digit telu, loro, pitu; ing klompok éwuan ana digit lima, pitu, pitu; lan ing klompok satuan ana digit lima, loro, sanga.",
+        "id-academic": "Gambar menunjukkan tiga kelompok digit yang dipisahkan dengan koma. Dari kiri ke kanan: kelompok jutaan ditulis dengan digit tiga, dua, tujuh; kelompok ribuan dengan digit lima, tujuh, tujuh; dan kelompok satuan dengan digit lima, dua, sembilan."
+      },
+      "restriction": "Read only the actual three digit groups and period labels; this diagram has no arrow-to-word-label row."
+    }
+  ],
+  "table_fixtures": [
+    {
+      "id": "A00-NAME-T01",
+      "module": "m81243",
+      "anchor": "fs-id2326974",
+      "table_id": "fs-id1171100715908",
+      "source_cnxml": "<table id=\"fs-id1171100715908\" aria-label=\"Mulailah dengan digit paling kiri, yaitu 8. Digit itu berada di tempat triliunan: delapan triliun. / Periode berikutnya di sebelah kanan adalah miliaran: seratus enam puluh lima miliar. / Periode berikutnya adalah jutaan: empat ratus tiga puluh dua juta. / Periode berikutnya adalah ribuan: sembilan puluh delapan ribu. / Periode paling kanan adalah satuan: tujuh ratus sepuluh.\" class=\"unnumbered unstyled\">\n<tgroup cols=\"3\"><tbody>\n  <row>\n    <entry>Mulailah dengan digit paling kiri, yaitu 8. Digit itu berada di tempat triliunan.</entry>\n    <entry>delapan triliun</entry>\n  </row>\n  <row>\n    <entry>Periode berikutnya di sebelah kanan adalah miliaran.</entry>\n    <entry>seratus enam puluh lima miliar</entry>\n  </row>\n  <row>\n    <entry>Periode berikutnya di sebelah kanan adalah jutaan.</entry>\n    <entry>empat ratus tiga puluh dua juta</entry>\n  </row>\n  <row>\n    <entry>Periode berikutnya di sebelah kanan adalah ribuan.</entry>\n    <entry>sembilan puluh delapan ribu</entry>\n  </row>\n  <row>\n    <entry>Periode paling kanan menunjukkan satuannya.</entry>\n    <entry>tujuh ratus sepuluh</entry>\n  </row>\n</tbody>\n</tgroup>\n</table>",
+      "source_aria_label": "Mulailah dengan digit paling kiri, yaitu 8. Digit itu berada di tempat triliunan: delapan triliun. / Periode berikutnya di sebelah kanan adalah miliaran: seratus enam puluh lima miliar. / Periode berikutnya adalah jutaan: empat ratus tiga puluh dua juta. / Periode berikutnya adalah ribuan: sembilan puluh delapan ribu. / Periode paling kanan adalah satuan: tujuh ratus sepuluh.",
+      "source_rows": [
+        [
+          "Mulailah dengan digit paling kiri, yaitu 8. Digit itu berada di tempat triliunan.",
+          "delapan triliun"
+        ],
+        [
+          "Periode berikutnya di sebelah kanan adalah miliaran.",
+          "seratus enam puluh lima miliar"
+        ],
+        [
+          "Periode berikutnya di sebelah kanan adalah jutaan.",
+          "empat ratus tiga puluh dua juta"
+        ],
+        [
+          "Periode berikutnya di sebelah kanan adalah ribuan.",
+          "sembilan puluh delapan ribu"
+        ],
+        [
+          "Periode paling kanan menunjukkan satuannya.",
+          "tujuh ratus sepuluh"
+        ]
+      ],
+      "source_shape": {
+        "declared_columns": 3,
+        "header_rows": 0,
+        "body_rows": 5,
+        "actual_entries_per_row": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "class": "unnumbered unstyled"
+      },
+      "whole_number": "8,165,432,098,710",
+      "groups_from_left": [
+        "8",
+        "165",
+        "432",
+        "098",
+        "710"
+      ],
+      "group_scales": [
+        "1000000000000",
+        "1000000000",
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "row_values": [
+        "8000000000000",
+        "165000000000",
+        "432000000",
+        "98000",
+        "710"
+      ],
+      "expected": {
+        "jv-academic": "Tabel limang larik. Larik kapisan: wiwitana saka digit paling kiwa, yaiku wolu. Digit kasebut ana ing panggonan trilyunan: wolung trilyun.\nLarik kapindho: periode sabanjure ing sisih tengen yaiku milyaran: satus sewidak lima milyar.\nLarik katelu: periode sabanjure ing sisih tengen yaiku yutanan: patang atus telung puluh loro yuta.\nLarik kapapat: periode sabanjure ing sisih tengen yaiku éwuan: sangang puluh wolu éwu.\nLarik kalima: periode paling tengen nuduhake satuane: pitung atus sepuluh.",
+        "jv-conversation": "Tabel iki ana limang larik. Larik kapisan: wiwiti saka digit paling kiwa, yaiku wolu. Digit kuwi ana ing trilyunan: wolung trilyun.\nLarik kapindho: sabanjure ing sisih tengen ana periode milyaran: satus sewidak lima milyar.\nLarik katelu: sabanjure ing sisih tengen ana periode yutanan: patang atus telung puluh loro yuta.\nLarik kapapat: sabanjure ing sisih tengen ana periode éwuan: sangang puluh wolu éwu.\nLarik kalima: sing paling tengen kuwi periode satuan: pitung atus sepuluh.",
+        "id-academic": "Tabel lima baris. Baris pertama: mulailah dengan digit paling kiri, yaitu delapan. Digit itu berada di tempat triliunan: delapan triliun.\nBaris kedua: periode berikutnya di sebelah kanan adalah miliaran: seratus enam puluh lima miliar.\nBaris ketiga: periode berikutnya di sebelah kanan adalah jutaan: empat ratus tiga puluh dua juta.\nBaris keempat: periode berikutnya di sebelah kanan adalah ribuan: sembilan puluh delapan ribu.\nBaris kelima: periode paling kanan menunjukkan satuannya: tujuh ratus sepuluh."
+      },
+      "restriction": "Validate the inherited cols=3 declaration and all five actual two-entry rows, including exact aria-label and row text. Narrate each row once in source order; do not invent headers, add a third semantic cell, or also recite the aria-label. Keep source table structure unchanged."
+    }
+  ],
+  "prose_fixtures": [
+    {
+      "id": "A00-NAME-P01",
+      "module": "m81243",
+      "anchor": "fs-id3400199",
+      "element_id": "fs-id3400199",
+      "source_cnxml": "<para id=\"fs-id3400199\">Perhatikan bahwa kata <emphasis effect=\"italics\">dan</emphasis> tidak digunakan ketika menyebutkan bilangan cacah.</para>",
+      "role": "complete source-bound quoted-conjunction paragraph",
+      "expected": {
+        "jv-academic": "Gatekna tembung iki: “lan”. Tembung kasebut ora digunakake nalika nyebutake wilangan cacah.",
+        "jv-conversation": "Gatekna tembung iki: “lan”. Tembung kuwi ora dienggo nalika nyebut wilangan cacah.",
+        "id-academic": "Perhatikan kata berikut: “dan”. Kata itu tidak digunakan ketika menyebutkan bilangan cacah."
+      },
+      "restriction": "Substitute only this verified complete paragraph's narration; keep the actual quoted word, its meaning, the visible italic source/translation, and the full naming instruction. Not a global ban on the Javanese conjunction."
+    }
+  ],
+  "answer_value_invariants": [
+    {
+      "anchor": "fs-id2774887",
+      "problem_paragraph": "fs-id2269538",
+      "solution_id": "fs-id1312880",
+      "answer_paragraph": "fs-id1469854",
+      "number": "9,258,137,904,061",
+      "source_answer": "sembilan triliun, dua ratus lima puluh delapan miliar, seratus tiga puluh tujuh juta, sembilan ratus empat ribu enam puluh satu",
+      "expected_visible_answer": {
+        "jv-academic": "sangang trilyun, rong atus sèket wolu milyar, satus telung puluh pitu yuta, sangang atus papat éwu, sewidak siji",
+        "jv-conversation": "sangang trilyun, rong atus sèket wolu milyar, satus telung puluh pitu yuta, sangang atus papat éwu, sewidak siji",
+        "id-academic": "sembilan triliun, dua ratus lima puluh delapan miliar, seratus tiga puluh tujuh juta, sembilan ratus empat ribu enam puluh satu"
+      },
+      "expected_cardinal": {
+        "jv-academic": "sangang trilyun, rong atus sèket wolu milyar, satus telung puluh pitu yuta, sangang atus papat éwu, sewidak siji",
+        "jv-conversation": "sangang trilyun, rong atus sèket wolu milyar, satus telung puluh pitu yuta, sangang atus papat éwu, sewidak siji",
+        "id-academic": "sembilan triliun, dua ratus lima puluh delapan miliar, seratus tiga puluh tujuh juta, sembilan ratus empat ribu, enam puluh satu"
+      },
+      "restriction": "Recompose the complete answer value and verify exact source prose plus translated answer. Indonesian source omits some written commas; these metadata do not authorize rewriting that visible text or silently replacing its whole answer narration."
+    },
+    {
+      "anchor": "fs-id2136533",
+      "problem_paragraph": "fs-id2555667",
+      "solution_id": "fs-id1683677",
+      "answer_paragraph": "fs-id1278691",
+      "number": "17,864,325,619,004",
+      "source_answer": "tujuh belas triliun delapan ratus enam puluh empat miliar tiga ratus dua puluh lima juta enam ratus sembilan belas ribu empat",
+      "expected_visible_answer": {
+        "jv-academic": "pitulas trilyun, wolung atus sewidak papat milyar, telung atus salawé yuta, nem atus sangalas éwu, papat",
+        "jv-conversation": "pitulas trilyun, wolung atus sewidak papat milyar, telung atus salawé yuta, nem atus sangalas éwu, papat",
+        "id-academic": "tujuh belas triliun delapan ratus enam puluh empat miliar tiga ratus dua puluh lima juta enam ratus sembilan belas ribu empat"
+      },
+      "expected_cardinal": {
+        "jv-academic": "pitulas trilyun, wolung atus sewidak papat milyar, telung atus salawé yuta, nem atus sangalas éwu, papat",
+        "jv-conversation": "pitulas trilyun, wolung atus sewidak papat milyar, telung atus salawé yuta, nem atus sangalas éwu, papat",
+        "id-academic": "tujuh belas triliun, delapan ratus enam puluh empat miliar, tiga ratus dua puluh lima juta, enam ratus sembilan belas ribu, empat"
+      },
+      "restriction": "Recompose the complete answer value and verify exact source prose plus translated answer. Indonesian source omits some written commas; these metadata do not authorize rewriting that visible text or silently replacing its whole answer narration."
+    },
+    {
+      "anchor": "fs-id1628781",
+      "problem_paragraph": "fs-id1919954",
+      "solution_id": "fs-id1393924",
+      "answer_paragraph": "fs-id2243722",
+      "number": "316,128,839",
+      "source_answer": "tiga ratus enam belas juta seratus dua puluh delapan ribu delapan ratus tiga puluh sembilan",
+      "expected_visible_answer": {
+        "jv-academic": "telung atus nembelas yuta, satus wolulikur éwu, wolung atus telung puluh sanga",
+        "jv-conversation": "telung atus nembelas yuta, satus wolulikur éwu, wolung atus telung puluh sanga",
+        "id-academic": "tiga ratus enam belas juta seratus dua puluh delapan ribu delapan ratus tiga puluh sembilan"
+      },
+      "expected_cardinal": {
+        "jv-academic": "telung atus nembelas yuta, satus wolulikur éwu, wolung atus telung puluh sanga",
+        "jv-conversation": "telung atus nembelas yuta, satus wolulikur éwu, wolung atus telung puluh sanga",
+        "id-academic": "tiga ratus enam belas juta, seratus dua puluh delapan ribu, delapan ratus tiga puluh sembilan"
+      },
+      "restriction": "Recompose the complete answer value and verify exact source prose plus translated answer. Indonesian source omits some written commas; these metadata do not authorize rewriting that visible text or silently replacing its whole answer narration."
+    },
+    {
+      "anchor": "fs-id1808812",
+      "problem_paragraph": "fs-id1250766",
+      "solution_id": "fs-id1360632",
+      "answer_paragraph": "fs-id1269733",
+      "number": "31,536,000",
+      "source_answer": "tiga puluh satu juta lima ratus tiga puluh enam ribu",
+      "expected_visible_answer": {
+        "jv-academic": "telung puluh siji yuta, limang atus telung puluh enem éwu",
+        "jv-conversation": "telung puluh siji yuta, limang atus telung puluh enem éwu",
+        "id-academic": "tiga puluh satu juta lima ratus tiga puluh enam ribu"
+      },
+      "expected_cardinal": {
+        "jv-academic": "telung puluh siji yuta, limang atus telung puluh enem éwu",
+        "jv-conversation": "telung puluh siji yuta, limang atus telung puluh enem éwu",
+        "id-academic": "tiga puluh satu juta, lima ratus tiga puluh enam ribu"
+      },
+      "restriction": "Recompose the complete answer value and verify exact source prose plus translated answer. Indonesian source omits some written commas; these metadata do not authorize rewriting that visible text or silently replacing its whole answer narration."
+    }
+  ],
+  "solution_cues": [
+    {
+      "solution_ids": [
+        "fs-id2196744",
+        "fs-id2425040"
+      ],
+      "source_title": "Penyelesaian",
+      "expected": {
+        "jv-academic": "Panyelesaian.",
+        "jv-conversation": "Cara Ngrampungake.",
+        "id-academic": "Penyelesaian."
+      },
+      "restriction": "Read the existing worked-solution title once; no duplicate Wangsulan/Jawaban cue."
+    },
+    {
+      "solution_ids": [
+        "fs-id1312880",
+        "fs-id1683677",
+        "fs-id1393924",
+        "fs-id1360632"
+      ],
+      "source_title": null,
+      "expected": {
+        "jv-academic": "Wangsulan.",
+        "jv-conversation": "Wangsulan.",
+        "id-academic": "Jawaban."
+      },
+      "restriction": "Insert one spoken answer cue per untitled practice solution without inventing a visible source title."
+    }
+  ],
+  "fail_closed_cases": [
+    {
+      "case": "Changed source hash, section, top-level anchor, ordinal, numeric token, comma grouping, leading zero, style attribute, or punctuation",
+      "result": "unsupported_source_bound_narration"
+    },
+    {
+      "case": "Unsupported number outside the nine exact source MathML fixtures, including mathematically equivalent regrouping",
+      "result": "unsupported_source_bound_narration"
+    },
+    {
+      "case": "Chart media ID, source alt, source path, digit group, label order, or arrow mapping differs",
+      "result": "unsupported_chart_source"
+    },
+    {
+      "case": "Table source tree, cols declaration, number of rows/entries, row text or aria-label differs",
+      "result": "unsupported_table_source"
+    },
+    {
+      "case": "Quoted lan/dan paragraph or its emphasized token differs",
+      "result": "unsupported_prose_source"
+    },
+    {
+      "case": "Printed 098/061/004 is normalized away or 000 ones is incorrectly added to a complete name",
+      "result": "source_group_or_name_invariant_failure"
+    },
+    {
+      "case": "Unknown requested voice locale",
+      "result": "unsupported_voice_locale"
+    }
+  ],
+  "qa_receipt": {
+    "draft_only": false,
+    "production_integration": "three_CNXML_tracks_offline_reader_and_three_transcript_SSML_pairs_built; human_review_pending",
+    "math_fixtures": 9,
+    "chart_fixtures": 3,
+    "table_fixtures": 1,
+    "prose_fixtures": 1,
+    "number_decomposition_witnesses": 7,
+    "year_witnesses": 1,
+    "practice_answer_invariants": 4,
+    "structural_source_match": "Pass: nine exact raw source MathML substrings and namespace-aware trees match their declared top-level anchors and ordinals; chart alts/paths and full table/quoted-paragraph source CNXML match the pinned Indonesian source.",
+    "read_only_checks": [
+      "All nine MathML fixtures bind through source_bound_math in each of the three tracks, preserving mstyle fontweight=bold and the two sentence-final periods.",
+      "Changed grouping, missing leading zero, altered style, changed punctuation, and changed top-level anchor are rejected by the existing source-bound MathML matcher.",
+      "All 27 MathML readouts recompose to their exact source integers using a finite verification-only word/value probe; no runtime number parser was installed.",
+      "All three chart alts/paths, ordered printed digit readings, period labels, and eight arrow-to-cardinal mappings match their source facts.",
+      "The headerless table matches exact source CNXML/aria-label, cols=3 and five two-entry rows; all fifteen narrated row values across tracks match the five source group contributions.",
+      "All four source/translated visible practice answers match their invariant strings; seven group decomposition witnesses and the separate ungrouped 2014 year witness retain their exact values.",
+      "The quoted conjunction paragraph retains exactly one standalone quoted lan/dan in each readout and preserves its complete source instruction.",
+      "New table/chart/prose dispatch, complete generated products, listening, and native review remain root integration work; this handoff did not modify shared scripts or generate products."
+    ],
+    "human_language_review": false,
+    "visual_review": false,
+    "listening_review": false,
+    "synthesized_audio_files": 0,
+    "provider_compatibility_tested": false,
+    "production_revision": "Root text QA changed grouped-numeral prompt readings to exact printed-digit sequences; retained full cardinal names as verification witnesses and visible/answer prose. No source or formula edit.",
+    "original_rule_handoff": "The read_only_checks and original draft scope descriptions record the initial rule-handoff stage. Current production state is given by production_integration and hash-bound qa build receipts."
+  }
+}

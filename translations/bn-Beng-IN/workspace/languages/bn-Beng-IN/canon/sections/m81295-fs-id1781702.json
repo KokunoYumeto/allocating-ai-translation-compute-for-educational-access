@@ -1,0 +1,57 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81295",
+  "section": "fs-id1781702",
+  "scope": "Entire Key Concepts section: six top-level procedures and 21 nested steps.",
+  "source_sha256": "c22d14bb2b833ed20ea5a7aa95d0e50b7810e8930834bd61993b8431dcfd02c3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR01", "TR05", "TR08", "TR09", "WB04"],
+      "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv:TR01,TR05,TR08-TR09,WB04", "languages/bn-Beng-IN/terminology.tsv:T005-T006,T013,T026-T028,T045-T050,T053-T057", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt"],
+      "decision": "TR08/09 control decimal-number/point/place language; TR01 and the ledger distinguish ভাগফল/ভাজক/ভাজ্য; WB04/TR05 witness গুণফল. Power-of-ten, placeholder-zero and long-division terms remain explicitly editorial."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR01", "TR05", "TR08", "TR09"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt:quotient/divisor passage", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:decimal definition and place-value passage", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:decimal-reading passage", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt:multiplication/product passage"],
+      "decision": "Keep direct learner commands and separate factor from product, divisor from dividend and quotient. Add the mathematically required nonzero-divisor condition without changing the source hierarchy."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": ["TR01", "TR05", "TR08", "TR09"],
+      "read": ["languages/bn-Beng-IN/terminology.tsv:T053-T057", "exact source fs-id1781702 subtree", "languages/bn-Beng-IN/translations/m81295-fs-id1781702.bn-Beng-IN.cnxml"],
+      "decision": "Rechecked all six procedure groups and 21 nested steps in source order. Confirmed both division headings state a nonzero divisor and the application strategy ends with a complete-sentence answer."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": ["eip-229", "eip-id1170323799943", "eip-id1170323799954"],
+      "source_issue": "Both source division headings omit the required nonzero-divisor condition.",
+      "bengali_correction": "পূর্ণসংখ্যা ও দশমিক—উভয় ভাজকের ক্ষেত্রেই শূন্য নয় শর্তটি স্পষ্ট করা হয়েছে।",
+      "policy": "Preserve the exact source step hierarchy and algorithm while making its mathematical domain explicit.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "checks": [
+    "All six source key-concept groups and all 21 nested steps translated in exact order.",
+    "Addition/subtraction alignment, factor-place count, product/quotient sign, power-of-ten shift, dividend/divisor movement and five-stage application strategy were checked against the instructional source inventory."
+  ],
+  "language_gaps": [
+    "T054-T057 are editorial terminology pending West Bengal review; the cited Tripura pages are Indian Bengali register witnesses, not curriculum certification.",
+    "Independent West Bengal teacher/language, learner and assistive-technology review is pending."
+  ],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "0913ff4df3aff4a13c4d8365ec89a948f8091a3124cf5389a4577a724bc86d3c",
+    "reader_sha256": "1907182ab65fed84bac7d1376e4ddf2d27f34ed2fd12288fc4cb3ba60bf162e7",
+    "method": "Read-only build.translated and section renderer passed exact source tags, IDs, order, nonlinguistic attributes and English-prose gate.",
+    "nodes": 42,
+    "ids": 8,
+    "mathml": 0,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integrates the complete module and performs desktop/narrow visual review. Entire assignment continues; no independent publishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

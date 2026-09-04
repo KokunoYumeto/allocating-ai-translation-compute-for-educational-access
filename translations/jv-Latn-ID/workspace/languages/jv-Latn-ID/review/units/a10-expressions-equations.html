@@ -1,0 +1,476 @@
+<!DOCTYPE html><html lang="id-ID"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>a10-expressions-equations</title><style>
+:root{color-scheme:light;--ink:#173431;--accent:#24675d;--line:#c9d8d2}*{box-sizing:border-box}
+body{margin:0;background:#f3f6f3;color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+main{max-width:1440px;margin:auto;padding:36px}header{max-width:1000px;margin:0 auto 36px}h1{font-size:2.5rem;line-height:1.15;margin:.4em 0}h2{font-size:1.65rem}h3{font-size:1.16rem}h4{font-size:1rem}
+.eyebrow,.register,.source,.status,nav{font:13px/1.5 system-ui,sans-serif}.eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.status{background:#fff4d7;padding:16px;border-left:4px solid #986d18}.source{overflow-wrap:anywhere;color:#425853}
+.parallel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:18px 0}.track{background:#fff;padding:20px;border:1px solid var(--line);min-width:0}
+.register{font-weight:700;letter-spacing:.03em;color:var(--accent);border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:16px}
+.section-title{padding-top:30px;border-top:2px solid var(--accent)}p{margin:.7em 0}figure{margin:16px 0}img{max-width:100%;height:auto}figcaption{font-size:.9em}
+aside,.example{padding:12px;border-left:3px solid var(--line);background:#fafcf9}.solution{margin-top:16px;border-top:1px dashed var(--line);padding-top:8px}
+table{width:100%;border-collapse:collapse}td,th{border:1px solid var(--line);padding:6px;text-align:center}th{background:#edf4ef}math{font-size:1.1em}a{color:#185e54}ul,ol{padding-left:1.2em}.source-labeled-list{list-style:none}
+footer{margin-top:40px;border-top:2px solid var(--accent);padding-top:20px;font:14px/1.6 system-ui,sans-serif}.note-box{max-width:1000px;margin:20px auto;padding:20px;background:#fff}
+@media(max-width:1050px){main{padding:18px}.parallel{grid-template-columns:1fr}.track{padding:18px}h1{font-size:2rem}}
+@media print{body{background:#fff}main{padding:0}.parallel{display:block}.track{break-inside:avoid}.status{background:#fff}nav{display:none}}
+</style></head><body><main>
+<header><div class="eyebrow">A10 · jv-Latn-ID / id-ID</div>
+<h1 lang="jv-Latn-ID">Nggunakake Variabel lan Simbol Aljabar</h1>
+<p class="source" lang="en">Original section title as context plus complete expression/equation children [28:40], three tables and all eight classifications; stops before the formal exponent introduction.</p>
+<p class="status">Draf tiga register. Belum ditelaah penutur/pendidik Jawa atau diuji dengar; bukan edisi siap terbit.</p>
+<p><a href="../pilot.html">Unit awal</a> · <a href="../../NEXT_UNIT.md">Kelanjutan</a></p></header>
+<span id="a10-expressions-equations--jv-conversation--fs-id1170655150800" data-source-id="fs-id1170655150800"></span>
+<span id="a10-expressions-equations--jv-academic--fs-id1170655150800" data-source-id="fs-id1170655150800"></span>
+<span id="a10-expressions-equations--id-academic--fs-id1170655150800" data-source-id="fs-id1170655150800"></span>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><p id="a10-expressions-equations--jv-conversation--fs-id1170654957085" data-source-id="fs-id1170654957085">Apa bedane frasa lan ukara? Frasa kuwi ngandharake siji gagasan sing durung pepak yen madeg dhewe. Ukara ngandharake sawijining bab kanthi pepak. Iki padanan basa Jawa saka tuladha ing sumber basa Indonesia: “Mlayu banter banget” kuwi frasa, nanging “Wong sing dolanan bal-balan kuwi mlayu banter banget” kuwi ukara. Ing tuladha iki, ukara duwe subjek lan predikat. Ing aljabar, ana <em>wujud aljabar</em> lan <em>persamaan</em>.</p></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><p id="a10-expressions-equations--jv-academic--fs-id1170654957085" data-source-id="fs-id1170654957085">Apa bedane frasa lan ukara? Frasa ngandharake siji gagasan sing durung pepak yen madeg dhewe, dene ukara ngandharake sawijining bab kanthi pepak. Tuladha saka sumber basa Indonesia iki dipadhakake ing basa Jawa: “Mlayu banter banget” yaiku frasa, nanging “Wong sing dolanan bal-balan kuwi mlayu banter banget” yaiku ukara. Ing tuladha iki, ukara nduweni subjek lan predikat. Ing aljabar, ana <em>ekspresi</em> lan <em>persamaan</em>.</p></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><p id="a10-expressions-equations--id-academic--fs-id1170654957085" data-source-id="fs-id1170654957085">Apa perbedaan antara frasa dan kalimat? Frasa mengungkapkan satu gagasan yang belum lengkap jika berdiri sendiri, sedangkan kalimat menyatakan sesuatu secara lengkap. “Berlari sangat cepat” adalah frasa, tetapi “Pemain sepak bola itu berlari sangat cepat” adalah kalimat. Sebuah kalimat memiliki subjek dan predikat. Dalam aljabar, kita memiliki <em>ekspresi</em> dan <em>persamaan</em>.</p></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><aside id="a10-expressions-equations--jv-conversation--fs-id1170655102379" data-source-id="fs-id1170655102379" class="note ">
+<h3>Wujud Aljabar</h3>
+<p id="a10-expressions-equations--jv-conversation--fs-id1170654958000" data-source-id="fs-id1170654958000"><strong id="a10-expressions-equations--jv-conversation--term-00012" data-source-id="term-00012">Wujud Aljabar</strong> kuwi wilangan, variabel, utawa gabungan wilangan lan variabel sing nganggo tandha operasi.</p>
+</aside></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><aside id="a10-expressions-equations--jv-academic--fs-id1170655102379" data-source-id="fs-id1170655102379" class="note ">
+<h3>Ekspresi</h3>
+<p id="a10-expressions-equations--jv-academic--fs-id1170654958000" data-source-id="fs-id1170654958000"><strong id="a10-expressions-equations--jv-academic--term-00012" data-source-id="term-00012">Ekspresi</strong> yaiku wilangan, variabel, utawa gabungan wilangan lan variabel sing nggunakake simbol operasi.</p>
+</aside></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><aside id="a10-expressions-equations--id-academic--fs-id1170655102379" data-source-id="fs-id1170655102379" class="note ">
+<h3>Ekspresi</h3>
+<p id="a10-expressions-equations--id-academic--fs-id1170654958000" data-source-id="fs-id1170654958000"><strong id="a10-expressions-equations--id-academic--term-00012" data-source-id="term-00012">Ekspresi</strong> adalah bilangan, variabel, atau gabungan bilangan dan variabel yang menggunakan simbol operasi.</p>
+</aside></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><p id="a10-expressions-equations--jv-conversation--fs-id1170654988522" data-source-id="fs-id1170654988522"><em>Wujud Aljabar</em> kuwi mèmper karo frasa ing basa Indonesia. Iki sawetara tuladha wujud aljabar lan padanan tembung-tembunge ing basa Jawa:</p></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><p id="a10-expressions-equations--jv-academic--fs-id1170654988522" data-source-id="fs-id1170654988522"><em>Ekspresi</em> mèmper karo frasa ing basa Indonesia. Ing ngisor iki ana sawetara tuladha ekspresi kanthi padanan tetembungane ing basa Jawa:</p></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><p id="a10-expressions-equations--id-academic--fs-id1170654988522" data-source-id="fs-id1170654988522"><em>Ekspresi</em> mirip dengan frasa dalam bahasa Indonesia. Berikut beberapa contoh ekspresi:</p></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><table id="a10-expressions-equations--jv-conversation--fs-id1170655221887" data-source-id="fs-id1170655221887" aria-label="Tabel iki ana telung kolom lan limang larik. Larik paling ndhuwur isine judhul kolom. Kolom kapisan tulisane “Wujud Aljabar”, kolom kapindho “Tembung-tembung”, lan kolom katelu “Padanan Frasa Basa Indonesia”. Ing kolom “Wujud Aljabar” ana: 3, tandha tambah, 5; n, tandha kurang, 1; 6, tandha titik ping-pingan, 7; x ing ndhuwur garis pecahan lan y ing ngisor garis pecahan. Ing kolom “Tembung-tembung” ana: “3 ditambah lima”, “n dikurangi siji”, “6 ping 7”, lan “x dipara y”. Ing kolom “Padanan Frasa Basa Indonesia” ana padanan basa Jawa: “gunggung telu lan lima”, “selisih n lan siji”, “asil ping-pingan enem lan pitu”, lan “asil paran x lan y”.">
+
+
+
+
+
+<thead>
+<tr>
+<th scope="col">Wujud Aljabar</th>
+<th scope="col">Tembung-tembung</th>
+<th scope="col">Padanan Frasa Basa Indonesia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>5</mn></mrow></math></td>
+<td>3 ditambah 5</td>
+<td>gunggung telu lan lima</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math></td>
+<td><em>n</em> dikurangi siji</td>
+<td>selisih <em>n</em> lan siji</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>·</mo><mn>7</mn></mrow></math></td>
+<td>6 ping 7</td>
+<td>asil ping-pingan enem lan pitu</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>x</mi><mi>y</mi></mfrac></mrow></math></td>
+<td><em>x</em> dipara <em>y</em></td>
+<td>asil paran <em>x</em> lan <em>y</em></td>
+</tr>
+</tbody>
+
+</table></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><table id="a10-expressions-equations--jv-academic--fs-id1170655221887" data-source-id="fs-id1170655221887" aria-label="Tabel iki nduweni telung kolom lan limang larik. Larik kapisan ngemot irah-irahan saben kolom. Irah-irahan kolom kapisan yaiku “Ekspresi”, kolom kapindho “Tetembungan”, lan kolom katelu “Padanan Frasa Basa Indonesia”. Ing kolom “Ekspresi” ana wujud aljabar: 3, tandha tambah, 5; n, tandha kurang, 1; 6, tandha titik ping-pingan, 7; x ing ndhuwur garis pecahan lan y ing ngisor garis pecahan. Ing kolom “Tetembungan” ana frasa: “3 ditambah lima”, “n dikurangi siji”, “6 ping 7”, lan “x dipara y”. Ing kolom “Padanan Frasa Basa Indonesia” ana padanan basa Jawa: “gunggung telu lan lima”, “selisih n lan siji”, “asil ping-pingan enem lan pitu”, lan “asil paran x lan y”.">
+
+
+
+
+
+<thead>
+<tr>
+<th scope="col">Ekspresi</th>
+<th scope="col">Tetembungan</th>
+<th scope="col">Padanan Frasa Basa Indonesia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>5</mn></mrow></math></td>
+<td>3 ditambah 5</td>
+<td>gunggung telu lan lima</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math></td>
+<td><em>n</em> dikurangi siji</td>
+<td>selisih <em>n</em> lan siji</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>·</mo><mn>7</mn></mrow></math></td>
+<td>6 ping 7</td>
+<td>asil ping-pingan enem lan pitu</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>x</mi><mi>y</mi></mfrac></mrow></math></td>
+<td><em>x</em> dipara <em>y</em></td>
+<td>asil paran <em>x</em> lan <em>y</em></td>
+</tr>
+</tbody>
+
+</table></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><table id="a10-expressions-equations--id-academic--fs-id1170655221887" data-source-id="fs-id1170655221887" aria-label="Tabel ini memiliki tiga kolom dan lima baris. Baris pertama merupakan baris judul yang memberi label pada setiap kolom. Judul kolom pertama adalah “Ekspresi”, judul kolom kedua adalah “Kata-kata”, dan judul kolom ketiga adalah “Frasa dalam Bahasa Indonesia”. Di bawah kolom “Ekspresi” terdapat bentuk aljabar: 3, tanda tambah, 5; n, tanda kurang, 1; 6, tanda titik perkalian, 7; x, garis miring, y. Di bawah kolom “Kata-kata” terdapat frasa: “3 tambah lima”, “n kurang satu”, “6 kali 7”, dan “x dibagi y”. Di bawah kolom “Frasa dalam Bahasa Indonesia” terdapat frasa: “jumlah tiga dan lima”, “selisih n dan satu”, “hasil kali enam dan tujuh”, dan “hasil bagi x dan y”.">
+
+
+
+
+
+<thead>
+<tr>
+<th scope="col">Ekspresi</th>
+<th scope="col">Kata-kata</th>
+<th scope="col">Frasa dalam Bahasa Indonesia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>5</mn></mrow></math></td>
+<td>3 tambah 5</td>
+<td>jumlah tiga dan lima</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math></td>
+<td><em>n</em> kurang satu</td>
+<td>selisih <em>n</em> dan satu</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>·</mo><mn>7</mn></mrow></math></td>
+<td>6 kali 7</td>
+<td>hasil kali enam dan tujuh</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>x</mi><mi>y</mi></mfrac></mrow></math></td>
+<td><em>x</em> dibagi <em>y</em></td>
+<td>hasil bagi <em>x</em> dan <em>y</em></td>
+</tr>
+</tbody>
+
+</table></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><p id="a10-expressions-equations--jv-conversation--fs-id1170655003585" data-source-id="fs-id1170655003585">Ing sumber basa Indonesia, frasa-frasa sing wis dipadhakake ing tabel mau durung dadi ukara sing pepak amarga ora duwe predikat.</p></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><p id="a10-expressions-equations--jv-academic--fs-id1170655003585" data-source-id="fs-id1170655003585">Ing sumber basa Indonesia, frasa-frasa sing padanane dituduhake ing tabel kasebut ora dadi ukara sing pepak amarga ora nduweni predikat.</p></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><p id="a10-expressions-equations--id-academic--fs-id1170655003585" data-source-id="fs-id1170655003585">Perhatikan bahwa frasa-frasa dalam bahasa Indonesia tersebut tidak membentuk kalimat lengkap karena tidak memiliki predikat.</p></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><p id="a10-expressions-equations--jv-conversation--fs-id1170654938230" data-source-id="fs-id1170654938230"><em>Persamaan</em> kuwi dumadi saka rong wujud aljabar sing digandhengake nganggo <strong id="a10-expressions-equations--jv-conversation--term-00013" data-source-id="term-00013">tandha padha karo</strong>. Yen tandha-tandha ing persamaan diwaca nganggo tembung-tembung, ing sumber basa Indonesia dadi ukara sing pepak. Ing pepadhan iki, tandha padha karo dadi predikate. Ing ngisor iki ana padanan basa Jawane.</p></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><p id="a10-expressions-equations--jv-academic--fs-id1170654938230" data-source-id="fs-id1170654938230"><em>Persamaan</em> dumadi saka rong ekspresi sing digandhengake dening <strong id="a10-expressions-equations--jv-academic--term-00013" data-source-id="term-00013">tandha padha karo</strong>. Yen simbol-simbol ing persamaan diwaca nganggo tetembungan, ing sumber basa Indonesia kawangun ukara sing pepak. Ing pepadhan iki, tandha padha karo nduweni fungsi minangka predikat. Padanan basa Jawane dituduhake ing ngisor iki.</p></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><p id="a10-expressions-equations--id-academic--fs-id1170654938230" data-source-id="fs-id1170654938230"><em>Persamaan</em> terdiri atas dua ekspresi yang dihubungkan oleh <strong id="a10-expressions-equations--id-academic--term-00013" data-source-id="term-00013">tanda sama dengan</strong>. Ketika Anda membaca kata-kata yang diwakili simbol-simbol dalam suatu persamaan, Anda memperoleh kalimat lengkap dalam bahasa Indonesia. Tanda sama dengan berfungsi sebagai predikat.</p></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><aside id="a10-expressions-equations--jv-conversation--fs-id1170655118064" data-source-id="fs-id1170655118064" class="note ">
+<h3>Persamaan</h3>
+<p id="a10-expressions-equations--jv-conversation--fs-id1170655170220" data-source-id="fs-id1170655170220"><strong id="a10-expressions-equations--jv-conversation--term-00014" data-source-id="term-00014">Persamaan</strong> kuwi rong wujud aljabar sing digandhengake nganggo tandha padha karo.</p>
+</aside></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><aside id="a10-expressions-equations--jv-academic--fs-id1170655118064" data-source-id="fs-id1170655118064" class="note ">
+<h3>Persamaan</h3>
+<p id="a10-expressions-equations--jv-academic--fs-id1170655170220" data-source-id="fs-id1170655170220"><strong id="a10-expressions-equations--jv-academic--term-00014" data-source-id="term-00014">Persamaan</strong> yaiku rong ekspresi sing digandhengake dening tandha padha karo.</p>
+</aside></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><aside id="a10-expressions-equations--id-academic--fs-id1170655118064" data-source-id="fs-id1170655118064" class="note ">
+<h3>Persamaan</h3>
+<p id="a10-expressions-equations--id-academic--fs-id1170655170220" data-source-id="fs-id1170655170220"><strong id="a10-expressions-equations--id-academic--term-00014" data-source-id="term-00014">Persamaan</strong> adalah dua ekspresi yang dihubungkan oleh tanda sama dengan.</p>
+</aside></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><p id="a10-expressions-equations--jv-conversation--fs-id1170655111405" data-source-id="fs-id1170655111405">Iki sawetara tuladha persamaan.</p></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><p id="a10-expressions-equations--jv-academic--fs-id1170655111405" data-source-id="fs-id1170655111405">Ing ngisor iki ana sawetara tuladha persamaan.</p></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><p id="a10-expressions-equations--id-academic--fs-id1170655111405" data-source-id="fs-id1170655111405">Berikut beberapa contoh persamaan.</p></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><table id="a10-expressions-equations--jv-conversation--fs-id1170655090988" data-source-id="fs-id1170655090988" aria-label="Tabel iki ana rong kolom lan nem larik. Larik paling ndhuwur isine judhul kolom. Kolom kapisan tulisane “Persamaan” lan kolom kapindho “Padanan Ukara Basa Indonesia”. Ing kolom “Persamaan” ana: 3, tandha tambah, 5, tandha padha karo, 8; n, tandha kurang, 1, tandha padha karo, 14; 6, tandha titik ping-pingan, 7, tandha padha karo, 42; x, tandha padha karo, 53; y, tandha tambah, 9, tandha padha karo, 2, y, tandha kurang, 3. Ing kolom “Padanan Ukara Basa Indonesia” ana padanan basa Jawa: “Gunggung telu lan lima padha karo wolu”, “n dikurangi siji padha karo patbelas”, “Asil ping-pingan enem lan pitu padha karo patang puluh loro”, “x padha karo sèket telu”, lan “y ditambah sanga padha karo loro y dikurangi telu”.">
+
+
+
+
+<thead>
+<tr>
+<th scope="col">Persamaan</th>
+<th scope="col">Padanan Ukara Basa Indonesia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>8</mn></mrow></math></td>
+<td>Gunggung telu lan lima padha karo wolu.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>14</mn></mrow></math></td>
+<td><em>n</em> dikurangi siji padha karo patbelas.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>·</mo><mn>7</mn><mo>=</mo><mn>42</mn></mrow></math></td>
+<td>Asil ping-pingan enem lan pitu padha karo patang puluh loro.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>=</mo><mn>53</mn></mrow></math></td>
+<td><em>x</em> padha karo sèket telu.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mn>9</mn><mo>=</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>3</mn></mrow></math></td>
+<td><em>y</em> ditambah sanga padha karo loro <em>y</em> dikurangi telu.</td>
+</tr>
+</tbody>
+
+</table></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><table id="a10-expressions-equations--jv-academic--fs-id1170655090988" data-source-id="fs-id1170655090988" aria-label="Tabel iki nduweni rong kolom lan nem larik. Larik kapisan ngemot irah-irahan saben kolom. Irah-irahan kolom kapisan yaiku “Persamaan” lan kolom kapindho “Padanan Ukara Basa Indonesia”. Ing kolom “Persamaan” ana persamaan: 3, tandha tambah, 5, tandha padha karo, 8; n, tandha kurang, 1, tandha padha karo, 14; 6, tandha titik ping-pingan, 7, tandha padha karo, 42; x, tandha padha karo, 53; y, tandha tambah, 9, tandha padha karo, 2, y, tandha kurang, 3. Ing kolom “Padanan Ukara Basa Indonesia” ana padanan basa Jawa: “Gunggung telu lan lima padha karo wolu”, “n dikurangi siji padha karo patbelas”, “Asil ping-pingan enem lan pitu padha karo patang puluh loro”, “x padha karo sèket telu”, lan “y ditambah sanga padha karo loro y dikurangi telu”.">
+
+
+
+
+<thead>
+<tr>
+<th scope="col">Persamaan</th>
+<th scope="col">Padanan Ukara Basa Indonesia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>8</mn></mrow></math></td>
+<td>Gunggung telu lan lima padha karo wolu.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>14</mn></mrow></math></td>
+<td><em>n</em> dikurangi siji padha karo patbelas.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>·</mo><mn>7</mn><mo>=</mo><mn>42</mn></mrow></math></td>
+<td>Asil ping-pingan enem lan pitu padha karo patang puluh loro.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>=</mo><mn>53</mn></mrow></math></td>
+<td><em>x</em> padha karo sèket telu.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mn>9</mn><mo>=</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>3</mn></mrow></math></td>
+<td><em>y</em> ditambah sanga padha karo loro <em>y</em> dikurangi telu.</td>
+</tr>
+</tbody>
+
+</table></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><table id="a10-expressions-equations--id-academic--fs-id1170655090988" data-source-id="fs-id1170655090988" aria-label="Tabel ini memiliki dua kolom dan enam baris. Baris pertama merupakan baris judul yang memberi label pada setiap kolom. Judul kolom pertama adalah “Persamaan” dan judul kolom kedua adalah “Kalimat Bahasa Indonesia”. Di bawah kolom “Persamaan” terdapat persamaan: 3, tanda tambah, 5, tanda sama dengan, 8; n, tanda kurang, 1, tanda sama dengan, 14; 6, tanda titik perkalian, 7, tanda sama dengan, 42; x, tanda sama dengan, 53; y, tanda tambah, 9, tanda sama dengan, 2, y, tanda kurang, 3. Di bawah kolom “Kalimat Bahasa Indonesia” terdapat kalimat: “Jumlah tiga dan lima sama dengan delapan”, “n kurang satu sama dengan empat belas”, “Hasil kali enam dan tujuh sama dengan empat puluh dua”, “x sama dengan lima puluh tiga”, dan “y tambah sembilan sama dengan dua y kurang tiga”.">
+
+
+
+
+<thead>
+<tr>
+<th scope="col">Persamaan</th>
+<th scope="col">Kalimat Bahasa Indonesia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>8</mn></mrow></math></td>
+<td>Jumlah tiga dan lima sama dengan delapan.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>14</mn></mrow></math></td>
+<td><em>n</em> kurang satu sama dengan empat belas.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>·</mo><mn>7</mn><mo>=</mo><mn>42</mn></mrow></math></td>
+<td>Hasil kali enam dan tujuh sama dengan empat puluh dua.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>=</mo><mn>53</mn></mrow></math></td>
+<td><em>x</em> sama dengan lima puluh tiga.</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mn>9</mn><mo>=</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>3</mn></mrow></math></td>
+<td><em>y</em> tambah sembilan sama dengan dua <em>y</em> kurang tiga.</td>
+</tr>
+</tbody>
+
+</table></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><div id="a10-expressions-equations--jv-conversation--fs-id1170654953357" data-source-id="fs-id1170654953357" class="example "><div id="a10-expressions-equations--jv-conversation--fs-id1170654953360" data-source-id="fs-id1170654953360">
+<div id="a10-expressions-equations--jv-conversation--fs-id1170655229951" data-source-id="fs-id1170655229951">
+<p id="a10-expressions-equations--jv-conversation--fs-id1170655162511" data-source-id="fs-id1170655162511">Saben wujud ing ngisor iki kalebu wujud aljabar utawa persamaan? Temtokna:</p>
+<p id="a10-expressions-equations--jv-conversation--fs-id1170655153999" data-source-id="fs-id1170655153999"><span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math> <span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math> <span>ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>÷</mo><mn>25</mn></mrow></math> <span>ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>40</mn></mrow></math></p>
+</div>
+<div id="a10-expressions-equations--jv-conversation--fs-id1170655111791" data-source-id="fs-id1170655111791" class="solution">
+<h3>Cara Ngrampungake</h3>
+<table id="a10-expressions-equations--jv-conversation--eip-10" data-source-id="eip-10" aria-label="Tabel iki nuduhake bedane wujud aljabar lan persamaan, karo tuladha lan katrangan kanggo saben jinis.">
+<tbody>
+  <tr>
+    <td><span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></math></td>
+    <td>Iki kuwi <em>persamaan</em>—rong wujud aljabar digandhengake nganggo tandha padha karo.</td>
+  </tr>
+
+<tr>
+    <td><span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></math></td>
+    <td>Iki kuwi <em>wujud aljabar</em>—ora ana tandha padha karo.</td>
+  </tr>
+
+<tr>
+    <td><span>ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>÷</mo><mn>25</mn></math></td>
+   <td>Iki kuwi <em>wujud aljabar</em>—ora ana tandha padha karo.</td>
+  </tr>
+
+<tr>
+    <td><span>ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>40</mn></math></td>
+    <td>Iki kuwi <em>persamaan</em>—rong wujud aljabar digandhengake nganggo tandha padha karo.</td>
+  </tr>
+</tbody>
+
+
+
+
+</table></div>
+</div>
+</div></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><div id="a10-expressions-equations--jv-academic--fs-id1170654953357" data-source-id="fs-id1170654953357" class="example "><div id="a10-expressions-equations--jv-academic--fs-id1170654953360" data-source-id="fs-id1170654953360">
+<div id="a10-expressions-equations--jv-academic--fs-id1170655229951" data-source-id="fs-id1170655229951">
+<p id="a10-expressions-equations--jv-academic--fs-id1170655162511" data-source-id="fs-id1170655162511">Temtokake apa saben wujud ing ngisor iki kalebu ekspresi utawa persamaan:</p>
+<p id="a10-expressions-equations--jv-academic--fs-id1170655153999" data-source-id="fs-id1170655153999"><span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math> <span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math> <span>ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>÷</mo><mn>25</mn></mrow></math> <span>ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>40</mn></mrow></math></p>
+</div>
+<div id="a10-expressions-equations--jv-academic--fs-id1170655111791" data-source-id="fs-id1170655111791" class="solution">
+<h3>Panyelesaian</h3>
+<table id="a10-expressions-equations--jv-academic--eip-10" data-source-id="eip-10" aria-label="Tabel iki mbedakake ekspresi matematika lan persamaan, sarta menehi tuladha lan katrangan kanggo saben jinis.">
+<tbody>
+  <tr>
+    <td><span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></math></td>
+    <td>Iki kalebu <em>persamaan</em>—rong ekspresi digandhengake dening tandha padha karo.</td>
+  </tr>
+
+<tr>
+    <td><span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></math></td>
+    <td>Iki kalebu <em>ekspresi</em>—ora ana tandha padha karo.</td>
+  </tr>
+
+<tr>
+    <td><span>ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>÷</mo><mn>25</mn></math></td>
+   <td>Iki kalebu <em>ekspresi</em>—ora ana tandha padha karo.</td>
+  </tr>
+
+<tr>
+    <td><span>ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>40</mn></math></td>
+    <td>Iki kalebu <em>persamaan</em>—rong ekspresi digandhengake dening tandha padha karo.</td>
+  </tr>
+</tbody>
+
+
+
+
+</table></div>
+</div>
+</div></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><div id="a10-expressions-equations--id-academic--fs-id1170654953357" data-source-id="fs-id1170654953357" class="example "><div id="a10-expressions-equations--id-academic--fs-id1170654953360" data-source-id="fs-id1170654953360">
+<div id="a10-expressions-equations--id-academic--fs-id1170655229951" data-source-id="fs-id1170655229951">
+<p id="a10-expressions-equations--id-academic--fs-id1170655162511" data-source-id="fs-id1170655162511">Tentukan apakah setiap bentuk berikut merupakan ekspresi atau persamaan:</p>
+<p id="a10-expressions-equations--id-academic--fs-id1170655153999" data-source-id="fs-id1170655153999"><span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math> <span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math> <span>ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>÷</mo><mn>25</mn></mrow></math> <span>ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>40</mn></mrow></math></p>
+</div>
+<div id="a10-expressions-equations--id-academic--fs-id1170655111791" data-source-id="fs-id1170655111791" class="solution">
+<h3>Penyelesaian</h3>
+<table id="a10-expressions-equations--id-academic--eip-10" data-source-id="eip-10" aria-label="Tabel ini membedakan ekspresi matematika dan persamaan, serta memberikan contoh dan penjelasan untuk setiap jenis.">
+<tbody>
+  <tr>
+    <td><span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></math></td>
+    <td>Ini adalah <em>persamaan</em>—dua ekspresi dihubungkan oleh tanda sama dengan.</td>
+  </tr>
+
+<tr>
+    <td><span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></math></td>
+    <td>Ini adalah <em>ekspresi</em>—tidak ada tanda sama dengan.</td>
+  </tr>
+
+<tr>
+    <td><span>ⓒ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>÷</mo><mn>25</mn></math></td>
+   <td>Ini adalah <em>ekspresi</em>—tidak ada tanda sama dengan.</td>
+  </tr>
+
+<tr>
+    <td><span>ⓓ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>40</mn></math></td>
+    <td>Ini adalah <em>persamaan</em>—dua ekspresi dihubungkan oleh tanda sama dengan.</td>
+  </tr>
+</tbody>
+
+
+
+
+</table></div>
+</div>
+</div></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><aside id="a10-expressions-equations--jv-conversation--fs-id1170655166808" data-source-id="fs-id1170655166808" class="note try">
+<div id="a10-expressions-equations--jv-conversation--fs-id1170654924234" data-source-id="fs-id1170654924234">
+<div id="a10-expressions-equations--jv-conversation--fs-id1170654924237" data-source-id="fs-id1170654924237">
+<p id="a10-expressions-equations--jv-conversation--fs-id1170655124883" data-source-id="fs-id1170655124883">Saben wujud ing ngisor iki kalebu wujud aljabar utawa persamaan? Temtokna: <span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>27</mn></mrow></math> <span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo stretchy="false">(</mo><mn>4</mn><mi>y</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mn>7</mn></mrow></math>.</p>
+</div>
+<div id="a10-expressions-equations--jv-conversation--fs-id1170655226888" data-source-id="fs-id1170655226888" class="solution"><h4><span lang="jv-Latn-ID">Wangsulan</span> / <span lang="id-ID">Jawaban</span></h4>
+<p id="a10-expressions-equations--jv-conversation--fs-id1170655120617" data-source-id="fs-id1170655120617"><span>ⓐ</span> persamaan <span>ⓑ</span> wujud aljabar</p>
+</div>
+</div>
+</aside></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><aside id="a10-expressions-equations--jv-academic--fs-id1170655166808" data-source-id="fs-id1170655166808" class="note try">
+<div id="a10-expressions-equations--jv-academic--fs-id1170654924234" data-source-id="fs-id1170654924234">
+<div id="a10-expressions-equations--jv-academic--fs-id1170654924237" data-source-id="fs-id1170654924237">
+<p id="a10-expressions-equations--jv-academic--fs-id1170655124883" data-source-id="fs-id1170655124883">Temtokake apa saben wujud ing ngisor iki kalebu ekspresi utawa persamaan: <span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>27</mn></mrow></math> <span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo stretchy="false">(</mo><mn>4</mn><mi>y</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mn>7</mn></mrow></math>.</p>
+</div>
+<div id="a10-expressions-equations--jv-academic--fs-id1170655226888" data-source-id="fs-id1170655226888" class="solution"><h4><span lang="jv-Latn-ID">Wangsulan</span> / <span lang="id-ID">Jawaban</span></h4>
+<p id="a10-expressions-equations--jv-academic--fs-id1170655120617" data-source-id="fs-id1170655120617"><span>ⓐ</span> persamaan <span>ⓑ</span> ekspresi</p>
+</div>
+</div>
+</aside></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><aside id="a10-expressions-equations--id-academic--fs-id1170655166808" data-source-id="fs-id1170655166808" class="note try">
+<div id="a10-expressions-equations--id-academic--fs-id1170654924234" data-source-id="fs-id1170654924234">
+<div id="a10-expressions-equations--id-academic--fs-id1170654924237" data-source-id="fs-id1170654924237">
+<p id="a10-expressions-equations--id-academic--fs-id1170655124883" data-source-id="fs-id1170655124883">Tentukan apakah setiap bentuk berikut merupakan ekspresi atau persamaan: <span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>27</mn></mrow></math> <span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo stretchy="false">(</mo><mn>4</mn><mi>y</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mn>7</mn></mrow></math>.</p>
+</div>
+<div id="a10-expressions-equations--id-academic--fs-id1170655226888" data-source-id="fs-id1170655226888" class="solution"><h4><span lang="jv-Latn-ID">Wangsulan</span> / <span lang="id-ID">Jawaban</span></h4>
+<p id="a10-expressions-equations--id-academic--fs-id1170655120617" data-source-id="fs-id1170655120617"><span>ⓐ</span> persamaan <span>ⓑ</span> ekspresi</p>
+</div>
+</div>
+</aside></article>
+</div>
+<div class="parallel">
+<article class="track" lang="jv-Latn-ID" data-register="jv-conversation"><div class="register">Basa Jawa padinan · ngoko</div><aside id="a10-expressions-equations--jv-conversation--fs-id1170655205588" data-source-id="fs-id1170655205588" class="note try">
+<div id="a10-expressions-equations--jv-conversation--fs-id1170655022136" data-source-id="fs-id1170655022136">
+<div id="a10-expressions-equations--jv-conversation--fs-id1170655027224" data-source-id="fs-id1170655027224">
+<p id="a10-expressions-equations--jv-conversation--fs-id1170655027226" data-source-id="fs-id1170655027226">Saben wujud ing ngisor iki kalebu wujud aljabar utawa persamaan? Temtokna: <span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>y</mi><mn>3</mn></msup><mo>÷</mo><mn>14</mn></mrow></math> <span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mi>x</mi><mo>−</mo><mn>6</mn><mo>=</mo><mn>22</mn></mrow></math>.</p>
+</div>
+<div id="a10-expressions-equations--jv-conversation--fs-id1170654959582" data-source-id="fs-id1170654959582" class="solution"><h4><span lang="jv-Latn-ID">Wangsulan</span> / <span lang="id-ID">Jawaban</span></h4>
+<p id="a10-expressions-equations--jv-conversation--fs-id1170654959584" data-source-id="fs-id1170654959584"><span>ⓐ</span> wujud aljabar <span>ⓑ</span> persamaan</p>
+</div>
+</div>
+</aside></article>
+<article class="track" lang="jv-Latn-ID" data-register="jv-academic"><div class="register">Basa Jawa akademik · rancangan</div><aside id="a10-expressions-equations--jv-academic--fs-id1170655205588" data-source-id="fs-id1170655205588" class="note try">
+<div id="a10-expressions-equations--jv-academic--fs-id1170655022136" data-source-id="fs-id1170655022136">
+<div id="a10-expressions-equations--jv-academic--fs-id1170655027224" data-source-id="fs-id1170655027224">
+<p id="a10-expressions-equations--jv-academic--fs-id1170655027226" data-source-id="fs-id1170655027226">Temtokake apa saben wujud ing ngisor iki kalebu ekspresi utawa persamaan: <span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>y</mi><mn>3</mn></msup><mo>÷</mo><mn>14</mn></mrow></math> <span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mi>x</mi><mo>−</mo><mn>6</mn><mo>=</mo><mn>22</mn></mrow></math>.</p>
+</div>
+<div id="a10-expressions-equations--jv-academic--fs-id1170654959582" data-source-id="fs-id1170654959582" class="solution"><h4><span lang="jv-Latn-ID">Wangsulan</span> / <span lang="id-ID">Jawaban</span></h4>
+<p id="a10-expressions-equations--jv-academic--fs-id1170654959584" data-source-id="fs-id1170654959584"><span>ⓐ</span> ekspresi <span>ⓑ</span> persamaan</p>
+</div>
+</div>
+</aside></article>
+<article class="track" lang="id-ID" data-register="id-academic"><div class="register">Bahasa Indonesia · teks sumber</div><aside id="a10-expressions-equations--id-academic--fs-id1170655205588" data-source-id="fs-id1170655205588" class="note try">
+<div id="a10-expressions-equations--id-academic--fs-id1170655022136" data-source-id="fs-id1170655022136">
+<div id="a10-expressions-equations--id-academic--fs-id1170655027224" data-source-id="fs-id1170655027224">
+<p id="a10-expressions-equations--id-academic--fs-id1170655027226" data-source-id="fs-id1170655027226">Tentukan apakah setiap bentuk berikut merupakan ekspresi atau persamaan: <span>ⓐ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>y</mi><mn>3</mn></msup><mo>÷</mo><mn>14</mn></mrow></math> <span>ⓑ</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mi>x</mi><mo>−</mo><mn>6</mn><mo>=</mo><mn>22</mn></mrow></math>.</p>
+</div>
+<div id="a10-expressions-equations--id-academic--fs-id1170654959582" data-source-id="fs-id1170654959582" class="solution"><h4><span lang="jv-Latn-ID">Wangsulan</span> / <span lang="id-ID">Jawaban</span></h4>
+<p id="a10-expressions-equations--id-academic--fs-id1170654959584" data-source-id="fs-id1170654959584"><span>ⓐ</span> ekspresi <span>ⓑ</span> persamaan</p>
+</div>
+</div>
+</aside></article>
+</div>
+<section class="note-box"><h2>Naskah audio</h2><ul>
+<li><span lang="jv-Latn-ID">Basa Jawa padinan · ngoko</span>: <a href="../audio/a10-expressions-equations.jv-conversation.md">Naskah</a> / <a href="../audio/a10-expressions-equations.jv-conversation.ssml">SSML</a></li>
+<li><span lang="jv-Latn-ID">Basa Jawa akademik · rancangan</span>: <a href="../audio/a10-expressions-equations.jv-academic.md">Naskah</a> / <a href="../audio/a10-expressions-equations.jv-academic.ssml">SSML</a></li>
+<li><span lang="id-ID">Bahasa Indonesia · teks sumber</span>: <a href="../audio/a10-expressions-equations.id-academic.md">Naskah</a> / <a href="../audio/a10-expressions-equations.id-academic.ssml">SSML</a></li>
+</ul></section><footer lang="en"><p>Unofficial AI-assisted adaptation of OpenStax through the Indonesian editions by KokunoYumeto. Rice University/OpenStax, CC BY-NC-SA 4.0, subject to inherited component notices. No endorsement. <a href="../../ATTRIBUTION.md">Full attribution and original notices</a>.</p><p>US dollars, source mathematical notation, IDs and quantities are preserved. Native-language, visual, screen-reader and listening review remain pending.</p></footer></main></body></html>

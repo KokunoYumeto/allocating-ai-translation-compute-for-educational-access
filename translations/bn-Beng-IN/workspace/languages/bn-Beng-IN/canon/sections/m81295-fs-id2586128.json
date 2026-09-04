@@ -1,0 +1,48 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81295",
+  "section": "fs-id2586128",
+  "scope": "Third readiness note, including one signed-division problem, supplied answer and exact review link.",
+  "source_sha256": "c22d14bb2b833ed20ea5a7aa95d0e50b7810e8930834bd61993b8431dcfd02c3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR01", "TR05"],
+      "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv:TR01,TR05", "languages/bn-Beng-IN/terminology.tsv:T026-T028", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png"],
+      "decision": "The ledger directly supports ভাগফল/ভাজক, while the concise link label পূর্ণসংখ্যার ভাগ is editorial. Preserve both negative signs and source result 4."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR01"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt:quotient/divisor passage", "languages/bn-Beng-IN/terminology.tsv:T026-T028"],
+      "decision": "Use direct ভাগ করো wording and do not insert a sign-rule explanation absent from the readiness source."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": ["TR01"],
+      "read": ["exact source fs-id2586128 subtree", "languages/bn-Beng-IN/translations/m81295-fs-id2586128.bn-Beng-IN.cnxml"],
+      "decision": "Rechecked −36÷(−9)=4, all six IDs, two MathML roots and original m81278/fs-id1355068 routing."
+    },
+    {
+      "stage": "pre-closure evidence audit",
+      "examples": ["TR01", "TR05"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.png", "languages/bn-Beng-IN/terminology.tsv:T026-T028", "exact final fs-id2586128 reader"],
+      "decision": "A fresh OCR-and-page-image read confirmed TR01's ভাগফল/ভাগশেষ/ভাজক register and TR05's concise operation wording. It does not supply a direct ভাজ্য witness. No learner-text change was needed: both negative signs and result 4 remain exact, while পূর্ণসংখ্যার ভাগ stays explicitly editorial rather than falsely attributed to TR05."
+    }
+  ],
+  "source_errata": [],
+  "checks": ["Exact arithmetic −36÷(−9)=4 checked independently; one question and one supplied answer preserved."],
+  "language_gaps": ["The exact integer-division link label is editorial; independent West Bengal teacher/language, learner and assistive-technology review is pending."],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "ca4a81fb618ed6a12149ee17317cf491826ec02327dbf854c604df9b20446c34",
+    "reader_sha256": "143c5ecb7a26aa6902e37fc9e03cb1869bbf1ebbf34d837ee13cc4507d106bd6",
+    "method": "Read-only build.translated and section renderer passed exact source tags, IDs, link attributes, MathML and English-prose gate.",
+    "nodes": 21,
+    "ids": 6,
+    "mathml": 2,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integrates the complete module and performs desktop/narrow visual review. Entire assignment continues; no independent publishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

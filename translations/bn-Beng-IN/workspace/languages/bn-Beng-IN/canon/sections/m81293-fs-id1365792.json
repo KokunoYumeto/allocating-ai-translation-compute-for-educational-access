@@ -1,0 +1,63 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81293",
+  "section": "fs-id1365792",
+  "resolved_title": "Convert Decimals to Fractions or Mixed Numbers",
+  "scope": "Entire source subtree: lunch conversion, general method with all nested steps, three-part worked example, both three-part practice exercises and every supplied solution,14original image descriptions and all3table accessibility descriptions.",
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "consultations": [
+    {"stage": "before drafting", "examples": ["TR08", "TR09", "TR02", "TR03"], "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv", "languages/bn-Beng-IN/terminology.tsv:T045-T049", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt", "provenance/modules/m81293.source.cnxml:entirefs-id1365792"], "decision": "Read complete decimal OCR and actual pages. The57table labels establish দশাংশ/শতাংশ/সহস্রাংশ with unit fractions1/10,1/100,1/1000. Use correct13.49explanation and correctly aligned0.456/123.478/4567.021rows; exclude wrongly shifted12.74row. TR09 requires zeros to remain and digits after the point to be read separately. TR03 supports লঘিষ্ঠ আকার; retain existing ledger মিশ্র ভগ্নাংশ rather than inventing a second term."},
+    {"stage": "during worked-example and method drafting", "examples": ["TR08", "TR02", "TR03"], "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:10-27", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt:10-25", "all14actual source rasters listed below"], "decision": "Reread actual denominator/place-value and simplest-form passages while drafting. Distinguish the place's unit value from the denominator100or1000. Explain286/1000reduction by dividing numerator and denominator by2, not by cancelling digits. Source general algorithm needs finite-decimal,zero-fractional-part and restored-sign qualifications; label these editorially. Actual3.7rasters have denominator10, contrary to one English aria statement."},
+    {"stage": "pre-QA", "examples": ["TR08", "TR09", "TR02", "TR03"], "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:10-27", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:1-15", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png"], "decision": "Check decimal places and leading/trailing zeros against actual canon again. Read the actual51fraction page:12/16→3/4is a valid reduction witness, but the unrelated mixed-conversion intermediate denominator3is erroneous and excluded. All9worked/practice answers pass exact rational checks. The zero-count rule is explicitly before reduction; no generalization to repeating or irrational decimal expansions is claimed."}
+  ],
+  "editorial_decisions": [
+    {"source_ids": ["fs-id1215329", "fs-id1406584"], "decision": "Keep original dollar/cent context and both$5.03MathMLmtext tokens; no currency conversion or replacement with rupees. Source values0.03=3/100and5.03=5+3/100remain exact."},
+    {"source_ids": ["fs-id1458244", "fs-id2173676"], "decision": "Retain exact source MathML punctuation and child order; Bengali clauses end around the unchanged decimal0.03period. Translate term-00003asদশমিক withinদশমিকঘর. Specify denominator zero count before simplification."},
+    {"source_ids": ["fs-id3424016", "eip-id1168468271407", "eip-id1168468271412"], "decision": "Use separate XPath text/tail slots for every nested step. The sign qualification applies to the whole final result, including a mixed number; it does not turn a negative mixed number into a positive integer minus a fraction. Integer-valued decimals are explicitly retained as integers."},
+    {"source_ids": ["eip-id1168468484466", "eip-id1168466515055", "eip-id1168468328458", "eip-id1168468662484"], "decision": "Numerator comes from the digits together as a number:09gives9,not90; leading zeros are not discarded from place counting. Explicit লব/হর in every fraction-bearing image description. Place labels শতাংশmean hundredths here, not a percentage-rate calculation."},
+    {"source_ids": ["eip-id1168468542202", "eip-id1168468461051", "eip-id1168468282077"], "decision": "Actual negative rasters have an external minus before the entire fraction. Preserve that scope. Mixed-number descriptions explicitly separate whole and fractional parts, using a labelled equivalent sum without claiming that a plus sign is drawn in the original image."},
+    {"source_ids": ["fs-id1945494", "fs-id1378833"], "decision": "Retain both3-part practice questions and their exact supplied MathML solutions. No missing solution is invented; this block has no source-absent solution."}
+  ],
+  "source_errata": [
+    {"kind": "source_domain_clarified", "source_ids": ["fs-id1166761338151", "fs-id3424016", "eip-id1168468271407", "eip-id1168468271412"], "source_issue": "The unqualified algorithm has a final digit and assumes a nonzero fractional part. Zero-left/nonzero-left alone does not distinguish proper fractions and mixed numbers for0.0or3.0, and the general steps omit restoring a negative sign to the entire result.", "bengali_correction": "সম্পাদকীয় স্পষ্টীকরণ: পদ্ধতিটি সসীম দশমিকের জন্য। ভগ্নাংশের অংশ শূন্য হলে ফল পূর্ণসংখ্যা; 3.0 = 3, 0.0 = 0। ঋণচিহ্ন সাময়িকভাবে আলাদা করে শেষে পুরো ফলের আগে রাখো।", "policy": "Qualify the general prose and steps visibly; retain every source equation, numerical answer, image and node.", "status": "preserved_with_warning"},
+    {"kind": "source_prose_clarified", "source_ids": ["eip-id1168468484466", "eip-id1168468662484", "fs-id2173676"], "source_issue": "The denominator instruction calls it the place value, although a hundredths place has unit value1/100and requires denominator100. The zero-count observation applies to the initial power-of-ten denominator, not necessarily the reduced denominator.", "bengali_correction": "হর হবে শেষ অঙ্কের স্থানের সঙ্গে সম্পর্কিত 10, 100, 1000 ইত্যাদি সংখ্যা; স্থানটির মান 1/10, 1/100 বা 1/1000 নয়। হরে শূন্যের সংখ্যার নিয়মটি লঘিষ্ঠ আকারে প্রকাশের আগের জন্য।", "policy": "Add a labelled explanation of the denominator and qualify the observation; do not change formulas or reduce source MathML silently.", "status": "preserved_with_warning"},
+    {"kind": "source_aria_corrected", "source_ids": ["eip-id1168468328458", "eip-id1168468606116"], "source_issue": "English table aria says3and7over100at an intermediate stage, but the actual image and correct answer show3and7over10.", "evidence": "Directly inspected CNX_BMath_Figure_05_01_015_img-04.png and015_img-05.png; both have denominator10.", "bengali_correction": "পূর্ণসংখ্যার অংশ 3, ভগ্নাংশের লব 7 ও হর 10।", "policy": "Correct Bengali accessibility text to the actual correct image and note the source-description mismatch; preserve original pixels and math.", "status": "preserved_with_warning"},
+    {"kind": "source_alt_corrected", "source_ids": ["eip-id1168469648572"], "source_issue": "English alt calls the4.09place-value image partially obscured, but the full number and both place labels are visible.", "evidence": "Directly inspected CNX_BMath_Figure_05_01_014_img-02.png:4.09withtenthsunder0andhundredthsunder9, unobscured.", "bengali_correction": "4.09 সংখ্যায় 0 দশাংশের স্থানে ও 9 শতাংশের স্থানে।", "policy": "Describe actual visible content without inheriting the unsupported obscuration claim; preserve source pixels.", "status": "preserved_with_warning"}
+  ],
+  "image_checks": [
+    {"files": ["CNX_BMath_Figure_05_01_014_img-01.png", "CNX_BMath_Figure_05_01_014_img-02.png", "CNX_BMath_Figure_05_01_014_img-03.png", "CNX_BMath_Figure_05_01_014_img-04.png", "CNX_BMath_Figure_05_01_014_img-05.png"], "observed": "All5actualimagesviewed:whole4with two fraction blanks; unobscured4.09and0tenths/9hundredths;4withnumerator9andblankdenominator;4and9/100;final4.09=4and9/100. OriginalEnglishlabels/So retained in pixels and described in Bengali."},
+    {"files": ["CNX_BMath_Figure_05_01_015_img-01.png", "CNX_BMath_Figure_05_01_015_img-02.png", "CNX_BMath_Figure_05_01_015_img-03.png", "CNX_BMath_Figure_05_01_015_img-04.png", "CNX_BMath_Figure_05_01_015_img-05.png"], "observed": "All5actualimagesviewed:whole3withfractionblanks;3.7and7tenths;3withnumerator7andblankdenominator;3and7/10;final3.7=3and7/10. No denominator100in these images."},
+    {"files": ["CNX_BMath_Figure_05_01_016_img-01.png", "CNX_BMath_Figure_05_01_016_img-02.png", "CNX_BMath_Figure_05_01_016_img-03.png", "CNX_BMath_Figure_05_01_016_img-04.png"], "observed": "All4actualimagesviewed:externalminuswithfractionblanks;−0.286with2tenths/8hundredths/6thousandths;externalminus286/1000;externalminus143/500. Numerators and denominators are positive, with minus outside each complete fraction."}
+  ],
+  "answer_checks": [
+    {"exercise_id": "fs-id2649727", "solution_id": "fs-id2217800", "check": "All3workedparts checked against actual rasters and exact rational arithmetic:4.09=4+9/100=409/100;3.7=3+7/10=37/10;−0.286=−286/1000=−143/500."},
+    {"exercise_id": "fs-id1945494", "solution_id": "fs-id2698167", "check": "Each decimal parsed from source problem MathML and each supplied mixed/fraction answer parsed from source solution MathML. Exact matches:5.3=5+3/10;6.07=6+7/100;−0.234=−117/500."},
+    {"exercise_id": "fs-id1378833", "solution_id": "fs-id3216932", "check": "Exact source-XML matches:8.7=8+7/10;1.03=1+3/100;−0.024=−3/125. Leading0in024retained in decimal-place count before reduction."}
+  ],
+  "language_gaps": ["TR08/TR09 attest decimal places and ordinary digit-by-digit reading; they do not directly provide this negative-decimal conversion algorithm or dollar example. Finite-decimal and signed-mixed-number boundary explanations remain labelled editorial reasoning, not invented local exemplars.", "Independent West Bengal teacher, language, learner and assistive-technology review remains pending. No curriculum certification or complete canon-topic coverage is claimed."],
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "b354e0b6cf5b414326e8960a99ed36c86c49e32bee83151958dacb9193a358ea",
+    "method": "Read-only build.translated and in-memory render_cnxml with study labels passed all source tag/ID/order/nonlocalized-attribute/MathML gates and English-prose gate. Exact source-XML rational arithmetic verifies both supplied3-part practice answers; actual images plus rational arithmetic verify all3worked parts. Introductory0.03and5.03equalities checked. Nine finite/sign/trailing-zero boundary checks pass:0.0,3.0,−3.0,4.090,−3.70,0.024,−0.024,123.478,4567.021. HTMLIDs unique. The initial local test evaluator treated mspace as a number before a minus and failed; ignoring nonsemantic mspace fixed the checker without altering source or overlay math.",
+    "nodes": 318,
+    "ids": 56,
+    "mathml": 30,
+    "paragraphs": 16,
+    "paragraph_mappings": 8,
+    "node_slot_mappings": 23,
+    "examples": 1,
+    "exercises": 3,
+    "supplied_solutions": 3,
+    "answer_parts_checked": 9,
+    "source_absent_solutions": 0,
+    "images": 14,
+    "unique_images_actually_inspected": 14,
+    "tables": 3,
+    "translated_aria_labels": 3,
+    "links": 0,
+    "html_fragment_characters": 16418,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent builds and reviews actual desktop/narrow page. Continue immediately with ownedm81293/fs-id943979decimalnumberline; entire assignment remains active. No independent publishing, shared-builder or media writes.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

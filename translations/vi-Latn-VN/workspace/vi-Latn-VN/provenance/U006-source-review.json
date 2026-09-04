@@ -1,0 +1,128 @@
+{
+  "unit": "A30-U006",
+  "source_sections": ["m49301/fs-id1165135435781", "m49301/fs-id1165137610952"],
+  "stop_before": "fs-id1165135545919",
+  "boundary_title": "Identifying Basic Toolkit Functions",
+  "source_module_sha256": {
+    "en": "f35932b5b8107fd527d50547adf00d3981860be5d6e981c1238041369b207612",
+    "id": "67678da7d3faa988d0c42a63ef15f140a2c0478610cd1fadc499fb749d55c77a"
+  },
+  "source_excerpt_sha256": "9cdcc826c40384f3a482a789b5e94f1893d226d6aea67a8dcaeb76b368506418",
+  "translation_sha256": "07029b9489ed2a2a60ed8e3b7ddda5be7a5a379d3d5c3fc1805b9e52e2447fec",
+  "computing_check_sha256": "21a09b0c74ce024f79f73d8ea6afd8e89a630329a049b42fc18554d180b3fa15",
+  "extraction_script_sha256": "9875367f096e78b5251475e223e97e6023c09a3f0e4fbda6ae3885be2710a9a0",
+  "scope_counts": {
+    "source_ids": 51,
+    "sections": 2,
+    "examples": 2,
+    "try_its": 2,
+    "problems": 4,
+    "solutions": 4,
+    "tables": 0,
+    "figures": 6,
+    "mathml": 15,
+    "notes": 4,
+    "paragraphs": 15,
+    "enumerated_lists": 2,
+    "source_internal_links": 12
+  },
+  "source_comparison": "All ordered source IDs match EN/ID. All 15 MathML expressions match exactly when prose tails are excluded. Both excerpt children equal their parsed pinned EN originals, including prose, child order and figure paths. The EN Figure012 JPEG is replaced by an ID-localized SVG in the Indonesian module; U006 uses the unedited admitted upstream JPEG.",
+  "checks": {
+    "command": "python -B vi-Latn-VN/computing/check_graph_tests.py",
+    "result": "pass",
+    "assertions": 111,
+    "source_structure_assertions": 87,
+    "finite_arithmetic_relation_assertions": 24,
+    "all_source_math_once": true,
+    "all_source_ids_explicit": true,
+    "source_excerpt_equals_pinned_sections": true,
+    "finite_samples_are_not_infinite_domain_proofs": true,
+    "reader_build": "pending root integration",
+    "visual_qa": "pending root integration",
+    "pandoc_inline_term_smoke_test": "Both raw span source IDs preserve bold Vietnamese term contents when parsed to HTML; no reader file written."
+  },
+  "integration_config": {
+    "slug": "A30-U006-graph-tests",
+    "source": "sources/m49301-graph-tests-source.cnxml",
+    "required_ids": ["fs-id1165135435781", "fs-id1165137610952", "term-00016", "term-00017", "Example_01_01_14", "Example_01_01_15", "ti_01_01_04", "ti_01_01_12", "fs-id1165135190052", "fs-id1165134258608", "fs-id1165135521259", "fs-id1165135255384", "Figure_01_01_011", "Figure_01_01_012", "Figure_01_01_013", "Figure_01_01_016", "Figure_01_01_017", "Figure_01_01_010"],
+    "numeric_checks": {"fs-id1165137637786": ["0", "2", "6", "1.", "0", "2", "6", "1"]},
+    "images": 6,
+    "source_examples": 2,
+    "try_it_exercises": 2,
+    "selected_end_exercises": 0,
+    "computing_check": "computing/check_graph_tests.py",
+    "minimum_canon_examples": 4,
+    "visual_receipt": "qa/visual-A30-U006.json",
+    "math_text": {},
+    "layout_adaptations": [
+      "Retain six original JPEGs and their nonmonotonic source numbering. Add Vietnamese alt text/captions; explain English labels rather than changing image bytes.",
+      "Place TryIt source answers in separately linked answer sections and label added reasoning."
+    ],
+    "visual": {
+      "anchors": ["fs-id1165135435781", "Figure_01_01_011", "Figure_01_01_012", "Example_01_01_14", "Figure_01_01_013", "Figure_01_01_016", "Figure_01_01_017", "fs-id1165137610952", "Example_01_01_15", "Figure_01_01_010", "fs-id1165135255384", "vi-attribution"],
+      "primary": "Figure_01_01_013",
+      "secondary": "Figure_01_01_017",
+      "answer": "fs-id1165134258608"
+    }
+  },
+  "inherited_asset_evidence": {
+    "path": "downloads/a30-edition/source-core/00_control/COMPONENT_RIGHTS.csv",
+    "sha256": "bf65bd2786396c18655610bafbcab148aaff9ad2f5294e18cf22aa6f6ec81e69",
+    "classification": "WORK_DEFAULT_UNCREDITED_ART",
+    "admission": "admitted",
+    "license_id": "CC-BY-NC-SA-4.0",
+    "attribution": "Copyright Rice University, OpenStax, under CC BY-NC-SA 4.0.",
+    "required_action": "Preserve work attribution, change notice, ShareAlike, and non-endorsement.",
+    "verification": "Read-only comparison of six exact upstream assets with inherited component rows, not a new supply audit. All six measured upstream hashes/byte counts match. Five originals also remain in ID source-core and match; Figure012 original is absent there because ID references its localized SVG."
+  },
+  "assets": [
+    {
+      "filename": "CNX_Precalc_Figure_01_01_011-659b.jpg",
+      "bytes": 111017,
+      "sha256": "f6ed8a5367c93d4f52a391b5f8f5d7ba985e004858617b0f173a60952560db0a",
+      "component_id": "rights:openstax-precalculus-2e:asset:d926a65899466739e44c46f9",
+      "source_figure": "Figure_01_01_011"
+    },
+    {
+      "filename": "CNX_Precalc_Figure_01_01_012-73a7.jpg",
+      "bytes": 108193,
+      "sha256": "23cd8ec3d95e53a51c0959ee2f14c76a5e0e4dcc012b3a584596c61320942c81",
+      "component_id": "rights:openstax-precalculus-2e:asset:e5caf6d31a03f57cb0c76b9d",
+      "source_figure": "Figure_01_01_012"
+    },
+    {
+      "filename": "CNX_Precalc_Figure_01_01_013abc-9102.jpg",
+      "bytes": 173360,
+      "sha256": "9fdb16a213935c93dcb865ad2927d782cad7fac92e84fbe66b0bc211b6029443",
+      "component_id": "rights:openstax-precalculus-2e:asset:05c89330dfafa2673ddc29b8",
+      "source_figure": "Figure_01_01_013"
+    },
+    {
+      "filename": "CNX_Precalc_Figure_01_01_016.jpg",
+      "bytes": 116221,
+      "sha256": "92b613349816caaa7ef1ee20a0b057a55eb70eb8d4add4004e482892f18a0c94",
+      "component_id": "rights:openstax-precalculus-2e:asset:6c09d8f71062ccabd8567ccf",
+      "source_figure": "Figure_01_01_016"
+    },
+    {
+      "filename": "CNX_Precalc_Figure_01_01_017-6d3f.jpg",
+      "bytes": 70649,
+      "sha256": "1f5cde1691e1a87577e5c616d4d21c500bae4a0fbd56f9b4497eb0ec236deef6",
+      "component_id": "rights:openstax-precalculus-2e:asset:c0ab34416bd660546f1dc144",
+      "source_figure": "Figure_01_01_017"
+    },
+    {
+      "filename": "CNX_Precalc_Figure_01_01_010-140f.jpg",
+      "bytes": 112120,
+      "sha256": "7454ef4646cb34210e5257b85fe565f6075594cf24e5300e74a67954c0f67d8e",
+      "component_id": "rights:openstax-precalculus-2e:asset:e3ad8de4a09d5436d72dee54",
+      "source_figure": "Figure_01_01_010"
+    }
+  ],
+  "material_decisions": [
+    "See canon/review-A30-U006.json material_decisions_for_root_log; append them to shared DECISIONS.md during root integration.",
+    "No shared registry, assets, notices, status, existing units, cleanup, download or commit was changed by this bounded subtask.",
+    "U006 remains a bounded unit within the full five-book Vietnamese self-study spine, not task completion."
+  ],
+  "native_speaker_review": "not_performed"
+}

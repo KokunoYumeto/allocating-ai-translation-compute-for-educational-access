@@ -1,0 +1,74 @@
+{
+  "schema": "jv-addition-source-bound-cnxml-v1",
+  "status": "complete_source_scope_generated_production_review_pending",
+  "unit": "a00-add-whole",
+  "program": "A00",
+  "module": "m81244",
+  "source_pins": {
+    "indonesian": {
+      "commit": "3de9207f56f8b5c57c017abf973fb04e00d740f1",
+      "blob": "370ebe055d992de6d7f4d8c60a2135cbcd299a16",
+      "sha256": "d23343f302c34436169e88ffdbc4eab37baabf0a3d1134755b2f5676c75e1cc6",
+      "bytes": 123306
+    },
+    "english": {
+      "commit": "38cae454e644abf9f0a623e876994553881597c9",
+      "blob": "1c3617fd0547029c883126348113f437395d718b",
+      "sha256": "b32058ce714e5fd43b010ccc81b2ae00a11567b229e9f96dda7b85b3cd82ba6b",
+      "bytes": 119141
+    }
+  },
+  "handoff_sha256": {
+    "rules": "a3146c9e6142adfaf146a96ae1ef21e5599092ec23c25b45b8a6a37bdbebe98f",
+    "edits": "d5c0c31ca0967cab5c48277a4662d6b28cafff663d6ef6ddee9d7fe4e9c73442"
+  },
+  "counts": {
+    "source_ids": 756,
+    "source_unique_ids": 756,
+    "mathml": 401,
+    "media": 50,
+    "tables": 21,
+    "prose_and_meaning_fixtures": 240,
+    "narration_blocks": 189,
+    "exercises": 129,
+    "supplied_solutions": 89,
+    "absent_solutions": 40,
+    "worked_titles": 15,
+    "untitled_solution_cues": 74,
+    "links": 8,
+    "circled_tokens": 44
+  },
+  "target_canonical_tree_sha256": {
+    "jv-academic": "3f92d5023715fe5a62ad27a2dc30f906e1b9bdd2db641c6c608ce5b2a1c3e97b",
+    "jv-conversation": "b6e64b79487a566f0c5b221ebc4cf4480d7af6dd0011bcb312dbcde5faa62033",
+    "id-academic": "b4524f54943f6a7beab957f01974563c855f584c1357eb27ab434325dd743459"
+  },
+  "numeric_exception": {
+    "count": 1,
+    "element_id": "fs-id2263429",
+    "attribute": "alt",
+    "source_asset_sha256": "86eabdbd452417939156e6a0c3cd2207f502b331eb02c521a7b0ecc8a9a54690",
+    "generic_numeric_bypass": false
+  },
+  "complete_source_scope": true,
+  "whole_assignment_complete": false,
+  "human_language_review": "pending",
+  "screen_reader_review": "pending",
+  "synthesized_audio_files": 0,
+  "content_files": {
+    "provenance/a00-add-whole.en.cnxml": "b32058ce714e5fd43b010ccc81b2ae00a11567b229e9f96dda7b85b3cd82ba6b",
+    "translation/a00-add-whole.id-academic.cnxml": "d23343f302c34436169e88ffdbc4eab37baabf0a3d1134755b2f5676c75e1cc6",
+    "translation/a00-add-whole.jv-academic.cnxml": "1e316bc630cb7a837d174917a39dd6b34a1f1005d15d072b04398ca3b7caca97",
+    "translation/a00-add-whole.jv-conversation.cnxml": "8583b994f0434d065190bdbe77d5e1f8f548a15bae4852490ef2a0168ee774d4"
+  },
+  "checks": [
+    "exact_ID_and_EN_source_bytes_and_tree_pins",
+    "exact_phrase_ledger_replay_for_both_Javanese_tracks",
+    "all_756_unique_IDs_in_source_order",
+    "all_401_MathML_roots",
+    "50_media_21_tables_129_exercises_89_supplied_40_absent_solutions",
+    "74_untitled_solution_boundaries",
+    "25_mover_and_17_munder_nodes",
+    "single_exact_ID_attribute_old_phrase_and_asset_hash_numeric_exception"
+  ]
+}

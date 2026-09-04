@@ -1,0 +1,1424 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml" xml:lang="gu-Gujr-IN">
+<title>સમાનતાના બાદબાકી અને સરવાળાના ગુણધર્મો વડે સમીકરણો ઉકેલો</title>
+<metadata>
+  <md:content-id>m81271</md:content-id>
+  <md:title>સમાનતાના બાદબાકી અને સરવાળાના ગુણધર્મો વડે સમીકરણો ઉકેલો</md:title>
+  <md:abstract><para id="para-00001">આ વિભાગના અંતે તમે:</para>
+<list id="list-00001">
+<item>સંખ્યા સમીકરણનો ઉકેલ છે કે નહીં તે નક્કી કરી શકશો</item>
+<item>સમાનતાના બાદબાકીના ગુણધર્મને નમૂના દ્વારા દર્શાવી શકશો</item>
+<item>સમાનતાના બાદબાકીના ગુણધર્મ વડે સમીકરણો ઉકેલી શકશો</item>
+<item>સમાનતાના સરવાળાના ગુણધર્મ વડે સમીકરણો ઉકેલી શકશો</item>
+<item>શબ્દસમૂહોને બીજગણિતનાં સમીકરણોમાં ફેરવી શકશો</item>
+<item>સમીકરણ બનાવીને ઉકેલી શકશો</item>
+</list></md:abstract>
+  <md:uuid>f0e638b1-8ef3-4895-b033-18aa6d0d3564</md:uuid>
+</metadata>
+
+<content>
+<note id="fs-id2787645" class="be-prepared">
+<para id="fs-id2217601">શરૂઆત કરતાં પહેલાં તૈયારી તપાસવાના આ પ્રશ્નો ઉકેલો.</para>
+<exercise id="fs-idm337265888">
+<problem id="fs-idm320393680">
+<para id="fs-idm348587568"><m:math><m:mrow><m:mtext> કિંમત શોધો: </m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mspace width="0.2em" /><m:mtext> જ્યારે </m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>11</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline />જો આ પ્રશ્નનો જવાબ ન મળ્યો હોય, તો ફરી જુઓ <link target-id="fs-id2202625" document="m81270" />.</para>
+</problem>
+<solution id="fs-idm320458736">
+<para id="fs-idm325711344"><m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise></note>
+<note id="fs-id2787641" class="be-prepared">
+<exercise id="fs-idm325740560">
+<problem id="fs-idm323062208">
+<para id="fs-idm323063360"><m:math><m:mrow><m:mtext> કિંમત શોધો: </m:mtext><m:mspace width="0.2em" /><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext> જ્યારે </m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline />જો આ પ્રશ્નનો જવાબ ન મળ્યો હોય, તો ફરી જુઓ <link target-id="fs-id3218226" document="m81270" />.</para>
+</problem>
+<solution id="fs-idm345863072">
+<para id="fs-idm319409024"><m:math><m:mrow><m:mn>42</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise></note>
+<note id="fs-id3787645" class="be-prepared">
+<exercise id="fs-idm325850224">
+<problem id="fs-idm336011104">
+<para id="fs-idm324553728">બીજગણિતમાં ફેરવો: આ સંખ્યાઓનો તફાવત: <m:math><m:mi>x</m:mi></m:math> અને <m:math><m:mrow><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline />જો આ પ્રશ્નનો જવાબ ન મળ્યો હોય, તો ફરી જુઓ <link target-id="fs-id1563391" document="m81270" />.</para>
+</problem>
+<solution id="fs-idm319517968">
+<para id="fs-idm321341120"><m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="eip-10">કેટલાક લોકો આ શબ્દ સાંભળે: <emphasis effect="italics">બીજગણિત</emphasis>, ત્યારે તેમને સમીકરણો ઉકેલવાનો વિચાર આવે. સમીકરણો ઉકેલવાના ઉપયોગો અસંખ્ય છે અને તમામ વ્યવસાયો અને ક્ષેત્રોમાં થાય છે. આ વિભાગમાં આપણે સમીકરણો ઉકેલવાનું શરૂ કરીશું. પહેલાં મૂળભૂત સમીકરણો ઉકેલીશું, પછી અભ્યાસક્રમમાં આગળ વધતાં જુદા જુદા સ્વરૂપનાં સમીકરણો ઉકેલવાની કુશળતા વિકસાવીશું.</para><section id="fs-id2318611">
+<title>સંખ્યા સમીકરણનો ઉકેલ છે કે નહીં તે નક્કી કરો</title>
+<para id="fs-id1860947">સમીકરણ ઉકેલવું એટલે જાણે કોયડાનો જવાબ શોધવો. બીજગણિતનું સમીકરણ જણાવે છે કે બે પદાવલીઓ સમાન છે. સમીકરણ ઉકેલવું એટલે ચલની એવી કિંમતો નક્કી કરવી કે જેનાથી સમીકરણ સાચું વિધાન બને. સમીકરણને સાચું બનાવતી કોઈ પણ સંખ્યા તે સમીકરણનો <term id="term-00001">ઉકેલ</term> કહેવાય. એ જ કોયડાનો જવાબ છે!</para>
+<note id="fs-id2870911">
+<title>સમીકરણનો ઉકેલ</title>
+<para id="fs-id1833488">કોઈ <term id="term-00002">સમીકરણનો ઉકેલ</term> એ ચલની એવી કિંમત છે જે સમીકરણમાં મૂકતાં સાચું વિધાન મળે.</para><para id="fs-id1830388">સમીકરણનો ઉકેલ શોધવાની પ્રક્રિયાને સમીકરણ ઉકેલવું કહે છે.</para>
+</note>
+<para id="fs-id1631520">સમીકરણનો ઉકેલ શોધવો એટલે ચલની એવી કિંમત શોધવી કે જેનાથી સમીકરણ સાચું બને. શું તમે આ સમીકરણનો ઉકેલ ઓળખી શકો: <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>?</m:mo></m:mrow></m:math> જો તમે કહ્યું હોય <m:math><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo></m:mrow></m:math> તો તમે સાચા છો! આપણે કહીએ છીએ કે <m:math><m:mn>5</m:mn></m:math> આ સમીકરણનો ઉકેલ છે: <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math> કારણ કે આ સંખ્યા મૂકીએ: <m:math><m:mrow><m:mn>5</m:mn></m:mrow></m:math> આ ચલની જગ્યાએ: <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> તો મળેલું વિધાન સાચું છે.</para>
+<equation id="fs-id824719" class="unnumbered"><label /><m:math><m:mrow><m:mtable><m:mtr /><m:mtr><m:mtd columnalign="center"><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>7</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mover><m:mo>=</m:mo><m:mo>?</m:mo></m:mover><m:mn>7</m:mn></m:mtd></m:mtr><m:mtr /><m:mtr><m:mtd columnalign="center"><m:mspace width="3em" /><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>✓</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1221765">આ વિધાન: <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math> સાચું છે, તેથી આપણે જાણીએ છીએ કે <m:math><m:mn>5</m:mn></m:math> ખરેખર સમીકરણનો ઉકેલ છે.</para>
+<para id="fs-id2171617">આ પ્રતીક: <m:math><m:mrow><m:mover><m:mo>=</m:mo><m:mo>?</m:mo></m:mover></m:mrow></m:math> પૂછે છે કે સમીકરણની ડાબી બાજુ જમણી બાજુ બરાબર છે કે નહીં. જાણ્યા પછી આપણે તેને બરાબરની નિશાનીમાં <m:math><m:mrow><m:mtext>(=)</m:mtext></m:mrow></m:math> કે બરાબર નથી એવી નિશાનીમાં ફેરવી શકીએ: <m:math><m:mrow><m:mtext>(≠).</m:mtext></m:mrow></m:math></para>
+<note id="fs-id1560408" class="howto"><title>સંખ્યા સમીકરણનો ઉકેલ છે કે નહીં તે નક્કી કરો.</title><list id="eip-id1168468428753" list-type="enumerated" number-style="arabic" class="stepwise"><item>સમીકરણમાં ચલની જગ્યાએ આપેલી સંખ્યા મૂકો.</item>
+<item>સમીકરણની બંને બાજુની પદાવલીઓ સરળ કરો.</item>
+<item>મળેલું સમીકરણ સાચું છે કે નહીં તે નક્કી કરો.
+<list id="eip-409"><item>જો તે સાચું હોય, તો સંખ્યા ઉકેલ છે.</item>
+<item>જો તે સાચું ન હોય, તો સંખ્યા ઉકેલ નથી.</item></list></item></list></note><example id="fs-id2273418"><exercise id="fs-id1371062">
+<problem id="fs-id1987806">
+<para id="fs-id1628920"><m:math><m:mrow><m:mtext> નક્કી કરો કે </m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext> ઉકેલ છે કે નહીં આ સમીકરણનો: </m:mtext><m:mspace width="0.2em" /><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>17</m:mn><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1359334">
+<title>ઉકેલ</title>
+<table id="eip-id1168469790662" class="unnumbered unstyled" aria-label="ચિત્રમાં આપેલું સમીકરણ 6 x ઓછા 17 બરાબર 16 છે. xની જગ્યાએ 5 મૂકતાં 6 ગુણ્યા 5 ઓછા 17 બરાબર 16 મળે છે. શું આ સાચું છે? ડાબી બાજુ સરળ કરવા 6ને 5 વડે ગુણતાં 30 મળે છે. ડાબી બાજુ 30 ઓછા 17 એટલે 13 થાય છે. તેર બરાબર નથી જમણી બાજુના 16."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168465999211" alt="ચિત્રમાં રૈખિક બીજગણિતનું સમીકરણ 6x - 17 = 16 છે, જે સામાન્ય રીતે ચલ x માટે ઉકેલવામાં આવે છે. બીજગણિતના આ મૂળભૂત પ્રશ્નમાં ચલને એકલો રાખવાનો છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_017_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1168469595815" alt="સફેદ પૃષ્ઠભૂમિ પર લખાણ છે: xની જગ્યાએ 5 મૂકો. સંખ્યા 5 લાલ છે અને બાકી લખાણ ઘેરા લીલાશ પડતા વાદળી રંગનું છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_017_img-01.png" /></media></entry>
+    <entry><media id="eip-id1168469785741" alt="ગણિતનું સમીકરણ 6 x 5 - 17 ?= 16 છે; સંખ્યા 5 લાલ છે. પદાવલી પૂછે છે કે 6 ગુણ્યા 5માંથી 17 બાદ કરતાં 16 મળે છે કે નહીં. 6x5=30, 30-17=13. સંખ્યા 13, સંખ્યા 16 બરાબર નથી."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_017_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><media id="eip-id1168469588267" alt="સફેદ પૃષ્ઠભૂમિ પર ગણિતનું સમીકરણ 30 - 17 ?= 16 છે. પ્રશ્નચિહ્ન બરાબરની નિશાનીની સીધું ઉપર છે; તે બંને બાજુની સમાનતા અંગે પૂછે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_017_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry>બાદબાકી કરો.</entry>
+    <entry><media id="eip-id1168466314429" alt="ચિત્રમાં ગાણિતિક અસમતા છે: 13 બરાબર નથી 16."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_017_img-05.png" /></media></entry>
+  </row>
+
+</tbody>
+
+
+</tgroup>
+</table>
+<para id="fs-id2276677">તેથી <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> આ સમીકરણનો ઉકેલ નથી: <m:math><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>17</m:mn><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise></example><note id="fs-id2352945" class="try">
+<exercise id="fs-id2770627">
+<problem id="fs-id1566751">
+<para id="fs-id1883810"><m:math><m:mrow><m:mtext> શું </m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext> ઉકેલ છે આ સમીકરણનો: </m:mtext><m:mspace width="0.2em" /><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>16</m:mn><m:mtext>?</m:mtext></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2267802">
+<para id="fs-id1407056">ના</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171103053032" class="try">
+<exercise id="fs-id2436273">
+<problem id="fs-id1545133">
+<para id="fs-id2224356"><m:math><m:mrow><m:mtext> શું </m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em" /><m:mtext> ઉકેલ છે આ સમીકરણનો: </m:mtext><m:mspace width="0.2em" /><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>10</m:mn><m:mtext>?</m:mtext></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1242630">
+<para id="fs-id1683900">હા</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1458618"><exercise id="fs-id2390900">
+<problem id="fs-id2135781">
+<para id="fs-id1523310"><m:math><m:mrow><m:mtext> નક્કી કરો કે </m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em" /><m:mtext> ઉકેલ છે કે નહીં આ સમીકરણનો: </m:mtext><m:mspace width="0.2em" /><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1577751">
+<title>ઉકેલ</title>
+<para id="fs-id991491">અહીં ચલ સમીકરણની બંને બાજુ છે. આ સંખ્યા મૂકવી પડશે: <m:math><m:mn>2</m:mn></m:math> દરેક જગ્યાએ આ ચલના સ્થાને: <m:math><m:mrow><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math><newline />
+<table id="eip-id1168469647895" class="unnumbered unstyled" aria-label="ચિત્રમાં આપેલું સમીકરણ 6 y ઓછા 4 બરાબર 5 y ઓછા 2 છે. બંને બાજુ yની જગ્યાએ 2 મૂકો. સમીકરણ 6 ગુણ્યા 2 ઓછા 4 બરાબર 5 ગુણ્યા 2 ઓછા 2 થાય છે. શું આ સાચું છે? ડાબી બાજુ સરળ કરવા 6ને 2 વડે ગુણતાં 12 મળે છે. પછી 4 બાદ કરો 12માંથી, તો 8 મળે છે. જમણી બાજુ સરળ કરવા 5ને 2 વડે ગુણતાં 10 મળે છે. પછી 2 બાદ કરો 10માંથી, તો આઠ મળે છે. સમીકરણની બંને બાજુ 8 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168469593178" alt="બીજગણિતનું સમીકરણ દર્શાવેલું છે: 6y - 4 = 5y - 2."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_018_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1168469767225" alt="ચિત્રમાં સૂચના છે: yની જગ્યાએ 2 મૂકો. સંખ્યા 2 લાલ છે અને બાકી લખાણ વાદળી લીલા રંગનું છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_018_img-01.png" /></media></entry>
+    <entry><media id="eip-id1168469482228" alt="ગણિતનો પ્રશ્ન પૂછે છે કે 6(2) - 4 બરાબર છે કે નહીં 5(2) - 2. બંને બાજુ સરળ કરતાં 8 મળે છે, એટલે સમીકરણ સાચું છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_018_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><media id="eip-id1168469546267" alt="ગણિતનું સમીકરણ છે: 12 - 4 ?= 10 - 2. બે પદાવલીની સરખામણીમાં પ્રશ્નચિહ્ન અજાણ ક્રિયાચિહ્ન દર્શાવે છે. ઉકેલ 8 = 8 થશે, તેથી ?=ની જગ્યાએ બરાબરની નિશાની હોવી જોઈએ."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_018_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry>બાદબાકી કરો.</entry>
+    <entry><media id="eip-id1168466231403" alt="ચિત્રમાં સમીકરણ 8 = 8 પછી ખરાની નિશાની છે; તે વિધાન ગણિતની દૃષ્ટિએ સાચું હોવાનું દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_018_img-05.png" /></media></entry>
+  </row>
+
+</tbody>
+
+
+</tgroup>
+</table></para>
+<para id="fs-id1988839">આ કિંમત: <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> મૂકતાં સાચું સમીકરણ મળે છે, તેથી આપણે જાણીએ છીએ કે <m:math><m:mrow><m:mn>2</m:mn></m:mrow></m:math> આ સમીકરણનો ઉકેલ છે: <m:math><m:mrow><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+
+</example><note id="fs-id2758641" class="try">
+<exercise id="fs-id1806984">
+<problem id="fs-id1596586">
+<para id="fs-id2133568"><m:math><m:mrow><m:mtext> શું </m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext> ઉકેલ છે આ સમીકરણનો: </m:mtext><m:mspace width="0.2em" /><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mtext>?</m:mtext></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3002187">
+<para id="fs-id2284445">હા</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171102903379" class="try">
+<exercise id="fs-id1786081">
+<problem id="fs-id3242284">
+<para id="fs-id1807648"><m:math><m:mrow><m:mtext> શું </m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em" /><m:mtext> ઉકેલ છે આ સમીકરણનો: </m:mtext><m:mspace width="0.2em" /><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mtext>?</m:mtext></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3175929">
+<para id="fs-id1948577">હા</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id2756986"><title>સમાનતાના બાદબાકીના ગુણધર્મને નમૂના દ્વારા દર્શાવો</title><para id="fs-id1385343">સમીકરણ ઉકેલવાની પ્રક્રિયા કોયડો ઉકેલવા જેવી કેવી રીતે છે તે સમજવા નમૂનાનો ઉપયોગ કરીશું. પરબીડિયામાં શું છે તે અજાણ હોવાથી તે ચલ દર્શાવે છે; ગણતરીની દરેક ગોળી એક દર્શાવે છે.</para>
+<para id="fs-id1392559">ધારો કે કાલ્પનિક રેખા મેજને બે ભાગમાં વહેંચે છે. મેજની ડાબી બાજુ ત્રણ ગોળી અને એક પરબીડિયું તથા જમણી બાજુ આઠ ગોળી મૂકીએ, જેમ આ ચિત્રમાં છે: <link target-id="CNX_BMath_Figure_02_03_001" />. મેજની બંને બાજુ ગોળીઓની સંખ્યા સરખી છે, પરંતુ કેટલીક ગોળીઓ પરબીડિયામાં છુપાયેલી છે. પરબીડિયામાં કેટલી ગોળીઓ છે તે કહી શકો?</para>
+<figure id="CNX_BMath_Figure_02_03_001">
+<media id="fs-id1910217" alt="ચિત્ર ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલું છે. ડાબી બાજુ પરબીડિયું છે અને તેની નીચે ત્રણ ગોળી છે. જમણી બાજુ 8 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_001.jpg" />
+</media>
+</figure>
+<para id="fs-id2168681">પરબીડિયામાં કેટલી ગોળીઓ છે તે શોધવા મનમાં કયાં પગલાં લો છો? કદાચ તમે વિચારો છો: “પરબીડિયું એકલું રહે તે માટે ડાબી બાજુથી આ <m:math><m:mrow><m:mn>3</m:mn></m:mrow></m:math> ગોળી દૂર કરવી પડશે. ડાબી બાજુની આ <m:math><m:mrow><m:mn>3</m:mn></m:mrow></m:math> ગોળી જમણી બાજુની આટલી ગોળી સાથે જોડી બનાવે છે: <m:math><m:mrow><m:mn>3</m:mn></m:mrow></m:math> તેથી બંને બાજુથી તેમને દૂર કરી શકું. જમણી બાજુ પાંચ ગોળી બાકી રહે છે, એટલે પરબીડિયામાં આટલી ગોળી હોવી જોઈએ: <m:math><m:mrow><m:mn>5</m:mn></m:mrow></m:math> .” આ ચિત્ર <link target-id="CNX_BMath_Figure_02_03_002" /> આ પ્રક્રિયા દર્શાવે છે.</para>
+<figure id="CNX_BMath_Figure_02_03_002">
+<media id="fs-id4876998" alt="ચિત્ર બે ભાગમાં છે. ડાબે લંબચોરસ ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલો છે. તેની ડાબી બાજુ પરબીડિયું અને નીચે ત્રણ ગોળી છે. આ 3 ગોળીની આસપાસ લાલ વર્તુળ છે અને તીર લંબચોરસની બહાર તરફ છે. જમણી બાજુ 8 ગોળી છે. નીચેની 3 ગોળીની આસપાસ લાલ વર્તુળ છે અને તીર બહાર તરફ છે. વર્તુળમાં લીધેલી 3 ગોળી લંબચોરસની બંને બાજુથી દૂર કરતાં ચિત્રની જમણે નવો લંબચોરસ બને છે, જે પણ ઊભી રેખાથી બે ભાગમાં વહેંચાયેલો છે. તેની ડાબી બાજુ માત્ર પરબીડિયું છે અને જમણી બાજુ 5 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_002.jpg" />
+</media>
+</figure>
+<para id="fs-id1374964">આ પરિસ્થિતિ કયું બીજગણિતનું સમીકરણ દર્શાવે છે? મેજની દરેક બાજુ એક <term class="no-emphasis" id="term-00003">પદાવલી</term> દર્શાવે છે અને વચ્ચેની રેખા બરાબરની નિશાનીનું સ્થાન લે છે. પરબીડિયાની અંદરની ગોળીઓની સંખ્યાને કહીશું <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> તેથી મેજની ડાબી બાજુ ગોળીઓની સંખ્યા છે: <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> મેજની જમણી બાજુ છે <m:math><m:mn>8</m:mn></m:math> ગોળી. આપણને કહેવાયું છે કે <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mn>8</m:mn></m:math> તેથી આપણું સમીકરણ છે:<m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<figure id="CNX_BMath_Figure_02_03_001_1">
+<media id="fs-id1494384" alt="ચિત્ર ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલું છે. ડાબી બાજુ પરબીડિયું છે અને તેની નીચે ત્રણ ગોળી છે. જમણી બાજુ 8 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_001.jpg" />
+</media>
+</figure>
+<equation id="fs-id1603080" class="unnumbered"><label /><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow></m:math></equation>
+<para id="fs-id2691459">પરબીડિયામાં કેટલી ગોળીઓ છે તે શોધવા લીધેલાં પગલાં બીજગણિતમાં લખીએ.</para>
+
+<table id="eip-id1168467162379" class="unnumbered unstyled" aria-label="ચિત્રની પહેલી પંક્તિમાં x વત્તા ત્રણ બરાબર આઠ છે. પછીની પંક્તિ કહે છે: પહેલાં દરેક બાજુથી ત્રણ દૂર કરી. એ જ પંક્તિની બાજુમાં x વત્તા ત્રણ ઓછા ત્રણ બરાબર આઠ ઓછા ત્રણ છે. દૂર કરેલા ત્રણ લાલ છે. પછીની પંક્તિ કહે છે: પછી પાંચ બાકી રહી. એ જ પંક્તિની બાજુમાં x બરાબર પાંચ છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168468629044" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં ગણિતનું સમીકરણ x + 3 = 8 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_019_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>પહેલાં દરેક બાજુથી ત્રણ દૂર કરી.</entry>
+    <entry><media id="eip-id1168467253924" alt="સમીકરણ x + 3 = 8માં xને એકલો રાખવા બંને બાજુથી 3 બાદ કરવામાં આવે છે: x + 3 - 3 = 8 - 3. બાદ કરેલા 3 લાલ છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_019_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>પછી પાંચ બાકી રહી.</entry>
+    <entry><media id="eip-id1168468315808" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં સમીકરણ x = 5 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_019_img-03.png" /></media></entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table>
+
+<para id="fs-id1368058">હવે ઉકેલ ચકાસીએ. મૂળ સમીકરણમાં આ સંખ્યા મૂકીશું: <m:math><m:mrow><m:mn>5</m:mn></m:mrow></m:math> આ ચલની જગ્યાએ: <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> અને સાચું વિધાન મળે છે કે નહીં તે જોઈશું.</para>
+<media id="fs-id2333262" alt="ચિત્રમાં મૂળ સમીકરણ x વત્તા 3 બરાબર 8 છે. ચકાસવા xની જગ્યાએ 5 મૂકો. સમીકરણ 5 વત્તા 3 બરાબર 8 બને છે. શું આ સાચું છે? ડાબી બાજુ 5 અને 3 ઉમેરતાં 8 મળે છે. બરાબરની નિશાનીની બંને બાજુ 8 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_020_img.jpg" />
+</media>
+<para id="fs-id1313477">આપણો ઉકેલ સાચો છે. પરબીડિયામાં પાંચ ગોળી અને બીજી ત્રણ ગોળી મળીને આઠ થાય.</para>
+<note id="eip-919" class="manipulative-math">વસ્તુઓની મદદથી ગણિત કરવાની પ્રવૃત્તિ “સમાનતાનો બાદબાકીનો ગુણધર્મ” કરવાથી આ ગુણધર્મ વડે સમીકરણો કેવી રીતે ઉકેલવાં તે વધુ સારી રીતે સમજાશે.</note><example id="fs-id1262704">
+<exercise id="fs-id2201230"><problem id="fs-id2455644">
+<para id="fs-id2296558">પરબીડિયાં અને ગણતરીની ગોળીઓના નમૂના પરથી સમીકરણ લખો, પછી તેને ઉકેલો:</para>
+<media id="fs-id1230119" alt="ચિત્ર ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલું છે. ડાબી બાજુ પરબીડિયું છે અને તેની નીચે 4 ગોળી છે. જમણી બાજુ 5 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_003_img.jpg" />
+</media>
+</problem>
+<solution id="fs-id2645331">
+<title>ઉકેલ</title>
+<para id="fs-id1236149"><table id="eip-id1168468230261" class="unnumbered unstyled" summary="પગલાંવાર વર્ણન અને ગાણિતિક રજૂઆત વડે રૈખિક સમીકરણ x + 4 = 5 બનાવવાની અને આંશિક રીતે ઉકેલવાની પ્રક્રિયા દર્શાવે છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>ડાબી બાજુ લખો <m:math><m:mi>x</m:mi></m:math> પરબીડિયાની અંદરની ગોળીઓની સંખ્યા માટે, પછી આ <m:math><m:mn>4</m:mn></m:math> ગોળી ઉમેરો, તેથી મળે <m:math><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:math>.</entry>
+    <entry><m:math><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>જમણી બાજુ છે <m:math><m:mn>5</m:mn></m:math> ગોળી.</entry>
+    <entry><m:math><m:mn>5</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>બંને બાજુ સમાન છે.</entry>
+    <entry><m:math><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>5</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>સમીકરણ ઉકેલવા આટલી <m:math><m:mn>4</m:mn></m:math> ગોળી દરેક બાજુથી બાદ કરો.</entry>
+    <entry />
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+
+<media id="fs-id1572781" alt="ચિત્ર બે ભાગમાં છે. ડાબે લંબચોરસ ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલો છે. તેની ડાબી બાજુ પરબીડિયું અને નીચે 4 ગોળી છે. આ 4 ગોળીની આસપાસ લાલ વર્તુળ છે અને તીર લંબચોરસની બહાર તરફ છે. જમણી બાજુ 5 ગોળી છે. નીચેની 4 ગોળીની આસપાસ લાલ વર્તુળ છે અને તીર બહાર તરફ છે. વર્તુળમાં લીધેલી 4 ગોળી લંબચોરસની બંને બાજુથી દૂર કરતાં ચિત્રની જમણે નવો લંબચોરસ બને છે, જે પણ ઊભી રેખાથી બે ભાગમાં વહેંચાયેલો છે. તેની ડાબી બાજુ માત્ર પરબીડિયું છે અને જમણી બાજુ 1 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_005_img.jpg" />
+</media></para><para id="fs-id1496002">આપણે જોઈ શકીએ છીએ કે પરબીડિયામાં એક ગોળી છે. બીજગણિતમાં આ રીતે દર્શાવી શકાય:<newline />
+<media id="fs-id1727546" alt="ચિત્રમાં આપેલું સમીકરણ x વત્તા 4 બરાબર 5 છે. બંને બાજુથી 4 દૂર કરતાં x વત્તા 4 ઓછા 4 બરાબર 5 ઓછા 4 મળે છે. ડાબી બાજુ વત્તા 4 અને ઓછા 4ની અસર દૂર થતાં માત્ર x રહે છે. જમણે 5 ઓછા 4 એટલે 1. સમીકરણ x બરાબર 1 બને છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_021_img.jpg" />
+</media></para><para id="fs-id2196744">આ સંખ્યા મૂકો: <m:math><m:mrow><m:mn>1</m:mn></m:mrow></m:math> આ ચલની જગ્યાએ: <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> અને સમીકરણ ચકાસો.<newline />
+<media id="fs-id1545350" alt="ચિત્રમાં મૂળ સમીકરણ x વત્તા 4 બરાબર 5 છે. ચકાસવા xની જગ્યાએ 1 મૂકો. સમીકરણ 1 વત્તા 4 બરાબર 5 બને છે. શું આ સાચું છે? ડાબી બાજુ 1 અને 4 ઉમેરતાં 5 મળે છે. બરાબરની નિશાનીની બંને બાજુ 5 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_022_img.jpg" />
+</media></para><para id="fs-id1608821">આ કિંમત: <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> વિધાનને સાચું બનાવે છે, તેથી આપણે જાણીએ છીએ કે <m:math><m:mrow><m:mn>1</m:mn></m:mrow></m:math> ખરેખર ઉકેલ છે.</para>
+</solution>
+</exercise></example>
+<note id="fs-id1789752" class="try">
+<exercise id="fs-id1969582">
+<problem id="fs-id1258562">
+<para id="fs-id1385706">પરબીડિયાં અને ગણતરીની ગોળીઓના નમૂના પરથી સમીકરણ લખો, પછી તેને ઉકેલો:</para>
+<media id="fs-id1948644" alt="ચિત્ર ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલું છે. ડાબી બાજુ પરબીડિયું છે અને તેની નીચે એક ગોળી છે. જમણી બાજુ 7 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_004_img.jpg" />
+</media>
+</problem>
+<solution id="fs-id2485308">
+<para id="fs-id2199896"><emphasis effect="italics">x</emphasis> + 1 = 7; <emphasis effect="italics">x</emphasis> = 6</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171103028547" class="try">
+<exercise id="fs-id1282732">
+<problem id="fs-id2784884">
+<para id="fs-id1171104055789">પરબીડિયાં અને ગણતરીની ગોળીઓના નમૂના પરથી સમીકરણ લખો, પછી તેને ઉકેલો:</para>
+<media id="fs-id2609375" alt="ચિત્ર ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલું છે. ડાબી બાજુ પરબીડિયું છે અને તેની નીચે ત્રણ ગોળી છે. જમણી બાજુ 4 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_006_img.jpg" />
+</media>
+</problem>
+<solution id="fs-id1381518">
+<para id="fs-id2149515"><emphasis effect="italics">x</emphasis> + 3 = 4; <emphasis effect="italics">x</emphasis> = 1</para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id2587256">
+<title>સમાનતાના બાદબાકીના ગુણધર્મ વડે સમીકરણો ઉકેલો</title>
+<para id="fs-id1187044">સમીકરણ ઉકેલવા શું કરવું જોઈએ તેનો ખ્યાલ આપણા કોયડાથી મળ્યો. હેતુ સમીકરણની એક બાજુ ચલને એકલો રાખવાનો છે. અગાઉનાં ઉદાહરણમાં સમાનતાના બાદબાકીના ગુણધર્મનો ઉપયોગ કર્યો હતો. તે જણાવે છે કે સમીકરણની બંને બાજુથી સમાન રાશિ બાદ કરીએ તો પણ સમાનતા જળવાય છે.</para><note id="fs-id2784321">
+<title>સમાનતાનો બાદબાકીનો ગુણધર્મ</title>
+<para id="fs-id1390241">કોઈ પણ સંખ્યાઓ <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> અને <m:math><m:mrow><m:mi>c</m:mi><m:mo>,</m:mo></m:mrow></m:math> માટે, જો</para>
+<equation id="fs-id1973549" class="unnumbered"><label /><m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow></m:math></equation>
+<para id="fs-id2198035">તો</para>
+<equation id="fs-id1180287" class="unnumbered"><label /><m:math><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>c</m:mi></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1033570">જોડિયા ભાઈઓ એન્ડી અને બોબીનો વિચાર કરો. તેઓ <m:math><m:mrow><m:mn>17</m:mn></m:mrow></m:math> વર્ષના છે. એન્ડી કેટલા વર્ષનો હતો, આટલાં <m:math><m:mn>3</m:mn></m:math> વર્ષ પહેલાં? તેની ઉંમર આટલાં <m:math><m:mn>3</m:mn></m:math> વર્ષ ઓછી હતી આ ઉંમર કરતાં: <m:math><m:mrow><m:mn>17</m:mn><m:mo>,</m:mo></m:mrow></m:math> તેથી તેની ઉંમર હતી <m:math><m:mrow><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> એટલે કે <m:math><m:mrow><m:mn>14</m:mn><m:mo>.</m:mo></m:mrow></m:math> બોબીની ઉંમર કેટલી હતી, આટલાં <m:math><m:mn>3</m:mn></m:math> વર્ષ પહેલાં? ચોક્કસ તેની ઉંમર પણ <m:math><m:mrow><m:mn>14</m:mn></m:mrow></m:math> હતી. અત્યારે તેમની ઉંમર સમાન છે અને બંનેમાંથી સમાન રાશિ બાદ કરવાથી ઉંમર સમાન જ મળે છે, આટલાં <m:math><m:mn>3</m:mn></m:math> વર્ષ પહેલાં પણ.</para>
+<equation id="fs-id2319197" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<note id="fs-id1154339" class="howto"><title>સમાનતાના બાદબાકીના ગુણધર્મ વડે સમીકરણ ઉકેલો.</title><list id="eip-id1168469785635" list-type="enumerated" number-style="arabic" class="stepwise"><item>ચલને એક બાજુ એકલો રાખવા સમાનતાના બાદબાકીના ગુણધર્મનો ઉપયોગ કરો.</item>
+<item>સમીકરણની બંને બાજુની પદાવલીઓ સરળ કરો.</item>
+<item>ઉકેલ ચકાસો.</item></list></note><example id="fs-id1577877"><exercise id="fs-id2297687">
+<problem id="fs-id1633978">
+<para id="fs-id2661268">ઉકેલો: <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>17</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1851617">
+<title>ઉકેલ</title>
+<para id="fs-id1224334">સમાનતાના બાદબાકીના ગુણધર્મ વડે આ ચલને એકલો રાખીશું: <m:math><m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math><newline />
+
+<table id="eip-id1168467165114" class="unnumbered unstyled" aria-label="ચિત્રમાં સમીકરણ x વત્તા 8 બરાબર 17 છે. બંને બાજુથી 8 દૂર કરતાં x વત્તા 8 ઓછા 8 બરાબર 17 ઓછા 8 મળે છે. ડાબે વત્તા 8 અને ઓછા 8ની અસર દૂર થતાં માત્ર x રહે છે. જમણે 17 ઓછા 8 એટલે 9. સમીકરણ x બરાબર 9 થાય છે. મૂળ સમીકરણ x વત્તા 8 બરાબર 17 પર પાછા જઈએ. ચકાસવા xની જગ્યાએ 9 મૂકો. સમીકરણ 9 વત્તા 8 બરાબર 17 થાય છે. શું આ સાચું છે? ડાબે 9 અને 8 ઉમેરતાં 17 મળે છે. બરાબરની નિશાનીની બંને બાજુ 17 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168467165132" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં બીજગણિતનું સમીકરણ x + 8 = 17 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_023_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>બંને બાજુથી 8 બાદ કરો.</entry>
+    <entry><media id="eip-id1168468280626" alt="સમીકરણ x + 8 - 8 = 17 - 8 છે; તે ચલ xને એકલો રાખવા સમાનતાનો બાદબાકીનો ગુણધર્મ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_023_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>સરળ કરો.</entry>
+    <entry><media id="eip-id1168468280642" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં ગણિતનું સમીકરણ x = 9 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_023_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168468649748" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં બીજગણિતનું મૂળભૂત સમીકરણ x + 8 = 17 છે. સરવાળાના આ સાદા સમીકરણમાં ચલ x માટે ઉકેલ શોધવાનો છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_023_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168468649763" alt="ગણિતનું સમીકરણ 9 + 8 = 17 છે. સંખ્યા 9 લાલ છે અને બાકી સમીકરણ કાળું છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_023_img-05.png" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168466059155" alt="ચિત્રમાં સમીકરણ 17 = 17 પછી ખરાની નિશાની છે; તે વિધાન સાચું છે અને ચકાસેલું છે તેમ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_023_img-06.png" /></media></entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table></para>
+<para id="fs-id2377093">આ કિંમત: <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> આ સમીકરણને: <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>17</m:mn></m:mrow></m:math> સાચું વિધાન બનાવે છે, તેથી આપણે જાણીએ છીએ કે <m:math><m:mn>9</m:mn></m:math> સમીકરણનો ઉકેલ છે.</para>
+</solution>
+</exercise>
+
+</example><note id="fs-id3003345" class="try">
+<exercise id="fs-id2219199">
+<problem id="fs-id1374994">
+<para id="fs-id1584808">ઉકેલો:</para>
+<para id="fs-id1861953"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>19</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2388007">
+<para id="fs-id1378406"><emphasis effect="italics">x</emphasis> = 13</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171103164989" class="try">
+<exercise id="fs-id2778433">
+<problem id="fs-id1367176">
+<para id="fs-id1171104064052">ઉકેલો:</para>
+<para id="fs-id1738516"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>14</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1257384">
+<para id="fs-id1518395"><emphasis effect="italics">x</emphasis> = 5</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id2790427">
+<exercise id="fs-id588715"><problem id="fs-id1312387">
+<para id="fs-id2777883">ઉકેલો: <m:math><m:mrow><m:mn>100</m:mn><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>74</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1881603">
+<title>ઉકેલ</title>
+<para id="fs-id2472334">સમીકરણ ઉકેલવા ચલને હંમેશાં એકલો રાખવો પડે; તે કઈ બાજુ છે તેનાથી ફરક પડતો નથી. આ ચલને એકલો રાખવા: <m:math><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> આ સંખ્યા બાદ કરીશું: <m:math><m:mrow><m:mn>74</m:mn></m:mrow></m:math> બંને બાજુથી.<newline />
+
+<table id="eip-id1168467375696" class="unnumbered unstyled" aria-label="ચિત્રમાં આપેલું સમીકરણ 100 બરાબર y વત્તા 74 છે. બંને બાજુથી 74 દૂર કરતાં 100 ઓછા 74 બરાબર y વત્તા 74 ઓછા 74 મળે છે. ડાબે 100 ઓછા 74 એટલે 26. જમણે વત્તા 74 અને ઓછા 74ની અસર દૂર થતાં માત્ર y રહે છે. સમીકરણ 26 બરાબર y થાય છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168467375715" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં ગણિતનું સમીકરણ 100 = y + 74 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_024_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>બંને બાજુથી 74 બાદ કરો.</entry>
+    <entry><media id="eip-id1168467200982" alt="ગણિતનું સમીકરણ 100 - 74 = y + 74 - 74 છે. તે સમાનતાનો બાદબાકીનો ગુણધર્મ દર્શાવે છે: ચલ yને એકલો રાખવા બંને બાજુથી 74 બાદ કર્યા છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_024_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>સરળ કરો.</entry>
+    <entry><media id="eip-id1168467200999" alt="સાદી સફેદ પૃષ્ઠભૂમિ પર સ્પષ્ટ, વાંચી શકાય એવા અક્ષરમાં ગણિતનું સમીકરણ 26 = y છે; તે ચલ yને કિંમત 26 આપવાનું દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_024_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>આ સંખ્યા મૂકો: <m:math><m:mrow><m:mn>26</m:mn></m:mrow></m:math> આ ચલની જગ્યાએ: <m:math><m:mrow><m:mi>y</m:mi></m:mrow></m:math> અને ચકાસો.<newline />
+<media id="fs-id1334650" alt="ચિત્રમાં મૂળ સમીકરણ 100 બરાબર y વત્તા 74 છે. ચકાસવા yની જગ્યાએ 26 મૂકો. સમીકરણ 100 બરાબર 26 વત્તા 74 બને છે. શું આ સાચું છે? જમણી બાજુ 26 અને 74 ઉમેરતાં 100 મળે છે. બરાબરની નિશાનીની બંને બાજુ 100 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_025_img.jpg" />
+</media></entry>
+ <entry />
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</para><para id="fs-id2138708">આ કિંમત: <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>26</m:mn></m:mrow></m:math> આ સમીકરણને: <m:math><m:mrow><m:mn>100</m:mn><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>74</m:mn></m:mrow></m:math> સાચું વિધાન બનાવે છે, તેથી તેનો ઉકેલ મળી ગયો છે.</para>
+</solution>
+</exercise></example>
+<note id="fs-id1250962" class="try">
+<exercise id="fs-id4333660">
+<problem id="fs-id4121453">
+<para id="fs-id1312788">ઉકેલો:</para>
+<para id="fs-id1961156"><m:math><m:mrow><m:mn>95</m:mn><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>67</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1574021">
+<para id="fs-id2203135"><emphasis effect="italics">y</emphasis> = 28</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171103979933" class="try">
+<exercise id="fs-id1608295">
+<problem id="fs-id2295026">
+<para id="fs-id1171104451200">ઉકેલો:</para>
+<para id="fs-id1389787"><m:math><m:mrow><m:mn>91</m:mn><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>45</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1950811">
+<para id="fs-id1383288"><emphasis effect="italics">y</emphasis> = 46</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1710915">
+<title>સમાનતાના સરવાળાના ગુણધર્મ વડે સમીકરણો ઉકેલો</title>
+<para id="fs-id1630550">અત્યાર સુધી ઉકેલેલા દરેક સમીકરણની એક બાજુ ચલમાં સંખ્યા ઉમેરેલી હતી. ચલને એકલો રાખવા સરવાળાની અસર દૂર કરવા બાદબાકી વાપરી. </para><para id="eip-444">પણ ધારો કે ચલમાંથી કોઈ સંખ્યા બાદ કરેલી હોય એવું સમીકરણ છે, જેમ કે <m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math> ચલને એકલો રાખવા બાદબાકીની અસર દૂર કરવી છે, તેથી બંને બાજુ તે સંખ્યા ઉમેરીશું. </para><para id="eip-510">આપણે સમાનતાના સરવાળાના ગુણધર્મનો ઉપયોગ કરીએ છીએ. તે કહે છે કે સમીકરણની બંને બાજુ એક જ સંખ્યા ઉમેરવાથી સમાનતા બદલાતી નથી. તે સમાનતાના બાદબાકીના ગુણધર્મને મળતો આવે છે તે જુઓ.</para><note id="fs-id1826108"><title>સમાનતાનો સરવાળાનો ગુણધર્મ</title><para id="fs-id2294838">કોઈ પણ સંખ્યાઓ <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow></m:math> અને  <m:math><m:mrow><m:mi>c</m:mi></m:mrow></m:math> માટે, જો 
+</para><equation id="fs-id2498355" class="unnumbered"><label /><m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow></m:math></equation>
+<para id="fs-id1605677">તો
+</para><equation id="fs-id2164034" class="unnumbered"><label /><m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow></m:math></equation>
+</note><para id="fs-id1800228">યાદ છે, <m:math><m:mrow><m:mstyle fontweight="bold"><m:mn>17</m:mn></m:mstyle><m:mtext> વર્ષના </m:mtext></m:mrow></m:math> જોડિયા ભાઈઓ એન્ડી અને બોબી? દસ વર્ષ પછી પણ એન્ડીની ઉંમર બોબીની ઉંમર બરાબર હશે. બંનેની ઉંમર હશે: <m:math><m:mrow><m:mstyle fontweight="bold"><m:mn>27</m:mn></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1516669" class="unnumbered"><label /><m:math><m:mrow><m:mtable><m:mtr><m:mtd><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mn>10</m:mn></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1345376">બંને બાજુ એક જ સંખ્યા ઉમેરીએ તો પણ સમાનતા જાળવી શકીએ.</para>
+<note id="fs-id2160917" class="howto"><title>સમાનતાના સરવાળાના ગુણધર્મ વડે સમીકરણ ઉકેલો.</title><list id="eip-id1168469683666" list-type="enumerated" number-style="arabic" class="stepwise"><item>ચલને એક બાજુ એકલો રાખવા સમાનતાના સરવાળાના ગુણધર્મનો ઉપયોગ કરો.</item>
+<item>સમીકરણની બંને બાજુની પદાવલીઓ સરળ કરો.</item>
+<item>ઉકેલ ચકાસો.</item></list></note><example id="fs-id1946943"><exercise id="fs-id1572945">
+<problem id="fs-id2650155">
+<para id="fs-id2835021">ઉકેલો: <m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1168927">
+<title>ઉકેલ</title>
+<para id="fs-id1742215">આ ગુણધર્મ વાપરીશું: <term class="no-emphasis" id="term-00004">સમાનતાનો સરવાળાનો ગુણધર્મ</term> જેથી ચલને એકલો રાખી શકાય.<newline />
+
+
+<table id="eip-id1168467172615" class="unnumbered unstyled" aria-label="ચિત્રમાં આપેલું સમીકરણ x ઓછા 5 બરાબર 8 છે. બંને બાજુ 5 ઉમેરતાં x ઓછા 5 વત્તા 5 બરાબર 8 વત્તા 5 મળે છે. ડાબે ઓછા 5 વત્તા 5ની અસર દૂર થતાં માત્ર x રહે છે. જમણે 8 વત્તા 5 એટલે 13. સમીકરણ x બરાબર 13 થાય છે. મૂળ સમીકરણ x ઓછા 5 બરાબર 8 પર પાછા જઈએ. ચકાસવા xની જગ્યાએ 13 મૂકો. સમીકરણ 13 ઓછા 5 બરાબર 8 થાય છે. શું આ સાચું છે? ડાબે 5 બાદ કરો 13માંથી, તો 8 મળે છે. બરાબરની નિશાનીની બંને બાજુ 8 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168468457185" alt="સફેદ પૃષ્ઠભૂમિ પર ઘેરા ઘાટા અક્ષરમાં બીજગણિતનું સાદું સમીકરણ x - 5 = 8 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_026_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>બંને બાજુ 5 ઉમેરો.</entry>
+    <entry><media id="eip-id1168468458678" alt="ગણિતનું સમીકરણ x ઓછા 5 વત્તા 5 બરાબર 8 વત્તા 5 છે. તે સમાનતાનો સરવાળાનો ગુણધર્મ દર્શાવે છે: બંને બાજુ 5 ઉમેર્યા છે આ સમીકરણમાં: x - 5 = 8."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_026_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>સરળ કરો.</entry>
+    <entry><media id="eip-id1168468583330" alt="સફેદ પૃષ્ઠભૂમિ પર ગણિતનું સાદું સમીકરણ x = 13 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_026_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1168468424937" alt="ચિત્રમાં લખાણ છે: હવે ચકાસી શકીએ. ધારો કે x = 13. ગણિત કે પ્રશ્ન ઉકેલવાની પ્રક્રિયાના આ પગલામાં ઉકેલ ચકાસવા ચલની જગ્યાએ કિંમત મૂકાય છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_026_img-01.png" /></media></entry>
+<entry />
+</row>
+<row>
+    <entry><media id="eip-id1168467159677" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં ગણિતનું સમીકરણ x - 5 = 8 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_026_img-05.png" /></media></entry>
+<entry />
+  </row>
+<row>
+<entry><media id="eip-id4001695" alt="ગણિતનું સમીકરણ 13 - 5 =? 8 છે અને પ્રશ્નચિહ્ન બરાબરની નિશાનીની ઉપર છે. આ પદાવલી તપાસે છે કે તેરમાંથી પાંચ બાદ કરતાં ખરેખર આઠ મળે છે કે નહીં; વિધાન સાચું છે કારણ કે 13 - 5 બરાબર 8 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_026_img-06.png" /></media></entry>
+<entry />
+</row>
+<row>
+<entry><media id="eip-id1170577820256" alt="ગાણિતિક વિધાન 8 = 8 સાથે ખરાની નિશાની છે; તે સાચું હોવાનું કે ચકાસણી થયાનું દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_026_img-07.png" /></media></entry>
+<entry />
+</row>
+
+</tbody>
+
+
+</tgroup>
+</table></para></solution>
+</exercise></example><note id="fs-id1237354" class="try">
+<exercise id="fs-id1825523">
+<problem id="fs-id1494643">
+<para id="fs-id1722872">ઉકેલો:</para>
+<para id="fs-id1256604"><m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2481902">
+<para id="fs-id1886951"><emphasis effect="italics">x</emphasis> = 22</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171100737970" class="try">
+<exercise id="fs-id2993219">
+<problem id="fs-id2392334">
+<para id="fs-id1171104068904">ઉકેલો:</para>
+<para id="fs-id2646708"><m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1224854">
+<para id="fs-id1828632"><emphasis effect="italics">y</emphasis> = 4</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id2483241">
+<exercise id="fs-id2608765"><problem id="fs-id1216949">
+<para id="fs-id2175911">ઉકેલો: <m:math><m:mrow><m:mn>27</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>16</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2265822">
+<title>ઉકેલ</title>
+<para id="fs-id1366621">આ સંખ્યા ઉમેરીશું: <m:math><m:mrow><m:mn>16</m:mn></m:mrow></m:math> દરેક બાજુ, જેથી ચલને એકલો રાખી શકાય.<newline />
+<table id="eip-id1168468296088" class="unnumbered unstyled" aria-label="ચિત્રમાં આપેલું સમીકરણ 27 બરાબર a ઓછા 16 છે. બંને બાજુ 16 ઉમેરતાં 27 વત્તા 16 બરાબર a ઓછા 16 વત્તા 16 મળે છે. ડાબે 27 વત્તા 16 એટલે 43. જમણે ઓછા 16 વત્તા 16ની અસર દૂર થતાં માત્ર a રહે છે. સમીકરણ 43 બરાબર a થાય છે. મૂળ સમીકરણ 27 બરાબર a ઓછા 16 પર પાછા જઈએ. ચકાસવા aની જગ્યાએ 43 મૂકો. સમીકરણ 27 બરાબર 43 ઓછા 16 થાય છે. શું આ સાચું છે? જમણે 16 બાદ કરો 43માંથી, તો 27 મળે છે. બરાબરની નિશાનીની બંને બાજુ 27 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168468492596" alt="સફેદ પૃષ્ઠભૂમિની વચ્ચે ગણિતનું સમીકરણ 27 = a - 16 છે. બીજગણિતના આ મૂળભૂત પ્રશ્નમાં ચલ a માટે ઉકેલ શોધવાનો છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_027_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>દરેક બાજુ 16 ઉમેરો.</entry>
+    <entry><media id="eip-id1168468767272" alt="બીજગણિતનું સમીકરણ 27 + 16 = a - 16 + 16 છે. સફેદ પૃષ્ઠભૂમિ પર વત્તાની નિશાનીઓ અને જમણી બાજુની સંખ્યા 16 લાલ છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_027_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>સરળ કરો.</entry>
+    <entry><media id="eip-id1168467199278" alt="સફેદ પૃષ્ઠભૂમિ પર સમીકરણ 43 = a છે; તે ચલ aની કિંમત 43 હોવાનું દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_027_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1168468500212" alt="સફેદ પૃષ્ઠભૂમિ પર લખાણ છે: હવે ચકાસી શકીએ. ધારો કે q = 43. સંખ્યા 43 લાલ છે અને બાકી લખાણ ઘેરા વાદળી રાખોડી રંગનું છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_027_img-01.png" /></media></entry>
+    <entry><media id="eip-id1168468500223" alt="સાદી સફેદ પૃષ્ઠભૂમિ પર બીજગણિતનું મૂળભૂત સમીકરણ 27 = a - 16 છે. ચલ a માટે ઉકેલ શોધવાનો છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_027_img-05.png" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168468652576" alt="ગણિતનો પ્રશ્ન 27 ?= 43 - 16 છે. બરાબરની નિશાનીની ઉપર પ્રશ્નચિહ્ન છે, જે બંને બાજુ સમાન છે કે નહીં તે પૂછે છે. સંખ્યા 43 લાલ છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_027_img-06.png" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168467246998" alt="સંખ્યા 27 બરાબર 27 દર્શાવેલી છે, પછી ખરાની નિશાની છે જે સાચું હોવાનું કે સંમતિ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_027_img-07.png" /></media></entry>
+  </row>
+
+</tbody>
+
+
+</tgroup>
+</table>
+</para><para id="fs-id2238191">આ સમીકરણનો: <m:math><m:mrow><m:mn>27</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>16</m:mn></m:mrow></m:math> ઉકેલ છે: <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>43</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise></example>
+<note id="fs-id2669666" class="try">
+<exercise id="fs-id2200788">
+<problem id="fs-id2642569">
+<para id="fs-id2466508">ઉકેલો:</para>
+<para id="fs-id2905718"><m:math><m:mrow><m:mn>19</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>18</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1543060">
+<para id="fs-id2748358"><emphasis effect="italics">a</emphasis> = 37</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171104447365" class="try">
+<exercise id="fs-id2133093">
+<problem id="fs-id1807786">
+<para id="fs-id1171103015237">ઉકેલો:</para>
+<para id="fs-id2159632"><m:math><m:mrow><m:mn>27</m:mn><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>14</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id555739">
+<para id="fs-id2283895"><emphasis effect="italics">n</emphasis> = 41</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1549757">
+<title>શબ્દસમૂહોને બીજગણિતનાં સમીકરણોમાં ફેરવો</title>
+<para id="fs-id1029876">યાદ રાખો, સમીકરણમાં બે બીજગણિતની પદાવલીઓ વચ્ચે બરાબરની નિશાની હોય છે. તેથી બે શબ્દસમૂહો સમાન છે તેમ જણાવતું વાક્ય હોય તો તેને સમીકરણમાં ફેરવી શકીએ. આપણે એવા સૂચક શબ્દો શોધીએ જેનો અર્થ હોય <emphasis effect="italics">બરાબર</emphasis>. બરાબરની નિશાની દર્શાવતા કેટલાક શબ્દો છે:</para>
+<list id="fs-id2494527" list-type="bulleted" bullet-style="bullet">
+<item>બરાબર છે</item>
+<item>એટલું જ છે</item>
+<item>છે</item>
+<item>મળે છે</item>
+<item>હતું</item>
+<item>થશે</item>
+</list>
+<para id="fs-id2475540">વાક્યમાં આ અર્થ દર્શાવતા શબ્દોની આસપાસ ખાનું દોરવાથી મદદ મળી શકે: <emphasis effect="italics">બરાબર</emphasis> . આમ દરેક શબ્દસમૂહ પર અલગ ધ્યાન આપી શકો. પછી દરેક શબ્દસમૂહને પદાવલીમાં ફેરવો અને બરાબરની નિશાનીની બંને બાજુ લખો.</para>
+<para id="fs-id1534258">આપણે વાક્યોને બીજગણિતનાં સમીકરણોમાં ફેરવવાનો અભ્યાસ કરીશું. કેટલાક વાક્યો સંખ્યાઓ અંગેની મૂળભૂત હકીકતો હશે, જેમાં શોધવા માટે કોઈ ચલ નહીં હોય. કેટલાક વાક્યોમાંથી ચલવાળાં સમીકરણો બનશે. અત્યારે માત્ર શબ્દોને બીજગણિતમાં ફેરવવા પર ધ્યાન આપવાનું છે.</para>
+<example id="fs-id1585381">
+<exercise id="fs-id1524263"><problem id="fs-id1935641">
+<para id="fs-id1410434">વાક્યને બીજગણિતના સમીકરણમાં ફેરવો: આ સંખ્યાઓનો સરવાળો: <m:math><m:mn>6</m:mn></m:math> અને <m:math><m:mn>9</m:mn></m:math> બરાબર છે <m:math><m:mrow><m:mn>15</m:mn><m:mo>.</m:mo></m:mrow></m:math></para></problem>
+<solution id="fs-id1567415">
+<title>ઉકેલ</title>
+<para id="fs-id2785552">આ શબ્દ: <emphasis effect="italics">બરાબર છે</emphasis> જણાવે છે કે બરાબરની નિશાની 9 અને 15 વચ્ચે મૂકવાની છે.<newline />
+<table id="eip-id1168468614513" class="unnumbered unstyled" aria-label="ચિત્રમાં 2 સ્તંભ છે. ડાબે સૂચનાઓ છે અને જમણે શબ્દસમૂહો તથા પદાવલીઓ છે. ડાબી પહેલી પંક્તિ કહે છે: બરાબર દર્શાવતા શબ્દો શોધો. બાજુમાં છે: 6 અને 9નો સરવાળો બરાબર છે 15. બરાબરનો અર્થ દર્શાવવા “બરાબર છે”ની આસપાસ ખાનું છે. પછીની ડાબી પંક્તિ કહે છે: બરાબરની નિશાની લખો. હવે વાક્ય બને છે: 6 અને 9નો સરવાળો, બરાબરની નિશાની, 15. અગાઉના વિધાનના “બરાબર છે”માંથી નીચે પદાવલીની બરાબરની નિશાની તરફ તીર છે. પછીની પંક્તિ કહે છે: બરાબર દર્શાવતા શબ્દની ડાબી બાજુના શબ્દોને બીજગણિતની પદાવલીમાં ફેરવો. બાજુમાં અધૂરી પદાવલી 6 વત્તા 9 બરાબર ખાલી લીટી છે. છેલ્લી ડાબી પંક્તિ કહે છે: બરાબર દર્શાવતા શબ્દની જમણી બાજુના શબ્દોને બીજગણિતની પદાવલીમાં ફેરવો. બાજુમાં સંપૂર્ણ પદાવલી 6 વત્તા 9 બરાબર 15 છે."><label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>“બરાબર” દર્શાવતા શબ્દો શોધો.</entry>
+    <entry morerows="1"><media id="eip-id1168467129923" alt="“બરાબર છે”ને = વડે બદલવાનું દર્શાવે છે. “6 અને 9નો સરવાળો બરાબર છે 15” એ વિધાન “6 અને 9નો સરવાળો = 15” એ ગાણિતિક પદાવલી બને છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_032-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>= નિશાની લખો.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>જે શબ્દનો અર્થ છે <emphasis effect="italics">બરાબર</emphasis> તેની ડાબી બાજુના શબ્દોને બીજગણિતની પદાવલીમાં ફેરવો.</entry>
+    <entry><media id="eip-id1168468302171" alt="સફેદ પૃષ્ઠભૂમિ પર ગણિતનો સાદો પ્રશ્ન છે: સમીકરણ 6 + 9 = ___, જેમાં જવાબ માટે ખાલી જગ્યા છે. તે ઉકેલવાનો સરવાળો દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_032-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>જે શબ્દનો અર્થ છે <emphasis effect="italics">બરાબર</emphasis> તેની જમણી બાજુના શબ્દોને બીજગણિતની પદાવલીમાં ફેરવો.</entry>
+    <entry><media id="eip-id1168468630360" alt="સફેદ પૃષ્ઠભૂમિ પર ઘેરા વાદળી અક્ષરમાં સમીકરણ 6 + 9 = 15 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_032-03.png" /></media></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></para></solution>
+</exercise></example>
+<note id="fs-id2150330" class="try">
+<exercise id="fs-id2751334">
+<problem id="fs-id4337605">
+<para id="fs-id1885656">વાક્યને બીજગણિતના સમીકરણમાં ફેરવો:</para>
+<para id="fs-id2876785">આ સંખ્યાઓનો સરવાળો: <m:math><m:mrow><m:mn>7</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>6</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>13</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2647143">
+<para id="fs-id2431348">7 + 6 = 13</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171103108171" class="try">
+<exercise id="fs-id2379660">
+<problem id="fs-id1405404">
+<para id="fs-id1171104155886">વાક્યને બીજગણિતના સમીકરણમાં ફેરવો:</para>
+<para id="fs-id1559184">આ સંખ્યાઓનો સરવાળો: <m:math><m:mrow><m:mn>8</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>6</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>14</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2298265">
+<para id="fs-id1312230">8 + 6 = 14</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1951299"><exercise id="fs-id1714226">
+<problem id="fs-id2268477">
+<para id="fs-id2129414">વાક્યને બીજગણિતના સમીકરણમાં ફેરવો: આ સંખ્યાઓનું ગુણનફળ: <m:math><m:mn>8</m:mn></m:math> અને <m:math><m:mn>7</m:mn></m:math> બરાબર છે <m:math><m:mrow><m:mn>56</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2495895">
+<title>ઉકેલ</title>
+<para id="eip-375">આ શબ્દનું સ્થાન: <emphasis effect="italics">બરાબર છે</emphasis> જણાવે છે કે બરાબરની નિશાની 7 અને 56 વચ્ચે મૂકવાની છે.<newline />
+<table id="eip-id1168468415970" class="unnumbered unstyled" aria-label="ચિત્રમાં વાક્ય છે: 8 અને 7નું ગુણનફળ બરાબર છે 56. બરાબરનો અર્થ દર્શાવવા “બરાબર છે”ની આસપાસ ખાનું છે. હવે વાક્ય બને છે: 8 અને 7નું ગુણનફળ, બરાબરની નિશાની, 56. બરાબરની નિશાનીની ડાબી બાજુના શબ્દો, 8 અને 7નું ગુણનફળ, સંખ્યા 8, ગુણાકારનું ટપકું, સંખ્યા 7 તરીકે લખી શકાય. બરાબરની નિશાનીની જમણી બાજુ 56 છે. બીજગણિતનું સમીકરણ 8 ગુણ્યા 7 બરાબર 56 છે."><label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>“બરાબર” દર્શાવતા શબ્દો શોધો.</entry>
+    <entry morerows="1"><media id="eip-id1168468688564" alt="ચિત્ર બતાવે છે કે “8 અને 7નું ગુણનફળ બરાબર છે 56” જેવા વર્ણનાત્મક ગાણિતિક વિધાનમાં “બરાબર છે” એ બરાબરની નિશાની (=) જેટલો અર્થ ધરાવે છે. તેને “8 અને 7નું ગુણનફળ = 56” તરીકે દર્શાવ્યું છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_028_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>= નિશાની લખો.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>જે શબ્દનો અર્થ છે <emphasis effect="italics">બરાબર</emphasis> તેની ડાબી બાજુના શબ્દોને બીજગણિતની પદાવલીમાં ફેરવો.</entry>
+    <entry><media id="eip-id1168469476412" alt="સફેદ પૃષ્ઠભૂમિ પર ગણિતનું સમીકરણ 8 . 7 = _ છે. ગુણાકારના આ પ્રશ્નમાં 8 અને 7નું ગુણનફળ ભરવાનું છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_028_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>જે શબ્દનો અર્થ છે <emphasis effect="italics">બરાબર</emphasis> તેની જમણી બાજુના શબ્દોને બીજગણિતની પદાવલીમાં ફેરવો.</entry>
+    <entry><media id="eip-id1168469862456" alt="ચિત્રમાં ગુણાકારનું સમીકરણ 8 ગુણ્યા 7 બરાબર 56 છે; તેને ઘેરા વાદળી કે રાખોડી અક્ષરમાં 8, ટપકું, 7 = 56 તરીકે લખેલું છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_028_img-03.png" /></media></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></para></solution>
+</exercise></example><note id="fs-id1160008" class="try">
+<exercise id="fs-id1587742">
+<problem id="fs-id1510864">
+<para id="fs-id2454035">વાક્યને બીજગણિતના સમીકરણમાં ફેરવો:</para>
+<para id="fs-id1518700">આ સંખ્યાઓનું ગુણનફળ: <m:math><m:mn>6</m:mn></m:math> અને <m:math><m:mn>9</m:mn></m:math> બરાબર છે <m:math><m:mrow><m:mn>54</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1534921">
+<para id="fs-id1239721">6 ⋅ 9 = 54</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171103984330" class="try">
+<exercise id="fs-id1392031">
+<problem id="fs-id2306341">
+<para id="fs-id1171104423138">વાક્યને બીજગણિતના સમીકરણમાં ફેરવો:</para>
+<para id="fs-id2472565">આ સંખ્યાઓનું ગુણનફળ: <m:math><m:mrow><m:mn>21</m:mn></m:mrow></m:math> અને <m:math><m:mn>3</m:mn></m:math> બરાબર છે <m:math><m:mrow><m:mn>63</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1250276">
+<para id="fs-id2204763">21 ⋅ 3 = 63</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1336744">
+<exercise id="fs-id3242407"><problem id="fs-id2431867">
+<para id="fs-id2219042">વાક્યને બીજગણિતના સમીકરણમાં ફેરવો: આ રાશિઓના તફાવતના બમણા: <m:math><m:mi>x</m:mi></m:math> અને <m:math><m:mn>3</m:mn></m:math> બરાબર થાય <m:math><m:mrow><m:mn>18</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1408348">
+<title>ઉકેલ</title>
+<table id="eip-id1168469837874" class="unnumbered unstyled" aria-label="ચિત્રમાં વાક્ય છે: x અને 3ના તફાવતના બમણા કરતાં મળે 18. બરાબરનો અર્થ દર્શાવવા “મળે”ની આસપાસ ખાનું છે. બમણું એટલે 2 ગણા. x અને 3નો તફાવત એટલે x ઓછા 3. સમીકરણ બને છે: 2 ગુણ્યા, કૌંસ ખોલો, x ઓછા 3, કૌંસ બંધ કરો, બરાબર 18.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>“બરાબર” દર્શાવતા શબ્દો શોધો.</entry>
+    <entry><media id="eip-id1168469872323" alt="સફેદ પૃષ્ઠભૂમિ પર લખાણ છે: x અને 3ના તફાવતના બમણા કરતાં મળે 18. “મળે” શબ્દની આસપાસ પાતળો કાળો લંબચોરસ છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_029_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>મુખ્ય શબ્દો ઓળખો: <emphasis effect="italics">બમણું; … અને …નો તફાવત</emphasis>.</entry>
+    <entry><emphasis effect="italics">બમણું</emphasis> એટલે બે ગણા.</entry>
+  </row>
+  <row>
+    <entry>બીજગણિતમાં ફેરવો.</entry>
+    <entry><media id="eip-id1168469875178" alt="ચિત્ર શાબ્દિક પ્રશ્ન “x અને 3ના તફાવતના બમણા કરતાં મળે 18”ને બીજગણિતના સમીકરણ 2(x - 3) = 18માં ફેરવે છે અને અનુરૂપ ભાગો દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_029_img-02.png" /></media></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id2581584" class="try">
+<exercise id="fs-id1516593">
+<problem id="fs-id1371036">
+<para id="fs-id2669230">આપેલા વાક્યને બીજગણિતના સમીકરણમાં ફેરવો:</para>
+<para id="fs-id1969754">આ રાશિઓના તફાવતના બમણા: <m:math><m:mi>x</m:mi></m:math> અને <m:math><m:mn>5</m:mn></m:math> બરાબર થાય <m:math><m:mrow><m:mn>30</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1242400">
+<para id="fs-id1549286">2(<emphasis effect="italics">x</emphasis> − 5) = 30</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171104407111" class="try">
+<exercise id="fs-id1973694">
+<problem id="fs-id2200542">
+<para id="fs-id1171104406576">આપેલા વાક્યને બીજગણિતના સમીકરણમાં ફેરવો:</para>
+<para id="fs-id1285463">આ રાશિઓના તફાવતના બમણા: <m:math><m:mi>y</m:mi></m:math> અને <m:math><m:mn>4</m:mn></m:math> બરાબર થાય <m:math><m:mrow><m:mn>16</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2607122">
+<para id="fs-id2369854">2(<emphasis effect="italics">y</emphasis> − 4) = 16</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id2485751"><title>સમીકરણ બનાવો અને ઉકેલો</title><para id="fs-id1387277">હવે વાક્યોને બીજગણિતનાં સમીકરણોમાં ફેરવવાનો અને પછી તેમને ઉકેલવાનો અભ્યાસ કરીએ. સમાનતાના બાદબાકી અને સરવાળાના ગુણધર્મો વડે સમીકરણો ઉકેલીશું.</para>
+<example id="fs-id3177572">
+<exercise id="fs-id2646972"><problem id="fs-id1459467">
+<para id="fs-id1257761">સમીકરણ બનાવો અને ઉકેલો: ત્રણ ઉમેરતાં આ ચલમાં: <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> બરાબર થાય <m:math><m:mrow><m:mn>47</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2817739">
+<title>ઉકેલ</title>
+<table id="eip-id1168469829072" class="unnumbered unstyled" aria-label="સમીકરણ x વત્તા 3 બરાબર 47ની બંને બાજુથી 3 બાદ કરો. ડાબી બાજુ સરળ કરતાં માત્ર x રહે છે. જમણે 47 ઓછા 3 એટલે 44. સમીકરણ x બરાબર 44 થાય છે. મૂળ સમીકરણમાં xને 44 બરાબર મૂકીને ચકાસો. શું 44 વત્તા 3 બરાબર 47 છે? હા."><label />
+<tgroup cols="2"><colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<tbody>
+  <row>
+    <entry namest="c1" nameend="c2" />
+    <entry>ત્રણ ઉમેરતાં આ ચલમાં: <emphasis effect="italics">x</emphasis> બરાબર થાય 47.</entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">સમીકરણમાં ફેરવો.</entry>
+    <entry><media id="eip-id1168469856178" alt="સફેદ પૃષ્ઠભૂમિ પર ઘાટા, છેડા પર સેરિફ વગરના અક્ષરમાં બીજગણિતનું સાદું સમીકરણ x + 3 = 47 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_030_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">સમીકરણની બંને બાજુથી 3 બાદ કરો.</entry>
+    <entry><media id="eip-id1168469877445" alt="ગણિતનું સમીકરણ x + 3 - 3 = 47 - 3 છે. બંને બાજુથી બાદબાકી દર્શાવવા ડાબી બાજુનો બીજો 3 અને જમણી બાજુનો 3 લાલ છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_030_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">સરળ કરો.</entry>
+    <entry><media id="eip-id1168469857560" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં ગણિતનું સમીકરણ x = 44 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_030_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>ચકાસી શકીએ. ધારો કે <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>44</m:mn></m:math>.</entry>
+    <entry><media id="eip-id1168469858922" alt="સાદી સફેદ પૃષ્ઠભૂમિ પર ચલ xવાળું ગણિતનું સમીકરણ x + 3 = 47 છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_030_img-04.png" /></media></entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168466230668" alt="સમીકરણમાં 44 + 3 છે અને 47ની પહેલાંની બરાબરની નિશાની ઉપર પ્રશ્નચિહ્ન છે, જે ચકાસણી કરવાનું કહે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_030_img-05.png" /></media></entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168469871741" alt="સંખ્યા 47 બરાબર 47 છે અને પછી ખરાની નિશાની છે; તે ગાણિતિક વિધાન સાચું હોવાનું કે ચકાસણી થયાનું દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_030_img-06.png" /></media></entry>
+    <entry />
+  </row>
+</tbody>
+</tgroup>
+</table><para id="fs-id2579281">તેથી <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext /><m:mspace width="0.2em" /><m:mn>44</m:mn></m:mrow></m:math> ઉકેલ છે.</para>
+</solution>
+</exercise></example>
+<note id="fs-id817496" class="try">
+<exercise id="fs-id2198774">
+<problem id="fs-id1824716">
+<para id="fs-id1711042">સમીકરણ બનાવો અને ઉકેલો:</para>
+<para id="fs-id2281474">સાત ઉમેરતાં આ ચલમાં: <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> બરાબર થાય <m:math><m:mrow><m:mn>37</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1606959">
+<para id="fs-id1575179"><emphasis effect="italics">x</emphasis> + 7 = 37; <emphasis effect="italics">x</emphasis> = 30
+</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171104068967" class="try">
+<exercise id="fs-id1381605">
+<problem id="fs-id1579337">
+<para id="fs-id1171104462746">સમીકરણ બનાવો અને ઉકેલો:</para>
+<para id="fs-id1531703">અગિયાર ઉમેરતાં આ ચલમાં: <m:math><m:mrow><m:mi>y</m:mi></m:mrow></m:math> બરાબર થાય <m:math><m:mrow><m:mn>28</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1366335">
+<para id="fs-id1360051"><emphasis effect="italics">y</emphasis> + 11 = 28; <emphasis effect="italics">y</emphasis> = 17</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id2608792"><exercise id="fs-id1823280"><problem id="fs-id1627987">
+<para id="fs-id2279010">સમીકરણ બનાવો અને ઉકેલો: આ રાશિઓનો તફાવત: <m:math><m:mrow><m:mi>y</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>14</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>18</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2477953">
+<title>ઉકેલ</title>
+<table id="eip-id1168469862237" class="unnumbered unstyled" aria-label="ચિત્રમાં વાક્ય છે: y અને 14નો તફાવત બરાબર છે 18. બીજગણિતના સમીકરણમાં ફેરવતાં y ઓછા 14 બરાબર 18 મળે છે. બંને બાજુ 14 ઉમેરો. ડાબી બાજુ સરળ કરતાં y મળે છે અને જમણી બાજુ 18 વત્તા 14 એટલે 32. સમીકરણ y બરાબર 32 થાય છે. ચકાસવા સમીકરણમાં yની જગ્યાએ 32 મૂકો. શું 32 ઓછા 14 બરાબર 18 છે? હા."><label />
+<tgroup cols="2"><colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<tbody>
+  <row>
+    <entry namest="c1" nameend="c2" />
+    <entry>આ રાશિઓનો તફાવત: <emphasis effect="italics">y</emphasis> અને 14 બરાબર છે 18.</entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">સમીકરણમાં ફેરવો.</entry>
+    <entry><media id="eip-id1168469872181" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં ગણિતનું સમીકરણ y - 14 = 18 છે. બીજગણિતના આ મૂળભૂત પ્રશ્નમાં y અજાણ ચલ છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_031_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">બંને બાજુ 14 ઉમેરો.</entry>
+    <entry><media id="eip-id1168469871413" alt="ગણિતનું સમીકરણ y - 14 + 14 = 18 + 14 છે. બંને બાજુ ઉમેરાયેલી સંખ્યા 14 લાલ છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_031_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">સરળ કરો.</entry>
+    <entry><media id="eip-id1168469876646" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા અક્ષરમાં ગણિતનું સમીકરણ y = 32 છે. ચલ yને સંખ્યાત્મક કિંમત 32 બરાબર મૂકેલો છે; તે સાદી કિંમત સોંપણી કે અચળ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_031_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>ચકાસી શકીએ. ધારો કે <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>32</m:mn></m:math>.</entry>
+    <entry><media id="eip-id1168469868011" alt="સાદી સફેદ પૃષ્ઠભૂમિ પર ગણિતનું સમીકરણ y - 14 = 18 છે. બીજગણિતના આ મૂળભૂત પ્રશ્નમાં ચલ y માટે ઉકેલ શોધવાનો છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_031_img-04.png" /></media></entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168469877577" alt="ગણિતનું સમીકરણ 32 ઓછા 14, પછી ઉપર પ્રશ્નચિહ્નવાળી બરાબરની નિશાની અને 18 દર્શાવે છે; તે પૂછે છે કે 32 - 14 બરાબર છે કે નહીં 18."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_031_img-05.png" /></media></entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1168469877592" alt="ચિત્રમાં ગણિતની પદાવલી 18 = 18 પછી ખરાની નિશાની છે; તે સમાનતા સાચી હોવાનું કે ચકાસણી થયાનું પ્રતીક છે."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_03_031_img-06.png" /></media></entry>
+    <entry />
+  </row>
+</tbody>
+</tgroup>
+</table><para id="fs-id1243266">તેથી <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>32</m:mn></m:mrow></m:math> ઉકેલ છે.</para>
+</solution>
+</exercise></example><note id="fs-id2264886" class="try">
+<exercise id="fs-id1919754">
+<problem id="fs-id1863199">
+<para id="fs-id1474925">સમીકરણ બનાવો અને ઉકેલો:</para>
+<para id="fs-id1300995">આ રાશિઓનો તફાવત: <m:math><m:mrow><m:mi>z</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>17</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>37</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1684233">
+<para id="fs-id1311763"><emphasis effect="italics">z</emphasis> − 17 = 37; <emphasis effect="italics">z</emphasis> = 54</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171102996774" class="try">
+<exercise id="fs-id2280096">
+<problem id="fs-id1804195">
+<para id="fs-id1171103015369">સમીકરણ બનાવો અને ઉકેલો:</para>
+<para id="fs-id1549980">આ રાશિઓનો તફાવત: <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>45</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2135818">
+<para id="fs-id1294923"><emphasis effect="italics">x</emphasis> − 19 = 45; <emphasis effect="italics">x</emphasis> = 64</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1806468" class="media-2"><title>વધારાનાં ઑનલાઇન સંસાધનો જુઓ</title><list id="fs-id1379128" display="block"><item><link url="https://openstaxcollege.org/l/24Solveonestep">સરવાળા અને બાદબાકી વડે એક પગલામાં સમીકરણો ઉકેલવા</link></item>
+</list></note></section><section id="fs-id2199586" class="key-concepts">
+<title>મુખ્ય સંકલ્પનાઓ</title><list id="fs-id2692025" list-type="bulleted" bullet-style="bullet"><item><emphasis effect="strong">સંખ્યા સમીકરણનો ઉકેલ છે કે નહીં તે નક્કી કરો.</emphasis>
+<list id="eip-id1168262511558" list-type="enumerated" number-style="arabic" class="stepwise"><item>સમીકરણમાં ચલની જગ્યાએ આપેલી સંખ્યા મૂકો.</item>
+<item>સમીકરણની બંને બાજુની પદાવલીઓ સરળ કરો.</item>
+<item>મળેલું સમીકરણ સાચું છે કે નહીં તે નક્કી કરો. જો તે સાચું હોય, તો સંખ્યા ઉકેલ છે.</item></list>
+           જો તે સાચું ન હોય, તો સંખ્યા ઉકેલ નથી.
+</item>
+
+<item><emphasis effect="strong">સમાનતાનો બાદબાકીનો ગુણધર્મ</emphasis>
+<list id="eip-id1168263809757"><item>કોઈ પણ સંખ્યાઓ માટે: <m:math><m:mi>a</m:mi></m:math>, <m:math><m:mi>b</m:mi></m:math> અને   <m:math><m:mi>c</m:mi></m:math>,<table id="eip-466" class="unnumbered" aria-label="જો a = b, તો a - c = b - c">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>જો</entry>
+    <entry><m:math><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:math></entry>
+  </row>
+  <row>
+    <entry>તો</entry>
+    <entry><m:math><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>c</m:mi></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></item></list>
+</item>
+
+
+<item><emphasis effect="strong">સમાનતાના બાદબાકીના ગુણધર્મ વડે સમીકરણ ઉકેલો.</emphasis>
+<list id="eip-id1170196360074" list-type="enumerated" number-style="arabic" class="stepwise"><item> ચલને એક બાજુ એકલો રાખવા સમાનતાના બાદબાકીના ગુણધર્મનો ઉપયોગ કરો.</item>
+<item>સમીકરણની બંને બાજુની પદાવલીઓ સરળ કરો.</item>
+<item>ઉકેલ ચકાસો.</item></list></item>
+
+<item>
+<emphasis effect="strong">સમાનતાનો સરવાળાનો ગુણધર્મ</emphasis>
+<list id="eip-id1170195252335"><item>કોઈ પણ સંખ્યાઓ માટે: <m:math><m:mi>a</m:mi></m:math>, <m:math><m:mi>b</m:mi></m:math> અને   <m:math><m:mi>c</m:mi></m:math>,<table id="eip-id1170195252351" class="unnumbered" aria-label="જો a = b, તો a + c = b + c">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>જો</entry>
+    <entry><m:math><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:math></entry>
+  </row>
+  <row>
+    <entry>તો</entry>
+    <entry><m:math><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:math></entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></item></list> </item>
+
+<item><emphasis effect="strong">સમાનતાના સરવાળાના ગુણધર્મ વડે સમીકરણ ઉકેલો.</emphasis>
+<list id="eip-id1170195169760" list-type="enumerated" number-style="arabic" class="stepwise"><item>ચલને એક બાજુ એકલો રાખવા સમાનતાના સરવાળાના ગુણધર્મનો ઉપયોગ કરો.</item>
+<item>સમીકરણની બંને બાજુની પદાવલીઓ સરળ કરો.</item>
+<item>ઉકેલ ચકાસો.</item></list></item>
+</list></section>
+<section id="fs-id1270868" class="section-exercises">
+<section id="fs-id1522372" class="practice-perfect"><title>અભ્યાસથી નિપુણતા</title><para id="fs-id1523759"><emphasis effect="bold">સંખ્યા સમીકરણનો ઉકેલ છે કે નહીં તે નક્કી કરો</emphasis> </para><para id="eip-314">નીચેના અભ્યાસમાં આપેલી દરેક કિંમત સમીકરણનો ઉકેલ છે કે નહીં તે નક્કી કરો.</para><exercise id="fs-id1408737">
+<problem id="fs-id1345426">
+<para id="fs-id1570574"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>13</m:mn><m:mo>=</m:mo><m:mn>21</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168469873289" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>34</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id2744620">
+<para id="fs-id1886459"><list id="eip-id1168466488939" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> હા </item><item><span class="token">ⓑ</span> ના </item></list></para></solution>
+</exercise>
+<exercise id="fs-id1916911">
+<problem id="fs-id2130570">
+<para id="fs-id1377169"><m:math><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>18</m:mn><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168466488763" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>43</m:mn></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1970993">
+<problem id="fs-id2369081">
+<para id="fs-id1335442"><m:math><m:mrow><m:mi>m</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168469591241" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>17</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id1969345">
+<para id="fs-id2698234"><list id="eip-id1168469379972" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> ના</item><item><span class="token">ⓑ</span> હા</item></list></para></solution>
+</exercise>
+<exercise id="fs-id2280140">
+<problem id="fs-id1388718">
+<para id="fs-id2486209"><m:math><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168468413934" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1566412">
+<problem id="fs-id1458879">
+<para id="fs-id770342"><m:math><m:mrow><m:mn>3</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>15</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168469803191" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id1217136">
+<para id="fs-id1524414"><list id="eip-id1168468694368" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> હા</item><item><span class="token">ⓑ</span> ના</item></list></para></solution>
+</exercise>
+<exercise id="fs-id1266449">
+<problem id="fs-id2288047">
+<para id="fs-id1163980"><m:math><m:mrow><m:mn>8</m:mn><m:mi>q</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168467293919" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1950844">
+<problem id="fs-id1893504">
+<para id="fs-id1215611"><m:math><m:mrow><m:mn>18</m:mn><m:mi>d</m:mi><m:mo>−</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>27</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168469818214" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id1338993">
+<para id="fs-id1611433"><list id="eip-id1168469875888" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> ના</item><item><span class="token">ⓑ</span> હા</item></list></para></solution>
+</exercise>
+<exercise id="fs-id2453808">
+<problem id="fs-id2203129">
+<para id="fs-id1393877"><m:math><m:mrow><m:mn>24</m:mn><m:mi>f</m:mi><m:mo>−</m:mo><m:mn>12</m:mn><m:mo>=</m:mo><m:mn>60</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168467302339" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1822152">
+<problem id="fs-id2860844">
+<para id="fs-id2787621"><m:math><m:mrow><m:mn>8</m:mn><m:mi>u</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>u</m:mi><m:mo>+</m:mo><m:mn>40</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168468305837" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>11</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id1785128">
+<para id="fs-id1701593"><list id="eip-id1168467325322" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> ના</item><item><span class="token">ⓑ</span> હા</item></list></para></solution>
+</exercise>
+<exercise id="fs-id3406666">
+<problem id="fs-id1325302">
+<para id="fs-id1232396"><m:math><m:mrow><m:mn>7</m:mn><m:mi>v</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>v</m:mi><m:mo>+</m:mo><m:mn>36</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168468595037" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>v</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>v</m:mi><m:mo>=</m:mo><m:mn>11</m:mn></m:math></item></list></para></problem>
+</exercise>
+<exercise id="fs-id1172642">
+<problem id="fs-id1605093">
+<para id="fs-id1946633"><m:math><m:mrow><m:mn>20</m:mn><m:mi>h</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>15</m:mn><m:mi>h</m:mi><m:mo>+</m:mo><m:mn>35</m:mn></m:mrow></m:math>
+
+<list id="eip-id1168466464902" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id2375182">
+<para id="fs-id1375794"><list id="eip-id1168466277935" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> ના</item><item><span class="token">ⓑ</span> હા</item></list></para></solution>
+</exercise>
+<exercise id="fs-id1325636">
+<problem id="fs-id2754303">
+<para id="fs-id1334434"><m:math><m:mrow><m:mn>18</m:mn><m:mi>k</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>12</m:mn><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>33</m:mn></m:mrow></m:math><list id="eip-id1166640287015" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math></item></list></para></problem>
+</exercise>
+<para id="fs-id834757"><emphasis effect="bold">સમાનતાના બાદબાકીના ગુણધર્મને નમૂના દ્વારા દર્શાવો</emphasis> </para><para id="eip-559">નીચેના અભ્યાસમાં પરબીડિયાં અને ગણતરીની ગોળીઓના નમૂના પરથી સમીકરણ લખો, પછી સમાનતાના બાદબાકીના ગુણધર્મ વડે ઉકેલો.</para><exercise id="fs-id1612218">
+<problem id="fs-id4445443">
+<media id="fs-id1185520" alt="ચિત્ર ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલું છે. ડાબી બાજુ પરબીડિયું છે અને તેની નીચે 2 ગોળી છે. જમણી બાજુ 5 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_201_img.jpg" />
+</media>
+</problem>
+<solution id="fs-id2196740">
+<para id="fs-id2219763"><emphasis effect="italics">x</emphasis> + 2 = 5; <emphasis effect="italics">x</emphasis> = 3</para>
+</solution>
+</exercise>
+<exercise id="fs-id793398">
+<problem id="fs-id1893416">
+<media id="fs-id2382403" alt="ચિત્ર ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલું છે. ડાબી બાજુ પરબીડિયું છે અને તેની નીચે 4 ગોળી છે. જમણી બાજુ 7 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_202_img.jpg" />
+</media>
+</problem>
+</exercise>
+<exercise id="fs-id2587676">
+<problem id="fs-id1531346">
+<media id="fs-id1218100" alt="ચિત્ર ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલું છે. ડાબી બાજુ પરબીડિયું છે અને તેની નીચે ત્રણ ગોળી છે. જમણી બાજુ 6 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_203_img.jpg" />
+</media>
+</problem>
+<solution id="fs-id1201298">
+<para id="fs-id1367465"><emphasis effect="italics">x</emphasis> + 3 = 6; <emphasis effect="italics">x</emphasis> = 3</para>
+</solution>
+</exercise>
+<exercise id="fs-id1581991">
+<problem id="fs-id2221988">
+<media id="fs-id2650560" alt="ચિત્ર ઊભી રેખાથી બે સરખા ભાગમાં વહેંચાયેલું છે. ડાબી બાજુ પરબીડિયું છે અને તેની નીચે 5 ગોળી છે. જમણી બાજુ 9 ગોળી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_03_204_img.jpg" />
+</media>
+</problem>
+</exercise>
+<para id="fs-id1177027"><emphasis effect="bold">સમાનતાના બાદબાકીના ગુણધર્મ વડે સમીકરણો ઉકેલો</emphasis> </para><para id="eip-158">નીચેના અભ્યાસમાં સમાનતાના બાદબાકીના ગુણધર્મ વડે દરેક સમીકરણ ઉકેલો.</para><exercise id="fs-id2211729">
+<problem id="fs-id2433829">
+<para id="fs-id1580637"><m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>18</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2139457">
+<para id="fs-id1392901"><emphasis effect="italics">a</emphasis> = 16</para>
+</solution>
+</exercise>
+<exercise id="fs-id793756">
+<problem id="fs-id2778324">
+<para id="fs-id1609568"><m:math><m:mrow><m:mi>b</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2165378">
+<problem id="fs-id1184392">
+<para id="fs-id1606468"><m:math><m:mrow><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>18</m:mn><m:mo>=</m:mo><m:mn>23</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1160263">
+<para id="fs-id1633028"><emphasis effect="italics">p</emphasis> = 5</para>
+</solution>
+</exercise>
+<exercise id="fs-id1610559">
+<problem id="fs-id1788640">
+<para id="fs-id1198820"><m:math><m:mrow><m:mi>q</m:mi><m:mo>+</m:mo><m:mn>14</m:mn><m:mo>=</m:mo><m:mn>31</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1741937">
+<problem id="fs-id1177140">
+<para id="fs-id2144890"><m:math><m:mrow><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>76</m:mn><m:mo>=</m:mo><m:mn>100</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1270576">
+<para id="fs-id2278245"><emphasis effect="italics">r</emphasis> = 24</para>
+</solution>
+</exercise>
+<exercise id="fs-id1357801">
+<problem id="fs-id1983281">
+<para id="fs-id1563517"><m:math><m:mrow><m:mi>s</m:mi><m:mo>+</m:mo><m:mn>62</m:mn><m:mo>=</m:mo><m:mn>95</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1009594">
+<problem id="fs-id1336758">
+<para id="fs-id1336836"><m:math><m:mrow><m:mn>16</m:mn><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1573732">
+<para id="fs-id2385644"><emphasis effect="italics">x</emphasis> = 7</para>
+</solution>
+</exercise>
+<exercise id="fs-id1311663">
+<problem id="fs-id1213909">
+<para id="fs-id2630783"><m:math><m:mrow><m:mn>17</m:mn><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1714264">
+<problem id="fs-id2691181">
+<para id="fs-id2420139"><m:math><m:mrow><m:mn>93</m:mn><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>24</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1860576">
+<para id="fs-id1701136"><emphasis effect="italics">p</emphasis> = 69</para>
+</solution>
+</exercise>
+<exercise id="fs-id2293913">
+<problem id="fs-id1612748">
+<para id="fs-id1407957"><m:math><m:mrow><m:mn>116</m:mn><m:mo>=</m:mo><m:mi>q</m:mi><m:mo>+</m:mo><m:mn>79</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1383470">
+<problem id="fs-id769093">
+<para id="fs-id1166482"><m:math><m:mrow><m:mn>465</m:mn><m:mo>=</m:mo><m:mi>d</m:mi><m:mo>+</m:mo><m:mn>398</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1383819">
+<para id="fs-id1603183"><emphasis effect="italics">d</emphasis> = 67</para>
+</solution>
+</exercise>
+<exercise id="fs-id1948505">
+<problem id="fs-id1988860">
+<para id="fs-id2202289"><m:math><m:mrow><m:mn>932</m:mn><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>641</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id2276525"><emphasis effect="bold">સમાનતાના સરવાળાના ગુણધર્મ વડે સમીકરણો ઉકેલો</emphasis> </para><para id="eip-189">નીચેના અભ્યાસમાં સમાનતાના સરવાળાના ગુણધર્મ વડે દરેક સમીકરણ ઉકેલો.</para><exercise id="fs-id2491175">
+<problem id="fs-id1397860">
+<para id="fs-id1788556"><m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>19</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2269278">
+<para id="fs-id1579997"><emphasis effect="italics">y</emphasis> = 22</para>
+</solution>
+</exercise>
+<exercise id="fs-id1213727">
+<problem id="fs-id1530117">
+<para id="fs-id1581617"><m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1357961">
+<problem id="fs-id1603930">
+<para id="fs-id1605168"><m:math><m:mrow><m:mi>u</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>24</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1184609">
+<para id="fs-id1604641"><emphasis effect="italics">u</emphasis> = 30</para>
+</solution>
+</exercise>
+<exercise id="fs-id1988127">
+<problem id="fs-id1892572">
+<para id="fs-id1193286"><m:math><m:mrow><m:mi>v</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>35</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1788855">
+<problem id="fs-id1360171">
+<para id="fs-id1461547"><m:math><m:mrow><m:mi>f</m:mi><m:mo>−</m:mo><m:mn>55</m:mn><m:mo>=</m:mo><m:mn>123</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2284528">
+<para id="fs-id2281112"><emphasis effect="italics">f</emphasis> = 178</para>
+</solution>
+</exercise>
+<exercise id="fs-id1265455">
+<problem id="fs-id1613211">
+<para id="fs-id1367132"><m:math><m:mrow><m:mi>g</m:mi><m:mo>−</m:mo><m:mn>39</m:mn><m:mo>=</m:mo><m:mn>117</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1189586">
+<problem id="fs-id2993160">
+<para id="fs-id1866701"><m:math><m:mrow><m:mn>19</m:mn><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1209812">
+<para id="fs-id2665539"><emphasis effect="italics">n</emphasis> = 32</para>
+</solution>
+</exercise>
+<exercise id="fs-id764756">
+<problem id="fs-id1693117">
+<para id="fs-id1933066"><m:math><m:mrow><m:mn>18</m:mn><m:mo>=</m:mo><m:mi>m</m:mi><m:mo>−</m:mo><m:mn>15</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1935457">
+<problem id="fs-id1631182">
+<para id="fs-id1798432"><m:math><m:mrow><m:mn>10</m:mn><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>38</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2454159">
+<para id="fs-id1969087"><emphasis effect="italics">p</emphasis> = 48</para>
+</solution>
+</exercise>
+<exercise id="fs-id2291487">
+<problem id="fs-id1977252">
+<para id="fs-id2619273"><m:math><m:mrow><m:mn>18</m:mn><m:mo>=</m:mo><m:mi>q</m:mi><m:mo>−</m:mo><m:mn>72</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2179698">
+<problem id="fs-id1373613">
+<para id="fs-id1373616"><m:math><m:mrow><m:mn>268</m:mn><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>199</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1357353">
+<para id="fs-id2280965"><emphasis effect="italics">y</emphasis> = 467</para>
+</solution>
+</exercise>
+<exercise id="fs-id1500162">
+<problem id="fs-id1500164">
+<para id="fs-id1721231"><m:math><m:mrow><m:mn>204</m:mn><m:mo>=</m:mo><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>149</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id2239677"><emphasis effect="bold">શબ્દસમૂહને બીજગણિતનાં સમીકરણોમાં ફેરવો</emphasis> </para><para id="eip-80">નીચેના અભ્યાસમાં આપેલા વાક્યને બીજગણિતના સમીકરણમાં ફેરવો.</para><exercise id="fs-id2241253">
+<problem id="fs-id1787816">
+<para id="fs-id1384014">આ સંખ્યાઓનો સરવાળો: <m:math><m:mrow><m:mn>8</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>9</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>17</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2138281">
+<para id="fs-id1514804">8 + 9 = 17</para>
+</solution>
+</exercise>
+<exercise id="fs-id1519635">
+<problem id="fs-id1519637">
+<para id="fs-id1858758">આ સંખ્યાઓનો સરવાળો: <m:math><m:mrow><m:mn>7</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>9</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>16</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2425667">
+<problem id="fs-id1858429">
+<para id="fs-id1858431">આ રાશિઓનો તફાવત: <m:math><m:mrow><m:mn>23</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1973901">
+<para id="fs-id1301557">23 − 19 = 4</para>
+</solution>
+</exercise>
+<exercise id="fs-id1966578">
+<problem id="fs-id1384025">
+<para id="fs-id2136189">આ રાશિઓનો તફાવત: <m:math><m:mrow><m:mn>29</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>17</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2275837">
+<problem id="fs-id2275840">
+<para id="fs-id4335007">આ સંખ્યાઓનું ગુણનફળ: <m:math><m:mrow><m:mn>3</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>9</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>27</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2669524">
+<para id="fs-id2669526">3 ⋅ 9 = 27</para>
+</solution>
+</exercise>
+<exercise id="fs-id2197072">
+<problem id="fs-id2197074">
+<para id="fs-id1967868">આ સંખ્યાઓનું ગુણનફળ: <m:math><m:mrow><m:mn>6</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>8</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>48</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2434661">
+<problem id="fs-id2434663">
+<para id="fs-id2274541">આ સંખ્યાઓનું ભાગફળ: <m:math><m:mrow><m:mn>54</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>6</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>9</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1885205">
+<para id="fs-id1885207">54 ÷ 6 = 9</para>
+</solution>
+</exercise>
+<exercise id="fs-id2620976">
+<problem id="fs-id2620978">
+<para id="fs-id2475686">આ સંખ્યાઓનું ભાગફળ: <m:math><m:mrow><m:mn>42</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>7</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2925319">
+<problem id="fs-id2925321">
+<para id="fs-id1605809">આ રાશિઓના તફાવતના બમણા: <m:math><m:mrow><m:mi>n</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> બરાબર થાય <m:math><m:mrow><m:mn>52</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2483224">
+<para id="fs-id2483227">2(<emphasis effect="italics">n</emphasis> − 10) = 52</para>
+</solution>
+</exercise>
+<exercise id="fs-id2366265">
+<problem id="fs-id2366267">
+<para id="fs-id1858671">આ રાશિઓના તફાવતના બમણા: <m:math><m:mrow><m:mi>m</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>14</m:mn></m:mrow></m:math> બરાબર થાય <m:math><m:mrow><m:mn>64</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1730534">
+<problem id="fs-id1730537">
+<para id="fs-id1127841">આ રાશિઓનો સરવાળો: ત્રણ ગુણ્યા <m:math><m:mrow><m:mi>y</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>100</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3218189">
+<para id="fs-id3218191">3<emphasis effect="italics">y</emphasis> + 10 = 100</para>
+</solution>
+</exercise>
+<exercise id="fs-id2351771">
+<problem id="fs-id2351773">
+<para id="fs-id1511122">આ રાશિઓનો સરવાળો: આઠ ગુણ્યા <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>4</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>68</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id2454087"><emphasis effect="bold">સમીકરણ બનાવો અને ઉકેલો</emphasis> </para><para id="eip-990">નીચેના અભ્યાસમાં આપેલા વાક્યને બીજગણિતના સમીકરણમાં ફેરવો, પછી તેને ઉકેલો.</para><exercise id="fs-id1474456">
+<problem id="fs-id1474458">
+<para id="fs-id2257851">પાંચ ઉમેરતાં આ ચલમાં: <m:math><m:mrow><m:mi>p</m:mi></m:mrow></m:math> બરાબર થાય <m:math><m:mrow><m:mn>21</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1466622">
+<para id="fs-id1466624"><emphasis effect="italics">p</emphasis> + 5 = 21; <emphasis effect="italics">p</emphasis> = 16</para>
+</solution>
+</exercise>
+<exercise id="fs-id1314842">
+<problem id="fs-id1314844">
+<para id="fs-id1314846">નવ ઉમેરતાં આ ચલમાં: <m:math><m:mrow><m:mi>q</m:mi></m:mrow></m:math> બરાબર થાય <m:math><m:mrow><m:mn>40</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1772561">
+<problem id="fs-id1772563">
+<para id="fs-id1772566">આ સંખ્યાઓનો સરવાળો: <m:math><m:mrow><m:mi>r</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>18</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>73</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2431090">
+<para id="fs-id1516338"><emphasis effect="italics">r</emphasis> + 18 = 73; <emphasis effect="italics">r</emphasis> = 55</para>
+</solution>
+</exercise>
+<exercise id="fs-id1383644">
+<problem id="fs-id1885119">
+<para id="fs-id1885121">આ સંખ્યાઓનો સરવાળો: <m:math><m:mrow><m:mi>s</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>13</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>68</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2135772">
+<problem id="fs-id2135775">
+<para id="fs-id2135777">આ રાશિઓનો તફાવત: <m:math><m:mrow><m:mi>d</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>30</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>52</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2667614">
+<para id="fs-id2667617"><emphasis effect="italics">d</emphasis> − 30 = 52; <emphasis effect="italics">d</emphasis> = 82</para>
+</solution>
+</exercise>
+<exercise id="fs-id1950777">
+<problem id="fs-id1950780">
+<para id="fs-id1961572">આ રાશિઓનો તફાવત: <m:math><m:mrow><m:mi>c</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>25</m:mn></m:mrow></m:math> બરાબર છે <m:math><m:mrow><m:mn>75</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1281817">
+<problem id="fs-id1281819">
+<para id="fs-id2266340"><m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math> બાદ કરીએ આ ચલમાંથી: <m:math><m:mrow><m:mi>u</m:mi></m:mrow></m:math> તો મળે <m:math><m:mrow><m:mn>89</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2197880">
+<para id="fs-id2197882"><emphasis effect="italics">u</emphasis> − 12 = 89; <emphasis effect="italics">u</emphasis> = 101</para>
+</solution>
+</exercise>
+<exercise id="fs-id2284857">
+<problem id="fs-id1762217">
+<para id="fs-id1762219"><m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math> બાદ કરીએ આ ચલમાંથી: <m:math><m:mrow><m:mi>w</m:mi></m:mrow></m:math> તો મળે <m:math><m:mrow><m:mn>56</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1579845">
+<problem id="fs-id3017112">
+<para id="fs-id3017114"><m:math><m:mrow><m:mn>325</m:mn></m:mrow></m:math> બાદ કરીએ આ ચલમાંથી: <m:math><m:mrow><m:mi>c</m:mi></m:mrow></m:math> તો મળે <m:math><m:mrow><m:mn>799</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1325443">
+<para id="fs-id1325445"><emphasis effect="italics">c</emphasis> − 325 = 799; <emphasis effect="italics">c</emphasis> = 1124</para>
+</solution>
+</exercise>
+<exercise id="fs-id2431500">
+<problem id="fs-id2219188">
+<para id="fs-id2219190"><m:math><m:mrow><m:mn>299</m:mn></m:mrow></m:math> બાદ કરીએ આ ચલમાંથી: <m:math><m:mrow><m:mi>d</m:mi></m:mrow></m:math> તો મળે <m:math><m:mrow><m:mn>850</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+</section><section id="fs-id2279578" class="everyday">
+<title>રોજિંદા જીવનમાં ગણિત</title>
+<exercise id="fs-id2279583">
+<problem id="fs-id3017268">
+<para id="fs-id3017270"><emphasis effect="bold">વીમો</emphasis> વિન્સના કારના વીમામાં તેણે પોતે ચૂકવવાની રકમ છે <m:math><m:mrow><m:mtext>$500</m:mtext></m:mrow></m:math> . વીમા કંપની કેટલી રકમ ચૂકવશે તે શોધો, જેને <m:math><m:mrow><m:mi>p</m:mi><m:mo>,</m:mo></m:mrow></m:math> કહીએ, આટલી રકમના <m:math><m:mrow><m:mtext>$1800</m:mtext></m:mrow></m:math> દાવા માટે. આ સમીકરણ ઉકેલો: <m:math><m:mrow><m:mn>500</m:mn><m:mo>+</m:mo><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>1800</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1514726">
+<para id="fs-id1458074">$1300</para>
+</solution>
+</exercise>
+<exercise id="fs-id2160908">
+<problem id="fs-id2160910">
+<para id="fs-id2160912"><emphasis effect="bold">વીમો</emphasis> માર્તાના ઘરના વીમામાં તેણે પોતે ચૂકવવાની રકમ છે <m:math><m:mrow><m:mtext>$750</m:mtext></m:mrow></m:math> . તોફાનથી થયેલું નુકસાન સુધારવા વીમા કંપનીએ ચૂકવ્યા <m:math><m:mrow><m:mtext>$5800</m:mtext></m:mrow></m:math> . તોફાનથી થયેલા નુકસાનનો કુલ ખર્ચ શોધો, જેને <m:math><m:mrow><m:mi>d</m:mi><m:mo>,</m:mo></m:mrow></m:math> કહીએ. આ સમીકરણ ઉકેલો: <m:math><m:mrow><m:mi>d</m:mi><m:mo>−</m:mo><m:mn>750</m:mn><m:mo>=</m:mo><m:mn>5800</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1828925">
+<problem id="fs-id1828928">
+<para id="fs-id1828930"><emphasis effect="bold">છૂટમાં ખરીદી</emphasis> આર્થરે છૂટમાં સૂટ ખરીદ્યો. છૂટની રકમ હતી <m:math><m:mrow><m:mtext>$120</m:mtext></m:mrow></m:math> . તેણે ચૂકવ્યા <m:math><m:mrow><m:mtext>$340</m:mtext></m:mrow></m:math> સૂટ માટે. સૂટની મૂળ કિંમત શોધો, જેને <m:math><m:mrow><m:mi>p</m:mi><m:mo>,</m:mo></m:mrow></m:math> કહીએ. આ સમીકરણ ઉકેલો: <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>120</m:mn><m:mo>=</m:mo><m:mn>340</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1892432">
+<para id="fs-id1892434">$460</para>
+</solution>
+</exercise>
+<exercise id="fs-id588364">
+<problem id="fs-id588367">
+<para id="fs-id2419082"><emphasis effect="bold">છૂટમાં ખરીદી</emphasis> રીટાએ છૂટમાં સોફા ખરીદ્યો, તેની કિંમત હતી <m:math><m:mrow><m:mtext>$1299</m:mtext><m:mo>.</m:mo></m:mrow></m:math> તેણે કુલ ચૂકવ્યા <m:math><m:mrow><m:mtext>$1409</m:mtext><m:mo>,</m:mo></m:mrow></m:math> જેમાં વેચાણવેરો સામેલ હતો. વેચાણવેરાની રકમ શોધો, જેને <m:math><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> કહીએ. આ સમીકરણ ઉકેલો: <m:math><m:mrow><m:mn>1299</m:mn><m:mo>+</m:mo><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1409</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1787256" class="writing">
+<title>લેખન અભ્યાસ</title>
+<exercise id="fs-id2783612">
+<problem id="fs-id2783614">
+<para id="fs-id2783616">શું <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> આ સમીકરણનો ઉકેલ છે: <m:math><m:mrow><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>?</m:mo></m:mrow></m:math> તમે કેવી રીતે જાણો છો?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1956484">
+<problem id="fs-id1956486">
+<para id="fs-id1956488">આ સમીકરણ: <m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>21</m:mn></m:mrow></m:math> શબ્દોમાં લખો. પછી તેના માટે શાબ્દિક પ્રશ્ન બનાવો.</para>
+</problem>
+</exercise></section><section id="eip-263" class="self-check"><title>સ્વમૂલ્યાંકન</title><para id="eip-id1168468748303"><span class="token">ⓐ</span> અભ્યાસ પૂરો કર્યા પછી આ ચકાસણીપત્રકથી વિભાગના હેતુઓમાં તમારું પ્રભુત્વ તપાસો.
+</para>
+
+
+<figure id="eip-id1164270702151" class="unnumbered"><label /><media id="eip-id1164271039378" alt="ગણિતની કુશળતાનું સ્વમૂલ્યાંકન કોષ્ટક: ઉકેલ નક્કી કરવો, સરવાળા અને બાદબાકીના ગુણધર્મો વડે સમીકરણનો નમૂનો બનાવવો અને ઉકેલવો, તથા શબ્દસમૂહોને બીજગણિતનાં સમીકરણોમાં ફેરવવા."><image mime-type="image/jpg" src="../../media/CNX_BMath_Figure_AppB_010.jpg" /></media></figure><para id="eip-id1168466075811"><span class="token">ⓑ</span> આ ચકાસણીપત્રક વિભાગ પરના તમારા પ્રભુત્વ વિશે શું જણાવે છે? સુધારવા માટે કયાં પગલાં લેશો?
+</para></section></section>
+</content>
+<glossary>
+<definition id="fs-id2261028">
+<term>સમીકરણનો ઉકેલ</term>
+<meaning id="fs-id2819300">સમીકરણનો ઉકેલ એ ચલની એવી કિંમત છે જે સમીકરણમાં મૂકતાં સાચું વિધાન મળે. સમીકરણનો ઉકેલ શોધવાની પ્રક્રિયાને સમીકરણ ઉકેલવું કહે છે.
+</meaning>
+</definition>
+
+</glossary>
+</document>

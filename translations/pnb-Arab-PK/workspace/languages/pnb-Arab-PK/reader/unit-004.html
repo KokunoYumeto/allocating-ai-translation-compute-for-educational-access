@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pnb-Arab-PK" dir="rtl"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Shahmukhi Punjabi algebra-to-functions bridge; incremental translation unit" />
+<title>فنکشن دی علامتی لکھت ورتنا — PNB-004</title><style>:root { color-scheme: light; --ink:#173434; --accent:#1b6159; --paper:#fffdf8; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:#edf1ee; font-family:"Noto Nastaliq Urdu","Urdu Typesetting","Noto Naskh Arabic","Segoe UI",serif; font-size:21px; line-height:2.35; }
+header, main, footer { max-width:1000px; margin:auto; padding:2rem 3rem; background:var(--paper); }
+header { border-block-start:8px solid var(--accent); padding-block-end:1.5rem; }
+h1 { font-size:2.4rem; line-height:2; margin:.2rem 0; }
+h2 { font-size:1.5rem; margin-block:1.5rem .5rem; color:var(--accent); }
+h3 { font-size:1.22rem; margin-block:1rem .4rem; }
+p { margin-block:.8rem; }
+a { color:#175b94; text-underline-offset:5px; }
+nav { font-size:1rem; }
+.eyebrow, .status, .source-label { font-size:1rem; }
+.status { border-inline-start:4px solid #b98238; padding-inline-start:1rem; }
+.source-label { background:#dae9e2; padding:.7rem 1rem; border-radius:4px; }
+.bridge { border-block-end:1px solid #cad7d1; padding-block-end:1rem; }
+bdi, .math-isolate, .formula, [dir="ltr"] { unicode-bidi:isolate; }
+bdi, math, .display-formula, [lang="en"] { font-family:"Cambria Math",Cambria,"Segoe UI",serif; }
+math { direction:ltr; font-size:1.03em; }
+.math-isolate { display:inline-block; direction:ltr; max-width:100%; vertical-align:middle; overflow-x:auto; overflow-y:hidden; }
+.equation, .display-formula { direction:ltr; text-align:center; overflow-x:auto; background:#f0f5f1; padding:1rem .5rem; margin-block:1.3rem; border-radius:4px; line-height:1.7; }
+.equation .math-isolate { display:block; }
+.formula { display:inline-block; direction:ltr; }
+figure { margin:1.5rem 0; }
+figure img { width:100%; height:auto; background:white; border:1px solid #cad7d1; padding:.5rem; }
+.figure-scroll { overflow-x:auto; }
+.scroll-hint { font-size:.9rem; }
+:focus-visible { outline:3px solid #b98238; outline-offset:3px; }
+figcaption { font-size:1rem; }
+aside { border-inline-start:4px solid var(--accent); padding:.5rem 1rem; background:#edf4ef; margin-block:1.2rem; }
+ol { padding-inline-start:2.2rem; list-style-type:decimal; }
+li { padding-inline-start:.5rem; margin-block:.5rem; }
+.source-parts { list-style:none; padding-inline-start:0; }
+.source-parts > li { margin-block:1rem; }
+.source-solution { border-block-start:1px solid #cad7d1; }
+.source-example figure img { width:var(--source-width); min-width:var(--source-width); display:block; margin-inline:auto; }
+.source-footnote { font-size:.75em; padding-inline:.25em; }
+.source-endnotes { font-size:.85em; border-block-start:1px solid #cad7d1; overflow-wrap:anywhere; }
+.source-table-scroll { margin-block:1rem; }
+.source-table { width:max-content; min-width:100%; }
+.source-table td { white-space:nowrap; font-family:"Cambria Math",Cambria,"Segoe UI",serif; }
+.source-table th { min-width:8rem; }
+.table-scroll { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:1rem; }
+th, td { text-align:start; vertical-align:top; border:1px solid #c6d5cc; padding:.6rem .8rem; }
+th { background:#e4eee7; }
+footer { font-family:"Segoe UI",sans-serif; font-size:14px; line-height:1.7; border-block-start:1px solid #cad7d1; }
+footer h2 { font-size:1.1rem; }
+@media (max-width:600px) { body { font-size:19px; } header,main,footer { padding:1.1rem; } h1 { font-size:1.9rem; } .formula { max-width:100%; overflow-x:auto; vertical-align:middle; } th,td { padding:.4rem; } figure img { min-width:640px; } }
+@media print { body { background:white; font-size:13pt; } header,main,footer { max-width:none; padding:0; } nav { display:none; } h2,h3 { break-after:avoid; } figure,aside,li { break-inside:avoid; } a { color:inherit; } }
+</style></head><body>
+<header><p class="eyebrow"><bdi dir="ltr">PNB-004 · A30 / m49301</bdi></p><h1>فنکشن دی علامتی لکھت ورتنا</h1><p>شاہ مکھی پنجابی · اردو تے انگریزی نال تعلیمی پُل</p>
+<p class="status">ابتدائی ترجمہ · پنجابی دے ماہر دی لسانی جانچ ہن تک نہیں ہوئی</p>
+<nav aria-label="سبق دے حصے"><a href="unit-003.html">پچھلا سبق</a> · <a href="#fs-id1165134474160">ماخذ دا ترجمہ</a> · <a href="#terminology">اصطلاحاں</a></nav></header>
+<main>
+<p class="source-label">ماخذ دا ترجمہ: <bdi dir="ltr" lang="en">OpenStax Precalculus 2e, §1.1</bdi> دا چُنیا ہویا حصہ؛ پورے حصے دا ترجمہ نہیں۔</p>
+<section id="fs-id1165134474160" class="translated"><h2>فنکشن دی علامتی لکھت ورتنا</h2><p id="fs-id1165133359348">جدوں اسیں طے کر لئیے کہ کوئی تعلق فنکشن اے، تاں سانوں فنکشن والے رشتے وکھانے تے اوہناں دی تعریف کرنی پیندی اے، تاں جے اسیں اوہناں نوں سمجھ سکئیے تے ورت سکئیے، تے کدی کدی اوہناں نوں کمپیوٹراں وچ پروگرام وی کر سکئیے۔ فنکشناں نوں وکھاؤن دے کئی طریقے نیں۔ <span id="term-00011">فنکشن دی علامتی لکھت</span> اک معیاری طریقہ اے جیہڑا فنکشناں نال کم کرنا سوکھا بناندا اے۔</p><p id="fs-id1165137453971">ایہہ گل وکھاؤن لئی کہ «قد، عمر دا فنکشن اے»، اسیں پہلے قد نوں ظاہر کرن لئی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mi>h</mi>
+</math></span> تے عمر نوں ظاہر کرن لئی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mi>a</mi>
+</math></span> متغیر چُندے آں۔ حرف <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>f</mi><mo>,</mo><mspace width="0.5em" /><mi>g</mi><mo />
+ </mrow>
+</math></span> تے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>h</mi>
+ </mrow>
+</math></span> اکثر فنکشناں لئی ورتے جاندے نیں، جیویں اسیں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>x</mi><mo>,</mo><mspace width="0.5em" /><mi>y</mi><mo />
+ </mrow>
+</math></span> تے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mi>z</mi>
+</math></span> اعداد لئی، تے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>A</mi><mo>,</mo><mspace width="0.5em" /><mi>B</mi><mo />
+ </mrow>
+</math></span> تے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mi>C</mi>
+</math></span> سیٹاں لئی ورتدے آں۔</p><div id="fs-id1165135332760" class="equation" dir="ltr"><span class="math-isolate" dir="ltr" tabindex="0" role="region" aria-label="ریاضی دا فارمولا؛ لوڑ پئے تے پاسے سرکاؤ"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" dir="ltr">
+ <mrow>
+  <mtable columnalign="left">
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mi>h</mi><mtext> is </mtext><mi>f</mi><mtext> of </mtext><mi>a</mi>
+     </mrow>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+    <mtd columnalign="left">
+     <mrow>
+      <mtext>We name the function </mtext><mi>f</mi><mo>;</mo><mtext> height is a function of age</mtext><mo>.</mo>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mi>h</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo>
+     </mrow>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+    <mtd columnalign="left">
+     <mrow>
+      <mtext>We use parentheses to indicate the function input</mtext><mtext>. </mtext>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign="left">
+    <mtd columnalign="left">
+     <mrow>
+      <mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo>
+     </mrow>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+    <mtd columnalign="left">
+     <mrow />
+    </mtd>
+    <mtd columnalign="left">
+     <mrow>
+      <mtext>We name the function </mtext><mi>f</mi><mo>;</mo><mtext> the expression is read as “</mtext><mi>f</mi><mtext> of </mtext><mi>a</mi><mtext>.”</mtext>
+     </mrow>
+    </mtd>
+   </mtr>
+
+  </mtable>
+ </mrow>
+</math></span></div><p id="fs-id1165137766965">چیتے رکھو، فنکشن دا ناں رکھن لئی اسیں کوئی وی حرف ورت سکدے آں۔ لکھت <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>h</mi><mrow><mo>(</mo>
+    <mi>a</mi>
+    <mo>)</mo></mrow></mrow>
+ </math></span> دسدی اے کہ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>h</mi></mrow>
+ </math></span> دا دارومدار <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>a</mi><mo /></mrow>
+</math></span> اُتے اے۔ نتیجہ لین لئی قدر <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>a</mi></mrow>
+ </math></span> نوں فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>h</mi></mrow>
+ </math></span> وچ پانا پیندا اے۔ قوساں دسّدیاں نیں کہ عمر فنکشن دی اِن پُٹ اے؛ ایہہ ضرب دا اشارہ نہیں دیندیاں۔</p><p id="fs-id1165135436660">اسیں فنکشن نوں اِن پُٹ وجوں اک جبری عبارت وی دے سکدے آں۔ مثال لئی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>f</mi><mrow><mo>(</mo>
+    <mrow>
+     <mi>a</mi><mo>+</mo><mi>b</mi></mrow>
+    <mo>)</mo></mrow></mrow>
+ </math></span> دا مطلب اے: «پہلے <em><bdi dir="ltr">a</bdi></em> تے <em><bdi dir="ltr">b</bdi></em> نوں جمع کرو، تے حاصل ہویا نتیجہ فنکشن <em><bdi dir="ltr">f</bdi></em> دی اِن پُٹ اے۔» ٹھیک نتیجہ لین لئی ایہہ عمل اِسے ترتیب نال کرنے پیندے نیں۔</p><aside id="fs-id1165137444349"><h3>فنکشن دی علامتی لکھت</h3><p id="eip-id1165135256026">علامتی لکھت <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+    <mi>x</mi>
+    <mo>)</mo></mrow></mrow>
+ </math></span> نال <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>f</mi><mo />
+ </mrow>
+</math></span> ناں دے فنکشن دی تعریف کیتی جاندی اے۔ ایہنوں اِنج پڑھدے آں: «<span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,0],&quot;old&quot;:&quot;“&quot;,&quot;new&quot;:&quot;&quot;}]">
+  <mrow>
+   <mo /><mi>y</mi></mrow>
+ </math></span>، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,2],&quot;old&quot;:&quot;”&quot;,&quot;new&quot;:&quot;&quot;},{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>x</mi><mo /><mo />
+ </mrow>
+</math></span> دا فنکشن اے»۔ حرف <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>x</mi>
+ </mrow>
+</math></span> اِن پُٹ قدر، یعنی آزاد متغیر، نوں وکھاندا اے۔ حرف <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>y</mi><mtext />
+ </mrow>
+</math></span>، یا <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,2],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+  <mrow>
+   <mi>f</mi><mrow><mo>(</mo>
+    <mi>x</mi>
+    <mo>)</mo></mrow><mo /></mrow>
+ </math></span>، آؤٹ پُٹ قدر، یعنی تابع متغیر، نوں وکھاندا اے۔</p></aside><section id="Example_01_01_03" class="source-example"><h2>حل کیتی مثال <bdi dir="ltr">3</bdi></h2><div id="fs-id1165135612059" class="source-exercise"><div id="fs-id1165135705803" class="source-problem"><h3>مہینے دے دناں لئی فنکشن دی علامتی لکھت ورتنا</h3><p id="fs-id1165137757351">فنکشن دی علامتی لکھت ورت کے اوہ فنکشن لکھو جیہدی اِن پُٹ مہینے دا ناں تے آؤٹ پُٹ اوس مہینے دے دناں دی گنتی اے۔ من لو کہ ڈومین وچ لیپ سال شامل نہیں نیں۔</p></div><section id="fs-id1165137405547" class="source-solution"><h3>حل</h3><p id="fs-id1165137657617">مہینے دے دناں دی گنتی، مہینے دے ناں دا فنکشن اے۔ ایس لئی جے اسیں فنکشن دا ناں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>f</mi><mo />
+ </mrow>
+</math></span> رکھیے، تاں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mtext>days</mtext><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mtext>month</mtext><mo stretchy="false">)</mo>
+ </mrow>
+</math></span> یا <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,6],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>d</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo><mo />
+ </mrow>
+</math></span> لکھدے آں۔ مہینے دا ناں اک «قاعدے» دی اِن پُٹ اے، جیہڑا ہر اِن پُٹ نال اک خاص عدد، یعنی آؤٹ پُٹ، جوڑدا اے۔</p><figure id="Image_01_01_005"><div class="figure-scroll" dir="ltr" tabindex="0" role="region" aria-label="اصل شکل؛ لوڑ پئے تے پاسے سرکاؤ"><img id="fs-id1165135187902" src="../assets/Image_01_01_005.jpg" alt="فنکشن 31 = f(January) وکھایا گیا اے۔ ایتھے 31 آؤٹ پُٹ اے، f قاعدہ اے تے January، یعنی جنوری، اِن پُٹ اے۔" width="245" height="142" style="--source-width:245px" /></div><p class="scroll-hint">چھوٹی سکرین اُتے پوری شکل ویکھن لئی پاسے سرکاؤ، یا <a href="../assets/Image_01_01_005.jpg">اصل شکل وکھری کھولو</a>۔</p></figure><p id="fs-id1165135417826">مثال لئی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>f</mi><mrow><mo>(</mo>
+   <mrow>
+    <mtext>March</mtext></mrow>
+   <mo>)</mo></mrow><mo>=</mo><mn>31</mn><mo /></mrow>
+</math></span>، کیوں جے مارچ وچ <bdi dir="ltr">31</bdi> دن ہوندے نیں۔ علامتی لکھت <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>d</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+   <mi>m</mi>
+   <mo>)</mo></mrow></mrow>
+</math></span> سانوں چیتا کرواندی اے کہ دناں دی گنتی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>d</mi></mrow>
+</math></span> (آؤٹ پُٹ) دا دارومدار مہینے دے ناں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+ <mrow>
+  <mi>m</mi></mrow>
+</math></span> (اِن پُٹ) اُتے اے۔</p></section><div id="fs-id1165137544335" class="source-commentary"><h3>تجزیہ</h3><p id="fs-id1165137734829">ویکھو کہ فنکشن دیاں اِن پُٹ قدراں اعداد ہی ہون، ایہہ ضروری نہیں۔ اِن پُٹ لوکاں دے ناں، ہندسی چیزاں دے لیبل، یا کوئی ہور رکن وی ہو سکدا اے جیہڑا کسے قسم دی آؤٹ پُٹ طے کردا ہووے۔ پر ایس کتاب وچ اسیں جِنّاں فنکشناں نال کم کراں گے، اوہناں وچوں زیادہ تر دیاں اِن پُٹ تے آؤٹ پُٹ قدراں اعداد ہون گیاں۔</p></div></div></section><section id="Example_01_01_04" class="source-example"><h2>حل کیتی مثال <bdi dir="ltr">4</bdi></h2><div id="fs-id1165137441910" class="source-exercise"><div id="fs-id1165137527239" class="source-problem"><h3>فنکشن دی علامتی لکھت دا مطلب سمجھنا</h3><p id="fs-id1165137526811">فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>N</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+    <mi>y</mi>
+    <mo>)</mo></mrow></mrow>
+ </math></span> اک قصبے وچ پولیس اہلکاراں دی گنتی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>N</mi><mo />
+ </mrow>
+</math></span>، سال <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>y</mi><mo />
+ </mrow>
+</math></span> لئی دندا اے۔ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>f</mi><mrow><mo>(</mo>
+    <mrow>
+     <mn>2005</mn></mrow>
+    <mo>)</mo></mrow><mo>=</mo><mn>300</mn></mrow>
+ </math></span> دا کی مطلب اے؟</p></div><section id="fs-id1165137834021" class="source-solution"><h3>حل</h3><p id="fs-id1165137424675">جدوں اسیں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+  <mrow>
+   <mi>f</mi><mrow><mo>(</mo>
+    <mrow>
+     <mn>2005</mn></mrow>
+    <mo>)</mo></mrow><mo>=</mo><mn>300</mn><mo /></mrow>
+ </math></span> پڑھدے آں، تاں ویکھدے آں کہ اِن پُٹ سال <bdi dir="ltr">2005</bdi> اے۔ آؤٹ پُٹ، یعنی پولیس اہلکاراں دی گنتی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+  <mrow>
+   <mrow><mo>(</mo>
+    <mi>N</mi>
+    <mo>)</mo></mrow><mo /></mrow>
+ </math></span>، دی قدر <bdi dir="ltr">300</bdi> اے۔ چیتے رکھو، <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,4],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+  <mrow>
+   <mi>N</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+    <mi>y</mi>
+    <mo>)</mo></mrow><mo /></mrow>
+ </math></span>۔ بیان <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>f</mi><mrow><mo>(</mo>
+    <mrow>
+     <mn>2005</mn></mrow>
+    <mo>)</mo></mrow><mo>=</mo><mn>300</mn></mrow>
+ </math></span> ایہہ دسدا اے کہ سال <bdi dir="ltr">2005</bdi> وچ اوس قصبے وچ <bdi dir="ltr">300</bdi> پولیس اہلکار سن۔</p></section></div></section><aside id="fs-id1165134257606"><h3>آپ کر کے ویکھو</h3><div id="fs-id1165137564344" class="source-exercise"><div id="fs-id1165137564345" class="source-problem"><p id="fs-id1165137596424">فنکشن دی علامتی لکھت نال اک سور دا پاؤنڈاں وچ وزن، اوہدی دناں وچ گنی عمر <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+  <mrow>
+   <mi>d</mi><mtext /></mrow>
+ </math></span> دے فنکشن وجوں لکھو۔</p></div><section id="fs-id1165137871618" class="source-solution"><h3>حل</h3><p id="fs-id1165137619935"><span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>w</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo></mrow>
+ </math></span></p></section></div></aside><aside id="fs-id1165137740780"><h3>سوال تے جواب</h3><p id="eip-id1165132005171"><strong>کی <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,5],&quot;old&quot;:&quot;),&quot;,&quot;new&quot;:&quot;)&quot;}]">
+ <mrow>
+  <mi>y</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+ </mrow>
+</math></span> ورگی لکھت دی بجائے اسیں آؤٹ پُٹ تے فنکشن، دوہاں لئی اِکّو علامت ورت سکدے آں، جیویں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,5],&quot;old&quot;:&quot;),&quot;,&quot;new&quot;:&quot;)&quot;}]">
+ <mrow>
+  <mi>y</mi><mo>=</mo><mi>y</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+ </mrow>
+</math></span>، جیہدا مطلب اے: «<em><bdi dir="ltr">y</bdi></em>، <em><bdi dir="ltr">x</bdi></em> دا فنکشن اے»؟</strong></p><p id="fs-id1165137605080"><em>ہاں، ایہہ اکثر کیتا جاندا اے، خاص کر اوہناں عملی مضموناں وچ جتھے اگلے درجے دی ریاضی ورتی جاندی اے، جیویں فزکس تے انجینئرنگ۔ پر جدوں اسیں خود ریاضی نوں پرکھدے آں، تاں اسیں فنکشن <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>f</mi><mo />
+ </mrow>
+</math></span> — جیہڑا اک قاعدہ یا طریقہ اے — تے آؤٹ پُٹ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>y</mi></mrow>
+ </math></span> دے وچ فرق قائم رکھنا پسند کردے آں؛ ایہہ آؤٹ پُٹ اسیں <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr">
+  <mrow>
+   <mi>f</mi></mrow>
+ </math></span> نوں کسے خاص اِن پُٹ <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,1],&quot;old&quot;:&quot;.&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>x</mi><mo />
+ </mrow>
+</math></span> اُتے لا کے لیندے آں۔ ایس لئی اسیں عام طور اُتے <span class="math-isolate" dir="ltr"><math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr" data-source-text-edits="[{&quot;path&quot;:[0,9],&quot;old&quot;:&quot;,&quot;,&quot;new&quot;:&quot;&quot;}]">
+ <mrow>
+  <mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+   <mi>x</mi>
+  <mo>)</mo></mrow><mo>,</mo><mi>P</mi><mo>=</mo><mi>W</mi><mrow><mo>(</mo>
+   <mi>d</mi>
+  <mo>)</mo></mrow><mo /></mrow>
+</math></span> وغیرہ ورگی علامتی لکھت ورتدے آں۔</em></p></aside></section><section id="notation-bridge" class="bridge" data-origin="original-bridge"><h2>انگریزی لکھت دی کُنجی تے وضاحت — ساڈی ولوں</h2><p>ماخذ دے فارمولے تے شکل اصل صورت وچ قائم نیں، ایس لئی اوہناں دے انگریزی لفظ وی قائم نیں۔ تھلے دِتی کُنجی تے وضاحتاں ساڈی ولوں شامل کیتیاں گئیاں نیں؛ ایہناں نوں ماخذ دے ترجمے نال نہ رلاؤ۔</p><h3>فارمولے دیاں تِن سطراں دا مطلب</h3><ol><li><bdi dir="ltr" lang="en">h is f of a</bdi> — <bdi dir="ltr">h</bdi>، اِن پُٹ <bdi dir="ltr">a</bdi> لئی فنکشن <bdi dir="ltr">f</bdi> دی قدر اے۔ اسیں فنکشن دا ناں <bdi dir="ltr">f</bdi> رکھدے آں؛ قد، عمر دا فنکشن اے۔</li><li><bdi dir="ltr">h = f(a)</bdi> — اسیں فنکشن دی اِن پُٹ وکھاؤن لئی قوساں ورتدے آں۔</li><li><bdi dir="ltr">f(a)</bdi> — اسیں فنکشن دا ناں <bdi dir="ltr">f</bdi> رکھدے آں۔ ایہہ عبارت انگریزی وچ <bdi dir="ltr" lang="en">f of a</bdi> پڑھی جاندی اے؛ پنجابی وچ ایہدا مطلب «اِن پُٹ <bdi dir="ltr">a</bdi> لئی <bdi dir="ltr">f</bdi> دی قدر» اے۔</li></ol><h3>لفظاں تے شکل دی کُنجی</h3><ul><li><bdi dir="ltr" lang="en">days</bdi> — دن؛ <bdi dir="ltr" lang="en">month</bdi> — مہینہ؛ <bdi dir="ltr" lang="en">March</bdi> — مارچ۔</li><li><bdi dir="ltr" lang="en">January</bdi> — جنوری؛ <bdi dir="ltr" lang="en">output</bdi> — آؤٹ پُٹ؛ <bdi dir="ltr" lang="en">rule</bdi> — قاعدہ؛ <bdi dir="ltr" lang="en">input</bdi> — اِن پُٹ۔</li><li>شکل وچ <bdi dir="ltr">31 = f(January)</bdi> اے: <bdi dir="ltr">31</bdi> آؤٹ پُٹ، <bdi dir="ltr">f</bdi> قاعدہ، تے جنوری اِن پُٹ اے۔ اگلی نثری مثال وچ مارچ ورتیا گیا اے؛ ایہہ وکھری مثال اے۔</li></ul><h3>ماخذ دی شرط تے حرفاں دے کم</h3><p>مہینے والی مثال وچ ماخذ لیپ سالاں نوں باہر رکھن لئی آکھدا اے۔ ایس شرط نوں اِنج سمجھو: اک غیر لیپ سال دے مہینیاں دے ناں اِن پُٹ نیں۔ ایتھے ڈومین دے رکن مہینیاں دے ناں نیں، سال نہیں۔ ایہہ ماخذ دی شرط نوں صاف کرن لئی ساڈی وضاحت اے۔</p><p>ماخذ پہلے <bdi dir="ltr">h</bdi> نوں قد دا متغیر بناندا اے، تے اگے <bdi dir="ltr">h(a)</bdi> وچ <bdi dir="ltr">h</bdi> نوں فنکشن دے ناں وجوں ورتدا اے۔ ہر تھاں حرف دا کم اوہدے سیاق توں ویکھو۔ اِن پُٹ لئی قوساں ورتن دا مطلب ضرب کرنا نہیں۔</p></section><section id="terminology"><h2>تِن زباناں دی اصطلاحی کُنجی</h2><div class="table-scroll"><table><thead><tr><th scope="col">شاہ مکھی پنجابی</th><th scope="col" lang="ur-Arab-PK">اردو</th><th scope="col" lang="en" dir="ltr">English</th></tr></thead><tbody><tr><td>الجبرا</td><td lang="ur-Arab-PK">الجبرا</td><td lang="en" dir="ltr">algebra</td></tr><tr><td>متغیر</td><td lang="ur-Arab-PK">متغیر</td><td lang="en" dir="ltr">variable</td></tr><tr><td>جبری عبارت</td><td lang="ur-Arab-PK">جبری عبارت</td><td lang="en" dir="ltr">algebraic expression</td></tr><tr><td>مساوات</td><td lang="ur-Arab-PK">مساوات</td><td lang="en" dir="ltr">equation</td></tr><tr><td>قدر</td><td lang="ur-Arab-PK">قیمت / قدر</td><td lang="en" dir="ltr">value</td></tr><tr><td>تعلق</td><td lang="ur-Arab-PK">تعلق</td><td lang="en" dir="ltr">relation</td></tr><tr><td>ترتیب وار جوڑی</td><td lang="ur-Arab-PK">مرتب جوڑا</td><td lang="en" dir="ltr">ordered pair</td></tr><tr><td>سیٹ</td><td lang="ur-Arab-PK">مجموعہ</td><td lang="en" dir="ltr">set</td></tr><tr><td>رکن</td><td lang="ur-Arab-PK">رکن / عنصر</td><td lang="en" dir="ltr">element</td></tr><tr><td>فنکشن</td><td lang="ur-Arab-PK">تفاعل / فنکشن</td><td lang="en" dir="ltr">function</td></tr><tr><td>ڈومین</td><td lang="ur-Arab-PK">دائرۂ تعریف</td><td lang="en" dir="ltr">domain</td></tr><tr><td>رینج</td><td lang="ur-Arab-PK">حاصل شدہ قدروں کا مجموعہ</td><td lang="en" dir="ltr">range</td></tr><tr><td>اِن پُٹ</td><td lang="ur-Arab-PK">داخل کردہ قدر</td><td lang="en" dir="ltr">input</td></tr><tr><td>آؤٹ پُٹ</td><td lang="ur-Arab-PK">حاصل ہونے والی قدر</td><td lang="en" dir="ltr">output</td></tr><tr><td>آزاد متغیر</td><td lang="ur-Arab-PK">آزاد متغیر</td><td lang="en" dir="ltr">independent variable</td></tr><tr><td>تابع متغیر</td><td lang="ur-Arab-PK">تابع متغیر</td><td lang="en" dir="ltr">dependent variable</td></tr><tr><td>قدرتی عدد</td><td lang="ur-Arab-PK">قدرتی عدد</td><td lang="en" dir="ltr">natural number</td></tr><tr><td>جفت</td><td lang="ur-Arab-PK">جفت</td><td lang="en" dir="ltr">even</td></tr><tr><td>طاق</td><td lang="ur-Arab-PK">طاق</td><td lang="en" dir="ltr">odd</td></tr><tr><td>ٹھیک اک</td><td lang="ur-Arab-PK">صرف ایک</td><td lang="en" dir="ltr">exactly one</td></tr><tr><td>ثبوت</td><td lang="ur-Arab-PK">ثبوت</td><td lang="en" dir="ltr">proof</td></tr><tr><td>ویکٹر</td><td lang="ur-Arab-PK">سمتیہ / ویکٹر</td><td lang="en" dir="ltr">vector</td></tr><tr><td>خطی نقشہ</td><td lang="ur-Arab-PK">خطی تبدیلی</td><td lang="en" dir="ltr">linear map</td></tr><tr><td>فنکشن دی علامتی لکھت</td><td lang="ur-Arab-PK">فنکشن کی علامتی صورت</td><td lang="en" dir="ltr">function notation</td></tr><tr><td>فی صد گریڈ</td><td lang="ur-Arab-PK">فیصد نمبر</td><td lang="en" dir="ltr">percent grade</td></tr><tr><td>گریڈ پوائنٹ اوسط</td><td lang="ur-Arab-PK">گریڈ پوائنٹ اوسط</td><td lang="en" dir="ltr">grade point average (GPA)</td></tr><tr><td>درجہ</td><td lang="ur-Arab-PK">درجہ / مرتبہ</td><td lang="en" dir="ltr">rank</td></tr><tr><td>قیمت</td><td lang="ur-Arab-PK">قیمت</td><td lang="en" dir="ltr">price</td></tr><tr><td>مینو دی چیز</td><td lang="ur-Arab-PK">مینو کی شے</td><td lang="en" dir="ltr">menu item</td></tr><tr><td>قاعدہ</td><td lang="ur-Arab-PK">قاعدہ</td><td lang="en" dir="ltr">rule</td></tr><tr><td>قوساں</td><td lang="ur-Arab-PK">قوسین</td><td lang="en" dir="ltr">parentheses</td></tr></tbody></table></div></section></main>
+<footer id="credits" lang="en" dir="ltr">
+<h2>Sources, credits and changes</h2>
+<p>Adapted from <a href="https://github.com/openstax/osbooks-college-algebra-bundle/blob/789b54099106b071d1d32bfcee454fed72eb4768/modules/m49301/index.cnxml">OpenStax Precalculus 2e, module m49301</a>, Jay Abramson et al., OpenStax / Rice University; foundational chapters credit David Lippman and Melonie Rasmussen. Figure copyright Rice University, OpenStax, under CC BY-NC-SA 4.0. Full contributor notices remain in <a href="../provenance/ATTRIBUTION.md">the provenance record</a>. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>, subject to retained component notices. OpenStax and Rice University do not endorse this adaptation; no cover or trademarks are reproduced. Figure label 1.1.5 is local chapter.section.figure numbering; canonical ID Image_01_01_005 remains intact. The original English image is unchanged.</p>
+<p>Changes: Shahmukhi Punjabi translation of the declared source selection, with original explanatory additions labeled separately. Source identifiers, table data, proper names and mathematical content are retained. Where present, source circled-letter parts are displayed as isolated Latin-letter labels with the same correspondence. Unit-specific source ambiguities and accessibility-summary corrections are disclosed in the original bridge notes and provenance record. No native-speaker approval is claimed. Source MathML nodes remain in order; English quotation marks and terminal sentence punctuation are moved into Punjabi prose by reversible text edits recorded in data-source-text-edits. Internal mathematical punctuation and closing parentheses remain. The frozen source is unchanged.</p>
+<p>Indonesian comparison edition: KokunoYumeto/openstax-precalculus-2e-id, alpha.58-reader.1. Its stated process provenance is OpenAI Codex gpt-5.6-sol, Ultra. This pilot was produced with OpenAI Codex assistance at the user's direction; source and human-contributor credits are not replaced. This is a local translation pilot, not a complete textbook or a model-training corpus.</p>
+</footer></body></html>

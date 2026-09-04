@@ -1,0 +1,27 @@
+{
+  "unit":"PNB-006",
+  "status":"bounded_visual_review_pass_with_limitations",
+  "recorded_date":"2026-08-31",
+  "browser":"Codex in-app Chromium",
+  "reader_sha256":"f309fa728f6162c609ed3a33748797e6f51826036d4dcbe223d2f22b198f09f7",
+  "structural_checks":696,
+  "viewports":[{"width":1024,"height":800,"document_client_width":1009,"document_scroll_width":1009},{"width":390,"height":844,"document_client_width":375,"document_scroll_width":375}],
+  "observations":[
+    "The long difference-quotient calculation preserves equation/paragraph/equation order and scrolls inside its own region. Mobile mathematical overflow regions measure 316/353, 316/450 and 324/621 client/scroll pixels; the page stays 375 pixels wide.",
+    "Desktop shows the unchanged 487 by 459 graph, its axes and source points (-3,3), (1,3), (4,24), with the raster table below it. The mobile figure is a separate 340/487 scroll region.",
+    "The original h ≠ 0 note is visibly distinct from the translated source and explains why evaluating the simplified expression at zero does not define the original quotient.",
+    "The original square-root note visibly states m ≥ 4, the principal nonnegative root, g(5)=1 and the supplied m=8 solution to g(m)=2. Mathematical strings are LTR-isolated within RTL prose.",
+    "The source's general either-factor-or-both-zero statement is retained; the original note separately explains why p+3 and p−1 cannot both vanish at one p."
+  ],
+  "screenshot_sha256":{
+    "unit-006-difference-mobile.jpg":"7debf8307d274fde1defd376cb2a24e61b18888a642ef092883c8f890caa317e",
+    "unit-006-graph-desktop.jpg":"848f9884e564d5dbdcaf6fb6a02c6ee76aa501ee6f05225fa37f371db9358f05",
+    "unit-006-domain-mobile.jpg":"cb4f1f758ce693157206b8d626ae264dd393c71e9947abe3ac4e6d55b6cfb5ee",
+    "unit-006-root-mobile.jpg":"72b692ff5b6f9ab4f9fd424b2875beaeacedb71d6dc02c287185a55773d6b264"
+  },
+  "limitations":[
+    "Bounded selected views, not every line or a publication certification.",
+    "No screen-reader, cross-browser, cross-machine font or native arrow-key scrolling certification.",
+    "Native Punjabi, educator and assistive-technology review remain pending; this is not the whole canonical module."
+  ]
+}

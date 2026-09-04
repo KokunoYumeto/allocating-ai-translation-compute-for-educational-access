@@ -1,4 +1,4 @@
-"""Non-writing negative tests for m81244 source/math/table safeguards."""
+"""Non-writing negative tests for source/math/table safeguards."""
 import copy, json, unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -6,7 +6,7 @@ import build_module as b
 
 
 class ModuleGuards(unittest.TestCase):
-    def reject(self, relative, mutate):
+    def reject(self, relative, mutate, module='m81244'):
         path = b.L/relative
         data = json.loads(path.read_text(encoding='utf-8'))
         mutate(data)
@@ -18,7 +18,7 @@ class ModuleGuards(unittest.TestCase):
         # A missed guard cannot overwrite an existing translation or receipt.
         with patch.object(Path,'read_text',altered), patch.object(Path,'write_bytes',side_effect=RuntimeError('Unexpected output write')):
             with self.assertRaises(AssertionError):
-                b.build('m81244')
+                b.build(module)
 
     def test_wrong_addition_result(self):
         self.reject('modules/m81244.json',lambda x: next(c for c in x['answer_cases'] if c['exercise']=='fs-id2325655')['addition_results'].__setitem__(0,113))
@@ -37,6 +37,15 @@ class ModuleGuards(unittest.TestCase):
 
     def test_missing_translation(self):
         self.reject('translations/m81244-text.bn.json',lambda x: x.pop('Add Whole Numbers'))
+
+    def test_wrong_subtraction_result(self):
+        self.reject('modules/m81245.json',lambda x: next(c for c in x['answer_cases'] if c['exercise']=='fs-id2340048').__setitem__('subtraction_result',18),'m81245')
+
+    def test_wrong_attribute_override_expectation(self):
+        self.reject('modules/m81245.json',lambda x: next(o for o in x['slot_overrides'] if o['node_index']==295).__setitem__('expected','ভুল দৃশ্যবর্ণনা'),'m81245')
+
+    def test_wrong_inverse_addition_check(self):
+        self.reject('modules/m81245.json',lambda x: next(c for c in x['answer_cases'] if c['exercise']=='fs-id1397173')['inverse_addition_checks'].__setitem__(0,[4738,899,5638]),'m81245')
 
 
 if __name__=='__main__': unittest.main(verbosity=2)

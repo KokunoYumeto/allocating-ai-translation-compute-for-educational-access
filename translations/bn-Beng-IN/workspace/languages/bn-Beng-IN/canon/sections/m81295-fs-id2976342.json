@@ -1,0 +1,55 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81295",
+  "section": "fs-id2976342",
+  "scope": "Complete Add and Subtract Decimals section: four worked examples, eight try items, 12 supplied answers, four instructional tables and 10 image occurrences.",
+  "source_sha256": "c22d14bb2b833ed20ea5a7aa95d0e50b7810e8930834bd61993b8431dcfd02c3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR08", "TR09", "TR05", "WB04"],
+      "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv:TR05,TR08-TR09,WB04", "languages/bn-Beng-IN/terminology.tsv:T006,T045-T050,T053,T056", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png"],
+      "decision": "TR08/09 control decimal-number, decimal-point and place language. Use witnessed direct arithmetic register; স্থানধারক শূন্য remains an explicitly editorial term. Preserve dollar amounts as source context without conversion."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR08", "TR09"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:decimal-definition/place-value passage", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:decimal-reading passage", "all 10 frozen section image occurrences in their worked-table context"],
+      "decision": "Translate alignment by same-line place value rather than significant-figure language. Keep trailing zeros, all red placeholder marks, regrouping marks and source dollar/cents labels visible; give each image a precise Bengali description."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": ["TR08", "TR09"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:13.49 and place-value rows", "languages/bn-Beng-IN/terminology.tsv:T045-T050,T053,T056", "exact source fs-id2976342 subtree", "languages/bn-Beng-IN/translations/m81295-fs-id2976342.bn-Beng-IN.cnxml", "all nine final desktop captures and both narrow endpoint captures"],
+      "decision": "Rechecked all prompt/result pairs, table instructions, Bengali alternatives/ARIA and source punctuation embedded in MathML. No doubled sentence ending remains; all images and MathML are readable without page overflow."
+    }
+  ],
+  "source_errata": [],
+  "checks": [
+    "All 12 question/answer pairs preserved; no source-absent answer occurs in this block.",
+    "Independent exact-decimal checks pass: 3.7+12.4=16.1; 5.7+11.9=17.6; 18.32+14.79=33.11; 23.5+41.38=64.88; 4.8+11.69=16.49; 5.123+18.47=23.593; 20−14.65=5.35; 10−9.58=0.42; 50−37.42=12.58; 2.51−7.4=−4.89; 4.77−6.3=−1.53; 8.12−11.7=−3.58.",
+    "All four worked tables, one summary, three ARIA descriptions and 10 image alternatives retain exact operands, alignment, zeros, signs and results.",
+    "Chrome visual QA passes 1,200px height 7,715 with nine overlapping desktop captures and 390px height 10,067 with two endpoint captures; 10 images and 27 MathML roots render, with zero global overflow or browser error. Main read all 11 captures."
+  ],
+  "language_gaps": [
+    "T056 is editorial terminology and the Tripura pages are Indian Bengali register witnesses, not West Bengal curriculum certification.",
+    "Independent West Bengal teacher/language, learner and assistive-technology review is pending."
+  ],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "a9d55ac9d3dce35239561f8b75775ded9efd1ba9b2c3e655e3727d6471b9ca95",
+    "reader_sha256": "b473e3239c777daa2f96c0a64a32d4ebaf62fe3c963fab4ccade6ff72fa46a5e",
+    "browser_receipt_sha256": "6b83f1a0058d7f7ec011edec05631889705b5fd0f33fa4c8cf91175d3336f5b3",
+    "method": "Read-only build.translated and section renderer passed exact source tags, IDs, order, links, nonlinguistic attributes, MathML equality and English-prose gate; exact Decimal arithmetic and full prescribed section visual review also passed.",
+    "nodes": 333,
+    "ids": 93,
+    "mathml": 27,
+    "images": 10,
+    "questions": 12,
+    "supplied_answers": 12,
+    "source_absent_answers": 0,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integrates the complete module and repeats full-module desktop/narrow browser review. Entire assignment continues; no independent publishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

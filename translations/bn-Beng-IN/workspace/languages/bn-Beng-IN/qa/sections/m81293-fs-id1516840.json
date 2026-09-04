@@ -1,0 +1,80 @@
+{
+  "module": "m81293",
+  "section": "fs-id1516840",
+  "result": "pass",
+  "translation_sha256": "84eb62c7c8288b1938577fe36e9b152567f678e511fc203601eae97718d53cbd",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "9448f28a30578e8ad9333d9580afcc8d99ea0a9df7fddfb3503030874f3e349d"
+  },
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "reader": "reader/sections/m81293-fs-id1516840.html",
+  "reader_sha256": "31a542fca1fa898a0207bfb31d12c6d008b0a2a9cd621c871dededf5220d1c1e",
+  "nodes": 609,
+  "ids": 71,
+  "mathml": 76,
+  "localized_linguistic_mtext": 16,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 2,
+  "exercises": 6,
+  "assets": [
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_05_01_010_img.jpg",
+      "bytes": 34087,
+      "sha256": "6f9447748e3914fae2f3ce39212c4b0b3fdc131b1087d8fa5521a436c3ec36fb",
+      "git_blob": "ef61829f38ad1c6ae1f38202316c9146a67e8f4d"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_05_01_017_img-01.png",
+      "bytes": 970,
+      "sha256": "a2216c053c86c96485cf7b8968e98444a6e3fd601ab9370fb26c5fc07e0c79b8",
+      "git_blob": "4570da8bf36619be069b093381a925f6ff0dfb49"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_05_01_018_img.jpg",
+      "bytes": 37777,
+      "sha256": "f23a945dc7293022904e3fbddb540ca6359426e3f95d2a19719e0e5fdd63c2ce",
+      "git_blob": "3a0f46cea90d485208f1d37f799f3fac06406de3"
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "eip-797",
+        "fs-id1808165",
+        "eip-id1168468520524"
+      ],
+      "source_issue": "The general ordering procedure compares only digits right of the decimal, omitting the sign and whole-number-part checks. Without those conditions it fails for1.2and0.9orfornegativepairs. It also omits equality.",
+      "bengali_correction": "আগে চিহ্ন ও পূর্ণসংখ্যার অংশ তুলনা করো। অঋণাত্মক সংখ্যা দুটির পূর্ণসংখ্যার অংশ সমান হলেই সমান দশমিক ঘরে ডান দিকের অঙ্কগুলি তুলনা করা যায়। দুটি ঋণাত্মক সংখ্যার চিহ্ন বাদ দিয়ে পাওয়া মানের তুলনার ক্রম শেষে উল্টে দাও। সমান মান হলে সমান চিহ্ন ব্যবহার করো।",
+      "policy": "Add a visible labelled qualification and amend only explanatory steps. Retain all original mathematical operands, comparisons, example answers and node order.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_image_position_mismatch",
+      "source_ids": [
+        "fs-id2608749",
+        "fs-id2319421"
+      ],
+      "source_issue": "The point labelled0.04is drawn near0.031on the image scale, although its label and the relation0.40>0.04are correct.",
+      "evidence": "Actual010_img.jpg inspected. Read-only pixel analysis of900×64original:zero tickx31,0.1tickx114; first teal pointx52–61(center56.5). This places its center at about0.0307; a0.04point would havecenterx64.2. No image written or edited.",
+      "bengali_correction": "0.04 লেখা বিন্দুটি মূল ছবিতে কিছুটা বামে আঁকা। সঠিক স্থান শূন্যের ডান দিকে চার শতাংশ দূরে, অর্থাৎ 0.0 থেকে 0.1-এর ব্যবধানের চার-দশমাংশ দূরে। 0.40 > 0.04 তুলনাটি সঠিক।",
+      "policy": "Preserve original label and pixels; describe the source discrepancy and correct mathematical position in a labelled warning, not a silently redrawn answer.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "fs-id2608749",
+        "fs-id2438564"
+      ],
+      "source_issue": "English alt color labels do not match actual teal and pale-turquoise plotted points.",
+      "evidence": "ActualCNX_BMath_Figure_05_01_010_img.jpgand018_img.jpgdirectlyinspected.",
+      "bengali_correction": "রঙের উপর নির্ভর না করে প্রতিটি বিন্দুর মান, বাম-ডান অবস্থান ও তুলনার ফল বর্ণনা করা হয়েছে।",
+      "policy": "Correct Bengali descriptions to actual mathematical content without changing pixels.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

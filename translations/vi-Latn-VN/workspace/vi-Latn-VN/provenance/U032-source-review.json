@@ -1,0 +1,188 @@
+{
+  "unit": "A30-U032",
+  "date": "2026-08-31",
+  "status": "author_complete_independently_reviewed_root_integration_pending",
+  "source_module": "m49304",
+  "source_uuid": "1ca91f2c-f989-40da-b8cc-b930d5c0ad36",
+  "scope": "Complete final glossary, three terms/definitions; not a module guide or whole-module coverage claim.",
+  "boundary": {
+    "root_element": "glossary",
+    "original_root_id": null,
+    "position": "final direct child of document, after content",
+    "preceding_content_final_section": "fs-id1165137832031",
+    "preceding_content_outer": "fs-id1165135176628",
+    "first_definition": "fs-id1165135445751",
+    "last_definition": "fs-id1165137863188",
+    "stop": "</glossary>, followed only by </document>",
+    "verified_against": "Actual complete EN and ID XML, not scope-map authority."
+  },
+  "source_module_sha256": {
+    "english": "0e230c4c96d46e7962dcb3afa1f1630718f7e1cdfae9e665d640690ab6ace19c",
+    "indonesian": "a341bb8c05830b95c865b18d64b186fc9a88a08640bbb12f030879faa90b7539"
+  },
+  "translation_sha256": "c61e0f54e9b82a8e52715cd362f9b7933d32b6f9e65f3c309e939f95c9507e74",
+  "source_excerpt_sha256": "9f2774cf6617c38d8f9f4dd36b8d367b6b63078510eff0d8cf7515b5550a3df5",
+  "extraction_script_sha256": "3f39fe9db1d81f449b16aaf0f745210ced1c90c7145825184f2873d9e606d1c6",
+  "computing_check_sha256": "c3a3af19fd1b1c5008aa1c51f6892177d79d2f8b76098ca5709332684d2dce33",
+  "canon_review_sha256": "36b5307e73e6065904e6a4a16a7b7c6bcc70f7d1ff3dc5ec7eae2a71223e29de",
+  "source_id_namespace": "Every source ID qualified by m49304; raw same-ID occurrences in other modules do not establish shared coverage.",
+  "source_ids": [
+    "fs-id1165135445751",
+    "fs-id1165135190252",
+    "fs-id1165135487256",
+    "fs-id1165137452169",
+    "fs-id1165137863188",
+    "fs-id1165137863193"
+  ],
+  "source_math_keys": [
+    [
+      "fs-id1165137863193",
+      0
+    ]
+  ],
+  "scope_counts": {
+    "definitions": 3,
+    "terms": 3,
+    "meanings": 3,
+    "source_ids": 6,
+    "mathml_occurrences": 1,
+    "mtext": 1,
+    "numeric_tokens": 0,
+    "images": 0,
+    "source_examples": 0,
+    "exercises": 0,
+    "solutions": 0,
+    "new_exercise_answers": 0,
+    "local_links": 0,
+    "crossreader_links": 0
+  },
+  "source_comparison": {
+    "english_glossary_canonical_equals_excerpt": true,
+    "english_raw_inner_xml_preserved": true,
+    "wrapper_change": "Inherit namespace declarations explicitly on the standalone anonymous glossary; normalize file line endings toLF through text extraction; no content pruning.",
+    "english_indonesian_math_difference": {
+      "owner": "fs-id1165137863193",
+      "index": 0,
+      "english_mtext": "statement about ",
+      "indonesian_mtext": "pernyataan tentang ",
+      "other_math_nodes_identical": true
+    },
+    "math_reconstruction": "Keep sourceMathML and apply only exact configured mtext localization. No empty-layout pruning."
+  },
+  "math_text_replacements": {
+    "statement about ": "điều kiện về "
+  },
+  "definition_review": [
+    {
+      "definition_id": "fs-id1165135445751",
+      "meaning_id": "fs-id1165135190252",
+      "en": "interval notation",
+      "id": "notasi interval",
+      "vi": "Ký hiệu khoảng",
+      "source_meaning": "All numbers between lower and upper bounds, listed with square/round brackets according to boundary inclusion.",
+      "labeled_supplement": "Generic interval notation covers all four finite endpoint types undera<b; infinities are not real numbers and require round parentheses."
+    },
+    {
+      "definition_id": "fs-id1165135487256",
+      "meaning_id": "fs-id1165137452169",
+      "en": "piecewise function",
+      "id": "fungsi sesepenggal",
+      "vi": "Hàm số cho bởi nhiều công thức",
+      "source_meaning": "More than one formula used to define output.",
+      "labeled_supplement": "Branch applicability and expression-definedness; any overlap must give the same output; every declared-domain input has exactly one output, unreceived inputs outside the stated rule's domain."
+    },
+    {
+      "definition_id": "fs-id1165137863188",
+      "meaning_id": "fs-id1165137863193",
+      "en": "set-builder notation",
+      "id": "notasi pembentuk himpunan",
+      "vi": "Ký hiệu tập hợp theo điều kiện",
+      "source_meaning": "A rule obeyed by all members, with original {x | statement about x} MathML.",
+      "labeled_supplement": "Condition bar means sao cho, not absolute value; make ambient set explicit and take every satisfying member, not only a selected subset."
+    }
+  ],
+  "source_qualifications": "No source mathematical error changed. Brief source definitions retained; additional precision is separately labeled.",
+  "assets": [],
+  "cross_reader_mapping": [],
+  "checks": {
+    "command": "python -B computing/check_domain_glossary.py",
+    "status": "PASS",
+    "mixed_checks": 106,
+    "source_structure_checks": 70,
+    "finite_checks": 36,
+    "finite_breakdown": "20finite endpoint memberships+5unbounded real-element probes+8branch/domain witnesses+3finite set-builder selections.",
+    "mathematical_limit": "Finite tests exercise concepts; no universal proof inferred.",
+    "independent_review": {
+      "status": "PASS",
+      "reviewer": "/root/u006_graph_tests",
+      "translation_sha256": "c61e0f54e9b82a8e52715cd362f9b7933d32b6f9e65f3c309e939f95c9507e74",
+      "source_excerpt_sha256": "9f2774cf6617c38d8f9f4dd36b8d367b6b63078510eff0d8cf7515b5550a3df5",
+      "note": "Complete draft/excerpt and actual full EN/ID final glossary read. English canonical-equals excerpt; all6IDs/1Math reference once, no source images/exercises/links. Only EN/ID Math change is exact mtext statement about /pernyataan tentang ; proposed điều kiện về  is faithful with NBSP convention. Actual HUST OCR07/08/nativepp19–20/currentT031/T032 reread. All three direct meanings and labeled endpoint/infinity/compatible branch/expression-definedness/universe/all-satisfying-member supplements sound. No substantive issue, edits or checker reliance."
+    },
+    "no_reader_build_by_author": true
+  },
+  "integration_config": {
+    "slug": "A30-U032-domain-glossary",
+    "source": "sources/m49304-domain-glossary-source.cnxml",
+    "required_ids": [
+      "fs-id1165135445751",
+      "fs-id1165135190252",
+      "fs-id1165135487256",
+      "fs-id1165137452169",
+      "fs-id1165137863188",
+      "fs-id1165137863193"
+    ],
+    "numeric_checks": {},
+    "images": 0,
+    "source_examples": 0,
+    "try_it_exercises": 0,
+    "selected_end_exercises": 0,
+    "new_unique_end_exercises": 0,
+    "repeated_from_U001": [],
+    "glossary_definitions": 3,
+    "source_answers": 0,
+    "new_labeled_answers": 0,
+    "computing_check": "computing/check_domain_glossary.py",
+    "mixed_assertions": true,
+    "assertion_kind": "106mixed checks:70source/structure and36finite notation/branch/set-builder witnesses; not universal proofs.",
+    "minimum_canon_examples": 4,
+    "visual_receipt": "qa/visual-A30-U032.json",
+    "math_text": {
+      "statement about ": "điều kiện về "
+    },
+    "prune_empty_math_layout": false,
+    "layout_adaptations": [
+      "Standalone original anonymous glossary root, with namespaces needed for the exact singleMathML; no fabricated source ID or duplicated orientation.",
+      "Three definition headings and three distinct meaning blocks in source order.",
+      "Only one exact NBSP-bearing mtext localization; braces, condition bar, both x tokens and0.5em mspace retained.",
+      "Three labeled supplements, no images/exercises/local/crossreader links."
+    ],
+    "visual": {
+      "anchors": [
+        "vi-prerequisites",
+        "vi-glossary",
+        "fs-id1165135445751",
+        "fs-id1165135487256",
+        "fs-id1165137863188",
+        "vi-attribution"
+      ],
+      "primary": "fs-id1165137863188",
+      "secondary": "fs-id1165135445751",
+      "answer": "fs-id1165135487256"
+    }
+  },
+  "decisions": [
+    "Select the complete anonymous final <glossary> of m49304 after complete content ending with RealWorld fs-id1165137832031. Keep three definitions and meanings in original order, six source IDs and one MathML occurrence. Standalone glossary root adds only required namespace declarations, no invented source ID, title, objective, guide or preceding content.",
+    "Use the current terminology ledger: ký hiệu khoảng, hàm số cho bởi nhiều công thức, ký hiệu tập hợp theo điều kiện. Preserve source definitions as distinct meaning-ID blocks. The exact piecewise and set-builder headings remain descriptive choices, not directly attested in the current Vietnamese witnesses.",
+    "The source interval definition is concise and framed with lower/upper bounds; translate it without replacing it. In a separately labeled note, qualify four finite endpoint forms by a<b and state that infinities are not real numbers and always use round parentheses.",
+    "Translate piecewise as use of more than one output formula. In a separately labeled note retain branch conditions, expression-definedness, existence/uniqueness, and agreement on any overlap; do not falsely require branches to have disjoint input sets.",
+    "Retain the set-builder structure {x | statement about x}, both x tokens, braces, condition bar and mspace width0.5em. Only the one exact mtext is localized: statement\\u00a0about\\u00a0 to điều\\u00a0kiện\\u00a0về\\u00a0. Indonesian uses pernyataan\\u00a0tentang\\u00a0 in the same position; all remaining mathematical nodes agree.",
+    "The set-builder supplement reads | as sao cho, distinguishes it from absolute-value bars, makes the ambient set explicit and requires every satisfying element rather than an arbitrary subset. No new exercise or answer is introduced.",
+    "Actual HUST OCR07/08 and native printedp6/pp19–20 were reopened before drafting, after the first two definitions, and at final author review. Canon supports domain/function and interval-category language; it does not directly witness all three glossary headings. No external reference exercise copied and no mathematical source displaced by OCR.",
+    "106mixed checks pass with both originals present:70source/structure and36finite witnesses of endpoint notation, compatible/incompatible branches, expression restrictions and set-builder selection. These are not106mathematical proofs. No image, graph, cross-reader dependency or source numeric token exists in this unit.",
+    "Directly read new coordinator userturn[local-task-id]/item1 and updated local USER_INSTRUCTIONS.md. The single GitHub review-branch publication and hourly checks remain coordinator-owned. Supply exact accepted-versus-WIP snapshots; no independent push, goal replacement or duplicate automation.",
+    "Root owns registry/build/final source/canon/visual acceptance. The anonymous glossary's being final in the XML is not proof of full-module or book completion; draft explicitly says so. No shared edits, assets, downloads, broad audit, deletion or commit."
+  ],
+  "native_speaker_review": "not_performed",
+  "completion_warning": "Final-file position does not establish fullmodule coverage. Root final source/canon acceptance, registry/build/visual remain; final_checked=false and all five books remain in scope."
+}

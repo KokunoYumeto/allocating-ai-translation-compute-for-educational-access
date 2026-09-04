@@ -1,0 +1,108 @@
+{
+  "module": "m81293",
+  "section": "fs-id943979",
+  "result": "pass",
+  "translation_sha256": "b4baac2cc2380059763ac7b4a6713ff472542ef8a66f8a51cadc966cba021f5c",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "9448f28a30578e8ad9333d9580afcc8d99ea0a9df7fddfb3503030874f3e349d"
+  },
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "reader": "reader/sections/m81293-fs-id943979.html",
+  "reader_sha256": "b58c41390a65e6a4f53afd2f7cf621021817812b8c2115481e8a601383c1369f",
+  "nodes": 176,
+  "ids": 45,
+  "mathml": 33,
+  "localized_linguistic_mtext": 0,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 2,
+  "exercises": 6,
+  "assets": [
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_05_01_010_img.jpg",
+      "bytes": 34087,
+      "sha256": "6f9447748e3914fae2f3ce39212c4b0b3fdc131b1087d8fa5521a436c3ec36fb",
+      "git_blob": "ef61829f38ad1c6ae1f38202316c9146a67e8f4d"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_05_01_005_img.jpg",
+      "bytes": 34467,
+      "sha256": "7cd7e7d2d2dfd4eec9d979257b81a9127ab66afe93fe10bafc0c57d0c311751c",
+      "git_blob": "39f0783960abf5cd33b8fcfee5e24835756602ef"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_05_01_006_img.jpg",
+      "bytes": 35952,
+      "sha256": "a4c8b19dc9d2a150107b2343524fb66cf255de214c654d9eebbd4e9eb97d4869",
+      "git_blob": "3eb07fb6600127fe82432961afcceeb6a0355e46"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_05_01_007_img.jpg",
+      "bytes": 42258,
+      "sha256": "8feec1f54a2aaab4392805518ab9f1710cdf502114d35c90982a65c6d4bdd0d7",
+      "git_blob": "9e015043fb738e6a4401f1f5d3675d178348cbee"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_05_01_008_img.jpg",
+      "bytes": 38049,
+      "sha256": "e6a26ff131eba96042c4d49f69b3100d841525a2aa547a719ac540f8eb59cc1c",
+      "git_blob": "2d84b2cdc5204560b57fcfa3bc0b236978c823e7"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_05_01_009_img.jpg",
+      "bytes": 38813,
+      "sha256": "00f30a6bae2b704c2745def848a829fbeb1a012e9012f6c0e35f1eae6534e968",
+      "git_blob": "40d22b0080ed2bd55595559fe4828bbe029e7bbd"
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_image_position_mismatch",
+      "source_ids": [
+        "fs-id1772457",
+        "fs-id2646906"
+      ],
+      "source_issue": "The point labelled0.04is drawn near0.031on the image scale, although its label and the relation0.40>0.04are correct.",
+      "evidence": "Actual010_img.jpg inspected. Read-only pixel analysis of900×64original:zero tickx31,0.1tickx114; first teal pointx52–61(center56.5). This places its center at about0.0307; a0.04point would havecenterx64.2. No image written or edited.",
+      "bengali_correction": "0.04 লেখা বিন্দুটি মূল ছবিতে কিছুটা বামে আঁকা। সঠিক স্থান শূন্যের ডান দিকে চার শতাংশ দূরে, অর্থাৎ 0.0 থেকে 0.1-এর ব্যবধানের চার-দশমাংশ দূরে। 0.40 > 0.04 তুলনাটি সঠিক।",
+      "policy": "Preserve original label and pixels; describe the source discrepancy and correct mathematical position in a labelled warning, not a silently redrawn answer.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "fs-id2455717"
+      ],
+      "source_issue": "The opening assertion that decimals are forms of fractions is unqualified. The section uses finite decimals; arbitrary nonrepeating infinite decimal expansions are not rational fractions.",
+      "bengali_correction": "এখানকার সসীম দশমিকগুলিকে ভগ্নাংশে লেখা যায়; সব অসীম দশমিকের ক্ষেত্রে এই দাবি করা হচ্ছে না।",
+      "policy": "Limit the opening to the actual finite-decimal examples and add a labelled caution; preserve all source math and examples.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_image_anomaly",
+      "source_ids": [
+        "fs-id1772457",
+        "fs-id2646906"
+      ],
+      "source_issue": "The source image for locating0.4also contains an additional point near zero labelled0.04. This extra point is not explained in the source prose and is omitted from its English alt.",
+      "evidence": "Directly inspected CNX_BMath_Figure_05_01_010_img.jpg: intended point at0.4plus a second point between0.0and0.1labelled0.04. Initial visual inspection did not quantify the extra point; subsequent read-only pixel measurement is recorded separately.",
+      "bengali_correction": "মূল ছবির অতিরিক্ত 0.04 লেখা বিন্দুটি প্রশ্নের উত্তর 0.4 নয়; 0.4-এর সঠিক বিন্দু আলাদা করে চিহ্নিত আছে।",
+      "policy": "Retain both original points and all pixels. Describe both in Bengali alt and add a visible labelled warning; do not silently remove or replace the unexpected source content.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "fs-id2646906",
+        "fs-id1799222"
+      ],
+      "source_issue": "The English alts call the plotted points red; the actual images use teal points.",
+      "evidence": "Directly inspected CNX_BMath_Figure_05_01_010_img.jpg and007_img.jpg.",
+      "bengali_correction": "রঙের উপর নির্ভর না করে বিন্দুর মান, দিক ও অবস্থান বর্ণনা করা হয়েছে।",
+      "policy": "Omit the incorrect color claim and describe mathematical position; preserve source pixels.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

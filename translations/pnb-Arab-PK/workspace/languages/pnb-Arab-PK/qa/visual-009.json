@@ -1,0 +1,55 @@
+{
+  "unit": "PNB-009",
+  "status": "bounded_visual_review_pass_with_limitations",
+  "recorded_date": "2026-08-31",
+  "browser": "Codex in-app Chromium",
+  "final_reader_sha256": "6c9c4a16ada968fb81f2bbe3b2195ab92806bed205693622ef455fceafbbed9c",
+  "structural_checks": 7325,
+  "detached_mutations": 107,
+  "viewports": [
+    {
+      "requested_width": 390,
+      "requested_height": 844,
+      "document_client_width": 375,
+      "document_scroll_width": 375
+    },
+    {
+      "requested_width": 1024,
+      "requested_height": 800,
+      "document_client_width": 1009,
+      "document_scroll_width": 1009
+    }
+  ],
+  "observations": [
+    "Original graph207 visibly has open endpoints(0,3) and(2,-3), with rays respectively right and left. The two overlapping x ranges remain discernible; endpoints are not filled or swapped.",
+    "Original graph216 is a vertical ellipse centered(-2,1), with extrema(-3,1),(-1,1),(-2,3),(-2,-1), not the circle named in the source alt. The separate corrected description and supplied nonfunction answer agree with the pixels.",
+    "Original graph224 visibly labels the y-axis10·10^5 through-10·10^5. The separate description correctly interprets endpoints as±1,000,000; source graph arrows remain despite the closed-domain exercise.",
+    "Longest rounded-answer MathML is677.573px within a340px local scroller, scrollwidth678 and maxscroll337.698px. Both end views show negative arguments, source equality and4.414/4.732/5.236 without clipping the page. Source fractions and exponents in adjacent exercises remain readable.",
+    "Numerical table fs-id1165137727218 retains2x11cells and LTR source order: x,0..9 and f(x),74,28,1,53,56,3,36,45,14,47. It is352.189px within340px mobile width, maxscroll12.698px; both edges and the full desktop table were viewed.",
+    "Final exercise92 preserves source underlined not as underlined نہیں, with f(x)=3(x-5)^2+7 readable LTR inside RTL prose. No missing solution was invented.",
+    "Desktop glossary view shows one-to-one function, output, range, relation and vertical-line-test definitions in separate source-bound entries. Parent also read all11English/target definitions directly.",
+    "Clicked the actual observed source link جدول1.1.15 and verified #fs-id1165137727218. An initial over-specific selector did not match; the subsequent exact visible-name link click succeeded and its destination was independently checked.",
+    "Final desktop context and objectives show all5source objectives and retained UUID. The original title agreement repair دی→دیاں is reflected in the browser title; all244source blocks stayed unchanged."
+  ],
+  "screenshot_sha256": {
+    "unit-009-11-column-table-mobile.jpg": "a813a1dc733fddd3f86f51b14ebd3a56eae368c8cf3c65f69e7660fcf9d19c06",
+    "unit-009-11-column-table-right-mobile.jpg": "d6ddc5add4985914d3739819eb48157cdade79d01f003fd54acce36b428ba446",
+    "unit-009-ellipse216-mobile.jpg": "f8bb1b82910e6d519bc1ed41be02b5561fedb176161ce7da12423a580e9fcdbb",
+    "unit-009-five-objectives-desktop.jpg": "b08d2663a1bafa90f15298261ed4af9ccda0035f4127fb56fe8d7598ed7cc6e1",
+    "unit-009-glossary-desktop.jpg": "b8dec57c8ffdf0033aea1c4fc5de1a48042f6710c468b8e64d7747d7d6576b5a",
+    "unit-009-million-scale-mobile.jpg": "591eac4f26866c62c6973bcf7a5c0be40dd05da00bcf3cfeec7bfd13becd496b",
+    "unit-009-module-context-desktop.jpg": "d76cd2684300167f447b3f4e980498d4c853c5ab7c6b8f3908cdc7e7e504f8a6",
+    "unit-009-open-endpoints-mobile.jpg": "f9962552d26e530e1418553e68b22cf6ca29058f645d4f0c92a84ea28d89b2fe",
+    "unit-009-rounded-answer-left-mobile.jpg": "970484d444365e491eac2511f47d0f6547333a41dd8a92527f8b2d9555d5c595",
+    "unit-009-rounded-answer-right-mobile.jpg": "dd137bd97c0d219ecdef9b04503586d72520dd6af1e81cf901fbea06e4b62b8f",
+    "unit-009-source-table-link-desktop.jpg": "035321c6a09ae636d6317db390aa85edcf0dcb84d9fc14bf4f9739d90c2b1a5b",
+    "unit-009-underlined-not-mobile.jpg": "87d6d120a11b88bf84fbea7fe4aaa7c4c2cc2c8acc18316134ba994b0ec6ccf5"
+  },
+  "evidence_sequence": "Earlier graph/table/math screenshots preceded the title-only original UI correction; those source-body regions did not change. Final desktop glossary, table-link, original context and five-objective views use the final reader. Actual screenshot dimensions differ from requested emulated viewport dimensions.",
+  "limitations": [
+    "Selected views only, not a full visual proofread of92exercises or all26images by the parent. Drafter inspected all originals; independent QA binds their bytes and descriptions.",
+    "No native-speaker, educator, screen-reader, keyboard-navigation, cross-browser or font-portability certification.",
+    "Only46source solutions are supplied. No interactive assessment engine, automatic grading or newly solved missing exercises is claimed.",
+    "Whole m49301 source coverage is separately proven across001–009, not by this visual receipt alone; earlier A30modules and allremainingassignedbooks still require work."
+  ]
+}

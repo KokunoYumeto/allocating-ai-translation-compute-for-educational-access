@@ -1,0 +1,20 @@
+{
+  "unit": "A10-006",
+  "reviewed_at": "2026-09-01T17:28:15+02:00",
+  "reader_sha256": "515ae99706a621c967c5f2b1d4c9e6562c78e34987072e86e122f5f2c4bf7860",
+  "browser": "in-app Browser",
+  "viewports": {"desktop_content_width": 1009, "mobile_content_width": 375, "mobile_height": 800},
+  "result": "pass; bounded visual review, not native or assistive-technology certification",
+  "observations": [
+    "No duplicate IDs, broken images or page-level overflow at desktop or mobile width.",
+    "All eight source tables remain in local horizontal scrollers; actual operations-table pan reached scrollLeft 600.",
+    "The 541-pixel exponent image remains in a 340-pixel local scroller; original labels and both exponent diagrams were visibly reviewed.",
+    "Footer scope and separate source-correction disclosure remain visible."
+  ],
+  "screenshots": [
+    {"path": "qa/a10-unit-006-final-top-mobile.png", "sha256": "fb001ae0f379fd9434cba1a224e89b7d371121b6fe9d27958c4335ab540cb0ff", "bytes": 24751},
+    {"path": "qa/a10-unit-006-final-table-left-mobile.png", "sha256": "9061fa4ed7d076cd36f8415f066bbcd3153621418cde1e9230691f926e5b9e66", "bytes": 24413},
+    {"path": "qa/a10-unit-006-final-table-right-mobile.png", "sha256": "1fa75b896671fd82fb2abad24dd50beb62b715fae9624680a6a99ead5f9f2c0b", "bytes": 25255},
+    {"path": "qa/a10-unit-006-final-exponent-mobile.png", "sha256": "732253f28dc7e3153add8dd7cd096827959cbe9a0eda74e4037430f76e261a01", "bytes": 29757}
+  ]
+}

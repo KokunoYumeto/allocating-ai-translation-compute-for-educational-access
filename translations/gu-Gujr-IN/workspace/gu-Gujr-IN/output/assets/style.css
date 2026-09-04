@@ -1,0 +1,16 @@
+@font-face{font-family:Gujarati;src:url('NotoSansGujarati.ttf') format('truetype');font-weight:100 900;font-display:swap}
+:root{color-scheme:light;--ink:#182c35;--muted:#465760;--accent:#08656b;--pale:#ecf6f3;--line:#b8cecb}
+*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:var(--ink);font:18px/1.9 Gujarati,'Nirmala UI',sans-serif}
+a{color:#075b76;text-underline-offset:.2em}a:focus-visible,summary:focus-visible{outline:3px solid #a83e10;outline-offset:4px}
+.skip{display:block;padding:.4rem 1rem;background:#fff}header,main,footer,nav{max-width:860px;margin:auto;padding:1.2rem 2rem}
+header{padding-top:2.5rem;border-bottom:4px solid var(--accent)}.eyebrow{font-size:.8rem;letter-spacing:.05em;color:var(--accent)}
+h1{font-size:2.2rem;line-height:1.5;margin:.3rem 0}h2{font-size:1.5rem;line-height:1.65;margin:2rem 0 .8rem}h3{font-size:1.15rem;line-height:1.7;margin:.7rem 0}
+nav{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;background:#fff}p{margin:.6rem 0}.note,.route,.item,.worked{padding:1rem 1.3rem;border:1px solid var(--line);border-radius:8px;margin:1.1rem 0;background:white}
+.note,.worked{background:var(--pale)}.route{border-left:5px solid var(--accent)}.id{font-family:monospace;font-size:.82em;color:var(--muted)}
+.options{list-style-type:upper-alpha}.answer-space{height:2.5rem;border-bottom:1px solid #777;margin:.5rem 0}li{padding:.18rem 0}.feedback{border-left:3px solid #758f94;padding-left:1rem;margin:.7rem 0}
+.muted{color:var(--muted);font-size:.88rem}.math{font-family:Gujarati,serif;font-size:1.25rem}.number-line{max-width:100%;width:680px;height:auto}figure{margin:1.3rem 0}figcaption{font-size:.9rem}
+table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{text-align:left;padding:.5rem .8rem;border:1px solid var(--line)}th{background:var(--pale)}
+footer{font-size:.82rem;border-top:2px solid var(--line);margin-top:2rem}math{font-size:1.2em;max-width:100%}.source ul{list-style:none;padding-left:1rem}.source .solution{background:#edf3f5;padding:.8rem;margin:.6rem 0}.source .note{padding:.7rem}
+.source section{margin-bottom:1.5rem}.source .example{border:1px solid var(--line);padding:1rem}.source .equation{margin:1rem 0}.source .source-id{font-size:.72rem;color:var(--muted)}
+@media(max-width:540px){header,main,footer,nav{padding:1rem}body{font-size:17px}h1{font-size:1.75rem}.item,.route,.worked,.note{padding:.8rem}th,td{padding:.3rem}}
+@media print{@page{size:A4;margin:15mm}body{background:white;color:#000;font-size:11pt;line-height:1.7}header,main,footer{max-width:none;padding:0}nav,.skip,.screen-only{display:none}h1{font-size:22pt}h2{font-size:16pt;break-after:avoid}h3{font-size:12pt;break-after:avoid}.item,.worked,.feedback,figure,tr{break-inside:avoid}.route{break-inside:auto}.note,.worked,th{background:white}.id,.muted,footer{color:#333}.item{border:1px solid #aaa}.answer-space{height:12mm}a{color:inherit}.number-line{width:100%}}

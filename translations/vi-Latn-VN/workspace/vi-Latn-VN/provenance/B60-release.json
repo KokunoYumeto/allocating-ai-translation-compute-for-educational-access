@@ -1,0 +1,73 @@
+{
+  "schema_id": "clp4-id-release-manifest",
+  "schema_version": "1.0.0",
+  "result": "pass",
+  "status": "complete_owner_integrated_publication_ready",
+  "release_date": "2026-08-26",
+  "owner_receipt": {
+    "path": "00_control/CLP4_OWNER_INTEGRATION_RECEIPT_V2.json",
+    "bytes": 7635,
+    "sha256": "5a2f4746bbfea59be1c51859572ab68787f40f1fa8fe6383cbc99eb4c6d79619"
+  },
+  "readers": [
+    {
+      "kind": "textbook",
+      "filename": "CLP-4-Kalkulus-Vektor-Bahasa-Indonesia.pdf",
+      "pages": 316,
+      "bytes": 3758521,
+      "sha256": "5ecf6047b63afd4a456cc230f69016aea59d80cd0bd2be73ce24b0000df98b87"
+    },
+    {
+      "kind": "problembook",
+      "filename": "CLP-4-Latihan-Kalkulus-Vektor-Bahasa-Indonesia.pdf",
+      "pages": 486,
+      "bytes": 3939483,
+      "sha256": "a6253809eaa4a465d5efcc4372b1321ad828aa4964ec45042aab9130a358835b"
+    }
+  ],
+  "source_backend_archive": {
+    "path": "CLP-4-Kalkulus-Vektor-Bahasa-Indonesia-sumber-backend.zip",
+    "bytes": 35496581,
+    "sha256": "3f58f4762b1b638a051afc3c1f66c2bd9ae87a5ef3e445902abe2a8235f64b95"
+  },
+  "source_backend_archive_verification": {
+    "result": "pass",
+    "entries": 4354,
+    "crc_failures": 0,
+    "inventory_match": true,
+    "entry_hashes_match": true,
+    "deterministic_replay_sha256": "3f58f4762b1b638a051afc3c1f66c2bd9ae87a5ef3e445902abe2a8235f64b95"
+  },
+  "source_package_manifest": {
+    "path": "SOURCE_PACKAGE_MANIFEST.json",
+    "bytes": 791091,
+    "sha256": "1f2878810343defeb4ce7e274cc112a7d3f54fb45496b502aa048a0186417c6f"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "publication_lineage": {
+    "zenodo_concept_doi": "10.5281/zenodo.22105442",
+    "zenodo_version_doi": "10.5281/zenodo.22105443",
+    "zenodo_record_id": 22105443,
+    "zenodo_record_url": "https://zenodo.org/records/22105443",
+    "github_repository": "https://github.com/KokunoYumeto/clp4-vector-calculus-id",
+    "resolution": "first non-duplicative CLP4 Indonesian concept and repository"
+  },
+  "security_check": {
+    "result": "pass",
+    "files_checked": 4353,
+    "text_files_content_scanned": 717,
+    "private_absolute_paths": 0,
+    "credential_patterns": 0,
+    "forbidden_or_transient_names": 0
+  },
+  "excluded": [
+    "helper packet",
+    "temporary build roots",
+    "translation caches",
+    "raw provenance dumps",
+    "duplicate reader snapshots",
+    "machine-local integration scripts",
+    "credentials"
+  ],
+  "provenance": "OpenAI Codex gpt-5.6-sol, Ultra, acting on the user's instructions"
+}

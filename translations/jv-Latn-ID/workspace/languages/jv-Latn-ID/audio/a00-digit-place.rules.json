@@ -1,0 +1,1333 @@
+{
+  "schema": "jv-source-bound-narration-fixtures-v1",
+  "status": "draft_provider_neutral_not_synthesized_not_listening_reviewed",
+  "date": "2026-08-31",
+  "purpose": "AX-2 exact narration fixtures for the complete A00 digit-place subsection; translation review only, not training or fine-tuning data.",
+  "tracks": [
+    "jv-academic",
+    "jv-conversation",
+    "id-academic"
+  ],
+  "locales": {
+    "jv-academic": "jv-Latn-ID",
+    "jv-conversation": "jv-Latn-ID",
+    "id-academic": "id-ID"
+  },
+  "scope": {
+    "unit": "a00-digit-place",
+    "module": "m81243",
+    "section": "fs-id1883656",
+    "complete_section": true,
+    "direct_child_slice_zero_based": [
+      0,
+      9
+    ],
+    "direct_children_including_title": 9,
+    "direct_child_ids_after_title": [
+      "fs-id1795155",
+      "fs-id2825467",
+      "fs-id1408851",
+      "CNX_BMath_Figure_01_01_011",
+      "fs-id930962",
+      "fs-id1891091",
+      "fs-id2310429",
+      "fs-id1282619"
+    ],
+    "first_instructional_anchor": "fs-id1795155",
+    "last_top_level_anchor": "fs-id1282619",
+    "last_solution_id": "fs-id2619544",
+    "last_descendant_id": "fs-id1807276",
+    "next_section": "fs-id1321580",
+    "source_unique_ids": 31,
+    "source_mathml_expression_count": 40,
+    "indonesian_checkout_path": "downloads/jv-Latn-ID/a00-id/modules/m81243/index.cnxml",
+    "indonesian_commit": "3de9207f56f8b5c57c017abf973fb04e00d740f1",
+    "indonesian_git_blob": "90def09ee1dbfdc66aa8bc910938ad7684668e97",
+    "indonesian_blob_sha256": "7153ce88bcd4aea07fab4075bdb025884e07d534aafb6d06ff1bfbedbc46f251",
+    "english_checkout_path": "downloads/jv-Latn-ID/openstax-prealgebra-bundle/modules/m81243/index.cnxml",
+    "english_commit": "38cae454e644abf9f0a623e876994553881597c9",
+    "english_git_blob": "612244f80ecb6bce0f811c9d99204ae2f9f7a4f5",
+    "english_blob_sha256": "396b0029798e054e5db6d7acde738cec9f9d8b86bc81da8cc3690d01ec07cf2b",
+    "hash_basis": "Exact bytes read from pinned Git blobs; Windows checkout line-ending normalization is not the hash basis.",
+    "completion_claim": "This finite subsection has source-bound narration and standalone review drafts. Full A00, A10, AX-2 and m81243 remain unfinished."
+  },
+  "matching_contract": {
+    "namespace_context": {
+      "m": "http://www.w3.org/1998/Math/MathML",
+      "cnxml": "http://cnx.rice.edu/cnxml"
+    },
+    "dispatch": "Require pinned source blob/hash, module, section, top-level anchor, one-based MathML ordinal, and exact namespace-aware tree including element order, attributes, text tokens, comma grouping and punctuation. Whitespace-only formatting may differ; no semantic normalization is authorized.",
+    "mathml_storage": "Exact raw source element substrings under inherited m namespace; parse inside a namespace-bearing wrapper.",
+    "unknown_case": "unsupported_source_bound_narration",
+    "generic_number_parser_authorized": false,
+    "strip_commas_then_parse_at_runtime": false,
+    "operator_conventions_are_not_a_parser": true,
+    "mutate_visible_source": false,
+    "source_mathml_inventory": {
+      "tags": [
+        "math",
+        "mrow",
+        "mn",
+        "mo",
+        "mtext"
+      ],
+      "attributes": [],
+      "mo_tokens": [
+        ".",
+        ";"
+      ],
+      "mtext_tokens": [
+        "basis-10"
+      ]
+    },
+    "register_note": "Fixed numeric readings intentionally match across Javanese registers; chart prose and surrounding translations remain separately labeled.",
+    "provider_behavior": "No provider or voice selected. A later synthesizer must explicitly support the requested locale or return unsupported_voice_locale, never substitute Indonesian for Javanese silently."
+  },
+  "canon_checkpoint": {
+    "stage": "Read actual Indonesian and English section trees and readable canon at narration drafting; reread the relevant entries at revision.",
+    "consulted": [
+      {
+        "path": "downloads/jv-Latn-ID/canon/wilangan.txt",
+        "observed": "wilangan includes count/number senses",
+        "decision": "Retain wilangan for complete integers; distinguish a digit specimen from its positional contribution."
+      },
+      {
+        "path": "downloads/jv-Latn-ID/canon/atus.txt",
+        "observed": "atusan ratusan; satus seratus (100); rong atus dua ratus (200)",
+        "decision": "Use satus and rong atus; other composed hundreds/large-period readings remain explicitly provisional."
+      },
+      {
+        "path": "downloads/jv-Latn-ID/canon/enggon.txt",
+        "observed": "enggon 1 tempat; 2 lokasi; panggonan tempat utk tinggal",
+        "decision": "Ordinary location support only; nilai panggonan is not claimed an attested standardized mathematical compound."
+      },
+      {
+        "path": "downloads/jv-Latn-ID/canon/tengen.txt",
+        "observed": "tengen means right; distinct from tengèn",
+        "decision": "Retain unaccented tengen for chart alignment from the right."
+      },
+      {
+        "path": "downloads/jv-Latn-ID/canon/kiwa.txt",
+        "observed": "kiwa means left, opposite to right",
+        "decision": "Read at the revision checkpoint for the explicitly left-to-right chart-column narration."
+      },
+      {
+        "path": "downloads/jv-Latn-ID/canon/saka.txt",
+        "observed": "saka includes from and range-start senses",
+        "decision": "Use saka kiwa menyang tengen in the finite chart descriptions; not a full mathematical-register attestation."
+      },
+      {
+        "paths": [
+          "downloads/jv-Latn-ID/canon/siji.txt",
+          "downloads/jv-Latn-ID/canon/loro.txt",
+          "downloads/jv-Latn-ID/canon/telu.txt",
+          "downloads/jv-Latn-ID/canon/papat.txt",
+          "downloads/jv-Latn-ID/canon/lima.txt",
+          "downloads/jv-Latn-ID/canon/enem.txt"
+        ],
+        "observed": "Direct entries support siji, loro, telu, papat, lima/limalas and enem; enem is distinct from enèm.",
+        "decision": "Use those forms for the registered digit and quantity readings."
+      },
+      {
+        "paths": [
+          "downloads/jv-Latn-ID/canon/likur.txt",
+          "downloads/jv-Latn-ID/canon/rolas.txt"
+        ],
+        "observed": "likur page includes selikur, patlikur and rolikur; rolas is twelve.",
+        "decision": "These do not directly attest every likur variant or the full large-number constructions used here."
+      },
+      {
+        "ids": ["C24", "C25", "C26", "C27", "C28"],
+        "paths": ["downloads/jv-Latn-ID/canon/ewu.txt", "downloads/jv-Latn-ID/canon/yuta.txt", "downloads/jv-Latn-ID/canon/wolu.txt", "downloads/jv-Latn-ID/canon/sanga.txt", "downloads/jv-Latn-ID/canon/sewidak.txt"],
+        "observed": "Dedicated entries support éwu/éwuan, yuta, wolu, sanga/sangang puluh/sangang atus, and sewidak (60).",
+        "decision": "After fully reading these topic-driven extensions, revise target thousand wording to éwu/éwuan and retain the supported numeral components. Full cardinal composition and prosody remain provisional."
+      }
+    ],
+    "provisional_forms": [
+      "nol",
+      "pitu",
+      "sewidak telu",
+      "pitulikur",
+      "wolulikur",
+      "wolulas",
+      "sangalas",
+      "sewelas",
+      "hundreds stems beyond directly quoted rong atus",
+      "yutanan",
+      "milyar/milyaran",
+      "trilyun/trilyunan",
+      "nilai panggonan",
+      "the full composed cardinal readings and prosody"
+    ],
+    "restriction": "Finite source-bound drafting is not a native-language, standardized-number-name, pronunciation, dialect-universality, or educator certification."
+  },
+  "operator_conventions": [
+    {
+      "token": "basis-10",
+      "source_element": "mtext",
+      "role": "base-ten term",
+      "expected": {
+        "jv-academic": "basis sepuluh",
+        "jv-conversation": "basis sepuluh",
+        "id-academic": "basis sepuluh"
+      },
+      "restriction": "The hyphen is part of the term; never read a subtraction operation."
+    },
+    {
+      "token": ",",
+      "source_element": "inside mn",
+      "role": "three-digit period/group separator",
+      "restriction": "Preserve exact visible grouping; whole-number fixtures read the registered integer, never a decimal and never a list of independent operands."
+    },
+    {
+      "token": ".",
+      "source_element": "mo",
+      "role": "sentence-final punctuation in seven contribution values",
+      "speech": "Retain the final period in expected text as a sentence boundary/pause; do not say titik or imply a decimal/multiplication."
+    },
+    {
+      "token": ";",
+      "source_element": "mo",
+      "role": "clause boundary after 63,407,218",
+      "speech": "Retain the semicolon in expected text as a clause-separating pause; do not say an arithmetic operator."
+    },
+    {
+      "token": "dan seterusnya",
+      "source_element": "prose tail",
+      "role": "literal continuation words",
+      "jv_literal": "lan sateruse",
+      "restriction": "There is no ellipsis glyph in this section. Do not replace the literal words with an ellipsis token or expand continuation twice."
+    }
+  ],
+  "math_fixtures": [
+    {
+      "id": "A00-DIG-M01",
+      "module": "m81243",
+      "anchor": "fs-id1795155",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mtext>basis-10</m:mtext></m:mrow></m:math>",
+      "role": "base-ten name, not subtraction",
+      "expected": {
+        "jv-academic": "basis sepuluh",
+        "jv-conversation": "basis sepuluh",
+        "id-academic": "basis sepuluh"
+      }
+    },
+    {
+      "id": "A00-DIG-M02",
+      "module": "m81243",
+      "anchor": "fs-id2825467",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mtext>basis-10</m:mtext></m:mrow></m:math>",
+      "role": "base-ten name, not subtraction",
+      "expected": {
+        "jv-academic": "basis sepuluh",
+        "jv-conversation": "basis sepuluh",
+        "id-academic": "basis sepuluh"
+      }
+    },
+    {
+      "id": "A00-DIG-M03",
+      "module": "m81243",
+      "anchor": "fs-id1408851",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>5,278,194</m:mn></m:mrow></m:math>",
+      "role": "complete chart number",
+      "expected": {
+        "jv-academic": "limang yuta rong atus pitung puluh wolu éwu satus sangang puluh papat",
+        "jv-conversation": "limang yuta rong atus pitung puluh wolu éwu satus sangang puluh papat",
+        "id-academic": "lima juta dua ratus tujuh puluh delapan ribu seratus sembilan puluh empat"
+      }
+    },
+    {
+      "id": "A00-DIG-M04",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>5</m:mn></m:mrow></m:math>",
+      "role": "digit specimen in the millions place",
+      "expected": {
+        "jv-academic": "lima",
+        "jv-conversation": "lima",
+        "id-academic": "lima"
+      }
+    },
+    {
+      "id": "A00-DIG-M05",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 2,
+      "source_mathml": "<m:math><m:mrow><m:mn>5,000,000</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "role": "digit contribution; sentence-final period",
+      "expected": {
+        "jv-academic": "limang yuta.",
+        "jv-conversation": "limang yuta.",
+        "id-academic": "lima juta."
+      }
+    },
+    {
+      "id": "A00-DIG-M06",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 3,
+      "source_mathml": "<m:math><m:mrow><m:mn>2</m:mn></m:mrow></m:math>",
+      "role": "digit specimen in the hundred-thousands place",
+      "expected": {
+        "jv-academic": "loro",
+        "jv-conversation": "loro",
+        "id-academic": "dua"
+      }
+    },
+    {
+      "id": "A00-DIG-M07",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 4,
+      "source_mathml": "<m:math><m:mrow><m:mn>200,000</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "role": "digit contribution; sentence-final period",
+      "expected": {
+        "jv-academic": "rong atus éwu.",
+        "jv-conversation": "rong atus éwu.",
+        "id-academic": "dua ratus ribu."
+      }
+    },
+    {
+      "id": "A00-DIG-M08",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 5,
+      "source_mathml": "<m:math><m:mrow><m:mn>7</m:mn></m:mrow></m:math>",
+      "role": "digit specimen in the ten-thousands place",
+      "expected": {
+        "jv-academic": "pitu",
+        "jv-conversation": "pitu",
+        "id-academic": "tujuh"
+      }
+    },
+    {
+      "id": "A00-DIG-M09",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 6,
+      "source_mathml": "<m:math><m:mrow><m:mn>70,000</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "role": "digit contribution; sentence-final period",
+      "expected": {
+        "jv-academic": "pitung puluh éwu.",
+        "jv-conversation": "pitung puluh éwu.",
+        "id-academic": "tujuh puluh ribu."
+      }
+    },
+    {
+      "id": "A00-DIG-M10",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 7,
+      "source_mathml": "<m:math><m:mrow><m:mn>8</m:mn></m:mrow></m:math>",
+      "role": "digit specimen in the thousands place",
+      "expected": {
+        "jv-academic": "wolu",
+        "jv-conversation": "wolu",
+        "id-academic": "delapan"
+      }
+    },
+    {
+      "id": "A00-DIG-M11",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 8,
+      "source_mathml": "<m:math><m:mrow><m:mn>8,000</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "role": "digit contribution; sentence-final period",
+      "expected": {
+        "jv-academic": "wolung éwu.",
+        "jv-conversation": "wolung éwu.",
+        "id-academic": "delapan ribu."
+      }
+    },
+    {
+      "id": "A00-DIG-M12",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 9,
+      "source_mathml": "<m:math><m:mrow><m:mn>1</m:mn></m:mrow></m:math>",
+      "role": "digit specimen in the hundreds place",
+      "expected": {
+        "jv-academic": "siji",
+        "jv-conversation": "siji",
+        "id-academic": "satu"
+      }
+    },
+    {
+      "id": "A00-DIG-M13",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 10,
+      "source_mathml": "<m:math><m:mrow><m:mn>100</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "role": "digit contribution; sentence-final period",
+      "expected": {
+        "jv-academic": "satus.",
+        "jv-conversation": "satus.",
+        "id-academic": "seratus."
+      }
+    },
+    {
+      "id": "A00-DIG-M14",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 11,
+      "source_mathml": "<m:math><m:mrow><m:mn>9</m:mn></m:mrow></m:math>",
+      "role": "digit specimen in the tens place",
+      "expected": {
+        "jv-academic": "sanga",
+        "jv-conversation": "sanga",
+        "id-academic": "sembilan"
+      }
+    },
+    {
+      "id": "A00-DIG-M15",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 12,
+      "source_mathml": "<m:math><m:mrow><m:mn>90</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "role": "digit contribution; sentence-final period",
+      "expected": {
+        "jv-academic": "sangang puluh.",
+        "jv-conversation": "sangang puluh.",
+        "id-academic": "sembilan puluh."
+      }
+    },
+    {
+      "id": "A00-DIG-M16",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 13,
+      "source_mathml": "<m:math><m:mrow><m:mn>4</m:mn></m:mrow></m:math>",
+      "role": "digit specimen in the ones place",
+      "expected": {
+        "jv-academic": "papat",
+        "jv-conversation": "papat",
+        "id-academic": "empat"
+      }
+    },
+    {
+      "id": "A00-DIG-M17",
+      "module": "m81243",
+      "anchor": "fs-id930962",
+      "math_ordinal": 14,
+      "source_mathml": "<m:math><m:mrow><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math>",
+      "role": "digit contribution; sentence-final period",
+      "expected": {
+        "jv-academic": "papat.",
+        "jv-conversation": "papat.",
+        "id-academic": "empat."
+      }
+    },
+    {
+      "id": "A00-DIG-M18",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>63,407,218</m:mn><m:mo>;</m:mo></m:mrow></m:math>",
+      "role": "worked-example complete number; clause-separating semicolon",
+      "expected": {
+        "jv-academic": "sewidak telu yuta patang atus pitu éwu rong atus wolulas;",
+        "jv-conversation": "sewidak telu yuta patang atus pitu éwu rong atus wolulas;",
+        "id-academic": "enam puluh tiga juta empat ratus tujuh ribu dua ratus delapan belas;"
+      }
+    },
+    {
+      "id": "A00-DIG-M19",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 2,
+      "source_mathml": "<m:math><m:mn>7</m:mn></m:math>",
+      "role": "worked problem part a digit specimen",
+      "expected": {
+        "jv-academic": "pitu",
+        "jv-conversation": "pitu",
+        "id-academic": "tujuh"
+      }
+    },
+    {
+      "id": "A00-DIG-M20",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 3,
+      "source_mathml": "<m:math><m:mn>0</m:mn></m:math>",
+      "role": "worked problem part b zero digit, not an empty cell",
+      "expected": {
+        "jv-academic": "nol",
+        "jv-conversation": "nol",
+        "id-academic": "nol"
+      }
+    },
+    {
+      "id": "A00-DIG-M21",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 4,
+      "source_mathml": "<m:math><m:mn>1</m:mn></m:math>",
+      "role": "worked problem part c digit specimen",
+      "expected": {
+        "jv-academic": "siji",
+        "jv-conversation": "siji",
+        "id-academic": "satu"
+      }
+    },
+    {
+      "id": "A00-DIG-M22",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 5,
+      "source_mathml": "<m:math><m:mn>6</m:mn></m:math>",
+      "role": "worked problem part d digit specimen",
+      "expected": {
+        "jv-academic": "enem",
+        "jv-conversation": "enem",
+        "id-academic": "enam"
+      }
+    },
+    {
+      "id": "A00-DIG-M23",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 6,
+      "source_mathml": "<m:math><m:mn>3</m:mn></m:math>",
+      "role": "worked problem part e digit specimen",
+      "expected": {
+        "jv-academic": "telu",
+        "jv-conversation": "telu",
+        "id-academic": "tiga"
+      }
+    },
+    {
+      "id": "A00-DIG-M24",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 7,
+      "source_mathml": "<m:math><m:mn>7</m:mn></m:math>",
+      "role": "worked answer part a digit specimen; thousands",
+      "expected": {
+        "jv-academic": "pitu",
+        "jv-conversation": "pitu",
+        "id-academic": "tujuh"
+      }
+    },
+    {
+      "id": "A00-DIG-M25",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 8,
+      "source_mathml": "<m:math><m:mn>0</m:mn></m:math>",
+      "role": "worked answer part b zero digit; ten-thousands",
+      "expected": {
+        "jv-academic": "nol",
+        "jv-conversation": "nol",
+        "id-academic": "nol"
+      }
+    },
+    {
+      "id": "A00-DIG-M26",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 9,
+      "source_mathml": "<m:math><m:mrow><m:mn>1</m:mn></m:mrow></m:math>",
+      "role": "worked answer part c digit specimen; tens",
+      "expected": {
+        "jv-academic": "siji",
+        "jv-conversation": "siji",
+        "id-academic": "satu"
+      }
+    },
+    {
+      "id": "A00-DIG-M27",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 10,
+      "source_mathml": "<m:math><m:mrow><m:mn>6</m:mn></m:mrow></m:math>",
+      "role": "worked answer part d digit specimen; ten-millions",
+      "expected": {
+        "jv-academic": "enem",
+        "jv-conversation": "enem",
+        "id-academic": "enam"
+      }
+    },
+    {
+      "id": "A00-DIG-M28",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "math_ordinal": 11,
+      "source_mathml": "<m:math><m:mrow><m:mn>3</m:mn></m:mrow></m:math>",
+      "role": "worked answer part e digit specimen; millions",
+      "expected": {
+        "jv-academic": "telu",
+        "jv-conversation": "telu",
+        "id-academic": "tiga"
+      }
+    },
+    {
+      "id": "A00-DIG-M29",
+      "module": "m81243",
+      "anchor": "fs-id2310429",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>27,493,615</m:mn></m:mrow></m:math>",
+      "role": "first practice complete number",
+      "expected": {
+        "jv-academic": "pitulikur yuta patang atus sangang puluh telu éwu nem atus limalas",
+        "jv-conversation": "pitulikur yuta patang atus sangang puluh telu éwu nem atus limalas",
+        "id-academic": "dua puluh tujuh juta empat ratus sembilan puluh tiga ribu enam ratus lima belas"
+      }
+    },
+    {
+      "id": "A00-DIG-M30",
+      "module": "m81243",
+      "anchor": "fs-id2310429",
+      "math_ordinal": 2,
+      "source_mathml": "<m:math><m:mn>2</m:mn></m:math>",
+      "role": "first practice part a digit specimen; ten-millions",
+      "expected": {
+        "jv-academic": "loro",
+        "jv-conversation": "loro",
+        "id-academic": "dua"
+      }
+    },
+    {
+      "id": "A00-DIG-M31",
+      "module": "m81243",
+      "anchor": "fs-id2310429",
+      "math_ordinal": 3,
+      "source_mathml": "<m:math><m:mn>1</m:mn></m:math>",
+      "role": "first practice part b digit specimen; tens",
+      "expected": {
+        "jv-academic": "siji",
+        "jv-conversation": "siji",
+        "id-academic": "satu"
+      }
+    },
+    {
+      "id": "A00-DIG-M32",
+      "module": "m81243",
+      "anchor": "fs-id2310429",
+      "math_ordinal": 4,
+      "source_mathml": "<m:math><m:mn>4</m:mn></m:math>",
+      "role": "first practice part c digit specimen; hundred-thousands",
+      "expected": {
+        "jv-academic": "papat",
+        "jv-conversation": "papat",
+        "id-academic": "empat"
+      }
+    },
+    {
+      "id": "A00-DIG-M33",
+      "module": "m81243",
+      "anchor": "fs-id2310429",
+      "math_ordinal": 5,
+      "source_mathml": "<m:math><m:mn>7</m:mn></m:math>",
+      "role": "first practice part d digit specimen; millions",
+      "expected": {
+        "jv-academic": "pitu",
+        "jv-conversation": "pitu",
+        "id-academic": "tujuh"
+      }
+    },
+    {
+      "id": "A00-DIG-M34",
+      "module": "m81243",
+      "anchor": "fs-id2310429",
+      "math_ordinal": 6,
+      "source_mathml": "<m:math><m:mn>5</m:mn></m:math>",
+      "role": "first practice part e digit specimen; ones",
+      "expected": {
+        "jv-academic": "lima",
+        "jv-conversation": "lima",
+        "id-academic": "lima"
+      }
+    },
+    {
+      "id": "A00-DIG-M35",
+      "module": "m81243",
+      "anchor": "fs-id1282619",
+      "math_ordinal": 1,
+      "source_mathml": "<m:math><m:mrow><m:mn>519,711,641,328</m:mn></m:mrow></m:math>",
+      "role": "second practice complete number; billions through ones",
+      "expected": {
+        "jv-academic": "limang atus sangalas milyar pitung atus sewelas yuta nem atus patang puluh siji éwu telung atus wolulikur",
+        "jv-conversation": "limang atus sangalas milyar pitung atus sewelas yuta nem atus patang puluh siji éwu telung atus wolulikur",
+        "id-academic": "lima ratus sembilan belas miliar tujuh ratus sebelas juta enam ratus empat puluh satu ribu tiga ratus dua puluh delapan"
+      }
+    },
+    {
+      "id": "A00-DIG-M36",
+      "module": "m81243",
+      "anchor": "fs-id1282619",
+      "math_ordinal": 2,
+      "source_mathml": "<m:math><m:mn>9</m:mn></m:math>",
+      "role": "second practice part a digit specimen; billions",
+      "expected": {
+        "jv-academic": "sanga",
+        "jv-conversation": "sanga",
+        "id-academic": "sembilan"
+      }
+    },
+    {
+      "id": "A00-DIG-M37",
+      "module": "m81243",
+      "anchor": "fs-id1282619",
+      "math_ordinal": 3,
+      "source_mathml": "<m:math><m:mn>4</m:mn></m:math>",
+      "role": "second practice part b digit specimen; ten-thousands",
+      "expected": {
+        "jv-academic": "papat",
+        "jv-conversation": "papat",
+        "id-academic": "empat"
+      }
+    },
+    {
+      "id": "A00-DIG-M38",
+      "module": "m81243",
+      "anchor": "fs-id1282619",
+      "math_ordinal": 4,
+      "source_mathml": "<m:math><m:mn>2</m:mn></m:math>",
+      "role": "second practice part c digit specimen; tens",
+      "expected": {
+        "jv-academic": "loro",
+        "jv-conversation": "loro",
+        "id-academic": "dua"
+      }
+    },
+    {
+      "id": "A00-DIG-M39",
+      "module": "m81243",
+      "anchor": "fs-id1282619",
+      "math_ordinal": 5,
+      "source_mathml": "<m:math><m:mn>6</m:mn></m:math>",
+      "role": "second practice part d digit specimen; hundred-thousands",
+      "expected": {
+        "jv-academic": "enem",
+        "jv-conversation": "enem",
+        "id-academic": "enam"
+      }
+    },
+    {
+      "id": "A00-DIG-M40",
+      "module": "m81243",
+      "anchor": "fs-id1282619",
+      "math_ordinal": 6,
+      "source_mathml": "<m:math><m:mn>7</m:mn></m:math>",
+      "role": "second practice part e digit specimen; hundred-millions",
+      "expected": {
+        "jv-academic": "pitu",
+        "jv-conversation": "pitu",
+        "id-academic": "tujuh"
+      }
+    }
+  ],
+  "number_decomposition_witnesses": [
+    {
+      "source": "5,278,194",
+      "groups_from_left": [
+        "5",
+        "278",
+        "194"
+      ],
+      "group_scales": [
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "5278194"
+    },
+    {
+      "source": "63,407,218",
+      "groups_from_left": [
+        "63",
+        "407",
+        "218"
+      ],
+      "group_scales": [
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "63407218",
+      "zero_digit": "0 remains at the ten-thousands position; cardinal speech does not turn this into an empty chart cell."
+    },
+    {
+      "source": "27,493,615",
+      "groups_from_left": [
+        "27",
+        "493",
+        "615"
+      ],
+      "group_scales": [
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "27493615"
+    },
+    {
+      "source": "519,711,641,328",
+      "groups_from_left": [
+        "519",
+        "711",
+        "641",
+        "328"
+      ],
+      "group_scales": [
+        "1000000000",
+        "1000000",
+        "1000",
+        "1"
+      ],
+      "fixed_value": "519711641328"
+    }
+  ],
+  "prose_symbol_fixtures": [
+    {
+      "id": "A00-DIG-P01",
+      "module": "m81243",
+      "anchor": "fs-id1795155",
+      "role": "literal continuation and comma explanation",
+      "source_text": ", dan seterusnya. Dalam bilangan tertulis, koma memisahkan periode.",
+      "expected": {
+        "jv-academic": ", lan sateruse. Ing wilangan sing katulis, tandha koma misahake saben periode.",
+        "jv-conversation": ", lan sateruse. Yen wilangane ditulis, saben periode dipisah nganggo tandha koma.",
+        "id-academic": ", dan seterusnya. Dalam bilangan tertulis, koma memisahkan periode."
+      }
+    },
+    {
+      "id": "A00-DIG-P02",
+      "module": "m81243",
+      "source_list_ids": [
+        "fs-id2218367",
+        "eip-id1168898159450",
+        "fs-id1386307",
+        "fs-id1811287",
+        "fs-id1508784",
+        "fs-id1807276"
+      ],
+      "source_tokens": [
+        "ⓐ",
+        "ⓑ",
+        "ⓒ",
+        "ⓓ",
+        "ⓔ"
+      ],
+      "expected": {
+        "jv-academic": [
+          "bagean a",
+          "bagean be",
+          "bagean ce",
+          "bagean de",
+          "bagean e"
+        ],
+        "jv-conversation": [
+          "bagean a",
+          "bagean be",
+          "bagean ce",
+          "bagean de",
+          "bagean e"
+        ],
+        "id-academic": [
+          "bagian a",
+          "bagian be",
+          "bagian ce",
+          "bagian de",
+          "bagian e"
+        ]
+      },
+      "restriction": "These are five structural part labels, not numeric digits or variables. Emit each once; do not duplicate labels from enumerated-list styling."
+    }
+  ],
+  "chart_contract": {
+    "source_role": "Two CNXML media images, not CNXML data tables or MathML tables; chart reading is separately source-bound.",
+    "column_count": 15,
+    "period_group_count": 5,
+    "columns_per_group": 3,
+    "period_groups_from_left": [
+      "trillions",
+      "billions",
+      "millions",
+      "thousands",
+      "ones"
+    ],
+    "column_roles_from_left": [
+      {
+        "column": 1,
+        "place_value": "100000000000000",
+        "expected": {
+          "jv-academic": "atusan trilyun",
+          "jv-conversation": "atusan trilyun",
+          "id-academic": "ratusan triliun"
+        }
+      },
+      {
+        "column": 2,
+        "place_value": "10000000000000",
+        "expected": {
+          "jv-academic": "sepuluh trilyun",
+          "jv-conversation": "sepuluh trilyun",
+          "id-academic": "sepuluh triliun"
+        }
+      },
+      {
+        "column": 3,
+        "place_value": "1000000000000",
+        "expected": {
+          "jv-academic": "trilyun",
+          "jv-conversation": "trilyun",
+          "id-academic": "triliun"
+        }
+      },
+      {
+        "column": 4,
+        "place_value": "100000000000",
+        "expected": {
+          "jv-academic": "atusan milyar",
+          "jv-conversation": "atusan milyar",
+          "id-academic": "ratusan miliar"
+        }
+      },
+      {
+        "column": 5,
+        "place_value": "10000000000",
+        "expected": {
+          "jv-academic": "sepuluh milyar",
+          "jv-conversation": "sepuluh milyar",
+          "id-academic": "sepuluh miliar"
+        }
+      },
+      {
+        "column": 6,
+        "place_value": "1000000000",
+        "expected": {
+          "jv-academic": "milyar",
+          "jv-conversation": "milyar",
+          "id-academic": "miliar"
+        }
+      },
+      {
+        "column": 7,
+        "place_value": "100000000",
+        "expected": {
+          "jv-academic": "satus yuta",
+          "jv-conversation": "satus yuta",
+          "id-academic": "seratus juta"
+        }
+      },
+      {
+        "column": 8,
+        "place_value": "10000000",
+        "expected": {
+          "jv-academic": "sepuluh yuta",
+          "jv-conversation": "sepuluh yuta",
+          "id-academic": "sepuluh juta"
+        }
+      },
+      {
+        "column": 9,
+        "place_value": "1000000",
+        "expected": {
+          "jv-academic": "yutanan",
+          "jv-conversation": "yutanan",
+          "id-academic": "jutaan"
+        }
+      },
+      {
+        "column": 10,
+        "place_value": "100000",
+        "expected": {
+          "jv-academic": "satus éwu",
+          "jv-conversation": "satus éwu",
+          "id-academic": "seratus ribu"
+        }
+      },
+      {
+        "column": 11,
+        "place_value": "10000",
+        "expected": {
+          "jv-academic": "sepuluh éwu",
+          "jv-conversation": "sepuluh éwu",
+          "id-academic": "sepuluh ribu"
+        }
+      },
+      {
+        "column": 12,
+        "place_value": "1000",
+        "expected": {
+          "jv-academic": "éwuan",
+          "jv-conversation": "éwuan",
+          "id-academic": "ribuan"
+        }
+      },
+      {
+        "column": 13,
+        "place_value": "100",
+        "expected": {
+          "jv-academic": "atusan",
+          "jv-conversation": "atusan",
+          "id-academic": "ratusan"
+        }
+      },
+      {
+        "column": 14,
+        "place_value": "10",
+        "expected": {
+          "jv-academic": "puluhan",
+          "jv-conversation": "puluhan",
+          "id-academic": "puluhan"
+        }
+      },
+      {
+        "column": 15,
+        "place_value": "1",
+        "expected": {
+          "jv-academic": "satuan",
+          "jv-conversation": "satuan",
+          "id-academic": "satuan"
+        }
+      }
+    ],
+    "blank_cell_rule": "An unfilled high-order column is described as empty, not read as digit zero; the actual written 0 in the second chart must be spoken as nol.",
+    "source_row_count_rule": "Keep the source alt descriptions of four rows and two rows. Do not invent extra filled rows from that count.",
+    "reading_order": "Name chart, source row/column/group structure, all fifteen place labels from left to right, then empty prefix and the filled digits with their column roles. The seven-item contribution list follows the first chart and is not a second chart.",
+    "visual_review": "This file binds source alt facts and digit/column roles only; geometry, clipping, source-image fidelity, and actual accessibility/listening review are separate."
+  },
+  "chart_fixtures": [
+    {
+      "id": "A00-DIG-C01",
+      "module": "m81243",
+      "anchor": "CNX_BMath_Figure_01_01_011",
+      "media_id": "fs-id1339846",
+      "source_image": "../../media/CNX_BMath_Figure_01_01_011.jpg.id-ID.svg",
+      "source_alt": "Bagan berjudul 'Nilai Tempat' dengan lima belas kolom dan 4 baris, dengan kolom-kolom tersebut dipecah menjadi lima kelompok yang terdiri dari tiga kolom. Baris header menunjukkan Triliun, Miliar, Juta, Ribuan, dan Satuan. Baris berikutnya mempunyai nilai 'Ratusan triliun', 'Sepuluh triliun', 'triliun', 'seratus miliar', 'sepuluh miliar', 'miliar', 'seratus juta', 'sepuluh juta', 'jutaan', 'seratus ribu', 'sepuluh ribu', 'ribuan', 'ratusan', 'puluhan', dan 'satuan'. Nilai 8 pertama pada baris berikutnya kosong. Dimulai dari kolom kesembilan, nilainya adalah '5', '2', '7', '8', '1', '9', dan '4'.",
+      "source_declared_rows": 4,
+      "blank_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "digit_cells": [
+        {
+          "column": 9,
+          "digit": "5"
+        },
+        {
+          "column": 10,
+          "digit": "2"
+        },
+        {
+          "column": 11,
+          "digit": "7"
+        },
+        {
+          "column": 12,
+          "digit": "8"
+        },
+        {
+          "column": 13,
+          "digit": "1"
+        },
+        {
+          "column": 14,
+          "digit": "9"
+        },
+        {
+          "column": 15,
+          "digit": "4"
+        }
+      ],
+      "whole_number": "5,278,194",
+      "expected": {
+        "jv-academic": "Bagan Nilai Panggonan nduweni limalas kolom lan patang larik. Kolom diperang dadi limang klompok isi telung kolom: trilyun, milyar, yuta, éwuan, lan satuan. Saka kiwa menyang tengen, label panggonane yaiku atusan trilyun; sepuluh trilyun; trilyun; atusan milyar; sepuluh milyar; milyar; satus yuta; sepuluh yuta; yutanan; satus éwu; sepuluh éwu; éwuan; atusan; puluhan; lan satuan. Wolung kolom kapisan ing larik digit kosong, dudu digit nol. Wiwit kolom kaping sanga: lima ing yutanan; loro ing atusan éwu; pitu ing puluhan éwu; wolu ing éwuan; siji ing atusan; sanga ing puluhan; lan papat ing satuan.",
+        "jv-conversation": "Bagan Nilai Panggonan iki ana limalas kolom lan patang larik. Kolome diklompokake telu-telu dadi limang klompok: trilyun, milyar, yuta, éwuan, lan satuan. Saka kiwa menyang tengen, label panggonane yaiku atusan trilyun; sepuluh trilyun; trilyun; atusan milyar; sepuluh milyar; milyar; satus yuta; sepuluh yuta; yutanan; satus éwu; sepuluh éwu; éwuan; atusan; puluhan; lan satuan. Wolung kolom kapisan ing larik digit isih kosong, dudu nol. Wiwit kolom kaping sanga, ana lima ing yutanan; loro ing atusan éwu; pitu ing puluhan éwu; wolu ing éwuan; siji ing atusan; sanga ing puluhan; lan papat ing satuan.",
+        "id-academic": "Bagan Nilai Tempat memiliki lima belas kolom dan empat baris. Kolom terbagi menjadi lima kelompok berisi tiga kolom: triliun, miliar, juta, ribuan, dan satuan. Dari kiri ke kanan, label tempatnya adalah ratusan triliun; sepuluh triliun; triliun; ratusan miliar; sepuluh miliar; miliar; seratus juta; sepuluh juta; jutaan; seratus ribu; sepuluh ribu; ribuan; ratusan; puluhan; dan satuan. Delapan kolom pertama pada baris digit kosong, bukan digit nol. Mulai kolom kesembilan: lima pada jutaan; dua pada ratus ribuan; tujuh pada puluh ribuan; delapan pada ribuan; satu pada ratusan; sembilan pada puluhan; dan empat pada satuan."
+      }
+    },
+    {
+      "id": "A00-DIG-C02",
+      "module": "m81243",
+      "anchor": "fs-id1891091",
+      "media_id": "fs-id2297687",
+      "source_image": "../../media/CNX_BMath_Figure_01_01_012_img.jpg.id-ID.svg",
+      "source_alt": "Gambar berjudul “Nilai Tempat” dengan lima belas kolom dan 2 baris, dengan kolom dipecah menjadi lima kelompok yang terdiri dari tiga kolom. Baris pertama mempunyai nilai “Ratusan triliun”, “Sepuluh triliun”, “triliun”, “seratus miliar”, “sepuluh miliar”, “miliar”, “seratus juta”, “sepuluh juta”, “jutaan”, “seratus ribuan”, “sepuluh ribu”, “ribu”, “ratusan”, “puluhan”, dan “satuan”. Nilai 7 pertama pada baris kedua kosong. Dimulai dari kolom kedelapan, nilainya adalah “6”, “3”, “4”, “0”, “7”, “2”, “1” dan “8”. Kelompok pertama diberi label “triliun” dan berisi nilai baris pertama “Ratusan triliun”, “sepuluh triliun”, dan “triliun”. Kelompok kedua diberi label “miliar” dan berisi nilai baris pertama “Ratusan miliar”, “sepuluh miliar”, dan “miliar”. Kelompok ketiga diberi label “jutaan” dan berisi nilai baris pertama “Ratusan juta”, “sepuluh juta”, dan “jutaan”. Kelompok keempat diberi label “ribuan” dan berisi nilai baris pertama “Ratusan ribu”, “sepuluh ribu”, dan “ribu”. Kelompok kelima diberi label “satuan” dan berisi nilai baris pertama “Ratusan”, “puluhan”, dan “satuan”.",
+      "source_declared_rows": 2,
+      "blank_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "digit_cells": [
+        {
+          "column": 8,
+          "digit": "6"
+        },
+        {
+          "column": 9,
+          "digit": "3"
+        },
+        {
+          "column": 10,
+          "digit": "4"
+        },
+        {
+          "column": 11,
+          "digit": "0"
+        },
+        {
+          "column": 12,
+          "digit": "7"
+        },
+        {
+          "column": 13,
+          "digit": "2"
+        },
+        {
+          "column": 14,
+          "digit": "1"
+        },
+        {
+          "column": 15,
+          "digit": "8"
+        }
+      ],
+      "whole_number": "63,407,218",
+      "expected": {
+        "jv-academic": "Gambar Nilai Panggonan nduweni limalas kolom lan rong larik. Kolom diperang dadi limang klompok isi telung kolom: trilyun, milyar, yuta, éwuan, lan satuan. Saka kiwa menyang tengen, label panggonane yaiku atusan trilyun; sepuluh trilyun; trilyun; atusan milyar; sepuluh milyar; milyar; satus yuta; sepuluh yuta; yutanan; satus éwu; sepuluh éwu; éwuan; atusan; puluhan; lan satuan. Pitung kolom kapisan ing larik digit kosong. Wiwit kolom kaping wolu: enem ing puluhan yuta; telu ing yutanan; papat ing atusan éwu; nol ing puluhan éwu; pitu ing éwuan; loro ing atusan; siji ing puluhan; lan wolu ing satuan. Nol ing kolom puluhan éwu iku digit sing katulis, dudu sel kosong.",
+        "jv-conversation": "Gambar Nilai Panggonan iki ana limalas kolom lan rong larik. Kolome diklompokake telu-telu dadi limang klompok: trilyun, milyar, yuta, éwuan, lan satuan. Saka kiwa menyang tengen, label panggonane yaiku atusan trilyun; sepuluh trilyun; trilyun; atusan milyar; sepuluh milyar; milyar; satus yuta; sepuluh yuta; yutanan; satus éwu; sepuluh éwu; éwuan; atusan; puluhan; lan satuan. Pitung kolom kapisan ing larik digit isih kosong. Wiwit kolom kaping wolu, ana enem ing puluhan yuta; telu ing yutanan; papat ing atusan éwu; nol ing puluhan éwu; pitu ing éwuan; loro ing atusan; siji ing puluhan; lan wolu ing satuan. Nol ing puluhan éwu kuwi digit sing ditulis, dudu sel kosong.",
+        "id-academic": "Gambar Nilai Tempat memiliki lima belas kolom dan dua baris. Kolom terbagi menjadi lima kelompok berisi tiga kolom: triliun, miliar, juta, ribuan, dan satuan. Dari kiri ke kanan, label tempatnya adalah ratusan triliun; sepuluh triliun; triliun; ratusan miliar; sepuluh miliar; miliar; seratus juta; sepuluh juta; jutaan; seratus ribu; sepuluh ribu; ribuan; ratusan; puluhan; dan satuan. Tujuh kolom pertama pada baris digit kosong. Mulai kolom kedelapan: enam pada puluh jutaan; tiga pada jutaan; empat pada ratus ribuan; nol pada puluh ribuan; tujuh pada ribuan; dua pada ratusan; satu pada puluhan; dan delapan pada satuan. Nol pada kolom puluh ribuan adalah digit tertulis, bukan sel kosong."
+      }
+    }
+  ],
+  "answer_position_invariants": [
+    {
+      "anchor": "fs-id1891091",
+      "number": "63,407,218",
+      "ordered_digits": [
+        "7",
+        "0",
+        "1",
+        "6",
+        "3"
+      ],
+      "places_as_powers_of_ten": [
+        3,
+        4,
+        1,
+        7,
+        6
+      ],
+      "expected_place_labels": {
+        "jv-academic": [
+          "éwuan",
+          "puluhan éwu",
+          "puluhan",
+          "puluhan yuta",
+          "yutanan"
+        ],
+        "jv-conversation": [
+          "éwuan",
+          "puluhan éwu",
+          "puluhan",
+          "puluhan yuta",
+          "yutanan"
+        ],
+        "id-academic": [
+          "ribuan",
+          "puluh ribuan",
+          "puluhan",
+          "puluh jutaan",
+          "jutaan"
+        ]
+      }
+    },
+    {
+      "anchor": "fs-id2310429",
+      "number": "27,493,615",
+      "ordered_digits": [
+        "2",
+        "1",
+        "4",
+        "7",
+        "5"
+      ],
+      "places_as_powers_of_ten": [
+        7,
+        1,
+        5,
+        6,
+        0
+      ],
+      "expected_place_labels": {
+        "jv-academic": [
+          "puluhan yuta",
+          "puluhan",
+          "atusan éwu",
+          "yutanan",
+          "satuan"
+        ],
+        "jv-conversation": [
+          "puluhan yuta",
+          "puluhan",
+          "atusan éwu",
+          "yutanan",
+          "satuan"
+        ],
+        "id-academic": [
+          "puluh jutaan",
+          "puluhan",
+          "ratus ribuan",
+          "jutaan",
+          "satuan"
+        ]
+      }
+    },
+    {
+      "anchor": "fs-id1282619",
+      "number": "519,711,641,328",
+      "ordered_digits": [
+        "9",
+        "4",
+        "2",
+        "6",
+        "7"
+      ],
+      "places_as_powers_of_ten": [
+        9,
+        4,
+        1,
+        5,
+        8
+      ],
+      "expected_place_labels": {
+        "jv-academic": [
+          "milyaran",
+          "puluhan éwu",
+          "puluhan",
+          "atusan éwu",
+          "atusan yuta"
+        ],
+        "jv-conversation": [
+          "milyaran",
+          "puluhan éwu",
+          "puluhan",
+          "atusan éwu",
+          "atusan yuta"
+        ],
+        "id-academic": [
+          "miliaran",
+          "puluh ribuan",
+          "puluhan",
+          "ratus ribuan",
+          "ratus jutaan"
+        ]
+      }
+    }
+  ],
+  "solution_cues": [
+    {
+      "solution_id": "fs-id2851093",
+      "source_title": "Penyelesaian",
+      "expected": {
+        "jv-academic": "Panyelesaian.",
+        "jv-conversation": "Cara Ngrampungake.",
+        "id-academic": "Penyelesaian."
+      },
+      "restriction": "Read the explicit title once; do not prepend a duplicate Wangsulan/Jawaban cue."
+    },
+    {
+      "solution_ids": [
+        "fs-id2903653",
+        "fs-id2619544"
+      ],
+      "source_title": null,
+      "expected": {
+        "jv-academic": "Wangsulan.",
+        "jv-conversation": "Wangsulan.",
+        "id-academic": "Jawaban."
+      },
+      "restriction": "Insert one spoken answer cue before each untitled practice solution, without claiming an explicit source title."
+    }
+  ],
+  "fail_closed_cases": [
+    {
+      "case": "Unknown module, section, source blob/hash, top-level anchor, ordinal, missing/duplicate fixture, altered token/tree/attribute or changed grouping",
+      "result": "unsupported_source_bound_narration"
+    },
+    {
+      "case": "Any whole number not explicitly registered here, any changed grouping such as 519,71,641,328, or a request for generic number conversion",
+      "result": "unsupported_number_fixture"
+    },
+    {
+      "case": "A comma-grouped mn is treated as a decimal, an operand list, or digits stripped at runtime for a guessed reading",
+      "result": "source_number_role_failure"
+    },
+    {
+      "case": "Period or semicolon is reinterpreted as a decimal separator, multiplication, or another arithmetic operator",
+      "result": "unsupported_punctuation_context"
+    },
+    {
+      "case": "Hyphen in basis-10 is treated as subtraction",
+      "result": "unsupported_term_context"
+    },
+    {
+      "case": "An ellipsis glyph is injected or literal dan seterusnya/lan sateruse is expanded twice",
+      "result": "unsupported_continuation_context"
+    },
+    {
+      "case": "Chart blank prefix is treated as written zero, actual 0 is dropped, fifteen columns/five periods shift, or filled digit order changes",
+      "result": "chart_place_value_invariant_failure"
+    },
+    {
+      "case": "A source answer digit is assigned a different power-of-ten place, or value and place are conflated",
+      "result": "answer_position_invariant_failure"
+    },
+    {
+      "case": "An unregistered chart/media reference or generic matrix/table is inferred from the chart prose",
+      "result": "unsupported_chart_narration"
+    },
+    {
+      "case": "A part label or answer cue is omitted/duplicated or misread as a digit/variable",
+      "result": "structural_narration_failure"
+    },
+    {
+      "case": "Requested voice locale is unsupported",
+      "result": "unsupported_voice_locale"
+    }
+  ],
+  "qa_receipt": {
+    "draft_only": false,
+    "production_integration": "standalone three-register reader and SSML drafts integrated; whole module and human reviews pending",
+    "math_fixtures": 40,
+    "source_prose_fixture_groups": 2,
+    "chart_fixtures": 2,
+    "source_unique_ids": 31,
+    "structural_source_match": "pass: all 40 exact raw source MathML substrings and namespace-aware trees match their declared module, top-level anchor and one-based ordinal",
+    "read_only_checks": [
+      "Exact Indonesian and English pinned Git-blob SHA256 values verified; all corresponding numeric/operator source inventories agree.",
+      "The whole section has nine direct children including title, 31 unique source IDs, and 40 MathML expressions; all 40 are covered once with unique fixture IDs and module/anchor/ordinal keys.",
+      "All 40 fixtures match raw MathML substrings inside their exact top-level source blocks and canonical namespace-aware trees; every expected reading has all three nonempty tracks.",
+      "Seven MathML periods and one semicolon are retained as punctuation; no source MathML attributes or unregistered operators occur.",
+      "The literal continuation source tail exists exactly and the section contains zero ellipsis glyphs; all six circled-label lists contain a through e exactly once.",
+      "Both chart source alts and image references match exactly; blank-prefix and filled-digit cells account for all fifteen columns and reconstruct the stated integers, including the written zero in column eleven of the worked chart.",
+      "All four finite comma-group decomposition witnesses and all fifteen digit-place answers were checked arithmetically from the complete source integers; these are validation witnesses, not a runtime number parser.",
+      "Explicit-title versus untitled-solution cue rules match the three actual source solutions.",
+      "Relevant atus, enggon, likur, tengen, kiwa, lima and enem entries were reread at revision; full composed large-number readings remain provisional.",
+      "The root subsequently integrated these exact fixtures into the standalone reader and three-track SSML build; no synthesis, provider request, human approval or listening review was performed."
+    ],
+    "human_language_review": false,
+    "synthesized_audio_files": 0,
+    "listening_review": false,
+    "provider_compatibility_tested": false,
+    "standalone_review_build": true
+  }
+}

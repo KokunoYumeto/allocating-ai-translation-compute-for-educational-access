@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi-Latn-VN" xml:lang="vi-Latn-VN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Biểu diễn hàm số bằng bảng</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">html { color: #182b35; background: #f8f6f1; font-size: 18px; }
+body { max-width: 52rem; margin: 0 auto; padding: 2.5rem 1.3rem 4rem; line-height: 1.65; font-family: "Noto Sans", "Segoe UI", Arial, sans-serif; }
+header { border-bottom: 3px solid #216c68; margin-bottom: 2rem; }
+h1,h2,h3 { line-height: 1.25; color: #175a57; break-after: avoid; }
+h1 { font-size: 2.3rem; } h2 { margin-top: 2.5rem; } h3 { margin-top: 1.8rem; }
+a { color: #075d99; text-underline-offset: .15em; }
+nav { background: #edf0e8; border-radius: .4rem; padding: 1rem 1.4rem; }
+table { border-collapse: collapse; margin: 1.2rem auto; min-width: 55%; }
+th,td { border: 1px solid #98aaa9; padding: .4rem 1rem; }
+th { background: #e2eeea; }
+img { display: block; max-width: 100%; height: auto; margin: 1rem auto; }
+figure { margin: 1.4rem 0; } figcaption { font-size: .9rem; }
+pre { overflow-x: auto; background: #edf0e8; padding: 1rem; border-radius: .3rem; }
+code { font-size: .88em; }
+math[display="block"] { overflow-x: auto; overflow-y: hidden; padding: .6rem 0; }
+:target { scroll-margin-top: 1rem; outline: 2px solid #c3dcd0; }
+@media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.9rem; } body { padding: 1rem; } table { width: 100%; } th,td { padding: .35rem .5rem; } }
+@media print { html { background: white; font-size: 11pt; } body { max-width: none; padding: 0; } nav { display: none; } img,table,pre { break-inside: avoid; } a { color: inherit; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Biểu diễn hàm số bằng bảng</h1>
+<p class="subtitle">A30 · Bài tự học 003 · Bản dịch thử nghiệm 0.1</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#vi-prerequisites" id="toc-vi-prerequisites">Trước khi
+học</a></li>
+<li><a href="#fs-id1165137804204" id="toc-fs-id1165137804204">Biểu diễn
+hàm số bằng bảng</a></li>
+<li><a href="#vi-next" id="toc-vi-next">Tự đánh giá và phần tiếp
+theo</a></li>
+<li><a href="#vi-attribution" id="toc-vi-attribution">Nguồn và ghi
+công</a></li>
+</ul>
+</nav>
+<h2 id="vi-prerequisites">Trước khi học</h2>
+<p><em>Hướng dẫn bổ sung:</em> Bạn đã biết mỗi đầu vào trong tập xác
+định của một hàm số phải có đúng một đầu ra, và biết đọc ký hiệu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y=f(x)</annotation></semantics></math>.
+Bài này dùng bảng để biểu diễn các cặp đầu vào–đầu ra và kiểm tra điều
+kiện đó. Không cần tìm công thức hoặc viết chương trình.</p>
+<p>Bài dịch trọn tiểu mục <strong>Representing Functions Using
+Tables</strong> của mô-đun <code>m49301</code>, không phải toàn bộ mục
+1.1. Các lưu ý bổ sung và thay đổi cách bố trí bảng được ghi rõ.</p>
+<h2 id="fs-id1165137804204">Biểu diễn hàm số bằng bảng</h2>
+<div id="fs-id1165137648317">
+<p>Một cách thông dụng để biểu diễn hàm số là dùng bảng. Các hàng hoặc
+cột của bảng cho biết những giá trị đầu vào và đầu ra tương ứng. Trong
+một số trường hợp, các giá trị ấy là toàn bộ thông tin ta biết về mối
+quan hệ đang xét; trong những trường hợp khác, bảng chỉ cho một vài ví
+dụ được chọn từ một mối quan hệ đầy đủ hơn.</p>
+</div>
+<div id="fs-id1165137761188">
+<p><a href="#Table_01_01_03">Bảng 3</a> liệt kê đầu vào là số thứ tự của
+từng tháng (tháng Một = 1, tháng Hai = 2, v.v.) và đầu ra là số ngày
+trong tháng đó. Bảng cho đầy đủ số ngày của từng tháng trong một năm xác
+định <strong>không nhuận</strong>. Chú ý rằng hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137761188:0"><mrow><mi>f</mi></mrow></math>
+cho số ngày trong tháng, với ký hiệu
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137761188:1"><mrow><mi>D</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>m</mi><mo>)</mo></mrow></mrow></math>,
+ở đây nhận đầu vào là <strong>số nguyên chỉ tháng</strong>, không phải
+tên tháng.</p>
+</div>
+<div id="Table_01_01_03">
+<p><strong>Bảng 3. Số ngày trong từng tháng của một năm không
+nhuận.</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: right;">Số thứ tự tháng
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="Table_01_01_03:0"><mrow><mi>m</mi></mrow></math>
+(đầu vào)</th>
+<th style="text-align: right;">Số ngày
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="Table_01_01_03:1"><mrow><mi>D</mi></mrow></math>
+(đầu ra)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">31</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Ghi chú trình bày:</em> Bảng 3–5 của nguồn được đổi từ các hàng
+ngang dài sang hai cột; mỗi hàng mới giữ nguyên một cặp đầu vào–đầu ra.
+Không thêm, bỏ hoặc sắp xếp lại các cặp số liệu.</p>
+<p><em>Lưu ý bổ sung:</em> Trong Bảng 3, tập xác định là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi><mo>,</mo><mn>12</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2,\ldots,12\}</annotation></semantics></math>.
+Đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+chỉ tháng Hai, không phải số ngày trong tháng. Chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+viết hoa được giữ nguyên theo nguồn, khác với chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+dùng trong ví dụ về tên tháng ở bài trước.</p>
+<div id="fs-id1165135191568">
+<p><a href="#Table_01_01_04">Bảng 4</a> xác định hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135191568:0"><mrow><mi>Q</mi><mo>=</mo><mi>g</mi><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow><mo>.</mo></mrow></math>
+Nhớ rằng ký hiệu này cho biết
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135191568:1"><mrow><mi>g</mi></mrow></math>
+là tên hàm số nhận đầu vào
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135191568:2"><mrow><mi>n</mi></mrow></math>
+và cho đầu ra
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135191568:3"><mrow><mi>Q</mi><mtext>.</mtext></mrow></math></p>
+</div>
+<div id="Table_01_01_04">
+<p><strong>Bảng 4. Các giá trị đầu vào và đầu ra của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>.</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: right;"><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="Table_01_01_04:0"><mi>n</mi></math>
+(đầu vào)</th>
+<th style="text-align: right;"><math xmlns="http://www.w3.org/1998/Math/MathML" data-source="Table_01_01_04:1"><mi>Q</mi></math>
+(đầu ra)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="fs-id1165137561574">
+<p><a href="#Table_01_01_05">Bảng 5</a> cho biết tuổi tính bằng năm và
+chiều cao tương ứng của các em nhỏ. Bảng này chỉ trình bày một phần dữ
+liệu có thể có về tuổi và chiều cao của trẻ em. Ta thấy ngay rằng bảng
+<strong>không biểu diễn một hàm số</strong>: cùng đầu vào 5 tuổi lại có
+hai đầu ra khác nhau, 40 inch và 42 inch.</p>
+</div>
+<div id="Table_01_01_05">
+<p><strong>Bảng 5. Tuổi và chiều cao của các em nhỏ.</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: right;">Tuổi
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="Table_01_01_05:0"><mrow><mi>a</mi></mrow></math>,
+tính bằng năm (đầu vào)</th>
+<th style="text-align: right;">Chiều cao
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="Table_01_01_05:1"><mrow><mi>h</mi></mrow></math>,
+tính bằng inch (đầu ra)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">42</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">47</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">52</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">54</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Lưu ý bổ sung:</em> Giữ nguyên đơn vị inch của nguồn, không đổi
+các số đo sang xentimét. Đây là dữ liệu về nhiều em nhỏ; không mâu thuẫn
+với việc xét chiều cao của một người xác định theo tuổi ở bài trước.</p>
+<h3 id="fs-id1165137804163">Cách làm — Kiểm tra một bảng</h3>
+<div id="fs-id1165134200185">
+<p><strong>Cho một bảng giá trị đầu vào và đầu ra, hãy xác định xem bảng
+có biểu diễn hàm số hay không.</strong></p>
+</div>
+<div id="fs-id1165137461155">
+<ol type="1">
+<li>Xác định các giá trị đầu vào và đầu ra.</li>
+<li>Kiểm tra xem mỗi giá trị đầu vào có được ghép với đúng một giá trị
+đầu ra hay không. Nếu có, bảng biểu diễn một hàm số.</li>
+</ol>
+</div>
+<p><em>Lưu ý bổ sung:</em> Đầu ra có thể lặp lại ở những đầu vào khác
+nhau; điều đó không làm mất tính chất hàm số. Ta kiểm tra tính duy nhất
+của đầu ra <strong>cho từng đầu vào</strong>, không đòi hỏi các đầu ra
+đều khác nhau.</p>
+<h3 id="Example_01_01_05">Ví dụ 5 — Nhận biết bảng biểu diễn hàm số</h3>
+<div id="fs-id1165137416794">
+<div id="fs-id1165135591087">
+<div id="fs-id1165135503697">
+<p>Trong <a href="#Table_01_01_06">Bảng 6</a>, <a href="#Table_01_01_07">Bảng 7</a> và <a href="#Table_01_01_08">Bảng
+8</a>, bảng nào biểu diễn một hàm số, nếu có?</p>
+</div>
+<div id="Table_01_01_06">
+<p><strong>Bảng 6.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Đầu vào</th>
+<th style="text-align: right;">Đầu ra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Table_01_01_07">
+<p><strong>Bảng 7.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Đầu vào</th>
+<th style="text-align: right;">Đầu ra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">−3</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Table_01_01_08">
+<p><strong>Bảng 8.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Đầu vào</th>
+<th style="text-align: right;">Đầu ra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="fs-id1165137665675">
+<div id="fs-id1165137401396">
+<p><strong>Lời giải.</strong> <a href="#Table_01_01_06">Bảng 6</a> và <a href="#Table_01_01_07">Bảng 7</a> xác định các hàm số. Trong cả hai
+bảng, mỗi giá trị đầu vào tương ứng với đúng một giá trị đầu ra. <a href="#Table_01_01_08">Bảng 8</a> không xác định một hàm số, vì đầu vào
+5 tương ứng với hai đầu ra khác nhau.</p>
+</div>
+<div id="fs-id1165135161143">
+<p>Khi một bảng biểu diễn hàm số, ta cũng có thể dùng ký hiệu hàm số để
+nêu các giá trị đầu vào và đầu ra tương ứng.</p>
+</div>
+<div id="fs-id1165137806634">
+<p>Hàm số trong <a href="#Table_01_01_06">Bảng 6</a> có thể được biểu
+diễn bằng cách viết</p>
+</div>
+<div id="fs-id1165137404863">
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137404863:0"><mrow><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>,</mo><mi>f</mi><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>,</mo><mtext>và </mtext><mi>f</mi><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math></p>
+</div>
+<div id="fs-id1165137619677">
+<p>Tương tự, các đẳng thức</p>
+</div>
+<div id="fs-id1165137589116">
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137589116:0"><mrow><mi>g</mi><mrow><mo>(</mo><mrow><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>5</mn><mo>,</mo><mspace width="0.5em"></mspace><mi>g</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>,</mo><mtext>và </mtext><mi>g</mi><mrow><mo>(</mo><mn>4</mn><mo>)</mo></mrow><mo>=</mo><mn>5</mn></mrow></math></p>
+</div>
+<div id="fs-id1165137715365">
+<p>biểu diễn hàm số trong <a href="#Table_01_01_07">Bảng 7</a>.</p>
+</div>
+<div id="fs-id1165137656795">
+<p><a href="#Table_01_01_08">Bảng 8</a> không thể được biểu diễn theo
+cách tương tự, vì bảng không biểu diễn một hàm số.</p>
+</div>
+</div>
+</div>
+<p><em>Lưu ý bổ sung:</em> Trong Bảng 7, đầu ra 5 xuất hiện hai lần,
+nhưng nó ứng với hai đầu vào khác nhau là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">-3</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>.
+Mỗi đầu vào của bảng vẫn có đúng một đầu ra, nên bảng biểu diễn một hàm
+số. Trong Bảng 8, chính một đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math>
+lại cho hai đầu ra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>.
+Đây là điểm khác nhau cần kiểm tra.</p>
+<p><em>Lưu ý bổ sung về tên hàm số:</em> Các chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+trong Ví dụ 5 được dùng để đặt tên các hàm số của riêng ví dụ này; chúng
+không chỉ các hàm số cùng tên ở Bảng 3 và Bảng 4.</p>
+<h3 id="fs-id1165137749258">Tự thử 3</h3>
+<div id="ti_01_01_03">
+<div id="fs-id1165137698328">
+<div id="fs-id1165137698329">
+<p><a href="#Table_01_01_09">Bảng 9</a> có biểu diễn một hàm số
+không?</p>
+</div>
+<div id="Table_01_01_09">
+<p><strong>Bảng 9.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Đầu vào</th>
+<th style="text-align: right;">Đầu ra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Gợi ý bổ sung:</em> Kiểm tra từng đầu vào rồi xem <a href="#fs-id1165135322022">lời giải</a>; không cần đoán một công
+thức.</p>
+</div>
+</div>
+<h3 id="fs-id1165135322022">Tự thử 3 — Lời giải</h3>
+<div id="fs-id1165137844279">
+<p><strong>Đáp án nguồn:</strong> Có.</p>
+</div>
+<p><em>Giải thích bổ sung:</em> Mỗi đầu vào 1, 2, 3 có đúng một đầu ra
+tương ứng là 10, 100, 1000. Vì thế, bảng biểu diễn một hàm số trên tập
+xác định
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2,3\}</annotation></semantics></math>.
+Ba cặp dữ liệu này không tự xác định đầu ra tại những đầu vào khác ngoài
+bảng.</p>
+<h2 id="vi-next">Tự đánh giá và phần tiếp theo</h2>
+<p><em>Câu hỏi bổ sung:</em> Bạn đã sẵn sàng học tiếp nếu giải thích
+được vì sao Bảng 7 là một hàm số nhưng Bảng 8 không phải, và vì sao Bảng
+3 phải ghi rõ điều kiện năm không nhuận.</p>
+<p>Tiếp theo: <strong>Tìm giá trị đầu vào và đầu ra của hàm số</strong>,
+bắt đầu tại <code>fs-id1165137503241</code> trong cùng mô-đun
+<code>m49301</code>.</p>
+<h2 id="vi-attribution">Nguồn và ghi công</h2>
+<p>Bản dịch độc lập <code>vi-Latn-VN</code> từ Jay Abramson và các cộng
+tác viên OpenStax, <em>Precalculus 2e</em>, mô-đun <code>m49301</code>,
+UUID <code>11f4eacc-c348-4836-8c5b-747577d249ca</code>; <a href="https://github.com/openstax/osbooks-college-algebra-bundle/tree/789b54099106b071d1d32bfcee454fed72eb4768">nguồn
+được ghim</a>. Đối chiếu với <a href="https://github.com/KokunoYumeto/openstax-precalculus-2e-id">ấn bản
+Bahasa Indonesia</a> <code>0.1.0-alpha.58-reader.1</code>.</p>
+<p>Văn bản và bản dịch A30 này theo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
+4.0</a>. Giữ nguyên ghi công tác giả và các thông báo trong
+<code>notices/</code>; các thành phần của những sách khác giữ giấy phép
+riêng. Những phần ghi “bổ sung” và việc bố trí lại Bảng 3–5 là thay đổi
+của bản dịch. Dấu gạch trước số âm trong Bảng 7 được chuẩn hóa thành dấu
+trừ; giá trị
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">-3</annotation></semantics></math>
+không đổi. Không phải ấn bản chính thức hay được tác giả nguồn bảo trợ.
+Được thực hiện với sự hỗ trợ của OpenAI Codex theo yêu cầu người dùng;
+chưa có thẩm định của người bản ngữ.</p>
+</body>
+</html>

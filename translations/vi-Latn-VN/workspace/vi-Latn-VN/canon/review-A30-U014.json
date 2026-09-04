@@ -1,0 +1,95 @@
+{
+  "unit": "A30-U014",
+  "date": "2026-08-31",
+  "translation_sha256": "a7580a480d94685dc54ba076735a7a903589ee1b07b84eccc8459b65d29ce8f3",
+  "author_content_review_sha256": "9eb4de1b240c3ee029ccfc8a93a541d65c24ac151c9d39437ae005491c9a2c23",
+  "root_layout_revision": "390px browser check found three preserved sourceMathML answer rows causing576px documentwidth. Added focusable horizontally scrollable regions around exactly those three original blocks, with Vietnamese accessible labels; sourceMathML and answervalues unchanged. Vertical readable answer tables remain. Root reopened actual OCR08 and reviewed the wrapper edits before rebinding this hash.",
+  "source_excerpt_sha256": "cc1634730077b3b445ffbe05e6b56da4f257106110f3d57d233372b93ac7d620",
+  "examples_consulted": [
+    "VI-C01",
+    "VI-C02",
+    "VI-C03",
+    "VI-C04",
+    "VI-C05"
+  ],
+  "draft_checked": true,
+  "final_checked": true,
+  "root_acceptance": "Root read the complete final draft and31-MathML source excerpt, rechecked all19tablepairs,30requested values and final combined results -1/20, and reopened actual HUSTOCR07/08 during source/answer review. Accepted independent final-draft review at9eb4de1b...; retained source bad equalities only in an immediately warned transcription followed by exact/approximately corrected values. Reader layout reviewed separately in qa/visual-A30-U014.json.",
+  "draft_author_review_completed": true,
+  "independent_review": {
+    "reviewer": "/root/u004_translation/remaining_exercise_audit",
+    "status": "pass_final_draft",
+    "reviewed_translation_sha256": "9eb4de1b240c3ee029ccfc8a93a541d65c24ac151c9d39437ae005491c9a2c23",
+    "prior_reviewed_translation_sha256": "44f9da2fedc2e10a8bd548e476155d08ac559e9d9f40c71011c517d3ca15891d",
+    "final_revision_confirmation": "Reviewer reopened the actual final intro, Bài69 wording and split Bài75 derivations; confirmed unchanged values/logic and all revised wording sound. No reviewer edits.",
+    "findings": "Independently compared actual EN/ID,61IDs/31MathML,4tables19pairs,13new exercises,7source/6new answers,all30 requested values and final-1/20 results. Reopened actual HUST canon. No substantive issue. Subsequent author edits only clarified substitution wording and split two supplementalBài75 derivations into shorter display lines; no sourceMathML, answer value or table changed.",
+    "root_review": "accepted; root read source/draft and actual canon; reader QA recorded separately"
+  },
+  "stages": [
+    {
+      "stage": "before drafting",
+      "note": "Reopened actual canon README, HUST OCR07/OCR08 and native printedpage7 Exercises1.1-1.3, plus terminology. Read full actual EN Numeric category and ID counterpart (MathML plus compact exact-subtree prose/table listing). Verified U001owns only the three selected exercises, not Numericparent or its sharedprompt, so retain parent/title/allprompts and reference the three omitted exercises."
+    },
+    {
+      "stage": "during drafting and table/answer review",
+      "note": "Returned to actual OCR07/OCR08 and native printedpages6-7 while writing table/domain explanations and expanded solutions. Inspected allfour source XMLtables and every pair directly; transpose without changing order. Preserve f as function and f(3) as value, distinguish solving for table inputs from evaluating a known input, and disallow interpolation without data."
+    },
+    {
+      "stage": "final draft-author review",
+      "note": "Read whole draft, reopened actual OCR07/OCR08 plus native function/domain and exercise passages, ran272checks includingfulloriginals, and completed an in-memory Pandoc smoke parse with61sourceIDs/31sourceMathML/10HTMLtables/noimages/noescapedMath. After independent pass, clarified two substitution phrases and split only supplementalBài75 derivations for mobile. Reread relevant actual OCR passages after those revisions and reran272checks. Final reader visualQA remains pendingroot."
+    }
+  ],
+  "witnesses": [
+    {
+      "path": "downloads/vi-canon/hust-07.ocr.txt",
+      "sha256": "a93f4fdf9f7e4606386cd27b026138a3e00c676733ee8666beecd9f9f7545353",
+      "locator": "C-VI-01 PDFpage7/printed6,section3(1), function/formula/domain/range distinction;VI-C01/02"
+    },
+    {
+      "path": "downloads/vi-canon/hust-08.ocr.txt",
+      "sha256": "8791a452903eeca13238095063a51227da0cfd6c81fc4bfa19ac73f104d1fa6e",
+      "locator": "C-VI-01 PDFpage8/printed7,Exercises1.1-1.3;VI-C03/04/05"
+    },
+    {
+      "path": "downloads/vi-canon/hust-giai-tich-1.native.txt",
+      "sha256": "8e810df28f8051bf1db67cc7e19855f9aa0b203c0ef7273dcf5c85dce0cdb38e",
+      "locator": "Printedpages6-7,section3(1),Exercises1.1-1.3; read alongside OCR; formulas not used as mathematical authority"
+    }
+  ],
+  "source_section": "m49301/fs-id1165135342204",
+  "stop_before": "fs-id1165134373511",
+  "omitted_u001_exercises": [
+    "fs-id1165133324915",
+    "fs-id1165135245507",
+    "fs-id1165135381342"
+  ],
+  "source_scope": {
+    "source_ids": 61,
+    "mathml": 31,
+    "exercises": 13,
+    "source_solutions": 7,
+    "new_solutions": 6,
+    "shared_prompts": 5,
+    "tables": 4,
+    "table_pairs": 19,
+    "source_links": 1,
+    "added_cross_reader_links": 3,
+    "images": 0
+  },
+  "material_decisions_for_root_log": [
+    "Retain Numeric parent5342204/title and allfive sharedinstructions, including previously untranslated initialprompt3324912. Exclude exactlyU001exercises3324915/5245507/5381342 and reference their real reader anchors. New exercises keep source-wide63-75 numbering; no duplicate coverage claimed.",
+    "Transpose allfour source tables into two-column tables, preserving all19pairs and order. Place sourceMathML x/y header occurrences in adjacent labels to avoid multiline rawMathML breaking Markdowntable headers.",
+    "Retain sharedprompt5641701's reference to sourceTable7727218 and both dependent exercises66/67. f(3)=53; the only listed input for output1is2. No interpolation or global statement about unlisted inputs.",
+    "Preserve all61sourceIDs and31MathML occurrences. Three source answers are horizontal MathMLtables; keep originals and repeat their values in accessible vertical supplementary tables. Only mtext is two em spaces, retained without a translation dictionary.",
+    "Source71 uses false '=' before rounded4.414/4.732/5.236 in bothENandID. Put a prominent correction warning before the unchanged sourceMathML; supply exact3+sqrt2,3+sqrt3,3+sqrt5 and correctly useapproximately. Keep exact4and5 exact. This resolves the documented issue without silently rewriting source evidence.",
+    "Add realdomain[-3,infinity)for3+sqrt(x+3) and x!=-3for(x-2)/(x+3). All five requested inputs are valid. Negative exponents give reciprocals, not negative values.",
+    "Mark six new solutions64/66/68/70/72/74, and all expanded reasoning, explicitly supplementary. Preserve seven sourceanswers, including final20. Arithmetic values independently reviewed; combined74=-1 and75=20.",
+    "Shorten only supplementalBài75display chains after learning from U011mobileQA; sourceMathML unchanged. Clarify substitution means replace the variable by the specified parenthesized input.",
+    "265 standalone assertions:180structure,28source-table checks,39exact finite arithmetic,6displayed-answer-table checks,9rational rounding checks,3domain checks. --originals adds7full-source/omission checks. No thirdparty Python dependencies, ignored downloads or network required by default.",
+    "Rounding checks use rational half-unit intervals and squaredradicands to establish correct nearest-three-decimal rounding and reject exactequality; no floatingpoint-equality claim.",
+    "Canon supports Vietnamese function/domain/exercise language. Exact rounding and negative-exponent explanatory phrasing are transparent translator prose, not falsely claimed direct canon quotations. No canon exercise/formula is incorporated.",
+    "Only six U014-owned files authored. No sharedregistry/assets/notices/status edits,downloads or commit. Numericdraftcompletion does not mean module/book/five-bookgoal completion."
+  ],
+  "canon_limit": "Actual canon language is consulted at all stages, but it does not establish the arithmetic. Its OCR/formula slips do not override pinnedsource evidence. No native-speaker review performed.",
+  "native_speaker_review": "not_performed"
+}

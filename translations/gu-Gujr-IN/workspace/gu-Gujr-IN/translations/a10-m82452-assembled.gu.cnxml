@@ -1,0 +1,1646 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:ns1="http://cnx.rice.edu/mdml" xml:lang="gu-Gujr-IN">
+
+<title>પૂર્ણ સંખ્યાઓનો પરિચય</title>
+<metadata>
+  <ns1:content-id>m82452</ns1:content-id>
+  <ns1:title>પૂર્ણ સંખ્યાઓનો પરિચય</ns1:title>
+  <ns1:abstract><para id="para-00001">આ વિભાગના અંતે તમે આ કરી શકશો:</para>
+<list id="list-00001">
+<item>પૂર્ણ સંખ્યાઓમાં સ્થાનકિંમતનો ઉપયોગ કરવો</item>
+<item>અવયવીઓ ઓળખવા અને વિભાજ્યતાની કસોટીઓ લાગુ કરવી</item>
+<item>અવિભાજ્ય અવયવીકરણ અને લઘુત્તમ સામાન્ય અવયવી શોધવા</item>
+</list></ns1:abstract>
+  <ns1:uuid>16b0b665-bb17-4b27-886f-08a966ee6c79</ns1:uuid>
+</metadata>
+
+<content>
+<note id="fs-id1170655158095" class="be-prepared">
+<para id="fs-id1170655208177">આ વિભાગના વિષયોનો વધુ વિગતવાર પરિચય <emphasis effect="italics">પૂર્વબીજગણિત</emphasis> પુસ્તકના આ પ્રકરણોમાં મળે છે: <emphasis effect="bold">પૂર્ણ સંખ્યાઓ</emphasis> અને <emphasis effect="bold">બીજગણિતની ભાષા</emphasis>.</para>
+</note>
+<para id="fs-id1170655154091">પ્રાથમિક બીજગણિતનો અભ્યાસ શરૂ કરતાં પહેલાં આપણે કેટલીક કુશળતાઓ અને શબ્દો ફરી યાદ કરવાના છે. આ પ્રકરણમાં પૂર્ણ સંખ્યાઓ, પૂર્ણાંકો, અપૂર્ણાંકો, દશાંશ સંખ્યાઓ અને વાસ્તવિક સંખ્યાઓ પર ધ્યાન આપીશું. આપણે બીજગણિતનાં સંકેતો અને શબ્દોનો ઉપયોગ પણ શરૂ કરીશું.</para>
+<section id="fs-id1170655083568">
+<title>પૂર્ણ સંખ્યાઓમાં સ્થાનકિંમતનો ઉપયોગ કરો</title>
+<para id="fs-id1170655162029">બીજગણિતમાં વપરાતી સૌથી પાયાની સંખ્યાઓ એ છે જેનાથી આપણે આસપાસની વસ્તુઓ ગણીએ છીએ: 1, 2, 3, 4 અને આમ આગળ. આને કહે છે <term id="term-00001">ગણતરીની સંખ્યાઓ</term><emphasis effect="bold" />. ગણતરીની સંખ્યાઓનું બીજું નામ છે <emphasis effect="italics">પ્રાકૃતિક સંખ્યાઓ</emphasis>. ગણતરીની સંખ્યાઓમાં શૂન્ય ઉમેરીએ તો મળે છે <term id="term-00002">પૂર્ણ સંખ્યાઓ</term><emphasis effect="bold" />.</para>
+<para id="fs-id1170655024948"><m:math><m:mrow><m:mspace width="1.5em" /></m:mrow></m:math>ગણતરીની સંખ્યાઓ: 1, 2, 3, …</para>
+<para id="fs-id1170655082425"><m:math><m:mrow><m:mspace width="1.5em" /></m:mrow></m:math>પૂર્ણ સંખ્યાઓ: 0, 1, 2, 3, …</para>
+<para id="fs-id1170655192198">“…” સંકેતને લોપચિહ્ન કહે છે. તેનો અર્થ “અને આમ આગળ” થાય છે, એટલે કે આ તરાહ અંત વિના ચાલુ રહે છે.</para>
+<para id="fs-id1170655197123">ગણતરીની સંખ્યાઓ અને પૂર્ણ સંખ્યાઓ દર્શાવવા માટે આપણે વાપરી શકીએ છીએ <term id="term-00003">સંખ્યારેખા</term> (જુઓ <link target-id="CNX_ElemAlg_Figure_01_01_001_new" />).</para>
+<figure id="CNX_ElemAlg_Figure_01_01_001_new">
+<media id="fs-id1170655233864" alt="આકૃતિની નીચે આડી સંખ્યારેખા છે, જેના બંને છેડે તીર છે અને જેના પર શૂન્યથી છ સુધીનાં મૂલ્યો છે. તેની ઉપર બીજી આડી રેખા શૂન્યથી ત્રણ સુધી છે; તેનું તીર ડાબી તરફ છે અને તેની પાસે “નાનું” લખ્યું છે. પહેલી બે રેખાઓની ઉપર ત્રીજી આડી રેખા ત્રણથી છ સુધી છે; તેનું તીર જમણી તરફ છે અને તેની પાસે “મોટું” લખ્યું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_001_new.jpg" />
+</media>
+<caption>સંખ્યારેખા પર ડાબેથી જમણે જતાં સંખ્યાઓ મોટી થાય છે અને જમણેથી ડાબે જતાં નાની થાય છે. આ સંખ્યારેખા પર માત્ર 0થી 6 સુધીની પૂર્ણ સંખ્યાઓ બતાવી છે, પરંતુ સંખ્યાઓ અંત વિના આગળ વધતી રહે છે.</caption>
+</figure>
+<note id="fs-id1166423891565" class="manipulative-math">વસ્તુઓની મદદથી ગણિત શીખવાની “સંખ્યારેખા—ભાગ 1” પ્રવૃત્તિ કરવાથી ગણતરીની સંખ્યાઓ અને પૂર્ણ સંખ્યાઓ વધુ સારી રીતે સમજાશે.</note>
+<para id="fs-id1170655190408">આપણી <term class="no-emphasis" id="term-00004">સંખ્યાપદ્ધતિ</term>ને સ્થાનકિંમત પદ્ધતિ કહે છે, કારણ કે અંકનું મૂલ્ય સંખ્યામાં તેના સ્થાન પર આધાર રાખે છે. <link target-id="CNX_ElemAlg_Figure_01_01_002_new" /> માં બતાવેલી છે <term class="no-emphasis" id="term-00005">સ્થાનકિંમતો</term>. સ્થાનકિંમતોને ત્રણ-ત્રણના જૂથમાં વહેંચીએ છીએ. આ જૂથોને ગાળા કહે છે. આ ગાળાઓ છે: <emphasis effect="italics">એકમ, હજાર, મિલિયન, બિલિયન, ટ્રિલિયન</emphasis>, અને આમ આગળ. લખેલી સંખ્યામાં અલ્પવિરામથી ગાળાઓ અલગ પાડીએ છીએ.</para>
+<figure id="CNX_ElemAlg_Figure_01_01_002_new">
+<media id="fs-id1170655200451" alt="આ સ્થાનકિંમત કોષ્ટકમાં 5,278,194 સંખ્યા બતાવી છે. ઉપરની મથાળાની હરોળમાં “સ્થાનકિંમત” છે. તેની નીચે “ટ્રિલિયન”, “બિલિયન”, “મિલિયન”, “હજાર” અને “એકમ” ગાળાઓ છે. “ટ્રિલિયન” નીચેના ત્રણ સ્તંભોમાં નીચેથી ઉપર વાંચતાં “સો ટ્રિલિયન”, “દસ ટ્રિલિયન” અને “ટ્રિલિયન” છે. “બિલિયન” નીચે “સો બિલિયન”, “દસ બિલિયન” અને “બિલિયન” છે. “મિલિયન” નીચે “સો મિલિયન”, “દસ મિલિયન” અને “મિલિયન” છે. “હજાર” નીચે “સો હજાર”, “દસ હજાર” અને “હજાર” છે. “એકમ” નીચે “સો”, “દશક” અને “એકમ” છે. ડાબેથી જમણે “મિલિયન”, “સો હજાર”, “દસ હજાર”, “હજાર”, “સો”, “દશક” અને “એકમ” સ્તંભોમાં અનુક્રમે 5, 2, 7, 8, 1, 9, 4 છે. એટલે આ સંખ્યામાં 5 મિલિયન, 2 સો હજાર, 7 દસ હજાર, 8 હજાર, 1 સો, 9 દશક અને 4 એકમ છે. મૂળ અંગ્રેજી વર્ણનના અંતે “પાંચ મિલિયન બસો ઓગણએંસી હજાર એકસો ચોરાણું” લખ્યું છે; તે શબ્દરૂપ ઉપરના અંકો સાથે મળતું નથી, જેમાં હજારના ગાળાનું મૂલ્ય બસો અઠ્ઠોતેર છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_002_new.jpg" />
+</media>
+<caption>કોષ્ટકમાં 5,278,194 સંખ્યા બતાવી છે. અંક 5 મિલિયનના સ્થાને છે. અંક 2 સો હજારના સ્થાને છે. અંક 7 દસ હજારના સ્થાને છે. અંક 8 હજારના સ્થાને છે. અંક 1 સોના સ્થાને છે. અંક 9 દશકના સ્થાને છે. અંક 4 એકમના સ્થાને છે.</caption>
+</figure>
+<example id="fs-id1170654981807">
+<exercise id="fs-id1170655205131">
+<problem id="fs-id1170654978132">
+<para id="fs-id1170655192807">63,407,218 સંખ્યામાં આપેલા દરેક અંકની સ્થાનકિંમત શોધો:</para>
+<list id="fs-id1166421427575" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> 7</item>
+<item><span class="token">ⓑ</span> 0</item>
+<item><span class="token">ⓒ</span> 1</item>
+<item><span class="token">ⓓ</span> 6</item>
+<item><span class="token">ⓔ</span> 3</item>
+</list>
+</problem>
+<solution id="fs-id1170655022351">
+<title>ઉકેલ</title>
+<para id="fs-id1170654968077">સંખ્યાને સ્થાનકિંમતના કોષ્ટકમાં મૂકો:<newline />
+<media id="fs-id1170655112880" alt="આ સ્થાનકિંમત કોષ્ટકમાં 63,407,218 સંખ્યા બતાવી છે. ઉપરની મથાળાની હરોળમાં “સ્થાનકિંમત” છે. તેની નીચે “ટ્રિલિયન”, “બિલિયન”, “મિલિયન”, “હજાર” અને “એકમ” ગાળાઓ છે. “ટ્રિલિયન” નીચેના ત્રણ સ્તંભોમાં નીચેથી ઉપર વાંચતાં “સો ટ્રિલિયન”, “દસ ટ્રિલિયન” અને “ટ્રિલિયન” છે. “બિલિયન” નીચે “સો બિલિયન”, “દસ બિલિયન” અને “બિલિયન” છે. “મિલિયન” નીચે “સો મિલિયન”, “દસ મિલિયન” અને “મિલિયન” છે. “હજાર” નીચે “સો હજાર”, “દસ હજાર” અને “હજાર” છે. “એકમ” નીચે “સો”, “દશક” અને “એકમ” છે. ડાબેથી જમણે “દસ મિલિયન”, “મિલિયન”, “સો હજાર”, “દસ હજાર”, “હજાર”, “સો”, “દશક” અને “એકમ” સ્તંભોમાં અનુક્રમે 6, 3, 4, 0, 7, 2, 1, 8 છે. એટલે ત્રેસઠ મિલિયન ચારસો સાત હજાર બસો અઢાર સંખ્યામાં 6 દસ મિલિયન, 3 મિલિયન, 4 સો હજાર, 0 દસ હજાર, 7 હજાર, 2 સો, 1 દશક અને 8 એકમ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_003_img_new.jpg" />
+</media></para>
+<para id="fs-id1166426398759"><span class="token">ⓐ</span> 7 હજારના સ્થાને છે.<newline />
+<span class="token">ⓑ</span> 0 દસ હજારના સ્થાને છે.<newline />
+<span class="token">ⓒ</span> 1 દશકના સ્થાને છે.<newline />
+<span class="token">ⓓ</span> 6 દસ મિલિયનના સ્થાને છે.<newline />
+<span class="token">ⓔ</span> 3 મિલિયનના સ્થાને છે.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655228867" class="try">
+<exercise id="fs-id1170655213443">
+<problem id="fs-id1170655125783">
+<para id="fs-id1170655133227">27,493,615 સંખ્યામાં આપેલા દરેક અંકની સ્થાનકિંમત શોધો:</para>
+<para id="fs-id1170655154330"><span class="token">ⓐ</span> 2 <span class="token">ⓑ</span> 1 <span class="token">ⓒ</span> 4 <span class="token">ⓓ</span> 7 <span class="token">ⓔ</span> 5</para>
+</problem>
+<solution id="fs-id1170655192955">
+<para id="fs-id1170654924451"><span class="token">ⓐ</span> દસ મિલિયન <span class="token">ⓑ</span> દશક <span class="token">ⓒ</span> સો હજાર <span class="token">ⓓ</span> મિલિયન <span class="token">ⓔ</span> એકમ</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654885628" class="try">
+<exercise id="fs-id1170655088995">
+<problem id="fs-id1170655171837">
+<para id="fs-id1170655171777">519,711,641,328 સંખ્યામાં આપેલા દરેક અંકની સ્થાનકિંમત શોધો:</para>
+<para id="fs-id1170655114062"><span class="token">ⓐ</span> 9 <span class="token">ⓑ</span> 4 <span class="token">ⓒ</span> 2 <span class="token">ⓓ</span> 6 <span class="token">ⓔ</span> 7</para>
+</problem>
+<solution id="fs-id1170655129771">
+<para id="fs-id1170655163552"><span class="token">ⓐ</span> બિલિયન <span class="token">ⓑ</span> દસ હજાર <span class="token">ⓒ</span> દશક <span class="token">ⓓ</span> સો હજાર <span class="token">ⓔ</span> સો મિલિયન</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655113270">ચેક લખતી વખતે તમે સંખ્યા અંકોમાં અને શબ્દોમાં બંને રીતે લખો છો. સંખ્યાને શબ્દોમાં લખવા માટે દરેક ગાળાની સંખ્યા લખો અને તેની પાછળ ગાળાનું નામ લખો. અંગ્રેજી ગાળાના નામના અંતે બહુવચન દર્શાવતો અક્ષર <emphasis effect="italics">s</emphasis> ઉમેરશો નહીં. ડાબી બાજુથી શરૂ કરો, જ્યાં ગાળાઓનાં મૂલ્યો સૌથી મોટાં હોય છે. એકમના ગાળાનું નામ લખતા નથી. અલ્પવિરામ ગાળાઓને અલગ પાડે છે. તેથી સંખ્યામાં જ્યાં અલ્પવિરામ હોય ત્યાં શબ્દો વચ્ચે પણ અલ્પવિરામ મૂકો (જુઓ <link target-id="CNX_ElemAlg_Figure_01_01_004_new" />). 74,218,369 સંખ્યાને શબ્દોમાં ચુમ્મોતેર મિલિયન, બસો અઢાર હજાર, ત્રણસો ઓગણસિત્તેર લખીએ છીએ.</para>
+<figure id="CNX_ElemAlg_Figure_01_01_004_new">
+<media id="fs-id1170655154806" alt="આકૃતિમાં 74, 218 અને 369 એક હરોળમાં અલ્પવિરામથી અલગ પાડીને લખ્યાં છે. દરેક સંખ્યાની નીચે વાંકિયો કૌંસ છે. 74ની નીચે “મિલિયન”, 218ની નીચે “હજાર” અને 369ની નીચે “એકમ” લખ્યું છે. ડાબી તરફનું તીર આ ત્રણ શબ્દો તરફ ચીંધે છે અને તેમને “ગાળાઓ” કહે છે. નીચેની હરોળમાં “74”, જમણી તરફનું તીર અને “ચુમ્મોતેર મિલિયન” પછી અલ્પવિરામ છે. પછીની હરોળમાં “218”, જમણી તરફનું તીર અને “બસો અઢાર હજાર” પછી અલ્પવિરામ છે. સૌથી નીચે “369”, જમણી તરફનું તીર અને “ત્રણસો ઓગણસિત્તેર” લખ્યું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_004_new.jpg" />
+</media>
+</figure>
+<note id="fs-id1170655127621" class="howto">
+<title>પૂર્ણ સંખ્યાને શબ્દોમાં લખો.</title>
+<list id="fs-id1166426255157" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>ડાબેથી શરૂ કરીને દરેક ગાળાની સંખ્યા અને તેની પાછળ ગાળાનું નામ લખો.</item>
+<item>ગાળાઓને અલગ પાડવા સંખ્યામાં અલ્પવિરામ મૂકો.</item>
+<item>એકમના ગાળાનું નામ લખશો નહીં.</item>
+</list>
+</note>
+<example id="fs-id1170655164754">
+<exercise id="fs-id1170655163653">
+<problem id="fs-id1170655175454">
+<para id="fs-id1170654981580">8,165,432,098,710 સંખ્યાને શબ્દોમાં લખો.</para>
+</problem>
+<solution id="fs-id1170654857936">
+<title>ઉકેલ</title>
+<para id="fs-id1170655134588">દરેક ગાળાની સંખ્યા અને તેની પાછળ ગાળાનું નામ લખો.</para>
+<para id="fs-id1170655134528"><media id="fs-id1170655155229" alt="આકૃતિમાં 8, 165, 432, 098 અને 710 એક હરોળમાં અલ્પવિરામથી અલગ પાડીને લખ્યાં છે. દરેક સંખ્યાની નીચે આડો કૌંસ છે. 8ની નીચે “ટ્રિલિયન”, 165ની નીચે “બિલિયન”, 432ની નીચે “મિલિયન”, 098ની નીચે “હજાર” અને 710ની નીચે “એકમ” લખ્યું છે. તેની નીચેની હરોળમાં 8, જમણી તરફનું તીર અને “આઠ ટ્રિલિયન” પછી અલ્પવિરામ છે. પછીની હરોળમાં 165, જમણી તરફનું તીર અને “એકસો પાંસઠ બિલિયન” પછી અલ્પવિરામ છે. પછીની હરોળમાં 432, જમણી તરફનું તીર અને “ચારસો બત્રીસ મિલિયન” પછી અલ્પવિરામ છે. પછીની હરોળમાં “098”, જમણી તરફનું તીર અને “અઠ્ઠાણું હજાર” પછી અલ્પવિરામ છે. સૌથી નીચે 710, જમણી તરફનું તીર અને “સાતસો દસ” લખ્યું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_005_img_new.jpg" />
+</media></para>
+<para id="fs-id1170654915073">ગાળાઓને અલગ પાડવા અલ્પવિરામ મૂકો.</para>
+<para id="fs-id1170655164902">તેથી, <m:math><m:mrow><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>165</m:mn><m:mo>,</m:mo><m:mn>432</m:mn><m:mo>,</m:mo><m:mn>098</m:mn><m:mo>,</m:mo><m:mn>710</m:mn></m:mrow></m:math> ને શબ્દોમાં આઠ ટ્રિલિયન, એકસો પાંસઠ બિલિયન, ચારસો બત્રીસ મિલિયન, અઠ્ઠાણું હજાર, સાતસો દસ લખીએ છીએ.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655190403" class="try">
+<exercise id="fs-id1170655075933">
+<problem id="fs-id1170655195315">
+<para id="fs-id1170654905813">આ સંખ્યા <m:math><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>258</m:mn><m:mo>,</m:mo><m:mn>137</m:mn><m:mo>,</m:mo><m:mn>904</m:mn><m:mo>,</m:mo><m:mn>061</m:mn></m:mrow></m:math> શબ્દોમાં લખો.</para>
+</problem>
+<solution id="fs-id1170655096352">
+<para id="fs-id1170654989620">નવ ટ્રિલિયન, બસો અઠ્ઠાવન બિલિયન, એકસો સાડત્રીસ મિલિયન, નવસો ચાર હજાર, એકસઠ</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654962043" class="try">
+<exercise id="fs-id1170655257962">
+<problem id="fs-id1170655157875">
+<para id="fs-id1170655162513">આ સંખ્યા <m:math><m:mrow><m:mn>17</m:mn><m:mo>,</m:mo><m:mn>864</m:mn><m:mo>,</m:mo><m:mn>325</m:mn><m:mo>,</m:mo><m:mn>619</m:mn><m:mo>,</m:mo><m:mn>004</m:mn></m:mrow></m:math> શબ્દોમાં લખો.</para>
+</problem>
+<solution id="fs-id1170654977617">
+<para id="fs-id1170654957397">સત્તર ટ્રિલિયન, આઠસો ચોસઠ બિલિયન, ત્રણસો પચીસ મિલિયન, છસો ઓગણીસ હજાર, ચાર</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655228607">હવે આપણે આ પ્રક્રિયા ઉલટી કરીશું અને સંખ્યાના શબ્દરૂપ પરથી અંકો લખીશું. સંખ્યાને અંકોમાં લખવા પહેલાં ગાળા સૂચવતા શબ્દો શોધીએ છીએ. જરૂરી દરેક ગાળા માટે ત્રણ ખાલી જગ્યાઓ દોરવાથી મદદ મળે છે. પછી તેમાં અંકો ભરીએ છીએ અને ગાળાઓને અલ્પવિરામથી અલગ પાડીએ છીએ.</para>
+<note id="fs-id1170655200529" class="howto">
+<title>પૂર્ણ સંખ્યાને અંકોમાં લખો.</title>
+<list id="fs-id1166426255684" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>ગાળા સૂચવતા શબ્દો ઓળખો. (યાદ રાખો, એકમના ગાળાનું નામ ક્યારેય લખાતું નથી.)</item>
+<item>દરેક ગાળામાં જરૂરી સ્થાનો બતાવવા ત્રણ ખાલી જગ્યાઓ દોરો. ગાળાઓને અલ્પવિરામથી અલગ પાડો.</item>
+<item>દરેક ગાળાની સંખ્યા વાંચો અને અંકોને તેમની યોગ્ય સ્થાનકિંમતના સ્થાને મૂકો.</item>
+</list>
+</note>
+<example id="fs-id1170655171204">
+<exercise id="fs-id1170655127576">
+<problem id="fs-id1170654859177">
+<para id="fs-id1170655025082">આ સંખ્યા લખો: <emphasis effect="italics">નવ બિલિયન, બસો છેતાલીસ મિલિયન, તોતેર હજાર, એકસો નેવ્યાસી</emphasis> —પૂર્ણ સંખ્યા તરીકે અંકોમાં.</para>
+</problem>
+<solution id="fs-id1170655120857">
+<title>ઉકેલ</title>
+<para id="fs-id1170655190501">ગાળા સૂચવતા શબ્દો ઓળખો.<newline />
+પહેલા ગાળા સિવાય બીજા દરેક ગાળામાં ત્રણ સ્થાનો હોવાં જોઈએ. દરેક ગાળામાં જરૂરી સ્થાનો બતાવવા ત્રણ ખાલી જગ્યાઓ દોરો. ગાળાઓને અલ્પવિરામથી અલગ પાડો.<newline />
+પછી દરેક ગાળામાં અંકો લખો.<newline />
+<media id="fs-id1170655154739" alt="આકૃતિમાં શબ્દોથી અંકો તરફ ચાર ગાળાનું વિભાજન છે. ઉપર ગાળાનાં નામ “બિલિયન”, “મિલિયન”, “હજાર” અને “એકમ” છે. તેમની નીચે અનુક્રમે “નવ”, “બસો છેતાલીસ”, “તોતેર” અને “એકસો નેવ્યાસી” શબ્દસમૂહ છે. દરેક ગાળા માટે ત્રણ અંકનાં સ્થાન છે; પહેલા ગાળામાં શરૂઆતનાં બે સ્થાન ખાલી છે અને નીચે 9 છે, પછીનાં ગાળામાં 246, 073 અને 189 છે. દરેક શબ્દસમૂહમાંથી તેના અંકગાળા તરફ નીચે તીર છે. અંકગાળા જોડતાં 9,246,073,189 મળે છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_022_img_new.jpg" />
+</media><newline />
+સંખ્યા 9,246,073,189 છે.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170654989640" class="try">
+<exercise id="fs-id1170655166985">
+<problem id="fs-id1170655160983">
+<para id="fs-id1170655162842">બે બિલિયન, ચારસો છાસઠ મિલિયન, સાતસો ચૌદ હજાર, એકાવન સંખ્યાને પૂર્ણ સંખ્યા તરીકે અંકોમાં લખો.</para>
+</problem>
+<solution id="fs-id1170655025046">
+<para id="fs-id1170655160558"><m:math><m:mrow><m:mn>2,466,714,051</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655162272" class="try">
+<exercise id="fs-id1170655020844">
+<problem id="fs-id1170655025845">
+<para id="fs-id1170655155164">અગિયાર બિલિયન, નવસો એકવીસ મિલિયન, આઠસો ત્રીસ હજાર, એકસો છ સંખ્યાને પૂર્ણ સંખ્યા તરીકે અંકોમાં લખો.</para>
+</problem>
+<solution id="fs-id1170654964907">
+<para id="fs-id1170654982481"><m:math><m:mrow><m:mn>11,921,830,106</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654928076">2013માં યુ.એસ. સેન્સસ બ્યુરોએ ન્યૂયૉર્ક રાજ્યની વસ્તી 19,651,127 હોવાનો અંદાજ આપ્યો હતો. આપણે કહી શકીએ કે ન્યૂયૉર્કની વસ્તી આશરે 20 મિલિયન હતી. ઘણી વાર ચોક્કસ મૂલ્ય જરૂરી નથી હોતું; આશરે સંખ્યા પૂરતી હોય છે.</para>
+<para id="fs-id1170655007229">સંખ્યાનું આશરે મૂલ્ય કાઢવાની પ્રક્રિયાને કહે છે <term class="no-emphasis" id="term-00006">આસન્ન મૂલ્ય કાઢવું (ગોળ કરવું)</term>. કેટલી ચોકસાઈ જરૂરી છે તેના આધારે ચોક્કસ સ્થાનકિંમત સુધી સંખ્યાનું આસન્ન મૂલ્ય કાઢીએ છીએ. ન્યૂયૉર્કની વસ્તી આશરે 20 મિલિયન છે એમ કહીએ ત્યારે તેનો અર્થ એ થાય છે કે આપણે મિલિયનના સ્થાન સુધી આસન્ન મૂલ્ય કાઢ્યું છે.</para>
+<example id="fs-id1170655108736">
+<title>પૂર્ણ સંખ્યાઓને ગોળ કરી આસન્ન મૂલ્ય કેવી રીતે કાઢવું</title>
+<exercise id="fs-id1170655027531">
+<problem id="fs-id1170655120684">
+<para id="fs-id1170655105094">23,658ને નજીકના સો સુધી આશરે લખો.</para>
+</problem>
+<solution id="fs-id1170655134210">
+<title>ઉકેલ</title>
+<media id="fs-id1170655194626" alt="આ કોષ્ટકમાં ત્રણ સ્તંભ અને ચાર હરોળ છે. પહેલો સ્તંભ મથાળાનો છે; તેમાં દરેક પગલાનું નામ અને ક્રમ છે. બીજા સ્તંભમાં વધુ સૂચનાઓ છે. ત્રીજા સ્તંભમાં તે પગલાં અને સૂચનાઓને અનુરૂપ સંખ્યાઓ છે. ઉપરની હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 1. આપેલી સ્થાનકિંમત તીરથી દર્શાવો. તેની ડાબેના બધા અંકો બદલાતા નથી.” બીજા ખાનામાં લખ્યું છે: “23,658માં સોનું સ્થાન શોધો.” ત્રીજા ખાનામાં 23,658માં અંક 6 તરફ તીર ચીંધે છે અને “સોનું સ્થાન” લખ્યું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_008a_new.jpg" />
+</media>
+<media id="fs-id1170655028499" alt="પછીની હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 2. આપેલી સ્થાનકિંમતની તરત જમણેના અંક નીચે લીટી દોરો.” બીજા ખાનામાં લખ્યું છે: “સોના સ્થાનની જમણેના 5 નીચે લીટી દોરો.” ત્રીજા ખાનામાં ફરી 23,658 છે; અંક 6 તરફ એ જ તીર ચીંધે છે અને “સોનું સ્થાન” લખ્યું છે. અહીં 5 નીચે લીટી પણ દોરી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_008b_new.jpg" />
+</media>
+<media id="fs-id1170654984954" alt="પછીની હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 3. શું આ અંક 5 કરતાં મોટો અથવા તેની બરાબર છે? હા—આપેલી સ્થાનકિંમતના અંકમાં 1 ઉમેરો. ના—આપેલી સ્થાનકિંમતનો અંક બદલશો નહીં.” બીજા ખાનામાં લખ્યું છે: “સોના સ્થાનેના 6માં 1 ઉમેરો, કારણ કે 5 એ 5 કરતાં મોટો અથવા તેની બરાબર છે.” ત્રીજા ખાનામાં ફરી 23,658 છે; અંક 6 તરફ તીર ચીંધે છે અને “1 ઉમેરો” લખ્યું છે. મૂળ ચિત્રવર્ણનથી વિપરીત, આ તબક્કે 58ની નીચે કૌંસ કે “0 મૂકો” સૂચના નથી.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_008c_new.jpg" />
+</media>
+<media id="fs-id1170655130142" alt="છેલ્લી હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 4. આપેલી સ્થાનકિંમતની જમણેના બધા અંકોની જગ્યાએ શૂન્ય મૂકો. એટલે સૌથી નજીકના સોમાં ફેરવતાં 23,700 મળે છે.” બીજા ખાનામાં લખ્યું છે: “સોના સ્થાનની જમણેના બધા અંકોની જગ્યાએ શૂન્ય મૂકો.” ત્રીજા ખાનામાં વચ્ચેનું 23,758 બતાવ્યું છે; 58ની નીચે કૌંસ છે અને “0 મૂકો” લખ્યું છે. નીચેનું વાક્ય આખરી પરિણામ 23,700 આપે છે. મૂળ ચિત્રવર્ણન વચ્ચેનું 23,758 છોડીને જાણે ચિત્રમાં 23,700 જ હોય એમ કહે છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_008d_new.jpg" />
+</media>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655166879" class="try">
+<exercise id="fs-id1170655207341">
+<problem id="fs-id1170655171044">
+<para id="fs-id1170655128617">નજીકના સો સુધી આશરે લખો: <m:math><m:mrow><m:mn>17,852</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654925300">
+<para id="fs-id1170655108383"><m:math><m:mrow><m:mn>17,900</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655027384" class="try">
+<exercise id="fs-id1170655221973">
+<problem id="fs-id1170655202716">
+<para id="fs-id1170655166306">નજીકના સો સુધી આશરે લખો: <m:math><m:mrow><m:mn>468,751</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654893026">
+<para id="fs-id1170654863185"><m:math><m:mrow><m:mn>468,800</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655190444" class="howto">
+<title>પૂર્ણ સંખ્યાઓનું આસન્ન મૂલ્ય કાઢો.</title>
+<list id="fs-id1166426178564" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>આપેલી સ્થાનકિંમત શોધો અને તીરથી દર્શાવો. તીરની ડાબેના બધા અંકો બદલાતા નથી.</item>
+<item>આપેલી સ્થાનકિંમતની તરત જમણેના અંક નીચે લીટી દોરો.</item>
+<item>શું આ અંક 5 કરતાં મોટો અથવા તેની બરાબર છે?
+<list id="fs-id1170654989989" list-type="bulleted" bullet-style="bullet">
+<item>હા—ઉમેરો <m:math><m:mn>1</m:mn></m:math> આપેલી સ્થાનકિંમતના અંકમાં.</item>
+<item>ના—આપેલી સ્થાનકિંમતનો અંક <emphasis effect="underline">નહીં</emphasis> બદલો.</item>
+</list></item>
+<item>આપેલી સ્થાનકિંમતની જમણેના બધા અંકોની જગ્યાએ શૂન્ય મૂકો.</item>
+</list>
+</note>
+<example id="fs-id1170655126448">
+<exercise id="fs-id1170654952916">
+<problem id="fs-id1170655166809">
+<para id="fs-id1170655151020">આ સંખ્યાનું આસન્ન મૂલ્ય કાઢો: <m:math><m:mrow><m:mn>103,978</m:mn></m:mrow></m:math> —નજીકના:</para>
+<list id="fs-id1166426039326" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> સો</item>
+<item><span class="token">ⓑ</span> હજાર</item>
+<item><span class="token">ⓒ</span> દસ હજાર</item>
+</list>
+</problem>
+<solution id="fs-id1170655106038">
+<title>ઉકેલ</title>
+<para id="fs-id1167835319528"><span class="token">ⓐ</span> <newline />
+<table id="fs-id1167832055010" class="unnumbered unstyled" aria-label="આ આકૃતિમાં ડાબે સૂચનાઓ અને જમણે સંખ્યાઓ છે. પહેલી સૂચના છે: “103,978માં સોનું સ્થાન શોધો.” જમણે “સોનું સ્થાન” લખ્યું છે અને તીર નીચે 103,978માં 9 તરફ ચીંધે છે. પછીની સૂચના છે: “સોના સ્થાનની તરત જમણેના અંક નીચે લીટી દોરો.” જમણે ફરી સોના સ્થાનના 9 તરફ તીર છે અને 7 નીચે લીટી દોરી છે. પછી લખ્યું છે: “7 એ 5 કરતાં મોટો અથવા તેની બરાબર હોવાથી 9માં 1 ઉમેરો. સોના સ્થાનની જમણેના બધા અંકોની જગ્યાએ શૂન્ય મૂકો.” જમણે 103,978 ફરી છે; મૂળ અંગ્રેજી વર્ણન અહીં અંક 3ને “સોનું સ્થાન” કહે છે અને 7 નીચે લીટી હોવાનું કહે છે. મૂળ વર્ણન મુજબ બીજા તીર પાસે “1 ઉમેરો; 9 વત્તા 1 બરાબર 10; 9ની જગ્યાએ 0 મૂકો અને 1 આગળ લઈ જાઓ” લખ્યું છે. નીચે લીટી દોરેલા 7ની નીચે કૌંસ છે અને તેની તરફનું તીર “0 મૂકો” કહે છે. પછીની હરોળમાં જમણે 104,000 છે. છેલ્લે લખ્યું છે: “તેથી 103,978નું નજીકના સો સુધીનું આસન્ન મૂલ્ય 104,000 છે.” નોંધ: 3 સોના નહીં, હજારના સ્થાને છે; સોના સ્થાનનો અંક 9 છે.">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<tbody>
+<row valign="top">
+<entry valign="top" align="left">103,978માં સોનું સ્થાન શોધો.</entry>
+<entry valign="top" align="left"><media id="fs-id1167831970141" alt="103,978માં અંક 9 તરફ તીર ચીંધે છે અને તે સોના સ્થાને છે એમ દર્શાવે છે."><image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_009a_img_new.jpg" /></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">સોના સ્થાનની તરત જમણેના અંક નીચે લીટી દોરો.</entry>
+<entry valign="top" align="left"><media id="fs-id1167834196335" alt="103,978માં અંક “9” તરફ તીર ચીંધે છે અને તે સોના સ્થાને છે એમ દર્શાવે છે; તેની જમણેના 7 નીચે લીટી દોરેલી છે."><image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_009b_img_new.jpg" /></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">7 એ 5 કરતાં મોટો અથવા તેની બરાબર હોવાથી 9માં 1 ઉમેરો. સોના સ્થાનની જમણેના બધા અંકોની જગ્યાએ શૂન્ય મૂકો.</entry>
+<entry valign="top" align="left"><media id="fs-id1167831823617" alt="મૂળ વર્ણન મુજબ આ ચિત્ર 103,978ને નજીકના હજાર સુધી આશરે લખવાની પ્રક્રિયા બતાવે છે: સોના સ્થાનનો અંક (9) એ 5 કે તેથી મોટો હોવાથી હજારના સ્થાનના અંકમાં 1 ઉમેરો (3માંથી 4 થાય છે) અને જમણેના બધા અંકોની જગ્યાએ શૂન્ય મૂકો; પરિણામ 104,000 મળે છે. નોંધ: આ ચિત્રનો અહીંનો પ્રશ્ન નજીકના સો સુધીનું આસન્ન મૂલ્ય માંગે છે; બંને કિસ્સામાં પરિણામ સમાન છે."><image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_009c_img_new.jpg" /></media></entry>
+</row>
+<row valign="top">
+<entry />
+<entry valign="top" align="left">તેથી 103,978નું નજીકના સો સુધીનું આસન્ન મૂલ્ય 104,000 છે.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167831894747"><span class="token">ⓑ</span> <newline />
+<table id="fs-id1167834184013" class="unnumbered unstyled can-break" aria-label="આ આકૃતિમાં ડાબે સૂચનાઓ અને જમણે સંખ્યાઓ છે. પહેલી સૂચના છે: “હજારનું સ્થાન શોધો અને તેની તરત જમણેના અંક નીચે લીટી દોરો.” જમણે “હજારનું સ્થાન” લખ્યું છે અને તીર 103,978માં 3 તરફ ચીંધે છે. 9 નીચે લીટી છે. પછીની સૂચના છે: “9 એ 5 કરતાં મોટો અથવા તેની બરાબર હોવાથી 3માં 1 ઉમેરો. સોના સ્થાનની જમણેના બધા અંકોની જગ્યાએ શૂન્ય મૂકો.” જમણે ફરી 103,978 છે; 3 પાસે “હજારનું સ્થાન” છે અને 9 નીચે લીટી છે. બીજા તીર પાસે “1 ઉમેરો; 3 વત્તા 1 બરાબર 4; 3ની જગ્યાએ 4 મૂકો” છે. છેલ્લા ત્રણ અંકો 978ની નીચે કૌંસ છે અને તેની તરફનું તીર “0 મૂકો” કહે છે. પછીની હરોળમાં જમણે 104,000 છે. છેલ્લે લખ્યું છે: “તેથી 103,978નું નજીકના હજાર સુધીનું આસન્ન મૂલ્ય 104,000 છે.” નોંધ: મૂળ સૂચનામાં “સોના સ્થાનની જમણે” લખ્યું છે; અહીં હજારના સ્થાનની જમણેના ત્રણેય અંકો 978ની જગ્યાએ શૂન્ય મૂકવાના છે."><label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>હજારનું સ્થાન શોધો અને તેની તરત જમણેના અંક નીચે લીટી દોરો.</entry>
+    <entry><media id="fs-id1167835305151" alt="103,978માં અંક “3” તરફ તીર ચીંધે છે અને “હજારનું સ્થાન” દર્શાવે છે; તેની જમણેના 9 નીચે લીટી દોરેલી છે. મૂળ ચિત્રવર્ણન ભૂલથી 3 નીચે લીટી હોવાનું કહે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_010a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>9 એ 5 કરતાં મોટો અથવા તેની બરાબર હોવાથી 3માં 1 ઉમેરો. હજારના સ્થાનની જમણેના બધા અંકોની જગ્યાએ શૂન્ય મૂકો.</entry>
+    <entry><media id="fs-id1167834132960" alt="103,978નું નજીકના હજાર સુધીનું આસન્ન મૂલ્ય: “3”માંથી “4” થાય છે (કારણ કે “9” એ 5 કરતાં મોટો અથવા તેની બરાબર છે), અને “978”ની જગ્યાએ “000” મૂકતાં 104,000 મળે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_010b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry>તેથી 103,978નું નજીકના હજાર સુધીનું આસન્ન મૂલ્ય 104,000 છે.</entry>
+  </row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167832134211"><span class="token">ⓒ</span> <newline />
+<table id="fs-id1167832006514" class="unnumbered unstyled" aria-label="આ આકૃતિમાં ડાબે સૂચનાઓ અને જમણે સંખ્યાઓ છે. પહેલી સૂચના છે: “દસ હજારનું સ્થાન શોધો અને તેની તરત જમણેના અંક નીચે લીટી દોરો.” જમણે “દસ હજારનું સ્થાન” છે અને તીર નીચે 103,978માં 0 તરફ ચીંધે છે. 3 નીચે લીટી છે. પછીની સૂચનાનું મૂળ વર્ણન કહે છે: “0 એ 5 કરતાં નાનો હોવાથી તેને બદલતા નથી, પછી તેની જમણેના અંકોની જગ્યાએ શૂન્ય મૂકીએ છીએ.” જમણે 100,000 છે. છેલ્લે લખ્યું છે: “તેથી 103,978નું નજીકના દસ હજાર સુધીનું આસન્ન મૂલ્ય 100,000 છે.” નોંધ: નિર્ણય લેવા માટે નીચે લીટી દોરેલા 3ને 5 સાથે સરખાવવાનો છે; મૂળ વર્ણનમાં અહીં 0 લખાયું છે."><label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>દસ હજારનું સ્થાન શોધો અને તેની તરત જમણેના અંક નીચે લીટી દોરો.</entry>
+    <entry><m:math><m:mrow><m:mspace width="1.5em" /></m:mrow></m:math><media id="fs-id1167835287582" alt="સ્થાનકિંમત દર્શાવતા ચિત્રમાં “દસ હજારનું સ્થાન” લખેલું છે. આછા વાદળી રંગનું તીર નીચે 103,978માં 0 તરફ ચીંધે છે; તે દસ હજારના સ્થાનનો અંક છે. તેની જમણેના 3 નીચે લીટી દોરેલી છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_011a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>3 એ 5 કરતાં નાનો હોવાથી 0 બદલતા નથી. પછી તેની જમણેના અંકોની જગ્યાએ શૂન્ય મૂકીએ છીએ.</entry>
+    <entry><m:math><m:mrow><m:mspace width="1.5em" /></m:mrow></m:math><media id="fs-id1167835283071" alt="સાદી સફેદ પૃષ્ઠભૂમિ પર 100,000 સંખ્યા લખેલી છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_011b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><m:math><m:mrow><m:mspace width="1.5em" /></m:mrow></m:math>તેથી 103,978નું નજીકના દસ હજાર સુધીનું આસન્ન મૂલ્ય 100,000 છે.</entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655165023" class="try">
+<exercise id="fs-id1170655175048">
+<problem id="fs-id1170655154035">
+<para id="fs-id1170655154263">206,981નું નીચેના નજીકના સ્થાન સુધી આસન્ન મૂલ્ય કાઢો: <span class="token">ⓐ</span> સો <span class="token">ⓑ</span> હજાર <span class="token">ⓒ</span> દસ હજાર.</para>
+</problem>
+<solution id="fs-id1170655166679">
+<para id="fs-id1170655074702"><span class="token">ⓐ</span> 207,000 <span class="token">ⓑ</span> 207,000 <span class="token">ⓒ</span> 210,000</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655197222" class="try">
+<exercise id="fs-id1170655083618">
+<problem id="fs-id1170655104210">
+<para id="fs-id1170655025825">784,951નું નીચેના નજીકના સ્થાન સુધી આસન્ન મૂલ્ય કાઢો: <span class="token">ⓐ</span> સો <span class="token">ⓑ</span> હજાર <span class="token">ⓒ</span> દસ હજાર.</para>
+</problem>
+<solution id="fs-id1170655226376">
+<para id="fs-id1170655154551"><span class="token">ⓐ</span> 785,000 <span class="token">ⓑ</span> 785,000 <span class="token">ⓒ</span> 780,000</para>
+</solution>
+</exercise>
+</note>
+</section>
+<para id="newelem_para01">બીજગણિતમાં, જે સંખ્યાનું મૂલ્ય બદલાઈ શકે અથવા અજ્ઞાત હોય તેને દર્શાવવા મૂળાક્ષરનો ઉપયોગ કરીએ છીએ. સામાન્ય રીતે વપરાતા સંકેતો છે: <emphasis effect="italics">a</emphasis>, <emphasis effect="italics">b</emphasis>, <emphasis effect="italics">c</emphasis>, <emphasis effect="italics">m</emphasis>, <emphasis effect="italics">n</emphasis>, <emphasis effect="italics">x</emphasis>, અને <emphasis effect="italics">y</emphasis>. આ વિભાગમાં આગળ અચળ અને ચલ વિશે વધુ ચર્ચા છે.</para>
+<section id="fs-id1170655199097">
+<title>અવયવીઓ ઓળખો અને વિભાજ્યતાની કસોટીઓ લાગુ કરો</title>
+<para id="fs-id1170655126540">2, 4, 6, 8, 10 અને 12 સંખ્યાઓને 2ના <term id="term-00007">અવયવીઓ</term> કહે છે. 2નો અવયવી લખી શકાય છે આ રીતે: 2 અને ગણતરીની કોઈ સંખ્યાનો <term class="no-emphasis" id="term-00008">ગુણાકાર</term> .</para>
+<media id="fs-id1170655216065" alt="આકૃતિમાં સંખ્યાઓની બે હરોળ છે. ઉપરની હરોળમાં “2, 4, 6, 8, 10, 12,” પછી લોપચિહ્ન છે. 2ની નીચે 2 ગુણ્યા 1, 4ની નીચે 2 ગુણ્યા 2, 6ની નીચે 2 ગુણ્યા 3, 8ની નીચે 2 ગુણ્યા 4, 10ની નીચે 2 ગુણ્યા 5 અને 12ની નીચે 2 ગુણ્યા 6 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_012_img_new.jpg" />
+</media>
+<para id="fs-id1170655163014">એ જ રીતે, 3નો અવયવી એ ગણતરીની કોઈ સંખ્યા અને 3નો ગુણાકાર છે.</para>
+<media id="fs-id1170654944087" alt="આકૃતિમાં સંખ્યાઓની બે હરોળ છે. ઉપરની હરોળમાં “3, 6, 9, 12, 15, 18,” પછી લોપચિહ્ન છે. 3ની નીચે 3 ગુણ્યા 1, 6ની નીચે 3 ગુણ્યા 2, 9ની નીચે 3 ગુણ્યા 3, 12ની નીચે 3 ગુણ્યા 4, 15ની નીચે 3 ગુણ્યા 5 અને 18ની નીચે 3 ગુણ્યા 6 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_013_img_new.jpg" />
+</media>
+<para id="fs-id1170655150368">આ પ્રક્રિયા ચાલુ રાખીને કોઈ પણ સંખ્યાના અવયવીઓ શોધી શકીએ છીએ.</para>
+<note id="fs-id1166426279739" class="manipulative-math">વસ્તુઓની મદદથી ગણિત શીખવાની “અવયવીઓ” પ્રવૃત્તિ કરવાથી અવયવીઓ વધુ સારી રીતે સમજાશે.</note>
+<para id="fs-id1170654984223"><link target-id="fs-id1170654982162" /> માં ગણતરીની પહેલી 12 સંખ્યાઓ માટે 2થી 9ના અવયવીઓ બતાવ્યા છે.</para>
+<table id="fs-id1170654982162" aria-label="કોષ્ટકમાં દસ હરોળ અને તેર સ્તંભ છે. પહેલી હરોળ મથાળાની છે: “ગણતરીની સંખ્યા”, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12. બીજી હરોળ: “2ના અવયવીઓ”, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24. ત્રીજી: “3ના અવયવીઓ”, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36. ચોથી: “4ના અવયવીઓ”, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48. પાંચમી: “5ના અવયવીઓ”, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60. છઠ્ઠી: “6ના અવયવીઓ”, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72. સાતમી: “7ના અવયવીઓ”, 7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84. આઠમી: “8ના અવયવીઓ”, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96. નવમી: “9ના અવયવીઓ”, 9, 18, 27, 36, 45, 54, 63, 72, 81, 90, 99, 108. દસમી: “10ના અવયવીઓ”, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120.">
+<tgroup cols="13"><colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<colspec colnum="4" colname="c4" />
+<colspec colnum="5" colname="c5" />
+<colspec colnum="6" colname="c6" />
+<colspec colnum="7" colname="c7" />
+<colspec colnum="8" colname="c8" />
+<colspec colnum="9" colname="c9" />
+<colspec colnum="10" colname="c10" />
+<colspec colnum="11" colname="c11" />
+<colspec colnum="12" colname="c12" />
+<colspec colnum="13" colname="c13" />
+<thead>
+<row valign="top">
+<entry valign="middle" align="left">ગણતરીની સંખ્યા</entry>
+<entry valign="middle" align="left">1</entry>
+<entry valign="middle" align="left">2</entry>
+<entry valign="middle" align="left">3</entry>
+<entry valign="middle" align="left">4</entry>
+<entry valign="middle" align="left">5</entry>
+<entry valign="middle" align="left">6</entry>
+<entry valign="middle" align="left">7</entry>
+<entry valign="middle" align="left">8</entry>
+<entry valign="middle" align="left">9</entry>
+<entry valign="middle" align="left">10</entry>
+<entry valign="middle" align="left">11</entry>
+<entry valign="middle" align="left">12</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry valign="middle" align="left">2ના અવયવીઓ</entry>
+<entry valign="middle" align="left">2</entry>
+<entry valign="middle" align="left">4</entry>
+<entry valign="middle" align="left">6</entry>
+<entry valign="middle" align="left">8</entry>
+<entry valign="middle" align="left">10</entry>
+<entry valign="middle" align="left">12</entry>
+<entry valign="middle" align="left">14</entry>
+<entry valign="middle" align="left">16</entry>
+<entry valign="middle" align="left">18</entry>
+<entry valign="middle" align="left">20</entry>
+<entry valign="middle" align="left">22</entry>
+<entry valign="middle" align="left">24</entry>
+</row>
+<row valign="top">
+<entry valign="middle" align="left">3ના અવયવીઓ</entry>
+<entry valign="middle" align="left">3</entry>
+<entry valign="middle" align="left">6</entry>
+<entry valign="middle" align="left">9</entry>
+<entry valign="middle" align="left">12</entry>
+<entry valign="middle" align="left">15</entry>
+<entry valign="middle" align="left">18</entry>
+<entry valign="middle" align="left">21</entry>
+<entry valign="middle" align="left">24</entry>
+<entry valign="middle" align="left">27</entry>
+<entry valign="middle" align="left">30</entry>
+<entry valign="middle" align="left">33</entry>
+<entry valign="middle" align="left">36</entry>
+</row>
+<row valign="top">
+<entry valign="middle" align="left">4ના અવયવીઓ</entry>
+<entry valign="middle" align="left">4</entry>
+<entry valign="middle" align="left">8</entry>
+<entry valign="middle" align="left">12</entry>
+<entry valign="middle" align="left">16</entry>
+<entry valign="middle" align="left">20</entry>
+<entry valign="middle" align="left">24</entry>
+<entry valign="middle" align="left">28</entry>
+<entry valign="middle" align="left">32</entry>
+<entry valign="middle" align="left">36</entry>
+<entry valign="middle" align="left">40</entry>
+<entry valign="middle" align="left">44</entry>
+<entry valign="middle" align="left">48</entry>
+</row>
+<row valign="top">
+<entry valign="middle" align="left">5ના અવયવીઓ</entry>
+<entry valign="middle" align="left">5</entry>
+<entry valign="middle" align="left">10</entry>
+<entry valign="middle" align="left">15</entry>
+<entry valign="middle" align="left">20</entry>
+<entry valign="middle" align="left">25</entry>
+<entry valign="middle" align="left">30</entry>
+<entry valign="middle" align="left">35</entry>
+<entry valign="middle" align="left">40</entry>
+<entry valign="middle" align="left">45</entry>
+<entry valign="middle" align="left">50</entry>
+<entry valign="middle" align="left">55</entry>
+<entry valign="middle" align="left">60</entry>
+</row>
+<row valign="top">
+<entry valign="middle" align="left">6ના અવયવીઓ</entry>
+<entry valign="middle" align="left">6</entry>
+<entry valign="middle" align="left">12</entry>
+<entry valign="middle" align="left">18</entry>
+<entry valign="middle" align="left">24</entry>
+<entry valign="middle" align="left">30</entry>
+<entry valign="middle" align="left">36</entry>
+<entry valign="middle" align="left">42</entry>
+<entry valign="middle" align="left">48</entry>
+<entry valign="middle" align="left">54</entry>
+<entry valign="middle" align="left">60</entry>
+<entry valign="middle" align="left">66</entry>
+<entry valign="middle" align="left">72</entry>
+</row>
+<row valign="top">
+<entry valign="middle" align="left">7ના અવયવીઓ</entry>
+<entry valign="middle" align="left">7</entry>
+<entry valign="middle" align="left">14</entry>
+<entry valign="middle" align="left">21</entry>
+<entry valign="middle" align="left">28</entry>
+<entry valign="middle" align="left">35</entry>
+<entry valign="middle" align="left">42</entry>
+<entry valign="middle" align="left">49</entry>
+<entry valign="middle" align="left">56</entry>
+<entry valign="middle" align="left">63</entry>
+<entry valign="middle" align="left">70</entry>
+<entry valign="middle" align="left">77</entry>
+<entry valign="middle" align="left">84</entry>
+</row>
+<row valign="top">
+<entry valign="middle" align="left">8ના અવયવીઓ</entry>
+<entry valign="middle" align="left">8</entry>
+<entry valign="middle" align="left">16</entry>
+<entry valign="middle" align="left">24</entry>
+<entry valign="middle" align="left">32</entry>
+<entry valign="middle" align="left">40</entry>
+<entry valign="middle" align="left">48</entry>
+<entry valign="middle" align="left">56</entry>
+<entry valign="middle" align="left">64</entry>
+<entry valign="middle" align="left">72</entry>
+<entry valign="middle" align="left">80</entry>
+<entry valign="middle" align="left">88</entry>
+<entry valign="middle" align="left">96</entry>
+</row>
+<row valign="top">
+<entry valign="middle" align="left">9ના અવયવીઓ</entry>
+<entry valign="middle" align="left">9</entry>
+<entry valign="middle" align="left">18</entry>
+<entry valign="middle" align="left">27</entry>
+<entry valign="middle" align="left">36</entry>
+<entry valign="middle" align="left">45</entry>
+<entry valign="middle" align="left">54</entry>
+<entry valign="middle" align="left">63</entry>
+<entry valign="middle" align="left">72</entry>
+<entry valign="middle" align="left">81</entry>
+<entry valign="middle" align="left">90</entry>
+<entry valign="middle" align="left">99</entry>
+<entry valign="middle" align="left">108</entry>
+</row>
+<row valign="top">
+<entry valign="middle" align="left">10ના અવયવીઓ</entry>
+<entry valign="middle" align="left">10</entry>
+<entry valign="middle" align="left">20</entry>
+<entry valign="middle" align="left">30</entry>
+<entry valign="middle" align="left">40</entry>
+<entry valign="middle" align="left">50</entry>
+<entry valign="middle" align="left">60</entry>
+<entry valign="middle" align="left">70</entry>
+<entry valign="middle" align="left">80</entry>
+<entry valign="middle" align="left">90</entry>
+<entry valign="middle" align="left">100</entry>
+<entry valign="middle" align="left">110</entry>
+<entry valign="middle" align="left">120</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><note id="fs-id1170655207886">
+<title>સંખ્યાનો અવયવી</title>
+<para id="fs-id1170655207891">કોઈ સંખ્યાને <emphasis effect="bold">અવયવી</emphasis> કહેવાય, જો તે <emphasis effect="italics">n</emphasis> અને ગણતરીની કોઈ સંખ્યાનો ગુણાકાર હોય. એટલે તે <emphasis effect="italics">n</emphasis>નો અવયવી છે.</para>
+</note>
+<para id="fs-id1170655163445">15 એ 3નો અવયવી છે એમ કહેવાની બીજી રીત છે કે 15 એ 3 વડે <term id="term-00009">વિભાજ્ય</term> છે. તેનો અર્થ એ છે કે 15ને 3 વડે ભાગતાં ગણતરીની સંખ્યા મળે છે. ખરેખર, <m:math><m:mrow><m:mn>15</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn></m:mrow></m:math> નું મૂલ્ય 5 છે, તેથી 15 બરાબર છે <m:math><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<note id="fs-id1170655189066">
+<title>સંખ્યા વડે વિભાજ્ય</title>
+<para id="fs-id1170655228596">જો સંખ્યા <emphasis effect="italics">m</emphasis> એ <emphasis effect="italics">n</emphasis>નો અવયવી હોય, તો <emphasis effect="italics">m</emphasis> એ <emphasis effect="bold">વિભાજ્ય</emphasis> છે <emphasis effect="italics">n</emphasis> વડે.</para>
+</note>
+<para id="fs-id1170655229926">5ના અવયવીઓ જુઓ: <link target-id="fs-id1170654982162" />. તે બધાના અંતે 5 કે 0 છે. છેલ્લા અંક તરીકે 5 કે 0 ધરાવતી સંખ્યાઓ 5 વડે વિભાજ્ય છે. 2થી 9 સુધીની સંખ્યાઓના અવયવીઓની બીજી તરાહો જુઓ: <link target-id="fs-id1170654982162" /> . તેનાથી નીચેની વિભાજ્યતાની કસોટીઓ શોધી શકીએ છીએ:</para>
+<note id="fs-id1170655221307">
+<title>વિભાજ્યતાની કસોટીઓ</title>
+<para id="fs-id1170655202551">સંખ્યા નીચે મુજબ વિભાજ્ય છે:</para>
+<list id="fs-id1166425936774" list-type="bulleted" bullet-style="bullet">
+<item>2 વડે, જો છેલ્લો અંક 0, 2, 4, 6 કે 8 હોય.</item>
+<item>3 વડે, જો તેના અંકોનો સરવાળો 3 વડે વિભાજ્ય હોય.</item>
+<item>5 વડે, જો છેલ્લો અંક 5 કે 0 હોય.</item>
+<item>6 વડે, જો સંખ્યા 2 અને 3 બંને વડે વિભાજ્ય હોય.</item>
+<item>10 વડે, જો તેના અંતે 0 હોય.</item>
+</list>
+</note>
+<example id="fs-id1170655205190"><exercise id="fs-id1170655205192"><problem id="fs-id1170655205194">
+<para id="fs-id1170655205196">શું 5,625 એ 2 વડે વિભાજ્ય છે? 3 વડે? 5 વડે? 6 વડે? 10 વડે?</para>
+</problem>
+<solution id="fs-id1170655229161">
+<title>ઉકેલ</title>
+<table id="eip-272" class="unnumbered unstyled" summary="આ કોષ્ટક 5,625 માટે 2, 3, 5, 10 અને 6 વડે વિભાજ્યતાના નિયમો બતાવે છે. તેમાં દરેક કસોટીની શરતો, પગલાં અને પરિણામ આપ્યાં છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>શું 5,625 એ 2 વડે વિભાજ્ય છે?</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>શું તેના અંતે 0, 2, 4, 6 કે 8 છે?</entry>
+    <entry>ના. <newline />5,625 એ 2 વડે વિભાજ્ય નથી.</entry>
+  </row>
+  <row>
+    <entry>શું 5,625 એ 3 વડે વિભાજ્ય છે?</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>તેના અંકોનો સરવાળો કેટલો છે?</entry>
+    <entry><m:math><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>18</m:mn></m:math></entry>
+  </row>
+<row>
+<entry>શું સરવાળો 3 વડે વિભાજ્ય છે?</entry>
+<entry>હા. 5,625 એ 3 વડે વિભાજ્ય છે.</entry>
+</row>
+
+<row>
+<entry>શું 5,625 એ 5 કે 10 વડે વિભાજ્ય છે?</entry>
+<entry />
+</row>
+
+<row>
+<entry>છેલ્લો અંક કયો છે? તે 5 છે.</entry>
+<entry>5,625 એ 5 વડે વિભાજ્ય છે, પરંતુ 10 વડે નથી.</entry>
+</row>
+
+<row>
+<entry>શું 5,625 એ 6 વડે વિભાજ્ય છે?</entry>
+<entry />
+</row>
+
+<row>
+<entry>શું તે 2 અને 3 બંને વડે વિભાજ્ય છે?</entry>
+<entry>ના, 5,625 એ 2 વડે વિભાજ્ય નથી, તેથી 5,625 એ 6 વડે પણ વિભાજ્ય નથી.</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+
+
+</exercise></example><note id="fs-id1170655196866" class="try">
+<exercise id="fs-id1170655196870">
+<problem id="fs-id1170655196872">
+<para id="fs-id1170655200166">4,962 એ 2, 3, 5, 6 અને 10 વડે વિભાજ્ય છે કે નહીં તે નક્કી કરો.</para>
+</problem>
+<solution id="fs-id1170655200170">
+<para id="fs-id1170655200173">2, 3 અને 6 વડે</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655200179" class="try">
+<exercise id="fs-id1170655200183">
+<problem id="fs-id1170655200185">
+<para id="fs-id1170655200187">3,765 એ 2, 3, 5, 6 અને 10 વડે વિભાજ્ય છે કે નહીં તે નક્કી કરો.</para>
+</problem>
+<solution id="fs-id1170655247400">
+<para id="fs-id1170655247402">3 અને 5 વડે</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170655247410">
+<title>અવિભાજ્ય અવયવીકરણ અને લઘુત્તમ સામાન્ય અવયવી શોધો</title>
+<para id="fs-id1170655247415">ગણિતમાં એક જ વિચાર રજૂ કરવાની ઘણી રીતો હોય છે. અત્યાર સુધી આપણે જોયું કે જો <emphasis effect="italics">m</emphasis> એ <emphasis effect="italics">n</emphasis>નો અવયવી હોય, તો કહી શકીએ કે <emphasis effect="italics">m</emphasis> વિભાજ્ય છે <emphasis effect="italics">n</emphasis> વડે. ઉદાહરણ તરીકે, 72 એ 8નો અવયવી હોવાથી આપણે કહીએ છીએ કે 72 એ 8 વડે વિભાજ્ય છે. 72 એ 9નો અવયવી હોવાથી કહીએ છીએ કે 72 એ 9 વડે વિભાજ્ય છે. આને હજુ બીજી રીતે કહી શકાય.</para>
+<para id="fs-id1170655224271">કારણ કે <m:math><m:mrow><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>72</m:mn><m:mo>,</m:mo></m:mrow></m:math> આપણે કહીએ છીએ કે 8 અને 9 એ <term id="term-00010">અવયવો</term> છે 72ના. જ્યારે આપણે લખીએ છીએ <m:math><m:mrow><m:mn>72</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow></m:math> ત્યારે કહીએ છીએ કે આપણે 72નું અવયવીકરણ કર્યું છે.</para>
+<media id="fs-id1170655160732" alt="ચિત્રમાં 8 ગુણ્યા 9 બરાબર 72 સમીકરણ છે. 8 ગુણ્યા 9ની નીચે વાંકિયો કૌંસ અને “અવયવો” શબ્દ છે. 72ની નીચે આડો કૌંસ અને “ગુણાકાર” શબ્દ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_014_img_new.jpg" />
+</media>
+<para id="fs-id1170655223714">72નું અવયવીકરણ કરવાની બીજી રીતો છે: <m:math><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>72</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>36</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>24</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>18</m:mn><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>12</m:mn><m:mo>.</m:mo></m:mrow></m:math> બોતેરના ઘણા અવયવો છે: 1, 2, 3, 4, 6, 8, 9, 12, 18, 36 અને 72.</para>
+<note id="fs-id1170655247305">
+<title>અવયવો</title>
+<para id="fs-id1170655247310">પદાવલી <m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi></m:mrow></m:math>માં <emphasis effect="italics">a</emphasis> અને <emphasis effect="italics">b</emphasis>ને કહે છે <term id="term-00011">અવયવો</term>. જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>m</m:mi></m:mrow></m:math> હોય અને <emphasis effect="italics">a</emphasis> તથા <emphasis effect="italics">b</emphasis> પૂર્ણાંકો હોય, તો <emphasis effect="italics">a</emphasis> અને <emphasis effect="italics">b</emphasis> એ <term id="term-00012">અવયવો</term> તરીકે ઓળખાય છે; સંબંધિત સંખ્યા છે <emphasis effect="italics">m</emphasis>.</para>
+</note>
+<para id="fs-id1170655219587">72 જેવી કેટલીક સંખ્યાઓના ઘણા અવયવો હોય છે. બીજી કેટલીક સંખ્યાઓના માત્ર બે અવયવો હોય છે.</para>
+<note id="fs-id1166426163393" class="manipulative-math">વસ્તુઓની મદદથી ગણિત શીખવાની “ગુણાકાર અને અવયવીકરણનાં મોડેલ” પ્રવૃત્તિ કરવાથી ગુણાકાર અને અવયવીકરણ વધુ સારી રીતે સમજાશે.</note>
+<note id="fs-id1170655269956">
+<title>અવિભાજ્ય સંખ્યા અને સંયુક્ત સંખ્યા</title>
+<para id="fs-id1170655269961"> <term id="term-00013">અવિભાજ્ય સંખ્યા</term> એ 1 કરતાં મોટી ગણતરીની સંખ્યા છે, જેના માત્ર બે અવયવો છે: 1 અને તે સંખ્યા પોતે.</para>
+<para id="fs-id1170655269968"> <term id="term-00014">સંયુક્ત (વિભાજ્ય) સંખ્યા</term> એ 1 કરતાં મોટી ગણતરીની સંખ્યા છે જે અવિભાજ્ય નથી. સંયુક્ત સંખ્યાના 1 અને તે સંખ્યા પોતે, તે ઉપરાંત પણ અવયવો હોય છે.</para>
+</note>
+<note id="fs-id1166426033211" class="manipulative-math">વસ્તુઓની મદદથી ગણિત શીખવાની “અવિભાજ્ય સંખ્યાઓ” પ્રવૃત્તિ કરવાથી અવિભાજ્ય સંખ્યાઓ વધુ સારી રીતે સમજાશે.</note>
+<para id="fs-id1170655219614">2થી 19 સુધીની ગણતરીની સંખ્યાઓ અને તેમના અવયવો અહીં આપેલા છે: <link target-id="CNX_ElemAlg_Figure_01_01_015_img_new" />. દરેક સંખ્યા “અવિભાજ્ય” કે “સંયુક્ત” હોવાનું દર્શાવતું નામ સાચું છે તેની ખાતરી કરો!</para>
+<figure id="CNX_ElemAlg_Figure_01_01_015_img_new">
+<media id="fs-id1170655206126" alt="બાજુબાજુના બે કોષ્ટકો છે; દરેકમાં ત્રણ સ્તંભ, એક મથાળાની હરોળ અને નવ માહિતી-હરોળ છે. મથાળાં “સંખ્યા”, “અવયવો” અને “અવિભાજ્ય કે સંયુક્ત?” છે. ડાબા કોષ્ટકમાં 2થી 10 અને જમણા કોષ્ટકમાં 11થી 19 માટે આ માહિતી છે. ડાબી બાજુની હરોળો છે: 2; 1,2; અવિભાજ્ય. 3; 1,3; અવિભાજ્ય. 4; 1,2,4; સંયુક્ત. 5; 1,5; અવિભાજ્ય. 6; 1,2,3,6; સંયુક્ત. 7; 1,7; અવિભાજ્ય. 8; 1,2,4,8; સંયુક્ત. 9; 1,3,9; સંયુક્ત. 10; 1,2,5,10; સંયુક્ત. જમણી બાજુની હરોળો છે: 11; 1,11; અવિભાજ્ય. 12; 1,2,3,4,6,12; સંયુક્ત. 13; 1,13; અવિભાજ્ય. 14; 1,2,7,14; સંયુક્ત. 15; 1,3,5,15; સંયુક્ત. 16; 1,2,4,8,16; સંયુક્ત. 17; 1,17; અવિભાજ્ય. 18; 1,2,3,6,9,18; સંયુક્ત. 19; 1,19; અવિભાજ્ય.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_015_img_new.jpg" />
+</media>
+</figure>
+<para id="fs-id1170655219626">20 કરતાં નાની <term id="term-00015">અવિભાજ્ય સંખ્યાઓ</term><emphasis effect="bold" /> છે: 2, 3, 5, 7, 11, 13, 17 અને 19. ધ્યાન આપો કે એકમાત્ર બેકી અવિભાજ્ય સંખ્યા 2 છે.</para>
+<para id="fs-id1170655205294">સંયુક્ત સંખ્યાને અવિભાજ્ય સંખ્યાઓના અનન્ય <term class="no-emphasis" id="term-00016">ગુણાકાર</term>રૂપે લખી શકાય છે. આને કહે છે <term id="term-00017">અવિભાજ્ય અવયવીકરણ</term>. આ અભ્યાસક્રમમાં આગળ સંયુક્ત સંખ્યાનું અવિભાજ્ય અવયવીકરણ ઉપયોગી થશે.</para>
+<note id="fs-id1170655205301">
+<title>અવિભાજ્ય અવયવીકરણ</title>
+<para id="fs-id1170655205307"> <term id="term-00018">અવિભાજ્ય અવયવીકરણ</term> એ અવિભાજ્ય સંખ્યાઓનો એવો ગુણાકાર છે જે આપેલી સંખ્યાની બરાબર થાય છે. આ અવિભાજ્ય સંખ્યાઓને અવિભાજ્ય અવયવો કહે છે.</para>
+</note>
+<para id="fs-id1170655205314">સંયુક્ત સંખ્યાનું અવિભાજ્ય અવયવીકરણ કરવા તેના કોઈ પણ બે અવયવો શોધો અને તેમના વડે બે શાખાઓ બનાવો. અવયવ અવિભાજ્ય હોય તો તે શાખા પૂરી થાય છે. તે અવિભાજ્ય સંખ્યા ફરતે વર્તુળ દોરો!</para>
+<para id="fs-id1170655206101">અવયવ અવિભાજ્ય ન હોય તો તેના બે અવયવો શોધો અને પ્રક્રિયા ચાલુ રાખો. દરેક શાખાના અંતે વર્તુળમાં અવિભાજ્ય સંખ્યા આવે ત્યારે અવયવીકરણ પૂરું થાય છે. હવે સંયુક્ત સંખ્યાને અવિભાજ્ય સંખ્યાઓના ગુણાકારરૂપે લખી શકાય છે.</para>
+<example id="fs-id1170655206106">
+<title>સંયુક્ત સંખ્યાનું અવિભાજ્ય અવયવીકરણ કેવી રીતે કરવું</title>
+<exercise id="fs-id1170655206108">
+<problem id="fs-id1170655206111">
+<para id="fs-id1170655206116">48નું અવયવીકરણ કરો.</para>
+</problem>
+<solution id="fs-id1170655206120">
+<title>ઉકેલ</title>
+<media id="fs-id1170655194612" alt="આ કોષ્ટકમાં ત્રણ સ્તંભ અને ચાર હરોળ છે. પહેલો સ્તંભ મથાળાનો છે, જેમાં દરેક પગલાનું નામ અને ક્રમ છે. બીજા સ્તંભમાં વધુ સૂચનાઓ અને કેટલીક ગણતરીઓ છે. ત્રીજા સ્તંભમાં તે પગલાંની મોટાભાગની ગણતરીઓ છે. ઉપરની હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 1. આપેલી સંખ્યા જેટલો ગુણાકાર થાય તેવા બે અવયવો શોધો. તેમના વડે બે શાખાઓ બનાવો.” બીજા ખાનામાં 48 બરાબર 2 ગુણ્યા 24 છે. ત્રીજા ખાનામાં અવયવવૃક્ષ છે, જેમાં સૌથી ઉપર 48 છે. 48માંથી નીચે બે શાખાઓ નીકળે છે અને અનુક્રમે 2 અને 24 પર પૂરી થાય છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_016a_new.jpg" />
+</media>
+<media id="fs-id1170655105895" alt="પછીની હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 2. અવયવ અવિભાજ્ય હોય તો તે શાખા પૂરી થાય છે. અવિભાજ્ય સંખ્યા ફરતે વર્તુળ દોરો.” બીજા ખાનામાં લખ્યું છે: “2 અવિભાજ્ય છે. તેની ફરતે વર્તુળ દોરો.” ત્રીજા ખાનામાં પગલું 1નું અવયવવૃક્ષ ફરી છે, પરંતુ હવે નીચેના 2 ફરતે વર્તુળ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_016b_new.jpg" />
+</media>
+<media id="fs-id1170654967999" alt="પછીની હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 3. અવયવ અવિભાજ્ય ન હોય તો તેને બે અવયવોના ગુણાકારરૂપે લખો અને પ્રક્રિયા ચાલુ રાખો.” બીજા ખાનામાં લખ્યું છે: “24 અવિભાજ્ય નથી. તેના વધુ 2 અવયવો પાડો.” ત્રીજા ખાનામાં ઉપરનું અવયવવૃક્ષ છે: સૌથી ઉપર 48, તેની શાખાઓ વર્તુળમાંના 2 અને 24 સુધી; 24ની શાખાઓ 4 અને 6 સુધી. પછી લખ્યું છે: “4 અને 6 અવિભાજ્ય નથી. દરેકના બે અવયવો પાડો.” નીચલા વૃક્ષમાં 48ની પહેલી શાખાનો 2 ફરી વર્તુળમાં છે; 4માંથી 2 અને 2 તથા 6માંથી 2 અને 3 નીકળે છે અને બધા અવિભાજ્ય પર્ણો વર્તુળમાં છે. મૂળ ચિત્રવર્ણન પ્રથમ 2ને ભૂલથી નીચે લીટી દોરેલો કહે છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_016c_new.jpg" />
+</media>
+<media id="fs-id1170655089548" alt="છેલ્લી હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 4. સંયુક્ત સંખ્યાને વર્તુળમાંની બધી અવિભાજ્ય સંખ્યાઓના ગુણાકારરૂપે લખો.” બીજું ખાનું ખાલી છે. ત્રીજા ખાનામાં 48 બરાબર 2 ગુણ્યા 2 ગુણ્યા 2 ગુણ્યા 2 ગુણ્યા 3 સમીકરણ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_016d_new.jpg" />
+</media>
+<para id="fs-id1166426409046"><newline /></para>
+<para id="fs-id1170655194594">આપણે કહીએ છીએ કે <m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:math> એ 48નું અવિભાજ્ય અવયવીકરણ છે. સામાન્ય રીતે અવિભાજ્ય અવયવો ચડતા ક્રમમાં લખીએ છીએ. જવાબની ખાતરી કરવા અવયવોનો ગુણાકાર કરવાનું ભૂલશો નહીં!</para>
+<para id="fs-id1170655219541">શરૂઆતમાં 48નું અવયવીકરણ બીજી રીતે કર્યું હોય, જેમ કે <m:math><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>8</m:mn><m:mo>,</m:mo></m:mrow></m:math> તો પણ અંતિમ પરિણામ એ જ મળે છે. અવિભાજ્ય અવયવીકરણ પૂરું કરીને જાતે તેની ખાતરી કરો.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655219559" class="try">
+<exercise id="fs-id1170655219563">
+<problem id="fs-id1170655189533">
+<para id="fs-id1170655189535">80નું અવિભાજ્ય અવયવીકરણ કરો.</para>
+</problem>
+<solution id="fs-id1170655189540">
+<para id="fs-id1170655189542"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655206361" class="try">
+<exercise id="fs-id1170655206365">
+<problem id="fs-id1170655206367">
+<para id="fs-id1170655206369">60નું અવિભાજ્ય અવયવીકરણ કરો.</para>
+</problem>
+<solution id="fs-id1170655206373">
+<para id="fs-id1170655206375"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655202248" class="howto">
+<title>સંયુક્ત સંખ્યાનું અવિભાજ્ય અવયવીકરણ કરો.</title>
+<list id="fs-id1166423940771" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>આપેલી સંખ્યા જેટલો ગુણાકાર થાય તેવા બે અવયવો શોધો અને તેમના વડે બે શાખાઓ બનાવો.</item>
+<item>અવયવ અવિભાજ્ય હોય તો તે શાખા પૂરી થાય છે. વૃક્ષની કળીની જેમ તે અવિભાજ્ય સંખ્યા ફરતે વર્તુળ દોરો.</item>
+<item>અવયવ અવિભાજ્ય ન હોય તો તેને બે અવયવોના ગુણાકારરૂપે લખો અને પ્રક્રિયા ચાલુ રાખો.</item>
+<item>સંયુક્ત સંખ્યાને વર્તુળમાંની બધી અવિભાજ્ય સંખ્યાઓના ગુણાકારરૂપે લખો.</item>
+</list>
+</note>
+<example id="fs-id1170655226111">
+<exercise id="fs-id1170655226113">
+<problem id="fs-id1170655226116">
+<para id="fs-id1170655226118">252નું અવિભાજ્ય અવયવીકરણ કરો.</para>
+</problem>
+<solution id="fs-id1170655226122">
+<title>ઉકેલ</title>
+<table id="fs-id1167834252648" class="unnumbered unstyled can-break" aria-label="આકૃતિમાં બે સ્તંભ છે: ડાબે સૂચનાઓ અને જમણે અવયવવૃક્ષ. પહેલી સૂચના છે: “પગલું 1. 252 જેટલો ગુણાકાર થાય તેવા બે અવયવો શોધો. 12 અને 21 અવિભાજ્ય નથી.” જમણે અવયવવૃક્ષની ટોચે 252 છે; તેની બે શાખાઓ અનુક્રમે 12 અને 21 સુધી જાય છે. ડાબે લખ્યું છે: “12 અને 21ના વધુ બે-બે અવયવો પાડો. બધા અવયવો અવિભાજ્ય થાય ત્યાં સુધી ચાલુ રાખો.” જમણે 21માંથી બે શાખાઓ 3 અને 7 સુધી જાય છે. બંને અવિભાજ્ય હોવાથી તેમની ફરતે વર્તુળ છે. 12માંથી બે શાખાઓ 2 અને 6 સુધી જાય છે. 2 અવિભાજ્ય હોવાથી તેની ફરતે વર્તુળ છે. 6માંથી બે શાખાઓ 2 અને 3 સુધી જાય છે; બંને અવિભાજ્ય હોવાથી તેમની ફરતે વર્તુળ છે. છેલ્લી હરોળમાં ડાબે “પગલું 2. 252ને વર્તુળમાંની બધી અવિભાજ્ય સંખ્યાઓના ગુણાકારરૂપે લખો” છે. જમણે 252 બરાબર 2 ગુણ્યા 2 ગુણ્યા 3 ગુણ્યા 3 ગુણ્યા 7 સમીકરણ છે."><label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry><emphasis effect="bold">પગલું 1.</emphasis> 252 જેટલો ગુણાકાર થાય તેવા બે અવયવો શોધો. 12 અને 21 અવિભાજ્ય નથી.<newline /><newline />12 અને 21ના વધુ બે-બે અવયવો પાડો. બધા અવયવો અવિભાજ્ય થાય ત્યાં સુધી ચાલુ રાખો.</entry>
+    <entry><media id="fs-id1167835262266" alt="252નું અવયવવૃક્ષ તેનું અવિભાજ્ય અવયવીકરણ 2, 2, 3, 3 અને 7માં દર્શાવે છે. આ આકૃતિ સંખ્યાસિદ્ધાંતનો પાયાનો વિચાર સ્પષ્ટ કરે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_017_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">પગલું 2.</emphasis> 252ને વર્તુળમાંની બધી અવિભાજ્ય સંખ્યાઓના ગુણાકારરૂપે લખો.</entry>
+    <entry><m:math><m:mrow><m:mn>252</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:math>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655229726" class="try">
+<exercise id="fs-id1170655229693">
+<problem id="fs-id1170655229695">
+<para id="fs-id1170655229697">126નું અવિભાજ્ય અવયવીકરણ કરો.</para>
+</problem>
+<solution id="fs-id1170655229702">
+<para id="fs-id1170655229704"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655270007" class="try">
+<exercise id="fs-id1170655270011">
+<problem id="fs-id1170655270014">
+<para id="fs-id1170655270016">294નું અવિભાજ્ય અવયવીકરણ કરો.</para>
+</problem>
+<solution id="fs-id1170655270020">
+<para id="fs-id1170655270022"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655189637">અવયવીઓ અને અવિભાજ્ય સંખ્યાઓનો અભ્યાસ કરવાનું એક કારણ એ છે કે આ રીતોથી બે સંખ્યાઓનો <term id="term-00019">લઘુત્તમ સામાન્ય અવયવી</term> શોધી શકાય છે. જુદા <term class="no-emphasis" id="term-00020">છેદ</term> ધરાવતા અપૂર્ણાંકોનો સરવાળો અને બાદબાકી કરતી વખતે આ ઉપયોગી થશે. લઘુત્તમ સામાન્ય અવયવી શોધવાની બે રીતો વધુ વપરાય છે. આપણે બંને જોઈશું.</para>
+<para id="fs-id1170655189651">પહેલી રીત અવયવીઓની યાદી બનાવવાની છે. 12 અને 18નો લઘુત્તમ સામાન્ય અવયવી શોધવા બંનેના શરૂઆતના થોડા અવયવીઓ લખીએ:</para>
+<media id="fs-id1170655189662" alt="સંખ્યાઓની બે હરોળ છે. પહેલી હરોળમાં 12 પછી દ્વિબિંદુ, પછી 12, 24, 36, 48, 60, 72, 84, 96, 108 અને લોપચિહ્ન છે. 36, 72 અને 108 ઘાટા લાલ રંગે લખ્યાં છે. બીજી હરોળમાં 18 પછી દ્વિબિંદુ, પછી 18, 36, 54, 72, 90, 108 અને લોપચિહ્ન છે. અહીં પણ 36, 72 અને 108 ઘાટા લાલ રંગે લખ્યાં છે. નીચે “સામાન્ય અવયવીઓ” પછી દ્વિબિંદુ અને લાલ રંગે 36, 72 અને 108 છે. પછીની લીટીમાં “લઘુત્તમ સામાન્ય અવયવી” પછી દ્વિબિંદુ અને વાદળી રંગે 36 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_018_img_new.jpg" />
+</media>
+<para id="fs-id1170655189659">ધ્યાન આપો કે કેટલીક સંખ્યાઓ બંને યાદીમાં આવે છે. તે 12 અને 18ના <emphasis effect="bold">સામાન્ય અવયવીઓ</emphasis> છે.</para>
+<para id="fs-id1170655178513">12 અને 18ના શરૂઆતના થોડા સામાન્ય અવયવીઓ 36, 72 અને 108 છે. તેમાં 36 સૌથી નાનો હોવાથી તેને કહે છે <emphasis effect="italics">લઘુત્તમ સામાન્ય અવયવી.</emphasis> આપણે ઘણી વાર LCM ટૂંકાક્ષર વાપરીએ છીએ.</para>
+<note id="fs-id1170655178531">
+<title>લઘુત્તમ સામાન્ય અવયવી</title>
+<para id="fs-id1170655178536"> <term id="term-00021">લઘુત્તમ સામાન્ય અવયવી</term> (LCM) એટલે એવી સૌથી નાની સંખ્યા જે આપેલી બંને સંખ્યાઓનો અવયવી હોય.</para>
+</note>
+<para id="fs-id1170655178544">પ્રક્રિયાના ખાને, ઉપર 12 અને 18 માટે વાપરેલી અવયવીઓની યાદી બનાવવાની રીતથી LCM શોધવાનાં પગલાં આપ્યાં છે.</para>
+<note id="fs-id1170655178548" class="howto">
+<title>અવયવીઓની યાદી બનાવી લઘુત્તમ સામાન્ય અવયવી શોધો.</title>
+<list id="fs-id1166426329693" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>દરેક સંખ્યાના કેટલાક અવયવીઓની યાદી બનાવો.</item>
+<item>બંને યાદીમાં આવતી સૌથી નાની સંખ્યા શોધો.</item>
+<item>આ સંખ્યા LCM છે.</item>
+</list>
+</note>
+<example id="fs-id1170655189101">
+<exercise id="fs-id1170655189103">
+<problem id="fs-id1170655189105">
+<para id="fs-id1170655189107">અવયવીઓની યાદી બનાવી 15 અને 20નો લઘુત્તમ સામાન્ય અવયવી શોધો.</para>
+</problem>
+<solution id="fs-id1170655189111">
+<title>ઉકેલ</title>
+<table id="fs-id1167831872566" class="unnumbered unstyled can-break" aria-label="આકૃતિ બે સ્તંભમાં વહેંચેલી છે. ઉપર ડાબે સૂચના છે: “15 અને 20ના શરૂઆતના થોડા અવયવીઓની યાદી બનાવો. તેના પરથી લઘુત્તમ સામાન્ય અવયવી શોધો.” ઉપર જમણે બે હરોળ છે. પહેલી હરોળમાં 15 પછી દ્વિબિંદુ, પછી 15, 30, 45, 60, 75, 90, 105, 120 છે. 60 ઘાટા લાલ રંગે છે. બીજી હરોળમાં 20 પછી દ્વિબિંદુ, પછી 20, 40, 60, 80, 100, 120, 140, 160 છે. અહીં પણ 60 ઘાટા લાલ રંગે છે. નીચે ડાબે લખ્યું છે: “બંને યાદીમાં આવતી સૌથી નાની સંખ્યા શોધો.” નીચે જમણે લખ્યું છે: “બંને યાદીમાં આવતી પહેલી સંખ્યા 60 છે, તેથી 15 અને 20નો લઘુત્તમ સામાન્ય અવયવી 60 છે.”"><label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>15 અને 20ના શરૂઆતના થોડા અવયવીઓની યાદી બનાવો. તેના પરથી લઘુત્તમ સામાન્ય અવયવી શોધો.</entry>
+    <entry><media id="fs-id1167832051958" alt="ચિત્રમાં 15 અને 20ના અવયવીઓ છે. તેમનો લઘુત્તમ સામાન્ય અવયવી 60 લાલ રંગે દર્શાવ્યો છે. બંને ક્રમ અનુક્રમે 120 અને 160 સુધી આગળ વધે છે અને સંખ્યાઓની તરાહો બતાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_019_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>બંને યાદીમાં આવતી સૌથી નાની સંખ્યા શોધો.</entry>
+    <entry>બંને યાદીમાં આવતી પહેલી સંખ્યા 60 છે, તેથી 15 અને 20નો લઘુત્તમ સામાન્ય અવયવી 60 છે.</entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1170655206417">ધ્યાન આપો કે બંને યાદીમાં 120 પણ છે. તે સામાન્ય અવયવી છે, પરંતુ તે નથી <emphasis effect="italics">લઘુત્તમ</emphasis> સામાન્ય અવયવી.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655206429" class="try">
+<exercise id="fs-id1170655206433">
+<problem id="fs-id1170655206435">
+<para id="fs-id1170655206437">અવયવીઓની યાદી બનાવી લઘુત્તમ સામાન્ય અવયવી શોધો: 9 અને 12.</para>
+</problem>
+<solution id="fs-id1170655206442">
+<para id="fs-id1170655206444">36</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655206450" class="try">
+<exercise id="fs-id1170655206454">
+<problem id="fs-id1170655206456">
+<para id="fs-id1170655206459">અવયવીઓની યાદી બનાવી લઘુત્તમ સામાન્ય અવયવી શોધો: 18 અને 24.</para>
+</problem>
+<solution id="fs-id1170655206463">
+<para id="fs-id1170655206465">72</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655206471">બે સંખ્યાઓનો લઘુત્તમ સામાન્ય અવયવી શોધવાની બીજી રીત અવિભાજ્ય અવયવોની છે. 12 અને 18નો LCM ફરી શોધીએ, આ વખતે તેમના અવિભાજ્ય અવયવો વડે.</para>
+<example id="fs-id1170655206477">
+<title>અવિભાજ્ય અવયવોની રીતથી લઘુત્તમ સામાન્ય અવયવી કેવી રીતે શોધવો</title>
+<exercise id="fs-id1170655199673">
+<problem id="fs-id1170655199675">
+<para id="fs-id1170655199680">અવિભાજ્ય અવયવોની રીતથી 12 અને 18નો લઘુત્તમ સામાન્ય અવયવી (LCM) શોધો.</para>
+</problem>
+<solution id="fs-id1170655199684">
+<title>ઉકેલ</title>
+<media id="fs-id1170655199720" alt="આ કોષ્ટકમાં ત્રણ સ્તંભ અને ચાર હરોળ છે. પહેલો સ્તંભ મથાળાનો છે, જેમાં દરેક પગલાનું નામ અને ક્રમ છે. બીજા સ્તંભમાં વધુ સૂચનાઓ અને કેટલીક ગણતરીઓ છે. ત્રીજા સ્તંભમાં તે પગલાંની મોટાભાગની ગણતરીઓ છે. ઉપરની હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 1. દરેક સંખ્યાને અવિભાજ્ય અવયવોના ગુણાકારરૂપે લખો.” બીજું ખાનું ખાલી છે. ત્રીજા ખાનામાં બે અવયવવૃક્ષો છે. પહેલા વૃક્ષમાં 18માંથી બે શાખાઓ અનુક્રમે 3 અને 6 સુધી જાય છે. 3 અવિભાજ્ય હોવાથી તેની ફરતે વર્તુળ છે. 6માંથી વધુ બે શાખાઓ 2 અને 3 સુધી જાય છે અને બંને ફરતે વર્તુળ છે. બીજા વૃક્ષમાં 12માંથી બે શાખાઓ 3 અને 4 સુધી જાય છે. 3 ફરતે વર્તુળ છે. 4માંથી બે શાખાઓ 2 અને 2 સુધી જાય છે અને બંને ફરતે વર્તુળ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_020a_new.jpg" />
+</media>
+<media id="fs-id1170654905180" alt="પછીની હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 2. દરેક સંખ્યાના અવિભાજ્ય અવયવો લખો. શક્ય હોય ત્યાં સરખા અવયવો એકની નીચે એક ગોઠવો.” બીજા ખાનામાં લખ્યું છે: “12ના અવિભાજ્ય અવયવો લખો. 18ના અવિભાજ્ય અવયવો લખો. શક્ય હોય ત્યાં તેમને 12ના સરખા અવિભાજ્ય અવયવની નીચે ગોઠવો. નહીં તો નવો સ્તંભ બનાવો.” ત્રીજા ખાનામાં 12 બરાબર 2 ગુણ્યા 2 ગુણ્યા 3 સમીકરણ છે. તેની નીચે 18 બરાબર 2 ગુણ્યા 3 ગુણ્યા 3 છે. બંને સમીકરણોમાં બરાબરની નિશાની એકની નીચે એક છે. 12ના અવયવીકરણનો પહેલો 2, 18ના 2ની ઉપર છે. 12ના બીજા 2ની નીચે 18ના અવયવીકરણમાં ખાલી જગ્યા છે. 12ના 3ની નીચે 18નો પહેલો 3 છે. 18ના બીજા 3ની ઉપર 12નો કોઈ અવયવ નથી.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_020b_new.jpg" />
+</media>
+<media id="fs-id1170655083625" alt="પછીની હરોળના પહેલા ખાનામાં લખ્યું છે: “દરેક સ્તંભમાંથી સંખ્યા નીચે ઉતારો.” બીજું ખાનું ખાલી છે. ત્રીજા ખાનામાં 12 અને 18નાં અવિભાજ્ય અવયવીકરણનાં સમીકરણો અગાઉની જેમ ગોઠવેલાં છે. આ વખતે 18ના અવયવીકરણની નીચે આડી લીટી છે. તેની નીચે LCM બરાબર 2 ગુણ્યા 2 ગુણ્યા 3 ગુણ્યા 3 છે. 12ના અવયવીકરણમાંથી 18ના અવયવીકરણ થઈને LCM સુધી ઊભાં તીર છે. પહેલું તીર 12ના પહેલા 2થી 18ના 2 થઈને LCMના પહેલા 2 સુધી જાય છે. બીજું તીર 12ના બીજા 2થી 18ની ખાલી જગ્યા થઈને LCMના બીજા 2 સુધી જાય છે. ત્રીજું તીર 12ના 3થી 18ના પહેલા 3 થઈને LCMના પહેલા 3 સુધી જાય છે. છેલ્લું તીર 18ના બીજા 3થી LCMના બીજા 3 સુધી જાય છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_020c_new.jpg" />
+</media>
+<media id="fs-id1170654935281" alt="છેલ્લી હરોળના પહેલા ખાનામાં લખ્યું છે: “પગલું 4: અવયવોનો ગુણાકાર કરો.” બીજું ખાનું ખાલી છે. ત્રીજા ખાનામાં LCM બરાબર 36 સમીકરણ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_020d_new.jpg" />
+</media>
+</solution>
+</exercise>
+</example>
+<para id="fs-id1170655199709">ધ્યાન આપો કે 12ના અવિભાજ્ય અવયવો <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> અને 18ના અવિભાજ્ય અવયવો <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> LCMમાં સામેલ છે: <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> તેથી 12 અને 18નો લઘુત્તમ સામાન્ય અવયવી 36 છે.</para>
+<para id="fs-id1170655195905">સરખા અવિભાજ્ય અવયવોને એકની નીચે એક ગોઠવવાથી દરેક સામાન્ય અવયવનો એક જ વાર ઉપયોગ થાય છે. આ રીતે ખાતરી થાય છે કે 36 એ <emphasis effect="italics">લઘુત્તમ</emphasis> છે.</para>
+<note id="fs-id1170655195914" class="try">
+<exercise id="fs-id1170655195919">
+<problem id="fs-id1170655195921">
+<para id="fs-id1170655195923">અવિભાજ્ય અવયવોની રીતથી LCM શોધો: 9 અને 12.</para>
+</problem>
+<solution id="fs-id1170655195927">
+<para id="fs-id1170655195929">36</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655195936" class="try">
+<exercise id="fs-id1170655195940">
+<problem id="fs-id1170655195942">
+<para id="fs-id1170655195944">અવિભાજ્ય અવયવોની રીતથી LCM શોધો: 18 અને 24.</para>
+</problem>
+<solution id="fs-id1170655195948">
+<para id="fs-id1170655195950">72</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655229842" class="howto">
+<title>અવિભાજ્ય અવયવોની રીતથી લઘુત્તમ સામાન્ય અવયવી શોધો.</title>
+<list id="fs-id1166426408882" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>દરેક સંખ્યાને અવિભાજ્ય અવયવોના ગુણાકારરૂપે લખો.</item>
+<item>દરેક સંખ્યાના અવિભાજ્ય અવયવો લખો. શક્ય હોય ત્યાં સરખા અવયવો એકની નીચે એક ગોઠવો.</item>
+<item>સ્તંભોની સંખ્યાઓ નીચે ઉતારો.</item>
+<item>અવયવોનો ગુણાકાર કરો.</item>
+</list>
+</note>
+<example id="fs-id1170655229883">
+<exercise id="fs-id1170655229885">
+<problem id="fs-id1170655229887">
+<para id="fs-id1170655229889">અવિભાજ્ય અવયવોની રીતથી 24 અને 36નો લઘુત્તમ સામાન્ય અવયવી (LCM) શોધો.</para>
+</problem>
+<solution id="fs-id1170655229893">
+<title>ઉકેલ</title>
+<table id="fs-id1167826967413" class="unnumbered unstyled" aria-label="આકૃતિમાં બે સ્તંભ છે: ડાબે સૂચનાઓ અને જમણે ગણતરી. શરૂઆતની ત્રણ સૂચનાઓ છે: “24 અને 36ના અવિભાજ્ય અવયવો શોધો. શક્ય હોય ત્યાં સરખા અવયવો એકની નીચે એક ગોઠવો. બધા સ્તંભોની સંખ્યાઓ નીચે ઉતારો.” જમણે 24 બરાબર 2 ગુણ્યા 2 ગુણ્યા 2 ગુણ્યા 3 સમીકરણ છે. તેની નીચે 36 બરાબર 2 ગુણ્યા 2 ગુણ્યા 3 ગુણ્યા 3 છે. બંને બરાબરની નિશાનીઓ એકની નીચે એક છે. 24ના પહેલા અને બીજા 2ની નીચે 36ના પહેલા અને બીજા 2 છે. 24ના ત્રીજા 2ની નીચે 36ના અવયવીકરણમાં ખાલી જગ્યા છે. 24ના 3ની નીચે 36નો પહેલો 3 છે. 36ના બીજા 3ની ઉપર 24નો કોઈ અવયવ નથી. 36ના અવયવીકરણની નીચે આડી લીટી છે. તેની નીચે LCM બરાબર 2 ગુણ્યા 2 ગુણ્યા 2 ગુણ્યા 3 ગુણ્યા 3 છે. ઊભાં તીર દરેક સ્તંભમાંથી LCM સુધી જાય છે: પહેલું અને બીજું તીર બંને સંખ્યાઓના સરખા 2 થઈને LCMના પહેલા અને બીજા 2 સુધી; ત્રીજું તીર 24ના ત્રીજા 2થી ખાલી જગ્યા થઈને LCMના ત્રીજા 2 સુધી; ચોથું તીર 24ના 3થી 36ના પહેલા 3 થઈને LCMના પહેલા 3 સુધી; છેલ્લું તીર 36ના બીજા 3થી LCMના બીજા 3 સુધી. નોંધ: મૂળ અંગ્રેજી વર્ણનમાં ત્રીજા તીર માટે ભૂલથી 12, 18 અને “બીજો 2” લખ્યાં છે. પછીની હરોળમાં ડાબે “અવયવોનો ગુણાકાર કરો” અને જમણે LCM બરાબર 72 છે. તેની નીચે “24 અને 36નો LCM એ 72 છે” લખ્યું છે."><label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>24 અને 36ના અવિભાજ્ય અવયવો શોધો.<newline />શક્ય હોય ત્યાં સરખા અવિભાજ્ય અવયવો એકની નીચે એક ગોઠવો.<newline /><newline />બધા સ્તંભોની સંખ્યાઓ નીચે ઉતારો.</entry>
+    <entry><media id="fs-id1167835321942" alt="24 અને 36ના અવિભાજ્ય અવયવો પરથી તેમનો લઘુત્તમ સામાન્ય અવયવી (LCM) શોધવાની દૃશ્ય સમજૂતી. કોઈ પણ એક સંખ્યામાં આવતી દરેક અવિભાજ્ય સંખ્યાની સૌથી મોટી ઘાત લેવાથી LCM મળે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_021a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>અવયવોનો ગુણાકાર કરો.</entry>
+    <entry><media id="fs-id1167832116015" alt="સાદી સફેદ પૃષ્ઠભૂમિ પર સ્પષ્ટ ઘાટા અક્ષરોમાં “LCM = 72” લખ્યું છે; તે ગણતરીનું પરિણામ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_021b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry>24 અને 36નો LCM એ 72 છે.</entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655229914" class="try">
+<exercise id="fs-id1170655222005">
+<problem id="fs-id1170655222007">
+<para id="fs-id1170655222009">અવિભાજ્ય અવયવોની રીતથી LCM શોધો: 21 અને 28.</para>
+</problem>
+<solution id="fs-id1170655222013">
+<para id="fs-id1170655222015">84</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655222022" class="try">
+<exercise id="fs-id1170655222026">
+<problem id="fs-id1170655222028">
+<para id="fs-id1170655222030">અવિભાજ્ય અવયવોની રીતથી LCM શોધો: 24 અને 32.</para>
+</problem>
+<solution id="fs-id1170655222054">
+<para id="fs-id1170655222056">96</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655222063" class="media-2">
+<para id="fs-id1170655222067">પૂર્ણ સંખ્યાઓ વિશે વધુ સમજવા અને અભ્યાસ કરવા આ ઑનલાઇન સ્રોત જુઓ. આ એપ્લિકેશન વાપરવા તમારા વેબ બ્રાઉઝરમાં જાવા સક્ષમ કરવાની જરૂર પડશે.</para><list id="fs-id1170655222071" display="block">
+<item><link url="https://openstax.org/l/01sieveoferato">ઇરેટોસ્થેનિસની ચાળણી</link></item>
+</list>
+</note>
+</section>
+<section id="fs-id1170655222085" class="key-concepts">
+<title>મુખ્ય ખ્યાલો</title>
+<list id="fs-id1170655178412" list-type="bulleted" bullet-style="bullet">
+<item><emphasis effect="bold">સ્થાનકિંમત</emphasis> જેમાં ઉદાહરણ છે <link target-id="CNX_ElemAlg_Figure_01_01_002_new" />.</item>
+<item><emphasis effect="bold">પૂર્ણ સંખ્યાને શબ્દોમાં લખો</emphasis>
+<list id="fs-id1166426408194" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>ડાબેથી શરૂ કરીને દરેક ગાળાની સંખ્યા અને તેની પાછળ ગાળાનું નામ લખો.</item>
+<item>ગાળાઓને અલગ પાડવા સંખ્યામાં અલ્પવિરામ મૂકો.</item>
+<item>એકમના ગાળાનું નામ લખશો નહીં.</item>
+</list></item>
+<item><emphasis effect="bold">પૂર્ણ સંખ્યાને અંકોમાં લખો</emphasis>
+<list id="fs-id1166426408220" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>ગાળા સૂચવતા શબ્દો ઓળખો. (યાદ રાખો, એકમના ગાળાનું નામ ક્યારેય લખાતું નથી.)</item>
+<item>દરેક ગાળામાં જરૂરી સ્થાનો બતાવવા 3 ખાલી જગ્યાઓ દોરો. ગાળાઓને અલ્પવિરામથી અલગ પાડો.</item>
+<item>દરેક ગાળાની સંખ્યા વાંચો અને અંકોને તેમની યોગ્ય સ્થાનકિંમતના સ્થાને મૂકો.</item>
+</list></item>
+<item><emphasis effect="bold">પૂર્ણ સંખ્યાઓનું આસન્ન મૂલ્ય કાઢો</emphasis>
+<list id="fs-id1166419319557" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>આપેલી સ્થાનકિંમત શોધો અને તીરથી દર્શાવો. તીરની ડાબેના બધા અંકો બદલાતા નથી.</item>
+<item>આપેલી સ્થાનકિંમતની તરત જમણેના અંક નીચે લીટી દોરો.</item>
+<item>શું આ અંક 5 કરતાં મોટો અથવા તેની બરાબર છે?
+<list id="fs-id1166419319583" list-type="bulleted" bullet-style="bullet">
+<item>હા—આપેલી સ્થાનકિંમતના અંકમાં 1 ઉમેરો.</item>
+<item>ના—આપેલી સ્થાનકિંમતનો અંક <emphasis effect="underline">નહીં</emphasis> બદલો.</item>
+</list></item>
+<item>આપેલી સ્થાનકિંમતની જમણેના બધા અંકોની જગ્યાએ શૂન્ય મૂકો.</item>
+</list></item>
+<item><emphasis effect="bold">વિભાજ્યતાની કસોટીઓ:</emphasis> સંખ્યા નીચે મુજબ વિભાજ્ય છે:
+<list id="fs-id1170655206214" list-type="bulleted" bullet-style="open-circle">
+<item>2 વડે, જો છેલ્લો અંક 0, 2, 4, 6 કે 8 હોય.</item>
+<item>3 વડે, જો તેના અંકોનો સરવાળો 3 વડે વિભાજ્ય હોય.</item>
+<item>5 વડે, જો છેલ્લો અંક 5 કે 0 હોય.</item>
+<item>6 વડે, જો સંખ્યા 2 અને 3 બંને વડે વિભાજ્ય હોય.</item>
+<item>10 વડે, જો તેના અંતે 0 હોય.</item>
+</list></item>
+<item><emphasis effect="bold">સંયુક્ત સંખ્યાનું અવિભાજ્ય અવયવીકરણ કરો</emphasis>
+<list id="fs-id1166423744411" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>આપેલી સંખ્યા જેટલો ગુણાકાર થાય તેવા બે અવયવો શોધો અને તેમના વડે બે શાખાઓ બનાવો.</item>
+<item>અવયવ અવિભાજ્ય હોય તો તે શાખા પૂરી થાય છે. વૃક્ષની કળીની જેમ તે અવિભાજ્ય સંખ્યા ફરતે વર્તુળ દોરો.</item>
+<item>અવયવ અવિભાજ્ય ન હોય તો તેને બે અવયવોના ગુણાકારરૂપે લખો અને પ્રક્રિયા ચાલુ રાખો.</item>
+<item>સંયુક્ત સંખ્યાને વર્તુળમાંની બધી અવિભાજ્ય સંખ્યાઓના ગુણાકારરૂપે લખો.</item>
+</list></item>
+<item><emphasis effect="bold">અવયવીઓની યાદી બનાવી લઘુત્તમ સામાન્ય અવયવી શોધો</emphasis>
+<list id="fs-id1166421706928" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>દરેક સંખ્યાના કેટલાક અવયવીઓની યાદી બનાવો.</item>
+<item>બંને યાદીમાં આવતી સૌથી નાની સંખ્યા શોધો.</item>
+<item>આ સંખ્યા LCM છે.</item>
+</list></item>
+<item><emphasis effect="bold">અવિભાજ્ય અવયવોની રીતથી લઘુત્તમ સામાન્ય અવયવી શોધો</emphasis>
+<list id="fs-id1166421706953" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>દરેક સંખ્યાને અવિભાજ્ય અવયવોના ગુણાકારરૂપે લખો.</item>
+<item>દરેક સંખ્યાના અવિભાજ્ય અવયવો લખો. શક્ય હોય ત્યાં સરખા અવયવો એકની નીચે એક ગોઠવો.</item>
+<item>સ્તંભોની સંખ્યાઓ નીચે ઉતારો.</item>
+<item>અવયવોનો ગુણાકાર કરો.</item>
+</list></item>
+</list>
+</section>
+<section id="fs-id1170655190123" class="section-exercises">
+<section id="fs-id1170655190127" class="practice-perfect">
+<title>અભ્યાસથી કુશળતા</title>
+<para id="fs-id1170655190132"><emphasis effect="bold">પૂર્ણ સંખ્યાઓમાં સ્થાનકિંમતનો ઉપયોગ કરો</emphasis></para>
+<para id="fs-id1166421707006">નીચેના અભ્યાસમાં, આપેલી સંખ્યાઓમાં જણાવેલા દરેક અંકની સ્થાનકિંમત શોધો.</para>
+<exercise id="fs-id1170655190140">
+<problem id="fs-id1170655190142">
+<para id="fs-id1170655190144">51,493
+<span class="token">ⓐ</span> 1,
+<span class="token">ⓑ</span> 4,
+<span class="token">ⓒ</span> 9,
+<span class="token">ⓓ</span> 5,
+<span class="token">ⓔ</span> 3</para>
+</problem>
+<solution id="fs-id1170655205414">
+<para id="fs-id1170655205416"><span class="token">ⓐ</span> હજાર <span class="token">ⓑ</span> સો <span class="token">ⓒ</span> દશક <span class="token">ⓓ</span> દસ હજાર <span class="token">ⓔ</span> એકમ</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655205422">
+<problem id="fs-id1170655205424">
+<para id="fs-id1170655205426">87,210
+<span class="token">ⓐ</span> 2
+<span class="token">ⓑ</span> 8
+<span class="token">ⓒ</span> 0
+<span class="token">ⓓ</span> 7
+<span class="token">ⓔ</span> 1</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655205455">
+<problem id="fs-id1170655205457">
+<para id="fs-id1170655205459">164,285
+<span class="token">ⓐ</span> 5,
+<span class="token">ⓑ</span> 6,
+<span class="token">ⓒ</span> 1,
+<span class="token">ⓓ</span> 8,
+<span class="token">ⓔ</span> 2</para>
+</problem>
+<solution id="fs-id1170655205480">
+<para id="fs-id1170655205482"><span class="token">ⓐ</span> એકમ <span class="token">ⓑ</span> દસ હજાર <span class="token">ⓒ</span> સો હજાર <span class="token">ⓓ</span> દશક <span class="token">ⓔ</span> સો</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655205488">
+<problem id="fs-id1170655205490">
+<para id="fs-id1170655205492">395,076
+<span class="token">ⓐ</span> 5
+<span class="token">ⓑ</span> 3
+<span class="token">ⓒ</span> 7
+<span class="token">ⓓ</span> 0
+<span class="token">ⓔ</span> 9</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655205521">
+<problem id="fs-id1170655205523">
+<para id="fs-id1170655205525">93,285,170
+<span class="token">ⓐ</span> 9
+<span class="token">ⓑ</span> 8
+<span class="token">ⓒ</span> 7
+<span class="token">ⓓ</span> 5
+<span class="token">ⓔ</span> 3</para>
+</problem>
+<solution id="fs-id1170655205546">
+<para id="fs-id1170655205548"><span class="token">ⓐ</span> દસ મિલિયન <span class="token">ⓑ</span> દસ હજાર <span class="token">ⓒ</span> દશક <span class="token">ⓓ</span> હજાર <span class="token">ⓔ</span> મિલિયન</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655205554">
+<problem id="fs-id1170655205556">
+<para id="fs-id1170655205558">36,084,215
+<span class="token">ⓐ</span> 8
+<span class="token">ⓑ</span> 6
+<span class="token">ⓒ</span> 5
+<span class="token">ⓓ</span> 4
+<span class="token">ⓔ</span> 3</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655227470">
+<problem id="fs-id1170655227472">
+<para id="fs-id1170655227474">7,284,915,860,132
+<span class="token">ⓐ</span> 7
+<span class="token">ⓑ</span> 4
+<span class="token">ⓒ</span> 5
+<span class="token">ⓓ</span> 3
+<span class="token">ⓔ</span> 0</para>
+</problem>
+<solution id="fs-id1170655227495">
+<para id="fs-id1170655227497"><span class="token">ⓐ</span> ટ્રિલિયન <span class="token">ⓑ</span> બિલિયન <span class="token">ⓒ</span> મિલિયન <span class="token">ⓓ</span> દશક <span class="token">ⓔ</span> હજાર</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655227503">
+<problem id="fs-id1170655227505">
+<para id="fs-id1170655227507">2,850,361,159,433<newline />
+<span class="token">ⓐ</span> 9<newline />
+<span class="token">ⓑ</span> 8<newline />
+<span class="token">ⓒ</span> 6<newline />
+<span class="token">ⓓ</span> 4<newline />
+<span class="token">ⓔ</span> 2</para>
+</problem>
+</exercise>
+<para id="fs-id1170655227536">નીચેના અભ્યાસમાં, દરેક સંખ્યાને શબ્દોમાં લખો.</para>
+<exercise id="fs-id1170655227539">
+<problem id="fs-id1170655227541">
+<para id="fs-id1170655227544">1,078</para>
+</problem>
+<solution id="fs-id1170655227548">
+<para id="fs-id1170655227550">એક હજાર, અઠ્ઠોતેર</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655227555">
+<problem id="fs-id1170655227557">
+<para id="fs-id1170655227560">5,902</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655227571">
+<problem id="fs-id1170655227573">
+<para id="fs-id1170655227576">364,510</para>
+</problem>
+<solution id="fs-id1170655227580">
+<para id="fs-id1170655227582">ત્રણસો ચોસઠ હજાર, પાંચસો દસ</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655227587">
+<problem id="fs-id1170655227589">
+<para id="fs-id1170655227592">146,023</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655227603">
+<problem id="fs-id1170655227605">
+<para id="fs-id1170655227608">5,846,103</para>
+</problem>
+<solution id="fs-id1170655227612">
+<para id="fs-id1170655227614">પાંચ મિલિયન, આઠસો છેતાલીસ હજાર, એકસો ત્રણ</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655206876">
+<problem id="fs-id1170655206878">
+<para id="fs-id1170655206880">1,458,398</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655206892">
+<problem id="fs-id1170655206894">
+<para id="fs-id1170655206896">37,889,005</para>
+</problem>
+<solution id="fs-id1170655206901">
+<para id="fs-id1170655206903">સાડત્રીસ મિલિયન, આઠસો નેવ્યાસી હજાર, પાંચ</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655206908">
+<problem id="fs-id1170655206910">
+<para id="fs-id1170655206912">62,008,465</para>
+</problem>
+</exercise>
+<para id="fs-id1170655206924">નીચેના અભ્યાસમાં, દરેક સંખ્યાને પૂર્ણ સંખ્યા તરીકે અંકોમાં લખો.</para>
+<exercise id="fs-id1170655206927">
+<problem id="fs-id1170655206930">
+<para id="fs-id1170655206932">ચારસો બાર</para>
+</problem>
+<solution id="fs-id1170655206936">
+<para id="fs-id1170655206938">412</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655206943">
+<problem id="fs-id1170655206946">
+<para id="fs-id1170655206948">બસો ત્રેપન</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655206959">
+<problem id="fs-id1170655206962">
+<para id="fs-id1170655206964">પાંત્રીસ હજાર, નવસો પંચોતેર</para>
+</problem>
+<solution id="fs-id1170655206968">
+<para id="fs-id1170655206970">35,975</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655206975">
+<problem id="fs-id1170655206978">
+<para id="fs-id1170655206980">એકસઠ હજાર, ચારસો પંદર</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655206991">
+<problem id="fs-id1170655206994">
+<para id="fs-id1170655206996">અગિયાર મિલિયન, ચુમ્માલીસ હજાર, એકસો સડસઠ</para>
+</problem>
+<solution id="fs-id1170655207000">
+<para id="fs-id1170655207002">11,044,167</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655207007">
+<problem id="fs-id1170655207010">
+<para id="fs-id1170655207012">અઢાર મિલિયન, એકસો બે હજાર, સાતસો ત્ર્યાસી</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655207023">
+<problem id="fs-id1170655207026">
+<para id="fs-id1170655207028">ત્રણ બિલિયન, બસો છવ્વીસ મિલિયન, પાંચસો બાર હજાર, સત્તર</para>
+</problem>
+<solution id="fs-id1170655207032">
+<para id="fs-id1170655207034">3,226,512,017</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655207039">
+<problem id="fs-id1170655207042">
+<para id="fs-id1170655207044">અગિયાર બિલિયન, ચારસો એકોતેર મિલિયન, છત્રીસ હજાર, એકસો છ</para>
+</problem>
+</exercise>
+<para id="fs-id1170655194762">નીચેના પ્રશ્નોમાં જણાવેલી સ્થાનકિંમત સુધી આસન્ન મૂલ્ય કાઢો.</para>
+<exercise id="fs-id1170655194765">
+<problem id="fs-id1170655194767">
+<para id="fs-id1170655194769">નજીકના દશક સુધી આશરે લખો.</para>
+<para id="fs-id1170655194772"><span class="token">ⓐ</span> 386 <span class="token">ⓑ</span> 2,931</para>
+</problem>
+<solution id="fs-id1170655194777">
+<para id="fs-id1170655194779"><span class="token">ⓐ</span> 390 <span class="token">ⓑ</span> 2,930</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655194784">
+<problem id="fs-id1170655194786">
+<para id="fs-id1170655194788">નજીકના દશક સુધી આશરે લખો.</para>
+<para id="fs-id1170655194792"><span class="token">ⓐ</span> 792 <span class="token">ⓑ</span> 5,647</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655194803">
+<problem id="fs-id1170655194805">
+<para id="fs-id1170655194808">નજીકના સો સુધી આશરે લખો.</para>
+<para id="fs-id1170655194811"><span class="token">ⓐ</span> 13,748 <span class="token">ⓑ</span> 391,794</para>
+</problem>
+<solution id="fs-id1170655194815">
+<para id="fs-id1170655194817"><span class="token">ⓐ</span> 13,700 <span class="token">ⓑ</span> 391,800</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655194822">
+<problem id="fs-id1170655194825">
+<para id="fs-id1170655194827">નજીકના સો સુધી આશરે લખો.</para>
+<para id="fs-id1170655194830"><span class="token">ⓐ</span> 28,166 <span class="token">ⓑ</span> 481,628</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655194842">
+<problem id="fs-id1170655194844">
+<para id="fs-id1170655194846">નજીકના દશક સુધી આશરે લખો.</para>
+<para id="fs-id1170655194849"><span class="token">ⓐ</span> 1,492 <span class="token">ⓑ</span> 1,497</para>
+</problem>
+<solution id="fs-id1170655194853">
+<para id="fs-id1170655194856"><span class="token">ⓐ</span> 1,490 <span class="token">ⓑ</span> 1,500</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655194861">
+<problem id="fs-id1170655194863">
+<para id="fs-id1170655194865">નજીકના દશક સુધી આશરે લખો.</para>
+<para id="fs-id1170655194869"><span class="token">ⓐ</span> 2,791 <span class="token">ⓑ</span> 2,795</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655194881">
+<problem id="fs-id1170655194883">
+<para id="fs-id1170655194886">નજીકના સો સુધી આશરે લખો.</para>
+<para id="fs-id1170655194889"><span class="token">ⓐ</span> 63,994 <span class="token">ⓑ</span> 63,940</para>
+</problem>
+<solution id="fs-id1170655194894">
+<para id="fs-id1170655194896"><span class="token">ⓐ</span> 64,000 <span class="token">ⓑ</span> 63,900</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655194902">
+<problem id="fs-id1170655194904">
+<para id="fs-id1170655194906">નજીકના સો સુધી આશરે લખો.</para>
+<para id="fs-id1170655194910"><span class="token">ⓐ</span> 49,584 <span class="token">ⓑ</span> 49,548</para>
+</problem>
+</exercise>
+<para id="fs-id1170655198323">નીચેના અભ્યાસમાં, દરેક સંખ્યાનું નીચેના નજીકના સ્થાન સુધી આસન્ન મૂલ્ય કાઢો: <span class="token">ⓐ</span> સો, <span class="token">ⓑ</span> હજાર, <span class="token">ⓒ</span> દસ હજાર.</para>
+<exercise id="fs-id1170655198328">
+<problem id="fs-id1170655198330">
+<para id="fs-id1170655198332">392,546</para>
+</problem>
+<solution id="fs-id1170655198336">
+<para id="fs-id1170655198338"><span class="token">ⓐ</span> 392,500 <span class="token">ⓑ</span> 393,000 <span class="token">ⓒ</span> 390,000</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655198344">
+<problem id="fs-id1170655198346">
+<para id="fs-id1170655198348">619,348</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655198360">
+<problem id="fs-id1170655198362">
+<para id="fs-id1170655198364">2,586,991</para>
+</problem>
+<solution id="fs-id1170655198368">
+<para id="fs-id1170655198370"><span class="token">ⓐ</span> 2,587,000 <span class="token">ⓑ</span> 2,587,000 <span class="token">ⓒ</span> 2,590,000</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655198376">
+<problem id="fs-id1170655198378">
+<para id="fs-id1170655198380">4,287,965</para>
+</problem>
+</exercise>
+<para id="fs-id1166419357366"><emphasis effect="bold">અવયવીઓ અને અવયવો ઓળખો</emphasis></para>
+<para id="fs-id1170655198399">નીચેના અભ્યાસમાં, વિભાજ્યતાની કસોટીઓથી નક્કી કરો કે દરેક સંખ્યા 2, 3, 5, 6 અને 10 વડે વિભાજ્ય છે કે નહીં.</para>
+<exercise id="fs-id1170655198403">
+<problem id="fs-id1170655198405">
+<para id="fs-id1170655198407">84</para>
+</problem>
+<solution id="fs-id1170655198412">
+<para id="fs-id1170655198414">2, 3 અને 6 વડે વિભાજ્ય</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655198419">
+<problem id="fs-id1170655198422">
+<para id="fs-id1170655198424">9,696</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655198436">
+<problem id="fs-id1170655198438">
+<para id="fs-id1170655198440">75</para>
+</problem>
+<solution id="fs-id1170655198444">
+<para id="fs-id1170655198446">3 અને 5 વડે વિભાજ્ય</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655198452">
+<problem id="fs-id1170655198454">
+<para id="fs-id1170655198456">78</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655198468">
+<problem id="fs-id1170655198470">
+<para id="fs-id1170655198472">900</para>
+</problem>
+<solution id="fs-id1170655198477">
+<para id="fs-id1170655198479">2, 3, 5, 6 અને 10 વડે વિભાજ્ય</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655198485">
+<problem id="fs-id1170655198487">
+<para id="fs-id1170655198489">800</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655195988">
+<problem id="fs-id1170655195990">
+<para id="fs-id1170655195992">986</para>
+</problem>
+<solution id="fs-id1170655195996">
+<para id="fs-id1170655195998">2 વડે વિભાજ્ય</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655196004">
+<problem id="fs-id1170655196006">
+<para id="fs-id1170655196008">942</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655196020">
+<problem id="fs-id1170655196022">
+<para id="fs-id1170655196024">350</para>
+</problem>
+<solution id="fs-id1170655196029">
+<para id="fs-id1170655196031">2, 5 અને 10 વડે વિભાજ્ય</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655196037">
+<problem id="fs-id1170655196039">
+<para id="fs-id1170655196041">550</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655196053">
+<problem id="fs-id1170655196055">
+<para id="fs-id1170655196057">22,335</para>
+</problem>
+<solution id="fs-id1170655196062">
+<para id="fs-id1170655196064">3 અને 5 વડે વિભાજ્ય</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655196069">
+<problem id="fs-id1170655196071">
+<para id="fs-id1170655196073">39,075</para>
+</problem>
+</exercise>
+<para id="fs-id1166426329770"><emphasis effect="bold">અવિભાજ્ય અવયવીકરણ અને લઘુત્તમ સામાન્ય અવયવી શોધો</emphasis></para>
+<para id="fs-id1170655196091">નીચેના અભ્યાસમાં, અવિભાજ્ય અવયવીકરણ કરો.</para>
+<exercise id="fs-id1170655196095">
+<problem id="fs-id1170655196097">
+<para id="fs-id1170655196099">86</para>
+</problem>
+<solution id="fs-id1170655196103">
+<para id="fs-id1170655196105"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>43</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655196118">
+<problem id="fs-id1170655196120">
+<para id="fs-id1170655196122">78</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655196146">
+<problem id="fs-id1170655196148">
+<para id="fs-id1170655209496">132</para>
+</problem>
+<solution id="fs-id1170655209501">
+<para id="fs-id1170655209503"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>11</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655209524">
+<problem id="fs-id1170655209526">
+<para id="fs-id1170655209528">455</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655209552">
+<problem id="fs-id1170655209554">
+<para id="fs-id1170655209556">693</para>
+</problem>
+<solution id="fs-id1170655209560">
+<para id="fs-id1170655209563"><m:math><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>11</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655209584">
+<problem id="fs-id1170655209586">
+<para id="fs-id1170655209588">400</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655209624">
+<problem id="fs-id1170655209627">
+<para id="fs-id1170655209629">432</para>
+</problem>
+<solution id="fs-id1170655209633">
+<para id="fs-id1170655209635"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655165674">
+<problem id="fs-id1170655165676">
+<para id="fs-id1170655165678">627</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655165701">
+<problem id="fs-id1170655165704">
+<para id="fs-id1170655165706">2,160</para>
+</problem>
+<solution id="fs-id1170655165710">
+<para id="fs-id1170655165712"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655165750">
+<problem id="fs-id1170655165753">
+<para id="fs-id1170655165755">2,520</para>
+</problem>
+</exercise>
+<para id="fs-id1170655165795">નીચેના અભ્યાસમાં, અવયવીઓની રીતથી દરેક સંખ્યાજોડીનો લઘુત્તમ સામાન્ય અવયવી શોધો.</para>
+<exercise id="fs-id1170655165800">
+<problem id="fs-id1170655165802">
+<para id="fs-id1170655165804">8, 12</para>
+</problem>
+<solution id="fs-id1170655165808">
+<para id="fs-id1170655165810">24</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655165816">
+<problem id="fs-id1170655165818">
+<para id="fs-id1170655165820">4, 3</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655165832">
+<problem id="fs-id1170655165834">
+<para id="fs-id1170655165836">12, 16</para>
+</problem>
+<solution id="fs-id1170655165840">
+<para id="fs-id1170655170776">48</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655170781">
+<problem id="fs-id1170655170783">
+<para id="fs-id1170655170785">30, 40</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655170797">
+<problem id="fs-id1170655170799">
+<para id="fs-id1170655170801">20, 30</para>
+</problem>
+<solution id="fs-id1170655170806">
+<para id="fs-id1170655170808">60</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655170813">
+<problem id="fs-id1170655170815">
+<para id="fs-id1170655170817">44, 55</para>
+</problem>
+</exercise>
+<para id="fs-id1170655170829">નીચેના અભ્યાસમાં, અવિભાજ્ય અવયવોની રીતથી દરેક સંખ્યાજોડીનો લઘુત્તમ સામાન્ય અવયવી શોધો.</para>
+<exercise id="fs-id1170655170833">
+<problem id="fs-id1170655170835">
+<para id="fs-id1170655170838">8, 12</para>
+</problem>
+<solution id="fs-id1170655170842">
+<para id="fs-id1170655170844">24</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655170849">
+<problem id="fs-id1170655170851">
+<para id="fs-id1170655170854">12, 16</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655170865">
+<problem id="fs-id1170655170867">
+<para id="fs-id1170655170870">28, 40</para>
+</problem>
+<solution id="fs-id1170655170874">
+<para id="fs-id1170655170876">280</para></solution>
+</exercise>
+<exercise id="fs-id1170655170881">
+<problem id="fs-id1170655170883">
+<para id="fs-id1170655170886">84, 90</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655170897">
+<problem id="fs-id1170655170899">
+<para id="fs-id1170655170902">55, 88</para>
+</problem>
+<solution id="fs-id1170655170906">
+<para id="fs-id1170655170908">440</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655170913">
+<problem id="fs-id1170655170915">
+<para id="fs-id1170655170918">60, 72</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170655170930" class="everyday">
+<title>રોજિંદા જીવનમાં ગણિત</title>
+<exercise id="fs-id1170655170936">
+<problem id="fs-id1170655170938">
+<para id="fs-id1170655170940"><emphasis effect="bold">ચેક લખવો</emphasis> હોર્હેએ $24,493માં કાર ખરીદી. તેણે કારની કિંમત ચેકથી ચૂકવી. ખરીદકિંમત શબ્દોમાં લખો.</para>
+</problem>
+<solution id="fs-id1170655194256">
+<para id="fs-id1170655194258">ચોવીસ હજાર, ચારસો ત્રાણું ડૉલર</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655194264">
+<problem id="fs-id1170655194266">
+<para id="fs-id1170655194268"><emphasis effect="bold">ચેક લખવો</emphasis> મરિસાના રસોડાના નવીનીકરણનો ખર્ચ $18,549 થયો. તેણે ઠેકેદારને ચેક લખી આપ્યો. ચૂકવેલી રકમ શબ્દોમાં લખો.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655194285">
+<problem id="fs-id1170655194287">
+<para id="fs-id1170655194289"><emphasis effect="bold">કાર ખરીદવી</emphasis> હોર્હેએ $24,493માં કાર ખરીદી. કિંમતનું નીચેના નજીકના સ્થાન સુધી આસન્ન મૂલ્ય કાઢો: <span class="token">ⓐ</span> દશક <span class="token">ⓑ</span> સો <span class="token">ⓒ</span> હજાર; અને <span class="token">ⓓ</span> દસ હજાર.</para>
+</problem>
+<solution id="fs-id1170655194299">
+<para id="fs-id1170655194301"><span class="token">ⓐ</span> $24,490 <span class="token">ⓑ</span> $24,500 <span class="token">ⓒ</span> $24,000 <span class="token">ⓓ</span> $20,000</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655194307">
+<problem id="fs-id1170655194309">
+<para id="fs-id1170655194311"><emphasis effect="bold">રસોડાનું નવીનીકરણ</emphasis> મરિસાના રસોડાના નવીનીકરણનો ખર્ચ $18,549 થયો. ખર્ચનું નીચેના નજીકના સ્થાન સુધી આસન્ન મૂલ્ય કાઢો: <span class="token">ⓐ</span> દશક <span class="token">ⓑ</span> સો <span class="token">ⓒ</span> હજાર અને <span class="token">ⓓ</span> દસ હજાર.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655194330">
+<problem id="fs-id1170655194332">
+<para id="fs-id1170655194334"><emphasis effect="bold">વસ્તી</emphasis> નવેમ્બર 1, 2010ના રોજ ચીનની વસ્તી 1,339,724,852 હતી. વસ્તીનું નીચેના નજીકના સ્થાન સુધી આસન્ન મૂલ્ય કાઢો: <span class="token">ⓐ</span> બિલિયન <span class="token">ⓑ</span> સો મિલિયન; અને <span class="token">ⓒ</span> મિલિયન.</para>
+</problem>
+<solution id="fs-id1170655194344">
+<para id="fs-id1170655194346"><span class="token">ⓐ</span> 1,000,000,000 <span class="token">ⓑ</span> 1,300,000,000 <span class="token">ⓒ</span> 1,340,000,000</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655194351">
+<problem id="fs-id1170655194354">
+<para id="fs-id1170655194356"><emphasis effect="bold">ખગોળશાસ્ત્ર</emphasis> પૃથ્વી અને સૂર્ય વચ્ચેનું સરેરાશ અંતર 149,597,888 કિલોમીટર છે. અંતરનું નીચેના નજીકના સ્થાન સુધી આસન્ન મૂલ્ય કાઢો: <span class="token">ⓐ</span> સો મિલિયન <span class="token">ⓑ</span> દસ મિલિયન; અને <span class="token">ⓒ</span> મિલિયન.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655194373">
+<problem id="fs-id1170655194375">
+<para id="fs-id1170655194377"><emphasis effect="bold">કરિયાણાની ખરીદી</emphasis> હૉટ ડૉગ 10ના પેકેટમાં વેચાય છે, પરંતુ હૉટ ડૉગ માટેનાં બન આઠના પેકેટમાં મળે છે. બંનેની સંખ્યા સરખી થાય તે માટે હૉટ ડૉગ અને બનની ઓછામાં ઓછી સંખ્યા કેટલી જોઈએ?</para>
+</problem>
+<solution id="fs-id1170655194387">
+<para id="fs-id1170655194389">40</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655194395">
+<problem id="fs-id1170655194397">
+<para id="fs-id1170655194399"><emphasis effect="bold">કરિયાણાની ખરીદી</emphasis> કાગળની થાળીઓ 12ના પેકેટમાં વેચાય છે અને પાર્ટીના કપ આઠના પેકેટમાં મળે છે. થાળીઓ અને કપની સંખ્યા સરખી થાય તે માટે બંનેની ઓછામાં ઓછી સંખ્યા કેટલી જોઈએ?</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170655194417" class="writing">
+<title>લેખિત અભ્યાસ</title>
+<exercise id="fs-id1170655194423">
+<problem id="fs-id1170655194425">
+<para id="fs-id1170655194427">સંખ્યાનું આસન્ન મૂલ્ય કાઢવું ઉપયોગી બને એવું રોજિંદા જીવનનું એક ઉદાહરણ આપો.</para>
+</problem>
+<solution id="fs-idm167753872">
+<para id="fs-idm167753616">જવાબો જુદા હોઈ શકે.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655207048">
+<problem id="fs-id1170655207050">
+<para id="fs-id1170655207053">સંખ્યા 2 અને 3 વડે વિભાજ્ય હોય તો તે 6 વડે પણ શા માટે વિભાજ્ય હોય છે?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655207064">
+<problem id="fs-id1170655207066">
+<para id="fs-id1170655207069">અવિભાજ્ય સંખ્યાઓ અને સંયુક્ત સંખ્યાઓ વચ્ચે શું તફાવત છે?</para>
+</problem>
+<solution id="fs-id1170655207073">
+<para id="fs-id1170655207075">જવાબો જુદા હોઈ શકે.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655207080">
+<problem id="fs-id1170655207082">
+<para id="fs-id1170655207085">તમને પસંદ હોય તે રીતથી સંયુક્ત સંખ્યાનું અવિભાજ્ય અવયવીકરણ કેવી રીતે કરવું તે તમારા શબ્દોમાં સમજાવો.</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170655207098">
+<title>જાતે ચકાસો</title>
+<para id="fs-id1170655207108"><span class="token">ⓐ</span> અભ્યાસ પૂરો કર્યા પછી આ યાદી વડે તપાસો કે તમે આ વિભાગનાં લક્ષ્યો કેટલાં સિદ્ધ કર્યાં છે.</para>
+<media id="fs-id1170655207116" alt="ચાર સ્તંભ અને ચાર હરોળનું કોષ્ટક છે. સ્તંભનાં મથાળાં છે: “હું કરી શકું છું…”, “આત્મવિશ્વાસથી”, “થોડી મદદથી” અને “ના—મને સમજાતું નથી!” પહેલા સ્તંભની ત્રણ હરોળમાં લખ્યું છે: “પૂર્ણ સંખ્યાઓમાં સ્થાનકિંમતનો ઉપયોગ કરવો”, “અવયવીઓ ઓળખવા અને વિભાજ્યતાના નિયમો લાગુ કરવા” અને “અવિભાજ્ય અવયવીકરણ અને લઘુત્તમ સામાન્ય અવયવી શોધવા”. કોષ્ટકનાં બીજાં બધાં ખાનાં ખાલી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_201_img_new.jpg" />
+</media>
+<para id="fs-id1170655207128"><span class="token">ⓑ</span> તમારી મોટાભાગની નિશાનીઓ આ કૉલમમાં હોય તો:</para>
+<para id="fs-id1170655207132">…આત્મવિશ્વાસથી. અભિનંદન! તમે આ વિભાગનાં લક્ષ્યો સિદ્ધ કર્યાં છે. તમે વાપરેલી અભ્યાસની રીતો યાદ કરો, જેથી આગળ પણ તેનો ઉપયોગ કરી શકો. આ કાર્યો કરવાની ક્ષમતામાં વિશ્વાસ મેળવવા તમે શું કર્યું? ચોક્કસ રીતે લખો.</para>
+<para id="fs-id1170655207139">…થોડી મદદથી. આ મુશ્કેલી વહેલી તકે દૂર કરવી જોઈએ, કારણ કે જે વિષય પૂરેપૂરો સમજાયો ન હોય તે આગળના અભ્યાસમાં અડચણ બને છે. ગણિતમાં દરેક વિષય અગાઉના કામ પર આધારિત છે. આગળ વધતાં પહેલાં પાયો મજબૂત હોવાની ખાતરી કરવી જરૂરી છે. તમે કોની મદદ માગી શકો? સહાધ્યાયીઓ અને શિક્ષક મદદ કરી શકે. તમારી સંસ્થામાં ક્યાંક ગણિતની વધારાની મદદ મળે છે? અભ્યાસ કરવાની તમારી રીતો વધુ સારી બનાવી શકાય?</para>
+<para id="fs-id1170655207150">…ના—મને સમજાતું નથી! આ ચેતવણીનો સંકેત છે; તેને અવગણશો નહીં. તરત મદદ મેળવો, નહીં તો આગળનું કામ ઝડપથી મુશ્કેલ લાગવા માંડશે. શક્ય તેટલી વહેલી તકે શિક્ષકને મળીને તમારી સ્થિતિ વિશે વાત કરો. સાથે મળીને જરૂરી મદદ મેળવવાની યોજના બનાવી શકો.</para>
+</section>
+</section>
+</content>
+<glossary>
+<definition id="fs-id1166426314283">
+<term>સંયુક્ત સંખ્યા</term>
+<meaning id="fs-id1166426314289">સંયુક્ત સંખ્યા એ 1 કરતાં મોટી ગણતરીની સંખ્યા છે જે અવિભાજ્ય નથી. સંયુક્ત સંખ્યાના 1 અને તે સંખ્યા પોતે, તે ઉપરાંત પણ અવયવો હોય છે.</meaning>
+</definition>
+<definition id="fs-id1166421632702">
+<term>ગણતરીની સંખ્યાઓ</term>
+<meaning id="fs-id1166421632707">ગણતરીની સંખ્યાઓ 1, 2, 3, … છે.</meaning>
+</definition>
+<definition id="fs-id1166421632717">
+<term>સંખ્યા વડે વિભાજ્ય</term>
+<meaning id="fs-id1166421632723">જો સંખ્યા <m:math><m:mi>m</m:mi></m:math> એ <m:math><m:mi>n</m:mi></m:math>નો અવયવી હોય, તો <m:math><m:mi>m</m:mi></m:math> વિભાજ્ય છે <m:math><m:mi>n</m:mi></m:math> વડે. (6 એ 3નો અવયવી હોય તો 6 એ 3 વડે વિભાજ્ય છે.)</meaning>
+</definition>
+<definition id="fs-id1166421632750">
+<term>અવયવો</term>
+<meaning id="fs-id1166421632755">જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>m</m:mi></m:mrow></m:math>, તો <m:math><m:mrow><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi></m:mrow></m:math> અવયવો તરીકે ઓળખાય છે; સંબંધિત સંખ્યા છે <m:math><m:mi>m</m:mi></m:math>. કારણ કે 3 · 4 = 12, તેથી 3 અને 4 એ 12ના અવયવો છે.</meaning>
+</definition>
+<definition id="fs-id1166421632812">
+<term>લઘુત્તમ સામાન્ય અવયવી</term>
+<meaning id="fs-id1166421632818">બે સંખ્યાઓનો લઘુત્તમ સામાન્ય અવયવી એટલે એવી સૌથી નાની સંખ્યા જે બંને સંખ્યાઓનો અવયવી હોય.</meaning>
+</definition>
+<definition id="fs-id1166421632827">
+<term>સંખ્યાનો અવયવી</term>
+<meaning id="fs-id1166421632833">ગણતરીની કોઈ સંખ્યા અને <emphasis effect="italics">n</emphasis>નો ગુણાકાર કરવાથી મળતી સંખ્યા એ <emphasis effect="italics">n</emphasis>નો અવયવી છે.</meaning>
+</definition>
+<definition id="fs-id1166421632848">
+<term>સંખ્યારેખા</term>
+<meaning id="fs-id1166421632853">સંખ્યાઓ દર્શાવવા સંખ્યારેખાનો ઉપયોગ થાય છે. સંખ્યારેખા પર ડાબેથી જમણે જતાં સંખ્યાઓ મોટી થાય છે અને જમણેથી ડાબે જતાં નાની થાય છે.</meaning>
+</definition>
+<definition id="fs-id1166421632864">
+<term>ઉગમબિંદુ</term>
+<meaning id="fs-id1166421632869">સંખ્યારેખા પર 0થી દર્શાવેલા બિંદુને ઉગમબિંદુ કહે છે.</meaning>
+</definition>
+<definition id="fs-id1166424132582">
+<term>અવિભાજ્ય અવયવીકરણ</term>
+<meaning id="fs-id1166424132587">સંખ્યાનું અવિભાજ્ય અવયવીકરણ એ અવિભાજ્ય સંખ્યાઓનો એવો ગુણાકાર છે જે તે સંખ્યાની બરાબર થાય છે.</meaning>
+</definition>
+<definition id="fs-id1166424132596">
+<term>અવિભાજ્ય સંખ્યા</term>
+<meaning id="fs-id1166424132602">અવિભાજ્ય સંખ્યા એ 1 કરતાં મોટી ગણતરીની સંખ્યા છે, જેના માત્ર બે અવયવો છે: 1 અને તે સંખ્યા પોતે.</meaning>
+</definition>
+<definition id="fs-id1166424132611">
+<term>પૂર્ણ સંખ્યાઓ</term>
+<meaning id="fs-id1166424132616">પૂર્ણ સંખ્યાઓ 0, 1, 2, 3, .... છે.</meaning>
+</definition>
+</glossary>
+</document>

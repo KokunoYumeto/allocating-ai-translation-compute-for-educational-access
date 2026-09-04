@@ -1,0 +1,209 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81295",
+  "section": "fs-id1827280",
+  "date": "2026-09-01",
+  "source_title": "Section Exercises",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81295.source.cnxml",
+  "source_sha256": "c22d14bb2b833ed20ea5a7aa95d0e50b7810e8930834bd61993b8431dcfd02c3",
+  "overlay_sha256": "7dc1889dec71a5254e527296a0fdc4c65960b0b2a1b64f5fb695d147d250e3ac",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR01",
+        "TR05",
+        "TR08",
+        "TR09",
+        "TR11"
+      ],
+      "read": [
+        "Actual complete1364-element assigned CNXML subtree, including all106problems and every source solution/absence",
+        "SCERT-Tripura-VI/p050.txt and complete p050.png: লব/হর and ভাগফল vocabulary",
+        "SCERT-Tripura-VI/p057.txt,p058.txt and complete p057.png,p058.png: decimal definition, place names and digit-by-digit reading",
+        "SCERT-Tripura-VI/p078.txt and complete p078.png: গুণফল and algebraic-expression register",
+        "SCERT-Tripura-VI/p009.txt and complete p009.png: অনুমান/আসন্ন মান wording",
+        "Actual CNX_BMath_Figure_AppB_029.jpg self-assessment raster"
+      ],
+      "action": "Use দশমিক সংখ্যা, দশমিক বিন্দু, দশাংশ/শতাংশ/সহস্রাংশ, গুণফল, ভাগফল and আসন্ন মান consistently. TR11 is only a lexical witness for estimation/approximation, not a decimal tie-breaking rule. Read the actual source answer inventory before translating:53solution elements and53source-absent solutions."
+    },
+    {
+      "stage": "during translation",
+      "examples": [
+        "TR05",
+        "TR08",
+        "TR09",
+        "TR11"
+      ],
+      "read": [
+        "Actual p057/p058 decimal passages again while translating the operation and writing headings",
+        "Actual p078 product-expression table while translating multiplication/application language",
+        "Actual p009 estimation passage while checking the three nearest-cent source answers",
+        "Every mixed-content slot in all20word problems, both Everyday Math problems and both Writing Exercises",
+        "Original self-check raster, its four English row labels and three confidence columns"
+      ],
+      "action": "Keep all names, USdollar contexts, pounds, meters, dates, quantities and historical2010WinterOlympics context. Explain that the source reports three nonterminating currency calculations to the nearest cent, without claiming a locally witnessed rounding algorithm. Preserve source trailing zeros such as$48.60,$15.00,$296.00,$1.50,$1.20and$17.80. Translate the raster fully in alt text while leaving its pixels unchanged."
+    },
+    {
+      "stage": "pre-integration QA",
+      "examples": [
+        "TR01",
+        "TR05",
+        "TR08",
+        "TR09",
+        "TR11"
+      ],
+      "read": [
+        "Complete p057,p058andp009 page images again after drafting",
+        "Saved overlay and pinned source hash",
+        "All106problem records in source order and all53solution records",
+        "All163MathML nodes, all459IDs and the final visible Bengali description of the original self-check raster"
+      ],
+      "action": "Exact Decimal/rational recalculation passes every one of the53source-supplied solution records, including all parts of the restaurant-sharing and paycheck questions. The three currency quotients independently produce0.7075,2.44270833… and17.79912, matching source$0.71,$2.44and$17.80 at the nearest cent. Recount53specific absence IDs; no solution node or answer text was added. Structure, IDs, order, links, MathML, numeric strings and nonlinguistic attributes remain exact."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "answer-presence boundary",
+      "affected_locations": [
+        "all106exercise elements"
+      ],
+      "decision": "A source solution is translated only when the frozen source contains that solution. The exact split is53supplied and53absent. The even paired practice items, ten alternating application items, the second Everyday Math item and the second Writing Exercise remain unanswered; no pedagogically tempting answer is invented."
+    },
+    {
+      "topic": "currency, rounding and preserved zeros",
+      "affected_locations": [
+        "eip-750",
+        "fs-id1279188",
+        "fs-id2314709",
+        "fs-id1166761237483",
+        "all money applications"
+      ],
+      "decision": "Keep the source's dollars and $ symbols rather than convert to rupees or discuss exchange rates. Add a short Bengali scope note that source currency answers extending below one cent use the nearest-cent value. Preserve every source answer spelling, including two decimal places where the source keeps cents. TR11 supports আসন্ন মান as vocabulary only; it is not cited as evidence for a rounding rule."
+    },
+    {
+      "topic": "decimal language",
+      "affected_locations": [
+        "operation headings",
+        "fs-id2903318",
+        "fs-id1789382",
+        "self-check alt"
+      ],
+      "decision": "Use দশমিক সংখ্যা and TR08 place names. For0.03seconds, retain তিন শতাংশ but immediately clarify একশো সমান ভাগের তিন ভাগ so শতাংশ cannot be mistaken for an unrelated percent-rate calculation. TR09's digit-reading rule remains available context, but this exercise asks for the hundredths name."
+    },
+    {
+      "topic": "contexts, names and units",
+      "affected_locations": [
+        "fs-id2369148 through fs-id2443776",
+        "fs-id1885537 through fs-id2318930",
+        "fs-id2903318"
+      ],
+      "decision": "Transliterate every personal/family name and retain ATM, restaurant, coupon, diet, snowpack, subway, college, gallery, zoo and ice-skating situations without localization that changes the mathematics. Preserve pounds and meters without conversion. Retain2010WinterOlympics, men'sSuper-G, Miller and Weibrecht as historical source context; make no present-day claim."
+    },
+    {
+      "topic": "self-check raster accessibility",
+      "affected_locations": [
+        "fs-id1168469798376"
+      ],
+      "decision": "The English raster remains byte-identical. Bengali alt gives the complete four-column structure, all four skills and the three selectable confidence states, and explicitly says the original pixels remain English."
+    },
+    {
+      "topic": "canon limits",
+      "affected_locations": [
+        "all translated text"
+      ],
+      "decision": "The canon is a register witness, not a source of new exercise answers. Exclude p057's visibly misaligned12.74row. Do not extend p058's nonnegative decimal-comparison passage to arbitrary signed values. Do not cite any withdrawn global ranking or use it to prioritize, score or characterize this commissioned work."
+    }
+  ],
+  "source_errata": [],
+  "image_checks": [
+    {
+      "file": "CNX_BMath_Figure_AppB_029.jpg",
+      "sha256": "b7e8a93fcad69d93396f795e00b57734aa34bc2d754135bbaf7db1f1c402af15",
+      "observed": "Actually inspected a four-column self-assessment grid. Header cells readIcan…,Confidently,Withsomehelp,andNo-Idon'tgetit. Rows are add/subtract decimals,multiply decimals,divide decimals,and use decimals in money applications. Bengali alt covers every row/column and does not claim translated pixels."
+    }
+  ],
+  "answer_verification": [
+    {"exercise":"fs-id2907169","check":"16.92+7.56=24.48","source_answer":"24.48"},
+    {"exercise":"fs-id1987891","check":"256.37−85.49=170.88","source_answer":"170.88"},
+    {"exercise":"fs-id2777727","check":"21.76−30.99=−9.23","source_answer":"−9.23"},
+    {"exercise":"fs-id1751830","check":"37.5+12.23=49.73","source_answer":"49.73"},
+    {"exercise":"fs-id1969744","check":"−16.53−24.38=−40.91","source_answer":"−40.91"},
+    {"exercise":"fs-id2817606","check":"−38.69+31.47=−7.22","source_answer":"−7.22"},
+    {"exercise":"fs-id2750655","check":"−4.2+(−9.3)=−13.5","source_answer":"−13.5"},
+    {"exercise":"fs-id1858205","check":"100−64.2=35.8","source_answer":"35.8"},
+    {"exercise":"fs-id2199641","check":"72.5−100=−27.5","source_answer":"−27.5"},
+    {"exercise":"fs-id2170244","check":"15+0.73=15.73","source_answer":"15.73"},
+    {"exercise":"fs-id1259195","check":"2.51+40=42.51","source_answer":"42.51"},
+    {"exercise":"fs-id1394450","check":"91.75−(−10.462)=102.212","source_answer":"102.212"},
+    {"exercise":"fs-id4315456","check":"55.01−3.7=51.31","source_answer":"51.31"},
+    {"exercise":"fs-id1547707","check":"2.51−7.4=−4.89","source_answer":"−4.89"},
+    {"exercise":"fs-id2620287","check":"0.3×0.4=0.12","source_answer":"0.12"},
+    {"exercise":"fs-id1684274","check":"0.24×0.6=0.144","source_answer":"0.144"},
+    {"exercise":"fs-id1862514","check":"5.9×7.12=42.008","source_answer":"42.008"},
+    {"exercise":"fs-id1732775","check":"8.52×3.14=26.7528","source_answer":"26.7528"},
+    {"exercise":"fs-id3400237","check":"−4.3×2.71=−11.653","source_answer":"−11.653"},
+    {"exercise":"fs-id2856177","check":"−5.18×−65.23=337.8914","source_answer":"337.8914"},
+    {"exercise":"fs-id2389754","check":"0.09×24.78=2.2302","source_answer":"2.2302"},
+    {"exercise":"fs-id1327969","check":"0.06×21.75=1.305","source_answer":"1.305"},
+    {"exercise":"fs-id1919318","check":"9.24×10=92.4","source_answer":"92.4"},
+    {"exercise":"fs-id1547505","check":"55.2×1,000=55,200","source_answer":"55,200"},
+    {"exercise":"fs-id1731264","check":"0.15÷5=0.03","source_answer":"0.03"},
+    {"exercise":"fs-id2976783","check":"4.75÷25=0.19","source_answer":"0.19"},
+    {"exercise":"fs-id1279188","check":"$8.49÷12=$0.7075; nearest cent=$0.71","source_answer":"$0.71"},
+    {"exercise":"fs-id2314709","check":"$117.25÷48=$2.44270833…; nearest cent=$2.44","source_answer":"$2.44"},
+    {"exercise":"fs-id4433565","check":"0.6÷0.2=3","source_answer":"3"},
+    {"exercise":"fs-id1484725","check":"1.44÷(−0.3)=−4.8","source_answer":"−4.8"},
+    {"exercise":"fs-id2828990","check":"−1.75÷(−0.05)=35","source_answer":"35"},
+    {"exercise":"fs-id1302613","check":"5.2÷2.5=2.08","source_answer":"2.08"},
+    {"exercise":"fs-id2894476","check":"12÷0.08=150","source_answer":"150"},
+    {"exercise":"fs-id2276526","check":"11÷0.55=20","source_answer":"20"},
+    {"exercise":"fs-id2418764","check":"6×(12.4−9.2)=6×3.2=19.2","source_answer":"19.2"},
+    {"exercise":"fs-id2170080","check":"24×0.5+0.3²=12+0.09=12.09","source_answer":"12.09"},
+    {"exercise":"fs-id1224556","check":"1.15×(26.83+1.61)=1.15×28.44=32.706","source_answer":"32.706"},
+    {"exercise":"fs-id1166761303554","check":"$45+0.08×$45=$48.60; source keeps cents zero","source_answer":"$48.60"},
+    {"exercise":"fs-id2434603","check":"18÷(0.75+0.15)=18÷0.9=20","source_answer":"20"},
+    {"exercise":"fs-id3230975","check":"(1.43+0.27)÷(0.9−0.05)=1.70÷0.85=2","source_answer":"2"},
+    {"exercise":"fs-id1166761237483","check":"[$75.42+0.18×$75.42]÷5=$17.79912; nearest cent=$17.80","source_answer":"$17.80"},
+    {"exercise":"fs-id1566235","check":"$40−$15.11=$24.89","source_answer":"$24.89"},
+    {"exercise":"fs-id2420881","check":"$18.49+$8.92+$1.65=$29.06","source_answer":"$29.06"},
+    {"exercise":"fs-id2784241","check":"$4.29−2×$0.55=$3.19","source_answer":"$3.19"},
+    {"exercise":"fs-id2668877","check":"190−4.3−2.8+0.7−1.9=181.7pounds","source_answer":"181.7 pounds"},
+    {"exercise":"fs-id1767321","check":"4×$3.75=$15.00; source keeps cents zeros","source_answer":"$15.00"},
+    {"exercise":"fs-id1960883","check":"32×$9.25=$296.00; source keeps cents zeros","source_answer":"$296.00"},
+    {"exercise":"fs-id1620296","check":"$382.50÷30=$12.75","source_answer":"$12.75"},
+    {"exercise":"fs-id2264374","check":"$6÷2=$3;$6÷3=$2;$6÷4=$1.50;$6÷5=$1.20;$6÷6=$1","source_answer":"ⓐ$3 ⓑ$2 ⓒ$1.50 ⓓ$1.20 ⓔ$1"},
+    {"exercise":"fs-id1906078","check":"4×$3.29+2×$2.74=$13.16+$5.48=$18.64","source_answer":"$18.64"},
+    {"exercise":"fs-id2603438","check":"4×$29.95+7×$19.95=$119.80+$139.65=$259.45","source_answer":"$259.45"},
+    {"exercise":"fs-id2455422","check":"ⓐ8×$14.04+15×$8.75=$112.32+$131.25=$243.57;ⓑ23×$14.04−$243.57=$322.92−$243.57=$79.35","source_answer":"ⓐ$243.57 ⓑ$79.35"},
+    {"exercise":"fs-id3429711","check":"1min30.65s−1min30.62s=0.03seconds=threehundredthsofasecond","source_answer":"The difference: 0.03 seconds. Three hundredths of a second."}
+  ],
+  "source_solution_exercise_ids": [
+    "fs-id2907169", "fs-id1987891", "fs-id2777727", "fs-id1751830", "fs-id1969744", "fs-id2817606", "fs-id2750655", "fs-id1858205", "fs-id2199641", "fs-id2170244", "fs-id1259195", "fs-id1394450", "fs-id4315456", "fs-id1547707", "fs-id2620287", "fs-id1684274", "fs-id1862514", "fs-id1732775", "fs-id3400237", "fs-id2856177", "fs-id2389754", "fs-id1327969", "fs-id1919318", "fs-id1547505", "fs-id1731264", "fs-id2976783", "fs-id1279188", "fs-id2314709", "fs-id4433565", "fs-id1484725", "fs-id2828990", "fs-id1302613", "fs-id2894476", "fs-id2276526", "fs-id2418764", "fs-id2170080", "fs-id1224556", "fs-id1166761303554", "fs-id2434603", "fs-id3230975", "fs-id1166761237483", "fs-id1566235", "fs-id2420881", "fs-id2784241", "fs-id2668877", "fs-id1767321", "fs-id1960883", "fs-id1620296", "fs-id2264374", "fs-id1906078", "fs-id2603438", "fs-id2455422", "fs-id3429711"
+  ],
+  "source_absent_solution_exercise_ids": [
+    "fs-id1474917", "fs-id1863184", "fs-id1730509", "fs-id2144784", "fs-id1631318", "fs-id1519567", "fs-id1502824", "fs-id3218223", "fs-id4363730", "fs-id2214966", "fs-id1943190", "fs-id2206327", "fs-id2684886", "fs-id1799476", "fs-id2691323", "fs-id1944343", "fs-id1299362", "fs-id1334500", "fs-id1525465", "fs-id4363768", "fs-id3445888", "fs-id2425008", "fs-id2658161", "fs-id4211962", "fs-id2202742", "fs-id2314355", "fs-id1883067", "fs-id1756486", "fs-id4121562", "fs-id1327866", "fs-id1405315", "fs-id1918090", "fs-id1916653", "fs-id2170437", "fs-id2792024", "fs-id1577056", "fs-id1886110", "fs-id2576936", "fs-id2387610", "fs-id2485123", "fs-id2667767", "fs-id1622458", "fs-id1834780", "fs-id3241994", "fs-id3399406", "fs-id1514783", "fs-id1730580", "fs-id1860906", "fs-id1352166", "fs-id3193173", "fs-id1961889", "fs-id2210585", "fs-id2137777"
+  ],
+  "local_checks": {
+    "result": "passed",
+    "source_elements": 1364,
+    "source_ids": 459,
+    "questions": 106,
+    "source_solutions": 53,
+    "source_absent_solutions": 53,
+    "verified_solution_records": 53,
+    "mathml": 163,
+    "linguistic_mtext": 0,
+    "images": 1,
+    "source_errata_count": 0,
+    "method": "Read every source problem/solution pair in order. Recalculate finite decimal operations with exact base-10 arithmetic; evaluate grouping and exponents before outer operations; recompute each application from its original quantities; compare every currency answer at cent precision and record exact pre-rounding values for the three non-cent quotients. Check all parts inside the two multipart supplied solutions. Count solution presence directly from the frozen CNXML and compare the exact53absence-ID set after translation.",
+    "structure": "Shared translated() passes complete authored-text coverage, child-slot counts, unique XPath selection, source element tags, all459IDs/order, nonlinguistic attributes and exact163MathML signatures with no mtext exception.",
+    "rendering": "Section-only builder passes and produces Bengali CNXML plus an offline reader retaining all106exercise boundaries and the one original raster with complete visible Bengali description. Parent owns full browser/assistive-technology review."
+  },
+  "pending": [
+    "Parent integration and full browser review",
+    "Independent West Bengal teacher/language review",
+    "Assistive-technology review of the unchanged English self-check raster plus Bengali alt"
+  ],
+  "scope": "Only the assigned m81295/fs-id1827280 overlay, generated section CNXML/reader/QA receipt and this canon record are owned. No shared script, terminology ledger, module output, coordination file, commit, push, ranking or release action."
+}

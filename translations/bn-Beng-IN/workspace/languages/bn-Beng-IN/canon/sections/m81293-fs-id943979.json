@@ -1,0 +1,233 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81293",
+  "section": "fs-id943979",
+  "resolved_title": "Locate Decimals on the Number Line",
+  "scope": "Entire assigned subtree: both worked examples, all four practice questions, all six supplied solutions and six actual number-line images. No source text, question or supplied solution omitted.",
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR06"
+      ],
+      "read": [
+        "languages/bn-Beng-IN/canon/README.md",
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "languages/bn-Beng-IN/terminology.tsv:T045-T049",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p052.txt",
+        "provenance/modules/m81293.source.cnxml:entirefs-id943979"
+      ],
+      "decision": "Use TR09's actual0.3number-line passage: subdivide0to1into ten equal intervals and count from0. Preserve all trailing zeros in source labels. TR06 supports অবস্থান দেখাও. TR08correct13.49/0.456/123.478/4567.021examples support decimal wording, not the incorrect12.74row. The nonnegative comparison passage is not generalized to negative decimals."
+    },
+    {
+      "stage": "during slot and image-description drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR06"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:1-27",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:16-26",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p052.png",
+        "all six original number-line rasters listed below"
+      ],
+      "decision": "Return to actual decimal reading, equal-interval and number-line instruction witnesses. Confirm2/3in the actual52prompt, not garbled OCR; no negative-decimal local worked witness is claimed. All6source images inspected. The0.4image also contains a separate point labelled0.04nearzero; keep both and warn visibly rather than silently removing unexpected pixels. Do not inherit the English red-color claim."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": [
+        "TR09"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:11-25",
+        "translated subsection prose and exact original source MathML"
+      ],
+      "decision": "Reread the relevant number-line passage after drafting. Check equal interval lengths, numerical directions and distance statements with exact fractions. −0.74is leftof−0.70and closer to it than−0.80;−0.63is leftof−0.60;−0.25is midway between−0.30and−0.20. Source numeral/punctuation nodes remain unchanged; the actual image, not OCR, governs every plotted location."
+    }
+  ],
+  "editorial_decisions": [
+    {
+      "source_ids": [
+        "fs-id2455717"
+      ],
+      "decision": "Qualify the source opening to the actual finite decimals. The localized text does not falsely claim that arbitrary nonrepeating infinite decimals are rational."
+    },
+    {
+      "source_ids": [
+        "fs-id2137203",
+        "fs-id1772457",
+        "fs-id1239432"
+      ],
+      "decision": "Translate exact children+1text/tail slots. Source periods/commas sometimes occur insideMathML; Bengali clauses are arranged around those unchanged boundaries. Preserve source-0.10hyphen and all decimal trailing zeros rather than normalizing mathematical tokens."
+    },
+    {
+      "source_ids": [
+        "fs-id1772457",
+        "fs-id2646906"
+      ],
+      "decision": "Unexpected source0.04label nearzero is described as a separate, non-answer point. Initial inspection did not quantify its position. While translating the next ordering section, read-only pixel measurement found a scale-position mismatch; that subsequent finding is mirrored here without editing the image. Correct requested0.4point remains identified."
+    },
+    {
+      "source_ids": [
+        "fs-id1799222",
+        "fs-id1830120",
+        "fs-id1609078"
+      ],
+      "decision": "Use position and exact distances in Bengali descriptions, not color-dependent identification. Positive interval lengths0.10are distinct from negative coordinate labels. Added distances are equivalent readings of the correct plotted solutions, not replacement answers."
+    },
+    {
+      "source_ids": [
+        "fs-id1811476",
+        "fs-id2754517",
+        "fs-id1605603",
+        "fs-id1741332"
+      ],
+      "decision": "Retain all four original practice-solution rasters and source IDs. No blank or absent source solution exists in this subsection; none is manufactured."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_image_position_mismatch",
+      "source_ids": [
+        "fs-id1772457",
+        "fs-id2646906"
+      ],
+      "source_issue": "The point labelled0.04is drawn near0.031on the image scale, although its label and the relation0.40>0.04are correct.",
+      "evidence": "Actual010_img.jpg inspected. Read-only pixel analysis of900×64original:zero tickx31,0.1tickx114; first teal pointx52–61(center56.5). This places its center at about0.0307; a0.04point would havecenterx64.2. No image written or edited.",
+      "bengali_correction": "0.04 লেখা বিন্দুটি মূল ছবিতে কিছুটা বামে আঁকা। সঠিক স্থান শূন্যের ডান দিকে চার শতাংশ দূরে, অর্থাৎ 0.0 থেকে 0.1-এর ব্যবধানের চার-দশমাংশ দূরে। 0.40 > 0.04 তুলনাটি সঠিক।",
+      "policy": "Preserve original label and pixels; describe the source discrepancy and correct mathematical position in a labelled warning, not a silently redrawn answer.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "fs-id2455717"
+      ],
+      "source_issue": "The opening assertion that decimals are forms of fractions is unqualified. The section uses finite decimals; arbitrary nonrepeating infinite decimal expansions are not rational fractions.",
+      "bengali_correction": "এখানকার সসীম দশমিকগুলিকে ভগ্নাংশে লেখা যায়; সব অসীম দশমিকের ক্ষেত্রে এই দাবি করা হচ্ছে না।",
+      "policy": "Limit the opening to the actual finite-decimal examples and add a labelled caution; preserve all source math and examples.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_image_anomaly",
+      "source_ids": [
+        "fs-id1772457",
+        "fs-id2646906"
+      ],
+      "source_issue": "The source image for locating0.4also contains an additional point near zero labelled0.04. This extra point is not explained in the source prose and is omitted from its English alt.",
+      "evidence": "Directly inspected CNX_BMath_Figure_05_01_010_img.jpg: intended point at0.4plus a second point between0.0and0.1labelled0.04. Initial visual inspection did not quantify the extra point; subsequent read-only pixel measurement is recorded separately.",
+      "bengali_correction": "মূল ছবির অতিরিক্ত 0.04 লেখা বিন্দুটি প্রশ্নের উত্তর 0.4 নয়; 0.4-এর সঠিক বিন্দু আলাদা করে চিহ্নিত আছে।",
+      "policy": "Retain both original points and all pixels. Describe both in Bengali alt and add a visible labelled warning; do not silently remove or replace the unexpected source content.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "fs-id2646906",
+        "fs-id1799222"
+      ],
+      "source_issue": "The English alts call the plotted points red; the actual images use teal points.",
+      "evidence": "Directly inspected CNX_BMath_Figure_05_01_010_img.jpg and007_img.jpg.",
+      "bengali_correction": "রঙের উপর নির্ভর না করে বিন্দুর মান, দিক ও অবস্থান বর্ণনা করা হয়েছে।",
+      "policy": "Omit the incorrect color claim and describe mathematical position; preserve source pixels.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {
+      "file": "CNX_BMath_Figure_05_01_010_img.jpg",
+      "observed": "Actualwideimageviewed.0.0to1.0labels in0.1steps; correct point at0.4. Extra teal point between0and0.1labelled0.04, absentfromEnglishalt. Bothpoints preserved. Later shared-image pixel check is recorded in source_image_position_mismatch."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_005_img.jpg",
+      "observed": "Actualimageviewed.0.0to1.0labels in0.1steps, correct point on0.6."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_006_img.jpg",
+      "observed": "Actualimageviewed.0.0to1.0labels in0.1steps, correct point on0.9."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_007_img.jpg",
+      "observed": "Actualwideimageviewed.−1.00to0.00labels in0.10steps; correct point labelled−0.74between−0.80and−0.70, closer to−0.70. Pointteal,notred."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_008_img.jpg",
+      "observed": "Actualimageviewed.−1.00to0.00with0.10tickspacing; point labelled−0.63between−0.70and−0.60, closer to−0.60."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_009_img.jpg",
+      "observed": "Actualimageviewed.−1.00to0.00with0.10tickspacing; point labelled−0.25midway between−0.30and−0.20."
+    }
+  ],
+  "answer_checks": [
+    {
+      "exercise_id": "fs-id2719254",
+      "solution_id": "fs-id2423115",
+      "check": "Source0.4=4/10; target point is four0.1intervals right of0. Actual raster's requested point correct, with separately warned extraneous0.04label."
+    },
+    {
+      "exercise_id": "fs-id1811476",
+      "solution_id": "fs-id1594790",
+      "check": "Source0.6question and actual solution point matched; six0.1intervals right of0."
+    },
+    {
+      "exercise_id": "fs-id2754517",
+      "solution_id": "fs-id2646971",
+      "check": "Source0.9question and actual solution point matched; nine0.1intervals right of0."
+    },
+    {
+      "exercise_id": "fs-id1166761338187",
+      "solution_id": "fs-id1727002",
+      "check": "Source−0.74=−74/100. Exact−0.80<−0.74<−0.70; distances0.06and0.04respectively. Actual supplied point agrees."
+    },
+    {
+      "exercise_id": "fs-id1605603",
+      "solution_id": "fs-id2711423",
+      "check": "Source−0.63question and actualpoint agree. Exact−0.70<−0.63<−0.60; distances0.07and0.03respectively."
+    },
+    {
+      "exercise_id": "fs-id1741332",
+      "solution_id": "fs-id2398130",
+      "check": "Source−0.25question and actualpoint agree. Exact−0.30<−0.25<−0.20; distance0.05fromeachboundary."
+    }
+  ],
+  "language_gaps": [
+    "TR09 directly attests positive-decimal number-line placement, not the negative-decimal worked cases. TR06 attests a fraction-placement prompt only. Negative coordinate/distance wording is editorial and mathematically checked; no invented local negative-decimal exemplar is claimed.",
+    "Independent West Bengal language, teacher, learner and assistive-technology validation remains pending. No curriculum certification is claimed."
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "b4baac2cc2380059763ac7b4a6713ff472542ef8a66f8a51cadc966cba021f5c",
+    "method": "Read-only build.translated and in-memory render_cnxml(study_labels=True) passed exact tags/IDs/order/nonlocalized attributes/MathML and English-prose gate. All6question values and solutionIDrelationships parsed from source XML and checked against direct image inspection. Exact rational equalities, positions and distances checked;0.0=0and1.0=1retained. HTMLIDs unique. No pixel editing, new images, shared-script or generated-output writes.",
+    "nodes": 176,
+    "ids": 45,
+    "mathml": 33,
+    "paragraphs": 14,
+    "paragraph_mappings": 10,
+    "examples": 2,
+    "exercises": 6,
+    "supplied_solutions": 6,
+    "source_absent_solutions": 0,
+    "images": 6,
+    "unique_images_actually_inspected": 6,
+    "links": 0,
+    "html_fragment_characters": 10113,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent builds and checks desktop/narrow page. Request next uncompleted source block and continue safe owned verification meanwhile; the entire assignment remains active. No independent publishing or production release.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending",
+  "followup_image_check": {
+    "stage": "during subsequent OrderDecimals source comparison",
+    "date": "2026-08-31",
+    "discovery": "The same010image intentionally compares0.04and0.4infs1516840. Pixel center56.5versusticks31and114places the first point around0.0307, not0.04. Added a labelled source-scale warning to both sections. Original pixels and correct0.4answer unchanged.",
+    "canon": "ActualTR09p58numberline passage already reread for the ordering block: equal intervals define the scale; no new or invented exemplar."
+  }
+}

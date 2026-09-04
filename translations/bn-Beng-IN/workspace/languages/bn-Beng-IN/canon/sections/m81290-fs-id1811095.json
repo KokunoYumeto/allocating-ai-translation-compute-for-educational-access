@@ -1,0 +1,51 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81290",
+  "section": "fs-id1811095",
+  "source_sha256": "96985df586080ae5e52b870320d310a6061a0c00c5d1699e58a024e55bdba005",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR01",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "SCERT-Tripura-VI/p050.txt",
+        "SCERT-Tripura-VI/p050.png",
+        "SCERT-Tripura-VI/p051.txt",
+        "SCERT-Tripura-VI/p051.png"
+      ],
+      "action": "Main opened full actual OCR and page images before this six-block metadata/readiness/summary batch. TR01 explicitly defines a mixed fraction as a whole number plus a proper fraction; use ledger মিশ্র ভগ্নাংশ consistently. TR02/TR03 guide equivalence and simplest-form register. Exclude the p51 printed intermediate denominator3 in the separate5 3/7 conversion; do not copy that fault."
+    },
+    {
+      "stage": "during translation",
+      "examples": [
+        "TR01",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "SCERT-Tripura-VI/p050.txt: mixed-fraction passage reread",
+        "SCERT-Tripura-VI/p051.txt: equivalence/simplest-form passages reread"
+      ],
+      "action": "Returned to actual OCR passages against the viewed pages while choosing objectives, conversion case endings and summary wording. Distinguish the intermediate whole-plus-improper-fraction regrouping from the final proper fractional part. Keep same-denominator operations and numerator-only subtraction explicit. Source keys, MathML, IDs, list order, newline children and cross-references stay intact."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": [
+        "TR01",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "SCERT-Tripura-VI/p050.txt: mixed-fraction definition reread",
+        "SCERT-Tripura-VI/p051.txt: numerator/denominator and simplest-form reread"
+      ],
+      "action": "Reread actual passages after overlay drafting, then ran the shared exact structure/MathML/text gate on all six blocks. Exact readiness checks7/3=2+1/3,11/4=2+3/4,3+1/2=7/2 pass. Regrouping identity w+a/d=(w−1)+(d+a)/d passes770 finite cases(d2..12,a0..d−1,w1..10); this is a regression, not a proof of every teaching context. Equality of fractional parts can skip regrouping; that qualification is visibly labelled. Main inspected the actual206_img bitmap: two fully shaded thirds-divided circles and one shaded third, not seven separate wholes."
+    }
+  ],
+  "source_clarifications": [],
+  "independent_teacher_language_learner_and_assistive_technology_review": "pending"
+}

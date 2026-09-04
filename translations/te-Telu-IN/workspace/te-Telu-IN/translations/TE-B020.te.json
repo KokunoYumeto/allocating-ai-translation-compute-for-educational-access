@@ -1,0 +1,46 @@
+{
+  "schema": "te-cnxml-unit-localization-v2",
+  "purpose": "Human-reviewable Telugu translation of m81244's exact remaining module opening and glossary; never model training or fine-tuning data.",
+  "locale": "te-Telu-IN",
+  "unit_id": "TE-B020",
+  "module_id": "m81244",
+  "section_id": "@module-remainder",
+  "source_commit": "38cae454e644abf9f0a623e876994553881597c9",
+  "expected_text_slot_count": 12,
+  "editorial_title_te": "పాఠభాగపు ప్రారంభం, పదకోశం: పూర్ణాంకాలను కలపడం",
+  "editorial_title_en": "Module opening and glossary: Add Whole Numbers",
+  "editorial_title_is_source_content": false,
+  "protected_slots": {
+    "s002": {
+      "tag": "{http://cnx.rice.edu/mdml}content-id",
+      "value": "m81244",
+      "reason": "Canonical module identifier; not prose."
+    },
+    "s010": {
+      "tag": "{http://cnx.rice.edu/mdml}uuid",
+      "value": "8069044b-6fb1-49bf-b03a-64988f9b1ddd",
+      "reason": "Canonical module UUID; not prose."
+    }
+  },
+  "editorial_notes": [
+    "The frozen remainder is exactly19elements/12slots: original document wrapper, title, complete metadata/five-objective opening, empty retained content wrapper and complete one-definition glossary. The nine source lesson subtrees already frozen as TE-B011–TE-B019 are intentionally absent and must not be duplicated here.",
+    "Handle all12 slots: localize ten prose slots and preserve protected s002 content-id m81244 and s010 UUID byte-exact. Preserve every source ID, attribute, element and child order; the content wrapper remains empty in this partition.",
+    "Read the complete actual canonical English and Indonesian module opening/glossary. Both give the same title, five objectives and definition: sum is the result of adding two or more numbers. Indonesian is comparison evidence only, not a Telugu authority.",
+    "At this B020 stage reread actual TS6 PDF26/printed16 and PDF27/printed17 OCR before inspecting both complete images. They directly witness పూర్ణాంకాలు for whole numbers and సంకలనం for addition, including visible2+3=5. They do not directly establish a formal Telugu glossary equivalent for sum.",
+    "Use the existing course-functional label మొత్తం (sum), already defined in B013/B018 as the result name, without claiming official Telangana/AP terminology. The glossary meaning distinguishes inputs from the resulting sum and does not add a computed example to source prose.",
+    "Keep objective wording aligned with B013–B017 and B019: notation, model, model-free addition, word-phrase-to-notation and applications are distinct skills. The small original bridge only explains the partition, routes those five objectives to existing lessons and clarifies the glossary label; it adds no exercise bank or score.",
+    "Complete source-freeze coverage of m81244 was proven separately in TE-B020.preparation.md. Translation of this remainder does not by itself claim that all unit translations, reviews, generated readers, A00 or the wider commission are complete."
+  ],
+  "translations": {
+    "s001": "పూర్ణాంకాలను కలపడం",
+    "s003": "పూర్ణాంకాలను కలపడం",
+    "s004": "ఈ పాఠభాగం పూర్తయ్యేసరికి మీరు చేయగలిగేవి:",
+    "s005": "సంకలనాన్ని చిహ్నాలతో రాయడం",
+    "s006": "పూర్ణాంకాల సంకలనాన్ని నమూనాలతో చూపడం",
+    "s007": "నమూనాలు లేకుండా పూర్ణాంకాలను కలపడం",
+    "s008": "మాటల్లో ఇచ్చినదాన్ని గణిత సంకేతాలతో రాయడం",
+    "s009": "జీవిత సందర్భాల సమస్యల్లో పూర్ణాంకాలను కలపడం",
+    "s011": "మొత్తం (sum)",
+    "s012": "రెండు లేదా అంతకంటే ఎక్కువ సంఖ్యలను కలిపితే వచ్చే ఫలితమే మొత్తం."
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81293",
+  "section": "fs-id2200477",
+  "date": "2026-08-31",
+  "source_title": "Name Decimals",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81293.source.cnxml",
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "overlay_sha256": "4df4b2d145147ea879ab008214fb72d7b0a358ade1d41f07b61a8db55bca43c8",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09"
+      ],
+      "read": [
+        "Actual module title Decimals and complete top-level section inventory",
+        "Actual complete430-element assigned CNXML including all12 worked/try parts and3source images",
+        "Complete actual p057/p058 OCR and both page images; current20-exemplar canon and49-term ledger",
+        "All3original raster images: lunch addition,12-column place-value chart and sample check"
+      ],
+      "action": "Identify directly witnessed Bengali digit-by-digit decimal reading, retaining zeros. Do not copy p057's incorrectly shifted12.74 row; use the correct13.49 explanation and0.456/123.478/4567.021 rows. Keep original English place-value naming as an explicit explanatory alternate, coordinated with parent."
+    },
+    {
+      "stage": "during drafting",
+      "examples": [
+        "TR08",
+        "TR09"
+      ],
+      "read": [
+        "Actual complete p057/p058 OCR again",
+        "All paragraph mixed-content slots,83table cells,14listitems and11mtext values",
+        "Source12decimal parts and their original place-value answers"
+      ],
+      "action": "Use দশমিক সংখ্যা,দশমিক বিন্দু,দশাংশ,শতাংশ,সহস্রাংশ. Explain শতাংশ as one-hundredth place value, not a separate percent-rate discussion. Add ordinary Bengali decimal readings alongside source-style whole-and-fraction readings. Explain signed magnitude and zeros explicitly."
+    },
+    {
+      "stage": "pre-integration QA",
+      "examples": [
+        "TR08",
+        "TR09"
+      ],
+      "read": [
+        "Actual complete p057/p058 page images again, including correct rows and digit readings",
+        "Saved overlay and pinned source hashes",
+        "All44MathML with exact rational evaluation, all12text answers checked against digit sequence and signed fractional value",
+        "In-memory7accessible tables,3visible image descriptions,7links,14listitems and49IDs"
+      ],
+      "action": "No definite source math/image fault found. All12original worked/practice answers are correct. Preserve original44MathML except the one expressly allowlisted linguistic mtext; no image pixels altered. Verify all zeros in0.009/0.018/0.005/−2.053 remain spoken in Bengali."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "two decimal reading conventions",
+      "affected_locations": [
+        "fs-id1357626",
+        "eip-363",
+        "fs-id2031490",
+        "fs-id1960628",
+        "all4worked tables",
+        "both try-answer lists"
+      ],
+      "decision": "The actual Bengali witness reads digits after দশমিক individually. Source English uses whole-number and fractional-place names. Parent approved retaining the latter explicitly as an alternate rather than misrepresenting English and as the ordinary Bengali decimal-point word. Give both readings for every12worked/try part; preserve the source's step sequence."
+    },
+    {
+      "topic": "zero and negative sign",
+      "affected_locations": [
+        "eip-id1168469507978",
+        "eip-id1168469769355",
+        "eip-id1168468230437",
+        "eip-id1168467163807"
+      ],
+      "decision": "Source0.009 may omit whole-part zero only in the alternate nine-thousandths reading; Bengali digit reading remains শূন্য দশমিক শূন্য শূন্য নয়. Negative decimals use ঋণাত্মক before the full reading and explain the opposite of the entire whole-plus-fraction sum, not negative whole plus positive fraction. All embedded zeros remain."
+    },
+    {
+      "topic": "finite scope and powers of ten",
+      "affected_locations": [
+        "fs-id1730944",
+        "fs-id2474612"
+      ],
+      "decision": "Make the finite-decimal scope explicit and describe partitioning a whole into10,100,1000… equal parts. Clarify the source's compressed whole-is-a-power-of-ten wording as the number of equal parts/denominator, not a requirement on the magnitude of the object. This is a scope clarification, not claimed as a definite source numerical erratum. Preserve everyoriginalpower/fraction."
+    },
+    {
+      "topic": "place names",
+      "affected_locations": [
+        "fs-id2474612",
+        "fs-id2762483",
+        "fs-id1852418"
+      ],
+      "decision": "TR08 directly witnesses দশাংশ/শতাংশ/সহস্রাংশ. Use transparent editorial descriptions দশ হাজার ভাগের এক ভাগ and এক লক্ষ ভাগের এক ভাগ for higher places; do not falsely claim local exact-term witnesses. Explicitly distinguish one thousand from one thousandth and the asymmetric tens/tenths positions around the units column."
+    },
+    {
+      "topic": "currency and raster meaning",
+      "affected_locations": [
+        "fs-id1919354",
+        "fs-id2430784",
+        "fs-id1523908",
+        "all3media",
+        "bothcaptions"
+      ],
+      "decision": "Retain the original USdollar context; explain $ and the one-cent penny rather than converting to rupees or current exchange rates. Read original3.45+1.25+0.33=5.03,5dollars+3pennies=5.03,1penny=1/100dollar, and sample-check152.65=152+65/100dollars. Describe the actual12-column chart and fraction bars using লব/হর."
+    },
+    {
+      "topic": "linguistic MathML exception",
+      "affected_locations": [
+        "fs-id1523908/m:math[1]/m:mrow/m:mtext[1]"
+      ],
+      "decision": "Only source mtext100 pennies changes to100 পেনি under the approved text-localization allowlist. The number100 is retained. Other10currency-only mtext nodes, allmncontent, alloperators, structures, IDs and nonlinguistic attributes remain exact; builder reverses the single allowlist substitution before asserting MathML equality."
+    },
+    {
+      "topic": "witness limitations",
+      "affected_locations": [
+        "alltranslatedtext"
+      ],
+      "decision": "TR08/09 are supplementary Indian Bengali references, not West Bengal certification. Read OCR with images; reject p057's first12.74 row, which actually positions1/2/7/4 in thousands/hundreds/tens/ones. Do not treat its nonnegative comparison prose as a signed-number rule. No copied canon pages or training-data use."
+    }
+  ],
+  "source_errata": [],
+  "image_checks": [
+    {
+      "file": "CNX_BMath_Figure_05_01_002_img.jpg",
+      "observed": "Actually inspected vertical aligned decimals: sandwich$3.45,water$1.25,tax$0.33,total$5.03. Exact additionchecked."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_002-8276.jpg",
+      "observed": "Actually inspected12columns:left100000,10000,1000,100,10,1;decimalpoint;righttenths,hundredths,thousandths,ten-thousandths,hundred-thousandths. AlloriginalEnglishpixels retained with complete Bengali visible description."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_003.jpg",
+      "observed": "Actually inspected sample check payable toJaneDoe,amount$152.65,wordsOne hundred fifty two and65/100 dollars. Numeral/fraction values match. Names,signature and incidentalprintednumbers unchanged."
+    }
+  ],
+  "local_checks": {
+    "result": "passed",
+    "answers": [
+      {
+        "source": "4.3",
+        "Bengali_reading": "চার দশমিক তিন",
+        "whole_magnitude": 4,
+        "fraction_numerator": 3,
+        "fraction_denominator": 10,
+        "signed_value": "43/10"
+      },
+      {
+        "source": "2.45",
+        "Bengali_reading": "দুই দশমিক চার পাঁচ",
+        "whole_magnitude": 2,
+        "fraction_numerator": 45,
+        "fraction_denominator": 100,
+        "signed_value": "49/20"
+      },
+      {
+        "source": "0.009",
+        "Bengali_reading": "শূন্য দশমিক শূন্য শূন্য নয়",
+        "whole_magnitude": 0,
+        "fraction_numerator": 9,
+        "fraction_denominator": 1000,
+        "signed_value": "9/1000"
+      },
+      {
+        "source": "−15.571",
+        "Bengali_reading": "ঋণাত্মক পনেরো দশমিক পাঁচ সাত এক",
+        "whole_magnitude": 15,
+        "fraction_numerator": 571,
+        "fraction_denominator": 1000,
+        "signed_value": "-15571/1000"
+      },
+      {
+        "source": "6.7",
+        "Bengali_reading": "ছয় দশমিক সাত",
+        "whole_magnitude": 6,
+        "fraction_numerator": 7,
+        "fraction_denominator": 10,
+        "signed_value": "67/10"
+      },
+      {
+        "source": "19.58",
+        "Bengali_reading": "উনিশ দশমিক পাঁচ আট",
+        "whole_magnitude": 19,
+        "fraction_numerator": 58,
+        "fraction_denominator": 100,
+        "signed_value": "979/50"
+      },
+      {
+        "source": "0.018",
+        "Bengali_reading": "শূন্য দশমিক শূন্য এক আট",
+        "whole_magnitude": 0,
+        "fraction_numerator": 18,
+        "fraction_denominator": 1000,
+        "signed_value": "9/500"
+      },
+      {
+        "source": "−2.053",
+        "Bengali_reading": "ঋণাত্মক দুই দশমিক শূন্য পাঁচ তিন",
+        "whole_magnitude": 2,
+        "fraction_numerator": 53,
+        "fraction_denominator": 1000,
+        "signed_value": "-2053/1000"
+      },
+      {
+        "source": "5.8",
+        "Bengali_reading": "পাঁচ দশমিক আট",
+        "whole_magnitude": 5,
+        "fraction_numerator": 8,
+        "fraction_denominator": 10,
+        "signed_value": "29/5"
+      },
+      {
+        "source": "3.57",
+        "Bengali_reading": "তিন দশমিক পাঁচ সাত",
+        "whole_magnitude": 3,
+        "fraction_numerator": 57,
+        "fraction_denominator": 100,
+        "signed_value": "357/100"
+      },
+      {
+        "source": "0.005",
+        "Bengali_reading": "শূন্য দশমিক শূন্য শূন্য পাঁচ",
+        "whole_magnitude": 0,
+        "fraction_numerator": 5,
+        "fraction_denominator": 1000,
+        "signed_value": "1/200"
+      },
+      {
+        "source": "−13.461",
+        "Bengali_reading": "ঋণাত্মক তেরো দশমিক চার ছয় এক",
+        "whole_magnitude": 13,
+        "fraction_numerator": 461,
+        "fraction_denominator": 1000,
+        "signed_value": "-13461/1000"
+      }
+    ],
+    "overlay_sha256": "4df4b2d145147ea879ab008214fb72d7b0a358ade1d41f07b61a8db55bca43c8",
+    "source_ids": 49,
+    "paragraphs": 13,
+    "nodes": 74,
+    "all_mathml": 44,
+    "images": 3,
+    "tables": 7,
+    "links": 7,
+    "list_items": 14,
+    "source_solutions": 3,
+    "method": "Exact Fraction evaluation of every44MathML; commas/currency signs handled without changing source nodes.100pennies evaluated in dollar units as1dollar. Verify every12decimalpart's exact digit sequence, final-place denominator and sign; independently compare native Bengali reading to digit-by-digit expansion and original place-value answer. Check4decimal/fraction rowequalities and all5powers-of-ten rows. Actual3raster meanings checked.",
+    "source_elements": 430,
+    "source_mtext": 11,
+    "localized_linguistic_mtext": 1,
+    "unchanged_currency_mtext": 10,
+    "source_errata_count": 0,
+    "structure": "Shared translated() passes fullcoverage/noauthoredEnglish, children+1slots/uniquepaths, sourceIDs/order/nonlinguistic attrs and allowlist-normalized MathML equality.",
+    "rendering": "Read-only in-memory HTML retains49IDs,44MathML,3images+3visible descriptions,7accessible tables,7links,14listitems;4emphasis plus2terms renderas6strongnodes. Parent owns finalbrowser review."
+  },
+  "pending": [
+    "Parent integration/browser review",
+    "Independent West Bengal teacher/language review of dual reading convention and higher place descriptions",
+    "Assistive-technology review"
+  ],
+  "scope": "Only assigned overlay+canon record edited with apply_patch; no downloads/media copies/shared edits/deletions/commits. Continue assigned m81293/fs-id1301760 Write Decimals immediately; entire assignment ongoing."
+}

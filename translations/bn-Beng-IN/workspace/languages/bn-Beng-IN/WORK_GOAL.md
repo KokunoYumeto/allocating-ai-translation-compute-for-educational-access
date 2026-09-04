@@ -19,3 +19,7 @@ Maintain 10–20 actual readable target-language exemplars, not just canonical O
 ## User instruction — entire assignment, verbatim
 
 [Operational message omitted from public export; full-assignment and continual canon-consultation requirements remain in the project workflow.]
+
+## 2026-08-31 publication authority update
+
+The user has now authorized the coordinator to maintain one GitHub review branch containing actual translation snapshots, codex/additional-translations-review, with an hourly management heartbeat and upstream research/Indonesian backend checks. Main read the actual current user message in the coordinating task. This supersedes the earlier coordinator-only export scope, but not the entire translation goal, source pins or pending review boundaries. The coordinator owns publication and upstream-change distribution; this language task supplies consistent local checkpoints and export-critical dependency/privacy warnings, without a separate lane push, main merge or final production release. Private root operational instructions and raw chats must not be exported. Preserve active drafts; a working-tree snapshot must not be called a validated hash-consistent checkpoint while its inputs are being changed.

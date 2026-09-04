@@ -1,0 +1,80 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81293",
+  "section": "fs-id1960663",
+  "scope": "Entire first readiness note: prompt, cross-module routing and supplied international-name solution, plus labelled Indian equivalent reading.",
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR10",
+        "TR11"
+      ],
+      "read": [
+        "languages/bn-Beng-IN/canon/README.md",
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "languages/bn-Beng-IN/terminology.tsv:T045-T052",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt"
+      ],
+      "decision": "Actualp8supports Indian/international naming: retain source international comma grouping and add labelled Indian equivalent. Actualp9islexical আসন্নমান witnessandprints4117→4100/4000;OCR40900excluded. TR08/09supportdecimalplacesand ordinary Bengali digit-by-digit reading,not universal tie rules."
+    },
+    {
+      "stage": "during drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR10",
+        "TR11"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.txt:27-40",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.txt:3-9",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:4-24"
+      ],
+      "decision": "Returntoactualname,estimationanddecimal-readingwitnesseswhiletranslating. Preserve zerosandsource numbers. English‘and’decimal naming is labelled as a source-language alternative beside ordinary Bengali‘দশমিক’digitreading. No local negative-rounding or tie exemplar fabricated."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": [
+        "TR09",
+        "TR10",
+        "TR11"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.txt:31-39",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.txt:3-8",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:4-11",
+        "exact source subtree and built Bengali output"
+      ],
+      "decision": "RereadonlyrelevantOCRanchorsafterdraft; actualpageimages alreadycontrol numerictruth. Check exact child counts,order,IDs,links,answersandMathMLthroughread-onlygate. Indian4,926,015readingand748→750verified; keyconditionsmatchfullycheckedinstructionalblocks."
+    }
+  ],
+  "source_errata": [],
+  "checks": [
+    "Exact source4,926,015preserved. International words equal4million+926thousand+15. Indian grouping49,26,015equals49lakh+26thousand+15; both total4,926,015. Source international answer retained; Indian reading is a labelled equivalent addition."
+  ],
+  "language_gaps": [
+    "TR10andTR11areIndianBengaliregisterwitnesses,notWestBengalcurriculumcertification. TR11doesnotdirectlywitnessdecimalnegative/tie/carryrules;those remainlabellededitorialwherepresent.",
+    "IndependentWestBengallanguage,teacher,learnerandassistive-technologyvalidationpending."
+  ],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "95bde5664268d98493f2864d4fa5e856d4651b35bc1e6774f15912216590e508",
+    "method": "Read-onlybuild.translatedandin-memoryrender_cnxml(study_labels=True)passedexactsource tags/IDs/order/nonlocalizedattributes/MathMLandEnglish-prosegate. Exact source4,926,015preserved. International words equal4million+926thousand+15. Indian grouping49,26,015equals49lakh+26thousand+15; both total4,926,015. Source international answer retained; Indian reading is a labelled equivalent addition.",
+    "nodes": 12,
+    "ids": 7,
+    "mathml": 1,
+    "html_fragment_characters": 1031,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parentintegratesandperformsactualdesktop/narrowvisualreview. Entireassignmentcontinues;noindependentpush/publishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

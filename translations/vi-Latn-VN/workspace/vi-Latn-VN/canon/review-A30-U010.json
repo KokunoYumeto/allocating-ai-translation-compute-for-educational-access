@@ -1,0 +1,75 @@
+{
+  "unit": "A30-U010",
+  "date": "2026-08-31",
+  "translation_sha256": "f7804897cc19706a59d8725763bc6ad78ccbed977adc188ba73451161e97a383",
+  "author_content_review_sha256": "6c5d7182ef3a4f1adffd570e96c87591eb96c2c63ab4abe9c5631c85d7c5a4ff",
+  "root_whitespace_finalization": "Removed one redundant blank line at EOF only; no language, mathematics or rendered content changed after accepted source/canon/content review.",
+  "examples_consulted": [
+    "VI-C01",
+    "VI-C02",
+    "VI-C03",
+    "VI-C04",
+    "VI-C05",
+    "VI-C06"
+  ],
+  "draft_checked": true,
+  "author_final_checked": true,
+  "final_checked": true,
+  "root_acceptance": "Root reread the complete23-MathML source excerpt, reviewed all21 classifications and final draft explanations, checked current draft hash, and reopened actual HUST OCR07/08/09 during source review plus OCR08 after the adjacent evaluation source review. Accepted independent full-draft review; denominator exclusions, real principal roots and input-side +/- were checked explicitly. Reader rendering is recorded separately in qa/visual-A30-U010.json.",
+  "stages": [
+    {
+      "stage": "before drafting",
+      "note": "Read actual EN and Indonesian Algebraic source prefixes, verified the two shared instructions and21 exercises against original source order, and reopened terminology.csv. Read actual HUST OCR07/08 and native mapping/formula/domain passage plus Exercises1.1–1.4, not merely the canon index. This stage preceded the complete Vietnamese draft."
+    },
+    {
+      "stage": "definitions and solution drafting",
+      "note": "Reopened actual HUST OCR07/08 and native §3 plus Exercises1.1–1.4 while checking the drafted domain conventions, source-answer labels and added worked reasoning. Kept tập xác định/lời giải and distinguished a function from an explicit formula or an injective function; did not copy damaged canon equations."
+    },
+    {
+      "stage": "author final review",
+      "note": "Reopened actual HUST OCR07/08 and native printedpp6–7 again, then reread the complete answer region and checked consistency against all original EN/ID formulas/answers. Checked denominator restrictions, principal square roots, input-side +/- and odd-power uniqueness. Checker passes338 mixed preservation/label/finite algebraic assertions. Bound this author review to the recorded draft hash; final_checked remains false for root review."
+    },
+    {
+      "stage": "independent full-draft review",
+      "note": "Read-only reviewer independently reread actual EN/ID and HUST OCR07/OCR08/native canon, checked every one of the21 classifications/domains/counterexamples including Bài15/16/22/23/26, and verified86unique source anchors,23source-ordered placeholders,10sourceanswer labels,11clearly authored answers and42local links. Passed at the recorded draft hash with no substantive error or edit; visual/render QA remains for root."
+    },
+    {
+      "stage": "coordinating user-message boundary",
+      "note": "At this production/recovery boundary directly read userMessage items in coordinating task[local-task-id], including verbatim continuous-canon, durable-goal and entire-assignment instructions. Broader coordinator cleanup/Git tasks were not imported into this bounded translation subtask."
+    }
+  ],
+  "ocr_sha256": {
+    "hust-07.ocr.txt": "a93f4fdf9f7e4606386cd27b026138a3e00c676733ee8666beecd9f9f7545353",
+    "hust-08.ocr.txt": "8791a452903eeca13238095063a51227da0cfd6c81fc4bfa19ac73f104d1fa6e"
+  },
+  "native_text_sha256": {
+    "hust-giai-tich-1.native.txt": "8e810df28f8051bf1db67cc7e19855f9aa0b203c0ef7273dcf5c85dce0cdb38e"
+  },
+  "source_sections": [
+    "m49301/fs-id1165134080937 (first two exercise blocks only)"
+  ],
+  "start_shared_prompt": "fs-id1165134080942",
+  "last_exercise": "fs-id1165137599984",
+  "stop_before": "fs-id1165134066606",
+  "decisions": [
+    "Translate exactly the first two Algebraic exercise blocks from shared prompt fs-id1165134080942 through exercise fs-id1165137599984; stop before shared prompt fs-id1165134066606.",
+    "Preserve the Algebraic parent section ID/title and all 86 source IDs explicitly; U011 continues the section without duplicating that parent ID.",
+    "Use continuous source Section Exercises numbers Bài 6–26; source IDs remain authoritative, not filename numbering.",
+    "Preserve all 23 source MathML expressions exactly once, including the two shared-prompt expressions and their source punctuation. No mtext replacements are necessary.",
+    "Keep all 21 problem formulas in source order. Collect answers separately with 21 prompt-to-answer and 21 answer-to-prompt links; no prior exercises are duplicated.",
+    "Translate all ten supplied classifications without alteration. Write eleven missing answers and all explanatory reasoning as explicitly labeled supplements; do not invent source answers.",
+    "State the distinct-element-label convention for symbolic ordered pairs in Bài 6–7, rather than silently treating letters as numerical variables that could coincide.",
+    "State real-number scope and take the actual real relation's input projection as its domain; a missing input outside that set is not a double-output counterexample.",
+    "Use tập xác định, đầu vào, đầu ra, đúng một and lời giải consistently with the term ledger and actually reopened HUST prose; distinguish being a function from being one-to-one.",
+    "Maintain original denominator restrictions and equivalence checks in Bài 15, and principal-square-root restrictions in Bài 16 and22.",
+    "Explain why the +/- in Bài23 lies on an input expression and yields unique y=1-x^2; contrast the two output branches of Bài24 and25.",
+    "Explain unique real cube roots in Bài20 and26 without introducing a +/- branch.",
+    "All original EN/ID supplied answers agree; no source mathematical answer correction was necessary. Domain/convention clarifications and derivations are labeled additions.",
+    "Keep attribution, license inheritance, change notices and non-endorsement; existing audits remain binding and no training use, downloads, image edits or general supply audit occur.",
+    "338 current checks combine source/structure/answer-label assertions and finite algebraic witnesses; they are not 338 universal mathematical proofs. Original-comparison checks run when the ignored downloaded corpora are available.",
+    "Root owns registry, reader build, visual QA, shared status and commits. This subtask leaves final_checked=false for independent root review and does not complete m49301 or the five-book assignment."
+  ],
+  "canon_limit": "Canon OCR damages mathematical notation; original OpenStax MathML and independent reasoning determine mathematics. Canon provides language witnesses only, not reused exercise content or training data.",
+  "native_speaker_review": "not_performed",
+  "remaining_review": "Native-speaker review not performed; reader build and visual results are separate QA receipts. Historical author handoff notes above describe the earlier pending state."
+}

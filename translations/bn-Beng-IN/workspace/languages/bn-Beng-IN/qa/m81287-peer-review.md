@@ -1,0 +1,59 @@
+# m81287 Bengali integration peer review
+
+Review date: 2026-08-31. Reviewer: model peer agent `improper_fractions`.
+
+Status: complete for this bounded module review; no outstanding actionable finding. This reviewer edited only this record. Translate Phrases (`fs-id1744195`) and Fraction Bar (`fs-id2211912`) were authored by this reviewer and are self-review; the remaining blocks receive model-peer review. This is not independent human Bengali teacher, learner or assistive-technology certification. The whole language assignment continues.
+
+## Bound inputs and initial checks
+
+- Initial reader and browser receipt SHA-256: `94f8929ae476768535fb3b43b15fe76aea9cd99e3384f2be9b8ea07243ba86c4`. Final post-R1 reader SHA-256 independently equals both regenerated build and browser receipts: `076a83e9347cf7b2393033afe27670a5aa28b5c040c487429e424fee79623c05`.
+- Assembled CNXML receipt hash: `ac50b9b8d1b0a2b586d8075ddc07294cb76749a26804e09285fc6c6b8fbf4c92`.
+- Frozen source hash: `4a029d82953fcba05aeec289445bc21ffc3364ce68b866c56404de3785d4d076`.
+- Receipt reports all twelve learner-facing blocks, 4,186 source elements, 677 IDs, 318 MathML expressions and three images. Independently reran the twelve overlay translation gates without writing generated files; all pass.
+- Browser receipts: 1200/1200 width/scrollWidth and 390/390, document heights 44,587 and 52,584; three images and 318 mathematical displays at each width; no reported overflow/errors. Desktop set has 50 tiles; narrow set has two top/bottom captures only.
+- Before the visual sweep, scanned every retained MathML expression ending in `.`, `?`, `,` or `;` and its following Bengali tail across all overlays. Read all flagged boundary snippets. No actionable collision found in this initial scan; full source/overlay and visual review remain in progress.
+
+## Canon consultation
+
+Before detailed review, reread the current `canon/README.md` (now 17 exemplars), actual WB p.187 signed-arithmetic OCR and Tripura p.051 fraction OCR, and opened both corresponding full page images. Returned to both actual OCR files and full page images after the complete visual sweep, during paired-text/pre-QA review. Concrete effects: retain explicit whole-expression grouping and negative-sign scope, distinguish arithmetic simplification from reduction to lowest terms, and retain the nonzero common-factor/divisor conditions. TR02/TR03 support the equivalent-value and simplest-form register. WB p.187 is used only through its checked lower worked examples, such as (−7)(−5)(+3)=105, (+5){+6+(−8)}=−10, {+8+(+10)}÷(−2)=−9 and 0÷1=0. Its erroneous opening noncommutativity lines, including an equality between −1 and 1, are excluded; the page as a whole is not treated as an arithmetic authority. Tripura's incorrect mixed-number intermediate denominator is likewise excluded. OpenStax's source mathematics remains authoritative. Complex-fraction/grouping vocabulary has explicit editorial provenance rather than invented direct textbook attestation; no new terminology is introduced by this review.
+
+## Visual review log
+
+- Desktop 1–6: directly opened all six captures. Readiness answers, improper conversion, mixed-number products and negative mixed-number scope are correct. Cancellation strokes are visible. The explanation distinguishes mixed addition notation from multiplication notation. No actionable issue in this batch.
+- Desktop 7–12: directly opened all six captures. Mixed-number division and its practice answers agree. Translate Phrases preserves subtraction and division operand order, with explicit whole-result grouping and nonzero divisor guidance. The mistaken original source cross-reference is preserved with a prominent Bengali editorial warning naming the correct m81256 lesson. No new actionable issue.
+- Desktop 13–18: directly opened all six captures. Nested fractions are rendered distinctly; conversion to division keeps the principal numerator and denominator together. Signed answers agree. The x,y / a,b / p,q domain restrictions remain stated after cancellation, so the simplified expression does not silently acquire excluded inputs. No actionable issue in this batch.
+- Desktop 19–24: directly opened all six captures. Complex-fraction final answers agree; the sign-position explanation and examples distinguish one negative sign from two. Fraction-bar grouping preserves the complete numerator and denominator. The first two source images have visible Bengali descriptions of every mathematical label/shape. No actionable issue in this batch.
+- Desktop 25–30: directly opened all six captures. Order of operations, powers of grouped differences/sums and negative numerator/denominator arithmetic agree with the displayed answers. Key concepts retain divisor restrictions and negative mixed-number scope. The practice sequence begins with the source's alternating presence/absence of answers. No actionable issue in this batch.
+- Desktop 31–36: directly opened all six captures. Mixed-number products/divisions, the phrase `A/(3−B)` and signed complex-fraction answers agree with their respective questions. Original unanswered questions are not filled in. No actionable issue in this batch.
+- Desktop 37–42: directly opened all six captures. Checked numeric and variable complex fractions, mixed numerator/denominator conversion, signed-equivalence selections and the first fraction-bar practice calculations. Examples include (−3/8)/(−y/12)=9/(2y), (3/8)/(−6 3/4)=−1/18 and (−6+3)/(17−8)=−1/3. No actionable issue in this batch.
+- Desktop 43–48: directly opened all six captures. The remaining arithmetic answers agree, including (12·9−3²)/(3·18)=11/6, (6²−4²)/(4−6)=−10 and {8(9−2)−4(14−9)}/{7(8−3)−3(16−9)}=18/7. The fudge recipe answers retain source units and correct quantities 4/3=1 1/3 cups and 80/3=26 2/3 cups. Found a minor duplicate-marker presentation issue in desktop 47; see R1.
+- Desktop 49–50 and narrow 390-1/390-2: directly opened all four captures. The intentionally incorrect Randy answer is clearly attributed as the error to explain, not an endorsed solution. The self-check description covers all four actual skill rows and all three confidence choices. Footer notice and glossary are visible. Narrow evidence is limited to top/bottom captures; no full-height narrow visual review is claimed.
+
+All three original local bitmaps were also opened directly, without copying or editing: `CNX_BMath_Figure_04_03_001_img.jpg` (two signed-quotient rules), `_002_img.jpg` (five grouping-symbol types), and `CNX_BMath_Figure_AppB_022.jpg` (four skills and three confidence choices). Their actual English wording and graphical content, not merely supplied English alt, are the accessibility comparison evidence.
+
+## Findings
+
+### R1 — duplicate subpart markers from malformed source class
+
+Initial desktop 47 rendered the cookie problem's two subparts as `1. ⓐ` and `2. ⓑ`. Exact source list: `eip-id1168466124564`, parent paragraph `fs-id2906121`, in practice block `fs-id2789054`. The source has `class="'circled"` with a stray leading apostrophe; each item's first span already contains its circled subpart marker. The initial renderer recognized only exact `class="circled"`. Neighboring lists `eip-id1168468658952` and `eip-id1168468628195` have the correct source class and rendered without duplicate browser markers. Reported to main with exact IDs. Main added renderer-only recognition of the stray leading apostrophe, retaining source CNXML. Directly reopened refreshed desktop 47: only the intended ⓐ/ⓑ labels remain. Independently confirmed the assembled source attribute still reads `class="'circled"`, and the CNXML hash is unchanged. Resolved. This was a minor renderer finding, not a mathematical or Bengali translation error.
+
+No new mathematical or Bengali language defect established. The preserved wrong source cross-reference in Translate Phrases is an existing documented erratum: its warning is visible and its original `document="m81245"` attribute is independently confirmed unchanged. The adjacent text names m81256 and the correct division lesson. The record identifies the actual quotient-definition locators `fs-id2221649` and `fs-id2150366` without presenting the wrong link as corrected navigation.
+
+## Paired-text and independent structural review
+
+Read corresponding English and Bengali non-MathML text/tail slots, titles, terms, all image alt text, table summaries and linguistic MathML allowlists in all twelve overlays. Reviewed the editorial notes and source-error entries. Earlier punctuation scanning was followed by the complete visual sweep and paired-slot reading; no new source-punctuation/Bengali-tail collision was found. This is model reading, not independent human language certification.
+
+Independently compared the frozen source, all twelve regenerated overlay subtrees and the assembled translation without writing generated files:
+
+- Every assembled overlay subtree equals its regenerated translation; the source/target element sequence and all IDs agree: 4,186 elements, 677 IDs.
+- All 318 MathML expression signatures agree after reversing only six explicitly authorized linguistic `mtext` translations (three dividend/divisor labels and three sign labels). Identifiers, numbers, operators, grouping, cancellation marks and source child order are untouched.
+- All source image and link attribute sequences agree exactly, including the erroneous cross-reference and malformed list class discussed above.
+- All 126 exercises, 87 source solutions, 15 examples and three images remain. The same 39 exercises lack source solutions; no new answer is silently supplied.
+- Read a compact source question/answer listing for all 87 provided solutions after the full visual sweep. Rechecked numeric results, symbolic operand order and equivalent-sign selections against the questions; the two open-writing solutions remain “answers will vary.” For worked examples, the visual table check remains important: a generic “last MathML” extraction can point to explanatory notation rather than the answer (notably the mixed-number-versus-multiplication discussion), so that extraction was not treated as an answer oracle. No source arithmetic correction is needed.
+- The reader has 677 unique IDs, no unresolved local-fragment link, and three nonempty image alternatives. Every original bitmap has been visually compared against its Bengali description.
+- Initial browser data records loaded Bengali font, all 318 mathematical displays with nonzero dimensions, no overflow and no errors at both widths. This module uses preserved combining cancellation marks rather than `menclose`; its empty `cancellationStrokes` array is therefore not a missing-stroke failure. The visible combining strokes were checked in the worked examples.
+- Reader, source and CNXML file hashes independently matched the initial receipts listed above. After R1, independently rebound the new reader to both regenerated receipts and confirmed the unchanged CNXML hash. Refreshed browser results remain 50 desktop/two narrow captures, heights 44,587/52,584, all 318 mathematical displays with nonzero dimensions, all three images loaded, Bengali font available, no overflow and no errors at both widths.
+
+## Handoff and limits
+
+R1 is resolved and the final files are bound above. The complete desktop sweep was performed before the renderer-only marker fix, followed by targeted post-fix desktop 47 inspection; unchanged CNXML and document heights do not constitute a second full visual sweep. Full-height narrow visual review, real assistive-technology interaction and independent human Indian Bengali/West Bengal review remain outside this bounded model-peer pass. Terminology remains provisional where documented. Continue the whole assignment with m81288; do not interpret this review as completion of the book or broader assignment.

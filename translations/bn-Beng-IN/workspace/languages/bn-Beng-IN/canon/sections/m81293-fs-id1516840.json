@@ -1,0 +1,229 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81293",
+  "section": "fs-id1516840",
+  "resolved_title": "Order Decimals",
+  "scope": "Entire subtree: dollar comparison, number-line ordering rules, equivalent decimals, full method, both worked examples, all four practice exercises and every supplied answer;3source images,4tables,16linguistic MathML replacements.",
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR02"
+      ],
+      "read": [
+        "languages/bn-Beng-IN/canon/README.md",
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "languages/bn-Beng-IN/terminology.tsv:T045-T052",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "provenance/modules/m81293.source.cnxml:entirefs-id1516840"
+      ],
+      "decision": "TR09 explicitly compares nonnegative whole parts before fractional digits; preserve that necessary condition missing from source howto. TR08correctdecimalrows support place names; exclude incorrect12.74row. TR02same-value fractions support the editorial ledger term সমতুল দশমিক সংখ্যা, not a falsely attributed exact local term."
+    },
+    {
+      "stage": "during mtext and comparison drafting",
+      "examples": [
+        "TR09",
+        "TR10"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:27-41",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p008.png",
+        "CNX_BMath_Figure_05_01_017_img-01.png",
+        "CNX_BMath_Figure_05_01_018_img.jpg",
+        "CNX_BMath_Figure_05_01_010_img.jpg:read-onlypixelinspection"
+      ],
+      "decision": "Actualp8opening distinguishes smaller-to-larger ordering; actualp58comparison passage applies to nonnegative numbers. Do not treat it as a negative-number worked witness. Fixeda-before-bMathML order prevents ordinary Bengali comparative order inside each mtext; use compact relative labels and spell out the ordinary comparative sentence in adjacent prose. Preserve all variables/operators. Original017fraction has31×10over100×10; explicit numerator/denominator descriptions."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": [
+        "TR09"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:27-41",
+        "alltranslatedparagraphs assembled around originalMathML",
+        "sourceXML exercise/solution pairs"
+      ],
+      "decision": "Rechecked whole-part-first comparison, trailing-zero equivalence and negative-order reversal against actual passage and exact arithmetic. All9answerparts plus14simple numeric source comparisons/equalities pass. Replace genericmoney wording with explicit dollars/cents. Explicitly name31/100numerator31anddenominator100in the original fraction image description. All16linguistic mtext changes reverse cleanly under the source-math gate."
+    }
+  ],
+  "editorial_decisions": [
+    {
+      "source_ids": [
+        "fs-id2327481",
+        "fs-id1373888"
+      ],
+      "decision": "Keep originala/border and inequality/quotation/mspace nodes. Narrow linguistic mtext labels read 'aছোট;অপরসংখ্যাটিb', then 'অর্থাৎaসংখ্যারেখায়বামে,bডানে'; mirror forgreater-than. Adjacent ordinary Bengali explainsaহলb-এরচেয়েছোট/বড়and relative positions. Parent approved this fixed-order approach; no mathematical nodes moved."
+    },
+    {
+      "source_ids": [
+        "fs-id1519895",
+        "fs-id1473321",
+        "fs-id2784107",
+        "fs-id1499464",
+        "fs-id1127828",
+        "fs-id1627318",
+        "fs-id1835908",
+        "fs-id2595001"
+      ],
+      "decision": "Translate linguisticand/oronly using unique stable positional XPath selectors. Retain>:/<operators even when held inmtext, and bothcurrency mtext tokens unchanged."
+    },
+    {
+      "source_ids": [
+        "eip-797",
+        "fs-id1808165"
+      ],
+      "decision": "Label the source procedure's missing sign/whole-part/equality conditions explicitly. Same-whole nonnegative decimals can compare padded fractional digits; two negative magnitudes reverse order. Whole parts1and0alreadydecide1.2>0.9. Bothzeroandsignedzerohaveequalvalue."
+    },
+    {
+      "source_ids": [
+        "fs-id1336965",
+        "eip-797"
+      ],
+      "decision": "Clarify that added zeros go after existing digits to the right of the decimal point. Appending0to an integer representation without a point would change value; that is not the rule."
+    },
+    {
+      "source_ids": [
+        "fs-id2608749",
+        "fs-id2319421"
+      ],
+      "decision": "This section intentionally uses both points0.04and0.4in the same image that was unexpectedly reused in the preceding0.4-onlyexample. Read-only pixel inspection additionally found the0.04point offset. Preserve both labelled source points, warn about exact scale reading, and state the correctfour-hundredths position without redrawing."
+    },
+    {
+      "source_ids": [
+        "fs-id2204591",
+        "fs-id2924691"
+      ],
+      "decision": "Retain source dollars/cents and original decimal values. The0.308example cannot be exactly expressed using only whole cents; no currency conversion or Indian-currency replacement."
+    },
+    {
+      "source_ids": [
+        "eip-id1168468485697"
+      ],
+      "decision": "The source negative-tenths sentence contains−1>−8,−1in one immutableMathMLnode. Bengali text preserves that comma and describes−1tenthasgreaterthan−8tenthswithout reversing the comparison."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "eip-797",
+        "fs-id1808165",
+        "eip-id1168468520524"
+      ],
+      "source_issue": "The general ordering procedure compares only digits right of the decimal, omitting the sign and whole-number-part checks. Without those conditions it fails for1.2and0.9orfornegativepairs. It also omits equality.",
+      "bengali_correction": "আগে চিহ্ন ও পূর্ণসংখ্যার অংশ তুলনা করো। অঋণাত্মক সংখ্যা দুটির পূর্ণসংখ্যার অংশ সমান হলেই সমান দশমিক ঘরে ডান দিকের অঙ্কগুলি তুলনা করা যায়। দুটি ঋণাত্মক সংখ্যার চিহ্ন বাদ দিয়ে পাওয়া মানের তুলনার ক্রম শেষে উল্টে দাও। সমান মান হলে সমান চিহ্ন ব্যবহার করো।",
+      "policy": "Add a visible labelled qualification and amend only explanatory steps. Retain all original mathematical operands, comparisons, example answers and node order.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_image_position_mismatch",
+      "source_ids": [
+        "fs-id2608749",
+        "fs-id2319421"
+      ],
+      "source_issue": "The point labelled0.04is drawn near0.031on the image scale, although its label and the relation0.40>0.04are correct.",
+      "evidence": "Actual010_img.jpg inspected. Read-only pixel analysis of900×64original:zero tickx31,0.1tickx114; first teal pointx52–61(center56.5). This places its center at about0.0307; a0.04point would havecenterx64.2. No image written or edited.",
+      "bengali_correction": "0.04 লেখা বিন্দুটি মূল ছবিতে কিছুটা বামে আঁকা। সঠিক স্থান শূন্যের ডান দিকে চার শতাংশ দূরে, অর্থাৎ 0.0 থেকে 0.1-এর ব্যবধানের চার-দশমাংশ দূরে। 0.40 > 0.04 তুলনাটি সঠিক।",
+      "policy": "Preserve original label and pixels; describe the source discrepancy and correct mathematical position in a labelled warning, not a silently redrawn answer.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "fs-id2608749",
+        "fs-id2438564"
+      ],
+      "source_issue": "English alt color labels do not match actual teal and pale-turquoise plotted points.",
+      "evidence": "ActualCNX_BMath_Figure_05_01_010_img.jpgand018_img.jpgdirectlyinspected.",
+      "bengali_correction": "রঙের উপর নির্ভর না করে প্রতিটি বিন্দুর মান, বাম-ডান অবস্থান ও তুলনার ফল বর্ণনা করা হয়েছে।",
+      "policy": "Correct Bengali descriptions to actual mathematical content without changing pixels.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {
+      "file": "CNX_BMath_Figure_05_01_010_img.jpg",
+      "observed": "Bothactualpointsread and read-onlypixelpositionschecked. Correct0.4point; label0.04belongs to separate first point whose center is around0.0307on drawn scale. Correct ordering unaffected; image preserved."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_017_img-01.png",
+      "observed": "Actual31×10over100×10fraction viewed; two10multipliers red. Explicit product numerator and denominator, and original31/100fraction readings."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_018_img.jpg",
+      "observed": "Actual−10to0numberline viewed. Points−9and−6pale turquoise;−3and−2teal. Correct positions, contrary to source blue/red color labels. Bengali identifies values/directions rather than color."
+    }
+  ],
+  "answer_checks": [
+    {
+      "exercise_id": "fs-id2222104",
+      "solution_id": "fs-id2171328",
+      "check": "Two source problem pairs and all worked table stages correct:0.64>0.6=0.60because64>60;0.83=0.830>0.803because830>803."
+    },
+    {
+      "exercise_id": "fs-id4124458",
+      "solution_id": "fs-id1778746",
+      "check": "Both supplied>symbols matched exact source pairs0.42>0.4and0.76>0.706."
+    },
+    {
+      "exercise_id": "fs-id2270206",
+      "solution_id": "fs-id2645733",
+      "check": "Both supplied<symbols matched exact source pairs0.1<0.18and0.305<0.35."
+    },
+    {
+      "exercise_id": "fs-id2136703",
+      "solution_id": "fs-id1602181",
+      "check": "Source−0.1>−0.8worked answer verified; multiplying−1>−8bypositive1/10preserves inequality."
+    },
+    {
+      "exercise_id": "fs-id2750406",
+      "solution_id": "fs-id1789754",
+      "check": "Source−0.3>−0.5and provided>symbol match."
+    },
+    {
+      "exercise_id": "fs-id4163469",
+      "solution_id": "fs-id1278864",
+      "check": "Source−0.6>−0.7and provided>symbol match."
+    }
+  ],
+  "language_gaps": [
+    "TR09contains nonnegative-decimal comparison, not the signed cases. Signed comparison and formal equivalent-decimal label remain mathematically checked editorial wording; no local negative-example witness fabricated.",
+    "Independent West Bengal teacher, language, learner and assistive-technology validation remains pending. No curriculum certification or complete topic coverage claimed."
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "84eb62c7c8288b1938577fe36e9b152567f678e511fc203601eae97718d53cbd",
+    "method": "Read-onlybuild.translatedand in-memoryrender_cnxmlpassed source tags/IDs/order/attributes and exactMathML after reversing16linguistic mtext mappings; English prose gate passed. Exact rational checks verify all9worked/practice answer parts,14simple numeric source comparisons/equalities,31/100=310/1000=.31=.310and.31>.308. Seven sign/whole/equality boundary cases checked. HTMLIDs unique. Read-onlypixelinspectiondidnotwriteimages.",
+    "nodes": 609,
+    "ids": 71,
+    "mathml": 76,
+    "linguistic_mtext_replacements": 16,
+    "paragraphs": 28,
+    "paragraph_mappings": 20,
+    "node_slot_mappings": 14,
+    "examples": 2,
+    "exercises": 6,
+    "supplied_solutions": 6,
+    "answer_parts_checked": 9,
+    "source_absent_solutions": 0,
+    "images": 3,
+    "unique_images_actually_inspected": 3,
+    "tables": 4,
+    "translated_aria_labels": 1,
+    "translated_summaries": 3,
+    "links": 0,
+    "html_fragment_characters": 21852,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integration and actualdesktop/narrowvisualreviewrequired. Finish targeted follow-up to preceding shared-image numberline record, then continue ownedfs-id1739414RoundDecimals. SectionExercises belongs toConvertagent; noindependentpublishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

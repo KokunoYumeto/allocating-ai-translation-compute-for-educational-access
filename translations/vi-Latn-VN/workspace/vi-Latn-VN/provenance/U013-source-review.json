@@ -1,0 +1,224 @@
+{
+  "unit": "A30-U013",
+  "date": "2026-08-31",
+  "status": "root_source_canon_build_and_visual_checked",
+  "root_acceptance": "Entire draft/source and all5originalJPEGs independently inspected by root and reviewer; actual canon reread. Assets copied unchanged through inherited-admission/hash verifier. Build/visual receipts pass; historical author handoff notes below remain as earlier-stage evidence.",
+  "source_start": "m49301/fs-id1165135531627",
+  "previous_exercise": "fs-id1165134325868",
+  "last_exercise": "fs-id1165134394579",
+  "stop_before": "fs-id1165135342204",
+  "source_module_sha256": {
+    "en": "f35932b5b8107fd527d50547adf00d3981860be5d6e981c1238041369b207612",
+    "id": "67678da7d3faa988d0c42a63ef15f140a2c0478610cd1fadc499fb749d55c77a"
+  },
+  "translation_sha256": "566fb371b70e8ad71ee2874d41b859cebd3f7bf89e7da7baabdc1dcac7e059b2",
+  "source_excerpt_sha256": "266562a0495741d038aa102e2f3c3b601a70cbe19d9c1a9929907aa9b4dea31b",
+  "computing_check_sha256": "f1d66f258384e02d77c8619c286d90e9bf126e46103e979ea9e40f038c215742",
+  "extraction_script_sha256": "0a041e8dfe28c98c40a4c8827d2f335d8180ee355f8e4ec2c12cacd25628ca79",
+  "author_canon_review_sha256": "0871e99f55a44aa3b1d2e6f944d2e53b32b021d7576af26b091a4306ec10dab5",
+  "scope_counts": {
+    "source_ids": 22,
+    "source_mathml": 0,
+    "shared_prompts": 1,
+    "exercises": 5,
+    "source_wide_numbers": [
+      55,
+      59
+    ],
+    "source_solutions": 3,
+    "new_solutions": 2,
+    "paragraphs": 4,
+    "images": 5,
+    "tables": 0,
+    "source_links": 0,
+    "added_cross_reader_links": 2
+  },
+  "source_comparison": "Complete selected EN six-child sequence (shared prompt plus five exercises) is preserved. All22 orderedIDs and five image paths match ID. All three source answers retain their classification. EN/ID alt text differences are intentionally recorded and Vietnamese descriptions follow actual visual inspection, not false EN labels.",
+  "checks": {
+    "command": "python -X utf8 -B vi-Latn-VN/computing/check_graphical_injectivity.py --originals",
+    "result": "pass",
+    "with_originals_assertions": 140,
+    "standalone_expected_assertions": 117,
+    "structure_assertions": 89,
+    "asset_assertions": 10,
+    "finite_relation_assertions": 18,
+    "optional_original_assertions": 23,
+    "default_dependencies": "Python standard library, committed draft/excerpt, five admitted original assets. Root must copy assets before default tests/build. No network or ignored downloads needed after integration.",
+    "optional_dependencies": "--originals and extraction use existing full EN/ID module downloads; --originals checks inherited rightsCSV and EN/ID originals without fetching.",
+    "graph_mathematics": "Graphical line-test reasoning was visually reviewed; finite sets in code are explicitly illustrative, not extracted from graph pixels and not proofs of continuous-curve properties.",
+    "reader_build": "pass; qa/build-A30-U013.json",
+    "visual_qa": "pass; qa/visual-A30-U013.json"
+  },
+  "integration_config": {
+    "slug": "A30-U013-graphical-injectivity",
+    "source": "sources/m49301-graphical-injectivity-source.cnxml",
+    "required_ids": [
+      "fs-id1165135531627",
+      "fs-id1165135541711",
+      "fs-id1165135541713",
+      "fs-id1165135541720",
+      "fs-id1165133085670",
+      "fs-id1165133085671",
+      "fs-id1165133085674",
+      "fs-id1165134380351",
+      "fs-id1165134380356",
+      "fs-id1165134037560",
+      "fs-id1165134037562",
+      "fs-id1165134037568",
+      "fs-id1165137583859",
+      "fs-id1165137583860",
+      "fs-id1165134031248",
+      "fs-id1165134031250",
+      "fs-id1165134031257",
+      "fs-id1165134394579",
+      "fs-id1165134394581",
+      "fs-id1165135457089",
+      "fs-id1165135342197",
+      "fs-id1165135342198"
+    ],
+    "numeric_checks": {},
+    "images": 5,
+    "source_examples": 0,
+    "try_it_exercises": 0,
+    "selected_end_exercises": 5,
+    "new_unique_end_exercises": 5,
+    "computing_check": "computing/check_graphical_injectivity.py",
+    "minimum_canon_examples": 4,
+    "visual_receipt": "qa/visual-A30-U013.json",
+    "math_text": {},
+    "mixed_assertions": true,
+    "assertion_kind": "89 structure/transcription +10 asset-integrity +18 finite-relation logic assertions",
+    "layout_adaptations": [
+      "Retain five original images in source order216,232,217,218,233 and all22sourceIDs; source has noMathML.",
+      "Separate practice from three source answers and two explicitly new solutions; mark all expanded line-test reasoning as supplementary.",
+      "Replace misleading EN alt descriptions with visually checked Vietnamese descriptions and explicit comparison notes; preserve original source excerpt and figure bytes.",
+      "Add two optional same-directory U006 reader links, no external media dependencies."
+    ],
+    "visual": {
+      "anchors": [
+        "fs-id1165135531627",
+        "fs-id1165135541720",
+        "fs-id1165134380356",
+        "fs-id1165134037568",
+        "fs-id1165134031257",
+        "fs-id1165135457089",
+        "fs-id1165133085670",
+        "vi-sol-56",
+        "fs-id1165137583859",
+        "vi-sol-58",
+        "fs-id1165135342197",
+        "vi-next"
+      ],
+      "primary": "fs-id1165135457089",
+      "secondary": "vi-sol-56"
+    }
+  },
+  "inherited_asset_evidence": {
+    "path": "downloads/a30-edition/source-core/00_control/COMPONENT_RIGHTS.csv",
+    "sha256": "bf65bd2786396c18655610bafbcab148aaff9ad2f5294e18cf22aa6f6ec81e69",
+    "classification": "WORK_DEFAULT_UNCREDITED_ART",
+    "admission": "admitted",
+    "license_id": "CC-BY-NC-SA-4.0",
+    "attribution": "Copyright Rice University, OpenStax, under CC BY-NC-SA 4.0.",
+    "required_action": "Preserve work attribution, change notice, ShareAlike, and non-endorsement.",
+    "verification": "All five EN original byte counts and SHA256 values match inherited admitted rows; corresponding ID originals have identical hashes. All five images visually inspected. Read-only inherited evidence check, not a new rights audit. Root owns copying to assets."
+  },
+  "assets": [
+    {
+      "filename": "CNX_Precalc_Figure_01_01_216-4707.jpg",
+      "bytes": 37460,
+      "sha256": "9054c6357560ed19ed064b1f5a0f5f83896cf9b9e4ac1ef4dd604a29e8dabc55",
+      "component_id": "rights:openstax-precalculus-2e:asset:91c6d83f243a7fb5eb3de616",
+      "source_media_id": "fs-id1165135541720",
+      "source_exercise": "fs-id1165135541711",
+      "number": 55,
+      "source_solution": "fs-id1165133085670"
+    },
+    {
+      "filename": "CNX_Precalc_Figure_01_01_232-8b55.jpg",
+      "bytes": 39699,
+      "sha256": "5a0407f7233805eaa1533c765c4e1ee0dc22d86b42ad092684fd9f6f92c08fff",
+      "component_id": "rights:openstax-precalculus-2e:asset:f7daa06149af91cf8250d101",
+      "source_media_id": "fs-id1165134380356",
+      "source_exercise": "fs-id1165133085674",
+      "number": 56,
+      "source_solution": null
+    },
+    {
+      "filename": "CNX_Precalc_Figure_01_01_217-7861.jpg",
+      "bytes": 39303,
+      "sha256": "e77eac49e0b36998a999ca312a1b52685579867ab1fa320cf224269930cd4cea",
+      "component_id": "rights:openstax-precalculus-2e:asset:a4c5f61fd814e8e6fc011fb6",
+      "source_media_id": "fs-id1165134037568",
+      "source_exercise": "fs-id1165134037560",
+      "number": 57,
+      "source_solution": "fs-id1165137583859"
+    },
+    {
+      "filename": "CNX_Precalc_Figure_01_01_218-bd16.jpg",
+      "bytes": 44544,
+      "sha256": "f18e7ba019d7c094dd9daae2d92920843e89568993a1d94b53d1d996f3c15163",
+      "component_id": "rights:openstax-precalculus-2e:asset:6c05ebb24c7a6e95a6952ab3",
+      "source_media_id": "fs-id1165134031257",
+      "source_exercise": "fs-id1165134031248",
+      "number": 58,
+      "source_solution": null
+    },
+    {
+      "filename": "CNX_Precalc_Figure_01_01_233-a0df.jpg",
+      "bytes": 35943,
+      "sha256": "72e73a932a8576eb9679e0bf2547fd21184fa50eb1e6b03ef15193394c12329b",
+      "component_id": "rights:openstax-precalculus-2e:asset:b699f937f535fc66bf06f168",
+      "source_media_id": "fs-id1165135457089",
+      "source_exercise": "fs-id1165134394579",
+      "number": 59,
+      "source_solution": "fs-id1165135342197"
+    }
+  ],
+  "alt_discrepancies": [
+    {
+      "media_id": "fs-id1165135541720",
+      "en": "Graph of a circle.",
+      "id_summary": "Vertical ellipse centered around(-2,1).",
+      "decision": "Use vertical ellipse and flag EN circle mismatch."
+    },
+    {
+      "media_id": "fs-id1165134380356",
+      "en": "Graph of a parabola.",
+      "id_summary": "V shape with minimum around(1,1).",
+      "decision": "Use angularV; do not assume a parabola, symmetry or formula."
+    },
+    {
+      "media_id": "fs-id1165134037568",
+      "en": "Graph of a rotated cubic function.",
+      "id_summary": "S-shaped curve increasing from lower left to upper right.",
+      "decision": "Use risingS shape; neither formula nor rotation angle supplied."
+    },
+    {
+      "media_id": "fs-id1165134031257",
+      "en": "Graph of half of 1/x.",
+      "id_summary": "Decreasing curve near y1 onleft, crosses xaxis near-1, steepdownonright.",
+      "decision": "Do not assign1/x, exact asymptote or domain. Use decreasing drawn shape."
+    },
+    {
+      "media_id": "fs-id1165135457089",
+      "en": "Graph of a one-to-one function.",
+      "id_summary": "Curve rises to localmaximum between0andpi/2 then falls.",
+      "decision": "Flag EN classification error; preserve source answer function/notone-to-one; avoid claiming whole farleft portion is increasing."
+    }
+  ],
+  "material_decisions": "Detailed witness locators, hashes, consultation stages and decisions are recorded in canon/review-A30-U013.json; root should append material choices to the shared log after review.",
+  "authored_files_only": [
+    "translation/A30-U013-graphical-injectivity.vi.md",
+    "sources/m49301-graphical-injectivity-source.cnxml",
+    "tools/extract_graphical_injectivity.py",
+    "computing/check_graphical_injectivity.py",
+    "canon/review-A30-U013.json",
+    "provenance/U013-source-review.json"
+  ],
+  "no_shared_edits": true,
+  "no_asset_edits_or_copy": true,
+  "no_commit": true,
+  "native_speaker_review": "not_performed",
+  "completion_warning": "This finishes a bounded draft of the Graphical remainder only, not the module, book, five-book assignment or reader QA."
+}

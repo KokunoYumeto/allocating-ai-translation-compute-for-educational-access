@@ -1,0 +1,103 @@
+{
+  "schema": "openstax-precalculus-2e-authority-receipt",
+  "schema_version": "0.1.0",
+  "created_at": "2026-08-20T21:08:50+02:00",
+  "repository": "https://github.com/openstax/osbooks-college-algebra-bundle",
+  "branch": "main",
+  "commit": {
+    "sha": "789b54099106b071d1d32bfcee454fed72eb4768",
+    "tree": "05b39123f698772482c0c33a43fa2d2d4ea562ae",
+    "parent": "a8b03bfacbbf7559990a40a179eebfdb5c84eb20",
+    "author_date": "2026-06-12T23:59:58Z",
+    "committer_date": "2026-06-12T23:59:58Z",
+    "message": "errata 28950",
+    "signature_verified": false,
+    "signature_reason": "unsigned"
+  },
+  "api_evidence": {
+    "commit_json": {
+      "path": "authority/metadata/commit-789b54099106b071d1d32bfcee454fed72eb4768.json",
+      "bytes": 10617,
+      "sha256": "89c6dd4eb9f22cfc05c2a68ad6c3a2698a40832d27ff3d75bf47d3f8b209c3bc"
+    },
+    "recursive_tree_json": {
+      "path": "authority/metadata/tree-05b39123f698772482c0c33a43fa2d2d4ea562ae.json",
+      "bytes": 898026,
+      "sha256": "3d8c5ec9077ddfe602e60c7ca4b439e1acfdf259b7753eef36ce0261059dade5",
+      "truncated": false,
+      "entries": 3348,
+      "blobs": 3202,
+      "trees": 146,
+      "blob_bytes": 263911946
+    }
+  },
+  "repository_archive": {
+    "path": "authority/archives/osbooks-college-algebra-bundle-789b54099106b071d1d32bfcee454fed72eb4768.zip",
+    "bytes": 167391934,
+    "sha256": "2fdf5495f5f11dbe3c8f6d4705a257a2ed7f13db1968cc6b2be409e0202a94f9",
+    "crc_check": "pass",
+    "role": "immutable repository-container witness; not an admitted public payload"
+  },
+  "selected_work": {
+    "title": "Precalculus 2e",
+    "slug": "precalculus-2e",
+    "collection_path": "collections/precalculus-2e.collection.xml",
+    "collection_uuid": "f021395f-fd63-46cd-ab95-037c6f051730",
+    "source_language": "en",
+    "declared_license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+    "declared_license_url": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
+  "selected_closure": {
+    "files": 1961,
+    "bytes": 160966405,
+    "modules": 87,
+    "assets": 1873,
+    "module_local_xml_ids": 46359,
+    "manifest_path": "authority/upstream/SOURCE_CLOSURE_MANIFEST.csv",
+    "closure_json_sha256": "bcb7b5deb3d3a4aa325dd6252a811f8f5443d79f57cd312e2c15e835c6477951",
+    "manifest_sha256": "efe129b34d8195b26fa7d466abc820c8d23610a2d3f8e6f9e7bee63b1f491324",
+    "module_order_path": "authority/upstream/MODULE_ORDER.csv",
+    "module_order_sha256": "99a7a34be65a50c9859787d1a69943083ce93e7c9797b635b41064b00939c31a",
+    "reference_audit_sha256": "bc8248e29997afe6f79ca6b2fd8cf295feca58e1ae6fd39a3221687c6f6a1b10"
+  },
+  "rights_gate": {
+    "work_rights": {
+      "path": "00_control/WORK_RIGHTS.json",
+      "bytes": 2195,
+      "sha256": "cfe9264d47347b82d2a0d41324b749628b79d6a31f65ae482186bc2d6ae2c0c5",
+      "translation_and_noncommercial_redistribution": "permitted under CC BY-NC-SA 4.0 with attribution, change notice, ShareAlike, and non-endorsement"
+    },
+    "component_rights": {
+      "path": "00_control/COMPONENT_RIGHTS.csv",
+      "bytes": 693944,
+      "sha256": "bf65bd2786396c18655610bafbcab148aaff9ad2f5294e18cf22aa6f6ec81e69",
+      "asset_rows": 1873,
+      "admitted": 1835,
+      "quarantined": 38,
+      "no_derivatives_markers": 0
+    },
+    "overrides": {
+      "path": "00_control/RIGHTS_OVERRIDES.csv",
+      "bytes": 9069,
+      "sha256": "f4ce8499e327d72fafe42b6d5e580947322c04df79fe5cecdd1fa62fdd9ecbb2",
+      "rows": 42
+    },
+    "summary": {
+      "path": "00_control/COMPONENT_RIGHTS_SUMMARY.json",
+      "bytes": 688,
+      "sha256": "7035f6c638f6430230f962ae8cee8dcca53e07a87d9d9d96c0ec483e828d8176"
+    },
+    "translation_gate": "pass",
+    "public_build_gate": "fail while any referenced quarantined asset remains unreplaced or unexcluded"
+  },
+  "scope_exclusions": [
+    "all non-Precalculus collection files",
+    "all modules not explicitly listed by the Precalculus collection",
+    "shared repository README.md",
+    "shared repository LICENSE",
+    "shared META-INF/books.xml",
+    "original OpenStax book cover (outside the CC license grant)",
+    "out-of-scope cross-document module m51255"
+  ],
+  "status": "source_closure_and_component_rights_frozen_translation_authorized_public_build_conditioned"
+}

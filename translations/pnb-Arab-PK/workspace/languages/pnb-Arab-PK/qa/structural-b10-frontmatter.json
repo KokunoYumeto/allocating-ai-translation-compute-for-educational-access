@@ -1,0 +1,181 @@
+{
+  "schema": "pnb-source-bound-reader-qa-v1",
+  "unit": "B10-frontmatter",
+  "status": "passed",
+  "assertions": 877,
+  "detached_mutations": [
+    {
+      "mutation": "drop complete source paragraph",
+      "rejected_by": "all 101 source nodes in exact order"
+    },
+    {
+      "mutation": "inject unkeyed source paragraph",
+      "rejected_by": "exact structural children/UI/raw slots frontmatter.ptx#/frontmatter/preface[1]"
+    },
+    {
+      "mutation": "alter translated own paragraph text",
+      "rejected_by": "exact translated own block frontmatter.ptx#/frontmatter/preface[1]/p[1]"
+    },
+    {
+      "mutation": "750 changed to 751",
+      "rejected_by": "exact translated own block frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[1]/p[1]"
+    },
+    {
+      "mutation": "remove copyright dash",
+      "rejected_by": "exact translated own block frontmatter.ptx#/frontmatter/colophon[1]/copyright[1]/year[1]"
+    },
+    {
+      "mutation": "source ID altered",
+      "rejected_by": "four original ID order"
+    },
+    {
+      "mutation": "source list child order reversed",
+      "rejected_by": "all 101 source nodes in exact order"
+    },
+    {
+      "mutation": "mixed source paragraph invalid HTML p",
+      "rejected_by": "source HTML element frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]"
+    },
+    {
+      "mutation": "original claim mixed into source",
+      "rejected_by": "exact translated own block frontmatter.ptx#/frontmatter/preface[1]/p[1]"
+    },
+    {
+      "mutation": "source proper name altered",
+      "rejected_by": "exact translated own block frontmatter.ptx#/frontmatter/titlepage[1]/author[1]/personname[1]"
+    },
+    {
+      "mutation": "LTR isolation removed",
+      "rejected_by": "exact translated own block frontmatter.ptx#/frontmatter/preface[1]/paragraphs[1]/p[1]/ul[1]/li[1]/p[1]"
+    },
+    {
+      "mutation": "source URL target swapped",
+      "rejected_by": "all source attributes frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/p[4]/url[1]"
+    },
+    {
+      "mutation": "source URL label altered",
+      "rejected_by": "source visible URL u1"
+    },
+    {
+      "mutation": "cover image substituted",
+      "rejected_by": "exact image alt/identity attributes cover4"
+    },
+    {
+      "mutation": "QR source alt discrepancy erased",
+      "rejected_by": "exact image alt/identity attributes qrcode"
+    },
+    {
+      "mutation": "QR alt falsely certifies payload",
+      "rejected_by": "exact image alt/identity attributes qrcode"
+    },
+    {
+      "mutation": "QR correction association removed",
+      "rejected_by": "exact image alt/identity attributes qrcode"
+    },
+    {
+      "mutation": "actual PNG bytes changed in detached buffer",
+      "rejected_by": "actual PNG bytes qrcode"
+    },
+    {
+      "mutation": "inert preamble text changed",
+      "rejected_by": "exact structural children/UI/raw slots bookinfo.ptx#/docinfo/latex-image-preamble[1]"
+    },
+    {
+      "mutation": "inert include parse changed",
+      "rejected_by": "all source attributes bookinfo.ptx#/docinfo/latex-image-preamble[1]/{http://www.w3.org/2001/XInclude}include[1]"
+    },
+    {
+      "mutation": "executable script added",
+      "rejected_by": "body skeleton"
+    },
+    {
+      "mutation": "metadata edition changed",
+      "rejected_by": "head source metadata exact"
+    },
+    {
+      "mutation": "notice changed to stale root license",
+      "rejected_by": "deterministic exact component notice"
+    },
+    {
+      "mutation": "copyright credit changed",
+      "rejected_by": "reviewed full credit/footer contract"
+    },
+    {
+      "mutation": "original qualification removed",
+      "rejected_by": "exact main siblings"
+    },
+    {
+      "mutation": "image mirroring CSS injected",
+      "rejected_by": "reviewed source/local CSS including unmirrored images"
+    },
+    {
+      "mutation": "source sidebyside falsely made figure",
+      "rejected_by": "source HTML element frontmatter.ptx#/frontmatter/preface[2]/paragraphs[5]/sidebyside[1]"
+    },
+    {
+      "mutation": "invented line break inserted",
+      "rejected_by": "exact translated own block frontmatter.ptx#/frontmatter/preface[1]/p[1]"
+    },
+    {
+      "mutation": "source q content altered",
+      "rejected_by": "exact translated own block frontmatter.ptx#/frontmatter/preface[1]/p[1]"
+    },
+    {
+      "mutation": "standalone source website removed",
+      "rejected_by": "all 101 source nodes in exact order"
+    },
+    {
+      "mutation": "header asserts whole book complete",
+      "rejected_by": "reviewed complete header/status/navigation"
+    },
+    {
+      "mutation": "external stylesheet runtime added",
+      "rejected_by": "head has no extra resource or runtime"
+    },
+    {
+      "mutation": "unkeyed own text in source container",
+      "rejected_by": "container own text/tails frontmatter.ptx#/frontmatter/acknowledgement[1]"
+    },
+    {
+      "mutation": "unkeyed tail after source paragraph",
+      "rejected_by": "container own text/tails frontmatter.ptx#/frontmatter/preface[1]"
+    }
+  ],
+  "counts": {
+    "source_keys": 50,
+    "source_elements": 101,
+    "original_ids": 4,
+    "prefaces": 2,
+    "paragraphs": 25,
+    "list_items": 4,
+    "source_urls": 4,
+    "brandlogo_urls": 1,
+    "original_images": 2,
+    "q": 8,
+    "em": 5,
+    "math": 0,
+    "tables": 0,
+    "footnotes": 0,
+    "explicit_source_newlines": 0
+  },
+  "scoped_hashes": {
+    "source-excerpts/manifest-b10-frontmatter.json": "5727f55d46d3b255b49982ff9cee6a200b3949e3d17b07cfda7cd07a42dfe73f",
+    "translations/b10-frontmatter.json": "b03ec3b8767e937ce8e7828e5d4361883625993241054b5fa72db44e56f00b05",
+    "source-excerpts/b10-frontmatter.ptx": "997ed1b17cf0fd67b9ef8a4c4e3a5ebb598630005beeb93aaddd64dad2fc61cb",
+    "reader/b10-frontmatter.html": "0e7e9d6a73349d2b972f6d6e44033a57589b0c52db57fffa2a1dda7d0c2ef5bf",
+    "provenance/b10-frontmatter-component-notices.json": "576a1b096a7d6a0ff6d48820466bb92b6950c7e936fe652f6466937eaabe114f",
+    "styles/reader.css": "d2027cc5fb83d82a1c3d80f245f0604ac3ea95a93b45d8d3192a8e283507c13a",
+    "scripts/qa_b10_frontmatter.py": "37e4eb8d8cd91134cddcaf12d9bbcae6a58227eed19b40bac6c9c2173296e6ac",
+    "scripts/prepare_b10_frontmatter.py": "36ec18d5c2362c3d7799e2d736783d669e5a7ac0885079039d4b074c47d4951e",
+    "scripts/build_b10_frontmatter.py": "894bca1fb7d1f5911180ebc63de4bfd0691322a8f7cc9ddb326f5f9637db8e60",
+    "assets/b10/cover4.png": "e6cb97c02b6be3d53964e971661684d806b3fb04941d028c1dd3743bb5d28870",
+    "assets/b10/qrcode.png": "25ac46ed89c1547d707f6aff76d0e9c338ea7eb51efe4d077e19be0b6aea183e"
+  },
+  "limitations": [
+    "Independent source-bound DOM checks plus exact reviewed footer/CSS regression guards; assertion count is not a linguistic quality score.",
+    "No browser/assistive-technology/native educator certification is claimed by this suite.",
+    "No QR payload decoding, present external service/legal verification, new clearance or source audit.",
+    "All source metadata and parse=text TeX dependency remain inert; no source runtime execution.",
+    "Complete frontmatter checkpoint only; full B10 and all five assigned works remain unfinished."
+  ]
+}

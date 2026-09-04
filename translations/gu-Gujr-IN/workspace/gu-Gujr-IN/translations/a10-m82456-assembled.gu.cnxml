@@ -1,0 +1,1446 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:ns1="http://cnx.rice.edu/mdml" xml:lang="gu-Gujr-IN">
+
+<title>ચિત્રો વડે અપૂર્ણાંકો સમજો</title>
+<metadata>
+  <ns1:content-id>m82456</ns1:content-id>
+  <ns1:title>ચિત્રો વડે અપૂર્ણાંકો સમજો</ns1:title>
+  <ns1:abstract><para id="para-00001">આ વિભાગના અંતે તમે નીચેનું કરી શકશો:</para>
+<list id="list-00001">
+<item>સમ અપૂર્ણાંકો શોધવા</item>
+<item>અપૂર્ણાંકોને સાદું રૂપ આપવું</item>
+<item>અપૂર્ણાંકોનો ગુણાકાર કરવો</item>
+<item>અપૂર્ણાંકોનો ભાગાકાર કરવો</item>
+<item>અપૂર્ણાંક રેખા વડે લખેલી પદાવલીઓને સાદું રૂપ આપવું</item>
+<item>શબ્દસમૂહોને અપૂર્ણાંકવાળી પદાવલીઓમાં લખવા</item>
+</list></ns1:abstract>
+  <ns1:uuid>1f630730-e8df-4e11-9716-3462e4a50d91</ns1:uuid>
+</metadata>
+
+<content>
+<note id="fs-id1170653768978" class="be-prepared">
+<para id="fs-id1170652618788">આ વિભાગના વિષયોનો વધુ વિગતવાર પરિચય <emphasis effect="italics">પૂર્વબીજગણિત</emphasis> પુસ્તકના આ પ્રકરણમાં મળે છે: <emphasis effect="bold">અપૂર્ણાંકો</emphasis>.</para>
+</note>
+<section id="fs-id1170652620388">
+<title>સમ અપૂર્ણાંકો શોધો</title>
+<para id="fs-id1170652621648"><emphasis effect="bold">અપૂર્ણાંકો</emphasis> આખી વસ્તુના ભાગો દર્શાવવાની એક રીત છે. અપૂર્ણાંક <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> દર્શાવે છે કે એક આખી વસ્તુના 3 સરખા ભાગ કર્યા છે અને દરેક ભાગ એ ત્રણ સરખા ભાગોમાંનો એક છે. જુઓ <link target-id="CNX_ElemAlg_Figure_01_05_001" />. અપૂર્ણાંક <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> ત્રણ સરખા ભાગોમાંના બે ભાગ દર્શાવે છે. આ અપૂર્ણાંકમાં, <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> 2ને <term id="term-00001">અંશ</term> અને 3ને <term id="term-00002">છેદ</term> કહે છે.</para>
+<figure id="CNX_ElemAlg_Figure_01_05_001">
+<media id="fs-id1170654116590" alt="બે વર્તુળો છે. રેખાઓ વડે દરેકના ત્રણ સરખા ભાગ કર્યા છે. ડાબા વર્તુળના દરેક ભાગમાં ‘એક તૃતીયાંશ’ લખેલું છે અને બધા ભાગમાં રંગ ભરેલો છે. જમણા વર્તુળના ત્રણમાંથી બે ભાગમાં રંગ ભરેલો છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_001_img_new.jpg" />
+</media>
+<caption>ડાબા વર્તુળના 3 સરખા ભાગ કર્યા છે. દરેક ભાગ છે <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> જેટલો, એટલે કે 3 સરખા ભાગોમાંનો એક. જમણા વર્તુળમાં, <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> જેટલા ભાગમાં રંગ ભરેલો છે (3 સરખા ભાગોમાંથી 2).</caption>
+</figure>
+<note id="fs-id1166422866063" class="manipulative-math">હાથવગી સામગ્રીથી ગણિત શીખવાની પ્રવૃત્તિ ‘અપૂર્ણાંકોનું નિરૂપણ’ કરવાથી અપૂર્ણાંક, તેના અંશ અને છેદને વધુ સારી રીતે સમજી શકશો.</note>
+<note id="fs-id1170653797209">
+<title>અપૂર્ણાંક</title>
+<para id="fs-id1170653894126">એક <emphasis effect="bold">અપૂર્ણાંક</emphasis> આ રીતે લખાય છે: <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જ્યાં <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math> અને</para>
+<list id="fs-id1166424908857" list-type="bulleted" bullet-style="bullet">
+<item><emphasis effect="italics">a</emphasis> <emphasis effect="bold">અંશ</emphasis> છે અને <emphasis effect="italics">b</emphasis> <emphasis effect="bold">છેદ</emphasis> છે.</item>
+</list>
+<para id="fs-id1170653885621">અપૂર્ણાંક આખી વસ્તુના ભાગો દર્શાવે છે. છેદ <emphasis effect="italics">b</emphasis> દર્શાવે છે કે આખી વસ્તુના કેટલા સરખા ભાગ કર્યા છે, અને અંશ <emphasis effect="italics">a</emphasis> દર્શાવે છે કે તેમાંના કેટલા ભાગ લીધા છે.</para>
+</note>
+<para id="fs-id1170653931062">એક આખી પાઈના 6 ટુકડા કર્યા હોય અને આપણે બધા 6 ટુકડા ખાઈએ, તો આપણે ખાધો પાઈનો <m:math><m:mrow><m:mfrac><m:mn>6</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> ભાગ, એટલે કે એક આખી પાઈ.</para>
+<media id="fs-id1170654015188" alt="એક વર્તુળના છ ભાગ કર્યા છે. બધા ભાગમાં રંગ ભરેલો છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_002_new.jpg" />
+</media>
+<para id="fs-id1170653905316">તેથી <m:math><m:mrow><m:mfrac><m:mn>6</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> આમાંથી એકનો ગુણધર્મ મળે છે: શૂન્ય સિવાયની કોઈ પણ સંખ્યાને તે જ સંખ્યા વડે ભાગતાં 1 મળે છે.</para>
+<note id="fs-id1170654116040">
+<title>એકનો ગુણધર્મ</title>
+<equation id="fs-id1170654061857" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mfrac><m:mi>a</m:mi><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170654080873">શૂન્ય સિવાયની કોઈ પણ સંખ્યાને તે જ સંખ્યા વડે ભાગતાં એક મળે છે.</para>
+</note>
+<note id="fs-id1166424866384" class="manipulative-math">હાથવગી સામગ્રીથી ગણિત શીખવાની પ્રવૃત્તિ ‘એકની બરાબર મૂલ્ય ધરાવતા અપૂર્ણાંકો’ કરવાથી એકના સમ અપૂર્ણાંકોને વધુ સારી રીતે સમજી શકશો.</note>
+<para id="fs-id1170654211143">જો પાઈના <m:math><m:mn>6</m:mn></m:math> ટુકડા કર્યા હોય અને આપણે બધા 6 ખાઈએ, તો આપણે ખાધો <m:math><m:mrow><m:mfrac><m:mn>6</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> જેટલો પાઈનો ભાગ, એટલે કે એક આખી પાઈ. પાઈના 8 ટુકડા કર્યા હોય અને બધા 8 ખાઈએ, તો આપણે ખાધો <m:math><m:mrow><m:mfrac><m:mn>8</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> જેટલો પાઈનો ભાગ, એટલે કે એક આખી પાઈ. બંને વખતે આપણે સરખો જથ્થો ખાધો—એક આખી પાઈ.</para>
+<para id="fs-id1170653885603">અપૂર્ણાંકો <m:math><m:mrow><m:mfrac><m:mn>6</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> અને <m:math><m:mrow><m:mfrac><m:mn>8</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> નું મૂલ્ય સરખું, એટલે કે 1 છે; તેથી તેમને સમ અપૂર્ણાંકો કહે છે. <emphasis effect="bold">સમ અપૂર્ણાંકો</emphasis> એ સરખું મૂલ્ય ધરાવતા અપૂર્ણાંકો છે.</para>
+<para id="fs-id1170653761458">હવે પિઝાનો વિચાર કરીએ. <link target-id="CNX_ElemAlg_Figure_01_05_003" />માં બે ચિત્રો છે: ડાબે એક પિઝાના બે સરખા ભાગ કર્યા છે અને જમણે તે જ કદના બીજા પિઝાના આઠ ભાગ કર્યા છે. આ રીતે જોઈ શકાય છે કે <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> એ આનો સમ અપૂર્ણાંક છે: <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math>. બીજા શબ્દોમાં, તેઓ <term class="no-emphasis" id="term-00003">સમ અપૂર્ણાંકો</term> છે.</para>
+<figure id="CNX_ElemAlg_Figure_01_05_003">
+<media id="fs-id1170653773104" alt="બાજુબાજુ સરખા કદના બે પિઝા છે. ડાબા પિઝાના બે સરખા ભાગ છે: ડાબો અડધો પિઝા દેખાય છે અને જમણા અડધામાં આછો રંગ છે; નીચે 1/2 છે. જમણા પિઝાના આઠ સરખા ભાગ છે: ડાબા ચાર ભાગમાં પિઝા દેખાય છે અને જમણા ચાર ભાગમાં આછો રંગ છે; નીચે 4/8 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_003_img_new.jpg" />
+</media>
+<caption>દરેક પિઝામાં સરખા જથ્થામાં રંગ ભરેલો હોવાથી આપણે જોઈ શકીએ છીએ કે <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> એ આનો સમ અપૂર્ણાંક છે: <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> તેઓ સમ અપૂર્ણાંકો છે.</caption>
+</figure>
+<note id="fs-id1170653736114">
+<title>સમ અપૂર્ણાંકો</title>
+<para id="fs-id1170653775873"><emphasis effect="bold">સમ અપૂર્ણાંકો</emphasis> એ સરખું મૂલ્ય ધરાવતા અપૂર્ણાંકો છે.</para>
+</note>
+<para id="fs-id1170654030781">ગણિત વડે આ અપૂર્ણાંકને કેવી રીતે બદલીએ: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>? બીજો અપૂર્ણાંક છે <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>?</m:mo></m:mrow></m:math> બે ટુકડા કરેલા પિઝાના આઠ ટુકડા કેવી રીતે કરી શકાય? બે મોટા ટુકડામાંથી દરેકના ચાર નાના ટુકડા કરીએ! તેથી આખા પિઝાના ટુકડા થાય <m:math><m:mn>8</m:mn></m:math> એટલે કે માત્ર 2ને બદલે 8 ટુકડા. આ વાતને ગણિતમાં આ રીતે લખી શકાય: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> જુઓ <link target-id="CNX_ElemAlg_Figure_01_05_004_new" />.</para>
+<figure id="CNX_ElemAlg_Figure_01_05_004_new">
+<media id="fs-id1170654127710" alt="એક ઊભી કાળી રેખાથી વર્તુળના બે અડધા ભાગ કર્યા છે. લાલ ટપકાંવાળી રેખાઓ ઉમેરીને તેના આઠમા ભાગ પાડ્યા છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_004_new.jpg" />
+</media>
+<caption>પિઝાના દરેક અડધાના કરીએ <m:math><m:mn>4</m:mn></m:math> ટુકડા, તો આખા પિઝાના 8 ટુકડા થાય: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1170654116758">આ નિરૂપણમાંથી નીચેનો ગુણધર્મ મળે છે:</para>
+<note id="fs-id1170654068263">
+<title>સમ અપૂર્ણાંકોનો ગુણધર્મ</title>
+<para id="fs-id1170654016289">જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> એવી સંખ્યાઓ હોય કે <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> તો</para>
+<equation id="fs-id1170653991224" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1170653751355">પિઝાના જુદી રીતે ટુકડા કર્યા હોત તો આ મળી શક્યું હોત:</para>
+<media id="fs-id1170653800497" alt="અપૂર્ણાંકોની ત્રણ હરોળ છે. પહેલી હરોળમાં (1 × 2)/(2 × 2) = 2/4 છે; તેની બાજુમાં ‘તેથી’ અને 1/2 = 2/4 છે. બીજી હરોળમાં (1 × 3)/(2 × 3) = 3/6 છે; તેની બાજુમાં ‘તેથી’ અને 1/2 = 3/6 છે. ત્રીજી હરોળમાં (1 × 10)/(2 × 10) = 10/20 છે; તેની બાજુમાં ‘તેથી’ અને 1/2 = 10/20 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_005_img_new.jpg" />
+</media>
+<para id="fs-id1170654114644">તેથી આપણે કહીએ છીએ કે <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow></m:math> સમ અપૂર્ણાંકો છે.</para>
+<note id="fs-id1166424997376" class="manipulative-math">હાથવગી સામગ્રીથી ગણિત શીખવાની પ્રવૃત્તિ ‘સમ અપૂર્ણાંકો’ કરવાથી બે અપૂર્ણાંકો સમ હોવાનો અર્થ વધુ સારી રીતે સમજી શકશો.</note>
+<example id="fs-id1170654113393">
+<exercise id="fs-id1170654079982">
+<problem id="fs-id1170654115770">
+<para id="fs-id1170653910320">ત્રણ સમ અપૂર્ણાંકો શોધો; આપેલો અપૂર્ણાંક છે <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654069037">
+<title>ઉકેલ</title>
+<para id="fs-id1170654125509">આપેલો અપૂર્ણાંક છે <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> તેના સમ અપૂર્ણાંક શોધવા અંશ અને છેદને એક જ સંખ્યા વડે ગુણીએ છીએ. શૂન્ય સિવાયની કોઈ પણ સંખ્યા પસંદ કરી શકાય. ચાલો તેમને 2, પછી 3 અને પછી 5 વડે ગુણીએ.<newline />
+<media id="fs-id1170654014939" alt="એક હરોળમાં ત્રણ ગણતરીઓ છે: (2 × 2)/(5 × 2) = 4/10; પછી (2 × 3)/(5 × 3) = 6/15; અને પછી (2 × 5)/(5 × 5) = 10/25.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_006_img_new.jpg" />
+</media><newline />
+તેથી, <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>6</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac></m:mrow></m:math> આના સમ અપૂર્ણાંકો છે: <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170653744715" class="try">
+<exercise id="fs-id1170653985028">
+<problem id="fs-id1170653906562">
+<para id="fs-id1170653832505">ત્રણ સમ અપૂર્ણાંકો શોધો; આપેલો અપૂર્ણાંક છે <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653881636">
+<para id="fs-id1170653870759"><m:math><m:mrow><m:mfrac><m:mn>6</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>12</m:mn></m:mrow><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mo>;</m:mo></m:mrow></m:math> જવાબો જુદા હોઈ શકે</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654053661" class="try">
+<exercise id="fs-id1170654012320">
+<problem id="fs-id1170654015429">
+<para id="fs-id1170654013584">ત્રણ સમ અપૂર્ણાંકો શોધો; આપેલો અપૂર્ણાંક છે <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654061051">
+<para id="fs-id1170653905408"><m:math><m:mrow><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>12</m:mn></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mo>;</m:mo></m:mrow></m:math> જવાબો જુદા હોઈ શકે</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170653795701">
+<title>અપૂર્ણાંકોને સાદું રૂપ આપો</title>
+<para id="fs-id1170654116001">અપૂર્ણાંક <emphasis effect="bold">સાદામાં સાદા રૂપમાં</emphasis> ગણાય, જો તેના અંશ અને છેદમાં 1 સિવાય કોઈ સામાન્ય અવયવ ન હોય.</para>
+<para id="fs-id1170654027609">ઉદાહરણ તરીકે,</para>
+<list id="fs-id1166422535686" list-type="bulleted" bullet-style="bullet">
+<item><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> સાદામાં સાદા રૂપમાં છે, કારણ કે 2 અને 3નો 1 સિવાય કોઈ સામાન્ય અવયવ નથી.</item>
+<item><m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math> સાદામાં સાદા રૂપમાં નથી, કારણ કે <m:math><m:mn>5</m:mn></m:math> એ 10 અને 15નો સામાન્ય અવયવ છે.</item>
+</list>
+<note id="fs-id1170654047581">
+<title>સાદામાં સાદા રૂપનો અપૂર્ણાંક</title>
+<para id="fs-id1170654037932">અપૂર્ણાંક <term id="term-00004">સાદામાં સાદા રૂપમાં</term> ગણાય, જો તેના અંશ અને છેદમાં 1 સિવાય કોઈ સામાન્ય અવયવ ન હોય.</para>
+</note>
+<para id="fs-id1170654203066">અંગ્રેજી શબ્દસમૂહ ‘reduce a fraction’ (<emphasis effect="italics">અપૂર્ણાંક ઘટાડવો</emphasis>) એટલે અપૂર્ણાંકને સાદું રૂપ આપવું. અંશ અને છેદના સામાન્ય અવયવો દૂર કરીને આપણે અપૂર્ણાંકને સાદું રૂપ આપીએ છીએ, જેને ઘટાડવું પણ કહે છે. બધા સામાન્ય અવયવો દૂર ન થાય ત્યાં સુધી અપૂર્ણાંક સાદામાં સાદા રૂપમાં આવતો નથી. પદાવલીમાં અપૂર્ણાંકો હોય તો તેમને સાદું રૂપ આપ્યા વિના આખી પદાવલી સંપૂર્ણપણે સાદી ગણાતી નથી.</para>
+<para id="fs-id1170654016508">આ ઉદાહરણમાં, <link target-id="fs-id1170654113393" />આપણે સમ અપૂર્ણાંકો શોધવા માટે સમ અપૂર્ણાંકોનો ગુણધર્મ વાપર્યો. હવે એ જ ગુણધર્મને ઊલટી રીતે વાપરીને અપૂર્ણાંકોને સાદું રૂપ આપીશું. બંને સ્વરૂપ સાથે બતાવવા ગુણધર્મને ફરીથી લખી શકાય.</para>
+<note id="fs-id1170653882056">
+<title>સમ અપૂર્ણાંકોનો ગુણધર્મ</title>
+<para id="fs-id1170653904200">જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> એવી સંખ્યાઓ હોય કે <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1166424799823" class="unnumbered"><label /><m:math><m:mrow><m:mtext>તો</m:mtext><m:mspace width="1em" /><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac><m:mspace width="1em" /><m:mtext>અને</m:mtext><m:mspace width="1em" /><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math></equation>
+</note>
+<example id="fs-id1170654030842">
+<exercise id="fs-id1170654236699">
+<problem id="fs-id1170653886029">
+<para id="fs-id1170654075477">સાદું રૂપ આપો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>32</m:mn></m:mrow><m:mrow><m:mn>56</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653897505">
+<title>ઉકેલ</title>
+<para id="fs-id1170653871210"><table id="eip-id1169750893704" class="unnumbered unstyled" aria-label="ઉકેલના ચિત્રમાં બે કૉલમ છે. પહેલી હરોળમાં −32/56 છે. બીજી હરોળમાં સૂચના છે: ‘સામાન્ય અવયવો દર્શાવીને અંશ અને છેદ ફરી લખો.’ તેની જમણી બાજુ −(4 × 8)/(7 × 8) છે. ત્રીજી હરોળમાં સૂચના છે: ‘સમ અપૂર્ણાંકોના ગુણધર્મ વડે સાદું રૂપ આપો.’ તેની જમણી બાજુ −4/7 છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry align="center"><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>32</m:mn><m:mn>56</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>સામાન્ય અવયવો દર્શાવીને અંશ અને છેદ ફરી લખો.</entry>
+    <entry align="center"><media id="eip-id1169750893744" alt="−(4 × 8)/(7 × 8) અપૂર્ણાંક છે. અંશ અને છેદ બંનેમાં સામાન્ય અવયવ 8 લાલ રંગે દર્શાવ્યો છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_05_007_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સમ અપૂર્ણાંકોના ગુણધર્મ વડે સાદું રૂપ આપો.</entry>
+    <entry align="center"><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>7</m:mn></m:mfrac></m:math></entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+<newline />
+ધ્યાન આપો કે અપૂર્ણાંક <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow></m:math> સાદામાં સાદા રૂપમાં છે, કારણ કે હવે 1 સિવાય કોઈ સામાન્ય અવયવ બાકી નથી.</para></solution>
+</exercise>
+</example>
+<note id="fs-id1170654032808" class="try">
+<exercise id="fs-id1170653744002">
+<problem id="fs-id1170653897688">
+<para id="fs-id1170654061444">સાદું રૂપ આપો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>42</m:mn></m:mrow><m:mrow><m:mn>54</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654148628">
+<para id="fs-id1170653799921"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653934540" class="try">
+<exercise id="fs-id1170653896456">
+<problem id="fs-id1170653741575">
+<para id="fs-id1170653898228">સાદું રૂપ આપો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>45</m:mn></m:mrow><m:mrow><m:mn>81</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653808872">
+<para id="fs-id1170653886874"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654060626">ક્યારેક અંશ અને છેદના સામાન્ય અવયવો સહેલાઈથી મળતા નથી. ત્યારે અંશ અને છેદને <term class="no-emphasis" id="term-00005">અવિભાજ્ય સંખ્યા</term>ઓના ગુણાકાર તરીકે લખવું સારું રહે. પછી સમ અપૂર્ણાંકોના ગુણધર્મ વડે સામાન્ય અવયવોનો ભાગાકાર કરીને તેમને દૂર કરો.</para>
+<example id="fs-id1170654030441">
+<title>અપૂર્ણાંકને સાદું રૂપ આપવાની રીત</title>
+<exercise id="fs-id1170653749775">
+<problem id="fs-id1170654190237">
+<para id="fs-id1170654147077">સાદું રૂપ આપો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>210</m:mn></m:mrow><m:mrow><m:mn>385</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654117064">
+<title>ઉકેલ</title>
+<media id="fs-id1170653880713" alt="ત્રણ કૉલમ અને એક હરોળમાં પગલું 1 છે. ડાબે: ‘સામાન્ય અવયવો દર્શાવવા અંશ અને છેદ ફરી લખો. જરૂર હોય તો પહેલાં બંનેનું અવિભાજ્ય અવયવીકરણ કરો.’ વચ્ચે: ‘210 અને 385ને અવિભાજ્ય સંખ્યાઓના ગુણાકાર તરીકે ફરી લખો.’ જમણે −210/385 અને તેની નીચે −(2 × 3 × 5 × 7)/(5 × 7 × 11) છે. અંશ અને છેદના 5 પીરોજી અને 7 લાલ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_008a_new.jpg" />
+</media>
+<media id="fs-id1170655026820" alt="ત્રણ કૉલમ અને એક હરોળમાં પગલું 2 છે. ડાબે: ‘સમ અપૂર્ણાંકોના ગુણધર્મ વડે સામાન્ય અવયવોનો ભાગાકાર કરીને સાદું રૂપ આપો.’ વચ્ચે: ‘સામાન્ય અવયવો 5 અને 7ને નિશાની કરો. તેમનો ભાગાકાર કરીને તેમને દૂર કરો.’ જમણે −(2 × 3 × 5 × 7)/(5 × 7 × 11)માં અંશ અને છેદના 5 તથા 7 પર રંગીન રેખાઓ છે. નીચે −(2 × 3)/11 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_008b_new.jpg" />
+</media>
+<media id="fs-id1170655164362" alt="આગળની હરોળમાં ‘પગલું 3. જરૂર હોય તો બાકી રહેલા અવયવોનો ગુણાકાર કરો.’ છે. તેની જમણી બાજુ −6/11 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_008c_new.jpg" />
+</media>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170654113974" class="try">
+<exercise id="fs-id1170654041767">
+<problem id="fs-id1170654221756">
+<para id="fs-id1170653892448">સાદું રૂપ આપો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>69</m:mn></m:mrow><m:mrow><m:mn>120</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654125391">
+<para id="fs-id1170653742729"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>23</m:mn></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653887984" class="try">
+<exercise id="fs-id1170653771822">
+<problem id="fs-id1170654010172">
+<para id="fs-id1170653906336">સાદું રૂપ આપો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>120</m:mn></m:mrow><m:mrow><m:mn>192</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654073679">
+<para id="fs-id1170654015283"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170653768282">અપૂર્ણાંકોને સાદું રૂપ આપવા માટેનાં પગલાં હવે એક સાથે જોઈએ.</para>
+<note id="fs-id1170653905375" class="howto">
+<title>અપૂર્ણાંકને સાદું રૂપ આપો.</title>
+<list id="fs-id1166424912916" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>સામાન્ય અવયવો દર્શાવીને અંશ અને છેદ ફરી લખો.<newline />
+જરૂર હોય તો પહેલાં અંશ અને છેદનું અવિભાજ્ય અવયવીકરણ કરો.</item>
+<item>સમ અપૂર્ણાંકોના ગુણધર્મ વડે સામાન્ય અવયવોનો ભાગાકાર કરીને સાદું રૂપ આપો.</item>
+<item>જરૂર હોય તો બાકી રહેલા અવયવોનો ગુણાકાર કરો.</item>
+</list>
+</note>
+<example id="fs-id1170653915457">
+<exercise id="fs-id1170653915281"><problem id="fs-id1170653758697">
+<para id="fs-id1170654031464">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>5</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654007558">
+<title>ઉકેલ</title>
+
+
+<table id="eip-id1169753205881" class="unnumbered unstyled" aria-label="ઉકેલના ચિત્રમાં બે કૉલમ છે. પહેલી હરોળમાં 5x/(5y) અપૂર્ણાંક છે. બીજી હરોળમાં ‘સામાન્ય અવયવો દર્શાવીને ફરી લખો અને પછી તેમનો ભાગાકાર કરીને તેમને દૂર કરો.’ છે. જમણી બાજુ (5 × x)/(5 × y) છે. અંશ અને છેદના 5 પર રેખા દોરેલી છે. ત્રીજી હરોળમાં ‘સાદું રૂપ આપો.’ છે અને જમણી બાજુ x/y છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry align="center"><m:math><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>5</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>સામાન્ય અવયવો દર્શાવીને ફરી લખો; પછી તેમનો ભાગાકાર કરીને તેમને દૂર કરો.</entry>
+    <entry align="center"><media id="eip-id1169753269750" alt="ચિત્રમાં 5x/(5y)ને સાદું રૂપ આપ્યું છે. સામાન્ય અવયવ 5 ઓળખાય એ રીતે પદાવલી ફરી લખી છે, તે અવયવ દૂર કર્યો છે અને x/y મેળવ્યું છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_05_009_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સાદું રૂપ આપો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mfrac></m:math></entry>
+  </row>
+ </tbody>
+</tgroup>
+</table></solution>
+</exercise></example>
+<note id="fs-id1170653888594" class="try">
+<exercise id="fs-id1170653869251">
+<problem id="fs-id1170653888423">
+<para id="fs-id1170653912078">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>7</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>7</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653902694">
+<para id="fs-id1170653879192"><m:math><m:mrow><m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653737844" class="try">
+<exercise id="fs-id1170653905693">
+<problem id="fs-id1170653917501">
+<para id="fs-id1170653930976">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>a</m:mi></m:mrow><m:mrow><m:mn>3</m:mn><m:mi>b</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653892930">
+<para id="fs-id1170653772190"><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170653910468">
+<title>અપૂર્ણાંકોનો ગુણાકાર કરો</title>
+<para id="fs-id1170653834744">ઘણા લોકોને અપૂર્ણાંકોના સરવાળા અને બાદબાકી કરતાં તેમના ગુણાકાર અને ભાગાકાર વધુ સહેલા લાગે છે. તેથી આપણે અપૂર્ણાંકોના ગુણાકારથી શરૂઆત કરીશું.</para>
+<note id="fs-id1166422646669" class="manipulative-math">હાથવગી સામગ્રીથી ગણિત શીખવાની પ્રવૃત્તિ ‘અપૂર્ણાંકોના ગુણાકારનું નિરૂપણ’ કરવાથી અપૂર્ણાંકોનો ગુણાકાર વધુ સારી રીતે સમજી શકશો.</note>
+<para id="fs-id1170653909812">બે અપૂર્ણાંકોનો ગુણાકાર કેવી રીતે કરવો તે બતાવવા અને રીત યાદ રાખવામાં મદદ કરવા નિરૂપણ વાપરીશું. શરૂઆત કરીએ <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<media id="fs-id1170653895041" alt="એક લંબચોરસના એક હરોળમાં ચાર સરખા લંબચોરસ ભાગ છે. પહેલા ત્રણ ભાગમાં રંગ ભરેલો છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_010_img_new.jpg" />
+</media>
+<para id="fs-id1170654080788">હવે લઈએ <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> જેટલો ભાગ આનો: <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<media id="fs-id1170653889891" alt="એક લંબચોરસના ચાર સરખા ઊભા ભાગ છે અને આડી રેખા દરેકના બે અડધા કરે છે, તેથી કુલ આઠ સરખા ભાગ છે. પહેલા ત્રણ ઊભા ભાગમાં રંગ છે; તેમના નીચેના અડધામાં ત્રાંસી રેખાઓ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_011_img_new.jpg" />
+</media>
+<para id="fs-id1170653869811">ધ્યાન આપો કે હવે આખી વસ્તુના 8 સરખા ભાગ થયા છે. તેથી <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170652622274">અપૂર્ણાંકોનો ગુણાકાર કરવા તેમના અંશોનો ગુણાકાર અને છેદોનો ગુણાકાર કરીએ છીએ.</para>
+<note id="fs-id1170653801922">
+<title>અપૂર્ણાંકોનો ગુણાકાર</title>
+<para id="fs-id1170654115792">જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi></m:mrow></m:math> એવી સંખ્યાઓ હોય કે <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> તો</para>
+<equation id="fs-id1170653750445" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>d</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mi>d</m:mi></m:mrow></m:mfrac></m:mrow></m:math></equation>
+<para id="fs-id1170653911384">અપૂર્ણાંકોનો ગુણાકાર કરવા અંશોનો ગુણાકાર કરો અને છેદોનો ગુણાકાર કરો.</para>
+</note>
+<para id="fs-id1170654066406">જ્યારે <term class="no-emphasis" id="term-00006">અપૂર્ણાંકોનો ગુણાકાર કરીએ</term> ત્યારે પણ ધન અને ઋણ સંખ્યાઓના ગુણધર્મો લાગુ પડે છે. પહેલાં નક્કી કરવું સારું કે <term class="no-emphasis" id="term-00007">ગુણનફળ</term>નું ચિહ્ન શું હશે. આ ઉદાહરણમાં, <link target-id="fs-id1170652633002" />આપણે ઋણ અને ધન સંખ્યાનો ગુણાકાર કરીશું, તેથી ગુણનફળ ઋણ હશે.</para>
+<example id="fs-id1170652633002"><exercise id="fs-id1170654286473">
+<problem id="fs-id1170654025836">
+<para id="fs-id1170653750622">ગુણાકાર કરો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>7</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654012761">
+<title>ઉકેલ</title>
+<para id="fs-id1170654030468">પહેલું પગલું ગુણનફળનું ચિહ્ન શોધવાનું છે. ચિહ્નો જુદાં હોવાથી ગુણનફળ ઋણ છે.</para>
+<table id="eip-201" summary="આ કોષ્ટકમાં બે અપૂર્ણાંકોના ગુણાકારનાં પગલાં છે; દરેક ગાણિતિક ક્રિયા અને તેનાથી મળતી પદાવલી દર્શાવેલી છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>7</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણનફળનું ચિહ્ન નક્કી કરો; ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>11</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow><m:mrow><m:mn>12</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>શું અંશ અને છેદમાં કોઈ સામાન્ય અવયવ છે? ના.</entry>
+    <entry><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>55</m:mn></m:mrow><m:mrow><m:mn>84</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170653867920" class="try">
+<exercise id="fs-id1170653910244">
+<problem id="fs-id1170653750640">
+<para id="fs-id1170653887277">ગુણાકાર કરો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>28</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654008561">
+<para id="fs-id1170654202807"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>21</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654126078" class="try">
+<exercise id="fs-id1170654026109">
+<problem id="fs-id1170654061006">
+<para id="fs-id1170654061283">ગુણાકાર કરો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653900368">
+<para id="fs-id1170654285392"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654026520">અપૂર્ણાંકને પૂર્ણાંક વડે ગુણતી વખતે પૂર્ણાંકને અપૂર્ણાંક તરીકે લખવાથી મદદ મળી શકે. કોઈ પણ પૂર્ણાંક, <emphasis effect="italics">a</emphasis>ને આ રીતે લખી શકાય: <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mn>1</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> તેથી, ઉદાહરણ તરીકે, <m:math><m:mrow><m:mn>3</m:mn><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>1</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<example id="fs-id1170653798020">
+<exercise id="fs-id1170653758557"><problem id="fs-id1170653870152">
+<para id="fs-id1170653907777">ગુણાકાર કરો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>12</m:mn></m:mrow><m:mn>5</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−20</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654080945">
+<title>ઉકેલ</title>
+<para id="fs-id1166420388500">દર્શાવેલાં બે ઋણ ચિહ્નોના ગુણાકારથી સહગુણક ધન થાય છે. અંતિમ પદાવલી 48xનું ચિહ્ન xની કિંમત પર આધારિત છે.</para>
+
+
+<table id="eip-id1169753124719" class="unnumbered unstyled" aria-label="બે કૉલમવાળા ઉકેલમાં શરૂઆત (−12/5)(−20x)થી થાય છે. 20xને અપૂર્ણાંક તરીકે લખતાં (12/5)(20x/1) મળે છે. ગુણાકાર પછી (12 × 20x)/(5 × 1) થાય છે. 20 = 4 × 5 લખીને (12 × 4 × 5x)/(5 × 1)માં સામાન્ય અવયવ 5 દૂર કર્યો છે. અંતિમ જવાબ 48x છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry align="center"><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>12</m:mn><m:mn>5</m:mn></m:mfrac><m:mo stretchy="false">(</m:mo><m:mn>−20</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry>લખો <m:math><m:mn>20</m:mn><m:mi>x</m:mi></m:math> ને અપૂર્ણાંક તરીકે.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mn>12</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>20</m:mn><m:mi>x</m:mi></m:mrow><m:mn>1</m:mn></m:mfrac><m:mo>)</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>સામાન્ય અવયવ 5 દર્શાવવા 20ને ફરી લખો અને તે અવયવનો ભાગાકાર કરીને તેને દૂર કરો.</entry>
+    <entry align="center"><media id="eip-id1169747225310" alt="(12 × 4 × 5x)/(5 × 1) પદાવલી છે; અંશ અને છેદના 5 પર રેખા દોરીને તેમને દૂર કર્યા છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_05_012_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સાદું રૂપ આપો.</entry>
+    <entry align="center"><m:math><m:mn>48</m:mn><m:mi>x</m:mi></m:math></entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id1170653904505" class="try">
+<exercise id="fs-id1170654238673">
+<problem id="fs-id1170654113920">
+<para id="fs-id1170654148643">ગુણાકાર કરો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653761249">
+<para id="fs-id1170653743318"><m:math><m:mrow><m:mn>−33</m:mn><m:mi>a</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654286428" class="try">
+<exercise id="fs-id1170653897814">
+<problem id="fs-id1170654165872">
+<para id="fs-id1170652633105">ગુણાકાર કરો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−14</m:mn><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654185150">
+<para id="fs-id1170654129788"><m:math><m:mrow><m:mn>−26</m:mn><m:mi>b</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654110168">
+<title>અપૂર્ણાંકોનો ભાગાકાર કરો</title>
+<para id="fs-id1170653750930">હવે અપૂર્ણાંકોનો ગુણાકાર આવડે છે, તેથી આપણે ભાગાકાર શીખવા લગભગ તૈયાર છીએ. પહેલાં થોડા નવા શબ્દો સમજીએ.</para>
+<para id="fs-id1170654185172">અપૂર્ણાંકનો <term id="term-00008">વ્યસ્ત</term> મેળવવા તેને ઊલટાવીએ છીએ: અંશને છેદમાં અને છેદને અંશમાં મૂકો. આ અપૂર્ણાંક <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math>નો વ્યસ્ત છે <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170654236747">ધ્યાન આપો કે <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> સંખ્યા અને તેના વ્યસ્તનો ગુણાકાર 1 થાય છે.</para>
+<para id="fs-id1170653770746">બે સંખ્યાઓના ગુણાકારથી <term class="no-emphasis" id="term-00009">ગુણનફળ</term> ધન 1 મળે તે માટે બંને સંખ્યાઓનાં ચિહ્નો સરખાં હોવાં જોઈએ. તેથી સંખ્યા અને તેના વ્યસ્તનાં ચિહ્નો સરખાં હોય છે.</para>
+<para id="fs-id1170654128489"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac></m:mrow></m:math>નો વ્યસ્ત છે <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> કારણ કે <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<note id="fs-id1170654286462">
+<title>વ્યસ્ત</title>
+<para id="fs-id1170653743664">આનો <emphasis effect="bold">વ્યસ્ત</emphasis> જુઓ: <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math>નો વ્યસ્ત છે <m:math><m:mrow><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170654008541">સંખ્યા અને તેના વ્યસ્તનો ગુણાકાર એક થાય છે <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<note id="fs-id1166422659493" class="manipulative-math">હાથવગી સામગ્રીથી ગણિત શીખવાની પ્રવૃત્તિ ‘અપૂર્ણાંકોના ભાગાકારનું નિરૂપણ’ કરવાથી અપૂર્ણાંકોનો ભાગાકાર વધુ સારી રીતે સમજી શકશો.</note>
+<para id="fs-id1170654235623">અપૂર્ણાંકોનો ભાગાકાર કરવા પહેલા અપૂર્ણાંકને બીજા અપૂર્ણાંકના વ્યસ્ત વડે ગુણીએ છીએ.</para>
+<note id="fs-id1170652619282">
+<title>અપૂર્ણાંકોનો ભાગાકાર</title>
+<para id="fs-id1170654189237">જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi></m:mrow></m:math> એવી સંખ્યાઓ હોય કે <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> તો</para>
+<equation id="fs-id1170654237350" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>d</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mi>d</m:mi><m:mi>c</m:mi></m:mfrac></m:mrow></m:math></equation>
+<para id="fs-id1170653908384">અપૂર્ણાંકોનો ભાગાકાર કરવા પહેલા અપૂર્ણાંકને બીજા અપૂર્ણાંકના વ્યસ્ત વડે ગુણીએ છીએ.</para>
+</note>
+<para id="fs-id1170653745038">આ શરત જણાવવી જરૂરી છે: <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math> જેથી શૂન્ય વડે ભાગાકાર ન થાય!</para>
+<example id="fs-id1170652619384"><exercise id="fs-id1170654010222">
+<problem id="fs-id1170654125521">
+<para id="fs-id1170653786596">ભાગાકાર કરો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mi>n</m:mi><m:mn>5</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654239446">
+<title>ઉકેલ</title>
+<table id="eip-381" summary="વ્યસ્ત વાપરીને સંખ્યાત્મક અપૂર્ણાંકને બીજગણિતીય અપૂર્ણાંક વડે ભાગવાની રીત પગલાંવાર દર્શાવેલી છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mi>n</m:mi><m:mn>5</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ભાગાકાર કરવા પહેલા અપૂર્ણાંકને બીજા અપૂર્ણાંકના વ્યસ્ત વડે ગુણો.</entry>
+    <entry><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>5</m:mn><m:mi>n</m:mi></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi></m:mrow></m:mfrac></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654007131" class="try">
+<exercise id="fs-id1170653744899">
+<problem id="fs-id1170654068819">
+<para id="fs-id1170653756083">ભાગાકાર કરો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mi>p</m:mi><m:mn>7</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653924388">
+<para id="fs-id1170653879363"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>21</m:mn></m:mrow><m:mrow><m:mn>5</m:mn><m:mi>p</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654149749" class="try">
+<exercise id="fs-id1170654114632">
+<problem id="fs-id1170654114180">
+<para id="fs-id1170654116769">ભાગાકાર કરો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mi>q</m:mi><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654284311">
+<para id="fs-id1170654239718"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>8</m:mn><m:mi>q</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170654212332">
+<exercise id="fs-id1170653738807"><problem id="fs-id1170654150092">
+<para id="fs-id1170654022376">ભાગફળ શોધો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mn>18</m:mn></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:mn>27</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654010810">
+<title>ઉકેલ</title>
+<table id="eip-id1169747240983" class="unnumbered unstyled" aria-label="બે કૉલમવાળા ઉકેલમાં (−7/18) ÷ (−14/27) છે. પહેલા અપૂર્ણાંકને બીજાના વ્યસ્ત વડે ગુણતાં (−7/18) × (−27/14) મળે છે. બે ઋણ ચિહ્નોથી ધન ગુણનફળ મળે છે: (7 × 27)/(18 × 14). સામાન્ય અવયવો બતાવવા (7 × 9 × 3)/(9 × 2 × 7 × 2) લખ્યું છે. અંશ અને છેદમાંથી 7 તથા 9 દૂર કરતાં 3/(2 × 2) અને અંતે 3/4 મળે છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry align="center"><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mn>18</m:mn></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mn>−</m:mn><m:mspace width="0.2em" /><m:mfrac><m:mn>14</m:mn><m:mn>27</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>ભાગાકાર કરવા પહેલા અપૂર્ણાંકને બીજા અપૂર્ણાંકના વ્યસ્ત વડે ગુણો.</entry>
+    <entry align="center"><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mn>18</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mn>−</m:mn><m:mspace width="0.2em" /><m:mfrac><m:mn>27</m:mn><m:mn>14</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણનફળનું ચિહ્ન નક્કી કરો અને પછી ગુણાકાર કરો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mrow><m:mn>7</m:mn><m:mo>⋅</m:mo><m:mn>27</m:mn></m:mrow><m:mrow><m:mn>18</m:mn><m:mo>⋅</m:mo><m:mn>14</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>સામાન્ય અવયવો દર્શાવીને ફરી લખો.</entry>
+    <entry align="center"><media id="eip-id1169750795691" alt="અપૂર્ણાંક (7 × 9 × 3)/(9 × 2 × 7 × 2)માં અંશ અને છેદના સામાન્ય અવયવો 7 અને 9 પર રેખા દોરીને તેમને દૂર કર્યા છે. અંશમાં 3 અને છેદમાં 2 × 2 બાકી રહે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_05_013_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સામાન્ય અવયવો દૂર કરો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>2</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>સાદું રૂપ આપો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:math></entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id1170654159469" class="try">
+<exercise id="fs-id1170654022523">
+<problem id="fs-id1170653800619">
+<para id="fs-id1170654114238">ભાગફળ શોધો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>27</m:mn></m:mrow></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>35</m:mn></m:mrow><m:mrow><m:mn>36</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653898026">
+<para id="fs-id1170653898028"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653917305" class="try">
+<exercise id="fs-id1170653790946">
+<problem id="fs-id1170653790948">
+<para id="fs-id1170653991340">ભાગફળ શોધો: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>14</m:mn></m:mrow></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>28</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653767637">
+<para id="fs-id1170654166274"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170653930534">અપૂર્ણાંકોનો ગુણાકાર કે ભાગાકાર કરવાનાં પગલાં યાદ રાખવાની ઘણી રીતો છે. એક રીત એ છે કે નીચેની સૂચનાઓ જાતે બોલો. દરેક દાખલો કરતી વખતે એમ કરશો તો પગલાં યાદ રહી જશે.</para>
+<list id="fs-id1166424848300" list-type="bulleted" bullet-style="bullet">
+<item>‘અપૂર્ણાંકોનો ગુણાકાર કરવા અંશોનો ગુણાકાર કરો અને છેદોનો ગુણાકાર કરો.’</item>
+<item>‘અપૂર્ણાંકોનો ભાગાકાર કરવા પહેલા અપૂર્ણાંકને બીજા અપૂર્ણાંકના વ્યસ્ત વડે ગુણો.’</item>
+</list>
+<para id="fs-id1170653795085">બીજી રીત બે ઉદાહરણો યાદ રાખવાની છે:</para>
+<media id="fs-id1170654007613" alt="ચિત્રમાં બે કૉલમ છે. પહેલીમાં ‘બે પિઝાનો ચોથો ભાગ એટલે અડધો પિઝા.’ છે. નીચે બાજુબાજુ બે પિઝા છે; દરેકની વચ્ચેની રેખા અડધો ભાગ બતાવે છે અને અડધા ભાગોને 1/2 નામ આપ્યું છે. નીચે ક્રમથી 2 × 1/4, (2/1) × (1/4), 2/4 અને 1/2 છે. બીજી કૉલમમાં ‘બે ડૉલરમાં આઠ ક્વાર્ટર હોય છે.’ છે. નીચે ચાર-ચારની બે હરોળમાં આઠ ક્વાર્ટરના સિક્કા છે. નીચે ક્રમથી 2 ÷ 1/4, (2/1) ÷ (1/4), (2/1) × (4/1) અને જવાબ 8 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_016_img_new.jpg" />
+</media>
+<para id="fs-id1170654286468">કેટલાક અપૂર્ણાંકોના અંશ કે છેદમાં પણ અપૂર્ણાંક હોય છે. જે અપૂર્ણાંકના અંશ કે છેદમાં અપૂર્ણાંક હોય તેને કહે છે <emphasis effect="bold">જટિલ અપૂર્ણાંક</emphasis>.</para>
+<note id="fs-id1170653887308">
+<title>જટિલ અપૂર્ણાંક</title>
+<para id="fs-id1170653984898">એક <term id="term-00010">જટિલ અપૂર્ણાંક</term> એ એવો અપૂર્ણાંક છે જેના અંશ કે છેદમાં અપૂર્ણાંક હોય.</para>
+</note>
+<para id="fs-id1170653914822">જટિલ અપૂર્ણાંકનાં થોડાં ઉદાહરણો:</para>
+<equation id="fs-id1170652622911" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>6</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow><m:mn>3</m:mn></m:mfrac><m:mspace width="1em" /><m:mfrac><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:mfrac><m:mspace width="1em" /><m:mfrac><m:mrow><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></equation>
+<para id="fs-id1170652622719">જટિલ અપૂર્ણાંકને સાદું રૂપ આપવા યાદ રાખીએ કે અપૂર્ણાંક રેખા એટલે <term class="no-emphasis" id="term-00011">ભાગાકાર</term>. ઉદાહરણ તરીકે, જટિલ અપૂર્ણાંક <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math> નો અર્થ છે <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<example id="fs-id1170654236980">
+<exercise id="fs-id1170654076124"><problem id="fs-id1170654076126">
+<para id="fs-id1170653897982">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653896387">
+<title>ઉકેલ</title>
+<table id="eip-id1169752928919" class="unnumbered unstyled" aria-label="બે કૉલમવાળા ઉકેલમાં જટિલ અપૂર્ણાંક (3/4)/(5/8) છે. તેને 3/4 ÷ 5/8 તરીકે લખ્યું છે. પહેલા અપૂર્ણાંકને બીજાના વ્યસ્ત વડે ગુણતાં (3/4) × (8/5) મળે છે. પછી (3 × 8)/(4 × 5), અને સામાન્ય અવયવો બતાવતાં (3 × 4 × 2)/(4 × 5) મળે છે. અંશ અને છેદમાંથી 4 દૂર કરતાં અંતે 6/5 મળે છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry align="center"><m:math><m:mfrac><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ભાગાકાર તરીકે ફરી લખો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>પહેલા અપૂર્ણાંકને બીજા અપૂર્ણાંકના વ્યસ્ત વડે ગુણો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mn>8</m:mn><m:mn>5</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>8</m:mn></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>સામાન્ય અવયવો શોધો.</entry>
+    <entry align="center"><media id="eip-id1169753189361" alt="અપૂર્ણાંક (3 × 4 × 2)/(4 × 5)ના અંશ અને છેદમાંથી સામાન્ય અવયવ 4 દૂર કરીને સાદું રૂપ આપવાનું ઉદાહરણ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_05_014_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સામાન્ય અવયવોનો ભાગાકાર કરીને સાદું રૂપ આપો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mn>6</m:mn><m:mn>5</m:mn></m:mfrac></m:math></entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table></solution>
+</exercise></example>
+<note id="fs-id1170654034116" class="try">
+<exercise id="fs-id1170654239534">
+<problem id="fs-id1170654122792">
+<para id="fs-id1170654122795">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654080854">
+<para id="fs-id1170653901056"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653874319" class="try">
+<exercise id="fs-id1170653902065">
+<problem id="fs-id1170653902067">
+<para id="fs-id1170654128462">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mn>6</m:mn><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654061219">
+<para id="fs-id1170652622093"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>14</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170653903131">
+<exercise id="fs-id1170652618854"><problem id="fs-id1170652618856">
+<para id="fs-id1170654007229">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652631581">
+<title>ઉકેલ</title>
+<table id="eip-id1169754096098" class="unnumbered unstyled" aria-label="ઉકેલના ચિત્રમાં બે કૉલમ છે. પહેલી હરોળમાં (x/2)/(xy/6) છે. બીજી હરોળમાં ‘ભાગાકાર તરીકે ફરી લખો.’ અને જમણી બાજુ x/2 ÷ xy/6 છે. ત્રીજી હરોળમાં ‘પહેલા અપૂર્ણાંકને બીજાના વ્યસ્ત વડે ગુણો.’ અને જમણી બાજુ (x/2) × (6/(xy)) છે. આગળ ‘ગુણાકાર કરો.’ અને જમણી બાજુ (x × 6)/(2 × xy) છે. પછી ‘સામાન્ય અવયવો શોધો.’ અને જમણી બાજુ (x × 3 × 2)/(2 × x × y) છે; અંશ અને છેદના x તથા 2 પર રેખા દોરેલી છે. છેલ્લે ‘સામાન્ય અવયવોનો ભાગાકાર કરીને સાદું રૂપ આપો.’ અને જમણી બાજુ 3/y છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry align="center"><m:math><m:mfrac><m:mrow><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ભાગાકાર તરીકે ફરી લખો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>પહેલા અપૂર્ણાંકને બીજા અપૂર્ણાંકના વ્યસ્ત વડે ગુણો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mn>6</m:mn><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⋅</m:mo><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>સામાન્ય અવયવો શોધો.</entry>
+    <entry align="center"><media id="eip-id1169748377665" alt="અપૂર્ણાંક (x × 3 × 2)/(2 × x × y)માં અંશ અને છેદના સામાન્ય અવયવો x અને 2 પર લાલ રેખા દોરીને તેમને દૂર કર્યા છે. બાકી રહેલો અપૂર્ણાંક 3/y છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_05_015_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સામાન્ય અવયવોનો ભાગાકાર કરીને સાદું રૂપ આપો.</entry>
+    <entry align="center"><m:math><m:mfrac><m:mn>3</m:mn><m:mi>y</m:mi></m:mfrac></m:math></entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id1170654237541" class="try">
+<exercise id="fs-id1170654237545">
+<problem id="fs-id1170654238021">
+<para id="fs-id1170654238023">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mi>a</m:mi><m:mn>8</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>a</m:mi><m:mi>b</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652622839">
+<para id="fs-id1170652622841"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>4</m:mn><m:mi>b</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654113674" class="try">
+<exercise id="fs-id1170654113677">
+<problem id="fs-id1170654150057">
+<para id="fs-id1170654150060">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mi>p</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654234015">
+<para id="fs-id1170654234017"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mrow><m:mi>q</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654066948">
+<title>અપૂર્ણાંક રેખાવાળી પદાવલીઓને સાદું રૂપ આપો</title>
+<para id="fs-id1170653878324">અપૂર્ણાંકના અંશ અને છેદને જુદી પાડતી રેખાને અપૂર્ણાંક રેખા કહે છે. એક <term class="no-emphasis" id="term-00012">અપૂર્ણાંક રેખા</term> જૂથ દર્શાવતા ચિહ્ન તરીકે કામ કરે છે. તેથી ક્રિયાઓના ક્રમ મુજબ પહેલાં અંશને અને પછી છેદને સાદું રૂપ આપીએ છીએ. ત્યાર બાદ ભાગાકાર કરીએ છીએ.</para>
+<para id="fs-id1170654032774">આ પદાવલીને સાદું રૂપ આપવા, <m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> પહેલાં અંશ અને છેદને અલગઅલગ સાદું રૂપ આપીએ છીએ. પછી ભાગાકાર કરીએ છીએ.</para>
+<equation id="fs-id1170653894422" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:math></equation>
+<equation id="fs-id1170654068842" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></equation>
+<equation id="fs-id1170654150959" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></equation>
+<note id="fs-id1170654286084" class="howto">
+<title>અપૂર્ણાંક રેખાવાળી પદાવલીને સાદું રૂપ આપો.</title>
+<list id="fs-id1166424867009" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>અંશની પદાવલીને સાદું રૂપ આપો. છેદની પદાવલીને સાદું રૂપ આપો.</item>
+<item>અપૂર્ણાંકને સાદું રૂપ આપો.</item>
+</list>
+</note>
+<example id="fs-id1170654032703"><exercise id="fs-id1170654032705">
+<problem id="fs-id1170653910175">
+<para id="fs-id1170653910178">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653752520">
+<title>ઉકેલ</title>
+<para id="fs-id1170654164574"><table id="eip-149" class="unnumbered unstyled" summary="ક્રિયાઓનો ક્રમ વાપરીને ગાણિતિક પદાવલીને પગલાંવાર સાદું રૂપ આપ્યું છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ક્રિયાઓનો ક્રમ વાપરીને અંશ અને છેદને સાદું રૂપ આપો.</entry>
+    <entry><m:math><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>અંશ અને છેદને સાદું રૂપ આપો.</entry>
+    <entry><m:math><m:mfrac><m:mrow><m:mn>−2</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac></m:math></entry>
+  </row>
+   <row>
+    <entry>સાદું રૂપ આપો. ઋણને ધન વડે ભાગતાં ઋણ મળે છે.</entry>
+    <entry><m:math><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></para>
+</solution>
+</exercise></example><note id="fs-id1170654237820" class="try">
+<exercise id="fs-id1170654283293">
+<problem id="fs-id1170654283295">
+<para id="fs-id1170654283297">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654061370">
+<para id="fs-id1170654061372"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654034091" class="try">
+<exercise id="fs-id1170653797685">
+<problem id="fs-id1170653797687">
+<para id="fs-id1170654154932">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mn>6</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653990815">
+<para id="fs-id1170653990817"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170652630527">અપૂર્ણાંકમાં ઋણ ચિહ્ન ક્યાં મૂકવું? સામાન્ય રીતે તે અપૂર્ણાંકની આગળ હોય છે, પરંતુ ક્યારેક ઋણ અંશવાળો કે ઋણ છેદવાળો અપૂર્ણાંક પણ જોવા મળે છે. યાદ રાખો કે અપૂર્ણાંક ભાગાકાર દર્શાવે છે. અંશ અને છેદનાં ચિહ્નો જુદાં હોય ત્યારે ભાગફળ ઋણ હોય છે.</para>
+<equation id="fs-id1170654185949" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mtd><m:mtd /><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mtext>ઋણ</m:mtext></m:mrow><m:mrow><m:mtext>ધન</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>ઋણ</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>−3</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mtd><m:mtd /><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mtext>ધન</m:mtext></m:mrow><m:mrow><m:mtext>ઋણ</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>ઋણ</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<note id="fs-id1170653878972">
+<title>અપૂર્ણાંકમાં ઋણ ચિહ્નનું સ્થાન</title>
+<para id="fs-id1170654286245">કોઈ પણ ધન સંખ્યાઓ માટે, <emphasis effect="italics">a</emphasis> અને <emphasis effect="italics">b</emphasis>,</para>
+<equation id="fs-id1170654066922" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow><m:mi>b</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>a</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>b</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math></equation>
+</note>
+<example id="fs-id1170654236468"><exercise id="fs-id1170652633025">
+<problem id="fs-id1170652633027">
+<para id="fs-id1170652633029">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>−3</m:mn><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654286156">
+<title>ઉકેલ</title>
+<table id="eip-599" summary="આ કોષ્ટકમાં પૂર્ણાંકોની ગણતરી ધરાવતી જટિલ સંમેય પદાવલીને પગલાંવાર સાદું રૂપ આપ્યું છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mfrac><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>−3</m:mn><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mfrac><m:mrow><m:mn>−12</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>−6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>સાદું રૂપ આપો.</entry>
+    <entry><m:math><m:mfrac><m:mrow><m:mn>−24</m:mn></m:mrow><m:mrow><m:mn>−8</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+   <row>
+    <entry>ભાગાકાર કરો.</entry>
+    <entry><m:math><m:mn>3</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+
+</solution>
+</exercise></example><note id="fs-id1170654235869" class="try">
+<exercise id="fs-id1170654235872">
+<problem id="fs-id1170654235874">
+<para id="fs-id1170653885349">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>−5</m:mn><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654038199">
+<para id="fs-id1170654283278">4</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170652641207" class="try">
+<exercise id="fs-id1170652641210">
+<problem id="fs-id1170654073995">
+<para id="fs-id1170654073997">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>−5</m:mn><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654060112">
+<para id="fs-id1170654060114">2</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170653914238">
+<title>શબ્દસમૂહોને અપૂર્ણાંકવાળી પદાવલીઓમાં લખો</title>
+<para id="fs-id1170654164343">હવે અપૂર્ણાંકો સાથે થોડું કામ કર્યા પછી આપણે એવા શબ્દસમૂહોને પદાવલીમાં લખવા તૈયાર છીએ જેમાં અપૂર્ણાંક આવે.</para>
+<para id="fs-id1170653890410">અંગ્રેજીમાં ‘quotient’ એટલે <term class="no-emphasis" id="term-00013">ભાગફળ</term> અને ‘ratio’ એટલે <term class="no-emphasis" id="term-00014">ગુણોત્તર</term>. આ શબ્દો ઘણી વાર અપૂર્ણાંકનું વર્ણન કરવા વપરાય છે. ‘ભાગફળ’ શબ્દ <term class="no-emphasis" id="term-00015">ભાગાકાર</term>નું પરિણામ દર્શાવે છે. આ બેનું ભાગફળ: <m:math><m:mi>a</m:mi></m:math> અને <m:math><m:mi>b</m:mi></m:math> એ ભાગાકારનું પરિણામ છે. ભાગીએ <m:math><m:mi>a</m:mi></m:math>ને આના વડે: <m:math><m:mi>b</m:mi><m:mo>,</m:mo></m:math> અથવા <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<example id="fs-id1170653880466">
+<exercise id="fs-id1170654281370">
+<problem id="fs-id1170654281372">
+<para id="fs-id1170654281374">આ શબ્દસમૂહને બીજગણિતીય પદાવલીમાં લખો: <emphasis effect="italics">m</emphasis> અને <emphasis effect="italics">n</emphasis>ના તફાવતને <emphasis effect="italics">p</emphasis> વડે ભાગતાં મળતું ભાગફળ.</para>
+</problem>
+<solution id="fs-id1170654154539">
+<title>ઉકેલ</title>
+<para id="fs-id1170654235420">આપણે <emphasis effect="italics">ભાગફળ</emphasis> શોધીએ છીએ—<emphasis effect="italics" /><emphasis effect="italics">m</emphasis> અને <emphasis effect="italics">n</emphasis>ના તફાવતને <emphasis effect="italics" /><emphasis effect="italics">p</emphasis> વડે ભાગતાં મળતું પરિણામ. એટલે ભાગાકાર કરીએ: <m:math><m:mrow><m:mi>m</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>n</m:mi><m:mspace width="0.2em" /><m:mtext>ના તફાવતને આના વડે ભાગો:</m:mtext><m:mspace width="0.2em" /><m:mi>p</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1166425083474" class="unnumbered"><label /><m:math><m:mrow><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mi>p</m:mi></m:mfrac></m:mrow></m:math></equation>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170654154979" class="try">
+<exercise id="fs-id1170654154982">
+<problem id="fs-id1170652623002">
+<para id="fs-id1170652623005">આ શબ્દસમૂહને બીજગણિતીય પદાવલીમાં લખો: <emphasis effect="italics">a</emphasis> અને <emphasis effect="italics">b</emphasis>ના તફાવતને <emphasis effect="italics">cd</emphasis> વડે ભાગતાં મળતું ભાગફળ.</para>
+</problem>
+<solution id="fs-id1170654292142">
+<para id="fs-id1170654292144"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow><m:mrow><m:mi>c</m:mi><m:mi>d</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654115668" class="try">
+<exercise id="fs-id1170653794594">
+<problem id="fs-id1170653794596">
+<para id="fs-id1170654150368">આ શબ્દસમૂહને બીજગણિતીય પદાવલીમાં લખો: <m:math><m:mi>p</m:mi></m:math> અને <m:math><m:mrow><m:mi>q</m:mi><m:mo>,</m:mo></m:mrow></m:math>ના સરવાળાને <m:math><m:mi>r</m:mi></m:math> વડે ભાગતાં મળતું ભાગફળ.</para>
+</problem>
+<solution id="fs-id1170653904815">
+<para id="fs-id1170653904817"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow><m:mi>r</m:mi></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654113932" class="key-concepts">
+<title>મુખ્ય ખ્યાલો</title>
+<list id="fs-id1170654149151" list-type="bulleted" bullet-style="bullet">
+<item><emphasis effect="bold">સમ અપૂર્ણાંકોનો ગુણધર્મ:</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> એવી સંખ્યાઓ હોય કે <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> તો<newline />
+<m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac></m:mrow></m:math> અને <m:math><m:mrow><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><emphasis effect="bold">અપૂર્ણાંકોનો ભાગાકાર:</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi></m:mrow></m:math> એવી સંખ્યાઓ હોય કે <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> તો <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>d</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mi>d</m:mi><m:mi>c</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> અપૂર્ણાંકોનો ભાગાકાર કરવા પહેલા અપૂર્ણાંકને બીજા અપૂર્ણાંકના વ્યસ્ત વડે ગુણો.</item>
+<item><emphasis effect="bold">અપૂર્ણાંકોનો ગુણાકાર:</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi></m:mrow></m:math> એવી સંખ્યાઓ હોય કે <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> તો <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>d</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mi>d</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> અપૂર્ણાંકોનો ગુણાકાર કરવા અંશોનો ગુણાકાર કરો અને છેદોનો ગુણાકાર કરો.</item>
+<item><emphasis effect="bold">અપૂર્ણાંકમાં ઋણ ચિહ્નનું સ્થાન:</emphasis> કોઈ પણ ધન સંખ્યાઓ માટે, <m:math><m:mrow><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mfrac><m:mrow><m:mo>−</m:mo><m:mi>a</m:mi></m:mrow><m:mi>b</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>a</m:mi><m:mrow><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><emphasis effect="bold">એકનો ગુણધર્મ:</emphasis> <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:math> શૂન્ય સિવાયની કોઈ પણ સંખ્યાને તે જ સંખ્યા વડે ભાગતાં એક મળે છે.</item>
+<item><emphasis effect="bold">અપૂર્ણાંકને સાદું રૂપ આપો</emphasis>
+<list id="fs-id1170652620834" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>સામાન્ય અવયવો દર્શાવીને અંશ અને છેદ ફરી લખો. જરૂર હોય તો પહેલાં અંશ અને છેદનું અવિભાજ્ય અવયવીકરણ કરો.</item>
+<item>સમ અપૂર્ણાંકોના ગુણધર્મ વડે સામાન્ય અવયવોનો ભાગાકાર કરીને સાદું રૂપ આપો.</item>
+<item>બાકી રહેલા અવયવોનો ગુણાકાર કરો.</item>
+</list></item>
+<item><emphasis effect="bold">અપૂર્ણાંક રેખાવાળી પદાવલીને સાદું રૂપ આપો</emphasis>
+<list id="fs-id1170654237200" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>અંશની પદાવલીને સાદું રૂપ આપો. છેદની પદાવલીને સાદું રૂપ આપો.</item>
+<item>અપૂર્ણાંકને સાદું રૂપ આપો.</item>
+</list></item></list>
+</section>
+<section id="fs-id1170653798436" class="section-exercises">
+<section id="fs-id1170653798439" class="practice-perfect">
+<title>અભ્યાસથી કુશળતા મેળવો</title>
+<para id="fs-id1170654009912"><emphasis effect="bold">સમ અપૂર્ણાંકો શોધો</emphasis></para>
+<para id="fs-id1166424799887">નીચેના અભ્યાસોમાં આપેલા અપૂર્ણાંકના ત્રણ સમ અપૂર્ણાંકો શોધો. ચિત્રો કે બીજગણિત વડે તમારી રીત બતાવો.</para>
+<exercise id="fs-id1170652631003">
+<problem id="fs-id1170654284602">
+<para id="fs-id1170654284605"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652630960">
+<para id="fs-id1170652630963"><m:math><m:mrow><m:mfrac><m:mn>6</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>12</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac></m:mrow></m:math> જવાબો જુદા હોઈ શકે</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654047650">
+<problem id="fs-id1170654047652">
+<para id="fs-id1170654041757"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654146996">
+<problem id="fs-id1170654146998">
+<para id="fs-id1170653881781"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653761406">
+<para id="fs-id1170652630030"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>27</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>20</m:mn></m:mrow><m:mrow><m:mn>36</m:mn></m:mrow></m:mfrac></m:mrow></m:math> જવાબો જુદા હોઈ શકે</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654125584">
+<problem id="fs-id1170654125587">
+<para id="fs-id1170654125897"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654284483"><emphasis effect="bold">અપૂર્ણાંકોને સાદું રૂપ આપો</emphasis></para>
+<para id="fs-id1166422693579">નીચેના અભ્યાસોમાં સાદું રૂપ આપો.</para>
+<exercise id="fs-id1170654138042">
+<problem id="fs-id1170653905059">
+<para id="fs-id1170653905061"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>40</m:mn></m:mrow><m:mrow><m:mn>88</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653850113">
+<para id="fs-id1170653850115"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653738428">
+<problem id="fs-id1170653738431">
+<para id="fs-id1170654235939"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>63</m:mn></m:mrow><m:mrow><m:mn>99</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654285115">
+<problem id="fs-id1170654285117">
+<para id="fs-id1170654114777"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>108</m:mn></m:mrow><m:mrow><m:mn>63</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654061796">
+<para id="fs-id1170654286653"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>12</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654235458">
+<problem id="fs-id1170654150970">
+<para id="fs-id1170654150972"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>104</m:mn></m:mrow><m:mrow><m:mn>48</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653881406">
+<problem id="fs-id1170653881408">
+<para id="fs-id1170653881410"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>120</m:mn></m:mrow><m:mrow><m:mn>252</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653815342">
+<para id="fs-id1170653815344"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>21</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652630515">
+<problem id="fs-id1170654022313">
+<para id="fs-id1170654022315"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>182</m:mn></m:mrow><m:mrow><m:mn>294</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652630553">
+<problem id="fs-id1170654285056">
+<para id="fs-id1170654285058"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>12</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654022334">
+<para id="fs-id1170654022336"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mi>x</m:mi><m:mrow><m:mn>4</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652631726">
+<problem id="fs-id1170654047037">
+<para id="fs-id1170654047039"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>32</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654286554">
+<problem id="fs-id1170654047075">
+<para id="fs-id1170654047077"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>14</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>21</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654184563">
+<para id="fs-id1170654184565"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654284567">
+<problem id="fs-id1170654284570">
+<para id="fs-id1170654284572"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>24</m:mn><m:mi>a</m:mi></m:mrow><m:mrow><m:mn>32</m:mn><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170653740875"><emphasis effect="bold">અપૂર્ણાંકોનો ગુણાકાર કરો</emphasis></para>
+<para id="fs-id1166424880356">નીચેના અભ્યાસોમાં ગુણાકાર કરો.</para>
+<exercise id="fs-id1170653740882">
+<problem id="fs-id1170653776813">
+<para id="fs-id1170653776815"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653916648">
+<para id="fs-id1170653916650"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>27</m:mn></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653904836">
+<problem id="fs-id1170653904838">
+<para id="fs-id1170653904840"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654125999">
+<problem id="fs-id1170654125531">
+<para id="fs-id1170654125534"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654060652">
+<para id="fs-id1170654060654"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654236894">
+<problem id="fs-id1170654236896">
+<para id="fs-id1170654236898"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654286568">
+<problem id="fs-id1170654286570">
+<para id="fs-id1170654286572"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654208097">
+<para id="fs-id1170654208099"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654237022">
+<problem id="fs-id1170654237025">
+<para id="fs-id1170654237027"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654281399">
+<problem id="fs-id1170654281401">
+<para id="fs-id1170654281403"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654154672">
+<para id="fs-id1170654154674"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>21</m:mn></m:mrow><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654047909">
+<problem id="fs-id1170654146958">
+<para id="fs-id1170654146960"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>25</m:mn></m:mrow><m:mrow><m:mn>33</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654129758">
+<problem id="fs-id1170654286135">
+<para id="fs-id1170654286137"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>63</m:mn></m:mrow><m:mrow><m:mn>84</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>44</m:mn></m:mrow><m:mrow><m:mn>90</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653930609">
+<para id="fs-id1170652641240"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652641254">
+<problem id="fs-id1170652641256">
+<para id="fs-id1170654154202"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>33</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>40</m:mn></m:mrow><m:mrow><m:mn>88</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654073319">
+<problem id="fs-id1170654073321">
+<para id="fs-id1170654203470"><m:math><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654203486">
+<para id="fs-id1170654203488"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>20</m:mn></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653916736">
+<problem id="fs-id1170653916738">
+<para id="fs-id1170653916740"><m:math><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>8</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654238559">
+<problem id="fs-id1170654238561">
+<para id="fs-id1170654238563"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>7</m:mn></m:mfrac><m:mo>·</m:mo><m:mn>21</m:mn><m:mi>n</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653806984">
+<para id="fs-id1170653806986">9<emphasis effect="italics">n</emphasis></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653793244">
+<problem id="fs-id1170653793246">
+<para id="fs-id1170653793248"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>·</m:mo><m:mn>30</m:mn><m:mi>m</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653850650">
+<problem id="fs-id1170653850652">
+<para id="fs-id1170653850655"><m:math><m:mrow><m:mn>−8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652631351">
+<para id="fs-id1170652631353"><m:math><m:mrow><m:mn>−34</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652631361">
+<problem id="fs-id1170652631363">
+<para id="fs-id1170652631366"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>6</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170652621053"><emphasis effect="bold">અપૂર્ણાંકોનો ભાગાકાર કરો</emphasis></para>
+<para id="fs-id1166422785479">નીચેના અભ્યાસોમાં ભાગાકાર કરો.</para>
+<exercise id="fs-id1170652621059">
+<problem id="fs-id1170652621062">
+<para id="fs-id1170652621064"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652621082">
+<para id="fs-id1170652621084"><m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654203401">
+<problem id="fs-id1170654203403">
+<para id="fs-id1170654203405"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654203439">
+<problem id="fs-id1170654203441">
+<para id="fs-id1170654203444"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654286281">
+<para id="fs-id1170654286283"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654286291">
+<problem id="fs-id1170654286293">
+<para id="fs-id1170654286295"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654286333">
+<problem id="fs-id1170654286336">
+<para id="fs-id1170654286338"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652631994">
+<para id="fs-id1170652631996"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>33</m:mn></m:mrow><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652632012">
+<problem id="fs-id1170652632014">
+<para id="fs-id1170652632016"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mi>y</m:mi><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653881463">
+<problem id="fs-id1170653881465">
+<para id="fs-id1170653881468"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653881497">
+<para id="fs-id1170653881500"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653881513">
+<problem id="fs-id1170653881516">
+<para id="fs-id1170653881518"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:mn>27</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654285426">
+<problem id="fs-id1170654285428">
+<para id="fs-id1170654285431"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>8</m:mn><m:mi>u</m:mi></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mrow><m:mn>12</m:mn><m:mi>v</m:mi></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654285457">
+<para id="fs-id1170654285459"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn><m:mi>u</m:mi></m:mrow><m:mrow><m:mn>9</m:mn><m:mi>v</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654238069">
+<problem id="fs-id1170654238071">
+<para id="fs-id1170654238073"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>12</m:mn><m:mi>r</m:mi></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac><m:mo>÷</m:mo><m:mfrac><m:mrow><m:mn>18</m:mn><m:mi>s</m:mi></m:mrow><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654238120">
+<problem id="fs-id1170654238122">
+<para id="fs-id1170654238125"><m:math><m:mrow><m:mn>−5</m:mn><m:mo>÷</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652630816">
+<para id="fs-id1170652630819"><m:math><m:mrow><m:mn>−10</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652630827">
+<problem id="fs-id1170652630829">
+<para id="fs-id1170652630831"><m:math><m:mrow><m:mn>−3</m:mn><m:mo>÷</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652630857">
+<problem id="fs-id1170652630859">
+<para id="fs-id1170652630861"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654214976">
+<para id="fs-id1170654214978"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654214993">
+<problem id="fs-id1170654214995">
+<para id="fs-id1170654214997"><m:math><m:mrow><m:mn>−15</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654215028">નીચેના અભ્યાસોમાં સાદું રૂપ આપો.</para>
+<exercise id="fs-id1170654215031">
+<problem id="fs-id1170654215033">
+<para id="fs-id1170654215035"><m:math><m:mrow><m:mfrac><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>21</m:mn></m:mrow></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>12</m:mn></m:mrow><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654284396">
+<para id="fs-id1170654284398"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654284413">
+<problem id="fs-id1170654284415">
+<para id="fs-id1170654284417"><m:math><m:mrow><m:mfrac><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>33</m:mn></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654133729">
+<problem id="fs-id1170654133731">
+<para id="fs-id1170654133733"><m:math><m:mrow><m:mfrac><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654133750">
+<para id="fs-id1170654133752"><m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654133766">
+<problem id="fs-id1170654133768">
+<para id="fs-id1170654133770"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654201830">
+<problem id="fs-id1170654201832">
+<para id="fs-id1170654201835"><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mi>m</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mi>n</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654201854">
+<para id="fs-id1170654201856"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>m</m:mi></m:mrow><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654201874">
+<problem id="fs-id1170654201876">
+<para id="fs-id1170654201878"><m:math><m:mrow><m:mfrac><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mi>y</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654283741"><emphasis effect="bold">અપૂર્ણાંક રેખા વડે લખેલી પદાવલીઓને સાદું રૂપ આપો</emphasis></para>
+<para id="fs-id1166424900706">નીચેના અભ્યાસોમાં સાદું રૂપ આપો.</para>
+<exercise id="fs-id1170654283747">
+<problem id="fs-id1170654283749">
+<para id="fs-id1170654283751"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>22</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654283768">
+<para id="fs-id1170654283770"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654283782">
+<problem id="fs-id1170654283784">
+<para id="fs-id1170654283786"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>19</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654069391">
+<problem id="fs-id1170654069393">
+<para id="fs-id1170654069395"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>48</m:mn></m:mrow><m:mrow><m:mn>24</m:mn><m:mo>−</m:mo><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654069412">
+<para id="fs-id1170654069415"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654069427">
+<problem id="fs-id1170654069430">
+<para id="fs-id1170654069432"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>46</m:mn></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652631464">
+<problem id="fs-id1170652631466">
+<para id="fs-id1170652631468"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>−6</m:mn><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652631489">
+<para id="fs-id1170652631491">0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652631497">
+<problem id="fs-id1170652631499">
+<para id="fs-id1170652631501"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>−6</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654164737">
+<problem id="fs-id1170654164739">
+<para id="fs-id1170654164741"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654164762">
+<para id="fs-id1170654164764"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654164776">
+<problem id="fs-id1170654164778">
+<para id="fs-id1170654164780"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654164809">
+<problem id="fs-id1170654164811">
+<para id="fs-id1170654164813"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>4</m:mn><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654283320">
+<para id="fs-id1170654283322"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654283334">
+<problem id="fs-id1170654283336">
+<para id="fs-id1170654283338"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654283372">
+<problem id="fs-id1170654283375">
+<para id="fs-id1170654283377"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>9</m:mn></m:mrow><m:mrow><m:mn>14</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653773226">
+<para id="fs-id1170653773228"><m:math><m:mrow><m:mn>2</m:mn><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>17</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653773243">
+<problem id="fs-id1170653773245">
+<para id="fs-id1170653773247"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow><m:mrow><m:mn>22</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654194470">
+<problem id="fs-id1170654194472">
+<para id="fs-id1170654194474"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654194513">
+<para id="fs-id1170654194515"><m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654194527">
+<problem id="fs-id1170654194529">
+<para id="fs-id1170654194531"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654197767">
+<problem id="fs-id1170654197769">
+<para id="fs-id1170654197771"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654197799">
+<para id="fs-id1170654197801"><m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654197813">
+<problem id="fs-id1170654197815">
+<para id="fs-id1170654197817"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>6</m:mn><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mn>4</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653890668">
+<problem id="fs-id1170653890670">
+<para id="fs-id1170653890672"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653890719">
+<para id="fs-id1170653890722"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653890734">
+<problem id="fs-id1170653890736">
+<para id="fs-id1170653890739"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654285728">
+<problem id="fs-id1170654285730">
+<para id="fs-id1170654285732"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170652648869">
+<para id="fs-id1170652648871"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652648883">
+<problem id="fs-id1170652648885">
+<para id="fs-id1170652648887"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>14</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654293042"><emphasis effect="bold">શબ્દસમૂહોને અપૂર્ણાંકવાળી પદાવલીઓમાં લખો</emphasis></para>
+<para id="fs-id1166425080667">નીચેના અભ્યાસોમાં દરેક શબ્દસમૂહને બીજગણિતીય પદાવલીમાં લખો.</para>
+<exercise id="fs-id1170654293049">
+<problem id="fs-id1170654293051">
+<para id="fs-id1170654293053"><emphasis effect="italics">r</emphasis>ને <emphasis effect="italics">s</emphasis> અને 10ના સરવાળા વડે ભાગતાં મળતું ભાગફળ</para>
+</problem>
+<solution id="fs-id1170654293066">
+<para id="fs-id1170654293068"><m:math><m:mrow><m:mfrac><m:mi>r</m:mi><m:mrow><m:mi>s</m:mi><m:mo>+</m:mo><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654293085">
+<problem id="fs-id1170654293087">
+<para id="fs-id1170654293089"><emphasis effect="italics">A</emphasis>ને 3 અને <emphasis effect="italics">B</emphasis>ના તફાવત વડે ભાગતાં મળતું ભાગફળ</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654285555">
+<problem id="fs-id1170654285557">
+<para id="fs-id1170654285559">ભાગફળ મેળવવા આ ભાગાકાર કરો: <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>તેમના તફાવતને આના વડે ભાગો:</m:mtext><m:mspace width="0.2em" /><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654285589">
+<para id="fs-id1170654285591"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi></m:mrow><m:mrow><m:mn>−3</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654285609">
+<problem id="fs-id1170654285612">
+<para id="fs-id1170654285614">ભાગફળ મેળવવા આ ભાગાકાર કરો: <m:math><m:mrow><m:mi>m</m:mi><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mi>n</m:mi><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>તેમના સરવાળાને આના વડે ભાગો:</m:mtext><m:mspace width="0.2em" /><m:mn>4</m:mn><m:mi>q</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170653801477" class="everyday">
+<title>રોજિંદા જીવનમાં ગણિત</title>
+<exercise id="fs-id1170653801483">
+<problem id="fs-id1170653801485">
+<para id="fs-id1170653801487"><emphasis effect="bold">બેકિંગ.</emphasis> ચૉકલેટ ચિપ કૂકીઝની એક વાનગીમાં જોઈએ છે <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> કપ બ્રાઉન શુગર. ઇમેલ્ડા બમણા પ્રમાણમાં કૂકીઝ બનાવવા માંગે છે. <span class="token">ⓐ</span> ઇમેલ્ડાને કેટલી બ્રાઉન શુગર જોઈશે? તમારી ગણતરી બતાવો. <span class="token">ⓑ</span> માપવાના કપ સામાન્ય રીતે આ માપના સેટમાં મળે છે: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mn>1</m:mn></m:mrow></m:math> કપ. બમણા પ્રમાણમાં કૂકીઝ માટે જરૂરી બ્રાઉન શુગર ઇમેલ્ડા કઈ બે જુદી રીતથી માપી શકે તે ચિત્ર દોરી બતાવો.</para>
+</problem>
+<solution id="fs-id1170653801540">
+<para id="fs-id1170654189069"><span class="token">ⓐ</span> <m:math><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>)</m:mo><m:mo>;</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> કપ <span class="token">ⓑ</span> જવાબો જુદા હશે</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654189085">
+<problem id="fs-id1170654189087">
+<para id="fs-id1170654189089"><emphasis effect="bold">બેકિંગ.</emphasis> સંગીત કાર્યક્રમ પછી પીરસવા નીના 4 પાત્ર ભરીને ફજ બનાવી રહી છે. દરેક પાત્ર માટે તેને જોઈએ છે <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> કપ કન્ડેન્સ્ડ મિલ્ક. <span class="token">ⓐ</span> નીનાને કેટલું કન્ડેન્સ્ડ મિલ્ક જોઈશે? તમારી ગણતરી બતાવો. <span class="token">ⓑ</span> માપવાના કપ સામાન્ય રીતે આ માપના સેટમાં મળે છે: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mn>1</m:mn></m:mrow></m:math> કપ. નીના જરૂરી કન્ડેન્સ્ડ મિલ્ક કઈ બે જુદી રીતથી માપી શકે તે ચિત્ર દોરી બતાવો, જો બનાવવાનું હોય <m:math><m:mn>4</m:mn></m:math> પાત્ર ભરીને ફજ.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654189165">
+<problem id="fs-id1170654189167">
+<para id="fs-id1170654189169"><emphasis effect="bold">નાના ભાગ</emphasis> ડૉને કેન્ડીનું એક મોટું પૅકેટ ખરીદ્યું, જેનું વજન છે <m:math><m:mn>5</m:mn></m:math> પાઉન્ડ. તે કેન્ડીને નાની થેલીઓમાં વેચવા માંગે છે. દરેક થેલીમાં સમાય છે <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> પાઉન્ડ. મોટા પૅકેટમાંથી તે કેન્ડીની કેટલી નાની થેલીઓ ભરી શકશે?</para>
+</problem>
+<solution id="fs-id1170652648110">
+<para id="fs-id1170652648112">20 થેલીઓ</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652648117">
+<problem id="fs-id1170652648119">
+<para id="fs-id1170652648122"><emphasis effect="bold">નાના ભાગ</emphasis> ક્રિસ્ટન પાસે છે <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> યાર્ડ રિબન, જેના તે કરવા માંગે છે <m:math><m:mn>6</m:mn></m:math> સરખા ભાગ, જેથી તેની દીકરીની 6 ઢીંગલીઓના વાળ માટે રિબન બને. દરેક ઢીંગલીના વાળની રિબન કેટલી લાંબી થશે?</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170652648159" class="writing">
+<title>લેખન અભ્યાસ</title>
+<exercise id="fs-id1170652648164">
+<problem id="fs-id1170652648166">
+<para id="fs-id1170652648168">રેસ્ટોરાંમાં રાફાયલ મધ્યમ કદના પિઝાનો અડધો ભાગ મંગાવવા માંગતો હતો. વેઇટરે કહ્યું કે મધ્યમ પિઝાના 6 કે 8 ટુકડા કરી શકાય. તેને 6માંથી 3 ટુકડા ગમશે કે 8માંથી 4? રાફાયલે કહ્યું કે તેને બહુ ભૂખ નથી, એટલે 6માંથી 3 ટુકડા ગમશે. તેના તર્કમાં શું ખોટું છે તે સમજાવો.</para>
+</problem>
+<solution id="fs-id1170652648177">
+<para id="fs-id1170652648179">જવાબો જુદા હોઈ શકે</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652648184">
+<problem id="fs-id1170652648186">
+<para id="fs-id1170652648188">રોજિંદા જીવનનું ઉદાહરણ આપીને આ વાત સમજાવો: <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mspace width="0.2em" /><m:mtext>બરાબર છે</m:mtext><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170652629907">
+<problem id="fs-id1170652629909">
+<para id="fs-id1170652629911">અપૂર્ણાંકનો વ્યસ્ત કેવી રીતે શોધો છો તે સમજાવો.</para>
+</problem>
+<solution id="fs-id1170652629915">
+<para id="fs-id1170652629918">જવાબો જુદા હોઈ શકે</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170652629923">
+<problem id="fs-id1170652629925">
+<para id="fs-id1170652629927">ઋણ સંખ્યાનો વ્યસ્ત કેવી રીતે શોધો છો તે સમજાવો.</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170652629940">
+<title>સ્વતપાસ</title>
+<para id="fs-id1170652629950"><span class="token">ⓐ</span> અભ્યાસ પૂરો કર્યા પછી આ યાદી વડે તપાસો કે વિભાગનાં ઉદ્દેશ્યો તમે કેટલાં સારી રીતે શીખ્યા છો.</para>
+<media id="fs-id1170652629961" alt="ચાર કૉલમ અને સાત હરોળવાળું કોષ્ટક છે. પહેલી હરોળમાં ‘હું કરી શકું છું…’, ‘આત્મવિશ્વાસથી’, ‘થોડી મદદથી’ અને ‘ના—મને સમજાયું નથી’ છે. પહેલી કૉલમની આગળની છ હરોળમાં ‘સમ અપૂર્ણાંકો શોધવા’, ‘અપૂર્ણાંકોને સાદું રૂપ આપવું’, ‘અપૂર્ણાંકોનો ગુણાકાર કરવો’, ‘અપૂર્ણાંકોનો ભાગાકાર કરવો’, ‘અપૂર્ણાંક રેખા વડે લખેલી પદાવલીઓને સાદું રૂપ આપવું’ અને ‘શબ્દસમૂહોને અપૂર્ણાંકવાળી પદાવલીઓમાં લખવા’ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_05_201_img_new.jpg" />
+</media>
+<para id="fs-id1170652629968"><span class="token">ⓑ</span> યાદી જોયા પછી તમને લાગે છે કે તમે આગળના વિભાગ માટે તૈયાર છો? શા માટે, અથવા શા માટે નહીં?</para>
+</section>
+</section>
+</content>
+<glossary>
+<definition id="fs-id1166424866332">
+<term>જટિલ અપૂર્ણાંક</term>
+<meaning id="fs-id1166424866337">જટિલ અપૂર્ણાંક એ એવો અપૂર્ણાંક છે જેના અંશ કે છેદમાં અપૂર્ણાંક હોય.</meaning>
+</definition>
+<definition id="fs-id1166424866347">
+<term>છેદ</term>
+<meaning id="fs-id1166425223004">છેદ અપૂર્ણાંકની નીચેના ભાગમાં રહેલું મૂલ્ય છે, જે દર્શાવે છે કે આખી વસ્તુના કેટલા સરખા ભાગ કર્યા છે.</meaning>
+</definition>
+<definition id="fs-id1166425223009">
+<term>સમ અપૂર્ણાંકો</term>
+<meaning id="fs-id1166425223015">સમ અપૂર્ણાંકો એ સરખું મૂલ્ય ધરાવતા અપૂર્ણાંકો છે.</meaning>
+</definition>
+<definition id="fs-id1166425223019">
+<term>અપૂર્ણાંક</term>
+<meaning id="fs-id1166422580993">અપૂર્ણાંકને લખીએ છીએ <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math>, જ્યાં <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math> <m:math><m:mi>a</m:mi></m:math> અંશ છે અને <m:math><m:mi>b</m:mi></m:math> છેદ છે. અપૂર્ણાંક આખી વસ્તુના ભાગો દર્શાવે છે. છેદ <m:math><m:mi>b</m:mi></m:math> દર્શાવે છે કે આખી વસ્તુના કેટલા સરખા ભાગ કર્યા છે, અને અંશ <m:math><m:mi>a</m:mi></m:math> દર્શાવે છે કે તેમાંના કેટલા ભાગ લીધા છે.</meaning>
+</definition>
+<definition id="fs-id1166424896994">
+<term>અંશ</term>
+<meaning id="fs-id1166424897000">અંશ અપૂર્ણાંકની ઉપરના ભાગમાં રહેલું મૂલ્ય છે, જે દર્શાવે છે કે આખી વસ્તુના કેટલા ભાગ લીધા છે.</meaning>
+</definition>
+<definition id="fs-id1166424844292">
+<term>વ્યસ્ત</term>
+<meaning id="fs-id1166424844298"><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math>નો વ્યસ્ત છે <m:math><m:mrow><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac></m:mrow></m:math>. સંખ્યા અને તેના વ્યસ્તનો ગુણાકાર એક થાય છે: <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>.</meaning>
+</definition>
+<definition id="fs-id1166422601976">
+<term>સાદામાં સાદા રૂપનો અપૂર્ણાંક</term>
+<meaning id="fs-id1166422601981">અપૂર્ણાંક સાદામાં સાદા રૂપમાં ગણાય જો તેના અંશ અને છેદમાં 1 સિવાય કોઈ સામાન્ય અવયવ ન હોય.</meaning>
+</definition>
+</glossary>
+</document>

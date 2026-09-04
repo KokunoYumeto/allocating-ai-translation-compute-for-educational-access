@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi-Latn-VN" xml:lang="vi-Latn-VN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Sử dụng ký hiệu hàm số</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">html { color: #182b35; background: #f8f6f1; font-size: 18px; }
+body { max-width: 52rem; margin: 0 auto; padding: 2.5rem 1.3rem 4rem; line-height: 1.65; font-family: "Noto Sans", "Segoe UI", Arial, sans-serif; }
+header { border-bottom: 3px solid #216c68; margin-bottom: 2rem; }
+h1,h2,h3 { line-height: 1.25; color: #175a57; break-after: avoid; }
+h1 { font-size: 2.3rem; } h2 { margin-top: 2.5rem; } h3 { margin-top: 1.8rem; }
+a { color: #075d99; text-underline-offset: .15em; }
+nav { background: #edf0e8; border-radius: .4rem; padding: 1rem 1.4rem; }
+table { border-collapse: collapse; margin: 1.2rem auto; min-width: 55%; }
+th,td { border: 1px solid #98aaa9; padding: .4rem 1rem; }
+th { background: #e2eeea; }
+img { display: block; max-width: 100%; height: auto; margin: 1rem auto; }
+figure { margin: 1.4rem 0; } figcaption { font-size: .9rem; }
+pre { overflow-x: auto; background: #edf0e8; padding: 1rem; border-radius: .3rem; }
+code { font-size: .88em; }
+math[display="block"] { overflow-x: auto; overflow-y: hidden; padding: .6rem 0; }
+:target { scroll-margin-top: 1rem; outline: 2px solid #c3dcd0; }
+@media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.9rem; } body { padding: 1rem; } table { width: 100%; } th,td { padding: .35rem .5rem; } }
+@media print { html { background: white; font-size: 11pt; } body { max-width: none; padding: 0; } nav { display: none; } img,table,pre { break-inside: avoid; } a { color: inherit; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Sử dụng ký hiệu hàm số</h1>
+<p class="subtitle">A30 · Bài tự học 002 · Bản dịch thử nghiệm 0.1</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#vi-prerequisites" id="toc-vi-prerequisites">Trước khi
+học</a></li>
+<li><a href="#fs-id1165134474160" id="toc-fs-id1165134474160">Đọc và
+viết ký hiệu hàm số</a></li>
+<li><a href="#vi-next" id="toc-vi-next">Tự đánh giá và phần tiếp
+theo</a></li>
+<li><a href="#vi-attribution" id="toc-vi-attribution">Nguồn và ghi
+công</a></li>
+</ul>
+</nav>
+<h2 id="vi-prerequisites">Trước khi học</h2>
+<p>Bạn đã biết: một hàm số gán cho mỗi đầu vào trong tập xác định đúng
+một đầu ra. Bài này giúp bạn đọc và viết ký hiệu của mối quan hệ đó.
+Chưa cần tính đạo hàm hoặc lập trình.</p>
+<p>Bài dịch trọn tiểu mục <strong>Using Function Notation</strong> của
+mô-đun <code>m49301</code>, không phải toàn bộ mục 1.1. Các lưu ý hỗ trợ
+tự học được ghi rõ là phần bổ sung. Theo quy ước đã giải thích ở Bài
+001, “hàm số” ở đây có thể được dùng theo nghĩa rộng của ánh xạ, với đầu
+vào là số hoặc nhãn.</p>
+<h2 id="fs-id1165134474160">Đọc và viết ký hiệu hàm số</h2>
+<div id="fs-id1165133359348"><span id="term-00011" class="source-anchor" aria-hidden="true"></span>
+<p>Sau khi xác định một mối quan hệ là hàm số, ta cần biểu diễn và xác
+định rõ mối quan hệ ấy để hiểu, sử dụng, và đôi khi đưa nó vào chương
+trình máy tính. Có nhiều cách biểu diễn hàm số. <strong>Ký hiệu hàm
+số</strong> là một cách viết thông dụng giúp ta làm việc với hàm số
+thuận tiện hơn.</p>
+</div>
+<div id="fs-id1165137453971">
+<p>Để biểu diễn ý “chiều cao là một hàm số của tuổi”, trước hết ta chọn
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137453971:0">
+<mi>h</mi> </math> để chỉ chiều cao và
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137453971:1">
+<mi>a</mi> </math> để chỉ tuổi. Các chữ
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137453971:2">
+<mrow> <mi>f</mi> <mo>,</mo> <mspace width="0.5em"></mspace> <mi>g</mi>
+<mo>,</mo> </mrow> </math> và
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137453971:3">
+<mrow> <mi>h</mi> </mrow> </math> thường được dùng làm tên hàm số, giống
+như
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137453971:4">
+<mrow> <mi>x</mi> <mo>,</mo> <mspace width="0.5em"></mspace> <mi>y</mi>
+<mo>,</mo> </mrow> </math> và
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137453971:5">
+<mi>z</mi> </math> thường biểu diễn các số, còn
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137453971:6">
+<mrow> <mi>A</mi> <mo>,</mo> <mspace width="0.5em"></mspace> <mi>B</mi>
+<mo>,</mo> </mrow> </math> và
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137453971:7">
+<mi>C</mi> </math> thường biểu diễn các tập hợp.</p>
+</div>
+<p><em>Lưu ý bổ sung về mô hình:</em> Ở đây ta xét chiều cao của
+<strong>một người xác định</strong> theo tuổi. Không thể chỉ biết tuổi
+mà xác định duy nhất chiều cao của mọi người khác nhau.</p>
+<div id="fs-id1165135332760">
+<p>Ta gọi hàm số là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+Ý “chiều cao
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+là giá trị của hàm số
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+tại tuổi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>”
+được viết thành</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">h=f(a).</annotation></semantics></math></p>
+<p>Dấu ngoặc trong
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a)</annotation></semantics></math>
+chỉ ra đầu vào của hàm số. Chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+là <strong>tên hàm số</strong>; biểu thức
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a)</annotation></semantics></math>
+chỉ <strong>giá trị của hàm số
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+tại đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math></strong>.</p>
+<p><em>Ghi chú trình bày:</em> Bảng ký hiệu ba dòng của nguồn được
+chuyển thành các câu ngắn ở trên; các ký hiệu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">h=f(a)</annotation></semantics></math>
+được giữ nguyên.</p>
+</div>
+<div id="fs-id1165137766965">
+<p>Ta có thể dùng chữ khác để đặt tên hàm số. Chẳng hạn, <strong>nếu đổi
+tên hàm số thành
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math></strong>,
+ký hiệu
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137766965:0">
+<mrow> <mi>h</mi> <mrow> <mo>(</mo> <mi>a</mi> <mo>)</mo> </mrow>
+</mrow> </math> cho biết giá trị của hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137766965:1">
+<mrow> <mi>h</mi> </mrow> </math> phụ thuộc vào đầu vào
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.
+Để nhận được một kết quả, ta đưa giá trị
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137766965:3">
+<mrow> <mi>a</mi> </mrow> </math> vào hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137766965:4">
+<mrow> <mi>h</mi> </mrow> </math>. Dấu ngoặc cho biết tuổi là đầu vào;
+nó <strong>không biểu thị phép nhân</strong>.</p>
+</div>
+<p><em>Lưu ý bổ sung về chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>:</em>
+Trong
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">h=f(a)</annotation></semantics></math>
+ở trên,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+chỉ giá trị chiều cao. Trong cách viết
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">h(a)</annotation></semantics></math>
+vừa nêu,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+được chọn làm tên hàm số. Đây là hai cách đặt ký hiệu; cần theo dõi vai
+trò của chữ trong từng cách viết.</p>
+<div id="fs-id1165135436660">
+<p>Đầu vào của hàm số cũng có thể là một biểu thức đại số. Ví dụ,
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135436660:0">
+<mrow> <mi>f</mi> <mrow> <mo>(</mo> <mrow> <mi>a</mi> <mo>+</mo>
+<mi>b</mi> </mrow> <mo>)</mo> </mrow> </mrow> </math> có nghĩa là: trước
+hết cộng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>,
+rồi dùng tổng vừa tìm được làm đầu vào của hàm số
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+Cần thực hiện theo thứ tự đó để nhận được kết quả đúng.</p>
+</div>
+<p><em>Lưu ý bổ sung:</em> Tổng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a+b</annotation></semantics></math>
+phải thuộc tập xác định của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+Nói chung,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a+b)</annotation></semantics></math>
+không bằng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a)+f(b)</annotation></semantics></math>.
+Chẳng hạn, nếu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^2</annotation></semantics></math>
+thì
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>25</mn></mrow><annotation encoding="application/x-tex">f(2+3)=25</annotation></semantics></math>,
+còn
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>4</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>13</mn></mrow><annotation encoding="application/x-tex">f(2)+f(3)=4+9=13</annotation></semantics></math>.
+Đây là ví dụ bổ sung, không phải một bài tập trích từ nguồn.</p>
+<h3 id="fs-id1165137444349">Ký hiệu hàm số</h3>
+<div id="eip-id1165135256026">
+<p>Ký hiệu
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-id1165135256026:0">
+<mrow> <mi>y</mi> <mo>=</mo> <mi>f</mi> <mrow> <mo>(</mo> <mi>x</mi>
+<mo>)</mo> </mrow> </mrow> </math> biểu diễn quan hệ đầu vào–đầu ra của
+hàm số có tên
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>:
+“<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+là một hàm số của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>”.
+Chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+biểu diễn giá trị đầu vào, hay <strong>biến độc lập</strong>. Chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+cũng chính là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>,
+biểu diễn giá trị đầu ra, hay <strong>biến phụ thuộc</strong>.</p>
+</div>
+<p><em>Lưu ý bổ sung:</em> Chỉ viết
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y=f(x)</annotation></semantics></math>
+chưa cho ta toàn bộ quy tắc để tính đầu ra. Muốn tìm giá trị cụ thể, còn
+cần biết hàm số được cho bằng công thức, bảng, mô tả quy tắc hoặc cách
+biểu diễn thích hợp khác.</p>
+<h3 id="Example_01_01_03">Ví dụ 3 — Số ngày trong tháng</h3>
+<div id="fs-id1165135612059">
+<div id="fs-id1165135705803"><span id="fs-id1165137757351" class="source-anchor" aria-hidden="true"></span>
+<p>Hãy dùng ký hiệu hàm số để biểu diễn một hàm số có đầu vào là tên
+tháng và đầu ra là số ngày trong tháng đó. <strong>Chỉ xét các tháng
+trong một năm không nhuận.</strong></p>
+</div>
+<div id="fs-id1165137405547">
+<div id="fs-id1165137657617">
+<p><strong>Lời giải.</strong> Số ngày trong tháng là một hàm số của tên
+tháng. Nếu gọi hàm số ấy là
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+ta viết
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137657617:1">
+<mrow> <mtext>số ngày</mtext> <mo>=</mo> <mi>f</mi>
+<mo stretchy="false">(</mo> <mtext>tên tháng</mtext>
+<mo stretchy="false">)</mo> </mrow> </math> hoặc
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137657617:2">
+<mrow> <mi>d</mi> <mo>=</mo> <mi>f</mi> <mo stretchy="false">(</mo>
+<mi>m</mi> <mo stretchy="false">)</mo> <mo>.</mo> </mrow> </math> Tên
+tháng là đầu vào của một quy tắc gán cho mỗi đầu vào một số xác định,
+tức là đầu ra.</p>
+</div>
+<div id="Image_01_01_005"><span id="fs-id1165135187902" class="source-anchor" aria-hidden="true"></span>
+<figure>
+<img role="img" aria-label="Ký hiệu 31 = f(January): 31 là đầu ra, f là quy tắc, January (tháng Một) là đầu vào." src="data:image/jpeg;base64,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dG5ib29sAAAAAABDbGJyYm9vbAAAAAAAUmdzTWJvb2wAAAAAAENybkNib29sAAAAAABDbnRDYm9vbAAAAAAATGJsc2Jvb2wAAAAAAE5ndHZib29sAAAAAABFbWxEYm9vbAAAAAAASW50cmJvb2wAAAAAAEJja2dPYmpjAAAAAQAAAAAAAFJHQkMAAAADAAAAAFJkICBkb3ViQG/gAAAAAAAAAAAAR3JuIGRvdWJAb+AAAAAAAAAAAABCbCAgZG91YkBv4AAAAAAAAAAAAEJyZFRVbnRGI1JsdAAAAAAAAAAAAAAAAEJsZCBVbnRGI1JsdAAAAAAAAAAAAAAAAFJzbHRVbnRGI1B4bEBpAAAAAAAAAAAACnZlY3RvckRhdGFib29sAQAAAABQZ1BzZW51bQAAAABQZ1BzAAAAAFBnUEMAAAAATGVmdFVudEYjUmx0AAAAAAAAAAAAAAAAVG9wIFVudEYjUmx0AAAAAAAAAAAAAAAAU2NsIFVudEYjUHJjQFkAAAAAAAAAAAAQY3JvcFdoZW5QcmludGluZ2Jvb2wAAAAADmNyb3BSZWN0Qm90dG9tbG9uZwAAAAAAAAAMY3JvcFJlY3RMZWZ0bG9uZwAAAAAAAAANY3JvcFJlY3RSaWdodGxvbmcAAAAAAAAAC2Nyb3BSZWN0VG9wbG9uZwAAAAAAOEJJTQPtAAAAAAAQAMgAAAABAAEAyAAAAAEAAThCSU0EJgAAAAAADgAAAAAAAAAAAAA/gAAAOEJJTQQNAAAAAAAEAAAAHjhCSU0EGQAAAAAABAAAAB44QklNA/MAAAAAAAkAAAAAAAAAAAEAOEJJTScQAAAAAAAKAAEAAAAAAAAAAThCSU0D9QAAAAAASAAvZmYAAQBsZmYABgAAAAAAAQAvZmYAAQChmZoABgAAAAAAAQAyAAAAAQBaAAAABgAAAAAAAQA1AAAAAQAtAAAABgAAAAAAAThCSU0D+AAAAAAAcAAA/////////////////////////////wPoAAAAAP////////////////////////////8D6AAAAAD/////////////////////////////A+gAAAAA/////////////////////////////wPoAAA4QklNBAgAAAAAABAAAAABAAACQAAAAkAAAAAAOEJJTQQeAAAAAAAEAAAAADhC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N0NEQUZFQjMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ZmQ0M2UxMTktYzFhZi00Yjk0LWI5MTYtNjc1NjllNGU5OWY0IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9IkVCQTc3MzNBNjdDOUY5RTMwQkQ4MjY3MjdDREFGRUIzIiBkYzpmb3JtYXQ9ImltYWdlL2pwZWciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wOkNyZWF0ZURhdGU9IjIwMjAtMDYtMjNUMTU6NTY6MzQtMDU6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIwLTA2LTIzVDE1OjU4OjM5LTA1OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIwLTA2LTIzVDE1OjU4OjM5LTA1OjAwIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZmQ0M2UxMTktYzFhZi00Yjk0LWI5MTYtNjc1NjllNGU5OWY0IiBzdEV2dDp3aGVuPSIyMDIwLTA2LTIzVDE1OjU4OjM5LTA1OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoTWFjaW50b3NoKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg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22sjntiV2fwO5XoMgm28jjccMrt+qEdHFd19j3nvebfdotu3+bY7RzulrrEqq8TxXEbeFOnY4WUKyalMyO+iVaucdRL7VctXuw3e98rW3Ne4RjY9w8NrZ2imhns5k8e0kAkiLWxdJCji1eKLxYHpEtT1bx7inrIDr3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//V3+Pfuvde9+691737r3Xvfuvde9+691737r3RbuxR/frvDqTrZP3MTseOs703ihWRUafDyzbZ6xoWlT0M1TumtrMkEawJwoP49wXzwP63+7XttyIvdtu0q+/3ozTVCWtdqjqMVa7ee5CnzsQfLqXeUj/Vn23575vJpfbkU2a1OK0lAuNxehzRbZIrckeV2R0ZH3OnURde9+691737r3Xvfuvde9+691737r3RDP5qP/bsP+Y3/wCKIfLv/wCB/wCwffuvdGZ6C/5kT0r/AOIl64/947De/de6Fr37r3Xvfuvde9+691737r3Xvfuvde9+691737r3RA+3W/0KfN34+9yq4o9m/JDbeV+JfZUrziChi33hxm+1vjpm6iCJC1RX1VXTbs27HLJceXN0sVx6R7HO1D98cm79tFK3e3SLfQ+Z8NtMF2oPkADBKQPKNj69RZv5/q37k8qcwg6dv3iFtruDWiidNdzYOQOLEi5twT5zRr6dH89gbqU+ve/de697917r3v3Xuve/de697917r3v3Xuve/de6/9bf49+691737r3Xvfuvde9+691737r3XvfuvdFu+PJ/va/Zfdkt3Ha+86iLa8l5Ao616++42hslkhk5iTLy02Qy4twwylx9fcF+yn/Ikfnz3WkyOY90YWhz/wAkvbtVlYUB4CYrc3opg/V16l33W/3RLyf7cx4Ox7cpuRj/AJKF9purypHExBoLU1yPpqdGR9zp1EXXvfuvde9+691737r3Xvfuvde9+690Qz+aj/27D/mN/wDiiHy7/wDgf+wffuvdGZ6C/wCZE9K/+Il64/8AeOw3v3Xuha9+691737r3Xvfuvde9+691737r3Xvfuvde9+690WP5jdQ53u745dk7L2XOKDsyhx+O3909l1MEU+G7k6xzOP7B6tyENXOLUKf3223RQ1EqlT9pNMhOlmBEfKW6w7NzBt95diu3MxinXNGgmUxTAgcf03YgfxAHy6BnuDsFzzJyju+3be2neFVZ7VhQFLu2dZ7Zgx+H9aNAx/hLDgSOlv8AHjuPD/IPo3qrurBwijo+yNkYLctRii7PNt/NVdGibk2vWFgrDI7V3DFVY6qUj01FK4/HtHv+0S7DvW57PMavbzMgb+JQexx8nTS4+TDox5S5ht+a+Wdj5jtl0x3lskhXzRyP1Iz/AEopA0bf0lPQy+yjoRde9+691737r3Xvfuvde9+691737r3Xvfuvdf/X3+Pfuvde9+691737r3Xvfuvde9+690BfyM3HlMJ1fk8NtydafePY+RxPVmzJC0kbQbg37Vrg/wCJxyR2aNtvYiaryZa9lSiJPuIffHfdw2n2/v8Aa9jmCcz77PDtNiakFbncH8DxQRw+mhaa6J4AQEnHUl+0u0WW486We4bvEW2DaIZdyuxQHVBZL43hkHj48oitwOJMwA6FjbG3cXtDbe39p4OA02F2zhcXgMTTswZocbh6KDH0UbuAut1p6dQzWGo8+5H2DZNv5Z2LZuXNpi8ParC1it4V4lYoY1jjBOKkKoqfM56A287te7/u+675uUmvcby4knlbhWSVy7kDyBZjQeQx0+ezfot697917r3v3Xuve/de697917r3v3XuiGfzUf8At2H/ADG//FEPl3/8D/2D7917ozPQX/Mielf/ABEvXH/vHYb37r3Qte/de697917r3v3Xuve/de697917r3v3Xuve/de697917ognxXY9Rd+/Kz4sVTGnw1JvCm+UvTFLLJDFF/oz+Q+QzFdvvB4aggVYqXG7N77we4yY1sIoMzSjSAw9jnmYfvXYuWOZlFZjEbK4P/DrUKI2YniZLZos+ZjbqLORz+4OaueeR3NLdbgblaDA/wAXv2dp0RRgLDepcY8llT16P37A3Up9e9+691737r3Xvfuvde9+691737r3Xvfuvdf/0N/j37r3Xvfuvde9+691737r3XvfuvdFuyJ/v/8AJXCYtWE2A6F2jNunJKkpMbdkdmQ1mD23TVMDjRJPgti0OTqQVuY/4vC1wSPcF3x/rn777Tt6tq2bk7bDdy0OP3nuivb2qspwWt9vjupajK/WRGoJHUu2g/qt7P7jesNO6cz34to6jP0G3lJrhlYZCzXr28efi+lkFDQ9GR9zp1EXXvfuvde9+691737r3Xvfuvde9+691737r3RDP5qP/bsP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Gvc/Ve3O9Onu1+kt41GXpNo9x9a766r3VV4CppaLPUu3Owtr5TaWcqMJWV1Fk6Kky8OMy8rU0s1NURRzBWeORQVPuvdF6/l//BfqL+XB8Wdg/EbozPdh7l6266r945LDZrtPMbdzu96yq3xu/Nb1zJy2S2rtTZOCmSPL56ZIBBjafRAqK2tgXb3Xuqftmf8ACYL4Y7F7Z7izeA+QPzNxHxi7x3Hmt3dg/BjbndtVtH417tzOVTJNjcfvfB7YxmLzG+9o7IrsktTg6DJ1E81O9JTxVVVW0wnp5/de6Has/wCE9nwtrf5Z+L/lWzdkfJsfH3EduSd0Uu9I969XDudt2S5rI5xqWbcDdNNsZ8H58pJEIRtxZvCF/e1gyH3XujB/O/8AlB/Gn57dUfHzYu9dzdtdVdj/ABNqsDkvjX8j+nN1UW1u8OqspgKPb1LHUYzcUmGrcbUQZWfaWLqqtBSQyrWUEE9JLSTRrIPde6TvwL/k59J/CbvHsn5Zbo7m+QHzC+YPam3qXZm4Pkj8ot5Ue8t64XZFImOiG0dk0uPxeLodv4mqp8JQxSvKa2rWCjSnp5qekaSnf3Xureffuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691//Q3+Pfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvdf/Z" alt="Ký hiệu 31 = f(January): 31 là đầu ra, f là quy tắc, January (tháng Một) là đầu vào." />
+<figcaption aria-hidden="true">Ký hiệu 31 = f(January): 31 là đầu ra, f
+là quy tắc, January (tháng Một) là đầu vào.</figcaption>
+</figure>
+<p>Hình 5. Giữ nguyên hình nguồn: <em>January</em> là tháng Một;
+<em>Output</em> là đầu ra; <em>Rule</em> là quy tắc; <em>Input</em> là
+đầu vào. Tháng Một có 31 ngày.</p>
+</div>
+<div id="fs-id1165135417826">
+<p>Ví dụ,
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135417826:0">
+<mrow> <mi>f</mi> <mrow> <mo>(</mo> <mrow> <mtext>tháng Ba</mtext>
+</mrow> <mo>)</mo> </mrow> <mo>=</mo> <mn>31</mn> <mo>,</mo> </mrow>
+</math> vì tháng Ba có 31 ngày. Ký hiệu
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135417826:1">
+<mrow> <mi>d</mi> <mo>=</mo> <mi>f</mi> <mrow> <mo>(</mo> <mi>m</mi>
+<mo>)</mo> </mrow> </mrow> </math> nhắc ta rằng số ngày
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135417826:2">
+<mrow> <mi>d</mi> </mrow> </math> — đầu ra — phụ thuộc vào tên tháng
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165135417826:3">
+<mrow> <mi>m</mi> </mrow> </math> — đầu vào.</p>
+</div>
+</div>
+<div id="fs-id1165137544335"><span id="fs-id1165137734829" class="source-anchor" aria-hidden="true"></span>
+<p><strong>Phân tích.</strong> Đầu vào của hàm số không nhất thiết phải
+là số. Đầu vào có thể là tên người, nhãn của đối tượng hình học hoặc
+phần tử thuộc loại khác mà từ đó xác định được một đầu ra. Tuy nhiên,
+phần lớn các hàm số trong cuốn sách này có đầu vào và đầu ra là số.</p>
+</div>
+</div>
+<p><em>Lưu ý bổ sung:</em> Tập xác định trong ví dụ là các <strong>tên
+tháng</strong>, không phải các năm. Điều kiện “năm không nhuận” cố định
+quy tắc số ngày để tháng Hai không có hai đầu ra là 28 và 29 trong cùng
+mô hình.</p>
+<h3 id="Example_01_01_04">Ví dụ 4 — Hiểu ý nghĩa của ký hiệu</h3>
+<div id="fs-id1165137441910">
+<div id="fs-id1165137527239">
+<div id="fs-id1165137526811">
+<p>Một hàm số
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137526811:0">
+<mrow> <mi>N</mi> <mo>=</mo> <mi>f</mi> <mrow> <mo>(</mo> <mi>y</mi>
+<mo>)</mo> </mrow> </mrow> </math> cho biết số nhân viên cảnh sát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+của một thị trấn trong năm
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.
+Đẳng thức
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137526811:3">
+<mrow> <mi>f</mi> <mrow> <mo>(</mo> <mrow> <mn>2005</mn> </mrow>
+<mo>)</mo> </mrow> <mo>=</mo> <mn>300</mn> </mrow> </math> có ý nghĩa
+gì?</p>
+</div>
+</div>
+<div id="fs-id1165137834021">
+<div id="fs-id1165137424675">
+<p><strong>Lời giải.</strong> Khi đọc
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137424675:0">
+<mrow> <mi>f</mi> <mrow> <mo>(</mo> <mrow> <mn>2005</mn> </mrow>
+<mo>)</mo> </mrow> <mo>=</mo> <mn>300</mn> <mo>,</mo> </mrow> </math> ta
+thấy đầu vào là năm 2005. Giá trị đầu ra, tức số nhân viên cảnh sát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>,
+là 300. Nhớ rằng
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137424675:2">
+<mrow> <mi>N</mi> <mo>=</mo> <mi>f</mi> <mrow> <mo>(</mo> <mi>y</mi>
+<mo>)</mo> </mrow> <mo>.</mo> </mrow> </math> Đẳng thức
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137424675:3">
+<mrow> <mi>f</mi> <mrow> <mo>(</mo> <mrow> <mn>2005</mn> </mrow>
+<mo>)</mo> </mrow> <mo>=</mo> <mn>300</mn> </mrow> </math> cho biết:
+trong năm 2005, thị trấn đó có 300 nhân viên cảnh sát.</p>
+</div>
+</div>
+</div>
+<p><em>Lưu ý bổ sung:</em> Trong ví dụ này,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+được dùng cho <strong>năm</strong>, là đầu vào;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+là đầu ra. Vai trò của biến phụ thuộc vào mô tả của từng ví dụ, không
+chỉ vào tên chữ. Dữ liệu 2005 và 300 được giữ nguyên từ tình huống của
+nguồn, không phải một thống kê hiện thời do bản dịch xác minh.</p>
+<h3 id="fs-id1165134257606">Tự thử 2</h3>
+<div id="fs-id1165137564344">
+<div id="fs-id1165137564345"><span id="fs-id1165137596424" class="source-anchor" aria-hidden="true"></span>
+<p>Hãy dùng ký hiệu hàm số để biểu thị cân nặng của một con lợn, tính
+bằng <strong>pound (lb)</strong>, theo tuổi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+tính bằng ngày.</p>
+<p><em>Gợi ý bổ sung:</em> Hãy xác định đầu vào và đầu ra trước, rồi xem
+<a href="#fs-id1165137871618">lời giải</a>.</p>
+</div>
+</div>
+<h3 id="fs-id1165137871618"><span id="fs-id1165137619935" class="source-anchor" aria-hidden="true"></span>Tự thử 2 — Lời giải</h3>
+<p>Đáp án nguồn:
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137619935:0">
+<mrow> <mi>w</mi> <mo>=</mo> <mi>f</mi> <mo stretchy="false">(</mo>
+<mi>d</mi> <mo stretchy="false">)</mo> </mrow> </math></p>
+<p><em>Giải thích bổ sung:</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+là tuổi tính bằng ngày;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+là cân nặng tính bằng pound (lb);
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+là tên hàm số. Khi tuổi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+được đưa vào,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(d)</annotation></semantics></math>
+cho giá trị cân nặng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+của con lợn đang xét. Giữ nguyên đơn vị của nguồn; không đổi sang
+kilôgam.</p>
+<h3 id="fs-id1165137740780">Hỏi và đáp — Có thể viết y = y(x)
+không?</h3>
+<div id="eip-id1165132005171">
+<p><strong>Hỏi.</strong> Thay vì viết
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-id1165132005171:0">
+<mrow> <mi>y</mi> <mo>=</mo> <mi>f</mi> <mo stretchy="false">(</mo>
+<mi>x</mi> <mo stretchy="false">),</mo> </mrow> </math> ta có thể dùng
+cùng một chữ cho đầu ra và tên hàm số, chẳng hạn
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="eip-id1165132005171:1">
+<mrow> <mi>y</mi> <mo>=</mo> <mi>y</mi> <mo stretchy="false">(</mo>
+<mi>x</mi> <mo stretchy="false">),</mo> </mrow> </math> với ý
+“<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+là một hàm số của
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>”
+không?</p>
+</div>
+<div id="fs-id1165137605080">
+<p><strong>Đáp.</strong> Có. Cách viết này thường gặp, nhất là trong
+những lĩnh vực ứng dụng toán học bậc cao như vật lý và kỹ thuật. Tuy
+nhiên, khi học toán, ta thường muốn phân biệt hàm số
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+— một quy tắc hay quy trình — với đầu ra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+nhận được khi áp dụng
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+cho một đầu vào cụ thể
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Vì vậy, ta thường dùng những ký hiệu như
+<math xmlns="http://www.w3.org/1998/Math/MathML" data-source="fs-id1165137605080:4">
+<mrow> <mi>y</mi> <mo>=</mo> <mi>f</mi> <mrow> <mo>(</mo> <mi>x</mi>
+<mo>)</mo> </mrow> <mo>,</mo> <mi>P</mi> <mo>=</mo> <mi>W</mi> <mrow>
+<mo>(</mo> <mi>d</mi> <mo>)</mo> </mrow> <mo>,</mo> </mrow> </math> và
+các ký hiệu tương tự.</p>
+</div>
+<p><em>Lưu ý bổ sung:</em> Trong
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y=y(x)</annotation></semantics></math>,
+chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+đứng riêng ở vế trái chỉ giá trị đầu ra; chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+trong
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y(x)</annotation></semantics></math>
+là tên hàm số. Toàn bộ biểu thức
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y(x)</annotation></semantics></math>
+cũng chỉ giá trị đầu ra tại
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Ngữ cảnh giúp phân biệt hai vai trò của chữ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>;
+không nên hiểu đây là khẳng định một con số và một quy tắc là cùng một
+đối tượng.</p>
+<h2 id="vi-next">Tự đánh giá và phần tiếp theo</h2>
+<p>Bạn sẵn sàng học tiếp nếu giải thích được:</p>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+và
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a)</annotation></semantics></math>
+khác nhau như thế nào.</li>
+<li>Vì sao dấu ngoặc trong
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a)</annotation></semantics></math>
+không biểu thị phép nhân.</li>
+<li>Trong
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">N=f(y)</annotation></semantics></math>
+của Ví dụ 4, chữ nào biểu diễn đầu vào và chữ nào biểu diễn đầu ra.</li>
+</ul>
+<p>Tiếp theo: <strong>Biểu diễn hàm số bằng bảng</strong>, vẫn trong
+mô-đun <code>m49301</code>, bắt đầu tại
+<code>fs-id1165137804204</code>.</p>
+<h2 id="vi-attribution">Nguồn và ghi công</h2>
+<p>Bản dịch độc lập <code>vi-Latn-VN</code> từ Jay Abramson và các cộng
+tác viên OpenStax, <em>Precalculus 2e</em>, mô-đun <code>m49301</code>,
+UUID <code>11f4eacc-c348-4836-8c5b-747577d249ca</code>; <a href="https://github.com/openstax/osbooks-college-algebra-bundle/tree/789b54099106b071d1d32bfcee454fed72eb4768">nguồn
+được ghim</a>. Đối chiếu với <a href="https://github.com/KokunoYumeto/openstax-precalculus-2e-id">ấn bản
+Bahasa Indonesia</a> <code>0.1.0-alpha.58-reader.1</code>.</p>
+<p>Văn bản, hình và bản dịch A30 này theo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
+4.0</a>. Giữ nguyên ghi công tác giả và các thông báo trong
+<code>notices/</code>; các thành phần của những sách khác giữ giấy phép
+riêng. Các lưu ý được đánh dấu “bổ sung” và cách bố trí lại bảng ký hiệu
+là phần thay đổi của bản dịch. Không phải ấn bản chính thức hay được tác
+giả nguồn bảo trợ. Được thực hiện với sự hỗ trợ của OpenAI Codex theo
+yêu cầu người dùng; chưa có thẩm định của người bản ngữ.</p>
+</body>
+</html>

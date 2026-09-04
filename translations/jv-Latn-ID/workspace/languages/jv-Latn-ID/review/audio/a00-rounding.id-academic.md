@@ -1,0 +1,212 @@
+# Bahasa Indonesia · teks sumber
+
+Status: narration draft; not synthesized or listening-reviewed.
+
+Catatan aksesibilitas editorial: beberapa panah, garis bawah, warna, dan tanda coret pada gambar Indonesia tidak tepat atau tidak lengkap. Uraian diagram berikut mengikuti maksud matematika dan gambar kanonik OpenStax; gambar Indonesia tetap dipertahankan tanpa perubahan. Gambar Jawa memuat koreksi yang dicatat terpisah.
+
+## m81243--fs-id2472737--title
+
+Membulatkan Bilangan Cacah
+
+## m81243--fs-id1333125
+
+Pada dua ribu tiga belas, Biro Sensus Amerika Serikat melaporkan bahwa populasi negara bagian New York adalah sembilan belas juta enam ratus lima puluh satu ribu seratus dua puluh tujuh orang. Mungkin cukup untuk mengatakan bahwa populasinya kira-kira dua puluh juta orang. Kata kira-kira berarti bahwa dua puluh juta bukanlah populasi yang tepat, tetapi mendekati nilai tepatnya.
+
+## m81243--fs-id2368933
+
+Proses memperoleh nilai hampiran suatu bilangan disebut pembulatan. Bilangan dibulatkan ke nilai tempat tertentu sesuai tingkat ketelitian yang diperlukan. Nilai dua puluh juta diperoleh dengan membulatkan ke tempat jutaan. Jika dibulatkan ke tempat ratus ribuan, hasilnya adalah sembilan belas juta tujuh ratus ribu. Jika dibulatkan ke tempat puluh ribuan, hasilnya adalah sembilan belas juta enam ratus lima puluh ribu, dan seterusnya. Nilai tempat tujuan pembulatan bergantung pada cara bilangan itu akan digunakan.
+
+## m81243--fs-id2132131
+
+Garis bilangan dapat membantu Anda membayangkan dan memahami proses pembulatan. Perhatikan garis bilangan dalam gambar garis bilangan dengan titik pada tujuh puluh enam. Misalkan kita ingin membulatkan tujuh puluh enam ke puluhan terdekat. Pada garis bilangan, apakah tujuh puluh enam lebih dekat ke tujuh puluh atau ke delapan puluh?
+
+## m81243--CNX_BMath_Figure_01_01_019
+
+Garis bilangan dari tujuh puluh sampai delapan puluh dengan kenaikan satu. Titik yang ditandai berada pada tujuh puluh enam.
+
+Kita dapat melihat bahwa tujuh puluh enam lebih dekat ke delapan puluh daripada ke tujuh puluh. Jadi, tujuh puluh enam yang dibulatkan ke puluhan terdekat menjadi delapan puluh.
+
+## m81243--fs-id1885331
+
+Sekarang perhatikan bilangan tujuh puluh dua. Temukan tujuh puluh dua pada gambar garis bilangan dengan titik pada tujuh puluh dua.
+
+## m81243--CNX_BMath_Figure_01_01_020
+
+Garis bilangan dari tujuh puluh sampai delapan puluh dengan kenaikan satu. Titik yang ditandai berada pada tujuh puluh dua.
+
+Kita dapat melihat bahwa tujuh puluh dua lebih dekat ke tujuh puluh, sehingga tujuh puluh dua yang dibulatkan ke puluhan terdekat menjadi tujuh puluh.
+
+## m81243--fs-id2646813
+
+Bagaimana kita membulatkan tujuh puluh lima ke puluhan terdekat? Temukan tujuh puluh lima pada gambar garis bilangan dengan titik pada tujuh puluh lima.
+
+## m81243--CNX_BMath_Figure_01_01_021
+
+Garis bilangan dari tujuh puluh sampai delapan puluh dengan kenaikan satu. Titik yang ditandai berada pada tujuh puluh lima.
+
+Bilangan tujuh puluh lima tepat berada di tengah antara tujuh puluh dan delapan puluh.
+
+## m81243--fs-id1384953
+
+Agar semua orang membulatkan dengan cara yang sama dalam kasus seperti ini, para matematikawan sepakat untuk membulatkan ke bilangan yang lebih besar, yaitu delapan puluh. Jadi, tujuh puluh lima yang dibulatkan ke puluhan terdekat menjadi delapan puluh.
+
+## m81243--fs-id1545266
+
+Setelah melihat proses ini pada garis bilangan, kita dapat memperkenalkan prosedur yang lebih umum. Untuk membulatkan suatu bilangan ke nilai tempat tertentu, perhatikan digit di sebelah kanan nilai tempat tersebut. Jika digit itu kurang dari lima, bulatkan ke bawah. Jika digit itu lebih besar daripada atau sama dengan lima, bulatkan ke atas.
+
+## m81243--fs-id1583269
+
+Sebagai contoh, untuk membulatkan tujuh puluh enam ke puluhan terdekat, kita memperhatikan digit di tempat satuan.
+
+## m81243--fs-id1318626
+
+Gambar bilangan tujuh puluh enam. Label biru “tempat puluhan” menunjuk digit tujuh, sedangkan label merah “lebih besar dari lima” menunjuk digit enam.
+
+## m81243--fs-id1717390
+
+Digit di tempat satuan adalah enam. Karena enam lebih besar daripada atau sama dengan lima, kita menambah satu pada digit di tempat puluhan. Jadi, tujuh di tempat puluhan menjadi delapan. Kemudian, ganti semua digit di sebelah kanan delapan dengan nol. Dengan demikian, tujuh puluh enam dibulatkan menjadi delapan puluh.
+
+## m81243--fs-id1233161
+
+Gambar pembulatan tujuh puluh enam menjadi delapan puluh. Digit enam dicoret dan diberi petunjuk “ganti dengan nol”, sedangkan digit tujuh diberi petunjuk “tambahkan satu”. Hasil delapan puluh ditampilkan di bawahnya. Kalimat pada gambar: tujuh puluh enam dibulatkan ke puluhan terdekat menjadi delapan puluh.
+
+## m81243--fs-id2966405
+
+Mari kita lihat kembali pembulatan tujuh puluh dua ke kelipatan sepuluh. Sekali lagi, kita memperhatikan tempat satuan.
+
+## m81243--fs-id2306384
+
+Gambar bilangan tujuh puluh dua. Label biru “tempat puluhan” menunjuk digit tujuh, sedangkan label merah “kurang dari lima” menunjuk digit dua.
+
+## m81243--fs-id2700449
+
+Digit di tempat satuan adalah dua. Karena dua kurang dari lima, kita mempertahankan digit di tempat puluhan dan mengganti digit di sebelah kanannya dengan nol. Jadi, tujuh puluh dua yang dibulatkan ke puluhan terdekat menjadi tujuh puluh.
+
+## m81243--fs-id2588331
+
+Gambar pembulatan tujuh puluh dua menjadi tujuh puluh. Digit dua dicoret dan diberi petunjuk “ganti dengan nol”, sedangkan digit tujuh diberi petunjuk “jangan tambahkan satu”. Hasil tujuh puluh ditampilkan di bawahnya.
+
+## m81243--fs-id1627986
+
+Membulatkan bilangan cacah ke nilai tempat tertentu.
+Langkah satu. Temukan nilai tempat yang ditentukan. Semua digit di sebelah kiri nilai tempat itu tidak berubah, kecuali jika digit pada nilai tempat tersebut adalah sembilan; dalam hal itu digitnya mungkin berubah. (Lihat Langkah tiga.)
+
+Langkah dua. Garisbawahi digit di sebelah kanan nilai tempat yang ditentukan.
+
+Langkah tiga. Tentukan apakah digit ini lebih besar daripada atau sama dengan lima.
+
+Ya—tambahkan satu pada digit di nilai tempat yang ditentukan. Jika digit itu sembilan, gantilah dengan nol dan tambahkan satu pada digit tepat di sebelah kirinya. Jika digit itu juga sembilan, ulangi langkah ini.
+
+Tidak—jangan ubah digit pada nilai tempat yang ditentukan.
+
+Langkah empat. Ganti semua digit di sebelah kanan nilai tempat yang ditentukan dengan nol.
+
+## m81243--fs-id1395272
+
+Bulatkan delapan ratus empat puluh tiga ke puluhan terdekat.
+
+Penyelesaian
+
+Temukan tempat puluhan. Bilangan delapan ratus empat puluh tiga dengan label “tempat puluhan” yang menunjuk digit empat.
+Garisbawahi digit di sebelah kanan tempat puluhan. Bilangan delapan ratus empat puluh tiga dengan digit tiga digarisbawahi.
+Karena tiga kurang dari lima, jangan ubah digit di tempat puluhan. Bilangan delapan ratus empat puluh tiga dengan digit tiga digarisbawahi.
+Ganti semua digit di sebelah kanan tempat puluhan dengan nol. Bilangan delapan ratus empat puluh dengan digit nol digarisbawahi.
+Pembulatan delapan ratus empat puluh tiga ke puluhan terdekat menghasilkan delapan ratus empat puluh.
+
+## m81243--fs-id2324035
+
+Bulatkan ke puluhan terdekat: seratus lima puluh tujuh.
+
+Jawaban.
+
+seratus enam puluh
+
+## m81243--fs-id2306340
+
+Bulatkan ke puluhan terdekat: delapan ratus delapan puluh empat.
+
+Jawaban.
+
+delapan ratus delapan puluh
+
+## m81243--fs-id3407439
+
+Bulatkan setiap angka ke ratusan terdekat:
+
+bagian a dua puluh tiga ribu enam ratus lima puluh delapan
+
+bagian be tiga ribu sembilan ratus tujuh puluh delapan
+
+Penyelesaian
+
+bagian a
+Temukan tempat ratusan. Tanda panah menunjuk dari 'tempat ratusan' ke angka enam pada bilangan dua puluh tiga ribu enam ratus lima puluh delapan, yang menggambarkan konsep nilai tempat.
+Digit di sebelah kanan tempat ratusan adalah lima. Garisbawahi digit di sebelah kanan tempat ratusan. Angka dua puluh tiga ribu enam ratus lima puluh delapan ditulis dengan garis mendatar di bawah angka lima.
+Karena lima lebih besar daripada atau sama dengan lima, bulatkan ke atas dengan menambahkan satu pada digit di tempat ratusan. Kemudian ganti semua digit di sebelah kanan tempat ratusan dengan nol. Bilangan dua puluh tiga ribu enam ratus lima puluh delapan ditampilkan dengan panah yang menunjuk digit enam dan petunjuk untuk menambahkan satu, serta panah yang menunjuk digit lima dan delapan dengan petunjuk untuk menggantinya dengan nol. Hasilnya adalah dua puluh tiga ribu tujuh ratus. Hasil tertulis, digit dari kiri ke kanan: dua, tiga, tanda koma, tujuh, nol, nol.
+Jadi dua puluh tiga ribu enam ratus lima puluh delapan yang dibulatkan ke ratusan terdekat adalah dua puluh tiga ribu tujuh ratus.
+bagian be
+Temukan tempat ratusan. Tanda panah menunjuk ke 'sembilan' pada bilangan tiga ribu sembilan ratus tujuh puluh delapan, dengan tulisan 'tempat ratusan' tertulis di atasnya, yang menggambarkan digit ratusan dalam bilangan empat digit.
+Garisbawahi digit di sebelah kanan tempat ratusan. Angka tiga ribu sembilan ratus tujuh puluh delapan ditulis dengan garis mendatar di bawah angka tujuh.
+Digit di sebelah kanan tempat ratusan adalah tujuh. Karena tujuh lebih besar daripada atau sama dengan lima, bulatkan ke atas dengan menambahkan satu pada sembilan. Kemudian ganti semua digit di sebelah kanan tempat ratusan dengan nol. Ilustrasi pembulatan tiga ribu sembilan ratus tujuh puluh delapan ke ratusan terdekat. Digit ratusan sembilan ditambah satu sehingga menjadi sepuluh; digit nol ditulis di tempat ratusan, satu ditambahkan ke digit tiga di tempat ribuan, dan digit sisanya diganti dengan nol. Hasilnya adalah empat ribu. Hasil tertulis, digit dari kiri ke kanan: empat, tanda koma, nol, nol, nol.
+Jadi tiga ribu sembilan ratus tujuh puluh delapan yang dibulatkan ke ratusan terdekat adalah empat ribu.
+
+## m81243--fs-id1518702
+
+Bulatkan ke ratusan terdekat: tujuh belas ribu delapan ratus lima puluh dua.
+
+Jawaban.
+
+tujuh belas ribu sembilan ratus
+
+## m81243--fs-id2149604
+
+Bulatkan ke ratusan terdekat: empat ribu sembilan ratus lima puluh satu.
+
+Jawaban.
+
+lima ribu
+
+## m81243--fs-id1263758
+
+Bulatkan setiap bilangan ke ribuan terdekat:
+
+bagian a seratus empat puluh tujuh ribu tiga puluh dua
+
+bagian be dua puluh sembilan ribu lima ratus empat
+
+Penyelesaian
+bagian a
+Temukan tempat ribuan. Garisbawahi digit di sebelah kanan tempat ribuan. Bilangan seratus empat puluh tujuh ribu tiga puluh dua ditampilkan dengan panah yang menunjuk digit tujuh dan label yang menyatakan bahwa digit tersebut berada di tempat ribuan.
+Digit di sebelah kanan tempat ribuan adalah nol. Karena nol kurang dari lima, kita tidak mengubah digit di tempat ribuan. Bilangan seratus empat puluh tujuh ribu tiga puluh dua ditampilkan dengan digit nol di tempat ratusan digarisbawahi.
+Kemudian, kita mengganti semua digit di sebelah kanan tempat ribuan dengan nol. Bilangan seratus empat puluh tujuh ribu ditampilkan sebagai hasil pembulatan. Hasil tertulis, digit dari kiri ke kanan: satu, empat, tujuh, tanda koma, nol, nol, nol.
+Jadi seratus empat puluh tujuh ribu tiga puluh dua yang dibulatkan ke ribuan terdekat adalah seratus empat puluh tujuh ribu.
+bagian be
+Temukan tempat ribuan. Bilangan dua puluh sembilan ribu lima ratus empat ditampilkan dengan panah yang menunjuk digit sembilan dan label yang menyatakan bahwa digit tersebut berada di tempat ribuan.
+Garisbawahi digit di sebelah kanan tempat ribuan. Bilangan dua puluh sembilan ribu lima ratus empat ditampilkan dengan digit lima digarisbawahi.
+Digit di sebelah kanan tempat ribuan adalah lima. Karena lima lebih besar daripada atau sama dengan lima, bulatkan ke atas dengan menambahkan satu pada sembilan. Kemudian ganti semua digit di sebelah kanan tempat ribuan dengan nol. Gambar pembulatan dua puluh sembilan ribu lima ratus empat ke ribuan terdekat. Satu ditambahkan pada digit sembilan di tempat ribuan sehingga menjadi sepuluh; nol ditulis di tempat ribuan, satu ditambahkan pada tempat puluh ribuan, dan tiga digit terakhir diganti dengan nol. Hasilnya adalah tiga puluh ribu. Hasil tertulis, digit dari kiri ke kanan: tiga, nol, tanda koma, nol, nol, nol.
+Jadi dua puluh sembilan ribu lima ratus empat yang dibulatkan ke ribuan terdekat adalah tiga puluh ribu.
+Perhatikan bahwa pada bagian be, ketika kita menambahkan seribu pada sembilan ribu, jumlahnya menjadi sepuluh ribu. Kita mengelompokkannya kembali menjadi satu kelompok sepuluh ribu dan nol ribu. Kita menambahkan satu kelompok sepuluh ribu tersebut pada dua kelompok sepuluh ribu, lalu menulis nol di tempat ribuan.
+
+## m81243--fs-id2603401
+
+Bulatkan ke ribuan terdekat: enam puluh tiga ribu sembilan ratus dua puluh satu.
+
+Jawaban.
+
+enam puluh empat ribu
+
+## m81243--fs-id4211785
+
+Bulatkan ke ribuan terdekat: seratus lima puluh enam ribu empat ratus tiga puluh tujuh.
+
+Jawaban.
+
+seratus lima puluh enam ribu
+
+## m81243--fs-id3323694
+
+AKSES SUMBER DAYA DARING TAMBAHAN
+
+Tentukan Nilai Tempat
+
+Tulis Bilangan Cacah dengan Digit dari Kata-Kata

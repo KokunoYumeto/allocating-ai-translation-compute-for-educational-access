@@ -1,0 +1,247 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81293",
+  "section": "fs-id1739414",
+  "resolved_title": "Round Decimals",
+  "scope": "Entire source subtree: fuel/currency introduction, two numberlines and full caption, all method steps, two worked examples, four practice exercises, all eleven supplied answer parts,16original images and all seven source links including five additional online resources.",
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR11"
+      ],
+      "read": [
+        "languages/bn-Beng-IN/canon/README.md",
+        "languages/bn-Beng-IN/canon/examples.tsv",
+        "languages/bn-Beng-IN/terminology.tsv:T045-T052",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png",
+        "provenance/modules/m81293.source.cnxml:entirefs-id1739414"
+      ],
+      "decision": "ActualTR11image reads4117approximatedby4100or4000; OCR40900iswrong. Use আসন্নমান as lexical witness only, not proof of a decimal tie rule. ActualTR08place table gives দশাংশ/শতাংশ/সহস্রাংশ; exclude shifted12.74row. TR09supports retaining zeros in decimal reading. Distinguish nearest-place approximation from exact equality."
+    },
+    {
+      "stage": "during method and worked-image drafting",
+      "examples": [
+        "TR08",
+        "TR11"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.txt:3-9",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:20-27",
+        "all16actual source images listed below"
+      ],
+      "decision": "Return to actual estimation wording and place-value passages. The source>=5threshold already decides positive ties upward; describe its signed extension explicitly as this lesson's declared ties-away-from-zero convention, not the only possible convention. Add carry and original-value-before-each-rounding safeguards. Compare every raster with table instructions:022-03underlines3instead of required7, whereas021-04and022-04correctly produce18.38and18.4despite faulty English alts."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": [
+        "TR09",
+        "TR11"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:4-10",
+        "previously inspected actualTR11p009image numeric anchor",
+        "sourceXML problems and supplied answers",
+        "assembled Bengali introduction/caption/method"
+      ],
+      "decision": "Check decimal-place outputs, carried zeros and consistent আসন্নমান wording after all11answers pass exactdecimal rounding. Keep2.00as two-decimal-place output in labelled carry example. Smooth the local link toএইচিত্রের rather thanচিত্র-এর; preserve its source target. TR11still does not supply a decimal tie/carry/negative example; those are transparently editorial explanations."
+    }
+  ],
+  "editorial_decisions": [
+    {
+      "source_ids": [
+        "fs-id1351097"
+      ],
+      "decision": "Attribute the gasoline convention to the source's UnitedStatesexample instead of claiming independently checked current pricing practice. Preserve all source$values,cents,gallonunitand8numericcurrencymtextnodes. No currency conversion or financial recommendation."
+    },
+    {
+      "source_ids": [
+        "fs-id1266320",
+        "fs-id4163462"
+      ],
+      "decision": "Explain nearest permitted place value. Threshold>=5alreadyimplies upward positive ties. The declared negative extension rounds magnitude then restores sign, yielding halfway away fromzero. Other contexts may choose other conventions; do not call this universal. Parent notified, practice agent aligned."
+    },
+    {
+      "source_ids": [
+        "eip-id1168466730764",
+        "fs-id1367462"
+      ],
+      "decision": "Useঅন্তত5for the sourcegreater-than-or-equalto5question around unchangedMathML5?. Increment1unchanged. Explain carrying across9and restrict deleting all rightward digits to the source's ones-or-decimal-place tasks. Preserve requested trailing zeros and avoid double rounding."
+    },
+    {
+      "source_ids": [
+        "CNX_BMath_Figure_05_01_012"
+      ],
+      "decision": "Preserve fullcaption14text/tailslots andallMathMLperiods/order. Source2.72iscloserto3than2andcloserto2.70than2.80; both exact distance comparisonschecked. Caption expresses these comparisons without reversing operands."
+    },
+    {
+      "source_ids": [
+        "eip-id1168467479198",
+        "eip-id1168468292755"
+      ],
+      "decision": "Keep actualmisplacedunderlineunder3. Distinguish markererrorfromcorrectnextstepwhichuses7andcorrectfinal18.4. Visibleinstruction,altandariadescribeerror; no silent image substitution."
+    },
+    {
+      "source_ids": [
+        "fs-id2436675",
+        "fs-id1480623",
+        "fs-id1351097"
+      ],
+      "decision": "All7links preserved: one localfiguretarget exists, one pinnedmoduledestinationm81242andfiveOpenStaxresourceURLs unchanged. Translate labels only. Remote resources not opened or verified; do not claim they are currently available."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_rounding_convention_clarified",
+      "source_ids": [
+        "fs-id1266320",
+        "fs-id4163462",
+        "eip-id1168466730764",
+        "fs-id1367462"
+      ],
+      "source_issue": "The>=5threshold already resolves positive halfway cases upward. The short rule does not explicitly explain its signed extension, carrying when the retained digit is9, or the scope of deleting rightward digits; the editorial clarification declares a ties-away-from-zero extension rather than claiming all contexts use that convention.",
+      "bengali_correction": "নির্দিষ্ট স্থানের নিকটতম মান নাও। এখানে ঠিক মাঝামাঝি হলে শূন্য থেকে দূরের মান নেওয়ার নিয়ম: ঋণাত্মক হলে চিহ্ন বাদ দিয়ে কাজ করে শেষে ফিরিয়ে দাও। 9-এর সঙ্গে 1 যোগে বাঁ দিকের ঘরে হাতে থাকা 1 যোগ করো। একক বা দশমিক স্থানের ডান দিকের অঙ্ক বাদ দাও; চাওয়া দশমিক ঘর বোঝাতে শেষের শূন্য রেখো। প্রতিটি আসন্নমান মূল সংখ্যা থেকে বের করো।",
+      "policy": "Label the convention and scope as editorial clarification. Preserve original5threshold,1increment, every example value and supplied answer. Do not claim this tie convention was directly witnessed inTR11.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_image_marker_mismatch",
+      "source_ids": [
+        "eip-id1168468292755",
+        "eip-id1168467479198"
+      ],
+      "source_issue": "The tenths-rounding row instructs underlining the digit to the right of the tenths place(7), but image022-03underlines3itself.",
+      "evidence": "Directly inspected CNX_BMath_Figure_05_01_022_img-03.png: arrow at3and underline beneath3; next correct step examines7and adds1to3.",
+      "bengali_correction": "মূল ছবিতে 3-এর নীচে দাগ আছে; এই ধাপে ঠিক ডান দিকের অঙ্ক 7-এর নীচে দাগ দেওয়া উচিত।",
+      "policy": "Preserve original pixels. Explicitly identify the erroneous underline in alt, visible table instruction and aria description; retain correct source final18.4.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "eip-id1168466166028"
+      ],
+      "source_issue": "English alt incorrectly describes deleting.379and rounding18.379to19. Actual021-04adds1to7and deletes9for hundredths rounding.",
+      "evidence": "Directly inspected CNX_BMath_Figure_05_01_021_img-04.png and021_img-05.png; correct result18.38.",
+      "bengali_correction": "শতাংশের অঙ্ক 7-এর সঙ্গে 1 যোগ করে শেষ অঙ্ক 9 বাদ দিলে 18.38 পাওয়া যায়।",
+      "policy": "Correct Bengali alt to actual correct source image; do not alter pixels or answer.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "eip-id1168468595227"
+      ],
+      "source_issue": "English alt incorrectly describes whole-number rounding to18. Actual022-04adds1to the tenths digit3and deletes79.",
+      "evidence": "Directly inspected CNX_BMath_Figure_05_01_022_img-04.png and022_img-05.png; correct result18.4.",
+      "bengali_correction": "দশাংশের অঙ্ক 3-এর সঙ্গে 1 যোগ করে শেষের 79 বাদ দিলে 18.4 পাওয়া যায়।",
+      "policy": "Correct Bengali alt to actual correct source image; preserve pixels and answer.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {
+      "file": "CNX_BMath_Figure_05_01_012.jpg",
+      "observed": "Actualtwopartimageviewed. Top2to3scale in0.1steps,point2.72between2.7and2.8; bottom2.70to2.80scale in0.01steps,point exactly2.72. Both positions and closer-boundary comparisons correct."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_05_01_021_img-01.png",
+        "CNX_BMath_Figure_05_01_021_img-02.png",
+        "CNX_BMath_Figure_05_01_021_img-03.png",
+        "CNX_BMath_Figure_05_01_021_img-04.png",
+        "CNX_BMath_Figure_05_01_021_img-05.png"
+      ],
+      "observed": "All5actualfilesviewed:18.379;arrowtohundredths7;underline9;add1to7anddelete9;18.38. English021-04altclaim19isfalse; imageitselfcorrect."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_05_01_022_img-01.png",
+        "CNX_BMath_Figure_05_01_022_img-02.png",
+        "CNX_BMath_Figure_05_01_022_img-03.png",
+        "CNX_BMath_Figure_05_01_022_img-04.png",
+        "CNX_BMath_Figure_05_01_022_img-05.png"
+      ],
+      "observed": "All5actualfilesviewed:18.379;arrowtotenths3;incorrectunderline3instead ofnextdigit7;correctadd1to3anddelete79;18.4. English022-04altclaimwhole-number18isfalse; imageitselfcorrect."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_05_01_023_img-01.png",
+        "CNX_BMath_Figure_05_01_023_img-02.png",
+        "CNX_BMath_Figure_05_01_023_img-03.png",
+        "CNX_BMath_Figure_05_01_023_img-04.png",
+        "CNX_BMath_Figure_05_01_023_img-05.png"
+      ],
+      "observed": "All5actualfilesviewed:18.379;arrowtoones8;underline3;do not add1to8anddelete379;18. Correctallstages."
+    }
+  ],
+  "answer_checks": [
+    {
+      "exercise_id": "fs-id1614508",
+      "solution_id": "fs-id2464215",
+      "check": "Source18.379nearesthundredth=18.38; exact decimal calculation plus all5actualrasters."
+    },
+    {
+      "exercise_id": "fs-id1629393",
+      "solution_id": "fs-id2197551",
+      "check": "Source1.047nearesthundredth=1.05; exact calculationandplaintextsuppliedanswer matched."
+    },
+    {
+      "exercise_id": "fs-id4337739",
+      "solution_id": "fs-id1393348",
+      "check": "Source9.173nearesthundredth=9.17; exact calculationandplaintextsuppliedanswer matched."
+    },
+    {
+      "exercise_id": "fs-id1617454",
+      "solution_id": "fs-id1727429",
+      "check": "Source18.379nearesttenth=18.4andnearestwhole=18; exactcalculation plus10actualrasters. Misplacedunderlinewarned,finalanswerscorrect."
+    },
+    {
+      "exercise_id": "fs-id1772478",
+      "solution_id": "fs-id2606069",
+      "check": "Source6.582at2,1,0decimalplacesgives6.58,6.6,7. All3plaintextsourceanswersmatched."
+    },
+    {
+      "exercise_id": "fs-id2364254",
+      "solution_id": "fs-id2603261",
+      "check": "Source15.2175at3,2,1decimalplacesgives15.218,15.22,15.2. Firstispositivehalfwaycase and agreeswithsource>=5rule. All3plaintextsourceanswersmatched."
+    }
+  ],
+  "language_gaps": [
+    "TR11directlywitnesses আসন্ন মান and4117→4100/4000accordingtopurpose; it doesnot supply a decimal-rounding algorithm, negative tie case or carry example. These explanations remain explicitly editorial and mathematically checked.",
+    "IndependentWestBengallanguage,teacher,learnerandassistive-technologyvalidationpending. No curriculumcertification, universalroundingconventionorverifiedremoteresourceavailability claimed."
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "d11a3fe85f8e2289e52d7fb05bf17a7402cfaeb8a73beae63193ad43a7c901e5",
+    "method": "Read-onlybuild.translatedand in-memoryrender_cnxmlpassedexactsource tags/IDs/order/nonlocalizedattributes/MathMLandEnglish-prosegate. All11answerpartscheckedusingexactDecimalquantizeROUND_HALF_UPagainstsourceXMLvaluesandall8plaintextpracticeanswers; workedanswersalsoverifiedwithall16actualimages. Intro3.279→3.28and2.72→3/2.7checked; exactnumberlinedistancesagree. Sevenexplicit tie/sign/carryexampleschecked, including1.999→2.00and9.995→10.00. Double-roundingcounterexample1.249→1.25→1.3versusdirect1.2confirmslabelledsafeguard. HTMLIDsunique. No media/builder/generated-output/externalwrites.",
+    "nodes": 281,
+    "ids": 64,
+    "mathml": 26,
+    "paragraphs": 12,
+    "paragraph_mappings": 8,
+    "node_slot_mappings": 31,
+    "examples": 2,
+    "exercises": 6,
+    "supplied_solutions": 6,
+    "answer_parts_checked": 11,
+    "source_absent_solutions": 0,
+    "images": 16,
+    "unique_images_actually_inspected": 16,
+    "tables": 3,
+    "translated_aria_labels": 3,
+    "links": 7,
+    "html_fragment_characters": 17654,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parentintegratesandchecksdesktop/narrowrender. Requestnextunfinishedsourceblock; m93SectionExercisesassignedtoConvertagent,donotoverlap. Entireassignmentongoing;noindependentpush/publishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

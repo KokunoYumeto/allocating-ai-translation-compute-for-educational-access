@@ -1,0 +1,31 @@
+{
+  "unit":"PNB-008",
+  "status":"bounded_visual_review_pass_with_limitations",
+  "recorded_date":"2026-08-31",
+  "browser":"Codex in-app Chromium",
+  "reader_sha256":"fab9fe105ba3ee02cb36b4d0cad65a984a41179ae69642e61d4eaaa1246e6f78",
+  "structural_checks":3237,
+  "viewports":[{"requested_width":1024,"requested_height":800,"document_client_width":1009,"document_scroll_width":1009},{"requested_width":390,"requested_height":844,"document_client_width":375,"document_scroll_width":375}],
+  "observations":[
+    "Desktop toolkit table occupies890.792px within its904px region. All three columns are visible; the original517x319 graph/table images retain their natural dimensions. The constant row visibly has c=2 and original points(-2,2),(0,2),(2,2).",
+    "Initial mobile review prompted a unit-only CSS change from1020px to890px table width, with170/170/550px columns and a physically left-aligned RTL spanning title. The initial340px region now shows the title and complete name/formula columns; original column metadata and order remain preserved.",
+    "Pointer scrolling the mobile toolkit region to scrollLeft551.1904907226562 exposes the original graph's far-right mini-table. Page width remains375px.",
+    "Pointer scrolling the original975px three-panel figure to635.3174438476562 shows the radius3 circle and its original f(x) axis label. The misleading source description/label is qualified separately; source pixels remain unchanged.",
+    "The grade exercise's two original line breaks separate its(a)/(b) questions; supplied answers remain a distinct following block. The source claim of100 percentages is retained rather than silently changed to101.",
+    "An automatic center-click on the wrapped earlier-figure link missed its text. After inspecting its line rectangles, pointer click337,66 reached unit-001.html#Figure_01_01_001; the figure existed and page width remained375px. One preceding pointer call timed out before dispatch; subsequent navigation was explicitly checked, not inferred from tool success."
+  ],
+  "screenshot_sha256":{
+    "unit-008-circle-mobile.jpg":"6d3cabb294a452d662d59f92b7353799e41300546511c57077d4e5cea2f548e6",
+    "unit-008-crossreference-mobile.jpg":"3322aa5e4f7b95ce21a40659ad5000e83de740a0331d9eb0dd26e422fe47c939",
+    "unit-008-grade-parts-mobile.jpg":"f7ac39de5bffe002f1754d5e6a8311d1aebcf0d369c78a8b07024d7ad2a636be",
+    "unit-008-toolkit-desktop.jpg":"3618850b94beabb7675c3a1aaa1ffd6033e616d7e9f09480e51cf25406114648",
+    "unit-008-toolkit-left-mobile.jpg":"c910454b750544cd7de7fd28f6b4cf38a5dbcf5473006f3e48417c62681570bf",
+    "unit-008-toolkit-right-mobile.jpg":"ec34e20b3c7c573c359853e668c90f9e167daa921df3a859c8bc22032766b213"
+  },
+  "limitations":[
+    "Selected source-body views, not exhaustive line-by-line visual or publication certification. Actual screenshot dimensions differ from emulated viewport dimensions; full requested-viewport coverage is not inferred.",
+    "No native Punjabi, educator, assistive-technology, native arrow-key, cross-browser or font-portability certification.",
+    "Historical external short URLs were preserved, not tested for present availability. Source examples do not establish current grading or financial policies.",
+    "Required Section Exercises and the trailing glossary remain next. Neither m49301 nor any assigned book is complete."
+  ]
+}

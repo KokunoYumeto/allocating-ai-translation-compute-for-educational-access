@@ -1,0 +1,1354 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xml:lang="id-ID">
+
+<title>Relasi dan Fungsi</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m81373</md:content-id>
+  <md:title>Relasi dan Fungsi</md:title>
+  <md:abstract><para id="para-00001">Pada akhir bagian ini, Anda akan mampu:</para>
+<list id="list-00001">
+<item>Menentukan domain dan range suatu relasi</item>
+<item>Menentukan apakah suatu relasi merupakan fungsi</item>
+<item>Menentukan nilai suatu fungsi</item>
+</list></md:abstract>
+  <md:uuid>59fe6dc4-6e09-4a88-aa1c-b5f72bd79a20</md:uuid>
+</metadata>
+
+<content>
+<note id="fs-id1167836299681" class="be-prepared">
+<para id="fs-id1167829627915">Sebelum memulai, kerjakan kuis kesiapan berikut.</para>
+<exercise id="fs-idm394340496">
+<problem id="fs-idm544080880">
+<para id="fs-idm404379184">Hitung nilainya <m:math><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> ketika <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow></m:math>.<newline/>
+Jika Anda keliru mengerjakan soal ini, tinjau kembali <link target-id="fs-id1167836530265" document="m81422"/>.</para>
+</problem>
+<solution id="fs-idm397777984">
+<para id="fs-idm543864704"><m:math><m:mrow><m:mo>−</m:mo><m:mn>11</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-idm404421072" class="be-prepared">
+<exercise id="fs-idm404402304">
+<problem id="fs-idm407107008">
+<para id="fs-idm388488080">Hitung nilainya <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math> ketika <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math><newline/>
+Jika Anda keliru mengerjakan soal ini, tinjau kembali <link target-id="fs-id1167836530265" document="m81422"/>.</para>
+</problem>
+<solution id="fs-idm373175664">
+<para id="fs-idm379550496"><m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-idm387231616" class="be-prepared">
+<exercise id="fs-idm384140160">
+<problem id="fs-idm364755472">
+<para id="fs-idm544046000">Sederhanakan: <m:math><m:mrow><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5.</m:mn></m:mrow></m:math><newline/>
+Jika Anda keliru mengerjakan soal ini, tinjau kembali <link target-id="fs-id1167836652573" document="m81422"/>.</para>
+</problem>
+<solution id="fs-idm397191664">
+<para id="fs-idm396654576"><m:math><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<section id="fs-id1167829789538">
+<title>Menentukan Domain dan Range Suatu Relasi</title>
+<para id="fs-id1167836538118">Dalam kehidupan sehari-hari, banyak data atau besaran dipasangkan dengan nama kita. Nomor jaminan sosial, nomor induk mahasiswa, alamat surel, nomor telepon, dan tanggal lahir kita semuanya dipasangkan dengan nama kita. Jadi, terdapat relasi antara nama kita dan setiap data tersebut.</para>
+<para id="fs-id1167829921677">Ketika dosen menerima daftar kelas, nama semua mahasiswa biasanya tercantum dalam satu kolom dan nomor induk mahasiswa pada kolom berikutnya. Jika korespondensi ini dipandang sebagai himpunan pasangan berurutan, dengan unsur pertama berupa nama mahasiswa dan unsur kedua berupa nomor induknya, korespondensi itu disebut <term id="term-00001">relasi</term>.</para>
+<equation id="fs-id1167836418492" class="unnumbered"><label/><m:math><m:mrow><m:mtext>(Nama mahasiswa, Nomor induk mahasiswa)</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1167836547061">Himpunan semua nama mahasiswa di kelas disebut <term id="term-00002">domain</term> relasi, sedangkan himpunan semua nomor induk yang dipasangkan dengan mahasiswa tersebut merupakan range relasi.</para>
+<para id="fs-id1167833059636">Ada banyak situasi serupa ketika satu variabel dipasangkan atau dicocokkan dengan variabel lain. Himpunan pasangan berurutan yang mencatat pencocokan tersebut disebut relasi.</para>
+<note id="fs-id1167836378970">
+<title>Relasi</title>
+<para id="fs-id1167824735594">Suatu <emphasis effect="bold">relasi</emphasis> adalah sembarang himpunan pasangan berurutan, <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Semua nilai <emphasis effect="italics">x</emphasis> pada pasangan berurutan tersebut membentuk <emphasis effect="bold">domain</emphasis>. Semua nilai <emphasis effect="italics">y</emphasis> pada pasangan berurutan tersebut membentuk <emphasis effect="bold">range</emphasis>.</para>
+</note>
+<example id="fs-id1167836692527">
+<exercise id="fs-id1167836327016">
+<problem id="fs-id1167833385954">
+<para id="fs-id1167826194732">Untuk relasi <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>25</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>:</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167836619755"><span class="token">ⓐ</span> Tentukan domain relasi tersebut.</para>
+<para id="fs-id1167833356505"><span class="token">ⓑ</span> Tentukan range relasi tersebut.</para>
+</problem>
+<solution id="fs-id1167824765140">
+<para id="fs-id1167836597346"><m:math><m:mrow><m:mspace width="21em"/><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>25</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1167829691118"><span class="token">ⓐ</span> Domain adalah himpunan semua nilai <emphasis effect="italics">x</emphasis> dari relasi tersebut. <m:math><m:mrow><m:mspace width="3.3em"/><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1167829593929"><span class="token">ⓑ</span> Range adalah himpunan semua nilai <emphasis effect="italics">y</emphasis> dari relasi tersebut. <m:math><m:mrow><m:mspace width="4em"/><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>25</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167836629801" class="try">
+<exercise id="fs-id1167833272898">
+<problem id="fs-id1167826169765">
+<para id="fs-id1167829597566">Untuk relasi <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>64</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>125</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>:</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167836550500"><span class="token">ⓐ</span> Tentukan domain relasi tersebut.</para>
+<para id="fs-id1167833202428"><span class="token">ⓑ</span> Tentukan range relasi tersebut.</para>
+</problem>
+<solution id="fs-id1167836618853">
+<para id="fs-id1167836492201"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>27</m:mn><m:mo>,</m:mo><m:mn>64</m:mn><m:mo>,</m:mo><m:mn>125</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167833021555" class="try">
+<exercise id="fs-id1167836688426">
+<problem id="fs-id1167829614386">
+<para id="fs-id1167836360520">Untuk relasi <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>15</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>:</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167833290815"><span class="token">ⓐ</span> Tentukan domain relasi tersebut.</para>
+<para id="fs-id1167825702514"><span class="token">ⓑ</span> Tentukan range relasi tersebut.</para>
+</problem>
+<solution id="fs-id1167829812976">
+<para id="fs-id1167833346148"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>15</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167836509402">
+<title>Pemetaan</title>
+<para id="fs-id1167824927876">Suatu <term id="term-00003">pemetaan</term> kadang-kadang digunakan untuk menunjukkan suatu relasi. Panah-panah menunjukkan pemasangan unsur-unsur domain dengan unsur-unsur range.</para>
+</note>
+<example id="fs-id1167829683746">
+<exercise id="fs-id1167824735214">
+<problem id="fs-id1167836525923">
+<para id="fs-id1167833412571">Gunakan <emphasis effect="bold">pemetaan</emphasis> relasi yang ditunjukkan untuk <span class="token">ⓐ</span> mencantumkan pasangan berurutan relasi, <span class="token">ⓑ</span> menentukan domain relasi, dan <span class="token">ⓒ</span> menentukan range relasi.</para>
+<media id="fs-id1167833364760" alt="Gambar menunjukkan dua tabel satu kolom. Tabel kiri berjudul “Nama” dan memuat Alison, Penelope, June, Gregory, Geoffrey, Lauren, Stephen, Alice, Liz, dan Danny. Tabel kanan berjudul “Tanggal Lahir” dan memuat 12 Januari, 3 Februari, 25 April, 10 Mei, 23 Mei, 24 Juli, 2 Agustus, dan 15 September. Setiap nama dihubungkan oleh sebuah panah ke tanggal lahirnya. Sebagian besar tanggal menerima satu panah; 24 Juli menerima dua panah, masing-masing dari Stephen dan Danny, sedangkan 2 Agustus menerima dua panah, masing-masing dari June dan Liz.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_001_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167836417183">
+<para id="fs-id1167836327324"><span class="token">ⓐ</span> Panah menunjukkan pemasangan orang dengan tanggal lahirnya. Kita membentuk pasangan berurutan dengan nama orang tersebut sebagai nilai <emphasis effect="italics">x</emphasis> dan tanggal lahirnya sebagai nilai <emphasis effect="italics">y</emphasis>.</para>
+<para id="fs-id1167833008731">{(Alison, 25 April), (Penelope, 23 Mei), (June, 2 Agustus), (Gregory, 15 September), (Geoffrey, 12 Januari), (Lauren, 10 Mei), (Stephen, 24 Juli), (Alice, 3 Februari), (Liz, 2 Agustus), (Danny, 24 Juli)}</para>
+<para id="fs-id1167836788581"><span class="token">ⓑ</span> Domain adalah himpunan semua nilai <emphasis effect="italics">x</emphasis> dari relasi tersebut.</para>
+<para id="fs-id1167836648651">{Alison, Penelope, June, Gregory, Geoffrey, Lauren, Stephen, Alice, Liz, Danny}</para>
+<para id="fs-id1167836689824"><span class="token">ⓒ</span> Range adalah himpunan semua nilai <emphasis effect="italics">y</emphasis> dari relasi tersebut.</para>
+<para id="fs-id1167836326011">{12 Januari, 3 Februari, 25 April, 10 Mei, 23 Mei, 24 Juli, 2 Agustus, 15 September}</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167836340432" class="try">
+<exercise id="fs-id1167824700008">
+<problem id="fs-id1167829714243">
+<para id="fs-id1167829614511">Gunakan pemetaan relasi yang ditunjukkan untuk <span class="token">ⓐ</span> mencantumkan pasangan berurutan relasi <span class="token">ⓑ</span> menentukan domain relasi <span class="token">ⓒ</span> menentukan range relasi.</para>
+<media id="fs-id1167836333597" alt="Gambar menunjukkan dua tabel satu kolom. Tabel kiri berjudul “Nama” dan memuat Khanh Nguyen, Abigail Brown, Sumantha Mishal, dan Jose Hernandez. Tabel kanan berjudul “Nomor ID Mahasiswa” dan memuat ab56781, jh47983, kn68413, dan sm32479. Panah menghubungkan Khanh Nguyen ke kn68413, Abigail Brown ke ab56781, Sumantha Mishal ke sm32479, dan Jose Hernandez ke jh47983.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_002_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167836554322">
+<para id="fs-id1167836539147"><span class="token">ⓐ</span> (Khanh Nguyen, kn68413), (Abigail Brown, ab56781), (Sumantha Mishal, sm32479), (Jose Hernandez, jh47983) <span class="token">ⓑ</span> {Khanh Nguyen, Abigail Brown, Sumantha Mishal, Jose Hernandez} <span class="token">ⓒ</span> {kn68413, ab56781, sm32479, jh47983}</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167824754892" class="try">
+<exercise id="fs-id1167836663646">
+<problem id="fs-id1167829716810">
+<para id="fs-id1167836731398">Gunakan pemetaan relasi yang ditunjukkan untuk <span class="token">ⓐ</span> mencantumkan pasangan berurutan relasi <span class="token">ⓑ</span> menentukan domain relasi <span class="token">ⓒ</span> menentukan range relasi.</para>
+<media id="fs-id1167833385478" alt="Gambar menunjukkan dua tabel satu kolom. Tabel kiri berjudul “Nama” dan memuat Maria, Armando, Cynthia, Kelly, dan Rachel. Tabel kanan berjudul “Tanggal Lahir” dan memuat 18 Januari, 15 Maret, 6 November, dan 8 Desember. Panah menghubungkan Maria ke 6 November, Armando ke 18 Januari, Cynthia ke 8 Desember, Kelly ke 15 Maret, dan Rachel ke 6 November.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_003_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167829750633">
+<para id="fs-id1167829860129"><span class="token">ⓐ</span> (Maria, 6 November), (Armando, 18 Januari), (Cynthia, 8 Desember), (Kelly, 15 Maret), (Rachel, 6 November) <span class="token">ⓑ</span> {Maria, Armando, Cynthia, Kelly, Rachel} <span class="token">ⓒ</span> {6 November, 18 Januari, 8 Desember, 15 Maret}</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1167836532042">Grafik merupakan cara lain untuk menyajikan suatu relasi. Himpunan pasangan berurutan dari semua titik yang digambarkan merupakan relasinya. Himpunan semua koordinat <emphasis effect="italics">x</emphasis> merupakan domain relasi, sedangkan himpunan semua koordinat <emphasis effect="italics">y</emphasis> merupakan range. Umumnya, bilangan dalam domain maupun range ditulis menurut urutan menaik.</para>
+<example id="fs-id1167833057329">
+<exercise id="fs-id1167829877976">
+<problem id="fs-id1167836450184">
+<para id="fs-id1167829681249">Gunakan grafik relasi untuk <span class="token">ⓐ</span> mencantumkan pasangan berurutan relasi <span class="token">ⓑ</span> menentukan domain relasi <span class="token">ⓒ</span> menentukan range relasi.</para>
+<media id="fs-id1167836673420" alt="Grafik menampilkan enam titik pada bidang koordinat xy dengan kedua sumbu dari negatif 6 hingga 6: (negatif 3, 4), (negatif 3, negatif 1), (0, 3), (1, 5), (2, negatif 2), dan (4, negatif 2).">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_004_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167833329257">
+<para id="fs-id1167836613766"><span class="token">ⓐ</span> Pasangan berurutan relasi tersebut adalah: <m:math><m:mrow><m:mspace width="7.6em"/><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167836429436"><span class="token">ⓑ</span> Domain adalah himpunan semua nilai <emphasis effect="italics">x</emphasis> dari relasi: <m:math><m:mrow><m:mspace width="2.2em"/><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167833137637">Perhatikan bahwa <m:math><m:mrow><m:mn>−3</m:mn></m:mrow></m:math> berulang, tetapi hanya dicantumkan satu kali.</para>
+<para id="fs-id1167833364739"><span class="token">ⓒ</span> Range adalah himpunan semua nilai <emphasis effect="italics">y</emphasis> dari relasi: <m:math><m:mrow><m:mspace width="2.9em"/><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167833050654">Perhatikan bahwa <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math> berulang, tetapi hanya dicantumkan satu kali.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167829750323" class="try">
+<exercise id="fs-id1167829850985">
+<problem id="fs-id1167829879283">
+<para id="fs-id1167824773962">Gunakan grafik relasi untuk <span class="token">ⓐ</span> mencantumkan pasangan berurutan relasi <span class="token">ⓑ</span> menentukan domain relasi <span class="token">ⓒ</span> menentukan range relasi.</para>
+<media id="fs-id1167836341066" alt="Grafik menampilkan enam titik pada bidang koordinat xy dengan kedua sumbu dari negatif 6 hingga 6: (negatif 3, 3), (negatif 2, 2), (negatif 1, 0), (0, negatif 1), (2, negatif 2), dan (4, negatif 4).">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_005_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167836419079">
+<para id="fs-id1167833051815"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math><newline/><m:math><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167829738598" class="try">
+<exercise id="fs-id1167833056928">
+<problem id="fs-id1167836485775">
+<para id="fs-id1167833050002">Gunakan grafik relasi untuk <span class="token">ⓐ</span> mencantumkan pasangan berurutan relasi <span class="token">ⓑ</span> menentukan domain relasi <span class="token">ⓒ</span> menentukan range relasi.</para>
+<media id="fs-id1167833049956" alt="Grafik menampilkan enam titik pada bidang koordinat xy dengan kedua sumbu dari negatif 6 hingga 6: (negatif 3, 5), (negatif 3, 0), (negatif 3, negatif 6), (negatif 1, negatif 2), (1, 2), dan (4, negatif 4).">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_006_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167833021407">
+<para id="fs-id1167836503993"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math><newline/><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−6</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1167836610583">
+<title>Menentukan Apakah Suatu Relasi Merupakan Fungsi</title>
+<para id="fs-id1167826171759">Jenis relasi khusus yang disebut <term id="term-00004">fungsi</term> banyak digunakan dalam matematika. Fungsi adalah relasi yang memasangkan setiap unsur dalam domainnya dengan tepat satu unsur dalam range. Pada setiap pasangan berurutan dalam relasi, setiap nilai <emphasis effect="italics">x</emphasis> hanya dipasangkan dengan satu nilai <emphasis effect="italics">y</emphasis>.</para>
+<note id="fs-id1167836614987">
+<title>Fungsi</title>
+<para id="fs-id1167829714644">Suatu <emphasis effect="bold">fungsi</emphasis> adalah relasi yang memasangkan setiap unsur dalam domainnya dengan tepat satu unsur dalam range.</para>
+</note>
+<para id="fs-id1167836532939">Contoh tanggal lahir pada <link target-id="fs-id1167829683746"/> membantu kita memahami definisi ini. Setiap orang mempunyai satu tanggal lahir, bukan dua. Dua orang boleh memiliki tanggal lahir yang sama. Danny dan Stephen sama-sama lahir pada 24 Juli<sup></sup>, sedangkan June dan Liz sama-sama lahir pada 2 Agustus<sup></sup>. Karena setiap orang hanya memiliki satu tanggal lahir, relasi pada <link target-id="fs-id1167829683746"/> merupakan fungsi.</para>
+<para id="fs-id1167836601426">Relasi yang ditunjukkan oleh grafik pada <link target-id="fs-id1167833057329"/> memuat pasangan berurutan <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> dan <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Apakah hal itu diperbolehkan dalam fungsi? Tidak, karena keadaan ini menyerupai satu orang yang memiliki dua tanggal lahir berbeda.</para>
+<example id="fs-id1167829719636">
+<exercise id="fs-id1167824733092">
+<problem id="fs-id1167826132575">
+<para id="fs-id1167836456488">Gunakan himpunan pasangan berurutan untuk (i) menentukan apakah relasi tersebut merupakan fungsi, (ii) menentukan domain relasi, dan (iii) menentukan range relasi.</para>
+<para id="fs-id1167836518420"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1167824735617"><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167833052137">
+<para id="fs-id1167836511265"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1167836691895">(i) Setiap nilai <emphasis effect="italics">x</emphasis> hanya dipasangkan dengan satu nilai <emphasis effect="italics">y</emphasis>. Jadi, relasi ini merupakan fungsi.</para>
+<para id="fs-id1167836543761">(ii) Domain adalah himpunan semua nilai <emphasis effect="italics">x</emphasis> dalam relasi.<newline/>Domainnya adalah: <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167836282463">(iii) Range adalah himpunan semua nilai <emphasis effect="italics">y</emphasis> dalam relasi. Perhatikan bahwa nilai range yang sama tidak dicantumkan dua kali.<newline/>Rangenya adalah: <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>27</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167824735962"><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1167833223866">(i) Nilai <emphasis effect="italics">x</emphasis> = 9 dipasangkan dengan dua nilai <emphasis effect="italics">y</emphasis>, yaitu 3 dan <m:math><m:mrow><m:mn>−3</m:mn><m:mo>.</m:mo></m:mrow></m:math> Jadi, relasi ini bukan fungsi.</para>
+<para id="fs-id1167836552428">(ii) Domain adalah himpunan semua nilai <emphasis effect="italics">x</emphasis> dalam relasi. Perhatikan bahwa nilai domain yang sama tidak dicantumkan dua kali.<newline/>Domainnya adalah: <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167836507848">(iii) Range adalah himpunan semua nilai <emphasis effect="italics">y</emphasis> dalam relasi.<newline/>Rangenya adalah: <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167829742590" class="try">
+<exercise id="fs-id1167836356655">
+<problem id="fs-id1167836544009">
+<para id="fs-id1167833060073">Gunakan himpunan pasangan berurutan untuk (i) menentukan apakah relasi tersebut merupakan fungsi, (ii) menentukan domain relasi, dan (iii) menentukan range fungsi.</para>
+<para id="fs-id1167832951108"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1167833380236"><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167836352889">
+<para id="fs-id1167826188989"><span class="token">ⓐ</span> Ya; <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math><newline/><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−6</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn><m:mo>,</m:mo></m:mrow></m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow><m:mo>}</m:mo></m:math><newline/><span class="token">ⓑ</span> Tidak; <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math><newline/><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−4</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167836362682" class="try">
+<exercise id="fs-id1167836533244">
+<problem id="fs-id1167836717454">
+<para id="fs-id1167836550940">Gunakan himpunan pasangan berurutan untuk (i) menentukan apakah relasi tersebut merupakan fungsi, (ii) menentukan domain relasi, dan (iii) menentukan range relasi.</para>
+<para id="fs-id1167836598862"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>27</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>27</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1167836310540"><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167836298199">
+<para id="fs-id1167836798080"><span class="token">ⓐ</span> Tidak; <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math><newline/><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math><newline/><span class="token">ⓑ</span> Ya; <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−6</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math><newline/><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1167836539582">
+<exercise id="fs-id1167829586801">
+<problem id="fs-id1167836684155">
+<para id="fs-id1167833059664">Gunakan pemetaan untuk <span class="token">ⓐ</span> menentukan apakah relasi tersebut merupakan fungsi <span class="token">ⓑ</span> menentukan domain relasi <span class="token">ⓒ</span> menentukan range relasi.</para>
+<media id="fs-id1167829942558" alt="Gambar menunjukkan pemetaan dari tabel “Nama” ke tabel “Nomor Telepon”. Panah menghubungkan Lydia ke 321-549-3327 rumah dan 321-964-7324 seluler; Eugene ke 427-658-2314 seluler; Janet ke 427-658-2314 seluler; Rick ke 798-367-8541 seluler; serta Marty ke 684-358-7961 rumah dan 684-369-7231 seluler.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_007_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167836698471">
+<para id="fs-id1167825703151"><span class="token">ⓐ</span> Lydia dan Marty masing-masing memiliki dua nomor telepon. Jadi, setiap nilai <emphasis effect="italics">x</emphasis> tidak hanya dipasangkan dengan satu nilai <emphasis effect="italics">y</emphasis>. Dengan demikian, relasi ini bukan fungsi.</para>
+<para id="fs-id1167833369757"><span class="token">ⓑ</span> Domain adalah himpunan semua nilai <emphasis effect="italics">x</emphasis> dalam relasi. Domainnya adalah: {Lydia, Eugene, Janet, Rick, Marty}</para>
+<para id="fs-id1167830076911"><span class="token">ⓒ</span> Range adalah himpunan semua nilai <emphasis effect="italics">y</emphasis> dalam relasi. Rangenya adalah:</para>
+<para id="fs-id1167836576219"><m:math><m:mrow><m:mo>{</m:mo><m:mn>321-549-3327</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>427-658-2314</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>321-964-7324</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>684-358-7961</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>684-369-7231</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>798-367-8541</m:mn><m:mo>}</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167836378848" class="try">
+<exercise id="fs-id1167833397170">
+<problem id="fs-id1167836361517">
+<para id="fs-id1167836520781">Gunakan pemetaan untuk <span class="token">ⓐ</span> menentukan apakah relasi tersebut merupakan fungsi <span class="token">ⓑ</span> menentukan domain relasi <span class="token">ⓒ</span> menentukan range relasi.</para>
+<media id="fs-id1167836392154" alt="Gambar menunjukkan pemetaan dari tabel “Jaringan” ke tabel “Acara”. NBC dihubungkan ke Ellen Degeneres Show, Law and Order, dan Tonight Show. HGTV dihubungkan ke Property Brothers, House Hunters, dan Love It or List It. HBO dihubungkan ke Game of Thrones, True Detective, dan Sesame Street.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_008_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167836388771">
+<para id="fs-id1167829830534"><span class="token">ⓐ</span> tidak <span class="token">ⓑ</span> {NBC, HGTV, HBO} <span class="token">ⓒ</span> {Ellen Degeneres Show, Law and Order, Tonight Show, Property Brothers, House Hunters, Love It or List It, Game of Thrones, True Detective, Sesame Street}</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167836511080" class="try">
+<exercise id="fs-id1167836606033">
+<problem id="fs-id1167829579633">
+<para id="fs-id1167833386907">Gunakan pemetaan untuk <span class="token">ⓐ</span> menentukan apakah relasi tersebut merupakan fungsi <span class="token">ⓑ</span> menentukan domain relasi <span class="token">ⓒ</span> menentukan range relasi.</para>
+<media id="fs-id1167836282707" alt="Gambar menunjukkan pemetaan dari tabel “Nama” ke tabel “Nomor Telepon”. Panah menghubungkan Neal ke 753-469-9731 seluler; Krystal ke 684-369-7231 seluler; Kelvin ke 231-378-5941 seluler; George ke 123-567-4839 kantor dan 639-847-6971 seluler; Christa ke 567-534-2970 kantor; serta Mike ke 567-534-2970 kantor dan 798-367-8541 seluler.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_009_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167836754813">
+<para id="fs-id1167836407181"><span class="token">ⓐ</span> Tidak <span class="token">ⓑ</span> {Neal, Krystal, Kelvin, George, Christa, Mike} <span class="token">ⓒ</span> {123-567-4839 kantor, 231-378-5941 seluler, 753-469-9731 seluler, 567-534-2970 kantor, 684-369-7231 seluler, 798-367-8541 seluler, 639-847-6971 seluler}</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1167836568027">Dalam aljabar, fungsi sangat sering dinyatakan dengan persamaan. Persamaan paling mudah diperiksa sebagai fungsi setelah diselesaikan untuk <emphasis effect="italics">y</emphasis>. Jika setiap nilai <emphasis effect="italics">x</emphasis> hanya menghasilkan satu nilai <emphasis effect="italics">y</emphasis>, persamaan tersebut mendefinisikan fungsi.</para>
+<example id="fs-id1167836683566">
+<exercise id="fs-id1167836561265">
+<problem id="fs-id1167836506912">
+<para id="fs-id1167829681109">Tentukan apakah setiap persamaan merupakan fungsi. Anggap <m:math><m:mi>x</m:mi></m:math> merupakan variabel bebas.</para>
+<para id="fs-id1167833303503"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167836398976">
+<para id="fs-id1167829599793"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167832926075">Untuk setiap nilai <emphasis effect="italics">x</emphasis>, kalikan dengan <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math> lalu tambahkan 7 untuk memperoleh nilai <emphasis effect="italics">y</emphasis></para>
+<table id="fs-id1167836429672" class="unnumbered unstyled" aria-label="y sama dengan negatif 2x ditambah 7. Sebagai contoh, jika x sama dengan 3, y sama dengan negatif 2 kali 3 ditambah 7, sehingga y sama dengan 1.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836495341" alt="Persamaan linear y sama dengan negatif 2x ditambah 7 ditampilkan dengan jelas pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_010a_img.jpg"/>
+</media>
+</entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">Sebagai contoh, jika <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>:</m:mo><m:mspace width="2em"/></m:mrow></m:math></entry>
+<entry valign="top" align="left"><media id="fs-id1167836619694" alt="Persamaan y sama dengan negatif 2 kali 3 ditambah 7 ditampilkan; angka 3 disorot merah.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_010b_img.jpg"/>
+</media>
+</entry>
+</row>
+<row valign="top">
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836326343" alt="Persamaan y sama dengan 1 ditampilkan pada latar putih. Persamaan ini menyatakan garis horizontal dengan koordinat y konstan sebesar 1.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_010c_img.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1167833056514">Kita peroleh bahwa ketika <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> maka <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Cara yang sama berlaku untuk setiap nilai <emphasis effect="italics">x</emphasis>. Karena setiap nilai <emphasis effect="italics">x</emphasis> hanya berkaitan dengan satu nilai <emphasis effect="italics">y</emphasis>, persamaan tersebut mendefinisikan fungsi.</para>
+<para id="fs-id1167836447354"><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167829712213">Untuk setiap nilai <emphasis effect="italics">x</emphasis>, kuadratkan lalu tambahkan 1 untuk memperoleh nilai <emphasis effect="italics">y</emphasis>.</para>
+<table id="fs-id1167836533787" class="unnumbered unstyled" aria-label="y sama dengan x kuadrat ditambah 1. Sebagai contoh, jika x sama dengan 2, y sama dengan 2 kuadrat ditambah 1, sehingga y sama dengan 5.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836547666" alt="Persamaan y sama dengan x kuadrat ditambah 1 ditampilkan. Persamaan ini menyatakan parabola yang bergeser satu satuan ke atas pada sumbu y dan berpusat pada x sama dengan 0.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_011a_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Sebagai contoh, jika <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>:</m:mo><m:mspace width="2em"/></m:mrow></m:math></entry>
+<entry valign="top" align="left"><media id="fs-id1167836616301" alt="Persamaan y sama dengan 2 kuadrat ditambah 1 ditampilkan; angka 2 disorot merah.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_011b_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836510387" alt="Persamaan y sama dengan 5 ditampilkan pada latar putih dan menunjukkan nilai konstan variabel y.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_011c_img.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1167829936815">Kita peroleh bahwa ketika <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> maka <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math> Cara yang sama berlaku untuk setiap nilai <emphasis effect="italics">x</emphasis>. Karena setiap nilai <emphasis effect="italics">x</emphasis> hanya berkaitan dengan satu nilai <emphasis effect="italics">y</emphasis>, persamaan tersebut mendefinisikan fungsi.</para>
+<para id="fs-id1167836515845"><span class="token">ⓒ</span> <newline/>
+<table id="fs-id1167829596595" class="unnumbered unstyled" aria-label="x ditambah y kuadrat sama dengan 3. Isolasi suku y: y kuadrat sama dengan negatif x ditambah 3. Substitusikan x sama dengan 2: y kuadrat sama dengan negatif 2 ditambah 3, sehingga y kuadrat sama dengan 1.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167829789899" alt="Persamaan x ditambah y kuadrat sama dengan 3 ditampilkan dengan teks gelap pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_012a_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Isolasi suku <emphasis effect="italics">y</emphasis>.</entry>
+<entry valign="top" align="left"><media id="fs-id1167833356461" alt="Persamaan y kuadrat sama dengan negatif x ditambah 3 ditampilkan dengan jelas pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_012b_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Mari substitusikan <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left"><media id="fs-id1167836618915" alt="Persamaan y kuadrat sama dengan negatif 2 ditambah 3 ditampilkan; angka 2 disorot merah.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_012c_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836296194" alt="Persamaan y kuadrat sama dengan 1 ditampilkan dengan teks hitam pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_012d_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry>Hal ini memberi kita dua nilai untuk <emphasis effect="italics">y</emphasis>.</entry>
+<entry valign="top" align="center"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167836539656">Kita telah menunjukkan bahwa ketika <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> maka <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> dan <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Cara yang sama berlaku untuk setiap nilai <emphasis effect="italics">x</emphasis>. Karena setiap nilai <emphasis effect="italics">x</emphasis> tidak hanya berkaitan dengan satu nilai <emphasis effect="italics">y</emphasis>, persamaan tersebut tidak mendefinisikan fungsi.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167833379684" class="try">
+<exercise id="fs-id1167836585298">
+<problem id="fs-id1167836356048">
+<para id="fs-id1167829716494">Tentukan apakah setiap persamaan merupakan fungsi.</para>
+<para id="fs-id1167836713610"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829811714">
+<para id="fs-id1167833255910"><span class="token">ⓐ</span> ya <span class="token">ⓑ</span> tidak <span class="token">ⓒ</span> ya</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167833369174" class="try">
+<exercise id="fs-id1167829579861">
+<problem id="fs-id1167836614714">
+<para id="fs-id1167836730830">Tentukan apakah setiap persamaan merupakan fungsi.</para>
+<para id="fs-id1167836621950"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167836289689">
+<para id="fs-id1167829859295"><span class="token">ⓐ</span> tidak <span class="token">ⓑ</span> ya <span class="token">ⓒ</span> ya</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1167824731607">
+<title>Menentukan Nilai Suatu Fungsi</title>
+<para id="fs-id1167836315013">Sangat membantu untuk memberi nama pada fungsi; nama yang paling sering digunakan adalah <emphasis effect="italics">f</emphasis>, <emphasis effect="italics">g</emphasis>, <emphasis effect="italics">h</emphasis>, <emphasis effect="italics">F</emphasis>, <emphasis effect="italics">G</emphasis>, atau <emphasis effect="italics">H</emphasis>. Dalam setiap fungsi, untuk setiap nilai <emphasis effect="italics">x</emphasis> dari domain diperoleh nilai <emphasis effect="italics">y</emphasis> yang bersesuaian dalam range. Untuk fungsi <emphasis effect="italics">f</emphasis>, kita menuliskan nilai range <emphasis effect="italics">y</emphasis> sebagai <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Ini disebut notasi fungsi dan dibaca <emphasis effect="italics">f</emphasis> dari <emphasis effect="italics">x</emphasis> atau nilai <emphasis effect="italics">f</emphasis> pada <emphasis effect="italics">x</emphasis>. Dalam hal ini, tanda kurung tidak menunjukkan perkalian.</para>
+<note id="fs-id1167824735502">
+<title>Notasi Fungsi</title>
+<para id="fs-id1167836379405">Untuk fungsi <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1167829590438" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mi>f</m:mi><m:mspace width="0.2em"/><m:mtext>adalah nama fungsi</m:mtext></m:mtd></m:mtr>
+<m:mtr><m:mtd columnalign="left"><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>adalah nilai domain</m:mtext></m:mtd></m:mtr>
+<m:mtr><m:mtd columnalign="left"><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.2em"/><m:mtext>adalah nilai range</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>yang bersesuaian dengan nilai</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1167829743148">Kita membaca <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> sebagai <emphasis effect="italics">f</emphasis> dari <emphasis effect="italics">x</emphasis> atau nilai <emphasis effect="italics">f</emphasis> pada <emphasis effect="italics">x</emphasis>.</para>
+</note>
+<para id="fs-id1167833186483">Kita menyebut <emphasis effect="italics">x</emphasis> sebagai variabel bebas karena dapat mengambil sembarang nilai dalam domain. Kita menyebut <emphasis effect="italics">y</emphasis> sebagai variabel terikat karena nilainya bergantung pada <emphasis effect="italics">x</emphasis>.</para>
+<note id="fs-id1167829620795">
+<title>Variabel Bebas dan Terikat</title>
+<para id="fs-id1167836548512">Untuk fungsi <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1167836732021" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>adalah variabel bebas karena dapat mengambil sembarang nilai dalam domain</m:mtext></m:mtd></m:mtr>
+<m:mtr><m:mtd columnalign="left"><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>sebagai variabel terikat karena nilainya bergantung pada</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1167836362234">Seperti ketika pertama kali mengenal variabel <emphasis effect="italics">x</emphasis>, notasi fungsi mungkin terasa agak asing. Notasi ini terasa aneh karena masih baru. Anda akan semakin nyaman dengannya setelah sering menggunakannya.</para>
+<para id="fs-id1167833051398">Mari kita perhatikan persamaan <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math> Untuk menentukan nilai <emphasis effect="italics">y</emphasis> ketika <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> kita menyubstitusikan <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> ke dalam persamaan, lalu menyederhanakannya.</para>
+<table id="fs-id1167833202337" class="unnumbered unstyled" aria-label="y sama dengan 4x dikurangi 5. Misalkan x sama dengan 2. y sama dengan 4 kali 2 dikurangi 5, sehingga y sama dengan 3.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836353205" alt="Persamaan linear y sama dengan 4x dikurangi 5 ditampilkan. Garisnya bergradien 4 dan memiliki titik potong sumbu y sebesar negatif 5.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_013a_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Misalkan <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left"><media id="fs-id1167836433912" alt="Persamaan y sama dengan 4 kali 2 dikurangi 5 ditampilkan; angka 2 disorot merah. Ini adalah langkah substitusi awal untuk menentukan y.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_013b_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167832926879" alt="Persamaan y sama dengan 3 ditampilkan pada latar putih dan menyatakan garis horizontal dengan koordinat y konstan sebesar 3.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_013c_img.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1167829718470">Nilai fungsi pada <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> adalah 3.</para>
+<para id="fs-id1167836560949">Kita melakukan hal yang sama dengan notasi fungsi. Persamaan <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> dapat ditulis sebagai <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math> Untuk menentukan nilainya ketika <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> kita menulis:</para>
+<table id="fs-id1167836326537" class="unnumbered unstyled" aria-label="f dari x sama dengan 4x dikurangi 5. Misalkan x sama dengan 2. f dari 2 sama dengan 4 kali 2 dikurangi 5, sehingga f dari 2 sama dengan 3.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836447887" alt="Fungsi f dari x sama dengan 4x dikurangi 5 ditampilkan sebagai persamaan linear.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_014a_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Misalkan <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left"><media id="fs-id1167836314769" alt="Persamaan f dari 2 sama dengan 4 kali 2 dikurangi 5 ditampilkan; angka 2 yang disubstitusikan disorot merah.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_014b_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836399865" alt="Persamaan f dari 2 sama dengan 3 ditampilkan pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_014c_img.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1167836456485">Nilai fungsi pada <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> adalah 3.</para>
+<para id="fs-id1167836629682">Proses menentukan nilai <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> untuk suatu nilai <emphasis effect="italics">x</emphasis> disebut <emphasis effect="italics">menghitung nilai fungsi.</emphasis></para>
+
+<example id="fs-id1167836521479">
+<exercise id="fs-id1167836596680">
+<problem id="fs-id1167833224521">
+<para id="fs-id1167833369207">Untuk fungsi <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> hitung nilai fungsi tersebut.</para>
+<para id="fs-id1167836416554"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829756296">
+<para id="fs-id1167829590752"><span class="token">ⓐ</span> <newline/>
+<table id="fs-id1167836507536" class="unnumbered unstyled" aria-label="f dari x sama dengan 2x kuadrat ditambah 3x dikurangi 1. Untuk menghitung f dari 3, substitusikan 3 untuk x. f dari 3 sama dengan 2 kali 3 kuadrat ditambah 3 kali 3 dikurangi 1. Sederhanakan: f dari 3 sama dengan 2 kali 9 ditambah 3 kali 3 dikurangi 1, lalu 18 ditambah 9 dikurangi 1, sehingga f dari 3 sama dengan 26.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<tbody>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836293439" alt="Fungsi kuadrat f dari x sama dengan 2x kuadrat ditambah 3x dikurangi 1 ditampilkan dengan jelas pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_015a_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Untuk menghitung <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> substitusikan 3 untuk <emphasis effect="italics">x</emphasis>.</entry>
+<entry valign="top" align="left"><media id="fs-id1167832999716" alt="Persamaan f dari 3 sama dengan 2 kali 3 kuadrat ditambah 3 kali 3 dikurangi 1 ditampilkan; nilai 3 yang disubstitusikan disorot merah.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_015b_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Sederhanakan.</entry>
+<entry valign="top" align="left"><media id="fs-id1167836520086" alt="Persamaan f dari 3 sama dengan 2 kali 9 ditambah 3 kali 3 dikurangi 1 ditampilkan.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_015c_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167832980523" alt="Persamaan f dari 3 sama dengan 18 ditambah 9 dikurangi 1 ditampilkan secara mendatar pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_015d_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167829852974" alt="Persamaan f dari 3 sama dengan 26 ditampilkan dengan jelas pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_015e_img.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167836775152"><span class="token">ⓑ</span> <newline/>
+<table id="fs-id1167829740069" class="unnumbered unstyled" aria-label="f dari x sama dengan 2x kuadrat ditambah 3x dikurangi 1. Untuk menghitung f dari negatif 2, substitusikan negatif 2 untuk x. f dari negatif 2 sama dengan 2 kali kuadrat negatif 2 dalam tanda kurung ditambah 3 kali negatif 2 dikurangi 1. Sederhanakan: f dari negatif 2 sama dengan 2 kali 4 ditambah negatif 6 dikurangi 1, sehingga f dari negatif 2 sama dengan 1.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<tbody>
+<row>
+<entry/>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167829853948" alt="Fungsi kuadrat f dari x sama dengan 2x kuadrat ditambah 3x dikurangi 1 ditampilkan pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_016b_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left"><media id="fs-id1171792372816" alt="Instruksi berbunyi: “Untuk menghitung f(−2), substitusikan −2 untuk x.”">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_016a_img.jpg"/>
+</media>
+</entry>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167829694507" alt="Persamaan f dari negatif 2 sama dengan 2 kali kuadrat negatif 2 dalam tanda kurung ditambah 3 kali negatif 2 dikurangi 1 ditampilkan; nilai negatif 2 disorot merah.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_016c_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Sederhanakan.</entry>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167829715540" alt="Persamaan f dari negatif 2 sama dengan 2 kali 4 ditambah negatif 6 dikurangi 1 ditampilkan pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_016d_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836532685" alt="Persamaan f dari negatif 2 sama dengan 8 ditambah negatif 6 dikurangi 1 ditampilkan pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_016e_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167829695370" alt="Persamaan f dari negatif 2 sama dengan 1 ditampilkan pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_016f_img.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167836601841"><span class="token">ⓒ</span> <newline/>
+<table id="fs-id1167836600305" class="unnumbered unstyled" aria-label="f dari x sama dengan 2x kuadrat ditambah 3x dikurangi 1. Untuk menghitung f dari a, substitusikan a untuk x. f dari a sama dengan 2 kali a kuadrat ditambah 3 kali a dikurangi 1. Setelah disederhanakan, f dari a sama dengan 2a kuadrat ditambah 3a dikurangi 1.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836685384" alt="Fungsi kuadrat f dari x sama dengan 2x kuadrat ditambah 3x dikurangi 1 ditampilkan dengan teks abu-abu gelap pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_017a_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Untuk menghitung <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> substitusikan <emphasis effect="italics">a</emphasis> untuk <emphasis effect="italics">x</emphasis>.</entry>
+<entry valign="top" align="left"><media id="fs-id1167836362257" alt="Persamaan f dari a sama dengan 2 kali a kuadrat ditambah 3 kali a dikurangi 1 ditampilkan; variabel a disorot merah.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_017b_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Sederhanakan.</entry>
+<entry valign="top" align="left"><media id="fs-id1167836320903" alt="Persamaan f dari a sama dengan 2a kuadrat ditambah 3a dikurangi 1 ditampilkan pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_017c_img.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1167836388368" class="try">
+<exercise id="fs-id1167836648690">
+<problem id="fs-id1167836520515">
+<para id="fs-id1167836363586">Untuk fungsi <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> hitung nilai fungsi tersebut.</para>
+<para id="fs-id1167836625930"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167833135306">
+<para id="fs-id1167825884792"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>22</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167824578714" class="try">
+<exercise id="fs-id1167836729386">
+<problem id="fs-id1167833269886">
+<para id="fs-id1167833269888">Untuk fungsi <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> hitung nilai fungsi tersebut.</para>
+<para id="fs-id1167829579645"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829783753">
+<para id="fs-id1167836732807"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>h</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1167836518536">Pada contoh terakhir, kita menentukan <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> untuk suatu nilai konstan <emphasis effect="italics">x</emphasis>. Pada contoh berikutnya, kita diminta menentukan <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> dengan nilai <emphasis effect="italics">x</emphasis> yang berupa variabel. Kita tetap mengikuti prosedur yang sama dan menyubstitusikan variabel tersebut untuk <emphasis effect="italics">x</emphasis>.</para>
+
+<example id="fs-id1167829859398">
+<exercise id="fs-id1167833137652">
+<problem id="fs-id1167836619820">
+<para id="fs-id1167836619822">Untuk fungsi <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>,</m:mo></m:mrow></m:math> hitung nilai fungsi tersebut.</para>
+<para id="fs-id1167836320931"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167833397154">
+<para id="fs-id1167836754871"><span class="token">ⓐ</span> <newline/>
+<table id="fs-id1171790386499" class="unnumbered unstyled" aria-label="g dari x sama dengan 3x dikurangi 5. Untuk menghitung g dari h kuadrat, substitusikan h kuadrat untuk x. g dari h kuadrat sama dengan 3 kali h kuadrat dikurangi 5, atau 3h kuadrat dikurangi 5.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1171792580809" alt="Fungsi linear g dari x sama dengan 3x dikurangi 5 ditampilkan pada latar putih."><image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_018a_img_new.jpg"/></media></entry>
+</row>
+<row>
+<entry valign="top" align="left">Untuk menghitung <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> substitusikan <m:math><m:mrow><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> untuk <emphasis effect="italics">x</emphasis>.</entry>
+<entry/>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1171790163372" alt="Persamaan g dari h kuadrat sama dengan 3h kuadrat dikurangi 5 ditampilkan; variabel h disorot merah."><image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_018b_img_new.jpg"/></media></entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1171792588637" alt="Persamaan g dari h kuadrat sama dengan 3h kuadrat dikurangi 5 ditampilkan; masukan fungsi dan variabel dalam bentuknya sama-sama h kuadrat."><image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_018c_img_new.jpg"/></media></entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167836556251"><span class="token">ⓑ</span> <newline/>
+<table id="fs-id1171792580965" class="unnumbered unstyled" aria-label="g dari x sama dengan 3x dikurangi 5. Untuk menghitung g dari x ditambah 2, substitusikan x ditambah 2 untuk x. g dari x ditambah 2 sama dengan 3 kali besaran x ditambah 2 dalam tanda kurung dikurangi 5. Setelah disederhanakan, hasilnya 3x ditambah 6 dikurangi 5, lalu 3x ditambah 1.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1171792545190" alt="Fungsi linear g dari x sama dengan 3x dikurangi 5 ditampilkan dengan teks hitam pada latar putih."><image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_019a_img_new.jpg"/></media></entry>
+</row>
+<row>
+<entry valign="top" align="left">Untuk menghitung <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> substitusikan <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math> untuk <emphasis effect="italics">x</emphasis>.</entry>
+<entry valign="top" align="left"><media id="fs-id1171792543055" alt="Persamaan g dari x ditambah 2 sama dengan 3 kali besaran x ditambah 2 dalam tanda kurung dikurangi 5 ditampilkan; masukan x diganti dengan x ditambah 2."><image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_019b_img_new.jpg"/></media></entry>
+</row>
+<row>
+<entry valign="top" align="left">Sederhanakan.</entry>
+<entry valign="top" align="left"><media id="fs-id1171792802121" alt="Persamaan g dari x ditambah 2 sama dengan 3x ditambah 6 dikurangi 5 ditampilkan pada latar putih."><image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_019c_img_new.jpg"/></media></entry>
+</row>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1171790304229" alt="Persamaan g dari x ditambah 2 sama dengan 3x ditambah 1 ditampilkan pada latar putih."><image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_019d_img_new.jpg"/></media></entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167836448921"><span class="token">ⓒ</span> <newline/>
+<table id="fs-id1167836606104" class="unnumbered unstyled" aria-label="g dari x sama dengan 3x dikurangi 5. Untuk menghitung g dari x ditambah g dari 2, tentukan dahulu g dari 2. g dari 2 sama dengan 3 kali 2 dikurangi 5, yaitu 1. Kemudian, g dari x ditambah g dari 2 sama dengan 3x dikurangi 5 ditambah 1. Bagian 3x dikurangi 5 berasal dari g dari x dan 1 berasal dari g dari 2. Setelah disederhanakan, hasilnya 3x dikurangi 4.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167829839522" alt="Fungsi g dari x sama dengan 3x dikurangi 5 ditampilkan.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_020b_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Untuk menghitung <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> tentukan terlebih dahulu <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836635207" alt="Persamaan g dari 2 sama dengan 3 kali 2 dikurangi 5 ditampilkan; angka 2 disorot merah pada kedua tempat.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_020c_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167829685715" alt="Persamaan g dari 2 sama dengan 1 ditampilkan pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_020d_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left"><media id="fs-id1167836693279" alt="Instruksi berbunyi: “Sekarang tentukan g(x) + g(2).”">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_020a_img.jpg"/>
+</media>
+</entry>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836322927" alt="Persamaan g(x) + g(2) = 3x − 5 + 1 ditampilkan; kurung kurawal bawah biru menandai 3x − 5 sebagai g(x) dan 1 sebagai g(2).">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_020e_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Sederhanakan.</entry>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167824734809" alt="Persamaan g(x) + g(2) = 3x − 5 + 1 ditampilkan dengan teks hitam pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_020f_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167836539801" alt="Persamaan g(x) + g(2) = 3x − 4 ditampilkan dengan teks hitam pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_020g_img.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167832981642">Perhatikan perbedaan antara bagian <span class="token">ⓑ</span> dan <span class="token">ⓒ</span>. Kita memperoleh <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> dan <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math> Jadi, terlihat bahwa <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1167836730594" class="try">
+<exercise id="fs-id1167832940643">
+<problem id="fs-id1167829788685">
+<para id="fs-id1167829788687">Untuk fungsi <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>,</m:mo></m:mrow></m:math> hitung nilai fungsi tersebut.</para>
+<para id="fs-id1167829906594"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>m</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167836624292">
+<para id="fs-id1167836554185"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>m</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>19</m:mn></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167825766170" class="try">
+<exercise id="fs-id1167829850925">
+<problem id="fs-id1167829850927">
+<para id="fs-id1167836293432">Untuk fungsi <m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> hitung nilai fungsi tersebut.</para>
+<para id="fs-id1167823012018"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829743779">
+<para id="fs-id1167829717717"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1167836283159">Banyak situasi sehari-hari dapat dimodelkan dengan fungsi.</para>
+<example id="fs-id1167833158753">
+<exercise id="fs-id1167833158755">
+<problem id="fs-id1167836533836">
+<para id="fs-id1167836533838">Jumlah surel yang belum dibaca dalam akun Sylvia adalah 75. Jumlah ini bertambah 10 surel per hari. Fungsi <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>75</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>t</m:mi></m:mrow></m:math> menyatakan relasi antara jumlah surel, <emphasis effect="italics">N</emphasis>, dan waktu, <emphasis effect="italics">t</emphasis>, yang diukur dalam hari.</para>
+<para id="fs-id1167836442406"><span class="token">ⓐ</span> Tentukan variabel bebas dan variabel terikat.</para>
+<para id="fs-id1167833061546"><span class="token">ⓑ</span> Tentukan <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut.</para>
+</problem>
+<solution id="fs-id1167829715383">
+<para id="fs-id1167829715385"><span class="token">ⓐ</span> Jumlah surel yang belum dibaca merupakan fungsi dari jumlah hari. Jumlah surel yang belum dibaca, <emphasis effect="italics">N</emphasis>, bergantung pada jumlah hari, <emphasis effect="italics">t</emphasis>. Oleh karena itu, variabel <emphasis effect="italics">N</emphasis> merupakan variabel terikat dan variabel <m:math><m:mi>t</m:mi></m:math> merupakan variabel bebas.</para>
+<para id="fs-id1167833347223"><span class="token">ⓑ</span> Tentukan <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut.</para>
+<table id="fs-id1167829709312" class="unnumbered unstyled" aria-label="N dari t sama dengan 75 ditambah 10t. Substitusikan t sama dengan 5. N dari 5 sama dengan 75 ditambah 10 kali 5. Sederhanakan menjadi 75 ditambah 50, sehingga N dari 5 sama dengan 125.">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167829850506" alt="Persamaan N(t) = 75 + 10t ditampilkan pada latar putih; N dan t dicetak miring.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_021a_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry valign="top" align="left">Substitusikan <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left"><media id="fs-id1167832971244" alt="Persamaan N(5) = 75 + 10 × 5 ditampilkan dan memuat operasi perkalian serta penjumlahan.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_021b_img.jpg"/>
+</media></entry>
+</row>
+<row>
+<entry valign="top" align="left">Sederhanakan.</entry>
+<entry valign="top" align="left"><media id="fs-id1167833270224" alt="Persamaan N(5) = 75 + 50 ditampilkan dengan huruf tebal tanpa kait pada latar putih.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_021c_img.jpg"/>
+</media>
+</entry>
+</row>
+<row>
+<entry/>
+<entry valign="top" align="left"><media id="fs-id1167833309949" alt="Persamaan N(5) = 125 ditampilkan dan menunjukkan bahwa nilai fungsi N pada 5 adalah 125.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_021d_img.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1167833413059">Karena 5 menyatakan jumlah hari, <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> menyatakan jumlah surel yang belum dibaca setelah 5 hari. Setelah 5 hari, terdapat 125 surel yang belum dibaca dalam akun tersebut.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167833369424" class="try">
+<exercise id="fs-id1167833227116">
+<problem id="fs-id1167836507876">
+<para id="fs-id1167836507878">Jumlah surel yang belum dibaca dalam akun Bryan adalah 100. Jumlah ini bertambah 15 surel per hari. Fungsi <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>+</m:mo><m:mn>15</m:mn><m:mi>t</m:mi></m:mrow></m:math> menyatakan relasi antara jumlah surel, <emphasis effect="italics">N</emphasis>, dan waktu, <emphasis effect="italics">t</emphasis>, yang diukur dalam hari.</para>
+<para id="fs-id1167836360895"><span class="token">ⓐ</span> Tentukan variabel bebas dan variabel terikat.</para>
+<para id="fs-id1167829619314"><span class="token">ⓑ</span> Tentukan <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mn>7</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut.</para>
+</problem>
+<solution id="fs-id1167836622270">
+<para id="fs-id1167836622272"><span class="token">ⓐ</span> <emphasis effect="italics">t</emphasis> BEBAS; <emphasis effect="italics">N</emphasis> TERIKAT <span class="token">ⓑ</span> 205; jumlah surel yang belum dibaca dalam akun Bryan pada hari ketujuh.</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167836481611" class="try">
+<exercise id="fs-id1167829786754">
+<problem id="fs-id1167824735581">
+<para id="fs-id1167824735583">Jumlah surel yang belum dibaca dalam akun Anthony adalah 110. Jumlah ini bertambah 25 surel per hari. Fungsi <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>110</m:mn><m:mo>+</m:mo><m:mn>25</m:mn><m:mi>t</m:mi></m:mrow></m:math> menyatakan relasi antara jumlah surel, <emphasis effect="italics">N</emphasis>, dan waktu, <emphasis effect="italics">t</emphasis>, yang diukur dalam hari.</para>
+<para id="fs-id1167829743199"><span class="token">ⓐ</span> Tentukan variabel bebas dan variabel terikat.</para>
+<para id="fs-id1167836575515"><span class="token">ⓑ</span> Tentukan <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>14</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut.</para>
+</problem>
+<solution id="fs-id1167829749847">
+<para id="fs-id1167836656679"><span class="token">ⓐ</span> <emphasis effect="italics">t</emphasis> BEBAS; <emphasis effect="italics">N</emphasis> TERIKAT <span class="token">ⓑ</span> 460; jumlah surel yang belum dibaca dalam akun Anthony pada hari keempat belas</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1167833128952" class="media-2">
+<para id="fs-id1167836508744">Akses sumber daya daring berikut untuk memperoleh penjelasan dan latihan tambahan tentang relasi dan fungsi.</para>
+<list id="fs-id1167836508748" display="block">
+<item><link url="https://openstax.org/l/37introfunction">Pengantar Fungsi</link></item>
+</list>
+</note>
+</section>
+<section id="fs-id1167829711772" class="key-concepts">
+<title>Konsep Kunci</title>
+<list id="fs-id1167836294674" list-type="bulleted" bullet-style="bullet">
+<item><emphasis effect="bold">Notasi Fungsi:</emphasis> Untuk fungsi <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+<list id="fs-id1167829810537" list-type="bulleted" bullet-style="open-circle">
+<item><emphasis effect="italics">f</emphasis> adalah nama fungsi</item>
+<item><emphasis effect="italics">x</emphasis> adalah nilai domain</item>
+<item><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> adalah nilai range <emphasis effect="italics">y</emphasis> yang bersesuaian dengan nilai <emphasis effect="italics">x</emphasis><newline/>
+Kita membaca <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> sebagai <emphasis effect="italics">f</emphasis> dari <emphasis effect="italics">x</emphasis> atau nilai <emphasis effect="italics">f</emphasis> pada <emphasis effect="italics">x</emphasis>.</item></list></item>
+<item><emphasis effect="bold">Variabel Bebas dan Terikat:</emphasis> Untuk fungsi <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math>
+<list id="fs-id1167836715045" list-type="bulleted" bullet-style="open-circle">
+<item><emphasis effect="italics">x</emphasis> adalah variabel bebas karena dapat mengambil sembarang nilai dalam domain</item>
+<item><emphasis effect="italics">y</emphasis> adalah variabel terikat karena nilainya bergantung pada <emphasis effect="italics">x</emphasis></item>
+</list></item>
+</list>
+</section>
+<section id="fs-id1167826170977" class="section-exercises">
+<section id="fs-id1167826189010" class="practice-perfect">
+<title>Mahir karena Berlatih</title>
+<para id="fs-id1167833041789"><emphasis effect="bold">Menentukan Domain dan Range Suatu Relasi</emphasis></para>
+<para id="fs-id1167836701331">Pada latihan berikut, untuk setiap relasi: <span class="token">ⓐ</span> menentukan domain relasi <span class="token">ⓑ</span> menentukan range relasi.</para>
+<exercise id="fs-id1167836694560" class="material-set-2">
+<problem id="fs-id1167833129254">
+<para id="fs-id1167833129256"><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>20</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167836615948">
+<para id="fs-id1167836615950"><span class="token">ⓐ</span> {1, 2, 3, 4, 5} <span class="token">ⓑ</span> {4, 8, 12, 16, 20}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167829738657" class="material-set-2">
+<problem id="fs-id1167836729077">
+<para id="fs-id1167836729080"><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:mrow></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−10</m:mn><m:mo>)</m:mo><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167836289174" class="material-set-2">
+<problem id="fs-id1167836289176">
+<para id="fs-id1167833021591"><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829713369">
+<para id="fs-id1167829713371"><span class="token">ⓐ</span> {1, 5, 7, −2} <span class="token">ⓑ</span> {7, 3, 9, −3, 8}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167836513003" class="material-set-2">
+<problem id="fs-id1167836686245">
+<para id="fs-id1167836686247"><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>11</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>17</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167836309438">Pada latihan berikut, gunakan pemetaan relasi untuk <span class="token">ⓐ</span> mencantumkan pasangan berurutan relasi, <span class="token">ⓑ</span> menentukan domain relasi, dan <span class="token">ⓒ</span> menentukan range relasi.</para>
+<exercise id="fs-id1167824736897" class="material-set-2">
+<problem id="fs-id1167829693412">
+<para id="fs-id1167829693414"><newline/><media id="fs-id1167829693415" alt="Gambar menunjukkan pemetaan dari tabel “Nama” ke tabel “Tanggal Lahir”. Panah menghubungkan Rebecca ke 18 Januari, Jennifer ke 1 April, John ke 18 Januari, Hector ke 23 Juni, Luis ke 15 Februari, Ebony ke 7 April, Raphael ke 6 November, Meredith ke 19 Agustus, Karen ke 19 Agustus, dan Joseph ke 30 Juli.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_201_img_new.jpg"/>
+</media>
+</para>
+</problem>
+<solution id="fs-id1167836558109">
+<para id="fs-id1167833369090"><span class="token">ⓐ</span> (Rebecca, 18 Januari), (Jennifer, 1 April), (John, 18 Januari), (Hector, 23 Juni), (Luis, 15 Februari), (Ebony, 7 April), (Raphael, 6 November), (Meredith, 19 Agustus), (Karen, 19 Agustus), (Joseph, 30 Juli)<newline/><span class="token">ⓑ</span> {Rebecca, Jennifer, John, Hector, Luis, Ebony, Raphael, Meredith, Karen, Joseph}<newline/><span class="token">ⓒ</span> {18 Januari, 1 April, 23 Juni, 15 Februari, 7 April, 6 November, 19 Agustus, 30 Juli}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167836600990" class="material-set-2">
+<problem id="fs-id1167829614614">
+<para id="fs-id1167829614616"><newline/><media id="fs-id1167829614618" alt="Gambar menunjukkan pemetaan dari tabel “Nama” ke tabel “Tanggal Lahir”. Panah menghubungkan Amy ke 14 Februari, Carol ke 30 Mei, Devon ke 5 Januari, Harrison ke 7 Januari, Jackson ke 26 November, Labron ke 7 April, Mason ke 20 Juli, Natalie ke 1 Maret, Paul ke 1 Agustus, dan Sylvester ke 13 November.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_202_img_new.jpg"/>
+</media>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167833128978" class="material-set-2">
+<problem id="fs-id1167833128980">
+<para id="fs-id1167836511320">Untuk seorang perempuan dengan tinggi <m:math><m:mrow><m:mn>5</m:mn><m:mo>′</m:mo><m:mn>4</m:mn><m:mo>″</m:mo></m:mrow></m:math>, pemetaan di bawah menunjukkan Indeks Massa Tubuh (IMT) yang bersesuaian. Indeks massa tubuh merupakan ukuran lemak tubuh berdasarkan tinggi dan berat badan. IMT sebesar <m:math><m:mrow><m:mn>18,5</m:mn><m:mo>–</m:mo><m:mn>24,9</m:mn></m:mrow></m:math> dianggap sehat.</para>
+<media id="fs-id1167829850494" alt="Gambar menunjukkan pemetaan dari tabel “Berat (lb)” ke tabel “IMT”. Panah menghubungkan 100 ke 17,2; 110 ke 18,9; 120 ke 20,6; 130 ke 22,3; 140 ke 24,0; 150 ke 25,7; dan 160 ke 27,5.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_203_img_new.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167836410493">
+<para id="fs-id1167836410496"><span class="token">ⓐ</span> (100, 17,2), (110, 18,9), (120, 20,6), (130, 22,3), (140, 24,0), (150, 25,7), (160, 27,5) <span class="token">ⓑ</span> {100, 110, 120, 130, 140, 150, 160} <span class="token">ⓒ</span> {17,2; 18,9; 20,6; 22,3; 24,0; 25,7; 27,5}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167829590523" class="material-set-2">
+<problem id="fs-id1167829590525">
+<para id="fs-id1167829590527">Untuk seorang laki-laki dengan tinggi <m:math><m:mrow><m:mn>5</m:mn><m:mo>′</m:mo><m:mn>11</m:mn><m:mo>′</m:mo><m:mo>′</m:mo></m:mrow></m:math>, pemetaan di bawah menunjukkan Indeks Massa Tubuh (IMT) yang bersesuaian. Indeks massa tubuh merupakan ukuran lemak tubuh berdasarkan tinggi dan berat badan. IMT sebesar <m:math><m:mrow><m:mn>18,5</m:mn><m:mo>–</m:mo><m:mn>24,9</m:mn></m:mrow></m:math> dianggap sehat.<newline/>
+<media id="fs-id1167836328549" alt="Gambar menunjukkan pemetaan dari tabel “Berat (lb)” ke tabel “IMT”. Panah menghubungkan 130 ke 18,1; 140 ke 19,5; 150 ke 20,9; 160 ke 22,3; 170 ke 23,7; 180 ke 25,1; 190 ke 26,5; dan 200 ke 27,9.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_204_img_new.jpg"/>
+</media></para>
+</problem>
+</exercise>
+<para id="fs-id1167825791209">Pada latihan berikut, gunakan grafik relasi untuk <span class="token">ⓐ</span> mencantumkan pasangan berurutan relasi <span class="token">ⓑ</span> menentukan domain relasi <span class="token">ⓒ</span> menentukan range relasi.</para>
+<exercise id="fs-id1167836621459" class="material-set-2">
+<problem id="fs-id1167836623116">
+<para id="fs-id1167836623118"><newline/><media id="fs-id1167836623119" alt="Grafik menampilkan enam titik pada bidang koordinat xy dengan kedua sumbu dari negatif 6 hingga 6: (negatif 3, 4), (negatif 3, negatif 1), (0, negatif 3), (2, 3), (4, negatif 1), dan (4, negatif 3).">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_205_img_new.jpg"/>
+</media></para>
+</problem>
+<solution id="fs-id1167836448402">
+<para id="fs-id1167836448404"><span class="token">ⓐ</span> (2, 3), (4, −3), (−2, −1), (−3, 4), (4, −1), (0, −3) <span class="token">ⓑ</span> {−3, −2, 0, 2, 4}<newline/><span class="token">ⓒ</span> {−3, −1, 3, 4}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167833274699" class="material-set-2">
+<problem id="fs-id1167833274701">
+<para id="fs-id1167836599639"><newline/><media id="fs-id1167836599640" alt="Grafik menampilkan enam titik pada bidang koordinat xy dengan kedua sumbu dari negatif 6 hingga 6: (negatif 3, 4), (negatif 3, negatif 4), (negatif 2, 0), (negatif 1, 3), (1, 5), dan (4, negatif 2).">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_206_img_new.jpg"/>
+</media></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167836707143" class="material-set-2">
+<problem id="fs-id1167836524480">
+<para id="fs-id1167836524482"><newline/><media id="fs-id1167836524483" alt="Grafik menampilkan enam titik pada bidang koordinat xy dengan kedua sumbu dari negatif 6 hingga 6: (negatif 1, 4), (negatif 1, negatif 4), (0, 3), (0, negatif 3), (1, 4), dan (1, negatif 4).">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_207_img_new.jpg"/>
+</media></para>
+</problem>
+<solution id="fs-id1167829861860">
+<para id="fs-id1167829861862"><span class="token">ⓐ</span> (1, 4), (1, −4), (−1, 4), (−1, −4), (0, 3), (0, −3) <span class="token">ⓑ</span> {−1, 0, 1} <span class="token">ⓒ</span> {−4, −3, 3, 4}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167836509162" class="material-set-2">
+<problem id="fs-id1167836509164">
+<para id="fs-id1167836546295"><newline/><media id="fs-id1167836546296" alt="Grafik menampilkan enam titik pada bidang koordinat xy dengan kedua sumbu dari negatif 10 hingga 10: (negatif 2, negatif 6), (negatif 2, negatif 3), (0, 0), (0,5; 1,5), (1, 3), dan (3, 6).">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_208_img_new.jpg"/>
+</media></para>
+</problem>
+</exercise>
+<para id="fs-id1167836513559"><emphasis effect="bold">Menentukan Apakah Suatu Relasi Merupakan Fungsi</emphasis></para>
+<para id="fs-id1167833060894">Pada latihan berikut, gunakan himpunan pasangan berurutan untuk <span class="token">ⓐ</span> menentukan apakah relasi tersebut merupakan fungsi, <span class="token">ⓑ</span> menentukan domain relasi, dan <span class="token">ⓒ</span> menentukan range relasi.</para>
+<exercise id="fs-id1167829666517" class="material-set-2">
+<problem id="fs-id1167833059308">
+<para id="fs-id1167833059310"><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:mrow></m:mrow></m:math><newline/><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>}</m:mo></m:math></para>
+</problem>
+<solution id="fs-id1167833137411">
+<para id="fs-id1167833137413"><span class="token">ⓐ</span> ya <span class="token">ⓑ</span> {−3, −2, −1, 0, 1, 2, 3} <span class="token">ⓒ</span> {9, 4, 1, 0}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167836688996" class="material-set-2">
+<problem id="fs-id1167836688998">
+<para id="fs-id1167836689000"><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:mrow></m:mrow></m:math><newline/><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>}</m:mo></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167829745706" class="material-set-2">
+<problem id="fs-id1167829745708">
+<para id="fs-id1167829745710"><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:mrow></m:mrow></m:math><newline/><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:math></para>
+</problem>
+<solution id="fs-id1167836529454">
+<para id="fs-id1167829853364"><span class="token">ⓐ</span> ya <span class="token">ⓑ</span> {−3, −2, −1, 0, 1, 2, 3} <span class="token">ⓒ</span> {0, 1, 8, 27}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167833138708" class="material-set-2">
+<problem id="fs-id1167833138710">
+<para id="fs-id1167826077064"><m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>−27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:mrow></m:mrow></m:math><newline/><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>}</m:mo></m:math></para></problem>
+</exercise>
+<para id="fs-id1167836552752">Pada latihan berikut, gunakan pemetaan untuk <span class="token">ⓐ</span> menentukan apakah relasi tersebut merupakan fungsi, <span class="token">ⓑ</span> menentukan domain fungsi, dan <span class="token">ⓒ</span> menentukan range fungsi.</para>
+<exercise id="fs-id1167829742787" class="material-set-2">
+<problem id="fs-id1167829742789">
+<para id="fs-id1167829742791"><newline/><media id="fs-id1167833056754" alt="Gambar menunjukkan pemetaan dari tabel “Bilangan” ke tabel “Nilai Mutlak”. Panah menghubungkan negatif 3 ke 3, negatif 2 ke 2, negatif 1 ke 1, 0 ke 0, 1 ke 1, 2 ke 2, dan 3 ke 3.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_209_img_new.jpg"/>
+</media></para>
+</problem>
+<solution id="fs-id1167829749063">
+<para id="fs-id1167829749065"><span class="token">ⓐ</span> ya <span class="token">ⓑ</span> {−3, −2, −1, 0, 1, 2, 3} <span class="token">ⓒ</span> {0, 1, 2, 3}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167829741614" class="material-set-2">
+<problem id="fs-id1167829741616">
+<para id="fs-id1167829908273"><newline/><media id="fs-id1167829908274" alt="Gambar menunjukkan pemetaan dari tabel “Bilangan” ke tabel “Kuadrat”. Panah menghubungkan negatif 3 ke 9, negatif 2 ke 4, negatif 1 ke 1, 0 ke 0, 1 ke 1, 2 ke 4, dan 3 ke 9.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_210_img_new.jpg"/>
+</media>
+</para></problem>
+</exercise>
+<exercise id="fs-id1167836697708" class="material-set-2">
+<problem id="fs-id1167836697710">
+<para id="fs-id1167832930330"><newline/><media id="fs-id1167832930332" alt="Gambar menunjukkan pemetaan dari tabel “Nama” ke tabel “Surel”. Panah menghubungkan Jenny ke JKim@gmail.com dan jenny@aol.com; Randy ke Randy@gmail.com; Dennis ke DBrown@aol.com; Emily ke ESmith@state.edu; serta Raul ke RHernandez@state.edu dan Raul@gmail.com.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_211_img_new.jpg"/>
+</media></para>
+</problem>
+<solution id="fs-id1167824737653">
+<para id="fs-id1167829579270"><span class="token">ⓐ</span> tidak <span class="token">ⓑ</span> {Jenny, Randy, Dennis, Emily, Raul} <span class="token">ⓒ</span> {RHernandez@state.edu, JKim@gmail.com, Raul@gmail.com, ESmith@state.edu, DBrown@aol.com, jenny@aol.com, Randy@gmail.com}</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167833024527" class="material-set-2">
+<problem id="fs-id1167833256809">
+<para id="fs-id1167833256811"><newline/><media id="fs-id1167833256812" alt="Gambar menunjukkan pemetaan dari tabel “Nama” ke tabel “Surel”. Panah menghubungkan Jon ke jong@gmail.com, Rachel ke Rachel@state.edu, Matt ke mattg@gmail.com, Leslie ke leslie@aol.com, Chris ke chrisg@gmail.com, Beth ke bethc@gmail.com, dan Liz ke lizzie@aol.com.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_212_img_new.jpg"/>
+</media></para>
+</problem>
+</exercise>
+<para id="fs-id1167836705602">Pada latihan berikut, tentukan apakah setiap persamaan merupakan fungsi.</para>
+<exercise id="fs-id1167836705606">
+<problem id="fs-id1167836525998">
+<para id="fs-id1167836526000"><newline/><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>−5</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167836609321">
+<para id="fs-id1167836650178"><span class="token">ⓐ</span> ya <span class="token">ⓑ</span> ya <span class="token">ⓒ</span> tidak</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167836480280">
+<problem id="fs-id1167829828558">
+<para id="fs-id1167829828560"><newline/><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167836526018">
+<problem id="fs-id1167836526020">
+<para id="fs-id1167836526022"><newline/><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167833135088">
+<para id="fs-id1167833135090"><span class="token">ⓐ</span> ya <span class="token">ⓑ</span> tidak <span class="token">ⓒ</span> ya</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167833212947">
+<problem id="fs-id1167833212949">
+<para id="fs-id1167836521932"><newline/><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−4</m:mn><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>y</m:mi></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167836714017"><emphasis effect="bold">Menentukan Nilai Suatu Fungsi</emphasis></para>
+<para id="fs-id1167829717540">Pada latihan berikut, hitung nilai fungsi: <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1167823013283">
+<problem id="fs-id1167823013285">
+<para id="fs-id1167823013287"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829624155">
+<para id="fs-id1167829624157"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−8</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167829590640">
+<problem id="fs-id1167829747302">
+<para id="fs-id1167829747304"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167829744293">
+<problem id="fs-id1167829744295">
+<para id="fs-id1167836423791"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167833047067">
+<para id="fs-id1167836690281"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−6</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−4</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167836391029">
+<problem id="fs-id1167836391032">
+<para id="fs-id1167836391034"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167829877909">
+<problem id="fs-id1167836575834">
+<para id="fs-id1167836575836"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167824737178">
+<para id="fs-id1167836692744"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167836787728">
+<problem id="fs-id1167829789882">
+<para id="fs-id1167829789884"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167836574347">
+<problem id="fs-id1167836574349">
+<para id="fs-id1167829695807"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829689462">
+<para id="fs-id1167829689464"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167829877536">
+<problem id="fs-id1167836791925">
+<para id="fs-id1167836791928"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167836575175">Pada latihan berikut, hitung nilai fungsi: <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1167829595951">
+<problem id="fs-id1167829595953">
+<para id="fs-id1167826132424"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167836575320">
+<para id="fs-id1167836575323"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167836399733">
+<problem id="fs-id1167836399735">
+<para id="fs-id1167833208016"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167833054462">
+<problem id="fs-id1167833054464">
+<para id="fs-id1167829651167"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829754538">
+<para id="fs-id1167829754540"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−3</m:mn><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>10</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167829924597">
+<problem id="fs-id1167829924599">
+<para id="fs-id1167829924601"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167836613442">
+<problem id="fs-id1167836613444">
+<para id="fs-id1167836613446"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167824976320">
+<para id="fs-id1167836553636"><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math><newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:math><newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167833381469">
+<problem id="fs-id1167829860145">
+<para id="fs-id1167829860148"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167826171384">Pada latihan berikut, hitung nilai fungsi.</para>
+<exercise id="fs-id1167826025131">
+<problem id="fs-id1167826025133">
+<para id="fs-id1167826025135"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829879609">
+<para id="fs-id1167829879611">2</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167833240212">
+<problem id="fs-id1167833240214">
+<para id="fs-id1167826206218"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167829713382">
+<problem id="fs-id1167829713384">
+<para id="fs-id1167829713386"><m:math><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:math><newline/><m:math><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829651457">
+<para id="fs-id1167829651459">6</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167833382456">
+<problem id="fs-id1167833382458">
+<para id="fs-id1167833382460"><m:math><m:mrow><m:mi>G</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>;</m:mo></m:mrow></m:math><newline/><m:math><m:mrow><m:mi>G</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167833052040">
+<problem id="fs-id1167833052042">
+<para id="fs-id1167833052044"><m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167824976354">
+<para id="fs-id1167824976356">22</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167836649081">
+<problem id="fs-id1167836649083">
+<para id="fs-id1167836649085"><m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167829906037">
+<problem id="fs-id1167829906040">
+<para id="fs-id1167829906042"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167829579006">
+<para id="fs-id1167829579008">4</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167833309035">
+<problem id="fs-id1167833309037">
+<para id="fs-id1167833309039"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167836409828">Pada latihan berikut, selesaikan.</para>
+<exercise id="fs-id1167836409832" class="material-set-2">
+<problem id="fs-id1167833386164">
+<para id="fs-id1167833386167">Jumlah acara yang belum ditonton dalam DVR Sylvia adalah 85. Jumlah ini bertambah 20 acara per minggu. Fungsi <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>85</m:mn><m:mo>+</m:mo><m:mn>20</m:mn><m:mi>t</m:mi></m:mrow></m:math> menyatakan relasi antara jumlah acara yang belum ditonton, <emphasis effect="italics">N</emphasis>, dan waktu, <emphasis effect="italics">t</emphasis>, yang diukur dalam minggu.</para>
+<para id="fs-id1167824737629"><span class="token">ⓐ</span> Tentukan variabel bebas dan variabel terikat.</para>
+<para id="fs-id1167836697913"><span class="token">ⓑ</span> Tentukan <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut</para>
+</problem>
+<solution id="fs-id1167833378063">
+<para id="fs-id1167832935494"><span class="token">ⓐ</span> <emphasis effect="italics">t</emphasis> BEBAS; <emphasis effect="italics">N</emphasis> TERIKAT<newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>165</m:mn></m:mrow></m:math> jumlah acara yang belum ditonton dalam DVR Sylvia pada minggu keempat. </para>
+</solution>
+</exercise>
+<exercise id="fs-id1167825884747" class="material-set-2">
+<problem id="fs-id1167825884749">
+<para id="fs-id1167825884751">Setiap hari, satu teka-teki baru diunduh ke akun Ken. Saat ini terdapat 43 teka-teki dalam akunnya. Fungsi <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>43</m:mn><m:mo>+</m:mo><m:mi>t</m:mi></m:mrow></m:math> menyatakan relasi antara jumlah teka-teki, <emphasis effect="italics">N</emphasis>, dan waktu, <emphasis effect="italics">t</emphasis>, yang diukur dalam hari.</para>
+<para id="fs-id1167829620296"><span class="token">ⓐ</span> Tentukan variabel bebas dan variabel terikat.</para>
+<para id="fs-id1167829620303"><span class="token">ⓑ</span> Tentukan <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>30</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167833380107" class="material-set-2">
+<problem id="fs-id1167836574149">
+<para id="fs-id1167836574151">Biaya harian perusahaan percetakan untuk mencetak buku dimodelkan oleh fungsi <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3,25</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1500</m:mn></m:mrow></m:math> dengan <emphasis effect="italics">C</emphasis> sebagai biaya harian total dalam dolar dan <emphasis effect="italics">x</emphasis> sebagai jumlah buku yang dicetak.</para>
+<para id="fs-id1167833196806"><span class="token">ⓐ</span> Tentukan variabel bebas dan variabel terikat.</para>
+<para id="fs-id1167826077595"><span class="token">ⓑ</span> Tentukan <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut.</para>
+<para id="fs-id1167829831994"><span class="token">ⓒ</span> Tentukan <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1000</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut.</para>
+</problem>
+<solution id="fs-id1167836406944">
+<para id="fs-id1167836406946"><span class="token">ⓐ</span> <emphasis effect="italics">x</emphasis> BEBAS; <emphasis effect="italics">C</emphasis> TERIKAT<newline/><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1500</m:mn></m:mrow></m:math> biaya harian jika tidak ada buku yang dicetak<newline/><span class="token">ⓒ</span> <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1000</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4750</m:mn></m:mrow></m:math> biaya harian untuk mencetak 1.000 buku</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167829749356" class="material-set-2">
+<problem id="fs-id1167829749358">
+<para id="fs-id1167829749361">Biaya harian perusahaan manufaktur dimodelkan oleh fungsi <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>7,25</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2500</m:mn></m:mrow></m:math> dengan <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> sebagai biaya harian total dan <emphasis effect="italics">x</emphasis> sebagai jumlah barang yang diproduksi.</para>
+<para id="fs-id1167829879667"><span class="token">ⓐ</span> Tentukan variabel bebas dan variabel terikat.</para>
+<para id="fs-id1167833272975"><span class="token">ⓑ</span> Tentukan <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut.</para>
+<para id="fs-id1167836494341"><span class="token">ⓒ</span> Tentukan <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1000</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Jelaskan arti hasil tersebut.</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1167829756260" class="writing">
+<title>Latihan Menulis</title>
+<exercise id="fs-id1167829756267">
+<problem id="fs-id1167829878963">
+<para id="fs-id1167829878966">Dengan kata-kata Anda sendiri, jelaskan perbedaan antara relasi dan fungsi.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167829878971">
+<problem id="fs-id1167833054106">
+<para id="fs-id1167833054108">Dengan kata-kata Anda sendiri, jelaskan makna domain dan range.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167833054114">
+<problem id="fs-id1167836755007">
+<para id="fs-id1167836755009">Apakah setiap relasi merupakan fungsi? Apakah setiap fungsi merupakan relasi?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167836755014">
+<problem id="fs-id1167829718391">
+<para id="fs-id1167829718394">Bagaimana cara menentukan nilai suatu fungsi?</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1167829783756">
+<title>Periksa Diri</title>
+<para id="fs-id1167829783762"><span class="token">ⓐ</span> Setelah menyelesaikan latihan, gunakan daftar periksa ini untuk menilai penguasaan Anda terhadap tujuan bagian ini.</para>
+<media id="fs-id1167836607305" alt="Gambar menunjukkan tabel empat baris dan empat kolom. Judul kolomnya adalah “Saya dapat…”, “Dengan yakin”, “Dengan sedikit bantuan”, dan “Belum—saya belum memahaminya!”. Baris tujuan berbunyi “menentukan domain dan range suatu relasi”, “menentukan apakah suatu relasi merupakan fungsi”, dan “menentukan nilai suatu fungsi”. Tiga kolom terakhir menyediakan ruang kosong untuk menandai tingkat penguasaan.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_05_213_img_new.jpg"/>
+</media>
+<para id="fs-id1167836607297"><span class="token">ⓑ</span> Setelah melihat daftar periksa, apakah Anda merasa siap menghadapi bagian berikutnya? Mengapa atau mengapa tidak?</para>
+</section>
+</section>
+</content>
+<glossary>
+<definition id="fs-id1167829808856"><term>domain suatu relasi</term><meaning id="fs-id1167836729545">Domain suatu relasi terdiri atas semua nilai <emphasis effect="italics">x</emphasis> dalam pasangan berurutan relasi tersebut.</meaning>
+</definition>
+<definition id="fs-id1167833327007"><term>fungsi</term><meaning id="fs-id1167833327010">Fungsi adalah relasi yang memasangkan setiap unsur dalam domainnya dengan tepat satu unsur dalam range.</meaning>
+</definition>
+<definition id="fs-id1167833327015"><term>pemetaan</term><meaning id="fs-id1167833382797">Pemetaan kadang-kadang digunakan untuk menunjukkan suatu relasi. Panah-panah menunjukkan pemasangan unsur-unsur domain dengan unsur-unsur range.</meaning>
+</definition>
+<definition id="fs-id1167833382803"><term>range suatu relasi</term><meaning id="fs-id1167832978259">Range suatu relasi terdiri atas semua nilai <emphasis effect="italics">y</emphasis> dalam pasangan berurutan relasi tersebut.</meaning>
+</definition>
+<definition id="fs-id1167833175472"><term>relasi</term><meaning id="fs-id1167833175475">Relasi adalah sembarang himpunan pasangan berurutan, <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Semua nilai <emphasis effect="italics">x</emphasis> pada pasangan berurutan tersebut membentuk domain. Semua nilai <emphasis effect="italics">y</emphasis> pada pasangan berurutan tersebut membentuk range.</meaning>
+</definition>
+</glossary>
+</document>

@@ -1,0 +1,99 @@
+{
+  "module": "m81290",
+  "section": "fs-id1377484",
+  "result": "pass",
+  "translation_sha256": "42d329d0463ded7ed3b3afdb77c426fbfe1fdb1d8310d97031359980fb3bb97c",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "6da182dad65b0ee0cc5afd30f9c4ed28fb6a3cb1d81d1c0745b87825faf664a3"
+  },
+  "source_sha256": "96985df586080ae5e52b870320d310a6061a0c00c5d1699e58a024e55bdba005",
+  "reader": "reader/sections/m81290-fs-id1377484.html",
+  "reader_sha256": "ab2217f46f41294b0f51596e52b0f2b047d5a4ba3f39e215c28842d8892cc163",
+  "nodes": 269,
+  "ids": 56,
+  "mathml": 17,
+  "localized_linguistic_mtext": 0,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 2,
+  "exercises": 6,
+  "assets": [
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_014_img-01.png",
+      "bytes": 1284,
+      "sha256": "7df0bf192c355ea5065f05d7f7118a8d2faafd4a4eee70cc1666f0cc5961ac29",
+      "git_blob": "f6be74eaa8ef5facb149f31af6b54568f7233eba"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_014_img-02.png",
+      "bytes": 1382,
+      "sha256": "3fdbfa3009daca158629a629badb3e77188d1761a93421dbfdcbae4d4d22874c",
+      "git_blob": "0583ebc4fe128cc96f1cb3e274f85a3774f64c8f"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_014_img-03.png",
+      "bytes": 2429,
+      "sha256": "777ca311cfe6398e95b3660b2ac09df48416309b0abf3c0e64203479663faa5a",
+      "git_blob": "fad6dce991fbece6fff04308831f61b6d0f3977e"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_014_img-04.png",
+      "bytes": 1753,
+      "sha256": "32bbae5e753065dfe7da3d89945633a2035fd736541e25dc56b0643dad445d64",
+      "git_blob": "bd8cfdc87f0f5d5f296041dc53bb93e36ce88b57"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_014_img-05.png",
+      "bytes": 1935,
+      "sha256": "81c0d22cdeacec94a53141fed7f1b1954c2d4eb54382ef3df3805e3915a2a754",
+      "git_blob": "05e7c90703aaa66c4d7ade425506d2a02c4d8f2c"
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_procedure_clarified",
+      "source_ids": [
+        "eip-id1170322757770"
+      ],
+      "source_issue": "The source sends only a strictly larger fractional part directly to subtraction; equal fractional parts are placed in the regrouping branch even though regrouping is unnecessary.",
+      "bengali_correction": "সম্পাদকীয় ব্যাখ্যা: ভগ্নাংশ অংশ দুটি সমান হলেও সরাসরি ধাপ 3-এ যাওয়া যায়; তাদের বিয়োগফল শূন্য।",
+      "policy": "Keep the source step structure and all mathematics. Label the equality-case explanation and reserve regrouping for a smaller top fractional part.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_definition_clarified",
+      "source_ids": [
+        "eip-id1170322757770"
+      ],
+      "source_issue": "The source calls a regrouped whole-plus-improper-fraction expression a mixed number with an improper fraction, conflicting with the previously stated proper-fraction-part definition.",
+      "bengali_correction": "সম্পাদকীয় ব্যাখ্যা: এটি পূর্ণসংখ্যা ও অপ্রকৃত ভগ্নাংশের যোগফলরূপে পুনর্লিখন; মিশ্র ভগ্নাংশের স্বাভাবিক আকারে ভগ্নাংশ অংশটি প্রকৃত হয়।",
+      "policy": "Clarify the intermediate representation without changing the original 4 beside 8/5 image or any source mathematical token.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_clarified",
+      "source_ids": [
+        "eip-id1168468710228"
+      ],
+      "source_issue": "The English alternative calls the partial displayed 4/5 the result, without explaining that only the fractional parts have been subtracted in this intermediate image.",
+      "evidence": "Actual figure014-04 shows only 4/5 below the line; figure014-05 completes the whole-number subtraction and gives 2⅘.",
+      "bengali_correction": "4/5 শুধু ভগ্নাংশ অংশের বিয়োগফল; পূর্ণসংখ্যা অংশের বিয়োগ এখনও করা হয়নি।",
+      "policy": "Clarify the description of a correct intermediate image. Do not classify the correct source image or final answer as erroneous.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_procedure_domain_and_result_form_clarified",
+      "source_ids": [
+        "eip-306",
+        "fs-id1465158",
+        "fs-id1562582"
+      ],
+      "source_issue": "The source's separated whole/fraction subtraction procedure and unconditional mixed-number output instruction omit negative-part sign scope and proper-fraction/integer results.",
+      "bengali_correction": "সম্পাদকীয় ব্যাখ্যা: পূর্ণসংখ্যা ও ভগ্নাংশ অংশ আলাদা করে বিয়োগের এই ধাপগুলি এখানে অঋণাত্মক ফলের উদাহরণে ব্যবহার করা হয়েছে। ঋণাত্মক ফল হলে অপ্রকৃত ভগ্নাংশের পদ্ধতি ব্যবহার করো, অথবা অংশদুটির ফল যোগফল হিসেবেই রাখো। যেমন, পূর্ণসংখ্যা অংশের ফল −1 ও ভগ্নাংশ অংশের ফল 1/2 হলে মোট −1 + 1/2 = −1/2; পাশাপাশি −1 1/2 লিখলে তা −(1 + 1/2), অর্থাৎ অন্য সংখ্যা বোঝায়।",
+      "policy": "Keep all original mathematical tokens and step hierarchy. Explicitly label nonnegative-example scope, additive negative-part interpretation and appropriate integer/proper-fraction result forms.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

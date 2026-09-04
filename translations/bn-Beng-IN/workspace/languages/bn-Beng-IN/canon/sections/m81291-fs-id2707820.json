@@ -1,0 +1,94 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81291",
+  "section": "fs-id2707820",
+  "resolved_title": "Determine Whether a Fraction is a Solution of an Equation",
+  "scope": "Entire assigned subtree: definition/review, all three procedure steps, three-part worked example and both three-part practice exercises, all supplied solutions, fifteen raster fragments, three table descriptions and both prerequisite-link labels.",
+  "source_sha256": "729ab266737111c7cdd795ca6ddd887c41a9efcb2e802ab6ae46adfe3c13a195",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["WB07", "WB08", "WB09", "WB10", "TR02"],
+      "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv", "languages/bn-Beng-IN/terminology.tsv", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p226.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p226.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p227.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png"],
+      "decision": "Inspect actual target-language pages as well as noisy OCR. WB07 substitutes x=2,y=3 into2x²−xy+y² to obtain11. WB09 directly defines a solution through equality of the two sides and tests x=1to5 in6x=24, accepting only4. Use মান বসাও, দুই পক্ষ and সমতা সত্য হয় rather than treating every substituted equality as true. WB10 supports the property-rule link labels, though the formal property names remain editorial ledger terms. TR02 supports same-value fraction conversion."
+    },
+    {
+      "stage": "during worked-example and answer drafting",
+      "examples": ["WB09", "TR02", "TR03"],
+      "read": ["downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p226.txt:19-47", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt:9-24", "all fifteen source raster fragments listed below"],
+      "decision": "Return to the actual definition and value table while mapping all six yes/no practice answers. A question mark above an equals sign is a test of equality, not an unknown arithmetic operator. Preserve original fractions and raster colours; use সমতুল ভগ্নাংশ for conversion to tenths. Keep অঋণাত্মক পূর্ণসংখ্যা distinct from পূর্ণসংখ্যা in the introductory source categories."
+    },
+    {
+      "stage": "pre-admission canon and exact-value review",
+      "examples": ["WB06", "WB07", "WB09", "TR02", "TR03"],
+      "read": ["downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p226.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p191.txt:1-17", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt:9-24"],
+      "decision": "Reinspect the actual equation page and reread the substitution and equivalent-fraction passages after the structural gate and all nine exact candidate checks passed. Reconfirm proposed values are tested, not assumed solutions. Exclude the known erroneous p.51 mixed-conversion intermediate denominator; it is unrelated to the accepted fraction witnesses. No further wording change was required."
+    }
+  ],
+  "editorial_decisions": [
+    {"source_ids": ["fs-id2134601", "fs-id1610617"], "decision": "Retain the source's overlapping whole-number/integer categories accurately; use T030 অঋণাত্মক পূর্ণসংখ্যা for whole number. Both link labels are translated through unique nodes while preserving document attributes; external destination availability has not been tested."},
+    {"source_ids": ["eip-id1168469777675", "eip-id1168468728112", "eip-id1168469686493", "eip-id1168468469809"], "decision": "Translate the three procedural steps and describe proposed equality consistently; neither a question-mark equality nor its tested candidate is asserted true before calculation."},
+    {"source_ids": ["fs-id3399510", "fs-id2085823"], "decision": "Keep source MathML sentence-ending periods unchanged and leave the corresponding final tail empty rather than duplicating punctuation."},
+    {"source_ids": ["fs-id2967099", "fs-id4216216"], "decision": "Preserve all original circled option tokens and order. Translate source yes/no tails to হ্যাঁ/না; no new source solution is invented."}
+  ],
+  "source_errata": [
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": ["eip-id1165722250309"],
+      "source_issue": "The English alt calls the question mark an unknown operator between10/10−3/10and5/10; the actual image shows a question mark above an equals sign to test equality.",
+      "evidence": "Directly inspected CNX_BMath_Figure_04_07_025_img-04.png; visible equals sign with question mark above it.",
+      "bengali_correction": "10/10 − 3/10 এবং 5/10 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন।",
+      "policy": "Correct only the Bengali accessible description to match the original pixels; preserve all images and mathematical source tokens.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {"files": ["CNX_BMath_Figure_04_07_025_img-01.png", "CNX_BMath_Figure_04_07_025_img-02.png", "CNX_BMath_Figure_04_07_025_img-03.png", "CNX_BMath_Figure_04_07_025_img-04.png", "CNX_BMath_Figure_04_07_025_img-05.png"], "observed": "All five actual fragments inspected: substitute red1; original x−3/10=1/2;1−3/10 ?=1/2; red10/10−3/10 ?=5/10;7/10≠5/10. The question mark is above a visible equals sign."},
+    {"files": ["CNX_BMath_Figure_04_07_026_img-01.png", "CNX_BMath_Figure_04_07_026_img-02.png", "CNX_BMath_Figure_04_07_026_img-03.png", "CNX_BMath_Figure_04_07_026_img-04.png", "CNX_BMath_Figure_04_07_026_img-05.png"], "observed": "All five actual fragments inspected: substitute red4/5; original equation;4/5−3/10 ?=1/2; red8/10−3/10 ?=5/10;5/10=5/10 with a tick."},
+    {"files": ["CNX_BMath_Figure_04_07_027_img-01.png", "CNX_BMath_Figure_04_07_027_img-02.png", "CNX_BMath_Figure_04_07_027_img-03.png", "CNX_BMath_Figure_04_07_027_img-04.png", "CNX_BMath_Figure_04_07_027_img-05.jpg"], "observed": "All five actual fragments inspected: substitute red−4/5; original equation;−4/5−3/10 ?=1/2; red−8/10−3/10 ?=5/10;−11/10≠5/10. Negative signs are retained."}
+  ],
+  "answer_checks": [
+    {"exercise_id": "fs-id1693128", "solution_id": "fs-id1257840", "equation": "x−3/10=1/2", "candidates_in_source_order": ["1", "4/5", "−4/5"], "left_sides": ["7/10", "1/2", "−11/10"], "results": [false, true, false], "check": "All three candidate evaluations and both common-denominator equality/inequality stages agree with the actual raster solution."},
+    {"exercise_id": "fs-id2661471", "solution_id": "fs-id2967099", "equation": "x−2/3=1/6", "candidates_in_source_order": ["1", "5/6", "−5/6"], "left_sides": ["1/3", "1/6", "−3/2"], "results": [false, true, false], "check": "All three exact rational evaluations agree with source no/yes/no."},
+    {"exercise_id": "fs-id1302600", "solution_id": "fs-id4216216", "equation": "y−1/4=3/8", "candidates_in_source_order": ["1", "−5/8", "5/8"], "left_sides": ["3/4", "−7/8", "3/8"], "results": [false, false, true], "check": "All three exact rational evaluations agree with source no/no/yes."}
+  ],
+  "language_gaps": ["The actual WB equation witness uses integer candidates; negative fractional substitution wording is an editorial extension of that procedure, not a directly attested local worked example. LCD terminology remains provisional. Formal equality-property names in the prerequisite links are editorial, while the underlying rule is witnessed on WBp227.", "Independent West Bengal language, teacher, learner and assistive-technology review remains pending; the small canon is not certification or complete topic coverage."],
+  "accessibility_refinement": {
+    "date": "2026-08-31",
+    "reason": "Parent peer-review criterion: name numerator and denominator at the first appearance of each distinct fraction in raster alt text.",
+    "consultations": [
+      {"stage": "before", "read": ["SCERT-Tripura-VI/p050.txt", "SCERT-Tripura-VI/p050.png", "WB-Class7-Learning-Bridge/p181.txt:31-39"], "decision": "Use the actual TR01 fraction example and WB02 wording লব ও হর, not slash notation alone."},
+      {"stage": "during", "read": ["SCERT-Tripura-VI/p050.txt:3-10", "WB-Class7-Learning-Bridge/p181.txt:31-38"], "decision": "Keep outer negative signs distinct from numerator and denominator; retain question marks above equality signs."},
+      {"stage": "pre-QA", "read": ["SCERT-Tripura-VI/p050.txt:3-10", "WB-Class7-Learning-Bridge/p181.txt:31-38", "CNX_BMath_Figure_04_07_027_img-05.jpg"], "decision": "Rechecked the negative result image: minus is outside11/10. Actual OCR is imperfect; the already inspected page image controls mathematical readings."}
+    ],
+    "changed_media_ids": ["eip-id1165721310561", "eip-id1165722250309", "eip-id1165721405747", "eip-id1168466312566", "eip-id1168469768782", "eip-id1168467339013", "eip-id1165721076620", "eip-id1165721190585"],
+    "distinct_fraction_forms": ["3/10", "1/2", "10/10", "5/10", "7/10", "4/5", "8/10", "−4/5", "−8/10", "−11/10"],
+    "result": "Eight alt entries refined. All source math, pixels, IDs, equation checks and existing source_errata retained. Read-only translated/render gate passed; parent refreshed visual review and independent AT validation remain pending."
+  },
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "ee1b2afcc6020334e7160acc9652a646435930e8e376ea1e2675c0c505149c99",
+    "method": "Read-only build.translated() and in-memory render_cnxml(study_labels=True); exact source/target tags, IDs, child order, nonlocalized attributes and all MathML checked by gate. Exact exercise/solution-ID relations and HTML ID uniqueness verified. All nine candidate values evaluated using Fraction arithmetic and all fifteen source raster fragments directly inspected. No generated-output or shared-script writes.",
+    "nodes": 290,
+    "ids": 51,
+    "mathml": 19,
+    "linguistic_mtext_replacements": 0,
+    "paragraphs": 13,
+    "paragraph_mappings": 8,
+    "node_slot_mappings": 15,
+    "examples": 1,
+    "exercises": 3,
+    "supplied_solutions": 3,
+    "source_absent_solutions": 0,
+    "candidate_subquestions_checked": 9,
+    "images": 15,
+    "tables": 3,
+    "translated_aria_labels": 3,
+    "links": 2,
+    "html_fragment_characters": 13450,
+    "english_prose_gate": "passed",
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integration and desktop/narrow visual review remain required. Continue immediately with the next owned m81291 equality-properties subsection; entire corpus assignment remains active.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "te-b002-assets-v1",
+  "unit": "TE-B011",
+  "source_subsection_id": "fs-id2299412",
+  "source_subsection_sha256": "cdd73289f869830dcc51fb3df012c1b50d5ef191698dcfbea244d39dbc45cb83",
+  "canonical_commit": "38cae454e644abf9f0a623e876994553881597c9",
+  "source_attribution": "OpenStax, Prealgebra 2e; existing project notices and source attribution remain applicable.",
+  "generator": "scripts/make_b011_assets.py",
+  "verification_command": "python -B te-Telu-IN/scripts/make_b011_assets.py --verify",
+  "assets": [
+    {
+      "original_src": "../../media/CNX_BMath_Figure_01_02_001_img.jpg",
+      "original_path": "assets/B011/original/CNX_BMath_Figure_01_02_001_img.jpg",
+      "original_sha256": "3a360d9263253dbd1e6274bf433016eb32ac1a7f3703085d8070d6c080a95020",
+      "original_bytes": 123384,
+      "source_git_blob_sha1": "fecbe502e9ab789b972790da6c13387909164a17",
+      "source_zip_member": "osbooks-prealgebra-bundle-38cae454e644abf9f0a623e876994553881597c9/media/CNX_BMath_Figure_01_02_001_img.jpg",
+      "source_zip_crc32": "71db15ec",
+      "media_id": "fs-id2778433",
+      "figure_id": null,
+      "localized_path": "assets/B011/CNX_BMath_Figure_01_02_001_img.te.svg",
+      "localized_sha256": "31998fa3ea7fb944eaa92768def5cadef79d463b8f639a390dcd12df6d3aa7c3",
+      "localized_bytes": 32622,
+      "recommended_min_width_px": 960,
+      "math_checks": {
+        "groups_hundreds_tens_ones": [
+          2,
+          1,
+          5
+        ],
+        "unit_cells_per_group": [
+          100,
+          10,
+          1
+        ],
+        "value": 215,
+        "actual_unit_rectangles": 215,
+        "visible_answer": false,
+        "exact_cell_geometry_and_nonoverlap": true
+      },
+      "reused_derivative": {
+        "unit": "TE-B002",
+        "path": "assets/B002/CNX_BMath_Figure_01_01_007.te.svg",
+        "sha256": "31998fa3ea7fb944eaa92768def5cadef79d463b8f639a390dcd12df6d3aa7c3",
+        "original_basis": "assets/B002/original/CNX_BMath_Figure_01_01_007_img.jpg",
+        "original_basis_sha256": "8ac7fcdff5bbb89eedc742e629ed0d57561610007aecf5f525f73d1656d3e95b",
+        "difference": "Visible artwork and SVG bytes unchanged. Exact B011 source has different JPEG bytes/layout but the inspected mathematical groups agree."
+      },
+      "original_dimensions_px": [
+        261,
+        151
+      ],
+      "disclosure": "Reused verified B002 code-native bilingual block artwork after exact B011 JPEG pixel inspection. Original B011 bytes unchanged; no visible answer or raster editing."
+    }
+  ],
+  "scope": "One selected unchanged source JPEG and verified reused code-native SVG; no download or bulk extraction.",
+  "qa": {
+    "source_media_count": 1,
+    "localized_asset_count": 1,
+    "source_media_count_verified": true
+  },
+  "canonical_archive_sha256": "effdf2dbb6dfd9cab771b568c6575d8074be4a1f9565f1fedbd54f621e138917",
+  "choices": [
+    "Exact B011 JPEG is not the B002 JPEG; both full original images were inspected and contain two 100-cell flats,one 10-cell rod,five unit cells.",
+    "Preserve the B011 original layout/bytes as provenance; reuse B002 artwork with an explicit derivative mapping,not a pixel-identity claim.",
+    "Every unit cell has the same scale; the visible SVG has only Telugu/English place labels,no215 answer or numerical group counts.",
+    "Revisited actual TS6 PDF27 and TS2 PDF44 OCR then complete images; preserve place labels and counting/group contribution distinction.",
+    "No native-speaker or independent visual approval is claimed; main integrated-reader review remains separate."
+  ]
+}

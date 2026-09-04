@@ -1,0 +1,61 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81295",
+  "section": "fs-id2496035",
+  "scope": "Complete Use Decimals in Money Applications section: four worked examples, eight try items, 12 supplied answers, four instructional tables and no raster images.",
+  "source_sha256": "c22d14bb2b833ed20ea5a7aa95d0e50b7810e8930834bd61993b8431dcfd02c3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR08", "TR09", "TR05", "WB04"],
+      "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv:TR05,TR08-TR09,WB04", "languages/bn-Beng-IN/terminology.tsv:T045-T050,T053,T056", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt"],
+      "decision": "TR08/09 control decimal-number, decimal-point, place-value and retained-zero language. Use witnessed direct arithmetic register and preserve every source dollar amount, gallon measure and named United States context without currency conversion or claims about current prices."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR08", "TR09"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:decimal-definition/place-value passage", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:decimal-reading passage", "exact source fs-id2496035 subtree and all four worked tables"],
+      "decision": "Keep dollars and cents in source notation, retain trailing zeros, and state cent rounding only where the source asks for money rounding. Translate instructional prose and names' surrounding grammar without altering the mathematical expressions."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": ["TR08", "TR09"],
+      "read": ["languages/bn-Beng-IN/terminology.tsv:T045-T050,T053,T056", "exact source fs-id2496035 subtree", "languages/bn-Beng-IN/translations/m81295-fs-id2496035.bn-Beng-IN.cnxml", "all eight final desktop captures and both narrow endpoint captures"],
+      "decision": "Rechecked all prompt/result pairs, the two nearest-cent roundings, four worked tables, Bengali punctuation and source punctuation embedded in MathML. No doubled sentence ending, overflow or browser error remains."
+    },
+    {
+      "stage": "pre-closure evidence audit",
+      "examples": ["TR08", "TR09", "TR11", "TR05", "WB04"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p009.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.png", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.txt", "downloads/bn-Beng-IN-canon/WB-Class7-Learning-Bridge/p189.png", "languages/bn-Beng-IN/terminology.tsv:T045-T051,T053,T056", "exact final fs-id2496035 reader"],
+      "decision": "Fresh OCR-and-page-image reads confirmed decimal-part and retained-zero language on pp.57–58, গুণফল on p.78/WB p.189, and TR11's আসন্ন মান lexical witness on p.9. The printed p.9 example is 4117→4100 or 4000 (not OCR's 40900), and it does not supply a decimal tie rule. Therefore the two cent results remain independently calculated half-up outcomes, not claimed as directly witnessed by TR11; no learner-text change was needed."
+    }
+  ],
+  "source_errata": [],
+  "checks": [
+    "All 12 question/answer pairs are preserved; no source-absent answer occurs in this block.",
+    "Independent exact checks pass: 50−31.64=18.36; 35−18.48=16.52; 24.75+36.90+4.32=65.97; 8×3.529=28.232, rounded to 28.23; 13×3.175=41.275, rounded to 41.28; 5×9.75=48.75; 31.76÷4=7.94; 92.82÷6=15.47; 570÷40=14.25; 6×0.22+4×0.49=3.28; 3×0.75+6×0.62=5.97; 2×9.50+4×6.00=43.00.",
+    "All four worked tables and 32 MathML roots retain exact operands, dollar signs, decimal points, trailing zeros and results; source United States examples remain historical lesson context and were not localized into present-day prices or exchange rates.",
+    "Chrome visual QA passes 1,200px height 6,901 with eight overlapping desktop captures and 390px height 9,184 with two endpoint captures; 32 MathML roots render with zero global overflow or browser error. Main read all 10 captures."
+  ],
+  "language_gaps": [
+    "The Tripura pages are Indian Bengali register witnesses, not West Bengal curriculum certification.",
+    "Independent West Bengal teacher/language, learner and assistive-technology review is pending."
+  ],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "6fca28193b59809ea4c93a48a25330fe3cff9a581999b4f2b9bd60f756cee153",
+    "reader_sha256": "3f59928905a278b913dcc1bc91aef9b41b199d4721c5e1fa07e0458528a692f4",
+    "browser_receipt_sha256": "c2c55c9580df12924fc7d7fe13b8bf5ca0228e35dd02ef3d303d88eb54a97f0a",
+    "method": "Read-only build.translated and section renderer passed exact source tags, IDs, order, links, nonlinguistic attributes, MathML equality and English-prose gate; exact Decimal arithmetic and full prescribed section visual review also passed.",
+    "nodes": 292,
+    "ids": 80,
+    "mathml": 32,
+    "images": 0,
+    "questions": 12,
+    "supplied_answers": 12,
+    "source_absent_answers": 0,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integrates the complete module and repeats full-module desktop/narrow browser review. Entire assignment continues; no independent publishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

@@ -1,0 +1,303 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81295",
+  "section": "fs-id1358621",
+  "resolved_title": "Multiply Decimals",
+  "scope": "Entire source subtree: decimal multiplication from the fraction pattern through signed products and placeholder zeros, the nested powers-of-10 section, all four worked examples, all eight practice exercises, every supplied solution, all eight tables and all fifteen source rasters.",
+  "source_sha256": "c22d14bb2b833ed20ea5a7aa95d0e50b7810e8930834bd61993b8431dcfd02c3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR05"
+      ],
+      "read": [
+        "languages/bn-Beng-IN/canon/README.md",
+        "languages/bn-Beng-IN/canon/examples.tsv:TR05,TR08-TR09",
+        "languages/bn-Beng-IN/terminology.tsv:T002-T003,T006,T030,T045-T050,T053,T056",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.png",
+        "languages/bn-Beng-IN/provenance/modules/m81295.source.cnxml:entire fs-id1358621"
+      ],
+      "decision": "Read the complete routed OCR and the actual three page images. TR08 controls দশমিক সংখ্যা, দশমিক বিন্দু and the place labels দশাংশ/শতাংশ/সহস্রাংশ; its visibly shifted 12.74 row is excluded. TR09 confirms that zeros and post-point digits must remain explicit. TR05 witnesses গুণফল in an ordinary multiplication register but does not supply this decimal-placement algorithm. The ledger term গুণনীয়ক is kept distinct from গুণফল."
+    },
+    {
+      "stage": "during drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR05"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:decimal definition and place-value table",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:digit-by-digit decimal reading",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.txt:multiplication and product passage",
+        "languages/bn-Beng-IN/translations/m81295-fs-id1781702.bn-Beng-IN.json:multiplication and powers-of-10 key-concept wording",
+        "all fifteen source rasters listed in image_checks"
+      ],
+      "decision": "Reread the register witnesses while drafting the rules and matched the already admitted key-concept wording. Use দশমিক ঘর for a count of written positions, not স্থানীয় মান; use গুণনীয়ক for each multiplied number and গুণফল only for the result. Sign is determined before multiplying magnitudes. স্থানধারক শূন্য is used only to fill a required place and does not change the value. Direct raster inspection replaced generic or misleading English arrow descriptions with the visible one-, two- and three-place moves."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR05"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p078.png",
+        "languages/bn-Beng-IN/terminology.tsv:T045-T050,T053,T056",
+        "exact source and translated fs-id1358621 subtrees",
+        "languages/bn-Beng-IN/reader/sections/m81295-fs-id1358621.html"
+      ],
+      "decision": "Rechecked all three actual canon pages and the final rendered wording. Decimal-place counts, signs, significant written zeros and factor/product roles remain distinct. All twelve supplied solutions and the three introductory pattern products pass independent exact decimal arithmetic. The erroneous 56.3(10) source MathML remains untouched behind a visible Bengali warning; the corrected accessibility description for −8.2 × 5.19 agrees with the actual body MathML and arithmetic."
+    }
+  ],
+  "editorial_decisions": [
+    {
+      "source_ids": [
+        "fs-id2358881",
+        "fs-id2139020",
+        "fs-id2388630",
+        "fs-id1620547"
+      ],
+      "decision": "Use অঋণাত্মক পূর্ণসংখ্যা for source ‘whole numbers’, and লব/হর for the fraction review. In the side-by-side pattern, each multiplied number is a গুণনীয়ক and only the result is a গুণফল. Preserve A/B labels, every fraction and both decimal results."
+    },
+    {
+      "source_ids": [
+        "fs-id2676602",
+        "fs-id2661124",
+        "fs-id2926104",
+        "fs-id1159978"
+      ],
+      "decision": "Keep decimal-place count separate from digit value: add all written decimal positions in the factors, then place the point in the product. The vertical algorithm aligns rightmost digits, not decimal points; it temporarily ignores points only for the whole-number multiplication step."
+    },
+    {
+      "source_ids": [
+        "eip-669",
+        "fs-id2384287",
+        "eip-id1168466119810",
+        "eip-id1168469608226"
+      ],
+      "decision": "State same signs → positive product and different signs → negative product, then multiply magnitudes and restore the determined sign. Explain shifted partial-product rows by represented place value: the 4152 row represents 41520. The −8.2 × 5.19 table body is authoritative over its erroneous English aria: 82 × 519 = 42558 and the signed decimal product is −42.558."
+    },
+    {
+      "source_ids": [
+        "fs-id2150142",
+        "eip-id1168469489639",
+        "fs-id2195675",
+        "fs-id1371850"
+      ],
+      "decision": "Use স্থানধারক শূন্য when a required written decimal position is absent. Explicitly describe the zeros in 0.00135 and 240 without treating them as new nonzero digits or changing the supplied equations."
+    },
+    {
+      "source_ids": [
+        "fs-id1726479",
+        "fs-id3415452",
+        "fs-id2284313",
+        "fs-id3202276"
+      ],
+      "decision": "Express multiplying by 10, 100, 1000 and 10,000 as movement by the number of zeros in the power of ten. The source omission in ‘that same of places’ is not silently normalized: the Bengali prose gives the intended ‘same number of places’ meaning and visibly discloses the omitted source word."
+    },
+    {
+      "source_ids": [
+        "fs-id1388460",
+        "fs-id2151159",
+        "eip-id1168466081784"
+      ],
+      "decision": "Preserve the incorrect source row 56.3(10), every source node and the 023a raster. Add a clear learner-visible warning and corrected Bengali aria that the question, one-place arrow and result require 5.63(10) = 56.3. Do not silently repair the MathML."
+    },
+    {
+      "source_ids": [
+        "fs-id1832952",
+        "fs-id1946932"
+      ],
+      "decision": "Retain both three-part practice prompts and all six displayed answers in source order. Commas remain thousands separators in 2,580, 1,420 and 14,200; no numeral localization or answer invention is performed."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_math_error_preserved",
+      "source_ids": [
+        "fs-id1388460",
+        "fs-id2151159",
+        "eip-id1168466081784",
+        "eip-id1168466166411"
+      ],
+      "source_issue": "Part ⓐ asks for 5.63 times 10 and ends at 56.3, but the first MathML row incorrectly reads 56.3(10).",
+      "evidence": "The source problem has 5.63; the inspected source raster 023a has 5.63 with a one-place arrow; the last row is 56.3.",
+      "bengali_correction": "ⓐ-এর আগে স্পষ্ট উৎস-সতর্কতা এবং সারণির বাংলা প্রবেশগম্যতা-বর্ণনায় বলা হয়েছে যে প্রসঙ্গ, তীরচিত্র ও ফল অনুযায়ী রাশিটি 5.63(10) হওয়া দরকার।",
+      "policy": "Preserve the incorrect source MathML and source pixels exactly; warn visibly rather than silently changing the expression.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_accessibility_partial_product_shift_omitted",
+      "source_ids": [
+        "eip-id1168465059325",
+        "eip-id1168466119810"
+      ],
+      "source_issue": "The compact English image alt incorrectly says the written rows 36675 and 12225 sum to 158925, omitting that the 12225 row is shifted one place left and represents 122250. The table aria lists the rows but likewise omits their represented place values.",
+      "evidence": "Direct pixel/table inspection shows the second partial-product row one place left. Exact arithmetic is 36675 + 122250 = 158925, consistent with 4075 × 39 = 158925.",
+      "bengali_correction": "ছবি ও সারণির বাংলা প্রবেশগম্যতা-বর্ণনায় 12225 লেখা দ্বিতীয় সারিটি এক ঘর বাঁ দিকে সরানো এবং স্থানীয় মানে 122250 বলে স্পষ্ট করা হয়েছে; তাই 36675 + 122250 = 158925।",
+      "policy": "Preserve source pixels and MathML; correct the target-language accessibility description to the visible positional arithmetic.",
+      "status": "pixels_and_math_preserved_accessibility_text_corrected"
+    },
+    {
+      "kind": "source_aria_corrected",
+      "source_ids": [
+        "eip-id1168469608226"
+      ],
+      "source_issue": "The English table aria lists partial-product rows 1038 and 4152 without explaining that the shifted 4152 row represents 41520, then incorrectly gives the intermediate product as 42588 and decimal result as 42.588. The actual body MathML correctly shows 42558 and 42.558.",
+      "evidence": "Exact arithmetic: 82 × 519 = 42558, so 8.2 × 5.19 = 42.558; the table body and final equation also show these values.",
+      "bengali_correction": "বাংলা প্রবেশগম্যতা-বর্ণনায় প্রথম আংশিক গুণফল 1038 এবং এক ঘর বাঁ দিকে সরানো 4152-সারি স্থানীয় মানে 41520 বোঝায় বলে স্পষ্ট করা হয়েছে; তাই 1038 + 41520 = 42558 এবং সঠিক দশমিক গুণফল 42.558। উৎস-বর্ণনার অমিলটিও জানানো হয়েছে।",
+      "policy": "Correct Bengali accessibility text to the actual correct table body; preserve every source MathML node and nonlinguistic attribute.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_prose_omission_preserved",
+      "source_ids": [
+        "fs-id2284313"
+      ],
+      "source_issue": "The source phrase ‘that same of places’ omits the word ‘number’ from ‘that same number of places’.",
+      "bengali_correction": "বাংলা বাক্যে ‘একই সংখ্যক ঘর’ বলে উদ্দেশ্যটি স্পষ্ট করা হয়েছে এবং একই বাক্যে উৎসের বাদ-পড়া শব্দের সতর্কতা রাখা হয়েছে।",
+      "policy": "Log and visibly disclose the source omission while expressing its unambiguous intended meaning in Bengali.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "eip-id1168466166411",
+        "eip-id1168469895446",
+        "eip-id1168469782705"
+      ],
+      "source_issue": "The three English image descriptions call the arrows generic highlights or upward trends and do not state the actual one-, two- and three-place decimal moves.",
+      "evidence": "Direct inspection of source rasters 023a, 023b and 023c shows arrows moving from the decimal point by one, two and three places respectively.",
+      "bengali_correction": "প্রতিটি বাংলা বিকল্প বর্ণনায় 5.63 থেকে যথাক্রমে এক, দুই ও তিন ঘর ডান দিকে দশমিক বিন্দু সরানোর প্রকৃত কাজ বলা হয়েছে।",
+      "policy": "Describe actual visible mathematical content; preserve source pixels.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {
+      "files": [
+        "CNX_BMath_Figure_05_02_018_img.jpg"
+      ],
+      "observed": "Directly inspected: 0.01 × 0.004 = 0.00004, labelled as 2 + 3 = 5 decimal places; the equivalent fraction product is 4/100,000. Bengali alt preserves every value and distinguishes positions from factors and product."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_05_02_019_img-01.png",
+        "CNX_BMath_Figure_05_02_019_img-02.png",
+        "CNX_BMath_Figure_05_02_019_img-03.png",
+        "CNX_BMath_Figure_05_02_020_img-01.png"
+      ],
+      "observed": "Directly inspected all four: vertical 4.075 × 3.9 setup; partial-product rows 36675 and 12225, with the second row shifted one place left and therefore representing 122250, so 36675 + 122250 = 158925; 3 + 1 decimal places giving 15.8925; and the separate −8.2/5.19 image marking 1 + 2 = 3 places. Source pixels retained."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_05_02_021_img-01.png",
+        "CNX_BMath_Figure_05_02_021_img-02.png",
+        "CNX_BMath_Figure_05_02_021_img-03.png",
+        "CNX_BMath_Figure_05_02_021_img-04.png"
+      ],
+      "observed": "Directly inspected all four: 0.045 × 0.03 setup, temporary whole-number product 135, 3 + 2 = 5 decimal places and final 0.00135 with red placeholder zeros. Bengali descriptions identify each stage rather than inferring a different algorithm."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_05_02_022_img.jpg",
+        "CNX_BMath_Figure_05_02_002_img.jpg",
+        "CNX_BMath_Figure_05_02_003_img.jpg"
+      ],
+      "observed": "Directly inspected: 1.9436 multiplied by 10, 100 and 1000; the two-place move in 45.86 × 100 = 4586; and the placeholder-zero move in 2.4 × 100 = 240. English labels remain only inside unchanged source pixels and are fully described in Bengali alt text."
+    },
+    {
+      "files": [
+        "CNX_BMath_Figure_05_02_023a_img-01.png",
+        "CNX_BMath_Figure_05_02_023b_img-01.png",
+        "CNX_BMath_Figure_05_02_023c_img-01.png"
+      ],
+      "observed": "Directly inspected all three: arrows move the 5.63 decimal point one, two and three places respectively. The source alts' generic highlight/upward-trend language is inaccurate; Bengali alts state the actual moves. The 023a pixel itself correctly starts from 5.63 even though its surrounding first MathML row is wrong."
+    }
+  ],
+  "answer_checks": [
+    {
+      "exercise_ids": [
+        "fs-id1967573",
+        "fs-id2328339",
+        "fs-id2219305"
+      ],
+      "check": "Exact decimal arithmetic: 3.9 × 4.075 = 15.8925; 4.5 × 6.107 = 27.4815; 10.79 × 8.12 = 87.6148. In the worked vertical product, the one-place-left-shifted row written 12225 represents 122250, so 36675 + 122250 = 158925; likewise the shifted 4152 row represents 41520, so 1038 + 41520 = 42558."
+    },
+    {
+      "exercise_ids": [
+        "fs-id2597480",
+        "fs-id2652441",
+        "fs-id1602846"
+      ],
+      "check": "Exact signed arithmetic: −8.2 × 5.19 = −42.558; 4.63 × −2.9 = −13.427; −7.78 × 4.9 = −38.122. The first product confirms that the English aria values 42588/42.588 are wrong while the body MathML is correct."
+    },
+    {
+      "exercise_ids": [
+        "fs-id1351654",
+        "fs-id1949218",
+        "fs-id3329251"
+      ],
+      "check": "Exact placeholder arithmetic: 0.03 × 0.045 = 0.00135; 0.04 × 0.087 = 0.00348; 0.09 × 0.067 = 0.00603. All written leading zeros needed for place count are retained."
+    },
+    {
+      "exercise_ids": [
+        "fs-id2819330",
+        "fs-id2149824",
+        "fs-id3329453"
+      ],
+      "check": "Power-of-ten results pass independently: 5.63 → 56.3, 563, 5,630; 2.58 → 25.8, 258, 2,580; 14.2 → 142, 1,420, 14,200 for multipliers 10, 100 and 1000. The erroneous first source row 56.3(10) would instead equal 563 and is therefore isolated as errata."
+    },
+    {
+      "exercise_ids": [],
+      "check": "Introductory pattern checked exactly: 0.3 × 0.7 = 0.21; 0.2 × 0.46 = 0.092; 0.01 × 0.004 = 0.00004. Fraction forms 21/100, 92/1000 and 4/100,000 agree with those products."
+    }
+  ],
+  "language_gaps": [
+    "TR08/TR09 directly witness decimal-number, decimal-point and place-value language, and TR05 witnesses গুণফল; they do not directly attest this complete signed-decimal multiplication algorithm, powers-of-ten shortcut or স্থানধারক শূন্য term. Those instructional phrasings remain editorial and require independent West Bengal review.",
+    "Independent West Bengal teacher, language, learner and assistive-technology review remains pending. No curriculum certification or complete topic coverage is claimed."
+  ],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "c30f11bccda5033e5cca716e76b2e55a99ea7947ff005958b7451db658c2fdef",
+    "cnxml_sha256": "fc2fab34d1a7f44fd495c326f13d21711d99561c3a220c5f9234ef3fe070b105",
+    "reader_sha256": "1040a822ac13a74eac56d177e6c8421476d5f043650d1970db732744e54dfd02",
+    "qa_receipt_sha256": "77479abb66eda029f23f828a1ddca3f798d0159e0c0da3828fc74d6b1b25805d",
+    "browser_receipt_sha256": "2f5382e2f7ac00f41badc413bfcf6fa0efe7f519edc2cb3f4137480d6f0de03d",
+    "method": "build.translated and build_sections passed exact source tag, ID, child-order, nonlocalized-attribute and MathML-signature gates, plus the English-prose gate. All twelve problem/solution pairs and three introductory products were independently recomputed with exact decimal arithmetic. Every one of the fifteen source rasters was read directly. Isolated Chrome QA passes 14 desktop captures and two narrow endpoints with 15 loaded images, 72 rendered MathML roots and no overflow/error; independent model capture inspection is recorded separately.",
+    "nodes": 775,
+    "ids": 126,
+    "mathml": 72,
+    "paragraphs": 37,
+    "paragraph_mappings": 28,
+    "node_slot_mappings": 41,
+    "title_occurrences": 9,
+    "terms": 8,
+    "examples": 4,
+    "exercises": 12,
+    "problems": 12,
+    "supplied_solutions": 12,
+    "source_absent_solutions": 0,
+    "images": 15,
+    "unique_images_actually_inspected": 15,
+    "tables": 8,
+    "translated_aria_labels": 8,
+    "links": 2,
+    "html_fragment_characters": 34874,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integrates the complete module and binds the module-wide desktop/narrow review. Entire assignment remains active; no independent publishing, commit or push.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

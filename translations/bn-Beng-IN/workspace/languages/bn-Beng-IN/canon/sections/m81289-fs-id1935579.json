@@ -1,0 +1,109 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81289",
+  "section": "fs-id1935579",
+  "source_title": "Key Concepts",
+  "date": "2026-08-31",
+  "source_path": "languages/bn-Beng-IN/provenance/pilot/m81289.source.cnxml",
+  "source_sha256": "bfaa71d9e1dcfa775dd6525ba2fbc9ecf0ce17e6833d8dcaca9bb2f259361fa3",
+  "overlay_sha256": "23d9031ea4d4af28b9555c788b15f47336b77d82befff4742c06ce100280eade",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR02", "TR03", "TR07"],
+      "read": ["Current canon README,18-example bank and40-term ledger", "Actual complete Key Concepts CNXML and all nested-list text/tail slots", "Actual Tripura p051 and p104 OCR and page images", "Existing m81289 operations section and correct division equation fs-id1171103505483", "Actual m81287 complex-fraction procedure for continuity"],
+      "action": "Use equivalent-fraction, least-form and LCM wording already witnessed in the actual canon. Preserve the original nonnegative-whole-number condition in the equivalent-fraction property. Detect that the summary division equation wrongly contains +, while the instructional equation contains ÷. Notify parent before drafting; do not silently repair MathML."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR02", "TR03", "TR07"],
+      "read": ["Returned to actual Tripura p051 and p104 OCR", "Actual m81289/fs-id2668845 note fs-id1956331 and its four-step complex-fraction list eip-id1168468461939", "Source summary equation and adjacent rule text"],
+      "action": "Align the summary with the same module's four-step complex procedure: simplify the whole main numerator, simplify the whole main denominator, divide in that order, then simplify the result. Add nonzero restrictions in prose. Keep LCM prime multiplicities and distinguish a common denominator from the least one. Put the source typo warning into the existing bold division label and adjacent text slots."
+    },
+    {
+      "stage": "pre-integration check",
+      "examples": ["TR02", "TR03", "TR07"],
+      "read": ["Full saved overlay", "Targeted actual p051 and p104 OCR lines", "Actual p051 and p104 page images again", "All10 source MathML nodes and the source section's media/exercise inventory"],
+      "action": "Confirm the source whole-number scope, allowed zero numerator, correct লব/হর readings and explanatory reciprocal/complex-fraction wording. Verify all five valid identities, explicitly reject the source's invalid addition-as-division identity, and check the warning is immediately before it with the correct reading immediately after it. No new canon acquisition or fabricated media check."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "six-part list completeness",
+      "affected_locations": ["section title", "eip-352/items1-6", "all six nested lists", "all ten emphasis nodes"],
+      "decision": "Translate the entire Key Concepts section, not only its headings. Preserve all outer and nested list structure, source equation IDs, MathML and order. The source has no paragraphs, media, tables, mtext or exercises; the nodes map therefore carries all35 translated slot arrays."
+    },
+    {
+      "topic": "LCD scope and prime columns",
+      "affected_locations": ["eip-352/item1", "eip-id1170326533417/items1-5"],
+      "decision": "Use positive integer denominators, coordinated লঘিষ্ঠ সাধারণ হর and witnessed লঘিষ্ঠ সাধারণ গুণিতক (ল.সা.গু.). Match one occurrence of a prime in each row, retain repeated/unmatched occurrences and take one factor from every column. Clarify denominator1 has no prime factors and LCD(1,1)=1. State that another common multiple may be used as a common denominator but is not necessarily least."
+    },
+    {
+      "topic": "equivalent-fraction property",
+      "affected_locations": ["eip-352/item2/emphasis", "eip-id1170322988097/item1"],
+      "decision": "Translate whole numbers precisely as অঋণাত্মক পূর্ণসংখ্যা, retaining both original inequalities b≠0,c≠0 and both directions of the displayed equality. Explicitly allow a=0. Read the invariant as multiplying both numerator and denominator by the same nonzero number, or dividing both by the same nonzero common factor. Do not generalize away the source's stated domain."
+    },
+    {
+      "topic": "conversion and unlike-denominator arithmetic",
+      "affected_locations": ["eip-352/items3-4/emphasis", "eip-id1170324058309/items1-4", "eip-id1170322955166/items1-4"],
+      "decision": "Translate all steps in original order. Determine the multiplier from the denominator, multiply both numerator and denominator by that same number, then perform the products. For addition/subtraction keep the common denominator and combine signed numerators in original subtraction order. Finish in least form."
+    },
+    {
+      "topic": "four-operation summary domains and source correction",
+      "affected_locations": ["eip-352/item5", "eip-id1170322929638/items1-4", "all four nested emphasis nodes"],
+      "decision": "Align with m81289/fs-id2145474: multiplication b,d≠0; division b,c,d≠0; same-denominator addition/subtraction c≠0. Numerators otherwise may be zero. Use গুণাত্মক বিপরীত with explicit nonzero numerator/denominator-swap gloss. Give numerator/denominator readings for every rule. Preserve the wrong printed plus in the source division formula, but flag it in bold and state clearly before and after the equation that division, not addition, is intended."
+    },
+    {
+      "topic": "complex-fraction procedure and original domain",
+      "affected_locations": ["eip-352/item6", "eip-id1170321558052/items1-4"],
+      "decision": "Explain provisional জটিল ভগ্নাংশ by the main fraction bar, identifying its whole numerator and whole denominator. Apply operation order to each, then divide numerator by denominator, never reverse the order. Inner denominators must be nonzero, the resulting outer denominator must be nonzero, and values excluded by an original denominator remain excluded after cancellation. Preserve all four original steps."
+    },
+    {
+      "topic": "canon authority and lexical limits",
+      "affected_locations": ["all content"],
+      "decision": "TR02 and TR03 support equivalent fractions and least form; TR07 p104 supports the exact LCM expansion and12,24,36 answers, not the exact Bengali LCD term. Reciprocal and complex-fraction terms remain explanatory editorial choices from the shared ledger, not invented direct witnesses. Exclude p051's incorrect mixed-fraction intermediate denominator and p104's unrelated incomplete product-identity answer4(i). OpenStax remains the mathematical source, checked rather than treated as infallible."
+    }
+  ],
+  "source_errata": [
+    {
+      "equation_id": "eip-id1170324128063",
+      "source_xpath": ".//c:list[@id='eip-id1170322929638']/c:item[2]/c:equation/m:math",
+      "source_formula": "a/b + c/d = a/b · d/c",
+      "expected_division_rule": "a/b ÷ c/d = a/b · d/c, b,c,d nonzero",
+      "evidence": "The adjacent source instruction explicitly says to divide by multiplying by the second reciprocal. The same module's equation fs-id1171103505483 correctly uses ÷. Counterexample a=1,b=2,c=1,d=3 gives source left side5/6 and right side3/2, which differ. Using division gives3/2 on both sides.",
+      "action": "All source MathML stays exact, including +. Existing division emphasis now warns that the next formula contains a source error. The preceding text identifies + as the wrong sign and ÷ as the intended sign; the following text gives the correct full Bengali numerator/denominator reading and says the printed equality is not an addition formula.",
+      "learner_visibility": "Verified in in-memory HTML: bold warning label and explicit correction precede the equation, correct reading follows it. Parent browser/assistive review remains pending."
+    },
+    {
+      "source_location": "operation and complex-fraction summary prose",
+      "observed": "Required nonzero-denominator and nonzero-divisor conditions are not restated in these condensed source steps.",
+      "action": "Make conditions explicit in Bengali without changing formulas or narrowing valid numerator values. This is a domain clarification, not a change to the mathematics."
+    }
+  ],
+  "media_check": {
+    "source_media_count": 0,
+    "source_image_count": 0,
+    "result": "Actual section inventory inspected; there are no summary media to open. Canon page images were inspected as described above and are not learner assets."
+  },
+  "local_checks": {
+    "result": "translation and structural checks passed; one preserved source formula fault explicitly detected and warned",
+    "node_slot_arrays": 35,
+    "paragraph_slot_arrays": 0,
+    "preserved_mathml_nodes": 10,
+    "preserved_ids": 12,
+    "preserved_elements": 182,
+    "source_media": 0,
+    "source_exercises": 0,
+    "valid_symbolic_identities": 5,
+    "known_invalid_source_identities": 1,
+    "other_mathml_nodes": "One identifier pair a,b, one identifier c, and the original inequalities b≠0 and c≠0. All four separately checked.",
+    "equations_checked": ["a/b=(a·c)/(b·c)", "(a·c)/(b·c)=a/b", "a/b·c/d=ac/bd", "a/c+b/c=(a+b)/c", "a/c−b/c=(a−b)/c"],
+    "verification_method": "Dependency-free exact Fraction rational-polynomial parser with implicit multiplication, both dot variants and signed operations. Compare polynomial cross-products for the five identities; prove the preserved bad formula is not an identity and compare its intended division form to the correct source instructional rule.",
+    "boundary_tests": ["Equivalent-property cases include a=0,b=1,c=1 and a=0,b=2,c=3, with original whole-number restrictions", "Prime-column maximum-multiplicity procedure compared to exact LCM for all1600 denominator pairs1..40, including(1,1)", "For all1600 positive denominator pairs, equivalent-form conversion and addition/subtraction tested with zero and signed numerators", "Complex procedure tests: (1/3+1/2)/(3/4−1/2)=10/3; (1/4−1/4)/(1/2+1/3)=0; (−1/3−1/6)/(1/2+1/4)=−2/3", "A zero compound denominator1/2−1/2 rejected before division"],
+    "test_scope": "These boundary tests verify the translated procedures; they are not claimed to be source exercises, because this summary contains none.",
+    "structure": "Shared translated() passed all unique-XPath, children+1 slots, tag/ID/order/nonlinguistic-attribute and exact-MathML checks; no residual English prose.",
+    "rendering": "Shared render_cnxml() in memory passed; all six concepts and nested lists retained. The source-error warning is explicitly adjacent to its unchanged formula. No browser rendering or screen-reader certification claimed."
+  },
+  "pending": ["Parent integration and browser visual QA", "Independent West Bengal teacher/language review", "Assistive-technology review"],
+  "scope": "Only this section overlay and this per-section record were created with apply_patch. No shared builder/log/term-bank writes, downloads, media copies, deletions or commits. The full assignment remains ongoing; parent will dispatch the next translation block."
+}

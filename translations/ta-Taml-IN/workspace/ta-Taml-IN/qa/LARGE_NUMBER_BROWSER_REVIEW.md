@@ -1,0 +1,11 @@
+# U003–U005 source-review browser observations
+
+Main-task check,2026-08-31. HTML SHA-256 `08c71549dae2bfe98e200fbd89cd56614a2ebcd368c7ea42cc98b213fd3ba9eb`. This is limited browser evidence, not a full visual/AT approval or recovery-unit completion.
+
+- The in-app browser loaded the actual local package on an OS-selected port. Tamil fonts reported loaded. Source headings, explicit source-review/no-companion banner and contributor/license material were present.
+- At900×700viewport the document client/scroll width was885px; all eight SVGs were contained in individual labeled regions. Their intrinsic widths remain1082,1082,1000,1280,620,1440,1840,1440px. The first chart's visible left-hand columns showed legible Tamil rotated labels and unfilled leading cells, with a visible horizontal scrollbar rather than page-level overflow.
+- At390×844viewport document client/scroll width was375px. Both semantic place tables had all15body rows. The actual zero row for63,407,218 read `பத்தாயிரங்கள் | 0 | 0`, and its total was63,407,218. The screenshot showed the subsequent places/digits/values and total inside the page. Earlier leading blank cells are labeledகாலி, not0.
+- The number-name source table displayed five two-cell rows and two real header cells at phone width. The screenshot showed both columns reflowing without page-level overflow. Its declared3/actual2source discrepancy is explicitly described above the table.
+- Native focus entered the chart region, but a synthetic ArrowRight still reported scrollLeft0. Do not claim actual keyboard horizontal panning verified. The browser's read-only DOM surface did not expose SVGgetBBox, so that attempted geometry probe produced no evidence and was not substituted with a guessed result. Static font/geometry checks are separately recorded in the figure notes.
+
+The main task has not yet visually inspected every horizontally hidden part of every integrated wide SVG. The browser findings above therefore do not supersede that remaining review. Source/math, deterministic package and semantic-header checks pass independently. Native-speaker, learner and assistive-technology testing, the new recovery companion and final learner-edition packaging remain open. Temporary viewport overrides were reset.

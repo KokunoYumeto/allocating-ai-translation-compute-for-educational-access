@@ -1,0 +1,196 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81293",
+  "section": "fs-id1301760",
+  "date": "2026-08-31",
+  "source_title": "Write Decimals",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81293.source.cnxml",
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "overlay_sha256": "f3de6ce1464fb4491a53412f55b3d499c72eebee468e77d3dd20bf00b733d71e",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09"
+      ],
+      "read": [
+        "Complete actual183-element source section, all6exercise/solution pairs and2media",
+        "Actual p057/p058 OCR and page images at the immediate preceding Name-Decimalsection QA/unit transition",
+        "Actual2source place-value rasters, opened individually"
+      ],
+      "action": "Carry forward the directly witnessed Bengali digit reading and explicit alternate place-value convention. The source and-word procedure must not be mistaken for Bengali ordinary speech, which uses দশমিক and individual digits."
+    },
+    {
+      "stage": "during drafting",
+      "examples": [
+        "TR08",
+        "TR09"
+      ],
+      "read": [
+        "Actual complete p057/p058 OCR again",
+        "All34source table entries, nested6how-to items and6mtext nodes",
+        "Source6.17/14.37/0.024worked steps and four tryanswers"
+      ],
+      "action": "Use দশাংশ/শতাংশ/সহস্রাংশ and preserve the necessary empty digit positions. Explain that absent whole-part wording means whole-part value0 in these fractional-place phrases, not omission of zeros in Bengali reading."
+    },
+    {
+      "stage": "pre-integration QA",
+      "examples": [
+        "TR08",
+        "TR09"
+      ],
+      "read": [
+        "Actual complete p057/p058 OCR and both page images again",
+        "Both original source rasters reopened",
+        "All5MathML blocks and every6providedanswer plus introductory6.17 checked exactly",
+        "Read-only in-memory3accessible tables,2visible image descriptions,49IDs,6listitems and originalblank numeric patterns"
+      ],
+      "action": "All supplied answers are correct; no sourceerrata needed. Confirm0.024 has2in hundredths and4in thousandths, with the tenthblank in the second raster until the next textual step fills0. Confirm fourcurrency mtextliterals and6integer/decimal equalities are unchanged."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "scope of the source and-word procedure",
+      "affected_locations": [
+        "fs-id1743266",
+        "eip-id1168469639112",
+        "eip-569",
+        "fs-id1545770",
+        "fs-id2635901"
+      ],
+      "decision": "Explicitly restrict ‘ও’ as a decimal-point locator to the source's alternate whole-plus-fraction place naming. Do not imply any Bengali phrase lacking ‘ও’ must have zero whole part: ordinary readings use দশমিক. Keep the source fourstep/nestedtwoitem structure, while saying the zero rule applies when only the fractional-place name is supplied."
+    },
+    {
+      "topic": "preserve assessment task",
+      "affected_locations": [
+        "all6problem prompts",
+        "all6source solutions"
+      ],
+      "decision": "Problems retain the place-value phrasing to be converted into notation, rather than giving away their digit strings. Original supplied decimal answers remain literal; append ordinary Bengali digit reading in existing answer text for learning continuity. No absent or new source exercises/solutions are introduced."
+    },
+    {
+      "topic": "decimal positions and placeholders",
+      "affected_locations": [
+        "eip-id1168469639112",
+        "eip-569",
+        "eip-id1168466165707",
+        "bothmedia",
+        "eip-id1168468315974"
+      ],
+      "decision": "Hundredths require two decimal places, thousandths three. Position the final stated digit in the last required place, then fill earlier unused places with0. Preserve originalliteral templates___.___,6._____,6._ _,14.__ __andother blank patterns. Describe the second raster's actually blanktenths place honestly; do not pretend a0is already visible."
+    },
+    {
+      "topic": "whole part and zeros",
+      "affected_locations": [
+        "fs-id2635901",
+        "fs-id3401638",
+        "fs-id2264690"
+      ],
+      "decision": "Say the whole-part value is0 rather than literally absent. Keep spoken leadingzeros in0.024/0.058/0.067. Preserve5=5.0=5.00=5.000 and−2=−2.0=−2.00=−2.000; appended zeros are to the right of the decimalpoint. Preserve dollar1 and1.00context, without currencyconversion."
+    },
+    {
+      "topic": "linguistic MathML exception",
+      "affected_locations": [
+        "fs-id3401638/m:math[3]",
+        "fs-id1171103314490"
+      ],
+      "decision": "Allowlist only mtextor→অথবা andand so on…→এইভাবে চলতে থাকবে…. All4currency-only mtext values, all12mn nodes, alloperators and structural/nonlinguistic attributes remain exact. Builder reverses allowlisted linguistic replacements for canonicalMathML equality."
+    },
+    {
+      "topic": "canon and editorial limits",
+      "affected_locations": [
+        "alltranslatedtext"
+      ],
+      "decision": "TR08supports place-value names and correctly aligned0.456/123.478/4567.021rows; TR09directly supports ordinary Bengali decimal readings withzeroes. The English whole-and-fraction wording is an openly explained alternate, not falsely attributed to localcanon. Exclude the incorrectp05712.74row; no blanket endorsement of its later nonnegative comparison prose for signed values. No downloads, copiedcanon pages or training-data use."
+    }
+  ],
+  "source_errata": [],
+  "image_checks": [
+    {
+      "file": "CNX_BMath_Figure_05_01_020_img-01.png",
+      "observed": "Actually read0.,then3blank positions withblue labels tenths,hundredths,thousandths. Bengalidescription preservesemptypositions and explains eachfractionalplace."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_020_img-02.png",
+      "observed": "Actually read0.,blanktenths,2hundredths,4thousandths;labelsblack. The next textstep,notthisimage,fills0andproduces0.024. Pixelsunchanged."
+    }
+  ],
+  "local_checks": {
+    "result": "passed",
+    "answers": [
+      {
+        "exercise": "fs-id2200541",
+        "whole": 14,
+        "fraction_numerator": 37,
+        "fraction_denominator": 100,
+        "source_answer": "14.37",
+        "Bengali_reading": "চোদ্দ দশমিক তিন সাত"
+      },
+      {
+        "exercise": "fs-id2961410",
+        "whole": 13,
+        "fraction_numerator": 68,
+        "fraction_denominator": 100,
+        "source_answer": "13.68",
+        "Bengali_reading": "তেরো দশমিক ছয় আট"
+      },
+      {
+        "exercise": "fs-id1499779",
+        "whole": 5,
+        "fraction_numerator": 894,
+        "fraction_denominator": 1000,
+        "source_answer": "5.894",
+        "Bengali_reading": "পাঁচ দশমিক আট নয় চার"
+      },
+      {
+        "exercise": "fs-id1884725",
+        "whole": 0,
+        "fraction_numerator": 24,
+        "fraction_denominator": 1000,
+        "source_answer": "0.024",
+        "Bengali_reading": "শূন্য দশমিক শূন্য দুই চার"
+      },
+      {
+        "exercise": "fs-id1597520",
+        "whole": 0,
+        "fraction_numerator": 58,
+        "fraction_denominator": 1000,
+        "source_answer": "0.058",
+        "Bengali_reading": "শূন্য দশমিক শূন্য পাঁচ আট"
+      },
+      {
+        "exercise": "fs-id1311931",
+        "whole": 0,
+        "fraction_numerator": 67,
+        "fraction_denominator": 1000,
+        "source_answer": "0.067",
+        "Bengali_reading": "শূন্য দশমিক শূন্য ছয় সাত"
+      }
+    ],
+    "intro": "6+17/100=6.17",
+    "overlay_sha256": "f3de6ce1464fb4491a53412f55b3d499c72eebee468e77d3dd20bf00b733d71e",
+    "source_ids": 49,
+    "source_elements": 183,
+    "paragraphs": 14,
+    "nodes": 26,
+    "source_mathml": 5,
+    "source_mtext": 6,
+    "localized_linguistic_mtext": 2,
+    "unchanged_currency_mtext": 4,
+    "source_solutions": 6,
+    "images": 2,
+    "tables": 3,
+    "list_items": 6,
+    "source_errata_count": 0,
+    "method": "Exact Fraction checks for6originalanswers and6.17intro; validate finaldecimaldigitcounts vs100/1000denominators. Compare originalanswerdigits with preservedBengaliexistingtext and ordinarydigitreadings. Check6originalmtd equalities,4dollarvalues all1,2sourceimage states andalloriginalnumericblankpatterns. All5MathML blocks accounted for:3currency representations,1six-equationtable,1linguisticcontinuation.",
+    "structure": "Shared translated() validates all183elements/49IDs, textcoverage, uniqueXPaths/children+1slots, exactattributes/order and allowlist-normalizedMathML.",
+    "rendering": "In-memoryHTMLretains5MathML,2images+2visible descriptions,3Bengali-accessible tables,6listitems,2emphasis nodes and0links. No sharedoutputfiles written."
+  },
+  "pending": [
+    "Parent integration/browserreview",
+    "IndependentWestBengalteacher/languagereview",
+    "Assistive-technologyreview"
+  ],
+  "scope": "Only thisoverlay andseparatecanonrecordedited viaapply_patch;nodownloads/mediacopies/sharededits/deletions/commits. Continueassignedm81293/fs-id2188583 SectionExercises;fullassignmentongoing."
+}

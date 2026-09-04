@@ -1,0 +1,9 @@
+# A00 m81243 added worked answers
+
+The29 source exercises with no supplied answer now have separately labelled question, answer and reasoning records in translations/a00-m81243-added-solutions.gu.json. The builder checks that their source IDs equal the entire omitted-answer set, with no duplicate or unknown IDs. It links each answer to its unchanged source exercise. The59 original source solutions remain in the source edition; these counts alone do not establish that all88 exercises have expanded AX-3 scaffolding.
+
+Before drafting, root reread Std5 Week1 p13 and Std6 Week1 p15 OCR and inspected the original base-10 exercise images202/204 (384 and620). During drafting, retained international scale names, source values and exact rational distinctions; historical population, budget and distance prompts remain source exercises, not new current facts. Reviewed the number-name construction, place positions, half-up rounding and sample open-response reasoning. Reread the same Gujarati OCR during integrated reader review, confirming સ્થાનકિંમત, એકમ, દશક, સો and વિસ્તાર. New rounding wording follows the targeted Khan evidence in canon/targeted-examples.md.
+
+scripts/qa_a00_added_solutions.py checks all29 IDs, source-bound exact fractions, arithmetic, place positions, a separately coded Gujarati word decoder and half-up rounding. It compares displayed answers with independent results rather than only comparing stored metadata with itself. The original source XML is unchanged. A00_ADDED_SOLUTIONS_QA.json records the result.
+
+Browser DOM review verified ordered steps, explicit answers, the source/derivative distinction and source backlinks. Desktop and mobile visual checks of the final integrated build are recorded separately in reviews/library-reader.md. No native educator or assistive-technology approval is claimed.

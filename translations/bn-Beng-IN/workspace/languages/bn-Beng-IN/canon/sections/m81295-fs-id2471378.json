@@ -1,0 +1,128 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81295",
+  "section": "fs-id2471378",
+  "scope": "Complete Divide Decimals source block: decimal-by-whole-number division, money rounding, decimal-by-decimal signed division, five worked examples, ten Try It items, all supplied answers and fourteen image occurrences.",
+  "source_sha256": "c22d14bb2b833ed20ea5a7aa95d0e50b7810e8930834bd61993b8431dcfd02c3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR01"
+      ],
+      "read": [
+        "languages/bn-Beng-IN/canon/README.md",
+        "languages/bn-Beng-IN/canon/examples.tsv:TR08,TR09,TR01",
+        "languages/bn-Beng-IN/terminology.tsv:T026,T028,T045-T050,T054,T057",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png"
+      ],
+      "decision": "Read all three OCR witnesses and inspected all three actual rendered pages. TR08/TR09 support দশমিক সংখ্যা, দশমিক বিন্দু, দশাংশ, শতাংশ, সহস্রাংশ and retaining zeros after the point. TR01 directly witnesses ভাগফল and ভাজক in a fraction-conversion setting. The ledger marks ভাজ্য and দীর্ঘ ভাগের পদ্ধতি as editorial because no direct local lexical witness exists. The mathematically wrong TR08 row for 12.74 was excluded."
+    },
+    {
+      "stage": "during drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR01"
+      ],
+      "read": [
+        "exact frozen fs-id2471378 source subtree",
+        "all 14 frozen image occurrences, including the repeated CNX_BMath_Figure_05_02_001.jpg",
+        "CNX_BMath_Figure_05_02_004_img.jpg",
+        "CNX_BMath_Figure_05_02_024_img-01.png and -02.png",
+        "CNX_BMath_Figure_05_02_025_img-01.png and -02.png",
+        "CNX_BMath_Figure_05_02_026_img.jpg",
+        "CNX_BMath_Figure_05_02_027_img-01.png and -02.png",
+        "CNX_BMath_Figure_05_02_028_img-01.png and -02.png",
+        "CNX_BMath_Figure_05_02_029_img-01.png and -02.png",
+        "languages/bn-Beng-IN/terminology.tsv:T026,T028,T054,T057"
+      ],
+      "decision": "Kept every raster byte and all U.S. dollar, cent, water-bottle and nickel contexts. Used explicit ভাজ্য/অশূন্য ভাজক/ভাগফল descriptions in procedures, tables and alternatives. Corrected only Bengali accessibility text where the English alternatives disagree with the actual pixels: 024 and 025 dot placement, 026 dividend label, and the money table's corrupted $3.99/approximation narration. The three 023 arrow rasters are not descendants of this section and therefore were not claimed or edited here."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR01"
+      ],
+      "read": [
+        "languages/bn-Beng-IN/canon/examples.tsv:TR01,TR08,TR09",
+        "languages/bn-Beng-IN/terminology.tsv:T026,T028,T045-T049,T054,T057",
+        "languages/bn-Beng-IN/translations/m81295-fs-id2471378.bn-Beng-IN.json",
+        "languages/bn-Beng-IN/translations/m81295-fs-id2471378.bn-Beng-IN.cnxml",
+        "languages/bn-Beng-IN/reader/sections/m81295-fs-id2471378.html",
+        "languages/bn-Beng-IN/qa/sections/m81295-fs-id2471378.json"
+      ],
+      "decision": "Rechecked the Bengali prose against the ledger and generated CNXML, including nonzero-divisor scope and the distinction among লব/ভাজ্য, হর/ভাজক and ভাগফল. Confirmed all 15 exercise prompts have their 15 source-supplied solutions, all 137 IDs and 54 MathML roots are preserved, all 14 image occurrences resolve, and no unallowlisted English prose remains. Independent human and assistive-technology review is still pending."
+    }
+  ],
+  "source_errata": [
+    {
+      "source_id": "eip-id1168469496456",
+      "issue": "The English table aria-label corrupts $3.99 as >.99 twice and says equals where the MathML correctly uses approximation signs.",
+      "action": "Bengali aria-label narrates $3.99 and both ≈ relations truthfully; table structure and MathML are unchanged."
+    },
+    {
+      "source_ids": [
+        "eip-id1168466131136",
+        "eip-id1168469801090"
+      ],
+      "issue": "The 024 and 025 first-image English alternatives place the dot above a digit; the actual dot is directly above the dividend decimal point.",
+      "action": "Bengali alternatives follow the actual pixels; raster bytes are unchanged."
+    },
+    {
+      "source_id": "fs-id1629721",
+      "issue": "The 026 English alternative uses 'divided' where the image labels a as dividend.",
+      "action": "Bengali alternative identifies a as ভাজ্য and b as অশূন্য ভাজক in all three shown notations; raster bytes are unchanged."
+    },
+    {
+      "source_ids": [
+        "fs-id2159804",
+        "fs-id1374903",
+        "eip-9",
+        "fs-id2213905"
+      ],
+      "issue": "General decimal-division prose does not repeat the domain restriction that a divisor/denominator cannot be zero.",
+      "action": "Bengali prose and procedures state অশূন্য ভাজক/অশূন্য হর without changing any expression or source structure."
+    }
+  ],
+  "checks": [
+    "Exact rational checks passed independently for 0.12÷3=0.04, 0.28÷4=0.07 and 0.56÷7=0.08.",
+    "Money divisions checked from exact rationals: 3.99÷24=0.16625≈0.17, 6.99÷36=0.194166…≈0.19 and 4.99÷12=0.415833…≈0.42.",
+    "Signed decimal checks passed: −2.89÷3.4=−0.85, −1.989÷5.1=−0.39, −2.04÷5.1=−0.4, −25.65÷(−0.06)=427.5, −23.492÷(−0.04)=587.3 and −4.11÷(−0.12)=34.25.",
+    "Whole-number by decimal checks passed: 4÷0.05=80, 6÷0.03=200 and 7÷0.02=350.",
+    "Every displayed divisor is nonzero; general instructions repeat this scope.",
+    "Fourteen image occurrences were inspected, comprising thirteen unique files because the 0-to-1 number-line image occurs twice."
+  ],
+  "language_gaps": [
+    "ভাজ্য and দীর্ঘ ভাগের পদ্ধতি are editorial ledger forms without direct local lexical witness; their mathematical referents are made explicit in each use.",
+    "Independent West Bengal teacher/language, learner and assistive-technology review remains pending."
+  ],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "297ede5c51bd1449b440fa6c462faf03386fbdcb0c1ee52c23716e9757c69602",
+    "cnxml_sha256": "99abbfaff845f2062decc975e85817f002328e997f9cdf458f62c18faab2dddd",
+    "reader_sha256": "a3c3d6b6e8f99ca9d92950cdee534826aabfe59661cbadc3578d5be774f4cfb3",
+    "qa_receipt_sha256": "e4b308bd2a0326ed15ae76f8a883ea1a818983f7bc1dcf39e14d5ae9878ad1d5",
+    "browser_receipt_sha256": "abc3e8461f20d0590364bc01076b20884d1194249d6fe11417c3e969a275e81e",
+    "method": "build_sections.py passed the exact source-tag/ID/nonlinguistic-attribute and reversible MathML gates, the English-prose gate, local links/assets and HTML ID checks. Separate exact-rational assertions passed all 15 answer identities and three money roundings. Isolated Chrome QA passes 13 desktop captures and two narrow endpoints with 14 loaded image occurrences, 54 rendered MathML roots and no overflow/error; independent model capture inspection is recorded separately.",
+    "nodes": 576,
+    "ids": 137,
+    "mathml": 54,
+    "examples": 5,
+    "exercises": 15,
+    "image_occurrences": 14,
+    "unique_image_files": 13,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integrates the complete m81295 module and performs desktop/narrow visual review. Entire assignment continues; no independent publication, push or release.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

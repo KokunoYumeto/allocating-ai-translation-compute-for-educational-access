@@ -1,0 +1,228 @@
+{
+  "result": "pass",
+  "module": "m81291",
+  "title": "ভগ্নাংশযুক্ত সমীকরণের সমাধান",
+  "coverage": "all learner-facing source blocks including title, objectives, content and glossary",
+  "source_sha256": "729ab266737111c7cdd795ca6ddd887c41a9efcb2e802ab6ae46adfe3c13a195",
+  "blocks": [
+    "__module_title__",
+    "__abstract__",
+    "fs-id3397360",
+    "fs-id3597360",
+    "fs-id3397370",
+    "fs-id2707820",
+    "fs-id2146075",
+    "fs-id2314470",
+    "fs-id2419704",
+    "fs-id2278126",
+    "fs-id1966292",
+    "fs-id2630718",
+    "fs-id2142297"
+  ],
+  "inputs": {
+    "translations/m81291-__module_title__.bn-Beng-IN.json": "9162e2589502fffdfa3683c9c8c2228489c843343fa764b91044a89fd5a216a1",
+    "canon/sections/m81291-__module_title__.json": "02abbe3804f6c8c54bbb1855c6cb3759e767638c6dba6d08d50e62b8e5a43245",
+    "translations/m81291-__abstract__.bn-Beng-IN.json": "bf82725dbe9a53f24c030157a56b74f9c93094483baeddfc5c19c319d8759802",
+    "canon/sections/m81291-__abstract__.json": "7eb7a7f84e780c0cc62abee124c86656299750f7155acc22a01a99e1571596dd",
+    "translations/m81291-fs-id3397360.bn-Beng-IN.json": "6625a6e48c56493d58c4cde80e2cd36f7448df9d3f937d3a50c06f3e87b8f5a7",
+    "canon/sections/m81291-fs-id3397360.json": "5b7bc8e27d3380ea3d53babf387098cd7fbd530eec15b98d368d89c54a0701f3",
+    "translations/m81291-fs-id3597360.bn-Beng-IN.json": "53a0a69d8f7f5d3e4d66f97d7a319415f32620bd4498f8fb9c0d60c98b052937",
+    "canon/sections/m81291-fs-id3597360.json": "98fc34d832192ed2ece9f8c7b683c02876d2ef6956cc3d53f7c231a8add0afbc",
+    "translations/m81291-fs-id3397370.bn-Beng-IN.json": "b07218727d1393524c3c68a357d205e8e3034127ec6818dd73684e3484e7788e",
+    "canon/sections/m81291-fs-id3397370.json": "4e870e2ed821159940976509e12bf0f3c3e03db5eb4cdc8485777388e26bace7",
+    "translations/m81291-fs-id2707820.bn-Beng-IN.json": "ee1b2afcc6020334e7160acc9652a646435930e8e376ea1e2675c0c505149c99",
+    "canon/sections/m81291-fs-id2707820.json": "7c66f1f943ca7e23d4e0374f65d1a67949a6e3fa3a4862f0ebd66ee91e2de166",
+    "translations/m81291-fs-id2146075.bn-Beng-IN.json": "d74155db73e4fab7e040f01d38e7eb94539614560bdcf7c07512380b8712f6fa",
+    "canon/sections/m81291-fs-id2146075.json": "c83973706616ede360ed271642b19723b1b5037b83ef964c7e654877a24763f8",
+    "translations/m81291-fs-id2314470.bn-Beng-IN.json": "c9ad52eab8db3a331b0627fd231362d3cdc5c7ab856f62c321a4243d13129185",
+    "canon/sections/m81291-fs-id2314470.json": "ac98ffddd273e23012cd7610b90fc047d349b1da41a49c21bdd4af0cd1d30a53",
+    "translations/m81291-fs-id2419704.bn-Beng-IN.json": "a9643e80e15d1b7b9d68826052f428de5860805fe26aace24d8071a63878cee2",
+    "canon/sections/m81291-fs-id2419704.json": "9d84c8e0aa02749d7f4e7d4130b042cc094c5c175ca764ff2f1744a241c68a6c",
+    "translations/m81291-fs-id2278126.bn-Beng-IN.json": "37872677d6064f1f4eac314780dee201e61a43bf109dc173e041127c654ae636",
+    "canon/sections/m81291-fs-id2278126.json": "aa6cd28dfb442dd95b0bc0315c4194768721e1e85c62c6e9c4234880236b06c6",
+    "translations/m81291-fs-id1966292.bn-Beng-IN.json": "ff819e2aee75751ae006db63a262ca1e5ec9623235b41b687e306369385ee1c5",
+    "canon/sections/m81291-fs-id1966292.json": "91b9b23e88fe1859c18b8e857a390543dfd24fa92273e44370010d01c5669186",
+    "translations/m81291-fs-id2630718.bn-Beng-IN.json": "89718b6beb11c16de51687d8c06388f5107f1789a8a2292fc5ee870f334bdf31",
+    "canon/sections/m81291-fs-id2630718.json": "7dd7e9766eefeedf81227456bc98369de5783e0940720ed69bef987b41eac313",
+    "translations/m81291-fs-id2142297.bn-Beng-IN.json": "d722fdad65c639472a6d393fad7ab101a963c78ebcfe753e8d55be0bd759576f",
+    "canon/sections/m81291-fs-id2142297.json": "2b615af69028967a26666e3bb38379a9504286cb022a60aef3be5c5f3a4000b2"
+  },
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "6da182dad65b0ee0cc5afd30f9c4ed28fb6a3cb1d81d1c0745b87825faf664a3",
+    "scripts/build_modules.py": "ffb42fb927971e7aba6d87bb1bdf9a2f0e61eff0b6d9bf0eb6678589e9daa1fa",
+    "scripts/progress.py": "210354e40e523aa0b3c48f2e2473676d4718e255b4f6f808c296e036df9b8cab"
+  },
+  "reader": "reader/modules/m81291.html",
+  "reader_sha256": "26c2bff724fa389be61b1cd3ba26bcb0f950e94ffe0dca07ef0d475b5080eb11",
+  "cnxml_sha256": "412b82b6a528c36bb224980ae5c37208f5cb39697fbc76996fdc8acfed800e7f",
+  "nodes": 6652,
+  "ids": 1337,
+  "mathml": 593,
+  "images": 97,
+  "source_errata": [
+    {
+      "source_id": "fs-idm352733200",
+      "kind": "incorrect source cross-reference",
+      "detail": "The retained link to m81286/fs-id1257967 targets fraction multiplication(1/7×56 and12/5×(−20x)), not solving y−3=−9. Source target was locally inspected. A visible Bengali editorial note identifies the mismatch and states adding3 to both sides; no target or MathML changed."
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "eip-id1165722250309"
+      ],
+      "source_issue": "The English alt calls the question mark an unknown operator between10/10−3/10and5/10; the actual image shows a question mark above an equals sign to test equality.",
+      "evidence": "Directly inspected CNX_BMath_Figure_04_07_025_img-04.png; visible equals sign with question mark above it.",
+      "bengali_correction": "10/10 − 3/10 এবং 5/10 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন।",
+      "policy": "Correct only the Bengali accessible description to match the original pixels; preserve all images and mathematical source tokens.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "fs-id2371290",
+        "eip-id1172107133172"
+      ],
+      "source_issue": "The prose recap says divide both sides by the same quantity without repeating the nonzero restriction that is correctly present in the immediately preceding formula.",
+      "bengali_correction": "দুই পক্ষকে একই অশূন্য সংখ্যা দিয়ে ভাগ করো; সংখ্যাটি শূন্য হতে পারবে না। এই শর্তটি মূল সারণিতেও দেওয়া আছে।",
+      "policy": "Make the existing source-formula domain explicit in Bengali prose and the summary; preserve the original c≠0 MathML without claiming the formula itself is wrong.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_prose_corrected",
+      "source_ids": [
+        "eip-id1165721109263"
+      ],
+      "source_issue": "The worked instruction says Add5/9fromeachside although both its formula and intended operation add5/9toeachside.",
+      "bengali_correction": "বিয়োগের প্রভাব দূর করতে দুই পক্ষেই 5/9 যোগ করো।",
+      "policy": "Translate the preposition according to the correct original equation; retain all mathematical source tokens and raster pixels.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "eip-id1165719769134"
+      ],
+      "source_issue": "The English alt calls y=−1/4 a horizontal line; this worked-step image contains only the equation and no graph.",
+      "evidence": "Directly inspected CNX_BMath_Figure_04_07_028_img-04.png; only y=−1/4 is visible.",
+      "bengali_correction": "ভগ্নাংশটি লঘিষ্ঠ আকারে প্রকাশ করে সমাধান y = −1/4 পাওয়া যায়।",
+      "policy": "Describe the actual equation image, not an unpictured graph; preserve original pixels.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_domain_clarified",
+      "source_ids": [
+        "fs-id2671633",
+        "fs-id2385558",
+        "fs-id1972020"
+      ],
+      "source_issue": "The general fraction-coefficient strategy omits the requirement that the coefficient be nonzero before taking its reciprocal. The multiplication property itself correctly permits any multiplier, including zero.",
+      "bengali_correction": "শূন্যের গুণাত্মক বিপরীত নেই; সহগ অশূন্য হলেই তার গুণাত্মক বিপরীত দিয়ে গুণ করে সহগ 1 করা যায়। শূন্য দিয়ে গুণ করলেও সমতা সত্য থাকে, কিন্তু উল্টো ধাপে শূন্য দিয়ে ভাগ করা যায় না।",
+      "policy": "Add labelled domain explanations for solving, not a false nonzero restriction on the forward multiplication property; preserve original formulas.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_aria_corrected",
+      "source_ids": [
+        "eip-id1168468554901",
+        "eip-id1165721889179"
+      ],
+      "source_issue": "The English table aria description omits the minus sign on y in the multiplication step, saying negative1timesy instead of negative1timesnegativey.",
+      "evidence": "Directly inspected CNX_BMath_Figure_04_07_033_img-02.png; it shows(−1)(−y)=(−1)(15), with both outer−1multipliers red.",
+      "bengali_correction": "(−1)(−y) = (−1)(15), তাই y = −15। বাম পক্ষের দ্বিতীয় গুণনীয়ক −y, শুধু y নয়।",
+      "policy": "Correct Bengali accessibility text to the actual correct source image; preserve original pixels and all math.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_aria_corrected",
+      "source_ids": [
+        "eip-id1168469681151",
+        "eip-id1165722196473"
+      ],
+      "source_issue": "The English aria description calls the first displayed line y=−15; the actual first image is the original equation−y=15.",
+      "evidence": "Directly inspected CNX_BMath_Figure_04_07_034a_img.jpg and the following034-02/03check images.",
+      "bengali_correction": "মূল সমীকরণ −y = 15-তে y-এর জায়গায় −15 বসাও।",
+      "policy": "Match the original displayed sequence without claiming the algebraically equivalent solution value is wrong.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_prose_corrected",
+      "source_ids": [
+        "fs-id4280485",
+        "eip-id1165722229925"
+      ],
+      "source_issue": "The source prose duplicates isolated in one sentence, and image030-05contains the duplicated phrase forxin in the instruction Substitute−63forxforintheoriginalequation.",
+      "evidence": "Read exact paragraph and directly inspected CNX_BMath_Figure_04_07_030_img-05.png.",
+      "bengali_correction": "তিনটি পদ্ধতিতেই চলটিকে একলা রেখে সমীকরণ সমাধান করা হয়েছে। যাচাইয়ের নির্দেশ: মূল সমীকরণে x-এর জায়গায় −63 বসাও।",
+      "policy": "Translate the intended grammatical instruction; retain original raster typo and source structure.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "source_media_id": "eip-id1168048345418",
+      "source_table_id": "eip-id1168048345376",
+      "file": "CNX_BMath_Figure_04_07_037_img-01.png",
+      "issue": "The raster English sentence says n divided by6 is24 without a minus, but its equation and the original problem fs-id2129943 use−24. The table aria-label inaccurately describes the raster sentence as negative24.",
+      "action": "Preserve the image and all mathematics. Describe the actual missing minus in Bengali alt/aria and give a visible warning in row1 entry1 that the authoritative problem and equation use−24."
+    },
+    {
+      "source_table_ids": [
+        "eip-id1168048345376",
+        "eip-id1168047338066",
+        "eip-id1168047349783",
+        "eip-id1168466022434"
+      ],
+      "issue": "Each source tgroup declares cols=2 but contains three colspec elements and rows using three cells or a two-column span plus another cell.",
+      "action": "Preserve all original column declarations, spans and cell order. Translate the complete contents and provide table-level Bengali narration; parent integration/browser review must check the resulting layout."
+    },
+    {
+      "source_id": "eip-id1170322834828",
+      "kind": "ambiguous mathematical typography in variable list",
+      "detail": "Source encodes the list of variables a,b as adjacent mi a and mi b without a comma, while the next math fragment contains c,a=b. Bengali labels the intended separate-variable reading explicitly; all source MathML remains exact."
+    },
+    {
+      "kind": "source_link_mismatch",
+      "source_ids": [
+        "fs-id833282",
+        "fs-id2213976"
+      ],
+      "source_issue": "The writing prompt asking about three methods for−y=15links to fs-id2213976, the unrelated p/(−8)=−40worked example. The three-method example is fs-id2165414 in sectionfs-id1510851.",
+      "source_target_id": "fs-id2213976",
+      "intended_target_id": "fs-id2165414",
+      "bengali_correction": "লিঙ্কটি আসলে p/(−8) = −40-এর উদাহরণে নিয়ে যায়। তিন পদ্ধতির জন্য আগের ‘সহগ −1 হলে সমীকরণ সমাধান’ অংশের উদাহরণটি দেখো।",
+      "policy": "Preserve the exact original target-id, add an explicitly labelled visible routing warning, and identify the correct source discussion without inventing an absent answer.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "source_media_id": "fs-id1560920",
+      "file": "CNX_BMath_Figure_04_07_206_img.jpg",
+      "issue": "Source alt calls all six dots red; the inspected original image uses dark blue-green dots. Point positions and labels are correct.",
+      "action": "Describe the actual color and every point in Bengali alt, with an explicit source-description note. Preserve all image pixels and mathematical labels."
+    },
+    {
+      "source_table_id": "fs-id2785416",
+      "issue": "Source tgroup declares cols=5 and five colspecs, but the header and all four body rows contain four cells each.",
+      "action": "Preserve original declarations, all blank cells and row order; accurately narrate the four-cell rows in Bengali aria. Parent integration must check the resulting layout."
+    },
+    {
+      "kind": "original domain explicitly stated",
+      "source_ids": [
+        "fs-id1790594",
+        "fs-id2419746",
+        "fs-id1970695",
+        "fs-id3208388",
+        "fs-id4171828"
+      ],
+      "detail": "Labelled Bengali notes state the already-implied nonzero denominators/divisors s,a,q,d,x in their own questions. The restriction on a survives cancellation; numerator-only p/r/u are not restricted. All mathematical XML and source-provided/absent solutions remain unchanged."
+    },
+    {
+      "kind": "negative mixed-notation reading clarification",
+      "source_ids": [
+        "fs-id2579424",
+        "fs-id2678772"
+      ],
+      "detail": "Labelled explanation says the negative sign governs the entire mixed magnitude, not only the whole-number part. No source expression or absent answer is replaced."
+    }
+  ],
+  "visual_review": "pending",
+  "independent_human_review": "pending"
+}

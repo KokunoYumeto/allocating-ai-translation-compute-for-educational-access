@@ -1,0 +1,99 @@
+{
+  "unit": "A30-U032",
+  "date": "2026-08-31",
+  "translation_sha256": "c61e0f54e9b82a8e52715cd362f9b7933d32b6f9e65f3c309e939f95c9507e74",
+  "examples_consulted": [
+    "VI-C01",
+    "VI-C02",
+    "VI-C03",
+    "VI-C04",
+    "VI-C05",
+    "VI-C06"
+  ],
+  "draft_checked": true,
+  "author_final_checked": true,
+  "final_checked": false,
+  "stages": [
+    {
+      "stage": "before drafting",
+      "note": "Read complete actual EN/ID final glossary and document sibling structure, all three definitions and exact mtext. Reopened full HUST OCR07/08 and native printedp5/6/pp19–20 plus current canon README/terminology. Also independently reviewed actual U031 boundary/comment distinction; no source map treated as authority."
+    },
+    {
+      "stage": "first two definitions",
+      "note": "After interval and piecewise definitions, reopened full OCR07/08 and actual native printedp19 interval theorems. Kept direct meanings separate from new endpoint/infinity and compatible-branch/expression-definedness notes."
+    },
+    {
+      "stage": "set-builder definition",
+      "note": "Used exact EN/ID MathML and specified mtext-only localization. Applied actual canon's function/condition language, without claiming the exact set-builder heading or prose was attested. Explained condition bar, ambient set and every satisfying element separately from source."
+    },
+    {
+      "stage": "author final review",
+      "note": "Read entire actual final draft/excerpt again and reopened full OCR07/08, native printedp6 andpp19–20. Rechecked actual EN/ID term order and exact NBSP-bearing mtext.106mixed checks pass; draft frozen for independent review."
+    },
+    {
+      "stage": "direct user consultation",
+      "note": "Directly read coordinator userturn[local-task-id]/item1 in task[local-task-id] and current local USER_INSTRUCTIONS.md. Forwarded full new user text to child; publication/heartbeat remains coordinator-owned."
+    }
+  ],
+  "ocr_sha256": {
+    "hust-07.ocr.txt": "a93f4fdf9f7e4606386cd27b026138a3e00c676733ee8666beecd9f9f7545353",
+    "hust-08.ocr.txt": "8791a452903eeca13238095063a51227da0cfd6c81fc4bfa19ac73f104d1fa6e"
+  },
+  "native_text_sha256": {
+    "hust-giai-tich-1.native.txt": "8e810df28f8051bf1db67cc7e19855f9aa0b203c0ef7273dcf5c85dce0cdb38e"
+  },
+  "supplementary_actual_native_witnesses": [
+    {
+      "locator": "C-VI-01 printedp6§3(1)",
+      "use": "Function/domain and one-or-many analytic-expression language."
+    },
+    {
+      "locator": "C-VI-01 printedpp19–20§7Theorems1.2–1.4 and§8(a)",
+      "use": "Khoảng/đoạn/nửa khoảng and endpoint language; actual native text, not invented new canon IDs or OCR."
+    }
+  ],
+  "source_sections": [
+    "m49304/glossary/fs-id1165135445751",
+    "m49304/glossary/fs-id1165135487256",
+    "m49304/glossary/fs-id1165137863188"
+  ],
+  "decisions": [
+    "Select the complete anonymous final <glossary> of m49304 after complete content ending with RealWorld fs-id1165137832031. Keep three definitions and meanings in original order, six source IDs and one MathML occurrence. Standalone glossary root adds only required namespace declarations, no invented source ID, title, objective, guide or preceding content.",
+    "Use the current terminology ledger: ký hiệu khoảng, hàm số cho bởi nhiều công thức, ký hiệu tập hợp theo điều kiện. Preserve source definitions as distinct meaning-ID blocks. The exact piecewise and set-builder headings remain descriptive choices, not directly attested in the current Vietnamese witnesses.",
+    "The source interval definition is concise and framed with lower/upper bounds; translate it without replacing it. In a separately labeled note, qualify four finite endpoint forms by a<b and state that infinities are not real numbers and always use round parentheses.",
+    "Translate piecewise as use of more than one output formula. In a separately labeled note retain branch conditions, expression-definedness, existence/uniqueness, and agreement on any overlap; do not falsely require branches to have disjoint input sets.",
+    "Retain the set-builder structure {x | statement about x}, both x tokens, braces, condition bar and mspace width0.5em. Only the one exact mtext is localized: statement\\u00a0about\\u00a0 to điều\\u00a0kiện\\u00a0về\\u00a0. Indonesian uses pernyataan\\u00a0tentang\\u00a0 in the same position; all remaining mathematical nodes agree.",
+    "The set-builder supplement reads | as sao cho, distinguishes it from absolute-value bars, makes the ambient set explicit and requires every satisfying element rather than an arbitrary subset. No new exercise or answer is introduced.",
+    "Actual HUST OCR07/08 and native printedp6/pp19–20 were reopened before drafting, after the first two definitions, and at final author review. Canon supports domain/function and interval-category language; it does not directly witness all three glossary headings. No external reference exercise copied and no mathematical source displaced by OCR.",
+    "106mixed checks pass with both originals present:70source/structure and36finite witnesses of endpoint notation, compatible/incompatible branches, expression restrictions and set-builder selection. These are not106mathematical proofs. No image, graph, cross-reader dependency or source numeric token exists in this unit.",
+    "Directly read new coordinator userturn[local-task-id]/item1 and updated local USER_INSTRUCTIONS.md. The single GitHub review-branch publication and hourly checks remain coordinator-owned. Supply exact accepted-versus-WIP snapshots; no independent push, goal replacement or duplicate automation.",
+    "Root owns registry/build/final source/canon/visual acceptance. The anonymous glossary's being final in the XML is not proof of full-module or book completion; draft explicitly says so. No shared edits, assets, downloads, broad audit, deletion or commit."
+  ],
+  "unsupported_terminology": [
+    {
+      "source": "interval notation",
+      "chosen": "ký hiệu khoảng",
+      "status": "LedgerT031 generic heading; actual native text witnesses interval categories, not this exact label."
+    },
+    {
+      "source": "piecewise function",
+      "chosen": "hàm số cho bởi nhiều công thức",
+      "status": "Descriptive established unit choice; HUST p6 supports multiple-expression concept, not exact phrase."
+    },
+    {
+      "source": "set-builder notation",
+      "chosen": "ký hiệu tập hợp theo điều kiện",
+      "status": "LedgerT032 descriptive choice; exact term not directly attested in current canon."
+    }
+  ],
+  "native_speaker_review": "not_performed",
+  "canon_limit": "Language witness only; no reference exercise copied and no OCR treated as mathematical authority.",
+  "remaining_review": "Root final source/canon acceptance, registry integration, reader build and visualQA remain; final_checked=false.",
+  "independent_review": {
+    "status": "PASS",
+    "reviewer": "/root/u006_graph_tests",
+    "translation_sha256": "c61e0f54e9b82a8e52715cd362f9b7933d32b6f9e65f3c309e939f95c9507e74",
+    "source_excerpt_sha256": "9f2774cf6617c38d8f9f4dd36b8d367b6b63078510eff0d8cf7515b5550a3df5",
+    "note": "Complete draft/excerpt and actual full EN/ID final glossary read. English canonical-equals excerpt; all6IDs/1Math reference once, no source images/exercises/links. Only EN/ID Math change is exact mtext statement about /pernyataan tentang ; proposed điều kiện về  is faithful with NBSP convention. Actual HUST OCR07/08/nativepp19–20/currentT031/T032 reread. All three direct meanings and labeled endpoint/infinity/compatible branch/expression-definedness/universe/all-satisfying-member supplements sound. No substantive issue, edits or checker reliance."
+  }
+}

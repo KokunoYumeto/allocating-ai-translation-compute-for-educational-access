@@ -1,0 +1,2171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:ns1="http://cnx.rice.edu/mdml" xml:lang="jv-Latn-ID">
+<title>Nganggo Basa Aljabar</title>
+<metadata>
+  <ns1:content-id>m81268</ns1:content-id>
+  <ns1:title>Nganggo Basa Aljabar</ns1:title>
+  <ns1:abstract><para id="para-00001">Sawise sinau bagean iki, kowe bakal bisa:</para>
+<list id="list-00001">
+<item>Nganggo variabel lan tandha aljabar</item>
+<item>Ngenali wujud aljabar lan persamaan</item>
+<item>Nggawe wujud aljabar mawa eksponen luwih prasaja</item>
+<item>Nggawe wujud aljabar luwih prasaja nganggo urutan ngetung</item>
+</list></ns1:abstract>
+  <ns1:uuid>c99ce701-d3cb-4b3d-9864-8a4861034a81</ns1:uuid>
+</metadata>
+
+<content>
+<note id="fs-id2669644" class="be-prepared">
+<para id="fs-id2849855">Sadurunge miwiti, coba garapen kuis iki kanggo mriksa kesiapanmu.</para>
+<exercise id="fs-idm203962224">
+<problem id="fs-idm202994368">
+<para id="fs-idm203085696"><m:math><m:mrow><m:mtext>Gunggungen:</m:mtext><m:mspace width="0.2em" /><m:mn>43</m:mn><m:mo>+</m:mo><m:mn>69</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline />Yen wangsulanmu kanggo soal iki salah, sinaunen maneh <link target-id="fs-id1348056" document="m81244" />.</para>
+</problem>
+<solution id="fs-idm208175728">
+<para id="fs-idm213977600"><m:math><m:mrow><m:mn>112</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise></note>
+<note id="fs-id2669643" class="be-prepared">
+<exercise id="fs-idm213983120">
+<problem id="fs-idm220642480">
+<para id="fs-idm212324528"><m:math><m:mrow><m:mtext>Pingna:</m:mtext><m:mspace width="0.2em" /><m:mo stretchy="false">(</m:mo><m:mn>896</m:mn><m:mo stretchy="false">)</m:mo><m:mn>201</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline />Yen wangsulanmu kanggo soal iki salah, sinaunen maneh <link target-id="fs-id2218296" document="m81255" />.</para>
+</problem>
+<solution id="fs-idm216259264">
+<para id="fs-idm217087024"><m:math><m:mrow><m:mn>180</m:mn><m:mo>,</m:mo><m:mn>096</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise></note>
+<note id="fs-id1339365" class="be-prepared">
+<exercise id="fs-idm214465168">
+<problem id="fs-idm214875296">
+<para id="fs-idm216311584"><m:math><m:mrow><m:mtext>Paranen:</m:mtext><m:mspace width="0.2em" /><m:mn>7,263</m:mn><m:mo>÷</m:mo><m:mn>9</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline />Yen wangsulanmu kanggo soal iki salah, sinaunen maneh <link target-id="fs-id2597529" document="m81256" />.</para>
+</problem>
+<solution id="fs-idm220771872">
+<para id="fs-idm214785696"><m:math><m:mrow><m:mn>807</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<section id="fs-id1618903"><title>Nganggo Variabel lan Tandha Aljabar</title><para id="fs-id2425891">Greg lan Alex ulang taun ing tanggal sing padha, nanging lair ing taun sing beda. Taun iki umur Greg <m:math><m:mrow><m:mn>20</m:mn></m:mrow></m:math> taun lan umur Alex <m:math><m:mrow><m:mn>23</m:mn><m:mo>,</m:mo></m:mrow></m:math> mula Alex <m:math><m:mn>3</m:mn></m:math> taun luwih tuwa tinimbang Greg. Nalika umur Greg <m:math><m:mrow><m:mn>12</m:mn><m:mo>,</m:mo></m:mrow></m:math> Umur Alex <m:math><m:mrow><m:mn>15</m:mn><m:mo>.</m:mo></m:mrow></m:math> Nalika umur Greg <m:math><m:mrow><m:mn>35</m:mn><m:mo>,</m:mo></m:mrow></m:math> Umur Alex bakal <m:math><m:mrow><m:mn>38</m:mn><m:mo>.</m:mo></m:mrow></m:math> Pira wae umur Greg, umur Alex bakal tansah <m:math><m:mn>3</m:mn></m:math> taun luwih tuwa, ta?</para><para id="eip-464">Ing basa aljabar, awake dhewe ngarani umur Greg lan umur Alex kuwi <term class="no-emphasis" id="term-00001">variabel</term>, dene telu kuwi <term class="no-emphasis" id="term-00002">konstanta</term>. Umure owah-owahan, mula umur kuwi variabel. Selisih umur <m:math><m:mn>3</m:mn></m:math> taun antarane dheweke tansah tetep, mula selisih umur mau kuwi konstanta.</para><para id="fs-id1633275">Ing aljabar, aksara dienggo kanggo nyatakake variabel. Upamane umur Greg dinyatakake nganggo <m:math><m:mrow><m:mi>g</m:mi><m:mo>.</m:mo></m:mrow></m:math> Awake dhewe bisa nganggo <m:math><m:mrow><m:mi>g</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> kanggo nyatakake umur Alex. Delengen <link target-id="fs-id2953912" />.</para>
+<table id="fs-id2953912" aria-label="Tabel iki duwe limang larik lan loro kolom. Larik kapisan dadi larik sirah. Kolom kapisan duwe label ‘umur Greg’ lan kolom kapindho ‘umur Alex’. Ing ngisore kolom ‘umur Greg’ ana nilai 12, 20, lan 35; larik pungkasan isine aksara g. Ing ngisore kolom ‘umur Alex’ ana nilai 15, 23, lan 38; larik pungkasan isine g ditambah 3.">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry align="center">Umur Greg</entry>
+<entry align="center">Umur Alex</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="center"><m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math></entry>
+<entry align="center"><m:math><m:mrow><m:mn>15</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="center"><m:math><m:mrow><m:mn>20</m:mn></m:mrow></m:math></entry>
+<entry align="center"><m:math><m:mrow><m:mn>23</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="center"><m:math><m:mrow><m:mn>35</m:mn></m:mrow></m:math></entry>
+<entry align="center"><m:math><m:mrow><m:mn>38</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="center"><m:math><m:mi>g</m:mi></m:math></entry>
+<entry align="center"><m:math><m:mrow><m:mi>g</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id2137950">Aksara dienggo kanggo nyatakake variabel. Aksara sing kerep dadi variabel kuwi <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mtext>lan</m:mtext><m:mspace width="0.2em" /><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<note id="fs-id2399231">
+<title>Variabel lan Konstanta</title>
+<para id="fs-id2203250">Variabel kuwi aksara sing nyatakake sawijining wilangan utawa besaran sing nilaine bisa owah.</para><para id="fs-id1604743">Konstanta kuwi wilangan sing nilaine tansah tetep.</para></note>
+<para id="fs-id1722327">Kanggo nulis nganggo aljabar, saliyane wilangan lan variabel awake dhewe butuh sawetara tandha. Ana sawetara jinis tandha sing bakal dienggo. Ing <link document="m81243">Wilangan Cacah</link>, awake dhewe wis ngenalake tandha kanggo patang <term class="no-emphasis" id="term-00003">operasi</term> operasi petungan dhasar: panambahan, pangurangan, ping-pingan, lan paran. Ing kene bakal diringkes operasi lan istilah kanggo asile.</para><table id="fs-id1891703" class="unnumbered" aria-label="Tabel iki duwe limang larik lan papat kolom. Larik kapisan dadi larik sirah. Kolom-kolome duwe label ‘operasi’, ‘Notasi’, ‘diwaca’, lan ‘asile kuwi’. Larik-larik sabanjure njlentrehake panambahan, pangurangan, ping-pingan, lan paran; saben-saben nuduhake notasi aljabar, cara macane, lan jeneng asile."><label />
+<tgroup cols="4"><colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<colspec colnum="4" colname="c4" />
+<thead>
+<row valign="top">
+<entry align="left"><emphasis effect="bold">Operasi</emphasis></entry>
+<entry align="left"><emphasis effect="bold">Notasi</emphasis></entry>
+<entry align="left"><emphasis effect="bold">Diwaca:</emphasis></entry>
+<entry align="left"><emphasis effect="bold">Asile…</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left">Panambahan</entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>ditambah</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left">gunggung <m:math><m:mi>a</m:mi></m:math> lan <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Pangurangan</entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>dikurangi</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left">selisih <m:math><m:mi>a</m:mi></m:math> lan <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Ping-pingan</entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>dipingake</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left">asil ping-pingan <m:math><m:mi>a</m:mi></m:math> lan <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Paran</entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>÷</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo stretchy="false">/</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>,</m:mo><m:mi>b</m:mi><m:menclose notation="longdiv"><m:mi>a</m:mi></m:menclose></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> dipara <m:math><m:mi>b</m:mi></m:math></entry>
+<entry align="left">asil paran <m:math><m:mi>a</m:mi></m:math> lan <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table><para id="fs-id1560745">Ing aljabar, tandha silang <m:math><m:mrow><m:mo>×</m:mo><m:mo>,</m:mo></m:mrow></m:math> ora dienggo nyatakake ping-pingan amarga bisa nggawe bingung. Apa <m:math><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math> ateges <m:math><m:mrow><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mo>×</m:mo><m:mspace width="0.2em" /><m:mi>y</m:mi></m:mrow></m:math> (telu dipingake <m:math><m:mi>y</m:mi></m:math>) utawa <m:math><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>y</m:mi></m:mrow></m:math> (telu dipingake <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="0.2em" /><m:mtext>dipingake</m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi></m:mrow></m:math>)? Supaya cetha, nganggoa • utawa kurung kanggo nyatakake ping-pingan.</para>
+<para id="fs-id1885631">Operasi iki ditindakake marang rong wilangan. Yen ngowahi tandha dadi tembung, utawa kosokbaline, gatekna tembung kaya <emphasis effect="italics">saka</emphasis> utawa <emphasis effect="italics">lan</emphasis> kanggo mbantu kowe ngenali rong wilangane.</para>
+<list id="fs-id1969800" list-type="labeled-item"><item><emphasis effect="italics">Gunggung</emphasis> <emphasis effect="bold"><emphasis effect="italics">saka</emphasis></emphasis> <m:math><m:mn>5</m:mn></m:math> <emphasis effect="bold"><emphasis effect="italics">lan</emphasis></emphasis> <m:math><m:mn>3</m:mn></m:math> ateges nggunggung <m:math><m:mn>5</m:mn></m:math> nganggo <m:math><m:mn>3</m:mn><m:mo>,</m:mo></m:math> sing kita tulis dadi <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><emphasis effect="italics">Selisih</emphasis> <emphasis effect="bold"><emphasis effect="italics">saka</emphasis></emphasis> <m:math><m:mn>9</m:mn></m:math> <emphasis effect="bold"><emphasis effect="italics">lan</emphasis></emphasis> <m:math><m:mn>2</m:mn></m:math> ateges nyuda <m:math><m:mn>9</m:mn></m:math> nganggo <m:math><m:mn>2</m:mn><m:mo>,</m:mo></m:math> sing kita tulis dadi <m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><emphasis effect="italics">Asil ping-pingan</emphasis> <emphasis effect="bold"><emphasis effect="italics">saka</emphasis></emphasis> <m:math><m:mn>4</m:mn></m:math> <emphasis effect="bold"><emphasis effect="italics">lan</emphasis></emphasis> <m:math><m:mn>8</m:mn></m:math> ateges ngepingake <m:math><m:mn>4</m:mn></m:math> nganggo <m:math><m:mn>8</m:mn><m:mo>,</m:mo></m:math> sing bisa kita tulis dadi <m:math><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><emphasis effect="italics">Asil paran</emphasis> <emphasis effect="bold"><emphasis effect="italics">saka</emphasis></emphasis> <m:math><m:mrow><m:mn>20</m:mn></m:mrow></m:math> <emphasis effect="bold"><emphasis effect="italics">lan</emphasis></emphasis> <m:math><m:mn>5</m:mn></m:math> ateges mara <m:math><m:mrow><m:mn>20</m:mn></m:mrow></m:math> nganggo <m:math><m:mn>5</m:mn><m:mo>,</m:mo></m:math> sing bisa kita tulis dadi <m:math><m:mrow><m:mn>20</m:mn><m:mo>÷</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math></item></list><example id="fs-id4121509"><exercise id="fs-id2646360">
+<problem id="fs-id1804532">
+<para id="fs-id2430630">Owahana wujud aljabar dadi tetembungan:
+<list id="eip-id1168469763234" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>12</m:mn><m:mo>+</m:mo><m:mn>14</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓒ</span> <m:math><m:mspace width="0.2em" /><m:mn>64</m:mn><m:mo>÷</m:mo><m:mn>8</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓓ</span> <m:math><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi></m:math></item></list></para></problem>
+<solution id="fs-id1604284">
+<title>Cara Ngrampungake</title>
+<table id="eip-815" class="unnumbered unstyled" summary="Maneka cara nyatakake gunggung rolas lan patbelas."><label />
+<tgroup cols="1"><tbody>
+<row><entry><span class="token">ⓐ</span> </entry> </row>
+<row>
+    <entry align="center"><m:math><m:mn>12</m:mn><m:mo>+</m:mo><m:mn>14</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry align="center">12 ditambah 14</entry>
+  </row>
+  <row>
+    <entry align="center">gunggung rolas lan patbelas</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table><table id="eip-653" class="unnumbered unstyled" summary="Tabel iki nuduhake maneka cara kanggo nyatakake wujud aljabar ping-pingan (30)(5)."><label />
+<tgroup cols="1"><tbody>
+<row><entry><span class="token">ⓑ</span> </entry> </row>
+  <row>
+    <entry align="center"><m:math><m:mo>(</m:mo><m:mn>30</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry align="center">30 dipingake 5</entry>
+  </row>
+  <row>
+    <entry align="center">asil ping-pingan telung puluh lan lima</entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table><table id="eip-id1164753916055" class="unnumbered unstyled" summary="Nuduhake maneka cara kanggo nyatakake operasi matematika ‘64 dipara 8’."><label />
+<tgroup cols="1"><tbody>
+  <row><entry><span class="token">ⓒ</span> </entry></row>
+  <row>
+    <entry align="center"><m:math><m:mn>64</m:mn><m:mo>÷</m:mo><m:mn>8</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry align="center">64 dipara 8</entry>
+  </row>
+  <row>
+    <entry align="center">asil paran sewidak papat lan wolu</entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table><table id="eip-id1164753916109" class="unnumbered unstyled" summary="Nuduhake maneka cara kanggo nyatakake selisih matematis antarane variabel x lan y."><label />
+<tgroup cols="1"><tbody>
+<row><entry><span class="token">ⓓ</span> </entry></row>
+  <row>
+    <entry align="center"><m:math><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi></m:math></entry>
+  </row>
+  <row>
+    <entry align="center"><m:math><m:mi>x</m:mi></m:math> dikurangi <m:math><m:mi>y</m:mi></m:math></entry>
+  </row>
+  <row>
+    <entry align="center">selisih <m:math><m:mi>x</m:mi></m:math> lan <m:math><m:mi>y</m:mi></m:math></entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id1515897" class="try">
+<exercise id="fs-id1531302"><problem id="fs-id2205513">
+<para id="fs-id1807700">Owahana wujud aljabar dadi tetembungan.
+<list id="eip-id1168469668897" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>18</m:mn><m:mo>+</m:mo><m:mn>11</m:mn><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mo stretchy="false">(</m:mo><m:mn>27</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓒ</span> <m:math><m:mspace width="0.2em" /><m:mn>84</m:mn><m:mo>÷</m:mo><m:mn>7</m:mn></m:math></item>
+
+<item><span class="token">ⓓ</span> <m:math><m:mi>p</m:mi><m:mo>−</m:mo><m:mi>q</m:mi></m:math></item></list></para>
+</problem>
+<solution id="fs-id1383680">
+<list id="eip-id1168469837643" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 18 ditambah 11; gunggung wolulas lan sewelas</item>
+
+<item><span class="token">ⓑ</span> 27 dipingake 9; asil ping-pingan pitulikur lan sanga</item>
+
+<item><span class="token">ⓒ</span> 84 dipara 7; asil paran wolung puluh papat lan pitu</item>
+
+<item><span class="token">ⓓ</span> <emphasis effect="italics">p</emphasis> dikurangi <emphasis effect="italics">q</emphasis>; selisih <emphasis effect="italics">p</emphasis> lan <emphasis effect="italics">q</emphasis></item></list></solution>
+</exercise></note>
+<note id="fs-id1171103118625" class="try">
+<exercise id="fs-id1913698"><problem id="fs-id2161871">
+<para id="fs-id1171104039532">Owahana wujud aljabar dadi tetembungan.
+<list id="eip-id1168468485516" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>47</m:mn><m:mo>−</m:mo><m:mn>19</m:mn><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mn>72</m:mn><m:mo>÷</m:mo><m:mn>9</m:mn><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓒ</span> <m:math><m:mspace width="0.2em" /><m:mi>m</m:mi><m:mo>+</m:mo><m:mi>n</m:mi><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓓ</span> <m:math><m:mspace width="0.2em" /><m:mo stretchy="false">(</m:mo><m:mn>13</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo></m:math></item></list></para>
+</problem>
+<solution id="fs-id1887825">
+<list id="eip-id1168465110670" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 47 dikurangi 19; selisih patang puluh pitu lan sangalas</item>
+
+<item><span class="token">ⓑ</span> 72 dipara 9; asil paran pitung puluh loro lan sanga</item>
+
+
+<item><span class="token">ⓒ</span> <emphasis effect="italics">m</emphasis> ditambah <emphasis effect="italics">n</emphasis>; gunggung <emphasis effect="italics">m</emphasis> lan <emphasis effect="italics">n</emphasis></item>
+
+<item><span class="token">ⓓ</span> 13 dipingake 7; asil ping-pingan telulas lan pitu</item></list></solution>
+</exercise></note>
+<para id="fs-id1370913">Nalika loro besaran duwe nilai sing padha, kita ngarani loro-lorone padha lan nyambungake nganggo <emphasis effect="italics">tandha padha karo</emphasis>.</para>
+<note id="fs-id1603053">
+<title>Tandha Padha Karo</title>
+<para id="fs-id1885124"><m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mspace width="0.2em" /><m:mtext>diwaca</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>padha karo</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi></m:mrow></m:math></para>
+<para id="fs-id2775026">Tandha <m:math><m:mrow><m:mo>=</m:mo></m:mrow></m:math> diarani <term class="no-emphasis" id="term-00004">tandha padha karo</term>.</para>
+</note>
+<para id="fs-id2792607"><term class="no-emphasis" id="term-00005">Pertidaksamaan</term> dienggo ing aljabar kanggo mbandhingake rong besaran sing nilaine bisa beda. Garis wilangan bisa mbantu kowe ngerti pertidaksamaan. Elinga yen ing garis wilangan nilai saya gedhé saka kiwa menyang tengen. Mula, yen <m:math><m:mrow><m:mi>b</m:mi></m:mrow></m:math> luwih gedhé tinimbang <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math> ateges <m:math><m:mrow><m:mi>b</m:mi></m:mrow></m:math> mapan ing sisih tengen <m:math><m:mrow><m:mi>a</m:mi></m:mrow></m:math> ing garis wilangan. kita nganggo tandha <m:math><m:mrow><m:mtext>“&lt;”</m:mtext></m:mrow></m:math> lan <m:math><m:mrow><m:mtext>“&gt;”</m:mtext></m:mrow></m:math> kanggo pertidaksamaan.</para>
+<note id="fs-id2650456">
+<title>Pertidaksamaan</title>
+<para id="fs-id3202723"><m:math><m:mrow><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi></m:mrow></m:math> diwaca <m:math><m:mrow><m:mi>a</m:mi></m:mrow></m:math> luwih cilik tinimbang <m:math><m:mrow><m:mi>b</m:mi></m:mrow></m:math></para>
+<para id="fs-id2700412"><m:math><m:mrow><m:mi>a</m:mi></m:mrow></m:math> mapan ing sisih kiwa <m:math><m:mrow><m:mi>b</m:mi></m:mrow></m:math> ing garis wilangan</para>
+<media id="fs-id1933083" alt="Gambar nuduhake garis wilangan horizontal nganggo aksara a ing sisih kiwa lan aksara b ing sisih tengene.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_01_001.jpg" />
+</media>
+<para id="fs-id2495460"><m:math><m:mrow><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mi>b</m:mi></m:mrow></m:math> diwaca <m:math><m:mrow><m:mi>a</m:mi></m:mrow></m:math> luwih gedhé tinimbang <m:math><m:mrow><m:mi>b</m:mi></m:mrow></m:math></para>
+<para id="fs-id1379804"><m:math><m:mrow><m:mi>a</m:mi></m:mrow></m:math> mapan ing sisih tengen <m:math><m:mrow><m:mi>b</m:mi></m:mrow></m:math> ing garis wilangan</para>
+<media id="fs-id1467098" alt="Gambar nuduhake garis wilangan horizontal nganggo aksara b ing sisih kiwa lan aksara a ing sisih tengene.">
+<image mime-type="image/jpeg" src="../../media/CNX_BMath_Figure_02_01_002.jpg" />
+</media>
+</note>
+<para id="fs-id3242396">Wujud aljabar <m:math><m:mrow><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mspace width="0.2em" /><m:mtext>lan</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mi>b</m:mi></m:mrow></m:math> bisa diwaca saka kiwa menyang tengen utawa kosokbaline, nanging biasane diwaca saka kiwa menyang tengen. Umume,</para>
+<equation id="fs-id2284597" class="unnumbered"><label /><m:math><m:mrow><m:mtable columnalign="left"><m:mtr columnalign="left"><m:mtd columnalign="left"><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mspace width="0.2em" /><m:mtext>padha karo</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi><m:mo>&gt;</m:mo><m:mi>a</m:mi><m:mo>.</m:mo><m:mspace width="2em" /><m:mtext>Dadi tuladha,</m:mtext><m:mspace width="0.2em" /><m:mn>7</m:mn><m:mo>&lt;</m:mo><m:mn>11</m:mn><m:mspace width="0.2em" /><m:mtext>padha karo</m:mtext><m:mspace width="0.2em" /><m:mn>11</m:mn><m:mo>&gt;</m:mo><m:mn>7</m:mn><m:mo>.</m:mo></m:mtd></m:mtr><m:mtr columnalign="left"><m:mtd columnalign="left"><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mi>b</m:mi><m:mspace width="0.2em" /><m:mtext>padha karo</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi><m:mo>&lt;</m:mo><m:mi>a</m:mi><m:mo>.</m:mo><m:mspace width="2em" /><m:mtext>Dadi tuladha,</m:mtext><m:mspace width="0.2em" /><m:mn>17</m:mn><m:mo>&gt;</m:mo><m:mn>4</m:mn><m:mspace width="0.2em" /><m:mtext>padha karo</m:mtext><m:mspace width="0.2em" /><m:mn>4</m:mn><m:mo>&lt;</m:mo><m:mn>17</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id2903489">Nalika awake dhewe nulis tandha pertidaksamaan nganggo garis ing ngisore, kaya <m:math><m:mrow><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> ateges <m:math><m:mrow><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi></m:mrow></m:math> utawa <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> Kita macane <m:math><m:mi>a</m:mi></m:math> luwih cilik utawa padha karo <m:math><m:mrow><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> Saliyane kuwi, yen tandha padha karo diwenehi garis miring, <m:math><m:mtext>≠,</m:mtext></m:math> ateges ora padha karo.</para>
+<para id="fs-id1238987">Tandha-tandha pepadhan lan pertidaksamaan diringkes ing <link target-id="fs-id1778628" />.</para>
+<table id="fs-id1778628" aria-label="Tabel iki duwe pitu larik lan loro kolom. Larik kapisan dadi larik sirah. Kolom kapisan duwe label ‘notasi aljabar’ lan kolom kapindho ‘diwaca’. enem larik sabanjure ngemot a padha karo b, a ora padha karo b, a luwih cilik tinimbang b, a luwih gedhé tinimbang b, a luwih cilik utawa padha karo b, sarta a luwih gedhé tinimbang utawa padha karo b, saben-saben ing notasi lan tetembungan.">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry align="center">Notasi Aljabar</entry>
+<entry align="center">Diwaca</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> padha karo <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>≠</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> ora padha karo <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> luwih cilik tinimbang <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> luwih gedhé tinimbang <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> luwih cilik utawa padha karo <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>≥</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> luwih gedhé tinimbang utawa padha karo <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<note id="fs-id2316516"><title>Tandha <m:math><m:mrow><m:mo>&lt;</m:mo></m:mrow></m:math> lan <m:math><m:mrow><m:mo>&gt;</m:mo></m:mrow></m:math></title><para id="fs-id1508974">Tandha <m:math><m:mo>&lt;</m:mo></m:math> lan <m:math><m:mo>&gt;</m:mo></m:math> saben-saben duwe sisih sing luwih cilik lan sisih sing luwih gedhé.</para>
+<para id="eip-id1168265897874">sisih luwih cilik   <m:math><m:mo>&lt;</m:mo></m:math>      sisih luwih gedhé  <newline />
+sisih luwih gedhé     <m:math><m:mo>&gt;</m:mo></m:math>      sisih luwih cilik</para>
+<para id="fs-id2263448">Sisih tandha sing luwih cilik madhep wilangan sing luwih cilik, dene sisih sing luwih gedhé madhep wilangan sing luwih gedhé.</para>
+</note><example id="fs-id1364828"><exercise id="fs-id2316251"><problem id="fs-id2199402">
+<para id="fs-id2627959">Owahana wujud aljabar dadi tetembungan:
+<list id="eip-id1168466395280" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>20</m:mn><m:mo>≤</m:mo><m:mn>35</m:mn></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mn>11</m:mn><m:mo>≠</m:mo><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:math></item>
+<item><span class="token">ⓒ</span> <m:math><m:mspace width="0.2em" /><m:mn>9</m:mn><m:mo>&gt;</m:mo><m:mn>10</m:mn><m:mo>÷</m:mo><m:mn>2</m:mn></m:math></item>
+<item><span class="token">ⓓ</span> <m:math><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>&lt;</m:mo><m:mn>10</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id1210439">
+<title>Cara Ngrampungake</title>
+<table id="eip-399" class="unnumbered unstyled" summary="Tabel iki nyuguhake pertidaksamaan matematika 20 ≤ 35 sarta cara macane ing tetembungan."><label />
+<tgroup cols="1"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> </entry>
+  </row>
+  <row>
+    <entry><m:math><m:mn>20</m:mn><m:mo>≤</m:mo><m:mn>35</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>20 luwih cilik utawa padha karo 35</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table>
+
+<table id="eip-id1164752763787" class="unnumbered unstyled" summary="Tabel iki nyuguhake pertidaksamaan matematika 11 ≠ 15 − 3 ing wujud simbol lan tetembungan."><label />
+<tgroup cols="1"><tbody>
+  <row>
+    <entry><span class="token">ⓑ</span> </entry>
+  </row>
+  <row>
+    <entry><m:math><m:mn>11</m:mn><m:mo>≠</m:mo><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>11 ora padha karo 15 dikurangi 3</entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table>
+
+<table id="eip-id1164753846062" class="unnumbered unstyled" summary="Nyuguhake pertidaksamaan matematika 9 &gt; 10 ÷ 2 sarta cara macane ing tetembungan."><label />
+<tgroup cols="1"><tbody>
+  <row>
+    <entry><span class="token">ⓒ</span> </entry>
+  </row>
+  <row>
+    <entry><m:math><m:mn>9</m:mn><m:mo>&gt;</m:mo><m:mn>10</m:mn><m:mo>÷</m:mo><m:mn>2</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>9 luwih gedhé tinimbang 10 dipara 2</entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table>
+
+<table id="eip-id1164752824586" class="unnumbered unstyled" summary="Nuduhake pertidaksamaan x + 2 &lt; 10 ing notasi matematika lan tetembungan."><label />
+<tgroup cols="1"><tbody>
+  <row>
+    <entry><span class="token">ⓓ</span> </entry>
+  </row>
+  <row>
+    <entry><m:math><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>&lt;</m:mo><m:mn>10</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry><m:math><m:mi>x</m:mi></m:math> ditambah 2 luwih cilik tinimbang 10</entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id1297928" class="try">
+<exercise id="fs-id2310743"><problem id="fs-id1205270">
+<para id="fs-id2903606">Owahana wujud aljabar dadi tetembungan.
+<list id="eip-id1168466011782" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>14</m:mn><m:mo>≤</m:mo><m:mn>27</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mn>19</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>≠</m:mo><m:mn>8</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓒ</span> <m:math><m:mspace width="0.2em" /><m:mn>12</m:mn><m:mo>&gt;</m:mo><m:mn>4</m:mn><m:mo>÷</m:mo><m:mn>2</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓓ</span> <m:math><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:math></item></list></para>
+</problem>
+<solution id="fs-id2816995">
+<list id="eip-id1168466395276" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> patbelas luwih cilik utawa padha karo pitulikur</item>
+
+<item><span class="token">ⓑ</span> sangalas dikurangi loro ora padha karo wolu</item>
+
+<item><span class="token">ⓒ</span> rolas luwih gedhé tinimbang papat dipara loro</item>
+
+<item><span class="token">ⓓ</span> <emphasis effect="italics">x</emphasis> dikurangi pitu luwih cilik tinimbang siji</item></list></solution>
+</exercise></note>
+<note id="fs-id1171104414920" class="try">
+<exercise id="fs-id1573881"><problem id="fs-id1614444">
+<para id="fs-id1171103156301">Owahana wujud aljabar dadi tetembungan.
+<list id="eip-id1168469636286" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>19</m:mn><m:mo>≥</m:mo><m:mn>15</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓒ</span> <m:math><m:mspace width="0.2em" /><m:mn>15</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>&lt;</m:mo><m:mn>8</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓓ</span> <m:math><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>&gt;</m:mo><m:mn>6</m:mn></m:math></item></list></para>
+</problem>
+<solution id="fs-id1567145">
+<list id="eip-id1168469636381" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> sangalas luwih gedhé tinimbang utawa padha karo limalas</item>
+<item><span class="token">ⓑ</span> pitu padha karo rolas dikurangi lima</item>
+<item><span class="token">ⓒ</span> limalas dipara telu luwih cilik tinimbang wolu</item><item><span class="token">ⓓ</span> <emphasis effect="italics">y</emphasis> dikurangi telu luwih gedhé tinimbang enem</item></list></solution>
+</exercise></note>
+<example id="fs-id1714381"><exercise id="fs-id2926178"><problem id="fs-id2471355">
+<para id="fs-id1825021">Informasi ing <link target-id="CNX_BMath_Figure_02_01_003" /> mbandhingake efisiensi bahan bakar sawetara mobil ing mile saben gallon (mpg). tulisen tandha sing pas, kuwi <m:math><m:mrow><m:mtext>=</m:mtext><m:mo>,</m:mo><m:mtext>&lt;</m:mtext><m:mo>,</m:mo><m:mtext>utawa</m:mtext><m:mspace width="0.2em" /><m:mtext>&gt;</m:mtext></m:mrow></m:math>, ing saben wujud aljabar kanggo mbandhingake efisiensi bahan bakar mobil-mobil mau.
+<figure id="CNX_BMath_Figure_02_01_003">
+<media id="fs-id1495317" alt="Tabel iki ana rong larik lan enem kolom. Kolom kapisan sirah tabel kanthi label ‘Mobil’ lan ‘Efisiensi bahan bakar (mpg)’. Ing tengen ana Prius, Mini Cooper, Toyota Corolla, Versa, lan Honda Fit karo gambar saben model. Larik efisiensi bahan bakar sing katon isine 48, 27, 28, 26, lan 27; ora ana aksara variabel utawa tandha padha karo sing katon ing gambar.">
+<image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_003_id.png" />
+</media>
+<caption>(kredit: modifikasi karya Bernard Goldbach, Wikimedia Commons)</caption>
+</figure>
+<list id="eip-id1168467200954" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> mpg Prius_____ mpg Mini Cooper</item><item><span class="token">ⓑ</span> mpg Versa_____ mpg Fit</item><item><span class="token">ⓒ</span> mpg Mini Cooper_____ mpg Fit</item><item><span class="token">ⓓ</span> mpg Corolla_____ mpg Versa</item>
+<item><span class="token">ⓔ</span> mpg Corolla_____ mpg Prius</item></list></para>
+</problem>
+<solution id="fs-id1215439">
+<title>Cara Ngrampungake</title>
+<table id="eip-254" class="unnumbered unstyled" summary="Pambandhing nilai mpg Prius lan Mini Cooper sing nuduhake yen efisiensi bahan bakar Prius luwih dhuwur.">
+<label /><tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> </entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Prius____mpg Mini Cooper</entry>
+  </row>
+  <row>
+    <entry>Golekana nilaine ing tabel.</entry>
+    <entry align="center">48____27</entry>
+  </row>
+  <row>
+    <entry>Bandhingna.</entry>
+    <entry align="center">48 &gt; 27</entry>
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Prius &gt; mpg Mini Cooper</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table>
+<table id="eip-id1164755344638" class="unnumbered unstyled" summary="Pambandhing efisiensi bahan bakar ing mpg antarane Versa lan Fit."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓑ</span> </entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Versa____mpg Fit</entry>
+  </row>
+  <row>
+    <entry>Golekana nilaine ing tabel.</entry>
+    <entry align="center">26____27</entry>
+  </row>
+  <row>
+    <entry>Bandhingna.</entry>
+    <entry align="center">26 &lt; 27</entry>
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Versa &lt; mpg Fit</entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table>
+<table id="eip-id1164755344710" class="unnumbered unstyled" summary="Tabel iki mbandhingake efisiensi bahan bakar Mini Cooper lan Fit sarta nuduhake yen loro-lorone nggayuh 27 mpg."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓒ</span> </entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Mini Cooper____mpg Fit</entry>
+  </row>
+  <row>
+    <entry>Golekana nilaine ing tabel.</entry>
+    <entry align="center">27____27</entry>
+  </row>
+  <row>
+    <entry>Bandhingna.</entry>
+    <entry align="center">27 = 27</entry>
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Mini Cooper = mpg Fit</entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table>
+
+<table id="eip-id1164755231773" class="unnumbered unstyled" summary="Tabel iki nuduhake pambandhing saben tahap nilai mile saben gallon (mpg) Toyota Corolla lan Nissan Versa, kalebu data numerik lan asil pambandhinge."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓓ</span> </entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Corolla____mpg Versa</entry>
+  </row>
+  <row>
+    <entry>Golekana nilaine ing tabel.</entry>
+    <entry align="center">28____26</entry>
+  </row>
+  <row>
+    <entry>Bandhingna.</entry>
+    <entry align="center">28 &gt; 26</entry>
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Corolla &gt; mpg Versa</entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><table id="eip-id1164755231845" class="unnumbered unstyled" summary="Tabel iki mbandhingake mpg Corolla (28) lan Prius (48), sing nuduhake efisiensi bahan bakar Prius luwih dhuwur."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓔ</span> </entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Corolla____mpg Prius</entry>
+  </row>
+  <row>
+    <entry>Golekana nilaine ing tabel.</entry>
+    <entry align="center">28____48</entry>
+  </row>
+  <row>
+    <entry>Bandhingna.</entry>
+    <entry align="center">28 &lt; 48</entry>
+  </row>
+  <row>
+    <entry />
+    <entry align="center">mpg Corolla &lt; mpg Prius</entry>
+  </row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id2671268" class="try">
+<exercise id="fs-id2488024"><problem id="fs-id1567666">
+<para id="fs-id2173921">Gunakna <link target-id="CNX_BMath_Figure_02_01_003" /> kanggo ngisi <m:math><m:mrow><m:mtext>tandha sing pas</m:mtext><m:mo>,</m:mo><m:mtext>=</m:mtext><m:mo>,</m:mo><m:mtext>&lt;</m:mtext><m:mo>,</m:mo><m:mtext>utawa</m:mtext><m:mspace width="0.2em" /><m:mtext>&gt;</m:mtext><m:mo>.</m:mo></m:mrow></m:math>
+<list id="eip-id1168468772318" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> mpg Prius_____mpg Versa</item>
+<item><span class="token">ⓑ</span> mpg Mini Cooper_____ mpg Corolla</item></list></para>
+</problem>
+<solution id="fs-id611660">
+<list id="eip-id1168468400876" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> &gt; </item><item> <span class="token">ⓑ</span> &lt;</item></list></solution>
+</exercise></note>
+<note id="fs-id1171103130666" class="try">
+<exercise id="fs-id1534636"><problem id="fs-id1824239">
+<para id="fs-id1171104004719">Gunakna <link target-id="CNX_BMath_Figure_02_01_003" /> kanggo ngisi <m:math><m:mrow><m:mtext>tandha sing pas</m:mtext><m:mo>,</m:mo><m:mtext>=</m:mtext><m:mo>,</m:mo><m:mtext>&lt;</m:mtext><m:mo>,</m:mo><m:mtext>utawa</m:mtext><m:mspace width="0.2em" /><m:mtext>&gt;</m:mtext><m:mo>.</m:mo></m:mrow></m:math>
+<list id="eip-id1168467211692" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> mpg Fit_____ mpg Prius</item>
+<item><span class="token">ⓑ</span> mpg Corolla _____ mpg Fit</item></list></para>
+</problem>
+<solution id="fs-id2270408">
+<list id="eip-id1168468505851" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> &lt; </item><item><span class="token">ⓑ</span> &gt;</item></list></solution>
+</exercise></note>
+<para id="fs-id1825969">Tandha panglumpukan ing aljabar kaya koma, titik loro, lan tandha wacan liyane ing basa tulis. Tandha kasebut nuduhake wujud endi sing kudu dadi siji klompok lan dipisahake saka wujud liyane. <link target-id="fs-id2856176" /> nyantumake telung tandha panglumpukan sing paling umum dienggo ing aljabar.</para>
+<table id="fs-id2856176" aria-label="Tabel iki duwe papat larik lan loro kolom. Larik kapisan mbentang rong kolom lan dadi sirah mawa tulisan ‘Tandha panglumpukan sing umum’. Larik kapindho duwe label ‘tandha kurung’ lan nuduhake tandha kurung bukak sarta tutup. Larik katelu duwe label ‘kurung siku’ lan nuduhake kurung siku bukak sarta tutup. Larik kapapat duwe label ‘kurung kurawal’ lan nuduhake kurung kurawal bukak sarta tutup.">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry align="center" namest="c1" nameend="c2"><emphasis effect="bold">Tandha panglumpukan sing umum</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left">kurung</entry>
+<entry align="center"><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mspace width="0.5em" /><m:mo stretchy="false">)</m:mo></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">kurung siku</entry>
+<entry align="center"><m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mspace width="0.5em" /><m:mo stretchy="false">]</m:mo></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">kurung kurawal</entry>
+<entry align="center"><m:math><m:mrow><m:mo stretchy="false">{</m:mo><m:mspace width="0.5em" /><m:mo stretchy="false">}</m:mo></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1386307">Ing ngisor iki sawetara tuladha wujud aljabar sing ngemot tandha panglumpukan. Kita bakal nggawe wujud aljabar kaya iki luwih prasaja mengko ing bagean iki.</para>
+<equation id="fs-id2221712" class="unnumbered"><label /><m:math><m:mrow><m:mn>8</m:mn><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mspace width="4em" /><m:mn>21</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">[</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo><m:mspace width="4em" /><m:mn>24</m:mn><m:mo>÷</m:mo><m:mo>{</m:mo><m:mn>13</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">]</m:mo><m:mo>}</m:mo></m:mrow></m:math></equation>
+</section><section id="fs-id2269049">
+<title>Ngenali Wujud Aljabar lan Persamaan</title>
+<para id="fs-id2139102">Apa bedane frasa lan ukara? Frasa ngandharake siji gagasan sing durung pepak yen madeg dhewe, dene ukara ngandharake gagasan sing pepak. “Mlayu banter banget” kuwi frasa, dene “Wong sing dolanan bal-balan kuwi mlayu banter banget” kuwi ukara. Ukara duwe subjek lan predikat.</para>
+<para id="fs-id1171104014483">Ing aljabar, kita ngenali <emphasis effect="italics">wujud aljabar</emphasis> lan <emphasis effect="italics">persamaan</emphasis>. <term class="no-emphasis" id="term-00006">Wujud Aljabar</term> kaya frasa. Ing ngisor iki ana sawetara tuladha wujud aljabar lan frasa tembunge:</para>
+<table id="fs-id2472125" class="unnumbered" aria-label="Tabel iki dumadi saka limang larik lan telung kolom. Larik kapisan yaiku larik sirah sing menehi label ing saben kolom. Kolom kapisan duwe label “Wujud aljabar”, kolom kapindho “Tetembungan”, lan kolom katelu “Frasa”. Ing larik kapindho, ing kolom “Wujud aljabar” ana telu ditambah lima. Ing kolom “Tetembungan” ana frasa “telu ditambah lima”. Ing kolom “Frasa” ana frasa “gunggung telu lan lima”. Ing larik katelu, ing kolom “Wujud aljabar” ana n dikurangi siji. Ing kolom “Tetembungan” ana frasa “n dikurangi siji”. Ing kolom “Frasa” ana frasa “selisih n lan siji”. Ing larik kapapat, ing kolom “Wujud aljabar” ana enem dipingake pitu. Ing kolom “Tetembungan” ana frasa “enem dipingake pitu”. Ing kolom “Frasa” ana frasa “asil ping-pingan enem lan pitu”. Ing larik kaping lima, ing kolom “Wujud aljabar” ana x dipara y. Ing kolom “Tetembungan” ana frasa “x dipara y”. Ing kolom “Frasa” ana frasa “asil paran x lan y”.">
+<label />
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<thead>
+<row valign="top">
+<entry align="left">Wujud Aljabar</entry>
+<entry align="left">Tembung-tembung</entry>
+<entry align="left">Frasa</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ditambah</m:mtext><m:mspace width="0.2em" /><m:mn>5</m:mn></m:mrow></m:math></entry>
+<entry align="left">gunggung telu lan lima</entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>n</m:mi></m:mrow></m:math> dikurangi siji</entry>
+<entry align="left">selisih <m:math><m:mrow><m:mi>n</m:mi></m:mrow></m:math> lan siji</entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>6</m:mn><m:mspace width="0.2em" /><m:mtext>dipingake</m:mtext><m:mspace width="0.2em" /><m:mn>7</m:mn></m:mrow></m:math></entry>
+<entry align="left">asil ping-pingan enem lan pitu</entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mfrac></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>x</m:mi></m:math> dipara <m:math><m:mi>y</m:mi></m:math></entry>
+<entry align="left">asil paran <m:math><m:mi>x</m:mi></m:math> lan <m:math><m:mi>y</m:mi></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id2471614">Gatekna yen frasa-frasa mau ora mbentuk ukara pepak amarga ora duwe predikat. <term class="no-emphasis" id="term-00007">Persamaan</term> dumadi saka rong wujud aljabar sing digandhengake nganggo tandha padha karo. Yen tandha-tandha ing persamaan diwaca minangka tembung, kawangun ukara sing pepak. Tandha padha karo dadi predikat. Ing ngisor iki ana sawetara tuladha persamaan:</para>
+<table id="fs-id2658369" class="unnumbered" aria-label="Tabel iki dumadi saka enem larik lan loro kolom. Larik kapisan yaiku larik sirah sing menehi label ing saben kolom. Kolom kapisan duwe label “Persamaan” lan kolom kapindho “Ukara”. Larik-larik sabanjure masang saben persamaan karo ukarane: telu ditambah lima padha karo wolu; n dikurangi siji padha karo patbelas; enem dipingake pitu padha karo patang puluh loro; x padha karo sèket telu; lan y ditambah sanga padha karo loro ping y dikurangi telu.">
+<label />
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry align="left">Persamaan</entry>
+<entry align="left">Ukara</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow></m:math></entry>
+<entry align="left">Gunggung telu lan lima padha karo wolu.</entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>14</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>n</m:mi></m:math> dikurangi siji padha karo patbelas.</entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>42</m:mn></m:mrow></m:math></entry>
+<entry align="left">Asil ping-pingan enem lan pitu padha karo patang puluh loro.</entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>53</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>x</m:mi></m:math> padha karo sèket telu.</entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>y</m:mi></m:math> ditambah sanga padha karo loro <m:math><m:mi>y</m:mi></m:math> dikurangi telu.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<note id="fs-id1365219">
+<title>Wujud Aljabar lan Persamaan</title>
+<para id="fs-id2196798"><term id="term-00008">Wujud Aljabar</term> kuwi wilangan, variabel, utawa kombinasi wilangan, variabel, lan tandha operasi.</para><para id="fs-id2451266"><term id="term-00009">Persamaan</term> kasusun saka rong wujud aljabar sing digandhengake nganggo tandha padha karo.</para></note>
+<example id="fs-id2650235">
+<exercise id="fs-id588356"><problem id="fs-id2198152">
+<para id="fs-id1544580">Temtokna apa saben wujud ing ngisor iki dadi wujud aljabar utawa persamaan:
+<list id="eip-id1168469631637" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>10</m:mn></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:math></item>
+<item><span class="token">ⓒ</span> <m:math><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>÷</m:mo><m:mn>25</m:mn></m:math></item>
+<item><span class="token">ⓓ</span> <m:math><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>40</m:mn></m:math></item></list></para>
+</problem>
+<solution id="fs-id1584678">
+<title>Cara Ngrampungake</title>
+<table id="eip-id1166346957031" class="unnumbered unstyled" summary="Tabel iki menehi tuladha andharan matematika lan nggolongake saben-saben dadi persamaan utawa wujud aljabar adhedhasar ana utawa orane tandha padha karo."><label />
+<tgroup cols="2">
+<tbody>
+<row>
+   <entry><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>10</m:mn></m:math></entry>
+   <entry>Iki kuwi persamaan—loro wujud aljabar digandhengake nganggo tandha padha karo.</entry>
+</row>
+
+<row>
+  <entry><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:math></entry>
+   <entry> Iki kuwi wujud aljabar—ora ana tandha padha karo.</entry>
+</row>
+
+<row>
+  <entry><span class="token">ⓒ</span> <m:math><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>÷</m:mo><m:mn>25</m:mn></m:math></entry>
+  <entry> Iki kuwi wujud aljabar—ora ana tandha padha karo.</entry>
+</row>
+<row>
+   <entry><span class="token">ⓓ</span> <m:math><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>40</m:mn></m:math></entry>
+  <entry> Iki kuwi persamaan—loro wujud aljabar digandhengake nganggo tandha padha karo.</entry>
+</row></tbody></tgroup></table>
+</solution>
+</exercise></example>
+<note id="fs-id2716135" class="try">
+<exercise id="fs-id2853302"><problem id="fs-id2650086">
+<para id="fs-id1619065">Temtokna apa saben wujud ing ngisor iki dadi wujud aljabar utawa persamaan:
+<list id="eip-id1168468600384" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>23</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>29</m:mn><m:mspace width="0.4em" /></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:math></item></list></para>
+</problem>
+<solution id="fs-id1346095">
+<list id="eip-id1168468285584" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> persamaan </item><item> <span class="token">ⓑ</span> wujud aljabar</item></list></solution>
+</exercise></note>
+<note id="fs-id1171104416455" class="try">
+<exercise id="fs-id2619086"><problem id="fs-id1789247">
+<para id="fs-id1171103307873">Temtokna apa saben wujud ing ngisor iki dadi wujud aljabar utawa persamaan:
+<list id="eip-id1168469631624" list-type="enumerated" number-style="arabic" class="circled"><item><m:math><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>÷</m:mo><m:mn>14</m:mn><m:mspace width="0.4em" /></m:math></item>
+<item><m:math><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>21</m:mn></m:math></item></list></para>
+</problem>
+<solution id="fs-id1577444">
+<list id="eip-id1168469631663" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> wujud aljabar</item><item><span class="token">ⓑ</span> persamaan</item></list></solution>
+</exercise></note>
+</section>
+<section id="fs-id1395398"><title>Nggawe Wujud Aljabar Mawa Eksponen Luwih Prasaja</title><para id="fs-id1392631">Nggawe wujud angka luwih prasaja tegese nindakake kabeh petungan sing bisa ditindakake. Tuladhane, kanggo nggawe <m:math><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math>, mula-mula kita ngepingake <m:math><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:math> mula dipikolehi <m:math><m:mn>8</m:mn></m:math>, banjur nambahi <m:math><m:mn>1</m:mn></m:math> mula dipikolehi <m:math><m:mn>9</m:mn><m:mo>.</m:mo></m:math> Biasakna nulis langkah petungan mudhun ing kaca. Saben langkah ditulis ing ngisor langkah sadurunge. Tuladha mau bakal katon kaya mangkene:</para><equation id="fs-id1308315" class="unnumbered"><label /><m:math><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></equation>
+<equation id="fs-id2495596" class="unnumbered"><label /><m:math><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></equation>
+<equation id="fs-id3016728" class="unnumbered"><label /><m:math><m:mn>9</m:mn></m:math></equation>
+<para id="fs-id2144760">Upamane awake dhewe duwe wujud aljabar <m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math> Kita bisa nulise nganggo luwih ringkes nganggo notasi eksponen. Ing aljabar, notasi eksponen dienggo kanggo nyatakake ping-pingan bola-bali faktor-faktor sing padha. kita nulis <m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:math> dadi <m:math><m:mrow><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup></m:mrow></m:math> lan <m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:math> dadi <m:math><m:mrow><m:msup><m:mn>2</m:mn><m:mn>9</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Ing wujud aljabar kaya <m:math><m:mrow><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> wilangan <m:math><m:mrow><m:mn>2</m:mn></m:mrow></m:math> diarani <term id="term-00010">basis</term> lan wilangan <m:math><m:mrow><m:mn>3</m:mn></m:mrow></m:math> diarani eksponen. Eksponen nuduhake pira cacahe faktor basis sing kudu dipingake.</para><media id="fs-id2149605" alt="Gambar nuduhake angka loro nganggo angka telu dadi superskrip ing sisih tengen angka loro. Angka loro diwenehi label “basis” lan angka telu diwenehi label “eksponen”.">
+<image mime-type="image/svg+xml" src="../../media/CNX_BMath_Figure_02_01_003_img_id.svg" />
+</media>
+<equation id="fs-id2669230" class="unnumbered"><label /><m:math><m:mrow><m:mtext>ateges ngepingake telu faktor 2</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id2295676">Kita ngarani <m:math><m:mrow><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup></m:mrow></m:math> ditulis ing notasi eksponen, dene <m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:math> ditulis ing notasi jembar.</para>
+<note id="fs-id1243267">
+<title>Notasi Eksponen</title>
+<para id="fs-id2283832">Kanggo saben wujud aljabar <m:math><m:mrow><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup><m:mo>,</m:mo><m:mi>a</m:mi></m:mrow></m:math> ana dadi faktor cacahe <m:math><m:mrow><m:mi>n</m:mi></m:mrow></m:math> ping yen <m:math><m:mrow><m:mi>n</m:mi></m:mrow></m:math> kuwi wilangan wutuh positif.</para>
+<equation id="fs-id1882026" class="unnumbered"><label /><m:math><m:mrow><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup><m:mtext>ateges ngepingake</m:mtext><m:mspace width="0.2em" /><m:mi>n</m:mi><m:mspace width="0.2em" /><m:mtext>faktor</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi></m:mrow></m:math></equation>
+<media id="fs-id2284773" alt="Ing bagean ndhuwur gambar ana aksara a nganggo aksara n dadi superskrip ing sisih tengene. aksara a diwenehi label “basis” lan aksara n diwenehi label “eksponen”. Ing ngisore, wujud a nganggo n dadi superskrip dipadhakake nganggo n faktor a.">
+<image mime-type="image/svg+xml" src="../../media/CNX_BMath_Figure_02_01_010_img_id.svg" />
+</media>
+<para id="fs-id2786021">Wujud aljabar <m:math><m:mrow><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:math> diwaca dadi <m:math><m:mi>a</m:mi></m:math> pangkat <m:math><m:mrow><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:mrow></m:math>; superskrip “th” nandhani urutan ing basa Inggris, mula ing basa Jawa diwaca “a pangkat n”.</para>
+</note>
+<para id="fs-id1360052">Kanggo eksponen <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> lan <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> kita nganggo jeneng khusus.</para>
+<equation id="fs-id1547556" class="unnumbered"><label /><m:math><m:mtable columnalign="left"><m:mtr><m:mtd><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mspace width="0.2em" /><m:mtext>diwaca dadi</m:mtext><m:mspace width="0.2em" /><m:mtext>"</m:mtext><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>kuadrat"</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd><m:msup><m:mi>a</m:mi><m:mn>3</m:mn></m:msup><m:mspace width="0.2em" /><m:mtext>diwaca dadi</m:mtext><m:mspace width="0.2em" /><m:mtext>"</m:mtext><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>kubik"</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1387277"><link target-id="fs-id1830286" /> ngemot sawetara tuladha wujud aljabar sing ditulis ing notasi eksponen.</para>
+<table id="fs-id1830286" aria-label="Tabel iki dumadi saka limang larik lan loro kolom. Larik kapisan kuwi larik sirah sing menehi label ing saben kolom. Kolom kapisan duwe label “notasi eksponen” lan kolom kapindho “ing tetembungan”. Larik kapindho nuduhake angka pitu nganggo loro dadi superskrip ing kolom kapisan lan frasa “pitu pangkat loro, utawa pitu kuadrat” ing kolom kapindho. Larik sabanjure nuduhake angka lima nganggo telu dadi superskrip ing kolom kapisan lan frasa “lima pangkat telu, utawa kubik saka lima” ing kolom kapindho. Larik sabanjure nuduhake angka sanga nganggo papat dadi superskrip ing kolom kapisan lan frasa “sanga pangkat papat” ing kolom kapindho. Larik pungkasan nuduhake angka rolas nganggo lima dadi superskrip ing kolom kapisan lan frasa “rolas pangkat lima” ing kolom kapindho.">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry align="left">Notasi Eksponen</entry>
+<entry align="center">Nganggo Tembung</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>7</m:mn></m:mrow></m:math> pangkat loro, utawa <m:math><m:mrow><m:mn>7</m:mn></m:mrow></m:math> kuadrat</entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:msup><m:mn>5</m:mn><m:mn>3</m:mn></m:msup></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>5</m:mn></m:mrow></m:math> pangkat telu, utawa kubik saka <m:math><m:mrow><m:mn>5</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:msup><m:mn>9</m:mn><m:mn>4</m:mn></m:msup></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>9</m:mn></m:mrow></m:math> pangkat papat</entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:msup><m:mrow><m:mn>12</m:mn></m:mrow><m:mn>5</m:mn></m:msup></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math> pangkat lima</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<example id="fs-id1971784">
+<exercise id="fs-id1259642"><problem id="fs-id2692026">
+<para id="fs-id1969755">Tulisen saben wujud aljabar ing notasi eksponen:
+<list id="eip-id1168469525719" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>16</m:mn><m:mo>·</m:mo><m:mn>16</m:mn><m:mo>·</m:mo><m:mn>16</m:mn><m:mo>·</m:mo><m:mn>16</m:mn><m:mo>·</m:mo><m:mn>16</m:mn><m:mo>·</m:mo><m:mn>16</m:mn><m:mo>·</m:mo><m:mn>16</m:mn></m:math></item>
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>9</m:mn></m:math></item>
+<item><span class="token">ⓒ</span> <m:math><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi></m:math></item>
+<item><span class="token">ⓓ</span> <m:math><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>a</m:mi></m:math></item></list></para>
+</problem>
+<solution id="fs-id4124564">
+<title>Cara Ngrampungake</title>
+
+<table id="eip-id1168469627334" class="unnumbered unstyled" summary="Tabel iki nyuguhake andharan babagan faktor-faktor sing bola-bali sarta notasi eksponen sing cocog.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> Basis 16 ana dadi faktor cacahe 7 ping.</entry>
+    <entry><m:math><m:msup><m:mn>16</m:mn><m:mn>7</m:mn></m:msup></m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓑ</span> Basis 9 ana dadi faktor cacahe 5 ping.</entry>
+    <entry><m:math><m:msup><m:mn>9</m:mn><m:mn>5</m:mn></m:msup></m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓒ</span> Basis <m:math><m:mi>x</m:mi></m:math> ana dadi faktor cacahe 4 ping.</entry>
+    <entry><m:math><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup></m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓓ</span> Basis <m:math><m:mi>a</m:mi></m:math> ana dadi faktor cacahe 8 ping.</entry>
+    <entry><m:math><m:msup><m:mi>a</m:mi><m:mn>8</m:mn></m:msup></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id2576757" class="try">
+<exercise id="fs-id2268695">
+<problem id="fs-id2214154">
+<para id="fs-id1859717">Tulisen wujud aljabar ing ngisor iki ing notasi eksponen:</para>
+<para id="fs-id1611515"><m:math><m:mrow><m:mn>41</m:mn><m:mo>·</m:mo><m:mn>41</m:mn><m:mo>·</m:mo><m:mn>41</m:mn><m:mo>·</m:mo><m:mn>41</m:mn><m:mo>·</m:mo><m:mn>41</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2276750">
+<para id="fs-id1377278">41<sup>5</sup></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171103024968" class="try">
+<exercise id="fs-id2669743">
+<problem id="fs-id1345426">
+<para id="fs-id1171104403843">Tulisen wujud aljabar ing ngisor iki ing notasi eksponen:</para>
+<para id="fs-id2216220"><m:math><m:mrow><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2782287">
+<para id="fs-id1390717">7<sup>9</sup></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1578033">
+<exercise id="fs-id2785552"><problem id="fs-id1842666">
+<para id="fs-id2270606">Tulisen saben wujud aljabar eksponen ing notasi jembar:
+
+<list id="eip-id1168469513220" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:msup><m:mn>8</m:mn><m:mn>6</m:mn></m:msup><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:msup><m:mi>x</m:mi><m:mn>5</m:mn></m:msup></m:math></item></list></para>
+
+</problem>
+<solution id="fs-id2150233">
+<title>Cara Ngrampungake</title>
+<para id="fs-id3177573"><span class="token">ⓐ</span> Basise kuwi <m:math><m:mrow><m:mn>8</m:mn></m:mrow></m:math> lan eksponene kuwi <m:math><m:mrow><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow></m:math> mula <m:math><m:msup><m:mn>8</m:mn><m:mn>6</m:mn></m:msup></m:math> ateges <m:math><m:mrow><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>8</m:mn></m:mrow></m:math></para><para id="fs-id2845374"><span class="token">ⓑ</span> Basise kuwi <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> lan eksponene kuwi <m:math><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo></m:mrow></m:math> mula <m:math><m:msup><m:mi>x</m:mi><m:mn>5</m:mn></m:msup></m:math> ateges <m:math><m:mrow><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi></m:mrow></m:math></para></solution></exercise></example>
+<note id="fs-id3241221" class="try">
+<exercise id="fs-id2238151"><problem id="fs-id2150329">
+<para id="fs-id1337149">Tulisen saben wujud aljabar eksponen ing notasi jembar:
+<list id="eip-id1168466675879" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:msup><m:mn>4</m:mn><m:mn>8</m:mn></m:msup></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:msup><m:mi>a</m:mi><m:mn>7</m:mn></m:msup></m:math></item></list></para>
+</problem>
+<solution id="fs-id1245764">
+<list id="eip-id1168466512417" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 4 · 4 · 4 · 4 · 4 · 4 · 4 · 4 </item><item><span class="token">ⓑ</span> <emphasis effect="italics">a</emphasis> · <emphasis effect="italics">a</emphasis> · <emphasis effect="italics">a</emphasis> · <emphasis effect="italics">a</emphasis> · <emphasis effect="italics">a</emphasis> · <emphasis effect="italics">a</emphasis> · <emphasis effect="italics">a</emphasis></item></list></solution>
+
+</exercise></note>
+<note id="fs-id1171104426672" class="try">
+<exercise id="fs-id1610560"><problem id="fs-id1215612">
+<para id="fs-id1171103315685">Tulisen saben wujud aljabar eksponen ing notasi jembar:
+<list id="eip-id1168467437310" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:msup><m:mrow><m:mspace width="0.2em" /><m:mn>8</m:mn></m:mrow><m:mn>8</m:mn></m:msup><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:msup><m:mi>b</m:mi><m:mn>6</m:mn></m:msup></m:math></item></list></para>
+</problem>
+<solution id="fs-id1302295">
+<list id="eip-id1168468532157" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 8 · 8 · 8 · 8 · 8 · 8 · 8 · 8 </item><item><span class="token">ⓑ</span> <emphasis effect="italics">b</emphasis> · <emphasis effect="italics">b</emphasis> · <emphasis effect="italics">b</emphasis> · <emphasis effect="italics">b</emphasis> · <emphasis effect="italics">b</emphasis> · <emphasis effect="italics">b</emphasis></item></list></solution>
+</exercise></note>
+<para id="fs-id2661619">Kanggo nggawe luwih prasaja wujud aljabar eksponen tanpa nganggo kalkulator, tulisen wujud aljabar mau ing notasi jembar, banjur pingna faktor-faktore.</para>
+<example id="fs-id1962334"><exercise id="fs-id2661125">
+<problem id="fs-id1384471">
+<para id="fs-id1603288">Gawea luwih prasaja: <m:math><m:mrow><m:msup><m:mn>3</m:mn><m:mn>4</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1762208">
+<title>Cara Ngrampungake</title>
+<table id="eip-id1164752752096" class="unnumbered unstyled" summary="Langkah-langkah kanggo ngetung nilai wujud aljabar eksponen 3^4, nganggo njlentrehake wujud aljabar lan nindakake ping-pingan nganti dipikolehi asil pungkasan."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry align="center"><m:math><m:msup><m:mn>3</m:mn><m:mn>4</m:mn></m:msup></m:math></entry>
+  </row>
+  <row>
+    <entry>Andharna ekspresine.</entry>
+    <entry align="center"><m:math><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>Pingna saka kiwa menyang tengen.</entry>
+    <entry align="center"><m:math><m:mn>9</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry />
+    <entry align="center"><m:math><m:mn>27</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>Pingna.</entry>
+    <entry align="center"><m:math><m:mn>81</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id2139130" class="try">
+<exercise id="fs-id1607499"><problem id="fs-id1578312">
+<para id="fs-id2784369">Gawea luwih prasaja:
+<list id="eip-id1168466339424" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:msup><m:mn>5</m:mn><m:mrow><m:mn>3</m:mn></m:mrow></m:msup><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:msup><m:mn>1</m:mn><m:mn>7</m:mn></m:msup></m:math></item></list></para>
+</problem>
+<solution id="fs-id3294286">
+<list id="eip-id1168466339465" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 125 </item><item><span class="token">ⓑ</span> 1</item></list></solution>
+</exercise></note>
+<note id="fs-id1171102829379" class="try">
+<exercise id="fs-id2218217"><problem id="fs-id1917006">
+<para id="fs-id1171103315179">Gawea luwih prasaja:
+<list id="eip-id1168467189297" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:msup><m:mrow><m:mn>0</m:mn></m:mrow><m:mn>5</m:mn></m:msup></m:math></item></list></para>
+</problem>
+<solution id="fs-id1152934">
+<list id="eip-id1168467343038" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 49 </item><item><span class="token">ⓑ</span> 0</item></list></solution>
+</exercise></note>
+</section><section id="fs-id1193286"><title>Nggawe Wujud Aljabar Luwih Prasaja Nganggo Urutan Ngetung</title><para id="fs-id1357642">Awake dhewe wis ngenalake akeh-akehe tandha lan notasi ing aljabar, nanging saiki perlu njlentrehake <term class="no-emphasis" id="term-00011">urutan ngetung</term>. Tanpa paugeran iki, sawijining wujud bisa ditegesi nganggo cara beda lan ngasilake nilai sing beda.</para>
+<para id="fs-id1171101101203">Dadi tuladha, gatekna wujud aljabar ing ngisor iki:</para>
+<equation id="fs-id1171101101206" class="unnumbered"><label /><m:math><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:math></equation>
+<equation id="fs-id1171103305974" class="unnumbered"><label /><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="center"><m:mtext>Sawetara murid nggawe luwih prasaja dadi 49.</m:mtext></m:mtd><m:mtd><m:mspace width="2em" /></m:mtd><m:mtd /><m:mtd columnalign="center"><m:mtext>Sawetara murid nggawe luwih prasaja dadi 25.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>Amarga</m:mtext><m:mspace width="0.2em" /><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ngasilake 7.</m:mtext></m:mtd><m:mtd><m:mspace width="2em" /></m:mtd><m:mtd columnalign="center"><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>Lan</m:mtext><m:mspace width="0.2em" /><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mspace width="0.2em" /><m:mtext>padha karo 49.</m:mtext></m:mtd><m:mtd><m:mspace width="2em" /></m:mtd><m:mtd columnalign="center"><m:mn>49</m:mn></m:mtd></m:mtr></m:mtable></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtable><m:mtr><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="0.2em" /><m:mtext>Amarga</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mspace width="0.2em" /><m:mtext>padha karo 21.</m:mtext></m:mtd><m:mtd /><m:mtd columnalign="center"><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>21</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="0.2em" /><m:mtext>Lan</m:mtext><m:mspace width="0.2em" /><m:mn>21</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.2em" /><m:mtext>ngasilake 25.</m:mtext></m:mtd><m:mtd /><m:mtd columnalign="center"><m:mn>25</m:mn></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation><para id="fs-id1530117">Bayangna bingunge yen saben soal duwe sawetara wangsulan bener sing beda. Wujud sing padha kudu ngasilake asil sing padha. Mula, para ahli matematika netepake paugeran sing diarani urutan ngetung, yaiku paugeran kanggo ngurutake saben bagean sing digawé luwih prasaja.</para>
+<note id="fs-id1715524"><title>Urutan Ngetung</title><para id="fs-id2750738">Yen nggawe wujud matematika luwih prasaja, tindakna operasi miturut urutan ing ngisor iki:</para>
+<para id="fs-id1834652">1. <emphasis effect="bold">T</emphasis>andha Kurung lan Tandha Panglumpukan Liyane</para>
+<list id="fs-id1171104029952" list-type="bulleted" bullet-style="bullet">
+<item>Gawea luwih prasaja kabeh wujud aljabar ing njero tandha kurung utawa tandha panglumpukan liyane, diwiwiti saka tandha kurung sing paling njero.</item>
+</list>
+<para id="fs-id1570796">2. <emphasis effect="bold">E</emphasis>ksponen</para>
+<list id="fs-id1171104407077" list-type="bulleted" bullet-style="bullet">
+<item>Gawe kabeh wujud aljabar sing nganggo eksponen dadi luwih prasaja.</item>
+</list>
+<para id="fs-id1894922">3. <emphasis effect="bold">P</emphasis>ing-pingan lan <emphasis effect="bold">P</emphasis>aran</para>
+<list id="fs-id1171103140103" list-type="bulleted" bullet-style="bullet">
+<item>Tindakna kabeh ping-pingan lan paran kanthi urut saka kiwa menyang tengen. Operasi loro iki prioritase padha.</item>
+</list>
+<para id="fs-id3402451">4. <emphasis effect="bold">P</emphasis>anambahan lan <emphasis effect="bold">P</emphasis>angurangan</para>
+<list id="fs-id1171104002792" list-type="bulleted" bullet-style="bullet">
+<item>Tindakna kabeh panambahan lan pangurangan kanthi urut saka kiwa menyang tengen. Operasi loro iki prioritase padha.</item>
+</list>
+</note>
+<para id="fs-id1269648">Murid kerep takon, “kepriye cara ngelingi urutane?” elinga papat tahap ing ngisor iki kanthi eksplisit: <emphasis effect="bold">kurung</emphasis>, <emphasis effect="bold">eksponen</emphasis>, <emphasis effect="bold">ping-pingan</emphasis> lan <emphasis effect="bold">paran</emphasis>, banjur <emphasis effect="bold">panambahan</emphasis> lan <emphasis effect="bold">pangurangan</emphasis>. kanggo operasi ing tahap sing padha, garapen saka kiwa menyang tengen.</para>
+<table id="fs-id1786633" class="unnumbered" aria-label="Tabel iki duwe limang larik lan loro kolom. Larik kapisan mbentang rong kolom lan isine irah-irahan ‘Urutan Ngetung’. Papat larik sabanjure nyantumake tahap lan operasine kanthi urut: tahap 1, tandha kurung lan tandha panglumpukan; tahap 2, eksponen; tahap 3, ping-pingan lan paran saka kiwa menyang tengen; sarta tahap 4, panambahan lan pangurangan saka kiwa menyang tengen.">
+<label />
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry align="center" namest="c1" nameend="c2"><emphasis effect="bold">Urutan Ngetung</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left"><emphasis effect="bold">Tahap 1</emphasis></entry>
+<entry align="left"><emphasis effect="bold">T</emphasis>andha kurung lan tandha panglumpukan</entry>
+</row>
+<row valign="top">
+<entry align="left"><emphasis effect="bold">Tahap 2</emphasis></entry>
+<entry align="left"><emphasis effect="bold">E</emphasis>ksponen</entry>
+</row>
+<row valign="top">
+<entry align="left"><emphasis effect="bold">Tahap</emphasis> <emphasis effect="bold">3</emphasis></entry>
+<entry align="left"><emphasis effect="bold">P</emphasis>ing-pingan lan <emphasis effect="bold">P</emphasis>aran, saka kiwa menyang tengen</entry>
+</row>
+<row valign="top">
+<entry align="left"><emphasis effect="bold">Tahap</emphasis> <emphasis effect="bold">4</emphasis></entry>
+<entry align="left"><emphasis effect="bold">P</emphasis>anambahan lan <emphasis effect="bold">P</emphasis>angurangan, saka kiwa menyang tengen</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1785127"><emphasis effect="bold">Ping-pingan</emphasis> lan <emphasis effect="bold">paran</emphasis> ana ing tahap sing padha amarga loro-lorone duwe prioritas sing padha. kita ora tansah nggarap <emphasis effect="bold">ping-pingan</emphasis> sadurunge <emphasis effect="bold">paran</emphasis> utawa kosokbaline. Garapen loro-lorone kanthi urut saka kiwa menyang tengen.</para>
+<para id="fs-id1389767">Mangkono uga, <emphasis effect="bold">panambahan</emphasis> lan <emphasis effect="bold">pangurangan</emphasis> duwe prioritas sing padha. amarga kuwi, garapen <emphasis effect="bold">panambahan</emphasis> lan <emphasis effect="bold">pangurangan</emphasis> kanthi urut saka kiwa menyang tengen.</para>
+
+<note id="eip-313" class="manipulative-math">Kagiyatan Matematika Manipulatif dolanan 24 menehi kowe gladhen nganggo urutan operasi.</note><example id="fs-id1949613"><exercise id="fs-id1238361">
+<problem id="fs-id2588260">
+<para id="fs-id1270576">Gawea luwih prasaja wujud aljabar-wujud aljabar ing ngisor iki:
+
+<list id="eip-id1168467381591" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>·</m:mo><m:mn>7</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id1136960">
+<title>Cara Ngrampungake</title>
+
+<table id="eip-id1164750479370" class="unnumbered unstyled" aria-label="Tabel iki nuduhake wujud aljabar papat ditambah telu ping pitu. Larik sabanjure takon apa ana tandha kurung ing wujud aljabar; wangsulane ora. Larik sawise kuwi takon apa ana eksponen; wangsulane ora. Larik sabanjure takon apa ana ping-pingan utawa paran; wangsulane ya. Pingna luwih dhisik, mula wujud aljabar dadi papat ditambah selikur. Operasi pungkasan yaiku panambahan. Gunggungen papat lan selikur kanggo entuk salawé."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> </entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164750479401" alt="Wujud matematika papat ditambah telu ping pitu, ditulis dadi 4 + 3 · 7."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_011_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>tandha</emphasis> kurung? ora.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>e</emphasis>ksponen? ora.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>p</emphasis>ing-pingan utawa <emphasis>p</emphasis>aran? ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Pingna luwih dhisik.</entry>
+    <entry><media id="eip-id1164754094653" alt="Gambar nuduhake wujud matematika 4 + 3 · 7. Angka 3 lan 7 awarna abang, dene angka 4 lan tandha tambah awarna ireng."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_011_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Gunggungen.</entry>
+    <entry><media id="eip-id1164754094670" alt="Wujud matematika 4 + 21 ditampilake nganggo latar putih."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_011_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164754094685" alt="Angka 25 ditampilake nganggo cetha ing latar putih polos."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_011_img-04.png" /></media></entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table>
+<table id="eip-id1164754514704" class="unnumbered unstyled" aria-label="Tabel iki nuduhake wujud aljabar papat ditambah telu ing njero tandha kurung, banjur dipingake pitu. Apa ana tandha kurung? ya; gawea luwih prasaja isi tandha kurung nganggo nggunggung papat lan telu mula dipikolehi pitu. Wujud aljabar saiki dadi pitu ping pitu. Apa ana eksponen? ora. Apa ana ping-pingan utawa paran? ya; pingna pitu nganggo pitu kanggo entuk patang puluh sanga."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓑ</span> </entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164754514734" alt="Wujud matematika (4 + 3) dipingake 7, nganggo panambahan ana ing njero tandha kurung."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_012_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>tandha</emphasis> kurung? ya.</entry>
+    <entry><media id="eip-id1164754514754" alt="Wujud matematika (4 + 3) · 7, nganggo angka 4 lan 3 sarta tandha tambah awarna abang ing njero tandha kurung abang, diterusake titik ping-pingan lan angka 7 awarna ireng."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_012_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Gawea luwih prasaja bagean ing njero tandha kurung.</entry>
+    <entry><media id="eip-id1164754514771" alt="Gambar nuduhake wujud angka klawu tuwa ing latar putih: angka pitu ing njero tandha kurung langsung diterusake angka pitu liyane, kuwi (7)7."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_012_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>e</emphasis>ksponen? ora.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>p</emphasis>ing-pingan utawa <emphasis>p</emphasis>aran? ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Pingna.</entry>
+    <entry><media id="eip-id1164754514814" alt="Angka 49 ditampilake nganggo cetha ing tengah gambar ing latar putih."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_012_img-04.png" /></media></entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id2399434" class="try">
+<exercise id="fs-id1020408"><problem id="fs-id1496028">
+<para id="fs-id2132962">Gawea luwih prasaja wujud aljabar-wujud aljabar ing ngisor iki:
+<list id="eip-id1168467165875" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>·</m:mo><m:mn>2</m:mn></m:math></item></list></para>
+</problem>
+<solution id="fs-id1732185">
+<list id="eip-id1168468411163" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 2 </item><item><span class="token">ⓑ</span>  14</item></list></solution>
+</exercise></note>
+<note id="fs-id1171104389195" class="try">
+<exercise id="fs-id2478161"><problem id="fs-id1622271">
+<para id="fs-id1171100608975">Gawea luwih prasaja wujud aljabar-wujud aljabar ing ngisor iki:
+<list id="eip-id1168468535071" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>9</m:mn><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>·</m:mo><m:mn>9</m:mn></m:math></item></list></para>
+</problem>
+<solution id="fs-id2265132">
+<list id="eip-id1168467599044" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 35</item><item><span class="token">ⓑ</span> 99</item></list></solution>
+</exercise></note>
+<example id="fs-id1201946"><exercise id="fs-id1956499"><problem id="fs-id3340653">
+<para id="fs-id1714375">Gawea luwih prasaja: <list id="eip-id1168468508209" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>18</m:mn><m:mo>÷</m:mo><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mspace width="0.2em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mn>18</m:mn><m:mo>·</m:mo><m:mn>9</m:mn><m:mo>÷</m:mo><m:mn>2</m:mn></m:math></item></list></para></problem>
+<solution id="fs-id1231784">
+<title>Cara Ngrampungake</title>
+
+
+
+<table id="eip-id1164754213884" class="unnumbered unstyled" aria-label="Tabel iki nuduhake wujud aljabar wolulas dipara sanga banjur dipingake loro. Apa ana tandha kurung? ora. Apa ana eksponen? ora. Apa ana ping-pingan utawa paran? ya, loro-lorone ana. Garapen ping-pingan lan paran saka kiwa menyang tengen, dadi paranen luwih dhisik. wolulas dipara sanga ngasilake loro. Wujud aljabar saiki dadi loro ping loro. Operasi pungkasan kuwi ping-pingan. Loro ping loro ngasilake papat."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> </entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164754213914" alt="Wujud matematika nuduhake angka 18, 9, lan 2 sing dipisahake dening tandha paran lan titik ping-pingan, kuwi 18 ÷ 9 · 2."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_013_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>tandha</emphasis> kurung? ora.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>e</emphasis>ksponen? ora.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>p</emphasis>ing-pingan utawa <emphasis>p</emphasis>aran? ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Pingna lan paranen saka kiwa menyang tengen. paranen.</entry>
+    <entry><media id="eip-id1164752720013" alt="Gambar nuduhake wujud aljabar 2 · 2: angka 2 kapisan awarna abang, diterusake titik ping-pingan lan angka 2 kapindho awarna ireng ing latar putih."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_013_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Pingna.</entry>
+    <entry><media id="eip-id1164752720030" alt="Angka papat."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_013_img-03.png" /></media></entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table>
+<table id="eip-id1164752720001" class="unnumbered unstyled" aria-label="Tabel iki nuduhake wujud aljabar wolulas ping sanga banjur dipara loro. Apa ana tandha kurung? ora. Apa ana eksponen? ora. Apa ana ping-pingan utawa paran? ya, loro-lorone ana. Garapen ping-pingan lan paran saka kiwa menyang tengen, dadi pingna luwih dhisik. Wolulas ping sanga ngasilake satus sewidak loro. Wujud aljabar saiki dadi satus sewidak loro dipara loro. Operasi pungkasan kuwi paran. Satus sewidak loro dipara loro ngasilake wolung puluh siji."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓑ</span> </entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164752720032" alt="Wujud matematika 18 · 9 ÷ 2 ditampilake: wolulas dipingake sanga, banjur asile dipara loro. Gambar iki mung nuduhake wujud kasebut; asil 81 katon ing gambar sabanjure."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_014_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>tandha</emphasis> kurung? ora.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>e</emphasis>ksponen? ora.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Apa ana <emphasis>p</emphasis>ing-pingan utawa <emphasis>p</emphasis>aran? ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Pingna lan paranen saka kiwa menyang tengen.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Pingna.</entry>
+    <entry><media id="eip-id1164752720096" alt="Wujud matematika 162 ÷ 2 ditampilake nganggo angka 162 awarna abang sarta tandha paran lan angka 2 awarna ireng ing latar putih."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_014_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Paranen.</entry>
+    <entry><media id="eip-id1164752720113" alt="Angka 81 ditampilake nganggo tulisan serif ireng biasa ing latar putih polos."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_014_img-03.png" /></media></entry>
+  </row>
+</tbody>
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id2241355" class="try">
+<exercise id="fs-id2877115">
+<problem id="fs-id2626286">
+<para id="fs-id1632084">Gawe luwih prasaja:</para>
+<para id="fs-id2626288"><m:math><m:mrow><m:mn>42</m:mn><m:mo>÷</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2755325">
+<para id="fs-id2755327">18</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171102903594" class="try">
+<exercise id="fs-id2877178">
+<problem id="fs-id2877181">
+<para id="fs-id1171097539626">Gawe luwih prasaja:</para>
+<para id="fs-id2877183"><m:math><m:mrow><m:mn>12</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>÷</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2877202">
+<para id="fs-id2877204">9</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id2877211"><exercise id="fs-id2877213">
+<problem id="fs-id2877215">
+<para id="fs-id2308683">Gawea luwih prasaja: <m:math><m:mrow><m:mn>18</m:mn><m:mo>÷</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id4127406">
+<title>Cara Ngrampungake</title>
+
+
+<table id="eip-id1164754213917" class="unnumbered unstyled" aria-label="Tabel iki nuduhake wujud aljabar wolulas dipara enem ditambah papat ping asil pangurangan lima nganggo loro ing njero tandha kurung. Apa ana tandha kurung? ya; tindakna pangurangan ing njero tandha kurung. lima dikurangi loro dadi telu. Wujud aljabar saiki dadi wolulas dipara enem ditambah papat ping telu ing njero tandha kurung. Apa ana eksponen? ora. Apa ana ping-pingan utawa paran? ya, loro-lorone ana. paranen luwih dhisik amarga ping-pingan lan paran ditindakake saka kiwa menyang tengen. wolulas dipara enem ngasilake telu. Wujud aljabar saiki dadi telu ditambah papat ping telu ing njero tandha kurung. Pingna papat nganggo telu ing njero tandha kurung kanggo entuk rolas. Wujud aljabar dadi telu ditambah rolas. Gunggungen telu lan rolas kanggo entuk limalas."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164754213936" alt="Wujud matematika sing ngemot paran, panambahan, lan ping-pingan nganggo tandha kurung: 18 ÷ 6 + 4(5 − 2)."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_015_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Kurung? Ya, kurangi luwih dhisik.</entry>
+    <entry><media id="eip-id1164752719997" alt="Wujud matematika muni wolulas dipara enem ditambah papat ping telu, kuwi 18 ÷ 6 + 4(3). Angka 3 ing njero tandha kurung dicethakake nganggo warna abang."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_015_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Eksponen? Ora.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Ping-pingan utawa paran? Ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Paranen luwih dhisik amarga ping-pingan lan paran ditindakake saka kiwa menyang tengen.</entry>
+    <entry><media id="fs-id1166567548482" alt="Wujud matematika 3 + 4(3) ditampilake ing latar putih. Angka 3 sadurunge tandha tambah awarna abang, dene bagean wujud aljabar liyane awarna ireng."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_015_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa isih ana ping-pingan utawa paran? ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Pingna.</entry>
+    <entry><media id="eip-id1164752720057" alt="Wujud matematika 3 + 12 ditampilake ing latar putih. Angka 3 lan tandha tambah awarna ireng, dene angka 12 awarna abang."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_015_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa isih ana ping-pingan utawa paran? ora.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Apa ana panambahan utawa pangurangan? Ya.</entry>
+    <entry><media id="eip-id1164752720083" alt="Angka 15 ditampilake nganggo cetha ing tengah latar putih polos."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_015_img-05.png" /></media></entry>
+  </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id2876981" class="try">
+<exercise id="fs-id2876987">
+<problem id="fs-id2876989">
+<para id="fs-id2876984">Gawe luwih prasaja:</para>
+<para id="fs-id2876991"><m:math><m:mrow><m:mn>30</m:mn><m:mo>÷</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2626124">
+<para id="fs-id2626126">16</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171104427870" class="try">
+<exercise id="fs-id2626131">
+<problem id="fs-id2626133">
+<para id="fs-id1171103163957">Gawe luwih prasaja:</para>
+<para id="fs-id2626135"><m:math><m:mrow><m:mn>70</m:mn><m:mo>÷</m:mo><m:mn>10</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2562999">
+<para id="fs-id2563001">23</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id2563008">Yen ana sawetara tandha panglumpukan, gawe kurung sing paling njero luwih prasaja dhisik, banjur terusna metu.</para>
+<example id="fs-id2563011"><exercise id="fs-id2563013">
+<problem id="fs-id2563015">
+<para id="fs-id2563017"><m:math><m:mrow><m:mtext>Gawe luwih prasaja:</m:mtext><m:mspace width="0.2em" /><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2308936">
+<title>Cara Ngrampungake</title>
+<table id="eip-id1164754129434" class="unnumbered unstyled" aria-label="Tabel iki nuduhake wujud aljabar lima ditambah loro pangkat telu, ditambah telu ping isi kurung siku: enem dikurangi telu ping asil papat dikurangi loro ing njero tandha kurung. Apa ana tandha kurung utawa tandha panglumpukan liyane? ya, ana tandha kurung ing njero kurung siku. Wiwitna saka panglumpukan paling njero, kuwi tandha kurung. Ing njerone, kurangi papat nganggo loro kanggo entuk loro. Ing njero kurung siku saiki ana enem dikurangi telu ping loro. Pingna telu nganggo loro amarga ping-pingan ditindakake sadurunge pangurangan. Wujud aljabar ing njero kurung siku dadi enem dikurangi enem. rampungna nggawe luwih prasaja ing njero kurung siku nganggo nyuda enem nganggo enem mula asile nol. Wujud aljabar saiki dadi lima ditambah loro pangkat telu ditambah telu ping nol ing njero kurung siku. Apa ana eksponen? ya; loro pangkat telu kuwi wolu. Apa ana ping-pingan utawa paran? ya; telu ping nol kuwi nol. Operasi sing isih ana kuwi panambahan. Garapen saka kiwa menyang tengen: lima ditambah wolu kuwi telulas, banjur telulas ditambah nol tetep telulas."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164754129452" alt="Wujud matematika sing nggunakake urutan operasi: 5 + 2 pangkat 3 + 3[6 − 3(4 − 2)]."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa ana tandha kurung utawa tandha panglumpukan liyane? ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Gatekna tandha kurung sing ana ing njero kurung siku.</entry>
+    <entry><media id="eip-id1164754129478" alt="Wujud matematika 5 + 2 pangkat 3 + 3[6 − 3(4 − 2)]. pangurangan 4 − 2 ing njero tandha kurung paling njero dicethakake nganggo warna abang."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Kurangi.</entry>
+    <entry><media id="eip-id1164754129495" alt="Wujud matematika 5 + 2 pangkat 3 + 3[6 − 3(2)], nganggo bagean 3(2) dicethakake nganggo warna abang."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Terusna ing njero kurung siku, banjur pingna.</entry>
+    <entry><media id="eip-id1164754129512" alt="Wujud matematika 5 + 2 pangkat 3 + 3[6 − 6]. Angka 6 pungkasan ing njero kurung siku dicethakake nganggo warna abang."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Terusna ing njero kurung siku, banjur kurangana.</entry>
+    <entry><media id="eip-id1164754129529" alt="Wujud matematika 5 + 2 pangkat 3 + 3 dipingake 0, nganggo angka 0 ing njero kurung siku dicethakake nganggo warna abang."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-05.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Wujud aljabar ing njero kurung siku ora perlu digawe luwih prasaja maneh.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Apa ana eksponen? Ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Gawea luwih prasaja wujud mawa pangkat.</entry>
+    <entry><media id="eip-id1164752650667" alt="Wujud matematika 5 + 2 pangkat 3 + 3[0]. Wujud 2 pangkat 3 dicethakake nganggo warna abang."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-06.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa ana ping-pingan utawa paran? Ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Pingna.</entry>
+    <entry><media id="eip-id1164752650693" alt="Wujud matematika 5 + 8 + 3[0], nganggo bagean 3[0] dicethakake nganggo warna abang."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-07.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Apa ana panambahan utawa pangurangan? Ya.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Gunggungen.</entry>
+    <entry><media id="eip-id1164752650718" alt="Wujud matematika 5 + 8 + 0 ditampilake ing latar putih. Angka 5 lan tandha tambah kapisan awarna abang. Angka 8 lan tandha tambah kapindho uga awarna abang, dene angka 0 awarna ireng."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-08.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Gunggungen.</entry>
+    <entry><media id="eip-id1164752650735" alt="Gambar nuduhake wujud matematika 13 + 0 nganggo karakter abang ing latar putih polos."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-09.png" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164752650751" alt="Angka 13 ditampilake nganggo teks ireng ing tengah latar putih polos."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_016_img-10.png" /></media></entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id2308949" class="try">
+<exercise id="fs-id2308956">
+<problem id="fs-id2308958">
+<para id="fs-id2308953">Gawe luwih prasaja:</para>
+<para id="fs-id2308960"><m:math><m:mrow><m:mn>9</m:mn><m:mo>+</m:mo><m:msup><m:mn>5</m:mn><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1956245">
+<para id="fs-id1956247">86</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171104408766" class="try">
+<exercise id="fs-id1956252">
+<problem id="fs-id1956255">
+<para id="fs-id1171101067875">Gawe luwih prasaja:</para>
+<para id="fs-id1956257"><m:math><m:mrow><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1956294">
+<para id="fs-id1956296">1</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1956303"><exercise id="fs-id1956305">
+<problem id="fs-id1956307">
+<para id="fs-id1956309">Gawea luwih prasaja: <m:math><m:mrow><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>3</m:mn><m:mn>4</m:mn></m:msup><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1956342">
+<title>Cara Ngrampungake</title>
+<table id="eip-id1164754324162" class="unnumbered unstyled" aria-label="Tabel iki nuduhake wujud aljabar loro pangkat telu ditambah telu pangkat papat dipara telu dikurangi lima pangkat loro. Apa ana tandha kurung? ora. Apa ana eksponen? ya, ana sawetara. gawea luwih prasaja saben wujud mawa pangkat. Loro pangkat telu kuwi wolu, telu pangkat papat kuwi wolung puluh siji, lan lima pangkat loro kuwi salawé. Wujud aljabar dadi wolu ditambah wolung puluh siji dipara telu dikurangi salawé. Apa ana ping-pingan utawa paran? ya, mung paran. Wolung puluh siji dipara telu ngasilake pitulikur. Wujud aljabar saiki dadi wolu ditambah pitulikur dikurangi salawé. Panambahan lan pangurangan isih ana. Garapen loro-lorone saka kiwa menyang tengen. wolu ditambah pitulikur kuwi telung puluh lima. Wujud aljabar saiki dadi telung puluh lima dikurangi salawé, sing ngasilake sepuluh."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164754324181" alt="Wujud matematika muni 2 pangkat 3 + 3 pangkat 4 ÷ 3 − 5 pangkat 2."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_017_img-01.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Yen sawijining wujud aljabar duwe sawetara wujud mawa pangkat, kabeh bisa digawe luwih prasaja ing langkah sing padha.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>Gawea luwih prasaja wujud mawa pangkat.</entry>
+    <entry><media id="eip-id1164754324206" alt="Wujud matematika sing ngemot pangkat, panambahan, paran, lan pangurangan: 2 pangkat 3 + 3 pangkat 4 ÷ 3 − 5 pangkat 2."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_017_img-02.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Paranen.</entry>
+    <entry><media id="eip-id1164754324223" alt="Wujud matematika 8 + 81 ÷ 3 − 25 ditampilake. Angka 81 lan 3 sarta tandha paran dicethakake nganggo warna abang."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_017_img-03.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Gunggungen.</entry>
+    <entry><media id="eip-id1164754324240" alt="Wujud matematika 8 + 27 − 25 ditampilake nganggo angka 8 lan 27 sarta tandha tambah awarna abang, dene tandha kurang lan angka 25 awarna ireng."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_017_img-04.png" /></media></entry>
+  </row>
+  <row>
+    <entry>Kurangi.</entry>
+    <entry><media id="eip-id1164754324256" alt="Gambar nuduhake angka 35 lan 25 sing dipisahake dening tandha kurang, mbentuk wujud matematika 35 − 25 awarna soklat semu abang ing latar putih."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_017_img-05.png" /></media></entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1164754324272" alt="Angka 10 ditampilake nganggo cetha ing pojok tengen ndhuwur ing latar putih, nganggo aksara kandel awarna peteng."><image mime-type="image/png" src="../../media/CNX_BMath_Figure_02_01_017_img-06.png" /></media></entry>
+  </row>
+
+</tbody>
+
+
+
+</tgroup>
+</table>
+</solution>
+</exercise></example><note id="fs-id1956356" class="try">
+<exercise id="fs-id1956362">
+<problem id="fs-id1956364">
+<para id="fs-id1956359">Gawe luwih prasaja:</para>
+<para id="fs-id1956367"><m:math><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>2</m:mn><m:mn>4</m:mn></m:msup><m:mo>÷</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:msup><m:mn>4</m:mn><m:mn>3</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1956396">
+<para id="fs-id1956399">81</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1171104425591" class="try">
+<exercise id="fs-id1956404">
+<problem id="fs-id1956406">
+<para id="fs-id1171104064837">Gawe luwih prasaja:</para>
+<para id="fs-id1956408"><m:math><m:mrow><m:msup><m:mn>6</m:mn><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mn>5</m:mn><m:mn>3</m:mn></m:msup><m:mo>÷</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:msup><m:mn>8</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2327292">
+<para id="fs-id2327294">75</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id2327301" class="media-2"><title>BUKAK SUMBER DARING TAMBAHAN</title><list id="fs-id2327307" display="block">
+<item><link url="https://openstaxcollege.org/l/24orderoperate">Urutan Ngetung</link></item>
+<item><link url="https://openstaxcollege.org/l/24orderbasic">Urutan Ngetung – Dhasar-dhasare</link></item>
+<item><link url="https://openstaxcollege.org/l/24Evalexpress">Tuladha: ngetung nilai wujud aljabar nganggo Urutan operasi</link></item>
+<item><link url="https://openstaxcollege.org/l/24evalexpress3">Tuladha 3: ngetung nilai wujud aljabar nganggo Urutan operasi</link></item>
+</list>
+</note></section><section id="fs-id2327335" class="key-concepts"><title>Pokok Wigati</title><table id="eip-id1168265095050" class="unnumbered" aria-label="Tabel iki duwe limang larik lan papat kolom. Larik kapisan kuwi larik sirah. Kolom kapisan duwe judhul ‘operasi’, kolom kapindho ‘Notasi’, kolom katelu ‘diwaca’, lan kolom pungkasan ‘asile kuwi …’. Ing kolom ‘operasi’ ana panambahan, ping-pingan, pangurangan, lan paran. Ing kolom ‘Notasi’ ana wujud aljabar. Larik panambahan nuduhake a ditambah b. Larik ping-pingan nuduhake papat wujud: a titik b, a ing tandha kurung diterusake b ing tandha kurung, a ing tandha kurung diterusake b, sarta a diterusake b ing tandha kurung. Larik pangurangan nuduhake a dikurangi b. Larik paran nuduhake papat wujud: a dipara b, a garis miring b, pecahan nganggo a dadi wilangan ndhuwur lan b dadi wilangan ngisor, sarta paran susun nganggo b dadi wilangan kanggo mara lan a dadi wilangan sing dipara."><label />
+<tgroup cols="4"><colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<colspec colnum="4" colname="c4" />
+<thead>
+<row valign="top">
+<entry align="left"><emphasis effect="bold">Operasi</emphasis></entry>
+<entry align="left"><emphasis effect="bold">Notasi</emphasis></entry>
+<entry align="left"><emphasis effect="bold">Diwaca:</emphasis></entry>
+<entry align="left"><emphasis effect="bold">Asile kuwi …</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left">Panambahan</entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>ditambah</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left">gunggung <m:math><m:mi>a</m:mi></m:math> lan <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Ping-pingan</entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>dipingake</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left">asil ping-pingan <m:math><m:mi>a</m:mi></m:math> lan <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Pangurangan</entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mspace width="0.2em" /><m:mtext>dikurangi</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left">selisih <m:math><m:mi>a</m:mi></m:math> lan <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Paran</entry>
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>÷</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo stretchy="false">/</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mo>,</m:mo><m:mi>b</m:mi><m:menclose notation="longdiv"><m:mi>a</m:mi></m:menclose></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> dipara <m:math><m:mi>b</m:mi></m:math></entry>
+<entry align="left">asil paran <m:math><m:mi>a</m:mi></m:math> lan <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+</tbody>
+
+</tgroup>
+</table>
+
+<list id="eip-740"><item><emphasis>Tandha Padha Karo</emphasis>
+<list id="eip-id1168262501679"><item><m:math><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:math> diwaca <m:math><m:mi>a</m:mi></m:math> padha karo <m:math><m:mi>b</m:mi></m:math></item>
+<item>Tandha <m:math><m:mo>=</m:mo></m:math> diarani tandha padha karo.</item></list></item>
+
+
+<item><emphasis>Pertidaksamaan</emphasis>
+<list id="eip-id1168263909662"><item><m:math><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi></m:math> diwaca <m:math><m:mi>a</m:mi></m:math> luwih cilik tinimbang <m:math><m:mi>b</m:mi></m:math></item>
+<item><m:math><m:mi>a</m:mi></m:math> ana ing sisih kiwa <m:math><m:mi>b</m:mi></m:math> ing garis wilangan
+<newline /><media id="eip-id1168264918525" alt="Garis wilangan nganggo loro titik, a lan b, sing ditandhani dening garis tegak. titik a ana ing sisih kiwa titik b, sing nuduhake yen nilai a luwih cilik tinimbang b."><image mime-type="image/jpg" src="../../media/CNX_BMath_Figure_02_01_018_img.jpg" /></media></item>
+<item><m:math><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mi>b</m:mi></m:math> diwaca <m:math><m:mi>a</m:mi></m:math> luwih gedhé tinimbang <m:math><m:mi>b</m:mi></m:math></item>
+<item><m:math><m:mi>a</m:mi></m:math> ana ing sisih tengen <m:math><m:mi>b</m:mi></m:math> ing garis wilangan
+<newline /><media id="eip-id1168264785219" alt="Garis wilangan nuduhake titik b lan a sing ditandhani dening garis tegak. titik b ana ing sisih kiwa titik a, sing nuduhake yen b luwih cilik tinimbang a."><image mime-type="image/jpg" src="../../media/CNX_BMath_Figure_02_01_019_img.jpg" /></media></item>
+</list></item></list><table id="eip-455" aria-label="Tabel iki duwe pitu larik lan loro kolom. Larik kapisan kuwi larik sirah. Kolom kapisan duwe judhul ‘notasi aljabar’ lan kolom kapindho ‘diwaca’. Kolom ‘notasi aljabar’ ngemot wujud aljabar: a padha karo b; a ora padha karo b; a luwih cilik tinimbang b; a luwih gedhé tinimbang b; a luwih cilik utawa padha karo b; sarta a luwih gedhé tinimbang utawa padha karo b. Kolom ‘diwaca’ ngemot cara maca saben wujud aljabar mau ing tetembungan.">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry align="center">Notasi Aljabar</entry>
+<entry align="center">Diwaca</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> padha karo <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>≠</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> ora padha karo <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> luwih cilik tinimbang <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> luwih gedhé tinimbang <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> luwih cilik utawa padha karo <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mi>a</m:mi><m:mo>≥</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mi>a</m:mi></m:math> luwih gedhé tinimbang utawa padha karo <m:math><m:mi>b</m:mi></m:math></entry>
+</row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><list id="eip-910"><item><emphasis>Notasi Eksponen</emphasis>
+<list id="eip-id1168266330675"><item>Kanggo saben wujud aljabar <m:math><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup></m:math>, basise dienggo dadi faktor cacahe <m:math><m:mi>n</m:mi></m:math> ping, yen <m:math><m:mi>n</m:mi></m:math> kuwi wilangan wutuh positif.</item>
+<item><m:math><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup></m:math> ateges ngepingake <m:math><m:mi>n</m:mi></m:math> faktor <m:math><m:mi>a</m:mi></m:math><newline /><media id="eip-id1168266330736" alt="Gambar njlentrehake bagean-bagean wujud aljabar a pangkat n: a kuwi basis lan n kuwi eksponen. nilai a pangkat n dadi asil ping-pingan pas n faktor sing saben-saben duwe nilai a."><image mime-type="image/svg+xml" src="../../media/CNX_BMath_Figure_02_01_020_img_id.svg" /></media></item>
+<item>Wujud aljabar <m:math><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup></m:math> diwaca “<m:math><m:mi>a</m:mi></m:math> pangkat <m:math><m:mi>n</m:mi><m:mtext>”</m:mtext></m:math>.</item></list></item></list><para id="eip-908"><emphasis>Urutan Ngetung</emphasis> Nalika nggawe luwih prasaja wujud matematika, tindakna operasi miturut urutan ing ngisor iki:
+<list id="eip-id1168264820124" list-type="bulleted" bullet-style="bullet"><item>Tandha kurung lan tandha panglumpukan liyane: gawea luwih prasaja kabeh wujud aljabar ing njero tandha kurung utawa tandha panglumpukan liyane, diwiwiti saka tandha kurung sing paling njero.</item>
+<item>Eksponen: gawea luwih prasaja kabeh wujud aljabar sing ngemot eksponen.</item>
+<item>Ping-pingan lan paran: tindakna kabeh ping-pingan lan paran kanthi urut saka kiwa menyang tengen. Operasi loro iki duwe prioritas sing padha.</item>
+<item>Panambahan lan pangurangan: tindakna kabeh panambahan lan pangurangan kanthi urut saka kiwa menyang tengen. Operasi loro iki duwe prioritas sing padha.
+</item>
+</list></para></section><section id="fs-id2327376" class="section-exercises">
+<section id="fs-id2327380" class="practice-perfect">
+<title>Gladhen Supaya Luwih Trampil</title>
+<para id="fs-id2327385"><emphasis effect="bold">Nganggo Variabel lan Tandha Aljabar</emphasis> </para><para id="eip-696">Ing gladhen ing ngisor iki, owahana notasi aljabar dadi tetembungan.</para><exercise id="fs-id2327391">
+<problem id="fs-id2327393">
+<para id="fs-id2327396"><m:math><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2327407">
+<para id="fs-id2327409">16 dikurangi 9; selisih nembelas lan sanga</para>
+</solution>
+</exercise>
+<exercise id="fs-id2327415">
+<problem id="fs-id2327417">
+<para id="fs-id2327419"><m:math><m:mrow><m:mn>25</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2327432">
+<problem id="fs-id2327434">
+<para id="fs-id2327436"><m:math><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2327448">
+<para id="fs-id2327450">5 dipingake 6; asil ping-pingan lima lan enem</para>
+</solution>
+</exercise>
+<exercise id="fs-id2327455">
+<problem id="fs-id2327457">
+<para id="fs-id2327460"><m:math><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2327472">
+<problem id="fs-id2327474">
+<para id="fs-id2327477"><m:math><m:mrow><m:mn>28</m:mn><m:mo>÷</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2327488">
+<para id="fs-id2327490">28 dipara 4; asil paran wolulikur lan papat</para>
+</solution>
+</exercise>
+<exercise id="fs-id2327496">
+<problem id="fs-id2327498">
+<para id="fs-id2327500"><m:math><m:mrow><m:mn>45</m:mn><m:mo>÷</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2327513">
+<problem id="fs-id2327515">
+<para id="fs-id2327517"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2327529">
+<para id="fs-id2327531"><emphasis effect="italics">x</emphasis> ditambah 8; gunggung <emphasis effect="italics">x</emphasis> lan wolu</para>
+</solution>
+</exercise>
+<exercise id="fs-id3447881">
+<problem id="fs-id3447883">
+<para id="fs-id3447885"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>11</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id3447898">
+<problem id="fs-id3447900">
+<para id="fs-id3447902"><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3447925">
+<para id="fs-id3447927">2 dipingake 7; asil ping-pingan loro lan pitu</para>
+</solution>
+</exercise>
+<exercise id="fs-id3447932">
+<problem id="fs-id3447934">
+<para id="fs-id3447936"><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id3447960">
+<problem id="fs-id3447962">
+<para id="fs-id3447964"><m:math><m:mrow><m:mn>14</m:mn><m:mo>&lt;</m:mo><m:mn>21</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3447976">
+<para id="fs-id3447978">patbelas luwih cilik tinimbang selikur</para>
+</solution>
+</exercise>
+<exercise id="fs-id3447983">
+<problem id="fs-id3447985">
+<para id="fs-id3447988"><m:math><m:mrow><m:mn>17</m:mn><m:mo>&lt;</m:mo><m:mn>35</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id3448000">
+<problem id="fs-id3448002">
+<para id="fs-id3448005"><m:math><m:mrow><m:mn>36</m:mn><m:mo>≥</m:mo><m:mn>19</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3448016">
+<para id="fs-id3448018">telung puluh enem luwih gedhé tinimbang utawa padha karo sangalas</para>
+</solution>
+</exercise>
+<exercise id="fs-id3448024">
+<problem id="fs-id3448026">
+<para id="fs-id3448028"><m:math><m:mrow><m:mn>42</m:mn><m:mo>≥</m:mo><m:mn>27</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id3448041">
+<problem id="fs-id3448043">
+<para id="fs-id3448045"><m:math><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>24</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3448059">
+<para id="fs-id3448061">3 dipingake n padha karo 24; asil ping-pingan telu lan n padha karo patlikur</para>
+</solution>
+</exercise>
+<exercise id="fs-id3448066">
+<problem id="fs-id3448069">
+<para id="fs-id3448071"><m:math><m:mrow><m:mn>6</m:mn><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>36</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id3448086">
+<problem id="fs-id3448088">
+<para id="fs-id3448090"><m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>&gt;</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id3448106">
+<para id="fs-id3448108"><emphasis effect="italics">y</emphasis> dikurangi 1 luwih gedhé saka 6; selisih <emphasis effect="italics">y</emphasis> lan siji luwih gedhé saka enem</para>
+</solution>
+</exercise>
+<exercise id="fs-id3448121">
+<problem id="fs-id3448123">
+<para id="fs-id3448125"><m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>&gt;</m:mo><m:mn>8</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id3448142">
+<problem id="fs-id3448144">
+<para id="fs-id3448146"><m:math><m:mrow><m:mn>2</m:mn><m:mo>≤</m:mo><m:mn>18</m:mn><m:mo>÷</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1891767">
+<para id="fs-id1891769">2 luwih cilik utawa padha karo 18 dipara 6; 2 luwih cilik utawa padha karo asil paran wolulas lan enem</para>
+</solution>
+</exercise>
+<exercise id="fs-id1891775">
+<problem id="fs-id1891777">
+<para id="fs-id1891779"><m:math><m:mrow><m:mn>3</m:mn><m:mo>≤</m:mo><m:mn>20</m:mn><m:mo>÷</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1891796">
+<problem id="fs-id1891798">
+<para id="fs-id1891800"><m:math><m:mrow><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1891816">
+<para id="fs-id1891818"><emphasis effect="italics">a</emphasis> ora padha karo 7 dipingake 4; <emphasis effect="italics">a</emphasis> ora padha karo asil ping-pingan pitu lan papat</para>
+</solution>
+</exercise>
+<exercise id="fs-id1891831">
+<problem id="fs-id1891833">
+<para id="fs-id1891835"><m:math><m:mrow><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>12</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1891852"><emphasis effect="bold">Ngenali Wujud Aljabar lan Persamaan</emphasis> </para><para id="eip-578">Ing gladhen ing ngisor iki, temtokna apa saben-saben dadi wujud aljabar utawa persamaan.</para><exercise id="fs-id1891859">
+<problem id="fs-id1891861">
+<para id="fs-id1891863"><m:math><m:mrow><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>54</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1891879">
+<para id="fs-id1891881">persamaan</para>
+</solution>
+</exercise>
+<exercise id="fs-id1891887">
+<problem id="fs-id1891889">
+<para id="fs-id1891891"><m:math><m:mrow><m:mn>7</m:mn><m:mo>·</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>63</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1891908">
+<problem id="fs-id1891910">
+<para id="fs-id1891912"><m:math><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1891928">
+<para id="fs-id1891930">wujud aljabar</para>
+</solution>
+</exercise>
+<exercise id="fs-id1891936">
+<problem id="fs-id1891938">
+<para id="fs-id1891940"><m:math><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1891957">
+<problem id="fs-id1891959">
+<para id="fs-id1891961"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1891973">
+<para id="fs-id1891975">wujud aljabar</para>
+</solution>
+</exercise>
+<exercise id="fs-id1891980">
+<problem id="fs-id1891983">
+<para id="fs-id1891985"><m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1891998">
+<problem id="fs-id1892000">
+<para id="fs-id1892002"><m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1892018">
+<para id="fs-id1892020">persamaan</para>
+</solution>
+</exercise>
+<exercise id="fs-id1892025">
+<problem id="fs-id1892027">
+<para id="fs-id1892030"><m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>32</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1892047"><emphasis effect="bold">Nggawe Wujud Aljabar Mawa Eksponen Luwih Prasaja</emphasis> </para><para id="eip-595">Ing gladhen ing ngisor iki, tulisen ing notasi eksponen.</para><exercise id="fs-id1892053">
+<problem id="fs-id1892055">
+<para id="fs-id4333381"><m:math><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id4333414">
+<para id="fs-id4333416">3<sup>7</sup></para>
+</solution>
+</exercise>
+<exercise id="fs-id4333428">
+<problem id="fs-id4333430">
+<para id="fs-id4333432"><m:math><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id4333462">
+<problem id="fs-id4333464">
+<para id="fs-id4333466"><m:math><m:mrow><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id4333491">
+<para id="fs-id4333493"><emphasis effect="italics">x</emphasis><sup>5</sup></para>
+</solution>
+</exercise>
+<exercise id="fs-id4333505">
+<problem id="fs-id4333507">
+<para id="fs-id4333509"><m:math><m:mrow><m:mi>y</m:mi><m:mo>·</m:mo><m:mi>y</m:mi><m:mo>·</m:mo><m:mi>y</m:mi><m:mo>·</m:mo><m:mi>y</m:mi><m:mo>·</m:mo><m:mi>y</m:mi><m:mo>·</m:mo><m:mi>y</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id4333539">Ing gladhen ing ngisor iki, tulisen ing wujud jembar.</para>
+<exercise id="fs-id4333542">
+<problem id="fs-id4333544">
+<para id="fs-id4333546"><m:math><m:mrow><m:msup><m:mn>5</m:mn><m:mn>3</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id4333557">
+<para id="fs-id4333559"><m:math><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id4333565">
+<problem id="fs-id4333567">
+<para id="fs-id4333569"><m:math><m:mrow><m:msup><m:mn>8</m:mn><m:mn>3</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id4333581">
+<problem id="fs-id4333583">
+<para id="fs-id4333585"><m:math><m:mrow><m:msup><m:mn>2</m:mn><m:mn>8</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id4333596">
+<para id="fs-id4333598"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id4333603">
+<problem id="fs-id4333605">
+<para id="fs-id4333607"><m:math><m:mrow><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>5</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id4333620"><emphasis effect="bold">Nggawe Wujud Aljabar Luwih Prasaja Nganggo Urutan Ngetung</emphasis> </para><para id="eip-246">Ing gladhen iki, prasajakna.</para><exercise id="fs-id4333626"><problem id="fs-id4333629">
+<list id="eip-id1168469840980" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mtext>(3+8)</m:mtext><m:mo>·</m:mo><m:mn>5</m:mn></m:math></item></list></problem>
+<solution id="fs-id4333668">
+<list id="eip-id1168469841032" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 43 </item><item><span class="token">ⓑ</span> 55</item></list></solution>
+</exercise><exercise id="fs-id4333676"><problem id="fs-id4333678">
+<list id="eip-id1168468542106" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math><m:mspace width="0.2em" /><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mspace width="0.4em" /></m:math></item>
+
+<item><span class="token">ⓑ</span> <m:math><m:mspace width="0.2em" /><m:mtext>(2+6)</m:mtext><m:mo>·</m:mo><m:mn>3</m:mn></m:math></item></list></problem>
+</exercise><exercise id="fs-id2382261">
+<problem id="fs-id2382263">
+<para id="fs-id2382265"><m:math><m:mrow><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2382295">
+<para id="fs-id2382297">5</para>
+</solution>
+</exercise>
+<exercise id="fs-id2382303">
+<problem id="fs-id2382305">
+<para id="fs-id2382307"><m:math><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>18</m:mn><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2382338">
+<problem id="fs-id2382340">
+<para id="fs-id2382342"><m:math><m:mrow><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2382362">
+<para id="fs-id2382365">34</para>
+</solution>
+</exercise>
+<exercise id="fs-id2382370">
+<problem id="fs-id2382372">
+<para id="fs-id2382374"><m:math><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2382396">
+<problem id="fs-id2382398">
+<para id="fs-id2382400"><m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2382424">
+<para id="fs-id2382426">58</para>
+</solution>
+</exercise>
+<exercise id="fs-id2382432">
+<problem id="fs-id2382434">
+<para id="fs-id2382436"><m:math><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2382462">
+<problem id="fs-id2382464">
+<para id="fs-id2382466"><m:math><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>12</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2382482">
+<para id="fs-id2382484">6</para>
+</solution>
+</exercise>
+<exercise id="fs-id2382489">
+<problem id="fs-id2382492">
+<para id="fs-id2382494"><m:math><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>36</m:mn><m:mo stretchy="false">/</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2382511">
+<problem id="fs-id2382513">
+<para id="fs-id2382515"><m:math><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2382535">
+<para id="fs-id2382537">13</para>
+</solution>
+</exercise>
+<exercise id="fs-id2382543">
+<problem id="fs-id2382545">
+<para id="fs-id2698088"><m:math><m:mrow><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>12</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2698109">
+<problem id="fs-id2698111">
+<para id="fs-id2698113"><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2698146">
+<para id="fs-id2698148">4</para>
+</solution>
+</exercise>
+<exercise id="fs-id2698154">
+<problem id="fs-id2698156">
+<para id="fs-id2698158"><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2698192">
+<problem id="fs-id2698194">
+<para id="fs-id2698196"><m:math><m:mrow><m:mn>20</m:mn><m:mo>÷</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2698217">
+<para id="fs-id2698219">35</para>
+</solution>
+</exercise>
+<exercise id="fs-id2698224">
+<problem id="fs-id2698226">
+<para id="fs-id2698228"><m:math><m:mrow><m:mn>33</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2698250">
+<problem id="fs-id2698252">
+<para id="fs-id2698254"><m:math><m:mrow><m:mn>20</m:mn><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2698281">
+<para id="fs-id2698283">10</para>
+</solution>
+</exercise>
+<exercise id="fs-id2698288">
+<problem id="fs-id2698290">
+<para id="fs-id2698292"><m:math><m:mrow><m:mn>33</m:mn><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>·</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2698320">
+<problem id="fs-id2698322">
+<para id="fs-id2698324"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2698343">
+<para id="fs-id2698345">41</para>
+</solution>
+</exercise>
+<exercise id="fs-id2698350">
+<problem id="fs-id2698352">
+<para id="fs-id2698354"><m:math><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2698374">
+<problem id="fs-id2698376">
+<para id="fs-id2698378"><m:math><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2698400">
+<para id="fs-id2698402">81</para>
+</solution>
+</exercise>
+<exercise id="fs-id2756845">
+<problem id="fs-id2756847">
+<para id="fs-id2756849"><m:math><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2756873">
+<problem id="fs-id2756875">
+<para id="fs-id2756877"><m:math><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>·</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:msup><m:mn>4</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2756909">
+<para id="fs-id2756911">149</para>
+</solution>
+</exercise>
+<exercise id="fs-id2756917">
+<problem id="fs-id2756919">
+<para id="fs-id2756921"><m:math><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id2756954">
+<problem id="fs-id2756956">
+<para id="fs-id2756958"><m:math><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id2756991">
+<para id="fs-id2756993">50</para>
+</solution>
+</exercise>
+<exercise id="fs-id2756999">
+<problem id="fs-id2757001">
+<para id="fs-id2757003"><m:math><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">[</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id2757038" class="everyday">
+<title>Matematika Saben Dina</title>
+<exercise id="fs-id2757044"><problem id="fs-id2757046">
+<para id="fs-id2757048"><emphasis effect="bold">Bal Basket</emphasis> Ing babak playoff NBA 2014, San Antonio Spurs ngalahake Miami Heat. tabel ing ngisore nuduhake dhuwur para pemain utama saben tim. gunakna tabel iki kanggo ngisi tandha sing cocog <m:math><m:mrow><m:mtext>(=</m:mtext><m:mo>,</m:mo><m:mtext>&lt;</m:mtext><m:mo>,</m:mo><m:mtext>&gt;)</m:mtext><m:mo>.</m:mo></m:mrow></m:math></para>
+
+<table id="fs-id2757058" class="unnumbered" aria-label="Tabel iki ana nem larik lan limang kolom. Larik kapisan sirah tabel sing menehi label saben kolom. Kolom kapisan ‘Spurs’, kapindho ‘Dhuwur’, katelu kosong kanggo misahake kolom ‘Heat’, lan kolom pungkasan uga ‘Dhuwur’. Ing ngisor ‘Spurs’ ana Tim Duncan, Boris Diaw, Kawhi Leonard, Tony Parker, lan Danny Green, dhuwure wolung puluh telu, wolung puluh, pitung puluh sanga, pitung puluh papat, lan pitung puluh wolu inch. Ing ngisor ‘Heat’ ana Rashard Lewis, LeBron James, Chris Bosh, Dwyane Wade, lan Ray Allen, dhuwure wolung puluh loro, wolung puluh, wolung puluh telu, pitung puluh enem, lan pitung puluh pitu inch.">
+<label />
+<tgroup cols="5">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<colspec colnum="3" colname="c3" />
+<colspec colnum="4" colname="c4" />
+<colspec colnum="5" colname="c5" />
+<thead>
+<row valign="top">
+<entry align="center"><emphasis effect="bold">Spurs</emphasis></entry>
+<entry align="center"><emphasis effect="bold">Dhuwur</emphasis></entry>
+<entry />
+<entry align="center"><emphasis effect="bold">Heat</emphasis></entry>
+<entry align="center"><emphasis effect="bold">Dhuwur</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left">Tim Duncan</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>83″</m:mtext></m:mrow></m:math></entry>
+<entry morerows="4" />
+<entry align="left">Rashard Lewis</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>82″</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Boris Diaw</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>80″</m:mtext></m:mrow></m:math></entry>
+<entry align="left">LeBron James</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>80″</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Kawhi Leonard</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>79″</m:mtext></m:mrow></m:math></entry>
+<entry align="left">Chris Bosh</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>83″</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Tony Parker</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>74″</m:mtext></m:mrow></m:math></entry>
+<entry align="left">Dwyane Wade</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>76″</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Danny Green</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>78″</m:mtext></m:mrow></m:math></entry>
+<entry align="left">Ray Allen</entry>
+<entry align="center"><m:math><m:mrow><m:mtext>77″</m:mtext></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list id="eip-id1168466360092" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> Dhuwur badan Tim Duncan____dhuwur badan Rashard Lewis</item>
+<item><span class="token">ⓑ</span> Dhuwur badan Boris Diaw____dhuwur badan LeBron James</item>
+<item><span class="token">ⓒ</span> Dhuwur badan Kawhi Leonard____dhuwur badan Chris Bosh</item>
+<item><span class="token">ⓓ</span> Dhuwur badan Tony Parker____dhuwur badan Dwyane Wade</item>
+<item><span class="token">ⓔ</span> Dhuwur badan Danny Green____dhuwur badan Ray Allen
+</item></list>
+</problem></exercise><exercise id="fs-id2935749"><problem id="fs-id2935751">
+<para id="fs-id2935753"><emphasis effect="bold">Dhuwur</emphasis> Ing Colorado ana luwih saka <m:math><m:mrow><m:mn>50</m:mn></m:mrow></m:math> gunung nganggo dhuwur luwih saka <m:math><m:mrow><m:mn>14,000</m:mn><m:mspace width="0.2em" /><m:mtext>foot.</m:mtext></m:mrow></m:math> Tabel iki nuduhake sepuluh gunung paling dhuwur. gunakna tabel iki kanggo ngisi tandha pertidaksamaan sing cocog.
+<table id="fs-id2935762" class="unnumbered" aria-label="Tabel iki ana sewelas larik lan rong kolom. Larik kapisan sirah tabel kanthi label ‘Gunung’ lan ‘Dhuwur’. Jeneng gununge Mt. Elbert, Mt. Massive, Mt. Harvard, Blanca Peak, La Plata Peak, Uncompahgre Peak, Crestone Peak, Mt. Lincoln, Grays Peak, lan Mt. Antero. Dhuwure 14,433, 14,421, 14,420, 14,345, 14,336, 14,309, 14,294, 14,286, 14,270, lan 14,269 foot.">
+<label />
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<thead>
+<row valign="top">
+<entry align="left">Gunung</entry>
+<entry align="left">Dhuwur</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left">Mt. Elbert</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,433′</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Mt. Massive</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,421′</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Mt. Harvard</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,420′</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Blanca Peak</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,345′</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">La Plata Peak</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,336′</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Uncompahgre Peak</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,309′</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Crestone Peak</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,294′</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Mt. Lincoln</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,286′</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Grays Peak</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,270′</m:mtext></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Mt. Antero</entry>
+<entry align="left"><m:math><m:mrow><m:mtext>14,269′</m:mtext></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list id="eip-id1168468729595" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> Dhuwur La Plata Peak____dhuwur Mt. Antero</item>
+<item><span class="token">ⓑ</span> Dhuwur Blanca Peak____dhuwur Mt. Elbert</item>
+<item><span class="token">ⓒ</span> Dhuwur Gray’s Peak____dhuwur Mt. Lincoln</item>
+<item><span class="token">ⓓ</span> Dhuwur Mt. Massive____dhuwur Crestone Peak</item>
+<item><span class="token">ⓔ</span> Dhuwur Mt. Harvard____dhuwur Uncompahgre Peak</item></list></para>
+</problem>
+</exercise></section>
+<section id="fs-id2645656" class="writing">
+<title>Gladhen Nulis</title>
+<exercise id="fs-id2645662">
+<problem id="fs-id2645664">
+<para id="fs-id2645666">Jlentrehna bedane antarane wujud aljabar lan persamaan.</para>
+</problem>
+</exercise>
+<exercise id="fs-id2645671">
+<problem id="fs-id2645674">
+<para id="fs-id2645676">Apa sebabe urutan operasi wigati dienggo kanggo nggawe luwih prasaja sawijining wujud aljabar?</para>
+</problem>
+</exercise></section><section id="eip-836" class="self-check"><title>Mriksa Awake Dhewe</title><para id="eip-id1168469863486"><span class="token">ⓐ</span> Sawise ngrampungake gladhen, gunakna dhaptar priksa iki kanggo mbiji kawasisan kowe marang ancas bagean iki.
+</para>
+
+<figure id="eip-id1164269481310" class="unnumbered"><label /><media id="eip-id1164269481313" alt="Dhaptar kanggo mriksa awake dhewe kanthi telung judhul wangsulan sing katon ing gambar: ‘Kanthi yakin’, ‘Nganggo pitulungan sithik’, lan ‘Ora—aku ora ngerti’; sarta patang larik ancas: nganggo variabel lan tandha aljabar; ngenali wujud aljabar lan persamaan; nggawe wujud mawa eksponen luwih prasaja; lan nggawe wujud luwih prasaja nganggo urutan ngetung."><image mime-type="image/svg+xml" src="../../media/CNX_BMath_Figure_AppB_007_id.svg" /></media></figure><para id="eip-id1168466075811"><span class="token">ⓑ</span> Yen akèh-akèhé tandha centhang kowe ana ing pilihan:
+</para>
+
+
+<para id="eip-id1168469523729">…kanthi yakin. Sugeng! Kowe wis nggayuh ancas bagean iki. Renungna katrampilan sinau sing kokgunakake supaya bisa terus dienggo. Apa sing koktindakake nganti yakin marang kabisanmu? Jlentrehna kanthi rinci.</para>
+
+<para id="eip-id1168469523738">…kanthi pitulungan sithik. Bab iki kudu enggal ditanggulangi amarga topik sing durung kokkuwasani bisa dadi bolongan ing dalan menyang kasil. Ing matematika, saben topik dibangun adhedhasar materi sadurunge. Sadurunge nerusake, pesthekna dhasarmu kuwat. Sapa sing bisa kokjaluki pitulungan? Kanca sakelas lan pengajar bisa mbantu. Apa ing kampus ana panggonan tutor matematika? Apa katrampilan sinaumu bisa kokapiki?</para>
+
+<para id="eip-id1168469523748">…ora—aku ora ngerti! Iki tandha pepeling sing ora kena koklirwakake. Kowe kudu enggal golek pitulungan supaya ora kewalahan. Temonana pengajar sacepet-cepet lan rembugen kahananmu. Bebarengan, kowe lan pengajar bisa nyusun rencana kanggo entuk pitulungan sing kokbutuhake.</para>
+</section></section>
+</content>
+<glossary>
+<definition id="fs-id2645686">
+<term>wujud aljabar</term>
+<meaning id="fs-id2645692">Wujud aljabar kuwi wilangan, variabel, utawa gabungan wilangan, variabel, lan tandha operasi.</meaning>
+</definition>
+<definition id="fs-id2645696">
+<term>persamaan</term>
+<meaning id="fs-id2645701">Persamaan kasusun saka rong wujud aljabar sing digandhengake nganggo tandha padha karo.</meaning>
+</definition>
+</glossary>
+</document>

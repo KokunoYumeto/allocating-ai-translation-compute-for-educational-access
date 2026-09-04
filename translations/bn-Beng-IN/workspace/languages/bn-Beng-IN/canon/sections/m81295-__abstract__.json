@@ -1,0 +1,42 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81295",
+  "section": "__abstract__",
+  "scope": "Metadata abstract opening and all four objectives.",
+  "source_sha256": "c22d14bb2b833ed20ea5a7aa95d0e50b7810e8930834bd61993b8431dcfd02c3",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": ["TR08", "TR09", "TR05"],
+      "read": ["languages/bn-Beng-IN/canon/README.md", "languages/bn-Beng-IN/canon/examples.tsv:TR05,TR08-TR09", "languages/bn-Beng-IN/terminology.tsv:T045-T046", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.png", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.png"],
+      "decision": "TR08/09 control দশমিক সংখ্যা; objective verbs use the established direct learner register. অর্থসংক্রান্ত প্রয়োগ is editorial and does not imply Indian currency conversion."
+    },
+    {
+      "stage": "during drafting",
+      "examples": ["TR08", "TR09"],
+      "read": ["downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p057.txt:decimal-definition passage", "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p058.txt:decimal-reading heading"],
+      "decision": "Repeat দশমিক সংখ্যা in each mathematical objective for unambiguous scope; keep money applications as a separate fourth objective."
+    },
+    {
+      "stage": "pre-QA",
+      "examples": ["TR08", "TR09"],
+      "read": ["exact source abstract", "languages/bn-Beng-IN/translations/m81295-__abstract__.bn-Beng-IN.cnxml"],
+      "decision": "Confirmed all four objectives in source order: add/subtract, multiply, divide and money applications."
+    }
+  ],
+  "source_errata": [],
+  "checks": ["All four source objectives translated in exact order with no addition or omission."],
+  "language_gaps": ["অর্থসংক্রান্ত প্রয়োগ is editorial register; independent West Bengal teacher/language, learner and assistive-technology review is pending."],
+  "verification": {
+    "date": "2026-09-01",
+    "overlay_sha256": "5e057b3a8a0e0432fd690efd5071e8b63d795dc73be7163800b2f7fd1bbb7558",
+    "reader_sha256": "438f3e4be0f1ca245a2a3f1e8e7edb156f833c91916be5784f3f5492b5acc555",
+    "method": "Read-only build.translated and section renderer passed exact source tags, IDs, order and English-prose gate.",
+    "nodes": 7,
+    "ids": 2,
+    "mathml": 0,
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integrates the complete module and performs desktop/narrow visual review. Entire assignment continues; no independent publishing.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

@@ -1,0 +1,2192 @@
+{
+  "schema": "jv-explicit-phrase-edits-v1",
+  "unit": "a00-multiply-whole",
+  "program": "A00",
+  "source_module": "m81255",
+  "source_section": null,
+  "scope": "Entire pinned m81255: title/metadata/five objectives, two readiness quizzes, all five teaching sections and 17workedexamples, key concepts, all118endexercises (59supplied/59absent), self-check and one outerglossary. Full A00/A10/AX2 assignment remains incomplete; no production build implied.",
+  "tracks": [
+    "jv-academic",
+    "jv-conversation"
+  ],
+  "review_status": "AI-assisted complete-module linguistic draft; read-only exact coverage, source structure/IDs/math/numbers, bounded arithmetic and deterministic replay passed including one explicit219 scoped override; production integration/assets/AX2 and human review pending",
+  "source_pins": {
+    "indonesian": {
+      "repository": "a00-id",
+      "commit": "3de9207f56f8b5c57c017abf973fb04e00d740f1",
+      "path": "modules/m81255/index.cnxml",
+      "git_blob": "2df245e184820ff3fa270d9bb98e38e544ad3fbd",
+      "sha256": "88a4a8f76aa0e59981df68616a8d7602737e6df11f50ee9866efa58e9cd24fa9",
+      "bytes": 125118
+    },
+    "english": {
+      "repository": "openstax-prealgebra-bundle",
+      "commit": "38cae454e644abf9f0a623e876994553881597c9",
+      "path": "modules/m81255/index.cnxml",
+      "git_blob": "4c38fc46b62bd5cd28897f24706eb3c8ee28c30f",
+      "sha256": "1717786daf25223f0712f505768442007c15cf449e382d5596414460d26bd4ba",
+      "bytes": 125741
+    }
+  },
+  "terminology_decisions": {
+    "ping / ping-pingan / ngepingake / Pingna": "Actual C21 ping, ngepingaké and ping-pingan directly attest multiplication. Ngepingake uses current draft suffix spelling; imperative Pingna/dipingake are composed inflections, not individually certified by headword.",
+    "asil ping-pingan / faktor / parsial": "Product compound uses attested multiplication stem. Factor and partial are declared technical loans; partial product is defined by source place-valued stages, not a new independent operation.",
+    "simpenan": "C36 simpen only ordinary storage. Arithmetic carry remains provisional and tied to the next-place columns; mover is carry not exponent. During80×62 second row, source calls1puluhan at top-digit column; its actual contribution is one hundred to final product. Do not silently normalize source wording, and narration must explain row scale.",
+    "jembar / dawa / amba": "Actual C40jembar supports broad/luas, C41dawa long, C42secondhomonym amba wide/luas. Here source definition gives jembar quantitative area measured in square units; amba is width and dawa length. Mathematical compounds not declared standardized.",
+    "persegi / persegi panjang / digit / satuan / puluhan / nilai panggonan": "Explicit provisional technical loans/compounds consistent with preceding units; not dictionary mathematics attestations.",
+    "keping kanggo ngetung / bunderan": "Counters are source-defined counting objects, not coins. Bunderan is composed physical-round form; source blue teaching counters and gray model-answer circles kept distinct.",
+    "numbers": "Actual C07lima/sèket/salawé,C19atus/rongatus,C24éwu/éwuan,C26wolu,C27sanga,C28sewidak consulted. Preserve all source printed digits, grouped punctuation, leading00/000 and separate mn fragments.",
+    "addition/subtraction": "C23gunggung supports total/sum; C37kurang and C38suda/pasudan reviewed for mixed practice. Selisih remains declared loan; more/less phrases retain exact operand mention order and arithmetic rather than inequality meaning.",
+    "units": "Overt source-English cup,foot,inch,mile,pound loans approved for ID cangkir/kaki/inci/mil/pon, without conversion or unsupported local-unit equivalence. Keep all source currency symbols/amounts exact; future AX2 explicitly US dollars.",
+    "metalinguistic phrases": "Source phrase hasilkali and duakali remain explicit in emphasis; 'setelah' explanation preserved with words after phrase in original order. Numeric-word prompts not replaced by solved answers.",
+    "registers": "Separate ngoko-derived academic and conversational drafts, not krama or certified standardized Javanese. Shared short mathematical labels may match; sentence framing differs where natural.",
+    "source-history claims": "NCAA dimensions and US Senate exercise facts are preserved as pinned textbook statements, not newly verified contemporary guidance.",
+    "names/credits": "Keep all proper names, Washington DC, Anna C.Scott, NCAA, links, UUID/contentID unchanged. Module contains no new author/license prose to replace; inherited OpenStax source/credits remain authoritative."
+  },
+  "unchanged_identifiers": [
+    "m81255",
+    "9b248006-6668-446c-bcc4-bd1a9730b4ad",
+    "a",
+    "b"
+  ],
+  "phrases": [
+    [
+      "Mengalikan Bilangan Cacah",
+      "Ngepingake Wilangan Cacah",
+      "Ngepingake Wilangan Cacah"
+    ],
+    [
+      "Pada akhir bagian ini, Anda akan mampu:",
+      "Sawise ngrampungake bagean iki, sampeyan bakal bisa:",
+      "Sawise sinau bagean iki, kowe bakal bisa:"
+    ],
+    [
+      "Menggunakan notasi perkalian",
+      "Nggunakake notasi ping-pingan",
+      "Nganggo notasi ping-pingan"
+    ],
+    [
+      "Memodelkan perkalian bilangan cacah",
+      "Nggawe model ping-pingan wilangan cacah",
+      "Nggawe model ping-pingan wilangan cacah"
+    ],
+    [
+      "Mengalikan bilangan cacah",
+      "Ngepingake wilangan cacah",
+      "Ngepingake wilangan cacah"
+    ],
+    [
+      "Menerjemahkan frasa kata ke notasi matematika",
+      "Ngowahi frasa tembung dadi notasi matematika",
+      "Ngowahi frasa tembung dadi notasi matematika"
+    ],
+    [
+      "Mengalikan bilangan cacah dalam penerapan",
+      "Ngepingake wilangan cacah ing penerapan",
+      "Nganggo ping-pingan wilangan cacah ing soal penerapan"
+    ],
+    [
+      "Sebelum memulai, kerjakan kuis kesiapan ini.",
+      "Sadurunge miwiti, garapen kuis kesiapan iki.",
+      "Sadurunge miwiti, coba garapen kuis kesiapan iki."
+    ],
+    [
+      "Jumlahkan:",
+      "Tambahna:",
+      "Tambahna:"
+    ],
+    [
+      "Jika jawaban Anda untuk soal ini salah, tinjau kembali",
+      "Yen wangsulan sampeyan ing soal iki salah, sinaunen maneh",
+      "Yen wangsulanmu ing soal iki salah, sinaunen maneh"
+    ],
+    [
+      "Kurangkan:",
+      "Kurangana:",
+      "Kurangana:"
+    ],
+    [
+      "Menggunakan Notasi Perkalian",
+      "Nggunakake Notasi Ping-pingan",
+      "Nganggo Notasi Ping-pingan"
+    ],
+    [
+      "Misalkan Anda diminta menghitung semua koin satu sen yang ditunjukkan dalam",
+      "Upamane sampeyan dijaluk ngetung kabeh dhuwit receh siji sèn sing dituduhake ing",
+      "Upamane kowe dijaluk ngetung kabeh dhuwit receh siji sèn ing"
+    ],
+    [
+      "Gambar memperlihatkan 3 baris mendatar koin satu sen; setiap baris berisi 8 koin.",
+      "Gambar nuduhake 3 baris mendatar dhuwit receh siji sèn; saben baris isi 8 dhuwit receh.",
+      "Gambar nuduhake 3 baris mendatar dhuwit receh siji sèn; saben baris isi 8 dhuwit receh."
+    ],
+    [
+      "Apakah Anda akan menghitung koin-koin itu satu per satu? Atau apakah Anda akan menghitung banyaknya koin dalam setiap baris, lalu menjumlahkan bilangan tersebut sebanyak",
+      "Apa sampeyan bakal ngetung dhuwit receh iku siji mbaka siji? Utawa sampeyan bakal ngetung cacahe dhuwit receh ing saben baris, banjur nambah wilangan kasebut nganti",
+      "Apa kowe bakal ngetung dhuwit receh iku siji mbaka siji? Utawa kowe bakal ngetung cacahe ing saben baris, banjur nambah wilangan iku nganti"
+    ],
+    [
+      "kali?",
+      "ping?",
+      "ping?"
+    ],
+    [
+      "Perkalian merupakan cara untuk menyatakan penjumlahan berulang. Jadi, alih-alih menjumlahkan",
+      "Ping-pingan minangka cara kanggo nyatakake panambahan bola-bali. Dadi, tinimbang nambah",
+      "Ping-pingan kuwi cara kanggo nuduhake panambahan bola-bali. Dadi, tinimbang nambah"
+    ],
+    [
+      "sebanyak tiga kali, kita dapat menulis ekspresi perkalian.",
+      "nganti ping telu, kita bisa nulis ekspresi ping-pingan.",
+      "nganti ping telu, kita bisa nulis ekspresi ping-pingan."
+    ],
+    [
+      "Setiap bilangan yang dikalikan disebut faktor, dan hasilnya disebut",
+      "Saben wilangan sing dipingake diarani faktor, lan asile diarani",
+      "Saben wilangan sing dipingake diarani faktor, lan asile diarani"
+    ],
+    [
+      "hasil kali",
+      "asil ping-pingan",
+      "asil ping-pingan"
+    ],
+    [
+      ". Kita membaca",
+      ". Kita maca",
+      ". Kita maca"
+    ],
+    [
+      "sebagai",
+      "minangka",
+      "minangka"
+    ],
+    [
+      "tiga kali delapan",
+      "telu ping wolu",
+      "telu ping wolu"
+    ],
+    [
+      ", dan hasilnya sebagai",
+      ", lan asile minangka",
+      ", lan asile minangka"
+    ],
+    [
+      "hasil kali tiga dan delapan",
+      "asil ping-pingan telu lan wolu",
+      "asil ping-pingan telu lan wolu"
+    ],
+    [
+      "Ada beberapa simbol yang menyatakan perkalian. Simbol-simbol ini mencakup tanda",
+      "Ana sawetara simbol kanggo nyatakake ping-pingan. Simbol iki kalebu tandha",
+      "Ana sawetara simbol kanggo nuduhake ping-pingan. Simbol iki kalebu tandha"
+    ],
+    [
+      ", tanda titik",
+      ", tandha titik",
+      ", tandha titik"
+    ],
+    [
+      ", dan tanda kurung",
+      ", lan tandha kurung",
+      ", lan tandha kurung"
+    ],
+    [
+      "Simbol Operasi Perkalian",
+      "Simbol Operasi Ping-pingan",
+      "Simbol Operasi Ping-pingan"
+    ],
+    [
+      "Untuk menjelaskan perkalian, kita dapat menggunakan simbol dan kata-kata.",
+      "Kanggo njlentrehake ping-pingan, kita bisa nggunakake simbol lan tembung.",
+      "Kanggo njlentrehake ping-pingan, kita bisa nganggo simbol lan tembung."
+    ],
+    [
+      "Tabel ini memiliki lima kolom dan satu baris isi. Kolom pertama berjudul operasi dan berisi perkalian. Kolom kedua berjudul notasi dan memuat tiga bentuk: tanda kali, tanda titik, dan tanda kurung. Kolom ketiga berjudul ekspresi dan memuat 3 kali 8 dengan ketiga notasi tersebut. Kolom keempat berjudul dibaca sebagai dan berisi tiga kali delapan. Kolom kelima berjudul hasil dan berisi hasil kali 3 dan 8.",
+      "Tabel iki duwe limang kolom lan siji baris isi. Kolom kapisan irah-irahane operasi lan isine ping-pingan. Kolom kapindho irah-irahane notasi lan ngemot telung wujud: tandha ping, tandha titik, lan tandha kurung. Kolom katelu irah-irahane ekspresi lan ngemot 3 ping 8 nganggo telung notasi kasebut. Kolom kapapat irah-irahane diwaca lan isine telu ping wolu. Kolom kalima irah-irahane asil lan isine asil ping-pingan 3 lan 8.",
+      "Tabel iki duwe limang kolom lan siji baris isi. Kolom kapisan irah-irahane operasi lan isine ping-pingan. Kolom kapindho irah-irahane notasi lan ngemot telung wujud: tandha ping, tandha titik, lan tandha kurung. Kolom katelu irah-irahane ekspresi lan ngemot 3 ping 8 nganggo telung notasi kasebut. Kolom kapapat irah-irahane diwaca lan isine telu ping wolu. Kolom kalima irah-irahane asil lan isine asil ping-pingan 3 lan 8."
+    ],
+    [
+      "Operasi",
+      "Operasi",
+      "Operasi"
+    ],
+    [
+      "Notasi",
+      "Notasi",
+      "Notasi"
+    ],
+    [
+      "Ekspresi",
+      "Ekspresi",
+      "Ekspresi"
+    ],
+    [
+      "Dibaca sebagai",
+      "Diwaca",
+      "Diwaca"
+    ],
+    [
+      "Hasil",
+      "Asil",
+      "Asil"
+    ],
+    [
+      "Perkalian",
+      "Ping-pingan",
+      "Ping-pingan"
+    ],
+    [
+      "hasil kali 3 dan 8",
+      "asil ping-pingan 3 lan 8",
+      "asil ping-pingan 3 lan 8"
+    ],
+    [
+      "Terjemahkan notasi matematika berikut ke dalam kata-kata:",
+      "Owahana notasi matematika iki dadi tembung:",
+      "Owahana notasi matematika iki dadi tembung:"
+    ],
+    [
+      "Penyelesaian",
+      "Panyelesaian",
+      "Cara Ngrampungake"
+    ],
+    [
+      "Kita membacanya sebagai",
+      "Iki diwaca",
+      "Iki diwaca"
+    ],
+    [
+      "tujuh kali enam",
+      "pitu ping enem",
+      "pitu ping enem"
+    ],
+    [
+      ", dan hasilnya adalah",
+      ", lan asile yaiku",
+      ", lan asile"
+    ],
+    [
+      "hasil kali tujuh dan enam",
+      "asil ping-pingan pitu lan enem",
+      "asil ping-pingan pitu lan enem"
+    ],
+    [
+      "dua belas kali empat belas",
+      "rolas ping patbelas",
+      "rolas ping patbelas"
+    ],
+    [
+      "hasil kali dua belas dan empat belas",
+      "asil ping-pingan rolas lan patbelas",
+      "asil ping-pingan rolas lan patbelas"
+    ],
+    [
+      "enam kali tiga belas",
+      "enem ping telulas",
+      "enem ping telulas"
+    ],
+    [
+      "hasil kali enam dan tiga belas",
+      "asil ping-pingan enem lan telulas",
+      "asil ping-pingan enem lan telulas"
+    ],
+    [
+      "delapan kali tujuh; hasil kali delapan dan tujuh",
+      "wolu ping pitu; asil ping-pingan wolu lan pitu",
+      "wolu ping pitu; asil ping-pingan wolu lan pitu"
+    ],
+    [
+      "delapan belas kali sebelas; hasil kali delapan belas dan sebelas",
+      "wolulas ping sewelas; asil ping-pingan wolulas lan sewelas",
+      "wolulas ping sewelas; asil ping-pingan wolulas lan sewelas"
+    ],
+    [
+      "tiga belas kali tujuh; hasil kali tiga belas dan tujuh",
+      "telulas ping pitu; asil ping-pingan telulas lan pitu",
+      "telulas ping pitu; asil ping-pingan telulas lan pitu"
+    ],
+    [
+      "lima kali enam belas; hasil kali lima dan enam belas",
+      "lima ping nembelas; asil ping-pingan lima lan nembelas",
+      "lima ping nembelas; asil ping-pingan lima lan nembelas"
+    ],
+    [
+      "Memodelkan Perkalian Bilangan Cacah",
+      "Nggawe Model Ping-pingan Wilangan Cacah",
+      "Nggawe Model Ping-pingan Wilangan Cacah"
+    ],
+    [
+      "Ada banyak cara untuk memodelkan perkalian. Berbeda dari bagian-bagian sebelumnya yang menggunakan blok",
+      "Ana akeh cara kanggo nggawe model ping-pingan. Beda karo bagean-bagean sadurunge sing nggunakake blok",
+      "Ana akeh cara kanggo nggawe model ping-pingan. Beda karo bagean sadurunge sing nganggo blok"
+    ],
+    [
+      ", di sini kita akan menggunakan keping hitung untuk membantu memahami makna perkalian. Keping hitung adalah benda apa pun yang dapat digunakan untuk menghitung. Kita akan menggunakan keping hitung bulat berwarna biru.",
+      ", ing kene kita bakal nggunakake keping kanggo ngetung supaya luwih mangerteni teges ping-pingan. Keping kanggo ngetung yaiku barang apa wae sing bisa digunakake kanggo ngetung. Kita bakal nggunakake keping bunder werna biru.",
+      ", ing kene kita bakal nganggo keping kanggo ngetung supaya luwih ngerti teges ping-pingan. Keping kanggo ngetung kuwi barang apa wae sing bisa dianggo ngetung. Kita bakal nganggo keping bunder werna biru."
+    ],
+    [
+      "basis-10",
+      "basis-10",
+      "basis-10"
+    ],
+    [
+      "Modelkan:",
+      "Gambarna nganggo model:",
+      "Gambarna nganggo model:"
+    ],
+    [
+      "Untuk memodelkan hasil kali",
+      "Kanggo nggawe model asil ping-pingan",
+      "Kanggo nggawe model asil ping-pingan"
+    ],
+    [
+      "kita mulai dengan satu baris berisi",
+      "kita miwiti saka siji baris isi",
+      "kita miwiti saka siji baris isi"
+    ],
+    [
+      "keping hitung.",
+      "keping kanggo ngetung.",
+      "keping kanggo ngetung."
+    ],
+    [
+      "Gambar memperlihatkan satu baris mendatar yang berisi 8 keping hitung.",
+      "Gambar nuduhake siji baris mendatar isi 8 keping kanggo ngetung.",
+      "Gambar nuduhake siji baris mendatar isi 8 keping kanggo ngetung."
+    ],
+    [
+      "Faktor lainnya adalah",
+      "Faktor liyane yaiku",
+      "Faktor liyane yaiku"
+    ],
+    [
+      "jadi kita membuat",
+      "mula kita nggawe",
+      "mula kita nggawe"
+    ],
+    [
+      "baris yang masing-masing berisi",
+      "baris sing saben baris isi",
+      "baris sing saben baris isi"
+    ],
+    [
+      "Gambar memperlihatkan 3 baris mendatar keping hitung; setiap baris berisi 8 keping.",
+      "Gambar nuduhake 3 baris mendatar keping kanggo ngetung; saben baris isi 8 keping.",
+      "Gambar nuduhake 3 baris mendatar keping kanggo ngetung; saben baris isi 8 keping."
+    ],
+    [
+      "Sekarang kita dapat menghitung hasilnya. Seluruhnya ada",
+      "Saiki kita bisa ngetung asile. Kabeh ana",
+      "Saiki kita bisa ngetung asile. Kabeh ana"
+    ],
+    [
+      "Jika Anda melihat keping-keping itu dari arah samping, Anda akan melihat bahwa kita juga dapat membuat",
+      "Yen sampeyan ndeleng keping-keping iku saka arah sisih, sampeyan bakal weruh yen kita uga bisa nggawe",
+      "Yen kowe ndeleng keping-keping iku saka arah sisih, kowe bakal weruh yen kita uga bisa nggawe"
+    ],
+    [
+      "keping hitung. Hasil kalinya akan tetap sama. Kita akan kembali membahas gagasan ini nanti.",
+      "keping kanggo ngetung. Asil ping-pingane bakal tetep padha. Gagasan iki bakal dirembug maneh mengko.",
+      "keping kanggo ngetung. Asil ping-pingane bakal tetep padha. Bab iki bakal dirembug maneh mengko."
+    ],
+    [
+      "Modelkan perkalian berikut:",
+      "Gambarna ping-pingan iki nganggo model:",
+      "Gambarna ping-pingan iki nganggo model:"
+    ],
+    [
+      "Gambar menggunakan lingkaran untuk memperagakan soal perkalian 4 × 6.",
+      "Gambar nggunakake bunderan kanggo nuduhake soal ping-pingan 4 × 6.",
+      "Gambar nganggo bunderan kanggo nuduhake soal ping-pingan 4 × 6."
+    ],
+    [
+      "Gambar menggunakan lingkaran untuk memperagakan soal perkalian 5 × 7.",
+      "Gambar nggunakake bunderan kanggo nuduhake soal ping-pingan 5 × 7.",
+      "Gambar nganggo bunderan kanggo nuduhake soal ping-pingan 5 × 7."
+    ],
+    [
+      "Untuk mengalikan tanpa menggunakan model, Anda perlu menguasai semua fakta perkalian satu digit. Pastikan Anda telah menguasainya dengan lancar sebelum melanjutkan bagian ini.",
+      "Kanggo ngepingake tanpa model, sampeyan kudu nguwasani kabeh fakta ping-pingan siji digit. Pesthekna yen sampeyan wis lancar sadurunge nerusake bagean iki.",
+      "Kanggo ngepingake tanpa model, kowe kudu nguwasani kabeh fakta ping-pingan siji digit. Pesthekna yen kowe wis lancar sadurunge nerusake bagean iki."
+    ],
+    [
+      "menampilkan fakta-fakta perkalian. Setiap kotak menunjukkan hasil kali bilangan pada kolom paling kiri dengan bilangan pada baris paling atas. Jika Anda ragu tentang suatu hasil kali, buatlah modelnya. Penting untuk menghafal fakta bilangan yang belum Anda kuasai agar Anda siap mengalikan bilangan yang lebih besar.",
+      "nuduhake fakta-fakta ping-pingan. Saben kothak nuduhake asil ping-pingan wilangan ing kolom paling kiwa karo wilangan ing baris paling ndhuwur. Yen sampeyan ragu marang sawijining asil ping-pingan, gawea modele. Fakta wilangan sing durung sampeyan kuwasani perlu diapalake supaya sampeyan siyap ngepingake wilangan sing luwih gedhe.",
+      "nuduhake fakta-fakta ping-pingan. Saben kothak nuduhake asil ping-pingan wilangan ing kolom paling kiwa karo wilangan ing baris paling ndhuwur. Yen kowe ragu marang sawijining asil ping-pingan, gawea modele. Fakta wilangan sing durung kowe kuwasani perlu diapalake supaya kowe siyap ngepingake wilangan sing luwih gedhe."
+    ],
+    [
+      "Tabel perkalian dengan 11 kolom dan 11 baris. Baris pertama memuat tanda kali dan kepala kolom 0 sampai 9. Kolom pertama pada baris-baris berikutnya memuat kepala baris 0 sampai 9. Setiap sel lainnya memuat hasil kali kepala baris dan kepala kolomnya.",
+      "Tabel ping-pingan kanthi 11 kolom lan 11 baris. Baris kapisan ngemot tandha ping lan sirah kolom 0 nganti 9. Kolom kapisan ing baris-barise sabanjure ngemot sirah baris 0 nganti 9. Saben sel liyane ngemot asil ping-pingan sirah baris lan sirah kolome.",
+      "Tabel ping-pingan kanthi 11 kolom lan 11 baris. Baris kapisan ngemot tandha ping lan sirah kolom 0 nganti 9. Kolom kapisan ing baris-barise sabanjure ngemot sirah baris 0 nganti 9. Saben sel liyane ngemot asil ping-pingan sirah baris lan sirah kolome."
+    ],
+    [
+      "Apa yang terjadi ketika Anda mengalikan suatu bilangan dengan nol? Terlihat bahwa hasil kali sembarang bilangan dengan nol adalah nol. Fakta ini disebut Sifat Perkalian dengan Nol.",
+      "Apa sing kedadeyan nalika sampeyan ngepingake sawijining wilangan karo nol? Katon yen asil ping-pingan wilangan apa wae karo nol yaiku nol. Fakta iki diarani Sipat Ping-pingan karo Nol.",
+      "Apa sing kedadeyan yen kowe ngepingake sawijining wilangan karo nol? Katon yen asil ping-pingan wilangan apa wae karo nol kuwi nol. Fakta iki diarani Sipat Ping-pingan karo Nol."
+    ],
+    [
+      "Sifat Perkalian dengan Nol",
+      "Sipat Ping-pingan karo Nol",
+      "Sipat Ping-pingan karo Nol"
+    ],
+    [
+      "Hasil kali sembarang bilangan dengan",
+      "Asil ping-pingan wilangan apa wae karo",
+      "Asil ping-pingan wilangan apa wae karo"
+    ],
+    [
+      "adalah",
+      "yaiku",
+      "yaiku"
+    ],
+    [
+      "Kalikan:",
+      "Pingna:",
+      "Pingna:"
+    ],
+    [
+      "Tabel ini memperagakan Sifat Perkalian dengan Nol melalui contoh dan aturan bahwa sembarang bilangan yang dikalikan dengan nol menghasilkan nol.",
+      "Tabel iki nuduhake Sipat Ping-pingan karo Nol liwat tuladha lan aturan yen wilangan apa wae sing dipingake karo nol asile nol.",
+      "Tabel iki nuduhake Sipat Ping-pingan karo Nol liwat tuladha lan aturan yen wilangan apa wae sing dipingake karo nol asile nol."
+    ],
+    [
+      "Hasil kali sembarang bilangan dengan nol adalah nol.",
+      "Asil ping-pingan wilangan apa wae karo nol yaiku nol.",
+      "Asil ping-pingan wilangan apa wae karo nol yaiku nol."
+    ],
+    [
+      "Mengalikan dengan nol menghasilkan nol.",
+      "Ngepingake karo nol ngasilake nol.",
+      "Ngepingake karo nol ngasilake nol."
+    ],
+    [
+      "Tentukan setiap hasil kali:",
+      "Temtokna saben asil ping-pingan:",
+      "Temtokna saben asil ping-pingan:"
+    ],
+    [
+      "Apa yang terjadi ketika Anda mengalikan suatu bilangan dengan satu? Mengalikan suatu bilangan dengan satu tidak mengubah nilainya. Fakta ini disebut Sifat Identitas Perkalian, dan",
+      "Apa sing kedadeyan nalika sampeyan ngepingake sawijining wilangan karo siji? Ngepingake sawijining wilangan karo siji ora ngowahi nilaine. Fakta iki diarani Sipat Identitas Ping-pingan, lan",
+      "Apa sing kedadeyan yen kowe ngepingake sawijining wilangan karo siji? Ngepingake sawijining wilangan karo siji ora ngowahi nilaine. Fakta iki diarani Sipat Identitas Ping-pingan, lan"
+    ],
+    [
+      "disebut identitas perkalian.",
+      "diarani identitas ping-pingan.",
+      "diarani identitas ping-pingan."
+    ],
+    [
+      "Sifat Identitas Perkalian",
+      "Sipat Identitas Ping-pingan",
+      "Sipat Identitas Ping-pingan"
+    ],
+    [
+      "adalah bilangan itu sendiri.",
+      "yaiku wilangan iku dhewe.",
+      "yaiku wilangan iku dhewe."
+    ],
+    [
+      "Tabel ini memperagakan Sifat Identitas Perkalian melalui contoh bahwa sembarang bilangan yang dikalikan dengan satu tetap bernilai sama.",
+      "Tabel iki nuduhake Sipat Identitas Ping-pingan liwat tuladha yen wilangan apa wae sing dipingake karo siji tetep padha nilaine.",
+      "Tabel iki nuduhake Sipat Identitas Ping-pingan liwat tuladha yen wilangan apa wae sing dipingake karo siji tetep padha nilaine."
+    ],
+    [
+      "Hasil kali sembarang bilangan dengan satu adalah bilangan itu sendiri.",
+      "Asil ping-pingan wilangan apa wae karo siji yaiku wilangan iku dhewe.",
+      "Asil ping-pingan wilangan apa wae karo siji yaiku wilangan iku dhewe."
+    ],
+    [
+      "Mengalikan dengan satu tidak mengubah nilainya.",
+      "Ngepingake karo siji ora ngowahi nilaine.",
+      "Ngepingake karo siji ora ngowahi nilaine."
+    ],
+    [
+      "Sebelumnya dalam bab ini, kita telah mempelajari bahwa Sifat Komutatif Penjumlahan menyatakan bahwa mengubah urutan bilangan yang dijumlahkan tidak mengubah jumlahnya. Kita melihat bahwa",
+      "Sadurunge ing bab iki, kita wis sinau yen Sipat Komutatif Panambahan nyatakake yen ngowahi urutan wilangan sing ditambahake ora ngowahi gunggungane. Kita wis weruh yen",
+      "Sadurunge ing bab iki, kita wis sinau yen Sipat Komutatif Panambahan nuduhake yen ngowahi urutan wilangan sing ditambahake ora ngowahi gunggungane. Kita wis weruh yen"
+    ],
+    [
+      "sama dengan",
+      "padha karo",
+      "padha karo"
+    ],
+    [
+      "Apakah hal ini juga berlaku untuk perkalian? Mari kita perhatikan beberapa pasangan faktor.",
+      "Apa iki uga lumaku kanggo ping-pingan? Ayo digatekake sawetara pasangan faktor.",
+      "Apa iki uga lumaku kanggo ping-pingan? Ayo digatekake sawetara pasangan faktor."
+    ],
+    [
+      "Ketika urutan faktor dibalik, hasil kalinya tidak berubah. Fakta ini disebut Sifat Komutatif Perkalian.",
+      "Nalika urutan faktor diwalik, asil ping-pingane ora owah. Fakta iki diarani Sipat Komutatif Ping-pingan.",
+      "Nalika urutan faktor diwalik, asil ping-pingane ora owah. Fakta iki diarani Sipat Komutatif Ping-pingan."
+    ],
+    [
+      "Sifat Komutatif Perkalian",
+      "Sipat Komutatif Ping-pingan",
+      "Sipat Komutatif Ping-pingan"
+    ],
+    [
+      "Mengubah urutan faktor tidak mengubah hasil kalinya.",
+      "Ngowahi urutan faktor ora ngowahi asil ping-pingane.",
+      "Ngowahi urutan faktor ora ngowahi asil ping-pingane."
+    ],
+    [
+      "Soal perkalian 8 × 7 dan 7 × 8 yang menunjukkan bahwa keduanya menghasilkan 56.",
+      "Soal ping-pingan 8 × 7 lan 7 × 8 sing nuduhake yen loro-lorone ngasilake 56.",
+      "Soal ping-pingan 8 × 7 lan 7 × 8 sing nuduhake yen loro-lorone ngasilake 56."
+    ],
+    [
+      "Kalikan.",
+      "Pingna.",
+      "Pingna."
+    ],
+    [
+      "Mengubah urutan faktor tidak mengubah hasil kali.",
+      "Ngowahi urutan faktor ora ngowahi asil ping-pingan.",
+      "Ngowahi urutan faktor ora ngowahi asil ping-pingan."
+    ],
+    [
+      "54 dan 54; keduanya sama.",
+      "54 lan 54; loro-lorone padha.",
+      "54 lan 54; loro-lorone padha."
+    ],
+    [
+      "48 dan 48; keduanya sama.",
+      "48 lan 48; loro-lorone padha.",
+      "48 lan 48; loro-lorone padha."
+    ],
+    [
+      "Untuk mengalikan bilangan yang memiliki lebih dari satu digit, biasanya lebih mudah menuliskan bilangan-bilangan itu secara vertikal dalam kolom, seperti yang kita lakukan pada penjumlahan dan pengurangan.",
+      "Kanggo ngepingake wilangan sing duwe luwih saka siji digit, biasane luwih gampang nulis wilangan iku kanthi vertikal ing kolom, kaya nalika nindakake panambahan lan pangurangan.",
+      "Kanggo ngepingake wilangan sing duwe luwih saka siji digit, biasane luwih gampang nulis wilangan iku kanthi vertikal ing kolom, kaya nalika nambah lan ngurangi."
+    ],
+    [
+      "Kita mulai dengan mengalikan",
+      "Kita miwiti kanthi ngepingake",
+      "Kita miwiti kanthi ngepingake"
+    ],
+    [
+      "dengan",
+      "karo",
+      "karo"
+    ],
+    [
+      "Kita menulis",
+      "Kita nulis",
+      "Kita nulis"
+    ],
+    [
+      "pada tempat satuan hasil kali. Kita menyimpan",
+      "ing panggonan satuan asil ping-pingan. Kita nyimpen",
+      "ing panggonan satuan asil ping-pingan. Kita nyimpen"
+    ],
+    [
+      "puluhan dengan menulis",
+      "puluhan kanthi nulis",
+      "puluhan kanthi nulis"
+    ],
+    [
+      "di atas tempat puluhan.",
+      "ing ndhuwur panggonan puluhan.",
+      "ing ndhuwur panggonan puluhan."
+    ],
+    [
+      "Gambar menunjukkan perkalian vertikal 27 dengan 3. Sebuah panah menunjukkan angka simpanan 2 dari 3 × 7 = 21 pada tempat puluhan. Panah lain menunjukkan bahwa 1 yang tersisa ditulis pada tempat satuan di bawahnya.",
+      "Gambar nuduhake ping-pingan vertikal 27 karo 3. Panah nuduhake angka simpenan 2 saka 3 × 7 = 21 ing panggonan puluhan. Panah liyane nuduhake yen 1 sing kari ditulis ing panggonan satuan ing ngisore.",
+      "Gambar nuduhake ping-pingan vertikal 27 karo 3. Panah nuduhake angka simpenan 2 saka 3 × 7 = 21 ing panggonan puluhan. Panah liyane nuduhake yen 1 sing kari ditulis ing panggonan satuan ing ngisore."
+    ],
+    [
+      "Kemudian kita mengalikan",
+      "Banjur kita ngepingake",
+      "Banjur kita ngepingake"
+    ],
+    [
+      "lalu menambahkan",
+      "banjur nambah",
+      "banjur nambah"
+    ],
+    [
+      "di atas tempat puluhan pada hasil kali. Jadi,",
+      "ing ndhuwur panggonan puluhan menyang asil ping-pingan. Dadi,",
+      "ing ndhuwur panggonan puluhan menyang asil ping-pingan. Dadi,"
+    ],
+    [
+      "dan",
+      "lan",
+      "lan"
+    ],
+    [
+      "Tulis",
+      "Tulisen",
+      "Tulisen"
+    ],
+    [
+      "pada tempat puluhan hasil kali.",
+      "ing panggonan puluhan asil ping-pingan.",
+      "ing panggonan puluhan asil ping-pingan."
+    ],
+    [
+      "Perkalian vertikal 27 dengan 3 menghasilkan 81. Sebuah panah menunjukkan bahwa angka 8 pada 81 diperoleh dari (3 × 2) ditambah angka simpanan 2 dari 3 × 7 = 21.",
+      "Ping-pingan vertikal 27 karo 3 ngasilake 81. Panah nuduhake yen angka 8 ing 81 asale saka (3 × 2) ditambah angka simpenan 2 saka 3 × 7 = 21.",
+      "Ping-pingan vertikal 27 karo 3 ngasilake 81. Panah nuduhake yen angka 8 ing 81 asale saka (3 × 2) ditambah angka simpenan 2 saka 3 × 7 = 21."
+    ],
+    [
+      "Hasil kalinya adalah",
+      "Asil ping-pingane yaiku",
+      "Asil ping-pingane yaiku"
+    ],
+    [
+      "Ketika kita mengalikan dua bilangan dengan jumlah digit yang berbeda, biasanya lebih mudah menulis bilangan yang lebih kecil di bawah. Anda juga dapat menuliskannya dengan urutan sebaliknya, tetapi susunan ini lebih mudah digunakan.",
+      "Nalika ngepingake rong wilangan sing beda cacahe digit, biasane luwih gampang nulis wilangan sing luwih cilik ing ngisor. Sampeyan uga bisa nulis kanthi urutan kosok baline, nanging susunan iki luwih gampang digunakake.",
+      "Nalika ngepingake rong wilangan sing beda cacahe digit, biasane luwih gampang nulis wilangan sing luwih cilik ing ngisor. Kowe uga bisa nulis kanthi urutan kosok baline, nanging susunan iki luwih gampang dianggo."
+    ],
+    [
+      "Perkalian vertikal 15 dengan 4 secara bertahap, disertai penjelasan dan perhitungan matematis pada setiap tahap.",
+      "Ping-pingan vertikal 15 karo 4 kanthi tahap-tahap, kanthi katrangan lan petungan matematika ing saben tahap.",
+      "Ping-pingan vertikal 15 karo 4 kanthi tahap-tahap, kanthi katrangan lan petungan matematika ing saben tahap."
+    ],
+    [
+      "Tulis bilangan-bilangan tersebut sehingga digit",
+      "Tulisen wilangan kasebut supaya digit",
+      "Tulisen wilangan iku supaya digit"
+    ],
+    [
+      "tersusun vertikal.",
+      "jejer kanthi vertikal.",
+      "jejer kanthi vertikal."
+    ],
+    [
+      "Kalikan",
+      "Pingna",
+      "Pingna"
+    ],
+    [
+      "dengan digit pada tempat satuan",
+      "karo digit ing panggonan satuan",
+      "karo digit ing panggonan satuan"
+    ],
+    [
+      "pada tempat satuan hasil kali dan simpan",
+      "ing panggonan satuan asil ping-pingan lan simpen",
+      "ing panggonan satuan asil ping-pingan lan simpen"
+    ],
+    [
+      "puluhan.",
+      "puluhan.",
+      "puluhan."
+    ],
+    [
+      "dengan digit pada tempat puluhan",
+      "karo digit ing panggonan puluhan",
+      "karo digit ing panggonan puluhan"
+    ],
+    [
+      "Tambahkan",
+      "Tambahna",
+      "Tambahna"
+    ],
+    [
+      "puluhan yang kita simpan.",
+      "puluhan sing wis disimpen.",
+      "puluhan sing wis disimpen."
+    ],
+    [
+      "Perkalian vertikal bilangan tiga digit dengan bilangan satu digit secara bertahap.",
+      "Ping-pingan vertikal wilangan telung digit karo wilangan siji digit kanthi tahap-tahap.",
+      "Ping-pingan vertikal wilangan telung digit karo wilangan siji digit kanthi tahap-tahap."
+    ],
+    [
+      "pada tempat puluhan. Kalikan",
+      "ing panggonan puluhan. Pingna",
+      "ing panggonan puluhan. Pingna"
+    ],
+    [
+      "puluhan yang disimpan sehingga diperoleh",
+      "puluhan sing wis disimpen supaya dipikolehi",
+      "puluhan sing wis disimpen supaya oleh"
+    ],
+    [
+      "pada tempat puluhan hasil kali dan simpan 4 pada tempat ratusan.",
+      "ing panggonan puluhan asil ping-pingan lan simpen 4 ing panggonan atusan.",
+      "ing panggonan puluhan asil ping-pingan lan simpen 4 ing panggonan atusan."
+    ],
+    [
+      "dengan digit pada tempat ratusan",
+      "karo digit ing panggonan atusan",
+      "karo digit ing panggonan atusan"
+    ],
+    [
+      "ratusan yang disimpan sehingga diperoleh",
+      "atusan sing wis disimpen supaya dipikolehi",
+      "atusan sing wis disimpen supaya oleh"
+    ],
+    [
+      "pada tempat ratusan hasil kali dan",
+      "ing panggonan atusan asil ping-pingan lan",
+      "ing panggonan atusan asil ping-pingan lan"
+    ],
+    [
+      "pada tempat ribuan.",
+      "ing panggonan éwuan.",
+      "ing panggonan éwuan."
+    ],
+    [
+      "Ketika mengalikan dengan bilangan yang memiliki dua digit atau lebih, kita mengalikan setiap digitnya secara terpisah dari kanan ke kiri. Setiap hasil perkalian digit yang terpisah disebut hasil kali parsial. Saat menulis hasil kali parsial, kita harus memastikan nilai tempatnya tersusun sejajar.",
+      "Nalika ngepingake karo wilangan sing duwe rong digit utawa luwih, saben digite dipingake dhewe-dhewe saka tengen menyang kiwa. Saben asil ping-pingan digit sing kapisah iki diarani asil ping-pingan parsial. Nalika nulis asil ping-pingan parsial, pesthekna yen nilai panggonane jejer.",
+      "Nalika ngepingake karo wilangan sing duwe rong digit utawa luwih, saben digite dipingake dhewe-dhewe saka tengen menyang kiwa. Saben asil ping-pingan digit sing kapisah iki diarani asil ping-pingan parsial. Nalika nulis asil ping-pingan parsial, pesthekna yen nilai panggonane jejer."
+    ],
+    [
+      "Kalikan dua bilangan cacah untuk menentukan hasil kalinya.",
+      "Pingna rong wilangan cacah kanggo nemtokake asil ping-pingane.",
+      "Pingna rong wilangan cacah kanggo nemtokake asil ping-pingane."
+    ],
+    [
+      "Tulis bilangan-bilangan tersebut sehingga setiap nilai tempat tersusun vertikal.",
+      "Tulisen wilangan kasebut supaya saben nilai panggonan jejer kanthi vertikal.",
+      "Tulisen wilangan iku supaya saben nilai panggonan jejer kanthi vertikal."
+    ],
+    [
+      "Kalikan digit-digit pada setiap nilai tempat.",
+      "Pingna digit-digit ing saben nilai panggonan.",
+      "Pingna digit-digit ing saben nilai panggonan."
+    ],
+    [
+      "Kerjakan dari kanan ke kiri, dimulai dari tempat satuan pada bilangan di bawah.",
+      "Garapen saka tengen menyang kiwa, wiwit panggonan satuan wilangan ing ngisor.",
+      "Garapen saka tengen menyang kiwa, wiwit panggonan satuan wilangan ing ngisor."
+    ],
+    [
+      "Kalikan digit satuan pada bilangan di bawah dengan digit satuan pada bilangan di atas, kemudian dengan digit puluhan, dan seterusnya.",
+      "Pingna digit satuan wilangan ing ngisor karo digit satuan wilangan ing ndhuwur, banjur karo digit puluhan, lan sateruse.",
+      "Pingna digit satuan wilangan ing ngisor karo digit satuan wilangan ing ndhuwur, banjur karo digit puluhan, lan sateruse."
+    ],
+    [
+      "Jika hasil kali pada suatu nilai tempat lebih dari",
+      "Yen asil ping-pingan ing sawijining nilai panggonan luwih saka",
+      "Yen asil ping-pingan ing sawijining nilai panggonan luwih saka"
+    ],
+    [
+      "simpan ke nilai tempat berikutnya.",
+      "simpen nilai menyang panggonan sabanjure.",
+      "simpen nilai menyang panggonan sabanjure."
+    ],
+    [
+      "Tulis hasil kali parsial dengan menyusun digit-digit menurut nilai tempat bilangan di atasnya.",
+      "Tulisen asil ping-pingan parsial kanthi njejerake digit miturut nilai panggonan wilangan ing ndhuwure.",
+      "Tulisen asil ping-pingan parsial kanthi njejerake digit miturut nilai panggonan wilangan ing ndhuwure."
+    ],
+    [
+      "Ulangi untuk tempat puluhan pada bilangan di bawah, tempat ratusan, dan seterusnya.",
+      "Baleni kanggo panggonan puluhan wilangan ing ngisor, panggonan atusan, lan sateruse.",
+      "Baleni kanggo panggonan puluhan wilangan ing ngisor, panggonan atusan, lan sateruse."
+    ],
+    [
+      "Sisipkan nol sebagai penanda tempat pada setiap hasil kali parsial tambahan.",
+      "Lebokna nol minangka tandha panggonan ing saben asil ping-pingan parsial tambahan.",
+      "Lebokna nol minangka tandha panggonan ing saben asil ping-pingan parsial tambahan."
+    ],
+    [
+      "Jumlahkan hasil kali parsial.",
+      "Tambahna asil ping-pingan parsial.",
+      "Tambahna asil ping-pingan parsial."
+    ],
+    [
+      "Tabel ini memperagakan proses bertahap untuk mengalikan dua bilangan dua digit, yaitu 87 × 62, dengan bantuan gambar.",
+      "Tabel iki nuduhake tahap-tahap ngepingake rong wilangan rong digit, yaiku 87 × 62, kanthi pitulungan gambar.",
+      "Tabel iki nuduhake tahap-tahap ngepingake rong wilangan rong digit, yaiku 87 × 62, kanthi pitulungan gambar."
+    ],
+    [
+      "Susunan perkalian vertikal 62 dengan 87.",
+      "Susunan ping-pingan vertikal 62 karo 87.",
+      "Susunan ping-pingan vertikal 62 karo 87."
+    ],
+    [
+      "Mulailah dengan mengalikan 7 dengan 62. Kalikan 7 dengan digit pada tempat satuan 62.",
+      "Miwitia kanthi ngepingake 7 karo 62. Pingna 7 karo digit ing panggonan satuan 62.",
+      "Miwitia kanthi ngepingake 7 karo 62. Pingna 7 karo digit ing panggonan satuan 62."
+    ],
+    [
+      ". Tulis 4 pada tempat satuan hasil kali dan simpan 1 pada tempat puluhan.",
+      ". Tulisen 4 ing panggonan satuan asil ping-pingan lan simpen 1 ing panggonan puluhan.",
+      ". Tulisen 4 ing panggonan satuan asil ping-pingan lan simpen 1 ing panggonan puluhan."
+    ],
+    [
+      "Susunan perkalian vertikal 62 dengan 87. Angka merah menunjukkan angka simpanan 1 di atas 6 dan digit satuan 4 pada hasil kali parsial pertama dari 7 × 2 = 14.",
+      "Susunan ping-pingan vertikal 62 karo 87. Angka abang nuduhake angka simpenan 1 ing ndhuwur 6 lan digit satuan 4 ing asil ping-pingan parsial kapisan saka 7 × 2 = 14.",
+      "Susunan ping-pingan vertikal 62 karo 87. Angka abang nuduhake angka simpenan 1 ing ndhuwur 6 lan digit satuan 4 ing asil ping-pingan parsial kapisan saka 7 × 2 = 14."
+    ],
+    [
+      "Kalikan 7 dengan digit pada tempat puluhan 62.",
+      "Pingna 7 karo digit ing panggonan puluhan 62.",
+      "Pingna 7 karo digit ing panggonan puluhan 62."
+    ],
+    [
+      ". Tambahkan 1 puluhan yang disimpan.",
+      ". Tambahna 1 puluhan sing disimpen.",
+      ". Tambahna 1 puluhan sing disimpen."
+    ],
+    [
+      ". Tulis 3 pada tempat puluhan hasil kali dan 4 pada tempat ratusan.",
+      ". Tulisen 3 ing panggonan puluhan asil ping-pingan lan 4 ing panggonan atusan.",
+      ". Tulisen 3 ing panggonan puluhan asil ping-pingan lan 4 ing panggonan atusan."
+    ],
+    [
+      "Perkalian bersusun 62 dengan 87. Hasil kali parsial pertama, 62 × 7, ditampilkan sebagai 434; angka simpanan 1 berwarna merah berada di atas angka 6 yang berwarna hitam.",
+      "Ping-pingan susun 62 karo 87. Asil ping-pingan parsial kapisan, 62 × 7, dituduhake minangka 434; angka simpenan 1 werna abang ana ing ndhuwur angka 6 sing werna abang.",
+      "Ping-pingan susun 62 karo 87. Asil ping-pingan parsial kapisan, 62 × 7, dituduhake minangka 434; angka simpenan 1 werna abang ana ing ndhuwur angka 6 sing werna abang."
+    ],
+    [
+      "Hasil kali parsial pertama adalah 434.",
+      "Asil ping-pingan parsial kapisan yaiku 434.",
+      "Asil ping-pingan parsial kapisan yaiku 434."
+    ],
+    [
+      "Sekarang tulis 0 di bawah 4 pada tempat satuan hasil kali parsial berikutnya sebagai penanda tempat, karena kini kita mengalikan digit pada tempat puluhan 87 dengan 62. Kalikan 8 dengan digit pada tempat satuan 62.",
+      "Saiki tulisen 0 ing ngisor 4 ing panggonan satuan asil ping-pingan parsial sabanjure minangka tandha panggonan, amarga saiki kita ngepingake digit ing panggonan puluhan 87 karo 62. Pingna 8 karo digit ing panggonan satuan 62.",
+      "Saiki tulisen 0 ing ngisor 4 ing panggonan satuan asil ping-pingan parsial sabanjure minangka tandha panggonan, amarga saiki kita ngepingake digit ing panggonan puluhan 87 karo 62. Pingna 8 karo digit ing panggonan satuan 62."
+    ],
+    [
+      ". Tulis 6 pada tempat berikutnya, yaitu tempat puluhan, lalu simpan 1 pada tempat puluhan.",
+      ". Tulisen 6 ing panggonan sabanjure, yaiku panggonan puluhan, banjur simpen 1 ing panggonan puluhan.",
+      ". Tulisen 6 ing panggonan sabanjure, yaiku panggonan puluhan, banjur simpen 1 ing panggonan puluhan."
+    ],
+    [
+      "Perkalian bersusun 62 dengan 87. Tahap-tahapnya menunjukkan 62 × 7 = 434 dan 2 × 8 = 16, dengan angka simpanan 1 ditulis di atas tempat puluhan dan 6 ditulis pada tempat puluhan di bawah sehingga terbentuk 60.",
+      "Ping-pingan susun 62 karo 87. Tahap-tahape nuduhake 62 × 7 = 434 lan 2 × 8 = 16, kanthi angka simpenan 1 ditulis ing ndhuwur panggonan puluhan lan 6 ditulis ing panggonan puluhan ing ngisor nganti dadi 60.",
+      "Ping-pingan susun 62 karo 87. Tahap-tahape nuduhake 62 × 7 = 434 lan 2 × 8 = 16, kanthi angka simpenan 1 ditulis ing ndhuwur panggonan puluhan lan 6 ditulis ing panggonan puluhan ing ngisor nganti dadi 60."
+    ],
+    [
+      "Kalikan 8 dengan 6, yaitu digit pada tempat puluhan 62, lalu tambahkan 1 puluhan yang disimpan sehingga diperoleh 49. Tulis 9 pada tempat ratusan hasil kali dan 4 pada tempat ribuan.",
+      "Pingna 8 karo 6, yaiku digit ing panggonan puluhan 62, banjur tambahna 1 puluhan sing disimpen supaya dipikolehi 49. Tulisen 9 ing panggonan atusan asil ping-pingan lan 4 ing panggonan éwuan.",
+      "Pingna 8 karo 6, yaiku digit ing panggonan puluhan 62, banjur tambahna 1 puluhan sing disimpen supaya oleh 49. Tulisen 9 ing panggonan atusan asil ping-pingan lan 4 ing panggonan éwuan."
+    ],
+    [
+      "Perkalian bersusun 62 dengan 87. Tahap-tahapnya menunjukkan 62 × 7 = 434 dan 62 × 80 = 4.960, dengan angka merah sebagai angka simpanan dan hasil kali parsial kedua.",
+      "Ping-pingan susun 62 karo 87. Tahap-tahape nuduhake 62 × 7 = 434 lan 62 × 80 = 4.960, kanthi angka abang minangka angka simpenan lan asil ping-pingan parsial kapindho.",
+      "Ping-pingan susun 62 karo 87. Tahap-tahape nuduhake 62 × 7 = 434 lan 62 × 80 = 4.960, kanthi angka abang minangka angka simpenan lan asil ping-pingan parsial kapindho."
+    ],
+    [
+      "Hasil kali parsial kedua adalah 4.960. Jumlahkan hasil kali parsial.",
+      "Asil ping-pingan parsial kapindho yaiku 4.960. Tambahna asil ping-pingan parsial.",
+      "Asil ping-pingan parsial kapindho yaiku 4.960. Tambahna asil ping-pingan parsial."
+    ],
+    [
+      "Perkalian bersusun 62 dengan 87. Hasil kali parsial 434 dijumlahkan dengan 4.960 sehingga diperoleh 5.394.",
+      "Ping-pingan susun 62 karo 87. Asil ping-pingan parsial 434 ditambah karo 4.960 supaya dipikolehi 5.394.",
+      "Ping-pingan susun 62 karo 87. Asil ping-pingan parsial 434 ditambah karo 4.960 supaya oleh 5.394."
+    ],
+    [
+      "Tabel ini memperagakan metode perkalian bersusun untuk mengalikan bilangan dua digit dengan perpangkatan sepuluh, yaitu 10 dan 100, beserta tahap setiap perhitungan.",
+      "Tabel iki nuduhake cara ping-pingan susun kanggo ngepingake wilangan rong digit karo pangkat sepuluh, yaiku 10 lan 100, lan tahap saben petungan.",
+      "Tabel iki nuduhake cara ping-pingan susun kanggo ngepingake wilangan rong digit karo pangkat sepuluh, yaiku 10 lan 100, lan tahap saben petungan."
+    ],
+    [
+      "Ketika kita mengalikan",
+      "Nalika kita ngepingake",
+      "Nalika kita ngepingake"
+    ],
+    [
+      "hasil kalinya adalah",
+      "asil ping-pingane yaiku",
+      "asil ping-pingane yaiku"
+    ],
+    [
+      "Perhatikan bahwa",
+      "Gatekna yen",
+      "Gatekna yen"
+    ],
+    [
+      "memiliki satu nol, dan kita menaruh satu nol setelah",
+      "duwe siji nol, lan kita nyelehake siji nol sawise",
+      "duwe siji nol, lan kita nyelehake siji nol sawise"
+    ],
+    [
+      "untuk memperoleh hasil kali. Ketika kita mengalikan",
+      "kanggo entuk asil ping-pingan. Nalika kita ngepingake",
+      "kanggo entuk asil ping-pingan. Nalika kita ngepingake"
+    ],
+    [
+      "memiliki dua nol, dan kita menaruh dua nol setelah",
+      "duwe rong nol, lan kita nyelehake rong nol sawise",
+      "duwe rong nol, lan kita nyelehake rong nol sawise"
+    ],
+    [
+      "untuk memperoleh hasil kali.",
+      "kanggo entuk asil ping-pingan.",
+      "kanggo entuk asil ping-pingan."
+    ],
+    [
+      "Apakah Anda melihat polanya? Jika kita mengalikan",
+      "Apa sampeyan weruh polane? Yen kita ngepingake",
+      "Apa kowe weruh polane? Yen kita ngepingake"
+    ],
+    [
+      "yang memiliki empat nol, kita menaruh empat nol setelah",
+      "sing duwe patang nol, kita nyelehake patang nol sawise",
+      "sing duwe patang nol, kita nyelehake patang nol sawise"
+    ],
+    [
+      "sehingga diperoleh hasil kali",
+      "supaya dipikolehi asil ping-pingan",
+      "supaya oleh asil ping-pingan"
+    ],
+    [
+      "Faktor bawah, 438, memiliki tiga digit sehingga akan ada",
+      "Faktor ing ngisor, 438, duwe telung digit, mula bakal ana",
+      "Faktor ing ngisor, 438, duwe telung digit, mula bakal ana"
+    ],
+    [
+      "hasil kali parsial. Kita tidak perlu menulis",
+      "asil ping-pingan parsial. Kita ora perlu nulis",
+      "asil ping-pingan parsial. Kita ora perlu nulis"
+    ],
+    [
+      "sebagai penanda tempat selama setiap hasil kali parsial ditulis pada tempat yang tepat.",
+      "minangka tandha panggonan anggere saben asil ping-pingan parsial ditulis ing panggonan sing bener.",
+      "minangka tandha panggonan anggere saben asil ping-pingan parsial ditulis ing panggonan sing bener."
+    ],
+    [
+      "Perkalian bersusun 354 dengan 438. Hasil kali parsialnya adalah 2.832 dari 8 × 354, 10.620 dari 30 × 354, dan 141.600 dari 400 × 354. Ketiganya dijumlahkan sehingga diperoleh 155.052.",
+      "Ping-pingan susun 354 karo 438. Asil ping-pingan parsiale yaiku 2.832 saka 8 × 354, 10.620 saka 30 × 354, lan 141.600 saka 400 × 354. Telu-telune ditambah supaya dipikolehi 155.052.",
+      "Ping-pingan susun 354 karo 438. Asil ping-pingan parsiale yaiku 2.832 saka 8 × 354, 10.620 saka 30 × 354, lan 141.600 saka 400 × 354. Telu-telune ditambah supaya oleh 155.052."
+    ],
+    [
+      "Seharusnya ada",
+      "Mesthine ana",
+      "Mesthine ana"
+    ],
+    [
+      "hasil kali parsial. Hasil kali parsial kedua diperoleh dengan mengalikan",
+      "asil ping-pingan parsial. Asil ping-pingan parsial kapindho dipikolehi kanthi ngepingake",
+      "asil ping-pingan parsial. Asil ping-pingan parsial kapindho diolehake kanthi ngepingake"
+    ],
+    [
+      "Perkalian bersusun 896 dengan 201. Hasil kali parsialnya adalah 896 dari 1 × 896, 000 dari 0 × 896 pada tempat puluhan, dan 179.200 dari 200 × 896. Hasil kali parsial dijumlahkan sehingga diperoleh 180.096.",
+      "Ping-pingan susun 896 karo 201. Asil ping-pingan parsiale yaiku 896 saka 1 × 896, 000 saka 0 × 896 ing panggonan puluhan, lan 179.200 saka 200 × 896. Asil ping-pingan parsial ditambah supaya dipikolehi 180.096.",
+      "Ping-pingan susun 896 karo 201. Asil ping-pingan parsiale yaiku 896 saka 1 × 896, 000 saka 0 × 896 ing panggonan puluhan, lan 179.200 saka 200 × 896. Asil ping-pingan parsial ditambah supaya oleh 180.096."
+    ],
+    [
+      "hasil kali parsial",
+      "asil ping-pingan parsial",
+      "asil ping-pingan parsial"
+    ],
+    [
+      "kedua yang semuanya nol tidak memengaruhi hasil. Kita dapat menempatkan satu nol sebagai penanda tempat pada tempat puluhan, lalu langsung mengalikan dengan",
+      "kapindho sing kabeh nol ora mengaruhi asil. Kita bisa nyelehake siji nol minangka tandha panggonan ing panggonan puluhan, banjur langsung ngepingake karo",
+      "kapindho sing kabeh nol ora mengaruhi asil. Kita bisa nyelehake siji nol minangka tandha panggonan ing panggonan puluhan, banjur langsung ngepingake karo"
+    ],
+    [
+      "pada tempat ratusan, seperti ditunjukkan.",
+      "ing panggonan atusan, kaya sing dituduhake.",
+      "ing panggonan atusan, kaya sing dituduhake."
+    ],
+    [
+      "Kalikan terlebih dahulu dengan",
+      "Pingna dhisik karo",
+      "Pingna dhisik karo"
+    ],
+    [
+      "lalu, untuk digit 0 pada tempat puluhan, sisipkan satu nol sebagai penanda tempat. Kemudian kalikan dengan",
+      "banjur, kanggo digit 0 ing panggonan puluhan, lebokna siji nol minangka tandha panggonan. Banjur pingna karo",
+      "banjur, kanggo digit 0 ing panggonan puluhan, lebokna siji nol minangka tandha panggonan. Banjur pingna karo"
+    ],
+    [
+      "dan tempatkan digit",
+      "lan selehna digit",
+      "lan selehna digit"
+    ],
+    [
+      "pada tempat ratusan. Digit tersebut berasal dari hasil",
+      "ing panggonan atusan. Digit kasebut asale saka asil",
+      "ing panggonan atusan. Digit iku asale saka asil"
+    ],
+    [
+      "Hal ini karena",
+      "Iki amarga",
+      "Iki amarga"
+    ],
+    [
+      "Jika terdapat tiga faktor atau lebih, kita mengalikan dua faktor pertama, kemudian mengalikan hasilnya dengan faktor berikutnya. Sebagai contoh:",
+      "Yen ana telung faktor utawa luwih, kita ngepingake rong faktor kapisan, banjur ngepingake asile karo faktor sabanjure. Tuladhane:",
+      "Yen ana telung faktor utawa luwih, kita ngepingake rong faktor kapisan, banjur ngepingake asile karo faktor sabanjure. Tuladhane:"
+    ],
+    [
+      "Peragaan bertahap untuk mengalikan tiga bilangan, yaitu 8 × 3 × 2.",
+      "Peragaan tahap-tahap ngepingake telung wilangan, yaiku 8 × 3 × 2.",
+      "Peragaan tahap-tahap ngepingake telung wilangan, yaiku 8 × 3 × 2."
+    ],
+    [
+      "untuk mengalikan",
+      "kanggo ngepingake",
+      "kanggo ngepingake"
+    ],
+    [
+      "kalikan dahulu",
+      "pingna dhisik",
+      "pingna dhisik"
+    ],
+    [
+      "kemudian kalikan",
+      "banjur pingna",
+      "banjur pingna"
+    ],
+    [
+      "Menerjemahkan Frasa Verbal ke Notasi Matematika",
+      "Ngowahi Frasa Verbal dadi Notasi Matematika",
+      "Ngowahi Frasa Verbal dadi Notasi Matematika"
+    ],
+    [
+      "Sebelumnya dalam bagian ini, kita menerjemahkan notasi matematika ke dalam kata-kata. Sekarang kita membalik proses tersebut dan menerjemahkan",
+      "Sadurunge ing bagean iki, kita ngowahi notasi matematika dadi tembung. Saiki kita mbalikke proses kasebut lan ngowahi",
+      "Sadurunge ing bagean iki, kita ngowahi notasi matematika dadi tembung. Saiki prosese diwalik lan kita ngowahi"
+    ],
+    [
+      "frasa verbal",
+      "frasa verbal",
+      "frasa verbal"
+    ],
+    [
+      "ke notasi matematika. Beberapa kata yang menunjukkan perkalian diberikan dalam",
+      "dadi notasi matematika. Sawetara tembung sing nuduhake ping-pingan ana ing",
+      "dadi notasi matematika. Sawetara tembung sing nuduhake ping-pingan ana ing"
+    ],
+    [
+      "Tabel dengan 4 kolom dan 3 baris. Kolom-kolomnya berjudul operasi, frasa verbal, contoh, dan ekspresi. Isinya menunjukkan kata-kata kali, hasil kali, dan dua kali beserta notasi perkalian yang sesuai.",
+      "Tabel kanthi 4 kolom lan 3 larik frasa ing baris isi sing padha. Irah-irahan kolome yaiku operasi, frasa verbal, tuladha, lan ekspresi. Isine nuduhake tembung ping, asil ping-pingan, lan loro ping kanthi notasi ping-pingan sing cocog.",
+      "Tabel kanthi 4 kolom lan 3 larik frasa ing baris isi sing padha. Irah-irahan kolome yaiku operasi, frasa verbal, tuladha, lan ekspresi. Isine nuduhake tembung ping, asil ping-pingan, lan loro ping kanthi notasi ping-pingan sing cocog."
+    ],
+    [
+      "Frasa Verbal",
+      "Frasa Verbal",
+      "Frasa Verbal"
+    ],
+    [
+      "Contoh",
+      "Tuladha",
+      "Tuladha"
+    ],
+    [
+      "kali",
+      "ping",
+      "ping"
+    ],
+    [
+      "dua kali",
+      "loro ping",
+      "loro ping"
+    ],
+    [
+      "atau",
+      "utawa",
+      "utawa"
+    ],
+    [
+      "Terjemahkan ke notasi matematika dan sederhanakan: hasil kali",
+      "Owahana dadi notasi matematika lan prasajakna: asil ping-pingan",
+      "Owahana dadi notasi matematika lan prasajakna: asil ping-pingan"
+    ],
+    [
+      "Frasa",
+      "Frasa",
+      "Frasa"
+    ],
+    [
+      "menunjukkan bahwa kita harus mengalikan. Bilangan yang muncul",
+      "nuduhake yen kita kudu ngepingake. Wilangan sing ana",
+      "nuduhake yen kita kudu ngepingake. Wilangan sing ana"
+    ],
+    [
+      "setelah",
+      "sawise",
+      "sawise"
+    ],
+    [
+      "frasa itu, yaitu",
+      "frasa kasebut, yaiku",
+      "frasa iku, yaiku"
+    ],
+    [
+      ", menunjukkan kedua faktornya.",
+      ", nuduhake rong faktore.",
+      ", nuduhake rong faktore."
+    ],
+    [
+      "Tahap-tahap untuk menerjemahkan frasa verbal ‘hasil kali 12 dan 27’ menjadi ekspresi matematika dan menghitung hasilnya.",
+      "Tahap-tahap ngowahi frasa verbal ‘asil ping-pingan 12 lan 27’ dadi ekspresi matematika lan ngetung asile.",
+      "Tahap-tahap ngowahi frasa verbal ‘asil ping-pingan 12 lan 27’ dadi ekspresi matematika lan ngetung asile."
+    ],
+    [
+      "hasil kali 12 dan 27",
+      "asil ping-pingan 12 lan 27",
+      "asil ping-pingan 12 lan 27"
+    ],
+    [
+      "Terjemahkan.",
+      "Owahana.",
+      "Owahana."
+    ],
+    [
+      "Terjemahkan ke notasi matematika dan sederhanakan: dua kali dua ratus sebelas.",
+      "Owahana dadi notasi matematika lan prasajakna: loro ping rong atus sewelas.",
+      "Owahana dadi notasi matematika lan prasajakna: loro ping rong atus sewelas."
+    ],
+    [
+      "menunjukkan bahwa kita harus mengalikan dengan",
+      "nuduhake yen kita kudu ngepingake karo",
+      "nuduhake yen kita kudu ngepingake karo"
+    ],
+    [
+      "Tabel ini memperagakan proses menerjemahkan frasa verbal matematika menjadi ekspresi aljabar, lalu menghitung hasil numeriknya.",
+      "Tabel iki nuduhake proses ngowahi frasa verbal matematika dadi ekspresi aljabar, banjur ngetung asil wilangane.",
+      "Tabel iki nuduhake proses ngowahi frasa verbal matematika dadi ekspresi aljabar, banjur ngetung asil wilangane."
+    ],
+    [
+      "dua kali dua ratus sebelas",
+      "loro ping rong atus sewelas",
+      "loro ping rong atus sewelas"
+    ],
+    [
+      "Terjemahkan ke notasi matematika dan sederhanakan: dua kali seratus enam puluh tujuh.",
+      "Owahana dadi notasi matematika lan prasajakna: loro ping satus sewidak pitu.",
+      "Owahana dadi notasi matematika lan prasajakna: loro ping satus sewidak pitu."
+    ],
+    [
+      "Terjemahkan ke notasi matematika dan sederhanakan: dua kali dua ratus lima puluh delapan.",
+      "Owahana dadi notasi matematika lan prasajakna: loro ping rong atus sèket wolu.",
+      "Owahana dadi notasi matematika lan prasajakna: loro ping rong atus sèket wolu."
+    ],
+    [
+      "Mengalikan Bilangan Cacah dalam Penerapan",
+      "Ngepingake Wilangan Cacah ing Penerapan",
+      "Nganggo Ping-pingan Wilangan Cacah ing Soal Penerapan"
+    ],
+    [
+      "Kita akan menggunakan strategi yang sama seperti sebelumnya untuk menyelesaikan",
+      "Kita bakal nggunakake strategi sing padha karo sadurunge kanggo ngrampungake",
+      "Kita bakal nganggo cara sing padha karo sadurunge kanggo ngrampungake"
+    ],
+    [
+      "penerapan",
+      "penerapan",
+      "penerapan"
+    ],
+    [
+      "perkalian. Pertama, kita menentukan apa yang dicari. Kemudian kita menulis frasa yang memuat informasi untuk menentukannya. Selanjutnya, kita menerjemahkan frasa tersebut ke notasi matematika dan menyederhanakannya untuk memperoleh jawaban. Terakhir, kita menulis kalimat yang menjawab pertanyaan.",
+      "ping-pingan. Kapisan, kita nemtokake apa sing digoleki. Banjur kita nulis frasa sing ngemot informasi kanggo nemtokake. Sawise iku, frasa kasebut diowahi dadi notasi matematika lan diprasajakake kanggo entuk wangsulan. Pungkasan, kita nulis ukara kanggo mangsuli pitakon.",
+      "ping-pingan. Dhisik, kita nemtokake apa sing digoleki. Banjur kita nulis frasa sing ngemot informasi kanggo nemtokake. Sawise iku, frasa mau diowahi dadi notasi matematika lan diprasajakake kanggo entuk wangsulan. Pungkasane, kita nulis ukara kanggo mangsuli pitakon."
+    ],
+    [
+      "Humberto membeli",
+      "Humberto tuku",
+      "Humberto tuku"
+    ],
+    [
+      "lembar perangko. Setiap lembar berisi",
+      "lembar prangko. Saben lembar isi",
+      "lembar prangko. Saben lembar isi"
+    ],
+    [
+      "perangko. Berapa banyak perangko yang dibeli Humberto?",
+      "prangko. Pira cacahe prangko sing dituku Humberto?",
+      "prangko. Pira cacahe prangko sing dituku Humberto?"
+    ],
+    [
+      "Kita diminta menentukan jumlah seluruh perangko.",
+      "Kita dijaluk nemtokake gunggung cacahe prangko.",
+      "Kita dijaluk ngetung kabeh prangko."
+    ],
+    [
+      "Tabel ini memperagakan proses bertahap untuk menerjemahkan soal cerita menjadi ekspresi matematika, melakukan perhitungan, dan memberikan jawaban akhir.",
+      "Tabel iki nuduhake tahap-tahap ngowahi soal crita dadi ekspresi matematika, nindakake petungan, lan menehi wangsulan pungkasan.",
+      "Tabel iki nuduhake tahap-tahap ngowahi soal crita dadi ekspresi matematika, nindakake petungan, lan menehi wangsulan pungkasan."
+    ],
+    [
+      "Tulis frasa untuk jumlah seluruhnya.",
+      "Tulisen frasa kanggo gunggung cacahe.",
+      "Tulisen frasa kanggo cacah kabeh."
+    ],
+    [
+      "hasil kali 4 dan 20",
+      "asil ping-pingan 4 lan 20",
+      "asil ping-pingan 4 lan 20"
+    ],
+    [
+      "Terjemahkan ke notasi matematika.",
+      "Owahana dadi notasi matematika.",
+      "Owahana dadi notasi matematika."
+    ],
+    [
+      "Perkalian vertikal 20 dengan 4 menghasilkan 80.",
+      "Ping-pingan vertikal 20 karo 4 ngasilake 80.",
+      "Ping-pingan vertikal 20 karo 4 ngasilake 80."
+    ],
+    [
+      "Tulis kalimat untuk menjawab pertanyaan.",
+      "Tulisen ukara kanggo mangsuli pitakon.",
+      "Tulisen ukara kanggo mangsuli pitakon."
+    ],
+    [
+      "Humberto membeli 80 perangko.",
+      "Humberto tuku 80 prangko.",
+      "Humberto tuku 80 prangko."
+    ],
+    [
+      "Valia menyumbangkan air minum untuk kedai makanan ringan pada pertandingan bisbol putranya. Ia membawa",
+      "Valia nyumbang banyu ngombe kanggo warung panganan entheng ing tandhing bisbol anake lanang. Dheweke nggawa",
+      "Valia nyumbang banyu ngombe kanggo warung panganan entheng ing tandhing bisbol anake lanang. Dheweke nggawa"
+    ],
+    [
+      "kardus botol air. Setiap kardus berisi",
+      "kardhus botol banyu. Saben kardhus isi",
+      "kardhus botol banyu. Saben kardhus isi"
+    ],
+    [
+      "botol air. Berapa banyak botol air yang disumbangkan Valia?",
+      "botol banyu. Pira cacahe botol banyu sing disumbangake Valia?",
+      "botol banyu. Pira cacahe botol banyu sing disumbangake Valia?"
+    ],
+    [
+      "Valia menyumbangkan 144 botol air.",
+      "Valia nyumbang 144 botol banyu.",
+      "Valia nyumbang 144 botol banyu."
+    ],
+    [
+      "Vanessa membawa",
+      "Vanessa nggawa",
+      "Vanessa nggawa"
+    ],
+    [
+      "bungkus sosis ke acara reuni keluarga. Setiap bungkus berisi",
+      "bungkus sosis menyang reuni kulawarga. Saben bungkus isi",
+      "bungkus sosis menyang reuni kulawarga. Saben bungkus isi"
+    ],
+    [
+      "sosis. Berapa banyak sosis yang dibawa Vanessa?",
+      "sosis. Pira cacahe sosis sing digawa Vanessa?",
+      "sosis. Pira cacahe sosis sing digawa Vanessa?"
+    ],
+    [
+      "Vanessa membawa 80 sosis.",
+      "Vanessa nggawa 80 sosis.",
+      "Vanessa nggawa 80 sosis."
+    ],
+    [
+      "Ketika memasak nasi, Rena menggunakan air sebanyak dua kali jumlah beras. Berapa cangkir air yang diperlukan untuk memasak",
+      "Nalika masak sega, Rena nggunakake banyu sing akehe loro ping akehe beras. Pira cup banyu sing dibutuhake kanggo masak",
+      "Nalika masak sega, Rena nganggo banyu sing akehe loro ping akehe beras. Pira cup banyu sing dibutuhake kanggo masak"
+    ],
+    [
+      "cangkir beras?",
+      "cup beras?",
+      "cup beras?"
+    ],
+    [
+      "Kita diminta menentukan banyaknya air yang diperlukan Rena.",
+      "Kita dijaluk nemtokake akehe banyu sing dibutuhake Rena.",
+      "Kita dijaluk nemtokake akehe banyu sing dibutuhake Rena."
+    ],
+    [
+      "Tabel ini memperagakan proses bertahap untuk menerjemahkan soal cerita menjadi ekspresi matematika dan memperoleh jawaban numerik akhir.",
+      "Tabel iki nuduhake tahap-tahap ngowahi soal crita dadi ekspresi matematika lan entuk wangsulan wilangan pungkasan.",
+      "Tabel iki nuduhake tahap-tahap ngowahi soal crita dadi ekspresi matematika lan entuk wangsulan wilangan pungkasan."
+    ],
+    [
+      "Tulis sebagai frasa.",
+      "Tulisen minangka frasa.",
+      "Tulisen minangka frasa."
+    ],
+    [
+      "dua kali jumlah 4 cangkir",
+      "loro ping akehe 4 cup",
+      "loro ping akehe 4 cup"
+    ],
+    [
+      "Kalikan untuk menyederhanakan.",
+      "Pingna kanggo mrasajakake.",
+      "Pingna kanggo mrasajakake."
+    ],
+    [
+      "Rena memerlukan 8 cangkir air untuk 4 cangkir beras.",
+      "Rena butuh 8 cup banyu kanggo 4 cup beras.",
+      "Rena butuh 8 cup banyu kanggo 4 cup beras."
+    ],
+    [
+      "Erin sedang merencanakan taman bunganya. Ia ingin menanam dahlia sebanyak dua kali jumlah bunga matahari. Jika ia menanam 14 bunga matahari, berapa banyak dahlia yang diperlukan?",
+      "Erin lagi ngrancang taman kembange. Dheweke kepengin nandur dahlia sing cacahe loro ping cacahe kembang srengenge. Yen dheweke nandur 14 kembang srengenge, pira cacahe dahlia sing dibutuhake?",
+      "Erin lagi ngrancang taman kembange. Dheweke kepengin nandur dahlia sing cacahe loro ping cacahe kembang srengenge. Yen dheweke nandur 14 kembang srengenge, pira cacahe dahlia sing dibutuhake?"
+    ],
+    [
+      "Erin memerlukan 28 dahlia.",
+      "Erin butuh 28 dahlia.",
+      "Erin butuh 28 dahlia."
+    ],
+    [
+      "Sebuah paduan suara perguruan tinggi memiliki anggota perempuan sebanyak dua kali jumlah anggota laki-laki. Ada 18 anggota laki-laki dalam paduan suara itu. Berapa banyak anggota perempuannya?",
+      "Sawijining paduan swara perguruan tinggi duwe anggota wadon sing cacahe loro ping cacahe anggota lanang. Ana 18 anggota lanang ing paduan swara iku. Pira cacahe anggota wadon?",
+      "Sawijining paduan swara perguruan tinggi duwe anggota wadon sing cacahe loro ping cacahe anggota lanang. Ana 18 anggota lanang ing paduan swara iku. Pira cacahe anggota wadon?"
+    ],
+    [
+      "Ada 36 anggota perempuan dalam paduan suara itu.",
+      "Ana 36 anggota wadon ing paduan swara iku.",
+      "Ana 36 anggota wadon ing paduan swara iku."
+    ],
+    [
+      "Van berencana membangun teras. Ia akan membuat",
+      "Van ngrancang gawe teras. Dheweke bakal nggawe",
+      "Van ngrancang gawe teras. Dheweke bakal nggawe"
+    ],
+    [
+      "baris ubin, dengan",
+      "baris jubin, kanthi",
+      "baris jubin, kanthi"
+    ],
+    [
+      "ubin pada setiap baris. Berapa banyak ubin yang diperlukan untuk teras tersebut?",
+      "jubin ing saben baris. Pira cacahe jubin sing dibutuhake kanggo teras kasebut?",
+      "jubin ing saben baris. Pira cacahe jubin sing dibutuhake kanggo teras iku?"
+    ],
+    [
+      "Kita diminta menentukan jumlah seluruh ubin.",
+      "Kita dijaluk nemtokake gunggung cacahe jubin.",
+      "Kita dijaluk ngetung kabeh jubin."
+    ],
+    [
+      "Tabel ini memperagakan proses bertahap untuk menerjemahkan frasa verbal menjadi notasi matematika, menyelesaikannya, dan memberikan jawaban akhir.",
+      "Tabel iki nuduhake tahap-tahap ngowahi frasa verbal dadi notasi matematika, ngrampungake, lan menehi wangsulan pungkasan.",
+      "Tabel iki nuduhake tahap-tahap ngowahi frasa verbal dadi notasi matematika, ngrampungake, lan menehi wangsulan pungkasan."
+    ],
+    [
+      "Tulis sebuah frasa.",
+      "Tulisen sawijining frasa.",
+      "Tulisen frasa."
+    ],
+    [
+      "hasil kali 8 dan 14",
+      "asil ping-pingan 8 lan 14",
+      "asil ping-pingan 8 lan 14"
+    ],
+    [
+      "Van memerlukan 112 ubin untuk terasnya.",
+      "Van butuh 112 jubin kanggo terase.",
+      "Van butuh 112 jubin kanggo terase."
+    ],
+    [
+      "Jane sedang memasang ubin pada lantai ruang keluarganya. Ia memerlukan 16 baris ubin, dengan 20 ubin pada setiap baris. Berapa banyak ubin yang diperlukan untuk lantai ruang keluarga?",
+      "Jane lagi masang jubin ing jogan ruang kulawargane. Dheweke butuh 16 baris jubin, kanthi 20 jubin ing saben baris. Pira cacahe jubin sing dibutuhake kanggo jogan ruang kulawarga?",
+      "Jane lagi masang jubin ing jogan ruang kulawargane. Dheweke butuh 16 baris jubin, kanthi 20 jubin ing saben baris. Pira cacahe jubin sing dibutuhake kanggo jogan ruang kulawarga?"
+    ],
+    [
+      "Jane memerlukan 320 ubin.",
+      "Jane butuh 320 jubin.",
+      "Jane butuh 320 jubin."
+    ],
+    [
+      "Yousef sedang memasang genting pada atap garasinya. Ia memerlukan 24 baris genting, dengan 45 genting pada setiap baris. Berapa banyak genting yang diperlukan untuk atap garasi?",
+      "Yousef lagi masang gendheng ing payon garasine. Dheweke butuh 24 baris gendheng, kanthi 45 gendheng ing saben baris. Pira cacahe gendheng sing dibutuhake kanggo payon garasi?",
+      "Yousef lagi masang gendheng ing payon garasine. Dheweke butuh 24 baris gendheng, kanthi 45 gendheng ing saben baris. Pira cacahe gendheng sing dibutuhake kanggo payon garasi?"
+    ],
+    [
+      "Yousef memerlukan 1.080 genting.",
+      "Yousef butuh 1.080 gendheng.",
+      "Yousef butuh 1.080 gendheng."
+    ],
+    [
+      "Jika kita ingin mengetahui ukuran dinding yang perlu dicat atau lantai yang perlu dipasangi karpet, kita harus menentukan",
+      "Yen kita kepengin ngerti ukuran tembok sing perlu dicet utawa jogan sing perlu dipasangi karpet, kita kudu nemtokake",
+      "Yen kita kepengin ngerti ukuran tembok sing perlu dicet utawa jogan sing perlu dipasangi karpet, kita kudu nemtokake"
+    ],
+    [
+      "luas",
+      "jembar",
+      "jembar"
+    ],
+    [
+      "nya. Luas mengukur banyaknya permukaan yang ditutupi oleh suatu bangun. Luas diukur dalam satuan persegi. Kita sering menggunakan inci persegi, kaki persegi, sentimeter persegi, atau mil persegi untuk mengukur luas. Satu sentimeter persegi adalah persegi yang panjang setiap sisinya satu sentimeter (cm). Satu inci persegi adalah persegi yang panjang setiap sisinya satu inci, dan seterusnya.",
+      "e. Jembar ngukur akehe lumahing sing ditutupi sawijining bangun. Jembar diukur nganggo satuan persegi. Kita kerep nggunakake inch persegi, foot persegi, sentimeter persegi, utawa mile persegi kanggo ngukur jembar. Siji sentimeter persegi yaiku persegi sing saben sisine dawane siji sentimeter (cm). Siji inch persegi yaiku persegi sing saben sisine dawane siji inch, lan sateruse.",
+      "e. Jembar ngukur akehe lumahing sing ditutupi sawijining bangun. Jembar diukur nganggo satuan persegi. Kita kerep nganggo inch persegi, foot persegi, sentimeter persegi, utawa mile persegi kanggo ngukur jembar. Siji sentimeter persegi yaiku persegi sing saben sisine dawane siji sentimeter (cm). Siji inch persegi yaiku persegi sing saben sisine dawane siji inch, lan sateruse."
+    ],
+    [
+      "Gambar dua persegi dengan ukuran berbeda. Persegi kecil berukuran 1 sentimeter × 1 sentimeter dan berlabel ‘1 sentimeter persegi’. Persegi besar berukuran 1 inci × 1 inci dan berlabel ‘1 inci persegi’.",
+      "Gambar rong persegi sing beda ukurane. Persegi cilik ukurane 1 sentimeter × 1 sentimeter lan duwe label ‘1 sentimeter persegi’. Persegi gedhe ukurane 1 inch × 1 inch lan duwe label ‘1 inch persegi’.",
+      "Gambar rong persegi sing beda ukurane. Persegi cilik ukurane 1 sentimeter × 1 sentimeter lan duwe label ‘1 sentimeter persegi’. Persegi gedhe ukurane 1 inch × 1 inch lan duwe label ‘1 inch persegi’."
+    ],
+    [
+      "Untuk bangun persegi panjang, luas adalah hasil kali panjang dan lebar.",
+      "Kanggo bangun persegi panjang, jembar yaiku asil ping-pingan dawa lan amba.",
+      "Kanggo bangun persegi panjang, jembar yaiku asil ping-pingan dawa lan amba."
+    ],
+    [
+      "menunjukkan karpet persegi panjang dengan panjang",
+      "nuduhake karpet persegi panjang kanthi dawa",
+      "nuduhake karpet persegi panjang kanthi dawa"
+    ],
+    [
+      "kaki dan lebar",
+      "foot lan amba",
+      "foot lan amba"
+    ],
+    [
+      "kaki. Setiap persegi berukuran",
+      "foot. Saben persegi ukurane",
+      "foot. Saben persegi ukurane"
+    ],
+    [
+      "kaki ×",
+      "foot ×",
+      "foot ×"
+    ],
+    [
+      "kaki, atau",
+      "foot, utawa",
+      "foot, utawa"
+    ],
+    [
+      "kaki persegi. Karpet tersebut tersusun dari",
+      "foot persegi. Karpet kasebut kasusun saka",
+      "foot persegi. Karpet iku kasusun saka"
+    ],
+    [
+      "persegi. Luas karpet adalah",
+      "persegi. Jembar karpet yaiku",
+      "persegi. Jembar karpet yaiku"
+    ],
+    [
+      "kaki persegi.",
+      "foot persegi.",
+      "foot persegi."
+    ],
+    [
+      "Persegi panjang berisi 6 petak, tingginya 2 kaki dan lebarnya 3 kaki. Gambar berlabel ‘2 × 3 = 6 kaki persegi’.",
+      "Persegi panjang isi 6 petak, dhuwure 2 foot lan ambane 3 foot. Gambar duwe label ‘2 × 3 = 6 foot persegi’.",
+      "Persegi panjang isi 6 petak, dhuwure 2 foot lan ambane 3 foot. Gambar duwe label ‘2 × 3 = 6 foot persegi’."
+    ],
+    [
+      "Luas persegi panjang adalah hasil kali panjang dan lebarnya, yaitu",
+      "Jembar persegi panjang yaiku asil ping-pingan dawa lan ambane, yaiku",
+      "Jembar persegi panjang yaiku asil ping-pingan dawa lan ambane, yaiku"
+    ],
+    [
+      "Langit-langit dapur Jen berbentuk persegi panjang dengan panjang 9 kaki dan lebar 12 kaki. Berapakah luas langit-langit dapur Jen?",
+      "Langit-langit pawon Jen awujud persegi panjang kanthi dawa 9 foot lan amba 12 foot. Pira jembare langit-langit pawon Jen?",
+      "Langit-langit pawon Jen awujud persegi panjang kanthi dawa 9 foot lan amba 12 foot. Pira jembare langit-langit pawon Jen?"
+    ],
+    [
+      "Kita diminta menentukan luas langit-langit dapur.",
+      "Kita dijaluk nemtokake jembare langit-langit pawon.",
+      "Kita dijaluk nemtokake jembare langit-langit pawon."
+    ],
+    [
+      "Tabel ini memperagakan proses bertahap untuk menyelesaikan soal cerita tentang luas, mulai dari frasa dan notasi hingga perhitungan dan jawaban akhir.",
+      "Tabel iki nuduhake tahap-tahap ngrampungake soal crita ngenani jembar, wiwit frasa lan notasi nganti petungan lan wangsulan pungkasan.",
+      "Tabel iki nuduhake tahap-tahap ngrampungake soal crita ngenani jembar, wiwit frasa lan notasi nganti petungan lan wangsulan pungkasan."
+    ],
+    [
+      "Tulis frasa untuk luas.",
+      "Tulisen frasa kanggo jembar.",
+      "Tulisen frasa kanggo jembar."
+    ],
+    [
+      "hasil kali 9 dan 12",
+      "asil ping-pingan 9 lan 12",
+      "asil ping-pingan 9 lan 12"
+    ],
+    [
+      "Jawab dengan sebuah kalimat.",
+      "Wangsulana nganggo ukara.",
+      "Wangsulana nganggo ukara."
+    ],
+    [
+      "Luas langit-langit dapur Jen adalah 108 kaki persegi.",
+      "Jembar langit-langit pawon Jen yaiku 108 foot persegi.",
+      "Jembar langit-langit pawon Jen yaiku 108 foot persegi."
+    ],
+    [
+      "Zoila membeli karpet berbentuk persegi panjang. Karpet itu panjangnya 8 kaki dan lebarnya 5 kaki. Berapakah luas karpet tersebut?",
+      "Zoila tuku karpet awujud persegi panjang. Karpet iku dawane 8 foot lan ambane 5 foot. Pira jembare karpet kasebut?",
+      "Zoila tuku karpet awujud persegi panjang. Karpet iku dawane 8 foot lan ambane 5 foot. Pira jembare karpet iku?"
+    ],
+    [
+      "Luas karpet adalah 40 kaki persegi.",
+      "Jembar karpet yaiku 40 foot persegi.",
+      "Jembar karpet yaiku 40 foot persegi."
+    ],
+    [
+      "Jalan masuk rumah Rene berbentuk persegi panjang dengan panjang 45 kaki dan lebar 20 kaki. Berapakah luas jalan masuk tersebut?",
+      "Dalan mlebu omahe Rene awujud persegi panjang kanthi dawa 45 foot lan amba 20 foot. Pira jembare dalan mlebu kasebut?",
+      "Dalan mlebu omahe Rene awujud persegi panjang kanthi dawa 45 foot lan amba 20 foot. Pira jembare dalan mlebu iku?"
+    ],
+    [
+      "Luas jalan masuk adalah 900 kaki persegi.",
+      "Jembar dalan mlebu yaiku 900 foot persegi.",
+      "Jembar dalan mlebu yaiku 900 foot persegi."
+    ],
+    [
+      "AKSES SUMBER DARING TAMBAHAN",
+      "BUKAK SUMBER DARING TAMBAHAN",
+      "BUKAK SUMBER DARING TAMBAHAN"
+    ],
+    [
+      "Perkalian dengan Hasil Kali Parsial",
+      "Ping-pingan nganggo Asil Ping-pingan Parsial",
+      "Ping-pingan nganggo Asil Ping-pingan Parsial"
+    ],
+    [
+      "Contoh Perkalian Bilangan Cacah",
+      "Tuladha Ping-pingan Wilangan Cacah",
+      "Tuladha Ping-pingan Wilangan Cacah"
+    ],
+    [
+      "Konsep Utama",
+      "Konsep Pokok",
+      "Bab-bab Sing Pokok"
+    ],
+    [
+      "Tabel dengan 5 kolom dan 1 baris. Kolom-kolomnya berjudul operasi, notasi, ekspresi, dibaca sebagai, dan hasil. Tabel menunjukkan tiga notasi untuk 3 kali 8 dan membacanya sebagai ‘tiga kali delapan’, dengan hasil ‘hasil kali 3 dan 8’.",
+      "Tabel kanthi 5 kolom lan 1 baris isi. Irah-irahan kolome yaiku operasi, notasi, ekspresi, diwaca, lan asil. Tabel nuduhake telung notasi kanggo 3 ping 8 lan macane ‘telu ping wolu’, kanthi asil ‘asil ping-pingan 3 lan 8’.",
+      "Tabel kanthi 5 kolom lan 1 baris isi. Irah-irahan kolome yaiku operasi, notasi, ekspresi, diwaca, lan asil. Tabel nuduhake telung notasi kanggo 3 ping 8 lan macane ‘telu ping wolu’, kanthi asil ‘asil ping-pingan 3 lan 8’."
+    ],
+    [
+      "Hasil kali sembarang bilangan dengan 0 adalah 0.",
+      "Asil ping-pingan wilangan apa wae karo 0 yaiku 0.",
+      "Asil ping-pingan wilangan apa wae karo 0 yaiku 0."
+    ],
+    [
+      "Hasil kali sembarang bilangan dengan 1 adalah bilangan itu sendiri.",
+      "Asil ping-pingan wilangan apa wae karo 1 yaiku wilangan iku dhewe.",
+      "Asil ping-pingan wilangan apa wae karo 1 yaiku wilangan iku dhewe."
+    ],
+    [
+      "Jika hasil kali pada suatu nilai tempat lebih dari 9, simpan ke nilai tempat berikutnya.",
+      "Yen asil ping-pingan ing sawijining nilai panggonan luwih saka 9, simpen nilai menyang panggonan sabanjure.",
+      "Yen asil ping-pingan ing sawijining nilai panggonan luwih saka 9, simpen nilai menyang panggonan sabanjure."
+    ],
+    [
+      "Tulis hasil kali parsial dengan menyusun digit-digit menurut nilai tempat bilangan di atas. Ulangi untuk tempat puluhan pada bilangan di bawah, tempat ratusan, dan seterusnya.",
+      "Tulisen asil ping-pingan parsial kanthi njejerake digit miturut nilai panggonan wilangan ing ndhuwur. Baleni kanggo panggonan puluhan wilangan ing ngisor, panggonan atusan, lan sateruse.",
+      "Tulisen asil ping-pingan parsial kanthi njejerake digit miturut nilai panggonan wilangan ing ndhuwur. Baleni kanggo panggonan puluhan wilangan ing ngisor, panggonan atusan, lan sateruse."
+    ],
+    [
+      "Latihan Membentuk Kemahiran",
+      "Gladhen kanggo Nguwasani",
+      "Gladhen supaya Luwih Trampil"
+    ],
+    [
+      "Dalam latihan berikut, terjemahkan notasi matematika ke dalam kata-kata.",
+      "Ing gladhen iki, owahana notasi matematika dadi tembung.",
+      "Ing gladhen iki, owahana notasi matematika dadi tembung."
+    ],
+    [
+      "empat kali tujuh; hasil kali empat dan tujuh",
+      "papat ping pitu; asil ping-pingan papat lan pitu",
+      "papat ping pitu; asil ping-pingan papat lan pitu"
+    ],
+    [
+      "lima kali dua belas; hasil kali lima dan dua belas",
+      "lima ping rolas; asil ping-pingan lima lan rolas",
+      "lima ping rolas; asil ping-pingan lima lan rolas"
+    ],
+    [
+      "sepuluh kali dua puluh lima; hasil kali sepuluh dan dua puluh lima",
+      "sepuluh ping salawé; asil ping-pingan sepuluh lan salawé",
+      "sepuluh ping salawé; asil ping-pingan sepuluh lan salawé"
+    ],
+    [
+      "empat puluh dua kali tiga puluh tiga; hasil kali empat puluh dua dan tiga puluh tiga",
+      "patang puluh loro ping telung puluh telu; asil ping-pingan patang puluh loro lan telung puluh telu",
+      "patang puluh loro ping telung puluh telu; asil ping-pingan patang puluh loro lan telung puluh telu"
+    ],
+    [
+      "Dalam latihan berikut, buatlah model perkaliannya.",
+      "Ing gladhen iki, gawea model ping-pingane.",
+      "Ing gladhen iki, gawea model ping-pingane."
+    ],
+    [
+      "Gambar menunjukkan susunan lingkaran abu-abu untuk memperagakan perkalian 3 × 6.",
+      "Gambar nuduhake susunan bunderan klawu kanggo nuduhake ping-pingan 3 × 6.",
+      "Gambar nuduhake susunan bunderan klawu kanggo nuduhake ping-pingan 3 × 6."
+    ],
+    [
+      "Susunan persegi panjang berisi 45 lingkaran abu-abu dalam 5 baris dan 9 kolom. Di bawah susunan tertulis 5 × 9 = 45.",
+      "Susunan persegi panjang isi 45 bunderan klawu ing 5 baris lan 9 kolom. Ing ngisor susunan ana tulisan 5 × 9 = 45.",
+      "Susunan persegi panjang isi 45 bunderan klawu ing 5 baris lan 9 kolom. Ing ngisor susunan ana tulisan 5 × 9 = 45."
+    ],
+    [
+      "Dalam latihan berikut, isilah nilai yang hilang pada setiap tabel.",
+      "Ing gladhen iki, isenana nilai sing durung ana ing saben tabel.",
+      "Ing gladhen iki, isenana nilai sing durung ana ing saben tabel."
+    ],
+    [
+      "Tabel perkalian dengan 11 kolom dan 11 baris; baris serta kolom kepala berwarna lebih gelap. Kolom pertama: ×; 0; 1; 2; 3; 4; 5; 6; 7; 8; 9. Kolom kedua: 0; 0; 0; kosong; 0; 0; 0; 0; kosong; 0; 0. Kolom ketiga: 1; 0; 1; 2; kosong; 4; 5; 6; kosong; 8; 9. Kolom keempat: 2; 0; 2; 4; 6; kosong; 10; 12; 14; kosong; 18. Kolom kelima: 3; kosong; 3; 6; kosong; kosong; 15; kosong; 21; 24; kosong. Kolom keenam: 4; 0; kosong; 8; 12; 16; kosong; 24; kosong; kosong; 36. Kolom ketujuh: 5; 0; kosong; kosong; 15; 20; kosong; kosong; 35; kosong; 45. Kolom kedelapan: 6; 0; 6; 12; kosong; kosong; 30; kosong; kosong; 48; kosong. Kolom kesembilan: 7; 0; 7; kosong; 21; 28; kosong; 42; kosong; kosong; kosong. Kolom kesepuluh: 8; kosong; 8; kosong; kosong; 32; 40; kosong; 56; 64; 72. Kolom kesebelas: 9; 0; kosong; 18; 27; kosong; kosong; 54; 63; kosong; kosong.",
+      "Tabel ping-pingan kanthi 11 kolom lan 11 baris; baris lan kolom sirah luwih peteng. Kolom kapisan: ×; 0; 1; 2; 3; 4; 5; 6; 7; 8; 9. Kolom kapindho: 0; 0; 0; kosong; 0; 0; 0; 0; kosong; 0; 0. Kolom katelu: 1; 0; 1; 2; kosong; 4; 5; 6; kosong; 8; 9. Kolom kapapat: 2; 0; 2; 4; 6; kosong; 10; 12; 14; kosong; 18. Kolom kalima: 3; kosong; 3; 6; kosong; kosong; 15; kosong; 21; 24; kosong. Kolom kaenem: 4; 0; kosong; 8; 12; 16; kosong; 24; kosong; kosong; 36. Kolom kapitu: 5; 0; kosong; kosong; 15; 20; kosong; kosong; 35; kosong; 45. Kolom kawolu: 6; 0; 6; 12; kosong; kosong; 30; kosong; kosong; 48; kosong. Kolom kasanga: 7; 0; 7; kosong; 21; 28; kosong; 42; kosong; kosong; kosong. Kolom kasepuluh: 8; kosong; 8; kosong; kosong; 32; 40; kosong; 56; 64; 72. Kolom kasewelas: 9; 0; kosong; 18; 27; kosong; kosong; 54; 63; kosong; kosong.",
+      "Tabel ping-pingan kanthi 11 kolom lan 11 baris; baris lan kolom sirah luwih peteng. Kolom kapisan: ×; 0; 1; 2; 3; 4; 5; 6; 7; 8; 9. Kolom kapindho: 0; 0; 0; kosong; 0; 0; 0; 0; kosong; 0; 0. Kolom katelu: 1; 0; 1; 2; kosong; 4; 5; 6; kosong; 8; 9. Kolom kapapat: 2; 0; 2; 4; 6; kosong; 10; 12; 14; kosong; 18. Kolom kalima: 3; kosong; 3; 6; kosong; kosong; 15; kosong; 21; 24; kosong. Kolom kaenem: 4; 0; kosong; 8; 12; 16; kosong; 24; kosong; kosong; 36. Kolom kapitu: 5; 0; kosong; kosong; 15; 20; kosong; kosong; 35; kosong; 45. Kolom kawolu: 6; 0; 6; 12; kosong; kosong; 30; kosong; kosong; 48; kosong. Kolom kasanga: 7; 0; 7; kosong; 21; 28; kosong; 42; kosong; kosong; kosong. Kolom kasepuluh: 8; kosong; 8; kosong; kosong; 32; 40; kosong; 56; 64; 72. Kolom kasewelas: 9; 0; kosong; 18; 27; kosong; kosong; 54; 63; kosong; kosong."
+    ],
+    [
+      "Tabel perkalian lengkap 0 sampai 9. Baris 0: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0. Baris 1: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Baris 2: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18. Baris 3: 0, 3, 6, 9, 12, 15, 18, 21, 24, 27. Baris 4: 0, 4, 8, 12, 16, 20, 24, 28, 32, 36. Baris 5: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45. Baris 6: 0, 6, 12, 18, 24, 30, 36, 42, 48, 54. Baris 7: 0, 7, 14, 21, 28, 35, 42, 49, 56, 63. Baris 8: 0, 8, 16, 24, 32, 40, 48, 56, 64, 72. Baris 9: 0, 9, 18, 27, 36, 45, 54, 63, 72, 81.",
+      "Tabel ping-pingan jangkep 0 nganti 9. Baris 0: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0. Baris 1: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Baris 2: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18. Baris 3: 0, 3, 6, 9, 12, 15, 18, 21, 24, 27. Baris 4: 0, 4, 8, 12, 16, 20, 24, 28, 32, 36. Baris 5: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45. Baris 6: 0, 6, 12, 18, 24, 30, 36, 42, 48, 54. Baris 7: 0, 7, 14, 21, 28, 35, 42, 49, 56, 63. Baris 8: 0, 8, 16, 24, 32, 40, 48, 56, 64, 72. Baris 9: 0, 9, 18, 27, 36, 45, 54, 63, 72, 81.",
+      "Tabel ping-pingan jangkep 0 nganti 9. Baris 0: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0. Baris 1: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Baris 2: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18. Baris 3: 0, 3, 6, 9, 12, 15, 18, 21, 24, 27. Baris 4: 0, 4, 8, 12, 16, 20, 24, 28, 32, 36. Baris 5: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45. Baris 6: 0, 6, 12, 18, 24, 30, 36, 42, 48, 54. Baris 7: 0, 7, 14, 21, 28, 35, 42, 49, 56, 63. Baris 8: 0, 8, 16, 24, 32, 40, 48, 56, 64, 72. Baris 9: 0, 9, 18, 27, 36, 45, 54, 63, 72, 81."
+    ],
+    [
+      "Tabel perkalian lengkap 0 sampai 9 dengan baris serta kolom kepala berwarna lebih gelap. Sel 0 pada perpotongan 0 × 2 disorot merah muda; sel lainnya memuat fakta perkalian lengkap.",
+      "Tabel ping-pingan saka 0 nganti 9 sing sapérangan sele wis diisi, kanthi baris lan kolom sirah luwih peteng. Sel 0 ing patemon 0 × 2 wis diisi; sawetara sel liyane kosong kanggo diisi.",
+      "Tabel ping-pingan saka 0 nganti 9 sing sapérangan sele wis diisi, kanthi baris lan kolom sirah luwih peteng. Sel 0 ing patemon 0 × 2 wis diisi; sawetara sel liyane kosong kanggo diisi."
+    ],
+    [
+      "Tabel perkalian dengan kepala baris 4, 5, 6, 7, 8, 9 dan kepala kolom 3, 4, 5, 6, 7, 8, 9. Semua sel hasil kali kosong untuk diisi.",
+      "Tabel ping-pingan kanthi sirah baris 4, 5, 6, 7, 8, 9 lan sirah kolom 3, 4, 5, 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi.",
+      "Tabel ping-pingan kanthi sirah baris 4, 5, 6, 7, 8, 9 lan sirah kolom 3, 4, 5, 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi."
+    ],
+    [
+      "Tabel perkalian lengkap untuk baris 4 sampai 9 dan kolom 3 sampai 9. Baris 4: 12, 16, 20, 24, 28, 32, 36. Baris 5: 15, 20, 25, 30, 35, 40, 45. Baris 6: 18, 24, 30, 36, 42, 48, 54. Baris 7: 21, 28, 35, 42, 49, 56, 63. Baris 8: 24, 32, 40, 48, 56, 64, 72. Baris 9: 27, 36, 45, 54, 63, 72, 81.",
+      "Tabel ping-pingan jangkep kanggo baris 4 nganti 9 lan kolom 3 nganti 9. Baris 4: 12, 16, 20, 24, 28, 32, 36. Baris 5: 15, 20, 25, 30, 35, 40, 45. Baris 6: 18, 24, 30, 36, 42, 48, 54. Baris 7: 21, 28, 35, 42, 49, 56, 63. Baris 8: 24, 32, 40, 48, 56, 64, 72. Baris 9: 27, 36, 45, 54, 63, 72, 81.",
+      "Tabel ping-pingan jangkep kanggo baris 4 nganti 9 lan kolom 3 nganti 9. Baris 4: 12, 16, 20, 24, 28, 32, 36. Baris 5: 15, 20, 25, 30, 35, 40, 45. Baris 6: 18, 24, 30, 36, 42, 48, 54. Baris 7: 21, 28, 35, 42, 49, 56, 63. Baris 8: 24, 32, 40, 48, 56, 64, 72. Baris 9: 27, 36, 45, 54, 63, 72, 81."
+    ],
+    [
+      "Tabel perkalian dengan kepala baris 3, 4, 5, 6, 7, 8, 9 dan kepala kolom 4, 5, 6, 7, 8, 9. Semua sel hasil kali kosong untuk diisi.",
+      "Tabel ping-pingan kanthi sirah baris 3, 4, 5, 6, 7, 8, 9 lan sirah kolom 4, 5, 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi.",
+      "Tabel ping-pingan kanthi sirah baris 3, 4, 5, 6, 7, 8, 9 lan sirah kolom 4, 5, 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi."
+    ],
+    [
+      "Tabel perkalian dengan kepala baris 6, 7, 8, 9 dan kepala kolom 3, 4, 5, 6, 7, 8, 9. Semua sel hasil kali kosong untuk diisi.",
+      "Tabel ping-pingan kanthi sirah baris 6, 7, 8, 9 lan sirah kolom 3, 4, 5, 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi.",
+      "Tabel ping-pingan kanthi sirah baris 6, 7, 8, 9 lan sirah kolom 3, 4, 5, 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi."
+    ],
+    [
+      "Tabel perkalian lengkap untuk baris 6 sampai 9 dan kolom 3 sampai 9. Baris 6: 18, 24, 30, 36, 42, 48, 54. Baris 7: 21, 28, 35, 42, 49, 56, 63. Baris 8: 24, 32, 40, 48, 56, 64, 72. Baris 9: 27, 36, 45, 54, 63, 72, 81.",
+      "Tabel ping-pingan jangkep kanggo baris 6 nganti 9 lan kolom 3 nganti 9. Baris 6: 18, 24, 30, 36, 42, 48, 54. Baris 7: 21, 28, 35, 42, 49, 56, 63. Baris 8: 24, 32, 40, 48, 56, 64, 72. Baris 9: 27, 36, 45, 54, 63, 72, 81.",
+      "Tabel ping-pingan jangkep kanggo baris 6 nganti 9 lan kolom 3 nganti 9. Baris 6: 18, 24, 30, 36, 42, 48, 54. Baris 7: 21, 28, 35, 42, 49, 56, 63. Baris 8: 24, 32, 40, 48, 56, 64, 72. Baris 9: 27, 36, 45, 54, 63, 72, 81."
+    ],
+    [
+      "Tabel perkalian dengan kepala baris 3, 4, 5, 6, 7, 8, 9 dan kepala kolom 6, 7, 8, 9. Semua sel hasil kali kosong untuk diisi.",
+      "Tabel ping-pingan kanthi sirah baris 3, 4, 5, 6, 7, 8, 9 lan sirah kolom 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi.",
+      "Tabel ping-pingan kanthi sirah baris 3, 4, 5, 6, 7, 8, 9 lan sirah kolom 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi."
+    ],
+    [
+      "Tabel perkalian dengan kepala baris dan kepala kolom 5, 6, 7, 8, 9. Semua sel hasil kali kosong untuk diisi.",
+      "Tabel ping-pingan kanthi sirah baris lan sirah kolom 5, 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi.",
+      "Tabel ping-pingan kanthi sirah baris lan sirah kolom 5, 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi."
+    ],
+    [
+      "Tabel perkalian lengkap untuk 5 sampai 9. Baris 5: 25, 30, 35, 40, 45. Baris 6: 30, 36, 42, 48, 54. Baris 7: 35, 42, 49, 56, 63. Baris 8: 40, 48, 56, 64, 72. Baris 9: 45, 54, 63, 72, 81.",
+      "Tabel ping-pingan jangkep kanggo 5 nganti 9. Baris 5: 25, 30, 35, 40, 45. Baris 6: 30, 36, 42, 48, 54. Baris 7: 35, 42, 49, 56, 63. Baris 8: 40, 48, 56, 64, 72. Baris 9: 45, 54, 63, 72, 81.",
+      "Tabel ping-pingan jangkep kanggo 5 nganti 9. Baris 5: 25, 30, 35, 40, 45. Baris 6: 30, 36, 42, 48, 54. Baris 7: 35, 42, 49, 56, 63. Baris 8: 40, 48, 56, 64, 72. Baris 9: 45, 54, 63, 72, 81."
+    ],
+    [
+      "Dalam latihan berikut, kalikan.",
+      "Ing gladhen iki, pingna.",
+      "Ing gladhen iki, pingna."
+    ],
+    [
+      "Dalam latihan berikut, terjemahkan ke notasi matematika dan sederhanakan.",
+      "Ing gladhen iki, owahana dadi notasi matematika lan prasajakna.",
+      "Ing gladhen iki, owahana dadi notasi matematika lan prasajakna."
+    ],
+    [
+      "lima puluh satu kali enam puluh tujuh",
+      "sèket siji ping sewidak pitu",
+      "sèket siji ping sewidak pitu"
+    ],
+    [
+      "empat puluh delapan kali tujuh puluh satu",
+      "patang puluh wolu ping pitung puluh siji",
+      "patang puluh wolu ping pitung puluh siji"
+    ],
+    [
+      "sepuluh kali tiga ratus tujuh puluh lima",
+      "sepuluh ping telung atus pitung puluh lima",
+      "sepuluh ping telung atus pitung puluh lima"
+    ],
+    [
+      "sepuluh kali dua ratus lima puluh lima",
+      "sepuluh ping rong atus sèket lima",
+      "sepuluh ping rong atus sèket lima"
+    ],
+    [
+      "Latihan Campuran",
+      "Gladhen Campuran",
+      "Gladhen Campuran"
+    ],
+    [
+      "Dalam latihan berikut, sederhanakan.",
+      "Ing gladhen iki, prasajakna.",
+      "Ing gladhen iki, prasajakna."
+    ],
+    [
+      "selisih 50 dan 18",
+      "selisih 50 lan 18",
+      "selisih 50 lan 18"
+    ],
+    [
+      "selisih 90 dan 66",
+      "selisih 90 lan 66",
+      "selisih 90 lan 66"
+    ],
+    [
+      "dua kali 35",
+      "loro ping 35",
+      "loro ping 35"
+    ],
+    [
+      "dua kali 140",
+      "loro ping 140",
+      "loro ping 140"
+    ],
+    [
+      "bilangan yang 20 lebih besar daripada 980",
+      "wilangan sing 20 luwih gedhe tinimbang 980",
+      "wilangan sing 20 luwih gedhe tinimbang 980"
+    ],
+    [
+      "bilangan yang 65 lebih besar daripada 325",
+      "wilangan sing 65 luwih gedhe tinimbang 325",
+      "wilangan sing 65 luwih gedhe tinimbang 325"
+    ],
+    [
+      "hasil kali 12 dan 875",
+      "asil ping-pingan 12 lan 875",
+      "asil ping-pingan 12 lan 875"
+    ],
+    [
+      "hasil kali 15 dan 905",
+      "asil ping-pingan 15 lan 905",
+      "asil ping-pingan 15 lan 905"
+    ],
+    [
+      "kurangkan 74 dari 89",
+      "kurangana 74 saka 89",
+      "kurangana 74 saka 89"
+    ],
+    [
+      "kurangkan 45 dari 99",
+      "kurangana 45 saka 99",
+      "kurangana 45 saka 99"
+    ],
+    [
+      "jumlah 3.075 dan 95",
+      "gunggungan 3.075 lan 95",
+      "gunggungan 3.075 lan 95"
+    ],
+    [
+      "jumlah 6.308 dan 724",
+      "gunggungan 6.308 lan 724",
+      "gunggungan 6.308 lan 724"
+    ],
+    [
+      "bilangan yang 366 lebih kecil daripada 814",
+      "wilangan sing 366 luwih cilik tinimbang 814",
+      "wilangan sing 366 luwih cilik tinimbang 814"
+    ],
+    [
+      "bilangan yang 388 lebih kecil daripada 925",
+      "wilangan sing 388 luwih cilik tinimbang 925",
+      "wilangan sing 388 luwih cilik tinimbang 925"
+    ],
+    [
+      "Dalam latihan berikut, selesaikan.",
+      "Ing gladhen iki, rampungna soal.",
+      "Ing gladhen iki, rampungna soal."
+    ],
+    [
+      "Perlengkapan pesta",
+      "Piranti pesta",
+      "Piranti pesta"
+    ],
+    [
+      "Tim membawa 9 pak minuman ringan yang masing-masing berisi enam kaleng ke pesta klub. Berapa banyak kaleng minuman ringan yang dibawa Tim?",
+      "Tim nggawa 9 pak omben-omben entheng sing saben pak isi enem kaleng menyang pesta klub. Pira cacahe kaleng omben-omben sing digawa Tim?",
+      "Tim nggawa 9 pak omben-omben entheng sing saben pak isi enem kaleng menyang pesta klub. Pira cacahe kaleng omben-omben sing digawa Tim?"
+    ],
+    [
+      "Tim membawa 54 kaleng minuman ringan ke pesta.",
+      "Tim nggawa 54 kaleng omben-omben entheng menyang pesta.",
+      "Tim nggawa 54 kaleng omben-omben entheng menyang pesta."
+    ],
+    [
+      "Menjahit",
+      "Njahit",
+      "Njahit"
+    ],
+    [
+      "Kanisha sedang membuat selimut perca. Ia membeli 6 kartu kancing. Setiap kartu berisi empat kancing. Berapa banyak kancing yang dibeli Kanisha?",
+      "Kanisha lagi nggawe kemul saka perca. Dheweke tuku 6 kertu benik. Saben kertu isi patang benik. Pira cacahe benik sing dituku Kanisha?",
+      "Kanisha lagi nggawe kemul saka perca. Dheweke tuku 6 kertu benik. Saben kertu isi patang benik. Pira cacahe benik sing dituku Kanisha?"
+    ],
+    [
+      "Karya wisata",
+      "Wisata sinau",
+      "Wisata sinau"
+    ],
+    [
+      "Tujuh bus sekolah menurunkan siswa di depan sebuah museum di Washington, DC. Setiap bus membawa 44 siswa. Berapa banyak siswa seluruhnya?",
+      "Pitung bis sekolah ngudhunake murid ing ngarep museum ing Washington, DC. Saben bis nggawa 44 murid. Pira gunggung cacahe murid?",
+      "Pitung bis sekolah ngudhunake murid ing ngarep museum ing Washington, DC. Saben bis nggawa 44 murid. Pira gunggung cacahe murid?"
+    ],
+    [
+      "Ada 308 siswa.",
+      "Ana 308 murid.",
+      "Ana 308 murid."
+    ],
+    [
+      "Berkebun",
+      "Ngolah kebon",
+      "Ngolah kebon"
+    ],
+    [
+      "Kathryn membeli 8 baki tanaman pacar air untuk petak bunganya. Setiap baki berisi 24 tanaman. Berapa banyak tanaman yang dibeli Kathryn?",
+      "Kathryn tuku 8 baki tanduran pacar air kanggo petak kembange. Saben baki isi 24 tanduran. Pira cacahe tanduran sing dituku Kathryn?",
+      "Kathryn tuku 8 baki tanduran pacar air kanggo petak kembange. Saben baki isi 24 tanduran. Pira cacahe tanduran sing dituku Kathryn?"
+    ],
+    [
+      "Amal",
+      "Amal",
+      "Amal"
+    ],
+    [
+      "Rey menyumbangkan 15 pak kaus yang masing-masing berisi dua belas buah ke tempat penampungan tunawisma. Berapa banyak kaus yang disumbangkannya?",
+      "Rey nyumbang 15 pak kaos sing saben pak isi rolas kaos menyang papan pangayoman wong tanpa omah. Pira cacahe kaos sing disumbangake?",
+      "Rey nyumbang 15 pak kaos sing saben pak isi rolas kaos menyang papan pangayoman wong tanpa omah. Pira cacahe kaos sing disumbangake?"
+    ],
+    [
+      "Rey menyumbangkan 180 kaus.",
+      "Rey nyumbang 180 kaos.",
+      "Rey nyumbang 180 kaos."
+    ],
+    [
+      "Sekolah",
+      "Sekolah",
+      "Sekolah"
+    ],
+    [
+      "Ada 28 ruang kelas di sekolah dasar Anna C. Scott. Setiap ruang kelas memiliki 26 meja siswa. Berapa jumlah seluruh meja siswa?",
+      "Ana 28 ruang kelas ing sekolah dhasar Anna C. Scott. Saben ruang kelas duwe 26 meja murid. Pira gunggung cacahe meja murid?",
+      "Ana 28 ruang kelas ing sekolah dhasar Anna C. Scott. Saben ruang kelas duwe 26 meja murid. Pira gunggung cacahe meja murid?"
+    ],
+    [
+      "Resep",
+      "Resep",
+      "Resep"
+    ],
+    [
+      "Stephanie sedang membuat minuman sari buah untuk pesta. Resepnya memerlukan sari buah sebanyak dua kali jumlah air soda. Jika ia menggunakan 10 cangkir air soda, berapa cangkir sari buah yang harus digunakan?",
+      "Stephanie lagi nggawe omben-omben sari woh kanggo pesta. Resep kasebut mbutuhake sari woh sing akehe loro ping akehe banyu soda. Yen dheweke nggunakake 10 cup banyu soda, pira cup sari woh sing kudu digunakake?",
+      "Stephanie lagi nggawe omben-omben sari woh kanggo pesta. Resep iku mbutuhake sari woh sing akehe loro ping akehe banyu soda. Yen dheweke nganggo 10 cup banyu soda, pira cup sari woh sing kudu dianggo?"
+    ],
+    [
+      "Stephanie harus menggunakan 20 cangkir sari buah.",
+      "Stephanie kudu nggunakake 20 cup sari woh.",
+      "Stephanie kudu nganggo 20 cup sari woh."
+    ],
+    [
+      "Hiroko sedang membuat kebun sayur. Ia ingin memiliki tanaman selada sebanyak dua kali jumlah tanaman tomat. Jika ia membeli 12 tanaman tomat, berapa banyak tanaman selada yang harus dibeli?",
+      "Hiroko lagi nggawe kebon sayur. Dheweke kepengin duwe tanduran selada sing cacahe loro ping cacahe tanduran tomat. Yen dheweke tuku 12 tanduran tomat, pira cacahe tanduran selada sing kudu dituku?",
+      "Hiroko lagi nggawe kebon sayur. Dheweke kepengin duwe tanduran selada sing cacahe loro ping cacahe tanduran tomat. Yen dheweke tuku 12 tanduran tomat, pira cacahe tanduran selada sing kudu dituku?"
+    ],
+    [
+      "Pemerintahan",
+      "Pamarentahan",
+      "Pamarentahan"
+    ],
+    [
+      "Jumlah senator di Senat Amerika Serikat sebanyak dua kali jumlah negara bagian di Amerika Serikat. Ada 50 negara bagian. Berapa banyak senator di Senat Amerika Serikat?",
+      "Cacahe senator ing Senat Amerika Serikat yaiku loro ping cacahe negara bagean ing Amerika Serikat. Ana 50 negara bagean. Pira cacahe senator ing Senat Amerika Serikat?",
+      "Cacahe senator ing Senat Amerika Serikat yaiku loro ping cacahe negara bagean ing Amerika Serikat. Ana 50 negara bagean. Pira cacahe senator ing Senat Amerika Serikat?"
+    ],
+    [
+      "Ada 100 senator di Senat Amerika Serikat.",
+      "Ana 100 senator ing Senat Amerika Serikat.",
+      "Ana 100 senator ing Senat Amerika Serikat."
+    ],
+    [
+      "Andrea sedang membuat salad kentang untuk makan siang prasmanan. Resep menyatakan bahwa jumlah porsi salad kentang adalah dua kali banyaknya pon kentang. Jika ia membeli 30 pon kentang, berapa porsi salad kentang yang akan tersedia?",
+      "Andrea lagi nggawe salad kenthang kanggo nedha awan prasmanan. Resep nyatakake yen cacahe porsi salad kenthang yaiku loro ping akehe pound kenthang. Yen dheweke tuku 30 pound kenthang, pira porsi salad kenthang sing bakal ana?",
+      "Andrea lagi nggawe salad kenthang kanggo mangan awan prasmanan. Resep nyebut yen cacahe porsi salad kenthang kuwi loro ping akehe pound kenthang. Yen dheweke tuku 30 pound kenthang, pira porsi salad kenthang sing bakal ana?"
+    ],
+    [
+      "Mengecat",
+      "Ngecet",
+      "Ngecet"
+    ],
+    [
+      "Jane sedang mengecat satu dinding ruang keluarganya. Dinding itu berbentuk persegi panjang, lebarnya 13 kaki dan tingginya 9 kaki. Berapakah luas dinding tersebut?",
+      "Jane lagi ngecet siji tembok ruang kulawargane. Tembok iku awujud persegi panjang, ambane 13 foot lan dhuwure 9 foot. Pira jembare tembok kasebut?",
+      "Jane lagi ngecet siji tembok ruang kulawargane. Tembok iku awujud persegi panjang, ambane 13 foot lan dhuwure 9 foot. Pira jembare tembok iku?"
+    ],
+    [
+      "Luas dinding adalah 117 kaki persegi.",
+      "Jembar tembok yaiku 117 foot persegi.",
+      "Jembar tembok yaiku 117 foot persegi."
+    ],
+    [
+      "Dekorasi rumah",
+      "Dekorasi omah",
+      "Dekorasi omah"
+    ],
+    [
+      "Shawnte membeli karpet untuk lorong apartemennya. Karpet itu lebarnya 3 kaki dan panjangnya 18 kaki. Berapakah luas karpet tersebut?",
+      "Shawnte tuku karpet kanggo lorong apartemene. Karpet iku ambane 3 foot lan dawane 18 foot. Pira jembare karpet kasebut?",
+      "Shawnte tuku karpet kanggo lorong apartemene. Karpet iku ambane 3 foot lan dawane 18 foot. Pira jembare karpet iku?"
+    ],
+    [
+      "Ukuran ruangan",
+      "Ukuran ruangan",
+      "Ukuran ruangan"
+    ],
+    [
+      "Ruang pertemuan di pusat kegiatan lansia berbentuk persegi panjang, dengan panjang 42 kaki dan lebar 34 kaki. Berapakah luas ruang pertemuan itu?",
+      "Ruang patemon ing pusat kagiyatan wong sepuh awujud persegi panjang, kanthi dawa 42 foot lan amba 34 foot. Pira jembare ruang patemon iku?",
+      "Ruang patemon ing pusat kagiyatan wong sepuh awujud persegi panjang, kanthi dawa 42 foot lan amba 34 foot. Pira jembare ruang patemon iku?"
+    ],
+    [
+      "Luas ruangan adalah 1.428 kaki persegi.",
+      "Jembar ruangan yaiku 1.428 foot persegi.",
+      "Jembar ruangan yaiku 1.428 foot persegi."
+    ],
+    [
+      "June memiliki kebun sayur di halamannya. Kebun itu berbentuk persegi panjang, dengan panjang 23 kaki dan lebar 28 kaki. Berapakah luas kebun tersebut?",
+      "June duwe kebon sayur ing pekarangane. Kebon iku awujud persegi panjang, kanthi dawa 23 foot lan amba 28 foot. Pira jembare kebon kasebut?",
+      "June duwe kebon sayur ing pekarangane. Kebon iku awujud persegi panjang, kanthi dawa 23 foot lan amba 28 foot. Pira jembare kebon iku?"
+    ],
+    [
+      "Bola basket NCAA",
+      "Bal basket NCAA",
+      "Bal basket NCAA"
+    ],
+    [
+      "Menurut peraturan NCAA, lapangan bola basket berbentuk persegi panjang harus berukuran 94 kaki × 50 kaki. Berapakah luas lapangan bola basket tersebut?",
+      "Miturut aturan NCAA, lapangan bal basket awujud persegi panjang kudu ukurane 94 foot × 50 foot. Pira jembare lapangan bal basket kasebut?",
+      "Miturut aturan NCAA, lapangan bal basket awujud persegi panjang kudu ukurane 94 foot × 50 foot. Pira jembare lapangan bal basket iku?"
+    ],
+    [
+      "Luas lapangan adalah 4.700 kaki persegi.",
+      "Jembar lapangan yaiku 4.700 foot persegi.",
+      "Jembar lapangan yaiku 4.700 foot persegi."
+    ],
+    [
+      "Sepak bola Amerika NCAA",
+      "Bal-balan Amerika NCAA",
+      "Bal-balan Amerika NCAA"
+    ],
+    [
+      "Menurut peraturan NCAA, lapangan sepak bola Amerika berbentuk persegi panjang harus berukuran 360 kaki × 160 kaki. Berapakah luas lapangan tersebut?",
+      "Miturut aturan NCAA, lapangan bal-balan Amerika awujud persegi panjang kudu ukurane 360 foot × 160 foot. Pira jembare lapangan kasebut?",
+      "Miturut aturan NCAA, lapangan bal-balan Amerika awujud persegi panjang kudu ukurane 360 foot × 160 foot. Pira jembare lapangan iku?"
+    ],
+    [
+      "Matematika Sehari-hari",
+      "Matematika Saben Dina",
+      "Matematika Saben Dina"
+    ],
+    [
+      "Pasar saham",
+      "Pasar saham",
+      "Pasar saham"
+    ],
+    [
+      "Javier memiliki 300 lembar saham di sebuah perusahaan. Pada hari Selasa, harga saham naik",
+      "Javier duwe 300 lembar saham ing sawijining perusahaan. Ing dina Slasa, rega saham mundhak",
+      "Javier duwe 300 lembar saham ing sawijining perusahaan. Ing dina Slasa, rega saham mundhak"
+    ],
+    [
+      "per lembar. Berapa besar kenaikan nilai portofolio Javier?",
+      "saben lembar. Pira mundhake nilai portofolio Javier?",
+      "saben lembar. Pira mundhake nilai portofolio Javier?"
+    ],
+    [
+      "Nilai portofolio Javier naik $3.600.",
+      "Nilai portofolio Javier mundhak $3.600.",
+      "Nilai portofolio Javier mundhak $3.600."
+    ],
+    [
+      "Gaji",
+      "Gaji",
+      "Gaji"
+    ],
+    [
+      "Carlton memperoleh kenaikan",
+      "Carlton oleh mundhak gaji",
+      "Carlton oleh mundhak gaji"
+    ],
+    [
+      "pada setiap pembayaran gaji. Ia menerima gaji 24 kali setahun. Berapa besar kenaikan gaji tahunannya?",
+      "ing saben pembayaran gaji. Dheweke nampa gaji 24 ping setaun. Pira mundhake gaji taunan?",
+      "ing saben pembayaran gaji. Dheweke nampa gaji 24 ping setaun. Pira mundhake gaji taunan?"
+    ],
+    [
+      "Latihan Menulis",
+      "Gladhen Nulis",
+      "Gladhen Nulis"
+    ],
+    [
+      "Seberapa yakin Anda terhadap penguasaan fakta-fakta perkalian? Jika belum sepenuhnya yakin, apa yang akan Anda lakukan untuk meningkatkan keterampilan?",
+      "Sepira yakine sampeyan manawa wis nguwasani fakta-fakta ping-pingan? Yen durung yakin tenan, apa sing bakal sampeyan tindakake kanggo nambah katrampilan?",
+      "Sepira yakine kowe manawa wis nguwasani fakta-fakta ping-pingan? Yen durung yakin tenan, apa sing bakal koktindakake kanggo nambah katrampilan?"
+    ],
+    [
+      "Jawaban bervariasi.",
+      "Wangsulan bisa beda-beda.",
+      "Wangsulan bisa beda-beda."
+    ],
+    [
+      "Bagaimana Anda menggunakan model untuk membantu mempelajari fakta-fakta perkalian?",
+      "Kepiye sampeyan nggunakake model kanggo mbantu sinau fakta-fakta ping-pingan?",
+      "Kepiye kowe nganggo model kanggo mbantu sinau fakta-fakta ping-pingan?"
+    ],
+    [
+      "Pemeriksaan Mandiri",
+      "Priksa Dhewe",
+      "Priksa Dhewe"
+    ],
+    [
+      "Setelah menyelesaikan latihan, gunakan daftar periksa ini untuk menilai penguasaan Anda terhadap tujuan bagian ini.",
+      "Sawise ngrampungake gladhen, gunakna dhaptar priksa iki kanggo mbiji sepira sampeyan nguwasani tujuan bagean iki.",
+      "Sawise ngrampungake gladhen, enggonen dhaptar priksa iki kanggo mbiji sepira kowe nguwasani tujuan bagean iki."
+    ],
+    [
+      "Tabel penilaian mandiri keterampilan perkalian: menggunakan notasi, membuat model, mengalikan bilangan cacah, menerjemahkan frasa verbal, dan menerapkan perkalian. Untuk setiap keterampilan tersedia pilihan ‘Yakin’, ‘Dengan sedikit bantuan’, dan ‘Tidak—saya belum memahaminya’.",
+      "Tabel pambiji mandiri katrampilan ping-pingan: nggunakake notasi, nggawe model, ngepingake wilangan cacah, ngowahi frasa verbal, lan ngetrapake ping-pingan. Kanggo saben katrampilan ana pilihan ‘Yakin’, ‘Kanthi pitulungan sathithik’, lan ‘Ora—aku durung mangerteni’.",
+      "Tabel pambiji dhewe katrampilan ping-pingan: nganggo notasi, nggawe model, ngepingake wilangan cacah, ngowahi frasa verbal, lan ngetrapake ping-pingan. Kanggo saben katrampilan ana pilihan ‘Yakin’, ‘Kanthi pitulungan sathithik’, lan ‘Ora—aku durung ngerti’."
+    ],
+    [
+      "Pada skala 1–10, bagaimana Anda menilai penguasaan bagian ini berdasarkan jawaban pada daftar periksa? Bagaimana Anda dapat meningkatkannya?",
+      "Ing skala 1–10, kepiye sampeyan mbiji pangwasaning bagean iki adhedhasar wangsulan ing dhaptar priksa? Kepiye sampeyan bisa ningkatake?",
+      "Ing skala 1–10, kepiye kowe mbiji pangwasanmu ing bagean iki saka wangsulan ing dhaptar priksa? Kepiye kowe bisa ningkatake?"
+    ],
+    [
+      "Hasil kali adalah hasil dari mengalikan dua bilangan atau lebih.",
+      "Asil ping-pingan yaiku asil saka ngepingake rong wilangan utawa luwih.",
+      "Asil ping-pingan yaiku asil saka ngepingake rong wilangan utawa luwih."
+    ]
+  ],
+  "source_bound_attribute_exceptions": [
+    {
+      "element_id": "eip-id1168288456465475826",
+      "attribute": "alt",
+      "source": "Perkalian bersusun 62 dengan 87. Hasil kali parsial pertama, 62 × 7, ditampilkan sebagai 434; angka simpanan 1 berwarna merah berada di atas angka 6 yang berwarna hitam.",
+      "expected_by_track": {
+        "jv-academic": "Ping-pingan susun 62 karo 87. Asil ping-pingan parsial kapisan, 62 × 7, dituduhake minangka 434; angka simpenan 1 werna abang ana ing ndhuwur angka 6 sing werna abang.",
+        "jv-conversation": "Ping-pingan susun 62 karo 87. Asil ping-pingan parsial kapisan, 62 × 7, dituduhake minangka 434; angka simpenan 1 werna abang ana ing ndhuwur angka 6 sing werna abang."
+      },
+      "source_src": "../../media/CNX_BMath_Figure_01_04_020_img-04.png",
+      "source_image_sha256": "d95b69f01064a15ac36ef9e666548c8e6c3549fa8da09b0e71e79e639ade1023",
+      "numeric_source": [
+        "62",
+        "87",
+        "62",
+        "7",
+        "434",
+        "1",
+        "6"
+      ],
+      "numeric_target": [
+        "62",
+        "87",
+        "62",
+        "7",
+        "434",
+        "1",
+        "6"
+      ],
+      "reason": "Actual020_img-04 original6 is red, not black; carried1 remains separately identified. Parent and drafter independently viewed; exact alt-only color correction approved."
+    },
+    {
+      "element_id": "fs-id1944807",
+      "attribute": "alt",
+      "source": "Tabel perkalian lengkap 0 sampai 9 dengan baris serta kolom kepala berwarna lebih gelap. Sel 0 pada perpotongan 0 × 2 disorot merah muda; sel lainnya memuat fakta perkalian lengkap.",
+      "expected_by_track": {
+        "jv-academic": "Tabel ping-pingan saka 0 nganti 9 sing sapérangan sele wis diisi, kanthi baris lan kolom sirah luwih peteng. Sel 0 ing patemon 0 × 2 wis diisi; sawetara sel liyane kosong kanggo diisi.",
+        "jv-conversation": "Tabel ping-pingan saka 0 nganti 9 sing sapérangan sele wis diisi, kanthi baris lan kolom sirah luwih peteng. Sel 0 ing patemon 0 × 2 wis diisi; sawetara sel liyane kosong kanggo diisi."
+      },
+      "source_src": "../../media/CNX_BMath_Figure_01_04_207.jpg",
+      "source_image_sha256": "dcfe5402cb0bd0cb52d67d5e8dfac3f07e1ef9abcec905664765ab908c3805d3",
+      "numeric_source": [
+        "0",
+        "9",
+        "0",
+        "0",
+        "2"
+      ],
+      "numeric_target": [
+        "0",
+        "9",
+        "0",
+        "0",
+        "2"
+      ],
+      "reason": "Actual207 table is partly filled and has no pink highlight. Correct completion/highlight claim without supplying missing answers; ordered digits unchanged. Independently viewed/approved."
+    },
+    {
+      "element_id": "fs-id1971628",
+      "attribute": "aria-label",
+      "source": "Tabel dengan 4 kolom dan 3 baris. Kolom-kolomnya berjudul operasi, frasa verbal, contoh, dan ekspresi. Isinya menunjukkan kata-kata kali, hasil kali, dan dua kali beserta notasi perkalian yang sesuai.",
+      "expected_by_track": {
+        "jv-academic": "Tabel kanthi 4 kolom lan 3 larik frasa ing baris isi sing padha. Irah-irahan kolome yaiku operasi, frasa verbal, tuladha, lan ekspresi. Isine nuduhake tembung ping, asil ping-pingan, lan loro ping kanthi notasi ping-pingan sing cocog.",
+        "jv-conversation": "Tabel kanthi 4 kolom lan 3 larik frasa ing baris isi sing padha. Irah-irahan kolome yaiku operasi, frasa verbal, tuladha, lan ekspresi. Isine nuduhake tembung ping, asil ping-pingan, lan loro ping kanthi notasi ping-pingan sing cocog."
+      },
+      "source_src": null,
+      "source_image_sha256": null,
+      "numeric_source": [
+        "4",
+        "3"
+      ],
+      "numeric_target": [
+        "4",
+        "3"
+      ],
+      "reason": "Actual table has one header row and one body row containing three newline phrase lines. Clarify source3baris as three phrase lines; preserve tgroup, rows and ordered4,3. Parent inspected exact XML and approved."
+    },
+    {
+      "element_id": "eip-id1170324126224",
+      "attribute": "aria-label",
+      "source": "Tabel dengan 5 kolom dan 1 baris. Kolom-kolomnya berjudul operasi, notasi, ekspresi, dibaca sebagai, dan hasil. Tabel menunjukkan tiga notasi untuk 3 kali 8 dan membacanya sebagai ‘tiga kali delapan’, dengan hasil ‘hasil kali 3 dan 8’.",
+      "expected_by_track": {
+        "jv-academic": "Tabel kanthi 5 kolom lan 1 baris isi. Irah-irahan kolome yaiku operasi, notasi, ekspresi, diwaca, lan asil. Tabel nuduhake telung notasi kanggo 3 ping 8 lan macane ‘telu ping wolu’, kanthi asil ‘asil ping-pingan 3 lan 8’.",
+        "jv-conversation": "Tabel kanthi 5 kolom lan 1 baris isi. Irah-irahan kolome yaiku operasi, notasi, ekspresi, diwaca, lan asil. Tabel nuduhake telung notasi kanggo 3 ping 8 lan macane ‘telu ping wolu’, kanthi asil ‘asil ping-pingan 3 lan 8’."
+      },
+      "source_src": null,
+      "source_image_sha256": null,
+      "numeric_source": [
+        "5",
+        "1",
+        "3",
+        "8",
+        "3",
+        "8"
+      ],
+      "numeric_target": [
+        "5",
+        "1",
+        "3",
+        "8",
+        "3",
+        "8"
+      ],
+      "reason": "Specify source1baris as one body row, excluding the header; no numerical or structural change."
+    }
+  ],
+  "scoped_alt_overrides": [
+    {
+      "element_id": "fs-id2676083",
+      "attribute": "alt",
+      "source": "Tabel perkalian dengan kepala baris dan kepala kolom 5, 6, 7, 8, 9. Semua sel hasil kali kosong untuk diisi.",
+      "source_src": "../../media/CNX_BMath_Figure_01_04_219.jpg",
+      "source_image_sha256": "78f798c038376f96e9cb3f77fca9e0847b5313d7e1e2f28f54ecabe2a4b423f4",
+      "expected_by_track": {
+        "jv-academic": "Tabel ping-pingan kanthi sirah baris lan sirah kolom 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi.",
+        "jv-conversation": "Tabel ping-pingan kanthi sirah baris lan sirah kolom 6, 7, 8, 9. Kabeh sel asil ping-pingan kosong kanggo diisi."
+      },
+      "numeric_source": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "numeric_target": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "reason": "Actual219 has four row/column headers6–9 and4×4empty body, while ID+EN alt incorrectly says5–9. Exact key also belongs to217 where5–9is correct. Parent and drafter independently viewed and approved ONLY this media/image-bound override. Apply after generic exact phrase replay; shared217translation must remain unchanged. Production scoped replay not yet implemented."
+    }
+  ]
+}

@@ -1,0 +1,2134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml" xml:lang="gu-Gujr-IN">
+
+<title>પૂર્ણાંકોનો સરવાળો અને બાદબાકી કરો</title>
+<metadata>
+  <md:content-id>m82454</md:content-id>
+  <md:title>પૂર્ણાંકોનો સરવાળો અને બાદબાકી કરો</md:title>
+  <md:abstract><para id="para-00001">આ વિભાગના અંતે તમે આ કરી શકશો:</para>
+<list id="list-00001">
+<item>ઋણ અને વિરોધી સંખ્યાઓનો ઉપયોગ કરવો</item>
+<item>નિરપેક્ષ મૂલ્યવાળી પદાવલીઓને સાદું રૂપ આપવું</item>
+<item>પૂર્ણાંકોનો સરવાળો કરવો</item>
+<item>પૂર્ણાંકોની બાદબાકી કરવી</item>
+</list></md:abstract>
+  <md:uuid>010c545d-1554-49a3-b076-132855c98436</md:uuid>
+</metadata>
+
+<content>
+<note id="fs-id1170655151723" class="be-prepared">
+<para id="fs-id1170655130408">આ વિભાગના વિષયોનો વધુ વિગતવાર પરિચય <emphasis effect="italics">પૂર્વબીજગણિત</emphasis> પુસ્તકના આ પ્રકરણમાં મળે છે: <emphasis effect="bold">પૂર્ણાંકો</emphasis>.</para>
+</note>
+<section id="fs-id1170655124054">
+<title>ઋણ અને વિરોધી સંખ્યાઓનો ઉપયોગ કરો</title>
+<para id="fs-id1170655222181">અત્યાર સુધી આપણે માત્ર ગણતરીની સંખ્યાઓ અને પૂર્ણ સંખ્યાઓ સાથે કામ કર્યું છે. પરંતુ તમે ક્યારેય શૂન્યથી નીચેનું તાપમાન અનુભવ્યું હોય કે ભૂલથી બેન્કના ખાતામાં જમા રકમ કરતાં વધારે ઉપાડ્યું હોય, તો તમે ઋણ સંખ્યાઓથી પહેલેથી પરિચિત છો. <emphasis effect="bold">ઋણ સંખ્યાઓ</emphasis> એવી સંખ્યાઓ છે જે આ સંખ્યા કરતાં નાની છે: <m:math><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> આ <term class="no-emphasis" id="term-00001">ઋણ સંખ્યાઓ</term> સંખ્યારેખા પર શૂન્યની ડાબી બાજુએ છે. જુઓ <link target-id="CNX_ElemAlg_Figure_01_03_001_new" />.</para>
+<figure id="CNX_ElemAlg_Figure_01_03_001_new">
+<media id="fs-id1170654966725" alt="−4થી 4 સુધીની સંખ્યારેખા છે. 0ની ડાબી બાજુના કૌંસ નીચે ‘ઋણ સંખ્યાઓ’ અને જમણી બાજુના કૌંસ નીચે ‘ધન સંખ્યાઓ’ લખેલું છે. બંને કૌંસની વચ્ચે ‘શૂન્ય’ લખેલું છે અને તેનું તીર 0ને ચીંધે છે. શૂન્ય બંને વર્ગોથી અલગ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_001_new.jpg" />
+</media>
+<caption>સંખ્યારેખા ધન અને ઋણ સંખ્યાઓનાં સ્થાન બતાવે છે.</caption>
+</figure>
+<para id="fs-id1170655150800">સંખ્યારેખાના બંને છેડાનાં તીર દર્શાવે છે કે સંખ્યાઓ અનંત સુધી આગળ વધતી રહે છે. સૌથી મોટી ધન સંખ્યા નથી અને સૌથી નાની ઋણ સંખ્યા પણ નથી.</para>
+<para id="fs-id1170655007025">શૂન્ય ધન સંખ્યા છે કે ઋણ? શૂન્ય કરતાં મોટી સંખ્યાઓ ધન છે અને શૂન્ય કરતાં નાની સંખ્યાઓ ઋણ છે. શૂન્ય ધન પણ નથી અને ઋણ પણ નથી.</para>
+<para id="fs-id1170655151082">સંખ્યારેખા પર સંખ્યાઓના ક્રમ વિશે વિચારો. ડાબેથી જમણે જતાં સંખ્યાઓની કિંમત વધે છે. જમણેથી ડાબે જતાં સંખ્યાઓની કિંમત ઘટે છે. જુઓ <link target-id="CNX_ElemAlg_Figure_01_03_002_new" />.</para>
+<figure id="CNX_ElemAlg_Figure_01_03_002_new">
+<media id="fs-id1170655161798" alt="સંખ્યારેખા −4થી 4 સુધી છે. રેખાની ઉપર એક તીર −1થી 4 તરફ જાય છે અને તેની પાસે “મોટી” લખ્યું છે. રેખાની નીચે એક તીર 1થી −4 તરફ જાય છે અને તેની પાસે “નાની” લખ્યું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_002_new.jpg" />
+</media>
+<caption>સંખ્યારેખા પર ડાબેથી જમણે જતાં સંખ્યાઓની કિંમત વધે છે અને જમણેથી ડાબે જતાં ઘટે છે.</caption>
+</figure>
+<note id="fs-id1166425215822" class="manipulative-math">વસ્તુઓની મદદથી ગણિત શીખવાની “સંખ્યારેખા—ભાગ 2” પ્રવૃત્તિ કરવાથી પૂર્ણાંકોની વધુ સારી સમજ મળશે.</note>
+<para id="fs-id1170655120873">યાદ રાખો કે આપણે આ સંકેતલિપિ વાપરીએ છીએ:</para>
+<para id="fs-id1170654965355"><emphasis effect="italics">a</emphasis> &lt; <emphasis effect="italics">b</emphasis> (વાંચીએ: “a એ b કરતાં નાનું છે”), જ્યારે સંખ્યારેખા પર a એ bની ડાબી બાજુએ હોય.</para>
+<para id="fs-id1170654901053"><emphasis effect="italics">a</emphasis> &gt; <emphasis effect="italics">b</emphasis> (વાંચીએ: “<emphasis effect="italics">a</emphasis> એ <emphasis effect="italics">b</emphasis> કરતાં મોટું છે”), જ્યારે સંખ્યારેખા પર <emphasis effect="italics">a</emphasis> એ <emphasis effect="italics">b</emphasis>ની જમણી બાજુએ હોય.</para>
+<para id="fs-id1170654965087">હવે પૂર્ણ સંખ્યાઓ બતાવતી સંખ્યારેખાને ઋણ સંખ્યાઓનો પણ સમાવેશ થાય તેમ લંબાવવાની છે. આકૃતિમાં બિંદુઓથી દર્શાવેલી સંખ્યાઓ <link target-id="CNX_ElemAlg_Figure_01_03_003_new" /> ને પૂર્ણાંકો કહે છે. પૂર્ણાંકો આ સંખ્યાઓ છે: <m:math><m:mrow><m:mtext>…</m:mtext><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mtext>…</m:mtext></m:mrow></m:math></para>
+<figure id="CNX_ElemAlg_Figure_01_03_003_new">
+<media id="fs-id1170654967897" alt="સંખ્યારેખા −4થી 4 સુધી છે. −4, −3, −2, −1, 0, 1, 2, 3 અને 4 પર બિંદુઓ દર્શાવેલાં છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_003_new.jpg" />
+</media>
+<caption>ચિહ્નિત કરેલી બધી સંખ્યાઓને કહે છે <emphasis effect="italics">પૂર્ણાંકો</emphasis>.</caption>
+</figure>
+<example id="fs-id1170654880157"><exercise id="fs-id1170655178881">
+<problem id="fs-id1170655160945">
+<para id="fs-id1170654952892">સંખ્યાઓની નીચેની દરેક જોડીને &lt; અથવા &gt; વડે ક્રમમાં દર્શાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>14</m:mn><m:mo>___</m:mo><m:mn>6</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>___</m:mo><m:mn>9</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>___</m:mo><m:mn>−4</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mo>___</m:mo><m:mn>−20</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655177826">
+<title>ઉકેલ</title>
+<para id="fs-id1170655192048">બતાવેલી સંખ્યારેખાનો સંદર્ભ લેવો મદદરૂપ થઈ શકે છે.<newline />
+<media id="fs-id1170655201463" alt="સંખ્યારેખા −20થી 15 સુધી છે અને સંખ્યાઓ વચ્ચે નિશાન છે. દરેક પાંચમા નિશાને સંખ્યા લખેલી છે. −20, −4, −1, 2, 6, 9 અને 14 પર બિંદુઓ દર્શાવેલાં છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_004_img_new.jpg" />
+</media></para>
+<table id="eip-672" class="unnumbered unstyled" summary="આ કોષ્ટક સંખ્યારેખા પર સંખ્યાઓનાં એકબીજાની સરખામણીમાં સ્થાન અને તેમની ગણિતીય અસમાનતાઓ વચ્ચેનો સંબંધ બતાવે છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> <newline />સંખ્યારેખા પર 14 એ 6ની જમણી બાજુએ છે.</entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mn>14</m:mn><m:mo>___</m:mo><m:mn>6</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>14</m:mn><m:mo>&gt;</m:mo><m:mn>6</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry><span class="token">ⓑ</span> <newline />સંખ્યારેખા પર −1 એ 9ની ડાબી બાજુએ છે.</entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mn>−1</m:mn><m:mo>___</m:mo><m:mn>9</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>−1</m:mn><m:mo>&lt;</m:mo><m:mn>9</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry><span class="token">ⓒ</span> <newline />સંખ્યારેખા પર −1 એ −4ની જમણી બાજુએ છે.</entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mn>−1</m:mn><m:mo>___</m:mo><m:mn>−4</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>−1</m:mn><m:mo>&gt;</m:mo><m:mn>−4</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry><span class="token">ⓓ</span> <newline />સંખ્યારેખા પર 2 એ −20ની જમણી બાજુએ છે.</entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mn>2</m:mn><m:mo>___</m:mo><m:mn>−20</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>2</m:mn><m:mo>&gt;</m:mo><m:mn>−20</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170655162421" class="try">
+<exercise id="fs-id1170655203196">
+<problem id="fs-id1170655162060">
+<para id="fs-id1170654967573">સંખ્યાઓની નીચેની દરેક જોડીને ક્રમમાં દર્શાવો; વાપરો <m:math><m:mo>&lt;</m:mo></m:math> અથવા <m:math><m:mrow><m:mo>&gt;</m:mo><m:mtext>:</m:mtext></m:mrow></m:math> <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>15</m:mn><m:mo>___</m:mo><m:mn>7</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−2</m:mn><m:mo>___</m:mo><m:mn>5</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−3</m:mn><m:mo>___</m:mo><m:mn>−7</m:mn></m:mrow></m:math><newline /><span class="token">ⓓ</span> <m:math><m:mrow><m:mn>5</m:mn><m:mo>___</m:mo><m:mn>−17</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654978104">
+<para id="fs-id1170654967500"><span class="token">ⓐ</span> &gt; <span class="token">ⓑ</span> &lt; <span class="token">ⓒ</span> &gt; <span class="token">ⓓ</span> &gt;</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655028242" class="try">
+<exercise id="fs-id1170655157723">
+<problem id="fs-id1170654880201">
+<para id="fs-id1170654981845">સંખ્યાઓની નીચેની દરેક જોડીને ક્રમમાં દર્શાવો; વાપરો <m:math><m:mo>&lt;</m:mo></m:math> અથવા <m:math><m:mrow><m:mo>&gt;</m:mo><m:mtext>:</m:mtext></m:mrow></m:math> <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>8</m:mn><m:mo>___</m:mo><m:mn>13</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>3</m:mn><m:mo>___</m:mo><m:mn>−4</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−5</m:mn><m:mo>___</m:mo><m:mn>−2</m:mn></m:mrow></m:math><newline /><span class="token">ⓓ</span> <m:math><m:mrow><m:mn>9</m:mn><m:mo>___</m:mo><m:mn>−21</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655160983">
+<para id="fs-id1170654902746"><span class="token">ⓐ</span> &lt; <span class="token">ⓑ</span> &gt; <span class="token">ⓒ</span> &lt; <span class="token">ⓓ</span> &gt;</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655114791">તમે ધ્યાન આપ્યું હશે કે <term class="no-emphasis" id="term-00002">સંખ્યારેખા</term> પર ઋણ સંખ્યાઓ ધન સંખ્યાઓના અરીસામાં દેખાતા પ્રતિબિંબ જેવી છે અને વચ્ચે શૂન્ય છે. 2 અને <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math> શૂન્યથી સરખા અંતરે હોવાથી તેઓ એકબીજાની <term id="term-00003">વિરોધી સંખ્યા</term><emphasis effect="bold">ઓ</emphasis> છે. 2ની વિરોધી સંખ્યા <m:math><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math>ની વિરોધી સંખ્યા 2 છે.</para>
+<note id="fs-id1170654863504">
+<title>વિરોધી સંખ્યા</title>
+<para id="fs-id1170655000824">સંખ્યાની <emphasis effect="bold">વિરોધી સંખ્યા</emphasis> એ એવી સંખ્યા છે જે સંખ્યારેખા પર આપેલી સંખ્યાથી શૂન્યની બીજી બાજુએ હોય અને શૂન્યથી સરખા અંતરે હોય.</para>
+</note>
+<para id="fs-id1170654959734"><link target-id="CNX_ElemAlg_Figure_01_03_005_new" /> આ વ્યાખ્યા સમજાવે છે.</para>
+<figure id="CNX_ElemAlg_Figure_01_03_005_new">
+<media id="fs-id1170655099168" alt="સંખ્યારેખા −4થી 4 સુધી છે. રેખાની ઉપર બે કૌંસ છે. ડાબું કૌંસ −3થી 0 સુધી અને જમણું કૌંસ 0થી 3 સુધી છે. −3 અને 3 પર બિંદુઓ દર્શાવેલાં છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_005_new.jpg" />
+</media>
+<caption>3ની વિરોધી સંખ્યા છે <m:math><m:mrow><m:mn>−3</m:mn><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1170655163898">બીજગણિતમાં ક્યારેક એક જ સંકેતના જુદા અર્થ હોય છે. ભાષાના કેટલાક શબ્દોની જેમ, તેનો કયો અર્થ થાય તે તેના ઉપયોગ પરથી સ્પષ્ટ થાય છે. તમે “−” સંકેત ત્રણ જુદી રીતે વપરાતો જોયો છે.</para>
+<equation id="fs-id1170654870390" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>બે સંખ્યાઓની વચ્ચે તે આ ક્રિયા દર્શાવે છે:</m:mtext><m:mspace width="0.2em" /><m:mtext mathvariant="italic">બાદબાકી</m:mtext><m:mo>.</m:mo></m:mtd></m:mtr><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>આપણે વાંચીએ છીએ</m:mtext><m:mspace width="0.2em" /><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mspace width="0.2em" /><m:mtext>આ રીતે:</m:mtext><m:mspace width="0.2em" /><m:mtext>“</m:mtext><m:mn>10</m:mn><m:mspace width="0.2em" /><m:mtext>ઓછા</m:mtext><m:mspace width="0.2em" /><m:mn>4.</m:mn><m:mtext>”</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>−8</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>સંખ્યાની આગળ હોય ત્યારે તે દર્શાવે છે</m:mtext><m:mspace width="0.2em" /><m:mtext mathvariant="italic">ઋણ</m:mtext><m:mspace width="0.2em" /><m:mtext>સંખ્યા.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>આપણે વાંચીએ છીએ</m:mtext><m:mspace width="0.2em" /><m:mn>−8</m:mn><m:mspace width="0.2em" /><m:mtext>ને “ઋણ આઠ” તરીકે.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>ચલની આગળ હોય ત્યારે તે દર્શાવે છે</m:mtext><m:mspace width="0.2em" /><m:mtext mathvariant="italic">વિરોધી સંખ્યા</m:mtext><m:mo>.</m:mo><m:mspace width="0.2em" /><m:mtext>આપણે વાંચીએ છીએ</m:mtext><m:mspace width="0.2em" /><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mspace width="0.2em" /><m:mtext>ને “આની વિરોધી સંખ્યા” તરીકે:</m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>.</m:mo><m:mtext>”</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>અહીં બે</m:mtext><m:mspace width="0.2em" /><m:mtext>“</m:mtext><m:mo>−</m:mo><m:mtext>”</m:mtext><m:mspace width="0.2em" /><m:mtext>નિશાની છે. કૌંસની અંદરની નિશાની જણાવે છે કે સંખ્યા છે</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>ઋણ</m:mtext><m:mspace width="0.2em" /><m:mn>2</m:mn><m:mo>.</m:mo><m:mspace width="0.2em" /><m:mtext>કૌંસની બહારની નિશાની આપણને આની</m:mtext><m:mspace width="0.2em" /><m:mtext mathvariant="italic">વિરોધી સંખ્યા</m:mtext><m:mspace width="0.2em" /><m:mtext>ની</m:mtext><m:mspace width="0.2em" /><m:mn>−2</m:mn><m:mo>.</m:mo></m:mtd></m:mtr><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>આપણે વાંચીએ છીએ</m:mtext><m:mspace width="0.2em" /><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>ને “ઋણ બેની વિરોધી સંખ્યા” તરીકે.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<table id="eip-36" summary="આ કોષ્ટક ગણિતીય પદાવલીઓમાં “−” સંકેતના જુદા અર્થ અને તેને વાંચવાની રીત બતાવે છે: બાદબાકી, ઋણ સંખ્યા અને વિરોધી સંખ્યા.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><m:math><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:math></entry>
+    <entry>બે સંખ્યાઓની વચ્ચે તે <emphasis effect="italics">બાદબાકી</emphasis>ની ક્રિયા દર્શાવે છે.<newline />આપણે <m:math><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:math>ને “10 ઓછા 4” તરીકે વાંચીએ છીએ.</entry>
+  </row>
+
+  <row>
+    <entry><m:math><m:mn>−8</m:mn></m:math></entry>
+    <entry>સંખ્યાની આગળ તે <emphasis effect="italics">ઋણ</emphasis> સંખ્યા દર્શાવે છે. <newline />−8ને “ઋણ આઠ” તરીકે વાંચીએ છીએ.</entry>
+  </row>
+
+  <row>
+    <entry><m:math><m:mtext>−</m:mtext><m:mi>x</m:mi></m:math></entry>
+    <entry>ચલની આગળ તે <emphasis effect="italics">વિરોધી સંખ્યા</emphasis> દર્શાવે છે. આપણે <m:math><m:mtext>−</m:mtext><m:mi>x</m:mi></m:math>ને “<m:math><m:mi>x</m:mi></m:math>ની વિરોધી સંખ્યા” તરીકે વાંચીએ છીએ.</entry>
+  </row>
+
+  <row>
+    <entry><m:math><m:mtext>−</m:mtext><m:mo>(</m:mo><m:mn>−2</m:mn><m:mo>)</m:mo></m:math></entry>
+    <entry>અહીં બે “−” ચિહ્નો છે. કૌંસની અંદરનું ચિહ્ન જણાવે છે કે સંખ્યા ઋણ 2 છે. કૌંસની બહારનું ચિહ્ન −2ની <emphasis effect="italics">વિરોધી સંખ્યા</emphasis> લેવાનું કહે છે. <newline />આપણે <m:math><m:mtext>−</m:mtext><m:mo>(</m:mo><m:mn>−2</m:mn><m:mo>)</m:mo></m:math>ને “ઋણ બેની વિરોધી સંખ્યા” તરીકે વાંચીએ છીએ.</entry>
+  </row>
+
+</tbody>
+</tgroup>
+</table><note id="fs-id1170655189167">
+<title>વિરોધી સંખ્યાની સંકેતલિપિ</title>
+<para id="fs-id1170655174724"><m:math><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow></m:math> એટલે <emphasis effect="italics">a</emphasis>ની વિરોધી સંખ્યા.</para>
+<para id="fs-id1170655160739">આ સંકેતલિપિ <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow></m:math>ને “<emphasis effect="italics">a</emphasis>ની વિરોધી સંખ્યા” તરીકે વાંચીએ છીએ.</para>
+</note>
+<example id="fs-id1170655126382">
+<exercise id="fs-id1170655000342"><problem id="fs-id1170654943981">
+<para id="fs-id1170655120989">શોધો: <span class="token">ⓐ</span> 7ની વિરોધી સંખ્યા <span class="token">ⓑ</span> આની વિરોધી સંખ્યા: <m:math><m:mrow><m:mn>−10</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654978387">
+<title>ઉકેલ</title>
+
+
+<table id="eip-id1169750893702" class="unnumbered unstyled" aria-label="આ આકૃતિમાં a, b અને c એમ ત્રણ ભાગ છે. દરેક ભાગમાં ડાબે લખાણ અને જમણે તેને અનુરૂપ સંખ્યારેખા છે. ભાગ aનું લખાણ કહે છે: “−7 એ 7 જેટલા જ અંતરે શૂન્યથી દૂર છે, પરંતુ શૂન્યની બીજી બાજુએ છે.” જમણે −7થી 7 સુધીની સંખ્યારેખા છે. ઉપરનું પહેલું કૌંસ −7થી 0 સુધી છે અને તેની ઉપર 7 લખ્યું છે. બીજું કૌંસ 0થી 7 સુધી છે અને તેની ઉપર 7 લખ્યું છે. નીચે “7ની વિરોધી સંખ્યા −7 છે” લખ્યું છે. −7 અને 7 પર બિંદુઓ છે. ભાગ bનું લખાણ કહે છે: “10 એ −10 જેટલા જ અંતરે શૂન્યથી દૂર છે, પરંતુ શૂન્યની બીજી બાજુએ છે.” જમણે −10થી 10 સુધીની સંખ્યારેખા છે. ઉપરના બે કૌંસ −10થી 0 અને 0થી 10 સુધી છે; બંનેની ઉપર 10 લખ્યું છે. નીચે “−10ની વિરોધી સંખ્યા 10 છે” લખ્યું છે. −10 અને 10 પર બિંદુઓ છે. ભાગ cમાં −(−6) છે. જમણે −6થી 6 સુધીની સંખ્યારેખા છે. ઉપરના કૌંસ −6થી 0 અને 0થી 6 સુધી છે; બંનેની ઉપર 6 લખ્યું છે. નીચે “−6ની વિરોધી સંખ્યા 6 છે” લખ્યું છે. −6 અને 6 પર બિંદુઓ છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> −7 એ 7 જેટલા જ અંતરે 0થી દૂર છે, પરંતુ 0ની બીજી બાજુએ છે.</entry>
+    <entry align="center"><media id="eip-id1169750893747" alt="સંખ્યારેખા 0થી અંતર દર્શાવે છે. −7 અને 7 પર બિંદુઓ છે. ઉપરના કૌંસ બતાવે છે કે −7થી 0નું અંતર 7 એકમ છે અને 0થી 7નું અંતર પણ 7 એકમ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_006a_img_new.jpg" /></media><newline />7ની વિરોધી સંખ્યા −7 છે.</entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓑ</span> 10 એ −10 જેટલા જ અંતરે 0થી દૂર છે, પરંતુ 0ની બીજી બાજુએ છે.</entry>
+    <entry align="center"><media id="eip-id1169750893770" alt="સંખ્યારેખા પર −10, 0 અને 10 બિંદુઓ છે. કમાનો −10થી 0નું 10 એકમ અંતર અને 0થી 10નું બીજા 10 એકમનું અંતર દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_006b_img_new.jpg" /></media><newline />−10ની વિરોધી સંખ્યા 10 છે.</entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓒ</span> −(−6) (−6ની વિરોધી સંખ્યા).</entry>
+    <entry align="center"><media id="eip-id1169746122554" alt="નિરપેક્ષ મૂલ્ય દર્શાવતી સંખ્યારેખા પર −6, 0 અને 6 બિંદુઓ છે. 0થી −6નું અંતર 6 છે અને 0થી 6નું અંતર પણ 6 છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_006c_img_new.jpg" /></media><newline />−6ની વિરોધી સંખ્યા 6 છે.</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id1170655219776" class="try">
+<exercise id="fs-id1170655004578">
+<problem id="fs-id1170655020985">
+<para id="fs-id1170655026818">શોધો: <span class="token">ⓐ</span> 4ની વિરોધી સંખ્યા <span class="token">ⓑ</span> આની વિરોધી સંખ્યા: <m:math><m:mrow><m:mn>−3</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654916783">
+<para id="fs-id1170654952585"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 3 <span class="token">ⓒ</span> 1</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655166725" class="try">
+<exercise id="fs-id1170655157794">
+<problem id="fs-id1170655105370">
+<para id="fs-id1170655229618">શોધો: <span class="token">ⓐ</span> 8ની વિરોધી સંખ્યા <span class="token">ⓑ</span> આની વિરોધી સંખ્યા: <m:math><m:mrow><m:mn>−5</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655113221">
+<para id="fs-id1170655155259"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 5 <span class="token">ⓒ</span> 5</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654920902">વિરોધી સંખ્યાઓની સમજથી આપણે પૂર્ણાંકોની વ્યાખ્યા આપી શકીએ છીએ. પૂર્ણ સંખ્યાઓ અને તેમની વિરોધી સંખ્યાઓને કહે છે <term id="term-00004">પૂર્ણાંકો</term>. પૂર્ણાંકો આ સંખ્યાઓ છે: <m:math><m:mrow><m:mtext>…</m:mtext><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mtext>…</m:mtext></m:mrow></m:math></para>
+<note id="fs-id1170655134778">
+<title>પૂર્ણાંકો</title>
+<para id="fs-id1170654954489">પૂર્ણ સંખ્યાઓ અને તેમની વિરોધી સંખ્યાઓને કહે છે <emphasis effect="bold">પૂર્ણાંકો</emphasis>.</para>
+<para id="fs-id1170654878555">પૂર્ણાંકો આ સંખ્યાઓ છે:</para>
+<equation id="fs-id1170655114692" class="unnumbered"><label /><m:math><m:mrow><m:mtext>…</m:mtext><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mtext>…</m:mtext></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1170654999979">કોઈ <term class="no-emphasis" id="term-00005">ચલ</term>ની વિરોધી સંખ્યાની કિંમત શોધતી વખતે ખૂબ કાળજી રાખવી પડે છે. ચલ ધન કે ઋણ સંખ્યા દર્શાવે છે તે જાણ્યા વિના આપણે કહી શકતા નથી કે <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:math> ધન છે કે ઋણ. તે <link target-id="fs-id1170655151038" />માં જોઈ શકાય છે.</para>
+<example id="fs-id1170655151038">
+<exercise id="fs-id1170654978257">
+<problem id="fs-id1170655134821">
+<para id="fs-id1170655353645">કિંમત શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> જ્યારે <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654982628">
+<title>ઉકેલ</title>
+<list id="fs-id1166422695391" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <newline />
+<table id="eip-id1169754061868" class="unnumbered unstyled" aria-label="આ ઉકેલમાં બે સ્તંભ છે: ડાબે લખાણ અને જમણે ગણતરી. ડાબી પહેલી હરોળમાં “x = 8 હોય ત્યારે કિંમત શોધવી એટલે xની જગ્યાએ 8 મૂકવો” લખ્યું છે; 8 લાલ છે. જમણે નીચેની લીટીમાં −x છે. ડાબી બીજી હરોળમાં “xની જગ્યાએ 8 મૂકો” લખ્યું છે. સામે જમણે −(8) છે, જેમાં 8 લાલ છે. પછી ડાબે “8ની વિરોધી સંખ્યા લખો” અને જમણે −8 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><media id="eip-id1169754061885" alt="ચિત્ર જણાવે છે કે x = 8 હોય ત્યારે પદાવલીની કિંમત શોધવી એટલે ચલ xની જગ્યાએ 8 મૂકવો."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_007a_img_new.jpg" /></media></entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry align="center">−<emphasis effect="italics">x</emphasis></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169752188793" alt="સફેદ પૃષ્ઠભૂમિ પર “xની જગ્યાએ 8 મૂકો” સૂચના છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_007b_img_new.jpg" /></media></entry>
+    <entry align="center"><media id="eip-id1169752188805" alt="સફેદ પૃષ્ઠભૂમિ પર પદાવલી −(8) છે. માત્ર 8 લાલ રંગમાં છે; ઋણ ચિહ્ન અને બંને ગોળ કૌંસ કાળા રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_007c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>8ની વિરોધી સંખ્યા લખો.</entry>
+    <entry align="center"><media id="eip-id1169752188824" alt="ચિત્રમાં −8 છે. 8ની આગળ આડી ઋણ-નિશાની છે; 8નો અંક ઉપરનીચેના બે બંધ વળાંકોવાળા સાદા ફોન્ટમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_007d_img.jpg" /></media></entry>
+  </row>
+ </tbody>
+
+
+</tgroup>
+</table><newline /><newline /></item>
+<item><span class="token">ⓑ</span> <newline />
+<table id="eip-id1169754029691" class="unnumbered unstyled" aria-label="આ ઉકેલમાં બે સ્તંભ છે: ડાબે લખાણ અને જમણે ગણતરી. ડાબી પહેલી હરોળમાં “x = −8 હોય ત્યારે કિંમત શોધવી એટલે xની જગ્યાએ −8 મૂકવો” લખ્યું છે; −8 લાલ છે. જમણે નીચેની લીટીમાં −x છે. ડાબી બીજી હરોળમાં “xની જગ્યાએ −8 મૂકો” લખ્યું છે. સામે જમણે −(−8) છે, જેમાં કૌંસની અંદરનું −8 લાલ છે. પછી ડાબે “−8ની વિરોધી સંખ્યા લખો” અને જમણે 8 છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry><media id="fs-id1169754375291" alt="મૂળ ચિત્રમાં ‘x = −8 હોય ત્યારે −xની જગ્યાએ −8 મૂકો’ લખેલું છે; આ સૂચનામાં ભૂલ છે. સાચી સૂચના: xની જગ્યાએ −8 મૂકો, જેથી −x = −(−8) = 8 થાય. ચિત્રમાં −8 લાલ રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_008a_img_new.jpg" /></media></entry>
+    <entry />
+  </row>
+  <row>
+    <entry />
+    <entry align="center">−<emphasis effect="italics">x</emphasis></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169754029738" alt="ચિત્રમાં “xની જગ્યાએ −8 મૂકો” સૂચના છે. લખાણ રાખોડી છે અને −8 લાલ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_008b_img_new.jpg" /></media></entry>
+    <entry align="center"><media id="eip-id1169751926699" alt="પદાવલી −(−8)માં કૌંસની અંદરનું ઋણ-ચિહ્ન અને 8 લાલ રંગમાં છે. પૃષ્ઠભૂમિ સફેદ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_008c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>−8ની વિરોધી સંખ્યા લખો.</entry>
+    <entry align="center">8</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table></item>
+</list></solution>
+</exercise>
+</example>
+<note id="fs-id1170655125905" class="try">
+<exercise id="fs-id1170654985192">
+<problem id="fs-id1170654985194">
+<para id="fs-id1170654964972">કિંમત શોધો: <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> જ્યારે <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655022421">
+<para id="fs-id1170655022423"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 4</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655133799" class="try">
+<exercise id="fs-id1170654968183">
+<problem id="fs-id1170654984479">
+<para id="fs-id1170654984481">કિંમત શોધો: <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>m</m:mi><m:mo>,</m:mo></m:mrow></m:math> જ્યારે <span class="token">ⓐ</span> <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>−11</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654966628">
+<para id="fs-id1170654943547"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−11</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 11</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170655206872">
+<title>નિરપેક્ષ મૂલ્યવાળી પદાવલીઓને સરળ બનાવો</title>
+<para id="fs-id1170654967711">આપણે જોયું કે <m:math><m:mrow><m:mn>2</m:mn><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mn>−2</m:mn></m:mrow></m:math> જેવી સંખ્યાઓ એકબીજાની વિરોધી સંખ્યાઓ છે, કારણ કે સંખ્યારેખા પર તેમનું 0થી અંતર સમાન છે. બંને 0થી બે એકમ દૂર છે. સંખ્યારેખા પર 0 અને કોઈ સંખ્યા વચ્ચેના અંતરને તે સંખ્યાનું <emphasis effect="bold">નિરપેક્ષ મૂલ્ય</emphasis> કહે છે.</para>
+<note id="fs-id1170655195725">
+<title>નિરપેક્ષ મૂલ્ય</title>
+<para id="fs-id1170655354299">સંખ્યાનું <term id="term-00006">નિરપેક્ષ મૂલ્ય</term> એ સંખ્યારેખા પર તેનું 0થી અંતર છે.</para>
+<para id="fs-id1170654982157">સંખ્યા <emphasis effect="italics">n</emphasis> નું નિરપેક્ષ મૂલ્ય આ રીતે લખાય છે: <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>n</m:mi><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<para id="fs-id1170655160915">ઉદાહરણ તરીકે,</para>
+<list id="fs-id1166424918316" list-type="bulleted" bullet-style="bullet">
+<item><m:math><m:mrow><m:mn>−5</m:mn><m:mspace width="0.2em" /><m:mtext>એ</m:mtext><m:mspace width="0.2em" /><m:mn>5</m:mn></m:mrow></m:math> એકમ દૂર છે, જો અંતર અહીંથી માપીએ: <m:math><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> તેથી <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mspace width="0.65em" /><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>એ</m:mtext><m:mspace width="0.2em" /><m:mn>5</m:mn></m:mrow></m:math> એકમ દૂર છે, જો અંતર અહીંથી માપીએ: <m:math><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> તેથી <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mn>5</m:mn><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+<para id="fs-id1170655134144"><link target-id="CNX_ElemAlg_Figure_01_03_009_new" /> આ વિચાર દર્શાવે છે.</para>
+<figure id="CNX_ElemAlg_Figure_01_03_009_new">
+<media id="fs-id1170655126447" alt="−5થી 5 સુધીની સંખ્યારેખા દર્શાવેલી છે. −5થી 0 સુધીના બિંદુઓની ઉપરના કૌંસ પર ‘5 એકમ’ લખેલું છે. તેની ઉપરના તીર પાસે ‘−5 એ 0થી 5 એકમ દૂર છે, તેથી −5નું નિરપેક્ષ મૂલ્ય 5 છે’ લખેલું છે. 0થી 5 સુધીના બિંદુઓની ઉપરના કૌંસ પર પણ ‘5 એકમ’ લખેલું છે. તેની ઉપરના તીર પાસે ‘5 એ 0થી 5 એકમ દૂર છે, તેથી 5નું નિરપેક્ષ મૂલ્ય 5 છે’ લખેલું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_009_new.jpg" />
+</media>
+<caption>પૂર્ણાંકો <m:math><m:mrow><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>અને છે</m:mtext><m:mspace width="0.2em" /><m:mn>5</m:mn></m:mrow></m:math> એકમ દૂર છે <m:math><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1170654957170">સંખ્યાનું નિરપેક્ષ મૂલ્ય ક્યારેય ઋણ હોતું નથી, કારણ કે અંતર ઋણ હોઈ શકતું નથી. માત્ર શૂન્યનું જ નિરપેક્ષ મૂલ્ય શૂન્ય હોય છે, કારણ કે સંખ્યારેખા પર <m:math><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mn>0</m:mn></m:mrow></m:math> વચ્ચેનું અંતર શૂન્ય એકમ છે.</para>
+<note id="fs-id1170654997376">
+<title>નિરપેક્ષ મૂલ્યનો ગુણધર્મ</title>
+<para id="fs-id1170654916082"><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>n</m:mi><m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:math> બધી સંખ્યાઓ માટે લાગુ પડે છે.</para>
+<para id="fs-id1170655074945">નિરપેક્ષ મૂલ્ય હંમેશાં શૂન્ય કરતાં મોટું અથવા શૂન્ય જેટલું હોય છે!</para>
+</note>
+<para id="fs-id1170655150245">ગણિતજ્ઞો વધુ ચોકસાઈથી કહે છે, ‘નિરપેક્ષ મૂલ્ય હંમેશાં બિનઋણ હોય છે.’ બિનઋણ એટલે શૂન્ય કરતાં મોટું અથવા શૂન્ય જેટલું.</para>
+<example id="fs-id1170654966060">
+<exercise id="fs-id1170655196252">
+<problem id="fs-id1170655164890">
+<para id="fs-id1170655164892">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mn>3</m:mn><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−44</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mn>0</m:mn><m:mo>|</m:mo></m:mrow></m:mrow></m:math>.</para>
+</problem>
+<solution id="fs-id1170655213327">
+<title>ઉકેલ</title>
+<para id="fs-id1170654944089">સંખ્યાનું નિરપેક્ષ મૂલ્ય એ સંખ્યા અને શૂન્ય વચ્ચેનું અંતર છે. અંતર ક્યારેય ઋણ હોતું નથી, તેથી નિરપેક્ષ મૂલ્ય પણ ક્યારેય ઋણ હોતું નથી.</para>
+<para id="fs-id1166424887501"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mn>3</m:mn><m:mo>|</m:mo></m:mrow></m:mrow></m:math><newline /><m:math><m:mrow><m:mspace width="1.2em" /><m:mn>3</m:mn></m:mrow></m:math><newline /><newline />
+<span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−44</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math><newline /><m:math><m:mrow><m:mspace width="1.5em" /><m:mn>44</m:mn></m:mrow></m:math><newline /><newline />
+<span class="token">ⓒ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mn>0</m:mn><m:mo>|</m:mo></m:mrow></m:mrow></m:math><newline /><m:math><m:mrow><m:mspace width="1.2em" /><m:mn>0</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655189620" class="try">
+<exercise id="fs-id1170655074701">
+<problem id="fs-id1170655074703">
+<para id="fs-id1170655178086">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mn>4</m:mn><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−28</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mn>0</m:mn><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655161378">
+<para id="fs-id1170655161380"><span class="token">ⓐ</span> 4 <span class="token">ⓑ</span> 28 <span class="token">ⓒ</span> 0</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655105288" class="try">
+<exercise id="fs-id1170655160960">
+<problem id="fs-id1170655160962">
+<para id="fs-id1170655000504">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−13</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>47</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mn>0</m:mn><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655026795">
+<para id="fs-id1170655026797"><span class="token">ⓐ</span> 13 <span class="token">ⓑ</span> 47 <span class="token">ⓒ</span> 0</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654887750">આગળના ઉદાહરણમાં આપણે નિરપેક્ષ મૂલ્યવાળી પદાવલીઓની તુલના કરીશું. યાદ રાખો, ધન સંખ્યાઓ હંમેશાં ઋણ સંખ્યાઓ કરતાં મોટી હોય છે!</para>
+<example id="fs-id1170654887753"><exercise id="fs-id1170655205586">
+<problem id="fs-id1170655205588">
+<para id="fs-id1170654953584">ખાલી જગ્યામાં <m:math><m:mrow><m:mo>&lt;</m:mo><m:mo>,</m:mo><m:mo>&gt;</m:mo><m:mo>,</m:mo><m:mspace width="0.2em" /><m:mtext>અથવા</m:mtext><m:mspace width="0.2em" /><m:mo>=</m:mo></m:mrow></m:math> મૂકી નીચેની સંખ્યાઓની દરેક જોડીની તુલના કરો:</para>
+<para id="fs-id1170654916476"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>8</m:mn><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−9</m:mn><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655106909">
+<title>ઉકેલ</title>
+<table id="eip-531" class="unnumbered unstyled" summary="આ કોષ્ટકમાં નિરપેક્ષ મૂલ્યો અને ઋણ સંખ્યાઓ ધરાવતી પદાવલીઓને સરળ બનાવી, પછી અસમાનતા અથવા સમાનતાનાં ચિહ્નો વડે તેમની તુલના કરી છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>
+    	<span class="token">ⓐ</span> 
+    	<newline />સરળ બનાવો.
+    	<newline />તુલના કરો.
+    	<newline />
+	</entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>___</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>5</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>___</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mn>5</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>5</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>&gt;</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−5</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>&gt;</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry>
+    	<span class="token">ⓑ</span> 
+	    <newline />સરળ બનાવો.
+	    <newline />તુલના કરો.
+	    <newline />
+	</entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mn>8</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>___</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>8</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>___</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mn>8</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>8</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>&gt;</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−8</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>8</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>&gt;</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+     <entry>
+    	<span class="token">ⓒ</span> 
+	    <newline />સરળ બનાવો.
+	    <newline />તુલના કરો.
+	    <newline />
+	</entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mn>−9</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>___</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>−9</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>___</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mn>9</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>−9</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−9</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>−9</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>−</m:mo><m:mo>|</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+     <entry>
+    	<span class="token">ⓓ</span> 
+	    <newline />સરળ બનાવો.
+	    <newline />તુલના કરો.
+	    <newline />
+	</entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>___</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>16</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>___</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mn>16</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>16</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>&gt;</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−16</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>&gt;</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170655209415" class="try">
+<exercise id="fs-id1170655121087">
+<problem id="fs-id1170655121090">
+<para id="fs-id1170655099637">ખાલી જગ્યામાં &lt;, &gt; અથવા <m:math><m:mo>=</m:mo></m:math> મૂકી નીચેની સંખ્યાઓની દરેક જોડીની તુલના કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−8</m:mn><m:mo>___</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math><newline /><span class="token">ⓓ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655228722">
+<para id="fs-id1170655352028"><span class="token">ⓐ</span> &gt; <span class="token">ⓑ</span> &gt; <span class="token">ⓒ</span> &lt; <span class="token">ⓓ</span> &gt;</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655081495" class="try">
+<exercise id="fs-id1170655083334">
+<problem id="fs-id1170655083336">
+<para id="fs-id1170655065401">ખાલી જગ્યામાં &lt;, &gt; અથવા <m:math><m:mo>=</m:mo></m:math> મૂકી નીચેની સંખ્યાઓની દરેક જોડીની તુલના કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>7</m:mn><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−10</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−10</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math><newline /><span class="token">ⓒ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>___</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>___</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655003444">
+<para id="fs-id1170655157651"><span class="token">ⓐ</span> &gt; <span class="token">ⓑ</span> &gt; <span class="token">ⓒ</span> &gt; <span class="token">ⓓ</span> &lt;</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655060167">હવે આપણે સમૂહ દર્શાવતાં ચિહ્નોની યાદીમાં નિરપેક્ષ મૂલ્યની ઊભી રેખાઓનો સમાવેશ કરીએ છીએ. ક્રિયાઓના ક્રમ અનુસાર, પહેલાં ઊભી રેખાઓની અંદરની પદાવલીને શક્ય તેટલી સરળ બનાવીએ છીએ; પછી મળેલી સંખ્યાનું <term class="no-emphasis" id="term-00007">નિરપેક્ષ મૂલ્ય</term> લઈએ છીએ.</para>
+<note id="fs-id1170654889005">
+<title>સમૂહ દર્શાવતાં ચિહ્નો</title>
+<equation id="fs-id1170655087770" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtext>ગોળ કૌંસ</m:mtext></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>(</m:mo><m:mrow /><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd /><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>વાંકડિયા કૌંસ</m:mtext></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>{</m:mo><m:mrow /><m:mo>}</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>ચોરસ કૌંસ</m:mtext></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>[</m:mo><m:mrow /><m:mo>]</m:mo></m:mrow></m:mtd><m:mtd /><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>નિરપેક્ષ મૂલ્ય</m:mtext></m:mtd><m:mtd columnalign="left"><m:mspace width="0.15em" /><m:mrow><m:mo>|</m:mo><m:mspace width="0.2em" /><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation>
+</note>
+<para id="fs-id1170655103794">આગળના ઉદાહરણમાં, ગોળ કૌંસની જેમ જ પહેલાં નિરપેક્ષ મૂલ્યની ઊભી રેખાઓની અંદરની પદાવલીઓને સરળ બનાવીએ છીએ.</para>
+<example id="fs-id1170655111177"><exercise id="fs-id1170655218377">
+<problem id="fs-id1170655218379">
+<para id="fs-id1170655000668">સરળ બનાવો: <m:math><m:mrow><m:mn>24</m:mn><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>19</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654968392">
+<title>ઉકેલ</title>
+<table id="eip-46" class="unnumbered unstyled" summary="ગાણિતિક પદાવલીને સરળ બનાવવા માટે ક્રિયાઓનો ક્રમ દર્શાવતી પગલાંવાર ગણતરી.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry> </entry>
+    <entry><m:math><m:mn>24</m:mn><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>19</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:math></entry>
+  </row>
+
+  <row>
+    <entry>પહેલાં ગોળ કૌંસની અંદરની ક્રિયા કરો: 6માંથી 2 બાદ કરો.</entry>
+    <entry><m:math><m:mn>24</m:mn><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>19</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:math></entry>
+  </row>
+
+  <row>
+    <entry>3(4)નો ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>24</m:mn><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>19</m:mn><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:math></entry>
+  </row>
+
+  <row>
+    <entry>નિરપેક્ષ મૂલ્યની ઊભી રેખાઓની અંદર બાદબાકી કરો.</entry>
+    <entry><m:math><m:mn>24</m:mn><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mn>7</m:mn><m:mo>|</m:mo></m:mrow></m:math></entry>
+  </row>
+
+  <row>
+    <entry>નિરપેક્ષ મૂલ્ય લો.</entry>
+    <entry><m:math><m:mn>24</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:math></entry>
+  </row>
+
+  <row>
+    <entry>બાદબાકી કરો.</entry>
+    <entry><m:math><m:mn>17</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170655225712" class="try">
+<exercise id="fs-id1170655225715">
+<problem id="fs-id1170655222089">
+<para id="fs-id1170655222091">સરળ બનાવો: <m:math><m:mrow><m:mn>19</m:mn><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>11</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654963377">
+<para id="fs-id1170654963379">16</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655190637" class="try">
+<exercise id="fs-id1170654931967">
+<problem id="fs-id1170654931969">
+<para id="fs-id1170654931971">સરળ બનાવો: <m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655150934">
+<para id="fs-id1170655269907">9</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170655194440">
+<exercise id="fs-id1170655194442">
+<problem id="fs-id1170655194444">
+<para id="fs-id1170655218370">કિંમત શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−35</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−20</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>u</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>p</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>−14</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655030077">
+<title>ઉકેલ</title>
+<para id="fs-id1166425224104"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−35</m:mn></m:mrow></m:math><newline />
+<table id="eip-id1169747671487" class="unnumbered unstyled" aria-label="ઉકેલ બે સ્તંભમાં દર્શાવેલો છે. જમણા સ્તંભમાં |x| છે. પછીની હરોળમાં ડાબે ‘xની જગ્યાએ −35 મૂકો’ અને જમણે |−35| છે, જેમાં −35 લાલ રંગમાં છે. છેલ્લી હરોળમાં ડાબે ‘નિરપેક્ષ મૂલ્ય લો’ અને જમણે 35 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry align="right"><m:math><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169747671518" alt="ચિત્રમાં ‘xની જગ્યાએ −35 મૂકો’ સૂચના છે. −35 લાલ રંગમાં અને બાકીનું લખાણ કાળા રંગમાં છે. આ સૂચનાનો અર્થ ચલ xની જગ્યાએ −35 મૂકવો એવો છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_010a_img_new.jpg" /></media></entry>
+    <entry align="right"><media id="eip-id1169747671530" alt="ચિત્રમાં ઋણ પાંત્રીસનું નિરપેક્ષ મૂલ્ય દર્શાવતું ગાણિતિક લખાણ |−35| છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_010b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>નિરપેક્ષ મૂલ્ય લો.</entry>
+    <entry align="right">35</entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table><newline /><newline />
+<span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−20</m:mn></m:mrow></m:math><newline />
+<table id="eip-id1169752110168" class="unnumbered unstyled" aria-label="ઉકેલ બે સ્તંભમાં દર્શાવેલો છે. જમણા સ્તંભમાં |−y| છે. પછીની હરોળમાં ડાબે ‘yની જગ્યાએ −20 મૂકો’ અને જમણે |−(−20)| છે, જેમાં −20 લાલ રંગમાં છે. પછી ડાબે ‘સરળ બનાવો’ અને જમણે |20| છે. છેલ્લી હરોળમાં ડાબે ‘નિરપેક્ષ મૂલ્ય લો’ અને જમણે 20 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry align="right"><m:math><m:mo>|</m:mo><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>|</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169749467086" alt="yની જગ્યાએ −20 મૂકો."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_011a_img_new.jpg" /></media></entry>
+    <entry align="right"><media id="eip-id1169749467098" alt="પદાવલી |−(−20)| છે. ગોળ કૌંસની અંદરનું −20 લાલ રંગમાં છે. કૌંસની બહારનું ઋણ ચિહ્ન નિરપેક્ષ મૂલ્યની ઊભી રેખાઓની અંદર છે અને કાળા રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_011b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સરળ બનાવો.</entry>
+    <entry align="right"><m:math><m:mo>|</m:mo><m:mn>20</m:mn><m:mo>|</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry>નિરપેક્ષ મૂલ્ય લો.</entry>
+    <entry align="right">20</entry>
+  </row>
+ </tbody>
+
+
+
+</tgroup>
+</table><newline /><newline />
+<span class="token">ⓒ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>u</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math><newline />
+<table id="eip-id1169750879718" class="unnumbered unstyled" aria-label="ઉકેલ બે સ્તંભમાં દર્શાવેલો છે. જમણા સ્તંભમાં −|u| છે. પછીની હરોળમાં ડાબે ‘uની જગ્યાએ 12 મૂકો’ અને જમણે −|12| છે, જેમાં 12 લાલ રંગમાં છે. છેલ્લી હરોળમાં ડાબે ‘નિરપેક્ષ મૂલ્ય લો’ અને જમણે −12 છે.">
+<label /><tgroup cols="2">
+<tbody>
+  <row>
+    <entry />
+    <entry align="right"><m:math><m:mo>−</m:mo><m:mo>|</m:mo><m:mi>u</m:mi><m:mo>|</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169753237141" alt="સફેદ પૃષ્ઠભૂમિ પર ‘uની જગ્યાએ 12 મૂકો’ સૂચના છે. 12 લાલ રંગમાં અને બાકીનું લખાણ કાળા રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_012a_img_new.jpg" /></media></entry>
+    <entry align="right"><media id="eip-id1169753237153" alt="પદાવલી −|12| છે. 12 લાલ રંગમાં છે; ઊભી રેખાઓની બહારનું ઋણ ચિહ્ન કાળા રંગમાં છે. પદાવલીની કિંમત −12 થાય છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_012b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>નિરપેક્ષ મૂલ્ય લો.</entry>
+    <entry align="right"><m:math><m:mo>−</m:mo><m:mn>12</m:mn></m:math></entry>
+  </row>
+ </tbody>
+</tgroup>
+</table><newline /><newline />
+<span class="token">ⓓ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>p</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>−14</m:mn></m:mrow></m:math><newline />
+<table id="eip-id1169754142438" class="unnumbered unstyled" aria-label="ઉકેલ બે સ્તંભમાં દર્શાવેલો છે. જમણા સ્તંભમાં −|p| છે. પછીની હરોળમાં ડાબે ‘pની જગ્યાએ −14 મૂકો’ અને જમણે −|−14| છે, જેમાં −14 લાલ રંગમાં છે. છેલ્લી હરોળમાં ડાબે ‘નિરપેક્ષ મૂલ્ય લો’ અને જમણે −14 છે.">
+<label /><tgroup cols="2">
+<tbody>
+  <row>
+    <entry />
+    <entry align="right"><m:math><m:mo>−</m:mo><m:mo>|</m:mo><m:mi>p</m:mi><m:mo>|</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry><media id="eip-id1169754142474" alt="pની જગ્યાએ −14 મૂકો."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_013a_img_new.jpg" /></media></entry>
+    <entry align="right"><media id="eip-id1169754130713" alt="સફેદ પૃષ્ઠભૂમિ પર પદાવલી −|−14| છે. ઊભી રેખાઓની અંદરનું −14 લાલ રંગમાં અને બહારનું ઋણ ચિહ્ન કાળા રંગમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_013b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>નિરપેક્ષ મૂલ્ય લો.</entry>
+    <entry align="right"><m:math><m:mo>−</m:mo><m:mn>14</m:mn></m:math></entry>
+  </row>
+ </tbody>
+</tgroup>
+</table></para></solution>
+</exercise>
+</example>
+<note id="fs-id1170655081066" class="try">
+<exercise id="fs-id1170655193879">
+<problem id="fs-id1170655193881">
+<para id="fs-id1170655193884">કિંમત શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−17</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−39</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>m</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>22</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>p</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>−11</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655129135">
+<para id="fs-id1170655129137"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>17</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>39</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−22</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mn>−11</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655106386" class="try">
+<exercise id="fs-id1170655355506">
+<problem id="fs-id1170655355508">
+<para id="fs-id1170655355510">કિંમત શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>y</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−23</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−21</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>n</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>37</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>q</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>−49</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654902359">
+<para id="fs-id1170655098975"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>23</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>21</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−37</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mn>−49</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654942142"><title>પૂર્ણાંકોનો સરવાળો કરો</title><para id="fs-id1170654942147">મોટાભાગના વિદ્યાર્થીઓ ધન સંખ્યાઓના સરવાળા અને બાદબાકીથી પરિચિત હોય છે. પરંતુ ધન અને ઋણ બંને પ્રકારની સંખ્યાઓ સાથે સરવાળો કે બાદબાકી કરવી થોડી વધુ મુશ્કેલ હોઈ શકે છે.</para>
+<note id="fs-id1166424759040" class="manipulative-math">‘વસ્તુઓની મદદથી ગણિત’ની ‘ચિહ્નવાળી સંખ્યાઓનો સરવાળો’ પ્રવૃત્તિ કરવાથી પૂર્ણાંકોના સરવાળાની સમજ વધુ સ્પષ્ટ થશે.</note>
+<para id="fs-id1170654982815">ઋણ સંખ્યાઓના સરવાળા અને બાદબાકીનું નિરૂપણ કરવા આપણે બે રંગની ગણતરીની ચકતીઓ વાપરીશું. તેથી નિયમો ગોખવાને બદલે તમે પ્રક્રિયા જોઈને સમજી શકશો.</para>
+<para id="fs-id1170654940836">એક રંગ (વાદળી) ધન સંખ્યા દર્શાવે છે. બીજો રંગ (લાલ) ઋણ સંખ્યા દર્શાવે છે. એક ધન ચકતી અને એક ઋણ ચકતી સાથે હોય ત્યારે આ જોડીનું મૂલ્ય શૂન્ય થાય છે. આ શૂન્ય બનાવતી જોડી છે. આવી જોડીનું મૂલ્ય શૂન્ય છે.</para>
+<media id="fs-id1170654940841" alt="ચિત્રમાં એક વાદળી ચકતીની નીચે એક લાલ ચકતી છે અને બંનેની આસપાસ વર્તુળ છે. જમણી બાજુનું સમીકરણ 1 + (−1) = 0 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_014_img_new.jpg" />
+</media>
+<para id="fs-id1170654925278">આપણે ચકતીઓની મદદથી આ સંખ્યાઓ વાપરી સરવાળાનાં ચાર ઉદાહરણો દર્શાવીશું: <m:math><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1170654944254" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−5</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170654942111">સરવાળો કરવા માટે, <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> આપણે સમજીએ છીએ કે <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> એટલે 5 અને 3નો સરવાળો.</para>
+<table id="eip-id1169751875448" class="unnumbered unstyled can-break" aria-label="આકૃતિમાં બે સ્તંભ અને ત્રણ હરોળ છે. પહેલી હરોળમાં ડાબે ‘શરૂઆતમાં આપણી પાસે 5 ધન ચકતીઓ છે’ અને જમણે 5 ધન ચકતીઓની નીચે 5 લખેલું છે. બીજી હરોળમાં ડાબે ‘પછી 3 ધન ચકતીઓ ઉમેરીએ છીએ’ અને જમણે 5 ધન ચકતીઓના જૂથ પછી થોડા અંતરે બીજી 3 ધન ચકતીઓ છે. ત્રીજી હરોળમાં ડાબે ‘હવે આપણી પાસે 8 ધન ચકતીઓ છે. 5 અને 3નો સરવાળો 8 છે’ અને જમણે આઠ ધન ચકતીઓની નીચે ‘8 ધન ચકતીઓ’ લખેલું છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>શરૂઆતમાં આપણી પાસે 5 ધન ચકતીઓ છે.</entry>
+    <entry align="center"><media id="eip-id1169754176959" alt="આછા વાદળી રંગનાં પાંચ વર્તુળો આડી હરોળમાં છે. તેમની નીચે 5 લખેલું છે, જે પાંચની સંખ્યા દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_015a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>પછી 3 ધન ચકતીઓ ઉમેરીએ છીએ.</entry>
+    <entry align="center"><media id="eip-id1169754176978" alt="આછા વાદળી રંગનાં વર્તુળોનાં બે જૂથ છે. પહેલા જૂથમાં પાંચ વર્તુળો અને બીજા જૂથમાં ત્રણ વર્તુળો છે. દરેક જૂથની નીચે તેની સંખ્યા લખેલી છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_015b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>હવે આપણી પાસે 8 ધન ચકતીઓ છે. 5 અને 3નો સરવાળો 8 છે.</entry>
+    <entry align="center"><media id="eip-id1169753253870" alt="આછા વાદળી રંગનાં આઠ વર્તુળો આડી હરોળમાં છે. નીચે વચ્ચે ‘8 ધન ચકતીઓ’ લખેલું છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_015c_img_new.jpg" /></media></entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table>
+<para id="fs-id1170654940990">હવે આપણે સરવાળો કરીશું: <m:math><m:mrow><m:mn>−5</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> અગાઉના ઉદાહરણ સાથેની સમાનતાઓ પર ધ્યાન આપો. <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170655170230">સરવાળો કરવા માટે, <m:math><m:mrow><m:mn>−5</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> આપણે સમજીએ છીએ કે તેનો અર્થ આ સંખ્યાઓનો સરવાળો છે: <m:math><m:mrow><m:mn>−5</m:mn><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<table id="eip-id1169751926722" class="unnumbered unstyled" aria-label="આકૃતિમાં બે સ્તંભ અને ત્રણ હરોળ છે. પહેલી હરોળમાં ડાબે ‘શરૂઆતમાં આપણી પાસે 5 ઋણ ચકતીઓ છે’ અને જમણે 5 ઋણ ચકતીઓની નીચે −5 લખેલું છે. બીજી હરોળમાં ડાબે ‘પછી 3 ઋણ ચકતીઓ ઉમેરીએ છીએ’ અને જમણે 5 ઋણ ચકતીઓના જૂથ પછી થોડા અંતરે બીજી 3 ઋણ ચકતીઓ છે. ત્રીજી હરોળમાં ડાબે ‘હવે આપણી પાસે 8 ઋણ ચકતીઓ છે. −5 અને −3નો સરવાળો −8 છે’ અને જમણે આઠ ઋણ ચકતીઓની નીચે ‘8 ઋણ ચકતીઓ’ લખેલું છે.">
+<label /><tgroup cols="2">
+<tbody>
+  <row>
+    <entry>શરૂઆતમાં આપણી પાસે 5 ઋણ ચકતીઓ છે.</entry>
+    <entry align="center"><media id="eip-id1169751926744" alt="પાંચ લાલ વર્તુળો આડી હરોળમાં છે. તેમની નીચે વચ્ચે −5 લખેલું છે, જે ઋણ પાંચ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_018a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>પછી 3 ઋણ ચકતીઓ ઉમેરીએ છીએ.</entry>
+    <entry align="center"><media id="eip-id1169754029689" alt="લાલ વર્તુળોનાં બે જૂથ છે. પહેલા જૂથનાં પાંચ વર્તુળોની નીચે −5 અને બીજા જૂથનાં ત્રણ વર્તુળોની નીચે −3 લખેલું છે. આ જૂથો ઋણ સંખ્યાઓ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_018b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>હવે આપણી પાસે 8 ઋણ ચકતીઓ છે. −5 અને −3નો સરવાળો −8 છે.</entry>
+    <entry align="center"><media id="eip-id1169754029708" alt="આઠ લાલ વર્તુળો આડી હરોળમાં છે. નીચે વચ્ચે ‘8 ઋણ ચકતીઓ’ લખેલું છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_018c_img_new.jpg" /></media></entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+<para id="fs-id1170654905072">આ પહેલાં બે ઉદાહરણોમાં કઈ સમાનતાઓ હતી?</para>
+<list id="fs-id1166424896444" list-type="bulleted" bullet-style="bullet">
+<item>પહેલા ઉદાહરણમાં 5 ધન ચકતીઓ અને 3 ધન ચકતીઓ ઉમેરી છે—બંને ધન છે.</item>
+<item>બીજા ઉદાહરણમાં 5 ઋણ ચકતીઓ અને 3 ઋણ ચકતીઓ ઉમેરી છે—બંને ઋણ છે.</item>
+</list>
+<para id="fs-id1170654905046">બંનેમાં આપણને 8 ચકતીઓ મળી—કાં તો 8 ધન ચકતીઓ, કાં તો 8 ઋણ ચકતીઓ.</para>
+<para id="fs-id1170654905109">ચિહ્નો સમાન હતાં ત્યારે બધી ચકતીઓ એક જ રંગની હતી, તેથી આપણે તેમને ઉમેરી.</para>
+<media id="fs-id1170655040356" alt="આકૃતિ બે સ્તંભમાં વહેંચાયેલી છે. ડાબા સ્તંભમાં આઠ વાદળી ચકતીઓ આડી હરોળમાં છે. તેમની નીચે ‘8 ધન ચકતીઓ’ અને પછી 5 + 3 = 8 સમીકરણ છે. જમણા સ્તંભમાં આઠ લાલ ચકતીઓ છે. તેમની નીચે ‘8 ઋણ ચકતીઓ’ અને પછી −5 + (−3) = −8 સમીકરણ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_021_img_new.jpg" />
+</media>
+<example id="fs-id1170655040348">
+<exercise id="fs-id1170655040350">
+<problem id="fs-id1170655040352">
+<para id="fs-id1170655030146">સરવાળો કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655030382">
+<title>ઉકેલ</title>
+<para id="fs-id1169147758309"><span class="token">ⓐ</span> <newline />
+<table id="fs-id1169147906059" class="unnumbered unstyled" aria-label="ચિત્રમાં એક વાદળી ચકતી, થોડું અંતર અને બીજી ચાર વાદળી ચકતીઓ આડી હરોળમાં છે. જમણી બાજુ 1 + 4 પદાવલી અને તેની નીચે 5 છે.">
+<label />
+<tgroup cols="1">
+<colspec colnum="1" colname="c1" />
+<tbody>
+<row valign="top">
+<entry valign="top" align="left"><media id="fs-id1169145747419" alt="આડી હરોળમાં પાંચ આછા વાદળી વર્તુળો 1 અને 4નો સરવાળો દર્શાવે છે. બાજુમાં 1 + 4 અને 5 લખેલું છે."><image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_022_img_new.jpg" /></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">1 ધન ચકતી અને 4 ધન ચકતીઓ મળીને 5 ધન ચકતીઓ થાય છે.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1169145731676"><span class="token">ⓑ</span> <newline />
+<table id="fs-id1169147722882" class="unnumbered unstyled can-break" aria-label="ચિત્રમાં એક લાલ ચકતી, થોડું અંતર અને બીજી ચાર લાલ ચકતીઓ આડી હરોળમાં છે. જમણી બાજુ −1 + (−4) પદાવલી અને તેની નીચે −5 છે.">
+<label />
+<tgroup cols="1">
+<colspec colnum="1" colname="c1" />
+<tbody>
+<row valign="top">
+<entry valign="top" align="left"><media id="fs-id1169147988509" alt="પાંચ લાલ વર્તુળો −1 અને −4નો સરવાળો −5 થાય છે તે દર્શાવે છે. આ ઋણ સંખ્યાઓના સરવાળાનું નિરૂપણ છે."><image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_023_img_new.jpg" /></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">1 ઋણ ચકતી અને 4 ઋણ ચકતીઓ મળીને 5 ઋણ ચકતીઓ થાય છે.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655040494" class="try">
+<exercise id="fs-id1170655040468">
+<problem id="fs-id1170655040471">
+<para id="fs-id1170655040473">સરવાળો કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655040605">
+<para id="fs-id1170655040607"><span class="token">ⓐ</span> 6 <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−6</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655040589" class="try">
+<exercise id="fs-id1170655040650">
+<problem id="fs-id1170655040652">
+<para id="fs-id1170655040655">સરવાળો કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655040708">
+<para id="fs-id1170655040710"><span class="token">ⓐ</span> 7 <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−7</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655030242">તો ચિહ્નો જુદાં હોય ત્યારે શું થાય? ચાલો સરવાળો કરીએ: <m:math><m:mrow><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> આપણે સમજીએ છીએ કે આનો અર્થ <m:math><m:mrow><m:mn>−5</m:mn></m:mrow></m:math> અને 3નો સરવાળો છે. ચકતીઓનો રંગ સમાન હતો ત્યારે આપણે તેમને એક હરોળમાં ગોઠવી હતી. રંગ જુદા હોય ત્યારે તેમને એકબીજીની નીચે ગોઠવીએ છીએ.</para>
+<table id="eip-id1169750997833" class="unnumbered unstyled" aria-label="આકૃતિ બે સ્તંભમાં વહેંચાયેલી છે. ઉપર જમણા સ્તંભમાં ‘−5 + 3 એટલે −5 અને 3નો સરવાળો’ લખેલું છે. પછીની હરોળમાં ડાબે ‘શરૂઆતમાં આપણી પાસે 5 ઋણ ચકતીઓ છે’ અને જમણે પાંચ લાલ ચકતીઓ છે. પછી ડાબે ‘પછી 3 ધન ચકતીઓ ઉમેરીએ છીએ’ અને જમણે પાંચ લાલ ચકતીઓની નીચે ત્રણ વાદળી ચકતીઓ છે. પછી ડાબે ‘શૂન્ય બનાવતી જોડીઓ દૂર કરીએ છીએ’ અને જમણે ત્રણ લાલ-વાદળી જોડીઓની આસપાસ વર્તુળો છે; જમણી બાજુ બે લાલ ચકતીઓ બાકી છે. પછી ડાબે ‘2 ઋણ ચકતીઓ બાકી છે’ અને જમણે બે લાલ ચકતીઓની નીચે ‘2 ઋણ ચકતીઓ’ લખેલું છે. છેલ્લે ડાબે ‘−5 અને 3નો સરવાળો −2 છે’ અને જમણે −5 + 3 = −2 છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry>−5 + 3 એટલે −5 અને 3નો સરવાળો. </entry>
+  </row>
+  <row>
+    <entry>શરૂઆતમાં આપણી પાસે 5 ઋણ ચકતીઓ છે.</entry>
+    <entry><media id="eip-id1169750997858" alt="સફેદ પૃષ્ઠભૂમિ પર પાંચ લાલ અંડાકાર આકૃતિઓ આડી હરોળમાં છે; તે ગોળીઓ અથવા મણકાની હરોળ જેવી દેખાય છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_024a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>પછી 3 ધન ચકતીઓ ઉમેરીએ છીએ.</entry>
+    <entry><media id="eip-id1169750997874" alt="સફેદ પૃષ્ઠભૂમિ પર પાંચ લાલ વર્તુળોની આડી હરોળની નીચે ત્રણ આછા વાદળી વર્તુળોની આડી હરોળ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_024b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>શૂન્ય બનાવતી જોડીઓ દૂર કરીએ છીએ.</entry>
+    <entry><media id="eip-id1169747671495" alt="ત્રણ જાંબલી અંડાકાર આકૃતિઓ એક હરોળમાં છે. દરેકમાં એક નારંગી અને એક આછું વાદળી વર્તુળ છે. જમણે બે નારંગી વર્તુળો અલગ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_024c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>2 ઋણ ચકતીઓ બાકી છે.</entry>
+    <entry><media id="eip-id1169747671512" alt="સફેદ પૃષ્ઠભૂમિ પર બે લાલ વર્તુળોની નીચે ‘2 ઋણ ચકતીઓ’ લખેલું છે; તે ઋણ મૂલ્યો દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_024d_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>−5 અને 3નો સરવાળો −2 છે.</entry>
+    <entry>−5 + 3 = −2</entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table>
+<para id="fs-id1170654936878">ધ્યાન આપો કે ધન ચકતીઓ કરતાં ઋણ ચકતીઓ વધુ હતી, તેથી પરિણામ ઋણ આવ્યું.</para>
+<para id="fs-id1170654936881">હવે છેલ્લો સંયોજન લઈ સરવાળો કરીએ: <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+<table id="eip-id1169754030168" class="unnumbered unstyled can-break" aria-label="આકૃતિ બે સ્તંભમાં વહેંચાયેલી છે. ઉપર જમણા સ્તંભમાં ‘5 + (−3) એટલે 5 અને −3નો સરવાળો’ લખેલું છે. પછીની હરોળમાં ડાબે ‘શરૂઆતમાં આપણી પાસે 5 ધન ચકતીઓ છે’ અને જમણે પાંચ વાદળી ચકતીઓ છે. પછી ડાબે ‘પછી 3 ઋણ ચકતીઓ ઉમેરીએ છીએ’ અને જમણે પાંચ વાદળી ચકતીઓની નીચે ત્રણ લાલ ચકતીઓ છે. પછી ડાબે ‘શૂન્ય બનાવતી જોડીઓ દૂર કરીએ છીએ’ અને જમણે ત્રણ વાદળી-લાલ જોડીઓની આસપાસ વર્તુળો છે; જમણી બાજુ બે વાદળી ચકતીઓ બાકી છે. પછી ડાબે ‘2 ધન ચકતીઓ બાકી છે’ અને જમણે બે વાદળી ચકતીઓની નીચે ‘2 ધન ચકતીઓ’ લખેલું છે. છેલ્લે ડાબે ‘5 અને −3નો સરવાળો 2 છે’ અને જમણે 5 + (−3) = 2 છે.">
+<label /><tgroup cols="2">
+<tbody>
+  <row>
+    <entry />
+    <entry>5 + (−3) એટલે 5 અને −3નો સરવાળો. </entry>
+  </row>
+  <row>
+    <entry>શરૂઆતમાં આપણી પાસે 5 ધન ચકતીઓ છે.</entry>
+    <entry><media id="eip-id1169754030192" alt="પાંચ આછા વાદળી, અર્ધપારદર્શક અંડાકાર આકારો સફેદ પૃષ્ઠભૂમિ પર વ્યવસ્થિત હરોળમાં છે; તે પાણીનાં ટીપાં અથવા પરપોટા જેવા દેખાય છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_025a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>પછી 3 ઋણ ચકતીઓ ઉમેરીએ છીએ.</entry>
+    <entry><media id="eip-id1169754030208" alt="સફેદ પૃષ્ઠભૂમિ પર આઠ વર્તુળો બે હરોળમાં છે. ઉપરની હરોળમાં પાંચ આછા વાદળી વર્તુળો અને નીચેની હરોળમાં ત્રણ લાલ વર્તુળો છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_025b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>શૂન્ય બનાવતી જોડીઓ દૂર કરીએ છીએ.</entry>
+    <entry><media id="eip-id1169754030225" alt="ત્રણ જોડીઓમાં દરેક જોડીનું એક આછું વાદળી અને એક નારંગી વર્તુળ જાંબલી અંડાકારમાં બંધ છે. બાજુમાં બે આછા વાદળી વર્તુળો અલગ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_025c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>2 ધન ચકતીઓ બાકી છે.</entry>
+    <entry><media id="eip-id1169748875617" alt="બે આછા વાદળી વર્તુળોની નીચે ‘2 ધન ચકતીઓ’ લખેલું છે, જે બે ધન પરિણામો અથવા વસ્તુઓ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_025d_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>5 અને −3નો સરવાળો 2 છે.</entry>
+    <entry>5 + (−3) = 2</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+<para id="fs-id1170655057773">ચકતીઓ વડે ધન અને ઋણ પૂર્ણાંકોના સરવાળાનું નિરૂપણ કરીએ ત્યારે ધન ચકતીઓ વધુ છે કે ઋણ ચકતીઓ તે સરળતાથી દેખાય છે. તેથી સરવાળો ધન થશે કે ઋણ તે જાણી શકીએ છીએ.</para>
+<media id="fs-id1170655058518" alt="નામનિર્દેશ સાથે બે ચિત્રો છે. ડાબે પાંચ લાલ ચકતીઓની હરોળની નીચે ત્રણ વાદળી ચકતીઓ છે; પહેલી ત્રણ લાલ-વાદળી જોડીઓની આસપાસ વર્તુળો છે. ઉપર ‘−5 + 3’ અને નીચે ‘ઋણ ચકતીઓ વધુ—સરવાળો ઋણ’ લખેલું છે. જમણે પાંચ વાદળી ચકતીઓની હરોળની નીચે ત્રણ લાલ ચકતીઓ છે; પહેલી ત્રણ વાદળી-લાલ જોડીઓની આસપાસ વર્તુળો છે. ઉપર ‘5 + (−3)’ અને નીચે ‘ધન ચકતીઓ વધુ—સરવાળો ધન’ લખેલું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_026_img_new.jpg" />
+</media>
+<example id="fs-id1170655058514">
+<exercise id="fs-id1170655058516">
+<problem id="fs-id1170655058550">
+<para id="fs-id1170655058552">સરવાળો કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−1</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655029787">
+<title>ઉકેલ</title>
+<para id="fs-id1166422829183"><span class="token">ⓐ</span> <newline />
+<table id="eip-id1169754360753" class="unnumbered unstyled" aria-label="ચિત્રમાં બે સ્તંભ છે. જમણા સ્તંભની ઉપર −1 + 5 છે. પછીની હરોળમાં ડાબે ‘ધન ચકતીઓ વધુ છે, તેથી સરવાળો ધન છે’ લખેલું છે. જમણે પાંચ વાદળી ચકતીઓની નીચે એક લાલ ચકતી છે. પહેલી વાદળી ચકતી અને એકમાત્ર લાલ ચકતીની આસપાસ વર્તુળ છે. નીચે 4 લખેલું છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry align="center">−1 + 5</entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1169749528166" alt="સફેદ પૃષ્ઠભૂમિ પર એક લાલ અને એક વાદળી વર્તુળ જાંબલી અંડાકારમાં બંધ છે. તેની જમણે બીજાં ચાર વાદળી વર્તુળો એક હરોળમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_027_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>ધન ચકતીઓ વધુ છે, તેથી સરવાળો ધન છે.</entry>
+    <entry align="center">4</entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table><newline /><newline />
+<span class="token">ⓑ</span> <newline />
+<table id="eip-id1169750608265" class="unnumbered unstyled can-break" aria-label="ચિત્રમાં બે સ્તંભ છે. જમણા સ્તંભની ઉપર 1 + (−5) છે. પછીની હરોળમાં ડાબે ‘ઋણ ચકતીઓ વધુ છે, તેથી સરવાળો ઋણ છે’ લખેલું છે. જમણે એક વાદળી ચકતીની નીચે પાંચ લાલ ચકતીઓ છે. એકમાત્ર વાદળી ચકતી અને પહેલી લાલ ચકતીની આસપાસ વર્તુળ છે. નીચે −4 લખેલું છે.">
+<label /><tgroup cols="2">
+<tbody>
+  <row>
+    <entry />
+    <entry align="center">1 + (−5)</entry>
+  </row>
+  <row>
+    <entry />
+    <entry><media id="eip-id1169750608293" alt="એક વાદળી અને એક લાલ વર્તુળ જાંબલી અંડાકારમાં બંધ છે. તેની બાજુમાં બીજાં ચાર લાલ વર્તુળો આડી હરોળમાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_028_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>ઋણ ચકતીઓ વધુ છે, તેથી સરવાળો ઋણ છે.</entry>
+    <entry align="center">−4</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table></para></solution>
+</exercise>
+</example>
+<note id="fs-id1170655041208" class="try">
+<exercise id="fs-id1170654904891">
+<problem id="fs-id1170654904893">
+<para id="fs-id1170654904895">સરવાળો કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655066666">
+<para id="fs-id1170655066668"><span class="token">ⓐ</span> 2 <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655066652" class="try">
+<exercise id="fs-id1170655066629">
+<problem id="fs-id1170655066631">
+<para id="fs-id1170655066633">સરવાળો કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655066149">
+<para id="fs-id1170655066151"><span class="token">ⓐ</span> 3 <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655066171">હવે આપણે નિરૂપણની મદદથી નાના ધન અને ઋણ પૂર્ણાંકોના સરવાળા કર્યા છે. મનમાં આ નિરૂપણની કલ્પના કરીને કોઈ પણ સંખ્યાઓવાળા દાખલા સરળ બનાવી શકીએ છીએ.</para>
+<para id="fs-id1170655067182">જ્યારે તમારે <m:math><m:mrow><m:mn>37</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mn>53</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> જેવી સંખ્યાઓનો સરવાળો કરવો હોય ત્યારે ખરેખર 37 વાદળી અને 53 લાલ ચકતીઓ ગણવા બેસવું ગમે નહીં. મનમાં નિરૂપણની કલ્પના કરીને તમે આ દાખલો કેવી રીતે ઉકેલશો તે વિચારી શકો છો?</para>
+<para id="fs-id1170655067203">37 વાદળી ચકતીઓની નીચે 53 લાલ ચકતીઓ ગોઠવેલી હોવાની કલ્પના કરો. વાદળી (ધન) ચકતીઓ કરતાં લાલ (ઋણ) ચકતીઓ વધુ હોવાથી સરવાળો <emphasis effect="italics">ઋણ</emphasis> થશે. લાલ ચકતીઓ કેટલી વધુ હશે? કારણ કે <m:math><m:mrow><m:mn>53</m:mn><m:mo>−</m:mo><m:mn>37</m:mn><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>,</m:mo></m:mrow></m:math> તેથી લાલ ચકતીઓ 16 વધુ છે.</para>
+<para id="fs-id1170655067279">તેથી <m:math><m:mrow><m:mn>37</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mn>53</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>નો સરવાળો છે: <m:math><m:mrow><m:mn>−16</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1170655067436" class="unnumbered"><label /><m:math><m:mrow><m:mn>37</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mn>53</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−16</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170655069654">ચાલો બીજો દાખલો કરીએ. આપણે સરવાળો કરીશું: <m:math><m:mrow><m:mn>−74</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mn>27</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> ફરીથી 74 લાલ ચકતીઓ અને બીજી 27 લાલ ચકતીઓની કલ્પના કરો; આમ 101 લાલ ચકતીઓ થાય. તેનો અર્થ એ કે સરવાળો છે: <m:math><m:mrow><m:mn>−101</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1170655069356" class="unnumbered"><label /><m:math><m:mrow><m:mn>−74</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mn>27</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−101</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170655069404">ચાલો જુદા સંયોજનોના સરવાળાનાં પરિણામો ફરી જોઈએ: <m:math><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<note id="fs-id1170655069460">
+<title>ધન અને ઋણ પૂર્ણાંકોનો સરવાળો</title>
+<equation id="fs-id1170655069465" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−5</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>8</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−8</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mtext>બંને ધન, સરવાળો ધન</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mtext>બંને ઋણ, સરવાળો ઋણ</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170655072721">ચિહ્નો સમાન હોય ત્યારે બધી ચકતીઓ એક જ રંગની હોય, તેથી તેમને ઉમેરો.</para>
+<equation id="fs-id1170655072724" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>−2</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mtext>ચિહ્નો જુદાં, ઋણ ચકતીઓ વધુ, સરવાળો ઋણ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mtext>ચિહ્નો જુદાં, ધન ચકતીઓ વધુ, સરવાળો ધન</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170655163407">ચિહ્નો જુદાં હોય ત્યારે કેટલીક ચકતીઓ શૂન્ય બનાવતી જોડીઓ બનાવે, તેથી કેટલી બાકી રહે છે તે જાણવા બાદબાકી કરો.</para>
+</note>
+<para id="fs-id1170654942464">નીચેનાં ઉદાહરણોમાં પદાવલીઓને સરળ બનાવતી વખતે મનમાં નિરૂપણની કલ્પના કરો.</para>
+<example id="fs-id1170654942467">
+<exercise id="fs-id1170654942469">
+<problem id="fs-id1170654932186">
+<para id="fs-id1170654932188">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>19</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−47</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−14</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−36</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654942539"><title>ઉકેલ</title>
+<list id="fs-id1166422639606" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> ચિહ્નો જુદાં હોવાથી આપણે બાદ કરીએ છીએ: <m:math><m:mrow><m:mtext>47માંથી 19</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> ધન કરતાં ઋણ ચકતીઓ વધુ હોવાથી જવાબ ઋણ આવશે.<newline />
+<m:math><m:mtable><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mspace width="0.3em" /><m:mn>19</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−47</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>સરવાળો કરો.</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mspace width="0.3em" /><m:mn>−28</m:mn></m:mtd></m:mtr></m:mtable></m:math></item>
+<item><span class="token">ⓑ</span> ચિહ્નો સમાન હોવાથી આપણે સરવાળો કરીએ છીએ. માત્ર ઋણ ચકતીઓ હોવાથી જવાબ ઋણ આવશે.<newline />
+<m:math><m:mtable><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−14</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−36</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>સરવાળો કરો.</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−50</m:mn></m:mtd></m:mtr></m:mtable></m:math></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170654941611" class="try">
+<exercise id="fs-id1170654941248">
+<problem id="fs-id1170654941250">
+<para id="fs-id1170654941252">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−31</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−19</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>15</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−32</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654941827">
+<para id="fs-id1170655215496"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−50</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−17</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655226057" class="try">
+<exercise id="fs-id1170655226061">
+<problem id="fs-id1170655226063">
+<para id="fs-id1170655226065">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−42</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−28</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>25</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−61</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655165460">
+<para id="fs-id1170655165462"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−70</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−36</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654944039">અત્યાર સુધી વાપરેલી રીતો અગાઉ જોયા હોય તેવા વધુ જટિલ દાખલાઓમાં પણ લાગુ પડે છે. ક્રિયાઓનો ક્રમ અનુસરવાનું યાદ રાખો!</para>
+<example id="fs-id1170654929152"><exercise id="fs-id1170654929154">
+<problem id="fs-id1170654929156">
+<para id="fs-id1170654929159">સરળ બનાવો: <m:math><m:mrow><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654934976">
+<title>ઉકેલ</title>
+<table id="eip-256" class="unnumbered unstyled" summary="−5 + 3(−2 + 7) પદાવલીને ક્રિયાઓના ક્રમ મુજબ પગલાંવાર સરળ બનાવી છે. પરિણામ 10 મળે છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry> </entry>
+    <entry><m:math><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry>ગોળ કૌંસની અંદરની પદાવલી સરળ બનાવો.</entry>
+    <entry><m:math><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>15</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>ડાબેથી જમણે સરવાળો કરો.</entry>
+    <entry><m:math><m:mn>10</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654936183" class="try">
+<exercise id="fs-id1170654936186">
+<problem id="fs-id1170654936188">
+<para id="fs-id1170654936190">સરળ બનાવો: <m:math><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654944107">
+<para id="fs-id1170654944110">13</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654940622" class="try">
+<exercise id="fs-id1170654940626">
+<problem id="fs-id1170654940628">
+<para id="fs-id1170655111076">સરળ બનાવો: <m:math><m:mrow><m:mn>−4</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654944573">
+<para id="fs-id1170654944575">0</para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1170654942216"><title>પૂર્ણાંકોની બાદબાકી કરો</title><note id="fs-id1166424880723" class="manipulative-math">‘વસ્તુઓની મદદથી ગણિત’ની ‘ચિહ્નવાળી સંખ્યાઓની બાદબાકી’ પ્રવૃત્તિ કરવાથી પૂર્ણાંકોની બાદબાકીની સમજ વધુ સ્પષ્ટ થશે.</note>
+<para id="fs-id1170654921208">બાદબાકીનું નિરૂપણ કરવા આપણે ચકતીઓનો ઉપયોગ ચાલુ રાખીશું. યાદ રાખો, વાદળી ચકતીઓ ધન સંખ્યાઓ અને લાલ ચકતીઓ ઋણ સંખ્યાઓ દર્શાવે છે.</para>
+<para id="fs-id1170654921213">તમે નાના હતા ત્યારે કદાચ <m:math><m:mrow><m:mtext>“</m:mtext><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mtext>”</m:mtext></m:mrow></m:math>ને આ રીતે વાંચ્યું હશે: <m:math><m:mrow><m:mtext>“</m:mtext><m:mn>5</m:mn></m:mrow></m:math>માંથી દૂર કરો: <m:math><m:mrow><m:mn>3.</m:mn><m:mtext>”</m:mtext></m:mrow></m:math> ચકતીઓ વાપરતી વખતે બાદબાકીને એ જ રીતે વિચારી શકો છો!</para>
+<para id="fs-id1170654932154">આ સંખ્યાઓ વાપરી આપણે બાદબાકીનાં ચાર ઉદાહરણોનું નિરૂપણ કરીશું: <m:math><m:mn>5</m:mn></m:math> અને <m:math><m:mrow><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1170654936672" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−5</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170654939339">બાદબાકી કરવા માટે, <m:math><m:mrow><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> આપણે દાખલાને આ રીતે ફરી કહીએ: <m:math><m:mrow><m:mtext>“</m:mtext><m:mn>5</m:mn></m:mrow></m:math>માંથી દૂર કરો: <m:math><m:mrow><m:mn>3.</m:mn><m:mtext>”</m:mtext></m:mrow></m:math></para>
+
+<table id="eip-id1169750607921" class="unnumbered unstyled" aria-label="ચિત્રમાં બે સ્તંભ અને ચાર હરોળ છે. પહેલી હરોળમાં ડાબે ‘શરૂઆતમાં આપણી પાસે 5 ધન ચકતીઓ છે’ અને જમણે પાંચ વાદળી ચકતીઓ આડી હરોળમાં છે. પછી ડાબે ‘3 ધન ચકતીઓ દૂર કરીએ છીએ’ અને જમણે ત્રણ વાદળી ચકતીઓ, થોડું અંતર અને બીજી બે વાદળી ચકતીઓ છે. પહેલી ત્રણની આસપાસ તીરવાળું વર્તુળ છે. પછી ડાબે ‘2 ધન ચકતીઓ બાકી છે’ અને છેલ્લે ‘5 અને 3નો તફાવત 2 છે’ લખેલું છે; જમણે 2 છે.">
+<label /><tgroup cols="2">
+<tbody>
+  <row>
+    <entry>શરૂઆતમાં આપણી પાસે 5 ધન ચકતીઓ છે.</entry>
+    <entry><media id="eip-id1169746620624" alt="સફેદ પૃષ્ઠભૂમિ પર પાંચ આછા વાદળી, અંડાકાર ગોળી જેવા આકારો આડા ગોઠવેલા છે, જે એક સરળ અમૂર્ત ભાત અથવા નિરૂપણ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_029a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>3 ધન ચકતીઓ દૂર કરીએ છીએ.</entry>
+    <entry><media id="eip-id1169746620641" alt="પાંચ આછા વાદળી વર્તુળોની હરોળમાંનાં પ્રથમ ત્રણની આસપાસ ગુલાબી-જાંબલી અંડાકાર અને ડાબી તરફનું તીર છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_029b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>2 ધન ચકતીઓ બાકી છે.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>5 અને 3નો તફાવત 2 છે.</entry>
+    <entry align="center">2</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+<para id="fs-id1170654932116">હવે આપણે બાદબાકી કરીશું: <m:math><m:mrow><m:mn>−5</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> અગાઉના ઉદાહરણ સાથેની સમાનતાઓ પર ધ્યાન આપો. <m:math><m:mrow><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170654936713">બાદબાકી કરવા માટે, <m:math><m:mrow><m:mn>−5</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> તેને આ રીતે ફરી કહીએ: <m:math><m:mrow><m:mtext>“</m:mtext><m:mn>–5</m:mn></m:mrow></m:math>માંથી દૂર કરો: <m:math><m:mrow><m:mn>–3</m:mn><m:mtext>”</m:mtext></m:mrow></m:math></para>
+
+<table id="eip-id1169750717917" class="unnumbered unstyled" aria-label="ચિત્રમાં બે સ્તંભ અને ચાર હરોળ છે. પહેલી હરોળમાં ડાબે ‘શરૂઆતમાં આપણી પાસે 5 ઋણ ચકતીઓ છે’ અને જમણે પાંચ લાલ ચકતીઓ આડી હરોળમાં છે. પછી ડાબે ‘3 ઋણ ચકતીઓ દૂર કરીએ છીએ’ અને જમણે ત્રણ લાલ ચકતીઓ, થોડું અંતર અને બીજી બે લાલ ચકતીઓ છે. પહેલી ત્રણની આસપાસ તીરવાળું વર્તુળ છે. પછી ડાબે ‘2 ઋણ ચકતીઓ બાકી છે’ અને છેલ્લે ‘−5 અને −3નો તફાવત −2 છે’ લખેલું છે; જમણે −2 છે.">
+<label /><tgroup cols="2">
+<tbody>
+  <row>
+    <entry>શરૂઆતમાં આપણી પાસે 5 ઋણ ચકતીઓ છે.</entry>
+    <entry><media id="eip-id1169753098982" alt="સફેદ પૃષ્ઠભૂમિ પર પાંચ સમાન લાલ-નારંગી અંડાકાર આકારો આડી હરોળમાં છે; તે મણકા અથવા ખંડ જેવા હોઈ શકે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_030a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>3 ઋણ ચકતીઓ દૂર કરીએ છીએ.</entry>
+    <entry><media id="eip-id1169753098998" alt="પાંચ નારંગી વર્તુળોની હરોળમાંનાં પ્રથમ ત્રણની આસપાસ જાંબલી અંડાકાર અને તીર છે. આ પાંચ વસ્તુઓમાંથી ત્રણ વસ્તુઓ ગણવાનું અથવા જુથમાં લેવાનું દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_030b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>2 ઋણ ચકતીઓ બાકી છે.</entry>
+    <entry />
+  </row>
+  <row>
+    <entry>−5 અને −3નો તફાવત −2 છે.</entry>
+    <entry align="center">−2</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+<para id="fs-id1170654936782">ધ્યાન આપો કે આ બે ઉદાહરણો ઘણાં સરખાં છે: પહેલા ઉદાહરણમાં 5 ધન ચકતીઓમાંથી 3 ધન ચકતીઓ બાદ કરતાં 2 ધન ચકતીઓ બાકી રહે છે.</para>
+<para id="fs-id1170654942784">બીજા ઉદાહરણમાં 5 ઋણ ચકતીઓમાંથી 3 ઋણ ચકતીઓ બાદ કરતાં 2 ઋણ ચકતીઓ બાકી રહે છે.</para>
+<para id="fs-id1170654942787">દરેક ઉદાહરણમાં માત્ર એક જ રંગની ચકતીઓ હતી, અને બાદબાકી માટે ‘દૂર કરવાની’ રીત સહેલાઈથી વાપરી શકાઈ.</para>
+<media id="fs-id1170654942792" alt="નામનિર્દેશ સાથે બે ચિત્રો છે. પહેલા ચિત્રમાં પાંચ વાદળી ચકતીઓમાંથી ત્રણની આસપાસ તીરવાળું વર્તુળ છે. ઉપર 5 − 3 = 2 સમીકરણ છે. બીજા ચિત્રમાં પાંચ લાલ ચકતીઓમાંથી ત્રણની આસપાસ તીરવાળું વર્તુળ છે. ઉપર −5 − (−3) = −2 સમીકરણ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_031_img_new.jpg" />
+</media>
+<example id="fs-id1170654941714"><exercise id="fs-id1170654941716">
+<problem id="fs-id1170654941719">
+<para id="fs-id1170654941105">બાદબાકી કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−7</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654942825"><title>ઉકેલ</title>
+<table id="eip-947" class="unnumbered unstyled" summary="ધન અને ઋણ પૂર્ણાંકોની બાદબાકી શબ્દો અને ગાણિતિક લખાણ વડે દર્શાવી છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> <newline />7 ધન ચકતીઓમાંથી 5 ધન ચકતીઓ દૂર કરતાં 2 ધન ચકતીઓ મળે છે.</entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry><span class="token">ⓑ</span> <newline />7 ઋણ ચકતીઓમાંથી 5 ઋણ ચકતીઓ દૂર કરતાં 2 ઋણ ચકતીઓ મળે છે. </entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+          <m:mtr><m:mtd><m:mn>−7</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+          <m:mtr><m:mtd><m:mn>−2</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654936849" class="try">
+<exercise id="fs-id1170655174377">
+<problem id="fs-id1170655174379">
+<para id="fs-id1170655174381">બાદબાકી કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−6</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654942396">
+<para id="fs-id1170654942399"><span class="token">ⓐ</span> 2 <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654942572" class="try">
+<exercise id="fs-id1170654942575">
+<problem id="fs-id1170654942577">
+<para id="fs-id1170654935898">બાદબાકી કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−7</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655208093">
+<para id="fs-id1170655208095"><span class="token">ⓐ</span> 3 <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654935830">ધન અને ઋણ સંખ્યાઓ વચ્ચે બાદબાકી કરવી હોય ત્યારે શું થાય? આપણે વાદળી અને લાલ બંને ચકતીઓની સાથે કેટલીક <term class="no-emphasis" id="term-00008">શૂન્ય બનાવતી જોડીઓ</term> વાપરવી પડશે. આવી જોડી ઉમેરવાથી મૂલ્ય બદલાતું નથી. આ 25 સેન્ટના સિક્કાના બદલામાં 5 સેન્ટના સિક્કા લેવા જેવું છે—મૂલ્ય સમાન રહે છે, પણ દેખાવ જુદો હોય છે.</para>
+<list id="fs-id1166424901740" list-type="bulleted" bullet-style="bullet">
+<item>બાદબાકી કરવા માટે, <m:math><m:mrow><m:mn>−5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> તેને આ રીતે ફરી કહીએ: <m:math><m:mrow><m:mn>−5</m:mn></m:mrow></m:math> માંથી 3 દૂર કરો.</item>
+</list>
+<para id="fs-id1170654928179">શરૂઆતમાં આપણી પાસે 5 ઋણ ચકતીઓ છે. આપણે 3 ધન ચકતીઓ દૂર કરવાની છે, પરંતુ આપણી પાસે દૂર કરવા માટે એક પણ ધન ચકતી નથી.</para>
+<para id="fs-id1170654928184">યાદ રાખો, શૂન્ય બનાવતી જોડીનું મૂલ્ય શૂન્ય છે. 5માં 0 ઉમેરીએ તો તેનું મૂલ્ય 5 જ રહે છે. દૂર કરવા માટે 3 ધન ચકતીઓ મળે ત્યાં સુધી આપણે 5 ઋણ ચકતીઓમાં શૂન્ય બનાવતી જોડીઓ ઉમેરીએ છીએ.</para>
+
+<table id="eip-id1169752192784" class="unnumbered unstyled" aria-label="ચિત્રમાં બે સ્તંભ અને છ હરોળ છે. પહેલી હરોળમાં જમણે ‘−5 − 3 એટલે −5માંથી 3 દૂર કરો’ લખેલું છે. પછી ડાબે ‘શરૂઆતમાં 5 ઋણ ચકતીઓ હતી’ અને જમણે પાંચ લાલ ચકતીઓની નીચે −5 લખેલું છે. પછી ડાબે ‘3 ધન ચકતીઓ મેળવવા જરૂરી શૂન્ય બનાવતી જોડીઓ ઉમેરીએ છીએ’ અને જમણે પાંચ લાલ ચકતીઓ પછી થોડા અંતરે ત્રણ લાલ ચકતીઓ અને તેમની નીચે ત્રણ વાદળી ચકતીઓ છે. પછી ડાબે ‘3 ધન ચકતીઓ દૂર કરીએ છીએ’ અને જમણે એ જ ચકતીઓમાં ત્રણ વાદળી ચકતીઓની આસપાસ તીરવાળું વર્તુળ છે. પછી ડાબે ‘8 ઋણ ચકતીઓ બાકી રહે છે’ અને જમણે પાંચ લાલ ચકતીઓ પછી થોડા અંતરે ત્રણ લાલ ચકતીઓ છે; નીચે ‘8 ઋણ ચકતીઓ’ લખેલું છે. છેલ્લે ડાબે ‘−5 અને 3નો તફાવત −8 છે’ અને જમણે −5 − 3 = −8 છે.">
+<label /><tgroup cols="2">
+<tbody>
+  <row>
+    <entry />
+    <entry>−5 − 3 એટલે −5માંથી 3 દૂર કરો.</entry>
+  </row>
+  <row>
+    <entry>શરૂઆતમાં આપણી પાસે 5 ઋણ ચકતીઓ છે.</entry>
+    <entry><media id="eip-id1169754016089" alt="પાંચ લાલ વર્તુળો −5 દર્શાવે છે; તે ઋણ પૂર્ણાંકનું નિરૂપણ છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_032a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>હવે 3 ધન ચકતીઓ મેળવવા જરૂરી શૂન્ય બનાવતી જોડીઓ ઉમેરીએ છીએ.</entry>
+    <entry><media id="eip-id1169754016106" alt="સફેદ પૃષ્ઠભૂમિ પર આઠ લાલ વર્તુળો છે—પહેલાં પાંચ, પછી થોડા અંતરે ત્રણ. છેલ્લાં ત્રણ લાલ વર્તુળોની નીચે ત્રણ વાદળી વર્તુળો છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_032b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>3 ધન ચકતીઓ દૂર કરીએ છીએ.</entry>
+    <entry><media id="eip-id1169754016122" alt="આઠ લાલ વર્તુળો બે જૂથમાં છે—પહેલાં પાંચ, પછી ત્રણ. બીજા જૂથની નીચે ત્રણ આછા વાદળી વર્તુળો છે; તેમની આસપાસ જાંબલી અંડાકાર અને ડાબી તરફનું તીર છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_032c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>8 ઋણ ચકતીઓ બાકી રહે છે.</entry>
+    <entry><media id="eip-id1169754361424" alt="આઠ લાલ વર્તુળો આડી હરોળમાં છે. નીચે ‘8 ઋણ ચકતીઓ’ લખેલું છે, જે આઠ ઋણ એકમોનું નિરૂપણ કરે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_032d_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>−5 અને 3નો તફાવત −8 છે.</entry>
+    <entry>−5 − 3 = −8</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+<para id="fs-id1170655261587">હવે ચોથો કિસ્સો લઈએ: <m:math><m:mrow><m:mn>5</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> શરૂઆતમાં આપણી પાસે 5 ધન ચકતીઓ છે. આપણે 3 ઋણ ચકતીઓ દૂર કરવાની છે, પરંતુ દૂર કરવા માટે એક પણ ઋણ ચકતી નથી. તેથી દૂર કરવા માટે 3 ઋણ ચકતીઓ મળે ત્યાં સુધી શૂન્ય બનાવતી જોડીઓ ઉમેરીએ છીએ.</para>
+
+<table id="eip-id1169754361484" class="unnumbered unstyled" aria-label="ચિત્રમાં બે સ્તંભ અને છ હરોળ છે. પહેલી હરોળમાં જમણે ‘5 − (−3) એટલે 5માંથી −3 દૂર કરો’ લખેલું છે. પછી ડાબે ‘શરૂઆતમાં 5 ધન ચકતીઓ હતી’ અને જમણે પાંચ વાદળી ચકતીઓ છે. પછી ડાબે ‘હવે જરૂરી શૂન્ય બનાવતી જોડીઓ ઉમેરીએ છીએ’ અને જમણે પાંચ વાદળી ચકતીઓ પછી થોડા અંતરે ત્રણ વાદળી ચકતીઓ અને તેમની નીચે ત્રણ લાલ ચકતીઓ છે. પછી ડાબે ‘3 ઋણ ચકતીઓ દૂર કરીએ છીએ’ અને જમણે એ જ ચકતીઓમાં ત્રણ લાલ ચકતીઓની આસપાસ તીરવાળું વર્તુળ છે. પછી ડાબે ‘8 ધન ચકતીઓ બાકી રહે છે’ અને જમણે પાંચ વાદળી ચકતીઓ પછી થોડા અંતરે ત્રણ વાદળી ચકતીઓ છે; નીચે ‘8 ધન ચકતીઓ’ લખેલું છે. છેલ્લે ડાબે ‘5 અને −3નો તફાવત 8 છે’ અને જમણે 5 − (−3) = 8 છે.">
+<label /><tgroup cols="2">
+<tbody>
+  <row>
+    <entry />
+    <entry>5 − (−3) એટલે 5માંથી −3 દૂર કરો.</entry>
+  </row>
+  <row>
+    <entry>શરૂઆતમાં આપણી પાસે 5 ધન ચકતીઓ છે.</entry>
+    <entry><media id="eip-id1169753968359" alt="સફેદ પૃષ્ઠભૂમિ પર પાંચ સમાન આછા વાદળી વર્તુળો એક આડી હરોળમાં સમાન અંતરે ગોઠવેલાં છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_033a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>હવે જરૂરી શૂન્ય બનાવતી જોડીઓ ઉમેરીએ છીએ.</entry>
+    <entry><media id="eip-id1169753968375" alt="ઉપરની હરોળમાં આઠ આછા વાદળી વર્તુળો છે—પહેલાં પાંચ, પછી ત્રણ. છેલ્લાં ત્રણની નીચે ત્રણ લાલ વર્તુળો છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_033b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>3 ઋણ ચકતીઓ દૂર કરીએ છીએ.</entry>
+    <entry><media id="eip-id1169753968392" alt="આછા વાદળી વર્તુળોની હરોળની નીચે ત્રણ લાલ વર્તુળો છે. લાલ વર્તુળોની આસપાસ જાંબલી અંડાકાર અને ડાબી તરફ વળેલું તીર છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_033c_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>8 ધન ચકતીઓ બાકી રહે છે.</entry>
+    <entry><media id="eip-id1169752181606" alt="આઠ આછા વાદળી વર્તુળો આડી હરોળમાં છે. નીચે વચ્ચે ‘8 ધન ચકતીઓ’ લખેલું છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_033d_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>5 અને −3નો તફાવત 8 છે.</entry>
+    <entry>5 − (−3) = 8</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table>
+<example id="fs-id1170654932297">
+<exercise id="fs-id1170654932300"><problem id="fs-id1170654941998">
+<para id="fs-id1170654942000">બાદબાકી કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−3</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654943757">
+<title>ઉકેલ</title>
+<para id="fs-id1167829621734"><span class="token">ⓐ</span> 
+<table id="eip-id1169749482384" class="unnumbered unstyled" aria-label="ભાગ ⓐમાં ત્રણ લાલ ચકતીઓ પછી થોડા અંતરે એક લાલ ચકતી આડી હરોળમાં છે. જમણે −3 − 1 છે. પછીની હરોળમાં ડાબે ‘ઉમેરેલી એક શૂન્ય બનાવતી જોડીમાંથી 1 ધન ચકતી દૂર કરો’ અને જમણે એક વાદળી ચકતીની આસપાસ તીરવાળું વર્તુળ છે; બાજુમાં −4 છે. ભાગ ⓑમાં ત્રણ વાદળી ચકતીઓ પછી થોડા અંતરે એક વાદળી ચકતી આડી હરોળમાં છે. જમણે 3 − (−1) છે. પછીની હરોળમાં ડાબે ‘ઉમેરેલી એક શૂન્ય બનાવતી જોડીમાંથી 1 ઋણ ચકતી દૂર કરો’ અને જમણે એક લાલ ચકતીની આસપાસ તીરવાળું વર્તુળ છે; બાજુમાં 4 છે."><label />
+<tgroup cols="3"><tbody>
+  <row>
+    <entry>ઉમેરેલી એક શૂન્ય બનાવતી જોડીમાંથી 1 ધન ચકતી દૂર કરો.</entry>
+    <entry><media id="eip-id1169749482408" alt="સફેદ પૃષ્ઠભૂમિ પર લાલ કિનારીવાળાં ચાર આછાં નારંગી વર્તુળો છે. ત્રીજા અને ચોથા વર્તુળ વચ્ચે થોડું અંતર છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_034a_img_new.jpg" /></media><newline /><media id="eip-id1169749482428" alt="એક આછા વાદળી ચકતીની આસપાસ જાંબલી અંડાકાર છે; તેનું તીર નીચે ડાબી તરફ જાય છે અને ચકતી દૂર કરવાનું સૂચવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_034b_img_new.jpg" /></media></entry>
+    <entry valign="top">−3 − 1<newline /><newline />−4</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table></para>
+<para id="fs-id1167836289563"><span class="token">ⓑ</span> 
+<table id="fs-id1167824767322" class="unnumbered unstyled" aria-label="ભાગ ⓑમાં ત્રણ વાદળી ચકતીઓ પછી થોડા અંતરે એક વાદળી ચકતી આડી હરોળમાં છે. જમણે 3 − (−1) છે. પછીની હરોળમાં ડાબે ‘ઉમેરેલી એક શૂન્ય બનાવતી જોડીમાંથી 1 ઋણ ચકતી દૂર કરો’ અને જમણે એક લાલ ચકતીની આસપાસ તીરવાળું વર્તુળ છે; બાજુમાં 4 છે."><label /><tgroup cols="2">
+ <tbody>
+
+  <row>
+    <entry>ઉમેરેલી એક શૂન્ય બનાવતી જોડીમાંથી 1 ઋણ ચકતી દૂર કરો.</entry>
+    <entry><media id="eip-id1169749482451" alt="સફેદ પૃષ્ઠભૂમિ પર ચાર સમાન આછા વાદળી વર્તુળો છે. પ્રથમ ત્રણ પછી થોડા વધુ અંતરે ચોથું વર્તુળ છે; આ 3 અને ઉમેરેલી જોડીની 1 ધન ચકતી દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_034c_img_new.jpg" /></media><newline /><media id="eip-id1169749482475" alt="એક લાલ ચકતીની આસપાસ જાંબલી અંડાકાર છે; તેનું તીર નીચે ડાબી તરફ જાય છે અને ચકતી દૂર કરવાનું સૂચવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_03_034d_img_new.jpg" /></media></entry>
+    <entry align="center" valign="top">3 − (−1)<newline /><newline />4</entry>
+  </row>
+ </tbody>
+</tgroup>
+</table></para></solution>
+</exercise></example>
+<note id="fs-id1170654924793" class="try">
+<exercise id="fs-id1170654924798">
+<problem id="fs-id1170654924800">
+<para id="fs-id1170654941927">બાદબાકી કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−6</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654942432">
+<para id="fs-id1170654942434"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−10</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 10</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654936472" class="try">
+<exercise id="fs-id1170654936476">
+<problem id="fs-id1170654928213">
+<para id="fs-id1170654928215">બાદબાકી કરો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−7</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654943435">
+<para id="fs-id1170655163425"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−11</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 11</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654943182">શું તમે નોંધ્યું કે <emphasis effect="italics">ચિહ્નવાળી સંખ્યાઓની બાદબાકી વિરોધી સંખ્યાનો સરવાળો કરીને કરી શકાય છે</emphasis>? <link target-id="fs-id1170654932297" />માં <m:math><m:mrow><m:mn>−3</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math> એ જ છે: <m:math><m:mrow><m:mn>−3</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> અને <m:math><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> એ જ છે: <m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> આ વિચાર ઘણી વાર <term id="term-00009">બાદબાકીનો ગુણધર્મ</term> તરીકે આ રીતે લખેલો જોવા મળશે:</para>
+<note id="fs-id1170654903656">
+<title>બાદબાકીનો ગુણધર્મ</title>
+<equation id="fs-id1170654903661" class="unnumbered"><label /><m:math><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation>
+<para id="fs-id1170654903713">કોઈ સંખ્યા બાદ કરવી એટલે તેની વિરોધી સંખ્યા ઉમેરવી.</para>
+</note>
+<para id="fs-id1170654903717">આ બે ઉદાહરણો જુઓ.</para>
+<media id="fs-id1170654962580" alt="નામનિર્દેશ સાથે બે ચિત્રો છે. પહેલા ચિત્રમાં ચાર આછા વાદળી ચકતીઓની બાજુમાં બે આછા વાદળી ચકતીઓ છે. પહેલા ચારની આસપાસ જાંબલી અંડાકાર છે અને નીચે ડાબી તરફ જાંબલી તીર જાય છે. ઉપર 6 − 4 અને નીચે 2 છે. બીજા ચિત્રમાં ચાર આછા વાદળી ચકતીઓની નીચે ચાર લાલ ચકતીઓ છે. તેમની આસપાસ જાંબલી અંડાકાર અને નીચે ડાબી તરફનું જાંબલી તીર છે. બાજુમાં બે આછા વાદળી ચકતીઓ છે. ઉપર 6 + (−4) અને નીચે 2 છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_035_img_new.jpg" />
+</media>
+<equation id="fs-id1166424959329" class="unnumbered"><label /><m:math><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mspace width="0.2em" /><m:mtext>અને નીચેની પદાવલીનો જવાબ સમાન આવે છે:</m:mtext><m:mspace width="0.2em" /><m:mn>6</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170654962732">અલબત્ત, માત્ર ધન સંખ્યાઓવાળો બાદબાકીનો દાખલો હોય, જેમ કે <m:math><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> તો સીધી બાદબાકી કરો. <m:math><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> જેવી બાદબાકી કરતાં તમે ઘણા સમયથી જાણો છો. પરંતુ <emphasis effect="italics">સમજી રાખો</emphasis> કે <m:math><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> સમાન જવાબ આપે છે—આ વાત ઋણ સંખ્યાઓની બાદબાકીમાં મદદરૂપ થાય છે. <m:math><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> કેવી રીતે સમાન પરિણામ આપે છે તે બરાબર સમજી લો!</para>
+<example id="fs-id1170655072279"><exercise id="fs-id1170655072281">
+<problem id="fs-id1170655072283">
+<para id="fs-id1170655072285">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>13</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>13</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−8</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−17</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−17</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655072440">
+<title>ઉકેલ</title>
+<table id="eip-475" class="unnumbered unstyled" summary="કોઈ સંખ્યા બાદ કરવી અને તેની વિરોધી સંખ્યા ઉમેરવી સમકક્ષ છે તે દર્શાવતાં ઉદાહરણો. મૂળ બાદબાકીના દાખલા અને તેમને અનુરૂપ સરવાળાનાં સ્વરૂપો દર્શાવેલાં છે.">
+<tgroup cols="3"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> <newline />બાદબાકી કરો.</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>13</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>5</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>13</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−8</m:mn><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>5</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry><span class="token">ⓑ</span> <newline />બાદબાકી કરો.</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>−17</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−26</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>−17</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−9</m:mn><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−26</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170655073558" class="try">
+<exercise id="fs-id1170655073562">
+<problem id="fs-id1170655073536">
+<para id="fs-id1170655073538">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>21</m:mn><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>21</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−13</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−11</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−11</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655073718">
+<para id="fs-id1170655073721"><span class="token">ⓐ</span> 8 <span class="token">ⓑ</span> −18</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655073698" class="try">
+<exercise id="fs-id1170655073702">
+<problem id="fs-id1170655073755">
+<para id="fs-id1170655073757">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>15</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−14</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−14</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655076908">
+<para id="fs-id1170655076910"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>8</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−22</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655075753">ઋણ સંખ્યા બાદ કરીએ ત્યારે શું થાય તે જુઓ.</para>
+<media id="fs-id1170655075756" alt="આકૃતિ ઊભી રીતે બે ભાગમાં વહેંચાયેલી છે. ડાબે 8 − (−5) પદાવલીની નીચે 8 વાદળી ચકતીઓનું જૂથ અને થોડા અંતરે પાંચ વાદળી ચકતીઓનું જૂથ એક હરોળમાં છે. પાંચ વાદળી ચકતીઓની નીચે પાંચ લાલ ચકતીઓ છે. તેમની આસપાસનું વર્તુળ અને નીચે ડાબી તરફ જતું તીર બાદબાકી સૂચવે છે. નીચે 13 લખેલું છે. જમણે 8 + 5 પદાવલીની નીચે 8 વાદળી ચકતીઓનું જૂથ અને થોડા અંતરે પાંચ વાદળી ચકતીઓનું જૂથ એક હરોળમાં છે. નીચે 13 લખેલું છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_036_img_new.jpg" />
+</media>
+<equation id="fs-id1166424830896" class="unnumbered"><label /><m:math><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>અને નીચેની પદાવલીનો જવાબ સમાન આવે છે:</m:mtext><m:mspace width="0.2em" /><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170655077076"><emphasis effect="italics">ઋણ સંખ્યા બાદ કરવી એટલે ધન સંખ્યા ઉમેરવા જેવું!</emphasis></para>
+<para id="fs-id1170655076379">આ ઘણી વાર આ રીતે લખેલું જોવા મળશે: <m:math><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170655077196">શું આ બીજી સંખ્યાઓ માટે પણ ચાલે? ચાલો નીચેનું ઉદાહરણ કરીને જોઈએ.</para>
+<example id="fs-id1170655080482"><exercise id="fs-id1170655080485">
+<problem id="fs-id1170655080487">
+<para id="fs-id1170655080489">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−15</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> અને <m:math><m:mrow><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>15</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−7</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−7</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655081441">
+<title>ઉકેલ</title>
+<para id="fs-id1166422863906"><table id="eip-660" class="unnumbered unstyled" summary="આ કોષ્ટકમાં પૂર્ણાંકોની બાદબાકીને સમાન જવાબ આપતા સમકક્ષ સરવાળાના દાખલામાં ફેરવી છે."><label />
+<tgroup cols="3"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> <newline />બાદબાકી કરો.</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>9</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−15</m:mn><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>24</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>15</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>24</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+
+  <row>
+    <entry><span class="token">ⓑ</span> <newline />બાદબાકી કરો.</entry>
+  <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>−7</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−4</m:mn><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−3</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+    <entry>
+      <m:math>
+        <m:mtable>
+         <m:mtr><m:mtd><m:mn>−7</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>−3</m:mn></m:mtd></m:mtr>
+        </m:mtable>
+      </m:math>
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</para>
+</solution>
+</exercise></example><note id="fs-id1170655065509" class="try">
+<exercise id="fs-id1170655084097">
+<problem id="fs-id1170655084099">
+<para id="fs-id1170655084101">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−13</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> અને <m:math><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−5</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655059484">
+<para id="fs-id1170655061855"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>19</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−4</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655061990" class="try">
+<exercise id="fs-id1170655061670">
+<problem id="fs-id1170655061672">
+<para id="fs-id1170655061674">સરળ બનાવો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−19</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> અને <m:math><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>19</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−4</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−7</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> અને <m:math><m:mrow><m:mn>−4</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655084120">
+<para id="fs-id1170655089691"><span class="token">ⓐ</span> 23 <span class="token">ⓑ</span> 3</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655089698">ચાલો જુદા સંયોજનોની બાદબાકીનાં પરિણામો ફરી જોઈએ: <m:math><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<note id="fs-id1170655089163">
+<title>પૂર્ણાંકોની બાદબાકી</title>
+<equation id="fs-id1170654904669" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−5</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mn>−3</m:mn><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>2</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>ધન ચકતીઓમાંથી દૂર કરો</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ધન ચકતીઓ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>ઋણ ચકતીઓમાંથી દૂર કરો</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ઋણ ચકતીઓ</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>2</m:mn><m:mspace width="0.2em" /><m:mtext>ધન ચકતીઓ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>2</m:mn><m:mspace width="0.2em" /><m:mtext>ઋણ ચકતીઓ</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170654962468">દૂર કરવાના રંગની પૂરતી ચકતીઓ હોય ત્યારે બાદબાકી કરો.</para>
+<equation id="fs-id1166424861532" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mrow><m:mn>−5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mn>−3</m:mn><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mrow><m:mn>−8</m:mn></m:mrow></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>8</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>ઋણ ચકતીઓમાંથી દૂર કરવી છે</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ધન ચકતીઓ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>ધન ચકતીઓમાંથી દૂર કરવી છે</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ઋણ ચકતીઓ</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mtext>શૂન્ય બનાવતી જોડીઓ જરૂરી છે</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mtext>શૂન્ય બનાવતી જોડીઓ જરૂરી છે</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1166424866338">દૂર કરવાના રંગની પૂરતી ચકતીઓ ન હોય ત્યારે સરવાળો કરો.</para>
+</note>
+<para id="fs-id1170654962473">ત્રણ કરતાં વધુ પૂર્ણાંકો હોય ત્યારે શું થાય? આપણે હંમેશની જેમ ક્રિયાઓનો ક્રમ વાપરીએ છીએ.</para>
+<example id="fs-id1170655084022"><exercise id="fs-id1170655084024">
+<problem id="fs-id1170655084026">
+<para id="fs-id1170655084028">સરળ બનાવો: <m:math><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>9</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655083647">
+<title>ઉકેલ</title>
+<table id="eip-942" summary="આ કોષ્ટકમાં 7 − (−4 − 3) − 9 પદાવલીને પગલાંવાર સરળ બનાવી છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>7</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>9</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>પહેલાં ગોળ કૌંસની અંદરની પદાવલી સરળ બનાવો.</entry>
+    <entry><m:math><m:mn>7</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>9</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>ડાબેથી જમણે બાદબાકી કરો.</entry>
+    <entry><m:math><m:mn>14</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>બાદબાકી કરો.</entry>
+    <entry><m:math><m:mn>5</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170655091589" class="try">
+<exercise id="fs-id1170655091564">
+<problem id="fs-id1170655091566">
+<para id="fs-id1170655091568">સરળ બનાવો: <m:math><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow></m:math>.</para>
+</problem>
+<solution id="fs-id1170655090951">
+<para id="fs-id1170655090953">3</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655092076" class="try">
+<exercise id="fs-id1170655092080">
+<problem id="fs-id1170655092082">
+<para id="fs-id1170655092190">સરળ બનાવો: <m:math><m:mrow><m:mn>12</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>14</m:mn></m:mrow></m:math>.</para>
+</problem>
+<solution id="fs-id1170655095593">
+<para id="fs-id1170655095595">13</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655091187" class="media-2">
+<para id="fs-id1170655091191">પૂર્ણાંકોના સરવાળા અને બાદબાકી અંગે વધારાનું માર્ગદર્શન અને અભ્યાસ કરવા આ ઑનલાઇન સાધનો જુઓ. આ એપ્લિકેશનો વાપરવા માટે વેબ બ્રાઉઝરમાં Java સક્રિય કરવું પડશે.</para><list id="fs-id1170655096461" display="block">
+<item><link url="https://openstax.org/l/11AddColorChip">રંગીન ચકતીઓ ઉમેરો</link></item>
+<item><link url="https://openstax.org/l/11SubtrColorChp">રંગીન ચકતીઓ બાદ કરો</link></item>
+</list>
+</note>
+</section>
+<section id="fs-id1170655097463" class="key-concepts">
+<title>મુખ્ય ખ્યાલો</title>
+<list id="fs-id1170655097500" list-type="bulleted" bullet-style="bullet">
+<item><emphasis effect="bold">ધન અને ઋણ પૂર્ણાંકોનો સરવાળો</emphasis><newline />
+<m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="2.5em" /><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="0.95em" /><m:mn>8</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="3.45em" /><m:mn>−8</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>બંને ધન,</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="2.5em" /><m:mtext>બંને ઋણ,</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>સરવાળો ધન</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="2.5em" /><m:mtext>સરવાળો ઋણ</m:mtext></m:mtd></m:mtr><m:mtr /><m:mtr /><m:mtr><m:mtd columnalign="left"><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="2.5em" /><m:mn>5</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mn>−3</m:mn><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="0.95em" /><m:mn>−2</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="3.45em" /><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>ચિહ્નો જુદાં,</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="2.5em" /><m:mtext>ચિહ્નો જુદાં,</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>ઋણ ચકતીઓ વધુ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="2.5em" /><m:mtext>ધન ચકતીઓ વધુ</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>સરવાળો ઋણ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="2.5em" /><m:mtext>સરવાળો ધન</m:mtext></m:mtd></m:mtr></m:mtable></m:math></item>
+<item><emphasis effect="bold">નિરપેક્ષ મૂલ્યનો ગુણધર્મ</emphasis>: <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>n</m:mi><m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:math> બધી સંખ્યાઓ માટે. નિરપેક્ષ મૂલ્ય હંમેશાં શૂન્ય કરતાં મોટું અથવા શૂન્ય જેટલું હોય છે!</item>
+<item><emphasis effect="bold">પૂર્ણાંકોની બાદબાકી</emphasis><newline />
+<m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mn>−5</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="0.95em" /><m:mn>2</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="0.95em" /><m:mn>−2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>ધન ચકતીઓ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>ઋણ ચકતીઓ</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>દૂર કરો</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ધન ચકતીઓ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>દૂર કરો</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ઋણ ચકતીઓ</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>2 ધન ચકતીઓ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>2 ઋણ ચકતીઓ</m:mtext></m:mtd></m:mtr><m:mtr /><m:mtr /><m:mtr><m:mtd columnalign="left"><m:mn>−5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mn>5</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mspace width="0.95em" /><m:mn>−8</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mspace width="0.95em" /><m:mn>8</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>ઋણ ચકતીઓમાંથી</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>ધન ચકતીઓમાંથી</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>બાદ કરવી છે</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ધન ચકતીઓ</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>બાદ કરવી છે</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mspace width="0.2em" /><m:mtext>ઋણ ચકતીઓ</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>શૂન્ય બનાવતી જોડીઓ જરૂરી છે</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>શૂન્ય બનાવતી જોડીઓ જરૂરી છે</m:mtext></m:mtd></m:mtr></m:mtable></m:math></item>
+<item><emphasis effect="bold">બાદબાકીનો ગુણધર્મ:</emphasis> કોઈ સંખ્યા બાદ કરવી એટલે તેની વિરોધી સંખ્યા ઉમેરવી.</item>
+</list>
+</section>
+<section id="fs-id1170654940514" class="section-exercises">
+<section id="fs-id1170654940518" class="practice-perfect">
+<title>અભ્યાસથી નિપુણતા</title>
+<para id="fs-id1170655068157"><emphasis effect="bold">ઋણ પૂર્ણાંકો અને વિરોધી સંખ્યાઓ વાપરો</emphasis></para>
+<para id="fs-id1166422643633">નીચેના અભ્યાસમાં, સંખ્યાઓની દરેક જોડીની &lt; અથવા &gt; વડે તુલના કરો.</para>
+<exercise id="fs-id1170655098015">
+<problem id="fs-id1170655098018">
+<para id="fs-id1170655098020"><newline /><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>9</m:mn><m:mo>___</m:mo><m:mn>4</m:mn></m:mrow></m:math><newline /><span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−3</m:mn><m:mo>___</m:mo><m:mn>6</m:mn></m:mrow></m:math><newline /><span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−8</m:mn><m:mo>___</m:mo><m:mn>−2</m:mn></m:mrow></m:math><newline /><span class="token">ⓓ</span> <m:math><m:mrow><m:mn>1</m:mn><m:mo>___</m:mo><m:mn>−10</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655065485">
+<para id="fs-id1170655065487"><span class="token">ⓐ</span> &gt; <span class="token">ⓑ</span> &lt; <span class="token">ⓒ</span> &lt; <span class="token">ⓓ</span> &gt;</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655092058">
+<problem id="fs-id1170655092060">
+<para id="fs-id1170655092062"><newline /><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−7</m:mn><m:mo>___</m:mo><m:mn>3</m:mn></m:mrow></m:math><newline /><span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−10</m:mn><m:mo>___</m:mo><m:mn>−5</m:mn></m:mrow></m:math><newline /><span class="token">ⓒ</span> <m:math><m:mrow><m:mn>2</m:mn><m:mo>___</m:mo><m:mn>−6</m:mn></m:mrow></m:math><newline /><span class="token">ⓓ</span> <m:math><m:mrow><m:mn>8</m:mn><m:mo>___</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170655068522">નીચેના અભ્યાસમાં, દરેક સંખ્યાની વિરોધી સંખ્યા શોધો.</para>
+<exercise id="fs-id1170655098178">
+<problem id="fs-id1170655098180">
+<para id="fs-id1170655098182"><span class="token">ⓐ</span> 2 <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−6</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655062541">
+<para id="fs-id1170655058954"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 6</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654936328">
+<problem id="fs-id1170654936331">
+<para id="fs-id1170654936333"><span class="token">ⓐ</span> 9<span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170655098081">નીચેના અભ્યાસમાં, સરળ બનાવો.</para>
+<exercise id="fs-id1170655098084">
+<problem id="fs-id1170655098086">
+<para id="fs-id1170655058164"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655167116">
+<para id="fs-id1170655167118">4</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655167123">
+<problem id="fs-id1170654942892">
+<para id="fs-id1170654942895"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655129108">
+<problem id="fs-id1170655129110">
+<para id="fs-id1170655129112"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−15</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655200608">
+<para id="fs-id1170655200610">15</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654915362">
+<problem id="fs-id1170654915364">
+<para id="fs-id1170654915366"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170655058115">નીચેના અભ્યાસમાં, કિંમત શોધો.</para>
+<exercise id="fs-id1170655066215">
+<problem id="fs-id1170655066217">
+<para id="fs-id1170655066219"><m:math><m:mrow><m:mtext>−</m:mtext><m:mi>c</m:mi></m:mrow></m:math> જ્યારે<span class="token">ⓐ</span> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>−12</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655069397">
+<para id="fs-id1170655077706"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−12</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> 12</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654962611">
+<problem id="fs-id1170654962613">
+<para id="fs-id1170654962615"><m:math><m:mrow><m:mtext>−</m:mtext><m:mi>d</m:mi></m:mrow></m:math> જ્યારે<newline /><span class="token">ⓐ</span> <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>21</m:mn></m:mrow></m:math><newline /><span class="token">ⓑ</span> <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>−21</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170655083963"><emphasis effect="bold">નિરપેક્ષ મૂલ્યવાળી પદાવલીઓને સરળ બનાવો</emphasis></para>
+<para id="fs-id1171791388513">નીચેના અભ્યાસમાં, સરળ બનાવો.</para>
+<exercise id="fs-id1170655083114">
+<problem id="fs-id1170655083116">
+<para id="fs-id1170655083118"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−32</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>0</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math><span class="token">ⓒ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>16</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655160681">
+<para id="fs-id1170655160683"><span class="token">ⓐ</span> 32 <span class="token">ⓑ</span> 0 <span class="token">ⓒ</span> 16</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654972093">
+<problem id="fs-id1170654972095">
+<para id="fs-id1170654972097"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>0</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math><newline /><span class="token">ⓑ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−40</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math><span class="token">ⓒ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>22</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170655355498">નીચેના અભ્યાસમાં, ખાલી જગ્યામાં &lt;, &gt; અથવા <m:math><m:mo>=</m:mo></m:math> મૂકી સંખ્યાઓની દરેક જોડીની તુલના કરો.</para>
+<exercise id="fs-id1170655111046">
+<problem id="fs-id1170655111048">
+<para id="fs-id1170655200502"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−6</m:mn><m:mo>___</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math><span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>___</m:mo><m:mn>−3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655207883">
+<para id="fs-id1170655207886"><span class="token">ⓐ</span> &lt; <span class="token">ⓑ</span> <m:math><m:mo>=</m:mo></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655117312">
+<problem id="fs-id1170655117314">
+<para id="fs-id1170655202702"><span class="token">ⓐ</span> <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>___</m:mo><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math><span class="token">ⓑ</span> <m:math><m:mrow><m:mn>9</m:mn><m:mo>___</m:mo><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170655215530">નીચેના અભ્યાસમાં, સરળ બનાવો.</para>
+<exercise id="fs-id1170655215533">
+<problem id="fs-id1170655215536">
+<para id="fs-id1170655215538"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655082137">
+<para id="fs-id1170655082139"><m:math><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655161312">
+<problem id="fs-id1170655161314">
+<para id="fs-id1170655351931"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655077574">
+<problem id="fs-id1170655077576">
+<para id="fs-id1170655077578"><m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−7</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655080409">
+<para id="fs-id1170655080411">56</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655080417">
+<problem id="fs-id1170655084335">
+<para id="fs-id1170655084337"><m:math><m:mrow><m:mn>5</m:mn><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655084991">
+<problem id="fs-id1170655088961">
+<para id="fs-id1170655088963"><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>14</m:mn><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655106926">
+<para id="fs-id1170655106928">0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655133464">
+<problem id="fs-id1170655133466">
+<para id="fs-id1170655133468"><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>13</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655166189">
+<problem id="fs-id1170655166191">
+<para id="fs-id1170655166193"><m:math><m:mrow><m:mn>18</m:mn><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655162652">
+<para id="fs-id1170655162655">8</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655162660">
+<problem id="fs-id1170655160813">
+<para id="fs-id1170655160815"><m:math><m:mrow><m:mn>18</m:mn><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170655213986">નીચેના અભ્યાસમાં, કિંમત શોધો.</para>
+<exercise id="fs-id1170655215373">
+<problem id="fs-id1170655215375">
+<para id="fs-id1170655215377"><newline /><span class="token">ⓐ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>p</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>19</m:mn></m:mrow></m:math><newline /><span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>q</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>−33</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655106813">
+<para id="fs-id1170655166976"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−19</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−33</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655082419">
+<problem id="fs-id1170655082421">
+<para id="fs-id1170655082423"><newline /><span class="token">ⓐ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>a</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>60</m:mn></m:mrow></m:math><newline /><span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>b</m:mi><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em" /><m:mtext>જ્યારે</m:mtext><m:mspace width="0.2em" /><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>−12</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654938919"><emphasis effect="bold">પૂર્ણાંકોનો સરવાળો કરો</emphasis></para>
+<para id="fs-id1166424899765">નીચેના અભ્યાસમાં, દરેક પદાવલીને સરળ બનાવો.</para>
+<exercise id="fs-id1170654938926">
+<problem id="fs-id1170654938928">
+<para id="fs-id1170654944664"><m:math><m:mrow><m:mn>−21</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−59</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655219498">
+<para id="fs-id1170655219500"><m:math><m:mrow><m:mn>−80</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654944793">
+<problem id="fs-id1170654944795">
+<para id="fs-id1170654943643"><m:math><m:mrow><m:mn>−35</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−47</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654937406">
+<problem id="fs-id1170655178316">
+<para id="fs-id1170655178318"><m:math><m:mrow><m:mn>48</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655114115">
+<para id="fs-id1170655190675">32</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655190680">
+<problem id="fs-id1170655190682">
+<para id="fs-id1170655104896"><m:math><m:mrow><m:mn>34</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−19</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655162892">
+<problem id="fs-id1170655162894">
+<para id="fs-id1170655162896"><m:math><m:mrow><m:mn>−14</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654944295">
+<para id="fs-id1170655164739"><m:math><m:mrow><m:mn>−22</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655164748">
+<problem id="fs-id1170654929241">
+<para id="fs-id1170654929243"><m:math><m:mrow><m:mn>−17</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−18</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654972288">
+<problem id="fs-id1170654972290">
+<para id="fs-id1170654972292"><m:math><m:mrow><m:mn>135</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−110</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>83</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655107274">
+<para id="fs-id1170654940587">108</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654940592">
+<problem id="fs-id1170654940594">
+<para id="fs-id1170654941067"><m:math><m:mrow><m:mn>−38</m:mn><m:mo>+</m:mo><m:mn>27</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow></m:math></para></problem>
+</exercise>
+<exercise id="fs-id1170655030305">
+<problem id="fs-id1170655030307">
+<para id="fs-id1170655066436"><m:math><m:mrow><m:mn>19</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655069420">
+<para id="fs-id1170655069422">29</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655069132">
+<problem id="fs-id1170655069134">
+<para id="fs-id1170655069136"><m:math><m:mrow><m:mn>24</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170655077474"><emphasis effect="bold">પૂર્ણાંકોની બાદબાકી કરો</emphasis></para>
+<para id="fs-id1166422656200">નીચેના અભ્યાસમાં, સરળ બનાવો.</para>
+<exercise id="fs-id1170655077685">
+<problem id="fs-id1170655077687">
+<para id="fs-id1170655077689"><m:math><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655072200">
+<para id="fs-id1170655072202">6</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655081242">
+<problem id="fs-id1170655081245">
+<para id="fs-id1170655081247"><m:math><m:mrow><m:mn>−6</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654903482">
+<problem id="fs-id1170654903484">
+<para id="fs-id1170654903486"><m:math><m:mrow><m:mn>−5</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654962314">
+<para id="fs-id1170655090625"><m:math><m:mrow><m:mn>−9</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655090633">
+<problem id="fs-id1170655095900">
+<para id="fs-id1170655095902"><m:math><m:mrow><m:mn>−7</m:mn><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655096516">
+<problem id="fs-id1170655096518">
+<para id="fs-id1170655096520"><m:math><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655067545">
+<para id="fs-id1170655067547">12</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655067703">
+<problem id="fs-id1170655067705">
+<para id="fs-id1170655067707"><m:math><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655091284">
+<problem id="fs-id1170655090216">
+<para id="fs-id1170655090218"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>44</m:mn><m:mo>−</m:mo><m:mn>28</m:mn></m:mrow></m:math><span class="token">ⓑ</span> <m:math><m:mrow><m:mn>44</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−28</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655091436">
+<para id="fs-id1170655091438"><span class="token">ⓐ</span> 16 <span class="token">ⓑ</span> 16</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655091444">
+<problem id="fs-id1170655091446">
+<para id="fs-id1170655090385"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>35</m:mn><m:mo>−</m:mo><m:mn>16</m:mn></m:mrow></m:math><span class="token">ⓑ</span> <m:math><m:mrow><m:mn>35</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655096168">
+<problem id="fs-id1170655096170">
+<para id="fs-id1170655096172"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>27</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−18</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math><span class="token">ⓑ</span> <m:math><m:mrow><m:mn>27</m:mn><m:mo>+</m:mo><m:mn>18</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655096342">
+<para id="fs-id1170655096344"><span class="token">ⓐ</span> 45 <span class="token">ⓑ</span> 45</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655106781">
+<problem id="fs-id1170655106783">
+<para id="fs-id1170655106785"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>46</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−37</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math><span class="token">ⓑ</span> <m:math><m:mrow><m:mn>46</m:mn><m:mo>+</m:mo><m:mn>37</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170655166333">નીચેના અભ્યાસમાં, દરેક પદાવલીને સરળ બનાવો.</para>
+<exercise id="fs-id1170655166337">
+<problem id="fs-id1170655166339">
+<para id="fs-id1170655166341"><m:math><m:mrow><m:mn>15</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655190415">
+<para id="fs-id1170655190417">27</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655072261">
+<problem id="fs-id1170655072263">
+<para id="fs-id1170655072265"><m:math><m:mrow><m:mn>14</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655090437">
+<problem id="fs-id1170655090439">
+<para id="fs-id1170655090441"><m:math><m:mrow><m:mn>48</m:mn><m:mo>−</m:mo><m:mn>87</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655097118">
+<para id="fs-id1170655097120"><m:math><m:mrow><m:mn>−39</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655061785">
+<problem id="fs-id1170655061787">
+<para id="fs-id1170655061789"><m:math><m:mrow><m:mn>45</m:mn><m:mo>−</m:mo><m:mn>69</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654954219">
+<problem id="fs-id1170654954221">
+<para id="fs-id1170654954223"><m:math><m:mrow><m:mn>−17</m:mn><m:mo>−</m:mo><m:mn>42</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655088062">
+<para id="fs-id1170655088064"><m:math><m:mrow><m:mn>−59</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655097072">
+<problem id="fs-id1170655097074">
+<para id="fs-id1170655097076"><m:math><m:mrow><m:mn>−19</m:mn><m:mo>−</m:mo><m:mn>46</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655069217">
+<problem id="fs-id1170655069219">
+<para id="fs-id1170655069221"><m:math><m:mrow><m:mn>−103</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−52</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655097846">
+<para id="fs-id1170655097848"><m:math><m:mrow><m:mn>−51</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654958739">
+<problem id="fs-id1170654958741">
+<para id="fs-id1170654958743"><m:math><m:mrow><m:mn>−105</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−68</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655120598">
+<problem id="fs-id1170655121540">
+<para id="fs-id1170655121542"><m:math><m:mrow><m:mn>−45</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>–54</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para></problem>
+<solution id="fs-id1170654958071">
+<para id="fs-id1170655112843">9</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655112848">
+<problem id="fs-id1170655112850">
+<para id="fs-id1170655112853"><m:math><m:mrow><m:mn>−58</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−67</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655113788">
+<problem id="fs-id1170655113790">
+<para id="fs-id1170655113792"><m:math><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654989452">
+<para id="fs-id1170655160434"><m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655160442">
+<problem id="fs-id1170655162128">
+<para id="fs-id1170655162130"><m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655222079">
+<problem id="fs-id1170655222082">
+<para id="fs-id1170655222084"><m:math><m:mrow><m:mn>−5</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655129694">
+<para id="fs-id1170655129696"><m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655332440">
+<problem id="fs-id1170655332442">
+<para id="fs-id1170655332444"><m:math><m:mrow><m:mn>−3</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655097930">
+<problem id="fs-id1170655097932">
+<para id="fs-id1170655082426"><m:math><m:mrow><m:mn>−14</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−27</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655195951">
+<para id="fs-id1170655099360">22</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655099366">
+<problem id="fs-id1170655099368">
+<para id="fs-id1170655099370"><m:math><m:mrow><m:mn>64</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−17</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655178139">
+<problem id="fs-id1170655178141">
+<para id="fs-id1170655178143"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para></problem>
+<solution id="fs-id1170655226532">
+<para id="fs-id1170655226535">0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655164951">
+<problem id="fs-id1170655164953">
+<para id="fs-id1170655164955"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654940298">
+<problem id="fs-id1170654940300">
+<para id="fs-id1170655190695"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655219548">
+<para id="fs-id1170655219573">4</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655219578">
+<problem id="fs-id1170655219581">
+<para id="fs-id1170655219583"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654940368">
+<problem id="fs-id1170654940370">
+<para id="fs-id1170654940372"><m:math><m:mrow><m:mn>25</m:mn><m:mo>−</m:mo><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>10</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655192239">
+<para id="fs-id1170655192241">6</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655192246">
+<problem id="fs-id1170655192248">
+<para id="fs-id1170655192251"><m:math><m:mrow><m:mn>32</m:mn><m:mo>−</m:mo><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>5</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>20</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654953630">
+<problem id="fs-id1170654953632">
+<para id="fs-id1170654953634"><m:math><m:mrow><m:mn>6</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655288185">
+<para id="fs-id1170655288188"><m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655197076">
+<problem id="fs-id1170655197078">
+<para id="fs-id1170655197080"><m:math><m:mrow><m:mn>5</m:mn><m:mo>⋅</m:mo><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654924081">
+<problem id="fs-id1170655200165">
+<para id="fs-id1170655200167"><m:math><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mn>6</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170655353259">
+<para id="fs-id1170655353261"><m:math><m:mrow><m:mn>−11</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655162301">
+<problem id="fs-id1170655162303">
+<para id="fs-id1170655162305"><m:math><m:mrow><m:msup><m:mn>6</m:mn><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170655189377" class="everyday">
+<title>રોજિંદા જીવનનું ગણિત</title>
+<exercise id="fs-id1170655189382">
+<problem id="fs-id1170655189384">
+<para id="fs-id1170655189386"><emphasis effect="bold">ઊંચાઈ</emphasis> અમેરિકામાં સૌથી વધુ ઊંચાઈ અલાસ્કાના માઉન્ટ મેકકિન્લીની છે: સમુદ્ર સપાટીથી 20,320 ફૂટ ઉપર. સૌથી ઓછી ઊંચાઈ કેલિફોર્નિયાની ડેથ વેલીની છે: સમુદ્ર સપાટીથી 282 ફૂટ નીચે.</para>
+<para id="fs-id1170655190223">પૂર્ણાંકો વડે આ સ્થળોની ઊંચાઈ લખો:</para>
+<para id="fs-id1167270974732"><span class="token">ⓐ</span> માઉન્ટ મેકકિન્લી.
+
+<span class="token">ⓑ</span> ડેથ વેલી.</para>
+</problem>
+<solution id="fs-id1170655164989">
+<para id="fs-id1170655164991"><span class="token">ⓐ</span> 20,320 ફૂટ <span class="token">ⓑ</span> −282 ફૂટ</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655224551">
+<problem id="fs-id1170655224553">
+<para id="fs-id1170655224555"><emphasis effect="bold">અતિશય તાપમાન</emphasis> પૃથ્વી પર નોંધાયેલું સૌથી ઊંચું તાપમાન <m:math><m:mrow><m:mn>57</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> સેલ્સિયસ હતું. નોંધાયેલું સૌથી નીચું તાપમાન: <m:math><m:mrow><m:mn>90</m:mn><m:mtext>°</m:mtext><m:mspace width="0.2em" /><m:mtext>નીચે (આધાર:</m:mtext><m:mspace width="0.2em" /><m:mn>0</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> સેલ્સિયસ).</para>
+<para id="fs-id1170655222289">પૂર્ણાંકો વડે લખો:</para>
+<list id="fs-id1166425263178" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> નોંધાયેલું સૌથી ઊંચું તાપમાન.</item>
+<item><span class="token">ⓑ</span> નોંધાયેલું સૌથી નીચું તાપમાન.</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1170654920099">
+<problem id="fs-id1170654920101">
+<para id="fs-id1170654920103"><emphasis effect="bold">રાજ્યોનાં અંદાજપત્ર</emphasis> જૂન 2011માં પેન્સિલ્વેનિયા રાજ્યએ અંદાજપત્રમાં $540 મિલિયનની પુરાંત રહેવાનો અંદાજ મૂક્યો હતો. એ જ મહિને ટેક્સાસ રાજ્યએ અંદાજપત્રમાં $27 બિલિયનની ખાધ રહેવાનો અંદાજ મૂક્યો હતો.</para>
+<para id="fs-id1170655202258">પૂર્ણાંકો વડે આ રાજ્યોનાં અંદાજપત્રની સ્થિતિ લખો:</para>
+<para id="fs-id1167267728858"><span class="token">ⓐ</span> પેન્સિલ્વેનિયા.<newline /><span class="token">ⓑ</span> ટેક્સાસ.</para>
+</problem>
+<solution id="fs-id1170655353832">
+<para id="fs-id1170655353835"><span class="token">ⓐ</span> $540 મિલિયન <span class="token">ⓑ</span> <m:math><m:mrow><m:mtext>−</m:mtext><m:mn>$27</m:mn></m:mrow></m:math> બિલિયન</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655195270">
+<problem id="fs-id1170655195272">
+<para id="fs-id1170655195274"><emphasis effect="bold">કૉલેજમાં પ્રવેશ</emphasis> સમગ્ર અમેરિકામાં, 2007ની પાનખરથી 2010ની પાનખર સુધીમાં કોમ્યુનિટી કૉલેજોમાં પ્રવેશ લેનારા વિદ્યાર્થીઓની સંખ્યામાં 1,400,000નો વધારો થયો. કેલિફોર્નિયામાં, 2009ની પાનખરથી 2010ની પાનખર સુધીમાં કોમ્યુનિટી કૉલેજોમાં પ્રવેશ લેનારા વિદ્યાર્થીઓની સંખ્યામાં 110,171નો ઘટાડો થયો.</para>
+<para id="fs-id1170655204275">પ્રવેશ લેનારા વિદ્યાર્થીઓની સંખ્યામાં થયેલો ફેરફાર પૂર્ણાંકો વડે લખો:</para>
+<list id="fs-id1166425252402" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> અમેરિકામાં 2007ની પાનખરથી 2010ની પાનખર સુધી.</item>
+<item><span class="token">ⓑ</span> કેલિફોર્નિયામાં 2009ની પાનખરથી 2010ની પાનખર સુધી.</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1170655219716">
+<problem id="fs-id1170655219718">
+<para id="fs-id1170655219720"><emphasis effect="bold">શેરબજાર</emphasis> 15 સપ્ટેમ્બર 2008થી શરૂ થતું અઠવાડિયું અમેરિકાના શેરબજારમાં સૌથી વધુ ઉથલપાથલવાળાં અઠવાડિયાંમાંનું એક હતું. દરરોજ બંધ સમયે ડાઉ જોન્સ ઇન્ડસ્ટ્રિયલ એવરેજના આંકડા આ પ્રમાણે હતા:</para>
+<table id="fs-id1170655204215" class="unnumbered" aria-label="આ કોષ્ટકમાં પાંચ હરોળ અને બે સ્તંભ છે. પહેલી હરોળમાં ડાબેથી જમણે ‘સોમવાર’ અને ‘−504’ છે. બીજી હરોળમાં ‘મંગળવાર’ અને ‘+142’ છે. ત્રીજી હરોળમાં ‘બુધવાર’ અને ‘−449’ છે. ચોથી હરોળમાં ‘ગુરુવાર’ અને ‘+410’ છે. પાંચમી અને છેલ્લી હરોળમાં ‘શુક્રવાર’ અને ‘+369’ છે.">
+<label />
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<tbody>
+<row valign="top">
+<entry valign="top" align="left">સોમવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>−504</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">મંગળવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mo>+</m:mo><m:mn>142</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">બુધવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>−449</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">ગુરુવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mo>+</m:mo><m:mn>410</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">શુક્રવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mo>+</m:mo><m:mn>369</m:mn></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1170654965472">આખા અઠવાડિયા દરમિયાન કુલ ફેરફાર કેટલો થયો? તે ધન હતો કે ઋણ?</para>
+</problem>
+<solution id="fs-id1170655355458">
+<para id="fs-id1170655355460">32, ઋણ</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655232450">
+<problem id="fs-id1170655232452">
+<para id="fs-id1170655232454"><emphasis effect="bold">શેરબજાર</emphasis> 22 જૂન 2009થી શરૂ થતા અઠવાડિયામાં દરરોજ બંધ સમયે ડાઉ જોન્સ ઇન્ડસ્ટ્રિયલ એવરેજના આંકડા આ પ્રમાણે હતા:</para>
+<table id="fs-id1170655226595" class="unnumbered" aria-label="આ કોષ્ટકમાં પાંચ હરોળ અને બે સ્તંભ છે. પહેલી હરોળમાં ડાબેથી જમણે ‘સોમવાર’ અને ‘−201’ છે. બીજી હરોળમાં ‘મંગળવાર’ અને ‘−16’ છે. ત્રીજી હરોળમાં ‘બુધવાર’ અને ‘−23’ છે. ચોથી હરોળમાં ‘ગુરુવાર’ અને ‘+172’ છે. પાંચમી અને છેલ્લી હરોળમાં ‘શુક્રવાર’ અને ‘−34’ છે.">
+<label />
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<tbody>
+<row valign="top">
+<entry valign="top" align="left">સોમવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>−201</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">મંગળવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>−16</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">બુધવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>−23</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">ગુરુવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mo>+</m:mo><m:mn>172</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">શુક્રવાર</entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>−34</m:mn></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1170655348632">આખા અઠવાડિયા દરમિયાન કુલ ફેરફાર કેટલો થયો? તે ધન હતો કે ઋણ?</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170655348599" class="writing">
+<title>લેખન અભ્યાસ</title>
+<exercise id="fs-id1170655348605">
+<problem id="fs-id1170655355419">
+<para id="fs-id1170655355422">તમારા જીવનના અનુભવમાંથી ઋણ સંખ્યાનું એક ઉદાહરણ આપો.</para>
+</problem>
+<solution id="fs-id1170655355426">
+<para id="fs-id1170655355428">જવાબો જુદા હોઈ શકે છે.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654957459">
+<problem id="fs-id1170654957461">
+<para id="fs-id1170654957464">બીજગણિતમાં <m:math><m:mrow><m:mtext>“</m:mtext><m:mo>−</m:mo><m:mtext>”</m:mtext></m:mrow></m:math> ચિહ્નના ત્રણ ઉપયોગ કયા છે? તેઓ કેવી રીતે જુદા છે તે સમજાવો.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170655197002">
+<problem id="fs-id1170655197004">
+<para id="fs-id1170655197006">સમજાવો કે <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math> અને 2નો સરવાળો ઋણ છે, પરંતુ 8 અને <m:math><m:mrow><m:mn>−2</m:mn></m:mrow></m:math> નો સરવાળો ધન છે.</para>
+</problem>
+<solution id="fs-id1170655164620">
+<para id="fs-id1170655164622">જવાબો જુદા હોઈ શકે છે.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170655353723">
+<problem id="fs-id1170655353725">
+<para id="fs-id1170655353727">તમારા જીવનના અનુભવમાંથી બે ઋણ સંખ્યાઓના સરવાળાનું એક ઉદાહરણ આપો.</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170655219833">
+<title>સ્વમૂલ્યાંકન</title>
+<para id="fs-id1170655195306"><span class="token">ⓐ</span> અભ્યાસ પૂરો કર્યા પછી, આ વિભાગનાં ઉદ્દેશ્યો તમે કેટલાં સિદ્ધ કર્યાં છે તે આ યાદીની મદદથી તપાસો.</para>
+<media id="fs-id1170655195314" alt="ચાર સ્તંભ અને પાંચ હરોળવાળો કોષ્ટક છે. ડાબેથી જમણે સ્તંભનાં મથાળાં છે: ‘હું … કરી શકું છું’, ‘વિશ્વાસપૂર્વક’, ‘થોડી મદદથી’ અને ‘ના—મને સમજાતું નથી!’ પહેલા સ્તંભમાં ‘ઋણ પૂર્ણાંકો અને વિરોધી સંખ્યાઓ વાપરવી’, ‘નિરપેક્ષ મૂલ્યવાળી પદાવલીઓને સરળ બનાવવી’, ‘પૂર્ણાંકોનો સરવાળો કરવો’ અને ‘પૂર્ણાંકોની બાદબાકી કરવી’ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_03_201_img_new.jpg" />
+</media>
+<para id="fs-id1170655205768"><span class="token">ⓑ</span> આ યાદી પરથી આ વિભાગ પરના તમારા પ્રભુત્વ વિશે શું જાણવા મળે છે? સુધારો કરવા તમે કયાં પગલાં લેશો?</para>
+</section>
+</section>
+</content>
+<glossary>
+<definition id="fs-id1166424847478">
+<term>નિરપેક્ષ મૂલ્ય</term>
+<meaning id="fs-id1166424809754">સંખ્યાનું નિરપેક્ષ મૂલ્ય એ સંખ્યારેખા પર તેનું 0થી અંતર છે. સંખ્યા <m:math><m:mi>n</m:mi></m:math> નું નિરપેક્ષ મૂલ્ય આ રીતે લખાય છે: <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>n</m:mi><m:mo>|</m:mo></m:mrow></m:mrow></m:math>.</meaning>
+</definition>
+<definition id="fs-id1166424772590">
+<term>પૂર્ણાંકો</term>
+<meaning id="fs-id1166424772595">પૂર્ણ સંખ્યાઓ અને તેમની વિરોધી સંખ્યાઓને પૂર્ણાંકો કહે છે: ...−3, −2, −1, 0, 1, 2, 3...</meaning>
+</definition>
+<definition id="fs-id1166422694257">
+<term>વિરોધી સંખ્યા</term>
+<meaning id="fs-id1166422694262">સંખ્યાની વિરોધી સંખ્યા સંખ્યારેખા પર શૂન્યથી એટલા જ અંતરે, પરંતુ શૂન્યની બીજી બાજુ હોય છે: <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow></m:math> એ આપેલી સંખ્યાની વિરોધી સંખ્યા દર્શાવે છે. આ લખાણ <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow></m:math>ને “<m:math><m:mi>a</m:mi></m:math>ની વિરોધી સંખ્યા” તરીકે વાંચીએ છીએ.</meaning>
+</definition>
+</glossary>
+</document>

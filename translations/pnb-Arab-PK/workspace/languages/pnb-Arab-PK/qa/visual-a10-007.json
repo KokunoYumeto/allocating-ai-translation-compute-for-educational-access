@@ -1,0 +1,29 @@
+{
+  "unit": "A10-007",
+  "reviewed_at": "2026-09-01T18:50:37+02:00",
+  "reader_sha256": "e56efcd284cbec4528fccd90ccc9f8039219477da5ab489a8fefce07f02c2502",
+  "browser": "in-app Browser",
+  "viewports": {"desktop_content_width": 1009, "mobile_content_width": 375, "mobile_height": 800},
+  "result": "pass; bounded visual review, not native or assistive-technology certification",
+  "observations": [
+    "No duplicate IDs or page-level overflow at desktop or mobile width; final desktop reload and both mobile loads completed all 23 assets.",
+    "All four 661-pixel source tables remain in 325-pixel local LTR scrollers; actual pans reached scrollLeft about336.11 on the first, second and fourth tables.",
+    "The English source mnemonic remains a local scroller; an actual pan moved it from scrollLeft0 to about27.38 and exposed the complete Aunt Sally edge.",
+    "The 006a faithful malformed alt and corrected accessible description remain separate; 006c retains visible (7)7 adjacency; the 006a correction link reached its exact target.",
+    "A pending 008j request on the initial desktop load was not reproducible after reload and repeated mobile loads; exact file-byte/decode QA remains green."
+  ],
+  "screenshots": [
+    {"path": "qa/a10-unit-007-final-top-mobile.png", "sha256": "cdab0449e21921036515055d74debe495863d8f69712255dae84da1246c85eab", "bytes": 24588},
+    {"path": "qa/a10-unit-007-final-pemdas-mobile.png", "sha256": "ca3afe30fa287115754e0831090888af367a98935328241ed6553f9cec70c3b1", "bytes": 22957},
+    {"path": "qa/a10-unit-007-final-mnemonic-mobile.png", "sha256": "6c15935ed6f65237d7368f09d3270a4c18749ae30737a0844f2d2433b4fb6818", "bytes": 28366},
+    {"path": "qa/a10-unit-007-final-mnemonic-right-mobile.png", "sha256": "6e6fc90eefcdaf73d693e4c16ac49d7eb9cbcda6ab36685b80988000e43a4cd8", "bytes": 28318},
+    {"path": "qa/a10-unit-007-final-example1-mobile.png", "sha256": "83c620f87b952f64f60c752dc7409b481e3d3b23ee33339461acb16545de2881", "bytes": 8168},
+    {"path": "qa/a10-unit-007-final-example1-right-mobile.png", "sha256": "770072c4f15eff02a383718c17a132c0300cb80c4236948a42b12fd2de8bb4a9", "bytes": 17204},
+    {"path": "qa/a10-unit-007-final-images006-mobile.png", "sha256": "6a5d0351c2f0474374913c5a2f3c0c68fb7cd1fed86926c82a95d19866936d9a", "bytes": 7735},
+    {"path": "qa/a10-unit-007-final-images006-right-mobile.png", "sha256": "6ed353393206377dd6d0351dd436872bd9e8f99a998d0d03825054f6655b20c0", "bytes": 24125},
+    {"path": "qa/a10-unit-007-final-table-left-mobile.png", "sha256": "6e0a5276eacb8de1a487a6411972a050e2c6ee6b21a688427476092b274e3811", "bytes": 10636},
+    {"path": "qa/a10-unit-007-final-table-right-mobile.png", "sha256": "ba36f0692f5de844d00aa709857f71dfe9b2d9b623db75ebd2925581073462c2", "bytes": 21808},
+    {"path": "qa/a10-unit-007-final-notes-mobile.png", "sha256": "785400510323cb308cd24ab81998e5f7dbc8b14741c48d088333b53ea345cab6", "bytes": 30247},
+    {"path": "qa/a10-unit-007-final-tail-mobile.png", "sha256": "1dbc9d562370178320ee969fc665139aa17b5c6170c056da926818bf6eb37c4b", "bytes": 48488}
+  ]
+}

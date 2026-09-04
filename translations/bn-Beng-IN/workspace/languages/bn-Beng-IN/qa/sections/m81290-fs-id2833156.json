@@ -1,0 +1,50 @@
+{
+  "module": "m81290",
+  "section": "fs-id2833156",
+  "result": "pass",
+  "translation_sha256": "0251d77802606feb539069a9ff8c7f3b874ef64576a325a353159bbfadb44f90",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "6da182dad65b0ee0cc5afd30f9c4ed28fb6a3cb1d81d1c0745b87825faf664a3"
+  },
+  "source_sha256": "96985df586080ae5e52b870320d310a6061a0c00c5d1699e58a024e55bdba005",
+  "reader": "reader/sections/m81290-fs-id2833156.html",
+  "reader_sha256": "38830adb1fdd0d0ff924cb102b62dd912d272caa0fdfcb14095a6bd33ff69454",
+  "nodes": 499,
+  "ids": 71,
+  "mathml": 31,
+  "localized_linguistic_mtext": 0,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 3,
+  "exercises": 9,
+  "assets": [
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_017-01.png",
+      "bytes": 1770,
+      "sha256": "9a79f81be66b49134c2d4099cb25d6c740f25335d4cea0ec094e2393dc291b27",
+      "git_blob": "1a557f4f4d86750b0319ef0270038df4f0082fba"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_017-02.png",
+      "bytes": 2161,
+      "sha256": "3b413b0b6126129a5bb5cb6fb88b606078a4eec70995ede4ebf1f3b2d019e362",
+      "git_blob": "4b501c0ab57f0be19b182e2b161a29593fc2924a"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_017-03.png",
+      "bytes": 2463,
+      "sha256": "6eecf85c0b18fa406282981cbfbafb2911f2328c44c25bcafac78f15ef6a3e75",
+      "git_blob": "6a6ede6fea9801fca01f80ed8e2ad386f9a79e43"
+    }
+  ],
+  "source_errata": [
+    {
+      "source_table_id": "fs-id1951781",
+      "source_xpath": ".//c:table[@id='fs-id1951781']/c:tgroup/c:tbody/c:row/c:entry[1]/m:math/m:mtable/m:mtr[4]/m:mtd/m:mfrac",
+      "issue": "The left comparison column encodes the addition underline as a fraction with numerator+6 4/5 and denominator9 6/5. A literal quotient reading conflicts with the intended vertical addition and gives2/3, not10 1/5.",
+      "action": "Preserve all MathML and put a visible Bengali layout/semantic warning before it in the existing cell, with the intended addition/regrouping reading after it and in the table aria-label."
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

@@ -1,0 +1,223 @@
+[
+  {
+    "id": "A20",
+    "ownerLane": "OPENSTAX-INTERMEDIATE",
+    "level": "A",
+    "topic": "Fondasi & Kalkulus",
+    "state": "production",
+    "title": "Aljabar Menengah",
+    "prerequisites": [
+      "A10"
+    ],
+    "purpose": "Fungsi, model kuadrat dan rasional, akar, bilangan kompleks, eksponensial, logaritma, irisan kerucut, dan barisan.",
+    "outcome": "Memasuki prakalkulus dengan kefasihan simbolik dan pemahaman fungsi yang stabil.",
+    "corpus": "OpenStax Intermediate Algebra 2e — 83 modul",
+    "note": "Checkpoint publik v0.2.0-wip memuat 41 dari 83 modul berurutan sampai akhir Bab 6 dalam pembaca 1.732 halaman. Buku tetap diproduksi.",
+    "edition": "https://zenodo.org/records/22074778/files/openstax-intermediate-algebra-2e-id-ID-0.2.0-wip-reader.pdf?download=1",
+    "zenodo": "https://doi.org/10.5281/zenodo.22074778"
+  },
+  {
+    "id": "A30",
+    "ownerLane": "R002",
+    "level": "A",
+    "topic": "Fondasi & Kalkulus",
+    "state": "production",
+    "title": "Prakalkulus dan Trigonometri",
+    "prerequisites": [
+      "A20"
+    ],
+    "purpose": "Transformasi fungsi, model polinom, rasional, eksponensial dan logaritmik, trigonometri, geometri analitik, sistem, barisan, dan limit awal.",
+    "outcome": "Memodelkan dengan fungsi elementer dan memulai kalkulus tanpa menyembunyikan kebutuhan perbaikan aljabar.",
+    "corpus": "OpenStax Precalculus 2e",
+    "note": "Checkpoint publik alpha.32 memuat 32 dari 87 modul secara berurutan sampai m49367, Model Eksponensial dan Logaritma. Pembaca A4 947 halaman lolos dua build identik-byte dan inspeksi visual; 16 media yang belum lolos gerbang hak tetap dikarantina. Buku tetap diproduksi.",
+    "edition": "https://zenodo.org/records/22105534/files/OpenStax-Precalculus-2e-id-ID-0.1.0-alpha.32-reader.pdf?download=1",
+    "repository": "https://github.com/KokunoYumeto/openstax-precalculus-2e-id",
+    "zenodo": "https://doi.org/10.5281/zenodo.22105534"
+  },
+  {
+    "id": "B10",
+    "ownerLane": "R004",
+    "level": "B",
+    "topic": "Diskrit & Logika",
+    "state": "published",
+    "title": "Pembuktian, Logika, dan Struktur Diskrit",
+    "prerequisites": [
+      "A30"
+    ],
+    "purpose": "Logika proposisional dan predikat, himpunan, fungsi, relasi, teknik bukti, teori graf, pencacahan, dan barisan.",
+    "outcome": "Membaca, menyusun, dan mengkritik bukti elementer sebelum memasuki teori tingkat lanjut.",
+    "corpus": "Discrete Mathematics: An Open Introduction 4",
+    "note": "Edisi Bahasa Indonesia selesai dan rilis preservasi 2026.08.22 telah diverifikasi publik.",
+    "reader": "https://kokunoyumeto.github.io/discrete-mathematics-open-introduction-id/",
+    "edition": "https://zenodo.org/records/22060439/files/00_MATEMATIKA_DISKRET_EDISI_KEEMPAT_BAHASA_INDONESIA_READER.pdf?download=1",
+    "repository": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id",
+    "zenodo": "https://doi.org/10.5281/zenodo.22060439"
+  },
+  {
+    "id": "B20",
+    "ownerLane": "R003",
+    "level": "B",
+    "topic": "Fondasi & Kalkulus",
+    "state": "published",
+    "title": "Kalkulus Diferensial",
+    "prerequisites": [
+      "A30"
+    ],
+    "purpose": "Limit, kontinuitas, turunan, pendekatan, optimisasi, dan pemodelan dengan masalah terpecahkan yang terintegrasi.",
+    "outcome": "Menggunakan turunan secara komputasional dan konseptual serta menjelaskan hipotesis yang dipakai.",
+    "corpus": "CLP Calculus 1 — buku teks serta buku soal dan penyelesaian lengkap",
+    "note": "Edisi Bahasa Indonesia lengkap dan terverifikasi publik: buku teks 442 halaman serta buku soal dan penyelesaian 646 halaman.",
+    "edition": "https://zenodo.org/records/21938930/files/00_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_BUKU_TEKS.pdf?download=1",
+    "repository": "https://github.com/KokunoYumeto/clp1-differential-calculus-id",
+    "zenodo": "https://doi.org/10.5281/zenodo.21938930",
+    "supplements": [
+      {
+        "id": "clp1-soal-dan-penyelesaian",
+        "title": "Soal dan Penyelesaian CLP Kalkulus Diferensial",
+        "resourceType": "problem-book",
+        "state": "complete",
+        "scope": "Buku soal dan penyelesaian lengkap, 646 halaman.",
+        "license": "CC BY-NC-SA 4.0",
+        "pages": 646,
+        "url": "https://zenodo.org/records/21938930/files/01_CLP1_KALKULUS_DIFERENSIAL_BAHASA_INDONESIA_2026.08.14.1_SOAL_DAN_PENYELESAIAN.pdf?download=1",
+        "zenodo": "https://doi.org/10.5281/zenodo.21938930",
+        "bytes": 3263082,
+        "sha256": "911b2a0e3a9de6eccb9dd93042fa697e8f02e4bb1ecdacec86ade68744245021"
+      }
+    ]
+  },
+  {
+    "id": "B30",
+    "ownerLane": "R003",
+    "level": "B",
+    "topic": "Fondasi & Kalkulus",
+    "state": "production",
+    "title": "Kalkulus Integral",
+    "prerequisites": [
+      "B20"
+    ],
+    "purpose": "Integral, teorema dasar kalkulus, teknik integrasi, penerapan, barisan, deret, dan persamaan diferensial awal.",
+    "outcome": "Memilih dan membenarkan metode integral atau deret serta menghubungkan akumulasi dengan laju lokal.",
+    "corpus": "CLP Calculus — kalkulus integral",
+    "note": "Checkpoint publik WIP.16 mencapai akhir Bagian 3.5 dalam pembaca 1.102 halaman dengan 165.925 rekaman backend. CLP Kalkulus 2 tetap diproduksi.",
+    "edition": "https://zenodo.org/records/22105615/files/CLP-2_Kalkulus_Integral_Bahasa_Indonesia_checkpoint_2026-08-26_s3.5.pdf?download=1",
+    "zenodo": "https://doi.org/10.5281/zenodo.22105615"
+  },
+  {
+    "id": "B40",
+    "ownerLane": "R005",
+    "level": "B",
+    "topic": "Aljabar",
+    "state": "published",
+    "title": "Aljabar Linear",
+    "prerequisites": [
+      "A30",
+      "B10"
+    ],
+    "purpose": "Sistem linear, ruang vektor, pemetaan linear, matriks, determinan, nilai dan vektor eigen, serta penerapan.",
+    "outcome": "Berpindah dengan lancar antara perhitungan, struktur, dan pembuktian dalam matematika berdimensi hingga.",
+    "corpus": "Hefferon — Linear Algebra lengkap",
+    "note": "Edisi Bahasa Indonesia lengkap dan terverifikasi publik sebagai tiga bahan belajar terpisah: buku teks 580 halaman, jawaban bekerja 435 halaman, dan laboratorium Sage 109 halaman.",
+    "reader": "https://kokunoyumeto.github.io/hefferon-linear-algebra-id/",
+    "edition": "https://zenodo.org/records/22070458/files/01_HEFFERON_LINEAR_ALGEBRA_ID_TEXTBOOK_2026.08.22.pdf?download=1",
+    "repository": "https://github.com/KokunoYumeto/hefferon-linear-algebra-id",
+    "zenodo": "https://doi.org/10.5281/zenodo.22070458",
+    "supplements": [
+      {
+        "id": "hefferon-jawaban-bekerja",
+        "title": "Jawaban Bekerja Aljabar Linear",
+        "resourceType": "solutions",
+        "state": "complete",
+        "scope": "Jawaban bekerja lengkap, 435 halaman.",
+        "license": "CC BY-SA 2.5",
+        "pages": 435,
+        "url": "https://zenodo.org/records/22070458/files/02_HEFFERON_LINEAR_ALGEBRA_ID_WORKED_ANSWERS_2026.08.22.pdf?download=1",
+        "zenodo": "https://doi.org/10.5281/zenodo.22070458",
+        "bytes": 2672266,
+        "sha256": "61f8a344cade529249d4f165bb62bce17579b6a4408b11634999e9f73ec9c01b"
+      },
+      {
+        "id": "hefferon-laboratorium-sage",
+        "title": "Laboratorium Sage Aljabar Linear",
+        "resourceType": "workbook",
+        "state": "complete",
+        "scope": "Laboratorium komputasi Sage lengkap, 109 halaman.",
+        "license": "CC BY-SA 2.5",
+        "pages": 109,
+        "url": "https://zenodo.org/records/22070458/files/03_HEFFERON_LINEAR_ALGEBRA_ID_SAGE_LAB_2026.08.22.pdf?download=1",
+        "zenodo": "https://doi.org/10.5281/zenodo.22070458",
+        "bytes": 13164259,
+        "sha256": "adb78966020355a90442c7ae68c734f1fd6b44b5d935a3f75e531ea666eeee4a"
+      }
+    ]
+  },
+  {
+    "id": "B50",
+    "ownerLane": "R003",
+    "level": "B",
+    "topic": "Fondasi & Kalkulus",
+    "state": "production",
+    "title": "Kalkulus Multivariabel",
+    "prerequisites": [
+      "B30",
+      "B40"
+    ],
+    "purpose": "Geometri beberapa variabel, turunan parsial, integral lipat, optimisasi berkendala, dan sistem koordinat.",
+    "outcome": "Menganalisis fungsi skalar multivariabel dan menghubungkan linearisasi lokal dengan geometri.",
+    "corpus": "CLP Calculus — kalkulus multivariabel",
+    "note": "Korpus terpilih dalam jalur produksi CLP bersama."
+  },
+  {
+    "id": "B60",
+    "ownerLane": "R003",
+    "level": "B",
+    "topic": "Fondasi & Kalkulus",
+    "state": "published",
+    "title": "Kalkulus Vektor",
+    "prerequisites": [
+      "B50"
+    ],
+    "purpose": "Medan vektor, integral garis dan permukaan, serta teorema Green, Stokes, dan divergensi.",
+    "outcome": "Menafsirkan teorema integral utama yang menghubungkan struktur diferensial lokal dengan besaran global.",
+    "corpus": "CLP Calculus — kalkulus vektor",
+    "note": "CLP Calculus 4 lengkap dan terverifikasi publik: buku teks 316 halaman, buku latihan 486 halaman, seluruh permukaan PreTeXt/LaTeX, aset, hak, sumber, backend, dan build deterministik. Buku latihan ditampilkan sebagai sumber belajar tambahan, bukan disembunyikan di backend.",
+    "edition": "https://zenodo.org/records/22105443/files/CLP-4-Kalkulus-Vektor-Bahasa-Indonesia.pdf?download=1",
+    "repository": "https://github.com/KokunoYumeto/clp4-vector-calculus-id",
+    "zenodo": "https://doi.org/10.5281/zenodo.22105443",
+    "supplements": [
+      {
+        "id": "clp4-problem-book-complete",
+        "title": "Buku latihan CLP4 lengkap",
+        "resourceType": "problem-book",
+        "state": "complete",
+        "scope": "Seluruh buku latihan kalkulus vektor, 486 halaman.",
+        "license": "CC BY-NC-SA 4.0",
+        "pages": 486,
+        "url": "https://zenodo.org/records/22105443/files/CLP-4-Latihan-Kalkulus-Vektor-Bahasa-Indonesia.pdf?download=1",
+        "zenodo": "https://doi.org/10.5281/zenodo.22105443",
+        "conceptDoi": "https://doi.org/10.5281/zenodo.22105442",
+        "bytes": 3939483,
+        "sha256": "a6253809eaa4a465d5efcc4372b1321ad828aa4964ec45042aab9130a358835b"
+      }
+    ]
+  },
+  {
+    "id": "B80",
+    "ownerLane": "O002",
+    "level": "B",
+    "topic": "Komputasi & Optimisasi",
+    "state": "published",
+    "title": "Komputasi Matematis dan Eksperimen Reprodusibel",
+    "prerequisites": [
+      "A30"
+    ],
+    "purpose": "Python, SageMath, SymPy, NumPy/SciPy, komputasi eksak dan floating, visualisasi, pengujian, notebook literat, serta eksperimen reprodusibel.",
+    "outcome": "Menerapkan objek dan eksperimen matematis sambil membedakan komputasi, bukti pendukung, dan pembuktian.",
+    "corpus": "Rangka asli lengkap: P01/P02 + 12 unit, SciPy, SageMath, visualisasi, lingkungan, dan penguasaan",
+    "note": "Edisi B80 lengkap dan terverifikasi publik: 14 unit, 75 latihan, 177 uji lulus, pembaca PDF 159 halaman, serta HTML, EPUB, sumber editabel, dan paket luring.",
+    "reader": "https://kokunoyumeto.github.io/mathematical-computing-reproducible-experiments-id/",
+    "edition": "https://zenodo.org/records/22053905/files/Komputasi-Matematis-dan-Eksperimen-yang-Dapat-Direproduksi.pdf?download=1",
+    "repository": "https://github.com/KokunoYumeto/mathematical-computing-reproducible-experiments-id",
+    "zenodo": "https://doi.org/10.5281/zenodo.22053905"
+  }
+]

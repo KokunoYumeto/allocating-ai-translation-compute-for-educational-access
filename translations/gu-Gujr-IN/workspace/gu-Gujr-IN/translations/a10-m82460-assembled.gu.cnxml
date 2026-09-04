@@ -1,0 +1,1950 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:ns1="http://cnx.rice.edu/mdml" xml:lang="gu-Gujr-IN">
+
+<title>વાસ્તવિક સંખ્યાઓના ગુણધર્મો</title>
+<metadata>
+  <ns1:content-id>m82460</ns1:content-id>
+  <ns1:title>વાસ્તવિક સંખ્યાઓના ગુણધર્મો</ns1:title>
+  <ns1:abstract><para id="para-00001">આ વિભાગના અંતે તમે આ કરી શકશો:</para>
+<list id="list-00001">
+<item>ક્રમવિનિમય અને જૂથબંધીના ગુણધર્મો વાપરવા</item>
+<item>સરવાળા અને ગુણાકાર માટે તટસ્થ સંખ્યા તથા વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો વાપરવા</item>
+<item>શૂન્યના ગુણધર્મો વાપરવા</item>
+<item>વિભાજનનો ગુણધર્મ વાપરી પદાવલીનું સાદું રૂપ આપવું</item>
+</list></ns1:abstract>
+  <ns1:uuid>4872eb92-e2a7-44bc-a560-95441f7abc20</ns1:uuid>
+</metadata>
+
+<content>
+<note id="fs-id1170654073156" class="be-prepared">
+<para id="fs-id1170654012247">આ વિભાગના વિષયોનો વધુ વિગતવાર પરિચય <emphasis effect="italics">પૂર્વબીજગણિત</emphasis> પુસ્તકના આ પ્રકરણમાં મળે છે: <emphasis effect="bold">વાસ્તવિક સંખ્યાઓના ગુણધર્મો</emphasis>.</para>
+</note>
+<section id="fs-id1170653871089">
+<title>ક્રમવિનિમય અને જૂથબંધીના ગુણધર્મો વાપરો</title>
+<para id="fs-id1170654026828">બે સંખ્યાઓ, જેમ કે 5 અને 3, ઉમેરવાનો વિચાર કરો. તેમને કયા ક્રમમાં ઉમેરીએ તેની પરિણામ પર અસર થતી નથી, ખરું ને?</para>
+<equation id="fs-id1170653893750" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>8</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>8</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<equation id="fs-id1166426267603" class="unnumbered"><label /><m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170653891144">પરિણામો સરખાં છે.</para>
+<para id="fs-id1170654031116">આપણે જોઈએ છીએ કે સરવાળો કરવાના ક્રમથી પરિણામ બદલાતું નથી!</para>
+<para id="fs-id1170653884964">ગુણાકારમાં પણ આ જ તપાસીએ: <m:math><m:mrow><m:mn>5</m:mn><m:mspace width="0.2em" /><m:mtext>અને</m:mtext><m:mspace width="0.2em" /><m:mn>3</m:mn><m:mo>?</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1170654014649" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>15</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>15</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<equation id="fs-id1166424005906" class="unnumbered"><label /><m:math><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170653771564">અહીં પણ પરિણામો સરખાં છે!</para>
+<para id="fs-id1170654027262">ગુણાકાર કરવાના ક્રમથી પરિણામ બદલાતું નથી!</para>
+<para id="fs-id1170654013661">આ ઉદાહરણો સમજાવે છે <term id="term-00001">ક્રમવિનિમયનો ગુણધર્મ</term>. સરવાળો કે ગુણાકાર કરતી વખતે <emphasis effect="italics">ક્રમ</emphasis> બદલવાથી પણ પરિણામ સરખું મળે છે.</para>
+<note id="fs-id1170653917425">
+<title>ક્રમવિનિમયનો ગુણધર્મ</title>
+<equation id="fs-id1170653885439" class="unnumbered"><label /><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtext mathvariant="bold">સરવાળા માટે</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>જો</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mspace width="0.2em" /><m:mtext>વાસ્તવિક સંખ્યાઓ હોય, તો</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="right"><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>a</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext mathvariant="bold">ગુણાકાર માટે</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>જો</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mspace width="0.2em" /><m:mtext>વાસ્તવિક સંખ્યાઓ હોય, તો</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="right"><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>a</m:mi></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1170653751940">સરવાળો કે ગુણાકાર કરતી વખતે બદલીએ <emphasis effect="italics">ક્રમ</emphasis> તો પણ પરિણામ સરખું મળે છે.</para>
+</note>
+<para id="fs-id1170654011373">ક્રમવિનિમયનો ગુણધર્મ ક્રમ સાથે સંબંધિત છે. સરવાળો કે ગુણાકાર કરતી વખતે સંખ્યાઓનો ક્રમ બદલીએ તો પણ પરિણામ સરખું મળે છે.</para>
+<para id="fs-id1170653758644">બાદબાકી વિશે શું કહી શકાય? શું તેમાં સંખ્યાઓનો ક્રમ મહત્ત્વનો છે? શું આ પદાવલી <m:math><m:mrow><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>?</m:mo></m:mrow></m:math> બંને માટે પરિણામ સરખું મળે છે?</para>
+<equation id="fs-id1170654027324" class="unnumbered"><label /><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="center"><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mtd><m:mtd columnalign="center"><m:mspace width="1em" /><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>4</m:mn></m:mtd><m:mtd columnalign="center"><m:mspace width="1em" /><m:mn>−4</m:mn></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr /><m:mtr /><m:mtr><m:mtd columnalign="center"><m:mspace width="0.5em" /><m:mn>4</m:mn><m:mo>≠</m:mo><m:mtext>−</m:mtext><m:mn>4</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>≠</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1170654013324">પરિણામો સરખાં નથી.</para>
+<para id="fs-id1170653892774">બાદબાકીનો ક્રમ બદલતાં પરિણામ સરખું ન મળ્યું. તેથી આપણે જાણીએ છીએ કે <emphasis effect="italics">બાદબાકીમાં ક્રમવિનિમયનો ગુણધર્મ લાગુ પડતો નથી</emphasis>.</para>
+<para id="fs-id1170653815250">બે સંખ્યાઓના ભાગાકારમાં શું થાય છે તે જોઈએ. શું <term class="no-emphasis" id="term-00002">ભાગાકાર</term> માં ક્રમવિનિમયનો ગુણધર્મ લાગુ પડે છે?</para>
+<equation id="fs-id1170654031695" class="unnumbered"><label /><m:math><m:mtable><m:mtr /><m:mtr><m:mtd columnalign="center"><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>12</m:mn><m:mo>÷</m:mo><m:mn>4</m:mn></m:mtd><m:mtd columnalign="center"><m:mspace width="1em" /><m:mn>4</m:mn><m:mo>÷</m:mo><m:mn>12</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>12</m:mn></m:mrow><m:mn>4</m:mn></m:mfrac></m:mtd><m:mtd columnalign="center"><m:mspace width="1em" /><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>3</m:mn></m:mtd><m:mtd columnalign="center"><m:mspace width="1em" /><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>3</m:mn><m:mo>≠</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>12</m:mn><m:mo>÷</m:mo><m:mn>4</m:mn><m:mo>≠</m:mo><m:mn>4</m:mn><m:mo>÷</m:mo><m:mn>12</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170653797051">પરિણામો સરખાં નથી.</para>
+<para id="fs-id1170653742804">ભાગાકારનો ક્રમ બદલતાં પરિણામ સરખું ન મળ્યું. તેથી <emphasis effect="italics">ભાગાકારમાં ક્રમવિનિમયનો ગુણધર્મ લાગુ પડતો નથી</emphasis>. ક્રમવિનિમયના ગુણધર્મો માત્ર સરવાળા અને ગુણાકારને લાગુ પડે છે!</para>
+<list id="fs-id1166426095775" list-type="bulleted" bullet-style="bullet">
+<item>સરવાળા અને ગુણાકારમાં <emphasis effect="italics">લાગુ પડે છે</emphasis> ક્રમવિનિમયનો ગુણધર્મ.</item>
+<item>બાદબાકી અને ભાગાકારમાં <emphasis effect="italics">લાગુ પડતો નથી</emphasis> ક્રમવિનિમયનો ગુણધર્મ.</item>
+</list>
+<para id="fs-id1171791165266"><newline /><newline /></para>
+<para id="fs-id1170653898679">તમને આ પદાવલીનું સાદું રૂપ આપવાનું કહેવામાં આવે તો કેવી રીતે કરશો અને તમારો જવાબ શું હશે?</para>
+<equation id="fs-id1170653877611" class="unnumbered"><label /><m:math><m:mrow><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170653742729">કેટલાક લોકો પહેલાં વિચારે <m:math><m:mrow><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mspace width="0.2em" /><m:mtext>એટલે</m:mtext><m:mspace width="0.2em" /><m:mn>15</m:mn></m:mrow></m:math> અને પછી <m:math><m:mrow><m:mn>15</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em" /><m:mtext>એટલે</m:mtext><m:mspace width="0.2em" /><m:mn>17</m:mn><m:mo>.</m:mo></m:mrow></m:math> બીજા લોકો આથી શરૂઆત કરે: <m:math><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em" /><m:mtext>એટલે મળે</m:mtext><m:mspace width="0.2em" /><m:mn>10</m:mn></m:mrow></m:math> અને પછી <m:math><m:mrow><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mspace width="0.2em" /><m:mtext>એટલે મળે</m:mtext><m:mspace width="0.2em" /><m:mn>17</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170653887975">બંને રીતે પરિણામ સરખું મળે છે. યાદ રાખો: કઈ ક્રિયા પહેલાં કરવી તે દર્શાવવા આપણે જૂથ બનાવતાં કૌંસ વાપરીએ છીએ.</para>
+<table id="eip-252" summary="7, 8 અને 2નો ઉપયોગ કરીને સરવાળામાં જૂથબંધીનો ગુણધર્મ દર્શાવેલો છે: જુદાં જૂથ બનાવવાથી પણ કુલ સરવાળો સરખો મળે છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><newline />ઉમેરો <m:math><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>8</m:mn></m:math>.
+	<newline />સરવાળો કરો.</entry>
+    <entry><m:math><m:mtable>
+    	<m:mtr><m:mtd><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn></m:mtd></m:mtr>
+    	<m:mtr><m:mtd><m:mn>15</m:mn><m:mo>+</m:mo><m:mn>2</m:mn></m:mtd></m:mtr>
+    	<m:mtr><m:mtd><m:mn>17</m:mn></m:mtd></m:mtr>
+    </m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>
+    	<newline />ઉમેરો <m:math><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn></m:math>.
+    	<newline />સરવાળો કરો.</entry>
+    <entry><m:math><m:mtable>
+         <m:mtr><m:mtd><m:mn>7</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>10</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>17</m:mn></m:mtd></m:mtr>
+    </m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry> </entry>
+    <entry><m:math><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table><para id="fs-id1170654015259">ત્રણ સંખ્યાઓનો સરવાળો કરતી વખતે જૂથબંધી બદલીએ તો પણ પરિણામ સરખું મળે છે.</para>
+<para id="fs-id1170654073631">ગુણાકાર માટે પણ આ સાચું છે.</para>
+<table id="eip-989" summary="કોષ્ટક અપૂર્ણાંકો વડે ગુણાકારનો જૂથબંધીનો ગુણધર્મ દર્શાવે છે: અવયવોનાં જુદાં જૂથ બનાવવાથી ગુણનફળ બદલાતું નથી.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><newline />ગુણાકાર કરો. <m:math><m:mn>5</m:mn><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac></m:math>
+	<newline />ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mtable>
+    	<m:mtr><m:mtd><m:mspace width="2em" /><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>)</m:mo><m:mo>·</m:mo><m:mn>3</m:mn></m:mtd></m:mtr>
+    	<m:mtr><m:mtd><m:mfrac><m:mrow><m:mn>5</m:mn></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mn>3</m:mn></m:mtd></m:mtr>
+    	<m:mtr><m:mtd><m:mn>5</m:mn></m:mtd></m:mtr>
+    </m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry>
+    	<newline />ગુણાકાર કરો. <m:math><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mn>3</m:mn></m:math>.
+    	<newline />ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mtable>
+         <m:mtr><m:mtd><m:mn>5</m:mn><m:mo>·</m:mo><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>1</m:mn></m:mtd></m:mtr>
+         <m:mtr><m:mtd><m:mn>5</m:mn></m:mtd></m:mtr>
+    </m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry> </entry>
+    <entry><m:math><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>)</m:mo><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:math></entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table><para id="fs-id1170653774811">ત્રણ સંખ્યાઓનો ગુણાકાર કરતી વખતે જૂથબંધી બદલીએ તો પણ પરિણામ સરખું મળે છે.</para>
+<para id="fs-id1170653916060">તમે કદાચ આ જાણતા હશો, પરંતુ તેના માટેનો શબ્દપ્રયોગ નવો હોઈ શકે. આ ઉદાહરણો સમજાવે છે <term id="term-00003">જૂથબંધીનો ગુણધર્મ</term>.</para>
+<note id="fs-id1170653849240">
+<title>જૂથબંધીનો ગુણધર્મ</title>
+<equation id="fs-id1170654073734" class="unnumbered"><label /><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtext mathvariant="bold">સરવાળા માટે</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>જો</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mspace width="0.2em" /><m:mtext>વાસ્તવિક સંખ્યાઓ હોય, તો</m:mtext><m:mspace width="0.2em" /><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext mathvariant="bold">ગુણાકાર માટે</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mtext>જો</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mspace width="0.2em" /><m:mtext>વાસ્તવિક સંખ્યાઓ હોય, તો</m:mtext><m:mspace width="0.2em" /><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>)</m:mo><m:mo>·</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1170653877286">સરવાળો કે ગુણાકાર કરતી વખતે બદલીએ <emphasis effect="italics">જૂથબંધી</emphasis> તો પણ પરિણામ સરખું મળે છે.</para>
+</note>
+<para id="fs-id1170653894784">ફરી આ ગુણાકાર વિશે વિચારીએ: <m:math><m:mrow><m:mn>5</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> બંને રીતે સરખું પરિણામ મળ્યું, પણ કઈ રીત વધુ સરળ હતી? આ ગુણાકાર <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> અને <m:math><m:mn>3</m:mn></m:math> પહેલાં કરવાથી, ઉપર જમણે બતાવ્યા પ્રમાણે, પહેલા જ પગલામાં અપૂર્ણાંક દૂર થાય છે. જૂથબંધીનો ગુણધર્મ ગણતરી સરળ બનાવી શકે છે!</para>
+<para id="fs-id1170653930976">આ <term class="no-emphasis" id="term-00004">જૂથબંધીનો ગુણધર્મ</term> જૂથ બનાવવા સાથે સંબંધિત છે. સંખ્યાઓનાં જૂથ બનાવવાની રીત બદલીએ તો પણ પરિણામ સરખું રહે છે. ધ્યાન આપો: એ જ ત્રણ સંખ્યાઓ એ જ ક્રમમાં છે; માત્ર જૂથબંધી બદલાઈ છે.</para>
+<para id="fs-id1170653894135">આપણે જોયું કે બાદબાકી અને ભાગાકારમાં ક્રમવિનિમયનો ગુણધર્મ લાગુ પડતો નથી. તેમાં જૂથબંધીનો ગુણધર્મ પણ લાગુ પડતો નથી.</para>
+<para id="fs-id1170653807341">પદાવલીનું સાદું રૂપ આપતી વખતે કયાં પગલાં લેવાં તે પહેલાં વિચારવું સારું છે. આગળના ઉદાહરણમાં સજાતીય પદોને જોડવા સરવાળાના ક્રમવિનિમયના ગુણધર્મથી સજાતીય પદો એકબીજાની પાસે લખીશું.</para>
+<example id="fs-id1170653877249"><exercise id="fs-id1170654026476">
+<problem id="fs-id1170654077092">
+<para id="fs-id1170653907474">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>18</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>q</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>q</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653909769">
+<title>ઉકેલ</title>
+<table id="eip-193" summary="સરવાળાના ક્રમવિનિમયના ગુણધર્મથી સજાતીય પદોને જોડીને બીજગણિતીય પદાવલીનું સાદું રૂપ આપવાનાં પગલાં છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry> </entry>
+    <entry><m:math><m:mn>18</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>q</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>q</m:mi></m:math></entry>
+  </row>
+  <row>
+    <entry>સરવાળાનો ક્રમવિનિમયનો ગુણધર્મ વાપરી સજાતીય પદો એકબીજાની પાસે આવે તેમ ક્રમ બદલો.</entry>
+    <entry><m:math><m:mn>18</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>q</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>q</m:mi></m:math></entry>
+  </row>
+  <row>
+    <entry>સજાતીય પદો ઉમેરો.</entry>
+    <entry><m:math><m:mn>33</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>11</m:mn><m:mi>q</m:mi></m:math></entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170653915596" class="try">
+<exercise id="fs-id1170654015578">
+<problem id="fs-id1170654076917">
+<para id="fs-id1170653915616">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>23</m:mn><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>14</m:mn><m:mi>s</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mi>s</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653906988">
+<para id="fs-id1170654009182"><m:math><m:mrow><m:mn>32</m:mn><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>29</m:mn><m:mi>s</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653850539" class="try">
+<exercise id="fs-id1170653915506">
+<problem id="fs-id1170653795554">
+<para id="fs-id1170653775684">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>37</m:mn><m:mi>m</m:mi><m:mo>+</m:mo><m:mn>21</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mo>−</m:mo><m:mn>15</m:mn><m:mi>n</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654014491">
+<para id="fs-id1170654030751"><m:math><m:mrow><m:mn>41</m:mn><m:mi>m</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>n</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170653797335">જ્યારે બીજગણિતીય <term class="no-emphasis" id="term-00005">પદાવલી</term>નું સાદું રૂપ આપવાનું હોય, ત્યારે સીધા ક્રિયાઓના ક્રમ પ્રમાણે આગળ વધવાને બદલે પહેલાં ક્રમવિનિમય કે જૂથબંધીનો ગુણધર્મ વાપરવાથી ઘણી વાર કામ સરળ બને છે. અપૂર્ણાંકોના સરવાળા કે બાદબાકીમાં સામાન્ય છેદ ધરાવતા અપૂર્ણાંકોને પહેલાં ભેગા કરો.</para>
+<example id="fs-id1170653742078"><exercise id="fs-id1170653912025">
+<problem id="fs-id1170653890205">
+<para id="fs-id1170653748931">સાદું રૂપ આપો: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653984832">
+<title>ઉકેલ</title>
+<table id="eip-8" summary="સમાન છેદવાળાં પદોને એક જૂથમાં લઈને અપૂર્ણાંકવાળી પદાવલીની ગણતરી સરળ કરવાનાં પગલાં છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry> </entry>
+    <entry><m:math><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>છેલ્લાં 2 પદોના છેદ સમાન છે, એટલે જૂથબંધી બદલો.</entry>
+    <entry><m:math><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>પહેલાં કૌંસની અંદર સરવાળો કરો.</entry>
+    <entry><m:math><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>અપૂર્ણાંકનું સાદું રૂપ આપો.</entry>
+    <entry><m:math><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mn>1</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>સરવાળો કરો.</entry>
+    <entry><m:math><m:mn>1</m:mn><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>અશુદ્ધ અપૂર્ણાંકમાં ફેરવો.</entry>
+    <entry><m:math><m:mfrac><m:mrow><m:mn>18</m:mn></m:mrow><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654044578" class="try">
+<exercise id="fs-id1170654044582">
+<problem id="fs-id1170654044584">
+<para id="fs-id1170654044586">સાદું રૂપ આપો: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653901181">
+<para id="fs-id1170653901183"><m:math><m:mrow><m:mn>1</m:mn><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654077699" class="try">
+<exercise id="fs-id1170654077702">
+<problem id="fs-id1170654077704">
+<para id="fs-id1170654077707">સાદું રૂપ આપો: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653901148">
+<para id="fs-id1170653901150"><m:math><m:mrow><m:mn>1</m:mn><m:mfrac><m:mn>2</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170654014662"><exercise id="fs-id1170654014665">
+<problem id="fs-id1170654014667">
+<para id="fs-id1170654014669">જૂથબંધીનો ગુણધર્મ વાપરી સાદું રૂપ આપો: <m:math><m:mrow><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653901248">
+<title>ઉકેલ</title>
+<table id="eip-519" summary="ગુણાકારનો જૂથબંધીનો ગુણધર્મ વાપરી 6(3x)નું સાદું રૂપ આપવાનાં પગલાં છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry> </entry>
+    <entry><m:math><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>જૂથબંધી બદલો.</entry>
+    <entry><m:math><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:math></entry>
+  </row>
+  <row>
+    <entry>કૌંસની અંદર ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>18</m:mn><m:mi>x</m:mi></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+<para id="fs-id1170654059651">ધ્યાન આપો કે આપણે ગુણાકાર કરી શકીએ છીએ: <m:math><m:mrow><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:math> પરંતુ 3ને<emphasis effect="italics">x</emphasis> વડે ગુણવાનું સંખ્યાત્મક પરિણામ મેળવવા પહેલાં આ ચલની કિંમત જાણવી પડે: <emphasis effect="italics">x</emphasis>.</para>
+</solution>
+</exercise>
+</example><note id="fs-id1170654077031" class="try">
+<exercise id="fs-id1170654077034">
+<problem id="fs-id1170654077036">
+<para id="fs-id1170654077038">જૂથબંધીનો ગુણધર્મ વાપરી સાદું રૂપ આપો: 8(4<emphasis effect="italics">x</emphasis>).</para>
+</problem>
+<solution id="fs-id1170654077047">
+<para id="fs-id1170654077049">32<emphasis effect="italics">x</emphasis></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654079038" class="try">
+<exercise id="fs-id1170654079042">
+<problem id="fs-id1170654079044">
+<para id="fs-id1170654079046">જૂથબંધીનો ગુણધર્મ વાપરી સાદું રૂપ આપો: <m:math><m:mrow><m:mn>−9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7</m:mn><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654077742">
+<para id="fs-id1170654077744"><m:math><m:mrow><m:mn>−63</m:mn><m:mi>y</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654077757">
+<title>સરવાળા અને ગુણાકાર માટે તટસ્થ સંખ્યા તથા વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો વાપરો</title>
+<para id="fs-id1170654077762">કોઈ સંખ્યામાં 0 ઉમેરીએ તો શું થાય? 0 ઉમેરવાથી સંખ્યાની કિંમત બદલાતી નથી. તેથી 0ને કહીએ છીએ <term id="term-00006">સરવાળા માટેની તટસ્થ સંખ્યા</term>.</para>
+<para id="fs-id1170654084972">ઉદાહરણ તરીકે,</para>
+<equation id="fs-id1170654084975" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>13</m:mn><m:mo>+</m:mo><m:mn>0</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>−14</m:mn><m:mo>+</m:mo><m:mn>0</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>0</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>13</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mo>−</m:mo><m:mn>14</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mo>−</m:mo><m:mn>8</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170654073759">આ ઉદાહરણો સમજાવે છે <term id="term-00007">સરવાળા માટે તટસ્થ સંખ્યાનો ગુણધર્મ</term> કહે છે કે કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mi>a</m:mi><m:mo>,</m:mo></m:math> <m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>0</m:mn><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170654078244">કોઈ સંખ્યાને એક વડે ગુણીએ તો શું થાય? 1 વડે ગુણવાથી કિંમત બદલાતી નથી. તેથી 1ને કહીએ છીએ <term id="term-00008">ગુણાકાર માટેની તટસ્થ સંખ્યા</term>.</para>
+<para id="fs-id1170654078252">ઉદાહરણ તરીકે,</para>
+<equation id="fs-id1170654078255" class="unnumbered"><label /><m:math><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>43</m:mn><m:mo>·</m:mo><m:mn>1</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mo>−</m:mo><m:mn>27</m:mn><m:mo>·</m:mo><m:mn>1</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mn>1</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>43</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mo>−</m:mo><m:mn>27</m:mn></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="center"><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170654014513">આ ઉદાહરણો સમજાવે છે <term id="term-00009">ગુણાકાર માટે તટસ્થ સંખ્યાનો ગુણધર્મ</term> કહે છે કે કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mi>a</m:mi><m:mo>,</m:mo></m:math> <m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> અને <m:math><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170653990233">તટસ્થ સંખ્યાના ગુણધર્મોનો સાર નીચે આપ્યો છે.</para>
+<note id="fs-id1170653990236">
+<title>તટસ્થ સંખ્યાનો ગુણધર્મ</title>
+<equation id="fs-id1170653990242" class="unnumbered"><label /><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>સરવાળા માટે</m:mtext></m:mstyle><m:mspace width="0.2em" /><m:mtext>કોઈ પણ વાસ્તવિક સંખ્યા</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mtext>:</m:mtext></m:mtd><m:mtd /><m:mtd columnalign="right"><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd><m:mtd /><m:mtd columnalign="right"><m:mn>0</m:mn><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mn>0</m:mn></m:mstyle><m:mspace width="0.2em" /><m:mtext>એ છે</m:mtext><m:mspace width="0.2em" /><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>સરવાળા માટેની તટસ્થ સંખ્યા</m:mtext></m:mstyle></m:mtd><m:mtd /><m:mtd /><m:mtd /><m:mtd /></m:mtr><m:mtr /><m:mtr /><m:mtr><m:mtd columnalign="left"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>ગુણાકાર માટે</m:mtext></m:mstyle><m:mspace width="0.2em" /><m:mtext>કોઈ પણ વાસ્તવિક સંખ્યા</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mtext>:</m:mtext></m:mtd><m:mtd /><m:mtd columnalign="right"><m:mi>a</m:mi><m:mo>·</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd><m:mtd /><m:mtd columnalign="right"><m:mn>1</m:mn><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mn>1</m:mn></m:mstyle><m:mspace width="0.2em" /><m:mtext>એ છે</m:mtext><m:mspace width="0.2em" /><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>ગુણાકાર માટેની તટસ્થ સંખ્યા</m:mtext></m:mstyle></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1167271014968"><newline /></para>
+<media id="fs-id1170654036108" alt="આકૃતિની પહેલી લીટીમાં પ્રશ્ન છે: “5માં કઈ સંખ્યા ઉમેરવાથી સરવાળાની તટસ્થ સંખ્યા 0 મળે?” નીચે 5 વત્તા ખાલી જગ્યા બરાબર 0 છે. પછી લખ્યું છે: “આપણે જાણીએ છીએ કે 5 વત્તા −5 બરાબર 0.” આગળ પ્રશ્ન છે: “−6માં કઈ સંખ્યા ઉમેરવાથી સરવાળાની તટસ્થ સંખ્યા 0 મળે?” નીચે −6 વત્તા ખાલી જગ્યા બરાબર 0 છે. પછી લખ્યું છે: “આપણે જાણીએ છીએ કે −6 વત્તા 6 બરાબર 0.”">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_09_003_img_new.jpg" />
+</media>
+<para id="fs-id1170654036114">ધ્યાન આપો કે દરેક કિસ્સામાં ખૂટતી સંખ્યા આપેલી સંખ્યાની વિરોધી સંખ્યા હતી!</para>
+<para id="fs-id1170654036118"><m:math><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math>ને <term id="term-00010">સરવાળા માટેની વિરોધી સંખ્યા</term> કહીએ છીએ આ સંખ્યાની: <emphasis effect="italics">a</emphasis>. <emphasis effect="italics">કોઈ સંખ્યાની વિરોધી સંખ્યા એ તેની સરવાળા માટેની વિરોધી સંખ્યા છે.</emphasis> સંખ્યા અને તેની વિરોધી સંખ્યાનો સરવાળો શૂન્ય થાય છે, જે સરવાળા માટેની તટસ્થ સંખ્યા છે. આથી <term id="term-00011">સરવાળામાં વિરોધી સંખ્યાનો ગુણધર્મ</term> મળે છે; કોઈ પણ વાસ્તવિક સંખ્યા માટે <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> યાદ રાખો: સંખ્યા અને તેની વિરોધી સંખ્યાનો સરવાળો શૂન્ય થાય છે.</para>
+<para id="fs-id1170654014737">કઈ સંખ્યાનો <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> સાથે ગુણાકાર કરતાં ગુણાકાર માટેની તટસ્થ સંખ્યા 1 મળે? બીજા શબ્દોમાં, <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math>ને શેનાથી ગુણતાં 1 મળે?</para>
+<media id="fs-id1170653797753" alt="પહેલાં 2/3 ગુણ્યા ખાલી જગ્યા બરાબર 1 આપેલું છે. પછી લખ્યું છે: “આપણે જાણીએ છીએ કે 2/3 ગુણ્યા 3/2 બરાબર 1.”">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_09_004_img_new.jpg" />
+</media>
+<para id="fs-id1170653797762">કઈ સંખ્યાને 2થી ગુણતાં ગુણાકારની તટસ્થ સંખ્યા 1 મળે? બીજા શબ્દોમાં, 2ને શેનાથી ગુણતાં 1 મળે?</para>
+<media id="fs-id1170653797768" alt="પહેલાં 2 ગુણ્યા ખાલી જગ્યા બરાબર 1 આપેલું છે. પછી લખ્યું છે: “આપણે જાણીએ છીએ કે 2 ગુણ્યા 1/2 બરાબર 1.”">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_09_005_img_new.jpg" />
+</media>
+<para id="fs-id1170653797777">ધ્યાન આપો કે દરેક કિસ્સામાં ખૂટતી સંખ્યા હતી <term class="no-emphasis" id="term-00012">વ્યસ્ત સંખ્યા</term> આપેલી સંખ્યાની!</para>
+<para id="fs-id1170654030286"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac></m:mrow></m:math>ને <term id="term-00013">ગુણાકાર માટેની વ્યસ્ત સંખ્યા</term> કહીએ છીએ આ સંખ્યાની: <emphasis effect="italics">a</emphasis>. <emphasis effect="italics">શૂન્ય સિવાયની <m:math><m:mi>a</m:mi></m:math> સંખ્યાની વ્યસ્ત સંખ્યા એ તેની ગુણાકાર માટેની વ્યસ્ત સંખ્યા છે.</emphasis> સંખ્યા અને તેની વ્યસ્ત સંખ્યાનો ગુણાકાર એક થાય છે, જે ગુણાકાર માટેની તટસ્થ સંખ્યા છે. આથી <term id="term-00014">ગુણાકારમાં વ્યસ્ત સંખ્યાનો ગુણધર્મ</term> મળે છે; તે કહે છે કે કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170654012966">અહીં વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો ચોક્કસ સ્વરૂપમાં લખીએ:</para>
+<note id="fs-id1170654012970">
+<title>વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો</title>
+<table id="eip-73" summary="કોષ્ટક વાસ્તવિક સંખ્યાઓ માટે સરવાળાની વિરોધી સંખ્યા અને ગુણાકારની વ્યસ્ત સંખ્યાની વ્યાખ્યા, વર્ણન અને ગાણિતિક પદાવલીઓ આપે છે.">
+<tgroup cols="3"><tbody>
+  <row>
+    <entry><emphasis>સરવાળા માટે</emphasis></entry>
+    <entry>કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mi>a</m:mi></m:math>,<newline /><m:math><m:mtext>−</m:mtext><m:mi>a</m:mi></m:math> એ છે <emphasis>સરવાળા માટેની વિરોધી સંખ્યા</emphasis> છે આ સંખ્યાની: <m:math><m:mi>a</m:mi></m:math>.
+	<newline />સંખ્યા અને તેની વિરોધી સંખ્યાનો સરવાળો શૂન્ય થાય છે.</entry>
+    <entry><m:math><m:mi>a</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis>ગુણાકાર માટે</emphasis></entry>
+     <entry>કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mi>a</m:mi></m:math>,
+	<newline /><m:math><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac></m:math> એ છે <emphasis>ગુણાકાર માટેની વ્યસ્ત સંખ્યા</emphasis> છે આ સંખ્યાની: <m:math><m:mi>a</m:mi></m:math>.
+	<newline />સંખ્યા અને તેની વ્યસ્ત સંખ્યાનો ગુણાકાર એક થાય છે.</entry>
+    <entry><m:math><m:mi>a</m:mi><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table></note>
+<example id="fs-id1170654075033">
+<exercise id="fs-id1170654075035">
+<problem id="fs-id1170654075038">
+<para id="fs-id1170654075040">સરવાળા માટેની વિરોધી સંખ્યા શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>0.6</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654084880">
+<title>ઉકેલ</title>
+<para id="fs-id1170654084886">સરવાળા માટેની વિરોધી સંખ્યા મેળવવા આપેલી સંખ્યાની વિરોધી સંખ્યા શોધીએ.</para>
+<list id="fs-id1166423979092" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> આ સંખ્યાની સરવાળા માટેની વિરોધી સંખ્યા: <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> એ તેની વિરોધી સંખ્યા છે: <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> આ સંખ્યાની સરવાળા માટેની વિરોધી સંખ્યા: <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> એટલે <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math><newline /><newline /></item>
+<item><span class="token">ⓑ</span> 0.6ની સરવાળા માટેની વિરોધી સંખ્યા એટલે 0.6ની વિરોધી સંખ્યા. 0.6ની સરવાળા માટેની વિરોધી સંખ્યા છે <m:math><m:mrow><m:mn>−0.6</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline /><newline /></item>
+<item><span class="token">ⓒ</span> આ સંખ્યાની સરવાળા માટેની વિરોધી સંખ્યા: <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math> એ તેની વિરોધી સંખ્યા છે: <m:math><m:mrow><m:mn>−8</m:mn><m:mo>.</m:mo></m:mrow></m:math> આપણે આ સંખ્યાની વિરોધી સંખ્યા લખીએ: <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math> આ રીતે: <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> અને સાદું રૂપ આપતાં 8 મળે છે. તેથી આની સરવાળા માટેની વિરોધી સંખ્યા: <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math> એ 8 છે.<newline /><newline /></item>
+<item><span class="token">ⓓ</span> આ સંખ્યાની સરવાળા માટેની વિરોધી સંખ્યા: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> એ તેની વિરોધી સંખ્યા છે: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> આને લખીએ <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> અને સાદું રૂપ આપતાં મળે <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> તેથી આની સરવાળા માટેની વિરોધી સંખ્યા: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> એટલે <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170654012744" class="try">
+<exercise id="fs-id1170654012747">
+<problem id="fs-id1170653800547">
+<para id="fs-id1170653800549">સરવાળા માટેની વિરોધી સંખ્યા શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>1.2</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−14</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>9</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653800585">
+<para id="fs-id1170653800587"><span class="token">ⓐ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−1.2</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>14</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654073181" class="try">
+<exercise id="fs-id1170654073184">
+<problem id="fs-id1170654073186">
+<para id="fs-id1170654073188">સરવાળા માટેની વિરોધી સંખ્યા શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>8.4</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−46</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654078943">
+<para id="fs-id1170654078945"><span class="token">ⓐ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−8.4</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>46</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170654078981">
+<exercise id="fs-id1170654078984">
+<problem id="fs-id1170654073241">
+<para id="fs-id1170654073243">ગુણાકાર માટેની વ્યસ્ત સંખ્યા શોધો: <span class="token">ⓐ</span> <m:math><m:mn>9</m:mn></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>0.9</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654073268">
+<title>ઉકેલ</title>
+<para id="fs-id1170654073274">ગુણાકાર માટેની વ્યસ્ત સંખ્યા મેળવવા આપેલી સંખ્યાની વ્યસ્ત સંખ્યા શોધીએ.</para>
+<list id="fs-id1166426176898" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> 9ની ગુણાકાર માટેની વ્યસ્ત સંખ્યા એટલે 9ની વ્યસ્ત સંખ્યા, જે છે <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> તેથી 9ની ગુણાકાર માટેની વ્યસ્ત સંખ્યા છે <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><span class="token">ⓑ</span> આ સંખ્યાની ગુણાકાર માટેની વ્યસ્ત સંખ્યા: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math> એ તેની વ્યસ્ત સંખ્યા છે: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જે છે <m:math><m:mrow><m:mn>−9</m:mn><m:mo>.</m:mo></m:mrow></m:math> તેથી આની ગુણાકાર માટેની વ્યસ્ત સંખ્યા: <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math> એટલે <m:math><m:mrow><m:mn>−9</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><span class="token">ⓒ</span> 0.9ની ગુણાકાર માટેની વ્યસ્ત સંખ્યા શોધવા પહેલાં 0.9ને અપૂર્ણાંકમાં ફેરવીએ: <m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> પછી અપૂર્ણાંકની વ્યસ્ત સંખ્યા શોધીએ. આ સંખ્યાની વ્યસ્ત સંખ્યા: <m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math> એટલે <m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> એટલે 0.9ની ગુણાકાર માટેની વ્યસ્ત સંખ્યા છે <m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170653991346" class="try">
+<exercise id="fs-id1170653991350">
+<problem id="fs-id1170653991352">
+<para id="fs-id1170653991354">ગુણાકાર માટેની વ્યસ્ત સંખ્યા શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>0.3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654073682">
+<para id="fs-id1170654073684"><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−7</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654073713" class="try">
+<exercise id="fs-id1170654073716">
+<problem id="fs-id1170654073719">
+<para id="fs-id1170654073721">ગુણાકાર માટેની વ્યસ્ત સંખ્યા શોધો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>18</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>0.6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654036171">
+<para id="fs-id1170654036173"><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>5</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170653800718">
+<title>શૂન્યના ગુણધર્મો વાપરો</title>
+<para id="fs-id1170653800723">સરવાળાની તટસ્થ સંખ્યાનો ગુણધર્મ કહે છે કે કોઈ સંખ્યામાં 0 ઉમેરવાથી એ જ સંખ્યા મળે છે. કોઈ સંખ્યાને 0 વડે ગુણવાથી શું થાય? 0 વડે ગુણવાથી <term class="no-emphasis" id="term-00015">ગુણનફળ</term> શૂન્ય થાય છે.</para>
+<note id="fs-id1170653800728">
+<title>શૂન્ય વડે ગુણાકાર</title>
+<para id="fs-id1170653800734">કોઈ પણ વાસ્તવિક સંખ્યા <emphasis effect="italics">a</emphasis>.</para>
+<equation id="fs-id1170653800741" class="unnumbered"><label /><m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="6em" /><m:mn>0</m:mn><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170653800771">કોઈ પણ વાસ્તવિક સંખ્યા અને 0નું ગુણનફળ 0 છે.</para>
+</note>
+<para id="fs-id1170653800775">હવે <term class="no-emphasis" id="term-00016">શૂન્ય ધરાવતા ભાગાકાર</term> વિશે શું કહી શકાય? <m:math><m:mrow><m:mn>0</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>?</m:mo></m:mrow></m:math>નું મૂલ્ય શું છે? એક રોજિંદું ઉદાહરણ વિચારો: બરણીમાં એક પણ બિસ્કિટ નથી અને 3 લોકોમાં બિસ્કિટ વહેંચવાનાં છે, તો દરેકને કેટલાં બિસ્કિટ મળે? વહેંચવા એક પણ બિસ્કિટ નથી, એટલે દરેકને 0 બિસ્કિટ મળે છે. તેથી,</para>
+<equation id="fs-id1170654014380" class="unnumbered"><label /><m:math><m:mrow><m:mn>0</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170654014398">સંબંધિત ગુણાકારની હકીકતથી ભાગાકાર તપાસી શકીએ છીએ.</para>
+<equation id="fs-id1166426254494" class="unnumbered"><label /><m:math><m:mrow><m:mn>12</m:mn><m:mo>÷</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em" /><m:mtext>કારણ કે</m:mtext><m:mspace width="0.2em" /><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170654014427">એટલે આપણે જાણીએ છીએ <m:math><m:mrow><m:mn>0</m:mn><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> કારણ કે <m:math><m:mrow><m:mn>0</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<note id="fs-id1170654076119">
+<title>શૂન્યનો ભાગાકાર</title>
+<para id="fs-id1170654076124">કોઈ પણ વાસ્તવિક સંખ્યા <emphasis effect="italics">a</emphasis>, સિવાય <m:math><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> અને <m:math><m:mrow><m:mn>0</m:mn><m:mo>÷</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170654076167">શૂન્યને શૂન્ય સિવાયની કોઈ પણ વાસ્તવિક સંખ્યા વડે ભાગતાં શૂન્ય મળે છે.</para>
+</note>
+<para id="fs-id1170654076171">હવે <emphasis effect="italics">શૂન્ય વડે ભાગવાનો</emphasis> વિચાર કરીએ. 4ને 0 વડે ભાગતાં શું મળે? સંબંધિત ગુણાકારની હકીકતનો વિચાર કરો: <m:math><m:mrow><m:mn>4</m:mn><m:mo>÷</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mo>?</m:mo></m:mrow></m:math>નો અર્થ છે <m:math><m:mrow><m:mo>?</m:mo><m:mo>·</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math>. શું એવી કોઈ સંખ્યા છે જેને 0 વડે ગુણતાં 4 મળે? કોઈ પણ વાસ્તવિક સંખ્યાને 0 વડે ગુણતાં 0 મળે છે, એટલે 0 વડે ગુણવાથી 4 મળે એવી કોઈ વાસ્તવિક સંખ્યા નથી.</para>
+<para id="fs-id1170653991470">આપણે તારણ કાઢીએ છીએ કે <m:math><m:mrow><m:mn>4</m:mn><m:mo>÷</m:mo><m:mn>0</m:mn></m:mrow></m:math>નું કોઈ વાસ્તવિક સંખ્યારૂપ પરિણામ નથી. તેથી શૂન્ય વડે ભાગાકાર અવ્યાખ્યાયિત છે.</para>
+<note id="fs-id1170653991484">
+<title>શૂન્ય વડે ભાગાકાર</title>
+<para id="fs-id1170653991489">કોઈ પણ વાસ્તવિક સંખ્યા <emphasis effect="italics">a</emphasis>, 0 સિવાય, <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mn>0</m:mn></m:mfrac></m:mrow></m:math> અને <m:math><m:mrow><m:mi>a</m:mi><m:mo>÷</m:mo><m:mn>0</m:mn></m:mrow></m:math> અવ્યાખ્યાયિત છે.</para>
+<para id="fs-id1170653991514">શૂન્ય વડે ભાગાકાર અવ્યાખ્યાયિત છે.</para>
+</note>
+<para id="fs-id1170653991519">શૂન્યના ગુણધર્મોનો સાર નીચે આપ્યો છે.</para>
+<note id="fs-id1170653991522">
+<title>શૂન્યના ગુણધર્મો</title>
+<para id="fs-id1170653991528"><emphasis effect="bold">શૂન્ય વડે ગુણાકાર:</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <emphasis effect="italics">a</emphasis>,</para>
+<table id="eip-18" summary="કોષ્ટક શૂન્ય વડે ગુણાકારનો ગુણધર્મ દર્શાવે છે: કોઈ પણ સંખ્યા અને શૂન્યનું ગુણનફળ હંમેશાં શૂન્ય છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><m:math><m:mi>a</m:mi><m:mo>·</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="1em" /><m:mn>0</m:mn><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math></entry>
+    <entry>કોઈ પણ સંખ્યા અને 0નું ગુણનફળ 0 છે.</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table><para id="fs-id1170654014590"><emphasis effect="bold">શૂન્યનો ભાગાકાર અને શૂન્ય વડે ભાગાકાર:</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+<table id="eip-866" summary="કોષ્ટક શૂન્ય ધરાવતા ભાગાકારના ગાણિતિક નિયમો અને તેમના શાબ્દિક અર્થ આપે છે. ક્યારે પરિણામ શૂન્ય હોય છે અને ક્યારે અવ્યાખ્યાયિત હોય છે તે સ્પષ્ટ કરે છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><m:math><m:mfrac><m:mn>0</m:mn><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:math></entry>
+    <entry>શૂન્યને તેના સિવાયની કોઈ પણ વાસ્તવિક સંખ્યા વડે ભાગતાં શૂન્ય મળે છે.</entry>
+  </row>
+    <row>
+    <entry><m:math><m:mfrac><m:mi>a</m:mi><m:mn>0</m:mn></m:mfrac><m:mspace width="0.2em" /><m:mtext>અવ્યાખ્યાયિત છે</m:mtext></m:math></entry>
+    <entry>શૂન્ય વડે ભાગાકાર અવ્યાખ્યાયિત છે.</entry>
+  </row>
+</tbody>
+</tgroup>
+</table></note>
+<example id="fs-id1170654012879"><exercise id="fs-id1170654012881">
+<problem id="fs-id1170654012883">
+<para id="fs-id1170654012885">સાદું રૂપ આપો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−8</m:mn><m:mo>·</m:mo><m:mn>0</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mrow><m:mn>−2</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>−32</m:mn></m:mrow><m:mn>0</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654012915">
+<title>ઉકેલ</title>
+<table id="eip-223" summary="કોષ્ટક શૂન્ય સાથેની ક્રિયાઓના મૂળભૂત નિયમો, ખાસ કરીને શૂન્ય વડે ગુણાકાર અને શૂન્ય વડે ભાગાકાર, ઉદાહરણો સાથે દર્શાવે છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> 
+	<newline />કોઈ પણ વાસ્તવિક સંખ્યા અને 0નું ગુણનફળ 0 છે.</entry>
+    <entry><m:math><m:mtable>
+    	<m:mtr><m:mtd><m:mn>−8</m:mn><m:mo>·</m:mo><m:mn>0</m:mn></m:mtd></m:mtr>
+    	<m:mtr><m:mtd><m:mn>0</m:mn></m:mtd></m:mtr>
+    </m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓑ</span> 
+	<newline />કોઈ પણ વાસ્તવિક સંખ્યા અને 0નું ગુણનફળ 0 છે.</entry>
+    <entry><m:math><m:mtable>
+    	<m:mtr><m:mtd><m:mfrac><m:mn>0</m:mn><m:mrow><m:mn>−2</m:mn></m:mrow></m:mfrac></m:mtd></m:mtr>
+    	<m:mtr><m:mtd><m:mn>0</m:mn></m:mtd></m:mtr>
+    </m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓒ</span> 
+	<newline />શૂન્ય વડે ભાગાકાર અવ્યાખ્યાયિત છે.</entry>
+    <entry><m:math><m:mtable>
+    	<m:mtr><m:mtd><m:mfrac><m:mrow><m:mn>−32</m:mn></m:mrow><m:mn>0</m:mn></m:mfrac></m:mtd></m:mtr>
+    	<m:mtr><m:mtd><m:mtext>અવ્યાખ્યાયિત</m:mtext></m:mtd></m:mtr>
+    </m:mtable></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654077659" class="try">
+<exercise id="fs-id1170654077662">
+<problem id="fs-id1170654077664">
+<para id="fs-id1170654077666">સાદું રૂપ આપો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>−14</m:mn><m:mo>·</m:mo><m:mn>0</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mrow><m:mn>−6</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>−2</m:mn></m:mrow><m:mn>0</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654035978">
+<para id="fs-id1170654035980"><span class="token">ⓐ</span> 0 <span class="token">ⓑ</span> 0 <span class="token">ⓒ</span> અવ્યાખ્યાયિત</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654035987" class="try">
+<exercise id="fs-id1170654035990">
+<problem id="fs-id1170654035992">
+<para id="fs-id1170654035994">સાદું રૂપ આપો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mn>0</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−17</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mrow><m:mn>−10</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>−5</m:mn></m:mrow><m:mn>0</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654036032">
+<para id="fs-id1170654036035"><span class="token">ⓐ</span> 0 <span class="token">ⓑ</span> 0 <span class="token">ⓒ</span> અવ્યાખ્યાયિત</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654036041">હવે તટસ્થ સંખ્યા, વિરોધી અને વ્યસ્ત સંખ્યા તથા શૂન્યના ગુણધર્મો વાપરી પદાવલીઓનું સાદું રૂપ આપવાનો અભ્યાસ કરીશું.</para>
+<example id="fs-id1170654014350"><exercise id="fs-id1170654014352">
+<problem id="fs-id1170654014354">
+<para id="fs-id1170654014356">સાદું રૂપ આપો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જ્યાં <m:math><m:mrow><m:mi>n</m:mi><m:mo>≠</m:mo><m:mtext>−</m:mtext><m:mn>5</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>p</m:mi></m:mrow><m:mn>0</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જ્યાં <m:math><m:mrow><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>p</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654075609">
+<title>ઉકેલ</title>
+<table id="eip-851" summary="શૂન્ય સાથેના ભાગાકારના મૂળભૂત નિયમો: શૂન્યને શૂન્ય સિવાયની સંખ્યા વડે ભાગતાં શૂન્ય મળે છે; શૂન્ય વડે ભાગાકાર અવ્યાખ્યાયિત છે. સાથે ગાણિતિક ઉદાહરણો છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> 
+	<newline />શૂન્યને તેના સિવાયની કોઈ પણ વાસ્તવિક સંખ્યા વડે ભાગતાં 0 મળે છે.</entry>
+    <entry><m:math><m:mtable>
+    	<m:mtr><m:mtd><m:mfrac><m:mn>0</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac></m:mtd></m:mtr>
+    	<m:mtr><m:mtd><m:mn>0</m:mn></m:mtd></m:mtr>
+    </m:mtable></m:math></entry>
+  </row>
+  <row>
+    <entry><span class="token">ⓑ</span> 
+	<newline />શૂન્ય વડે ભાગાકાર અવ્યાખ્યાયિત છે.</entry>
+    <entry><m:math><m:mtable>
+    	<m:mtr><m:mtd><m:mfrac><m:mrow><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>p</m:mi></m:mrow><m:mn>0</m:mn></m:mfrac></m:mtd></m:mtr>
+    	<m:mtr><m:mtd><m:mtext>અવ્યાખ્યાયિત</m:mtext></m:mtd></m:mtr>
+    </m:mtable></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><example id="fs-id1170654036044"><exercise id="fs-id1170654036046">
+<problem id="fs-id1170654036048">
+<para id="fs-id1170654036051">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>−84</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−73</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>84</m:mn><m:mi>n</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654075181">
+<title>ઉકેલ</title>
+<table id="eip-616" summary="−84n + (−73n) + 84nનું સાદું રૂપ આપવા ક્રમવિનિમયના ગુણધર્મથી સજાતીય પદો જોડવાનાં પગલાં છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>−84</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−73</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>84</m:mn><m:mi>n</m:mi></m:math></entry>
+  </row>
+  <row>
+    <entry>પહેલું અને ત્રીજું પદ એકબીજાનાં વિરોધી છે; તેથી વાપરો <newline />સરવાળાનો ક્રમવિનિમયનો ગુણધર્મ વાપરી પદોનો ક્રમ બદલો.</entry>
+    <entry><m:math><m:mn>−84</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>84</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−73</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>ડાબેથી જમણે સરવાળો કરો.</entry>
+    <entry><m:math><m:mn>0</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−73</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>સરવાળો કરો.</entry>
+    <entry><m:math><m:mn>−73</m:mn><m:mi>n</m:mi></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170653800644" class="try">
+<exercise id="fs-id1170653800647">
+<problem id="fs-id1170653800649">
+<para id="fs-id1170653800651">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>−27</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−48</m:mn><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>27</m:mn><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653800683">
+<para id="fs-id1170653800685"><m:math><m:mrow><m:mn>−48</m:mn><m:mi>a</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170653800697" class="try">
+<exercise id="fs-id1170653800700">
+<problem id="fs-id1170653800702">
+<para id="fs-id1170653800704">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>39</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−92</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−39</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654059538">
+<para id="fs-id1170654059540"><m:math><m:mrow><m:mn>−92</m:mn><m:mi>x</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654059552">હવે વ્યસ્ત સંખ્યાઓ ઓળખવાથી કેવી રીતે મદદ મળે છે તે જોઈએ. ડાબેથી જમણે ગુણાકાર કરતાં પહેલાં વ્યસ્ત સંખ્યાઓ શોધો—તેમનું ગુણનફળ 1 છે.</para>
+<example id="fs-id1170654059557"><exercise id="fs-id1170654059559">
+<problem id="fs-id1170654059561">
+<para id="fs-id1170654059563">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>23</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654059595">
+<title>ઉકેલ</title>
+<table id="eip-950" summary="ક્રમવિનિમયના ગુણધર્મથી અવયવોનો ક્રમ બદલી અપૂર્ણાંકોના ગુણાકારનું સાદું રૂપ આપવાનું દર્શાવેલું છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>23</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>પહેલું અને ત્રીજું પદ એકબીજાનાં વ્યસ્ત છે, તેથી વાપરો <newline />ગુણાકારનો ક્રમવિનિમયનો ગુણધર્મ વાપરી અવયવોનો ક્રમ બદલો.</entry>
+    <entry><m:math><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>23</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ડાબેથી જમણે ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>1</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>23</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>23</m:mn></m:mrow></m:mfrac></m:math></entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654069479" class="try">
+<exercise id="fs-id1170654069482">
+<problem id="fs-id1170654069484">
+<para id="fs-id1170654069486">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>49</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654014276">
+<para id="fs-id1170654014278"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>49</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654014292" class="try">
+<exercise id="fs-id1170654014295">
+<problem id="fs-id1170654014298">
+<para id="fs-id1170654014300">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mn>6</m:mn><m:mrow><m:mn>17</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654014333">
+<para id="fs-id1170654014335"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654069194" class="try">
+<exercise id="fs-id1170654069198">
+<problem id="fs-id1170654069200">
+<para id="fs-id1170654069203">સાદું રૂપ આપો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mrow><m:mi>m</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જ્યાં <m:math><m:mrow><m:mi>m</m:mi><m:mo>≠</m:mo><m:mtext>−</m:mtext><m:mn>7</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>18</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>c</m:mi></m:mrow><m:mn>0</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જ્યાં <m:math><m:mrow><m:mn>18</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>c</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654069270">
+<para id="fs-id1170654069272"><span class="token">ⓐ</span> 0 <span class="token">ⓑ</span> અવ્યાખ્યાયિત</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654069279" class="try">
+<exercise id="fs-id1170654069283">
+<problem id="fs-id1170654069285">
+<para id="fs-id1170654069287">સાદું રૂપ આપો: <span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mrow><m:mi>d</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mtext>જ્યાં</m:mtext><m:mspace width="0.2em" /><m:mi>d</m:mi><m:mo>≠</m:mo><m:mn>4</m:mn></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>q</m:mi></m:mrow><m:mn>0</m:mn></m:mfrac><m:mo>,</m:mo><m:mtext>જ્યાં</m:mtext><m:mspace width="0.2em" /><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>q</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654034465">
+<para id="fs-id1170654034468"><span class="token">ⓐ</span> 0 <span class="token">ⓑ</span> અવ્યાખ્યાયિત</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170654034474"><exercise id="fs-id1170654034476">
+<problem id="fs-id1170654034479">
+<para id="fs-id1170654034481">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654034517">
+<title>ઉકેલ</title>
+<table id="eip-386" summary="કોષ્ટક વ્યસ્ત સંખ્યાઓ અને ગુણાકાર માટેની તટસ્થ સંખ્યાનો ઉપયોગ કરીને ગાણિતિક પદાવલીનું સાદું રૂપ આપવાનાં પગલાં દર્શાવે છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row><entry>કૌંસની અંદર કોઈ ગણતરી કરવાની નથી, એટલે પહેલાં ગુણો
+  	<newline />બંને અપૂર્ણાંકને—ધ્યાન આપો કે તે એકબીજાનાં વ્યસ્ત છે.</entry>
+    <entry><m:math><m:mn>1</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર માટેની તટસ્થ સંખ્યા ઓળખીને સાદું રૂપ આપો.</entry>
+    <entry><m:math><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654034647" class="try">
+<exercise id="fs-id1170654073887">
+<problem id="fs-id1170654073889">
+<para id="fs-id1170654073891">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>50</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654073928">
+<para id="fs-id1170654073930"><m:math><m:mrow><m:mn>20</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>50</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654073946" class="try">
+<exercise id="fs-id1170654073950">
+<problem id="fs-id1170654073952">
+<para id="fs-id1170654073954">સાદું રૂપ આપો: <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>8</m:mn><m:mn>3</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>12</m:mn><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654073990">
+<para id="fs-id1170654073993"><m:math><m:mrow><m:mn>12</m:mn><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>16</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170654074010">
+<title>વિભાજનના ગુણધર્મનો ઉપયોગ કરીને પદાવલીઓને સાદું રૂપ આપો</title>
+<para id="fs-id1170654074015">ધારો કે ત્રણ મિત્રો ફિલ્મ જોવા જાય છે. દરેકને પોતાની ટિકિટ માટે $9.25—એટલે 9 ડૉલર અને 1 ક્વૉર્ટર—જોઈએ છે. તેમને કુલ કેટલા પૈસા જોઈએ?</para>
+<para id="fs-id1170654074022">તમે ડૉલર અને ક્વૉર્ટરનો અલગથી વિચાર કરી શકો. તેમને $9ના 3 ગણા, એટલે $27, અને 1 ક્વૉર્ટરના 3 ગણા, એટલે 75 સેન્ટ જોઈએ. કુલ $27.75 જોઈએ. આ રીતે ગણતરી કરવામાં <emphasis effect="bold">વિભાજનનો ગુણધર્મ</emphasis> વપરાય છે.</para>
+<note id="fs-id1170654074032">
+<title>વિભાજનનો ગુણધર્મ</title>
+<equation id="fs-id1170654074038" class="unnumbered"><label /><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtext>જો</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mspace width="0.2em" /><m:mtext>વાસ્તવિક સંખ્યાઓ હોય, તો</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>c</m:mi></m:mtd></m:mtr><m:mtr /><m:mtr /><m:mtr><m:mtd columnalign="right"><m:mtext>ઉપરાંત,</m:mtext></m:mtd><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>a</m:mi></m:mtd></m:mtr><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>a</m:mi><m:mi>c</m:mi></m:mtd></m:mtr><m:mtr><m:mtd /><m:mtd /><m:mtd /><m:mtd columnalign="left"><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mi>a</m:mi></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1170654077873">ફિલ્મ જોવા જતા મિત્રોના ઉદાહરણમાં, તેમને જોઈતી કુલ રકમ આ રીતે શોધી શકાય:</para>
+<equation id="fs-id1170654077878" class="unnumbered"><label /><m:math><m:mtable><m:mtr /><m:mtr /><m:mtr><m:mtd columnalign="left"><m:mspace width="1.3em" /><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>9.25</m:mn><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtable><m:mtr><m:mtd columnalign="right"><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>+</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>0.25</m:mn><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>+</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.25</m:mn><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>27</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>+</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>0.75</m:mn></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr /><m:mtr /><m:mtr><m:mtd columnalign="left"><m:mspace width="1.6em" /><m:mn>27.75</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170654077971">બીજગણિતમાં પદાવલીને સાદું રૂપ આપતી વખતે કૌંસ દૂર કરવા માટે <term id="term-00017">વિભાજનનો ગુણધર્મ</term> વાપરીએ છીએ.</para>
+<para id="fs-id1170654077977">ઉદાહરણ તરીકે, પદાવલી <m:math><m:mrow><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> ને સાદું રૂપ આપવા માટે ક્રિયાઓના ક્રમ મુજબ પહેલાં કૌંસની અંદરની ક્રિયા કરવી જોઈએ. પરંતુ <emphasis effect="italics">x</emphasis> અને 4 સજાતીય પદો નથી, એટલે તેમને ઉમેરી શકાતાં નથી. તેથી વિભાજનનો ગુણધર્મ વાપરીએ છીએ, જેમ <link target-id="fs-id1170654078011" />.</para>
+<example id="fs-id1170654078011"><exercise id="fs-id1170654078013">
+<problem id="fs-id1170654078015">
+<para id="fs-id1170654078018">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654078041">
+<title>ઉકેલ</title>
+<table id="eip-922" summary="આ કોષ્ટકમાં વિભાજનના ગુણધર્મથી બીજગણિતીય પદાવલી 3(x+4)ને પગલુંવાર સાદું રૂપ આપ્યું છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row><entry>વિભાજનનો ગુણધર્મ લાગુ કરો.</entry>
+    <entry><m:math><m:mn>3</m:mn><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>4</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654078124" class="try"><exercise id="fs-id1170654078129">
+<problem id="fs-id1170654078131">
+<para id="fs-id1170654078133">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654078156">
+<para id="fs-id1170654078158"><m:math><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note><note id="fs-id1170654078174" class="try">
+<exercise id="fs-id1170654078179">
+<problem id="fs-id1170654078181">
+<para id="fs-id1170654078183">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654078206">
+<para id="fs-id1170654078208"><m:math><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>42</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654075701">વિભાજનનો ગુણધર્મ કેવી રીતે વાપરવો તે યાદ રાખવા કેટલાક વિદ્યાર્થીઓ તીર દોરે છે. આમ, <link target-id="fs-id1170654078011" /> માંનું પહેલું પગલું આ રીતે દેખાશે:</para>
+<media id="fs-id1170654075709" alt="પદાવલી 3(x+4)માં 3થી નીકળતાં બે તીર છે. એક તીર x તરફ અને બીજું 4 તરફ છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_09_006_img_new.jpg" />
+</media>
+<example id="fs-id1170654075722">
+<exercise id="fs-id1170654075724"><problem id="fs-id1170654075726">
+<para id="fs-id1170654075729">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654075761">
+<title>ઉકેલ</title>
+<table id="eip-id1169750566181" class="unnumbered unstyled" aria-label="કોષ્ટકમાં ડાબે સૂચનાઓ અને જમણે ગણતરીનાં પગલાં છે. પ્રથમ સૂચના છે “વિભાજનનો ગુણધર્મ લાગુ કરો.” તેની જમણે 8((3/8)x+1/4) છે; 8થી નીકળતું એક તીર (3/8)x તરફ અને બીજું 1/4 તરફ છે. આગળની સૂચના “ગુણાકાર કરો.” તેની જમણે =8((3/8)x)+8(1/4) છે. ત્યાર પછી =3x+2 છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1169750566196" alt="પદાવલી 8((3/8)x+1/4)માં વાદળી તીર દર્શાવે છે કે વિભાજનના ગુણધર્મ મુજબ 8નો કૌંસની અંદરના દરેક પદ સાથે ગુણાકાર થાય છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_007a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>વિભાજનનો ગુણધર્મ લાગુ કરો.</entry>
+    <entry><media id="eip-id1169750566213" alt="પદાવલી 8((3/8)x)+8(1/4) વિભાજનનો ગુણધર્મ લાગુ કર્યા પછીનું રૂપ દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_007b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><media id="eip-id1169750566230" alt="સફેદ પૃષ્ઠભૂમિ પર ઘેરા રાખોડી રંગમાં પદાવલી 3x+2 છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_007c_img_new.jpg" /></media></entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id1170654075783" class="try">
+<exercise id="fs-id1170654075787">
+<problem id="fs-id1170654075789">
+<para id="fs-id1170654075791">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mi>y</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654075823">
+<para id="fs-id1170654075825"><m:math><m:mrow><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654075841" class="try">
+<exercise id="fs-id1170654075846">
+<problem id="fs-id1170654075848">
+<para id="fs-id1170654075850">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654075882">
+<para id="fs-id1170654075884"><m:math><m:mrow><m:mn>4</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654075900">વિભાજનના ગુણધર્મનો <link target-id="fs-id1170654075908" /> માં બતાવેલો ઉપયોગ આગળના પ્રકરણોમાં પૈસા સંબંધિત પ્રશ્નો ઉકેલવામાં ખૂબ ઉપયોગી થશે.</para>
+<example id="fs-id1170654075908">
+<exercise id="fs-id1170654075910"><problem id="fs-id1170654075912">
+<para id="fs-id1170654075915">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>100</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.3</m:mn><m:mo>+</m:mo><m:mn>0.25</m:mn><m:mi>q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654075940">
+<title>ઉકેલ</title>
+<table id="eip-id1169751856555" class="unnumbered unstyled" aria-label="કોષ્ટકમાં ડાબે સૂચનાઓ અને જમણે ગણતરીનાં પગલાં છે. પ્રથમ સૂચના “વિભાજનનો ગુણધર્મ લાગુ કરો.” તેની જમણે 100(0.3+0.25q) છે; 100થી નીકળતું એક તીર 0.3 તરફ અને બીજું 0.25q તરફ છે. આગળની સૂચના “ગુણાકાર કરો.” તેની જમણે =100(0.3)+100(0.25q) છે. ત્યાર પછી =30+25q છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1169751856571" alt="પદાવલી 100(0.3+0.25q)માં વળાંકવાળાં તીર વિભાજનનો ગુણધર્મ દર્શાવે છે: 100નો કૌંસની અંદરના બંને પદો સાથે ગુણાકાર થાય છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_008a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>વિભાજનનો ગુણધર્મ લાગુ કરો.</entry>
+    <entry><media id="eip-id1169751856588" alt="પદાવલી 100(0.3)+100(0.25q)માં બે પદોનો સરવાળો છે. પહેલા પદમાં 100નો 0.3 સાથે અને બીજા પદમાં 100નો 0.25q સાથે ગુણાકાર છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_008b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><media id="eip-id1169751856604" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા રંગમાં પદાવલી 30+25q છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_008c_img_new.jpg" /></media></entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id1170654075963" class="try">
+<exercise id="fs-id1170654075967">
+<problem id="fs-id1170654075969">
+<para id="fs-id1170654075971">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>100</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.7</m:mn><m:mo>+</m:mo><m:mn>0.15</m:mn><m:mi>p</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654075999">
+<para id="fs-id1170654076001"><m:math><m:mrow><m:mn>70</m:mn><m:mo>+</m:mo><m:mn>15</m:mn><m:mi>p</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654076017" class="try">
+<exercise id="fs-id1170654076021">
+<problem id="fs-id1170654076023">
+<para id="fs-id1170654076025">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>100</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.04</m:mn><m:mo>+</m:mo><m:mn>0.35</m:mn><m:mi>d</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654076051">
+<para id="fs-id1170654076053"><m:math><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>35</m:mn><m:mi>d</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654076069">ઋણ સંખ્યા સાથે વિભાજનનો ગુણધર્મ લાગુ કરતી વખતે ચિહ્નો સાચાં રાખવા ખાસ કાળજી લેવી જોઈએ!</para>
+<example id="fs-id1170654076073">
+<exercise id="fs-id1170654076075"><problem id="fs-id1170654076078">
+<para id="fs-id1170654076080">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>−2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654076105">
+<title>ઉકેલ</title>
+<table id="eip-id1169750823178" class="unnumbered unstyled" aria-label="કોષ્ટકમાં ડાબે સૂચનાઓ અને જમણે ગણતરીનાં પગલાં છે. પ્રથમ સૂચના “વિભાજનનો ગુણધર્મ લાગુ કરો.” તેની જમણે −2(4y+1) છે; −2થી નીકળતું એક તીર 4y તરફ અને બીજું 1 તરફ છે. આગળની પંક્તિમાં (−2)(4y)+(−2)(1) છે. પછી “સાદું રૂપ આપો.” સૂચનાની જમણે −8y−2 છે.">
+<label /><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry />
+    <entry><media id="eip-id1169750823194" alt="પદાવલી −2(4y+1)માં વાદળી વળાંકવાળાં તીર −2નો કૌંસની અંદરના પદો સાથે ગુણાકાર કરીને વિભાજનનો ગુણધર્મ લાગુ કરવાનું દર્શાવે છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_009a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>વિભાજનનો ગુણધર્મ લાગુ કરો.</entry>
+    <entry><media id="eip-id1169750823211" alt="પદાવલી (−2)(4y)+(−2)(1) છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_009b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><media id="eip-id1169750823228" alt="સફેદ પૃષ્ઠભૂમિ પર કાળા રંગમાં પદાવલી −8y−2 છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_009c_img_new.jpg" /></media></entry>
+  </row>
+ </tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<note id="fs-id1170654067329" class="try">
+<exercise id="fs-id1170654067333">
+<problem id="fs-id1170654067335">
+<para id="fs-id1170654067337">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>−3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>m</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654067363">
+<para id="fs-id1170654067365"><m:math><m:mrow><m:mn>−18</m:mn><m:mi>m</m:mi><m:mo>−</m:mo><m:mn>15</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654067381" class="try">
+<exercise id="fs-id1170654067385">
+<problem id="fs-id1170654067387">
+<para id="fs-id1170654067389">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>−6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654067415">
+<para id="fs-id1170654067417"><m:math><m:mrow><m:mn>−48</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>66</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170654067433">
+<exercise id="fs-id1170654067435">
+<problem id="fs-id1170654067437">
+<para id="fs-id1170654067440">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>−11</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654067465">
+<title>ઉકેલ</title>
+<para id="fs-id1170653850273"><table id="eip-id1169751973914" class="unnumbered unstyled" aria-label="કોષ્ટકમાં ડાબે સૂચનાઓ અને જમણે ગણતરીનાં પગલાં છે. પ્રથમ સૂચના “વિભાજનનો ગુણધર્મ લાગુ કરો.” તેની જમણે −11(4−3a) છે; −11થી નીકળતું એક તીર 4 તરફ અને બીજું 3a તરફ છે. આગળ “ગુણાકાર કરો.” સૂચનાની જમણે (−11)(4)−(−11)(3a), પછી −44−(−33a) છે. છેલ્લે “સાદું રૂપ આપો.” સૂચનાની જમણે −44+33a છે."><label />
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>વિભાજનનો ગુણધર્મ લાગુ કરો.</entry>
+    <entry><media id="eip-id1169751973931" alt="પદાવલી −11(4−3a)માં વાદળી તીર વિભાજનનો ગુણધર્મ દર્શાવે છે: −11નો કૌંસની અંદરનાં બંને પદો સાથે સંબંધિત ગુણાકાર થાય છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_010a_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><media id="eip-id1169754247252" alt="પદાવલીને સાદું રૂપ આપતાં પગલાં: (−11)(4)−(−11)(3a), પછી −44−(−33a)."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_010b_img_new.jpg" /></media></entry>
+  </row>
+  <row>
+    <entry>સાદું રૂપ આપો.</entry>
+    <entry><media id="eip-id1169754247268" alt="સફેદ પૃષ્ઠભૂમિ પર ઘેરા રાખોડી રંગમાં પદાવલી −44+33a છે."><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_09_010c_img_new.jpg" /></media></entry>
+  </row>
+ </tbody>
+
+
+</tgroup>
+</table></para><para id="fs-id1170654067485">ધ્યાન આપો કે પરિણામ <m:math><m:mrow><m:mn>33</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>44</m:mn><m:mo>.</m:mo></m:mrow></m:math> પણ લખી શકાય છે. શા માટે?</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170654067506" class="try">
+<exercise id="fs-id1170654067510">
+<problem id="fs-id1170654067512">
+<para id="fs-id1170654067514">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>−5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654067540">
+<para id="fs-id1170654067542"><m:math><m:mrow><m:mn>−10</m:mn><m:mo>+</m:mo><m:mn>15</m:mn><m:mi>a</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654067558" class="try">
+<exercise id="fs-id1170654067562">
+<problem id="fs-id1170654067564">
+<para id="fs-id1170654067566">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>−7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>15</m:mn><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654067592">
+<para id="fs-id1170654067594"><m:math><m:mrow><m:mn>−56</m:mn><m:mo>+</m:mo><m:mn>105</m:mn><m:mi>y</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654067610"><link target-id="fs-id1170654067617" /> માં વિભાજનના ગુણધર્મથી પદાવલીની વિરોધી પદાવલી કેવી રીતે શોધવી તે બતાવ્યું છે.</para>
+<example id="fs-id1170654067617"><exercise id="fs-id1170654067619">
+<problem id="fs-id1170654067621">
+<para id="fs-id1170654067623">સાદું રૂપ આપો: <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654067647">
+<title>ઉકેલ</title>
+<table id="eip-636" summary="(y+5)નો −1 સાથે ગુણાકાર કરતાં વિભાજનનો ગુણધર્મ લાગુ કરીને સાદું રૂપ આપવાનાં પગલાં.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row><entry>−1 સાથે ગુણાકાર કરતાં વિરોધી પદાવલી મળે છે.</entry>
+    <entry><m:math><m:mn>−1</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry>વિભાજનનો ગુણધર્મ લાગુ કરો.</entry>
+    <entry><m:math><m:mn>−1</m:mn><m:mo>·</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>·</m:mo><m:mn>5</m:mn></m:math></entry>
+  </row>
+    <row>
+    <entry>સાદું રૂપ આપો.</entry>
+    <entry><m:math><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+  	<entry />
+  	<entry><m:math><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654067798" class="try">
+<exercise id="fs-id1170654067802">
+<problem id="fs-id1170654067804">
+<para id="fs-id1170654067806">સાદું રૂપ આપો: <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654067830">
+<para id="fs-id1170654067832"><m:math><m:mrow><m:mtext>−</m:mtext><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>11</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654067848" class="try">
+<exercise id="fs-id1170654067852">
+<problem id="fs-id1170654067854">
+<para id="fs-id1170654067856">સાદું રૂપ આપો: <m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654067880">
+<para id="fs-id1170654067882"><m:math><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654067898">કેટલીક વખત ક્રિયાઓના ક્રમના ભાગરૂપે <term class="no-emphasis" id="term-00018">વિભાજનનો ગુણધર્મ</term> વાપરવો પડશે. પહેલાં કૌંસની અંદર જુઓ. જો તેની અંદરની પદાવલીને વધુ સાદું રૂપ ન આપી શકાય, તો આગળ વિભાજનના ગુણધર્મથી ગુણાકાર કરીને કૌંસ દૂર કરો. આગળનાં બે ઉદાહરણો આ સમજાવશે.</para>
+<example id="fs-id1170654067908"><exercise id="fs-id1170654067910">
+<problem id="fs-id1170654067912">
+<para id="fs-id1170654067914">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170654067941">ક્રિયાઓનો ક્રમ ચોક્કસ અનુસરો. ગુણાકાર બાદબાકી પહેલાં આવે છે, એટલે પહેલાં 2 માટે વિભાજનનો ગુણધર્મ લાગુ કરીશું અને પછી બાદબાકી કરીશું.</para>
+</problem>
+<solution id="fs-id1170654067946">
+<title>ઉકેલ</title>
+<table id="eip-501" summary="બીજગણિતીય પદાવલી 8−2(x+3)ને પગલુંવાર સાદું રૂપ આપ્યું છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row><entry>વિભાજનનો ગુણધર્મ લાગુ કરો.</entry>
+    <entry><m:math><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>ગુણાકાર કરો.</entry>
+    <entry><m:math><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:math></entry>
+  </row>
+    <row>
+    <entry>સજાતીય પદોને ભેગાં કરો.</entry>
+    <entry><m:math><m:mn>−2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654068313" class="try">
+<exercise id="fs-id1170654068317">
+<problem id="fs-id1170654068319">
+<para id="fs-id1170654068322">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654068349">
+<para id="fs-id1170654068351"><m:math><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654068367" class="try">
+<exercise id="fs-id1170654068372">
+<problem id="fs-id1170654068374">
+<para id="fs-id1170654068376">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654068406">
+<para id="fs-id1170654068408"><m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>20</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<example id="fs-id1170654068424"><exercise id="fs-id1170654068426">
+<problem id="fs-id1170654068428">
+<para id="fs-id1170654068430">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654068469">
+<title>ઉકેલ</title>
+<table id="eip-496" summary="વિભાજનના ગુણધર્મ અને સજાતીય પદોને ભેગાં કરવાની મદદથી બીજગણિતીય પદાવલીને પગલુંવાર સાદું રૂપ આપ્યું છે.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry />
+    <entry><m:math><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row><entry>વિભાજનનો ગુણધર્મ લાગુ કરો.</entry>
+    <entry><m:math><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>32</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:math></entry>
+  </row>
+  <row>
+    <entry>સજાતીય પદોને ભેગાં કરો.</entry>
+    <entry><m:math><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>35</m:mn></m:math></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+</solution>
+</exercise>
+</example><note id="fs-id1170654068573" class="try">
+<exercise id="fs-id1170654068578">
+<problem id="fs-id1170654068580">
+<para id="fs-id1170654068582">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654068620">
+<para id="fs-id1170654068622"><m:math><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>66</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654068638" class="try">
+<exercise id="fs-id1170654068642">
+<problem id="fs-id1170654068645">
+<para id="fs-id1170654068647">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654068685">
+<para id="fs-id1170654068687"><m:math><m:mrow><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654068703">આ પ્રકરણમાં વાપરેલા વાસ્તવિક સંખ્યાઓના બધા ગુણધર્મોનો સાર <link target-id="fs-id1170654068740" />માં આપ્યો છે.</para>
+<table id="fs-id1170654068740" aria-label="વાસ્તવિક સંખ્યાઓના ગુણધર્મોનું બે કૉલમવાળું કોષ્ટક છે. ક્રમવિનિમયનો ગુણધર્મ: વાસ્તવિક a, b માટે સરવાળામાં a+b=b+a અને ગુણાકારમાં ab=ba. જૂથબંધીનો ગુણધર્મ: સરવાળામાં (a+b)+c=a+(b+c) અને ગુણાકારમાં (ab)c=a(bc). વિભાજનનો ગુણધર્મ: વાસ્તવિક a, b, c માટે a(b+c)=ab+ac. તટસ્થ સંખ્યાના ગુણધર્મો: કોઈ પણ વાસ્તવિક a માટે a+0=a, 0+a=a; 0 સરવાળા માટેની તટસ્થ સંખ્યા છે. a·1=a, 1·a=a; 1 ગુણાકાર માટેની તટસ્થ સંખ્યા છે. વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો: aની સરવાળા માટેની વિરોધી સંખ્યા −a છે અને a+(−a)=0. a≠0 માટે aની ગુણાકાર માટેની વ્યસ્ત સંખ્યા 1/a છે અને a·(1/a)=1. શૂન્યના ગુણધર્મો: કોઈ પણ વાસ્તવિક a માટે a·0=0 અને 0·a=0; a≠0 માટે 0/a=0; અને દરેક વાસ્તવિક a માટે a/0 અવ્યાખ્યાયિત છે." summary="વાસ્તવિક સંખ્યાઓના ગુણધર્મોનું બે કૉલમવાળું કોષ્ટક છે. ક્રમવિનિમયનો ગુણધર્મ: વાસ્તવિક a, b માટે સરવાળામાં a+b=b+a અને ગુણાકારમાં ab=ba. જૂથબંધીનો ગુણધર્મ: સરવાળામાં (a+b)+c=a+(b+c) અને ગુણાકારમાં (ab)c=a(bc). વિભાજનનો ગુણધર્મ: વાસ્તવિક a, b, c માટે a(b+c)=ab+ac. તટસ્થ સંખ્યાના ગુણધર્મો: કોઈ પણ વાસ્તવિક a માટે a+0=a, 0+a=a; 0 સરવાળા માટેની તટસ્થ સંખ્યા છે. a·1=a, 1·a=a; 1 ગુણાકાર માટેની તટસ્થ સંખ્યા છે. વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો: aની સરવાળા માટેની વિરોધી સંખ્યા −a છે અને a+(−a)=0. a≠0 માટે aની ગુણાકાર માટેની વ્યસ્ત સંખ્યા 1/a છે અને a·(1/a)=1. શૂન્યના ગુણધર્મો: કોઈ પણ વાસ્તવિક a માટે a·0=0 અને 0·a=0; a≠0 માટે 0/a=0; અને દરેક વાસ્તવિક a માટે a/0 અવ્યાખ્યાયિત છે.">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" />
+<colspec colnum="2" colname="c2" />
+<tbody>
+<row valign="top">
+<entry valign="top" align="left"><emphasis effect="bold">ક્રમવિનિમયનો ગુણધર્મ</emphasis></entry>
+<entry />
+</row>
+<row valign="top">
+<entry valign="top" align="left">  <emphasis effect="bold">સરવાળા માટે</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો<newline /><newline />  <emphasis effect="bold">ગુણાકાર માટે</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો</entry>
+<entry align="center" valign="top"><m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>a</m:mi></m:mrow></m:math><newline /><newline /><m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>a</m:mi></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><emphasis effect="bold">જૂથબંધીનો ગુણધર્મ</emphasis></entry>
+<entry />
+</row>
+<row valign="top">
+<entry valign="top" align="left">  <emphasis effect="bold">સરવાળા માટે</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો<newline /><newline />  <emphasis effect="bold">ગુણાકાર માટે</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો</entry>
+<entry align="center" valign="top"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math><newline /><newline /><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>·</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><emphasis effect="bold">વિભાજનનો ગુણધર્મ</emphasis></entry>
+<entry />
+</row>
+<row valign="top">
+<entry valign="top" align="left">  જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો</entry>
+<entry align="center" valign="top"><m:math><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><emphasis effect="bold">તટસ્થ સંખ્યાનો ગુણધર્મ</emphasis></entry>
+<entry />
+</row>
+<row valign="top">
+<entry valign="top" align="left">  <emphasis effect="bold">સરવાળા માટે</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mtext>:</m:mtext></m:mrow></m:math><newline />
+   0 એ <emphasis effect="bold">સરવાળા માટેની તટસ્થ સંખ્યા</emphasis><newline /><newline />  <emphasis effect="bold">ગુણાકાર માટે</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mtext>:</m:mtext></m:mrow></m:math><newline />
+   <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mn>1</m:mn></m:mstyle></m:math> એ છે <emphasis effect="bold">ગુણાકાર માટેની તટસ્થ સંખ્યા</emphasis></entry>
+<entry align="center" valign="top"><m:math><m:mrow><m:mtable><m:mtr /><m:mtr><m:mtd columnalign="center"><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>0</m:mn><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd></m:mtr></m:mtable></m:mrow></m:math><newline /><newline /><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="center"><m:mi>a</m:mi><m:mo>·</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>1</m:mn><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mtd></m:mtr></m:mtable></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><emphasis effect="bold">વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો</emphasis></entry>
+<entry />
+</row>
+<row valign="top">
+<entry valign="top" align="left">  <emphasis effect="bold">સરવાળા માટે</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math><newline />
+   <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow></m:math> એ છે <emphasis effect="bold">સરવાળા માટેની વિરોધી સંખ્યા</emphasis> છે આ સંખ્યાની: <m:math><m:mi>a</m:mi></m:math><newline /><newline />  <emphasis effect="bold">ગુણાકાર માટે</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math><newline />
+   <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac></m:mrow></m:math> એ છે <emphasis effect="bold">ગુણાકાર માટેની વ્યસ્ત સંખ્યા</emphasis> છે આ સંખ્યાની: <m:math><m:mrow><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry align="center" valign="top"><m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math><newline /><newline /><newline /><m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><emphasis effect="bold">શૂન્યના ગુણધર્મો</emphasis></entry>
+<entry />
+</row>
+<row valign="top">
+<entry valign="top" align="left">  કોઈ પણ વાસ્તવિક સંખ્યા <emphasis effect="italics">a</emphasis>,<newline /><newline /><newline /><newline />  કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math><newline /><newline />  કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math></entry>
+<entry align="center" valign="top"><m:math><m:mrow><m:mtable><m:mtr /><m:mtr><m:mtd columnalign="center"><m:mi>a</m:mi><m:mo>·</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>0</m:mn><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:mrow></m:math><newline /><newline /><m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math><newline /><newline /><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mn>0</m:mn></m:mfrac></m:mrow></m:math> અવ્યાખ્યાયિત છે</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1170654053685" class="key-concepts">
+<title>મુખ્ય મુદ્દા</title>
+<list id="fs-id1170654053692" list-type="bulleted" bullet-style="bullet">
+<item><emphasis effect="bold">ક્રમવિનિમયનો ગુણધર્મ:</emphasis>
+<list id="fs-id1170654053705" list-type="bulleted" bullet-style="open-circle">
+<item><emphasis effect="bold">સરવાળો:</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો <m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><emphasis effect="bold">ગુણાકાર:</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો <m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math> સરવાળો કે ગુણાકાર કરતી વખતે બદલીએ <emphasis effect="italics">ક્રમ</emphasis> તો પણ પરિણામ સરખું મળે છે.</item>
+</list></item>
+<item><emphasis effect="bold">જૂથબંધીનો ગુણધર્મ:</emphasis>
+<list id="fs-id1170654053796" list-type="bulleted" bullet-style="open-circle">
+<item><emphasis effect="bold">સરવાળો:</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><emphasis effect="bold">ગુણાકાર:</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>·</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>·</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math><newline />
+સરવાળો કે ગુણાકાર કરતી વખતે બદલીએ <emphasis effect="italics">જૂથબંધી</emphasis> તો પણ પરિણામ સરખું મળે છે.</item>
+</list></item>
+<item><emphasis effect="bold">વિભાજનનો ગુણધર્મ:</emphasis> જો <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow></m:math> વાસ્તવિક સંખ્યાઓ હોય, તો
+<list id="fs-id1170654071317" list-type="bulleted" bullet-style="open-circle">
+<item><m:math><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>a</m:mi></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>c</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>c</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mi>a</m:mi></m:mrow></m:math></item>
+</list></item>
+<item><emphasis effect="bold">તટસ્થ સંખ્યાનો ગુણધર્મ</emphasis>
+<list id="fs-id1170654071460" list-type="bulleted" bullet-style="open-circle">
+<item><emphasis effect="bold">સરવાળા માટે:</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mtext>:</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:mspace width="0.6em" /><m:mn>0</m:mn><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math><newline />
+<emphasis effect="bold">0</emphasis> એ છે <emphasis effect="bold">સરવાળા માટેની તટસ્થ સંખ્યા</emphasis></item>
+<item><emphasis effect="bold">ગુણાકાર માટે:</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mtext>:</m:mtext><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>·</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:mspace width="0.6em" /><m:mn>1</m:mn><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math><newline />
+<m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mn>1</m:mn></m:mstyle></m:math> એ છે <emphasis effect="bold">ગુણાકાર માટેની તટસ્થ સંખ્યા</emphasis></item>
+</list></item>
+<item><emphasis effect="bold">વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો</emphasis>
+<list id="fs-id1170654071587" list-type="bulleted" bullet-style="open-circle">
+<item><emphasis effect="bold">સરવાળા માટે:</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> સંખ્યા અને તેની <emphasis effect="italics">વિરોધી સંખ્યા</emphasis> નો સરવાળો શૂન્ય થાય છે. <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow></m:math> એ છે <emphasis effect="bold">સરવાળા માટેની વિરોધી સંખ્યા</emphasis> છે આ સંખ્યાની: <m:math><m:mi>a</m:mi><m:mo>.</m:mo></m:math></item>
+<item><emphasis effect="bold">ગુણાકાર માટે:</emphasis> કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mspace width="0.2em" /><m:mi>a</m:mi><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> સંખ્યા અને તેની <emphasis effect="italics">વ્યસ્ત સંખ્યા</emphasis> નો ગુણાકાર એક થાય છે. <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac></m:mrow></m:math> એ છે <emphasis effect="bold">ગુણાકાર માટેની વ્યસ્ત સંખ્યા</emphasis> છે આ સંખ્યાની: <m:math><m:mrow><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>
+</list></item>
+<item><emphasis effect="bold">શૂન્યના ગુણધર્મો</emphasis>
+<list id="fs-id1170654071732" list-type="bulleted" bullet-style="open-circle">
+<item>કોઈ પણ વાસ્તવિક સંખ્યા <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math><newline />
+<m:math><m:mrow><m:mi>a</m:mi><m:mo>·</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.5em" /><m:mn>0</m:mn><m:mo>·</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> – કોઈ પણ વાસ્તવિક સંખ્યા અને 0નું ગુણનફળ 0 છે.</item>
+<item><m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mi>a</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> માટે <m:math><m:mrow><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math> – શૂન્યને શૂન્ય સિવાયની કોઈ પણ વાસ્તવિક સંખ્યા વડે ભાગતાં શૂન્ય મળે છે.</item>
+<item><m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mn>0</m:mn></m:mfrac></m:mrow></m:math> અવ્યાખ્યાયિત છે – શૂન્ય વડે ભાગાકાર અવ્યાખ્યાયિત છે.</item>
+</list></item>
+</list>
+</section>
+<section id="fs-id1170654071822" class="section-exercises">
+<section id="fs-id1170654071826" class="practice-perfect"><title>અભ્યાસથી નિપુણતા</title><para id="fs-id1170654071832"><emphasis effect="bold">ક્રમવિનિમય અને જૂથબંધીના ગુણધર્મો વાપરો</emphasis></para>
+<para id="fs-id1166423746090">નીચેની કસરતોમાં જૂથબંધીનો ગુણધર્મ વાપરીને સાદું રૂપ આપો.</para>
+<exercise id="fs-id1170654071839">
+<problem id="fs-id1170654071842">
+<para id="fs-id1170654071844">3(4<emphasis effect="italics">x</emphasis>)</para>
+</problem>
+<solution id="fs-id1170654071853">
+<para id="fs-id1170654071855">12<emphasis effect="italics">x</emphasis></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654071865">
+<problem id="fs-id1170654071867">
+<para id="fs-id1170654071869">4(7<emphasis effect="italics">m</emphasis>)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654071890">
+<problem id="fs-id1170654071892">
+<para id="fs-id1170654071894"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>28</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654071917">
+<para id="fs-id1170654071919"><m:math><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>40</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654071932">
+<problem id="fs-id1170654071934">
+<para id="fs-id1170654071936"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>17</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>33</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654071973">નીચેની કસરતોમાં સાદું રૂપ આપો.</para>
+<exercise id="fs-id1170654071977">
+<problem id="fs-id1170654071979">
+<para id="fs-id1170654071981"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653896673">
+<para id="fs-id1170653896675"><m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653896687">
+<problem id="fs-id1170653896689">
+<para id="fs-id1170653896691"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653896741">
+<problem id="fs-id1170653896743">
+<para id="fs-id1170653896745"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>49</m:mn></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>20</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653896775">
+<para id="fs-id1170653896777"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>49</m:mn></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653896791">
+<problem id="fs-id1170653896793">
+<para id="fs-id1170653896796"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>25</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mn>18</m:mn></m:mrow><m:mrow><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653896841">
+<problem id="fs-id1170653896844">
+<para id="fs-id1170653896846"><m:math><m:mrow><m:mn>−24</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mo>⋅</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653896859">
+<para id="fs-id1170653896861"><m:math><m:mrow><m:mn>−63</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653896870">
+<problem id="fs-id1170653896872">
+<para id="fs-id1170653896874"><m:math><m:mrow><m:mn>−36</m:mn><m:mo>·</m:mo><m:mn>11</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653896902">
+<problem id="fs-id1170653896904">
+<para id="fs-id1170653896906"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653896941">
+<para id="fs-id1170653896943"><m:math><m:mrow><m:mn>1</m:mn><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653896957">
+<problem id="fs-id1170653896959">
+<para id="fs-id1170653896961"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653897013">
+<problem id="fs-id1170653897015">
+<para id="fs-id1170653897017">17(0.25)(4)</para>
+</problem>
+<solution id="fs-id1170653897022">
+<para id="fs-id1170653897024">17</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653897029">
+<problem id="fs-id1170653897031">
+<para id="fs-id1170653897033">36(0.2)(5)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653897045">
+<problem id="fs-id1170653897047">
+<para id="fs-id1170653897049">[2.48(12)](0.5)</para>
+</problem>
+<solution id="fs-id1170653897054">
+<para id="fs-id1170653897056">14.88</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653897061">
+<problem id="fs-id1170653897063">
+<para id="fs-id1170653897065">[9.731(4)](0.75)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653897077">
+<problem id="fs-id1170653897080">
+<para id="fs-id1170653897082">7(4<emphasis effect="italics">a</emphasis>)</para>
+</problem>
+<solution id="fs-id1170653897091">
+<para id="fs-id1170653897093">28<emphasis effect="italics">a</emphasis></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653897103">
+<problem id="fs-id1170653897105">
+<para id="fs-id1170653897107">9(8<emphasis effect="italics">w</emphasis>)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653897128">
+<problem id="fs-id1170653897130">
+<para id="fs-id1170653897132"><m:math><m:mrow><m:mn>−15</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mi>m</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653897151">
+<para id="fs-id1170653897153"><m:math><m:mrow><m:mn>−75</m:mn><m:mi>m</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653897164">
+<problem id="fs-id1170653897166">
+<para id="fs-id1170653897168"><m:math><m:mrow><m:mn>−23</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653897200">
+<problem id="fs-id1170653897202">
+<para id="fs-id1170653897204"><m:math><m:mrow><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mi>p</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653897225">
+<para id="fs-id1170653897227">10<emphasis effect="italics">p</emphasis></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653897237">
+<problem id="fs-id1170653897239">
+<para id="fs-id1170653897241"><m:math><m:mrow><m:mn>20</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac><m:mi>q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653897274">
+<problem id="fs-id1170653897276">
+<para id="fs-id1170653897278"><m:math><m:mrow><m:mn>43</m:mn><m:mi>m</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−12</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−16</m:mn><m:mi>m</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−9</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653897327">
+<para id="fs-id1170653897329"><m:math><m:mrow><m:mn>27</m:mn><m:mi>m</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−21</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653897353">
+<problem id="fs-id1170653897355">
+<para id="fs-id1170653897357"><m:math><m:mrow><m:mn>−22</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>17</m:mn><m:mi>q</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−35</m:mn><m:mi>p</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−27</m:mn><m:mi>q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653897426">
+<problem id="fs-id1170653897428">
+<para id="fs-id1170653897430"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mi>g</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mi>h</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>8</m:mn></m:mfrac><m:mi>g</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mi>h</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653990329">
+<para id="fs-id1170653990331"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>g</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>h</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653990355">
+<problem id="fs-id1170653990357">
+<para id="fs-id1170653990359"><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mi>a</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mi>b</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mi>a</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mi>b</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653990423" class="material-set-2">
+<problem id="fs-id1170653990425">
+<para id="fs-id1170653990427"><m:math><m:mrow><m:mn>6.8</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>9.14</m:mn><m:mi>q</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4.37</m:mn><m:mi>p</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−0.88</m:mn><m:mi>q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653990471">
+<para id="fs-id1170653990474"><m:math><m:mrow><m:mn>2.43</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>8.26</m:mn><m:mi>q</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653990491" class="material-set-2">
+<problem id="fs-id1170653990493">
+<para id="fs-id1170653990495"><m:math><m:mrow><m:mn>9.6</m:mn><m:mi>m</m:mi><m:mo>+</m:mo><m:mn>7.22</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2.19</m:mn><m:mi>m</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−0.65</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170653990556"><emphasis effect="bold">સરવાળા અને ગુણાકાર માટે તટસ્થ સંખ્યા તથા વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો વાપરો</emphasis></para>
+<para id="fs-id1166414478758">નીચેની કસરતોમાં દરેક સંખ્યાની સરવાળા માટેની વિરોધી સંખ્યા શોધો.</para>
+<exercise id="fs-id1170653990564">
+<problem id="fs-id1170653990566">
+<para id="fs-id1170653990568"> <span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> 4.3<newline /><span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−8</m:mn></m:mrow></m:math><newline /><span class="token">ⓓ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653990597">
+<para id="fs-id1170653990599"><span class="token">ⓐ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−4.3</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> 8 <span class="token">ⓓ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653990630">
+<problem id="fs-id1170653990632">
+<para id="fs-id1170653990634"><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math><newline /><span class="token">ⓑ</span> 2.1 <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−3</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>9</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653990694">
+<problem id="fs-id1170653990696">
+<para id="fs-id1170653990698"><span class="token">ⓐ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>7</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−0.075</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> 23 <span class="token">ⓓ</span> <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653990727">
+<para id="fs-id1170653990729"><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>7</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> 0.075 <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−23</m:mn></m:mrow></m:math> <span class="token">ⓓ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653990758">
+<problem id="fs-id1170653990761">
+<para id="fs-id1170653990763"> <span class="token">ⓐ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>8</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−0.019</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> 52 <span class="token">ⓓ</span> <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170653990823">નીચેની કસરતોમાં દરેક સંખ્યાની ગુણાકાર માટેની વ્યસ્ત સંખ્યા શોધો.</para>
+<exercise id="fs-id1170653990826">
+<problem id="fs-id1170653990828">
+<para id="fs-id1170653990830"><span class="token">ⓐ</span> 6 <span class="token">ⓑ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> 0.7</para>
+</problem>
+<solution id="fs-id1170653990846">
+<para id="fs-id1170653990848"><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>7</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653990881">
+<problem id="fs-id1170653990883">
+<para id="fs-id1170653990885"><span class="token">ⓐ</span> 12 <span class="token">ⓑ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>9</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> 0.13</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653990938">
+<problem id="fs-id1170653990940">
+<para id="fs-id1170653990942"><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−1.1</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653990967">
+<para id="fs-id1170653990969"><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>12</m:mn></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653991008">
+<problem id="fs-id1170653991010">
+<para id="fs-id1170653991012"><span class="token">ⓐ</span> <m:math><m:mrow><m:mfrac><m:mrow><m:mn>17</m:mn></m:mrow><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow></m:math> <span class="token">ⓑ</span> <m:math><m:mrow><m:mn>−1.5</m:mn></m:mrow></m:math> <span class="token">ⓒ</span> <m:math><m:mrow><m:mn>−3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170653991076"><emphasis effect="bold">શૂન્યના ગુણધર્મો વાપરો</emphasis></para>
+<para id="fs-id1166425983092">નીચેની કસરતોમાં સાદું રૂપ આપો.</para>
+<exercise id="fs-id1170653991084">
+<problem id="fs-id1170653991086">
+<para id="fs-id1170653991088"><m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170653991099">
+<para id="fs-id1170653991101">0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170653991106">
+<problem id="fs-id1170653991108">
+<para id="fs-id1170653991110"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>0</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170653991128">
+<problem id="fs-id1170653991131">
+<para id="fs-id1170653991133"><m:math><m:mrow><m:mn>0</m:mn><m:mo>÷</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654031822">
+<para id="fs-id1170654031824">0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654031829">
+<problem id="fs-id1170654031831">
+<para id="fs-id1170654031833"><m:math><m:mrow><m:mfrac><m:mn>6</m:mn><m:mn>0</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654031851">
+<problem id="fs-id1170654031854">
+<para id="fs-id1170654031856"><m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654031866">
+<para id="fs-id1170654031868">0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654031874">
+<problem id="fs-id1170654031876">
+<para id="fs-id1170654031878"><m:math><m:mrow><m:mn>0</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654031899">
+<problem id="fs-id1170654031902">
+<para id="fs-id1170654031904"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3.14</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654031925">
+<para id="fs-id1170654031927">0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654031933">
+<problem id="fs-id1170654031935">
+<para id="fs-id1170654031937"><m:math><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow><m:mn>0</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654031960"><emphasis effect="bold">મિશ્ર અભ્યાસ</emphasis></para>
+<para id="fs-id1166426154959">નીચેની કસરતોમાં સાદું રૂપ આપો.</para>
+<exercise id="fs-id1170654031968">
+<problem id="fs-id1170654031970">
+<para id="fs-id1170654031972"><m:math><m:mrow><m:mn>19</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>44</m:mn><m:mo>−</m:mo><m:mn>19</m:mn><m:mi>a</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654031993">
+<para id="fs-id1170654031995">44</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654032000">
+<problem id="fs-id1170654032002">
+<para id="fs-id1170654032004"><m:math><m:mrow><m:mn>27</m:mn><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>27</m:mn><m:mi>c</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654032032">
+<problem id="fs-id1170654032034">
+<para id="fs-id1170654032036"><m:math><m:mrow><m:mn>10</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.1</m:mn><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654032056">
+<para id="fs-id1170654032059">d</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654032064">
+<problem id="fs-id1170654032066">
+<para id="fs-id1170654032068"><m:math><m:mrow><m:mn>100</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.01</m:mn><m:mi>p</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654032097">
+<problem id="fs-id1170654032099">
+<para id="fs-id1170654032101"><m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mrow><m:mi>u</m:mi><m:mo>−</m:mo><m:mn>4.99</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જ્યાં <m:math><m:mrow><m:mi>u</m:mi><m:mo>≠</m:mo><m:mn>4.99</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654032134">
+<para id="fs-id1170654032136">0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654032141">
+<problem id="fs-id1170654032144">
+<para id="fs-id1170654032146"><m:math><m:mrow><m:mfrac><m:mn>0</m:mn><m:mrow><m:mi>v</m:mi><m:mo>−</m:mo><m:mn>65.1</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જ્યાં <m:math><m:mrow><m:mi>v</m:mi><m:mo>≠</m:mo><m:mn>65.1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654032186">
+<problem id="fs-id1170654032188">
+<para id="fs-id1170654032190"><m:math><m:mrow><m:mn>0</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> જ્યાં <m:math><m:mrow><m:mi>x</m:mi><m:mo>≠</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654032236">
+<para id="fs-id1170654032238">0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654032243">
+<problem id="fs-id1170654032245">
+<para id="fs-id1170654032248"><m:math><m:mrow><m:mn>0</m:mn><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> જ્યાં <m:math><m:mrow><m:mi>y</m:mi><m:mo>≠</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654032303">
+<problem id="fs-id1170654032305">
+<para id="fs-id1170654032307"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>32</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>a</m:mi></m:mrow><m:mn>0</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જ્યાં<newline /><m:math><m:mrow><m:mn>32</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654032348">
+<para id="fs-id1170654032350">અવ્યાખ્યાયિત</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654032356">
+<problem id="fs-id1170654032358">
+<para id="fs-id1170654032360"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>28</m:mn><m:mo>−</m:mo><m:mn>9</m:mn><m:mi>b</m:mi></m:mrow><m:mn>0</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> જ્યાં<newline /><m:math><m:mrow><m:mn>28</m:mn><m:mo>−</m:mo><m:mn>9</m:mn><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654032409">
+<problem id="fs-id1170654032411">
+<para id="fs-id1170654032413"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mi>m</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mn>0</m:mn></m:mrow></m:math> જ્યાં<newline /><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mi>m</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654032474">
+<para id="fs-id1170654032476">અવ્યાખ્યાયિત</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654032481">
+<problem id="fs-id1170654032483">
+<para id="fs-id1170654032485"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mi>n</m:mi><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>7</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mn>0</m:mn></m:mrow></m:math> જ્યાં<newline /><m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mi>n</m:mi><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>3</m:mn><m:mn>7</m:mn></m:mfrac><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654032553">
+<problem id="fs-id1170654032556">
+<para id="fs-id1170654032558"><m:math><m:mrow><m:mn>15</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>5</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>d</m:mi><m:mo>+</m:mo><m:mn>10</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654032585">
+<para id="fs-id1170654032588"><m:math><m:mrow><m:mn>36</m:mn><m:mi>d</m:mi><m:mo>+</m:mo><m:mn>90</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654032602">
+<problem id="fs-id1170654032605">
+<para id="fs-id1170654032607"><m:math><m:mrow><m:mn>18</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>6</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>15</m:mn><m:mi>h</m:mi><m:mo>+</m:mo><m:mn>24</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170654032652"><emphasis effect="bold">વિભાજનના ગુણધર્મનો ઉપયોગ કરીને પદાવલીઓને સાદું રૂપ આપો</emphasis></para>
+<para id="fs-id1166423978166">નીચેની કસરતોમાં વિભાજનનો ગુણધર્મ વાપરીને સાદું રૂપ આપો.</para>
+<exercise id="fs-id1170654032659">
+<problem id="fs-id1170654032661">
+<para id="fs-id1170654032663"><m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654032686">
+<para id="fs-id1170654032688"><m:math><m:mrow><m:mn>32</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>72</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654032703">
+<problem id="fs-id1170654032705">
+<para id="fs-id1170654032707"><m:math><m:mrow><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>w</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654032746">
+<problem id="fs-id1170654032748">
+<para id="fs-id1170654032751"><m:math><m:mrow><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654032771">
+<para id="fs-id1170654032773"><m:math><m:mrow><m:mn>6</m:mn><m:mi>c</m:mi><m:mo>−</m:mo><m:mn>78</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654032788">
+<problem id="fs-id1170654032790">
+<para id="fs-id1170654032792"><m:math><m:mrow><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654007526">
+<problem id="fs-id1170654007528">
+<para id="fs-id1170654007530"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>q</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654007556">
+<para id="fs-id1170654007558"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>q</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654007576">
+<problem id="fs-id1170654007578">
+<para id="fs-id1170654007580"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>m</m:mi><m:mo>+</m:mo><m:mn>20</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654007626">
+<problem id="fs-id1170654007628">
+<para id="fs-id1170654007630"><m:math><m:mrow><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac><m:mi>y</m:mi><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654007659">
+<para id="fs-id1170654007661"><m:math><m:mrow><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654007676">
+<problem id="fs-id1170654007678">
+<para id="fs-id1170654007680"><m:math><m:mrow><m:mn>10</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mi>x</m:mi><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654007727">
+<problem id="fs-id1170654007730">
+<para id="fs-id1170654007732"><m:math><m:mrow><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>r</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654007760">
+<para id="fs-id1170654007763"><m:math><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>r</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654007778">
+<problem id="fs-id1170654007780">
+<para id="fs-id1170654007782"><m:math><m:mrow><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>s</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654007828">
+<problem id="fs-id1170654007830">
+<para id="fs-id1170654007832"><m:math><m:mrow><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>s</m:mi><m:mo>−</m:mo><m:mn>18</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654007852">
+<para id="fs-id1170654007854"><m:math><m:mrow><m:mi>r</m:mi><m:mi>s</m:mi><m:mo>−</m:mo><m:mn>18</m:mn><m:mi>r</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654007871">
+<problem id="fs-id1170654007874">
+<para id="fs-id1170654007876"><m:math><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>v</m:mi><m:mo>−</m:mo><m:mn>10</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654007915">
+<problem id="fs-id1170654007917">
+<para id="fs-id1170654007919"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>p</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654007940">
+<para id="fs-id1170654007942"><m:math><m:mrow><m:mi>y</m:mi><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>p</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654007959">
+<problem id="fs-id1170654007961">
+<para id="fs-id1170654007963"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654008003">
+<problem id="fs-id1170654008005">
+<para id="fs-id1170654008007"><m:math><m:mrow><m:mn>−7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654008030">
+<para id="fs-id1170654008032"><m:math><m:mrow><m:mn>−28</m:mn><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654008047">
+<problem id="fs-id1170654008049">
+<para id="fs-id1170654008051"><m:math><m:mrow><m:mn>−9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654008091">
+<problem id="fs-id1170654008093">
+<para id="fs-id1170654008095"><m:math><m:mrow><m:mn>−3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654008116">
+<para id="fs-id1170654008118"><m:math><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>18</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654008133">
+<problem id="fs-id1170654008135">
+<para id="fs-id1170654008138"><m:math><m:mrow><m:mn>−4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>q</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654008175">
+<problem id="fs-id1170654008178">
+<para id="fs-id1170654008180"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654008202">
+<para id="fs-id1170654008204"><m:math><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654008219">
+<problem id="fs-id1170654008222">
+<para id="fs-id1170654008224"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654008263">
+<problem id="fs-id1170654008266">
+<para id="fs-id1170654008268"><m:math><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654008292">
+<para id="fs-id1170654008294"><m:math><m:mrow><m:mn>−3</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654008310">
+<problem id="fs-id1170654008312">
+<para id="fs-id1170654008314"><m:math><m:mrow><m:mn>18</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654008356">
+<problem id="fs-id1170654008358">
+<para id="fs-id1170654008360"><m:math><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>11</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>c</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654008387">
+<para id="fs-id1170654008389"><m:math><m:mrow><m:mn>−33</m:mn><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>26</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654008404">
+<problem id="fs-id1170654008406">
+<para id="fs-id1170654008408"><m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654008452">
+<problem id="fs-id1170654008454">
+<para id="fs-id1170654008456"><m:math><m:mrow><m:mn>22</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654008479">
+<para id="fs-id1170654008481"><m:math><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>19</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654008496">
+<problem id="fs-id1170654008498">
+<para id="fs-id1170654008500"><m:math><m:mrow><m:mn>8</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654008540">
+<problem id="fs-id1170654008542">
+<para id="fs-id1170654008544"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mi>m</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>m</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654008579">
+<para id="fs-id1170654008581"><m:math><m:mrow><m:mn>4</m:mn><m:mi>m</m:mi><m:mo>−</m:mo><m:mn>10</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654008596">
+<problem id="fs-id1170654008598">
+<para id="fs-id1170654008600"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654008653">
+<problem id="fs-id1170654008655">
+<para id="fs-id1170654008657"><m:math><m:mrow><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654083595">
+<para id="fs-id1170654083597"><m:math><m:mrow><m:mn>22</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654083612">
+<problem id="fs-id1170654083614">
+<para id="fs-id1170654083616"><m:math><m:mrow><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mi>u</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>u</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654083672">
+<problem id="fs-id1170654083675">
+<para id="fs-id1170654083677"><m:math><m:mrow><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654083710">
+<para id="fs-id1170654083712"><m:math><m:mrow><m:mn>72</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>25</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654083727">
+<problem id="fs-id1170654083729">
+<para id="fs-id1170654083731"><m:math><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654083782">
+<problem id="fs-id1170654083784">
+<para id="fs-id1170654083786"><m:math><m:mrow><m:mn>14</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654083823">
+<para id="fs-id1170654083826"><m:math><m:mrow><m:mn>6</m:mn><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>34</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654083840">
+<problem id="fs-id1170654083843">
+<para id="fs-id1170654083845"><m:math><m:mrow><m:mn>11</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654083899">
+<problem id="fs-id1170654083901">
+<para id="fs-id1170654083903"><m:math><m:mrow><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>30</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>15</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654083943">
+<para id="fs-id1170654083945"><m:math><m:mrow><m:mn>12</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>63</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654083960">
+<problem id="fs-id1170654083962">
+<para id="fs-id1170654083964"><m:math><m:mrow><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+</section><section id="fs-id1170654084022" class="everyday">
+<title>રોજિંદા જીવનનું ગણિત</title>
+<exercise id="fs-id1170654084027">
+<problem id="fs-id1170654084029">
+<para id="fs-id1170654084031"><emphasis effect="bold">વીમામાં પોતે ચૂકવવાનો હિસ્સો</emphasis> કેરીને 5 દાંતમાં પૂરણી કરાવવાની હતી. દરેક પૂરણીનો ખર્ચ $80 હતો. તેના દાંતના વીમા મુજબ તેણે ખર્ચના 20% પોતાનો હિસ્સો ચૂકવવાનો હતો. કેરીનો હિસ્સો ગણો:</para>
+<list id="fs-id1166425993600" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> પહેલાં 0.20નો 80 સાથે ગુણાકાર કરીને દરેક પૂરણી માટેનો તેનો હિસ્સો શોધો, અને પછી મળેલા જવાબનો 5 સાથે ગુણાકાર કરીને 5 પૂરણી માટેનો કુલ હિસ્સો શોધો.</item>
+<item><span class="token">ⓑ</span> પછી [5(0.20)](80)નો ગુણાકાર કરીને શોધો.</item>
+<item><span class="token">ⓒ</span> ભાગ (a)માં 5[(0.20)(80)] અને ભાગ (b)માં [5(0.20)](80)ના ગુણાકારનાં પરિણામો સમાન હોવા જોઈએ, એવું વાસ્તવિક સંખ્યાઓનો કયો ગુણધર્મ કહે છે?</item>
+</list>
+</problem>
+<solution id="fs-id1170654084055">
+<para id="fs-id1170654084057"><span class="token">ⓐ</span> $80 <span class="token">ⓑ</span> $80 <span class="token">ⓒ</span> જવાબો જુદા હોઈ શકે છે</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654084063">
+<problem id="fs-id1170654084065">
+<para id="fs-id1170654084068"><emphasis effect="bold">રાંધવાનો સમય</emphasis> હેલને પોતાના પરિવારના થેન્ક્સગિવિંગ ભોજન માટે 24 પાઉન્ડનું ટર્કી ખરીદ્યું. તે તેને ઓવનમાં ક્યારે મૂકવું તે જાણવા માગે છે. દરેક પાઉન્ડ માટે 20 મિનિટ રાંધવાનો સમય રાખવો છે. ટર્કીને શેકવા માટે જરૂરી સમય ગણો:</para>
+<list id="fs-id1166425996709" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> પહેલાં <m:math><m:mrow><m:mn>24</m:mn><m:mo>·</m:mo><m:mn>20</m:mn></m:mrow></m:math> નો ગુણાકાર કરીને કુલ મિનિટ શોધો અને પછી જવાબનો <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow></m:math> સાથે ગુણાકાર કરીને મિનિટને કલાકમાં ફેરવો.</item>
+<item><span class="token">ⓑ</span> પછી <m:math><m:mrow><m:mn>24</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><span class="token">ⓒ</span> ભાગ (a)માં <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>24</m:mn><m:mo>·</m:mo><m:mn>20</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> અને ભાગ (b)માં <m:math><m:mrow><m:mn>24</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> ના ગુણાકારનાં પરિણામો સમાન હોવા જોઈએ, એવું વાસ્તવિક સંખ્યાઓનો કયો ગુણધર્મ કહે છે?</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1170654084189">
+<problem id="fs-id1170654084191">
+<para id="fs-id1170654084193"><emphasis effect="bold">આખું ખોખું ખરીદવું</emphasis> ટ્રેડર જોના કરિયાણાના સ્ટોરમાં “ટૂ બક ચક” નામના વાઇનની એક બૉટલ $1.99માં વેચાતી હતી. 12 બૉટલનું ખોખું $23.88માં વેચાતું હતું. $1.99ના ભાવે 12 બૉટલનો ખર્ચ શોધવા માટે ધ્યાન આપો કે 1.99 એ <m:math><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>0.01</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<list id="fs-id1166426430798" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> વિભાજનના ગુણધર્મનો ઉપયોગ કરીને 12(1.99)નો ગુણાકાર <m:math><m:mrow><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>0.01</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><span class="token">ⓑ</span> “ટૂ બક ચક”નું આખું ખોખું ખરીદવામાં કિંમતનો ફાયદો હતો?</item>
+</list>
+</problem>
+<solution id="fs-id1170654084244">
+<para id="fs-id1170654084246"><span class="token">ⓐ</span> $23.88 <span class="token">ⓑ</span> ના, કિંમત સમાન છે</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654084252">
+<problem id="fs-id1170654084254">
+<para id="fs-id1170654084256"><emphasis effect="bold">એકસાથે અનેક બૉટલનું પૅક ખરીદવું</emphasis> એડેલનું શેમ્પૂ કરિયાણાના સ્ટોરમાં એક બૉટલના $3.99ના ભાવે મળે છે. વેરહાઉસ સ્ટોરમાં તે જ શેમ્પૂની 3 બૉટલનું પૅક $10.49માં મળે છે. $3.99ના ભાવે 3 બૉટલનો ખર્ચ શોધવા માટે ધ્યાન આપો કે 3.99 એ <m:math><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>0.01</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<list id="fs-id1166423744425" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> વિભાજનના ગુણધર્મનો ઉપયોગ કરીને 3(3.99)નો ગુણાકાર <m:math><m:mrow><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>0.01</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+<item><span class="token">ⓑ</span> કરિયાણાના સ્ટોરને બદલે વેરહાઉસ સ્ટોરમાંથી 3 બૉટલ ખરીદવાથી એડેલ કેટલા પૈસા બચાવે?</item>
+</list>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170654084314" class="writing">
+<title>લેખન કસરતો</title>
+<exercise id="fs-id1170654084320">
+<problem id="fs-id1170654084322">
+<para id="fs-id1170654084324">સરવાળાનો ક્રમવિનિમયનો ગુણધર્મ તમારા પોતાના શબ્દોમાં જણાવો.</para>
+</problem>
+<solution id="fs-id1170654084328">
+<para id="fs-id1170654084331">જવાબો જુદા હોઈ શકે છે</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654084336">
+<problem id="fs-id1170654084338">
+<para id="fs-id1170654084340">કોઈ સંખ્યાની સરવાળા માટેની વિરોધી સંખ્યા અને ગુણાકાર માટેની વ્યસ્ત સંખ્યા વચ્ચે શું તફાવત છે?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170654084353">
+<problem id="fs-id1170654084356">
+<para id="fs-id1170654084358">સાદું રૂપ આપો: <m:math><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mspace width="0.2em" /><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> વિભાજનના ગુણધર્મનો ઉપયોગ કરો અને દરેક પગલું સમજાવો.</para>
+</problem>
+<solution id="fs-id1170654084384">
+<para id="fs-id1170654084386">જવાબો જુદા હોઈ શકે છે</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170654084392">
+<problem id="fs-id1170654084394">
+<para id="fs-id1170654084396">કાગળ કે ગણકયંત્ર વિના 4($5.97)નો ગુણાકાર કરવા માટે $5.97ને <m:math><m:mrow><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>0.03</m:mn></m:mrow></m:math> ગણીને વિભાજનનો ગુણધર્મ કેવી રીતે વાપરી શકાય તે સમજાવો.</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1170654084420">
+<title>સ્વમૂલ્યાંકન</title>
+<para id="fs-id1170654084430"><span class="token">ⓐ</span> કસરતો પૂરી કર્યા પછી, આ વિભાગનાં ઉદ્દેશોમાં તમારી નિપુણતા તપાસવા આ યાદી વાપરો.</para>
+<media id="fs-id1170654084441" alt="પાંચ પંક્તિ અને ચાર કૉલમનું કોષ્ટક છે. મથાળાં છે: “હું કરી શકું છું…”, “આત્મવિશ્વાસથી”, “થોડી મદદથી” અને “ના—મને સમજાતું નથી!” પહેલી કૉલમમાં ચાર ઉદ્દેશો છે: “ક્રમવિનિમય અને જૂથબંધીના ગુણધર્મો વાપરવા”, “સરવાળા અને ગુણાકાર માટે તટસ્થ, વિરોધી અને વ્યસ્ત સંખ્યાના ગુણધર્મો વાપરવા”, “શૂન્યના ગુણધર્મો વાપરવા” અને “વિભાજનના ગુણધર્મથી પદાવલીઓને સાદું રૂપ આપવું”. જવાબ આપવા માટેની બાકીની કોષિકાઓ ખાલી છે.">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_09_201_img_new.jpg" />
+</media>
+<para id="fs-id1170654084451"><span class="token">ⓑ</span> આ યાદી તપાસ્યા પછી, બધા ઉદ્દેશોમાં આત્મવિશ્વાસ મેળવવા તમે શું કરશો?</para>
+</section>
+</section>
+</content>
+<glossary>
+<definition id="fs-id1166426340719">
+<term>સરવાળા માટેની તટસ્થ સંખ્યા</term>
+<meaning id="fs-id1166426340725">સરવાળા માટેની તટસ્થ સંખ્યા 0 છે; કોઈ પણ સંખ્યામાં 0 ઉમેરવાથી તેની કિંમત બદલાતી નથી.</meaning>
+</definition>
+<definition id="fs-id1166426272008">
+<term>સરવાળા માટેની વિરોધી સંખ્યા</term>
+<meaning id="fs-id1166426272014">કોઈ સંખ્યાની વિરોધી સંખ્યા એ તેની સરવાળા માટેની વિરોધી સંખ્યા છે. સંખ્યા અને તેની સરવાળા માટેની વિરોધી સંખ્યાનો સરવાળો 0 થાય છે.</meaning>
+</definition>
+<definition id="fs-id1166426274404">
+<term>ગુણાકાર માટેની તટસ્થ સંખ્યા</term>
+<meaning id="fs-id1166426274410">ગુણાકાર માટેની તટસ્થ સંખ્યા 1 છે; કોઈ પણ સંખ્યાનો 1 સાથે ગુણાકાર કરવાથી તે સંખ્યાની કિંમત બદલાતી નથી.</meaning>
+</definition>
+<definition id="fs-id1166426154985">
+<term>ગુણાકાર માટેની વ્યસ્ત સંખ્યા</term>
+<meaning id="fs-id1166426154990">કોઈ સંખ્યાની વ્યસ્ત સંખ્યા એ તેની ગુણાકાર માટેની વ્યસ્ત સંખ્યા છે. સંખ્યા અને તેની ગુણાકાર માટેની વ્યસ્ત સંખ્યાનો ગુણાકાર એક થાય છે.</meaning>
+</definition>
+</glossary>
+</document>

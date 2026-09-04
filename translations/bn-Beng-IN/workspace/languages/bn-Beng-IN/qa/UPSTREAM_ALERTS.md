@@ -1,0 +1,25 @@
+# Narrow upstream alerts for later production
+
+## 2026-09-01 / coordinator refresh 10:23 UTC / ranking withdrawn
+
+Read the supplied coordinator evidence at `[local-home]/Documents/ChatGPT/LAN ALLOC/logs/UPSTREAM_REFRESH_2026-09-01T1023Z.md`. This Bengali lane did not repeat the authenticated GitHub queries or download any new archive. Current translation pins remain unchanged; the correction does not authorize a general audit, source migration, reranking, cancellation, lane push, main merge or release.
+
+- Research main advanced to `c2e607135e3e98e5ef9f48257c6e579b89c4f55c`. The publisher explicitly withdrew `v1.1.0` at `5a378702537c3432f47f18b536eb44bac2718f90` because the global ordering incorporated out-of-scope project-state information. The old ranking must not be cited as research-supported prioritization or used for research, policy, funding or educational decisions. A replacement based on uniform population-level educational evidence is pending. This changes the ranking's evidentiary status, not the usefulness of already commissioned translation drafts. Preserve the user's nine commissioned workflows and their mathematical-source pins; do not automatically rerank, stop or replace them.
+- The shared translation review branch was observed at `c121c2cc79cad76b7381f059b03d0b6d89e24e6f`. That is coordinator publication activity only and may advance; it is not a research finding or authority for this lane to publish independently.
+- Indonesian catalog main advanced to `aedb245224c39bac887c9653324287d390a1c469`; candidate release `v0.62.14` points to `809baf41177fc4f0fca3c5f696c36be152ec2c01`. The producer reports 91 `v0.62.13` assets byte-identical, six renamed, and a modular-backend-v2 snapshot plus concept/register terminology policy. Of 14 previously selected assets, six are unchanged and five same-name assets changed; the source ZIP advanced to 508,814,546 bytes with API SHA-256 `359ff1c1973f37fcb68737b2a43151aea39d43cf3b7886a83bd429fbaa89195f`. Treat this as a future capsule/learner/backend-v2 mapping candidate, not an automatic lane-pin or native-canon replacement.
+- The A00 assessment adapter remains byte-identical at 8,634,922 bytes with API SHA-256 `43e122a96cf2878764ff53148c9d2d247ccb0b661b563ae6c5f04f4cd000098b`; no assessment migration follows. Existing producer counts remain a future integration constraint joined on `(module, native_id)`, never `native_id` alone, and do not replace this lane's independently measured source answer inventory.
+- A30 main, the `alpha.67` candidate release/tag and all seven selected asset identities are unchanged. Existing `alpha.58` pins remain. The prior candidate deferral still applies: compare only when the assigned `m49301`/`m49324` scope reaches it.
+
+Keep the prior A20 figure warnings below. Coordinator owns ongoing upstream checks, heartbeat and shared review-branch publication. This is a scoped relevance/deferral record, not independent network re-verification.
+
+## A20 / m81373 / received 2026-08-30
+
+Coordinator relayed independently inspected EN/ID raster discrepancies at canonical EN pin `38cae454e644abf9f0a623e876994553881597c9` versus Indonesian `v0.3.0-wip`. This Bengali task has **not yet independently inspected these particular figures or translated this module**. Recheck pixels, alternatives and supplied solutions before using them. No source archive mutation, generalized audit or production pause is implied.
+
+- `CNX_IntAlg_Figure_03_05_202_img_new.jpg`: reported pinned EN image pairs Amy with February 24; Indonesian redraw uses February 14. EN/ID alt reportedly says 14.
+- `CNX_IntAlg_Figure_03_05_205_img_new.jpg`: reported EN image and supplied EN answer use (−2,−1); Indonesian redraw uses (−3,−1).
+- `CNX_IntAlg_Figure_03_05_208_img_new.jpg`: reported EN relation is {(-2,-6),(-1,-3),(0,0),(0.5,1.5),(1,3),(2,6)} with domain {-2,-1,0,0.5,1,2}. Indonesian redraw changes two points to (−2,−3) and (3,6), giving repeated x=−2 at two y-values and changing the function test. Do not infer mathematical data from the inconsistent redraw/alt.
+
+Evidence location supplied by coordinator: `[local-home]/.codex/worktrees/9286/LAN ALLOC/mr-Deva-IN/SOURCE_ERRORS.md`, `provenance/MR-BRIDGE-004.lock.json`, original EN images in `assets/MR-BRIDGE-004/`, and EN/ID comparison originals in that worktree's `downloads/mr-Deva-IN/source-image-qa/MR-BRIDGE-004/`. Preserve provenance; log the target-language reconciliation after this task's actual check.
+
+Coordinator verification addendum: all six EN/ID fragments were checked against pinned archive content and the six images against locked hashes/sizes. Figure205's EN **and** ID supplied answers use (−2,−1) and domain {−3,−2,0,2,4}, although both alternatives say (−3,−1). Figures202 and208 have no supplied solutions in those fragments: any answers derived from verified pixels must be labelled original editorial work, not translations of source answers. Full external verification log: `[local-home]/Documents/ChatGPT/LAN ALLOC/logs/A20_SOURCE_DISCREPANCY_VERIFICATION_2026-08-30.md`. Bengali local figure review still remains pending until this module is reached.

@@ -1,0 +1,150 @@
+{
+  "module": "m81286",
+  "section": "fs-id3215450",
+  "result": "pass",
+  "translation_sha256": "0ad2cddcee7e47bbd2874106be435e078079f24b5ff546fef912b4ed7391026a",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "6da182dad65b0ee0cc5afd30f9c4ed28fb6a3cb1d81d1c0745b87825faf664a3"
+  },
+  "source_sha256": "7dab4be4d267ccd47f23df46e9b6a4b90a25c5d8b371e14b5947846af126b249",
+  "reader": "reader/sections/m81286-fs-id3215450.html",
+  "reader_sha256": "b2497a1fc135a91a2505ef2f2e21a5f83c6f785e7843c227251fb19c0429ca3a",
+  "nodes": 1852,
+  "ids": 431,
+  "mathml": 158,
+  "localized_linguistic_mtext": 0,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 0,
+  "exercises": 99,
+  "assets": [
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_02_041a_img.jpg",
+      "bytes": 32714,
+      "sha256": "9951062ed8086d619963858d80cb0ae0bcd159936ac65309c01bd18a1acd4b15",
+      "git_blob": "8d0e72a975c4320b547a228d407146f69d0fb21c"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_02_041c_img.jpg",
+      "bytes": 30921,
+      "sha256": "aa6b0fd7d018fbc69ba4b59b2b05858542289ec107186d6a4eb221a9645360cb",
+      "git_blob": "2d236012312dc2384b627f70d7fd21516996f303"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_02_040_img.jpg",
+      "bytes": 634702,
+      "sha256": "8fd3499960117a1cd838e0933dd56234185e944df94031a1bfd10a174846fc8e",
+      "git_blob": "bcbe5090339ff21378586affd569dca563405d10"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_02_201_img.jpg",
+      "bytes": 38163,
+      "sha256": "1477a24d389db4e7cb135046bfa665835a54d0e9f03f04f5e426a47261a8f3f0",
+      "git_blob": "09d5e2ae611a1ad812d8dda83ca22bd54ff317ec"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_02_042b_img.jpg",
+      "bytes": 40398,
+      "sha256": "d3c4da22d26c5b809e67b1d9449ada0a90dec08ebeaa2a5e6877e025a068365f",
+      "git_blob": "784459b41c3d061b25089b588748b71e05470982"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_02_042d_img.jpg",
+      "bytes": 604877,
+      "sha256": "f4c23c896312c8f38c174eb2e6b5f796fef4d2eec35a8e00fabb2813a6826164",
+      "git_blob": "318d71fc42b82786513eb3bf065c85668ffe78bf"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_AppB_020.jpg",
+      "bytes": 73932,
+      "sha256": "5eeb90fe55a0daa0e9415dc074e1e86cebecb1d61e020d796ef95bcc97003994",
+      "git_blob": "1aeaf03febc7f5daa5cd5b6cad9b438b89a15c95"
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_solution_image_mismatch",
+      "exercise_id": "fs-id1215434",
+      "problem_id": "fs-id1851779",
+      "table_id": "fs-id1760782",
+      "solution_id": "fs-idm254919680",
+      "media_id": "fs-idm254919040",
+      "image": "CNX_BMath_Figure_04_02_040_img.jpg",
+      "actual_bitmap_rows": [
+        [
+          "-4/7",
+          "4/7",
+          "4/7",
+          "-7/4"
+        ],
+        [
+          "1/8",
+          "-1/8",
+          "1/8",
+          "8"
+        ],
+        [
+          "9/4",
+          "-9/4",
+          "9/4",
+          "4/9"
+        ],
+        [
+          "-1",
+          "1",
+          "1",
+          "-1"
+        ]
+      ],
+      "intended_question_rows": [
+        [
+          "-7/11",
+          "7/11",
+          "7/11",
+          "-11/7"
+        ],
+        [
+          "4/5",
+          "-4/5",
+          "4/5",
+          "5/4"
+        ],
+        [
+          "10/7",
+          "-10/7",
+          "10/7",
+          "7/10"
+        ],
+        [
+          "-8",
+          "8",
+          "8",
+          "-1/8"
+        ]
+      ],
+      "evidence": "Direct inspection of the original local bitmap against the problem's unchanged MathML.",
+      "action": "Retain original bitmap. Bengali alt describes actual bitmap and flags the mismatch. The existing solution paragraph's post-media tail adds visibly labelled সম্পাদকীয় সংশোধন with intended rows; it explicitly distinguishes editorial answers from the original image.",
+      "exact_checks": "For every intended row x: x + opposite = 0; absolute value = abs(x); x × reciprocal = 1."
+    },
+    {
+      "kind": "source_accessibility_number_mismatch",
+      "exercise_id": "fs-id1266696",
+      "table_id": "fs-id1630636",
+      "source_aria_value": "4/14",
+      "actual_mathml_value": "9/14",
+      "evidence": "Problem row 2 has mfrac 9/14, and directly inspected solution bitmap CNX_BMath_Figure_04_02_201_img.jpg has 9/14, -9/14, 9/14, 14/9.",
+      "action": "Localized aria-label reads numerator 9 and denominator 14. Mathematical XML remains unchanged."
+    },
+    {
+      "kind": "source_accessibility_header_mismatch",
+      "table_ids": [
+        "fs-id1760782",
+        "fs-id1630636"
+      ],
+      "evidence": "Both source aria-labels claim a Number heading, but the first thead entry is empty in each actual CNXML table.",
+      "action": "Preserve the blank header cells; Bengali aria-label truthfully says the first header cell is blank and the first column contains the given numbers."
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

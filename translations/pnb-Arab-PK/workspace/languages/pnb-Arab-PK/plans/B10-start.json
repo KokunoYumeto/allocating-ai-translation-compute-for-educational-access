@@ -1,0 +1,981 @@
+{
+  "schema": "pnb-source-start-plan-v1",
+  "assignment": "B10",
+  "locale": "pnb-Arab-PK",
+  "status": "Initial source study followed by the complete B10-frontmatter input checkpoint: 50 source-bound translated slots, witness, manifest, canon draft/revision/QA receipts and language notes. No B10 asset copy or reader build performed; substantive Chapter 0 remains untranslated.",
+  "observed_date": "2026-08-31",
+  "path_base": "workspace root",
+  "work": {
+    "title": "Discrete Mathematics: An Open Introduction",
+    "edition": "Fourth Edition",
+    "author": "Oscar Levin",
+    "book_xml_id": "dmoi4",
+    "document_id": "dmoi-4",
+    "not_this_work": "OpenLogic is retained as unused auxiliary material, not B10."
+  },
+  "instructions_read": [
+    "USER_INSTRUCTIONS_VERBATIM.md",
+    "languages/pnb-Arab-PK/GOAL.md",
+    "languages/pnb-Arab-PK/sources.lock.json"
+  ],
+  "authority": {
+    "lock_path": "languages/pnb-Arab-PK/sources.lock.json",
+    "lock_raw_sha256": "c8259e2caca9674b89860e9ac03bfaad3db56e61f000fd9081003bc8b514efde",
+    "canonical": {
+      "repository": "https://github.com/oscarlevin/discrete-book.git",
+      "commit": "82336dc87d77c3f18d2cdbc8ec1e74eb3ba38799",
+      "tree": "5b8209e92286e967a18114eea99c11ba68b8a162",
+      "local_path": "downloads/upstream/discrete-book"
+    },
+    "comparison": {
+      "repository": "https://github.com/KokunoYumeto/discrete-mathematics-open-introduction-id.git",
+      "commit": "e94905932301e699b7c4d44e88ec54e972b886b6",
+      "tree": "457bb9f48aefe119f3c3a48b485f0c1198d64c3d",
+      "local_path": "downloads/discrete-mathematics-open-introduction-id"
+    },
+    "heads_and_trees_reverified": true,
+    "source_checkout_status_clean": true,
+    "hash_policy": "Record exact git-show blob bytes, SHA-256 and Git blob SHA-1 separately from working-tree bytes. Selected PTX/SVG/TEX/config working files normalize CRLF to the pinned Git text bytes in memory. Do not normalize binary images, and do not assume every tracked file uses LF: canonical root LICENSE itself contains CRLF. No source files were rewritten.",
+    "edition_evidence": "source/dmoi.ptx subtitle, source/bookinfo.ptx blurb and source/frontmatter.ptx identify the active fourth edition. The root README's generic third-edition/main-branch description is stale for this pinned source and is not the edition selector."
+  },
+  "entrypoints": {
+    "project": "project.ptx",
+    "primary_source": "source/dmoi.ptx",
+    "actual_content_entry_not_generic_comment": "source/main.ptx is absent; the project comment suggesting it is not authoritative.",
+    "configuration": "publication/publication.ptx",
+    "numbering": {
+      "chapter_start": 0,
+      "division_level": 2,
+      "block_level": 2
+    },
+    "include_mechanism": "Namespace-qualified XInclude, resolved relative to the containing file. Ignore commented includes. bookinfo includes assets/tikz-defs.tex with parse=text; preserve it as TeX, not XML.",
+    "source_order": [
+      "bookinfo.ptx (docinfo)",
+      "book/title",
+      "book/subtitle",
+      "frontmatter.ptx",
+      "ch_intro.ptx",
+      "ch_logic.ptx",
+      "ch_graphtheory.ptx",
+      "ch_counting.ptx",
+      "ch_sequences.ptx",
+      "ch_structures.ptx",
+      "ch_additionalTopics.ptx",
+      "backmatter.ptx"
+    ],
+    "chapter_numbers": {
+      "ch_intro": 0,
+      "ch_logic": 1,
+      "ch_graphtheory": 2,
+      "ch_counting": 3,
+      "ch_sequences": 4,
+      "ch_structures": 5,
+      "ch_additionalTopics": 6
+    }
+  },
+  "recommended_sequence": [
+    {
+      "unit": "B10-frontmatter",
+      "kind": "Entire earlier source front matter plus title/metadata wording",
+      "must_precede_or_be_published_with": "B10-001",
+      "scope": "All active source/frontmatter.ptx; book title/subtitle in dmoi.ptx; bookinfo blurb/shelf and four rename labels, with remaining docinfo/macros/preamble/configuration retained as source metadata.",
+      "direct_order": [
+        {
+          "tag": "titlepage",
+          "xml_id": null,
+          "explicit_title": null
+        },
+        {
+          "tag": "colophon",
+          "xml_id": null,
+          "explicit_title": null
+        },
+        {
+          "tag": "dedication",
+          "xml_id": null,
+          "explicit_title": null
+        },
+        {
+          "tag": "acknowledgement",
+          "xml_id": null,
+          "explicit_title": null
+        },
+        {
+          "tag": "preface",
+          "xml_id": "preface",
+          "explicit_title": null
+        },
+        {
+          "tag": "preface",
+          "xml_id": null,
+          "explicit_title": "How to Use This Book"
+        }
+      ],
+      "boundary": "Begin with book title/subtitle and docinfo, then complete frontmatter through the final How to Use This Book / Interactive Online Version / sidebyside QR image and all closing structure.",
+      "original_xml_ids": [
+        "dmoi4",
+        "frontmatter",
+        "preface",
+        "pref_editions"
+      ],
+      "counts": {
+        "frontmatter_paragraphs": 25,
+        "frontmatter_explicit_titles": 7,
+        "frontmatter_prefaces": 2,
+        "frontmatter_list_items": 4,
+        "frontmatter_urls": 4,
+        "frontmatter_shortdescriptions": 1,
+        "explicit_attribution_lines": 2,
+        "frontmatter_images": 1,
+        "docinfo_brandlogo_images": 1,
+        "math_nodes": 0
+      },
+      "proposed_text_slots": 50,
+      "text_slot_policy": "42 full-frontmatter slots: every p/title/shortdescription/line/personname/department/institution/date/year/holder/shortlicense; plus 2 book title/subtitle slots, 1 docinfo blurb text, 1 blurb shelf attribute, 4 rename labels. URLs, dates, credits and macros also have exact locked fields. The follow-up B10-frontmatter manifest now freezes these 50 translated input slots; reader production remains.",
+      "coverage_status": "Complete 50-slot input-only translation checkpoint; see source-excerpts/manifest-b10-frontmatter.json and qa/b10-frontmatter-language-notes.md. Both full prefaces and every earlier active source component are retained. Build, structural reader QA and browser review remain."
+    },
+    {
+      "unit": "B10-001",
+      "kind": "Complete Chapter 0: Introduction and Preliminaries",
+      "reason": "A coherent approximately 4,462-word introduction connects the four motivating problems to sets, functions, sequences, relations and graphs; covering both active sections avoids a tiny opening-only checkpoint.",
+      "files": [
+        "source/ch_intro.ptx",
+        "source/sec_intro-intro.ptx",
+        "source/sec_intro-structures.ptx"
+      ],
+      "scope_from": "ch_intro/title and complete chapter introduction",
+      "scope_through_inclusive": "sec_intro-structures/reading-questions[@xml:id='rqs-intro-structures']/exercise[@label='rq-intro-structures-q']/response, followed by all closing section/chapter structure",
+      "first_outside": "source/ch_logic.ptx, xml:id ch_logic, title Logic and Proofs",
+      "sections": [
+        {
+          "number": "0.1",
+          "xml_id": "sec_intro-intro",
+          "title": "What is Discrete Mathematics?",
+          "include_all": "Opening definition blockquote, complete prose, four-part investigation, four-part modeling discussion, two footnotes and both reading questions."
+        },
+        {
+          "number": "0.2",
+          "xml_id": "sec_intro-structures",
+          "title": "Discrete Structures",
+          "subsections": [
+            "Introduction (no source ID)",
+            "Sets",
+            "Functions",
+            "Sequences",
+            "Relations",
+            "Graphs",
+            "Even More Structures"
+          ],
+          "include_all": "All seven active subsections, domino investigation and response, example, all index entries, table, both graphs, all three reading questions and complete numeric setup/feedback."
+        }
+      ],
+      "proposed_text_slots": 157,
+      "text_slot_counts": {
+        "p": 85,
+        "title": 10,
+        "fn": 2,
+        "shortdescription": 2,
+        "feedback": 6,
+        "index_h": 38,
+        "index_see": 2,
+        "table_cell": 12
+      },
+      "text_slot_policy": "Count every active p/title/fn/shortdescription/feedback/h/see/cell once, using source-file plus canonical sibling-index path; mixed parents keep source-child placeholders rather than duplicating child text. Twelve table cells include locked numeric/math-only data slots. This is a preparation policy, not a frozen translation manifest.",
+      "source_xml_ids": [
+        "ch_intro",
+        "sec_intro-intro",
+        "rqs-intro-intro",
+        "sec_intro-structures",
+        "subsec_structures-sets",
+        "subsec_structures-functions",
+        "subsec_structures-sequences",
+        "subsec-relations",
+        "subsec_structures-graphs",
+        "graphs-7sum",
+        "subsec_structures-even-more",
+        "rqs-intro-structures"
+      ],
+      "source_labels": [
+        "rq-intro-intro-about",
+        "rq-intro-intro-q",
+        "mp_intro_structures",
+        "graphs-evensum",
+        "rq-intro-structures-domino-set",
+        "rq-intro-structures-domino-sequence",
+        "rq-intro-structures-q"
+      ],
+      "source_counts": {
+        "chapter": 1,
+        "sections": 2,
+        "subsections": 7,
+        "paragraphs": 85,
+        "titles": 10,
+        "inline_tex_m": 102,
+        "display_tex_me": 3,
+        "source_mathml": 0,
+        "tikz_images": 2,
+        "tabular": 1,
+        "table_rows": 2,
+        "table_columns": 6,
+        "table_cells": 12,
+        "investigations": 2,
+        "ordered_lists": 3,
+        "list_items": 12,
+        "example": 1,
+        "aside": 1,
+        "footnotes": 2,
+        "reading_question_groups": 2,
+        "exercise_nodes": 6,
+        "free_response_nodes": 5,
+        "numeric_setup": 1,
+        "statement_vars": 3,
+        "setup_vars": 3,
+        "conditions": 6,
+        "feedbacks": 6,
+        "index_records": 33,
+        "index_headings": 38,
+        "index_see": 2,
+        "term_occurrences": 65,
+        "cross_references": 3,
+        "urls": 0,
+        "webwork": 0,
+        "code": 0,
+        "sage": 0,
+        "geogebra": 0
+      },
+      "include_graph": {
+        "chapter_includes": [
+          "./sec_intro-intro.ptx",
+          "./sec_intro-structures.ptx"
+        ],
+        "nested_active_includes_in_sections": 0
+      },
+      "not_active": "Do not include commented sec_intro-sets/sec_intro-functions, the commented Statements subsection, or unreferenced empty practice/intro-intro.ptx and exercises/intro-intro.ptx just because they exist."
+    }
+  ],
+  "renderer_requirements": [
+    {
+      "area": "Source identities and mixed content",
+      "requirements": "Use a B10 PreTeXt adapter rather than the CNXML renderer. Preserve original xml:id and label separately: 12 XML IDs plus 7 labels in chapter 0; graphs-evensum labels the latex-image child, not its image parent. Most paragraphs have no IDs: derive documented path keys and distinguish generated reader anchors from original IDs. Preserve all own text/tails; valid HTML equivalents are needed for p enclosing lists, display math or sidebyside blocks."
+    },
+    {
+      "area": "TeX mathematics",
+      "requirements": "There are 102 m and 3 me nodes, not source MathML. Bind exact raw TeX, owners, slot order and tails before conversion; preserve shared macros, notably N and st. Keep formulas, sets, pairs, recurrence initial conditions, subscripts and table direction LTR. The sole English text token inside math is \\text{ and }; retaining it with a Punjabi explanation is the simplest exact option; translating it requires a specific reversible ledger, not blanket text normalization."
+    },
+    {
+      "area": "Numeric answers and interactions",
+      "requirements": "Preserve five ungraded response prompts as ungraded. The sixth exercise is numeric: three visible var slots correspond positionally to setup var values 6,10,15, with number condition followed by fallback regex .* and exact source feedback. Translate all feedback, do not expose Correct beside wrong answers or misbind slots. Include component=runestone reading questions even in an offline reader. A static accessible question/answer reveal is possible if accurately labeled; do not promise external grading or falsely claim missing WeBWorK functionality."
+    },
+    {
+      "area": "Table",
+      "requirements": "Preserve 2x6 cell matrix and source column/right and row/bottom minor-rule attributes; no CNXML CALS conversion assumptions. Matrix is [n,1,2,3,4,...] and [a_n,1,3,6,10,...]. Retain literal ellipses, source indices and formula linkage without inventing a different sequence."
+    },
+    {
+      "area": "Graphs",
+      "requirements": "Use pinned canonical generated-assets/rs SVG bytes or verify a deterministic derivation against their TikZ. The web generated directory does not supply these canonical files locally; rs SVGs are tracked and available. Each is 76x73, six vertex labels, no external references. Do not substitute the Indonesian web SVGs (77x75, different bytes) or mirror geometry. Bind sum-7 edges {1,6},{2,5},{3,4} and even-sum edges {1,5},{2,6},{1,3},{4,6},{2,4},{3,5}. Keep both source descriptions for first graph; second graph has only shortdescription in English."
+    },
+    {
+      "area": "Cross-references",
+      "requirements": "Preserve sec_intro-structures as local Section 0.2; forward ch_sequences and ch_graphtheory mean Chapters 4 and 2. Do not make dead local links or falsely claim their Punjabi pages exist. Use clearly marked source/pending destinations until translated. Keep cross-references text=type-global metadata and actual book numbering."
+    },
+    {
+      "area": "Footnotes, glossary and metadata",
+      "requirements": "Retain both inline footnotes, including the nursery-rhyme joke and toy-problem caveat, with exact owner and return links. Translate 33 index records / 38 h plus 2 see strings as index metadata, not accidental body prose; preserve index hierarchy and term markup including math within n-tuple. Keep titlepage names, institutions, dates, dedication, acknowledgements and two author attribution lines, plus all frontmatter URLs and QR context."
+    },
+    {
+      "area": "Frontmatter assets and claims",
+      "requirements": "Keep the canonical 100x142 cover/logo and 200x200 QR original; source QR shortdescription spells https://discrete/openmathbooks.org while adjacent URL is https://discrete.openmathbooks.org/. Preserve the raw erroneous description separately if correcting accessible text. Do not substitute the Indonesian QR or URLs. Do not copy analytics, service credentials, external runtime scripts or live grading as incidental renderer behavior. Source access, interactive-feature, edition and publication statements remain pinned-source claims."
+    },
+    {
+      "area": "Local implementation availability",
+      "requirements": "Both repositories pin PreTeXt 2.27.0. The inspected system Python has lxml but not pretext or latex2mathml; xsl/core/pretext-html.xsl imported by custom XSL is not present at that path. No installation/build attempted. Existing canonical SVGs avoid a first-unit TikZ rebuild, but a verified TeX-to-MathML or local math runtime still needs a scoped implementation decision."
+    }
+  ],
+  "math_invariants": {
+    "table": [
+      [
+        "n",
+        "1",
+        "2",
+        "3",
+        "4",
+        "..."
+      ],
+      [
+        "a_n",
+        "1",
+        "3",
+        "6",
+        "10",
+        "..."
+      ]
+    ],
+    "numeric_setup_conditions": [
+      {
+        "number": "6"
+      },
+      {
+        "string": ".*"
+      },
+      {
+        "number": "10"
+      },
+      {
+        "string": ".*"
+      },
+      {
+        "number": "15"
+      },
+      {
+        "string": ".*"
+      }
+    ],
+    "source_natural_numbers": "N={0,1,2,3,...}; source explicitly notes other books may exclude 0.",
+    "source_sequence_indexing": "Keep generic a_0 start distinct from Fibonacci f_1=f_2=1 and f_4=3; do not normalize indices.",
+    "questions_not_to_solve_in_source": "The handshakes, hot-dog, treasure-chest and road-planarity investigation asks questions, not a source answer key. Any supplied worked answers must be original scaffolding outside the translation."
+  },
+  "comparison_findings": [
+    "Both section math streams have matching counts/order; exactly one differing raw math text was found: English \\text{ and } becomes Indonesian \\text{ dan }. Canonical English remains authoritative.",
+    "Indonesian frontmatter adds two colophon paragraphs/two URLs (independence/source commit and DOI), redirects the final online-version URL and replaces the QR image. These are comparison-edition additions, not English source paragraphs.",
+    "Indonesian bookinfo adds initialism Discrete_Mathematics for compatibility and localizes rename labels; do not import it as English-source metadata.",
+    "English investigation says the inscriptions are strangely in English; Indonesian says in Indonesian. Preserve the English-source statement or record an intentional original adaptation separately.",
+    "English sequence-modeling prose says integers (whole numbers); Indonesian omits the parenthetical. Preserve and qualify this source terminology tension rather than silently collapse the existing Punjabi whole-number/integer distinction.",
+    "English final structures list spells metroids and POSets; Indonesian regularizes matroid/poset. Keep canonical spelling traceable, with a labeled correction if desired; do not treat the misspelling as a new mathematical concept.",
+    "Indonesian adds a detailed description to the second even-sum graph; this changes p/description count by +1. It may inform an original accessibility addition, never silently become source text."
+  ],
+  "existing_notice_policy": {
+    "status": "Retain the already audited B10 work/component policy; no new supply/license audit or image-specific clearance decision.",
+    "work_level": "Existing Indonesian LICENSE explicitly follows active fourth-edition CC BY-NC-SA 4.0 frontmatter while retaining stale upstream root BY-SA 4.0 discrepancy.",
+    "authors_and_nonendorsement": "Identify Oscar Levin and the English fourth edition; identify changes; no endorsement by Oscar Levin or University of Northern Colorado.",
+    "components": "Retain THIRD_PARTY_NOTICES for WeBWorK OPL and PreTeXt/Runestone software when those components are actually used. The proposed chapter contains zero WeBWorK elements; do not import the entire OPL for it.",
+    "publication_claims": "The comparison README's complete-book/613-page/243-WeBWorK claims describe the Indonesian release, not the future Punjabi opening.",
+    "notice_inputs": [
+      {
+        "path": "languages/pnb-Arab-PK/provenance/upstream--discrete-book/README.md",
+        "raw_sha256": "fd127161b2b13127102ae8f915d8ad39b61719b40fe24ec179087de20fddfa80",
+        "logical_lf_sha256": "fd127161b2b13127102ae8f915d8ad39b61719b40fe24ec179087de20fddfa80"
+      },
+      {
+        "path": "languages/pnb-Arab-PK/provenance/upstream--discrete-book/LICENSE",
+        "raw_sha256": "e1cd4008924dcbef0964c59284648bd97ae640077e1137014d23db1f61838e64",
+        "logical_lf_sha256": "323c591067d0e840eeac90828eb1862af612b8be24781a2c48109ac4938ee337"
+      },
+      {
+        "path": "languages/pnb-Arab-PK/provenance/discrete-mathematics-open-introduction-id/README.md",
+        "raw_sha256": "a6f32096a6c57a48f06f4e10eb91f6e8214584cc5ab780a3d2e010dd2db9c462",
+        "logical_lf_sha256": "a6f32096a6c57a48f06f4e10eb91f6e8214584cc5ab780a3d2e010dd2db9c462"
+      },
+      {
+        "path": "languages/pnb-Arab-PK/provenance/discrete-mathematics-open-introduction-id/LICENSE",
+        "raw_sha256": "7e544e0509f70e951b6f811a18e8432163c1a7db2b099c91d1337e251d85c057",
+        "logical_lf_sha256": "7e544e0509f70e951b6f811a18e8432163c1a7db2b099c91d1337e251d85c057"
+      },
+      {
+        "path": "languages/pnb-Arab-PK/provenance/discrete-mathematics-open-introduction-id/THIRD_PARTY_NOTICES.md",
+        "raw_sha256": "e3779ab66e4a9644e7ca4e4322af39b0ea008ef584a425561b336af1411450a4",
+        "logical_lf_sha256": "e3779ab66e4a9644e7ca4e4322af39b0ea008ef584a425561b336af1411450a4"
+      }
+    ]
+  },
+  "canonical_file_identities": [
+    {
+      "path": "downloads/upstream/discrete-book/source/dmoi.ptx",
+      "repository_path": "source/dmoi.ptx",
+      "working_bytes": 687,
+      "working_sha256": "b2c702b9107d3c09d90c8ee1aa5e5cebc8e08c69f7cc605df65e2f779bcf123a",
+      "git_bytes": 670,
+      "git_sha256": "f0029601a3478be629c7df9c7a42252f2b12d5267db01c91bd0a1db5e1f1d6c9",
+      "git_blob_sha1": "40a75cc1a98194e2616a346c099364353d1f4510",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/source/bookinfo.ptx",
+      "repository_path": "source/bookinfo.ptx",
+      "working_bytes": 3590,
+      "working_sha256": "1367a582c1d88507e9e8d8e928300e3c4e2b72274cbf8de6920906d7cadd0ba3",
+      "git_bytes": 3495,
+      "git_sha256": "76686015118c216bcdbd0b7972778ee8b52d5375078ceab999030b23a999f10a",
+      "git_blob_sha1": "3557b570add0f32719dac104eadfd658ab942e25",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/source/frontmatter.ptx",
+      "repository_path": "source/frontmatter.ptx",
+      "working_bytes": 13278,
+      "working_sha256": "174267fb99edc78cebaf13d014f5dcf6011a58db06f86bc01b7f8f1a4d2c77c4",
+      "git_bytes": 13043,
+      "git_sha256": "1f1cc0f20e29c867751c1abaa648891f9275efa38671f4b539209dcecc8a68a2",
+      "git_blob_sha1": "be2aa1aad7560bad260f1043b1650ae1739ed95f",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/source/ch_intro.ptx",
+      "repository_path": "source/ch_intro.ptx",
+      "working_bytes": 845,
+      "working_sha256": "1512ff6279f0333667e5d0eeee15eac419a468688b6b62554b7b16542fad6a38",
+      "git_bytes": 825,
+      "git_sha256": "dc179f92091c81eae8e24b477d982e660dabdf2f8bb1e84c5804b0245aab9ed8",
+      "git_blob_sha1": "5d5d34dd8d2a12f98ed9a4890b279e90f6e33c5a",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/source/sec_intro-intro.ptx",
+      "repository_path": "source/sec_intro-intro.ptx",
+      "working_bytes": 10144,
+      "working_sha256": "db7c135aba989a48636a1a6d6e29f7527f4beeab39998bb676438b977069df16",
+      "git_bytes": 9912,
+      "git_sha256": "1adf768614848784d17145f6ef61ac696a926f9f6ed0ca7142744f41654f706e",
+      "git_blob_sha1": "965f37e3e463fef7c210104e549f26a9cfe01bac",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/source/sec_intro-structures.ptx",
+      "repository_path": "source/sec_intro-structures.ptx",
+      "working_bytes": 27866,
+      "working_sha256": "4bdf3c414e68b26e935a6b256a9562ca7c70ae271282b822ab291c0e5877c3d1",
+      "git_bytes": 27311,
+      "git_sha256": "21fcdff52ca98cb218a5484f6f7b9a8ef96a053b7b2b9b78eea37ddf35b139e7",
+      "git_blob_sha1": "1630d556cb5022ce02c77d279cb0fe0bf1e2ae9c",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/source/ch_logic.ptx",
+      "repository_path": "source/ch_logic.ptx",
+      "working_bytes": 2838,
+      "working_sha256": "6786bbdc731e25e183e2a57e36fa49532d4ebe0020aadb188f62464b1002ded8",
+      "git_bytes": 2801,
+      "git_sha256": "491e05adc9aafc8325743feb4156db8bca11402758cc3c2c0653c39e4b86b674",
+      "git_blob_sha1": "94a809824debbeaebc641f97fc437ca68ee836c4",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/publication/publication.ptx",
+      "repository_path": "publication/publication.ptx",
+      "working_bytes": 4520,
+      "working_sha256": "dcc62a471160a49bf98c3d6885e5c3013a5cb47ee964addf754d7f247a491041",
+      "git_bytes": 4430,
+      "git_sha256": "80ecd821555ce7e347c8ca8e751e683540f232f135e149d0c110e7963debc438",
+      "git_blob_sha1": "fa857c283a13057e581808e95f33dbb327d0837a",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/project.ptx",
+      "repository_path": "project.ptx",
+      "working_bytes": 2179,
+      "working_sha256": "2c0532b6ae2a9d29c563432746dce390bd92f6a66da037abccaf5261968df135",
+      "git_bytes": 2096,
+      "git_sha256": "bb2d03069255a8953f9e00ad90302dbca304f5c544c2eff3492c7be2732c91cb",
+      "git_blob_sha1": "497d7a3666c754321e15b01c41440c3ea1d35cb9",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/requirements.txt",
+      "repository_path": "requirements.txt",
+      "working_bytes": 81,
+      "working_sha256": "e9d81e32cd9854d95c8f287b700a803c68edebe5f3702bc7cfbc59ca10edf7f6",
+      "git_bytes": 79,
+      "git_sha256": "b8af23fa6cf584f0963e8ec5d1005d190b9f65f1f5f7e4cd9f2c1ab33d33714f",
+      "git_blob_sha1": "f28e64af5fa0d47892f283113e2583445d1f8376",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/source/assets/tikz-defs.tex",
+      "repository_path": "source/assets/tikz-defs.tex",
+      "working_bytes": 97884,
+      "working_sha256": "9346fc5d53f4110b094270cf4fe84bdc15a264db8da521320c1365520ccf0afa",
+      "git_bytes": 96523,
+      "git_sha256": "502a66fecff6ab2d8aa2e846aeef8d50029048e610c2a859553872d6ea4981e4",
+      "git_blob_sha1": "bbba652c8821fe5a9f321b3fc313dc7a2e1e5ee0",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/xsl/dmoi-html.xsl",
+      "repository_path": "xsl/dmoi-html.xsl",
+      "working_bytes": 13456,
+      "working_sha256": "9a70033065ce53686b6ab39c6c50e4ba70f7ee730cfb7f0fb70acb1ddfa75e13",
+      "git_bytes": 13173,
+      "git_sha256": "63190877576408c6ea441d163ca215264fc294ffe4cf0bbe74f62431394cee5c",
+      "git_blob_sha1": "ed32fbaa27cc264ea0bbd2916f4d31265d643106",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/xsl/dmoi-common.xsl",
+      "repository_path": "xsl/dmoi-common.xsl",
+      "working_bytes": 10593,
+      "working_sha256": "a6fc9fd567f46b8bc312e092a9fa2605665f334b42743e8b41c2fae5d520af65",
+      "git_bytes": 10392,
+      "git_sha256": "f266a2442c9dee3c445f9cda9470ff2db1181b10a2b7c447247ad27c55c1c2a6",
+      "git_blob_sha1": "24fb12645a5d8dace0bdbe44b297c7c46de05fea",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/xsl/entities.ent",
+      "repository_path": "xsl/entities.ent",
+      "working_bytes": 9883,
+      "working_sha256": "9cdeeb8302a04b4fedf4e812788aebd01e6d6ff4b047fde28be4704c482e5ef2",
+      "git_bytes": 9736,
+      "git_sha256": "1d987ea2a70d2addcfad2a269432cd87b9eed7df8875e805208303dce8715138",
+      "git_blob_sha1": "27f4fb4ea390dfa45abf51fb28036410e7dad5cf",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/LICENSE",
+      "repository_path": "LICENSE",
+      "working_bytes": 188,
+      "working_sha256": "e1cd4008924dcbef0964c59284648bd97ae640077e1137014d23db1f61838e64",
+      "git_bytes": 188,
+      "git_sha256": "e1cd4008924dcbef0964c59284648bd97ae640077e1137014d23db1f61838e64",
+      "git_blob_sha1": "364ec87ba2e1dac90111c08a58848500731a80df",
+      "checkout_equals_git": true,
+      "lf_normalized_equals_git": false
+    },
+    {
+      "path": "downloads/upstream/discrete-book/README.md",
+      "repository_path": "README.md",
+      "working_bytes": 2356,
+      "working_sha256": "a8d982da8a6b1a045c138b5adee917864a0fe1c8ae4f535265df9e4296b51901",
+      "git_bytes": 2314,
+      "git_sha256": "fd127161b2b13127102ae8f915d8ad39b61719b40fe24ec179087de20fddfa80",
+      "git_blob_sha1": "66960d2db660e1a8f95d9e2185634de3d94fa0dc",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/upstream/discrete-book/assets/images/cover4.png",
+      "repository_path": "assets/images/cover4.png",
+      "working_bytes": 11971,
+      "working_sha256": "e6cb97c02b6be3d53964e971661684d806b3fb04941d028c1dd3743bb5d28870",
+      "git_bytes": 11971,
+      "git_sha256": "e6cb97c02b6be3d53964e971661684d806b3fb04941d028c1dd3743bb5d28870",
+      "git_blob_sha1": "b56b2fd014c80d53b2bd461886afbe2d51bcd457",
+      "checkout_equals_git": true,
+      "lf_normalized_equals_git": false,
+      "dimensions": [
+        100,
+        142
+      ]
+    },
+    {
+      "path": "downloads/upstream/discrete-book/assets/images/qrcode.png",
+      "repository_path": "assets/images/qrcode.png",
+      "working_bytes": 3576,
+      "working_sha256": "25ac46ed89c1547d707f6aff76d0e9c338ea7eb51efe4d077e19be0b6aea183e",
+      "git_bytes": 3576,
+      "git_sha256": "25ac46ed89c1547d707f6aff76d0e9c338ea7eb51efe4d077e19be0b6aea183e",
+      "git_blob_sha1": "38167af8a3404bd558d9e269e65ff07bb47a2e1a",
+      "checkout_equals_git": true,
+      "lf_normalized_equals_git": false,
+      "dimensions": [
+        200,
+        200
+      ]
+    },
+    {
+      "path": "downloads/upstream/discrete-book/generated-assets/rs/latex-image/graphs-7sum.svg",
+      "repository_path": "generated-assets/rs/latex-image/graphs-7sum.svg",
+      "working_bytes": 9490,
+      "working_sha256": "3705fa5ebd2ade2cd155e284eb27c9ccbc5407f345f3ca4bc37af3916a9785b1",
+      "git_bytes": 9461,
+      "git_sha256": "27ac010ecf130314dd92dd7ffa74fff6b38002b83ee90025a316b80d24af98ab",
+      "git_blob_sha1": "24429562f106ca8937b7c23721d2b51056bf1d15",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true,
+      "svg_dimensions": {
+        "width": "76",
+        "height": "73",
+        "viewBox": "0 0 76 73"
+      },
+      "labels": [
+        "1",
+        "6",
+        "2",
+        "5",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "path": "downloads/upstream/discrete-book/generated-assets/rs/latex-image/graphs-evensum.svg",
+      "repository_path": "generated-assets/rs/latex-image/graphs-evensum.svg",
+      "working_bytes": 9576,
+      "working_sha256": "fa57a3b9412161d1818633cbecc90ee64e52e79fae6b04e6a730ef63b2ea3f5f",
+      "git_bytes": 9547,
+      "git_sha256": "d59d64e902a9233ea4826db6bebf1e2ccd8a0162aeb29ed449e2f0e1117aa0c1",
+      "git_blob_sha1": "39e65906387dfd1116e3a4f3859374b0924607a4",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true,
+      "svg_dimensions": {
+        "width": "76",
+        "height": "73",
+        "viewBox": "0 0 76 73"
+      },
+      "labels": [
+        "1",
+        "5",
+        "2",
+        "6",
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "comparison_file_identities": [
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/source/dmoi.ptx",
+      "repository_path": "source/dmoi.ptx",
+      "working_bytes": 693,
+      "working_sha256": "d2419705c5b52b31db7c549a27b86544b49e0afc9acd0c872747894a93364d20",
+      "git_bytes": 676,
+      "git_sha256": "26c3d390d510b2cae62ff1c16576fc878d8f4195c385f856ad942939bbba7cff",
+      "git_blob_sha1": "c6f048f26ce48b3d3150d03ef753502d0cbe384d",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/source/bookinfo.ptx",
+      "repository_path": "source/bookinfo.ptx",
+      "working_bytes": 3933,
+      "working_sha256": "c3462127704c3ec5250320c722d5039ba74dba810f52a2d7f45830e21c7e3e50",
+      "git_bytes": 3834,
+      "git_sha256": "f6148ada7977ba04cdf12e3a6caea8cf99583cf5ef95791dcbaf9b3294a87677",
+      "git_blob_sha1": "2a06d74e29b6728fef082c6bffb70b90eecbb9b9",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/source/frontmatter.ptx",
+      "repository_path": "source/frontmatter.ptx",
+      "working_bytes": 15004,
+      "working_sha256": "f024674d72f01cd09a808d2689d4d67dd5a77d924e0174bc4092d7e386be70f2",
+      "git_bytes": 14762,
+      "git_sha256": "8aeefa860bf480f90c2849ad149bc159584d8003c6042af2406a70390b9f8341",
+      "git_blob_sha1": "b63cd5d9f3a617b608f29a2abe5147e357ff2531",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/source/ch_intro.ptx",
+      "repository_path": "source/ch_intro.ptx",
+      "working_bytes": 890,
+      "working_sha256": "ecaf8482c172096ed08222147a756370061cc8fc810b52a94a95d4be2159baff",
+      "git_bytes": 869,
+      "git_sha256": "235739d29fff2aaa48afbcecf274e8cdd2bca0eacfbc8970d42dc0cd1add234c",
+      "git_blob_sha1": "e98662159f8f450c5e463c5ca786a5b96b7369e1",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/source/sec_intro-intro.ptx",
+      "repository_path": "source/sec_intro-intro.ptx",
+      "working_bytes": 11376,
+      "working_sha256": "cfe8a106b83fad235dab91d33422224a128150bd2e863f8ced82577993e859b1",
+      "git_bytes": 11144,
+      "git_sha256": "ffc1f49d28e40bf62a413332452a1428466ad4d54f74c0bd19152727ea6e34e5",
+      "git_blob_sha1": "b1e09669e04ffeb18e73444acded9f4e1407588d",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/source/sec_intro-structures.ptx",
+      "repository_path": "source/sec_intro-structures.ptx",
+      "working_bytes": 30627,
+      "working_sha256": "9fbfd93ece9d5e5a497ebe663e9afc16220faaffe907cc6937f05453817cb768",
+      "git_bytes": 30071,
+      "git_sha256": "6001a9d52c5ef751fc0eb3b406f0dc01f7604d65b7cbd0e59dbc1759903ec88b",
+      "git_blob_sha1": "b5614ffb9cf0349dd7a7f80a759f15daba20bc65",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/source/ch_logic.ptx",
+      "repository_path": "source/ch_logic.ptx",
+      "working_bytes": 3218,
+      "working_sha256": "449a5de957865ebe3a23d06445b0df89ecc3772340e67922e949589c876200be",
+      "git_bytes": 3182,
+      "git_sha256": "a80386d4ad16818780d2ee777e8fc7bcdb4d7308d0d6723303fde0a126f9e5d2",
+      "git_blob_sha1": "7c72fc2d432ebdaa6d8fe0776273183d450b7541",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/publication/publication.ptx",
+      "repository_path": "publication/publication.ptx",
+      "working_bytes": 4520,
+      "working_sha256": "dcc62a471160a49bf98c3d6885e5c3013a5cb47ee964addf754d7f247a491041",
+      "git_bytes": 4430,
+      "git_sha256": "80ecd821555ce7e347c8ca8e751e683540f232f135e149d0c110e7963debc438",
+      "git_blob_sha1": "fa857c283a13057e581808e95f33dbb327d0837a",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/project.ptx",
+      "repository_path": "project.ptx",
+      "working_bytes": 2179,
+      "working_sha256": "2c0532b6ae2a9d29c563432746dce390bd92f6a66da037abccaf5261968df135",
+      "git_bytes": 2096,
+      "git_sha256": "bb2d03069255a8953f9e00ad90302dbca304f5c544c2eff3492c7be2732c91cb",
+      "git_blob_sha1": "497d7a3666c754321e15b01c41440c3ea1d35cb9",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/requirements.txt",
+      "repository_path": "requirements.txt",
+      "working_bytes": 81,
+      "working_sha256": "e9d81e32cd9854d95c8f287b700a803c68edebe5f3702bc7cfbc59ca10edf7f6",
+      "git_bytes": 79,
+      "git_sha256": "b8af23fa6cf584f0963e8ec5d1005d190b9f65f1f5f7e4cd9f2c1ab33d33714f",
+      "git_blob_sha1": "f28e64af5fa0d47892f283113e2583445d1f8376",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/source/assets/tikz-defs.tex",
+      "repository_path": "source/assets/tikz-defs.tex",
+      "working_bytes": 97884,
+      "working_sha256": "9346fc5d53f4110b094270cf4fe84bdc15a264db8da521320c1365520ccf0afa",
+      "git_bytes": 96523,
+      "git_sha256": "502a66fecff6ab2d8aa2e846aeef8d50029048e610c2a859553872d6ea4981e4",
+      "git_blob_sha1": "bbba652c8821fe5a9f321b3fc313dc7a2e1e5ee0",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/xsl/dmoi-html.xsl",
+      "repository_path": "xsl/dmoi-html.xsl",
+      "working_bytes": 14179,
+      "working_sha256": "4826aae5739cee86220d396a9ac63fc05e96860394f29a53f6fccf0a581206aa",
+      "git_bytes": 13883,
+      "git_sha256": "032c17b92826830f084c2fcc1d1948e8fbc56e257f45777e2d54e02b4e8eaf00",
+      "git_blob_sha1": "ac9e5c0713866b3820443150b436c1086b5bc13e",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/xsl/dmoi-common.xsl",
+      "repository_path": "xsl/dmoi-common.xsl",
+      "working_bytes": 10593,
+      "working_sha256": "a6fc9fd567f46b8bc312e092a9fa2605665f334b42743e8b41c2fae5d520af65",
+      "git_bytes": 10392,
+      "git_sha256": "f266a2442c9dee3c445f9cda9470ff2db1181b10a2b7c447247ad27c55c1c2a6",
+      "git_blob_sha1": "24fb12645a5d8dace0bdbe44b297c7c46de05fea",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/xsl/entities.ent",
+      "repository_path": "xsl/entities.ent",
+      "working_bytes": 9883,
+      "working_sha256": "9cdeeb8302a04b4fedf4e812788aebd01e6d6ff4b047fde28be4704c482e5ef2",
+      "git_bytes": 9736,
+      "git_sha256": "1d987ea2a70d2addcfad2a269432cd87b9eed7df8875e805208303dce8715138",
+      "git_blob_sha1": "27f4fb4ea390dfa45abf51fb28036410e7dad5cf",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/LICENSE",
+      "repository_path": "LICENSE",
+      "working_bytes": 1142,
+      "working_sha256": "6214939769681e89cc921dcacb1cf93c8e8a512cfaba93ea35fe7e0320e6d001",
+      "git_bytes": 1117,
+      "git_sha256": "7e544e0509f70e951b6f811a18e8432163c1a7db2b099c91d1337e251d85c057",
+      "git_blob_sha1": "cacc2d6ed8b7fe37f5a31408df73804b0a448ccf",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/README.md",
+      "repository_path": "README.md",
+      "working_bytes": 2353,
+      "working_sha256": "70461b97364b6219f9cfd6caaeaccfd0cb0a81382f31d2106919747a3cefafa8",
+      "git_bytes": 2303,
+      "git_sha256": "a6f32096a6c57a48f06f4e10eb91f6e8214584cc5ab780a3d2e010dd2db9c462",
+      "git_blob_sha1": "1160f8b633d3ddf71a5284218f4d3ea84401b0b4",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/assets/images/cover4.png",
+      "repository_path": "assets/images/cover4.png",
+      "working_bytes": 11971,
+      "working_sha256": "e6cb97c02b6be3d53964e971661684d806b3fb04941d028c1dd3743bb5d28870",
+      "git_bytes": 11971,
+      "git_sha256": "e6cb97c02b6be3d53964e971661684d806b3fb04941d028c1dd3743bb5d28870",
+      "git_blob_sha1": "b56b2fd014c80d53b2bd461886afbe2d51bcd457",
+      "checkout_equals_git": true,
+      "lf_normalized_equals_git": false,
+      "dimensions": [
+        100,
+        142
+      ]
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/assets/images/qrcode.png",
+      "repository_path": "assets/images/qrcode.png",
+      "working_bytes": 2291,
+      "working_sha256": "59b347ac715ecb0b32f68f763f033987e03b9394461063302c72e31e1631e491",
+      "git_bytes": 2291,
+      "git_sha256": "59b347ac715ecb0b32f68f763f033987e03b9394461063302c72e31e1631e491",
+      "git_blob_sha1": "9c53a4ac2ba79f7f4d8d8f0f726b3bbf4f093ff6",
+      "checkout_equals_git": true,
+      "lf_normalized_equals_git": false,
+      "dimensions": [
+        392,
+        392
+      ]
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/generated-assets/rs/latex-image/graphs-7sum.svg",
+      "repository_path": "generated-assets/rs/latex-image/graphs-7sum.svg",
+      "working_bytes": 9490,
+      "working_sha256": "3705fa5ebd2ade2cd155e284eb27c9ccbc5407f345f3ca4bc37af3916a9785b1",
+      "git_bytes": 9461,
+      "git_sha256": "27ac010ecf130314dd92dd7ffa74fff6b38002b83ee90025a316b80d24af98ab",
+      "git_blob_sha1": "24429562f106ca8937b7c23721d2b51056bf1d15",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true,
+      "svg_dimensions": {
+        "width": "76",
+        "height": "73",
+        "viewBox": "0 0 76 73"
+      },
+      "labels": [
+        "1",
+        "6",
+        "2",
+        "5",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/generated-assets/rs/latex-image/graphs-evensum.svg",
+      "repository_path": "generated-assets/rs/latex-image/graphs-evensum.svg",
+      "working_bytes": 9576,
+      "working_sha256": "fa57a3b9412161d1818633cbecc90ee64e52e79fae6b04e6a730ef63b2ea3f5f",
+      "git_bytes": 9547,
+      "git_sha256": "d59d64e902a9233ea4826db6bebf1e2ccd8a0162aeb29ed449e2f0e1117aa0c1",
+      "git_blob_sha1": "39e65906387dfd1116e3a4f3859374b0924607a4",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true,
+      "svg_dimensions": {
+        "width": "76",
+        "height": "73",
+        "viewBox": "0 0 76 73"
+      },
+      "labels": [
+        "1",
+        "5",
+        "2",
+        "6",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/THIRD_PARTY_NOTICES.md",
+      "repository_path": "THIRD_PARTY_NOTICES.md",
+      "working_bytes": 1326,
+      "working_sha256": "7855c326ad79f1187f9508a45bfc76f93b268848027d3343c7a232cdaa1d97f9",
+      "git_bytes": 1297,
+      "git_sha256": "e3779ab66e4a9644e7ca4e4322af39b0ea008ef584a425561b336af1411450a4",
+      "git_blob_sha1": "a2f16dc3373aecaad7fce2d6bfbed676d881221a",
+      "checkout_equals_git": false,
+      "lf_normalized_equals_git": true
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/generated-assets/web/latex-image/graphs-7sum.svg",
+      "repository_path": "generated-assets/web/latex-image/graphs-7sum.svg",
+      "working_bytes": 9447,
+      "working_sha256": "faeb77e88eb69d74430e90f9562e9935dac2af5ed92005b9173e46090ef2f82a",
+      "git_bytes": 9447,
+      "git_sha256": "faeb77e88eb69d74430e90f9562e9935dac2af5ed92005b9173e46090ef2f82a",
+      "git_blob_sha1": "1fc364df41c6d542290a7e4833b6ea1bf6d5f101",
+      "checkout_equals_git": true,
+      "lf_normalized_equals_git": false,
+      "svg_dimensions": {
+        "width": "77",
+        "height": "75",
+        "viewBox": "0 0 77 75"
+      },
+      "labels": [
+        "1",
+        "6",
+        "2",
+        "5",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "path": "downloads/discrete-mathematics-open-introduction-id/generated-assets/web/latex-image/graphs-evensum.svg",
+      "repository_path": "generated-assets/web/latex-image/graphs-evensum.svg",
+      "working_bytes": 9533,
+      "working_sha256": "a91e16294fdb2e3bab8a52b8aa5deda3b5e928dcd5717fa63a196f033ec53f0f",
+      "git_bytes": 9533,
+      "git_sha256": "a91e16294fdb2e3bab8a52b8aa5deda3b5e928dcd5717fa63a196f033ec53f0f",
+      "git_blob_sha1": "8fc6f09e0323afa6b49a5e23642955eb8a13edd5",
+      "checkout_equals_git": true,
+      "lf_normalized_equals_git": false,
+      "svg_dimensions": {
+        "width": "77",
+        "height": "75",
+        "viewBox": "0 0 77 75"
+      },
+      "labels": [
+        "1",
+        "5",
+        "2",
+        "6",
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "canon": {
+    "receipt": "languages/pnb-Arab-PK/canon/receipts/B10-start-next-unit-20260831T001813630011Z.json",
+    "loci": [
+      "C02",
+      "C03",
+      "C05",
+      "C07",
+      "C10",
+      "C11"
+    ],
+    "actual_use": "Read for imperative, order/location, purpose versus implication, reason-giving and explicitly separate qualifications. Existing Punjabi set/function/relation/ordered-pair entries were consulted read-only. Specialist terms including codomain, sequence, cardinality and relation properties still require explicit provisional choices and later native/educator review.",
+    "not_claimed": "At the initial source-study stage no B10 translation draft/revision/QA occurred. The subsequent B10-frontmatter input checkpoint has separate draft/revision/QA receipts; no new canon sources, downloads or OCR."
+  },
+  "validation": {
+    "scope": "Original source-study measurements only; follow-up frontmatter translation/input-QA measurements are recorded in qa/b10-frontmatter-language-notes.md.",
+    "source_or_comparison_mutations": false,
+    "downloads": 0,
+    "asset_copies": 0,
+    "translation_blocks_created": 0,
+    "b10_reader_builds": 0,
+    "selected_git_byte_checks": 43,
+    "limits": [
+      "Source/count/include and exact Git-blob observations only, not a full-book QA or new audit.",
+      "PNG originals were visually viewed; SVG geometry/labels were inspected as vector source and TikZ, not browser-rendered. The local image viewer does not support SVG.",
+      "QR original was viewed but not decoded; no local QR decoder was present. Its printed/source URL discrepancy must be resolved explicitly at production, not assumed from pixels.",
+      "Runtime availability is a local Python probe, not a completed renderer feasibility test.",
+      "All five assigned works remain active."
+    ]
+  },
+  "next_action": "B10-frontmatter now has complete input translation and source-bound pre-render checks; prepare/build/review its actual reader when authorized. Next substantive translation scope remains complete Chapter 0 as B10-001, with fresh canon draft/revision/QA consultations. Neither the whole B10 book nor the five-work assignment is complete."
+}

@@ -1,0 +1,282 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81293",
+  "section": "fs-id2188583",
+  "date": "2026-09-01",
+  "source_title": "Section Exercises",
+  "source_path": "languages/bn-Beng-IN/provenance/modules/m81293.source.cnxml",
+  "source_sha256": "334b23102b7f15d4c4bac459a2f3798b66d408e14ad59daa2f3d9cfe274f52d4",
+  "overlay_sha256": "baa6b9be318b6d6db38a2ec7bd8ce4515736912541d518648028a42ebc54fbcd",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR10",
+        "TR11"
+      ],
+      "read": [
+        "Current22-exemplar canon README, examples and52-term ledger",
+        "Complete actual p057/p058/p008/p009 OCR and all four page images",
+        "Pinned m81293 source and complete788-element assigned section",
+        "All94 source problems,47 provided solutions,47 source-absent solutions and5 original images"
+      ],
+      "action": "Use TR08 for decimal place vocabulary, TR09 for digit-by-digit readings with zeros and positive number-line register, TR10 only for Indian/international naming context, and TR11 only for the lexical আসন্ন মান witness. Reject p057's visibly shifted12.74 row and p009 OCR's40900 in favor of the actual printed4000. Treat OpenStax as the mathematical source and these Bengali pages only as limited register/terminology witnesses."
+    },
+    {
+      "stage": "during drafting",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR11"
+      ],
+      "read": [
+        "Actual p057 place-value table and p058 reading/number-line passages again",
+        "Actual p009 estimation passage again",
+        "Every source paragraph slot, MathML node, exercise/solution pair and all five raster pixels",
+        "Completed m81293 Name, Write, Locate, Order and Round section records for coordinated wording"
+      ],
+      "action": "Keep ordinary Bengali decimal-point reading distinct from the source's place-value-name method; preserve leading and internal zeros. Use signed whole-value reasoning for negative comparisons. For every rounding request, calculate directly from the original number. Preserve source US currency and fictitious contexts without conversion or current-rate claims."
+    },
+    {
+      "stage": "pre-integration QA",
+      "examples": [
+        "TR08",
+        "TR09",
+        "TR11"
+      ],
+      "read": [
+        "Complete p057/p058/p009 OCR plus actual page images after drafting",
+        "All five actual source images after drafting: 201,203,206,209 and Figure_AppB_028",
+        "Saved overlay against pinned source with exact rational/Decimal checks for all94 exercises",
+        "In-memory rendered structure for416 IDs,95 MathML,5 images,11 list items and10 emphasis nodes"
+      ],
+      "action": "Confirm three source alts incorrectly call dark blue-green dots red; preserve pixels and document the discrepancy visibly. Confirm47 supplied answers and47 absent answers exactly. Preserve all MathML except four approved linguistic mtext substitutions; retain the anomalous m:mn100-meter exactly and provide an adjacent Bengali gloss."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "decimal readings and place-value names",
+      "affected_locations": [
+        "eip-784",
+        "fs-id2392256 through fs-id2159834",
+        "eip-45",
+        "fs-id1722167 through fs-id2833266"
+      ],
+      "decision": "TR09 directly supports reading each digit after দশমিক separately, including zeros. The source-style whole-plus-place-value name remains an explicitly explained alternate. TR08 supports দশাংশ, শতাংশ and সহস্রাংশ, but its incorrect12.74 row is excluded. Negative descriptions apply ঋণাত্মক to the whole magnitude."
+    },
+    {
+      "topic": "conversion and simplest form",
+      "affected_locations": [
+        "eip-362",
+        "24 decimal-to-fraction exercises"
+      ],
+      "decision": "Each decimal was evaluated as an exact rational number and reduced by a common factor; whole parts remain mixed fractions where the source gives them. Signs apply to the full value, never just the displayed whole part. No answers were added to the12 source-absent alternating problems."
+    },
+    {
+      "topic": "number-line positions and source colors",
+      "affected_locations": [
+        "eip-238",
+        "fs-id1580055",
+        "fs-id2671611",
+        "fs-id1960314",
+        "fs-id1816561"
+      ],
+      "decision": "Coordinates0.8,-0.2,3.1 and-2.5 were checked against visible axes and exact fractions. Actual201/203/206 pixels use dark blue-green dots although source alts say red; Bengali alts describe actual pixels and warn about the source wording. Image209 has no color fault."
+    },
+    {
+      "topic": "signed comparisons",
+      "affected_locations": [
+        "eip-246",
+        "12 comparison exercises"
+      ],
+      "decision": "Positive comparisons follow whole part then aligned decimal places; negative comparisons use signed value and distance from zero. TR09's nonnegative examples are not treated as a universal signed rule. All six supplied comparison symbols pass exact rational comparison, and the other six answers remain absent."
+    },
+    {
+      "topic": "rounding scope and method",
+      "affected_locations": [
+        "eip-28",
+        "fs-id1830004",
+        "fs-id2209026",
+        "all20 rounding exercises"
+      ],
+      "decision": "Use the coordinated heading আসন্নমান নির্ণয় করো. Each requested place is computed independently from the original source number; one answer is never fed into the next. Preserve trailing zeros such as0.30,0.70,4.10 and7.10. TR11 witnesses আসন্ন মান and printed4117→4100/4000 only; it is not claimed as a decimal tie/carry rule witness."
+    },
+    {
+      "topic": "money, names and units",
+      "affected_locations": [
+        "fs-id1499655 through fs-id2730532",
+        "fs-id1415848",
+        "fs-id1966973",
+        "fs-id2218108"
+      ],
+      "decision": "Transliterate proper names and retain original US dollars/cents, cities and fictional values. Explain a penny only as one hundredth of a dollar; do not convert currency or imply current prices/tax rates. The Tim/Jim comparison is12.3<12.32. The postcard statement10 for0.99¢ is intentionally the object of the question, so it and its absent answer remain unchanged in mathematical meaning."
+    },
+    {
+      "topic": "linguistic MathML and m:mn boundary",
+      "affected_locations": [
+        "eip-246/m:math/m:mtext",
+        "fs-id1966973/m:math[2]/m:mrow/m:mtext",
+        "fs-id1966973/m:math[3]/m:mrow/m:mtext",
+        "fs-id2218108/m:math/m:mtext[1]",
+        "fs-id1966973/m:math[1]/m:mn"
+      ],
+      "decision": "Only four approved linguistic mtext values are localized: or,12.32 seconds,12.3 seconds and for. Their numbers remain exact. Source m:mn100-meter is not eligible for this exception; retain it byte-for-byte and add the adjacent Bengali gloss100 মিটার. All other MathML content, operators, structures and attributes remain exact after allowlist reversal."
+    },
+    {
+      "topic": "solution and raster accessibility coverage",
+      "affected_locations": [
+        "all94 exercises",
+        "all5 media"
+      ],
+      "decision": "Translate every learner-facing problem and all47 provided solutions. Do not manufacture the47 omitted alternating answers. The self-check is a fixed English raster, so provide a complete Bengali alt covering its four columns and six rows while preserving its pixels."
+    },
+    {
+      "topic": "witness limits and withdrawn ranking",
+      "affected_locations": [
+        "all translated text and this record"
+      ],
+      "decision": "TR08-TR11 are supplementary Indian Bengali language/register witnesses, not West Bengal curriculum certification and not mathematical authority. No ranking or withdrawn Top10 methodology is cited. No government prose is copied and no training-data use is claimed."
+    }
+  ],
+  "source_errata": [
+    {
+      "source_media_ids": [
+        "fs-id1580055",
+        "fs-id2671611",
+        "fs-id1816561"
+      ],
+      "files": [
+        "CNX_BMath_Figure_05_01_201_img.jpg",
+        "CNX_BMath_Figure_05_01_203_img.jpg",
+        "CNX_BMath_Figure_05_01_206_img.jpg"
+      ],
+      "issue": "Each source alt calls its plotted point red, but direct pixel inspection shows a dark blue-green point. Coordinates and axis labels are otherwise correct.",
+      "action": "Preserve pixels; use accurate Bengali color descriptions with explicit source-description warnings. Mirror this erratum in the overlay source_errata array."
+    }
+  ],
+  "localization_limitations": [
+    {
+      "source_para_id": "fs-id1966973",
+      "source_xpath": ".//c:para[@id='fs-id1966973']/m:math[1]/m:mn",
+      "issue": "The source encodes the linguistic unit token100-meter as m:mn rather than m:mtext.",
+      "action": "Retain the original m:mn exactly and add adjacent learner-facing Bengali gloss100 মিটার; do not expand the reversible mtext exception into m:mn."
+    }
+  ],
+  "image_checks": [
+    {
+      "file": "CNX_BMath_Figure_05_01_201_img.jpg",
+      "observed": "Actually inspected axis-4 through4 and point0.8 between0 and1. Point is dark blue-green, not source-alt red."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_203_img.jpg",
+      "observed": "Actually inspected axis-4 through4 and point-0.2 between-1 and0. Point is dark blue-green, not source-alt red."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_206_img.jpg",
+      "observed": "Actually inspected axis-4 through4 and point-2.5 midway between-3 and-2. Point is dark blue-green, not source-alt red."
+    },
+    {
+      "file": "CNX_BMath_Figure_05_01_209_img.jpg",
+      "observed": "Actually inspected axis-5 through5 and point3.1 between3 and4. Coordinate and source description agree."
+    },
+    {
+      "file": "CNX_BMath_Figure_AppB_028.jpg",
+      "observed": "Actually inspected fixed English self-check raster: four columns and six tasks for name,write,convert,locate,order andround. Bengali alt exposes the entire layout; pixels remain unchanged."
+    }
+  ],
+  "answer_audit": [
+    {
+      "category": "name decimals",
+      "count": 12,
+      "provided": 6,
+      "absent": 6,
+      "checked_values": "5.5,7.8,5.01,14.02,8.71,2.64,0.002,0.005,0.381,0.479,-17.9,-31.4; exact digit sequence, zero retention, place name and whole-value sign"
+    },
+    {
+      "category": "write decimals",
+      "count": 14,
+      "provided": 7,
+      "absent": 7,
+      "checked_values": "8.03,9.07,29.81,61.74,0.7,0.6,0.001,0.009,0.029,0.035,-11.0009,-59.0002,13.0395,30.279"
+    },
+    {
+      "category": "convert decimals to reduced fractions or mixed fractions",
+      "count": 24,
+      "provided": 12,
+      "absent": 12,
+      "checked_values": "199/100,583/100,157/10,181/10,239/1000,373/1000,13/100,19/100,11/1000,49/1000,-7/100000,-3/100000,32/5,26/5,141/20,226/25,2003/500,251/125,41/4,51/4,331/250,1241/500,113/8,163/8"
+    },
+    {
+      "category": "locate decimals on number lines",
+      "count": 8,
+      "provided": 4,
+      "absent": 4,
+      "checked_values": "0.8,0.3,-0.2,-0.9,3.1,2.7,-2.5,-1.6; all four supplied raster coordinates inspected"
+    },
+    {
+      "category": "compare decimals",
+      "count": 12,
+      "provided": 6,
+      "absent": 6,
+      "checked_values": "0.9>0.6,0.7<0.8,0.37<0.63,0.86>0.69,0.6>0.59,0.27<0.3,0.91>0.901,0.415>0.41,-0.5<-0.3,-0.1>-0.4,-0.62<-0.619,-7.31<-7.3"
+    },
+    {
+      "category": "round to a single requested decimal place",
+      "count": 12,
+      "provided": 6,
+      "absent": 6,
+      "checked_values": "0.67→0.7,0.49→0.5,2.84→2.8,4.63→4.6,0.845→0.85,0.761→0.76,5.7932→5.79,3.6284→3.63,0.299→0.30,0.697→0.70,4.098→4.10,7.096→7.10"
+    },
+    {
+      "category": "round each original to hundredth,tenth and whole",
+      "count": 4,
+      "provided": 2,
+      "absent": 2,
+      "checked_values": "5.781→5.78/5.8/6;1.638→1.64/1.6/2;63.479→63.48/63.5/63;84.281→84.28/84.3/84"
+    },
+    {
+      "category": "money rounding",
+      "count": 4,
+      "provided": 2,
+      "absent": 2,
+      "checked_values": "58965.95→58966/59000/60000;23795.79→23796/24000/20000;142.19→142.19/142;67.53→67.53/68"
+    },
+    {
+      "category": "writing and interpretation",
+      "count": 4,
+      "provided": 2,
+      "absent": 2,
+      "checked_values": "open money explanation;3+9/100=3.09;12.3<12.32 so Tim is faster; literal10 for0.99¢ question remains unanswered"
+    }
+  ],
+  "local_checks": {
+    "result": "passed",
+    "overlay_sha256": "baa6b9be318b6d6db38a2ec7bd8ce4515736912541d518648028a42ebc54fbcd",
+    "source_elements": 788,
+    "source_ids": 416,
+    "source_mathml": 95,
+    "source_exercises": 94,
+    "source_solutions": 47,
+    "source_absent_solutions": 47,
+    "images": 5,
+    "list_items": 11,
+    "emphasis": 10,
+    "paragraph_overlays": 49,
+    "node_overlays": 10,
+    "source_mtext": 11,
+    "localized_linguistic_mtext": 4,
+    "source_errata_groups": 1,
+    "localization_limitations": 1,
+    "method": "Dependency-free exact Fraction and Decimal evaluation of every source problem and47 supplied answers; direct requested-place rounding from each original value; all95 MathML parsed; five raster coordinates/layouts inspected; every source-absent solution remains absent.",
+    "structure": "Shared translated() passes complete learner-facing coverage, authored-English checks, children+1 slots, unique paths, exact IDs/order/nonlinguistic attributes and allowlist-normalized MathML equality.",
+    "rendering": "Read-only in-memory HTML retains416 IDs,95 MathML,5 images with5 visible Bengali descriptions,11 list items and10 emphasis nodes. Parent owns integrated browser review."
+  },
+  "pending": [
+    "Parent integration and browser review",
+    "Independent West Bengal teacher/language review",
+    "Assistive-technology review of long raster alts and self-check image"
+  ],
+  "scope": "Only assigned overlay and canon record edited with apply_patch; no downloads, media copies, shared edits, deletions or commits. Entire assignment continues beyond this ready block."
+}

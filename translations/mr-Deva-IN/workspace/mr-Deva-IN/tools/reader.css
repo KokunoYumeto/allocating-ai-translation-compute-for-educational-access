@@ -1,0 +1,24 @@
+:root { color-scheme: light; --ink:#172b35; --accent:#006b63; --muted:#50656b; }
+* { box-sizing:border-box; }
+body { margin:0; background:#f3f1ea; color:var(--ink); font:19px/1.85 "Nirmala UI","Mangal","Noto Sans Devanagari",sans-serif; }
+article { max-width:940px; padding:54px 64px; margin:32px auto; background:#fff; border-top:8px solid var(--accent); }
+h1 { font-size:2.3rem; line-height:1.5; margin:10px 0 20px; }
+h2 { font-size:1.65rem; border-bottom:2px solid #d9e6e2; padding-bottom:12px; margin-top:40px; }
+h3 { font-size:1.2rem; line-height:1.65; margin-top:28px; }
+h4 { font-size:1rem; color:var(--accent); margin:12px 0; }
+p { margin:14px 0; }
+li { margin:9px 0; }
+a { color:#00675d; text-underline-offset:4px; }
+nav { padding:18px; background:#eaf4ef; border-radius:5px; font-size:1rem; }
+.eyebrow { color:var(--accent); font-size:.9rem; letter-spacing:.03em; }
+.lead { font-size:1.17rem; }
+.math, .equation { font-family:"Cambria Math","Nirmala UI",serif; font-variant-numeric:lining-nums; overflow-wrap:anywhere; }
+.equation { background:#f2f6f5; padding:12px 18px; border-left:3px solid var(--accent); }
+.problem { font-weight:600; }
+.solution { padding-left:18px; border-left:2px solid #dae7e2; }
+.source-label { font:12px/1.55 monospace; color:var(--muted); overflow-wrap:anywhere; }
+aside { background:#fff9e8; border-left:3px solid #d2a746; padding:1px 20px 10px; margin:24px 0; }
+#credits { font-size:.88rem; color:var(--muted); }
+:target { scroll-margin-top:20px; outline:2px solid #d4ac48; outline-offset:5px; }
+@media (max-width:680px) { body { font-size:18px; } article { margin:0; padding:28px 20px; } h1 { font-size:1.9rem; } ol,ul { padding-left:26px; } }
+@media print { body { background:#fff; font-size:11pt; } article { margin:0; border:0; padding:0; max-width:none; } nav { display:none; } h2,h3,h4 { break-after:avoid; } p,li { orphans:3; widows:3; } .source-label { font-size:8pt; } @page { size:A4; margin:18mm; } }

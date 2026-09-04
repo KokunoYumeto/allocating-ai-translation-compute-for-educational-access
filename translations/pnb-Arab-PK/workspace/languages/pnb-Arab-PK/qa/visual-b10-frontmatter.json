@@ -1,0 +1,28 @@
+{
+  "unit":"B10-frontmatter",
+  "status":"bounded_visual_review_pass_with_limitations",
+  "recorded_date":"2026-08-31",
+  "browser":"Codex in-app Chromium",
+  "reader_sha256":"0e7e9d6a73349d2b972f6d6e44033a57589b0c52db57fffa2a1dda7d0c2ef5bf",
+  "structural_checks":877,
+  "source_coverage":"Complete canonical front matter, both prefaces, title/subtitle and selected docinfo wording; 50 source keys, four original IDs, two unchanged PNGs. No chapter or book completion implied.",
+  "viewports":[{"requested_width":1024,"requested_height":800,"document_client_width":1009,"document_scroll_width":1009},{"requested_width":390,"requested_height":844,"document_client_width":375,"document_scroll_width":375}],
+  "observations":[
+    "Original purple English cover remains 100×142; original QR remains 200×200. Neither is stretched, mirrored or substituted with the Indonesian QR. Their plain Punjabi descriptions are explicitly original.",
+    "The source metadata appears before the retained book title; two source TeX/preamble details are collapsed, escaped inert text rather than executable runtime. The opening note distinguishes author voice and historical institutional/resource claims from this adaptation.",
+    "The mobile QR view preserves the malformed source shortdescription URL https://discrete/openmathbooks.org separately from the adjacent validly formed source URL https://discrete.openmathbooks.org/. No QR payload was decoded or certified.",
+    "An automated center click on the wrapped QR advisory did not navigate. Its two line rectangles were inspected, and a pointer click inside the first actual text line reached #b10-frontmatter-qr-note with note top 0.186px. The saved final correction view shows the explanation; no reader change was needed.",
+    "Desktop inspection of pref_editions confirms the first preface's edition-improvement list, including approximately 300 new and more than 750 total exercises. Those are attributed source-book claims, not translated coverage. The source paragraph containing the list uses a valid paragraph-equivalent container."
+  ],
+  "screenshots":{
+    "b10-frontmatter-cover-mobile.jpg":{"sha256":"208adb7850db163be64fad2d5e386c29961a6d9a7e7b9d9e4fd49abc1cbd8b8c","pixels":[375,537]},
+    "b10-frontmatter-qr-mobile.jpg":{"sha256":"39db19fd63c120595110b6c3a28d3391690924932a568cac3f8946ace102782c","pixels":[375,537]},
+    "b10-frontmatter-correction-mobile.jpg":{"sha256":"835debb9792dd617a12cd6c6cf94e94be8ba54e21bfa7080e5dcd65672cd550c","pixels":[375,537]},
+    "b10-frontmatter-edition-desktop.jpg":{"sha256":"ed720fdd2a8ddb35c1e58203c7eeedfa87a3c6af1c55b0c75cdd216f90678c08","pixels":[1009,568]}
+  },
+  "limitations":[
+    "Saved screenshots have bounded pixel dimensions different from requested viewport sizes; not every line of both prefaces was visually proofread by the parent.",
+    "No native-speaker, educator, screen-reader, keyboard-navigation, cross-browser or font-portability certification.",
+    "No fresh availability, legal-rights or QR-decoding determination; existing source-specific notices remain binding. Full five-work workflow remains incomplete."
+  ]
+}

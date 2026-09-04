@@ -1,0 +1,100 @@
+{
+  "unit": "A30-U016",
+  "date": "2026-08-31",
+  "translation_sha256": "930fc1a085556f22723583f59076e7ec8f93f2848b4794786bb2bf8c0e654c96",
+  "source_excerpt_sha256": "c1dfda77c9792efab15c9a279ba4ecb12632c0f7c14fb005c7632013c624bdb2",
+  "examples_consulted": [
+    "VI-C01",
+    "VI-C03",
+    "VI-C05",
+    "VI-C07",
+    "VI-C09"
+  ],
+  "draft_checked": true,
+  "final_checked": true,
+  "root_acceptance": "Root reread the complete draft and exact source excerpt, all five answers/units and actual HUST OCR07/09. Population uses thousands, years are offsets from1990, rocket values are heights, and f4=f6=10 refutes injectivity on R. Accepted newly appended source/license/attribution section at current hash930fc1a0; no mathematical content changed. Reader visual QA recorded separately.",
+  "draft_author_review_completed": true,
+  "independent_review": {
+    "reviewer": "/root/u004_translation",
+    "status": "pass_math_draft_before_attribution_append",
+    "reviewed_translation_sha256": "7c6546d61c2e2a9db8d9fb7b1c4d06babe4e9f35eb9340e1b6ede3622efc4fce",
+    "findings": "Read entire draft/excerpt, actual EN/ID paragraphs/items/formulas and actual OCR07/09/native domain-injectivity passages. Independently verified positions88-92,24IDs/22MathML,complete selected EN category,content/glossary boundary,all anchors/placeholders once,5answer links,all units/data/answers and f4=f6=10. No source wording or mathematical issue, no edits or checker reliance.",
+    "root_review": "Root reread complete source/draft and passed math/units/meaning at prior hash; requested standalone attribution append. New attribution appendix is pending final root acceptance; all source/proof content unchanged."
+  },
+  "stages": [
+    {
+      "stage": "before drafting",
+      "note": "Reopened original instructions, full goal, canon README and terminology. Read complete actual EN and ID Real-World category plus adjacent content/glossary boundary. Reopened actual HUST OCR07/08/09 and native printedpage8 Exercises1.4c/1.6, supporting function/domain, notation, injectivity and proof wording."
+    },
+    {
+      "stage": "during drafting and answer review",
+      "note": "Reopened actual OCR07/09 and native printedpage6 function/formula/domain passage while drafting the real-model and counterexample explanations. Keep source values as function values with units; do not infer a general formula from isolated pairs. State natural real domain before refuting injectivity."
+    },
+    {
+      "stage": "final draft-author review",
+      "note": "Read entire current draft after independent pass. Reopened actual OCR08/09 and native printedpage6 domain/function passage, measured all four witness hashes, and checked terminology/labels/units.140standalone assertions and147withoriginals pass; in-memory Pandoc reader parse passes at this finaldraft hash with24sourceIDs/22sourceMathML/36HTMLIDs/47totalMathML/noimages/notables/noescapedXML. No reader files written; root visualQA still pending."
+    },
+    {
+      "stage": "root-requested attribution completion",
+      "note": "Root found missing standalone attribution appendix while passing math/units/meaning. Reopened actual OCR07 and OCR09, inspected neighboring U013/U014/U015 credits and appended vi-attribution with exact ENcommit/IDrelease, JayAbramson/Rice/OpenStax, A30CCBYNCSA4, notices/component/nonendorsement/native-review limits. Reread actual appended text and reran147checks. Prior Pandoc smoke refers to pre-append hash7c6546d6; all24sourceIDs/22sourceMathML and every exercise/solution remain byte-for-byte unchanged."
+    }
+  ],
+  "witnesses": [
+    {
+      "path": "downloads/vi-canon/hust-07.ocr.txt",
+      "sha256": "a93f4fdf9f7e4606386cd27b026138a3e00c676733ee8666beecd9f9f7545353",
+      "locator": "C-VI-01 PDFpage7/printed6,section3(1),function/formula/domain distinction;VI-C01"
+    },
+    {
+      "path": "downloads/vi-canon/hust-08.ocr.txt",
+      "sha256": "8791a452903eeca13238095063a51227da0cfd6c81fc4bfa19ac73f104d1fa6e",
+      "locator": "C-VI-01 PDFpage8/printed7,Exercises1.1 and1.3,domain and function argument wording;VI-C03/05"
+    },
+    {
+      "path": "downloads/vi-canon/hust-09.ocr.txt",
+      "sha256": "1d5396bef0c6bf2ef7a4f8ecd999b8d48e33033f4643843b473f74d218279aaa",
+      "locator": "C-VI-01 PDFpage9/printed8,Exercise1.4c injectivity and Exercise1.6 proof prompt;VI-C07/09"
+    },
+    {
+      "path": "downloads/vi-canon/hust-giai-tich-1.native.txt",
+      "sha256": "8e810df28f8051bf1db67cc7e19855f9aa0b203c0ef7273dcf5c85dce0cdb38e",
+      "locator": "Printedpage6 section3(1) and printedpage8 Exercises1.4c/1.6; native prose read alongside OCR, not mathematical authority"
+    }
+  ],
+  "source_section": "m49301/fs-id1165135580349",
+  "stop_before": "glossary/definition/fs-id1165137758543",
+  "source_scope": {
+    "source_ids": 24,
+    "mathml": 22,
+    "exercises": 5,
+    "source_exercise_numbers": [
+      88,
+      92
+    ],
+    "source_solutions": 2,
+    "new_solutions": 3,
+    "source_lists": 6,
+    "source_list_items": 12,
+    "source_links": 0,
+    "added_external_attribution_links": 3,
+    "local_answer_links": 5,
+    "images": 0,
+    "tables": 0
+  },
+  "material_decisions_for_root_log": [
+    "Translate full Real-World category5580349/title and all five exercises88-92, including requested rocket exercise4272734. Verify category is last child of SectionExercises, whose parentcontent ends immediately before glossary; no glossary definitions included.",
+    "Preserve all24sourceIDs and22MathML exactly once, including source punctuation in MathML tokens. No mtext, images, tables or external media; math_text={} and assets=[]. Three attribution links are optional/unfetched, not reader dependencies.",
+    "Source garbage units are English tons and Indonesian ton without specifying the ton standard. Retain ton in Vietnamese and openly note no kilogram conversion or metric-ton assumption. Retain13/2and population40000/5000; p uses thousands of people, so f40=13, not f40000=13.",
+    "Garden area remains ft² and dirt volume yd³; expand units as foot vuông and yard khối, not substitute SI units. g5000=50 and g100=1; no thousand scaling in this exercise, no inferred covering depth or general formula.",
+    "Duck input t is elapsed years after1990; output is count, not yearly change. Sourcef5=30 andf10=40 mean1995/2000 with30/40ducks. Reused f names are independent across exercises.",
+    "Rocket input is seconds after launch and output height aboveground in feet; sourceh1=200/h2=350 retained. Do not read height as speed/distance or infer h0/constant motion. Sourceproblem circledlist lacks explicitspan labels; displayⓐ/ⓑ to match its two sourceanswer labels, with an explicit presentation note.",
+    "Preserve underlined source not in exercise92 as underlined không. New exact proof uses natural realdomainR,4!=6andf4=f6=10. A single exact collision refutes injectivity; finite successes would not establish injectivity. No graph or physical units invented.",
+    "Keep two source solutions89/91 clearly separate from three new solutions88/90/92 and label every expanded unit/model/domain explanation as supplementary. Real-world models remain assumptions of source exercises, not empirically verified claims.",
+    "Canon directly witnesses function/domain/injectivity/proof language. Unit expansions and ton ambiguity note are transparent translator prose, not falsely attributed canon terminology. No new language witness is needed for these unit-preserving explanations; no canon exercise or formula incorporated.",
+    "Standalone checker uses committed draft/excerpt and Pythonstdlib only:113structure+20unit/data preservation+7exact finite arithmetic assertions. Optional --originals adds7full-source checks; neither mode fetches data. Exact subtree comparison ignores only parent-level whitespace tail outside the selectedsection, not internal sourcecontent.",
+    "Appended root-requested standalone source/license/attribution section with explicit independent adaptation/change notice. Added three optional originalsource/IDedition/license URLs; no fetch and no mathematical content change.",
+    "Only six U016-owned files authored, no sharedregistry/assets/notices/status edits,download or commit. final_checked remainsfalse pending root reader/visual review. Five exercise draft completion is not module/book/five-bookgoal completion."
+  ],
+  "canon_limit": "Repeated actual canon readings guide Vietnamese prose only. Known OCR/formula slips do not override the pinned EN/ID source or independent arithmetic; unit phrasing is not claimed as directly canon-witnessed.",
+  "native_speaker_review": "not_performed"
+}

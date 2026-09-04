@@ -1,0 +1,61 @@
+{
+  "module": "m81290",
+  "section": "fs-id1752471",
+  "result": "pass",
+  "translation_sha256": "c2ce929d02203413e6a633162c3afa1b4c8d16eb8468faeea0f7fd64ae512d27",
+  "builders": {
+    "scripts/build.py": "c4da8b071ff7e690ff8b530625ea3b33c53091631740cf1fa7e86977cb766451",
+    "scripts/build_sections.py": "6da182dad65b0ee0cc5afd30f9c4ed28fb6a3cb1d81d1c0745b87825faf664a3"
+  },
+  "source_sha256": "96985df586080ae5e52b870320d310a6061a0c00c5d1699e58a024e55bdba005",
+  "reader": "reader/sections/m81290-fs-id1752471.html",
+  "reader_sha256": "73c66a6a5f4ecda906c77009872bc3e404b533010343052d9f13de99fbcb9bd3",
+  "nodes": 335,
+  "ids": 65,
+  "mathml": 26,
+  "localized_linguistic_mtext": 0,
+  "mathematical_integrity": "exact after reversing only explicitly checked linguistic mtext substitutions",
+  "examples": 3,
+  "exercises": 9,
+  "assets": [
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_015_img.jpg",
+      "bytes": 80372,
+      "sha256": "21556d35374f3662f346922e6cd3b7388a7c6bf83029dcbee54c6db0020c17d9",
+      "git_blob": "de5136acc660b78111b9d9fc5ec3fe1c0d0a38d7"
+    },
+    {
+      "path": "provenance/pilot/media/CNX_BMath_Figure_04_06_016_img.jpg",
+      "bytes": 93362,
+      "sha256": "b1c41c9075b507322146c0826ffd0ea044e6e5adaabe9e8fbca9eccf6c8a46d6",
+      "git_blob": "6ff61e75afd2094876c86255e5e41ffd2e327125"
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_prose_clarified",
+      "source_ids": [
+        "fs-id4211932",
+        "fs-id1167906343570"
+      ],
+      "source_issue": "The raster caption says we cannot subtract7/8from6/8. The subtraction is defined and equals−1/8; regrouping is used here to keep a nonnegative fractional-part difference in this method.",
+      "evidence": "Actual CNX_BMath_Figure_04_06_016_img.jpg caption and correct regrouped arithmetic.",
+      "bengali_correction": "সম্পাদকীয় ব্যাখ্যা: 6/8 থেকে 7/8 বিয়োগ করা সম্ভব; ফল −1/8। এখানে ভগ্নাংশ অংশের ফল অঋণাত্মক রাখতে একটি গোটা পুনর্বণ্টন করা হয়েছে।",
+      "policy": "Keep original pixels and mathematical steps; add a visibly labelled explanation after the image, without declaring the correct image arithmetic erroneous.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_answer_form_clarified",
+      "source_ids": [
+        "fs-id1863754",
+        "fs-id2278213"
+      ],
+      "source_issue": "The two final practice answers are mathematically correct improper fractions, although nearby examples prefer mixed-form answers for mixed-number inputs.",
+      "bengali_correction": "মূল অপ্রকৃত ভগ্নাংশের উত্তর অপরিবর্তিত রেখে সম্পাদকীয় ব্যাখ্যায় সমতুল মিশ্র মান −(5 + 1/8) এবং −(12 + 1/63) দেখানো হয়েছে।",
+      "policy": "Preserve the exact supplied−41/8and−757/63 MathML. Label supplementary equivalent forms; do not misclassify correct answers as arithmetic errors.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "independent_human_review": "pending",
+  "visual_review": "pending"
+}

@@ -172,8 +172,13 @@ def build(module):
     for override in spec.get('slot_overrides', []):
         e = list(target.iter())[override['node_index']]
         assert local(e) == override['tag']
-        assert getattr(e, override['property']) == override['expected']
-        setattr(e, override['property'], override['translation'])
+        prop = override['property']
+        if prop in ('alt','aria-label','summary'):
+            assert e.get(prop) == override['expected']
+            e.set(prop,override['translation'])
+        else:
+            assert getattr(e, prop) == override['expected']
+            setattr(e, prop, override['translation'])
     target.set(XML_LANG, 'bn-Beng-BD')
     for a, b in zip(source.iter(), target.iter()):
         assert a.tag == b.tag
@@ -188,6 +193,7 @@ def build(module):
     assert ids == {e.get('id') for e in target.iter() if e.get('id')}
     exercises = {e.get('id'):e for e in target.iter('{'+C+'}exercise')}
     assert set(exercises) == {c['exercise'] for c in spec['answer_cases']}
+    inverse_checks = 0
     for case in spec['answer_cases']:
         solution = exercises[case['exercise']].find('{'+C+'}solution')
         absent = solution is None
@@ -205,22 +211,52 @@ def build(module):
             assert parse_name(case['question_number_name']) == int(re.sub(r'\D', '', text))
         if 'model_groups' in case:
             assert sum(count*value for count, value in case['model_groups']) == int(text.strip())
-        results = case.get('addition_results', [case['addition_result']] if 'addition_result' in case else [])
+        addition_results = case.get('addition_results', [case['addition_result']] if 'addition_result' in case else [])
+        subtraction_results = case.get('subtraction_results', [case['subtraction_result']] if 'subtraction_result' in case else [])
+        assert not (addition_results and subtraction_results), case['exercise']
+        results = addition_results or subtraction_results
+        operation = 'addition' if addition_results else 'subtraction'
         if results:
             assert len(results) == len(case['operand_pairs'])
             for index, (operands, answer) in enumerate(zip(case['operand_pairs'], results)):
-                assert sum(operands) == answer
-                # Independent base-ten column calculation, including carrying.
-                remaining, carry, place, accumulated = list(operands), 0, 1, 0
-                while any(remaining) or carry:
-                    subtotal = carry+sum(n%10 for n in remaining)
-                    carry, digit = divmod(subtotal,10)
-                    accumulated += digit*place
-                    place *= 10
-                    remaining = [n//10 for n in remaining]
+                if operation == 'addition':
+                    assert sum(operands) == answer
+                    # Independent base-ten column calculation, including carrying.
+                    remaining, carry, place, accumulated = list(operands), 0, 1, 0
+                    while any(remaining) or carry:
+                        subtotal = carry+sum(n%10 for n in remaining)
+                        carry, digit = divmod(subtotal,10)
+                        accumulated += digit*place
+                        place *= 10
+                        remaining = [n//10 for n in remaining]
+                else:
+                    assert len(operands) == 2 and operands[0] >= operands[1]
+                    assert operands[0]-operands[1] == answer
+                    # Independent base-ten column calculation, including chained borrowing.
+                    top, bottom = operands
+                    borrow, place, accumulated = 0, 1, 0
+                    while top or bottom or borrow:
+                        top_digit = top%10-borrow
+                        bottom_digit = bottom%10
+                        borrow = int(top_digit < bottom_digit)
+                        if borrow: top_digit += 10
+                        accumulated += (top_digit-bottom_digit)*place
+                        place *= 10
+                        top //= 10
+                        bottom //= 10
+                    assert borrow == 0
                 assert accumulated == answer
                 if absent: continue
-                if case.get('result_table_ids'):
+                if case.get('standalone_result_table_ids'):
+                    table = next(n for n in solution.iter('{'+C+'}table') if n.get('id') == case['standalone_result_table_ids'][index])
+                    standalone = []
+                    for math in table.iter('{'+M+'}math'):
+                        numbers = list(math.iter('{'+M+'}mn'))
+                        operators = list(math.iter('{'+M+'}mo'))
+                        if len(numbers) == 1 and not operators:
+                            standalone.append(int(numbers[0].text.replace(',','').strip().rstrip('.')))
+                    assert standalone == [answer], (case['exercise'], standalone, answer)
+                elif case.get('result_table_ids'):
                     table = next(n for n in solution.iter('{'+C+'}table') if n.get('id') == case['result_table_ids'][index])
                     final = list(table.iter('{'+M+'}mn'))[-1].text
                     assert int(final.replace(',','').strip().rstrip('.')) == answer
@@ -228,10 +264,17 @@ def build(module):
                     found = re.findall(r'\d[\d,]*', text)
                     assert found and int(found[-1].replace(',','')) == answer, (case['exercise'], found)
                 else:
-                    expected = '+'.join(map(str,operands))+'='+str(answer)
-                    assert expected in re.sub(r'[\s,]+', '', text), (case['exercise'], expected)
+                    operator = '+' if operation == 'addition' else '-'
+                    expected = operator.join(map(str,operands))+'='+str(answer)
+                    normalized = re.sub(r'[\s,]+', '', text).replace('−','-').replace('–','-')
+                    assert expected in normalized, (case['exercise'], expected)
             if case.get('result_items') and not absent:
                 assert [int(n.replace(',','')) for n in re.findall(r'\d[\d,]*',text)] == results
+        normalized_solution = re.sub(r'[\s,]+', '', text).replace('−','-').replace('–','-')
+        for left, right, total in case.get('inverse_addition_checks', []):
+            assert left + right == total
+            assert f'{left}+{right}={total}' in normalized_solution, (case['exercise'], left, right, total)
+            inverse_checks += 1
         if 'comparison' in case:
             answer = results[0]
             boundary = case['comparison']['boundary']
@@ -259,15 +302,20 @@ def build(module):
             if 'inferred_side' in case:
                 outer,inner,length = case['inferred_side']
                 assert outer-inner == length and length in sides
-    equalities = 0
+    equalities = subtraction_equalities = 0
     for math in target.iter('{'+M+'}math'):
         if math.find('.//{'+M+'}mtable') is not None: continue
         for equation in ''.join(math.itertext()).split(';'):
-            equation = re.sub(r'[\s,]+','',equation).rstrip('.')
+            equation = re.sub(r'[\s,]+','',equation).rstrip('.').replace('−','-').replace('–','-')
             if re.fullmatch(r'\d+(?:\+\d+)*=\d+(?:\+\d+)*',equation):
                 left,right = equation.split('=')
                 assert sum(map(int,left.split('+'))) == sum(map(int,right.split('+'))), equation
                 equalities += 1
+            elif re.fullmatch(r'\d+-\d+=\d+',equation):
+                left,right = equation.split('=')
+                minuend,subtrahend = map(int,left.split('-'))
+                assert minuend-subtrahend == int(right), equation
+                subtraction_equalities += 1
     matrix_cells = 0
     if spec.get('addition_matrix'):
         table = next(n for n in target.iter('{'+C+'}table') if n.get('id') == spec['addition_matrix'])
@@ -305,7 +353,8 @@ def build(module):
         source_html += '<section id="bd-glossary"><h2 data-editorial="true">শব্দকোষ</h2>'+renderer.render(glossary)+'</section>'
     objective_html = ''.join(renderer.render(e) for e in abstract)
     status_bn = 'পূর্ণ উৎস-খসড়া' if complete else 'উৎসের ধারাবাহিক আংশিক খসড়া'
-    footer = '<footer id="bd-attribution" lang="en"><h2>Attribution / উৎস ও পরিবর্তন</h2><p>OpenStax, Prealgebra 2e; Copyright Rice University; original author/reviewer credits retained in <a href="../m81241/index.html">the preface</a>. Frozen canonical bundle 38cae454e644abf9f0a623e876994553881597c9; Indonesian edition by KokunoYumeto. Bangladesh Bangla translation: Language Allocation, AI-assisted draft, 2026-08-31.</p><p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>, subject to component notices. <a href="../../provenance/notices/canonical-LICENSE">License</a>. OpenStax and Rice University do not endorse this translation. No native-teacher, browser, PDF or screen-reader approval is claimed for this new draft.</p></footer>'
+    draft_date = spec.get('draft_date','2026-08-31')
+    footer = '<footer id="bd-attribution" lang="en"><h2>Attribution / উৎস ও পরিবর্তন</h2><p>OpenStax, Prealgebra 2e; Copyright Rice University; original author/reviewer credits retained in <a href="../m81241/index.html">the preface</a>. Frozen canonical bundle 38cae454e644abf9f0a623e876994553881597c9; Indonesian edition by KokunoYumeto. Bangladesh Bangla translation: Language Allocation, AI-assisted draft, '+html.escape(draft_date)+'.</p><p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>, subject to component notices. <a href="../../provenance/notices/canonical-LICENSE">License</a>. OpenStax and Rice University do not endorse this translation. No native-teacher, browser, PDF or screen-reader approval is claimed for this new draft.</p></footer>'
     style = STYLE.replace('../assets/', '../../assets/').replace('NumeracyBangla.ttf','NumeracyBanglaMath.ttf')+'\n.circled{list-style:none;padding-left:0}td{overflow-wrap:anywhere}.table-scroll{overflow-x:auto}.table-scroll table{min-width:540px}.table-scroll:focus{outline:3px solid #bc6900}'
     body = '<header><p>bn-Beng-BD · '+module+' · '+status_bn+'</p><h1>'+html.escape(title)+'</h1></header><aside><p>'+html.escape(spec['editorial_note_bn'])+'</p></aside><section id="bd-objectives"><h2>শেখার লক্ষ্য</h2>'+objective_html+'</section><article id="bd-source">'+source_html+'</article>'+footer
     page = '<!DOCTYPE html>\n<html lang="bn-Beng-BD"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>'+html.escape(title)+'</title><style>'+style+'</style></head><body><a class="skip" href="#bd-source">পাঠে যাই</a><main>'+body+'</main></body></html>\n'
@@ -371,6 +420,10 @@ def build(module):
                'media':media, 'canon_witnesses_verified':spec['canon_witnesses_consulted'],
                'limits':['Partial source coverage is not a full module' if not complete else 'Source draft, not complete workflow',
                          'Separate expanded/child answers and PDF/human/accessibility checks remain queued']}
+    if any('subtraction_result' in case or 'subtraction_results' in case for case in spec['answer_cases']):
+        receipt['literal_subtraction_equalities_verified'] = subtraction_equalities
+    if inverse_checks:
+        receipt['inverse_addition_checks_verified'] = inverse_checks
     write(out.parent/'qa-receipt.json',json.dumps(receipt,ensure_ascii=False,indent=2)+'\n')
     return receipt
 

@@ -1,0 +1,20 @@
+{
+  "unit": "B40-opening",
+  "reviewed_at": "2026-09-01T17:28:15+02:00",
+  "reader_sha256": "b2f9f0faafa080248a30af434c354a2b6e458f5bb9db4855f96fed740d9ec7b9",
+  "browser": "in-app Browser",
+  "viewports": {"desktop_content_width": 1009, "mobile_content_width": 375, "mobile_height": 800},
+  "result": "pass after scoped mobile cover fix; bounded visual review",
+  "observations": [
+    "Initial inherited 640-pixel mobile image minimum caused 421-pixel page width and was rejected.",
+    "Final document is 375/375 pixels; 308-pixel cover grid has two minmax(0,1fr) tracks and no overflow.",
+    "Notation table was actually panned; Greek and schedule tables, quotations and tail were visibly reviewed.",
+    "Visible raw-TeX navigation opened source-tex-001 with exact owner and raw \\( \\Re \\) text."
+  ],
+  "screenshots": [
+    {"path": "qa/b40-opening-final-top-mobile.png", "sha256": "659e877b5deef2a97c4101dd0d42792ab0802e39ae71caff9171fed6e7b369d8", "bytes": 19652},
+    {"path": "qa/b40-opening-final-cover-mobile.png", "sha256": "407b231f752c24bc50c9f1282f48abdcec4e022f069ce78ff8b6d903fc8c90a0", "bytes": 14400},
+    {"path": "qa/b40-opening-final-notation-right-mobile.png", "sha256": "b6c7c11c59555886cffbde54a86ce8ee584fabfff0dc958cb7ab49455a62df8b", "bytes": 19535},
+    {"path": "qa/b40-opening-final-rawtex-mobile.png", "sha256": "c43ad1edb47939c682a169e5b8634562f88b41d08b500102500047194a9fe5d7", "bytes": 21622}
+  ]
+}

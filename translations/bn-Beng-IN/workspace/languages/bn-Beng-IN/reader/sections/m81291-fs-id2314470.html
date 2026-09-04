@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="bn-Beng-IN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>সমতার গুণের ধর্ম ব্যবহার করে ভগ্নাংশযুক্ত সমীকরণ সমাধান</title><style>body{font-family:"Nirmala UI","Noto Sans Bengali",sans-serif;color:#182d39;background:#f7f5ef;margin:0;font-size:19px;line-height:1.85}main{max-width:900px;margin:auto;padding:32px 24px;background:white}nav{padding:14px 0;border-bottom:2px solid #14685e}a{color:#075b6b}h1,h2{line-height:1.5;color:#104d48}h1{font-size:2rem}h2{font-size:1.3rem;margin-top:1.7em}p,li{overflow-wrap:anywhere}li{padding:6px 0}aside,.example{border-left:4px solid #157468;padding:8px 20px;margin:24px 0;background:#eff8f4}.solution{padding:8px 14px;background:#f7f7f3}.media{text-align:center;margin:20px 0}img{max-width:100%;height:auto;max-height:280px}math{font-size:1.1em;direction:ltr}.description,.notice{font-size:0.85em;color:#43535a}.notice{border:1px solid #9bafa9;padding:16px}footer{border-top:1px solid #9bafa9;margin-top:36px;padding:16px 0}@media(max-width:480px){main{padding:18px 14px}body{font-size:18px}aside,.example{padding:6px 10px}}@media print{body{background:white;font-size:12pt}main{padding:0}nav{display:none}h2{break-after:avoid}img{max-height:50mm}.example,li{break-inside:avoid}}#fs-id1951781 td > math:has(mtable){display:block;margin:0.5em 0}table{width:100%;border-collapse:collapse;table-layout:fixed}td{padding:8px;vertical-align:top;overflow-wrap:anywhere;border-bottom:1px solid #d5e0dc}td .media{margin:6px 0}td img{max-height:140px}td math{font-size:1em}ol.circled{list-style:none}.math-scroll{display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle;padding:4px 0}.math-scroll:focus{outline:2px solid #14685e}.math-scroll math{white-space:nowrap}menclose[notation~="longdiv"]{display:inline-block;border-top:1.5px solid currentColor;border-left:1.5px solid currentColor;border-top-left-radius:0.35em;padding:0.05em 0.25em 0.05em 0.2em;margin-left:0.12em}menclose[notation~="updiagonalstrike"]{display:inline-block;background:linear-gradient(135deg,transparent calc(50% - 0.65px),currentColor calc(50% - 0.65px),currentColor calc(50% + 0.65px),transparent calc(50% + 0.65px))}.exercise{border:1px solid #aec4bb;padding:10px 12px;margin:18px 0}.exercise-label,.solution-label{font-size:0.8em;color:#43535a;margin:0 0 8px}.solution-label{font-weight:bold}.exercise .solution{margin-top:14px}</style></head><body><main><nav aria-label="পাঠ নির্বাচন"><a href="../index.html">পাঠসূচি</a> · <a href="../U01-companion.html">সহজ ভাষার সহায়িকা</a> · <a href="../U01-source-faithful.html">উৎস-অনুগত নির্বাচিত পাঠ</a></nav><h1>সমতার গুণের ধর্ম ব্যবহার করে ভগ্নাংশযুক্ত সমীকরণ সমাধান</h1><p class="notice">উৎস-অনুগত উপবিভাগ · m81291-fs-id2314470। সম্পূর্ণ বইয়ের অনুবাদ এখনও চলছে। গাণিতিক চিহ্ন, সংখ্যা ও মূল কাঠামো অক্ষুণ্ণ; প্রযোজ্য ক্ষেত্রে সূত্রের শব্দলেবেল বাংলায় অনূদিত। মূল ছবির ভিতরের ইংরেজি লেবেলের অর্থ বাংলা বিবরণে আছে। স্বাধীন শিক্ষক ও ভাষা-পর্যালোচনা বাকি। অন্য উপবিভাগের উৎস-লিঙ্কে ইন্টারনেট প্রয়োজন।</p><section id="fs-id2314470" class="section">
+<h2 class="title">সমতার গুণের ধর্ম ব্যবহার করে ভগ্নাংশযুক্ত সমীকরণ সমাধান</h2>
+<p id="fs-id2949338" class="para">সমীকরণটি দেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>x</mi><mn>4</mn></mfrac><mo>=</mo><mn>3</mn><mo>.</mo></mrow></math> আমরা জানতে চাই, কোন সংখ্যাকে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math> দিয়ে ভাগ করলে ভাগফল হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo></math> ভাগের প্রভাব দূর করতে দুই পক্ষে যে সংখ্যা দিয়ে গুণ করতে হবে, সেটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>.</mo></math> এখানে <strong>সমতার গুণের ধর্ম</strong> ব্যবহার করব। এই ধর্ম বলে, দুটি সমান রাশিকে একই সংখ্যা দিয়ে গুণ করলে গুণফল দুটিও সমান হয়।</p>
+<aside id="fs-id1965649" class="note">
+<h2 class="title">সমতার গুণের ধর্ম</h2>
+<p id="fs-id2290550" class="para">যেকোনো সংখ্যার জন্য— <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo></mrow></math> এবং <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>c</mi><mo>,</mo></mrow></math> নিচের ধর্মটি প্রযোজ্য।</p>
+<div id="fs-id1171103928012" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>যদি</mtext><mspace width="0.2em" /><mi>a</mi><mo>=</mo><mi>b</mi><mo>,</mo><mtext>তবে</mtext><mspace width="0.2em" /><mi>a</mi><mi>c</mi><mo>=</mo><mi>b</mi><mi>c</mi><mo>.</mo></mrow></math></div>
+<p id="fs-id1972020" class="para">সমীকরণের দুই পক্ষকে একই সংখ্যা দিয়ে গুণ করলে সমতা বজায় থাকে। সম্পাদকীয় ব্যাখ্যা: শূন্য দিয়ে গুণ করলেও সমতা সত্য থাকে, কিন্তু উল্টো ধাপে শূন্য দিয়ে ভাগ করা যায় না। তাই সমাধান নির্ণয়ের এই ধাপগুলিতে আমরা অশূন্য সংখ্যা দিয়ে গুণ করব।</p>
+</aside>
+<p id="fs-id1987883" class="para">সমতার গুণের ধর্ম ব্যবহার করে এই সমীকরণটি সমাধান করি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>x</mi><mn>7</mn></mfrac><mo>=</mo><mn>−9</mn><mo>.</mo></mrow></math></p>
+<section id="fs-id2565017" class="example">
+<div id="fs-id1919354" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1919354">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id1543645" class="problem">
+<p id="fs-id1951777" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>x</mi><mn>7</mn></mfrac><mo>=</mo><mn>−9</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1760611" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1165722216597" class="table" aria-label="সমীকরণ x/7 = −9। দুই পক্ষকে 7 দিয়ে গুণ করে 7x/7 = −63, তারপর x = −63 পাওয়া যায়। মূল সমীকরণে এই মান বসালে −63/7 = −9, অর্থাৎ −9 = −9। তাই সমাধান সঠিক।"><span class="label"></span>
+
+
+
+ <tbody class="tbody">
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><div id="eip-id1165722257411" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_030_img-01.png" alt="সমীকরণ: x/7 = −9। ভগ্নাংশটির লব x ও হর 7।"/><p class="description">সমীকরণ: x/7 = −9। ভগ্নাংশটির লব x ও হর 7।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সমতার গুণের ধর্ম ব্যবহার করে দুই পক্ষকে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math> দিয়ে গুণ করো। এতে চলটিকে একলা রাখা যাবে।</td>
+    <td class="entry"><div id="eip-id1165722286725" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_030_img-02.png" alt="দুই পক্ষকে 7 দিয়ে গুণ: 7 × (x/7) = 7 × (−9)। দুই পক্ষে গুণ করার 7 দুটি লাল রঙে।"/><p class="description">দুই পক্ষকে 7 দিয়ে গুণ: 7 × (x/7) = 7 × (−9)। দুই পক্ষে গুণ করার 7 দুটি লাল রঙে।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">গুণ করো।</td>
+    <td class="entry"><div id="eip-id1165721889424" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_030_img-03.png" alt="গুণ করে 7x/7 = −63 পাওয়া যায়। ভগ্নাংশটির লব 7x, অর্থাৎ 7 ও x-এর গুণফল; হর 7।"/><p class="description">গুণ করে 7x/7 = −63 পাওয়া যায়। ভগ্নাংশটির লব 7x, অর্থাৎ 7 ও x-এর গুণফল; হর 7।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সরল করো।</td>
+    <td class="entry"><div id="eip-id1165722200309" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_030_img-04.png" alt="সরল করে x = −63 পাওয়া যায়।"/><p class="description">সরল করে x = −63 পাওয়া যায়।</p></div></td>
+
+  </tr>
+  <tr class="row">
+    <td class="entry"><div id="eip-id1165722229925" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_030_img-05.png" alt="যাচাই করো: মূল সমীকরণে x-এর জায়গায় −63 বসাও। বসানোর মান −63 লাল রঙে।"/><p class="description">যাচাই করো: মূল সমীকরণে x-এর জায়গায় −63 বসাও। বসানোর মান −63 লাল রঙে।</p></div></td>
+    <td class="entry"><div id="eip-id1165722071497" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_030_img-06.png" alt="লাল রঙের −63 বসিয়ে −63/7 এবং −9 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। ভগ্নাংশটির লব −63 ও হর 7।"/><p class="description">লাল রঙের −63 বসিয়ে −63/7 এবং −9 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। ভগ্নাংশটির লব −63 ও হর 7।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সমতাটি সত্য।</td>
+    <td class="entry"><div id="eip-id1165722268728" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_030_img-07.png" alt="−9 = −9; পাশে ঠিকচিহ্ন। সমতাটি সত্য।"/><p class="description">−9 = −9; পাশে ঠিকচিহ্ন। সমতাটি সত্য।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+
+</tbody>
+
+
+</table></section>
+</div></section>
+<aside id="fs-id2778298" class="note">
+<div id="fs-id2730090" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2730090">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1951781" class="problem">
+<p id="fs-id2369709" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>f</mi><mn>5</mn></mfrac><mo>=</mo><mn>−25</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2703738" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2452812" class="para">−125</p>
+</section>
+</div>
+</aside>
+<aside id="fs-id2448182" class="note">
+<div id="fs-id2341035" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2341035">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1571276" class="problem">
+<p id="fs-id1389766" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>h</mi><mn>9</mn></mfrac><mo>=</mo><mn>−27</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1505825" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1785476" class="para">−243</p>
+</section>
+</div>
+</aside>
+<section id="fs-id2213976" class="example">
+<div id="fs-id2619535" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2619535">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id1626984" class="problem">
+<p id="fs-id2246099" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>p</mi><mrow><mn>−8</mn></mrow></mfrac><mo>=</mo><mn>−40</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1508708" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id1269302" class="para">এখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-কে যে সংখ্যা দিয়ে ভাগ করা হয়েছে, সেটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−8</mn><mo>.</mo></mrow></math> দুই পক্ষকে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−8</mn></mrow></math> দিয়ে গুণ করে এই চলটিকে একলা রাখব: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>.</mo></math></p>
+<table id="eip-id1165719561991" class="table" aria-label="সমীকরণ p/(−8) = −40। দুই পক্ষকে −8 দিয়ে গুণ করে (−8p)/(−8) = 320, তারপর p = 320 পাওয়া যায়। মূল সমীকরণে এই মান বসালে 320/(−8) = −40, অর্থাৎ −40 = −40। তাই সমাধান সঠিক।"><span class="label"></span>
+
+
+
+ <tbody class="tbody">
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><div id="eip-id1165719562032" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_031_img-01.png" alt="সমীকরণ: p/(−8) = −40। ভগ্নাংশটির লব p ও হর −8; এখানে মাইনাস চিহ্ন হরের সংখ্যাটির সঙ্গে আছে।"/><p class="description">সমীকরণ: p/(−8) = −40। ভগ্নাংশটির লব p ও হর −8; এখানে মাইনাস চিহ্ন হরের সংখ্যাটির সঙ্গে আছে।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">দুই পক্ষকে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>−8</mn></math> দিয়ে গুণ করো।</td>
+    <td class="entry"><div id="eip-id1165721139749" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_031_img-02.png" alt="দুই পক্ষকে −8 দিয়ে গুণ: (−8) × (p/(−8)) = (−8) × (−40)। গুণ করার −8 দুটি লাল রঙে।"/><p class="description">দুই পক্ষকে −8 দিয়ে গুণ: (−8) × (p/(−8)) = (−8) × (−40)। গুণ করার −8 দুটি লাল রঙে।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">গুণ করো।</td>
+    <td class="entry"><div id="eip-id1165721139770" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_031_img-03.png" alt="গুণ করে (−8p)/(−8) = 320 পাওয়া যায়। ভগ্নাংশটির লব −8p, অর্থাৎ −8 ও p-এর গুণফল; হর −8।"/><p class="description">গুণ করে (−8p)/(−8) = 320 পাওয়া যায়। ভগ্নাংশটির লব −8p, অর্থাৎ −8 ও p-এর গুণফল; হর −8।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সরল করো।</td>
+    <td class="entry"><div id="eip-id1165721139787" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_031_img-04.png" alt="সরল করে p = 320 পাওয়া যায়।"/><p class="description">সরল করে p = 320 পাওয়া যায়।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই করো:</td>
+    <td class="entry"></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">মান বসাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mn>320</mn></math>।</td>
+    <td class="entry"><div id="eip-id1165721139826" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_031_img-05.png" alt="লাল রঙের 320 বসিয়ে 320/(−8) এবং −40 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। ভগ্নাংশটির লব 320 ও হর −8।"/><p class="description">লাল রঙের 320 বসিয়ে 320/(−8) এবং −40 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। ভগ্নাংশটির লব 320 ও হর −8।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সমতাটি সত্য।</td>
+    <td class="entry"><div id="eip-id1165721139845" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_031_img-06.png" alt="−40 = −40; পাশে ঠিকচিহ্ন। সমতাটি সত্য।"/><p class="description">−40 = −40; পাশে ঠিকচিহ্ন। সমতাটি সত্য।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+</tbody>
+
+
+</table>
+</section>
+</div></section>
+<aside id="fs-id4171516" class="note">
+<div id="fs-id1360285" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1360285">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2954309" class="problem">
+<p id="fs-id2926216" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>c</mi><mrow><mn>−7</mn></mrow></mfrac><mo>=</mo><mn>−35</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1816572" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2369880" class="para">245</p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1798569" class="note">
+<div id="fs-id1852419" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1852419">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2208901" class="problem">
+<p id="fs-id1977679" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mi>x</mi><mrow><mn>−11</mn></mrow></mfrac><mo>=</mo><mn>−12</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1374192" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1285554" class="para">132</p>
+</section>
+</div>
+</aside>
+<section id="fs-id1510851" class="section">
+<h2 class="title">সহগ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−1</mn></mrow></math> হলে সমীকরণ সমাধান</h2>
+<p id="fs-id2174049" class="para">সমীকরণটি দেখো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mi>y</mi><mo>=</mo><mn>15</mn><mo>.</mo></mrow></math> দেখে কি মনে হচ্ছে চল <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> একলাই আছে? কিন্তু বাম পক্ষের রাশিতে চলটি হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>,</mo></math> যার আগে মাইনাস চিহ্ন আছে। তাই চলটি এখনও একলা হয়নি।</p>
+<p id="fs-id1965746" class="para">এই ধরনের সমীকরণে চলটিকে একলা রাখার তিনটি পদ্ধতি আছে। তিনটি পদ্ধতিই দেখাব <a href="#fs-id2165414">নিচের উদাহরণে</a>।</p>
+<section id="fs-id2165414" class="example">
+<div id="fs-id2900588" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2900588">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id2438570" class="problem">
+<p id="fs-id1612300" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mi>y</mi><mo>=</mo><mn>15</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1333241" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id1207917" class="para">একটি পদ্ধতিতে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mi>y</mi></mrow></math> রাশিটিকে এভাবে লিখি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−1</mn><mi>y</mi><mo>,</mo></mrow></math> তারপর সমতার ভাগের ধর্ম ব্যবহার করে এই চলটিকে একলা রাখি: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>.</mo></math></p>
+<table id="eip-id1168469574000" class="table" aria-label="প্রথম পদ্ধতি: −y = 15-কে (−1)y = 15 লেখো। দুই পক্ষকে −1 দিয়ে ভাগ করলে y = −15 পাওয়া যায়।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><div id="eip-id1165719562772" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_032_img-01.png" alt="সমীকরণ: −y = 15।"/><p class="description">সমীকরণ: −y = 15।</p></div></td>
+ </tr>
+ <tr class="row">
+   <td class="entry">রাশি <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mi>y</mi></math>-কে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>−1</mn><mi>y</mi></math> আকারে লেখো।</td>
+   <td class="entry"><div id="eip-id1165719562802" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_032_img-02.png" alt="−y-কে (−1)y আকারে লিখে (−1)y = 15 পাওয়া যায়।"/><p class="description">−y-কে (−1)y আকারে লিখে (−1)y = 15 পাওয়া যায়।</p></div></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">দুই পক্ষকে −1 দিয়ে ভাগ করো।</td>
+   <td class="entry"><div id="eip-id1165719562819" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_032_img-03.png" alt="দুই পক্ষকে −1 দিয়ে ভাগ: ((−1)y)/(−1) = 15/(−1)। বাম ভগ্নাংশের লব (−1)y, অর্থাৎ −1 ও y-এর গুণফল; হর −1। ডান ভগ্নাংশের লব 15 ও হর −1। ভাজক −1 দুটি লাল রঙে।"/><p class="description">দুই পক্ষকে −1 দিয়ে ভাগ: ((−1)y)/(−1) = 15/(−1)। বাম ভগ্নাংশের লব (−1)y, অর্থাৎ −1 ও y-এর গুণফল; হর −1। ডান ভগ্নাংশের লব 15 ও হর −1। ভাজক −1 দুটি লাল রঙে।</p></div></td>
+ </tr>
+   <tr class="row">
+   <td class="entry">দুই পক্ষই সরল করো।</td>
+   <td class="entry"><div id="eip-id1165719626646" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_032_img-04.png" alt="সরল করে y = −15 পাওয়া যায়।"/><p class="description">সরল করে y = −15 পাওয়া যায়।</p></div></td>
+ </tr>
+
+
+</tbody>
+
+
+
+
+</table><p id="fs-id2437122" class="para">আরেকটি পদ্ধতিতে দুই পক্ষকে যে সংখ্যা দিয়ে গুণ করব, সেটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−1</mn><mo>.</mo></mrow></math></p>
+<table id="eip-id1168468554901" class="table" aria-label="দ্বিতীয় পদ্ধতি: −y = 15-এর দুই পক্ষকে −1 দিয়ে গুণ করো। (−1)(−y) = (−1)(15), তাই y = −15। বাম পক্ষের দ্বিতীয় গুণনীয়ক −y, শুধু y নয়।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><div id="eip-id1165722248748" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_034a_img.jpg" alt="সমীকরণ: −y = 15।"/><p class="description">সমীকরণ: −y = 15।</p></div></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">দুই পক্ষকে −1 দিয়ে গুণ করো।</td>
+   <td class="entry"><div id="eip-id1165721889179" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_033_img-02.png" alt="দুই পক্ষকে −1 দিয়ে গুণ: (−1)(−y) = (−1)(15)। গুণ করার −1 দুটি লাল রঙে। বাম পক্ষের বন্ধনীর ভিতরে −y রয়েছে।"/><p class="description">দুই পক্ষকে −1 দিয়ে গুণ: (−1)(−y) = (−1)(15)। গুণ করার −1 দুটি লাল রঙে। বাম পক্ষের বন্ধনীর ভিতরে −y রয়েছে।</p></div></td>
+ </tr>
+   <tr class="row">
+   <td class="entry">দুই পক্ষই সরল করো।</td>
+   <td class="entry"><div id="eip-id1165722173918" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_033_img-03.png" alt="সরল করে y = −15 পাওয়া যায়।"/><p class="description">সরল করে y = −15 পাওয়া যায়।</p></div></td>
+ </tr>
+
+
+</tbody>
+
+
+
+
+</table><p id="fs-id1511313" class="para">তৃতীয় পদ্ধতিতে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mi>y</mi></mrow></math> মানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math>-এর বিপরীত সংখ্যা—এভাবে পড়ি। কোন সংখ্যার বিপরীত সংখ্যা হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn></mrow></math>? আবার <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn></mrow></math>-এর বিপরীত সংখ্যা হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>−15</mn><mo>.</mo></mrow></math> তাই <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>=</mo><mn>−15</mn><mo>.</mo></mrow></math></p>
+<p id="fs-id4280485" class="para">তিনটি পদ্ধতিতেই আমরা <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math>-কে একলা রেখে সমীকরণটির সমাধান পেয়েছি।</p>
+<p id="fs-id2839915" class="para">যাচাই করো:</p>
+<table id="eip-id1168469681151" class="table" aria-label="মূল সমীকরণ −y = 15-তে y-এর জায়গায় −15 বসাও। −(−15) = 15 হয়। দুই পক্ষ সরল করলে 15 = 15; সমাধান সঠিক।"><span class="label"></span>
+<tbody class="tbody">
+ <tr class="row">
+   <td class="entry"></td>
+   <td class="entry"><div id="eip-id1165722196473" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_034a_img.jpg" alt="যাচাইয়ের জন্য মূল সমীকরণ: −y = 15।"/><p class="description">যাচাইয়ের জন্য মূল সমীকরণ: −y = 15।</p></div></td>
+ </tr>
+  <tr class="row">
+   <td class="entry">মান বসাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mn>−15</mn></math>।</td>
+   <td class="entry"><div id="eip-id1165722061408" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_034_img-02.png" alt="y-এর জায়গায় লাল রঙের −15 বসিয়ে −(−15) এবং 15 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। ডান পক্ষের 15-ও বন্ধনীর ভিতরে।"/><p class="description">y-এর জায়গায় লাল রঙের −15 বসিয়ে −(−15) এবং 15 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। ডান পক্ষের 15-ও বন্ধনীর ভিতরে।</p></div></td>
+ </tr>
+   <tr class="row">
+   <td class="entry">সরল করো। সমতাটি সত্য।</td>
+   <td class="entry"><div id="eip-id1165721817239" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_034_img-03.png" alt="15 = 15; পাশে ঠিকচিহ্ন। সমতাটি সত্য।"/><p class="description">15 = 15; পাশে ঠিকচিহ্ন। সমতাটি সত্য।</p></div></td>
+ </tr>
+
+
+</tbody>
+
+
+
+
+
+
+</table></section>
+</div></section>
+<aside id="fs-id1597900" class="note">
+<div id="fs-id1784080" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1784080">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2758025" class="problem">
+<p id="fs-id2670319" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mi>y</mi><mo>=</mo><mn>48</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1727938" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2590619" class="para">−48</p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1988962" class="note">
+<div id="fs-id4114386" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id4114386">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1574924" class="problem">
+<p id="fs-id772188" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mi>c</mi><mo>=</mo><mn>−23</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2484398" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2649147" class="para">23</p>
+</section>
+</div>
+</aside>
+</section>
+<section id="fs-id2825400" class="section">
+<h2 class="title">ভগ্নাংশ সহগযুক্ত সমীকরণ সমাধান</h2>
+<p id="fs-id2671633" class="para">সমীকরণে সহগটি অশূন্য ভগ্নাংশ হলে সমতার গুণের ধর্ম ব্যবহার করে সহগের মান করতে পারি <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math> সম্পাদকীয় শর্ত: শূন্যের গুণাত্মক বিপরীত নেই; তাই সহগ শূন্য হলে এই পদ্ধতি প্রযোজ্য নয়।</p>
+<p id="fs-id1169859" class="para">যেমন, এই সমীকরণটি নিই:</p>
+<div id="fs-id1171104345483" class="equation"><span class="label"></span><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mi>x</mi><mo>=</mo><mn>24</mn></mrow></math></div>
+<p id="fs-id2385558" class="para">এখানে <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>-এর সহগ হলো <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math> যে চলের মান নির্ণয় করতে চাই, সেটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>,</mo></math> এবং সেটিকে একলা রাখতে সহগের মান করতে হবে <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo></math> একটি অশূন্য সংখ্যা ও তার গুণাত্মক বিপরীতের গুণফল হয় <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>,</mo></math> তাই দুই পক্ষে এমন সংখ্যা দিয়ে গুণ করব যাতে একলা থাকে <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>। দুই পক্ষে যে সহগের গুণাত্মক বিপরীত দিয়ে গুণ করব, সেটি <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>.</mo></mrow></math> এই পদ্ধতি দেখানো হয়েছে <a href="#fs-id1951438">নিচের উদাহরণে</a>।</p>
+<section id="fs-id1951438" class="example">
+<div id="fs-id2697498" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2697498">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id1363886" class="problem">
+<p id="fs-id1937073" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mi>x</mi><mo>=</mo><mn>24</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2314247" class="solution">
+<h2 class="title">সমাধান</h2>
+<table id="eip-id1165721301772" class="table" aria-label="সমীকরণ (3/4)x = 24। অশূন্য সহগ 3/4-এর গুণাত্মক বিপরীত 4/3 দিয়ে দুই পক্ষকে গুণ করো। বাম পক্ষে সহগ 1 হয়; ডান পক্ষে (4/3) × (24/1) = 32। তাই x = 32। মূল সমীকরণে বসিয়ে (3/4) × (32/1) = 24 পাওয়া যায়; সমাধান সঠিক।"><span class="label"></span>
+
+
+
+ <tbody class="tbody">
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><div id="eip-id1165722064490" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_035_img-01.png" alt="সমীকরণ: (3/4)x = 24। 3/4-এর লব 3 ও হর 4। চল x ভগ্নাংশের হরের মধ্যে নয়; 3/4 দিয়ে x-কে গুণ করা হয়েছে।"/><p class="description">সমীকরণ: (3/4)x = 24। 3/4-এর লব 3 ও হর 4। চল x ভগ্নাংশের হরের মধ্যে নয়; 3/4 দিয়ে x-কে গুণ করা হয়েছে।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সহগের গুণাত্মক বিপরীত দিয়ে দুই পক্ষকে গুণ করো।</td>
+    <td class="entry"><div id="eip-id1165721576149" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_035_img-02.png" alt="দুই পক্ষকে 4/3 দিয়ে গুণ: (4/3) × (3/4)x = (4/3) × 24। গুণ করার 4/3 দুটি লাল রঙে; এই ভগ্নাংশের লব 4 ও হর 3।"/><p class="description">দুই পক্ষকে 4/3 দিয়ে গুণ: (4/3) × (3/4)x = (4/3) × 24। গুণ করার 4/3 দুটি লাল রঙে; এই ভগ্নাংশের লব 4 ও হর 3।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সরল করো।</td>
+    <td class="entry"><div id="eip-id1165721983600" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_035_img-03.png" alt="সহগ সরল করে 1x = (4/3) × (24/1) পাওয়া যায়। 24/1-এর লব 24 ও হর 1।"/><p class="description">সহগ সরল করে 1x = (4/3) × (24/1) পাওয়া যায়। 24/1-এর লব 24 ও হর 1।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">গুণ করো।</td>
+    <td class="entry"><div id="eip-id1165721797212" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_035_img-04.png" alt="গুণ করে x = 32 পাওয়া যায়।"/><p class="description">গুণ করে x = 32 পাওয়া যায়।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই করো:</td>
+    <td class="entry"><div id="eip-id1165721854802" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_035_img-05.png" alt="যাচাইয়ের জন্য মূল সমীকরণ: (3/4)x = 24।"/><p class="description">যাচাইয়ের জন্য মূল সমীকরণ: (3/4)x = 24।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">মান বসাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>32</mn></math>।</td>
+    <td class="entry"><div id="eip-id1165721574815" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_035_img-06.png" alt="x-এর জায়গায় 32 বসিয়ে (3/4) × 32 এবং 24 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন।"/><p class="description">x-এর জায়গায় 32 বসিয়ে (3/4) × 32 এবং 24 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সংখ্যা <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>32</mn></math>-কে ভগ্নাংশের আকারে লেখো।</td>
+    <td class="entry"><div id="eip-id1165722071394" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_035_img-07.png" alt="32-কে 32/1 লিখে (3/4) × (32/1) এবং 24 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। 32/1-এর লব 32 ও হর 1।"/><p class="description">32-কে 32/1 লিখে (3/4) × (32/1) এবং 24 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন। 32/1-এর লব 32 ও হর 1।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">গুণ করো। সমতাটি সত্য।</td>
+    <td class="entry"><div id="eip-id1165722052461" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_035_img-08.png" alt="24 = 24; পাশে ঠিকচিহ্ন। সমতাটি সত্য।"/><p class="description">24 = 24; পাশে ঠিকচিহ্ন। সমতাটি সত্য।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+</tbody>
+
+
+</table><p id="fs-id1377485" class="para">লক্ষ করো, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mi>x</mi><mo>=</mo><mn>24</mn><mo>,</mo></mrow></math> সমীকরণে দুই পক্ষকে <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math> দিয়ে ভাগ করেও <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>-কে একলা রাখা যায়। অশূন্য সংখ্যা দিয়ে ভাগ করা আর তার গুণাত্মক বিপরীত দিয়ে গুণ করা একই কাজ; তাই ফলও একই হবে। মূল পাঠে বলা হয়েছে, অধিকাংশের কাছে গুণাত্মক বিপরীত দিয়ে গুণ করা সহজতর।</p></section>
+</div></section>
+<aside id="fs-id1960506" class="note">
+<div id="fs-id2587473" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2587473">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2151007" class="problem">
+<p id="fs-id2684866" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac><mi>n</mi><mo>=</mo><mn>14</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2268161" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2085291" class="para">35</p>
+</section>
+</div>
+</aside>
+<aside id="fs-id2142822" class="note">
+<div id="fs-id1364690" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1364690">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1598291" class="problem">
+<p id="fs-id2431394" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac><mi>y</mi><mo>=</mo><mn>15</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id2751101" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id3395999" class="para">18</p>
+</section>
+</div>
+</aside>
+<section id="fs-id2471354" class="example">
+<div id="fs-id1166761301642" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1166761301642">এই প্রশ্নের লিঙ্ক</a></p><div id="fs-id2952074" class="problem">
+<p id="fs-id1361124" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>3</mn><mn>8</mn></mfrac><mi>w</mi><mo>=</mo><mn>72</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1160263" class="solution">
+<h2 class="title">সমাধান</h2>
+<p id="fs-id4338264" class="para">সহগটি একটি ঋণাত্মক ভগ্নাংশ। মনে রেখো, একটি অশূন্য সংখ্যা ও তার গুণাত্মক বিপরীতের চিহ্ন একই হয়। তাই এই সহগের গুণাত্মক বিপরীতও ঋণাত্মক হবে।</p>
+<table id="eip-id1165721064926" class="table" aria-label="সমীকরণ (−3/8)w = 72। অশূন্য সহগ −3/8-এর গুণাত্মক বিপরীত −8/3 দিয়ে দুই পক্ষকে গুণ করো। বাম পক্ষে সহগ 1 হয়; ডান পক্ষে (−8/3) × (72/1) = −192। তাই w = −192। মূল সমীকরণে বসিয়ে (−3/8) × (−192) = 72 পাওয়া যায়; সমাধান সঠিক।"><span class="label"></span>
+
+
+
+ <tbody class="tbody">
+  <tr class="row">
+    <td class="entry"></td>
+    <td class="entry"><div id="eip-id1165719630512" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_036a_img.jpg" alt="সমীকরণ: (−3/8)w = 72। এখানে 3/8-এর লব 3 ও হর 8; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য। চল w ভগ্নাংশের হরের মধ্যে নয়; −3/8 দিয়ে w-কে গুণ করা হয়েছে।"/><p class="description">সমীকরণ: (−3/8)w = 72। এখানে 3/8-এর লব 3 ও হর 8; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য। চল w ভগ্নাংশের হরের মধ্যে নয়; −3/8 দিয়ে w-কে গুণ করা হয়েছে।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">ভগ্নাংশ <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>−</mn><mfrac><mn>3</mn><mn>8</mn></mfrac></math>-এর গুণাত্মক বিপরীত দিয়ে দুই পক্ষকে গুণ করো।</td>
+    <td class="entry"><div id="eip-id1165719630543" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_036_img-02.png" alt="দুই পক্ষকে −8/3 দিয়ে গুণ: (−8/3)((−3/8)w) = (−8/3)72। গুণ করার −8/3 দুটি লাল রঙে। এখানে 8/3-এর লব 8 ও হর 3; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।"/><p class="description">দুই পক্ষকে −8/3 দিয়ে গুণ: (−8/3)((−3/8)w) = (−8/3)72। গুণ করার −8/3 দুটি লাল রঙে। এখানে 8/3-এর লব 8 ও হর 3; বাইরের মাইনাস চিহ্ন পুরো ভগ্নাংশে প্রযোজ্য।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">সরল করো; অশূন্য সংখ্যা ও তার গুণাত্মক বিপরীতের গুণফল 1।</td>
+    <td class="entry"><div id="eip-id1165719630564" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_036_img-03.png" alt="সহগ সরল করে 1w = (−8/3) × (72/1) পাওয়া যায়। 72/1-এর লব 72 ও হর 1।"/><p class="description">সহগ সরল করে 1w = (−8/3) × (72/1) পাওয়া যায়। 72/1-এর লব 72 ও হর 1।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">গুণ করো।</td>
+    <td class="entry"><div id="eip-id1165719630585" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_036_img-04.png" alt="গুণ করে w = −192 পাওয়া যায়।"/><p class="description">গুণ করে w = −192 পাওয়া যায়।</p></div></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">যাচাই করো:</td>
+    <td class="entry"><div id="eip-id1165719630605" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_036_img-05.png" alt="যাচাইয়ের জন্য মূল সমীকরণ: (−3/8)w = 72।"/><p class="description">যাচাইয়ের জন্য মূল সমীকরণ: (−3/8)w = 72।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">মান বসাও: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>w</mi><mo>=</mo><mn>−192</mn></math>।</td>
+    <td class="entry"><div id="eip-id1165719630632" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_036_img-06.png" alt="w-এর জায়গায় −192 বসিয়ে (−3/8) × (−192) এবং 72 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন।"/><p class="description">w-এর জায়গায় −192 বসিয়ে (−3/8) × (−192) এবং 72 সমান কি না পরীক্ষা করা হচ্ছে; সমান চিহ্নের উপরে প্রশ্নচিহ্ন।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+  <tr class="row">
+    <td class="entry">গুণ করো। যাচাইয়ে সমতাটি সত্য হলো।</td>
+    <td class="entry"><div id="eip-id1165719630652" class="media"><img src="../../provenance/pilot/media/CNX_BMath_Figure_04_07_036_img-07.png" alt="72 = 72; পাশে ঠিকচিহ্ন। সমতাটি সত্য।"/><p class="description">72 = 72; পাশে ঠিকচিহ্ন। সমতাটি সত্য।</p></div></td>
+    <td class="entry"></td>
+  </tr>
+</tbody>
+
+
+</table></section>
+</div></section>
+<aside id="fs-id2170177" class="note">
+<div id="fs-id2299983" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id2299983">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id2599788" class="problem">
+<p id="fs-id2629555" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>4</mn><mn>7</mn></mfrac><mi>a</mi><mo>=</mo><mn>52</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1355542" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id1806983" class="para">−91</p>
+</section>
+</div>
+</aside>
+<aside id="fs-id1742226" class="note">
+<div id="fs-id1345691" class="exercise"><p class="exercise-label">অনুশীলন · <a href="#fs-id1345691">এই প্রশ্নের লিঙ্ক</a></p>
+<div id="fs-id1693515" class="problem">
+<p id="fs-id1381794" class="para">সমাধান করো: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mfrac><mn>7</mn><mn>9</mn></mfrac><mi>w</mi><mo>=</mo><mn>84</mn><mo>.</mo></mrow></math></p>
+</div>
+<section id="fs-id1906006" class="solution"><p class="solution-label">উৎসে প্রদত্ত উত্তর</p>
+<p id="fs-id2655543" class="para">−108</p>
+</section>
+</div>
+</aside>
+</section>
+</section><footer>OpenStax, Rice University · Prealgebra 2e · Lynn Marecek, MaryAnne Anthony-Smith, Andrea Honeycutt Mathis। <a href="../../provenance/pilot/m81241.source.cnxml">পূর্ণ উৎস-স্বীকৃতি</a> · <a href="../../provenance/A00/repository/LICENSE">CC BY-NC-SA 4.0</a>। অনানুষ্ঠানিক অনুবাদ; মূল প্রকাশকের অনুমোদন দাবি করা হচ্ছে না।</footer></main></body></html>

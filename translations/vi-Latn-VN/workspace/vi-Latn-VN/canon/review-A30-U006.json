@@ -1,0 +1,64 @@
+{
+  "unit": "A30-U006",
+  "date": "2026-08-30",
+  "translation_sha256": "07029b9489ed2a2a60ed8e3b7ddda5be7a5a379d3d5c3fc1805b9e52e2447fec",
+  "source_excerpt_sha256": "9cdcc826c40384f3a482a789b5e94f1893d226d6aea67a8dcaeb76b368506418",
+  "examples_consulted": ["VI-C01", "VI-C02", "VI-C03", "VI-C04", "VI-C05", "VI-C07", "VI-C09"],
+  "draft_checked": true,
+  "final_checked": true,
+  "draft_author_review_completed": true,
+  "independent_review": "Root read the entire final draft, complete source/QA receipts and actual HUST OCR07–09/native function/inverse passages. Verified at-most-one intersection, domain/range edge cases, circle prerequisite and source answer separation. Build/visual acceptance is recorded separately; native review is not claimed.",
+  "stages": [
+    {
+      "stage": "before draft",
+      "note": "Read AGENTS.md, USER_INSTRUCTIONS_VERBATIM.md, durable goal, user instructions, decisions, canon README, terminology and U003-U005 conventions. Read both complete EN/ID line-test sections and the immediately following source boundary. Reopened actual HUST OCR pages 7-9 (printed 6-8) and native text printed pages 6-8, including function/domain/formula distinction, range terminology, function notation, one-to-one terminology and proof wording. Visually inspected previously OCRed original-page PNGs 7 and 9; OCR does not govern formulas."
+    },
+    {
+      "stage": "drafting definitions, figures, examples and answers",
+      "note": "Reopened HUST OCR pages 7 and 9 after source/figure comparison and before composing the definition/example/answer draft. Retained tập xác định, tập giá trị and đơn ánh; separated the prerequisite of being a function from injectivity. Inspected all six exact upstream JPEGs. No canon passage consulted directly witnesses either line-test name: kiểm tra bằng đường thẳng đứng/ngang is explicit descriptive translator wording. Kept short source answers separate from supplemental reasoning; preserved the misleading source circle f(x) axis labels in image bytes and explained them in captions."
+    },
+    {
+      "stage": "revision during source and arithmetic review",
+      "note": "Reopened actual OCR pages 7-9 and native printed-page-6 definition/range passage plus printed-page-8 Exercise 1.4(c) wording. Rechecked distinct inputs/outputs, at-most-one versus exactly-one relative to domain/range, and the distinction between a graph and a necessarily continuous curve. Revised the circle paragraph to say x in (-3,3), replacing an imprecise phrase that compared coordinates with points. Read the entire draft and checked all original MathML indexes, source IDs and links. No reference exercise or formula was incorporated."
+    },
+    {
+      "stage": "draft-author final review",
+      "note": "After the final wording edits, reopened native HUST printed-page-6 domain/range witness and printed-page-8 one-to-one witness, and reread the changed definition/circle paragraphs. Verified final draft hash recorded above and reran 111 passing assertions: 87 source/structure checks and 24 finite arithmetic/relation checks. Finite samples are not proofs on a whole curve. Root canon/source review and offline-reader visual review remain pending; final_checked deliberately stays false."
+    }
+  ],
+  "ocr_sha256": {
+    "hust-07.ocr.txt": "a93f4fdf9f7e4606386cd27b026138a3e00c676733ee8666beecd9f9f7545353",
+    "hust-08.ocr.txt": "8791a452903eeca13238095063a51227da0cfd6c81fc4bfa19ac73f104d1fa6e",
+    "hust-09.ocr.txt": "1d5396bef0c6bf2ef7a4f8ecd999b8d48e33033f4643843b473f74d218279aaa"
+  },
+  "native_text_sha256": "8e810df28f8051bf1db67cc7e19855f9aa0b203c0ef7273dcf5c85dce0cdb38e",
+  "original_page_png_sha256": {
+    "hust-07.png": "a60865ac2da873f7de9ada21a7748530fd0e86f5364979e7d3f488b5441df5b5",
+    "hust-09.png": "98385f111ea50b6be32fc86ebecc5f477eb53af17c9053af3eef3fc826422c4c"
+  },
+  "source_sections": ["m49301/fs-id1165135435781", "m49301/fs-id1165137610952"],
+  "stop_before": "fs-id1165135545919",
+  "source_scope": {
+    "source_ids": 51,
+    "mathml_expressions": 15,
+    "source_tables": 0,
+    "source_links": 12,
+    "source_examples": 2,
+    "try_it_exercises": 2,
+    "source_solutions": 4,
+    "figures": 6
+  },
+  "material_decisions_for_root_log": [
+    "Translate both adjacent complete line-test sections together; their repeated Figure13 cross-references remain local. Stop before the toolkit-function section fs-id1165135545919.",
+    "Use kiểm tra bằng đường thẳng đứng and kiểm tra bằng đường thẳng ngang as descriptive translator choices, not claimed direct canon witnesses; flag for native review.",
+    "Restrict the source claim that the graph is a curve to the pictured example, explicitly allowing discrete graphs and prohibiting automatic interpolation between data points.",
+    "State at most one intersection globally, exactly one for each input in the domain, and zero outside the domain; do not confuse absent outputs outside the range with failure of injectivity.",
+    "Count distinct shared points including tangency; do not count two branches meeting at the same vertex as two outputs. Figure10 includes a touching intersection.",
+    "Replace source vague circle wording with the exact interval -3<x<3 and disclose endpoint/exterior behavior; the supplemental x=2 calculation gives two distinct values ±sqrt(5).",
+    "Preserve final circle source answer No because horizontal test fails; add that it already fails to be a function, so it is not merely a non-injective function.",
+    "Keep all original figure bytes, IDs and nonmonotonic numbering; translate captions/alts and explain retained English labels, including misleading source f(x) axis labels on circle figures.",
+    "Do not infer a formula from the cubic-looking graph or claim numerical samples prove whole-curve properties. Source examples and answers are retained; added explanations are labeled."
+  ],
+  "canon_limit": "Relevant consulted passages witness surrounding function/domain/range/one-to-one language, not the exact vertical/horizontal line-test terminology. OCR mathematical slips are not imported. No new canon download or exercise copying.",
+  "native_speaker_review": "not_performed"
+}

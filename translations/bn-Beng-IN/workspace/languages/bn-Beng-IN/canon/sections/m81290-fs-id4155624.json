@@ -1,0 +1,313 @@
+{
+  "locale": "bn-Beng-IN",
+  "module": "m81290",
+  "section": "fs-id4155624",
+  "resolved_title": "Model Subtraction of Mixed Numbers",
+  "scope": "Complete model-subtraction section: introductory whole/half model, four worked examples, eight try exercises and all twelve supplied solutions, dollar/quarter context, nineteen image alternatives and one table accessibility label.",
+  "source_sha256": "96985df586080ae5e52b870320d310a6061a0c00c5d1699e58a024e55bdba005",
+  "consultations": [
+    {
+      "stage": "before drafting",
+      "examples": [
+        "TR01",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.png"
+      ],
+      "decision": "Reopened both actual readable OCR files and both page images. TR01 explicitly defines a mixed fraction as the sum of a whole-number part and a proper fraction; its 11/3=3+2/3=3⅔ example supports retaining the meaning of juxtaposed mixed notation. TR02 supports same-value regrouping; TR03 supports reducing 2/4 to 1/2. Keep ledger মিশ্র ভগ্নাংশ and the same-sized-whole requirement. Exclude p.51's incorrect intermediate denominator in the mixed-to-improper example."
+    },
+    {
+      "stage": "during model and currency explanation",
+      "examples": [
+        "TR01"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt:20-27",
+        "languages/bn-Beng-IN/provenance/modules/m81290.source.cnxml"
+      ],
+      "decision": "Returned to the actual mixed-fraction definition after drafting. Separate the whole and fractional parts without treating juxtaposition as multiplication. Explain a quarter as one-fourth of a dollar from the source context, retaining every $1 and numerical MathML token. Exchanging one dollar for four quarters changes the representation, not the total value."
+    },
+    {
+      "stage": "pre-admission model and terminology review",
+      "examples": [
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt:9-20",
+        "languages/bn-Beng-IN/terminology.tsv:T025,T029,T031"
+      ],
+      "decision": "Reread the equivalence and simplest-form passage and checked the ledger terms after all twelve answer checks passed. Use a complete shaded model, partition the same whole into equal pieces, then remove pieces. In multi-row image grids the columns, not the rows, are the chronological stages. All original image pixels remain unchanged; no correct answer image is labelled erroneous."
+    },
+    {
+      "stage": "parent R1 accessibility revision: before, during and pre-QA",
+      "examples": [
+        "TR01",
+        "TR02",
+        "TR03"
+      ],
+      "read": [
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p051.txt",
+        "downloads/bn-Beng-IN-canon/SCERT-Tripura-VI/p050.png"
+      ],
+      "decision": "Main reread actual p50/p51 OCR before refining, revisited p50 numerator/denominator and whole-plus-proper-part passage during wording, and reopened the actual full p50 image plus passage after editing. The page explicitly identifies 5 as numerator and7 as denominator and explains11/3=3+2/3. All11 affected original formula bitmaps across the three subtraction overlays were independently opened by main. Added explicit Bengali numerator/denominator readings at first occurrence in11alts and3table descriptions; preserve source pixels, formula tokens, regrouped whole-plus-improper sums, intermediate-only4/5 and the negative sign over the whole mixed magnitude. Exact source/target structural and mathematical gates pass. Reader/screenshot refresh awaits reviewer handoff; no human AT validation is claimed."
+    }
+  ],
+  "editorial_decisions": [
+    {
+      "source_ids": [
+        "fs-id1939330",
+        "fs-id1571276"
+      ],
+      "decision": "The pizza introduction explicitly says two equal halves as an example, rather than implying any two unequal pieces make halves. All model wholes are the same size and each partition uses equal parts. This makes the model's implicit condition explicit without changing its arithmetic."
+    },
+    {
+      "source_ids": [
+        "fs-id1718336"
+      ],
+      "decision": "Source Algebraically introduces arithmetic notation with no variables. Use গাণিতিক চিহ্নে so the phrase describes the actual notation without an unnecessary claim of variable algebra."
+    },
+    {
+      "source_ids": [
+        "fs-id2085291",
+        "fs-id2268160"
+      ],
+      "decision": "Retain the dollar and quarter context and the original $1 tokens. Explain the unfamiliar coin and parking-payment device in Bengali; do not substitute local currency or claim present-day machine acceptance beyond the source hypothetical. One dollar plus one quarter is five quarters; removing three leaves two quarters, or half a dollar."
+    },
+    {
+      "source_ids": [
+        "fs-id3327884",
+        "fs-id2784352",
+        "fs-idm259952624",
+        "fs-idm220568528"
+      ],
+      "decision": "Read regrouped image notation such as 1 beside 4/4 or 5/5 as a whole plus a fraction, not multiplication and not a new normalized mixed-fraction definition. The total before subtraction is still two wholes."
+    },
+    {
+      "source_ids": [
+        "eip-id1168468516648"
+      ],
+      "decision": "The full-circle-plus-separate-quarter model first totals 5/4. Removing the separate quarter and the right half of the whole leaves the left half, exactly 2/4=1/2. Bengali table prose and alternative text describe these actual stages."
+    }
+  ],
+  "source_errata": [
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "fs-id2707862",
+        "fs-id2784352"
+      ],
+      "source_issue": "The English alternatives claim five rows; the actual tables have a header and three instructional rows.",
+      "evidence": "Actual figure020 and figure022 images inspected.",
+      "bengali_correction": "শিরোনামের নীচে তিনটি ধাপ আছে।",
+      "policy": "Correct only the description; retain source pixels and correct arithmetic.",
+      "status": "preserved_with_warning"
+    },
+    {
+      "kind": "source_alt_corrected",
+      "source_ids": [
+        "fs-id1739637",
+        "fs-id1920846"
+      ],
+      "source_issue": "The English alternatives describe only one final circle, omitting the three-stage whole-plus-separate-piece model.",
+      "evidence": "Actual figure202c and figure004c each show three circles and three separate fractional pieces arranged in three columns.",
+      "bengali_correction": "তিন স্তম্ভে শুরু, সমান ভাগ করা এবং বিয়োগের পরে অবশিষ্ট অংশ দেখানো হয়েছে।",
+      "policy": "Describe all actual stages; do not classify the correct answers or images as faulty.",
+      "status": "preserved_with_warning"
+    }
+  ],
+  "image_checks": [
+    {
+      "media_id": "fs-id2804680",
+      "file": "CNX_BMath_Figure_04_06_018_img.jpg",
+      "observed": "Whole circle→two halves→separate right/left shaded halves; English caption gives one half to brother and keeps one."
+    },
+    {
+      "media_id": "fs-id2900588",
+      "file": "CNX_BMath_Figure_04_06_019_img.jpg",
+      "observed": "Vertical 1−1/2→2/2−1/2→1/2."
+    },
+    {
+      "media_id": "fs-id2707862",
+      "file": "CNX_BMath_Figure_04_06_020_img.jpg",
+      "observed": "Header plus three model/notation rows, whole→three thirds→two thirds; result 2/3."
+    },
+    {
+      "media_id": "fs-idm264243616",
+      "file": "CNX_BMath_Figure_04_06_205a_img.jpg",
+      "observed": "Three circles in order: whole, four shaded quarters, three shaded quarters."
+    },
+    {
+      "media_id": "fs-idm265313712",
+      "file": "CNX_BMath_Figure_04_06_004a_img.jpg",
+      "observed": "Whole, five shaded fifths, four shaded fifths."
+    },
+    {
+      "media_id": "fs-id3327884",
+      "file": "CNX_BMath_Figure_04_06_021_img.jpg",
+      "observed": "Three data rows: two wholes, one whole+4/4, one whole+1/4; result 1¼."
+    },
+    {
+      "media_id": "fs-idm259952624",
+      "file": "CNX_BMath_Figure_04_06_004b_img.jpg",
+      "observed": "Two rows/three columns; by column: two wholes, whole+5/5, whole+4/5."
+    },
+    {
+      "media_id": "fs-idm220568528",
+      "file": "CNX_BMath_Figure_04_06_202a_img.jpg",
+      "observed": "By column: two wholes, whole+3/3, whole+2/3."
+    },
+    {
+      "media_id": "fs-id2784352",
+      "file": "CNX_BMath_Figure_04_06_022_img.jpg",
+      "observed": "Header plus three data rows: two wholes, whole+5/5, empty first whole and 3/5 shaded second circle; result3/5."
+    },
+    {
+      "media_id": "fs-idm265216144",
+      "file": "CNX_BMath_Figure_04_06_202b_img.jpg",
+      "observed": "By column: two wholes, whole+3/3, empty upper whole and lower2/3."
+    },
+    {
+      "media_id": "fs-idm267225680",
+      "file": "CNX_BMath_Figure_04_06_205b_img.jpg",
+      "observed": "By column: two wholes, whole+4/4, empty upper whole and lower3/4."
+    },
+    {
+      "media_id": "eip-id1168468516666",
+      "file": "CNX_BMath_Figure_04_06_010_img-01.png",
+      "observed": "Light-orange filled whole circle and separate filled quarter."
+    },
+    {
+      "media_id": "eip-id1168468516677",
+      "file": "CNX_BMath_Figure_04_06_010_img-04.png",
+      "observed": "Vertical red1¼−black3/4."
+    },
+    {
+      "media_id": "eip-id1168467305204",
+      "file": "CNX_BMath_Figure_04_06_010_img-02.png",
+      "observed": "Four equal filled quarters in whole, plus a separate filled quarter."
+    },
+    {
+      "media_id": "eip-id1168467305215",
+      "file": "CNX_BMath_Figure_04_06_010_img-05.png",
+      "observed": "Vertical red5/4−black3/4."
+    },
+    {
+      "media_id": "eip-id1168467122605",
+      "file": "CNX_BMath_Figure_04_06_010_img-03.png",
+      "observed": "Left two quarters remain filled; right half and separate quarter unfilled."
+    },
+    {
+      "media_id": "eip-id1168467122615",
+      "file": "CNX_BMath_Figure_04_06_010_img-06.png",
+      "observed": "Vertical5/4−red3/4 gives2/4=1/2."
+    },
+    {
+      "media_id": "fs-id1739637",
+      "file": "CNX_BMath_Figure_04_06_202c_img.jpg",
+      "observed": "Three columns each with circle and separate third:1+1/3→3/3+1/3→2/3 and empty separate third."
+    },
+    {
+      "media_id": "fs-id1920846",
+      "file": "CNX_BMath_Figure_04_06_004c_img.jpg",
+      "observed": "Three columns each with circle and separate fifth:1+1/5→5/5+1/5→2/5 and empty separate fifth."
+    }
+  ],
+  "answer_checks": [
+    {
+      "exercise_id": "fs-id2587738",
+      "result": "2/3",
+      "evidence": "Actual worked image020 and source problem1−1/3."
+    },
+    {
+      "exercise_id": "fs-id2579343",
+      "result": "3/4",
+      "evidence": "Exact source MathML and image205a."
+    },
+    {
+      "exercise_id": "fs-id1605987",
+      "result": "4/5",
+      "evidence": "Exact source MathML and image004a."
+    },
+    {
+      "exercise_id": "fs-id4171516",
+      "result": "1 1/4",
+      "evidence": "Actual worked image021 and source problem2−3/4."
+    },
+    {
+      "exercise_id": "fs-id2493795",
+      "result": "9/5",
+      "evidence": "Exact source MathML; image004b gives equivalent1⅘."
+    },
+    {
+      "exercise_id": "fs-id2649666",
+      "result": "5/3",
+      "evidence": "Exact source MathML; image202a gives equivalent1⅔."
+    },
+    {
+      "exercise_id": "fs-id3326333",
+      "result": "3/5",
+      "evidence": "Actual worked image022 and source problem2−1⅖."
+    },
+    {
+      "exercise_id": "fs-id2390911",
+      "result": "2/3",
+      "evidence": "Exact source MathML and image202b."
+    },
+    {
+      "exercise_id": "fs-id2629555",
+      "result": "3/4",
+      "evidence": "Exact source MathML and image205b."
+    },
+    {
+      "exercise_id": "fs-id1177871",
+      "result": "1/2",
+      "evidence": "Actual worked image010-06;5/4−3/4=2/4=1/2."
+    },
+    {
+      "exercise_id": "fs-id1166761237793",
+      "result": "2/3",
+      "evidence": "Exact source MathML and image202c."
+    },
+    {
+      "exercise_id": "fs-id2924559",
+      "result": "2/5",
+      "evidence": "Exact source MathML and image004c."
+    }
+  ],
+  "language_gaps": [
+    "The current Bengali bank attests mixed fractions, equivalence and simplification but does not provide a directly read mixed-number-subtraction regrouping lesson. The model/quarter explanatory prose is editorial, not a fabricated canon quotation.",
+    "Independent West Bengal linguistic, teacher, learner and assistive-technology review remains pending; no curriculum certification is claimed."
+  ],
+  "verification": {
+    "date": "2026-08-31",
+    "overlay_sha256": "fe84ef51b819f1cd63794dcc87df194d80764b8874f5c2a8fd54f01af7957968",
+    "method": "Read-only build.translated() and in-memory render_cnxml(study_labels=True), exact source exercise/solution-ID mapping, unique HTML IDs, all twelve source-bound rational checks and all nineteen directly inspected source images. Mixed numbers are interpreted as whole plus fractional part, not products. No shared-script, generated-output or media writes.",
+    "nodes": 334,
+    "ids": 104,
+    "mathml": 32,
+    "linguistic_mtext_replacements": 0,
+    "paragraphs": 34,
+    "paragraph_mappings": 21,
+    "node_slot_mappings": 3,
+    "examples": 4,
+    "exercises": 12,
+    "supplied_solutions": 12,
+    "source_absent_solutions": 0,
+    "images": 19,
+    "tables": 1,
+    "translated_aria_labels": 1,
+    "html_fragment_characters": 22352,
+    "html_unique_ids": 104,
+    "english_prose_gate": "passed",
+    "status": "passed_before_parent_full_page_integration"
+  },
+  "remaining_workflow": "Parent integration and actual desktop/narrow visual review remain required. Continue immediately into the assigned common-denominator mixed-number-subtraction section.",
+  "independent_West_Bengal_teacher_language_learner_and_AT_review": "pending"
+}

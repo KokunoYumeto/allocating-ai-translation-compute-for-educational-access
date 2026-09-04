@@ -1,0 +1,434 @@
+{
+  "schema": "pnb-source-bound-structural-qa-v1",
+  "unit": "B10-002",
+  "status": "pass",
+  "source_bound_checks": 29815,
+  "detached_mutations": [
+    {
+      "name": "translated title replaced",
+      "rejected_by": "exact translated own-text, punctuation, numbers, inline/slot order source/ch_logic.ptx#/chapter/title[1]"
+    },
+    {
+      "name": "prose numeral changed",
+      "rejected_by": "exact translated own-text, punctuation, numbers, inline/slot order source/sec_logic-statements.ptx#/section/subsection[2]/p[4]"
+    },
+    {
+      "name": "unkeyed chapter conclusion injection",
+      "rejected_by": "visible ASCII LTR isolation"
+    },
+    {
+      "name": "unkeyed statement own text injection",
+      "rejected_by": "exact container own text/tails/children and bounded generated UI source/sec_logic-statements.ptx#/section/subsection[1]/exercise[1]/statement[1]"
+    },
+    {
+      "name": "structural child tail injection",
+      "rejected_by": "exact container own text/tails/children and bounded generated UI source/sec_logic-statements.ptx#/section/subsection[1]/exercise[1]/statement[1]"
+    },
+    {
+      "name": "main extra bridge conclusion",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "source term key changed",
+      "rejected_by": "exact translated own-text, punctuation, numbers, inline/slot order source/sec_logic-statements.ptx#/section/subsection[1]/definition[1]/statement[1]/p[1]"
+    },
+    {
+      "name": "emphasis shape changed",
+      "rejected_by": "exact translated own-text, punctuation, numbers, inline/slot order source/ch_logic.ptx#/chapter/introduction[1]/p[2]"
+    },
+    {
+      "name": "nested footnote omitted",
+      "rejected_by": "exact1602 DOM source node order"
+    },
+    {
+      "name": "mixed child notation order",
+      "rejected_by": "exact1602 DOM source node order"
+    },
+    {
+      "name": "source XML ID changed",
+      "rejected_by": "source node attribute id source/sec_logic-statements.ptx#/section/subsection[1]/definition[1]"
+    },
+    {
+      "name": "exercise label changed",
+      "rejected_by": "source node attribute id source/sec_logic-statements.ptx#/section/subsection[1]/exercise[1]"
+    },
+    {
+      "name": "local source xref swapped",
+      "rejected_by": "exact source xref target/status/local label"
+    },
+    {
+      "name": "pending source xref falsely linked",
+      "rejected_by": "exact source xref target/status/local label"
+    },
+    {
+      "name": "pending source label erased",
+      "rejected_by": "exact source xref target/status/local label"
+    },
+    {
+      "name": "table cell T changed",
+      "rejected_by": "exact translated own-text, punctuation, numbers, inline/slot order source/sec_logic-statements.ptx#/section/subsection[2]/figure[1]/sidebyside[1]/tabular[1]/row[2]/cell[1]"
+    },
+    {
+      "name": "table cell order",
+      "rejected_by": "exact1602 DOM source node order"
+    },
+    {
+      "name": "table row order",
+      "rejected_by": "exact1602 DOM source node order"
+    },
+    {
+      "name": "table column source rule changed",
+      "rejected_by": "exact structural HTML mapping/attrs source/sec_logic-statements.ptx#/section/subsection[2]/figure[1]/sidebyside[1]/tabular[1]/col[1]"
+    },
+    {
+      "name": "blank negation cell falsely spanning",
+      "rejected_by": "block HTML type/full attrs source/sec_logic-statements.ptx#/section/subsection[1]/example[1]/statement[1]/tabular[1]/row[1]/cell[1]"
+    },
+    {
+      "name": "source correct flag reversed",
+      "rejected_by": "source node attribute data-source-attributes source/sec_logic-statements.ptx#/section/subsection[1]/worksheet[1]/exercise[1]/choices[1]/choice[1]"
+    },
+    {
+      "name": "source displayed correct flag falsified",
+      "rejected_by": "exact container own text/tails/children and bounded generated UI source/sec_logic-statements.ptx#/section/subsection[1]/worksheet[1]/exercise[1]/choices[1]/choice[1]"
+    },
+    {
+      "name": "match ordering changed",
+      "rejected_by": "source node attribute data-source-attributes source/sec_logic-statements.ptx#/section/reading-questions[1]/exercise[1]/matches[1]/match[1]"
+    },
+    {
+      "name": "source feedback injected",
+      "rejected_by": "exact container own text/tails/children and bounded generated UI source/sec_logic-statements.ptx#/section/subsection[1]/worksheet[1]/exercise[1]/choices[1]/choice[1]/feedback[1]"
+    },
+    {
+      "name": "cache source owner swapped",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "cache seed changed",
+      "rejected_by": "source node attribute data-source-attributes generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[1]/static[1]"
+    },
+    {
+      "name": "cache return target changed",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "cache PG evidence altered",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "local inert PG altered",
+      "rejected_by": "exact container own text/tails/children and bounded generated UI source/practice/logic-statements.ptx#/exercises/exercise[7]/webwork[1]/{http://www.w3.org/2001/XInclude}include[1]"
+    },
+    {
+      "name": "source parity answer erased",
+      "rejected_by": "exact translated own-text, punctuation, numbers, inline/slot order generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[4]/static[1]/solution[1]/p[1]"
+    },
+    {
+      "name": "visible parity correction erased",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "quantifier warning removed",
+      "rejected_by": "exact visible correction links"
+    },
+    {
+      "name": "original correction overreach",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "source correction relabeled source",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "metadata author changed",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "footer license invented",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "shared style source hidden",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "literal math spacing style removed",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "alphabetic cache list style erased",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "source alphabetic list misnumbered decimal",
+      "rejected_by": "exact structural HTML mapping/attrs generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[4]/static[1]/statement[1]/p[1]/ol[1]"
+    },
+    {
+      "name": "source prose digit direction reversed",
+      "rejected_by": "visible ASCII LTR isolation"
+    },
+    {
+      "name": "table RTL reverses physical data",
+      "rejected_by": "exact structural HTML mapping/attrs source/sec_logic-statements.ptx#/section/subsection[1]/example[1]/statement[1]/tabular[1]"
+    },
+    {
+      "name": "math wrapper own text",
+      "rejected_by": "exact math owner/wrapper source text/attrs"
+    },
+    {
+      "name": "math wrapper tail text",
+      "rejected_by": "exact math owner/wrapper source text/attrs"
+    },
+    {
+      "name": "math source annotation edited",
+      "rejected_by": "exact source TeX annotation"
+    },
+    {
+      "name": "interval fence changed",
+      "rejected_by": "independent handwritten full mathematical tree source/ch_logic.ptx#/chapter/introduction[1]/p[1]/m[1]"
+    },
+    {
+      "name": "superscript exponent changed",
+      "rejected_by": "independent handwritten full mathematical tree source/exercises/logic-statements.ptx#/exercises/exercise[3]/statement[1]/p[1]/ol[1]/li[1]/m[1]"
+    },
+    {
+      "name": "superscript base changed",
+      "rejected_by": "independent handwritten full mathematical tree source/exercises/logic-statements.ptx#/exercises/exercise[3]/statement[1]/p[1]/ol[1]/li[1]/m[1]"
+    },
+    {
+      "name": "whole superscript flattened",
+      "rejected_by": "independent handwritten full mathematical tree source/exercises/logic-statements.ptx#/exercises/exercise[3]/statement[1]/p[1]/ol[1]/li[1]/m[1]"
+    },
+    {
+      "name": "quantifier order marker changed",
+      "rejected_by": "independent handwritten full mathematical tree source/sec_logic-statements.ptx#/section/subsection[3]/definition[1]/statement[1]/p[1]/m[1]"
+    },
+    {
+      "name": "conjunction changed to disjunction",
+      "rejected_by": "independent handwritten full mathematical tree source/sec_logic-statements.ptx#/section/subsection[2]/p[6]/m[2]"
+    },
+    {
+      "name": "implication reversed",
+      "rejected_by": "independent handwritten full mathematical tree source/sec_logic-statements.ptx#/section/subsection[2]/p[6]/m[4]"
+    },
+    {
+      "name": "source negation erased",
+      "rejected_by": "independent handwritten full mathematical tree source/sec_logic-statements.ptx#/section/subsection[2]/p[6]/m[6]"
+    },
+    {
+      "name": "math variable changed",
+      "rejected_by": "independent handwritten full mathematical tree source/ch_logic.ptx#/chapter/introduction[1]/p[1]/m[5]"
+    },
+    {
+      "name": "source mtext answer changed",
+      "rejected_by": "independent handwritten full mathematical tree generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[4]/static[1]/answer[1]/p[1]/m[1]"
+    },
+    {
+      "name": "source mtext choice spacing erased",
+      "rejected_by": "independent handwritten full mathematical tree generated-assets/rs/webwork/webwork-representations.xml#/webwork-representations/webwork-reps[5]/static[1]/answer[2]/p[1]/m[1]"
+    },
+    {
+      "name": "raw spacing fallback silently simplified",
+      "rejected_by": "exact unreviewed negative space fallback"
+    },
+    {
+      "name": "raw TeX attribute changed",
+      "rejected_by": "exact math owner/wrapper source text/attrs"
+    },
+    {
+      "name": "raw fallback source altered",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "inert macros erased",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "ledger source token changed",
+      "rejected_by": "exact contiguous source token offsets"
+    },
+    {
+      "name": "ledger path swapped",
+      "rejected_by": "token kind/independent path"
+    },
+    {
+      "name": "ledger source spacing effect changed",
+      "rejected_by": "exact reversible operator/fence ledger effect"
+    },
+    {
+      "name": "notice cache seed changed",
+      "rejected_by": "cache metadata sourcebinding"
+    },
+    {
+      "name": "notice false completion claim",
+      "rejected_by": "complete source-specific notice contract, supplemental to independent math checks"
+    },
+    {
+      "name": "notice reviewed math count overstated",
+      "rejected_by": "complete source-specific notice contract, supplemental to independent math checks"
+    },
+    {
+      "name": "notice source macro silently replaced",
+      "rejected_by": "complete source-specific notice contract, supplemental to independent math checks"
+    },
+    {
+      "name": "OPL notice replaced by book license",
+      "rejected_by": "OPL terms retained verbatim, not silently relicensed"
+    },
+    {
+      "name": "original OPL source replaced with Indonesian adapted hash",
+      "rejected_by": "independent selected component identity Contrib/DMOI/0-Introduction_and_Preliminaries/0_2-Mathematical_Statements/0_2_1.pg"
+    },
+    {
+      "name": "OPL author header erased",
+      "rejected_by": "exact attribution/header retains source Edition3 and English language Contrib/DMOI/0-Introduction_and_Preliminaries/0_2-Mathematical_Statements/0_2_1.pg"
+    },
+    {
+      "name": "selected component cache owner swapped",
+      "rejected_by": "exact authored owner/seed/cache/source component association"
+    },
+    {
+      "name": "witness link points to adapted PG",
+      "rejected_by": "reviewed full frame/cache metadata/original-note/raw-fallback seal"
+    },
+    {
+      "name": "component acquisition receipt omitted",
+      "rejected_by": "scoped acquisition identity"
+    },
+    {
+      "name": "detached OPL license omitted",
+      "rejected_by": "selected witness is present OPL_LICENSE"
+    },
+    {
+      "name": "detached OPL author erased",
+      "rejected_by": "exact selected witness bytes/line endings/blob Contrib/DMOI/0-Introduction_and_Preliminaries/0_2-Mathematical_Statements/0_2_1.pg"
+    },
+    {
+      "name": "detached PG numeral changed",
+      "rejected_by": "exact selected witness bytes/line endings/blob Contrib/DMOI/0-Introduction_and_Preliminaries/0_2-Mathematical_Statements/0_2_2.pg"
+    },
+    {
+      "name": "detached original witness line endings normalized",
+      "rejected_by": "exact selected witness bytes/line endings/blob OPL_LICENSE"
+    },
+    {
+      "name": "detached local PG credit erased",
+      "rejected_by": "exact selected witness bytes/line endings/blob source/practice/wwpg/statements-quant1.pg"
+    }
+  ],
+  "detached_mutation_count": 78,
+  "unsupported_mapper_tests": [
+    "\\frac{1}{2}",
+    "\\input{secret}",
+    "\\unknown",
+    "x_1",
+    "x^{2",
+    "x^",
+    "(x]",
+    "[0,1)",
+    "x^^2",
+    "\\text{Maybe}",
+    "\\text{True }",
+    "\\!x",
+    "x\\!y",
+    "x^23",
+    "",
+    "\\forall{x",
+    "x$y",
+    "\\text{Choice {1}}"
+  ],
+  "valid_changed_math_tests": [
+    [
+      "\\forall x P(x)",
+      "\\exists x P(x)"
+    ],
+    [
+      "P\\wedge Q",
+      "P\\vee Q"
+    ],
+    [
+      "x\\lt y",
+      "x\\le y"
+    ],
+    [
+      "\\forall x\\exists y P(x,y)",
+      "\\exists x\\forall y P(x,y)"
+    ],
+    [
+      "\\forall x\\exists y(y^2=x)",
+      "\\forall x\\exists y(y^3=x)"
+    ],
+    [
+      "P(x,y)",
+      "P(y,x)"
+    ],
+    [
+      "\\neg(P\\wedge Q)\\imp Q",
+      "\\neg P\\wedge Q\\imp Q"
+    ],
+    [
+      "\\text{False}",
+      "\\text{True}"
+    ]
+  ],
+  "source_keys": 559,
+  "source_nodes": 1602,
+  "source_tex_owners": 337,
+  "unique_raw_forms": 123,
+  "normalized_handwritten_fixtures": 118,
+  "derived_mathml": 336,
+  "explicit_raw_fallback": 1,
+  "tables": 8,
+  "cells": 104,
+  "authored_exercises": 23,
+  "fixed_cache_records": 6,
+  "reader_sha256": "33ff4c6f580655fc66a1057ae09a5de275646ed96f5f931fc26aa9d9972ae06f",
+  "component_notice_sha256": "a4b6f1e82265a829be2612459462d28b54378841c00414f409fc12dddf37f79c",
+  "input_sha256": {
+    "manifest-b10-unit-002.json": "68bd9bb7158886a20ecf01df0420e8f3b4efebe3b09e0842240085c53e24e8ce",
+    "b10-unit-002.json": "ec9666ae9313c9a1d891c709e7e476fe82455ff44f14d7dde24761ebb72995ad",
+    "b10-unit-002.ptx": "1fce081a82dc8d22fa044da96fe8ba309fe4b0a4db7ab9835b0cf7f63e280009",
+    "b10-unit-002-webwork.xml": "1c8947d8d695deca514e0e6952e6b8ce96938cffb02bb19e15feb314d769bf7c"
+  },
+  "script_sha256": {
+    "prepare_b10_002.py": "c836d3e57862043e570674233286179b6bcdb0f7b4d29dadb2203379f54538b7",
+    "build_b10_002.py": "2f12e61fb27356bb82fbe031d7da08e172f8aacc57392828f4e48d77a8847fb0",
+    "b10_002_tex.py": "0a5cfe164d9ecb7b9fd8c0cae5e72470a77597c4d4fb5a0edec15dadb772a7bd",
+    "b10_002_math_expected.py": "45665926eb730869ec39b0a286f575e6cd5a1d4e804e2f11815e5006c420e41c",
+    "qa_b10_002.py": "2a8d3802e16d5ac2f768f0ca3a39d6528d9faf3eb1f743fbae70e35d4f2e1003",
+    "fetch_b10_002_components.py": "1fe76cc4d85bc631cc46558062c8fcc672726836ad8d0270cd2bdba6f80e32b3"
+  },
+  "source_math_order_policy": "Actual source-tree preorder, including nested notation owners; manifest math numbering groups by translation-own-block. Every owner maps exactly; fallback numbering is ledger order.",
+  "limitations": [
+    "Shared pinned-input/parsing helpers are reused read-only; this is not an independent implementation of Git or XML.",
+    "Handwritten finite mathematical fixtures and independent token/leaf binding are not universal TeX verification. One exact negative-thin-space form remains visibly unreviewed raw TeX.",
+    "The reviewed frame seal rejects change but is not linguistic proof; exact frozen target seals do not establish naturalness or educator approval.",
+    "Fixed source caches are not newly executed, randomized or exhaustive; retained incorrect source answers require original correction warnings.",
+    "Browser, native Punjabi, educator and assistive-technology review remain separate. Only full Section1.1 plus earlier Chapter1 opening; chapter/book/fullassignment incomplete."
+  ],
+  "whole_book_translation_complete": false,
+  "production_canon_receipt": {
+    "path": "canon/receipts/B10-002-production-qa-20260831T140105847321Z.json",
+    "sha256": "2d68235a2dc02a5424640ef8ee85f64c3e71c336dc815aa394be438f044be0fd"
+  },
+  "selected_component_acquisition": {
+    "path": "provenance/b10-unit-002-components/acquisition.json",
+    "sha256": "193867036f31da9ddb10ce1b89f47a08078d9d7a7e643098176fc6d462b2ed51",
+    "exact_witness_files": 7,
+    "remote_opl_pg": 4,
+    "local_pg": 2,
+    "verbatim_opl_notice": 1,
+    "scope": "Selected unit witnesses only; existing component policy retained, no new audit/PG execution."
+  },
+  "source_witness_boundary": {
+    "authored": "Exact pinned chapter prefix before its first include; full section with two active PTX includes expanded and XML declarations stripped; add closing chapter tag. This is not the whole Chapter1. Two local PG parse=text includes remain inert and separately hash-bound. Source comments are retained but inactive.",
+    "cache": "Six exact active webwork-reps trees serialized from pinned cached XML under a new wrapper, including unchanged static text, inert PG and rendering metadata. This is not a byte slice of the full cache blob; exact selected record tree hashes and witness raw bytes are bound separately.",
+    "first_outside": {
+      "file": "source/sec_logic-implications.ptx",
+      "xml_id": "sec_logic-implications",
+      "title": "Implications",
+      "original_include": "<xi:include href=\"./sec_logic-implications.ptx\" />"
+    }
+  }
+}

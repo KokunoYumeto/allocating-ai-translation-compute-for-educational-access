@@ -1,0 +1,9 @@
+# Unit007 primary source/content review
+
+2026-08-31. Source/content PASS; HTML visual issue remains open. The primary agent read the complete XML/config, all18 frozen EN/ID fragment text bodies and both self-check alt descriptions, then personally viewed both original figure213 rasters. Read the complete independent report, including the exact Browser URL-policy denial. No browser action followed that denial.
+
+Nine selected blocks preserve24 nested source IDs plus the writing-section wrapper. Four source writing prompts have four explicitly new sample answers, not supplied solutions. Their finite examples preserve repeated outputs, the same-input/two-output counterexample, and `f(−2)=−1` under the stated real domain. Four glossary definitions preserve x/y roles. The two personal self-check prompts are untranslated in no part, and unanswered: all three objectives and three rating choices survive, with nine empty boxes. The EN raster is unchanged; ID is comparison evidence only. Six math check strings and all twelve internal links pass the independent16-test suite rerun by the primary agent.
+
+During final source/PDF review, actually read C12's existing OCR prose and fresh C14/C15 and C19 search-reader definition/naming prose after failed direct opens. These support evaluation-versus-solution language and actual range versus declared codomain. No native-speaker/teacher approval or exact attestation of every provisional term is implied.
+
+Reviewed XML SHA-256 `44593e8d688ad459ed2e72b1eac1293974cd3203661ff5df3b220d0815419e06`; config `5a5a0ccb6ca714f564bedc37be49d256caea57cccd5f93b2febbf7150763a458`; lock `9e7e2d005e8e3ddfd215c12eb9d968179617f534e65886fb9344d50a970f2c3a`. No source, answer, asset or XML correction was required. The separate five-page PDF review is in PDF-primary-review.md. It does not clear the existing420px HTML table clipping, and no whole module/book completion is claimed.

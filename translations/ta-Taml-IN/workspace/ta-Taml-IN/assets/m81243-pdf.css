@@ -1,0 +1,67 @@
+/* PDF-only adaptation. Source and companion words/figures remain intact. */
+@page { size: A4; margin: 15mm 15mm 18mm; @bottom-right { content: counter(page); font: 9pt sans-serif; color: #43545a; } }
+@page wide { size: A3 landscape; margin: 15mm 15mm 18mm; @bottom-right { content: counter(page); font: 9pt sans-serif; color: #43545a; } }
+@media print {
+  :root { background: white; color: black; }
+  body { max-width: none; padding: 0; margin: 0; background: white; font-size: 11pt; line-height: 1.7; }
+  body.screen-profile { font-size: 13pt; line-height: 1.8; }
+  header, .source-faithful, .credits, .page { border: 0; border-radius: 0; padding: 0; margin: 0; background: white; }
+  .page, .source-faithful, .credits { break-before: page; }
+  header { break-after: page; }
+  h1 { font-size: 22pt; }
+  h2 { font-size: 16pt; }
+  h3 { font-size: 12pt; }
+  h4 { font-size: 11pt; }
+  h1, h2, h3, h4 { break-inside: avoid; break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+  a { color: black; }
+  .skip, .diagram-hint, .table-hint, .sr-only { display: none !important; }
+  .draft-banner, .editorial-note, .note, .example, .item, .answer { background: white; }
+  .item, .answer { padding: .25rem .6rem; margin: .8rem 0; }
+  .item { break-inside: avoid; }
+  .answer { break-inside: auto; }
+  /* Keep an answer's label and provenance with the block they introduce. */
+  .answer > .source-reference { break-inside: avoid; break-after: avoid; }
+  .answer > .source-reference + * { break-before: avoid; }
+  .note, .example { padding: .4rem .65rem; margin: .7rem 0; }
+  .source-sol { padding-left: .65rem; }
+  figure, .source-exercise, .note, .example { break-inside: auto; }
+  .diagram-scroll, .table-scroll, .math-scroll { overflow: visible; max-width: none; border: 0; }
+  .math-scroll { display: block; margin: .35rem 0; break-inside: avoid; }
+  .diagram-scroll { break-inside: avoid; overflow: visible; }
+  .diagram-scroll svg { width: 100% !important; min-width: 0 !important; height: auto !important; max-width: 100%; max-height: 170mm; break-inside: avoid; }
+  .counting-model { width: 100%; height: auto; max-height: 5rem; }
+  table { width: 100%; font-size: .94em; }
+  .table-scroll > table, .confidence-table { min-width: 0 !important; }
+  thead { display: table-header-group; }
+  caption, thead { break-after: avoid; }
+  tfoot { display: table-row-group; }
+  #ta-route-checkpoint-table { break-inside: avoid; }
+  .chart-alternative { break-before: page; break-inside: avoid; }
+  .chart-alternative table { break-inside: avoid; }
+  tr { break-inside: avoid; }
+  th, td { padding: .4rem .45rem; }
+  .source-steps { table-layout: fixed; }
+  .source-steps th:first-child { width: 42%; }
+  .source-steps th:last-child { width: 58%; }
+  .source-steps .source-media { max-width: 100%; }
+  .source-media, .source-table-group { min-width: 0; }
+  /* Keep a source identifier with the actual question, not just its heading. */
+  .source-exercise > .review-id { break-after: avoid; }
+  #fs-id1684233 { break-inside: avoid; }
+  #fs-id2652455 { break-inside: avoid; }
+  #ta-large-M4-answer > p:first-of-type { break-inside: avoid; }
+  #ta-round-D4 { break-after: avoid; }
+  #ta-m1-reason-15 > .feedback { break-inside: avoid; }
+  .pdf-wide { page: wide; break-before: page; break-after: page; break-inside: auto; }
+  .pdf-wide .diagram-scroll svg { width: 100% !important; }
+  .pdf-wide .table-scroll { max-width: 100%; }
+  .pdf-wide .media-description { font-size: 11pt; }
+  .pdf-wide .place-table { font-size: 11pt; }
+  .pdf-wide .confidence-table { font-size: 11pt; }
+  .pdf-page-reference { white-space: nowrap; font-size: .82em; font-weight: normal; }
+  .pdf-page-number { display: inline-block; width: 3ch; text-align: right; font-family: sans-serif; font-variant-numeric: tabular-nums; }
+  .back-link, .module-return { break-before: avoid; }
+  .back-link, .module-return { font-size: .88em; padding: .4rem 0; margin: .6rem 0; background: white; }
+  .credits { font-size: 10pt; overflow-wrap: anywhere; break-inside: avoid; }
+}

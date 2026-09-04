@@ -1,0 +1,274 @@
+{
+  "schema": "pnb-b40-opening-source-bound-input-qa-v1",
+  "unit": "B40-opening",
+  "status": "passed input-only checkpoint",
+  "checks": 5132,
+  "detached_mutation_count": 42,
+  "counts": {
+    "source_keys": 174,
+    "source_inline_tex_owners": 76,
+    "table_environments": 6,
+    "physical_table_rows": 64,
+    "table_cells": 138,
+    "preface_prose_paragraphs": 20,
+    "preface_headings": 6,
+    "source_url_commands": 3,
+    "source_plain_cover_webaddress": 1,
+    "source_input_commands": 1,
+    "source_marks": 2,
+    "source_pdfs": 2,
+    "source_alt_texts": 0
+  },
+  "source_pins": {
+    "canonical": "df2262e089a02651c127f1dd12649c4622ee1383",
+    "comparison": "e84ce2956a7304830c42eba70106f940fefee7c4"
+  },
+  "input_hashes": {
+    "source-excerpts/manifest-b40-opening.json": "a3430810fd1f3259587b5581980280ac78ff2520148c227d677798b5e3eb1239",
+    "translations/b40-opening.json": "45352c7245ff69768f97dbb12ca0e8926fa25ded46bed2169c62779984daf173",
+    "source-excerpts/b40-opening.json": "560a16023aa2e93d5f47236320ef5740090b2d786d9f506b6f68d05ac01315f5",
+    "scripts/qa_b40_opening_inputs.py": "81624bec9c15b5dec24fcb5483be1d69f1fce39add371a7ebf98bb8395164535",
+    "qa/b40-opening-language-notes.md": "56c048ba8cca955e305efb6b2e4a0a92f31a7ae668db230e20317b88d1aa8367",
+    "plans/B40-start.json": "dd802eeeb7fa3c312545fe4c26bf70e7985b4f2693ce1a6e1e2ac2938acd6306"
+  },
+  "canon_receipts": {
+    "canon/receipts/B40-opening-draft-20260831T162851824Z.json": "76f9425451692ff0e656264b22de85db2be39bd0d42e3cefaefe600bf05e7ea4",
+    "canon/receipts/B40-opening-revision-20260831T163947716Z.json": "3745bbb666abbb3ab6729e077d8cac9adeff0756ad5f7b10bc897dad1a9d290f",
+    "canon/receipts/B40-opening-qa-20260831T164611989Z.json": "2bec74ce119bd76535e9d6d9b435c9447ec6da355e05f2ea632cba8e04262a2b"
+  },
+  "source_coverage": {
+    "independent_span_discovery": "174 exact canonical spans; six brace-aware active tabular layouts; all20 complete preface paragraphs including comments; source order and 138 cells",
+    "raw_file_witnesses": 12,
+    "exact_tex_slots": 76,
+    "exact_other_slots": 6,
+    "pdf_components": "two unchanged originals bound by SHA256, Git blob and byte count; original accessibility descriptions are not source alts",
+    "first_outside": {
+      "file": "src/book.tex",
+      "line": 51,
+      "source": "\\pagestyle{booktoc}\\clearemptydoublepage\\tableofcontents\\bigskip\\par\\noindent${}^*\\!$Starred subsections are optional.\\clearemptydoublepage"
+    }
+  },
+  "detached_mutations": [
+    {
+      "name": "source-variable",
+      "rejected_by": "source.raw:src/cover/symlist.tex#table/1/row/5/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-index",
+      "rejected_by": "source.exact-slots:src/cover/symlist.tex#table/1/row/5/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-brace",
+      "rejected_by": "source.exact-slots:src/cover/symlist.tex#table/1/row/5/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-slot-owner",
+      "rejected_by": "source.exact-slots:src/cover/symlist.tex#table/1/row/5/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-table-cell-omission",
+      "rejected_by": "scope.manifest-keys-order",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-table-cell-duplicate",
+      "rejected_by": "scope.manifest-keys-order",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-table-regrouping",
+      "rejected_by": "source.span.column:src/cover/symlist.tex#table/1/row/5/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-table-order",
+      "rejected_by": "scope.manifest-keys-order",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-table-shape",
+      "rejected_by": "table.layouts",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-id-comparison-displacement",
+      "rejected_by": "source.comparison-span:src/cover/symlist.tex#table/1/row/5/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-witness-whitespace",
+      "rejected_by": "witness.exact-text",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-witness-comment-erasure",
+      "rejected_by": "witness.exact-text",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "source-comment-paragraph-break",
+      "rejected_by": "source.active-comments:src/pref/pref.tex#paragraph/5",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-slot-order",
+      "rejected_by": "target.slot-order:src/cover/symlist.tex#table/1/row/1/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-slot-omission",
+      "rejected_by": "target.slot-order:src/cover/symlist.tex#table/1/row/1/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-pure-math-arabic-comma",
+      "rejected_by": "target.pure-math-cell:src/cover/symlist.tex#table/1/row/1/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-week-numeral",
+      "rejected_by": "target.week:1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-week-section-ref",
+      "rejected_by": "target.section-references:src/pref/pref.tex#table/1/row/3/cell/2",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-range-minus",
+      "rejected_by": "target.section-references:src/pref/pref.tex#table/1/row/3/cell/2",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-classday-em-dash",
+      "rejected_by": "target.classday-en-dashes",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-publication-date",
+      "rejected_by": "target.credit:src/publicationdate.tex#date",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-source-credit-name",
+      "rejected_by": "target.credit:src/pref/pref.tex#table/2/row/4/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-credit-zip",
+      "rejected_by": "target.credit:src/pref/pref.tex#table/4/row/4/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-invented-linebreak",
+      "rejected_by": "target.no-invented-linebreak:src/pref/pref.tex#table/3/row/2/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-quote-line-omission",
+      "rejected_by": "scope.target-keys-order",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-isolation-rtl",
+      "rejected_by": "html.bdi-attrs:src/pref/pref.tex#table/1/row/3/cell/2",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-hidden-injection",
+      "rejected_by": "html.span-attrs:src/cover/symlist.tex#table/1/row/5/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-mathml-injection",
+      "rejected_by": "html.tag:src/cover/symlist.tex#table/1/row/5/cell/1",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-Indonesian-pronunciation",
+      "rejected_by": "target.guide-source:src/cover/symlist.tex#table/2/row/2/cell/2",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-visible-pronunciation-erasure",
+      "rejected_by": "target.guide-words:src/cover/symlist.tex#table/2/row/2/cell/2",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "target-emphasis-erasure",
+      "rejected_by": "target.emphasis:src/pref/pref.tex#paragraph/7",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "asset-hash",
+      "rejected_by": "asset.alt-sha",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "asset-invented-source-alt",
+      "rejected_by": "asset.no-fabricated-source-alt",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "asset-origin-laundering",
+      "rejected_by": "asset.original-alt",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "note-injected-source-key",
+      "rejected_by": "scope.target-keys-order",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "note-origin-laundering",
+      "rejected_by": "notes.origin",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "note-evidence-altered",
+      "rejected_by": "notes.degree-evidence",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "scope-false-frontmatter-complete",
+      "rejected_by": "scope.translation:whole_frontmatter_complete",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "notice-wrong-license",
+      "rejected_by": "notice.distinct-license",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "scope-skip-required-TOC",
+      "rejected_by": "scope.outside-line",
+      "reviewed_seal_required": false
+    },
+    {
+      "name": "reviewed-preface-prose-injection",
+      "rejected_by": "reviewed.target-seal:src/pref/pref.tex#paragraph/1",
+      "reviewed_seal_required": true
+    },
+    {
+      "name": "reviewed-original-note-overreach",
+      "rejected_by": "reviewed.original-seal:b40-opening-degree-qualification",
+      "reviewed_seal_required": true
+    }
+  ],
+  "limits": [
+    "No reader, derived MathML, upstream engine, external service or runtime executed. This is not browser/assistive-technology QA.",
+    "Source spans/table/slot/credit/pronunciation checks are independently rederived; Punjabi text seals only detect edits after actual source/canon review, not semantic or native-speaker certification.",
+    "Indonesian full raw witnesses and exact174 comparison spans remain inspectable; comparison-owner seals prevent reassignment, but are not a second independent Indonesian segmenter.",
+    "PDF visual inspection and source-specific original alts are human/agent inspection records, not inferred from file hashes; no image or license modified.",
+    "Macro dependencies are pinned and inert; future finite MathML parser and independently derived expected trees remain required.",
+    "Generated contents and starred-subsection explanation remain required before main matter. Neither whole frontmatter, book nor five-work assignment is complete."
+  ],
+  "whole_frontmatter_complete": false,
+  "whole_book_translation_complete": false,
+  "whole_assignment_complete": false
+}

@@ -1,0 +1,223 @@
+{
+  "unit": "A30-U030",
+  "date": "2026-08-31",
+  "status": "author_and_independent_review_pass_pending_root_build_and_visual_review",
+  "source_module": "m49304",
+  "source_uuid": "1ca91f2c-f989-40da-b8cc-b930d5c0ad36",
+  "source_start": "fs-id1165137733672",
+  "previous_section": "fs-id1165135194497",
+  "stop_before": "fs-id1165137832031",
+  "sources": {
+    "en": {
+      "path": "downloads/upstream-openstax/modules/m49304/index.cnxml",
+      "sha256": "0e230c4c96d46e7962dcb3afa1f1630718f7e1cdfae9e665d640690ab6ace19c",
+      "commit": "789b54099106b071d1d32bfcee454fed72eb4768"
+    },
+    "id": {
+      "path": "downloads/a30-edition/source-core/repo/source/modules/m49304/index.cnxml",
+      "sha256": "a341bb8c05830b95c865b18d64b186fc9a88a08640bbb12f030879faa90b7539",
+      "release": "0.1.0-alpha.58-reader.1"
+    }
+  },
+  "translation_sha256": "9f0571cefdffede7ddca2dda97d0c5967c5b2e7b809c6c73a103cb14291c7f88",
+  "source_excerpt_sha256": "8496a2e4e29d464c95a5b7e7e8f5f6a7f372875d7b7b1744913ece5567dc086d",
+  "extraction_script_sha256": "b622ccb6e0e95bdde246e77808bafc356cb51c7b5ce5b275bcf889ab1b2e8fb4",
+  "computing_check_sha256": "f4737d56dc4d648700c2f7632c4a37b0301a49007ab3e7f08235905b155af9fb",
+  "canon_review_sha256": "5a5839cfa10ff37edb346c754fcee7e410dde66a58ef9ccac6ac548173d4c1f7",
+  "scope_counts": {
+    "source_ids": 14,
+    "source_mathml": 6,
+    "source_paragraphs": 5,
+    "source_problems": 3,
+    "source_solutions": 2,
+    "source_absent_answers": 1,
+    "source_examples": 0,
+    "try_it_exercises": 0,
+    "selected_end_exercises": 3,
+    "new_unique_end_exercises": 3,
+    "source_images": 0,
+    "source_tables": 0,
+    "source_crossreferences": 0,
+    "added_local_answer_links": 3,
+    "added_cross_reader_links": 0,
+    "explicit_graph_requirements": 0,
+    "supplemental_plots": 0
+  },
+  "source_ids": [
+    "fs-id1165137733672",
+    "fs-id1165137442197",
+    "fs-id1165133221851",
+    "fs-id1165133221853",
+    "fs-id1165134555582",
+    "fs-id1165134555584",
+    "fs-id1165137679047",
+    "fs-id1165137679049",
+    "fs-id1165133410011",
+    "fs-id1165135209378",
+    "fs-id1165135209380",
+    "fs-id1165137645593",
+    "fs-id1165133210812",
+    "fs-id1165137779064"
+  ],
+  "source_comparison": "Complete actual English section7733672 canonical-equals the owned excerpt, including its title, all three exercises and both solutions. Original Section Exercises numbering is57–59; direct previous section5194497 and next7832031 agree in EN/ID. All14 ordered IDs and all six MathML structures/tokens/attributes agree between EN and ID. No graph request, image, table, source link, example or TryIt occurs. No earlier/later section or shared outer exercise wrapper is included.",
+  "mathematics": [
+    {
+      "number": 57,
+      "exercise": "fs-id1165137442197",
+      "source_solution": "fs-id1165134555582",
+      "given_range": "[-5,8]",
+      "source_answer": "[0,8]",
+      "supplement": "For every original input, |f(x)| lies in[0,8]; for arbitrary outputy in[0,8], source range membership supplies some input with f(x)=y. Therefore everyy is attained after absolute value. Preserve the original domain; neither continuity nor f(y)=y is assumed."
+    },
+    {
+      "number": 58,
+      "exercise": "fs-id1165137679047",
+      "source_solution": null,
+      "new_answer_anchor": "vi-answer-58",
+      "new_function": "f(x)=x², x∈R",
+      "range": "[0,∞)",
+      "supplement": "Source has no answer. Nonnegativity gives one containment; for arbitraryy≥0, choosingx=√y givesf(x)=y, including zero. One valid construction suffices; no claim of uniqueness."
+    },
+    {
+      "number": 59,
+      "exercise": "fs-id1165135209378",
+      "source_solution": "fs-id1165133210812",
+      "source_answer": "Many answers; one is f(x)=1/√(x−2).",
+      "domain": "(2,∞)",
+      "supplement": "For the maximal real domain allowed by this formula, radicand≥0 and denominator≠0 combine tox>2. Conversely everyx>2 gives a positive real denominator. Inputs below2 have nonreal root and input2 has zero denominator; irrational defined outputs are not domain exclusions."
+    }
+  ],
+  "source_issues": [
+    {
+      "owner": "fs-id1165137645593",
+      "math_index": 0,
+      "original_numeric_token": "2.",
+      "kind": "sentence punctuation stored inside mn",
+      "decision": "Preserve exactly in excerpt and MathML capture. Only the checker's interpretation of this pinned owner/token removes the known sentence period to compare the numerical boundary2; no source alteration or broad token normalization."
+    }
+  ],
+  "source_math_capture_policy": {
+    "all_direct_once": true,
+    "reviewed_equivalents": 0,
+    "math_text": {},
+    "source_order": [
+      "fs-id1165133221853:0",
+      "fs-id1165133221853:1",
+      "fs-id1165133221853:2",
+      "fs-id1165134555584:0",
+      "fs-id1165137645593:0",
+      "fs-id1165137779064:0"
+    ],
+    "draft_order": [
+      "fs-id1165133221853:0",
+      "fs-id1165133221853:1",
+      "fs-id1165133221853:2",
+      "fs-id1165137645593:0",
+      "fs-id1165134555584:0",
+      "fs-id1165137779064:0"
+    ],
+    "note": "All questions precede the linked answers, intentionally moving answer57's formula after prompt59; original source owners/indices and exact MathML remain unchanged."
+  },
+  "assets": [],
+  "graph_requirement_review": "All three actual EN/ID prompts ask for a range or construction of a function, not a graph. No new plot authorization is needed and none was generated.",
+  "checks": {
+    "result": "pass",
+    "default_command": "python -X utf8 -B vi-Latn-VN/computing/check_domain_extensions.py",
+    "originals_command": "python -X utf8 -B vi-Latn-VN/computing/check_domain_extensions.py --originals",
+    "default_assertions": 111,
+    "source_structure_assertions": 68,
+    "exact_finite_arithmetic_assertions": 43,
+    "with_originals_assertions": 118,
+    "optional_original_source_assertions": 7,
+    "default_dependencies": "Python standard library plus committed excerpt and draft only. No downloaded originals, Pillow, fonts, figures, browser or network needed for the normal checker.",
+    "optional_dependencies": "Explicit --originals reads the two existing full pinned m49304 source modules and the owned extractor. No download, source discovery or asset fallback.",
+    "independent_review": "Independent /root/u004_translation/remaining_exercise_audit PASS at unchanged draft9f0571cefdffede7ddca2dda97d0c5967c5b2e7b809c6c73a103cb14291c7f88 and excerpt8496a2e4e29d464c95a5b7e7e8f5f6a7f372875d7b7b1744913ece5567dc086d. Read complete actual draft/excerpt and full EN/ID Extension section; exact EN subtree and all six EN/ID MathML identities verified. All14IDs/sixMath retained once, three answer links resolve; two source answers/one new answer correctly labeled. Exercise57 attainment proof uses the given range, not continuity or f(0)/f(8) assumptions;58 x² on R and its converse cover all nonnegative outputs;59 strict x>2 is necessary and sufficient for the source root denominator, with largest real-formula domain qualified. Original mn'2.' retained. Actual HUST OCR07/08 and nativep6/19–20 reopened; current ledger consulted. No substantive finding, edits or checker reliance.",
+    "reader_build": "pending root",
+    "visual_qa": "pending root",
+    "limitations": "Finite output-level absolute-value witnesses are not evaluations of an unspecified f. Exact root arithmetic distinguishes a defined irrational result from a domain error. These checks do not replace the all-values arguments, substantive review or native-language validation."
+  },
+  "integration_config": {
+    "slug": "A30-U030-domain-extensions",
+    "source": "sources/m49304-domain-extensions-source.cnxml",
+    "source_module": "m49304",
+    "required_ids": [
+      "fs-id1165137733672",
+      "fs-id1165137442197",
+      "fs-id1165133221851",
+      "fs-id1165133221853",
+      "fs-id1165134555582",
+      "fs-id1165134555584",
+      "fs-id1165137679047",
+      "fs-id1165137679049",
+      "fs-id1165133410011",
+      "fs-id1165135209378",
+      "fs-id1165135209380",
+      "fs-id1165137645593",
+      "fs-id1165133210812",
+      "fs-id1165137779064"
+    ],
+    "numeric_checks": {
+      "fs-id1165133221853": [
+        "−5",
+        "8"
+      ],
+      "fs-id1165134555584": [
+        "0",
+        "8"
+      ],
+      "fs-id1165137645593": [
+        "2."
+      ],
+      "fs-id1165137779064": [
+        "1",
+        "2"
+      ]
+    },
+    "images": 0,
+    "source_examples": 0,
+    "try_it_exercises": 0,
+    "selected_end_exercises": 3,
+    "new_unique_end_exercises": 3,
+    "computing_check": "computing/check_domain_extensions.py",
+    "minimum_canon_examples": 4,
+    "visual_receipt": "qa/visual-A30-U030.json",
+    "math_text": {},
+    "mixed_assertions": true,
+    "assertion_kind": "111 default assertions:68 source/structure preservation +43 exact finite arithmetic checks. Explicit --originals adds7 source/boundary comparisons. Finite checks do not prove all-values claims or native fluency.",
+    "layout_adaptations": [
+      "Keep all14 source anchors and six MathML occurrences once, including original mn'2.' and source punctuation.",
+      "Place three questions before their linked answers, with two source answers and one visibly supplementary answer; preserve source solution/paragraph identities despite the declared reflow.",
+      "Use short separate display lines for added square-function attainment and strict-domain conclusions; no raw MathML in Markdown table cells.",
+      "No source or new images, tables, plots or cross-reader dependencies. Standalone attribution and native-review limitation retained."
+    ],
+    "visual": {
+      "anchors": [
+        "vi-prerequisites",
+        "fs-id1165137442197",
+        "fs-id1165137679047",
+        "fs-id1165135209378",
+        "fs-id1165134555582",
+        "vi-answer-58",
+        "fs-id1165133210812",
+        "vi-attribution"
+      ],
+      "primary": "fs-id1165133210812",
+      "secondary": "vi-answer-58",
+      "answer": "fs-id1165134555582"
+    }
+  },
+  "material_decisions_for_root_log": [
+    "Translate complete Extensions section7733672, original exercises57–59, between Technology5194497 and Real-World7832031. Keep its own title/14IDs, not the U024-owned outer SectionExercises wrapper.",
+    "Keep all six source MathML occurrences directly once and all original punctuation, including the source domain token mn'2.'. No mtext localization, rendered equivalent substitution, formula change or source-answer correction.",
+    "Questions are grouped before linked answers; this moves answer57's formula after prompt59, with all original owners/indices retained and the intentional capture order recorded.",
+    "Exercise57's range [0,8] follows from absolute values of the complete given output interval[-5,8]. Add an all-values argument, preserve the original domain, and do not assume continuity, an unknown formula or f(y)=y.",
+    "Supply exactly one new answer for source-absent exercise58: f(x)=x² on R. Prove both nonnegativity and attainment by x=√y for arbitrary y≥0; zero is included. Do not confuse a nonnegative subset with the required entire nonnegative range.",
+    "Preserve exercise59's many-answers statement and original 1/√(x−2). Clarify maximal real-formula domain and combine root radicand nonnegativity with nonzero denominator to get the strict conditionx>2; give both necessity and sufficiency.",
+    "No source images, tables, crossreferences or graph prompts occur. No supplemental plot is required or authored, and no assets or graph-generation dependencies are introduced.",
+    "Use actual HUST domain/range and solution-language witnesses before/during/final drafting. Common descriptive terms without direct selected-passage evidence are recorded honestly; no canon formula is used as a source answer.",
+    "Normal checker111 assertions separates68 source/structure checks from43 exact finite arithmetic checks. --originals adds7 source/boundary comparisons. Finite checks do not replace all-values proofs or certify native fluency.",
+    "Root alone controls reader generation, final acceptance, shared registry/notices/status and commits. The full module/book/five-book task remains active."
+  ],
+  "native_speaker_review": "not_performed",
+  "completion_warning": "This is a complete bounded draft with author/independent/checker gates passed, not an accepted rendered reader or completed module/book/spine. Root final build/visual review remains pending. Next source section is7832031."
+}

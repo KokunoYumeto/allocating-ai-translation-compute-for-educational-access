@@ -1,0 +1,49 @@
+{
+  "unit": "A10-004",
+  "status": "bounded_visual_review_pass_with_limitations",
+  "recorded_date": "2026-08-31",
+  "browser": "Codex in-app Chromium",
+  "final_reader_sha256": "36d40942555b2d04bf10170c8c5c355a9d4a4eacfc8d0c3a3760e807a8b27e16",
+  "structural_checks": 4659,
+  "detached_mutations": 62,
+  "viewports": [
+    {
+      "requested_width": 390,
+      "requested_height": 844,
+      "document_client_width": 375,
+      "document_scroll_width": 375
+    },
+    {
+      "requested_width": 1024,
+      "requested_height": 800,
+      "document_client_width": 1009,
+      "document_scroll_width": 1009
+    }
+  ],
+  "observations": [
+    "The original 881x264 classification image has two adjacent three-column panels, each with one header and nine number rows. Both headings say Factors. The corrected description is separately labeled; original source alt remains traceable.",
+    "Original factor-tree image016c remains777x360, horizontally scrollable in340px. Right tree48 splits2 and24, then4 and6, then2,2,2,3; the first2 is circled, not underlined. No image was redrawn or mirrored.",
+    "All three source tables retain659.995px overall width, two329.601px columns and correct row/cell counts; final LCM table preserves its intentionally blank lower-left cell.",
+    "Browser review caught Punjabi scroll hints inheriting nowrap and LTR inside numeric/media cells: their452px text overflow enlarged a660px table scroll area to791px. The unit-only hint rule now sets explicit dir=rtl and white-space:normal while mathematical cells/images remain LTR. Final hints have313px client and scroll widths; table scrollwidth660, local client340, maximum scroll320.238px, page375/375.",
+    "At the corrected far-right edge, the full167x86 factor diagram and167x13 LCM=72 strip are visible at x108.656–275.651. Repeated factors remain2,2,2,3,3 and all five arrow columns are intact.",
+    "Clicked the source-table correction link and verified #a10-004-arrow021. The original note separately explains the third arrow is from24's third2, through36's blank column, to the LCM's third2. The faithful source summary is not silently changed.",
+    "Clicked the review's previous place-value link and verified a10-unit-001.html#CNX_ElemAlg_Figure_01_01_002_new, the original figure and locally scrollable number columns. No full previous-reader re-review is implied."
+  ],
+  "screenshot_sha256": {
+    "a10-unit-004-arrow-correction-final-mobile.jpg": "ef29d77fe243226989173b5e1a27bb2f7734144d2228a68dfea90be724331f26",
+    "a10-unit-004-arrow-correction-mobile.jpg": "bb0651ed3c2e730d8a1555ead453c3af8bcfc10bfa187ea935c7c280e0f5a026",
+    "a10-unit-004-classification-desktop.jpg": "7660bf03aaa1c131ecc0f87aa2bbc1411aa8c6861356530961e6a3ab478a1b1d",
+    "a10-unit-004-factor-tree-mobile.jpg": "774947c54996f9605834ca52b6c2ddd689d9ece022c717208ae7f7c40fd191a6",
+    "a10-unit-004-lcm-left-final-mobile.jpg": "b5b5d878ba787d5b9e960a366fe1047cbd28191a99ce3688130c2ad34ebf5566",
+    "a10-unit-004-lcm-left-mobile.jpg": "41b3f1b1d1173cb5c33ce2ffdf7d241f3d8673d45d15e9469ff5f00ad6d752ad",
+    "a10-unit-004-lcm-overflow-before-mobile.jpg": "a53a8cd77a321e597d3d271d09baf39ca0b4f14e6a739b718836cafbb51605b6",
+    "a10-unit-004-lcm-right-final-mobile.jpg": "b3f82a8d1f820b43c4a1c71927f6f11abe2aa1a93d844e88d7b27166128e55c8",
+    "a10-unit-004-previous-place-value-link-mobile.jpg": "b6c420c83f52f7e2d807c80c46e95bfd10464375752341650ea6abaa01af03e3"
+  },
+  "evidence_sequence": "Earlier classification, factor-tree, left-column and arrow screenshots precede the final hint-only CSS change. Explicit before-overflow evidence is retained. Final-left, final-right and final-arrow views use the final004 reader; the previous-figure link screenshot shows001 after actual navigation.",
+  "limitations": [
+    "Selected source-body views only; screenshot dimensions differ from requested emulated viewport dimensions.",
+    "No native Punjabi, educator, screen-reader, keyboard, cross-browser or font-portability certification.",
+    "This completes the selected instructional and Key Concepts scope, not the full module or book;82exercises and remaining module context/glossary continue in A10-005."
+  ]
+}

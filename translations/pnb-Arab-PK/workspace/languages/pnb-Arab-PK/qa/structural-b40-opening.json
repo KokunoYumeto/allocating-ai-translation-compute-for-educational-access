@@ -1,0 +1,214 @@
+{
+  "schema": "pnb-b40-opening-source-bound-reader-qa-v1",
+  "unit": "B40-opening",
+  "status": "passed production checkpoint",
+  "checks": 4092,
+  "detached_mutation_count": 39,
+  "counts": {
+    "source_keys": 174,
+    "math_owners": 76,
+    "source_tabular_environments": 6,
+    "semantic_html_tables": 3,
+    "lineated_quotes": 2,
+    "credit_address_blocks": 1,
+    "source_pdf_components": 2,
+    "transparent_component_previews": 2
+  },
+  "source_pins": {
+    "canonical": "df2262e089a02651c127f1dd12649c4622ee1383",
+    "comparison": "e84ce2956a7304830c42eba70106f940fefee7c4"
+  },
+  "production_canon_receipt": {
+    "path": "canon/receipts/B40-opening-production-20260901T112205453Z.json",
+    "sha256": "14c96b8a692eab4a253557185095ed590eb29e7a277d4d3fe640a23ff828d763"
+  },
+  "file_hashes": {
+    "source-excerpts/manifest-b40-opening.json": "a3430810fd1f3259587b5581980280ac78ff2520148c227d677798b5e3eb1239",
+    "translations/b40-opening.json": "45352c7245ff69768f97dbb12ca0e8926fa25ded46bed2169c62779984daf173",
+    "source-excerpts/b40-opening.json": "560a16023aa2e93d5f47236320ef5740090b2d786d9f506b6f68d05ac01315f5",
+    "provenance/b40-opening-component-notices.json": "d66924e0634f6a4ac0cffb4f1a69feed666dcf450309739b1fd3a8d5ee7e11bf",
+    "reader/b40-opening.html": "b2f9f0faafa080248a30af434c354a2b6e458f5bb9db4855f96fed740d9ec7b9",
+    "scripts/qa_b40_opening.py": "14811f703eff0509c2725fea97c5c393aaacb2e2712159044fdb6002275d7531",
+    "scripts/b40_opening_tex.py": "9b8bbbaf9c8fb92be2b4585a65935644d4a4d8f2d9d5130e2c59b5bd2967436a",
+    "scripts/b40_opening_math_expected.py": "681ef4768c24bccf16f0a2f6d6b9bf9f4cabfbe1360b895d0d8eafb71fa39829",
+    "scripts/prepare_b40_opening.py": "4508f0209f3746aa67b877136a80e964697aff7d6578936ec9db041d92e81a26",
+    "scripts/build_b40_opening.py": "00b80250446f4c4aadb59b0957a23bb5ad9597dec66391a3ec81119f279c68b4",
+    "qa/b40-opening-language-notes.md": "56c048ba8cca955e305efb6b2e4a0a92f31a7ae668db230e20317b88d1aa8367",
+    "canon/receipts/B40-opening-production-20260901T112205453Z.json": "14c96b8a692eab4a253557185095ed590eb29e7a277d4d3fe640a23ff828d763"
+  },
+  "asset_hashes": {
+    "assets/b40/b40-opening-axesgraphic-transparent.png": "b74ae305cf797f9e7f5823a00fbedc5a9b03bb98388aa01177beeae7e784b0e3",
+    "assets/b40/b40-opening-axesgraphic.pdf": "e7e19410f8ee6f04c9577295ae2a09eb6a8aed609d05dc67ae4df877fa1284d9",
+    "assets/b40/b40-opening-shadow-transparent.png": "a2e2fbe0a80a7b2bbda57eb74b57a7d42def0b4c77744f9af9c816d8a67a4ab5",
+    "assets/b40/b40-opening-shadow.pdf": "f352c409ac0c97112b2844217b8b34c90562e616c7426f18bc188bc90473fd5a"
+  },
+  "detached_mutations": [
+    {
+      "name": "source-paragraph-text",
+      "rejected_by": "source.target-exact:src/pref/pref.tex#paragraph/1"
+    },
+    {
+      "name": "source-owner-key",
+      "rejected_by": "source.visual-order"
+    },
+    {
+      "name": "source-owner-omission",
+      "rejected_by": "source.visual-order"
+    },
+    {
+      "name": "source-raw-hash",
+      "rejected_by": "source.raw-hash:src/pref/pref.tex#paragraph/1"
+    },
+    {
+      "name": "table-cell-data",
+      "rejected_by": "source.target-exact:src/cover/symlist.tex#table/1/row/2/cell/2"
+    },
+    {
+      "name": "table-cell-tag",
+      "rejected_by": "html.parse"
+    },
+    {
+      "name": "table-row-regroup",
+      "rejected_by": "table.row-order"
+    },
+    {
+      "name": "quote-as-numeric-table",
+      "rejected_by": "html.parse"
+    },
+    {
+      "name": "credit-not-address",
+      "rejected_by": "html.parse"
+    },
+    {
+      "name": "publication-date",
+      "rejected_by": "metadata.date"
+    },
+    {
+      "name": "credit-name",
+      "rejected_by": "source.target-exact:src/pref/pref.tex#table/2/row/4/cell/1"
+    },
+    {
+      "name": "schedule-range-minus",
+      "rejected_by": "source.target-exact:src/pref/pref.tex#table/1/row/2/cell/2"
+    },
+    {
+      "name": "prose-em-to-en",
+      "rejected_by": "source.target-exact:src/pref/pref.tex#paragraph/2"
+    },
+    {
+      "name": "source-url-target",
+      "rejected_by": "url.href"
+    },
+    {
+      "name": "source-mark-glyph",
+      "rejected_by": "mark.glyph"
+    },
+    {
+      "name": "math-source-variable",
+      "rejected_by": "math.dom-tex"
+    },
+    {
+      "name": "math-wrapper-extra-text",
+      "rejected_by": "math.wrapper-tail"
+    },
+    {
+      "name": "math-annotation",
+      "rejected_by": "math.annotation-raw"
+    },
+    {
+      "name": "math-unicode-R-erasure",
+      "rejected_by": "math.handwritten-tree"
+    },
+    {
+      "name": "math-greek-case",
+      "rejected_by": "math.handwritten-tree"
+    },
+    {
+      "name": "math-operator",
+      "rejected_by": "math.handwritten-tree"
+    },
+    {
+      "name": "math-script-group",
+      "rejected_by": "html.parse"
+    },
+    {
+      "name": "math-spacing-erasure",
+      "rejected_by": "math.handwritten-tree"
+    },
+    {
+      "name": "math-fallback-raw",
+      "rejected_by": "math.raw-fallback"
+    },
+    {
+      "name": "math-ledger",
+      "rejected_by": "math.reversible-ledger"
+    },
+    {
+      "name": "math-notice-tree",
+      "rejected_by": "math.notice-tree"
+    },
+    {
+      "name": "math-normalization-erasure",
+      "rejected_by": "math.nbym-normalization-owners"
+    },
+    {
+      "name": "image-src",
+      "rejected_by": "assets.image-src"
+    },
+    {
+      "name": "image-pdf-hash",
+      "rejected_by": "assets.dom-pdf-hash"
+    },
+    {
+      "name": "image-invented-source-alt",
+      "rejected_by": "assets.no-source-alt"
+    },
+    {
+      "name": "pdf-link-target",
+      "rejected_by": "assets.pdf-link"
+    },
+    {
+      "name": "component-source-hash",
+      "rejected_by": "assets.pdf-sha"
+    },
+    {
+      "name": "wrong-license",
+      "rejected_by": "notice.license"
+    },
+    {
+      "name": "false-frontmatter-complete",
+      "rejected_by": "scope.frontmatter"
+    },
+    {
+      "name": "original-bridge-inside-source",
+      "rejected_by": "source.no-original-injection"
+    },
+    {
+      "name": "anonymous-source-injection",
+      "rejected_by": "source.no-anonymous-injection"
+    },
+    {
+      "name": "TOC-overreach",
+      "rejected_by": "scope.stops-before-TOC"
+    },
+    {
+      "name": "mobile-cover-grid-min-content-regression",
+      "rejected_by": "css.mobile-grid-minmax"
+    },
+    {
+      "name": "mobile-cover-inherited-640-regression",
+      "rejected_by": "css.mobile-image-min-width"
+    }
+  ],
+  "limits": [
+    "The finite parser covers only the 76 observed B40-opening formulas; it is not universal TeX support. Unknown syntax fails closed.",
+    "Hefferon nbym/nbyn negative thin spaces are explicit normalization records; MathML Core handles multiplication spacing while raw TeX and macro evidence remain exact.",
+    "The two PNGs are transparent Poppler component previews, displayed separately in source layer order. They are not an exact upstream TeX cover composite.",
+    "Punjabi source-block seals and exact DOM comparisons detect changes after actual source/canon review; they do not establish native-language or educator certification.",
+    "No TeX, Asymptote, upstream code, network service, analytics or grading runtime ran. Browser, mobile and assistive-technology review remain parent work.",
+    "The reader stops before generated contents and the starred-subsection explanation. Neither whole front matter, B40, nor the five-work assignment is complete."
+  ],
+  "whole_frontmatter_complete": false,
+  "whole_book_translation_complete": false,
+  "whole_assignment_complete": false
+}
