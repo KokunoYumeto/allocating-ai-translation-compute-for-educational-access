@@ -1,0 +1,61 @@
+{
+  "build_outputs": {
+    "TEXT_LEDGER.json": {
+      "bytes": 53207,
+      "sha256": "a34ebdf57b2b95040e7f29c6b5556edc3c24890b8b71dcf8b5bfc341e9cfdc1f"
+    },
+    "index.html": {
+      "bytes": 50860,
+      "sha256": "616f87195fe2a7871745f1851fc8fd4483825126dbc1968bb7b9b7baa4f8021c"
+    },
+    "modules/m82630/index.cnxml": {
+      "bytes": 45858,
+      "sha256": "ef636458a3a8024f132a2c51e28bbffd3282d596c51fe9b6b80d047652f9862e"
+    }
+  },
+  "build_runs": 2,
+  "collection": {
+    "bytes": 5256,
+    "path": "source/collection.xml",
+    "sha256": "5fdc03ab9e6ee7327be72f7e0a17c4d884e65f4a8081a0b2a06dbdb1392bda72"
+  },
+  "commands": [
+    "python -B build.py",
+    "python -B visual_check.py (twice)",
+    "python -B qa.py"
+  ],
+  "date": "2026-09-04",
+  "identical_build_outputs": true,
+  "identical_visual_outputs": true,
+  "network": "No remote network was used; the reader was served on 127.0.0.1 solely to a captured Chrome process.",
+  "schema": "a10.bn-Beng-IN.deterministic-replay.v1",
+  "source": {
+    "bytes": 22483,
+    "path": "source/m82630.en.cnxml",
+    "sha256": "d9f45fb31f4cb399c009c2be25eca1a99132b4b6882fb07f8649c2d56974f90b"
+  },
+  "status": "pass",
+  "visual_outputs": {
+    "visual/RESULTS.json": {
+      "bytes": 5771,
+      "sha256": "e4f37676b645a2e19012379801700678a2152982df78f5475228fb5f953213d8"
+    },
+    "visual/desktop-graph.png": {
+      "bytes": 212333,
+      "sha256": "d93423dfd1798a24b2d87e437c7325074bc83ce8dbb76a0e04f0acd313510000"
+    },
+    "visual/desktop-top.png": {
+      "bytes": 144715,
+      "sha256": "4b47fc828e484215b8b7cf3d9ae52875edb4cca54c7635ecbe12a5616fbc56db"
+    },
+    "visual/narrow-graph.png": {
+      "bytes": 78505,
+      "sha256": "b0177d6b7f87f5cd71d6a7a33a6a517c07640546eb6fb563251cd2e46f4f24a4"
+    },
+    "visual/narrow-top.png": {
+      "bytes": 57303,
+      "sha256": "b3c3f3df62864ba3ba7eecd5f8679ed2b61fe68a47d9d8b5b5659961d32fd3e2"
+    }
+  },
+  "visual_runs": 2
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "a10.browser-qa.v1",
+  "status": "pass",
+  "page": "index.html",
+  "renderer": {
+    "engine": "Google Chrome",
+    "version": "152.0.7977.77",
+    "automation": "Playwright 1.62.1"
+  },
+  "viewports": [
+    {
+      "name": "wide",
+      "width": 1600,
+      "height": 1000,
+      "document_scroll_width": 1600,
+      "horizontal_overflow": false,
+      "main_left": 0,
+      "main_right": 1600,
+      "main_width": 1600
+    },
+    {
+      "name": "narrow",
+      "width": 390,
+      "height": 844,
+      "document_scroll_width": 390,
+      "horizontal_overflow": false,
+      "main_left": 0,
+      "main_right": 390,
+      "main_width": 390
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "qa/wide.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 117350,
+      "sha256": "fc8ec6781dac734f179dd37ac91c42711cafe87f8d9a4bd1c8c3b4dd2e07d8a6"
+    },
+    {
+      "path": "qa/narrow.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 81424,
+      "sha256": "d40ce16e31bc7803cc26aff446fdd29e3daafcd781885bd2613cc644ead02b2e"
+    }
+  ],
+  "visual_inspection": {
+    "status": "pass",
+    "checks": [
+      "Gujarati glyphs render cleanly with the packaged font",
+      "wide main content fills the viewport instead of a centered fixed-width column",
+      "narrow navigation wraps and prose remains readable",
+      "document-level horizontal overflow is absent; wide tables and mathematics retain local scrolling",
+      "headings, scope note, contents and first exercise are not clipped or overlapped"
+    ]
+  },
+  "lazy_media_note": "The viewport screenshots exercise visible content. All 68 original media are separately hash- and reference-verified; closed details intentionally defer non-visible images."
+}

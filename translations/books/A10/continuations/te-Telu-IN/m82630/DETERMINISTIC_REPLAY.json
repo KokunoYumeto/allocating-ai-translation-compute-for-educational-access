@@ -1,0 +1,13 @@
+{
+  "schema": "a10.deterministic-replay.v1",
+  "locale": "te-Telu-IN",
+  "module": "m82630",
+  "status": "pass",
+  "command": "python build.py",
+  "comparison_scope": "Every packet file, including the eight QA screenshots, manifest, checksum ledger, PACKAGE.zip and PACKAGE.json, compared by relative path, byte count and SHA-256 after two isolated exact-command rebuilds.",
+  "expected_exclusions": [],
+  "runs_compared": 2,
+  "isolation": "Each replay used an independent exact copy of the sealed packet. The builder writes only inside its packet and does not mutate canonical or locale-control state.",
+  "result": "pass",
+  "verified_on": "2026-09-04"
+}

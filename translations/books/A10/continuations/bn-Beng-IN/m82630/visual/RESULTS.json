@@ -1,0 +1,215 @@
+{
+  "browser": {
+    "javascript_version": "15.2.124.19",
+    "product": "Chrome/152.0.7977.77",
+    "protocol_version": "1.3",
+    "revision": "@529d9a34b491745086b59458f58a5aae8292adaa",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36"
+  },
+  "checks": [
+    "main and header are centered and fill at least 96% of the desktop viewport",
+    "390px reader fills at least 95% of the viewport",
+    "no document-level horizontal overflow",
+    "all four exact images load and stay within their containers",
+    "the 791px graph reflows below the narrow viewport width with no hidden content",
+    "title, graph, editorial notes, and footer remain present"
+  ],
+  "date": "2026-09-04",
+  "schema": "a10.bn-Beng-IN.browser-visual.v1",
+  "screenshots": [
+    {
+      "bytes": 144715,
+      "path": "visual/desktop-top.png",
+      "position": "page top",
+      "sha256": "4b47fc828e484215b8b7cf3d9ae52875edb4cca54c7635ecbe12a5616fbc56db"
+    },
+    {
+      "bytes": 212333,
+      "path": "visual/desktop-graph.png",
+      "position": "graph and its Bengali description",
+      "sha256": "d93423dfd1798a24b2d87e437c7325074bc83ce8dbb76a0e04f0acd313510000"
+    },
+    {
+      "bytes": 57303,
+      "path": "visual/narrow-top.png",
+      "position": "page top",
+      "sha256": "b3c3f3df62864ba3ba7eecd5f8679ed2b61fe68a47d9d8b5b5659961d32fd3e2"
+    },
+    {
+      "bytes": 78505,
+      "path": "visual/narrow-graph.png",
+      "position": "graph and its Bengali description",
+      "sha256": "b0177d6b7f87f5cd71d6a7a33a6a517c07640546eb6fb563251cd2e46f4f24a4"
+    }
+  ],
+  "status": "pass",
+  "transport": "one captured headless Chrome process over loopback HTTP and DevTools",
+  "viewports": {
+    "desktop": {
+      "bodyFontSize": "20px",
+      "counts": {
+        "figures": 1,
+        "ids": 68,
+        "iframes": 0,
+        "images": 4,
+        "scripts": 0,
+        "stylesheets": 1
+      },
+      "document": {
+        "clientWidth": 1440,
+        "horizontalOverflow": false,
+        "lang": "bn-IN",
+        "scrollHeight": 9648,
+        "scrollWidth": 1440
+      },
+      "header": {
+        "height": 292.140625,
+        "left": 24,
+        "right": 1416,
+        "width": 1392
+      },
+      "images": [
+        {
+          "complete": true,
+          "naturalHeight": 34,
+          "naturalWidth": 34,
+          "overflowsParent": false,
+          "parentWidth": 32,
+          "renderedHeight": 32,
+          "renderedWidth": 32,
+          "src": "tryit.png"
+        },
+        {
+          "complete": true,
+          "naturalHeight": 55,
+          "naturalWidth": 59,
+          "overflowsParent": false,
+          "parentWidth": 32,
+          "renderedHeight": 32,
+          "renderedWidth": 32,
+          "src": "howtoicon.png"
+        },
+        {
+          "complete": true,
+          "naturalHeight": 34,
+          "naturalWidth": 34,
+          "overflowsParent": false,
+          "parentWidth": 32,
+          "renderedHeight": 32,
+          "renderedWidth": 32,
+          "src": "media.png"
+        },
+        {
+          "complete": true,
+          "naturalHeight": 257,
+          "naturalWidth": 791,
+          "overflowsParent": false,
+          "parentWidth": 1392,
+          "renderedHeight": 257,
+          "renderedWidth": 791,
+          "src": "CNX_ElemAlg_Figure_05_01_015_img.jpg"
+        }
+      ],
+      "keyContent": {
+        "editorial": true,
+        "footer": true,
+        "graph": true,
+        "title": true
+      },
+      "main": {
+        "height": 9355.796875,
+        "left": 24,
+        "right": 1416,
+        "width": 1392
+      },
+      "viewport": {
+        "devicePixelRatio": 1,
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "narrow": {
+      "bodyFontSize": "18px",
+      "counts": {
+        "figures": 1,
+        "ids": 68,
+        "iframes": 0,
+        "images": 4,
+        "scripts": 0,
+        "stylesheets": 1
+      },
+      "document": {
+        "clientWidth": 390,
+        "horizontalOverflow": false,
+        "lang": "bn-IN",
+        "scrollHeight": 18104,
+        "scrollWidth": 390
+      },
+      "header": {
+        "height": 285.75,
+        "left": 8,
+        "right": 382,
+        "width": 374
+      },
+      "images": [
+        {
+          "complete": true,
+          "naturalHeight": 34,
+          "naturalWidth": 34,
+          "overflowsParent": false,
+          "parentWidth": 32,
+          "renderedHeight": 32,
+          "renderedWidth": 32,
+          "src": "tryit.png"
+        },
+        {
+          "complete": true,
+          "naturalHeight": 55,
+          "naturalWidth": 59,
+          "overflowsParent": false,
+          "parentWidth": 32,
+          "renderedHeight": 32,
+          "renderedWidth": 32,
+          "src": "howtoicon.png"
+        },
+        {
+          "complete": true,
+          "naturalHeight": 34,
+          "naturalWidth": 34,
+          "overflowsParent": false,
+          "parentWidth": 32,
+          "renderedHeight": 32,
+          "renderedWidth": 32,
+          "src": "media.png"
+        },
+        {
+          "complete": true,
+          "naturalHeight": 257,
+          "naturalWidth": 791,
+          "overflowsParent": false,
+          "parentWidth": 374,
+          "renderedHeight": 116.703125,
+          "renderedWidth": 359.1875,
+          "src": "CNX_ElemAlg_Figure_05_01_015_img.jpg"
+        }
+      ],
+      "keyContent": {
+        "editorial": true,
+        "footer": true,
+        "graph": true,
+        "title": true
+      },
+      "main": {
+        "height": 17817.921875,
+        "left": 8,
+        "right": 382,
+        "width": 374
+      },
+      "viewport": {
+        "devicePixelRatio": 1,
+        "height": 844,
+        "width": 390
+      }
+    }
+  }
+}

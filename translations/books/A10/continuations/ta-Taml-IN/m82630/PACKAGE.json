@@ -1,0 +1,21 @@
+{
+  "schema": "a10.packet.v1",
+  "packet_id": "ta-Taml-IN-m82630",
+  "locale": "ta-Taml-IN",
+  "module_id": "m82630",
+  "status": "complete_bounded_increment",
+  "full_assignment_status": "partial",
+  "scope_statement": "Complete Tamil translation and accessible derivative of canonical preface m82630, plus a clearly separate teacher-independent companion. This is not a complete A10 book or Grades 2-8 programme.",
+  "components": {
+    "canonical_source_translation": {"status": "complete", "source_elements": 194, "source_ids": 66, "sections": 25},
+    "teacher_independent_companion": {"status": "complete_for_preface", "diagnostic_items": 4, "answers_with_reasoning": 4, "misconceptions": 4, "grade_routes": ["2-4", "5-6", "7-8"], "boundary": "orientation/readiness only, not chapter mastery"},
+    "source_exercises": {"count": 0, "supplied_solutions": 0, "missing_answer_additions": 0},
+    "mathml": {"source_trees": 0, "translated_trees": 0},
+    "media": {"canonical_assets": 4, "modified_assets": 0, "translated_alternatives": 4},
+    "audio": {"status": "not assigned for the Tamil workflow"},
+    "pdf": {"packet_pdf_created": false, "assignment_requirement": "searchable screen/print PDF", "status": "pending at the wider assignment level", "reason": "The recovered m82630 packet build produces offline HTML/CSS and did not already contain a PDF build path; no PDF or PDF/UA claim is made."}
+  },
+  "build": {"command": "python build.py", "deterministic_check": "python build.py --check", "dependencies": ["Python 3", "lxml"]},
+  "rights": {"source_and_derivatives": "CC BY-NC-SA 4.0, subject to component-specific notices", "font": "SIL Open Font License 1.1", "notices": ["LICENSE.txt", "NOTICE.txt", "reader/fonts/OFL.txt"]},
+  "next_canonical_component": "m82451"
+}

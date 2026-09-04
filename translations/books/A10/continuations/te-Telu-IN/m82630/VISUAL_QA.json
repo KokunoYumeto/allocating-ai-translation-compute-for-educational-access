@@ -1,0 +1,54 @@
+{
+  "schema": "a10.browser-visual-qa.v1",
+  "locale": "te-Telu-IN",
+  "module": "m82630",
+  "status": "pass",
+  "method": "The repaired reader and standalone learning-support page were rendered in installed Google Chrome 152.0.7977.77 through Playwright against a loopback HTTP server. Eight actual PNG viewport captures were generated and directly inspected with the local image viewer. This is not a DOM-only or synthetic-layout claim. The computer-use browser inventory returned no available browser surface, so this receipt does not claim an in-app-browser inspection.",
+  "base_url": "http://127.0.0.1:8766/",
+  "reflow": {
+    "fixed_1050px_cap_removed": true,
+    "header_main_footer_width": "100%",
+    "header_main_footer_max_width": "none",
+    "centered_margin": "0 auto",
+    "responsive_horizontal_padding": "clamp(1rem,4vw,4.5rem)"
+  },
+  "desktop": {
+    "status": "pass",
+    "viewport": {"width_css_px": 1280, "height_css_px": 900, "device_scale_factor": 1},
+    "reader": {"document_scroll_width_css_px": 1280, "body_scroll_width_css_px": 1280, "header_width_css_px": 1280, "main_width_css_px": 1280, "footer_width_css_px": 1280, "visible_element_overflows": 0, "image_overflows": 0},
+    "learning_support": {"document_scroll_width_css_px": 1280, "body_scroll_width_css_px": 1280, "header_width_css_px": 1280, "main_width_css_px": 1280, "footer_width_css_px": 1280, "visible_element_overflows": 0, "image_overflows": 0, "expanded_details_checked": 1},
+    "checks": [
+      "The reader and standalone learning-support page fill the full viewport width with balanced responsive padding.",
+      "Telugu glyph shaping, headings, body text, links, status panels and focusable details are readable without clipping.",
+      "The three-panel graph and its visible Telugu explanation remain inside the reading area without distortion.",
+      "The first learning-support answer expands cleanly and the repaired links remain visible and readable."
+    ]
+  },
+  "narrow": {
+    "status": "pass",
+    "viewport": {"width_css_px": 390, "height_css_px": 844, "device_scale_factor": 1},
+    "reader": {"document_scroll_width_css_px": 390, "body_scroll_width_css_px": 390, "header_width_css_px": 390, "main_width_css_px": 390, "footer_width_css_px": 390, "visible_element_overflows": 0, "image_overflows": 0},
+    "learning_support": {"document_scroll_width_css_px": 390, "body_scroll_width_css_px": 390, "header_width_css_px": 390, "main_width_css_px": 390, "footer_width_css_px": 390, "visible_element_overflows": 0, "image_overflows": 0, "expanded_details_checked": 1},
+    "checks": [
+      "The 650px media query produces single-column navigation and terminology content.",
+      "No horizontal overflow is present on either page at 390px.",
+      "Long Telugu headings, source identifiers, English labels and links wrap without clipping.",
+      "The graph scales within the reading column and the expanded answer remains fully readable."
+    ]
+  },
+  "screenshots": [
+    {"path": "qa-screenshots/desktop-reader.png", "bytes": 105954, "sha256": "6c5e4b730feb52a6f1e8c0d2d5e2eaa359288abc2a95cbbf2773388941122331", "viewport": "1280x900", "view": "reader top"},
+    {"path": "qa-screenshots/desktop-reader-graph.png", "bytes": 156644, "sha256": "dce23f436ff7728fe723498528c23cc032f81a279bd27bb23ef92e96d32f00cf", "viewport": "1280x900", "view": "reader graph and visible description"},
+    {"path": "qa-screenshots/desktop-support.png", "bytes": 127016, "sha256": "9c8e09f3f5f2ed5720f77e4a85804393af23d7306ab9c5b011ae7c3e7c8b6a52", "viewport": "1280x900", "view": "standalone support top"},
+    {"path": "qa-screenshots/desktop-support-expanded.png", "bytes": 129970, "sha256": "1985bfecf7e5d97de2ab90a5c4d6bd3ce1ddd4996ef1c13f9202c70b2e092785", "viewport": "1280x900", "view": "standalone support expanded answer"},
+    {"path": "qa-screenshots/narrow-reader.png", "bytes": 56602, "sha256": "810ff5015d8545bbd10ea50429f0156a74839335ace17f6d9a677e1c51e45689", "viewport": "390x844", "view": "reader top"},
+    {"path": "qa-screenshots/narrow-reader-graph.png", "bytes": 77250, "sha256": "042043884f7f2a6d4e8f28e4b7e25884dfb8e56a3aebc3e1fdbf1156fb55d45e", "viewport": "390x844", "view": "reader graph and visible description"},
+    {"path": "qa-screenshots/narrow-support.png", "bytes": 57492, "sha256": "21eb9c76224ee110da3f3fee74d10d0354bc0d19c3f49a4e05cec59805d29833", "viewport": "390x844", "view": "standalone support top"},
+    {"path": "qa-screenshots/narrow-support-expanded.png", "bytes": 71965, "sha256": "2e4ec7bedd8d73a636e175356b8709fdf996b680dc148e6df7c1f6b5220388af", "viewport": "390x844", "view": "standalone support expanded answer"}
+  ],
+  "browser_console": {"warnings": 0, "errors": 0, "pages_checked": ["index.html", "learning-support.html"]},
+  "limitations": [
+    "This visual receipt covers the bounded m82630 reader and learning-support page, not later A10 modules or the complete Grades 3-10 product.",
+    "The graph raster intentionally retains its English labels; Telugu alt text and a complete visible Telugu description were checked."
+  ]
+}

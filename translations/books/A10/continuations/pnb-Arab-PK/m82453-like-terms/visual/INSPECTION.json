@@ -1,0 +1,36 @@
+{
+  "schema": "a10-visual-inspection-v1",
+  "status": "passed",
+  "date": "2026-09-04",
+  "method": "Direct model visual inspection of the exact final-code PNG evidence through the local image viewer, cross-checked against browser geometry in visual/RESULTS.json.",
+  "visual_results_sha256": "95259048bab8c2cafcbb6b8f3a5abe5a242946fd432a166ec005ed2f397e5989",
+  "images": [
+    {"path": "visual/desktop.png", "bytes": 83129, "sha256": "129c0a1d54eb6bdc422f6ba1bd62528c53b18eb9a21579939d6676aed117631e"},
+    {"path": "visual/desktop-full.png", "bytes": 943647, "sha256": "1e39a56c567ac75aedc630207f2dbcd198d85d70529b8bfbb453ea407956a08f"},
+    {"path": "visual/desktop-figure-cluster.png", "bytes": 102848, "sha256": "6d70b21e06da7a9ac9fc8fa3e133897240d2303fac61c75b94d2005f4b6cb87c"},
+    {"path": "visual/desktop-figures.png", "bytes": 124533, "sha256": "c5858f42d4283ccb91a7d0cdfe475010d0139a0cfe67850d83bc3cd68084e4b0"},
+    {"path": "visual/desktop-bottom.png", "bytes": 166035, "sha256": "47748b89280dcbca8d41f82a95b476ec5141df13ac5f264dedb41a5d745c731f"},
+    {"path": "visual/narrow.png", "bytes": 53285, "sha256": "e0bceb31d0e1ca9777f43e11f3c0945cd4c7329e187c03c19ddff07ce30cb86a"},
+    {"path": "visual/narrow-full.png", "bytes": 932459, "sha256": "a13bc357618deee20081786cd06ef1cd23f475839cfce9f105e6c34be8ba21e4"},
+    {"path": "visual/narrow-figure-cluster.png", "bytes": 93584, "sha256": "2cc4f1c5b0e6a72728a20ff89cde8829b07e73917037eed2e2bc0b6b6f318436"},
+    {"path": "visual/narrow-figures.png", "bytes": 82110, "sha256": "acbe7a11042e0e5bfbf41674ab034738322bb8c53bead8f3276ea6fbab460f79"},
+    {"path": "visual/narrow-bottom.png", "bytes": 78588, "sha256": "5147bd20cccddfe6091b6508114448e3055f04d8e7bf92e196cc74f7a7b0737a"}
+  ],
+  "observations": [
+    {"image": "visual/desktop.png", "status": "passed", "observation": "The 1440px reader shell fills the viewport rather than sitting in a centered 1000px column; title, language label, navigation, scope note and opening lesson remain legible with no clipping or overlap."},
+    {"image": "visual/desktop-full.png", "status": "passed", "observation": "The complete desktop page is continuous from header through source lesson, separately marked guidance and credits; section rules, tables, examples and footer occupy the full-width canvas without a cut-off edge."},
+    {"image": "visual/desktop-figure-cluster.png", "status": "passed", "observation": "All three canonical 594px panels are simultaneously visible at natural width; both columns and every right-side expression are present, unmirrored and unobscured."},
+    {"image": "visual/desktop-figures.png", "status": "passed", "observation": "The worked-example region shows the three source panels, their accompanying Punjabi notes and the following supplied algebra answers in a clear vertical sequence with no collision."},
+    {"image": "visual/desktop-bottom.png", "status": "passed", "observation": "The final contextual guidance, next-anchor note and complete English credits/license/provenance footer are visible and readable; inline mathematics and links do not overflow."},
+    {"image": "visual/narrow.png", "status": "passed", "observation": "At 390px the Shahmukhi title, navigation, scope note and opening prose wrap within the viewport; no text, focus surface or rule is clipped horizontally."},
+    {"image": "visual/narrow-full.png", "status": "passed", "observation": "The saved full 390px page contains the entire source section, learner guidance and credits in one continuous column with no missing region or document-level horizontal displacement."},
+    {"image": "visual/narrow-figure-cluster.png", "status": "passed", "observation": "The complete three-panel cluster is captured: every original raster fits wholly within 390px, and each Punjabi semantic reconstruction presents the full LTR mathematics at readable size—original order and groups, reordered groups, then 3x² + 7x + 12—with no sideways scrolling."},
+    {"image": "visual/narrow-figures.png", "status": "passed", "observation": "The narrow worked-example viewport preserves visible left and right endpoints of each raster that appears and shows the responsive panels in normal reading order without overlap; no mathematical edge is hidden behind a scroll region."},
+    {"image": "visual/narrow-bottom.png", "status": "passed", "observation": "At 390px the next-anchor note and complete English credits/license/provenance footer wrap cleanly inside the page; all footer content remains visible and selectable without horizontal clipping."}
+  ],
+  "limitations": [
+    "The full-page images are also validated by computed browser geometry because fitting a very tall page to a review canvas reduces apparent text size.",
+    "The semantic narrow-screen panels are explicitly marked as original responsive reconstructions and do not replace or modify the canonical JPEGs.",
+    "This visual pass does not claim human classroom validation and creates no human-review release hold."
+  ]
+}

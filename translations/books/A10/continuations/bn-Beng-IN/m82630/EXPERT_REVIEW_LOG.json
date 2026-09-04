@@ -1,0 +1,529 @@
+{
+  "schema": "a10.expert-review-log.v1",
+  "locale": "bn-Beng-IN",
+  "coverage_status": "partial",
+  "packet": {
+    "module": "m82630",
+    "packet_coverage": "complete canonical preface",
+    "full_a10_coverage": "partial: 1 of 82 ordered modules",
+    "review_basis": "Retrospective reconstruction from the completed slot map, exact canonical source, locked Indian Bengali terminology ledger, two locked West Bengal OCR witnesses, and direct inspection of both page images and all four canonical media assets.",
+    "human_expert_status": "not checked; unavailable human review is not a QA or release hold"
+  },
+  "entries": [
+    {
+      "decision_id": "bn-IN-m82630-term-variable",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slot 36; XPath /*/*[3]/*[4]/*[3]/*[3]/*[2]/*[2]@tail",
+      "target_location": "translations.json#/translations/36 and modules/m82630/index.cnxml at the same XPath",
+      "source_sense": "variable: a symbol whose value may vary or be unknown in an equation",
+      "chosen_wording": "চল",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal পঠন সেতু, Class VII",
+          "location": "PDF page 189 / printed page 10",
+          "result": "The actual page image repeatedly labels x and y as চল.",
+          "render_sha256": "c55d1f090e29adaf5053e21ad875b0c0e01c5d94f24afba0f9b6fad04da80c00"
+        },
+        {
+          "authority": "Recovered Indian Bengali terminology ledger",
+          "location": "terminology.tsv row T012",
+          "result": "Selects চল and warns not to read x or y as a multiplication sign.",
+          "sha256": "a989ec8030754e3c8b48f1271fa8204c6435654aeb9b8358703f9262e8565ff1"
+        }
+      ],
+      "rationale": "The West Bengal classroom witness directly supports the concise school-mathematics term, and it keeps the preface readable for the intended Grades 3–8 recovery route.",
+      "alternatives": [
+        {
+          "wording": "পরিবর্তনশীল",
+          "disposition": "not chosen; intelligible but longer and less consistent with the checked West Bengal page"
+        }
+      ],
+      "uncertainty": "Low for this packet; the chosen term is directly witnessed, though wider full-book consistency still needs continued checking.",
+      "provisional": true,
+      "review_question": "Would a West Bengal mathematics editor retain চল throughout later chapters for both unknowns and general variables, adding a distinction only where the source requires it?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-coefficient",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slot 89; XPath /*/*[3]/*[4]/*[7]/*[3]/*[3]@text",
+      "target_location": "translations.json#/translations/89 and modules/m82630/index.cnxml at the same XPath",
+      "source_sense": "coefficient: the numerical factor multiplying a variable term",
+      "chosen_wording": "সহগ",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal পঠন সেতু, Class VII",
+          "location": "PDF page 189 / printed page 10",
+          "result": "The actual image explicitly identifies the coefficients in 2x + 3 and 4x² + 5x + 1 with সহগ.",
+          "render_sha256": "c55d1f090e29adaf5053e21ad875b0c0e01c5d94f24afba0f9b6fad04da80c00"
+        }
+      ],
+      "rationale": "This is an exact local school-text witness for the source sense and is shorter and more conventional than a descriptive paraphrase.",
+      "alternatives": [
+        {
+          "wording": "গুণক সংখ্যা",
+          "disposition": "not chosen; descriptive but not the checked technical term"
+        }
+      ],
+      "uncertainty": "Low; direct page-image evidence.",
+      "provisional": false,
+      "review_question": "Is any explanatory gloss needed at first use for younger recovery-route readers, while keeping সহগ as the technical term?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-factoring",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slots 45–46; XPath /*/*[3]/*[4]/*[3]/*[3]/*[7]",
+      "target_location": "translations.json#/translations/45 and /translations/46; modules/m82630/index.cnxml at the same section",
+      "source_sense": "factoring expressions: rewriting an expression as a product of factors",
+      "chosen_wording": "উৎপাদকে বিশ্লেষণ; রাশিকে উৎপাদকে বিশ্লেষণ",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal পঠন সেতু, Class VII",
+          "location": "PDF page 189 / printed page 10",
+          "result": "The actual image uses the heading বীজগাণিতিক সংখ্যামালার উৎপাদকে বিশ্লেষণ and demonstrates 5x + 10y = 5(x + 2y).",
+          "render_sha256": "c55d1f090e29adaf5053e21ad875b0c0e01c5d94f24afba0f9b6fad04da80c00"
+        },
+        {
+          "authority": "Recovered Indian Bengali terminology ledger",
+          "location": "terminology.tsv row T006",
+          "result": "Uses গুণনীয়ক for an individual factor and warns against confusion with গুণিতক; this is compatible with the witnessed operation name."
+        }
+      ],
+      "rationale": "The operation wording is directly witnessed in West Bengal material. The noun গুণনীয়ক remains available when the later source refers to a factor itself.",
+      "alternatives": [
+        {
+          "wording": "গুণনীয়কে বিশ্লেষণ",
+          "disposition": "not chosen here because the checked West Bengal heading says উৎপাদকে বিশ্লেষণ"
+        },
+        {
+          "wording": "ফ্যাক্টর করা",
+          "disposition": "not chosen; unnecessary English borrowing"
+        }
+      ],
+      "uncertainty": "Low for the operation phrase; later modules must still distinguish উৎপাদক and গুণনীয়ক carefully by source sense.",
+      "provisional": true,
+      "review_question": "Across the full book, should individual algebraic factors be called উৎপাদক or গুণনীয়ক in West Bengal classroom prose while retaining উৎপাদকে বিশ্লেষণ for the operation?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-linear-equation",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slots 35–36 and 41–42; chapter summaries under XPath /*/*[3]/*[4]/*[3]/*[3]",
+      "target_location": "translations.json#/translations/35, /36, /41, /42 and modules/m82630/index.cnxml at the corresponding XPaths",
+      "source_sense": "linear equation: an equation of degree one; the chapter also introduces systems and linear inequalities",
+      "chosen_wording": "একঘাত সমীকরণ; একঘাত অসমীকরণ",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal পঠন সেতু, Class VII",
+          "location": "PDF page 226 / printed page 47",
+          "result": "The actual image calls 6x = 24 an একচলবিশিষ্ট একঘাত সমীকরণ after noting that the unknown has exponent one.",
+          "render_sha256": "8cf202d0dd0cd90db4c75cd0679597d8bcded11d275470a6e9df60a5e5de7a66"
+        }
+      ],
+      "rationale": "The source chapter sense is degree-one algebra, and the checked West Bengal example directly supports একঘাত সমীকরণ. The preface omits একচলবিশিষ্ট where the source includes equations in two variables.",
+      "alternatives": [
+        {
+          "wording": "রৈখিক সমীকরণ",
+          "disposition": "not chosen; common and understandable, but less closely aligned with the checked school-text witness"
+        }
+      ],
+      "uncertainty": "Low for one-variable contexts; moderate for whether later coordinate-geometry passages prefer রৈখিক in compound terms.",
+      "provisional": true,
+      "review_question": "Should later West Bengal-facing coordinate-geometry chapters retain একঘাত for two-variable equations or switch to রৈখিক in graph-focused compounds?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-algebraic-expression",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slot 46; XPath /*/*[3]/*[4]/*[3]/*[3]/*[7]/*[2]@tail",
+      "target_location": "translations.json#/translations/46 and modules/m82630/index.cnxml at the same XPath",
+      "source_sense": "expression: a mathematical combination without an asserted equality",
+      "chosen_wording": "রাশি; বীজগাণিতিক রাশি where the full compound is needed",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal পঠন সেতু, Class VII",
+          "location": "PDF page 189 / printed page 10",
+          "result": "Uses বীজগাণিতিক সংখ্যামালা rather than the chosen modern compact form; this is evidence for the concept but not an exact-wording match."
+        },
+        {
+          "authority": "Recovered Indian Bengali terminology ledger",
+          "location": "terminology.tsv row T013",
+          "result": "Selects বীজগাণিতিক রাশি and explicitly distinguishes it from সমীকরণ when no equals sign is present."
+        }
+      ],
+      "rationale": "রাশি is compact, mathematically clear, and preserves the crucial expression/equation distinction. The older witnessed সংখ্যামালা form is recorded rather than silently treated as identical evidence.",
+      "alternatives": [
+        {
+          "wording": "বীজগাণিতিক সংখ্যামালা",
+          "disposition": "not chosen; directly witnessed but less compact for this modern reader"
+        },
+        {
+          "wording": "এক্সপ্রেশন",
+          "disposition": "not chosen; avoidable English borrowing"
+        }
+      ],
+      "uncertainty": "Moderate because the exact chosen compound was not directly witnessed on the two inspected West Bengal pages.",
+      "provisional": true,
+      "review_question": "For current West Bengal Grades 3–8 materials, is বীজগাণিতিক রাশি now preferable to the witnessed বীজগাণিতিক সংখ্যামালা?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-whole-number",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slot 34; XPath /*/*[3]/*[4]/*[3]/*[3]/*[1]/*[2]@tail",
+      "target_location": "translations.json#/translations/34 and modules/m82630/index.cnxml at the same XPath",
+      "source_sense": "whole numbers: zero together with the positive integers, excluding negative integers",
+      "chosen_wording": "অঋণাত্মক পূর্ণসংখ্যা",
+      "authorities_checked": [
+        {
+          "authority": "Recovered Indian Bengali terminology ledger",
+          "location": "terminology.tsv row T030",
+          "result": "Selects অঋণাত্মক পূর্ণসংখ্যা to include zero and positive integers while excluding negatives."
+        },
+        {
+          "authority": "West Bengal pages inspected for this packet",
+          "location": "PDF pages 189 and 226",
+          "result": "not found in checked sources"
+        }
+      ],
+      "rationale": "The wording is longer but removes the ambiguity of পূর্ণসংখ্যা, which includes negative integers in the immediately following source list.",
+      "alternatives": [
+        {
+          "wording": "স্বাভাবিক সংখ্যা",
+          "disposition": "not chosen because conventions differ on whether zero is included"
+        },
+        {
+          "wording": "গোটা সংখ্যা",
+          "disposition": "not chosen as the technical label because it is more colloquial and can be underspecified"
+        }
+      ],
+      "uncertainty": "Low mathematically; moderate stylistically for younger readers.",
+      "provisional": true,
+      "review_question": "Would a West Bengal editor prefer অঋণাত্মক পূর্ণসংখ্যা in the main text, or use গোটা সংখ্যা with an explicit zero-and-positive-integers gloss?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-graph",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slots 39–42 and 52; chapter-summary XPaths under /*/*[3]/*[4]/*[3]/*[3]",
+      "target_location": "translations.json#/translations/39, /40, /42, /52 and modules/m82630/index.cnxml at the corresponding XPaths",
+      "source_sense": "graph as a plotted mathematical representation in a coordinate plane",
+      "chosen_wording": "লেখচিত্র; লেখচিত্র আঁকা",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal pages inspected for this packet",
+          "location": "PDF pages 189 and 226",
+          "result": "not found in checked sources"
+        },
+        {
+          "authority": "Canonical graph asset",
+          "location": "media/CNX_ElemAlg_Figure_05_01_015_img.jpg",
+          "result": "Confirms the plotted-coordinate sense but contains only the English labels Intersecting, Parallel, Coincident.",
+          "sha256": "34fd0299880bc134f6308adcb2296ec1e145431909a1ab1cc2b507e01e3670f4"
+        }
+      ],
+      "rationale": "লেখচিত্র is transparent Bengali and works naturally with আঁকা. The packet does not claim that the two selected regional pages certify this term.",
+      "alternatives": [
+        {
+          "wording": "গ্রাফ",
+          "disposition": "not chosen; familiar loanword but less Bengali-first"
+        },
+        {
+          "wording": "রেখাচিত্র",
+          "disposition": "not chosen because it can imply a narrower line-chart sense"
+        }
+      ],
+      "uncertainty": "Moderate; no exact regional terminology witness was found in the checked packet sources.",
+      "provisional": true,
+      "review_question": "Do current West Bengal algebra texts prefer লেখচিত্র or গ্রাফ for coordinate plots, and is that preference different for younger recovery-route explanations?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-system-of-equations",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slots 41–42; XPath /*/*[3]/*[4]/*[3]/*[3]/*[5]",
+      "target_location": "translations.json#/translations/41 and /translations/42; modules/m82630/index.cnxml at the same section",
+      "source_sense": "a system of linear equations considered and solved together",
+      "chosen_wording": "একঘাত সমীকরণজোট",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal পঠন সেতু, Class VII",
+          "location": "PDF page 226 / printed page 47",
+          "result": "Directly supports একঘাত সমীকরণ for a single equation; system/jot wording is not found on the page."
+        },
+        {
+          "authority": "Canonical graph asset",
+          "location": "media/CNX_ElemAlg_Figure_05_01_015_img.jpg",
+          "result": "Visually confirms the three system-solution cases, but its labels do not name the system itself in Bengali."
+        }
+      ],
+      "rationale": "সমীকরণজোট compactly signals that several equations are handled together and combines cleanly with the directly witnessed একঘাত term.",
+      "alternatives": [
+        {
+          "wording": "যুগপৎ একঘাত সমীকরণ",
+          "disposition": "not chosen; established-sounding but may suggest only a specific simultaneous-solution presentation"
+        },
+        {
+          "wording": "একঘাত সমীকরণের সমষ্টি",
+          "disposition": "not chosen; accurate but heavier in repeated prose"
+        }
+      ],
+      "uncertainty": "Moderate; the compound itself lacks a direct checked regional witness.",
+      "provisional": true,
+      "review_question": "Which compound is clearest in current West Bengal secondary mathematics: সমীকরণজোট, সমীকরণমালা, or যুগপৎ সমীকরণ?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-slope-intercept",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slot 40; XPath /*/*[3]/*[4]/*[3]/*[3]/*[4]/*[2]@tail",
+      "target_location": "translations.json#/translations/40 and modules/m82630/index.cnxml at the same XPath",
+      "source_sense": "slope, intercepts, and the slope-intercept form of a line equation",
+      "chosen_wording": "ঢাল; অক্ষছেদ; ঢাল-অক্ষছেদ আকার",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal pages inspected for this packet",
+          "location": "PDF pages 189 and 226",
+          "result": "not found in checked sources"
+        },
+        {
+          "authority": "Canonical OpenStax source",
+          "location": "m82630, slot 40",
+          "result": "Confirms that intercepts and slope-intercept form are distinct source concepts and must both remain present."
+        }
+      ],
+      "rationale": "The three chosen forms are concise and preserve the source distinction between an intercept and the named equation form without importing an unexplained English label.",
+      "alternatives": [
+        {
+          "wording": "নতি; ছেদক; নতি-ছেদক রূপ",
+          "disposition": "not chosen; potentially conventional elsewhere but not supported by this packet's checked regional evidence"
+        },
+        {
+          "wording": "স্লোপ-ইন্টারসেপ্ট ফর্ম",
+          "disposition": "not chosen; avoidable English transliteration"
+        }
+      ],
+      "uncertainty": "Moderate to high because no local term witness was found in the two pages checked for this preface.",
+      "provisional": true,
+      "review_question": "What exact West Bengal textbook compound should be used for slope-intercept form, and should আকার be replaced by রূপ?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-rational-expression",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slots 47–48; XPath /*/*[3]/*[4]/*[3]/*[3]/*[8]",
+      "target_location": "translations.json#/translations/47 and /translations/48; modules/m82630/index.cnxml at the same section",
+      "source_sense": "rational expressions and equations involving quotients of polynomials",
+      "chosen_wording": "মূলদ রাশি; মূলদ রাশিযুক্ত সমীকরণ",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal pages inspected for this packet",
+          "location": "PDF pages 189 and 226",
+          "result": "not found in checked sources"
+        },
+        {
+          "authority": "Canonical OpenStax source",
+          "location": "m82630, slots 47–48",
+          "result": "Confirms that rational modifies expressions and equations, not the informal sense of reasonable."
+        }
+      ],
+      "rationale": "মূলদ preserves the algebraic-number-family sense of rational, while রাশি keeps the expression/equation distinction explicit.",
+      "alternatives": [
+        {
+          "wording": "পরিমেয় রাশি",
+          "disposition": "not chosen pending a West Bengal compound-level witness"
+        },
+        {
+          "wording": "র‍্যাশনাল এক্সপ্রেশন",
+          "disposition": "not chosen; avoidable English transliteration"
+        }
+      ],
+      "uncertainty": "Moderate; mathematically clear but not directly witnessed in the two regional pages.",
+      "provisional": true,
+      "review_question": "Do current West Bengal algebra texts prefer মূলদ রাশি or পরিমেয় রাশি for rational expression?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-term-radical",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slots 49–50; XPath /*/*[3]/*[4]/*[3]/*[3]/*[9]",
+      "target_location": "translations.json#/translations/49 and /translations/50; modules/m82630/index.cnxml at the same section",
+      "source_sense": "roots, radical expressions, higher-order roots, and rational exponents",
+      "chosen_wording": "মূল ও মূলচিহ্নযুক্ত রাশি; উচ্চক্রমের মূল; মূলদ সূচক",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal pages inspected for this packet",
+          "location": "PDF pages 189 and 226",
+          "result": "not found in checked sources"
+        },
+        {
+          "authority": "Canonical OpenStax source",
+          "location": "m82630, slots 49–50",
+          "result": "Confirms the distinction between roots, radical expressions, and rational exponents."
+        }
+      ],
+      "rationale": "The descriptive compound avoids treating radical as an unexplained loanword and preserves all three source concepts.",
+      "alternatives": [
+        {
+          "wording": "করণী রাশি",
+          "disposition": "not chosen without a checked West Bengal witness and because spelling/register may vary"
+        },
+        {
+          "wording": "র‍্যাডিক্যাল",
+          "disposition": "not chosen; unnecessary transliteration"
+        }
+      ],
+      "uncertainty": "Moderate; clear descriptive wording, but a later expert may prefer a conventional technical noun.",
+      "provisional": true,
+      "review_question": "Which current West Bengal term is preferred for radical expression: মূলচিহ্নযুক্ত রাশি, করণী রাশি, or another standard form?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-register-learning-boxes",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slots 67–79 and 85–96",
+      "target_location": "translations.json#/translations/67 through /79 and /85 through /96; corresponding feature headings in modules/m82630/index.cnxml",
+      "source_sense": "student-facing feature labels and directions: Be Prepared!, Try It, How To, Self Check, Practice Makes Perfect, Everyday Math, Writing Exercises",
+      "chosen_wording": "প্রস্তুত হও!; নিজে চেষ্টা করো; কীভাবে করবে; নিজে যাচাই করো; অনুশীলনেই দক্ষতা; দৈনন্দিন গণিত; লিখে বোঝাও",
+      "authorities_checked": [
+        {
+          "authority": "West Bengal পঠন সেতু, Class VII",
+          "location": "PDF pages 189 and 226",
+          "result": "The page images use direct, learner-facing instructional Bengali, but none of these branded OpenStax feature labels appears verbatim."
+        },
+        {
+          "authority": "Canonical OpenStax source",
+          "location": "m82630 feature-label slots 67–79 and 85–96",
+          "result": "Confirms which labels are branded pedagogical cues and which explanatory functions each cue must preserve."
+        }
+      ],
+      "rationale": "Short second-person forms fit the intended school-age reader and describe the action rather than transliterating English labels. Practice Makes Perfect is adapted idiomatically rather than translated word for word.",
+      "alternatives": [
+        {
+          "wording": "চেষ্টা করে দেখো; কী করব; স্ব-মূল্যায়ন",
+          "disposition": "not chosen because the selected set is more parallel and immediately actionable"
+        },
+        {
+          "wording": "অভ্যাস মানুষকে নিখুঁত করে",
+          "disposition": "not chosen; literal, awkward, and overclaims perfection"
+        }
+      ],
+      "uncertainty": "Low for intelligibility; moderate for institutional style preferences.",
+      "provisional": true,
+      "review_question": "Are these direct second-person feature labels natural and age-appropriate across West Bengal Grades 3–8, especially অনুশীলনেই দক্ষতা and লিখে বোঝাও?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-accessibility-icon-alt",
+      "source_location": "source/m82630.en.cnxml media IDs eip-id11714328, eip-id11708242101, and eip-id1176034388",
+      "target_location": "translations.json#/alt/eip-id11714328, /eip-id11708242101, /eip-id1176034388; matching alt attributes in modules/m82630/index.cnxml and index.html",
+      "source_sense": "alternative text for the Try It, How To, and Media icons",
+      "chosen_wording": "Concise Bengali descriptions that identify the visible icon and its feature role; the Try It chevron is correctly described as নীলচে-সবুজ, not dark grey.",
+      "authorities_checked": [
+        {
+          "authority": "Canonical media bytes",
+          "location": "media/tryit.png, media/howtoicon.png, media/media.png",
+          "result": "All three actual images were inspected. The inherited Try It description's dark-grey claim was false and was corrected; the other two descriptions match their pixels.",
+          "sha256": [
+            "7f9c8c226d8b937d4070c69326d6c2ac7df37a74c85fa8cec64e2ad7bef59ebf",
+            "67f2344cdbe25b192fbdee0d904ce912e4e15aed5bf0063f61a192dd0b0b5826",
+            "140b45d7d047dc59b236c95bb2c2a237ca5b748b290b28f8e6d9f8f520077e6a"
+          ]
+        }
+      ],
+      "rationale": "Alternative text must describe the distributed pixels and useful function, not repeat a source visual error. No icon geometry was altered.",
+      "alternatives": [
+        {
+          "wording": "Literal translation of the inherited English alt text",
+          "disposition": "rejected where it conflicts with the actual Try It icon colour"
+        },
+        {
+          "wording": "চিহ্ন",
+          "disposition": "rejected as too vague for nonvisual users"
+        }
+      ],
+      "uncertainty": "Low; based on direct pixel inspection. Functional usefulness may still be improved by later accessibility review.",
+      "provisional": false,
+      "review_question": "Would a Bengali screen-reader specialist shorten any of these descriptions further without losing each icon's distinct function?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-accessibility-graph-alt",
+      "source_location": "source/m82630.en.cnxml media ID fs-id1171782146065 @alt",
+      "target_location": "translations.json#/alt/fs-id1171782146065; modules/m82630/index.cnxml//*[@id='fs-id1171782146065']/@alt; index.html figure#fs-id1171782146065",
+      "source_sense": "three coordinate-plane panels showing intersecting, parallel, and coincident lines and the corresponding one/no/infinitely-many system solutions",
+      "chosen_wording": "পাশাপাশি তিনটি x-y স্থানাঙ্ক সমতল… ছেদকারী, সমান্তরাল ও সমাপতিত রেখার সমাধানসংখ্যা ব্যাখ্যা করা হয়েছে; visible English labels are named separately.",
+      "authorities_checked": [
+        {
+          "authority": "Canonical graph asset",
+          "location": "media/CNX_ElemAlg_Figure_05_01_015_img.jpg",
+          "result": "Actual pixels show only the English labels Intersecting, Parallel, and Coincident below the three panels. They do not contain the long explanatory sentences claimed by the inherited source alt.",
+          "sha256": "34fd0299880bc134f6308adcb2296ec1e145431909a1ab1cc2b507e01e3670f4"
+        },
+        {
+          "authority": "Canonical OpenStax CNXML",
+          "location": "source/m82630.en.cnxml media ID fs-id1171782146065 @alt",
+          "result": "Supplies the intended mathematical interpretation but inaccurately says the explanatory sentences are printed under the graphs."
+        }
+      ],
+      "rationale": "The Bengali alt preserves the intended mathematics while distinguishing visible text from explanatory interpretation. The HTML figcaption repeats the explanation for sighted and nonvisual readers without changing the image.",
+      "alternatives": [
+        {
+          "wording": "Literal translation claiming the sentences appear under each graph",
+          "disposition": "rejected as factually inconsistent with the distributed asset"
+        },
+        {
+          "wording": "তিনটি রেখার লেখচিত্র",
+          "disposition": "rejected as too sparse to convey the solution-count meaning"
+        }
+      ],
+      "uncertainty": "Low about the factual correction; the chosen level of detail remains open to future accessibility style review.",
+      "provisional": false,
+      "review_question": "Does the Bengali alt give enough information to infer one, zero, and infinitely many solutions without becoming unnecessarily repetitive with the figcaption?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-source-title-anomaly",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slot 76; XPath /*/*[3]/*[4]/*[5]/*[6]/*[3]/*@text",
+      "target_location": "translations.json#/translations/76; modules/m82630/index.cnxml at the same XPath; index.html#editorial-notes",
+      "source_sense": "The Media disclaimer unexpectedly names Prealgebra 2e inside the Elementary Algebra 2e preface.",
+      "chosen_wording": "প্রাক্-বীজগণিত ২য় সংস্করণ, preserved as the source says, with an editorial note explaining the anomaly",
+      "authorities_checked": [
+        {
+          "authority": "Canonical OpenStax source",
+          "location": "m82630, slot 76 at pinned commit 38cae454e644abf9f0a623e876994553881597c9",
+          "result": "The exact source bytes say Prealgebra 2e, not Elementary Algebra 2e."
+        }
+      ],
+      "rationale": "Silently replacing the named title would alter source content. The translation is faithful and the reader note prevents confusion.",
+      "alternatives": [
+        {
+          "wording": "প্রাথমিক বীজগণিত ২য় সংস্করণ",
+          "disposition": "rejected because it would silently correct the canonical source"
+        },
+        {
+          "wording": "Prealgebra 2e",
+          "disposition": "not chosen; the title is translated consistently while the English identity remains clear in the note"
+        }
+      ],
+      "uncertainty": "None about the pinned source bytes; the upstream editorial reason is unknown.",
+      "provisional": false,
+      "review_question": "If the upstream source later corrects this title, should the Bengali translation follow only through an explicit source-pin update and recorded diff?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "bn-IN-m82630-credit-typo-preservation",
+      "source_location": "source/m82630.en.cnxml; TEXT_LEDGER slot 134; XPath /*/*[3]/*[6]/*[3]/*[2]/*[9]@tail",
+      "target_location": "preserve_slots/134; modules/m82630/index.cnxml at the same XPath; index.html paragraph eip-id1169146105286",
+      "source_sense": "Reviewer and institutional credit printed as John Kalliongis, Saint Louis Iniversity",
+      "chosen_wording": "John Kalliongis, Saint Louis Iniversity, preserved byte-for-byte from the source credit and disclosed in the editorial note",
+      "authorities_checked": [
+        {
+          "authority": "Canonical OpenStax source",
+          "location": "m82630, slot 134 at pinned commit 38cae454e644abf9f0a623e876994553881597c9",
+          "result": "The source credit itself spells Iniversity."
+        }
+      ],
+      "rationale": "A credit line is an identity-bearing source field. Preserving and explicitly noting the source spelling avoids an undocumented change or false claim about the intended institution.",
+      "alternatives": [
+        {
+          "wording": "Saint Louis University",
+          "disposition": "not chosen because that would be an unverified silent correction to an identity-bearing credit"
+        }
+      ],
+      "uncertainty": "The likely intended institution can be inferred, but it was not independently verified and is not needed to preserve the source record.",
+      "provisional": false,
+      "review_question": "If an authoritative OpenStax correction is found later, should the display be corrected while retaining the original pinned wording in provenance?",
+      "rationale_timing": "retrospective_reconstruction"
+    }
+  ]
+}

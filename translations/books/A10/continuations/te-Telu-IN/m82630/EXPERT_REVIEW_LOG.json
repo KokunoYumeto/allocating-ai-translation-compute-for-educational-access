@@ -1,0 +1,426 @@
+{
+  "schema": "a10.expert-review-log.v1",
+  "locale": "te-Telu-IN",
+  "coverage_status": "complete",
+  "packet_scope": "m82630",
+  "full_A10_translation_status": "partial: this ledger is complete for the preface packet only",
+  "backfill_disclosure": "Every entry below reconstructs the rationale after the initial m82630 draft. No entry is presented as a contemporaneous record of the drafter's intent.",
+  "entries": [
+    {
+      "decision_id": "TE-M82630-D001",
+      "source_location": "source/m82630.en.cnxml; eip-974 chapter overview, text slot 32",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-974 chapter overview, text slot 32; index.html#eip-95; index.html#te-english-bridge",
+      "source_sense": "whole numbers means W={0,1,2,...}; integers means Z={...,-2,-1,0,1,2,...}; the two sets must not be collapsed",
+      "chosen_wording": "whole numbers → పూర్ణాంకాలు; integers → పూర్ణ సంఖ్యలు (house spacing; source witness prints పూర్ణసంఖ్యలు in the definition)",
+      "terms_covered": ["whole numbers", "integers"],
+      "authorities_checked": [
+        {
+          "authority": "SCERT Telangana Class 6 Mathematics, TS6-2018, PDF page 26 / printed 16, section 2.2",
+          "result": "Page image and OCR were checked; W is the nonnegative set beginning at zero and is labelled పూర్ణాంకాలు. The page image resolves OCR damage."
+        },
+        {
+          "authority": "SCERT Telangana Class 6 Mathematics, TS6-2018, PDF page 85 / printed 75 and chapter context at PDF page 83",
+          "result": "Page image and OCR were checked; Z includes negative values, zero, and positive values and is labelled పూర్ణసంఖ్యలు / పూర్ణ సంఖ్యలు."
+        },
+        {
+          "authority": "canon/TERMINOLOGY.tsv and canon/examples.json entries C14-C15",
+          "result": "Both local canon records preserve the same whole-number/integer distinction."
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked; no AP witness was acquired, as documented in canon/ap-witness.md"
+        }
+      ],
+      "rationale": "The two English terms occur side by side, so using one Telugu label for both would erase a mathematical set distinction. The Telangana witness directly fixes the extension of each set. Spacing is an editorial convention, not a claimed regional distinction.",
+      "alternatives": ["reverse the two Telugu labels (rejected as contrary to the checked Telangana pages)", "use English labels only (rejected because the packet is Telugu-first)"],
+      "uncertainty": "Low for the Telangana usage and mathematical distinction; Andhra Pradesh usage remains unverified.",
+      "provisional": false,
+      "review_question": "Does a current Andhra Pradesh Telugu-medium algebra text use different labels for W and Z, and if so, what exact labels and set definitions appear on the cited page?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D002",
+      "source_location": "source/m82630.en.cnxml; eip-203 and eip-974 chapter 2 and chapter 6 overview, slots 25, 33-34, 42",
+      "target_location": "translated/modules/m82630/index.cnxml; corresponding slots 25, 33-34, 42; index.html#eip-574; index.html#te-english-bridge",
+      "source_sense": "introductory labels for algebra, linear equations and inequalities, variables, constants, and coefficients; no definitions are supplied in this preface",
+      "chosen_wording": "algebra → బీజగణితం; linear equation → రేఖీయ సమీకరణం; inequality → అసమీకరణం; variable → చరరాశి; constant → స్థిరరాశి; coefficient → గుణకం",
+      "terms_covered": ["algebra", "linear equation", "inequality", "variable", "constant", "coefficient"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 at pinned commit 38cae454e644abf9f0a623e876994553881597c9",
+          "result": "Fixes the English source senses and their role as chapter-preview labels."
+        },
+        {
+          "authority": "packet recovery canon: canon/TERMINOLOGY.tsv and canon/examples.json",
+          "result": "not found in checked sources; the bounded canon concerns early number concepts, not these algebra compounds"
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked; acquisition gap recorded"
+        }
+      ],
+      "rationale": "Use concise Telugu mathematical compounds so the preface reads naturally, then expose every English term in the separate bridge. Because the checked canon does not attest these compounds, the package does not call them official regional terminology.",
+      "alternatives": ["retain all six labels only in English", "replace each with a long descriptive paraphrase in the chapter list"],
+      "uncertainty": "Moderate lexical uncertainty until topic-specific Telangana and Andhra Pradesh algebra pages are checked; the surrounding source sense is unambiguous.",
+      "provisional": true,
+      "review_question": "For each of these six concepts, what exact headword is used in current Telangana and Andhra Pradesh Telugu-medium secondary algebra texts?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D003",
+      "source_location": "source/m82630.en.cnxml; eip-974 chapter 4 overview, slots 37-38",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-974 slots 37-38; index.html#eip-95; index.html#te-english-bridge",
+      "source_sense": "the rectangular coordinate system, axis intercepts, line slope, and the slope-intercept form are listed as later chapter topics",
+      "chosen_wording": "rectangular coordinate system → లంబ నిరూపక వ్యవస్థ; intercept → అక్ష ఖండం; slope → వాలు; slope-intercept form → వాలు-ఖండ రూపం",
+      "terms_covered": ["rectangular coordinate system", "intercept", "slope", "slope-intercept form"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-974",
+          "result": "Fixes the four English graphing concepts in one ordered chapter synopsis."
+        },
+        {
+          "authority": "packet recovery canon: canon/TERMINOLOGY.tsv",
+          "result": "Only one-dimensional coordinate (నిరూపకం) is recorded and explicitly provisional; the other compounds were not found in checked sources."
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked; acquisition gap recorded"
+        }
+      ],
+      "rationale": "The chosen forms are short, compositional labels suitable for an overview. The separate English bridge prevents a provisional regional form from obscuring the canonical concept.",
+      "alternatives": ["దీర్ఘచతురస్ర నిరూపక వ్యవస్థ for rectangular coordinate system", "వాలుదనం for slope", "English transliterations"],
+      "uncertainty": "Moderate; the early-number canon does not certify secondary coordinate-geometry compounds.",
+      "provisional": true,
+      "review_question": "What labels do current regional textbooks use for rectangular coordinate system, intercept, slope, and slope-intercept form, including hyphenation?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D004",
+      "source_location": "source/m82630.en.cnxml; eip-974 chapter 5 overview, slots 39-40",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-974 slots 39-40; index.html#eip-95; index.html#te-english-bridge",
+      "source_sense": "substitution and elimination are two methods for solving systems of linear equations",
+      "chosen_wording": "substitution → ప్రతిక్షేపణ; elimination → చరరాశి తొలగింపు",
+      "terms_covered": ["substitution", "elimination"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-974",
+          "result": "Fixes both words as equation-solving methods, not ordinary-language actions."
+        },
+        {
+          "authority": "packet recovery canon: canon/TERMINOLOGY.tsv and canon/examples.json",
+          "result": "not found in checked sources"
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked; acquisition gap recorded"
+        }
+      ],
+      "rationale": "ప్రతిక్షేపణ is a concise technical candidate. The more descriptive చరరాశి తొలగింపు makes clear that elimination removes a variable rather than merely deleting an expression.",
+      "alternatives": ["స్థాపన for substitution", "నిర్మూలన for elimination", "English transliterations"],
+      "uncertainty": "Moderate; no topic-specific regional witness was present in the checked canon.",
+      "provisional": true,
+      "review_question": "Which pair of terms is actually used together for substitution and elimination in current Telangana and Andhra Pradesh systems-of-equations chapters?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D005",
+      "source_location": "source/m82630.en.cnxml; eip-974 chapter 6 overview, slots 41-42",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-974 slots 41-42; index.html#eip-95; index.html#te-english-bridge",
+      "source_sense": "polynomial and monomial expressions and their exponent rules are previewed without formal definitions",
+      "chosen_wording": "polynomial → బహుపది; monomial → ఏకపది; exponent → ఘాతాంకం",
+      "terms_covered": ["polynomial", "monomial", "exponent"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-974",
+          "result": "Fixes the English source concepts and their chapter context."
+        },
+        {
+          "authority": "packet recovery canon: canon/TERMINOLOGY.tsv and canon/examples.json",
+          "result": "not found in checked sources"
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked; acquisition gap recorded"
+        }
+      ],
+      "rationale": "The three compact forms keep the chapter synopsis readable and preserve the one-term/many-term contrast. English labels remain visible in the bridge.",
+      "alternatives": ["బహుచరణి / ఏకచరణి", "English transliterations"],
+      "uncertainty": "Moderate regional lexical uncertainty; mathematical source sense is clear.",
+      "provisional": true,
+      "review_question": "Do current Telugu-medium algebra texts prefer బహుపది/ఏకపది or another paired morphology for polynomial/monomial, and what term do they use for exponent?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D006",
+      "source_location": "source/m82630.en.cnxml; eip-974 chapter 7 overview, slots 43-44",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-974 slots 43-44; index.html#eip-95; index.html#te-english-bridge",
+      "source_sense": "factoring means rewriting algebraic expressions as products of factors and using that process to solve equations",
+      "chosen_wording": "factoring → కారణాంక విభజన",
+      "terms_covered": ["factoring"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-974",
+          "result": "Fixes the algebraic operation and its application to equations."
+        },
+        {
+          "authority": "packet recovery canon: canon/TERMINOLOGY.tsv and canon/examples.json",
+          "result": "not found in checked sources"
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked; acquisition gap recorded"
+        }
+      ],
+      "rationale": "The phrase explicitly signals division into factors and supports the following sentence without relying on an English transliteration.",
+      "alternatives": ["కారణాంకీకరణ", "కారణాంకాలుగా వ్యక్తీకరణ"],
+      "uncertainty": "Moderate; later topic translation should adopt a witnessed regional headword if available.",
+      "provisional": true,
+      "review_question": "Which exact noun and verb forms are used for factoring in a current Telugu-medium secondary algebra chapter?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D007",
+      "source_location": "source/m82630.en.cnxml; eip-974 chapter 8 overview, slots 45-46",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-974 slots 45-46; index.html#eip-95; index.html#te-english-bridge",
+      "source_sense": "a rational expression is a quotient of polynomials with a nonzero denominator; the preface only names the topic",
+      "chosen_wording": "rational expression → అకరణీయ సమాసం",
+      "terms_covered": ["rational expression"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-974",
+          "result": "Fixes the named chapter topic; the bridge records the quotient-of-polynomials sense."
+        },
+        {
+          "authority": "packet recovery canon: canon/TERMINOLOGY.tsv and canon/examples.json",
+          "result": "not found in checked sources; no rational-expression chapter is part of the bounded canon"
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked; acquisition gap recorded"
+        }
+      ],
+      "rationale": "The draft extends the Telugu rational-number adjective to the algebraic expression. Because the composition itself was not witnessed, the English bridge includes the mathematical sense and the label remains provisional.",
+      "alternatives": ["భిన్న బీజీయ సమాసం", "రెండు బహుపదుల నిష్పత్తి సమాసం", "rational expression transliterated into Telugu script"],
+      "uncertainty": "High lexical uncertainty; the concept is preserved by the English bridge and explicit quotient description.",
+      "provisional": true,
+      "review_question": "What exact Telugu headword does a regional textbook use for a quotient of polynomials with nonzero denominator?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D008",
+      "source_location": "source/m82630.en.cnxml; eip-974 chapter 9 overview, slots 47-48",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-974 slots 47-48; index.html#eip-95; index.html#te-english-bridge",
+      "source_sense": "radical notation and rational exponents are named as extensions of square-root and higher-root concepts",
+      "chosen_wording": "radical → కరణి; rational exponent → అకరణీయ ఘాతాంకం",
+      "terms_covered": ["radical", "rational exponent"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-974",
+          "result": "Fixes radical and rational exponent as linked higher-root topics."
+        },
+        {
+          "authority": "packet recovery canon: canon/TERMINOLOGY.tsv and canon/examples.json",
+          "result": "not found in checked sources"
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked; acquisition gap recorded"
+        }
+      ],
+      "rationale": "Compact Telugu labels retain the chapter-list rhythm; the bridge supplies the English labels and identifies a rational exponent as an exponent expressed as an integer ratio.",
+      "alternatives": ["మూల చిహ్న సమాసం for radical", "భిన్న ఘాతాంకం for rational exponent"],
+      "uncertainty": "Moderate to high until roots/exponents pages from regional canon are checked.",
+      "provisional": true,
+      "review_question": "Which Telugu terms and definitions are paired for radical and rational exponent in current regional secondary mathematics texts?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D009",
+      "source_location": "source/m82630.en.cnxml; eip-974 chapter 10 overview, slots 49-50",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-974 slots 49-50; index.html#eip-95; index.html#te-english-bridge",
+      "source_sense": "quadratic equations are degree-two equations that are solved, graphed, and applied as models",
+      "chosen_wording": "quadratic equation → వర్గ సమీకరణం",
+      "terms_covered": ["quadratic equation"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-974",
+          "result": "Fixes the degree-two equation context through solving, graphing, and modelling."
+        },
+        {
+          "authority": "packet recovery canon: canon/TERMINOLOGY.tsv and canon/examples.json",
+          "result": "not found in checked sources"
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked; acquisition gap recorded"
+        }
+      ],
+      "rationale": "వర్గ preserves the square/second-degree cue while remaining compact in a chapter title; the English bridge removes ambiguity.",
+      "alternatives": ["ద్విఘాత సమీకరణం", "quadratic equation transliterated into Telugu script"],
+      "uncertainty": "Moderate regional lexical uncertainty.",
+      "provisional": true,
+      "review_question": "Do current Telangana and Andhra Pradesh textbooks prefer వర్గ సమీకరణం or ద్విఘాత సమీకరణం for quadratic equation?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D010",
+      "source_location": "source/m82630.en.cnxml; eip-497 and eip-186, slots 63-64",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-497/eip-186, slots 63-64; index.html#eip-828; index.html#te-english-bridge",
+      "source_sense": "worked example means an example that displays the solution process step by step, not merely a practice item",
+      "chosen_wording": "worked example → సాధనతో కూడిన ఉదాహరణ",
+      "terms_covered": ["worked example"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-497 and eip-186",
+          "result": "The following paragraph explicitly defines the worked format as problem, demonstrated solution steps, and sometimes a check."
+        },
+        {
+          "authority": "packet recovery canon: canon/examples.json",
+          "result": "The canon repeatedly distinguishes a shown worked row/example from independent items, but does not supply this exact Telugu compound."
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked"
+        }
+      ],
+      "rationale": "The wording stresses that the example includes a solution, while the immediately following Telugu paragraph supplies the step-by-step sense.",
+      "alternatives": ["సాధించిన ఉదాహరణ", "పరిష్కరించిన ఉదాహరణ"],
+      "uncertainty": "Low for the instructional sense; moderate for preferred regional phrasing.",
+      "provisional": true,
+      "review_question": "Which of సాధనతో కూడిన ఉదాహరణ, సాధించిన ఉదాహరణ, or another label is most idiomatic in a Telugu-medium textbook feature heading?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D011",
+      "source_location": "source/m82630.en.cnxml; feature headings eip-85, eip-605, eip-493, eip-801, and eip-673, slots 65, 67, 70, 79, 109",
+      "target_location": "translated/modules/m82630/index.cnxml; same source IDs/slots; index.html#eip-825; index.html#eip-339; index.html#te-english-bridge",
+      "source_sense": "five recurring textbook interface/feature labels: prerequisite check, immediate parallel practice, procedural outline, learner self-assessment, and answer key",
+      "chosen_wording": "Be Prepared! → సిద్ధంగా ఉండండి!; Try It → మీరే ప్రయత్నించండి; How To → ఎలా చేయాలి; Self Check → స్వీయ పరిశీలన; Answer Key → సమాధానాల సూచిక",
+      "terms_covered": ["Be Prepared!", "Try It", "How To", "Self Check", "Answer Key"],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-372, eip-207, eip-109, eip-801, eip-673, and para-00001",
+          "result": "Each label's function is explained by adjacent source prose, fixing the intended sense."
+        },
+        {
+          "authority": "packet recovery canon: canon/examples.json",
+          "result": "Supports a pedagogy of worked example before independent/recheck work, but these branded labels were not found."
+        },
+        {
+          "authority": "Andhra Pradesh school-text witness",
+          "result": "not checked"
+        }
+      ],
+      "rationale": "Short learner-facing imperatives and nouns make the features actionable in Telugu. The translation does not treat these headings as generic prose because they recur as named book features.",
+      "alternatives": ["ప్రయత్నించండి for Try It", "స్వీయ తనిఖీ for Self Check", "జవాబుల పట్టిక for Answer Key"],
+      "uncertainty": "Low for functional meaning; moderate for house style if later modules reveal established repeated labels.",
+      "provisional": true,
+      "review_question": "Are these five feature labels natural and mutually distinct for Grades 3–10 Telugu readers, especially స్వీయ పరిశీలన versus a more direct self-check term?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D012",
+      "source_location": "source/m82630.en.cnxml; eip-673 slot 110 and para-00001 slot 112",
+      "target_location": "translated/modules/m82630/index.cnxml; slots 110 and 112; index.html#eip-339; learning-support.html checks 1 and 3",
+      "source_sense": "all Try It answers are in the Answer Key; odd-numbered section/review/test answers are for students, while even-numbered answers are instructor-only",
+      "chosen_wording": "Use ఒకటి విడిచి ఒకటిగా వచ్చే ప్రశ్నలు in the brief feature list, then explicitly state బేసి సంఖ్యలతో ఉన్న and సరి సంఖ్యలతో ఉన్న in the dedicated answer paragraph and learning checks.",
+      "terms_covered": [],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-673 and para-00001",
+          "result": "The two source locations jointly disambiguate every other as odd-numbered for the student Answer Key and even-numbered as instructor-only."
+        }
+      ],
+      "rationale": "The dedicated paragraph is the definitive local explanation, and the authored self-check repeats it without claiming that the answer key itself is present in this packet.",
+      "alternatives": ["Translate every other only as ప్రతి రెండవ ప్రశ్న, which could obscure the odd/even allocation"],
+      "uncertainty": "Low; the source resolves the distribution explicitly.",
+      "provisional": false,
+      "review_question": "Would replacing the shorter feature-list wording with an explicit బేసి సంఖ్యల ప్రశ్నలు improve clarity without making the repeated prose awkward?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D013",
+      "source_location": "source/m82630.en.cnxml; eip-582, slots 76-78",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-582, slots 76-78; index.html#eip-660; index.html#edition-notes",
+      "source_sense": "The Elementary Algebra preface's media disclaimer unexpectedly names Prealgebra 2e; this is inherited source text, not a translator correction opportunity.",
+      "chosen_wording": "Preserve బీజగణిత పూర్వాభ్యాసం, రెండవ సంచిక (Prealgebra 2e) and disclose the inherited title mismatch in the edition notes.",
+      "terms_covered": [],
+      "authorities_checked": [
+        {
+          "authority": "Exact frozen OpenStax m82630 SHA-256 d9f45fb31f4cb399c009c2be25eca1a99132b4b6882fb07f8649c2d56974f90b",
+          "result": "The bytes explicitly contain Prealgebra 2e at eip-582."
+        }
+      ],
+      "rationale": "Silently changing the cited title to Elementary Algebra would alter the canonical source. Parenthetical English preserves the exact named resource for search and comparison.",
+      "alternatives": ["silently replace the title with Elementary Algebra 2e", "retain only the English title without Telugu"],
+      "uncertainty": "None about what the frozen source says; OpenStax's historical editorial intent is not inferred.",
+      "provisional": false,
+      "review_question": "If OpenStax later publishes a source erratum for eip-582, what exact replacement title and source revision should a successor pin?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D014",
+      "source_location": "source/m82630.en.cnxml; media fs-id1171782146065, alt slot 84, asset CNX_ElemAlg_Figure_05_01_015_img.jpg",
+      "target_location": "translated/modules/m82630/index.cnxml; media fs-id1171782146065 alt slot 84; index.html#fs-id1171782146065",
+      "source_sense": "Three coordinate-plane cases show one intersection/one solution, parallel lines/no solution, and coincident equations/infinitely many solutions.",
+      "chosen_wording": "Translate the complete alt description into Telugu, preserve one/no/infinitely-many solution distinctions, retain the original English raster, and add a visible notice plus the full Telugu description.",
+      "terms_covered": [],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 alt text and hash-locked source raster",
+          "result": "Both identify the three panels and their distinct solution counts."
+        }
+      ],
+      "rationale": "The source image contains English text and cannot honestly be called localized. Telugu alt plus visible descriptive text makes the mathematical content available while preserving exact source bytes and credits.",
+      "alternatives": ["replace the raster with an unscoped redraw", "show only the English raster without Telugu description"],
+      "uncertainty": "Low for semantic content; no claim is made that the raster itself is localized.",
+      "provisional": false,
+      "review_question": "Does the Telugu description distinguish intersecting, parallel, and coincident-line cases clearly enough for a learner who cannot read the embedded English labels?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D015",
+      "source_location": "source/m82630.en.cnxml; eip-912 and eip-787, slots 9-17",
+      "target_location": "translated/modules/m82630/index.cnxml; eip-912/eip-787; index.html#eip-583; index.html#eip-92; footer; SOURCE_AND_CREDITS.json",
+      "source_sense": "The text may be reused noncommercially with attribution and ShareAlike, while some art has component-specific permission limits; OpenStax marks are not licensed.",
+      "chosen_wording": "Translate the licence and art-credit conditions without broadening them; retain CC BY-NC-SA 4.0 and copyright strings verbatim where legally identifying; add a concise English footer and structured credit ledger.",
+      "terms_covered": [],
+      "authorities_checked": [
+        {
+          "authority": "OpenStax m82630 eip-912 and eip-787",
+          "result": "States the licence, attribution, ShareAlike, and component-specific art conditions."
+        },
+        {
+          "authority": "source/collection.xml md:license and local LICENSE.txt",
+          "result": "Both identify CC BY-NC-SA 4.0; local licence notice hash is locked by the build."
+        }
+      ],
+      "rationale": "Rights language should remain precise, and machine-readable provenance makes the retained authors, assets, URLs, and licence auditable.",
+      "alternatives": ["paraphrase the licence as simply free/open", "omit component-specific qualifications"],
+      "uncertainty": "Low for the copied licence identity; this packet does not independently adjudicate every source component's rights.",
+      "provisional": false,
+      "review_question": "Is any component-specific credit in the canonical collection absent from this single module's retained preface text and four-asset ledger?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "TE-M82630-D016",
+      "source_location": "source/m82630.en.cnxml; author/reviewer credits, slots 120-147",
+      "target_location": "translated/modules/m82630/index.cnxml; slots 120-147; index.html#eip-653; SOURCE_AND_CREDITS.json",
+      "source_sense": "Personal names, book title, institutions, and contributor credits identify original contributors; the frozen source spells one institution Saint Louis Iniversity.",
+      "chosen_wording": "Retain publication title, personal names, and institutions exactly in Latin script, including the frozen-source spelling Saint Louis Iniversity; mark English-only credit paragraphs lang=en in the reader.",
+      "terms_covered": [],
+      "authorities_checked": [
+        {
+          "authority": "Exact frozen OpenStax m82630 author/reviewer bytes",
+          "result": "Provides the ordered credit list and the inherited spelling Saint Louis Iniversity."
+        }
+      ],
+      "rationale": "Transliterating or guessing a correction could make contributor identity less reliable. Exact retention preserves attribution; language metadata improves pronunciation and assistive handling in the HTML reader.",
+      "alternatives": ["transliterate every name and institution into Telugu", "silently correct Iniversity to University"],
+      "uncertainty": "None about the frozen spelling; the real-world institutional correction was deliberately not inferred.",
+      "provisional": false,
+      "review_question": "If a canonical OpenStax source revision corrects the institution spelling, what exact commit and module hash supersede this retained string?",
+      "rationale_timing": "retrospective_reconstruction"
+    }
+  ]
+}

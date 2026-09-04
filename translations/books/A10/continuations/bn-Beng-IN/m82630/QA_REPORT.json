@@ -1,0 +1,77 @@
+{
+  "browser_visual_review": {
+    "desktop": {
+      "main_width": 1392,
+      "screenshots": [
+        {
+          "bytes": 144715,
+          "path": "visual/desktop-top.png",
+          "sha256": "4b47fc828e484215b8b7cf3d9ae52875edb4cca54c7635ecbe12a5616fbc56db"
+        },
+        {
+          "bytes": 212333,
+          "path": "visual/desktop-graph.png",
+          "sha256": "d93423dfd1798a24b2d87e437c7325074bc83ce8dbb76a0e04f0acd313510000"
+        }
+      ],
+      "status": "pass",
+      "viewport": "1440x1000"
+    },
+    "inspection": {
+      "bytes": 1793,
+      "path": "visual/INSPECTION.json",
+      "sha256": "3af292fc82e9caebced5a2dde7c24464c0a7f5dfc8f5c1150d50533ede115179"
+    },
+    "method": "captured-headless-chrome-loopback",
+    "narrow": {
+      "main_width": 374,
+      "screenshots": [
+        {
+          "bytes": 57303,
+          "path": "visual/narrow-top.png",
+          "sha256": "b3c3f3df62864ba3ba7eecd5f8679ed2b61fe68a47d9d8b5b5659961d32fd3e2"
+        },
+        {
+          "bytes": 78505,
+          "path": "visual/narrow-graph.png",
+          "sha256": "b0177d6b7f87f5cd71d6a7a33a6a517c07640546eb6fb563251cd2e46f4f24a4"
+        }
+      ],
+      "status": "pass",
+      "viewport": "390x844"
+    }
+  },
+  "canonical_source": {
+    "bytes": 22483,
+    "path": "source/m82630.en.cnxml",
+    "sha256": "d9f45fb31f4cb399c009c2be25eca1a99132b4b6882fb07f8649c2d56974f90b"
+  },
+  "checks": {
+    "assets": "pass: four exact canonical assets decoded and referenced locally",
+    "determinism": "pass: two build replays and two final-code Chrome replays are byte-identical",
+    "element_order_and_nonlinguistic_attributes": "pass: 194 of 194",
+    "expert_review_log": "pass: 16 substantive records validate against the shared schema",
+    "language_and_credits": "pass: Bengali copy corrections applied; identities, authors, reviewers and license preserved",
+    "math_and_assessments": "pass: canonical preface contains zero MathML, exercises, and solutions; none added or removed",
+    "offline_reader": "pass: semantic HTML, local CSS/assets, valid local links, and truthful partial status",
+    "source_identity": "pass",
+    "stable_ids": "pass: 66 unique IDs preserved",
+    "text_mapping": "pass: all 146 original source XPath/field slots accounted for, including three intentional empty replacements"
+  },
+  "date": "2026-09-04",
+  "limitations": [
+    "This packet is one complete source module, not the complete Elementary Algebra 2e translation.",
+    "No human certification or classroom-effectiveness claim is made or required.",
+    "Terms explicitly marked provisional in EXPERT_REVIEW_LOG.json remain reviewable without creating a hold."
+  ],
+  "locale": "bn-Beng-IN",
+  "module": "m82630",
+  "overall_status": "pass",
+  "schema": "a10.bn-Beng-IN.qa-report.v1",
+  "scope": "Complete canonical preface module only; the 82-module edition remains partial.",
+  "target": {
+    "bytes": 45858,
+    "path": "modules/m82630/index.cnxml",
+    "sha256": "ef636458a3a8024f132a2c51e28bbffd3282d596c51fe9b6b80d047652f9862e"
+  }
+}

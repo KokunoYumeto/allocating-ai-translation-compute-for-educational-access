@@ -1,0 +1,38 @@
+{
+  "schema": "a10.bn-Beng-IN.visual-inspection.v1",
+  "date": "2026-09-04",
+  "status": "pass",
+  "method": "Direct inspection of the four saved final-code Chrome screenshots after computed-layout assertions passed.",
+  "screenshots": [
+    {
+      "path": "visual/desktop-top.png",
+      "bytes": 144715,
+      "sha256": "4b47fc828e484215b8b7cf3d9ae52875edb4cca54c7635ecbe12a5616fbc56db",
+      "finding": "The 1440px reader is centered and fills nearly the full page; title, scope disclosure, navigation and opening prose are legible with no clipped edge."
+    },
+    {
+      "path": "visual/desktop-graph.png",
+      "bytes": 212333,
+      "sha256": "d93423dfd1798a24b2d87e437c7325074bc83ce8dbb76a0e04f0acd313510000",
+      "finding": "The complete three-panel graph, English labels, Bengali caption and detailed Bengali alternative description are visible and aligned."
+    },
+    {
+      "path": "visual/narrow-top.png",
+      "bytes": 57303,
+      "sha256": "b3c3f3df62864ba3ba7eecd5f8679ed2b61fe68a47d9d8b5b5659961d32fd3e2",
+      "finding": "At 390px the title, scope panel and Bengali prose reflow cleanly without hidden text or horizontal scrolling."
+    },
+    {
+      "path": "visual/narrow-graph.png",
+      "bytes": 78505,
+      "sha256": "b0177d6b7f87f5cd71d6a7a33a6a517c07640546eb6fb563251cd2e46f4f24a4",
+      "finding": "At 390px all three graph panels and every mathematical line remain visible; the image scales to the container rather than becoming a cropped scroll region."
+    }
+  ],
+  "results": {
+    "path": "visual/RESULTS.json",
+    "bytes": 5771,
+    "sha256": "e4f37676b645a2e19012379801700678a2152982df78f5475228fb5f953213d8"
+  },
+  "limitations": "This is deterministic browser and direct screenshot inspection, not a claim of external human certification."
+}

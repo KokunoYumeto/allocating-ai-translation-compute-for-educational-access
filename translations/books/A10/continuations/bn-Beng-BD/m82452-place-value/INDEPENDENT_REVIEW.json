@@ -1,0 +1,39 @@
+{
+  "schema": "a10.independent-review.v1",
+  "package_id": "A10:bn-Beng-BD:m82452:fs-id1170655083568",
+  "review_scope": "Complete selected place-value subsection, generated CNXML/backend/reader, authored Bangladesh support, source corrections, rights record, and exact asset closure.",
+  "reviewer_independence": "A separate read-only reviewer inspected the rendered evidence; the sealing reviewer independently rehashed and replayed structural, mathematical, rights, and link checks.",
+  "human_or_board_review": false,
+  "inputs": {
+    "source_module": {"path": "source/m82452.en.cnxml", "bytes": 113967, "sha256": "0eaf5db27fd4e16e70d34d4b936abe173b93699e267b519e449c7b56f7233310"},
+    "source_section": {"path": "source/place-value.en.cnxml", "bytes": 31694, "sha256": "a4f2cdc9a9fd8fcbda05aa27a5fa588ee8e91d69baf5fd04fb22b51d8ec56694"},
+    "translation": {"path": "translation.json", "bytes": 30898, "sha256": "1b8ca8484c520b2efa9f871b0daba033d290a32c591c717880fad910f61c9a26"},
+    "support": {"path": "support.json", "bytes": 10163, "sha256": "611eea80e61b1efb38d687bfcf949cc7da69b308df019c49199c368383c1ffdc"},
+    "expert_log": {"path": "EXPERT_REVIEW_LOG.json", "bytes": 10074, "sha256": "5fedcc14d21bf48e4142e8b24d539fc553e27c0e5b6c5c7cdb4b218e032b6165"}
+  },
+  "checks": {
+    "source_section_exact_canonical_subtree": "pass",
+    "target_xml_well_formed": "pass",
+    "source_ids_and_hierarchy_preserved": "pass: 379 elements, 147 IDs",
+    "mathml_preserved": "pass: 16 MathML nodes",
+    "language_slots_complete": "pass: 144 text/tail slots plus 2 punctuation-only slots",
+    "source_exercise_solution_closure": "pass: 15 exercises and 15 supplied solutions",
+    "authored_math": "pass: 50 checks, including displayed Bengali grouping values",
+    "set_wording": "pass: set is rendered as গুলোর সেট in the target and the bd-pv-d4 explanation distinguishes two sets",
+    "figure_reference_wording": "pass: no duplicated সংশ্লিষ্ট চিত্র চিত্রে construction",
+    "routing_language": "pass: routing identifies learner-error patterns and answer rechecking without declaring questions wrong",
+    "asset_bytes": "pass: 17 exact source assets rehashed",
+    "inherited_mime_mismatches": "pass: four JPEG-byte/image-png-declaration mismatches recorded without changing canonical bytes",
+    "component_rights": "pass: exact collection license witness and absence of local override elements recorded",
+    "links": "pass: all local reader and companion references resolve",
+    "008c_alt": "pass: exact pixels show the add-1 arrow and no zero-replacement brace",
+    "008d_alt": "pass: exact pixels show intermediate 23,758, the replace-with-0s brace, and final 23,700",
+    "reader_language_dominance": "pass: Bengali is the reader language; retained English is confined to source numerals, source-image labels, names, identifiers, provenance, or explicitly marked technical context"
+  },
+  "limitations": [
+    "This is the complete selected subsection, not the complete module or book.",
+    "Terminology decisions marked provisional in EXPERT_REVIEW_LOG.json remain provisional; no human or NCTB certification is claimed.",
+    "The original English figures are preserved as source assets; Bengali image meaning is supplied in accessible text."
+  ],
+  "status": "pass"
+}

@@ -1,0 +1,515 @@
+{
+  "schema": "a10.expert-review-log.v1",
+  "locale": "pnb-Arab-PK",
+  "unit": "A10-009",
+  "section": "fs-id1170655163482",
+  "coverage_status": "complete",
+  "ledger_note": "This is a complete packet-level ledger. The first thirteen rationales are retrospective reconstructions from the frozen source, final translation, recorded consultations, and deterministic QA; the responsive-figure decision was recorded contemporaneously during the current repair. None is represented as human-expert intent. Provisional terminology is usable and is not a release hold.",
+  "entries": [
+    {
+      "decision_id": "pnb-a10-009-term-juz",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170655081102 (also fs-id1170655355506 and fs-id1170655355510)",
+      "target_location": "translation.json#/source_blocks/fs-id1170655081102; index.html#fs-id1170655081102; guidance.html#word-key",
+      "source_sense": "term: a constant, or the product of a constant and one or more variables",
+      "chosen_wording": "جز، followed by a full Punjabi definition",
+      "authorities_checked": [
+        {
+          "authority": "OpenStax Elementary Algebra 2e canonical CNXML",
+          "identity": "commit 38cae454e644abf9f0a623e876994553881597c9; m82453 SHA-256 a8fdd235aa254c5a0a1248fa858e9b3579d9b40982bbc514cbe6a18c3e6fcbed",
+          "result": "controls the mathematical sense"
+        },
+        {
+          "authority": "admitted predecessor Punjabi LANGUAGE_NOTES.md",
+          "identity": "SHA-256 dec988c8b39b446216ded55625c15b90a62d0121c066749a17965295da7c002f",
+          "result": "book-local continuity checked"
+        },
+        {
+          "authority": "Punjabi University RCPLT paired-script dictionary",
+          "identity": "https://dic.learnpunjabi.org/default.aspx",
+          "result": "not checked for English term; no lexical-attestation claim made"
+        }
+      ],
+      "rationale": "جز is concise, already established in the same book lineage, and can be defined naturally in Shahmukhi. It avoids replacing the Punjabi exposition with the Urdu bridge while preserving a stable learner term.",
+      "alternatives": [
+        {
+          "wording": "حد",
+          "disposition": "retained only as the explicitly tagged Urdu bridge because it risks making the main prose read as Urdu"
+        },
+        {
+          "wording": "ٹرم",
+          "disposition": "not chosen; an unexplained English borrowing is less helpful than a defined book-local term"
+        }
+      ],
+      "uncertainty": "No checked source establishes a single Pakistan-wide Punjabi classroom term; the compound remains book-local and provisional.",
+      "provisional": true,
+      "review_question": "In contemporary secondary mathematics taught through Pakistani Punjabi, is جز understood without an Urdu gloss, and if not, which native Shahmukhi term is preferred?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-coefficient-zareeb",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170655190285 (definition; examples fs-id1170655108012 and fs-id1170655199112)",
+      "target_location": "translation.json#/source_blocks/fs-id1170655190285; index.html#fs-id1170655190285; guidance.html#word-key",
+      "source_sense": "coefficient: the constant that multiplies the variable in a term",
+      "chosen_wording": "ضریب، immediately defined as جز وچ متغیر نال ضرب ہون والا مستقل عدد",
+      "authorities_checked": [
+        {
+          "authority": "Punjabi University, Research Centre for Punjabi Language Technology, paired-script dictionary",
+          "identity": "https://dic.learnpunjabi.org/default.aspx; query coefficient",
+          "result": "Shahmukhi headwords observed: گُنک، گُنانک، ماپ انک; institutional lexicography, not Pakistani classroom attestation"
+        },
+        {
+          "authority": "OpenStax canonical source definition",
+          "identity": "fs-id1170655190285 at the pinned commit",
+          "result": "sense and all coefficient examples preserved"
+        },
+        {
+          "authority": "Pakistani classroom authority",
+          "identity": "none available in the checked packet evidence",
+          "result": "not found in checked sources"
+        }
+      ],
+      "rationale": "ضریب is transparent alongside the explicit Punjabi definition and aligns with the separately tagged Urdu bridge. The dictionary alternatives are disclosed rather than silently substituted; dictionary evidence alone cannot decide Pakistani classroom usage.",
+      "alternatives": [
+        {
+          "wording": "گُنک",
+          "disposition": "reported in learner notes; not adopted without Pakistani classroom evidence"
+        },
+        {
+          "wording": "گُنانک",
+          "disposition": "reported in learner notes; not adopted without Pakistani classroom evidence"
+        },
+        {
+          "wording": "ماپ انک",
+          "disposition": "reported in learner notes; not adopted without Pakistani classroom evidence"
+        }
+      ],
+      "uncertainty": "Medium lexical uncertainty remains about which label is most familiar across Pakistani Punjabi classrooms; the definition removes mathematical ambiguity.",
+      "provisional": true,
+      "review_question": "Which of ضریب، گُنک، گُنانک، or another Shahmukhi term would a Pakistani Punjabi mathematics teacher use for coefficient at this level?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-like-terms",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170654936541 (definition; introduction fs-id1170655192776)",
+      "target_location": "translation.json#/source_blocks/fs-id1170654936541; index.html#fs-id1170654936541; guidance.html#word-key",
+      "source_sense": "like terms: constants, or terms with the same variables raised to the same powers",
+      "chosen_wording": "ہم جنس اجزا، with a Punjabi definition and separate Urdu bridge ہم جنس حدود",
+      "authorities_checked": [
+        {
+          "authority": "OpenStax canonical source",
+          "identity": "fs-id1170654936541 and fs-id1170655192776 at the pinned commit",
+          "result": "mathematical definition and example groupings control"
+        },
+        {
+          "authority": "admitted predecessor Punjabi terminology",
+          "identity": "LANGUAGE_NOTES.md SHA-256 dec988c8b39b446216ded55625c15b90a62d0121c066749a17965295da7c002f",
+          "result": "book-local continuity checked"
+        },
+        {
+          "authority": "Punjabi mathematical dictionary or Pakistani classroom glossary",
+          "identity": "none consulted for this compound",
+          "result": "not checked"
+        }
+      ],
+      "rationale": "The selected phrase keeps the previously taught noun جز, distinguishes the Urdu bridge, and is explained through exact variable-and-power conditions instead of relying on the label alone.",
+      "alternatives": [
+        {
+          "wording": "ہم جنس حدود",
+          "disposition": "retained only in the ur-Arab-PK bridge"
+        },
+        {
+          "wording": "اکو جہے اجزا",
+          "disposition": "not chosen because it is conversationally clear but less exact without the accompanying definition"
+        }
+      ],
+      "uncertainty": "The compound has no claimed Pakistani classroom attestation and remains provisional, although its operational meaning is explicit and all examples are checked.",
+      "provisional": true,
+      "review_question": "Does ہم جنس اجزا sound natural and precise to a Pakistani Punjabi learner, or is a different classroom label preferable while retaining جز?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-powers-and-exponent",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170654936541 and #fs-id1170655192776",
+      "target_location": "translation.json#/source_blocks/fs-id1170654936541; translation.json#/source_blocks/fs-id1170655192776",
+      "source_sense": "the variables and their exponents/powers must match",
+      "chosen_wording": "اوہی متغیر اوہناں ای طاقتاں اُتے; the shorter explanation uses متغیر تے قوت نما اکو جیہے",
+      "authorities_checked": [
+        {
+          "authority": "OpenStax canonical MathML and prose",
+          "identity": "62 preserved MathML trees in section fs-id1170655163482",
+          "result": "the mathematical distinction between variable and exponent is exact"
+        },
+        {
+          "authority": "Pakistani Punjabi mathematics glossary",
+          "identity": "none available in the checked packet evidence",
+          "result": "not found in checked sources"
+        }
+      ],
+      "rationale": "The plural Punjabi sentence now matches the source's plural variables/powers, while قوت نما gives learners a compact label where the prose needs one. The displayed powers in immutable MathML remain the primary disambiguator.",
+      "alternatives": [
+        {
+          "wording": "اکو متغیر اکو طاقتاں اُتے",
+          "disposition": "rejected in final revision because its singular/plural agreement was defective"
+        },
+        {
+          "wording": "گھات",
+          "disposition": "not checked against a Pakistani Shahmukhi classroom authority"
+        }
+      ],
+      "uncertainty": "Low semantic uncertainty; moderate terminological uncertainty around قوت نما versus other regional classroom labels.",
+      "provisional": true,
+      "review_question": "For exponent or power in this setting, is قوت نما idiomatic Pakistani Punjabi, or would طاقت، گھات، or another form be clearer?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-algebraic-expression",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170655355506 and #fs-id1170655174214",
+      "target_location": "translation.json#/source_blocks/fs-id1170655355506; translation.json#/source_blocks/fs-id1170655174214",
+      "source_sense": "algebraic expression; adding or subtracting terms forms an expression",
+      "chosen_wording": "جبری عبارت; اجزا نوں جمع کرن یا گھٹاؤن نال اک عبارت بن دی اے",
+      "authorities_checked": [
+        {
+          "authority": "OpenStax canonical prose and formula context",
+          "identity": "fs-id1170655355506 and fs-id1170655174214 at the pinned commit",
+          "result": "source sense and referenced expression preserved"
+        },
+        {
+          "authority": "Rvel native Shahmukhi prose",
+          "identity": "https://www.rvel.org/detail.php?id=2835",
+          "result": "supports Punjabi predicate frames including بنیا and بیان کیتی جا سکدی اے; does not attest the mathematical compound"
+        }
+      ],
+      "rationale": "جبری عبارت is compact and is immediately demonstrated by source formulas. The final clause اک عبارت بن دی اے repairs an accidental fused form and restores ordinary Punjabi predication.",
+      "alternatives": [
+        {
+          "wording": "الجبری ایکسپریشن",
+          "disposition": "not chosen; unnecessary English-heavy borrowing"
+        },
+        {
+          "wording": "عبارت بندی اے",
+          "disposition": "rejected as an accidental fusion that changes the intended predicate"
+        }
+      ],
+      "uncertainty": "No checked source certifies جبری عبارت as a universal Pakistani classroom label; the surrounding formula fixes the sense.",
+      "provisional": true,
+      "review_question": "Would Pakistani Punjabi instruction normally say جبری عبارت for algebraic expression, and does اک عبارت بن دی اے read naturally across major regional varieties?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-native-grammar-and-plurals",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170654936709 and #fs-id1166425014151/item/3",
+      "target_location": "translation.json#/source_blocks/fs-id1170654936709; translation.json#/source_blocks/fs-id1166425014151~1item~13; guidance.html#learning-key",
+      "source_sense": "add or subtract the coefficients and keep the variable unchanged",
+      "chosen_wording": "ضریباں نوں جمع کرو یا گھٹاؤ، تے متغیر اوہو رکھو",
+      "authorities_checked": [
+        {
+          "authority": "Rvel, مہینا وار پرچاکاری",
+          "identity": "https://www.rvel.org/detail.php?id=2835",
+          "result": "native Shahmukhi plural and pedagogical-address patterns checked; no mathematical-term attestation claimed"
+        },
+        {
+          "authority": "Rvel, پنجابی زبان دی ونڈ کاری",
+          "identity": "https://rvel.org/detail.php?id=1283",
+          "result": "native reasoning and reminder frames checked, including کیوں جے and چیتے رہوے کہ"
+        },
+        {
+          "authority": "OpenStax canonical how-to list",
+          "identity": "fs-id1166425014151/item/3",
+          "result": "plural coefficients and retained variable control"
+        }
+      ],
+      "rationale": "The oblique plural ضریباں نوں is grammatically explicit in Punjabi and matches the source plural. Punjabi verbs and pronouns such as کرو، اوہو، نیں، آں, and اوہناں keep the teaching voice distinct from the Urdu bridge.",
+      "alternatives": [
+        {
+          "wording": "ضریب جمع کرو",
+          "disposition": "revised because the uninflected singular was less natural and did not match the source plural"
+        },
+        {
+          "wording": "عددوں کو جمع کریں",
+          "disposition": "rejected as Urdu rather than Punjabi"
+        }
+      ],
+      "uncertainty": "Naturalness is supported by inspected prose frames rather than independent native-reader certification; dialectal preferences may vary.",
+      "provisional": false,
+      "review_question": "Does the instructional sentence ضریباں نوں جمع کرو یا گھٹاؤ، تے متغیر اوہو رکھو sound natural in secondary-level Pakistani Punjabi?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-passive-ability",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170654943110",
+      "target_location": "translation.json#/source_blocks/fs-id1170654943110; index.html#fs-id1170654943110",
+      "source_sense": "an expression can be simplified by combining like terms",
+      "chosen_wording": "عبارت سادہ کیتی جا سکدی اے",
+      "authorities_checked": [
+        {
+          "authority": "Rvel, مہینا وار پرچاکاری",
+          "identity": "https://www.rvel.org/detail.php?id=2835",
+          "result": "exact native pattern بیان کیتی جا سکدی اے observed"
+        },
+        {
+          "authority": "OpenStax canonical source",
+          "identity": "fs-id1170654943110",
+          "result": "modal possibility and simplification sense preserved"
+        }
+      ],
+      "rationale": "The observed Punjabi passive-ability construction maps the source modal can be simplified directly and naturally.",
+      "alternatives": [
+        {
+          "wording": "عبارت نوں سادہ کر سکتے ہیں",
+          "disposition": "rejected as Urdu-mixed grammar"
+        }
+      ],
+      "uncertainty": "Low; the exact grammatical pattern is attested, though the mathematical noun phrase itself is not certified by that prose source.",
+      "provisional": false,
+      "review_question": "Is سادہ کیتی جا سکدی اے the preferred classroom cadence here, or would a more direct active Punjabi sentence be clearer?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-rtl-math-isolation",
+      "source_location": "source/a10-unit-009.cnxml section fs-id1170655163482 (all 62 MathML trees and Latin-variable emphasis nodes)",
+      "target_location": "index.html html[lang=pnb-Arab-PK][dir=rtl]; reader.css .math-isolate/math/bdi; build.py SectionReader output",
+      "source_sense": "RTL Punjabi prose must preserve the exact ordered LTR algebra and Latin variables",
+      "chosen_wording": "RTL prose with source-exact MathML and every plain Latin/math run isolated in bdi dir=ltr or an equivalent math-isolate wrapper",
+      "authorities_checked": [
+        {
+          "authority": "OpenStax canonical CNXML",
+          "identity": "section fs-id1170655163482; 62 MathML trees",
+          "result": "all source MathML fingerprints, order, punctuation, IDs, and attributes compared deterministically"
+        },
+        {
+          "authority": "rendered reader DOM",
+          "identity": "index.html rebuilt from build.py",
+          "result": "all 253 source bindings and LTR MathML wrappers verified"
+        }
+      ],
+      "rationale": "Directionality is a semantic requirement: formula order must not mirror when embedded in Shahmukhi. Markup isolation is explicit and auditable without hidden bidi control characters.",
+      "alternatives": [
+        {
+          "wording": "rely on browser bidi heuristics",
+          "disposition": "rejected because punctuation and variables can reorder unpredictably"
+        },
+        {
+          "wording": "insert Unicode directional-control characters",
+          "disposition": "rejected; hidden controls are forbidden by deterministic UTF-8 QA"
+        }
+      ],
+      "uncertainty": "No semantic uncertainty; individual browser/font shaping remains an implementation risk addressed by actual desktop and narrow browser inspection.",
+      "provisional": false,
+      "review_question": "Does the rendered formula order remain immediately intelligible with the preferred local Shahmukhi font and assistive technology?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-source-math-and-word",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170655106479",
+      "target_location": "index.html#fs-id1170655106479; guidance.html#word-key",
+      "source_sense": "the canonical MathML example includes the literal English connector and",
+      "chosen_wording": "retain the exact MathML token and, isolate it LTR, and explain separately that its Punjabi meaning is تے",
+      "authorities_checked": [
+        {
+          "authority": "OpenStax canonical MathML",
+          "identity": "source/a10-unit-009.cnxml#fs-id1170655106479 at the pinned commit",
+          "result": "literal token is part of the frozen MathML tree"
+        },
+        {
+          "authority": "Punjabi bridge explanation",
+          "identity": "guidance.html#word-key",
+          "result": "meaning made explicit without mutating source math"
+        }
+      ],
+      "rationale": "Preserving the canonical MathML is stronger than silently translating inside the formula; the separate Punjabi gloss keeps the reader usable.",
+      "alternatives": [
+        {
+          "wording": "replace and with تے inside MathML",
+          "disposition": "rejected because it would alter a canonical math tree"
+        },
+        {
+          "wording": "leave and unexplained",
+          "disposition": "rejected because it creates an avoidable language barrier"
+        }
+      ],
+      "uncertainty": "None about source preservation; low usability uncertainty remains for learners encountering English inside MathML.",
+      "provisional": false,
+      "review_question": "Is the separate gloss sufficient, or should a future reader add a clearly non-source adjacent Punjabi label beside this immutable MathML?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-split-image-alt",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170655224688; assets/CNX_ElemAlg_Figure_01_02_014a_new.jpg SHA-256 2ad9395bde94fd6a3ba76f02cf35e9ba4806291ea3636c8bc5f29b5c290daac2",
+      "target_location": "translation.json#/source_blocks/fs-id1170655224688~1alt; translation.json#/image_alt_overrides/fs-id1170655224688~1alt; index.html#fs-id1170655224688 img",
+      "source_sense": "the source alt describes the three-image composite, while the first JPEG itself contains only step 1 and two expression rows",
+      "chosen_wording": "retain the faithful translated source alt in data-source-alt and provide a separately attributed pixel-accurate Punjabi alt for the first file",
+      "authorities_checked": [
+        {
+          "authority": "OpenStax canonical CNXML alt",
+          "identity": "fs-id1170655224688 at the pinned commit",
+          "result": "complete composite description preserved verbatim in English source and faithfully in Punjabi data-source-alt"
+        },
+        {
+          "authority": "canonical JPEG pixel inspection",
+          "identity": "CNX_ElemAlg_Figure_01_02_014a_new.jpg; 594×84; 71,425 bytes; SHA-256 2ad9395bde94fd6a3ba76f02cf35e9ba4806291ea3636c8bc5f29b5c290daac2",
+          "result": "shows only step 1 and two expressions"
+        }
+      ],
+      "rationale": "Separating provenance from the usable alt avoids falsifying the source record and avoids describing pixels that are not present in the first image.",
+      "alternatives": [
+        {
+          "wording": "use the source composite alt unchanged as the image alt",
+          "disposition": "rejected as inaccurate for the individual file"
+        },
+        {
+          "wording": "replace the source alt without trace",
+          "disposition": "rejected because it erases canonical provenance"
+        }
+      ],
+      "uncertainty": "None about the visible pixels; the original author's reason for attaching the composite description to the first file is unknown.",
+      "provisional": false,
+      "review_question": "Does the Punjabi corrected alt describe the two visible formula rows clearly enough for a screen-reader user without relying on color?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-n-to-x-transition",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170654944183 followed by #fs-id1166422559187/item/3",
+      "target_location": "index.html#fs-id1170654944183; index.html#fs-id1166422559187; guidance.html (دو سچے جوڑ، دو وکھرے متغیر)",
+      "source_sense": "the prose first illustrates n² and 9n², then the following bullet independently uses x² and 9x²",
+      "chosen_wording": "preserve both canonical variable pairs and add a separately marked Punjabi note explaining the source transition",
+      "authorities_checked": [
+        {
+          "authority": "OpenStax canonical CNXML and MathML",
+          "identity": "fs-id1170654944183 and fs-id1166422559187/item/3 at the pinned commit",
+          "result": "both distinct variable pairs verified in source order"
+        },
+        {
+          "authority": "symbolic QA",
+          "identity": "verify.py like-term grouping checks",
+          "result": "both pairs independently satisfy the like-term definition"
+        }
+      ],
+      "rationale": "Normalizing x to n or n to x would silently change canonical math. The note prevents learners from mistaking the change for an algebraic transformation.",
+      "alternatives": [
+        {
+          "wording": "normalize both pairs to the same variable",
+          "disposition": "rejected because source MathML must remain exact"
+        },
+        {
+          "wording": "preserve without explanation",
+          "disposition": "rejected as needlessly confusing"
+        }
+      ],
+      "uncertainty": "None mathematically; the editorial intent behind the source variable switch is not stated.",
+      "provisional": false,
+      "review_question": "Is the added Punjabi explanation concise enough to prevent confusion without distracting from the like-term rule?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-cross-reference-context",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170655174214 link target fs-id1170655171250",
+      "target_location": "index.html#fs-id1170655174214; guidance.html#fs-id1170655171250",
+      "source_sense": "the section points backward to an example outside this packet in which x=4 gives 52 for 2x²+3x+8",
+      "chosen_wording": "پچھلی حل کیتی مثال, plus a separately marked context note that preserves the original target ID",
+      "authorities_checked": [
+        {
+          "authority": "canonical whole m82453 module",
+          "identity": "source/m82453.en.cnxml SHA-256 a8fdd235aa254c5a0a1248fa858e9b3579d9b40982bbc514cbe6a18c3e6fcbed",
+          "result": "target fs-id1170655171250 and its expression/value context verified"
+        },
+        {
+          "authority": "symbolic substitution QA",
+          "identity": "verify.py: (2x²+3x+8)|x=4 = 52",
+          "result": "context calculation verified"
+        }
+      ],
+      "rationale": "A self-contained offline packet cannot navigate into an untranslated predecessor section, so the source link is resolved to an explicitly original context note rather than dropped or falsely credited as source text.",
+      "alternatives": [
+        {
+          "wording": "dead link to an absent fragment",
+          "disposition": "rejected by offline-link QA"
+        },
+        {
+          "wording": "duplicate the entire predecessor example",
+          "disposition": "rejected as out of packet scope and duplicate translation credit"
+        }
+      ],
+      "uncertainty": "None about the source target or calculation; the explanatory note is new translator guidance, not canonical source.",
+      "provisional": false,
+      "review_question": "Is پچھلی حل کیتی مثال an unambiguous Punjabi link label for learners using this packet offline?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-explicit-bridges",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170655081102, #fs-id1170655190285, and #fs-id1170654936541",
+      "target_location": "guidance.html#word-key; index.html#word-key",
+      "source_sense": "three central lesson terms require support without replacing Punjabi exposition",
+      "chosen_wording": "Punjabi definitions in the main RTL flow; exactly three Urdu spans tagged lang=ur-Arab-PK and English terms tagged lang=en dir=ltr",
+      "authorities_checked": [
+        {
+          "authority": "final reader DOM",
+          "identity": "index.html",
+          "result": "three Urdu bridges and separately isolated English bridges counted and inspected"
+        },
+        {
+          "authority": "Rvel native Shahmukhi prose loci",
+          "identity": "https://www.rvel.org/detail.php?id=2835 and https://rvel.org/detail.php?id=1283",
+          "result": "Punjabi grammatical voice checked; sources do not certify the mathematical labels"
+        }
+      ],
+      "rationale": "Explicit language tags make the support languages transparent and preserve native Punjabi as the teaching language. English isolation also protects bidirectional order.",
+      "alternatives": [
+        {
+          "wording": "blend Urdu equivalents into untagged Punjabi prose",
+          "disposition": "rejected because it obscures the requested language distinction"
+        },
+        {
+          "wording": "omit bridges",
+          "disposition": "rejected because the assigned learner workflow explicitly requires Urdu and English bridges"
+        }
+      ],
+      "uncertainty": "Low structural uncertainty; bridge usefulness for different learner backgrounds has not been human-certified and is not a release gate.",
+      "provisional": false,
+      "review_question": "Are the three bridge pairs sufficient for learners moving among Punjabi, Urdu, and English algebra terminology, or is one additional bridge term essential?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "pnb-a10-009-responsive-figure-reflow",
+      "source_location": "source/a10-unit-009.cnxml#fs-id1170655224688, #fs-id1170653192952 and #fs-id1170655041754; assets/CNX_ElemAlg_Figure_01_02_014a_new.jpg, 014b_new.jpg and 014c_new.jpg",
+      "target_location": "build.py#SectionReader.RESPONSIVE_FIGURES; index.html#fs-id1170655224688, #fs-id1170653192952 and #fs-id1170655041754",
+      "source_sense": "three 594-pixel raster panels show (1) the original expression and its like-term groups, (2) the expression reordered as 2x²+x² + 3x+4x + 7+5, and (3) the result 3x²+7x+12",
+      "chosen_wording": "retain each byte-identical original JPEG, fit it wholly within the viewport, and add a visibly separate Punjabi semantic reconstruction at 390px with exact LTR expressions and color-independent group wording",
+      "authorities_checked": [
+        {
+          "authority": "canonical source JPEG pixels and byte identities",
+          "identity": "014a SHA-256 2ad9395bde94fd6a3ba76f02cf35e9ba4806291ea3636c8bc5f29b5c290daac2; 014b e90cea2cd7a185f062e0a30792b3e24e98ff1be16b848b412d1cf5f6004859e2; 014c 3962ad0650b0b3737cbff93dbc3f5bf7a4cac30d5df5a63c5111a3dc90394d2e",
+          "result": "all labels, term order, grouping colors and final coefficients read directly from the three source images"
+        },
+        {
+          "authority": "canonical section MathML and source-supplied solution",
+          "identity": "source/a10-unit-009.cnxml; module SHA-256 a8fdd235aa254c5a0a1248fa858e9b3579d9b40982bbc514cbe6a18c3e6fcbed",
+          "result": "the original expression and 3x²+7x+12 result agree with the source mathematics"
+        },
+        {
+          "authority": "final-code browser geometry and saved screenshots",
+          "identity": "visual/RESULTS.json and visual/INSPECTION.json",
+          "result": "390px image and reconstruction geometry checked without document or local horizontal overflow"
+        }
+      ],
+      "rationale": "A 594-pixel raster can be shrunk but cannot internally reflow, and a sideways scroll region hides part of the mathematics. Keeping the original visible and adding an explicitly original responsive reconstruction preserves source identity while making the complete calculation readable in one 390px viewport.",
+      "alternatives": [
+        {
+          "wording": "keep each image at 594px and require horizontal scrolling",
+          "disposition": "rejected because the right or left mathematics is hidden until the learner discovers and performs a sideways scroll"
+        },
+        {
+          "wording": "replace or edit the canonical JPEGs",
+          "disposition": "rejected because it would damage byte identity and blur source versus adaptation"
+        },
+        {
+          "wording": "shrink the images without a semantic reconstruction",
+          "disposition": "rejected because the embedded English labels and exponents become too small for comfortable narrow-screen reading"
+        }
+      ],
+      "uncertainty": "The responsive reconstruction is an original accessibility/layout adaptation, not source artwork; its algebra is deterministically checked, while color perception remains nonessential because the group membership is also stated in words.",
+      "provisional": false,
+      "review_question": "Does the narrow-screen reconstruction preserve every group and coefficient clearly without suggesting that the reconstructed panel is original source artwork?",
+      "rationale_timing": "contemporaneous"
+    }
+  ]
+}

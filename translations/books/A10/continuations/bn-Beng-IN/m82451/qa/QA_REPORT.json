@@ -1,0 +1,54 @@
+{
+  "schema": "a10.packet-qa.v1",
+  "module_id": "m82451",
+  "locale": "bn-Beng-IN",
+  "status": "pass",
+  "test_count": 21,
+  "tests": [
+    {"name": "source-lock-sha256", "status": "pass", "details": "025f994e3c66f19462c9423788f703f7987fecb67656911d840fdd15a58d8a4a"},
+    {"name": "source-lock-bytes", "status": "pass", "details": "1066"},
+    {"name": "xml-well-formed", "status": "pass", "details": "source and target parsed"},
+    {"name": "element-topology", "status": "pass", "details": "13 expanded-name elements preserved in order"},
+    {"name": "id-topology", "status": "pass", "details": "3 IDs preserved in order"},
+    {"name": "root-attributes", "status": "pass", "details": "class=introduction preserved"},
+    {"name": "metadata-identity", "status": "pass", "details": "content-id and UUID preserved"},
+    {"name": "image-source-geometry", "status": "pass", "details": "mime-type and source src preserved"},
+    {"name": "mathml-count", "status": "pass", "details": "0 in source and target"},
+    {"name": "exercise-answer-counts", "status": "pass", "details": "0 exercises and 0 supplied answers"},
+    {"name": "bengali-script", "status": "pass", "details": "356 Bengali-script code points"},
+    {"name": "translated-visible-fields", "status": "pass", "details": "all 5 visible/translatable fields contain Bengali and no checked English residue"},
+    {"name": "utf8", "status": "pass", "details": "strict UTF-8 round trip; no BOM"},
+    {"name": "backend-agreement", "status": "pass", "details": "title, alt, caption and paragraph match target CNXML"},
+    {"name": "reader-agreement", "status": "pass", "details": "title, alt, caption and paragraph match target CNXML"},
+    {"name": "reader-reflow", "status": "pass", "details": "fluid full-page flow, bounded gutters, wrapping and no narrow centered cap"},
+    {"name": "visual-artifacts", "status": "pass", "details": "desktop 1280x900 and narrow 500x844 PNG proofs exist with exact viewport dimensions"},
+    {"name": "accessibility-agreement", "status": "pass", "details": "figure text matches target; audio tracked separately and absent"},
+    {"name": "offline-asset-bytes", "status": "pass", "details": "251847"},
+    {"name": "offline-asset-sha256", "status": "pass", "details": "b098f5e49be034b14e673f8aa4362cbfdbd0467e7ba1aa320c151b955fbecfb4"},
+    {"name": "expert-log-complete", "status": "pass", "details": "3 substantive decisions; required fields populated; no review falsely claimed"}
+  ],
+  "target": {
+    "path": "target/bn-Beng-IN.cnxml",
+    "bytes": 1836,
+    "sha256": "7c05fcb193e4e7ac0ffb9bb360ece9acbe88805544fb7340a9da7107e391b88a"
+  },
+  "visual_qa": {
+    "status": "pass",
+    "browser": "Microsoft Edge headless (desktop) and Google Chrome headless (narrow)",
+    "artifacts": [
+      {
+        "viewport": "1280x900",
+        "path": "qa/reader-1280x900.png",
+        "bytes": 781159,
+        "sha256": "7b3212869219265f46a3bdd4db9bd1d27163aa461b0fdae8779d561c216fef24"
+      },
+      {
+        "viewport": "500x844",
+        "path": "qa/reader-500x844.png",
+        "bytes": 165423,
+        "sha256": "81b8c2716fcead263c555c2396b05fbba37bf82eacb436f41c19bee9ac24efa4"
+      }
+    ],
+    "inspection": "Bengali shaping is intact; all content is visible without clipping at desktop and narrow widths; the image fills the available reading width; the reader uses small fluid gutters and no centered max-width cap."
+  }
+}

@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" id="fs-id1170655083568" xml:lang="bn-BD">
+<title>শূন্যসহ স্বাভাবিক সংখ্যায় স্থানীয় মান ব্যবহার করি</title>
+<para id="fs-id1170655162029">বীজগণিতে ব্যবহৃত সবচেয়ে প্রাথমিক সংখ্যাগুলো হলো চারপাশের জিনিস গুনতে আমরা যে সংখ্যাগুলো ব্যবহার করি: 1, 2, 3, 4 ইত্যাদি। এগুলো হলো <term id="term-00001">গণনার সংখ্যা</term><emphasis effect="bold">গুলো</emphasis>। গণনার সংখ্যাগুলোকে <emphasis effect="italics">স্বাভাবিক সংখ্যা</emphasis>ও বলা হয়। স্বাভাবিক সংখ্যার সঙ্গে শূন্য অন্তর্ভুক্ত করলে আমরা পাই <term id="term-00002">শূন্যসহ স্বাভাবিক সংখ্যা</term><emphasis effect="bold">গুলোর সেট</emphasis>।</para>
+<para id="fs-id1170655024948"><m:math><m:mrow><m:mspace width="1.5em"/></m:mrow></m:math>গণনার সংখ্যা: 1, 2, 3, …</para>
+<para id="fs-id1170655082425"><m:math><m:mrow><m:mspace width="1.5em"/></m:mrow></m:math>শূন্যসহ স্বাভাবিক সংখ্যা: 0, 1, 2, 3, …</para>
+<para id="fs-id1170655192198">‘…’ চিহ্নটিকে ত্রিবিন্দু বলা হয়। এর অর্থ ‘ইত্যাদি’—অর্থাৎ ধারাটি এভাবেই শেষ না হয়ে চলতে থাকে।</para>
+<para id="fs-id1170655197123">গণনার সংখ্যা ও শূন্যসহ স্বাভাবিক সংখ্যাগুলোকে একটি <term id="term-00003">সংখ্যারেখায়</term> দেখানো যায় (দেখো <link target-id="CNX_ElemAlg_Figure_01_01_001_new"/>)।</para>
+<figure id="CNX_ElemAlg_Figure_01_01_001_new">
+<media id="fs-id1170655233864" alt="চিত্রের নিচে দুই প্রান্তে তীরচিহ্নসহ একটি অনুভূমিক সংখ্যারেখায় 0 থেকে 6 পর্যন্ত সংখ্যা আছে। তার ওপরে 3 থেকে 0-এর দিকে বামমুখী একটি তীর আছে; ইংরেজি smaller লেবেলটির অর্থ ‘ছোট হয়’। আরও ওপরে 3 থেকে 6-এর দিকে ডানমুখী একটি তীর আছে; larger লেবেলটির অর্থ ‘বড় হয়’।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_001_new.jpg"/>
+</media>
+<caption>সংখ্যারেখায় বাম থেকে ডানে গেলে সংখ্যা বড় হয়; ডান থেকে বামে গেলে ছোট হয়। এখানে শূন্যসহ স্বাভাবিক সংখ্যাগুলোর মধ্যে শুধু 0 থেকে 6 দেখানো হলেও এই সংখ্যাধারা শেষ না হয়ে চলতে থাকে।</caption>
+</figure>
+<note id="fs-id1166423891565" class="manipulative-math">Manipulative Mathematics-এর ‘Number Line-Part 1’ বা ‘সংখ্যারেখা—প্রথম অংশ’ হাতে-কলমে কাজটি করলে গণনার সংখ্যা ও শূন্যসহ স্বাভাবিক সংখ্যা আরও ভালোভাবে বুঝতে পারবে।</note>
+<para id="fs-id1170655190408">আমাদের <term class="no-emphasis" id="term-00004">সংখ্যাপদ্ধতি</term> একটি স্থানীয় মানভিত্তিক পদ্ধতি: একটি সংখ্যার মধ্যে অঙ্কটি কোথায় আছে, তার ওপর অঙ্কটির মান নির্ভর করে। <link target-id="CNX_ElemAlg_Figure_01_01_002_new"/>ে দেখানো হয়েছে <term class="no-emphasis" id="term-00005">বিভিন্ন স্থানের মান</term>। এখানে পরপর তিনটি স্থান নিয়ে একটি দল করা হয়েছে; ইংরেজিতে এই দলকে period বলে। দলগুলো হলো <emphasis effect="italics">একক, হাজার, মিলিয়ন, বিলিয়ন, ট্রিলিয়ন</emphasis> ইত্যাদি। সংখ্যা লেখার সময় কমা দিয়ে দলগুলো আলাদা করা হয়।</para>
+<figure id="CNX_ElemAlg_Figure_01_01_002_new">
+<media id="fs-id1170655200451" alt="আন্তর্জাতিক তিন-অঙ্কের দলভিত্তিক স্থানীয় মানের ছকে 5,278,194 বসানো আছে। ওপরের শিরোনাম Place Value, অর্থাৎ স্থানীয় মান। দলগুলো বাম থেকে ট্রিলিয়ন, বিলিয়ন, মিলিয়ন, হাজার ও একক। ট্রিলিয়ন দলে শত ট্রিলিয়ন, দশ ট্রিলিয়ন ও ট্রিলিয়ন; বিলিয়ন দলে শত বিলিয়ন, দশ বিলিয়ন ও বিলিয়ন; মিলিয়ন দলে শত মিলিয়ন, দশ মিলিয়ন ও মিলিয়ন; হাজার দলে শত হাজার, দশ হাজার ও হাজার; একক দলে শতক, দশক ও একক—প্রতিটি দলে তিনটি ঘর। ঘরের নামগুলো নিচ থেকে ওপরে লেখা। পূরণ করা ঘরগুলো হলো: মিলিয়ন 5; শত হাজার 2; দশ হাজার 7; হাজার 8; শতক 1; দশক 9; একক 4। অর্থাৎ পাঁচ মিলিয়ন, দুইশত আটাত্তর হাজার, একশত চুরানব্বই।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_002_new.jpg"/>
+</media>
+<caption>ছকে 5,278,194 সংখ্যাটি দেখানো হয়েছে। 5 আছে মিলিয়নের ঘরে, 2 শত হাজারের ঘরে, 7 দশ হাজারের ঘরে, 8 হাজারের ঘরে, 1 শতকের ঘরে, 9 দশকের ঘরে এবং 4 এককের ঘরে।</caption>
+</figure>
+<example id="fs-id1170654981807">
+<exercise id="fs-id1170655205131">
+<problem id="fs-id1170654978132">
+<para id="fs-id1170655192807">63,407,218 সংখ্যাটিতে নিচের প্রতিটি অঙ্ক কোন স্থানে আছে, নির্ণয় করো:</para>
+<list id="fs-id1166421427575" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> 7</item>
+<item><span class="token">ⓑ</span> 0</item>
+<item><span class="token">ⓒ</span> 1</item>
+<item><span class="token">ⓓ</span> 6</item>
+<item><span class="token">ⓔ</span> 3</item>
+</list>
+</problem>
+<solution id="fs-id1170655022351">
+<title>সমাধান</title>
+<para id="fs-id1170654968077">সংখ্যাটি স্থানীয় মানের ছকে বসাও:<newline/>
+<media id="fs-id1170655112880" alt="স্থানীয় মানের ছকে 63,407,218 বসানো আছে। ওপরের শিরোনাম Place Value, অর্থাৎ স্থানীয় মান। বাম থেকে ট্রিলিয়ন, বিলিয়ন, মিলিয়ন, হাজার ও একক দল; প্রতি দলে শত, দশ ও একের তিনটি ঘর, যাদের নাম নিচ থেকে ওপরে লেখা। ট্রিলিয়ন ও বিলিয়ন দলের ঘরগুলো ফাঁকা। পূরণ করা ঘরগুলো: দশ মিলিয়ন 6; মিলিয়ন 3; শত হাজার 4; দশ হাজার 0; হাজার 7; শতক 2; দশক 1; একক 8। অর্থাৎ তেষট্টি মিলিয়ন, চারশত সাত হাজার, দুইশত আঠারো।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_003_img_new.jpg"/>
+</media></para>
+<para id="fs-id1166426398759"><span class="token">ⓐ</span> 7 হাজারের ঘরে আছে।<newline/>
+<span class="token">ⓑ</span> 0 দশ হাজারের ঘরে আছে।<newline/>
+<span class="token">ⓒ</span> 1 দশকের ঘরে আছে।<newline/>
+<span class="token">ⓓ</span> 6 দশ মিলিয়নের ঘরে আছে।<newline/>
+<span class="token">ⓔ</span> 3 মিলিয়নের ঘরে আছে।</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655228867" class="try">
+<exercise id="fs-id1170655213443">
+<problem id="fs-id1170655125783">
+<para id="fs-id1170655133227">27,493,615 সংখ্যাটিতে নিচের প্রতিটি অঙ্ক কোন স্থানে আছে, নির্ণয় করো:</para>
+<para id="fs-id1170655154330"><span class="token">ⓐ</span> 2 <span class="token">ⓑ</span> 1 <span class="token">ⓒ</span> 4 <span class="token">ⓓ</span> 7 <span class="token">ⓔ</span> 5</para>
+</problem>
+<solution id="fs-id1170655192955">
+<para id="fs-id1170654924451"><span class="token">ⓐ</span> দশ মিলিয়ন <span class="token">ⓑ</span> দশক <span class="token">ⓒ</span> শত হাজার <span class="token">ⓓ</span> মিলিয়ন <span class="token">ⓔ</span> একক</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654885628" class="try">
+<exercise id="fs-id1170655088995">
+<problem id="fs-id1170655171837">
+<para id="fs-id1170655171777">519,711,641,328 সংখ্যাটিতে নিচের প্রতিটি অঙ্ক কোন স্থানে আছে, নির্ণয় করো:</para>
+<para id="fs-id1170655114062"><span class="token">ⓐ</span> 9 <span class="token">ⓑ</span> 4 <span class="token">ⓒ</span> 2 <span class="token">ⓓ</span> 6 <span class="token">ⓔ</span> 7</para>
+</problem>
+<solution id="fs-id1170655129771">
+<para id="fs-id1170655163552"><span class="token">ⓐ</span> বিলিয়ন <span class="token">ⓑ</span> দশ হাজার <span class="token">ⓒ</span> দশক <span class="token">ⓓ</span> শত হাজার <span class="token">ⓔ</span> শত মিলিয়ন</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655113270">চেক লেখার সময় অঙ্কের পাশাপাশি কথায়ও সংখ্যা লিখতে হয়। এখানে মূল বইয়ের আন্তর্জাতিক তিন-অঙ্কের দলভিত্তিক রীতি অনুসরণ করা হচ্ছে। প্রথমে প্রতিটি দলের সংখ্যা কথায় লেখো, তারপর দলের নাম লেখো। ইংরেজিতে দলের নামের শেষে বহুবচনের <emphasis effect="italics">s</emphasis> বসে না। বাম দিকের সবচেয়ে বড় মানের দল থেকে শুরু করো। একক দলের নাম লেখা হয় না। কমা দিয়ে দল আলাদা করা হয়; তাই অঙ্কে লেখা সংখ্যায় যেখানে কমা আছে, কথায় লেখার সময়ও সেখানে কমা দাও (দেখো <link target-id="CNX_ElemAlg_Figure_01_01_004_new"/>)। 74,218,369 লেখা হয়: চুয়াত্তর মিলিয়ন, দুইশত আঠারো হাজার, তিনশত ঊনসত্তর।</para>
+<figure id="CNX_ElemAlg_Figure_01_01_004_new">
+<media id="fs-id1170655154806" alt="ওপরের সারিতে কমা দিয়ে আলাদা করে 74, 218 ও 369 লেখা। প্রতিটি দলের নিচে বন্ধনী: 74-এর নিচে millions অর্থাৎ মিলিয়ন, 218-এর নিচে thousands অর্থাৎ হাজার, 369-এর নিচে ones অর্থাৎ একক। পাশে periods লেখা তীর এই দলগুলোর নাম নির্দেশ করে। পরের সারিগুলোতে ডানমুখী তীর দিয়ে দেখানো: 74—চুয়াত্তর মিলিয়ন; 218—দুইশত আঠারো হাজার; 369—তিনশত ঊনসত্তর। প্রথম দুই দলের কথার শেষে কমা আছে। মূল ছবির শব্দগুলো ইংরেজিতে লেখা।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_004_new.jpg"/>
+</media>
+</figure>
+<note id="fs-id1170655127621" class="howto">
+<title>শূন্যসহ স্বাভাবিক সংখ্যা কথায় লেখার নিয়ম</title>
+<list id="fs-id1166426255157" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>বাম দিক থেকে প্রতিটি দলের সংখ্যা কথায় লেখো, তারপর সেই দলের নাম লেখো।</item>
+<item>দলগুলো আলাদা করতে কমা বসাও।</item>
+<item>একক দলের নাম লিখবে না।</item>
+</list>
+</note>
+<example id="fs-id1170655164754">
+<exercise id="fs-id1170655163653">
+<problem id="fs-id1170655175454">
+<para id="fs-id1170654981580">8,165,432,098,710 সংখ্যাটি কথায় লেখো।</para>
+</problem>
+<solution id="fs-id1170654857936">
+<title>সমাধান</title>
+<para id="fs-id1170655134588">প্রতিটি দলের সংখ্যা কথায় লেখো, তারপর দলের নাম লেখো।</para>
+<para id="fs-id1170655134528"><media id="fs-id1170655155229" alt="8, 165, 432, 098 ও 710 একটি সারিতে কমা দিয়ে আলাদা করা আছে। নিচের বন্ধনীগুলো যথাক্রমে ট্রিলিয়ন, বিলিয়ন, মিলিয়ন, হাজার ও একক দল নির্দেশ করে। পরের সারিগুলোতে সংখ্যা থেকে ডানমুখী তীর দিয়ে কথায় লেখা রূপ দেখানো হয়েছে: 8—আট ট্রিলিয়ন; 165—একশত পঁয়ষট্টি বিলিয়ন; 432—চারশত বত্রিশ মিলিয়ন; 098—আটানব্বই হাজার; 710—সাতশত দশ। শেষ দল ছাড়া বাকিগুলোর কথার পরে কমা আছে। মূল ছবির শব্দগুলো ইংরেজিতে।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_005_img_new.jpg"/>
+</media></para>
+<para id="fs-id1170654915073">দলগুলো আলাদা করতে কমা বসাও।</para>
+<para id="fs-id1170655164902">সুতরাং, <m:math><m:mrow><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>165</m:mn><m:mo>,</m:mo><m:mn>432</m:mn><m:mo>,</m:mo><m:mn>098</m:mn><m:mo>,</m:mo><m:mn>710</m:mn></m:mrow></m:math> কথায় লেখা হয়: আট ট্রিলিয়ন, একশত পঁয়ষট্টি বিলিয়ন, চারশত বত্রিশ মিলিয়ন, আটানব্বই হাজার, সাতশত দশ।</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655190403" class="try">
+<exercise id="fs-id1170655075933">
+<problem id="fs-id1170655195315">
+<para id="fs-id1170654905813">নিচের সংখ্যাটি কথায় লেখো: <m:math><m:mrow><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>258</m:mn><m:mo>,</m:mo><m:mn>137</m:mn><m:mo>,</m:mo><m:mn>904</m:mn><m:mo>,</m:mo><m:mn>061</m:mn></m:mrow></m:math>।</para>
+</problem>
+<solution id="fs-id1170655096352">
+<para id="fs-id1170654989620">নয় ট্রিলিয়ন, দুইশত আটান্ন বিলিয়ন, একশত সাঁইত্রিশ মিলিয়ন, নয়শত চার হাজার, একষট্টি</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170654962043" class="try">
+<exercise id="fs-id1170655257962">
+<problem id="fs-id1170655157875">
+<para id="fs-id1170655162513">নিচের সংখ্যাটি কথায় লেখো: <m:math><m:mrow><m:mn>17</m:mn><m:mo>,</m:mo><m:mn>864</m:mn><m:mo>,</m:mo><m:mn>325</m:mn><m:mo>,</m:mo><m:mn>619</m:mn><m:mo>,</m:mo><m:mn>004</m:mn></m:mrow></m:math>।</para>
+</problem>
+<solution id="fs-id1170654977617">
+<para id="fs-id1170654957397">সতেরো ট্রিলিয়ন, আটশত চৌষট্টি বিলিয়ন, তিনশত পঁচিশ মিলিয়ন, ছয়শত উনিশ হাজার, চার</para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170655228607">এবার উল্টো কাজ করব: কথায় লেখা সংখ্যা থেকে অঙ্কে লিখব। প্রথমে দল বোঝায় এমন শব্দগুলো খুঁজে বের করো। দরকারি প্রতিটি দলের জন্য তিনটি ঘর এঁকে, সেই ঘরগুলোতে অঙ্ক বসালে সুবিধা হয়। দলগুলো কমা দিয়ে আলাদা করো।</para>
+<note id="fs-id1170655200529" class="howto">
+<title>শূন্যসহ স্বাভাবিক সংখ্যা অঙ্কে লেখার নিয়ম</title>
+<list id="fs-id1166426255684" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>দল বোঝায় এমন শব্দগুলো চিহ্নিত করো। মনে রেখো, একক দলের নাম লেখা থাকে না।</item>
+<item>প্রতিটি দলে দরকারি তিনটি স্থানের জন্য তিনটি খালি ঘর আঁকো। দলগুলো কমা দিয়ে আলাদা করো।</item>
+<item>প্রতিটি দলের সংখ্যা চিহ্নিত করে অঙ্কগুলো যথাযথ স্থানে বসাও।</item>
+</list>
+</note>
+<example id="fs-id1170655171204">
+<exercise id="fs-id1170655127576">
+<problem id="fs-id1170654859177">
+<para id="fs-id1170655025082">কথায় লেখা <emphasis effect="italics">নয় বিলিয়ন, দুইশত ছেচল্লিশ মিলিয়ন, তিয়াত্তর হাজার, একশত ঊননব্বই</emphasis> সংখ্যাটি অঙ্কে লেখো।</para>
+</problem>
+<solution id="fs-id1170655120857">
+<title>সমাধান</title>
+<para id="fs-id1170655190501">দল বোঝায় এমন শব্দগুলো চিহ্নিত করো।<newline/>
+বাম দিকের প্রথম দল ছাড়া প্রতিটি দলে তিনটি অঙ্কের স্থান থাকতে হবে। সেই স্থানগুলো দেখাতে তিনটি খালি ঘর আঁকো। দলগুলো কমা দিয়ে আলাদা করো।<newline/>
+তারপর প্রতিটি দলে অঙ্কগুলো বসাও।<newline/>
+<media id="fs-id1170655154739" alt="ছবির ওপরের অংশে ইংরেজিতে নয় বিলিয়ন এবং দুইশত ছেচল্লিশ মিলিয়ন লেখা; প্রতিটির শেষে কমা আছে। billion ও million শব্দের নিচে দাগ এবং প্রতিটি কথার দলের নিচে বন্ধনী আছে। নিচের অংশে তিয়াত্তর হাজার, তারপর একশত ঊননব্বই লেখা। thousand শব্দের নিচে দাগ এবং দুই দলের নিচে আলাদা বন্ধনী আছে। এই চিহ্নগুলো অঙ্কে লেখার সময় দলগুলো আলাদা করতে সাহায্য করে।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_022_img_new.jpg"/>
+</media><newline/>
+সংখ্যাটি হলো 9,246,073,189।</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170654989640" class="try">
+<exercise id="fs-id1170655166985">
+<problem id="fs-id1170655160983">
+<para id="fs-id1170655162842">দুই বিলিয়ন, চারশত ছেষট্টি মিলিয়ন, সাতশত চৌদ্দ হাজার, একান্ন সংখ্যাটি অঙ্কে লেখো।</para>
+</problem>
+<solution id="fs-id1170655025046">
+<para id="fs-id1170655160558"><m:math><m:mrow><m:mn>2,466,714,051</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655162272" class="try">
+<exercise id="fs-id1170655020844">
+<problem id="fs-id1170655025845">
+<para id="fs-id1170655155164">এগারো বিলিয়ন, নয়শত একুশ মিলিয়ন, আটশত ত্রিশ হাজার, একশত ছয় সংখ্যাটি অঙ্কে লেখো।</para>
+</problem>
+<solution id="fs-id1170654964907">
+<para id="fs-id1170654982481"><m:math><m:mrow><m:mn>11,921,830,106</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<para id="fs-id1170654928076">2013 সালে যুক্তরাষ্ট্রের আদমশুমারি সংস্থা নিউইয়র্ক অঙ্গরাজ্যের জনসংখ্যা 19,651,127 বলে অনুমান করেছিল। আমরা বলতে পারি, তখন নিউইয়র্কের জনসংখ্যা আনুমানিক 20 মিলিয়ন ছিল। অনেক ক্ষেত্রে একেবারে নির্ভুল মানের বদলে কাছাকাছি একটি মান জানলেই চলে।</para>
+<para id="fs-id1170655007229">কোনো সংখ্যাকে নির্দিষ্ট স্থানের ভিত্তিতে কাছাকাছি একটি মান দিয়ে প্রকাশ করার প্রক্রিয়াকে বলে <term class="no-emphasis" id="term-00006">আসন্ন মান নির্ণয়</term>। কতটা নির্ভুলতা দরকার, তার ওপর নির্ভর করে কোন স্থান পর্যন্ত আসন্ন মান নিতে হবে। নিউইয়র্কের জনসংখ্যা প্রায় 20 মিলিয়ন বলার অর্থ হলো মিলিয়নের স্থান পর্যন্ত আসন্ন মান নেওয়া হয়েছে।</para>
+<example id="fs-id1170655108736">
+<title>শূন্যসহ স্বাভাবিক সংখ্যার আসন্ন মান যেভাবে নির্ণয় করি</title>
+<exercise id="fs-id1170655027531">
+<problem id="fs-id1170655120684">
+<para id="fs-id1170655105094">23,658 সংখ্যাটির নিকটতম শতক পর্যন্ত আসন্ন মান নির্ণয় করো।</para>
+</problem>
+<solution id="fs-id1170655134210">
+<title>সমাধান</title>
+<media id="fs-id1170655194626" alt="চার ধাপের তিন-কলামের ছকের প্রথম সারি। বাঁয়ের কলামে ধাপের নাম, মাঝের কলামে নির্দেশ এবং ডানের কলামে সংখ্যাটি দেখানো। ধাপ 1: নির্দিষ্ট স্থানটি তীর দিয়ে চিহ্নিত করো। মূল ছবিতে বলা হয়েছে, বাঁয়ের অঙ্কগুলো বদলাবে না; তবে হাতে রাখার ক্ষেত্রে এই সাধারণ দাবির সীমাবদ্ধতা আছে, যা সংস্করণের সংশোধন নোটে বলা হয়েছে। 23,658-এর শতকের অঙ্ক 6-এর দিকে তীর এবং hundreds place অর্থাৎ শতকের স্থান লেবেল আছে।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_008a_new.jpg"/>
+</media>
+<media id="fs-id1170655028499" alt="ছকের দ্বিতীয় সারি। ধাপ 2: নির্দিষ্ট স্থানের ঠিক ডান পাশের অঙ্কটির নিচে দাগ দাও। 23,658-এ শতকের অঙ্ক 6-এর দিকে তীর আছে এবং তার ডান পাশের অঙ্ক 5-এর নিচে দাগ দেওয়া হয়েছে।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_008b_new.jpg"/>
+</media>
+<media id="fs-id1170654984954" alt="ছকের তৃতীয় সারি। ধাপ 3: ডান পাশের অঙ্কটি 5 বা তার চেয়ে বড় কি না দেখো। হলে নির্দিষ্ট স্থানের অঙ্কের সঙ্গে 1 যোগ করো, না হলে সেটি বদলাবে না। এখানে 5 থাকায় শতকের 6-এর সঙ্গে 1 যোগ করতে হবে। ছবিতে 23,658-এর 6-এর দিকে ‘add 1’ লেখা একটি তীর আছে; এই সারিতে শূন্য বসানোর বন্ধনী নেই।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_008c_new.jpg"/>
+</media>
+<media id="fs-id1170655130142" alt="ছকের চতুর্থ সারি। ধাপ 4: শতকের ডান পাশের সব অঙ্কের জায়গায় 0 বসাও। ছবিতে আগের ধাপে শতকের 6-এর সঙ্গে 1 যোগ করার পরের মধ্যবর্তী সংখ্যা 23,758 দেখানো হয়েছে। 5 ও 8-এর নিচের বন্ধনীতে তাদের জায়গায় 0 বসাতে বলা হয়েছে; শেষে 23,658-এর নিকটতম শতক পর্যন্ত আসন্ন মান 23,700 হয়।">
+<image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_008d_new.jpg"/>
+</media>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655166879" class="try">
+<exercise id="fs-id1170655207341">
+<problem id="fs-id1170655171044">
+<para id="fs-id1170655128617">নিকটতম শতক পর্যন্ত আসন্ন মান নির্ণয় করো: <m:math><m:mrow><m:mn>17,852</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654925300">
+<para id="fs-id1170655108383"><m:math><m:mrow><m:mn>17,900</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655027384" class="try">
+<exercise id="fs-id1170655221973">
+<problem id="fs-id1170655202716">
+<para id="fs-id1170655166306">নিকটতম শতক পর্যন্ত আসন্ন মান নির্ণয় করো: <m:math><m:mrow><m:mn>468,751</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170654893026">
+<para id="fs-id1170654863185"><m:math><m:mrow><m:mn>468,800</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655190444" class="howto">
+<title>শূন্যসহ স্বাভাবিক সংখ্যার আসন্ন মান নির্ণয়</title>
+<list id="fs-id1166426178564" list-type="enumerated" number-style="arabic" class="stepwise">
+<item>নির্দিষ্ট স্থানটি খুঁজে তীর দিয়ে চিহ্নিত করো। মূল নিয়মে বলা হয়েছে, তীরের বাঁয়ের অঙ্কগুলো বদলায় না; তবে পরে 1 যোগ করতে গিয়ে হাতে রাখতে হলে বাঁয়ের অঙ্ক বদলাতে পারে।</item>
+<item>নির্দিষ্ট স্থানের ঠিক ডান পাশের অঙ্কটির নিচে দাগ দাও।</item>
+<item>এই অঙ্কটি কি 5 বা তার চেয়ে বড়?
+<list id="fs-id1170654989989" list-type="bulleted" bullet-style="bullet">
+<item>হ্যাঁ হলে—নির্দিষ্ট স্থানের অঙ্কের সঙ্গে <m:math><m:mn>1</m:mn></m:math> যোগ করো।</item>
+<item>না হলে—নির্দিষ্ট স্থানের অঙ্কটি <emphasis effect="underline">অপরিবর্তিত</emphasis> রাখো।</item>
+</list></item>
+<item>নির্দিষ্ট স্থানের ডান পাশের সব অঙ্কের জায়গায় শূন্য বসাও।</item>
+</list>
+</note>
+<example id="fs-id1170655126448">
+<exercise id="fs-id1170654952916">
+<problem id="fs-id1170655166809">
+<para id="fs-id1170655151020">নিচের সংখ্যাটিকে তালিকায় দেওয়া প্রতিটি স্থান পর্যন্ত আসন্ন মানে লেখো: <m:math><m:mrow><m:mn>103,978</m:mn></m:mrow></m:math>।</para>
+<list id="fs-id1166426039326" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> শতক</item>
+<item><span class="token">ⓑ</span> হাজার</item>
+<item><span class="token">ⓒ</span> দশ হাজার</item>
+</list>
+</problem>
+<solution id="fs-id1170655106038">
+<title>সমাধান</title>
+<para id="fs-id1167835319528"><span class="token">ⓐ</span> <newline/>
+<table id="fs-id1167832055010" class="unnumbered unstyled" aria-label="বাঁয়ের কলামে নির্দেশ এবং ডানের কলামে 103,978-এর ওপর ধাপগুলো দেখানো। শতকের অঙ্ক 9 চিহ্নিত করো; তার ডান পাশের 7-এর নিচে দাগ দাও। 7 অন্তত 5 হওয়ায় 9-এর সঙ্গে 1 যোগ করতে হবে। 9+1=10 হওয়ায় শতকের ঘরে 0 বসে এবং হাজারের 3-এর সঙ্গে হাতে থাকা 1 যোগ হয়ে 4 হয়। শতকের ডান পাশের 7 ও 8-এর জায়গায় 0 বসে। ফলে নিকটতম শতক পর্যন্ত আসন্ন মান 104,000।">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row valign="top">
+<entry valign="top" align="left">103,978-এ শতকের স্থানটি চিহ্নিত করো।</entry>
+<entry valign="top" align="left"><media id="fs-id1167831970141" alt="103,978 সংখ্যাটির 9-এর দিকে তীর দেখিয়ে শতকের স্থান চিহ্নিত করা হয়েছে।"><image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_009a_img_new.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">শতকের ঠিক ডান পাশের অঙ্কটির নিচে দাগ দাও।</entry>
+<entry valign="top" align="left"><media id="fs-id1167834196335" alt="103,978-এ তীর দিয়ে শতকের অঙ্ক 9 চিহ্নিত করা হয়েছে; তার ডান পাশের অঙ্ক 7-এর নিচে দাগ দেওয়া আছে।"><image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_009b_img_new.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">7 হলো 5-এর চেয়ে বড়, তাই 9-এর সঙ্গে 1 যোগ করো। শতকের ডান পাশের অঙ্কগুলোর জায়গায় শূন্য বসাও।</entry>
+<entry valign="top" align="left"><media id="fs-id1167831823617" alt="103,978-কে নিকটতম শতক পর্যন্ত নেওয়া হচ্ছে। দশকের 7 অন্তত 5 হওয়ায় শতকের 9-এর সঙ্গে 1 যোগ করা হয়। 9+1=10: শতকের ঘরে 0 বসে, আর হাতে থাকা 1 হাজারের 3-এর সঙ্গে যোগ হয়ে 4 হয়। শেষ দুই অঙ্কের জায়গায় 0 বসিয়ে পাওয়া যায় 104,000। এটি শতক পর্যন্ত আসন্ন মানের ধাপ, হাজার পর্যন্ত ধাপ নয়।"><image mime-type="image/jpeg" src="../../media/CNX_ElemAlg_Figure_01_01_009c_img_new.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry/>
+<entry valign="top" align="left">সুতরাং, 103,978-এর নিকটতম শতক পর্যন্ত আসন্ন মান 104,000।</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167831894747"><span class="token">ⓑ</span> <newline/>
+<table id="fs-id1167834184013" class="unnumbered unstyled can-break" aria-label="103,978-এর নিকটতম হাজার পর্যন্ত আসন্ন মান নির্ণয়ের ছক। হাজারের অঙ্ক 3 চিহ্নিত করো এবং তার ডান পাশের 9-এর নিচে দাগ দাও। 9 অন্তত 5 হওয়ায় 3-এর সঙ্গে 1 যোগ করে 4 করো। হাজারের ডান পাশের 978-এর জায়গায় 000 বসাও। ফল 104,000।"><label/><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>হাজারের স্থান চিহ্নিত করো এবং তার ঠিক ডান পাশের অঙ্কটির নিচে দাগ দাও।</entry>
+    <entry><media id="fs-id1167835305151" alt="103,978-এ হাজারের অঙ্ক 3-এর দিকে তীর আছে; ডান পাশের অঙ্ক 9-এর নিচে দাগ আছে।"><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_010a_img_new.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>9 হলো 5-এর চেয়ে বড়, তাই 3-এর সঙ্গে 1 যোগ করো। হাজারের ডান পাশের সব অঙ্কের জায়গায় শূন্য বসাও।</entry>
+    <entry><media id="fs-id1167834132960" alt="103,978-এর নিকটতম হাজার পর্যন্ত আসন্ন মান: ডান পাশের 9 অন্তত 5 হওয়ায় হাজারের 3 বদলে 4 হয়। 978-এর জায়গায় 000 বসে। ফল 104,000।"><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_010b_img_new.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry/>
+    <entry>সুতরাং, 103,978-এর নিকটতম হাজার পর্যন্ত আসন্ন মান 104,000।</entry>
+  </row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167832134211"><span class="token">ⓒ</span> <newline/>
+<table id="fs-id1167832006514" class="unnumbered unstyled" aria-label="103,978-এর নিকটতম দশ হাজার পর্যন্ত আসন্ন মান নির্ণয়ের ছক। দশ হাজারের অঙ্ক 0 চিহ্নিত করো; ডান পাশের হাজারের অঙ্ক 3-এর নিচে দাগ দাও। 3 হলো 5-এর চেয়ে ছোট, তাই 0 অপরিবর্তিত থাকবে। তার ডান পাশের সব অঙ্কের জায়গায় শূন্য বসালে ফল 100,000।"><label/><tgroup cols="2">
+ <tbody>
+  <row>
+    <entry>দশ হাজারের স্থান চিহ্নিত করো এবং তার ঠিক ডান পাশের অঙ্কটির নিচে দাগ দাও।</entry>
+    <entry><m:math><m:mrow><m:mspace width="1.5em"/></m:mrow></m:math><media id="fs-id1167835287582" alt="103,978-এ দশ হাজারের অঙ্ক 0-এর দিকে হালকা নীল তীর আছে; লেবেলটি দশ হাজারের স্থান বোঝায়। ডান পাশের হাজারের অঙ্ক 3-এর নিচে দাগ আছে।"><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_011a_img_new.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>3 হলো 5-এর চেয়ে ছোট, তাই 0 অপরিবর্তিত রাখি। এরপর তার ডান পাশের সব অঙ্কের জায়গায় শূন্য বসাই।</entry>
+    <entry><m:math><m:mrow><m:mspace width="1.5em"/></m:mrow></m:math><media id="fs-id1167835283071" alt="সাদা পটভূমিতে 100,000 লেখা আছে।"><image mime-type="image/png" src="../../media/CNX_ElemAlg_Figure_01_01_011b_img_new.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry/>
+    <entry><m:math><m:mrow><m:mspace width="1.5em"/></m:mrow></m:math>সুতরাং, 103,978-এর নিকটতম দশ হাজার পর্যন্ত আসন্ন মান 100,000।</entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170655165023" class="try">
+<exercise id="fs-id1170655175048">
+<problem id="fs-id1170655154035">
+<para id="fs-id1170655154263">206,981 সংখ্যাটির নিচের স্থানগুলো পর্যন্ত আসন্ন মান নির্ণয় করো: <span class="token">ⓐ</span> শতক <span class="token">ⓑ</span> হাজার <span class="token">ⓒ</span> দশ হাজার।</para>
+</problem>
+<solution id="fs-id1170655166679">
+<para id="fs-id1170655074702"><span class="token">ⓐ</span> 207,000 <span class="token">ⓑ</span> 207,000 <span class="token">ⓒ</span> 210,000</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1170655197222" class="try">
+<exercise id="fs-id1170655083618">
+<problem id="fs-id1170655104210">
+<para id="fs-id1170655025825">784,951 সংখ্যাটির নিচের স্থানগুলো পর্যন্ত আসন্ন মান নির্ণয় করো: <span class="token">ⓐ</span> শতক <span class="token">ⓑ</span> হাজার <span class="token">ⓒ</span> দশ হাজার।</para>
+</problem>
+<solution id="fs-id1170655226376">
+<para id="fs-id1170655154551"><span class="token">ⓐ</span> 785,000 <span class="token">ⓑ</span> 785,000 <span class="token">ⓒ</span> 780,000</para>
+</solution>
+</exercise>
+</note>
+</section>

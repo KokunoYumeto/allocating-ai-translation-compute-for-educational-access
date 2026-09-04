@@ -1,0 +1,145 @@
+{
+  "admission_receipts": {
+    "checksums": "CHECKSUMS.sha256",
+    "handoff": "OWNER_HANDOFF.md",
+    "manifest": "MANIFEST.json",
+    "qa": "QA_REPORT.json",
+    "replay": "DETERMINISTIC_REPLAY.json"
+  },
+  "build": {
+    "command": "python build.py",
+    "determinism": "build.py renders the three generated artifacts twice in memory, requires identical bytes, and verifies the pinned source, collection, four media assets, and license before writing",
+    "network_required": false,
+    "verification_command": "python qa.py"
+  },
+  "canonical_source": {
+    "collection": "col31130",
+    "collection_uuid": "55931856-c627-418b-a56f-1dd0007683a8",
+    "commit": "38cae454e644abf9f0a623e876994553881597c9",
+    "repository": "https://github.com/openstax/osbooks-prealgebra-bundle",
+    "source_bytes": 22483,
+    "source_path": "source/m82630.en.cnxml",
+    "source_sha256": "d9f45fb31f4cb399c009c2be25eca1a99132b4b6882fb07f8649c2d56974f90b"
+  },
+  "core_artifacts": [
+    {
+      "bytes": 45858,
+      "path": "modules/m82630/index.cnxml",
+      "sha256": "ef636458a3a8024f132a2c51e28bbffd3282d596c51fe9b6b80d047652f9862e"
+    },
+    {
+      "bytes": 50860,
+      "path": "index.html",
+      "sha256": "616f87195fe2a7871745f1851fc8fd4483825126dbc1968bb7b9b7baa4f8021c"
+    },
+    {
+      "bytes": 53207,
+      "path": "TEXT_LEDGER.json",
+      "sha256": "a34ebdf57b2b95040e7f29c6b5556edc3c24890b8b71dcf8b5bfc341e9cfdc1f"
+    },
+    {
+      "bytes": 41879,
+      "path": "translations.json",
+      "sha256": "a849a181dbb455f01c4f3fe873ece949d3b0802206963cd5ebbc921901c8b67a"
+    }
+  ],
+  "coverage": {
+    "audio_status": "not assigned to this bounded Indian Bengali preface packet",
+    "collection_modules": 82,
+    "full_a10_status": "partial",
+    "grades_3_to_8_recovery_route_status": "not included in this preface-only packet; remains required in later coherent increments",
+    "packet_description": "All translatable prose and four media alternative descriptions in the canonical m82630 preface are present.",
+    "packet_source_status": "complete",
+    "translated_modules_in_this_continuation": 1,
+    "worked_answer_status": "not applicable: canonical m82630 contains descriptive preface prose, not authored assessment questions or worked-answer blocks"
+  },
+  "credits": {
+    "license": "CC BY-NC-SA 4.0; separate media credits and restrictions, if any, remain in force.",
+    "source": "Copyright Rice University, OpenStax, under CC BY-NC-SA 4.0 license.",
+    "source_authors_and_reviewers": "Preserved in the translated module and semantic reader.",
+    "translation_and_digital_layout": "OpenAI Codex gpt-5.6-sol, Ultra"
+  },
+  "language": "Indian Bengali",
+  "locale": "bn-Beng-IN",
+  "module": "m82630",
+  "next_module": {
+    "module": "m82451",
+    "source_bytes": 1066,
+    "source_sha256": "025f994e3c66f19462c9423788f703f7987fecb67656911d840fdd15a58d8a4a",
+    "title_en": "Introduction"
+  },
+  "package_id": "a10.bn-Beng-IN.m82630.20260904",
+  "reader": {
+    "entrypoint": "index.html",
+    "external_clickable_source_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/38cae454e644abf9f0a623e876994553881597c9/modules/m82630/index.cnxml",
+    "external_runtime_dependencies": [],
+    "local_dependencies": [
+      "reader.css",
+      "media/tryit.png",
+      "media/howtoicon.png",
+      "media/media.png",
+      "media/CNX_ElemAlg_Figure_05_01_015_img.jpg"
+    ],
+    "mode": "offline semantic HTML with responsive and print CSS"
+  },
+  "schema": "a10.continuation-packet.v1",
+  "status": "ready_for_owner_admission",
+  "title_bn": "মুখবন্ধ",
+  "title_en": "Preface",
+  "translation": {
+    "expert_review_coverage": "partial full-A10 ledger; complete for substantive choices in this m82630 packet",
+    "expert_review_ledger": "EXPERT_REVIEW_LOG.json",
+    "human_certification": "not claimed and not required for deterministic admission",
+    "preserved_identity_or_credit_slots": 27,
+    "regional_register": "West Bengal / Indian Bengali",
+    "slot_model": "non-whitespace element text and tail in canonical preorder",
+    "source_elements": 194,
+    "source_ids": 66,
+    "source_mathml_nodes": 0,
+    "source_text_slots": 146,
+    "target_elements": 194,
+    "target_ids": 66,
+    "target_mathml_nodes": 0,
+    "translated_media_alt_entries": 4,
+    "translated_text_slots": 119
+  },
+  "visual_qa": {
+    "inspection": {
+      "bytes": 1793,
+      "path": "visual/INSPECTION.json",
+      "sha256": "3af292fc82e9caebced5a2dde7c24464c0a7f5dfc8f5c1150d50533ede115179"
+    },
+    "results": {
+      "bytes": 5771,
+      "path": "visual/RESULTS.json",
+      "sha256": "e4f37676b645a2e19012379801700678a2152982df78f5475228fb5f953213d8"
+    },
+    "screenshots": [
+      {
+        "bytes": 144715,
+        "path": "visual/desktop-top.png",
+        "sha256": "4b47fc828e484215b8b7cf3d9ae52875edb4cca54c7635ecbe12a5616fbc56db"
+      },
+      {
+        "bytes": 212333,
+        "path": "visual/desktop-graph.png",
+        "sha256": "d93423dfd1798a24b2d87e437c7325074bc83ce8dbb76a0e04f0acd313510000"
+      },
+      {
+        "bytes": 57303,
+        "path": "visual/narrow-top.png",
+        "sha256": "b3c3f3df62864ba3ba7eecd5f8679ed2b61fe68a47d9d8b5b5659961d32fd3e2"
+      },
+      {
+        "bytes": 78505,
+        "path": "visual/narrow-graph.png",
+        "sha256": "b0177d6b7f87f5cd71d6a7a33a6a517c07640546eb6fb563251cd2e46f4f24a4"
+      }
+    ],
+    "status": "pass",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ]
+  }
+}

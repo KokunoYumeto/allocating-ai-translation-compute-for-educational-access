@@ -1,0 +1,125 @@
+{
+  "schema": "a10-locale-packet-qa-v1",
+  "locale": "te-Telu-IN",
+  "module": "m82630",
+  "scope_status": "complete module packet; partial full-A10 assignment",
+  "source_sha256": "d9f45fb31f4cb399c009c2be25eca1a99132b4b6882fb07f8649c2d56974f90b",
+  "translated_sha256": "e7161e8bce9732e3698c5730df1d22bd67e647925cf0100489d4a7a3311f151e",
+  "checks": {
+    "canonical_collection_modules": 82,
+    "collection_first_module": "m82630",
+    "collection_next_module": "m82451",
+    "full_source_slots_accounted": 148,
+    "translated_slots": 123,
+    "credit_retained_slots": 25,
+    "every_translated_slot_contains_Telugu": true,
+    "source_elements": 194,
+    "same_element_order_and_namespace": true,
+    "same_source_ids": 66,
+    "unique_source_ids": true,
+    "all_source_ids_in_reader": true,
+    "nonlinguistic_attributes_preserved": true,
+    "MathML_count": 0,
+    "source_exercises": 0,
+    "source_solutions": 0,
+    "source_assets_verified": 4,
+    "all_local_links_resolve": true,
+    "standalone_learning_support_links_resolve": true,
+    "local_link_references_checked": 14,
+    "external_https_link_references_checked": 3,
+    "all_4_media_alts_Telugu": true,
+    "UTF8_no_replacement_or_surrogate_characters": true,
+    "no_remote_render_dependencies": true,
+    "full_page_centered_reflow_without_fixed_content_cap": true,
+    "English_only_credit_paragraphs_have_lang_attribute": true,
+    "source_asset_credit_ledger_present": true,
+    "expert_review_schema_required_fields_present": true,
+    "all_bridge_terms_covered_by_expert_review_log": 28,
+    "expert_review_rationale_is_explicitly_backfilled": true,
+    "authored_reading_checks": 3,
+    "authored_rechecks": 3,
+    "authored_answer_crosschecks": "Compared explicitly with source eip-372 and para-00001; no invented source answer coverage."
+  },
+  "visual_QA": {
+    "status": "pass",
+    "desktop": {
+      "status": "pass",
+      "viewport": {
+        "width_css_px": 1280,
+        "height_css_px": 900,
+        "device_scale_factor": 1
+      },
+      "reader": {
+        "document_scroll_width_css_px": 1280,
+        "body_scroll_width_css_px": 1280,
+        "header_width_css_px": 1280,
+        "main_width_css_px": 1280,
+        "footer_width_css_px": 1280,
+        "visible_element_overflows": 0,
+        "image_overflows": 0
+      },
+      "learning_support": {
+        "document_scroll_width_css_px": 1280,
+        "body_scroll_width_css_px": 1280,
+        "header_width_css_px": 1280,
+        "main_width_css_px": 1280,
+        "footer_width_css_px": 1280,
+        "visible_element_overflows": 0,
+        "image_overflows": 0,
+        "expanded_details_checked": 1
+      },
+      "checks": [
+        "The reader and standalone learning-support page fill the full viewport width with balanced responsive padding.",
+        "Telugu glyph shaping, headings, body text, links, status panels and focusable details are readable without clipping.",
+        "The three-panel graph and its visible Telugu explanation remain inside the reading area without distortion.",
+        "The first learning-support answer expands cleanly and the repaired links remain visible and readable."
+      ]
+    },
+    "narrow": {
+      "status": "pass",
+      "viewport": {
+        "width_css_px": 390,
+        "height_css_px": 844,
+        "device_scale_factor": 1
+      },
+      "reader": {
+        "document_scroll_width_css_px": 390,
+        "body_scroll_width_css_px": 390,
+        "header_width_css_px": 390,
+        "main_width_css_px": 390,
+        "footer_width_css_px": 390,
+        "visible_element_overflows": 0,
+        "image_overflows": 0
+      },
+      "learning_support": {
+        "document_scroll_width_css_px": 390,
+        "body_scroll_width_css_px": 390,
+        "header_width_css_px": 390,
+        "main_width_css_px": 390,
+        "footer_width_css_px": 390,
+        "visible_element_overflows": 0,
+        "image_overflows": 0,
+        "expanded_details_checked": 1
+      },
+      "checks": [
+        "The 650px media query produces single-column navigation and terminology content.",
+        "No horizontal overflow is present on either page at 390px.",
+        "Long Telugu headings, source identifiers, English labels and links wrap without clipping.",
+        "The graph scales within the reading column and the expanded answer remains fully readable."
+      ]
+    },
+    "receipt_sha256": "234aa725b3f5680b1d63d49ea4d6c4aa5615589e897af01e5adc81a4504f402f"
+  },
+  "deterministic_replay": {
+    "status": "pass",
+    "receipt_sha256": "86c7ad2ac0e015dac06b06b52aa6acb589eaad19f2259356b640e64860646652",
+    "command": "python build.py"
+  },
+  "limitations": [
+    "No mathematical exercise or MathML appears in the source preface; this does not prove later-module math translation.",
+    "Advanced algebra overview terminology remains editorial and provisional, not regional certification.",
+    "The original English graph raster is retained, with full visible Telugu description and Telugu alt text.",
+    "No audio or PDF reader is claimed for this bounded preface packet.",
+    "Full A10 source translation and Grades 3–10 mastery workflow remain unfinished after this 1-of-82 increment."
+  ]
+}

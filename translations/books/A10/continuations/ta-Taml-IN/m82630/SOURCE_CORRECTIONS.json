@@ -1,0 +1,37 @@
+{
+  "schema": "a10.source-corrections.v1",
+  "locale": "ta-Taml-IN",
+  "packet": "m82630",
+  "corrections": [
+    {
+      "correction_id": "TA-M82630-ALT-001",
+      "source_location": "source/m82630.en.cnxml#fs-id1171782146065/@alt",
+      "target_location": "translation/m82630.ta.cnxml#fs-id1171782146065/@alt",
+      "asset": "media/CNX_ElemAlg_Figure_05_01_015_img.jpg",
+      "asset_sha256": "34fd0299880bc134f6308adcb2296ec1e145431909a1ab1cc2b507e01e3670f4",
+      "finding": "The inherited alternative states that complete explanatory sentences are printed under the graphs. Visual inspection of the exact 791 x 257 canonical JPEG proves that only three labels are printed: Intersecting, Parallel, and Coincident.",
+      "disposition": "The Tamil alternative explicitly identifies those three English labels and supplies the one/no/infinitely-many solution interpretation as description, not as quoted image text. Reader and companion explanations are separately labelled authored additions.",
+      "source_structure_changed": false,
+      "asset_bytes_changed": false,
+      "translation_attribute_changed": "alt only",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "correction_id": "TA-M82630-ALT-002",
+      "source_location": "source/m82630.en.cnxml#eip-id11714328/@alt",
+      "target_location": "translation/m82630.ta.cnxml#eip-id11714328/@alt",
+      "asset": "media/tryit.png",
+      "asset_sha256": "7f9c8c226d8b937d4070c69326d6c2ac7df37a74c85fa8cec64e2ad7bef59ebf",
+      "finding": "The inherited alternative calls the right-pointing chevron dark grey. Direct inspection of the exact 34 x 34 PNG shows a dark teal (blue-green) chevron on a white field with a pale blue border.",
+      "disposition": "The Tamil alternative describes the visible chevron as அடர் நீலப்பச்சை instead of preserving the incorrect grey colour; geometry and function remain unchanged.",
+      "source_structure_changed": false,
+      "asset_bytes_changed": false,
+      "translation_attribute_changed": "alt only",
+      "verified_on": "2026-09-04"
+    }
+  ],
+  "retained_source_anomalies": [
+    {"location": "source/m82630.en.cnxml#eip-582", "text_identity": "Prealgebra 2e", "treatment": "Retained; not silently changed to Elementary Algebra 2e."},
+    {"location": "source/m82630.en.cnxml#eip-id1169146105286", "text_identity": "John Kalliongis, Saint Louis Iniversity", "treatment": "Retained literally; no unverified identity correction."}
+  ]
+}

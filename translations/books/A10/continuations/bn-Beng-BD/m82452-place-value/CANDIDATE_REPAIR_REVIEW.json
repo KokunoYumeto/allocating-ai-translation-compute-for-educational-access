@@ -1,0 +1,56 @@
+{
+  "schema": "bn-Beng-BD.selection-candidate-repair-review.v1",
+  "candidate_path": "C:/interlanguage-task-state/elementary-algebra-recovered-20260904/locale-control/bn-Beng-BD/SELECTION_CANDIDATE.json",
+  "before": {"bytes": 48041, "sha256": "d14b721d0b314e3b42b533c72e94a5d4bef455872bbf0c168fa0dbcefd173fb1"},
+  "after": {"bytes": 47844, "sha256": "90aafdc1862d727dc18723acf902aa45d7438cac2c57b90b08b46ea27b0013a7"},
+  "scope": "Selection candidate only; no translation, admission, canonical control, source, asset, Git, network, or publication change.",
+  "removed_m82457_nodes": [
+    "fs-id1170655000684",
+    "fs-id1170655000686",
+    "fs-id1170655126635",
+    "fs-id1170655200456",
+    "fs-id1170654972409",
+    "eip-id1169754362252",
+    "eip-id1169754058803",
+    "eip-id1169754058820"
+  ],
+  "reason": "The removed exercise evaluates to -13/40 and contradicted the declared nonnegative foundational boundary. Its example/root, solution, referring transition, and no-longer-selected media descendants were removed from the candidate closure.",
+  "m82457_counts_after": {
+    "selected_whole_root_nodes": 41,
+    "xml_elements_under_selected_roots": 492,
+    "elements_with_id_under_selected_roots": 127,
+    "selected_exercises": 23,
+    "selected_problems": 23,
+    "selected_supplied_solutions": 14,
+    "selected_exercises_without_supplied_solution": 9,
+    "selected_examples": 1,
+    "selected_notes": 8,
+    "selected_media": 4,
+    "selected_images": 4,
+    "selected_internal_links": 1
+  },
+  "aggregate_counts_after": {
+    "modules_examined": 7,
+    "whole_node_xml_elements_selected_excluding_token_or_panel_fragments": 2272,
+    "whole_node_elements_with_id_selected_excluding_token_or_panel_fragments": 456,
+    "whole_exercise_nodes_selected": 53,
+    "total_selected_problem_units": 62,
+    "whole_supplied_solution_nodes_selected": 44,
+    "total_selected_supplied_answer_units": 53,
+    "selected_media_references": 51,
+    "resolved_media_files": 0
+  },
+  "media_gap_truth": "The original candidate counted 54 selected media references. Removing the rejected example closure removes three references, so the repaired candidate truthfully records 51/51 missing at the resolved source paths, 0 resolved, and 36 unresolved image/png declarations with .jpg names. No absent bytes are assigned a guessed format or hash.",
+  "validation": {
+    "json_parse": "pass",
+    "seven_source_files_bytes_and_sha256": "pass",
+    "seven_source_xml_documents_well_formed": "pass",
+    "source_integrity_counts": "pass for all seven modules",
+    "candidate_id_anchors_exist": "pass: every fs-id/eip-id/term-id cited in each module record exists in that module witness",
+    "remaining_m82457_exercise_results_nonnegative": "pass: 23 of 23",
+    "forbidden_negative_exercise_and_dependencies_absent_from_selected_closure": "pass",
+    "preexisting_place_value_selection_not_duplicated": "pass",
+    "asset_gap_counts": "pass: 51 selected references, 51 missing, 0 resolved, 36 png-declared/jpg-name"
+  },
+  "status": "candidate_repaired_and_validation_passed_not_admitted"
+}
