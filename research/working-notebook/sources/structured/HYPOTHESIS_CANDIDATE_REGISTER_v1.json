@@ -1,0 +1,2258 @@
+{
+  "schema": "educational-access-prospective-hypotheses/1.0",
+  "source_sha256": "7A2D18F9E008CA2587658BD08584D5FB94FD451FF7BF078FAFC2DA2F866F38B0",
+  "hypotheses": [
+    {
+      "id": "H01",
+      "hypothesis": "Large language communities with substantial stage-specific unmet need should repeatedly appear among high-reach candidates. Indonesian, Hindi, Bangla, Simplified Written Chinese and Urdu are strong initial expectations for investigation, not guaranteed winners.",
+      "support_or_weakening_evidence": "Compare affected learner counts and usable local provision at the same stage. High local provision or small additional benefit can weaken a particular package case; national wealth or local project completion cannot substitute for that evidence.",
+      "absence_test": "Trace the candidate through every inclusion, population, overlap and scoring step. Missing data cannot settle the comparison against it."
+    },
+    {
+      "id": "H02",
+      "hypothesis": "Where a regional language supports schooling but advanced study moves to another language, bridge-to-tertiary resources may have especially high utility.",
+      "support_or_weakening_evidence": "Need evidence for the actual transition, learners' capabilities and subject gaps. NPTEL explicitly identifies this mechanism in India. Strong advanced local resources or comfortable academic-language access would weaken the predicted benefit.",
+      "absence_test": "Compare Tamil, Telugu, Marathi, Bangla, Odia and other relevant communities; do not infer one language's provision from another."
+    },
+    {
+      "id": "H03",
+      "hypothesis": "A need mechanism found in one community should generate hypotheses for related educational systems and neighboring communities. Russian-language research or self-study gaps imply checking Ukrainian, Belarusian, Polish, Bulgarian and other relevant communities.",
+      "support_or_weakening_evidence": "Shared educational histories, academic registers or resource routes make an analogy worth testing. Conflict, displacement, different publication markets and different language policies may increase or decrease the gap. Genealogical relationship alone supplies neither an equal score nor a population estimate.",
+      "absence_test": "If Russian is present and Ukrainian absent, investigate source coverage, population definitions and implementation before interpreting the result. Repeat this test globally."
+    },
+    {
+      "id": "H04",
+      "hypothesis": "Large national or census language categories may conceal distinct communities with different access needs.",
+      "support_or_weakening_evidence": "Compare the category definition with exact mother-tongue rows, scripts, schooling and bilingualism. Examples include Hindi-group varieties and Bengali categories containing Sylheti and Chatgaya. Shared classification is not measured comprehension.",
+      "absence_test": "Retain the group observation and its possible constituent populations. Resolve overlap or use bounds; never silently discard a constituent or credit it with the whole group."
+    },
+    {
+      "id": "H05",
+      "hypothesis": "Educational-resource shortages differ by stage. A language can have extensive school resources and substantial postgraduate or research gaps.",
+      "support_or_weakening_evidence": "Compare curriculum coverage and source availability separately for school, vocational, university and research use. Japanese, Chinese, Russian, English, French and other established academic languages remain candidates for specific missing materials.",
+      "absence_test": "Investigate the proposed advanced package, rather than excluding the entire language as already served."
+    },
+    {
+      "id": "H06",
+      "hypothesis": "A modest number of well-designed interlanguage editions could sometimes serve more learners per compute than separate editions. The advantage may be greater in formula-rich mathematics for readers with adequate prerequisites.",
+      "support_or_weakening_evidence": "Compare exact reader communities, scripts, mathematical background, prose burden, semantic-error patterns and standardized production cost. Evaluate definitions, negation and proof dependencies as well as formulas. Existing literature, source analysis and model/mechanical tests can support provisional scenarios without waiting for new participants.",
+      "absence_test": "Investigate bridge design and domain fit. Missing a comprehension estimate is not evidence of zero reach; family population is not evidence of full reach."
+    },
+    {
+      "id": "H07",
+      "hypothesis": "Availability of some translated resources will often leave important curriculum and delivery gaps.",
+      "support_or_weakening_evidence": "Compare actual subjects, prerequisite sequences, exercises, answers, offline availability, accessibility and licensing. One catalogue is not a census of all provision; a listed file is not measured learner access.",
+      "absence_test": "Ask what is missing and what would add value, rather than treating either a catalogue entry or its absence as a final need estimate."
+    },
+    {
+      "id": "H08",
+      "hypothesis": "Signed-language and accessibility interventions can create substantial access that written-language counts miss.",
+      "support_or_weakening_evidence": "Use sign-language-specific populations and educational evidence, not total deafness counts. Compare text, signed explanation, captions, MathML, audio and tactile routes by endpoint.",
+      "absence_test": "An entirely spoken/written result set requires an explicit modality audit. A missing written tokenizer is not a reason to remove signed learners."
+    },
+    {
+      "id": "H09",
+      "hypothesis": "Offline, phone-usable, exercise-rich resources can benefit motivated learners without teachers, while classroom resources can help a different or overlapping audience.",
+      "support_or_weakening_evidence": "Estimate autonomous study, classroom use and research/reference use separately. Test file size, navigation, prerequisite support, answers and device requirements. Do not assume every person owns a smartphone or that a download guarantees learning.",
+      "absence_test": "Investigate independent-learning routes whenever a model implicitly requires teachers or continuous internet."
+    },
+    {
+      "id": "H10",
+      "hypothesis": "Conflict, displacement, statelessness and cross-border language use can change both need and delivery routes without changing the language's registry homeland.",
+      "support_or_weakening_evidence": "Use dated displacement and education evidence, separate current location from language identity and avoid double-counting people across countries.",
+      "absence_test": "Census-country absence triggers a route search, not exclusion. Ukraine is one test; other displaced communities require the same treatment."
+    },
+    {
+      "id": "H11",
+      "hypothesis": "The best source packages may differ materially across communities: foundational learning, science, computing, statistics, finance, management and advanced research may each dominate somewhere.",
+      "support_or_weakening_evidence": "Link package recommendations to local educational or practical needs and independent existing provision. OpenStax and Open Logic provide comparison baselines, not an exclusive subject universe.",
+      "absence_test": "A uniform proposal to translate the same book everywhere requires justification."
+    },
+    {
+      "id": "H12",
+      "hypothesis": "Raw population, tokenization and missingness can each dominate a numerical model for the wrong reason.",
+      "support_or_weakening_evidence": "Run factor-removal, source-removal, cost-standardization, common-prior sensitivity and counterfactual missing-data tests. Keep gross, cached and fresh tokens distinct.",
+      "absence_test": "Investigate any ranking that is nearly a population table or that drops a community after evidence is removed."
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "hypothesis-candidate:001",
+      "candidate_label": "Indonesian",
+      "profile_scope": "Latin; Indonesia; L1 and additional-language users separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H07",
+        "H09"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:002",
+      "candidate_label": "Hindi",
+      "profile_scope": "Devanagari; exact Hindi versus census-group mother tongues",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H02",
+        "H04"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:003",
+      "candidate_label": "Bangla",
+      "profile_scope": "Bengali script; Bangladesh and India separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H02",
+        "H04"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:004",
+      "candidate_label": "Standard Written Chinese, Simplified",
+      "profile_scope": "Mainland written-literacy profiles; not all Chinese varieties or all residents",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H05",
+        "H07"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:005",
+      "candidate_label": "Urdu",
+      "profile_scope": "Perso-Arabic/Nastaliq; Pakistan and Indian communities separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H02",
+        "H09"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:006",
+      "candidate_label": "Telugu",
+      "profile_scope": "Telugu script; regional school-to-tertiary routes",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H02",
+        "H07"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:007",
+      "candidate_label": "Tamil",
+      "profile_scope": "Tamil script; India and Sri Lanka separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H02",
+        "H10"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:008",
+      "candidate_label": "Marathi",
+      "profile_scope": "Devanagari; Maharashtra learning routes",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H02",
+        "H07"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:009",
+      "candidate_label": "Vietnamese",
+      "profile_scope": "Vietnamese Latin orthography",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H05",
+        "H11"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:010",
+      "candidate_label": "Hausa",
+      "profile_scope": "Latin first profile; Ajami separately; Nigeria and Niger separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H09",
+        "H10"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:011",
+      "candidate_label": "Standard Kiswahili",
+      "profile_scope": "Latin; national standards and L1/L2 learning routes separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H02",
+        "H10"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:012",
+      "candidate_label": "Modern Standard Arabic",
+      "profile_scope": "Learned written register; country, schooling and vernacular profiles separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H04",
+        "H06"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:013",
+      "candidate_label": "Brazilian Portuguese",
+      "profile_scope": "Brazil; independent provision and disadvantaged learners",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H07",
+        "H09"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:014",
+      "candidate_label": "Spanish, Latin American educational profiles",
+      "profile_scope": "Country-specific terminology and underserved routes, not a continent-wide count",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H07",
+        "H11"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:015",
+      "candidate_label": "English, underserved learner profiles",
+      "profile_scope": "Territory and capability cells; targeted open/offline/accessible gaps",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H05",
+        "H08",
+        "H09"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:016",
+      "candidate_label": "French, underserved learner profiles",
+      "profile_scope": "African and other contexts separately; French ability cannot cover all residents",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H05",
+        "H10"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:017",
+      "candidate_label": "Turkish",
+      "profile_scope": "Latin; Türkiye and diaspora separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H05",
+        "H10"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:018",
+      "candidate_label": "Iranian Persian",
+      "profile_scope": "Perso-Arabic; distinguish Dari and Tajik",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H05",
+        "H06"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:019",
+      "candidate_label": "Thai",
+      "profile_scope": "Thai script; standard versus other Thai-area languages",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H04",
+        "H05"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:020",
+      "candidate_label": "Burmese",
+      "profile_scope": "Myanmar script; distinguish other Myanmar languages",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H04",
+        "H10"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:021",
+      "candidate_label": "Filipino",
+      "profile_scope": "Latin standard; Tagalog and other Philippine language access separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H02",
+        "H04"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:022",
+      "candidate_label": "Standard Malay, Malaysia",
+      "profile_scope": "Latin profile; Jawi and other regional standards separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H01",
+        "H05",
+        "H06"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:023",
+      "candidate_label": "Gujarati",
+      "profile_scope": "Gujarati script",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H07",
+        "H11"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:024",
+      "candidate_label": "Kannada",
+      "profile_scope": "Kannada script",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H07",
+        "H11"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:025",
+      "candidate_label": "Odia",
+      "profile_scope": "Odia script; standard versus census-group scope",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H07"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:026",
+      "candidate_label": "Malayalam",
+      "profile_scope": "Malayalam script",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H05",
+        "H07"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:027",
+      "candidate_label": "Eastern Punjabi",
+      "profile_scope": "Gurmukhi; do not substitute Western Punjabi/Shahmukhi counts",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H10"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:028",
+      "candidate_label": "Russian",
+      "profile_scope": "Cyrillic; resident and cross-border academic users separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H05",
+        "H10"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:029",
+      "candidate_label": "Japanese",
+      "profile_scope": "Japanese writing; targeted subject and advanced-source gaps",
+      "stages_to_investigate": [
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H05",
+        "H07",
+        "H12"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:030",
+      "candidate_label": "Korean, South Korean standard",
+      "profile_scope": "Hangul; North Korean and diaspora profiles separately",
+      "stages_to_investigate": [
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H05",
+        "H07",
+        "H10"
+      ],
+      "expectation_group": "A. Broad-reach and major educational-language candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:031",
+      "candidate_label": "Amharic",
+      "profile_scope": "Ethiopic; do not substitute Ethiopia's total population",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:032",
+      "candidate_label": "West-Central Oromo educational profile",
+      "profile_scope": "Latin; other Oromo varieties separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:033",
+      "candidate_label": "Somali",
+      "profile_scope": "Latin standard; regional and displaced learners separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H09",
+        "H10",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:034",
+      "candidate_label": "Yoruba",
+      "profile_scope": "Standard Latin with full marks; national and diaspora routes separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H09",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:035",
+      "candidate_label": "Igbo",
+      "profile_scope": "Standard Latin with tone/orthographic choices specified",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H09",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:036",
+      "candidate_label": "Kinyarwanda",
+      "profile_scope": "Latin; independent local supply audit",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H07",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:037",
+      "candidate_label": "Kirundi",
+      "profile_scope": "Latin; do not copy Kinyarwanda provision or reach",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H03",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:038",
+      "candidate_label": "Lingala",
+      "profile_scope": "School/written and urban spoken registers separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:039",
+      "candidate_label": "Central Kanuri",
+      "profile_scope": "Latin and Ajami routes separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H09",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:040",
+      "candidate_label": "Wolof",
+      "profile_scope": "Latin first profile; Wolofal and Garay separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H08",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:041",
+      "candidate_label": "Bambara",
+      "profile_scope": "Latin and N'Ko routes separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H06",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:042",
+      "candidate_label": "Pulaar",
+      "profile_scope": "Latin and Adlam profiles; Senegal/Mauritania and other contexts separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:043",
+      "candidate_label": "Nigerian Fulfulde",
+      "profile_scope": "Exact regional profile; no whole-Fulani population assignment",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:044",
+      "candidate_label": "Zulu",
+      "profile_scope": "Latin; school and higher-education transition",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H07",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:045",
+      "candidate_label": "Northern Sotho / Sepedi standard",
+      "profile_scope": "Latin; census and standard identity boundaries retained",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:046",
+      "candidate_label": "Haitian Creole",
+      "profile_scope": "Standard Haitian orthography; Haiti and displaced communities separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H09",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:047",
+      "candidate_label": "Nepali",
+      "profile_scope": "Devanagari; native and additional-language profiles separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:048",
+      "candidate_label": "Sinhala",
+      "profile_scope": "Sinhala script; specific Sri Lankan educational routes",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H05",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:049",
+      "candidate_label": "Northern Pashto",
+      "profile_scope": "Perso-Arabic; Afghanistan/Pakistan and Southern Pashto separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H09",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:050",
+      "candidate_label": "Dari",
+      "profile_scope": "Perso-Arabic; Afghanistan and displaced learners separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H06",
+        "H09",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:051",
+      "candidate_label": "Sindhi, Pakistan standard",
+      "profile_scope": "Perso-Arabic; Indian/Devanagari profiles separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:052",
+      "candidate_label": "Saraiki",
+      "profile_scope": "Perso-Arabic; no automatic Urdu or Punjabi coverage",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H09"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:053",
+      "candidate_label": "Bhojpuri",
+      "profile_scope": "Devanagari profile; Indian and Nepalese populations separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H09"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:054",
+      "candidate_label": "Maithili",
+      "profile_scope": "Devanagari profile; Tirhuta and territory distinctions retained",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:055",
+      "candidate_label": "Chhattisgarhi",
+      "profile_scope": "Devanagari; distinguish Hindi census grouping from comprehension",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H09"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:056",
+      "candidate_label": "Haryanvi",
+      "profile_scope": "Devanagari; actual Hindi overlap to estimate",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H12"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:057",
+      "candidate_label": "Santali",
+      "profile_scope": "Ol Chiki first profile; other script-literacy routes separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H09"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:058",
+      "candidate_label": "Sylheti",
+      "profile_scope": "Bengali-script and Sylheti-Nagri profiles separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:059",
+      "candidate_label": "Chittagonian",
+      "profile_scope": "Spoken and written-register design separately; no automatic Bangla coverage",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:060",
+      "candidate_label": "Javanese",
+      "profile_scope": "Latin first profile; registers and Indonesian overlap separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H04",
+        "H12"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:061",
+      "candidate_label": "Sundanese",
+      "profile_scope": "Latin first profile; Indigenous-script route separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H04",
+        "H12"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:062",
+      "candidate_label": "Cebuano",
+      "profile_scope": "Latin; Filipino/English proficiency measured separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:063",
+      "candidate_label": "Central Khmer",
+      "profile_scope": "Khmer script; Cambodia and other communities separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H09",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:064",
+      "candidate_label": "Lao",
+      "profile_scope": "Lao script; no automatic Thai coverage",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H06",
+        "H11"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:065",
+      "candidate_label": "Northern Uzbek / Uzbekistan standard",
+      "profile_scope": "Latin and Cyrillic profiles; Southern Uzbek separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H06",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:066",
+      "candidate_label": "Kazakh",
+      "profile_scope": "Cyrillic first profile; actual script cohorts separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H06",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:067",
+      "candidate_label": "Tajik",
+      "profile_scope": "Cyrillic; do not assign Persian/Dari literacy automatically",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H06",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:068",
+      "candidate_label": "Uyghur",
+      "profile_scope": "Perso-Arabic first profile; diaspora script routes separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:069",
+      "candidate_label": "Central Kurdish / Sorani",
+      "profile_scope": "Perso-Arabic; country and educational systems separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H09",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:070",
+      "candidate_label": "Northern Kurdish / Kurmanji",
+      "profile_scope": "Latin first profile; other scripts and regional varieties separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H09",
+        "H10"
+      ],
+      "expectation_group": "B. Regional and language-transition candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:071",
+      "candidate_label": "Ukrainian",
+      "profile_scope": "Cyrillic; residents and displaced learners separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H05",
+        "H10"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:072",
+      "candidate_label": "Polish",
+      "profile_scope": "Latin; advanced gaps and refugee-learning routes separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H05",
+        "H10"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:073",
+      "candidate_label": "Romanian",
+      "profile_scope": "Latin; Moldova and Romania separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H05",
+        "H07"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:074",
+      "candidate_label": "Bulgarian",
+      "profile_scope": "Cyrillic; no Russian or Interslavic coverage assumption",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H05",
+        "H06"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:075",
+      "candidate_label": "Belarusian",
+      "profile_scope": "Cyrillic first profile; actual preferred/usable educational language",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H05",
+        "H10"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:076",
+      "candidate_label": "Serbian standard",
+      "profile_scope": "Cyrillic and Latin; other BCMS standards separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H05",
+        "H06"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:077",
+      "candidate_label": "Tigrinya",
+      "profile_scope": "Ethiopic; Ethiopia, Eritrea and displaced learners separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H09",
+        "H10"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:078",
+      "candidate_label": "Kabyle",
+      "profile_scope": "Latin first profile; Arabic/French overlap separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:079",
+      "candidate_label": "Central Atlas Tamazight",
+      "profile_scope": "Exact variety; Tifinagh/Latin routes and Moroccan standard separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:080",
+      "candidate_label": "Tachelhit",
+      "profile_scope": "Exact variety; Tifinagh/Latin/Arabic literacy separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:081",
+      "candidate_label": "Ayacucho Quechua",
+      "profile_scope": "Specified regional educational orthography",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H09",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:082",
+      "candidate_label": "Cusco Quechua",
+      "profile_scope": "Specified regional educational orthography; not all Quechua",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H06",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:083",
+      "candidate_label": "Paraguayan Guarani",
+      "profile_scope": "Standard orthography; bilingual and predominantly Guarani profiles",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:084",
+      "candidate_label": "Central Nahuatl",
+      "profile_scope": "Exact variety and local orthographic route; not all Nahuatl",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H09",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:085",
+      "candidate_label": "K'iche'",
+      "profile_scope": "Standard plus regional comprehension profiles",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H09",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:086",
+      "candidate_label": "Tok Pisin",
+      "profile_scope": "Standard written register; L1/L2 and schooling routes separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:087",
+      "candidate_label": "Bislama",
+      "profile_scope": "Standard written register; not all Vanuatu language users",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H04",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:088",
+      "candidate_label": "Kalaallisut / West Greenlandic",
+      "profile_scope": "Greenlandic standard; other Inuit languages separately",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H05",
+        "H11"
+      ],
+      "expectation_group": "C. Comparators, research access and regional-depth candidates",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:089",
+      "candidate_label": "American Sign Language",
+      "profile_scope": "US and other actual communities separately; not universal signing",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H08",
+        "H09",
+        "H11"
+      ],
+      "expectation_group": "D. Signed-language hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:090",
+      "candidate_label": "Brazilian Sign Language / Libras",
+      "profile_scope": "Regional signing variation and educational stages",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H08",
+        "H09",
+        "H11"
+      ],
+      "expectation_group": "D. Signed-language hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:091",
+      "candidate_label": "Indian Sign Language",
+      "profile_scope": "Regional variation and actual sign-user population; no national deafness substitution",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H11"
+      ],
+      "expectation_group": "D. Signed-language hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:092",
+      "candidate_label": "Kenyan Sign Language",
+      "profile_scope": "Actual Kenyan signing communities, not Kiswahili coverage",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H11"
+      ],
+      "expectation_group": "D. Signed-language hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:093",
+      "candidate_label": "South African Sign Language",
+      "profile_scope": "Regional variation; English/Zulu written access separately",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H08",
+        "H11"
+      ],
+      "expectation_group": "D. Signed-language hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:094",
+      "candidate_label": "Interslavic mathematical register",
+      "profile_scope": "Parallel Latin/Cyrillic; East/West/South Slavic reader profiles separately",
+      "stages_to_investigate": [
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H06",
+        "H12"
+      ],
+      "expectation_group": "E. Shared-register and interlanguage hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:095",
+      "candidate_label": "Hindi-Urdu shared mathematical register",
+      "profile_scope": "Devanagari/Nastaliq; register and literacy-specific reach",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H02",
+        "H06",
+        "H12"
+      ],
+      "expectation_group": "E. Shared-register and interlanguage hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:096",
+      "candidate_label": "Malay-Indonesian shared technical profile",
+      "profile_scope": "Exact national terminology choices; no wholesale Austronesian coverage",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H06",
+        "H12"
+      ],
+      "expectation_group": "E. Shared-register and interlanguage hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:097",
+      "candidate_label": "Persian-Dari-Tajik shared technical profile",
+      "profile_scope": "Perso-Arabic/Cyrillic; lexical and schooling differences explicit",
+      "stages_to_investigate": [
+        "S",
+        "V",
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H06",
+        "H12"
+      ],
+      "expectation_group": "E. Shared-register and interlanguage hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:098",
+      "candidate_label": "Oghuz-focused Inter-Turkic design hypothesis",
+      "profile_scope": "Turkish/Azerbaijani/Turkmen profiles; not all Turkic languages",
+      "stages_to_investigate": [
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H03",
+        "H06",
+        "H12"
+      ],
+      "expectation_group": "E. Shared-register and interlanguage hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:099",
+      "candidate_label": "N'Ko literary Manding educational profile",
+      "profile_scope": "Exact Manding communities and N'Ko literacy; no family-wide reader count",
+      "stages_to_investigate": [
+        "F",
+        "S",
+        "V",
+        "U"
+      ],
+      "hypothesis_ids": [
+        "H04",
+        "H06",
+        "H08"
+      ],
+      "expectation_group": "E. Shared-register and interlanguage hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    },
+    {
+      "candidate_id": "hypothesis-candidate:100",
+      "candidate_label": "Romance mathematical intercomprehension profile",
+      "profile_scope": "Exact Portuguese/Spanish/French/Italian/Romanian routes; natural-text and constructed alternatives compared",
+      "stages_to_investigate": [
+        "U",
+        "R"
+      ],
+      "hypothesis_ids": [
+        "H05",
+        "H06",
+        "H12"
+      ],
+      "expectation_group": "E. Shared-register and interlanguage hypotheses",
+      "status": "PROSPECTIVE_EXPECTATION_NOT_A_RANK",
+      "population_estimate": null,
+      "need_estimate": null,
+      "funding_rank": null,
+      "source_document": "HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md"
+    }
+  ],
+  "interpretation": "Research expectations only. The 100-candidate shortlist is not a sampling frame, measured rank, or exclusion of other communities."
+}
