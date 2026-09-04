@@ -2,7 +2,7 @@
 
 **WORK IN PROGRESS - NON-EXHAUSTIVE - NOT THE FINAL PRODUCT**
 
-Snapshot: 2026-09-04; version 0.1.0.
+Living notebook updated: 2026-09-04. Dated PDF/Zenodo snapshot: version 0.1.0.
 
 This is an ongoing research notebook about where AI-assisted educational translation and adaptation could create useful access. It is not the final study, an exhaustive list of needs, or a completed funding-priority ranking.
 
@@ -28,7 +28,7 @@ Dated Zenodo working snapshot: [10.5281/zenodo.22307432](https://doi.org/10.5281
 - [Dated working PDF](research/working-notebook/00_Living_Research_Notebook_WORK_IN_PROGRESS_v0.1.pdf)
 - [Frozen hypotheses and 100-candidate forecast](research/working-notebook/sources/HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md)
 - [How hypotheses are tested](research/working-notebook/sources/HYPOTHESIS_TEST_PLAN_v1.md)
-- [Current research coverage](research/working-notebook/sources/EXPECTED_CANDIDATE_COVERAGE_v1.md)
+- [Current research coverage](research/updates/2026-09-04-regional/EXPECTED_CANDIDATE_COVERAGE_v1.md)
 - [Wider retained language register](research/working-notebook/sources/structured/UNIVERSAL_LANGUAGE_INCLUSION_REGISTER_v1.csv)
 - [Snapshot manifest](research/working-notebook/SNAPSHOT_MANIFEST.json)
 - [Dated changes](research/working-notebook/CHANGELOG.md)
