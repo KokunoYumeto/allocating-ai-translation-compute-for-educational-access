@@ -1,0 +1,57 @@
+{
+  "schema": "a10.synthetic-audio.v1",
+  "locale": "jv-Latn-ID",
+  "scope": "m82453/fs-id1170654942537",
+  "generated_date": "2026-09-04",
+  "status": "actual synthetic Javanese audio supplied for both Javanese tracks",
+  "human_recording": false,
+  "human_pronunciation_certification": false,
+  "disclaimer": "These files are synthetic Javanese speech, not human recordings. Pronunciation and dialect suitability remain provisional; neither Indonesian nor English audio was used as a fallback.",
+  "synthesis": {
+    "client": "edge-tts 7.2.3",
+    "catalog_check": "live catalog returned both requested voices with Locale jv-ID",
+    "service_regeneration_byte_stability": "not claimed; admitted normalized bytes are pinned by SHA-256",
+    "normalizer": "ffmpeg version 8.1.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "output_profile": "MP3, mono, 24000 Hz, nominal 64 kbit/s, metadata stripped"
+  },
+  "tracks": {
+    "jv-academic": {
+      "file": "audio/jv-academic.mp3",
+      "sha256": "d385c099cff28243252db4900172b88e3e3ed10898cc3b549eff4b93d23db591",
+      "bytes": 7506836,
+      "codec": "mp3",
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "bit_rate_bps": 64000,
+      "duration_seconds": 938.352,
+      "voice": "jv-ID-DimasNeural",
+      "voice_locale": "jv-ID",
+      "voice_gender": "Male",
+      "rate": "-8%",
+      "volume": "+0%",
+      "pitch": "+0Hz",
+      "narration_ssml_sha256": "5e63b24248a39319848def67daba465db8ffc0b7cff7a76697b796568b96fa5f",
+      "spoken_text_sha256": "ddb7265e71701f8c621ee0f579278ecef46210ad329a9cef0de76cdf8a528eff",
+      "normalization_replay": "two independent ffmpeg normalizations of the captured service stream were byte-identical"
+    },
+    "jv-conversation": {
+      "file": "audio/jv-conversation.mp3",
+      "sha256": "027ddddcb4bfa472674152383bb92f676e8eec218345e63f5b2f2cc09e202f33",
+      "bytes": 7020116,
+      "codec": "mp3",
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "bit_rate_bps": 64000,
+      "duration_seconds": 877.512,
+      "voice": "jv-ID-SitiNeural",
+      "voice_locale": "jv-ID",
+      "voice_gender": "Female",
+      "rate": "-3%",
+      "volume": "+0%",
+      "pitch": "+0Hz",
+      "narration_ssml_sha256": "904ed84bcbc70edeb24897893a457803b0af05636ae337bead2aecf1ae0d551f",
+      "spoken_text_sha256": "bc870fdf0a4af8a9a2c216f999a224684cdf366cfe3943e24aa0b0cf1bb5066a",
+      "normalization_replay": "two independent ffmpeg normalizations of the captured service stream were byte-identical"
+    }
+  }
+}

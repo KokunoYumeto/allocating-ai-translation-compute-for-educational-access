@@ -1,0 +1,63 @@
+:root {
+  font: 18px/1.65 Georgia, 'Times New Roman', serif;
+  color: #192f39;
+  background: #fff;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main {
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem clamp(1rem, 4vw, 4.5rem) 4rem;
+  background: #fff;
+}
+h1, h2, h3, nav, .eyebrow, summary { font-family: system-ui, sans-serif; line-height: 1.35; }
+h1 { font-size: 2.1rem; margin: .6rem 0; }
+h2 { font-size: 1.65rem; margin: 2rem 0 1rem; }
+h3 { font-size: 1.12rem; }
+a { color: #075c80; text-underline-offset: .15em; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #d69619; outline-offset: 4px; }
+nav { font-size: .87rem; padding-bottom: 1rem; border-bottom: 1px solid #afc4ca; }
+.eyebrow { color: #376777; font-size: .77rem; text-transform: uppercase; letter-spacing: .09em; }
+.scope { color: #43535a; }
+.para { margin: .9rem 0; }
+.note { background: #edf6f4; border-left: 4px solid #237b71; padding: .7rem 1rem; margin: 1.2rem 0; }
+.example { border: 1px solid #adbec4; border-radius: .5rem; padding: 1rem; margin: 2rem 0; }
+.solution { background: #f3f5f8; padding: .8rem; margin-top: .8rem; }
+summary { cursor: pointer; color: #1a5772; }
+table { border-collapse: collapse; min-width: 100%; font-size: .94rem; }
+th, td { border: 1px solid #aebdc4; padding: .6rem; vertical-align: top; }
+th { background: #e9eff2; }
+.table-scroll, .math-scroll { max-width: 100%; overflow-x: auto; }
+.math-scroll { display: inline-block; vertical-align: middle; }
+math { font-size: 1.08em; }
+figure { margin: 1.5rem 0; }
+img { display: block; max-width: 100%; height: auto; margin: auto; }
+figcaption { font-size: .85rem; color: #45545b; margin-top: .5rem; }
+figure details { font-size: .92rem; }
+.source-link { font: .8rem/1.4 system-ui, sans-serif; }
+.equation { padding: .4rem 0; }
+.os-number { font-family: system-ui, sans-serif; font-weight: 600; }
+audio { display: block; width: min(100%, 44rem); margin: 1rem 0; }
+footer { margin-top: 3rem; border-top: 1px solid #b6c3c5; padding-top: 1rem; font-size: .85rem; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.card { border: 1px solid #bdcace; border-radius: .4rem; padding: 1rem; }
+.card h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
+code { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  :root { font-size: 17px; }
+  main { padding: 1rem; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.35rem; }
+  .example { padding: .6rem; }
+  .cards { grid-template-columns: 1fr; }
+}
+@media print {
+  main { width: 100%; }
+  nav, .source-link, audio { display: none; }
+  details { display: block; }
+  .example { break-inside: avoid; }
+  a { color: inherit; }
+  body { background: white; }
+}

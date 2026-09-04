@@ -1,0 +1,148 @@
+{
+  "schema": "a10.expert-review-log.v1",
+  "locale": "jv-Latn-ID",
+  "coverage_status": "partial",
+  "review_status": "provisional_without_human_expert",
+  "entries": [
+    {
+      "decision_id": "m82453-operand-order-more-less",
+      "source_location": "source/en.cnxml#fs-id1170654942537",
+      "target_location": "translation/jv-academic.cnxml; translation/jv-conversation.cnxml; translation/id-academic.cnxml",
+      "source_sense": "In b more than a and b less than a, b is added to or subtracted from a; these are operations rather than inequality claims.",
+      "chosen_wording": "ditambahaké marang / ditambahké menyang; dikurangaké saka / dijupuk saka; Indonesian ditambahkan pada / dikurangkan dari",
+      "authorities_checked": [
+        "Frozen English wording and MathML in source/en.cnxml",
+        "Worked expressions and supplied solutions in source/en.cnxml",
+        "Pinned Indonesian comparison in source/id-pivot.cnxml"
+      ],
+      "rationale": "The displayed expressions fix the operand order. Operational wording is unambiguous and avoids turning an instruction into a comparison.",
+      "alternatives": ["luwih akèh tinimbang", "luwih sithik tinimbang"],
+      "uncertainty": "Naturalness has not been reviewed by a Javanese-speaking mathematics expert.",
+      "provisional": true,
+      "review_question": "Would a Javanese mathematics editor prefer other unambiguous operational forms while preserving a+b and a−b?",
+      "rationale_timing": "contemporaneous"
+    },
+    {
+      "decision_id": "m82453-operation-nouns",
+      "source_location": "source/en.cnxml#eip-57",
+      "target_location": "translation/jv-academic.cnxml#eip-57; translation/jv-conversation.cnxml#eip-57",
+      "source_sense": "Names and phrase patterns for addition, subtraction, multiplication, and division.",
+      "chosen_wording": "panambahan, pangurangan, ping-pingan, paran; gunggung, salisih, asil ping-pingan, asil paran, pambagi",
+      "authorities_checked": [
+        "English operation table and preserved MathML in source/en.cnxml#eip-57",
+        "Indonesian operation table in source/id-pivot.cnxml#eip-57"
+      ],
+      "rationale": "The terms are used consistently with each symbol and worked expression throughout the bounded section.",
+      "alternatives": ["perkalian as an Indonesian loan", "pembagian as an Indonesian loan"],
+      "uncertainty": "No external Javanese mathematical terminology corpus was established in this packet.",
+      "provisional": true,
+      "review_question": "Are these the preferred contemporary Javanese classroom terms for all intended regions?",
+      "rationale_timing": "retrospective_reconstruction"
+    },
+    {
+      "decision_id": "m82453-register-split",
+      "source_location": "source/en.cnxml#fs-id1170654942537",
+      "target_location": "translation/jv-academic.cnxml; translation/jv-conversation.cnxml",
+      "source_sense": "A complete instructional section needs both an academic-neutral and a conversational/ngoko route without changing mathematics.",
+      "chosen_wording": "Academic: impersonal explanation, digatekaké/digunakaké, ekspresi aljabar, explicit operand language. Conversational: direct delengen/nganggoa/jupuken/owahana, shorter clauses, wujud aljabar.",
+      "authorities_checked": [
+        "Parallel slot ledger provenance/TRANSLATION-SLOTS.json",
+        "Identical source IDs and MathML across both target CNXML trees"
+      ],
+      "rationale": "The routes now differ systematically in address, syntax, and explanatory density while remaining structurally and mathematically identical.",
+      "alternatives": ["one duplicated register with label-only differences"],
+      "uncertainty": "The labels describe editorial intent and are not sociolinguistic certification.",
+      "provisional": true,
+      "review_question": "Are any forms in either route socially mismatched for the intended readers?",
+      "rationale_timing": "contemporaneous"
+    },
+    {
+      "decision_id": "m82453-rectangle",
+      "source_location": "source/en.cnxml#eip-72",
+      "target_location": "translation/jv-academic.cnxml#eip-72; translation/jv-conversation.cnxml#eip-72",
+      "source_sense": "Rectangle width equals length minus six, represented by l−6.",
+      "chosen_wording": "pasagi dawa; ambané yaiku dawané dikurangi 6",
+      "authorities_checked": [
+        "Visible canonical table cells in source/en.cnxml#eip-72",
+        "Canonical MathML l−6",
+        "Pinned Indonesian table in source/id-pivot.cnxml#eip-72"
+      ],
+      "rationale": "The target follows the visible problem and formula and explicitly corrects the inconsistent canonical accessibility summary.",
+      "alternatives": ["preserve the erroneous width/w−6 summary"],
+      "uncertainty": "The Javanese geometry noun has not been independently field-reviewed.",
+      "provisional": true,
+      "review_question": "Is pasagi dawa the clearest school-register term for rectangle in the intended variety?",
+      "rationale_timing": "contemporaneous"
+    },
+    {
+      "decision_id": "m82453-us-coins",
+      "source_location": "source/en.cnxml#fs-id1170655300446",
+      "target_location": "translation/jv-academic.cnxml#fs-id1170655300446; translation/jv-conversation.cnxml#fs-id1170655300446",
+      "source_sense": "US dime, quarter, and nickel names are needed for word problems about counts, not currency conversion.",
+      "chosen_wording": "koin AS sepuluh sen sing diarani dime; koin 25 sen sing diarani quarter; koin lima sen sing diarani nickel",
+      "authorities_checked": [
+        "Canonical named coin problems and equations in source/en.cnxml",
+        "Pinned Indonesian comparison in source/id-pivot.cnxml"
+      ],
+      "rationale": "Adding denominations explains unfamiliar source nouns while preserving the original names used by variables and questions.",
+      "alternatives": ["unexplained dime/quarter/nickel loanwords"],
+      "uncertainty": "No claim is made that these coins are familiar in the target locale.",
+      "provisional": true,
+      "review_question": "Would a classroom note benefit from a separate cultural-context gloss?",
+      "rationale_timing": "contemporaneous"
+    },
+    {
+      "decision_id": "m82453-figure-descriptions",
+      "source_location": "assets/canonical/CNX_ElemAlg_Figure_01_02_015_img_new.jpg; assets/canonical/CNX_ElemAlg_Figure_01_02_018_img_new.jpg",
+      "target_location": "media alt attributes in all three target CNXML trees",
+      "source_sense": "Descriptions must match unchanged figure pixels and the mathematics they display.",
+      "chosen_wording": "Figure 015 names the full red sequence of a and; figure 018 names divisor 7 rather than source-alt v7.",
+      "authorities_checked": [
+        "Direct pixel inspection of all three canonical JPEGs",
+        "Canonical MathML and surrounding prose in source/en.cnxml"
+      ],
+      "rationale": "Pixel truth takes precedence over defective source alt wording; canonical image bytes remain unchanged.",
+      "alternatives": ["copy defective source alt verbatim"],
+      "uncertainty": "Descriptions have not been tested with screen-reader users.",
+      "provisional": true,
+      "review_question": "Do the localized descriptions provide sufficient detail without unnecessary repetition?",
+      "rationale_timing": "contemporaneous"
+    },
+    {
+      "decision_id": "m82453-indonesian-bridge",
+      "source_location": "source/id-pivot.cnxml",
+      "target_location": "translation/id-academic.cnxml",
+      "source_sense": "The pinned v1.0.2 Indonesian subtree is a comparison bridge, with bounded corrections where mathematical or accessibility evidence requires them.",
+      "chosen_wording": "Retain the pivot structure and unrevised prose; apply 67 source-slot revisions recorded in provenance/TRANSLATION-SLOTS.json.",
+      "authorities_checked": [
+        "Pinned v1.0.2 source ZIP and member hashes in source/PIVOT.json",
+        "Frozen English subtree and canonical figure pixels",
+        "Target MathML and ID equivalence checks"
+      ],
+      "rationale": "This preserves source relationship while preventing known operand-order ambiguity and accessibility defects from surviving in the bridge.",
+      "alternatives": ["silently substitute a later Indonesian edition", "rewrite all pivot slots"],
+      "uncertainty": "This bridge is not evidence for Javanese usage and is not a full audit of the Indonesian release.",
+      "provisional": true,
+      "review_question": "Do any bounded Indonesian revisions need upstream reconciliation in a future edition?",
+      "rationale_timing": "contemporaneous"
+    },
+    {
+      "decision_id": "m82453-narration-pronunciation",
+      "source_location": "translation/jv-academic.cnxml; translation/jv-conversation.cnxml",
+      "target_location": "narration/jv-academic.ssml; narration/jv-conversation.ssml; audio/",
+      "source_sense": "Formulas, tables, figures, and supplied answers require source-positioned spoken equivalents.",
+      "chosen_wording": "Explicitly speak variables, powers, fractions, implied multiplication, operand order, tables, figures, and source-supplied answers with jv-ID voices only.",
+      "authorities_checked": [
+        "Target CNXML and MathML structure",
+        "SSML mark order bound to direct source children",
+        "Voice locale metadata and audio hashes when generated"
+      ],
+      "rationale": "Narration is generated from the same target tree and must never fall back to Indonesian or English audio.",
+      "alternatives": ["Indonesian fallback voice", "unlabelled synthetic audio"],
+      "uncertainty": "Synthetic pronunciation and intelligibility have not been human assessed.",
+      "provisional": true,
+      "review_question": "Which mathematical tokens need phoneme-level adjustment after future native-speaker listening?",
+      "rationale_timing": "contemporaneous"
+    }
+  ]
+}
