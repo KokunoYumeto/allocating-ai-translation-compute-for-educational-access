@@ -1,0 +1,640 @@
+% Chapter 5, Topic _Linear Algebra_ Jim Hefferon
+%  https://hefferon.net/linearalgebra
+%  2021-Jul-28
+\topic{Inner Product}
+\index{Inner Product|(}
+% Smash the depth, not the height; for use in radicals
+\def\smashdp#1{{\setbox0=\hbox{$#1$}\dp0=0pt \box0\relax}}
+
+The first chapter covers the dot product operation. 
+It inputs a pair of vectors from some $\R^n$ and outputs a scalar.
+\begin{equation*}
+  \colvec{-1 \\ 2 \\ 3}\dotprod\colvec{1 \\ 0 \\ 3}
+  =-1\cdot 1+2\cdot 0+3\cdot 3
+  =8
+\end{equation*}
+In that chapter we did not yet have the term `linear', but
+this operation respects both addition
+\begin{equation*}
+ (\vec{v}_1+\vec{v}_2)\dotprod\vec{w}=\vec{v}_1\dotprod\vec{w}
+                                      +\vec{v}_2\dotprod\vec{w}
+\qquad
+ \vec{v}\dotprod(\vec{w}_1+\vec{w}_2)=\vec{v}\dotprod\vec{w}_1
+                                      +\vec{v}\dotprod\vec{w}_2
+\end{equation*}
+and scalar multiplication.
+\begin{equation*}
+ (r\vec{v})\dotprod\vec{w}=r(\vec{v}\dotprod\vec{w})
+  \qquad
+ \vec{v}\dotprod(r\vec{w})=r(\vec{v}\dotprod\vec{w})
+\end{equation*}
+
+One interesting thing about the dot product operation
+is that it describes the geometry of
+$\Re^n\!$. 
+Examples are that two vectors are perpendicular if and only if their
+dot product is zero, and that the length of a vector is determined by  
+$\vec{v}\dotprod\vec{v}=\absval{\vec{v}\,}^2$.
+Here we will extend this operation, and with it lengths, 
+to other vector spaces.
+We will use the traditional mathematical notation for the extension, 
+which is not a dot but instead is
+$\innerprod{\vec{v}}{\vec{w}}$.
+
+To motivate the definition, 
+we need more on complex numbers than we reviewed in this 
+chapter's opening section.
+There, we described~$\C$ as 
+the collection of $z=a+bi$ where $a$ and~$b$ are real numbers,
+and where $i^2=-1$. 
+We also covered addition, scalar multiplication,
+subtraction, and multiplication, as well as length.
+As for division,  consider $z=(1+2i)/(3+4i)$.
+The difference of squares formula
+gives $(a+bi)(a-bi)=a^2-(bi)^2=a^2-(-b^2)=a^2+b^2$,
+which is a real number.
+So, 
+multiplying $z$'s numerator and denominator by $3-4i$
+gives an $a+bi$ expression.
+\begin{equation*}
+  z=\frac{1+2i}{3+4i}\cdot\frac{3-4i}{3-4i}
+  =
+  \frac{(1\cdot 3+2\cdot 4)+(1\cdot (-4)+2\cdot 3)i}{3^2+4^2}
+  =
+  \frac{11+2i}{25}
+  =
+  \frac{11}{25}+\frac{2}{25}\,i
+\end{equation*}
+With that computation in mind, we
+define the \definend{conjugate} of a complex number~$z$
+to be $\compconj{z}=\compconj{a+bi}=a-bi$, so that $z\compconj{z}=\absval{z}^2$.
+Dividing that equation by $\absval{z}^2$ gives $z\compconj{z}/\absval{z}^2=1$
+and so  
+every nonzero complex number has a multiplicative inverse,
+$z^{-1}\!=\compconj{z}/\absval{z}^2$.
+% (and thus $\absval{z}=1$ if and only if $z^{-1}=\compconj{z}$).
+Observe that a complex number is a real number if and only if 
+it equals its conjugate, 
+that $\compconj{z_1+z_2}=\compconj{z_1}+\compconj{z_2}$,
+and that $\compconj{z_1\cdot z_2}=\compconj{z_1}\cdot\compconj{z_2}$.
+Plotting $z=a+bi$ on the 
+complex plane\index{complex plane} 
+illustrates the conjugate.
+\begin{center}
+  \includegraphics{jc/asy/innerproduct000.pdf}
+\end{center}
+This picture makes clear that 
+$z+\compconj{z}=(a+bi)+(a-bi)$ equals
+$2\cdot a$, which we write as $2\cdot\RE{z}$.
+(Read `$\RE{z}$' aloud as ``the real part of $z$.'')
+% It also shows the \definend{argument}, $\arg(z)$, the angle that
+% $z$ makes with the real axis.
+
+We are ready to generalize the dot product and length operations. 
+Dot product and length are familiar in spaces that are collections of real column vectors but we have seen many examples of 
+vector spaces far removed from those, such as 
+the spaces of polynomials, $\polyspace_n$. 
+In such a space it is not obvious
+what would be a useful or natural definition of length.
+For some insight into what to do,
+consider the complex vector spaces~$\C^n$.
+
+With dot product in real spaces in mind, 
+the natural first guess here is to try 
+$\innerprod{\vec{v}}{\vec{w}}$
+as the linear combination of the components, so that in the~$\C^2$
+case
+\begin{equation*}
+  \vec{v}=\colvec{a_{1,1}+b_{1,1}i \\ a_{2,1}+b_{2,1}i}
+  \qquad
+  \vec{w}=\colvec{a_{1,2}+b_{1,2}i \\ a_{2,2}+b_{2,2}i}
+\end{equation*}
+the guess for $\innerprod{\vec{v}}{\vec{w}}$ is 
+$(a_{1,1}+b_{1,1}i)\cdot(a_{1,2}+b_{1,2}i)+(a_{2,1}+b_{2,1}i)\cdot(a_{2,2}+b_{2,2}i)$.
+But this won't do.
+We are investigating lengths,
+so we want that $\innerprod{\vec{v}}{\vec{v}}=\absval{\vec{v}\,}^2\!$,
+and thus we don't want that $\innerprod{\vec{v}}{\vec{v}}$ equals
+$(a_1+b_1i)(a_1+b_1i)+(a_2+b_2i)(a_2+b_2i)$.
+Instead we want something like
+$(a_1+b_1i)(a_1-b_1i)+(a_2+b_2i)(a_2-b_2i)$.
+Consequently, we adopt this definition for $\C^2\!$.
+\begin{equation*}
+  \innerprod{\vec{v}}{\vec{w}}
+  =(a_{1,1}+b_{1,1}i)\cdot(a_{1,2}-b_{1,2}i)\,+\,(a_{2,1}+b_{2,1}i)\cdot(a_{2,2}-b_{2,2}i)
+\end{equation*}
+The 
+\definend{Hermitian inner product} 
+is:\index{inner product!Hermitian}\index{Hermitian inner product}
+where vectors $\vec{v},\vec{w}\in\C^n$ 
+have components $v_0$, \ldots~$v_n$ and $w_0$, \ldots~$w_n$, then
+$\innerprod{\vec{v}}{\vec{w}}=v_1\compconj{w}_1+\cdots+v_n\compconj{w}_n$.
+Notice that this extends the dot product in the sense that
+if we fall back to reals, taking the $b$'s be zero, then
+it equals $\vec{v}\dotprod\vec{w}$.
+
+This operation inputs two vectors but outputs a scalar.
+Here is an example.
+\begin{align*}
+  \innerprod{\colvec{1+2i \\ 3+4i}}{\colvec{5+6i \\ 7+8i}}
+  &=(1+2i)(5-6i)+(3+4i)(7-8i)                     \\[-2ex]
+  &=(17+4i)+(53+4i)=70+8i
+\end{align*}
+
+Hermitian inner product is linear in the first input:~checking that
+$\innerprod{\vec{v}_1+\vec{v}_2}{\vec{w}}
+ = \innerprod{\vec{v}_1}{\vec{w}}
+   +\innerprod{\vec{v}_2}{\vec{w}}$
+and that
+$\innerprod{z\cdot\vec{v}}{\vec{w}}
+     =z\cdot\innerprod{\vec{v}}{\vec{w}}$
+is straightforward.
+But it is not linear in the second because
+while
+$\innerprod{\vec{v}}{\vec{w}_1+\vec{w}_2}
+ = \innerprod{\vec{v}}{\vec{w}_1}
+   +\innerprod{\vec{v}}{\vec{w}_2}$
+holds, for scalar multiplication a conjugation appears:
+$\innerprod{\vec{v}}{z\cdot\vec{w}}
+     =\compconj{z}\cdot\innerprod{\vec{v}}{\vec{w}}$.
+Of course, this difference is here because 
+in the definition the second input is conjugated
+while the first is not.
+Another result of this asymmetry is that 
+$\innerprod{\vec{w}}{\vec{v}}\neq \innerprod{\vec{v}}{\vec{w}}$; rather,
+$\innerprod{\vec{w}}{\vec{v}}=\compconj{\innerprod{\vec{v}}{\vec{w}}}$.
+
+Hermitian inner product is one way, in a particular set of vector spaces, 
+to extend dot product.
+There are lots of others, in lots of spaces.
+But we want our extensions to lead to a reasonable notion of length.
+For that,
+an \definend{inner product} is an operation
+that inputs two vectors from a real or complex vector space 
+and outputs a scalar, and that
+satisfies three conditions.
+Condition~(1) is that it is linear in the first input, so
+$\innerprod{\vec{v}_1+\vec{v}_2}{\vec{w}}
+ = \innerprod{\vec{v}_1}{\vec{w}}
+   +\innerprod{\vec{v}_2}{\vec{w}}$
+and $\innerprod{z\vec{v}}{\vec{w}}
+     =z\innerprod{\vec{v}}{\vec{w}}$.
+% (Some presentations take inner product 
+% to be linear in the second input; more on this
+% at the end of this Topic.)
+Condition~(2) is that
+$\innerprod{\vec{w}}{\vec{v}}=\compconj{\innerprod{\vec{v}}{\vec{w}}}$.
+Observe that as a consequence, 
+$\innerprod{\vec{v}}{\vec{v}}$ equals its conjugate and
+so is a real number.
+Condition~(3) says about that real number that
+$\innerprod{\vec{v}}{\vec{v}}\geq 0$ for all $\vec{v}$, with 
+$\innerprod{\vec{v}}{\vec{v}}= 0$ if and only if $\vec{v}=\zero$.
+
+A vector space along with an inner product operation is an
+\definend{inner product space}.
+(In the prior paragraph we used the $\innerprod{\vec{v}}{\vec{w}}$ notation 
+for any inner product at all, while earlier we used it for the specific case of
+the Hermetian inner product.
+This duplication won't cause confusion because in an inner product space there
+is exactly one such operation, so there will never be several to tell apart.)
+
+Each real vector space $\R^n$ along with dot product is an inner product space. 
+Hermitian inner product makes any complex vector space~$\C^n$ into 
+an inner product space.
+The verification of each is in the exercises.
+
+An example which looks quite different 
+is the real vector space whose members are
+real valued functions that are continuous on the 
+closed interval $\closedinterval{0}{1}$.
+Let the inner product be this.
+\begin{equation*}
+  \innerprod{f}{g}=\int_{0}^1 f(t)\cdot g(t)\,dt
+\end{equation*}
+This satisfies the inner product definition
+condition~(1) because  
+$\int_{0}^1 (f_1(t)+f_2(t))\cdot g(t)\,dt$ equals 
+$\int_{0}^1 f_1(t)g(t)\,dt+\int_{0}^1 f_2(t)g(t)\,dt$
+by a result from elementary Calculus,
+and a similar result holds for scalar multiplication. 
+It satisfies~(2) because for real numbers conjugation has no effect,
+and $f(t)g(t)$ equals $g(t)f(t)$. 
+For condition~(3), if~$f$ is not the zero function then 
+the square $f(t)\cdot f(t)$ is greater than~$0$ for some 
+$\hat{t}\in \closedinterval{0}{1}$.
+By continuity then, the square is greater than zero for a subinterval
+around~$\hat{t}$,
+and so the area under the curve is greater than~$0$.
+
+We next generalize the length operation.
+We shall consider an operation to be a reasonable extension of length
+if it inputs vectors and outputs real numbers and if it satisfies
+three conditions; any such operation
+we shall call a \definend{norm},\index{norm} and denote~$\norm{\vec{v}}$. 
+The first condition is that $\norm{\vec{v}}\geq 0$, 
+and that $\norm{\vec{v}}= 0$ if and only if $\vec{v}=\zero$.
+The second is that rescaling a vector will rescale 
+its norm, specifically that 
+$\norm{z\cdot \vec{v}}=\absval{z}\cdot\norm{\vec{v}}$.
+The third condition is 
+the Triangle Inequality,\index{Triangle Inequality} 
+that $\norm{\vec{v}+\vec{w}}\leq\norm{\vec{v}}+\norm{\vec{w}}$.
+
+A familiar example of a norm in the vector space~$\R^n$ is the ordinary
+Euclidean length, $\norm{\vec{v}}=\sqrt{\smashdp{v_1^2+\cdots+v_n^2}}$.
+
+Another example is on the real vector space of matrices
+$\matspace_{\nbym{n}{m}}$.
+Let the norm of a matrix, $\norm{M}$, be the largest absolute value 
+over all of the entries.  
+Condition~(1) is clear, as is condition~(2).
+Condition~(3) is the ordinary Triangle Inequality for reals,
+$\absval{a+b}\leq\absval{a}+\absval{b}$.
+
+% Still another example of a norm operation 
+% is on the vector space of continuous real-valued functions 
+% on the closed interval $\closedinterval{0}{1}$.  
+% \begin{equation*}
+%   \norm{f}
+%   =\int_{x=0}^1 \absval{f(x)}\,dx
+%   \tag{$*$}
+% \end{equation*}
+% Verifying the three conditions in the definition is an exercise.
+
+In the motivation of the definition of inner product, we said that we 
+want our extension of dot product to yield a reasonable notion of
+length.
+We now have the definitions that we need to make that precise.
+Let 
+$\norm{\vec{v}}=\sqrt{\smashdp{\innerprod{\vec{v}}{\vec{v}}}}$.
+We will show that this satisfies the 
+three conditions in the definition of a norm.
+We covered the first condition 
+in the discussion of inner product.
+To verify the second, 
+$\norm{z\cdot\vec{v}}
+=\sqrt{\smashdp{\innerprod{z\vec{v}}{z\vec{v}}}}
+=\sqrt{\smashdp{z\compconj{z}\cdot\innerprod{\vec{v}}{\vec{v}}}}
+=\sqrt{z\compconj{z}}\cdot\sqrt{\smashdp{\innerprod{\vec{v}}{\vec{v}}}}
+=\absval{z}\cdot\sqrt{\smashdp{\innerprod{\vec{v}}{\vec{v}}}}$.
+
+For the third condition we will again, as in the first
+chapter, relate it to the Cauchy-Schwartz Inequality,\index{Cauchy-Schwartz Inequality}
+$\absval{\innerprod{\vec{v}}{\vec{w}}}\leq \norm{\vec{v}}\cdot\norm{\vec{w}}$.
+The proof of the inequality here is an extension of, 
+but more involved than, the proof in the first chapter. 
+Consider the difference $\vec{v}-z\cdot\vec{w}$ as $z\in\C$ varies.
+This vector's norm is a nonnegative real,
+$0\leq \norm{\vec{v}-z\cdot\vec{w}}^2
+   =\innerprod{\vec{v}-z\vec{w}}{\vec{v}-z\vec{w}}$.
+Linearity gives
+$\innerprod{\vec{v}}{\vec{v}-z\vec{w}}
+  -z\cdot\innerprod{\vec{w}}{\vec{v}-z\vec{w}}$
+and then
+$\innerprod{\vec{v}}{\vec{v}}
+  -\compconj{z}\cdot\innerprod{\vec{v}}{\vec{w}}
+  -z\cdot\innerprod{\vec{w}}{\vec{v}}
+  +z\compconj{z}\cdot\innerprod{\vec{w}}{\vec{w}}$.
+We have this for all $z\in\C$.
+\begin{equation*}
+ 0
+  \leq\innerprod{\vec{v}}{\vec{v}}
+  -\compconj{z}\cdot\innerprod{\vec{v}}{\vec{w}}
+  -z\cdot\compconj{\innerprod{\vec{v}}{\vec{w}}}
+  +z\compconj{z}\cdot\innerprod{\vec{w}}{\vec{w}}
+\end{equation*}
+
+Take 
+$z=\innerprod{\vec{v}}{\vec{w}}/\innerprod{\vec{w}}{\vec{w}}$
+(if $\vec{w}=\zero$ then the Cauchy-Schwartz Inequality is trivial, so we
+ignore this case).
+Its denominator is a real number so
+$\compconj{z}=\compconj{\innerprod{\vec{v}}{\vec{w}}}/\innerprod{\vec{w}}{\vec{w}}$,
+and thus plugging it into the second term gives 
+$\compconj{\innerprod{\vec{v}}{\vec{w}}}\innerprod{\vec{v}}{\vec{w}}/\innerprod{\vec{w}}{\vec{w}}$.
+Plugging into the third term gives the same,
+as does plugging into the last term.
+Combining the three like terms gives this.
+\begin{equation*}
+ 0
+  \leq\innerprod{\vec{v}}{\vec{v}}
+  -\frac{\innerprod{\vec{v}}{\vec{w}}\compconj{\innerprod{\vec{v}}{\vec{w}}}}{\innerprod{\vec{w}}{\vec{w}}}
+  =\norm{\vec{v}}^2
+  -\frac{\absval{\innerprod{\vec{v}}{\vec{w}}}^2}{\norm{\vec{w}}^2}
+\end{equation*}
+Rearranging and clearing the denominator gives the desired 
+inequality.
+
+With that, we can prove the Triangle Inequality.
+Again, this extends the argument in the first chapter.
+\begin{align*}
+  \norm{\vec{v}+\vec{w}}^2
+  =\innerprod{\vec{v}+\vec{w}}{\vec{v}+\vec{w}}  
+  &=\innerprod{\vec{v}}{\vec{v}}
+    +\innerprod{\vec{v}}{\vec{w}}  
+    +\innerprod{\vec{w}}{\vec{v}}  
+    +\innerprod{\vec{w}}{\vec{w}}   \\ 
+  &=\norm{\vec{v}}^2
+    +\innerprod{\vec{v}}{\vec{w}}  
+    +\compconj{\innerprod{\vec{v}}{\vec{w}}}  
+    +\norm{\vec{w}}^2              \\   
+  &=\norm{\vec{v}}^2
+    +2\cdot\RE{\innerprod{\vec{v}}{\vec{w}}}  
+    +\norm{\vec{w}}^2      \\
+  &\leq\norm{\vec{v}}^2
+    +2\absval{\innerprod{\vec{v}}{\vec{w}}}  
+    +\norm{\vec{w}}^2     \\
+% \end{align*}
+\intertext{Apply Cauchy-Schwartz.}
+  &\leq\norm{\vec{v}}^2
+    +2\cdot\norm{\vec{v}}\cdot\norm{\vec{w}}
+    +\norm{\vec{w}}^2      
+  =(\norm{\vec{v}}+\norm{\vec{w}})^2         
+\end{align*}
+Taking the square root of both sides gives the result.
+
+We pause to see one more connection between inner products, norm, and geometry.
+Here is the familiar parallelogram diagram for the sum of two vectors,
+where besides $\vec{v}+\vec{w}$ we also show $\vec{v}-\vec{w}$. 
+\begin{center}
+  \includegraphics{jc/asy/innerproduct001.pdf}
+\end{center}
+We will prove the 
+\definend{parallelogram identity},\index{parallelogram identity}
+$\absval{\vec{v}+\vec{w}}^2+\absval{\vec{v}-\vec{w}}^2=2\absval{\vec{v}}^2+2\absval{\vec{w}}^2$
+(This has the nice statement that in a parallelogram the sum of the squares 
+of the diagonals equals the sum of the squares of the sides.)
+Although the drawing above shows the plane, where we usually use dot product 
+notation and write length as $\absval{\vec{v}\,}$, 
+here we will use the notation for inner product and norm.
+
+As above, expand
+$
+  \norm{\vec{v}+\vec{w}}^2=\innerprod{\vec{v}+\vec{w}}{\vec{v}+\vec{w}}
+$
+by using additivity of the first input and then the second. 
+\begin{align*}
+  \norm{\vec{v}+\vec{w}}^2
+  &=\innerprod{\vec{v}+\vec{w}}{\vec{v}+\vec{w}}           \\
+   % &=\innerprod{\vec{v}}{\vec{v}+\vec{w}}+\innerprod{\vec{w}}{\vec{v}+\vec{w}} \\
+  &=\innerprod{\vec{v}}{\vec{v}}            
+   +\innerprod{\vec{v}}{\vec{w}}
+   +\innerprod{\vec{w}}{\vec{v}}
+   +\innerprod{\vec{w}}{\vec{w}}
+  =\norm{\vec{v}}^2            
+   +\innerprod{\vec{v}}{\vec{w}}
+   +\innerprod{\vec{w}}{\vec{v}}
+   +\norm{\vec{w}}^2
+\end{align*}
+The same expansion for $\innerprod{\vec{v}-\vec{w}}{\vec{v}-\vec{w}}$
+gives this.
+\begin{equation*}
+  \norm{\vec{v}-\vec{w}}^2
+  =\innerprod{\vec{v}-\vec{w}}{\vec{v}-\vec{w}}
+  =\norm{\vec{v}}^2
+   -\innerprod{\vec{v}}{\vec{w}}
+   -\innerprod{\vec{w}}{\vec{v}}
+   +\norm{\vec{w}}^2
+\end{equation*}
+Adding the two gives the desired result. 
+
+Now, with the inner product and norm operations, 
+even in spaces where there is no obvious geometry
+we can interpret geometric ideas. 
+An example is that can generalize distance to a
+\definend{metric}\index{metric} 
+operation
+$d(\vec{v},\vec{w})=\norm{\vec{v}-\vec{w}}$.
+Another example is that we can say that
+vectors $\vec{v}$ and~$\vec{w}$ are orthogonal when 
+$\innerprod{\vec{v}}{\vec{w}}=0$,
+and we can extend the Gram-Schmidt process
+to any finite dimensional inner product space.
+
+A technical comment:~we have defined a norm operation from the inner product, 
+as $\norm{\vec{v}}=\sqrt{\smashdp{\innerprod{\vec{v}}{\vec{v}}}}$,
+and then derived the parallelogram identity.
+Also true is that if a norm satisfies this identity then it
+arises from an inner product, as 
+$\innerprod{\vec{v}}{\vec{w}}
+  =(1/2)\cdot(\norm{\vec{v}+\vec{w}}^2-\norm{\vec{v}}^2-\norm{\vec{w}}^2)$.
+However, the proof is beyond our scope.
+
+A norm does not arise from an inner product can happen;
+we saw one above.
+On the real vector space $\matspace_{\nbyn{2}}$, let the
+norm of a matrix $\norm{M}$ be the largest absolute value of any entry.
+Consider these matrices.
+\begin{equation*}
+  M_1=
+  \begin{mat}
+  1  &2 \\
+  3  &4  
+  \end{mat}
+  \qquad
+  M_2=
+  \begin{mat}
+  8  &7  \\
+  6  &5
+  \end{mat}
+\end{equation*}
+Obviously, $\norm{M_1}=4$ and~$\norm{M_2}=8$.
+Also easy to check are that $\norm{M_1+M_2}=9$
+and $\norm{M_1-M_2}=7$.
+Thus $\norm{M_1+M_2}^2+\norm{M_1-M_2}^2=130$, 
+while $2(\norm{M_1}^2+\norm{M_2}^2)=160$,
+and they are unequal.
+
+We close with a remark about our definition of inner product.
+Some authors, particularly in physics, define the inner product 
+so that it is linear in the second argument instead of the first. 
+Where we write $\innerprod{\vec{v}}{\vec{w}}$, 
+these authors write $\langle y\, |\, x\rangle$. 
+This is the
+\definend{bra-ket notation}\index{bra-ket notation}\index{inner product!compared with bra-ket} 
+that is standard in quantum mechanics.
+
+\begin{exercises}
+\item 
+Verify that $\R^n$ along with dot product is an inner product space.
+\begin{answer}
+The opening paragraph of this Topic notes that dot product is linear
+in both inputs, and so the first condition is satisfied.
+Condition~(2) concerns conjugation, 
+which has no effect on reals, and 
+so this condition is trivially satisfied. 
+Condition~(3) requires that the length (the ordinary Euclidean length
+in $n$-dimensional real space) be zero if and only if the vector is~$\zero$.
+If the vector has components $v_1$, \ldots~$v_n$ then
+$v_1^2+\cdots v_n^2=0$ if and only if all the components are zero.
+\end{answer}
+
+\item
+Show that Hermitian inner product on the two-dimensional vector space~$\C^2$ 
+satisfies the three conditions in the definition of inner product. 
+\begin{answer}
+The development in the Topic body proves~(1) and~(2).
+For~(3), suppose that 
+two members  $\vec{v},\vec{w}$ of~$\C^n$
+have $i$-th components $v_i$ and $w_i$, so that
+$\innerprod{\vec{v}}{\vec{w}}=v_1\compconj{w}_1+\cdots+v_n\compconj{w}_n$.
+Then $\innerprod{\vec{v}}{\vec{v}}=v_1\compconj{v}_1+\cdots+v_n\compconj{v}_n$
+equals $\absval{\vec{v}_1}^2+\cdots \absval{\vec{v}_n}^2$, 
+which clearly equals~$0$ if and only if each component is~$0$.
+\end{answer}
+
+\item Show that this operation is an inner product on the 
+real vector space $\matspace_{\nbyn{2}}$.
+\begin{equation*}
+  \innerprod{
+    \begin{mat}
+    a  &b  \\
+    c  &d
+    \end{mat}
+    }{
+      \begin{mat}
+       e  &f  \\
+       g  &h
+      \end{mat}
+    }
+    =
+    ae+bf+cg+dh
+\end{equation*}
+\begin{answer}
+Condition~(1), linearity in the first argument, is easy.
+\begin{multline*}
+  \innerprod{
+    \begin{mat}
+    a_1  &b_1  \\
+    c_1  &d_1
+    \end{mat}
+    +
+    \begin{mat}
+    a_2  &b_2  \\
+    c_2  &d_2
+    \end{mat}
+    }{
+      \begin{mat}
+       e  &f  \\
+       g  &h
+      \end{mat}
+    }                                                  \\
+  \begin{split}
+    &=(a_1+a_2)e+(b_1+b_2)f+(c_1+c_2)g+(d_1+d_2)h   \\
+    &=(a_1e+b_1f+c_1g+d_1h)+(a_2e+b_2f+c_2g+d_2h)   \\
+    &=
+  \innerprod{
+    \begin{mat}
+    a_1  &b_1  \\
+    c_1  &d_1
+    \end{mat}
+    }{
+      \begin{mat}
+       e  &f  \\
+       g  &h
+      \end{mat}
+    }
+  +
+  \innerprod{
+    \begin{mat}
+    a_2  &b_2  \\
+    c_2  &d_2
+    \end{mat}
+    }{
+      \begin{mat}
+       e  &f  \\
+       g  &h
+      \end{mat}
+    }
+  \end{split}
+\end{multline*}
+Scalar multiplication is just as routine.
+Condition~(2) concerns conjugation, 
+which has no effect on reals and 
+so this condition is trivially satisfied. 
+For~(3), of course $a^2+b^2+c^2+d^2\geq 0$, with equality if and only
+if each entry is zero.
+\end{answer}
+%
+\item Consider the real vector space of quadratic polynomials~$\polyspace_2$.
+Show that this is an inner product operation:
+$\innerprod{a_2x^2+a_1x+a_0}{b_2x^2+b_1x+b_0}=a_2b_2+a_1b_1+a_0b_0$. 
+Consider the resulting norm.
+What is $\norm{x^2-1}$?
+\begin{answer}
+Condition~(1) is that it is linear in the first input.
+Verifying that this operation respects addition is routine
+\begin{multline*}
+  \innerprod{(a_2x^2+a_1x+a_0)+(c_2x^2+c_1x+c_0)}{b_2x^2+b_1x+b_0}  \\
+  \begin{split}
+    &=(a_2+c_2)b_2+(a_1+c_1)b_1+(a_0+c_0)b_0             \\
+    &=(a_2b_2+a_1b_1+a_0b_0)+(c_2b_2+c_1b_1+c_0b_0)             \\
+    &=\innerprod{(a_2x^2+a_1x+a_0)}{b_2x^2+b_1x+b_0}      \\
+      &\qquad+\innerprod{(c_2x^2+c_1x+c_0)}{b_2x^2+b_1x+b_0}
+  \end{split}
+\end{multline*}
+as is verifying that it respects scalar multiplication.
+Because this is a real vector space, and conjugation has no effect on
+real number scalars, it satisfies condition~(2).
+For condition~(3), let $\vec{v}=a_2x^2+a_1x+a_0$.
+Then $\innerprod{\vec{v}}{\vec{v}}=a_2^2+a_1^2+a_0^2$ is clearly non-negative,
+and is equal to~$0$ if and only if $\vec{v}$ is the zero polynomial.
+
+As to the norm of $x^2-1$, we have this.
+\begin{equation*} 
+ \norm{x^2-1}=\sqrt{\innerprod{x^2-1}{x^2-1}}=\sqrt{1^2+0^2+(-1)^2}=\sqrt{2}
+\end{equation*}
+\end{answer}
+
+\item Verify that the set of real valued functions that are continuous on the 
+closed interval $\closedinterval{0}{1}$ is a vector space.
+\begin{answer}
+The ten conditions in the definition of a vector space
+are consequences of results from Calculus.
+For example, the first condition is closure under addition and we
+have that the sum of two continuous functions is a continuous function 
+in Calculus.
+(Although, often a student does not see a completely precise proof 
+until a later class.)
+Similarly, addition of two functions is commutative.
+Of course, the zero vector is the function $f(x)=0$, which is continuous.
+\end{answer}
+
+%
+\item
+Show that an attempted definition of $\innerprod{\vec{v}}{\vec{w}}$
+on $\C^n$ that is linear in both inputs
+loses that $\innerprod{\vec{v}}{\vec{v}}$ gives the length.
+\begin{answer}
+Suppose that
+$\innerprod{\vec{v}}{\vec{v}}$ is greater than or equal to~$0$ for all
+complex vectors~$\vec{v}$.
+Then linearity in both inputs gives
+$0\leq \innerprod{i\vec{v}}{i\vec{v}}
+  =i\innerprod{\vec{v}}{i\vec{v}}
+  =i^2\innerprod{\vec{v}}{\vec{v}}\leq 0$.
+\end{answer}
+
+
+% \item Show that this operation
+% on the vector space of continuous real-valued functions 
+% over $\closedinterval{0}{1}$ satisfies the 
+% conditions in the definition of a norm.  
+% \begin{equation*}
+%   \norm{f}
+%   =\int_{x=0}^1 \absval{f(x)}\,dx
+% \end{equation*}
+% \begin{answer}
+% The first condition holds because the integral of an absolute
+% value cannot be negative, and for continuous functions it is zero
+% if and only if the function is zero.
+% The second condition is  result from elementary Calculus.
+% \end{answer}
+
+
+
+\end{exercises}
+\index{Inner Product|)}
+\endinput
+% \end{document}

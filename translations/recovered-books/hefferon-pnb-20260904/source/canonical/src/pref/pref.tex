@@ -1,0 +1,302 @@
+% pref.tex  See http://joshua.smcvt.edu/linearalgebra
+{\setlength{\parskip}{.7ex}  % note the group-starting open curly
+% \bigskip
+% \vspace*{1.25in plus .2in minus .1in}
+\chapter*{Preface}
+This book helps students to master the material of a standard 
+US undergraduate first course in Linear Algebra.
+
+The material is standard in that the subjects covered are
+Gaussian reduction, 
+vector spaces, linear maps,
+determinants, and eigenvalues and eigenvectors.
+Another standard is the book's audience:
+sophomores or juniors, usually with a background 
+of at least one semester of calculus. 
+The help that it gives to students comes from taking a developmental 
+approach\Dash 
+this book's presentation emphasizes motivation and naturalness, 
+using many examples.
+
+The developmental approach is what most recommends this book
+so I will elaborate.
+Courses at the beginning of a mathematics program
+focus less on theory and more on calculating.
+Later courses
+ask for mathematical maturity:~the ability to follow different 
+types of arguments, 
+a familiarity with
+the themes that underlie many mathematical investigations such as
+elementary set and function facts,
+and a capacity for some independent reading and thinking.
+Some programs have a separate course devoted to developing maturity but
+in any case a Linear Algebra course 
+is an ideal spot to work on this transition.
+It comes early in a program so that progress made here pays off later
+but it also comes late enough so that the classroom contains only
+students who are serious about mathematics.
+The material is accessible, coherent, and elegant.
+And, examples are plentiful.
+
+Helping readers with their transition 
+requires taking the mathematics seriously. 
+All of the results here are proved.
+On the other hand, we cannot
+assume that students have already arrived
+and so 
+in contrast with more advanced texts 
+this book is filled with illustrations of the theory,
+often quite detailed illustrations.
+
+Some texts that assume a not-yet sophisticated reader
+begin with matrix multiplication and determinants.
+Then, when 
+vector spaces and linear maps finally appear
+and definitions and proofs start, the abrupt change
+brings the students to an abrupt stop.
+% They've been sent the wrong signals.
+While this book begins with
+linear reduction, from the start
+we do more than compute.
+The first chapter
+includes proofs, such as the proof that linear reduction gives a correct and
+complete solution set.
+With that as motivation
+the second chapter does vector spaces over the reals.
+In the schedule below this happens at the start of the third week.
+
+A student progresses most in mathematics by doing exercises. 
+The problem sets start with 
+routine checks and range up to reasonably involved proofs.
+% Since instructors often assign about a dozen exercises
+I have aimed to typically put two dozen in each set, 
+thereby giving a selection.
+In particular there is a good number of the medium-difficult problems
+that stretch a learner, but not too far.
+At the high end, there are a few that are puzzles
+taken from various journals, competitions, or
+problems collections, which  
+are marked with a
+`\puzzlemark'  
+(as part of the fun I have worked to keep the original wording).
+
+That is, as with the rest of the book, 
+the exercises are aimed to both build an ability at,
+and help students experience the pleasure of, 
+\emph{doing} mathematics.
+Students should see how the ideas arise and should be able to 
+picture themselves doing the same type of work.
+
+
+%\vspace*{.5in}
+\medskip
+\noindent{\bf Applications.}
+%\smallskip
+% The point of view taken here, that students should think of 
+% Linear Algebra as about vector spaces
+% and linear maps, is not taken to the complete exclusion of others.
+Applications and computing are interesting and vital aspects 
+of the subject.
+Consequently, each chapter closes with a selection of
+topics in those areas.
+These give a reader
+a taste of the subject, discuss how Linear Algebra comes in,
+point to some further reading, and give a few exercises. 
+They are brief enough that an instructor can do one
+in a day's class 
+or can assign them as projects for individuals or small groups.
+Whether they figure formally in a course or not, they help
+readers see for themselves that Linear Algebra is a tool
+that a professional must have. 
+
+
+
+
+\medskip
+\noindent{\bf Availability.}
+This book is Free.
+See \url{hefferon.net/linearalgebra}
+for the license details.
+That page also has the latest version, 
+exercise answers, beamer slides, lab manual, additional material,
+and \LaTeX\ source.
+This book is also available in hard copy
+from standard publishing sources, for very little cost.
+See the web page.
+
+
+
+\medskip
+\noindent{\bf Acknowledgments.}
+A lesson of software
+development is that complex projects have bugs
+and need a process to fix them.
+I am grateful for reports from both instructors and students.
+I periodically issue revisions and acknowledge in the book's repository
+all of the reports that I use. 
+My current contact information is on the web page.
+
+I am grateful to Saint Michael's College 
+for supporting this project over many years, even before the idea of 
+open educational resources became familiar.
+% I also thank Gabriel S Santiago for the cover colors.
+% I also thank Adobe Color~CC user \texttt{claflin61} for the cover colors.
+
+And, I cannot thank my wife Lynne enough for her unflagging encouragement.
+
+
+
+\newcommand{\classday}[1]{\textsc{#1}}
+\newcommand{\colwidth}{1.25in}
+
+%\vspace*{.5in}
+\medskip
+% \noindent{\bf If you are reading this on your own.}
+\noindent{\bf Advice.}
+%\smallskip
+%
+This book's emphasis on motivation and development,
+and its availability, make it widely used for self-study.
+If you are an independent student then good for you, I admire your industry.
+However, you may find some advice useful.
+
+While an experienced instructor knows what subjects and
+pace suit their class, this semester's timetable 
+(graciously shared by G~Ashline)
+may help you plan a sensible rate.
+It presumes that you have already studied the material of 
+Section~One.II, the elements of vectors.
+% \begin{center}   % George Ashline's
+%    \begin{tabular}{r|*{2}{p{\colwidth}}l}
+%       \multicolumn{1}{r}{\textit{week}}  
+%        &\textit{Monday}          
+%        &\textit{Wednesday}            
+%        &\textit{Friday}        \\ \hline
+%        1    &One.I.1         &One.I.1, 2        &One.I.2, 3         \\
+%        2    &One.I.3         &One.III.1          &One.III.2         \\
+%        3    &Two.I.1         &Two.I.1, 2         &Two.I.2         \\
+%        4    &Two.II.1         &Two.III.1         &Two.III.2         \\
+%        5    &Two.III.2        &Two.III.2, 3         &Two.III.3        \\
+%        6    &\classday{exam}   &Three.I.1         &Three.I.1       \\
+%        7    &Three.I.2         &Three.I.2          &Three.II.1         \\
+%        8    &Three.II.1        &Three.II.2          &Three.II.2          \\
+%        9    &Three.III.1       &Three.III.2         &Three.IV.1, 2       \\
+%       10    &Three.IV.2, 3   &Three.IV.4          &Three.V.1          \\
+%       11    &Three.V.1       &Three.V.2            &Four.I.1         \\
+%       12    &\classday{exam}  &Four.I.2            &Four.III.1       \\
+%       13    &Five.II.1    &\multicolumn{2}{c}{\classday{--Thanksgiving break--}} \\
+%       14    &Five.II.1, 2     &Five.II.2          &Five.II.3        
+%    \end{tabular}
+% \end{center}
+\begin{center} 
+   \begin{tabular}{r|l}
+      \multicolumn{1}{r}{\textit{Week}}  
+       &\textit{Sections covered}        \\ \hline
+       1    &One.I.1--2                 \\
+       2    &One.I.3, One.III.1--2      \\
+       3    &Two.I.1--2       \\
+       4    &Two.II.1, Two.III.1--2         \\
+       5    &Two.III.2--3      \\
+       6    &\classday{--Exam--}, Three.I.1      \\
+       7    &Three.I.2, Three.II.1         \\
+       8    &Three.II.1--2          \\
+       9    &Three.III.1--2,  Three.IV.1--2       \\
+      10    &Three.IV.2--4, Three.V.1          \\
+      11    &Three.V.1--2, Four.I.1         \\
+      12    &\classday{--Exam--},  Four.I.2, Four.III.1       \\
+      13    &Five.II.1, \classday{--Thanksgiving break--} \\
+      14    &Five.II.1--3        
+   \end{tabular}
+\end{center}
+As enrichment, you could pick one or two extra things that appeal to you, 
+from the lab manual or from the Topics from the end of each chapter.
+I like the Topics on 
+Voting Paradoxes, 
+Geometry of Linear Maps, and Coupled Oscillators.
+% (When I teach with this schedule as a target, I often have room
+% for a couple of days of extras.)
+You'll get more from these
+if you have access to software for calculations such as
+\textit{Sage}, freely available 
+from \url{http://sagemath.org}.
+
+In the table of contents
+I have marked a few subsections as optional if
+some instructors will pass over them in favor of spending more time elsewhere. 
+
+Note that 
+in addition to the in-class exams,
+students in the above course do 
+take-home problem sets that include proofs, such as a verification
+that a set is a vector space.
+Computations are important but so are the arguments.
+
+My main advice is: do many exercises.
+I have marked a good sample with \recommendationmark's in the margin.
+Do not simply read the answers\Dash you must
+try the problems and possibly struggle with them.
+For all of the exercises, you must justify your answer either with a computation
+or with a proof.
+Be aware that few people can write correct proofs without training;
+try to find a knowledgeable person to work with you.
+
+Finally, a caution for all students, independent or not:~I 
+cannot overemphasize that the 
+statement, ``I understand the material but it is only 
+that I have trouble with the problems''\spacefactor=1000\ %
+shows a misconception.
+Being able to do things with the ideas is their entire point.
+The quotes below express this sentiment admirably
+(I have taken the liberty of formatting them as poetry).
+They capture the essence of both the beauty and the power
+of mathematics and science in general, 
+and of Linear Algebra in particular.
+
+\medskip
+\par\noindent\begin{tabular}[t]{@{}l@{}}
+  \textit{I know of no better tactic}                     \\
+  \textit{\ than the illustration of exciting principles} \\
+  \textit{by well-chosen particulars.}                    \\
+  \hspace*{1in}\textit{--Stephen Jay Gould}
+\end{tabular}
+
+\medskip
+\par\noindent
+\begin{tabular}[t]{@{}l@{}}   
+\textit{If you really wish to learn}                     \\
+   \textit{\ you must mount the machine}  \\ 
+   \textit{\ and become acquainted with its tricks} \\
+   \textit{by actual trial.}                    \\
+   \hspace*{1in}\textit{--Wilbur Wright}
+\end{tabular}
+
+% \medskip
+% \par\noindent
+% \begin{tabular}[t]{@{}l@{}}   
+% \textit{In the particular}                     \\
+%    \textit{\ is contained the universal.}  \\ 
+%    \hspace*{1in}\textit{--James Joyce}
+% \end{tabular}
+
+\vspace*{3ex}
+\par\ \hfill\begin{tabular}[t]{@{}l@{}}
+                       Jim Hef{}feron            \\
+                       Mathematics and Statistics \\ 
+                       Saint Michael's College \\ 
+                       Colchester, Vermont\ USA 05439  \\     
+                       \url{hefferon.net/linearalgebra} \\
+                       \input{publicationdate}  \\
+                       Fourth edition, second printing
+                    \end{tabular}
+
+\vspace{3ex plus 1fill}
+\par\noindent\textit{Author's Note.}
+Inventing a good exercise, one that enlightens as well as tests, 
+is a creative act, and hard work.
+The inventor deserves recognition.
+But texts have traditionally not given attributions for
+questions.
+I have changed that here where I was sure of the source.
+I would be glad to hear from anyone who can help me to correctly
+attribute others of the questions.   
+} % ends the open curly for the parskip from the top of this file

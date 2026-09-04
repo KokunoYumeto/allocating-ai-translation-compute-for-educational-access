@@ -1,0 +1,111 @@
+{
+  "schema": "hefferon-opening-independent-math-review-v1",
+  "review_date": "2026-09-04",
+  "unit": "B40-opening",
+  "locale": "pnb-Arab-PK",
+  "status": "pass_with_explicit_scope_limitations",
+  "summary": "No required mathematical or source-semantic correction was identified in the supplied opening translation. All 76 source formula occurrences have the expected numbered placeholders in their corresponding notation-table cells. This is an opening-material review, not a chapter or whole-book validation.",
+  "inputs": [
+    {
+      "intake_relative_path": "languages/pnb-Arab-PK/source-excerpts/b40-opening.json",
+      "sha256": "560a16023aa2e93d5f47236320ef5740090b2d786d9f506b6f68d05ac01315f5",
+      "role": "canonical English raw-source witness; comparison content is not canonical authority"
+    },
+    {
+      "intake_relative_path": "languages/pnb-Arab-PK/translations/b40-opening.json",
+      "sha256": "45352c7245ff69768f97dbb12ca0e8926fa25ded46bed2169c62779984daf173",
+      "role": "174 source-bound translated blocks, five separately original notes, terminology and accessibility metadata"
+    },
+    {
+      "intake_relative_path": "languages/pnb-Arab-PK/scripts/b40_opening_math_expected.py",
+      "sha256": "681ef4768c24bccf16f0a2f6d6b9bf9f4cabfbe1360b895d0d8eafb71fa39829",
+      "role": "read as inert text only; never imported or executed"
+    }
+  ],
+  "deterministic_checks": {
+    "source_bound_blocks": 174,
+    "notation_tables": 2,
+    "notation_cells_checked": 92,
+    "raw_source_math_occurrences": 76,
+    "translation_tex_placeholder_occurrences": 76,
+    "per_cell_placeholder_count_and_order_mismatches": [],
+    "preface_source_url_occurrences": 3,
+    "preface_target_url_placeholders": 3,
+    "preface_source_exercise_marker_occurrences": 2,
+    "preface_target_exercise_marker_placeholders": 2,
+    "preface_source_publicationdate_includes": 1,
+    "preface_target_include_placeholders": 1,
+    "original_notes": 5,
+    "dangling_original_note_source_keys": [],
+    "degree_note_embedded_excerpt_sha256_recomputed": "540a22477066b4cc885f01a64ea78f6fd0568dd415f94d3b49b62de7225dbc5c",
+    "degree_note_embedded_excerpt_hash_matches": true,
+    "method": "Independent read-only PowerShell parsing of the supplied JSONs: canonical symlist TeX comments removed; table rows/cells split; inline TeX math occurrences counted and matched to consecutive per-cell tex placeholder indices. URL, exercise-marker and date-include occurrences were separately counted. SHA-256 was recomputed from input files and UTF-8 bytes of the embedded degree-note excerpt. No intake script or TeX engine was executed."
+  },
+  "semantic_findings": [
+    {
+      "source_ids": ["src/cover/symlist.tex#table/1/row/1/cell/2", "src/cover/symlist.tex#table/1/row/2/cell/2"],
+      "result": "pass",
+      "detail": "Real, positive real, real n-tuple, natural and complex number meanings are retained. The source's natural-number convention includes zero, and original note b40-opening-natural-convention makes that convention explicit without replacing the source content."
+    },
+    {
+      "source_ids": ["src/cover/symlist.tex#table/1/row/3/cell/2", "src/cover/symlist.tex#table/1/row/4/cell/2", "src/cover/symlist.tex#table/1/row/5/cell/2"],
+      "result": "pass",
+      "detail": "Open versus closed intervals, the importance of sequence order, and matrix row i/column j indexing are preserved."
+    },
+    {
+      "source_ids": ["src/cover/symlist.tex#table/1/row/8/cell/2"],
+      "original_note_id": "b40-opening-degree-qualification",
+      "result": "pass_with_existing_source_based_clarification",
+      "detail": "The source row's shorthand 'degree n' is translated faithfully rather than silently changed. The separately original note explicitly says degree n or less and embeds a matching-hash excerpt giving the full polynomial coefficient-set definition. Polynomials of exactly degree n alone would not be a vector space; retaining the clarification is therefore mathematically important. The full later source file itself was outside this review's supplied evidence."
+    },
+    {
+      "source_ids": ["src/cover/symlist.tex#table/1/row/9/cell/2", "src/cover/symlist.tex#table/1/row/10/cell/2", "src/cover/symlist.tex#table/1/row/11/cell/2", "src/cover/symlist.tex#table/1/row/12/cell/2", "src/cover/symlist.tex#table/1/row/13/cell/2"],
+      "result": "pass",
+      "detail": "Span, basis/basis vectors, standard basis of R^n, isomorphic spaces and direct sum of subspaces preserve the source's meanings and symbol placeholders. The text does not equate direct sum with ordinary numeric addition."
+    },
+    {
+      "source_ids": ["src/cover/symlist.tex#table/1/row/14/cell/2", "src/cover/symlist.tex#table/1/row/15/cell/2", "src/cover/symlist.tex#table/1/row/16/cell/2"],
+      "result": "pass",
+      "detail": "Homomorphisms remain explicitly qualified as linear maps; transformations remain explicitly qualified as linear maps from a space to itself. Vector/map representations retain their paired source placeholders."
+    },
+    {
+      "source_ids": ["src/cover/symlist.tex#table/1/row/17/cell/2", "src/cover/symlist.tex#table/1/row/18/cell/2", "src/cover/symlist.tex#table/1/row/19/cell/2", "src/cover/symlist.tex#table/1/row/20/cell/2"],
+      "result": "pass",
+      "detail": "Zero/identity matrices, determinant, range/null spaces and generalized range/null spaces are retained. The generalized qualifier is explicit for both spaces. Later formal definitions are not supplied by this opening and must not be claimed as covered."
+    },
+    {
+      "source_ids": ["src/cover/symlist.tex#heading/2", "src/cover/symlist.tex#capitals-note"],
+      "original_note_id": "b40-opening-pronunciation-context",
+      "result": "pass",
+      "detail": "The Greek-letter table preserves its mathematical placeholders and English-source pronunciation strings, including alternatives for phi and psi. The separate note makes the English pronunciation convention and provisional Punjabi transliterations explicit. This does not establish a unique standardized Punjabi nomenclature."
+    },
+    {
+      "source_ids": ["src/pref/pref.tex#paragraph/2", "src/pref/pref.tex#paragraph/4", "src/pref/pref.tex#paragraph/5", "src/pref/pref.tex#paragraph/14", "src/pref/pref.tex#paragraph/17", "src/pref/pref.tex#paragraph/18"],
+      "result": "pass",
+      "detail": "The topic list, source-author claim that all results are proved, correct-and-complete solution-set claim, vector spaces over the reals, prior-study assumption for One.II, vector-space verification example, and computation-or-proof justification requirement preserve their mathematical qualifications. References to later chapters are references, not claims that those chapters have been translated."
+    },
+    {
+      "source_ids": ["src/pref/pref.tex#paragraph/9", "src/pref/pref.tex#paragraph/10", "src/pref/pref.tex#paragraph/13", "src/pref/pref.tex#paragraph/15"],
+      "original_note_id": "b40-opening-author-context",
+      "result": "pass",
+      "detail": "A separate original note identifies the first-person voice as the source author and availability/contact statements as source-era statements, not newly verified present-day facts. All additions occupy original_notes or explicitly original accessibility metadata rather than source_blocks."
+    }
+  ],
+  "required_translation_fixes": [],
+  "downstream_validation_to_preserve": [
+    "Keep the degree-n-or-less clarification visible and recognizably separate from the source translation; do not suppress it in the rendered reader.",
+    "Show original editorial and accessibility material as original material, not as source-author prose.",
+    "Resolve all math and non-math placeholders against their exact source occurrences and verify the final rendered LTR math order inside the RTL document.",
+    "Retain the explicit opening-only scope and do not claim a completed chapter, whole front matter, or whole book."
+  ],
+  "limitations": [
+    "The input hashes identify the reviewed bytes, but the claimed canonical Git commit/tree and complete later vs1.tex witness were not independently fetched or reauthenticated in this bounded local review.",
+    "The expected-math script was inspected as text, not executed. The supplied JSON does not contain all pinned macro definitions needed to independently authenticate every custom TeX macro expansion or exact glyph style.",
+    "Placeholder counts and indices establish source-to-slot correspondence, not the correctness of a downstream renderer's substituted MathML, accessibility text, glyph rendering, or bidirectional layout.",
+    "The coverage is the opening's notation and preface material. No later proofs, exercises, chapter content, or theorem verification are covered.",
+    "This is an independent mathematical/source-semantic review, not a claim of native-language or standardized terminology certification."
+  ],
+  "intake_mutated": false,
+  "original_scripts_executed": false,
+  "external_contacts_or_git_operations": false
+}

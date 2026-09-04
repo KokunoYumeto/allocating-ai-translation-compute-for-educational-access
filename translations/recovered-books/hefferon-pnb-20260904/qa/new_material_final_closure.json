@@ -1,0 +1,85 @@
+{
+  "schema": "hefferon-new-material-final-closure-v1",
+  "review_date": "2026-09-04",
+  "status": "pass",
+  "scope": "Tiny final closure of five requested wording refinements only. No full semantic sweep, production edits, or changes to the earlier independent reports.",
+  "predecessor_report": {
+    "path": "qa/new_material_review.json",
+    "sha256": "ef3574185f303036232aa47f7fc4b5034252bde321e4ba8086c32ede759de4d0",
+    "applicable_section": "post_edit_verification"
+  },
+  "current_inputs": [
+    {
+      "path": "package/learning/bridge.html",
+      "sha256": "1551f005ec7b1af6da8cd00bcfff6ac71608126d8fab51e46d30dc3459195994"
+    },
+    {
+      "path": "package/translations/b40-contents-pnb.json",
+      "sha256": "cea3686090805e1195b4182691f763e363f2a46de6e53718169343438afd955e"
+    }
+  ],
+  "resolved_issue_ids": [
+    "NMR-01",
+    "NMR-02",
+    "NMR-03",
+    "NMR-04",
+    "NMR-OPTIONAL-VECTOR-LENGTH",
+    "NMR-OPTIONAL-POLYNOMIAL-TERM",
+    "NMR-OPTIONAL-LEMMA",
+    "NMR-OPTIONAL-GRAM-SCHMIDT",
+    "NMR-OPTIONAL-NILPOTENCE"
+  ],
+  "issue_id_note": "NMR-01 through NMR-04 were resolved in the predecessor report. The OPTIONAL IDs are assigned here to track the previously unnumbered editorial refinements by their exact prior locations.",
+  "refinement_checks": [
+    {
+      "id": "NMR-OPTIONAL-VECTOR-LENGTH",
+      "location": "package/learning/bridge.html#bridge-glossary, vector row",
+      "result": "pass",
+      "verified_change": "Vector equality now requires the same number of entries as well as equality of corresponding entries."
+    },
+    {
+      "id": "NMR-OPTIONAL-POLYNOMIAL-TERM",
+      "locations": ["src/jc/jc1.tex#subsectionoptional/1", "src/jc/jc4.tex#subsectionoptional/1"],
+      "result": "pass",
+      "verified_change": "The two titles now use کثیرحدی and کثیرحدیاں consistently. The factoring title still explicitly includes the process عامل کڈھنا."
+    },
+    {
+      "id": "NMR-OPTIONAL-LEMMA",
+      "location": "src/gr/gr3.tex#subsection/2",
+      "result": "pass",
+      "verified_change": "خطی امتزاج دا لیما (مددگار نتیجہ) names and explains the mathematical lemma rather than using لمّا."
+    },
+    {
+      "id": "NMR-OPTIONAL-GRAM-SCHMIDT",
+      "location": "src/map/map6.tex#subsectionoptional/2",
+      "result": "pass",
+      "verified_change": "گرام–شمٹ نال آپس وچ عمودی بنانا explicitly conveys mutual orthogonality."
+    },
+    {
+      "id": "NMR-OPTIONAL-NILPOTENCE",
+      "location": "src/jc/jc3.tex#section/1",
+      "result": "pass",
+      "verified_change": "نِل پوٹینسی: کسے مثبت صحیح قوت اُتے صفر ہونا narrows the gloss to a positive integral power and uses Punjabi کسے."
+    }
+  ],
+  "unchanged_payload_verification": {
+    "method": "Read the two current files as bytes, decoded and re-encoded with UTF-8, and reversed only the six exact local wording replacements in memory: one bridge phrase and five contents-title values. No files were changed by this reconstruction. The resulting SHA-256 values exactly match the predecessor report's corrected-input hashes. This proves there are no other byte changes, including no changes to the worked examples, exercise questions, answers, source owner keys, labels/flags authority, or source metadata.",
+    "bridge_inverse_sha256": "11b2229f06f170a40bcbf7b781a8476acbfe4f2600686804d23cc80d6f18b09e",
+    "bridge_inverse_matches_predecessor": true,
+    "contents_inverse_sha256": "767b019114789d6686a92801f8285abfa75c4ae0a0bc5a1a6ea1d70350d82d02",
+    "contents_inverse_matches_predecessor": true,
+    "worked_example_blocks": 4,
+    "exercise_question_blocks": 8,
+    "solution_blocks": 8,
+    "math_payloads_byte_unchanged": true,
+    "ordered_math_payload_sha256": "0899a97a9356f6e723b9b5989c29af1dd3f3736bcae277d5f23fc5d9372bc405",
+    "payload_hash_recipe": "UTF-8 bytes of the four complete bridge-example section substrings in file order, then eight bridge-q li substrings, then eight bridge-a details substrings, joined by a single LF."
+  },
+  "remaining_required_content_fixes": [],
+  "limits": [
+    "The predecessor report's rendering, label/star display, bidi, SVG and full-book coverage limits remain unchanged.",
+    "This closure applies only to the exact current input hashes recorded above; subsequent edits require their own appropriately scoped verification."
+  ],
+  "production_mutated": false,
+  "prior_reports_mutated": false
+}

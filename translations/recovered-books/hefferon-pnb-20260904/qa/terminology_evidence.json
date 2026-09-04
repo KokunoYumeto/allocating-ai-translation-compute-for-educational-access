@@ -1,0 +1,181 @@
+{
+  "schema": "hefferon-pnb-terminology-evidence-v1",
+  "date": "2026-09-04",
+  "scope": "Read-only terminology review of recovered B40 opening; no canon or translation edits; bounded web research only.",
+  "input": {
+    "identity": "recovered laptop 4 sep / laptop dump 4 sep / 7515 / LAN ALLOC / languages/pnb-Arab-PK/translations/b40-opening.json",
+    "sha256": "45352c7245ff69768f97dbb12ca0e8926fa25ded46bed2169c62779984daf173",
+    "linear_equation_or_system_present": false
+  },
+  "conclusion": {
+    "native_pakistani_shahmukhi_technical_attestation_established": false,
+    "meaning": "These bounded searches did not establish suitable native Pakistani Punjabi/Shahmukhi primary technical usage for the requested linear-algebra senses. This is not evidence that such sources do not exist.",
+    "operational_decision": "Proceed with source-bound, explicitly provisional technical labels and precise mathematical distinctions. Missing attestation is recorded uncertainty, not a human-dependent hold.",
+    "certification_limit": "Urdu and English educational evidence, Gurmukhi resources and novice script transliteration must not be relabeled as native Pakistani Punjabi technical certification."
+  },
+  "prose_canon_boundary": {
+    "name": "Jamil Ahmad Pal",
+    "role": "Parent-designated Punjabi prose/grammar canon, separate from mathematical term attestation.",
+    "action": "Unchanged. No canon file was opened or modified in this subtask, and no new quotation or mathematical authority claim is attributed to this author. Punjabi syntax and inflection do not by themselves certify a specialist noun's conventional technical sense."
+  },
+  "sources": [
+    {
+      "id": "native-institutional-prose",
+      "url": "https://ipcs.edu.pk/website/about",
+      "identity": "Institute of Punjabi and Cultural Studies, University of the Punjab, institutional about page",
+      "language": "Punjabi/Shahmukhi narrative, with some institutional labels in Urdu register",
+      "inspection": "Actual web page text opened; Punjabi narrative contains وچ, دے, تے and اے.",
+      "exact_short_quotes": ["پنجابی تعلیم و تدریس دے عمل لئی پنجابی زبان دے شاہ مکھی (رسم الخط) نوں اپنایا جاندا اے۔"],
+      "use": "Supports correct identification of native institutional Shahmukhi prose only. Does not attest the requested mathematical terms. Does not replace the existing prose canon."
+    },
+    {
+      "id": "lahore-dictionary-catalogue",
+      "url": "https://dsal.uchicago.edu/dictionaries/salah-ud-din/",
+      "identity": "Iqbal Salah-ud-Din, Vaddi Panjabi lughat: Panjabi tun Panjabi, Lahore, Aziz Publishers, 2002; Digital South Asia Library catalogue and search page",
+      "language": "Punjabi-Punjabi/Shahmukhi dictionary; catalogue metadata in English/romanization",
+      "inspection": "Actual catalogue/search page opened. No mathematical entry or definition was retrieved.",
+      "exact_short_quotes": [],
+      "use": "A relevant native lexicographic candidate, not evidence of the requested technical senses. No dictionary entries copied."
+    },
+    {
+      "id": "sarkaria-excluded-transliteration",
+      "url": "https://kssarkaria.org/docs/A%20pretty%20theorem%20in%20shahmukhi.pdf",
+      "identity": "K. S. Sarkaria, A pretty theorem in Shahmukhi, author's website, two-page PDF",
+      "language": "English introductory note; author's provisional Shahmukhi transcription of his Gurmukhi Punjabi mathematics",
+      "inspection": "PDF introductory note opened as extracted text, PDF page 1, lines 0-11. Mathematical Shahmukhi page was not visually inspected.",
+      "exact_short_quotes": ["So this transliteration is provisional only"],
+      "use": "Excluded as native Pakistani Shahmukhi term authority. The author explicitly reports no previous right-to-left-script experience and warns of errors. Native Punjabi thought or mathematical expertise does not establish native Shahmukhi orthographic usage."
+    },
+    {
+      "id": "patiala-resources-catalogue",
+      "url": "https://www.learnpunjabi.org/onlineresources.aspx",
+      "identity": "Research Centre for Technical Development of Punjabi Language, Literature and Culture, Punjabi University, Patiala",
+      "language": "English resource catalogue for Gurmukhi/Shahmukhi Punjabi tools",
+      "inspection": "Actual resource page opened.",
+      "exact_short_quotes": ["Gurmukhi-Shahmukhi-English Online Multimedia Dictionary"],
+      "use": "Resource discovery only. A cross-script tool is not native Pakistani Punjabi specialist attestation. No term result was retrieved."
+    },
+    {
+      "id": "urdu-bridge-ncert-linear",
+      "url": "https://www.ncert.nic.in/pdf/BookletClass8.pdf",
+      "identity": "NCERT, List of Rationalised Content in Textbooks for Class VIII, May 2022; book 4817 Riyazi, printed page 22",
+      "language": "Urdu mathematics section in a multilingual Indian official education document; not Punjabi",
+      "inspection": "Official PDF and source metadata opened; indexed source text shows the Urdu chapter label. PDF extraction is partly corrupted; visual verification was attempted but failed.",
+      "exact_short_quotes": [],
+      "indexed_text_only_not_verified_print_quote": "ایک متغیر والی خطی مساوات",
+      "use": "Low-confidence Urdu bridge discovery for خطی مساوات only; not print-verified spelling certification and not Punjabi usage."
+    },
+    {
+      "id": "urdu-bridge-bise-lahore",
+      "url": "https://www.biselahore.com/downloads/Model%20Papers/Matric/ModelPapers_9th.pdf",
+      "identity": "BISE Lahore, 2024 Class 9 model-paper collection; Mathematics Science IX subjective paper and Physics SSC-I objective paper",
+      "language": "Parallel Urdu and English; Pakistan; not Punjabi",
+      "inspection": "Search service returned indexed source text with the terms below. Live opens at www and home hosts returned HTTP 404; printed bytes were not verified.",
+      "exact_short_quotes": [],
+      "indexed_terms_only_not_verified_print_quotes": ["میٹرکس", "حقیقی عدد", "ویکٹر"],
+      "use": "Urdu bridge discovery only. Keep confidence limited to indexed text; do not promote to native Punjabi or exact printed-text attestation. The vector occurrence is physics, not abstract vector-space theory."
+    },
+    {
+      "id": "urdu-bridge-jmi-candidate",
+      "url": "https://jmicoe.in/pdf18/12TH_SYLLABUS%20FINAL_2018-19.pdf",
+      "identity": "Jamia Millia Islamia, private-candidate Class XII syllabus; URL names 2018-19 but extracted title page says session 2017-18; Urdu mathematics around printed page 245",
+      "language": "Urdu section in multilingual Indian official university-school syllabus; not Punjabi",
+      "inspection": "PDF opened with extracted title-page and contents identity; search-index Urdu rendering is noisy and a subsequent narrow open returned HTTP 404.",
+      "exact_short_quotes": [],
+      "use": "Not adopted as exact term evidence. Mixed matrix synonyms and malformed indexed prose make it unsuitable for choosing between Punjabi labels."
+    },
+    {
+      "id": "english-pakistan-content-bridge",
+      "urls": [
+        "https://www.elearn.gov.pk/",
+        "https://www.elearn.gov.pk/onlinepdf/math/9math/pdfEng/chapter1.pdf",
+        "https://www.elearn.gov.pk/onlinepdf/math/9math/pdfEng/chapter2.pdf"
+      ],
+      "identity": "eLearn.Punjab, official digitized textbook repository; Grade 9 Mathematics, version 1.1, chapters Matrices and Determinants and Real and Complex Numbers",
+      "language": "English PDFs, expressly not Urdu or Punjabi printed term evidence",
+      "inspection": "Primary-domain search results returned chapter definitions and learning outcomes. Repository live opens timed out. No Urdu PDF term was retrieved.",
+      "exact_short_quotes": [],
+      "use": "Corroborates subject-domain distinctions and Pakistan curriculum context only, not the spelling or conventional status of any Shahmukhi label. Matrix chapter treats real entries and a system of two linear equations; that school-level restriction must not narrow Hefferon's later abstract setting."
+    }
+  ],
+  "bounded_search_record": {
+    "native_queries": [
+      "پنجابی شاہ مکھی \"خطی\" \"مساوات\"",
+      "پنجابی شاہ مکھی \"ویکٹر\" \"میٹرکس\"",
+      "Punjabi Shahmukhi mathematics terminology textbook",
+      "\"شاہ مکھی\" \"ریاضی\"",
+      "\"پنجابی\" \"حقیقی عدد\"",
+      "\"پنجابی\" \"خطی الجبرا\"",
+      "site:pnb.wikipedia.org \"ویکٹر\"",
+      "\"پنجابی\" \"ویکٹر فضا\"",
+      "\"شاہ مکھی\" \"بنیاد\" \"پھیلاؤ\""
+    ],
+    "bridge_routes": "Bounded queries and opens on eLearn.Punjab, PECTAA, FBISE, BISE Lahore, NCERT and JMI. Non-primary commercial, AI-generated, Wikipedia, discussion and mirror results were not used to certify mathematical terms.",
+    "excluded_as_insufficient": "Gurmukhi/PSEB textbook listings, cross-script resource catalogues, ordinary non-mathematical uses of foundation/spreading, and Urdu pages that merely mention Punjabi.",
+    "operational_limits": [
+      "Web PDF screenshots failed; the service reported that screenshot was not enabled or returned an internal error.",
+      "One in-memory local NCERT PDF fetch/render attempt using bundled pypdfium2 failed on remote TLS connection reset (WinError 10054); no source bytes or images were saved.",
+      "Some official PDF live opens returned HTTP 404, timeout, non-retryable safe-open errors, or size limit. No further retry loop was launched.",
+      "No pronunciation, community acceptance, or educator-standardization claim was established."
+    ]
+  },
+  "decisions": [
+    {
+      "english": "linear algebra; linear equation; system of linear equations",
+      "current_opening": "خطی الجبرا",
+      "provisional_future_labels": ["خطی مساوات", "خطی مساواتاں دا نظام"],
+      "decision": "Retain the existing opening title provisionally. Equation and system are not present in this opening and should not be inserted solely for this audit. The future system phrase is a composition in Punjabi grammar, not an attested native specialist phrase.",
+      "definition_distinction": "An equation is one equality, with variables occurring linearly; a system is a collection required to hold simultaneously. A linear system may have no solution, one solution or multiple solutions. Do not confuse linear equations with linear maps: a nonzero right-hand side need not describe a linear subspace.",
+      "evidence": ["urdu-bridge-ncert-linear", "english-pakistan-content-bridge"]
+    },
+    {
+      "english": "vector; vector space; subspace",
+      "current_opening": "ویکٹر؛ ویکٹر فضا؛ ذیلی فضا",
+      "decision": "Retain transparent provisional borrowing and Punjabi inflections ویکٹراں and فضاواں. No native mathematical attestation or official Urdu attestation for the full vector-space phrase was established.",
+      "definition_distinction": "An abstract vector is an element of a specified vector space over a specified field. A vector space has vector addition and scalar multiplication satisfying the axioms; it is not merely physical empty space or a list of arrows. A subspace uses the ambient operations and is closed under them, including the zero vector.",
+      "evidence": ["urdu-bridge-bise-lahore"]
+    },
+    {
+      "english": "matrix; zero matrix; identity matrix",
+      "current_opening": "میٹرکس؛ صفر میٹرکس؛ شناختی میٹرکس",
+      "decision": "Retain provisionally. Indexed Urdu bridge evidence supports the matrix borrowing only; it does not verify شناختی میٹرکس as a standard native Punjabi label.",
+      "definition_distinction": "A matrix is a rectangular array of entries in indexed rows and columns. An identity matrix is square with diagonal ones and off-diagonal zeros; it must not be confused with the zero matrix. Its role is multiplicative identity, not merely identifying an object. Do not restrict general matrices to real entries because the Grade 9 bridge source does.",
+      "evidence": ["urdu-bridge-bise-lahore", "english-pakistan-content-bridge"]
+    },
+    {
+      "english": "basis",
+      "current_opening": "بنیاد",
+      "decision": "Retain as an expressly provisional semantic extension; no native or official Urdu technical attestation established in this bounded search.",
+      "definition_distinction": "A basis is a linearly independent spanning set. Ordinary foundation or merely a spanning set is not enough. When Hefferon uses an ordered basis for coordinates, preserve that order; a vector's coordinates depend on the chosen ordered basis.",
+      "evidence": []
+    },
+    {
+      "english": "span",
+      "current_opening": "پھیلاؤ",
+      "decision": "Retain provisionally, paired with its precise mathematical meaning in a clearly original glossary/clarification if the parent workflow adds one. Do not claim ordinary uses of spreading establish this technical sense.",
+      "definition_distinction": "The span of a set is the set of all finite linear combinations of its vectors over the given scalar field, equivalently the smallest subspace containing it. It is not interval width, physical spread, the cardinality of the set, or just the listed vectors themselves.",
+      "evidence": []
+    },
+    {
+      "english": "real number",
+      "current_opening": "حقیقی عدد",
+      "decision": "Retain provisionally; Pakistan Urdu indexed bridge evidence is available, but native Punjabi technical attestation is not established.",
+      "definition_distinction": "Real numbers include rational and irrational numbers. Real is a mathematical category, not a claim that complex numbers are unreal or invalid. Keep the source symbols and scalar-field context unchanged.",
+      "evidence": ["urdu-bridge-bise-lahore", "english-pakistan-content-bridge"]
+    },
+    {
+      "english": "complex number",
+      "current_opening": "مرکب عدد",
+      "decision": "Retain only as a transparent provisional label, not a certified conventional Punjabi equivalent. For a glossary or original clarification, make the English sense and a+bi definition explicit. This search did not verify a primary Urdu or native Punjabi printed occurrence establishing this exact mapping; do not replace it with another Urdu variant merely on presumed standardization.",
+      "definition_distinction": "A complex number is a+bi with real a and b and i squared equal to -1. It is not a composite integer (an integer greater than 1 with a nontrivial factorization). The term مرکب can suggest compound/composite, so the two senses must not be collapsed.",
+      "evidence": ["english-pakistan-content-bridge"]
+    }
+  ],
+  "implementation_notes": [
+    "This report recommends terminology decisions but does not itself implement any textual changes.",
+    "Keep English-to-Punjabi term mapping reversible and label certainty per term. Do not turn grammatical correctness, shared Arabic/Persian vocabulary, or script similarity into a claim of attested native technical usage.",
+    "Mathematical distinctions above are reviewer safeguards, not quotations from the linked Punjabi sources. Preserve Hefferon's source wording and put any added explanatory material in separately marked original notes.",
+    "Existing wording that awaits educator review should describe provisional status without making human evidence a prerequisite for the parent workflow."
+  ],
+  "next_executable_action": "Parent may use these decisions in its source-bound glossary and QA. Preserve the provisional labels unless a directly inspected authoritative source or deterministic semantic check warrants a reversible correction. No human action is required to proceed."
+}

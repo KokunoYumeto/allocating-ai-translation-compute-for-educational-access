@@ -1,0 +1,781 @@
+% Chapter 4, Topic _Linear Algebra_ Jim Hefferon
+%  http://joshua.smcvt.edu/linearalgebra
+%  2001-Jun-12
+\topic{Linear Recurrences}
+\index{linear recurrence|(}
+\index{recurrence relation|(}
+
+In 1202 Leonardo of Pisa, known as Fibonacci, posed this problem.
+\begin{quotation}
+  \noindent A certain man put a pair of rabbits in a place
+  surrounded on all sides by a wall.
+  How many pairs of rabbits can be produced from that pair in a year if it
+  is supposed that every month each pair begets a new pair which from the
+  second month on becomes productive?
+\end{quotation}
+This moves past an elementary exponential growth model for
+populations
+to include that newborns are not fertile for some period, here a month.
+However, it retains other simplifying assumptions such as  
+that there is an age after which the rabbits are infertile.
+
+To get next month's total number of pairs 
+we add the number of pairs alive going into next month to
+the number of pairs that will be newly born next month.
+The latter equals the number of pairs that will be 
+productive going into next month, which is the number that next month will 
+have been alive for at least two months.
+\begin{equation*}
+  F(n)=F(n-1)+F(n-2)  \qquad \text{where $F(0)=0$, $F(1)=1$}
+  \tag{$*$}
+\end{equation*}
+On the left is a
+\definend{recurrence relation}.\index{recurrence}
+It gets that name 
+because $F$ recurs in its own defining equation.
+On the right are the initial conditions.
+From~($*$) we can compute $F(2)$, $F(3)$, etc., 
+to work up to the answer for Fibonacci's question.
+\begin{center}
+  \begin{tabular}{r|ccccccccccccc}
+    \textit{month}~$n$
+     &0  &1  &2  &3  &4  &5  &6  &7  &8  &9  &10  &11  &12  \\ \hline
+    \textit{pairs}~$F(n)$
+     &0  &1  &1  &2  &3  &5  &8  &13  &21  &34  &55  &89  &144   
+  \end{tabular}
+\end{center}
+We will use linear algebra to get a formula that
+calculates $F(n)$ without having to first calculate the intermediate 
+values $F(2)$, $F(3)$, etc.
+
+We start by giving ($*$) a matrix formulation.
+\begin{equation*}
+  \colvec{F(n) \\ F(n-1)}
+  =
+  \begin{mat}[r]
+    1  &1   \\
+    1  &0
+  \end{mat}
+  \colvec{F(n-1) \\ F(n-2)}
+  \qquad\text{where $\colvec{F(1) \\ F(0)}=\colvec{1 \\  0}$}
+\end{equation*}  
+Write $T$ for the matrix and 
+$\vec{v}_{n}$ for the vector with components $F(n)$ and $F(n-1)$ so that
+$\vec{v}_{n}=T^{n-1}\vec{v}_1$ for $n\geq 1$.
+If we diagonalize $T$ then we 
+have a fast way to compute its powers:~where $T=PDP^{-1}$ then 
+$T^n=PD^nP^{-1}$ and the $n$-th power of the diagonal matrix $D$ is the 
+diagonal matrix whose entries are the $n$-th powers of 
+the entries of $D$.
+
+The characteristic equation of $T$ is $\lambda^2-\lambda-1=0$.
+The quadratic formula gives its roots as $(1+\sqrt{5})/2$ and 
+$(1-\sqrt{5})/2$. 
+(These are sometimes called ``golden ratios;''
+see \cite{Falbo}.)
+Diagonalizing gives this.
+\begin{equation*}
+  \begin{mat}[r]
+    1  &1  \\
+    1  &0
+  \end{mat}
+  =\begin{mat}
+     \frac{1+\sqrt{5}}{2}  &\frac{1-\sqrt{5}}{2} \\
+     % \sfrac{1+\sqrt{5}}{2}  &\sfrac{1-\sqrt{5}}{2} \\
+     1                     &1
+   \end{mat}
+   \begin{mat}
+     \frac{1+\sqrt{5}}{2}  &0   \\
+     0                     &\frac{1-\sqrt{5}}{2}
+   \end{mat}
+   \begin{mat}
+     \frac{1}{\sqrt{5}}     &-(\frac{1-\sqrt{5}}{2\sqrt{5}})  \\
+     \frac{-1}{\sqrt{5}}    &\frac{1+\sqrt{5}}{2\sqrt{5}}       
+   \end{mat}
+\end{equation*} 
+Introducing the vectors and taking the $n$-th power, we have
+\begin{multline*}
+  \colvec{F(n) \\ F(n-1)}
+  =\begin{mat}[r]
+    1  &1  \\
+    1  &0
+  \end{mat}^{n-1}
+  \colvec{f(1) \\ f(0)}                                          \\
+  =\begin{mat}
+     \frac{1+\sqrt{5}}{2}  &\frac{1-\sqrt{5}}{2} \\
+     1                     &1
+   \end{mat}
+   \begin{mat}
+     \left(\frac{1+\sqrt{5}}{2}\right)^{n-1}  &0   \\
+     0                                  &\left(\frac{1-\sqrt{5}}{2}\right)^{n-1}
+   \end{mat}
+   \begin{mat}
+     \frac{1}{\sqrt{5}}     &-(\frac{1-\sqrt{5}}{2\sqrt{5}})  \\
+     \frac{-1}{\sqrt{5}}    &\frac{1+\sqrt{5}}{2\sqrt{5}}       
+   \end{mat}
+  \colvec[r]{1 \\ 0}                                             
+\end{multline*}
+The calculation is ugly but not hard.
+\begin{align*}
+  \colvec{F(n) \\ F(n-1)}
+  &=\begin{mat}
+     \frac{1+\sqrt{5}}{2}  &\frac{1-\sqrt{5}}{2} \\
+     1                     &1
+   \end{mat}
+   \begin{mat}
+     \left(\frac{1+\sqrt{5}}{2}\right)^{n-1}  &0   \\
+     0                                  &\left(\frac{1-\sqrt{5}}{2}\right)^{n-1}
+   \end{mat}
+  \colvec{\frac{1}{\sqrt{5}} \\ -\frac{1}{\sqrt{5}}}       \\ 
+  &=\frac{1}{\sqrt{5}}
+    \begin{mat}
+     \frac{1+\sqrt{5}}{2}  &\frac{1-\sqrt{5}}{2} \\
+     1                     &1
+   \end{mat}
+  \colvec{\left(\frac{1+\sqrt{5}}{2}\right)^{n-1} \\ 
+          -\left(\frac{1-\sqrt{5}}{2}\right)^{n-1}}    \\    
+  &=\frac{1}{\sqrt{5}}
+  \colvec{\left(\frac{1+\sqrt{5}}{2}\right)^{n}  
+          -\left(\frac{1-\sqrt{5}}{2}\right)^{n}  \\
+          \left(\frac{1+\sqrt{5}}{2}\right)^{n-1}  
+          -\left(\frac{1-\sqrt{5}}{2}\right)^{n-1}}   
+\end{align*}
+We want the first component.
+\begin{equation*}
+  F(n)=\frac{1}{\sqrt{5}}\left[\left(\frac{1+\sqrt{5}}{2}\right)^{n}
+                               -\left(\frac{1-\sqrt{5}}{2}\right)^{n}\right]
+\end{equation*}
+This formula gives the value of any member of the sequence
+without having to first find the intermediate values.  
+
+Because $(1-\sqrt{5})/2\approx -0.618$
+has absolute value less than one, its powers go to zero and so
+the $F(n)$ formula is dominated by its first term. 
+Although we have extended the elementary model of 
+population growth by adding a delay period 
+before the onset of fertility, we nonetheless 
+still get a function that is asymptotically exponential.
+
+In general, a 
+\definend{homogeneous linear recurrence relation of order $k$}\index{recurrence}\index{linear recurrence!definition} 
+has this form.
+\begin{equation*}
+  f(n)=a_{n-1}f(n-1)+a_{n-2}f(n-2)+\dots+a_{n-k}f(n-k)
+\end{equation*}
+This recurrence relation is homogeneous
+because it has no constant term, i.e, we can rewrite it as
+$0=-f(n)+a_{n-1}f(n-1)+a_{n-2}f(n-2)+\dots+a_{n-k}f(n-k)$.
+It is of 
+order~$k$ because it uses $k$-many prior terms to calculate $f(n)$.
+The relation, cimbined with 
+initial conditions\index{recurrence!initial conditions} 
+giving values for 
+$f(0)$, \ldots, $f(k-1)$,
+completely determines a sequence, 
+simply because 
+we can compute $f(n)$ by first computing $f(k)$, $f(k+1)$, etc.
+As with the Fibonacci case we will find a formula that solves the
+recurrence, that directly gives $f(n)$  
+
+Let $V$ be the set of functions with domain
+$\N=\set{0,1,2,\ldots}$ and codomain $\C$.  
+(Where convenient we sometimes use the domain $\Z^+=\set{1,2,\ldots}$.)
+This is a vector space under the usual meaning for addition and
+scalar multiplication, that
+$f+g$ is the map $x\mapsto f(x)+g(x)$ and 
+$cf$ is the map $x\mapsto c\cdot f(x)$.
+
+If we put aside any initial conditions and look only at the recurrence, 
+then there may be many functions satisfying the relation.
+For example, the Fibonacci recurrence that each value beyond the initial ones
+is the sum of the prior two is satisfied by the 
+function $L$ whose first few values 
+are $L(0)=2$, $L(1)=1$, $L(2)=3$, $L(3)=4$, and
+$L(4)=7$.
+
+Fix a homogeneous linear recurrence relation of order~$k$ and
+consider the subset $S$ of functions satisfying the relation (without
+initial conditions).
+This $S$ is a subspace of $V$.
+It is nonempty because the zero function is a solution, by homogeneity.
+It is closed under addition because if $f_1$ and $f_2$ are solutions then
+this holds.
+\begin{multline*}
+  -(f_1+f_2)(n)+a_{n-1}(f_1+f_2)(n-1)+\dots+a_{n-k}(f_1+f_2)(n-k) \\  
+  \begin{aligned}
+    &=(-f_1(n)+\dots+a_{n-k}f_1(n-k))          \\
+    &\qquad\hbox{}+(-f_2(n)+\dots+a_{n-k}f_2(n-k))     \\
+    &=0+0=0
+  \end{aligned}
+\end{multline*}
+It is also closed under scalar multiplication.
+\begin{multline*}
+  -(rf_1)(n)+a_{n-1}(rf_1)(n-1)+\dots+a_{n-k}(rf_1)(n-k) \\  
+  \begin{aligned}
+    &=r\cdot (-f_1(n)+\dots+a_{n-k}f_1(n-k))   \\
+    &=r\cdot 0                                    \\
+    &=0
+  \end{aligned}
+\end{multline*}
+We can find the dimension of $S$.
+Where $k$ is the order of the recurrence, 
+consider this map from the set of functions~$S$ to the set of 
+$k$-tall vectors. 
+\begin{equation*}
+  f 
+  \mapsto 
+  \colvec{f(0) \\ f(1) \\ \vdots \\ f(k-1)}
+\end{equation*}
+\nearbyexercise{exer:SeqToRnLinMap} shows that this is linear.
+Any solution of the recurrence is uniquely determined by the $k$-many
+initial conditions so this map is one-to-one and onto.
+Thus it is an isomorphism, and $S$ has dimension $k$. 
+
+So we can describe the
+set of solutions of our linear homogeneous recurrence relation of order~$k$
+by finding a basis consisting of
+$k$-many linearly independent functions. 
+To produce those we give 
+the recurrence a matrix formulation.
+\begin{equation*}
+  \colvec{f(n) \\ f(n-1) \\ \vdots  \\ f(n-k+1)}
+  =
+  \begin{mat}
+    a_{n-1}  &a_{n-2}  &a_{n-3}  &\ldots  &a_{n-k+1} &a_{n-k}  \\
+    1    &0        &0        &\ldots  &0         &0        \\
+    0    &1        &0                                      \\
+    0    &0        &1                                      \\
+    \vdots &\vdots &         &\ddots  &           &\vdots  \\
+    0    &0        &0        &\ldots   &1          &0
+  \end{mat}
+  \colvec{f(n-1) \\ f(n-2) \\ \vdots  \\ f(n-k)}
+\end{equation*}
+Call the matrix~$A$.
+We want its characteristic function,
+the determinant of $A-\lambda I$.
+The pattern in the $\nbyn{2}$ case 
+\begin{equation*}
+  \begin{mat}
+    a_{n-1}-\lambda  &a_{n-2} \\
+    1               &-\lambda
+  \end{mat}
+  =\lambda^2-a_{n-1}\lambda-a_{n-2}
+\end{equation*}
+and the $\nbyn{3}$ case
+\begin{equation*}
+  \begin{mat}
+    a_{n-1}-\lambda  &a_{n-2}   &a_{n-3}  \\
+    1               &-\lambda  &0        \\
+    0               &1         &-\lambda
+  \end{mat}
+  =-\lambda^3+a_{n-1}\lambda^2+a_{n-2}\lambda+a_{n-3}
+\end{equation*}
+leads us to expect, 
+and \nearbyexercise{exer:CharEqnIsDeter} verifies, that
+this is the characteristic equation.
+\begin{align*}
+  0 &=
+  \begin{vmat}
+    a_{n-1}-\lambda &a_{n-2}  &a_{n-3}  &\ldots  &a_{n-k+1} &a_{n-k}  \\
+    1              &-\lambda &0        &\ldots  &0         &0        \\
+    0              &1        &-\lambda                                      \\
+    0              &0        &1                                      \\
+    \vdots         &\vdots &         &\ddots   &           &\vdots  \\
+    0             &0        &0        &\ldots   &1          &-\lambda
+  \end{vmat}                                                           \\
+  &=\pm(-\lambda^k+a_{n-1}\lambda^{k-1}+a_{n-2}\lambda^{k-2}
+       +\dots+a_{n-k+1}\lambda+a_{n-k})
+\end{align*}
+The $\pm$ is not relevant to find the roots
+so we drop it.
+We say that the polynomial 
+$-\lambda^k+a_{n-1}\lambda^{k-1}+a_{n-2}\lambda^{k-2}
+       +\dots+a_{n-k+1}\lambda+a_{n-k}$
+is associated with the recurrence 
+relation.\index{recurrence!associated polynomial}\index{polynomial!associated with recurrence}
+
+If the characteristic equation has no repeated roots 
+then the matrix is diagonalizable
+and we can, in theory, get a formula for $f(n)$, as in the Fibonacci case.
+But because we know that the subspace of solutions has dimension~$k$ 
+we do not need to do the diagonalization calculation, provided that 
+we can exhibit $k$ different 
+linearly independent functions satisfying the relation.
+
+Where $r_1$, $r_2$, \ldots, $r_k$ are the distinct roots,
+consider the functions of powers of those roots, $f_{r_1}(n)=r_1^n$ through
+$f_{r_k}(n)=r_k^n$.
+\nearbyexercise{exer:SoltnsLinRecur} shows that 
+each is a solution of the recurrence and that they form a 
+linearly independent set.
+% So given the homogeneous linear recurrence
+% $f(n+1)=a_nf(n)+\dots+a_{n-k}f(n-k)$
+% (that is, $0=-f(n+1)+a_nf(n)+\dots+a_{n-k}f(n-k)$)
+% we consider the associated equation
+% $0=-\lambda^k+a_n\lambda^{k-1}+\dots+a_{n-k+1}\lambda+a_{n-k}$.
+So, if the roots of 
+the associated polynomial are distinct, 
+any solution of the relation has the form 
+$f(n)=c_1r_1^n+c_2r_2^n+\dots+c_kr_k^n$ for some scalars $c_1, \dots, c_n$.
+(The case of repeated roots is similar but we won't
+cover it here; see any text on Discrete Mathematics.)
+
+Now we bring in the initial conditions. 
+Use them to solve for $c_1$, \ldots, $c_n$.
+For instance, the polynomial associated with the Fibonacci relation is
+$-\lambda^2+\lambda+1$, whose roots are $r_1=(1+\sqrt{5})/2$
+and $r_2=(1-\sqrt{5})/2$
+and so any solution of the Fibonacci recurrence 
+has the form $f(n)=c_1((1+\sqrt{5})/2)^n+c_2((1-\sqrt{5})/2)^n$.
+Use the Fibonacci initial conditions for $n=0$ and $n=1$ 
+\begin{equation*}
+  \begin{linsys}{2}
+    c_1               &+  &c_2               &=  &0  \\
+    (1+\sqrt{5}/2)c_1 &+  &(1-\sqrt{5}/2)c_2 &=  &1
+  \end{linsys}
+\end{equation*}
+and solve to get $c_1=1/\sqrt{5}$ and $c_2=-1/\sqrt{5}$, as we found above.
+
+We close by considering the nonhomogeneous case,
+where the relation has the form
+$f(n+1)=a_nf(n)+a_{n-1}f(n-1)+\dots+a_{n-k}f(n-k)+b$ for some nonzero $b$.
+We only need a small adjustment
+to make the transition from the homogeneous case.
+
+This classic example illustrates:
+in 1883, Edouard Lucas posed the
+Tower of Hanoi\index{Tower of Hanoi} problem.
+\begin{quotation}
+  \noindent
+  In the great temple at Benares, beneath the dome which marks the center 
+  of the world, rests a brass plate in which are fixed three diamond needles,
+  each a cubit high and as thick as the body of a bee.
+  On one of these needles, at the creation,
+  God placed sixty four disks of pure gold, the largest disk resting on 
+  the brass plate, and the others getting smaller and smaller up to the
+  top one.
+  This is the Tower of Brahma.
+  Day and night unceasingly the priests transfer the disks from one diamond
+  needle to another according to the fixed and immutable laws of Bram-ah,
+  which require that the priest on duty must not move more than one disk at a 
+  time and that he must place this disk on a needle so that there is no
+  smaller disk below it.
+  When the sixty-four disks shall have been thus transferred from the needle
+  on which at the creation God placed them to one of the other needles,
+  tower, temple, and Brahmins alike will crumble into dusk, and with
+  a thunderclap the world will vanish.
+  (Translation of \cite{DeParville} from \cite{Ball}.)
+\end{quotation}
+We put aside the question of why the priests don't sit down for a while
+and have the world last a little longer, and instead ask
+how many disk moves it will take.
+Before tackling the sixty~four disk problem 
+we will consider the 
+problem for three disks.
+
+To begin, all three disks are on the same needle.
+\begin{center}
+  \includegraphics{jc/mp/ch5.6}
+\end{center}
+After the three moves of taking the small disk to the far needle, 
+the mid-sized disk to the
+middle needle, and then the small disk to the middle needle,
+we have this. 
+\begin{center}
+  \includegraphics{jc/mp/ch5.7}
+\end{center}
+Now we can  move the big disk to the far needle.
+Then to finish we repeat the three-move process on the two smaller 
+disks, this time so that they end up on the third needle, 
+on top of the big disk.
+
+That sequence of moves is the best that we can do.
+To move the bottom disk
+at a minimum we must first move the smaller disks to the middle needle, 
+then move the big one,
+and then move all the smaller ones from the middle needle 
+to the ending needle. 
+Since this minimum suffices, we get this recurrence.
+\begin{equation*}
+  T(n)=T(n-1)+1+T(n-1)=2T(n-1)+1 \qquad \text{where $T(1)=1$}
+\end{equation*} 
+Here are the first few values of $T$.
+\begin{center}
+  \begin{tabular}{r|cccccccccc}
+    \textit{disks}~$n$             
+       &1  &2  &3  &4  &5  &6     &7    &8    &9   &10  \\
+    \hline
+    \textit{moves}~$T(n)$ 
+       &1  &3  &7  &15  &31  &63  &127  &255  &511 &1023 
+  \end{tabular}
+\end{center}
+Of course, these numbers are one less than a power of two.
+To derive this 
+write the original relation as $-1=-T(n)+2T(n-1)$.
+Consider $0=-T(n)+2T(n-1)$, a linear homogeneous recurrence of order~$1$. 
+Its associated polynomial is $-\lambda+2$, 
+with the single root $r_1=2$.
+Thus
+functions satisfying the homogeneous relation take the form $c_12^n$.
+
+That's the homogeneous solution.
+Now we need a particular solution. 
+Because the nonhomogeneous relation $-1=-T(n)+2T(n-1)$ is so simple, 
+we can by eye spot a particular solution $T(n)=-1$.
+Any solution of the recurrence 
+$T(n)=2T(n-1)+1$ (without initial conditions)
+is the sum of the homogeneous solution and the
+particular solution: $c_12^n-1$.
+Now the initial condition $T(1)=1$ gives that $c_1=1$ and we've gotten
+the formula that generates the table:~the $n$-disk Tower of Hanoi problem 
+requires $T(n)=2^n-1$ moves.
+
+Finding a particular solution in more complicated cases is, 
+perhaps not surprisingly,
+more complicated.
+A delightful and rewarding, but challenging, source 
+is \cite{GrahamKnuthPatashnik}.
+For more on the Tower of Hanoi see \cite{Ball}, \cite{Gardner57}, 
+and \cite{Hofstadter}.
+Some computer code follows the 
+exercises.
+
+\begin{exercises}
+  \item 
+   How many months until the number of Fibonacci rabbit pairs
+   passes a thousand?
+   Ten thousand?
+   A million?
+   \begin{answer}
+     We use the formula
+     \begin{equation*}
+       F(n)=\frac{1}{\sqrt{5}}\left[\left(\frac{1+\sqrt{5}}{2}\right)^{n}
+                               -\left(\frac{1-\sqrt{5}}{2}\right)^{n}\right]
+     \end{equation*}
+     As observed earlier, $(1+\sqrt{5})/2$ is larger than one 
+     while $(1+\sqrt{5})/2$ has absolute value less than one.
+\begin{lstlisting}
+sage: phi = (1+5^(0.5))/2
+sage: psi = (1-5^(0.5))/2
+sage: phi
+1.61803398874989
+sage: psi
+-0.618033988749895       
+\end{lstlisting}
+     So the value of the expression is dominated by the first term.
+     Solving $1000=(1/\sqrt{5})\cdot ((1+\sqrt{5})/2)^n$ gives
+     this.
+\begin{lstlisting}
+sage: a = ln(1000*5^(0.5))/ln(phi)
+sage: a
+16.0271918385296
+sage: psi^(17)
+-0.000280033582072583       
+\end{lstlisting}
+   So by the seventeenth power, the second term does not contribute 
+   enough to change the roundoff.
+   For the ten thousand and million calculations the situation is even
+   more extreme.
+\begin{lstlisting}
+sage: b = ln(10000*5^(0.5))/ln(phi)
+sage: b
+20.8121638053112
+sage: c = ln(1000000*5^(0.5))/ln(phi)
+sage: c
+30.3821077388746    
+\end{lstlisting}
+   The answers in these cases are $21$ and $31$.
+   \end{answer}
+  \item 
+   Solve each homogeneous linear recurrence relations.
+   \begin{exparts}
+     \partsitem $f(n)=5f(n-1)-6f(n-2)$   
+     \partsitem $f(n)=4f(n-2)$   
+     \partsitem $f(n)=5f(n-1)-2f(n-2)-8f(n-3)$   
+   \end{exparts}
+   \begin{answer}
+    \begin{exparts}
+      \partsitem 
+        We express the relation in matrix form.
+        \begin{equation*}
+          \colvec{f(n) \\ f(n-1)}
+          =
+          \begin{mat}[r]
+            5  &-6  \\
+            1  &0
+          \end{mat}
+          \colvec{f(n-1) \\ f(n-2)}
+        \end{equation*}
+        The characteristic equation of the matrix
+        \begin{equation*}
+          \begin{vmat}
+            5-\lambda &-6       \\
+            1         &-\lambda
+          \end{vmat}
+          =\lambda^2-5\lambda+6 
+        \end{equation*}
+        has roots of $2$ and $3$.
+        Any function of the form
+        $f(n)=c_12^n+c_23^n$
+        satisfies the recurrence.
+      \partsitem 
+        The matrix expression of the relation is 
+        \begin{equation*}
+          \colvec{f(n) \\ f(n-1)}
+          =
+          \begin{mat}[r]
+            0  &4  \\
+            1  &0  
+          \end{mat}
+          \colvec{f(n-1) \\ f(n-2)}
+        \end{equation*}
+        and the characteristic equation
+        \begin{equation*}
+          \begin{vmat}
+            \lambda^2-2       
+          \end{vmat}
+          =(\lambda-2)(\lambda+2)
+        \end{equation*}
+        has the two roots $2$ and $-2$.
+        Any function of the form
+        $f(n)=c_12^n+c_2(-2)^n$
+        satisfies this recurrence.
+      \partsitem 
+        In matrix form the relation
+        \begin{equation*}
+          \colvec{f(n) \\ f(n-1) \\ f(n-2)}
+          =
+          \begin{mat}[r]
+            5  &-2  &-8  \\
+            1  &0  &0  \\
+            0  &1  &0
+          \end{mat}
+          \colvec{f(n-1) \\ f(n-2) \\ f(n-3)}
+        \end{equation*}
+        has a characteristic equation with roots $-1$, $2$, and $4$.
+        Any combination of the form
+        $c_1(-1)^n+c_22^n+c_34^n$ solves the recurrence.
+    \end{exparts} 
+   \end{answer}
+  \item \label{exer:SolvePartRecurSoltn} 
+    Give a formula for the relations of the prior exercise, with
+    these initial conditions.
+    \begin{exparts}
+      \partsitem $f(0)=1$, $f(1)=1$
+      \partsitem $f(0)=0$, $f(1)=1$
+      \partsitem $f(0)=1$, $f(1)=1$, $f(2)=3$.      
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem The solution of the homogeneous recurrence is
+          $f(n)=c_12^n+c_23^n$.
+          Substituting $f(0)=1$ and $f(1)=1$ gives this linear system.
+          \begin{equation*}
+            \begin{linsys}{2}
+              c_1 &+ &c_2   &= &1 \\
+             2c_1 &+ &3c_2  &= &1
+            \end{linsys}
+          \end{equation*}
+          By eye we see that $c_1=2$ and $c_2=-1$.
+        \partsitem
+          The solution of the homogeneous recurrence is 
+          $c_12^n+c_2(-2)^n$.
+          The initial conditions give this linear system.
+          \begin{equation*}
+            \begin{linsys}{2}
+              c_1 &+ &c_2  &= &0  \\
+             2c_1 &- &2c_2 &= &1
+            \end{linsys}
+          \end{equation*}
+          The solution is $c_1=1/4$, $c_2=-1/4$.
+        \partsitem
+          The homogeneous recurrence has the solution
+          $f(n)=c_1(-1)^n+c_22^n+c_34^n$.
+          With the initial conditions we get this linear system.
+          \begin{equation*}
+            \begin{linsys}{3}
+              c_1 &+  &c_2   &+  &c_3  &= &1 \\
+             -c_1 &+  &2c_2  &+  &4c_3  &= &1 \\
+              c_1 &+  &4c_2  &+  &16c_3  &= &3
+            \end{linsys}
+          \end{equation*}
+          Its solution is $c_1=1/3$, $c_2=2/3$, $c_3=0$.
+      \end{exparts}
+    \end{answer}
+  \item \label{exer:SeqToRnLinMap}
+    Check that the isomorphism given between $S$ and $\Re^k$ is a linear map. 
+    % We argue above that this map is one-to-one.
+    % What is its inverse?
+    \begin{answer}
+      Fix a linear homogeneous recurrence of order~$k$.
+      Let $S$ be the set of functions $\map{f}{\N}{\C}$ satisfying the
+      recurrence.
+      Consider the function $\map{\Phi}{S}{\C^k}$ given as here.
+      \begin{equation*}
+        f\mapsunder{\Phi}\colvec{f(0) \\ f(1) \\ \vdots \\ f(k-1)}
+      \end{equation*}
+      This shows linearity.
+      \begin{multline*}
+        \Phi(a\cdot f_1+b\cdot f_2)
+        =
+        \colvec{af_1(0)+bf_2(0) \\ \vdots \\ af_1(k-1)+bf_2(k-1)}     \\
+        =
+        a\colvec{f_1(0) \\ \vdots \\ f_1(k-1)}
+        +
+        b\colvec{f_2(0) \\ \vdots \\ f_2(k-1)}
+        =a\cdot \Phi(f_1)+b\cdot \Phi(f_2)
+      \end{multline*}
+    \end{answer}
+  \item \label{exer:CharEqnIsDeter}
+    Show that the characteristic equation of the matrix is as stated, that is,
+    is the polynomial associated with the relation.
+    (\textit{Hint:} expanding down the final column and using induction 
+    will work.)
+    \begin{answer}
+      We use the hint to prove this.
+      \begin{align*}
+        0 &=
+        \begin{vmat}
+          a_{n-1}-\lambda &a_{n-2}  &a_{n-3}  &\ldots  &a_{n-k+1} &a_{n-k}  \\
+          1              &-\lambda &0        &\ldots  &0         &0        \\
+          0              &1        &-\lambda                               \\
+          0              &0        &1                                      \\
+          \vdots         &\vdots &         &\ddots   &           &\vdots  \\
+          0             &0        &0        &\ldots   &1          &-\lambda
+        \end{vmat}                                                           \\
+        &=(-1)^{k-1}(-\lambda^k+a_{n-1}\lambda^{k-1}+a_{n-2}\lambda^{k-2}       
+               +\dots+a_{n-k+1}\lambda+a_{n-k})                      \\
+        &=\pm(-\lambda^k+a_{n-1}\lambda^{k-1}+a_{n-2}\lambda^{k-2}       
+               +\dots+a_{n-k+1}\lambda+a_{n-k})
+      \end{align*}
+      The base step is trivial.
+      For the inductive step, 
+      expanding down the final column gives two nonzero terms.
+      \begin{equation*}
+        (-1)^{k-1}a_{n-k}\cdot 1
+        -\lambda\cdot
+        \begin{vmat}
+          a_{n-1}-\lambda &a_{n-2}  &a_{n-3}  &\ldots  &a_{n-k+1}  \\
+          1              &-\lambda &0        &\ldots  &0       \\
+          0              &1        &-\lambda                               \\
+          0              &0        &1                                      \\
+          \vdots         &\vdots &         &\ddots   &        \\
+          0             &0        &0        &\ldots   &1     
+        \end{vmat}                                                          
+      \end{equation*}
+      (The matrix is square so the sign in front of $-\lambda$
+      is $-1^{\text{even}}$).
+      Application of the inductive hypothesis gives the desired result.
+      \begin{multline*}
+        =(-1)^{k-1}a_{n-k}\cdot 1                     \\
+        -\lambda\cdot
+         (-1)^{k-2}(-\lambda^{k-1}+a_{n-1}\lambda^{k-2}+a_{n-2}\lambda^{k-3}       
+               +\dots+a_{n-k+1}\lambda^0)
+      \end{multline*}
+    \end{answer}
+  \item \label{exer:SoltnsLinRecur}
+    Given a homogeneous linear recurrence relation
+    $f(n)=a_nf(n-1)+\dots+a_{n-k}f(n-k)$, let $r_1$, \ldots, $r_k$ be the
+    roots of the associated polynomial.
+    Prove that each function 
+         $f_{r_i}(n)=r_k^n$
+         satisfies the recurrence (without initial conditions).
+    \begin{answer}
+       This is a straightforward induction on $n$.
+    \end{answer}
+  \item 
+    (This refers to the value $T(64)=18,446,744,073,709,551,615$
+    given in the computer code below.)
+    Transferring one disk per second, how many years would it take
+    the priests at the Tower of Hanoi to finish the job?
+    \begin{answer}
+      \Sage{} says that we are safe.
+\begin{lstlisting}
+sage: T64 = 18446744073709551615
+sage: T64_days = T64/(60*60*24)
+sage: T64_days
+1229782938247303441/5760
+sage: T64_years = T64_days/365.25
+sage: T64_years
+5.84542046090626e11        
+sage: age_of_universe = 13.8e9
+sage: T64_years/age_of_universe
+42.3581192819294
+\end{lstlisting}
+    \end{answer}
+
+\end{exercises}
+
+\announcecomputercode
+This code generates the first few values of a function 
+defined by a recurrence and initial conditions.
+It is in the Scheme dialect of LISP,
+specifically, \cite{ChickenScheme}.
+
+After loading an extension that keeps the computer from switching to
+floating point numbers when the integers get large,
+the Tower of Hanoi function is straightforward.
+\begin{lstlisting}
+(require-extension numbers)
+
+(define (tower-of-hanoi-moves n) 
+    (if (= n 1)
+       1
+       (+ (* (tower-of-hanoi-moves (- n 1)) 
+              2) 
+           1) ) )
+
+; Two helper funcitons
+(define (first-few-outputs proc n)
+    (first-few-outputs-aux proc n '()) )
+
+(define (first-few-outputs-aux proc n lst)
+    (if (< n 1)
+    lst 
+    (first-few-outputs-aux proc (- n 1) (cons (proc n) lst)) ) )
+\end{lstlisting}
+\noindent (For readers unused to recursive code:~to compute $T(64)$, 
+the computer wants to compute $2*T(63)-1$, which requires
+computing $T(63)$.
+The computer puts the `times $2$' and the `plus $1$' aside for a moment.
+It computes  $T(63)$ by using this same piece of code (that's 
+what `recursive' means), and to do that it wants to compute $2*T(62)-1$.
+This keeps up until, after $63$ steps, the computer
+tries to compute $T(1)$.
+It then returns $T(1)=1$, 
+which allows the computation of $T(2)$ to proceed,
+etc., until the original computation of $T(64)$ finishes.)
+
+The helper functions give a table of the first few 
+values.
+% (Some language notes:~\texttt{'()} is the empty list
+% and \texttt{cons} pushes something onto the start of a 
+% list.
+% Note that, in the last line, the function \texttt{proc}
+% is called on argument \texttt{n}.)
+Here is the session at the prompt.
+\begin{lstlisting}
+#;1> (load "hanoi.scm")
+; loading hanoi.scm ...
+; loading /var/lib//chicken/6/numbers.import.so ...
+; loading /var/lib//chicken/6/chicken.import.so ...
+; loading /var/lib//chicken/6/foreign.import.so ...
+; loading /var/lib//chicken/6/numbers.so ...
+#;2> (tower-of-hanoi-moves 64)
+18446744073709551615
+#;3> (first-few-outputs tower-of-hanoi-moves 64)
+(1 3 7 15 31 63 127 255 511 1023 2047 4095 8191 16383 32767 65535 131071 262143 524287 1048575 
+2097151 4194303 8388607 16777215 33554431 67108863 134217727 268435455 536870911 1073741823 
+2147483647 4294967295 8589934591 17179869183 34359738367 68719476735 137438953471 274877906943 
+549755813887 1099511627775 2199023255551 4398046511103 8796093022207 17592186044415 
+35184372088831 70368744177663 140737488355327 281474976710655 562949953421311 1125899906842623 
+2251799813685247 4503599627370495 9007199254740991 18014398509481983 36028797018963967 
+72057594037927935 144115188075855871 288230376151711743 576460752303423487 1152921504606846975 
+2305843009213693951 4611686018427387903 9223372036854775807 18446744073709551615)
+\end{lstlisting}
+\noindent This is a list of $T(1)$ through $T(64)$ (the session was 
+edited to put in line breaks for readability).
+\index{recurrence relation|)}
+\index{linear recurrence|)}
+\endinput
+

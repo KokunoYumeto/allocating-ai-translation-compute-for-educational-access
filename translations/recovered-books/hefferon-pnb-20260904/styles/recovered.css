@@ -1,0 +1,48 @@
+@font-face{font-family:Shahmukhi;src:url('../assets/fonts/NotoNastaliqUrdu.ttf') format('truetype');font-weight:400 700;font-display:swap}
+@font-face{font-family:ShahmukhiPrint;src:url('../assets/fonts/Amiri-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+body{font-family:Shahmukhi,'Noto Nastaliq Urdu',serif;font-size:19px;line-height:2.45}
+header,main,footer{max-width:1040px;padding:2rem 3.4rem}
+header{padding-block-end:1.2rem}h1{font-size:2.25rem;line-height:2.4}h2{font-size:1.6rem;line-height:2.35}h3{line-height:2.35}
+.b40-cover .source-cover-component img{min-width:0;max-width:100%}
+.reader-intro{border-block-end:1px solid #c5d8cf;padding-block-end:1rem}
+.toc-chapter{margin-block:1.8rem}.toc-chapter ol{list-style:none;padding:0}.toc-chapter li{padding:.35rem .5rem;border-block-end:1px solid #dae4dc;break-inside:avoid}
+.toc-chapter li[data-depth='2']{padding-inline-start:2rem}.toc-chapter li[data-depth='1']{font-weight:600}
+.toc-label{font-family:'Segoe UI',sans-serif;font-size:.85rem;display:inline-block;min-width:2rem;margin-left:.7rem}
+.toc-english{display:block;font-family:'Segoe UI',sans-serif;font-weight:400;font-size:.84rem;line-height:1.5;color:#435957;text-align:left;margin-block:.35rem}
+.optional-star{font-family:serif;vertical-align:super}
+.b40-opening .source-notation{min-width:0;table-layout:fixed}.source-notation td:first-child{width:40%}
+.b40-opening .source-notation td{overflow-wrap:anywhere}.b40-opening .source-greek{min-width:640px}
+.b40-opening table{font-size:1rem;line-height:2.4}.b40-opening #bridge-glossary{min-width:720px;table-layout:fixed}
+#bridge-glossary th:nth-child(1){width:16%}#bridge-glossary th:nth-child(2){width:44%}#bridge-glossary td[lang='en']{font-family:'Segoe UI',sans-serif;line-height:1.7}
+.worked-example{border-block-start:2px solid #b9d2c5;padding-block:1rem}
+.equation{font-family:'Cambria Math',serif;line-height:1.6;overflow-x:auto}
+#bridge-system-figure img{min-width:0;max-width:620px;display:block;margin:auto;padding:0}
+#bridge-answers details{background:#edf4ef;padding:.4rem .8rem}
+.technical-status{font-size:.95rem}.skip-link{position:absolute;top:-100px}.skip-link:focus{top:1rem;background:white;padding:1rem}
+.b40-opening .term-grid{display:block}
+.b40-opening .term-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:.5rem 1.2rem;border-block-end:1px solid #dae4dc;padding:.5rem 0}
+.b40-opening .term-row dt{font-family:'Segoe UI',sans-serif;font-size:.9rem;line-height:1.6;align-self:center}
+.b40-opening .term-row dd{margin:0}
+footer{font-family:'Segoe UI',sans-serif;font-size:14px;line-height:1.7}
+@media(max-width:600px){body{font-size:18px}header,main,footer{padding:1rem 1.1rem}h1{font-size:1.65rem}h2{font-size:1.3rem}.source-notation td{font-size:.9rem}.toc-chapter li[data-depth='2']{padding-inline-start:1rem}}
+@page{size:A4;margin:17mm 18mm 18mm}
+@media print{
+ body{font-family:Arial,ShahmukhiPrint,serif;font-size:12pt;line-height:1.85;background:white}header,main,footer{padding:0;max-width:none}
+ h1{font-size:22pt}h2{font-size:17pt}h3{font-size:13pt}h2,h3{break-after:avoid;break-inside:avoid}
+ nav,.skip-link,.tex-link,#b40-opening-source-math{display:none!important}
+ .b40-cover{break-after:page}#b40-contents,#b40-opening-original-notes{break-before:page}
+ .b40-opening .source-cover-component img,.b40-opening .source-cover-component:first-child img{height:32mm;max-height:32mm;width:auto}
+ .source-cover-component figcaption{font-size:8pt;line-height:1.8}.reader-intro{font-size:10pt;line-height:1.8}
+ .b40-opening table{font-size:10.5pt;line-height:2.25}.b40-opening .source-greek,.b40-opening #bridge-glossary{min-width:0;table-layout:fixed}
+ .b40-opening .source-table-scroll,.table-scroll{overflow:visible;border:0}
+ .toc-chapter li{break-inside:avoid}.toc-chapter{break-inside:auto}.toc-english{font-size:9pt}
+ .b40-opening .source-math{max-width:none}.source-notation td:first-child{width:42%}
+ .worked-example,aside{break-inside:auto}figure,tr{break-inside:avoid}
+ #bridge-answers details{break-inside:avoid}.b40-opening #bridge-glossary td{overflow-wrap:anywhere}
+ .source-mark,math,bdi{color:black}a{color:inherit;text-decoration:none}
+ .source-quote em{font-style:normal}
+ .source-quote{break-inside:avoid}
+ .b40-opening .term-grid{display:block}.b40-opening .term-row{break-inside:avoid;padding:2mm 0}
+ .b40-opening .term-row dt{font-size:10pt;line-height:1.5}.b40-opening .term-row dd{font-size:11pt;line-height:1.8}
+ .b40-opening .original-note,#terminology-status{break-inside:avoid}
+}

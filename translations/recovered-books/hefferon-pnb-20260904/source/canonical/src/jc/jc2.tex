@@ -1,0 +1,4859 @@
+% Chapter 4, Section 2 _Linear Algebra_ Jim Hefferon
+%  http://joshua.smcvt.edu/linearalgebra
+%  2001-Jun-12
+\section{Similarity}
+\index{similarity|(}
+%<*SimilarityMotiviation0>
+We've defined two matrices \( H \) and \( \hat{H} \) to be
+matrix equivalent if there are nonsingular \( P \) and \( Q \)
+such that \( \hat{H}=PHQ \).
+We were motivated by this diagram
+showing $H$ and $\hat{H}$ both representing a map 
+$h$, but with respect to different
+pairs of bases, $B,D$ and $\hat{B},\hat{D}$.
+\begin{equation*}
+  \begin{CD}
+    V_{\wrt{B}}                   @>h>H>        W_{\wrt{D}}       \\
+    @V{\scriptstyle\identity} VV             @V{\scriptstyle\identity} VV \\
+    V_{\wrt{\hat{B}}}             @>h>\hat{H}>  W_{\wrt{\hat{D}}}
+  \end{CD}
+\end{equation*}
+%</SimilarityMotiviation0>
+
+%<*SimilarityMotiviation1>
+We now consider the special case of transformations, 
+where the codomain equals the domain, and we add the requirement
+that the codomain's basis equals the domain's basis.
+So, we are considering representations with respect to 
+$B,B$ and $D,D$.\index{arrow diagram}
+\begin{equation*}
+  \begin{CD}
+    V_{\wrt{B}}                   @>t>T>        V_{\wrt{B}}       \\
+    @V{\scriptstyle\identity} VV              @V{\scriptstyle\identity} VV \\
+    V_{\wrt{D}}                   @>t>\hat{T}>        V_{\wrt{D}}
+  \end{CD}
+\end{equation*}
+In matrix terms, 
+\(\rep{t}{D,D}
+  =\rep{\identity}{B,D}\;\rep{t}{B,B}\;\bigl(\rep{\identity}{B,D}\bigr)^{-1} \).
+%</SimilarityMotiviation1>
+
+
+
+\subsection{Definition and Examples}
+\begin{example}
+Consider the derivative transformation
+$\map{d/dx}{\polyspace_2}{\polyspace_2}$,
+and two bases for that space
+$B=\sequence{x^2,x,1}$ and
+$D=\sequence{1,1+x,1+x^2}$
+We will compute the four sides of the arrow square.
+\begin{equation*}
+  \begin{CD}
+    {\polyspace_2\,}_{\wrt{B}}                   @>d/dx>T>        {\polyspace_2\,}_{\wrt{B}}       \\
+    @V{\scriptstyle\identity} VV              @V{\scriptstyle\identity} VV \\
+    {\polyspace_2\,}_{\wrt{D}}                   @>d/dx>\hat{T}>        {\polyspace_2\,}_{\wrt{D}}
+  \end{CD}
+\end{equation*}
+The top is first.
+The effect of the transformation on the starting basis~$B$
+\begin{equation*}
+  x^2\mapsunder{d/dx} 2x
+  \qquad
+  x\mapsunder{d/dx} 1
+  \qquad
+  1\mapsunder{d/dx} 0
+\end{equation*}
+represented with respect to the ending basis (also~$B$)
+\begin{equation*}
+  \rep{2x}{B}=\colvec{0 \\ 2 \\ 0}
+  \qquad
+  \rep{1}{B}=\colvec{0 \\ 0 \\ 1}
+  \qquad
+  \rep{0}{B}=\colvec{0 \\ 0 \\ 0}
+\end{equation*}
+gives the representation 
+of the map.
+\begin{equation*}
+  T=
+  \rep{d/dx}{B,B}=
+  \begin{mat}
+    0 &0 &0 \\
+    2 &0 &0 \\
+    0 &1 &0
+  \end{mat}
+\end{equation*}
+
+Next, computing the matrix for the right-hand side involves
+finding the effect of the identity map on the elements of~$B$.
+Of course, the identity map does not transform them at all so
+to find the matrix we represent $B$'s elements with respect 
+to~$D$.
+\begin{equation*}
+  \rep{x^2}{D}=\colvec{-1 \\ 0 \\ 1}
+  \quad
+  \rep{x}{D}=\colvec{-1 \\ 1 \\ 0}
+  \quad
+  \rep{1}{D}=\colvec{1 \\ 0 \\ 0}
+\end{equation*}
+So the matrix for going down the right side is the concatenation of those.
+\begin{equation*}
+  P=\rep{id}{B,D}=
+  \begin{mat}
+    -1 &-1  &1 \\
+     0 &1   &0 \\
+     1 &0   &0   
+  \end{mat}
+\end{equation*}
+
+With that, we have two options to compute the matrix for going up on 
+left side.
+The direct computation represents elements of~$D$ with
+respect to~$B$
+\begin{equation*}
+  \rep{1}{B}=\colvec{0 \\ 0 \\ 1}
+  \quad
+  \rep{1+x}{B}=\colvec{0 \\ 1 \\ 1}
+  \quad
+  \rep{1+x^2}{B}=\colvec{1 \\ 0 \\ 1}
+\end{equation*}
+and concatenates to make the matrix.
+\begin{equation*}
+  \begin{mat}
+    0 &0 &1 \\
+    0 &1 &0 \\ 
+    1 &1 &1
+  \end{mat}
+\end{equation*}
+The other option to compute the matrix for going up on the left 
+is to take the inverse of the matrix~$P$ for
+going down on the right.
+\begin{equation*}
+  \begin{pmat}{ccc|ccc}
+    -1 &-1 &1 &1 &0 &0 \\
+     0 &1  &0 &0 &1 &0 \\
+     1 &0  &0 &0 &0 &1
+  \end{pmat}
+  % \grstep{\rho_1+\rho_3}
+  % \grstep{\rho_2+\rho_3}
+  % \grstep{-\rho_1}
+  % \grstep{\rho_3+\rho_1}
+  % \grstep{-\rho_2+\rho_1}
+  \grstep{}
+  \cdots
+  \grstep{}
+  \begin{pmat}{ccc|ccc}
+     1 &0  &0 &0 &0 &1 \\
+     0 &1  &0 &0 &1 &0 \\
+     0 &0  &1 &1 &1 &1
+  \end{pmat}
+\end{equation*}
+
+That leaves the bottom  of the square.
+There are two ways to compute the matrix~$\hat{T}$.
+One is to compute it directly by
+finding the effect of the transformation on elements of~$D$
+\begin{equation*}
+  1\mapsunder{d/dx} 0
+  \qquad
+  1+x\mapsunder{d/dx} 1
+  \qquad
+  1+x^2\mapsunder{d/dx} 2x
+\end{equation*}
+represented with respect to~$D$.
+\begin{equation*}
+  \hat{T}=
+  \rep{d/dx}{D,D}=
+  \begin{mat}
+    0 &1 &-2 \\
+    0 &0 &2 \\
+    0 &0 &0
+  \end{mat}
+\end{equation*}
+The other way to compute~$\hat{T}$, and this is the way we will usually do it,
+is to follow the diagram up, over, and then down.
+\begin{align*}
+  \rep{d/dx}{D,D}
+  &=\rep{\identity}{B,D}\,\rep{d/dx}{B,B}\,\rep{\identity}{D,B}  \\
+  \hat{T}
+  &=\rep{\identity}{B,D}\,T\,\rep{\identity}{D,B}   \\
+  &=  
+  \begin{mat}
+    -1 &-1  &1 \\
+     0 &1   &0 \\
+     1 &0   &0   
+  \end{mat}
+  \begin{mat}
+    0 &0 &0 \\
+    2 &0 &0 \\
+    0 &1 &0
+  \end{mat}
+  \begin{mat}
+    0 &0 &1 \\
+    0 &1 &0 \\ 
+    1 &1 &1
+  \end{mat}
+\end{align*}
+Multiplying out gives the same matrix~$\hat{T}$ as we found above.
+\end{example}
+
+\begin{definition} \label{df:Similar}
+%<*df:Similar>
+The matrices  \( T \) and $\hat{T}$ are 
+\definend{similar}\index{matrix!similarity}%
+\index{equivalence relation!matrix similarity}\index{similar matrices}
+if there is a nonsingular \( P \) such that
+$
+  \hat{T}=PTP^{-1}
+$.
+%</df:Similar>
+\end{definition}
+
+\noindent Since nonsingular matrices are square, 
+$T$ and $\hat{T}$ must
+be square and of the same size.
+\nearbyexercise{exer:SimIsEquivRel} checks that
+similarity is an equivalence relation.
+
+\begin{example}
+The definition does not require that we consider a map.
+Calculation with these two
+\begin{equation*}
+  P=
+  \begin{mat}[r]
+    2  &1  \\
+    1  &1
+  \end{mat}
+  \qquad
+  T=
+  \begin{mat}[r]
+    2  &-3  \\
+    1  &-1
+  \end{mat}
+\end{equation*}
+gives that $T$ is similar to this matrix.
+\begin{equation*}
+  \hat{T}=
+  \begin{mat}[r]
+    12  &-19  \\
+    7  &-11
+  \end{mat}
+\end{equation*}
+\end{example}
+
+\begin{example}  \label{ex:OnlyZeroSimToZero}
+%<*ex:OnlyZeroSimToZero>
+The only matrix similar to the zero matrix is itself:~$PZP^{-1}=PZ=Z$.
+The identity matrix has the same property:~$PIP^{-1}=PP^{-1}=I$.
+%</ex:OnlyZeroSimToZero>
+\end{example}
+
+A common special case is where the vector space is $\C^n$ and the
+matrix~$T$ represents a map with respect to the standard bases.
+\begin{equation*}
+  \begin{CD}
+    \C^n_{\wrt{E_n}}                   @>t>T>        \C^n_{\wrt{E_n}}       \\
+    @V{\scriptstyle\identity} VV              @V{\scriptstyle\identity} VV \\
+    \C^n_{\wrt{D}}                   @>t>\hat{T}>        \C^n_{\wrt{D}}
+  \end{CD}
+\end{equation*}
+In this case in the similarity equation 
+$\hat{T}=PTP^{-1}$, the columns of~$P$ are the elements of~$D$. 
+
+Matrix similarity is a special case of matrix equivalence so 
+if two matrices are similar then they are matrix equivalent.
+What about the converse:~if they are square, 
+must any two matrix equivalent matrices be similar?
+No; the matrix equivalence class
+of an identity matrix consists of all nonsingular matrices of that size
+while the prior example shows that the only member of the similarity class 
+of an identity matrix is itself. 
+Thus these two are
+matrix equivalent but not similar.
+\begin{equation*}
+  T=
+  \begin{mat}[r]
+    1  &0  \\
+    0  &1
+  \end{mat}
+  \qquad
+  S=
+  \begin{mat}[r]
+    1  &2  \\
+    0  &3
+  \end{mat}
+\end{equation*}
+So some matrix equivalence classes
+split into two or more similarity classes\Dash similarity gives a finer
+partition than does matrix equivalence.
+This shows some matrix equivalence classes subdivided into
+similarity classes.
+\begin{center}
+  \includegraphics{jc/mp/ch5.4}
+\end{center}
+
+To understand the similarity relation we shall study the similarity classes.
+We approach this question in the same way that we've studied both the
+row equivalence and matrix equivalence relations, by finding
+a canonical form for
+representatives % \appendrefs{representatives}\spacefactor=1000 %
+of the similarity classes, called Jordan form.
+With this canonical form, we can decide if two matrices are similar by checking
+whether they are in a class with the same representative.
+We've also seen with both row equivalence and matrix equivalence that a
+canonical form gives us insight into the ways in which members of
+the same class are alike
+(e.g., two identically-sized matrices are matrix equivalent
+if and only if they have the same rank).
+%(Along the way we shall see ideas that are interesting and important
+%in their own right, not just as stepping stones to Jordan form.)
+
+\begin{exercises}
+  \item 
+    For
+    \begin{equation*}
+      T=
+      \begin{mat}[r]
+        1  &3  \\
+       -2  &-6
+      \end{mat}
+      \quad
+      \hat{T}=
+      \begin{mat}[r]
+        0    &0  \\
+       -11/2 &-5
+      \end{mat}
+      \quad
+      P=
+      \begin{mat}[r]
+        4  &2  \\
+       -3  &2
+      \end{mat}
+    \end{equation*}
+    check that $\hat{T}=PTP^{-1}$.
+    \begin{answer}
+      One way to proceed is left to right.
+      \begin{multline*}
+        PTP^{-1}=
+        \begin{mat}[r]
+          4  &2  \\
+         -3  &2
+        \end{mat}
+        \begin{mat}[r]
+          1  &3  \\
+         -2  &-6
+        \end{mat}
+        \begin{mat}[r]
+          2/14  &-2/14  \\
+          3/14  &4/14
+        \end{mat}                                 \\
+        =
+        \begin{mat}[r]
+          0  &0  \\
+         -7  &-21
+        \end{mat}  
+        \begin{mat}[r]
+          2/14  &-2/14  \\
+          3/14  &4/14
+        \end{mat}
+        =
+        \begin{mat}[r]
+          0    &0  \\
+         -11/2 &-5
+        \end{mat}
+      \end{multline*}
+    \end{answer}
+  \item
+    \nearbyexample{ex:OnlyZeroSimToZero} shows that the only matrix similar
+    to a zero matrix is itself and that 
+    the only matrix similar to the identity
+    is itself.
+    \begin{exparts}
+      \partsitem Show that the $\nbyn{1}$ matrix whose single entry is $2$
+         is also similar only to itself.
+      \partsitem Is a matrix of the form $cI$ for some scalar $c$
+         similar only to itself?
+     \partsitem Is a diagonal matrix similar only to itself?
+     % \partsitem Is a square block partial-identity matrix similar only to 
+     % itself?
+    \end{exparts}
+    \begin{answer}
+     \begin{exparts}
+      \partsitem Because the matrix $(2)$ is $\nbyn{1}$, the matrices
+         $P$ and $P^{-1}$ are also $\nbyn{1}$ and so where
+         $P=(p)$ the inverse is $P^{-1}=(1/p)$.  
+         Thus $P(2)P^{-1}=(p)(2)(1/p)=(2)$.
+      \partsitem Yes:~recall that we can bring scalar multiples out 
+        of a matrix \( P(cI)P^{-1}=cPIP^{-1}=cI \).
+        By the way, the zero and identity matrices are the special cases
+        $c=0$ and $c=1$.
+      \partsitem No, as this example shows.
+        \begin{equation*}
+           \begin{mat}[r]
+              1  &-2  \\
+             -1  &1
+            \end{mat}
+           \begin{mat}[r]
+             -1  &0   \\
+              0  &-3
+           \end{mat}
+           \begin{mat}[r]
+              -1  &-2   \\
+              -1  &-1
+           \end{mat}
+           =
+           \begin{mat}[r]
+              -5  &-4   \\
+              2   &1
+           \end{mat}
+        \end{equation*} 
+    \end{exparts}  
+   \end{answer}
+  \recommended \item Consider this transformation of~$\C^3$
+    \begin{equation*}
+      t(\colvec{x \\ y \\ z})=\colvec{x-z \\ z \\ 2y}
+    \end{equation*}
+    and these bases.
+    \begin{equation*}
+      B=\sequence{\colvec{1 \\ 2 \\ 3}, 
+                  \colvec{0 \\ 1 \\ 0}, 
+                  \colvec{0 \\ 0 \\ 1}}
+      \qquad
+      D=\sequence{\colvec{1 \\ 0 \\ 0},
+                  \colvec{1 \\ 1 \\ 0},
+                  \colvec{1 \\ 0 \\ 1}}
+    \end{equation*}
+    We will compute the parts of the arrow diagram to 
+    represent the transformation using two similar matrices.
+    \begin{exparts}
+      \partsitem Draw the arrow diagram, specialized for this case.
+      \partsitem Compute $T=\rep{t}{B,B}$.
+      \partsitem Compute $\hat{T}=\rep{t}{D,D}$.
+      \partsitem Compute the matrices for the other two sides of the arrow 
+         square.
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem
+          \begin{equation*}
+            \begin{CD}
+              \C^3_{\wrt{B}}                   @>t>T>        \C^3_{\wrt{B}}       \\
+              @V{\scriptstyle\identity} VV              @V{\scriptstyle\identity} VV \\
+              \C^3_{\wrt{D}}                   @>t>\hat{T}>        \C^3_{\wrt{D}}
+            \end{CD}
+          \end{equation*}
+        \partsitem
+          For each element of the starting basis~$B$ find the effect of 
+          the transformation
+          \begin{equation*}
+             \colvec{1 \\ 2 \\ 3}\mapsunder{t}\colvec{-2 \\ 3 \\ 4}
+             \qquad 
+             \colvec{0 \\ 1 \\ 0}\mapsunder{t}\colvec{0 \\ 0 \\ 2}
+             \qquad 
+             \colvec{0 \\ 0 \\ 1}\mapsunder{t}\colvec{-1 \\ 1 \\ 0}
+          \end{equation*}
+          and represented those outputs with respect to the ending basis~$B$
+          \begin{equation*}
+            \rep{\colvec{-2 \\ 3 \\ 4}}{B}=\colvec{-2 \\ 7 \\ 10}
+            \qquad
+            \rep{\colvec{0 \\ 0 \\ 2}}{B}=\colvec{0 \\ 0 \\ 2}
+            \qquad
+            \rep{\colvec{-1 \\ 1 \\ 0}}{B}=\colvec{-1 \\ 3 \\ 3}
+          \end{equation*}
+          to get the matrix.
+          \begin{equation*}
+            T=\rep{t}{B,B}=
+            \begin{mat}
+              -2 &0 &-1 \\
+               7 &0 &3  \\
+              10 &2 &3 
+            \end{mat}
+          \end{equation*}
+        \partsitem
+          Find the effect of the transformation on the elements of~$D$
+          \begin{equation*}
+             \colvec{1 \\ 0 \\ 0}\mapsunder{t}\colvec{1 \\ 0 \\ 0}
+             \qquad 
+             \colvec{1 \\ 1 \\ 0}\mapsunder{t}\colvec{1 \\ 0 \\ 2}
+             \qquad 
+             \colvec{1 \\ 0 \\ 1}\mapsunder{t}\colvec{0 \\ 1 \\ 0}
+          \end{equation*}
+          and represented those with respect to the ending basis~$D$
+          \begin{equation*}
+            \rep{\colvec{1 \\ 0 \\ 0}}{D}=\colvec{1 \\ 0 \\ 0}
+            \qquad
+            \rep{\colvec{1 \\ 0 \\ 2}}{D}=\colvec{-1 \\ 0 \\ 2}
+            \qquad
+            \rep{\colvec{0 \\ 1 \\ 0}}{D}=\colvec{-1 \\ 1 \\ 0}
+          \end{equation*}
+          to get the matrix.
+          \begin{equation*}
+            \hat{T}=\rep{t}{D,D}=
+            \begin{mat}
+               1 &-1 &-1 \\
+               0 &0  &1  \\
+               0 &2  &0 
+            \end{mat}
+          \end{equation*}
+        \partsitem
+          To go down on the right we need 
+          $\rep{\identity}{B,D}$
+          so we first compute the effect of the identity map on each element 
+          of~$B$,
+          which is no effect, and then represent the results with respect 
+          to~$D$. 
+          \begin{equation*}
+            \rep{\colvec{1 \\ 2 \\ 3}}{D}=\colvec{-4 \\ 2 \\ 3}
+            \qquad
+            \rep{\colvec{0 \\ 1 \\ 0}}{D}=\colvec{-1 \\ 1 \\ 0}
+            \qquad
+            \rep{\colvec{0 \\ 0 \\ 1}}{D}=\colvec{-1 \\ 0 \\ 1}
+          \end{equation*}
+          So this is~$P$.
+          \begin{equation*}
+            P=
+            \begin{mat}
+              -4 &-1 &-1 \\
+               2 &1  &0  \\
+               3 &0  &1
+            \end{mat}
+          \end{equation*}
+          For the other matrix~$\rep{\identity}{D,B}$ we can either find 
+          it directly, as we just have with~$P$, or we can do the 
+          usual calculation of a matrix inverse.
+          \begin{equation*}
+            P^{-1}=
+            \begin{mat}
+               1 &1 &1 \\
+               -2 &-1  &-2  \\
+               -3 &-3  &-2
+            \end{mat}
+          \end{equation*}
+      \end{exparts}
+    \end{answer}
+  \item 
+    Consider the transformation $\map{t}{\polyspace_2}{\polyspace_2}$
+    described by
+    $x^2\mapsto x+1$, $x\mapsto x^2-1$, and $1\mapsto 3$.
+    \begin{exparts}
+      \partsitem Find $T=\rep{t}{B,B}$ where $B=\sequence{x^2,x,1}$. 
+      \partsitem Find $\hat{T}=\rep{t}{D,D}$ where $D=\sequence{1,1+x,1+x+x^2}$.
+      \partsitem Find the matrix $P$ such that $\hat{T}=PTP^{-1}$. 
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem Because we describe $t$ with the members of $B$,
+          finding the matrix representation is easy:
+          \begin{equation*}
+            \rep{t(x^2)}{B}=\colvec[r]{0 \\ 1 \\ 1}_B
+            \quad
+            \rep{t(x)}{B}=\colvec[r]{1 \\ 0 \\ -1}_B
+            \quad
+            \rep{t(1)}{B}=\colvec[r]{0 \\ 0 \\ 3}_B
+          \end{equation*}
+          gives this.
+          \begin{equation*}
+            \rep{t}{B,B}
+            \begin{mat}[r]
+              0  &1  &0  \\
+              1  &0  &0  \\
+              1  &-1 &3  
+            \end{mat}
+          \end{equation*}
+        \partsitem We will find $t(1)$, $t(1+x)$, and $t(1+x+x^2$,
+          to find how each is represented with respect to $D$.
+          We are given that $t(1)=3$, and the other two are easy to see:
+          $t(1+x)=x^2+2$ and $t(1+x+x^2)=x^2+x+3$.
+          By eye, we get the representation of each vector
+          \begin{equation*}
+            \rep{t(1)}{D}=\colvec[r]{3 \\ 0 \\ 0}_D
+            \quad
+            \rep{t(1+x)}{D}=\colvec[r]{2  \\ -1 \\  1}_D
+            \quad
+            \rep{t(1+x+x^2)}{D}=\colvec[r]{2 \\ 0 \\ 1}_D
+          \end{equation*}
+          and thus the representation of the map.
+          \begin{equation*}
+            \rep{t}{D,D}
+            =
+            \begin{mat}[r]
+              3  &2  &2  \\
+              0  &-1 &0  \\
+              0  &1  &1
+            \end{mat}
+          \end{equation*}
+         \partsitem The diagram
+           \begin{equation*}
+             \begin{CD}
+               V_{\wrt{B}}                  @>t>T>  V_{\wrt{B}}       \\
+               @V\scriptstyle\identity VPV      @V\scriptstyle\identity VPV \\
+               V_{\wrt{D}}                  @>t>\hat{T}>  V_{\wrt{D}}
+             \end{CD}
+           \end{equation*}
+           shows that these are $P=\rep{\identity}{B,D}$ and 
+           $P^{-1}=\rep{\identity}{D,B}$.
+           \begin{equation*}
+             P=
+             \begin{mat}[r]
+               0  &-1  &1  \\ 
+               -1  &1  &0  \\
+               1  &0  &0 
+             \end{mat}
+             \qquad
+             P^{-1}=
+             \begin{mat}[r]
+               0  &0  &1  \\ 
+               0  &1  &1  \\
+               1  &1  &1 
+             \end{mat}
+           \end{equation*}
+      \end{exparts}
+    \end{answer}
+  \recommended \item 
+    Let $T$ represent $\map{t}{\C^2}{\C^2}$ with respect to $B,B$.
+    \begin{equation*}
+      T=
+      \begin{mat}
+        1 &-1 \\ 
+        2 &1
+      \end{mat}
+      \qquad
+      B=\sequence{\colvec{1 \\ 0},\colvec{1 \\ 1}},\hspace{0.7em}
+      D=\sequence{\colvec{2 \\ 0},\colvec{0 \\ -2}}
+    \end{equation*}
+    We will convert to the matrix representing~$t$ with respect to $D,D$.
+    \begin{exparts}
+      \partsitem Draw the arrow diagram.
+      \partsitem Give the matrix that represents the left and right
+          sides of that diagram, in the
+          direction that we traverse the diagram to make the conversion.
+      \partsitem Find $\rep{t}{D,D}$.
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem
+          \begin{equation*}
+            \begin{CD}
+              \C^2_{\wrt{B}}                   @>t>T>        \C^2_{\wrt{B}}       \\
+              @V{\scriptstyle\identity} VV              @V{\scriptstyle\identity} VV \\
+              \C^2_{\wrt{D}}                   @>t>\hat{T}>        \C^2_{\wrt{D}}
+            \end{CD}
+          \end{equation*}  
+        \partsitem
+          For the right side we find the effect of the identity map,
+          which is no effect,
+          \begin{equation*}
+            \colvec{1 \\ 0}\mapsunder{\identity}\colvec{1 \\ 0}
+            \qquad
+            \colvec{1 \\ 1}\mapsunder{\identity}\colvec{1 \\ 1}
+          \end{equation*}
+          and represent those with respect to~$D$
+          \begin{equation*}
+            \rep{\colvec{1 \\ 0}}{D}=\colvec{1/2 \\ 0}
+            \qquad
+            \rep{\colvec{1 \\ 1}}{D}=\colvec{1/2 \\ -1/2}
+          \end{equation*}
+          so we have this.
+          \begin{equation*}
+            P=\rep{\identity}{B,D}=
+            \begin{mat}
+              1/2 &1/2 \\
+              0   &-1/2
+            \end{mat}
+          \end{equation*}
+
+          For the matrix on the left we can either compute it directly, 
+          as in the
+          prior paragraph, or we can take the inverse. 
+          \begin{equation*}
+            P^{-1}=\rep{\identity}{D,B}=
+            \frac{1}{(-1/4)}\cdot
+            \begin{mat}
+              -1/2 &-1/2 \\
+              0   &1/2
+            \end{mat}
+            =
+            \begin{mat}
+              2 &2 \\
+              0 &-2
+            \end{mat}
+          \end{equation*}
+        \partsitem
+          As with the prior item we can either compute it directly from 
+          the definition
+          or compute it using matrix operations.
+          \begin{equation*}
+            PTP^{-1}=
+            \begin{mat}
+              2 &2 \\
+              0 &-2
+            \end{mat}
+            \begin{mat}
+              1 &-1 \\ 
+              2 &1
+            \end{mat}
+            \begin{mat}
+              2 &2 \\
+              0 &-2
+            \end{mat}
+            =
+            \begin{mat}
+              3 &3  \\
+             -2 &-1
+            \end{mat}
+          \end{equation*}
+      \end{exparts}
+    \end{answer}
+  \recommended \item
+     Exhibit a nontrivial similarity relationship by letting
+     \( \map{t}{\C^2}{\C^2} \) act in this way,
+     \begin{equation*}
+        \colvec[r]{1 \\ 2}\mapsto\colvec[r]{3 \\ 0}
+        \qquad
+        \colvec[r]{-1 \\ 1}\mapsto\colvec[r]{-1 \\ 2}
+     \end{equation*}
+     picking two bases~$B,D$,
+     and representing \( t \) with respect to them,
+     \( \hat{T}=\rep{t}{B,B} \) and \( T=\rep{t}{D,D} \).
+     Then compute 
+     the \( P \) and \( P^{-1} \) to change bases from \( B \) to \( D \) and
+     back again.
+     \begin{answer}
+       One possible choice of the bases is 
+       \begin{equation*}
+         B=\sequence{\colvec[r]{1 \\ 2},\colvec[r]{-1 \\ 1}}
+         \qquad
+         D=\stdbasis_2=\sequence{\colvec[r]{1 \\ 0},\colvec[r]{0 \\ 1}}
+       \end{equation*}
+       (this $B$ comes from the map description).
+       To find the matrix $\hat{T}=\rep{t}{B,B}$, solve the relations 
+       \begin{equation*}
+          c_1\colvec[r]{1 \\ 2}+c_2\colvec[r]{-1 \\ 1}=\colvec[r]{3 \\ 0}
+          \qquad
+         \hat{c}_1\colvec[r]{1 \\ 2}+\hat{c}_2\colvec[r]{-1 \\ 1}=\colvec[r]{-1 \\ 2}
+       \end{equation*}
+       to get \( c_1=1 \), \( c_2=-2 \), \( \hat{c}_1=1/3 \) and
+       \( \hat{c}_2=4/3 \).
+       \begin{equation*}
+          \rep{t}{B,B}=
+          \begin{mat}[r]
+             1  &1/3 \\
+            -2  &4/3
+          \end{mat}
+       \end{equation*}
+
+       Finding \( \rep{t}{D,D} \) involves a bit more computation.
+       We first find \( t(\vec{e}_1) \).
+       The relation
+       \begin{equation*}
+         c_1\colvec[r]{1 \\ 2}+c_2\colvec[r]{-1 \\ 1}=\colvec[r]{1 \\ 0}
+       \end{equation*}
+       gives \( c_1=1/3 \) and \( c_2=-2/3 \), and so 
+       \begin{equation*}
+         \rep{\vec{e}_1}{B}=\colvec[r]{1/3 \\ -2/3}_B
+       \end{equation*}
+       making
+       \begin{equation*}
+          \rep{t(\vec{e}_1)}{B}=
+                 \begin{mat}[r]
+                    1  &1/3  \\
+                   -2  &4/3
+                 \end{mat}_{B,B}
+                 \colvec[r]{1/3 \\ -2/3}_B
+                 =
+                 \colvec[r]{1/9 \\ -14/9}_B
+       \end{equation*}
+       and hence $t$ acts on the first basis vector $\vec{e}_1$ in this way.
+       \begin{equation*}
+         t(\vec{e}_1)
+         =(1/9)\cdot\colvec[r]{1 \\ 2}-(14/9)\cdot\colvec[r]{-1 \\ 1}
+         =\colvec[r]{5/3 \\ -4/3}      
+       \end{equation*}
+       The computation for \( t(\vec{e}_2) \) is similar.
+       The relation
+       \begin{equation*}
+         c_1\colvec[r]{1 \\ 2}+c_2\colvec[r]{-1 \\ 1}=\colvec[r]{0 \\ 1}
+       \end{equation*}
+       gives \( c_1=1/3 \) and \( c_2=1/3 \), so
+       \begin{equation*}
+         \rep{\vec{e}_1}{B}=\colvec[r]{1/3 \\ 1/3}_B      
+       \end{equation*}
+       making
+       \begin{equation*}
+         \rep{t(\vec{e}_1)}{B}=
+                 \begin{mat}[r]
+                    1  &1/3  \\
+                   -2  &4/3
+                 \end{mat}_{B,B}
+                 \colvec[r]{1/3 \\ 1/3}_B
+                 =
+                 \colvec[r]{4/9 \\ -2/9}_B
+       \end{equation*}
+       and hence $t$ acts on the second basis vector $\vec{e}_2$ in this way.
+       \begin{equation*}
+         t(\vec{e}_2)
+         =(4/9)\cdot\colvec[r]{1 \\ 2}-(2/9)\cdot\colvec[r]{-1 \\ 1}
+         =\colvec[r]{2/3 \\ 2/3}
+       \end{equation*}
+       Therefore
+       \begin{equation*}
+          \rep{t}{D,D}=
+          \begin{mat}[r]
+             5/3  &2/3  \\
+            -4/3  &2/3
+          \end{mat}
+       \end{equation*}
+       and so this matrix.
+       \begin{equation*}
+         P=\rep{\identity}{B,D}
+         =\begin{mat}[r]
+           1  &-1  \\
+           2  &1 
+         \end{mat}
+       \end{equation*}
+      and this one change the bases. 
+      \begin{equation*}
+         P^{-1}=\bigl(\rep{\identity}{B,D}\bigr)^{-1}
+         =\begin{mat}[r]
+            1  &-1 \\
+            2  &1
+         \end{mat}^{-1}
+         =
+         \begin{mat}[r]
+           1/3  &1/3  \\
+           -2/3 &1/3
+         \end{mat}
+      \end{equation*}
+      The check of these computations is routine.
+      \begin{equation*}
+         \begin{mat}[r]
+            1  &-1 \\
+            2  &1
+         \end{mat}
+         \begin{mat}[r]
+            1  &1/3 \\
+           -2  &4/3
+         \end{mat}
+         \begin{mat}[r]
+           1/3 &1/3 \\
+          -2/3 &1/3
+         \end{mat}
+         =
+         \begin{mat}[r]
+           5/3 &2/3 \\
+          -4/3 &2/3
+         \end{mat}
+      \end{equation*}  
+    \end{answer}
+  \recommended \item 
+    Show that these matrices are not similar.
+    \begin{equation*}
+       \begin{mat}[r]
+          1  &0  &4  \\
+          1  &1  &3  \\
+          2  &1  &7
+       \end{mat}
+       \qquad
+       \begin{mat}[r]
+          1  &0  &1  \\
+          0  &1  &1  \\
+          3  &1  &2
+       \end{mat}
+    \end{equation*}
+    \begin{answer}
+      Gauss's Method shows that
+      the first matrix represents maps of rank two while the second
+      matrix represents maps of rank three.
+    \end{answer}
+  \item 
+    Explain \nearbyexample{ex:OnlyZeroSimToZero} in terms of maps.
+    \begin{answer}
+      The only representation of a zero map is a zero matrix,
+      no matter what the pair of bases $\rep{z}{B,D}=Z$,
+      and so in particular for any single basis $B$ we have $\rep{z}{B,B}=Z$.  
+      The case of the identity is slightly different:~the 
+      only representation of the identity map, with respect to any $B,B$, 
+      is the identity $\rep{\identity}{B,B}=I$.
+      (\textit{Remark:}~of course, we have seen examples where $B\neq D$ and 
+      $\rep{\identity}{B,D}\neq I$\Dash in fact, we have seen that any 
+      nonsingular matrix is a representation of the identity map with
+      respect to some $B,D$.)
+    \end{answer}
+  \recommended \item 
+    \cite{Halmos}
+    Are there two matrices \( A \) and \( B \) that are
+    similar while \( A^2 \) and \( B^2 \) are not similar?
+    \begin{answer}
+      No.
+      If \( A=PBP^{-1} \) then \( A^2=(PBP^{-1})(PBP^{-1})=PB^2P^{-1} \).
+    \end{answer}
+  \recommended \item
+    Prove that if two matrices are similar and one is invertible then
+    so is the other.
+    \begin{answer}
+       Matrix similarity is a special case of matrix equivalence 
+       (if matrices are similar then they are matrix equivalent)
+       and matrix equivalence preserves nonsingularity.
+    \end{answer}
+  \item \label{exer:SimIsEquivRel}
+    Show that similarity is an equivalence relation.
+    (The definition given earlier already reflects this, so 
+    instead start here with the definition that $\hat{T}$ is similar to
+    $T$ if $\hat{T}=PTP^{-1}$.)
+    \begin{answer}
+       A matrix is similar to itself; take \( P \) to be the identity
+       matrix:~$P=IPI^{-1}=IPI$.
+
+       If \( \hat{T} \) is similar to \( T \) then \( \hat{T}=PTP^{-1} \)
+       and so \( P^{-1}\hat{T}P=T \).
+       Rewrite \( T=(P^{-1})\hat{T}(P^{-1})^{-1} \) to conclude that
+       $T$ is similar to \( \hat{T} \).
+
+       For transitivity,
+       if \( T \) is similar to \( S \) and \( S \) is similar to \( U \)
+       then \( T=PSP^{-1} \) and \( S=QUQ^{-1} \).
+       Then \( T=PQUQ^{-1}P^{-1}=(PQ)U(PQ)^{-1} \), showing that \( T \)
+       is similar to \( U \).  
+     \end{answer}
+  \item 
+     Consider a 
+     matrix representing, with respect to some $B,B$, 
+     reflection across the \( x \)-axis in \( \Re^2 \).
+     Consider also  
+     a matrix representing, with respect to some $D,D$,
+     reflection across the \( y \)-axis.
+     Must they be similar?
+     \begin{answer}
+        Let $f_x$ and $f_y$ be the reflection maps (sometimes called `flip's).
+        For any bases
+        \( B \) and \( D \), the matrices \( \rep{f_x}{B,B}  \) and
+        \( \rep{f_y}{D,D} \) are similar.
+        First note that
+        \begin{equation*}
+           S=\rep{f_x}{\stdbasis_2,\stdbasis_2}=
+           \begin{mat}[r]
+              1  &0  \\
+              0  &-1
+           \end{mat}
+           \qquad
+           T=\rep{f_y}{\stdbasis_2,\stdbasis_2}=
+           \begin{mat}[r]
+             -1  &0  \\
+              0  &1
+           \end{mat}
+        \end{equation*}
+        are similar because the second matrix is the representation of $f_x$
+        with respect to the basis \( A=\sequence{\vec{e}_2,\vec{e}_1} \):
+        \begin{equation*}
+           \begin{mat}[r]
+              1  &0  \\
+              0  &-1
+           \end{mat}
+           =    
+           P
+           \begin{mat}[r]
+             -1  &0  \\
+              0  &1
+           \end{mat}
+           P^{-1}
+        \end{equation*}
+        where $P=\rep{\identity}{A,\stdbasis_2}$.
+        \begin{equation*}
+          \begin{CD}
+            \C^2_{\wrt{A}}                   
+               @>f_x>T>        
+               V\C^2_{\wrt{A}}       \\
+            @V\scriptstyle\identity VPV                
+               @V\scriptstyle\identity VPV \\
+            \C^2_{\wrt{\stdbasis_2}}         
+               @>f_x>S>        
+               \C^2_{\wrt{\stdbasis_2}}
+          \end{CD}
+        \end{equation*}
+        Now the conclusion follows from the transitivity part of
+        \nearbyexercise{exer:SimIsEquivRel}.
+        
+        We can also finish without relying on that exercise.
+        Write
+        $\rep{f_x}{B,B}=QTQ^{-1}=Q\rep{f_x}{\stdbasis_2,\stdbasis_2}Q^{-1}$
+        and
+        $\rep{f_y}{D,D}=RSR^{-1}=R\rep{f_y}{\stdbasis_2,\stdbasis_2}R^{-1}$.
+        By the equation in the first paragraph, 
+        the first of these two is
+        $\rep{f_x}{B,B}=QP\rep{f_y}{\stdbasis_2,\stdbasis_2}P^{-1}Q^{-1}$.
+        Rewriting the second of these two as
+        $R^{-1}\cdot\rep{f_y}{D,D}\cdot R=\rep{f_y}{\stdbasis_2,\stdbasis_2}$
+        and substituting gives the desired relationship
+        \begin{multline*}
+          \rep{f_x}{B,B}
+          =QP\rep{f_y}{\stdbasis_2,\stdbasis_2}P^{-1}Q^{-1}  \\
+          =QPR^{-1}\cdot\rep{f_y}{D,D}\cdot RP^{-1}Q^{-1}
+          =(QPR^{-1})\cdot\rep{f_y}{D,D}\cdot (QPR^{-1})^{-1}
+        \end{multline*}
+        Thus the matrices \( \rep{f_x}{B,B}  \) and \( \rep{f_y}{D,D} \) are
+        similar. 
+      \end{answer}
+  \item 
+     Prove that matrix similarity preserves rank and determinant.
+     Does the converse hold?
+     \begin{answer}
+       We must show that if two matrices are similar then they have the same
+       rank and the same determinant.
+
+       First, we've shown that 
+       the rank of a map equals the rank of any matrix representing that map,
+       so the rank must be the same for all representations.
+       (Said another way, rank is a property of the map 
+       since it is the dimension of the range space.)
+
+       As for determinants,
+       \( \deter{PSP^{-1}}=\deter{P}\cdot\deter{S}\cdot\deter{P^{-1}}
+          =\deter{P}\cdot\deter{S}\cdot\deter{P}^{-1}=\deter{S} \).
+
+       The converse of the statement does not hold. 
+       For one thing,
+       there are matrices with the same determinant that are not similar.
+       As an example, consider a nonzero matrix with a
+       determinant of zero.
+       It is not similar to the zero matrix because the zero matrix is similar
+       only to itself, but they have they same determinant. 
+       The same thinking gives an example for rank. 
+     \end{answer}
+  \item 
+    Is there a matrix equivalence class with only one matrix similarity
+    class inside?
+    One with infinitely many similarity classes?
+    \begin{answer}
+      The matrix equivalence class containing all \( \nbyn{n} \) rank
+      zero matrices contains only a single matrix, the zero matrix.
+      Therefore it has as a subset only one similarity class.
+
+      In contrast, the matrix equivalence class of \( \nbyn{1} \) matrices
+      of rank one consists of those 
+      $\nbyn{1}$ matrices \( (k) \) where \( k\neq 0 \).
+      For any basis \( B \), the representation
+      of multiplication by the scalar \( k \)
+      is \( \rep{t_k}{B,B}=(k) \),
+      so each such matrix is alone in its similarity class.
+      So this is a case where a matrix equivalence class splits into
+      infinitely many similarity classes.  
+     \end{answer}
+  \item 
+    Can two different diagonal matrices be in the same similarity class?
+    \begin{answer}
+      Yes, these are similar
+      \begin{equation*}
+         \begin{mat}[r]
+           1  &0  \\
+           0  &3
+         \end{mat}
+         \qquad
+         \begin{mat}[r]
+           3  &0  \\
+           0  &1
+         \end{mat}
+      \end{equation*}
+      since, where the first matrix is $\rep{t}{B,B}$ for 
+      $B=\sequence{\vec{\beta}_1,\vec{\beta}_2}$, 
+      the second matrix is $\rep{t}{D,D}$ for 
+      $D=\sequence{\vec{\beta}_2,\vec{\beta}_1}$.
+     \end{answer}
+  \recommended \item
+    Prove that if two matrices are similar then their \( k \)-th powers
+    are similar when \( k>0 \).
+    What if \( k\leq 0 \)?
+    \begin{answer}
+      The \( k \)-th powers are similar because, where each matrix represents
+      the map $t$, the $k$-th powers represent
+      \( t^k \), the composition of $k$-many $t$'s.
+      (For instance, if $T=rep{t}{B,B}$ then $T^2=\rep{\composed{t}{t}}{B,B}$.)
+
+      Restated more computationally, if \( T=PSP^{-1} \) then
+      \( T^2=(PSP^{-1})(PSP^{-1})=PS^2P^{-1} \).
+      Induction extends that to all powers.
+
+      For the $k\leq 0$ case, 
+      suppose that \( S \) is invertible and that \( T=PSP^{-1} \).
+      Note that \( T \) is invertible:
+      \( T^{-1}=(PSP^{-1})^{-1}=PS^{-1}P^{-1} \),
+      and that same equation shows that 
+      \( T^{-1} \) is similar to \( S^{-1} \).
+      Other negative powers are now given by the first paragraph.  
+    \end{answer}
+  \recommended \item
+    Let \( p(x) \) be the polynomial \( c_nx^n+\cdots+c_1x+c_0 \).
+    Show that if \( T \) is similar to \( S \) then
+    \( p(T)=c_nT^n+\cdots+c_1T+c_0I \) is similar to
+    \( p(S)=c_nS^n+\cdots+c_1S+c_0I \).
+    \begin{answer}
+       In conceptual terms, both represent \( p(t) \) for some
+       transformation \( t \).
+       In computational terms, we have this.
+       \begin{align*}
+          p(T)
+          &=c_n(PSP^{-1})^n+\dots+c_1(PSP^{-1})+c_0I   \\
+          &=c_nPS^nP^{-1}+\dots+c_1PSP^{-1}+c_0I   \\
+          &=Pc_nS^nP^{-1}+\dots+Pc_1SP^{-1}+Pc_0P^{-1}   \\
+          &=P(c_nS^n+\dots+c_1S+c_0)P^{-1}
+       \end{align*}  
+     \end{answer}
+  \item 
+    List all of the matrix equivalence classes of \( \nbyn{1} \) matrices.
+    Also list the similarity classes, and describe which similarity classes are
+    contained inside of each matrix equivalence class.
+    \begin{answer}
+      There are two equivalence classes, (i)~the class of rank~zero matrices, 
+      of which there is one:
+      $\mathscr{C}_1=\set{(0)}$,
+      and (2)~the class of rank~one matrices,
+      of which there are infinitely many: 
+      \( \mathscr{C}_2=\set{(k)\suchthat k\neq0} \).
+
+      Each \( \nbyn{1} \) matrix is alone in its similarity class.
+      That's because any transformation of a one-dimensional space
+      is multiplication by a scalar $\map{t_k}{V}{V}$ given by
+      $\vec{v}\mapsto k\cdot\vec{v}$. 
+      Thus, for any basis \( B=\sequence{\vec{\beta}} \),
+      the matrix representing a transformation \( t_k \) 
+      with respect to \( B,B \) is
+      \( (\rep{t_k(\vec{\beta})}{B})=(k) \). 
+      
+      So, contained in the matrix equivalence class
+      $\mathscr{C}_1$ is (obviously) the single 
+      similarity class consisting of the matrix $(0)$.
+      And, contained in the matrix equivalence class $\mathscr{C}_2$ are the
+      infinitely many, one-member-each, similarity classes consisting of
+      $(k)$ for $k\neq0$.  
+    \end{answer}
+  \item 
+    Does similarity preserve sums?
+    \begin{answer}
+      No.
+      Here is an example that has two pairs, each of two similar matrices:
+      \begin{equation*}
+         \begin{mat}[r]
+            1  &-1  \\
+            1  &2
+         \end{mat}
+         \begin{mat}[r]
+            1  &0   \\
+            0  &3
+         \end{mat}
+         \begin{mat}[r]
+            2/3  &1/3   \\
+           -1/3  &1/3
+         \end{mat}
+         =
+         \begin{mat}[r]
+            5/3  &-2/3  \\
+           -4/3  &7/3
+         \end{mat}
+      \end{equation*}
+      and
+      \begin{equation*}
+         \begin{mat}[r]
+            1  &-2  \\
+           -1  &1
+         \end{mat}
+         \begin{mat}[r]
+           -1  &0   \\
+            0  &-3
+         \end{mat}
+         \begin{mat}[r]
+            -1  &-2   \\
+            -1  &-1
+         \end{mat}
+         =
+         \begin{mat}[r]
+            -5  &-4   \\
+             2  &1
+         \end{mat}
+      \end{equation*}
+      (this example is not entirely arbitrary because
+      the center matrices on the two left sides add to the zero matrix).
+      Note that the sums of these similar matrices are not similar
+      \begin{equation*}
+         \begin{mat}[r]
+            1  &0   \\
+            0  &3
+         \end{mat}
+         +
+         \begin{mat}[r]
+           -1  &0   \\
+            0  &-3
+         \end{mat}
+         =
+         \begin{mat}[r]
+           0  &0  \\
+           0  &0
+         \end{mat}
+         \qquad
+         \begin{mat}[r]
+            5/3  &-2/3   \\
+            -4/3 &7/3
+         \end{mat}
+         +
+         \begin{mat}[r]
+            -5  &-4   \\
+             2  &1
+         \end{mat}
+         \neq
+         \begin{mat}[r]
+           0  &0  \\
+           0  &0
+         \end{mat}
+      \end{equation*}
+      since the zero matrix is similar only to itself.
+    \end{answer}
+  \item 
+    Show that if \( T-\lambda I \) and \( N \) are similar matrices then
+    \( T \) and \( N+\lambda I \) are also similar.
+    \begin{answer}
+    If \( N=P(T-\lambda I)P^{-1} \) then
+    \( N=PTP^{-1}-P(\lambda I)P^{-1} \).
+    The diagonal matrix \( \lambda I \) commutes with anything, so
+    \( P(\lambda I)P^{-1}=PP^{-1}(\lambda I)=\lambda I \).
+    Thus \( N=PTP^{-1}-\lambda I \) and
+    consequently \( N+\lambda I=PTP^{-1} \).
+    (So not only are they similar, in fact they are similar via 
+    the same \( P \).)
+    \end{answer}
+\end{exercises}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Diagonalizability}
+The prior subsection shows that
+although similar matrices are necessarily matrix equivalent, the converse
+does not hold.
+Some matrix equivalence classes break into two or more similarity 
+classes; for instance, the nonsingular $\nbyn{2}$ matrices
+form one matrix equivalence class but more than one similarity class.
+
+The diagram below illustrates.
+Solid curves show the matrix equivalence classes 
+while dashed dividers mark the similarity classes.
+Each star is a matrix representing its similarity class.
+%  so each
+% similarity class has one. 
+We cannot use the canonical form for matrix equivalence, 
+a block partial-identity matrix, as a canonical form 
+for similarity 
+because each matrix equivalence class has only one 
+partial identity matrix.
+\begin{center}
+  \includegraphics{jc/mp/ch5.5}
+\end{center}
+To develop a canonical form for representatives of
+the similarity classes
+we naturally build on previous work.
+So, if a similarity class does contain a partial identity matrix
+then it should represent that class. 
+Beyond that, representatives should be as simple as possible.
+%(the partial identities are simple in that they consist mostly of zeros). 
+
+The simplest extension of the partial identity form is diagonal form.
+
+\begin{definition} \label{df:Diagonalizable}
+%<*df:Diagonalizable>
+A transformation is \definend{diagonalizable}\index{diagonalizable|(}%
+\index{transformation!diagonalizable}
+if it has a diagonal representation
+with respect to the same basis for the codomain as for the domain.
+A \definend{diagonalizable matrix}\index{matrix!diagonalizable}
+is one that is similar to a diagonal matrix:~\( T \) is diagonalizable
+if there is a nonsingular \( P \) such that \( PTP^{-1} \) is diagonal.
+%</df:Diagonalizable>
+\end{definition}
+
+\begin{example} \label{ex:DiagTwoByTwo}
+The matrix 
+\begin{equation*}
+  \begin{mat}[r] 
+     4 &-2 \\ 
+     1 &1 
+  \end{mat}
+\end{equation*} 
+is diagonalizable.
+\begin{equation*}
+  \begin{mat}[r]
+     2  &0   \\
+     0  &3
+  \end{mat}
+  =
+  \begin{mat}[r]
+    -1  &2  \\
+     1  &-1
+  \end{mat}
+  \begin{mat}[r]
+     4  &-2 \\
+     1  &1
+  \end{mat}
+  \begin{mat}[r]
+    -1  &2  \\
+     1  &-1
+  \end{mat}^{-1}
+\end{equation*}
+\end{example}
+
+Below we will see how to find the matrix~$P$ but first we note
+that not every matrix is similar to a diagonal matrix,
+so diagonal form will not suffice as a 
+canonical form for similarity.
+
+\begin{example}  \label{ex:MatrixNotDiagonalizable}
+%<*ex:NotDiagonalizable>
+This matrix is not diagonalizable.
+\begin{equation*}
+  N=\begin{mat}[r]
+       0  &0  \\
+       1  &0
+    \end{mat}
+\end{equation*}
+The fact that $N$ is not the zero matrix means that 
+it cannot be similar to
+the zero matrix, because the zero matrix is similar only to itself.
+Thus if $N$ were to be similar to a diagonal matrix~$D$ then 
+$D$ would have at least one nonzero entry on its diagonal.
+
+The crucial point is that a power of $N$ is the zero matrix, specifically
+$N^2$ is the zero matrix.
+This implies that for any map~$n$ represented by \( N \) 
+with respect to some $B,B$, 
+the composition \( \composed{n}{n} \) is the zero map.
+This in turn implies that
+any matrix representing~$n$ 
+with respect to some $\hat{B},\hat{B}$ has a square that is the zero matrix.
+But for any nonzero diagonal matrix~$D^2$, the entries of~$D^2$ 
+are the squares of the entries of~$D$,
+so $D^2$ cannot be the zero matrix. 
+Thus $N$ is not diagonalizable.
+%</ex:NotDiagonalizable>
+\end{example}
+
+So not every similarity class contains a diagonal matrix.
+We now characterize when a matrix is diagonalizable.
+% However, some similarity classes do contain a diagonal matrix and 
+% the canonical form that we are developing has the property that if
+% a matrix can be diagonalized then the diagonal matrix is the canonical
+% representative of its similarity class. 
+
+\begin{lemma} \label{lm:DiagIffBasisOfEigens}
+%<*lm:DiagIffBasisOfEigens>
+A transformation \( t \) is diagonalizable if and only if
+there is a basis
+\( B=\sequence{\vec{\beta}_1,\ldots,\vec{\beta}_n } \)
+and scalars \( \lambda_1,\ldots,\lambda_n \) such that
+\( t(\vec{\beta}_i)=\lambda_i\vec{\beta}_i \)
+for each \( i \).
+%</lm:DiagIffBasisOfEigens>
+\end{lemma}
+
+\begin{proof}
+%<*pf:DiagIffBasisOfEigens>
+Consider a diagonal representation matrix.
+\begin{equation*}
+   \rep{t}{B,B}=
+   \begin{pmat}{c@{\hspace*{1em}}c@{\hspace*{1em}}c}
+      \vdots                    &       &\vdots                     \\
+      \rep{t(\vec{\beta}_1)}{B} &\cdots &\rep{t(\vec{\beta}_n)}{B}  \\
+      \vdots                    &       &\vdots
+   \end{pmat}
+   =
+   \begin{pmat}{c@{\hspace*{1em}}c@{\hspace*{1em}}c}
+      \lambda_1   &       &0         \\
+      \vdots      &\ddots &\vdots    \\
+      0           &       &\lambda_n
+   \end{pmat}
+\end{equation*}
+Consider the representation of a member of this basis 
+with respect to the basis $\rep{\vec{\beta}_i}{B}$.
+The product of the diagonal matrix and the representation vector
+\begin{equation*}
+   \rep{t(\vec{\beta}_i)}{B}
+   =\begin{pmat}{c@{\hspace*{1em}}c@{\hspace*{1em}}c}
+      \lambda_1   &       &0         \\
+      \vdots      &\ddots &\vdots    \\
+      0           &       &\lambda_n
+   \end{pmat}  
+  \colvec{0 \\ \vdots \\ 1 \\ \vdots \\ 0}
+  =\colvec{0 \\ \vdots \\ \lambda_i \\ \vdots \\ 0}
+\end{equation*}
+has the 
+stated action.
+%</pf:DiagIffBasisOfEigens>
+\end{proof}
+
+\begin{example}     \label{ex:DiagUpperTrian}
+To diagonalize
+\begin{equation*}
+   T=\begin{mat}[r]
+      3  &2  \\
+      0  &1
+   \end{mat}
+\end{equation*}
+we take $T$ as the representation of a transformation with respect to the
+standard basis $\rep{t}{\stdbasis_2,\stdbasis_2}$ and look for a basis
+\( B=\sequence{\vec{\beta}_1,\vec{\beta}_2} \) such that
+\begin{equation*}
+  \rep{t}{B,B}
+  =
+  \begin{mat}
+    \lambda_1  &0          \\
+    0          &\lambda_2
+  \end{mat}
+\end{equation*}
+that is, such that 
+$t(\vec{\beta}_1)=\lambda_1\vec{\beta}_1$ 
+and $t(\vec{\beta}_2)=\lambda_2\vec{\beta}_2$.
+\begin{equation*}
+  \begin{mat}[r]
+     3  &2  \\
+     0  &1
+  \end{mat}
+  \vec{\beta}_1=\lambda_1\cdot\vec{\beta}_1
+  \qquad
+  \begin{mat}[r]
+     3  &2  \\
+     0  &1
+  \end{mat}
+  \vec{\beta}_2=\lambda_2\cdot\vec{\beta}_2
+\end{equation*} 
+We are looking for scalars \( x \) such that this equation
+\begin{equation*}
+ \begin{mat}[r]
+    3  &2  \\
+    0  &1
+ \end{mat}
+ \colvec{b_1 \\ b_2}=x\cdot\colvec{b_1 \\ b_2}
+\end{equation*}
+has solutions $b_1$ and $b_2$ that are not both $0$
+(the zero vector is not the member of any basis).
+That's a linear system.
+\begin{equation*}
+  \begin{linsys}{2}
+     (3-x)\cdot b_1  &+  &2\cdot b_2       &=  &0  \\
+                     &   &(1-x)\cdot b_2   &=  &0 
+  \end{linsys}
+\tag*{($*$)}\end{equation*}
+Focus first on the bottom equation.
+There are two cases: either
+$b_2=0$ or~$x=1$. 
+
+In the \( b_2=0 \) case 
+the first equation gives that either $b_1=0$ or \( x=3 \).
+Since we've disallowed the possibility that both $b_2=0$ and~$b_1=0$,
+we are left with the first diagonal entry $\lambda_1=3$. 
+With that, ($*$)'s first equation is $0\cdot b_1+2\cdot b_2=0$
+and so associated with $\lambda_1=3$ are vectors
+having a second component of zero while the first component is free. 
+\begin{equation*}
+     \begin{mat}[r]
+        3  &2  \\
+        0  &1
+     \end{mat}
+     \colvec{b_1 \\ 0}=3\cdot\colvec{b_1 \\ 0} 
+\end{equation*}
+To get a first basis vector 
+choose any nonzero $b_1$.
+\begin{equation*}
+   \vec{\beta}_1=\colvec[r]{1 \\ 0}
+\end{equation*}
+
+The other case for the bottom equation of ($*$) is $\lambda_2=1$. 
+Then ($*$)'s first equation is $2\cdot b_1+2\cdot b_2=0$ and so
+associated with this case are vectors whose
+second component is the negative of the first.
+\begin{equation*}
+     \begin{mat}[r]
+        3  &2  \\
+        0  &1
+     \end{mat}
+     \colvec{b_1 \\ -b_1}=1\cdot\colvec{b_1 \\ -b_1} 
+\end{equation*}
+Get the second basis vector by 
+choosing a nonzero one of these.
+\begin{equation*}
+   \vec{\beta}_2=\colvec[r]{1 \\ -1}
+\end{equation*}
+
+Now draw the similarity diagram
+(recall that we are working with scalars that are complex,
+not real),        
+\begin{equation*}
+     \begin{CD}
+            \C^2_{\wrt{\stdbasis_2}}                   
+               @>t>T>        
+               \C^2_{\wrt{\stdbasis_2}}       \\
+            @V{\scriptstyle\identity} VV                
+               @V{\scriptstyle\identity} VV \\
+            \C^2_{\wrt{B}}         
+               @>t>D>        
+               \C^2_{\wrt{B}}
+      \end{CD}
+\end{equation*}
+and note that the matrix $\rep{\identity}{B,\stdbasis_2}$ is easy,
+giving this diagonalization.
+\begin{equation*}
+   \begin{mat}[r]
+     3  &0  \\
+     0  &1
+   \end{mat}
+   =
+   \begin{mat}[r]
+     1  &1  \\
+     0  &-1
+   \end{mat}^{-1}
+   \begin{mat}[r]
+     3  &2  \\
+     0  &1
+   \end{mat}
+   \begin{mat}[r]
+     1  &1  \\
+     0  &-1
+   \end{mat}
+\end{equation*}
+\end{example}
+
+The rest of this section expands on that example by considering 
+more closely the property of \nearbylemma{lm:DiagIffBasisOfEigens},
+including seeing a 
+streamlined way to find the $\lambda$'s.
+The section after that expands on \nearbyexample{ex:MatrixNotDiagonalizable}, 
+to understand what can prevent diagonalization.
+Then the final section puts these two together, to produce a canonical form that
+is in some sense as simple as possible.
+
+\begin{exercises}
+  \recommended \item 
+    Repeat \nearbyexample{ex:DiagUpperTrian} for the matrix from 
+    \nearbyexample{ex:DiagTwoByTwo}.
+    \begin{answer}
+      Because we chose the basis vectors arbitrarily, many different answers
+      are possible.
+      However, here is one way to go;
+      to diagonalize
+      \begin{equation*}
+         T=\begin{mat}[r]
+            4  &-2  \\
+            1  &1
+         \end{mat}
+      \end{equation*}
+      take it as the representation of a transformation with respect to the
+      standard basis $T=\rep{t}{\stdbasis_2,\stdbasis_2}$ and look for
+      \( B=\sequence{\vec{\beta}_1,\vec{\beta}_2} \) such that
+      \begin{equation*}
+        \rep{t}{B,B}
+        =
+        \begin{mat}
+          \lambda_1  &0          \\
+          0          &\lambda_2
+        \end{mat}
+      \end{equation*}
+      that is, such that 
+      $t(\vec{\beta}_1)=\lambda_1$ and $t(\vec{\beta}_2)=\lambda_2$.
+      \begin{equation*}
+        \begin{mat}[r]
+           4  &-2  \\
+           1  &1
+        \end{mat}
+        \vec{\beta}_1=\lambda_1\cdot\vec{\beta}_1
+        \qquad
+        \begin{mat}[r]
+           4  &-2  \\
+           1  &1
+        \end{mat}
+        \vec{\beta}_2=\lambda_2\cdot\vec{\beta}_2
+      \end{equation*} 
+      We are looking for scalars \( x \) such that this equation
+      \begin{equation*}
+       \begin{mat}[r]
+          4  &-2  \\
+          1  &1
+       \end{mat}
+       \colvec{b_1 \\ b_2}=x\cdot\colvec{b_1 \\ b_2}
+      \end{equation*}
+      has solutions $b_1$ and $b_2$, which are not both zero.
+      Rewrite that as a linear system
+      \begin{equation*}
+        \begin{linsys}{2}
+           (4-x)\cdot b_1  &+  &-2\cdot b_2       &=  &0  \\
+           1\cdot b_1      &+   &(1-x)\cdot b_2   &=  &0 
+        \end{linsys}
+      \end{equation*}
+      If $x=4$ then the first equation gives that $b_2=0$, and then
+      the second equation gives that $b_1=0$.
+      We have disallowed the case where both $b$'s are zero
+      so we can assume that $x\neq 4$.
+      \begin{equation*}
+        \grstep{(-1/(4-x))\rho_1+\rho_2}
+        \begin{linsys}{2}
+           (4-x)\cdot b_1  &+   &-2\cdot b_2                   &=  &0  \\
+                           &    &((x^2-5x+6)/(4-x))\cdot b_2   &=  &0 
+        \end{linsys} 
+      \end{equation*}
+      Consider the bottom equation.
+      If \( b_2=0 \) then the first equation gives $b_1=0$ or $x=4$.
+      The $b_1=b_2=0$ case is not allowed.
+      The other possibility for the bottom equation is that the numerator 
+      of the fraction $x^2-5x+6=(x-2)(x-3)$ is zero.
+      The $x=2$ case gives a first equation of $2b_1-2b_2=0$, and so 
+      associated with $x=2$ we have
+      vectors whose first and second components are equal:
+      \begin{equation*}
+         \vec{\beta}_1=\colvec[r]{1 \\ 1}
+         \qquad\text{(so \(
+           \begin{mat}[r]
+              4  &-2  \\
+              1  &1
+           \end{mat}
+           \colvec[r]{1 \\ 1}=2\cdot\colvec[r]{1 \\ 1} \), and $\lambda_1=2$).}
+      \end{equation*}
+      If \( x=3 \) then the first equation is
+      $b_1-2b_2=0$ and so the associated vectors 
+      are those whose first component is 
+      twice their second:
+      \begin{equation*}
+         \vec{\beta}_2=\colvec[r]{2 \\ 1}
+         \qquad\text{(so \(
+           \begin{mat}[r]
+              4  &-2  \\
+              1  &1
+           \end{mat}
+           \colvec[r]{2 \\ 1}=3\cdot\colvec[r]{2 \\ 1} \), and so $\lambda_2=3$).}
+      \end{equation*}
+      This picture 
+        \begin{equation*}
+          \begin{CD}
+            \C^2_{\wrt{\stdbasis_2}}                   
+               @>t>T>        
+               \C^2_{\wrt{\stdbasis_2}}       \\
+            @V{\scriptstyle\identity} VV                
+               @V{\scriptstyle\identity} VV \\
+            \C^2_{\wrt{B}}         
+               @>t>D>        
+               \C^2_{\wrt{B}}
+          \end{CD}
+        \end{equation*}
+      shows how to get the diagonalization.
+      \begin{equation*}
+         \begin{mat}[r]
+           2  &0  \\
+           0  &3
+         \end{mat}
+         =
+         \begin{mat}[r]
+           1  &2  \\
+           1  &1
+         \end{mat}^{-1}
+         \begin{mat}[r]
+           4  &-2  \\
+           1  &1
+         \end{mat}
+         \begin{mat}[r]
+           1  &2  \\
+           1  &1
+         \end{mat}
+      \end{equation*}
+      \textit{Comment}.
+      This equation matches the $T=PSP^{-1}$ definition under this renaming.
+      \begin{equation*}
+        T=
+         \begin{mat}[r]
+           2  &0  \\
+           0  &3
+         \end{mat}
+         \quad
+         P=
+         \begin{mat}[r]
+           1  &2  \\
+           1  &1
+         \end{mat}^{-1}
+         \quad
+         P^{-1}=
+         \begin{mat}[r]
+           1  &2  \\
+           1  &1
+         \end{mat}
+         \quad
+         S=
+         \begin{mat}[r]
+           4  &-2  \\
+           1  &1
+         \end{mat}
+      \end{equation*}
+    \end{answer}
+  \recommended \item \label{exer:DiagTheseA} 
+    Diagonalize this matrix by following the
+    steps of \nearbyexample{ex:DiagUpperTrian}. 
+    \begin{equation*}
+      \begin{mat}[r]
+      1  &1  \\
+      0  &0
+      \end{mat}
+    \end{equation*}
+    \begin{exparts}
+      \partsitem Set up the matrix-vector equation described in
+         \nearbylemma{lm:DiagIffBasisOfEigens} and rewrite it as a
+         linear system.
+      \partsitem By considering solutions for that system, find two vectors
+         to make a basis.
+         (Consider separately the system in the $x=0$ and 
+         $x\neq 0$ cases.
+         Also, recall that the zero vector cannot be a member of a basis.)
+      \partsitem Use that basis in the similarity diagram to get
+        the diagonal matrix as the product of three others.
+    \end{exparts}
+    \begin{answer}
+     \begin{exparts}
+        \partsitem We want a basis where the member vectors satisfy
+          \begin{equation*}
+            \begin{mat}
+              1 &1 \\
+              0 &0
+            \end{mat}
+            \colvec{b_1 \\ b_2}
+            =x\cdot \colvec{b_1 \\ b_2}
+          \end{equation*}
+          so consider the resulting linear system.
+          \begin{equation*}
+            \begin{linsys}{2}
+              b_1 &+ &b_2 &= &x\cdot b_1 \\
+                  &  &0   &= &x\cdot b_2 \\
+            \end{linsys}
+          \end{equation*}
+        \partsitem
+          If $x=0$ then $b_1+b_2=0$, so $b_1=-b_2$.
+          That is, associated with this case are basis elements where the 
+          entries have opposite signs. 
+          (The entries must be nonzero since the zero vector 
+          cannot be a member of a basis.)
+
+          If $x\neq 0$ then $b_2=0$ and substituting that into the top
+          equation gives $b_1=x\cdot b_1$.
+          So in this case, either $b_1=0$ or $x=1$.
+          But since $b_2=0$ in this case, $b_1=0$ is impossible because the
+          zero vector is not in any basis.
+          Thus~$x=1$ and
+          the system becomes this.
+          \begin{equation*}
+            \begin{linsys}{2}
+              b_1 &+ &b_2 &= &1\cdot b_1 \\
+                  &  &0   &= &1\cdot b_2 \\
+            \end{linsys}
+          \end{equation*}
+          So this case is associated with basis elements where $b_2=0$ 
+          and~$b_1$ can have any nonzero value.
+           
+          Therefore, a suitable basis is this.
+          \begin{equation*}
+            B=\sequence{\colvec{1 \\ -1},
+                        \colvec{1 \\ 0}}
+          \end{equation*}
+        \partsitem
+          With that basis,
+          to get the diagonalization, draw the similarity diagram.
+          \begin{equation*}
+            \begin{CD}
+            \C^2_{\wrt{\stdbasis_2}}                   
+               @>t>T>        
+               \C^2_{\wrt{\stdbasis_2}}       \\
+            @V{\scriptstyle\identity} VV                
+               @V{\scriptstyle\identity} VV \\
+            \C^2_{\wrt{B}}         
+               @>t>D>        
+               \C^2_{\wrt{B}}
+           \end{CD}
+          \end{equation*}
+          In this diagram,
+          \begin{equation*}
+             T=
+             \begin{mat}
+               1  &1  \\
+               0  &0
+             \end{mat}
+          \end{equation*}
+          and we will calculate the matrix~$D$ using the basis~$B$
+          and traversing the lower-left to upper-left, to upper-right,
+          and to lower-right path.
+
+          We first want to go from the lower-left to the upper-left.
+          Observe that because we have chosen the basis for the top
+          of the diagram to be the standard basis $\stdbasis_2$,
+          the matrix representing that map is easy.
+          \begin{equation*}
+            \rep{\identity}{B,\stdbasis_2}=
+            \begin{mat}
+              1 &1 \\
+             -1 &0
+            \end{mat}
+          \end{equation*}
+          The calculation for the entire path does indeed give a
+          diagonal result
+          (of course, the lower-left to upper-left portion appears
+          on the right side of the product of the three matrices).
+          \begin{align*}
+                 D
+                 &=
+                 \begin{mat}
+                    1  &1  \\
+                    -1  &0
+                 \end{mat}^{-1}
+                 \begin{mat}
+                    1  &1  \\
+                    0  &0
+                 \end{mat}
+                 \begin{mat}
+                    1  &1  \\
+                    -1  &0
+                 \end{mat}                \\
+                 &=
+                 \begin{mat}
+                    0  &-1  \\
+                    1  &1
+                 \end{mat}
+                 \begin{mat}
+                    1  &1  \\
+                    0  &0
+                 \end{mat}
+                 \begin{mat}
+                    1  &1  \\
+                    -1  &0
+                 \end{mat}                
+                =\begin{mat}
+                    0  &0  \\
+                    0  &1
+                 \end{mat}
+          \end{align*}
+     \end{exparts}    
+    \end{answer}
+  \recommended \item \label{exer:DiagTheseB} 
+    Follow \nearbyexample{ex:DiagUpperTrian} to diagonalize this matrix. 
+    \begin{equation*}
+      \begin{mat}[r]
+      0  &1  \\
+      1  &0
+      \end{mat}
+    \end{equation*}
+    \begin{exparts}
+      \partsitem Set up the matrix-vector equation
+         and rewrite it as a linear system.
+      \partsitem By considering solutions for that system, find two vectors
+         to make a basis.
+         (Consider separately the $x=0$ and 
+         $x\neq 0$ cases.
+         Also, recall that the zero vector cannot be a member of a basis.)
+      \partsitem With that basis use the similarity diagram to get
+        the diagonalization as the product of three matrices.
+    \end{exparts}
+    \begin{answer}
+     \begin{exparts}
+        \partsitem 
+          The members of the basis satisfy this.
+          \begin{equation*}
+            \begin{mat}
+              0 &1 \\
+              1 &0
+            \end{mat}
+            \colvec{b_1 \\ b_2}
+            =x\cdot \colvec{b_1 \\ b_2}
+          \end{equation*}
+          so this is the resulting linear system.
+          \begin{equation*}
+            \begin{linsys}{2}
+                   &  &b_2 &= &x\cdot b_1 \\
+               b_1 &  &    &= &x\cdot b_2 \\
+            \end{linsys}
+            \qquad\Longrightarrow\qquad
+            \begin{linsys}{2}
+               -xb_1 &+ &b_2  &= &0 \\
+                 b_1 &- &xb_2 &= &0 \\
+            \end{linsys}
+          \end{equation*}
+        \partsitem
+          If $x=0$ then $b_1=b_2=0$, but the zero vector is not a member
+          of any basis so this case cannot happen.
+
+          The other case is $x\neq 0$. 
+          \begin{equation*}
+            \begin{linsys}{2}
+               -xb_1 &+ &b_2  &= &0 \\
+                 b_1 &- &xb_2 &= &0 \\
+            \end{linsys}  
+            \grstep{(1/x)\rho_1+\rho_2}
+            \begin{linsys}{2}
+               -xb_1 &+ &b_2           &= &0 \\
+                     &  &(-x+(1/x))b_2 &= &0 \\
+            \end{linsys}  
+          \end{equation*}
+          Focus on the bottom equation.
+          Either $b_2=0$ or $-x+(1/x)=0$.
+          If $b_2=0$ then substituting into the top equation gives
+          $b_1=0$ since $x\neq 0$ is the assumption of this case.
+          But the zero vector is not a member of any basis so this cannot 
+          happen. 
+
+          We are left with this.
+          \begin{equation*}
+            \frac{1}{x}-x=0
+            \qquad\Longrightarrow\qquad
+            0=\frac{1-x^2}{x}=\frac{(1-x)(1+x)}{x}
+          \end{equation*}
+          If $x=1$ then the system is
+          \begin{equation*}
+            \begin{linsys}{2}
+               -1\cdot b_1 &+ &b_2  &= &0 \\
+                           &  &0    &= &0 \\
+            \end{linsys}
+          \end{equation*}
+          and so basis vectors satisfy $b_2=b_1$.
+          If $x=-1$ then the system is
+          \begin{equation*}
+            \begin{linsys}{2}
+               b_1 &+ &b_2  &= &0 \\
+                   &  &0    &= &0 \\
+            \end{linsys}
+          \end{equation*}
+          and basis vectors satisfy $b_2=-b_1$.
+          Therefore, this is an example of a suitable basis.
+          \begin{equation*}
+            B=\sequence{\colvec{1 \\ 1},
+                        \colvec{1 \\ -1}}
+          \end{equation*}
+        \partsitem
+          To get the diagonalization, draw the similarity diagram
+          \begin{equation*}
+            \begin{CD}
+            \C^2_{\wrt{\stdbasis_2}}                   
+               @>t>T>        
+               \C^2_{\wrt{\stdbasis_2}}       \\
+            @V{\scriptstyle\identity} VV                
+               @V{\scriptstyle\identity} VV \\
+            \C^2_{\wrt{B}}         
+               @>t>D>        
+               \C^2_{\wrt{B}}
+           \end{CD}
+          \end{equation*}
+          where $T$ is the matrix give in the problem statement.
+          \begin{equation*}
+             T=
+             \begin{mat}
+               0  &1  \\
+               1  &0
+             \end{mat}
+          \end{equation*}
+          Calculate the matrix~$D$ using the basis~$B$ by
+          moving from the lower left to the upper left, to the upper right,
+          and then to the lower right.
+
+          Observe that the matrix representing the lower left to upper left
+          map is easy.
+          \begin{equation*}
+            \rep{\identity}{B,\stdbasis_2}=
+            \begin{mat}
+              1 &1 \\
+              1 &-1
+            \end{mat}
+          \end{equation*}
+          With that, the calculation for the entire path does give a
+          diagonal result.
+          \begin{align*}
+                 D
+                 &=
+                 \begin{mat}
+                    1  &1  \\
+                    1  &-1
+                 \end{mat}^{-1}
+                 \begin{mat}
+                    0  &1  \\
+                    1  &0
+                 \end{mat}
+                 \begin{mat}
+                    1  &1  \\
+                    1  &-1
+                 \end{mat}                \\
+                 &=
+                 -\frac{1}{2}
+                 \begin{mat}
+                    -1  &-1  \\
+                    -1  &1
+                 \end{mat}
+                 \begin{mat}
+                    0  &1  \\
+                    1  &0
+                 \end{mat}
+                 \begin{mat}
+                    1  &1  \\
+                    1  &-1
+                 \end{mat}                
+                =\begin{mat}
+                    1  &0  \\
+                    0  &-1
+                 \end{mat}
+          \end{align*}
+      \end{exparts}  
+    \end{answer}
+  \item 
+    Diagonalize these upper triangular matrices.
+    \begin{exparts*}
+      \partsitem 
+        $\begin{mat}[r]
+          -2  &1  \\
+           0  &2
+        \end{mat}$
+      \partsitem 
+        $\begin{mat}[r]
+          5  &4  \\
+          0  &1
+        \end{mat}$
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem
+          Setting up
+          \begin{equation*}
+            \begin{mat}[r]
+              -2  &1  \\
+               0  &2
+            \end{mat}
+            \colvec{b_1 \\ b_2}
+            =x\cdot\colvec{b_1 \\ b_2}
+            \qquad\Longrightarrow\qquad 
+            \begin{linsys}{2}
+               (-2-x)\cdot b_1  &+  &b_2            &=  &0  \\
+                                &   &(2-x)\cdot b_2 &= &0
+            \end{linsys}
+          \end{equation*}
+          gives the two possibilities that $b_2=0$ and $x=2$.
+          Following the $b_2=0$ possibility leads to the first equation
+          $(-2-x)b_1=0$ with the two cases that $b_1=0$ and that
+          $x=-2$.
+          Thus, under this first possibility, we find $x=-2$ and the 
+          associated vectors whose second component is zero, and whose
+          first component is free.  
+          \begin{equation*}
+            \begin{mat}[r]
+              -2  &1  \\
+               0  &2
+            \end{mat}
+            \colvec{b_1 \\ 0}
+            =-2\cdot\colvec{b_1 \\ 0}
+            \qquad
+            \vec{\beta}_1=\colvec[r]{1 \\ 0}
+          \end{equation*}
+          Following the other possibility leads to a first equation of
+          $-4b_1+b_2=0$ and so the vectors associated with this 
+          solution have a second component that is four times their first
+          component.
+          \begin{equation*}
+            \begin{mat}[r]
+              -2  &1  \\
+               0  &2
+            \end{mat}
+            \colvec{b_1 \\ 4b_1}
+            =2\cdot\colvec{b_1 \\ 4b_1}
+            \qquad
+            \vec{\beta}_2=\colvec{1 \\ 4}
+          \end{equation*}
+          The diagonalization is this.
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &1  \\
+              0  &4
+            \end{mat}
+            \begin{mat}[r]
+              -2  &1  \\
+               0  &2
+            \end{mat}
+            \begin{mat}[r]
+              1  &1  \\
+              0  &4
+            \end{mat}^{-1}
+            =
+            \begin{mat}[r]
+              -2  &0  \\
+               0  &2
+            \end{mat}
+          \end{equation*}
+      \partsitem The calculations are like those in the prior part.
+          \begin{equation*}
+            \begin{mat}[r]
+               5  &4  \\
+               0  &1
+            \end{mat}
+            \colvec{b_1 \\ b_2}
+            =x\cdot\colvec{b_1 \\ b_2}
+            \qquad\Longrightarrow\qquad 
+            \begin{linsys}{2}
+               (5-x)\cdot b_1  &+  &4\cdot b_2     &=  &0  \\
+                               &   &(1-x)\cdot b_2 &=  &0
+            \end{linsys}
+          \end{equation*}
+          The bottom equation
+          gives the two possibilities that $b_2=0$ and $x=1$.
+          Following the $b_2=0$ possibility, and discarding the
+          case where both $b_2$ and $b_1$ are zero, gives
+          that $x=5$, associated with vectors whose second component
+          is zero and whose first component is free.
+          \begin{equation*}
+            \vec{\beta}_1=\colvec[r]{1 \\ 0}
+          \end{equation*}
+          The $x=1$ possibility gives a first equation of
+          $4b_1+4b_2=0$ and so the associated vectors have a 
+          second component that is the negative of their first component.
+          \begin{equation*}
+            \vec{\beta}_1=\colvec[r]{1 \\ -1}
+          \end{equation*}
+          We thus have this diagonalization.
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &1  \\
+              0  &-1
+            \end{mat}
+            \begin{mat}[r]
+               5  &4  \\
+               0  &1
+            \end{mat}
+            \begin{mat}[r]
+              1  &1  \\
+              0  &-1
+            \end{mat}^{-1}
+            =
+            \begin{mat}[r]
+               5  &0  \\
+               0  &1
+            \end{mat}
+          \end{equation*}
+      \end{exparts}
+    \end{answer}
+  \item If we try to diagonalize the matrix
+    of \nearbyexample{ex:MatrixNotDiagonalizable} 
+    \begin{equation*}
+       N=\begin{mat}[r]
+            0  &0  \\
+            1  &0
+         \end{mat}
+    \end{equation*}
+    using the method of 
+    \nearbyexample{ex:DiagUpperTrian} then what goes wrong?
+    \begin{exparts}
+      \partsitem Draw the similarity diagram with $N$.
+      \partsitem Set up the matrix-vector equation described in
+         \nearbylemma{lm:DiagIffBasisOfEigens} and rewrite it as a
+         linear system.
+      \partsitem By considering solutions for that system, find the 
+         trouble.
+         (Consider separately the $x=0$ and 
+         $x\neq 0$ cases.)
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \item  In this similarity diagram
+          \begin{equation*}
+            \begin{CD}
+            \C^2_{\wrt{\stdbasis_2}}                   
+               @>n>N>        
+               \C^2_{\wrt{\stdbasis_2}}       \\
+            @V{\scriptstyle\identity} VV                
+               @V{\scriptstyle\identity} VV \\
+            \C^2_{\wrt{B}}         
+               @>n>D>        
+               \C^2_{\wrt{B}}
+           \end{CD}
+          \end{equation*}
+          we will try to calculate the matrix~$D$ and find a suitable 
+          basis~$B$,
+          by traversing the lower-left to upper-left, to upper-right,
+          and to lower-right path.
+        \item The diagram shows that where 
+          $B=\sequence{\vec{\beta}_1,\vec{\beta}_2}$ we want
+          $n(\vec{\beta}_1)=\lambda_1\vec{\beta}_1$ and
+          $n(\vec{\beta}_2)=\lambda_2\vec{\beta}_2$.
+          To determine $\lambda_1$ and $\lambda_2$, 
+          where the matrix~$N$ represents the map with respect to the
+          standard bases, we want to find solutions of this system.
+          \begin{equation*}
+            \begin{mat}
+              0 &0 \\
+              1 &0
+            \end{mat}
+            \colvec{b_1 \\ b_2}
+            =
+            x\cdot\colvec{b_1 \\ b_2}           
+          \end{equation*}
+          The equivalent linear system
+          \begin{equation*}
+            \begin{linsys}{2}
+              0b_1 &+  &0b_2 &= &xb_1 \\
+              b_1  &+  &0b_2 &= &xb_2 \\
+            \end{linsys}
+            \qquad
+            \Longrightarrow
+            \qquad
+            \begin{linsys}{2}
+              -xb_1 &   &     &= &0 \\
+              b_1   &-  &xb_2 &= &0 \\
+            \end{linsys}
+          \end{equation*}
+          By the first line, either $x=0$ or~$b_1=0$.
+          If $x=0$ then the second equation becomes $b_1-0=0$ so $b_1=0$ and
+          we get this solution set.
+          \begin{equation*}
+            \set{\colvec{0 \\ 1}b_2 \suchthat b_2\in\C}
+          \end{equation*}
+          We can take the initial member of the basis to be 
+          $\vec{\beta}_1=\vec{e}_2$.
+
+          If $x\neq 0$ then the first equation of the linear system 
+          gives $b_1=0$.
+          The system's first line becomes $0=0$ and its second line becomes
+          $-xb_2=0$.
+          Since this case takes $x\neq 0$, we get $b_2=0$
+          and the set of solutions is trivial.
+          \begin{equation*}
+            \set{\colvec{0 \\ 0}}
+          \end{equation*}
+          So what goes wrong is that we don't get the basis
+          required by \nearbylemma{lm:DiagIffBasisOfEigens}.
+      \end{exparts}
+    \end{answer}
+  \recommended \item \label{exer:PowersOfDiags}
+    What form do the powers of a diagonal matrix have?
+    \begin{answer}
+      For any integer \( p \), we have this.
+      \begin{equation*}
+        \begin{mat}
+          d_1  &0      &   \\
+          0    &\ddots &   \\
+               &       &d_n
+        \end{mat}^p=
+        \begin{mat}
+          d_1^p  &0      &   \\
+          0      &\ddots &   \\
+                 &       &d_n^p
+        \end{mat}
+     \end{equation*} 
+    \end{answer}
+  \item 
+     Give two same-sized diagonal matrices that are not similar.
+     Must any two different diagonal matrices come from different similarity
+     classes?
+     \begin{answer}
+       These two are not similar 
+       \begin{equation*}
+          \begin{mat}[r]
+             0  &0  \\
+             0  &0
+          \end{mat}
+          \qquad
+          \begin{mat}[r]
+             1  &0  \\
+             0  &1
+          \end{mat}
+       \end{equation*}
+       because each is alone in its similarity class.
+
+       For the second half, these
+       \begin{equation*}
+          \begin{mat}[r]
+             2  &0  \\
+             0  &3
+          \end{mat}
+          \qquad
+          \begin{mat}[r]
+             3  &0  \\
+             0  &2
+          \end{mat}
+       \end{equation*}
+       are similar via the matrix that changes bases from
+       \( \sequence{\vec{\beta}_1,\vec{\beta}_2} \) to
+       \( \sequence{\vec{\beta}_2,\vec{\beta}_1} \).
+       (\textit{Question.}
+        Are two diagonal matrices similar if and only if their diagonal
+        entries are permutations of each others?)  
+    \end{answer}
+  \item 
+    Give a nonsingular diagonal matrix.
+    Can a diagonal matrix ever be singular?
+    \begin{answer}
+      Contrast these two.
+      \begin{equation*}
+         \begin{mat}[r]
+           2  &0  \\
+           0  &1
+         \end{mat}
+         \qquad
+         \begin{mat}[r]
+           2  &0  \\
+           0  &0
+         \end{mat}
+      \end{equation*}
+      The first is nonsingular, the second is singular.  
+     \end{answer}
+  \recommended \item
+    Show that the inverse of a diagonal matrix is the diagonal of
+    the inverses, if no element on that diagonal is zero.
+    What happens when a diagonal entry is zero?
+    \begin{answer}  
+       To check that the inverse of a diagonal matrix is the diagonal
+       matrix of the inverses, just multiply.
+       \begin{equation*}
+          \begin{mat}
+             a_{1,1}  &0                \\
+             0        &a_{2,2}          \\
+                      &       &\ddots    \\
+                      &       &      &a_{n,n}
+          \end{mat}
+          \begin{mat}
+            1/a_{1,1}  &0                \\
+             0        &1/a_{2,2}          \\
+                      &       &\ddots    \\
+                      &       &      &1/a_{n,n}
+          \end{mat}
+      \end{equation*}
+      (Showing that it is a left inverse is just as easy.)
+
+      If a diagonal entry is zero then the diagonal matrix is
+      singular; it has a zero determinant.  
+    \end{answer}
+  \item 
+    The equation ending \nearbyexample{ex:DiagUpperTrian}
+    \begin{equation*}
+       \begin{mat}[r]
+         1  &1  \\
+         0  &-1
+       \end{mat}^{-1}
+       \begin{mat}[r]
+         3  &2  \\
+         0  &1
+       \end{mat}
+       \begin{mat}[r]
+         1  &1  \\
+         0  &-1
+       \end{mat}
+       =
+       \begin{mat}[r]
+         3  &0  \\
+         0  &1
+       \end{mat}
+    \end{equation*}
+    is a bit jarring because for $P$ we must take the first matrix,
+    which is shown as an inverse, and for $P^{-1}$ we take the inverse of the
+    first matrix, so that the two $-1$ powers cancel and this matrix is 
+    shown without a superscript $-1$.
+    \begin{exparts}
+      \partsitem Check that this nicer-appearing equation holds.
+        \begin{equation*}
+           \begin{mat}[r]
+             3  &0  \\
+             0  &1
+           \end{mat}
+           =
+           \begin{mat}[r]
+             1  &1  \\
+             0  &-1
+           \end{mat}
+           \begin{mat}[r]
+             3  &2  \\
+             0  &1
+           \end{mat}
+           \begin{mat}[r]
+             1  &1  \\
+             0  &-1
+           \end{mat}^{-1}
+        \end{equation*}
+      \partsitem Is the previous item a coincidence?
+        Or can we always switch the $P$ and the $P^{-1}$?
+   \end{exparts}
+   \begin{answer}
+     \begin{exparts}
+       \partsitem The check is easy.
+         \begin{equation*}
+           \begin{mat}[r]
+             1  &1  \\
+             0  &-1
+           \end{mat}
+           \begin{mat}[r]
+             3  &2  \\
+             0  &1
+           \end{mat}
+           =
+           \begin{mat}[r]
+             3  &3  \\
+             0  &-1
+           \end{mat}
+           \qquad
+           \begin{mat}[r]
+             3  &3  \\
+             0  &-1
+           \end{mat}
+           \begin{mat}[r]
+             1  &1  \\
+             0  &-1
+           \end{mat}^{-1}
+           =
+           \begin{mat}[r]
+             3  &0  \\
+             0  &1
+           \end{mat}
+         \end{equation*}
+        \partsitem It is a coincidence, in the sense that if $T=PSP^{-1}$
+          then $T$ need not equal $P^{-1}SP$.
+          Even in the case of a diagonal matrix~$D$, the condition that
+          $D=PTP^{-1}$ does not imply that $D$ equals $P^{-1}TP$.
+          The matrices from \nearbyexample{ex:DiagTwoByTwo} show this.
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &2  \\
+              1  &1
+            \end{mat}
+            \begin{mat}[r]
+              4  &-2  \\
+              1  &1
+            \end{mat}
+            =
+            \begin{mat}[r]
+              6  &0  \\
+              5  &-1
+            \end{mat}
+            \qquad
+            \begin{mat}[r]
+              6  &0  \\
+              5  &-1
+            \end{mat}
+            \begin{mat}[r]
+              1  &2  \\
+              1  &1
+            \end{mat}^{-1}
+            =
+            \begin{mat}[r]
+              -6  &12  \\
+              -6  &11
+            \end{mat}
+          \end{equation*}
+     \end{exparts}
+   \end{answer}
+  \item 
+    Show that the $P$ used to diagonalize in  
+    \nearbyexample{ex:DiagUpperTrian} is not unique.
+    \begin{answer}
+      The columns of the matrix are the vectors associated with
+      the $x$'s.
+      The exact choice, and the order of the choice was
+      arbitrary.
+      We could, for instance, get a different matrix by swapping 
+      the two columns.
+    \end{answer}
+  \item 
+    Find a formula for the powers of this matrix.
+    \textit{Hint}:~see \nearbyexercise{exer:PowersOfDiags}.
+    \begin{equation*}
+      \begin{mat}[r]
+        -3  &1  \\
+        -4  &2
+      \end{mat}
+    \end{equation*}
+    \begin{answer}
+      Diagonalizing and then taking powers of the diagonal matrix shows that
+      \begin{equation*}
+        \begin{mat}[r]
+          -3  &1  \\
+          -4  &2
+        \end{mat}^k
+        =
+        \frac{1}{3}
+        \begin{mat}[r]
+          -1  &1  \\
+          -4  &4
+        \end{mat}
+        +(\frac{-2}{3})^k
+        \begin{mat}[r]
+           4  &-1 \\
+           4  &-1
+        \end{mat}.
+      \end{equation*}  
+     \end{answer}
+  \item 
+    We can ask how diagonalization interacts with the matrix operations.
+    Assume that \( \map{t,s}{V}{V} \) are each diagonalizable.
+    Is \( ct \) diagonalizable for all scalars \( c \)?
+    What about \( t+s \)?
+    \( \composed{t}{s} \)?
+    \begin{answer}
+      Yes, \( ct \) is diagonalizable by the final theorem of this
+      subsection.
+
+      No, \( t+s \) need not be diagonalizable.
+      Intuitively, the problem arises when the two maps diagonalize with
+      respect to different bases (that is, when they are not
+      \definend{simultaneously diagonalizable}).
+      Specifically, these two are diagonalizable but their sum is not:
+      \begin{equation*}
+         \begin{mat}[r]
+            1  &1  \\
+            0  &0
+         \end{mat}
+         \qquad
+         \begin{mat}[r]
+           -1  &0  \\
+            0  &0
+         \end{mat}
+      \end{equation*}
+      (the second is already diagonal; for the first, see 
+      \nearbyexercise{exer:DiagTheseA}).
+      The sum is not diagonalizable because its square is the zero matrix. 
+
+     The same intuition suggests that \( \composed{t}{s} \) is not
+     be diagonalizable.
+     These two are diagonalizable but their product is not:
+     \begin{equation*}
+        \begin{mat}[r]
+           1  &0  \\
+           0  &0
+        \end{mat}
+        \qquad
+        \begin{mat}[r]
+           0  &1  \\
+           1  &0
+        \end{mat}
+     \end{equation*}
+     (for the second, see \nearbyexercise{exer:DiagTheseB}).   
+    \end{answer}
+  \item 
+    Show that matrices of this form are not diagonalizable.
+    \begin{equation*}
+       \begin{mat}[r]
+          1  &c  \\
+          0  &1
+       \end{mat}
+       \qquad c\neq 0
+    \end{equation*}
+    \begin{answer}
+      If
+      \begin{equation*}
+         P
+         \begin{mat}
+            1  &c  \\
+            0  &1
+         \end{mat}
+         P^{-1}
+         =
+         \begin{mat}
+            a  &0  \\
+            0  &b
+         \end{mat}
+      \end{equation*}
+      then
+      \begin{equation*}
+         P
+         \begin{mat}
+            1  &c  \\
+            0  &1
+         \end{mat}
+         =
+         \begin{mat}
+            a  &0  \\
+            0  &b
+         \end{mat}
+         P
+      \end{equation*}
+      so
+      \begin{align*}
+         \begin{mat}
+            p  &q  \\
+            r  &s
+         \end{mat}
+         \begin{mat}
+            1  &c  \\
+            0  &1
+         \end{mat}
+         &=
+         \begin{mat}
+            a  &0  \\
+            0  &b
+         \end{mat}
+         \begin{mat}
+            p  &q  \\
+            r  &s
+         \end{mat}        \\
+         \begin{mat}
+            p  &cp+q  \\
+            r  &cr+s
+         \end{mat}
+         &=
+         \begin{mat}
+            ap  &aq  \\
+            br  &bs
+         \end{mat}
+      \end{align*}
+      The \( 1,1 \) entries show that \( a=1 \) and the \( 1,2 \) entries
+      then show that \( pc=0 \).
+      Since \( c\neq 0 \) this means that \( p=0 \).
+      The \( 2,1 \) entries show that 
+      \( b=1 \) and the \( 2,2 \) entries then show that
+      \( rc=0 \).
+      Since \( c\neq 0 \) this means that \( r=0 \).
+      But if both \( p \) and \( r \) are \( 0 \) then \( P \) is not
+      invertible.  
+     \end{answer}
+  \item 
+    Show that each of these is diagonalizable.
+    \begin{exparts*}
+      \partsitem
+       \( \begin{mat}[r]
+             1  &2  \\
+             2  &1
+          \end{mat}  \)
+      \partsitem
+       \( \begin{mat}
+             x  &y  \\
+             y  &z
+          \end{mat}
+          \qquad \text{$x,y,z$ scalars}  \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+      \partsitem Using the formula for the inverse of a $\nbyn{2}$
+        matrix gives this.
+        \begin{multline*}
+           \begin{mat}
+              a  &b  \\
+              c  &d
+           \end{mat}
+           \begin{mat}[r]
+              1  &2  \\
+              2  &1
+           \end{mat}
+           \cdot\frac{1}{ad-bc}\cdot
+           \begin{mat}
+              d  &-b \\
+             -c  &a
+           \end{mat}                                  \\
+           =\frac{1}{ad-bc}
+           \begin{mat}
+              ad+2bd-2ac-bc    &-ab-2b^2+2a^2+ab \\
+              cd+2d^2-2c^2-cd  &-bc-2bd+2ac+ad
+           \end{mat}
+        \end{multline*}
+        Now pick scalars \( a,\ldots,d \) so that
+        \( ad-bc\neq 0 \) and \( 2d^2-2c^2=0 \) and \( 2a^2-2b^2=0 \).
+        For example, these will do.
+        \begin{equation*}
+          \begin{mat}[r]
+            1  &1  \\
+            1  &-1
+          \end{mat}
+          \begin{mat}[r]
+            1  &2  \\
+            2  &1
+          \end{mat}
+          \cdot\frac{1}{-2}\cdot
+          \begin{mat}[r]
+            -1  &-1  \\
+            -1  &1
+          \end{mat}
+          =
+          \frac{1}{-2}
+          \begin{mat}[r]
+            -6  &0   \\
+             0  &2
+          \end{mat}
+        \end{equation*}
+      \partsitem As above,
+        \begin{multline*}
+           \begin{mat}
+              a  &b  \\
+              c  &d
+           \end{mat}
+           \begin{mat}
+              x  &y  \\
+              y  &z
+           \end{mat}
+           \cdot\frac{1}{ad-bc}\cdot
+           \begin{mat}
+              d  &-b \\
+             -c  &a
+           \end{mat}                               \\
+           =\frac{1}{ad-bc}
+           \begin{mat}
+              adx+bdy-acy-bcz    &-abx-b^2y+a^2y+abz \\
+              cdx+d^2y-c^2y-cdz  &-bcx-bdy+acy+adz
+           \end{mat}
+        \end{multline*}
+        we are looking for scalars \( a,\ldots,d \) so that
+        \( ad-bc\neq 0 \) and
+        \( -abx-b^2y+a^2y+abz=0 \)
+        and \( cdx+d^2y-c^2y-cdz=0 \), no matter what values
+        \( x \), \( y \), and \( z \) have.
+
+        For starters, we assume that \( y\neq 0 \), else the given matrix is
+        already diagonal.
+        We shall use that assumption because if we (arbitrarily) let
+        \( a=1 \) then we get
+        \begin{align*}
+           -bx-b^2y+y+bz
+           &=0              \\
+           (-y)b^2+(z-x)b+y
+           &=0
+        \end{align*}
+        and the quadratic formula gives
+        \begin{equation*}
+           b=\frac{-(z-x)\pm\sqrt{(z-x)^2-4(-y)(y)} }{-2y}
+           \qquad
+           y\neq 0
+        \end{equation*}
+        (note that if \( x \), \( y \), and \( z \) are real then these two
+         \( b \)'s are real as the discriminant is positive).
+        By the same token, if we (arbitrarily) let \( c=1 \) then
+        \begin{align*}
+           dx+d^2y-y-dz
+           &=0              \\
+           (y)d^2+(x-z)d-y
+           &=0
+        \end{align*}
+        and we get here
+        \begin{equation*}
+           d=\frac{-(x-z)\pm\sqrt{(x-z)^2-4(y)(-y)} }{2y}
+           \qquad
+           y\neq 0
+        \end{equation*}
+        (as above, if \( x,y,z\in\Re \) then this discriminant is positive
+        so a symmetric, real, \( \nbyn{2} \) matrix is similar to a real
+        diagonal matrix).
+
+        For a check we try \( x=1 \), \( y=2 \), \( z=1 \).
+        \begin{equation*}
+           b=\frac{0\pm\sqrt{0+16} }{-4}=\mp 1
+           \qquad
+           d=\frac{0\pm\sqrt{0+16} }{4}=\pm 1
+        \end{equation*}
+        Note that not all four choices \( (b,d)=(+1,+1),\dots,(-1,-1) \)
+        satisfy \( ad-bc\neq 0 \).
+      \end{exparts} 
+    \end{answer}
+\index{diagonalizable|)}
+\end{exercises}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Eigenvalues and Eigenvectors}
+We will next focus on the
+property of \nearbylemma{lm:DiagIffBasisOfEigens}.
+
+\begin{definition} \label{def:Eigen}
+%<*df:Eigen>
+A transformation \( \map{t}{V}{V} \) has a scalar
+\definend{eigenvalue}\index{eigenvalue, eigenvector!of a transformation}%
+\index{transformation!eigenvalue, eigenvector}
+\( \lambda \)
+if there is a nonzero \definend{eigenvector} \( \vec{\zeta}\in V \)
+such that
+$
+  t(\vec{\zeta})=\lambda\cdot\vec{\zeta}
+$.
+%</df:Eigen>
+\end{definition}
+
+\noindent ``Eigen'' is German for ``characteristic of'' or ``peculiar to.'' 
+Some authors call these \definend{characteristic}%
+\index{characteristic!vectors, values} values and vectors.
+No authors call them ``peculiar'' vectors.
+
+\begin{example}
+The projection map
+\begin{equation*}
+  \colvec{x \\ y \\ z}
+     \mapsunder{\pi}
+  \colvec{x \\ y \\ 0}
+   \qquad x,y,z\in\C
+\end{equation*}
+has an eigenvalue of \( 1 \) associated with any eigenvector
+\begin{equation*}
+   \colvec{x \\ y \\ 0}
+\end{equation*}
+where \( x \) and \( y \) are scalars that are not both zero.
+
+In contrast, a number that is not an eigenvalue of this map is \( 2 \),
+since assuming that $\pi$ doubles a vector leads to 
+the three equations $x=2x$, $y=2y$, and $0=2z$, and thus 
+no non-$\zero$ vector is doubled.
+\end{example}
+
+Note that
+the definition requires that the eigenvector be non-$\zero$.
+Some authors allow $\zero$ as
+an eigenvector for $\lambda$ as long as there are also
+non-$\zero$ vectors associated with $\lambda$.
+The key point is 
+to disallow the trivial case where $\lambda$ is such that
+$t(\vec{v})=\lambda\vec{v}$ for only the single vector $\vec{v}=\zero$.
+
+Also, note that the eigenvalue $\lambda$ could be~$0$.
+The issue is whether $\vec{\zeta}$ equals $\zero$.  
+
+\begin{example}  \label{ex:NoEigenOnTrivSp}
+The only transformation on the trivial space \( \set{\zero} \) is
+%\begin{equation*}
+$\zero\mapsto\zero$.
+%\end{equation*}
+This map has no eigenvalues because there are no non-\( \zero \) vectors
+$\vec{v}$ mapped to a scalar multiple $\lambda\cdot\vec{v}$ of themselves.
+\end{example}        
+
+\begin{example} \label{ex:TransPolyOne}
+Consider the homomorphism \( \map{t}{\polyspace_1}{\polyspace_1} \)
+given by \( c_0+c_1x\mapsto(c_0+c_1)+(c_0+c_1)x \).
+While the codomain $\polyspace_1$ of $t$ is two-dimensional, its 
+range is one-dimensional $\rangespace{t}=\set{c+cx\suchthat c\in\C}$.
+Application of
+\( t \) to a vector in that range will simply rescale the vector
+\( c+cx\mapsto (2c)+(2c)x \).
+That is, \( t \) has an eigenvalue of \( 2 \) associated with eigenvectors of
+the form \( c+cx \), where \( c\neq 0 \).
+
+This map also has an eigenvalue of \( 0 \) associated with eigenvectors of
+the form \( c-cx \) where \( c\neq 0 \).
+\end{example}
+
+The definition above is for maps. 
+We can give a matrix version.
+
+\begin{definition}  \label{df:EigenOfMatrix}
+%<*df:EigenOfMatrix>
+A square matrix \( T \) has a scalar
+\definend{eigenvalue}\index{eigenvalue, eigenvector!of a matrix}
+\( \lambda \) associated with the nonzero
+\definend{eigenvector} \( \vec{\zeta} \) if
+\( T\vec{\zeta}=\lambda\cdot\vec{\zeta} \).
+%</df:EigenOfMatrix>
+\end{definition}
+
+This extension of the definition for maps to a definition
+for matrices is natural but there is a point on which we must take care.
+The eigenvalues of a map are also the eigenvalues of matrices representing
+that map, and so similar matrices have the same eigenvalues.
+However, the eigenvectors can 
+differ\Dash similar matrices need not have the 
+same eigenvectors.
+The next example explains.
+
+\begin{example}
+These matrices are similar
+\begin{equation*}
+  T=
+  \begin{mat}
+    2  &0  \\
+    0  &0
+  \end{mat}
+  \quad
+  \hat{T}
+  =
+  \begin{mat}[r]
+    4  &-2  \\
+    4  &-2
+  \end{mat}
+\end{equation*}
+since $\hat{T}=PTP^{-1}$ for this $P$.
+\begin{equation*}
+  P=
+  \begin{mat}
+    1  &1  \\
+    1  &2
+  \end{mat}
+  \quad
+  P^{-1}=
+  \begin{mat}[r]
+    2   &-1  \\
+    -1  &1
+  \end{mat}
+\end{equation*}
+The matrix $T$
+has two eigenvalues, $\lambda_1=2$ and~$\lambda_2=0$.
+The first one is associated with this eigenvector.
+\begin{equation*}
+  T\vec{e}_1=
+  \begin{mat}
+    2  &0  \\
+    0  &0
+  \end{mat}
+  \colvec{1 \\ 0}
+  =\colvec{2 \\ 0}
+  =2\vec{e}_1
+\end{equation*}
+Suppose that $T$ represents a transformation $\map{t}{\C^2}{\C^2}$
+with respect to the standard basis.
+Then the action of this transformation $t$ is simple.
+\begin{equation*}
+  \colvec{x \\ y}\mapsunder{t}\colvec{2x \\ 0}
+\end{equation*}
+
+Of course, $\hat{T}$ represents the same transformation but with 
+respect to a different basis~$B$.
+We can find this basis.
+Following the arrow diagram from the lower left to the upper left
+\begin{equation*}
+  \begin{CD}
+    V_{\wrt{\stdbasis_2}}            @>t>T>        V_{\wrt{\stdbasis_2}}       \\
+    @V{\scriptstyle\identity} VV              @V{\scriptstyle\identity} VV \\
+    V_{\wrt{B}}                   @>t>\hat{T}>        V_{\wrt{B}}       
+  \end{CD}
+\end{equation*}
+shows that $P^{-1}=\rep{\identity}{B,\stdbasis_2}$.
+By the definition of the matrix representation of a map, its first column is 
+$\rep{\identity(\vec{\beta}_1)}{\stdbasis_2}=\rep{\vec{\beta}_1}{\stdbasis_2}$.
+With respect to the standard basis any vector is represented by itself, 
+so the first basis element $\vec{\beta}_1$ is the first column of $P^{-1}$.
+The same goes for the other one.
+\begin{equation*}
+  B=\sequence{\colvec[r]{2 \\ -1},
+              \colvec[r]{-1 \\ 1}
+              }
+\end{equation*}
+Since the matrices $T$ and~$\hat{T}$ both represent the transformation~$t$,
+both reflect the action $t(\vec{e}_1)=2\vec{e}_1$.
+\begin{align*}
+  &\rep{t}{\stdbasis_2,\stdbasis_2}\cdot\rep{\vec{e}_1}{\stdbasis_2}
+    =T\cdot\rep{\vec{e}_1}{\stdbasis_2}                
+    =2\cdot\rep{\vec{e}_1}{\stdbasis_2}                  \\               
+    &\rep{t}{B,B}\cdot\rep{\vec{e}_1}{B}
+    =\hat{T}\cdot\rep{\vec{e}_1}{B}                                 
+    =2\cdot\rep{\vec{e}_1}{B}  
+\end{align*}
+But while in those two equations the eigenvalue $2$'s are the same, the
+vector representations differ.
+\begin{align*}
+    T\cdot\rep{\vec{e}_1}{\stdbasis_2}
+    =T\colvec{1 \\ 0}
+    &=2\cdot\colvec{1 \\ 0}                \\
+    \hat{T}\cdot\rep{\vec{e}_1}{B}  
+    =\hat{T}\cdot\colvec{1 \\ 1}
+    &=2\cdot\colvec{1 \\ 1}
+\end{align*}
+That is, when the matrix representing the transformation is
+\( T=\rep{t}{\stdbasis_2,\stdbasis_2} \) then it ``assumes'' that 
+column vectors are 
+representations with respect to \( \stdbasis_2 \).
+However \( \hat{T}=\rep{t}{B,B} \) ``assumes'' that column vectors 
+are representations with respect to \( B \) and
+so the column vectors that get doubled 
+are different.
+\end{example}
+
+
+% \begin{example}
+% Consider again the transformation \( \map{t}{\polyspace_1}{\polyspace_1} \) 
+% % from \nearbyexample{ex:TransPolyOne} 
+% given by
+% \( c_0+c_1x\mapsto (c_0+c_1)+(c_0+c_1)x \).
+% One of its eigenvalues is \( 2 \), associated with the eigenvectors
+% \( c+cx \) where \( c\neq 0 \).
+% If we represent \( t \) with respect to \( B=\sequence{1+1x,1-1x} \)
+% \begin{equation*}
+%    T=\rep{t}{B,B}=
+%    \begin{mat}[r]
+%       2  &0  \\
+%       0  &0
+%    \end{mat}
+% \end{equation*}
+% then \( 2 \) is an eigenvalue of the matrix \( T \), 
+% associated with these eigenvectors.
+% \begin{equation*}
+%    \set{\colvec{c_0 \\ c_1}\suchthat \begin{mat}[r]
+%                                          2  &0  \\
+%                                          0  &0
+%                                       \end{mat}\colvec{c_0 \\ c_1}
+%                                       =\colvec{2c_0 \\ 2c_1}  }
+%   =\set{\colvec{c_0 \\ 0}\suchthat c_0\in\C,\, c_0\neq 0 }
+% \end{equation*}
+% On the other hand, if we represent $t$ with respect to
+% \( D=\sequence{2+1x,1+0x} \)  
+% \begin{equation*}
+%    S=\rep{t}{D,D}=
+%    \begin{mat}[r]
+%       3  &1  \\
+%      -3  &-1
+%    \end{mat}
+% \end{equation*}
+% then the eigenvectors associated with the eigenvalue \( 2 \) are
+% these.
+% \begin{equation*}
+%    \set{\colvec{c_0 \\ c_1}\suchthat \begin{mat}[r]
+%                                          3  &1  \\
+%                                         -3  &-1
+%                                       \end{mat}\colvec{c_0 \\ c_1}
+%                                       =\colvec{2c_0 \\ 2c_1}  }
+%   =\set{\colvec{0 \\ c_1}\suchthat c_1\in\C,\, c_1\neq 0 }
+% \end{equation*}
+% \end{example}
+
+
+We next see the basic tool for
+finding eigenvectors and eigenvalues.
+
+\begin{example}  \label{ex:IntroCharEqn}
+If
+\begin{equation*}
+  T=
+  \begin{mat}[r]
+     1    &2    &1    \\
+     2    &0    &-2   \\
+    -1    &2    &3
+  \end{mat}
+\end{equation*}
+then to find the scalars \( x \) such that
+\( T\vec{\zeta}=x\vec{\zeta} \) for nonzero eigenvectors
+\( \vec{\zeta} \), bring everything to the left-hand side
+\begin{equation*}
+  \begin{mat}[r]
+     1    &2    &1    \\
+     2    &0    &-2   \\
+    -1    &2    &3
+  \end{mat}
+  \colvec{z_1 \\ z_2 \\ z_3}
+  -x\colvec{z_1 \\ z_2 \\ z_3}
+  =\zero
+\end{equation*}
+and factor
+\( (T-x I)\vec{\zeta}=\zero \).
+(Note that it says $T-xI$. 
+The expression \( T-x \) doesn't make sense 
+because \( T \) is a matrix while \( x \) is a scalar.)
+This homogeneous linear system
+\begin{equation*}
+  \begin{mat}
+   1-x           &2            &1            \\
+     2           &0-x          &-2           \\
+    -1           &2            &3-x
+  \end{mat}
+  \colvec{z_1 \\ z_2 \\ z_3}
+  =
+  \colvec[r]{0 \\ 0 \\ 0}
+\end{equation*}
+has a nonzero solution $\vec{z}$ if and only if the
+matrix is singular.
+We can determine when that happens.
+\begin{align*}
+  0
+  &=\deter{T-x I}                                               \\
+  &=\begin{vmatrix}
+     1-x          &2            &1            \\
+     2           &0-x          &-2           \\
+    -1           &2            &3-x
+   \end{vmatrix}                                       \\
+  &=x^3-4x^2+4x  \\
+  &=x(x-2)^2
+\end{align*}
+The eigenvalues are \( \lambda_1=0 \) and \( \lambda_2=2 \).
+To find the associated eigenvectors plug in each eigenvalue.
+Plugging in $\lambda_1=0$ gives
+\begin{equation*}
+  \begin{mat}
+     1-0         &2            &1            \\
+     2           &0-0          &-2           \\
+    -1           &2            &3-0
+  \end{mat}
+  \colvec{z_1 \\ z_2 \\ z_3}
+  =
+  \colvec[r]{0 \\ 0 \\ 0}
+  \quad\Longrightarrow\quad
+  \colvec{z_1 \\ z_2 \\ z_3}
+  =
+  \colvec[r]{a \\ -a \\ a}
+\end{equation*}
+for \( a\neq 0 \)
+(\( a \) must be non-$0$ because eigenvectors are defined to
+be non-\( \zero \)).
+Plugging in $\lambda_2=2$ gives 
+\begin{equation*}
+  \begin{mat}
+     1-2         &2            &1            \\
+     2           &0-2          &-2           \\
+    -1           &2            &3-2
+  \end{mat}
+  \colvec{z_1 \\ z_2 \\ z_3}
+  =
+  \colvec[r]{0 \\ 0 \\ 0}
+  \quad\Longrightarrow\quad
+  \colvec{z_1 \\ z_2 \\ z_3}
+  =
+  \colvec{b \\ 0 \\ b}
+\end{equation*}
+with \( b\neq 0 \).
+\end{example}
+
+\begin{example} \label{ex:AnotherCharPoly}
+If
+\begin{equation*}
+  S=
+  \begin{mat}[r]
+    \pi      &1      \\
+    0        &3
+  \end{mat}
+\end{equation*}
+(here \( \pi \) is not a projection map, it is the number
+\( 3.14\ldots \)) then
+\begin{equation*}
+    \begin{vmat}
+      \pi-x &1         \\
+      0     &3-x
+    \end{vmat} 
+  =
+  (x-\pi)(x-3)
+\end{equation*}
+so \( S \) has eigenvalues of \( \lambda_1=\pi \) and \( \lambda_2=3 \).
+To find associated eigenvectors, first plug in $\lambda_1$ for $x$
+\begin{equation*}
+  \begin{mat}
+    \pi-\pi     &1         \\
+    0           &3-\pi
+  \end{mat}
+  \colvec{z_1 \\ z_2}
+  =
+  \colvec[r]{0 \\ 0}
+  \qquad\Longrightarrow\qquad
+  \colvec{z_1 \\ z_2}
+  =
+  \colvec{a \\ 0}
+\end{equation*}
+for a scalar \( a\neq 0 \).
+Then plug in $\lambda_2$
+\begin{equation*}
+  \begin{mat}
+    \pi-3       &1         \\
+    0           &3-3
+  \end{mat}
+  \colvec{z_1 \\ z_2}
+  =
+  \colvec[r]{0 \\ 0}
+  \qquad\Longrightarrow\qquad
+  \colvec{z_1 \\ z_2}
+  =
+  \colvec{-b/(\pi-3) \\ b}
+\end{equation*}
+where \( b\neq 0 \).
+\end{example}
+
+\begin{definition} \label{df:CharacteristicPoly}
+%<*df:CharacteristicPoly>
+The \definend{characteristic polynomial of a square matrix}\index{characteristic!polynomial}%
+\index{matrix!characteristic polynomial}
+\( T \) is the
+determinant \( \deter{T-x I} \), where \( x \) is a variable.
+The \definend{characteristic equation}\index{characteristic!equation}%
+\index{matrix!characteristic polynomial}
+is $\deter{T-xI}=0$.
+The \definend{characteristic polynomial of a transformation}
+\( t \) is the characteristic polynomial
+of any matrix representation
+\( \rep{t}{B,B} \).\index{transformation!characteristic polynomial}
+%</df:CharacteristicPoly>
+\end{definition}
+
+\noindent 
+%<*df:CharacteristicPolyExer>
+The characteristic polynomial of an \( \nbyn{n} \) matrix, 
+or of a transformation \( \map{t}{\C^n}{\C^n} \), is of degree~\( n \).
+\nearbyexercise{exer:CharPolyTransWellDefed} checks that the 
+characteristic polynomial of a transformation is 
+well-defined, that is, that the characteristic polynomial is the same
+no matter which basis we use for the representation.
+%</df:CharacteristicPolyExer>
+
+\begin{lemma} \label{le:MapNonTrivSpHasEigen}
+%<*lm:MapNonTrivSpHasEigen>
+A linear transformation on a nontrivial vector space has at least one
+eigenvalue.
+%</lm:MapNonTrivSpHasEigen>
+\end{lemma}
+
+\begin{proof}
+%<*pf:MapNonTrivSpHasEigen>
+Any root of the characteristic polynomial is an eigenvalue.
+Over the complex numbers, any polynomial of degree one or greater
+has a root.
+%</pf:MapNonTrivSpHasEigen>
+\end{proof}
+
+\begin{remark}
+That result is the reason that in this chapter 
+we use scalars that are complex numbers.
+Had we stuck to real number scalars then there would be characteristic
+polynomials, such as $x^2+1$, that do not factor. 
+\end{remark}
+
+% Notice the familiar form of the sets of eigenvectors in the above examples.
+
+\begin{definition} \label{df:Eigenspace}
+%<*df:Eigenspace>
+The \definend{eigenspace of a transformation~$t$ associated 
+with the 
+eigenvalue~$\lambda$}\index{eigenspace}\index{transformation!eigenspace}
+is
+$
+  V_{\lambda}=\set{\vec{\zeta}\suchthat t(\vec{\zeta}\,)=\lambda\vec{\zeta}\,}
+              % \union\set{\zero\,}
+$.
+The eigenspace of a matrix is analogous.
+%</df:Eigenspace>
+\end{definition}
+
+% \begin{remark}
+% In \nearbydefinition{def:Eigen} we specified that eigenvectors must be
+% non-$\zero$.
+% So, strictly speaking, the eigenspace for $\lambda$ contains the set of
+% associated eigenvectors along with $\zero$.
+% We need the zero vector for the next result. 
+% \end{remark}
+
+\begin{lemma}  \label{le:EigSpaceIsSubSp}
+%<*lm:EigSpaceIsSubSp>
+An eigenspace is a subspace.
+It is a nontrivial subspace.
+%</lm:EigSpaceIsSubSp>
+\end{lemma}
+
+\begin{proof}
+%<*pf:EigSpaceIsSubSp>
+Notice first that
+$V_{\lambda}$ is not empty; it contains the zero
+vector since $t(\zero)=\zero$, which equals
+$\lambda\cdot \zero$.
+To show that an eigenspace is a subspace,
+what remains is to check closure of this set under linear combinations.
+Take \( \vec{\zeta}_1,\ldots,\vec{\zeta}_n\in V_{\lambda} \) and then
+\begin{align*}
+  t(\lincombo{c}{\vec{\zeta}})
+  &=c_1t(\vec{\zeta}_1)+\dots+c_nt(\vec{\zeta}_n)               \\
+  &=c_1\lambda\vec{\zeta}_1+\dots+c_n\lambda\vec{\zeta}_n          \\
+  &=\lambda(c_1\vec{\zeta}_1+\dots+c_n\vec{\zeta}_n)
+\end{align*}
+that the combination is also an element of  $V_{\lambda}$.
+% (despite that the zero vector isn't an eigenvector, 
+% the second equality holds even if some \( \vec{\zeta}_i \) is \( \zero \) since
+% \( t(\zero)=\lambda\cdot\zero=\zero \)).
+
+The space~$V_\lambda$ contains more than just the zero vector
+because by definition $\lambda$ is an eigenvalue only if  
+$t(\vec{\zeta}\,)=\lambda\vec{\zeta}$ has solutions for $\vec{\zeta}$
+other than $\zero$.
+%</pf:EigSpaceIsSubSp>
+\end{proof}
+
+\begin{example}   \label{ex:AlgMultDifferentThanGeoMult}
+These are the eigenspaces associated with the eigenvalues \( 0 \) 
+and \( 2 \) of \nearbyexample{ex:IntroCharEqn}.
+\begin{equation*}
+  V_0=\set{\colvec[r]{a \\ -a \\ a}\suchthat a\in\C},
+  \qquad
+  V_2=\set{\colvec{b \\ 0 \\ b}\suchthat b\in\C}.
+\end{equation*}
+\end{example}
+
+\begin{example} \label{ex:AnotherCharPolyReprise}
+These are the eigenspaces 
+for the eigenvalues \( \pi \) 
+and~\( 3 \) of \nearbyexample{ex:AnotherCharPoly}.
+\begin{equation*}
+  V_{\pi}=\set{\colvec{a \\ 0}\suchthat a\in\C}
+  \qquad
+  V_3=\set{\colvec{-b/(\pi-3) \\ b}\suchthat b\in\C}
+\end{equation*}
+\end{example}
+
+The characteristic equation 
+in \nearbyexample{ex:IntroCharEqn}
+is \( 0=x(x-2)^2 \) so in some sense
+\( 2 \) is an eigenvalue twice.
+However there are not twice as many eigenvectors in that the dimension
+of the associated eigenspace $V_2$ is one, not two.
+The next example is a case where a number is a double root of
+the characteristic equation and the dimension of the associated eigenspace
+is two.
+
+\begin{example}  \label{ex:EigenvaluesProjection}
+With respect to the standard bases, this matrix
+\begin{equation*}
+  \begin{mat}[r]
+     1  &0  &0  \\
+     0  &1  &0  \\
+     0  &0  &0
+  \end{mat}
+\end{equation*}
+represents projection.
+\begin{equation*}
+  \colvec{x \\ y \\ z}
+     \mapsunder{\pi}
+  \colvec{x \\ y \\ 0}
+   \qquad x,y,z\in\C
+\end{equation*}
+Its characteristic equation 
+\begin{align*}
+  0
+  &=\deter{T-x I}                                     \\
+  &=\begin{vmatrix}
+     1-x          &0            &0            \\
+     0           &1-x          &0           \\
+     0           &0            &0-x
+   \end{vmatrix}                                       \\
+  &=(1-x)^2(0-x)
+\end{align*}
+has the double root~$x=1$ along with the single root~$x=0$.
+Its eigenspace associated with the eigenvalue \( 1 \) and
+its eigenspace associated with the eigenvalue \( 0 \)
+are easy to find.
+\begin{equation*}
+   V_1=\set{\colvec{c_1 \\ c_2 \\ 0}\suchthat c_1,c_2\in\C}
+   \qquad
+   V_0=\set{\colvec{0 \\ 0 \\ c_3}\suchthat c_3\in\C}
+\end{equation*}
+Note that $V_1$ has dimension two.
+\end{example}
+
+\begin{definition}
+Where a characteristic polynomial factors into
+$(x-\lambda_1)^{m_1}\cdots (x-\lambda_k)^{m_k}$ 
+then the eigenvalue $\lambda_i$ has 
+\definend{algebraic multiplicity}~$m_i$\index{multiplicity!algebraic}%
+\index{algebraic multiplicity}.
+Its
+\definend{geometric multiplicity}\index{multiplicity!geometric}%
+\index{geometric multiplicity}
+is the dimension of the associated eigenspace~$V_{\lambda_i}$.  
+\end{definition}
+
+In \nearbyexample{ex:EigenvaluesProjection}, there are two eigenvalues, 
+For $\lambda_1=1$ both the
+algebraic and geometric multiplicities are~$2$.
+For $\lambda_2=0$  both the
+algebraic and geometric multiplicities are~$1$.
+In contrast, \nearbyexample{ex:AlgMultDifferentThanGeoMult}
+shows that the eigenvalue $\lambda=2$ has algebraic multiplicity~$2$ 
+but geometric multiplicity~$1$.
+For every transformation, each eigenvalue has geometric 
+multiplicity greater than or equal to~$1$ by \nearbylemma{le:EigSpaceIsSubSp}.
+(And, an eigenvalue must have geometric multiplicity 
+less than or equal to 
+its algebraic multiplicity, although proving this is beyond our scope.)
+
+By \nearbylemma{le:EigSpaceIsSubSp} 
+if two eigenvectors $\vec{v}_1$ and $\vec{v}_2$ are 
+associated with the same eigenvalue then a linear combination of those
+two is also an eigenvector, associated with the same eigenvalue.
+As an illustration, referring to the prior example, 
+this sum of two members of $V_1$
+\begin{equation*}
+  \colvec[r]{1 \\ 0 \\ 0}+\colvec[r]{0 \\ 1 \\ 0}
+\end{equation*}
+yields another member of $V_1$.
+
+The next result speaks to the situation where the vectors come from
+different eigenspaces.
+
+\begin{theorem}  \label{th:DistEValueGivesLIEvecs}
+%<*th:DistEValueGivesLIEvecs>
+For any set of distinct eigenvalues of a map or matrix, a set of associated
+eigenvectors, one per eigenvalue, is linearly independent.
+%</th:DistEValueGivesLIEvecs>
+\end{theorem}
+
+\begin{proof}
+%<*pf:DistEValueGivesLIEvecs0>
+We will use induction on the number of eigenvalues.
+The base step is that there are zero eigenvalues.
+Then the set of associated vectors is empty
+and so is linearly independent.
+% If there is 
+% only one eigenvalue then the set of associated eigenvectors is
+% a singleton set with a non-$\zero$ member, 
+% and so is linearly independent.
+%</pf:DistEValueGivesLIEvecs0>
+
+%<*pf:DistEValueGivesLIEvecs1>
+For the inductive step assume that the statement is true for any set 
+of \( k\geq 0 \) distinct eigenvalues. 
+Consider distinct eigenvalues 
+\( \lambda_1,\dots,\lambda_{k+1} \)
+and let \( \vec{v}_1,\dots,\vec{v}_{k+1} \)
+be associated eigenvectors.
+Suppose that
+$\zero=c_1\vec{v}_1+\dots+c_k\vec{v}_k+c_{k+1}\vec{v}_{k+1}$. 
+Derive two equations from that, the first by multiplying by \( \lambda_{k+1} \) 
+on both sides 
+$\zero=c_1\lambda_{k+1}\vec{v}_1+\dots+c_{k+1}\lambda_{k+1}\vec{v}_{k+1}$
+and the second by applying the map to both sides
+$\zero=c_1t(\vec{v}_1)+\dots+c_{k+1}t(\vec{v}_{k+1})
+  =c_1\lambda_1\vec{v}_1+\dots+c_{k+1}\lambda_{k+1}\vec{v}_{k+1}$
+(applying the matrix gives the same result). 
+Subtract the second from the first.
+\begin{equation*}
+  \zero=
+  c_1(\lambda_{k+1}-\lambda_1)\vec{v}_1+\dots
+  +c_k(\lambda_{k+1}-\lambda_k)\vec{v}_k
+      +c_{k+1}(\lambda_{k+1}-\lambda_{k+1})\vec{v}_{k+1}
+\end{equation*}
+The $\vec{v}_{k+1}$ term vanishes.
+Then the induction hypothesis gives that
+\( c_1(\lambda_{k+1}-\lambda_1)=0 \), \ldots, \( c_k(\lambda_{k+1}-\lambda_k)=0 \).
+The eigenvalues are distinct so 
+the coefficients \( c_1,\,\dots,\,c_k \) are all~\( 0 \).
+With that
+we are left with the equation \( \zero=c_{k+1}\vec{v}_{k+1} \)
+so \( c_{k+1} \) is also~\( 0 \).
+%</pf:DistEValueGivesLIEvecs1>
+\end{proof}
+
+\begin{example}
+The eigenvalues of
+\begin{equation*}
+     \begin{mat}[r]
+        2   &-2   &2   \\
+        0   &1    &1   \\
+       -4   &8    &3
+     \end{mat}
+\end{equation*}
+are distinct: \( \lambda_1=1 \), \( \lambda_2=2 \), and~\( \lambda_3=3 \).
+A set of associated eigenvectors 
+\begin{equation*}
+  \set{
+       \colvec[r]{2 \\ 1 \\ 0},
+       \colvec[r]{9 \\ 4 \\ 4},
+       \colvec[r]{2 \\ 1 \\ 2}  }
+\end{equation*}
+is linearly independent.
+\end{example}
+
+\begin{corollary} \label{co:DistinctEivenvaluesImpliesDiagonal}
+%<*co:DistinctEivenvaluesImpliesDiagonal>
+An \( \nbyn{n} \) matrix with \( n \) distinct eigenvalues is diagonalizable.
+%</co:DistinctEivenvaluesImpliesDiagonal>
+\end{corollary}
+
+\begin{proof}
+%<*pf:DistinctEivenvaluesImpliesDiagonal>
+Form a basis of eigenvectors.
+Apply \nearbylemma{lm:DiagIffBasisOfEigens}.
+%</pf:DistinctEivenvaluesImpliesDiagonal>
+\end{proof}
+
+\begin{example} \label{ex:SummaryOfDiagonalizable}
+In the prior example we showed that the matrix
+\begin{equation*}
+     T=\begin{mat}[r]
+        2   &-2   &2   \\
+        0   &1    &1   \\
+       -4   &8    &3
+     \end{mat}
+\end{equation*}
+is diagonalizable with eigenvalues 
+$\lambda_1=1$, $\lambda_2=2$, and~$\lambda_3=3$.
+These are associated eigenvectors, which make up a basis~$B$.
+\begin{equation*}
+       \vec{\beta}_1=\colvec[r]{2 \\ 1 \\ 0}\quad
+       \vec{\beta}_2=\colvec[r]{9 \\ 4 \\ 4}\quad
+       \vec{\beta}_3=\colvec[r]{2 \\ 1 \\ 2} 
+\end{equation*}
+The arrow diagram
+\begin{equation*}
+  \begin{CD}
+    V_{\wrt{\stdbasis_3}}            @>t>T>        V_{\wrt{\stdbasis_3}}       \\
+    @V{\scriptstyle\identity} VV              @V{\scriptstyle\identity} VV \\
+    V_{\wrt{B}}                   @>t>D>        V_{\wrt{B}}       
+  \end{CD}
+\end{equation*}
+gives this, where $P=\rep{\identity}{\stdbasis_3,B}$.
+\begin{align*}
+  D &= PTP^{-1}  \\
+  \begin{mat}
+    1  &0  &0 \\
+    0  &2  &0 \\
+    0  &0  &3
+  \end{mat}
+  &=
+    \begin{mat}
+      -2  &5  &-1/2  \\
+       1  &-2  &0    \\
+      -2  &4  &1/2 
+    \end{mat}
+     \begin{mat}[r]
+        2   &-2   &2   \\
+        0   &1    &1   \\
+       -4   &8    &3
+     \end{mat}
+    \begin{mat}
+      2  &9  &2  \\
+      1  &4  &1  \\
+      0  &4  &2
+    \end{mat}
+\end{align*}
+% sage: T = matrix(QQ, [[2,-2,2], [0,1,1], [-4,8,3]])
+% sage: T
+% [ 2 -2  2]
+% [ 0  1  1]
+% [-4  8  3]
+% sage: T.eigenvectors_right()
+% [(3, [
+%   (1, 1/2, 1)
+%   ], 1), (2, [
+%   (1, 4/9, 4/9)
+%   ], 1), (1, [
+%   (1, 1/2, 0)
+%   ], 1)]
+% sage: P_inv = matrix(QQ, [[2,9,2], [1,4,1], [0,4,2]])
+% sage: P_inv.inverse()
+% [  -2    5 -1/2]
+% [   1   -2    0]
+% [  -2    4  1/2]
+The bottom of the diagram has 
+$t(\vec{\beta}_1)=1\cdot\vec{\beta}_1$, 
+along with $t(\vec{\beta}_2)=2\cdot\vec{\beta}_2$, 
+and $t(\vec{\beta}_3)=3\cdot\vec{\beta}_3$.
+Rewriting gives that the map $t-1$ sends $\vec{\beta}_1$ to~$\zero$, 
+that $t-2$ sends $\vec{\beta}_2$ to~$\zero$,
+and that $(t-3)(\vec{\beta}_3)=\zero$.
+That is, the action on $B$ is this.
+\begin{equation*}
+  \vec{\beta}_1\mapsunder{t-1}\zero  \qquad
+  \vec{\beta}_2\mapsunder{t-2}\zero  \qquad
+  \vec{\beta}_3\mapsunder{t-3}\zero 
+\end{equation*}
+Turning to the representations in that arrow diagram, the top line says
+that the matrix $T-(1\cdot I)$, which represents $t-1$ with respect to 
+$\stdbasis_3,\stdbasis_3$, multiplied by the representation of 
+$\vec{\beta}_1$ with respect to~$\stdbasis_3$, will give zero.
+\begin{equation*}
+  \begin{mat}
+    1  &-2  &2  \\
+    0  &0   &1  \\
+   -4  &8   &2  \\
+  \end{mat}
+  \colvec{2 \\ 1 \\ 0}
+  =
+  \colvec{0  \\ 0 \\ 0}
+\end{equation*}
+Similarly, the matrix $T-(2\cdot I)$, representing $t-2$ with respect to 
+$\stdbasis_3,\stdbasis_3$, when multiplied by the representation of 
+$\vec{\beta}_2$ with respect to~$\stdbasis_3$, gives zero.
+\begin{equation*}
+  \begin{mat}
+    0  &-2  &2  \\
+    0  &01   &1  \\
+   -4  &8   &1  \\
+  \end{mat}
+  \colvec{9 \\ 4 \\ 4}
+  =
+  \colvec{0  \\ 0 \\ 0}
+\end{equation*}
+And of course, the matrix $T-(3\cdot I)$ times
+the representation of 
+$\vec{\beta}_3$ with respect to~$\stdbasis_3$ also gives zero.
+\end{example}
+
+In summary, this section observes that some
+matrices are similar to a diagonal matrix. 
+The idea of eigenvalues arose as the entries of that diagonal matrix,
+although the definition applies more broadly than just to 
+diagonalizable matrices.  
+To find eigenvalues we defined the characteristic equation and
+that led to the final result, a 
+criterion for diagonalizability.
+(While it is useful for the theory, note that 
+in applications finding eigenvalues this way
+is typically impractical; for one thing the matrix may be large and
+finding roots of large-degree polynomials is hard.) 
+
+In the next section we study matrices that cannot be diagonalized. 
+
+
+\begin{exercises}
+  \item This matrix has two eigenvalues $\lambda_1=3$, $\lambda_2=-4$.
+    \begin{equation*}
+      \begin{mat}
+        4  &1 \\
+        -8 &-5
+      \end{mat}
+    \end{equation*}
+    Give two different diagonal form matrices with which it is similar.
+    \begin{answer}
+      We can permute the columns, by permuting the basis with which the
+      representation is done.
+      \begin{equation*}
+        \begin{mat} 
+          3 &0 \\ 
+          0 &-4
+        \end{mat}
+        \qquad
+        \begin{mat} 
+          -4 &0 \\ 
+          0 &3
+        \end{mat}
+      \end{equation*}
+    \end{answer}
+  \item 
+    For each, find the characteristic polynomial and the eigenvalues.
+    \begin{exparts*}
+      \partsitem \( \begin{mat}[r]
+                 10  &-9 \\
+                  4  &-2
+            \end{mat}  \)
+      \partsitem $\begin{mat}[r]
+                    1  &2  \\
+                    4  &3  
+                 \end{mat}$
+      \partsitem \( \begin{mat}[r]
+                  0  &3  \\
+                  7 &0
+                 \end{mat} \)
+      \partsitem \( \begin{mat}[r]  
+                  0  &0  \\
+                  0  &0
+            \end{mat}  \)
+      \partsitem \( \begin{mat}[r]
+                  1  &0  \\
+                  0  &1
+            \end{mat}  \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+         \partsitem This
+           \begin{equation*}
+             0=
+             \begin{vmatrix}
+               10-x  &-9  \\
+               4     &-2-x
+             \end{vmatrix}
+             =(10-x)(-2-x)-(-36)
+           \end{equation*}
+           simplifies to the characteristic equation \( x^2-8x+16=0 \). 
+           Because the equation factors into $(x-4)^2$ there is
+           only one eigenvalue \( \lambda_1=4 \).
+         \partsitem $0=(1-x)(3-x)-8=x^2-4x-5$; $\lambda_1=5$, $\lambda_2=-1$
+         \partsitem \( x^2-21=0 \); 
+           \( \lambda_1=\sqrt{21} \), $\lambda_2=-\sqrt{21}$
+         \partsitem \( x^2=0 \); \( \lambda_1=0 \)
+         \partsitem \( x^2-2x+1=0 \); \( \lambda_1=1 \)
+       \end{exparts}  
+     \end{answer}
+  \recommended \item
+    For each matrix, find the characteristic equation and the
+    eigenvalues and associated eigenvectors.
+    \begin{exparts*}
+      \partsitem \( \begin{mat}[r]
+                  3  &0  \\
+                  8  &-1
+            \end{mat}  \)
+      \partsitem \( \begin{mat}[r]
+                  3  &2  \\
+                 -1  &0
+            \end{mat}  \)
+    \end{exparts*}
+    \begin{answer}
+       \begin{exparts}
+         \partsitem The characteristic equation is \( (3-x)(-1-x)=0 \).
+           Its roots, the eigenvalues, are \( \lambda_1=3 \) and 
+           \( \lambda_2=-1 \).
+           For the eigenvectors we consider this equation.
+           \begin{equation*}
+             \begin{mat}
+               3-x  &0    \\
+               8    &-1-x
+             \end{mat}
+             \colvec{b_1  \\  b_2}
+             =\colvec[r]{0  \\  0}
+           \end{equation*}
+           For the eigenvector associated with $\lambda_1=3$,
+           we consider the resulting linear system.
+           \begin{equation*}
+             \begin{linsys}{2}
+               0\cdot b_1  &+  &0\cdot b_2  &=  &0  \\
+               8\cdot b_1  &+  &-4\cdot b_2 &=  &0
+             \end{linsys}
+           \end{equation*}
+           The eigenspace is the set of vectors whose second component is 
+           twice the first component.
+           \begin{equation*}
+             \set{\colvec{b_2/2 \\ b_2}\suchthat b_2\in\C}
+             \qquad
+             \begin{mat}[r]
+               3  &0  \\
+               8  &-1
+             \end{mat}
+             \colvec{b_2/2  \\ b_2}
+             =3\cdot\colvec{b_2/2 \\ b_2}
+           \end{equation*}
+           (Here, the parameter is $b_2$ only because that is the variable that
+           is free in the above system.)
+           Hence, this is an eigenvector associated with the eigenvalue $3$.
+           \begin{equation*}
+             \colvec[r]{1 \\ 2}
+           \end{equation*}
+
+           Finding an eigenvector associated with $\lambda_2=-1$ is similar.
+           This system
+           \begin{equation*}
+             \begin{linsys}{2}
+               4\cdot b_1  &+  &0\cdot b_2  &=  &0  \\
+               8\cdot b_1  &+  &0\cdot b_2 &=  &0
+             \end{linsys}
+           \end{equation*}
+           leads to the set of vectors whose first component is 
+           zero.
+           \begin{equation*}
+             \set{\colvec{0 \\ b_2}\suchthat b_2\in\C}
+             \qquad
+             \begin{mat}[r]
+               3  &0  \\
+               8  &-1
+             \end{mat}
+             \colvec{0  \\ b_2}
+             =-1\cdot\colvec{0 \\ b_2}
+           \end{equation*}
+           And so this is an eigenvector associated with $\lambda_2$.
+           \begin{equation*}
+             \colvec[r]{0 \\ 1}
+           \end{equation*}
+         \partsitem The characteristic equation is
+           \begin{equation*}
+             0=
+             \begin{vmatrix}
+               3-x  &2  \\
+               -1   &-x               
+             \end{vmatrix}
+             =x^2-3x+2=(x-2)(x-1)
+           \end{equation*}
+           and so the eigenvalues are $\lambda_1=2$ and $\lambda_2=1$.
+           To find eigenvectors, consider this system.
+           \begin{equation*}
+             \begin{linsys}{2}
+               (3-x)\cdot b_1  &+  &2\cdot b_2  &=  &0  \\
+               -1\cdot b_1     &-  &x\cdot b_2  &=  &0
+             \end{linsys}
+           \end{equation*}
+           For $\lambda_1=2$ we get 
+           \begin{equation*}
+             \begin{linsys}{2}
+                1\cdot b_1  &+  &2\cdot b_2  &=  &0  \\
+               -1\cdot b_1  &-  &2\cdot b_2  &=  &0
+             \end{linsys}
+           \end{equation*}
+           leading to this eigenspace and eigenvector.
+           \begin{equation*}
+             \set{\colvec{-2b_2 \\ b_2}
+                   \suchthat b_2\in\C}
+             \qquad
+             \colvec[r]{-2 \\ 1}
+           \end{equation*}
+           For $\lambda_2=1$ the system is 
+           \begin{equation*}
+             \begin{linsys}{2}
+                2\cdot b_1  &+  &2\cdot b_2  &=  &0  \\
+               -1\cdot b_1  &-  &1\cdot b_2  &=  &0
+             \end{linsys}
+           \end{equation*}
+           leading to this.
+           \begin{equation*}
+             \set{\colvec{-b_2 \\ b_2}
+                   \suchthat b_2\in\C}
+             \qquad
+             \colvec[r]{-1 \\ 1}
+           \end{equation*}
+       \end{exparts}  
+     \end{answer}
+  \item
+    Find the characteristic equation, and the
+    eigenvalues and associated eigenvectors for this matrix.
+    \textit{Hint.}
+      The eigenvalues are complex.
+    \begin{equation*}
+      \begin{mat}[r]
+         -2  &-1 \\
+          5  &2
+      \end{mat}  
+    \end{equation*}
+    \begin{answer}
+         The characteristic equation 
+           \begin{equation*}
+             0=
+             \begin{vmatrix}
+               -2-x  &-1  \\
+               5     &2-x               
+             \end{vmatrix}
+             =x^2+1
+           \end{equation*}
+           has the complex roots $\lambda_1=i$ and $\lambda_2=-i$.
+           This system 
+           \begin{equation*}
+             \begin{linsys}{2}
+               (-2-x)\cdot b_1  &-  &1\cdot b_2      &=  &0  \\
+               5\cdot b_1       &   &(2-x)\cdot b_2  &=  &0
+             \end{linsys}
+           \end{equation*}
+           For $\lambda_1=i$ Gauss's Method gives this reduction.
+           \begin{equation*}
+             \begin{linsys}{2}
+                (-2-i)\cdot b_1  &-  &1\cdot b_2      &=  &0  \\
+                5\cdot b_1       &-  &(2-i)\cdot b_2  &=  &0
+             \end{linsys}
+             \grstep{(-5/(-2-i))\rho_1+\rho_2}
+             \begin{linsys}{2}
+                (-2-i)\cdot b_1  &-  &1\cdot b_2      &=  &0  \\
+                                 &   &0               &=  &0
+             \end{linsys}
+           \end{equation*}
+           (For the calculation in the lower right get a common
+           denominator
+           \begin{equation*}
+             \frac{5}{-2-i}-(2-i)
+             =
+             \frac{5}{-2-i}-\frac{-2-i}{-2-i}\cdot (2-i)
+             =
+             \frac{5-(-5)}{-2-i}
+           \end{equation*}
+           to see that it gives a $0=0$ equation.)
+           These are the resulting eigenspace and  eigenvector.
+           \begin{equation*}
+             \set{\colvec{(1/(-2-i))b_2 \\ b_2}
+                   \suchthat b_2\in\C}
+             \qquad
+             \colvec{1/(-2-i) \\ 1}
+           \end{equation*}
+           For $\lambda_2=-i$ the system 
+           \begin{equation*}
+             \begin{linsys}{2}
+                (-2+i)\cdot b_1  &-  &1\cdot b_2      &=  &0  \\
+                5\cdot b_1       &-  &(2+i)\cdot b_2  &=  &0
+             \end{linsys}
+             \grstep{(-5/(-2+i))\rho_1+\rho_2}
+             \begin{linsys}{2}
+                (-2+i)\cdot b_1  &-  &1\cdot b_2      &=  &0  \\
+                                 &   &0               &=  &0
+             \end{linsys}
+           \end{equation*}
+           leads to this.
+           \begin{equation*}
+             \set{\colvec{(1/(-2+i))b_2 \\ b_2}
+                   \suchthat b_2\in\C}
+             \qquad
+             \colvec{1/(-2+i) \\ 1}
+           \end{equation*}
+    \end{answer}
+  \item  
+    Find the characteristic polynomial, the eigenvalues, and the associated
+    eigenvectors of this matrix.
+    \begin{equation*}
+      \begin{mat}[r]
+        1  &1  &1  \\
+        0  &0  &1  \\
+        0  &0  &1
+      \end{mat}
+    \end{equation*}
+    \begin{answer}
+      The characteristic equation is
+      \begin{equation*}
+        0=
+        \begin{vmatrix}
+          1-x  &1   &1   \\
+          0    &-x  &1   \\
+          0    &0   &1-x
+        \end{vmatrix}
+        =(1-x)^2(-x)
+      \end{equation*}
+      and so the eigenvalues are $\lambda_1=1$ (this is a repeated root
+      of the equation) and $\lambda_2=0$.
+      For the rest, consider this system.
+      \begin{equation*}
+        \begin{linsys}{3}
+          (1-x)\cdot b_1  &+  &b_2         &+  &b_3            &=  &0  \\
+                          &   &-x\cdot b_2 &+  &b_3            &=  &0  \\
+                          &   &            &   &(1-x)\cdot b_3 &= &0  
+        \end{linsys}
+      \end{equation*}
+      When $x=\lambda_1=1$ then the solution set is this eigenspace.
+      \begin{equation*}
+        \set{\colvec{b_1 \\ 0 \\ 0}\suchthat b_1\in\C}
+      \end{equation*}
+      When $x=\lambda_2=0$ then the solution set is this eigenspace.
+      \begin{equation*}
+        \set{\colvec{-b_2 \\ b_2 \\ 0}\suchthat b_2\in\C}
+      \end{equation*}
+      So these are eigenvectors associated with $\lambda_1=1$ and 
+      $\lambda_2=0$.
+      \begin{equation*}
+        \colvec[r]{1 \\ 0 \\ 0}
+        \qquad
+        \colvec[r]{-1 \\ 1 \\ 0}  
+      \end{equation*}
+    \end{answer}
+  \recommended \item
+    For each matrix, find the characteristic equation, and the
+    eigenvalues and associated eigenvectors.
+    \begin{exparts*}
+      \partsitem \( \begin{mat}[r]
+              3  &-2 &0  \\
+             -2  &3  &0  \\
+              0  &0  &5
+            \end{mat}  \)
+      \partsitem \( \begin{mat}[r]
+              0  &1   &0  \\
+              0  &0   &1  \\
+              4  &-17 &8
+            \end{mat}  \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+         \partsitem The characteristic equation is
+           \begin{equation*}
+             0=
+             \begin{vmatrix}
+              3-x  &-2   &0  \\
+             -2    &3-x  &0  \\
+              0    &0    &5-x
+             \end{vmatrix}
+             =x^3-11x^2+35x-25=(x-1)(x-5)^2
+           \end{equation*}
+           and so the eigenvalues are $\lambda_1=1$ and also the
+           repeated eigenvalue $\lambda_2=5$.
+           To find eigenvectors, consider this system.
+           \begin{equation*}
+             \begin{linsys}{3}
+               (3-x)\cdot b_1  &-  &2\cdot b_2      &   &   &=  &0  \\
+               -2\cdot b_1     &+  &(3-x)\cdot b_2  &   &   &=  &0  \\
+                               &   &                &   &(5-x)\cdot b_3 &= &0 
+             \end{linsys}
+           \end{equation*}
+           For $\lambda_1=1$ we get 
+           \begin{equation*}
+             \begin{linsys}{3}
+                2\cdot b_1     &-  &2\cdot b_2   &   &   &=  &0  \\
+               -2\cdot b_1     &+  &2\cdot b_2   &   &   &=  &0  \\
+                               &   &             &   &4\cdot b_3 &= &0 
+             \end{linsys}
+           \end{equation*}
+           leading to this eigenspace and eigenvector.
+           \begin{equation*}
+             \set{\colvec{b_2 \\ b_2 \\ 0}
+                   \suchthat b_2\in\C}
+             \qquad
+             \colvec[r]{1 \\ 1 \\ 0}
+           \end{equation*}
+           For $\lambda_2=5$ the system is 
+           \begin{equation*}
+             \begin{linsys}{3}
+                -2\cdot b_1  &-  &2\cdot b_2   &   &   &=  &0  \\
+               -2\cdot b_1   &-  &2\cdot b_2   &   &   &=  &0  \\
+                             &   &             &   &0\cdot b_3 &= &0 
+             \end{linsys}
+           \end{equation*}
+           leading to this.
+           \begin{equation*}
+             \set{\colvec{-b_2 \\ b_2 \\ 0}+\colvec{0 \\ 0 \\ b_3}
+                   \suchthat b_2,b_3\in\C}
+             \qquad
+             \colvec[r]{-1 \\ 1 \\ 0},\,\colvec[r]{0 \\ 0 \\ 1}
+           \end{equation*}
+         \partsitem The characteristic equation is
+           \begin{equation*}
+             0=
+             \begin{vmatrix}
+              -x   &1    &0  \\
+              0    &-x   &1  \\
+              4    &-17  &8-x
+             \end{vmatrix}
+             =-x^3+8x^2-17x+4=-1\cdot(x-4)(x^2-4x+1)
+           \end{equation*}
+           and the eigenvalues are $\lambda_1=4$ and (by using the
+           quadratic equation) $\lambda_2=2+\sqrt{3}$ and 
+           $\lambda_3=2-\sqrt{3}$.
+           To find eigenvectors, consider this system.
+           \begin{equation*}
+             \begin{linsys}{3}
+               -x\cdot b_1  &+  &b_2          &   &               &=  &0  \\
+                            &   &-x\cdot b_2  &+  &b_3            &=  &0  \\
+               4\cdot b_1   &-  &17\cdot b_2  &+  &(8-x)\cdot b_3 &= &0 
+             \end{linsys}
+           \end{equation*}
+           Substituting $x=\lambda_1=4$ gives the system 
+           \begin{align*}
+             \begin{linsys}{3}
+               -4\cdot b_1  &+  &b_2          &   &           &= &0  \\
+                            &   &-4\cdot b_2  &+  &b_3        &= &0  \\
+               4\cdot b_1   &-  &17\cdot b_2  &+  &4\cdot b_3 &= &0 
+             \end{linsys}                                              
+             &\grstep{\rho_1+\rho_3}
+             \begin{linsys}{3}
+               -4\cdot b_1  &+  &b_2          &   &           &= &0  \\
+                            &   &-4\cdot b_2  &+  &b_3        &= &0  \\
+                            &   &-16\cdot b_2  &+ &4\cdot b_3 &= &0 
+             \end{linsys}                                                \\
+             &\grstep{-4\rho_2+\rho_3}
+             \begin{linsys}{3}
+               -4\cdot b_1  &+  &b_2          &   &           &= &0  \\
+                            &   &-4\cdot b_2  &+  &b_3        &= &0  \\
+                            &   &              &  &0          &= &0 
+             \end{linsys}
+           \end{align*}
+           leading to this eigenspace and eigenvector.
+           \begin{equation*}
+             V_4=\set{\colvec{(1/16)\cdot b_3 \\ (1/4)\cdot b_3 \\ b_3}
+                   \suchthat b_2\in\C}
+             \qquad
+             \colvec[r]{1 \\ 4 \\ 16}
+           \end{equation*}
+
+           Substituting $x=\lambda_2=2+\sqrt{3}$ gives the system 
+           \begin{multline*}
+             \begin{linsys}{3}
+               (-2-\sqrt{3})\cdot b_1  
+                      &+  &b_2          
+                          &   &           &= &0  \\
+                      &   &(-2-\sqrt{3})\cdot b_2  
+                          &+  &b_3        &= &0  \\
+               4\cdot b_1   
+                      &-  &17\cdot b_2  
+                          &+  &(6-\sqrt{3})\cdot b_3 &= &0 
+             \end{linsys}                                   \\
+             \grstep{(-4/(-2-\sqrt{3}))\rho_1+\rho_3}
+             \begin{linsys}{3}
+               (-2-\sqrt{3})\cdot b_1  
+                      &+  &b_2          
+                          &   &           &= &0  \\
+                      &   &(-2-\sqrt{3})\cdot b_2  
+                          &+  &b_3        &= &0  \\
+                      &+  &(-9-4\sqrt{3})\cdot b_2  
+                          &+  &(6-\sqrt{3})\cdot b_3 &= &0 
+             \end{linsys}
+           \end{multline*}
+           (the middle coefficient in the third equation equals
+           the number $(-4/(-2-\sqrt{3}))-17$; find a common denominator
+           of $-2-\sqrt{3}$ and then rationalize the denominator by
+           multiplying the top and bottom of the fraction by $-2+\sqrt{3}$)
+           \begin{equation*}
+             \grstep{((9+4\sqrt{3})/(-2-\sqrt{3}))\rho_2+\rho_3}
+             \begin{linsys}{3}
+               (-2-\sqrt{3})\cdot b_1  
+                      &+  &b_2          
+                          &   &           &= &0  \\
+                      &   &(-2-\sqrt{3})\cdot b_2  
+                          &+  &b_3        &= &0  \\
+                      &   &                         
+                          &   &0                     &= &0 
+             \end{linsys}
+           \end{equation*}
+           which leads to this eigenspace and eigenvector.
+           \begin{equation*}
+             V_{2+\sqrt{3}}
+             =\set{\colvec{(1/(2+\sqrt{3})^2)\cdot b_3  \\ 
+                           (1/(2+\sqrt{3}))\cdot b_3    \\ 
+                           b_3}
+                    \suchthat b_3\in\C}
+             \qquad
+             \colvec{(1/(2+\sqrt{3})^2)  \\ 
+                           (1/(2+\sqrt{3}))  \\ 
+                           1}
+           \end{equation*}
+
+           Finally, substituting $x=\lambda_3=2-\sqrt{3}$ gives the system 
+           \begin{multline*}
+             \begin{linsys}{3}
+               (-2+\sqrt{3})\cdot b_1  
+                      &+  &b_2          
+                          &   &           &= &0  \\
+                      &   &(-2+\sqrt{3})\cdot b_2  
+                          &+  &b_3        &= &0  \\
+               4\cdot b_1   
+                      &-  &17\cdot b_2  
+                          &+  &(6+\sqrt{3})\cdot b_3 &= &0 
+             \end{linsys}                                       \\
+             \begin{aligned}
+               &\grstep{(-4/(-2+\sqrt{3}))\rho_1+\rho_3}
+               \begin{linsys}{3}
+                 (-2+\sqrt{3})\cdot b_1  
+                        &+  &b_2          
+                            &   &           &= &0  \\
+                        &   &(-2+\sqrt{3})\cdot b_2  
+                            &+  &b_3        &= &0  \\
+                        &   &(-9+4\sqrt{3})\cdot b_2  
+                            &+  &(6+\sqrt{3})\cdot b_3 &= &0 
+               \end{linsys}                                       \\
+               &\grstep{((9-4\sqrt{3})/(-2+\sqrt{3}))\rho_2+\rho_3}
+               \begin{linsys}{3}
+                 (-2+\sqrt{3})\cdot b_1  
+                        &+  &b_2          
+                            &   &           &= &0  \\
+                        &   &(-2+\sqrt{3})\cdot b_2  
+                            &+  &b_3        &= &0  \\
+                        &   &                         
+                            &   &0                     &= &0 
+               \end{linsys}
+             \end{aligned}
+           \end{multline*}
+           which gives this eigenspace and eigenvector.
+           \begin{equation*}
+             V_{2-\sqrt{3}}
+             =\set{\colvec{(1/(-2+\sqrt{3})^2)\cdot b_3  \\ 
+                           (1/(2-\sqrt{3}))\cdot b_3    \\ 
+                           b_3}
+                    \suchthat b_3\in\C}
+             \qquad
+             \colvec{(1/(-2+\sqrt{3})^2)  \\ 
+                           (1/(2-\sqrt{3}))  \\ 
+                           1}
+           \end{equation*}
+      \end{exparts}
+    \end{answer}
+  \item 
+   For each matrix, find the characteristic polynomial, and the
+   eigenvalues and associated eigenspaces.
+   Also find the algebraic and geometric multiplicities.
+   \begin{exparts*}
+     \partsitem 
+       $\begin{mat}
+          13 &-4 \\
+          -4 &7
+        \end{mat}$
+     \partsitem
+        $\begin{mat}
+          1 &3 &-3 \\
+         -3 &7 &-3 \\
+         -6 &6 &-2
+        \end{mat}$
+    \partsitem
+        $\begin{mat}
+          2 &3 &-3 \\
+          0 &2 &-3 \\
+          0 &0 &1
+        \end{mat}$
+   \end{exparts*}
+   \begin{answer}
+     \begin{exparts}
+       \item The characteristic polynomial factors as 
+         $x^2-20x+75=(x-5)(x-15)$,
+         so the eigenvalues are $\lambda_1=5$ and~$\lambda_2=15$.
+         These are the associated eigenspaces.
+         \begin{equation*}
+           V_5=\set{k\colvec{1 \\ 2}\suchthat k\in\C}
+           \quad
+           V_{15}=\set{k\colvec{-2 \\ 1}\suchthat k\in\C}
+         \end{equation*}
+         For each eigenvalue, both the algebraic and geometric multiplicities
+         are~$1$.
+      \item The characteristic polynomial $x^3 - 6x^2 + 32$ factors into
+         $(x+2)(x-4)^2$.
+         The eigenvectors are $\lambda_1=-2$ and $\lambda_2=4$.
+         Here are the associated eigenspaces. 
+         \begin{equation*}
+           V_{-2}=\set{k\colvec{1 \\ 1 \\ 2}\suchthat k\in\C}
+           \quad
+           V_4=\set{k_1\colvec{1 \\ 1 \\ 0}
+                     +k_2\colvec{1 \\ 0 \\ -1} \suchthat k_1,k_2\in\C}
+         \end{equation*}
+         For $\lambda_1=-2$ the algebraic and geometric multiplicities are
+         both~$1$. 
+         For $\lambda_2=4$ the algebraic and geometric multiplicities are
+         both~$2$.
+      \item The characteristic polynomial $x^3 - 5x^2 + 8x - 4$ factors into
+         $(x-1)(x-2)^2$.
+         The eigenvalues are $\lambda_1=1$ and $\lambda_2=2$.
+         Here are the associated eigenspaces.
+         \begin{equation*}
+           V_1=\set{k\colvec{-6 \\ 3 \\ 1}\suchthat k\in \C}
+           \quad
+           V_2=\set{k\colvec{1 \\ 0 \\ 0}\suchthat k\in\C}
+         \end{equation*}
+         For $\lambda_1=1$ the algebraic and geometric multiplicities
+         are both~$1$.
+         For $\lambda_2=2$ the algebraic multiplicity is~$2$ but the 
+         geometric multiplicity is~$1$.
+     \end{exparts}
+   \end{answer}
+   \recommended \item
+     Let \( \map{t}{\polyspace_2}{\polyspace_2} \) be this linear map.
+     \begin{equation*}
+      a_0+a_1x+a_2x^2\mapsto
+      (5a_0+6a_1+2a_2)-(a_1+8a_2)x+(a_0-2a_2)x^2
+     \end{equation*}
+    Find its eigenvalues and the associated eigenvectors.
+    \begin{answer}
+      With respect to the natural basis $B=\sequence{1,x,x^2}$ 
+      the matrix representation is this.
+      \begin{equation*}
+        \rep{t}{B,B}
+        =
+        \begin{mat}[r]
+          5  &6  &2  \\
+          0  &-1 &-8 \\
+          1  &0  &-2 
+        \end{mat}
+      \end{equation*}
+      Thus the characteristic equation 
+      \begin{equation*}
+        0
+        =
+        \begin{mat}
+          5-x  &6    &2  \\
+          0    &-1-x &-8 \\
+          1    &0    &-2-x 
+        \end{mat}
+        =(5-x)(-1-x)(-2-x)-48-2\cdot(-1-x)
+      \end{equation*}
+      is $0=-x^3+2x^2+15x-36=-1\cdot (x+4)(x-3)^2$.
+      To find the associated eigenvectors, consider this system.
+      \begin{equation*}
+        \begin{linsys}{3}
+          (5-x)\cdot b_1 &+ &6b_2      &+ &2b_3      &= &0 \\
+                         &  &(-1-x)\cdot b_2 &- &8b_3      &= &0 \\
+          b_1            &  &                &+ &(-2-x)\cdot b_3 &= &0 
+        \end{linsys}
+      \end{equation*}
+      Plugging in $\lambda_1=-4$ for $x$ gives
+      \begin{equation*}
+        \begin{linsys}{3}
+                    9b_1 &+ &6b_2      &+ &2b_3      &= &0 \\
+                         &  &3b_2      &- &8b_3      &= &0 \\
+                     b_1 &  &          &+ &2b_3     &= &0 
+        \end{linsys}
+        \grstep{-(1/9)\rho_1+\rho_3}\quad
+        \grstep{(2/9)\rho_2+\rho_3}\quad
+        \begin{linsys}{3}
+                     9b_1 &+ &6b_2      &+ &2b_3      &= &0 \\
+                         &  &3b_2       &- &8b_3      &= &0  
+        \end{linsys}
+      \end{equation*}
+      Here is the eigenspace and an eigenvector.
+           \begin{equation*}
+             V_{-4}
+             =\set{\colvec{2\cdot b_3  \\ 
+                           (8/3)\cdot b_3    \\ 
+                           b_3}
+                    \suchthat b_3\in\C}
+             \qquad
+             \colvec{2  \\ 
+                     8/3  \\ 
+                      1}
+           \end{equation*}
+
+      Similarly, plugging in $x=\lambda_2=3$ gives
+      \begin{equation*}
+        \begin{linsys}{3}
+                    2b_1 &+ &6\cdot b_2      &+ &2\cdot b_3      &= &0 \\
+                         &  &-4\cdot b_2      &- &8\cdot b_3      &= &0 \\
+                     b_1 &  &                &- & 5\cdot b_3     &= &0 
+        \end{linsys}
+        \grstep{-(1/2)\rho_1+\rho_3}
+        \repeatedgrstep{-(3/4)\rho_2+\rho_3}
+        \begin{linsys}{3}
+                     2b_1 &+ &6\cdot b_2      &+ &2\cdot b_3      &= &0 \\
+                         &  &-4\cdot b_2       &- &8\cdot b_3      &= &0  
+        \end{linsys}
+      \end{equation*}
+      with this eigenspace and eigenvector.
+           \begin{equation*}
+             V_{3}
+             =\set{\colvec{5\cdot b_3  \\ 
+                           -2\cdot b_3    \\ 
+                           b_3}
+                    \suchthat b_3\in\C}
+             \qquad
+             \colvec[r]{5  \\ 
+                     -2  \\ 
+                       1}
+           \end{equation*}
+    \end{answer}
+   \item 
+     Find the eigenvalues and eigenvectors of this
+     map \( \map{t}{\matspace_2}{\matspace_2} \).
+     \begin{equation*}
+         \begin{mat}
+            a  &b  \\
+            c  &d
+         \end{mat}
+       \mapsto
+         \begin{mat}
+           2c    &a+c  \\
+           b-2c  &d
+         \end{mat}
+     \end{equation*}
+     \begin{answer}
+        $\lambda=1,
+          \begin{mat}
+                   0  &0  \\
+                   0  &1
+          \end{mat} \text{ and }
+          \begin{mat}[r]
+                   2  &3  \\
+                   1  &0
+          \end{mat}$,           
+          $\lambda=-2,
+          \begin{mat}[r]
+                  -1  &0  \\
+                   1  &0
+          \end{mat}$,
+          $\lambda=-1,
+          \begin{mat}[r]
+                  -2  &1  \\
+                   1  &0
+          \end{mat}$  
+       \end{answer}
+   \recommended \item 
+     Find the eigenvalues and associated eigenvectors of the
+     differentiation operator
+     \( \map{d/dx}{\polyspace_3}{\polyspace_3} \).
+     \begin{answer}
+       Fix the natural basis $B=\sequence{1,x,x^2,x^3}$. 
+       The map's action is $1\mapsto 0$, $x\mapsto 1$, $x^2\mapsto 2x$,
+       and $x^3\mapsto 3x^2$ and its representation is easy to compute.
+       \begin{equation*}
+         T=\rep{d/dx}{B,B}=
+         \begin{mat}[r]
+           0  &1  &0  &0  \\
+           0  &0  &2  &0  \\
+           0  &0  &0  &3  \\
+           0  &0  &0  &0
+         \end{mat}_{B,B}
+       \end{equation*}
+       We find the eigenvalues with this computation.
+       \begin{equation*}
+         0=\deter{T-xI}=
+         \begin{vmatrix}
+           -x &1  &0  &0  \\
+           0  &-x &2  &0  \\
+           0  &0  &-x &3  \\
+           0  &0  &0  &-x          
+         \end{vmatrix}
+         =x^4
+       \end{equation*}
+       Thus the map has the single eigenvalue $\lambda=0$.
+       To find the associated eigenvectors, we solve
+       \begin{equation*}
+         \begin{mat}[r]
+           0  &1  &0  &0  \\
+           0  &0  &2  &0  \\
+           0  &0  &0  &3  \\
+           0  &0  &0  &0
+         \end{mat}_{B,B}
+         \colvec{b_1 \\ b_2 \\ b_3 \\ b_4}_B
+         =0\cdot\colvec{b_1 \\ b_2 \\ b_3 \\ b_4}_B
+         \qquad\Longrightarrow\qquad
+         \text{$b_2=0$, $b_3=0$, $b_4=0$}          
+       \end{equation*}
+       to get this eigenspace.
+       \begin{equation*}
+         \set{\colvec{b_1 \\ 0 \\ 0 \\ 0}_B
+               \suchthat b_1\in\C}
+         =\set{b_1+0\cdot x+0\cdot x^2+0\cdot x^3
+               \suchthat b_1\in\C}
+         =\set{b_1
+               \suchthat b_1\in\C}
+       \end{equation*}
+      \end{answer}
+   \item Prove that 
+     the eigenvalues of a triangular matrix  (upper or lower triangular)
+     are the entries on the diagonal.
+     \begin{answer}
+       The determinant of the triangular matrix $T-xI$ is the product 
+       down the diagonal, and so it factors into the product of 
+       the terms $t_{i,i}-x$.
+     \end{answer}
+  \recommended \item This matrix has distinct
+    eigenvalues.
+    \begin{equation*}
+     \begin{mat}
+      1  &2  &1 \\
+      6  &-1 &0 \\
+      -1 &-2 &-1
+     \end{mat}
+    \end{equation*}
+    \begin{exparts}
+      \partsitem Diagonalize it.
+      \partsitem Find a basis with respect to which this matrix has that
+        diagonal representation.
+      \partsitem Draw the diagram.
+         Find the matrices $P$ and $P^{-1}$ to effect the change of basis. 
+    \end{exparts}
+    \begin{answer}
+     \begin{exparts}
+      \partsitem 
+      Computing the eigenvalues gives $\lambda_1=3$, $\lambda_2=0$,
+      and $\lambda_3=-4$.
+      Thus the diagonalization of the matrix is this.
+      \begin{equation*}
+        \begin{mat}
+          3 &0 &0 \\
+          0 &0 &0 \\
+          0 &0 &-4
+        \end{mat}
+      \end{equation*}
+     \partsitem
+      Get an eigenvector associated with each eigenvalue, and use them
+      to make a basis.
+
+      For $\lambda_1=3$ we solve this system.
+      \begin{equation*}
+        \begin{mat}
+          1-3  &2    &1 \\
+          6    &-1-3 &0 \\
+         -1    &-2   &-1-3
+        \end{mat}
+        \colvec{x \\ y \\ z}
+        =\colvec{0 \\ 0 \\ 0}
+      \end{equation*}
+      Gauss's Method suffices.
+      % sage: M = matrix(QQ, [[-2,2,1,0], [6,-4,0,0], [-1,-2,-4,0]])
+      % sage: gauss_method(M)
+      % [-2  2  1  0]
+      % [ 6 -4  0  0]
+      % [-1 -2 -4  0]
+      % take 3 times row 1 plus row 2
+      % take -1/2 times row 1 plus row 3
+      % [  -2    2    1    0]
+      % [   0    2    3    0]
+      % [   0   -3 -9/2    0]
+      % take 3/2 times row 2 plus row 3
+      % [-2  2  1  0]
+      % [ 0  2  3  0]
+      % [ 0  0  0  0]
+      \begin{equation*}
+        \begin{amat}{3}
+          -2 &2  &1  &0  \\
+           6 &-4 &0  &0  \\
+          -1 &-2 &-4 &0
+        \end{amat}
+        \grstep[-(1/2)\rho_1+\rho_3]{3\rho_1+\rho_2}
+        \grstep{(3/2)\rho_1+\rho_3}
+        \begin{amat}{3}
+          -2 &2 &1   &0  \\
+           0 &2 &3   &0  \\
+           0 &0 &0   &0
+        \end{amat}
+      \end{equation*}
+      Parametrizing gives the solution space.
+      \begin{equation*}
+        S_1=\set{\colvec{-1 \\ -3/2 \\ 1}\cdot z \suchthat z\in\C}
+      \end{equation*}
+
+      This is the $\lambda_2=0$ system.
+      \begin{equation*}
+        \begin{mat}
+          1    &2    &1 \\
+          6    &-1 &0 \\
+         -1    &-2   &-1
+        \end{mat}
+        \colvec{x \\ y \\ z}
+        =\colvec{0 \\ 0 \\ 0}
+      \end{equation*}
+      Gauss's Method 
+      % sage: M = matrix(QQ, [[1,2,1,0], [6,-1,0,0], [-1,-2,-1,0]])
+      % sage: gauss_method(M)
+      % [ 1  2  1  0]
+      % [ 6 -1  0  0]
+      % [-1 -2 -1  0]
+      % take -6 times row 1 plus row 2
+      % take 1 times row 1 plus row 3
+      % [  1   2   1   0]
+      % [  0 -13  -6   0]
+      % [  0   0   0   0]
+      \begin{equation*}
+        \begin{amat}{3}
+           1 &2  &1  &0  \\
+           6 &-1 &0  &0  \\
+          -1 &-2 &-1 &0
+        \end{amat}
+        \grstep[\rho_1+\rho_3]{-6\rho_1+\rho_2}
+        \begin{amat}{3}
+           1 &2 &1   &0  \\
+           0 &-13 &-6   &0  \\
+           0 &0 &0   &0
+        \end{amat}
+      \end{equation*}
+      followed by parametrizing gives the solution space.
+      \begin{equation*}
+        S_2=\set{\colvec{-1/13 \\ -6/13 \\ 1}\cdot z \suchthat z\in\C}
+      \end{equation*}
+
+      The $\lambda_3=-4$ system works the same way.
+      \begin{equation*}
+        \begin{mat}
+          1-(-4)    &2    &1 \\
+          6    &-1-(-4) &0 \\
+         -1    &-2   &-1-(-4)
+        \end{mat}
+        \colvec{x \\ y \\ z}
+        =\colvec{0 \\ 0 \\ 0}
+      \end{equation*}
+      Gauss's Method 
+      % sage: M = matrix(QQ, [[5,2,1,0], [6,3,0,0], [-1,-2,3,0]])
+      % sage: gauss_method(M)
+      % [ 5  2  1  0]
+      % [ 6  3  0  0]
+      % [-1 -2  3  0]
+      % take -6/5 times row 1 plus row 2
+      % take 1/5 times row 1 plus row 3
+      % [   5    2    1    0]
+      % [   0  3/5 -6/5    0]
+      % [   0 -8/5 16/5    0]
+      % take 8/3 times row 2 plus row 3
+      % [   5    2    1    0]
+      % [   0  3/5 -6/5    0]
+      % [   0    0    0    0]
+      \begin{equation*}
+        \begin{amat}{3}
+           5 &2  &1  &0  \\
+           6 &3 &0  &0  \\
+          -1 &-2 &3 &0
+        \end{amat}
+        \grstep[(1/5)\rho_1+\rho_3]{-(6/5)\rho_1+\rho_2}
+        \grstep{(8/3)\rho_2+\rho_3}
+        \begin{amat}{3}
+           5 &2 &1   &0  \\
+           0 &3/5 &-6/5   &0  \\
+           0 &0 &0   &0
+        \end{amat}
+      \end{equation*}
+      and parametrizing gives this.
+      \begin{equation*}
+        S_3=\set{\colvec{-1 \\ 2 \\ 1}\cdot z \suchthat z\in\C}
+      \end{equation*}
+
+      Thus the matrix will have that diagonal form when it represents
+      of the same transformation but with respect to $D,D$ for this $D$.
+      \begin{equation*}
+        D=\sequence{\colvec{-1 \\ -3/2 \\ 1},
+                    \colvec{-1/13 \\ -6/13 \\ 1},
+                    \colvec{-1 \\ 2 \\ 1}}
+      \end{equation*}
+     \partsitem
+     % sage: M = matrix(QQ, [[1,2,1], [6,-1,0], [-1,-2,-1]])
+     % sage: M.eigenvalues()
+     % [3, 0, -4]
+     % sage: P = matrix(QQ, [[-1,-1/13,-1], [-3/2,-6/13,2], [1,1,1]])
+     % sage: P.inverse()*M*P
+     % [ 3  0  0]
+     % [ 0  0  0]
+     % [ 0  0 -4]
+     % sage: P.inverse()
+     % [-16/21   -2/7  -4/21]
+     % [ 13/12      0  13/12]
+     % [ -9/28    2/7   3/28]
+       Call the matrix~$T$.
+       Taking the domain and codomain spaces as $\Re^3$,
+       and taking the matrix to be $T=\rep{t}{\stdbasis_3,\stdbasis_3}$ 
+       gives this diagram.
+       \begin{equation*}
+       \begin{CD}
+          \C^3_{\wrt{\stdbasis_3}}            @>t>T>      \C^3_{\wrt{\stdbasis_3}}       \\
+          @V{\scriptstyle\identity} VV           @V{\scriptstyle\identity} VV \\
+          \C^3_{\wrt{B}}             @>t>D>  \C^3_{\wrt{B}}
+        \end{CD}
+        \end{equation*}
+        Reading off the diagram we have $D=P^{-1}MP$ where
+        $P=\rep{\identity}{\stdbasis_3,B}$.
+        To represent each vector in $B$ with respect to~$E_3$ is easy
+        because with respect to the standard basis each vector represents
+        itself.
+        \begin{multline*}
+          \rep{\colvec{-1 \\ -3/2 \\ 1}}{\stdbasis_3}=\colvec{-1 \\ -3/2 \\ 1}
+          \quad
+          \rep{\colvec{-1/13 \\ -6/13 \\ 1}}{\stdbasis_3}=\colvec{-1/13 \\ -6/13 \\ 1}
+          \\
+          \rep{\colvec{-1 \\ 2 \\ 1}}{\stdbasis_3}=\colvec{-1 \\ 2 \\ 1}
+        \end{multline*}
+        Thus the matrix just concatenates the three basis vectors.
+        \begin{equation*}
+          P=
+          \begin{mat}
+            -1   &-1/13 &-1 \\
+            -3/2 &-6/13 &2  \\
+            1    &1     &1
+          \end{mat}
+         \quad\text{and so}\quad
+         P^{-1}
+         \begin{mat}
+           -16/21 &-2/7 &-4/21 \\
+           13/12  &0    &13/12 \\
+           -9/28  &2/7  &3/28
+         \end{mat}
+        \end{equation*}
+
+
+
+
+
+     \end{exparts}
+    \end{answer}
+  \recommended \item 
+    Find the formula for the characteristic polynomial of a $\nbyn{2}$
+    matrix.
+    \begin{answer}
+      Just expand the determinant of $T-xI$.
+      \begin{equation*}
+        \begin{vmatrix}
+          a-x  &c  \\
+          b    &d-x
+        \end{vmatrix}
+        =(a-x)(d-x)-bc
+        =x^2+(-a-d)\cdot x +(ad-bc)
+      \end{equation*}
+    \end{answer}
+  \item \label{exer:CharPolyTransWellDefed}
+    Prove that 
+    the characteristic polynomial of a transformation is well-defined.
+    \begin{answer}
+      Any two representations of that transformation are similar, and
+      similar matrices have the same characteristic polynomial.  
+    \end{answer}
+  \item Prove or disprove: if all the eigenvalues of a matrix are $0$ 
+    then it must be the zero matrix.
+    \begin{answer}
+      It is not true.
+      All of the eigenvalues of this matrix are $0$.
+      \begin{equation*}
+        \begin{mat}[r]
+          0  &1  \\
+          0  &0
+        \end{mat}
+      \end{equation*}
+    \end{answer}
+  \recommended \item 
+    \begin{exparts}
+      \partsitem Show that any non-\( \zero \) vector in any nontrivial 
+        vector space can be an eigenvector.
+        That is, given a \( \vec{v}\neq\zero \) from a nontrivial \( V \),
+        show that there is a transformation \( \map{t}{V}{V} \) having a scalar
+        eigenvalue \( \lambda\in\Re \) such that \( \vec{v}\in V_{\lambda} \).
+      \partsitem What if we are given a scalar \( \lambda \)?
+        Can any non-\( \zero \) member of any
+        nontrivial vector space be an eigenvector associated with \( \lambda \)?
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem Use \( \lambda=1 \) and the identity map.
+        \partsitem Yes, use the transformation that multiplies all 
+          vectors by the scalar \( \lambda \).
+      \end{exparts}  
+     \end{answer}
+  \recommended \item 
+    Suppose that \( \map{t}{V}{V} \) and \( T=\rep{t}{B,B} \).
+    Prove that the eigenvectors of \( T \) associated with \( \lambda \) are
+    the non-\( \zero \) vectors in the kernel of the map represented
+    (with respect to the same bases) by \( T-\lambda I \).
+    \begin{answer}
+      If $t(\vec{v})=\lambda\cdot\vec{v}$ then 
+      $\vec{v}\mapsto\zero$ under the map $t-\lambda\cdot\identity$.
+    \end{answer}
+  \item 
+    Prove that if $a,\ldots,\,d$ are all integers and \( a+b=c+d \) then
+    \begin{equation*}
+      \begin{mat}
+         a  &b  \\
+         c  &d
+      \end{mat}
+    \end{equation*}
+    has integral eigenvalues, namely \( a+b \) and \( a-c \).
+    \begin{answer}
+      The characteristic equation 
+      \begin{equation*}
+        0=
+        \begin{vmatrix}
+          a-x  &b  \\
+          c    &d-x 
+        \end{vmatrix}
+        =(a-x)(d-x)-bc
+      \end{equation*}
+      simplifies to $x^2+(-a-d)\cdot x + (ad-bc)$.
+      Checking that the values $x=a+b$ and $x=a-c$ satisfy the equation 
+      (under the $a+b=c+d$ condition) is routine. 
+    \end{answer}
+  \recommended \item
+    Prove that if \( T \) is nonsingular and has eigenvalues
+    \( \lambda_1,\dots,\lambda_n \) then \( T^{-1} \) has eigenvalues
+    \( 1/\lambda_1,\dots,1/\lambda_n \).
+    Is the converse true?
+    \begin{answer}
+      Consider an eigenspace $V_{\lambda}$.
+      Any $\vec{w}\in V_{\lambda}$ is the image
+      $\vec{w}=\lambda\cdot\vec{v}$ of some $\vec{v}\in V_{\lambda}$ 
+      (namely, $\vec{v}=(1/\lambda)\cdot\vec{w}$).
+      Thus, on $V_{\lambda}$ (which is a nontrivial subspace) 
+      the action of $t^{-1}$ is 
+      $t^{-1}(\vec{w})=\vec{v}=(1/\lambda)\cdot\vec{w}$,
+      and so $1/\lambda$ is an eigenvalue of $t^{-1}$.
+    \end{answer}
+  \recommended \item
+    Suppose that \( T \) is \( \nbyn{n} \) and \( c,d \) are scalars.
+    \begin{exparts}
+      \partsitem Prove that if \( T \) has the eigenvalue 
+        \( \lambda \) with an associated
+        eigenvector \( \vec{v} \) then \( \vec{v} \) is an eigenvector of
+        \( cT+dI \) associated with eigenvalue \( c\lambda+d \).
+      \partsitem Prove that if \( T \) is diagonalizable then so is
+        \( cT+dI \).
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem We have 
+          $(cT+dI)\vec{v}=cT\vec{v}+dI\vec{v}=c\lambda\vec{v}+d\vec{v}
+               =(c\lambda+d)\cdot \vec{v}$.
+        \partsitem Suppose that $S=PTP^{-1}$ is diagonal.
+          Then $P(cT+dI)P^{-1}=P(cT)P^{-1}+P(dI)P^{-1}
+                 =cPTP^{-1}+dI=cS+dI$ is also diagonal.
+      \end{exparts}
+    \end{answer}
+  \recommended \item
+    Show that \( \lambda \) is an eigenvalue of \( T \) if and only if the map
+    represented by \( T-\lambda I \) is not an isomorphism.
+    \begin{answer}
+      The scalar $\lambda$ is an eigenvalue if and only if the transformation
+      $t-\lambda \identity$ is singular.
+      A transformation is singular if and only if it is not an isomorphism
+      (that is, a transformation is an isomorphism if and only if it is
+      nonsingular).
+    \end{answer}
+  \item \cite{Strang} 
+    \begin{exparts}
+      \partsitem Show that if \( \lambda \) is an eigenvalue of \( A \)
+         then \( \lambda^k \) is an eigenvalue of \( A^k \).
+      \partsitem What is wrong with this proof generalizing that?
+         ``If \( \lambda \) is an eigenvalue of \( A \) and \( \mu \) is
+         an eigenvalue for \( B \), then \( \lambda\mu \) is an eigenvalue
+         for \( AB \), for, if \( A\vec{x}=\lambda\vec{x} \) and
+         \( B\vec{x}=\mu\vec{x} \) then
+         \( AB\vec{x}=A\mu\vec{x}=\mu A\vec{x}=\mu\lambda\vec{x} \)''?
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem Where the eigenvalue $\lambda$ is associated with the
+          eigenvector $\vec{x}$ then
+          $A^k\vec{x}=A\cdots A\vec{x}=A^{k-1}\lambda\vec{x}
+            =\lambda A^{k-1}\vec{x}=\cdots=\lambda^k\vec{x}$.
+          (The full details require induction on $k$.)
+        \partsitem The eigenvector associated with $\lambda$
+          might not be an eigenvector associated with $\mu$.
+      \end{exparts}
+    \end{answer}
+  \item 
+    Do matrix equivalent matrices have the same eigenvalues?
+    \begin{answer}
+      No.
+      These are two same-sized, equal rank, matrices
+      with different eigenvalues.
+      \begin{equation*}
+        \begin{mat}[r]
+          1  &0  \\
+          0  &1
+        \end{mat}
+        \qquad
+        \begin{mat}[r]
+          1  &0  \\
+          0  &2
+        \end{mat}
+      \end{equation*}
+    \end{answer}
+  \item 
+    Show that a square matrix with real entries and an odd number of rows
+    has at least one real eigenvalue.
+    \begin{answer}
+      The characteristic polynomial has an odd power and so 
+      has at least one real root.  
+    \end{answer}
+  \item 
+    Diagonalize.
+    \begin{equation*}
+       \begin{mat}[r]
+         -1  &2  &2  \\
+          2  &2  &2  \\
+         -3  &-6 &-6
+       \end{mat}
+    \end{equation*}
+    \begin{answer}
+      The characteristic polynomial $x^3+5x^2+6x$ has distinct roots
+      \( \lambda_1=0 \), \( \lambda_2=-2 \), and \( \lambda_3=-3 \).
+      Thus the matrix can be diagonalized into this form.
+      \begin{equation*}
+         \begin{mat}[r]
+            0  &0  &0  \\
+            0  &-2 &0  \\
+            0  &0  &-3
+         \end{mat}
+      \end{equation*}    
+    \end{answer}
+  \item 
+    Suppose that \( P \) is a nonsingular \( \nbyn{n} \) matrix.
+    Show that 
+    the \definend{similarity transformation}\index{similarity transformation}
+    map \( \map{t_P}{\matspace_{\nbyn{n}}}{\matspace_{\nbyn{n}}} \)
+    sending \( T\mapsto PTP^{-1} \)
+    is an isomorphism.
+    \begin{answer}
+      We must show that it is one-to-one and onto, and that it respects the
+      operations of matrix addition and scalar multiplication.
+
+      To show that it is one-to-one, suppose that $t_P(T)=t_P(S)$,
+      that is, suppose that $PTP^{-1}=PSP^{-1}$, and note that multiplying
+      both sides on the left by $P^{-1}$ and on the right by $P$ gives that
+      $T=S$.
+      To show that it is onto, consider $S\in\matspace_{\nbyn{n}}$ and observe
+      that $S=t_P(P^{-1}SP)$.
+
+      The map $t_P$ preserves matrix addition since
+      $t_P(T+S)=P(T+S)P^{-1}=(PT+PS)P^{-1}=PTP^{-1}+PSP^{-1}=t_P(T+S)$
+      follows from properties of matrix multiplication and addition that 
+      we have seen.
+      Scalar multiplication is 
+      similar:~$t_P(cT)=P(c\cdot T)P^{-1}=c\cdot (PTP^{-1})=c\cdot t_P(T)$.
+    \end{answer}
+  \puzzle \item 
+    \cite{MathMag67p232}
+    Show that if \( A \) is an \( n \) square matrix and each row (column)
+    sums to \( c \) then \( c \) is a characteristic root of \( A \).
+    (``Characteristic root'' is a synonym for eigenvalue.)\index{characteristic!root}\index{root!characteristic}
+    \begin{answer}
+      \answerasgiven %
+      If the argument of the characteristic function of \( A \) is set equal to
+      \( c \), adding the first \( (n-1) \) rows (columns) to the
+      \( n \)th row (column) yields a determinant whose \( n \)th row
+      (column) is zero.
+      Thus \( c \) is a characteristic root of \( A \).  
+    \end{answer}
+\index{similarity|)}
+\end{exercises}

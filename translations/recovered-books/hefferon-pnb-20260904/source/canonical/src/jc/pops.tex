@@ -1,0 +1,285 @@
+% Chapter 4, Topic _Linear Algebra_ Jim Hefferon
+%  http://joshua.smcvt.edu/linearalgebra
+%  2001-Jun-12
+\topic{Stable Populations}
+\index{stable populations|(}
+\index{populations, stable|(}
+Imagine a reserve park with animals from a species that we are 
+protecting.
+The park doesn't have a fence so animals cross the boundary, 
+both from the inside out and from the outside in.
+Every year, $10\%$ of the animals from inside of the park leave and  
+$1\%$ of the animals from the outside 
+find their way in.
+Can we reach a stable level;
+are there populations for the park and the rest of the world that
+will stay constant over time,
+with the number of animals leaving equal to the number of animals entering?
+
+Let $p_n$ be the year~$n$ population in the park and 
+let $r_n$ be the  population in the rest of the world.
+\begin{align*}
+  p_{n+1} 
+  &=.90p_n+.01r_n    \\
+  r_{n+1}
+  &=.10p_n+.99r_n 
+\end{align*}
+We have this matrix equation.
+\begin{equation*}
+  \colvec{p_{n+1} \\ r_{n+1}}
+  =\begin{mat}[r]
+    .90  &.01  \\
+    .10  &.99
+  \end{mat}
+  \colvec{p_{n} \\ r_{n}}
+\end{equation*}
+The population will be stable if $p_{n+1}=p_n$ and $r_{n+1}=r_n$ so that the 
+matrix equation $\vec{v}_{n+1}=T\vec{v}_{n}$  becomes $\vec{v}=T\vec{v}$.
+We are therefore looking for eigenvectors for $T$ that are associated with
+the eigenvalue $\lambda=1$.
+The  equation $\zero=(\lambda I-T)\vec{v}=(I-T)\vec{v}$ is
+\begin{equation*}
+  \begin{mat}[r]
+      0.10  &-0.01  \\
+      -0.10  &0.01
+  \end{mat}
+  \colvec{p \\ r}=
+  \colvec[r]{0 \\ 0}
+\end{equation*}
+and gives the eigenspace of vectors with the restriction that $p=.1r$.
+For example,
+if we start with a park population $p=10\,000$~animals and a
+rest of the world population of $r=100\,000$~animals then every year 
+ten percent of those inside leave the park
+(this is a thousand animals), 
+and every year one percent of those from the rest of
+the world enter the park (also a thousand animals).
+The population is stable, self-sustaining. 
+
+Now imagine that we are trying to raise 
+the total world population of this species.
+We are trying to have the world population grow at
+$1\%$ per year.
+This makes the population level stable in some sense,
+although it is a dynamic stability, in contrast to the static 
+population level of the $\lambda=1$ case.
+The equation $\vec{v}_{n+1}=1.01\cdot\vec{v}_n=T\vec{v}_{n}$ leads to 
+$((1.01 I-T)\vec{v}=\zero$, which gives this system. 
+\begin{equation*}
+  \begin{mat}[r]
+     0.11   &-0.01  \\
+     -0.10  &0.02
+  \end{mat}
+  \colvec{p \\ r}=
+  \colvec[r]{0 \\ 0}
+\end{equation*}
+This matrix is nonsingular and so the only solution is $p=0$,
+$r=0$.
+Thus there is no nontrivial initial population
+that would lead to a regular annual one percent growth rate
+in $p$ and $r$.
+
+We can look for the rates that 
+allow an initial population for
+the park that results in a steady growth behavior.
+We consider $\lambda\vec{v}=T\vec{v}$ and solve for $\lambda$.
+\begin{equation*}
+  0=\begin{vmat}
+    \lambda-.9  &.01  \\
+    .10         &\lambda-.99
+  \end{vmat}
+  =(\lambda-.9)(\lambda-.99)-(.10)(.01)
+  =\lambda^2-1.89\lambda+.89
+\end{equation*}
+We already know that $\lambda=1$ is one solution of this characteristic 
+equation.
+The other is $0.89$.
+Thus there are two ways to have a dynamically stable 
+$p$ and $r$, where the two grow at the same rate despite
+the leaky park boundaries: (i)~have a world population that does not 
+grow or shrink, and (ii)~have a world population that shrinks 
+by $11\%$ every year.
+ 
+So one way to look at eigenvalues and eigenvectors is that they give a 
+stable state for a system.
+If the eigenvalue is one then the system is static and
+if the eigenvalue isn't one then it is a dynamic stability.
+
+
+
+
+
+\begin{exercises}
+  \item 
+    For the park discussed above, what should be the initial park population
+    in the
+    case where the populations decline by $11\%$ every year?
+    \begin{answer}
+      The equation 
+      \begin{equation*}
+         0.89I-T
+         =
+         \begin{mat}
+           0.89 &0 \\
+           0 &0.89
+         \end{mat}
+         -
+         \begin{mat}
+           .90  &.01  \\
+           .10  &.99
+         \end{mat}
+         =
+         \begin{mat}
+           -.01  &-.01  \\
+           -.10  &-.10
+         \end{mat}
+      \end{equation*} 
+      leads to this system.
+      \begin{equation*}
+        \begin{mat}
+          -.01  &-.01  \\
+          -.10  &-.10
+        \end{mat}
+        \colvec{p \\ r}
+        =
+        \colvec{0  \\ 0}
+      \end{equation*}\
+      So the eigenvectors have $p=-r$.
+    \end{answer}
+  \item 
+    What will happen to the population of the park in the event of
+    a growth in the external population of $1\%$ per year?
+    Will the park growth rate lag the world or lead it?
+    Assume that the initial park population is ten thousand, and the
+    world population is one hundred thousand, 
+    and calculate over a ten year span.
+    \begin{answer}
+      \Sage{} finds this.
+\begin{lstlisting}
+sage: M = matrix(RDF, [[0.90,0.01], [0.10,0.99]])
+sage: v = vector(RDF, [10000, 100000])
+sage: for y in range(10):
+....:     v[1] = v[1]*(1+.01)^y
+....:     print "pop vector year",y," is",v
+....:     v = M*v
+....:     
+pop vector year 0  is (10000.0, 100000.0)
+pop vector year 1  is (10000.0, 101000.0)
+pop vector year 2  is (10010.0, 103019.899)
+pop vector year 3  is (10039.19899, 106111.421211)
+pop vector year 4  is (10096.3933031, 110360.453787)
+pop vector year 5  is (10190.3585107, 115891.187687)
+pop vector year 6  is (10330.2345365, 122872.349786)
+pop vector year 7  is (10525.9345807, 131525.973067)
+pop vector year 8  is (10788.6008533, 142139.351965)
+pop vector year 9  is (11131.1342876, 155081.09214)
+\end{lstlisting}
+       So inside the park the population grows by about eleven percent while
+       outside the park the population grows by about fifty five percent.
+    \end{answer}
+  \item 
+    The park discussed above is partially fenced so that now,
+    every year, only $5\%$ of the animals from inside of the park leave (still,
+    about $1\%$ of the animals from the outside 
+    find their way in).
+    Under what conditions can the park maintain a stable population now?
+    \begin{answer}
+      We want that next year the population of the park is 
+      a combination of animals that stay and animals that enter from outside,
+      $p_{n+1}=0.95p_n+0.01r_n$.
+      And, next year's population in the rest of the world is 
+      a combination of animals that have left the park and animals that
+      stayed in the rest of the world
+      $r_{n+1}=0.05p_n+0.99r_n$. 
+      The matrix equation 
+      \begin{equation*}
+        \colvec{p_{n+1}  \\ r_{n+1}}
+        =
+        \begin{mat}
+          0.95  &0.01  \\
+          0.05  &0.99
+        \end{mat}
+        \colvec{p_n  \\ r_n}
+      \end{equation*}
+      means that to find eigenvalues we want to solve this.
+      \begin{equation*}
+        0
+        =
+        \begin{vmat}
+          \lambda-0.95  &0.01  \\
+          0.10          &\lambda-0.99
+        \end{vmat}
+        =\lambda^2-1.94\lambda-0.9405
+      \end{equation*}
+      \Sage{} gives this.
+\begin{lstlisting}
+sage: a,b,c = var('a,b,c') 
+sage: qe = (x^2 - 1.94*x -.9405 == 0)
+sage: print solve(qe, x)
+[
+x == -1/100*sqrt(18814) + 97/100,
+x == 1/100*sqrt(18814) + 97/100
+]
+sage: n(-1/100*sqrt(18814) + 97/100)
+-0.401641352540816
+sage: n(1/100*sqrt(18814) + 97/100)
+2.34164135254082
+\end{lstlisting}
+So the only way to have a dynamically stable population is if the park's
+numbers grows by $234\%$ every year. 
+    \end{answer}
+  \item 
+    Suppose that a species of bird only lives in Canada, the United States,
+    or in Mexico.
+    Every year, $4\%$ of the Canadian birds travel to the US, and $1\%$ of them
+    travel to Mexico.
+    Every year, $6\%$ of the US birds travel to Canada, and $4\%$ go to Mexico.
+    From Mexico, every year $10\%$ travel to the US, and $0\%$ go to Canada.
+    \begin{exparts}
+      \partsitem Give the transition matrix.
+      \partsitem Is there a way for the three countries to have constant
+         populations?  
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem This is the recurrence.
+          \begin{equation*}
+            \colvec{c_{n+1} \\ u_{n+1} \\ m_{n+1}}
+            =
+            \begin{mat}
+              .95  &.06  &0  \\
+              .04  &.90  &.10  \\
+              .01  &.04  &.90
+            \end{mat}
+            \colvec{c_n \\ u_n  \\ m_n}
+          \end{equation*}
+        \partsitem The system
+          \begin{equation*}
+            \begin{linsys}{3}
+              .05c &- &.06u &  &     &= &0  \\
+             -.04c &+ &.10u &- &.10m &= &0  \\
+             -.01c &- &.04u &+ &.10m &= &0
+            \end{linsys}
+          \end{equation*}
+          has infinitely many solutions.
+\begin{lstlisting}
+sage: var('c,u,m')
+(c, u, m)
+sage: eqns = [ .05*c-.06*u  == 0,
+....:         -.04*c+.10*u-.10*m == 0,
+....:         -.01*c-.04*u+.10*m == 0 ]
+sage: solve(eqns, c,u,m)
+[[c == 30/13*r1, u == 25/13*r1, m == r1]]            
+\end{lstlisting}
+      \end{exparts}
+    \end{answer}
+\end{exercises}
+\index{populations, stable|)}
+\index{stable populations|)}
+\endinput
+
+
+
+
+
+

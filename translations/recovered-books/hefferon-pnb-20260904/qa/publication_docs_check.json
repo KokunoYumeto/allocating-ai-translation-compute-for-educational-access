@@ -1,0 +1,95 @@
+{
+  "schema": "hefferon-publication-docs-bounded-check-v1",
+  "review_date": "2026-09-04",
+  "status": "pass_with_scope_limits_after_parent_wording_correction",
+  "initial_review_status": "review_complete_with_one_wording_qualification_recommended",
+  "scope": "Read-only check of exactly five named intended-public documents for coverage, attribution, licensing statements, next-source anchor, private paths/identity and unsupported claims. No semantic rerun, browsing, production edits, publication or external contact.",
+  "inputs": [
+    {"path": "package/README.md", "bytes": 5459, "sha256": "e866efb95fc93e387194b7c5afd7c7b3d0f407f7e915855889a06d3acdcd2219"},
+    {"path": "package/LICENSE.md", "bytes": 1924, "sha256": "dd5d102f01accde685f9a5066351255e3f772385a5c32ede6823dcfa5faa211f"},
+    {"path": "package/provenance/terminology.md", "bytes": 3411, "sha256": "a5c948aed2a3eed53cc8d508932d161c4116bfe98f67ced6b09a22be71efc5df"},
+    {"path": "package/source-excerpts/manifest-b40-opening.json", "bytes": 236103, "sha256": "a3430810fd1f3259587b5581980280ac78ff2520148c227d677798b5e3eb1239"},
+    {"path": "package/provenance/b40-opening-component-notices.json", "bytes": 190646, "sha256": "d66924e0634f6a4ac0cffb4f1a69feed666dcf450309739b1fd3a8d5ee7e11bf"}
+  ],
+  "findings": [
+    {
+      "id": "PUBDOC-01",
+      "priority": 2,
+      "path": "package/LICENSE.md",
+      "line": 23,
+      "claim": "the tested PDF contains permitted embedded glyph subsets",
+      "assessment": "The five scoped documents support the factual claim that the tested print profile embeds Arial/Cambria glyph subsets, but contain no font-license permission evidence establishing the additional word permitted. This is an unsupported permission assertion within the present review's evidence, not a finding that the embedding is prohibited.",
+      "recommended_fix": "Either cite the exact already-established font-embedding permission evidence, or remove permitted and retain the factual statement that the tested PDF contains embedded glyph subsets. No new rights audit or access restriction is proposed."
+    }
+  ],
+  "coverage_assessment": {
+    "result": "internally_consistent",
+    "details": [
+      "README explicitly separates 174 recovered source-bound slots, 97 new semantic contents titles with 14 optional entries, and four original learning examples/eight exercises/nine glossary rows.",
+      "It says the bounded opening is complete within that declared scope, while the whole book, main chapter exercises/answer book, laboratory and wider programme are not completed.",
+      "The semantic contents is explicitly page-number-free; it is not represented as a reproduction of current generated upstream pagination or as inclusion of translated chapters.",
+      "The cover PDFs versus their transparent previews are distinguished, and separate component display is not claimed to be an exact TeX cover facsimile.",
+      "HTML/PDF differences, PDF/UA non-certification, extraction-order limitations and the role of HTML as logical-text authority are explicitly disclosed."
+    ],
+    "manifest_source_block_count": 174,
+    "component_notice_math_record_count": 76
+  },
+  "attribution_and_license_assessment": {
+    "result": "internally_consistent_with_one_permission_wording_issue",
+    "details": [
+      "Author Jim Hefferon, work title, fourth edition/second printing and canonical commit are consistent across the public prose and retained records.",
+      "The selected CC BY-SA 2.5 route agrees between LICENSE.md, manifest retained_notices and component existing_notice_policy; the offered GFDL alternative is identified rather than silently erased.",
+      "Original learning support, translation, diagram and package code are explicitly offered under the chosen adaptation license; separate component notices and font licenses are not overwritten by a blanket grant.",
+      "Noto Nastaliq Urdu and Amiri are separately identified with OFL 1.1 notice/provenance locators. Their actual license files were outside the five-file scope and were not independently reread.",
+      "Comparison material is identified as Indonesian comparison evidence, not the target language or canonical authority.",
+      "Source-author, institution, font-creator and language-witness endorsement is explicitly disclaimed. Preparation is attributed to the AI assistant acting on user instructions, without naming the user.",
+      "Canon excerpts are described as short attributed language evidence, not re-licensed full essays; terminology.md explicitly disclaims mathematical-authority and standardized-terminology claims."
+    ],
+    "notice_manifest_hash_matches_actual_manifest": true,
+    "selected_license_agrees_between_retained_records": true,
+    "limit": "This checks the statements and their internal consistency, not a fresh legal-clearance or font-permission determination."
+  },
+  "next_source_anchor": {
+    "readme_location": "package/README.md:29-31",
+    "anchor": "src/gr/gr1.tex:4",
+    "chapter": "Chapter One, Linear Systems",
+    "sequence": "Begin with introductory prose, then Gauss's Method.",
+    "result": "consistent_with_manifest_first_main_source_and_declared_successor_scope",
+    "historical_context_note": "The unchanged historical manifest still says generated contents must come next and lists Comparing Set Descriptions among inspected subsection boundaries; the component notice likewise says contents/legend remain next. README already identifies these files as predecessor evidence. Their historical instructions and incomplete-frontmatter labels must not replace the successor README's active next-source anchor. The current active/inert status of every historical subsection was not re-audited in this five-file check.",
+    "optional_documentation_improvement": "README could explicitly say that all planning and next-action fields in inherited manifests/notices are historical, not only their incomplete-frontmatter labels. Preserve the historical files themselves unchanged."
+  },
+  "private_information_scan": {
+    "files_scanned": 5,
+    "scope": "Entire raw contents of all five files, plus decoded JSON serialized for escaped-string coverage.",
+    "user_identity_matches": 0,
+    "absolute_private_path_matches": 0,
+    "credential_pattern_matches": 0,
+    "private_identity_value_recorded": false,
+    "methods": [
+      "Case-insensitive whole-name check against the local user-profile identity without printing or recording its value.",
+      "Boundary-aware Windows drive paths, file URIs, Unix user/home paths and common private application/intake path markers.",
+      "Bounded bearer-token, authorization-assignment, API-key, access-token and private-key assignment patterns."
+    ],
+    "qualification": "Public source-author/contributor names, source attribution and repository-relative provenance paths are intentional credit, not a detected disclosure of the user's private identity. This is not the parent's final whole-payload scan."
+  },
+  "claims_dependent_on_separate_receipts": [
+    "PDF font embedding, extraction behavior, answer expansion, browser tests and final pagination require the final QA receipts/payload checks handled by the parent task.",
+    "Exact reproduction of every recovered translation string/formula and the current rendered 97-title hierarchy/14 stars rely on the separate build and semantic validation, not this documentation-only review.",
+    "Rebuild dependency completeness, public link availability, full package inventory and absence of full essay snapshots were not independently checked because their targets are outside the named five documents.",
+    "The stated model/reasoning profile and current recovery/search actions are provenance claims not independently authenticated by these five documents. No contrary evidence was found here."
+  ],
+  "post_correction_check": {
+    "status": "PUBDOC-01_resolved",
+    "current_changed_inputs": [
+      {"path": "package/README.md", "sha256": "6b55e3107fefaadcd02429463e87e9b084f7132a591da4914ac75ad52379fda6"},
+      {"path": "package/LICENSE.md", "sha256": "8ee5a3b99403eef44b487f18b29e347d8e30143ba9e8c0106db9806cf7e1f67d"}
+    ],
+    "rechecked": "Both changed documents were reread in full. LICENSE.md no longer asserts permitted embedding; it reports factual embedded subsets and points to qa/font-embedding.json for font identities and recorded OpenType flags. This resolves the unsupported permission adjective without claiming that flags themselves are a comprehensive legal determination. README additionally discloses compact displayed provisional-term pairs while historical statuses remain in JSON; its source-string/formula preservation statement and narrow scope are unchanged.",
+    "private_information_found_in_changed_text": false,
+    "remaining_required_documentation_fixes": [],
+    "unchanged_limits": "The historical-next-action clarification remains optional; PDF evidence, font receipts and final package scan remain the parent's separate work. The three unchanged documents remain covered by their initial recorded hashes. No receipt or file outside the named five was opened."
+  },
+  "production_mutated": false,
+  "publication_or_access_state_changed": false,
+  "next_action": "PUBDOC-01 is resolved in the rechecked bytes. Parent can continue its already-planned final PDF/payload checks and authorized publication. This report does not create a human-dependent review gate."
+}

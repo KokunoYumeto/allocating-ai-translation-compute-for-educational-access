@@ -1,0 +1,412 @@
+% Chapter 4, Topic _Linear Algebra_ Jim Hefferon
+%  http://joshua.smcvt.edu/linearalgebra
+%  2001-Jun-12
+\topic{Method of Powers}
+\index{method of powers|(}
+\index{powers, method of|(}
+In applications matrices can be large.
+Calculating eigenvalues and eigenvectors by
+finding and solving the characteristic polynomial is impractical, too slow
+and too error-prone.
+Some techniques avoid the characteristic polynomial. 
+Here we shall see a method that is suitable for large matrices that are
+\definend{sparse}\index{matrix!sparse}\index{sparse matrix}, 
+meaning that the great majority of the entries are zero.
+
+Suppose that the $\nbyn{n}$ matrix $T$ has $n$ distinct eigenvalues
+$\lambda_1$, $\lambda_2$, \ldots, $\lambda_n$.
+Then $\C^n$ has a basis made of the associated eigenvectors
+$\sequence{\vec{\zeta}_1,\dots,\vec{\zeta}_n}$.
+For any $\vec{v}\in\C^n$, writing
+$\vec{v}=c_1\vec{\zeta}_1+\dots+c_n\vec{\zeta}_n$ and iterating $T$ on $\vec{v}$
+gives these.
+\begin{align*}
+  T\vec{v} 
+      &=c_1\lambda_1\vec{\zeta}_1+c_2\lambda_2\vec{\zeta}_2+
+                              \dots+c_n\lambda_n\vec{\zeta}_n  \\
+  T^2\vec{v} 
+      &=c_1\lambda_1^2\vec{\zeta}_1+c_2\lambda_2^2\vec{\zeta}_2+
+                              \dots+c_n\lambda_n^2\vec{\zeta}_n  \\
+  T^3\vec{v} 
+      &=c_1\lambda_1^3\vec{\zeta}_1+c_2\lambda_2^3\vec{\zeta}_2+
+                              \dots+c_n\lambda_n^3\vec{\zeta}_n  \\
+      &\vdotswithin{=}                                            \\
+  T^k\vec{v} 
+      &=c_1\lambda_1^k\vec{\zeta}_1+c_2\lambda_2^k\vec{\zeta}_2+
+                              \dots+c_n\lambda_n^k\vec{\zeta}_n  
+\end{align*}
+Assuming that $|\lambda_1|$
+is the largest and dividing through
+\begin{equation*}
+  \frac{T^k\vec{v}}{\lambda_1^k} 
+      =c_1\vec{\zeta}_1+c_2\frac{\lambda_2^k}{\lambda_1^k}\vec{\zeta}_2+
+                    \dots+c_n\frac{\lambda_n^k}{\lambda_1^k}\vec{\zeta}_n  
+\end{equation*} 
+shows that as $k$ gets larger the fractions go to zero
+and so $\lambda_1$'s term will dominate the expression and
+that expression has a limit of $c_1\vec{\zeta}_1$.
+
+Thus if $c_1\neq 0$, 
+as $k$ increases the vectors $T^k\vec{v}$ will tend toward the direction of 
+the eigenvectors associated with the dominant eigenvalue.
+Consequently,
+the ratios  of the vector lengths $\absval{T^{k}\vec{v}}/\absval{T^{k-1}\vec{v}}$ 
+tend to that dominant eigenvalue.
+
+For example, the eigenvalues of the matrix 
+\begin{equation*}
+  T=\begin{mat}[r]
+    3  &0  \\
+    8  &-1
+  \end{mat}
+\end{equation*}
+are $3$ and $-1$.
+If $\vec{v}$ has the components $1$ and $1$ then 
+iterating gives this.
+\begin{center}
+  \begin{tabular}{c|ccccc}
+     $\vec{v}$  &$T\vec{v}$  &$T^2\vec{v}$ 
+        &$\cdots$ &$T^9\vec{v}$ &$T^{10}\vec{v}$        \\ \hline 
+     $\matrixvenlarge{\colvec[r]{1 \\ 1}}$  
+        &$\matrixvenlarge{\colvec[r]{3 \\ 7}}$ 
+        &$\matrixvenlarge{\colvec[r]{9 \\ 17}}$ 
+        &$\cdots$  
+        &$\matrixvenlarge{\colvec[r]{19\,683 \\ 39\,367}}$   
+        &$\matrixvenlarge{\colvec[r]{59\,049 \\ 118\,097}}$
+  \end{tabular}
+\end{center}
+The ratio between the lengths of the last two is $2.999\,9$.
+
+We note two implementation issues.
+First,
+instead of finding the powers of $T$ and applying them to $\vec{v}$, 
+we will compute $\vec{v}_1$ as $T\vec{v}$ and then compute $\vec{v}_2$ as
+$T\vec{v}_1$, etc.\ (that is, we do not separately calculate 
+$T^2\!$, $T^3\!$, \ldots). 
+We can quickly do these matrix-vector products even if $T$ is large,
+provided that it is sparse.
+The second issue is that 
+to avoid generating numbers that are so large that they 
+overflow our computer's capability, we can normalize
+the $\vec{v}_i$'s at each step.
+For instance, we can divide each $\vec{v}_i$ by its length
+(other possibilities are to divide it by its largest component, or simply
+by its first component).
+We thus implement this method by generating
+\begin{align*}
+  \vec{w}_0  &=\vec{v}_0/\absval{\vec{v}_0} \\
+  \vec{v}_1  &=T\vec{w}_0                 \\
+  \vec{w}_1  &=\vec{v}_1/\absval{\vec{v}_1} \\
+  \vec{v}_2  &=T\vec{w}_2                 \\
+             &\vdotswithin{=}    \\
+  \vec{w}_{k-1}  &=\vec{v}_{k-1}/\absval{\vec{v}_{k-1}} \\
+  \vec{v}_k  &=T\vec{w}_k                 
+\end{align*}
+until we are satisfied.
+Then $\vec{v}_k$ is an approximation of an eigenvector, and 
+the approximation of the dominant eigenvalue is
+the ratio % $\absval{\vec{v}_{k}}/\absval{\vec{w}_{k-1}}$.
+$(T\dotprod \vec{v}_k)/(\vec{v}_k\dotprod\vec{v}_k)
+  \approx (\lambda_1\vec{v}_k\cdot\vec{v}_k)/(\vec{v}_k\dotprod\vec{v}_k)
+  =\lambda_1$.
+
+
+One way that we could be `satisfied'
+is to iterate until our approximation of the eigenvalue settles down.
+We could decide for instance to stop the iteration
+process not after some fixed number of steps, but instead
+when $\absval{\vec{v}_k}$ differs from $\absval{\vec{v}_{k-1}}$ 
+by less than one percent, or when they agree up to the 
+second significant digit. 
+
+The rate of convergence is determined by the rate at which 
+the powers of $|\lambda_2/\lambda_1|$ go to zero,
+where $\lambda_2$ is the eigenvalue of second largest length. 
+If that ratio is much less than one then convergence is fast but
+if it is only slightly less than one then convergence can be quite slow.
+Consequently, the method of powers
+is not the most commonly used way of finding eigenvalues
+(although it is the simplest one, which is why it is here).
+Instead, there are a variety of methods that generally work by first 
+replacing the given matrix $T$ with another that is similar to it
+and so has the same eigenvalues, but is in some reduced form
+such as 
+tridiagonal form\index{tridiagonal form}\index{matrix!tridiagonal},
+where the only nonzero
+entries are on the diagonal, or just above or below it.
+Then special case techniques can find the eigenvalues.
+Once we know the eigenvalues then we can easily compute 
+the eigenvectors of $T$. 
+These other methods are outside of our scope.
+A good reference is \cite{Goult}
+
+
+
+\begin{exercises}
+  \item 
+    Use ten iterations to estimate the largest eigenvalue of these
+    matrices, starting from the vector with components $1$ and $2$.
+    Compare the answer with the one obtained by solving the characteristic
+    equation.
+    \begin{exparts*}
+      \partsitem $\begin{mat}[r]
+                    1  &5  \\
+                    0  &4
+                  \end{mat}$
+      \partsitem $\begin{mat}[r]
+                    3   &2  \\
+                    -1  &0
+                  \end{mat}$
+    \end{exparts*}
+    \begin{answer}
+     \begin{exparts}
+       \partsitem By eye, we see that the largest eigenvalue is $4$.
+         \Sage{} gives this.
+\begin{lstlisting}
+sage: def eigen(M,v,num_loops=10):
+....:     for p in range(num_loops):
+....:         v_normalized = (1/v.norm())*v
+....:         v = M*v
+....:     return v 
+....: 
+sage: M = matrix(RDF, [[1,5], [0,4]])
+sage: v = vector(RDF, [1, 2])
+sage: v = eigen(M,v)
+sage: (M*v).dot_product(v)/v.dot_product(v)
+4.00000147259
+\end{lstlisting}
+       \partsitem A simple calculation shows that the largest eigenvalue 
+          is~$2$.
+          \Sage{} gives this.
+\begin{lstlisting}
+sage: M = matrix(RDF, [[3,2], [-1,0]])
+sage: v = vector(RDF, [1, 2])
+sage: v = eigen(M,v)
+sage: (M*v).dot_product(v)/v.dot_product(v)
+2.00097741083
+\end{lstlisting}
+     \end{exparts}
+    \end{answer}
+  \item 
+     Redo the prior exercise by iterating until 
+     $\absval{\vec{v}_k}-\absval{\vec{v}_{k-1}}$ has absolute value less than
+     $0.01$
+     At each step, normalize by dividing each vector by its length.
+     How many iterations does it take?
+     Are the answers significantly different?
+     \begin{answer}
+       \begin{exparts}
+         \partsitem Here is \Sage.
+ \begin{lstlisting}
+sage: def eigen_by_iter(M, v, toler=0.01):
+....:     dex = 0
+....:     diff = 10
+....:     while abs(diff)>toler:
+....:         dex = dex+1
+....:         v_next = M*v
+....:         v_normalized = (1/v.norm())*v
+....:         v_next_normalized = (1/v_next.norm())*v_next
+....:         diff = (v_next_normalized-v_normalized).norm()
+....:         v_prior = v_normalized
+....:         v = v_next_normalized
+....:     return v, v_prior, dex
+....: 
+sage: M = matrix(RDF, [[1,5], [0,4]])
+sage: v = vector(RDF, [1, 2])
+sage: v,v_prior,dex = eigen_by_iter(M,v)
+sage: (M*v).norm()/v.norm()
+4.00604111686
+sage: dex
+4           
+ \end{lstlisting}
+      \partsitem \Sage{} takes a few more iterations on this one.
+        This makes use of the procedure defined in the prior item.
+\begin{lstlisting}
+sage: M = matrix(RDF, [[3,2], [-1,0]])
+sage: v = vector(RDF, [1, 2])
+sage: v,v_prior,dex = eigen_by_iter(M,v)
+sage: (M*v).norm()/v.norm()
+2.01585174302
+sage: dex
+6        
+\end{lstlisting}
+       \end{exparts}
+     \end{answer}
+  \item 
+    Use ten iterations to estimate the largest eigenvalue of these
+    matrices, starting from the vector with components $1$, $2$, and $3$.
+    Compare the answer with the one obtained by solving the characteristic
+    equation.
+    \begin{exparts*}
+      \partsitem $\begin{mat}[r]
+                    4   &0  &1 \\
+                    -2  &1  &0  \\
+                    -2  &0  &1
+                  \end{mat}$
+      \partsitem $\begin{mat}[r]
+                   -1  &2  &2  \\
+                    2  &2  &2  \\
+                   -3  &-6 &-6
+                  \end{mat}$
+    \end{exparts*}
+    \begin{answer}
+     \begin{exparts}
+       \partsitem The largest eigenvalue is $3$.
+         \Sage{} gives this.
+\begin{lstlisting}
+sage: M = matrix(RDF, [[4,0,1], [-2,1,0], [-2,0,1]])
+sage: v = vector(RDF, [1, 2, 3])
+sage: v = eigen(M,v)
+sage: (M*v).dot_product(v)/v.dot_product(v)
+3.02362112326
+\end{lstlisting}
+       \partsitem The largest eigenvalue is $-3$.
+\begin{lstlisting}
+sage: M = matrix(RDF, [[-1,2,2], [2,2,2], [-3,-6,-6]])
+sage: v = vector(RDF, [1, 2, 3])
+sage: v = eigen(M,v)
+sage: (M*v).dot_product(v)/v.dot_product(v)
+-3.00941127145
+\end{lstlisting}
+     \end{exparts}
+    \end{answer}
+  \item 
+     Redo the prior exercise by iterating until 
+     $\absval{\vec{v}_k}-\absval{\vec{v}_{k-1}}$ has absolute value less than
+     $0.01$.
+     At each step, normalize by dividing each vector by its length.
+     How many iterations does it take?
+     Are the answers significantly different?
+     \begin{answer}
+       \begin{exparts}
+         \partsitem
+           \Sage{} gets this, where \lstinline!eigen_by_iter! is defined
+           above.
+\begin{lstlisting}
+sage: M = matrix(RDF, [[4,0,1], [-2,1,0], [-2,0,1]])
+sage: v = vector(RDF, [1, 2, 3])
+sage: v,v_prior,dex = eigen_by_iter(M,v) 
+sage: (M*v).dot_product(v)/v.dot_product(v)
+3.05460392934
+sage: dex
+8            
+\end{lstlisting}
+         \partsitem With this setup, 
+\begin{lstlisting}
+sage: M = matrix(RDF, [[-1,2,2], [2,2,2], [-3,-6,-6]])
+sage: v = vector(RDF, [1, 2, 3])       
+\end{lstlisting}
+            \Sage{} does not return (use \lstinline!<Ctrl>-c! to interrupt the
+            computation).
+            Adding some error checking code to the routine 
+\begin{lstlisting}
+def eigen_by_iter(M, v, toler=0.01):
+    dex = 0
+    diff = 10
+    while abs(diff)>toler:
+        dex = dex+1
+        if dex>1000:
+            print "oops! probably in some loop: \nv=",v,"\nv_next=",v_next
+        v_next = M*v
+        if (v.norm()==0):
+            print "oops! v is zero"
+	    return None
+        if (v_next.norm()==0):
+            print "oops! v_next is zero"
+            return None
+        v_normalized = (1/v.norm())*v
+        v_next_normalized = (1/v_next.norm())*v_next
+        diff = (v_next_normalized-v_normalized).norm()
+        v_prior = v_normalized
+        v = v_next_normalized
+    return v, v_prior, dex              
+\end{lstlisting}
+           gives this.
+\begin{lstlisting}
+oops! probably in some loop: 
+  v= (0.707106781187, -1.48029736617e-16, -0.707106781187) 
+  v_next= (2.12132034356, -4.4408920985e-16, -2.12132034356) 
+oops! probably in some loop: 
+  v= (-0.707106781187, 1.48029736617e-16, 0.707106781187) 
+  v_next= (-2.12132034356, 4.4408920985e-16, 2.12132034356)
+oops! probably in some loop: 
+  v= (0.707106781187, -1.48029736617e-16, -0.707106781187) 
+  v_next= (2.12132034356, -4.4408920985e-16, -2.12132034356)           
+\end{lstlisting}
+          So it is circling.
+       \end{exparts}
+     \end{answer}
+  \item 
+      What happens if $c_1=0$?
+      That is, what happens if the initial vector does not to have any 
+      component in the direction of the relevant eigenvector?
+     \begin{answer}
+       In theory, this method would produce $\lambda_2$.
+       In practice, however, rounding errors in the computation introduce
+       components in the direction of $\vec{v}_1$, and so the method will
+       still produce $\lambda_1$, although it may take somewhat longer than
+       it would have taken with a more fortunate choice of initial vector. 
+     \end{answer}
+  \item 
+    How can we adapt the method of powers
+    to find the smallest eigenvalue?
+    \begin{answer}
+      Instead of using $\vec{v}_k=T\vec{v}_{k-1}$, 
+      use $T^{-1}\vec{v}_k=\vec{v}_{k-1}$.
+    \end{answer}
+\end{exercises}
+
+\announcecomputercode
+This is the code for the computer algebra system Octave that did
+the calculation above.
+(It has been lightly edited to remove blank lines, etc.)
+\begin{lstlisting}
+>T=[3, 0;
+    8, -1]
+T=
+   3   0
+   8  -1
+>v0=[1; 2]
+v0=
+   1
+   1
+>v1=T*v0
+v1=
+   3
+   7
+>v2=T*v1
+v2=
+   9
+  17
+>T9=T**9
+T9=
+  19683  0
+  39368 -1
+>T10=T**10
+T10=
+  59049  0
+ 118096  1
+>v9=T9*v0
+v9=
+  19683
+  39367
+>v10=T10*v0
+v10=
+  59049
+ 118096
+>norm(v10)/norm(v9)
+ans=2.9999
+\end{lstlisting}
+\textit{Remark.}
+This does not use the full power of Octave;
+it has built-in functions to automatically
+apply sophisticated methods to find eigenvalues and eigenvectors.
+
+\index{powers, method of|)}
+\index{method of powers|)}
+\endinput
+
+
+
+
+

@@ -1,0 +1,154 @@
+{
+  "schema": "hefferon-new-material-independent-review-v1",
+  "review_date": "2026-09-04",
+  "status": "pass_with_scope_limits_after_parent_corrections",
+  "initial_review_status": "calculations_and_title_mapping_pass_with_small_content_revisions_requested",
+  "scope": "Only the new original learning bridge and 97-title Punjabi semantic contents, checked against the supplied contents study and two directly relevant pinned canonical source excerpts. No production edits, Git, original-script execution, publication, or external contact.",
+  "reviewed_inputs": [
+    {"path": "package/learning/bridge.html", "sha256": "6e24be36bb25d80f42ae92e2be0d063dc53cf98c6077f1f63c9a0bc51e2da1fd"},
+    {"path": "package/translations/b40-contents-pnb.json", "sha256": "9a5fb3b7363a2777be3003d520d84d7b3876ac1010fe16c4bde7bf73adb9729d"},
+    {"path": "package/source-excerpts/b40-toc-source-study.json", "sha256": "7527799bbf8ff0babb850eec2d76253bcee7c47b1d3e163eb680ec48bb618bae"},
+    {"path": "package/source/canonical/src/vs/vs3.tex", "sha256": "42f4aebaa8176040be3668544e93dabbcdcd2ea25833c16a4a52c981a8973714", "reviewed_lines": "17-102, particularly 19-42"},
+    {"path": "package/source/canonical/src/jc/jc1.tex", "sha256": "e865392f7f6c3f9cbbeb4bb142167c62d4c88a63a5cd0fe3fc6cc007ebb37b21", "reviewed_lines": "1-100"}
+  ],
+  "checks": {
+    "worked_examples": 4,
+    "exercise_solution_pairs": 8,
+    "calculation_failures": [],
+    "source_titles": 97,
+    "translated_titles": 97,
+    "all_97_title_meanings_read": true,
+    "missing_title_owners": [],
+    "extra_title_owners": [],
+    "owner_order_matches_source": true,
+    "optional_source_flags": 14,
+    "all_optional_owners_have_translations": true,
+    "source_study_hash_matches_translation_metadata": true,
+    "legend_owner_matches_source": true,
+    "general_particular_homogeneous_title": {"owner": "src/gr/gr1.tex#subsection/3", "equals_signs": 1, "plus_signs": 1, "three_operand_meanings_preserved": true},
+    "separately_language_marked_urdu_help_cells": 9,
+    "original_learning_material_explicitly_distinguished_from_hefferon_translation": true
+  },
+  "worked_math": [
+    {"id": "bridge-example-1", "result": "pass", "verified": "3x+2=14 gives x=4; substitution gives 14. Division is explicitly by nonzero 3."},
+    {"id": "bridge-example-2", "result": "pass", "verified": "x+y=7 and x-y=1 give (4,3). Both equations and all four line endpoints in the image alt text check. (7,0) satisfies only the first equation."},
+    {"id": "bridge-example-3", "result": "pass", "verified": "(1,2)+(3,-1)=(4,1); 2(1,2)-(3,-1)=(-1,5)."},
+    {"id": "bridge-example-4", "result": "pass", "verified": "The row-by-column product [[1,2],[3,4]] times column (2,1) is column (4,10); displayed MathML agrees."},
+    {"id": "bridge-a1", "result": "pass", "verified": "x=3 and 2*3+5=11."},
+    {"id": "bridge-a2", "result": "pass", "verified": "(3,1) satisfies 2x+y=7 and x-y=2."},
+    {"id": "bridge-a3", "result": "pass", "verified": "(2,3) gives 5 in the first equation and 7, not 8, in the second."},
+    {"id": "bridge-a4", "result": "pass", "verified": "(-1,3)+(4,2)=(3,5)."},
+    {"id": "bridge-a5", "result": "pass", "verified": "-2(2,-3)=(-4,6)."},
+    {"id": "bridge-a6", "result": "pass", "verified": "[[2,0],[-1,3]] times column (1,2) is column (2,5)."},
+    {"id": "bridge-a7", "result": "pass", "verified": "The same x+y cannot equal both 2 and 3, so no solution exists."},
+    {"id": "bridge-a8", "result": "pass", "verified": "The second equation is twice the first. (0,2) and (1,1) are distinct solutions. For every real t, (t,2-t) satisfies both equations; conversely x+y=2 forces y=2-x, so the parametrization is complete."}
+  ],
+  "concrete_findings": [
+    {
+      "id": "NMR-01",
+      "priority": 2,
+      "location": "package/learning/bridge.html#learner-bridge, introductory paragraph",
+      "problem": "The blanket sentence ایتھے سارے عدد حقیقی عدد نیں says every number here is real, while the same glossary deliberately introduces a+bi and i squared equals -1.",
+      "recommended_fix": "Scope the real-number restriction to the worked examples and exercises, for example: ایتھے مثالاں تے مشقاں وچ سارے عدد حقیقی عدد نیں؛ مرکب عدداں دا ناں صرف اصطلاحی مدد وچ سمجھایا گیا اے۔"
+    },
+    {
+      "id": "NMR-02",
+      "priority": 2,
+      "location": "package/learning/bridge.html#bridge-glossary, basis row",
+      "source_owner": "src/vs/vs3.tex#subsection/1",
+      "source_evidence_lines": "19-42",
+      "problem": "An independent spanning set is a conventional mathematical basis, but this source explicitly defines a basis as a sequence and states that reordering its elements produces a different basis. The bridge currently calls it only a سیٹ and loses the book-specific ordering convention used later for coordinates.",
+      "recommended_fix": "Describe an ordered sequence/list of vectors that is linearly independent and spans the space. Retain both independence and spanning requirements, and explicitly say order matters. Since linear independence is otherwise undefined in the bridge, a brief parenthetical explanation would improve self-contained learning support."
+    },
+    {
+      "id": "NMR-03",
+      "priority": 2,
+      "location": "package/learning/bridge.html#bridge-glossary, matrix row",
+      "problem": "کالمਾਂ contains two Gurmukhi combining characters: U+0A3E and U+0A02. This is the already-known mixed-script typo identified by the parent task.",
+      "recommended_fix": "Replace the mixed-script token with the entirely Shahmukhi form کالماں.",
+      "known_before_review": true
+    },
+    {
+      "id": "NMR-04",
+      "priority": 2,
+      "location": "package/translations/b40-contents-pnb.json",
+      "source_owner": "src/jc/jc1.tex#subsectionoptional/1",
+      "source_title": "Polynomial Factoring and Complex Numbers",
+      "target_title": "کثیر رقمی دے عامل تے مرکب عدد",
+      "problem": "The title names polynomial factors rather than the factoring process. The source subsection explicitly introduces factoring polynomials over real versus complex numbers.",
+      "recommended_fix": "Make the action explicit, for example کثیرحدیاں دے عامل کڈھنا تے مرکب عدد. Use the same polynomial term in src/jc/jc4.tex#subsectionoptional/1 as elsewhere in this edition."
+    }
+  ],
+  "small_editorial_recommendations": [
+    {"location": "src/gr/gr3.tex#subsection/2", "recommendation": "Consider لیما (مددگار نتیجہ) rather than لمّا for the borrowed mathematical word lemma, so it is not read as the Punjabi adjective long."},
+    {"location": "src/jc/jc3.tex#section/1", "recommendation": "In the explanatory nilpotence gloss, prefer Punjabi کسے over کسی; if retaining a definition-like gloss, say a positive-integer power becomes zero rather than an unqualified power."},
+    {"location": "src/map/map6.tex#subsectionoptional/2", "recommendation": "آپس وچ عمودی بنانا makes mutual orthogonality clearer than simply عمودی بنانا, which can also be read as making something vertical."},
+    {"location": "package/learning/bridge.html#bridge-glossary, vector row", "recommendation": "State that equal coordinate vectors have the same number of entries as well as equal corresponding entries."}
+  ],
+  "definition_assessment": {
+    "linear_equation": "The displayed fixed-coefficient affine equation a1*x1+...+an*xn=b and prohibition on products of variables are appropriate for this elementary real-number bridge.",
+    "solution": "Correctly requires all equations of a system to hold simultaneously.",
+    "vector": "Correctly limits the introductory coordinate-list description instead of claiming all abstract vectors are number lists; explicitly adding equal length is a useful refinement.",
+    "scalar_and_matrix": "Mathematically appropriate for the stated real-number examples; matrix row needs the mixed-script typo fixed.",
+    "linear_combination_and_span": "Correctly distinguishes the set of all possible linear combinations from a single combination.",
+    "basis": "Independence and spanning are present, but the source-specific ordered-sequence convention needs NMR-02.",
+    "complex_number": "The a+bi definition with real a,b and i squared equals -1 is correct and explicitly distinguishes complex numbers from composite integers; resolve the introductory real-only scope wording in NMR-01."
+  },
+  "optional_owners": [
+    "src/gr/gr2.tex#subsectionoptional/1",
+    "src/gr/gr2.tex#subsectionoptional/2",
+    "src/vs/vs3.tex#subsectionoptional/1",
+    "src/map/map6.tex#subsectionoptional/1",
+    "src/map/map6.tex#subsectionoptional/2",
+    "src/map/map6.tex#subsectionoptional/3",
+    "src/det/det1.tex#subsectionoptional/1",
+    "src/det/det1.tex#subsectionoptional/2",
+    "src/det/det3.tex#subsectionoptional/1",
+    "src/jc/jc1.tex#subsectionoptional/1",
+    "src/jc/jc3.tex#subsectionoptional/1",
+    "src/jc/jc3.tex#subsectionoptional/2",
+    "src/jc/jc4.tex#subsectionoptional/1",
+    "src/jc/jc4.tex#subsectionoptional/2"
+  ],
+  "language_and_scope": {
+    "punjabi_primary_prose": "The teaching prose uses Punjabi syntax and inflections. Urdu alternatives are confined to nine explicitly lang=ur glossary cells beneath an Urdu-help heading, with separate English assistance; Urdu does not replace the explanations.",
+    "script_scan": "Across the bridge's visible text and all translated title values, the only detected South Asian-script intrusion is the known Gurmukhi suffix in NMR-03. Other non-Arabic letters are deliberate Latin mathematical/English text, including subscript n. No Devanagari, Bengali, Cyrillic, Hebrew, or CJK intrusion was found by the bounded character scan.",
+    "source_attribution": "The bridge labels its examples, exercises, solutions and diagram as original support, not translations of Hefferon's examples. Its final paragraph correctly states that the first chapter translation is not included.",
+    "contents_scope": "The translation metadata calls the output a page-number-free semantic outline and explicitly avoids treating untranslated chapters as included. Its new active scope should not inherit the historical source-study document's pagination-dependent hold."
+  },
+  "limits_and_next_validation": [
+    "The translation JSON holds titles only. The 97 owner keys, their order and all 14 optional owners are preserved, but generated labels and optional flags must still be joined from canonical_entries by the renderer. This review did not inspect the in-progress generated contents HTML, so it does not certify displayed label order, exactly 14 visible stars, or final hierarchy.",
+    "The mathematical title retains one equals sign and one plus sign with correct operand meanings; final RTL/LTR presentation still needs rendered validation.",
+    "The diagram's alt-text coordinates were checked algebraically, but bridge-system.svg itself was outside the specifically requested input set and was not inspected.",
+    "All 97 titles were read against canonical_entries. Direct source excerpts were consulted for basis ordering and polynomial factoring; this is not a fresh independent reconstruction of every source-study heading, macro, or generated label.",
+    "No rendered visual/accessibility QA, link navigation test, full-book mathematical audit, or standardized Punjabi terminology certification is claimed.",
+    "This report records the hashes and content reviewed before any parent-applied corrections. Recompute relevant hashes and check the changed entries before treating the revised production files as reviewed."
+  ],
+  "post_edit_verification": {
+    "status": "all_four_concrete_findings_resolved_in_rechecked_bytes",
+    "inputs": [
+      {"path": "package/learning/bridge.html", "sha256": "11b2229f06f170a40bcbf7b781a8476acbfe4f2600686804d23cc80d6f18b09e"},
+      {"path": "package/translations/b40-contents-pnb.json", "sha256": "767b019114789d6686a92801f8285abfa75c4ae0a0bc5a1a6ea1d70350d82d02"}
+    ],
+    "resolved_findings": {
+      "NMR-01": "The introduction now restricts real numbers to computational examples and exercises, and explicitly distinguishes the glossary's complex-number explanation.",
+      "NMR-02": "The basis entry now explicitly states an ordered list, independence, full spanning, and the relevance of ordering to bases and coordinates; the Urdu and English help labels also say ordered basis.",
+      "NMR-03": "The matrix row now uses کالماں. The bounded new-text Gurmukhi scan returns zero occurrences.",
+      "NMR-04": "The source title's action is now explicit: کثیر رقمی دے عامل کڈھنا تے مرکب عدد. The separate polynomial-term harmonization suggestion is editorial, not a remaining mathematical defect."
+    },
+    "additional_improvement_checked": "Span now explicitly consists of all finite linear combinations; the finite-versus-single-combination distinction is correct.",
+    "rechecks": {
+      "all_four_worked_examples_reread_and_correct": true,
+      "all_eight_questions_and_solutions_reread_and_correct": true,
+      "translated_titles": 97,
+      "ordered_owner_keys_match_canonical_entries": true,
+      "optional_source_entries": 14,
+      "gurmukhi_occurrences_in_new_reader_text": 0,
+      "separately_marked_urdu_help_cells": 9
+    },
+    "remaining_required_content_fixes": [],
+    "remaining_small_editorial_recommendations": "The earlier lemma-spelling, mutual-orthogonality wording, nilpotence-gloss, equal-vector-length and consistent polynomial-label suggestions remain optional refinements, not calculation failures.",
+    "boundary": "These hashes supersede the initial bridge and contents hashes for the corrected-content check only. Initial findings remain historical evidence. Generated contents hierarchy, labels, visible stars, final bidi layout and the actual SVG still require the previously stated separate renderer/visual checks. Any later edits are not covered by these exact hashes."
+  },
+  "production_mutated": false
+}
