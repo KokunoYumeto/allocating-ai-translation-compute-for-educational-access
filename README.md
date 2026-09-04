@@ -2,7 +2,7 @@
 
 **WORK IN PROGRESS - NON-EXHAUSTIVE - NOT THE FINAL PRODUCT**
 
-Living notebook updated: 2026-09-04. Dated PDF/Zenodo snapshot: version 0.1.0.
+Living notebook updated: 2026-09-04. Current readable PDF/Zenodo snapshot: version 0.2.0.
 
 This is an ongoing research notebook about where AI-assisted educational translation and adaptation could create useful access. It is not the final study, an exhaustive list of needs, or a completed funding-priority ranking.
 
@@ -14,18 +14,28 @@ The study concerns worldwide educational needs. Files, translations or previous 
 
 GitHub is the continually evolving version. This dated Zenodo snapshot preserves the hypotheses and research-coverage checkpoint available on 4 September 2026. Later evidence may change findings and recommendations; the original forecast is retained so changes are visible.
 
-Dated Zenodo working snapshot: [10.5281/zenodo.22307432](https://doi.org/10.5281/zenodo.22307432). It is ongoing, non-exhaustive research, not the final product.
+Current Zenodo working paper: [10.5281/zenodo.22308398](https://doi.org/10.5281/zenodo.22308398). It is ongoing, non-exhaustive research, not the final product.
+
+<!-- current-readable-paper-v0.2 -->
+## Current readable working paper
+
+- [Open the 18-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.2.pdf)
+- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.2.json)
+- [Evidence and editable-source archive](research/working-paper/02_Working_Paper_Sources_v0.2.zip)
+
+This v0.2 PDF incorporates the current regional findings and complete-course versus smaller-package comparison. Missing profiles remain unfinished research, not lower priorities.
+
 
 
 ## Research update: nineteen further profiles
 
 <!-- regional-research-update-20260904 -->
-[Read the new African, Arabic/Iranic and signed-language comparisons](research/updates/2026-09-04-regional/README.md). The current bounded calculation has designs for 44 forecast profiles and 112 of 600 stage cells, with preschool now explicit. These are investigation counts, not ranks or educational coverage. The linked v0.1 PDF and Zenodo files remain an earlier dated snapshot; this working update is additional, unfinished research.
+[Read the new African, Arabic/Iranic and signed-language comparisons](research/updates/2026-09-04-regional/README.md). The current bounded calculation has designs for 44 forecast profiles and 112 of 600 stage cells, with preschool now explicit. These are investigation counts, not ranks or educational coverage. The v0.2 PDF and Zenodo version incorporate this checkpoint; the worldwide study remains unfinished.
 
 ## Read the current notebook
 
 - [Readable HTML](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/)
-- [Dated working PDF](research/working-notebook/00_Living_Research_Notebook_WORK_IN_PROGRESS_v0.1.pdf)
+- [Current 18-page working paper](research/working-paper/00_START_HERE__Current_Working_Paper_v0.2.pdf)
 - [Frozen hypotheses and 100-candidate forecast](research/working-notebook/sources/HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md)
 - [How hypotheses are tested](research/working-notebook/sources/HYPOTHESIS_TEST_PLAN_v1.md)
 - [Current research coverage](research/updates/2026-09-04-regional/EXPECTED_CANDIDATE_COVERAGE_v1.md)
