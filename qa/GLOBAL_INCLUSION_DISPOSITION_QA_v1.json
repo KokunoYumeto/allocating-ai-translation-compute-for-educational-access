@@ -1,0 +1,153 @@
+{
+  "schema": "interlanguage/global-inclusion-disposition-qa/1.0.0",
+  "generated_at_utc": "2026-09-03T22:31:33.538494Z",
+  "status": "PASS_WITH_EXPLICIT_EVIDENCE_GAPS",
+  "purpose": "Make all target, context, structural, displacement, bridge, alias, and high-consequence sentinel dispositions visible without inventing population counts.",
+  "inputs": [
+    {
+      "path": "structured/SUCCESSOR_EDITION_TARGET_AUTHORITY_v3.csv",
+      "bytes": 370983,
+      "sha256": "53918F785B33CEDC34D1A85C37F37042D322E4731E7FE1E0FDAE34918A8B1A7D"
+    },
+    {
+      "path": "structured/SUCCESSOR_EDITION_ALIAS_LEDGER_v3.csv",
+      "bytes": 9855,
+      "sha256": "0E970BFD3BFE33AAC3C7780EC9DB8283F66E303FD1D4F22062F58A8B6EA8C71E"
+    },
+    {
+      "path": "structured/GLOBAL_TARGET_SCORE_TABLE_v3.csv",
+      "bytes": 1837435,
+      "sha256": "509D9A7806F607510F570D498903969575C52E5FB09993F6FD07D5C2FD6977BE"
+    },
+    {
+      "path": "structured/TOP100_NEEDS_ONLY_v3.csv",
+      "bytes": 136341,
+      "sha256": "B97EF9CD8322226C20F5BEDE8BCD8E7E19BD7995C2D2DB7169D5BBD40E38D183"
+    },
+    {
+      "path": "structured/EVIDENCE_AUTHORIZATION_v1.csv",
+      "bytes": 1287715,
+      "sha256": "24F231A83BD4581BC97B28726BD7380ED7BA5AA86F196568B3E2B11742574552"
+    },
+    {
+      "path": "structured/LARGE_POPULATION_OMISSION_SUPPLEMENT_v1.csv",
+      "bytes": 17953,
+      "sha256": "ABF8F6F9E37C533124806FAF3796C8574C2CD9DEF93041BB7B32EB828517723E"
+    },
+    {
+      "path": "structured/STRUCTURAL_ACCESS_COMMISSIONING_REGISTER_v1.csv",
+      "bytes": 21713,
+      "sha256": "B18F3D60F6EE55D3DAB18A88C0759ED6613EC7233EC04C3A5E5CB0731919DDB7"
+    },
+    {
+      "path": "structured/global_omission_candidates.csv",
+      "bytes": 43413,
+      "sha256": "40BF3487CC14AC0E601F86FBD8633A0D789BC85559EA514C62EE7110CE494309"
+    },
+    {
+      "path": "structured/AMERICAS_EUROPE_EMPIRICAL_NEED_INPUTS.csv",
+      "bytes": 349264,
+      "sha256": "AB5FD3F3235D02CF8D7B58FA28B42C46C55E7EC731FD750EFD31CAD3F290BC79"
+    },
+    {
+      "path": "agent_reports/INTERLANGUAGE_STRUCTURED_EVIDENCE_MATRIX.csv",
+      "bytes": 42308,
+      "sha256": "BD5D2128A69A042069D74AD27906FA9A08A27A2E8A9F8EC93845BA8827E118CF"
+    },
+    {
+      "path": "structured/GLOBAL_INCLUSION_SENTINEL_SPEC_v1.csv",
+      "bytes": 35093,
+      "sha256": "5AAB5E0F5B4DA57233081A6753C24A03D8F9ACB96DD1718E8C395D14842C0854"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "structured/GLOBAL_INCLUSION_DISPOSITION_REGISTER_v1.csv",
+      "bytes": 942038,
+      "sha256": "96EBED123BC08AEC801FAC87508506D04A3D96A820B1FE1026F28FAB88DFDB67"
+    },
+    {
+      "path": "structured/GLOBAL_INCLUSION_SENTINEL_STATUS_v1.csv",
+      "bytes": 64152,
+      "sha256": "A190ED28B0DE72385EF76A5A24ED4002FDD4FA456FB003E331B233492A8629A6"
+    },
+    {
+      "path": "structured/SOURCE_TO_SCORE_CROSSWALK_v1.csv",
+      "bytes": 729651,
+      "sha256": "9ED049D05D47A0DED2842E9A74966A939FEDB2F7DA7A60D3AA9D27611AAB719A"
+    },
+    {
+      "path": "structured/GLOBAL_TARGET_SCORE_TABLE_PUBLIC_v3.csv",
+      "bytes": 1982685,
+      "sha256": "08845507E3EB0B1963249B5227A657913503093BA00B823F2D383FA19ECE0313"
+    },
+    {
+      "path": "structured/DISPLACEMENT_EDUCATION_PORTFOLIO_v1.csv",
+      "bytes": 10798,
+      "sha256": "6C2CF3EC24539007D4D50C213FBE1609086FB68C1A7452A0D51788CD34988782"
+    }
+  ],
+  "counts": {
+    "authority_targets": 1077,
+    "alias_rows": 51,
+    "large_context_rows": 10,
+    "structural_access_rows": 35,
+    "interlanguage_profiles": 20,
+    "displacement_portfolios": 10,
+    "sentinel_checks": 145,
+    "sentinels_missing_exact_target": 2,
+    "sentinels_partial_base_language_only": 1,
+    "sentinels_context_only_without_exact_target": 6,
+    "inclusion_register_rows": 1348,
+    "source_to_score_crosswalk_rows": 850,
+    "public_score_rows": 1077,
+    "direct_person_score_rows": 206,
+    "public_unranked_rows_with_population_values_removed": 871
+  },
+  "record_kind_counts": {
+    "ALIAS_NO_SEPARATE_POPULATION_CREDIT": 51,
+    "BRIDGE_OR_INTERLANGUAGE_PROFILE": 20,
+    "DISPLACEMENT_EDUCATION_PORTFOLIO": 10,
+    "EDITION_AUTHORITY_TARGET": 1077,
+    "GLOBAL_INCLUSION_SENTINEL_CHECK": 145,
+    "LARGE_OR_CONTEXT_POPULATION_STRATUM": 10,
+    "STRUCTURAL_ACCESS_INTERVENTION": 35
+  },
+  "sentinel_presence_counts": {
+    "MISSING_EXACT_TARGET": 2,
+    "PRESENT_BASE_LANGUAGE_ONLY_EXACT_TERRITORY_SCRIPT_OR_STANDARD_PROFILE_MISSING": 1,
+    "PRESENT_CONTEXT_STRATUM_NO_EXACT_EDITION_TARGET": 6,
+    "PRESENT_EXACT_TARGET": 136
+  },
+  "missing_sentinel_ids": [
+    "S067",
+    "S126"
+  ],
+  "partial_profile_sentinel_ids": [
+    "S073"
+  ],
+  "context_only_sentinel_ids": [
+    "S054",
+    "S074",
+    "S075",
+    "S076",
+    "S077",
+    "S078"
+  ],
+  "top100_duplicate_population_atoms": {
+    "nonadditive-multilanguage:7c85229066c80679": [
+      "edition-target:lang:cmn-Hant-TW",
+      "edition-target:lang:nan-Hant-TW",
+      "edition-target:lang:hak-Hant-TW"
+    ]
+  },
+  "synthetic_public_population_leaks": [],
+  "hard_failures": [],
+  "release_notes": [
+    "PASS_WITH_EXPLICIT_EVIDENCE_GAPS is a data-integrity result, not permission to call the global evidence census complete.",
+    "Every missing sentinel must remain visibly unranked/evidence-needed or acquire source-bound evidence before publication prose claims global completeness.",
+    "Top-100 rows sharing a population atom require a duplicate-aware portfolio view before funder-facing presentation.",
+    "Displacement cohorts are separate host-specific education portfolios and never direct language-person ranks.",
+    "Bridge/interlanguage production reuse and reader comprehension are separate quantities; no family-wide reach is credited."
+  ]
+}

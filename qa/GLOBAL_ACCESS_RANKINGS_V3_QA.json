@@ -1,0 +1,105 @@
+{
+  "all_rankable_targets_have_nonzero_model_need": true,
+  "all_score_target_ids_set_equal": {
+    "eff_top10": 10,
+    "eff_top100": 100,
+    "l_id": 1077,
+    "l_m": 1077,
+    "score": 1077,
+    "top10": 10,
+    "top100": 100
+  },
+  "all_targets_have_finite_population_bounds": true,
+  "authorization": {
+    "bytes": 1287715,
+    "legacy_mapping_rank_eligible_true_rows": 0,
+    "legacy_mapping_role": "retained for audit only; not an active population authority",
+    "path": "structured/EVIDENCE_AUTHORIZATION_v1.csv",
+    "ranked_person_rows_have_matching_admit_receipts": true,
+    "sha256": "24f231a83bd4581bc97b28726bd7380ed7ba5aa86f196568b3e2b11742574552",
+    "stage_rows_have_matching_stage_receipts": true,
+    "status_counts": {
+      "ADMIT": 259,
+      "EXCLUDE": 588,
+      "STAGE_OPPORTUNITY": 3
+    }
+  },
+  "authorization_target_coverage": {
+    "admit_authorization_row_count": 259,
+    "admit_authorization_target_count": 204,
+    "admit_authorization_target_ids_not_selected": [],
+    "admit_target_coverage": true,
+    "selected_admit_target_count": 204,
+    "selected_stage_target_count": 2,
+    "stage_authorization_row_count": 3,
+    "stage_authorization_target_count": 2,
+    "stage_authorization_target_ids_not_selected": [],
+    "stage_rows_collapsed_within_target": 1,
+    "stage_target_coverage": true
+  },
+  "cost_source": {
+    "class": "SCRIPT_ENVELOPE_FALLBACK"
+  },
+  "draw_algorithm": "SHA-256-addressed deterministic triangular/uniform population and truncated-normal factor draws; top-K probabilities are joint draw frequencies",
+  "draw_level_probabilities_bounded": true,
+  "draws_per_target": 256,
+  "forbidden_predictor_terms_checked": [
+    "user_local",
+    "prior_translation",
+    "sunk_compute",
+    "project_convenience",
+    "completion_status",
+    "local_file_inventory",
+    "personal_work"
+  ],
+  "generic_accessibility_overlay_count": 0,
+  "model": "common-equal-treatment-l-id-l-m/3.0.0",
+  "needs_only_excludes_stage_opportunity": true,
+  "no_context_ceiling_in_primary_order": true,
+  "person_need_target_count": 204,
+  "population_assignment": "explicit atom IDs; common equal allocation only for unresolved country ceilings; no additive macro-language inheritance",
+  "primary_order_eligible_count": 206,
+  "rankable_target_count": 204,
+  "required_large_cohort_presence": {
+    "Indonesia": true,
+    "Japan": true,
+    "Mainland Simplified Chinese": true
+  },
+  "schema": "interlanguage/global-access-rankings/3.0.0",
+  "stage_opportunity_target_count": 2,
+  "status": "PASS",
+  "target_count": 1077,
+  "target_set_checks": {
+    "eff_top100_exact_prefix": true,
+    "eff_top10_exact_prefix": true,
+    "needs_top100_exact_prefix": true,
+    "needs_top10_exact_prefix": true,
+    "person_plus_unranked_equals_score": true,
+    "score_equals_authority": true,
+    "score_equals_l_id": true,
+    "score_equals_l_m": true,
+    "stage_set_disjoint_from_person": true
+  },
+  "target_set_hashes": {
+    "eff": "06676d21c96c0b2a400ea216db8474bcfc8d32c2727a2b8c2a2f2c42b3aa2fc3",
+    "eff_top10": "f2dcfca55ab59b66a33ad2f929ff0894754a96c80db98fefcd2c2d9557dcdfa9",
+    "eff_top100": "19925b76501adf13ea7fcc74faf9aec43069fc4689f005f791ebf1c36af32e5d",
+    "l_id": "0db45f334819d6ba4ecc6b239b91816744eabb6065b3838a582ec2a330067af0",
+    "l_m": "0db45f334819d6ba4ecc6b239b91816744eabb6065b3838a582ec2a330067af0",
+    "needs_top10": "ac9bfca6d7a1f12052bc37d498a9c781227513f94d617950cdf578e07caecb7c",
+    "needs_top100": "37b0d782a92cda1ed6a028be836ab763134fd903154ab881886c18d598240b42",
+    "score": "0db45f334819d6ba4ecc6b239b91816744eabb6065b3838a582ec2a330067af0",
+    "stage": "6ae4b633597b61d586d78ce9018715061244f6ae15e1802303889b2606cffeee"
+  },
+  "target_set_sha256": "0db45f334819d6ba4ecc6b239b91816744eabb6065b3838a582ec2a330067af0",
+  "unranked_no_source_bound_person_denominator_count": 775,
+  "unranked_target_count": 871,
+  "weights": {
+    "academic_lingua_franca_nonoverlap": 0.18,
+    "accessibility_gap": 0.08,
+    "delivery_gap": 0.14,
+    "learning_completion_gap": 0.2,
+    "open_resource_scarcity": 0.18,
+    "schooling_language_gap": 0.22
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "assertions": {
+    "accessibility_context_rows": 18,
+    "accessibility_modes": 17,
+    "all_allocated_direct_sign_strata_exactly_authority_bound": true,
+    "combined_rows": 35,
+    "direct_named_sign_person_strata": 10,
+    "direct_named_sign_strata_missing_authority_binding": 1,
+    "direct_named_sign_strata_with_allocation_denominator": 9,
+    "hsl_identity_gap_retained": true,
+    "lsq_retained_without_false_asl_or_lsf_binding": true,
+    "no_accessibility_proxy_used_as_allocation_denominator": true,
+    "no_invalid_sign_proxy_used_as_allocation_denominator": true,
+    "row_hashes_valid": true,
+    "sign_rows": 18,
+    "spain_undifferentiated_measure_not_bound_to_one_language": true,
+    "structural_ids_unique": true
+  },
+  "authority_binding_status_counts": {
+    "EXACT_AUTHORITY_TARGET": 15,
+    "EXACT_IDENTITY_MISSING_IN_AUTHORITY": 1,
+    "EXACT_IDENTITY_MISSING_OR_UNRESOLVED_IN_AUTHORITY": 2
+  },
+  "inputs": {
+    "structured\\SIGNED_ACCESSIBILITY_EMPIRICAL_INPUTS.csv": {
+      "bytes": 38194,
+      "sha256": "32655527d53e223d5689da3a841b2df635931214db97ca167c473861a6cf8d89"
+    },
+    "structured\\SUCCESSOR_EDITION_TARGET_AUTHORITY_v3.csv": {
+      "bytes": 370899,
+      "sha256": "b7b2e3c2314893ae955c9d2731a914b5347acc8728a03c6650f6241e3251580d"
+    },
+    "structured\\accessibility_candidates.csv": {
+      "bytes": 24663,
+      "sha256": "a04f2b7e8446106e74710c8a4965a728883fa46c1b4161bcc92e7a36cf11189b"
+    }
+  },
+  "measure_status_counts": {
+    "DIRECT_NAMED_SIGN_LANGUAGE_PERSON_MEASURE": 10,
+    "MEASUREMENT_GAP_NO_PERSON_DENOMINATOR": 2,
+    "PROXY_NOT_A_SIGN_LANGUAGE_USER_COUNT": 4,
+    "QUALIFIED_OR_UNDIFFERENTIATED_SIGN_MEASURE": 2
+  },
+  "method": "Named sign languages and accessibility/delivery modes are coequal structural commissioning lanes. Direct named-language counts remain exact non-additive strata; hearing/disability proxies and accessibility context measures are never converted to beneficiary denominators.",
+  "outputs": {
+    "structured\\ACCESSIBILITY_EVIDENCE_CONTEXT_v1.csv": {
+      "bytes": 17879,
+      "sha256": "12c34cf10a3e1190c25fa212b831450b39293b3a67fdbaff088096c2677f85a7"
+    },
+    "structured\\ACCESSIBILITY_MODE_COMMISSIONING_v1.csv": {
+      "bytes": 27117,
+      "sha256": "94a78f58044be047fcfef75ff4b8d46f2c9efdd8b5b4a22e2b4f0a22d1bb48f1"
+    },
+    "structured\\NAMED_SIGN_LANGUAGE_EVIDENCE_v1.csv": {
+      "bytes": 20037,
+      "sha256": "b20d1f3be007c056ed97e8dc2250c13c950ebcf3cc741afdab8b309eb33a18bb"
+    },
+    "structured\\STRUCTURAL_ACCESS_COMMISSIONING_REGISTER_v1.csv": {
+      "bytes": 21713,
+      "sha256": "b18f3d60f6ee55d3dab18a88c0759ed6613ec7233ec04c3a5e5cb0731919ddb7"
+    }
+  },
+  "schema": "interlanguage/structural-access-lanes/1.0.0",
+  "script": {
+    "bytes": 22591,
+    "path": "scripts\\build_structural_access_lanes_v1.py",
+    "sha256": "3329379b8661ff4d7ac7c27f7d49eb3daa9fb225241fd37395379fba364c2ddf"
+  },
+  "status": "PASS"
+}

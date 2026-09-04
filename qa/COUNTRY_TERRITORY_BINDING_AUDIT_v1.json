@@ -1,0 +1,56 @@
+{
+    "schema":  "interlanguage/country-territory-binding-audit/1.0.0",
+    "generated_at_utc":  "2026-09-03T22:31:34.2978810Z",
+    "status":  "PASS",
+    "input":  {
+                  "path":  "structured/GLOBAL_TARGET_SCORE_TABLE_v3.csv",
+                  "rows":  1077,
+                  "bytes":  1837435,
+                  "sha256":  "509D9A7806F607510F570D498903969575C52E5FB09993F6FD07D5C2FD6977BE"
+              },
+    "checks":  {
+                   "valid_bcp47_region_rows_checked":  921,
+                   "unresolved_identity_rows_checked":  87,
+                   "known_regression_checks":  [
+                                                   {
+                                                       "edition_target_id":  "edition-target:lang:unresolved-tag:amazonian-kichwa-in-peru:peru-amazonian-kichwa-in-peru-educat",
+                                                       "expected_country_iso3":  "",
+                                                       "observed_country_iso3":  "",
+                                                       "target_present":  true,
+                                                       "pass":  true
+                                                   },
+                                                   {
+                                                       "edition_target_id":  "edition-target:lang:ta-Taml-LK:community:malayaga",
+                                                       "expected_country_iso3":  "LKA",
+                                                       "observed_country_iso3":  "LKA",
+                                                       "target_present":  true,
+                                                       "pass":  true
+                                                   },
+                                                   {
+                                                       "edition_target_id":  "edition-target:regional:ru-Cyrl-EE",
+                                                       "expected_country_iso3":  "EST",
+                                                       "observed_country_iso3":  "EST",
+                                                       "target_present":  true,
+                                                       "pass":  true
+                                                   },
+                                                   {
+                                                       "edition_target_id":  "edition-target:lang:unresolved-tag:chilean-quechua-exact-local-variety-required:chile-chilean-quechua-exact-local-va",
+                                                       "expected_country_iso3":  "",
+                                                       "observed_country_iso3":  "",
+                                                       "target_present":  true,
+                                                       "pass":  true
+                                                   }
+                                               ],
+                   "mismatch_count":  0
+               },
+    "mismatch_output":  {
+                            "path":  "qa/COUNTRY_TERRITORY_BINDING_MISMATCHES_v1.csv",
+                            "bytes":  172,
+                            "sha256":  "956B3BFEC0E8CB3E7102720A02CFC65E6CC768B948B45B284BE91CCD3E419F89"
+                        },
+    "interpretation":  [
+                           "A valid BCP-47 region subtag must agree with the country context used by the scoring model.",
+                           "Unresolved descriptive identities receive no country-conditioned factor.",
+                           "This audit does not infer a country from ethnicity or language adjectives in prose."
+                       ]
+}

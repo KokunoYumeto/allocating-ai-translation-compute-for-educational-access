@@ -1,0 +1,23 @@
+{
+  "schema": "interlanguage/portfolio-overlap-audit/1.0.0",
+  "status": "AUDIT_COMPLETE",
+  "scope": "TOP100_NEEDS_ONLY_v3 exact current file; warning-level signature audit only",
+  "inputs": {
+    "top100_path": "structured\\TOP100_NEEDS_ONLY_v3.csv",
+    "top100_sha256": "b97ef9cd8322226c20f5bede8bcd8e7e19bd7995c2d2db7169d5bbd40e38d183",
+    "authorization_path": "structured\\EVIDENCE_AUTHORIZATION_v1.csv",
+    "authorization_sha256": "24f231a83bd4581bc97b28726bd7380ed7ba5aa86f196568b3e2b11742574552",
+    "top100_rows": 100
+  },
+  "probable_shared_population_groups": 1,
+  "probable_shared_population_rows": 3,
+  "potentially_repeated_base_persons_upper_warning": 19922171.0,
+  "register_path": "structured\\PORTFOLIO_OVERLAP_REGISTER_v1.csv",
+  "register_rows": 3,
+  "interpretation": [
+    "A matching signature is not proof that every person is identical; it is a conservative non-additivity warning.",
+    "Standalone intervention ranks are unchanged.",
+    "Portfolio aggregation must use explicit union/intersection bounds or a disjoint crosswalk.",
+    "No human review is required to retain this warning or continue deterministic paper work."
+  ]
+}

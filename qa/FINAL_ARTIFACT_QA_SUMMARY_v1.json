@@ -1,0 +1,80 @@
+{
+  "schema": "interlanguage/final-artifact-qa-summary/1.0.0",
+  "generated_utc": "2026-09-03T23:54:02Z",
+  "status": "PASS",
+  "artifacts": {
+    "PAPER.md": {
+      "bytes": 141922,
+      "sha256": "D251FA959A15DF39981A3F28B24F0317F8EC771006401417E9F765B6929BCC61"
+    },
+    "PAPER.docx": {
+      "bytes": 124953,
+      "sha256": "5264D33B4C30EE7F412607A51D11B407A13EC7556D1C2E89453C799A0BB74E92",
+      "pages_rendered": 59,
+      "pages_visually_inspected": 59,
+      "visual_findings": 0,
+      "render_lineage": "The privacy-scrubbed v11 render is pixel-identical to v10 on all 59 pages. The changed v10 cover page was inspected directly; v10 pages 2-59 are pixel-identical to the fully inspected v9 render.",
+      "structural_audit": "qa/PAPER_DOCX_AUDIT_v1.json",
+      "accessibility_audit": {
+        "path": "qa/DOCX_A11Y_AUDIT_FINAL.json",
+        "high": 0,
+        "medium": 0,
+        "low": 61,
+        "low_finding_class": "hyperlink_raw_url",
+        "disposition": "Retained because the APA references and repository locator intentionally expose durable URLs as citation text."
+      }
+    },
+    "PAPER.pdf": {
+      "bytes": 1325688,
+      "sha256": "EAE3A24B11821A6FF148E7C159614FA7D8F779C053B78895492AAE026FBAFCAF",
+      "pages": 59,
+      "pages_visually_inspected": 59,
+      "visual_findings": 0,
+      "structural_audit": "qa/PAPER_PDF_AUDIT_v1.json"
+    },
+    "index.html": {
+      "bytes": 221148,
+      "sha256": "FE78CF9EC09D985526FF82C438CC869C154A44820E30C3EF3A82B37D7F78CCB4",
+      "structural_audit": "qa/HTML_BUILD_REPORT_v1.json",
+      "structural_checks": {
+        "parse_errors": 0,
+        "h1_count": 1,
+        "tables": 21,
+        "tables_without_caption": 0,
+        "tables_without_header": 0,
+        "duplicate_ids": 0,
+        "missing_local_links": 0,
+        "script_tags": 0,
+        "offline_dependency_check": "PASS"
+      },
+      "in_app_browser_qa": {
+        "desktop": {
+          "viewport_css_px": "1280x720",
+          "document_client_width": 1265,
+          "document_scroll_width": 1265,
+          "body_horizontal_overflow": false,
+          "visual_result": "PASS"
+        },
+        "phone": {
+          "viewport_css_px": "390x844",
+          "document_client_width": 375,
+          "document_scroll_width": 375,
+          "body_horizontal_overflow": false,
+          "table_overflow_mode": "contained horizontal scrolling",
+          "visual_result": "PASS"
+        }
+      }
+    }
+  },
+  "content_audits": {
+    "citation": "qa/PAPER_CITATION_AUDIT_v1.json",
+    "paper_data_binding": "qa/PUBLICATION_PAPER_DATA_BINDING_AUDIT_v2.json",
+    "top100_source_trace": "qa/TOP100_SOURCE_TRACE_AUDIT_v2.json",
+    "global_inclusion": "qa/GLOBAL_INCLUSION_DISPOSITION_QA_v1.json",
+    "funding_portfolio": "qa/GLOBAL_FUNDING_PORTFOLIO_QA_v1.json",
+    "rank_sensitivity": "qa/RANK_SENSITIVITY_SUMMARY_QA_v1.json",
+    "structural_lanes": "qa/STRUCTURAL_ACCESS_LANES_V1_QA.json",
+    "country_territory_binding": "qa/COUNTRY_TERRITORY_BINDING_AUDIT_v1.json"
+  },
+  "scope_note": "This receipt records checks actually completed for the frozen local artifacts. Public-byte identity is recorded separately after publication."
+}

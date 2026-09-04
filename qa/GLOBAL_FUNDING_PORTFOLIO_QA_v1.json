@@ -1,0 +1,97 @@
+{
+  "schema": "interlanguage/global-funding-portfolio/1.0.0",
+  "generated_at_utc": "2026-09-03T22:39:49.174652Z",
+  "status": "PASS",
+  "purpose": "Expose coequal allocation lanes without converting incompatible denominators into one global score.",
+  "inputs": [
+    {
+      "path": "structured/TOP100_NEEDS_ONLY_v3.csv",
+      "bytes": 136341,
+      "sha256": "B97EF9CD8322226C20F5BEDE8BCD8E7E19BD7995C2D2DB7169D5BBD40E38D183"
+    },
+    {
+      "path": "structured/ORDER_STAGE_OPPORTUNITY_v3.csv",
+      "bytes": 3192,
+      "sha256": "85D65A9447523C872BF69168F7EBE930C142A3E2BC5BFD71EDF2825E4F753C25"
+    },
+    {
+      "path": "structured/LARGE_POPULATION_OMISSION_SUPPLEMENT_v1.csv",
+      "bytes": 17953,
+      "sha256": "ABF8F6F9E37C533124806FAF3796C8574C2CD9DEF93041BB7B32EB828517723E"
+    },
+    {
+      "path": "structured/STRUCTURAL_ACCESS_COMMISSIONING_REGISTER_v1.csv",
+      "bytes": 21713,
+      "sha256": "B18F3D60F6EE55D3DAB18A88C0759ED6613EC7233EC04C3A5E5CB0731919DDB7"
+    },
+    {
+      "path": "structured/DISPLACEMENT_EDUCATION_PORTFOLIO_v1.csv",
+      "bytes": 10798,
+      "sha256": "6C2CF3EC24539007D4D50C213FBE1609086FB68C1A7452A0D51788CD34988782"
+    },
+    {
+      "path": "agent_reports/INTERLANGUAGE_STRUCTURED_EVIDENCE_MATRIX.csv",
+      "bytes": 42308,
+      "sha256": "BD5D2128A69A042069D74AD27906FA9A08A27A2E8A9F8EC93845BA8827E118CF"
+    },
+    {
+      "path": "structured/GLOBAL_INCLUSION_SENTINEL_STATUS_v1.csv",
+      "bytes": 64152,
+      "sha256": "A190ED28B0DE72385EF76A5A24ED4002FDD4FA456FB003E331B233492A8629A6"
+    },
+    {
+      "path": "structured/PORTFOLIO_OVERLAP_REGISTER_v1.csv",
+      "bytes": 1809,
+      "sha256": "F2CE86427D313A45A95FC0E2C6BC0C44D90CCD19316162C2544A8A63CA2128E4"
+    },
+    {
+      "path": "structured/EVIDENCE_AUTHORIZATION_v1.csv",
+      "bytes": 1287715,
+      "sha256": "24F231A83BD4581BC97B28726BD7380ED7BA5AA86F196568B3E2B11742574552"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "structured/GLOBAL_FUNDING_PORTFOLIO_v1.csv",
+      "bytes": 202634,
+      "sha256": "126114DE07AE1A86471E448AB76C9D6AE409656C89930414CDFA87E4A91CEDB3"
+    },
+    {
+      "path": "structured/GLOBAL_DECISION_LANES_v1.csv",
+      "bytes": 1419,
+      "sha256": "80155BDB1719A1C09D459034FA0D7FF93E7FADB0390F5CB126F9FDDA05E1CF87"
+    }
+  ],
+  "row_count": 186,
+  "lane_counts": {
+    "DIRECT_PERSON_COMPARABLE": 100,
+    "STAGE_OPPORTUNITY": 2,
+    "MANDATORY_LARGE_CONTEXT_AND_VOI": 10,
+    "MANDATORY_SENTINEL_GAP_AND_VOI": 9,
+    "STRUCTURAL_SIGNED_AND_ACCESSIBILITY": 35,
+    "DISPLACEMENT_HOST_SPECIFIC": 10,
+    "BRIDGE_AND_INTERLANGUAGE_EXPERIMENT": 20
+  },
+  "checks": {
+    "portfolio_ids_unique": true,
+    "row_hashes_valid": true,
+    "direct_top100_count": true,
+    "direct_ranks_exact_1_to_100": true,
+    "all_direct_rows_exclude_local_work": true,
+    "stage_rows_present": true,
+    "large_context_rows_present": true,
+    "sentinel_gap_rows_present": true,
+    "structural_rows_complete": true,
+    "displacement_rows_complete": true,
+    "bridge_rows_complete": true,
+    "no_nonstage_non_direct_model_score": true,
+    "taiwan_overlap_warning_present": true
+  },
+  "non_direct_synthetic_score_rows": [],
+  "interpretation": [
+    "Only DIRECT_PERSON_COMPARABLE has a cross-language rank.",
+    "Lane ranks outside the direct-person and stage-opportunity lanes are deterministic display orders, not comparable benefit scores.",
+    "Prior or local production is excluded from every need, benefit, cost, rank, and recommendation field.",
+    "Missing population evidence is represented by an empty field, never zero or a world-population prior."
+  ]
+}

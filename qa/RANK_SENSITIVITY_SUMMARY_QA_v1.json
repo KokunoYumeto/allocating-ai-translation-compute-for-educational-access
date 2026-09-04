@@ -1,0 +1,229 @@
+{
+  "schema": "interlanguage/rank-sensitivity-summary/1.0.0",
+  "generated_at_utc": "2026-09-03T22:36:01.093092Z",
+  "status": "PASS",
+  "inputs": [
+    {
+      "path": "structured/GLOBAL_TARGET_SCORE_TABLE_v3.csv",
+      "bytes": 1837435,
+      "sha256": "509D9A7806F607510F570D498903969575C52E5FB09993F6FD07D5C2FD6977BE"
+    },
+    {
+      "path": "structured/ORDER_L_SENSITIVITY_v3.csv",
+      "bytes": 65957,
+      "sha256": "D581F9771CC27F3373591F7396447FE76EEAFC1AF7C5E2571FF6D8891A2BFCF9"
+    },
+    {
+      "path": "structured/ORDER_L_FACTOR_REMOVAL_SENSITIVITY_v3.csv",
+      "bytes": 98187,
+      "sha256": "53D47420E97B3D09EFB0C88E192BA5EFC3AAC1416FE1C72C8B6AAD42FEFCF9DD"
+    }
+  ],
+  "output": {
+    "path": "structured/RANK_SENSITIVITY_SUMMARY_v1.csv",
+    "bytes": 40519,
+    "sha256": "2EB2DCDD66AC0055CFABEA900A4DA76F47F765B4415A4688B79257BF4280CE3D"
+  },
+  "checks": {
+    "reference_target_count": true,
+    "every_prior_scenario_has_reference_set": true,
+    "every_factor_removal_has_reference_set": true,
+    "summary_rows_match_reference": true,
+    "row_hashes_valid": true,
+    "ranks_are_permutations": true
+  },
+  "reference_person_targets": 204,
+  "prior_families": [
+    "diffuse_common",
+    "optimistic_access_common",
+    "pessimistic_access_common",
+    "reference_common"
+  ],
+  "factor_removal_scenarios": [
+    "academic_lingua_franca_nonoverlap",
+    "accessibility_gap",
+    "delivery_gap",
+    "learning_completion_gap",
+    "none",
+    "open_resource_scarcity",
+    "schooling_language_gap"
+  ],
+  "population_rank_spearman": 0.9989133580628925,
+  "scenario_rank_spearman": {
+    "prior:diffuse_common": 0.9998049345894792,
+    "prior:optimistic_access_common": 0.9998939861899343,
+    "prior:pessimistic_access_common": 0.9996946802270109,
+    "prior:reference_common": 0.9998049345894792,
+    "remove:academic_lingua_franca_nonoverlap": 0.9997568749955827,
+    "remove:accessibility_gap": 0.9998699563929861,
+    "remove:delivery_gap": 0.9996522747029847,
+    "remove:learning_completion_gap": 0.9997766642401283,
+    "remove:none": 0.9999363917139606,
+    "remove:open_resource_scarcity": 0.9996678233951276,
+    "remove:schooling_language_gap": 0.9996437935981793
+  },
+  "robust_top10_all_prior_and_factor_removal_scenarios": [
+    "edition-target:lang:hi-Deva-IN",
+    "edition-target:lang:id-Latn-ID",
+    "edition-target:lang:ru-Cyrl-RU",
+    "edition-target:lang:pnb-Arab-PK",
+    "edition-target:lang:bn-Beng-IN",
+    "edition-target:lang:mr-Deva-IN",
+    "edition-target:lang:te-Telu-IN",
+    "edition-target:lang:ta-Taml-IN",
+    "edition-target:lang:jv-Latn-ID"
+  ],
+  "union_top10_across_prior_and_factor_removal_scenarios": [
+    "edition-target:lang:hi-Deva-IN",
+    "edition-target:lang:id-Latn-ID",
+    "edition-target:lang:ru-Cyrl-RU",
+    "edition-target:lang:pnb-Arab-PK",
+    "edition-target:lang:bn-Beng-IN",
+    "edition-target:lang:mr-Deva-IN",
+    "edition-target:lang:te-Telu-IN",
+    "edition-target:lang:ta-Taml-IN",
+    "edition-target:lang:jv-Latn-ID",
+    "edition-target:lang:th-Thai-TH",
+    "edition-target:lang:gu-Gujr-IN",
+    "edition-target:lang:ps-Arab-PK"
+  ],
+  "scenario_top10": {
+    "prior:diffuse_common": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:th-Thai-TH"
+    ],
+    "prior:optimistic_access_common": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:th-Thai-TH"
+    ],
+    "prior:pessimistic_access_common": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:th-Thai-TH"
+    ],
+    "prior:reference_common": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:th-Thai-TH"
+    ],
+    "remove:academic_lingua_franca_nonoverlap": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:gu-Gujr-IN"
+    ],
+    "remove:accessibility_gap": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:th-Thai-TH"
+    ],
+    "remove:delivery_gap": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:th-Thai-TH"
+    ],
+    "remove:learning_completion_gap": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:th-Thai-TH"
+    ],
+    "remove:none": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:th-Thai-TH"
+    ],
+    "remove:open_resource_scarcity": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:ps-Arab-PK"
+    ],
+    "remove:schooling_language_gap": [
+      "edition-target:lang:hi-Deva-IN",
+      "edition-target:lang:id-Latn-ID",
+      "edition-target:lang:pnb-Arab-PK",
+      "edition-target:lang:ru-Cyrl-RU",
+      "edition-target:lang:bn-Beng-IN",
+      "edition-target:lang:mr-Deva-IN",
+      "edition-target:lang:te-Telu-IN",
+      "edition-target:lang:ta-Taml-IN",
+      "edition-target:lang:jv-Latn-ID",
+      "edition-target:lang:ps-Arab-PK"
+    ]
+  },
+  "interpretation": [
+    "High correlation with population rank means the present common-prior order is population-dominant, not a measured language-specific scarcity order.",
+    "Prior-family and factor-removal scenarios test model sensitivity; they do not resolve missing target-specific evidence.",
+    "A stable rank under common priors is conditional on the source-authorized candidate subset and must not be read as global completeness."
+  ]
+}

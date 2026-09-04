@@ -1,0 +1,153 @@
+{
+  "schema_version": "interlanguage/complete-roster-compute-model-registry/1.0.0",
+  "model_version": "complete-roster-model-conditional-compute/1.0.0",
+  "snapshot_utc": "2026-09-01T00:00:00Z",
+  "authoritative_inputs": {
+    "structured/SUCCESSOR_TARGET_ROSTER_v2.json": {
+      "bytes": 1527873,
+      "sha256": "983a40756107072ca779c1f3a37684c8e5865fbedd9fc42768e9d1cab754656f"
+    },
+    "qa/SUCCESSOR_TARGET_ROSTER_RECEIPT_20260901_v2.json": {
+      "bytes": 1898,
+      "sha256": "2fc00c134b25a682dbe1c2be161b9ba29c717eb04714f3e3b7306dbc2f156328"
+    },
+    "structured/complete_roster_compute_target_profile_bindings.csv": {
+      "bytes": 1069864,
+      "sha256": "1da868498594428595109335e95064a1e98ccf86f90d5432f48ab2143ccdf97b"
+    },
+    "qa/COMPLETE_ROSTER_PROFILE_BINDING_RECEIPT.json": {
+      "bytes": 957,
+      "sha256": "7f3907b9a4751ba2c07ef29b89e02bf7a7b0929daf9fc79c2d988b8d02e034a3"
+    },
+    "structured/standardized_compute_tokenization_flores200.csv": {
+      "bytes": 47875,
+      "sha256": "6ae11eae5bfb61e237feeb8b8664277b7462e5ba08b34e6e35df1c072b22c2ae"
+    },
+    "structured/standardized_compute_measurement_profiles.csv": {
+      "bytes": 72082,
+      "sha256": "a86e880433c3a00055d39702f117dc85bae2b8b59ecaaf906469154b230467c2"
+    },
+    "structured/standardized_compute_factor_registry.csv": {
+      "bytes": 19624,
+      "sha256": "b0d23b05278e3713a6fc1a6492855ffa76035621bc36b581e357d470a78e62e1"
+    },
+    "structured/standardized_compute_canonical_derivations.csv": {
+      "bytes": 3123937,
+      "sha256": "4b186f36c8aa19fd29c8e2c3989eb8fc144e78089fcd20fcc8dbce4a6520c2d0"
+    },
+    "structured/standardized_compute_model.json": {
+      "bytes": 9398,
+      "sha256": "260d4738b3c143f6c470d6a12c552abffc9237c3df59bc8acf3291ad8f254bc3"
+    }
+  },
+  "input_paths": {
+    "successor_universe": "structured/SUCCESSOR_TARGET_ROSTER_v2.json",
+    "target_profile_bindings": "structured/complete_roster_compute_target_profile_bindings.csv",
+    "flores_tokenization": "structured/standardized_compute_tokenization_flores200.csv",
+    "canonical_derivations": "structured/standardized_compute_canonical_derivations.csv",
+    "standard_compute_model": "structured/standardized_compute_model.json"
+  },
+  "predictor_policy": {
+    "response": "natural_log_of_combined_target_working_tokens_per_source_reference_token_R",
+    "target_predictors": [
+      "written_representation_script_code"
+    ],
+    "unresolved_script_policy": "GLOBAL_PRIOR_PREDICTIVE_MODEL_CONDITIONAL_NOT_ZERO",
+    "estimator": "script_conditioned_normal_inverse_gamma_posterior_predictive",
+    "empirical_bayes_scope": "global_log_R_center_and_variance_from_all_203_FLORES_non_English_profiles",
+    "direct_profile_use": "CALIBRATION_AND_TRAINING_ONLY_NOT_TARGET_RELABELING",
+    "forbidden_predictors": [
+      "population",
+      "educational_need",
+      "region_or_territory",
+      "income",
+      "prestige",
+      "institutional_or_political_status",
+      "evidence_tier_or_count",
+      "resource_stock",
+      "user_or_local_or_project_status",
+      "completion_or_readiness",
+      "reuse_or_cache_or_prior_compute",
+      "score_or_rank"
+    ],
+    "uncertainty_penalty": "FORBIDDEN",
+    "target_order_effect": "FORBIDDEN"
+  },
+  "language_alias_policy": {
+    "role": "representation_identity_and_draw_seed_only_not_a_predictor_or_direct_binding",
+    "id": "ind",
+    "ind": "ind",
+    "ja": "jpn",
+    "jpn": "jpn",
+    "zh": "zho",
+    "zho": "zho",
+    "cmn_to_zho": "only for written or written_or_multimodal Hans/Hant Standard Written Chinese representation; otherwise cmn remains cmn",
+    "direct_profile_effect": "NONE_WITHOUT_AN_INDEPENDENT_EXACT_STANDARD_BINDING"
+  },
+  "applicability_policy": {
+    "source_selector": "every frozen successor roster row receives a status",
+    "numerical_grid_selector": "effective production-applicable exact target with a written representation route",
+    "signed_mode": "NOT_APPLICABLE_UNLESS_A_SEPARATE_LAWFUL_VISUAL_MANUAL_MODEL_IS_DEFINED",
+    "oral_only_mode": "NOT_APPLICABLE_UNLESS_A_SEPARATE_LAWFUL_AUDIO_OR_TRANSCRIPT_MODEL_IS_DEFINED",
+    "unresolved_written_script": "MODEL_CONDITIONAL_GLOBAL_PRIOR_PREDICTIVE",
+    "non_effective_or_unresolved_identity": "NOT_APPLICABLE",
+    "direct_profile_missingness": "MODEL_CONDITIONAL_DRAW_NEVER_ZERO_ENVELOPE_OR_DIRECT_LABEL"
+  },
+  "prior_specifications": {
+    "PRIMARY_SCRIPT_SHRINKAGE": {
+      "kappa0": 4.0,
+      "alpha0": 3.0,
+      "variance_multiplier": 1.0,
+      "role": "PRIMARY"
+    },
+    "DIFFUSE_WEAK_SHRINKAGE": {
+      "kappa0": 1.0,
+      "alpha0": 2.5,
+      "variance_multiplier": 2.0,
+      "role": "SENSITIVITY"
+    },
+    "STRONG_SCRIPT_SHRINKAGE": {
+      "kappa0": 12.0,
+      "alpha0": 4.0,
+      "variance_multiplier": 0.75,
+      "role": "SENSITIVITY"
+    }
+  },
+  "primary_prior_id": "PRIMARY_SCRIPT_SHRINKAGE",
+  "draw_protocol": {
+    "generator": "numpy.random.Generator(PCG64)",
+    "seed_namespace": "complete-roster-model-conditional-compute/1.0.0",
+    "seed_derivation": "first_64_bits_sha256(seed_namespace|purpose|canonical_language_alias|script|mode)",
+    "primary_draws_per_target": 128,
+    "calibration_draws_per_profile": 4096,
+    "sensitivity_draws_per_target_prior": 1024,
+    "draw_order": "target_id_then_draw_id_then_canon_id_then_package_id",
+    "interval_semantics": "PREDICTIVE_NOT_BOUND"
+  },
+  "cost_projection": {
+    "source_scenario": "FROZEN_STANDARD_COMPUTE_BASE_SCENARIO",
+    "formula": "standard_compute_fecu = intercept(canon,package) + slope(canon,package) * predicted_R",
+    "coefficient_derivation": "ordinary_least_squares_over_all_203_direct_profile_base_derivations_with_exact_reconstruction_gate",
+    "maximum_affine_reconstruction_error_fecu": 0.001,
+    "total_cost_evidence_class": "MODEL_CONDITIONAL",
+    "scenario_semantics": "FIXED_DECLARED_BASE_PROCESS_NOT_A_DIRECT_EXECUTION_COST"
+  },
+  "calibration_thresholds": {
+    "minimum_90_interval_coverage": 0.8,
+    "maximum_median_absolute_log_error": 0.5,
+    "maximum_rmse_log_error": 0.6
+  },
+  "output_paths": {
+    "target_status": "structured/complete_roster_compute_target_status.csv",
+    "complete_draw_grid": "structured/complete_roster_compute_draws.csv.gz",
+    "summaries": "structured/complete_roster_compute_summaries.csv",
+    "calibration": "structured/complete_roster_compute_leave_language_out_calibration.csv",
+    "sensitivity": "structured/complete_roster_compute_prior_sensitivity.csv",
+    "cost_coefficients": "structured/complete_roster_compute_cost_coefficients.csv",
+    "model": "structured/complete_roster_compute_model.json",
+    "qa": "qa/COMPLETE_ROSTER_COMPUTE_MODEL_QA.json",
+    "receipt": "qa/COMPLETE_ROSTER_COMPUTE_MODEL_RECEIPT.json",
+    "report": "agent_reports/COMPLETE_ROSTER_COMPUTE_MODEL.md",
+    "hash_manifest": "structured/complete_roster_compute_hashes.sha256"
+  }
+}

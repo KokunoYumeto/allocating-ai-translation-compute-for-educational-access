@@ -1,0 +1,71 @@
+{
+  "checks": {
+    "all_admitted_authorization_joins": true,
+    "all_score_joins": true,
+    "authorization_persisted_hashes": true,
+    "bound_normalization": true,
+    "forbidden_predictor_scan": true,
+    "interval_status_and_tier": true,
+    "ranks_exact_1_to_100": true,
+    "source_evidence_hash_presence": true,
+    "target_authority_hashes": true,
+    "target_ids_unique": true
+  },
+  "counts": {
+    "authorization_rows": 850,
+    "bound_shapes_in_top100": {
+      "INTERVAL": 11,
+      "POINT": 89
+    },
+    "interval_rows_in_top100": 11,
+    "score_rows": 1077,
+    "top100_rows": 100,
+    "top100_unique_targets": 100
+  },
+  "failures": [],
+  "inputs": {
+    "structured/EVIDENCE_AUTHORIZATION_v1.csv": {
+      "bytes": 1287715,
+      "sha256": "24f231a83bd4581bc97b28726bd7380ed7ba5aa86f196568b3e2b11742574552"
+    },
+    "structured/GLOBAL_TARGET_SCORE_TABLE_v3.csv": {
+      "bytes": 1837435,
+      "sha256": "509d9a7806f607510f570d498903969575c52e5fb09993f6fd07d5c2fd6977be"
+    },
+    "structured/SUCCESSOR_EDITION_TARGET_AUTHORITY_v3.csv": {
+      "bytes": 370983,
+      "sha256": "53918f785b33cedc34d1a85c37f37042d322e4731e7fe1e0fdae34918a8b1a7d"
+    },
+    "structured/TOP100_NEEDS_ONLY_v3.csv": {
+      "bytes": 136341,
+      "sha256": "b97ef9cd8322226c20f5bede8bcd8e7e19bd7995c2d2db7169d5bbd40e38d183"
+    },
+    "structured/canonical_universe_successor_v2.json": {
+      "bytes": 20724344,
+      "sha256": "e078f8e72701d87b23a0f4b25184f89293a1e2931776b61f8e77f599d801a97c"
+    }
+  },
+  "interpretation": [
+    "A source POINT may have blank raw low/high; normalized endpoints are explicit scoring adapters and are not source claims.",
+    "A non-degenerate source range is reported as INTERVAL_ONLY/B interval tier; it is not silently collapsed to a point.",
+    "The audit validates identity and persisted projections, not the truth of the underlying external source claims.",
+    "Standalone ranks remain model-conditional; probable shared populations remain non-additive in portfolio use."
+  ],
+  "interval_target_ids": [
+    "edition-target:lang:my-Mymr-MM",
+    "edition-target:lang:ary-Arab-MA",
+    "edition-target:lang:yo-Latn-NG",
+    "edition-target:lang:mg-Latn-MG",
+    "edition-target:lang:ig-Latn-NG",
+    "edition-target:lang:kmr-Latn-001",
+    "edition-target:lang:ca-Latn-ES",
+    "edition-target:lang:rw-Latn-RW",
+    "edition-target:lang:ckb-Arab-001",
+    "edition-target:lang:swh-Latn-RW",
+    "edition-target:lang:pap-CW"
+  ],
+  "schema": "interlanguage/top100-source-trace-audit/2.0.0",
+  "scope": "current persisted needs-only Top100 after authorization bound/OER repairs; independent read-only join and semantic audit",
+  "status": "PASS",
+  "warnings": []
+}

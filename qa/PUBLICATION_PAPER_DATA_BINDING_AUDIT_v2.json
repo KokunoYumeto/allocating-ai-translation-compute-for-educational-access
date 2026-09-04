@@ -1,0 +1,71 @@
+{
+  "schema": "interlanguage/publication-paper-data-binding-audit/2.0.0",
+  "status": "PASS",
+  "paper": {
+    "path": "PAPER.md",
+    "bytes": 141922,
+    "sha256": "D251FA959A15DF39981A3F28B24F0317F8EC771006401417E9F765B6929BCC61"
+  },
+  "counts": {
+    "direct_top100_rows": 100,
+    "efficiency_top100_rows": 100,
+    "stage_rows": 2,
+    "context_and_gap_rows": 19,
+    "structural_rows": 35,
+    "displacement_rows": 10,
+    "bridge_rows": 20,
+    "stage_subject_rows": 63,
+    "registered_citations_in_paper": 22
+  },
+  "checks": {
+    "rank_qa_pass": true,
+    "portfolio_qa_pass": true,
+    "trace_qa_pass": true,
+    "paper_provenance_exact": true,
+    "citation_audit_binds_current_paper": true,
+    "citation_audit_has_zero_missing": true,
+    "direct_top100_row_count": true,
+    "direct_top100_rank_sequence": true,
+    "direct_top100_rows_exactly_present": true,
+    "efficiency_top100_row_count": true,
+    "efficiency_top100_rank_sequence": true,
+    "efficiency_top100_rows_exactly_present": true,
+    "stage_rows_exactly_present": true,
+    "context_rows_exactly_present": true,
+    "structural_rows_exactly_present": true,
+    "displacement_rows_exactly_present": true,
+    "bridge_rows_exactly_present": true,
+    "stage_subject_rows_exactly_present": true,
+    "all_key_artifact_hashes_present": true,
+    "all_key_quantitative_claims_present": true,
+    "legacy_efficiency_field_explained": true,
+    "four_decision_lanes_explicit": true,
+    "public_safe_unranked_fields_suppressed": true,
+    "no_prohibited_patterns": true
+  },
+  "missing_or_forbidden_details": {
+    "direct_top100": [],
+    "efficiency_top100": [],
+    "stage": [],
+    "context": [],
+    "structural": [],
+    "displacement": [],
+    "bridge": [],
+    "stage_subject": [],
+    "quantitative_claim_fragments": [],
+    "artifact_hashes": {},
+    "prohibited_matches": {}
+  },
+  "artifact_hashes_reproduced": {
+    "structured/GLOBAL_TARGET_SCORE_TABLE_PUBLIC_v3.csv": "08845507E3EB0B1963249B5227A657913503093BA00B823F2D383FA19ECE0313",
+    "structured/TOP100_NEEDS_ONLY_v3.csv": "B97EF9CD8322226C20F5BEDE8BCD8E7E19BD7995C2D2DB7169D5BBD40E38D183",
+    "structured/GLOBAL_FUNDING_PORTFOLIO_v1.csv": "126114DE07AE1A86471E448AB76C9D6AE409656C89930414CDFA87E4A91CEDB3",
+    "structured/GLOBAL_INCLUSION_DISPOSITION_REGISTER_v1.csv": "96EBED123BC08AEC801FAC87508506D04A3D96A820B1FE1026F28FAB88DFDB67",
+    "structured/SOURCE_TO_SCORE_CROSSWALK_v1.csv": "9ED049D05D47A0DED2842E9A74966A939FEDB2F7DA7A60D3AA9D27611AAB719A",
+    "structured/RANK_SENSITIVITY_SUMMARY_v1.csv": "2EB2DCDD66AC0055CFABEA900A4DA76F47F765B4415A4688B79257BF4280CE3D",
+    "structured/TOP100_COMPUTE_EFFICIENCY_v3.csv": "C98A2C2CAF1ABF972EB277CE8656C2C5E5CCDB698AABE4039D918F1595B41E11",
+    "agent_reports/STAGE_SUBJECT_NEEDS_MAPPING.csv": "EC5E15932D9EE33CC4ACCD25F6B85C81D992660195C7FB753849437964C98132",
+    "agent_reports/INTERLANGUAGE_STRUCTURED_EVIDENCE_MATRIX.csv": "BD5D2128A69A042069D74AD27906FA9A08A27A2E8A9F8EC93845BA8827E118CF"
+  },
+  "interpretation": "PASS proves that the manuscript's generated orders, portfolios, recommendation register, key counts, and displayed hashes reproduce the frozen local artifacts. It does not turn model-conditional values into observed causal effects or prove that the language census is exhaustive."
+}

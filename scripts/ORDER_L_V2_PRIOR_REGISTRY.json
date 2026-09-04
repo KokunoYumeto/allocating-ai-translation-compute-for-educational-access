@@ -1,0 +1,65 @@
+{
+  "schema": "interlanguage/order-l-v2-prior-registry/1.0.0",
+  "model_version": "order-l-hierarchical-functional-need/2.0.0",
+  "draw_algorithm_version": "sha256-box-muller-laplace/1.0.0",
+  "likelihood_family": "binomial-logit-laplace/1.0.0",
+  "measurement_family": "misclassified-binomial-logit/1.0.0",
+  "transport_family": "additive-logit-normal/1.0.0",
+  "target_predictors": [],
+  "common_predictors": [
+    "learner_stage_id",
+    "functional_access_endpoint_id"
+  ],
+  "families": [
+    {
+      "prior_family_id": "reference_common",
+      "unmet_need_prior_mean": "0.35",
+      "stage_endpoint_intercept_sd": "0.35",
+      "cell_logit_sd": "0.80",
+      "assignment_symmetric_concentration": "1.00"
+    },
+    {
+      "prior_family_id": "diffuse_common",
+      "unmet_need_prior_mean": "0.35",
+      "stage_endpoint_intercept_sd": "0.90",
+      "cell_logit_sd": "1.60",
+      "assignment_symmetric_concentration": "1.00"
+    },
+    {
+      "prior_family_id": "optimistic_access_common",
+      "unmet_need_prior_mean": "0.20",
+      "stage_endpoint_intercept_sd": "0.35",
+      "cell_logit_sd": "0.80",
+      "assignment_symmetric_concentration": "1.00"
+    },
+    {
+      "prior_family_id": "pessimistic_access_common",
+      "unmet_need_prior_mean": "0.65",
+      "stage_endpoint_intercept_sd": "0.35",
+      "cell_logit_sd": "0.80",
+      "assignment_symmetric_concentration": "1.00"
+    },
+    {
+      "prior_family_id": "assignment_sparse_common",
+      "unmet_need_prior_mean": "0.35",
+      "stage_endpoint_intercept_sd": "0.35",
+      "cell_logit_sd": "0.80",
+      "assignment_symmetric_concentration": "0.25"
+    },
+    {
+      "prior_family_id": "assignment_concentrated_common",
+      "unmet_need_prior_mean": "0.35",
+      "stage_endpoint_intercept_sd": "0.35",
+      "cell_logit_sd": "0.80",
+      "assignment_symmetric_concentration": "4.00"
+    }
+  ],
+  "invariants": [
+    "Every exact target uses the same prior family within a learner-stage and functional-access endpoint class.",
+    "Exact target identity, territory, region, income, prestige, source count, evidence tier, and local or project state are not predictors.",
+    "Missing endpoint evidence retains the common latent prior distribution and is never assigned zero or 0.5.",
+    "Evidence tier and prior-dominance diagnostics are report-only metadata.",
+    "Latent assignment uses a symmetric prior over stable public capability atoms, never over target labels or target-row count.",
+    "Assignment-sparse and assignment-concentrated sensitivity families vary only the common symmetric assignment concentration."
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "authority_inputs": {
+    "country_context": {
+      "bytes": 77745,
+      "path": "structured/major_country_context.json",
+      "sha256": "b61026a3d4fbba750e167939dba1a524ef3595852453585386bf05f8741bb986"
+    },
+    "edition_registry": {
+      "bytes": 370983,
+      "path": "structured/SUCCESSOR_EDITION_TARGET_AUTHORITY_v3.csv",
+      "sha256": "53918f785b33cedc34d1a85c37f37042d322e4731e7fe1e0fdae34918a8b1a7d"
+    },
+    "evidence_authorization": {
+      "bytes": 1287715,
+      "path": "structured/EVIDENCE_AUTHORIZATION_v1.csv",
+      "role": "active population/evidence admission ledger",
+      "sha256": "24f231a83bd4581bc97b28726bd7380ed7ba5aa86f196568b3e2b11742574552"
+    },
+    "factor_transport_registry": {
+      "bytes": 3054,
+      "path": "structured/FACTOR_TRANSPORT_REGISTRY_v1.json",
+      "sha256": "d251274bdd11d148064be2ca13b1500f5be5c5b51f6c78a0b0eb40c3fde6ef39"
+    },
+    "legacy_evidence_mapping": {
+      "bytes": 892590,
+      "path": "structured/SUCCESSOR_EDITION_EVIDENCE_MAPPING_v3.csv",
+      "rank_eligible_true_rows": 0,
+      "role": "retained for audit; superseded as active admission gate",
+      "sha256": "fc6a5e5d9265d5d9f8e5efebe6a596f6707c5ec811e2c2ab413dd06f396eb04f"
+    },
+    "successor_universe": {
+      "bytes": 20724344,
+      "path": "structured/canonical_universe_successor_v2.json",
+      "sha256": "e078f8e72701d87b23a0f4b25184f89293a1e2931776b61f8e77f599d801a97c"
+    }
+  },
+  "authorization_checks": {
+    "admit_target_coverage": true,
+    "ranked_person_rows_have_matching_admit_receipts": true,
+    "stage_rows_have_matching_stage_receipts": true,
+    "stage_target_coverage": true
+  },
+  "estimands": {
+    "L_ID": "[N_low * theta_low, N_high * theta_high] with explicit partial-identification envelopes; possible rank interval",
+    "L_M": "U_l = N_l * sum_k w_k theta_lk under one common prior and deterministic draws",
+    "efficiency": "median(U_l / standardized_compute_fecu); cost is model-conditional and independent of population/need",
+    "stage_opportunity": "same model envelope applied to exact enrolment/stage cohorts; not a whole-language unmet-need count"
+  },
+  "generated_utc": "2026-09-01",
+  "input_evidence_hashes": {
+    "structured/AFRICA_EMPIRICAL_NEED_INPUTS.csv": {
+      "bytes": 234673,
+      "sha256": "c410a2f2eb01599acf3292123765bae0f737fe91e22c2a16dedc8998a8bafe0b"
+    },
+    "structured/AMERICAS_EUROPE_EMPIRICAL_NEED_INPUTS.csv": {
+      "bytes": 349264,
+      "sha256": "ab5fd3f3235d02cf8d7b58fa28b42c46c55e7ec731fd750efd31cad3f290bc79"
+    },
+    "structured/ASIA_EMPIRICAL_NEED_INPUTS.csv": {
+      "bytes": 118954,
+      "sha256": "ac40b2e2cfc84cfab25a8c6df33d539ed49c2501bd8c3001092b382ba4428686"
+    },
+    "structured/EVIDENCE_AUTHORIZATION_v1.csv": {
+      "bytes": 1287715,
+      "sha256": "24f231a83bd4581bc97b28726bd7380ed7ba5aa86f196568b3e2b11742574552"
+    },
+    "structured/FACTOR_TRANSPORT_REGISTRY_v1.json": {
+      "bytes": 3054,
+      "sha256": "d251274bdd11d148064be2ca13b1500f5be5c5b51f6c78a0b0eb40c3fde6ef39"
+    },
+    "structured/OCEANIA_CENTRAL_ASIA_EMPIRICAL_INPUTS.csv": {
+      "bytes": 246848,
+      "sha256": "6fb03b54a01a62f13265f7f6835925c51a75d8c75acb2ff393a27d75b9b8f4f1"
+    },
+    "structured/academic_language_nonoverlap.json": {
+      "bytes": 158676,
+      "sha256": "ec05c35232283b81cbbedf3b2ac37fba7ef8fd1bdafdd3c0d45ac75ac5ad5506"
+    },
+    "structured/canonical_universe_successor_v2.json": {
+      "bytes": 20724344,
+      "sha256": "e078f8e72701d87b23a0f4b25184f89293a1e2931776b61f8e77f599d801a97c"
+    },
+    "structured/empirical_event_gap_ledger_v2.csv": {
+      "bytes": 1193686,
+      "sha256": "dd90798c81e974ce7059a642443fe1afe584f4f69054a759d06ec9bdec42fd0b"
+    },
+    "structured/large_language_population_strata_proposal.json": {
+      "bytes": 87152,
+      "sha256": "f18854be60843a1e78708065a59ac3985eefb1c78cc6e3e3f8728686896464bd"
+    },
+    "structured/oer_target_canon_evidence_matrix.csv": {
+      "bytes": 6216778,
+      "sha256": "7b1402942f0af690e2eb89ce2bb255fafaed906a4d13fa0cdf83f043c450370a"
+    }
+  },
+  "missingness": "No numeric population/need evidence is converted to zero. Missing target factors use the same common prior and wider uncertainty. Missing target-bound person denominators retain an explicit ceiling witness but are excluded from the needs-only order and marked UNRANKED_NO_SOURCE_BOUND_PERSON_DENOMINATOR. Exact stage/enrolment opportunity cohorts are model-scored in a separate STAGE_OPPORTUNITY order and never mixed into the person-need Top 10/100. Generic any-target/all-language accessibility overlays remain in the census but are marked UNRANKED_PRIMARY_ORDER_GATE and reported separately.",
+  "model": "common-equal-treatment-l-id-l-m/3.0.0",
+  "no_local_or_project_inputs": true,
+  "outputs": {
+    "structured/GLOBAL_TARGET_SCORE_TABLE_v3.csv": {
+      "bytes": 1837435,
+      "sha256": "509d9a7806f607510f570d498903969575c52e5fb09993f6fd07d5c2fd6977be"
+    },
+    "structured/ORDER_L_FACTOR_REMOVAL_SENSITIVITY_v3.csv": {
+      "bytes": 98187,
+      "sha256": "53d47420e97b3d09efb0c88e192ba5efc3aac1416fe1c72c8b6aad42fefcf9dd"
+    },
+    "structured/ORDER_L_ID_v3.csv": {
+      "bytes": 433804,
+      "sha256": "3dfd55dae47609acf45ef4dae0aa2d2bd39a60b87f232372c79872c00e4177b8"
+    },
+    "structured/ORDER_L_JOINT_DRAWS_v3.csv.gz": {
+      "bytes": 1279601,
+      "sha256": "0ca8e6adcdf8af2d4ecb8af34e2e4568623a8620fe66118e7ad9e21dab67236b"
+    },
+    "structured/ORDER_L_M_v3.csv": {
+      "bytes": 726256,
+      "sha256": "a3db70283949fae2d02f9b9371019c1f198096748e6bc4a865764b4964b0a94d"
+    },
+    "structured/ORDER_L_SENSITIVITY_v3.csv": {
+      "bytes": 65957,
+      "sha256": "d581f9771cc27f3373591f7396447fe76eeafc1af7c5e2571ff6d8891a2bfcf9"
+    },
+    "structured/ORDER_STAGE_OPPORTUNITY_EFFICIENCY_v3.csv": {
+      "bytes": 2968,
+      "sha256": "73f8c5b0ce93dc507b33f81d91ea8ca2fe0162663496654a3adc47949d0b0a74"
+    },
+    "structured/ORDER_STAGE_OPPORTUNITY_v3.csv": {
+      "bytes": 3192,
+      "sha256": "85d65a9447523c872bf69168f7ebe930c142a3e2bc5bfd71edf2825e4f753c25"
+    },
+    "structured/TOP100_COMPUTE_EFFICIENCY_v3.csv": {
+      "bytes": 109090,
+      "sha256": "c98a2c2caf1abf972eb277ce8656c2c5e5ccdb698aabe4039d918f1595b41e11"
+    },
+    "structured/TOP100_NEEDS_ONLY_v3.csv": {
+      "bytes": 136341,
+      "sha256": "b97ef9cd8322226c20f5bede8bcd8e7e19bd7995c2d2db7169d5bbd40e38d183"
+    },
+    "structured/TOP100_STAGE_OPPORTUNITY_v3.csv": {
+      "bytes": 3192,
+      "sha256": "85d65a9447523c872bf69168f7ebe930c142a3e2bc5bfd71edf2825e4f753c25"
+    },
+    "structured/TOP10_COMPUTE_EFFICIENCY_v3.csv": {
+      "bytes": 11428,
+      "sha256": "e805134be252aad60d78c95357bb21fccf372be25736dbcce09afab38e2149af"
+    },
+    "structured/TOP10_NEEDS_ONLY_v3.csv": {
+      "bytes": 14596,
+      "sha256": "49accffe92e6690c35c6441a0bdb48525193c959f02c34cc7c6aaf251d884136"
+    },
+    "structured/TOP10_STAGE_OPPORTUNITY_v3.csv": {
+      "bytes": 3192,
+      "sha256": "85d65a9447523c872bf69168f7ebe930c142a3e2bc5bfd71edf2825e4f753c25"
+    }
+  },
+  "person_need_target_count": 204,
+  "qa": "qa/GLOBAL_ACCESS_RANKINGS_V3_QA.json",
+  "schema": "interlanguage/global-access-rankings/3.0.0",
+  "script": {
+    "bytes": 126909,
+    "draws_argument": 256,
+    "path": "scripts/build_global_access_rankings_v3.py",
+    "sha256": "1dbf8654ffcac8e9ac009c7cc27e2558b84bec131aa81ebbce3809a874eff91a"
+  },
+  "stage_opportunity_target_count": 2,
+  "status": "PASS",
+  "target_count": 1077,
+  "target_set_checks": {
+    "eff_top100_exact_prefix": true,
+    "eff_top10_exact_prefix": true,
+    "needs_top100_exact_prefix": true,
+    "needs_top10_exact_prefix": true,
+    "person_plus_unranked_equals_score": true,
+    "score_equals_authority": true,
+    "score_equals_l_id": true,
+    "score_equals_l_m": true,
+    "stage_set_disjoint_from_person": true
+  },
+  "target_set_hashes": {
+    "eff": "06676d21c96c0b2a400ea216db8474bcfc8d32c2727a2b8c2a2f2c42b3aa2fc3",
+    "eff_top10": "f2dcfca55ab59b66a33ad2f929ff0894754a96c80db98fefcd2c2d9557dcdfa9",
+    "eff_top100": "19925b76501adf13ea7fcc74faf9aec43069fc4689f005f791ebf1c36af32e5d",
+    "l_id": "0db45f334819d6ba4ecc6b239b91816744eabb6065b3838a582ec2a330067af0",
+    "l_m": "0db45f334819d6ba4ecc6b239b91816744eabb6065b3838a582ec2a330067af0",
+    "needs_top10": "ac9bfca6d7a1f12052bc37d498a9c781227513f94d617950cdf578e07caecb7c",
+    "needs_top100": "37b0d782a92cda1ed6a028be836ab763134fd903154ab881886c18d598240b42",
+    "score": "0db45f334819d6ba4ecc6b239b91816744eabb6065b3838a582ec2a330067af0",
+    "stage": "6ae4b633597b61d586d78ce9018715061244f6ae15e1802303889b2606cffeee"
+  },
+  "target_set_sha256": "0db45f334819d6ba4ecc6b239b91816744eabb6065b3838a582ec2a330067af0"
+}
