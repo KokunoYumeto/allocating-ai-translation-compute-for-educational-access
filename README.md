@@ -2,7 +2,7 @@
 
 **WORK IN PROGRESS - NON-EXHAUSTIVE - NOT THE FINAL PRODUCT**
 
-Living notebook updated: 2026-09-04. Current readable PDF/Zenodo snapshot: version 0.2.0.
+Living notebook updated: 2026-09-06. Current readable PDF/Zenodo snapshot: version 0.3.0.
 
 This is an ongoing research notebook about where AI-assisted educational translation and adaptation could create useful access. It is not the final study, an exhaustive list of needs, or a completed funding-priority ranking.
 
@@ -14,28 +14,30 @@ The study concerns worldwide educational needs. Files, translations or previous 
 
 GitHub is the continually evolving version. This dated Zenodo snapshot preserves the hypotheses and research-coverage checkpoint available on 4 September 2026. Later evidence may change findings and recommendations; the original forecast is retained so changes are visible.
 
-Current Zenodo working paper: [10.5281/zenodo.22308398](https://doi.org/10.5281/zenodo.22308398). It is ongoing, non-exhaustive research, not the final product.
+Current Zenodo working paper: [10.5281/zenodo.22416015](https://doi.org/10.5281/zenodo.22416015). It is ongoing, non-exhaustive research, not the final product.
 
-<!-- current-readable-paper-v0.2 -->
+<!-- current-readable-paper-v0.3 -->
 ## Current readable working paper
 
-- [Open the 18-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.2.pdf)
-- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.2.json)
-- [Evidence and editable-source archive](research/working-paper/02_Working_Paper_Sources_v0.2.zip)
+- [Open the 87-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.3.pdf)
+- [Open the compact HTML reader](research/working-paper/03_READABLE_WORKING_PAPER_v0.3.html)
+- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.3.json)
+- [Evidence and editable-source archive](research/working-paper/02_Working_Paper_Sources_v0.3.zip)
 
-This v0.2 PDF incorporates the current regional findings and complete-course versus smaller-package comparison. Missing profiles remain unfinished research, not lower priorities.
+The v0.3 checkpoint compares **population plausibly helped**, not moral worth or entitlement to funding. Under one disclosed common missing-data assumption, the non-English display begins with Mandarin Chinese using a Simplified Standard Written Chinese first profile; Indonesian is eighth and Ukrainian remains explicit. Source-matched research is retained wherever it is comparable. Where it is missing, a disclosed baseline remains visible instead of deleting the language.
 
+The paper also defines full-content translation from academic into audience-specific adult English registers without abridgment or intellectual reduction. There is no single universal Plain English. The worldwide study remains unfinished and non-exhaustive.
 
 
 ## Research update: nineteen further profiles
 
 <!-- regional-research-update-20260904 -->
-[Read the new African, Arabic/Iranic and signed-language comparisons](research/updates/2026-09-04-regional/README.md). The current bounded calculation has designs for 44 forecast profiles and 112 of 600 stage cells, with preschool now explicit. These are investigation counts, not ranks or educational coverage. The v0.2 PDF and Zenodo version incorporate this checkpoint; the worldwide study remains unfinished.
+[Read the new African, Arabic/Iranic and signed-language comparisons](research/updates/2026-09-04-regional/README.md). The current bounded calculation has designs for 44 forecast profiles and 112 of 600 stage cells, with preschool now explicit. These are investigation counts, not ranks or educational coverage. The v0.3 PDF and Zenodo version incorporate the current checkpoint; the worldwide study remains unfinished.
 
 ## Read the current notebook
 
 - [Readable HTML](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/)
-- [Current 18-page working paper](research/working-paper/00_START_HERE__Current_Working_Paper_v0.2.pdf)
+- [Current 87-page working paper](research/working-paper/00_START_HERE__Current_Working_Paper_v0.3.pdf)
 - [Frozen hypotheses and 100-candidate forecast](research/working-notebook/sources/HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md)
 - [How hypotheses are tested](research/working-notebook/sources/HYPOTHESIS_TEST_PLAN_v1.md)
 - [Current research coverage](research/updates/2026-09-04-regional/EXPECTED_CANDIDATE_COVERAGE_v1.md)
