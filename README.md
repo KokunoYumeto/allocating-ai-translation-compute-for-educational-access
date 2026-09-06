@@ -41,7 +41,7 @@ The ten-program tranche is one replaceable measurement and production hedge, not
 ## Read the current notebook
 
 - [Readable HTML](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/)
-- [Current 87-page working paper](research/working-paper/00_START_HERE__Current_Working_Paper_v0.3.pdf)
+- [Current 109-page working paper](research/working-paper/00_START_HERE__Current_Working_Paper_v0.4.pdf)
 - [Frozen hypotheses and 100-candidate forecast](research/working-notebook/sources/HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md)
 - [How hypotheses are tested](research/working-notebook/sources/HYPOTHESIS_TEST_PLAN_v1.md)
 - [Current research coverage](research/updates/2026-09-04-regional/EXPECTED_CANDIDATE_COVERAGE_v1.md)
