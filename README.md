@@ -2,7 +2,7 @@
 
 **WORK IN PROGRESS - NON-EXHAUSTIVE - NOT THE FINAL PRODUCT**
 
-Living notebook updated: 2026-09-07. Current readable PDF/Zenodo snapshot: version 0.6.0.
+Living notebook updated: 2026-09-07. Current readable PDF/Zenodo snapshot: version 0.7.0.
 
 This is an ongoing research notebook about where AI-assisted educational translation and adaptation could create useful access. It is not the final study, an exhaustive list of needs, or a completed funding-priority ranking.
 
@@ -14,22 +14,22 @@ The study concerns worldwide educational needs. Files, translations or previous 
 
 GitHub is the continually evolving version. This dated Zenodo snapshot preserves the hypotheses and research-coverage checkpoint available on 4 September 2026. Later evidence may change findings and recommendations; the original forecast is retained so changes are visible.
 
-Current Zenodo working paper: [10.5281/zenodo.22557405](https://doi.org/10.5281/zenodo.22557405). It is ongoing, non-exhaustive research, not the final product.
+Current Zenodo working paper: [10.5281/zenodo.22558538](https://doi.org/10.5281/zenodo.22558538). It is ongoing, non-exhaustive research, not the final product.
 
-<!-- current-readable-paper-v0.6 -->
+<!-- current-readable-paper-v0.7 -->
 ## Current readable working paper
 
-- [Open the 120-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.6.pdf)
-- [Read the complete offline HTML edition](research/working-paper/03_READABLE_WORKING_PAPER_v0.6.html)
-- [Download the editable DOCX](research/working-paper/04_EDITABLE_WORKING_PAPER_v0.6.docx)
-- [Read the Markdown source](research/working-paper/05_CURRENT_WORKING_PAPER_v0.6.md)
-- [Review the worldwide potential-reach Top 100](research/working-paper/06_WORLDWIDE_REACH_TOP100_v0.6.csv)
-- [Review the same-package compute-workload proxy Top 100](research/working-paper/07_COMMON_PACKAGE_COMPUTE_PROXY_TOP100_v0.6.csv)
-- [Review the nonordinal 100-profile research inventory](research/working-paper/08_NONORDINAL_PROFILE_INVENTORY_v0.6.csv)
-- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.6.json)
-- [Evidence and source archive](research/working-paper/02_Working_Paper_Sources_v0.6.zip)
+- [Open the 121-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.7.pdf)
+- [Read the complete offline HTML edition](research/working-paper/03_READABLE_WORKING_PAPER_v0.7.html)
+- [Download the editable DOCX](research/working-paper/04_EDITABLE_WORKING_PAPER_v0.7.docx)
+- [Read the Markdown source](research/working-paper/05_CURRENT_WORKING_PAPER_v0.7.md)
+- [Review the worldwide potential-reach Top 100](research/working-paper/06_WORLDWIDE_REACH_TOP100_v0.7.csv)
+- [Review the same-package compute-workload proxy Top 100](research/working-paper/07_COMMON_PACKAGE_COMPUTE_PROXY_TOP100_v0.7.csv)
+- [Review the nonordinal 100-profile research inventory](research/working-paper/08_NONORDINAL_PROFILE_INVENTORY_v0.7.csv)
+- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.7.json)
+- [Evidence and source archive](research/working-paper/02_Working_Paper_Sources_v0.7.zip)
 
-The v0.6 checkpoint publishes two real but conditional ordinal comparisons. The worldwide-reach table estimates how many people each language-and-script edition could plausibly help. The same-package proxy divides that reach by a standardized token-event workload for one fixed educational package. Missing comparable evidence receives the disclosed baseline rather than causing deletion or a lower position.
+The v0.7 checkpoint publishes two real but conditional ordinal comparisons. The worldwide-reach table estimates how many people each language-and-script edition could plausibly help. The same-package proxy divides that reach by a standardized token-event workload for one fixed educational package. Missing comparable evidence receives the disclosed baseline rather than causing deletion or a lower position.
 
 Neither table is the final target-specific allocation result. Token events are not physical compute, and stage, subject, current usable supply, incremental educational effect, delivery, accessibility, overlap and reusable work remain part of the active research. The separate 100-profile inventory is nonordinal; its member numbers are stable identifiers, not ranks.
 
