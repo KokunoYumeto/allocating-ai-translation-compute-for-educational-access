@@ -2,7 +2,7 @@
 
 **WORK IN PROGRESS - NON-EXHAUSTIVE - NOT THE FINAL PRODUCT**
 
-Living notebook updated: 2026-09-06. Current readable PDF/Zenodo snapshot: version 0.4.0.
+Living notebook updated: 2026-09-06. Current readable PDF/Zenodo snapshot: version 0.5.0.
 
 This is an ongoing research notebook about where AI-assisted educational translation and adaptation could create useful access. It is not the final study, an exhaustive list of needs, or a completed funding-priority ranking.
 
@@ -14,23 +14,24 @@ The study concerns worldwide educational needs. Files, translations or previous 
 
 GitHub is the continually evolving version. This dated Zenodo snapshot preserves the hypotheses and research-coverage checkpoint available on 4 September 2026. Later evidence may change findings and recommendations; the original forecast is retained so changes are visible.
 
-Current Zenodo working paper: [10.5281/zenodo.22543469](https://doi.org/10.5281/zenodo.22543469). It is ongoing, non-exhaustive research, not the final product.
+Current Zenodo working paper: [10.5281/zenodo.22551640](https://doi.org/10.5281/zenodo.22551640). It is ongoing, non-exhaustive research, not the final product.
 
-<!-- current-readable-paper-v0.4 -->
+<!-- current-readable-paper-v0.5 -->
 ## Current readable working paper
 
-- [Open the 109-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.4.pdf)
-- [Read the complete offline HTML edition](research/working-paper/03_READABLE_WORKING_PAPER_v0.4.html)
-- [Download the editable DOCX](research/working-paper/04_EDITABLE_WORKING_PAPER_v0.4.docx)
-- [Read the Markdown source](research/working-paper/05_CURRENT_WORKING_PAPER_v0.4.md)
-- [Review the conditional ten-program tranche](research/working-paper/06_CONDITIONAL_TOP10_PROGRAM_PORTFOLIO_v0.4.csv)
-- [Review the nonordinal 100-profile set](research/working-paper/07_CONDITIONAL_TOP100_CANDIDATE_PORTFOLIO_v0.4.csv)
-- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.4.json)
-- [Evidence and source archive](research/working-paper/02_Working_Paper_Sources_v0.4.zip)
+- [Open the 117-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.5.pdf)
+- [Read the complete offline HTML edition](research/working-paper/03_READABLE_WORKING_PAPER_v0.5.html)
+- [Download the editable DOCX](research/working-paper/04_EDITABLE_WORKING_PAPER_v0.5.docx)
+- [Read the Markdown source](research/working-paper/05_CURRENT_WORKING_PAPER_v0.5.md)
+- [Review the worldwide potential-reach Top 100](research/working-paper/06_WORLDWIDE_REACH_TOP100_v0.5.csv)
+- [Review the same-package compute-workload proxy Top 100](research/working-paper/07_COMMON_PACKAGE_COMPUTE_PROXY_TOP100_v0.5.csv)
+- [Review the nonordinal 100-profile research inventory](research/working-paper/08_NONORDINAL_PROFILE_INVENTORY_v0.5.csv)
+- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.5.json)
+- [Evidence and source archive](research/working-paper/02_Working_Paper_Sources_v0.5.zip)
 
-The v0.4 checkpoint asks which educational publications could plausibly create additional usable access. It keeps equivalent source evidence, uses a disclosed common assumption where a matching measurement is absent, and never converts missing research into a lower position or exclusion. All 10,625 retained entities remain possible outrankers.
+The v0.5 checkpoint publishes two real but conditional ordinal comparisons. The worldwide-reach table estimates how many people each language-and-script edition could plausibly help. The same-package proxy divides that reach by a standardized token-event workload for one fixed educational package. Missing comparable evidence receives the disclosed baseline rather than causing deletion or a lower position.
 
-The ten-program tranche is one replaceable measurement and production hedge, not a unique allocation answer. The 100-profile set is nonordinal. The paper also treats academic-to-non-academic adult English as full-content register translation at unchanged intellectual level. The worldwide study remains unfinished and non-exhaustive.
+Neither table is the final target-specific allocation result. Token events are not physical compute, and stage, subject, current usable supply, incremental educational effect, delivery, accessibility, overlap and reusable work remain part of the active research. The separate 100-profile inventory is nonordinal; its member numbers are stable identifiers, not ranks.
 
 
 ## Research update: nineteen further profiles
