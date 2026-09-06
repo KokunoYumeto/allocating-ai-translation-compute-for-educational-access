@@ -23,6 +23,7 @@ Current Zenodo working paper: [10.5281/zenodo.22551640](https://doi.org/10.5281/
 - [Read the complete offline HTML edition](research/working-paper/03_READABLE_WORKING_PAPER_v0.5.html)
 - [Download the editable DOCX](research/working-paper/04_EDITABLE_WORKING_PAPER_v0.5.docx)
 - [Read the Markdown source](research/working-paper/05_CURRENT_WORKING_PAPER_v0.5.md)
+- [Read and search both complete Top 100 tables](rankings/)
 - [Review the worldwide potential-reach Top 100](research/working-paper/06_WORLDWIDE_REACH_TOP100_v0.5.csv)
 - [Review the same-package compute-workload proxy Top 100](research/working-paper/07_COMMON_PACKAGE_COMPUTE_PROXY_TOP100_v0.5.csv)
 - [Review the nonordinal 100-profile research inventory](research/working-paper/08_NONORDINAL_PROFILE_INVENTORY_v0.5.csv)
