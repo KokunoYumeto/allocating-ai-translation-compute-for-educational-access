@@ -71,3 +71,9 @@ The earlier v0.1 snapshot contained routes for 25 forecast profiles across 42 of
 The earlier edition and its tables are historical and withdrawn from use for allocation decisions. Existing root-level paper/ranking files and past releases are not the current notebook. They are preserved for traceability, not endorsed as current findings. Start with the links above. This working snapshot does not reinstate the earlier conclusions.
 
 New substantive research checkpoints will update this notebook and its changelog. Zenodo versions preserve dated snapshots; their dates and working status must be retained when citing them.
+
+
+<!-- shared-editions-study -->
+## Shared editions under a limited budget
+
+[Read the new two-page Hindi-Urdu study](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/research/shared-editions-20260908/10_Shared_Editions_Budget_Study_20260908.html). It compares a bridge with the best affordable native-edition mix, with shared preparation and overlapping audiences explicit. These are conditional benefit thresholds, not measured learning rates. [Full working paper on Zenodo; supplement mirror pending](https://zenodo.org/records/22650495). The main paper and current worldwide comparisons remain unchanged.
