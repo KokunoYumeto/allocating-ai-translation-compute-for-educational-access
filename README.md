@@ -77,3 +77,9 @@ New substantive research checkpoints will update this notebook and its changelog
 ## Shared editions under a limited budget
 
 [Read the new two-page Hindi-Urdu study](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/research/shared-editions-20260908/10_Shared_Editions_Budget_Study_20260908.html). It compares a bridge with the best affordable native-edition mix, with shared preparation and overlapping audiences explicit. These are conditional benefit thresholds, not measured learning rates. [Working paper and supplement on Zenodo](https://doi.org/10.5281/zenodo.22650954). The main paper and current worldwide comparisons remain unchanged.
+
+
+<!-- focused-learning-packages -->
+## Focused learning packages
+
+[Read the four-page study](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/research/focused-packages-20260908/14_Focused_Learning_Packages_20260908.html) of matched-outcome benefit and workload, actual OpenStax learning supports and four primary studies. The results are conditional, not a final language ranking. [Working paper and both supplements on Zenodo](https://doi.org/10.5281/zenodo.22651220). Original analysis is CC BY 4.0; included OpenStax source retains CC BY-NC-SA 4.0.
