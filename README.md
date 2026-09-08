@@ -15,7 +15,7 @@ The study concerns worldwide educational needs. Files, translations or previous 
 GitHub is the continually evolving version. The current v0.9 reading links above present the dated working-paper checkpoint. The original 4 September 2026 hypothesis catalogue remains available for comparison; later evidence may change findings and recommendations.
 
 <!-- zenodo-mirror-status-v0.9 -->
-Zenodo mirror for v0.9: pending. Read the current v0.9 edition on GitHub and GitHub Pages. The [preceding v0.8.2 edition](https://doi.org/10.5281/zenodo.22651220) remains on Zenodo; that DOI does not identify v0.9.
+Zenodo mirror for v0.9: published. [Read v0.9 on Zenodo](https://doi.org/10.5281/zenodo.22651690). The [preceding v0.8.2 edition](https://doi.org/10.5281/zenodo.22651220) remains available unchanged.
 <!-- /zenodo-mirror-status-v0.9 -->
 
 <!-- current-readable-paper-v0.9 -->
