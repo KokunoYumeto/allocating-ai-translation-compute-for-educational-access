@@ -86,3 +86,9 @@ New substantive research checkpoints will update this notebook and its changelog
 ## Focused learning packages
 
 [Read the four-page study](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/research/focused-packages-20260908/14_Focused_Learning_Packages_20260908.html) of matched-outcome benefit and workload, actual OpenStax learning supports and four primary studies. The results are conditional, not a final language ranking. [Working paper and both supplements on Zenodo](https://doi.org/10.5281/zenodo.22651220). Original analysis is CC BY 4.0; included OpenStax source retains CC BY-NC-SA 4.0.
+
+
+<!-- practical-business-education-20260908 -->
+## Practical-business education
+
+[Read the 5-page supplement](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/research/practical-business-20260908/18_Practical_Business_Education_20260908.html): original analysis of specific vocational resources and two primary studies, separate production and delivery budgets, and conditional marginal-benefit thresholds. This is not a final global ranking or measured AI effect. [Working paper and supplements on Zenodo](https://doi.org/10.5281/zenodo.22652401). Original analysis is CC BY 4.0; inherited OpenStax material retains CC BY-NC-SA 4.0.
