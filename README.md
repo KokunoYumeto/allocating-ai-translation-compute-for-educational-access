@@ -2,7 +2,7 @@
 
 **WORK IN PROGRESS - NON-EXHAUSTIVE - NOT THE FINAL PRODUCT**
 
-Living notebook updated: 2026-09-07. Current readable PDF/Zenodo snapshot: version 0.8.0.
+Living notebook updated: 2026-09-08. Current readable paper: version 0.9.0.
 
 This is an ongoing research notebook about where AI-assisted educational translation and adaptation could create useful access. It is not the final study, an exhaustive list of needs, or a completed funding-priority ranking.
 
@@ -12,26 +12,29 @@ Every educational stage remains eligible: early learning and primary school, sec
 
 The study concerns worldwide educational needs. Files, translations or previous spending in one local programme do not reduce a population's need or determine its place in the comparison.
 
-GitHub is the continually evolving version. The current Zenodo v0.8 snapshot preserves the dated working-paper checkpoint. The original 4 September 2026 hypothesis catalogue remains available for comparison; later evidence may change findings and recommendations.
+GitHub is the continually evolving version. The current v0.9 reading links above present the dated working-paper checkpoint. The original 4 September 2026 hypothesis catalogue remains available for comparison; later evidence may change findings and recommendations.
 
-Current Zenodo working paper: [10.5281/zenodo.22650495](https://doi.org/10.5281/zenodo.22650495). It is ongoing, non-exhaustive research, not the final product.
+<!-- zenodo-mirror-status-v0.9 -->
+Zenodo mirror for v0.9: pending. Read the current v0.9 edition on GitHub and GitHub Pages. The [preceding v0.8.2 edition](https://doi.org/10.5281/zenodo.22651220) remains on Zenodo; that DOI does not identify v0.9.
+<!-- /zenodo-mirror-status-v0.9 -->
 
-<!-- current-readable-paper-v0.8 -->
+<!-- current-readable-paper-v0.9 -->
 ## Current readable working paper
 
-- [Open the 121-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.8.pdf)
-- [Read the complete HTML edition](research/working-paper/03_READABLE_WORKING_PAPER_v0.8.html)
-- [Read or edit the Markdown source](research/working-paper/05_CURRENT_WORKING_PAPER_v0.8.md)
-- [Ten fixed-budget portfolios and package tradeoffs: section 7.9](research/working-paper/03_READABLE_WORKING_PAPER_v0.8.html#7-9-how-the-available-workload-changes-the-translation-portfolio)
-- [Worldwide potential-reach Top 100](research/working-paper/06_WORLDWIDE_REACH_TOP100_v0.8.csv)
-- [Common-package workload-proxy Top 100](research/working-paper/07_COMMON_PACKAGE_COMPUTE_PROXY_TOP100_v0.8.csv)
-- [Nonordinal profile inventory](research/working-paper/08_NONORDINAL_PROFILE_INVENTORY_v0.8.csv)
-- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.8.json)
-- [Evidence and source archive](research/working-paper/02_Working_Paper_Sources_v0.8.zip)
+- [Open the 124-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.9.pdf)
+- [Read the complete HTML edition](research/working-paper/03_READABLE_WORKING_PAPER_v0.9.html)
+- [Read or edit the Markdown source](research/working-paper/05_CURRENT_WORKING_PAPER_v0.9.md)
+- [Fixed-budget portfolios and package comparisons: section 7.9](research/working-paper/03_READABLE_WORKING_PAPER_v0.9.html#7-9-how-the-available-workload-changes-the-translation-portfolio)
+- [Focused learning packages: section 7.13](research/working-paper/03_READABLE_WORKING_PAPER_v0.9.html#7-13-choosing-languages-and-package-sizes-together)
+- [Worldwide potential-reach Top 100](research/working-paper/06_WORLDWIDE_REACH_TOP100_v0.9.csv)
+- [Common-package workload-proxy Top 100](research/working-paper/07_COMMON_PACKAGE_COMPUTE_PROXY_TOP100_v0.9.csv)
+- [Nonordinal profile inventory](research/working-paper/08_NONORDINAL_PROFILE_INVENTORY_v0.9.csv)
+- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.9.json)
+- [Evidence and source archive](research/working-paper/02_Working_Paper_Sources_v0.9.zip)
 
-This v0.8 checkpoint compares ten fixed-budget portfolios, complete-book versus six-chapter packages, and direct translation/self-study evidence. The comparisons are conditional on stated audiences, educational endpoints and production assumptions. Participation and learning remain separate outcomes.
+This v0.9 integrated checkpoint brings the shared-editions and focused-learning-package studies into the working paper alongside the conditional fixed-budget portfolios. Comparisons depend on stated audiences, educational outcomes and production assumptions. Token-event workload is not measured physical compute or achieved learning. The two ranked Top-100 tables and the nonordinal catalogue remain distinct research outputs.
 
-The research is ongoing and non-exhaustive. Token-event workload is not physical compute, energy, money or achieved learning. The two Top-100 tables are distinct conditional comparisons; the separate profile inventory is nonordinal. Effect, delivery, accessibility, audience overlap and reusable work remain part of the target-specific allocation research.
+Original analysis and presentation are CC BY 4.0. Included OpenStax source material retains CC BY-NC-SA 4.0 and its original licence and credits; the analysis licence does not replace or relicense that material.
 
 
 ## Research update: nineteen further profiles
@@ -42,7 +45,7 @@ The research is ongoing and non-exhaustive. Token-event workload is not physical
 ## Read the current notebook
 
 - [Readable HTML](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/)
-- [Current 121-page working paper](research/working-paper/00_START_HERE__Current_Working_Paper_v0.8.pdf)
+- [Current 124-page working paper](research/working-paper/00_START_HERE__Current_Working_Paper_v0.9.pdf)
 - [Frozen hypotheses and 100-candidate forecast](research/working-notebook/sources/HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md)
 - [How hypotheses are tested](research/working-notebook/sources/HYPOTHESIS_TEST_PLAN_v1.md)
 - [Current research coverage](research/updates/2026-09-04-regional/EXPECTED_CANDIDATE_COVERAGE_v1.md)
