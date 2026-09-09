@@ -2,7 +2,7 @@
 
 **WORK IN PROGRESS - NON-EXHAUSTIVE - NOT THE FINAL PRODUCT**
 
-Living notebook updated: 2026-09-08. Current readable paper: version 0.10.0.
+Living notebook updated: 2026-09-09. Current readable paper: version 0.11.0.
 
 This is an ongoing research notebook about where AI-assisted educational translation and adaptation could create useful access. It is not the final study, an exhaustive list of needs, or a completed funding-priority ranking.
 
@@ -12,29 +12,31 @@ Every educational stage remains eligible: early learning and primary school, sec
 
 The study concerns worldwide educational needs. Files, translations or previous spending in one local programme do not reduce a population's need or determine its place in the comparison.
 
-GitHub is the continually evolving version. The current v0.10 reading links above present the dated working-paper checkpoint. The original 4 September 2026 hypothesis catalogue remains available for comparison; later evidence may change findings and recommendations.
+GitHub is the continually evolving version. The current v0.11 reading links above present the dated working-paper checkpoint. The original 4 September 2026 hypothesis catalogue remains available for comparison; later evidence may change findings and recommendations.
 
-<!-- zenodo-mirror-status-v0.10 -->
-Zenodo mirror for v0.10: published. [Read v0.10 on Zenodo](https://doi.org/10.5281/zenodo.22652947). The [preceding v0.9.1 edition](https://doi.org/10.5281/zenodo.22652401) remains available unchanged.
-<!-- /zenodo-mirror-status-v0.10 -->
+<!-- zenodo-mirror-status-v0.11 -->
+Zenodo mirror for v0.11: pending. Read the current v0.11 edition on GitHub and GitHub Pages. The [preceding v0.10 edition](https://doi.org/10.5281/zenodo.22652947) remains on Zenodo; that DOI does not identify v0.11.
+<!-- /zenodo-mirror-status-v0.11 -->
 
-<!-- current-readable-paper-v0.10 -->
+<!-- current-readable-paper-v0.11 -->
 ## Current readable working paper
 
-- [Open the 127-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.10.pdf)
-- [Read the complete HTML edition](research/working-paper/03_READABLE_WORKING_PAPER_v0.10.html)
-- [Read or edit the Markdown source](research/working-paper/05_CURRENT_WORKING_PAPER_v0.10.md)
-- [Fixed-budget portfolios and package comparisons: section 7.9](research/working-paper/03_READABLE_WORKING_PAPER_v0.10.html#7-9-how-the-available-workload-changes-the-translation-portfolio)
-- [Focused learning packages: section 7.13](research/working-paper/03_READABLE_WORKING_PAPER_v0.10.html#7-13-choosing-languages-and-package-sizes-together)
-- [Worldwide potential-reach Top 100](research/working-paper/06_WORLDWIDE_REACH_TOP100_v0.10.csv)
-- [Common-package workload-proxy Top 100](research/working-paper/07_COMMON_PACKAGE_COMPUTE_PROXY_TOP100_v0.10.csv)
-- [Nonordinal profile inventory](research/working-paper/08_NONORDINAL_PROFILE_INVENTORY_v0.10.csv)
-- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.10.json)
-- [Evidence and source archive](research/working-paper/02_Working_Paper_Sources_v0.10.zip)
-- [Practical-business education: section 7.14](research/working-paper/03_READABLE_WORKING_PAPER_v0.10.html#7-14-practical-business-education-production-and-delivery-are-different-decisions)
-- [Joint audiences and allocation under uncertainty: section 7.15](research/working-paper/03_READABLE_WORKING_PAPER_v0.10.html#7-15-how-audience-evidence-can-change-a-compute-allocation)
+- [Open the 130-page PDF](research/working-paper/00_START_HERE__Current_Working_Paper_v0.11.pdf)
+- [Read the complete HTML edition](research/working-paper/03_READABLE_WORKING_PAPER_v0.11.html)
+- [Read or edit the Markdown source](research/working-paper/05_CURRENT_WORKING_PAPER_v0.11.md)
+- [Fixed-budget portfolios and package comparisons: section 7.9](research/working-paper/03_READABLE_WORKING_PAPER_v0.11.html#7-9-how-the-available-workload-changes-the-translation-portfolio)
+- [Focused learning packages: section 7.13](research/working-paper/03_READABLE_WORKING_PAPER_v0.11.html#7-13-choosing-languages-and-package-sizes-together)
+- [Worldwide potential-reach Top 100](research/working-paper/06_WORLDWIDE_REACH_TOP100_v0.11.csv)
+- [Common-package workload-proxy Top 100](research/working-paper/07_COMMON_PACKAGE_COMPUTE_PROXY_TOP100_v0.11.csv)
+- [Nonordinal profile inventory](research/working-paper/08_NONORDINAL_PROFILE_INVENTORY_v0.11.csv)
+- [Snapshot manifest](research/working-paper/01_SNAPSHOT_MANIFEST_v0.11.json)
+- [Evidence and source archive](research/working-paper/02_Working_Paper_Sources_v0.11.zip)
+- [Practical-business education: section 7.14](research/working-paper/03_READABLE_WORKING_PAPER_v0.11.html#7-14-practical-business-education-production-and-delivery-are-different-decisions)
+- [Joint audiences and allocation under uncertainty: section 7.15](research/working-paper/03_READABLE_WORKING_PAPER_v0.11.html#7-15-how-audience-evidence-can-change-a-compute-allocation)
+- [Thai, Malay and Khmer resource findings: section 7.16](research/working-paper/03_READABLE_WORKING_PAPER_v0.11.html#7-16-what-secondary-mathematics-packages-can-add-in-thai-malay-and-khmer)
+- [Prerequisite-expanded package allocation: section 7.17](research/working-paper/03_READABLE_WORKING_PAPER_v0.11.html#7-17-prerequisites-can-change-which-package-is-worth-translating)
 
-This integrated edition examines where AI-assisted educational resources could help and how limited production budgets can be compared. New sections bring practical-business education and joint audience estimation into the main paper. They distinguish measured source findings from conditional examples; synthetic audience counts are not population estimates. The two conditional Top-100 comparisons remain unchanged. Token workload, physical compute and achieved learning are different measurements.
+This integrated edition examines where AI-assisted educational resources could help and how limited production budgets can be compared. New sections examine Thai, Malay and Khmer resource findings and prerequisite-expanded learning packages. They distinguish observed resource evidence from conditional allocation examples. The two worldwide conditional Top-100 comparisons remain unchanged. Token workload, physical compute and achieved learning are different measurements.
 
 Original analysis and presentation are CC BY 4.0. Included OpenStax source material retains CC BY-NC-SA 4.0 and its original licence and credits; the analysis licence does not replace or relicense that material.
 
@@ -47,7 +49,7 @@ Original analysis and presentation are CC BY 4.0. Included OpenStax source mater
 ## Read the current notebook
 
 - [Readable HTML](https://kokunoyumeto.github.io/allocating-ai-translation-compute-for-educational-access/)
-- [Current 127-page working paper](research/working-paper/00_START_HERE__Current_Working_Paper_v0.10.pdf)
+- [Current 130-page working paper](research/working-paper/00_START_HERE__Current_Working_Paper_v0.11.pdf)
 - [Frozen hypotheses and 100-candidate forecast](research/working-notebook/sources/HYPOTHESES_AND_EXPECTED_CANDIDATES_v1.md)
 - [How hypotheses are tested](research/working-notebook/sources/HYPOTHESIS_TEST_PLAN_v1.md)
 - [Current research coverage](research/updates/2026-09-04-regional/EXPECTED_CANDIDATE_COVERAGE_v1.md)
